@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+<fileDesc>
+<titleStmt>
+<title>THE BOOK OF ISAIAH</title>
+<editor>R. R. OTTLEY, M.A.</editor>
+<sponsor>University of Leipzig</sponsor>
+<funder>European Social Fund Saxony</funder>
+<principal>Gregory Crane</principal>
+<principal>Monica Berti</principal>
+<meeting/>
+<respStmt>
+<persName xml:id="DDD">Digital Divide Data</persName>
+<resp>Corrected and encoded the text</resp>
+</respStmt>
+<respStmt>
+<persName>Greta Franzini</persName>
+<resp>Project Manager (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+<persName>Simona Stoyanova</persName>
+<resp>Project Assistant (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+<persName>Bruce Robertson</persName>
+<resp>Technical Advisor</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>University of Leipzig</authority>
+<idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+<availability>
+<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+License</p>
+</availability>
+<date>2014</date>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl xml:lang="la">
+<biblStruct>
+<monogr>
+<title>THE BOOK OF ISAIAH</title>
+<editor>
+<persName>
+<name xml:lang="la">R. R. OTTLEY, M.A.</name>
+</persName>
+</editor>
+<author ref="urn:tmp">R. R. OTTLEY, M.A.</author>
+<imprint>
+<publisher>C. J. Clay and Sons Cambridge University Press Warehouse Ave Maria Lane</publisher>
+<pubPlace>LONDON</pubPlace>
+<date>1904</date>
+</imprint>
+<biblScope unit="volume">vol.</biblScope>
+</monogr>
+</biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+<refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="el">Greek</language>
+<language ident="la">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+<text><body><div type="edition" n="tlg0527.tlg048">
+<div type="textpart" subtype="chapter" n="1">
+<pb n="1"/>
+<head>HCAIAC</head>
+<p>προφήτης ιγ΄</p>
+<lb n="1"/> </div></div>
+
+</body></text></TEI>
