@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+    
+ <fileDesc>
+  <titleStmt>
+   <title>PHILONIS ALEXANDRINI OPERA QVAE SVRERSVNT</title>
+  <editor>LEOPOLDVS COHN</editor>
+  <sponsor>University of Leipzig</sponsor>
+  <funder>European Social Fund Saxony</funder>
+  <principal>Gregory Crane</principal>
+  <principal>Monica Berti</principal>
+  <meeting/>
+  <respStmt>
+   <persName xml:id="DDD">Digital Divide Data</persName>
+   <resp>Corrected and encoded the text</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Greta Franzini</persName>
+   <resp>Project Manager (University of Leipzig)</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Simona Stoyanova</persName>
+   <resp>Project Assistant (University of Leipzig)</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Bruce Robertson</persName>
+   <resp>Technical Advisor</resp>
+  </respStmt>
+  </titleStmt>
+  <publicationStmt>
+  <authority>University of Leipzig</authority>
+  <idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+  <availability>
+   <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   License</p>
+  </availability>
+  <date>2014</date>
+  <publisher>University of Leipzig</publisher>
+  <pubPlace>Germany</pubPlace>
+  </publicationStmt>
+  <sourceDesc>
+  <listBibl xml:lang="la">
+   <biblStruct>
+   <monogr>
+    <title>PHILONIS ALEXANDRINI OPERA QVAE SVRERSVNT</title>
+    <editor>
+    <persName>
+     <name xml:lang="la">LEOPOLDVS COHN</name>
+    </persName>
+    </editor>
+    <author ref="urn:tmp">LEOPOLDVS COHN</author>
+    <imprint>
+    <publisher>TYPIS ET IMPENSIS GEORGII REIMERI</publisher>
+    <pubPlace>BEROLINI</pubPlace>
+    <date>XDCCCLXXXXI</date>
+    </imprint>
+    <biblScope unit="volume">vol. i</biblScope>
+   </monogr>
+   </biblStruct>
+  </listBibl>
+  </sourceDesc>
+ </fileDesc>
+ <encodingDesc>
+  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+ <refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+ <profileDesc>
+  <langUsage>
+  <language ident="el">Greek</language>
+  <language ident="la">Latin</language>
+  </langUsage>
+ </profileDesc>
+ <revisionDesc>
+  <change/>
+ </revisionDesc>
+ </teiHeader>
+	<text><body><div type="edition" n="vol. ii">
+<div type="commentary" subtype="prolegomena">
+<pb n="I"/>
+<head>PROLEGOMENA</head>
+<p>Adhiltiti suut in hoc volumine codices M U F G Α H P L; qui onmes <note type="marginal">De Philonis codicibus</note>
+iam in Prolegomenis vol. I descripti sunt, et quae ratio inter eos intercedat
+accuratius investigatum est. quibus in codicibus singuli libri traditi
+sint et quid valeant singuli codices ad textum constituendum, infra
+exponetur, cum de singulis libris in hoc volumine editis 1). hic
+pauca de Tischendorfii collatiouibus addeuda esse videntur; quae ipsae,
+cum antea apographa Ottoniaua adhibuissemus, Lipsia, ubi in bibliotheca
+Universitatis servantur, Berolinum missae sunt. continentur autem tribus
+voluminibus, quibus inscriptum est ,codices Tischendorfiani L, LI, LII’.
+tertium volumen complectitur accuratam, ut videtur, collationem codicis
+Vindobonensis Wst. gr. 81 (cf. Nesselii catalogum p. 141. 142), codicis
+V (v. Prolegomena voL I p. XXXV ss.), codicis Suppl. Kollar. 69 (nunc
+SuppL gr. 50), excerptorum ex libro de vita contemplativa, quae in
+codicibus theoL gr. 65 et 110 inveniuntur. has collationes in Tischendorfii
+usum Henricus Ernestus Poesche confecit, ut ipse in subscriptione
+profitetur. primum volumen ipsius Tischendorfii collationes Parisinas
+continet, quae ad Parisinos 433. 434. 435. 2075. 2221, Coisliniauum 43,
+variorum codicum excerpta Philouea pertinent. denique alterum volumen
+coUationes codicum plerorumque Laurentianorum, Venetorum, Vatica-
+norum, Neapolitani complectitur. ipsius Tischendorfii collationes ideo
+minoris fructus sunt, quod fere satis habuit eos locos inspicere, quibus
+Mangey aliquam codicum discrepantiam adnotavit. quam rationem se
+<note type="footnote">1) hoc obiter moneo me hoc ordine ’ posuisse, ubi quid H1 habeat ex P concludendum
+est.</note>
+
+<pb n="II"/>
+etiam in confereudo codice L secutum esse ipse testatur iu primi voluminis
+p. 89. scito igitur plenam notitiam lectionum codicis L ex nostro apparatu
+hauriri non posse; verisimile est eum saepius quam adnotavimus
+a codice Η dissentire, et factum esse potest, ut semel vel bis Turnebi
+emendationes diceremus, quae revera lectiones codicis L sunt. sed laborem
+denuo conferendi codicis L suscipere noluimus, quia persuasum
+habebamus nihil novi inventum iri, quod non aut Η aut editio princeps
+suppeditaret. plura addenda sunt de usu codicum, qui excerpta Philonea
+continent:</p>
+<note type="marginal">De codice R</note> <p>1. Codicis R sex excerpta ex libro de posteritate Caini, duo ex libro
+de plantatione L, Cohn iu Prolegomenis voluminis primi p. LVH. LVHI
+composuit idem recte monuit codicis R textum familiae UF maxime
+cognatum esse. quam ob causam non multum R valet ad constituendum
+textum libri de posteritate Caini in solo U traditum. p. 18,18 Mangeii
+emendationem ἀναπτῆναι confirmat. p. 25,7 eandem corruptelam κτησάμενοι
+atque U habet.</p>
+<note type="marginal">De coilice N</note> <p>2. Codicis Ν (cf. Prolegomena voL I p. LVHI) excerpta duodecim
+in hoc volumine adhibita sunt, unum e libro quod deus sit immutabilis
+p. 65,12 — 66,4 αἴσθησις — φυτῶν, tria ex libro de plantatione p. 154,11 —
+18 ἀλλὰ γὰρ — ἁμαρτίαν, p. 158,9 — 159,17 τόν τε παιδείας — γεγονότων,
+p. 166,3 — 13 εἰδότες οὖν — οἰνοῦσθαι, sex ex libro de ebrietate p. 175,16
+— 176,18 τὸν οὖν ἀπειθῆ — οἴσομεν, p. 180,12 — 181,8 οὐκοῦν — Ἰσαάκ,
+p. 189,21 — 23 μὴ νομίσῃς — ζῷον, p. —27 πῶς γὰρ — θέμις, p. 198
+18. 19 τὰ ἀγαθὰ — δεξάμενοι, p. 203,9 — 205,6 χωρὶς — ὀνείρατα, unum ex
+libro de sobrietate p. 223,8 — 22 ὁ αὐτὸς — τούτων, unum ex libro de confusione
+linyuarum p. 264,24 — 265,9 μῖξις — οἶνος etiam his locis confirmatur
+quod rectissime in Prolegomenis vol. Ι Cohn de excerptis ad
+illud volumen adhibitis asseruit codicem N tantum non ubique cum
+famiiia UF conspirarc. tantus enim est consensus, ut nuUo loco — nam
+p. 264,26 vix in censum venit — ex solo N genuina lectio recepta sit. haec
+autem de codicum UFN familiaritate sententia etiam ordine excerptorum
+aliquo modo confirmatur. qui etsi non plane idem est atque in F, tamen
+iu uonnullis partibus congruit. quod ut intellegas, ordincm scriptorum 1),
+<note type="footnote">1) perpaucis locis graecos titulos N praebet, ceteris laliuos ipse supplevi.</note>
+
+<pb n="III"/>
+e quibus cleinceps compilator codicis N excerpsit, hic refero et uncis inclusos
+addo numeros, ad quos L. Cohn p. XXI — XXIII scripta codicis F digessit:</p>
+<p>ἀπὸ τῶν τοῦ φίλωνος ὅσα κρείττονά τε καὶ χρησιμώτερα:</p>
+<p>1. (24) de congresm eruditionis gratia.</p>
+<p>2. (25) de somniis I.</p>
+<p>3. τοῦ αὐτοῦ ἀπὸ τοῦ Φλάκκου. deest in F; recentior enim pars a
+lacobo Diassorino addita huc non pertinet.</p>
+<p>4. (15) de decalogo.</p>
+<p>5. (17) de monarchia 1.</p>
+<p>6. (18) de monarchia II.</p>
+<p>7.(21) de mctimis. afferuntur verba εἶτα ἐπὶ πᾶσιν — καινοτομεῖν ex
+ea parte libri, quam solus F servavit (Neu entdeckte Fragm.
+p. 14,2 — 5) 1), τοσαῦτα falso adnectitur ex ea parte libri (II 2401
+Mang.), quae etiam in aliis codicibus traditur. sequuntur alia
+duo ex eodem libro excerpta.</p>
+<p>8. (22) Mang. II 264,1 — 265,2. haec in editionibus priore libri qui
+fertur de mercede meretricis parte continentur; recte ea in codice
+F post libri de victimas offerentihus cap. 4 poni 1. c. p. 138
+demonstravi. quod nunc etiam comprobatur ordine librorum,
+quem N testatur.</p>
+<p>9. (3) de vita Mosis II.</p>
+<p>10. (4) de vita Mosis III. non fortuito factum est, quod nihil ex
+primo de vita Mosis libro excerptum invenitur. eius enim prior
+eaque maior pars addita est in F a lacobo Diassorino; defuisse
+eam etiam in archetypo codicis F inde efficitur, quod vetusta
+manus, ubi incipit (Mang. II 112,36), fol. 15r titulum posuit περὶ
+θεολογίας καὶ προφητείας μωϋσέως λόγος πρῶτος. et eiusdem
+familiae codex Laurentianus conv. soppr. 59 primum de vita Mosis
+librum post alterum et tertium ponit. videtur igitur primus liber
+iam in archetypo suo loco motus, tum mutilatus, in exemplar
+ab excerptore usurpatum omnino non receptus esse.</p>
+<p>11. (5) de specialibus legibus III.</p>
+<p>12. (6) de lyraemiis et poenis.</p>
+<note type="footnote">1) lectio τοῦ περὶ ἁμαρτίας, quam non debui mutare, nunc etiam codice N confirmatur.
+A*</note>
+
+<pb n="IV"/>
+<p>13. (7) de opificio.</p>
+<p>14. (23) τοῦ αὐτοῦ ἀπὸ τοῦ λόγου τοῦ περὶ εὐορκίας καὶ σεβασμοῦ τῆς
+ἱερᾶς ἑβδόμης καὶ γονέων τιμῆς. F eundem titulum proprium
+praebet, nisi quod commuiiem totius operis praemittit.</p>
+<p>15. (26) legum allegoriae I.</p>
+<p>16. (28) de sacrificiis Abelis et Caini. excerpta iuveniuntur ex ea
+parte libri, quae in prioribus editionibus libro qui fertur de mercede
+nieretricis falso iuserebatur. quam F et N recte suo loco tradunt.</p>
+<p>17. (30) de ebrietate.</p>
+<p>τοῦ αὐτοῦ ὧν γράφει τὰ χρησιμώτερα:</p>
+<p>18. quis renim divinarum heres sit. deest hic liber in F; cf. adno-
+tata ad 3.</p>
+<p>19. (24) de congressu eruditionis gratia.</p>
+<p>20. (9) τοῦ αὐτοῦ ἀπὸ τοῦ λόγου τοῦ πολιτικοῦ, ὅπερ ἐστὶν περὶ Ἰωσήφ.
+titulus in F et in N consentit.</p>
+<p>sequuntur post interposita frustula Flavii losephi:</p>
+<p>21. (30) de ebrietate.</p>
+<p>22. (31) de sobrietate.</p>
+<p>23. (32) quod deus sit immutabilis.</p>
+<p>24. (34) de plantatione.</p>
+<p>25. (35) de confusione Unguarum.</p>
+<p>26. (36) de nobilitate.</p>
+<p>lam ut uno conspectu videas, quanta sit similitudo, si non uuiversi
+ordinis, attamen singularum codicis Ν partium, has partes codicis N
+numeris librorum codicis F distinctas iuxta pono:</p>
+<p>24 15 3 23 24 30</p>
+<p>25 17 4 26 9 31</p>
+<p>18 5 28 32</p>
+<p>21 6 30 34</p>
+<p>22 7 35</p>
+<p>36</p>
+<p>excerpta ex libris 24. 25, quae primo, et excerpta ex libris 24. 9, quae
+quinto loco posita sunt, suo loco mota esse patct. his discerpuutur excerpta
+ex libro de ebrietate (30), quae se cxcipere debebant. illa excerpta
+ex libris 24 (Mang. I 543,46 — 544,13). 25 succedere debebant
+
+<pb n="V"/>
+exccrptis altcris cx libro 24 (depromptis ex Mang. I 498 —540). recte
+enim ex ordine ab ipso Philone iustituto libri de congressu eruditionis
+gratia (24) et ὒ somnm I (25) se excipere debent, siquidem ei libri,
+cjui medium locum tenent, de profugis et de mutatiom nominum, omissi
+sunt. et libri 24. 25 iit in F, ita etiam iu Vaticano 379 (v. Prolegomena
+vol. I p. XXVI) se excipiunt. quem locum libri 24. 25 in exemplari
+ab excerptore usurpato habueriut, certum uon est. oportebat eos
+poui post librum 35. tameu verisimile est eos eundem locum habuisse
+atque in F Vaticauo 379, i. e. post librum 23 et aute librum 26 positos
+fuisse. iuterim pouamus etiam losephi vitam (9) poist librum 7 eo
+loco, quem F huic libro tribuit, quamquam ue hoc quidem certum
+est. certius iudicare licet de eis libris, quos N proprios habet. nam
+liber quis rerum divinarum heres sit ponendus est ante librum de congressu
+eruditionis gratia (24). recte enim ille hunc locum iu N obtinet, quem
+ipse Philo ei tribuit. neque est cur dubitemus, quin liber quis rerum
+divinarum heres sit olim pars archetypi huius familiae fuerit, quamvis
+omittatur iu UF Vat. 379. traditur euim iu papyro, quam etiam in hac
+parte ab eodem fonte atque in libro de sacrificiis Abelis et Caini pendere
+videri iu Prolegomenis vol. III ostendam. denique nou dubito, quiu etiam
+Flaccus non ex alio codice ascitus sit ab excerptore. sed partem huius
+corporis effecerit. ubi poueudus sit, dubium est; pouamus interim primo
+loco, quem in codice teuet. iam quattuor corporis Philouei, quod N adhibuit,
+partes distinguere licet:</p>
+<p>1. Flaccus, 15, 17, 18, 21, 22</p>
+<p>2. libri 3, 4, 5, 6, 7, 9</p>
+<p>3. liber 23, quis rerum divinamm heres sit, 24. 25. 26. 28</p>
+<p>4. libri 30. 31. 32. 34. 35. 36.</p>
+<p>apparet quautus sit cousensus codicum FN. F easdem partes tradit,
+primam et alteram ordine inverso. iuter -alteram et primam haud pauca
+scripta F addit, quae N omisit. accedit quod FN soli supplent lacunam
+libri de cictimis, priorem libri qui fertur de mercede meretricis partem
+suo loco traduut, alteram recte libro de sacrificiis Ahelis et Caini inserunt,
+deuique quod iu duobus quos praebet titulis N cum F cousentit.
+quod autem ostendimus varias eiusdem corporis partes diversa ratione
+in F et in N coniunctas esse, iude confirmatur, quod etiam iu ccteris
+
+<pb n="VI"/>
+huius familiae codicibus modo hac modo illae partes traduntur. nam
+codex U, cum hoc ordine tradit scripta codicis F: 26. 27. 28. 29. 32.
+33. 30, solas partes tertiam et quartam novit 1). Yaticanus 379 omnium
+partium scripta tradit eodem plane ordine atque F, ut docet comparatio
+numerorum, quam L. Cohn p. XXVI. XXVII instituit. Laurentianus
+conv. soppr. 59 (Prolegomena voL I p. XXVII. XXVIII) habet scripta
+3. 4. 1. 9. 10. 2. 26. 27. 28. 29; partem igitur alteram et postremam
+codicis F novisse non videtur. et idem cadit in Laurentianum LXIX, 11
+(v. 1. c. p. XXIX), in quo ipso quoque ex scriptis 10 — 26 nihil laudatur.
+compilator codicis R hoc ordine adhibuit scripta codicis F: 11. 7 — sequitur
+liber ὒ posteritate Caini — 34. 26 — scquitur liber de aeternitate mundi
+— 26. 34. 32. partem igitur alteram codicis F non novit. denique huc
+pertinent excerpta libri περὶ κόσμου, quae infra tractabimus; in quibus
+adhibita sunt hoc ordine scripta codicis F: 35. 36. 34 — sequitur liber
+de gigantihus (v. adnot. 1) — 34. 32. 34. 32; sequitur liber de aeternitate
+mundi. in his igitur excerptis, si praetereas librum περὶ ἀφθαρσίας
+κόσμου, qui, si codicem U sequaris (cf. etiam codicem R), ad tertiam
+partem pertinet — quamquam certo iudicare non licet —, non adhibiti
+sunt nisi libri quartae partis.</p>
+<note type="marginal">De epitome περὶ κόσμου</note> <p>3. Libellus qui fertur περὶ κόσμου primum editus est ab Aldo a.
+1497 una cum Aristotelis Theophrastique operibus2). secuta est a. 1533
+Budaei editio 3), in qua nullum codicem adhibitum esse ipse
+Budaeus 4). hinc in editionem a. 1613 Coloniae Allobrogum
+<note type="footnote">1) ordinem ab ipso Philone institutum iu U servatum esse obiter moneo. et suo
+loco addit libros de posterilate Caini et de gigantibm. librum περὶ ἀφθαρσίας κόσμου
+primo loco habet; quem ipsum quoque, quamvis omissum in F Vaticano 379 N,
+partem corporis fuisse docet compilatio περὶ κόσμου (v. infra) et excerpta codicis R.</note>
+<note type="footnote">2) Aristotelis operutn volumen secundum . . . Philonis ludaei de mundo liber unus.
+Theophrasti de igne lib. I . . . Venetiis 1497 in folio.</note>
+<note type="footnote">3) De mundo Aristotelis lib. /, Philonis lib. I, Gnilitlmo Budaeo inlerprete. Cleomedis
+lib. II Georgio Valla interprete ... Basileae, apud loannem Valderum, mense Martio
+An. MD XX XIII. 8 0. a Budaeo pendere videtur editio, quam Graesse et Brunet commemorant,
+Aristotelis et Philonis de mundo. (Graece ed. lac. Tusanus). Paris. Ascensius
+s. a. in 4 0. 26 folia. eadem editio repetita est a. MDXL. — ceterum Budaei versio
+latina iam a. 1527 prodierat (v. Prolegomena vol. T p. L).</note>
+<note type="footnote">4) V. eius epistulam apud Mang. II p. 601.</note>
+
+<pb n="VII"/>
+editam et deinceps in omnes Philonis operum editiones transiit. hunc
+libellum non ab ipso Philone conscriptum, sed centonem esse e Philonis
+scriptis compilatum primus in praefatione editionis Turnebus professus
+est; quam ob rem ex editioue Philonis operum eum secludendum esse
+censuit. quae scripta compilator excerpsisset; iam Mangey fero adnotavit
+in editione libelli (vol. II p. 601 —624), post Maugeium etiam Grossmann1)
+et Cumont2) accuratius demonstraverunt. huius libelli hos codices
+indagavi:</p>
+<p>1. Vindoboneusem philos. gr. 102 (fol. 218r) saec. XV (= a).</p>
+<p>2. Vaticanum gr. 671 (fol. 213r) saec. XV vel XVI (= b). quem
+iam Mangey adhibuit; v. quae II p. 601 adnotat.</p>
+<p>3. Vaticanum Reginensem gr. 123 (fol. 284r) saec. XV (= r). ex his
+igitur codicibus excerptoris textum constitui, quem littera E in apparatu
+signavi. quid singuli codices traderent, raro adnotavi, singulorum vitia
+aperta plane omittenda erant. composita est haec epitome ex his Phi-
+lonis locis:</p>
+<p>οὐδὲν τῶν ὄντων — διαφορᾶς Maug. II 601,1 — 602,13 =
+de confusione linguarum p. 262,1 — 20 huius volumiuis.</p>
+<p>καὶ ὁ Ἰουδαίων ἔθνους — τῶν ἐν αὐτῷ Mang. II 602,13 —
+603,6 = de nobilitate II 441,43 —442,29 Mang.</p>
+<p>ἐπειδὴ γὰρ — χρεῖοι Mang. II 603,6 — 604,38 = de plantatione
+p. 133,11 — 136,15 huius volumiuis.</p>
+<p>ἐκεῖναι δ’ ὥσπερ — ἀγγέλων πονηρῶν Mang. II 604,38 — 60526
+= de gigantibus p. 44,6 — 45,8 huius voluminis.</p>
+<p>ὕδατι δὲ ζῷα πλωτὰ καὶ ζωόφυτα, τῇ γῇ δ’ αὖ ζῷά τε χερσαῖα
+καὶ φυτά Mang. II 605,26. 27: cf. de plantatione p. 136,16 huius
+voluminis.</p>
+<p>καὶ τὰ μὲν φυτὰ κατωκάρα — γεγονότων Mang. II 605,28 — 6069
+= de plantatione p. 137,1 — 17 huius voluminis.</p>
+<p>. . . τῶν σωμάτων τὰ μὲν — θρεπτικῆς τε καὶ γεννητικῆς
+Mang. II 606,11 —23 = quod deus sit immutabilis p. 64,1 — 11
+huius voluminis.</p>
+<note type="footnote">1) De Philonis ludaei operuiu continua serie et ordine chrouologico corament. I
+p. 28.</note>
+<note type="footnote">2) Philonis de aeternitate mundi ed. Fr. Cumont p. XXYI.</note>
+
+<pb n="VIII"/>
+<p>ψυχὴν δὲ — ἀποτίσει Mang. II 606,23 —607,33 = ibid. p. 659
+6710.</p>
+<p>τῷ τοι καὶ τὸ σῶμα — ἀγένητον Mang. 607,33 — 608,2 = de
+plantatione p. 138,1 — 12.</p>
+<p>διεξελθόντες οὖν — δυσθεράπευτος ἡ ἀλήθεια Mang. II 608,3 — 36
+= ibid. p. 139,15 14011.</p>
+<p>ἀλλ’ ὅπως — ἔτι Mang. II 608,36 —40 = ibiil. p. 144,2 4.</p>
+<p>ὁ γὰρ δὴ θεὸς — ὑφέστηκεν Mang. II 608,40 —609,9 = quod
+deus sit immutahilis p. 62,21 — 63,13 huius voluminis.</p>
+<p>tum verbis ἱκανῶς οὖν διαλεχθέντες περὶ τούτων σκεπτέον ἤδη
+καὶ περὶ ἀφθαρσίας αὐτοῦ ad alteram eamque maiorem partem transit
+ex libro περὶ ἀφθαρσίας κόσμου excerptam. quam Fr. Cumont
+accurate tractavit, nos cum in edendo Pliilone ad hunc librum
+pervenerimus, denuo tractabimus.</p>
+<p>Compilator verbo tenus Philonis textum ita descripsit, ut opus eius
+nobis codicis instar sit. itaque satis habebimus hunc testem ad constituendum
+Philonis textum adhibuisse, ipsum centonem iterum ederc
+operae pretium non est. textus codicis, quem E adhibebat, fere consentit
+cum U(F). velut cum U solo hacc tradit vitia: 44,10 ἄνωθεν εὐσθενῶς.
+44,13 καταποθεῖσαι. 44,20 ἀποθήσεις. 64,2 ἕξιν et φύσιν. 1402
+uterque vocem θνητὸς omittit. optime UFE 62,21 vocem θεὸς tradunt,
+quam ceteri omittunt, 67,9 κατ’ ἀπελευθέρων, cum nihili sit quod ceteri
+tradunt κατ’ ἐλευθέρων. 1) tamen in E neque ipsum codicem U neque F
+adhibitum esse vel iude apparet, quod excerpta sunt scripta quaedam,
+quae vel in U vel iu F desunt (cf. p. VI). et sua propria et vitia et
+bona habet E. vclut p. 44,9 recepi quod solus Ε praebet ἀνέπτησαν
+ἀπέπτησαν ceteri). hoc enim verbum etiam alibi a Philone usurpatum
+videbatur commendari eis quae praecedunt καταβᾶσαι .... κατεπόθησαν
+. . . ἀνενήξαντο. p. 139,28 ss. μελέται, μνῆμαι, ἕξεις, διαθέσεις, τεχνῶν
+ἰδέαι πολύτροποι solus E pluralem ἕξεις, διαθέσεις servavit, qui falso in
+cetcris codicibus in singularem mutatus est. speciosum etiam est p. 13421
+illud γε, quod solus E habet. — quamvis magna excerptoris lldes sit,
+<note type="footnote">1) idem vitiuw sustulit Beruays in epistula Ueiaclitea IX: Die Heraklitischen
+Briefe p. 97.</note>
+
+<pb n="IX"/>
+tamen Interdum ipsius operam agnoscimus. interdum vel singula verba
+vel ampliores orationis partes omisit: v, adnotata ad p. 44,14.45,8. 63,5. 11.
+64,7. 67,2. 134,2. 135,19. 136,1. rarius quaedam addidit. velut p. 641
+transitionis formulam adiecit; p. 65,16 cum antea legisset vocis αἴσθησις
+etymologiam, ineptissimam vocis φαντασία etymologiam οἱονεὶ φαοστασία
+τις οὖσα inseruit. p. 136,13. 14 Μωυσῆς δὲ ὀνόματι εὐθυβόλῳ χρώμενος
+ἀγγέλους προσαγορεύει addit καὶ δαίμονας post ἀγγέλους. sumpsit autem
+illud ex p. 44,19, quem locum ipse excerpsit. p. 64,11 θρεπτικῆς τε καὶ
+μεταβλητικῆς καὶ αὐξητικῆς MAGHP tradunt, θρεπτικῆς τε καὶ μεταβλητικῆς
+UF non recte omissis verbis καὶ αὐξητικῆς — αὐξητικὴ enim terminus
+Aristotelicus est etiam alibi a Philone adhibitus —; iam cum E θρεπτικῆς
+τε καὶ γεννητικῆς legat, non hoc in codicibus invenisse, sed ex Aristotelica
+doctrina (Zeller Philos. d. Gr. II 2 p. 498) lectionem familiae UF mutassc
+videtur. quae adhuc ex huius voluminis excerptis de ratione, quae inter U
+et Ε intercedit, disputavimus, coufirmantur eis quae supra (p. YI) ex ordine
+scriptorum ab E excerptorum conclusimus — inde enim efficiebatur
+codicem familiae UF epitomatori praesto fuisse —, confirmantur vero
+etiam eis quae Fr. Cumont 1. c. p. XXVII de altera parte excerptorum
+expouit. is enim ostendit epitomen fere cum U consentire, praecipue
+in lacunis, tamen interdum accuratius codice U archetypum reddere,
+p. 40,20 C. proxime ad veram lectionem a Bernaysio inventam accedere.
+deuique illud commemorandum est, quod primus Bernays monuit1), epitomatorem
+non legisse folia illa, quae in libro-fZe aeternitate mundi omnes
+codices suo loco mota exhibent (v. Prolegomena vol. I p. XXXVIII).
+quod mirum est, quia in codice U haec folia non desunt, sed ut in
+ceteris transposita sunt. videtur igitur nota quaedam, qua ordinis perturbatio
+significabatur, ex omnium codicum archetypo in archetypum
+familiae UF transisse, qua scriptor exemplaris ab Ε usurpati motus esse
+potest, ut haec folia omnino omitteret.</p>
+<p>Excerptoris opera comparari potest cum eo qui duas partes ex
+genuinis libris Philonis resectas consarcinavit, compactas ut novum Philonis
+librum de mercede meretricis venditavit. sed libellum πεοὶ κόσμου
+multo recentiorem ’) quam illud opusculum subditicium.
+<note type="footnote">1) Gesammelte Ahhandluugen Ι p. 290 aduot. 1; cf. Cumont p. XXVII.</note>
+<note type="footnote">2) cf. Diels, Doxographi p. 108 2.</note>
+
+<pb n="X"/>
+codices cnim epitomae XV exeuntis vel XVI sacculi sunt. neque ante
+sacc. XV lihrum conscriptum esse verisimile cst. nam si prius compositus
+fuissct, idem puto ei futurum fuisse quod centoni de mercede meretricis,
+ut corporibus Philoneis ’ et cum scriptis genuinis traderetur.</p>
+<p>denique moneo ad familiam UFN pertinere etiam codicem ab Herennio
+qui fertur adhibitum; v. infra p. XXVIII.</p>
+<note type="marginal">De Cleraente Alexandrino</note> <p>4. Clementis Alexandrini locos, quibus Philonis verba in suum
+usum convertit, adnotavi ad p. 3,19. 5,17. 7,8. (15,22). 111,19. 13019.
+131,12 (154,1). 155,4. 167,16. 175,3. 255,3. 277,15. 281,23. 2935.
+interdum solus genuinum textum praebet, ut 3,20 ἀειδεῖς et ὄντος. 131
+15 ἐνδιατρῖψαι. 131,2 αἰφνίδιον ex lin. 5 et leg. alleg. I ἑ 17 scripsi;
+adnotare poteram Clementem loco infra posito idem testari. p. 155,7. 8
+ex Clemente ἀπὸ κεφαλῆς &lt;ἄκρας&gt; ἕως ποδῶν ἐσχάτων scripsi, cum codices
+habeant ἀπὸ κεφαλῆς ἕως ποδῶν ἄκρων. p. 4,2 Clemens et D recte καὶ
+χρόνου tradunt. p. 282,5 quod olim coniecerum ἐπιγραφόμενος pro αἰνιττόμενος,
+postea Clementis textu confirmari vidi. — nunc repetita Clementis
+lectione habeo quae addam. Protrept. ἑ 5 p. 5 P fortasse Clemens libri de
+plantatione § 3 sqq. respicit. libri de agricultura ἑ 163 p, 128,1 — 3 discripsit
+Paed. I ἑ 28 p. 115 P μὴ γὰρ κατὰ τὸν αὐτὸν χρόνον ἅμ ἄμφω συνίστασθαί
+φαμεν, τήν τε πρὸς τὸ πέρας ἄφιξιν καὶ τὴν τῆς ἀφίξεως πρόληψιν.
+unde fortasse etiam Philoni &lt;ἅμα&gt; ἄμφω restituendum est. an Strom. II
+ἑ 110. 111 p. 175 respiciat librum quod deus sit immutahilis ἑ 35 ss. (cf.
+etiam quis rer. div. heres sit cap. 27), dubito.</p>
+<note type="marginal">De Eusebio</note> <p>5. In hoc volumine adferri potuerunt Eusebii excerpta complura,
+unum(Praep. ev. VII 13) ex libro de agricultura ἑ 51 (p. 105,25 — 106,3),
+duo (Praep. ev. VII 13 et VII 18) ex libro de plantatione § 8 — 10
+(p. 135,1 — 13) et § 18—20 (p. —138,2), deuique tria (Praep.
+ev. XI 15) ex libro de confusione linguamm ἑ 62, 63 (p. 241,13 — 21),
+§ 97 (p. 247,15 —17), ἑ 146. 147 (p. 257,1 —9). genuinas lectiones solus
+Eusebius servavit p. 106,1 λόγον καὶ πρωτόγονον υἱόν καὶ om. codd.). 135
+3.10 λόγος et λόγου νόμος et νόμου codd.). 137,11 ὡμοίωσεν ὁμοίως ὠνόμασεν
+codd.). 137,12 πνεύματος θεοῦ codd.) ct νόμισμα σημειωθὲν νομίσας
+ἧς εἴωθε sim. codd.). 137,17 ἦν (om. codd.). 241,14 λόγιον λόγον codd.).
+241,16 γε μή γε codd.). 241,19 ὅλων ὄντων codd.). 241,21 τὰ (om.
+codd.). 247,15 τοῦ τὸ ὂν. 257,2 σπουδαζέτω σπούδαζε codd.). 2573
+
+<pb n="XI"/>
+ὡς ἄν ὡς codd.). 257,6 ἀρετὰς ἀρχὰς codd.). 257,8 ἀειδοῦς ἀιδίου
+codd.). cf. etiam 135,11. liabet autem Eusebii textus, ut omittam leviores
+paucas mutationes ipsi Eusebio, ut videtur, tribuendas, etiam proprias
+corruptelas: p. 106,1 scribit ἄγει κατὰ δίκην, νόμον προστησάμενος
+τὸν ὀρθὸν αὑτοῦ λόγον, raelius codd. κατὰ δίκην καὶ νόμον, quae saepius
+apud Platonem et Philonem sic coniunguntur. 241,17 ἐὰν δὲ τὸν ἀσώματον
+ἐκεῖνον θείς ἀδιαφοροῦντα εἰκόνος, ὁμολογήσεις codd. tradunt, male
+Eus. θείαν ἰδέαν φοροῦντα, ἱκανῶς ὁμολογήσεις. quae lectio et inepto
+illu ἱκανῶς ὁμολογεῖν redarguitur et exemplis verbi ἀδιαφορεῖν, quod Philoni
+in deliciis est. 135,12 codices et Eusebii textus simili corruptela
+laborant; genuinam lectionem φωνῆς coniectura Mangey restituit.</p>
+<note type="footnote">6. Ambrosium ad solum librum de migratione Ahraami adhibere <note type="marginal">De Ambrosio</note>
+licebat. cuius libri nonnullos locos ille suos fecit in libris de Abraham.
+quamquam potest factum esse, ut falso nonnulla ad librum de migratione
+referrem. nam si recte Massebieau coniecit 1) etiam Geneseos cap. 10,9 —
+15,6 in quaestionibus in Genesim tractata esse ea parte, quae inter alterum
+nostrum et tertium librum excidisset — quod certo demonstrari
+non potest —, considerandum videatur, an hunc potius librum Ambrosius
+adhibuerit.</note>
+<p>7. De Sacris Parallelis (cf. vol. Ι p. LXIII sqq.) nuper accuratius <note type="marginal">De Sacris Parallelis</note>
+egit Κ. Holl 2), qui demonstravit recensionis W duos alios codices,
+Ottob. gr. 79 saec. XV et Ambros. Η 26 inf. eiusdem saeculi, servatos
+esse, codicem D v apographum Ottoboniani esse. quod hoc apographum
+solum adhibuimus. non vereor ne incommodo fuerit, cum tres codices
+inter se simillimi sint. idem probavit eam recensionem ad alphabeticum
+ordinem redactam, quae codicibus D P D M et altera parte codicis D L servata
+est, ex recensionibus codicum D V et D R, non ex ipso loannis Damasceni
+opere — hunc euim revera auctorem operis esse gravissimis argumentis
+comprobat — compilatam esse. etiam in hoc volumine loannes Damascenus
+non raro solus genuinas lectiones suppeditat, ut p. 34,1 πολιὸν τὸν
+U). 70,9 νομοθετήσοντι νομοθετήσαντι codd.). 172.6 τοῦ (om. codd.).
+172,71 χρησομένοις χρησαμένοις codd.). 189,16 ὁ (om. codd.). 20413
+<note type="footnote">1) Le classement des oeuvres de Philon p. 9. cf. Neu entdeckte Fragmente p. 64.</note>
+<note type="footnote">2) Die Sacra Paraliela des Johannes Damascenus. Leipzig 1896. Texte und
+Untersuchungen zur Geschichte der altchristlichen Litteratur XVI L</note>
+
+<pb n="XII"/>
+διαφέρειν διὰ γραμμάτων codd.). p. 194,20 τὰ γὰρ ἀκούσια ἡμίσεα κακῶν
+καὶ κουφότερα D tradit, ἡμίση κακῶν κουφότερα Γ’. ἡμίσει κακῶν κουφότερα
+GU. haec lectio, nisi forte ἡμίσει κακῶν &lt;ἑκουσίων&gt; κουφότερα siipplcas,
+intellcgi nou potest. lectio loannis Damasceni comprobatur locis Philoneis
+II 608,8 Mang. ἥμισυ, γάρ φασι, κακοῦ ἡσυχία, II 310,28 Mang. κουφότερον
+ἢ κατὰ μοιχείαν ἁμάρτημα δρῶν, ἥμισυ σχεδὸν ἐκείνου. aliis locis
+loannes Damascenus meliorum codicum lectionem confirmat, velut 5010
+ἰδίων (MAU). 62,18 οὐδὲν θεῷ (M). 63,16 ἐπὶ τῆς γῆς (GUF, om.
+ΜΑΗP). 63,19 λείποντα (MAGP). 117,9 παρελθεῖν (MAG); cf. etiam
+57,18. 65,19. 71,5. deuique interdum feliciter accidit, quod loannis
+Damasceni auctoritate ea lectio commendatur, quae, cum rationibus ex
+textu petitis praefereuda videatur, tamen optimorum codicum auctoritate
+caret, ut 62,6 ἐγκαλεῖν (UF). 67,6 μάλιστα (G, om. ceteri). 17210
+ἐκδιδοῦσα (G). — nuperrime Papadopulos-Kerameus fragmenta Philonea
+codicis Hierosolymitani 15 (= D H), in quo variae Sacrorum Parallelorum
+recensiones coniunctae inveniuntur 1), edidit2), haec igitur ex codice
+Hierosolymitano volumini primo addenda sunt3): p. 14 nr. 53 = de opi-
+ficio mundi p. 7,11 —15, lin. 11 D H θέλοι (= D R) legit, lin. 12 οὐδὲν
+ἕτερον εὑρίσκει. ceterum cum D consentit. — p. 13 nr. 41 = ibid.
+p. 20,6. — p. 10 nr. 17 = ibid. p. 23,2 —12. D H consentit cum D,
+nisi quod lin. 5 σώματος omittit, χαρακτῆρι habet, lin. 6 ἀνθρώπου σῶμα
+οὐδὲ εἰκών, lin. 8 ὁ tradit. — p. 14 nr. 56 = ihid. p. 43,1 — 3. — p. 3
+nr. 10 (ab cditore falso inter inedita numeratum) = legum alleg. I
+p. 72,3 — 7. — p. 9 nr. 8 = ibid. p. 88,2. 3 σοφὸν μὲν εὑρεῖν ἕνα ἔργον,
+φαύλων δὲ πλῆθος ἀναρίθμητον. omittit igitur D H καὶ πιστὸν in D P et
+D R interpolatum. — p. 16 nr. 84 = ibid. III p. —130,4. p. 130
+1 D H coniecturam meam κτήματα confirmat. — p. 10 nr. 14 Φῶνος (contra
+DR falsum lemma habet) = ibid. III p. 133,6. 7 δουλοῖ τὸν λογισμόν, κἀν
+μήπω τέλειον αὐτῆς ἐκφοιτήσῃ τὸ γέννημα. D H Mangeii emendationem
+ἐκφοιτήσῃ comprobat, omittit prima verba, quae D R servavit. — p. 11
+<note type="footnote">1) V. L. Cohn, Jahrb. fiir prot. Theol. XVIII p. 486, Holl l. c. p. 114 sqq.</note>
+<note type="footnote">2) Extrait du Journal du Ministere de Pinstruction publiquc. St. Petersbourg
+1897. Janvier..</note>
+<note type="footnote">3) ubi nihil arlnotavi, eadcm verba in DH laudautur quae in ceteris excerptorum
+D codicibus; apertas corruptelas codicis DH fere omitto.</note>
+
+<pb n="XIII"/>
+nr. 19 = ibid. p. 148,25 — 149,5. D H habet ὁ πάντα, ἀνίας. — p. 4
+nr. 16 (falso in ineditis numeratum) = de Cherubim p. 199,25 — 2002.
+7 — 12. lin. 26 τὸ δι’ ὅ omittit, p. 200,9 συνεκράθη scribit. — p. 9 ur. 3
+= de sacrificiis Abelis et Caini p. 247,9 — 12. — p. 12 nr. 35 = ibid.
+p. 252,4 — 9. lin. 5 ἢ πόλιν θεάσομαι. — p. 3 nr. 11 (falso inter ineclita
+numeratum) ἐκ τοῦ ζ΄ καὶ ἡ τῆς νόμων ἱερῶν ἀλληγορίας = quod. det.
+pot. ins. p. 266,7 — 10. 13 — 17. 267,25 — 268,2. D H δυναμένου et ἄμεινον
+cum D C lin. 15. 16 legit, p. 267,26 πάσαις, p. 268,2 προσελθὼν et διαιρεῖσθαι.
+— alteri volumini haec testimonia addenda sunt: p. 11 nr. 24 = de
+posteritate Caini p. 4.1. 2. bis fol. 40 v et 65 v haec verba laudantur.
+priore loco recte συνόλως, altero cum D 1 C D 1 R οὖν ὅλως legitur. — p. 12
+nr. 39 Φίλωνος ἐκ τῶν ἐν γενέσει ζητημάτων = ibid. p. 6,11 — 19. lin. 12
+εἶναι καὶ omittit. — p. 11 nr. 23 = ibid. p. 13,9. 10. lin. 10 D H ἐβουλεύσατο
+legit. — p. 9 nr. 10 = ibid. p. 32,16 — 20. Ιἰn. 18 ῥύμην recte
+legit. — p. 9 nr. 12 = quod deus sit immutabilis p. 57,19 — 58,5. 57
+14 — 19. lin. 58,3 αὐτοῦ legit. inter τιμητικῶς et τιδίδωσι (sic) lacuua
+hiat suppleuda ex ceteris codicibus excerptorum D. — p. 13 nr. 44 =
+ibid. p. 62,13 — 18. lin. 16 cum D C αὐτὰ pro οὐδὲν legit. — p. 3 nr. 9
+(falso inter inedita numeratum) = ibid. p. 70,17. — p. 4 nr. 17 (falso
+inter inedita numeratum) = ibid. p. 89,16. D H ἐπήκοοι legit. — p. 12
+nr. 38 = de ebrietate p. 175,3 —5. — p. 13 nr. 49 = ibid. p. 176,14 18.
+lin. 15. 16 eandem corruptelam habet atque ceteri excerptorum D codices.</p>
+<p>Ad ea florilegia, quae pendent a loannis Damasceni Sacris Parallelis,
+hoc volumine adhibitum accedit florilegium codicis Barberini I 158
+saec. XI, quod amplior quaedam Maximi eclogarum recensio esse videtur,
+cognata, quantum quidem ex Wachsmuthii adnotationibus concludere
+licet 1) Maximi codici Laurentiano IX 29, fortasse etiam Vaticano 739.
+is solus adhibetur testis ad p. 13,2 — 8 — quem locum excerpta D nou
+tradunt —, ubi lin. 2 et 8 genuinas lectioues o? et προφαίνεσθαι suppeditat.
+cura Melissa Barocciana congruit tradens p. 174,6 — 13, cum Damasceno
+tradens 175,3 — 5, ub tamen solus usque ad lin. 7 pergit, cum
+eodem laudans p. 176,14 — 18. eundem bis per memoriae lapsum non
+adhibui. primum non suppeditavi amico locos quos Barberinus adfert ex
+<note type="footnote">1) Studien zu den griechischen Florilegien p. 105. 85.</note>
+
+<pb n="XIV"/>
+libro de sacrificiis Ahelis et Caini vol. I p. 218,8 — 10 ὁρᾷς πάντ’ ἀγαθὰ
+— μεθέμενος consentiens cum D, nisi quod ἀθρόον non omittit, et
+p. 218,14. 15 θνητῷ γὰρ οὐδενὶ — δεδώρηται, hucusque consentiens cum
+Antonii Melissa, tum addens lin. 15. 16 ἵνα κἀν ταύτῃ τὸ μακάριον ἐν τοῖς
+οὖσι μόνον ὁ θεὸς εὐδαιμονίζηται. tum solus laudat libri de plantatione
+p. 138,6 —12: ὁπότε γὰρ οἱ ἐκ φθαρτῆς ὕλης ὀφθαλμοὶ τοσοῦτον ἐπέβησαν,
+ὡς ἀπὸ τοῦ τῆς γῆς χωρίου πρὸς τὸν μακρὰν οὕτως ἀφεστῶτα ἀνατρέχειν
+οὐρανὸν καὶ ψαύειν τῶν περάτων αὐτοῦ, πόσον τινὰ χρὴ νομίσαι τὸν πάντα
+(sed post πάντα rasura, πάντῃ Philonis codices) δρόμον τῶν ψυχῆς ὀμμάτων,
+ἅπερ τῷ πρὸς τὸ θεῖον ἔρωτι πτερωθέντα οὐ μόνον πρὸς τὸν ἔσχατον
+αἰθέρα τείνεται, παραπεμψάμενα δὲ καὶ παντὸς τοῦ κόσμου τοὺς ὅρους πρὸς
+αὐτὸ ἐπείγεται τὸ ἀγένητον. quo loco animadvertenda esse videtur lectio
+πρὸς αὐτὸ ἐπείγεται τὸ ἀγένητον (cf. lin. 3 τὸ ὂν). in lectione παραπεμψάμενα
+Barberinus conciuit cum GH. sed verum esse videtur quod ex
+MUFE in textum recepi παραμειψάμενα. saepe enim hoc verbum de
+commutatione loci Philo adhibet, semel apud eum medium genus παραπέμπεσθαι
+legitur, atque id non de eo qui locum commutat, sed de eo,
+qui alium loco movet: II 12,13 Mang. παραπεμψάμενος οὖν τούς τε κατ’
+οὐρανὸν περιπολοῦντας καὶ τὴν Χαλδαικὴν ἐπιστήμην. — iure quaeritur,
+unde florilegium codicis Barberini aliquot fragmenta propria, quae in
+excerptis D omissa sunt, hauserit. quae quaestio nisi ab eo, qui plura
+florilegia cognata adhibuerit, solvi non potest. hoc tamen dixerim fortasse
+Antonii Melissam ad hanc quaestionem solvendam aliquid valerc;
+in qua tertium Damasceni librum, Parallela, qui ipse nobis traditus non
+est, sed cuius partem modo ex compilationibus alphabeticis recuperare
+licet, excerptum esse Loofs et Holl demoastraverunt. videntur igitur
+communi cuidam Antonii et florilegii Barberini fonti Parallela Damasceni
+partem materiac suppeditasse. et a Parallelis, quibus humanae
+virtutes et vitia tractabantur, ea quae Barberinus propria habet Philonis
+fragmenta non abhorrere videntur.</p>
+<p>Florilegii Philonei in Prolegomcnis voluminis I p. LXIX tres codices
+notavimus. nuper S. ’) monuit idem bis descriptum esse in codice
+Mazarineo 611 Α (saec. XVI) fol. et 189r.</p>
+<note type="footnote">1) Zeitschrift für öst. Gymn. 1897 p.</note>
+
+<pb n="XV"/>
+<p>8. Uno huius voluminis loco adhibuimus Vaticanum graecum 1611, <note type="marginal">De Nicetae catena</note>
+membranaceum saec. XII. inscriptus est τῶν εἰς τὸ κατὰ Λουκᾶν ἐξηγήσεων
+τοῦ Σερρανοῦ Νικητᾶ διακόνου. haec excerpta e Philonis scriptis
+notavi: 1. fol. 181 αἱ μὲν γὰρ ζῶναι — ἐπιθυμιῶν (quaest in. Exod. I ἑ 19
+Harris Fragments p. 48). 2. fol. 232 ἔτι ἐν τῶ νόμῳ τῆς λέπρας — ἀνυπαίτιον
+καὶ σωτήριον (de sobrietate § 49. 50 p. 225,6 — 17). 3. fol. 245.
+246 μέγιστον ἀδικημάτων ἐστὶν ἡ μοιχεία. πρῶιον μὲν γὰρ — πρῶτον
+ἀδικημάτων ἀνεγράφη (de decalogo II 201,14 — 202,21 Mang.). — καὶ γράμμα
+πρῶτον τοῦτό ἐστιν — ἐπιμελές1). ἅλις μὲν δὴ τούτων (de specialibus
+legibus II 300,41 — 301,27 Mang.). — δεύτερον δὲ πρόσταγμα — σεσυληκώς
+(de decalogo II 202,22 — 30 Mang.). — οὐδὲν γὰρ οὔτε ἱεροπρεπέστερον
+— λαβόντες τοῦ πάθους οἶκτον (de specialibus legibus II 313,30 — 3143
+Mang.)2). — τρίτον δέ ἐστι παράγγελμα· μὴ κλέπτῃς — ἐπαυξανόμενα (de
+decalogo II 202,42 — 203,13 Mang.). — κλέπτειν τοίνυν ἀπειπὼν — ἐπὶ
+τιμωρίᾳ τῶν οὐδεμιᾶς ἀξίων κολάσεως. διὰ δὴ ταῦτά μοι δοκεῖ ψευδῆ μαρτυρίαν
+(ψευδομαρτυρίαν cum codd. leg.) ἀπειπεῖν (ibid. ΙΙ 203,14—45).— οἱ
+γονέων ἀλογοῦντες — ἐθελήσουσιν (ibid. II 199,23 — 42 Mang.). — ἀλλὰ καὶ
+τῆς ἀλόγου φύσεως ἐν χαρίτων ἀμοιβαῖς ἀγνωμονέστεροι φαίνονται. τῶν
+πελαργῶν — τοσαῦτα καὶ περὶ γονέων τιμῆς ἐφιλοσόφησεν (ibid. II 20020
+— 201,10 Mang.). — 4. excerpta ex libro de speciaibus legibus fol. 273
+εἰσὶ παρ’ Ἰουδαίοις ἑορταὶ ἀριθμῷ δέκα — ἅπασαν ἡμέραν ἑορτὴν ἀναγράφει
+ὁ νόμος, καὶ ὅσοι ἀνυπαιτίως ζῶσιν, εἰκότως ἐνευφραινόμενοι ταῖς ἀρεταῖς
+ἅπαντά γε τὸν βίον ἑορτὴν ἄγουσι (de specialibus legibus II 278,14 — 29.
+279,35—37 Mang.; 16,1—13. 18,14, 15 Tisch.). —
+κυρίου“, ὡς τοῦ ἡμετέρου γένους οὐχ οἵου τε ὄντος τὴν μὴ λεγομένην, ἀλλὰ
+πρὸς ἀλήθειαν οὖσαν ὄντως ἄγειν ἑορτήν (ibid. II 280,18 — 23.33 — 35 Mang.;
+20,2 ἁ 12. 13 Tisch). — μετὰ μέντοι τὴν συνεχῆ — ἑβδόμη (ibid. II 281
+13 — 15 Mang; 21,15. 16 Tisch.), ἡ τοῦ κόσμου γενέθλιος, ἐν ᾗ προστέτακται
+— ἀλλήλοις ἀντιπαραχωρῶσι καὶ πονοῦντος μὲν τοῦ σώματος ἡ ψυχὴ διαναπαύητᾶι,
+<note type="footnote">1) quae sequuntur ἅλις μὲν δὴ τούτων in solo Vaticano leguntur, desunt etiam
+apud Corderium (v. p. XVI adnot. 4).</note>
+<note type="footnote">2) sequuutur apud Corderium (p. 452): primum quidem lex nos vult corrigere α
+peccatis, in quae facilius labimur, quale est adulterium; deinde internum et nobis naturalem
+ignem extinguere homicidium prohibens: ira enim fera pessima est. postrema vero illa ponit
+quae rarius contingunt dicens: „non furaberis, non loqueris falsum “, quae Philonea
+esse mihi videntur: locum, unde sumpta sunt, uon inveni.</note>
+
+<pb n="XVI"/>
+ἀναπαύλῃ δὲ χρωμένου διαπονῇ (II 281,41 — 282,37 Mang.; 22,17 — 24
+3 Tisch.) 1) —οὐ θεράπουσι δὲ μόνον ἐκεχειρίαν ἔδωκεν ὁ νόμος ἐν ταῖς
+ἑβδόμαι. ἀλλὰ καὶ κτήνεσι (II 283,34 — 36 Mang.; 25,8. 9 Tisch.). —τοσούτου
+— προκαλούμενος (II 284,5 — 10 Mang.; 26.,5—8 Tisch.). — καὶ
+πραθέντα ἐλεύθερον ἀφίησι καὶ τὴν χώραν ἀνάροτον ἐὰν κελεύει διὰ πολλά·
+πρῶτον μὲν ἵνα τὴν ἑβδομάδα τιμήσῃ, δεύτερον — ἐνέγκῃ ᾦ 285,20. 286
+21—33 Mang.; 28,13. 30,9—16 Tisch.). — τρίτον — πῶς
+ἀνθρώποις προστακτέον τὰ μέτρια2) (II 286,44 — 287,4. 13 Mang.; 31610.
+16 Tisch.). — τέταρτον κοινωνικὰ ἤθη ἐνσφραγίζεται — δύνωνται καὶ οἱ
+κτηνοτροφοῦντες τὰ εὔχορτα πεδία ἐκλέγωνται (11289,9 — 15.36 — 38 Mang.;
+35,7 — 11. 36,2 — 4 Tisch.). — ἔπειτα ἑπτὰ ἑβδομάδας — ὀφείλουσιν εἶναι
+(II 289,44—290,11 Mang.; 36,11—37,4 Tisch.). — τὰ δὲ πρὸς
+— ὑπαχθείς Π 291,28—39 Mang.; 39,20—40,6 Tisch.). —
+μητρὸς λόγον ἐχούσης (II 292,1— 298,12 Mang.; 44,12—68,14 Tisch.).</p>
+<p>Nicetae Serrani in Lucae Evangelium catena, cuius haec excerpta
+Philonea ex codice Vaticano notavimus, etiam aliis multis codicibus
+tradita est3). latina huius catenae versio edita est a Balthasare Corderio4);
+qui in praefatione profitetur exemplar iu latinum sermonem a
+se translatum ex codice Bessarionis Veneto5) transscriptum esse, eiusdem
+catenae mutila exemplaria se in bibliothecis Caesarea Vindobonensi6) et
+Augustana vidisse. Corderii catena recte videtur ex Nicetae catena
+excerpta esse dici7), nam si indicem auctorum a Niceta laudatorum,
+quem Α. Mai I. c. p. 723. 724 composuit, cum indice, quem Corderius
+catenae praemisit, et si locos patrum ab illo editos cum hoc comparaveris,
+nonnulla apud Corderium deese invenies. quae in ipso codice Bessarionis,
+<note type="footnote">1) in hac parte non pauca omisit Vaticanus.</note>
+<note type="footnote">2) Corderius pleniorein textum legit: πῶς οὐχὶ μᾶλλον ἀνθρώποις, οἷς οὐ μόνον
+αἴσθησις πρόσεστιν ἡ κοινὴ καὶ τῶν ἀλόγων ζῴων, ἀλλὰ καὶ λογισμὸς ἐξαίρετος.</note>
+<note type="footnote">3) cf. Preuschen apud Ilaruack, Altchristliche Litiemtur I p. 840, Ehrhard in Krumbacheri
+Hisi. litt. byz.2 p. 215.</note>
+<note type="footnote">4) Catena LXV graecorum patrum in S, Lucam . . . Antverpiae 1628. nonnulla ex
+codice Vaticano edidit Α. Mai, Scriplorum veterum nova collectio tom. IX p. 626 — 722.
+cf. etiam Pitra, Analecta sacra ex spicilegio Solesmensi paruta II p. 313.</note>
+<note type="footnote">5) cf. Zahn, Forschungen zur Gesch. des neutestamentlichen Kanons III 7.</note>
+<note type="footnote">6) hunc codicem Ilarris Fragmcnts of Philo p. b recte suspicatur esse Vindob.
+theol. gr 71; cf. Nesselii catalogum p. 153, Zahn I. c. 7.51.</note>
+<note type="footnote">7) V. Zahn et Ehrhard I. c.</note>
+
+<pb n="XVII"/>
+ut vidctur, iam omissa eraut. neque igitur siue causa factum csse
+videtur, ut in codice illo catenae titulus mutaretur. Corderius enim
+testatur graecum titulum εὐαγγέλιον κατὰ Λουκᾶν ἑρμηνευόμενον ἐκ διαφόρων
+ἑρμηνευτῶν τοῦ τετραευαγγέλου ἑρμηνείαν εἰσάγων ἔνδον, qui traditur
+etiam Monacensi 33 (Hardt I p. 187). idem igitur quod Procopii in
+Octateuchum catenae etiam huic Nicetae operi videtur factum esse, ut
+catena nonnullis omissis sine uomine auctoris traderetur, cum posteriorum
+uon tam quis auctor esset quam qui laudarentur scriptores interesset.
+sed excerptoris opera omitteudo contineri videtur. quos non omisit locos,
+eos integros ex Nicetae commentariis descripsisse videtur. quae quidem
+enumeravi excerpta Philonea, eodem plane ordine apud Corderium iuve-
+niuntur: v. editionis Antverpianae p. 426 (= no. 2). 451 — 453 (= no. 3).
+535 — 539 (=no. 4). primum modo excerptum idque breve, ut videtur,
+omisit. contra in Corderii catena p. 480 excerptum ex libro de specia-
+lilnis legibtis II 337,29 — 338,5 legitur, quod e Vaticano quidem non enotavi
+(cf. supra p. XV adnot. 2, XVI adnot. 2). Nicetae Serrani catenae,
+quarum thesauii magnam partem adhuc in bibliothecis latent, quautum vale-
+ant nuper theologi praedicaverunt1). quanti pretii nostra cateua sit ad
+genuinum Philonis textum restituendum, vel uuus huius voluminis locus,
+ad quem fonte illo uti licuit, docet. iu undecim enim lineis (p. 225
+6 — 17) sex vel septies hac catena sola verus textus servatus est: καὶ
+μονὴν ἐκτὸς εἶναι μόνην codd.), κακιῶν (κακῶν codd.), ταῦτα (τοῦτο codd.),
+πρὸς τὸν Κάιν (περὶ τῆς τοὐ παντὸς γενέσεως codd.), αὐτὸν τὸν φαῦλον
+codd.), τὴν (om. codd.); recte etiam linea 16 vocem ἦν addere videtur.
+hoc addo, in ceteris Nicetae catenis, quae quidem editae sunt1), uihil
+Philoneum inveniri.</p>
+<p>9. Aliam catenam Proverbia explicantem p. 224,5. 6 adhibui (cf.
+Pitra 1. c. II p. XXIII). plures eius codices Preuschen l. c. p. 838 (cf.
+etiam p. 634) enumerat2). ipse inspexi unum Vaticauum Reginensem
+77, qui, ut subscriptio docet, anno 1598 a Davide Wagnero calamo
+exceptus est ex ore Davidis Hoeschelii ad exemplar ex codice Mouacensi
+<note type="footnote">1) V. Ehrhard Ι. c. p. 215.</note>
+<note type="footnote">2) addendus est codex Angelicus 113, in quo catenam in Proverbia sequuntur
+commentarii in Ecclesiasten et in Cantica Cauticorum, catena iu Job; cf. Index rodicum
+graecorum Bibliothecae Angelicae, Firenze-Roma 1896 p. 153.
+Philonis opera vol. II Β</note>
+
+<pb n="XVIII"/>
+ab Η. Giengero transscriptum1). addita est latina D. Hoeschelii versio.
+titulus praemittitur fol. 1 ὑπόμνημα διαφόρων τινῶν πατέρων εἰς τὰς παροιμίας
+Σολομῶνος. ex eodem Monacensi Th. Peltauus latinam versionem
+scriptorum nominibus omissis, non paucis ut videtur vel mutatis vel
+additis edidit2). confirmatur hac catena Turnebi emendatio p. 224.6
+παρουσίᾳ pro περιουσίᾳ scribentis. fragmento Philoneo, quod modo com-
+memoravi, aliud in catena succedit: ὁ αὐτός: τὴν εὐκατάπρηστον ὕλην
+ἐπιμελὲς ἡμῖν ὅτι πορρωτάτω τοὐ πυρὸς ἀποτίθεσθαι. quod fragmentum in
+traditis Philonis scriptis non legitur; quin Philonis sit, non est quod
+dubitemus. nam ἐπιμελὲς cum dativo coniunctum omissa copula saepius
+adhibet, saepius etiam verbo ἀποτίθεσθαι utitur. alibi catenae auctor
+Philonem testem non excitat.</p>
+<p>Haec hactenus de codicibus qui excerpta Philonea continent et de
+scriptoribus ecclesiasticis, qui Philonis libros compilaverunt. restat ut
+pauca praemittam de singulis libris in hoc altero volumine editis.</p>
+<p>DE POSTERITATE CAINI. traditus est liber in uno codice U3),
+cuius titulum confirmatum indice codicis V recepi. alium tituhim
+testantur excerpta D. quiuquies enim ex hoc libro excerpta laudantur
+Φῶνος ἐκ τοῦ η΄ καὶ θ΄ τῆς νόμων ἱερῶν ἀλληγορίας (cf. adnot. ad p. 512.
+6,11. 13,9. 21,3. 31,18). semel numero omisso Φίλωνος ἐκ τῆς νόμων ἀλληγορίας
+(cf. adnot. ad. p. 4,1), bis Φίλωνος ἐκ τοῦ ζ΄ καὶ η΄ τῆς νόμων
+ἱερῶν ἀλληγορίας (cf. adnot. ad. p. 3,2. 33,25)4). primus huuc librum
+edidit Mangey, qui in praefatione vol. I p. XVU eum dicit e codice
+Vaticano transscriptum et ad se Roma transmissum esse a Cl. Fouchet,
+Eleutheropoleos episcopo in partibus infidelium. quodsi respexeris diffi-
+cillimum lectu esse codicem, cum non paucae litterae paene evanidae
+sint, aliarum vestigia obscurata pellucentibus in charta bombycina alterius
+paginae litteris, si cogitaveris nou ea quam nunc postulamus diligeutia
+<note type="footnote">1) cf, catalogum bibliothecae Vaticanae. codicex Reginae Suecorum et Pii II p. 61. 62.
+videtur adhibitus esse Monacensis 32 (v. Hardtii Cataloffum I p. 179).</note>
+<note type="footnote">2) Theodori Pellani Soc. Jesu Theologi in Proverbia Saloinonis Paraphrasin et Scholia
+IX SS. Patruni scriplis vulgalae edilioni accomnodnta . . . Antverpiae, Ex typographeo
+Uieronymi Verdusi, M.DC.VI.</note>
+<note type="footnote">3) de quo v. Proleg. vol. I p. XIX.</note>
+<note type="footnote">1) de causa diversitatis numerorum v. Ε. Schiiror, Gescb. des jiidischen Volkes II2
+p. 841. titulos aperte falsos praebent ad 6,11 D R ot D L, ad 21,3 D P et D R.</note>
+
+<pb n="XIX"/>
+episcopum usum esse et praecipue in ea re peccasse, quod compendiorum
+illud genus anceps et variis interpretationibus obnoxium, cjuod constat
+consonantibus terminationum supra scriptis, non accurate notavit, non
+poteris non admirari Angli editoris sagacitatem, qui uon raro divinando
+recuperaverit, quod revera in codice legitur; ignosces quod aliis locis vel
+erroribus eius qui transscripserat deceptus vel nimium suo ingenio indulgens
+a vero aberravit. qui post Mangeium librum edidit Tischendorfius1)
+non satis praestitit quod ipse in titulo iactavit. consentaneum est eum
+haud paucis locis Mangeii textum ex codice emendasse (v. praefationem
+eius p. XVI), cum largam messem Mangeii auctor ei reliquisset. sed
+non raro socius est errorum, quos Fouchet commisit: v. adnot. ad p. 620.
+7,13. 9,9. 9,10 (ubi γε, quod habet codex, coniectura invenit Tisch.).
+10,16. 19. 14,14. 16,4. 20. 18,11. 20,13. 21,15. 22,16. 25,6. 26,9. 276.
+12.22. 28,20. 29,24 30,5.9. 31,14. 34,2. 36,7.10. 38,3.16. 39,11.26.
+40,25; quibus omnibus locis vera lectio nunc primum aut e codice
+restituta aut codicis auctoritate confirmata est. aliis locis utriusque editoris
+in euotanda codicum lectione errores non adnotavi, ne mole iuerti
+nimis onerarem apparatum. magis stomachum movet, quod interdum
+veris Mangeii lectionibus suas pravissimas opponit quasi in codice repertas:
+v. e. gr. adnot. ad p. 11,13. 26,25 (Tisch. p. 97,19. 120,18), vel illius
+lectionum errores correcturus ipse in alios errores incidit. maxime
+vituperandum est, quod, cum a. 1866 librum Philonis ad Richteri
+editionem contulisset — quae collatio per bibliopolae manus ad me
+venit —, postea non cogitans nonnulla oculos suos potuisse fugere vulgatae
+vitia interdum codici ascripsit. porro illud compendiorum genus, de
+quo supra dixi, omnino nou curavit, sed confidenter quas vel apud Mangeium
+invenerat explicationes compendiorum vel quae ipsi aptissimae
+visae sunt codici tribuit: v. e. gr. adnot. ad 7,13 (ubi Tisch. sequitur
+Mangeium). 12,3 (ubi Tisch. scribit ἐν ἑαυτῷ). 14,3 (ubi Tisch. sequitur
+Mangeium). 25,12 (ubi Tisch. sequitur Mangeium). denique miro modo
+interdum codicis orthographiam quasi ipsius Philonis servavit scribens e.
+gr. ἀντιρέπει, ἐπιροῆς, ἐνθένδεν. coniectura Tisch. nonnulla facilia iuventu.
+<note type="footnote">1) Philonea, inedita altera, altera nunc demum recte ex vetere scriptttra eruta, ed.
+Const. Tischendorf, Lipsiae 1868 p. 84—143. B*</note>
+
+<pb n="XX"/>
+nonnulla etiam ditficiliora feliciter restituit a Westermanno adiutus (v.
+praef. eius p. XIX); sed non raro vel graeci sermonis vel Philonis
+loquendi usus non satis peritum se praestat. illius, ut pauca proferam,
+cum 1,14 τὰ ὅλα pro τὰ ὅσα, 14,26 λογίων pro λογικῶν, 26,23 τι (pro
+τινὸς) . . . λάχωσι, 35,11 μετέχοι 40,1 ἐὰν . . . ὠφέλησαι, huius. cum
+16,3 ἑλκούσης pro ὁλκοῦ — quam coniecturam p. XVIII certissimam esse
+praedicat —, 30,4 τῆς παιδείας τῆς ἐγκυκλίου χηρευούσῃ conicit (cf. etiam
+16,13. 24,1). — post editores Anglum et Germanum Batavus Holwerda
+ad emendandum librum nostrum accessit1), qui nonnulla bene emendavit
+praeter emendationes p. 1,10. 34,26 propositas inventa et in textum
+recepta a me ipso. antequam commentationem eius legerem, saepius, quod
+primoribus modo labris Philonis dicendi genus gustaverat vel nimio
+coniectandi studio fervebat, in prava delatus est (cf. 8,1. 12,17. 1820.
+24,18. 27,16. 31,17. 33,6 40,1). — restat ut de mea opera pauca
+addam. ipse, cum Romae versarer, librum de posteritate non contuli,
+quod tum opinabar me in Tischendorhi opera acquiescere posse. post
+cum vidissem ne in codice Μ quidem conferendo eum satis accuratum
+fuisse, a loanne Tschiedelio impetravi, ut qua solet diligentia librum
+conferret. et vix vel perraro eum errasse puto, cum omnes locos, quibus
+discrepabant editores. ei ita significassem, ut non modo discrepantiam
+sed etiam consensum codicis testari deberet. scito igitur etiam eis locis,
+ubi priorum editorum errores non commemoravi, collationi in meum
+usum confectae confidendum esse. quam saepe vulgata lectio verae codicis
+lectioni cesserit, supra significavi. nonnullis locis ex excerptis D
+vera lectio textui inseri potuit. non multum mihi profuit exemplar
+editionis Tischendorfianae, quod Otto notis suis compleverat et quod per
+bibliopolam in manus meas venerat. duas eius emendationes (p. 1026.
+12,11) in textum recepi, tertia digna visa est, quae ad p. 25,20 adnotaretur.
+nonnulla debeo Dielsio, qui chartas impressas huius libri percurrebat.
+non paucis locis ipse fero lenibus medelis corruptelas textus
+sanasse mihi videor. qua in opera summo commodo mihi fuit Grossmanni
+lexicon Philoneum, opus eximiae industriae, quod filius eius
+<note type="footnote">1) Verslagen en Mededeelingen der koninkl. Akiidemie van Wetenschapen (Amsterdam),
+Afdeeling Letterkunde III reeks 1. deet (1884) p. 274286.</note>
+
+<pb n="XXI"/>
+liberalissimc mihi dono dedit. quas rationes in singulis locis emendandis
+secutus sim, alibi fusius exponam.</p>
+<p>DE GIGANTIBVS. codices MAHPU. et hic et sequens liber traditus
+est etiam in codice Β (Proleg. vol. I p. Χ), quem consulto non adhibui.
+parte enim eius conlata intellexi eum ad familiam Α pertinerc, sed
+multis propriis vitiis infectum esse, nec sperandum esse toto conlato
+quicquam utilitatis ad constituendum textum redundaturum esse, cum
+satis multi codices praesto sint. carere etiam posse mihi videbar codice,
+qui etiam in his tertiae partis libris gemellus est codicis Β (v. L. Cohn
+Ι. c. p. XXIX. XXX)1), Laurentiano LXIX, 11. liber de gigantibus olim
+unius libri corpus complebat simul cum libro cui inscribitur</p>
+<p>QVOD DEVS SIT IMMVTABILIS. quem quod segregavi ab illo,
+codicum auctoritatem secutus sum, qui titulum ὅτι ἄτρεπτον (ἄτρεπτόν
+ἐστι UF) τὸ θεῖον praebent. nam etiam in aliis libris codicum titulos
+amplecti debemus, quamvis dubitemus, an ab ipso Philone profecti sint.
+eisdem autem codicibus hic liber quibus liber de gigantibus traditus est,
+nisi quod F accedit et G, modo hic cum UF modo cum ΜΑ congruens.
+unum librum in duas partes, quae nunc singulorum librorum locum obtinent,
+postea diremptum esse inde comprobatur, quod alterius quoque
+loci saepius in excerptis D laudantur ἐκ τοῦ περὶ γιγάντων: cf. adnotata
+ad p. 57,14. 65,12. 66,11. 67,5 (ubi DL Φίλωνος περὶ τῶν γιγάντων praebet).
+70,8. 17. 71,2 (DK ἐκ τοῦ περὶ τῶν γιγάντων). eadem excerpta bis
+titulum ἐκ τῶν ἐν γενέσει ζητημάτων falso exhibent: v. adnotata ad p. 60
+12. 62,3. amplior titulus, sed quo uterque liber continetur, in Eusebii
+indice librorum Philonis reperitur περὶ γιγάντων ἢ περὶ τοῦ μὴ τρέπεσθαι
+τὸ θεῖον (περὶ τοῦ μὴ τρέπεσθαι τὸ θεῖον habet etiam subscriptio codicis
+U, cf. § 22). ampiificatus hic titulus effecisse videtur, ut postea duo
+libri discerperentur. quod prave factum esse recte librarius archetypi
+HP in tine prioris libri testatur (cf. adnotata ad p. 55,8) vel ex antiquiore
+memoria hauriens vel ipse sua coniectura usus. idem efficitur
+postremis prioris libri verbis: τοσαῦτα εἴς γε τὸ παρὸν ἀρκούντως περὶ τῶν
+γιγάντων εἰρηκότες ἐπὶ τὰ ἀκόλουθα τοῦ λόγου τρεψώμεθα. ἔστι δὲ ταῦτα·
+<note type="footnote">1) soli ΑΒ et Laurentianus e. gr. p. 43,1 θυγατέρας transponunt, 43,4 τοὺς omittunt;
+soli B et Laurentianus p. 56,7 ἐνημμένη 76,11 ἔξω περιρρέων legunt.</note>
+
+<pb n="XXII"/>
+quae verba non habent quo referantur, nisi artissime cum eis coniungas
+locum S. S., a quo alter qui uunc fertur liber incipit. formula enim
+ἔστι δὲ ταῦτα, qua sacpe Philo unius libri partes coniungit, in coniungendis
+diversis duobus libris uti ’non poterat. oflfendit in verbis illis
+etiam librarius codicis U, sed suo arbitrio αὖθις ἐπὶ τὰ ἀκόλουθα καιρῷ
+τῷ δέοντι τρεψώμεθα scripsit, verba autem ἔστι δὲ ταῦτα omisit, ita ut
+Philo hic non ad sequentem eiusdem libri partem, sed ad alium quendam
+librum delegare videretur. librum de gigantihiis inter eos esse, qui
+saepissime et in excerptis D et apud scriptores ecclesiasticos laudarentur,
+iam Mangey monuit et testimonia huius editionis docent. nc coniunctis
+quidem duabus partibus iutegrum eum servatum esse, iude apparet, quod
+nonnulla quae ex eo afferuntur in tradito textu desiderantur1). neque
+improbabiliter Massebieau2) coniecit initio libri, quod perisset, de posteritate
+Seth (Gen. 4,26 — 6,32) Philonem egisse; quo refert etiam libri
+de sobrietate § 52 ἔφαμεν πάλαι, ὅτι Σῆμ’ ἐπώνυμός ἐστιν ἀγαθοῦ . . . . idem
+sagacissime auguratur intcr hunc de gigantrbus et eum qui sequitur
+librum de agricultura videri intercidisse complures libros, quibus de
+diluvio (Gen. 6,13 — 9,19) Philo ageret, certe huc intercalandos esse duos
+libros περὶ διαθηκῶν, quippe ad quos componendos narratio foederis dei
+cum Noe facti occasionem dedisset; quos libros Philo innuit in libri
+de mutatione nominum cap. 6 p. 586 M.: τὸν δὲ περὶ διαθηκῶν σύμπαντα
+λόγον ἐν δυσὶν ἀναγέγραφα πράξεσι (leg. συντάξεσι) καὶ ὑπὲρ τοῦ μὴ παλινῳδεῖν
+ἑκὼν ὑπερβαίνω, fortasse etiam in quaestionum in Exodum II § 34
+de divino testamento certius accuratiusque iam dictum est,
+ita ut vix oporteat nunc temporis replicare.</p>
+<p>DE AGRICVLTVRA. codices MAGHUF. 6 in hoc libro fere cum
+MA, raro cum UF consentit. sed UF iam in § 67 p. 108,27 dcsinunt
+addita subscriptione περὶ γεωργίας in U. qui omnibus codicibus traditur
+titulus περὶ γεωργίας, confirmatur excerptis D, quibus huius libri
+sententiae laudantur ἐκ τοῦ περὶ γεωργίας: cf. adnotata ad p. 97,24. 117
+7. 131,20. solus index codicis M quod addit τὸ α΄, cousentit cum
+Eusebii testimouio, qui in iudice Philouis librorum enumerat τὰ περὶ
+<note type="footnote">1) V. TTarris Fragments of Philo p. 9. tertium et quartum fragmentura, quae ab
+eodem afferuntur, in libro fjuod deus sit immutabilis inveuiri monui ad p. 66,11. 708.</note>
+<note type="footnote">2) Le classeinent des oeuvrcs de Philon p. 23.</note>
+
+<pb n="XXIII"/>
+γεωργίας δύο (v. Prolegoraena vol. I p. C) et verba huius libri sic inducit:
+6 δ’ αὐτὸς ἐν τῷ περὶ γεωργίας προτέρῳ librum de plantatione eodem
+loco sic laudat: καὶ ἐν τῷ δευτέρῳ δὲ πάλιν τάδε γράφει, v. adnotata ad
+p. 105,25. 135,1. quod testimonium quid valeat, modo videbimus.</p>
+<p>DE PLANTATIONE. codices MGHUF. codicis Η maior quam in
+aliis libris in hoc est auctoritas. solus enim genuinas lectiones servavit
+p. 134,18 τὸ πλῆρες. 138,21 κάτω νικῶντος et ὢν. 141,1 συνέσεως.
+141,16 παρακεκινημένος. 141,20 ἐνευφραινόμενος. 142,9 εἰς μὲν τὴν.
+143,6 καὶ, quod ceteri omittunt. 143,10.11, ubi ceteri verba καὶ ἐπ’
+ἰῶν et ἑ 51 et textu LXX interpretum comprobata omittunt. 14324
+ἐπεὶ et νοήσει. 144,24 νομίζονται. 146,6 ὅλην. 146,18 τὸ. 146,18. 19 ἄριστον
+αἴτιον. 147,3 δεῖν. 147,11 ὃ μηδὲ. 147,15 ἐκεῖνοι. 148,1 ἥκετε. 148,6 κλῆρον
+μὴ. 149,2 συμβόλων. 150,19 ταύτης. 151,9 ψυχῇ. 151,20 δ’ ἔσθ’.
+152,1 περικαθαριεῖτε. 152,15 ἀπάθειαν. 153,4 ἀποδῷς. 153,11 ἐπ’ ἄγρᾳ.
+153,15. 16 κἀν τῷ — παραβλαστάνοντα. 154,4, ubi ceteri οὖν omittunt.
+154,5, ubi ceteri γε omittunt. 155,3 μέσοις. 155,6 τὸν. 155,17 ἐν.
+156,18 καθάρσεως. 156,18, ubi ceteri καὶ ὁ omittunt. 157,1 μῆνας.
+157,15 ἰσότης. 157,19. 20 δὲ καὶ τοὺς. 158,8, ubi ceteri ἀλλὰ δεκὰς μὲν
+omittunt. 159,17 ἔτει. 159,21 ἅπασιν. 159,22 ἀντιλαμβανοίμεθα. 160
+23, ubi ceteri καὶ omittunt. 161,6 τὸ. 162,5 ἀνερριπισμένων et ἐξημμένων.
+162,9 τὴν. 162,15 εἰς ὕψος. 163,1 μανίαν. 163,19 ἐπιτέλλει. 1642.
+ἱστίοις. 164,6 ἐνορμίζεται. 164,14, ubi δὲ ceteri omittunt. 16424
+οὐδὲν ὅτι μὴ. 165,1 ὄγκον. 165,15 προσφέρονται. 165,22 τύχη. 1662
+ubi ceteri οὐ omittunt. 166,15 τὸ. fortasse etiam 257,23 τριπλῆν
+recipiendum erat. aliis locis proxime ad genuinam lectionem coniectura
+restituendam accedit: cf. 161,17. 18. 162,14. 15, fortasse etiam
+154,3. nec recte nunc censeo me p. 138,15 in apparatu ex corruptela
+ceterorum codicum aliquid veri elicere voluisse, immo in lectione codicis
+Η δεινὸν γὰρ εἰ acquiescendum esse. omisi autem eos locos, ubi H2 fortasse
+ex coniectura inventam veram lectionem tradit. accedunt alii loci
+haud pauci, quibus Η cum uno aliquo codice in tradenda vera lectione
+congruit. plerisque illorum locorum, quorum lougam seriem enumeravi,
+codicem H optimum veri testem esse patet. nonnullis locis, quibus
+aliquis dubitaverit, eius auctoritatem sequendam esse vel ratione vel usu
+dicendi Philoneo alio loco comprobabo. nihil autem certi adhuc proferri
+
+<pb n="XXIV"/>
+potest quo explicetur, cur tandem tam diversa in diversis scriptis iiuius
+codicis auctoritas sit. hoc coniectura divinare licet, quamvis demonstrari
+in liac certe librorum parte non possit, fortasse in Philonis operum
+memoriam caderc, quod in aliis scriptoriinis, velut Plutarcho, probari
+potest, maiora corpora scriptorum ex minoribus composita esse, pro
+varia igitur codicum, qui adhibiti erant ad maius corpus efliciendum,
+auctoritate etiam variam esse unius codicis in diversis partibus auctoritatem.
+quanta autem revera sit auctoritatis diversitas, optime intelleges,
+si praecedentem et scquentem librum comparaveris. in illo enim quindecim
+locis 107,2 τὸ. 111,7 δὲ. 113,8 καταπνεόντων. 113,15 εἷς pro εἰς.
+114,26 ἕτερος. 115,22 δὲ et καὶ. 122,18 συνεπηχείτω. 122,22 θῆλυ.
+123,9 δὲ pro τε. 123,17 λείαν. 125,27 περιτιθέντες. 127,21, ubi ceteri
+καὶ omittunt. 128,3 ἀπεληλαμένην pro ἀπεληλασμένην. 130,13 ἀνασείσαντες
+pro ἀναπείσαντες vel ἀναπτήσαντες, in hoc scdecim modo locis 1732
+ἐξαρεῖς pro ἐξαρεῖ vel ἐξάρῃς. 173,20 ἐμποιῶν. 173,22 προστάξεσιν.
+174,13 τόν. 180,7 ἀλλ’ ἀεὶ καὶ. 181,9 οὐ et μητρὸς. 187,15 ἐπιμέλειαν.
+200,15 προσέχει pro προσέχειν. 201,13. 14 καὶ οὐκ. 201,23 διακινεῖν.
+202,7 τὰ μὲν ὡς. 209,13 ἐξωτάτην τῆ. 209,15 τούτων. 210,10 πεπονηκότες.
+κότες. 212,28 συνεχοῦς textus huius editionis solo codice Η nititur.
+ea igitur in libro de plantatione codicum ratio est, ut cum Η comparati
+ceteri unam classem efficere videantur. — codices traduut titulum quem
+recepi περὶ φυτουργίας Νῶε τὸ δεύτερον, nisi quod FH nomen Νῶε post
+τὸ δεύτερον ponunt, G τὸ δεύτερον omittit (cf. subscriptionem in GU). priorem,
+qui hoc titulo respicitur, librum περὶ γεωργίας esse certum est, cum
+uterque artissimo vinculo coniuuctus sit posterioris exordio prioris finem
+excipiente. quodsi Philo idem argumentum in duos libros distribuit,
+non potuit priori περὶ γεωργίας ἁ (v. quae paulo ante de indice eodicis
+M dixi), alteri περὶ φυτουργίας β΄ inscribere1); immo titulis περὶ γεωργίας α
+et περὶ γεωργίας β΄ uti debuit. hoc quod ratiocinatione concluditur, confirmatur
+Eusebii auctoritate, qucm vidimus duo libros περὶ γεωργίας laudare.
+quem utriusque libri titulum exccrpta D noverint, incertum est. alterius
+enim libri nullum locum tradunt; ueque inde quod ter ἐκ τοῦ περὶ γεωργίας
+<note type="footnote">1) haud scio an haec offensio causa fuerit, quod UF iam § 67, ut vidimus, librum
+de agricuUura concludunt. foitasse altera eius pars primus liber περὶ φυτουργίας
+numerabatur.</note>
+
+<pb n="XXV"/>
+λόγου verba laiulant, efficitur titulum περὶ γεωργίας β΄ a coclicc, uude
+Philonca fluxerunt, alienum fuisse (Mangey I p. 300); eadem enim excerpta
+saepius ἐκ τοῦ περὶ μέθης λόγου laudant, quamquam alibi priorcra et
+alterum de ebrietate librum discernunt. mea quidem sententia Euscbii
+auctoritati, praescrtim cum nostrorum codicum vestigia accedant, refragari
+non licet. nec video cur huic libro περὶ φυτουργίας Philo inscripserit,
+cura paene synonyma sint apud eum γεωργία et φυτουργία. in fine libri
+de agricultura: τὰ δὲ inquit περὶ τῆς φυτουργίας εἰρημένα αὐτοῦ λέγωμεν
+αὖθις (fortasse scribendum est εὐθύς). initio libri de plantatione ἀμπελουργικήν,
+de qua se acturum esse profitetur, partem esse γεωργικῆς τέχνης
+statuit; quacum φυτουργίαν statim conectit: προσήκει δὲ τὸν μέλλοντα περὶ
+τῶν κτὰ μέρος φυτουργιῶν διεξιέναι κατανοῆσαι πρῶτον τὰ τελειότατα τοῦ
+παντὸς φυτὰ καὶ τὸν μέγαν φυτουργὸν καὶ ἐπιστάτην αὐτῶν, cf. § 94 οὕτως
+μὲν δὴ καὶ ὁ σοφὸς ἑπόμενος τῇ τοῦ πρώτου καὶ μεγίστου φυτουργοῦ τέχνῃ
+τὴν γεωργικὴν ἐπιδείκνυται. dirimi autem lis mihi videtur eo loco, quo
+prioris libri partis argumentum complectitur, ἑ 139. 140: περὶ μὲν οὖν
+YswpYiac τῆς πρεσβυτάτης καὶ ἱερωτάτης, ᾗ τὸ αἴτιον πρὸς τὸν κόσμον, τὸ
+παμφορώτατον φυτῶν, χρῆται, καὶ περὶ τῆς ἑπομένης, ἣν ὁ ἀστεῖος ἐπιτηδεύει
+. . . εἴπομεν. τὴν δὲ τοῦ δικαίου Νῶε ἀμπελουργικήν, εἶδος γεωργικῆς
+οὖσαν, ἐπισκεψώμεθα. hinc evinci videtur verum titulum esse περὶ γεωργίας
+β΄, falsum ex postremis libri de ogricultura verbis iluxisse puto. —
+postremam libri de plantatione partem perisse certis argumentis constat.
+uam postquam a ἑ 149 usque ad § 174 eorum philosophorum argumenta
+exposuit, qui ebrietatem a sapiente alienam esse negant, ἑ 175 profitetur
+se contrariae sententiae argumenta explicaturum esse. et exponit primum
+argumentum — ἔστι δὲ πρῶτος καὶ δυνατώτατος οὗτος ἑ 176 —, desuut
+cetera argumenta nec reperiuntur in eo qui sequitur libro de ebrietate,
+cuius initio Philo disputationem de philosophorum senteutiis confectam
+esse, iam Mosis doctrinam sibi explicaudam esse dicit1).</p>
+<p>DE EBRIETATE. codices GUFH. G fere cum UF, raro cum Η
+consentit. turbatus est textus huius libri in F. desunt enim verba
+p. 182,12 — 185,25 πληθὺν — νόμιμα in textu huius libri, sed inserta
+inveniuntur libro quod deus sit immutabilis p. 71,17 post vocem ῥίζαις.
+<note type="footnote">1) cf. Neu eutdeckte Fragmente Philos p. 16.</note>
+
+<pb n="XXVI"/>
+archetypi igitur codicis F nonnuUa folia suo loco mota in falsum locum
+delata erant. eandem perturbationem in Vaticano 379, qui artissime
+cum F cohaeret. reperiri verisimile est. hinc enim certe L in folio
+postmodum interposito hoc fragtnentum libri de ebrietate descripsit,
+libro quod deus sit immutabilis inseruit; unde corollarium Turnebi editionis,
+ex hoc lacobum Diassorinum scriptorem posterioris partis codicis F
+pendere L. Cohn iu Prolegomenis vol. Ι p. XXIV. XXV adnotavit et in
+Saturae Viadrinae p. 110—121 nuper accuratius demonstravit. —
+textus codicis Η perturbatus est, in quo post p. 179,11 ἠθοποιόν magna lacuna
+hiat. nam quae sequuntur usque ad p. 196,20 ἅπαξ omnia omissa
+sunt. cuius lacunae prior pars suppletur fragmento p. 1791119026
+γον— μεθημερινόν inserto libro de migr. Abr. (v. infra p. XXXI).
+minor pars p. 190,26—196,20 οὐ παρὰ—ἅπαξ in Η omnino tradita non
+quae iactura ita explicanda videtur, ut statuamus folia quaedam in archetypo
+soluta esse, solutorum posteriora perisse, priora falso loco inserta
+esse. — duos περὶ μέθης libros Philonem scripsisse iam Eusebius testatur (v.
+Prolegomena vol. I p. C). quaeritur, uter liber nobis servatus sit. atque
+cum omnes codices titulum περὶ μέθης tradaut, solus F λόγος πρῶτος addit.
+excerpta D non plane sibi constant. nam DR p. 171,9 ἐκ τοῦ περὶ μέθης β΄
+κεφαλαίου, p. 172,6 τοῦ αὐτοῦ περὶ μέθης βος, p. 176,14 τοῦ αὐτοῦ: δεύτερον
+(emendandum τοῦ αὐτοῦ &lt;περὶ μέθης&gt; δεύτερος, nam falso vox δεύτερον ad ipsa
+Philonis verba relata est1), DK p. 175,3 Φίλωνος ἐκ ὦτ’ περὶ μέθης β΄,
+p. 194,20 ἐκ τοῦ περὶ μέθης β΄, p. 204,4 Φῶνος ἐκ τοῦ περὶ μέθης β΄ laudant.
+contra p. 175,3 DL et DR Φίλωνος ἐκ τοῦ περὶ μέθης α΄ laudant. aliis locis
+minus accurate Φῶνος ἐκ τοῦ περὶ μέθης vel Φίλωνος vel τοῦ αὐτοῦ laudantur:
+V. adnotata ad p. 176,2. 179,11. 180,17.19. 189,16. 197,17. 20024.
+203,20. semel DK hunc librum falso ἐκ τῆς πρὸς Γάιον πρεσβείας Jemmate adfert:
+v. adnotata ad p. 201,10. denique DR et DL fragmentum quaestionum
+in Exodum falso περὶ μέθης titulo ornant 2). itaque dubitari non potest, quin
+loannes libro nobis servato alterum, amisso priorem locum tribuerit; nam
+quod uno loco DR et DL illum ἐκ τοῦ περὶ μέθης ἁ laudant, verisimile est
+<note type="footnote">1) cf. Ε. Schürer Theol. Litt. Zt. 1891 p. 468 1. — idem falso DR fol. 72v ad
+sum librum refert: v. adnotata ad 171,9. et quae fol. 72v sequuntur ἐκ τοῦ αὐτοῦ:
+ἀλήθεια αὐτορκέστατος ἔπαινος ad librum de plantatione p. 158,26 referre debui.</note>
+<note type="footnote">2) cf. Neu entdeckte Fragm. p. 25.</note>
+
+<pb n="XXVII"/>
+non auctoritate quadam niti, sed α΄ per errorem pro β΄ scriptum esse.
+cum titulo ἐκ τοῦ περὶ μέθης β΄ ceteris locis adlato etiam illud convenit,
+quod DK tres locos libri perditi ἐκ τοῦ περὶ μέθης α΄ laudat1). itaque
+cum discrepent inter so loannes Damascenus et codex F, non testiraoniis,
+sed ratiocinatione et argumentis decernendum est, utrum recte ille libro
+servato alterum an hic priorcm locum tribuerit. nam quod Mangey
+I p. 357 opinatur duos libros in unum compactos esse, post inventa tot
+fragmenta libri amissi praeterire licct. ei qui censebant amissum librum
+priorem fuisse, inter libros de plantatione et de ehrietate non flnem libri
+de plantatione, sed totum librum, scilicet περὶ μέθης α΄, interisse statuebant,
+quo explicare perrexisset philosophorum sententias, de quibus postrema
+parte libri de plantatione agere coeperat et quas se priore libro
+tractavisse in exordio nostri de ebrietate libri profitetur. at certum videtur
+inter libros de plantatione et de ebrietate non totum librum, sed
+finem modo illius intercidisse. quem mutilum esse ipsa postrema verba
+docent. tum veri dissimile est primum argumentum eorum qui ebrietatem
+a sapiente abiudicabant a ceteris novi libri initio discerptum esse,
+veri dissimilius haec totum librum complevisse, cum contrariae opinionis
+argumenta vix sex paginis nostrae editionis (p. 163,8—168,18)
+et incredibile est priorem περὶ μέθης librum artiore vinculo cum
+libro περὶ φυτουργίας quam cum altero περὶ μέθης coniunctum fuisse.
+accedit postremum argumentum idque gravissimum. inter servatum de
+ebrietate librum et librum de sobrietate raagna lacuna hiat. Philo enim
+in exordio nostri de ebrietate libri ebrietatem quinque statuum symbolum
+esse censet, quos § 11 deinceps se tractaturum esse pollicetur. at de
+quarto et quinto statu (§ 4 εὐφροσύνης . . . γυμνότητος)
+quamvis in exordio libri de sobrietate τὰ περὶ μέθης καὶ τῆς ἑπομένης
+αὐτῇ γυμνότητος εἰρημένα τῷ νομοθέτῃ διεξεληλυθότες) eam respiciat, desi-
+<note type="footnote">1) cf. fragmenta huius libri 1. 5. 10 (Neu entdeckte Fragm. p. 22—24).
+olim protuli fragmentum 11, nunc ad libri servati p 176,14—18 rettuli.
+p. 357 adnotat in DR sub titulo περὶ διδασκαλίας haec Philonis laudari: ἐκ τοῦ περὶ
+μέθης δευτέρου λόγου: λόγου θεοῦ ἡσυχία θάνατός ἐστι ψυχῶν et p. 410 (ubi τῶν ψυχῶν
+laudat) haec refert ad libri de confusione linguarum § 37: λόγου δὲ θάνατός ἐστιν ἡσυχία.
+hoc an recte fecerit dubito. frustra autem in DR hoc fragmentum quaesivi. nunc
+Papadopulos Kerameus ex codice Hierosolymitano fol. 203 enotavit l. c. p. 3: λόγου
+θείου ἡσυχία θάνατός ἐστι ψυχῶν.</note>
+
+<pb n="XXVIII"/>
+deramus, iam fac nostrum de ebrietate librum posteriorem esse, priorem
+ante hunc et post librum de plantatione suum locum habuisse: an tertium
+περὶ μέθης librum de gaudio et nuditate disputationem continuisse statues?
+at fuerunt qui dicerent finem modo nostri de ebrietate libri perisse;
+quod veri simile non est. quae enim desideramus, si tam accurate quam
+priora Philo tractavit, plura sunt quam quae nostro libro satis amplo
+addi potuerint. neque inepte noster liber precatione finiri videtur.
+denique fragmenta libri amissi, quae fere ebrietatis mala describunt, in
+disputationem de exsultatione ebriorum et de nuditate (v. fragm. 4) cadunt;
+contra quem habuerint locum in explicandis philosophorum contra
+ebrietatem sapientis argumentis, intellegi non potest. omnibus his rationibus
+effici videtur codicem F verum librorum de ebrietate ordinem testari,
+loannem Damascenum vel auctorem eius invertisse 1). — ad huius libri
+p. 202,9—209,19 novum testem adhibere licebat, Herennium qui
+Ἑρεννίου φιλοσόφου ἐξήγησις εἰς τὰ μετὰ τὰ φυσικὰ post rarissimam Simonis
+Simonidis editionem2) iterum edita est ab Angelo Mai in Classicorum
+auctorum e Vaticanis codicibus editorum tomo IX p. 513593.
+opus, cum Ruhnkenius et Bernaysius antiqui auctoris Neoplatonici esse
+putarent, non ante medium saeculum quartum decimum, fortasse sexto
+decimo saeculo ex Philone, Alexandro Aphrodisiensi, Proclo, Damascio,
+Georgii Pachymeris Epitome in Aristotelis philosophiam summa cum
+neglegentia compilatum esse E. Heitz demonstravit3). Mai librum
+edidit ex eodem codice Vaticano, qui ei suppeditavit Procopii Gazaei in
+Canticum Canticorum catenam. ipse aestate anni 1891 partem ex Philone
+lone excerptam cum duobus codicibus Ambrosianis, P 143 sup. fol. 133 sqq.
+et R 117 sup.4), utroque saec. XVI, contuli. itaque ubi lectiones a me
+adlatae ab editione Romana discrepant, scito me horum codicum auctoritatem
+secutum esse. compilator ita munere suo functus est, ut fere
+verbo tenus textum Philoneum describeret, ne apertas quidem corruptelas
+<note type="footnote">1) Neu entdeckte Fragm. p. 16 sqq.</note>
+<note type="footnote">2) Bernays, Gesammelle Abhandlungen p. 348, Heitz, Die angebliche Metaphysik des
+Herennios, Sitzungsber. Berl. Akad. 1889 p. 1187.</note>
+<note type="footnote">3) l. c. p. 11671190.</note>
+<note type="footnote">4) cf. Koetschau, Texte und Untersuchungen zur Geschichte der altchristlichen
+Litteratur VI 1 p. 73 sqq.</note>
+
+<pb n="XXIX"/>
+emendare conaretur (v. e. gr. adnotata ad p. 206,3. 207,12. 20810.
+209,2), nonnulla transponeret, alia omitteret vel contraheret (v. e. gr.
+ad p. 202,13. 21. 23. 203,10. 18. 204,7). breviora additamenta ad p. 205.
+15. 206,6 commemoravi. plara p. 209,3 post μερῶν addidit (p. 52230
+—523,15 Mai ἀλλὰ — σοφοῖς, cf. Heitz l. c. p. 1182). iam quaeritur,
+quae ratio inter Herennii et nostrorum codicum textum Philoneum intercedat.
+vitia Herennio communia sunt cum G1F p. 208,10 ποιόν δέ, cum
+U 205,23 ἐν τῷ. 207,22 ἐναντία om. 208,23 γεγενημένον, cum G1UF 2063
+αὑτὸν, cum GUF 209,12 τῆς om., cum GU 209,2 φοράν1). apparet igitur
+codicem, quem adhibuit Herennius, codicis U simillimum fuisse. neque
+ipsum U neque F neque Vaticanum 379 adhibitum esse patet, sed alium
+huius familiae codicem; quales plures fuisse excerpta libri περὶ κόσμου,
+codicis Neapolitani, codicis R docent. Bernaysium paulo plus quam par
+erat Herennii textui ti-ibuisse mirum non est. neque enim recentem
+compilatorem, sed veterem scriptorem sibi tenere videbatur; neque noverat
+aut Herennii codices, quibus intellegeret pleraque vitia compilatoris,
+non editoris, inscitiae tribuenda esse, aut Philonis codices, unde appareret
+quae bona Herennius praebere videretur, fere codicum opera emendari
+posse. nunc quoniam cognovimus, quanta incuria et imprudentia
+recentissimus compilator rem suam gesserit, cavendum est, ne sola falsi
+Herennii auctoritate temere nitamur. uno loco § 170 p. 203,1 κινούμενοι
+(καὶ κινούμενοι codd.) dubitari non potest, quin Herennii codex
+lectionem tradiderit. § 193 p. 207,14. 15 me recte cum Herennio ἐπάγοντα
+(ἐπαγαγόντα codd.) scripsisse pro certo non affirmaverim. et § 190
+p. 206,23. 24, ubi codices ἁπλᾶς εἱλικρινεῖς, Herennius ἀπλῶς εἰλικρινεῖς
+praebet, magis placet Mangeii coniectura ἁπλᾶς &lt;καὶ&gt; εἱλικρινεῖς
+lectione a Bernaysio p. 353 commendata, quod Philo etiam II p. 48428
+Mang. sic coniungit τὰ ἁπλούστατα καὶ εἰλικρινέστατα.</p>
+<p>DE SOBRIETATE. codices GFH. memoria in duas partes discedit,
+quarum unam GF, alteram H efiicit. modo illa, modo haec melior est.
+nam quod supra praedicavi, quantum sit pretium codicis H in constituendo
+textu libri de plantatione, idem in hunc librum cadit. qua in
+<note type="footnote">1) cf. Neu entdeckte Fragmente p. 26 sqq. moneo me nondum coguovisse lectiones
+Herennii codicxim et codicis F, cum illa scriberem.</note>
+
+<pb n="XXX"/>
+re hoc dignum videtur quod animadvertatur. librum de sobrietate libro de
+plantatione statim fol. 324r succedere, utrumque longissimo spatio diremptum
+esse ab eo qui praecedere debebat libro περὶ γεωργίας, quippe qui
+fol. 113r—123r contineatur, tribus scriptis interpositis 1) etiam ab
+qui medium locum tenere debebat, περὶ μέθης, qui complet fol. —
+375r. quodsi procedente hac nostra editione accuratius quantum in
+singulis libris Η valeat investigatum erit, sperare licet etiam pro diversa
+auctoritate diversas codicis partes discerni posse. Η igitur solus genuinas
+lectiones servavit p. 215,13 τροφὴ (om. GF). 216,1.2 ὀξυωπέστατα
+τῶν. 217,1 τῷ (om. GF). 217,13 ἀνοία. 217,15 ἀλόγιστον. 219,9 δήπου.
+219,15 ἠξίωσε. 220,16 ὑπερφυῶς. 221,12 τὸ. 221,16 παγίοις. 222,20 ἀνατέμνων
+(vel si ἀνατεμὼν magis placet, certe Η proxime ad veram lectionem
+accedit). 222,21 δὲ. 223,14 περιπολοῦσι. 223,21 ἀκωλύτως. 223,22 ἱερῶν.
+223,22 ἄνευ δὲ τούτων. 224,2 δὲ. 224,7 σβέννυνται. 224,11 δὲ ἐν μὲν. 224
+16 ἐπιτίμιον. 224,19 ὑπεξαιρετέον. 226,8 ὅρα. 226,20 μόνοις. 227,9 τρισὶν. 227
+23 περιεχόμενος (om. GF). 228.8 καὶ τὰ. 228,9. 10 ἀναδραμεῖν. — recepi
+titulum codicis F περὶ ὧν νήψας ὁ νοῦς εὔχεται καὶ καταρᾶται, nisi quod
+cum G2 Νῶε pro νοῦς scripsi. eundem plane titulum quem F praebet
+etiam Eusebius (v. Prolegomena vol. I p. C), similem etiam excerpta D, in
+quibus per errorem libri de confmione linguarnm locus laudatur Φίλωνος
+ἐκ τοῦ περὶ τοῦ νήψας ὁ νοῦς εὔχεται: v. adnotata ad p. 261,14. G in
+hoc uno discrepat, quod ἀνανήψας scribit (cf. etiam subscriptionem). hoc
+ἀνανήψας respui, quod ipse Philo non adhibet: § 30 νήψας οὖν ὁ
+δίκαιος . . . . . . ὅταν ὁ νοῦς νήψῃ. Νῶε cum G2 scribere necesse videbatur,
+quod, quamquam Νῶε explicatur νοῦς, tamen de hoc verba εὔχεται
+καὶ καταρᾶται non apte praedicantur, et quod in ceteris horum commentariorum
+titulis nondum allegoricam suam interpretationem Philo
+indicat.</p>
+<p>DE CONFVSIONE LINGVARVM. codices GFHP, qui ita in duas
+classes discedunt. ut GF fere consentiant meliorem textum praebentes,
+rarius HP veras lectiones tradant. eundem omnes codices titulum praebent
+περὶ συγχύσεως διαλέκτων. qui in Eusebii catalogo (v. Prolegomena
+<note type="footnote">1) quorum postremum est quod deterius potiori insidiari soleat; in quo ipso quoque
+magnum est pretium codicis Η (v. L. Cohn Proleg. vol. Ι p. XLI),</note>
+
+<pb n="XXXI"/>
+vol. I p. C) legitur titulus περὶ συγχύσεως τῶν διαλέκτων, videtur confirmari
+exordio libri: σκεπτέον δὲ ἑξῆς οὐ παρέργως ἃ περὶ τῆς τῶν διαλέκτων
+συγχύσεως φιλοσοφεῖ. quae Eusebius ex hoc libro laudat, errore dicit
+sumpta esse ἐκ συγγράμματος, ᾧ τέθειται ἐπιγραφὴ περὶ τοῦ τὸ χεῖρον τῷ
+κρείττονι φιλεῖν ἐπιτίθεσθαι (v. adnotata ad p. 241,13). inter hunc librum
+et eum qui praecedit nonnulla intercidisse, quae videantur in fiue libri de
+sobrietate amisso tractata esse, non sine causa conicit Massebieau (l. c.
+p. 25). desideramus enim commentarium cap. 9,28—10 Geneseos.
+partis interpretationem non plane omissam esse a Philone illud ἑξῆς
+docere videtur, quod in exordio libri de confusione linguarum
+modo laudato legitur. et libri de sobrietate ambitus solito minor favere
+videtur coniecturae, qua statuatur non totum nobis servatum esse
+librum.</p>
+<p>DE MIGRATIONE ABRAHAMI. codices MAHP. in titulo περὶ
+ἀποικίας codices consentiunt. in codice Η prior huius libri pars bis tradita
+est. totus enim liber fol. 138r—152r legitur. sed fol. 375r
+titulus περὶ ἀποικίας invenitur, quem sequitur initium huius libri usque
+ad p. 271,3 ἑαυτόν. post ἑαυτόν legitur fragmentum libri de ebrietate
+(v. supra p. XXVI). fol. 375 autem in margine adnotatum est: ὁ παρὼν
+ὅλος λόγος ἐγράφη καὶ πάλιν κατὰ λήθην ἐγράφη. hoc autem fragmentum,
+quod nota Η2 insignivi, non ex eodem fonte descriptum est atque totus
+liber antea traditus. neque enim solum saepissime ab Η1 discrepat,
+sed etiam propria bona textus fragmenti habet. p. 269,24 vocem
+αἰνίττεται, 270,6 vocem οἷς solus servavit, ut aegre feramus hunc
+testem tam parvae modo libri parti adhiberi potuisse. — quanta sit
+licentia et discrepantia codicum in ponendis titulis cum alia exempla
+docent tum uota in codice Η ad p. 297,1 apposita, qua discimus
+hinc nonnullos codices fecisse initium novi libri, alterius scilicet περὶ
+ἀποικίας.</p>
+<p>Haec habui, quae huic volumini praefationis loco adderem. quod
+iviros doctos eadem benevolentia atque primum excepturos esse ut spero,
+lita facere nou possum quin profitear, si aliquid profecisse videbor, eius
+laudis magnam partem impertiendam esse socio fidissimo huius laboris,
+qui sua et ingenii et oculorum acie semper mihi praesto fuit et qui
+saepe vel dubitanti vel erranti mihi veri inveniendi auctor fuit. data
+
+<pb n="XXXII"/>
+occasione eos, qui rationes, quae in textu primi voluminis constituendo
+singulis locis valebant, accuratius cognoscere volent, moneo ut amici
+commentationem Κritisch-exegetische Beitrage zu Philo“
+volumini XXXI p. 107—148 insertam legant.</p>
+<p>Scribebam Charlottenburgi</p>
+<p>m. Decembri a. h. s. LXXXXVI</p>
+<p>P. WENDLAND.</p>
+</div>
+
+<div type="commentary" subtype="addenda">
+<pb n="XXXIII"/>
+<head>ADDENDA ET CORRIGENDA</head>
+<p>p. 7,19 corr. οὐχὶ.</p>
+<p>8,1 &lt;οὐ&gt; τοπικῶς, οὑ coni.</p>
+<p>9,28 corr. ἐστιν.</p>
+<p>13,1 τὴν ante Ὢν adde.</p>
+<p>15,5 corr. ἐξελεύσεται.</p>
+<p>16,29 ante ἐπὶ comma pro puncto pone.</p>
+<p>27.17 corr. Σὴθ.</p>
+<p>30,1 adnotanda est p. 252 (non 152) Mangey.</p>
+<p>32,19.20 βουλόμενος ἡμᾶς ὁ θεὸς ὠφελεῖν πρὸς τὴν—σταθμᾶται. laudantur in Barberino
+I 158; v. supra p. XIV.</p>
+<p>39.21 ὡς &lt;ἂν&gt; αἴτιον coni.</p>
+<p>43.19. 51,16. 57,6. 7 παρόσον, non παρ’ ὅσον, scribendum erat.</p>
+<p>49.8 corr. γάρ.</p>
+<p>58.18 corr. ἐναργέστατόν.</p>
+<p>62.20. 21 corr. ἐπιτροπευομένων.</p>
+<p>65,14 corr. μέγιστόν.</p>
+<p>71,2—4 verba καὶ ἀναγώγοις — νουθετοῦνται leguntur etiam in Laur. VII 15
+Prolegomena vol. Ι p. LXVIIl) fol. 61v. textus cum D consentit.</p>
+<p>78,9. 10 παύσονται conicio.</p>
+<p>80.19 corr. ποικίλων.</p>
+<p>81.22 corr. μεταβολή.</p>
+<p>83.12 corr. 131113.</p>
+<p>85,22 corr. γὰρ</p>
+<p>87,4 corr. ὁδοῦ.</p>
+<p>87.9 adnot. ante διελεύσῃ adde num. 9.</p>
+<p>87.13 adnot. ante παρελευσόμεθα numerum 13 adde.</p>
+<p>92,8 &lt;αὐτὰ&gt; κατὰ</p>
+<p>97.10 corr. αὖ.</p>
+<p>113,23 adnot. ante ἡδέως adde num. 23.</p>
+<p>114,6 corr. μὲν.</p>
+<p>114 in apparatu corrige 17 pro 18.</p>
+<p>121,20 nunc demum certissimam emendationem inveni: στόματος, οὗ πέρατα ἡ φύσις
+διττὰ εἰργάσατο χείλη, cf. huius vol. p. 236,2. 3 χειὴ δὲ στόματος μέν ἐστι
+πέρατα.</p>
+<p>Philonis opera vol. II C</p>
+
+<pb n="XXXIV"/>
+<p>128,1,2 compilavit Clemens; v. supra p. X.</p>
+<p>131,7 corr. &lt;γὰρ&gt;.</p>
+<p>131,6—9 verba πρὸς μὲν τὰ ἑκούσια — κατασκήπτει laudantur in DK fol. 162r (DK
+scribit lin. 7.8 πότε καὶ ποῦ, lin. 8 ἐφεξῆς pro ἐξαίφνης, lin. 9 τε omittit;
+noster igitur textus nusquam mutandus est).</p>
+<p>135—143 corr. in margine superiore</p>
+<p>138,6—12 laudantur in Barberino I 158; v. supra p.</p>
+<p>140.7 corr. φυτουργία.</p>
+<p>140.8 corr. ἀνατολάς.</p>
+<p>145,6 ἐκλογεῖς τὰς ἀπὸ coni. Cohn.</p>
+<p>148,15 θεοῦ] θεοφιλοῦς coni. Cohn.</p>
+<p>148,18 post θεοφιλοῦς addc διάνοιαν.</p>
+<p>153,2 corr. μεμηνότι.</p>
+<p>158,26 laudantur in DR; v. supra p. XXVI adnot. l.</p>
+<p>165.9 corr. κατεαγὸς.</p>
+<p>166,23 corr. ἐπειδὴ.</p>
+<p>178.15 τοῦ πανηγεμόνος coni. Cohn.</p>
+<p>184.16 corr. βραβευομένοις.</p>
+<p>194,23 nunc ἡγεμονίαν &lt;καὶ&gt; ἀρχήν</p>
+<p>197.14 ἐγκατασκήπτουσα coni. Cohn.</p>
+<p>203,2 corr. ἀλλὰ</p>
+<p>208,4 corr. „καὶ deleri vult Cohn.“</p>
+<p>236.21 corr. γὰρ.</p>
+<p>239.22 comma delendum est.</p>
+<p>260,18 nunc ἕκαστα conicio.</p>
+<p>264.15 corr. ἀεννάων.</p>
+<p>293,20 nunc κινήσει μὴ χρώμενον conicio.</p>
+<p>de testimoniis codicis DH v. p. XIII.</p>
+</div>
+ 
+<div type="commentary" subtype="index">
+<pb n="XXXVI"/>
+<head>INDEX SIGLORUM</head>
+<p>M = Laurentianus X 20</p>
+<p>U = Vaticanus gr. 381</p>
+<p>F = Laurentianus LXXXV 10</p>
+<p>G = Vaticano-Palatinus gr. 248</p>
+<p>Α = Monacensis gr. 459</p>
+<p>Η = Venetus gr. 40</p>
+<p>P = Petropolitanus Η Aa 1</p>
+<p>L = Parisinus gr. 433</p>
+<p>R = Parisinus gr. 1630 (excerpta)</p>
+<p>Ν = Neapolitanus II C 32 (excerpta)</p>
+<p>E = Epitome περὶ κόσμου</p>
+<p>D = Sacra Parallela</p>
+<p>DC = Coislinianus 276</p>
+<p>DK = Vaticanus gr. 1553</p>
+<p>DP = Parisinus gr. 923</p>
+<p>DM = Venetus gr. 138</p>
+<p>DR = Rupefucaldinus (Berolinensis Phill. 1450)</p>
+<p>DL = Laurentianus VIII 22</p>
+<p>DV = Vaticanus gr. 1230</p>
+<p>Eus = Eusebius</p>
+<p>Turn. = Turnebus</p>
+<p>Mang. = Mangey</p>
+<p>Tisch. = Tischendorf</p>
+<p>V = lectio vulgata</p>
+</div>
+</div> 
+
+</body></text></TEI>
