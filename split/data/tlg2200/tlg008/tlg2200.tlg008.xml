@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+    
+  <fileDesc>
+   <titleStmt>
+    <title>Libanius Opera</title>
+    <sponsor>University of Leipzig</sponsor>
+    <funder>European Social Fund Saxony</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>OCR-ed, corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Greta Franzini</persName>
+     <resp>Project Manager (University of Leipzig)</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Frederik Baumgardt</persName>
+     <resp>Technical Manager (University of Leipzig)</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Simona Stoyanova</persName>
+     <resp>Project Assistant (University of Leipzig)</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor (Mount Allison University)</resp>
+    </respStmt>
+   </titleStmt>
+   
+   <publicationStmt>
+    <authority>University of Leipzig</authority>
+    <idno type="filename">libanius_9.xml</idno>
+    <availability>
+     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+    </availability>
+    <date>2014</date>
+    <publisher>University of Leipzig</publisher>
+    <pubPlace>Germany</pubPlace>
+   </publicationStmt>
+   
+   <sourceDesc>
+    <listBibl xml:lang="la">
+     <biblStruct>
+      <monogr>
+       <editor>
+        <persName>
+         <name xml:lang="la">Richardus Foerster</name>
+         <addName xml:lang="de">Richard Foerster</addName>
+        </persName>
+       </editor> 
+       <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200">Libanius</author>  
+       <title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200.tlg008">Fasc. I. Libanii Qui Feruntur Characteres Epistolici Prolegomena ad Epistulas</title>
+       <imprint>
+        <publisher>Georg Olms Verlagsbuchhandlung</publisher>
+        <pubPlace>Hildesheim</pubPlace>
+        <date>1963</date>
+       </imprint>
+       <biblScope unit="volume">9</biblScope>
+      </monogr>
+      <ref target="https://archive.org/details/operarecensuitri09libauoft">Internet Archive</ref>
+      
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+   
+  </fileDesc>
+  <encodingDesc>
+   <p>The following text is encoded in accordance with EpiDoc standards and with the
+    CTS/CITE Architecture.</p>
+  <refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+  
+  <profileDesc>
+   <langUsage>
+    <language ident="la">Latin</language>
+   </langUsage>
+  </profileDesc>
+  
+ </teiHeader>
+	<text><body><div type="edition" n="tlg2200.tlg008">
+
+<div type="textpart" subtype="chapter" n="1">
+ <pb n="27"/>
+<head>ἐπιστολιμαῖοι χαρακτῆρες.</head>
+<p>ὁ μὲν ἐπισταλτικὸς χαρακτὴρ ποικίλος τε καὶ πολυ-
+σχιδὴς ὑπάρχει, ὅθεν τῷ γράφειν βουλομένῳ προσήκει
+μὴ ἁπλῶς μηδ’ ὡς ἔτυχεν ἐπιστέλλειν, ἀλλὰ σὺν ἀκριβείᾳ
+πολλῇ καὶ τέχνη· ἄριστα δ’ ἄν τις ἐπιστεῖλαι δυνηθείη, 6
+εἰ γνοίη, τί τέ ἐστιν ἐπιστολὴ καὶ τί λέγειν ὅλως ἐν αὐτῇ
+θέμις καὶ εἰς πόσας προσηγορίας διαιρεῖται.</p>
+<p>2. Ἐπιστολὴ μὲν οὖν ἐστιν ὁμιλία τις ἐγγράμματος
+ἀπόντος πρὸς ἀπόντα γινομένη καὶ χρειώδη σκοπὸν ἐκ-
+πληροῦσα, ἐρεῖ δέ τις ἐν αὺτῇ ὧσπερ παρών τις πρὸς 10
+παρόντα.</p>
+<p>3. διαιρεῖται δὲ εἰς συχνάς τε καὶ παμπόλλους προσ-
+ηγορίας. οὐ γὰρ ἐπειδὴ ἐπιστολὴ προσαγορεύεται ἑνικῷ
+<note type="footnote">8 Lib. ep. 1225 (XI 809, 16)</note>
+<note type="footnote">1 Ἐπιστολιμαῖοι χαρακτῆρες om D λιβανίου σοφιστοῦ ἐπιστολι-
+μαῖοι χαρακτῆρες BU pr Mor λιβανίου ἐπιστολιμαῖοι χαρακτῆρες
+Pa πρόκλου τοῦ πλατωνικοῦ περὶ ἐπιστολιμαίου χαρακτῆρος
+PHwes Her cf. p. 36, 9 περὶ τοῦ ἐπισταλτικοῦ χαρακτῆρος Har</note>
+<note type="footnote">2 Ὁ om D τε] om Ρ τις Pa πολυσχεδὴς VUBD</note> <note type="footnote">3 καὶ
+ante τῷ D Har Mor Wes Her τῶ τὸ γράφειν U</note> <note type="footnote">4 μὴ δὲ U
+PaB pr μὴ δ’ D</note> <note type="footnote">5 ἄριστ’ ἂν D Har Mor τις ἐπιστεῖλαι δυ-
+νηθείη pr τις δυνηθείη ἐπιστεῖλαι PaB ἐπιστεῖλαι δυνηθείη PH
+ἐπιστεῖλαι δυνηθείη τις D Har Wea Her ἐπιστεῖλαι τις Mor</note>
+<note type="footnote">6 τίς Har Mor τέ om PaBD pr Har Mor καὶ] ἢ ΡΗ ὅλως
+om PaBPH pr</note> <note type="footnote">7 καὶ D Har ἢ reliqui libri pr Hin</note> <note type="footnote">8 ὅρος ἐκι-
+στολῆς ante Ἐπιστολὴ rubr Pa οὖν] om V post ἐστιν Pa ἐστι D
+τις om Β pr</note> <note type="footnote">9 παρὰ ante ἀπόντος D ἀπόντος om Har
+γιγνομένη U ἐκπληροῦσα D</note> <note type="footnote">10 ἐρεῖ—11 παρόντα om V del
+Hin ὧσπερ] ἅπερ ὧς ΡΗ ἅπερ ἂν ὧς D Har Mor Wes ἅπερ ἂν Her
+ἀκῶν UPH παρόντι PaB pr αἴπῃ τίς ante πρὸς D Har Mor</note>
+<note type="footnote">11 ἀπόντα PaB pr</note> <note type="footnote">12 τε om Ρ γε D Har παμπόλους
+PaBPH pr παμπόλλας D Har Wes Her</note> <note type="footnote">13 οὐδὲ D Har Mor</note>
+
+<pb n="28"/>
+ὀνόματι, ἤδη καὶ πασῶν τῶν κατὰ τὸν βίον φερομένων
+ἐπιστολῶν εἷς τίς ἐστι χαρακτὴρ καὶ μία προσηγορίαι
+ἀλλὰ διάφοροι, καθὼς ἔφην.</p>
+<p>4. Εἰσὶ δὲ πᾶσαι αἱ προσηγορίαι αἷς ὁ ἐπιστολιμαῖος
+<lb n="5"/> ὑποβάλλετ’ αἰ χαρακτήρ, αἵδε· ἁ παραινετική, β΄ μεμπτι-
+κή, γ΄ παρακλητική, δ΄ συστατική, ε΄ εἰρωνική, ς΄ εὐ-
+χαριστική, ζ΄ φιλική, η΄ εὐκτική, θ΄ ἀπειλητική, ι΄ ἀπαρ-
+νητική, ια΄ παραγγελματική, ιβ΄ μεταμελητική, ιγ΄ ὀνειδι-
+στική, ιδ΄ συμπαθητική, ιε΄ θεραπευτική, ις΄ συγχαρη-
+<lb n="10"/> τική, ιζ΄ παραλογιστική, ἴη ἀντεγκληματική, ἴθ’ ἀντεπι-
+σταλτική, κ΄ παροξυντική, κα΄ παραμυθητική, κβ΄ ὐβρι-
+στική, κγ΄ ἀπαγγελτική, κδ΄ σχετλιαστική, κε πρεσβευ-
+τική, κς΄ ἐπαινετική, κζ΄ διδασκαλική, κη ἐλεγκτική,
+κθ΄ διαβλητική, λ΄ ἐπιτιμητική, λα΄ ἐρωτηματική, λβ΄ παρα-
+<lb n="15"/> θαρρυντική, λγ΄ ἀναθετική, λδ΄ ἀποφαντική, λε’ σκωπτική,
+λς΄ μετριαστική, λζ΄ αἰνιγματική, λη΄ ὑπομνηστική, ’λθ’
+λυπητική, μ΄ ἐρωτική, μα΄ μικτή.</p>
+<note type="footnote">1 τῶν] τὸν Ρ κατὰ om Η τὸν om Pa ἐκφερομένων V Hin
+fortasse recte φερομένων reliqui libri edd 2 εἷς ex εἰ corr D</note> <note type="footnote">2
+χαρακτὴρ ἐστὶ D Har</note> <note type="footnote">3 καθὼς D sed ὼς in άπερ corr m 2
+καθάπερ Har</note> <note type="footnote">4 πᾶσαι αἱ] αἱ πᾶσαι ΡΗ Wes Her ἃς UPa</note>
+<note type="footnote">5 χαρακτὴρ ὑποβάλλεται V Hin αὗται PaB pr Mor α΄ παραι-
+νετική —17 μικτή om Har α΄ et sequentes litt usque ad μα΄
+om UBDH Wei μεμπτητικὴ D</note> <note type="footnote">7 φιλική om sed — in marg
+V</note> <note type="footnote">8 πaραγγελτική Pa</note> <note type="footnote">9 συμπαθητική in marg U om V
+θεραπευτική in marg U συγχαρητική scripsi cum Wei συγχα-
+ριτική VB pr συγχαριστική U sed in lit, DPH Mor Wes Her
+εὐγχαριτική Pa συγχαρτική Hin cf. infra p. 31, 1 et p. 39, 11 et
+Demetr. form. epist. prooem. p. 2, 18; 10, 16 Wei</note> <note type="footnote">10 παρα-
+δτι ,
+γικη
+λο Pa sed π et στι rubr ἀντεγκληματικὴ· παραλογιστικὴ D</note>
+<note type="footnote">11 παραμυθητική om V</note> <note type="footnote">12 ἐπαγγελτικὴ D</note> <note type="footnote">13 κζ΄ δι-
+δασκαλική—ἐλεγκτική om U ἐλεγκτικὴ D sed γ inser m 2</note> <note type="footnote">14 κθ΄
+διαβλητική om PaB</note> <note type="footnote">16 μετριαστική om V μεἀριαστική Β sed ’
+del</note> <note type="footnote">17 καὶ ante μικτή BDPH pr Mor Wes Her ὁμοῦ πᾶσαι
+τεσσαράκοντα μία post μικτὴ D αὗται μέν οὖν (p. 33, ─βαίνειν
+(36,1) hic exhibent ΡΗ Har Mor Wes Her</note>
+
+<pb n="29"/>
+<p>5. Παραινετικὴ μὲν οὖν ἐστι δι’ ἧς παραινοῦμέν
+τινι προτρέποντες αὐτὸν ἐπί τι ὁρμῆσαι ἢ καὶ ἀφέξεσθαί
+τινος. ἡ παραίνεσις δὲ εἰς δύο διαιρεῖται, εἴς τε προτρο-
+χὴν καὶ ἀποτροπήν. ταύτην δέ τινες καὶ συμβουλευ-
+τικὴν εἷπον οὐκ εὖ, παραίνεσις γὰρ συμβουλῆς διαφέρει. <lb n="5"/>
+παραίνεσις μὲν γάρ ἐστι λόγος παραινετικὸς ἀντίρρησιν
+οὐκ ἐπιδεχόμενος, οἷον ὡς εἴ τις εἴποι, ὅτι δεῖ τὸ θεῖον
+τιμᾶν· οὐδεὶς γὰρ ἐναντιοῦται τῇ παραινέσει ταύτῃ μὴ
+πρότερον μανείς· συμβουλὴ δ’ ἐστι λόγος συμβουλευτι-
+κὸς ἀντίρρησιν ἐπιδεχόμενος, οἶον ὡς εἴ τις εἴποι, ὅτι <lb n="10"/>
+δεῖ πολεμεῖν, πολλὰ γάρ ἐστι τὰ ἐκ πολέμου κέρδη, ἕτερος
+δέ τις ἂν ἀντείποι, ὧς οὐ δεῖ πολεμεῖν, πολλὰ γάρ ἐστι
+τὰ ἐκ πολέμου συμβαίνοντα, οἷον ἧττα, αἰχμαλωσία,
+πληγαί, πολλάκις καὶ πόλεως κατασκαφή.</p>
+<p>6. Μεμπτικὴ δ’ ἐστὶ δι’ ἧς μεμφόμεθά τινα.</p> 
+<p>7. παρα- <lb n="15"/>
+κλητικὴ δι’ ἧς ἀξιοῦμέν τινα διά τι πρᾶγμα.</p> <p>8. συστα-
+<note type="footnote">1 Liban. ep. 1219 (XI 300, 10) 6 Syriani ad Hermog. d
+stat. scholl. ed. Rabe II 192</note>
+<note type="footnote">1 καὶ ante παραινετικὴ DPH Wes Her οὖν om D Har</note>
+<note type="footnote">2 τινα UDPH Har προτρέποντες αὐτὸν om V Hin ἢ om VU
+Pa pr καὶ om D Har Hin Wei inser pr ἀφελέσθαι D Har ἀνθ-
+έξεσθαί ΡΗ</note> <note type="footnote">3 ἡ—14 κατασκαφή om et eius loco ἡ ἐπιστολή· ζη-
+λωτὴς—πᾶσιν (p. 36,3—6) praeb ΡΗ ἡ δὲ παραίνεσις D Har ἡ
+om PoB pr τροπὴν V</note> <note type="footnote">5 τὴν ἐπιστολὴν post εἶπον UD Har συμ-
+βουλίας Har</note> <note type="footnote">6 μὶν om D Har</note> <note type="footnote">7 οὐκ om D οἷον inser D
+εἴπῃ VD Har ὅτι om V τὸ—11 δεῖ om PaB pr</note> <note type="footnote">9 δέ D
+συμβουλευτικὸς om V</note> <note type="footnote">10 οἶον om D εἴς D εἴπῃ VD Har
+ὅτι om V</note> <note type="footnote">11 ἐστι om PaB pr τοῦ ante πολέμου PaBD pr Har</note>
+<note type="footnote">12 δἂν τις Pa sed del et δέ τις inser ἂν inserui cum Wei
+om libri edd rel ἀντείπῃ D Har ἐστι om D Har</note> <note type="footnote">13 τοῦ
+ante πολέμου PaBD pr Har κακά post συμβαίνοντα V Hin
+ἧτται αἰχμαλωσίαι PaB pr</note> <note type="footnote">14 κίνδυνος ante πληγαί D Har
+κληγαί om V Hin δὲ ante καὶ D Har Mor post κατασκαφή suc-
+cedit ζηλωτὴς—πᾶσι (p. 36,3—6) Procl</note> <note type="footnote">15 μεμπτητικὴ D
+η (1) ex ι corr m 2 δ’ om δέ V Pa Har Hin δὲ Β pr ἔστιν pr
+τινας PaB pr succedit ut constanter ἡ ἐπιστολή· οὐ καλῶς
+—ὑβρίζων (p. 36,67—9) Procl</note> <note type="footnote">16 ἐστι post παρακλητικὴ Pa
+Her δὲ D Har δέ ἐστι B pr διά cancell Hin at cf. p. 30, 5 et
+31, 10</note>
+
+<pb n="30"/>
+τικὴ δι’ ἧς συνιστῶμέν τινα παρά τινι. ἡ δ’ αὐτὴ καὶ
+παραθετικὴ καλεῖται.</p></div>
+
+<div type="textpart" subtype="chapter" n="9"><p>εἰρωνικὴ δι’ ἧς ἐπαινοῦμέν τινα
+ἐν ὑποκρίσει περὶ τὴν ἀρχήν, ἐπὶ τέλει δὲ τὸν ἑαυτῶν
+σκοπὸν ἐμφαίνομεν, ὡς τὰ ῥηθέντα καθ’ ὑπόκρισιν εἰρή-
+5 καμεν.</p></div>
+
+<div type="textpart" subtype="chapter" n="10"><p>εὐχαριστικὴ δι’ ἧς χάριν γινώσκομέν τινι διά
+τι.</p></div>
+
+<div type="textpart" subtype="chapter" n="11"><p>φιλικὴ δι’ ἧς φιλίαν ψιλὴν ἐμφαίνομεν μόνον.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="12"><p>εὐκτικὴ δι’ ἧς τυχεῖν τινος εὐχόμεθα. 
+</p></div>
+
+<div type="textpart" subtype="chapter" n="13"><p>ἀπειλητικὴ
+δι’ ἧς ἀπειλοῦμέν τινι.</p></div>
+
+<div type="textpart" subtype="chapter" n="14"><p>ἀπαρνητικὴ δι’ ἧς ἀπαρνού-
+μενοί τι φαινόμεθα.</p></div>
+
+<div type="textpart" subtype="chapter" n="15"><p>παραγγελματικὴ δι’ ἧς παραγ-
+10 μέλλομέν τινι περί τινος. αὕτη δὲ καὶ μαρτυρικὴ καλεῖ-
+ται.</p></div>
+
+<div type="textpart" subtype="chapter" n="16"><p>μεταμελητικὴ δι’ ἧς δοκοῦμεν μεταγινώσκειν
+ἐφ’ οἶς ὑπεσχόμεθά τινι ἢ καὶ ἐφ’ οἷς ἐδόξαμεν ἐσφάλ-
+θαι.</p></div>
+
+<div type="textpart" subtype="chapter" n="17"><p>ὀνειδιστικὴ δι’ ἧς ὀνειδίζομέν τινα ἐφ’ οἷς ὑφ’
+ἡμῶν πέπονθε καλῶς, εἰ ἀμνημονεῖ.</p></div>
+
+<div type="textpart" subtype="chapter" n="18"><p>συμπαθητικὴ
+15 δι’ ἧς δοκοῦμέν τινι συμπάσχειν ἐφ’ οἷς ὑπέστη κακοῖς.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="19"><p>θεραπευτικὴ δι’ ἧς θεραπεύομέν τινα λυπηθέντα
+πρὸς ἡμᾶς περί τινος. ταύτην δὲ καὶ ἀπολογητικήν τινες
+<note type="footnote">1 δέ ἐστι post συστατικὴ D Har ut p. 30, 2. 5. 6. 7. 8. 31, 7.
+13. 32,3. 9. 11. 12 ἐστι PH Wes οὺν Her Her σὺν
+στῶμεν V παρά — 2 καλεῖται om PaB pr τινι] τινα ΡΗ</note>
+<note type="footnote">2 λαλοῦμέν Pa καλοῦμέν Β pr τινι PaB pr</note> <note type="footnote">3 παρὰ UPa
+BD pr Har Mor τῶν Β pr ἑαυτὸν U κατ’ αὐτοῦ V Hin</note>
+<note type="footnote">4 σκοπῶν in σκοπὸν corr D ἐκφαίνομεν U ὡς — εἰρήκαμεν om
+ΡΗ ὧς καὶ τὰ ῥήματα D Har</note> <note type="footnote">5 χάριν om VUPaB pr τινα V</note>
+<note type="footnote">6 μόνην UPaB pr Har Mor</note> <note type="footnote">7 τινος τυχεῖν V Hin τυχεῖν
+εὐχόμεθά τινος PaB pr</note> <note type="footnote">8 ἀπαρνούμεθά PaB pr</note> <note type="footnote">9 τι] τινὰ PaB
+pr τινὶ D Har φαινόμεθα om PaB pr παραγγελτική D Har
+ἐστι post παραγγελτική D Har ut p. 30, 11.13.14.16. 31,1.2.3 5.8.
+10.12.14.32,2.5.7.14.16.17.33,2.3.5</note> <note type="footnote">10 τινα U περί τινος
+διά τι PaB pr Mor ποτε add Mor διαμαρτυρικὴ PHD Wes Her
+διαμαρτυρητική Har Mor</note> <note type="footnote">11 τινι ante μεταγιγνώσκειν U</note>
+<note type="footnote">12 οἷς (1)] ἧς D ὑποδεχόμεθα DPH Har ὑπερχόμεθα Β pr Mor
+ὑπεδεχόμεθα Wes ὑπεδεξάμεθα Her τινα VUD Har καὶ om
+ΡaΒΡΗ pr ἐδεξάμεθα D, sed in ἐδόξαμεν corr, Har σφάλ-
+λεσθαι ΡΗ Wes Her</note> <note type="footnote">13 ὀνειδίζομεν─15 ἦς om U ὀνειδίζω D
+κακῶς πράξαντα post τινα Β pr Mor ἐφ’ — 14 ἀμνημονεῖ om
+Pa</note> <note type="footnote">14 πεπονθὼς καλῶς D Har καλῶς πεπονθὼς PH Mor εἰ om
+DPH Har Wes Her</note> <note type="footnote">16 λυπηθέντα τινὰ D Har</note> <note type="footnote">17 ταύτην
+— 31, 1 καλοῦσιν] αὕτη δέ καὶ ἀπολογητικὴ ἀπολητικὴ P) λέγε-
+ται PH Wes Her</note>
+
+<pb n="31"/>
+καλοῦσιν.</p></div>
+
+<div type="textpart" subtype="chapter" n="20"><p>συγχαρητικὴ δι’ ἧς συγχαίρομέν τινι εὖ
+μάττοντί</p></div>
+
+<div type="textpart" subtype="chapter" n="21"><p>παραλογιστικὴ δι’ ἧς ὑπερφρονοῦμέν
+τινος ὧς εὐτελοῦς.</p></div>
+
+<div type="textpart" subtype="chapter" n="22"><p>ἀντεγκληματικὴ δι’ ἧς ἐγκαλού-
+μενοι ἀντεγκαλοῦμέν τινι τὸ ἐπιφερόμενον ἡμῖν ἔγκλημα
+περιτρέποντες τῷ ἐγκαλοῦντι.</p></div>
+
+<div type="textpart" subtype="chapter" n="23"><p>ἀντεπισταλτικὴ δι’ `<lb n="5"/>
+ἧς πρὸς τὰ γραφέντα ἡμῖν ἐπιστέλλομεν.</p></div>
+
+<div type="textpart" subtype="chapter" n="24"><p>παροξυν-
+τικὴ δι’ ἧς ἐρεθίζομέν τινα καὶ παροξύνομεν πρὸς τὴν
+κατά τινος μάχην.</p></div>
+
+<div type="textpart" subtype="chapter" n="25"><p>παραμυθητικὴ δι’ ἧς παραμυθού-
+μεθά τινα ἐπὶ τοῖς συμβᾶσιν αὐτῷ λυπηροῖς.</p></div>
+
+<div type="textpart" subtype="chapter" n="26"><p>ὑβρι-
+στικὴ δι’ ἧς ὑβρίζομέν τινα διά τι.</p></div>
+
+<div type="textpart" subtype="chapter" n="27"><p>ἀπαγγελτικὴ δι’ <lb n="10"/>
+ἧς ἀπαγγέλλομέν τι τῶν συμβάντων πραγμάτων.</p></div>
+
+<div type="textpart" subtype="chapter" n="28"><p>σχετ-
+λιαστικὴ δι’ ἧς σχετλιάζοντές τε καὶ ὀδυρόμενοι φαινό-
+μεθα.</p></div>
+
+<div type="textpart" subtype="chapter" n="29"><p>πρεσβευτικὴ δι’ ἧς πρεσβεύομεν περί τινος.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="30"><p>ἐπαινετικὴ δι’ ἧς ἐπαινοῦμέν τινα ἐκ ἀρετῇ τινι δια-
+πρέποντα. χρὴ δ’ ἑ γινώσκειν ὡς ἔπαινος ἐγκωμίου δια- <lb n="15"/>
+φέρει. ἔπαινος μὲν γάρ ἐστι λόγος ἐπαινετικὸς μίαν πρᾶ-
+ξιν ἐπαινῶν, ἐγκώμιον δὲ λόγος ἐγκωμιαστικὸς πολλὰς
+ἐν ἑαυτῷ πράξεις περιλαμβάνων. ἡ οὖν ἐπιστολὴ ἡ μίαν
+<note type="footnote">1 καλοῦσι Β συγχαριτικὴ V συγχαριστικὴ UDPH Har Mor
+Wes Her εὐγχαρητικὴ Pa συγχαρτικὴ Hin συγχαρητικὴ scripsi cum
+Wei cf. p. 28, 9 et 39, 1 1 3 ὡς om D Har 6 πρὸς om Har
+ἀντεπιστέλλομεν DPH Har Mor Wes Her 7 δὲ ante δι’ U
+8 παραμυθητικὴ —9 λυπηροῖς et συμφοραῖς πυθόμενός—τὸ
+τῶν (p. 41) post σχετλιαστικὴν D Har παραμυθούμεθα — 9 λυπη-
+ροῖς] συμβὰν τῷ φίλῳ παραμυθοῦεν ΡΗ ἐπί τινι συμβάντι φίλον
+παραμυθούμεθα Wes WesHer παραμυθοῦμεν V
+ante δι’ (1) ἁ ἐνυβρίζομεν VU Hin voce ἀπαγγελτικὴ inc pars
+vetnsta codicis A qnae procedit usque ad p. 33, 5 συνιστῶμεν
+ἐπαγγελτική ἐστι D Har διῆς Α 11 ἀπαγγέλλοντες ex ἀπαγγέλλο-
+μεν ut videtur corr Α 2 τι—πραγμάτων] τινι τὰ συμβάντα
+συμβάντως Β) ἡμῖν πράγματα ἐπὶ συμφορὰ ἢ χαρὰ PaB pr τινι
+τὰ συμβάντα ἡμῖν πράγματα Mor τι om Α τῶν corr Α 2
+12 τε om VUPaB Hin Wei 18 πρεσβευτικὴ δ’ ἐστιν διῆς Α</note>
+<note type="footnote">τινι post πρεσβεύομέν Her ὑπέρ PaB pr Mor 14 δέ ante
+αι᾿ V δέ ἐστι Α διῆς Α ut constanter τινι om PH Wes Her</note>
+<note type="footnote">16 χρὴ —p. 32, 2 ἐγκωμιαστική om ADPH Har Wes Her
+16 μίαν] μὶν V 18 ἐν ἑαυτῶ in marg U αὐτῶ V κερι-
+λαμβάνων scripsi ex U διαλαμβάνων reliqui libri edd ἡ —
+p. 82,2 ἐγκωμιαστική om V Hin</note>
+
+<pb n="32"/>
+πρᾶξιν ἐπαινοῦσά τινος ἐπαινετικὴ καλεῖται, ἡ δὲ πολλὰς
+ἐγκωμιαστική.</p></div>
+
+<div type="textpart" subtype="chapter" n="31"><p>διδασκαλικὴ δι’ ἧς διδάσκομέν τινα
+περί τινος.</p></div>
+
+<div type="textpart" subtype="chapter" n="32"><p>ἐλεγκτικὴ δι’ ἧς ἐλέγχομέν τινα ἀρνού-
+μενον πρᾶξίν τινα πραχθεῖσαν αὐτῷ ἢ λόγον λεχθέντα.
+5</p></div>
+
+<div type="textpart" subtype="chapter" n="33"><p>διαβλητικὴ δι’ ἧς διαβάλλομέν τινα ἐφ’ οἷς ἔπραξεν.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="34"><p>ἐπιτιμητικὴ δι’ ἧς ἐπιτιμῶμέν τινι ἐφ’ οἷς ἀσέμνως
+πράττει.</p></div>
+
+<div type="textpart" subtype="chapter" n="35"><p>ἐρωτηματικὴ δι’ ἧς ἐρωτῶμέν τινα περί τι-
+νος ἀγνοοῦντες ἐπὶ τῷ τὴν ἐπιστήμη·ν εὐτυχῆσαι παρ’
+αὐτοῦ τοῦ ζητουμένου.</p></div>
+
+<div type="textpart" subtype="chapter" n="36"><p>παραθαρρυντικὴ δι’ ἧς παρα-
+10 θαρρύνομέν τινα καὶ ἄφοβον καθιστῶμεν.</p></div>
+
+<div type="textpart" subtype="chapter" n="37"><p>κὴ δι’ ἧς τὴν ἑαυτῶν γνώμην ἀνατιθέμεθά τινι τῶν φί-
+λων συμβουλῆς παρ’ αὐτοῦ δεόμενοι.</p></div>
+
+<div type="textpart" subtype="chapter" n="38"><p>ἀποφαντικὴ
+ὄι ἧς ἀποφαινόμεθα καὶ ἀπότομον κρίσιν ἐκφέρομεν
+κατά τινος.</p></div>
+
+<div type="textpart" subtype="chapter" n="39"><p>σκωπτικὴ δι’ ἧς σκώπτομέν τινα ἐπί τινι.
+15</p></div>
+
+<div type="textpart" subtype="chapter" n="40"><p>μετριαστικὴ δι’ ἧς μετριάζομέν τι καὶ ταπεινοφρο-
+νοῦμεν.</p></div>
+
+<div type="textpart" subtype="chapter" n="41"><p>αἰνιγματικὴ δι’ ἧς ἄλλα μέν τινα λέγεται,
+ἄλλα δὲ νοεῖται.</p></div>
+
+<div type="textpart" subtype="chapter" n="42"><p>ὑπομνηστικὴ δι’ ἧς δοκοῦμέν τινα
+<note type="footnote">2 διδασκαλικὴ—3 τινος om Β pr 3 περί τινος om Pa
+ὑπέρ ΡΗ ἐγκλητικὴ U 4 τινα om PaB pr Mor αὐτῷ om
+V Hin Wei 5 ἐπράξαμεν Α ἔπραξε D 6 δὲ ante δι᾿ U
+τινα VUBADPH pr Har Mor Wes ἐφ᾿ ─ 7 πράττει om PaB pr
+ἐφ─7 τινα om U 7 τινα om PaB pr 8 ἀγνοοῦντες can-
+cell Her ἀγνοοῦντος PaAPH ἐπὶ τῶ Α τὸ Pa παραυτοῦ Α</note>
+<note type="footnote">9 παραθαρυντικὴ VU παραθαρρυτικὴ ΡΗ 10 αὐτὸν post
+ἄφοβον UPaBADPH pr Har Mor Wes Her ἀποκαθιστῶμεν Β pr
+ἀναθεματικὴ PH 11 δὲ ante δι’ U διὰ ante τὴν Β pr Mor
+ἑαυτοῦ Ρ ἀντιθέμεθα U ἀνατίθεμέν PH Wes Her ἀνατοθέ-
+μεθά Har 12 συμβουλείαν Pa συμβουλίαν Β pr συμβουλίας
+D Wes Her συμβούλου Ρ cf. ad p. 44, 14 τῆς ante παρ’ U Hin Wei
+τε ante παρ’ V αὐτοῦ om Ρ δεόμενος Ρ ποφαντικὴ Pa
+13 τε ante καὶ Α κατά τινος ἐκφέρομεν ΡΗ ἐκφερόμεθα PaB
+pr Mor 14 τινι] τι VU Hin 16 μετριασ Α δι’ —ταπεινο-
+φρονοῦμεν om Α πρός τινα τῶν ἀγαπωμένων θαρρητικῶς θαρ-
+ρικῶς PH) ante μετριάζομεν PH wes Her τι] τε D τινι PaB
+Mor ταπεινοῦμεν ἑαυτούς cum lac 5 litterarum D 16 δέ ἐστι
+ante δι’ Α τινα om Β Mor 17 τινα post δέ ΑPH Mor
+Wes Her ὑπονοεῖται D Har Mor ἀπομνηστικὴ D Har δέ ἐστι
+ante δι’ Α</note>
+
+<pb n="33"/>
+τοῦ ζητουμένου πράγματος ἡμῖν ὑπομιμνήσκειν τὸν σκο-
+πὸν ἡμῶν ἐν αὐτῇ χαράττοντες.</p></div>
+
+<div type="textpart" subtype="chapter" n="43"><p>λυπητικὴ δι’ ἦς
+ἐμφαίνομεν ἑαυτοὺς λυπουμένους</p></div>
+
+<div type="textpart" subtype="chapter" n="44"><p>ἐρωτικὴ δι’ ἧς
+ἐρωτικοὺς πρὸς τὰς ἐρωμένας προσφερόμεθα λόγους.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="45"><p>μικτὴ δὲ ἣν ἐκ διαφόρων χαρακτήρων συνιστῶμεν. <lb n="5"/></p>
+<p>46. Αὗται μὲν οὖν εἰσιν αἱ προσηγορίαι πᾶσαι εἰς ἃς
+ἡ ἐπιστολὴ διαιρεῖται. δεῖ δὲ τὸν ἀκριβῶς ἐπιστέλλειν
+ἐθέλοντα μὴ μόνον τῇ τῆς ὑποθέσεως μεθόδῳ χρῆσθαι,
+ἀλλὰ καὶ φράσεως ἀρετῇ τὴν ἐπιστολὴν κατακοσμεῖν καὶ
+ἀττικίζειν μὲν μετρίως, μὴ μέντοι πέρα τοῦ προσήκοντος <lb n="10"/>
+κομφολογίᾳ χρῆσθαι.</p></div>
+
+<div type="textpart" subtype="chapter" n="47"><p>ἡ γὰρ ὑπὲρ τὸ δέον ὑψηγορία
+καὶ τὸ ταύτης ὑπέρογκον καὶ τὸ ὑπεραττικίζειν ἀλλό-
+τριον τοῦ τῶν ἐπιστολῶν καθέστηκε χαρακτῆρος, ὧς πάν-
+τες οἱ παλαιοὶ μαρτυροῦσι, Φιλόστρατος δὲ ὁ Λήμνιος
+μάλιστά φησι· δεῖ γὰρ τὴν τῆς ἐπιστολῆς φράσιν <lb n="15"/>
+τῆς μὲν συνηθείας ἀττικωτέραν εἶναι, τοῦ δὲ
+ἀττικισμοῦ συνηθεστέραν καὶ μήτε λίαν ὑψηλὴν
+<note type="footnote">14 sqq. Philostr. ep. ad Aspas. t. II p. 268, 8 sq. ed. Kays.
+(Weich. p. XI) 16 Liban. ep. 1288 (XI 355, 12)</note>
+<note type="footnote">1 ημῖν om UPaB Mor ἡμῶν V Hin 2 ἡμῶν om pr ἡμῖν
+D Har αὐτῷ pr Mor ἐγχαράττοντες PaB Mor 3 δέ ἐστι ante
+δι’ Α 4 ἐρωτικῶς Pa τοὺς ἐρωμένους PaB pr Mor φερώ-
+μεθα V πρὸς φερώμεθα U πρὸ φερόμεθα Α προσφέρομεν ΡΗ
+Wes Her 5 δέ ἢν scripsi cum Wei δι’ ἧς VUPaB pr Mor
+ἐστιν ἡ ΑDPH Har Wes Her ἣν Hin χαρακτήρων om D Har
+συνεστῶσα ΑDΡΗ Har Wes Her 6 Αὗται — p. 36,1 βαίνειν om D
+Har εἰσιν om ΡΗ WesHer εἰσιν αἰ προσηγορίαι πᾶσαι] εἰ πᾶ-
+σαι αἰ προσηγορίαι UPaB pr Mor αἰ πᾶσαι προσηγορίαι ΡΗ
+7 ἡ ἐπιστολὴ διαιρεῖται] ἐπιστολὴ διαιρεῖται PHWes Her αἰ ἐπι-
+στολαὶ διαιροῦνται PaB pr Mor 8 χρῆσθαι μεθόδω V Hin
+10 μὶν om Ρ μέτριον H γε post μέντοι ΡΗ Wes Her
+11 κομφολογίᾳ χρῆσθαι] κομπολογίᾳ χρῆσθαι PH WesHer κομ-
+φολογεῖν PaB pr Mor ὑψηγορία V sed ὑφ parum certa κροση-
+γορία PaB pr Μor 12 ταύτης] τῇς φράσεως ΡΗ WesHer ὑπερ-
+όγκω Β 13 χαρακτῆρος καθέστηκεν ΡΗ WesHer 14 δὲ
+om UPaBPH pr Mor Wes Her 16 κάλιστά Β pr κάλλιστά Wes
+Her γὰρ om VPaB pr Mor Hin Wei 16 τοῦ δὲ] καὶ V
+17 ἀττικοῦ PH μὴ τελείαν U</note>
+
+<pb n="34"/>
+μήτε ταπεινὴν ἄγαν, ἀλλὰ μέσην τινά.</p></div>
+
+<div type="textpart" subtype="chapter" n="48"><p>κοσμεῖν
+δὲ δεῖ τὴν ἐπιστολὴν σαφηνείᾳ τε μάλιστα καὶ συντομίᾳ
+μεμετρημένῃ καὶ ἀρχαϊσμῷ λέξεων. σαφὴνειαγάρἀγα-
+θὴ μὲν ἡγεμὼν παντὸς λόγου, μάλιστα δὲ ἐπι-
+<lb n="5"/> στολῆς.</p></div>
+
+<div type="textpart" subtype="chapter" n="49"><p>χρὴ μέντοι μήτε συντομίᾳ σαφήνειαν δια-
+φθείρειν μήτε σαφηνείας φροντίζοντα ληρεῖν ἀμέτρως,
+ἀλλὰ τοῦ συμμέτρου στοχάζεσθαι τοὺς ἀκριβεῖς τοξότας
+μιμούμενον. ὥσπερ γὰρ οὔτε τὸ πολὺ τὸν προκείμενον
+τοῖς τοξόταις σκοπὸν παρέρχεσθαι αἰ οὔτε τὸ ἐντὸς τοῦ
+<lb n="10"/> σκοποῦ τοξεύειν καὶ πολὺ τοῦ προσήκοντος ἀποδεῖν ἀν-
+δρός ἐστιν εὐφυοῦς τε καὶ στοχαστικοῦ, ἀλλὰ μόνου τοῦ
+συμμέτρως στοχαζομένου τοῦ σκοποῦ καὶ τοῦτον βάλλον-
+τος, οὕτως οὔτε τὸ πέρα τοῦ προσήκοντος ληρεῖν οὔτε
+τὸ βραχυλογίαν ἀσπάζεσθαι δι’ ἀπορίαν καὶ τὸ σαφὲς
+<lb n="15"/> ἐπικρύπτειν τῶν ἐπιστάλσεων ἀνδρός ἐστι λογίου, ἀλλὰ
+μόνου τοῦ μετ’ εὐφραδείας τῆς συμμετρίας στοχαζομένου
+καὶ τὸ λεγόμενον καλῶς σαφηνίζοντος.</p></div>
+
+<div type="textpart" subtype="chapter" n="50"><p>τὸ μὲν οὖν
+<note type="footnote">1 sq. Liban. ep. 606 (X 563, 9 sq.) 716 (X 645, 16—19).
+(XI 159, 11) 3 sqq. Philostr. 1. 1. 258, 21 8 Greg. Naz. ep.
+51. Luc. Nigr. 36 et 37</note>
+<note type="footnote">1 ἄλλα Pa τινὰ κοσμεῖν Hin 2 δὲ om VU Hin δεῖ om
+PaB pr Mor μάλιστα post δεῖ ΡΗ τἀς ἐπιστολὰς PH Wes Her</note>
+<note type="footnote">σαφητείας U μάλιστα om V Hin 3 μεμετρημένην V Hin με-
+μετριμένην U καὶ ἀρχαισμῷ λέξεων cancell Hin προσήκει
+post λέξεων λέξων U) UPaB pr Mor μὲν ante γὰρ ΡΗ ἀλη-
+θὴς post γὰρ PH Wes Her 4 λόγου παντὸς UPaB pr Mor
+ἐπιστολή U ἐπιστολῶν PaB Mor 5 συντομίαν διὰ σαφήνειαν
+ΡΗ σαφήνειαν διὰ συντομίαν Knyser 7 ἀκριβ . . . V 8 μι-
+μούμενοι libri pr μιμουμένους Mor corr Wes Hin τὸ om VUPH</note>
+<note type="footnote">πολὺν ΡΗ 9 παρενέχεσθαι ΡΗ παρενεγκέσθαι coni Bois-
+sonadius Philostr. epp p. 53 τὸ ἐντὸς] τὸν ἀνέντα PH 11 μόνου
+scripsi e VU cum Hin μόνον PaBPH pr Mor Wes Her τοῦ —
+12 καὶ om Mor 12 στοχαζομένου om Ρ στοχάζεσθαι et βάλλειν
+et 16 στοχάζεσθαι et 17 σαφηνίζειν coni Wes 13 οὕτως om Ρ</note>
+<note type="footnote">πέραν U 14 εὐπορίαν Β pr Mor 15 ἐπιστάλ . . . . V ἐπι-
+στάσεων ΡaΒΗ pr Mor Wes Her ἐπιτάσεων Ρ λογίαου V
+16 μόνον Pa Wei εὐφραδίας Β pr Mor εὐφρασίας Pa τῆς συμ-
+μετρίας om V 17 μὲν om PH Wes Her</note>
+
+<pb n="35"/>
+μέγεθος τῆς ἐπιστολῆς ὡς πρὸς τὰ πράγματα, καὶ οὐ
+πάντως τὸ πλῆθος καθάπερ κακίαν ἀτιμάζειν καλόν, ἀλλὰ
+δεῖ καί τινας ἐπιστολὰς ἀπομηκύνειν ἐν καιρῷ πρὸς
+τὴν ἀπαιτοῦσαν χρείαν, πληρώσει δὲ τὴν εἰς ἐπιστολὰς
+χάριν ἱστοριῶν τε καὶ μύθων μνήμη καὶ παλαιῶν συγ- <lb n="5"/>
+γραμμάτων καὶ παροιμιῶν εὐστόχων καὶ φιλοσόφων δογ-
+μάτων χρῆσις, οὐ μέντοι γε ταύτην διαλεκτικῶς προσ-
+ακτέον.</p>
+<p>51. Τοσαῦτα μὲν περὶ ἐπιστολιμαίου χαρακτῆρος εἰρη-
+κὼς καὶ τοῖς λεχθεῖσιν ἀρκεῖσθαι κρίνας τοὺς συνετοὺς <lb n="10"/>
+ὑπογράψομαι καὶ τὰς ἐπιστολὰς ἑκάστη οἰκείαν ἁρμόσας
+προσηγορίαν. προσήκει μέντοι τῷ γράφειν βουλομένῳ
+πρὸς τοῦ κατὰ τὴν ἐπίσταλσιν χαρακτῆρος μὴ ληρεῖν
+μήτε μὴν ἐπιθέτοις ὀνόμασι χρῆσθαι, ὡς ἂν μὴ κολα-
+κεία τις καὶ δυσγένεια προσῇ τῷ γράμματι, ἀλλ’ οὕτως <lb n="15"/>
+ἀπάρχεσθαι· ὁ δεῖνα τῷ δεῖνι χαίρειν. οὕτω γὰρ ἅπαν-
+τες οἱ ἐπὶ σοφίᾳ τε καὶ λόγοις διαπρέψαντες παλαιοὶ φαί-
+νονται πεποιηκότες καὶ δεῖ τὸν ἐκείνων ζηλωτὴν βουλό-
+<note type="footnote">1 Liban. ep. 561 (X 527, 10) 5 Greg. Naz. ep. 51 17 Liban.
+ep. 1034 (X 159, 11)</note>
+<note type="footnote">1 ὡς om PH ἴστω coni Wes ἔσται Kayser, πρόσταγμάτε VU</note>
+<note type="footnote">3 ἐπιστολaς τίτας U τινας] τι τὰς Duebner ἃς ὁ μηκύι ειν
+U ὡς μηκύνειν μυκένειν Β pr) PaB prMor καὶ post καιρῷ Pa</note>
+<note type="footnote">τὸ post πρὸς PH 4 πληρῶ αί αἰ ΡΗ δὲ scripsi cum Hin τε
+libri edd τῆς PH εἰς ἐπιστολὰς χάριν] τὴν ἐπιστολὴν χάρις
+PaB pr Mor WesHer 5 τε om PaB pr Mor WesHer 6 εὐ . . . . . . .
+φιλοσόφων V 7 χρήσεις libri, sed ει supra ι Pa pr Mor αὐ-
+τὴν ΡΗ προσεκτέον VU προσενεκτέον PH VVes Her 9 ἐπι-
+στολιμαίου χαρακτῆρος supra ἐπιστολιμαίων χαρακτήρων Pa
+11 ὑπέγραφαι V ὑπογράφαιμι U ὑπογράφαιμι PaB pr Mor Wes
+qni adnot: ,.fort. scribi. ὑπογράφω ὑπογράψω σοι, nisi praestat ὑπογράφομαι"
+om ΡΗ Her ὑπογράψαι &lt;βούλομαι&gt; Hin p. 540 αὐτὰς
+post ἐπιστολάς Her ἑκάστην Wes Her οἰκίαν Pa οἰκείας et
+προσηγοίας ΡΗ οἰκείᾳ et προσηγορίᾳ Wes Her 13 πρὸς scripsi
+πρὸ libri edd τὴν om PH Wes Her ἐπιστολὴν Β pr Mor Bois-
+son. Phil. epp. 53 14 μήτε] μὶν Β num μηδὲ? χρήσασθαι
+VU Hin 15 δυσπένεια PH πρὸς ἧ U 18 τὸν βουλόμενον
+ἐκείνων ζηλωτὴν PH Wes Her</note>
+
+<pb n="36"/>
+μένον γίνεσθαι κατόπιν αὐτῶν βαίνειν. εἰσὶ δὲ αἱ προ-
+ταγεῖσαι ἐπιστολαὶ αὗται.</p>
+<p>52. Παραινετική. Ζηλωτὴς ἀεί, βέλτιστε, γενοῦ τῶν
+ἐναρέτων ἀνδρῶν. κρεῖττον γάρ ἐστι τοὺς ἀγαθοὺς ζη-
+<lb n="5"/> λοῦντα καλὸν ἀκούειν ἢ φαύλοις ἑπόμενον ἐπονείδιστον
+εἶναι τοῖς πᾶσιν.</p>
+<p>53. Μεμπτική. Οὐ καλῶς ἔδρασας τοὺς εὖ ποιήσαν-
+τας ἀδικήσας. δέδωκας γὰρ ἄλλοις κακίας παράδειγμα
+τοὺς εὐεργέτας ὑβρίζων.</p>
+<p><lb n="10"/></p></div>
+
+<div type="textpart" subtype="chapter" n="54"><p>ΙΙαρακλητική. Καὶ Καὶ πάλαι μὲν ἠξίωσα τὴν σὴν
+ἱερὰν διάθεσιν καὶ νῦν δὲ ἀξιῶ τυχεῖν τοῦδε τοῦ πράγ-
+ματος καὶ εὖ οἶδ’ ὅτι τεύξομαι. δίκαιον γάρ ἐστι τοὺς
+γνησίους φίλους τυγχάνειν τῶν αἰτήσεων, ὅταν αὗται μὴ
+πονηραὶ πεφύκωσι, μάλιστα.</p>
+<p><lb n="15"/></p></div>
+
+<div type="textpart" subtype="chapter" n="55"><p>Συστατική. Τὸν τιμιώτατον καὶ περισπούδαστον
+ἄνδρα τόνδε δεξάμενος ξενίσαι μὴ κατοκνήσῃς σεαυτῷ
+πρέποντα πράττων κἀμοὶ κεχαρισμένα.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="56"><p>Εἰρωνική. Λίαν ἄγαμαι τὴν σὴν ἐπιείκειαν, ὅτι
+οὕτω ταχέως μεταβάλλῃ ἀπ’ εὐνομίας εἰς τὸ ἐναντίον,
+20 ὀκνῶ γὰρ εἰπεῖν εἰς μοχθηρίαν. ὡς δὲ ἔοικεν, οὐ
+<note type="footnote">1 γενέσθαι PaBPH Mor Wes Her αὐτὸν UB εἰοὶ—2 αὗται
+om ΡΗ Har Wes Her 3 ἐπιστολὴ παραινετική U γίνου PHWes
+Her 5 καλὼς PH WesHer Hin Wei φαύλους Β φαύλως pr
+6 πᾶσι D 7 ἐπιστολὴ μεμπτική U 8 ἄλλους Β τοῖς ἄλλοις
+DPH WesHer κακίας ἢ ἀδικίας V ἀδικίας PaB pr Mor χαρακ-
+τῆρα libri pr Har Mor Hin Wei corr Wes 9 ὑβρίζειν VUBDPH
+pr Har Mor 10 πάλιν V 11 δὲ om VDPH Har Mor Wes Her
+1 3 ὂν ἂν Pa 14 φεφύκασι VUPaD Har Hin τυγχάνωσι ΡΗ εἰσι
+Β pr ὧσι corrector codicis Bodl. Auct. I, IV 4 fol 75 comma in-
+serui om libri edd 15 ἄιδρα καὶ περισπούδαστον D Har
+16 ξενίσαι D sed ε et αι corr m 2 κατὀκνίσεις U κατοκνήσαις PH</note>
+<note type="footnote">σαυτῷ D 17 καὶ ἐμοὶ PaB pr Mor κεχαρισμένε Β 18 ἐπι-
+στολὴ εἰρωνική in marg U 19 μεταβάλλεις PaB pr Mor ἀπὸ
+PaB pr Mor ἐπ’ Har 20 ὀκνῶν Β ὧς] οὐ D οὐ τοὺς] οὕτως
+Pa sed οὑς supra ως, αὐτοὺς ΡΗ</note>
+
+<pb n="37"/>
+ἐχθροὺς φίλους ποιεῖν παρεσκεύασαι, ἀλλὰ τοὺς φίλους
+ἐχθρούς. τὸ γὰρ δρᾶμα δέδειχεν ὡς καὶ φίλων ἀνάξιον
+καὶ τῆς σῆς παροινίας ἐπάξιον.</p>
+<p>57. Εὐχαριστική. Πολλῶν μὲν καὶ ἄλλων ἀγαθῶν
+ἕνεκα χάριν γινώσκω τῇ σῇ καλοκἀγαθίᾳ, μάλιστα δὲ <lb n="5"/>
+τοῦδε τοῦ πράγματος ἐφ’ ᾧ με τῶν ἄλλων ὑπὲρ ἀπάντων
+ὠφέλησας πλεῖον.</p>
+<p>58. Φιλική. Γνησίων εὐπορήσας γραμματηφόρων
+ἐσπούδασα τὴν σὴν ἀγχίνοιαν προσειπεῖν. ὅσιον γὰρ
+ὑπάρχει τοὺς γνησίους φίλους παρόντας μὲν τιμᾶν, ἀπόν- <lb n="10"/>
+τὰς δὲ προσερεῖν.</p>
+<p>59. Εὐκτική. Εἴθε μοι τὸ θεῖον παράσχοι τὴν σὴν
+ἱερὰν θεάσασθαι μορφήν, ἧς ἀπολαῦσαι πάλαι ἐλπίζω
+διηνεκῶς εὐχὰς ὑπὲρ τούτου ποιούμενος τῷ κρείττονι.</p>
+<p>60. παραγένωμαι. Εὖξαι πάσῃ ψυχῇ καὶ παντὶ σθέ- <lb n="15"/>
+νεῖ μὴ παραγένωμαι. ἐὰν γὰρ παραγένωμαι, πολλῶν πεῖ
+ραθήσῃ κακῶν, ὧν οὐκ ἤλπισάς ποτε δέξασθαι πεῖραν.</p>
+<note type="footnote">1 παρεσκευάσω V παρεσκεύασας PH Her παρασκυάσας Har
+ἀλλὰ τοὺς] τοὺς δὲ ΡΗ 2 γὰρ] δὲ D Har ὡς] ὂν coni Wes</note>
+<note type="footnote">φίλοις UPaPHBD pr Har Mor Wes Her φιλίας coni Wes
+3 παρανοίας U παρανοίας καὶ ἀμαθίας PaB pr Mor ἀπάξιον U
+sed π ex ν corr ἄλλη post ἐπάξιον Pa sed del, et ε)ἰρωνική.
+τ)ίς οὐκ οἶδα (corrigas οἶδεν) ὅτι πανταχοῦ γῆς στήλας ἐφ᾿ οἷς
+ἠνδραγάθησας, καὶ νῦν παλιν ἄλλην εἴληφα (corrigas εἴληφας)
+ἐφ’ οἷς ὑπερευδοκίμησα (corrigas ὑπερευδοκίμησας) μείζονα κακὰ
+διαπραξάμενος in marg inf 5 ἕνεκεν ΡΗ σῇ om D Har
+6 με) μετὰ D Har Mor ὑπέρ ἀπάντων cancell Her 7 πλέον
+PaBDPH pr Mor Har Wes Her fortasse recte 8 ἐπιστολὴ φι-
+λικὴ U γνησίον Β ἀπορρήσας Pa γραμματοφόρων PaB Har</note>
+<note type="footnote">10 ὑπάρχειν ΡΗ φίλους παρόντας bis D 11 καὶ post δὲ
+U Hin Wei προσφθέγγεσθαι ΡαΒ pr Mor Wes Her 12 ἐπι-
+στολὴ εὐκτικὴ U παράσχει Pa 13 ἱερὰν om PaB pr Mor
+ὡς ante πάλαι PaB Mor καὶ Wes πάλιν VUDPH pr Har Hin
+Wei 14 περὶ τούτου εὐχάς ΡΗ Her 16 καὶ) ἢ libri pr Har
+Mor 16 αὐτόθι ante μὴ PH Wes Her ἐὰν γὰρ scripsi cum
+Wei καὶ γὰρ εἰ VUPaBD pr Har Mor Wes Her εἰ γὰρ ΡΗ πα
+ραγένομαι ἁ παραγινώμεθα ΡΗ Wes Her 17 ἤλπιζέ ἁ ἤλπι-
+ζές PaB pr Mor ποτε om D Har πεῖραν λήψεσθαι D Har
+Wes Her</note>
+
+<pb n="38"/>
+<p>61. ἀπαρνητική. Οὐδὲν εἴργασμαι, βέλτιστε ἀνδρῶν,
+ὧν ἀκηκοὼς ἐγκαλεῖς μοι δεινῶν. ὅθεν μηδὲν φαῦλον
+φρόνει περὶ ἐμοῦ. οὐ γὰρ θέμις διαβολῇ πιστεύειν καὶ
+φήμη ματαίᾳ μηδὲν ὑγιὲς λεγούσῃ. διαβολὴ γὰρ μήτηρ
+<lb n="5"/> ἐστὶ πολέμου.</p>
+<p>62. Παραγγελματική. Πολλάκις ἠδίκησας τὸν ἡμέ-
+τερον γεωργὸν ὡς μὴ γινώσκων εἰς ἡμᾶς ἀνατρέχουσα
+τὴν ὕβριν. ἀλλὰ παῦσαι τοῦ λοιποῦ, μή σε καὶ τῆς προ-
+τέρας ἀδικίας δίκην εἰσπραξώμεθα.</p>
+<p><lb n="10"/></p></div>
+
+<div type="textpart" subtype="chapter" n="63"><p>Μεταμελητική. Οἶδα καὶ σφαλείς, ὡς κακῶς
+διεπραξάμην. διὸ μεταγνοὺς ἐπὶ τῷ σφάλματι συγγνώμην
+αἰτῶ. ἧς μεταδοῦναί μοι μὴ κατοκνήσῃς. δίκαιον γάρ
+ἐστι συγγινώσκειν πταίουσι τοῖς φίλοις, ὅτε μάλιστα καὶ
+ἀξιοῦσι συγγνώμης τυχεῖν.</p>
+<p><lb n="15"/></p></div>
+
+<div type="textpart" subtype="chapter" n="64"><p>Ὀνειδιστική. Πόλλα καλὰ πέπονθας ὑφ’ ἡμῶν
+καὶ θαυμάζω καθ’ ὑπερβολήν, πῶς οὐδενὸς τούτων μνεί-
+αν ποιεῖς, ἀλλὰ κακῶς ἡμᾶς λέγεις, ὅπερ ἐστὶν ἀχαρίστου
+γνώμης. οἱ γὰρ ἀχάριστοι τῶν καλῶν ἀμνημονοῦσι καὶ
+τοὺς εὐεργέτας ὧς ἐχθροὺς κακῶς ἐπὶ τούτοις δΙατίθεν-
+<lb n="20"/> ται.</p>
+<note type="footnote">1 τῶν ante ἀνδρῶν U 2 ὅ τι Har μὴ φαῦλα D Har 3 οὐδὲ
+ΡΗ Wes Her καὶ] ἢ Hin Wei 4 λεγούσῃ scripsi cum Her ἐχούσῃ
+libri rell edd διαβολὴ — 5 πολέμου cancell Hin 6 παραγγελ-
+τική UPaB, sed in hoc μὰ inser rubr, D παραγγελιτικὴ pr ὴδί-
+κησας D Har 7 ἄνθρωπον ΡΗ Wes Her γινώσκειν VU τὴν
+ὕβριν εἰς ἡμᾶς ἀνατρέχουσαν ΡΠ 9 δίκας PaB pr Mor εἰσ-
+πράξωμεν Pa εἰσπράξωμαι Β pr Mor 10 ἐπιστολὴ μεταμελη-
+τικὴ U Οἶδα—11 διεπραξάμην οἶδα σφαλεὶς κακῶς σε δια-
+θέμενος PH Wes Her καὶ om D Har 11 σε ante διεπραξάμην
+D Har τὴν ante ἐπὶ PH Wes Her 12 ἧς om UPaBDPH
+Har Mor Wes Her δέ post μεταδοῦναι ΡΗ Wes Her μοι om U</note>
+<note type="footnote">ταύτης post μοι D Har διὰ τὸν κύριον post κατοκνήσῃς PH
+Mor Wes Her 13 τοῖς φίλοις πταίουσιν PaB pr Mor 15 Ὀνει-
+διατική─20 διατίθενται διατίθενται om VPaB pr Πόλλα—20 δια-
+τίθενται om U Hin Wei καὶ ante καλὰ D Har 16 num
+ὅπως? μνήμην D Har Mor 17 κακῶς ἡμᾶς] κακοὺς D Har Mor</note>
+<note type="footnote">19 εἰς ante τοὺς inser coni Wes τούτους Η</note>
+
+<pb n="39"/>
+<p>65. Συμπαθητική. Σφόδρα κατὰ ψυχὴν ἠχθέσθην
+ἀκηκοὼς περί τινων συμβάντων σοι δεινῶν καὶ τὸ θεῖον
+ἱκέτευσα τούτων ἐλεύθερόν σε καταστῆσαι. φίλων γάρ
+ἐστιν εὔχεσθαι τοὺς φίλους ἀεὶ κακῶν ἐλευθέρους ὁρᾶν.</p>
+<p>66. Θεραπευτική. Ἐγὼ μὲν ἐφ’ οἷς εἶπον λόγοις <lb n="5"/>
+μετῆλθον ἔργῳ, τὸ γὰρ σύνολον οὐκ ἐνόμιζόν σέ ποτε
+λυπηθήσεσθαι· εἰ δ’ ἐπὶ τοῖς λεχθεῖσιν ἢ πραχθεῖσιν
+ἠχθέσθης, ἴσθι, κράτιστε ἀνδρῶν, ὡς οὐκέτι τῶν ῥηθέν-
+των λόγον ὅλως ποτὲ ποιήσομαι. σκοπὸς γάρ μοι θερα-
+πεύειν ἀεὶ τοὺς φίλους ἐστὶν ἧπερ λυπεῖν. <lb n="10"/></p>
+<p>67. Συγχαρητική. Συγχαίρω σοι λίαν ἐφ’ οἷς ἀγω-
+νισάμενος εὐδοκίμησας εἰς τοσοῦτον ὡς καὶ γραφῇ τιμη-
+θῆναι. συγχαίρειν γὰρ χρὴ τοῖς φίλοις εὖ πράττουσιν
+ὧς καὶ συναλγεῖν λυπουμένοις.
+</p></div>
+
+<div type="textpart" subtype="chapter" n="68"><p>Παραλογιστική. Εἰ καὶ μέγας τις ἦσθα καὶ τῶν <lb n="15"/>
+<note type="footnote">1 τὴν ante ψυχὴν PaD Har Wes Her 2 τινος D Har συμ-
+βαινόντων VU συμβεβηκότων PH Wes Her συμβεβηκότος D Har
+δεινοῦ D Har τὸν κρείττονα ΡΗ Wes Her 3 σε om D Har
+καταστῆναι ἁ φίλον ἁ 4 τοὺς φίλους εὔχεσθαι Β pr Mor
+ὀ]νειδιστικὴ καὶ ἀπευχαριστικὴ [ο]ὐδὲ μίαν σοι χάριν
+σκω οὐδὲ γάρ με κατ’ οὐδένα τρόπον ὠφέλησας πώποτε τὸ σύνο-
+λον ὡς οὐδὲ νῦν post ὁρᾶν V 6 ἢ ante μετῆλθον DPH Har
+Wes Her οὐ ante μετῆλθον Par 1760 Wei μετῆλθεν U τὸν PaB
+pr Mor γὰρ om PH Wes Her σ’ . . ολον U σύμβουλον PaB pr
+Mor σέ om Ρ λυπηθήσεσθαί ποτε V Hin 7 δὲ Β ἢ πραχ-
+θεῖσιν cancell Hin del Wei 8 τῶν ante ἀνδρῶν UPaB pr
+οὐκ ἔστι U οὐκ ἔτι PaB 9 λόγοι Β ὅλως om pr ποτὲ om
+PaBDPH Har Mor Wes Her 10 ἐστὶν om V Hin μᾶλλον post
+ἐστὶ inser Wes Her εἴπερ U ὑπὲρ PaB pr Mor ἢ D Har περι-
+λυπεῖν D Har τὸ λυπεῖν Β pr Mor 11 συγχαριτική V συγχαριστική
+Pa Har Mor Wes Her συγχαρτική Hin cf. p. 28, 9 et 31, 1 συγ-
+χαίρομεν PH wes Her ἀγωνισάμενος om PaB pr Mor 12 οἰκο-
+νομήσας post εὐδοκίμησας B pr Mor ἐς Pa 13 συγχαίρειν
+—14 λυπουμένοις praemisso Λιβανίου citat Maximus Conf. loc.
+comm. serm. 6, 550 ed. Comb. (tom. 91 col. 763, 6 Migne), e quo
+pendet Anton. Meliss. I 24 et 25 ed. Migne (t. 136 col. 852)
+πράσσουσιν V 14 ὡς om Har συναλγῶν λυπημένοις Β 15 Εἰ
+oblit V</note>
+
+<pb n="40"/>
+ἐπὶ δυνάμει βοωμένων εἷς, ἐν οὐδενί σε μέτρῳ τὸ παρά-
+παν ἂν περιεπτυξάμην. πολὺ δέ γε μᾶλλόν σε νῦν οὐ
+προσποιοῦμαι διὰ τὴν ἀσθένειάν σου. οὐδὲν γάρ με λυ-
+πεῖς οὐ δι’ ἀρετὴν τοῦ μὴ θέλειν ἀδικεῖν, ἀλλὰ τῷ δυνά-
+<lb n="5"/> μεως ἀπορεῖν.</p>
+<p>69. Ἀντεγκληματική. Τί ἐγκαλεῖς ἡμῖν ὧς αἰτίοις
+σοι γενομένοις συμφορᾶς καὶ οὐκ ἐγκαλεῖς σεαυτῷ τῷ
+κακώσαντι τὰ καθ’ ἡμᾶς; σὺ γὰρ ἡμῖν αἴτιος γέγονας
+ἀπείρων κακῶν ὁ καὶ πολλοὺς ἄλλους λυπήσας καὶ οὐχ
+<lb n="10"/> ἡμεῖς σοὶ οἱ μηδένα τὸ παράπαν ἠδικηκότες ποτέ.</p>
+<p>70. Ἀντεπισταλτική. Δεξάμενος τὰ γράμματα τῆς
+σῆς γνησιότητος καὶ γνοὺς δι’ αὐτῶν ὡς ἐν εὐπραγίᾳ
+διάγεις, λίαν ἥσθην. δι’ εὐχῆς γὰρ ἔχω τοὺς φίλους εὖ
+πράττειν ἀεί.</p>
+<p><lb n="15"/></p></div>
+
+<div type="textpart" subtype="chapter" n="71"><p>Παροξυντική. Εἰ πόρρω τύγ’ χάν ὢν ἐγὼ τοῦ κα-
+κοδαίμονος Διοκλέους λίαν ἄχθομαι, καθὸ κακῶς σε παν-
+ταχοῦ γῆς διατίθεται, πολύ γε μᾶλλον σὺ τῆς εἰς σὲ λοι-
+δορίας χάριν ὤφελες ἀμύνασθαι. καλὸν γάρ ἐστι τοὺς
+<note type="footnote">1 βεβοημένων coni Wes εἷς om V Hin εἰς U τοπαράπαν Pa</note>
+<note type="footnote">2 ἂν περιεπτυξάμην scripsi ἐπιπτήξαιμι VUD Har Hin περι-
+πτύξαιμι Pa περιπτήξαιμι Β pr Mor ἐτιθέμην PH ἂν ἐτιθέμην
+Wes Her Wei δέ om ΡΒΗ pr γε om Β pr μᾶλλον σέ γε PaB
+Mor 4 δι’] δ’ D τὸ VUPaBPH pr δυνάμενον V δυνα-
+μένως D Har 6 ἐπιστολὴ ἀντεγκληματική U δὴ post τί DPH
+Har Mor Wes Her 7 σου VU γινομένοις D Har συμφορῶν
+V Hin 8 αἴτιος ἡμῖν V 9 ὁ καὶ] οὑς Ρ 10 σοὶ om libri
+pr Har Mor Wes qui inser coni τοπαράπαν Pa λελυπηκότες
+ΡΗ Wes Her 11 ἐπιστολὴ ἀντεπισταλτική U 12 εὐπορία
+PaB pr Mor 13 ἔχω] δεῖ ΡΗ εὖ πράττειν) συμπράττειν V
+ΡΗ συμπράττων U πράττειν D Har 15 καὶ ante πόρρω D
+Har Mor Wes Her τυγχάνων om ΡΗ τυγχάνω pr Mor 16 Διο-
+κλέους om D Har καθ’ ὃ U Har Mor καθὰ ΡΗ Wes Her σε
+om D ἀπαντάων D Har 17 γῆς om PH Wes Her διατίθεται
+om Pa διατίθενται Har μὶν post διατίθεται oblit Β γε] γὰρ
+Har καὶ ante σὺ D Har σὺ om pr 18 ὠφε V ὠφελείας
+UD Har ὤφειλες ΡΗ ἀμύνεσθαι PaB Mor</note>
+
+<pb n="41"/>
+πονηροὺς μείζοσιν ὧν ἀδικοῦσι περιβάλλειν κακοῖς καὶ
+τὰς πολλὰς ἐπιστομίζειν φλυαρίας.</p>
+<p>72. Παραμυθητική . . .</p>
+<p>73. Ὑβριστική. Εἰ καλὸς ἦσθα, πολλοὺς ἂν εἶχες
+φίλους γνησίους· νῦν δ’ ἐπειδὴ φαῦλος ἔφυς, εἰκότως 5
+οὐδένα κέκτησαι φίλον. ἕκαστος γὰρ τῶν ἐμφρόνων ἀν-
+δρῶν σπουδὴν ποιεῖται τὸν ἄτοπον φεύγειν ἀεί.</p>
+<note type="footnote">1 ἀδικοῦσιν Β παραβάλλειν ΡΗ 2 τῆς πολλῆς VDBPH Har
+Mor Wes Her Hin τοῖς πολλοῖς UPa 3 Παραμυθητική . . . .
+om VU</note>
+<note type="footnote">παραθαρρυντική. Ἀμέμπτως καὶ σωφρόνως σωφρόνος Β) πολι-
+τευόμενος καὶ τὸν θεὸν μόνον δεδιὼς μηδένα δείσης. ὁ γὰρ τὸν
+ἔνα φοβούμενος οὐδένα φοβηθήσεται, ὁ δὲ τοὺς πολλοὺς καὶ τὴν
+ἑαυτοῦ σκιὰν δείσει. οὐκ οὖν οὐκοῦν Β) τῷ θεῷ χάρις ᾧ λατρεύ-
+εις θαρρήσας τἀς ἐκδειματώσεις ἐκδηματώσεις Pa) καὶ ἀπειλὰς
+εἰς οὐδὲν λογίζου Θὶς γὰρ τὸν τὸν om Pa) θεὸν τὸν ὑπὸ σοῦ
+εὐσεβούμενον, δι’ ὃν ἀρίστην καὶ ἀνεπίληπτον πολιτείαν καὶ ἀγω-
+γὴν μετέρχῃ, παντὸς ἐκρυόμενόν ἐκρόμενόν Β) σε καταργοῦντα
+καὶ πᾶσαν δυσμένειαν καὶ μηχανὴν καὶ ἐπίθεσιν καταργοῦντα
+τῶν γὰρ κατὰ σὲ βιούντων ὀρθῶς ὁ θεὸς ὑπερασπίζεται καὶ τοῖς
+κακῶσαι κακίσαι Pa) σπουδάζουσιν ἀντιτάσσεται Pa, qui χριστια-
+νοῦ νομίζω in marg, Β pr Mor Ἀμέμπτως—ἀντιτάσσεται om
+Hin Wei</note>
+<note type="footnote">ΙΙαραμυθητική. Συμφοραῖς πυθόμενός σε περιπεπτωκέναι με-
+γίσταις συνήλγησα μὲν καὶ συναλγῶ σοι σφόδρα διὰ τὸν τῆς φι-
+λίας ὅρον παρακαλῶ δὲ μὴ πάνυ σε τῇ λύπῃ τὸ τῶν δεινῶν πέν-
+θος inser Har) καταβαπτίζεσθαι τὸ τῶν ἀνθρώπων ἄστατον λογι-
+ζόμενον καὶ τὴν παρὰ τοῦ κρείττονος ἀντίληψιν ἐκδεχόμενοι
+τὸ—ἐκδεχόμενον om Har ἀνθρώπων — ἐκδεχόμενον om D cum
+lac 24 lin) D Har</note>
+<note type="footnote">Λίαν ἡμᾶς ἡ ἀποβίωσις τοῦ μακαρίου τοῦ δεῖνος ἐλύπησε καὶ
+πενθεῖν καὶ δακρύειν ἠνάγκασε τοιούτου γὰρ φίλου τοιούτον
+φίλου γὰρ PH Wes) σπουδαίου καὶ παναρέτου ἐστερήθημεν. δόξα
+οὑν καὶ αἴνεσις τῷ έν σοφίᾳ καὶ ἀκαταλήπτῳ δυνάμει καὶ προ-
+νοίᾳ κυβερνῶντι θεῶ τἀς διεξόδους τοῦ θανάτου καὶ τὴν ψυχὴν
+ἑκάστου ἑκάστον om Wes) ἡνίκα συμφέρει παραλαμβάνοντι ΡΗ
+Wes Her quam epietulam Gregorio Nazianzeno tribuit Laur.
+Acqu. 39 saec. XVI fol. 103 τοῦ θεολόγου</note>
+<note type="footnote">4 Εἰ oblit V καλῶς U ἂν ante ἦσθα D Har Mor 6 καὶ
+ante γνησίους D Har ἐπεὶ PHD Har Wes Her 6 εὐφρόνων
+PH 7 τὸ τοῦ Mor) φεύγειν ἀεὶ τὸν ἄτοπον Β pr Mor τὸν] τὴν
+ΡΗ τὸ D Har</note>
+
+<pb n="42"/>
+<p>74. Ἀπαγγελτική. Πόλλα δεινὰ τῇ νῦν ὑφ’ ἡμῶν
+οἰκουμένῃ συμβέβηκε πόλει. πολέμου γὰρ αὐτὴν ἐμφυλίου
+κατειληφότος τὸ πλεῖστον αὐτῆς ἐξηφανίσθη ὡς μηδὲν
+διαφέρειν τῆς Σκυθῶν ἐρημίας.</p>
+<p><lb n="5"/></p></div>
+
+<div type="textpart" subtype="chapter" n="75"><p>Σχετλιαστική. Ὦ πόσων ἡμῖν κακῶν αἴτιος γέ-
+γονεν ἡ συντυχία τοῦ κακοδαίμονος Ἑρμογένους, ὦ πό-
+σαις συμφοραῖς καὶ δεινοῖς ἡμᾶς περιέβαλε. κρεῖττον
+γὰρ ἡμῖν τῷ Πλούτωνι ξυντυχεῖν ἢ τῷ τοῖς θεοῖς ἐχθρῷ</p>
+<p>76. Πρεσβευτική. Ἀεὶ τῶν δωρεῶν τῆς ὑμετέρας
+<lb n="10"/> κηδεμονίας ἀπελαύομεν. ὅθεν καὶ νῦν, ἀγαθοί, διὰ τῶνδε
+τῶν πρεσβειῶν ἀξιοῦμεν τοῦδε τοῦ πράγματος τυχεῖν,
+ὃ συνήθως ἀξιοῦσιν ἐχαρίσασθε. ἐν τούτῳ οὖν τὸ με-
+γαλόψυχον τῆς ὑμετέρας ἀρετῆς ἐπιδεῖξαι δυσωπήθητε.</p>
+<p>77. Ἐπαινετική. Ἀγχίνουν ὄντα σε καθ’ ὑπερβολὴν
+<note type="footnote">4 Cf. ad t. VI 380, 2</note>
+<note type="footnote">1 ἐπιστολὴ ἀπαγγελτική U ΙΙολλὰ—p.47,5 ἁρμόζει rursus ser-
+vavit pars vetusta codicis Α καὶ ante δεινὰ inser coni Her
+υφημων Α ἐφ’ ἡμῖν Pa 2 οἰκουμένῃ om UPaB pr 3 αὐτῆς
+om Β Mor οὐδὲν Β pr Mor 4 τῶν ante Σκυθῶν V Hin Wei
+5 ἐπιστολὴ ἐχετλιαστική U ὦ oblit V om in lac Pa ὢ D Har</note>
+<note type="footnote">κακῶν ἡμῖν ΡΗ Wes Her αἴτιος κακῶν UB pr Mor κάκῶν
+αἴταως Pa 6 ὢ PaD Har 7 περιέβαλλε VB pr Hin περιἐ-
+βαλεν UA κρεῖσσον ΡΗ 8 οὖν ante ἡμῖν Α, ἦν D Har συν-
+τυχεῖν ΡaΒΑDΡΗ pr Har Mor Wes Her τῷ om U θεοῖς in
+θείοις corr U 9 ἐπιστολὴ πρεσβευτικὴ U Ἀεὶ om VUPaB pr
+Hin Wei τῆσυμετέρας Α Α ἡμετέρας Pa 10
+Har Hin Wei ἀγαθοί scripsi ex UD cum Har ἀγαθὸν V
+ἀγαθότατοι ΑΡ ἀγαθώτατοι Η WesHer ἀγαθέ PaB Pr Hin Wei</note>
+<note type="footnote">12 συνήθους Β ἠξίουν VD ἠξίου U ἠξίους PaB pr Mor Hin
+Wei ἠξιοῦτε Har ἀξιοῦμεν ΑΡΗ ἀξιοῦσι Wes del Her ἐχαρίσα-
+σθε scripsi χαρίσασθαι VPaBADPH pr Har Mor Hin Wei χαρί-
+σθαι U χαρίσασθε Wes Her ἐν τούτω οὑν] καὶ ἐν τούτῳ AD
+PH Har Wes Her 13 ὑμετέρας om V σῆς PaB pr Mor Hin Wei</note>
+<note type="footnote">ἐπιδεῖξαι δυσωπήθητε scripsi ἐπιδεῖξαι δυσωπήθητι VU Hin
+Wei ἐπιδεῖξαι ἐπιαεῖξαι Β) δυσωπήθητι τάχιστα PaB pr Mor ἐπι-
+δεικνύμενοι ΑDΡΗ Har Wes Her 14 ἀγχίνουν ὄντα V sed ἀ
+oblit ἀγχινοοῦντά U καθυπερβολὴν Α</note>
+
+<pb n="43"/>
+καὶ σφόδρα συνετὸν ἐπαινῶ καὶ τιμῶ. πρέπει γὰρ τοὺς
+θείους ἄνδρας μὴ μόνον ἐπαινεῖν, ἀλλὰ καὶ τιμᾶν.</p>
+<p>78. Διδασκαλική. Μὴ νόμιζε τῶν συμβάντων σοι
+δεινῶν αἴτιον τὸ θεῖον γεγενῆσθαι πανταχοῦ γὰρ τὸ
+θεῖον ἐλεύθερον κακῶν ὑπάρχει. τὸ γὰρ τοῖς ἄλλοις <lb n="5"/>
+φεύγειν τὰ κακὰ παρακελευόμενον οὐκ ἂν αἴτιόν ποτέ
+τινι κακίας γένοιτο.</p>
+<p>79. Ἐλεγκτική. Οὐ λέληθας τόδε τὸ πρᾶγμα διαπρα-
+ξάμενος. πολλοὺς γὰρ ἔχεις ἐλέγχους κἂν ἀρνῇ, καὶ μά-
+λιστα τοὺς συνίστοράς σοι γεγονότας καὶ τῆς αὐτῆς σοι <lb n="10"/>
+κεκοινωνηκότας πράξεως. ὅθεν μηδὲ τὴν τιμωρίαν ἔλπιζε
+διαφεύξεσθαι.</p>
+<p>80. Διαβλητική. Πολλῶν μοι κακῶν αἴτιος γέγονεν
+ὁ δεῖνα φαῦλος ἄγαν ὢν τὸν τρόπον. ὑποδὺς γάρ με
+καθάπερ φίλος καὶ πολλὰ καλὰ ὑπ’ ἐμοῦ πεπονθὼς καὶ <lb n="15"/>
+μὴ δυνηθεὶς τοῖς ἴσοις ἀμείψασθαι διὰ τὸ καλῶν ἀπο-
+ρεῖν μεγίστοις περιέβαλε κακοῖς. φυλάττου γοῦν τοῦτον,
+μὴ καὶ σὺ τῶι ὁμοίων ὑπ’ αὐτοῦ πειραθῇς δεινῶν.</p>
+<p>81. Ἐπιτιμητική. Αἰδέσθητι λοιπὸν ἐφ’ οἶς ἁμαρ-
+τάνεις καὶ παῦσαι τοῦ πλημμελεῖν καὶ μὴ μελέτην ἁμαρ- <lb n="20"/>
+τημάτων τὸν σὸν βίον ποιοῦ. σοῦ γὰρ ἕνεκεν ἡμεῖς αἰ-
+σχυνόμεθα.</p>
+<note type="footnote">1 γε post σφόδρα Β pr Mor 2 θείους) τοιούτους ΑΡΗ Wes
+Her μὴ] οὐ UPaADB pr Har Mor καὶ ὧς θείους σεβάζεσθαι
+post τιμᾶν Β pr Mor 4 πανταχοῦ —5 ὑπάρχει cancell Hin
+πανταχῆ ΡΗ Wes Her 6 κακῶν ἐλεύθερον A ὑπάρχει κακῶν
+PH Wes Her 6 παρακελευσόμενον U ἄν ποτε αἴτιόν ΡΗ Wes
+Her τινὶ ποτὲ D Har 7 τινι om V κακίας om APH καὶ
+μάλα εἰκότως post γένοιτο PaB pr 8 ἐπιστολὴ ἐλεγκτική U
+λέληθε U 9 ἀρνῆται U μᾶλλον Har 10 σοι om D Har 11 μὴ
+δὲ VUAD οὐδὲ PaB pr Mor ἔλπιζε om PaB pr Mor 12 δια-
+φεύξασθαι VUA διαφεύξῃ PaB pr Mor 13 ἐπιστολὴ διαβλη-
+τική U 14 καὶ post δεῖνα V Hin 15 καλὰ] κακὰ U ὑπε-
+μοῦ Α 16 καλὸν U 17 περιέβαλλε BD pr Har φύλαττε Β
+pr Mor φυλάττων D Har γ’ οὖν U τοῦτον om PaB Mor
+18 ὑέ αὐτοῦ om UPaB ὑπαυτοῦ Α δεινῶν κακῶν U κακῶν D
+pr Har 19 ἐπιστολὴ ἐπιτιμητική U ἁμαρτάνοις Pa 20 με-
+λέτη V 21 τὸν σὸν’ τῶν σῶν Pa</note>
+
+<pb n="44"/>
+<p>82. Ἐρωτηματική. Πόλλην ζήτησιν εἰσενεγκάμενος
+περὶ τόδε τὸ κεφάλαιον καὶ μὴ κατειληφὼς αὐτοῦ τὴν
+εὕρεσιν δίκαιον ἡγησάμην διὰ τοῦδε τοῦ πρὸς ὑμᾶς ἐρω-
+τηματικοῦ ῥήματος τὴν ἐπιστήμην τοῦ ζητουμένου παρ’
+<lb n="5"/> ὑμῶν εὐτυχῆσαι. λοιπὸν ἀξιοῦντι μηδαμῶς ἀποκνήσητε
+παρασχέσθαι τὴν χάριν καὶ ἐπιστῆσαι τὸ ζητούμενον.</p>
+<p>83. ΙΙαραθαρρυντική. Ἄφοβος ἔσο τὸ παράπαν, ἔχον
+δὲ σεμνῶς πολιτευόμενος διὰ τὸ τὸ θεῖον ἔχειν εὐμενές.
+πανταχοῦ γὰρ τὸ θεῖον τῷ ὀρθῶς βιοῦντι παρίσταται.</p>
+<p><lb n="10"/></p></div>
+
+<div type="textpart" subtype="chapter" n="84"><p>Ἀναθετική. Δέδοκταί μοι τόδε τὸ πρᾶγμα δια-
+πράξασθαι; διὸ καὶ τὴν ἐμαυτοῦ βουλὴν ἀνατίθεμαί σοι.
+ὅθεν τὸ συμφέρον σκοπήσας ἐπίστειλον τὸ πρακτέον.
+ποθῶ γὰρ ἀεὶ παρὰ τῶν ἐμφρόνων δέχεσθαι γνώμας αἰ
+γὰρ ἄρισται τῶν φίλων συμβουλίαι καλλίστας ἔχουσι τὰς
+<lb n="15"/> εὐεργεσίας.</p>
+<p>85. Ἀποφαντική. Τὸν ἐμὸν οἰκέτην ἐβουλευσάμην
+<note type="footnote">1 ἐπιτολὴ ἐρωτιματική U 2 καὶ om VU Hin 3 τοῦ
+τῶν PH ἡμῶν VUPa Hin Wei ἡμᾶς Β pr Har Mor ἐρωτηματι-
+κοῦ ῥήματος] ἐρωτήματος PaB pr Mor 4 τοῦ ζητουμένου] τὴν
+ζητουμένην ΡΗ παρυμῶν A 5 ἡμῶν UB ἡμῖν Pa ὑμῖν D,
+sed ων supra ἱν, Har ἀξιοῦντος Pa ἀποκνήσατε VH Hin Wei
+ἀποκνήσῃ PaB pr Mor ἀποκνήσετε Har 6 τῷ ζητουμένῳ AD
+ΡΗ Har Wes Her τοῦ ζητουμένου τὴν λύσιν καὶ τὴν ἀληθῆ σα-
+φήνεταν PaB pr Mor 7 . . . . . . . ρυντική V παραθαρρυτική ΡΗ</note>
+<note type="footnote">ἔσω U ἔστω Hin τὸ παράπαν, ἔχου δὲ] τοπαράπαν, ἔχου δὲ
+Pa τοπαράπαν D τὸ παράπαν Har καὶ μηδένα τοπαράπαν εὐλα-
+βοῦ APH Wes Her καὶ μηδένα τοπαράπαν, ἔχου δὲ Mor 8 τὸ
+om VAB pr Mor εὐμερές U 9 πανταχοῦ —παρίσταται om
+PaB pr Mor τῶν ὀρθῶς βιούντων Α τοῖς εὐσεβῶς βιοῦσι
+PH Wes Her τῷ ὀρθῶς βιοῦντι D Har προίσταται VU Hin Wei</note>
+<note type="footnote">10 ἐπιστολὴ ἀναθετική U . . . θετική V ἀναθεματική ΡΗ
+11 ἀνατίθημί PaBD pr Har Mor Wes Her 12 συμβουλῆς ante
+ὅθεν D καὶ post ὅθεν D Har Mor ἐπίστειλε Β μοι post ἐπί-
+στειλον ΡΗ Wes Her τὸ(2)] „fort. τί'' Wes πρακταὶ ον Pa
+13 . . . θῶ V φίλων post ἐμφρόνων Pa 14 ἄριστοι PaB
+συμβουλαὶ VU Hin Wei cf. p. 29, 5. 9. 32, 12 16 ἐπιστολὴ
+ἀποφαντικὴ U . . . . . ντικ.</note>
+
+<pb n="45"/>
+τιμωρήσασθαι δι’ ἢν μοι κατεσκεύασεν ἐπιβουλήν. ὅθεν
+μή μοι παρακλήσεις προσάγειν περὶ αὐτοῦ πειρῶ. ἀδύ-
+νατον γάρ ἐστι μὴ τὴν ἐμαυτοῦ βουλὴν εἰς πέρας ἄξειν
+καὶ τοῦτον πάντη τε καὶ πάντως κολάσαι.</p>
+<p>86. Σκωπτική. Κίλικα μέν σε πρὸς ἀπάντων ἀκούω
+τυγχάνειν τῷ γένει, Ἰνδὸν δὲ σκοπῶν ἐφευρίσκω, κα-
+θάκερ αὐτὸς ὁ μελάντατος τοῦ σώματος κέκραγε χρώς.</p>
+<p>87. Μετριαστική . . .</p>
+<p>88. Αὶνιγματική . . .</p>
+<note type="footnote">1 διήν Α ἐπιστολήν Β pr 2 ἀγειν — πειρῶ oblit V
+3 ἑαυτοῦ PaPH ἔριν Pa ἥξειν D Har 4 πάντη τε καὶ πάν-
+τως] παντελῶς ΡΗ Wes Her πάντη] πανία pr κολάσασθαι V
+Hin 5 ἐπιστολὴ σκωπτική U πρὸς ἅπαν U προσάπαν PaB pr</note>
+<note type="footnote">6 τυγχάνειν om ΡαΒ pr Mor τῷ γένει om PH τὸ γένος D
+Har ἰδὸν U σκοπὸν UPaB, sed in hoc ὁ in ῶ corr, ΡΗ
+7 μελέντατος VU μελάντερος Pa μελανέστατος Α ὁ τοῦ μελάν-
+τατος σώματος Β pr Mor τος κέκραγε χρώς oblit V κέκραγεν Α</note>
+<note type="footnote">χρως. κέκραγε Β 8 Μετριαστική . . . . . . om VUD Har με-
+τριασ in marg A</note>
+<note type="footnote">Τῆς ὀργῆς οὔπω με (μοι PH Wei corr Wes Her) ἀφῆκας τὸν
+σόν (num τῆς σῆς? cf. ad [Lib.] ep. ad Basil. 7 (XI 581, 10 sqq).
+Ἀντίσθενες Teoph. Simoc ep. 28, del Her), ἀλλ’· ἔτι χαλεπαίνεις
+ημῖν καὶ την ἀνίαν κρύπτεις προσηνῶν ῥημάτων προσχήματι ωσ-
+περ οἱ έν αἰθάλῃ σπινθῆρα πυρὸς ταμιεύσαντες ταμιεύοντες coni
+Her). ἐκκάθαιρε (ἐκκάθαρε PH) λοιπὸν τῆς σῆς καρδίας τὴν λύ-
+χην (Τῆς ὀργῆς — λύπην = Theoph. Simoc. ep. 28) καὶ τὸν σὸν
+μὴ θέλε θλίβεσθαι PH Wes Her</note>
+<note type="footnote">Ταπεινὸν εἶναί με καὶ ἄσημον οἴδα ἐξ ἀσήμων (ἐξασημων Pa)
+καὶ ἀπαιδεύτων (ἀπαίδευτον Pa) καὶ οἰκτρότατον καθ’ ὑπερβο-
+λὴν περί τε βίον καὶ λόγον καὶ οὐκ ἐχρῆν μοι γράφειν τῇ δῇ
+διαθέσει τὸ σύνολον. ἀλλ’ ἐπειδὴ νικῶμαι τῷ πρὸς σὲ πόθω, γρα-
+φων παρακαλῶ τοῦ τῆς προπετείας ἐγκλήματος ἀνήνασθαί με Pa
+τκπεινὸς εἷναι (χρὴ Mor) καὶ ἄσημος ἐξ ἀσήμων καὶ ἀπαίδευτος
+B pr Mor</note>
+<note type="footnote">9 ἔστι δὲ (δὲ om BD Har) τὸ λεγόμενοτ περὶ γυναικὸς (τινος loco
+γυναικὸς D Har) υπάνδρου. λέγει οὖν· φυλάττου φυλάττον (φυλάττον D
+om D μὴ τὴν αλλοτρίαν γυναῖκα (γυναὶκαν Β) ἐγκύμονα ποιη
+σας δίκῃ περιπέσῃς (oblit V). οἱ γὰρ ἧι· ἀλλοτρίαν γῆν γεωρ
+γοῦντες δίκαις οὐ μικραῖς περιπίπτουσιν post αίνιγματική libri
+edd sed camcell Wei ἔστι—οὖν cancell Hin καὶ μαλα εἰκοτως
+post περιπίπτουσιν PaB pr Mor. Scriptum fuisse censendum est
+Φυλάττου μὴ την ἀλλοτρίαν ἀρόσας δίκῃ περιπέσῃς</note>
+
+<pb n="46"/>
+<p>89. Ὑπομνηστική. Παραγενόμενος ἐν τῷδε τῷ τόπῳ
+καὶ ἀνερευνήσας τὸν τιμιώτατον ἄνδρα τὸν δεῖνα λέξον
+ἐξ ἐμοῦ τῷδε τάδε.</p>
+<p>90. Λυπητική. Σφόδρα καθ’ ὑπερβολὴν λελύπηκας
+<lb n="5"/> τόδε τὸ πρᾶγμα διαπραξάμενος. ὅθεν ἰσχυρῶς ἄχθομαι
+πρὸς σὲ καὶ δυσίατόν τινα λυποῦμαι λύπην. αἱ γὰρ ἐκ
+φίλων εἰς φίλους γινόμεναι λῦπαι δυσθεράπευτοι λίαν
+τυγχάνουσι καὶ μείζους τῶν ἐχθρῶν ἔχουσι τὰς ἐπηρείας.</p>
+<p>91. Ἐρωτική. Ἐρῶ, ἐρῶ, νὴ τοὺς θεούς, τῆς σῆς
+<lb n="10"/> εὐπρεποῦς τε καὶ ἐρωτικῆς μορφῆς καὶ ἐρῶν οὐκ αἰσχύ-
+νομαι. τὸ γὰρ εὐπρεποῦς ἐρᾶν οὐκ αἰσχρόν. εἰ δέ γε καὶ
+ψέξειέ τις ὅλως ὡς ἐρῶντα, πάλιν ὧς καλῆς ἐφιέμενον
+ἐπαινέσειεν.</p>
+<p>92. Μικτή. Οἶδα μὲν ὡς εὐσεβῶς ζῆς καὶ σεμνῶς πο-
+<note type="footnote">1 ἀπομνηστικὴ Har 2 ἐρευνήσας FHin τὸν δεῖνα om PaB
+pr Mor 3 ἐξεΗοῦ ΑΒ τόδε,δε om PaB pr Mor τάδε oblit V</note>
+<note type="footnote">4 λυπητική in lit ἁ καθυπερβολὴν Α ἡμᾶς ante λελύπηκας
+D Har Her με post λελύπηκας Hin Wei Β καὶ δυσίατόν oblit V</note>
+<note type="footnote">λελύπημαι D Har αἰ — 8 ἐπηρείας citat Maximus Conf. loc.
+comm. serm. 6, 550 ed. Comb. (tom. 91 col. 764 Migne), e quo
+hauserunt Michael. Apostol. prov. t. I 671) et Antonius Meliss.
+ed. Migrne t. 136 col. 853 7 φιλίας Ρ λῦπαι om ΡΗ λίαν
+om FHin 8 τυγχάνουσιν Α ἢ ante τῶν inserendum videtur
+τῶν om V ἐξ ante ἐχθρῶν Hin Wei ρῶν ἔχουσι τὰς ἐπηρείας
+oblit V 9 ἐρῶ ἐρῶν ἁ νὴ e νῦν corr D τοὺς θεούς] τὴν
+τὸ
+ἀλήθειαν Β pr Mor τὴν θέμιν P-ffWesHer 11 τοῦ PaB τοῦ
+ἐς
+pr Mor εὐπρε ποὺς Pa εὐπρεπῶν ΑDΡΗ Her ἐρᾶν oblit V ἀν-
+aιοχο1ομαι
+δρὸς Pa αἰσχρὸν Pa 11 γε om Β pr καὶ om Mor τὸ Β pr
+12 ψέξοιε D Har ὅλως om PaB prMor ὧς(1) om D Har πά-
+λαι V καλοῦ PaB pr Mor 13 ἐπαινέσειε D pr ἐπαινέσει coni
+Her ἄν post ἐπαινέσειεν inser Hin Wei 14 ἐπιστολὴ μικτὴ·
+μικτὴ λέγεται διὰ τὸ ἐκ διαφόρων χαρακτήρων συνεστάναι Ο
+οἶδα — p. 47, 5 ἁρμόζει] ἡ (in lac om Pa) μὲν διαγωγή σου
+ἀρίστη τέ ἐστι καὶ φιλοσόφοις μάλιστα πρέπουσα, σωφρόνως
+γὰρ καὶ ἀμέμπτως ζῆν σπουδάζεις ὑποδέχῃ (ἀποδέχῃ Β) τε
+ξένους καὶ δεομένοις ἐπικουρεῖς καὶ ὀρθὰς τὰς ἀποφάσεις τοῖς
+κρινομένοις ἐκφέρεις (ἐκφέροις PaB) ἀδεκάστους δίκας ποιώ·-
+μένος, ἐν δέ τοῦτο μόνον πταίεις, ὅτι γλῶσσαν ἀχαλίνωτον
+ἔχων καὶ πολυλογίαις χρώμενος ἔστιν ὅτε γλωσσαλγεἷς, καὶ τοὺς
+φίλους κακόν τι ποιεῖς κακύν τι ποιεῖς om Pa). καὶ τοῦτο τοῦ-
+τω Β τούτω Pa) τῷ σῷ οὐκ ἔοικε βίῳ. διό σοι παραινῶ τοῦ
+τοιούτου τὸ λοιπὸν ἀπέχεσθαι τρόπου, ἵνα τελείως κοσμηθῇς καὶ
+κοσμήσῃς τὸ τῆς φιλοσοφίας ἐπιτήδευμα. γράφειν δέ μοι καὶ περὶ
+ὧν σοι δοκεῖ μὴ παραιτοῦ, ἐπεὶ κἀγώ. εἰ συμβαίη μοί τινος τῶν
+παρὰ σοὶ χρεία χρείαν Β pr), ἀνυποστόλως γνωρίζω πεπεισμένος
+ὅτι με θεραπεύειν ποθεὶς, ὧς ἐγὼ σέ. καὶ γὰρ πολλάς μοι χάρι-
+τας ἐποίησας, ὑπὲρ ὧν σοι πλειστάκις πλεῖστά σοι Β Mor) εὐχα-
+ριστῶ. ἐρρωμένος πολυχρόνιος πολυχρονίως Pa) διαφυλαχθείης
+παντὸς ἀπευκταίου ἐλυτρούμενος καὶ τῶν καταθυμίων ἀπολαύ-
+ων (ἐπαπολαύων Β pr Mor) praemisit Pa οἴδαμεν Α οἴδαμεν
+Pa ὡσευσεβῶς Α ζῆς om VU σεμνὸς Pa</note>
+
+<pb n="47"/>
+λιτεύῃ καὶ τῇ ἀνεπιλήπτου τε καὶ ἁγνῆς πολιτείας ἀρε-
+τῇ τὸ περιβόητον αὐτὸ τῆς φιλοσοφίας κοσμεῖς ὄνομα·
+καθ’ ἔν δὲ τοῦτο μόνον σφάλλῃ, καθὸ τοὺς φίλους κα-
+κῶς λέγεις, ὅπερ ἀποθέσθαι σε χρή. διαβολὴ γὰρ φιλο-
+σόφοις οὐχ ἁρμόζει. <lb n="5"/></p>
+<note type="footnote">1 τῆς VU Hin Wei τῆς D Wes Her τοι τῆς Har ἀνεπιλή-
+πτω τε καὶ ἁγνὴ πολιτεία ἀρετῆς τε τῶ περιβοήτω Pa τε om VU
+Hin Wei ἀρετῆς UD Har ἀρετὴ Α 2 τῆς] τὸ πᾶν Pa φ . .
+. . . . . . . . κοσμεῖς V κοσμεῖν ΡΗ 3 σφάλη V σφάλλεις Pa
+καθ’ ὃ U καθὲν Α 4 σε om PH τοῖς ante φιλοσόφοις Har
+φιλοσοφία Pa φιλοσόφοις γὰρ φιλοσοφία ΡΗ ἁρ . . . . . V
+ἐρρωμένος μοι καὶ πολυχρόνιος διαφυλαχθείης παντὸς ἀπευ-
+κταίου ἐκλυτρούμενος καὶ τῶν καταθυμίων ἀπολαύων post ἁρμό-
+ξει D Har</note>
+</div>
+</div>
+</body></text></TEI>
