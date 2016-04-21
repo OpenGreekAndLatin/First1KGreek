@@ -1,0 +1,2014 @@
+<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" type="xml"?>
+ 
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="work" n="PB">Prometheus Bound</title>
+        <title type="sub">Machine readable text</title>
+        <author n="Aesch.">Aeschylus</author>
+        <editor role="editor" n="Smyth">Arthur Sidgwick</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder n="org:Tufts">Tufts University</funder>
+      </titleStmt>
+      <extent>About 70Kb</extent>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>Aeschyli Tragoediae : cum fabularum deperditarum fragmentis,
+                    poetae vita et operum catalogo / recensuit Arturus Sidgwick.</title>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1902</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)"
+          replacementPattern="#xpath(/tei:TEI.2/tei:text/tei:body/tei:l[=''])">
+          <p>This pointer pattern extracts lines</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change>
+        <date>13-Dec-2015</date>
+         
+          <name>Gregory Crane</name>
+           tagging 
+         
+         
+        In c. 2005, we had some money but not enough to do a full rekeying. We asked http://www.digitaldividedata.com/ to start with our digital version of Smyth's Aeschylus and systematically set  to turn it into Sidgwick's Oxford Classical Text edition. Doubtless they will have missed places but the text is open and we hope that people will read this edition carefully against various digital exemplars of this public domain edition and catch such slips.
+     
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="grc">
+    <body>
+      <pb/>
+      <head>
+        <foreign xml:lang="grc">Προμηθευς δεσμωτης</foreign>
+      </head>
+      <pb/>
+      <head>
+        <foreign xml:lang="grc">Αισχυλου προμηθευς δεσμωτης</foreign>
+      </head>
+      <head>
+        <foreign xml:lang="grc">Υποθεσις</foreign>
+      </head>
+      <p>
+        <foreign xml:lang="grc">Προμηθέως ἐν Σκυθίᾳ δεδεμένου διὰ τὸ κεκλοφέναι τὸ πῦρ πυνθάνεται</foreign>
+        <foreign xml:lang="grc">Ἰὼ πλανωμένη, κατ᾽ Αἴγυπτον γενομένη ὅτι ἐκ τῆς ἐπαφήσεως τοῦ Διὸς</foreign>
+        <foreign xml:lang="grc">τέξεται τὸν Ἔπαφον. Ἑρμῆς τε παράγεται ἀπειλῶν αὐτῷ κεραυνωθή-</foreign>
+        <foreign xml:lang="grc">σεσθαι, ἐὰν μὴ εἴπῃ τὰ μέλλοντα ἔσεσθαι τῷ Διί, καὶ τέλος βροντῆς</foreign>
+        <foreign xml:lang="grc">5??? γενομένης ἀφανὴς γίνεται ὁ Προμηθεύς.</foreign>
+      </p>
+      <p>
+        <foreign xml:lang="grc">Κεῖται ἡ μυθοποιία ἐν παρεκβάσει παρὰ Σοφοκλεῖ ἐν Κόλχοις,<note place="unspecified">αργυμεντυμ] 6 <foreign xml:lang="grc">Κόλχοις</foreign>] <foreign xml:lang="grc">Κολχίσι</foreign> βρυνξκ</note> παρὰ</foreign>
+        <foreign xml:lang="grc">δ᾽ Εὐριπίδῃ ὅλως οὐ κεῖται. ἡ μὲν σκηνὴ τοῦ δράματος ὑπόκειται ἐν</foreign>
+        <foreign xml:lang="grc">Σκυθίᾳ ἐπὶ τὸ Καυκάσιον ὄρος: ὁ δὲ χορὸς συνέστηκεν ἐξ Ὠκεανίδων</foreign>
+        <foreign xml:lang="grc">νυμφῶν. τὸ δὲ κεφάλαιον αὐτοῦ ἐστι Προμηθέως δέσις.</foreign>
+      </p>
+      <div type="textpart" subtype="castlist">
+        <head>
+          <foreign xml:lang="grc">Τὰ τοῦ δράματος πρόσωπα:</foreign>
+        </head>
+        <p>
+          <foreign xml:lang="grc">Κράτος καὶ Βία</foreign>
+          <foreign xml:lang="grc">Ἥφαιστος</foreign>
+          <foreign xml:lang="grc">Προμηθεύς</foreign>
+          <foreign xml:lang="grc">χορὸς Ὠκεανίδων</foreign>
+          <foreign xml:lang="grc">Ὠκεανός</foreign>
+          <foreign xml:lang="grc">Ἰὼ Ἰνάχου</foreign>
+          <foreign xml:lang="grc">Ἑρμῆς</foreign>
+          <foreign xml:lang="grc">[Γῆ</foreign>
+          <foreign xml:lang="grc">Ἡρακλῆς<note place="unspecified">δραματις περσοναε] <foreign xml:lang="grc">Γῆ</foreign> ετ <foreign xml:lang="grc">Ἡρακλῆς</foreign> εχ <foreign xml:lang="grc">Προμηθέως Λυομένου</foreign> περσονις ερρορε ηυξ τρανσλατι</note>]</foreign>
+        </p>
+      </div>
+      <div type="textpart" subtype="episode">
+        <milestone ed="p" n="1" unit="card"/>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="1">Χθονὸς μὲν ἐς τηλουρὸν ἥκομεν πέδον,</l>
+          <l n="2">Σκύθην ἐς οἶμον, ἄβατον<note place="unspecified"><foreign xml:lang="grc">ἄβατον</foreign> schol. Rav. Ar. Ran. 814 et recc.: <foreign xml:lang="grc">ἄβατόν τ᾽</foreign> M: <foreign xml:lang="grc">ἄβροτον</foreign> (e Suida et schol. Hom. Il. xiv. 78) Porson</note> εἰς ἐρημίαν.</l>
+          <l n="3">Ἥφαιστε, σοὶ δὲ χρὴ μέλειν ἐπιστολὰς</l>
+          <l n="4">ἅς σοι πατὴρ ἐφεῖτο, τόνδε πρὸς πέτραις</l>
+          <l n="5">ὑψηλοκρήμνοις τὸν λεωργὸν ὀχμάσαι</l>
+          <l n="6">ἀδαμαντίνων δεσμῶν ἐν ἀρρήκτοις πέδαις.<note place="unspecified"><foreign xml:lang="grc">ἀδαμαντίνων δεσμῶν ... πέδαις</foreign> (e schol. Ar. Ran. 814) Canter: <foreign xml:lang="grc">ἀδαμαντίναις πέδῃσιν ... πέτραις</foreign> M</note></l>
+          <l n="7">τὸ σὸν γὰρ ἄνθος, παντέχνου πυρὸς σέλας,</l>
+          <l n="8">θνητοῖσι κλέψας ὤπασεν: τοιᾶσδέ τοι</l>
+          <l n="9">ἁμαρτίας σφε δεῖ θεοῖς δοῦναι δίκην,</l>
+          <l n="10">ὡς ἂν διδαχθῇ τὴν Διὸς τυραννίδα</l>
+          <l n="11">στέργειν, φιλανθρώπου δὲ παύεσθαι τρόπου.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="12">Κράτος Βία τε, σφῷν μὲν ἐντολὴ Διὸς</l>
+          <l n="13">ἔχει τέλος δὴ κοὐδὲν ἐμποδὼν ἔτι:</l>
+          <l n="14">ἐγὼ δ᾽ ἄτολμός εἰμι συγγενῆ θεὸν</l>
+          <l n="15">δῆσαι βίᾳ φάραγγι πρὸς<note place="unspecified"><foreign xml:lang="grc">πρὸς</foreign>] <foreign xml:lang="grc">τῇ</foreign> (<foreign xml:lang="grc">προς</foreign> supra scr.) M</note> δυσχειμέρῳ.</l>
+          <l n="16">πάντως δ᾽ ἀνάγκη τῶνδέ μοι τόλμαν σχεθεῖν:</l>
+          <l n="17">ἐξωριάζειν<note place="unspecified"><foreign xml:lang="grc">ἐξωριάζειν</foreign>] <foreign xml:lang="grc">εὐωριάζειν</foreign> e Phot. et Hesych. Porson</note> γὰρ πατρὸς λόγους βαρύ.</l>
+          <l n="18"><milestone ed="P" unit="para"/>τῆς ὀρθοβούλου Θέμιδος αἰπυμῆτα παῖ,</l>
+          <l n="19">ἄκοντά σ᾽ ἄκων δυσλύτοις χαλκεύμασι</l>
+          <l n="20">προσπασσαλεύσω τῷδ᾽ ἀπανθρώπῳ πάγῳ<note place="unspecified"><foreign xml:lang="grc">πάγῳ</foreign> recc.: <foreign xml:lang="grc">τόπῳ</foreign> M</note></l>
+          <l n="21">ἵν᾽ οὔτε φωνὴν οὔτε του μορφὴν βροτῶν</l>
+          <l n="22">ὄψει, σταθευτὸς δ᾽ ἡλίου φοίβῃ φλογὶ</l>
+          <l n="23">χροιᾶς ἀμείψεις ἄνθος: ἀσμένῳ δέ σοι</l>
+          <l n="24">ἡ ποικιλείμων νὺξ ἀποκρύψει φάος,</l>
+          <l n="25">πάχνην θ᾽ ἑῴαν ἥλιος σκεδᾷ πάλιν:</l>
+          <l n="26">αἰεὶ<note place="unspecified"><foreign xml:lang="grc">αἰεὶ</foreign> G: <foreign xml:lang="grc">ἀεὶ</foreign> cett. codd.</note> δὲ τοῦ παρόντος ἀχθηδὼν κακοῦ</l>
+          <l n="27">τρύσει σ᾽: ὁ λωφήσων γὰρ οὐ πέφυκέ πω.</l>
+          <l n="28"><milestone ed="P" unit="para"/>τοιαῦτ᾽ ἐπηύρου<note place="unspecified"><foreign xml:lang="grc">ἐπηύρου</foreign> Elmsley: <foreign xml:lang="grc">ἐπηύρω</foreign> M</note> τοῦ φιλανθρώπου τρόπου.</l>
+          <l n="29">θεὸς θεῶν γὰρ οὐχ ὑποπτήσσων χόλον</l>
+          <l n="30">βροτοῖσι τιμὰς ὤπασας πέρα δίκης.</l>
+          <l n="31">ἀνθ᾽ ὧν ἀτερπῆ τήνδε φρουρήσεις πέτραν</l>
+          <l n="32">ὀρθοστάδην, ἄυπνος, οὐ κάμπτων γόνυ:</l>
+          <l n="33">πολλοὺς δ᾽ ὀδυρμοὺς καὶ γόους ἀνωφελεῖς</l>
+          <l n="34">φθέγξει: Διὸς γὰρ δυσπαραίτητοι φρένες:</l>
+          <l n="35">ἅπας δὲ τραχὺς ὅστις ἂν νέον κρατῇ.</l>
+          <milestone ed="p" n="36" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="36">εἶεν, τί μέλλεις καὶ κατοικτίζει μάτην;</l>
+          <l n="37">τί τὸν θεοῖς ἔχθιστον οὐ στυγεῖς θεόν,</l>
+          <l n="38">ὅστις τὸ σὸν θνητοῖσι προὔδωκεν γέρας;</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="39">τὸ συγγενές τοι δεινὸν ἥ θ᾽ ὁμιλία.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="40">σύμφημ᾽: ἀνηκουστεῖν δὲ τῶν πατρὸς λόγων<note place="unspecified"><foreign xml:lang="grc">Κρ.</foreign> add. m<hi rend="sup">1</hi></note></l>
+          <l n="41">οἷόν τε πῶς; οὐ τοῦτο δειμαίνεις πλέον;</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="42">αἰεί γε<note place="unspecified"><foreign xml:lang="grc">αἰεί γε</foreign> rec.: <foreign xml:lang="grc">αἰεί τε</foreign> M</note> δὴ νηλὴς σὺ καὶ θράσους πλέως.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="43">ἄκος γὰρ οὐδὲν τόνδε θρηνεῖσθαι: σὺ δὲ</l>
+          <l n="44">τὰ μηδὲν ὠφελοῦντα μὴ πόνει μάτην.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="45">ὦ πολλὰ μισηθεῖσα χειρωναξία.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="46">τί νιν στυγεῖς; πόνων γὰρ ὡς ἁπλῷ λόγῳ</l>
+          <l n="47">τῶν νῦν παρόντων οὐδὲν αἰτία τέχνη.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="48">ἔμπας τις αὐτὴν ἄλλος ὤφελεν λαχεῖν.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="49">ἅπαντ᾽ ἐπαχθῆ<note place="unspecified"><foreign xml:lang="grc">ἐπαχθῆ</foreign> Stanley: <foreign xml:lang="grc">ἐπράχθη</foreign> codd.</note> πλὴν θεοῖσι κοιρανεῖν.</l>
+          <l n="50">ἐλεύθερος γὰρ οὔτις ἐστὶ πλὴν Διός.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="51">ἔγνωκα τοῖσδε κοὐδὲν ἀντειπεῖν ἔχω.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="52">οὔκουν ἐπείξει τῷδε δεσμὰ περιβαλεῖν,</l>
+          <l n="53">ὡς μή σ᾽ ἐλινύοντα προσδερχθῇ πατήρ;</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="54">καὶ δὴ πρόχειρα ψάλια<note place="unspecified"><foreign xml:lang="grc">ψέλια</foreign> recc.</note> δέρκεσθαι πάρα.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="55">βαλών<note place="unspecified"><foreign xml:lang="grc">βαλών</foreign> Stanley: <foreign xml:lang="grc">λαβών</foreign> codd.</note> νιν ἀμφὶ χερσὶν ἐγκρατεῖ σθένει</l>
+          <l n="56">ῥαιστῆρι θεῖνε, πασσάλευε πρὸς πέτραις.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="57">περαίνεται δὴ κοὐ ματᾷ τοὔργον τόδε.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="58">ἄρασσε μᾶλλον, σφίγγε, μηδαμῇ χάλα.</l>
+          <l n="59">δεινὸς γὰρ εὑρεῖν κἀξ ἀμηχάνων πόρον.<note place="unspecified"><foreign xml:lang="grc">πόρον</foreign> M recc.: <foreign xml:lang="grc">πόρους</foreign> (e schol. Ar. Eq. 756) Porson</note></l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="60">ἄραρεν ἥδε γ᾽ ὠλένη δυσεκλύτως.</l>
+          <milestone ed="p" n="61" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="61">καὶ τήνδε νῦν πόρπασον ἀσφαλῶς, ἵνα</l>
+          <l n="62">μάθῃ σοφιστὴς ὢν Διὸς νωθέστερος.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="63">πλὴν τοῦδ᾽ ἂν οὐδεὶς ἐνδίκως μέμψαιτό μοι.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="64">ἀδαμαντίνου νῦν σφηνὸς αὐθάδη γνάθον</l>
+          <l n="65">στέρνων διαμπὰξ πασσάλευ᾽ ἐρρωμένως.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="66">αἰαῖ, Προμηθεῦ, σῶν ὑπερστένω<note place="unspecified"><foreign xml:lang="grc">ὑποστένω</foreign> mutatum in <foreign xml:lang="grc">ὑπερστένω</foreign> M</note> πόνων.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="67">σὺ δ᾽ αὖ κατοκνεῖς τῶν Διός τ᾽ ἐχθρῶν ὕπερ</l>
+          <l n="68">στένεις; ὅπως μὴ σαυτὸν οἰκτιεῖς ποτε.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="69">ὁρᾷς θέαμα δυσθέατον ὄμμασιν.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="70">ὁρῶ κυροῦντα τόνδε τῶν ἐπαξίων.<note place="unspecified"><foreign xml:lang="grc">τωνδε, ό</foreign> supra scr. M</note></l>
+          <l n="71">ἀλλ᾽ ἀμφὶ πλευραῖς μασχαλιστῆρας βάλε.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="72">δρᾶν ταῦτ᾽ ἀνάγκη, μηδὲν ἐγκέλευ᾽ ἄγαν.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="73">ἦ μὴν κελεύσω κἀπιθωύξω γε πρός.</l>
+          <l n="74">χώρει κάτω, σκέλη δὲ κίρκωσον βίᾳ.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="75">καὶ δὴ πέπρακται τοὔργον οὐ μακρῷ πόνῳ.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="76">ἐρρωμένως νῦν θεῖνε διατόρους πέδας:</l>
+          <l n="77">ὡς οὑπιτιμητής γε<note place="unspecified"><foreign xml:lang="grc">γε</foreign> recc. m<hi rend="sup">1</hi>: <foreign xml:lang="grc">σε</foreign> M</note> τῶν ἔργων βαρύς.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="78">ὅμοια μορφῇ γλῶσσά σου γηρύεται.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="79">σὺ μαλθακίζου, τὴν δ᾽ ἐμὴν αὐθαδίαν</l>
+          <l n="80">ὀργῆς τε τραχυτῆτα μὴ ᾽πίπλησσέ μοι.</l>
+        </sp>
+        <sp>
+          <speaker>Ἥφαιστος</speaker>
+          <l n="81">στείχωμεν: ὡς κώλοισιν ἀμφίβληστρ᾽ ἔχει.</l>
+        </sp>
+        <sp>
+          <speaker>Κράτος</speaker>
+          <l n="82">ἐνταῦθα νῦν ὕβριζε καὶ θεῶν γέρα</l>
+          <l n="83">συλῶν ἐφημέροισι προστίθει. τί σοι</l>
+          <l n="84">οἷοί τε θνητοὶ τῶνδ᾽ ἀπαντλῆσαι πόνων;</l>
+          <l n="85">ψευδωνύμως σε δαίμονες Προμηθέα</l>
+          <l n="86">καλοῦσιν: αὐτὸν γάρ σε δεῖ προμηθέως,</l>
+          <l n="87">ὅτῳ τρόπῳ τῆσδ᾽ ἐκκυλισθήσει τέχνης.<note place="unspecified"><foreign xml:lang="grc">τέχνης</foreign> M: <foreign xml:lang="grc">τύχης</foreign> recc. aliquot</note></l>
+          <milestone ed="p" n="88" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="88">ὦ δῖος<note place="unspecified"><foreign xml:lang="grc">δῖος</foreign> Victorius: <foreign xml:lang="grc">διὸς</foreign> codd.</note> αἰθὴρ καὶ ταχύπτεροι πνοαί,</l>
+          <l n="89">ποταμῶν τε πηγαί, ποντίων τε κυμάτων</l>
+          <l n="90">ἀνήριθμον γέλασμα, παμμῆτόρ<note place="unspecified"><foreign xml:lang="grc">παμμῆτόρ</foreign> recc.: <foreign xml:lang="grc">παμμήτωρ</foreign> M</note> τε γῆ,</l>
+          <l n="91">καὶ τὸν πανόπτην κύκλον ἡλίου καλῶ:</l>
+          <l n="92">ἴδεσθέ μ᾽ οἷα πρὸς θεῶν πάσχω θεός.</l>
+          <l n="93">δέρχθηθ᾽ οἵαις αἰκίαισιν</l>
+          <l n="94">διακναιόμενος τὸν μυριετῆ</l>
+        </sp>
+        <milestone ed="p" n="95" unit="card"/>
+        <div type="textpart" subtype="anapests">
+          <sp n="*promhqeu/s">
+            <speaker>Προμηθεύς</speaker>
+            <l n="95">χρόνον ἀθλεύσω.</l>
+            <l n="96">τοιόνδ᾽ ὁ νέος ταγὸς μακάρων</l>
+            <l n="97">ἐξηῦρ᾽ ἐπ᾽ ἐμοὶ δεσμὸν ἀεικῆ.</l>
+            <l n="98">φεῦ φεῦ, τὸ παρὸν τό τ᾽ ἐπερχόμενον</l>
+            <l n="99">πῆμα στενάχω, πῇ<note place="unspecified"><foreign xml:lang="grc">πῇ</foreign> Turnebus: <foreign xml:lang="grc">ποῖ</foreign> codd.</note> ποτε μόχθων</l>
+            <l n="100">χρὴ τέρματα τῶνδ᾽ ἐπιτεῖλαι.</l>
+            <milestone ed="p" n="101" unit="card"/>
+            <l n="101">καίτοι τί φημι; πάντα προυξεπίσταμαι</l>
+            <l n="102">σκεθρῶς τὰ μέλλοντ᾽, οὐδέ μοι ποταίνιον</l>
+            <l n="103">πῆμ᾽ οὐδὲν ἥξει. τὴν πεπρωμένην δὲ χρὴ</l>
+            <l n="104">αἶσαν φέρειν ὡς ῥᾷστα, γιγνώσκονθ᾽ ὅτι</l>
+            <l n="105">τὸ τῆς ἀνάγκης ἔστ᾽ ἀδήριτον σθένος.</l>
+            <l n="106">ἀλλ᾽ οὔτε σιγᾶν οὔτε μὴ σιγᾶν τύχας</l>
+            <l n="107">οἷόν τέ μοι τάσδ᾽ ἐστί. θνητοῖς γὰρ γέρα</l>
+            <l n="108">πορὼν ἀνάγκαις ταῖσδ᾽ ἐνέζευγμαι τάλας:</l>
+            <l n="109">ναρθηκοπλήρωτον δὲ θηρῶμαι πυρὸς</l>
+            <l n="110">πηγὴν κλοπαίαν, ἣ διδάσκαλος τέχνης</l>
+            <l n="111">πάσης βροτοῖς πέφηνε καὶ μέγας πόρος.</l>
+            <l n="112">τοιῶνδε<note place="unspecified"><foreign xml:lang="grc">τοιῶνδε</foreign> recc.: <foreign xml:lang="grc">τοιάσδε</foreign> M</note> ποινὰς ἀμπλακημάτων τίνω</l>
+            <l n="113">ὑπαιθρίοις<note place="unspecified"><foreign xml:lang="grc">ὑπαιθρίοις</foreign> Blomfield: <foreign xml:lang="grc">ὑπαίθριος</foreign> codd.</note> δεσμοῖς πεπασσαλευμένος.<note place="unspecified"><foreign xml:lang="grc">δεσμοῖς πεπασσαλευμένος</foreign> C. G. Haupt: <foreign xml:lang="grc">δεσμοῖσι πασσαλευμένος</foreign> M recc. aliquot: <foreign xml:lang="grc">δεσμοῖσι πασσαλευτός</foreign> recc. plerique</note></l>
+          </sp>
+          <milestone ed="p" n="114" unit="card"/>
+        </div>
+        <div type="textpart" subtype="lyric">
+          <sp n="*promhqeu/s">
+            <speaker>Προμηθεύς</speaker>
+            <l n="114">ἆ ἆ [ἔα ἔα].<note place="unspecified"><foreign xml:lang="grc">ἔα ἔα</foreign> seclusit Dindorf</note></l>
+            <l n="115">τίς ἀχώ, τίς ὀδμὰ προσέπτα μ᾽ ἀφεγγής,</l>
+            <l n="116">θεόσυτος,<note place="unspecified"><foreign xml:lang="grc">θεόσυτος</foreign> rec.: <foreign xml:lang="grc">θεόσυτος</foreign> codd. cett.</note> ἢ βρότειος, ἢ κεκραμένη;</l>
+            <l n="117">ἵκετο τερμόνιον ἐπὶ πάγον</l>
+            <l n="118">πόνων ἐμῶν<note place="unspecified"><foreign xml:lang="grc">ἐμῶν</foreign> recc.: <foreign xml:lang="grc">ἡμῶν</foreign> M</note> θεωρός, ἢ τί δὴ θέλων;</l>
+            <l n="119">ὁρᾶτε δεσμώτην με δύσποτμον θεόν,</l>
+            <l n="120">τὸν Διὸς ἐχθρόν, τὸν πᾶσι θεοῖς</l>
+          </sp>
+          <milestone ed="p" n="121" unit="card"/>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp n="*promhqeu/s">
+            <speaker>Προμηθεύς</speaker>
+            <l n="121">δι᾽ ἀπεχθείας ἐλθόνθ᾽ ὁπόσοι</l>
+            <l n="122">τὴν Διὸς αὐλὴν εἰσοιχνεῦσιν,</l>
+            <l n="123">διὰ τὴν λίαν φιλότητα βροτῶν.</l>
+            <l n="124">φεῦ φεῦ, τί ποτ᾽ αὖ κινάθισμα κλύω</l>
+            <l n="125">πέλας οἰωνῶν; αἰθὴρ δ᾽ ἐλαφραῖς</l>
+            <l n="126">πτερύγων ῥιπαῖς ὑποσυρίζει.</l>
+            <l n="127">πᾶν μοι φοβερὸν τὸ προσέρπον.</l>
+          </sp>
+        </div>
+      </div>
+      <milestone ed="p" n="128" unit="card"/>
+      <div type="textpart" subtype="choral">
+        <div type="textpart" subtype="strophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="128">μηδὲν φοβηθῇς: φιλία γὰρ ἅδε<note place="unspecified"><foreign xml:lang="grc">ἅδε</foreign> Hermann: <foreign xml:lang="grc">ἥδε</foreign> codd.</note> τάξις</l>
+            <l n="129">πτερύγων θοαῖς ἁμίλλαις</l>
+            <l n="130">προσέβα τόνδε πάγον, πατρῴας</l>
+            <l n="131">μόγις παρειποῦσα φρένας.</l>
+            <l n="132">κραιπνοφόροι δέ μ᾽ ἔπεμψαν αὖραι:</l>
+            <l n="133">κτύπου γὰρ ἀχὼ χάλυβος διῇξεν ἄντρων</l>
+            <l n="134">μυχόν, ἐκ δ᾽ ἔπληξέ μου τὰν θεμερῶπιν<note place="unspecified"><foreign xml:lang="grc">θεμερῶπιν</foreign> M: <foreign xml:lang="grc">θερμερῶπιν</foreign> (<foreign xml:lang="grc">ρ</foreign> adscripto verae lectioni) m<hi rend="sup">1</hi> recc.</note> αἰδῶ:</l>
+            <l n="135">σύθην δ᾽ ἀπέδιλος ὄχῳ πτερωτῷ.</l>
+            <milestone ed="p" n="136" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="136">αἰαῖ αἰαῖ,<note place="unspecified"><foreign xml:lang="grc">αἲ</foreign> ter M</note></l>
+            <l n="137">τῆς πολυτέκνου Τηθύος ἔκγονα,</l>
+            <l n="138">τοῦ περὶ πᾶσάν θ᾽ εἱλισσομένου</l>
+            <l n="139">χθόν᾽ ἀκοιμήτῳ ῥεύματι παῖδες</l>
+            <l n="140">πατρὸς Ὠκεανοῦ,</l>
+            <l n="141">δέρχθητ᾽, ἐσίδεσθ᾽ οἵῳ δεσμῷ,</l>
+            <l n="142">προσπορπατὸς<note place="unspecified"><foreign xml:lang="grc">προσπορπατὸς</foreign> adscripsit m<hi rend="sub">1</hi>: <foreign xml:lang="grc">πρὸς πατρὸς</foreign> M</note> τῆσδε φάραγγος</l>
+            <l n="143">σκοπέλοις ἐν ἄκροις</l>
+            <l n="144">φρουρὰν ἄζηλον ὀχήσω.</l>
+            <milestone ed="p" n="144" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="145">λεύσσω, Προμηθεῦ: φοβερὰ<note place="unspecified"><foreign xml:lang="grc">φοβερὰ</foreign>] <foreign xml:lang="grc">δνοφερὰ</foreign> Hirschig</note> δ᾽ ἐμοῖσιν ὄσσοις</l>
+            <l n="145">ὁμίχλα προσῇξε πλήρης</l>
+            <l n="146">δακρύων σὸν δέμας εἰσιδοῦσαν<note place="unspecified"><foreign xml:lang="grc">εἰσιδοῦσαν</foreign> Hermann: <foreign xml:lang="grc">εἰσίδουσα</foreign> M: <foreign xml:lang="grc">εἰσιδοῦσιν</foreign> recc. aliquot</note></l>
+            <l n="147">πέτραις προσαυαινόμενον</l>
+            <l n="148">ταῖσδ᾽<note place="unspecified"><foreign xml:lang="grc">ταῖσδ᾽</foreign> Victorius: <foreign xml:lang="grc">ταῖς</foreign> codd. <foreign xml:lang="grc">ἀδαμαντοδέτοισι</foreign> Turnebus: <foreign xml:lang="grc">ἀδαμαντοδέτοις</foreign> M recc.</note> ἀδαμαντοδέτοισι λύμαις:</l>
+            <l n="149">νέοι γὰρ οἰακονόμοι κρατοῦσ᾽ Ὀλύμπου:</l>
+            <l n="150">νεοχμοῖς δὲ δὴ νόμοις Ζεὺς ἀθέτως<note place="unspecified"><foreign xml:lang="grc">ἀθέτως</foreign> ex Hesych. Bentley: <foreign xml:lang="grc">ἀθέσμως</foreign> codd.</note> κρατύνει,</l>
+            <l n="151">τὰ πρὶν δὲ πελώρια νῦν ἀιστοῖ.</l>
+            <milestone ed="p" n="152" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="152">εἰ γάρ μ᾽ ὑπὸ γῆν νέρθεν θ᾽<note place="unspecified"><foreign xml:lang="grc">θ᾽</foreign> Turnebus, <foreign xml:lang="grc">Ἅιδου</foreign> Blomfield: <foreign xml:lang="grc">τ᾽ ἀίδου</foreign> codd.</note> Ἅιδου</l>
+            <l n="153">τοῦ νεκροδέγμονος εἰς ἀπέραντον</l>
+            <l n="154">Τάρταρον ἧκεν,</l>
+            <l n="155">δεσμοῖς ἀλύτοις ἀγρίως<note place="unspecified"><foreign xml:lang="grc">ἀγρίως</foreign> recc.: <foreign xml:lang="grc">ἀγρίοις</foreign> M</note> πελάσας,</l>
+            <l n="156">ὡς μήτε<note place="unspecified"><foreign xml:lang="grc">ὡς μήτε</foreign> Turnebus: <foreign xml:lang="grc">ὡς μήποτε</foreign> codd.</note> θεὸς μήτε τις ἄλλος</l>
+            <l n="157">τοῖσδ᾽ ἐπεγήθει.</l>
+            <l n="158">νῦν δ᾽ αἰθέριον κίνυγμ᾽ ὁ τάλας</l>
+            <l n="159">ἐχθροῖς ἐπίχαρτα πέπονθα.</l>
+            <milestone ed="p" n="160" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="strophe" n="2">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="160">τίς ὧδε τλησικάρδιος</l>
+            <l n="161">θεῶν, ὅτῳ τάδ᾽ ἐπιχαρῆ;</l>
+            <l n="162">τίς οὐ ξυνασχαλᾷ κακοῖς</l>
+            <l n="163">τεοῖσι, δίχα γε Διός; ὁ δ᾽ ἐπικότως ἀεὶ<note place="unspecified"><foreign xml:lang="grc">αἰεὶ</foreign> M</note></l>
+            <l n="164">θέμενος ἄγναμπτον νόον</l>
+            <l n="165">δάμναται οὐρανίαν</l>
+            <l n="166">γένναν, οὐδὲ λήξει, πρὶν ἂν ἢ κορέσῃ κέαρ,</l>
+            <l n="167">ἢ παλάμᾳ τινὶ τὰν δυσάλωτον ἕλῃ τις ἀρχάν.</l>
+            <milestone ed="p" n="168" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="168">ἦ μὴν ἔτ᾽ ἐμοῦ,<note place="unspecified"><foreign xml:lang="grc">ἔτ᾽ ἐμοῦ</foreign> recc.: <foreign xml:lang="grc">ἔτ᾽ ἀπ᾽ ἐμοῦ</foreign> M</note> καίπερ κρατεραῖς</l>
+            <l n="169">ἐν γυιοπέδαις<note place="unspecified"><foreign xml:lang="grc">γυιοπέδαις</foreign> recc.: <foreign xml:lang="grc">γυοπέδαις</foreign> M</note> αἰκιζομένου,</l>
+            <l n="170">χρείαν ἕξει μακάρων πρύτανις,</l>
+            <l n="171">δεῖξαι τὸ νέον βούλευμ᾽ ὑφ᾽<note place="unspecified"><foreign xml:lang="grc">ὑφ᾽</foreign> ex <foreign xml:lang="grc">ἀφ᾽</foreign> factum M</note> ὅτου</l>
+            <l n="172">σκῆπτρον τιμάς τ᾽ ἀποσυλᾶται.</l>
+            <l n="173">καί μ᾽ οὔτε<note place="unspecified"><foreign xml:lang="grc">οὔτε</foreign> Porson: <foreign xml:lang="grc">οὔτι</foreign> recc.: <foreign xml:lang="grc">οὔτοι</foreign> M</note> μελιγλώσσοις πειθοῦς</l>
+            <l n="174">ἐπαοιδαῖσιν θέλξει, στερεάς τ᾽</l>
+            <l n="175">οὔποτ᾽ ἀπειλὰς πτήξας τόδ᾽ ἐγὼ</l>
+            <l n="176">καταμηνύσω,</l>
+            <l n="177">πρὶν ἂν ἐξ ἀγρίων δεσμῶν χαλάσῃ</l>
+            <l n="178">ποινάς τε τίνειν<note place="unspecified"><foreign xml:lang="grc">τε τίνειν</foreign> Porson: <foreign xml:lang="grc">τέ μοι τίνειν</foreign> M</note></l>
+            <l n="179">τῆσδ᾽<note place="unspecified"><foreign xml:lang="grc">τῆσδ᾽</foreign> recc.: <foreign xml:lang="grc">τῆς</foreign> M</note> αἰκίας ἐθελήσῃ.</l>
+            <milestone ed="p" n="180" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="2">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="180">σὺ μὲν θρασύς τε καὶ πικραῖς</l>
+            <l n="181">δύαισιν οὐδὲν ἐπιχαλᾷς,</l>
+            <l n="182">ἄγαν δ᾽ ἐλευθεροστομεῖς.</l>
+            <l n="183">ἐμὰς δὲ φρένας ἐρέθισε<note place="unspecified"><foreign xml:lang="grc">ἐρέθισε</foreign> Turnebus: <foreign xml:lang="grc">ἠρέθισε</foreign> codd.</note> διάτορος φόβος:</l>
+            <l n="184">δέδια δ᾽<note place="unspecified"><foreign xml:lang="grc">δ᾽</foreign> Proson: <foreign xml:lang="grc">γὰρ</foreign> codd.</note> ἀμφὶ σαῖς τύχαις,</l>
+            <l n="185">πᾷ<note place="unspecified"><foreign xml:lang="grc">πᾷ</foreign> Turnebus: <foreign xml:lang="grc">ὕπᾳ</foreign> M: <foreign xml:lang="grc">ὅπα</foreign> recc.</note> ποτε τῶνδε πόνων</l>
+            <l n="186">χρή σε τέρμα κέλσαντ᾽ ἐσιδεῖν: ἀκίχητα γὰρ</l>
+            <l n="187">ἤθεα καὶ κέαρ ἀπαράμυθον<note place="unspecified"><foreign xml:lang="grc">ἀπαράμυθον</foreign> recc. aliquot: <foreign xml:lang="grc">οὐ παράμυθον</foreign> M, recc. cett.</note> ἔχει Κρόνου παῖς.</l>
+            <milestone ed="p" n="189" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="188">οἶδ᾽ ὅτι τραχὺς καὶ<note place="unspecified"><foreign xml:lang="grc">καὶ</foreign> recc.: <foreign xml:lang="grc">τε καὶ</foreign> M recc. plerique</note> παρ᾽ ἑαυτῷ</l>
+            <l n="189">τὸ δίκαιον ἔχων Ζεύς: ἀλλ᾽ ἔμπας [ὀίω]<note place="unspecified"><foreign xml:lang="grc">ὀίω</foreign> (in M ex <foreign xml:lang="grc">ἰὼ</foreign> factum) eiecit Brunck</note></l>
+            <l n="190">μαλακογνώμων</l>
+            <l n="191">ἔσται ποθ᾽, ὅταν ταύτῃ ῥαισθῇ:<note place="unspecified"><foreign xml:lang="grc">ῥαισθῇ</foreign> recc. plerique: <foreign xml:lang="grc">ῥωσθῇ</foreign> (<foreign xml:lang="grc">ω</foreign> in litura) M</note></l>
+            <l n="192">τὴν δ᾽ ἀτέραμνον στορέσας ὀργὴν</l>
+            <l n="193">εἰς ἀρθμὸν ἐμοὶ καὶ φιλότητα</l>
+            <l n="194">σπεύδων σπεύδοντί ποθ᾽ ἥξει.</l>
+            <milestone ed="p" n="196" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="episode">
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="195">πάντ᾽ ἐκκάλυψον καὶ γέγων᾽ ἡμῖν λόγον,</l>
+          <l n="196">ποίῳ λαβών σε Ζεὺς ἐπ᾽ αἰτιάματι,</l>
+          <l n="197">οὕτως ἀτίμως καὶ πικρῶς αἰκίζεται:</l>
+          <l n="198">δίδαξον ἡμᾶς, εἴ τι μὴ βλάπτει λόγῳ.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="199">ἀλγεινὰ μέν μοι καὶ λέγειν ἐστὶν τάδε,</l>
+          <l n="200">ἄλγος δὲ σιγᾶν, πανταχῇ δὲ δύσποτμα.</l>
+          <l n="201">ἐπεὶ τάχιστ᾽ ἤρξαντο δαίμονες χόλου</l>
+          <l n="202">στάσις τ᾽ ἐν ἀλλήλοισιν ὠροθύνετο,</l>
+          <l n="203">οἱ μὲν θέλοντες ἐκβαλεῖν ἕδρας Κρόνον,</l>
+          <l n="204">ὡς Ζεὺς ἀνάσσοι δῆθεν, οἱ δὲ τοὔμπαλιν</l>
+          <l n="205">σπεύδοντες, ὡς Ζεὺς μήποτ᾽ ἄρξειεν θεῶν,</l>
+          <l n="206">ἐνταῦθ᾽ ἐγὼ τὰ λῷστα βουλεύων πιθεῖν</l>
+          <l n="207">Τιτᾶνας, Οὐρανοῦ τε καὶ Χθονὸς τέκνα,</l>
+          <l n="208">οὐκ ἠδυνήθην: αἱμύλας δὲ μηχανὰς</l>
+          <l n="209">ἀτιμάσαντες καρτεροῖς φρονήμασιν</l>
+          <l n="210">ᾤοντ᾽ ἀμοχθὶ πρὸς βίαν τε δεσπόσειν:</l>
+          <l n="211">ἐμοὶ δὲ μήτηρ οὐχ ἅπαξ μόνον Θέμις,</l>
+          <l n="212">καὶ Γαῖα, πολλῶν ὀνομάτων μορφὴ μία,</l>
+          <l n="213">τὸ μέλλον ᾗ κραίνοιτο<note place="unspecified"><foreign xml:lang="grc">κρανοῖτο</foreign> Elmsley</note> προυτεθεσπίκει,</l>
+          <l n="214">ὡς οὐ κατ᾽ ἰσχὺν οὐδὲ πρὸς τὸ καρτερὸν</l>
+          <l n="215">χρείη,<note place="unspecified"><foreign xml:lang="grc">χρείη</foreign> Dawes: <foreign xml:lang="grc">χρὴ: ἢ</foreign> M (<foreign xml:lang="grc">χρεῖ᾽ ἦ</foreign> in margine m<hi rend="sub">1</hi>): <foreign xml:lang="grc">χρὴ ἢ</foreign> recc.</note> δόλῳ δὲ<note place="unspecified"><foreign xml:lang="grc">δὲ</foreign> omissum in M supplevit m<hi rend="sub">1</hi></note> τοὺς ὑπερσχόντας<note place="unspecified"><foreign xml:lang="grc">ὑπερσχόντας</foreign> Proson: <foreign xml:lang="grc">ὑπερέχοντας</foreign> codd.</note> κρατεῖν.</l>
+          <l n="216">τοιαῦτ᾽ ἐμοῦ λόγοισιν ἐξηγουμένου</l>
+          <l n="217">οὐκ ἠξίωσαν οὐδὲ προσβλέψαι τὸ πᾶν.</l>
+          <l n="218">κράτιστα δή μοι τῶν παρεστώτων τότε</l>
+          <l n="219">ἐφαίνετ᾽ εἶναι προσλαβόντα<note place="unspecified"><foreign xml:lang="grc">προσλαβόντα</foreign> recc.: <foreign xml:lang="grc">προσλαβόντι</foreign> M</note> μητέρα</l>
+          <l n="220">ἑκόνθ᾽ ἑκόντι Ζηνὶ συμπαραστατεῖν.</l>
+          <l n="221">ἐμαῖς δὲ βουλαῖς Ταρτάρου μελαμβαθὴς</l>
+          <l n="222">κευθμὼν καλύπτει τὸν παλαιγενῆ Κρόνον</l>
+          <l n="223">αὐτοῖσι συμμάχοισι. τοιάδ᾽ ἐξ ἐμοῦ</l>
+          <l n="224">ὁ τῶν θεῶν τύραννος ὠφελημένος</l>
+          <l n="225">κακαῖσι ποιναῖς ταῖσδέ μ᾽ ἀντημείψατο.<note place="unspecified"><foreign xml:lang="grc">ἀντημείψατο</foreign> recc.: <foreign xml:lang="grc">ἐξημείψατο</foreign> M</note></l>
+          <l n="226">ἔνεστι γάρ πως τοῦτο τῇ τυραννίδι</l>
+          <l n="227">νόσημα, τοῖς φίλοισι μὴ πεποιθέναι.</l>
+          <l n="228"><milestone ed="P" unit="para"/>ὃ δ᾽ οὖν ἐρωτᾶτ᾽, αἰτίαν καθ᾽ ἥντινα</l>
+          <l n="229">αἰκίζεταί με, τοῦτο δὴ σαφηνιῶ.</l>
+          <l n="230"><milestone ed="P" unit="para"/>ὅπως τάχιστα τὸν πατρῷον ἐς θρόνον</l>
+          <l n="231">καθέζετ᾽, εὐθὺς δαίμοσιν νέμει γέρα</l>
+          <l n="232">ἄλλοισιν ἄλλα, καὶ διεστοιχίζετο</l>
+          <l n="233">ἀρχήν, βροτῶν δὲ τῶν ταλαιπώρων λόγον</l>
+          <l n="234">οὐκ ἔσχεν οὐδέν᾽, ἀλλ᾽ ἀιστώσας γένος</l>
+          <l n="235">τὸ πᾶν ἔχρῃζεν ἄλλο φιτῦσαι νέον.</l>
+          <l n="236">καὶ τοισίδ᾽ οὐδεὶς ἀντέβαινε πλὴν ἐμοῦ.</l>
+          <l n="237">ἐγὼ δ᾽ ἐτόλμησ᾽:<note place="unspecified"><foreign xml:lang="grc">δ᾽ ἐτόλμησ᾽</foreign> rec.: <foreign xml:lang="grc">δὲ τόλμησ᾽</foreign> M: <foreign xml:lang="grc">δὲ τόλμης</foreign> vel <foreign xml:lang="grc">δὲ τολμῆς</foreign> recc.</note> ἐξελυσάμην βροτοὺς</l>
+          <l n="238">τὸ μὴ διαρραισθέντας εἰς Ἅιδου μολεῖν.</l>
+          <l n="239">τῷ τοι τοιαῖσδε πημοναῖσι κάμπτομαι,</l>
+          <l n="240">πάσχειν μὲν ἀλγειναῖσιν, οἰκτραῖσιν δ᾽ ἰδεῖν:</l>
+          <l n="241">θνητοὺς δ᾽ ἐν οἴκτῳ προθέμενος, τούτου τυχεῖν</l>
+          <l n="242">οὐκ ἠξιώθην αὐτός, ἀλλὰ νηλεῶς<note place="unspecified"><foreign xml:lang="grc">ἀλλὰ νηλεῶς</foreign> Elmsley: <foreign xml:lang="grc">ἀλλ᾽ ἀνηλεῶς</foreign> codd.</note></l>
+          <l n="243">ὧδ᾽ ἐρρύθμισμαι, Ζηνὶ δυσκλεὴς θέα.</l>
+          <milestone ed="p" n="244" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="244">σιδηρόφρων τε κἀκ πέτρας εἰργασμένος</l>
+          <l n="245">ὅστις, Προμηθεῦ, σοῖσιν οὐ συνασχαλᾷ</l>
+          <l n="246">μόχθοις: ἐγὼ γὰρ οὔτ᾽ ἂν εἰσιδεῖν τάδε</l>
+          <l n="247">ἔχρῃζον εἰσιδοῦσά τ᾽ ἠλγύνθην<note place="unspecified"><foreign xml:lang="grc">ἠλγύνθην</foreign> recc.: <foreign xml:lang="grc">ἀλγύνθην</foreign> M</note> κέαρ.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="248">καὶ μὴν φίλοις &lt;γ᾽&gt;<note place="unspecified"><foreign xml:lang="grc">γ᾽</foreign> add. Wecklein</note> ἐλεινὸς<note place="unspecified"><foreign xml:lang="grc">ἐλεινὸς</foreign> Porson: <foreign xml:lang="grc">ἐλεεινὸς</foreign> codd.</note> εἰσορᾶν ἐγώ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="249">μή πού τι προύβης τῶνδε καὶ περαιτέρω;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="250">θνητοὺς<note place="unspecified"><foreign xml:lang="grc">θνητοὺς</foreign> recc.: <foreign xml:lang="grc">θνητούς τ᾽</foreign> M</note> ἔπαυσα μὴ προδέρκεσθαι μόρον.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="251">τὸ ποῖον εὑρὼν τῆσδε φάρμακον νόσου;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="252">τυφλὰς ἐν αὐτοῖς ἐλπίδας κατῴκισα.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="253">μέγ᾽ ὠφέλημα τοῦτ᾽ ἐδωρήσω βροτοῖς.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="254">πρὸς τοῖσδε μέντοι πῦρ ἐγώ σφιν ὤπασα.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="255">καὶ νῦν φλογωπὸν πῦρ<note place="unspecified"><foreign xml:lang="grc">πῦρ</foreign>] <foreign xml:lang="grc">σπέρμ᾽</foreign> Weil</note> ἔχουσ᾽ ἐφήμεροι;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="256">ἀφ᾽ οὗ γε πολλὰς ἐκμαθήσονται τέχνας.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="257">τοιοῖσδε δή σε Ζεὺς ἐπ᾽ αἰτιάμασιν</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="258">αἰκίζεταί τε κοὐδαμῇ χαλᾷ κακῶν.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="259">οὐδ᾽ ἔστιν ἄθλου τέρμα σοι προκείμενον;<note place="unspecified"><foreign xml:lang="grc">Πρ. Χο.</foreign> add. Welcker: choro continuant codd.</note></l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="260">οὐκ ἄλλο γ᾽ οὐδέν, πλὴν ὅταν κείνῳ δοκῇ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="261">δόξει δὲ πῶς; τίς ἐλπίς; οὐχ ὁρᾷς ὅτι</l>
+          <l n="262">ἥμαρτες; ὡς δ᾽ ἥμαρτες οὔτ᾽ ἐμοὶ λέγειν</l>
+          <l n="263">καθ᾽ ἡδονὴν σοί τ᾽ ἄλγος. ἀλλὰ ταῦτα μὲν</l>
+          <l n="264">μεθῶμεν, ἄθλου δ᾽ ἔκλυσιν ζήτει τινά.</l>
+          <milestone ed="p" n="265" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="265">ἐλαφρὸν ὅστις πημάτων ἔξω πόδα</l>
+          <l n="266">ἔχει παραινεῖν νουθετεῖν τε τὸν κακῶς</l>
+          <l n="267">πράσσοντ᾽:<note place="unspecified"><foreign xml:lang="grc">τὸν κακῶς πράσσοντ᾽</foreign> Stanley: <foreign xml:lang="grc">τοὺς κ. πράσσοντας</foreign> codd.</note> ἐγὼ δὲ ταῦθ᾽ ἅπαντ᾽ ἠπιστάμην.</l>
+          <l n="268">ἑκὼν ἑκὼν ἥμαρτον, οὐκ ἀρνήσομαι:</l>
+          <l n="269">θνητοῖς ἀρήγων αὐτὸς ηὑρόμην πόνους.</l>
+          <l n="270">οὐ μήν τι ποιναῖς γ᾽ ᾠόμην τοίαισί με<note place="unspecified"><foreign xml:lang="grc">τοιαῖσδε</foreign> Wecklein</note></l>
+          <l n="271">κατισχνανεῖσθαι πρὸς πέτραις πεδαρσίοις,</l>
+          <l n="272">τυχόντ᾽ ἐρήμου τοῦδ᾽ ἀγείτονος πάγου.</l>
+          <l n="273">καί μοι<note place="unspecified"><foreign xml:lang="grc">καίτοι</foreign> Robortello</note> τὰ μὲν παρόντα μὴ δύρεσθ᾽ ἄχη,</l>
+          <l n="274">πέδοι δὲ βᾶσαι τὰς προσερπούσας τύχας</l>
+          <l n="275">ἀκούσαθ᾽, ὡς μάθητε διὰ τέλους τὸ πᾶν.</l>
+          <l n="276">πίθεσθέ<note place="unspecified"><foreign xml:lang="grc">πίθεσθε</foreign> (bis) Blomfield: <foreign xml:lang="grc">πείθεσθε</foreign> (bis) codd.</note> μοι, πίθεσθε, συμπονήσατε</l>
+          <l n="277">τῷ νῦν μογοῦντι. ταὐτά τοι<note place="unspecified"><foreign xml:lang="grc">ταὐτά τοι</foreign> schol. et recc.: <foreign xml:lang="grc">ταῦτά τοι</foreign> M</note> πλανωμένη</l>
+          <l n="278">πρὸς ἄλλοτ᾽ ἄλλον πημονὴ προσιζάνει.</l>
+          <milestone ed="p" n="279" unit="card"/>
+        </sp>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="279">οὐκ ἀκούσαις ἐπεθώυξας</l>
+            <l n="280">τοῦτο, Προμηθεῦ.</l>
+            <l n="281">καὶ νῦν ἐλαφρῷ ποδὶ κραιπνόσυτον</l>
+            <l n="282">θᾶκον προλιποῦσ᾽, αἰθέρα θ᾽ ἁγνὸν</l>
+            <l n="283">πόρον οἰωνῶν, ὀκριοέσσῃ</l>
+            <l n="284">χθονὶ τῇδε πελῶ, τοὺς σοὺς δὲ πόνους</l>
+            <l n="285">χρῄζω διὰ παντὸς ἀκοῦσαι.</l>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="286">ἥκω δολιχῆς τέρμα κελεύθου</l>
+            <l n="287">διαμειψάμενος πρὸς σέ, Προμηθεῦ,</l>
+            <l n="288">τὸν πτερυγωκῆ τόνδ᾽ οἰωνὸν</l>
+            <l n="289">γνώμῃ στομίων ἄτερ εὐθύνων:</l>
+            <l n="290">ταῖς σαῖς δὲ τύχαις, ἴσθι, συναλγῶ.</l>
+            <l n="291">τό τε γάρ με, δοκῶ, συγγενὲς οὕτως</l>
+            <l n="292">ἐσαναγκάζει,</l>
+            <l n="293">χωρίς τε γένους οὐκ ἔστιν ὅτῳ</l>
+            <l n="294">μείζονα μοῖραν νείμαιμ᾽ ἢ σοί.</l>
+            <l n="295">γνώσει δὲ τάδ᾽ ὡς ἔτυμ᾽, οὐδὲ μάτην</l>
+            <l n="296">χαριτογλωσσεῖν<note place="unspecified"><foreign xml:lang="grc">χαριτογλωσσεῖν</foreign> ex Athenaeo Turnebus: <foreign xml:lang="grc">σὲ τὸ χαριτογλωσσεῖν</foreign> M</note> ἔνι μοι: φέρε γὰρ</l>
+            <l n="297">σήμαιν᾽ ὅ τι χρή σοι συμπράσσειν:</l>
+            <l n="298">οὐ γάρ ποτ᾽ ἐρεῖς ὡς Ὠκεανοῦ</l>
+            <l n="299">φίλος ἐστὶ βεβαιότερός σοι.</l>
+            <milestone ed="p" n="300" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="300">ἔα: τί χρῆμα λεύσσω; καὶ σὺ δὴ πόνων ἐμῶν</l>
+            <l n="301">ἥκεις ἐπόπτης; πῶς ἐτόλμησας, λιπὼν</l>
+            <l n="302">ἐπώνυμόν τε ῥεῦμα καὶ πετρηρεφῆ</l>
+            <l n="303">αὐτόκτιτ᾽ ἄντρα, τὴν σιδηρομήτορα</l>
+            <l n="304">ἐλθεῖν ἐς αἶαν; ἢ θεωρήσων τύχας</l>
+            <l n="305">ἐμὰς ἀφῖξαι καὶ συνασχαλῶν κακοῖς;</l>
+            <l n="306">δέρκου θέαμα, τόνδε τὸν Διὸς φίλον,</l>
+            <l n="307">τὸν συγκαταστήσαντα τὴν τυραννίδα,</l>
+            <l n="308">οἵαις ὑπ᾽ αὐτοῦ πημοναῖσι κάμπτομαι.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="309">ὁρῶ, Προμηθεῦ, καὶ παραινέσαι γέ σοι</l>
+            <l n="310">θέλω τὰ λῷστα, καίπερ ὄντι ποικίλῳ.</l>
+            <l n="311">γίγνωσκε σαυτὸν καὶ μεθάρμοσαι τρόπους</l>
+            <l n="312">νέους: νέος γὰρ καὶ τύραννος ἐν θεοῖς.</l>
+            <l n="313">εἰ δ᾽ ὧδε τραχεῖς καὶ τεθηγμένους λόγους</l>
+            <l n="314">ῥίψεις, τάχ᾽ ἄν σου καὶ μακρὰν ἀνωτέρω</l>
+            <l n="315">θακῶν κλύοι Ζεύς, ὥστε σοι τὸν νῦν ὄχλον<note place="unspecified"><foreign xml:lang="grc">ὄχλον</foreign> Döderlein: <foreign xml:lang="grc">χόλον</foreign> codd.</note></l>
+            <l n="316">παρόντα μόχθων παιδιὰν εἶναι δοκεῖν.</l>
+            <l n="317">ἀλλ᾽, ὦ ταλαίπωρ᾽, ἃς ἔχεις ὀργὰς ἄφες,</l>
+            <l n="318">ζήτει δὲ τῶνδε πημάτων ἀπαλλαγάς.</l>
+            <l n="319">ἀρχαῖ᾽ ἴσως σοι φαίνομαι λέγειν τάδε:</l>
+            <l n="320">τοιαῦτα μέντοι τῆς ἄγαν ὑψηγόρου</l>
+            <l n="321">γλώσσης, Προμηθεῦ, τἀπίχειρα γίγνεται.</l>
+            <l n="322">σὺ δ᾽ οὐδέπω ταπεινὸς οὐδ᾽ εἴκεις κακοῖς,</l>
+            <l n="323">πρὸς τοῖς παροῦσι δ᾽ ἄλλα προσλαβεῖν θέλεις.</l>
+            <l n="324">οὔκουν ἔμοιγε χρώμενος διδασκάλῳ</l>
+            <l n="325">πρὸς κέντρα κῶλον ἐκτενεῖς, ὁρῶν ὅτι</l>
+            <l n="326">τραχὺς μόναρχος οὐδ᾽ ὑπεύθυνος κρατεῖ.</l>
+            <l n="327">καὶ νῦν ἐγὼ μὲν εἶμι καὶ πειράσομαι</l>
+            <l n="328">ἐὰν δύνωμαι τῶνδέ σ᾽ ἐκλῦσαι πόνων:</l>
+            <l n="329">σὺ δ᾽ ἡσύχαζε μηδ᾽ ἄγαν λαβροστόμει.</l>
+            <l n="330">ἢ οὐκ οἶσθ᾽ ἀκριβῶς ὢν περισσόφρων ὅτι</l>
+            <l n="331">γλώσσῃ ματαίᾳ ζημία προστρίβεται;</l>
+            <milestone ed="p" n="332" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="332">ζηλῶ σ᾽ ὁθούνεκ᾽ ἐκτὸς αἰτίας κυρεῖς,</l>
+            <l n="333">πάντων μετασχὼν<note place="unspecified"><foreign xml:lang="grc">μετασχεῖν</foreign> Weil</note> καὶ τετολμηκὼς ἐμοί.<note place="unspecified"><foreign xml:lang="grc">συντετολμηκώς τ᾽</foreign> Jebb (ad Ant. 537)</note></l>
+            <l n="334">καὶ νῦν ἔασον μηδέ<note place="unspecified"><foreign xml:lang="grc">μηδέ</foreign> recc.: <foreign xml:lang="grc">μηδέν</foreign> M</note> σοι μελησάτω.</l>
+            <l n="335">πάντως γὰρ οὐ πείσεις<note place="unspecified"><foreign xml:lang="grc">πείσεις</foreign> recc.: <foreign xml:lang="grc">πείθεις</foreign> M</note> νιν: οὐ γὰρ εὐπιθής.<note place="unspecified"><foreign xml:lang="grc">εὐπιθής</foreign> recc.: <foreign xml:lang="grc">εὐπειθής</foreign> M</note></l>
+            <l n="336">πάπταινε δ᾽ αὐτὸς μή τι πημανθῇς ὁδῷ.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="337">πολλῷ γ᾽ ἀμείνων τοὺς πέλας φρενοῦν ἔφυς</l>
+            <l n="338">ἢ σαυτόν: ἔργῳ κοὐ λόγῳ τεκμαίρομαι.</l>
+            <l n="339">ὁρμώμενον δὲ μηδαμῶς μ᾽<note place="unspecified"><foreign xml:lang="grc">μ᾽</foreign> add. recc. duo: omittunt codd. cett.</note> ἀντισπάσῃς.</l>
+            <l n="340">αὐχῶ γὰρ αὐχῶ τήνδε δωρεὰν ἐμοὶ</l>
+            <l n="341">δώσειν Δί᾽, ὥστε τῶνδέ σ᾽ ἐκλῦσαι πόνων.</l>
+            <milestone ed="p" n="343" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="342">τὰ μέν σ᾽ ἐπαινῶ κοὐδαμῇ<note place="unspecified"><foreign xml:lang="grc">κοὐδαμῇ</foreign> recc.: <foreign xml:lang="grc">κ᾽ οὐδὲ μὴ</foreign> M</note> λήξω ποτέ:</l>
+            <l n="343">προθυμίας γὰρ οὐδὲν ἐλλείπεις. ἀτὰρ</l>
+            <l n="344">μηδὲν πόνει: μάτην γὰρ οὐδὲν ὠφελῶν</l>
+            <l n="345">ἐμοὶ πονήσεις, εἴ τι καὶ πονεῖν θέλεις.</l>
+            <l n="346">ἀλλ᾽ ἡσύχαζε σαυτὸν ἐκποδὼν ἔχων:</l>
+            <l n="347">ἐγὼ γὰρ οὐκ εἰ δυστυχῶ, τοῦδ᾽ οὕνεκα</l>
+            <l n="348">θέλοιμ᾽ ἂν ὡς πλείστοισι πημονὰς τυχεῖν.</l>
+            <l n="349">οὐ δῆτ᾽, ἐπεί με χαἰ<note place="unspecified"><foreign xml:lang="grc">χαἰ</foreign> Porson: <foreign xml:lang="grc">καὶ</foreign> codd.</note> κασιγνήτου τύχαι<note place="unspecified">Oceano tribuunt codd.: recte Prometheo continuavit Elmsley</note></l>
+            <l n="350">τείρουσ᾽ Ἄτλαντος, ὃς πρὸς<note place="unspecified"><foreign xml:lang="grc">πρὸς</foreign> recc.: <foreign xml:lang="grc">ἐς</foreign> M</note> ἑσπέρους τόπους</l>
+            <l n="351">ἕστηκε κίον᾽ οὐρανοῦ τε καὶ χθονὸς</l>
+            <l n="352">ὤμοις ἐρείδων, ἄχθος οὐκ εὐάγκαλον.</l>
+            <l n="353">τὸν γηγενῆ τε Κιλικίων οἰκήτορα</l>
+            <l n="354">ἄντρων ἰδὼν ᾤκτειρα, δάιον τέρας</l>
+            <l n="355">ἑκατογκάρανον πρὸς βίαν χειρούμενον</l>
+            <l n="356">Τυφῶνα θοῦρον, πᾶσι δ᾽<note place="unspecified"><foreign xml:lang="grc">πᾶσι δ᾽</foreign> Minckwitz, Hermann: <foreign xml:lang="grc">πᾶσιν ὃς</foreign> M recc. aliquot</note> ἀντέστη θεοῖς,</l>
+            <l n="357">σμερδναῖσι γαμφηλαῖσι συρίζων φόβον:<note place="unspecified"><foreign xml:lang="grc">φόβον</foreign>] <foreign xml:lang="grc">φόνον</foreign> recc.</note></l>
+            <l n="358">ἐξ ὀμμάτων δ᾽ ἤστραπτε γοργωπὸν σέλας,</l>
+            <l n="359">ὡς τὴν Διὸς τυραννίδ᾽ ἐκπέρσων βίᾳ:</l>
+            <l n="360">ἀλλ᾽ ἦλθεν αὐτῷ Ζηνὸς ἄγρυπνον βέλος,</l>
+            <l n="361">καταιβάτης κεραυνὸς ἐκπνέων φλόγα,</l>
+            <l n="362">ὃς αὐτὸν ἐξέπληξε τῶν ὑψηγόρων</l>
+            <l n="363">κομπασμάτων. φρένας γὰρ εἰς αὐτὰς τυπεὶς</l>
+            <l n="364">ἐφεψαλώθη κἀξεβροντήθη σθένος.</l>
+            <l n="365">καὶ νῦν ἀχρεῖον καὶ παράορον<note place="unspecified"><foreign xml:lang="grc">παράορον</foreign> Bergk: <foreign xml:lang="grc">παράωρον</foreign> M</note> δέμας</l>
+            <l n="366">κεῖται στενωποῦ πλησίον θαλασσίου</l>
+            <l n="367">ἰπούμενος<note place="unspecified"><foreign xml:lang="grc">ἰπούμενος</foreign> M: <foreign xml:lang="grc">ἰπνούμενος</foreign> m<hi rend="sub">1</hi> recc.</note> ῥίζαισιν Αἰτναίαις ὕπο:</l>
+            <l n="368">κορυφαῖς δ᾽ ἐν ἄκραις ἥμενος μυδροκτυπεῖ</l>
+            <l n="369">Ἥφαιστος: ἔνθεν ἐκραγήσονταί ποτε</l>
+            <l n="370">ποταμοὶ πυρὸς δάπτοντες ἀγρίαις γνάθοις</l>
+            <l n="371">τῆς καλλικάρπου Σικελίας λευροὺς γύας:</l>
+            <l n="372">τοιόνδε Τυφὼς ἐξαναζέσει χόλον</l>
+            <l n="373">θερμοῖς<note place="unspecified"><foreign xml:lang="grc">θερμοῖς</foreign> rec.: <foreign xml:lang="grc">θερμῆς</foreign> codd. cett.</note> ἀπλάτου<note place="unspecified"><foreign xml:lang="grc">ἀπλάτου</foreign> Schütz: <foreign xml:lang="grc">ἀπλήστου</foreign> codd.</note> βέλεσι πυρπνόου ζάλης,</l>
+            <l n="374">καίπερ κεραυνῷ Ζηνὸς ἠνθρακωμένος.</l>
+            <l n="375"><milestone ed="P" unit="para"/>σὺ δ᾽ οὐκ ἄπειρος, οὐδ᾽ ἐμοῦ διδασκάλου<note place="unspecified"><foreign xml:lang="grc">Πρ.</foreign> add. m<hi rend="sub">1</hi></note></l>
+            <l n="376">χρῄζεις: σεαυτὸν σῷζ᾽ ὅπως ἐπίστασαι:</l>
+            <l n="377">ἐγὼ δὲ τὴν παροῦσαν ἀντλήσω τύχην,</l>
+            <l n="378">ἔς τ᾽ ἂν Διὸς φρόνημα λωφήσῃ χόλου.</l>
+            <milestone ed="p" n="379" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="379">οὔκουν, Προμηθεῦ, τοῦτο γιγνώσκεις, ὅτι</l>
+            <l n="380">ὀργῆς νοσούσης εἰσὶν ἰατροὶ λόγοι;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="381">ἐάν τις ἐν καιρῷ γε μαλθάσσῃ κέαρ</l>
+            <l n="382">καὶ μὴ σφριγῶντα θυμὸν ἰσχναίνῃ<note place="unspecified"><foreign xml:lang="grc">ἰσχναίνῃ</foreign> recc.: <foreign xml:lang="grc">ἰσχναίει</foreign> (<foreign xml:lang="grc">ν</foreign> postea inserto in <foreign xml:lang="grc">ἰσχναίνει</foreign> mutatum M</note> βίᾳ.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="383">ἐν τῷ προθυμεῖσθαι δὲ καὶ τολμᾶν τίνα</l>
+            <l n="384">ὁρᾷς ἐνοῦσαν ζημίαν; δίδασκέ με.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="385">μόχθον περισσὸν κουφόνουν τ᾽ εὐηθίαν.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="386">ἔα με τῇδε τῇ νόσῳ νοσεῖν, ἐπεὶ</l>
+            <l n="387">κέρδιστον εὖ φρονοῦντα μὴ φρονεῖν δοκεῖν.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="388">ἐμὸν δοκήσει τἀμπλάκημ᾽ εἶναι τόδε.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="389">σαφῶς μ᾽ ἐς οἶκον σὸς λόγος στέλλει πάλιν.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="390">μὴ γάρ σε θρῆνος οὑμὸς εἰς ἔχθραν βάλῃ.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="391">ἦ τῷ νέον θακοῦντι παγκρατεῖς ἕδρας;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="392">τούτου φυλάσσου μή ποτ᾽ ἀχθεσθῇ κέαρ.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="393">ἡ σή, Προμηθεῦ, συμφορὰ διδάσκαλος.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="394">στέλλου, κομίζου, σῷζε τὸν παρόντα νοῦν.</l>
+          </sp>
+          <sp>
+            <speaker>Ὠκεανός</speaker>
+            <l n="395">ὁρμωμένῳ μοι τόνδ᾽ ἐθώυξας λόγον.</l>
+            <l n="396">λευρὸν γὰρ οἶμον αἰθέρος ψαίρει πτεροῖς</l>
+            <l n="397">τετρασκελὴς οἰωνός: ἄσμενος δέ τἂν<note place="unspecified"><foreign xml:lang="grc">δέ τἂν</foreign> Blomfield: <foreign xml:lang="grc">δ᾽ ἔτ᾽ ἂν</foreign> M</note></l>
+            <l n="398">σταθμοῖς ἐν οἰκείοισι κάμψειεν γόνυ.</l>
+            <milestone ed="p" n="399" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="choral">
+        <div type="textpart" subtype="strophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="399">στένω σε τᾶς οὐλομένας τύχας, Προμηθεῦ:</l>
+            <l n="400">δακρυσίστακτα<note place="unspecified"><foreign xml:lang="grc">δακρυσίστακτα</foreign> Minckwitz: <foreign xml:lang="grc">δακρυσίστακτον</foreign> codd.</note> δ᾽ ἀπ᾽ ὄσσων</l>
+            <l n="401">ῥαδινῶν λειβομένα ῥέος παρειὰν</l>
+            <l n="402">νοτίοις ἔτεγξα παγαῖς:</l>
+            <l n="403">ἀμέγαρτα γὰρ τάδε Ζεὺς</l>
+            <l n="404">ἰδίοις νόμοις κρατύνων</l>
+            <l n="405">ὑπερήφανον<note place="unspecified"><foreign xml:lang="grc">ὑπερήφανος, ν</foreign> supra scr., M</note> θεοῖς τοῖς</l>
+            <l n="406">πάρος ἐνδείκνυσιν<note place="unspecified"><foreign xml:lang="grc">ἐνδείκνυσιν</foreign> recc.: <foreign xml:lang="grc">ἐνδεικνύειν</foreign> M</note> αἰχμάν.</l>
+            <milestone ed="p" n="407" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="407">πρόπασα δ᾽ ἤδη στονόεν λέλακε χώρα,</l>
+            <l n="408">μεγαλοσχήμονά τ᾽ ἀρχαι-</l>
+            <l n="409">οπρεπῆ.... στένουσι τὰν σὰν<note place="unspecified">lacuna varie suppleta: <foreign xml:lang="grc">περθομέναν</foreign> Dindorf: <foreign xml:lang="grc">δυρόμενοι</foreign> Fritzsche: <foreign xml:lang="grc">θ᾽ ἑσπέριοι</foreign> Wecklein: nihil certum</note></l>
+            <l n="410">συνομαιμόνων τε τιμάν,</l>
+            <l n="411">ὁπόσοι τ᾽ ἔποικον ἁγνᾶς</l>
+            <l n="412">Ἀσίας ἕδος νέμονται,</l>
+            <l n="413">μεγαλοστόνοισι σοῖς πή-</l>
+            <l n="414">μασι συγκάμνουσι θνατοί.</l>
+            <milestone ed="p" n="415" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="strophe" n="2">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="415">Κολχίδος τε γᾶς ἔνοικοι</l>
+            <l n="416">παρθένοι, μάχας ἄτρεστοι,</l>
+            <l n="417">καὶ Σκύθης ὅμιλος, οἳ γᾶς</l>
+            <l n="418">ἔσχατον τόπον ἀμφὶ Μαι-</l>
+            <l n="419">ῶτιν ἔχουσι λίμναν,</l>
+            <milestone ed="p" n="420" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="2">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="420">†Ἀραβίας<note place="unspecified"><foreign xml:lang="grc">Ἀραβίας</foreign>] <foreign xml:lang="grc">Ἀρίας</foreign> Heimsoeth</note> τ᾽ ἄρειον ἄνθος,</l>
+            <l n="421">ὑψίκρημνον οἳ<note place="unspecified"><foreign xml:lang="grc">οἳ</foreign> Elmsley: <foreign xml:lang="grc">θ᾽ οἳ</foreign> M codd. plerique</note> πόλισμα</l>
+            <l n="422">Καυκάσου πέλας νέμονται,<note place="unspecified"><foreign xml:lang="grc">νέμονται</foreign> recc.: <foreign xml:lang="grc">νέμουσι</foreign> M</note></l>
+            <l n="423">δάιος στρατός, ὀξυπρῴ-</l>
+            <l n="424">ροισι βρέμων ἐν αἰχμαῖς.</l>
+            <milestone ed="p" n="425" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="epode">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="425">†μόνον δὲ<note place="unspecified"><foreign xml:lang="grc">δὲ</foreign> recc.: <foreign xml:lang="grc">δὴ</foreign> M</note> πρόσθεν [ἄλλον<note place="unspecified"><foreign xml:lang="grc">ἄλλον</foreign> seclusit Hermann</note>] ἐν πόνοις<note place="unspecified">olim pro epodo habitum: rectius in stropham et antistr. divisti Hermann</note></l>
+            <l n="426">δαμέντ᾽ [ἀδαμαντοδέτοις<note place="unspecified"><foreign xml:lang="grc">ἀδαμαντοδέτοις</foreign> (rec.: <foreign xml:lang="grc">ἀκαμαντοδέτοις</foreign> codd. cett.) <foreign xml:lang="grc">λύμαις</foreign> ut ex 148 translatum, <foreign xml:lang="grc">Τιτᾶνα</foreign> ut errore adscriptum, seclusit Heimsoeth: fortasse cum eodem <foreign xml:lang="grc">εἰδόμαν θεῶν</foreign> (vel <foreign xml:lang="grc">θεὸν</foreign> M) <foreign xml:lang="grc">δάμεντ᾽</foreign> legendum</note></l>
+            <l n="427">Τιτᾶνα λύμαις] εἰσιδόμαν θεῶν,</l>
+            <l n="428">Ἄτλαντος<note place="unspecified"><foreign xml:lang="grc">Ἄτλαντος</foreign> Halm: <foreign xml:lang="grc">Ἄτλανθ᾽ ὃς</foreign> recc.: <foreign xml:lang="grc">Ἄτλανθ᾽ ὡς</foreign> M</note> [αἰὲν<note place="unspecified"><foreign xml:lang="grc">αἰὲν</foreign> seclusit Halm</note>] ὑπέροχον<note place="unspecified"><foreign xml:lang="grc">ὑπέροχον</foreign> rec.: <foreign xml:lang="grc">ὑπείροχον</foreign> codd. cett.</note> σθένος κραταιόν,</l>
+            <l n="429">&lt;ὃς γᾶν<note place="unspecified"><foreign xml:lang="grc">ὃς γᾶν</foreign> add. Halm</note>&gt; οὐράνιόν τε πόλον</l>
+            <l n="430">νώτοις ὑποστενάζει.†</l>
+          </sp>
+        </div>
+        <div type="textpart" subtype="epode">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="431">βοᾷ δὲ πόντιος κλύδων</l>
+            <l n="432">ξυμπίτνων, στένει βυθός,<note place="unspecified"><foreign xml:lang="grc">βυθός</foreign> recc.: <foreign xml:lang="grc">βαθὺς</foreign> M</note></l>
+            <l n="433">κελαινὸς [δ᾽<note place="unspecified"><foreign xml:lang="grc">δ᾽</foreign> seclusit Lachmann</note>] Ἄιδος ὑποβρέμει μυχὸς γᾶς,</l>
+            <l n="434">παγαί θ᾽ ἁγνορύτων<note place="unspecified"><foreign xml:lang="grc">ἁγνορύτων</foreign> ex <foreign xml:lang="grc">ἁγνωρύτων</foreign> factum M</note> ποταμῶν</l>
+            <l n="435">στένουσιν ἄλγος οἰκτρόν.</l>
+            <milestone ed="p" n="436" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="episode">
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="436">μή τοι χλιδῇ δοκεῖτε μηδ᾽ αὐθαδίᾳ</l>
+          <l n="437">σιγᾶν με: συννοίᾳ δὲ δάπτομαι κέαρ,</l>
+          <l n="438">ὁρῶν ἐμαυτὸν ὧδε προυσελούμενον.<note place="unspecified"><foreign xml:lang="grc">προυσελούμενον</foreign> Askew: <foreign xml:lang="grc">προσηλούμενον</foreign> (<foreign xml:lang="grc">ε</foreign> supra scr.) M</note></l>
+          <l n="439">καίτοι θεοῖσι τοῖς νέοις τούτοις γέρα</l>
+          <l n="440">τίς ἄλλος ἢ ᾽γὼ παντελῶς διώρισεν;</l>
+          <l n="441">ἀλλ᾽ αὐτὰ σιγῶ. καὶ γὰρ εἰδυίαισιν ἂν</l>
+          <l n="442">ὑμῖν λέγοιμι: τἀν βροτοῖς δὲ πήματα</l>
+          <l n="443">ἀκούσαθ᾽, ὥς σφας<note place="unspecified"><foreign xml:lang="grc">ὥσφας</foreign> M</note> νηπίους ὄντας τὸ πρὶν</l>
+          <l n="444">ἔννους ἔθηκα καὶ φρενῶν ἐπηβόλους.</l>
+          <l n="445">λέξω δέ, μέμψιν οὔτιν᾽ ἀνθρώποις ἔχων,</l>
+          <l n="446">ἀλλ᾽ ὧν δέδωκ᾽ εὔνοιαν ἐξηγούμενος:</l>
+          <l n="447"><milestone ed="P" unit="para"/>οἳ πρῶτα μὲν βλέποντες ἔβλεπον μάτην,</l>
+          <l n="448">κλύοντες οὐκ ἤκουον, ἀλλ᾽ ὀνειράτων</l>
+          <l n="449">ἀλίγκιοι μορφαῖσι τὸν μακρὸν βίον</l>
+          <l n="450">ἔφυρον εἰκῆ πάντα, κοὔτε πλινθυφεῖς</l>
+          <l n="451">δόμους προσείλους<note place="unspecified"><foreign xml:lang="grc">προσείλους</foreign> recc.: <foreign xml:lang="grc">προσήλους</foreign> (<foreign xml:lang="grc">ει</foreign> supra <foreign xml:lang="grc">η</foreign> scr.) M</note> ᾖσαν, οὐ ξυλουργίαν:</l>
+          <l n="452">κατώρυχες δ᾽ ἔναιον ὥστ᾽ ἀήσυροι</l>
+          <l n="453">μύρμηκες ἄντρων ἐν μυχοῖς ἀνηλίοις.</l>
+          <l n="454">ἦν δ᾽ οὐδὲν αὐτοῖς οὔτε χείματος τέκμαρ</l>
+          <l n="455">οὔτ᾽ ἀνθεμώδους ἦρος οὔτε καρπίμου</l>
+          <l n="456">θέρους βέβαιον, ἀλλ᾽ ἄτερ γνώμης τὸ πᾶν</l>
+          <l n="457">ἔπρασσον, ἔστε δή σφιν ἀντολὰς ἐγὼ</l>
+          <l n="458">ἄστρων ἔδειξα τάς τε δυσκρίτους δύσεις.</l>
+          <l n="459"><milestone ed="P" unit="para"/>καὶ μὴν ἀριθμόν, ἔξοχον σοφισμάτων,<note place="unspecified"><foreign xml:lang="grc">σοφισμάτων</foreign> recc.: <foreign xml:lang="grc">νοσφισμάτων</foreign> M, <foreign xml:lang="grc">σοφις</foreign> in margine m<hi rend="sub">1</hi></note></l>
+          <l n="460">ἐξηῦρον αὐτοῖς, γραμμάτων τε συνθέσεις,</l>
+          <l n="461">μνήμην θ᾽<note place="unspecified"><foreign xml:lang="grc">θ᾽</foreign> recc., et in M supra scripsit m<hi rend="sub">1</hi></note> ἁπάντων, μουσομήτορ᾽ ἐργάνην.<note place="unspecified"><foreign xml:lang="grc">ἐργάνην</foreign> Stobaeus, Flor. 71, 1 et nota in rec. adscripta: <foreign xml:lang="grc">ἐργάτιν</foreign> (<foreign xml:lang="grc">τιν</foreign> in litura m<hi rend="sub">1</hi>) M</note></l>
+          <l n="462">κἄζευξα πρῶτος ἐν ζυγοῖσι κνώδαλα</l>
+          <l n="463">ζεύγλαισι δουλεύοντα σάγμασίν<note place="unspecified"><foreign xml:lang="grc">σάγμασίν</foreign> Pauw: <foreign xml:lang="grc">σώμασιν</foreign> M</note> θ᾽, ὅπως</l>
+          <l n="464">θνητοῖς μεγίστων διάδοχοι μοχθημάτων</l>
+          <l n="465">γένοινθ᾽,<note place="unspecified"><foreign xml:lang="grc">γένοινθ᾽</foreign> Dawes: <foreign xml:lang="grc">γένωνθ᾽</foreign> codd.</note> ὑφ᾽ ἅρμα τ᾽ ἤγαγον φιληνίους</l>
+          <l n="466">ἵππους, ἄγαλμα τῆς ὑπερπλούτου χλιδῆς.</l>
+          <l n="467">θαλασσόπλαγκτα δ᾽ οὔτις ἄλλος ἀντ᾽ ἐμοῦ</l>
+          <l n="468">λινόπτερ᾽ ηὗρε ναυτίλων<note place="unspecified"><foreign xml:lang="grc">ναυτίλων</foreign> recc.: <foreign xml:lang="grc">ναυτιλόχων</foreign> M</note> ὀχήματα.</l>
+          <l n="469"><milestone ed="P" unit="para"/>τοιαῦτα μηχανήματ᾽ ἐξευρὼν τάλας</l>
+          <l n="470">βροτοῖσιν, αὐτὸς οὐκ ἔχω σόφισμ᾽ ὅτῳ<note place="unspecified"><foreign xml:lang="grc">σόφισμ᾽ ὅτῳ</foreign> recc.: <foreign xml:lang="grc">σοφισμάτων</foreign> (<foreign xml:lang="grc">ὅτω</foreign> supra scr. m<hi rend="sub">1</hi>) M</note></l>
+          <l n="471">τῆς νῦν παρούσης πημονῆς ἀπαλλαγῶ.</l>
+          <milestone ed="p" n="472" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="472">πέπονθας αἰκὲς<note place="unspecified"><foreign xml:lang="grc">αἰκὲς</foreign> Porson: <foreign xml:lang="grc">ἀεικὲς</foreign> codd.</note> πῆμ᾽: ἀποσφαλεὶς φρενῶν</l>
+          <l n="473">πλανᾷ, κακὸς δ᾽ ἰατρὸς ὥς τις ἐς νόσον</l>
+          <l n="474">πεσὼν ἀθυμεῖς καὶ σεαυτὸν οὐκ ἔχεις</l>
+          <l n="475">εὑρεῖν ὁποίοις φαρμάκοις ἰάσιμος.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="476">τὰ λοιπά μου κλύουσα θαυμάσει πλέον,</l>
+          <l n="477">οἵας τέχνας τε καὶ πόρους ἐμησάμην.</l>
+          <l n="478">τὸ μὲν μέγιστον, εἴ τις ἐς νόσον πέσοι,</l>
+          <l n="479">οὐκ ἦν ἀλέξημ᾽ οὐδέν, οὔτε<note place="unspecified"><foreign xml:lang="grc">οὔτε</foreign> recc.: <foreign xml:lang="grc">οὐδε</foreign> M</note> βρώσιμον,</l>
+          <l n="480">οὐ χριστόν, οὔτε πιστόν, ἀλλὰ φαρμάκων</l>
+          <l n="481">χρείᾳ κατεσκέλλοντο, πρίν γ᾽ ἐγώ σφισιν</l>
+          <l n="482">ἔδειξα κράσεις ἠπίων ἀκεσμάτων,</l>
+          <l n="483">αἷς τὰς ἁπάσας ἐξαμύνονται νόσους.</l>
+          <l n="484">τρόπους τε πολλοὺς μαντικῆς ἐστοίχισα,</l>
+          <l n="485">κἄκρινα πρῶτος ἐξ ὀνειράτων ἃ χρὴ</l>
+          <l n="486">ὕπαρ γενέσθαι, κληδόνας τε δυσκρίτους</l>
+          <l n="487">ἐγνώρισ᾽ αὐτοῖς: ἐνοδίους τε συμβόλους:</l>
+          <l n="488">γαμψωνύχων τε πτῆσιν οἰωνῶν σκεθρῶς</l>
+          <l n="489">διώρισ᾽, οἵτινές τε δεξιοὶ φύσιν</l>
+          <l n="490">εὐωνύμους τε, καὶ δίαιταν ἥντινα</l>
+          <l n="491">ἔχουσ᾽ ἕκαστοι, καὶ πρὸς ἀλλήλους τίνες</l>
+          <l n="492">ἔχθραι τε καὶ στέργηθρα καὶ συνεδρίαι:</l>
+          <l n="493">σπλάγχνων τε λειότητα, καὶ χροιὰν τίνα</l>
+          <l n="494">ἔχοντ᾽ ἂν εἴη δαίμοσιν πρὸς ἡδονήν,</l>
+          <l n="495">χολῆς λοβοῦ τε ποικίλην εὐμορφίαν:</l>
+          <l n="496">κνίσῃ τε κῶλα συγκαλυπτὰ καὶ μακρὰν</l>
+          <l n="497">ὀσφῦν πυρώσας δυστέκμαρτον ἐς τέχνην</l>
+          <l n="498">ὥδωσα θνητούς, καὶ φλογωπὰ σήματα</l>
+          <l n="499">ἐξωμμάτωσα, πρόσθεν ὄντ᾽ ἐπάργεμα.</l>
+          <l n="500">τοιαῦτα μὲν δὴ ταῦτ᾽: ἔνερθε δὲ χθονὸς</l>
+          <l n="501">κεκρυμμέν᾽ ἀνθρώποισιν ὠφελήματα,</l>
+          <l n="502">χαλκόν, σίδηρον,<note place="unspecified"><foreign xml:lang="grc">σίδηρον</foreign> recc.: <foreign xml:lang="grc">σίδαρον</foreign> M</note> ἄργυρον, χρυσόν τε<note place="unspecified"><foreign xml:lang="grc">τε</foreign> recc.: <foreign xml:lang="grc">δὲ</foreign> M</note> τίς</l>
+          <l n="503">φήσειεν ἂν πάροιθεν ἐξευρεῖν ἐμοῦ;</l>
+          <l n="504">οὐδείς, σάφ᾽ οἶδα, μὴ μάτην φλύσαι θέλων.</l>
+          <l n="505">βραχεῖ δὲ μύθῳ πάντα<note place="unspecified"><foreign xml:lang="grc">πάντα</foreign> recc.: <foreign xml:lang="grc">ταῦτα</foreign> M</note> συλλήβδην μάθε,</l>
+          <l n="506">πᾶσαι τέχναι βροτοῖσιν ἐκ Προμηθέως.</l>
+          <milestone ed="p" n="507" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="507">μή νυν βροτοὺς μὲν ὠφέλει καιροῦ πέρα,</l>
+          <l n="508">σαυτοῦ δ᾽ ἀκήδει δυστυχοῦντος: ὡς ἐγὼ</l>
+          <l n="509">εὔελπίς εἰμι τῶνδέ σ᾽ ἐκ δεσμῶν ἔτι</l>
+          <l n="510">λυθέντα μηδὲν μεῖον ἰσχύσειν Διός.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="511">οὐ ταῦτα ταύτῃ Μοῖρά πω τελεσφόρος</l>
+          <l n="512">κρᾶναι πέπρωται, μυρίαις δὲ πημοναῖς</l>
+          <l n="513">δύαις τε καμφθεὶς ὧδε δεσμὰ φυγγάνω:</l>
+          <l n="514">τέχνη δ᾽ ἀνάγκης ἀσθενεστέρα μακρῷ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="515">τίς οὖν ἀνάγκης ἐστὶν οἰακοστρόφος;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="516">Μοῖραι τρίμορφοι μνήμονές τ᾽ Ἐρινύες.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="517">τούτων ἄρα Ζεύς ἐστιν ἀσθενέστερος;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="518">οὔκουν ἂν ἐκφύγοι γε τὴν πεπρωμένην.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="519">τί γὰρ πέπρωται Ζηνὶ πλὴν<note place="unspecified"><foreign xml:lang="grc">πλὴν</foreign> recc.: <foreign xml:lang="grc">πρὶν</foreign> M</note> ἀεὶ κρατεῖν;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="520">τοῦτ᾽ οὐκέτ᾽ ἂν πύθοιο μηδὲ λιπάρει.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="521">ἦ πού τι σεμνόν ἐστιν ὃ ξυναμπέχεις.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="522">ἄλλου λόγου μέμνησθε, τόνδε δ᾽ οὐδαμῶς</l>
+          <l n="523">καιρὸς γεγωνεῖν, ἀλλὰ συγκαλυπτέος</l>
+          <l n="524">ὅσον μάλιστα: τόνδε γὰρ σῴζων ἐγὼ</l>
+          <l n="525">δεσμοὺς ἀεικεῖς καὶ δύας ἐκφυγγάνω.</l>
+          <milestone ed="p" n="526" unit="card"/>
+        </sp>
+      </div>
+      <div type="textpart" subtype="choral">
+        <div type="textpart" subtype="strophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="526">μηδάμ᾽ ὁ πάντα νέμων</l>
+            <l n="527">θεῖτ᾽<note place="unspecified"><foreign xml:lang="grc">θεῖτο</foreign> M</note> ἐμᾷ γνώμᾳ κράτος</l>
+            <l n="528">ἀντίπαλον Ζεύς,</l>
+            <l n="529">μηδ᾽ ἐλινύσαιμι θεοὺς ὁσίαις</l>
+            <l n="530">θοίναις ποτινισσομένα</l>
+            <l n="531">βουφόνοις παρ᾽ Ὠκεανοῦ πατρὸς ἄ-</l>
+            <l n="532">σβεστον πόρον,</l>
+            <l n="533">μηδ᾽ ἀλίτοιμι λόγοις:</l>
+            <l n="534">μάλα μοι τοῦτ᾽<note place="unspecified"><foreign xml:lang="grc">μάλα μοι τοῦτ᾽</foreign> Hermann: <foreign xml:lang="grc">ἀλλά μοι τόδ᾽</foreign> codd.</note> ἐμμένοι</l>
+            <l n="535">καὶ μήποτ᾽ ἐκτακείη:</l>
+            <milestone ed="p" n="537" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="536">ἁδύ τι θαρσαλέαις</l>
+            <l n="537">τὸν μακρὸν τείνειν βίον</l>
+            <l n="538">ἐλπίσι, φαναῖς</l>
+            <l n="539">θυμὸν ἀλδαίνουσαν ἐν εὐφροσύναις.</l>
+            <l n="540">φρίσσω δέ σε δερκομένα</l>
+            <l n="541">μυρίοις μόχθοις<note place="unspecified"><foreign xml:lang="grc">γυιοφθόροις</foreign> supplet Dindorf</note> διακναιόμενον</l>
+            <l n="542">???Ζῆνα γὰρ οὐ τρομέων</l>
+            <l n="543">ἰδίᾳ γνώμᾳ σέβει</l>
+            <l n="544">θνατοὺς ἄγαν, Προμηθεῦ.</l>
+            <milestone ed="p" n="545" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="strophe" n="2">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="545">φέρ᾽ ὅπως ἄχαρις χάρις,<note place="unspecified"><foreign xml:lang="grc">ἄχαρις χάρις</foreign> Turnebus: <foreign xml:lang="grc">χάρις ἄχαρις</foreign> codd.</note> ὦ φίλος, εἰ-</l>
+            <l n="546">πὲ ποῦ τις ἀλκά;</l>
+            <l n="547">τίς ἐφαμερίων ἄρηξις; οὐδ᾽ ἐδέρχθης</l>
+            <l n="548">ὀλιγοδρανίαν ἄκικυν,</l>
+            <l n="549">ἰσόνειρον, ᾇ τὸ φωτῶν</l>
+            <l n="550">ἀλαὸν &lt;δέδεται<note place="unspecified"><foreign xml:lang="grc">δέδεται</foreign> add. Hermann, Meineke</note>&gt; γένος ἐμπεποδισμένον:</l>
+            <l n="551">οὔπως<note place="unspecified"><foreign xml:lang="grc">οὔπως</foreign> Paley: <foreign xml:lang="grc">οὔποτε</foreign> codd.</note> τὰν Διὸς ἁρμονίαν</l>
+            <l n="552">θνατῶν παρεξίασι βουλαί.</l>
+            <milestone ed="p" n="552" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="2">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="553">ἔμαθον τάδε σὰς προσιδοῦσ᾽<note place="unspecified"><foreign xml:lang="grc">προσιδοῦσ᾽</foreign> recc.: <foreign xml:lang="grc">προϊδοῦσ᾽</foreign> M</note> ὀλοὰς</l>
+            <l n="554">τύχας, Προμηθεῦ.</l>
+            <l n="555">τὸ διαμφίδιον δέ μοι μέλος προσέπτα</l>
+            <l n="555">τόδ᾽ ἐκεῖνό θ᾽ ὅ τ᾽<note place="unspecified"><foreign xml:lang="grc">ἐκεῖνό θ᾽ ὅτ᾽</foreign> Brunck: <foreign xml:lang="grc">ἐκεῖν᾽ ὅτε τότ᾽</foreign> M: <foreign xml:lang="grc">ἐκεῖνό τε, ὅτ᾽</foreign> rec.</note> ἀμφὶ λουτρὰ</l>
+            <l n="556">καὶ λέχος σὸν ὑμεναίουν</l>
+            <l n="557">ἰότατι γάμων, ὅτε τὰν ὁμοπάτριον</l>
+            <l n="558">ἕδνοις ἄγαγες Ἡσιόναν</l>
+            <l n="560">πείθων<note place="unspecified"><foreign xml:lang="grc">πείθων</foreign> M, postea mutatum in <foreign xml:lang="grc">πιθών</foreign></note> δάμαρτα κοινόλεκτρον.</l>
+            <milestone ed="p" n="561" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="episode">
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="561">τίς γῆ; τί γένος; τίνα φῶ λεύσσειν</l>
+            <l n="562">τόνδε χαλινοῖς<note place="unspecified"><foreign xml:lang="grc">χαλινοῖς</foreign> recc.: <foreign xml:lang="grc">χαλινοῖσιν</foreign> M</note> ἐν πετρίνοισιν</l>
+            <l n="563">χειμαζόμενον;</l>
+            <l n="564">τίνος ἀμπλακίας ποινὰς ὀλέκει;</l>
+            <l n="565">σήμηνον ὅποι</l>
+            <l n="565">γῆς ἡ μογερὰ πεπλάνημαι.</l>
+            <milestone ed="p" n="566" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="lyric">
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="566">ἆ ἆ,</l>
+            <l n="567">χρίει τις αὖ με τὰν τάλαιναν οἶστρος:</l>
+            <l n="568">εἴδωλον Ἄργου γηγενοῦς, ἄλευ᾽ ἆ δᾶ:<note place="unspecified"><foreign xml:lang="grc">ἄλευ ἆ δᾶ</foreign> M</note> φοβοῦμαι,<note place="unspecified"><foreign xml:lang="grc">φοβοῦμαι</foreign> omittunt recc. duo, et suspectum</note></l>
+            <l n="569">τὸν μυριωπὸν εἰσορῶσα βούταν.</l>
+            <l n="570">ὁ δὲ πορεύεται δόλιον ὄμμ᾽ ἔχων,</l>
+            <l n="570">ὃν οὐδὲ κατθανόντα γαῖα κεύθει.</l>
+            <l n="571">ἀλλ᾽ ἐμὲ τὰν τάλαιναν</l>
+            <l n="572">ἐξ ἐνέρων περῶν κυναγεῖ,<note place="unspecified"><foreign xml:lang="grc">κυναγεῖ</foreign> Hermann: <foreign xml:lang="grc">κυνηγετεῖ</foreign> codd.</note> πλανᾷ</l>
+            <l n="573">τε νῆστιν ἀνὰ τὰν παραλίαν ψάμμαν.</l>
+            <milestone ed="p" n="575" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="choral">
+        <div type="textpart" subtype="strophe" n="1">
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="574">ὑπὸ δὲ κηρόπλαστος ὀτοβεῖ δόναξ</l>
+            <l n="575">ἀχέτας ὑπνοδόταν νόμον: ἰὼ ἰὼ πόποι,<note place="unspecified"><foreign xml:lang="grc">πόποι</foreign> Seidler: <foreign xml:lang="grc">ποῖ ποῖ π᾽ όπ᾽ οἰ π᾽ όπ᾽ οἰ</foreign> M</note></l>
+            <l n="576">ποῖ μ᾽<note place="unspecified"><foreign xml:lang="grc">ποῖ μ᾽</foreign> recc.: <foreign xml:lang="grc">πῇ μ᾽</foreign> M</note> ἄγουσ᾽<note place="unspecified"><foreign xml:lang="grc">ἄγουσ᾽ ὦ πόποι</foreign> scripsi: <foreign xml:lang="grc">ἄγουσι</foreign> M</note> &lt;ὦ πόποι&gt; τηλέπλανοι<note place="unspecified"><foreign xml:lang="grc">τηλέπλανοι</foreign> Seidler: <foreign xml:lang="grc">τηλέπλαγκτοι</foreign> M <foreign xml:lang="grc">πλάναι</foreign> m<hi rend="sub">1</hi>, recc.: <foreign xml:lang="grc">πλάνοι</foreign> M</note> πλάναι;</l>
+            <l n="577">τί ποτέ μ᾽, ὦ Κρόνιε παῖ, τί ποτε</l>
+            <l n="578">ταῖσδ᾽ ἐνέζευξας εὑρὼν ἁμαρτοῦσαν ἐν</l>
+            <l n="579">πημοσύναις,<note place="unspecified"><foreign xml:lang="grc">πημοσύναις</foreign> Hermann: <foreign xml:lang="grc">πημοναῖσιν</foreign> codd.</note> ἐή,<note place="unspecified"><foreign xml:lang="grc">ἐή</foreign> Dindorf: <foreign xml:lang="grc">ἓ ἕ</foreign> M</note></l>
+            <l n="580">οἰστρηλάτῳ δὲ δείματι δειλαίαν</l>
+            <l n="581">παράκοπον ὧδε τείρεις;</l>
+            <l n="582">πυρί &lt;με&gt;<note place="unspecified"><foreign xml:lang="grc">με</foreign> add. Elmsley</note> φλέξον, ἢ χθονὶ κάλυψον, ἢ ποντίοις</l>
+            <l n="583">δάκεσι δὸς βοράν,</l>
+            <l n="584">μηδέ μοι φθονήσῃς</l>
+            <l n="585">εὐγμάτων, ἄναξ.</l>
+            <l n="585">ἄδην με πολύπλανοι πλάναι</l>
+            <l n="586">γεγυμνάκασιν, οὐδ᾽ ἔχω μαθεῖν ὅπα</l>
+            <l n="587">πημονὰς ἀλύξω.</l>
+            <l n="588">κλύεις φθέγμα τᾶς βούκερω παρθένου;</l>
+            <milestone ed="p" n="589" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="589">πῶς δ᾽ οὐ κλύω τῆς οἰστροδινήτου κόρης,</l>
+            <l n="590">τῆς Ἰναχείας; ἣ Διὸς θάλπει κέαρ</l>
+            <l n="591">ἔρωτι, καὶ νῦν τοὺς ὑπερμήκεις δρόμους</l>
+            <l n="592">Ἥρᾳ στυγητὸς πρὸς βίαν γυμνάζεται.</l>
+            <milestone ed="p" n="593" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="1">
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="593">πόθεν ἐμοῦ σὺ πατρὸς ὄνομ᾽ ἀπύεις;</l>
+            <l n="594">εἰπέ μοι τᾷ μογερᾷ τίς ὤν, τίς ἄρα μ᾽, ὦ τάλας,</l>
+            <l n="595">τὰν ταλαίπωρον ὧδ᾽ ἔτυμα προσθροεῖς:</l>
+            <l n="596">θεόσυτόν<note place="unspecified"><foreign xml:lang="grc">θεόσσυτόν</foreign> codd.</note> τε νόσον ὠνόμασας,</l>
+            <l n="597">ἃ μαραίνει με χρίουσα κέντροις, ἰώ,<note place="unspecified"><foreign xml:lang="grc">κέντροις, ἰώ,</foreign> Reisig: <foreign xml:lang="grc">κέντροισι</foreign> codd.</note></l>
+            <l n="598">φοιταλέοις, ἐή.<note place="unspecified"><foreign xml:lang="grc">φοιταλέοισιν ἐ: έ</foreign> M</note></l>
+            <l n="599">σκιρτημάτων δὲ νήστισιν αἰκίαις</l>
+            <l n="600">λαβρόσυτος<note place="unspecified"><foreign xml:lang="grc">λαβρόσσυτος</foreign> codd.</note> ἦλθον, &lt;Ἥρασ&gt;<note place="unspecified"><foreign xml:lang="grc">Ἥρας</foreign> ex schol. add. Hermann</note></l>
+            <l n="601">ἐπικότοισι μήδεσι δαμεῖσα. δυσδαιμόνων</l>
+            <l n="602">δὲ τίνες οἵ, ἐή,<note place="unspecified"><foreign xml:lang="grc">ἐή</foreign>] <foreign xml:lang="grc">ἓ ἕ</foreign> M</note></l>
+            <l n="603">οἷ᾽ ἐγὼ μογοῦσιν;</l>
+            <l n="604">ἀλλά μοι τορῶς</l>
+            <l n="605">τέκμηρον ὅ τι μ᾽ ἐπαμμένει</l>
+            <l n="606">παθεῖν, τί μῆχαρ, ἢ τί<note place="unspecified"><foreign xml:lang="grc">τί μῆχαρ, τί</foreign> Elmsley, <foreign xml:lang="grc">ἢ</foreign> add. Martin: <foreign xml:lang="grc">τί μὴ χρὴ</foreign> M</note> φάρμακον νόσου,</l>
+            <l n="607">δεῖξον, εἴπερ οἶσθα:</l>
+            <l n="608">θρόει, φράζε τᾷ<note place="unspecified"><foreign xml:lang="grc">φράζε τᾷ</foreign> recc.: <foreign xml:lang="grc">φράξετε</foreign> M</note> δυσπλάνῳ παρθένῳ.</l>
+            <milestone ed="p" n="609" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="episode">
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="609">λέξω τορῶς σοι πᾶν ὅπερ<note place="unspecified"><foreign xml:lang="grc">ὅπερ</foreign> ex Etym. M. 762, 30 Porson: <foreign xml:lang="grc">ὅτι</foreign> M</note> χρῄζεις μαθεῖν,</l>
+          <l n="610">οὐκ ἐμπλέκων αἰνίγματ᾽, ἀλλ᾽ ἁπλῷ λόγῳ,</l>
+          <l n="611">ὥσπερ δίκαιον πρὸς φίλους οἴγειν στόμα.</l>
+          <l n="612">πυρὸς βροτοῖς δοτῆρ᾽ ὁρᾷς Προμηθέα.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="613">ὦ κοινὸν ὠφέλημα θνητοῖσιν φανείς,</l>
+          <l n="614">τλῆμον Προμηθεῦ, τοῦ δίκην πάσχεις τάδε;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="615">ἁρμοῖ πέπαυμαι τοὺς ἐμοὺς θρηνῶν πόνους.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="616">οὔκουν πόροις ἂν τήνδε δωρεὰν ἐμοί;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="617">λέγ᾽ ἥντιν᾽ αἰτεῖ: πᾶν γὰρ ἂν<note place="unspecified"><foreign xml:lang="grc">ἂν</foreign> recc.: <foreign xml:lang="grc">οὖν</foreign> M</note> πύθοιό μου.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="618">σήμηνον ὅστις ἐν φάραγγί σ᾽ ὤχμασε.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="619">βούλευμα μὲν τὸ Δῖον, Ἡφαίστου δὲ χείρ.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="620">ποίων δὲ ποινὰς ἀμπλακημάτων τίνεις;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="621">τοσοῦτον ἀρκῶ σοι σαφηνίσας<note place="unspecified"><foreign xml:lang="grc">σαφηνίσας</foreign> Linwood: <foreign xml:lang="grc">σαφηνήσαι</foreign> mutatum in <foreign xml:lang="grc">σαφηνίσαι</foreign> M</note> μόνον.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="622">καὶ πρός γε τούτοις τέρμα τῆς ἐμῆς πλάνης</l>
+          <l n="623">δεῖξον τίς ἔσται τῇ ταλαιπώρῳ χρόνος.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="624">τὸ μὴ μαθεῖν σοι κρεῖσσον ἢ μαθεῖν τάδε.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="625">μήτοι με κρύψῃς τοῦθ᾽ ὅπερ μέλλω παθεῖν.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="626">ἀλλ᾽ οὐ μεγαίρω τοῦδέ σοι<note place="unspecified"><foreign xml:lang="grc">τοῦδέ σοι</foreign> Turnebus: <foreign xml:lang="grc">τοῦδε τοῦ</foreign> codd.</note> δωρήματος.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="627">τί δῆτα μέλλεις μὴ<note place="unspecified"><foreign xml:lang="grc">μὴ</foreign> M, <foreign xml:lang="grc">οὐ</foreign> supra scr. m</note> οὐ γεγωνίσκειν τὸ πᾶν;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="628">φθόνος μὲν οὐδείς, σὰς δ᾽ ὀκνῶ θρᾶξαι φρένας.</l>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="629">μή μου προκήδου μᾶσσον ὧν<note place="unspecified"><foreign xml:lang="grc">ὧν</foreign> Hermann: <foreign xml:lang="grc">ὡς</foreign> codd.</note> ἐμοὶ γλυκύ.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="630">ἐπεὶ προθυμεῖ, χρὴ λέγειν: ἄκουε δή.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="631">μήπω γε: μοῖραν δ᾽ ἡδονῆς κἀμοὶ πόρε.</l>
+          <l n="632">τὴν τῆσδε πρῶτον ἱστορήσωμεν νόσον,</l>
+          <l n="633">αὐτῆς λεγούσης τὰς πολυφθόρους τύχας:</l>
+          <l n="634">τὰ λοιπὰ δ᾽ ἄθλων σοῦ διδαχθήτω πάρα.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="635">σὸν ἔργον, Ἰοῖ, ταῖσδ᾽ ὑπουργῆσαι χάριν,</l>
+          <l n="636">ἄλλως τε πάντως καὶ κασιγνήταις πατρός.</l>
+          <l n="637">ὡς τἀποκλαῦσαι κἀποδύρασθαι τύχας</l>
+          <l n="638">ἐνταῦθ᾽, ὅπου<note place="unspecified"><foreign xml:lang="grc">ὅπου</foreign> Ellendt: <foreign xml:lang="grc">ὅποι</foreign> M</note> μέλλοι τις οἴσεσθαι δάκρυ</l>
+          <l n="639">πρὸς τῶν κλυόντων, ἀξίαν τριβὴν ἔχει.</l>
+          <milestone ed="p" n="640" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Ἰώ</speaker>
+          <l n="640">οὐκ οἶδ᾽ ὅπως ὑμῖν &lt;γ᾽&gt;<note place="unspecified"><foreign xml:lang="grc">γ᾽</foreign> add. Paley</note> ἀπιστῆσαί με χρή,</l>
+          <l n="641">σαφεῖ δὲ μύθῳ πᾶν ὅπερ προσχρῄζετε</l>
+          <l n="642">πεύσεσθε: καίτοι καὶ λέγουσ᾽ ὀδύρομαι</l>
+          <l n="643">θεόσσυτον χειμῶνα καὶ διαφθορὰν</l>
+          <l n="644">μορφῆς, ὅθεν μοι σχετλίᾳ προσέπτατο.</l>
+          <l n="645"><milestone ed="P" unit="para"/>ἀεὶ γὰρ ὄψεις ἔννυχοι πωλεύμεναι</l>
+          <l n="646">ἐς παρθενῶνας τοὺς ἐμοὺς παρηγόρουν</l>
+          <l n="647">λείοισι μύθοις “ὦ μέγ᾽ εὔδαιμον<note place="unspecified"><foreign xml:lang="grc">εὐδαίμων</foreign> (<foreign xml:lang="grc">ο</foreign> suprascr. m) M</note> κόρη,</l>
+          <l n="648">τί παρθενεύει δαρόν, ἐξόν σοι γάμου</l>
+          <l n="649">τυχεῖν μεγίστου; Ζεὺς γὰρ ἱμέρου βέλει</l>
+          <l n="650">πρὸς σοῦ τέθαλπται καὶ συναίρεσθαι Κύπριν</l>
+          <l n="651">θέλει: σὺ δ᾽, ὦ παῖ, μὴ ᾽πολακτίσῃς λέχος</l>
+          <l n="652">τὸ Ζηνός, ἀλλ᾽ ἔξελθε πρὸς Λέρνης βαθὺν</l>
+          <l n="653">λειμῶνα, ποίμνας βουστάσεις τε πρὸς πατρός,</l>
+          <l n="654">ὡς ἂν τὸ Δῖον ὄμμα λωφήσῃ πόθου.”</l>
+          <l n="655"><milestone ed="P" unit="para"/>τοιοῖσδε πάσας εὐφρόνας ὀνείρασι</l>
+          <l n="656">συνειχόμην δύστηνος, ἔς τε δὴ πατρὶ</l>
+          <l n="657">ἔτλην γεγωνεῖν νυκτίφοιτα δείματα.<note place="unspecified"><foreign xml:lang="grc">νυκτίφοιτα δείματα</foreign> (ex Lycophr. 225) Nauck: <foreign xml:lang="grc">νυκτίφοιτ᾽ ὀνείρατα</foreign> recc.: <foreign xml:lang="grc">νυκτίφαντ᾽ ὀνείρατα</foreign> M</note></l>
+          <l n="658">ὁ δ᾽ ἔς τε Πυθὼ κἀπὶ Δωδώνης πυκνοὺς</l>
+          <l n="659">θεοπρόπους ἴαλλεν, ὡς μάθοι τί χρὴ</l>
+          <l n="660">δρῶντ᾽ ἢ λέγοντα δαίμοσιν πράσσειν φίλα.</l>
+          <l n="661">ἧκον δ᾽ ἀναγγέλλοντες αἰολοστόμους</l>
+          <l n="662">χρησμοὺς ἀσήμους δυσκρίτως τ᾽ εἰρημένους.</l>
+          <l n="663">τέλος δ᾽ ἐναργὴς βάξις ἦλθεν Ἰνάχῳ</l>
+          <l n="664">σαφῶς ἐπισκήπτουσα καὶ μυθουμένη</l>
+          <l n="665">ἔξω δόμων τε καὶ πάτρας ὠθεῖν ἐμέ,</l>
+          <l n="666">ἄφετον ἀλᾶσθαι γῆς ἐπ᾽ ἐσχάτοις ὅροις:</l>
+          <l n="667">κεἰ μὴ θέλοι, πυρωπὸν<note place="unspecified"><foreign xml:lang="grc">πυρωπὸν</foreign> recc.: <foreign xml:lang="grc">πυρωτὸν</foreign> M</note> ἐκ Διὸς μολεῖν</l>
+          <l n="668">κεραυνόν, ὃς πᾶν ἐξαϊστώσοι<note place="unspecified"><foreign xml:lang="grc">ἐξαϊστώσοι</foreign> Blomfield: <foreign xml:lang="grc">ἐξαϊστώσει</foreign> M</note> γένος.</l>
+          <l n="669"><milestone ed="P" unit="para"/>τοιοῖσδε πεισθεὶς Λοξίου μαντεύμασιν</l>
+          <l n="670">ἐξήλασέν με κἀπέκλῃσε δωμάτων</l>
+          <l n="671">ἄκουσαν ἄκων: ἀλλ᾽ ἐπηνάγκαζέ νιν</l>
+          <l n="672">Διὸς χαλινὸς πρὸς βίαν πράσσειν τάδε.</l>
+          <l n="673">εὐθὺς δὲ μορφὴ καὶ φρένες διάστροφοι</l>
+          <l n="674">ἦσαν, κεραστὶς δ᾽, ὡς ὁρᾶτ᾽, ὀξυστόμῳ</l>
+          <l n="675">μύωπι χρισθεῖσ᾽ ἐμμανεῖ σκιρτήματι</l>
+          <l n="676">ᾖσσον πρὸς εὔποτόν τε Κερχνείας ῥέος</l>
+          <l n="677">Λέρνης τε κρήνην:<note place="unspecified"><foreign xml:lang="grc">τε κρήνην</foreign> Canter: <foreign xml:lang="grc">ἄκρην τε</foreign> M</note> βουκόλος δὲ γηγενὴς</l>
+          <l n="678">ἄκρατος ὀργὴν Ἄργος ὡμάρτει, πυκνοῖς</l>
+          <l n="679">ὄσσοις δεδορκὼς τοὺς ἐμοὺς κατὰ στίβους.</l>
+          <l n="680">ἀπροσδόκητος δ᾽ αὐτὸν ἀφνίδιος<note place="unspecified"><foreign xml:lang="grc">ἀφνίδιος</foreign> Elmsley: <foreign xml:lang="grc">αἰφνίδιος</foreign> codd.: <foreign xml:lang="grc">ἄπτερος</foreign> ex Hesych. W. Headlam</note> μόρος</l>
+          <l n="681">τοῦ ζῆν ἀπεστέρησεν. οἰστροπλὴξ δ᾽ ἐγὼ</l>
+          <l n="682">μάστιγι θείᾳ γῆν πρὸ γῆς ἐλαύνομαι.</l>
+          <l n="683"><milestone ed="P" unit="para"/>κλύεις τὰ πραχθέντ᾽: εἰ δ᾽ ἔχεις εἰπεῖν ὅ τι</l>
+          <l n="684">λοιπὸν πόνων, σήμαινε: μηδέ μ᾽ οἰκτίσας</l>
+          <l n="685">σύνθαλπε μύθοις ψευδέσιν:<note place="unspecified"><foreign xml:lang="grc">ψεύδέσσιν</foreign> M</note> νόσημα γὰρ</l>
+          <l n="686">αἴσχιστον εἶναί φημι συνθέτους λόγους.</l>
+          <milestone ed="p" n="687" unit="card"/>
+        </sp>
+        <div type="textpart" subtype="lyric">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="687">ἔα ἔα, ἄπεχε, φεῦ:</l>
+            <l n="688">οὔποθ᾽ &lt;ὧδ᾽&gt;<note place="unspecified"><foreign xml:lang="grc">οὔποθ᾽ ὧδ᾽</foreign> Wecklein: <foreign xml:lang="grc">οὔποτ᾽</foreign> codd.</note> οὔποτ᾽ ηὔχουν<note place="unspecified"><foreign xml:lang="grc">ηὔχουν</foreign> schol., recc.: <foreign xml:lang="grc">ηὐχόμην</foreign> M</note> ξένους</l>
+            <l n="689">μολεῖσθαι λόγους εἰς ἀκοὰν ἐμάν,</l>
+            <l n="690">οὐδ᾽ ὧδε δυσθέατα καὶ<note place="unspecified"><foreign xml:lang="grc">καὶ</foreign> recc.: omittit M</note> δύσοιστα</l>
+            <l n="691">πήματα, λύματα, δείματα κέν-</l>
+            <l n="692">τρῳ ψύχειν ψυχὰν ἀμφάκει.<note place="unspecified"><foreign xml:lang="grc">δείματα κέντρῳ ψύχειν ψυχὰν ἀμφάκει</foreign> Weil: <foreign xml:lang="grc">δείματ᾽ ἀμφήκει κέντρῳ ψύχειν ψυχὰν ἐμάν</foreign> M</note></l>
+            <l n="693">ἰὼ ἰὼ μοῖρα μοῖρα,</l>
+            <l n="695">πέφρικ᾽ εἰσιδοῦσα<note place="unspecified"><foreign xml:lang="grc">εἰσιδοῦσα</foreign> recc.: <foreign xml:lang="grc">ἐσιδοῦσα</foreign> M</note> πρᾶξιν Ἰοῦς.</l>
+            <milestone ed="p" n="696" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="696">πρῴ γε στενάζεις καὶ φόβου πλέα τις εἶ:</l>
+            <l n="697">ἐπίσχες ἔστ᾽ ἂν καὶ τὰ λοιπὰ προσμάθῃς.</l>
+          </sp>
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="698">λέγ᾽, ἐκδίδασκε: τοῖς νοσοῦσί τοι γλυκὺ</l>
+            <l n="699">τὸ λοιπὸν ἄλγος προυξεπίστασθαι τορῶς.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="700">τὴν πρίν γε χρείαν<note place="unspecified"><foreign xml:lang="grc">χρείαν</foreign> recc.: <foreign xml:lang="grc">χρεῖαν τ᾽</foreign> M</note> ἠνύσασθ᾽ ἐμοῦ πάρα</l>
+            <l n="701">κούφως: μαθεῖν γὰρ τῆσδε πρῶτ᾽ ἐχρῄζετε</l>
+            <l n="702">τὸν ἀμφ᾽ ἑαυτῆς ἆθλον ἐξηγουμένης:</l>
+            <l n="703">τὰ λοιπὰ νῦν ἀκούσαθ᾽, οἷα χρὴ πάθη</l>
+            <l n="704">τλῆναι πρὸς Ἥρας τήνδε τὴν νεάνιδα.</l>
+            <l n="705">σύ τ᾽, Ἰνάχειον σπέρμα, τοὺς ἐμοὺς λόγους</l>
+            <l n="706">θυμῷ βάλ᾽,<note place="unspecified"><foreign xml:lang="grc">βάλ᾽</foreign> recc.: <foreign xml:lang="grc">μάθ᾽</foreign> M</note> ὡς ἂν τέρματ᾽ ἐκμάθῃς ὁδοῦ.</l>
+            <l n="707"><milestone ed="P" unit="para"/>πρῶτον μὲν ἐνθένδ᾽ ἡλίου πρὸς ἀντολὰς</l>
+            <l n="708">στρέψασα σαυτὴν στεῖχ᾽ ἀνηρότους γύας:</l>
+            <l n="709">Σκύθας δ᾽ ἀφίξει νομάδας, οἳ πλεκτὰς στέγας</l>
+            <l n="710">πεδάρσιοι ναίουσ᾽<note place="unspecified"><foreign xml:lang="grc">ναίουσ᾽</foreign> recc.: <foreign xml:lang="grc">νέουσ᾽</foreign> M</note> ἐπ᾽ εὐκύκλοις ὄχοις,</l>
+            <l n="711">ἑκηβόλοις τόξοισιν ἐξηρτυμένοι:<note place="unspecified"><foreign xml:lang="grc">ἐξηρτυμένοι</foreign> rec.: <foreign xml:lang="grc">ἐξηρτημένοι</foreign> M</note></l>
+            <l n="712">οἷς μὴ πελάζειν, ἀλλ᾽ ἁλιστόνοις πόδας<note place="unspecified"><foreign xml:lang="grc">πόδας</foreign> Turnebus: <foreign xml:lang="grc">γύποδας</foreign> codd.</note></l>
+            <l n="713">χρίμπτουσα ῥαχίαισιν ἐκπερᾶν χθόνα.</l>
+            <l n="714">λαιᾶς δὲ χειρὸς οἱ σιδηροτέκτονες</l>
+            <l n="715">οἰκοῦσι Χάλυβες, οὓς φυλάξασθαί σε χρή.</l>
+            <l n="716">ἀνήμεροι γὰρ οὐδὲ πρόσπλατοι<note place="unspecified"><foreign xml:lang="grc">πρόσπλατοι</foreign> Elmsley: <foreign xml:lang="grc">πρόσπλαστοι</foreign> codd.</note> ξένοις.</l>
+            <l n="717">ἥξεις δ᾽ Ὑβριστὴν ποταμὸν οὐ ψευδώνυμον,</l>
+            <l n="718">ὃν μὴ περάσῃς, οὐ γὰρ εὔβατος περᾶν,</l>
+            <l n="719">πρὶν ἂν πρὸς αὐτὸν Καύκασον μόλῃς, ὀρῶν</l>
+            <l n="720">ὕψιστον, ἔνθα ποταμὸς ἐκφυσᾷ μένος</l>
+            <l n="721">κροτάφων ἀπ᾽ αὐτῶν. ἀστρογείτονας δὲ χρὴ</l>
+            <l n="722">κορυφὰς ὑπερβάλλουσαν ἐς μεσημβρινὴν</l>
+            <l n="723">βῆναι κέλευθον, ἔνθ᾽ Ἀμαζόνων στρατὸν</l>
+            <l n="724">ἥξεις στυγάνορ᾽, αἳ Θεμίσκυράν ποτε</l>
+            <l n="725">κατοικιοῦσιν<note place="unspecified"><foreign xml:lang="grc">κατοικοῦσιν</foreign> (correctum in <foreign xml:lang="grc">κατοικιοῦσιν</foreign> m<hi rend="sub">1</hi>) M</note> ἀμφὶ Θερμώδονθ᾽, ἵνα</l>
+            <l n="726">τραχεῖα πόντου Σαλμυδησσία γνάθος</l>
+            <l n="727">ἐχθρόξενος ναύταισι, μητρυιὰ νεῶν:</l>
+            <l n="728">αὗταί σ᾽ ὁδηγήσουσι καὶ μάλ᾽ ἀσμένως.</l>
+            <l n="729">ἰσθμὸν δ᾽ ἐπ᾽ αὐταῖς στενοπόροις λίμνης πύλαις</l>
+            <l n="730">Κιμμερικὸν ἥξεις, ὃν θρασυσπλάγχνως σε χρὴ</l>
+            <l n="731">λιποῦσαν αὐλῶν᾽ ἐκπερᾶν Μαιωτικόν:</l>
+            <l n="732">ἔσται δὲ θνητοῖς εἰσαεὶ λόγος μέγας</l>
+            <l n="733">τῆς σῆς πορείας, Βόσπορος δ᾽ ἐπώνυμος</l>
+            <l n="734">κεκλήσεται. λιποῦσα δ᾽ Εὐρώπης πέδον</l>
+            <l n="735">ἤπειρον ἥξεις Ἀσιάδ᾽. ἆρ᾽ ὑμῖν δοκεῖ</l>
+            <l n="736">ὁ τῶν θεῶν τύραννος ἐς τὰ πάνθ᾽ ὁμῶς</l>
+            <l n="737">βίαιος εἶναι; τῇδε γὰρ θνητῇ θεὸς</l>
+            <l n="738">χρῄζων μιγῆναι τάσδ᾽ ἐπέρριψεν πλάνας.</l>
+            <l n="739">πικροῦ δ᾽ ἔκυρσας, ὦ κόρη, τῶν σῶν γάμων</l>
+            <l n="740">μνηστῆρος. οὓς γὰρ νῦν ἀκήκοας λόγους,</l>
+            <l n="741">εἶναι δόκει σοὶ μηδέπω ᾽ν<note place="unspecified"><foreign xml:lang="grc">μηδέπω ᾽ν</foreign> Turnebus: <foreign xml:lang="grc">μηδ᾽ ἐπῶν</foreign> codd.</note> προοιμίοις.</l>
+            <milestone ed="p" n="742" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="742">ἰώ μοί μοι, ἐή.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="743">σὺ δ᾽ αὖ κέκραγας κἀναμυχθίζει: τί που</l>
+            <l n="744">δράσεις, ὅταν τὰ λοιπὰ πυνθάνῃ κακά;</l>
+          </sp>
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="745">ἦ γάρ τι λοιπὸν τῇδε πημάτων ἐρεῖς;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="746">δυσχείμερόν γε πέλαγος ἀτηρᾶς δύης.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="747">τί δῆτ᾽ ἐμοὶ ζῆν κέρδος, ἀλλ᾽ οὐκ ἐν τάχει</l>
+            <l n="748">ἔρριψ᾽ ἐμαυτὴν τῆσδ᾽ ἀπὸ στύφλου πέτρας,</l>
+            <l n="749">ὅπως πέδοι<note place="unspecified"><foreign xml:lang="grc">πέδοι</foreign> Dindorf: <foreign xml:lang="grc">πέδω</foreign> M</note> σκήψασα τῶν πάντων πόνων</l>
+            <l n="750">ἀπηλλάγην; κρεῖσσον γὰρ εἰσάπαξ θανεῖν</l>
+            <l n="751">ἢ τὰς ἁπάσας ἡμέρας πάσχειν κακῶς.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="752">ἦ δυσπετῶς<note place="unspecified"><foreign xml:lang="grc">ἦ δυσπετῶς</foreign> recc.: <foreign xml:lang="grc">ἦδυπετῶς</foreign> correctum in <foreign xml:lang="grc">ἡδυπετῶς</foreign> M</note> ἂν τοὺς ἐμοὺς ἄθλους φέροις,</l>
+            <l n="753">ὅτῳ θανεῖν μέν ἐστιν οὐ πεπρωμένον:</l>
+            <l n="754">αὕτη γὰρ ἦν ἂν πημάτων ἀπαλλαγή:</l>
+            <l n="755">νῦν δ᾽ οὐδέν ἐστι τέρμα μοι προκείμενον</l>
+            <l n="756">μόχθων, πρὶν ἂν Ζεὺς ἐκπέσῃ τυραννίδος.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="757">ἦ γάρ ποτ᾽ ἔστιν ἐκπεσεῖν ἀρχῆς Δία;<note place="unspecified">hos tres vv. in M recitat Io</note></l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="758">ἥδοι᾽ ἄν,<note place="unspecified"><foreign xml:lang="grc">ἥδοι᾽ ἄν</foreign> Dawes: <foreign xml:lang="grc">ἥδοιο ἄν</foreign> rec.: <foreign xml:lang="grc">ἥδοιμ᾽ ἄν</foreign> M</note> οἶμαι, τήνδ᾽ ἰδοῦσα συμφοράν.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="759">πῶς δ᾽ οὐκ ἄν, ἥτις ἐκ Διὸς πάσχω κακῶς;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="760">ὡς τοίνυν ὄντων τῶνδέ σοι μαθεῖν<note place="unspecified"><foreign xml:lang="grc">σοι μαθεῖν</foreign> Turnebus: <foreign xml:lang="grc">μαθεῖν σοι</foreign> codd. (M in lit.)</note> πάρα.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="761">πρὸς τοῦ τύραννα σκῆπτρα συληθήσεται;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="762">πρὸς αὐτὸς αὑτοῦ κενοφρόνων βουλευμάτων.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="763">ποίῳ τρόπῳ; σήμηνον, εἰ μή τις βλάβη.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="764">γαμεῖ γάμον τοιοῦτον ᾧ ποτ᾽ ἀσχαλεῖ.<note place="unspecified"><foreign xml:lang="grc">ἀσχαλεῖ</foreign> L. Dindorf: <foreign xml:lang="grc">ἀσχαλᾷ</foreign> codd.</note></l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="765">θέορτον, ἢ βρότειον; εἰ ῥητόν, φράσον.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="766">τί δ᾽ ὅντιν᾽; οὐ γὰρ ῥητὸν αὐδᾶσθαι τόδε.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="767">ἦ πρὸς δάμαρτος ἐξανίσταται θρόνων;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="768">ἣ τέξεταί γε παῖδα φέρτερον πατρός.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="769">οὐδ᾽ ἔστιν αὐτῷ τῆσδ᾽ ἀποστροφὴ τύχης;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="770">οὐ δῆτα, πλὴν ἔγωγ᾽ ἂν ἐκ δεσμῶν λυθείς.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="771">τίς οὖν ὁ λύσων σ᾽<note place="unspecified"><foreign xml:lang="grc">σ᾽</foreign> recc.: om. M</note> ἐστὶν ἄκοντος Διός;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="772">τῶν σῶν τιν᾽ αὐτὸν ἐκγόνων<note place="unspecified"><foreign xml:lang="grc">αὐτὸν ἐκγόνων</foreign> recc.: <foreign xml:lang="grc">αὐτῶν ἐγγόνων</foreign> M</note> εἶναι χρεών.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="773">πῶς εἶπας; ἦ ᾽μὸς παῖς σ᾽ ἀπαλλάξει κακῶν;</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="774">τρίτος γε γένναν πρὸς δέκ᾽ ἄλλαισιν γοναῖς.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="775">ἥδ᾽ οὐκέτ᾽ εὐξύμβλητος ἡ χρησμῳδία.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="776">καὶ μηδὲ σαυτῆς γ᾽<note place="unspecified"><foreign xml:lang="grc">γ᾽</foreign> Hermann: <foreign xml:lang="grc">τ᾽</foreign> M</note> ἐκμαθεῖν ζήτει πόνους.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="777">μή μοι προτείνων κέρδος εἶτ᾽ ἀποστέρει.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="778">δυοῖν λόγοιν σε θατέρῳ δωρήσομαι.</l>
+          </sp>
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="779">ποίοιν; πρόδειξον, αἵρεσίν τ᾽ ἐμοὶ δίδου.</l>
+            <milestone ed="p" n="780" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="780">δίδωμ᾽: ἑλοῦ γάρ, ἢ πόνων τὰ λοιπά σοι</l>
+            <l n="781">φράσω σαφηνῶς, ἢ τὸν ἐκλύσοντ᾽ ἐμέ.</l>
+          </sp>
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="782">τούτων σὺ τὴν μὲν τῇδε, τὴν δ᾽ ἐμοὶ χάριν</l>
+            <l n="783">θέσθαι θέλησον, μηδ᾽ ἀτιμάσῃς λόγου:<note place="unspecified"><foreign xml:lang="grc">λόγου</foreign> Elmsley: <foreign xml:lang="grc">λόγους</foreign> codd.</note></l>
+            <l n="784">καὶ τῇδε μὲν γέγωνε τὴν λοιπὴν πλάνην,</l>
+            <l n="785">ἐμοὶ δὲ τὸν λύσοντα: τοῦτο γὰρ ποθῶ.</l>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="786">ἐπεὶ προθυμεῖσθ᾽, οὐκ ἐναντιώσομαι</l>
+            <l n="787">τὸ μὴ οὐ γεγωνεῖν<note place="unspecified"><foreign xml:lang="grc">μὴ γεγωνεῖν</foreign> (<foreign xml:lang="grc">οὐ</foreign> suprascr. m) M</note> πᾶν ὅσον προσχρῄζετε.</l>
+            <l n="788">σοὶ πρῶτον, Ἰοῖ, πολύδονον πλάνην φράσω,</l>
+            <l n="789">ἣν ἐγγράφου σὺ μνήμοσιν δέλτοις φρενῶν.</l>
+            <l n="790"><milestone ed="P" unit="para"/>ὅταν περάσῃς ῥεῖθρον ἠπείροιν<note place="unspecified"><foreign xml:lang="grc">ἠπείροιν</foreign> Herwerden: <foreign xml:lang="grc">ἠπείρων</foreign> codd. post 791 lacunam indicat Heath</note> ὅρον,</l>
+            <l n="791">πρὸς ἀντολὰς φλογῶπας ἡλιοστιβεῖς</l>
+            <l n="792">
+              <gap reason="lost"/>
+            </l>
+            <l n="793">πόντου<note place="unspecified"><foreign xml:lang="grc">πόντου</foreign> recc.: <foreign xml:lang="grc">πόντον</foreign> M</note> περῶσα φλοῖσβον, ἔστ᾽ ἂν ἐξίκῃ</l>
+            <l n="794">πρὸς Γοργόνεια πεδία Κισθήνης, ἵνα</l>
+            <l n="795">αἱ Φορκίδες ναίουσι δηναιαὶ κόραι</l>
+            <l n="795">τρεῖς κυκνόμορφοι, κοινὸν ὄμμ᾽ ἐκτημέναι,</l>
+            <l n="796">μονόδοντες, ἃς οὔθ᾽ ἥλιος προσδέρκεται</l>
+            <l n="797">ἀκτῖσιν οὔθ᾽ ἡ νύκτερος μήνη ποτέ.</l>
+            <l n="798">πέλας δ᾽ ἀδελφαὶ τῶνδε τρεῖς κατάπτεροι,</l>
+            <l n="799">δρακοντόμαλλοι Γοργόνες βροτοστυγεῖς,</l>
+            <l n="800">ἃς θνητὸς οὐδεὶς εἰσιδὼν ἕξει πνοάς:</l>
+            <l n="801">τοιοῦτο μέν σοι τοῦτο φρούριον λέγω.</l>
+            <l n="802">ἄλλην δ᾽ ἄκουσον δυσχερῆ θεωρίαν:</l>
+            <l n="803">ὀξυστόμους γὰρ Ζηνὸς ἀκραγεῖς κύνας</l>
+            <l n="804">γρῦπας φύλαξαι, τόν τε μουνῶπα<note place="unspecified"><foreign xml:lang="grc">μουνῶπα</foreign> M: <foreign xml:lang="grc">αν</foreign> supra <foreign xml:lang="grc">α</foreign> scr. m<hi rend="sub">1</hi></note> στρατὸν</l>
+            <l n="805">Ἀριμασπὸν ἱπποβάμον᾽, οἳ χρυσόρρυτον</l>
+            <l n="806">οἰκοῦσιν ἀμφὶ νᾶμα Πλούτωνος πόρου:<note place="unspecified"><foreign xml:lang="grc">πόρου</foreign> recc.: <foreign xml:lang="grc">πόρον</foreign> M</note></l>
+            <l n="807">τούτοις σὺ μὴ πέλαζε. τηλουρὸν δὲ γῆν</l>
+            <l n="808">ἥξεις, κελαινὸν φῦλον, οἳ πρὸς ἡλίου</l>
+            <l n="809">ναίουσι πηγαῖς, ἔνθα ποταμὸς Αἰθίοψ.</l>
+            <l n="810">τούτου παρ᾽ ὄχθας ἕρφ᾽, ἕως ἂν ἐξίκῃ</l>
+            <l n="811">καταβασμόν, ἔνθα Βιβλίνων<note place="unspecified"><foreign xml:lang="grc">βιβλίνων</foreign> M schol.: <foreign xml:lang="grc">βυβλίνων</foreign> recc.</note> ὀρῶν ἄπο</l>
+            <l n="812">ἵησι σεπτὸν Νεῖλος εὔποτον ῥέος.</l>
+            <l n="813">οὗτός σ᾽ ὁδώσει<note place="unspecified"><foreign xml:lang="grc">σε δώσει</foreign> correctum in <foreign xml:lang="grc">σ᾽ ὁδώσει</foreign> M</note> τὴν τρίγωνον ἐς χθόνα</l>
+            <l n="814">Νειλῶτιν, οὗ δὴ τὴν μακρὰν ἀποικίαν,</l>
+            <l n="815">Ἰοῖ, πέπρωται σοί τε καὶ τέκνοις κτίσαι.</l>
+            <l n="816"><milestone ed="P" unit="para"/>τῶν δ᾽ εἴ τί σοι ψελλόν τε καὶ δυσεύρετον,</l>
+            <l n="817">ἐπανδίπλαζε<note place="unspecified"><foreign xml:lang="grc">ἐπανδίπλαζε</foreign> Dindorf: <foreign xml:lang="grc">ἐπαναδίπλαζε</foreign> codd.</note> καὶ σαφῶς ἐκμάνθανε:</l>
+            <l n="818">σχολὴ δὲ πλείων ἢ θέλω πάρεστί μοι.<note place="unspecified">om. M, in margine scr. m</note></l>
+            <milestone ed="p" n="819" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="819">εἰ μέν τι τῇδε λοιπὸν ἢ παρειμένον</l>
+            <l n="820">ἔχεις γεγωνεῖν τῆς πολυφθόρου πλάνης,</l>
+            <l n="821">λέγ᾽: εἰ δὲ πάντ᾽ εἴρηκας, ἡμῖν αὖ χάριν</l>
+            <l n="822">δὸς ἥνπερ<note place="unspecified"><foreign xml:lang="grc">ἥνπερ</foreign> Hermann: <foreign xml:lang="grc">ἥντιν᾽</foreign> codd.</note> αἰτούμεσθα, μέμνησαι δέ που.</l>
+          </sp>
+          <sp n="*promhqeu/s">
+            <speaker>Προμηθεύς</speaker>
+            <l n="823">τὸ πᾶν πορείας ἥδε τέρμ᾽ ἀκήκοεν.</l>
+            <l n="824">ὅπως δ᾽ ἂν εἰδῇ μὴ μάτην κλύουσά μου,</l>
+            <l n="825">ἃ πρὶν μολεῖν δεῦρ᾽ ἐκμεμόχθηκεν φράσω,</l>
+            <l n="826">τεκμήριον τοῦτ᾽ αὐτὸ δοὺς μύθων ἐμῶν.</l>
+            <l n="827"><milestone ed="P" unit="para"/>ὄχλον μὲν οὖν τὸν πλεῖστον ἐκλείψω λόγων,</l>
+            <l n="828">πρὸς αὐτὸ δ᾽ εἶμι τέρμα σῶν πλανημάτων.</l>
+            <l n="829"><milestone ed="P" unit="para"/>ἐπεὶ γὰρ ἦλθες πρὸς Μολοσσὰ γάπεδα,<note place="unspecified"><foreign xml:lang="grc">γάπεδα</foreign> Porson: <foreign xml:lang="grc">δάπεδα</foreign> codd.</note></l>
+            <l n="830">τὴν αἰπύνωτόν τ᾽ ἀμφὶ Δωδώνην, ἵνα</l>
+            <l n="831">μαντεῖα θᾶκός τ᾽<note place="unspecified"><foreign xml:lang="grc">θᾶκός τ᾽</foreign> Brunck: <foreign xml:lang="grc">θῶκος</foreign> M, <foreign xml:lang="grc">τ᾽</foreign> add. m</note> ἐστὶ Θεσπρωτοῦ Διός,</l>
+            <l n="832">τέρας τ᾽ ἄπιστον, αἱ προσήγοροι δρύες,</l>
+            <l n="833">ὑφ᾽ ὧν σὺ λαμπρῶς κοὐδὲν αἰνικτηρίως</l>
+            <l n="834">προσηγορεύθης ἡ Διὸς κλεινὴ δάμαρ</l>
+            <l n="835">μέλλουσ᾽ ἔσεσθαι: τῶνδε προσσαίνει σέ τι;<note place="unspecified"><foreign xml:lang="grc">προσσαίνει σέ τι</foreign> recc.: <foreign xml:lang="grc">προσαίν, εισ́. τί</foreign> M, <foreign xml:lang="grc">σίτι</foreign> m<hi rend="sub">1</hi></note></l>
+            <l n="836">ἐντεῦθεν οἰστρήσασα τὴν παρακτίαν</l>
+            <l n="837">κέλευθον ᾖξας πρὸς μέγαν κόλπον Ῥέας,</l>
+            <l n="838">ἀφ᾽ οὗ παλιμπλάγκτοισι χειμάζει δρόμοις:</l>
+            <l n="839">χρόνον δὲ τὸν μέλλοντα πόντιος μυχός,</l>
+            <l n="840">σαφῶς ἐπίστασ᾽, Ἰόνιος κεκλήσεται,<note place="unspecified"><foreign xml:lang="grc">κεκλήσεται</foreign> recc.: <foreign xml:lang="grc">κληθήσεται</foreign> M</note></l>
+            <l n="841">τῆς σῆς πορείας μνῆμα τοῖς πᾶσιν βροτοῖς.</l>
+            <l n="842"><milestone ed="P" unit="para"/>σημεῖά σοι τάδ᾽ ἐστὶ τῆς ἐμῆς φρενός,</l>
+            <l n="843">ὡς δέρκεται πλέον τι τοῦ πεφασμένου.</l>
+            <l n="844">τὰ λοιπὰ δ᾽ ὑμῖν τῇδέ τ᾽ ἐς κοινὸν φράσω,</l>
+            <l n="845">ἐς ταὐτὸν ἐλθὼν τῶν πάλαι λόγων ἴχνος.</l>
+            <milestone ed="p" n="846" unit="card"/>
+            <l n="846"><milestone ed="P" unit="para"/>ἔστιν πόλις Κάνωβος ἐσχάτη χθονός,</l>
+            <l n="847">Νείλου πρὸς αὐτῷ στόματι καὶ προσχώματι:</l>
+            <l n="848">ἐνταῦθα δή σε Ζεὺς τίθησιν ἔμφρονα</l>
+            <l n="849">ἐπαφῶν ἀταρβεῖ χειρὶ καὶ θιγὼν μόνον.</l>
+            <l n="850">ἐπώνυμον δὲ τῶν Διὸς γεννημάτων</l>
+            <l n="851">τέξεις κελαινὸν Ἔπαφον, ὃς καρπώσεται</l>
+            <l n="852">ὅσην πλατύρρους Νεῖλος ἀρδεύει χθόνα:</l>
+            <l n="853">πέμπτη δ᾽ ἀπ᾽ αὐτοῦ γέννα πεντηκοντάπαις<note place="unspecified"><foreign xml:lang="grc">πεντηκοντάπαις</foreign> recc.: <foreign xml:lang="grc">πεντηκοντόπαις</foreign> M</note></l>
+            <l n="854">πάλιν πρὸς Ἄργος οὐχ ἑκοῦσ᾽ ἐλεύσεται</l>
+            <l n="855">θηλύσπορος, φεύγουσα συγγενῆ γάμον</l>
+            <l n="856">ἀνεψιῶν: οἱ δ᾽ ἐπτοημένοι φρένας,</l>
+            <l n="857">κίρκοι πελειῶν οὐ μακρὰν λελειμμένοι,</l>
+            <l n="858">ἥξουσι θηρεύοντες<note place="unspecified"><foreign xml:lang="grc">θηρεύοντες</foreign> recc.: <foreign xml:lang="grc">θηρεύσοντες</foreign> M</note> οὐ θηρασίμους</l>
+            <l n="859">γάμους, φθόνον δὲ σωμάτων ἕξει θεός:</l>
+            <l n="860">Πελασγία δὲ δέξεται θηλυκτόνῳ</l>
+            <l n="861">Ἄρει, δαμέντων νυκτιφρουρήτῳ θράσει:</l>
+            <l n="862">γυνὴ γὰρ ἄνδρ᾽ ἕκαστον αἰῶνος στερεῖ,</l>
+            <l n="863">δίθηκτον ἐν σφαγαῖσι βάψασα ξίφος:</l>
+            <l n="864">τοιάδ᾽ ἐπ᾽<note place="unspecified"><foreign xml:lang="grc">ἐπ᾽</foreign> recc.: <foreign xml:lang="grc">ἐς</foreign> M</note> ἐχθροὺς τοὺς ἐμοὺς ἔλθοι Κύπρις.</l>
+            <l n="865">μίαν δὲ παίδων ἵμερος θέλξει τὸ μὴ</l>
+            <l n="866">κτεῖναι σύνευνον, ἀλλ᾽ ἀπαμβλυνθήσεται</l>
+            <l n="867">γνώμην: δυοῖν δὲ θάτερον βουλήσεται,</l>
+            <l n="868">κλύειν ἄναλκις μᾶλλον ἢ μιαιφόνος:</l>
+            <l n="869">αὕτη κατ᾽ Ἄργος βασιλικὸν τέξει γένος.</l>
+            <l n="870">μακροῦ λόγου δεῖ ταῦτ᾽ ἐπεξελθεῖν τορῶς.</l>
+            <l n="871">σπορᾶς γε μὴν ἐκ τῆσδε φύσεται θρασὺς</l>
+            <l n="872">τόξοισι κλεινὸς &lt;ἶνισ&gt;,<note place="unspecified"><foreign xml:lang="grc">ἶνις</foreign> add. <foreign xml:lang="grc">ἐκ τῶνδ᾽</foreign> seclusit Wecklein</note> ὃς πόνων [ἐκ τῶνδ᾽] ἐμὲ</l>
+            <l n="873">λύσει. τοιόνδε χρησμὸν ἡ παλαιγενὴς</l>
+            <l n="874">μήτηρ ἐμοὶ διῆλθε Τιτανὶς Θέμις:</l>
+            <l n="875">ὅπως δὲ χὤπη, ταῦτα δεῖ μακροῦ χρόνου</l>
+            <l n="876">εἰπεῖν, σύ τ᾽ οὐδὲν ἐκμαθοῦσα κερδανεῖς.</l>
+          </sp>
+          <milestone ed="p" n="877" unit="card"/>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Ἰώ</speaker>
+            <l n="877">ἐλελεῦ,<note place="unspecified"><foreign xml:lang="grc">ἐλελεῦ</foreign> (bis) Pauw: <foreign xml:lang="grc">ἐλελελελελεῦ</foreign> M</note> ἐλελεῦ,</l>
+            <l n="878">ὑπό μ᾽ αὖ σφάκελος καὶ φρενοπληγεῖς</l>
+            <l n="879">μανίαι θάλπουσ᾽, οἴστρου δ᾽ ἄρδις</l>
+            <l n="880">χρίει μ᾽ ἄπυρος:</l>
+            <l n="881">κραδία<note place="unspecified"><foreign xml:lang="grc">κραδία</foreign> recc.: <foreign xml:lang="grc">καρδία</foreign> M</note> δὲ φόβῳ φρένα λακτίζει.</l>
+            <l n="882">τροχοδινεῖται δ᾽ ὄμμαθ᾽ ἑλίγδην,</l>
+            <l n="883">ἔξω δὲ δρόμου φέρομαι λύσσης</l>
+            <l n="884">πνεύματι μάργῳ, γλώσσης ἀκρατής:</l>
+            <l n="885">θολεροὶ δὲ λόγοι παίουσ᾽<note place="unspecified"><foreign xml:lang="grc">παίουσ᾽</foreign> recc.: <foreign xml:lang="grc">πταίουσ᾽</foreign> M</note> εἰκῆ</l>
+            <l n="886">στυγνῆς πρὸς κύμασιν ἄτης.</l>
+            <milestone ed="p" n="887" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="choral">
+        <div type="textpart" subtype="strophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="887">ἦ σοφὸς ἦ σοφὸς [ἦν]<note place="unspecified"><foreign xml:lang="grc">ἦν</foreign> seclusit Triclinius</note> ὃς</l>
+            <l n="888">πρῶτος ἐν γνώμᾳ τόδ᾽ ἐβάστασε καὶ γλώσ-</l>
+            <l n="889">σᾳ διεμυθολόγησεν,</l>
+            <l n="890">ὡς τὸ κηδεῦσαι καθ᾽ ἑαυτὸν ἀριστεύει μακρῷ,</l>
+            <l n="891">καὶ μήτε τῶν πλούτῳ διαθρυπτομένων</l>
+            <l n="892">μήτε τῶν γέννᾳ μεγαλυνομένων</l>
+            <l n="893">ὄντα χερνήταν ἐραστεῦσαι γάμων.</l>
+            <milestone ed="p" n="894" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="antistrophe" n="1">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="894">μήποτε μήποτέ μ᾽, ὦ</l>
+            <l n="895">&lt;πότνιαι&gt;<note place="unspecified"><foreign xml:lang="grc">πότνιαι</foreign> add. Winckelmann</note> Μοῖραι, λεχέων Διὸς εὐνά-</l>
+            <l n="896">τειραν ἴδοισθε πέλουσαν:</l>
+            <l n="897">μηδὲ πλαθείην γαμέτᾳ<note place="unspecified"><foreign xml:lang="grc">πλαθείην γαμέτᾳ</foreign> Canter: <foreign xml:lang="grc">πλαθείη ἐν γαμετῷ</foreign> M, correctum in <foreign xml:lang="grc">πλασθείην ἐν γαμέτᾳ</foreign> m<hi rend="sub">1</hi></note> τινὶ τῶν ἐξ οὐρανοῦ.</l>
+            <l n="898">ταρβῶ γὰρ ἀστεργάνορα παρθενίαν</l>
+            <l n="899">εἰσορῶσ᾽ Ἰοῦς ἀμαλαπτομέναν<note place="unspecified"><foreign xml:lang="grc">ἀμαλαπτομέναν</foreign> (ex Hesych. et Phot.) Weil; <foreign xml:lang="grc">γάμω δαπτομέναν</foreign> codd.: <foreign xml:lang="grc">μέγα δαπτομέναν</foreign> Schütz</note></l>
+            <l n="900">δυσπλάνοις<note place="unspecified"><foreign xml:lang="grc">δυσπλάνοις</foreign> recc.: <foreign xml:lang="grc">δυσπλάγχνοις</foreign> M</note> Ἥρας ἀλατείαις πόνων.</l>
+            <milestone ed="p" n="901" unit="card"/>
+          </sp>
+        </div>
+        <div type="textpart" subtype="epode">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="901">ἐμοὶ δ᾽ ὅτε<note place="unspecified"><foreign xml:lang="grc">ὅτε</foreign> Arnaldus: <foreign xml:lang="grc">ὅτι</foreign> codd.</note> μὲν ὁμαλὸς ὁ γάμος,<note place="unspecified">sunt qui in stroph. et antist. restituant, mutata tamen nimium codd. lectione</note></l>
+            <l n="902">ἄφοβος: [οὐ δέδια:]:<note place="unspecified"><foreign xml:lang="grc">οὐ δέδια</foreign> seclusit Bothe</note> μηδὲ κρεισσόνων θεῶν</l>
+            <l n="903">[ἔρως]<note place="unspecified"><foreign xml:lang="grc">ἔρως</foreign> seclusit Schütz</note> ἄφυκτον ὄμμα προσδράκοι<note place="unspecified"><foreign xml:lang="grc">προσδράκοι</foreign> Salvinius: <foreign xml:lang="grc">προσδάρκοι</foreign> M</note> με.</l>
+            <l n="904">ἀπόλεμος ὅδε γ᾽ ὁ πόλεμος, ἄπορα πόριμος:</l>
+            <l n="905">οὐδ᾽ ἔχω τίς ἂν γενοίμαν: τὰν Διὸς γὰρ οὐχ ὁρῶ</l>
+            <l n="906">μῆτιν ὅπα φύγοιμ᾽ ἄν.</l>
+            <milestone ed="p" n="907" unit="card"/>
+          </sp>
+        </div>
+      </div>
+      <div type="textpart" subtype="episode">
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="907">ἦ μὴν ἔτι Ζεύς, καίπερ αὐθάδη φρονῶν,<note place="unspecified"><foreign xml:lang="grc">αὐθάδη φρονῶν</foreign> recc. m<hi rend="sub">1</hi>: <foreign xml:lang="grc">αὐθάδης φρενῶν</foreign> M</note></l>
+          <l n="908">ἔσται ταπεινός, οἷον ἐξαρτύεται</l>
+          <l n="909">γάμον γαμεῖν, ὃς αὐτὸν ἐκ τυραννίδος</l>
+          <l n="910">θρόνων τ᾽<note place="unspecified"><foreign xml:lang="grc">θρόνων τ᾽</foreign> recc.: <foreign xml:lang="grc">θρόνων</foreign> M</note> ἄιστον ἐκβαλεῖ: πατρὸς δ᾽<note place="unspecified"><foreign xml:lang="grc">δ᾽</foreign> Turnebus: <foreign xml:lang="grc">τ᾽</foreign> codd.</note> ἀρὰ</l>
+          <l n="911">Κρόνου τότ᾽<note place="unspecified"><foreign xml:lang="grc">τόδ᾽</foreign> M, mutatum in <foreign xml:lang="grc">τότ᾽</foreign> m<hi rend="sub">1</hi></note> ἤδη παντελῶς κρανθήσεται,</l>
+          <l n="912">ἣν ἐκπίτνων ἠρᾶτο δηναιῶν<note place="unspecified"><foreign xml:lang="grc">δηναιὸν</foreign> M, <foreign xml:lang="grc">δηναιῶν</foreign> supra scr. m<hi rend="sub">1</hi></note> θρόνων.</l>
+          <l n="913">τοιῶνδε μόχθων ἐκτροπὴν οὐδεὶς θεῶν</l>
+          <l n="914">δύναιτ᾽ ἂν αὐτῷ πλὴν ἐμοῦ δεῖξαι σαφῶς.</l>
+          <l n="915">ἐγὼ τάδ᾽ οἶδα χᾦ τρόπῳ. πρὸς ταῦτά νυν<note place="unspecified"><foreign xml:lang="grc">νῦν</foreign> M</note></l>
+          <l n="916">θαρσῶν καθήσθω τοῖς πεδαρσίοις κτύποις</l>
+          <l n="917">πιστός, τινάσσων τ᾽ ἐν χεροῖν πύρπνουν βέλος.</l>
+          <l n="918">οὐδὲν γὰρ αὐτῷ ταῦτ᾽ ἐπαρκέσει τὸ μὴ οὐ</l>
+          <l n="919">πεσεῖν ἀτίμως πτώματ᾽ οὐκ ἀνασχετά:</l>
+          <l n="920">τοῖον παλαιστὴν νῦν παρασκευάζεται</l>
+          <l n="921">ἐπ᾽ αὐτὸς αὑτῷ, δυσμαχώτατον τέρας:</l>
+          <l n="922">ὃς δὴ κεραυνοῦ κρείσσον᾽ εὑρήσει<note place="unspecified"><foreign xml:lang="grc">εὑρήσει</foreign> recc.: <foreign xml:lang="grc">εὑρήσοι</foreign> M</note> φλόγα,</l>
+          <l n="923">βροντῆς θ᾽ ὑπερβάλλοντα καρτερὸν κτύπον:</l>
+          <l n="924">θαλασσίαν τε γῆς τινάκτειραν †νόσον<note place="unspecified">corruptum: <foreign xml:lang="grc">νόσων</foreign> M, obscure in <foreign xml:lang="grc">νόσον</foreign> mutatum: <foreign xml:lang="grc">βάθρων</foreign> Herwerden: <foreign xml:lang="grc">πέδων</foreign> Wecklein: praestat fortasse <foreign xml:lang="grc">τινάκτορ᾽ ἔννοσιν</foreign> Hartung</note></l>
+          <l n="925">τρίαιναν, αἰχμὴν τὴν Ποσειδῶνος, σκεδᾷ.</l>
+          <l n="926">πταίσας δὲ τῷδε πρὸς κακῷ<note place="unspecified"><foreign xml:lang="grc">κακῶν</foreign> (<foreign xml:lang="grc">ῷ</foreign> supra scr. m<hi rend="sub">1</hi>) M</note> μαθήσεται</l>
+          <l n="927">ὅσον τό τ᾽ ἄρχειν<note place="unspecified"><foreign xml:lang="grc">ἄρχειν</foreign> (<foreign xml:lang="grc">ειν</foreign> in litura m) M</note> καὶ τὸ δουλεύειν δίχα.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="928">σύ θην<note place="unspecified"><foreign xml:lang="grc">σύ θην</foreign> M: <foreign xml:lang="grc">σὺ δὴν</foreign> m<hi rend="sub">1</hi></note> ἃ χρῄζεις, ταῦτ᾽ ἐπιγλωσσᾷ Διός.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="929">ἅπερ τελεῖται, πρὸς δ᾽ ἃ βούλομαι λέγω.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="930">καὶ προσδοκᾶν χρὴ δεσπόσειν Ζηνός τινα;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="931">καὶ τῶνδέ γ᾽ ἕξει δυσλοφωτέρους πόνους.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="932">πῶς δ᾽<note place="unspecified"><foreign xml:lang="grc">δ᾽</foreign> om. M</note> οὐχὶ ταρβεῖς τοιάδ᾽ ἐκρίπτων ἔπη;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="933">τί δ᾽ ἂν<note place="unspecified"><foreign xml:lang="grc">δ᾽ ἂν</foreign> recc.: <foreign xml:lang="grc">δαὶ</foreign> M</note> φοβοίμην ᾧ θανεῖν οὐ μόρσιμον;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="934">ἀλλ᾽ ἆθλον ἄν σοι τοῦδ᾽ ἔτ᾽<note place="unspecified"><foreign xml:lang="grc">τοῦδ᾽ ἔτ᾽</foreign> Elmsley: <foreign xml:lang="grc">του-δέ γ᾽</foreign> codd.</note> ἀλγίω πόροι.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="935">ὁ δ᾽ οὖν ποιείτω: πάντα προσδοκητά μοι.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="936">οἱ προσκυνοῦντες τὴν Ἀδράστειαν σοφοί.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="937">σέβου, προσεύχου, θῶπτε<note place="unspecified"><foreign xml:lang="grc">θῶπτε</foreign> Turnebus, et sic ante correct. M: <foreign xml:lang="grc">θώπευε</foreign> recc. et sic m suprascr.</note> τὸν κρατοῦντ᾽ ἀεί.</l>
+          <l n="938">ἐμοὶ δ᾽ ἔλασσον Ζηνὸς ἢ μηδὲν μέλει.</l>
+          <l n="939">δράτω, κρατείτω τόνδε τὸν βραχὺν χρόνον</l>
+          <l n="940">ὅπως θέλει: δαρὸν γὰρ οὐκ ἄρξει θεοῖς.</l>
+          <l n="941">ἀλλ᾽ εἰσορῶ γὰρ τόνδε τὸν Διὸς τρόχιν,</l>
+          <l n="942">τὸν τοῦ τυράννου τοῦ νέου διάκονον:</l>
+          <l n="943">πάντως τι καινὸν ἀγγελῶν ἐλήλυθεν.</l>
+          <milestone ed="p" n="944" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="944">σὲ τὸν σοφιστήν, τὸν πικρῶς ὑπέρπικρον,</l>
+          <l n="945">τὸν ἐξαμαρτόντ᾽ εἰς θεοὺς ἐφημέροις<note place="unspecified"><foreign xml:lang="grc">ἐφημέροις</foreign> recc.: <foreign xml:lang="grc">τὸν ἡμέροις</foreign> M</note></l>
+          <l n="946">πορόντα τιμάς, τὸν πυρὸς κλέπτην λέγω:</l>
+          <l n="947">πατὴρ ἄνωγέ σ᾽ οὕστινας κομπεῖς γάμους</l>
+          <l n="948">αὐδᾶν, πρὸς ὧν<note place="unspecified"><foreign xml:lang="grc">ὧν</foreign> Elmsley: <foreign xml:lang="grc">ὧν τ᾽</foreign> codd.</note> ἐκεῖνος ἐκπίπτει κράτους:</l>
+          <l n="949">καὶ ταῦτα μέντοι μηδὲν αἰνικτηρίως,</l>
+          <l n="950">ἀλλ᾽ αὔθ᾽ ἕκαστ᾽ ἔκφραζε:<note place="unspecified"><foreign xml:lang="grc">ἕκαστ᾽ ἔκφραζε</foreign> recc.: <foreign xml:lang="grc">ἕκαστα φράζε</foreign> M</note> μηδέ μοι διπλᾶς</l>
+          <l n="951">ὁδούς, Προμηθεῦ, προσβάλῃς: ὁρᾷς δ᾽ ὅτι</l>
+          <l n="952">Ζεὺς τοῖς τοιούτοις οὐχὶ μαλθακίζεται.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="953">σεμνόστομός γε καὶ φρονήματος πλέως</l>
+          <l n="954">ὁ μῦθός ἐστιν, ὡς θεῶν ὑπηρέτου.</l>
+          <l n="955">νέον νέοι κρατεῖτε καὶ δοκεῖτε δὴ</l>
+          <l n="956">ναίειν ἀπενθῆ πέργαμ᾽: οὐκ ἐκ τῶνδ᾽ ἐγὼ</l>
+          <l n="957">δισσοὺς τυράννους ἐκπεσόντας ᾐσθόμην;</l>
+          <l n="958">τρίτον δὲ τὸν νῦν κοιρανοῦντ᾽ ἐπόψομαι</l>
+          <l n="959">αἴσχιστα καὶ τάχιστα. μή τί σοι δοκῶ</l>
+          <l n="960">ταρβεῖν ὑποπτήσσειν τε τοὺς νέους θεούς;</l>
+          <l n="961">πολλοῦ γε<note place="unspecified"><foreign xml:lang="grc">γε</foreign> recc.: <foreign xml:lang="grc">δὲ</foreign> M</note> καὶ τοῦ παντὸς ἐλλείπω. σὺ δὲ</l>
+          <l n="962">κέλευθον ἥνπερ ἦλθες ἐγκόνει πάλιν:</l>
+          <l n="963">πεύσει γὰρ οὐδὲν ὧν ἀνιστορεῖς ἐμέ.</l>
+          <milestone ed="p" n="964" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="964">τοιοῖσδε μέντοι καὶ πρὶν αὐθαδίσμασιν</l>
+          <l n="965">ἐς τάσδε σαυτὸν πημονὰς καθώρμισας.<note place="unspecified"><foreign xml:lang="grc">καθώρμισας</foreign> recc.: <foreign xml:lang="grc">καθώρ.οσας</foreign> M (litura post <foreign xml:lang="grc">ρ, ο</foreign> ex <foreign xml:lang="grc">ι</foreign> factum)</note></l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="966">τῆς σῆς λατρείας τὴν ἐμὴν δυσπραξίαν,</l>
+          <l n="967">σαφῶς ἐπίστασ᾽, οὐκ ἂν ἀλλάξαιμ᾽ ἐγώ.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="968">κρεῖσσον γὰρ οἶμαι τῇδε λατρεύειν πέτρᾳ<note place="unspecified">hos duo vv., Prometheo in codd. continuatos, Herm. tribuit Erfurdt</note></l>
+          <l n="969">ἢ πατρὶ φῦναι<note place="unspecified"><foreign xml:lang="grc">φῦναι</foreign> recc.: <foreign xml:lang="grc">φῆναι</foreign> M</note> Ζηνὶ πιστὸν<note place="unspecified"><foreign xml:lang="grc">πιστὸν</foreign> recc.: <foreign xml:lang="grc">πιστὸν δ᾽</foreign> M (correctum in <foreign xml:lang="grc">πιστόν τ᾽</foreign> m<hi rend="sub">1</hi>)</note> ἄγγελον.<note place="unspecified">post hunc v. sunt qui excidisse aliquid putent, fort. iniuria</note></l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="970">οὕτως ὑβρίζειν τοὺς ὑβρίζοντας χρεών.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="971">χλιδᾶν ἔοικας τοῖς παροῦσι πράγμασι.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="972">χλιδῶ; χλιδῶντας ὧδε τοὺς ἐμοὺς ἐγὼ</l>
+          <l n="973">ἐχθροὺς ἴδοιμι: καὶ σὲ δ᾽ ἐν τούτοις λέγω.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="974">ἦ κἀμὲ γάρ τι συμφοραῖς ἐπαιτιᾷ;</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="975">ἁπλῷ λόγῳ τοὺς πάντας ἐχθαίρω θεούς,</l>
+          <l n="976">ὅσοι παθόντες εὖ κακοῦσί μ᾽ ἐκδίκως.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="977">κλύω σ᾽ ἐγὼ μεμηνότ᾽ οὐ σμικρὰν<note place="unspecified"><foreign xml:lang="grc">σμικρὰν</foreign> Brunck: <foreign xml:lang="grc">μικρὰν</foreign> codd.</note> νόσον.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="978">νοσοῖμ᾽ ἄν, εἰ νόσημα τοὺς ἐχθροὺς στυγεῖν.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="979">εἴης φορητὸς οὐκ ἄν, εἰ πράσσοις καλῶς.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l part="Y">ὤμοι.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="980">τόδε Ζεὺς τοὔπος οὐκ ἐπίσταται.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="981">ἀλλ᾽ ἐκδιδάσκει πάνθ᾽ ὁ γηράσκων χρόνος.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="982">καὶ μὴν σύ γ᾽ οὔπω σωφρονεῖν ἐπίστασαι.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="983">σὲ γὰρ προσηύδων οὐκ ἂν ὄνθ᾽ ὑπηρέτην.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="984">ἐρεῖν ἔοικας οὐδὲν ὧν χρῄζει πατήρ.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="985">καὶ μὴν ὀφείλων γ᾽ ἂν τίνοιμ᾽ αὐτῷ χάριν.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="986">ἐκερτόμησας δῆθεν ὥστε παῖδά με.<note place="unspecified"><foreign xml:lang="grc">ὥστε παῖδά με</foreign> Hermann: <foreign xml:lang="grc">ὡς παῖδά με</foreign> M: <foreign xml:lang="grc">ὡς παῖδ᾽ ὄντα με</foreign> recc. duo</note></l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="987">οὐ γὰρ σὺ παῖς τε κἄτι τοῦδ᾽ ἀνούστερος,</l>
+          <l n="988">εἰ προσδοκᾷς ἐμοῦ τι πεύσεσθαι πάρα;</l>
+          <l n="989">οὐκ ἔστιν αἴκισμ᾽ οὐδὲ μηχάνημ᾽ ὅτῳ</l>
+          <l n="990">προτρέψεταί με Ζεὺς γεγωνῆσαι τάδε,</l>
+          <l n="991">πρὶν ἂν χαλασθῇ δεσμὰ λυμαντήρια.</l>
+          <l n="992">πρὸς ταῦτα ῥιπτέσθω μὲν αἰθαλοῦσσα<note place="unspecified"><foreign xml:lang="grc">αἰθαλοῦσσα</foreign> Canter: <foreign xml:lang="grc">αἰθάλουσα</foreign> codd.</note> φλόξ,</l>
+          <l n="993">λευκοπτέρῳ δὲ νιφάδι καὶ βροντήμασι</l>
+          <l n="994">χθονίοις κυκάτω πάντα καὶ ταρασσέτω:</l>
+          <l n="995">γνάμψει γὰρ οὐδὲν τῶνδέ μ᾽ ὥστε καὶ φράσαι<note place="unspecified"><foreign xml:lang="grc">φράσαι</foreign> recc.: <foreign xml:lang="grc">φράσειν</foreign> M</note></l>
+          <l n="996">πρὸς οὗ χρεών νιν ἐκπεσεῖν τυραννίδος.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="997">ὅρα νυν εἴ σοι ταῦτ᾽ ἀρωγὰ φαίνεται.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="998">ὦπται<note place="unspecified"><foreign xml:lang="grc">ὦπται</foreign> recc. (et schol. <foreign xml:lang="grc">τεθεώρηται</foreign>): <foreign xml:lang="grc">ὦ παῖ</foreign> M</note> πάλαι δὴ καὶ βεβούλευται τάδε.</l>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="999">τόλμησον, ὦ μάταιε, τόλμησόν ποτε</l>
+          <l n="1000">πρὸς τὰς παρούσας πημονὰς ὀρθῶς φρονεῖν.</l>
+        </sp>
+        <sp>
+          <speaker>Προμηθεύς</speaker>
+          <l n="1001">ὀχλεῖς μάτην με κῦμ᾽ ὅπως παρηγορῶν.</l>
+          <l n="1002">εἰσελθέτω σε μήποθ᾽ ὡς<note place="unspecified"><foreign xml:lang="grc">μήποθ᾽ ὡς</foreign> m<hi rend="sub">1</hi> et recc.: <foreign xml:lang="grc">μη πάθ᾽</foreign> M</note> ἐγὼ Διὸς</l>
+          <l n="1003">γνώμην φοβηθεὶς θηλύνους γενήσομαι,</l>
+          <l n="1004">καὶ λιπαρήσω τὸν μέγα στυγούμενον</l>
+          <l n="1005">γυναικομίμοις ὑπτιάσμασιν χερῶν</l>
+          <l n="1006">λῦσαί με δεσμῶν τῶνδε: τοῦ παντὸς δέω.</l>
+          <milestone ed="p" n="1007" unit="card"/>
+        </sp>
+        <sp>
+          <speaker>Ἑρμῆς</speaker>
+          <l n="1007">λέγων ἔοικα πολλὰ καὶ μάτην ἐρεῖν:</l>
+          <l n="1008">τέγγει γὰρ οὐδὲν οὐδὲ μαλθάσσει λιταῖς</l>
+          <l n="1009">ἐμαῖς: δακὼν δὲ στόμιον ὡς νεοζυγὴς</l>
+          <l n="1010">πῶλος βιάζει καὶ πρὸς ἡνίας μάχει.</l>
+          <l n="1011">ἀτὰρ σφοδρύνει γ᾽ ἀσθενεῖ σοφίσματι.</l>
+          <l n="1012">αὐθαδία γὰρ τῷ φρονοῦντι μὴ καλῶς</l>
+          <l n="1013">αὐτὴ καθ᾽ αὑτὴν οὐδενὸς μεῖζον σθένει.</l>
+          <l n="1014">σκέψαι δ᾽, ἐὰν μὴ τοῖς ἐμοῖς πεισθῇς λόγοις,</l>
+          <l n="1015">οἷός σε χειμὼν καὶ κακῶν τρικυμία</l>
+          <l n="1016">ἔπεισ᾽ ἄφυκτος:<note place="unspecified"><foreign xml:lang="grc">ἄφυκτος</foreign> recc.: <foreign xml:lang="grc">ἀφύκτως</foreign> M, <foreign xml:lang="grc">ος</foreign> suprascr. m<hi rend="sub">1</hi></note> πρῶτα μὲν γὰρ ὀκρίδα</l>
+          <l n="1017">φάραγγα βροντῇ καὶ κεραυνίᾳ φλογὶ</l>
+          <l n="1018">πατὴρ σπαράξει τήνδε, καὶ κρύψει δέμας</l>
+          <l n="1019">τὸ σόν, πετραία δ᾽ ἀγκάλη σε βαστάσει.</l>
+          <l n="1020">μακρὸν δὲ μῆκος ἐκτελευτήσας χρόνου</l>
+          <l n="1021">ἄψορρον ἥξεις εἰς φάος: Διὸς δέ σοι<note place="unspecified"><foreign xml:lang="grc">σοι</foreign> rec.: <foreign xml:lang="grc">τοι</foreign> codd. cett.</note></l>
+          <l n="1022">πτηνὸς κύων, δαφοινὸς αἰετός, λάβρως</l>
+          <l n="1023">διαρταμήσει σώματος μέγα ῥάκος,</l>
+          <l n="1024">ἄκλητος ἕρπων δαιταλεὺς πανήμερος,</l>
+          <l n="1025">κελαινόβρωτον δ᾽ ἧπαρ ἐκθοινάσεται.<note place="unspecified"><foreign xml:lang="grc">ἐκθοινάσεται</foreign> Nauck: <foreign xml:lang="grc">ἐκθοινήσεται</foreign> codd.</note></l>
+          <l n="1026"><milestone ed="P" unit="para"/>τοιοῦδε μόχθου τέρμα μή τι<note place="unspecified"><foreign xml:lang="grc">τι</foreign> rec.: <foreign xml:lang="grc">τοι</foreign> M</note> προσδόκα,</l>
+          <l n="1027">πρὶν ἂν θεῶν τις διάδοχος τῶν σῶν πόνων</l>
+          <l n="1028">φανῇ, θελήσῃ τ᾽ εἰς ἀναύγητον μολεῖν</l>
+          <l n="1029">Ἅιδην κνεφαῖά τ᾽ ἀμφὶ Ταρτάρου βάθη.</l>
+          <l n="1030"><milestone ed="P" unit="para"/>πρὸς ταῦτα βούλευ᾽: ὡς ὅδ᾽ οὐ πεπλασμένος</l>
+          <l n="1031">ὁ κόμπος, ἀλλὰ καὶ λίαν εἰρημένος:<note place="unspecified">fort. <foreign xml:lang="grc">ἐτήτυμος</foreign> Hartung</note></l>
+          <l n="1032">ψευδηγορεῖν γὰρ οὐκ ἐπίσταται στόμα</l>
+          <l n="1033">τὸ Δῖον, ἀλλὰ πᾶν ἔπος τελεῖ. σὺ δὲ</l>
+          <l n="1034">πάπταινε καὶ φρόντιζε, μηδ᾽ αὐθαδίαν</l>
+          <l n="1035">εὐβουλίας ἀμείνον᾽<note place="unspecified"><foreign xml:lang="grc">ἄμεινον</foreign> mutatum in <foreign xml:lang="grc">ἀμείνον᾽</foreign> M</note> ἡγήσῃ ποτέ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="1036">ἡμῖν μὲν Ἑρμῆς οὐκ ἄκαιρα φαίνεται</l>
+          <l n="1037">λέγειν: ἄνωγε γάρ σε τὴν αὐθαδίαν</l>
+          <l n="1038">μεθέντ᾽ ἐρευνᾶν τὴν σοφὴν εὐβουλίαν.</l>
+          <l n="1039">πιθοῦ:<note place="unspecified"><foreign xml:lang="grc">πιθοῦ</foreign> recc.: <foreign xml:lang="grc">πείθου</foreign> M</note> σοφῷ γὰρ αἰσχρὸν ἐξαμαρτάνειν.</l>
+          <milestone ed="p" n="1040" unit="card"/>
+        </sp>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="1040">εἰδότι τοί μοι τάσδ᾽ ἀγγελίας</l>
+            <l n="1041">ὅδ᾽ ἐθώυξεν, πάσχειν δὲ κακῶς</l>
+            <l n="1042">ἐχθρὸν ὑπ᾽ ἐχθρῶν οὐδὲν ἀεικές.</l>
+            <l n="1043">πρὸς ταῦτ᾽ ἐπ᾽ ἐμοὶ ῥιπτέσθω<note place="unspecified"><foreign xml:lang="grc">ἐπ᾽ ἐμοὶ ῥιπτέσθω</foreign> recc.: <foreign xml:lang="grc">ἐπί μοι ῥιπτείσθω</foreign> M</note> μὲν</l>
+            <l n="1044">πυρὸς ἀμφήκης βόστρυχος, αἰθὴρ δ᾽</l>
+            <l n="1045">ἐρεθιζέσθω βροντῇ σφακέλῳ τ᾽</l>
+            <l n="1046">ἀγρίων ἀνέμων: χθόνα δ᾽ ἐκ πυθμένων</l>
+            <l n="1047">αὐταῖς ῥίζαις πνεῦμα κραδαίνοι,</l>
+            <l n="1048">κῦμα δὲ πόντου τραχεῖ ῥοθίῳ</l>
+            <l n="1049">συγχώσειεν τῶν τ᾽ οὐρανίων</l>
+            <l n="1050">ἄστρων διόδους: εἴς τε κελαινὸν</l>
+            <l n="1051">Τάρταρον ἄρδην ῥίψειε δέμας</l>
+            <l n="1052">τοὐμὸν ἀνάγκης στερραῖς δίναις:</l>
+            <l n="1053">πάντως ἐμέ γ᾽ οὐ θανατώσει.</l>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Ἑρμῆς</speaker>
+            <l n="1054">τοιάδε μέντοι τῶν φρενοπλήκτων</l>
+            <l n="1055">βουλεύματ᾽ ἔπη τ᾽ ἔστιν ἀκοῦσαι.</l>
+            <l n="1056">τί γὰρ ἐλλείπει μὴ &lt;οὐ&gt;<note place="unspecified"><foreign xml:lang="grc">οὐ</foreign> add. Wecklein</note> παραπαίειν</l>
+            <l n="1057">ἡ τοῦδ᾽ εὐχή;<note place="unspecified"><foreign xml:lang="grc">ἡ τοῦδ᾽ εὐχή</foreign> Winckelmann: <foreign xml:lang="grc">ἦ τοῦδ᾽ εὐτυχῆ</foreign> M</note> τί χαλᾷ μανιῶν;</l>
+            <l n="1058">ἀλλ᾽ οὖν ὑμεῖς γ᾽ αἱ<note place="unspecified"><foreign xml:lang="grc">γ᾽ αἱ</foreign> Turnebus: <foreign xml:lang="grc">γε</foreign> codd.</note> πημοσύναις</l>
+            <l n="1059">συγκάμνουσαι ταῖς τοῦδε τόπων</l>
+            <l n="1060">μετά ποι<note place="unspecified"><foreign xml:lang="grc">ποι</foreign> rec.: <foreign xml:lang="grc">που</foreign> M</note> χωρεῖτ᾽ ἐκ τῶνδε θοῶς,</l>
+            <l n="1061">μὴ φρένας ὑμῶν ἠλιθιώσῃ</l>
+            <l n="1062">βροντῆς μύκημ᾽ ἀτέραμνον.</l>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Χορός</speaker>
+            <l n="1063">ἄλλο τι φώνει καὶ παραμυθοῦ μ᾽</l>
+            <l n="1064">ὅ τι καὶ πείσεις: οὐ γὰρ δή που</l>
+            <l n="1065">τοῦτό γε τλητὸν παρέσυρας ἔπος.</l>
+            <l n="1066">πῶς με κελεύεις κακότητ᾽ ἀσκεῖν;</l>
+            <l n="1067">μετὰ τοῦδ᾽ ὅ τι χρὴ πάσχειν ἐθέλω:</l>
+            <l n="1068">τοὺς προδότας γὰρ μισεῖν ἔμαθον,</l>
+            <l n="1069">κοὐκ ἔστι νόσος</l>
+            <l n="1070">τῆσδ᾽ ἥντιν᾽ ἀπέπτυσα μᾶλλον.</l>
+          </sp>
+        </div>
+        <div type="textpart" subtype="anapests">
+          <sp>
+            <speaker>Ἑρμῆς</speaker>
+            <l n="1071">ἀλλ᾽ οὖν μέμνησθ᾽ ἁγὼ<note place="unspecified"><foreign xml:lang="grc">ἁγὼ</foreign> Porson: <foreign xml:lang="grc">ἅ τ᾽ ἐγὼ</foreign> codd. plerique</note> προλέγω</l>
+            <l n="1072">μηδὲ πρὸς ἄτης θηραθεῖσαι</l>
+            <l n="1073">μέμψησθε τύχην, μηδέ ποτ᾽ εἴπηθ᾽</l>
+            <l n="1074">ὡς Ζεὺς ὑμᾶς εἰς ἀπρόοπτον</l>
+            <l n="1075">πῆμ᾽ εἰσέβαλεν: μὴ δῆτ᾽, αὐταὶ δ᾽</l>
+            <l n="1076">ὑμᾶς αὐτάς. εἰδυῖαι γὰρ</l>
+            <l n="1077">κοὐκ ἐξαίφνης οὐδὲ λαθραίως</l>
+            <l n="1078">εἰς ἀπέραντον δίκτυον ἄτης</l>
+            <l n="1079">ἐμπλεχθήσεσθ᾽ ὑπ᾽ ἀνοίας.</l>
+            <milestone ed="p" n="1080" unit="card"/>
+          </sp>
+          <sp>
+            <speaker>Προμηθεύς</speaker>
+            <l n="1080">καὶ μὴν ἔργῳ κοὐκέτι μύθῳ</l>
+            <l n="1081">χθὼν σεσάλευται.</l>
+            <l n="1082">βρυχία δ᾽ ἠχὼ παραμυκᾶται</l>
+            <l n="1083">βροντῆς, ἕλικες δ᾽ ἐκλάμπουσι</l>
+            <l n="1084">στεροπῆς ζάπυροι, στρόμβοι δὲ κόνιν</l>
+            <l n="1085">εἱλίσσουσι:<note place="unspecified"><foreign xml:lang="grc">εἱλίσσουσι</foreign> Turnebus: <foreign xml:lang="grc">ἑλίσσουσιν</foreign> M</note> σκιρτᾷ δ᾽ ἀνέμων</l>
+            <l n="1086">πνεύματα πάντων εἰς ἄλληλα</l>
+            <l n="1087">στάσιν ἀντίπνουν ἀποδεικνύμενα:</l>
+            <l n="1088">ξυντετάρακται δ᾽ αἰθὴρ πόντῳ.</l>
+            <l n="1089">τοιάδ᾽ ἐπ᾽ ἐμοὶ ῥιπὴ Διόθεν</l>
+            <l n="1090">τεύχουσα φόβον στείχει φανερῶς.</l>
+            <l n="1091">ὦ μητρὸς ἐμῆς σέβας, ὦ πάντων</l>
+            <l n="1092">αἰθὴρ κοινὸν φάος εἱλίσσων,<note place="unspecified"><foreign xml:lang="grc">εἱλίσσων</foreign> Turnebus: <foreign xml:lang="grc">ἑλίσσων</foreign> codd.</note></l>
+            <l n="1093">ἐσορᾷς μ᾽ ὡς ἔκδικα πάσχω.</l>
+          </sp>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
