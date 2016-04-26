@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+<fileDesc>
+<titleStmt>
+<title>METHODIUS</title>
+<editor>D.G. NATHANAEL BONWETSCH</editor>
+<sponsor>University of Leipzig</sponsor>
+<funder>European Social Fund Saxony</funder>
+<principal>Gregory Crane</principal>
+<principal>Monica Berti</principal>
+<meeting/>
+<respStmt>
+<persName xml:id="DDD">Digital Divide Data</persName>
+<resp>Corrected and encoded the text</resp>
+</respStmt>
+<respStmt>
+<persName>Greta Franzini</persName>
+<resp>Project Manager (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+<persName>Simona Stoyanova</persName>
+<resp>Project Assistant (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+<persName>Bruce Robertson</persName>
+<resp>Technical Advisor</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>University of Leipzig</authority>
+<idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+<availability>
+<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+License</p>
+</availability>
+<date>2014</date>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl xml:lang="la">
+<biblStruct>
+<monogr>
+<title>METHODIUS</title>
+<editor>
+<persName>
+<name xml:lang="la">D.G. NATHANAEL BONWETSCH</name>
+</persName>
+</editor>
+<author ref="urn:tmp">D.G. NATHANAEL BONWETSCH</author>
+<imprint>
+<publisher>J. C. HINRICHS'SCHE BUCHHANDLUNG</publisher>
+<pubPlace>LEIPZIG</pubPlace>
+<date>1917</date>
+</imprint>
+<biblScope unit="volume">vol.</biblScope>
+</monogr>
+</biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+<refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="el">Greek</language>
+<language ident="la">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+<text><body><div type="edition" n="tlg2959.tlg010"><p>Fragmente ohne nähere Bestimmung.</p>
+    <div type="textpart" subtype="fragment" n="1">
+      <p>Δικαιοσύνη ἐστὶν ἡ πασῶν τῶν ἐντολῶν πλήρωσις. — Οὐ δύναται
+ἡ ἀνθρωπίνη φύσις αὐτὸ καθαρῶς τὸ δίκαιον [ἐν] ψυχῇ θεάσασθαι,
+<lb n="10"/> τὰ πολλὰ τῷ λογισμῷ ἀμβλυώττουσα. — Ὡς ἔοικεν ἡ δικαιοσύνη
+τετράγωνός ἐστι πάντοθεν ἴση καὶ ὁμοία. — Ἡ τοῦ θεοῦ
+δικαιοκρισία ταῖς ἡμετέραις διαθέσεσιν ἐξομοιοῦται καὶ οἷάπερ ἂν τὰ
+παρ' ἡμῶν ᾖ, τοιαῦτα ἡμῖν ἐκ τῶν ὁμοίων ἀντιπαρέχεται.</p>
+<note type="footnote">2 Theodoret Eranistes Dial. I (Bd. lY, 55 f J. F. Schulze, PGr. 83, 88 C) —
+4 Phil. 2, 6 — 6 S. Parall. 453 S. 208 Holl, vgl. zu ffiob 25, 1 Nr. 5. De res.
+11, Iff. Nilus Ep. IV, 15 — 8 Antonius Melissa PGr. 136, 805 B — S. Parall. 257
+S. 209 Holl; vgl. Ps. Justin, Quaest. ad Orthod. 1 (189)</note>
+<note type="footnote">2 Οὕτω — S. 5 στέψῃ (C) Theodoret. Lemma: τοῦ ἁγίου Μεθοδίου ἐπισκόπου
+καὶ μάρτυρος ἐκ τοῦ περὶ τῶν μαρτύρων λόγου 6 f Πάσης — θεῷ in Coislin
+276 Bl. 252 (C). Ottob. 79 Bl. 299 v (0 PGr. 96, 340 b). Paris. 928 Bl. 325 (P).
+Eupefuc. 1450 Bl. 259 v (R). Lemma: τοῦ ἁρίου Μεθοδίου ἐκ τοῦ περὶ μαρτυρίας
+C, τοῦ ἁγίου ἱερομάρτυρος Μεθοδίου Πατάρων R, Μεθοδίου Ο P Ι καταρχεῖ
+P Ι πράξεως ἡ καταρχὴ R 7 τῷ &lt; P 8 Δικαιοσύνη — ἀντιπαρέχεται Ζ. 13
+bei Anton. Melissa Ι Οὐ δύναται — ἀμβλύλυώττουσα Z. 10 auch in 105 v A καφ.
+Διδ. (PGr. 95, 13S1 A). P 131 v. Μ 129 (alle vier mit Einem Archetypus) und
+R 147 v f. Lemma in R τοῦ ἁγίου Μεθοδίου, A P M Μεθοδίου 9 τὸν δίκ. Ο
+9 f τὸν λογισμὸν vor θεάσ. R 10 ἀμβλυώτουσα M, ἀμβλυόττουσα OAPR</note>
+
+
+<pb n="521"/>
+    </div>
+    <div type="textpart" subtype="fragment" n="2">
+      <p>Πονηρία ἀρετήν τε καὶ ἑαυτὴν οὐδέποτε ἂν γνοίη.</p>
+    </div>
+    <div type="textpart" subtype="fragment" n="32">
+      <p>Μή πως ἄρα αἱ τρεῖς αὗται τῶν προγόνων κεφαλαὶ πάσης
+τῆς ἀνθρωπότητος ὁμοούσιοι ὑποστάσεις κατ' εἰκόνα τινά, ὡς καὶ
+Μεθοδίῳ δοκεῖ, τυπικῶς γεγόνασι τῆς ἁγίας καὶ ὁμοουσίου τριάδος,
+<lb n="5"/> τοῦ μὲν ἀναιτίου καὶ ἀγεννήτου Ἀδὰμ τύπον καὶ εἰκόνα ἔχοντος τοῦ
+ἀναιτίου καὶ πάντων αἰτίου παντοκράτορος θεοῦ καὶ πατρός, τοῦ
+δὲ γεννητοῦ υἱοῦ αὐτοῦ εἰκόνα προδιαγράφοντος τοῦ γεννητοῦ υἱοῦ
+καὶ λόγου τοῦ θεοῖ, τῆς δὲ ἐκπορευτῆς Εὕας σημαινούσης τὴν τοῦ
+ἁγίου πνεύματος ἐκπορευτὴν ὑπόστασιν.</p>
+      <lb n="10"/> </div>
+    <div type="textpart" subtype="fragment" n="4">
+      <p>Εἴη ὑμῖν κωφεῦσαι καὶ ἀποβήσεται ὑμῖν σοφία.</p>
+<note type="footnote">1 S. Parall. 258 S. 209 Holl — 2 Anast. Sin., Mai, Script. Vet. Nova Coli.
+(Rom 1837) IX, 019 — 8 vgl. Gen. 2, 21 — 10 S. Parall. 259 S. 209 Holl</note>
+<note type="footnote">1 πονηρία — γνοίη R 237. Lemma Μεθοδίου 2 Anastas. Περὶ τοῦ κατ
+εἰκόνα 10 Ohne Lemma an das Citat aus Symp. Χ, S. 1 angeschlossen in
+Hieros. s. Sep. 15 Bl. 180</note>
+</div>
+ </div>
+</body></text></TEI>

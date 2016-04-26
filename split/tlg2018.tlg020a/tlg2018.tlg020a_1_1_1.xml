@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+<fileDesc>
+<titleStmt>
+<title>EUSEBIUS WERKE</title>
+<editor>DR. IVAR A. HEIKEL</editor>
+<sponsor>University of Leipzig</sponsor>
+<funder>European Social Fund Saxony</funder>
+<principal>Gregory Crane</principal>
+<principal>Monica Berti</principal>
+<meeting/>
+<respStmt>
+<persName xml:id="DDD">Digital Divide Data</persName>
+<resp>Corrected and encoded the text</resp>
+</respStmt>
+<respStmt>
+<persName>Greta Franzini</persName>
+<resp>Project Manager (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+<persName>Simona Stoyanova</persName>
+<resp>Project Assistant (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+<persName>Bruce Robertson</persName>
+<resp>Technical Advisor</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>University of Leipzig</authority>
+<idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+<availability>
+<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+License</p>
+</availability>
+<date>2014</date>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl xml:lang="la">
+<biblStruct>
+<monogr>
+<title>EUSEBIUS WERKE</title>
+<editor>
+<persName>
+<name xml:lang="la">DR. IVAR A. HEIKEL</name>
+</persName>
+</editor>
+<author ref="urn:tmp">DR. IVAR A. HEIKEL</author>
+<imprint>
+<publisher>J.C.HINRICHS'SCHE BUCHHANDLUNG</publisher>
+<pubPlace>LIPSIAE</pubPlace>
+<date>1902</date>
+</imprint>
+<biblScope unit="volume">vol.</biblScope>
+</monogr>
+</biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+<refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="el">Greek</language>
+<language ident="la">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+<text><body><div type="edition" n="tlg2018.tlg020a_1_1_1">
+<div type="textpart" subtype="book" n="1">
+<pb n="2"/>
+<head>ΕΙΣ TON BION
+TOY MAKAPIOY ΚΩΝΣΤΑΝΤΙΝΟΥ
+ΒΑΣΙΔΕΩΣ</head>
+
+<pb n="3"/>
+<p>Kεφίλαια τοῦ κατὰ θεὸν
+βίου τοῦ μακαρίου Κωνσταντίνου βασιλέως.
+λόγος ᾱ.</p>
+<p>ά. Προοίμιον περὶ τῆς Κωνσταντίνου τελευτῆς.</p>
+<lb n="5"/> <p>β΄. Περὶ υἱῶν αὐτοῦ βασιλευσάντων. Ἔτι προοίμιον.</p>
+<p>γ΄. Περὶ θεοῦ τιμῶντος εὐσεβεῖς βασιλεῖς καὶ ἀπολλύντος τυράννους.</p>
+<p>δ΄. Ὅτι ὁ θεὸς Κωνσταντῖνον ἐτίμησεν.</p>
+<p>έ. Ὅτι δὲ ὑπὲρ τὰ ἑξήκοντα.</p>
+<lb n="10"/> <p>ς΄. Ὅτι θεοῦ μὲν δοῦλος ἦν ἐθνῶν δὲ νικητής.</p>
+<p>ς΄. Πρὸς Κῦρον τὸν Περςῶν βασιλέα καὶ Ἀλέξανδρον τὸν Μακεδόνων σύγκρισις.</p>
+<p>ή. Ὅτι τῆς οἰκουμενης πάσης σχεδὸν ἐκράτησεν.</p>
+<p>θ΄. Ὅτι υἱὸς βασιλέως εὐσεβὴς καὶ υὐοῖς βασιλεῦσι κατέλιπε τὴν
+<lb n="15"/> ἀρχήν.</p>
+<p>ί. Περὶ τοῦ καὶ ἀναγκαίαν εἶναι καὶ ψυχωφελῆ τὴν ἱστορίαν ταύτην.</p>
+<p>ιά. Ὅτι μόνας τὰς Κωνσταντίνου νῦν ἱστόρησε θεοφιλεῖς πράξεις.</p>
+<p>ιβ΄. Ὅτι ὡς Μωϋςῆς ἐν οἵκοις τυράννων ἀνετάφη Κωνσταντῖνος.</p>
+<p>ιγ΄. Περὶ Κωνσιταντίου τοῦ πατρὸς αὐτοῦ μὴ ἀνασχομένου τῶν περὶ</p>
+<note type="footnote">2 Wortfolge βασιλέως Κωνσταντίνου J, μακαρίου Κωυσταντίνου βασιλέως ΜΒ
+(die Buchstaben über der Zeile von M1, B2) | λόγος ᾱ &lt;Α | 4 Die Zahlzeichen
+ά, β΄ u. s. w. finden sich nur in V |  Προοίμιον — τελευτῆς findet sich in diesem
+Inhaltsverzeichnisse, aber im Texte selbst (im Folgenden = im T.) fehlen diese
+Worte in allen HSs | 5 Περὶ — βασιλευσάντων hier in allen HSS, im T.: nur in
+V| Ἔτι προοίμιον &lt;Β im T. | Im T.: das Zeichen γ΄steht vor Ἔτι προοίμιον,
+δ΄vor Περὶ θεοῦ . . . u s. w. bis zum Ende des ersten Buches  V. | 6 Im T.: Περὶ
+θεοῦ . . . und alle folgenden Inhaltsangaben fehlen in JMBA | Wortfolge εὐσεβεῖς
+βασιλεῖς V sowohl hier als im T., βασιλεῖς εὐσεβεῖς JMBA | 8 εὐσεβῶς nur in V,
+im T. steht es nach ἔτη | 10 nach ἦν + Κωνσταντῖνος im T.V | 11 τῶν περςῶν
+ΜΒ | τῶν μακεδόνων ΜΒ u. im T. V| 14 εὐσεβὴς V hier u. im T., J, εὐσεβῆς
+ΜΒ, εὐσεβοῦς Α | κατέλειπε V hier u. im T. | 16 ψυχωφελῆ] ἐπωφελῆ V hier u.
+im T. | 17 μόνος V 1, aber über ος steht aς von V 2, im T.: μόνος εὐσέβιος V | νῦν
+&lt;im T. V | 19 αὐτοῦ] αωνσταντίνου im T. V  | τῶν] τὸν ΜΒ.</note>
+
+<pb n="4"/>
+<p>Διοκλητιανὸν καὶ Μαξιμιανὸν καὶ Μαξέντιον διῶξαι τοὺς Χριστιανους.</p>
+<p>ιδ'. Ὅπως Κωνστάντιος ὁ πατὴρ ὁνειδισθεὶς πενίαν ὑπὸ Διοκλητιανοῦ
+καὶ] τοὺς θησαυροὺς πλήσας ἀπέδωκε πάλιν τοῖς προσενέγκασι
+<lb n="5"/> τὰ χρήματα.</p>
+<p>ιέ. Περὶ τοῦ ὑπὸ τῶν ἄλλων διωγμοῦ.</p>
+<p>ις΄. “Οπως Κωνστάντιος ὁ πατὴρ εἰδωλολατρείαν σχηματισάμενος
+τοὺς μὲν θύειν θελήσαντας ἐξέβαλε, τοὺς δὲ ὁμολογῆσαι προθε-
+μένους εἷχεν ἐν τῷ παλατίῳ.</p>
+<lb n="10"/> <p>ις΄. Περὶ τῆς φιλοχρίστου προαιρέσεως τοῦ αὐτοῦ.</p>
+<p>τή. “Οτι Διοκλητιανοῦ καὶ Μαξιμιανοῦ ἀποδυσαμένων πρῶτος ἦν
+λοιπὸν αὒγοθστος ὁ Κωνστάντιος, ἐν εὐτεκνίᾳ κομῶν.</p>
+<p>ιθ΄. Περὶ τοῦ υἱοῦ αὐτοῦ Κωνσταντίνου νεανίου ἃμα Διοκλητιανῷ
+τὸ πρὶν εἰς Παλαιστίνην παραγενομένου.</p>
+<lb n="15"/> <p>κ΄. Κωνσταντίνου πρὸς τὸν πατέρα διὰ τὰς ἐπιβουλὰς Διοκλητιανοῦ
+αναχωρησις.</p>
+<p>κα κά. Τελευτὴ Κωνσταντίου τὸν υἱὸν Κωνσταντῖνον βασιλέα καταλιποντος.</p>
+<p>κβ΄. Ὅπως Κωνσταντίου προκομισθέντος τὰ στρατεύματα Κωνσταντῖνον
+<lb n="20"/> αὒγοθστον ἀνηγόρευσεν.</p>
+<p>κγ΄. Καταστροφὴ τῶν τυράννων δί ὑπομνήσεως ὁλίγης.</p>
+<p>κδ΄. Ὅτι βουλήσει θεοῦ Κωνσταντῖνος ἔσχε τὸ βασιλεύειν.</p>
+<p>κέ. Κωνσταντίνου κατà βαρβάρων καὶ Βρεττανῶν νίκαι.</p>
+<p>κς΄. Ὅπως Ῥώμην ἐλευθερῶσαι Μαξεντίου προέθετο.</p>
+<lb n="25"/> <p>κς΄. Ὅτι τàς τῶν εἰδωλολατρησάντων καταστροφὰς ἐνθυμηδεὶς μᾶλλον
+τὸν χριστιανισμὸν ἐξελέξατο.</p>
+<p>κη. Ὅπως εὐξαμένῳ τὴν ὁπτασίαν ὁ θεὸς παρέσχε, σταυρὸν ἐκ φωτὸς
+ἐν οὐρανῷ μεσημβρίᾳ καὶ γραφὴν τούτῳ νικᾶν παραινοῦσαν.</p>
+<p>κθ΄. Ὅπως ὁ Χριστὸς τοῦ Θεοῦ καθ’ ὕπνους αὐτῷ φανεὶς ὁμοιοπατὴρ</p>
+<note type="footnote">3 nach + κωνσταντίνου im T. V Ι 4 καὶ Hkl Ι 7 wie 3. Ι 8 δελήσαντας
+hier u. im Τ. V, θέλοντας JMBA Ι ὁμολογῆς ἁπροθεμένους hier V (nicht
+im T.) Ι 9 ἔχειν MB Ι τῶ VJ, MBA u. im T. V Ι 10 τοῦ αὐτοῦ hierher versetzt von
+Hkl, steht vor περὶ τῆς ... in V (hier) JMBA, περὶ τῆς φιλ. προαιρ. κωνσταντίου im
+T. V Ι 11 ναξιμινοῦ im Τ. V Ι ὑποδυσ. V, aber ἁ über ὑ V2 Ι 13 νεανία MBA, αὐτὸν διδάσκαλον πᾶσιν ἔθνεσι κατεστήσατο. μεγάλῃ
+25 βοῇ ταῖς πάντων ἀκοαῖς μαρτυρόμενον τὸν ὄντα θεὸν εἰδέναι, τὴν δὲ
+τῶν οὐδαμῶς ὄντων ἀποστρέφεσθαι πλάνην. VI. Καὶ ὁ μὲν οἶα
+πιστὸς καὶ ἀγαθὸς θεράπων τοῦτ' ἔπραττε καὶ ἐκήρυττε, δοῦλον
+ἄντικρυς ἀποκαλῶν καὶ θεράποντα τοῦ παμβασιλέως ὁμολογῶν ἐαυτόν,
+θεὸς δ' αὐτὸν ἐγγύθεν ἀμειβόμενος κύριον καθίστησι καὶ δεσπότην
+30 νικητ·ήν τε μόνον τῶν ἐξ αἰῶνος αὐτοκρατόρων ἄμαχον καὶ ἀήττηπαντοίοις
+1 V Ι 2 ταῦτα hier fangt das neue Cap. in V an. Ι H ὄντα V. εἶναι
+JMBA Ι 5 ἐναργὴς MBA Ι 7 ταῦτα hier nicht neues Cap. in V | 8 αὐτῶ J, αὐτοῦ
+VMBA Ι δεξιὸς Val., δεξιῶς HSS Ι 9 διδάσκαλον Zimm., vgl. Ζ. 24; διδασκαλίαν
+HSS Ι 10 γοῦν V, οὖν JMBA Ι 13 προστησάμενος — θεοσεβ. V, JMBA HA
+14 χρόνον Val., χρόνων HSS Ι 15 καὶ προσέτι λῷον ändlich! Wil.; wahrtoh.
+Olossem, vgl. 10, 14 Ι 16 τοῦ — βίου Hkl Ι aixCo V, JMBA Ι 18 νικητὴν VJ,
+νοητὸν MBA Ι 20 ὡς Hkl, ὅσον HSS Ι 21 τε Hkl Ι 22 πανοπλία um ftande V-
+im Texte wird mit einem Zeichen darauf hingewiesen), πανοπλία παντευχία (S0!)
+JMBA, vgl. Laus Const. IX, 9 Ι 23 δἰ V, δ’ JMBA Ι θνητὸν VA, θνητῶν JMB | 2
+αὐτὸν (vgl. z. B. I, 13,3 1, 39,3) oder ἀληθοῦς Hkl, αὐτοῦ HSS Ι 25 ἀκοαῖς V,
+ἀρεταῖς JMBA Ι μαρτυρούμενον HSS Ι τὴν] τῆς V Ι 26 τὴν πλάνην V Ι 20 καθίστησι
+V, καθίστη JBA, καθέστη M.</note>
+
+<pb n="5"/>
+<p>τρλιοῳ τοῦ σαυροῦ σημείῳ κεχρπγσυαθ κατὰ τοὺς πολέμους προςέταξεν.</p>
+<p>λ΄. Κατασκευὴ τοῦ αὐτοῦ σταυρικοῦ σημείου.</p>
+<p>λα΄. Ἔκφρασις σταυροειδοῦς σημείου, ὅπερ νῦν οἱ Ῥωμαῖοι λάβαρον
+καλοῦσιν.</p>
+<lb n="5"/>  <p>καλοῦσιν.</p>
+<p>λβ΄. Ὅπως κατηχηθεὶς Κωνσταντῖνος τὰς θείας γραὰς ἀνεγίνωσκε.</p>
+<p>λγ΄. Περὶ τῶν Μαξεντίου μοιχειῶν τῶν ἐν Ῥώμῃ.</p>
+<p>λδ΄. Ὅπως ἡ τοῦ ἐπάρχου διὰ σωφροσύν ἑαυτὴν ἀνεῖλεν.</p>
+<p>λέ. Άναίρεσις δήμου Ῥωμαίων ὑπὸ Μαξεντίου</p>
+<lb n="10"/> <p>λς΄.Μαγεῖαι Μαξεντίου καὶ ἔνδεια τροφῶν ἐν Ῥώμῃ.</p>
+<p>λς΄. Ἧττα ἐν Ἰταλίᾳ Μαξεντίου στρατευμάτων.</p>
+<p>λή. Μαξεντίου θάνατος ἐν γεφύρᾳ ποταμοῦ Τιβέριδος.</p>
+<p>λθ΄. Εἵσοδος ἐν Ῥώμῃ Κωνσταντίνου.</p>
+<p>μ΄. Περὶ ἀνδριάντος αὐτοῦ σταυρὸν κατέχοντος καὶ τῆς ἐπιγραφῆς.</p>
+<lb n="15"/> <p>μά. Εὐφροσύναι κατὰ τὰς ἐπαρχίας καὶ δωρεαὶ Κωνσταντίνου.</p>
+<p>μβ΄.Ἐπισκόπων τιμαὶ καὶ ἐκκλησιῶν οἰκοδομαί.</p>
+<p>μγ΄.Περὶ τῶν εἰς τοὺς πένητας καὶ δεομένους εὐεργεσιῶν Κωνσταν
+τίνου.</p>
+<p>μδ΄. Ὅπως ταῖς συνόδοις τῶν ἐπισκόπων συμπαρῆν.</p>
+<lb n="20"/> <p>μέ. Ὅπως καὶ τῶν ἀφρόνων ἠνείχετο.</p>
+<p>μς΄. Νίκαι κατὰ βαρβάρων.</p>
+<p>μς΄. Μαξιμίνου θελήσαντος ἐπιβουλεῦσαι θάνατος καὶ ἄλλων, οὓς ἐξ
+ἀποκαλύψεως Κωνσταντῖνος εὖρεν.</p>
+<p>μή. Δεκαετηρίδος Κωνσταντίνου πανήγουρις.</p>
+<lb n="25"/> <p>μθ΄. Ὅπως τὴν ἀνατολὴν ἐκακούχει Δικίνιος.</p>
+<p>ν΄. Ὅπως καὶ Κωνσταντίνῳ Δικίνιος ἐπιβουλεύειν ἤθελεν.</p>
+<p>νά. Δικινίου κατ’ἐπισκόπων συσκευαὶ καὶ συνόδων κωλύσεις</p>
+<p>νβ΄.Ἐξορισμοὶ καὶ δημεύσεις κατὰ Χριστιανῶν.</p>
+<note type="footnote">1 προσέταττεν im T.V | 3 αὐτοῦ &lt;im T. V | 4 σημείου, ε über der Zeile,
+V | λάβορον, aber über das erste o steht α von V2, λάβορον im T. V | 8 ὅπως τοῦ
+ἐπάρχου ἡ γυνὴ im T. V | 9 μαξεντίου, μαξεν auf Ras., A, κωνσταντίνου Β1, in
+μαξεντίου verändert von B2 | 11 nach ἦττα steht τῶν in V, aber gestrichen von
+V 2| ἐν] ἰν v | nach στρατευμάτων + ὑπὸ κωνσταντίνου hier V, ἐν κωνσταντ(so!)
+nachher hinzugefüge im T. V | 14 ἀνδρείας V, αντος über der Zeiler V2, ἀνδρειάντος
+Μ |αὐτοῦ]κωνσταντίνου im T. V | ὐπογραφῆς V1, ἐπι über der Zeile V2,
+ὑπογραφῆς im T.V | 15 εὐφροσύνη im T. V | 16 τιμὴ im T.V | 17 καὶ δεομένους 
+nur in V, hier u. im T. | nach βαρβ. + αωνσταντίνου im T.V | 22 ὅπως +νοr
+Μαςιμ. Α 2, nach oὕς + δὲ Α 2 |ἄλλο ΜΒ | Wortfolge καὶ ἄλλων θάνατος im T. V | 
+25 ἐκακούχει, κα auf Ras. B, ἐκακούχη im T. V | λικίννοις JA; auf den moisten 
+Münzen u. Inschr. mit einem v geschrieben. | 26 καὶ &lt;V | κωνσταντίνω
+auf Ras. J | λικίννοις wie 25 | 27 λικιννίου wie 25, λικιου V, νι über der Z.</note>
+
+<pb n="6"/>
+<p>νγ΄. Γυναῖκας εἰς ἐκκλησίας μὴ συνάγεσθαιπρόσταγμα καὶ πρὸ τῶν
+πυλῶν εὔχεσθαι λαούς.</p>
+<p>νδ΄. Τοὺς μὴ θύοντας ἀποστρατεύεσθαι, καὶ τοὺς ἐν φυλακαῖς μὴ 
+τρέφεσθαι.</p>
+<lb n="5"/> <p>νέ. Περὶ τῶν Δικινίου παρανομιῶν καὶ πλεονεξιῶν καὶ αἰσχρουργιῶν.</p>
+<p>νς΄. Ὅτι διωγμὸν ποιῆσαι λοιπὸν ἐπεχείρει.</p>
+<p>νζ΄.Ὅτι Μαξιμιανὸς σύριγγι καὶ σκώληκι δαμασθεὶς ὑπὲρ Χριστιανῶν
+ἔγραψεν.</p>
+<p>νή. Ὅτι Μαξιμῖνος διώξας Χριστιανοὺς καὶ φυγὼν ὡς οἰκέτης ἐκρύπτετο.</p>
+<lb n="10"/> <p>νθ΄.Ὅτι ἐν νόςῳ τυφλωθεὶς Μαξιμῖνος ὑπὲρ χριστιανῶν ἔγραψεν.</p>
+<p>Κεφάλαια τοῦ πρώτου λόγου.</p>
+<lb n="15"/><p>Δόγος ᾱ.</p>
+<note type="footnote">1 ἐκκλησίας μὴ V, ἐκκλησίαν μὴ im T.V, ἐκκλήμενον ΜΒΑ, dies stand auch
+wahrsch. in J, aber durch Rasur so verändert, dass man ἐκκλησίας μὴ lessen
+kann | καὶ πρὸ—λαούς nur in  V, hier u. im T. | τοὺς λαούς im T. V | 5 λικιννίου
+wie 5,25 | das erste καὶ&lt;im T.V| αἰσχρουργιῶν nur in V, hier u. im T.| 7 μαξιμῖνος
+J | 8 ἔγραφεν JMBA | 9 μαξιμιανὸς VMBA | Wortfolge χριστιανοὺς διώξας
+im T.V | καὶ ψ&lt;ΗΚ 1 |12 κεφάλ. — λόγου &lt; JA | 13–15 εὐσεβίου — λόγος
+ᾱ &lt;Α |14 τοῦ +νοr βασιλέως ΜΒ |15 ᾱ V, πρῶτος ΜΒ |λόγος ᾱ &lt;J.</note>
+</div>
+</div>
+
+</body></text></TEI>
