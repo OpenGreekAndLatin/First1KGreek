@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+<fileDesc>
+<titleStmt>
+  <title>ORIGENES WERKE</title>
+  <editor>DR. ERICH KLOSTERMANN</editor>
+  <sponsor>University of Leipzig</sponsor>
+  <funder>European Social Fund Saxony</funder>
+  <principal>Gregory Crane</principal>
+  <principal>Monica Berti</principal>
+  <meeting/>
+  <respStmt>
+   <persName xml:id="DDD">Digital Divide Data</persName>
+   <resp>Corrected and encoded the text</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Greta Franzini</persName>
+   <resp>Project Manager (University of Leipzig)</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Simona Stoyanova</persName>
+   <resp>Project Assistant (University of Leipzig)</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Bruce Robertson</persName>
+   <resp>Technical Advisor</resp>
+  </respStmt>
+ </titleStmt>
+ <publicationStmt>
+  <authority>University of Leipzig</authority>
+  <idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+  <availability>
+   <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+    License</p>
+  </availability>
+  <date>2014</date>
+  <publisher>University of Leipzig</publisher>
+  <pubPlace>Germany</pubPlace>
+ </publicationStmt>
+ <sourceDesc>
+  <listBibl xml:lang="la">
+   <biblStruct>
+    <monogr>
+     <title>ORIGENES WERKE</title>
+     <editor>
+      <persName>
+       <name xml:lang="la">DR. ERICH KLOSTERMANN</name>
+      </persName>
+     </editor>
+     <author ref="urn:tmp">DR. ERICH KLOSTERMANN</author>
+     <imprint>
+      <publisher>J. C. HINRICHS'SCHE BUCHHANDLUNG</publisher>
+      <pubPlace>LIPSIAE</pubPlace>
+      <date>1901</date>
+     </imprint>
+     <biblScope unit="volume">vol.</biblScope>
+    </monogr>
+   </biblStruct>
+  </listBibl>
+ </sourceDesc>
+</fileDesc>
+<encodingDesc>
+ <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+<refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+ <langUsage>
+  <language ident="el">Greek</language>
+  <language ident="la">Latin</language>
+ </langUsage>
+</profileDesc>
+<revisionDesc>
+ <change/>
+</revisionDesc>
+</teiHeader>
+<text><body><div type="edition" n="tlg2042.tlg012_1_1_1">
+<pb n="279"/>
+<head>Das Fragment aus der Oktateuchkatene.</head>
+<p>Ὠριγένους εἰς το αὐτὸ ἐκ τῶν εἰς τοὺς Θρήνους.</p>
+<p>Τίς γὰρ τὸ &gt;δίκαιον οὐ δικαίως ; διαλαβόντες δὲ ἐκεῖνο, <lb n="325"/>
+εὐχερῶς καὶ ἐπὶ τοῦτο μετελευσόμεθα, ὅτι ἔστι δικαίως τὸ ἄδικον
+<lb n="5"/> διώκειν. ἐξήγησις μὲν τοῦ δικαίως τὸ δίκαιον διώκειν αὔτη, ἐπὰν
+καὶ τὸ πραττόμενον καθῆκον ᾖ, καὶ ὑγιεῖ διαθέσει ἐνεργῆται· ὡς
+εἴ τις σωφροσύνην δι’ οὐδὲν ἄλλο ἢ δέ αὐτὴν κατορθώσαι,
+Ἰωσὴφ ἀναγέγραπται πεποιηκέναι. τοῦ δὲ ἀδίκως τὸ δίκαιον διώκειν
+ἡ σαφήνειά ἐστι τοιαύτη, ἐπὰν τὸ καθῆκον μέν τις ἐπιτελῇ, προθέσει
+<lb n="10"/> δὲ μοχθηρᾷ, ὡς εἴ τις δόξαν τὴν παρ’ ἀνθρώποις θηρώμενος
+κοινωνήσαι τῶν ὑπαρχόντων πένησιν, ὅπερ ἀπαγορεύων ὁ σωτήρ
+φησιν· »ἐὰν ποιῇς ἐλεημοσύνην, μὴ σαλπίσῃς ἔμπροσθέν σου, ὥσπερ
+οἱ ὑποκριταὶ ποιοῦσιν ἐν ταῖς συναγωγαῖς καὶ ἐν ταῖς ῥύμαις, ὅπως
+δοξασθῶσιν ὑπὸ τῶν ἀνθρώπων«. τὸ δὲ δικαίως τὸ ἄδικον ποιεῖν
+<lb n="15"/> νοηθείη ἄν, ὅταν προθέσει τὰ κρείττονα ποιεῖν τις προελόμενος παρ
+ἄγνοιαν τοῦ καλοῦ πράττῃ τὰ χείρονα· ὁποῖός ποτε γέγονε Παῦλος
+προδιδοὺς τὰς ἐκκλησίας κατὰ ζῆλον θεοσεβείας. ἀδίκως δὲ τὸ ἄδικον,
+ὅταν καὶ τὸ πραττόμενον ἄδικον ᾖ καὶ ἡ προαίρεσις
+κακοποιητίκη.</p>
+<note type="footnote">3 Vgl. Deut. 16, 20. — 12 Matth. 6, 2. - 17 Vgl. Act. 8, 3.</note>
+<note type="footnote">2 Überschrift z. B. im cod. Ven. Marc. gr. 534 saec. XI fol. 221v u. im Coisl. VI
+(Montfaucon Bibl. Coisl. p. 42). In der Oktateuchkatene wird das Fragment zu
+Deut. 16, 20 angeführt. Es ist zufällig dieselbe Stelle, auf welche
+Confessor zum 8. Brief des Dionysius Areopagita (ed. Cord. II, 316 D MPG 4, 549 B)
+anspielt, vgl. Einleitung | 10 παρὰ ἀνθρώπων Ru | 11 κοινωνήσαι Blass Koetschau
+vgl. Z. 7 κοινωνήσει Ni | ὅπερ] ἅπερ Ru | 17 παραδιδοὺς Blass doch vgl. S. 14, 30 |
+εὐσεβείας Ni.</note>
+</div>
+
+
+
+</body></text></TEI>
