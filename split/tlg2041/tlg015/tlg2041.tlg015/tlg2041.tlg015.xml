@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
+<fileDesc>
+<titleStmt>
+  <title>ORIGENES WERKE</title>
+  <editor>DR. ERICH KLOSTERMANN</editor>
+  <sponsor>University of Leipzig</sponsor>
+  <funder>European Social Fund Saxony</funder>
+  <principal>Gregory Crane</principal>
+  <principal>Monica Berti</principal>
+  <meeting/>
+  <respStmt>
+   <persName xml:id="DDD">Digital Divide Data</persName>
+   <resp>Corrected and encoded the text</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Greta Franzini</persName>
+   <resp>Project Manager (University of Leipzig)</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Simona Stoyanova</persName>
+   <resp>Project Assistant (University of Leipzig)</resp>
+  </respStmt>
+  <respStmt>
+   <persName>Bruce Robertson</persName>
+   <resp>Technical Advisor</resp>
+  </respStmt>
+ </titleStmt>
+ <publicationStmt>
+  <authority>University of Leipzig</authority>
+  <idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+  <availability>
+   <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+    License</p>
+  </availability>
+  <date>2014</date>
+  <publisher>University of Leipzig</publisher>
+  <pubPlace>Germany</pubPlace>
+ </publicationStmt>
+ <sourceDesc>
+  <listBibl xml:lang="la">
+   <biblStruct>
+    <monogr>
+     <title>ORIGENES WERKE</title>
+     <editor>
+      <persName>
+       <name xml:lang="la">DR. ERICH KLOSTERMANN</name>
+      </persName>
+     </editor>
+     <author ref="urn:tmp">DR. ERICH KLOSTERMANN</author>
+     <imprint>
+      <publisher>J. C. HINRICHS'SCHE BUCHHANDLUNG</publisher>
+      <pubPlace>LIPSIAE</pubPlace>
+      <date>1901</date>
+     </imprint>
+     <biblScope unit="volume">vol.</biblScope>
+    </monogr>
+   </biblStruct>
+  </listBibl>
+ </sourceDesc>
+</fileDesc>
+<encodingDesc>
+ <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+<refsDecl>
+        <cRefPattern n="" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+ <langUsage>
+  <language ident="el">Greek</language>
+  <language ident="la">Latin</language>
+ </langUsage>
+</profileDesc>
+<revisionDesc>
+ <change/>
+</revisionDesc>
+</teiHeader>
+<text><body><div type="edition" n="tlg2041.tlg015">
+<pb n="304"/>
+<head>Das Fragment ans der Canticakatene.</head>
+<p>vi = cod. Vat. ’. 754 saec. X. f. 370 v.</p>
+<p>v2 = cod. Vat. gr. 398 saec. X? f. 319 r.</p>
+ <div type="textpart" subtype="fragment" n="1">
+  <div type="textpart" subtype="section" n="1">
+   <p>I Sam. 2, 3. 6. 10. 2. 10.</p>
+<lb n="5"/> <p>Διδάσκει καὶ διὰ ταύτης τῆς ᾠδῆς τὸν προσερχόμενον θεῷ εἰς
+αὐτὸν μόνον ἔχειν τὰς ἐλπίδας καὶ εἰς αὐτὸν καυχᾶσθαι, μὴ μεγαλαυχεῖν
+ἀλλὰ ταπεινοφρονεῖν. καθότι πάντων ὡς θεὸς ἔχει τὴν
+γνῶσιν, ἀποδίδωσιν ἑκάστῳ κατὰ τὰ ἐπιτηδεύματα αὐτοῦ. αὐτὸς
+δὲ καὶ θανάτου καὶ ζωῆς δεσπόζει. παρακελεύεται δὲ γινώσκειν
+<lb n="10"/> τὸν κύριον, δῆλον δὲ ὄτι διὰ τῶν ἀγαθῶν πράξεων, διὸ ἐπιφέρει
+τὸ ποιεῖν κρίμα καὶ δικαιοσύνην ἐν μέσῳ τῆς γῆς. καθότι δίκαιό
+ἐστι κριτὴς πάσης τῆς γῆς, αὐτὸς ἰσχύς, αὐτὸς ὔψωσις,
+αὐτὸς κέρας σωτηρίας τῶν ἀγαπώντων αὐτόν.</p>
+<note type="footnote">5 Διδάσκει] vorher Ὠριγένους v1 anonym v2 | 7 ἔχει ἔχων v1v2 | 10 ἐπιφέρει
+τὸ] ἐπὶφέρειν v2 | 11 ἐν μέσῳ τῆς γὴς] &lt; v2 | 13 κέρα v2 | αὐτῶν v2 w. e. seh.</note>
+  </div>
+ </div>
+</div>
+ 
+</body></text></TEI>
