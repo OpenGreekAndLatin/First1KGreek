@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+<titleStmt>
+<title>DIE ORACULA SIBYLLINA</title>
+<editor>DR. JOH. GEFFCHEN</editor>
+<sponsor>University of Leipzig</sponsor>
+<funder>European Social Fund Saxony</funder>
+<principal>Gregory Crane</principal>
+<principal>Monica Berti</principal>
+<meeting/>
+<respStmt>
+<persName xml:id="DDD">Digital Divide Data</persName>
+<resp>Corrected and encoded the text</resp>
+</respStmt>
+<respStmt>
+ <persName>Greta Franzini</persName>
+ <resp>Project Manager (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+ <persName>Simona Stoyanova</persName>
+ <resp>Project Assistant (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+ <persName>Bruce Robertson</persName>
+ <resp>Technical Advisor</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>University of Leipzig</authority>
+<idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+<availability>
+ <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+  License</p>
+</availability>
+<date>2014</date>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl xml:lang="la">
+ <biblStruct>
+  <monogr>
+   <title>DIE ORACULA SIBYLLINA</title>
+   <editor>
+	<persName>
+	 <name xml:lang="la">DR. JOH. GEFFCHEN</name>
+	</persName>
+   </editor>
+  <author ref="urn:tmp">DR. JOH. GEFFCHEN</author>
+   <imprint>
+	<publisher>J. C. HINRICHS'SCHE BECHHANDLUNG</publisher>
+	<pubPlace>LEIPZIG</pubPlace>
+	<date>1902</date>
+   </imprint>
+   <biblScope unit="volume">vol.</biblScope>
+  </monogr>
+ </biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+  <refsDecl n="CTS">
+        <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="el">Greek</language>
+<language ident="la">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+  <text>
+    <body><div type="edition" n="urn:cts:greekLit:tlg1551.tlg002.opp-grc1">
+<pb n="227"/>
+<head>„Fragmente“.</head>
+<div type="textpart" subtype="fragment" n="1">
+<p>Ἄνθρωποι θνητοὶ κοὶ σάρκινοι, οὐδὲν ἐόντες,
+πῶς ταχέως ὑψοῦσθε βίου τέλος οὐκ ἐσορῶντες;
+οὐ τρέμετ᾿ οὐδὲ φοβεῖσθε θεόν, τὸν ἐπίσκοπον ὑμῶν,
+ὕψιστον γνώστην πανεπόπτην μάρτυρα πάντων
+<lb n="5"/> παντοτρόφον κτίστην, ὅστις γλυκὺ πνεῦμ᾿ ἐν ἄπασιν
+κάτθετο χἠγητῆρα βροτῶν πάντων ἐποίησεν;
+εἷς θεός, ὃς μόνος ἄρχει, ὑπερμεγέθης ἀγένητος
+<note type="footnote">Fragm. 1 bei Theophilus: ad Autolycum II 36 Σίβυλλα δέ, ἐν Ἕλλησιν καὶ
+ἐν τοῖς λοιποῖς ἔθνεσιν γενομένη προφῆτις, ἐν ἀρχῇ τῆς προφητείας αὐτῆς ὀνειδίζει
+τὸ τῶν ἀνθρώπων γένος, λέγουσα· Ἄνθρωποι .... — HS.: M(arcianus 49(3;.
+XI. Jhd , korrigiert von einer H. des XV. Jhd. = Me.</note>
+<note type="footnote">1 ff. vgl. Fragm. 3, 21. 8—11. XIV 1 ff. Ähnlich auch Gregor.
+Carm. p. 1301, 10. 1557, 88 Migne. — 1 Clem. Alex. Strom. III 3, 14 λέγει δὲ καὶ
+ἡ Σίβυλλα· ἄνθρωποι ... — 2 vgl. Fragm. 3, 21. — 3 vgl. III 29. —4 vgl. II 177 |
+5 f. Lactant. div. inst. IV 6, 5 Sibylla Erythraea in carminis sui principio
+(= Theophil, ad Autol. a. a. 0.), quod a summo deo exorsa est, filium dei (!) ducem
+et imperatorem omnium his versibus praedicat: παντοτρόφον . . . — 6 vgl. Lactant.
+instit. epit. 37, 6 Sibylla &lt;Erythraea&gt; quoque deum dicit ducem omnium a
+factum . . . . . — 7 — 9 [Justinus:] Coh. ad Graec. 16 τίνα δὲ καὶ τὴν ἀρχαίαν καὶ
+σφόδρα παλαιὰν Σίβυλλαν, ἧς καὶ Πλάτων καὶ Ἀριστοφάνης καὶ ἕτεροι πλείους
+ὡς χρησμῳδοῦ μέμνηνται, διὰ χρησμῶν ὑμᾶς διδάσκειν περὶ ἑνὸς καὶ μόνου θεοῦ
+συμβαίνει, ἀναγκαῖον ὑπομνῆσαι· λέγει δὲ οὕτως· εἷς . . . — 7 (vgl. III 11 f.) = Prolog.
+S. 5, 94. Lactant. div. inst. I 6, 15 in his ergo versibus quos Romam legati adtulerunt
+de uno deo haec sunt testimonia: εἷς . . .</note>
+<note type="footnote">1 ἐῶντεσ Μ | 2 vgl. Fragm. 3,21 | 3 vgl. III 29. — οὐδὲ Gesner οὐ Μ. — τὸν ἐπίσκοπον
+ὑμῶν vgl. Ι 152 | 4 vgl. II 177. — πανεπόπτην Castalio παντεπόπτην Μ. öglich
+äre auch παντόπτην | 5 πνεῦμα ἅπασιν Lactant. | 6 vgl. Fragm. 3, 13. — κάτθετο
+Castal. κατέθετο Μ, ebenso will die Überlieferung des Lactant. ΚΑΤΕΘΕΤΟ,
+ΚΑΕΘΕΤΟ, ΚΑ*ΘΕΤΟ, ΕΘΕΤΟ u. ä.). — χἠγητῆρα ... ἐποίησεν
+vgl. Fragm. 3, 13. — καὶ ἡγητῆρα oder καὶ ἡγήτορα(ν) die Überlieferung des Lactant.
+— βροτῶν: θεὸν Lactant. | 7 f. vgl. (V. 32). III 11 f. = Prolog S. 5, 94. — 7 εἷς θεὸς ὃς
+μόνος ἄρχει Lactant. εἷς θεὸς μόνος ἄρχει Μ εἶς θεὸς μόνος ἐστίν Hs. des [Justin.]</note>
+
+
+<pb n="228"/>
+παντοκρατωρ αορατος ορωμενος αυτος απαντα,
+αὐτὸς δ᾿ οὐ βλέπεται θνητῆς ὑπὸ σαρκὸς ἁπάσης·
+<lb n="10"/> τίς γὰρ σὰρξ δύναται τὸν ἐπουράνιον καὶ ἀληθῆ
+ὀφθαλμοῖσιν ἰδεῖν θεὸν ἄμβροτον, ὃς πόλον οἰκεῖ;
+ἀλλ’ οὐδ᾿ ἀκτίνων κατεναντίον ἠελίοιο
+ἄνθρωποι στῆναι δυνατοί, θνητοὶ γεγαῶτες
+ἄνδρες, ἐν ὀστείοισι φλέβες καὶ σάρκες ἐόντες.
+<lb n="15"/> αὐτὸν τὸν μόνον ὄντα σέβεσθ᾿ ἡγήτορα κόσμου.
+ὃς μόνος εἰς αἰῶνα καὶ ἐξ αἰῶνος ἐτύχθη
+αὐτογενὴς ἀγένητος ἅπαντα κρατῶν διὰ παντός,
+πᾶσι βροτοῖσι νέμων τὸ κριτήριον έν φαΐ κοινῷ.
+τῆς κακοβουλοσύνης δὲ τὸν ἄξιον ἕξετε μισθόν,
+<lb n="20"/> ὅττι θεὸν προλιπόντες ἀληθινὸν ἀέναόν τε
+δοξάζειν αὐτῷ τε θύειν ἱερὰς ἑκατόμβας
+<note type="footnote">9 (f.) vgl. Fragm. 3, 15. III 17. IV 10. Deut. 5, 20. — 10 —13 Vergleich aus
+griechischer Litteratur, vgl. Xenophon: Memorab. IV 3, 14 ähnlich Stobaeus II p. 15, 4
+Wachsm.), dann von den Juden übernommen: Chullin 60a; danach christlich:
+Barnab. ep. 5, 10. Theophil, ad Autol. I 5, 4. Minuc. Felix 32, 6. Irenaeus II p. 247
+Harv. — Clem. Alex. Protr. VI 71 (aus einem Florilegium wie Stobaeus a. a. Ο.)
+Ξενοφῶν δὲ ὁ Ἀθηναῖος διαρρήδην ἂν καὶ αὐτὸς περὶ τῆς ἀληθείας ἀναγράφει τι
+μαρτυρῶν ὡς Σωκράτης, εἰ μὴ τὸ Σωκράτους ἐδεδίει φάρμακον· οὐδὲν δὲ ἦττον
+αἰνίττεται ὁ γοῦν τὰ πάντα, φησί, σείων καὶ ἀτρεμίζων ὡς μὲν μέγας τις καὶ
+δυνατός, φανερός· ὁποῖος δέ τις μορφήν, ἀφανής, οὐδὲ μὴν ὁ παμφαὴς δοκῶν εἶναι
+ἥλιος οὐδ᾿ αὐτὸς ἔοικεν ὁρᾶν αὐτὸν ἐπιτρέπειν, ἀλλ’ ἢν τις ἀναιδῶς αὐτὸν θεάσηται,
+τὴν ὄψιν ἀφαιρεῖται. πόθεν ἄρα ὁ τοῦ Γρύλλου σοφίζεται ἢ δηλαδὴ παρὰ τῆς
+προφήτιδος τῆς Ἑβραίων θεσπιζούσης ὡδέ πως· τίς .... = Strom. V 14, 109
+(Euseb. Praep. ev. XIII 13, 85). — 15. 16 Lactant. div. inst. 1 6, 16 qui quoniam
+solus sit aedificator mundi et artifex rerum vel quibus constat vel quae in eo sunt,
+solum coli oportere testatur: αὐτὸν . . . . . . — 15 vgl. III 33. — 17 vgl. VIII 429. Lactant.
+div. inst. I 7, 13 venim quia fieri non potest quin id quod sit aliquando esse coeperit,
+consequens est ut, quoniam nihil ante illum fuit, ipse ante omnia ex se ipso sit
+procreatus, ideoque ab Apolline αὐτοφυής, a Sibylla αὐτογενής et ἀγένητος et
+ἀποίητος nominatur. — 18 Philo: de opif. mundi 20 p. 14 M. ἑκάστῃ &lt;d. h. αίσθήσει&gt;
+μέντοι προσένειμεν ὁ ποιῶν καὶ ἐξαιρέτους ὕλας καὶ κριτήριον ἴδιον, ᾧ
+δικάσει τὰ ὑποπίπτοντα.</note>
+<note type="footnote">8 ὁρώμενος [Justin.] ὁρῶν μόνος Theoph. Sib. III 12 ΦΨ (s. dort das Nötige) |
+9 δ’ ὑπὸ M | 10 vgl. Fragm. 3, 15. 111 17. IV 10. — τίς γὰρ σὰρξ = Deut. 5, 26 | 11
+ὀφθαλμοῖς HS. des Clemens: Protr. VI 71 ὀφθαλμοῖσιν Strom. V 14, 109 | 13 δυνατοί
+Clem. Euseb. δύναντ᾿ /// M δύνανται Μe | 14 ἄνδρες, ἐν ὀστείοισιν Nauck, vgl.
+Apollinar. Ps. XXXVII 6. ἄνδρες ἑνοσ τηεσσι M ἄνδρες ἐν ὀστήεσσι Gesner Opsopoeus
+ἀνέρες ἐν ὀστοῖσι Tumebus | 15 σέβεσθε M | 16 ἐτύχθη M ἐτέχθη W (vgl. III 827 |
+17 vgl. Fragm. 7 | 18 βροτοῖσι νέμων Maranus βροτοῖσιν ἐνὸ,ν Μ. — iv φαΐ κοινῷ
+= III 494. 1 348. — φάει M | 19 τὸν ἄξιον: ἀνάξων Μ | 20 ὅττι θεὸν προλιπόντες
+vgl. VIII 263. (381. 396). — ὅττι Castal. ὅτι Μ. — ἀληθινὸν ἀέναόν τε = Fragm. 3, 46.</note>
+
+
+<pb n="229"/>
+δαίμοσι τὰς θυσίας ἐποιήσατε τοῖσιν ἐν Ἅιδῃ.
+τύφῳ καὶ μανίῃ δὲ βαδίζετε καὶ τρίβον ὀρθήν
+εὐθεῖαν προλιπόντες ἀπήλθετε καὶ δι᾿ ἀκανθῶν
+<lb n="25"/> καὶ σκολόπων ἐπλανπασθ· βροτοί, παύσασθε, μάταιοι,
+ῥεμβόμενοι σκοτίῃ καὶ ἀφεγγέι νυκτὶ μελαίνῃ,
+καὶ λίπετε σκοτίην νυκτός, φωτὸς δὲ λάβεσθε.
+οὑτος ἰδοὺ πάντεσσι σαφὴς ἀπλάνητος ὑπάρχει.
+ἔλθετε, μὴ σκοτίην δὲ διώκετε καὶ γνόφον αἰεί.
+<lb n="30"/> ἠελίου γλυκυδερκὲς ἰδοὺ φάος φάος λάμπει.
+γνῶτε δὲ κατθέμενοι σοφίην ἐν στήθεσιν ὑμῶν·
+εἷς θεός ἐστι βροχὰς ἀνέμους σεισμοὺς ἐπιπέμπων
+ἀστεροπὰς λιμοὺς λοιμοὺς καὶ κήδεα λυγρά
+καὶ νιφετοὺς κρύσταλλα. τί δὴ καθ’ ἓν ἐξαγορεύω;
+<lb n="35"/> οὐρανοῦ ἡγεῖται, γαίης κρατεῖ, αὐτὸς ὑπάρχει.</p>
+</div>
+<div type="textpart" subtype="fragment" n="2">
+<p>εἰ δὲ θεοὶ γεννῶσι καὶ ἀθάνατοί γε μένουσιν,
+πλείονες ἀνθρώπων γεγενημένοι ἂν θεοὶ ἠσαν,
+οὐδὲ τόπος στῆναι θνητοῖς οὐκ ἂν ποθ᾿ ὑπῆρξεν.</p>
+<note type="footnote">22 vgl. VIII 392 f. — 23 f. vgl. III 9 f. — 23 vgl. III 721. — 23 —25. 27
+Clemens Alex. Protr. II 27 τὰ μὲν δὴ πλεῖστα μεμύθευται καὶ πέπλασται περὶ θεῶν
+ὑμῖν· τὰ δὲ καὶ ὅσα γεγενῆσθαι ὑπείληπται, ταῦτα δὲ περὶ ἀνθρώπιον αἰσχρῶν καὶ
+ἀσελγῶς βεβιωκότων ἀναγέγραπται· τύφῳ ... — 28 —35 Clem. Alex. Protr. VIII 77
+αὐτίκα γοῦν ἡ προφῆτις Μιν ᾀσάτω πρώτη Σίβυλλα τὸ ἀσμα τὸ σωτήριον· οὐτος
+.... — 28 Clem. Alex. Strom. V 14, 116 οὗτος . . . ὑπάρχει, ὣς φησιν ἡ Σίβυλλα
+(= Euseb. Praep. ev. XIII 13, 42).</note>
+<note type="footnote">22 vgl. VIII 392 f. | 23 f. vgl. III 9 f. 721 | 24 καὶ δι’ ἀκανθῶν 25 ....
+μάταιοι Theoph. τὴν δι’ ἀκανθῶν | καὶ σκολόπων. τί πλανᾶσθε, βροτοί; παύσασθε,
+μάταιοι Clem. | 26 &lt; Clem. — σκοτίοι M σκοτίη Mc | 27 καλλίπετε Clem.
+νυκτὸς δὲ φωτὸς δὲ M | 28 πάντεσσι: πάντεσ οἱ M πάντ᾿ ἐστι Clem. Protr. |
+29 γνόφον Theoph. ζόφον Clem. | 31 κατέθμενοι Μ | 32 Anf. = III 11 (vgl.
+V. 7). — σεισμούς τ᾿ Clem. | 33 λιμοὺς λοιμοὺς vgl. II 23 | 34 κρύσταλλά τε· τί
+δὴ HS. des Clem., von äter H. ändert in κρύσταλλα τί δὴ. — τί δὴ καθ’ ἓν
+ἐξαγορεύω = III 210 | 35 γαίης κράτος αὐτὸς ὑπάρχει Arcerius γαίης κρατεῖ,
+Ἄιδος ἄρχει Schwartz γ. κ., αἰὲν ὑπάρχει Badt, doch vgl. V. 28.
+Fragm. 2 bei Theophilus: ad Autol. II 3, 2 εἰ γὰρ ἐγεννῶντο θεοί, ἐχρῆν καὶ
+ἕως τοῦ δεῦρο γεννᾶσθαι, καθάπερ γὰρ καὶ ἄνθρωποι γεννῶνται· μᾶλλον δὲ καὶ
+πλείονες θεοὶ ὤφειλον εἶναι τῶν ἀνθρώπων, ὥς φησιν Σίβυλλα· εἰ .... Vgl.
+Eusebius: Constantini erat, ad sanctor. coetum 4 εἰ δ’ ἀθάνατοι οἱ γεννώμενοι,
+γεννῶνται δ’ ἀεί, πλημμυρεῖν ἀνάγκη τὸ γένος. Προσθήκης δ᾿ ἐπιγενομένης, τις
+οὖν οὐρανός, ποία δὲ yfj τοσοῦτον σμῆνος ἐπιγιγνόμενον θεῶν ἐχώρησε;</note>
+<note type="footnote">2 γεγενημένοι Opsop. γεγεννημένοι Μ. — ἂν θεοὶ Rzach οἱ δὲ θεοὶ Μ εἰ
+δὲ θεοὶ Μc.</note>
+
+
+<pb n="230"/>
+</div>
+<div type="textpart" subtype="fragment" n="3">
+<p>εἰ δὲ γενητὸν ὅλως καὶ φθείρεται, οὐ δύνατ᾿ ἀνδρός
+ἐκ μηρῶν μήτρας τε θεὸς τετυπωμένος εἶναι·
+ἀλλὰ θεὸς μόνος εἱς πανυπέρτατος, ὃς πεποίηκεν
+οὐρανὸν ἠέλιόν τε καὶ ἀστέρας ἠδὲ σελήνην
+<lb n="5"/> καρποφόρον γαῖάν τε καὶ ὕδατος οἴδματα πόντου
+ουρεἀ θ᾿ ὑψήεντα ἀένναα χεύματα πηγῶν.
+τῶν τ᾿ ἐνύδρων πάλι γεννᾷ ἀνήριθμον πολὺ πλῆθος,
+ἑρπετὰ δ᾿ ἐν γαίῃ κινούμενα ψυχοτροφεῖται,
+ποικίλα τε πτηνῶν λιγυροθρόα τραυλίζοντα
+<lb n="10"/> ξουθὰ λιγυπτερόφωνα ταράσσοντ᾿ ἀέρα ταρσοῖς,
+έν δὲ νάπαις ὀρέων ἀγρίαν γένναν θέτο θηρῶν
+ἡμῖν τε κτήνη ὑπέταξεν πάντα βροτοῖσιν.
+πάντων δ᾿ ἡγητῆρα κατέστησεν θεότευκτον,
+ἀνδρὶ δ᾿ ὑπέταξεν παμποίκιλα κοὐ κατάληπτα.
+<note type="footnote">Fragment 3 bei Theophilus: ad Autolycum II 36, 29 καὶ πρὸς τοὺς γενητοὺς
+λεγομένους ἔφη· εἰ . . .</note>
+<note type="footnote">V. 1, 2 Lactant. div. inst. I 8, 3 unde mihi de tanta maiestate saepius cogitanti
+qui deos colunt interdum videri solent tarn caeci, tarn incogitabiles, tam excordes,
+tam non multum a mutis animalibus differentes, qui credant eos qui geniti
+sint maris ac feminae coitu aliquid maiestatis divinaeque virtutis habere potuisse,
+cum Sibylla Erythraea dicat: οὐ δύνατ’ . . . . . . Die Peraten bei Hippolytos: Philosophumena
+V 16: εἰ γάρ τι, φησί, γεννητόν, ὅλως καὶ φθείρεται, καθάπερ καὶ Σιβύλλῃ
+δοκεῖ, μόνοι δέ, φησίν, ἡμεῖς οἱ τὴν ἀνάγκην τῆς γενέσεως ἐγνωκότες καὶ
+τὰς ὁδούς, δι᾿ ὧν εἰσελήλυθεν ὁ ἄνθρωπος εἰς τὸν κόσμον, ἀκριβῶς δεδιδαγμένοι
+διελθεῖν καὶ περάσαι τὴν φθορὰν μόνοι δυνάμεθα. [Justin.] Cohort. ad Graec. 23, 6
+εἰ γὰρ ἀνάγκη πᾶσα τὸ γενητὸν φθαρτὸν εἶναι κατὰ τὸν πρότερον αὐτοῦ &lt;d. h.
+Πλάτωνος ὅρον, πῶς συγχωρεῖ τὸ κατ᾿ ἀνάγκην ἀδύνατον γενέσθαι δυνατόν;
+Vgl. Athenag. Leg. 19. 20. Constantini or. ad. sanctor. coet. 4 τὰ δ’ ἐκ γενέσεως
+φθαρτὰ πάντα· μορφὴν δὲ χρόνος ἀμαυροῖ· πῶς οὖν οἱ ἐκ γενέσεως φθαρτῆς εἶεν
+ἀθάνατοι; — 3 —33 vgl. III 11—32. — 3 —5 = Prolog S. 95—97. Lactant
+I 5, 15 hunc esse solum summum deum, qui caelum fecerit luminibusque distinxerit:
+ἀλλά ... — 8 —14 vgl. in 20 ff. — 14ff. vgl. Philo: de opif. mundi 28 p. 20 M. ὅσα
+γὰρ θνητὰ ἐν τοῖς τρισὶ στοιχείοις γῇ ὕδατι ἀέρι πάντα ὑπέταττεν αὐτῷ ....</note>
+<note type="footnote">1 ἄνδρεσ Μ | 3 μόνος &lt; Μ | 5 vgl. I 259. — οἶδμα Μ | 6 Anf. = III 778.
+ἀένναα χ. πηγῶν vgl. IV 15. — ἀένναα Gffck. ἀέναα M κ᾿ ἀένναα Friedl. | 7 τ’: τε M.
+— πάλιν γεννᾶν Μ. — ἀνηρίθμων Rz. — πολὺ πλῆθος = I 235 | 8 δ’ ἐν γαίῃ Rz. δὲ
+γαίης Μ τ’ ἐν γαίῃ Auraiua. — ψυχοτροφεῖται Ghoerer ψυχοτροφεῖτε M ψυχοτροφεῖ τε
+Opsop. ψυχοτροφοῦντα Mendelssohn | 9 πτηνῶν Thienemann κτηνῶν Μ | 10 λιγυπτερόφωνα
+Opsop. λιγυροπτερόφωνα M. — ταράσσοντ᾿ Castal. ταράσσοντα M τ’ ἐρέσσοντ᾿
+Struve Schmidt ἐρέσσοντ᾿ — ἠέρα Rz. | 11 ἀγρίων Rz. | 13. 14 [] Wilam. —
+πάντων δ᾿ ἡγητῆρα vgl.Fragm. 1,6. — δ᾿ : θ᾿ Opsop. ἡγητῆρα Castal. ἡγήτορα Μ, vgl.
+die Überlieferung des Lactant. zu 1, 6. — θεότευκτον vgl. V 502 | 14 ἀνδρὶ δ’ ὐπέταξεν</note>
+
+
+<pb n="231"/>
+τίς γὰρ σὰρξ δύναται θνητῶν γνῶναι τάδ᾿ ἅπαντα;
+ἀλλ᾿ αὐτὸς μόνος οἶδεν ὁ ποιήσας τάδ᾿ ἀπ᾿ ἀρχῆς,
+ἄφθαρτος κτίστης αἰώνιος αἰθέρα ναίων,
+τοῖς ἀγαθοῖς ἀγαθὸν προφέρων πολὺ πλείονα μισθόν,
+τοῖς δὲ κακοῖς ἀδίκοις τε χόλον καὶ θυμὸν ἐγείρων
+καὶ πόλεμον καὶ λοιμὸν ἰδ ἄλγεα δακρυόεντα.
+ἄνθρωποι, τί μάτην ὑψούμενοι ἐκριζοῦσθε;
+αἰσχύνθητε γαλᾶς καὶ κνώδαλα θειοποιοῦντες.
+οὐ μανίη καὶ λύσσα φρενῶν αἴσθησιν ἀφαιρεῖ,
+εἰ λοπάδας κλέπτουσι θεοί, συλοῦσι δὲ χύτρας·
+ἀντὶ δὲ χρυσήεντα πόλον κατ᾿ ἀπείρονα ναίειν
+σητόβρωτα δέδορκε, πυκναῖς δ’ ἀράχναις δεδίασται·
+προσκυνέοντες ὄφεις κύνας αἰλούρους, ἀνόητοι,
+καὶ πετεηνὰ σέβεσθε καὶ ἑρπετὰ θηρία γαίης
+καὶ λίθινα ξόανα καὶ ἀγάλματα χειροποίητα
+καὶ παρ᾿ ὁδοῖσι λίθων συγχώσματα· ταῦτα σέβεσθε
+ἄλλα τε πολλὰ μάταια, ἂ δὴ καἰσχρὸν ἀγορεύειν·
+εἰσὶ θεοὶ μερόπων δόλῳ ἡγητῆρες ἀβούλων,
+τῶν δὴ κἀκ στόματος χεῖται θανατηφόρος ἰός.
+ὃς δ᾿ ἔστιν ζωή τε καὶ ἄφθιτον ἀέναον φῶς
+καὶ μέλιτος #x23D4; – γλυκερώτερον ἀνδράσι χάρμα
+<note type="footnote">17 — 19 Lactant. de ira dei 22, 7 apud hanc &lt;Sibyllam Erythraeam&gt; de summo
+et conditore rerum deo huiusmodi versus reperiuntur: ἄφθαρτος . . . . . . — 20 = III
+603 vgl. Aristobuls älschte Orphik bei Euseb. Praep. ev. XIII, 12, 5 V. 15. —
+21 vgl. Fragm. 1, 2. — 22 ff. vgl. III 30—32. — 31 ἃ δὴ καἰσχρὸν
+vgl. V 79.</note>
+<note type="footnote">durch Dittographie (V. 12) verdorben: Wilam. — κοὐ κατάληπτα Castalio καὶ εὖ
+κατάληπτα Μ | 15 Anf. = Fragm. 1, 10 | IG τάδε M | 17 αἰθέρα ναίων Theoph.
+αἰθέραν αἰῶν M) Lactant. αἰθέρι ναίων Wolf, vgl. 11 27. 177. III 11. 81. V 298.
+XI 311. XII 132. XIV 10 | 18 πλείονα Theoph. μείζονα Lactant. | 20 = III 603. —
+ἰδ᾿ Opsop. ἠδ’ Μ | 21 vgl. XIV 1 f. | 22 γαλᾶς Opsop. τάλας Μ. — θεοποιοῦντες Μ |
+23. 24 αἴσθησιν ἀφαιρεῖ | εἰ Alex, καὶ ἐστησιαφαιρηει Μ καἴσθησις ἀφαυρὴ | εἰ
+Aurat. | 24 συλλοῦσι Μ | 25, 26 „Anstatt aber den goldenen weiten Himmel zu
+bewohnen, sehen sie ämlich die κνώδαλα) mottenzerfressen aus . . . “ | 25 κατ᾿
+ἀπείρονα ναίειν Wilam. κατὰ πιον μαναίειν Μ κατὰ πίονα ναίειν Fell Wolf | 26
+δεδιαστε M | 27 vgl. III 30 | 29 = IV 28a. vgl. 111 588 | 30 καὶ παρ᾿ ὁδοῖσι Wilam.
+καὶ ἐν παρόδοισ M κἀν παρόδοισι Opsop. κἀν τριόδοισι Nauck | 30 συγχώματα
+Ausgg. | 31 ἃ . . . ἀγορεύειν vgl. V 79. — καὶ αἰσχρὸν ἀναγορεύειν Μ | 32 εἰσὶ
+θεοὶ Opsop. εἰσὶ γὰρ θεοὶ M. — δόλῳ ἡγητῆρες Wilam. δολοήτορες Μ. — ἀβούλων:
+ἃ βούλων M | 33 κᾀκ Opsop. καὶ ἐκ Μ. — χεῖται Castal. κεῖται M 34 ὃς δ’
+Rz. οὐδὲ M οὗ δ’ Castal. | 35 nach μέλιτος + γλυκεροῦ Opsop.</note>
+
+
+<pb n="232"/>
+ἐκπροχέει #x23D4; –, τῷ δὴ μόνῳ αὐχένα κάμπτε,
+καὶ τρίβον αἰώνεσσιν ἐν εὐσεβέεσσ’ ἀνακλίνοις.
+ταῦτα λιπόντες ἅπαντα δίκης μεστὸν τὸ κύπελλον
+ζωρότερον στιβαρὸν βεβαρημένον εὖ μάλ’ ἄκρητον
+<lb n="40"/> εἱλκύσατ᾿ ἀφροσύνῃ μεμανηότι πνεύματι πάντες.
+κοὐ θέλετ᾿ ἐκνῆψαι καὶ σώφρονα πρὸς νόον ἐλθεῖν
+καὶ γνῶναι βασιλῆα θεόν, τὸν πάντ’ ἐφορῶντα.
+τοὔνεκεν αἰθομένοιο πυρὸς σέλας ἔρχετ᾿ ἐφ᾿ ὑμᾶς,
+λαμπάσι καυθήσεσθε δι᾿ αἰῶνος τὸ πανῆμαρ
+<lb n="45"/> ψευδέσιν αἰσχυνθέντες ἐπ᾿ εἰδώλοισιν ἀχρήστοις.
+οἱ δὲ θεὸν τιμῶντες ἀληθινὸν ἀέναόν τε
+ζωὴν κληρονομοῦσι, τὸν αἰῶνος χρόνον αὐτοί
+οἰκοῦντες παραδείσου ὁμῶς ἐριθηλέα κῆπον
+δαινύμενοι γλυκὺν ἄρτον ἀπ᾿ οὐρανοῦ ἀστερόεντος.</p>
+</div>
+<div type="textpart" subtype="fragment" n="4">
+<p>κλῦτε δέ μου, μέροπες, βασιλεὺς αἰώνιος ἄρχει.</p>
+</div>
+<div type="textpart" subtype="fragment" n="5">
+<p>ὃς μόνος ἐστὶ θεὸς κτίστης ἀκράτητος ὑπάρχων·
+<note type="footnote">46 — 48 Lactant div. inst. II 12, 19 tum deus sententia in peccatores data
+eiecit horainem de Paradiso, ut victum sibi labore conquireret, ipsumque Paradisuni
+igni circumvallavit, ne homo posset accedere, donec summum iudicium faciat in
+terra et iustos viros cultores suos in eundem locum revocet morte sublata, sicut
+sacrae voces docent et Sibylla Krythraea, cum dicit: οἱ δὲ . . . — 47 ζωὴν κληρονομοῦσι
+= Matth. 19, 29. Mark. 10, 17.</note>
+<note type="footnote">36 ἐκπροχέῃ, τῷ δὴ σὺ μόνῳ τεὸν αὐχένα κάμπτε Humpbrey ἐκπροχέει
+δικαίοις, τῷ δὴ μόνῳ αὐχ. κ. oder ἐκπ., τῷ δὴ σὺ μ. τεὸν αὐχ. κ. Rz.
+37 εὐσεβέεσ M. — ἀνακλίνοις Rz.? ἀνακλινοῖ M ἀνακλῖναι Alex. | 38 τὸ Opsop.
+τε M | 30 μάλ’ ἄκρητον Aurat. μαλά κρατῶν M | 40 ἀφροσύνῃ μεμανηότι πνεύματι
+Gesner vgl. XI 317. ἀφροσυνημεμανη ὅτι πνεύματι Μ | 41 κοὐ Castal. καὶ
+οὐ Μ | 45 ψευδέσιν Buresch ψεύδεσιν M Ausgg. — ἐπ᾿ εἰδώλοισιν ἀχρήστοις
+= VIII 389. — ἐπ’ ἐπὶ M | 46 ἀληθινὸν ἀέναόν τε = Fragm. 1, 20. — ἀέναόν
+τε: αἰὲν ἐόντα Lactant. Cod. Paris. 1663 | 47 κληρονομήσουσιν M | 48 παραδείσου
+. . . κῆπον vgl. I 26. — παράδεισον Lactant. — ὁμῶς &lt; M + Lactant. | 49
+οὐρανοῦ ἀστερόεντος = II 184.</note>
+<note type="footnote">Fragment 4 bei Lactant. div. inst. VII 24, 2: |quod alia Sibylla vaticinans
+furensque proclamat: κλῦτε . . .</note>
+<note type="footnote">Fragment 5 bei Lactant. div. inst. II 11, 18 Sibylla hominem dei opus esse
+testatur: ὃς . . . . = Prolog. S. 5, 98—100, vgl. III 27.</note>
+
+
+<pb n="233"/>
+αὐτὸς δ᾿ ἐστήριζε τύπον μορφῆς μερόπων τε
+αὐτὸς ἔμιξε φύσιν πάντων, γενέτης βιότοιο.</p>
+</div>
+<div type="textpart" subtype="fragment" n="6">
+<p>ὁππόταν ἔλθῃ,
+πῦρ ἔσται σκοτόεντι μέσῃ ἐνὶ νυκτὶ μελαίνῃ.</p>
+</div>
+<div type="textpart" subtype="fragment" n="7*">
+<p>εός&gt;</p>
+</div>
+<div type="textpart" subtype="fragment" n="8*">
+<p>Ἡ γοῦν Ἐρυθραία πρὸς τὸν θεόν· τί δή μοι, φησίν, ὦ δέσποτα, τὴν
+τῆς μαντείας ἐπισκήπτεις ἀνάγκην, καὶ οὐχὶ μᾶλλον ἀπὸ τῆς γῆς μετέωρον
+ἀρθεῖσαν διαφυλάττεις, ἄχρι τῆς μακαριωτάτης σῆς ἐλεύσεως
+ημερας;</p>
+<note type="footnote">2 vgl. ΙΙΙ 27. αὐτὸς στήριξε(ν) Prolog Φ und III 27 A αὐτὸς ὂς ἐστήριξε
+III 27 d. and. HSS. — τύπον μορφὴν III 27 Ψ μορφὴν τύπον Φ μορφῆς τε τύπον
+im Prol. Φ. — Nach V. 2 Hess Lactant. den Vers, den wir III 28 haben, aus:
+Brandt | 3 αὐτὸς ἔμιξε: αὐγὰς μῖξε Prolog Φ. — γενέτης Stadtmüller
+Lactant. Prolog.</note>
+<note type="footnote">Fragm. 6 bei Lactant. div. inst. IVll 19, 2 tum aperietur caelum medium
+intempesta et tenebrosa nocte, ut in orbe tote lumen descendeotis dei tamquam
+fulgur appareat; quod Sibylla his versibus elocuta est : ὁππόταν ....</note>
+<note type="footnote">2 σκοτόεντι: ψολόεν τι Stadtmüller Brandt, völlig unmögligch,
+Worte: intempesta et tenebrosa nocte (auch Fr. 1, 26) 2) die nicht
+seltene Verbindung der Masculinform des Adjektivs mit einem weiblichen Substantiv:
+III 634. 673. 739. 777. 322 (I 229).</note>
+<note type="footnote">Fragm. 7 bei Lactant. div. inst. I 7, 13 (sehr fraglich) ideoque ab Apolline
+&lt;deus&gt; αὐτοφυής, a Sibylla Sibylla et ἀγένητος (vgl. Fr. 1, 17) et
+nominatur.</note>
+<note type="footnote">Fragm. 8 bei Eusebius: Constantini orat. ad sanctor. coet. 21 (sehr fraglich,
+vgl. III 295 ff. 55 f. VII 162).</note>
+</div>
+</div>
+
+</body>
+  </text>
+</TEI>
