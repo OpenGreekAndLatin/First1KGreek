@@ -21,12 +21,11 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="text=1">
-<refState unit="text"/>
-<refState unit="book"/>
-<refState unit="chapter" n="chunk"/>
-<refState unit="section"/>
-</refsDecl>
+<refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+      </refsDecl>
 
     </encodingDesc><profileDesc>
       <langUsage>
