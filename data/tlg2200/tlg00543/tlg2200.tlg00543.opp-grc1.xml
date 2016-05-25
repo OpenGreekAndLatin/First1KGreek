@@ -42,12 +42,12 @@
             </publicationStmt>
             
             <sourceDesc>
-                <listBibl xml:lang="la">
+                <listBibl xml:lang="lat">
                     <biblStruct>
                         <monogr>
                             <editor>
                                 <persName>
-                                    <name xml:lang="la">Richardus Foerster</name>
+                                    <name xml:lang="lat">Richardus Foerster</name>
                                     <addName xml:lang="de">Richard Foerster</addName>
                                 </persName>
                             </editor> 
@@ -71,13 +71,14 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
           <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+              <cRefPattern n="section" matchPattern="(.+)(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+              <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
         
         <profileDesc>
             <langUsage>
-                <language ident="la">Latin</language>
+                <language ident="lat">Latin</language>
             </langUsage>
         </profileDesc>
         
@@ -86,7 +87,7 @@
   <text>
     <body><div type="edition" n="urn:cts:greekLit:tlg2200.tlg00543.opp-grc1">
 
-<div type="textpart" subtype="chapter" n="1">
+<div type="textpart" subtype="chapter" n="pr">
 
 <pb n="437"/>
 
@@ -104,9 +105,12 @@
 
 ραννοκτόνου λέγοντα.</head>
 
-<head>Προθεωρία.</head>
+</div>
+        <div type="textpart" subtype="chapter" n="1">
+    <head>Προθεωρία.</head>
 
-<p>καὶ ἡ γυνὴ φιλόπολις καὶ ὁ δῆμος φιλε- R IV 798
+            <div type="textpart" subtype="section" n="1">
+                <p>καὶ ἡ γυνὴ φιλόπολις καὶ ὁ δῆμος φιλε- R IV 798
 
 λευθέριος. ἡ μὲν ἄρτι τοὺς νόμους ἀπέδωκεν, ὁ δ’
 
@@ -164,7 +168,7 @@ Hermog. de stat. 10 c. scholl. Rhet. gr. ed. Walz HI 56; IV
 
 τελῶς ἄμισθον ἔχῃ τὸ τρόπαιον.</p></div>
 
-<div type="textpart" subtype="chapter" n="2"><p>ἔοικε δὲ τὸ ζήτημα
+<div type="textpart" subtype="section" n="2"><p>ἔοικε δὲ τὸ ζήτημα
 
 τοῦτο τῷ προειλημμένῳ. οἱ γὰρ δικασταὶ πρὸς τῆς
 
@@ -186,7 +190,7 @@ Hermog. de stat. 10 c. scholl. Rhet. gr. ed. Walz HI 56; IV
 
 κοὶ καὶ πολίταις μισοτυράννοις ἀνυσιμώτατοι.</p></div>
 
-<div type="textpart" subtype="chapter" n="3"><p>ἐπὶ
+<div type="textpart" subtype="section" n="3"><p>ἐπὶ
 
 μὲν γὰρ τοῦ προειλημμένου ἐκείνου ὅπερ ὁ τεχνικὸς
 
@@ -236,7 +240,7 @@ Boissonad. Anecd. nov. 77</note>
 
 ἐνσκήψεται.</p></div>
 
-<div type="textpart" subtype="chapter" n="4"><p>εἰ μὲν οὖν ἐφεῖτο γυναῖκα ἐπὶ βήματος <lb n="5"/>
+<div type="textpart" subtype="section" n="4"><p>εἰ μὲν οὖν ἐφεῖτο γυναῖκα ἐπὶ βήματος <lb n="5"/>
 
 λέγειν, οἶκτος ἂν ἦν τὸ πᾶν τοῦ λόγου καὶ δάκρυα·
 
@@ -248,7 +252,7 @@ Boissonad. Anecd. nov. 77</note>
 
 νια.</p></div>
 
-<div type="textpart" subtype="chapter" n="5"><p>ἕξει δέ τινα καὶ μετρίαν τοῦ τυράννου κατα- <lb n="10"/>
+<div type="textpart" subtype="section" n="5"><p>ἕξει δέ τινα καὶ μετρίαν τοῦ τυράννου κατα- <lb n="10"/>
 
 φορὰν ὁ λόγος καὶ τοσοῦτον ὁπόσον αὐτῷ χρησιμεύσει
 
@@ -308,9 +312,12 @@ Re 20 τὰ scripsi e ClVat om Ma κατὰ ΜοΜa Re</note>
 
 ἄλλως τε καὶ λυπήσει μᾶλλον τὸν δῆμον ἤπερ ἐφέλξεται.</p>
 
-<p>Ἡ μελέτη.</p>
+</div></div>
+        <div type="textpart" subtype="chapter" n="2">
+            <p>Ἡ μελέτη.</p>
 
-<p>1. Ἔδει μέν, ὦ ἄνδρες, τὴν οὕτω διὰ τοὺς νόμους
+            <div type="textpart" subtype="section" n="1">
+                <p>1. Ἔδει μέν, ὦ ἄνδρες, τὴν οὕτω διὰ τοὺς νόμους
 
 <lb n="5"/> προδεδωκυῖαν τὰ φίλτατα καὶ διπλῆν ἀριστείαν ὑπὲρ
 
@@ -388,7 +395,9 @@ ClVat τῆς ἀριστέως καὶ τυραννοκτόνου ΜοΜu Re<
 
 χαριεῖσθαι, παρ’ ἧς τὸ δημηγορεῖν ἐπανῆλθε τῇ πόλει.</p> <lb n="5"/>
 
-<p>2. εἰ μὲν οὖν ἑώρων τὸ τοὺς εὖ δράσαντας μὴ καλῶς
+            </div>
+            
+            <div type="textpart" subtype="section" n="2"><p>2. εἰ μὲν οὖν ἑώρων τὸ τοὺς εὖ δράσαντας μὴ καλῶς
 
 ἀντιδρᾶν πρὸς εὐδοξίαν μέλλον ἡμῖν ἀποτελευτῆσαι,
 
@@ -412,7 +421,7 @@ ClVat τῆς ἀριστέως καὶ τυραννοκτόνου ΜοΜu Re<
 
 πειρασόμενος.</p></div>
 
-<div type="textpart" subtype="chapter" n="3"><p>δεῖ γάρ, ὡς ἐπὶ τοιούτοις οἶμαι, κὰ-
+<div type="textpart" subtype="section" n="3"><p>δεῖ γάρ, ὡς ἐπὶ τοιούτοις οἶμαι, κὰ-
 
 μὲ τὴν εὐεργεσίαν ὁμολογεῖν κοινὴν οὕτω καταβληθεῖ-
 
@@ -456,7 +465,9 @@ Re | πείσοι Vat πείθειν Sintenis 18 „post ὁμολογεῖν 
 
 καὶ τῶν νόμων ἀνώρθωται.</p>
 
-<p>4. Οἶδα μὲν οὖν τοὺς πολλοὺς ἀγανακτοῦντας καὶ
+</div>
+            
+            <div type="textpart" subtype="section" n="4"><p>4. Οἶδα μὲν οὖν τοὺς πολλοὺς ἀγανακτοῦντας καὶ
 
 μέγα τι ποιουμένους δεινόν, εἰ τυράννου πεπτωκότος
 
@@ -480,7 +491,7 @@ Re | πείσοι Vat πείθειν Sintenis 18 „post ὁμολογεῖν 
 
 παν ὁ βέλτιστος οὗτος βάλλεται.</p></div>
 
-<div type="textpart" subtype="chapter" n="5"><p>καίτοι γε ποῦ δί-
+<div type="textpart" subtype="section" n="5"><p>καίτοι γε ποῦ δί-
 
 <note type="marginal">RIV 801</note> καιον ὑπὲρ μὲν τῶν τοῦ πατρὸς | δεινῶν καὶ
 
@@ -542,7 +553,9 @@ p. 46 5 ὁ δ᾿ ὁ τύραννος MaClVat 8 πεπτωκότα Cl
 
 τῶν παίδων προσαποστερῶν.</p>
 
-<p>6. Βούλομαι δ’ ὑμᾶς, ὦ ἄνδρες, ἀναμνῆσαι μικρὸν 15
+</div>
+            
+            <div type="textpart" subtype="section" n="6"><p>6. Βούλομαι δ’ ὑμᾶς, ὦ ἄνδρες, ἀναμνῆσαι μικρὸν 15
 
 ἐν οἵοις τε καὶ ὅσοις ἡ πόλις ἦν τοῖς κακοῖς, ἐπεὶ καὶ
 
@@ -598,7 +611,7 @@ Mu | βάλλεσθαι MaClVat</note>
 
 γενναιότης ἡμῖν ἀντιπεριέστησεν.</p></div>
 
-<div type="textpart" subtype="chapter" n="7"><p>ἢ τίς τῶν ἀπάν-
+<div type="textpart" subtype="section" n="7"><p>ἢ τίς τῶν ἀπάν-
 
 των οὐκ οἶδεν ὅπως ἦμεν ἐπ’ εὐνομίᾳ τὰ πρῶτα καὶ νό-
 
@@ -622,7 +635,7 @@ Mu | βάλλεσθαι MaClVat</note>
 
 νοσοῦν τῶν ἐν τῇ πόλει ξυνορᾶν.</p></div>
 
-<div type="textpart" subtype="chapter" n="8"><p>ἀλλ’ ἐπὶ τούτοις
+<div type="textpart" subtype="section" n="8"><p>ἀλλ’ ἐπὶ τούτοις
 
 ὄντων ἡμῶν οὐκ οἶδ’ ὁπόθεν εἰσέπεσεν ἡ θεοῖς ἐχθρὰ
 
@@ -638,7 +651,7 @@ Mu | βάλλεσθαι MaClVat</note>
 
 <lb n="20"/> ἔρωτα.</p></div>
 
-<div type="textpart" subtype="chapter" n="9"><p>ὁ δὲ μηδὲν μελλήσας καὶ μηδὲ μικρόν τι
+<div type="textpart" subtype="section" n="9"><p>ὁ δὲ μηδὲν μελλήσας καὶ μηδὲ μικρόν τι
 
 <note type="footnote">6 cf. p. 356, 10 10 Her. VII 145, 2; VIII 140, 3. Thuc. I
 
@@ -688,7 +701,7 @@ serui e MaClVat om ΜοΜu Re 19 ὐπεξέκαυσε τὸν Ma sed
 
 ἄλλων ὑποκύπτειν δημοκρατούμενος.</p></div>
 
-<div type="textpart" subtype="chapter" n="10"><p>τί γοῦν; ὁρᾷ
+<div type="textpart" subtype="section" n="10"><p>τί γοῦν; ὁρᾷ
 
 τὸν πλοῦτον, λογίζεται τὸ πολὺ τῆς τόλμης, συλλογί-
 
@@ -714,7 +727,7 @@ serui e MaClVat om ΜοΜu Re 19 ὐπεξέκαυσε τὸν Ma sed
 
 </p></div>
 
-<div type="textpart" subtype="chapter" n="11"><p>ἐντεῦθεν φυλακὴν ἐφίστα τῷ σώματι καὶ δορυφό-
+<div type="textpart" subtype="section" n="11"><p>ἐντεῦθεν φυλακὴν ἐφίστα τῷ σώματι καὶ δορυφό-
 
 pous ἔτρεφε τοὺς τὰ ἄτοπα ἐκεῖνα ὑπηρετήσοντας. ἐν- <lb n="20"/>
 
@@ -752,7 +765,7 @@ e MaClVat cum Sinteni ἐκείνω ΜοΜu Re</note>
 
 επεπτώκει καὶ τὰ τῆς δημοκρατίας.</p></div>
 
-<div type="textpart" subtype="chapter" n="12"><p>ὕβρεις δὲ
+<div type="textpart" subtype="section" n="12"><p>ὕβρεις δὲ
 
 παίδων καὶ γυναικῶν ἁρπαγὰς καὶ πολιτῶν ἀδίκους
 
@@ -776,7 +789,7 @@ e MaClVat cum Sinteni ἐκείνω ΜοΜu Re</note>
 
 </p></div>
 
-<div type="textpart" subtype="chapter" n="13"><p>ὡς οὖν ὁ μὲν ἀσελγῶς οὕτω τοῖς νόμοις ἐφύ-
+<div type="textpart" subtype="section" n="13"><p>ὡς οὖν ὁ μὲν ἀσελγῶς οὕτω τοῖς νόμοις ἐφύ-
 
 βριζε, τοῖς δὲ πάσχουσιν ἡμῖν οὐδ’ αὐτὸ τὸ θρηνεῖν
 
@@ -834,7 +847,7 @@ et ε (3) in ras m 2 et accent. supra υ eras 21 τὰ lacobs Schul</note>
 
 τἄλλα ὁπόσα καὶ θανόντες ὑποίσουσι τύραννοι;</p></div>
 
-<div type="textpart" subtype="chapter" n="14"><p>ὧς
+<div type="textpart" subtype="section" n="14"><p>ὧς
 
 δὲ καὶ δεύτεροι καὶ τρίτοι κατεγελῶντο λόγοι καὶ ἡ
 
@@ -852,7 +865,7 @@ et ε (3) in ras m 2 et accent. supra υ eras 21 τὰ lacobs Schul</note>
 
 σεται.</p></div>
 
-<div type="textpart" subtype="chapter" n="15"><p>ἐνταῦθα μάχη τις ἦν φιλελευθερίου γνώμης
+<div type="textpart" subtype="section" n="15"><p>ἐνταῦθα μάχη τις ἦν φιλελευθερίου γνώμης
 
 καὶ φύσεως. ἡ μὲν τὴν χεῖρα ὧς κατὰ τυράννου ὥπλι-
 
@@ -866,7 +879,9 @@ et ε (3) in ras m 2 et accent. supra υ eras 21 τὰ lacobs Schul</note>
 
 καὶ πολλάκις ἑκάτερον καὶ μετὰ δακρύων ἕκαστον.</p>
 
-<p>16. ὧς οὖν ὀψέ ποτε ὅλη γέγονε τοῦ τῆς πόλεως κα-
+</div>
+            
+            <div type="textpart" subtype="section" n="16"><p>16. ὧς οὖν ὀψέ ποτε ὅλη γέγονε τοῦ τῆς πόλεως κα-
 
 λοῦ καὶ συμφέρειν αὑτὴν μᾶλλον ἐπ’ οἴκου στένειν ἢ
 
@@ -916,7 +931,7 @@ cum Sinteni ἐς ἀγορὰς ΜοΜu Re</note>
 
 τερον, ταῦτα τῷ ξίφει κατορθώσειν ἐπίστευσε.</p></div>
 
-<div type="textpart" subtype="chapter" n="17"><p>καὶ
+<div type="textpart" subtype="section" n="17"><p>καὶ
 
 ἡμῶν μὲν οὐδεὶς τοῦτο τῶν μισούντων ἐτόλμησε, τῶν
 
@@ -938,7 +953,7 @@ cum Sinteni ἐς ἀγορὰς ΜοΜu Re</note>
 
 τόλμης ἐλθεῖν ἐθάρρησεν.</p></div>
 
-<div type="textpart" subtype="chapter" n="18"><p>ἡ γενναία δὲ αὕτη καὶ
+<div type="textpart" subtype="section" n="18"><p>ἡ γενναία δὲ αὕτη καὶ
 
 μόνον τὸ σῶμα γυνή, τὴν δὲ ψυχὴν ἀνδρώδης, τῷ
 
@@ -982,7 +997,7 @@ sed et χ in λ corr ras et λ suprapos m 2 21 τοῦ om Cl Ι
 
 ρίαν τὸν ὑφ’ οὗ παιόμενος ὁ δῆμος ἠνείχετο.</p></div>
 
-<div type="textpart" subtype="chapter" n="19"><p>καὶ
+<div type="textpart" subtype="section" n="19"><p>καὶ
 
 μιᾷ πληγῇ τὸν μὲν εἰς τοὔδαφος μετὰ καὶ τῆς ὅλης
 
@@ -1000,7 +1015,9 @@ sed et χ in λ corr ras et λ suprapos m 2 21 τοῦ om Cl Ι
 
 ἄνδρα τύραννον.</p> <lb n="10"/>
 
-<p>20. Καὶ διὰ τοιαύτης παραδόξου σφαγῆς τὰ πάντα
+</div>
+            
+            <div type="textpart" subtype="section" n="20"><p>20. Καὶ διὰ τοιαύτης παραδόξου σφαγῆς τὰ πάντα
 
 πᾶσιν ἀποδεδωκυῖα ἴα μίαν αὐτὴ καὶ ταύτην χάριν αἰτεῖ-
 
@@ -1014,7 +1031,7 @@ sed et χ in λ corr ras et λ suprapos m 2 21 τοῦ om Cl Ι
 
 δεσθήσεσθε.</p></div>
 
-<div type="textpart" subtype="chapter" n="21"><p>γονὴ παίδων αὐτῇ περίεστι καὶ
+<div type="textpart" subtype="section" n="21"><p>γονὴ παίδων αὐτῇ περίεστι καὶ
 
 τὴν γλῶτταν ὑποψελλίζοντες καὶ μήπω φθάσαντες τῆς
 
@@ -1060,7 +1077,9 @@ scripsi σίτισις MaClVat σίτισιν ΜοΜu σίτησιν Re
 
 ποιεῖται παῖδας, ὑμῖν δὲ πολίτας.</p>
 
-<p>22. Ἀλλ’ ἐνταῦθά μοι προσεπιπηδῶσι τῷ λόγῳ καὶ
+</div>
+            
+            <div type="textpart" subtype="section" n="22"><p>22. Ἀλλ’ ἐνταῦθά μοι προσεπιπηδῶσι τῷ λόγῳ καὶ
 
 <note type="marginal">RIV 805</note> τῆς γνώμης | ἐκκρούουσιν οἱ καὶ μέχρι παίδων
 
@@ -1090,7 +1109,7 @@ scripsi σίτισις MaClVat σίτισιν ΜοΜu σίτησιν Re
 
 σεῖν συμμεθέξουσιν.</p></div>
 
-<div type="textpart" subtype="chapter" n="23"><p>εἰ μὲν οὖν ἔχεις τι καὶ τού-
+<div type="textpart" subtype="section" n="23"><p>εἰ μὲν οὖν ἔχεις τι καὶ τού-
 
 των εἰπεῖν, ὦ κατήγορε, οἷς ὁ ξύμπας δῆμος ἢ καὶ
 
@@ -1142,7 +1161,9 @@ Schul vel in οἱ i. e. οἳ Schul at cf. p. 440,6 et 12;
 
 τους ἀποκτείνειν οἳ μηδένα τῶν πολιτῶν ἀπεκτόνασιν;</p> <lb n="5"/>
 
-<p>24. εἰ γὰρ διττὸν τρόπον ὑπεύθυνοι γίνονται ἄνθρω-
+</div>
+            
+            <div type="textpart" subtype="section" n="24"><p>24. εἰ γὰρ διττὸν τρόπον ὑπεύθυνοι γίνονται ἄνθρω-
 
 ποι, ἤ πρὸς πέρας τὸ κακοὶ γενέσθαι φιλονεικήσαντες
 
@@ -1160,7 +1181,7 @@ Schul vel in οἱ i. e. οἳ Schul at cf. p. 440,6 et 12;
 
 δικαίως δόξαιεν.</p></div>
 
-<div type="textpart" subtype="chapter" n="25"><p>ἢ μόνοι τῶν ἀπάντων μηδέν τι
+<div type="textpart" subtype="section" n="25"><p>ἢ μόνοι τῶν ἀπάντων μηδέν τι
 
 πονηρευσάμενοι τὰ τῶν πονηρευσαμένων ὑποίσουσι; <lb n="15"/>
 
@@ -1220,7 +1241,7 @@ ClVat πολιτῶν Μο Re</note>
 
 <lb n="5"/> κολάζεσθαι πέφευγε.</p></div>
 
-<div type="textpart" subtype="chapter" n="26"><p>τοῦτο οἶδε μὲν ὁ νομοθέτης,
+<div type="textpart" subtype="section" n="26"><p>τοῦτο οἶδε μὲν ὁ νομοθέτης,
 
 οἶδε δὲ καὶ ἡ γενναία μήτηρ αὕτη τῶν παίδων. καὶ
 
@@ -1234,7 +1255,7 @@ ClVat πολιτῶν Μο Re</note>
 
 αίρετος τὴν δημοκρατίαν ἀπεχαρίσατο.</p></div>
 
-<div type="textpart" subtype="chapter" n="27"><p>οἶμαι δ’
+<div type="textpart" subtype="section" n="27"><p>οἶμαι δ’
 
 ὅτι κἂν εἰ μὴ τοῖς νόμοις ἐδέδοκτο, ἀλλὰ τῷ γε δήμῳ
 
@@ -1258,7 +1279,7 @@ ClVat πολιτῶν Μο Re</note>
 
 τείαν ἔννομον καὶ βῆμα ἐλεύθερον.</p></div>
 
-<div type="textpart" subtype="chapter" n="28"><p>ἐπεὶ δὲ νῦν
+<div type="textpart" subtype="section" n="28"><p>ἐπεὶ δὲ νῦν
 
 τοῦτο καὶ τῷ νόμῳ δοκοῦν καὶ ὁ νομοθέτης οὑτωσί
 
@@ -1296,7 +1317,7 @@ in marg Mo2, Re</note>
 
 νόμων ὀκνεῖν ἀποδοῦναι;</p></div>
 
-<div type="textpart" subtype="chapter" n="29"><p>οὐδένα τρόπον, οὐδεμίαν
+<div type="textpart" subtype="section" n="29"><p>οὐδένα τρόπον, οὐδεμίαν
 
 ὁδὸν εἰς ἀντίχαριν τοῖς τυραννοκτονοῦσιν ὁ νομοθέ- <lb n="5"/>
 
@@ -1322,7 +1343,7 @@ in marg Mo2, Re</note>
 
 ἐπιφιλοτιμεῖται.</p></div>
 
-<div type="textpart" subtype="chapter" n="30"><p>ἀποκτεινέτω, φησί, τὸν τύ-
+<div type="textpart" subtype="section" n="30"><p>ἀποκτεινέτω, φησί, τὸν τύ-
 
 ραννον καὶ παῖς καὶ γυνὴ καὶ πατὴρ 〈καὶ μή-
 
@@ -1370,7 +1391,7 @@ supra σ m 2, Μο Re 14 τυραννοκτονήσαντας MaVat
 
 νείτω καὶ δωρεὰν ἐχέτω τὴν βούλησιν.</p></div>
 
-<div type="textpart" subtype="chapter" n="31"><p>εἰ δὲ σὺ
+<div type="textpart" subtype="section" n="31"><p>εἰ δὲ σὺ
 
 νῦν ἄνω καὶ κάτω στρέφων τὰς συλλαβὰς πείσεις τὸν
 
@@ -1384,7 +1405,9 @@ supra σ m 2, Μο Re 14 τυραννοκτονήσαντας MaVat
 
 ἐνόμισας.</p>
 
-<p>32. Σύ μοι προφέρεις τὸν τύραννον καὶ τὰ ἐκ τῆς
+</div>
+            
+            <div type="textpart" subtype="section" n="32"><p>32. Σύ μοι προφέρεις τὸν τύραννον καὶ τὰ ἐκ τῆς
 
 τυραννίδος κακὰ καὶ ἕτερ’ ἄττα ὁπόσα ἐκεῖθεν ὑπὸ
 
@@ -1396,7 +1419,7 @@ supra σ m 2, Μο Re 14 τυραννοκτονήσαντας MaVat
 
 τὴν πόλιν.</p></div>
 
-<div type="textpart" subtype="chapter" n="33"><p>μᾶλλον μὲν οὖν αὐτὸς ὁ κατήγορος οἷς
+<div type="textpart" subtype="section" n="33"><p>μᾶλλον μὲν οὖν αὐτὸς ὁ κατήγορος οἷς
 
 τὰ τῆς τυραννίδος ἐκτραγῳδεῖς, τούτοις τὰ τῆς τυραν-
 
@@ -1458,7 +1481,9 @@ Vat 18 ἀπεκτόμενον Μο | ἐς Ma</note>
 
 ἀπέδωκε;</p>
 
-<p>34. Λέγε μοι, πρὸς νόμων αὐτῶν, τὰ τόθ’ ὑπὸ
+</div>
+            
+            <div type="textpart" subtype="section" n="34"><p>34. Λέγε μοι, πρὸς νόμων αὐτῶν, τὰ τόθ’ ὑπὸ
 
 τοῦ τυράννου κατὰ νόμων ἐξειργασμένα καὶ ποιοῦ τὰ
 
@@ -1470,7 +1495,7 @@ Vat 18 ἀπεκτόμενον Μο | ἐς Ma</note>
 
 </p></div>
 
-<div type="textpart" subtype="chapter" n="35"><p>Ἐτυραννεῖτο μὲν ἡ πόλις, σὺ δ’ ὁ νῦν λαμπρὸς
+<div type="textpart" subtype="section" n="35"><p>Ἐτυραννεῖτο μὲν ἡ πόλις, σὺ δ’ ὁ νῦν λαμπρὸς
 
 τὴν γλῶτταν ἡσύχαζες, ὁ δὲ δῆμος δουλοκρατούμενος
 
@@ -1482,7 +1507,7 @@ Vat 18 ἀπεκτόμενον Μο | ἐς Ma</note>
 
 </p></div>
 
-<div type="textpart" subtype="chapter" n="36"><p>πάντων οὖν ἐπὶ τούτοις δεδιότων καὶ κατεπτηχό-
+<div type="textpart" subtype="section" n="36"><p>πάντων οὖν ἐπὶ τούτοις δεδιότων καὶ κατεπτηχό-
 
 των καὶ πάσης ἐπιλελοιπυίας μηχανῆς καὶ μηδεμιᾶς
 
@@ -1530,7 +1555,7 @@ Vat | ἐξειργασμένα Ma sed α(2) add m 2 10 ἐκείνων MaCl</
 
 ὐπ’ ἐκείνου τραυμάτων ὑπῆν ἔτι.</p></div>
 
-<div type="textpart" subtype="chapter" n="37"><p>καὶ νῦν πολλοὶ
+<div type="textpart" subtype="section" n="37"><p>καὶ νῦν πολλοὶ
 
 <lb n="5"/> περιεστᾶσι τὸν νεκρὸν καὶ οὐ πάντες τῆς αὐτῆς πό-
 
@@ -1550,7 +1575,7 @@ Vat | ἐξειργασμένα Ma sed α(2) add m 2 10 ἐκείνων MaCl</
 
 κρατίας ἀπόστασιν εἶχεν, ἐφύλαττεν, ἔστεργε.</p></div>
 
-<div type="textpart" subtype="chapter" n="38"><p>καί
+<div type="textpart" subtype="section" n="38"><p>καί
 
 τις οὐκ εἰδὼς παρά του τῶν εἰδότων πυνθάνεται ὅτι
 
@@ -1610,7 +1635,7 @@ Ma | δυναμένη Ma sed η in ras m2</note>
 
 μοις αὐτόβουλος γίνεται.</p></div>
 
-<div type="textpart" subtype="chapter" n="39"><p>οἱ δὴ ταῦτα λαχόντες
+<div type="textpart" subtype="section" n="39"><p>οἱ δὴ ταῦτα λαχόντες
 
 καὶ οὕτω κείμενον τὸν τύραννον ἐκπεπληγμένοι νῦν
 
@@ -1638,7 +1663,9 @@ Ma | δυναμένη Ma sed η in ras m2</note>
 
 ξίαν εὖ ποιοῦντες προσαναιρήσετε.</p>
 
-<p>40. Παῖδες τυραννοῦντος ἀνδρὸς μετὰ καὶ <lb n="20"/>
+</div>
+            
+            <div type="textpart" subtype="section" n="40"><p>40. Παῖδες τυραννοῦντος ἀνδρὸς μετὰ καὶ <lb n="20"/>
 
 <note type="footnote">6 Aesch. Sept. 1053 7 Chor. tyr. p. 54, 20</note>
 
@@ -1686,7 +1713,7 @@ Ma | πύθοιτο Vat 17 ὅ τι scripsi cum lacobsio Schul
 
 Δίκης αὐτῆς, ὦ ἄνδρες, σκέψασθε.</p></div>
 
-<div type="textpart" subtype="chapter" n="41"><p>αὐτίκα ὁ
+<div type="textpart" subtype="section" n="41"><p>αὐτίκα ὁ
 
 ἐμὸς νόμος μετὰ τοῦ δικαίου πολύ τι καὶ τοῦ ξυμφέ-
 
@@ -1700,7 +1727,7 @@ Ma | πύθοιτο Vat 17 ὅ τι scripsi cum lacobsio Schul
 
 τῶν τυραννούντων βαλλόμενα πίπτοιεν;</p></div>
 
-<div type="textpart" subtype="chapter" n="42"><p>οὐκοῦν
+<div type="textpart" subtype="section" n="42"><p>οὐκοῦν
 
 ὁ μὲν τοὺς παῖδας ἀναιρῶν νόμος ἐπ’ ἀδήλῳ τῆς τύχης
 
@@ -1716,7 +1743,7 @@ Ma | πύθοιτο Vat 17 ὅ τι scripsi cum lacobsio Schul
 
 τῶν πατέρων καὶ τοὺς παῖδας οὐχ ἕξετε.</p></div>
 
-<div type="textpart" subtype="chapter" n="43"><p>τίς γὰρ
+<div type="textpart" subtype="section" n="43"><p>τίς γὰρ
 
 <lb n="20"/> ἂν οὕτω φιλοκίνδυνος ἄνθρωπος εὖ ἔχων νοῦ καὶ
 
@@ -1768,7 +1795,7 @@ Sinteni ἡμῶν VatMo Re 21 ἐπιτιμᾶν Vat | καὶ inserui e
 
 καὶ ὑπὲρ τὸ δέον μισοτυράννους;</p></div>
 
-<div type="textpart" subtype="chapter" n="44"><p>ὑπὸ μὲν οὖν
+<div type="textpart" subtype="section" n="44"><p>ὑπὸ μὲν οὖν
 
 τοῦ σοῦ τούτου γράμματος καὶ δὴ τοσαῦτα μὲν ἡ πό-
 
@@ -1784,7 +1811,7 @@ Sinteni ἡμῶν VatMo Re 21 ἐπιτιμᾶν Vat | καὶ inserui e
 
 ἀναιρούντων παραχρῆμα κείσεται.</p></div>
 
-<div type="textpart" subtype="chapter" n="45"><p>τὸ γὰρ τοῦτον
+<div type="textpart" subtype="section" n="45"><p>τὸ γὰρ τοῦτον
 
 μὴ παρ’ ἡμῖν ἑστάναι πολιτευόμενον ἴσον καὶ τὸ δο- <lb n="15"/>
 
@@ -1836,7 +1863,9 @@ ras m2 | ἀποτοῦδε Ma 21 ἀποξέσαν Vat | τολμ(??) Ma | τ�
 
 ψυχαῖς ἐγκαθήμενον φόβον οὐ δεόντως ἐξέκρουσε.</p>
 
-<lb n="5"/> <p>46. Χωρὶς δὲ τούτων, εἰ καὶ μηδὲν οὗτος ὁ νόμος
+    <lb n="5"/> </div>
+            
+            <div type="textpart" subtype="section" n="46"><p>46. Χωρὶς δὲ τούτων, εἰ καὶ μηδὲν οὗτος ὁ νόμος
 
 ὠφελήσειν ἔμελλε συντηρούμενος, ἀλλά γε τὸ πρὸς
 
@@ -1904,7 +1933,7 @@ Cl 19 τυράννων Ma</note>
 
 θερίαν ἀπέδωκεν.</p></div>
 
-<div type="textpart" subtype="chapter" n="47"><p>ἔπειτα ποῦ δίκαιον καὶ τῆς
+<div type="textpart" subtype="section" n="47"><p>ἔπειτα ποῦ δίκαιον καὶ τῆς
 
 ὑμῶν φιλανθρωπίας ἄξιον ὑμᾶς μὲν χαίρειν ἐφ’ οἷς ὁ
 
@@ -1920,7 +1949,9 @@ Cl 19 τυράννων Ma</note>
 
 ἀγνώμονας αἰτιᾶσθαι;</p>
 
-<p>48. Εἰ δή τις ἐπὶ τοιούτοις ὅ τι δὴ τὸ αἴτιον
+</div>
+            
+            <div type="textpart" subtype="section" n="48"><p>48. Εἰ δή τις ἐπὶ τοιούτοις ὅ τι δὴ τὸ αἴτιον
 
 πύθοιτο, ἡ δὲ φαίη μέν, ὅπως δι’ ὑμᾶς ἠφείδησε τοῦ <lb n="10"/>
 
@@ -1938,7 +1969,9 @@ Cl 19 τυράννων Ma</note>
 
 φωνάς;</p>
 
-<p>49. Διὰ ταύτην οὖν, φησί, νόμον εὖ ἔχοντα
+            </div>
+            
+            <div type="textpart" subtype="section" n="49"><p>49. Διὰ ταύτην οὖν, φησί, νόμον εὖ ἔχοντα
 
 <note type="footnote">5 Luc. Phal. I 3; Dem. laud. 16 16 Chor. tyr. p. 66, 13</note>
 
@@ -1986,7 +2019,7 @@ Sintenis | σπένδετε scripsi e MaCl cum lacobsio Anth. Pal. III
 
 <lb n="5"/> λάψε τῆς ψυχῆς.</p></div>
 
-<div type="textpart" subtype="chapter" n="50"><p>καὶ παῖδας τυράννου πατρὸς
+<div type="textpart" subtype="section" n="50"><p>καὶ παῖδας τυράννου πατρὸς
 
 ἐφ’ ἑτέρᾳ τυραννίδι διαφυλάξομεν; τί δ’ αὐτίκα
 
@@ -2002,7 +2035,7 @@ Sintenis | σπένδετε scripsi e MaCl cum lacobsio Anth. Pal. III
 
 παῖδες δημοτικώτεροι.</p></div>
 
-<div type="textpart" subtype="chapter" n="51"><p>μή μοι τὸν νόμον ἐς τὸ
+<div type="textpart" subtype="section" n="51"><p>μή μοι τὸν νόμον ἐς τὸ
 
 παντελὲς ἀφαίρει τοῦ πολιτεύεσθαι. ἀλλ’ ὁπη-
 
@@ -2060,7 +2093,7 @@ Re 10 δὴ Ma 11 προσαπέδωκας Ma 12 ἐστοπαντελὲς
 
 </p></div>
 
-<div type="textpart" subtype="chapter" n="52"><p>Ἡδέως δ’ ἂν ἐροίμην, ὦ ἄνδρες, τουτονὶ τὸν
+<div type="textpart" subtype="section" n="52"><p>Ἡδέως δ’ ἂν ἐροίμην, ὦ ἄνδρες, τουτονὶ τὸν
 
 τοὺς νόμους κομψόν, ὅτου χάριν οἱ παῖδες ταυτηνὶ
 
@@ -2072,7 +2105,7 @@ Re 10 δὴ Ma 11 προσαπέδωκας Ma 12 ἐστοπαντελὲς
 
 τυραννοκτόνου μητρὸς δικαιότερον περισώζοιντο;</p></div>
 
-<div type="textpart" subtype="chapter" n="53"><p>ἴα
+<div type="textpart" subtype="section" n="53"><p>ἴα
 
 μοι τὸν τύραννον, ἐπὶ τὴν τυραννοκτόνον μετάβηθι
 
@@ -2094,7 +2127,7 @@ Re 10 δὴ Ma 11 προσαπέδωκας Ma 12 ἐστοπαντελὲς
 
 κακῶς ἐπὶ τοὺς παῖδας τὴν αἰτίαν μετάφερε.</p></div>
 
-<div type="textpart" subtype="chapter" n="54"><p>εἰ
+<div type="textpart" subtype="section" n="54"><p>εἰ
 
 δὲ δεῖ τι καὶ δριμύτερον εἰπεῖν πρὸς ἀλήθειαν, πόθεν
 
@@ -2140,7 +2173,7 @@ Vat 22 ἐνέσπειρεν Ma sed ενεσ in ras m 2 ἀνἐσπειρεν 
 
 λοι ψυχῶν πατέρες νομίζονται.</p></div>
 
-<div type="textpart" subtype="chapter" n="55"><p>καὶ ὥσπερ ἐπ’
+<div type="textpart" subtype="section" n="55"><p>καὶ ὥσπερ ἐπ’
 
 ἐκείνων, ὑγιεινὸς μὲν εἰ τύχοι πατήρ, ὑγιεινὸν σῶμα
 
@@ -2158,7 +2191,7 @@ Vat 22 ἐνέσπειρεν Ma sed ενεσ in ras m 2 ἀνἐσπειρεν 
 
 <lb n="10"/> σατο.</p></div>
 
-<div type="textpart" subtype="chapter" n="56"><p>εἰ μὲν οὖν ὑπὸ τῷ καταράτῳ ἐκείνῳ τρα-
+<div type="textpart" subtype="section" n="56"><p>εἰ μὲν οὖν ὑπὸ τῷ καταράτῳ ἐκείνῳ τρα-
 
 φέντες εἰς τόδε τῆς ἡλικίας ἀνέδραμον, ἦν ὡς τὰ
 
@@ -2214,7 +2247,7 @@ Vat om Μο Re</note>
 
 τινα μάθοιεν, ἴσως τὴν μητέρα ζηλώσουσι.</p></div>
 
-<div type="textpart" subtype="chapter" n="57"><p>διὰ
+<div type="textpart" subtype="section" n="57"><p>διὰ
 
 ταῦτα μόνης ἐγὼ τῆς γενναίας ταύτης τοὺς παῖδας
 
@@ -2236,7 +2269,7 @@ Vat om Μο Re</note>
 
 λίπε.</p></div>
 
-<div type="textpart" subtype="chapter" n="58"><p>τούτους εἰς δωρεὰν αὐτὴ μὲν ᾔτησεν, ἡ δὲ <lb n="11"/>
+<div type="textpart" subtype="section" n="58"><p>τούτους εἰς δωρεὰν αὐτὴ μὲν ᾔτησεν, ἡ δὲ <lb n="11"/>
 
 πόλις ψηφίζεται. δεῖ γὰρ τὴν θρεψαμένην εὐεργετεῖν,
 
@@ -2292,7 +2325,9 @@ Re 19 ἄνδρας MaCl sed in hoc γρ παῖδας in marg</note>
 
 
 
-<p>59. Ἀλλ’ ἐνταῦθα τὸ μὲν αἰτεῖν ὁ κατήγορος δί-
+</div>
+            
+            <div type="textpart" subtype="section" n="59"><p>59. Ἀλλ’ ἐνταῦθα τὸ μὲν αἰτεῖν ὁ κατήγορος δί-
 
 δωσι, τὸν δὲ τρόπον τῆς αἰτήσεως αἰτιᾶται. καινὰ
 
@@ -2312,7 +2347,7 @@ Re 19 ἄνδρας MaCl sed in hoc γρ παῖδας in marg</note>
 
 <lb n="10"/> τῆς Ἑλλάδος; ἀλλ’ ἀπὸ τῆς βαρβάρου;</p></div>
 
-<div type="textpart" subtype="chapter" n="60"><p>καίτοι τίς
+<div type="textpart" subtype="section" n="60"><p>καίτοι τίς
 
 οὐκ οἶδεν ὡς, ὁπότε τυραννοίη τις, δευτέραν δορυφο-
 
@@ -2328,7 +2363,7 @@ Re 19 ἄνδρας MaCl sed in hoc γρ παῖδας in marg</note>
 
 ἐνέπεσεν, εὐθὺς ὁ τύραννος ᾔσθετο;</p></div>
 
-<div type="textpart" subtype="chapter" n="61"><p>ἀλλὰ τούτων
+<div type="textpart" subtype="section" n="61"><p>ἀλλὰ τούτων
 
 οὐδὲν ἡ τυραννοκτόνος αὕτη προσήκατο, ἀλλ’ ἅμα τε
 
@@ -2386,7 +2421,7 @@ Re 20 ἄγος reposui e libris cum lacobsio Schul ἄγος Re
 
 τὰ γράμματα.</p></div>
 
-<div type="textpart" subtype="chapter" n="62"><p>ἔπειτα μέντοι καὶ καινὸν οὐδὲν εἰ
+<div type="textpart" subtype="section" n="62"><p>ἔπειτα μέντοι καὶ καινὸν οὐδὲν εἰ
 
 παίδων ἀκούσασα μήτηρ οὐδέν τι πρὸ τῶν παίδων
 
@@ -2408,7 +2443,7 @@ Re 20 ἄγος reposui e libris cum lacobsio Schul ἄγος Re
 
 ὅλας ἐλπίδας ἐσάλευε.</p></div>
 
-<div type="textpart" subtype="chapter" n="63"><p>καὶ σὺ νῦν οὐκ αἰσχύνῃ
+<div type="textpart" subtype="section" n="63"><p>καὶ σὺ νῦν οὐκ αἰσχύνῃ
 
 καινὸν τοῦτο νομίζων, ὦ πρὸς τῆς Φύσεως αὐτῆς;
 
@@ -2460,7 +2495,9 @@ Mo 2 ἐσάλευεν Ma 19 Φύσεως scripsi coll ll. ll. et p. 458,5;
 
 <lb n="5"/> πάντα δεύτερα, ὑπὲρ ὧν καὶ τἄλλα πάντα τεχνάζεται;</p>
 
-<p>64. κἂν ψήφισμα τοιοῦτον ἐπ’ ἐκκλησίας ἤκουσεν ὧς
+</div>
+            
+            <div type="textpart" subtype="section" n="64"><p>64. κἂν ψήφισμα τοιοῦτον ἐπ’ ἐκκλησίας ἤκουσεν ὧς
 
 εἰ μέλλει μὴ τοὺς παῖδας κατὰ γῆς ἐρριμμένους
 
@@ -2472,7 +2509,7 @@ Mo 2 ἐσάλευεν Ma 19 Φύσεως scripsi coll ll. ll. et p. 458,5;
 
 δραμοῦσα τοὺς παῖδας αἰτήσεται;</p></div>
 
-<div type="textpart" subtype="chapter" n="65"><p>εἰ δὲ καὶ τῆς
+<div type="textpart" subtype="section" n="65"><p>εἰ δὲ καὶ τῆς
 
 πολιτείας ἔτι παραλελυμένης κρύφα τῆς ἀκροπόλεως
 
@@ -2536,7 +2573,9 @@ sio Schul 12 num καταλελυμένης? | τὴν δημοκρατίαν 
 
 στοργήν;</p> <lb n="5"/>
 
-<p>66. Ἔτι τοίνυν εἰ μὲν εἰς εὐνὴν ἀνδρὸς ἐλθεῖν
+</div>
+            
+            <div type="textpart" subtype="section" n="66"><p>66. Ἔτι τοίνυν εἰ μὲν εἰς εὐνὴν ἀνδρὸς ἐλθεῖν
 
 ἤμελλε πάλιν, οὐκ ἂν οὕτω τῆς προτέρας γονῆς ἐξεί-
 
@@ -2562,7 +2601,9 @@ sio Schul 12 num καταλελυμένης? | τὴν δημοκρατίαν 
 
 τῶν καὶ τῆς τῶν παίδων γονῆς ἀποστερεῖσθαι;</p>
 
-<p>67. Ἀλλὰ δεῖ πάντως καὶ μείζω τιμωρίαν
+            </div>
+            
+            <div type="textpart" subtype="section" n="67"><p>67. Ἀλλὰ δεῖ πάντως καὶ μείζω τιμωρίαν
 
 τὸν τύραννον ὑπέχειν. οὐκοῦν ἐκείνῳ μὲν τοῦ κα- <lb n="20"/>
 
@@ -2614,7 +2655,7 @@ comma MaCl signum interrogationis Μο Re</note>
 
 πρὸς ὕβριν ἐκείνου ταῦτα τεχνάζεσθαι.</p></div>
 
-<div type="textpart" subtype="chapter" n="68"><p>ἱκανῶς
+<div type="textpart" subtype="section" n="68"><p>ἱκανῶς
 
 ἀπέδοτο τὰ τροφεῖα τῇ πόλει, ἱκανῶς ὑπὲρ τῆς ἐνεγ-
 
@@ -2628,7 +2669,7 @@ comma MaCl signum interrogationis Μο Re</note>
 
 πετὲς πρὸς ἡδονὴν οὐκ ἐδέχετο.</p></div>
 
-<div type="textpart" subtype="chapter" n="69"><p>ἐπὶ τούτοις τολμᾷ
+<div type="textpart" subtype="section" n="69"><p>ἐπὶ τούτοις τολμᾷ
 
 τι καὶ θρασύτερον, μετὰ ξίφους ἐπιπηδᾷ καὶ τοῦ πολ-
 
@@ -2694,7 +2735,7 @@ Ma 2 19 σου scripsi auctore Sinteni σοι libri Re | ζύγιον MaCl</not
 
 τροπώσομαι.</p></div>
 
-<div type="textpart" subtype="chapter" n="70"><p>ταῦτα τίς οὐ ζηλώσει, τίς οὐκ εὐ-
+<div type="textpart" subtype="section" n="70"><p>ταῦτα τίς οὐ ζηλώσει, τίς οὐκ εὐ-
 
 δαιμονίσει, τίς οὐ θαυμάσεται; ποῖος δὲ τοιαύτην γυ-
 
@@ -2754,7 +2795,7 @@ ClVat τυράννου Μο Re 19 ἀνανδρίαν scripsi e MaClVat
 
 πολέμησεν.</p></div>
 
-<div type="textpart" subtype="chapter" n="71"><p>εἰς τοῦτον ἐγώ σε τὸν κατάλογον τίθε-
+<div type="textpart" subtype="section" n="71"><p>εἰς τοῦτον ἐγώ σε τὸν κατάλογον τίθε-
 
 μαι, μετὰ Θρασυβούλου θαυμάζω, μετὰ Θησέως προσ-
 
@@ -2764,7 +2805,9 @@ ClVat τυράννου Μο Re 19 ἀνανδρίαν scripsi e MaClVat
 
 <lb n="5"/> γυναικὸς ταῦτα νομίζειν, ἀλλά τινος ἐφεστίου δαίμονος.</p>
 
-<p>72. Δεῦρό μοι, ὦ γενναιοτάτη γυναικῶν. ἀνάβαινε
+</div>
+            
+            <div type="textpart" subtype="section" n="72"><p>72. Δεῦρό μοι, ὦ γενναιοτάτη γυναικῶν. ἀνάβαινε
 
 πρὸς τὸ βῆμα τὸ διὰ σὲ νῦν κατὰ νόμους περικρο-
 
@@ -2782,7 +2825,7 @@ ClVat τυράννου Μο Re 19 ἀνανδρίαν scripsi e MaClVat
 
 ἔργοις ἀπενεγκαμένη τὸ μεῖζον.</p></div>
 
-<div type="textpart" subtype="chapter" n="73"><p>πρότεινε μετὰ τῆς
+<div type="textpart" subtype="section" n="73"><p>πρότεινε μετὰ τῆς
 
 <lb n="15"/> χειρὸς τὸ ξίφος ἔτι τοῦ τυραννικοῦ προσαποστάζον
 
@@ -2832,7 +2875,7 @@ Re 19 τυράννων MaCl sed in hoc οἶμαι τιτάνων βούλε�
 
 φοροῦσαν ὡς ἡμετέραν γράψομεν Δήμητραν.</p></div>
 
-<div type="textpart" subtype="chapter" n="74"><p>τί
+<div type="textpart" subtype="section" n="74"><p>τί
 
 στένεις; τί δακρύεις; τί δὲ τούτους ὑφορᾷ τοὺς πρὶν
 
@@ -2848,7 +2891,7 @@ Re 19 τυράννων MaCl sed in hoc οἶμαι τιτάνων βούλε�
 
 ραννοῦντος ἐλεύθερον.</p></div>
 
-<div type="textpart" subtype="chapter" n="75"><p>σώζει σου τοὺς παῖδας τὰ
+<div type="textpart" subtype="section" n="75"><p>σώζει σου τοὺς παῖδας τὰ
 
 δάκρυα. διὰ σὲ γὰρ ἡ πόλις οὐκ ἀνδρῶν σφαγάς, οὐ <lb n="10"/>
 
@@ -2862,7 +2905,9 @@ Re 19 τυράννων MaCl sed in hoc οἶμαι τιτάνων βούλε�
 
 ἐλεουμένους διὰ τυραννοκτόνον μητέρα δακρύουσαν.</p> <lb n="15"/>
 
-<p>76. ἔχεις ἤδη τοὺς παῖδας. καὶ φύλαττέ μοι μέχρι καὶ
+</div>
+            
+            <div type="textpart" subtype="section" n="76"><p>76. ἔχεις ἤδη τοὺς παῖδας. καὶ φύλαττέ μοι μέχρι καὶ
 
 τέλους τῆς γνώμης τὸ μισοτύραννον. καὶ λαβοῦσα
 
@@ -2924,7 +2969,7 @@ in ras m 2 17 τῆς inserui e libris cum lacobsio Lect Schul
 
 ται Vat</note>
 
-</div></div>
+</div></div></div>
 
 
 
