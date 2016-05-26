@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc>
       <titleStmt>
-	      <title>curtitle</title>
-        <author>Galen</author>
-        <editor role="editor">cureditor</editor>
+	      <title>Ad Autolycum</title>
+        <author>Dionysius Antiochenus</author>
+        <editor role="editor">Johann Carl Theodor Otto</editor>
       </titleStmt>
       <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
-            <title>curetitle</title>
-            <author>curauthor</author>
-            <editor role="editor">cureditor</editor>
+            <title>Corpus apologetarum christianorum saeculi secvndi</title>
+            <author>Theophilus Antiochenus</author>
+            <editor role="editor">Johann Carl Theodor Otto</editor>
             <imprint>
-              <publisher>curpublisher</publisher>
-              <pubPlace>curplace</pubPlace>
-              <date>curpubdate</date>
+              <publisher>prostat apud Frieder. Mauke</publisher>
+              <pubPlace>Jena</pubPlace>
+              <date>1861</date>
             </imprint>
+            <biblScope unit="volume">8</biblScope>
           </monogr>
+          <ref target="https://books.google.de/books?id=rhwaAQAAIAAJ">Google Books</ref>
         </biblStruct>
         
         </sourceDesc>
     </fileDesc><encodingDesc>
 <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
         <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
       </refsDecl>
 
     </encodingDesc><profileDesc>
       <langUsage>
-	<language ident="lat">Latin</language>
-	<language ident="grc">Greek</language>
+		<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc></teiHeader>
 
   <text><body> <div type="edition" n="urn:cts:greekLit:tlg1725.tlg001.perseus-grc2">
 <pb xml:id="v.2.p.4"/>
 
-<head>ΘΕΟΦΙΑΟΥ ΠΡΟΣ ΑΥΤΟΑΥΚΟΝ. <bibl n="Otto 1861 Google rhwaAQAAIAAJ"/></head>
+<head>ΘΕΟΦΙΑΟΥ ΠΡΟΣ ΑΥΤΟΑΥΚΟΝ.</head>
 <div type="textpart" subtype="book" n="1">
 <pb ed="sec2" n="1"/><div type="textpart" subtype="chapter" n="1"><p>Στωμύλον μὲν οὖν στόμα καὶ φράσις εὐεπὴς τέρψιν παρέχει <pb ed="alt" n="69A"/>
 καὶ ἔπαινον πρὸς κενὴν δόξαν ἀθλίοις ἀνθρώποις ἔχουσι 
