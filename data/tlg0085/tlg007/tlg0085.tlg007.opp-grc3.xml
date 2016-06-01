@@ -39,9 +39,7 @@
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -1389,7 +1387,7 @@
           <l n="758">“Ἀργεῖος ἁνὴρ<note place="unspecified"><foreign xml:lang="grc">ἀνὴρ</foreign> codd.</note> αὖθις ἔν τε χρήμασιν</l>
           <l n="759">οἰκεῖ πατρῴοις, Παλλάδος καὶ Λοξίου</l>
           <l n="760">ἕκατι, καὶ τοῦ πάντα κραίνοντος τρίτου</l>
-          <l n="760">σωτῆρος, ὃς πατρῷον αἰδεσθεὶς μόρον</l>
+          <l n="760a">σωτῆρος, ὃς πατρῷον αἰδεσθεὶς μόρον</l>
           <l n="761">σῴζει με, μητρὸς τάσδε συνδίκους ὁρῶν.”</l>
           <l n="762"><milestone ed="P" unit="para"/>ἐγὼ δὲ χώρᾳ τῇδε καὶ τῷ σῷ στρατῷ</l>
           <l n="763">τὸ λοιπὸν εἰς ἅπαντα πλειστήρη χρόνον</l>
