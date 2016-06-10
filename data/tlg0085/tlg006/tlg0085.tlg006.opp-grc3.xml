@@ -4,7 +4,7 @@
         <title type="work" n="Lib.">Libation Bearers</title>
         <title type="sub">Machine readable text</title>
         <author n="Aesch.">Aeschylus</author>
-        <editor role="editor" n="Smyth">Arthur Sidgwick</editor>
+        <editor role="editor">Arthur Sidgwick</editor>
         <sponsor>Perseus Project, Tufts University</sponsor>
         <principal>Gregory Crane</principal>
         <respStmt>
@@ -32,14 +32,13 @@
               <date>1902</date>
             </imprint>
           </monogr>
+          <ref>https://babel.hathitrust.org/cgi/pt?id=njp.32101064224940;view=1up;seq=113</ref>
         </biblStruct>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     
@@ -59,6 +58,7 @@
             In c. 2005, we had some money but not enough to do a full rekeying. We asked http://www.digitaldividedata.com/ to start with our digital version of Smyth's Aeschylus and systematically set  to turn it into Sidgwick's Oxford Classical Text edition. Doubtless they will have missed places but the text is open and we hope that people will read this edition carefully against various digital exemplars of this public domain edition and catch such slips.
          
       </change>
+      <change who="Jack Duff" when="2016-06-10">Corrected XPath to use line, corrected editor attribute, added ref, resolved line number duplicates.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -69,54 +69,46 @@
           <foreign xml:lang="grc">Χοηφοποι</foreign>
         </head>
         <pb/>
-        <l n="1">
+        <p>
           <foreign xml:lang="grc">Τὰ τοῦ δράματος πρόσωπα</foreign>
-        </l>
-        <l n="2">
+        </p><p>
           <foreign xml:lang="grc">Ὀρέστης</foreign>
-        </l>
-        <l n="3">
+        </p><p>
           <foreign xml:lang="grc">Πυλάδης</foreign>
-        </l>
-        <l n="4">
+        </p><p>
           <foreign xml:lang="grc">χορός</foreign>
-        </l>
-        <l n="5">
+        </p><p>
           <foreign xml:lang="grc">Ἠλέκτρα</foreign>
-        </l>
-        <l n="6">
+        </p><p>
           <foreign xml:lang="grc">τροφός</foreign>
-        </l>
-        <l n="7">
+        </p><p>
           <foreign xml:lang="grc">Κλυταιμήστρα</foreign>
-        </l>
-        <l n="8">
+        </p><p>
           <foreign xml:lang="grc">Αἴγισθος</foreign>
-        </l>
-        <l n="9">
+        </p><p>
           <foreign xml:lang="grc">θεράπων</foreign>
-        </l>
+        </p>
       </div>
       <div type="textpart" subtype="episode">
         <milestone ed="p" n="1" unit="card"/>
         <sp>
           <speaker>Ὀρέστης</speaker>
-          <l n="10">Ἑρμῆ χθόνιε, πατρῷ᾽ ἐποπτεύων κράτη,</l>
-          <l n="11">σωτὴρ γενοῦ μοι ξύμμαχός τ᾽ αἰτουμένῳ:</l>
-          <l n="12">ἥκω γὰρ ἐς γῆν τήνδε καὶ κατέρχομαι.</l>
-          <l n="13">τύμβου δ᾽ ἐπ᾽ ὄχθῳ τῷδε κηρύσσω πατρὶ</l>
+          <l n="1">Ἑρμῆ χθόνιε, πατρῷ᾽ ἐποπτεύων κράτη,</l>
+          <l n="2">σωτὴρ γενοῦ μοι ξύμμαχός τ᾽ αἰτουμένῳ:</l>
+          <l n="3">ἥκω γὰρ ἐς γῆν τήνδε καὶ κατέρχομαι.</l>
+          <l n="4">τύμβου δ᾽ ἐπ᾽ ὄχθῳ τῷδε κηρύσσω πατρὶ</l>
           <l n="5">κλύειν, ἀκοῦσαι . . .</l>
-          <l n="6">
+          <l n="5a">
             <gap reason="lost"/>
           </l>
-          <l n="7">. . . πλόκαμον Ἰνάχῳ θρεπτήριον.</l>
-          <l n="8">τὸν δεύτερον δὲ τόνδε πενθητήριον<note place="unspecified">1-in codd. desunt: 1-5 ex Arist. Ran. 1126, 1172 sulevit Canter: 6-7 ex schol. Pind. Pyth. iv. 145 Stanley: 8-9 ex schol. Eur. Alc. 784 Dindorf</note><note place="unspecified">1-Post 6 interpungendum vidit Murray</note></l>
-          <l n="9">
+          <l n="6">. . . πλόκαμον Ἰνάχῳ θρεπτήριον.</l>
+          <l n="7">τὸν δεύτερον δὲ τόνδε πενθητήριον<note place="unspecified">1-in codd. desunt: 1-5 ex Arist. Ran. 1126, 1172 sulevit Canter: 6-7 ex schol. Pind. Pyth. iv. 145 Stanley: 8-9 ex schol. Eur. Alc. 784 Dindorf</note><note place="unspecified">1-Post 6 interpungendum vidit Murray</note></l>
+          <l n="7a">
             <gap reason="lost"/>
           </l>
-          <l n="10">οὐ γὰρ παρὼν ᾤμωξα σόν, πάτερ, μόρον</l>
-          <l n="11">οὐδ᾽ ἐξέτεινα χεῖρ᾽ ἐπ᾽ ἐκφορᾷ<note place="unspecified"><foreign xml:lang="grc">ἐκφορᾷ</foreign> Dindorf: <foreign xml:lang="grc">ἐκφορὰν</foreign> schol.</note> νεκροῦ.</l>
-          <l n="12">
+          <l n="8">οὐ γὰρ παρὼν ᾤμωξα σόν, πάτερ, μόρον</l>
+          <l n="9">οὐδ᾽ ἐξέτεινα χεῖρ᾽ ἐπ᾽ ἐκφορᾷ<note place="unspecified"><foreign xml:lang="grc">ἐκφορᾷ</foreign> Dindorf: <foreign xml:lang="grc">ἐκφορὰν</foreign> schol.</note> νεκροῦ.</l>
+          <l n="9a">
             <gap reason="lost"/>
           </l>
           <l n="10">&lt;ἔα.&gt;<note place="unspecified">hinc incipiunt codd. M G</note><note place="unspecified"><foreign xml:lang="grc">ἔα</foreign> add. Dindorf</note> τί χρῆμα λεύσσω; τίς ποθ᾽ ἥδ᾽ ὁμήγυρις</l>
@@ -1204,8 +1196,8 @@
             <l n="596">καὶ γυναικῶν φρεσὶν<note place="unspecified"><foreign xml:lang="grc">φρεσὶν</foreign> Aldina: <foreign xml:lang="grc">φρεσσὶν</foreign> M</note> τλαμόνων<note place="unspecified"><foreign xml:lang="grc">τλαμόνων</foreign> Dindorf: <foreign xml:lang="grc">τλημόνων</foreign> M</note> [καὶ<note place="unspecified"><foreign xml:lang="grc">καὶ</foreign> seclusit Klausen</note>]</l>
             <l n="597">παντόλμους ἔρωτας</l>
             <l n="598">ἄταισι συννόμους βροτῶν;</l>
-            <l n="599">ξυζύγους δ᾽ ὁμαυλίας</l>
-            <l n="600">θηλυκρατὴς ἀπέρω-</l>
+            <l n="599">ξυζύγους δ᾽ ὁμαυλίας
+            <lb/>θηλυκρατὴς ἀπέρω-</l>
             <l n="600">τος ἔρως παρανικᾷ</l>
             <l n="601">κνωδάλων τε καὶ βροτῶν.</l>
             <milestone ed="p" n="602" unit="card"/>
@@ -1682,8 +1674,8 @@
             <l n="881">ἰοὺ ἰού.</l>
             <l n="882">κωφοῖς ἀυτῶ και καθεύδουσιν μάτην</l>
             <l n="883">ἄκραντα βάζω; ποῖ Κλυταιμήστρα; τί δρᾷ;</l>
-            <l n="884">ἔοικε νῦν αὖ τῆσδ᾽<note place="unspecified"><foreign xml:lang="grc">αὖ τῆσδ᾽</foreign> Martin: <foreign xml:lang="grc">αὐτῆς</foreign> M</note> ἐπιξήνου<note place="unspecified"><foreign xml:lang="grc">ἐπιξήνου</foreign> Abresch: <foreign xml:lang="grc">ἐπὶ ξυροῦ</foreign> M</note> πέλας</l>
-            <l n="885">αὐχὴν πεσεῖσθαι πρὸς δίκην<note place="unspecified"><foreign xml:lang="grc">δίκην</foreign> M (sic M)</note> πεπληγμένος.</l>
+            <l n="884">ἔοικε νῦν αὖ τῆσδ᾽<note place="unspecified"><foreign xml:lang="grc">αὖ τῆσδ᾽</foreign> Martin: <foreign xml:lang="grc">αὐτῆ</foreign> M</note> ἐπιξήνου<note place="unspecified"><foreign xml:lang="grc">ἐπιξήνου</foreign> Abresch: <foreign xml:lang="grc">ἐπὶ ξυροῦ</foreign> M</note> πέλας
+            <lb/>αὐχὴν πεσεῖσθαι πρὸς δίκην<note place="unspecified"><foreign xml:lang="grc">δίκην</foreign> M (sic M)</note> πεπληγμένος.</l>
           </sp>
           <sp>
             <speaker>Κλυταιμνήστρα</speaker>
@@ -1934,35 +1926,35 @@
           <l n="983"><milestone ed="P" unit="para"/>τί νιν προσείπω, κἂν τύχω μάλ᾽ εὐστομῶν;</l>
           <l n="984">ἄγρευμα θηρός, ἢ νεκροῦ ποδένδυτον</l>
           <l n="985">δροίτης κατασκήνωμα; δίκτυον μὲν οὖν,</l>
-          <l n="1000">ἄρκυν τ᾽<note place="unspecified"><foreign xml:lang="grc">τ᾽</foreign> Hermann: <foreign xml:lang="grc">δ᾽</foreign> M</note> ἂν εἴποις καὶ ποδιστῆρας πέπλους.</l>
-          <l n="1001">τοιοῦτον ἂν<note place="unspecified"><foreign xml:lang="grc">τοιοῦτον ἂν</foreign> Turnebus: <foreign xml:lang="grc">τοιοῦτο μὰν</foreign> M</note> κτήσαιτο φηλήτης<note place="unspecified"><foreign xml:lang="grc">φηλήτης</foreign> Scaliger: <foreign xml:lang="grc">φιλήτης</foreign> M</note> ἀνήρ,</l>
-          <l n="1002">ξένων ἀπαιόλημα κἀργυροστερῆ</l>
-          <l n="1003">βίον νομίζων,<note place="unspecified"><foreign xml:lang="grc">νομίζων</foreign> Turnebus: <foreign xml:lang="grc">νομίζω</foreign> M</note> τῷδέ τ᾽ ἂν δολώματι</l>
-          <l n="1004">πολλοὺς ἀναιρῶν πολλὰ θερμαίνοι φρένα.<note place="unspecified"><foreign xml:lang="grc">φρένα</foreign> Lobeck: <foreign xml:lang="grc">φρενί</foreign> M</note></l>
-          <l n="1005"><milestone ed="P" unit="para"/>ἐκτείνατ᾽ αὐτὸ<note place="unspecified"><foreign xml:lang="grc">αὐτὸ</foreign> Auratus: <foreign xml:lang="grc">αὐτὸν</foreign> M</note> καὶ κύκλῳ παρασταδὸν</l>
-          <l n="1006">στέγαστρον ἀνδρὸς δείξαθ᾽, ὡς ἴδῃ πατήρ,</l>
-          <l n="985">οὐχ οὑμός, ἀλλ᾽ ὁ πάντ᾽ ἐποπτεύων τάδε</l>
-          <l n="986">Ἥλιος, ἄναγνα μητρὸς ἔργα τῆς ἐμῆς,</l>
-          <l n="987">ὡς ἂν παρῇ μοι μάρτυς ἐν δίκῃ ποτέ,</l>
-          <l n="988">ὡς τόνδ᾽ ἐγὼ μετῆλθον ἐνδίκως μόρον</l>
-          <l n="989">τὸν μητρός: Αἰγίσθου γὰρ οὐ λέγω<note place="unspecified"><foreign xml:lang="grc">λέγω</foreign> e schol. Turnebus: <foreign xml:lang="grc">ψέγω</foreign> M</note> μόρον:</l>
-          <l n="990">ἔχει γὰρ αἰσχυντῆρος, ὡς νόμος,<note place="unspecified"><foreign xml:lang="grc">νόμος</foreign> Portus: <foreign xml:lang="grc">νόμου</foreign> M</note> δίκην:</l>
-          <l n="991"><milestone ed="P" unit="para"/>ἥτις δ᾽ ἐπ᾽ ἀνδρὶ τοῦτ᾽ ἐμήσατο στύγος,</l>
-          <l n="992">ἐξ οὗ<note place="unspecified"><foreign xml:lang="grc">ἐξ οὗ</foreign> Robortello: <foreign xml:lang="grc">ἐκ σοῦ</foreign> M</note> τέκνων ἤνεγχ᾽<note place="unspecified"><foreign xml:lang="grc">ἤνεγχ᾽</foreign> Victorius: <foreign xml:lang="grc">ην ἔχη</foreign> M</note> ὑπὸ ζώνην βάρος,</l>
-          <l n="993">φίλον τέως, νῦν δ᾽ ἐχθρόν, ὡς φαίνει, κακόν,</l>
-          <l n="994">τί σοι δοκεῖ; μύραινά γ᾽ εἴτ᾽<note place="unspecified"><foreign xml:lang="grc">γ᾽ εἴτ᾽</foreign> Hermann: <foreign xml:lang="grc">τ᾽ ἤτ᾽</foreign> M: <foreign xml:lang="grc">γ᾽</foreign> supra prius <foreign xml:lang="grc">τ᾽</foreign> scr. m</note> ἔχιδν᾽ ἔφυ</l>
-          <l n="995">σήπειν θιγοῦσ᾽<note place="unspecified"><foreign xml:lang="grc">θίγουσ᾽ ἂν</foreign> (sic) Robortello: <foreign xml:lang="grc">θίγουσαν</foreign> M</note> ἂν ἄλλον οὐ δεδηγμένον</l>
-          <l n="996">τόλμης ἕκατι κἀκδίκου<note place="unspecified"><foreign xml:lang="grc">κἀκδίκου</foreign> H. L. Ahrens: <foreign xml:lang="grc">κἀνδίκου</foreign> M</note> φρονήματος.<note place="unspecified">983-in codd. post <foreign xml:lang="grc">φρονήματος</foreign> (1004) leguntur: huc transtulit Scholefield</note></l>
-          <l n="997">τοιάδ᾽ ἐμοὶ ξύνοικος ἐν δόμοισι μὴ</l>
-          <l n="998">γένοιτ᾽: ὀλοίμην πρόσθεν<note place="unspecified"><foreign xml:lang="grc">πρόσθεν</foreign> Turnebus: <foreign xml:lang="grc">πρόσθ᾽</foreign> M</note> ἐκ θεῶν ἄπαις.</l>
+          <l n="986">ἄρκυν τ᾽<note place="unspecified"><foreign xml:lang="grc">τ᾽</foreign> Hermann: <foreign xml:lang="grc">δ᾽</foreign> M</note> ἂν εἴποις καὶ ποδιστῆρας πέπλους.</l>
+          <l n="987">τοιοῦτον ἂν<note place="unspecified"><foreign xml:lang="grc">τοιοῦτον ἂν</foreign> Turnebus: <foreign xml:lang="grc">τοιοῦτο μὰν</foreign> M</note> κτήσαιτο φηλήτης<note place="unspecified"><foreign xml:lang="grc">φηλήτης</foreign> Scaliger: <foreign xml:lang="grc">φιλήτης</foreign> M</note> ἀνήρ,</l>
+          <l n="988">ξένων ἀπαιόλημα κἀργυροστερῆ</l>
+          <l n="989">βίον νομίζων,<note place="unspecified"><foreign xml:lang="grc">νομίζων</foreign> Turnebus: <foreign xml:lang="grc">νομίζω</foreign> M</note> τῷδέ τ᾽ ἂν δολώματι</l>
+          <l n="990">πολλοὺς ἀναιρῶν πολλὰ θερμαίνοι φρένα.<note place="unspecified"><foreign xml:lang="grc">φρένα</foreign> Lobeck: <foreign xml:lang="grc">φρενί</foreign> M</note></l>
+          <l n="991"><milestone ed="P" unit="para"/>ἐκτείνατ᾽ αὐτὸ<note place="unspecified"><foreign xml:lang="grc">αὐτὸ</foreign> Auratus: <foreign xml:lang="grc">αὐτὸν</foreign> M</note> καὶ κύκλῳ παρασταδὸν</l>
+          <l n="992">στέγαστρον ἀνδρὸς δείξαθ᾽, ὡς ἴδῃ πατήρ,</l>
+          <l n="993">οὐχ οὑμός, ἀλλ᾽ ὁ πάντ᾽ ἐποπτεύων τάδε</l>
+          <l n="994">Ἥλιος, ἄναγνα μητρὸς ἔργα τῆς ἐμῆς,</l>
+          <l n="995">ὡς ἂν παρῇ μοι μάρτυς ἐν δίκῃ ποτέ,</l>
+          <l n="996">ὡς τόνδ᾽ ἐγὼ μετῆλθον ἐνδίκως μόρον</l>
+          <l n="997">τὸν μητρός: Αἰγίσθου γὰρ οὐ λέγω<note place="unspecified"><foreign xml:lang="grc">λέγω</foreign> e schol. Turnebus: <foreign xml:lang="grc">ψέγω</foreign> M</note> μόρον:</l>
+          <l n="998">ἔχει γὰρ αἰσχυντῆρος, ὡς νόμος,<note place="unspecified"><foreign xml:lang="grc">νόμος</foreign> Portus: <foreign xml:lang="grc">νόμου</foreign> M</note> δίκην:</l>
+          <l n="999"><milestone ed="P" unit="para"/>ἥτις δ᾽ ἐπ᾽ ἀνδρὶ τοῦτ᾽ ἐμήσατο στύγος,</l>
+          <l n="1000">ἐξ οὗ<note place="unspecified"><foreign xml:lang="grc">ἐξ οὗ</foreign> Robortello: <foreign xml:lang="grc">ἐκ σοῦ</foreign> M</note> τέκνων ἤνεγχ᾽<note place="unspecified"><foreign xml:lang="grc">ἤνεγχ᾽</foreign> Victorius: <foreign xml:lang="grc">ην ἔχη</foreign> M</note> ὑπὸ ζώνην βάρος,</l>
+          <l n="1001">φίλον τέως, νῦν δ᾽ ἐχθρόν, ὡς φαίνει, κακόν,</l>
+          <l n="1002">τί σοι δοκεῖ; μύραινά γ᾽ εἴτ᾽<note place="unspecified"><foreign xml:lang="grc">γ᾽ εἴτ᾽</foreign> Hermann: <foreign xml:lang="grc">τ᾽ ἤτ᾽</foreign> M: <foreign xml:lang="grc">γ᾽</foreign> supra prius <foreign xml:lang="grc">τ᾽</foreign> scr. m</note> ἔχιδν᾽ ἔφυ</l>
+          <l n="1003">σήπειν θιγοῦσ᾽<note place="unspecified"><foreign xml:lang="grc">θίγουσ᾽ ἂν</foreign> (sic) Robortello: <foreign xml:lang="grc">θίγουσαν</foreign> M</note> ἂν ἄλλον οὐ δεδηγμένον</l>
+          <l n="1004">τόλμης ἕκατι κἀκδίκου<note place="unspecified"><foreign xml:lang="grc">κἀκδίκου</foreign> H. L. Ahrens: <foreign xml:lang="grc">κἀνδίκου</foreign> M</note> φρονήματος.<note place="unspecified">983-in codd. post <foreign xml:lang="grc">φρονήματος</foreign> (1004) leguntur: huc transtulit Scholefield</note></l>
+          <l n="1005">τοιάδ᾽ ἐμοὶ ξύνοικος ἐν δόμοισι μὴ</l>
+          <l n="1006">γένοιτ᾽: ὀλοίμην πρόσθεν<note place="unspecified"><foreign xml:lang="grc">πρόσθεν</foreign> Turnebus: <foreign xml:lang="grc">πρόσθ᾽</foreign> M</note> ἐκ θεῶν ἄπαις.</l>
           <milestone ed="p" n="1007" unit="card"/>
         </sp>
         <div type="textpart" subtype="anapests">
           <sp>
             <speaker>Χορός</speaker>
-            <l n="999">αἰαῖ αἰαῖ<note place="unspecified"><foreign xml:lang="grc">αἰαῖ αἰαῖ</foreign> Dindorf: <foreign xml:lang="grc">αἲ αἲ</foreign> M</note> μελέων ἔργων:</l>
-            <l n="1000">στυγερῷ θανάτῳ διεπράχθης.</l>
-            <l n="1008b">ἒ ἔ, μίμνοντι δὲ καὶ πάθος ἀνθεῖ.</l>
+            <l n="1007">αἰαῖ αἰαῖ<note place="unspecified"><foreign xml:lang="grc">αἰαῖ αἰαῖ</foreign> Dindorf: <foreign xml:lang="grc">αἲ αἲ</foreign> M</note> μελέων ἔργων:</l>
+            <l n="1008">στυγερῷ θανάτῳ διεπράχθης.</l>
+            <l n="1009">ἒ ἔ, μίμνοντι δὲ καὶ πάθος ἀνθεῖ.</l>
             <milestone ed="p" n="1010" unit="card"/>
           </sp>
           <sp>
@@ -2008,22 +2000,21 @@
             <l n="1038">φεύγων τόδ᾽ αἷμα κοινόν: οὐδ᾽ ἐφ᾽ ἑστίαν<note place="unspecified"><foreign xml:lang="grc">ἐφ᾽ ἑστίαν</foreign> Turnebus: <foreign xml:lang="grc">ἐφέστιον</foreign> M</note><note place="unspecified">Post 1039 legitur in codd. 1041: transposuit Blomfield</note></l>
             <l n="1039">ἄλλην τραπέσθαι Λοξίας ἐφίετο.</l>
             <l n="1040">καὶ μαρτυρεῖν μὲν ὡς<note place="unspecified"><foreign xml:lang="grc">μὲν ὡς</foreign> Blomfield: <foreign xml:lang="grc">μοι μενέλεως</foreign> M</note> ἐπορσύνθη κακὰ</l>
-            <l n="1040">τάδ᾽ ἐν χρόνῳ μοι πάντας Ἀργείους λέγω:</l>
-            <l n="1041">φεύγω<note place="unspecified"><foreign xml:lang="grc">φεύγω</foreign> Weil: <foreign xml:lang="grc">ἐγὼ</foreign> M</note> δ᾽ ἀλήτης τῆσδε γῆς ἀπόξενος,</l>
-            <l n="1042">ζῶν καὶ τεθνηκὼς τάσδε κληδόνας λιπών.</l>
+            <l n="1041">τάδ᾽ ἐν χρόνῳ μοι πάντας Ἀργείους λέγω:</l>
+            <l n="1042">φεύγω<note place="unspecified"><foreign xml:lang="grc">φεύγω</foreign> Weil: <foreign xml:lang="grc">ἐγὼ</foreign> M</note> δ᾽ ἀλήτης τῆσδε γῆς ἀπόξενος,</l>
+            <l n="1043">ζῶν καὶ τεθνηκὼς τάσδε κληδόνας λιπών.</l>
           </sp>
           <sp>
             <speaker>Χορός</speaker>
-            <l n="1043">ἀλλ᾽ εὖ γ᾽ ἔπραξας,<note place="unspecified"><foreign xml:lang="grc">γ᾽ ἔπραξας</foreign> Tyrwhitt: <foreign xml:lang="grc">τε πράξας</foreign> M</note> μηδ᾽ ἐπιζευχθῇς<note place="unspecified"><foreign xml:lang="grc">ἐπιζευχθῇς</foreign> Heath: <foreign xml:lang="grc">ἐπιζεύχθη</foreign> M</note> στόμα</l>
+            <l n="1044">ἀλλ᾽ εὖ γ᾽ ἔπραξας,<note place="unspecified"><foreign xml:lang="grc">γ᾽ ἔπραξας</foreign> Tyrwhitt: <foreign xml:lang="grc">τε πράξας</foreign> M</note> μηδ᾽ ἐπιζευχθῇς<note place="unspecified"><foreign xml:lang="grc">ἐπιζευχθῇς</foreign> Heath: <foreign xml:lang="grc">ἐπιζεύχθη</foreign> M</note> στόμα</l>
             <l n="1045">φήμῃ πονηρᾷ<note place="unspecified"><foreign xml:lang="grc">φήμῃ πονηρᾷ</foreign> Auratus: <foreign xml:lang="grc">φῆμαι πονηραὶ</foreign> M</note> μηδ᾽ ἐπιγλωσσῶ κακά,<note place="unspecified"><foreign xml:lang="grc">κακά: ἠλευθέρωσας</foreign> Blomfield</note></l>
             <l n="1046">ἐλευθερώσας πᾶσαν Ἀργείων<note place="unspecified"><foreign xml:lang="grc">Ἀργείων</foreign> Porson: <foreign xml:lang="grc">ἀργείην</foreign> M</note> πόλιν,</l>
             <l n="1047">δυοῖν δρακόντοιν εὐπετῶς τεμὼν κάρα.</l>
           </sp>
           <sp>
             <speaker>Ὀρέστης</speaker>
-            <l part="Y">ἆ, ἆ.</l>
-            <!-- extra metrum -->
-            <l n="1048">δμωαὶ γυναῖκες αἵδε Γοργόνων δίκην</l>
+            <l n="1048">ἆ, ἆ.
+            <lb/>δμωαὶ γυναῖκες αἵδε Γοργόνων δίκην</l>
             <l n="1049">φαιοχίτωνες καὶ πεπλεκτανημέναι</l>
             <l n="1050">πυκνοῖς δράκουσιν: οὐκέτ᾽ ἂν μείναιμ᾽<note place="unspecified"><foreign xml:lang="grc">οὐκέτ᾽ ἂν μείναιμ᾽</foreign> Tzetzes: <foreign xml:lang="grc">οὐκ ἔτ᾽ ἀμμείνοιμ᾽</foreign> M</note> ἐγώ.</l>
             <milestone ed="p" n="1051" unit="card"/>
