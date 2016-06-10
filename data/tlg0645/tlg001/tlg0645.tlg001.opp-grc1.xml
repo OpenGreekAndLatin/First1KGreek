@@ -21,13 +21,12 @@
               <date>1911</date>
             </imprint>
           </monogr>
+          <ref target="https://archive.org/details/siustiniapologia00just">Internet Archive</ref>
         </biblStruct>
         
         </sourceDesc>
     </fileDesc><encodingDesc>
 <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
 
@@ -36,7 +35,10 @@
 	<language ident="lat">Latin</language>
 	<language ident="grc">Greek</language>
       </langUsage>
-    </profileDesc></teiHeader>
+    </profileDesc>
+    <revisionDesc>
+      <change who="Jack Duff" when="2016-06-09">Changed XPath to delete 2 extraneous XPath, renamed file to opp-grc1. Hook and Nemo pass. </change>
+    </revisionDesc></teiHeader>
 
   <text><body> <div type="edition" n="urn:cts:greekLit:tlg0645.tlg001.opp-grc1">
 <pb xml:id="v.2.p.8"/>
