@@ -39,9 +39,7 @@
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+              <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -97,10 +95,10 @@
         <div type="textpart" subtype="anapests">
           <sp n="*xoros">
             <speaker>Χορος</speaker>
-            <l n="2">Τάδε μὲν Περσῶν τῶν οἰχομένων</l>
-            <l n="3">Ἑλλάδ᾽ ἐς αἶαν πιστὰ καλεῖται,</l>
-            <l n="4">καὶ τῶν ἀφνεῶν καὶ πολυχρύσων</l>
-            <l n="5">ἑδράνων φύλακες, κατὰ πρεσβείαν</l>
+            <l n="1">Τάδε μὲν Περσῶν τῶν οἰχομένων</l>
+            <l n="2">Ἑλλάδ᾽ ἐς αἶαν πιστὰ καλεῖται,</l>
+            <l n="3">καὶ τῶν ἀφνεῶν καὶ πολυχρύσων</l>
+            <l n="4">ἑδράνων φύλακες, κατὰ πρεσβείαν</l>
             <l n="5">οὓς αὐτὸς ἄναξ Ξέρξης βασιλεὺς</l>
             <l n="6">Δαρειογενὴς<note place="unspecified"><foreign xml:lang="grc">Δαρειογενὴς</foreign> Fa: <foreign xml:lang="grc">δαρειογενὴς: δαρείου υἱὸς</foreign> M codd. plures</note></l>
             <l n="7">εἵλετο χώρας ἐφορεύειν.</l>
@@ -1570,7 +1568,7 @@
         </div>
         <div type="textpart" subtype="epode">
           <sp>
-            <speaker>Χορόσ???</speaker>
+            <speaker>Χορός</speaker>
             <l n="897">καὶ τὰς εὐκτεάνους<note place="unspecified"><foreign xml:lang="grc">εὐκταιάνους</foreign> M</note> κατὰ</l>
             <l n="898">κλῆρον Ἰαόνιον<note place="unspecified"><foreign xml:lang="grc">Ἰαόνιον</foreign> Hermann: <foreign xml:lang="grc">ἰόνιον</foreign> codd.</note> πολυάνδρους</l>
             <l n="900">Ἑλλάνων ἐκράτει<note place="unspecified"><foreign xml:lang="grc">ἐκράτει</foreign> Hermann: <foreign xml:lang="grc">ἐκράτυνε</foreign> codd. (-<foreign xml:lang="grc">νεν</foreign> M)</note> σφετέραις φρεσίν.</l>
