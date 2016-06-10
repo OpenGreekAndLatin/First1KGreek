@@ -4,7 +4,7 @@
         <title type="work" n="Ag.">Agamemnon</title>
         <title type="sub">Machine readable text</title>
         <author n="Aesch.">Aeschylus</author>
-        <editor role="editor" n="Smyth">Arthur Sidgwick</editor>
+        <editor role="editor">Arthur Sidgwick</editor>
         <sponsor>Perseus Project, Tufts University</sponsor>
         <principal>Gregory Crane</principal>
         <respStmt>
@@ -36,9 +36,7 @@
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -57,10 +55,11 @@
             In c. 2005, we had some money but not enough to do a full rekeying. We asked http://www.digitaldividedata.com/ to start with our digital version of Smyth's Aeschylus and systematically set  to turn it into Sidgwick's Oxford Classical Text edition. Doubtless they will have missed places but the text is open and we hope that people will read this edition carefully against various digital exemplars of this public domain edition and catch such slips.
          
       </change>
+      <change who="Jack Duff" when="2016-06-10">Removed two extraneous XPath, corrected duplicate line numbers, corrected editor attributes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
-    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg004.opp-grc3">
+    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg005.opp-grc3">
       <head>
         <foreign xml:lang="grc">Ἀγαμέμνων</foreign>
       </head>
@@ -438,8 +437,8 @@ Camppbell: <foreign xml:lang="grc">πειθὼ μολπὰν ἀλκὰν</forei
             <l n="233">πέπλοισι περιπετῆ παντὶ θυμῷ</l>
             <l n="234">προνωπῆ</l>
             <l n="235">λαβεῖν ἀέρ-</l>
-            <l n="236">δην, στόματός τε καλλιπρῴ-</l>
-            <l n="236">ρου φυλακᾷ<note place="unspecified"><foreign xml:lang="grc">φυλακᾷ</foreign> Blomfield: <foreign xml:lang="grc">φυλακὰν</foreign> codd.</note> κατασχεῖν</l>
+            <l n="236">δην, στόματός τε καλλιπρῴ-
+            <lb/>ρου φυλακᾷ<note place="unspecified"><foreign xml:lang="grc">φυλακᾷ</foreign> Blomfield: <foreign xml:lang="grc">φυλακὰν</foreign> codd.</note> κατασχεῖν</l>
             <l n="237">φθόγγον ἀραῖον οἴκοις,</l>
           </sp>
         </div>
@@ -2503,8 +2502,8 @@ Fa, 349–1067 soli Fl Fa</note></l>
             <l n="1526">τὴν πολυκλαύτην<note place="unspecified"><foreign xml:lang="grc">πολυκλαύτην</foreign> Porson: <foreign xml:lang="grc">πολύκλαυτόν τ᾽</foreign> codd.</note> Ἰφιγενείαν,</l>
             <l n="1527">ἄξια<note place="unspecified"><foreign xml:lang="grc">ἄξια</foreign> ante <foreign xml:lang="grc">δράσας</foreign> Hermann: <foreign xml:lang="grc">ἀνάξια</foreign> codd.</note> δράσας ἄξια πάσχων</l>
             <l n="1528">μηδὲν ἐν Ἅιδου μεγαλαυχείτω,</l>
-            <l n="1529">ξιφοδηλήτῳ,</l>
-            <l n="1530">θανάτῳ τίσας ἅπερ ἦρξεν.<note place="unspecified"><foreign xml:lang="grc">ἔρξεν</foreign> Spanheim</note></l>
+            <l n="1529">ξιφοδηλήτῳ,
+            <lb/>θανάτῳ τίσας ἅπερ ἦρξεν.<note place="unspecified"><foreign xml:lang="grc">ἔρξεν</foreign> Spanheim</note></l>
             <milestone ed="p" n="1531" unit="card"/>
           </sp>
         </div>
@@ -2577,8 +2576,8 @@ Fa, 349–1067 soli Fl Fa</note></l>
             <l n="1572">ἐκ τῶνδε δόμων ἄλλην γενεὰν</l>
             <l n="1573">τρίβειν θανάτοις αὐθένταισι:</l>
             <l n="1574">κτεάνων τε μέρος</l>
-            <l n="1575">βαιὸν ἐχούσῃ πᾶν ἀπόχρη μοι<note place="unspecified"><foreign xml:lang="grc">δ᾽</foreign> eiecit Canter: ordinem mutavit Erfurdt</note></l>
-            <l n="1575">μανίας μελάθρων</l>
+            <l n="1575">βαιὸν ἐχούσῃ πᾶν ἀπόχρη μοι<note place="unspecified"><foreign xml:lang="grc">δ᾽</foreign> eiecit Canter: ordinem mutavit Erfurdt</note>
+            <lb/>μανίας μελάθρων</l>
             <l n="1576">ἀλληλοφόνους<note place="unspecified"><foreign xml:lang="grc">μοι δ᾽ ἀλληλοφόνους μανίας μελάθρων</foreign> codd.</note> ἀφελούσῃ.</l>
             <milestone ed="p" n="1577" unit="card"/>
           </sp>
@@ -2709,8 +2708,8 @@ Fa, 349–1067 soli Fl Fa</note></l>
             <l n="1656">πημονῆς δ᾽ ἅλις γ᾽ ὑπάρχει:<note place="unspecified"><foreign xml:lang="grc">ὑπάρχει</foreign> Scaliger: <foreign xml:lang="grc">ὕπαρχε</foreign> codd.</note> μηδὲν αἱματώμεθα.<note place="unspecified"><foreign xml:lang="grc">αἱματώμεθα</foreign> Jacob: <foreign xml:lang="grc">ἡματώμεθα</foreign> codd.</note></l>
             <l n="1657">στεῖχε καὶ σὺ χοἰ<note place="unspecified"><foreign xml:lang="grc">στεῖχε καὶ σὺ χοἰ</foreign> Franz: <foreign xml:lang="grc">στείχετε δ᾽ οἱ</foreign> codd.</note> γέροντες πρὸς δόμους πεπρωμένους<note place="unspecified"><foreign xml:lang="grc">τούσδε</foreign> seclusit Auratus</note></l>
             <l n="1658">[τούσδε],</l>
-            <l n="1659">πρὶν παθεῖν ἔρξαντες: ἀρκεῖν<note place="unspecified"><foreign xml:lang="grc">ἔρξαντες: ἀρκεῖν</foreign> Hermann: <foreign xml:lang="grc">ἔρξαντες καιρὸν</foreign> Fl: <foreign xml:lang="grc">ἔρξαντα καιρὸν</foreign> V Fa</note> χρῆν τάδ᾽ ὡς ἐπράξαμεν.</l>
-            <l n="1660">εἰ δέ τοι μόχθων γένοιτο τῶνδ᾽ ἅλις, δεχοίμεθ᾽<note place="unspecified"><foreign xml:lang="grc">δεχοίμεθ᾽</foreign> Martin: <foreign xml:lang="grc">γ᾽ ἐχοίμεθ᾽</foreign> codd.</note> ἄν,</l>
+            <l n="1659">πρὶν παθεῖν ἔρξαντες: ἀρκεῖν<note place="unspecified"><foreign xml:lang="grc">ἔρξαντες: ἀρκεῖν</foreign> Hermann: <foreign xml:lang="grc">ἔρξαντες καιρὸν</foreign> Fl: <foreign xml:lang="grc">ἔρξαντα καιρὸν</foreign> V Fa</note> χρῆν τάδ᾽ ὡς ἐπράξαμεν.
+            <lb/>εἰ δέ τοι μόχθων γένοιτο τῶνδ᾽ ἅλις, δεχοίμεθ᾽<note place="unspecified"><foreign xml:lang="grc">δεχοίμεθ᾽</foreign> Martin: <foreign xml:lang="grc">γ᾽ ἐχοίμεθ᾽</foreign> codd.</note> ἄν,</l>
             <l n="1660">δαίμονος χηλῇ βαρείᾳ δυστυχῶς πεπληγμένοι.</l>
             <l n="1661">ὧδ᾽ ἔχει λόγος γυναικός, εἴ τις ἀξιοῖ μαθεῖν.</l>
           </sp>
