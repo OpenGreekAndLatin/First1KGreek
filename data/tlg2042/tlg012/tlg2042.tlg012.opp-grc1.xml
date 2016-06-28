@@ -4,7 +4,7 @@
   <teiHeader>
     <fileDesc>
 <titleStmt>
-  <title>ORIGENES WERKE</title>
+  <title>Das Fragment aus der Oktateuchkatene</title>
   <editor>DR. ERICH KLOSTERMANN</editor>
   <sponsor>University of Leipzig</sponsor>
   <funder>European Social Fund Saxony</funder>
@@ -55,8 +55,9 @@
       <pubPlace>LIPSIAE</pubPlace>
       <date>1901</date>
      </imprint>
-     <biblScope unit="volume">vol.</biblScope>
+     <biblScope unit="volume">vol. 3</biblScope>
     </monogr>
+     <ref target="https://archive.org/stream/origeneswerke03orig">Internet Archive</ref>
    </biblStruct>
   </listBibl>
  </sourceDesc>
@@ -64,23 +65,22 @@
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
   <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
 <profileDesc>
  <langUsage>
   <language ident="grc">Greek</language>
-  <language ident="lat">Latin</language>
  </langUsage>
 </profileDesc>
 <revisionDesc>
- <change/>
+ <change who="Jack Duff" when="2016-06-28">Corrected XPath to fragment, expanded pb, corrected metadata, added ref.</change>
 </revisionDesc>
 </teiHeader>
   <text>
     <body><div type="edition" n="urn:cts:greekLit:tlg2042.tlg012.opp-grc1">
- <div type="textpart" subtype="section" n="1">
-<pb n="279"/>
+ <div type="textpart" subtype="fragment" n="1">
+<pb n="v.3.p.279."/>
 <head>Das Fragment aus der Oktateuchkatene.</head>
 <p>Ὠριγένους εἰς το αὐτὸ ἐκ τῶν εἰς τοὺς Θρήνους.</p>
 <p>Τίς γὰρ τὸ &gt;δίκαιον οὐ δικαίως ; διαλαβόντες δὲ ἐκεῖνο, <lb n="325"/>
