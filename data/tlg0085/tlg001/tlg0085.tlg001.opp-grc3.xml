@@ -7,7 +7,7 @@
         <title type="work" n="Supp.">Suppliant Women</title>
         <title type="sub">Machine readable text</title>
         <author n="Aesch.">Aeschylus</author>
-        <editor role="editor" n="Smyth">Arthur Sidgwick</editor>
+        <editor role="editor">Arthur Sidgwick</editor>
         <sponsor>Perseus Project, Tufts University</sponsor>
         <principal>Gregory Crane</principal>
         <respStmt>
@@ -34,14 +34,13 @@
               <date>1902</date>
             </imprint>
           </monogr>
+          <ref target="https://babel.hathitrust.org/cgi/pt?id=njp.32101064224940;view=1up;seq=19">HathiTrust</ref>
         </biblStruct>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -60,6 +59,7 @@
             In c. 2005, we had some money but not enough to do a full rekeying. We asked http://www.digitaldividedata.com/ to start with our digital version of Smyth's Aeschylus and systematically set  to turn it into Sidgwick's Oxford Classical Text edition. Doubtless they will have missed places but the text is open and we hope that people will read this edition carefully against various digital exemplars of this public domain edition and catch such slips.
          
       </change>
+      <change who="Jack Duff" when="2016-06-10">Fixed XPath to use lines, corrected editor attributes, resolved line duplicates, added ref.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -450,21 +450,21 @@
         </sp>
         <sp>
           <speaker>Χορος</speaker>
-          <l n="212">
+          <l n="211a">
             <gap reason="lost"/>
           </l>
         </sp>
         <sp>
           <speaker>Δαναος</speaker>
-          <l n="213">καὶ Ζηνὸς ὄρνιν<note place="unspecified"><foreign xml:lang="grc">ὄρνιν</foreign>] <foreign xml:lang="grc">ἶνιν</foreign> Tucker</note> τόνδε νῦν κικλήσκετε.<note place="unspecified"><foreign xml:lang="grc">κικλήσκετε</foreign> Robortello: <foreign xml:lang="grc">κικλήσκεται</foreign> (<foreign xml:lang="grc">η</foreign> ex <foreign xml:lang="grc">ι</foreign> factum) M</note></l>
+          <l n="212">καὶ Ζηνὸς ὄρνιν<note place="unspecified"><foreign xml:lang="grc">ὄρνιν</foreign>] <foreign xml:lang="grc">ἶνιν</foreign> Tucker</note> τόνδε νῦν κικλήσκετε.<note place="unspecified"><foreign xml:lang="grc">κικλήσκετε</foreign> Robortello: <foreign xml:lang="grc">κικλήσκεται</foreign> (<foreign xml:lang="grc">η</foreign> ex <foreign xml:lang="grc">ι</foreign> factum) M</note></l>
         </sp>
         <sp>
           <speaker>Χορος</speaker>
-          <l n="214">καλοῦμεν αὐγὰς ἡλίου σωτηρίους,—</l>
+          <l n="213">καλοῦμεν αὐγὰς ἡλίου σωτηρίους,—</l>
         </sp>
         <sp>
           <speaker>Δαναος</speaker>
-          <l n="215">ἁγνόν τ᾽ Ἀπόλλω, φυγάδ᾽ ἀπ᾽ οὐρανοῦ θεόν.</l>
+          <l n="214">ἁγνόν τ᾽ Ἀπόλλω, φυγάδ᾽ ἀπ᾽ οὐρανοῦ θεόν.</l>
         </sp>
         <sp>
           <speaker>Χορος</speaker>
@@ -684,23 +684,11 @@
         </sp>
         <sp>
           <speaker>Βασιλευς</speaker>
-          <l n="318">
-            <gap reason="lost"/>
-          </l>
+          <l n="318">τίν᾽ οὖν ἔτ᾽ ἄλλον τῆσδε βλαστημὸν λέγεις;</l>
         </sp>
         <sp>
           <speaker>Χορος</speaker>
-          <l n="319">
-            <gap reason="lost"/>
-          </l>
-        </sp>
-        <sp>
-          <speaker>Βασιλευς</speaker>
-          <l n="320">τίν᾽ οὖν ἔτ᾽ ἄλλον τῆσδε βλαστημὸν λέγεις;</l>
-        </sp>
-        <sp>
-          <speaker>Χορος</speaker>
-          <l n="321">Βῆλον δίπαιδα, πατέρα τοῦδ᾽ ἐμοῦ πατρός.</l>
+          <l n="319">Βῆλον δίπαιδα, πατέρα τοῦδ᾽ ἐμοῦ πατρός.</l>
         </sp>
         <sp>
           <speaker>Βασιλευς</speaker>
@@ -1809,9 +1797,9 @@
             <l n="895">μαιμᾷ<note place="unspecified"><foreign xml:lang="grc">μαιμᾷ</foreign> Robortello: <foreign xml:lang="grc">μαιμαι</foreign> M G</note> πέλας δίπους ὄφις:</l>
             <l n="896">ἔχιδν᾽<note place="unspecified"><foreign xml:lang="grc">ἔχιδν᾽</foreign> scripsi: <foreign xml:lang="grc">ἔχιδνα δ᾽</foreign> codd.</note> ὥς μέ τις<note place="unspecified"><foreign xml:lang="grc">τις</foreign> Hermann: <foreign xml:lang="grc">τι</foreign> M</note></l>
             <l n="897">πόδα δακοῦσ᾽ ἔχει.<note place="unspecified"><foreign xml:lang="grc">πόδα δακοῦσ᾽ ἔχει</foreign> Kruse: <foreign xml:lang="grc">ποτ᾽ ἐνδακοσαχ</foreign> M</note></l>
-            <l n="898">&lt;ὄναρ ὄναρ μέλαν,<note place="unspecified">post 897 <foreign xml:lang="grc">ὄναρ ὄναρ μέλαν</foreign> addidi</note>&gt;</l>
-            <l n="899">ὀτοτοτοῖ,</l>
-            <l n="900">μᾶ Γᾶ μᾶ Γᾶ βοᾷ<note place="unspecified"><foreign xml:lang="grc">βοᾷ</foreign> vide ad 890</note></l>
+            <l n="897a">&lt;ὄναρ ὄναρ μέλαν,<note place="unspecified">post 897 <foreign xml:lang="grc">ὄναρ ὄναρ μέλαν</foreign> addidi</note>&gt;</l>
+            <l n="898">ὀτοτοτοῖ,</l>
+            <l n="899">μᾶ Γᾶ μᾶ Γᾶ βοᾷ<note place="unspecified"><foreign xml:lang="grc">βοᾷ</foreign> vide ad 890</note></l>
             <l n="900">φοβερὸν ἀπότρεπε,</l>
             <l n="901">ὦ βᾶ Γᾶς παῖ Ζεῦ.<note place="unspecified">hi vv. saepius corrupti, et multis locis vix sanandi nisi a codicum testimonio longius aberretur: coniecturas igitur eas modo servavi quae librorum fide satis viderentur firmari</note></l>
             <milestone ed="p" n="902" unit="card"/>

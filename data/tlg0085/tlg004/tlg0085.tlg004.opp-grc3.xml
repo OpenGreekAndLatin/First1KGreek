@@ -7,7 +7,7 @@
         <title type="work" n="Seven">Seven Against Thebes</title>
         <title type="sub">Machine readable text</title>
         <author n="Aesch.">Aeschylus</author>
-        <editor role="editor" n="Smyth">Arthur Sidgwick</editor>
+        <editor role="editor">Arthur Sidgwick</editor>
         <sponsor>Perseus Project, Tufts University</sponsor>
         <principal>Gregory Crane</principal>
         <respStmt>
@@ -34,14 +34,13 @@
               <date>1902</date>
             </imprint>
           </monogr>
+          <ref target="https://babel.hathitrust.org/cgi/pt?id=njp.32101064224940;view=1up;seq=113">HathiTrust</ref>
         </biblStruct>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     
@@ -61,6 +60,7 @@
     In c. 2005, we had some money but not enough to do a full rekeying. We asked http://www.digitaldividedata.com/ to start with our digital version of Smyth's Aeschylus and systematically set  to turn it into Sidgwick's Oxford Classical Text edition. Doubtless they will have missed places but the text is open and we hope that people will read this edition carefully against various digital exemplars of this public domain edition and catch such slips.
  
       </change>
+      <change who="Jack Duff" when="2016-06-10">Corrected XPath to use line, corrected editor attribute, added ref, resolved line number duplicates.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -265,8 +265,8 @@
         <div type="textpart" subtype="antistrophe" n="2">
           <sp>
             <speaker>Χορος</speaker>
-            <l n="158">ἒ ἒ ἒ ἔ,</l>
-            <l n="158">ἀκροβόλων δ᾽ ἐπάλξεων λιθὰς ἔρχεται:</l>
+            <l n="158">ἒ ἒ ἒ ἔ,
+            <lb/>ἀκροβόλων δ᾽ ἐπάλξεων λιθὰς ἔρχεται:</l>
             <l n="159">ὦ φίλ᾽ Ἄπολλον:</l>
             <l n="160">κόναβος ἐν πύλαις χαλκοδέτων σακέων,</l>
             <l n="161">παῖ Διός, ὅθεν<note place="unspecified"><foreign xml:lang="grc">παῖ Διός, ὅθεν</foreign> von den Bergh: <foreign xml:lang="grc">καὶ Διόθεν</foreign> codd.</note></l>
@@ -363,19 +363,19 @@
           </sp>
           <sp>
             <speaker>Χορος</speaker>
-            <l n="217">οὔκουν<note place="unspecified"><foreign xml:lang="grc">οὔκουν</foreign> M: <foreign xml:lang="grc">οὐκοῦν</foreign> m<hi rend="sub">1</hi>, recc.</note> τάδ᾽ ἔσται πρὸς θεῶν;</l>
+            <l n="217a">οὔκουν<note place="unspecified"><foreign xml:lang="grc">οὔκουν</foreign> M: <foreign xml:lang="grc">οὐκοῦν</foreign> m<hi rend="sub">1</hi>, recc.</note> τάδ᾽ ἔσται πρὸς θεῶν;</l>
           </sp>
           <sp>
             <speaker>Ετεοκλης</speaker>
-            <l n="218">ἀλλ᾽ οὖν θεοὺς</l>
-            <l n="219">τοὺς τῆς ἁλούσης πόλεος<note place="unspecified"><foreign xml:lang="grc">πόλεος</foreign> recc. pauci: <foreign xml:lang="grc">πόλεως</foreign> codd. cett.</note> ἐκλείπειν λόγος.<note place="unspecified">tres vv. ita distribuit m<hi rend="sub">1</hi>, recc.: Eteocli continuat M</note></l>
+            <l n="217b">ἀλλ᾽ οὖν θεοὺς</l>
+            <l n="218">τοὺς τῆς ἁλούσης πόλεος<note place="unspecified"><foreign xml:lang="grc">πόλεος</foreign> recc. pauci: <foreign xml:lang="grc">πόλεως</foreign> codd. cett.</note> ἐκλείπειν λόγος.<note place="unspecified">tres vv. ita distribuit m<hi rend="sub">1</hi>, recc.: Eteocli continuat M</note></l>
             <milestone ed="p" n="219" unit="card"/>
           </sp>
         </div>
         <div type="textpart" subtype="strophe" n="2">
           <sp>
             <speaker>Χορος</speaker>
-            <l n="220">μήποτ᾽ ἐμὸν κατ᾽ αἰῶνα λίποι<note place="unspecified"><foreign xml:lang="grc">λείποι</foreign> M</note> θεῶν</l>
+            <l n="219">μήποτ᾽ ἐμὸν κατ᾽ αἰῶνα λίποι<note place="unspecified"><foreign xml:lang="grc">λείποι</foreign> M</note> θεῶν</l>
             <l n="220">ἅδε πανάγυρις, μηδ᾽ ἐπίδοιμι τάνδ᾽</l>
             <l n="221">ἀστυδρομουμέναν πόλιν καὶ στράτευμ᾽</l>
             <l n="222">ἁπτόμενον πυρὶ δαΐῳ.<note place="unspecified">fortasse <foreign xml:lang="grc">δαϊῳ</foreign> &lt;<foreign xml:lang="grc">πᾶν</foreign>&gt; Enger</note></l>
@@ -1380,8 +1380,8 @@
           <l n="818">Σκύθῃ σιδήρῳ κτημάτων παμπησίαν.</l>
           <l n="819">ἕξουσι δ᾽ ἣν λάβωσιν ἐν ταφῇ χθόνα,<note place="unspecified"><foreign xml:lang="grc">χθόνα</foreign> Brunck: <foreign xml:lang="grc">χθονός</foreign> codd.</note></l>
           <l n="820">πατρὸς κατ᾽ εὐχὰς δυσπότμους φορούμενοι.<note place="unspecified"><foreign xml:lang="grc">πορθούμενοι</foreign> Meineke</note><note place="unspecified">[820-1] hic habent codd.: [820] prorsus secludendus, [821] supra translatus</note></l>
-          <l n="821">[πόλις σέσωσται: βασιλέοιν δ᾽ ὁμοσπόροιν</l>
-          <l n="822">πέπωκεν αἷμα γαῖ᾽ ὑπ᾽ ἀλλήλων φόνῳ.]</l>
+          <l n="821">[πόλις σέσωσται: βασιλέοιν δ᾽ ὁμοσπόροιν
+          <lb/>πέπωκεν αἷμα γαῖ᾽ ὑπ᾽ ἀλλήλων φόνῳ.]</l>
           <milestone ed="p" n="822" unit="card"/>
         </sp>
       </div>
@@ -1389,9 +1389,9 @@
         <div type="textpart" subtype="anapests">
           <sp>
             <speaker>Χορος</speaker>
-            <l n="823">ὦ μεγάλε Ζεῦ καὶ πολιοῦχοι<note place="unspecified"><foreign xml:lang="grc">πολιοῦχοι</foreign> Pauw: <foreign xml:lang="grc">πολισσοῦχοι</foreign> codd.</note></l>
-            <l n="824">δαίμονες, οἳ δὴ Κάδμου πύργους<note place="unspecified"><foreign xml:lang="grc">δαίμονες οἳ δὴ</foreign> | <foreign xml:lang="grc">Κάδμου πύργους ἐρύεσθε</foreign> (<foreign xml:lang="grc">τούσδε</foreign> secluso) Heimsoeth</note></l>
-            <l n="825">τούσδε ῥύεσθε,</l>
+            <l n="822">ὦ μεγάλε Ζεῦ καὶ πολιοῦχοι<note place="unspecified"><foreign xml:lang="grc">πολιοῦχοι</foreign> Pauw: <foreign xml:lang="grc">πολισσοῦχοι</foreign> codd.</note></l>
+            <l n="823">δαίμονες, οἳ δὴ Κάδμου πύργους<note place="unspecified"><foreign xml:lang="grc">δαίμονες οἳ δὴ</foreign> | <foreign xml:lang="grc">Κάδμου πύργους ἐρύεσθε</foreign> (<foreign xml:lang="grc">τούσδε</foreign> secluso) Heimsoeth</note></l>
+            <l n="824">τούσδε ῥύεσθε,</l>
             <l n="825">πότερον χαίρω κἀπολολύξω</l>
             <l n="826">πόλεως ἀσινεῖ †σωτῆρι . .,<note place="unspecified">deest x_</note></l>
             <l n="827">ἢ τοὺς μογεροὺς καὶ δυσδαίμονας</l>
@@ -1519,8 +1519,8 @@
             <l n="906">καὶ θανάτου τέλος.</l>
             <l n="907">ἐμοιράσαντο δ᾽ ὀξυκάρδιοι</l>
             <l n="908">κτήμαθ᾽, ὥστ᾽ ἴσον λαχεῖν.</l>
-            <l n="909">διαλλακτῆρι δ᾽ οὐκ</l>
-            <l n="910">ἀμεμφεία<note place="unspecified"><foreign xml:lang="grc">ἀμεμφεία</foreign> Hermann: <foreign xml:lang="grc">ἀμεμφία</foreign> codd.</note> φίλοις,</l>
+            <l n="909">διαλλακτῆρι δ᾽ οὐκ
+            <lb/>ἀμεμφεία<note place="unspecified"><foreign xml:lang="grc">ἀμεμφεία</foreign> Hermann: <foreign xml:lang="grc">ἀμεμφία</foreign> codd.</note> φίλοις,</l>
             <l n="910">οὐδ᾽ ἐπίχαρις Ἄρης.</l>
             <milestone ed="p" n="911" unit="card"/>
           </sp>
@@ -1649,23 +1649,23 @@
         <div type="textpart" subtype="strophe" n="1">
           <sp>
             <speaker>Αντιγονη</speaker>
-            <l n="966">ἠέ.</l>
+            <l n="966a">ἠέ.</l>
           </sp>
           <sp>
             <speaker>Ισμηνη</speaker>
-            <l n="967">ἠέ.</l>
+            <l n="966b">ἠέ.</l>
           </sp>
           <sp>
             <speaker>Αντιγονη</speaker>
-            <l n="968">μαίνεται γόοισι φρήν.<note place="unspecified"><foreign xml:lang="grc">ἠέ ἠέ μαίνεται ... φρήν</foreign> M</note></l>
+            <l n="967">μαίνεται γόοισι φρήν.<note place="unspecified"><foreign xml:lang="grc">ἠέ ἠέ μαίνεται ... φρήν</foreign> M</note></l>
           </sp>
           <sp>
             <speaker>Ισμηνη</speaker>
-            <l n="969">ἐν<note place="unspecified"><foreign xml:lang="grc">ἐν</foreign> Burney: <foreign xml:lang="grc">ἐντὸς</foreign> codd.</note> δὲ καρδία στένει.</l>
+            <l n="968">ἐν<note place="unspecified"><foreign xml:lang="grc">ἐν</foreign> Burney: <foreign xml:lang="grc">ἐντὸς</foreign> codd.</note> δὲ καρδία στένει.</l>
           </sp>
           <sp>
             <speaker>Αντιγονη</speaker>
-            <l n="970">ἰὼ ἰὼ πάνδυρτε<note place="unspecified"><foreign xml:lang="grc">πάνδυρτε</foreign> Ritschl: <foreign xml:lang="grc">πανδάκρυτε</foreign> M recc.</note> σύ.</l>
+            <l n="969">ἰὼ ἰὼ πάνδυρτε<note place="unspecified"><foreign xml:lang="grc">πάνδυρτε</foreign> Ritschl: <foreign xml:lang="grc">πανδάκρυτε</foreign> M recc.</note> σύ.</l>
           </sp>
           <sp>
             <speaker>Ισμηνη</speaker>
@@ -1706,11 +1706,11 @@
         <div type="textpart" subtype="antistrophe" n="1">
           <sp>
             <speaker>Αντιγονη</speaker>
-            <l n="980">ἠέ.</l>
+            <l n="980a">ἠέ.</l>
           </sp>
           <sp>
             <speaker>Ισμηνη</speaker>
-            <l n="981">ἠέ.</l>
+            <l n="980b">ἠέ.</l>
           </sp>
           <sp>
             <speaker>Αντιγονη</speaker>

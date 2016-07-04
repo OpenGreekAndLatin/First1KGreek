@@ -7,7 +7,7 @@
         <title type="work" n="Pers.">Persians</title>
         <title type="sub">Machine readable text</title>
         <author n="Aesch.">Aeschylus</author>
-        <editor role="editor" n="Smyth">Arthur Sidgwick</editor>
+        <editor role="editor">Arthur Sidgwick</editor>
         <sponsor>Perseus Project, Tufts University</sponsor>
         <principal>Gregory Crane</principal>
         <respStmt>
@@ -39,9 +39,7 @@
     </fileDesc>
     <encodingDesc>
       <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -60,10 +58,11 @@
         In c. 2005, we had some money but not enough to do a full rekeying. We asked http://www.digitaldividedata.com/ to start with our digital version of Smyth's Aeschylus and systematically set  to turn it into Sidgwick's Oxford Classical Text edition. Doubtless they will have missed places but the text is open and we hope that people will read this edition carefully against various digital exemplars of this public domain edition and catch such slips.
      
       </change>
+      <change who="Jack Duff" when="2016-06-10">Changed XPath to use lines as organization, deleted 2 extraneous XPath, removed duplicate line numbering, corrected editor attributes, corrected URN to 002.</change>
     </revisionDesc>
   </teiHeader>
   <text>
-    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg001.opp-grc3">
+    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg002.opp-grc3">
       <pb/>
       <head>
         <foreign xml:lang="grc">Περσαι</foreign>
@@ -79,7 +78,7 @@
         </head>
         <p>Γλαῦκος ἐν τοῖς<note place="unspecified"><foreign xml:lang="grc">ἐν τοῖς</foreign>] mutatum ex <foreign xml:lang="grc">ἐν τῷ</foreign> vel <foreign xml:lang="grc">ἐν τῇ</foreign> [sc. <foreign xml:lang="grc">πραγματείᾳ</foreign>]</note> περὶ Αἰσχύλου μύθων ἐν τῶν Φοινισσῶν Φρυνίχου φησὶ τοὺς Πέρσας παραπεποιῆσθαι. ἐκτίθησι δὲ καὶ τὴν τὴν ἀρχὴν τοῦ δράματος ταύτην,
     
-    <quote><l n="1">Τάδ᾽ ἐστὶ Περσῶν τῶν πάλαι βεβηκότων.</l></quote>
+    <quote>Τάδ᾽ ἐστὶ Περσῶν τῶν πάλαι βεβηκότων.</quote>
 πλὴν ἐκεῖ εὐνοῦχός ἐστιν ἀγγέλλων ἐν ἀρχῇ τὴν Ξέρξου ἧτταν, στορνύς τε θρόνους τινὰς τοῖς τῆς ἀρχῆς παρέδροις: ἐνταῦθα δὲ προλογίζει χορὸς πρεσβυτῶν.<note place="unspecified">post <foreign xml:lang="grc">πρεσβυτῶν</foreign> in M haec sequuntur: <foreign xml:lang="grc">τῶν δὲ χορῶν</foreign> [legendum <foreign xml:lang="grc">χορικῶν</foreign>] <foreign xml:lang="grc">τὰ μέν ἐστι παροδικά, ὅτε λέγει δι᾽ ἣν αἰτίαν πάρεστιν, ὡς τὸ Τύριον οἶδμα λιποῦσαι</foreign> [Eur. Phoen. 202], <foreign xml:lang="grc">τὰ δὲ στάσιμα, ὅτε ἵσταται καὶ ἄρχεται τῆς συμφορᾶς τοῦ δράματος, τὰ δὲ κομματικά, ὅτε</foreign> [legendum <foreign xml:lang="grc">ὅ, τι</foreign>] <foreign xml:lang="grc">λοιπὸν ἐν θρήνῳ γίνεται:</foreign> quae ut alieno e loco huc illata seclusit Blomfield</note> καὶ σ̓́στιν ἡ μὲν σκηνὴ τοῦ δράματος παρὰ τῷ ράφῳ Δαρέου: ἡ δὲ ὑπόθεσις, Ξέρξης στρατευσάμενος κατὰ Ἑλλάδος: μετὰ δυνάμεως πολλῆς, ἵππον μὲν ἄμετρον ἐπαγόμενος, ναῦς δὲ χιλίας διακοσίας ἑπτά, ἢ καὶ δεκατέσσαρας:<note place="unspecified"><foreign xml:lang="grc">μετὰ ... δεκατέσσαρας</foreign> recc.: om. M</note> καὶ πεζῇ μὲν Πλαταιαῖς νικηθείς, ναυτικῇ δὲ ἐν Σαλαμῖνι, καὶ διὰ Θεσσαλίας φεύγων διεπεραιώθη<note place="unspecified"><foreign xml:lang="grc">διεπεραιώθη</foreign> secludere volt Weil: v. ad Theb. argumentum, v. 2, ubi fabulae actio participiorum usu describitur</note> ἐς τὴν Ἀσίαν.</p>
         <p>Ἐπὶ Μένωνος<note place="unspecified"><foreign xml:lang="grc">ἐπὶ Μένωνος</foreign>] i. e. Ol. 76 anno quarto, vel a. Chr. 472</note> τραγῳδῶν Αἰσχύλος ἐνίκα Φινεῖ, Πέρσαις, Γλαύκῳ Ποτνιεῖ,<note place="unspecified"><foreign xml:lang="grc">Ποτνιεῖ</foreign> recc.: om. M</note> Προμηθεῖ.<note place="unspecified"><foreign xml:lang="grc">Προμηθεῖ</foreign>] Pollux x. 64 satyricam fuisse fabulam refert, quae <foreign xml:lang="grc">Προμηθεὺς Πυρκαεύς</foreign> sit appellata</note><note place="unspecified">Dramatis Personae] in Mediceo personarum nulla mentio</note></p>
         <p>Πρώτη ἔφοδος Περσῶν ἐπὶ Δαρείου ἐδυστύχησε περὶ Μαραθῶνα, δευτέρα Ξέρξου περὶ Σαλαμίνα καὶ Πλαταιάς.</p>
@@ -97,10 +96,10 @@
         <div type="textpart" subtype="anapests">
           <sp n="*xoros">
             <speaker>Χορος</speaker>
-            <l n="2">Τάδε μὲν Περσῶν τῶν οἰχομένων</l>
-            <l n="3">Ἑλλάδ᾽ ἐς αἶαν πιστὰ καλεῖται,</l>
-            <l n="4">καὶ τῶν ἀφνεῶν καὶ πολυχρύσων</l>
-            <l n="5">ἑδράνων φύλακες, κατὰ πρεσβείαν</l>
+            <l n="1">Τάδε μὲν Περσῶν τῶν οἰχομένων</l>
+            <l n="2">Ἑλλάδ᾽ ἐς αἶαν πιστὰ καλεῖται,</l>
+            <l n="3">καὶ τῶν ἀφνεῶν καὶ πολυχρύσων</l>
+            <l n="4">ἑδράνων φύλακες, κατὰ πρεσβείαν</l>
             <l n="5">οὓς αὐτὸς ἄναξ Ξέρξης βασιλεὺς</l>
             <l n="6">Δαρειογενὴς<note place="unspecified"><foreign xml:lang="grc">Δαρειογενὴς</foreign> Fa: <foreign xml:lang="grc">δαρειογενὴς: δαρείου υἱὸς</foreign> M codd. plures</note></l>
             <l n="7">εἵλετο χώρας ἐφορεύειν.</l>
@@ -1570,7 +1569,7 @@
         </div>
         <div type="textpart" subtype="epode">
           <sp>
-            <speaker>Χορόσ???</speaker>
+            <speaker>Χορός</speaker>
             <l n="897">καὶ τὰς εὐκτεάνους<note place="unspecified"><foreign xml:lang="grc">εὐκταιάνους</foreign> M</note> κατὰ</l>
             <l n="898">κλῆρον Ἰαόνιον<note place="unspecified"><foreign xml:lang="grc">Ἰαόνιον</foreign> Hermann: <foreign xml:lang="grc">ἰόνιον</foreign> codd.</note> πολυάνδρους</l>
             <l n="900">Ἑλλάνων ἐκράτει<note place="unspecified"><foreign xml:lang="grc">ἐκράτει</foreign> Hermann: <foreign xml:lang="grc">ἐκράτυνε</foreign> codd. (-<foreign xml:lang="grc">νεν</foreign> M)</note> σφετέραις φρεσίν.</l>
@@ -1590,8 +1589,8 @@
         <div type="textpart" subtype="anapests">
           <sp>
             <speaker>Ξερξης</speaker>
-            <l n="909">ἰώ,</l>
-            <l n="910">δύστηνος ἐγὼ στυγερᾶς μοίρας</l>
+            <l n="909">ἰώ,
+            <lb/>δύστηνος ἐγὼ στυγερᾶς μοίρας</l>
             <l n="910">τῆσδε κυρήσας ἀτεκμαρτοτάτης,</l>
             <l n="911">ὡς ὠμοφρόνως δαίμων ἐνέβη</l>
             <l n="912">Περσῶν γενεᾷ: τί πάθω τλήμων;</l>
@@ -1723,8 +1722,8 @@
               <gap reason="lost"/>
             </l>
             <l n="983">τοῦ Σησάμα τοῦ Μεγαβάτα,</l>
-            <l n="984">Πάρθον τε μέγαν τ᾽ Οἰβάρην</l>
-            <l n="985">ἔλιπες ἔλιπες;</l>
+            <l n="984">Πάρθον τε μέγαν τ᾽ Οἰβάρην
+            <lb/>ἔλιπες ἔλιπες;</l>
             <l n="985">ὢ ὢ &lt;ὢ<note place="unspecified"><foreign xml:lang="grc">ὢ</foreign> add. Hermann</note>&gt; δᾴων.</l>
             <l n="986">Πέρσαις ἀγαυοῖς κακὰ πρόκακα λέγεις.</l>
             <milestone ed="p" n="988" unit="card"/>
@@ -1923,11 +1922,11 @@
           </sp>
           <sp>
             <speaker>Ξέρξης</speaker>
-            <l n="1047">βόα νυν<note place="unspecified"><foreign xml:lang="grc">νυν</foreign> Pauw: <foreign xml:lang="grc">νῦν</foreign> codd.</note> ἀντίδουπά μοι.</l>
+            <l n="1048">βόα νυν<note place="unspecified"><foreign xml:lang="grc">νυν</foreign> Pauw: <foreign xml:lang="grc">νῦν</foreign> codd.</note> ἀντίδουπά μοι.</l>
           </sp>
           <sp>
             <speaker>Χορός</speaker>
-            <l n="1048">μέλειν πάρεστι, δέσποτα.</l>
+            <l n="1049">μέλειν πάρεστι, δέσποτα.</l>
           </sp>
           <sp>
             <speaker>Ξέρξης</speaker>
@@ -2010,27 +2009,27 @@
           </sp>
           <sp>
             <speaker>Χορός</speaker>
-            <l n="1070">ἰὼ ἰώ, Περσὶς αἶα δύσβατος.</l>
+            <l n="1069">ἰὼ ἰώ, Περσὶς αἶα δύσβατος.</l>
           </sp>
           <sp>
             <speaker>Ξέρξης</speaker>
-            <l n="1071">ἰωὰ δὴ κατ᾽ ἄστυ.</l>
+            <l n="1070">ἰωὰ δὴ κατ᾽ ἄστυ.</l>
           </sp>
           <sp>
             <speaker>Χορός</speaker>
-            <l n="1072">ἰωὰ δῆτα, ναὶ ναί.</l>
+            <l n="1071">ἰωὰ δῆτα, ναὶ ναί.</l>
           </sp>
           <sp>
             <speaker>Ξέρξης</speaker>
-            <l n="1073">γοᾶσθ᾽ ἁβροβάται.</l>
+            <l n="1072">γοᾶσθ᾽ ἁβροβάται.</l>
           </sp>
           <sp>
             <speaker>Χορός</speaker>
-            <l n="1074">ἰὼ ἰώ, Περσὶς αἶα δύσβατος.</l>
+            <l n="1073">ἰὼ ἰώ, Περσὶς αἶα δύσβατος.</l>
           </sp>
           <sp>
             <speaker>Ξέρξης</speaker>
-            <l n="1075">ἰὴ ἰὴ<note place="unspecified"><foreign xml:lang="grc">ἰὴ ἰὴ</foreign> VP: <foreign xml:lang="grc">η ή η ή</foreign> M</note> τρισκάλμοισιν,<note place="unspecified">post 1076 <foreign xml:lang="grc">αἰσχύλου πέρσαι</foreign> M</note></l>
+            <l n="1074">ἰὴ ἰὴ<note place="unspecified"><foreign xml:lang="grc">ἰὴ ἰὴ</foreign> VP: <foreign xml:lang="grc">η ή η ή</foreign> M</note> τρισκάλμοισιν,<note place="unspecified">post 1076 <foreign xml:lang="grc">αἰσχύλου πέρσαι</foreign> M</note></l>
             <l n="1075">ἰὴ ἰή,<note place="unspecified"><foreign xml:lang="grc">ἰὴ ἰὴ</foreign> VP: <foreign xml:lang="grc">η ή η ή</foreign> M</note> βάρισιν ὀλόμενοι.</l>
           </sp>
           <sp>
