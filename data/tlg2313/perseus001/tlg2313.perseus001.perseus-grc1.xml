@@ -1,109 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc>
-      <titleStmt>
-	      <title>Ajax</title>
-        <author>Antisthenes</author>
-        <editor role="editor">Friedrich Blass</editor>
-      </titleStmt>
-      <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
-      <sourceDesc>
-        <biblStruct>
-          <monogr>
-            <title>ΑΙΑΣ</title>
-            <author>ΑΝΤΙΣΘΕΝΟΥΣ</author>
-            <editor role="editor">Friedrich Blass</editor>
-            <imprint>
-              <publisher>Teubner</publisher>
-              <pubPlace>Leipzig</pubPlace>
-              <date>1881</date>
-            </imprint>
-          </monogr>
-        </biblStruct>
-        
-        </sourceDesc>
-    </fileDesc><encodingDesc>
-<refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p/tei:seg[@n='$1'])"/>
-      </refsDecl>
+<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Ajax</title>
+				<author>Antisthenes</author>
+				<editor role="editor">Friedrich Blass</editor>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Trustees of Tufts University</publisher>
+				<pubPlace>Medford, MA</pubPlace>
+				<authority>Perseus Project</authority>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>ΑΙΑΣ</title>
+						<author>ΑΝΤΙΣΘΕΝΟΥΣ</author>
+						<editor role="editor">Friedrich Blass</editor>
+						<imprint>
+							<publisher>Teubner</publisher>
+							<pubPlace>Leipzig</pubPlace>
+							<date>1881</date>
+						</imprint>
+					</monogr>
+					<ref target="https://archive.org/details/antiphontisorat01antigoog">Internet Archive</ref>
+				</biblStruct>
 
-    </encodingDesc><profileDesc>
-      <langUsage>
-	<language ident="grc">Greek</language>
-      </langUsage>
-    </profileDesc>
-<revisionDesc>
-  <change who="Daniel Cline" when="2016-05-18">Added segs, updated cRefPattern, and inserted del tags for spurious text</change>
-</revisionDesc>
-</teiHeader>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern n="section" matchPattern="(.+)"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p/tei:seg[@n='$1'])"/>
+			</refsDecl>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg2313.perseus001.perseus-grc1" xml:lang="grc">
-<pb xml:id="v.3.p.175"/>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change who="Daniel Cline" when="2016-05-18">Added segs, updated cRefPattern, and inserted del
+				tags for spurious text</change>
+		</revisionDesc>
+	</teiHeader>
 
-<head>ΑΝΤΙΣΘΕΝΟΥΣ ΑΙΑΣ.</head>
-<p><seg n="1"><milestone unit="section" n="1"/>Ἐβουλόμην ἂν τοὺς αὐτοὺς ἡμῖν δικάζειν οἵπερ <pb ed="alt" n="663"/>
-καὶ ἐν τοῖς πράγμασι παρῆσαν· οἶδα γὰρ ὅτι ἐμὲ μὲν
-ἔδει σιωπᾶν, τούτῳ δ᾿ οὐδὲν ἂν ἦν πλέον <pb ed="alt" n="664"/> λέγοντι· 
+	<text>
+		<body>
+			<div type="edition" n="urn:cts:greekLit:tlg2313.perseus001.perseus-grc1" xml:lang="grc">
+				<pb n="175"/>
 
-νῦν δὲ οἱ μὲν παραγενόμενοι τοῖς ἔργοις αὐτοῖς ἄπεισιν,
-ὑμεῖς δὲ οἱ οὐδὲν εἰδότες δικάζετε. καίτοι ποία
-τις ἂν δίκη δικαστῶν μὴ εἰδότων γένοιτο, καὶ ταῦτα
-διὰ λόγων; τὸ δὲ πρᾶγμα ἐγίγνετο ἔργῳ. </seg><seg n="2"><milestone unit="section" n="2"/>Τὸ μὲν οὖν 
-σῶμα τοῦ Ἀχιλλέως ἐκόμισα ἐγὼ φέρων, τὰ δὲ ὅπλα
-ὅδε, ἐπιστάμενος ὅτι οὐ τῶν ὅπλων μᾶλλον ἐπεθύμουν
-οἱ Τρῶες ἀλλὰ τοῦ νεκροῦ κρατῆσαι. τοῦ μὲν γὰρ εἰ
-ἐκράτησαν, ᾐκίσαντό τε ἂν τὸ σῶμα καὶ τὰ λύτρα τοῦ
-Ἕκτορος ἐκομίσαντο· τὰ δὲ ὅπλα τάδε οὐκ ἂν ἀνέθεσαν</seg>
-<seg n="3"><milestone unit="section" n="3"/>τοῖς θεοῖς ἀλλ᾿ ἀπέκρυψαν, δεδιότες τόνδε τὸν 
-ἀγαθὸν ἄνδρα, ὃς καὶ πρότερον ἱεροσυλήσας αὐτῶν το
-ἄγαλμα τῆς θεοῦ νύκτωρ ὥσπερ τι καλὸν ἐργασάμενος
-ἐπεδείκνυτο τοῖς Ἀχαιοῖς. κἀγὼ μὲν ἀξιῶ λαβεῖν ἵν᾿
-ἀποδῶ τὰ ὅπλα τοῖς φίλοις, οὗτος δὲ ἵν᾿ ἀποδῶται,
-ἐπεὶ χρῆσθαί γε αὐτοῖς οὐκ ἂν τολμήσειε· δειλὸς γὰρ
-οὐδεὶς ἂν ἐπισήμοις ὅπλοις χρήσαιτο, εἰδὼς ὅτι τὴν
-δειλίαν αὐτοῦ ἐκφαίνει τὰ ὅπλα.</seg></p>
-<p><seg n="4"><milestone unit="section" n="4"/>Σχεδὸν μὲν οὖν ἐστιν ἅπαντα ὅμοια. οἵ τε γὰρ 
-<pb xml:id="v.3.p.176"/>
+				<head>ΑΝΤΙΣΘΕΝΟΥΣ ΑΙΑΣ.</head>
 
-διαθέντες τὸν ἀγῶνα φάσκοντες εἶναι βασιλεῖς περὶ
-ἀρετῆς κρίνειν ἐπέτρεψαν ἄλλοις, οἵ τε οὐδὲν εἰδότες
-δικάσειν ὑπισχνεῖσθε περὶ ὧν οὐκ ἴστε. ἐγὼ δὲ ἐπίσταμαι
-τοῦτο, ὅτι οὐδεὶς ἂν βασιλεὺς ἱκανὸς ὢν περὶ
-ἀρετῆς κρίνειν ἐπιτρέψειεν ἄλλοις μᾶλλον ἤπερ ἀγαθὸς
-ἰατρὸς διαγνῶναι νοσήματα ἄλλῳ παρείη.</seg></p>
-<p><seg n="5"><milestone unit="section" n="5"/> Καὶ εἰ μὲν ἦν μοι πρὸς ἄνδρα ὁμοιότροπον, οὐδ᾿
-ἂν ἡττᾶσθαί μοι διέφερε· νῦν δ᾿ οὐκ ἔστιν ὃ διαφέρει
-πλέον ἐμοῦ καὶ τοῦδε. ὁ μὲν γὰρ οὐκ ἔστιν ὅ τι ἂν
-δράσειε φανερῶς, ἐγὼ δὲ οὐδὲν ἂν λάθρᾳ τολμήσαιμι
-πρᾶξαι. κἀγὼ μὲν οὐκ ἂν ἀνασχοίμην κακῶς ἀκούων,
-οὐδὲ γὰρ κακῶς πάσχων, ὁ δὲ κἂν κρεμάμενος, εἰ κερδαίνειν
-τι μέλλοι· </seg><seg n="6"><milestone unit="section" n="6"/>ὅστις γε μαστιγοῦν παρεῖχε τοῖς
-δούλοις καὶ τύπτειν ξύλοις τὰ νῶτα καὶ πυγμαῖς τὸ
-πρόσωπον, κἄπειτα περιβαλόμενος ῥάκη, τῆς νυκτὸς
-εἰς τὸ τεῖχος εἰσδὺς τῶν πολεμίων, ἱεροσυλήσας ἀπῆλθε.
+				<div type="textpart" subtype="section" n="1">
+					<p><milestone unit="section" n="1"/>Ἐβουλόμην ἂν τοὺς αὐτοὺς ἡμῖν δικάζειν οἵπερ <pb
+							ed="alt" n="663"/> καὶ ἐν τοῖς πράγμασι παρῆσαν· οἶδα γὰρ ὅτι ἐμὲ μὲν ἔδει σιωπᾶν,
+						τούτῳ δ᾿ οὐδὲν ἂν ἦν πλέον <pb ed="alt" n="664"/> λέγοντι· νῦν δὲ οἱ μὲν παραγενόμενοι
+						τοῖς ἔργοις αὐτοῖς ἄπεισιν, ὑμεῖς δὲ οἱ οὐδὲν εἰδότες δικάζετε. καίτοι ποία τις ἂν δίκη
+						δικαστῶν μὴ εἰδότων γένοιτο, καὶ ταῦτα διὰ λόγων; τὸ δὲ πρᾶγμα ἐγίγνετο ἔργῳ. </p>
+				</div>
+				<div type="textpart" subtype="section" n="2">
+					<p><milestone unit="section" n="2"/>Τὸ μὲν οὖν σῶμα τοῦ Ἀχιλλέως ἐκόμισα ἐγὼ φέρων, τὰ δὲ
+						ὅπλα ὅδε, ἐπιστάμενος ὅτι οὐ τῶν ὅπλων μᾶλλον ἐπεθύμουν οἱ Τρῶες ἀλλὰ τοῦ νεκροῦ
+						κρατῆσαι. τοῦ μὲν γὰρ εἰ ἐκράτησαν, ᾐκίσαντό τε ἂν τὸ σῶμα καὶ τὰ λύτρα τοῦ Ἕκτορος
+						ἐκομίσαντο· τὰ δὲ ὅπλα τάδε οὐκ ἂν ἀνέθεσαν</p>
+				</div>
+				<div type="textpart" subtype="section" n="3">
+					<p><milestone unit="section" n="3"/>τοῖς θεοῖς ἀλλ᾿ ἀπέκρυψαν, δεδιότες τόνδε τὸν ἀγαθὸν
+						ἄνδρα, ὃς καὶ πρότερον ἱεροσυλήσας αὐτῶν το ἄγαλμα τῆς θεοῦ νύκτωρ ὥσπερ τι καλὸν
+						ἐργασάμενος ἐπεδείκνυτο τοῖς Ἀχαιοῖς. κἀγὼ μὲν ἀξιῶ λαβεῖν ἵν᾿ ἀποδῶ τὰ ὅπλα τοῖς
+						φίλοις, οὗτος δὲ ἵν᾿ ἀποδῶται, ἐπεὶ χρῆσθαί γε αὐτοῖς οὐκ ἂν τολμήσειε· δειλὸς γὰρ
+						οὐδεὶς ἂν ἐπισήμοις ὅπλοις χρήσαιτο, εἰδὼς ὅτι τὴν δειλίαν αὐτοῦ ἐκφαίνει τὰ ὅπλα.</p>
+				</div>
 
-καὶ ταῦτα ὁμολογήσει ποιεῖν, ἴσως δὲ καὶ πείσει λέγων
-ὡς καλῶς πέπρακται. ἔπειτα τῶν Ἀχιλλέως ὅπλων ὅδε
-ὁ μαστιγίας καὶ ἱερόσυλος ἀξιοῖ κρατῆσαι;</seg></p>
-<p><seg n="7"><milestone unit="section" n="7"/> Ἐγὼ μὲν οὖν ὑμῖν λέγω τοῖς οὐδὲν εἰδόσι κριταῖς
-καὶ δικασταῖς, μὴ εἰς τοὺς λόγους σκοπεῖν περὶ ἀρετῆς
-κρίνοντας, ἀλλ᾿ εἰς τὰ ἔργα μᾶλλον. καὶ γὰρ ὁ πόλεμος
-οὐ λόγῳ κρίνεται ἀλλ᾿ ἔργῳ· οὐδ᾿ ἀντιλέγειν ἔξεστι
-<pb xml:id="v.3.p.177"/>
 
-πρὸς τοὺς πολεμίους, ἀλλ᾿ ἢ μαχομένους <add>δεῖ</add> κρατεῖν
-ἢ δουλεύειν σιωπῇ. πρὸς ταῦτα ἀθρεῖτε καὶ σκοπεῖτε·
+				<div type="textpart" subtype="section" n="4">
+					<p><milestone unit="section" n="4"/>Σχεδὸν μὲν οὖν ἐστιν ἅπαντα ὅμοια. οἵ τε γὰρ <pb n="176"/> διαθέντες τὸν ἀγῶνα φάσκοντες εἶναι βασιλεῖς περὶ ἀρετῆς κρίνειν
+						ἐπέτρεψαν ἄλλοις, οἵ τε οὐδὲν εἰδότες δικάσειν ὑπισχνεῖσθε περὶ ὧν οὐκ ἴστε. ἐγὼ δὲ
+						ἐπίσταμαι τοῦτο, ὅτι οὐδεὶς ἂν βασιλεὺς ἱκανὸς ὢν περὶ ἀρετῆς κρίνειν ἐπιτρέψειεν ἄλλοις
+						μᾶλλον ἤπερ ἀγαθὸς ἰατρὸς διαγνῶναι νοσήματα ἄλλῳ παρείη.</p>
+				</div>
 
-ὡς, εἰ μὴ δικάσετε καλῶς, γνώσεσθε ὅτι οὐδεμίαν ἔχει</seg>
-<seg n="8"><milestone unit="section" n="8"/>λόγος πρὸς ἔργον ἰσχύν, οὐδ᾿ ἔστιν ὑμᾶς ὅ τι λέγων 
-ἁνὴρ ὠφελήσει, εἴσεσθε δὲ ἀκριβῶς ὅτι δι᾿ ἀπορίαν
-ἔργων πολλοὶ καὶ μακροὶ λόγοι <pb ed="alt" n="665"/> λέγονται. ἀλλ᾿ ἢ 
-λέγετε ὅτι οὐ ξυνίετε τὰ λεγόμενα, καὶ ἀνίστασθε, ἢ
-δικάζετε ὀρθῶς. καὶ ταῦτα μὴ κρύβδην φέρετε, ἀλλὰ
-φανερῶς, ἵνα γνῶτε ὅτι καὶ αὐτοῖς τοῖς δικάζουσι δοτέα
-δίκη ἐστίν, ἂν μὴ δικάσωσιν ὀρθῶς. κἄπειτ᾿ ἴσως
-γνώσεσθε ὅτι οὐ κριταὶ τῶν λεγομένων ἀλλὰ δοξασταὶ
-κάθησθε. </seg><seg n="9"><milestone unit="section" n="9"/>ἐγὼ δὲ διαγιγνώσκειν μὲν ὑμῖν περὶ ἐμοῦ 
-καὶ τῶν ἐμῶν ἐπιτρέπω, διαδοξάζειν δὲ ἅπασιν ἀπαγορεύω,
-καὶ ταῦτα περὶ ἀνδρὸς ὃς οὐχ ἑκὼν ἀλλ᾿ ἄκων
-ἀφῖκται εἰς Τροίαν, καὶ περὶ ἐμοῦ ὃς πρῶτος ἀεὶ καὶ
-μόνος <del>καὶ</del> ἄνευ τείχους τέταγμαι.</seg></p>
-</div></body></text></TEI>
+
+				<div type="textpart" subtype="section" n="5">
+					<p><milestone unit="section" n="5"/> Καὶ εἰ μὲν ἦν μοι πρὸς ἄνδρα ὁμοιότροπον, οὐδ᾿ ἂν
+						ἡττᾶσθαί μοι διέφερε· νῦν δ᾿ οὐκ ἔστιν ὃ διαφέρει πλέον ἐμοῦ καὶ τοῦδε. ὁ μὲν γὰρ οὐκ
+						ἔστιν ὅ τι ἂν δράσειε φανερῶς, ἐγὼ δὲ οὐδὲν ἂν λάθρᾳ τολμήσαιμι πρᾶξαι. κἀγὼ μὲν οὐκ ἂν
+						ἀνασχοίμην κακῶς ἀκούων, οὐδὲ γὰρ κακῶς πάσχων, ὁ δὲ κἂν κρεμάμενος, εἰ κερδαίνειν τι
+						μέλλοι· </p>
+				</div>
+				<div type="textpart" subtype="section" n="6">
+					<p><milestone unit="section" n="6"/>ὅστις γε μαστιγοῦν παρεῖχε τοῖς δούλοις καὶ τύπτειν
+						ξύλοις τὰ νῶτα καὶ πυγμαῖς τὸ πρόσωπον, κἄπειτα περιβαλόμενος ῥάκη, τῆς νυκτὸς εἰς τὸ
+						τεῖχος εἰσδὺς τῶν πολεμίων, ἱεροσυλήσας ἀπῆλθε. καὶ ταῦτα ὁμολογήσει ποιεῖν, ἴσως δὲ καὶ
+						πείσει λέγων ὡς καλῶς πέπρακται. ἔπειτα τῶν Ἀχιλλέως ὅπλων ὅδε ὁ μαστιγίας καὶ ἱερόσυλος
+						ἀξιοῖ κρατῆσαι;</p>
+				</div>
+
+
+				<div type="textpart" subtype="section" n="7">
+					<p><milestone unit="section" n="7"/> Ἐγὼ μὲν οὖν ὑμῖν λέγω τοῖς οὐδὲν εἰδόσι κριταῖς καὶ
+						δικασταῖς, μὴ εἰς τοὺς λόγους σκοπεῖν περὶ ἀρετῆς κρίνοντας, ἀλλ᾿ εἰς τὰ ἔργα μᾶλλον.
+						καὶ γὰρ ὁ πόλεμος οὐ λόγῳ κρίνεται ἀλλ᾿ ἔργῳ· οὐδ᾿ ἀντιλέγειν ἔξεστι <pb n="177"/> πρὸς τοὺς πολεμίους, ἀλλ᾿ ἢ μαχομένους <add>δεῖ</add> κρατεῖν ἢ
+						δουλεύειν σιωπῇ. πρὸς ταῦτα ἀθρεῖτε καὶ σκοπεῖτε· ὡς, εἰ μὴ δικάσετε καλῶς, γνώσεσθε ὅτι
+						οὐδεμίαν ἔχει</p>
+				</div>
+				<div type="textpart" subtype="section" n="8">
+					<p><milestone unit="section" n="8"/>λόγος πρὸς ἔργον ἰσχύν, οὐδ᾿ ἔστιν ὑμᾶς ὅ τι λέγων
+						ἁνὴρ ὠφελήσει, εἴσεσθε δὲ ἀκριβῶς ὅτι δι᾿ ἀπορίαν ἔργων πολλοὶ καὶ μακροὶ λόγοι <pb
+							ed="alt" n="665"/> λέγονται. ἀλλ᾿ ἢ λέγετε ὅτι οὐ ξυνίετε τὰ λεγόμενα, καὶ ἀνίστασθε,
+						ἢ δικάζετε ὀρθῶς. καὶ ταῦτα μὴ κρύβδην φέρετε, ἀλλὰ φανερῶς, ἵνα γνῶτε ὅτι καὶ αὐτοῖς
+						τοῖς δικάζουσι δοτέα δίκη ἐστίν, ἂν μὴ δικάσωσιν ὀρθῶς. κἄπειτ᾿ ἴσως γνώσεσθε ὅτι οὐ
+						κριταὶ τῶν λεγομένων ἀλλὰ δοξασταὶ κάθησθε. </p>
+				</div>
+				<div type="textpart" subtype="section" n="9">
+					<p><milestone unit="section" n="9"/>ἐγὼ δὲ διαγιγνώσκειν μὲν ὑμῖν περὶ ἐμοῦ καὶ τῶν ἐμῶν
+						ἐπιτρέπω, διαδοξάζειν δὲ ἅπασιν ἀπαγορεύω, καὶ ταῦτα περὶ ἀνδρὸς ὃς οὐχ ἑκὼν ἀλλ᾿ ἄκων
+						ἀφῖκται εἰς Τροίαν, καὶ περὶ ἐμοῦ ὃς πρῶτος ἀεὶ καὶ μόνος <del>καὶ</del> ἄνευ τείχους
+						τέταγμαι.</p>
+				</div>
+
+			</div>
+		</body>
+	</text>
+</TEI>
