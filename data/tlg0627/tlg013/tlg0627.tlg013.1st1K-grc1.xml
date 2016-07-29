@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+<titleStmt>
+<title>Iusiurandum</title>
+        <author>Hippocrates</author>
+        <editor>Émile Littré</editor>
+        <funder>Andrew W. Mellon Foundation</funder>
+      <respStmt>
+<persName xml:id="DDD">Digital Divide Data</persName>
+<resp>Keyboarding</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+<idno type="filename">tlg0627.tlg013.1st1K-grc1.xml</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2016</date>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+          <monogr>
+            <title>Oeuvres complètes d'Hippocrate</title>
+            <author>Hippocrates</author>
+            <editor>Émile Littré</editor>
+            <imprint>
+              <publisher>Baillière</publisher>
+              <pubPlace>Paris</pubPlace>
+              <biblScope unit="vol">4</biblScope>
+              <biblScope unit="pp" from="628" to="632">628-632</biblScope>
+              <date>1844</date>
+            </imprint>
+          </monogr>
+        </biblStruct>    
+        </sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>  <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+).(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern matchPattern="(\w+).(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(\w+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+        <language ident="la">Latin</language>
+        <language ident="greek">Greek</language>
+      </langUsage>
+    </profileDesc>
+</teiHeader>
+<text>
+<body>
+
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg013.1st1K-grc1">
+<pb n="628"/>
+
+<milestone unit="ed1page" n="628"/>
+<head>ΟΡΚΟΣ.</head>
+<p>Ὄμνυμι Ἀπόλλωνα ἰητρὸν, καὶ Ἀσκληπιὸν, καὶ Ὑγείαν, καὶ
+<lb/>Πανάκειαν, καὶ θεοὺς πάντας τε καὶ πάσας, ἵστορας ποιεύμενος,
+<lb/>ἐπιτελέα ποιήσειν κατὰ δύναμιν καὶ κρίσιν ἐμὴν ὅρκον τόνδε καὶ
+<lb/>ξυγγραφὴν τήνδε· ἡγήσασθαι μὲν τὸν διδάξαντά με τὴν τέχνην
+<lb/>ταύτην ἴσα γενέτῃσιν ἐμοῖσι, καὶ βίου κοινώσασθαι, καὶ χρεῶν
+<lb/>χρηΐζοντι μετάδοσιν ποιήσασθαι, καὶ γένος τὸ ἐξ ωὐτέου ἀδελφοῖς
+
+<pb n="630"/>
+
+<milestone unit="ed1page" n="630"/>
+ἴσον ἐπικρινέειν ἄῤῥεσι, καὶ διδάξειν τὴν τέχνην ταύτην, ἢν χρηΐζωσι
+<lb/>μανθάνειν, ἄνευ μισθοῦ καὶ ξυγγραφῆς, παραγγελίης τε καὶ
+<lb/>ἀκροήσιος καὶ τῆς λοιπῆς ἁπάσης μαθήσιος μετάδοσιν ποιήσασθαι
+<lb/>υἱοῖσί τε ἐμοῖσι, καὶ τοῖσι τοῦ ἐμὲ διδάξαντος, καὶ μαθηταῖσι
+<lb/>συγγεγραμμένοισί τε καὶ ὡρκισμένοις νόμῳ ἰητρικῷ, ἄλλῳ δὲ
+<lb/>οὐδενί. Διαιτήμασί τε χρήσομαι ἐπ᾿ ὠφελείῃ καμνόντων κατὰ δύναμιν
+<lb/>καὶ κρίσιν ἐμὴν, ἐπὶ δηλήσει δὲ καὶ ἀδικίῃ εἴρξειν. Οὐ
+<lb/>δώσω δὲ οὐδὲ φάρμακον οὐδενὶ αἰτηθεὶς θανάσιμον, οὐδὲ ὑφηγήσομαι
+<lb/>ξυμβουλίην τοιήνδε· ὁμοίως δὲ οὐδὲ γυναικὶ πεσσὸν φθόριον
+<lb/>δώσω. Ἁγνῶς δὲ καὶ ὁσίως διατηρήσω βίον τὸν ἐμὸν καὶ τέχνην
+<lb/>τὴν ἐμήν. Οὐ τεμέω δὲ οὐδὲ μὴν λιθιῶντας, ἐκχωρήσω δὲ ἐργάτῃσιν
+<lb/>ἀνδράσι πρήξιος τῆσδε. Ἐς οἰκίας δὲ ὁκόσας ἂν ἐσίω, ἐσελεύσομαι
+<lb/>ἐπ᾿ ὠφελείῃ καμνόντων, ἐκτὸς ἐὼν πάσης ἀδικίης ἑκουσίης
+<lb/>καὶ φθορίης, τῆς τε ἄλλης καὶ ἀφροδισίων ἔργων ἐπί τε γυναικείων
+<lb/>σωμάτων καὶ ἀνδρῴων, ἐλευθέρων τε καὶ δούλων. Ἃ δ᾿ ἂν ἐν
+<lb/>θεραπείῃ ἢ ἴδω, ἢ ἀκούσω, ἢ καὶ ἄνευ θεραπηΐης κατὰ βίον ἀνθρώπων,
+<lb/>ἃ μὴ χρή ποτε ἐκλαλέεσθαι ἔξω, σιγήσομαι, ἄῤῥητα ἡγεύμενος
+
+<pb n="632"/>
+
+<milestone unit="ed1page" n="632"/>
+εἶναι τὰ τοιαῦτα. Ὅρκον μὲν οὖν μοι τόνδε ἐπιτελέα ποιέοντι,
+<lb/>καὶ μὴ ξυγχέοντι, εἴη ἐπαύρασθαι καὶ βίου καὶ τέχνης δοξαζομένῳ
+<lb/>παρὰ πᾶσιν ἀνθρώποις ἐς τὸν αἰεὶ χρόνον· παραβαίνοντι δὲ καὶ
+<lb/>ἐπιορκοῦντι, τἀναντία τουτέων.
+</p>
+</div>
+</body>
+</text>
+</TEI>
