@@ -3,30 +3,49 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
-            <titleStmt>
-                <title>Catenae Graecorum Patrum in Novum Testamentum</title>
+            <titleStmt><title>Catenae Graecorum Patrum in Novum Testamentum</title>
                 <sponsor>University of Leipzig</sponsor>
                 <funder>European Social Fund Saxony</funder>
                 <principal>Gregory Crane</principal>
                 <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Corrected and encoded hOCR output</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Greta Franzini</persName>
-                    <resp>Project Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Frederik Baumgardt</persName>
-                    <resp>Technical Manager (University of Leipzig)</resp>
-                </respStmt>
-                <respStmt>
-                    <persName>Bruce Robertson</persName>
-                    <resp>OCR'd the text (Mount Allison University)</resp>
-                </respStmt>
-            </titleStmt>
-
-            <publicationStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
                 <authority>University of Leipzig</authority>
                 <idno type="filename">catenae_2.xml</idno>
                 <availability>
@@ -57,8 +76,7 @@
                             </imprint>
                             <biblScope>Volume 2</biblScope>
                         </monogr>
-                        <ref target="https://archive.org/details/catenaegraecorum02cramuoft"
-                            >Internet Archive</ref>
+                        <ref target="https://archive.org/details/catenaegraecorum02cramuoft">Internet Archive</ref>
                     </biblStruct>
                 </listBibl>
             </sourceDesc>
@@ -68,13 +86,9 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
             <refsDecl n="CTS">
-                <cRefPattern n="line" matchPattern="(.+).(.+).(.+)" 
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-                <cRefPattern n="page" matchPattern="(.+).(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern n="section" matchPattern="(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"
-                />
+                <cRefPattern n="line" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+                <cRefPattern n="page" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
 
@@ -208,8 +222,7 @@
                             <p>7, 1. τοῦ Θεοῦ Ἐκκλ. cum Edd.</p>
                         </div>
                         <div type="textpart" subtype="line" n="3">
-                            <p>7, 3. γέγονεν καὶ τελείᾳ καταλήψει παρακ. τοῖς ἔργοις. πραγμάτων<lb
-                                    n="5"/> δέ φησιν, ἐπειδὴ οὐ κατὰ φαντασίαν κατὰ τοὺς αἱρετικῶν
+                            <p>7, 3. γέγονεν καὶ τελείᾳ καταλήψει παρακ. τοῖς ἔργοις. πραγμάτων<lb n="5"/> δέ φησιν, ἐπειδὴ οὐ κατὰ φαντασίαν κατὰ τοὺς αἱρετικῶν
                                 παῖδας ἐθαυματούργησεν ὁ Κύριος Ἰησοῦς τὴν ἔνσαρκον αὐτοῦ παρουσίαν,
                                 ἀλλὰ τυγχάνων ἀληθεία ἀληθῶς ἐνήργησε τὰ πράγματα. “ οἱ ἀπαρχῆς” δὲ
                                 εἶπεν, ἵνα τὸ ἀξιόπιστον τῆς συγγραφῆ, ἑαυτῷ πραγματεύσηται. οὐδὲ
@@ -222,8 +235,7 @@
                                 διδασκαλικὸν λόγον ὃν παρεδίδου ὁ Σωτῆρ’, εἴτε καὶ αὐτὸν τὸν Θεὸν
                                 Λόγον. διὰ δὲ τοῦ “ παρέδοσαν” τὸ ἄφθονον ἐκείνων κηρύττει, ὅτι
                                 δωρεὰν λαβόντες, δωρεὰν ἔδωκαν καὶ ἡμῖν.</p>
-                            <p>Τὸ δὲ “ ἔδοξε κάμοι παρηκολουθηκότι ἄνωθεν” δηλοῖ ὡσανεὶ ὅτι <lb
-                                    n="20"/> λέγει, ὅτι τάχα ἃν καὶ κινδυνεύσαιμι, εἰ παρηκολουθηκὼς
+                            <p>Τὸ δὲ “ ἔδοξε κάμοι παρηκολουθηκότι ἄνωθεν” δηλοῖ ὡσανεὶ ὅτι <lb n="20"/> λέγει, ὅτι τάχα ἃν καὶ κινδυνεύσαιμι, εἰ παρηκολουθηκὼς
                                 πᾶσιν ἀκριβῶς ἔμελλον σιωπῇ παραδιδόναι τηλικαῦτα πράγματα· γράφω δὲ
                                 οὐ ψιλὴν ἀκοήν φησιν παραλαβὼν, ἀλλὰ ἀκριβῶς παρηκολουθηκὼς ἄνωθεν
                                 πᾶσιν. ἐπαινεῖ δὲ τὸν μακάριον Λοῦκαν καὶ ὁ Ἀπόστολος λέγων, “ οὗ ὁ
@@ -443,8 +455,7 @@
                             <p>21, 3. ἀγγελικὴν στρατείαν.</p>
                         </div>
                         <div type="textpart" subtype="line" n="14">
-                            <p>21, 14. καρδίᾳ, τουτέστιν τοῦτο ἐκείνῳ συγκρίνουσα, ἐκεῖνο <lb n="15"
-                                /> τούτῳ· εὕρισκεν δὲ συγκρίνουσα τὰ ῥήματα.</p>
+                            <p>21, 14. καρδίᾳ, τουτέστιν τοῦτο ἐκείνῳ συγκρίνουσα, ἐκεῖνο <lb n="15"/> τούτῳ· εὕρισκεν δὲ συγκρίνουσα τὰ ῥήματα.</p>
                         </div>
                     </div>
                     <div type="textpart" subtype="page" n="22">
@@ -666,8 +677,7 @@
                             <p>προσήκοντος δὲ ὁ μέν.</p>
                         </div>
                         <div type="textpart" subtype="line" n="5">
-                            <p>32, 5. τῶν πατέρων εἰς τὸν Δαβὶδ καὶ εἰς τὸν Ἰοῦδαν τὸ γένος <lb
-                                    n="30"/> ἄνεισιν. ἐπειδὴ γὰρ Ἰουδαῖοι μὲν τὸν κατὰ νόμον πατέρα
+                            <p>32, 5. τῶν πατέρων εἰς τὸν Δαβὶδ καὶ εἰς τὸν Ἰοῦδαν τὸ γένος <lb n="30"/> ἄνεισιν. ἐπειδὴ γὰρ Ἰουδαῖοι μὲν τὸν κατὰ νόμον πατέρα
                                 ἐπίστανται, ὡς πειθόμενοι τῷ νόμῳ τὸν κατὰ φύσιν γινώσκουσιν εἶναι
                                 πατέρα, ἔδειξαν οἱ θεσπέσιοι Εὐαγγελισταὶ ὅτι ἐξ ἐμφοτ. τ. πατ.</p>
                         </div>
@@ -943,8 +953,7 @@
                     <div type="textpart" subtype="page" n="82">
                         <div type="textpart" subtype="line" n="3">
                             <p>82, 3. ἐθέλοντας τῷ Θ. οὐχ ἁπλῶς δὲ ἀνέδειξεν ὁ Κύριος καὶ ἑτέρους
-                                ἑβδομήκοντα, καὶ ἀπέστειλεν αὐτοὺς ἀνὰ δύο δύο πρὸ προσώπον <lb
-                                    n="10"/> ὤπου αὐτοῦ εἰς πᾶσαν πόλιν καὶ τόπον οὗ αὐτὸς ἔμελλεν
+                                ἑβδομήκοντα, καὶ ἀπέστειλεν αὐτοὺς ἀνὰ δύο δύο πρὸ προσώπον <lb n="10"/> ὤπου αὐτοῦ εἰς πᾶσαν πόλιν καὶ τόπον οὗ αὐτὸς ἔμελλεν
                                 ἔρχεσθαι. ἀλλ’ ἐπείδη κ. τ. λ. ut in Sch. quod Cyrillo trib. Nost.
                                 p. 82,24</p>
                         </div>
@@ -1141,8 +1150,7 @@
                             <p>10. μήτε κατὰ φιλ.</p>
                         </div>
                         <div type="textpart" subtype="line" n="12">
-                            <p>106, 12. χαλεπωτάτας αἰκίας ὑπέμειναν. παρὰ τὰς διατεταγμένας <lb
-                                    n="10"/> ἐν τ. Μ. νόμῳ θυσίας ἀφερ.</p>
+                            <p>106, 12. χαλεπωτάτας αἰκίας ὑπέμειναν. παρὰ τὰς διατεταγμένας <lb n="10"/> ἐν τ. Μ. νόμῳ θυσίας ἀφερ.</p>
                         </div>
                         <div type="textpart" subtype="line" n="24">
                             <p>106, 24. κιν. τῶ λαὼ.</p>
@@ -1159,8 +1167,7 @@
                             <p>107, 8. καταστρέψας ἐθανατ.</p>
                         </div>
                         <div type="textpart" subtype="line" n="10">
-                            <p>107, 10. τ. Ἱέρ’. φύλλα μόνον μικρὰ ποιοῦσαν καὶ ἀνθηρὰ τῷ <lb n="15"
-                                /> φαίνεσθαι, καρπὸν δὲ μὴ παρέχουσαν· τρίτον δὲ λέγει ἐληλυθέναι δ.
+                            <p>107, 10. τ. Ἱέρ’. φύλλα μόνον μικρὰ ποιοῦσαν καὶ ἀνθηρὰ τῷ <lb n="15"/> φαίνεσθαι, καρπὸν δὲ μὴ παρέχουσαν· τρίτον δὲ λέγει ἐληλυθέναι δ.
                                 M.</p>
                         </div>
                         <div type="textpart" subtype="line" n="14">
@@ -1327,8 +1334,7 @@
                     </div>
                     <div type="textpart" subtype="page" n="118">
                         <div type="textpart" subtype="line" n="3">
-                            <p>118, 3. ἀπεδ. ποῦ, οὐκ ἀπὸ τόπου εἰς τόπον, ἀλλὰ τῇ διανοίᾳ <lb
-                                    n="15"/> ἀπέστη ἀπὸ Θεοῦ, καὶ ἀπ’. ὁ Θ. 17. ἐγκαλινδούμενος.</p>
+                            <p>118, 3. ἀπεδ. ποῦ, οὐκ ἀπὸ τόπου εἰς τόπον, ἀλλὰ τῇ διανοίᾳ <lb n="15"/> ἀπέστη ἀπὸ Θεοῦ, καὶ ἀπ’. ὁ Θ. 17. ἐγκαλινδούμενος.</p>
                         </div>
                     </div>
                     <div type="textpart" subtype="page" n="119">
@@ -1773,8 +1779,7 @@
                     </div>
                     <div type="textpart" subtype="page" n="168">
                         <div type="textpart" subtype="line" n="5">
-                            <p>168, 5. πιστεύσαντα εἰς τὸν παράδεισον ἀπεκαθέστησεν. καὶ <lb n="20"
-                                /> τότε κατῆλθεν εἰς τὸν ᾅδην.</p>
+                            <p>168, 5. πιστεύσαντα εἰς τὸν παράδεισον ἀπεκαθέστησεν. καὶ <lb n="20"/> τότε κατῆλθεν εἰς τὸν ᾅδην.</p>
                             <p>Πρὸς δὲ τοὺς λέγοντας, πῶς ὁ λῃστὴς εἰσῆλθεν εἰς τὸν παράδεισον, τοῦ
                                 Ἀποστόλου εἰπόντος ὅτι οὐκ ἐκομίσαντο οἱ ἅγιοι τὰς ἐπαγγελίας ; ὁ
                                 Χρυσόστομός φησιν· τί γὰρ εἰ καὶ εἰσῆλθεν εἰς τὸν παράδεισον ὁ
