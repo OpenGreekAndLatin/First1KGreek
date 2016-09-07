@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -7,6 +7,27 @@
             <title>Epistula ad Diognetum</title>
             <author>Pseudo-Justinus Martyr</author>
             <editor>Kirsopp Lake</editor>
+            <funder>A Google Digital Humanities Award</funder>
+            <respStmt>
+               <persName>Gregory R. Crane</persName>
+               <resp>Editor-in-Chief, Perseus Digital Library</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Matt Munson</persName>
+               <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annette Gessner</persName>
+               <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Thibault Clérice</persName>
+               <resp>Lead Developer (University of Leipzig)</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Bruce Robertson</persName>
+               <resp>Technical Advisor</resp>
+            </respStmt>
          </titleStmt>
          <publicationStmt>
             <publisher>Trustees of Tufts University</publisher>
@@ -31,15 +52,22 @@
             </biblStruct>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>  <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+            <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+         </refsDecl>
+      </encodingDesc>
       <profileDesc>
          <langUsage>
-            <language ident="la">Latin</language>
-            <language ident="greek">Greek</language>
+            <language ident="lat">Latin</language>
+            <language ident="grc">Greek</language>
          </langUsage>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
+         <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0646.tlg004.1st1K-grc1.xml">
          <pb xml:id="p.350"/>
          <head>ΕΠΙΣΤΟΛΗ ΠΡΟΣ ΔΙΟΓΝΗΤΟΝ</head>
          <div type="textpart" subtype="chapter" n="1">
@@ -847,6 +875,7 @@
 
 </p>
             </div>
+         </div>
          </div>
       </body>
    </text>
