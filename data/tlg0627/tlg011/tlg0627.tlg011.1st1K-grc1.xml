@@ -3,17 +3,43 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
-            <titleStmt>
-                <title>Vectiarius</title>
+            <titleStmt><title>Vectiarius</title>
                 <author>Hippocrates</author>
                 <editor>Émile Littré</editor>
                 <funder>Andrew W. Mellon Foundation</funder>
                 <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Keyboarding</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+          <persName>Mark Schiefsky, Harvard University</persName>
+          <persName>Gregory R. Crane, Universität Leipzig</persName>
+          <persName>Uwe Vagelpohl, University of Warwick</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <orgName xml:id="DDD">Digital Divide Data</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+          <persName>Gregory R. Crane</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+          <persName>Matt Munson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+          <persName>Annette Geßner</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer (University of Leipzig)</resp>
+          <persName>Thibault Clérice</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Technical Advisor</resp>
+          <persName>Bruce Robertson</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
                 <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
                 <publisher>University of Leipzig</publisher>
@@ -48,9 +74,7 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
             <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
@@ -542,8 +566,7 @@
                         θέναρι ἐπί τινος· ὥστε κατὰ μὲν τὸ <lb/>ἐξέχον ὑποκέεσθαι ὄγκον σύμμετρον
                         μαλθακόν· κατὰ δὲ τὸ ἕτερον <lb/>μὴ στορέσαντα χρὴ ὠθέειν ὀπίσω καὶ κάτω, ἤν
                         τε ἔσω, ἤν τε <lb/>ἔξω ἐκπεπτώκῃ· τὰ δ᾿ ἐκ πλαγίων, τὰ μὲν ἀπωθέειν, τὰ δὲ
-                        ἀντωθέειν <lb/>ὀπίσω ἀμφότερα κατὰ τὸ ἕτερον. Τὰ δὲ ὑβώματα, τὰ μὲν <pb
-                            n="384"/> ἔσω οὔτε πταρμῷ, οὕτε βηχὶ, οὔτε φύσης ἐνέσει, οὔτε σικύῃ· εἰ
+                        ἀντωθέειν <lb/>ὀπίσω ἀμφότερα κατὰ τὸ ἕτερον. Τὰ δὲ ὑβώματα, τὰ μὲν <pb n="384"/> ἔσω οὔτε πταρμῷ, οὕτε βηχὶ, οὔτε φύσης ἐνέσει, οὔτε σικύῃ· εἰ
                         <lb/>δέ τι, ἡ κατάτασις. Ἡ δὲ ἀπάτη, ὅτι οἴονταί ποτε καταγέντων
                         <lb/>σπονδύλων, καὶ τὰ λορδώματα διὰ τὴν ὀδύνην δοκέει ἔσω ὠλισθηκέναι·
                         <lb/>ταῦτα δὲ ταχύφυα καὶ ῥᾴδια. Τὰ δὲ ἔξω, κατάσεισις, τὰ <lb/>μὲν ἄνω ἐπὶ
@@ -557,8 +580,7 @@
                         καὶ <lb/>μηρὸν, τὰ μεταξὺ, τῆς ἀρχῆς τὸ μὲν ἐπὶ τὸ στῆθος, τὸ δ᾿ ἐπὶ νῶτον
                         <lb/>τείνοντα, ταῦτα δ᾿ ἐς τὸ αὐτὸ ἅπαντα τείνοντα, προσδεθέντα ἢ πρὸς
                         <lb/>ὑπεροειδέα, ἢ πρὸς ὄνον. Ἐπὶ μὲν οὖν κλίνης ποιέοντι, τοῦτο μὲν
-                        <lb/>τῶν ποδῶν πρὸς οὐδὸν χρὴ ἐρεῖσαι, πρὸς δὲ τὸ ἕτερον, ξύλον <pb n="386"
-                        /> ἰσχυρὸν πλάγιον παραβεβλῆσθαι, τὰ δὲ ὔπερθεν ὑπεροειδέα πρὸς ταῦτα
+                        <lb/>τῶν ποδῶν πρὸς οὐδὸν χρὴ ἐρεῖσαι, πρὸς δὲ τὸ ἕτερον, ξύλον <pb n="386"/> ἰσχυρὸν πλάγιον παραβεβλῆσθαι, τὰ δὲ ὔπερθεν ὑπεροειδέα πρὸς ταῦτα
                         <lb/>ἀντιστηρίζοντα διατείνειν, ἢ πλήμνας κατορύξαντα, ἢ κλίμακα διαθέντα,
                         <lb/>ἀμφωτέρωθεν ὠθέειν. Τὸ δὲ κοινὸν, σανὶς ἑξάπηχυς, εὖρος <lb/>δίπηχυς,
                         πάχος σπιθαμῆς, ἔχουσα ὄνους δύο ταπεινοὺς ἔνθεν καὶ ἔνθεν, <lb/>ἔχουσα δὲ

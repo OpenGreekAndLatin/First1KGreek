@@ -3,17 +3,43 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
-			<titleStmt>
-				<title>De totius morbi temporibus</title>
+			<titleStmt><title>De totius morbi temporibus</title>
 				<author>Galen</author>
 				<editor>Karl Gottlob Kühn</editor>
 				<funder>Andrew W. Mellon Foundation</funder>
 				<respStmt>
-					<persName xml:id="DDD">Digital Divide Data</persName>
-					<resp>Keyboarding</resp>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+          <persName>Mark Schiefsky, Harvard University</persName>
+          <persName>Gregory R. Crane, Universität Leipzig</persName>
+          <persName>Uwe Vagelpohl, University of Warwick</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <orgName xml:id="DDD">Digital Divide Data</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+          <persName>Gregory R. Crane</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+          <persName>Matt Munson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+          <persName>Annette Geßner</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer (University of Leipzig)</resp>
+          <persName>Thibault Clérice</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Technical Advisor</resp>
+          <persName>Bruce Robertson</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
 				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
 				<publisher>University of Leipzig</publisher>
@@ -47,8 +73,7 @@
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
 			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -211,10 +236,8 @@
 						κατὰ τὰς νόσους οἵ τε κατὰ μέρος παροξυσμοὶ τὰς ἀκμὰς <lb/>ἐν χρόνῳ ποιοῦνται σαφεῖ, καὶ
 						πολὺ δὴ μᾶλλον οἱ καθόλου <lb/>καιροὶ τῆς ὅλης νόσου πλάτος ἔχουσιν, οἵ τε ἄλλοι πάντες
 						ὅ <lb/>τε τῆς ἀκμῆς οὐδὲν ἧττον (ἔστιν) ὅ τε τῶν ἄλλων ἕκαστος. <lb/>γνωρίζειν δὲ αὐτὰς
-						ἐνίοτε μὲν ἐγχωρεῖ σαφῶς, ἔστι δ’ ὅτε <lb/>ἀμυδρῶς, ἢ καὶ παντάπασιν ἀγνοεῖν <milestone
-							unit="ed2page" n="308"/>ἄχρι παμπόλλου. <lb/>καὶ κατὰ τοῦτο ἔνια δοκεῖ τῶν νοσημάτων
-						εὐθὺς εἰσβάλλειν <lb/>ἀκμάζοντά· καὶ τοῦτο μὲν αὐτὸ τῶν ἀδυνάτων ἐστὶν, οὔτε <pb n="451"
-						/> γὰρ ὁ λεγόμενος σύνοχος πυρετὸς εὐθὺς ἀπὸ τῆς ἀκμῆς ποτε <lb/>εἰσέβαλεν, ἀλλ’ ἀπὸ τῆς
+						ἐνίοτε μὲν ἐγχωρεῖ σαφῶς, ἔστι δ’ ὅτε <lb/>ἀμυδρῶς, ἢ καὶ παντάπασιν ἀγνοεῖν <milestone unit="ed2page" n="308"/>ἄχρι παμπόλλου. <lb/>καὶ κατὰ τοῦτο ἔνια δοκεῖ τῶν νοσημάτων
+						εὐθὺς εἰσβάλλειν <lb/>ἀκμάζοντά· καὶ τοῦτο μὲν αὐτὸ τῶν ἀδυνάτων ἐστὶν, οὔτε <pb n="451"/> γὰρ ὁ λεγόμενος σύνοχος πυρετὸς εὐθὺς ἀπὸ τῆς ἀκμῆς ποτε <lb/>εἰσέβαλεν, ἀλλ’ ἀπὸ τῆς
 						πρώτης προσβολῆς ἄχρι τῆς τελεωτάτης <lb/>ἀκμῆς ὥραις ἤτοι τέτταρσιν ἢ τρισὶν ἀφικνεῖται
 						τοὐλάχιστον, <lb/>ἐντεῦθεν δὲ πάντως ἴσος ἑαυτῷ μένων συνεχῶς ἄχρι <lb/>κρίσεως. ἀλλ’
 						οὐδὲ τὸ μάλιστα ἐξαίφνης εἰσβάλλον ἀκμάζον <lb/>εἴποι τις ἂν, τὴν ἀποπληξίαν· οὐδὲ γὰρ
@@ -226,8 +249,7 @@
 						χειρουργός τις ὁτιοῦν τέμνοι. <lb/>ἀλλὰ γὰρ, εἰ βούλει, συγχωρείσθω χωρὶς χρόνου τήν τε
 						ἐπιληπτικὴν <lb/>καὶ τὴν ἀποπληκτικὴν γίνεσθαι κατάπτωσιν, ἵν’ ὅ γε <lb/>ἐξ ἀρχῆς
 						προὐθέμην διέλθω. τουτὶ μὲν γὰρ αὐτὸ σύμπτωμά <lb/>ἐστιν ἡ γινομένη κατάπτωσις, ἡ νόσος
-						δὲ οὐ τοῦτό ἐστιν, <lb/>ἀλλὰ χρὴ πάντως αὐτὴν, ὡς ἀπεδείξαμεν, εἶναί τινα διάθεσιν <pb
-							n="452"/> σώματος. εἰ δὲ οὐκ ἔχομεν εἴτε γεννωμένης αὐτῆς, <lb/>
+						δὲ οὐ τοῦτό ἐστιν, <lb/>ἀλλὰ χρὴ πάντως αὐτὴν, ὡς ἀπεδείξαμεν, εἶναί τινα διάθεσιν <pb n="452"/> σώματος. εἰ δὲ οὐκ ἔχομεν εἴτε γεννωμένης αὐτῆς, <lb/>
 						<milestone unit="ed1page" n="387"/>εἴτε αὐξανομένης γνώρισμά τι, τὸν μὲν ἀκόλουθον λόγον
 						<lb/>οὐκ ἀνατρέπει τοῦτο, καθ’ ὃν ἐλέγομεν παντὶ νοσήματι <lb/>ἀναγκαῖον εἶναι διὰ τῆς
 						ἀναβάσεως ἐπὶ τὴν ἀκμὴν ἀφικνεῖσθαι, <lb/>δύσγνωστον δὲ ἐνίοτε καὶ πολλοῖς ἄγνωστον τῶν
@@ -253,8 +275,7 @@
 						πρόκειται μὲν ἐν τῷ παρόντι σκοπεῖσθαι, δεδήλωται δὲ <lb/>ὑπὲρ τῆς κοινωνίας αὐτῶν οὐκ
 						ἀχρήστως. ἐπὶ δὲ τὸν ἐξ ἀρχῆς <lb/>λόγον ἰέναι καιρός. ἑκάστου τῶν νοσημάτων ἴδιός ἐστι
 						<lb/>χρόνος ὁ τῆς γενέσεως, ἐνίοτε μὲν αἰσθητὸς, ἐνίοτε δὲ οὐκ <lb/>αἰσθητός· ἀφ’ οὗ
-						πάλιν ὁ τῆς αὐξήσεως οὐχ ὁμοίως ἐπὶ <pb n="454"/> πάντων αἰσθητὸς οὐδὲ οὗ<milestone
-							unit="ed2page" n="309"/>τος· οἷς ὁ τῆς ἀκμῆς ἕπεται <lb/>πάντως αἰσθητὸς, ὁμολογούντων
+						πάλιν ὁ τῆς αὐξήσεως οὐχ ὁμοίως ἐπὶ <pb n="454"/> πάντων αἰσθητὸς οὐδὲ οὗ<milestone unit="ed2page" n="309"/>τος· οἷς ὁ τῆς ἀκμῆς ἕπεται <lb/>πάντως αἰσθητὸς, ὁμολογούντων
 						ἡμῶν ἔστιν ὅτε μηδὲν ἔχειν <lb/>ἐναργὲς γνώρισμα τῆς ἀρχῆς τοῦ πάθους καὶ τῆς αὐξήσεως.
 						<lb/>ἐπὶ τούτων οὖν, ὡς πρὸς τὴν χρείαν τῆς τέχνης, ἀληθῶς τις <lb/>ἐρεῖ τὸν τῆς ἀκμῆς
 						μόνον ὑπάρχειν καιρόν· εἰ δὲ καὶ σώζεσθαι <lb/>μέλλοιεν, ἕπεσθαι πάντως αὐτῷ τὸν τῆς
@@ -268,8 +289,7 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="5">
 					<p>Τούτων ἡμῖν αὐτάρκως ἀποδεικνυμένων, <lb/>ἐπισκεψόμεθα περὶ τῶν μὴ λυομένων νοσημάτων.
-						διττὴ δέ <lb/>ἐστιν αὐτῶν ἡ φύσις· ἔνια μὲν γὰρ αὐτῶν ἔχει τὴν κατασκευὴν, ﻿<pb n="455"
-						/> ὅταν ἀκριβῶς αὐτὴν ἔχῃ συμπληρουμένην· ἔνια δὲ ἐκ μὲν τῆς <lb/>τῶν λυομένων ἐστὶ
+						διττὴ δέ <lb/>ἐστιν αὐτῶν ἡ φύσις· ἔνια μὲν γὰρ αὐτῶν ἔχει τὴν κατασκευὴν, ﻿<pb n="455"/> ὅταν ἀκριβῶς αὐτὴν ἔχῃ συμπληρουμένην· ἔνια δὲ ἐκ μὲν τῆς <lb/>τῶν λυομένων ἐστὶ
 						φύσεως, ἀλλ’ ὅταν ἀποκτεῖναι φθάσῃ, <lb/>κατὰ τοῦτο αὐτοῖς γίνεσθαι συμβαίνει. τριττὸς
 						δὲ καὶ τούτων <lb/>ὁ τρόπος ἐστίν· ἢ γὰρ διὰ τὴν τοῦ κάμνοντος ἀδυναμίαν, <lb/>ἢ διὰ τὴν
 						τῶν νοσημάτων ἰσχὺν, ἢ διὰ τὰ συναμφότερα ἀναιρεῖ <lb/>πρὶν λυθῆναι. καθ’ ἕτερον δὲ
@@ -281,8 +301,7 @@
 						τι συνισταμένου, οὐκ εἰδότες <lb/>ὅτι λέγεται μέν ποτε καὶ οὕτω τὸ μέγα νόσημα, καθάπερ
 						ἂν <lb/>εἰ καὶ μεῖζον ἐλέγομεν, ὅταν ὑπὲρ τὴν δύναμιν ᾖ· λέγεται δὲ <lb/>καὶ κατ’ ἰδίαν
 						οὐσίαν, ὡς ἄνθρωπος, ἢ ἵππος, ἢ βοῦς μέγας. <lb/>ἀποδέδεικται δέ μοι καὶ περὶ τούτου τοῦ
-						διττοῦ σημαινομένου <lb/>πολλάκις ἤδη δι’ ἑτέρων· τὸ δὲ πάντα ἐν πᾶσιν ἐξεργάζεσθαι, <pb
-							n="456"/> φλύαρον· ὅπερ οὖν εἰς τὰ παρόντα χρήσιμον ὑπάρχει, <lb/>τοῦτο ἐρῶ. τῶν
+						διττοῦ σημαινομένου <lb/>πολλάκις ἤδη δι’ ἑτέρων· τὸ δὲ πάντα ἐν πᾶσιν ἐξεργάζεσθαι, <pb n="456"/> φλύαρον· ὅπερ οὖν εἰς τὰ παρόντα χρήσιμον ὑπάρχει, <lb/>τοῦτο ἐρῶ. τῶν
 						νοσημάτων ἕκαστον αὐτὸ μὲν καθ’ <lb/>ἑαυτὸ κέκτηταί τινα πηλικότητα, βέλτιον γὰρ οὕτως
 						εἰπεῖν <lb/>ἕνεκα σαφηνείας, ἤτοι δὲ ὑπὲρ τὴν δύναμίν ἐστιν ἡ πηλικότης <lb/>αὕτη τοῦ
 						νοσήματος, ὡς βαρύνειν αὐτὴν, ἢ τοὐναντίον <lb/>ἀσθενεστέρα τῆς δυνάμεως, ὡς νικηθῆναι

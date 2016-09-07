@@ -3,17 +3,43 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
-			<titleStmt>
-				<title>De optima doctrina</title>
+			<titleStmt><title>De optima doctrina</title>
 				<author>Galen</author>
 				<editor>Karl Gottlob Kühn</editor>
 				<funder>Andrew W. Mellon Foundation</funder>
 				<respStmt>
-					<persName xml:id="DDD">Digital Divide Data</persName>
-					<resp>Keyboarding</resp>
-				</respStmt>
-			</titleStmt>
-			<publicationStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+          <persName>Mark Schiefsky, Harvard University</persName>
+          <persName>Gregory R. Crane, Universität Leipzig</persName>
+          <persName>Uwe Vagelpohl, University of Warwick</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <orgName xml:id="DDD">Digital Divide Data</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+          <persName>Gregory R. Crane</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+          <persName>Matt Munson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+          <persName>Annette Geßner</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer (University of Leipzig)</resp>
+          <persName>Thibault Clérice</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Technical Advisor</resp>
+          <persName>Bruce Robertson</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
 				<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon
 					Foundation</authority>
 				<publisher>University of Leipzig</publisher>
@@ -47,8 +73,7 @@
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
 			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -85,8 +110,7 @@
 						<lb/>καταληπτὸν, ἀποχωροῦντας ὀνόματι Στωϊκῷ. καὶ ἔγωγε <lb/>ἐθαύμαζον νὴ τοὺς θεοὺς,
 						ὅπως ὁ Φαβωρῖνος εἰς τὴν <lb/>τῶν Ἀττικῶν φωνὴν εἰωθὼς μεταλαμβάνειν ἕκαστα τῶν
 						<lb/>ὀνομάτων, οὐ παύεται λέγων, οὔτε τὸ καταληπτὸν, <lb/>οὔτε τὴν κατάληψιν, οὔτε τὴν
-						καταληπτικὴν φαντασίαν, <lb/>οὔτε τὰ τούτοις ἀντικείμενα οἷον στερητικῶς λεγόμενα, <pb
-							n="42"/> ἀκα<milestone unit="ed2page" n="17"/>τάληπτον φαντασίαν, ἢ τὴν ἀκαταληψίαν
+						καταληπτικὴν φαντασίαν, <lb/>οὔτε τὰ τούτοις ἀντικείμενα οἷον στερητικῶς λεγόμενα, <pb n="42"/> ἀκα<milestone unit="ed2page" n="17"/>τάληπτον φαντασίαν, ἢ τὴν ἀκαταληψίαν
 						αὐτήν. <lb/>ὡς δὲ καὶ τρία βιβλία γράψας, ἓν μὲν πρὸς Ἀδριανὸν, ἕτερον <lb/>δὲ πρὸς
 						Δρύσωνα, καὶ τρίτον πρὸς Ἀρίσταρχον, ἅπαντα <lb/>περὶ τῆς καταληπτικῆς φαντασίας
 						ἐπέγραψε. καὶ καθ’ ὅλα <lb/>γε αὐτὰ γενναίως ἀγωνίζεται, πειρώμενος ἐπιδεικνύναι τὴν
@@ -113,8 +137,7 @@
 						ἀσφαλέστερον ὀνομάζειν ἐστὶ, τὸ δὲ παρὰ <lb/>Θεοφράστῳ καὶ Ἀριστοτέλει τοῖς
 						περιπατητικοῖς. οὕτω δὲ <lb/>κᾀπὶ τῶν ἄλλων, ὥστ’ οὐδὲν ἄν τι λείποιτο πρὸς διδασκαλίαν
 						<lb/>τοῖς Ἀκαδημιακοῖς, ὅσον ἐπὶ τῷ Φαβωρίνου λόγῳ <lb/>τοῖς μὲν γὰρ πρεσβυτέροις αὐτὸ
-						δὴ τοῦτο ἦν δίδαγμα, τὸ <lb/>μηδὲν εἶναι κριτήριον ἀνθρώπῳ δεδομένον ὑπὸ τῆς φύσεως, <pb
-							n="44"/> ᾧ παραβάλλων ἕκαστον τῶν ὄντων ἀκριβῶς διαγνώσεται. <lb/>διὸ μήδ’ ἀποφήνασθαι
+						δὴ τοῦτο ἦν δίδαγμα, τὸ <lb/>μηδὲν εἶναι κριτήριον ἀνθρώπῳ δεδομένον ὑπὸ τῆς φύσεως, <pb n="44"/> ᾧ παραβάλλων ἕκαστον τῶν ὄντων ἀκριβῶς διαγνώσεται. <lb/>διὸ μήδ’ ἀποφήνασθαι
 						περὶ μηδενὸς ἠξίουν, ἀλλὰ περὶ <lb/>πάντων ἐπέχειν ἀεί. ἀλλ’ εἰ δὴ τοῖς φυσικοῖς
 						κριτηρίοις <lb/>αἴσθησιν ἱκανῶς συγχωρήσουσιν ἡμῖν, οὐδὲν ἔτι δεησόμεθα <lb/>τῆς εἰς
 						ἑκάτερα ἐπιχειρήσεως, ἀλλ’ ἑτέρου τινὸς ἀπαιτήσεως, <lb/>μᾶλλον μὲν τοὺς τεχνίτας
@@ -165,9 +188,7 @@
 						εὑρέσεως; ᾧ γὰρ οὐδὲν ὑπάρχει <lb/>κριτήριον ἀληθῶν καὶ ψευδῶν, ἀνέλπιστος ἡ γνῶσις
 						αὐτοῦ. <lb/>ἐγχείρησον δὲ διδάξαι μόνον σοφιστὰς, μηδὲν ἡμῖν ὑπάρχειν <lb/>κριτήριον
 						σύμφυτον, ὥστε γε μετὰ τοῦτο τολμηρῶς. ἡμῖν <lb/>μέντοι ἴσως φησὶν, αἴσθησίν τε καὶ
-						νόησιν ἐναργῆ κριτήρια <lb/>τοῦ ἀληθοῦς εἶναι, συγχωρήσειεν ἄν τις ἐν λογικαῖς <pb
-							n="48"/> κυλινδεῖσθαι βουλόμενος ἐλπίσι ματαίαις. ὅσοι <milestone unit="ed2page"
-							n="19"/>δ’ ἀνῃρήκασιν <lb/>ὅλην τὴν ἐλπίδα, καθάπερ ἐκεῖνος, μάτην φλυαροῦσι.
+						νόησιν ἐναργῆ κριτήρια <lb/>τοῦ ἀληθοῦς εἶναι, συγχωρήσειεν ἄν τις ἐν λογικαῖς <pb n="48"/> κυλινδεῖσθαι βουλόμενος ἐλπίσι ματαίαις. ὅσοι <milestone unit="ed2page" n="19"/>δ’ ἀνῃρήκασιν <lb/>ὅλην τὴν ἐλπίδα, καθάπερ ἐκεῖνος, μάτην φλυαροῦσι.
 						<lb/>εὔδηλος οὖν ἐστὶν ὁ Φαβωρῖνος, αἰδοῖ μὲν ἀνατρέπων πάντα, <lb/>καὶ ἀγνοεῖν ὑπάρχειν
 						ὁμολογῶν, ὅθεν ὑπάρχειν οἱ πρόσθεν <lb/>ἔλεγον Ἀκαδημιακοί τε καὶ Πυῤῥώνειοι·
 						προσποιούμενος <lb/>δ’ ἐπιτρέπειν τὴν κρίσιν τοῖς μαθηταῖς, ἣν οὐδὲ ἑαυτοῖς
