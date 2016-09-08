@@ -3,34 +3,49 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
 		<fileDesc>
-			<titleStmt>
-				<title>Libanius Opera</title>
+			<titleStmt><title>Libanius Opera</title>
 				<sponsor>University of Leipzig</sponsor>
 				<funder>European Social Fund Saxony</funder>
 				<principal>Gregory Crane</principal>
 				<respStmt>
-					<persName xml:id="DDD">Digital Divide Data</persName>
-					<resp>OCR-ed, corrected and encoded the text</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Greta Franzini</persName>
-					<resp>Project Manager (University of Leipzig)</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Frederik Baumgardt</persName>
-					<resp>Technical Manager (University of Leipzig)</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Simona Stoyanova</persName>
-					<resp>Project Assistant (University of Leipzig)</resp>
-				</respStmt>
-				<respStmt>
-					<persName>Bruce Robertson</persName>
-					<resp>Technical Advisor (Mount Allison University)</resp>
-				</respStmt>
-			</titleStmt>
-
-			<publicationStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
 				<authority>University of Leipzig</authority>
 				<idno type="filename">libanius_7.xml</idno>
 				<availability>
@@ -52,10 +67,8 @@
 									<addName xml:lang="de">Richard Foerster</addName>
 								</persName>
 							</editor>
-							<author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200"
-								>Libanius</author>
-							<title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200.tlg005"
-								>Declamationes XXXI-LI</title>
+							<author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200">Libanius</author>
+							<title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2200.tlg005">Declamationes XXXI-LI</title>
 							<imprint>
 								<publisher>In Aedibus B. G. Teubneri</publisher>
 								<pubPlace>Lipsiae</pubPlace>
@@ -75,11 +88,8 @@
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
 			<refsDecl n="CTS">
-				<cRefPattern n="section" matchPattern="(.+).(.+)"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-				<cRefPattern n="chapter" matchPattern="(.+)"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-				/>
+				<cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+				<cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 
@@ -134,8 +144,7 @@
 
 					<div type="textpart" subtype="section" n="2">
 						<p>δεῖ δὲ αὐτὸν φαίνεσθαι πανταχοῦ τοῖς δικασταῖς ὁμολογοῦντα χάριν καὶ μάλιστα τοῖς
-							φιλανθρωποτέραν θεμένοις τὴν ψῆ- φον, ἵνα καὶ τὴν τῶν ἀκουόντων φιλανθρωπίαν καρ- <lb
-								n="5"/> πώσηται. τὸ γὰρ ἀχαριστεῖν τοῖς φθάσασι καὶ τὴν ἀπὸ τῶν αὖθις ἀκουόντων ἔχει
+							φιλανθρωποτέραν θεμένοις τὴν ψῆ- φον, ἵνα καὶ τὴν τῶν ἀκουόντων φιλανθρωπίαν καρ- <lb n="5"/> πώσηται. τὸ γὰρ ἀχαριστεῖν τοῖς φθάσασι καὶ τὴν ἀπὸ τῶν αὖθις ἀκουόντων ἔχει
 							κατάγνωσιν.</p>
 					</div>
 
@@ -149,8 +158,7 @@
 
 					<div type="textpart" subtype="section" n="4">
 						<p>ἐνταῦθα δὲ τὸ πρᾶγμα παντάπασιν <lb n="15"/> ἄπορον. οὔτε γὰρ &lt; παραγραφῇ οὕτε&gt;
-							ἐφέσει ἀγωνίζε- ται, I ἔνα καὶ φῇ ὡς παρὰ δίκην κατέγνωσται, <note type="marginal"
-								>RIV 503</note> ἀλλ’ ἡμεῖς εἰσάγομεν οἰκείοις τὸν κριθέντα λόγοις χρώμενον οὐ πρῶτοι
+							ἐφέσει ἀγωνίζε- ται, I ἔνα καὶ φῇ ὡς παρὰ δίκην κατέγνωσται, <note type="marginal">RIV 503</note> ἀλλ’ ἡμεῖς εἰσάγομεν οἰκείοις τὸν κριθέντα λόγοις χρώμενον οὐ πρῶτοι
 							τοῦτο καὶ μόνοι νομοθετήσαντες, τοῖς δὲ σοφωτέροις τῶν πρὸ ἡμῶν ἀκολουθήσαντες. 20 τὸ
 							δὲ ἀπειροκάλων ὑπομένειν δόξαν φεύγοντες τοσοῦ- <note type="footnote">11 Dem. Mid. §
 								95 13 Dem. Eubul. § 6 et 56 16 Dem. Eubul. § 6 p. 1301,3</note>
@@ -299,8 +307,7 @@
 							ἡμῖν, ὦ Τύχη, πρᾶξαί τι λυσι- τελέστερον, ἔασον ἀπόνασθαί μου τῆς προθυ- μίας τὴν
 							πόλιν. δημοτικός εἰμι, λέγειν ἱκανός, <lb n="15"/> πολιτεύεσθαι δυνάμενος. κἂν
 							πολεμίων ἐπίῃ στρατός, οἶδα αὐτῷ ὑπὲρ τῆς ἐνεγκαμένης παρα- τάττεσθαι. διὸ οὐκ οἴσει
-							μου τὴν ὑπὲρ τῆς πό- λεως προθυμίαν οὐδὲ φάλαγξ. ταῦτα καὶ τὰ τοι- <note
-								type="footnote">4 cf. p. 558, 1. Od. ε 396. [Luc.] asin. § 19. Greg. Cypr. Ath.
+							μου τὴν ὑπὲρ τῆς πό- λεως προθυμίαν οὐδὲ φάλαγξ. ταῦτα καὶ τὰ τοι- <note type="footnote">4 cf. p. 558, 1. Od. ε 396. [Luc.] asin. § 19. Greg. Cypr. Ath.
 								defens. t. VI 81, 17</note>
 							<note type="footnote">7 πρόδηλος ἡ παρακλητικὴ πρὸς ζῆλον Ath</note>
 							<note type="footnote">1 κατηγοριῶν AthMaClB | παύσηται Va Ι καἰ μοι MaClB</note>
@@ -396,8 +403,7 @@
 						<p>σὺ δέ μοι τὰς γνώμας συνάπτων ἀπὸ τούτων οἴει παρακρούσεσθαι. <lb n="10"/> οὐχ οὕτως
 							ὁ δῆμος παρακρούεσθαι πέφυκεν. οἶδε τὰς γνώμας, οἶδε τοὺς δικάσαντας μεθ’ οἴας βουλῆς
 							ἐκύ- ρωσαν. θάνατον ἐξ αὐτῶν τινες, ἀτιμίαν ἕτεροι, φυγὴν οἱ πλείους εἰρήκασιν. εἰ
-							μὲν οὖν διπλῆς οὔσης τῆς τι- μωρίας τὴν ἐλάττονα παρὰ τὸν νόμον ἐζήτουν, καλῶς <lb
-								n="15"/> &lt; ἄν&gt; εἶχεν ὁ παρὰ σοῦ λόγος· ἐπειδὴ δὲ τριπλῆν τιμωρίαν κατ’ ἐμοῦ
+							μὲν οὖν διπλῆς οὔσης τῆς τι- μωρίας τὴν ἐλάττονα παρὰ τὸν νόμον ἐζήτουν, καλῶς <lb n="15"/> &lt; ἄν&gt; εἶχεν ὁ παρὰ σοῦ λόγος· ἐπειδὴ δὲ τριπλῆν τιμωρίαν κατ’ ἐμοῦ
 							ἐξήνεγκαν, μὴ τὰς δύο συνάπτων ἅμα νίκα τούτῳ τὴν λειπομένην τῷ σοφίσματι.</p>
 					</div>
 
@@ -429,8 +435,7 @@
 							τροφος, καὶ τῷ μὲν ὕβρις δοκεῖ τῶν ἐν τῷ βίῳ τὸ <lb n="15"/> χαλεπώτατον, τῷ δὲ κυβεία
 							καὶ μέθη, ἄλλος καθ’ ἱερο- σύλων ἄσπονδος, ἕτερος πολέμιος τοῖς κατὰ τῶν τετε-
 							λευτηκότων χεῖρας ἐπιβάλλουσι, καὶ ἄλλος πρὸς ἄλλο τι τῶν ἀδικημάτων παροξύνεται
-							πλέον, τὸν μὲν ἐλύ- πησεν ἄδικος φόνος, τὸν δέ, εἴ τις τοὺς γεγεννηκότας <lb n="20"
-							/> κακῶς διέθηκε.</p>
+							πλέον, τὸν μὲν ἐλύ- πησεν ἄδικος φόνος, τὸν δέ, εἴ τις τοὺς γεγεννηκότας <lb n="20"/> κακῶς διέθηκε.</p>
 					</div>
 
 					<div type="textpart" subtype="section" n="15">
@@ -475,8 +480,7 @@
 
 					<div type="textpart" subtype="section" n="17">
 						<p>17. Ἀλλ’ ἐροῦσιν ἕτερον εὐθὺς κατασκευάσαντες λόγον ὧς πολλοὺς τῶν ἐνοικούντων
-							πονηροὺς <lb n="5"/> γενέσθαι προξενήσομεν, εἰ ταῦτα τούτῳ χαρι- <note type="marginal"
-								>RIV 509</note> σόμεθα. ὢ παραδόξου λόγου καὶ | πονηρᾶς ἐπι- νοίας κατ’ ἐμοῦ πάλιν
+							πονηροὺς <lb n="5"/> γενέσθαι προξενήσομεν, εἰ ταῦτα τούτῳ χαρι- <note type="marginal">RIV 509</note> σόμεθα. ὢ παραδόξου λόγου καὶ | πονηρᾶς ἐπι- νοίας κατ’ ἐμοῦ πάλιν
 							καὶ τέχνης καὶ σοφίσματος, ἄνθρωπε. μὴ γὰρ δωρεὰν αἰτῶ μετὰ τὴν κατάγνωσιν, μὴ γὰρ
 							πανηγύρεως μετέχειν ἀξιῶ μετὰ τὸν ἔλεγχον, <lb n="10"/> ἵνα καὶ πολλοὺς πονηροὺς εἶναι
 							συμβήσεται; τιμωρίαν, οὐ δωρεὰν αἰτῶ, φυγήν, οὐ πανήγυριν.</p>
@@ -484,8 +488,7 @@
 
 					<div type="textpart" subtype="section" n="18">
 						<p>ἀγνοεῖς ὅτι πολλοῖς ἡ φυγὴ πολλάκις θανάτου χαλεπωτέρα νομί- ζεται; ὁ μὲν γὰρ ἐκ
-							καταγνώσεως ἀποθανὼν πολλάκις κἀν οἰκείᾳ τῇ γῇ κρύπτεται, ὁ δὲ ἐπ’ ἐρημίας τοῦτο <lb
-								n="15"/> παθὼν τοῦ πεσόντος ἐν οἰκείᾳ τῇ γῇ δυστυχέστερος. ὥστε μικροῦ λανθάνεις
+							καταγνώσεως ἀποθανὼν πολλάκις κἀν οἰκείᾳ τῇ γῇ κρύπτεται, ὁ δὲ ἐπ’ ἐρημίας τοῦτο <lb n="15"/> παθὼν τοῦ πεσόντος ἐν οἰκείᾳ τῇ γῇ δυστυχέστερος. ὥστε μικροῦ λανθάνεις
 							ἡμῖν καὶ συνιστάμενος δι’ ὧν βλάπτειν ἐσπούδακας</p>
 					</div>
 

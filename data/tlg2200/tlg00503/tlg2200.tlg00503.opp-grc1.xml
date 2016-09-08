@@ -3,34 +3,49 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader>
   <fileDesc>
-   <titleStmt>
-    <title>Libanius Opera</title>
+   <titleStmt><title>Libanius Opera</title>
     <sponsor>University of Leipzig</sponsor>
     <funder>European Social Fund Saxony</funder>
     <principal>Gregory Crane</principal>
     <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>OCR-ed, corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Greta Franzini</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Frederik Baumgardt</persName>
-     <resp>Technical Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Simona Stoyanova</persName>
-     <resp>Project Assistant (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor (Mount Allison University)</resp>
-    </respStmt>
-   </titleStmt>
-
-   <publicationStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
     <authority>University of Leipzig</authority>
     <idno type="filename">libanius_5.xml</idno>
     <availability>
@@ -73,11 +88,8 @@
    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
     Architecture.</p>
    <refsDecl n="CTS">
-    <cRefPattern n="section" matchPattern="(.+).(.+)"
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern n="chapter" matchPattern="(.+)"
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-    />
+    <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
    </refsDecl>
   </encodingDesc>
 
@@ -229,8 +241,7 @@
         τοῦτο σύνηθες e Marc 445 Bast (cf. p. 185) | μὴ — 203, 2 ποιεῖν in marg add Pa3</note>
        <pb n="203"/> ἀποτείνειν ὑπὲρ τῶν πραγμάτων τοὺς λόγους, καὶ τοῦτ’ εἰκότως οὕτω μοι δοκῶ
        ποιεῖν, ὑπὲρ μὲν γὰρ τῶν ἀδίκων οὐδ’ ἂν εἴποιμι τὴν ἀρχήν, τὰ δὲ δίκαια βραχείας ἡγοῦμαι
-       δεῖσθαι ῥήσεως· οἶμαι δέ, εἰ καὶ μακρολογεῖν εἰώθειν, τό γε παρὸν πρᾶγμα συστεῖλαι <lb n="5"
-       /> ἂν ὡς εἰς ἐλάχιστον τοὺς λόγους. τουτὶ γὰρ μόνον τῶν ἁπάντων οὐδὲν ἀπαιτεῖ ποικίλον οὐδὲ
+       δεῖσθαι ῥήσεως· οἶμαι δέ, εἰ καὶ μακρολογεῖν εἰώθειν, τό γε παρὸν πρᾶγμα συστεῖλαι <lb n="5"/> ἂν ὡς εἰς ἐλάχιστον τοὺς λόγους. τουτὶ γὰρ μόνον τῶν ἁπάντων οὐδὲν ἀπαιτεῖ ποικίλον οὐδὲ
        σοφόν, ἀλλ’ ἀπὸ ψιλῆς τῆς ἐρωτήσεως ἑλεῖν ἔστι τὸν ἀνθ- ιστάμενον.</p>
      </div>
 
@@ -360,9 +371,7 @@
 
      <div type="textpart" subtype="section" n="11">
       <p>ὄντων οὖν <lb n="10"/> ἡμῶν ἀφυλάκτων ὧς ἂν πρὸς φίλον καὶ γνώριμον καὶ τῆς πίστεως εἰς
-       ῥᾳθυμίαν ἀγούσης, πῶς ἄν τις χρή- σαιτο τοῖς λόγοις; μετέθηκεν, ὦ Τρῶες, τὸν περὶ | <note
-        type="marginal">R IV 7</note> ταῦτα θεσμὸν εἰς πᾶν τοὐναντίον καὶ ἠμείψατο τὴν <note
-        type="footnote">12 Plat. Hipp. mai. p. 299 B</note>
+       ῥᾳθυμίαν ἀγούσης, πῶς ἄν τις χρή- σαιτο τοῖς λόγοις; μετέθηκεν, ὦ Τρῶες, τὸν περὶ | <note type="marginal">R IV 7</note> ταῦτα θεσμὸν εἰς πᾶν τοὐναντίον καὶ ἠμείψατο τὴν <note type="footnote">12 Plat. Hipp. mai. p. 299 B</note>
        <note type="footnote">7 ἀηδίαν] ἢ ἐπιλαμβάνεται κατὰ συνεκδοχὴν ἢ τὸ οἶδε καταγνοὺς ἀπὸ
         κοινοῦ MMa2</note>
        <note type="footnote">μηδέν τι MaCl | τοιοῦτο LaViVa Er Mor | πρὸς Pa sed περὶ suprascr m2,
@@ -462,8 +471,7 @@
         p. 196 2 κατασκευῆς scripsi παρασκευῆς cod. sed κατὰ in marg, edd</note>
        <pb n="211"/> ἔχω καὶ μὴ ἐνόχλει. ἀλλ’ οὐκ ἀρκεῖ λαβεῖν οὐδὲ ἔχειν, Ἀλέξανδρε. ἔστι γὰρ καὶ
        λαβεῖν ὅθεν οὐκ ἄξιον καὶ ἔχειν τὰ ἀλλότρια. οὐ γὰρ ἐν τῷ λαβεῖν ἐστι τὸ δικαίως κεκτῆσθαι,
-       ἀλλ’ ἐν τῷ δικαίως κτήσασθαι τὸ χωρὶς ἐγκλημάτων ἔχειν. οὔκουν δεῖ τὴν λῆψιν ἀπλῆν <lb n="5"
-       /> σκοπεῖν, ἀλλὰ πολὺ πρὸ ταύτης τὸν τρόπον. ἀπὸ γὰρ τούτου κἀκείνη δοκιμάζεται. ὁρᾶς ὡς οὐδὲ
+       ἀλλ’ ἐν τῷ δικαίως κτήσασθαι τὸ χωρὶς ἐγκλημάτων ἔχειν. οὔκουν δεῖ τὴν λῆψιν ἀπλῆν <lb n="5"/> σκοπεῖν, ἀλλὰ πολὺ πρὸ ταύτης τὸν τρόπον. ἀπὸ γὰρ τούτου κἀκείνη δοκιμάζεται. ὁρᾶς ὡς οὐδὲ
        τοῖς ἱερο- σύλοις ἀκίνδυνον τὸ τὰ τῶν θεῶν εἰληφέναι; καίτοι γε, εἰ τὸ ἔχειν ἰσχυρὸν ἦν,
        ἐχρῆν ὁμολογοῦντας ἔχειν ἀπηλλάχθαι πραγμάτων. ἀλλ’, οἶμαι, τοῦτ’ ἔστι καὶ <lb n="10"/> οὐδὲν
        ἕτερον ἔγκλημα παρὰ τὸ τὰ μὴ προσήκοντα <note type="footnote">11 Plat. Phaed. p. 74 A. Dem.
@@ -525,8 +533,7 @@
      </div>
 
      <div type="textpart" subtype="section" n="19">
-      <p>ἐχρῆν δέ σε, ὦ βέλτιστε, τὴν ἀρχὴν ἀποφεύγειν οἰκίαν ἀνδρὸς δυσμενοῦς καὶ μηδαμῶς <lb n="5"
-       /> ἀγαπᾶν τὰς παρὰ τῶν πολεμίων εὐεργεσίας μηδὲ ὁμω- ρόφιον γίγνεσθαι τοῖς ἐκ παλαιῶν
+      <p>ἐχρῆν δέ σε, ὦ βέλτιστε, τὴν ἀρχὴν ἀποφεύγειν οἰκίαν ἀνδρὸς δυσμενοῦς καὶ μηδαμῶς <lb n="5"/> ἀγαπᾶν τὰς παρὰ τῶν πολεμίων εὐεργεσίας μηδὲ ὁμω- ρόφιον γίγνεσθαι τοῖς ἐκ παλαιῶν
        χρόνων, ὡς σὺ φῄς, εἰς ἔχθραν διῃρημένοις. ἢ τότε μὲν ὡς ἐπιτηδείοις ἐχρῶ, μικρὸν δὲ ὕστερον
        ὡς Ι πολεμίους ἐκάκους; <note type="marginal">R IV 10</note> καὶ μὴν οὐδὲν ἐν τῷ μεταξὺ παρ’
        ἡμῶν εἶς σὲ δυσχε- <lb n="10"/> ρὲς ὑπῆρξεν οὐδ’ ἂν ἔχοις εἰπεῖν.</p>
@@ -627,8 +634,7 @@
       <p>πρῶτον μὲν γὰρ τὸ τὰ δίκαια τῷ λόγῳ πειρᾶσθαι λαμβάνειν, ἀλλὰ μὴ &lt;τῷ&gt; 1 τοῖς ἐπιπηδᾶν
        ἀνθρωπινώτερον δήπουθεν. δεύτερον δὲ οὐκ ἄξιον κρίνομεν ὧν εἶς ἠδίκηκε παρὰ πάντων τὴν δίκην
         <lb n="10"/> λαμβάνειν ὅπερ ὅπερ εἰς πολέμων κατ’ ἀναγκαῖον ἀναγκαῖον ἤδη γίγνεται. οὐ γὰρ
-       ἔνεστι τηνικαῦτα τοὺς ἀναιτίους φυλοκρινεῖν, ἀλλ’ ἀνάγκη τοὺς παραπεπτωκότας ἀπο- <note
-        type="footnote">12 cf. Chor. Patr. t. IV 107, 20 R</note>
+       ἔνεστι τηνικαῦτα τοὺς ἀναιτίους φυλοκρινεῖν, ἀλλ’ ἀνάγκη τοὺς παραπεπτωκότας ἀπο- <note type="footnote">12 cf. Chor. Patr. t. IV 107, 20 R</note>
        <note type="footnote">2 ἐστρατεύσαμεν Ma sed γρ' ἐστράτευσε μὲν in marg m 2 τὴν post εἰς in
         marg inser Vi 2 | τὴν ὑμετέραν γῆν MaCl γῆν om Β et γρ in marg Mor Ι τὴν om CrHV Ι ὑμετέραν
         Pa sed ὒ in ἡ corr m 2 3 καὶ πλὴν — 4 λείπεται post οἶμαι δῆλον εἶναι BPa Ι τῆς ante
@@ -661,8 +667,7 @@
 
      <div type="textpart" subtype="section" n="26">
       <p>ὁρᾶτε οὖν ἀμφότερα καὶ παραθέντες τῷ συλλόγῳ τὰς μάχας καὶ τοῖς λόγοις τὰ ὅπλα καὶ πρὸς τὴν
-       παροῦσαν εὐδαιμονίαν ἀπιδόντες καὶ τὴν ἀπ’ ἐκείνων δυσχέρειαν ἐξετάσαντες γένεσθε τοῦ <lb
-        n="15"/> κρείττονος.</p>
+       παροῦσαν εὐδαιμονίαν ἀπιδόντες καὶ τὴν ἀπ’ ἐκείνων δυσχέρειαν ἐξετάσαντες γένεσθε τοῦ <lb n="15"/> κρείττονος.</p>
      </div>
 
      <div type="textpart" subtype="section" n="27">

@@ -3,17 +3,43 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
-            <titleStmt>
-                <title>Aphorismi</title>
+            <titleStmt><title>Aphorismi</title>
                 <author>Hippocrates</author>
                 <editor>Émile Littré</editor>
                 <funder>Andrew W. Mellon Foundation</funder>
                 <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
-                    <resp>Keyboarding</resp>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+          <persName>Mark Schiefsky, Harvard University</persName>
+          <persName>Gregory R. Crane, Universität Leipzig</persName>
+          <persName>Uwe Vagelpohl, University of Warwick</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <orgName xml:id="DDD">Digital Divide Data</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+          <persName>Gregory R. Crane</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+          <persName>Matt Munson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+          <persName>Annette Geßner</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer (University of Leipzig)</resp>
+          <persName>Thibault Clérice</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Technical Advisor</resp>
+          <persName>Bruce Robertson</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
                 <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
                     Mellon Foundation</authority>
                 <publisher>University of Leipzig</publisher>
@@ -48,11 +74,8 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
             <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+).(.+)" n="aphorism"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern matchPattern="(.+)" n="book"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
+                <cRefPattern matchPattern="(.+).(.+)" n="aphorism" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
@@ -87,8 +110,7 @@
                     <div type="textpart" subtype="aphorism" n="3">
                         <p>3. Ἐν τοῖσι γυμναστικοῖσιν αἱ ἐπ᾿ ἄκρον εὐεξίαι σφαλεραὶ, ἢν ἐν <lb/>τῷ
                             ἐσχάτῳ ἔωσιν· οὐ γὰρ δύνανται μένειν ἐν τῷ αὐτέῳ, οὐδὲ ἀτρεμέειν·
-                            <lb/>ἐπεὶ δὲ οὐκ ἀτρεμένουσιν, οὐδ᾿ ἔτι δυνάνται ἐπὶ τὸ βέλτιον <pb
-                                n="460"/> ἐπιδιδόναι, λείπεται ἐπὶ τὸ χεῖρον· τουτέων οὖν εἴνεκεν
+                            <lb/>ἐπεὶ δὲ οὐκ ἀτρεμένουσιν, οὐδ᾿ ἔτι δυνάνται ἐπὶ τὸ βέλτιον <pb n="460"/> ἐπιδιδόναι, λείπεται ἐπὶ τὸ χεῖρον· τουτέων οὖν εἴνεκεν
                             τὴν εὐεξίην <lb/>λύειν ξυμφέρει μὴ βραδέως, ἵνα πάλιν ἀρχὴν ἀναθρέψιος
                             λαμβάνῃ <lb/>τὸ σῶμα· μηδὲ τὰς ξυμπτώσιας ἐς τὸ ἔσχατον ἄγειν, σφαλερὸν
                             <lb/>γὰρ, ἀλλ᾿ ὁκοίη ἂν ἡ φύσις ᾖ τοῦ μέλλοντος ὑπομένειν, ἐς τοῦτο
@@ -98,8 +120,7 @@
                     </div>
                     <div type="textpart" subtype="aphorism" n="4">
                         <p>4. Αἱ λεπταὶ καὶ ἀκριβέες δίαιται, καὶ ἐν τοῖσι μακροῖσιν αἰεὶ
-                            <lb/>πάθεσι, καὶ ἐν τοῖσιν ὀξέσιν, οὗ μὴ ἐπιδέχεται, σφαλεραί. Καὶ <pb
-                                n="462"/> πάλιν αἱ ἐς τὸ ἔσχατον λεπτότητος ἀφιγμέναι δίαιται,
+                            <lb/>πάθεσι, καὶ ἐν τοῖσιν ὀξέσιν, οὗ μὴ ἐπιδέχεται, σφαλεραί. Καὶ <pb n="462"/> πάλιν αἱ ἐς τὸ ἔσχατον λεπτότητος ἀφιγμέναι δίαιται,
                             χαλεπαί· καὶ <lb/>γὰρ αἱ πληρώσιες, αἱ ἐν τῷ ἐσχάτῳ ἐοῦσαι, χαλεπαί.
                         </p>
                     </div>
@@ -150,8 +171,7 @@
                             καὶ αἱ ὧραι τοῦ ἔτεος, καὶ αἱ τῶν περιόδων πρὸς ἀλλήλας
                             <lb/>ἀνταποδόσιες, ἤν τε καθ᾿ ἡμέρην, ἤν τε παρ᾿ ἡμέρην, ἤν τε καὶ
                             <lb/>διὰ πλείονος χρόνου γίγνωνται· ἀτὰρ καὶ τοῖσιν ἐπιφαινομένοισιν,
-                            <lb/>οἷον ἐν πλευριτικοῖσι πτύελον ἢν μὲν αὐτίκα ἐπιφαίνηται, <pb
-                                n="466"/> ἀρχομένου, βραχύνει, ἢν δ᾿ ὕστερον ἐπιφαίνηται, μηκύνει·
+                            <lb/>οἷον ἐν πλευριτικοῖσι πτύελον ἢν μὲν αὐτίκα ἐπιφαίνηται, <pb n="466"/> ἀρχομένου, βραχύνει, ἢν δ᾿ ὕστερον ἐπιφαίνηται, μηκύνει·
                             <lb/>καὶ οὖρα καὶ ὑποχωρήματα καὶ ἱδρῶτες, καὶ δύσκριτα καὶ
                             <lb/>εὔκριτα, καὶ βραχέα καὶ μακρὰ τὰ νοσήματα, ἐπιφαινόμενα,
                             <lb/>δηλοῖ. </p>
@@ -527,8 +547,7 @@
                             ξυντόμως <lb/>ἀπολλύντες. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="13">
-                        <p>13. Ἢν δὲ τὸ θέρος αὐχμηρὸν καὶ βόρειον γένηται, τὸ δὲ φθινόπωρον <pb
-                                n="492"/> ἔπομβρον καὶ νότιον, κεφαλαλγίαι ἐς τὸν χειμῶνα γίνονται,
+                        <p>13. Ἢν δὲ τὸ θέρος αὐχμηρὸν καὶ βόρειον γένηται, τὸ δὲ φθινόπωρον <pb n="492"/> ἔπομβρον καὶ νότιον, κεφαλαλγίαι ἐς τὸν χειμῶνα γίνονται,
                             <lb/>καὶ βῆχες, καὶ βράγχοι, καὶ κόρυζαι, ἐνίοισι δὲ καὶ φθίσιες. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="14">
@@ -574,8 +593,7 @@
                             <lb/>ἐξανθήσιες ἑλκώδεες πλεῖσται, καὶ φύματα, καὶ ἀρθριτικά. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="21">
-                        <p>21. Τοῦ δὲ θέρεος, ἔνιά τε τουτέων, καὶ πυρετοὶ ξυνεχέες, καὶ <pb n="496"
-                            /> καῦσοι, καὶ τριταῖοι πλεῖστοι, καὶ ἔμετοι, καὶ διάῤῥοιαι, καὶ
+                        <p>21. Τοῦ δὲ θέρεος, ἔνιά τε τουτέων, καὶ πυρετοὶ ξυνεχέες, καὶ <pb n="496"/> καῦσοι, καὶ τριταῖοι πλεῖστοι, καὶ ἔμετοι, καὶ διάῤῥοιαι, καὶ
                             <lb/>ὀφθαλμίαι, καὶ ὤτων πόνοι, καὶ στομάτων ἑλκώσιες, καὶ σηπεδόνες
                             <lb/>αἰδοίων, καὶ ἵδρωα. </p>
                     </div>
@@ -634,8 +652,7 @@
                     <div type="textpart" subtype="aphorism" n="31">
                         <p>31. Τοῖσι δὲ πρεσβύτῃσι, δύσπνοιαι, κατάῤῥοοι βηχώδεες,
                             <lb/>στραγγουρίαι, δυσουρίαι, ἄρθρων πόνοι, νεφρίτιδες, ἴλιγγοι,
-                            <lb/>ἀποπληξίαι, καχεξίαι, ξυσμοὶ τοῦ σώματος ὅλου, ἀγρυπνίαι, <pb
-                                n="502"/> κοιλίης καὶ ὀφθαλμῶν καὶ ῥινῶν ὑγρότητες, ἐμβλυωπίαι,
+                            <lb/>ἀποπληξίαι, καχεξίαι, ξυσμοὶ τοῦ σώματος ὅλου, ἀγρυπνίαι, <pb n="502"/> κοιλίης καὶ ὀφθαλμῶν καὶ ῥινῶν ὑγρότητες, ἐμβλυωπίαι,
                             γλαυκώσιες, <lb/>βαρυηκοΐαι. </p>
                     </div>
                 </div>
@@ -691,8 +708,7 @@
                             κακόν. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="13">
-                        <p>13. Πρὸς τοὺς ἐλλεβόρους τοῖσι μὴ ῥηϊδίως ἄνω καθαιρομένοισι, <pb n="506"
-                            /> πρὸ τῆς πόσιος προϋγραίνειν τὰ σώματα πλείονι <lb/>τροφῇ καὶ
+                        <p>13. Πρὸς τοὺς ἐλλεβόρους τοῖσι μὴ ῥηϊδίως ἄνω καθαιρομένοισι, <pb n="506"/> πρὸ τῆς πόσιος προϋγραίνειν τὰ σώματα πλείονι <lb/>τροφῇ καὶ
                             ἀναπαύσει. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="14">
@@ -796,8 +812,7 @@
                         <p>36. Ἱδρῶτες πυρεταίνουσιν ἢν ἄρξωνται, ἀγαθοὶ τριταῖοι, <lb/>καὶ
                             πεμπταῖοι, καὶ ἑβδομαῖοι, καὶ ἐναταῖοι, καὶ ἑνδεκαταῖοι, καὶ
                             <lb/>τεσσαρεσκαιδεκαταῖοι, καὶ ἑπτακαιδεκαταῖοι, καὶ μιῇ καὶ εἰκοστῇ,
-                            <lb/>καὶ ἑβδόμῃ καὶ εἰκοστῇ, καὶ τριηκοστῇ πρώτῃ, καὶ τριηκοστῇ <pb
-                                n="516"/> τετάρτῃ· οὗτοι γὰρ οἱ ἱδρῶτες νούσους κρίνουσιν· οἱ
+                            <lb/>καὶ ἑβδόμῃ καὶ εἰκοστῇ, καὶ τριηκοστῇ πρώτῃ, καὶ τριηκοστῇ <pb n="516"/> τετάρτῃ· οὗτοι γὰρ οἱ ἱδρῶτες νούσους κρίνουσιν· οἱ
                             <lb/>δὲ μὴ οὕτω γινόμενοι πόνον σημαίνουσι καὶ μῆκος νούσου <lb/>καὶ
                             ὑποτροπιασμούς. </p>
                     </div>
@@ -1050,8 +1065,7 @@
                             πέντε καὶ τριήκοντα ἐτέων. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="10">
-                        <p>10. Ὁκόσοι κυνάγχην διαφεύγουσι, καὶ ἐς τὸν πλεύμονα αὐτέοισι <pb n="536"
-                            /> τρέπεται, ἐν ἑπτὰ ἡμέρῃσιν ἀποθνήσκουσιν· ἢν δὲ ταύτας
+                        <p>10. Ὁκόσοι κυνάγχην διαφεύγουσι, καὶ ἐς τὸν πλεύμονα αὐτέοισι <pb n="536"/> τρέπεται, ἐν ἑπτὰ ἡμέρῃσιν ἀποθνήσκουσιν· ἢν δὲ ταύτας
                             <lb/>διαφύγωσιν, ἔμπυοι γίνονται. </p>
                     </div>
                     <div type="textpart" subtype="aphorism" n="11">
