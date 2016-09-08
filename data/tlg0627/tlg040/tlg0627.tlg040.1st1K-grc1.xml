@@ -1,98 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    <fileDesc>
-<titleStmt>
-<title>De anatomia</title>
-        <author>Hippocrates</author>
-        <editor>Émile Littré</editor>
-        <funder>Andrew W. Mellon Foundation</funder>
-      <respStmt>
-<persName xml:id="DDD">Digital Divide Data</persName>
-<resp>Keyboarding</resp>
-</respStmt>
-</titleStmt>
-<publicationStmt>
-<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
-<publisher>University of Leipzig</publisher>
-<pubPlace>Germany</pubPlace>
-<idno type="filename">tlg0627.tlg040.1st1K-grc1.xml</idno>
-<availability>
-<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
-</availability>
-<date>2016</date>
-</publicationStmt>
-<sourceDesc>
-<biblStruct>
-          <monogr>
-            <title>Oeuvres complètes d'Hippocrate</title>
-            <author>Hippocrates</author>
-            <editor>Émile Littré</editor>
-            <imprint>
-              <publisher>Baillière</publisher>
-              <pubPlace>Paris</pubPlace>
-              <biblScope unit="vol">8</biblScope>
-              <biblScope unit="pp" from="538" to="540">538-540</biblScope>
-              <date>1853</date>
-            </imprint>
-          </monogr>
-        </biblStruct>    
-        </sourceDesc>
-</fileDesc>
-<encodingDesc>
-<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>  <refsDecl n="CTS">
-        <cRefPattern matchPattern="(\w+).(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern matchPattern="(\w+).(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern matchPattern="(\w+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-      </refsDecl>
-    </encodingDesc>
-<profileDesc>
-<langUsage>
-        <language ident="la">Latin</language>
-        <language ident="greek">Greek</language>
-      </langUsage>
-    </profileDesc>
-</teiHeader>
-<text>
-<body>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt><title>De anatomia</title>
+                <author>Hippocrates</author>
+                <editor>Émile Littré</editor>
+                <funder>Andrew W. Mellon Foundation</funder>
+                <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+          <persName>Mark Schiefsky, Harvard University</persName>
+          <persName>Gregory R. Crane, Universität Leipzig</persName>
+          <persName>Uwe Vagelpohl, University of Warwick</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <orgName xml:id="DDD">Digital Divide Data</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+          <persName>Gregory R. Crane</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+          <persName>Matt Munson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+          <persName>Annette Geßner</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer (University of Leipzig)</resp>
+          <persName>Thibault Clérice</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Technical Advisor</resp>
+          <persName>Bruce Robertson</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
+                    Mellon Foundation</authority>
+                <publisher>University of Leipzig</publisher>
+                <pubPlace>Germany</pubPlace>
+                <idno type="filename">tlg0627.tlg040.1st1K-grc1.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
+                        under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</licence>
+                </availability>
+                <date>2016</date>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title>Oeuvres complètes d'Hippocrate</title>
+                        <author>Hippocrates</author>
+                        <editor>Émile Littré</editor>
+                        <imprint>
+                            <publisher>Baillière</publisher>
+                            <pubPlace>Paris</pubPlace>
+                            <biblScope unit="vol">8</biblScope>
+                            <biblScope unit="pp" from="538" to="540">538-540</biblScope>
+                            <date>1853</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://catalog.hathitrust.org/Record/009347819">HathiTrust</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="greek">Greek</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
 
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg040.1st1K-grc1">
-<pb n="538"/>
-
-<head>ΠΕΡΙ ΑΝΑΤΟΜΗΣ.</head>
-<p>1. Ἀρτηρίη ἐξ ἑκατέρου φαρυγγέθρου τὴν ἔκφυσιν ποιευμένη ἐς
-<lb/>ἄκρον πνεύμονος τελευτᾷ, κρίκοις ξυγκειμένη ὁμορυσμοῖς, τῶν περιηγέων
-<lb/>ἁπτομένη κατ’ ἐπίπεδον ἀλλήλων. Αὐτὸς δὲ ὁ πνεύμων
-<lb/>συνεξαναπληροῖ τὴν χέλυν, τετραμμένος ἐς τὰ ἀριστερὰ, πέντε
-<lb/>ὑπερκορυφώσιας ἔχων, ἃς δὴ καλέουσι λοβοὺς, τεφρίνης χροιῆς τυχὼν,
-<lb/>στίγμασιν ὀφρυόεσι κεκεντημένος, φύσει ἐὼν τενθρηνιώδης.
-<lb/>Μέσῳ δ’ αὐτέῳ ἡ καρδίη ἐγκαθίδρυται, στρογγυλωτέρη καθεστεῶσα
-<lb/>πάντων ζώων. Ἀπὸ δὲ τῆς καρδίης ἐς ἧπαρ βρογχίη πολλὴ καθήκει,
-<lb/>καὶ μετὰ βρογχίης φλὲψ μεγάλη καλευμένη, δι’ ἧς οὖλον τὸ
-<lb/>σκῆνος τρέφεται. Τὸ δὲ ἧπαρ ὁμορυσμίην μὲν ἔχει τοῖς ἄλλοις ἅπασιν,
-<lb/>αἱμοῤῥωδέστερον δέ ἐστι τῶν ἄλλων, ὑπερκορυφώσιας ἔχον δύο,
-<lb/>ἃς καλέουσι πύλας, ἐν δεξιοῖς τόποις κειμένας· ἀπὸ δὲ τουτέου σκαλήνη
-<lb/>φλὲψ ἐπὶ τὰ κάτω νεφρῶν ἀποτείνουσα. Νεφροὶ δὲ ὁμοιορυσμοὶ,
-<lb/>τὴν χροιὴν δὲ ἐναλίγκιοι μήλοισιν· ἀπὸ δὲ τουτέων ὀχετοὶ σκαληνοειδέες
-<lb/>ἄκρην κορυφὴν κύστιος κεῖνται. Κύστις δὲ νευρώδης οὔλη
-<lb/>καὶ μεγάλη· ἕκαθεν δὲ κύστιος μετοχὴ, εἰς ὃ πέφυκε. Καὶ τὰ μὲν ἓξ
-<lb/>ἀνὰ μέσον ἐντὸς φύσις ἐκοσμήθη. Οἰσοφάγος δὲ ἀπὸ γλώσσης τὴν
-<lb/>ἀρχὴν ποιεύμενος ἐς κοιλίην τελευτᾷ, ὃν δὴ καὶ ἐπὶ σηπτικῆς κοιλίης
-
-<pb n="540"/>
-
-στόμαχον καλέουσιν. Πρὸς δὲ ἀκάνθης ὄπισθεν ἥπατος φρένες
-<lb/>πεφύκασιν. Ἐκ δὲ πλευρῆς νόθης, λέγω δὲ ἀριστερῆς, σπλὴν ἀρξάμενος
-<lb/>ἐκτέταται ὁμοιορυσμὸς ἴχνει ποδός. Κοιλίη δὲ ἥπατι παρακειμένη
-<lb/>κατ’ εὐώνυμον μέρος οὐλομελής ἐστι νευρώδης. Ἀπὸ δὲ
-<lb/>κοιλίης πέφυκεν ἔντερον ὁμοιορυσμὸν, μικρὸν, πηχέων οὐκ ἔλασσον
-<lb/>δώδεκα, ἑλικηδὸν ἐν κόλποις ἐνειλούμενον, ὃ καλέουσιν ἔνιοι κῶλον,
-<lb/>δι’ οὗ ἡ παραφορὰ τῆς τροφῆς γίνεται. Ἀπὸ δὲ κώλου πέφυκεν ἀρχὸς
-<lb/>λοίσθιος, σάρκα περιπληθέα ἔχων, ἐς ἄκρον, δακτυλίου τελευτῶν.
-<lb/>Τὰ δὲ ἄλλα ἡ φύσις, διετάξατο.
-</p>
-</div>
-</body>
-</text>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0627.tlg040.1st1K-grc1">
+                <pb n="538"/>
+                <div type="textpart" subtype="work" n="1">
+                    <head>ΠΕΡΙ ΑΝΑΤΟΜΗΣ.</head>
+                    <p>1. Ἀρτηρίη ἐξ ἑκατέρου φαρυγγέθρου τὴν ἔκφυσιν ποιευμένη ἐς <lb/>ἄκρον
+                        πνεύμονος τελευτᾷ, κρίκοις ξυγκειμένη ὁμορυσμοῖς, τῶν περιηγέων
+                        <lb/>ἁπτομένη κατ’ ἐπίπεδον ἀλλήλων. Αὐτὸς δὲ ὁ πνεύμων <lb/>συνεξαναπληροῖ
+                        τὴν χέλυν, τετραμμένος ἐς τὰ ἀριστερὰ, πέντε <lb/>ὑπερκορυφώσιας ἔχων, ἃς δὴ
+                        καλέουσι λοβοὺς, τεφρίνης χροιῆς τυχὼν, <lb/>στίγμασιν ὀφρυόεσι
+                        κεκεντημένος, φύσει ἐὼν τενθρηνιώδης. <lb/>Μέσῳ δ’ αὐτέῳ ἡ καρδίη
+                        ἐγκαθίδρυται, στρογγυλωτέρη καθεστεῶσα <lb/>πάντων ζώων. Ἀπὸ δὲ τῆς καρδίης
+                        ἐς ἧπαρ βρογχίη πολλὴ καθήκει, <lb/>καὶ μετὰ βρογχίης φλὲψ μεγάλη καλευμένη,
+                        δι’ ἧς οὖλον τὸ <lb/>σκῆνος τρέφεται. Τὸ δὲ ἧπαρ ὁμορυσμίην μὲν ἔχει τοῖς
+                        ἄλλοις ἅπασιν, <lb/>αἱμοῤῥωδέστερον δέ ἐστι τῶν ἄλλων, ὑπερκορυφώσιας ἔχον
+                        δύο, <lb/>ἃς καλέουσι πύλας, ἐν δεξιοῖς τόποις κειμένας· ἀπὸ δὲ τουτέου
+                        σκαλήνη <lb/>φλὲψ ἐπὶ τὰ κάτω νεφρῶν ἀποτείνουσα. Νεφροὶ δὲ ὁμοιορυσμοὶ,
+                        <lb/>τὴν χροιὴν δὲ ἐναλίγκιοι μήλοισιν· ἀπὸ δὲ τουτέων ὀχετοὶ σκαληνοειδέες
+                        <lb/>ἄκρην κορυφὴν κύστιος κεῖνται. Κύστις δὲ νευρώδης οὔλη <lb/>καὶ μεγάλη·
+                        ἕκαθεν δὲ κύστιος μετοχὴ, εἰς ὃ πέφυκε. Καὶ τὰ μὲν ἓξ <lb/>ἀνὰ μέσον ἐντὸς
+                        φύσις ἐκοσμήθη. Οἰσοφάγος δὲ ἀπὸ γλώσσης τὴν <lb/>ἀρχὴν ποιεύμενος ἐς
+                        κοιλίην τελευτᾷ, ὃν δὴ καὶ ἐπὶ σηπτικῆς κοιλίης <pb n="540"/> στόμαχον
+                        καλέουσιν. Πρὸς δὲ ἀκάνθης ὄπισθεν ἥπατος φρένες <lb/>πεφύκασιν. Ἐκ δὲ
+                        πλευρῆς νόθης, λέγω δὲ ἀριστερῆς, σπλὴν ἀρξάμενος <lb/>ἐκτέταται ὁμοιορυσμὸς
+                        ἴχνει ποδός. Κοιλίη δὲ ἥπατι παρακειμένη <lb/>κατ’ εὐώνυμον μέρος οὐλομελής
+                        ἐστι νευρώδης. Ἀπὸ δὲ <lb/>κοιλίης πέφυκεν ἔντερον ὁμοιορυσμὸν, μικρὸν,
+                        πηχέων οὐκ ἔλασσον <lb/>δώδεκα, ἑλικηδὸν ἐν κόλποις ἐνειλούμενον, ὃ
+                        καλέουσιν ἔνιοι κῶλον, <lb/>δι’ οὗ ἡ παραφορὰ τῆς τροφῆς γίνεται. Ἀπὸ δὲ
+                        κώλου πέφυκεν ἀρχὸς <lb/>λοίσθιος, σάρκα περιπληθέα ἔχων, ἐς ἄκρον,
+                        δακτυλίου τελευτῶν. <lb/>Τὰ δὲ ἄλλα ἡ φύσις, διετάξατο. </p>
+                </div>
+            </div>
+        </body>
+    </text>
 </TEI>

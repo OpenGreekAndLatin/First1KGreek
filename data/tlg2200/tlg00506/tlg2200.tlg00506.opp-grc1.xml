@@ -3,34 +3,49 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader>
   <fileDesc>
-   <titleStmt>
-    <title>Libanius Opera</title>
+   <titleStmt><title>Libanius Opera</title>
     <sponsor>University of Leipzig</sponsor>
     <funder>European Social Fund Saxony</funder>
     <principal>Gregory Crane</principal>
     <respStmt>
-     <persName xml:id="DDD">Digital Divide Data</persName>
-     <resp>OCR-ed, corrected and encoded the text</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Greta Franzini</persName>
-     <resp>Project Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Frederik Baumgardt</persName>
-     <resp>Technical Manager (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Simona Stoyanova</persName>
-     <resp>Project Assistant (University of Leipzig)</resp>
-    </respStmt>
-    <respStmt>
-     <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor (Mount Allison University)</resp>
-    </respStmt>
-   </titleStmt>
-
-   <publicationStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
     <authority>University of Leipzig</authority>
     <idno type="filename">libanius_5.xml</idno>
     <availability>
@@ -73,11 +88,8 @@
    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
     Architecture.</p>
    <refsDecl n="CTS">
-    <cRefPattern n="section" matchPattern="(.+).(.+)"
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern n="chapter" matchPattern="(.+)"
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-    />
+    <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
    </refsDecl>
   </encodingDesc>
 
@@ -166,8 +178,7 @@
       τὴν παρρησίαν ἀνείργει καὶ ψιλῆς οὐκ ἀνέχεται λοιδορίας. εἰ δὲ μή, πρὸς μῖσος καθ’ ἑαυτοῦ τοὺς
       δικαστὰς ἐπι- <lb n="5"/> σπάσεται μετὰ τιμωρίαν τοσαύτην κατὰ μητρὸς θρασυ- νόμενος. πᾶς γὰρ
       ἂν ὑποπτεύσειεν ὡς διὰ τρόπων ὠμότητα μᾶλλον ἢ τῷ πατρὶ τιμωρῶν κατὰ τῆς τε- κούσης ἑτοίμως
-      ὡπλίσατο. εἰ δὲ φανείη τῆς κατὰ τῆς μητρός, ὧς οἷόν τε, φειδόμενος βλασφημίας καὶ ἄκων <lb
-       n="10"/> μέν, ἀναγκαίως δὲ τὴν κατηγορίαν ποιεῖσθαι, δόξει μὲν εἶναι φιλάνθρωπος φύσει, ἐκ δὲ
+      ὡπλίσατο. εἰ δὲ φανείη τῆς κατὰ τῆς μητρός, ὧς οἷόν τε, φειδόμενος βλασφημίας καὶ ἄκων <lb n="10"/> μέν, ἀναγκαίως δὲ τὴν κατηγορίαν ποιεῖσθαι, δόξει μὲν εἶναι φιλάνθρωπος φύσει, ἐκ δὲ
       τῶν πραγμάτων βεβιασμένος εἰργάσθαι τὸν φόνον. οὕτω δὲ μᾶλλον καὶ λεληθότως αὐξήσει τὸ
       ἔγκλημα. τοιοῦτον γὰρ εἶναι δόξει ὥστε καὶ παρὰ φύσιν εἰς οὕτως ἀνήμερον φόνον <lb n="15"/>
       ἑλκύσαι τὸν παῖδα.</p>
@@ -197,8 +208,7 @@
      <p>6. Οὐκ ἀγνοοῦμεν δὲ ὡς ἐπὶ θεῶν δικαστῶν καὶ πρὸς τὰς Ἐριννῦς συνίστησιν αὐτῷ τὴν κρίσιν
       ἀτόπως <lb n="5"/> ὁ μῦθος ὥσπερ τῶν κρειττόνων πρὶν ἀκοῦσαι τὸ δί- καιον ἀγνοούντων καὶ
       μαθεῖν ἐκ τῆς κρίσεως ἀναμε- νόντων ὅπερ ἴδει ψηφίζεσθαι. ἐπεὶ οὖν μύθων ἀρ- χαίων, πλὴν εἰ
-      μὴ πάρεργον, ῥητορικὸς οὐκ ἀνέξεται λόγος, τούτοις χαίρειν εἰπόντες τὸ πρέπον κἀνταῦθα <lb
-       n="10"/> φυλάξωμεν.</p>
+      μὴ πάρεργον, ῥητορικὸς οὐκ ἀνέξεται λόγος, τούτοις χαίρειν εἰπόντες τὸ πρέπον κἀνταῦθα <lb n="10"/> φυλάξωμεν.</p>
       </div>
      </div>
     
@@ -210,8 +220,7 @@
 
      <p>1. Ὤιμην μέν, ὦ ἄνδρες, μόλις ποτὲ τὴν Τύχην ἡμῖν ἐνδιδόναι καὶ καιρὸν ἔσεσθαί μοι λοιπὸν
       κατ’ ἐμαυτὸν ἀδεῶς γενέσθαι καὶ τὰς ἐμὰς δὴ ταύτας ὀδύ <lb n="15"/> ρεσθαι συμφοράς, ἤλπιζον
-      γὰρ ἡμᾶς, οἷα τοὺς ἄλλους ἀνθρώπους, τὰ μὲν δυστυχεῖν, τὰ δὲ καὶ πεπαῦσθαι, <note
-       type="footnote">4 cf. p. 362. Aesch. Eum. 397 sq.</note>
+      γὰρ ἡμᾶς, οἷα τοὺς ἄλλους ἀνθρώπους, τὰ μὲν δυστυχεῖν, τὰ δὲ καὶ πεπαῦσθαι, <note type="footnote">4 cf. p. 362. Aesch. Eum. 397 sq.</note>
       <note type="footnote">12 Ἡ μελέτη] αὕτη ἡ μελέτη μάλιστα εὐπορεῖ δεινότητός τε καὶ σχήματος
        ἄγαν ῥητορικοῦ καὶ δεινῶς ὁ ἀναγιγνώσκων σπου- δῆς καὶ νοῦ κεκαθαρμένου. εἰ γὰρ αἴσθοιτο τῆς
        μελέτης ταύτης τὸ ὑπερβάλλον κάλλος, σοώη σοβοίη ?) καὶ πηδῴη καὶ ἀλλοῖος ἂν ἐξ ἀλλοίου
@@ -270,8 +279,7 @@
     <div type="textpart" subtype="section" n="4">
      <p>τού- <lb n="10"/> του μὲν οὖν αἴτιος ὁ κατήγορος ὥσπερ τοῖς ἡμετέροις ἐπεντρυφῶν ἀτυχήμασι
       καὶ εἰς τοιαύτην ἡμᾶς αἵρεσιν καταστήσας ὥστε καὶ τῶν λεγομένων αὐτὸς ἂν ἔχοι τὴν αἰτίαν
-      εἰκότως. ἐγὼ δὲ πειράσομαι μετρίως τοῦτο ποιεῖν, ὡς ἂν οἷός ὦ. παραιτήσομαι δὲ τοσοῦτον <lb
-       n="15"/> ὑμᾶς μέτριον, ὧς ἐμαυτὸν πείθω· ἂν μεταξὺ λέγων ἀναμνησθῶ τοῦ πατρὸς καὶ τῶν καλῶν
+      εἰκότως. ἐγὼ δὲ πειράσομαι μετρίως τοῦτο ποιεῖν, ὡς ἂν οἷός ὦ. παραιτήσομαι δὲ τοσοῦτον <lb n="15"/> ὑμᾶς μέτριον, ὧς ἐμαυτὸν πείθω· ἂν μεταξὺ λέγων ἀναμνησθῶ τοῦ πατρὸς καὶ τῶν καλῶν
       τῆς μητρὸς <note type="footnote">1 ὁ La sed add n et post ο ras 1 litt | δέ με scripsi e LaB
        Par 3017 cum Boissonadio Pachym. 165 δέ μοι Ma δὲ reliqui libri edd Ι περὶ scripsi ex HV παρὰ
        reliqui libri sed del et περὶ in marg Vi 2, edd | τοῦτον Cl Re 2 ὅτι scripsi ὅτιπερ HLaMaCl ὅ
@@ -377,8 +385,7 @@
     <div type="textpart" subtype="section" n="9">
      <p>αὕτη τῶν καθ’ ἡμᾶς ἀτυχημάτων ἀρχή. ταύτην ἂν εἴποι τις τὴν ἡμέ- ραν ἄρξαι καὶ τῇ μητρὶ ὧν
       διεπράξατο | καὶ τῷ <note type="marginal">R IV 116</note> πατρὶ τοῦ πάθους καὶ &lt;ἡμῖν&gt; a
-      ὧν πεπειράμεθα. ὁ μὲν <lb n="10"/> γὰρ τὸ Ἴλιον καταλαβών, πόλιν ἀλλοδαπήν, ὑπὲρ ἑτέ- <note
-       type="footnote">3 ζήτει πῶς ἐν ἐπαναλήψεσι τρέπουσιν οἱ Ἀττικοὶ τὴν σύν- ταξιν οἷ βούλονται
+      ὧν πεπειράμεθα. ὁ μὲν <lb n="10"/> γὰρ τὸ Ἴλιον καταλαβών, πόλιν ἀλλοδαπήν, ὑπὲρ ἑτέ- <note type="footnote">3 ζήτει πῶς ἐν ἐπαναλήψεσι τρέπουσιν οἱ Ἀττικοὶ τὴν σύν- ταξιν οἷ βούλονται
        δέον γὰρ ἐνταῦθα εἰπεῖν πρὸς τὸ ὁ παῖς οὑτοσὶν, οὗτος ἔσται σοι ἀντ’ ἐμοῦ, ὁ δὲ τοῦτον ἔξεις
        φησὶν ἀντ’ ἐμοῦ Mm</note>
       <note type="footnote">ἐν ταῖς ἐπαναλήψεσιν οὐ μόνον πρὸς τὴν προηγουμένην μετ- οχὴν ἐπάγομεν
@@ -683,8 +690,7 @@
       δὲ τοῖς ἀγνοοῦσι δεικνὺς ἐπ’ αὐτοῖς ἐνέγκοι τὴν γλῶτταν ἐκεῖνα δήπου λέγων· ἥδε τοῦ δεῖνος ἡ
       σωφρονεῖν οὐκ ἐπισταμένη, <lb n="5"/> ἡ Ἀγαμέμνονος, φήσει, σύνοικος, τυχὸν γὰρ ἐκ τῶν
       ἡμετέρων κακῶν τὸ παράδειγμα, ἡ παριδοῦσα τοὺς παῖδας, ἡ ἀνελοῦσα τὸν Ἀγαμέμνονα ὄντος Ὀρέστου
-      παιδός, ὦ θεοί, καὶ παρορῶντος τὰ πεπραγμένα. ταῦτα λέγοντος οὐκ ἂν ἕλοιτό τις ἀπο- <lb n="10"
-      /> θανεῖν πολλάκις ἢ τούτων ἀκούειν; οὐκ ἂν εὔξαιτο τὴν γῆν αὑτῷ διαστῆναι; τοιούτων ἀπήλλαξα
+      παιδός, ὦ θεοί, καὶ παρορῶντος τὰ πεπραγμένα. ταῦτα λέγοντος οὐκ ἂν ἕλοιτό τις ἀπο- <lb n="10"/> θανεῖν πολλάκις ἢ τούτων ἀκούειν; οὐκ ἂν εὔξαιτο τὴν γῆν αὑτῷ διαστῆναι; τοιούτων ἀπήλλαξα
       συμφο- ρῶν ἐμαυτὸν ὁμοῦ καὶ τὴν πατρίδα καὶ τὴν ἡνίκα ἐσωφρόνει μητέρα.</p>
     </div>
      
@@ -770,8 +776,7 @@
      <div type="textpart" subtype="section" n="32">
      <p>32. Τί οὖν αἰσχροῖς πράγμασιν αἰτίας οὐ προσ- ηκούσας ἁρμόζεις καὶ τὸν σύλλογον ἡμῖν αὗθις
       τὸν ἐπὶ Τροίας προφέρεις καὶ τὴν αἰχμάλωτον κόρην; <lb n="5"/> ἐχρῆν γὰρ ἐκεῖνο δήπουθεν
-      ἐνθυμεῖσθαι, ὡς θυμοῦ καιρὸς ἦν ἐκεῖνος καὶ φιλονεικίας οἱ λόγοι, | ὅτε <note type="marginal"
-       >RIV 124</note> τις καὶ τῶν ἄγαν έν λόγοις μετρίων ἔφθασέ τι τῶν μὴ προσηκόντων εἰπὼν καί τι
+      ἐνθυμεῖσθαι, ὡς θυμοῦ καιρὸς ἦν ἐκεῖνος καὶ φιλονεικίας οἱ λόγοι, | ὅτε <note type="marginal">RIV 124</note> τις καὶ τῶν ἄγαν έν λόγοις μετρίων ἔφθασέ τι τῶν μὴ προσηκόντων εἰπὼν καί τι
       προήκατο ῥῆμα παρὰ γνώμην οὕτω κελεύοντος τοῦ θυμοῦ, ὅς γε καὶ τὸ <lb n="10"/> σμικρὸν ἄγαν
       ἐπαίρει καὶ τὰ μεγάλα ποιεῖ τοῖς λόγοις ἐλάττω.</p>
     </div>
@@ -779,8 +784,7 @@
     <div type="textpart" subtype="section" n="33">
      <p>οὐ μὴν ἀλλ’ εἰ κἀκεῖνά τις ἐπ’ ἀληθείας σκοπεῖν ἐθέλοι, εὑρήσει πρὸς ἐπαίνου μᾶλλον ἢ λοιδο-
       ρίας. ἴστε γὰρ δήπου πάντες ὡς τὰ τῶν ἀγαθῶν φαῦλα καὶ μικρὰ τῇ τῶν μειζόνων ἀντεξετάσει
-      λαμπρότερα <lb n="15"/> δείκνυται. καὶ διὰ τοῦτο πάντες ἄνθρωποι πρὸς τὰς <note
-       type="footnote">5 II. ἁ 54 12 Dem. p. 323,25; 384, 27; 538,4</note>
+      λαμπρότερα <lb n="15"/> δείκνυται. καὶ διὰ τοῦτο πάντες ἄνθρωποι πρὸς τὰς <note type="footnote">5 II. ἁ 54 12 Dem. p. 323,25; 384, 27; 538,4</note>
       <note type="footnote">1 ἄλλο Ma | ὧς om Va 2 τὸν Mor | signum interro- gationis posui ex
        HVaLaViMa colon reliqui libri edd 3 αἰσχροῖς Ma sed αἴσχρ’ in ras m3 4 ἁρμόζεις reposui
        libris ἁρμόττεις edd 5 προσφέρεις HVa sed in hoc σ eras, LaCl φέρεις Mor 6 δὲ Ma | δήπουθεν
@@ -811,8 +815,7 @@
      
      <div type="textpart" subtype="section" n="35">
      <p>35. Θαυμάζω δὲ τοῦ κατηγόρου μὴ συνιέντος ὅτι <note type="marginal">RIV 125</note> διὰ
-      τούτων I τῶν λόγων μείζω τῇ μητρὶ τὴν κατηγορίαν προσάπτει. τίς γὰρ γυνὴ σωφρονοῦσα τοσ- <note
-       type="footnote">9 II. ἁ 113 cf. p. 390, 16</note>
+      τούτων I τῶν λόγων μείζω τῇ μητρὶ τὴν κατηγορίαν προσάπτει. τίς γὰρ γυνὴ σωφρονοῦσα τοσ- <note type="footnote">9 II. ἁ 113 cf. p. 390, 16</note>
       <note type="footnote">2 πᾶς Ma aed ag in ras m3 πῶς Plan 3 τις Ma 4 αἰσχροὺς Vi sed ἐχθροὺς in
        marg m2 Ma sed αἰσχροὺς suprascr m3, Cl 5 ἐν inserui e ViMaCl Plan Macar om HV edd | τοῖς
        ante ἀνθρώποις MVi | διαιτᾶσθαι HVB Plan Macar | οὔτε V sed οὐ in ras m2 6 μὴ om Cl inser Ma3
@@ -853,8 +856,7 @@
     </div>
 
     <div type="textpart" subtype="section" n="37">
-     <p>τίς τῶν ἀπὸ Τροίας Ἑλλήνων τοιούτων ἐπιβατηρίων ἀπήλαυσε χρόνῳ καὶ μόλις τὴν πατρίδα, <lb
-       n="5 "/>τὸ γύναιον, τοὺς παῖδας τεθεαμένος; οὐκ ἔστιν οὐδείς. ἀλλ’ οἱ μὲν ἄλλοι
+     <p>τίς τῶν ἀπὸ Τροίας Ἑλλήνων τοιούτων ἐπιβατηρίων ἀπήλαυσε χρόνῳ καὶ μόλις τὴν πατρίδα, <lb n="5 "/>τὸ γύναιον, τοὺς παῖδας τεθεαμένος; οὐκ ἔστιν οὐδείς. ἀλλ’ οἱ μὲν ἄλλοι
       πανηγυρίζουσιν, αἱ μὲν γυναῖκες διὰ τοὺς ἄνδρας, διὰ δὲ τοὺς πατέρας οἱ παῖδες, καὶ πλείονος
       ἡδονῆς πρόφασιν τῶν λαφύρων ποιοῦνται τὸ RIV 126 πλῆθος· ἡμεῖς δὲ μόνοι | ξίφει τὸν Ἀτρέως δε-
        <lb n="10"/> δέγμεθα.</p>
@@ -956,8 +958,7 @@
 
     <div type="textpart" subtype="section" n="45">
      <p>ὅθεν οἶμαι τὸν Ἀπόλλω καὶ τὰ λανθάνοντα, μήτι γε τὰ πᾶσι πρόδηλα, καλῶς ἐπιστάμενον οὐχ ὧς
-      ἀδήλου τῆς πράξεως οὔσης κατ- ηγορεῖν ὑποθέσθαι, ἀλλ’ ἀμφότερα βουλόμενον, ὅπως <note
-       type="footnote">5 Pind. Pyth. II 32</note>
+      ἀδήλου τῆς πράξεως οὔσης κατ- ηγορεῖν ὑποθέσθαι, ἀλλ’ ἀμφότερα βουλόμενον, ὅπως <note type="footnote">5 Pind. Pyth. II 32</note>
       <note type="footnote">19 ὑποθέσθαι] συμβουλεῦσαι suprascr My</note>
       <note type="footnote">3 ἐκεῖνα] καὶ B I λέγειν in marg Vi 2 | ἐχρῆν in ras Ma 3</note>
       <note type="footnote">6 καὶ ante κεῖται M 7 ἀνηρημένος ἔνδον Va | μήποτε Vi 9 ἂν om Ma |
@@ -968,8 +969,7 @@
        hoc ἀνθρώπους in marg m2, Ma edd 16 ante τὸν ViMa sed in hoc del m 3, ὢ 17 καὶ om Vi | μήτοι
        HVMaCl 1 κακῶς Re 18 τῆς om V</note>
       <pb n="400"/> οἴ τε ἀσεβοῦντες δίκην ὑπόσχοιεν καὶ τοῦτο πρὸς θεραπείαν ἔσται μᾶλλον τῷ
-      πεπονθότι τὸ τοὺς οἰκειο- τάτους εἶναι τοὺς αὐτῷ τιμωροῦντας, ἐμὲ τὸν ἐκεί- <note
-       type="marginal">RIV 128</note> νοῦ παῖδα | καλεῖν πρὸς τὴν πρᾶξιν καὶ τὴν κατὰ <lb n="5"/>
+      πεπονθότι τὸ τοὺς οἰκειο- τάτους εἶναι τοὺς αὐτῷ τιμωροῦντας, ἐμὲ τὸν ἐκεί- <note type="marginal">RIV 128</note> νοῦ παῖδα | καλεῖν πρὸς τὴν πρᾶξιν καὶ τὴν κατὰ <lb n="5"/>
       τῶν ἀδικούντων ἐνδείκνυσθαι τιμωρίαν. εἰ γὰρ δίδως τὸν Πύθιον εἰδέναι τὰ πεπραγμένα, τὸ δὲ
       δικαστήριον ἑκατέρῳ τῶν κρινομένων ἄδηλον ἔχει τὸ πέρας, πῶς ἂν ὁμολογουμένων ἐγκλημάτων
       ἄδηλον τὴν ἐκ τοῦ δικαστηρίου παρέσχετο τιμωρίαν;</p>
@@ -978,8 +978,7 @@
     <div type="textpart" subtype="section" n="46">
      <p>τί δ’ ἂν ἐκώ- <lb n="10"/> λῦσε τὸν θεὸν εἰδότα με τῷ χρησμῷ μέλλειν, ὧς αὐτός που φῄς,
       ἀπατᾶσθαι καὶ τὰ δεινότατα πράττειν ἀντὶ τοῦ τιμωρεῖν τὸ δικάζεσθαι μετειληφότα σαφῶς οὑτωσὶ
-      λέγειν· κρῖνον τὴν μητέρα καὶ κατηγόρει καὶ τὴν ἐκ τῶν δικαζόντων ἀνάμενε ψῆφον; οὐ <note
-       type="marginal">15</note> γὰρ ἂν εἰδὼς τὸ μέλλον παρεῖδεν ἄτοπον πρᾶξιν ὥσπερ σαφεστέρου
+      λέγειν· κρῖνον τὴν μητέρα καὶ κατηγόρει καὶ τὴν ἐκ τῶν δικαζόντων ἀνάμενε ψῆφον; οὐ <note type="marginal">15</note> γὰρ ἂν εἰδὼς τὸ μέλλον παρεῖδεν ἄτοπον πρᾶξιν ὥσπερ σαφεστέρου
       φειδόμενος ῥήματος καὶ ταῦτα μέλλων αὐτὸς τῶν ἐσομένων ἀποφέρεσθαι τὴν αἰτίαν. παντὸς γὰρ
       πράγματος ὁ τὴν πρόφασιν παρασχὼν οὗτος, οἶμαι, τῶν ἐκβησομένων αἴτιος ἂν εἴη δικαίως.</p>
     </div>
@@ -997,8 +996,7 @@
        | av ante οἶμαι MaCl | οἶμαι Ma sed oi in ras m 3 19 ἐκβεβησομένων HV</note>
       <pb n="401"/> δέον τὸ τοῦ πατρὸς πάθος ὡς ἐνῆν μάλιστα θεραπεύειν ἕτερον ἂν ἀδίκως παρεῖδε
       γενέσθαι ὥσπερ ἐφηδόμενος τῇ συνεχείᾳ τῶν φόνων; οὔπω, πρὸς Δῖός, λογισμὸν λαμβάνεις ὡς τοῦ
-      θεοῦ μᾶλλον κατηγορεῖς καὶ μονον- ουχὶ βοᾷς, ἀλλ’ οὐκ ἐμὸς ὁ λόγος, ὦ Πύθιε, ὡς ἠδί- <lb n="5"
-      /> ’Απόλλων, Ἀπόλλων, ὡς ἐναγῆ πεποίηκε φόνον, ὡς αἴτιος κακῶν τῇ μητρὶ καὶ μετ’ ἐκείνην ἐμοί;
+      θεοῦ μᾶλλον κατηγορεῖς καὶ μονον- ουχὶ βοᾷς, ἀλλ’ οὐκ ἐμὸς ὁ λόγος, ὦ Πύθιε, ὡς ἠδί- <lb n="5"/> ’Απόλλων, Ἀπόλλων, ὡς ἐναγῆ πεποίηκε φόνον, ὡς αἴτιος κακῶν τῇ μητρὶ καὶ μετ’ ἐκείνην ἐμοί;
      </p>
     </div>
 
@@ -1036,8 +1034,7 @@
     </div>
 
     <div type="textpart" subtype="section" n="50">
-     <p>ὅπερ ὑμῖν οὐχὶ προσῆκον, 03 ἄνδρες, τοῖς εἰς ὑμᾶς ἁμαρτησομένοις καὶ τὴν τῶν ὑμετέρων <note
-       type="footnote">10 Dem. p. 12, 29 12 cf. p. 392, 1</note>
+     <p>ὅπερ ὑμῖν οὐχὶ προσῆκον, 03 ἄνδρες, τοῖς εἰς ὑμᾶς ἁμαρτησομένοις καὶ τὴν τῶν ὑμετέρων <note type="footnote">10 Dem. p. 12, 29 12 cf. p. 392, 1</note>
       <note type="footnote">1 τοὺς ante τῆς Ma sed del m 3, Cl 2 ταῦτα HVLaB Ma sed in hoc ’ supra ἁ
        add m3, Cl ταὐτὰ Va 3 ἤμελλον Ἠοῖ | ἐνταῦθα Ma sed in ἐντεῦθεν corr m3, Cl | ἐναντίον Vi 4
        ἐκφέρειν om MVi 5 δεῖ Ma sed ἔ praepos m3, Cl | δῖός Vi sed θεῶν in marg m 2 θεῶν B | λέγε
@@ -1064,8 +1061,7 @@
       ὑμᾶς ἔροιτο τὴν αἰτίαν | τοῦ τότε πολέμου, εἴποιτ’ ἂν <note type="marginal">RIV 130</note>
       μηδὲν ἀναμείναντες ὅτι σωφρονεῖν οὐκ ἐβούλοντο <lb n="15"/> Τρῶες. πῶς οὖν οὐκ αἰσχρόν, εἰ
       τότε μὲν πλεῖν ἡγεῖσθε καὶ τῶν οἰκείων ἀπεῖναι καὶ πίπτειν ἐπ’ ἀλλοτρίας, ἢν δέῃ, ἵνα
-      σωφρονεῖν διδάξητε τοὺς βαρ- βάρους, νυνὶ δὲ τῆς αὐτῆς ὑμῖν προφάσεως οὐκ ἐν <note
-       type="footnote">10 Dem. p. 432, 26 16 sq. Eur. Or. 665 sq.</note>
+      σωφρονεῖν διδάξητε τοὺς βαρ- βάρους, νυνὶ δὲ τῆς αὐτῆς ὑμῖν προφάσεως οὐκ ἐν <note type="footnote">10 Dem. p. 432, 26 16 sq. Eur. Or. 665 sq.</note>
       <note type="footnote">1 σωφροσύνης Vi | ἂν om Ma sed post ῥᾳδίως inser m 3, Cl 2 γὰρ om B 3
        νῦν inserui e LaBMaCl om HVVaMVi sed in hoc in marg inser m 2, edd 5 κύριος Ma sed in κυρίους
        corr m 3, Cl | μὴ om Re quod inserendum viderunt lacobs Add 183 et Sintenis 7 τοιοῦτον H |
@@ -1120,8 +1116,7 @@
      <p>ποῦ δὲ φήσει τις δίκαιον εἶναι φόνον τὸν | τοιοῦτον <note type="marginal">R IV 131</note>
       προσαγορεύειν., ἀλλ’ οὐ τιμωρίαν δικαίαν καὶ τοῖς <lb n="11"/> ἐφορῶσι τὰ τοιαῦτα θεοῖς ἀντ’
       ἄλλου τινὸς ἀνακειμέ- νην; εἰ γὰρ ἀρετὴ τούτοις ἀρέσκει καὶ τὰ πραττόμενα κόσμῳ, δῆλον ὡς τοῖς
-      ἐναντίοις ἀγανακτοῦσι καὶ βού- λοιντ’ ἂν μάλιστα μὲν μὴ γενέσθαι τι τῶν οὐχ ὁσίων, <lb n="15"
-      /> εἰ δὲ μή, τοὺς γοῦν δεδρακότας τιμωρουμένους τῷ παραδείγματι σωφρονίζειν τοὺς ἄλλους καὶ
+      ἐναντίοις ἀγανακτοῦσι καὶ βού- λοιντ’ ἂν μάλιστα μὲν μὴ γενέσθαι τι τῶν οὐχ ὁσίων, <lb n="15"/> εἰ δὲ μή, τοὺς γοῦν δεδρακότας τιμωρουμένους τῷ παραδείγματι σωφρονίζειν τοὺς ἄλλους καὶ
       γνῶναι <note type="footnote">2 ἂν εἴποι τίς MVi Mor 3 σιωπήσομαι HV σιωπήσωμαι VaMaCl | καὶ om
        Ma 5 ἐρημία Vi 7 προςμίαν La | τὴν ante ἀναίρεσιν B 8 ἐνῆν scripsi ἦσαν HV sed in hoc γρ ἦν
        in marg m 2, VaLaBViMaCl ἦν M edd 10 φησὶ τίς HVVa Ma sed in hoc ’ eras et ’ supra ἡ m 3, Cl
