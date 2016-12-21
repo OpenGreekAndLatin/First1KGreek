@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    
+<fileDesc>
+<titleStmt>
+<title>Epistula ad Africanum</title>
+<editor>DD. CAROLI ET CAROLI VINCENTII DELARUE</editor>
+ <funder>Harvard Library Arcadia Fund</funder>
+ <principal>Gregory Crane</principal>
+ <respStmt>
+  <persName xml:id="DDD">Digital Divide Data</persName>
+  <resp>Corrected and encoded the text</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Gregory Crane</persName>
+  <resp>Editor-in-Chief, Perseus Digital Library</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Matt Munson</persName>
+  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Annette Gessner</persName>
+  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Thibault Clérice</persName>
+  <resp>Lead Developer (University of Leipzig)</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Bruce Robertson</persName>
+  <resp>Technical Advisor</resp>
+ </respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>Harvard College Library</authority>
+ <idno type="filename">tlg2042.tlg045.1st1K-grc1.xml</idno>
+<availability>
+ <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+</availability>
+<date>2016</date>
+<publisher>Harvard College Library</publisher>
+<pubPlace>United State</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl>
+ <biblStruct>
+ <monogr>
+  <title>ORIGENIS OPERA OMNIA</title>
+  <editor>
+	<persName>
+	 <name xml:lang="lat">DD. CAROLI ET CAROLI VINCENTII DELARUE</name>
+	</persName>
+  </editor>
+  <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+  <imprint>
+	<publisher>EXCUDEBATUR ET VENIT APUD J.-P. MIGNE EDITOREM</publisher>
+	<pubPlace>IN VIA DICTA D'AMBOISE, PROPE PORTAM LUTETIAE PARISIORUM VULGO D'ENFER NOMINATAM, SEU PETIT-MONTROUGE</pubPlace>
+	<date>1857</date>
+  </imprint>
+  <biblScope unit="volume">11</biblScope>
+ </monogr>
+ </biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+ <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+   <refsDecl n="CTS">
+  <cRefPattern matchPattern="(.+).(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:p[@n='$2'])"/>
+  <cRefPattern matchPattern="(.+)" n="epistle" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+ </refsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+<language ident="lat">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg045.1st1K-grc1">
+<div type="textpart" subtype="epistle" n="1">
+<pb n="48"/>
+<head>ΩΡΠΕΝΟΥΣ ΕΠΙΣΤΟΛΗ
+ΠΡΟΣ ΑΦΡΙΚΑΝΟΝ.</head>
+<p n="1">Ὠριγένης Ἀφρικανῷ ἀγαπητῷ ἀδελφῷ ἐν Θεῷ
+Πατρὶ διὰ Ἰησοῦ Χριστοῦ τοῦ ἁγίου παιδὸς αὐτοῦ (16)
+εὖ πράττειν. Ἡ μὲν σὴ ἐπιστολὴ, διʼ ἧς ἐμάνθανον
+ἐνέφηνας περὶ τῆς ἐν τῷ Δανιὴλ φερομένης ἐν ταῖς
+Ἐκκλησίαις Σωσάννης, βραχεῖα μέν τις εἶναι δοκεῖ·
+ἐν ὀλίγοις δὲ πολλὰ προβλήματα ἕχουσα, ὧν ἕκαστον
+ἐδεῖτο οὐ τῆς τυχούσης ἐξεργασίας, ἀλλὰ τοσαύτης,
+ὥστε ὑπερβαίνειν τὸν ἐπιστολικὸν χαρακτῆρα, καὶ
+συγγράμματος ἔχειν (17) περιγραφήν. Ἐγὼ δὲ τὸ
+ἐμαυτοῦ τῆς διανοίας μέτριον, ὅση δύναμις, κατανοῶν,
+ἵνα μὴ ἀναισθητοίην ἐμαυτοῦ, θεωρῶ, ὅτι ἀπολείπομαι
+τῆς ἀπαιτουμένης ἀκριβείας εἰς τὴν ἀντιγραφὴν
+τῆς ἐπιστολῆς σου· ὡς καὶ οὐδʼ ὀλίγαι τῆς
+ἐν Νικομηδείᾳ διατριβῆς ἡμέραι μοι διήρκουν πρὸς
+<note type="footnote">historiam, nec hymnum trium puerorum, nec Belis
+Draconisque fabulas. s Vide ibidem paulo post quibus
+cavillationibus eas perfundat qudam de præceptoribus
+Judæorum.</note>
+<note type="footnote">(12) Ἐξῆς οὐδείς, etc, Origenes, in responso,
+Africani verba aliter refert: Τῶν τε ἐξῆς οὐδεὶς ἕτερος
+ἑτέρου κέχρηται ῥητῷ νοήματι.</note>
+<note type="footnote">(13) Apud Hœschelium deest τούτων; et paulo
+post legitur, σὺ δὲ μοι καὶ ἤχησον.</note>
+<note type="footnote">(14) Ἔκρουσα. Observat Wetstenius ad hoc adagium
+allusisse Joannem Damascenum lib. Iv De ﬁde
+orthodoxa, cap. 17 : Κρούσωμεν τοίνυν εἰς τὸν κάλλιστον
+παράδεισον τῶν Γραφῶν, τὸν εὐώδη, τὸν γλυκύτατον,
+τὸν ὡραιότατον, τὸν παντοίοις τῶν νοερῶν
+θεοφόρων ὀρνέων κελαδήμασι περιηχοῦντα ἡμῶν τὰ
+ὦτα.« Pulsemus igitur ad pulcherrimum illud pomarium
+Scripturarum, illud, inquam, mire fragrans,
+suave, elegantissimumu, quod spirtualium divinarumque
+avium omnigenis garritibus aures nostras cirqutisonet. »</note>
+<note type="footnote">(15) Συνοδίᾳ. Hæschelius, συνουσίᾳ.</note>
+<note type="footnote">(16) Αὐτοῦ. Deest apud Hœschelium [et Cant.] .</note>
+<note type="footnote">(17) Wetstenius ἔχων, Hœschelius vero et codex
+Regius ἕχειν, rectius. infra Hœschelius [cum Cant. ] ,
+θεωρῶν ὅτι ἀπολείπομαι.</note>
+
+<pb n="49"/>
+τὸ κὰν κατὰ τὴν παροῦσαν λέξιν περὶ ὧν ἐξήτησας
+καὶ ἁπῄτησάς με, ἐπιστεῖλαί σοι. Διόπερ συγγνώμην
+ἀπονέμων τῇ τε μετριότητί μου καὶ τῇ ἀπὸ τοῦ καιροῦ
+στενοχωρίᾳ, ἕντυχε τῇ ἐπιστολῇ μετὰ πάσης εὐνοίας
+(.18), συνεισφέρων εἴ τι ὑφʼ ἡμῶν παραλέλειπται.</p>
+<p n="2">Καὶ πρῶτόν γε ἕφασκες, ὅτι ἡνίκα διελεγόμην τῷ
+ἑταίρῳ ἡμῶν Βάσσῳ (19), καὶ συνεχρώμην τῇ τοῦ
+Δανιὴλ νεωτέρου προφητεύσαντος περὶ τῶν κατὰ τὴν
+Σωσάνναν Γραφῇ, τοῦτο πεποίηκα, ὡς λανθάνοντός
+με τοῦ μέρους τοῦ βιβλίου κεκιβδηλευμένου ὅντος.
+Καὶ ἕλεγες τὴν περικοπὴν ταύτην ἐπαινεῖν μέν πως
+ὥς τι χαρίεν· ἔφασκες δὲ ψέγειν ὡς οὖσαν σύγγραμμα
+νεωτερικὸν καὶ πεπλασμένον· καὶ ὅτι, ὡς
+οὐδὲ Φιλιστίων ὁ μῖμος, ἐχρήσατο ἀναπλάσας (20) τὸ
+συγγραμμάτιον τῇ τῶν ὀνομάτων γειτνιάσει, πρίνου
+πρὸς πρίσιν, καὶ σχίνου πρὸς σχίσιν· Ἅπερ κατὰ
+μὲν τὴν Ἐλλήνων φωνὴντοιαῦτα εἶναι δοκεῖ (21), κατὰ
+δὲ τὴν Ἑβραίων οὐδαμῶς. Ἴσθι τοίνυν πρὸς ταῦτα,
+τί χρὴ ἡμᾶς πράττειν οὐ περὶ τῶν κατὰ Σωσάνναν
+μόνον (22), ἐν μὲν τῷ καθʼ Ἕλληνας Ἑλληνικῷ φερομένων
+ἐν πάσῃ Ἐκκλησίᾳ Χριστοῦ, παρὰ δὲ
+Ἑβραίοις μὴ κειμένων· οὐδὲ περὶ τῶν, ὡς ἔφασκες,
+ἄλλων δύο περικοπῶν τῶν ἐπὶ τέλει τοῦ βιβλίου περί
+τε τῶν κατὰ τὸν Βὴλ, καὶ τὸν δράκοντα ἀναγεγραμμένων,
+οὐδ’ αὐτῶν ἐν τῷ Δανιὴλ τῶν Ἑβραίων γεγραμμένων·
+ἀλλὰ καὶ περὶ ἄλλων μυρίων, ἃ κατὰ τὴν μετριότητα
+ἡμῶν τοῖς Ἑβραῖκοῖς συγκρίναντες ἀντιγράφοις
+τὰ ἡμέτερα (23). πολλαχοῦ εὕρομεν. Ἐν
+μὲν γὰρ αὐτῷ τῷ Δανιὴλ περὶ τῆς καμίνου τῆς
+καομένης, τὸ « πεπεδημένοι » εὕρομεν· ἐν δὲ τοῖς
+<note type="footnote">⁴ Dan. III, 23.</note>
+<note type="footnote">(18) Hæschelius: Πρόσεχε τῇ ἐπιστολῇ μετὰ πάσης ἐννοίας.</note>
+<note type="footnote">(19) ῷ ἑταίρῳ ἡμῶν θάσσω. Sunt qui hoc loco
+legendum putant τῷ ἐτερογνώμονι Βάσσῳ. Vide quæ
+supra adnotavimus mn epistolam Alricani. Muz IIæschelius,
+καὶ συνετυχόμην τῇ τοῦ Δανιὴλ. Paulo intra
+idem, ὡς λανθάνοντός μου τοῦ μέρους, male. Paulo
+punt codex Regius, κεκιβδηλευμένου ὄντος. Ab anea
+editis [ut a Caut.] abest ὄντος.</note>
+<note type="footnote">(20) tVetstenius: Ἀλλʼ ὡς οὕσαν σύγγραμμα νεωτερικὸν
+πεπλασμένον· ἔφασκες δὲ ψέγων, ὅτι ὡς οὐδὲ
+διμιστίων ὁ μῖμος ἐχρήσατο ἀναπλάσασθαι, sicque
+Iiœschelius, nisi quod pro ψέγων babet λέγων; pro
+Φιλιστίων ὁ μμος, lect bιλιστίωνος μἶμος, et ἀναπλάσας
+pro ἀναπλάσασθαι· sed præstantior est coditis
+Regii letio quam sequimur in textu, ubi νεωτερικόν
+inter et πεπλασμένον addidimus conjunctionem
+καί, quam habet Africanus [et margo Cantab.[. Expungatur
+item post ὅτι particui ὡς ut superlua,
+et perperam ex epistola Africani huc adducta.Quod
+quominns- facias impedit Barthius ad Greg.
+Corinth., p. 52. Not τε.</note>
+<note type="footnote">(21) Δοκεῖ. Optime codex Regusrentituit hanc vo-
+cem quæin codd. Hœscbclii et V tsteuii omissa
+ret.</note>
+<note type="footnote">(22) Οὐ περὶ τῶν κατὰ Σωσάνναν μόνον, etc.
+Certe ipsemet lieonymus qui passim tum in præfaione
+in Danielem, um in proœmio explanationis
+n cumdem prophetam, Judæorum Porphyriique argumenta
+et cavllationes comta Susannæ, Belis draconisque
+historiam, nec non hymnum trium puerorunn,
+quasi de industria et ex animno colligit, cum lepsset
+a Ruino furectis. ib. , sibi ea quæ dixerat,</note>
+
+<pb n="52"/>
+ἡμετέροις ἀντιγράφοις περισσεύοντα παρὰ τὰ ἐν τοῖς
+Ἑβραϊκοῖς ἕπη οὐκ ὀλίγα, ὥν ἀρχὴ κατὰ μέν τινα
+τῶν φερομένων ἐν ταῖς ἐκκλησίαις ἦν οὕτως· « Προσηύξαντο
+Ἀνανίας, καὶ Ἀζαρίας, καὶ Μισαὴλ, καὶ
+ὕμνησαν τὸν Κύριον· » ἕως τοῦ « Εὐλογεῖτε πάντες
+οἱ σεβόμενοι Κύριον τὸν Θεὸν τῶν θεῶν. Ὑμνεῖτε
+καὶ ἐξομολογεῖσθε, ὅτι εἰς τὸν αἰῶνα τὸ ἕλεος αὐτοῦ,
+καὶ εἰς τὸν αἰῶνα τῶν αἰώνων. Καὶ ἐγένετο ἐν τῷ
+ἀκοῦσαι τὸν βασιλέα ὑμνούντων αὐτῶν, καὶ ἐθεώρει
+αὐτοὺς ζῶντας. » Κατὰ δὲ ἕτερα· « Καὶ περιεπάτουν
+ἐν μέσῳ τῆς φλογὸς ὑμνοῦντες τὸν Θεὸν, καὶ εὐλογοῦντες
+τὸν Κύριον· » ἕως τοῦ· « Εὐλογεῖτε πάντες
+οἱ σεβόμενοι τὸν Κύριον τὸν Θεὸν τῶν θεῶν. Ὑμνεῖτε
+καὶ ἐξομολογεῖσθε, ὅτι εἰς πάντας τοὺς αἰῶνας τὸ
+ελεος αὐτοῦ.» Συνῆπτο δὲ ἐν τοῖς Ἑβραῖκοῖς τό· « Καὶ
+οἱ ἄνδρες ἐκεῖνοι οἱ τρεῖς Σεδρὰχ, Μισὰχ, Ἀβδενεγὼ,
+ἔπεσον εἰς μέσον τοῦ πυρὸς πεπεδημένοι· » τό τε
+« Ὁ βασιλεὺς ὁ Nαβουχοδονόσορ ἐθαύμασε, καὶ ἀνέστη
+ἐν σπουδῇ, καὶ ἀπεκρίθη, καὶ εἶπε τοῖς μεγιστᾶσιν αὐτοῦ.»
+Οὕτω γὰρ Ἀκύλας (24) δουλεύων τῇ Ἑβραῖκῇ
+λέξει ἐκδέδωκεν εἰπών· φιλοτιμότερον πεπιστευμένος
+παρὰ Ἰουδαίοις (25) ἡρμηνευκέναι τὴν Γραφήν· ᾧ
+μάλιστα εἰώθασι οἱ ἀγνοοῦντες τὴν Ἑβραίων διάλεκτον
+χρῆσθαι, ὡς πάντων μᾶλλον ἐπιτετευγμένῳ. Τὰ δὲ
+παρʼ ἡμῖν ἀντίγραφα, ὧν καὶ τὰς λέξεις ἐξεθέμην, τὸ
+μὲν ἦν κατὰ τοὺς Ο΄· τὸ δὲ ἕτερον καοτί
+καὶ ὥσπερ παρʼ ἀμφοτέροις ἕκειτο (26) τὸ περὶ τὴν
+Σωσάνναν, ὡς σὺ φὴς, πλάσμα, καὶ αἱ τελευταῖαι ἐν
+τῷ Δανιὴλ περικοπαί (27)· οὕτω καὶ ταῦτα ἐν ἕπεσιν,ὡς τοχασμῷ εἰπεῖν, τυγχάνοντα διακοσίοις καὶ πρός.</p>
+<p n="3">γ. Καὶ ἐν ἄλλοις δὲ πολλοῖς ἀγίοις βιβλίοις εὕρομεν.
+πὴ μὲν πλείονα παρʼ ἡμῖν κείμενα ἢ παρʼ Ἑβραίοις,
+πὴ δὲ λείποντα. Παραδείγματος δὲ ἕνεκεν, ἐπεὶ μὴ
+πάντα οἶόν τέ ἐστι περιλαβεῖν (28), ὀλίγα ἐκθησό</p>
+<note type="footnote">phetiæ lahacuc ﬁlii Jesu d tribmn Levi; sicut juxta
+Septuaginta interpretes in titulo ejusdem Reiis fabulæ
+ponitur : « Ilomo qudam erat sacerdos, nomine
+Danici, ﬁlius Abda, conviva regis Bhylonis
+: cum Danielem et tres pueros de tribu Judς
+fuisse, sancta Scriptura testetur. » Sed nihil sintile
+in Theodotionis editione erat : exstabat ergo in
+IX X editione. IHuc adde quod inepte admodum responderet
+Origenes apud lXX et apud Theodotionem
+se reperisse Susannæ, Belis ac draconis histo
+rias, si ejusmuuodi historiæ e Theodotione in t. XX.
+editinem transierant, et idem utrobique textus
+erat, ut falso asserit AVetsthenius. Quis autem sibi
+in animum inducat id Orgenem potuisse latere?
+Præterea auctor interpolatæ tgnatu ad lagnesianos
+epstofæ dodeceunem refert luins Danielem , comus
+Susannæ historia contigi : Δανιὴλ ὁ σοφὸς δωδεκαετὴς
+γέγονε κάτοχος τῷ Θεοῦ πνεύματι, καὶ τοὺς
+μάτην τὴν πολιὰν φέροντας πρεσβύτας συκοφάντας
+καὶ ἐπιθυμητὰς ἀλλοτρίου κάλλους ἀπήλεγξε. « Diei
+lle sapiens, cum duodecm esset annorum Spiritu
+Dei allatus erat, et senes frustra canos ferentes,
+calumniatores et alenæ formæ appetentes redrguit.
+» Idem habet Sulptius Severus Hstoria sar,
+m, et versio Syriaca mltera quam exhibet Valtonus
+tom. IV Polyglot. Atqui Τhcodotionis editio nulhbi
+indcat Danelem tunc duodecim luisse annorutm:
+hæc ergo dodecennis ætas e veteri l.X.X aut alinse
+cuusptam qui nomen eorum mentiebatur, edtios
+ab Ecclesms postea repudiuta desumpta est.</note>
+<note type="footnote">(27) Codex VV etutenii mendose, περικόπομεν.</note>
+<note type="footnote">(28) Patricius Jomus, παραλαβεῖν,. Infra VVoι.
+steni codex, οἰκοδομῆσαι δυνάμενα. aυlυυυosttPa</note>
+
+<pb n="56"/>
+<p n="4">Καὶ δτε « ἧλΘον οἱ ἄγγελοι τοῦ Θεοῦ παρατῆναι
+ἐνώπιον τοῦ Θεοῦ (33), καὶ ὁ διάβολος ἦλθε μετʼ
+αὐτῶν, » τό· « Περιελθὼν τὴν γῆν καὶ ἐμπεριπατήσας
+ἐν αὐτῇ Ἔτι δὲ οὐκ ἦν παρʼ Ἑβραίοις μετὰ
+τό· Ὁ Κύριος ἔδωκεν, ὁ Κύριος ἀφείλετο· « Ὡς τῷ
+Κυρίῳ ἕδοξεν, οὕτω καὶ ἐγένετο. » Πλείονα δὲ ἐν
+τοῖς ἡμετέροις παρὰ τὰ Ἑβραῖκὰ, ὅτε εἶπε τῷ
+Ἰὼβ (34) ἡ γυνὴ αὐτοῦ, ἀπὸ τοῦ· « Μέχρι τίνος καρτερήσεις;
+λέγων· Ἰδοὺ, ἀναμενῶ χρόνον ἕτι μικρὸν
+προσδεχόμενος τὴν ἐλπίδα τῆς σωτηρίας μου, » ἕως
+τοῦ· « ἵνα ἀναπαύσωμαι τῶν μόχθων μου καὶ τῶν
+ὀδυνῶν, αἵ με νῦν συνέχουσι» μόνον γὰρ τὰ ῥητὰ τῆς
+γυναικὸς ἀναγέγραπται· τό· « Ἀλλʼ εἶπόν τι ῥῆμα
+πρὸς Κύριον, καὶ τελεύτα. »</p>
+<p n="5">Πάλιν τε αὖ πλεῖστά τε ὅσα διὰ μέσου ὅλου τοῦ
+Τὼβ παρʼ Ἑβραίοις μὲν κεῖται, παρʼ ἡμῖν δὲ οὐχί·
+καὶ πολλάκις μὲν ἔπη (35) τέσσαρα ἢ τρία, ἔσθʼ ὅτε
+δὲ καὶ δεκατέσσαρα καὶ δεκαεννέα καὶ δεκαέξ. Καὶ τί
+με δεῖ καταλέγειν ἃ μετὰ πολλοῦ καμάτου ἀνελεξάμεθα,
+ὑπὲρ τοῦ μὴ λανθάνειν (36) ἡμᾶς τὴν διαφορὰν
+τῶν παρὰ Ἰουδαίοις καὶ ἡμῖν ἀντιγράφων; Πολλὰ δὲ
+τοιαῦτα καὶ ἐν τῷ Ἱερεμίᾳ κατενοήσαμεν, ἐν ᾧ καὶ
+πολλὴν μετάθεσιν καὶ ἐναλλαγὴν(37) τῆς λέξεως τῶν
+προφητευομένων εὕρομεν. Καὶ ἐν τῇ Γενέσει δὲ τό·
+« Εἶδεν ὁ Θεὸς, ὅτι καλὸν, » ἐπὶ τῷ γενέσθαι στερέωμα,
+παρʼ Ἑβραίοις οὐχ εὑρίσκεται (38)· καὶ πρόβλημα
+δέ ἐστι παρʼ αὐτοῖς οὐ τὸ τυχὸν τοῦτο. Καὶ
+ἅλλα δὲ ἕστιν εὑρεῖν ἐν τῇ Γενέσει, οἷς σημεῖα παρε-</p>
+<note type="footnote">ab nnione dividit, quod honus esset, Dei sententia
+comprobari. s Venerabilis Boda in Hexcameron pag.
+G, tom. IV « Notandum, inquit, quod hujus verbi
+adjectio hoc in loco in Hebraica veritate non habetur.
+Et mirum quare inter omnia quæ creasse Deus
+legitur, hic solummodo, id est, in secundi dici operibus
+probatio divinæ visionis minime addatur, quæ
+tamen ipsa cum cæteris quæ fecit, Deo bona ess-e
+demonstrantur, cum in sequentibus dicitur, « vidit«que
+Deus cuncta quæ fecit, et erant vide bona. »
+Nsi forte sicut quidam Patrum exponunt, intelligere
+nos in hoc Scriptura voluit, non esse bonum duplicem
+numerum qui ab unitate dividat et prælignrat
+fœdera nuptiarum. » Nec levis est ea de re apud
+Judæas ipsos quæstio. De veteribustestatnr hoc loco
+Origenes; de recentioribus nonnulla observatu digua
+a ﬀert AV etsthenius quæ hic apponere visum est
+non abs re fore. Legitur in Bereschit Rabba, Parascha
+4 : Iuare non scrptum est in secundo (dio)
+quod bonum ? rabbi Jochanan tradidit in nomine
+rhbi Joni ilii Chalephta, quia in illo creata est
+gehenna : quia dictum est (sa. αXX, ὅ3); Nam
+aperta Τophta, sive gehenna a pridie, dies ex quo
+essum dcere pridie, et non ntalins tertius. » IPostea
+sic pegit : « Rabbi Chanina dixit, quia e
+illo creata est divisio, secundum illud : et « dividat
+linter aquas ct aquas. » Dicit rabbi Τebiomi : « Si
+divisio quæ fact ad ordinandum componendumque
+mundum non meretur illud, « quod honum; s
+quanto minus illa, quæ mundum confundit? iRathi
+Samuel dixit, quta illo die necdum absolutum erat
+opus aquarum : ideoque tertia die duplicatur illa
+formula, ut operum secundi et tertii dei consummatio
+denotetur. » Matrona quædam quæsivit ex
+rabbi Joni, « quamobrem dlud, « quia bonum, s</note>
+
+<pb n="60"/>
+<p n="6">Γραφαῖς δεδωκυῖα πάσαις ταῖς (41) Χριστοῦ Ἐκκλησίαις
+οἰκοδομὴν, οὐκ ἐφρόντισε « τῶν τιμῆς ἀγορασθέντων,
+ὑπὲρ ὦν Χριστὸς ἀπέθανεν· » οὗ Υἱοῦ ὄντος
+« οὐκ ἐφείσατο ὁ Θεὸς, » ἡ ἀγάπη, « ἀλλʼ ὑπὲρ ἡμῶν
+πάντων παρέδωκεν αὐτὸν, ἵνα σὺν αὐτῷ τὰ πάντα
+ἡμῖν χαρίσηται; »</p>
+<p n="7">Πρὸς ταῦτα δὲ σκόπει, εἰ μὴ καλὸν μεμνῆσθαι
+τοῦ· « Οὐ μεταθήσεις ὅρια αἰώνια, ἃ ἔστησαν οἱ πρότεροί
+σου; » Καὶ ταῦτα δὲ φημὶ οὐχὶ ὅκνῳ τοῦ ἐρευνᾷν
+καὶ τὰς κατὰ Ἰουδαίους (42) Γραφὰς, καὶ πάσας
+τὰς ἡμετέρας ταῖς ἐκείνων συγκρίνειν, καὶ ὁρᾷν τὰς
+ἐν αὐταῖς διαφοράς. Εἰ μὴ φορτικὸν γοῦν εἰπεῖν, ἐπὶ
+πολὺ τοῦτο, ὅση δύναμις, πεποιήκαμεν, γυμνάζοντες
+αὑτῶν τὸν νοῦν ἐν πάσαις ταῖς ἐκδόσεσι καὶ ταῖς διαφοραῖς
+αὐτῶν (43), μετὰ τοῦ ποσῶς μᾶλλον ἀσκεῖν
+τὴν ἑρμηνείαν τῶν Ο΄· ἵνα μή τι παραχαράττειν δοκοίημεν
+(44) ταῖς ὑπὸ τὸν οὐρανὸν Ἐκκλησίαις, καὶ
+προφάσεις διδῶμεν τοῖς ζητοῦσιν ἀφορμὰς, ἐθέλουσι
+τοὺς ἐν μέσῳ συκοφαντεῖν, καὶ τῶν διαφαινομένων
+ἐν τῷ κοινῷ κατηγορεῖν. Ἀσκοῦμεν δὲ μὴ ἀγνοεῖν
+καὶ τὰς παρʼ ἐκείνοις, ἵνα, πρὸς Ἰουδαίους διαλεγόμενοι
+(45), μὴ προφέρωμεν αὐτοῖς τὰ μὴ κείμενα ἐν
+<note type="footnote">ἐκάστῳ τόπῳ τὸν ἐλλείποντα λόγον. Παρέθετο δὲ αὐτῷ
+ἀστερίσκον· οὐχ ὡς χρείας οὕσης τοῦ πάντως ζητηθῆναι
+τὸν λόγον· περιττὸς γάρ ἐστιν· ἀλλʼ ἵνα μὴ παραλείψῃ
+Ἰουδαίοις καὶ Σαμαρείταις ἐπιλαμβάνεσθαι
+τῶν ἐν ταῖς ἁγίαις Ἐκκλησίαις θείων Γραφῶν, μηδενὸς
+ἐπιληψίμου πράγματος ὑπάρχοντος κατὰ τῆς πίστεως
+ἐν τοῖς ἀπεστερημένοις λόγοις. « Successit his Οrigenes,
+qui uncnique loco quod deerat adjunxit, eique
+asterisci notam appinxit: non quod addita illa
+vocabula admodum necessaria sint, eum supervacua
+videantur; sed ne Judeis ac Samaritanis
+ullam calumniandi sacras foitteras, quibu-in Ecclesiis
+utimur, occasionem relinqueret; cum nihil in subtractis
+ills vocibus contra fﬁdem esset, cuod repreliendi
+meito posset. » tuﬁuus lh. n lnrec. adtersus
+llieron ymum : « Apovtatæ qu. lem et Judæiint erpretati
+sunt ea, quorum lectione Judæi mavme
+utuntur. Et quia frequenter, si disputatio incidsset,
+vel imutata esse aiquanta , vel deesse, vel abundare
+in nostris Scripturis meuticbantur, voluit Orugenes
+nostis ostendere, qualisapud Judæos Scripturarum
+lectio teneretur, et in propriis paginis vel columellis
+editiones earum singulas quasque descripsit;
+et ea quæ apud illos sunt addita vel decerpta, certis
+quibusque signis additis, ad versiculorum capita
+designavit, et in alieno, non suo opere, suas tantummodo
+notas fﬁxit, ut sciremus non quid nobis sed
+quid Judæis adversum nos certantibus, aut deesse
+aut abundare videtur, » idem lHieonymi conslium
+fuit cum ex lebræo sacras Scriptura- Latine vertit.
+Nam prælatione in librum Psalmorum ait : « Nec
+hoc dcc, quo prædecessores meos mordeam, aut
+quidquam de his arbitrer detrahendum, quorum
+translationem diligentissime emendatam, olim meæ
+linguæ hominibus dederim; sed quod ahud sit in
+Ecclesiis Christo credentium Psalmos legere, aliud
+Judæe singula verta calumuniautbus respondere. s
+Idem hb. m Apologiæ a dversus Ruliuum: « Egone,
+inquit, contr Septuagpnta futerpretes aliquid sum
+locutus, quos ante annos plurimos dligentissime
+emendatos, meæ hnguæ studiosis dedi, quos quotihe
+in conventu fratrum edssero, quorum Psalmos
+jusp meditatione decanto? Tam stultus eram ut quod
+in pueritia thoi, senexς ollivisci vellem? iuiversi
+tract ntus mei horum testimoniis texti sunt, cotmentarii
+in duodecim prophetas ct meam et eρ</note>
+
+<pb n="61"/>
+τοῖς ἀντιγράφοις αὐτῶν, καὶ ἵνα συγχρησώμεθα τοῖς
+φερομένοις παρʼ ἐκείνοις· εἰ καὶ ἐν τοῖς ἡμετέροις
+οὐ κεῖται βιβλίοις· τοιαύτης γὰρ οὕσης ἡμῶν τῆς
+πρὸς αὐτοὺς ἐν ταῖς ζητήσεσι παρασκευῆς, οὐ καταφρονήσουσιν,
+οὐδ’ ὡς ἕθος αὐτοῖς, γελάσονται (46)τοὺς
+ἀπὸ τῶν ἐθνῶν πιστεύοντας, ὡς τʼ ἀληθῆ καὶ παρʼ
+αὐτοῖς ἀναγεγραμμένα ἀγνοοῦντας. Ταῦτα μὲν οὖν
+εἰρήσθω πρὸς τὸ μὴ φέρεσθαι παρʼ Ἑβραίοις τὰ
+περὶ Σωσάννης.</p>
+<p n="8">Ἴδωμεν δὲ καὶ ἃ προσφέρεις τῷ λόγῳ ἐγκλήματα.
+Καὶ πρῶτόν γε ἀρξώμεθα ἀπὸ τοῦ δυνηθέντος ἂν
+δυσωπῆσαι πρὸς τὸ μὴ παραδέξασθαι τὴν ἱστορίαν
+(47)· ὅπερ ἐστὶ τὸ περὶ τὴν παρωνυμίαν πρίνου
+μὲν πρὸς, πρίσιν, σχίνου δὲ πρὸς σχίσιν· περὶ οὗ σὺ
+μὲν ἀπεφήνω, ὡς καταλαβὼν τίνα τρόπον ἐν μὲν ἑλληνικαῖς
+φωναῖς τοιαῦτα ὁμοφωνεῖν συμβαίνει, ἐν δὲ
+τῇ Ἑβραΐδι τῷ παντὶ (48) διέστηκεν· ἐγὼ δὲ ἕτι
+ἀμφιβάλλω· ἐπείπερ φροντίσας τῶν κατὰ τὸν τόπον,
+τῷ καὶ αὐτὸς ἠπορηκέναι ἐν αὐτοῖς, οὐκ ὀλίγοις
+Ἑβραίοις ἀνεθέμην πυνθανόμενος, πῶς παρ ʼαὐτοῖς
+ὀνομάζεται πρῖνος, καὶ πῶς λέγουσι τὸ πρίζειν· ἕτι
+δὲ εἰς τί μεταλαμβάνουσι (49) τὴν σχῖνον τὸ φυτὸν,
+καὶ πῶς τὸ σχίζειν ὀνομάζουσιν. Οἱ δὲ τὴν Ἑλληνικὴν
+ἔφασκον ἀγνοεῖν φωνὴν τὴν πρίνου καὶ τὴν
+σχίνου· ἀπῄτουν δὲ αὐτοῖς δειχθῆναι τὰ δένδρα, ἵνʼ
+εἵδειεν ποίας ἐπὶ τούτων αὐτοὶ (50) τάσσουσι φωνάς.
+Καὶ (φίλη γὰρ ἡ ἀλήθεια), οὐκ ἠπόρησα αὐτοῖς ὅψει
+παραστῆσαι τὰ ξύλα. Ἄλλος δὲ ἕφασκε τὰ μὴ ὀνομασθέντα
+τῶν Γραφῶν ποὺ οὐκ ἕχειν διαβεβαιώσασθαι,
+ὅπως Ἑβραῖστὶ λέγεται· προπετὲς δὲ εἶναι, τὸν
+ἀπορήσαντα φωνῇ τῇ Συριακῇ χρήσασθαι ἀντὶ τῆς
+Ἑβραΐδος (51)· καὶ ἕλεγε, καὶ παρὰ τοῖς πάνυ σοφοῖς
+ἐνίοτε λέξεις τινὰς ζητεῖσθαι. Εἰ μὲν οὖν, φησὶ,
+ἕχεις τι παραστῆσαι τὴν σχῖνον ὅπως ποτὲ ὀνομασθεῖσαν
+ἔν τινι Γραφῇ, ἢ τὴν πρῖνον, ἐκεῖθεν ἂν εὕροιμεν
+τὸ ζητούμενον, καὶ τὴν παρʼ αὐτὰ παρωνυμίαν· εἰ
+δὲ μηδαμοῦ ὠνομάσθη, καὶ ἡμᾶς διαλανθάνει τὸ
+τοιοῦτον. Τούτων οὖν ὅσον ἐπὶ μὴ ἱστορίᾳ ὑπὸ
+Ἑβραίων, οἷς συνέμιξα, εἰρημένων, ἐγὼ μὲν εὐλαβῶς
+ἕχω ἀποφήνασθαι, πότερον καὶ παρʼ Ἑβραίοις ἡ ἰσοδυναμία
+τῶν κατὰ ταῦτα παρωνυμιῶν σώζεται, ἢ οὔ·
+σὺ δὲ ὅπως διεβεβαιώσω, αὐτὸς σἶδας ἴσως.</p>
+<p n="9">Μέμνημαι μέν τοί γε φιλομαθεῖ Ἑβραίῳ, καὶ χρηματίχοντι
+(52) παρ᾿ αὐτοῖς σοφοῦ υἱῷ, ἀνατραφέντι
+<note type="footnote">tnagiuta editionem eissorunt, » Et libro tt Aροlogiæ
+adversus eumden Ruﬁnur : « Tu latinas,
+inquit, Sripturas de Græco emendabis, et aliud
+Ecclesiis trades legendum, quam quod semel ab»
+apostolis susceperunt; mihi non licebit post Septuaginta
+edibonem, quam diligentissime emendatam
+meæ linguæ hominibus dedi, ad confutandos Judæos,
+etim ipsa exemplaria vertere, quæ ipsi verissima
+conﬁtentur; ut si quando adversum eos Christianis
+disputatio est, non habeant subterfugiendi
+diverticula, sed suomet potissimum mucrone feriantur
+? » - Μοx mecum emendabis τὰ μὴ προκείμενα.
+Nonτε.</note>
+<note type="footnote">(46) ἐλάσονται, ete. Hieronymus quoque præfatione
+in librum Josue testatur « dolere Judæos quod
+calumniandi eis et irridendi Christianos sit ablata
+occasin. » Et præfatione in librum isaiæ : « lpse
+mihi mercedem restituat i futuro, qui scit me ob</note>
+
+<pb n="64"/>
+ἐπὶ τὸ διαδέξασθκι τὸν πκτέρα,σθμμίξας πτρὶ πλειόνων·
+ἀφʼ οὖ ὡς μὴ ἀθετουμένης τῆς περὶ Σωσάννης
+ἱστορίας ἐμάνθανον καὶ τὰ τῶν πρεσβυτέρων ὀνέματα,
+ὡς παρὰ τῷ Ἱερεμίᾳ κείμενα τοῦτον ἔχοντα
+τὸν τρόπον· « Ποιήσαι σε Κύριος, ὡς Σεδεκίαν ἐποίησε,
+καὶ ὡς Ἀχιὰβ (53), οὕς ἀπετηγάνισε βασιλεὺς Βαβυλῶνος
+ἐν πυρὶ διʼ ἥν ἐποίησαν ἀνομίαν ἐν Ἰσραήλ.»
+Πῶς ὁ μὲν ὑπʼ ἀγγέλου πρίζεται, ὁ δὲ σχίζεται; λεκτέον,
+οὐ κατὰ τὸν ἐνεστῶτα αἰῶνα ταῦτα αὐτοῖς προφητεύεσθαι,
+ἀλλʼ εἰς τὴν ὑπὸ Θεοῦ μετὰ τὴν ἐντεῦθεν
+ἕξοδον κρίσιν. Ὡς γὰρ τὸν πονηρὸν οἰκονόμον
+λέγοντα· « Χρονίζει ὁ κύριός μου ἕρχεσθαι· » καὶ
+διὰ τοῦτο μέθαις σχολάζοντα, καὶ ἐσθίοντα καὶ πί.,
+νοντα μετὰ τῶν μεθυόντων. καὶ τύπτοντα τοὺς συνδούλους,
+ὁ κύριος ἐλθὼν « διχοτομήσει, καὶ τὸ μέρος
+αὐτοῦ μετὰ τῶν ἀπίστων θήσει· » οὕτω καὶ τούτους
+πρεσβυτέρους μὲν χρηματίσαντας, κακῶς δὲ τὴν οἰκο
+νομίαν οἰκονομήσαντας, ἀναλόγως τῷ ἐκεῖ διχοτομεῖ
+σθαι τὸν μοχθηρὸν οἰκονόμον,ἅγ ελοι ἐπὶ τῶν κολάσεων
+τεταγμένοι τινὲς ταῦτα διαθήσουσι (54)· καὶ ὁ μὲν
+σχίσει «πεπαλαιωμένον ἡμερῶν κακῶν, κρίναντα κρίσεις
+ἀδίκους, καὶ τοὺς μὲν ἀθώους κατακρίναντα, ἀπολύοντα
+δὲ τοὺς αἰτίους· » ὁ δὲ πρίσει ὡς « σπέρμα λαναὰν
+ὑπάρχοντα, καὶ οὐκ Ἰούδα, τὸν ὑπὸ τοῦ κάλλους
+ἐξηπατημένον, καὶ ὑπὸ τῆς ἐπιθυμίας διαστραφέντα
+τὴν καρδίαν. »</p>
+<p n="10">Καὶ ἕτερον δὲ οἷδα Ἑβραῖον, περὶ τῶν πρεσβυτέρων
+τούτων τοιαύτας παραδόσεις φέροντα (55), ὅτι
+τοῖς ἐν τῇ αἰχμαλωσίᾳ ἐλπίζουσιν διὰ τῆς Χριστοῦ
+ἐπιδημίας ἐλευθερωθήσεσθαι ἀπὸ τῆς ὑπὸ τοῖς
+ἐχθροῖς δουλείας προσεποιοῦντο οἱ πρεσβύτεροι οὗτοι
+ὡς εἰδότες τὰ περὶ Χριστοῦ σαφηνίζειν· καὶ ἑκάτερος
+αὐτῶν ἀνὰ μέρος ᾗ περιετύγχανε γυναικὶ, καὶ
+ἥν διαφθεῖραι ἐβούλετο, ἐν ἀποῤῥήτῳ δῆθεν ἔφασκεν,
+ὡς ἅρα δέδοται αὐτῷ ἀπὸ Θεοῦ σπεῖραι τὸν Χριστόν·
+εἶτ᾿ ἀπατωμένη (56) τῇ ἐλπίδι τοῦ γεννῆσαι τὸν
+<note type="footnote">tiarum dicitur , « quos friτἰt res B by. on- in
+i« ige, s vitetur Dmnielis historiæ cotraire. IHle
+enim asserit eos ad sententiam Danielis a populo
+esse lapidatos : hic vero scriptum est quod frixerit
+eos rex, Babylonis in igne. Unde et a pleraque ac
+pene omnibus lebræis ipsa quasi fabula non recipitur,
+nec legitur in synagogis corum. Qui enim,
+inquiunt, ﬁeri poterat, ut captivi lapidandi principes
+et prophetas suos haberent potestatem ? Et
+magis hoc esse verum aflirmant, quod scribit Jeremias,
+convctos quidem esse presbyteros a Daniele;
+sed latam in eos sententiam a rege Bbylomis, quii
+in captivos ut victor et dominus habebat imperium. »
+iluic Judæorum objectioni respondet Origenes
+in fragmento libri decimi Stromat. infra a
+nobis edendo : « Nisi forte, inquit, hoc quod scriptum
+est , « intemfecerunt cos, » sic interpretemur
+pro eo quad est, rrgi Babylonis occidendos tradiderunt.
+Sicut et no- dicimus, quod Judæi interfecerut
+Salvatorem; non quo ipsi percusserint, sed
+quo tradiderint occidendum, et succlamantes dixerint:
+« Crucifige, crucilige eum. »</note>
+<note type="footnote">(56) Codex Basil , ἀπατωμένη, et ita forte legendum,
+licet alii codces habeant, ἀπαντωμένη.
+IRescribe quantocius id quod præbent codd. Cantabr.
+et Basil.; pessima est aliorum codicum lectυ.
+Noτε.</note>
+
+<pb n="65"/>
+Χριστὸν ἡ γυνὴ, ἐπεδίδου ἑαυτὴν τῷ ἀπατῶντι· καὶ 
+οὕτως ἐμοιχῶντο τὰς γυναῖκας τῶν πολιτῶν οἱ πρεσβύτεροι
+Ἀχιὰβ καὶ Σεδεκίας. Διὸ καλῶς ὑπὸ τοῦ
+Δανιὴλ ὁ μὲν εἴρηται « πεπαλαιωμένος ἡμερῶν κακῶν· »
+ὁ δὲ ἤκουσε τό· « Οὕτως ἐποιεῖτε ταῖς θυγατράσιν
+Ἰσραὴλ, κἀκεῖναι φοβούμεναι ὡμίλουν ὑμῖν·
+ἀλλʼ οὐ θυγάτηρ Ἰούδα ὑπέμεινε τὴν ἀνομίαν ὑμῶν. »
+Τάχα γὰρ ἀπάτη καὶ φόβος δυνάμενα ἐν ταῖς γυναιξὶν,
+ἐποἰει αὐτὰς παρέχειν ἑαυτῶν τὰ σώματα τοῖς
+λεγομένοις τοὐτοις πρεσβυτέροις.</p>
+<p n="11">Ἀλλʼ εἰκὸς πρὸς ταῦτά σε ζητήσειν (57) τί δήποτε
+οὐ φέρεται παρʼ αὐτοῖς ἐν τῷ Δανιὴλ ἡ ἱστορία,
+εἰ, ὡς φῂς, τοιαῦτα περὶ αὐτῆς οἱ σοφοὶ αὐτῶν παραδιδόασι.
+Λεκτέον δὲ πρὸς ταῦτα, ὅτι ὅσα δεδύνηνται
+τῶν περιεχόντων κατηγορίαν πρεσβυτέρων, καὶ ἀρχόντων,
+καὶ κριτῶν, περιεῖλον ἀπὸ τῆς γνώσεως τοῦ
+λαοῦ, ὧν τινὰ σώζεται ἐν ἀποκρύφοις. Καὶ τούτου
+παράδειγμα δώσομεν τὰ περὶ τὸν Ἡσαΐαν ἱστορούμενα.
+καὶ ὑπὸ τῆς πρὸς Ἑβραίους Ἐπιστολῆς μαρτυρούμενα,
+ἐν οὐδενὶ τῶν φανερῶν βιβλίων γεγραμμένα·
+περὶ γὰρ τῶν προφητῶν διεξερχόμενος, καὶ
+ὧν πεπόνθασιν, ὁ τὴν πρὸς Ἑβραίους γράψας φησίν·
+« Ἐλιθάσθησαν, ἐπρίσθησαν, ἐν φόνῳ μαχαίρας
+ἀπέθανον. » Πευσόμεθα (58) γὰρ ἐπὶ τίνα ἀναφέρηται
+τὸ, « ἐπρίσθησαν, » κατὰ τι ἕθος ἀρχαῖον οὐ
+μόνον Ἑβραῖκὸν, ἀλλὰ καὶ Ἑλληνικὸν, πληθυντικῶς
+λεγόμενον περὶ ἑνός. Σαφὲς δʼ ὅτι (59) αἱ παραδόσεις
+λέγουσι πεπρίσθαι Ἡσαΐαν (60) τὸν προφήτην·
+καὶ ἕν τινι ἀποκρύφῳ τοῦτο φέρεται· ὅπερ τάχα
+ἐπίτηδες ὑπὸ Ἰουδαίων ῥερᾳδιούργηται, λέξεις τινὰς
+τὰς μὴ πρεπούσας παρεμβεβληκότων τῇ γραφῇ, ἵνʼ
+ἡ ὅλη ἀπιστηθῇ (61) ἀλλʼ εἰκός τινα, θλιβόμενον
+ἀπὸ τῆς εἰς ταῦτα ἀποδείξεως, συγχρήσασθαι τῷ
+βουλήματι (62) τῶν ἀθετούντων τὴν Ἐπιστολὴν, ὡς οὺ
+<note type="footnote">18 Dan. XIII, 57. 19 Heb. II, 37.</note>
+<note type="footnote">(57) Mss. nostri, ζητήσειν AVetstenius, ζητῆσαι.</note>
+<note type="footnote">(58) Codex lRegins, πευσώμεθα.</note>
+<note type="footnote">(59) VVetstenius, περὶ ἑνὸς σαφές· διότι.</note>
+<note type="footnote">(60) Πεπρίσθαι ἐσσίαν. Eadem docet Origenes
+tomo undecimo in Matthæum: Καὶ Ἡσαῖας δὲ πετρίσθαι
+ὑπὸ τοῦ λαοῦ ἱστόρηται. Εἰ δέ τις οὐ προσίεται
+τὴν ἱστορίαν διὰ τὸ ἐν τῳ ἀποκρύφῳ Ἡσαῖα αὐτὴν
+φέρεσθαι, πιστευσάτωτοῖςἐν τῇ πρὸς Ἐβραίους οὕτω
+γεγραμμένοις· Ἐλθάσθησαν, ἐπρίσθησαν, ἐπειράσθησαν.
+Τὸ γὸρ, ἐπρίσθησαν, ἐπὶ τὸν Ἡσαῖαν
+ἀναφέρεται, etc. « isaiam quoque serra dissectum
+fuisse traditum est. Si quis vero historiam hanc
+non admittant, quod ea in apocrypho isaia referatur,
+iis credat quæ in Epistola ad Hebræos ita scripta
+sunt : « Lapidati sunt, secti sunt, tentati sunt. »
+illud enim, « secti sunt, » ad isaiam elertur, » etc.
+Idem de isaiæ dissectione tradunt lHieronymus in
+Isaiæ cap. XX et vII; Justinus martyr in Diαlοqο
+eum typhone Judæo, p. 273; Epiphanius De ritis
+prophetaarun, pas. 421; Theodoretus in hypothesi
+ad isaiam ab lHœscbelio edita, pσg. 74; Dorotheus
+in Synopi, pag. 669; tcamenius in Comment. ad
+llebr. m; Prudentius hymno 5 Περὶ Στεφάνωνς
+Sulpicius Severus epist. 2; Τertuthauus lh. De
+putientia, c. 14, et ib. m Carmin. adversus Maraon.,
+epitome temp. Euseb. adjecta, p. 24; Suidas
+in voce Μανασσῆς; Cedrenus in Comp. hist., p. 9I,
+Abulpharajus llistor. dgnast. II, p. 4ὐ; Primanus
+in Comm. ad llebr. . Cansam martyrii ex Jdæotum
+traditione aﬀert Origenes homil. I in lsaam:</note>
+
+<pb n="68"/>
+Παύλῳ γεγραμμένην· πρὸς ὅν ἅλλων λόγων κατʼ
+ἰδίαν χρῄζομεν εἰς ἀπόδειξιν τοῦ εἷναι Παύλου τὴν
+ἐπιστολήν. Παραθήσομαι οὖν ἐπὶ τοῦ παρόντος ἀπὸ
+τοῦ Εὐαγγελίου τὰ ὑπὸ Ἰησοῦ Χριστοῦ περὶ τῶν
+προφητῶν μαρτυρούμενα, καὶ ἱστορίαν ὑπʼ αὐτοῦ
+μὲν λεγομένην, ἐν δὲ ταῖς παλαιαῖς Γραφαῖς μὴ φερομένην,
+ἐπεὶ καὶ αὐτὴ κατηγορίαν περιέχει τῶν
+ἀνόμων ἐν τῷ Ἰσραὴλ κριτῶν ἕχει δὲ οὕτως ἡ ὑπὸ
+τοῦ Σωτῆρος εἰρημένη λέξις. « Οὐαὶ ὑμῖν, γραμματεῖς
+καὶ φαρισαῖοι ὑποκριταὶ, ὅτι οἰκοδομεῖτε τοὺς
+τάφους τῶν προφητῶν καὶ κοσμεῖτε τὰ μνημεῖα (63)
+τῶν δικαίων, καὶ λέγετε· Εἰ ἦμεν ἐν ταῖς ἡμέραις
+τῶν πατέρων ἡμῶν, οὐκ ἄν ἧμεν κοινωνοὶ αὐτῶν
+ἐν τῷ αἵματι τῶν προφητῶν. Ὥστε μαρτυρεῖτε ἑαυτοῖς,
+ὅτι υἱοὶ ἐστὲ τῶν φονευσάντων τοὺς προφήτας.
+Καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν.
+Ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς
+κρίσεως τῆς γεἐννης; Διὰ τοῦτο ἰδοὺ ἀποστέλλω
+πρὸς ὑμᾶς προφήτας, καὶ σοφοὺς, καὶ γραμματεῖς.
+Ἐξ αὐτῶν ἀποκτενεῖτε, καὶ σταυρώσετε, καὶ ἐξ
+αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν, καὶ
+διώξετε ἀπὸ πόλεως εἰς πόλιν, ὅπως ἔλθῃ ἐφʼ
+ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυνόμενον ἐπὶ τῆς γῆς ἀπὸ
+τοῦ αἵματος Ἄβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου
+υἱοῦ Βαραχίου, ὅν ἐφονεύσατε μεταξὺ τοῦ ναοῦ
+καὶ τοῦ θυσιαστηρίου. Ἀμὴν λέγω ὑμῖν, ὅτι ἥξει
+ταῦτα πάντα ἐπὶ τὴν γενεὰν ταύτην. » Καὶ τὸ ἐξῆς
+δὲ τούτων, οὐκ ἀπᾴδει τῶν προκειμένων οὕτως ἕχον·
+Ἰερουσαλὴμ, Ἰερουσαλὴμ, ἡ ἀποκτείνασα τοὺς προφήτας,
+καὶ λιθοβολοῦσα τοὺς ἀπεσταλμένους πρὸς
+αὑτήν· ποσάκις ἠθέλησα ἐπισυναγαγεῖν τὰ τέκνα
+σου, ὅν τρόπον ὄρνις συνάγει τὰ νοσσία ἑαυτῆς ὑπὸ
+τὰς πτέρυγας, καὶ οὐκ ἐθελήσατε· ἰδοὺ ἀφίεται ὑμῖν
+ὁ οἶκος ὑμῶν ἕρημος. » Καὶ ἵδωμέν γε εἰ μὴ λεκτέον,
+ἐν τούτοις, τὸν μὲν Σωτῆρα ἀληθεύειν, οὐχ εὑρίσκεσθαι
+δὲ τὰς Γραφὰς, ὅσαι δηλοῦσι τὰ ὑπὸ τοῦ Σωτῆρος
+ἱστορούμενα· οἱ γὰρ οἰκοδομοῦντες τοὺς τάφους
+τῶν προφητῶν, καὶ κοσμοῦντες τὰ μνημεῖα τῶν δικαίων,
+καταγνόντες τῶν ὑπὸ τῶν πρεσβυτέρων εἰς
+<note type="footnote">εἰκῆ οἱ ἀρχαῖοι ἅνδρες ὡς Παύλου αὐτὴν παραδεδώκασι.
+Τίς δὲ ὁ γράψας τὴν ἐπιστολὴν, τὸ μὲν ἀληθὲς
+Θεὸς οἶδεν· ἡ δὲ εἰς ἡμᾶς φθάσασα ἱστορία ὑπό τινων
+μὲν λεγόντων, ὅτι Κλήμης ὁ γενόμενος ἐπίσκοπος
+ωμαίων ἕγραψε τὴν ἐπιστολήν· ὑπό τινων δὲ ὅτι
+Λουκᾶς ὁ γράψας τὸ Εὐαγγέλιον καὶ τὰς Πράξεις. « Ego
+vero ita censeo, sententias quidem ipsas Aposoli
+esse; dictionem autem et compositionem ve borum
+esse alterius eujusdam, qui dicta Apostoli commentorare,
+et quasi in commentarios redigere voluerit
+ea quæ a magistro audiverat. Proinde si quæ
+Eeclesia hac epistolam pro Paulina habet, eo nomine
+laudeiur; neque enim temere maæores eam
+Pauli esse tradiderunt. Quis autem revera illam
+scripserit, soli Deo notum esse opinor. Sed scriptores
+quorum monumenta ad nos nsque pervenerunt,
+partim Clementi Romanæ urbis episcopo eam
+ascrbunt, partim Lucæ qui Evangelium et Acuns
+apostolorum litteris prodidit. » LEib. II et vu costra
+felsum, item lb. I Περὶ ἄρχων, et alib passim
+Origene eam IPulo ar eroiἐ.</note>
+<note type="footnote">(65) VV ttenius et codo Basileensis, μνήματα
+...εἰ ἥμεθα..... οὐκ ἂν ἥμεθα. Iufra VVetsteniυs,
+ὡς μαρτυρεῖτε.</note>
+
+<lb n="72"/>
+ἐπὶ πολλοῖς (67), καὶ ταῦτα λέγει· « Τίνα τῶν προφητῶν
+οὐκ ἐδίωξαν οἱ πατέρες ὑμῶν, καὶ ἀπέκτειναν
+τοὺς προκαταγγείλαντας περὶ τῆς ἐλεύσεως τοῦ Δικαίου,
+οὗ νῦν ὑμεῖς προδόται καὶ φονεῖς ἐγένεσθε; »
+Ἀληθεύειν μὲν γὰρ τὸν Στέφανον πᾶς ὁστισοῦν τῶν
+προσιεμένων τὰς Πράξεις τῶν ἀποστόλων ὁμολογήσει
+ἀποδεῖξαι δὲ καὶ ἀπὸ τῆς παλαιᾶς Διαθήκης, πῶς
+εὐλόγως μέμφεται τοῖς πατράσι τῶν εἰς τὸν Ἰησοῦν
+ἀπιστούντων, ὡς διώξασι τοὺς προφήτας καὶ ἀποκτείνασιν,
+οὐ δυνατὸν ἀπὸ τῶν φερομένων βιβλίων τῆς
+Καινῆς (68) Διαθήκης· καὶ ὁ Παῦλος ἐν τῇ προτέρᾳ
+τῆς πρὸς Θεσσαλονικεῖς ἐπιστολῆς ταῦτα περὶ Ἰουδαίων
+μαρτυρῶν φησίν· « ῾ Υμεῖς γὰρ μιμηταὶ ἐγενήθητε
+τῶν Ἐκκλησιῶν τοῦ Θεοῦ, τῶν οὐσῶνὲν τῇ Ἰουδαίᾳ
+ἐν Χριστῷ Ἰησοῦ· ὅτι καὶ ὑμεῖς τὰ αὐτὰ ἐπάθετε
+ὑπὸ τῶν ἰδίων (69) συμφυλετῶν, καθὼς καὶ αὐτοὶ
+ὑπὸ τῶν Ἰουδαίων, τῶν καὶ τὸν Κύριον ἀποκτεινάντων,
+καὶ τοὺς προφήτας, καὶ ἡμᾶς ἐκδιωξάντων
+(70), καὶ Θεῷ μὴ ἀρεσκόντων, καὶ πᾶσιν ἀνθρώποις
+ἐναντίων· κωλυόντων ἡμᾶς τοῖς ἔθνεσι λαλῆσαι, ἵνα σωθῶσι. » Καὶ οἶμαι δὲ ἀποδεδειχέναι ἐν τοῖς
+προκειμένοις, ὅτι οὐδὲν ἄτοπόν (71) ἐστι, γεγονέναι μὲν τὴν ἱστορίαν, καὶ τὴν μετὰ πολλῆς ἀκολασίας
+ὠμότητα τετολμῆσθαι τοῖς τότε πρεσβυτέροις κατὰ τῆς Σωσάννης, καὶ γεγράφθαι μὲν προνοίᾳ τοῦ Πνεύματος,
+ὑπεξαιρεῖσθαι δὲ, ὡς ἂν εἵποι τὸ Πνεῦμα, ὑπὸ τῶν ἀρχόντων Σοδόμων.</p>
+<p n="12">Πρὸς τούτοις ἕφασκες, ὅτι ὁ Δανιὴλ ὑπὸ μὲν τῆς
+Γραφῆς ταύτης λέγεται Πνεύματι ληφθεὶς ἐκβεβοηκέναι,
+ὡς ἀδίκως ἡ ἀπόφασις ἔχοι (72), ἡ δὲ φερομένη
+ὁμολογουμένως ὑπʼ αὐτοῦ Γραφὴ ἄλλῳ τρόπῳ περιέχει
+αὐτὸν προφητεύοντα, τουτέστιν ὁράμασι, καὶ
+ὀνείροις, καὶ ἀγγέλου ἐπιφανείᾳ· οὐδαμοῦ δὲ ἐπιπνοίᾳ
+προφητικῇ. Σὺ δέ μοι ἔοικας μὴ πάνυ τετηρηκέναι
+τὸ, « Πολυμερῶς καὶ πολυτρόπως πάλαι τὸν
+Θεὸν λελαληκέναι τοῖς πατράσιν ἐν τοῖς προφήταις,»
+οὐ μόνον ἐν τοῖς πᾶσιν, ἀλλὰ καὶ ἐν τοῖς καθʼ ἕνα.
+Παρατηρήσας δὲ εὑρήσεις τοῖς αὐτοῖς ἁγίοις καὶ ἐνύπνια
+γενόμενα θεῖα καὶ ἐπιφανείας ἀγγελικὰς, καὶ
+ἐπιπνοίας. Ἀρκεῖ δὲ ἐπὶ τοῦ παρόντος μαρτυρίαις
+χρήσασθαι τοῖς περὶ τοῦ Ἰακὼβ (73) γεγραμμένοις·
+ὅς περὶ μὲν θείων ἐνυπνίων τοιαῦτα διηγεῖται·
+« Καὶ ἐγένετο, ἡνίκα ἐνεκίσσων τὰ πρόβατα (74),
+καὶ εἶδον ἐν τοῖς ὀφθαλμοῖς μου αὐτὰ ἐν ὕπνῳ, καὶ
+ἰδοὺ οἱ τράγοι καὶ οἱ κριοὶ ἀναβαίνοντες ἦσαν ἐπὶ τὰ
+πρόβατα καὶ τὰς αἶγας, διάλευκοι, καὶ ποικίλοι, καὶ
+σποδοειδεῖς ῥαντοί. Καὶ εἶπέ μοι ὁ ἅνγελος τοῦ Θεοῦ
+καθʼ ὕπνον· Ἰακώβ. Ἐγὼ δὲ εἶπον· Τί ἐστι; καὶ εἶπεν·
+Ἀνάβλεψον τοῖς ὀφθαλμοῖς σου, καὶ ἵδε τοὺς τράγους
+καὶ τοὺς κριοὺς ἀναβαίνοντας ἐπὶ τὰ πρόβατα
+καὶ τὰς αἶγας, διαλεύκους, καὶ ποικίλους, καὶ σποδοειδεῖς
+ῥαντούς· ἑώρακα γὰρ ὅσα σοι Λάβαν ποιεῖ.
+Ἐγώ εἰμι ὁ Θεὸς ὁ ὀφθείς σοι ἐν τόπῳ Θεοῦ οὗ ἤλειψάς
+μοι ἐκεῖ στήλην, καὶ ηὕξω μοι ἐκεῖ εὐχήν. Νῦν
+<note type="footnote">29 Heb. I, 1. 30 Gen. XXXI, 10 seqq</note>
+<note type="footnote">σΘεσσαλονικεῖς Ἐπιστολῆς. Apud VV etstemum deest
+Ἐπιστολῆς.</note>
+<note type="footnote">(69) VVetstenius, ἀπὸ τῶν ἰδίων</note>
+<note type="footnote">(70) Idem, διωξάντων.</note>
+<note type="footnote">(71) Idem, σήστοπον, corrupte, et paulo post,
+τετολμῆται τοῖς τότε. - VV ersten. scribere debebat
+σύστοπον. NotrE.</note>
+<note type="footnote">(72)·Codex Basileensis, ἔχῃ</note>
+<note type="footnote">(73) Codex Vctstenianns, Ἰωακέμ, male.</note>
+<note type="footnote">(74) Idem, πράγματα, pcrperum.</note>
+
+<pb n="73"/>
+οὖν ἀνάστηθι καὶ ἔξελθε ἐκ τῆς γῆς ταύτης, καὶ
+ἄπελθε εἰς τὴν γῆν τῆς γεννήσεώς σου. » Περὶ δὲ ἐπιφανείας
+ὕπαρ κρείττονος, ταῦτα περὶ αὐτοῦ εἵρηται·
+«῾Υπελείφθη δὲ Ἰακὼβ μόνος· καὶ ἐπάλαιεν ἅνθρωπος
+μετʼ αὐτοῦ ἕως πρωΐ. Εἶδε δὲ, ὅτι οὐ δύναται
+πρὸς αὐτὸν, καὶ ἥψατο τοῦ πλάτους τοῦ μηροῦ αὐτοῦ,
+καὶ ἐνάρκησε τὸ πλάτος τοῦ μηροῦ Ἰακὼβ, ἐν τῷ
+παλαίειν αὐτὸν μετʼ αὐτοῦ , καὶ εἶπεν αὐτῷ· Ἀπόστειλόν
+με· ἀνέβη γὰρ ὁ ὅρθρος. Ὁ δὲ εἶπεν· Οὐ μή
+σε ἀποστείλω, ἐὰν μή με εὐλογήσῃς. Εἶπε δὲ αὐτῷ·
+Τί τὸ ὅνομά σου; Ὁ δὲ εἶπεν· Ἰακώβ· εἶπε δὲ αὐτῷ·
+Οὐ κληθήσεται ἔτι τὸ ὅνομά σου Ἰακὼβ, ἀλλʼ Ἰσραὴλ
+ἕσται τὸ ὄνομά σου, ὅτι ἐνίσχυσας μετὰ Θεοῦ, καὶ
+μετὰ ἀνθρώπων δυνατός Ἠρώτησε δὲ Ἰακὼβ, καὶ
+εἶπεν· Ἀνάγγειλόν μοι τὸ ὅνομά σου· καὶ εἶπεν· Ἵνα
+τί τοῦτο ἐρωτᾶς τὸ ὄνομά μου; Καὶ εὐλόγησεν αὐτὸν
+ἐκεῖ. Καὶ ἐκάλεσεν Ἰακὼβ τὸ ὅνομα τοῦ τόπου ἐκείνου
+Εἶδος Θεοῦ· Εἶδον γὰρ Θεὸν πρόσωπον πρὸς πρόσωπον,
+καὶ ἕσώθη μου ἡ ψυχή. Ἀνέτειλε δὲ ὁ ἥλιος,
+ἡνίκα παρῆλθε τὸ εἶδος τοῦ Θεοῦ. Ὅτι δὲ καὶ
+ἐξ ἐπιπνοίας προφητεύει, δῆλον ἐκ τούτων· « Ἐκάλεσε
+δὲ Ἰακὼβ τοὺς υἱοὺς αὐτοῦ καὶ εἶπε· Συνάχθητε,
+ἵνα ἀπαγγείλω ὑμῖν τί ἀποβήσεται ὑμῖν ἐπʼ ἐσχάτων
+τῶν ἡμερῶν· ἀθροίσθητε καὶ ἀκούσατε υἱοὶ Ἰακὼβ,
+ἀκούσατε Ἰσραὴλ τοῦ πατρὸς ὑμῶν· Ῥουβὶμ πρωτότοκός
+μου, σὺ ἰσχύς μου, καὶ ἀρχὴ τέκνων μου, σκληρὸς
+φέρεσθαι καὶ σκληρὸς αὐθάδης· ἐξύβρισας, ὡς
+ὕδωρ μὴ ἐκζέσῃς· ἀνέβης γὰρ ἐπὶ τὴν κοίτην τοῦ
+πατρός σου· τότε ἐμίανας τὴν στρωμνὴν, οὗ ἀνέδης.
+» Ὁμοίως δὲ καὶ πρὸς τοὺς λοιποὺς αἱ εὐλογίαι
+προφητεῖαι οὖσαι ἐξ ἐπιπνοίας εἵρηνται. Οὐδὲν τοίνυν
+θαυμαστὸν καὶ τὸν Δανιὴλ, ὁτὲ μὲν ἐξ ἐπιπνοίας λελαληκέναι
+(75) τὸν κατὰ τῶν πρεσβυτέρων ἕλεγχον,
+ὁτὲ δὲ ἐνυπνίοις, ὡς καὶ σὺ φὴς, ἢ ὁράσει τε, καὶ ἅλλοτε
+γεγονέναι αὐτῷ ἀγγέλου ἐπιφάνειαν.</p>
+<p n="13">Τά γε μὴν ἄλλα σου ἐπαπορήματα ἐδόκει μοι ἀσεμνότερον
+εἰρῆσθαι, καὶ οὐκ ἔχεσθαι τῆς πρεπούσης σοι
+εὐλαβείας· οὐ χεῖρον δὲ θεῖναι τὸ αὐταῖς λέξεσιν ὑπὸ
+σοῦ γεγραμμένον οὕτως· « Ἔπειτα μετὰ (76) τὸ θαυμασίως
+πως οὕτως ἀποφθέγξασθαι, καὶ παραδοξότατά
+πως αὐτοὺς ἀπελέγχει, ὡς οὐδὲ Φιλιστίων ὁ μἴμος· οὐ
+γὰρ ἐξήρκει ἡ διὰ τοῦ Πνεύματος ἐπίπληξις, ἀλλʼ
+ἰδίᾳ διαστήσας ἑκάτερον αὐτῶν, ἐρωτᾷ ποῦ θεάσαιτο
+αὐτὴν μοιχωμένην. Ὡς δὲ ὁ μὲν ὑπὸ πρῖνον ἕφασκεν,
+ἀποκρίνεται πρίσειν αὐτὸν τὸν ἅγγελον· τῷ δὲ ὑπὸ
+σχῖνον εἰρηκότι, σχισθῆναι παραπλησίως ἀπειλεῖ. »
+Ὥρα γὰρ παραβάλλειν ἄλλο τούτῳ παραπλήσιον εἰρημένον
+ἐν τῇ τρίτῃ τῶν Βασιλειῶν, ὅπερ καὶ αὐτὸς
+ὁμολογήσεις ὑγιῶς ἀναγεγράφθαι, τῷ Φιλιστίωνος
+μίμῳ. Ἔχει δὲ οὕτως ἡ ἀπὸ τῶν Βασιλειῶν λέξις·
+« Τότε ὤφθησαν δύο γυναῖκες πόρναι τῷ βασιλεῖ, καὶ
+ἔστησαν ἐνώπιον αὐτοῦ. Καὶ εἶπεν ἡ γυνὴ μία· Ἐν
+ἐμοὶ, κύριέ μου. Ἐγὼ καὶ ἡ γυνὴ αὕτη οἰκοῦμεν ἐν
+οἵκῳ ἑνὶ, καὶ ἐτέκομεν ἐν τῷ οἵκῳ. Καὶ ἐγενήθη ἐν
+τῇ ἡμέρᾳ τῇ τρίτῃ τεκούσης μου, καὶ ἔτεκε καὶ ἡ
+γυνὴ αὕτη. Καὶ ἡμεῖς κατὰ τὸ αὐτό. Οὐκ ἔστιν οὐδὲ
+<note type="footnote">31 Gen. XXXII, 23 Gen.XLIX,1, Seqq.</note>
+<note type="footnote">(75) VVetathenius, λελαληκέναι ὡς τόν, sed in
+mss. deeνt ὡς.</note>
+<note type="footnote">(76) Μετά, deest apud Wetstenium, sed repperi</note>
+
+<pb n="76"/>
+εἷς ἐν τῷ οἴκῳ ἡμῶν παρὲξ ἀμφοτέρων ἡμῶν ἐν τῷ
+οἵκῳ. Καὶ ἀπέθανεν ὁ υἱὸς τῆς γυναικὸς ταύτης τὴν
+νύκτα, ὡς ἐπεκοιμήθη ἐπʼ αὐτόν. Καὶ ἀνέστη μέσης
+τῆς νυκτός· καὶ ἔλαβε τὸν υἱόν μου ἐκ τῶν ἀγκαλῶν
+μου· καὶ ἡ δούλη σου ὕπνουν. Καὶ ἐκοίμισεν αὐτὸν ἐν
+τῷ κόλπῳ αὐτῆς, καὶ τὸν υἱὸν αὐτῆς τὸν τεθνεῶτα
+ἐκοίμισεν ἐν τῷ κόλπῳʼ μου. Καὶ ἀνέστην τὸ πρωῒ
+θηλάσαι τὸν υἱόν μου· κἀκεῖνος ἦν τεθνηκώς. Καὶ
+ἰδοὺ κατενόησα αὐτὸν τὸ πρωΐ, καὶ ἰδοὺ οὐκ ἦν ὁ υἱός
+μου ὅν ἕτεκον. Καὶ εἶπεν ἡ γυνὴ ἡ ἑτέρα· Οὐχί· ἀλλ᾿
+ὁ υἱός σου ἐστὶν ὁ νεκρὸς, ὁ υἱὸς δὲ ὁ ἐμὸς ὁ ζῶν. Ἡ
+δὲ .ἄλλη καὶ αὐτὴ ἔλεγεν· Οὐχὶ, ἀλλʼ ὁ υἱός μου ὁ
+ζῶν· ὁ δὲ υἱός σου ὁ τεθνηκώς. Καὶ ἐλάλησαν ἐνώπιον
+τοῦ βασιλέως, καὶ εἶπεν ὁ βασιλεὺς αὐταῖς· Σὺ λέγεις·
+Οὗτός μου ὁ υἱὸς ὁ ζῶν, καὶ ὁ υἱὸς ταύτης ὁ τεθνηκώς.
+Καὶ σὺ λέγεις Οὐχὶ, ἀλλʼ ὁ υἱός μου ὁ ζῶν· ὁ
+δὲ υἱός σου ὁ τεθνηκώς. Καὶ εἶπεν ὁ βασιλεύς· Λάβετέ
+μοι μάχαιραν. Καὶ προσήνεγκαν τὴν μάχαιραν
+ἐνώπιον τοῦ βασιλέως. Καὶ εἶπεν ὁ βασιλεύς· Διέλετε
+τὸ παιδίον τὸ ζῶν εἰς δύο, καὶ δότε τὸ ἥμισυ αὐτοῦ
+ταύτῃ, τὸ ἥμισυ αὐτοῦ ταύτῃ. Καὶ ἀπεκρίθη ἡ γυνὴ
+ἦς ὁ υἱὸς ἦν ὁ ζῶν πρὸς τὸν βασιλέα, ὅτι ἐταράχθη ἡ
+μήτρα αὐτῆς ἐν τῷ υἱῷ αὐτῆς, καὶ εἶπεν· Ἐν ἐμοὶ,
+Κύριε· δότε αὐτῇ τὸ παιδίον τὸ ζῶν, καὶ θανάτῳ μὴ
+θανατώσητε αὐτό. Καὶ αὕτη εἶπε· Μήτε ἐμοὶ, μήτε
+κὺτῇ ἕστω· διέλετε. Καὶ ἀπεκρίθη ὁ βασιλεὺς, κσὶ
+εἶπε· Δότε τὸ παιδίον τῇ εἰπούσῃ Δότε αὐτῇ τοῦτο,
+καὶ θανάτῳ μὴ θανατώσητε αὐτό· αὕτη γὰρ μήτηρ
+αὐτοῦ. Καὶ ἤκουσε πᾶς Ἰσραὴλ τὸ κρῖμα ὅ ἔκρινεν
+ὁ βασιλεὺς, καὶ ἐφοβήθησαν ἀπὸ προσώπου τοῦ βασιλέως,
+ὅτι εἶδον, ὅτι φρόνησις Θεοῦ ἐν αὐτῷ τοῦ ποιεῖν
+δικαίωμα. » Εἵπερ γὰρ χρὴ περὶ τῶν φερομένων ἐν
+ταῖς Ἐκκλησίαις ἀποφαίνεσθαι χλευαστικῶς, μᾶλλον
+τὴν περὶ τῶν δύο ἑταιρῶν ἱστορίαν τῷ Φιλιστίωνος
+μίμῳ, ἢ τὴν περὶ τῆς σεμνῆς Σωσάννης ὁμοιῶσαι
+ἐχρῆν. Καὶ ὥσπερ οὐκ ἤρκει πρὸς πειθὼ τοῦ λαοῦ τὸ
+εἰπεῖν Σολομῶντα· « Δότε τῇδε τὸ ζῶν παιδίον· αὕτη
+γάρ ἐστιν ἡ μήτηρ αὐτοῦ· » οὕτως οὐκ ἤρκει ἡ πρὸς
+τοὺς πρεσβυτέρους ἐπίπληξις τοῦ Δανιὴλ, μὴ προσπαραλαμβανομένου
+τοῦ ἐκ στόματος αὐτῶν ἐλέγχου·
+εἰπόντων μὲν ὑπό τι δένδρον αὐτὴν ἑωρακέναι
+κοιμωμένην μετὰ τοῦ νεανίσκου, μὴ μὴν συμφωνησάντων
+περὶ τοῦ τί δένδρον ἦν. Καὶ ἐπείπερ ὡς καταλαβὼν
+ἔφασκες ἐξ ἐπιπνοίας (77) τὸν Δανιὴλ κεκρικέναι
+τὰ περὶ τοὺς πρεσβυτέρους, τάχα μὲν οὕτως
+ἐλέγχοντα, τάχα δὲ ἑτέρως, πρόσχες καὶ ταῦτα παραπλήσια
+δοκεῖ μοι εἶναι τὰ κατὰ τὸν Δανιὴλ τῇ κρίσει
+τοῦ Σολομῶντος· περὶ οὗ μαρτυρεῖ ἡ Γραφὴ, ὅτι εἶδεν
+ὁ λαὸς, ὅτι φρόνησις Θεοῦ ἐν αὐτῷ τοῦ ποιεῖν δικαίωμα.
+Τοῦτο ἄν δύναιτο λέγεσθαι καὶ περὶ τοῦ Δανιήῦλ·
+ὅτι φρονήσεως οὕσης ἐν αὐτῷ τοῦ ποιεῖν (78) δικαίωμα, τὰ ἀναγεγραμμένα περὶ τῶν πρεσβυτέρων.</p>
+<p n="14">Καὶ τοῦτο δὲ μικροῦ δεῖν ἔλαθέ με, ἀναγκαῖον
+παρατεθῆναι περὶ τοῦ πρῖνον-πρίσειν καὶ σχῖνονσχίσειν·
+ὅτι καὶ ἐν ταῖς ἡμετέραις Γραφαῖς κεῖνταί
+τινες οἱονεὶ ἐτυμολογίαι (79) αἵτινες παρὰ μὲν</p>
+<note type="footnote">(79) Idem, πρίνου πρίσιν, καὶ σχῖνον σχίσιν· ὅτι
+ἐν ταῖς ἡμετέραις Γραφαῖς κεῖνταί τινες οἱονεὶ ἐτυμικροῦ
+δεῖν, ἔλαβέ με.</note>
+
+<pb n="80"/>
+<p n="15">Πρὸς τούτοις παπορεῖς αὐταῖς λέξεσι· « Πῶς αἰχμάλωτοι
+ὄντες ἐν τῇ Βαβυλῶνι, ἠστραγαλωμένοι (87),
+καὶ ἐν ταῖς πλατείαις ἄταφοι ῥιπτούμενοι, ὡς ἐν
+τῇ προτέρᾳ αἰχμαλωσίᾳ τοῦ Ἰσραὴλ ἱστόρηται, τῶν
+παίδων αὐτοῖς ἀποσπωμένων εἰς εὐνουχισμὸν, καὶ
+τῶν θυγατέρων εἰς παλλακὰς, ὡς (88) προπεφήτευτο,
+οἵδε περὶ θανάτου ἔκρινον, καὶ ταῦτα τῇ τοῦ βασιλέως
+αὐτῶν γενομένῃ γυναικὶ Ἰωακεὶμ, ὅν σύνθρονον
+πεποίητο ὁ Βαβυλώνιος βασιλεύς; Εἰ δὲ οὐχ οὗτος (89),
+ἄλλος δὲ τοῦ λαοῦ Ἰωακείμ· πόθεν τοιαύτη κατάλυσις
+αἰχμαλώτῳ περιῆν, καὶ παράδεισος ἀμφιλαφὴς
+ἦν; πόθεν δὲ λαβὼν ἔλεγες τό· Ἠστρογαλωμένοι(90)
+καὶ ἐν ταῖς πλατείαις ἄταφοι ῥιπτούμενοι· ἢ, ὅσον
+ἐπʼ ἐμῇ γνώσει, ἀπὸ τοῦ Τωβία; περὶ οὗ ἡμᾶς
+ἐχρῆν ἐγνωκέναι, ὅτι Ἑβραῖοι τῷ Τωβίᾳ οὐ χρῶνται,
+οὐδὲ τῇ Ἰουδήθ· οὐδὲ γὰρ ἔχουσιν αὐτὰ καὶ ἐν ἀποκρύφοις
+ἑβραϊστί (9I)· ὡς ἀπʼ αὐτῶν μαθόντες ἐγνώκαμεν.
+Ἀλλʼ ἐπεὶ χρῶνται τῷ Τωβᾳ αἱ Ἐκκλησίαι,
+ἰστέον, ὅτι καὶ ἐν τῇ αἰχμαλωσίᾳ τινὲς τῶν αἰχμαλώτων
+ἐπλούτουν, καὶ εὖ ἔπραττον. Αὐτὸς δὲ ὁ Τωβίας
+φησί· « Καθότι ἐμεμνήμην τοῦ Θεου ἐν ὅλῃ
+τῇ ψυχῇ μου, καὶ ἔδωκεν ὁ Ὕψιστος χάριν καὶ
+μορφὴν ἐνώπιον Νεμεσσάρου (92), καὶ ἤμην αὐτοῦ
+ἀγοραστής· καὶ ἐπορευόμην εἰς τὴν Μηδίαν, καὶ παρεθέμην
+Γαβαήλῳ τῷ ἀδελφῷ Γαβρία ἐν Ῥἄγοις (93)
+τῆς Μηδίας ἀργυρίου τάλαντα δέκα.» Καὶ ἐπιφέρει
+ὡς πλούσιος τό· « Ἐν ταῖς ἡμέραις Νεμεσσάρου
+ἐλεημοσύνας πολλὰς ἐποίησα (94) τοῖς ἀδελ·
+φοῖς μου. Τοὺς ἄρτους μου ἐδίδουν πεινῶσι καὶ ἱμάτια
+τοῖς γυμνοῖς· καὶ εἵ τινα ἐκ τοῦ γένους ἑώρων
+(95) τεθνηκότα καὶ ἐῤῥιμμένον ὀπίσω τοῦ τείχους
+Νινευῒ, ἔθαπτον αὐτόν· καὶ εἴ τινα ἀπέκτεινε Σεναχηρεὶμ
+βασιλεὺς, ὅτε ἦλθε φεύγων ἐκ τῆς Ἰουδαίας,
+ἕθαψα αὐτοὺς κλέπτων· πολλοὺς γὰρ ἐπέκτεινεν (96)
+ἐν τῷ θυμῷ αὐτοῦ.» Καὶ κατανόει εἴ γε μὴ (97) πολὺν
+πλοῦτον ἐμφαίνει καὶ πολλὴν περιουσίαν ὁ κατάλογος
+ὁ τοσοῦτος τῶν εὐποιῶν τοῦ Τωβία· καὶ μάλιστα,
+ὅτι ἐπιφέρει λέγων τό· « Ἐπιγνοὺς, ὅτι ζη
+<note type="footnote">37 Ibid. 19, 20.</note>
+<note type="footnote">Africani ad Orig., cap. 2, initio dicta sunt. Noιτε.
+(8s) VVestenius, ὥσπερ προπεφήτευτο, quod in
+margme conjicit legendum ὥσπερ πεπροφήτευται.
+(89) VVetstenii codex, οὐτως, male.
+(90) Idem ἔλεγε τὸ, ἀστραγαλώμενοι. Emendo
+στράγγα λώμενοι. Nonrε.</note>
+<note type="footnote">(91) Ἐεχαῖοι τῷ Τοβλα οὐ χρῶται, οὐδὲ τῷ
+Τουδήιθ· οὐδέ γὰρ ἔχουαιιναὐτὰ καὶ ἐν ἀποκρύφοις
+ἐβραῖστί. Ilieronymus Præfaι.in Tobiam : «dabrumu
+Tobiæ Hebræi de catalogo divinarum Scripturarum
+secantes, his quæ hagiographa muemorant, manciparunt.
+Arguant nos lebræorum studia, et imputant
+nobis contra snum canonem f.Xtins aurbns
+ista tansferri, sed melus esse judcans Pharisæorum
+dispicere judicio, et egscoporum jussionibu.
+de.ervre, instit ut potui.» idem P æli. in Judii,ς
+« Apud lebræos ibet Judith inter apocrypha legtur,
+cous auctortas ad roboranda illa quæ in cunteptiomem
+veniunt , mus idonea judic tur. »</note>
+<note type="footnote">(92) Aldus Ἐνεμεσσάρου, et stc nfra.</note>
+<note type="footnote">(93) idem, Ἀργοῖς.</note>
+<note type="footnote">(91) Idem, ἐποίησα.</note>
+<note type="footnote">(95) Idem, ἐθεώρουν.</note>
+<note type="footnote">(96) Idem, ἀπώλεσεν.</note>
+<note type="footnote">(97) VVetstenii codex, εἴ γε μήν, malo.</note>
+
+<pb n="81"/>
+τοῦμαι ἀποθανεῖν, φοβηθεὶς ἀνεχώρησα, καὶ διηρπάγη
+πάντα τὰ ὑπάρχοντά μου. » Ἀλλὰ καὶ ἕτερος
+αἰχμάλωτος Δαχιάχαρος (98) ὁ τοῦ Ἀνανιὴλ υἱὸς
+ἀδελφοῦ Τωβία ἐπὶ πᾶσαν κατεστάθη τὴν λογιστείαν
+τῆς βασιλείας τοῦ βασιλέως Ἀχερδόνος, καὶ ἐπὶ πᾶσαν
+τὴν διοίκησιν· καὶ λέγεται, « ὅτι ἦν ὁ Δαχιάχαρος
+οἰνοχόος, καὶ ἐπὶ τοῦ δακτυλίου, καὶ διοικητὴς,
+καὶ ἐκλογιστής. » Καὶ ὁ Μαρδοχαῖος δὲ περὶ τὴν
+αὐλὴν διέτριβε τοῦ βασιλέως, καὶ τοσαύτην εἶχε παῤρησίαν
+πρὸς αὐτὸν, ὥστε καὶ ἐν εὐεργέταις ἀναγεγράφθαι
+τοῦ Ἀρταξέρξου. Ἔτι δὲ καὶ ἐν τῷ Ἔσδρᾳ·
+Νεεμίας οἰνοχόος τοῦ βασιλέως καὶ εὐνοῦχος αὐτοῦ
+(99), Ἐβραῖος τῷ γένει, ἠτήσατο τὰ περὶ τῆς οἰκοδομῆς
+τοῦ ναοῦ, καὶ ἔτυχεν· ὥστε μετὰ πλειόνων
+ἐπιτραπῆναι ἀπελθεῖν ἀνορθῶσαι τὸν ναόν. Τί οὖν θαυμαστὸν τὸ, παράδεισον, καὶ οἰκίαν, καὶ κτῆμα γεγονέναι
+τινὸς Ἰωακεὶμ, εἴτε πολυτελὴς(99*) εἴτε καὶ μετρία ἦν; Οὐ γὰρ σαφῶς δηλοῦται ἀπὸ τῆς Γραφῆς
+τὸ τοιοῦτον.</p>
+<p n="16">Ἀλλὰ φῄς· « Πῶς περὶ θανάτου ἔκρινον ἐν αἰχμαλωσίᾳ
+τυγχάνοντες;» οὐκ οἶδα πόθεν ἀμφιβάλλων τὸ
+βσιλέως εἶναι γυναῖκα, διὰ τὴν ὁμωτυμίαν τοῦ Ἰωακεὶμ,
+τὴν Σωσάνναν. Λεκτέον δ᾿ , ὅτι οὐδὲν παράδοξον,
+μεγάλων ἐθνῶν ὑποχειρίων γενομένων, πρὸς βασιλέως
+συγκεχωρῆσθαι τοῖς οἰκείοις νόμοις χρῆσθαι (1)
+τοὺς αἰχμαλώτους καὶ τοῖς δικαστηρίοις. Καὶ νῦν
+γοῦν Ῥωμαίων βασιλευόντων, καὶ Ἰουδαίωντὸδίδραχμον
+αὐτοῖς τελούντων, ὅσα συγχωροῦντος Καίσαρος
+<note type="footnote">38 Tob. 22. 39 Esth. II, 19, 23. 40 II Esdr. 1.</note>
+<note type="footnote">(98) Aldus, Ἀχιάχαρος, et pro Ἀνανιήλ habet
+Ἀναήλ. Ibidem in codice VVetstenii desideratur
+vοτ υἱός quæ in codice Regio et Cant. et in aliia
+repeitr. Paulo post Aldus, τὴν ἐκλογιστίαν, et pro
+Ἀχερδόνος, legit Σαρχεδόνος.</note>
+<note type="footnote">(99) Νεεμίας οέoχόος τοῦ βαοιιλέως καὶ εὐνουχος
+αὐτοῦ. Origenes tom. XIv in Matth.: Εἰσί
+τινες εὐνοῦχοι, τοῦ Θεοῦ ἄνθρωποι, διὰ τοῦτο εὐνοῦοι
+ἵνʼ οἰκοδομήσωσι πεσουσαν τὴν Ἰερουσαλήμ.
+θνρν εὲ παράδειγμα ὁ ἐν τῇ δευτέρᾳ Ἔσδρα γεγραμμένος,
+ὅς φησι· Καὶ ἐγὼ ἤμην εὐνοῦχος τῷ βασιλεῖ.
+« Sunt quidam eunuchi, Dei homines, qui propterea
+eunachi lacti sunt ut collapsam ædiﬁcent
+Jeruslem. tHorum exemplum est is de quo scribitur
+in II Esdr hbro, qui inquit : Et ego eram
+eunuchus regi. » Ohsqrvat hunc locum doctissimus
+Huetius lib. Orgenianorum, cap. 1, num. 2. puthtque
+imperitia linguæ lHebrææ lapsum esse Orgenem,
+ut εὐνοῦχον pro οἰνοχόῳ substituerit. ote
+tamen ex coll tione præsentium verborum deprehendi
+potest, Origenem memoria lapsum fuisse : dserte
+namque οἰνοχόον eum vocat, quotd respondet
+lHebræο μχρXE. Etum veo Orgene- ex traditione
+Judæorum, v el ex consuetudine regum orientalium
+quorum famuli et οἰνοχόοι (vide Genes. XI., 1, 2)
+eunuchi plerumque fuerunt, collegerit ipsum etiam
+Nehemiam eunuchum fuisse, incertum est. Quomodo
+antem factum sit, m Nehemias a poculis regis Persarum
+fuerit, ex Athenæi lib. I, pag. 14, viri docti
+eleganter monstrarunt. Sic illa ι Ὅτι ὁ Περσῶν βασιλεὺς
+τὸν Χαλυβώνιον μόνον οἶνον ἔπινεν, ὅν φησὶ
+Ποσειδώνιος κάν Δαμασκῷ τῆς Συρίας γίνεσθαι, Περσῶν
+αὐτόθι καταφυτευσάντων τὰς ἀμπέλους. « Persarum
+rex vinum Chaalvbonium solum bibere consueverat,
+quod IPosidonus etiam in Damasco Syriæ
+nasci cotfirmat, quia vineas ibi Persæ plantarunt. »
+Syria autem Judææ linitima est, adeoque Nahemiςæ
+poterat rint illius atdmmmstratio magqs esse nota
+quam aliis. Unde et regi aptior et præ aliis idoneus
+pncerna visus. VἈ grsaEuIOs.</note>
+<note type="footnote">(99) Forte leg. πολυτελῆ. Enτ. Pμro..</note>
+<note type="footnote">(1) Συγκεχωρῆσθαι τοῖς οἰκείος νμοις κρῆ</note>
+
+<pb n="84"/>
+ὁ ἐθνάρχης (2) παρʼ αὐτοῖς δύναται, ὡς μηδὲν διαφέρειν
+βασιλεύοντος τοῦ ἔθνους, ἵσμεν οἱ πεπειραμένοι.
+Γίνεται δὲ καὶ κριτήρια λεληθότως κατὰ τὸν νόμον,
+καὶ καταδικάζονταί τινες τὴν ἐπὶ τῷ θανάτῳ (3)·οὕτε
+μετὰ τῆς πάντη εἰς τοῦτο παῤῥησίας, οὕτε μετὰ τοῦ
+λανθάνειν τὸν βασιλεύοντα· καὶ τοῦτο ἐν τῇ χώρᾳ τοῦ
+ἔθνους πολὺν διατρίψαντες χρόνον μεμαθήκαμεν καὶ
+πεπληροφορήμεθα. Καί τοι γε ὑπὸ Ῥωμαίοις (4) δύο
+φυλαὶ μόναι εἶναι ἱστόρηνται, ἥ τε Ἰούδα καὶ Βενιαμίν·
+ἔστω δὲ καὶ Λευῖτική. Ὁ δὲ (5), παρὰ τὸν λαὸν
+Ἰούδα, Ἰσραὴλ, δέκα ἦσαν φυλαί· καὶ εἰκὸς, ἀρκεσθέντας
+τοὺς Ἀσσυρίους τῷ ὑποχειρίους αὐτοὺς ἕχειν.
+ἐπιτετραφέναι αὐτοῖς τὰ οἰκεῖα δικαστήρια.</p>
+<p n="17">Εὗρόν σου ἐν τῇ ἐπιστολῇ καὶ τοῦτο αὐταῖς λέξεσι
+τό· « Ἐπὶ δὲ πᾶσι, τοσούτων προωδοιπορηκότων προφητῶν,
+τῶν τε ἐξῆς οὐδεὶς ἕτερος ἑτέρου κέχρηται
+ῥητῷ (6) νοήματι· οὐ γὰρ ἐπτώχευσεν ὁ λόγος αὐτῶν
+ἀληθὴς ὤν· οὑτοσὶ δὲ, ἐκείνων θατέρῳ ἐπαπειλῶν
+ὑπομιμνήσκει σε (7) λέγοντος τοῦ Κυρίου· Ἀθῶον
+καὶ δίκαιον οὐκ ἀποκτενεῖς· » καὶ ἐθαύμασα, πῶς
+πολλὰς διατριβὰς ἕχων ἐν ταῖς ἐξετάσεσι καὶ μελέταις
+τῆς Γραφῆς, οὐ τετήρηκας συγχρωμένους προφήτας
+προφητῶν λόγοις σχεδὸν αὐταῖς λέξεσι. Τίς
+γὰρ οὐκ οἶδε καὶ τῶν πολλῶν πιστῶν κείμενον ἐν τῷ
+Ἡσσΐᾳ τό· « Ἔσται ἐν ταῖς ἐσχάταις ἡμέραις ἐμφανὲς
+τὸ ὅρος Κυρίου· καὶ ὁ οἶκος τοῦ Θεοῦ (8) ἐπ᾿
+ἄκρων τῶν ὀρέων, καὶ ὑψωθήσεται ὑπεράνω τῶν
+βουνῶν, καὶ ἥξουσιν ἐπʼ αὐτὸ πάντα τὰ ἕθνη· καὶ
+πορεύσονται ἕθνη πολλὰ, καὶ ἐροῦσι· Δεῦτε, ἀνα
+εἰς τὸ ὄρος τοῦ Κυρίου, καὶ εἰς τὸν οἷκον
+βῶμεντοῦ Θεοῦ Ἰακώβ· καὶ ἀναγγελεῖ ἡμῖν τὴν ὁδὸν
+αὐτοῦ, καὶ πορευσόμσθα ἐν αὐτῇ· ἐκ γὰρ Σιὼν
+ἐξελεύσεται νόμος, καὶ λόγος Κυρίου ἐν Ἱερουσαλήμ
+(9). Καὶ κρινεῖ ἀνὰ μέσον τῶν ἐθνῶν, καὶ κρινεῖ
+λαὸν πολύν· καὶ συγκόψουσι τὰς μαχαίρας αὐτῶν
+εἰς ἄροτρα, καὶ τὰς ζιβύνας αὐτῶν εἰς δρέπανα· καὶ
+οὐ λήψεται ἕθνος ἐπʼ ἕθνος μάχαιραν· καὶ οὐ μὴ
+μάθωσιν ἕτι πολεμεῖν. » Τὸ δὲ παραπλήσιον τούτοις
+lὅλοις, καὶ τῇ αὐτῇ λέξει, ἐν τῷ Μιχαίᾳ οὕτως ἐστὶ
+<note type="footnote">prehensus, in crucem actus est. Sed neque ullas
+mulier in Judæorum synagogis aut lagris cæsa aut
+lapidibus impetita est. Nusquam prolecto, nec unquam.
+Imo longe alio mortis genere interiisse dicuntur
+Montanus et Maxtilla »</note>
+<note type="footnote">(4) τὸ Τωμαιοις. Leo Castrius legendum putat,
+ὑπὸ Βαβυλωνίοις, « sub Babyloniis. » Videtur
+tamen recte dictum sub Romanis funisse duas tribus,
+ut argumentum sit « a minori ad majus: » nimirum,
+si duæ tribus su Romanis tantam habuerint
+potestatem, multo magis decem tribus sub Assyriis,
+eamdem aut majorem habuisse credendum
+est. VVgτsrrocs.</note>
+<note type="footnote">(5) Ὁ Ss. VVetstenius omisit particulam δέ.</note>
+<note type="footnote">(6) VVetctenius, ῥητῶν, et paulo pοst,ὁ λόγος αὐτῆς
+ἀληθὴς ὡν· οὑτωσὶ δέ, male.</note>
+<note type="footnote">(7) πομιμνήσκει σε. In epistola Africani deest,
+σε, et abesse quoque hoc Ioco potest sine sensus
+dispendio.</note>
+<note type="footnote">(8) Θεοῦ. Unus codex ms. Κυρίου. Μοx Aldus
+ἐπʼ ἄκρου, et paulo post, ἥξουσιν ἐν αὐτῇ
+πάντα.</note>
+<note type="footnote">(9) Aldus, ἐξ Ἰερουσαλήμ. Idem paulo post, ἐξελέγξει
+λαὸν πολύν. Codex Basileensis, ἐλέγξει λαὸν
+πολύν.</note>
+
+<pb n="85"/>
+γεγραμμένον· « Καὶ ἕσται ἐπʼ ἐσχάτων τῶν ἡμερῶν
+ἐμφανὲς τὸ ὅρος τοῦ Κυρίου, ἕτοιμον ἐπὶ τὰς κορυφὰς
+τῶν ὀρέων, καὶ μετεωρισθήσεται ὑπεράνω
+τῶν βουνῶν· καὶ σπεύσουσιν ἐπʼ αὐτῷ λαοὶ, καὶ
+πορεύσονται ἕθνη πολλὰ, καὶ ἐροῦσι· Δεῦτε, ἀναβῶμεν
+εἰς τὸ ὅρος (10) τοῦ Κυρίου, καὶ εἰς τὸν οἶκον
+τοῦ Θεοῦ Ἰακὼβ, καὶ δείξουσιν ἡμῖν τὴν ὀδὸν αὐτοῦ·
+καὶ πορευσόμεθα ἐν ταῖς τρίβοις αὐτοῦ· ὅτι ἐκ Σιὼν
+ἐξελεύσεται νόμος, καὶ λόγος Κυρίου ἐξ Ἱερουσαλήμ.
+Καὶ κρινεῖ ἀνὰ μέσον λαῶν πολλῶν, καὶ ἐλέγξει ἐπὶ
+ἕθνη (11) ἰσχυρὰ ἕως εἰς μακρὰν, καὶ κατακόψουσι
+τὰς μαχαίρας αὐτῶν εἰς ἄροτρα, καὶ τὰς ζιβύνας
+αὐτῶν εἰς δρέπανα· καὶ οὐκέτι μὴ ἄρῃ ἕθνος ἐπʼ
+ἕθνος ῥομφαίαν, καὶ οὐκέτι μὴ μάθωσι πολεμεῖν.»
+Ἔτι δὲ ἐν τῇ πρώτῃ τῶν Παραλειπομένων ὁ τεταγμένος
+ἐν χειρὶ Ἀσὰφ, καὶ τῶν ἀδελφῶν αὐτοῦ ψαλμὸς,
+τοῦ αἰνεῖν τὸν Κύριον, οὗ ἡ ἀρχή· « Ἐξομολογεῖσθε
+καὶ ἐπικαλεῖσθε αὐτὸν ἐν ὀνόματι αὐτοῦ, »
+ἐν μὲν τοῖς πλείστοις κατὰ τὴν ἀρχὴν ἰσοδυναμεῖ
+τῷ ρδ΄ ψαλμῷ, ἕως τοῦ· « Καὶ ἐν τοῖς προφήταις
+μου μὴ πονηρεύεσθε· » μετὰ δὲ τοῦτο τῷ Ϟε΄ ἀπὸ
+τῆς ἀρχῆς αὐτοῦ ἐγγύς πως ἐχούσης τό· « Ἄσατε
+τῷ Κυρίῳ πᾶσα ἡ γῆ » ἕως τοῦ· « Ὅτι ἕρχεται κρῖναι
+τὴν γῆν. » Ἐπεὶ δὲ ἦν τὸ παραθέσθαι αὐτὰς τὰς
+λέξεις πολὺ, διὰ βραχέων πρὸς τὸ προκείμενον ταῦτα
+εἰρήκαμεν. Εὑρήσεις δὲ καὶ περὶ τοῦ μὴ αἵρειν
+βάσταγμα ἐν τῇ ἡμέρᾳ τῶν Σαββάτων οὐ μόνον
+παρὰ Μωϋσεῖ γεγραμμένον, ἀλλὰ καὶ ἐν Ἱερεμίᾳ.
+Καὶ περὶ τοῦ Πάσχα καὶ νόμων ἱερατικῶν εὑρήσεις
+παρά τε Μωῦσεῖ καὶ ἐν τοῖς τελευταίοις τοῦ Ἰεζεκιήλ.
+Καὶ αὐτὰς δʼ ἂν παρεθέμην τὰς λέξεις, καὶ
+ἅλλας πλείονας, εἰ μὴ ἑώρων ὑπὸ τῆς ὀλιγότητος τῶν ἐν Νικομηδείᾳ ἡμερῶν ἡμῶν ἀποκλειόμενον τὸνχρόνον
+τῆς πρὸς σὲ γραφῆς.</p>
+<p n="18">Πρὸς τούτοις ἕφασκες καὶ τὸν τῆς φράσεως χαρακτῆρα
+διαλλάσσειν· ὅπερ ἐμοὶ οὐ πάνυ τι ἐφάνη. Καὶ
+ταῦτα μὲν ἀπελογησάμην· ἦν δʼ ἃν προηγουμένως
+μετὰ τὰ ἐγκλήματα ἐγκώμιον εἰπεῖν τῆς περὶ Σωσάνναν
+Γραφῆς ἐπιβαίνοντα ἑκάστῃ λέξει, καὶ δεικνύντα
+τὸ ἐξαίρετον τῶν νενοημένων· ὅπερ ἰδίᾳ τις
+τῶν φιλομαθῶς καὶ ἱκανῶς μεμελετηκότων τὰ θεῖα
+συντάξαι δυνήσεται. Ταῦτα πρὸς τὰ, ὡς φὴς, κρούματα
+ἀπεκρινάμην, καὶ ἀντιγράφω· εἵθε καὶ παιδεύειν
+δυναίμην! νυνὶ δὲ οὐ τηλικαῦτα ἐμαυτῷ δίδωμι.
+Προσαγορεύει σε ὁ συναγωνισάμενος τῇ ὑπαγορεύσει
+τῆς ἐπιστολῆς, καὶ παρατυχὼν πάσῃ αὐτῇ,
+ἐν οἷς βεβούληται διορθωσάμενος, κύριός μου καὶ
+ἀδελφὸς ἱερὸς Ἀμβρόσιος (12). Ἀσπάζεται δέ σε
+καὶ ἡ πιστοτάτη σύμβιος αὐτοῦ Μαρκέλλα ἅμα τοῖς
+τέκνοις, καὶ Ἀνίκητος (13). Σὺ τὸν καλὸν ἡμῶν πάπαν
+Ἀπολλινάριον (14) ἅσπασαι, καὶ τοὺς ἀγαπῶντας
+ἠμᾶς.</p>
+<note type="footnote">43 Mich. IV, 1 seqq. 44 I Paral. XVI. 8, 22. 45 Psal. CIV, 1, 15. 46 Psal. XCV, 1-13. 47 Εxod. XXXV, 2
+Num.XV, 32; Jerem. XVII, 2I, 24; iII Levit. passim; Ezech. XLIII, XLIV, XLV, XLVI.</note>
+<note type="footnote">(10) Aldus, εἰς τὸν οἶκον.</note>
+<note type="footnote">(11) Aldus, ἐξελέγξει ἔθνη. Idem paulo post, ἕως
+μακράν. Idem infra, τὰ δόρατα αὐτῶν εἰς δρέπανα,
+et mox, ἔθνος πρὸς ἔθνος ῥομφαίαν.</note>
+<note type="footnote">(12) Ἀμβρόσιος. Vide notas ad primum fragmuuent.
+epist. Orgenis.</note>
+<note type="footnote">(13) CἈνίκοτος. Quis fuerit hic Anicetus a docuore
+edoceri malim, quam incertas sorbere conjecturas.
+VVεsrEnos.</note>
+<note type="footnote">(14) Ἀπολλνάρον. Duo fuere Apollinaii cum
+prmis celebres: alter Laodicenus schismatis auctor,
+a quo Apollinaristæ appellati sunt. Vixit is
+diu post Origenem; obiit enim, monente Hieronym
+in Catalogo, sub Τhcodosio impeatore. Alter in
+Asia lierapolitanus episcopus, ἀνὴρ ἀξιέπαινος,
+καὶ πρὸς τῇ γνώσει τῶν θείων καὶ τὴν ἔξωθεν παι</note>
+</div>
+
+</div>
+</body>
+</text>
+</TEI>
