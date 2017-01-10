@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
+    
       <fileDesc>
          <titleStmt>
             <title>Ad Smyrnaeos (epist. 6)</title>
@@ -70,7 +71,7 @@
       </fileDesc>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-         <refsDecl n="CTS">
+           <refsDecl n="CTS">
             <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
             <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
@@ -83,7 +84,8 @@
       <revisionDesc>
          <change/>
       </revisionDesc>
-   </teiHeader>
+ </teiHeader>
+
    <text>
       <body>
          <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1443.tlg009.1st1K-grc1">
@@ -93,7 +95,7 @@
                   <p>Ἰγνάτιος, ὁ καὶ Θεοφόρος, ἐκκλησίᾳ θεοῦ
 πατρὸς καὶ τοῦ ἠγαπημένου Ἰησοῦ Χριστοῦ,
 <note>
-                        <bibl corresp="I Cor:1.7">I Cor. 1, 7</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:1.7">I Cor. 1, 7</bibl>
                      </note> ἠλεημένῃ ἐν παντὶ χαρίσματι, πεπληρωμένῃ
 ἐν πίστει καὶ ἀγάπῃ, ἀνυστερήτῳ οὔσῃ
 παντὸς χαρίσματος, θεοπρεπεστάτῃ καὶ ἁγιοφόρῳ,
@@ -110,14 +112,14 @@
 ἐν ἀκινήτῳ πίστει, ὥσπερ καθηλωμένους
 ἐν τῷ σταυρῷ τοῦ κυρίου Ἰησοῦ Χριστοῦ σαρκί
 <note>
-                        <bibl corresp="Rom.:1.3">Rom. 1, 3</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg006:1.3">Rom. 1, 3</bibl>
                      </note> τε καὶ πνεύματι καὶ ἡδρασμένους ἐν ἀγάπῃ ἐν τῷ
 αἵματι Χριστοῦ, πεπληροφορημένους εἰς τὸν
 κύριον ἡμῶν, ἀληθῶς ὄντα ἐκ γένους Δαυεὶδ κατὰ
 σάρκα, υἱὸν θεοῦ κατὰ θέλημα καὶ δύναμιν θεοῦ, <note n="1">A Theodoret omit qeou= and are follosed by Lightfoot.</note>
 γεγεννημένον ἀληθῶς ἐκ παρθένου, βεβαπτισμένον
 <note>
-                        <bibl corresp="Mt.:3.15">Mt. 3, 15</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:3.15">Mt. 3, 15</bibl>
                      </note> ὑπὸ Ἰωάννου, ἵνα πληρωθῇ πᾶσα δικαιοσύνη ὑπ̓
 αὐτοῦ:</p>
                </div>
@@ -126,12 +128,12 @@
 Ἡρώδου τετράρχου καθηλωμένον ὑπὲρ ἡμῶν ἐν
 σαρκί, ἀφ̓ οὖ καρποῦ ἡμεῖς ἀπὸ τοῦ θεομακαρίστου
 <note>
-   <bibl corresp="Is.:6.26 Is.:11.12 Is.:49.22 Is.:62.10">Is. 6, 26 (11, 12; 49, 22; 62, 10)</bibl>
+   <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:6.26 cts:urn:greekLit:tlg0527.tlg048:11.12 cts:urn:greekLit:tlg0527.tlg048:49.22 cts:urn:greekLit:tlg0527.tlg048:62.10">Is. 6, 26 (11, 12; 49, 22; 62, 10)</bibl>
                      </note> αὐτοῦ πάθους, ἵνα ἄρῃ σύσσημον εἰς τοὺς
 αἰῶνας διὰ τῆς ἀναστάσεως εἰς τοὺς ἁγίους καὶ
 πιστοὺς αὐτοῦ, εἴτε ἐν Ἰουδαίοις εἴτε ἐν ἔθνεσιν,
 <note>
-                        <bibl corresp="Epb.:2.16">Epb. 2, 16</bibl>
+   <bibl corresp="cts:urn:greekLit:tlg0031.tlg010:2.16">Epb. 2, 16</bibl>
                      </note> ἐν ἑνὶ σώματι τῆς ἐκκλησίας αὐτοῦ.
 </p>
                </div>
@@ -156,14 +158,14 @@
                <div type="textpart" subtype="section" n="2">
                   <p> καὶ ὅτε πρὸς
 <note>
-                        <bibl corresp="Luke:24.89">Cf. Luke 24, 89</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg003:24.89">Cf. Luke 24, 89</bibl>
                      </note> τοὺς περὶ Πέτρον ἦλθεν, ἔφη αὐτοῖς: Λάβετε,
 ψηλαφήσατέ με καὶ ἴδετε, ὅτι οὐκ εἰμὶ δαιμόνιον
 ἀσώματον. καὶ εὐθὺς αὐτοῦ ἥψαντο καὶ ἐπίστευσαν,
 κραθέντες τῇ σαρκὶ αὐτοῦ καὶ τῷ
 πνεύματι. <note n="1">pneu/mati GLC, ai(/mati A.</note> διὰ τοῦτο καὶ θανάτου κατεφρόνησαν,
 <note>
-                        <bibl corresp="Acts:10.41">Acts 10, 41</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg005:10.41">Acts 10, 41</bibl>
                      </note> ηὑρέθησαν δὲ ὑπὲρ θάνατον.</p>
                </div>
                <div type="textpart" subtype="section" n="3">
@@ -190,7 +192,7 @@
 ἀλλ̓ ἐγγὺς μαχαίρας ἐγγὺς θεοῦ, μεταξὺ θηρίων
 μεταξὺ θεοῦ: μόνον ἐν τῷ ὀνόματι Ἰησοῦ Χριστοῦ
 <note>
-                        <bibl corresp="Phll.:4.13">Phll. 4, 13</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg011:4.13">Phll. 4, 13</bibl>
                      </note> εἰς τὸ συμπαθεῖν αὐτῷ πάντα ὑπομένω, αὐτοῦ με
 ἐνδυναμοῦντος τοῦ τελείου ἀνθρώπου. <note n="2">add. genome/nou GL.</note>
                   </p>
@@ -227,7 +229,7 @@
 δόξα τῶν ἀγγέλων καὶ οἱ ἄρχοντες ὁρατοί τε καὶ
 ἀόρατοι, ἐὰν μὴ πιστεύσωσιν εἰς τὸ αἷμα Χριστοῦ,
 <note>
-                        <bibl corresp="(??):19.12">(??) 19, 12</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:19.12">Mt. 19, 12</bibl>
                      </note> κἀκείνοις κρίσις ἐστίν: ὁ χωρῶν χωρείτω. τόπος
 μηδένα φυσιούτω: τὸ γὰρ ὅλον ἐστὶν πίστις καὶ
 ἀγάπη, ὧν οὐδὲν προκέκριται.</p>
@@ -312,7 +314,7 @@
 τῷ κυρίῳ ὑπὲρ ὑμῶν, ὅτι αὐτοὺς ἀνεπαύσατε
 κατὰ πάντα τρόπον. οὐδὲν ὑμῖν οὐ μὴ ἀπολεῖται.
 <note>
-                        <bibl corresp="II Tim.:1.16">II Tim.1, 16</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg016:1.16">II Tim.1, 16</bibl>
                      </note>
                   </p>
                </div>
@@ -349,7 +351,7 @@
 τῶν ὑμετέρων μετ̓ ἐπιστολῆς, ἵνα συνδοξάσῃ τὴν
 κατὰ θεὸν αὐτοῖς γενομένην εὐδίαν, καὶ ὅτι λιμένος
 <note>
-                        <bibl corresp="Phll.(??). 15">Phll.(??). 15</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg011:3.15">Phll. 3. 15</bibl>
                      </note> ἤδη ἐτύγχανον <note n="3">e)/tuxon B.</note> τῇ προσευχῇ ὑμῶν. τέλειοι
 ὄντες τέλεια καὶ φρονεῖτε. θέλουσιν γὰρ ὑμῖν
 εὖ πράσσειν θεὸς ἕτοιμος εἰς τὸ παρέχειν. <note n="4">pare/xein B, parasxei=n Gg.</note>
