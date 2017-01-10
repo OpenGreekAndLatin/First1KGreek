@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
+    
       <fileDesc>
          <titleStmt>
             <title>Ad Ephesios (epist. 1)</title>
@@ -61,7 +62,7 @@
       </fileDesc>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-         <refsDecl n="CTS">
+           <refsDecl n="CTS">
             <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
             <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
@@ -74,7 +75,8 @@
       <revisionDesc>
          <change/>
       </revisionDesc>
-   </teiHeader>
+ </teiHeader>
+
    <text>
       <body>
          <pb n="172"/>
@@ -201,7 +203,7 @@
                <div type="textpart" subtype="section" n="2">
                   <p> μηδεὶς πλανάσθω: ἑὰν μή τις ᾖ ἐντὸς τοῦ
 <note>
-                        <bibl corresp="Juh:6.38">Juh 6, 38</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:6.33">Juh 6, 38</bibl>
                      </note> θυσιαστηρίου, ὑστερεῖται τοῦ ἄρτου τοῦ θεοῦ. εἰ
 γὰρ ἑνὸς καὶ δευτέρου προσευχὴ τοσαύτην ἰσχὺν
 ἔχει, πόσῳ μᾶλλον ἥ τε τοῦ ἐπισκόπου καὶ πάσης
@@ -211,7 +213,7 @@
                   <p> ὁ οὖν μὴ ἐρχόμενος ἐπὶ τὸ
 αὐτὸ οὗτος ἤδη ὑπερηφανεῖ καὶ ἑαυτὸν διέκρινεν.
 <note>
-                        <bibl corresp="Prov.:3.84 James:4.6 i Pet.:5.6">Prov. 3, 84; James 4, 6; *i Pet. 5, 6</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg029:3.84 cts:urn:greekLit:tlg0031.tlg020:4.6 cts:urn:greekLit:tlg0031.tlg021:5.6">Prov. 3, 84; James 4, 6; *i Pet. 5, 6</bibl>
                      </note> γέγραπται γάρ: Ὑπερηφάνοις ὁ θεὸς ἀντιτάσσεται,
 σπουδάσωμεν οὖν μὴ ἀντιτάσσεσθαι τῷ ἐπισκόπῳ,
 ἵνα ὦμεν θεῷ <note n="2">qeou= is found in G and Lightfoot prefers it for transcriptional probability, but qew=| is eupported by LS and some patristic #3uotations.</note> ὑποτασσόμενοι.
@@ -264,7 +266,7 @@
 ἄρα κατὰ θεὸν ζῆτε. περίψημα ὑμῶν καὶ
 ἁγνίζομαι ὑμῶν Ἐφεσίων, ἐκκλησίας τῆς διαβοήτου
 <note>
-                        <bibl corresp="Rom.:0.5. 8">Rom. 0, 5. 8</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg006:8.5 cts:urn:greekLit:tlg0031.tlg006:8.8">Rom. 8, 5. 8</bibl>
                      </note> τοῖς αἰῶσιν.</p>
                </div>
                <div type="textpart" subtype="section" n="2">
@@ -304,7 +306,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p>
                      <note>
-                        <bibl corresp="Thoss.:5.17">Thoss. 5, 17</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg013:5.17">Thess. 5, 17</bibl>
                      </note>
                   </p>
                   <p> Καὶ ὑπὲρ τῶν ἄλλων δὲ ἀνθρώπων ἀδιαλείπτως
@@ -317,7 +319,7 @@
 μεγαλορημοσύνας αὐτῶν ὑμεῖς ταπεινόφρονες, πρὸς
 τὰς βλασφημίας αὐτῶν ὑμεῖς τὰς προσευχάς, πρὸς
 <note>
-                        <bibl corresp="Col.:1.23 Rom:4.20 10 Cor. 13">Col. 1, 23; cf. Rom, 4, 20; 10 Cor. 13</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg012:1.23 cts:urn:greekLit:tlg0031.tlg006:4.20 cts:urn:greekLit:tlg0031.tlg007:16.13">Col. 1, 23; cf. Rom, 4, 20; 1 Cor. 16, 13</bibl>
                      </note> τὴν πλάνην αὐτῶν αὐτῶν ὑμεῖς ἑδραῖοι τῇ πίστει, πρὸς
 τὸ ἄγριον αὐτῶν ὑμεῖς ἥμεροι, μῆ σπουδάζοντες
 ἀντιμιμήσασθαι αὐτούς,</p>
@@ -389,7 +391,7 @@
 Ἰησοῦν Χριστὸν ἔχητε τὴν πίστιν καὶ τὴν ἀγάπην,
 ἥτις ἐστὶν ἀρχὴ ζωῆς καὶ τέλος: ἀρχὴ μὲν πίστις,
 <note>
-                        <bibl corresp="Tha.:1.5)">Tha. 1, 5)</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg015:1.5)">1 Tim. 1, 5)</bibl>
                      </note> τέλος δὲ ἀγάπη. τὰ δὲ δύο ἐν ἑνότητι γενόμενα
 θεός ἐστιν, τὰ δὲ ἄλλα πάντα εἰς καλοκἀγαθίαν
 ἀκόλουθά ἐστιν.</p>
@@ -397,7 +399,7 @@
                <div type="textpart" subtype="section" n="2">
                   <p> οὐδεὶς πίστιν ἐπαγγελλόμενος
 <note>
-                        <bibl corresp="Mt.:12.33">Mt. 12, 33</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:12.33">Mt. 12, 33</bibl>
                      </note> ἁμαρτάνει, οὐδὲ ἀγάπην κεκτημένος μισεῖ. φανερὸν
 τὸ δένδρον ἀπὸ τοῦ καρποῦ αὐτοῦ. οὕτως οἱ ἐπαγγελλόμενοι
 Χριστοῦ εἶναι δἰ ὧν πράσσουσιν
@@ -411,7 +413,7 @@
                   <p> Ἄμεινόν ἐστιν σιωπᾶν καὶ εἶναι, ἦ λαλοῦντα
 μὴ εἶναι. καλὸν τὸ διδάσκειν, ἐὰν ὁ λέγων ποιῇ. εἶς
 <note>
-                        <bibl corresp="Ps.:33.9 Ps.:143.5 Judith:10.14">Ps. 33, 9; 143, 5; Judith 10, 14</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg027:33.9 cts:urn:greekLit:tlg0031.tlg027:143.5 cts:urn:greekLit:tlg0527.tlg020:10.14">Ps. 33, 9; 143, 5; Judith 10, 14</bibl>
                      </note> οὖν διδάσκαλος, ὃς εἶπεν, καὶ ἐγένετο: καὶ ἃ σιγῶν
 δὲ πεποίηκεν ἄξια τοῦ πατρός ἐστιν.</p>
                </div>
@@ -425,7 +427,7 @@
                   <p> οὐδὲν
 λανθάνει τὸν κύριον, ἀλλὰ καὶ τὰ κρυπτὰ ἡμῶν
 <note>
-                        <bibl corresp="I Cor.:8.16">I Cor. 8, 16</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:8.16">I Cor. 8, 16</bibl>
                      </note> ἐγγὺς αὐτῷ ἐστιν. πάντα οὖν ποιῶμεν ὡς αὐτοῦ ἐν
 ἡμῖν κατοικοῦντος, ἵνα ὦμεν αὐτοῦ ναοὶ καὶ αὐτὸς
 ἐν ἡμῖν θεὸς ἡμῶν: <note n="1">e)n h(mw=n qeo\s h(mw=n GL, e)n h(mi=n qeo/s Sg, qeo\s h(mw=n A.</note> ὅπερ καὶ ἔστιν καὶ φανήσεται
@@ -438,7 +440,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p>
                      <note>
-                        <bibl corresp="I Cor.:6.9 I Cor.:6.10 cf. Rph.:5.5">I Cor. 6, 9. 10; cf. Rph. 5, 5</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:6.9 cts:urn:greekLit:tlg0031.tlg007:6.10 Rph.:5.5">I Cor. 6, 9. 10; cf. Rph. 5, 5</bibl>
                      </note>
                   </p>
                   <p> Μὴ πλανᾶσθε, ἀδελφοί μου: οἱ οἰκοφθόροι
@@ -458,7 +460,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p>
                      <note>
-                        <bibl corresp="Mt.:26.7 Joh.:12.8">Mt. 26, 7; Joh. 12, 8</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:26.7 cts:urn:greekLit:tlg0031.tlg004:12.8">Mt. 26, 7; Joh. 12, 8</bibl>
                      </note>
                   </p>
                   <p> Διὰ τοῦτο μύρον ἔλαβεν ἐπὶ τῆς κεφαλῆς
@@ -479,7 +481,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p>
                      <note>
-                        <bibl corresp="Gal.:5.11 I Cor. 1, 20">Gal. 5, 11 I Cor. 1, 20</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg009:5.11 cts:urn:greekLit:tlg0031.tlg007:1.20">Gal. 5, 11 I Cor. 1, 20</bibl>
                      </note>
                   </p>
                   <p> Περίψημα τὸ ἐμὸν πνεῦμα τοῦ σταυροῦ, ὅ
@@ -492,7 +494,7 @@
 θεὸς ἡμῶν Ἰησοῦς ὁ Χριστὸς ἐκυοφορήθη ὑπὸ
 <pb n="192"/>
                      <note>
-                        <bibl corresp="Joh.:7.42 Rom.:1.3 II Tim:2.8">Joh. 7, 42; Rom. 1, 3; II Tim 2, 8</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:7.42 cts:urn:greekLit:tlg0031.tlg006:1.3 cts:urn:greekLit:tlg0031.tlg016:2.8">Joh. 7, 42; Rom. 1, 3; II Tim 2, 8</bibl>
                      </note> Μαρίας κατ̓ οἰκονομίαν θεοῦ <note n="1">Lightfoot omits qeou= on the authority of g and transcriptional probability.</note> ἐκ σπέρματος μὲν
 Δαυείδ, πνεύματος δὲ ἁγίου: ὃς ἐγεννήθη καὶ
 ἐβαπτίσθη, ἵνα τῷ πάθει τὸ ὕδωρ καθαρίσῃ.
@@ -521,7 +523,7 @@
 ἠφανίζετο κακίας: ἄγνοια καθῃρεῖτο, παλαιὰ βασιλεία
 διεφθείρετο <note n="2">Lightfoot omits diefqei/reto, and readjusts the punctuation, on the authority of *a*s.</note> θεοῦ ἀνθρωπίνως φανερουμένου
 <note>
-                        <bibl corresp="Rom.:6.4">Rom. 6, 4</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg006:6.4">Rom. 6, 4</bibl>
                      </note> εἰς καινότητα ἀϊδίου ζωῆς: ἀρχὴν δὲ ἐλάμβανεν
 τὸ παρὰ θεῷ ἀπηρτισμένον. ἔνθεν τὰ πάντα
 συνεκινεῖτο διὰ τὸ μελετᾶσθαι θανάτου κατάλυσιν.
@@ -544,7 +546,7 @@
 κατ̓ ἄνδρα κοινῇ πάντες ἐν χάριτι ἐξ ὀνόματος
 συνέρχεσθε ἐν μιᾷ πίστει καὶ ἐν <note n="2">Theodoret #3uotes this as e(ni\ I. X. <q>one Jesus Christ,</q> and Lightfoot accepts this reading.</note> Ἰησοῦ Χριστῷ.
 <note>
-                        <bibl corresp="Rom.:1.3">Rom. 1, 3</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg006:1.3">Rom. 1, 3</bibl>
                      </note> τῷ κατὰ σάρκα ἐκ γένους Δαυείδ, τῷ υἱῷ ἀνθρώπου
 καὶ υἱῷ θεοῦ, εἰς τὸ ὑπακούειν ὑμᾶς τῷ ἐπισκόπῳ
 καὶ τῷ πρεσβυτερίῳ ἀπερισπάστῳ διανοίᾳ, ἕνα
