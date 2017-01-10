@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
+    
       <fileDesc>
          <titleStmt>
             <title>Ad Romanos (epist. 4)</title>
@@ -70,7 +71,7 @@
       </fileDesc>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-         <refsDecl n="CTS">
+           <refsDecl n="CTS">
             <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
             <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
@@ -83,7 +84,8 @@
       <revisionDesc>
          <change/>
       </revisionDesc>
-   </teiHeader>
+ </teiHeader>
+
    <text>
       <body>
          <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1443.tlg007.1st1K-grc1">
@@ -136,7 +138,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p>
                      <note>
-                        <bibl corresp="1 Thess. 2, 4">1 Thess. 2, 4</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg013:2.4">1 Thess. 2, 4</bibl>
                      </note>
                   </p>
                   <p> Οὐ γὰρ θέλω ὑμᾶς ἀνθρωπαρεσκῆσαι, ἀλλὰ
@@ -188,7 +190,7 @@
 ἐντέλλομαι πᾶσιν, ὅτι ἐγὼ ἑκὼν ὑπὲρ θεοῦ
 ἀποθνήσκω, ἐάνπερ ὑμεῖς μὴ κωλύσητε. παρακαλῶ
 <note>
-                        <bibl corresp="Cf. Zenobius Puroem. I. 50">Cf. Zenobius Puroem. I. 50</bibl>
+                        <bibl corresp="urn:cts:greekLit:tlg0098.tlg001:1.50">Cf. Zenobius Puroem. I. 50</bibl>
                      </note> ὑμᾶς, μὴ εὔνοια ἄκαιρος γένησθέ μοι. ἄφετέ με
 θηρίων εἶναι βοράν, δἰ ὦν ἔνεστιν θεοῦ ἐπιτυχεῖν.
 σῖτός εἰμι θεοῦ καὶ δἰ ὀδόντων θηρίων ἀλήθομαι,
@@ -208,7 +210,7 @@
                <div type="textpart" subtype="section" n="3">
                   <p> οὐχ ὡς Πέτρος καὶ
 <note>
-                        <bibl corresp="I Cor:7.29">I Cor. 7, 29</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:7.29">I Cor. 7, 29</bibl>
                      </note> Παῦλος διατάσσομαι ὑμῖν. ἐκεῖνοι ἀπόστολοι,
 ἐγὼ κατάκριτος: ἐκεῖνοι ἐλεύθεροι, ἐγὼ δὲ μέχρι
 νῦν δοῦλος. ἀλλ̓ ἐὰν πάθω, ἀπελεύθερος γενήσομαι
@@ -225,7 +227,7 @@
 δέκα λεοπάρδοις, ὅ ἐστιν στρατιωτικὸν τάγμα: οἲ
 καὶ εὐεργετούμενοι χείρους γίνονται. ἐν δὲ τοῖς
 <note>
-                        <bibl corresp="Cor.:4.4">Cor. 4, 4</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:4.4">Cor. 4, 4</bibl>
                      </note> ἀδικήμασιν αὐτῶν μᾶλλον μαθητεύομαι, ἀλλ̓ οὐ
 παρὰ τοῦτο δεδικαίωμαι.</p>
                </div>
@@ -252,7 +254,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p>
                      <note>
-                        <bibl corresp="Cor.:9.15">Cor. 9, 15</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:9.15">Cor. 9, 15</bibl>
                      </note>
                   </p>
                   <p> Οὐδέν μοι ὠφελήσει τὰ πέρατα τοῦ κόσμου
@@ -294,17 +296,17 @@
 γράφω ὑμῖν, ἐρῶν τοῦ ἀποθανεῖν. ὁ ἐμὸς ἔρως
 ἐσταύρωται, καὶ οὐκ ἔστιν ἐν ἐμοὶ πῦρ φιλόυλον:
 <note>
-                        <bibl corresp="Joh.:4.10 T, 38">Joh. 4, 10; T, 38</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:4.10 cts:urn:greekLit:tlg0031.tlg004:7.38">Joh. 4, 10; 7, 38</bibl>
                      </note> ὕδωρ δὲ ζῶν καὶ λαλοῦν <note n="2">The text is much exranded in the later authorities: Lightfoot is inclined to emend kai\ lalou=n to a(llo/menon, shich is found in g, as a referenes to Joh. 4, 14.</note> ἐν ἐμοί, ἔσωθέν μοι λέγον:
 Δεῦρο πρὸς τὸν πατέρα.</p>
                </div>
                <div type="textpart" subtype="section" n="3">
                   <p> οὐχ ἥδομαι τροφῇ
 <note>
-                        <bibl corresp="Joh.:6.33">Joh. 6, 33</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:6.33">Joh. 6, 33</bibl>
                      </note> φθορᾶς οὐδὲ ἡδοναῖς τοῦ βίου τούτου. ἄρτον θεοῦ
 <note>
-                        <bibl corresp="Joh.:7.42 Rom.:1.3 II Tim:2.8">Joh. 7, 42; Rom. 1, 3; II Tim, 2, 8</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg004:7.42 cts:urn:greekLit:tlg0031.tlg006:1.3 cts:urn:greekLit:tlg0031.tlg016:2.8">Joh. 7, 42; Rom. 1, 3; II Tim, 2, 8</bibl>
                      </note> θέλω, ὅ ἐστιν σὰρξ Ἰησοῦ <note n="3">*)ihsou= GLA, om. *sg.</note> Χριστοῦ, τοῦ ἐκ
 σπέρματος Δαυείδ, καὶ πόμα θέλω τὸ αἷμα αὐτοῦ,
 ὅ ἐστιν ἀγάπη ἄφθαρτος.
@@ -341,7 +343,7 @@
                <div type="textpart" subtype="section" n="2">
                   <p> ἐγὼ δὲ αἰσχύνομαι
 <note>
-                        <bibl corresp="I Cor:15.8, 0">I Cor. 15, 8, 0</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:15.8-15.9">I Cor. 15, 8, 0</bibl>
                      </note> ἐξ αὐτῶν λέγεσθαι: οὐδὲ γὰρ ἄξιός εἰμι, ὣν ἔσχατος
 αὐτῶν καὶ ἔκτρωμα: ἀλλ̓ ἠλέημαί τις
 εἶναι, ἐὰν θεοῦ ἐπιτύχω.</p>
@@ -375,7 +377,7 @@
 ἔγραψα δὲ ὑμῖν ταῦτα τῇ πρὸ ἐννέα καλανδῶν
 Σεπτεμβρίων. ἔρρωσθε εἰς τέλος ἐν ὑπομονῇ
 <note>
-                        <bibl corresp="II Thess:3.5">II Thses 3, 5</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg014:3.5">II Thses 3, 5</bibl>
                      </note> Ἰησοῦ Χριστοῦ.</p>
                </div>
             </div>
