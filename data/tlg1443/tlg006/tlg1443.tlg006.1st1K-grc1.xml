@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
+    
       <fileDesc>
          <titleStmt>
             <title>Ad Trallianos (epist. 3)</title>
@@ -61,7 +62,7 @@
       </fileDesc>
       <encodingDesc>
          <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-         <refsDecl n="CTS">
+           <refsDecl n="CTS">
             <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
             <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
          </refsDecl>
@@ -74,7 +75,8 @@
       <revisionDesc>
          <change/>
       </revisionDesc>
-   </teiHeader>
+ </teiHeader>
+
    <text>
       <body>
          <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1443.tlg006.1st1K-grc1">
@@ -126,7 +128,7 @@
 ἐστίν, ὥσπερ ποιεῖτε, ἄνευ τοῦ ἐπισκόπου μηδὲν
 πράσσειν ὑμᾶς, ἀλλ̓ ὑποτάσσεσθαι καὶ τῷ
 <note>
-                        <bibl corresp="I Cor:4.1">I Cor, 4, 1</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:4.1">I Cor, 4, 1</bibl>
                      </note> πρεσβυτερίῳ ὡς τοῖς ἀποστόλοις Ἰησοῦ Χριστοῦ
 τῆς ἐλπίδος ἡμῶν, ἐν ᾦ διάγοντες εὑρεθησόμεθα. <note n="1">eu(reqhso/meqa GL, e)n eu)t(??) eu(req. S g.</note>
                   </p>
@@ -183,7 +185,7 @@
                <div type="textpart" subtype="section" n="1">
                   <p> Μὴ οὐ δύναμαι ὑμῖν τὰ ἐπουράνια γράψαι;
 <note>
-                        <bibl corresp="Cor:8.1. 2">Cor, 8, 1. 2</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:8.1. 2">Cor, 8, 1. 2</bibl>
                      </note> ἀλλὰ φοβοῦμαι, μὴ νηπίοις οὖσιν ὑμῖν βλάβην
 παραθῶ: καὶ συγγνωμονεῖτέ μοι, μήποτε οὐ
 δυνηθέντες χωρῆσαι στραγγαλωθῆτε.</p>
@@ -193,7 +195,7 @@
 ἐγώ, οὐ καθότι δέδεμαι καὶ δύναμαι νοεῖν τὰ ἐπουράνια
 καὶ τὰς τοποθεσίας τὰς ἀγγελικὰς καὶ τὰς
 <note>
-                        <bibl corresp="Col.:1.16">Col. 1, 16</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg012:1.16">Col. 1, 16</bibl>
                      </note> συστάσεις τὰς ἀρχοντικάς, ὁρατά τε καὶ ἀόρατα,
 παρὰ τοῦτο ἤδη καὶ μαθητής εἰμι. πολλὰ γὰρ
 ἡμῖν λείπει, ἵνα θεοῦ μὴ λειπώμεθα.
@@ -248,7 +250,7 @@
 πλησίον ἐχέτω. μὴ ἀφορμὰς δίδοτε τοῖς ἔθνεσιν,
 ἵνα μὴ δἰ ὀλίγους ἄφρονας τὸ ἐν θεῷ πλῆθος
 <note>
-                        <bibl corresp="Is:52.5">Is 52, 5</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0527.tlg048:52.5">Is 52, 5</bibl>
                      </note> βλασφημῆται. Οὐαὶ γάρ, δἰ οὗ ἐπὶ ματαιότητι
 τὸ ὄνομά μου ἐπί τινων βλασφημεῖται.
 </p>
@@ -266,7 +268,7 @@
                <div type="textpart" subtype="section" n="2">
                   <p> ὃς καὶ ἀληθῶς ἠγέρθη ἀπὸ νεκρῶν. ἐγείραντος
 <note>
-                        <bibl corresp="I Cor:15.12">I Cor. 15, 12 ff.</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:15.12">I Cor. 15, 12 ff.</bibl>
                      </note> αὐτὸν τοῦ πατρὸς αὐτοῦ, κατὰ τὸ ὁμοίωμα ὃς καὶ <note n="1">kata\ to\ o(moi/wma o(\s kai/ G, #3ui et secundum simililiudinem L. SA perhaps imply w(s ka(??) kata\ to\ o(moi/wma</note>
 ἡμᾶς τοὺς πιστεύοντας αὐτῷ οὕτως ἐγερεῖ ὁ πατὴρ
 αὐτοῦ ἐν Χριστῷ Ἰησοῦ, οὗ χωρὶς τὸ ἀληθινὸν ζῆν οὐκ ἔχομεν.
@@ -289,7 +291,7 @@
                   <p> Φεύγετε οὖν τὰς κακὰς παραφυάδας τὰς
 γεννώσας καρπὸν θανατηφόρον, οὗ ἐὰν γεύσηταί
 <note>
-                        <bibl corresp="Mt:15.16">Mt 15, 16</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg001:15.16">Mt 15, 16</bibl>
                      </note> τις, παῤ αὐτὰ ἀποθνήσκει. οὗτοι γὰρ οὔκ εἰσιν
 φυτεία πατρός, 2, εἰ γὰρ ἦσαν, ἐφαίνοντο ἂν
 κλάδοι τοῦ σταυροῦ, καὶ ἦν ἂν ὁ καρπὸς αὐτῶν
@@ -322,7 +324,7 @@
 ὑμῶν ἀγάπης χρῄζοντος ἐν τῷ ἐλέει τοῦ θεοῦ, εἰς
 τὸ καταξιωθῆναί με τοῦ κλήρου, οὖ περίκειμαι <note n="1">Lightfoot thinks peri/keimai impossible and accepts Buosen's emendation ou(=per e)/gkeimai.</note>
                      <note>
-                        <bibl corresp="I Cor:9.27">I Cor. 9, 27</bibl>
+                        <bibl corresp="cts:urn:greekLit:tlg0031.tlg007:9.27">I Cor. 9, 27</bibl>
                      </note> ἐπιτυχεῖν, ἵνα μὴ ἀδόκιμος εὑρεθῶ,
 <pb n="224"/>
                   </p>
