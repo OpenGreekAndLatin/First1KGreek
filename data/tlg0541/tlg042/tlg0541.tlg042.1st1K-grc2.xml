@@ -1,392 +1,540 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <title>Sententiae (corresponds to version Men ar II) (Greek)</title>
-                <author>pseudo-Menander</author>
-                <editor role="editor">Manfred Ullmann</editor>
-                <funder>Andrew W. Mellon Foundation</funder>
-                <respStmt>
-                    <resp>Published original versions of the electronic texts</resp>
-                    <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for
-                        Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
-                    <persName>Mark Schiefsky, Harvard University</persName>
-                    <persName>Gregory R. Crane, Universität Leipzig</persName>
-                    <persName>Uwe Vagelpohl, University of Warwick</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Keyboarding</resp>
-                    <orgName xml:id="DDD">Digital Divide Data</orgName>
-                </respStmt>
-                <respStmt>
-                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
-                    <persName>Gregory R. Crane</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
-                    <persName>Matt Munson</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
-                    <persName>Annette Geßner</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Lead Developer (University of Leipzig)</resp>
-                    <persName>Thibault Clérice</persName>
-                </respStmt>
-                <respStmt>
-                    <resp>Technical Advisor</resp>
-                    <persName>Bruce Robertson</persName>
-                </respStmt>
-            </titleStmt>
-            <publicationStmt>
-                <authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W.
-                    Mellon Foundation</authority>
-                <publisher>University of Leipzig</publisher>
-                <pubPlace>Germany</pubPlace>
-                <idno type="filename">tlg0541.tlg042.1st1K-grc2.xml</idno>
-                <availability>
-                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available
-                        under a Creative Commons Attribution-ShareAlike 4.0 International
-                        License</licence>
-                </availability>
-                <date>2016</date>
-            </publicationStmt>
-            <sourceDesc>
-                <biblStruct>
-                    <monogr>
-                        <author>pseudo-Menander</author>
-                        <title>Die arabische Überlieferung der sogenannten Menandersentenzen</title>
-                        <editor role="editor">Manfred Ullmann</editor>
-                        <imprint>
-                            <pubPlace>Wiesbaden</pubPlace>
-                            <publisher>Kommissionsverlag Franz Steiner</publisher>
-                            <biblScope unit="pp" from="64" to="73">64-73</biblScope>
-                            <date>1961</date>
-                        </imprint>
-                    </monogr>
-                    <ref target="NN"></ref>
-                </biblStruct>
-            </sourceDesc>
-        </fileDesc>
-        <encodingDesc>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the
-                CTS/CITE Architecture.</p>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="sentence"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
-            </refsDecl>
-        </encodingDesc>
-        <profileDesc>
-            <langUsage>
-                <language ident="grc">Greek</language>
-            </langUsage>
-        </profileDesc>
-    </teiHeader>
-    <text>
-        <body>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+  <teiHeader>
+    <fileDesc>
+<titleStmt><title>Sententiae (corresponds to version Men ar II) (Greek)</title>
+        <author>pseudo-Menander</author>
+        <editor role="editor">Manfred Ullmann</editor>
+        <funder>Andrew W. Mellon Foundation</funder>
+      <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+          <persName>Mark Schiefsky, Harvard University</persName>
+          <persName>Gregory R. Crane, Universität Leipzig</persName>
+          <persName>Uwe Vagelpohl, University of Warwick</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Keyboarding</resp>
+          <orgName xml:id="DDD">Digital Divide Data</orgName>
+        </respStmt>
+        <respStmt>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+          <persName>Gregory R. Crane</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+          <persName>Matt Munson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+          <persName>Annette Geßner</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Lead Developer (University of Leipzig)</resp>
+          <persName>Thibault Clérice</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Technical Advisor</resp>
+          <persName>Bruce Robertson</persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+<authority>A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</authority>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+<idno type="filename">tlg0541.tlg042.1st1K-grc2.xml</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2016</date>
+</publicationStmt>
+<sourceDesc>
+<biblStruct default="NO">
+          <monogr>
+            <author>pseudo-Menander</author>
+            <title>Die arabische Überlieferung der sogenannten Menandersentenzen</title>
+            <editor role="editor">Manfred Ullmann</editor>
+            <imprint>
+              <pubPlace>Wiesbaden</pubPlace>
+              <publisher>Kommissionsverlag Franz Steiner</publisher>
+              <biblScope unit="pp" from="64" to="73">64-73</biblScope>
+              <date>1961</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>  <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+).(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern matchPattern="(\w+).(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(\w+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage default="NO">
+        <language ident="greek">Greek</language>
+      </langUsage>
+    </profileDesc>
+</teiHeader>
+<text>
+<body>
 
-            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0541.tlg042.1st1K-grc2">
-                <pb n="64"/>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0541.tlg042.1st1K-grc2">
+<pb n="64"/>
 
-                <div type="textpart" subtype="sentence" n="1">
-                    <p> ἀγαθὰ προθύμως καὶ λάλει καὶ μάνθανε (Mon 565 M/94 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="2">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="3">
-                    <p> βούλου τὸ πρῶτον εὐσεβεῖν πρὸς τὸν θεόν (Mon 567 M/133 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="4">
-                    <p> βουλὴ πονηρὰ χρηστὸν οὐκ ἔχει τέλος (Mon 568 M/134 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="5">
-                    <p> γονεῖς δὲ τίμα καὶ γέροντας αἰσχύνου (Mon 162 Var. J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="6">
-                    <p> γυναικὶ κόσμος ὁ τρόπος, οὐ τὰ χρυσία (Mon 92 M/148 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="7">
-                    <p> διὰ πενίαν μηδενὸς καταφρόνει (Mon 209 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="8">
-                    <p> δειναὶ γὰρ αἱ γυναῖκες εὑρίσκειν τέχνας (Mon 130 M/194 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="9">
-                    <p> ἄκουε πάντων, ἐκλέγου δ᾿ ἃ συμφέρει (Mon 566 M/95 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="10">
-                    <p> </p>
-                </div>
-                <pb n="65"/>
+<div type="textpart" subtype="sentence" n="1">
+<p>
+ἀγαθὰ προθύμως καὶ λάλει καὶ μάνθανε (Mon 565 M/94 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="2">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="3">
+<p>
+βούλου τὸ πρῶτον εὐσεβεῖν πρὸς τὸν θεόν (Mon 567 M/133 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="4">
+<p>
+βουλὴ πονηρὰ χρηστὸν οὐκ ἔχει τέλος (Mon 568 M/134 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="5">
+<p>
+γονεῖς δὲ τίμα καὶ γέροντας αἰσχύνου (Mon 162 Var. J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="6">
+<p>
+γυναικὶ κόσμος ὁ τρόπος, οὐ τὰ χρυσία (Mon 92 M/148 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="7">
+<p>
+διὰ πενίαν μηδενὸς καταφρόνει (Mon 209 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="8">
+<p>
+δειναὶ γὰρ αἱ γυναῖκες εὑρίσκειν τέχνας (Mon 130 M/194 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="9">
+<p>
+ἄκουε πάντων, ἐκλέγου δ᾿ ἃ συμφέρει (Mon 566 M/95 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="10">
+<p>
+</p>
+</div>
+<pb n="65"/>
 
-                <div type="textpart" subtype="sentence" n="11">
-                    <p> γλώσσης μάλιστα πανταχοῦ πειρῶ κρατεῖν (Mon 80 M/136 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="12">
-                    <p> γέλως τὰ σεμνὰ τοῦ βίου τοῖς σώφροσιν (Mon 569 M/172 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="13">
-                    <p> δίκαιος ἴσθι καὶ φίλοισι καὶ ξένοις (Mon 570 M/208 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="14">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="15">
-                    <p> εἰ θνητὸς εἶ, βέλτιστε, θνητὰ καὶ φρόνει (Mon 173 M/246 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="16">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="17">
-                    <p> ἐν ἀργύρῳ μάλιστα κρίνεται τρόπος (Mon 267 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="18">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="19">
-                    <p> ζῶμεν ἀλογίστως προσδοκῶντες μὴ θανεῖν (Mon 200 M/284 J). </p>
-                </div>
-                <pb n="66"/>
+<div type="textpart" subtype="sentence" n="11">
+<p>
+γλώσσης μάλιστα πανταχοῦ πειρῶ κρατεῖν (Mon 80 M/136 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="12">
+<p>
+γέλως τὰ σεμνὰ τοῦ βίου τοῖς σώφροσιν (Mon 569 M/172 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="13">
+<p>
+δίκαιος ἴσθι καὶ φίλοισι καὶ ξένοις (Mon 570 M/208 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="14">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="15">
+<p>
+εἰ θνητὸς εἶ, βέλτιστε, θνητὰ καὶ φρόνει (Mon 173 M/246 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="16">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="17">
+<p>
+ἐν ἀργύρῳ μάλιστα κρίνεται τρόπος (Mon 267 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="18">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="19">
+<p>
+ζῶμεν ἀλογίστως προσδοκῶντες μὴ θανεῖν (Mon 200 M/284 J).
+</p>
+</div>
+<pb n="66"/>
 
-                <div type="textpart" subtype="sentence" n="20">
-                    <p> ἦθος κακοῦργον μακρὸν ἀπῴκισται θεοῦ (Mon 319 Var. J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="21">
-                    <p> ἤθη τὰ πάντων ἐν χρόνῳ πειράζεται (Mon 573 M/320 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="22">
-                    <p> θυμὸν φυλάττου· τὸ φρονεῖν γὰρ οὐκ ἔχει (Mon 574 M/355 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="23">
-                    <p> θυμοῦ κρατῆσαι κἀπιθυμίας καλόν (Mon 254 M/348 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="24">
-                    <p> ἰδίας νόμιζε τῶν φίλων τὰς συμφοράς (Mon 263 M/370 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="25">
-                    <p> ἴσος ἴσθι πᾶσι κἂν ὑπερβάλλῃς πλούτῳ (Mon 358 Var. J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="26">
-                    <p> καλῶς πένεσθαι μᾶλλον ἢ πλουτεῖν κακῶς (Mon 300 M/421 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="27">
-                    <p> </p>
-                </div>
-                <pb n="67"/>
+<div type="textpart" subtype="sentence" n="20">
+<p>
+ἦθος κακοῦργον μακρὸν ἀπῴκισται θεοῦ (Mon 319 Var. J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="21">
+<p>
+ἤθη τὰ πάντων ἐν χρόνῳ πειράζεται (Mon 573 M/320 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="22">
+<p>
+θυμὸν φυλάττου· τὸ φρονεῖν γὰρ οὐκ ἔχει (Mon 574 M/355 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="23">
+<p>
+θυμοῦ κρατῆσαι κἀπιθυμίας καλόν (Mon 254 M/348 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="24">
+<p>
+ἰδίας νόμιζε τῶν φίλων τὰς συμφοράς (Mon 263 M/370 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="25">
+<p>
+ἴσος ἴσθι πᾶσι κἂν ὑπερβάλλῃς πλούτῳ (Mon 358 Var. J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="26">
+<p>
+καλῶς πένεσθαι μᾶλλον ἢ πλουτεῖν κακῶς (Mon 300 M/421 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="27">
+<p>
+</p>
+</div>
+<pb n="67"/>
 
-                <div type="textpart" subtype="sentence" n="28">
-                    <p> λίαν φιλῶν σεαυτὸν οὐχ ἕξεις φίλον (Mon 310 M/431 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="29">
-                    <p> λιμὴν πέφυκε πᾶσι παιδεία βροτοῖς (Mon 312 M/436 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="30">
-                    <p> μηδέποτε δοῦλον ἡδονῆς σαυτὸν ποίει (Mon 578 M/512 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="31">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="32">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="33">
-                    <p> νόμιζε πλουτεῖν ἂν φίλους πολλοὺς ἔχῃς (Mon 541 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="34">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="35">
-                    <p> ἔλεγχε σαυτὸν ὅστις εἶ πράττων κακά (Mon 266 Var. J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="36">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="37">
-                    <p> ζῆσον μετρήσας τὸν βίον πρὸς τὸν χρόνον (Mon 285 J). </p>
-                </div>
-                <pb n="68"/>
+<div type="textpart" subtype="sentence" n="28">
+<p>
+λίαν φιλῶν σεαυτὸν οὐχ ἕξεις φίλον (Mon 310 M/431 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="29">
+<p>
+λιμὴν πέφυκε πᾶσι παιδεία βροτοῖς (Mon 312 M/436 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="30">
+<p>
+μηδέποτε δοῦλον ἡδονῆς σαυτὸν ποίει (Mon 578 M/512 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="31">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="32">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="33">
+<p>
+νόμιζε πλουτεῖν ἂν φίλους πολλοὺς ἔχῃς (Mon 541 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="34">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="35">
+<p>
+ἔλεγχε σαυτὸν ὅστις εἶ πράττων κακά (Mon 266 Var. J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="36">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="37">
+<p>
+ζῆσον μετρήσας τὸν βίον πρὸς τὸν χρόνον (Mon 285 J).
+</p>
+</div>
+<pb n="68"/>
 
-                <div type="textpart" subtype="sentence" n="38">
-                    <p> ἢ λέγε τι σιγῆς κρεῖττον ἢ σιγὴν ἔχε (Mon 208 M/292 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="39">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="40">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="41">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="42">
-                    <p> ἴσος ἴσθι κρίνων καὶ φίλους καὶ μὴ φίλους (Mon 266 M/373 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="43">
-                    <p> ἴσον ἐστὶν εἰς πῦρ καὶ γυναῖκας ἐμπεσεῖν (Mon 575 M/380 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="44">
-                    <p> καλὸν φέρουσι καρπὸν οἱ σεμνοὶ τρόποι (Mon 303 M/402 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="45">
-                    <p> κόλαζε κρίνων ἀλλὰ μὴ θυμούμενος (Mon 576 M/429 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="46">
-                    <p> λύπης ἰατρός ἐστιν ὁ χρηστὸς φίλος (Mon 577 M/456 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="47">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="48">
-                    <p> </p>
-                </div>
-                <pb n="69"/>
+<div type="textpart" subtype="sentence" n="38">
+<p>
+ἢ λέγε τι σιγῆς κρεῖττον ἢ σιγὴν ἔχε (Mon 208 M/292 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="39">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="40">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="41">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="42">
+<p>
+ἴσος ἴσθι κρίνων καὶ φίλους καὶ μὴ φίλους (Mon 266 M/373 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="43">
+<p>
+ἴσον ἐστὶν εἰς πῦρ καὶ γυναῖκας ἐμπεσεῖν (Mon 575 M/380 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="44">
+<p>
+καλὸν φέρουσι καρπὸν οἱ σεμνοὶ τρόποι (Mon 303 M/402 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="45">
+<p>
+κόλαζε κρίνων ἀλλὰ μὴ θυμούμενος (Mon 576 M/429 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="46">
+<p>
+λύπης ἰατρός ἐστιν ὁ χρηστὸς φίλος (Mon 577 M/456 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="47">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="48">
+<p>
+</p>
+</div>
+<pb n="69"/>
 
-                <div type="textpart" subtype="sentence" n="49">
-                    <p> νοῦς ἐστι πάντων ἡγεμὼν τῶν χρησίμων (Mon 579 M/540 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="50">
-                    <p> νέῳ δὲ σιγᾶν μᾶλλον ἢ λαλεῖν πρέπει (Mon 375 M/521 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="51">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="52">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="53">
-                    <p> ξένους νόμιζε τοὺς ἀρετῆς ὄντας ξένους (Mon 559 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="54">
-                    <p> οὐκ ἔστιν οὐδὲν κτῆμα κάλλιον φίλου (Mon 423 M/575 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="55">
-                    <p> ὁ βίος ἀδήλους τὰς μεταπτώσεις ἔχει (Mon 581 M/625 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="56">
-                    <p> πολλῶν ὁ καιρὸς γίνεται διδάσκαλος (Mon 449 Mein/630 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="57">
-                    <p> πολυπραγμονεῖν ἀλλότρια μὴ βούλου κακά (Mon 583 M/653 J). </p>
-                </div>
-                <pb n="70"/>
+<div type="textpart" subtype="sentence" n="49">
+<p>
+νοῦς ἐστι πάντων ἡγεμὼν τῶν χρησίμων (Mon 579 M/540 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="50">
+<p>
+νέῳ δὲ σιγᾶν μᾶλλον ἢ λαλεῖν πρέπει (Mon 375 M/521 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="51">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="52">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="53">
+<p>
+ξένους νόμιζε τοὺς ἀρετῆς ὄντας ξένους (Mon 559 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="54">
+<p>
+οὐκ ἔστιν οὐδὲν κτῆμα κάλλιον φίλου (Mon 423 M/575 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="55">
+<p>
+ὁ βίος ἀδήλους τὰς μεταπτώσεις ἔχει (Mon 581 M/625 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="56">
+<p>
+πολλῶν ὁ καιρὸς γίνεται διδάσκαλος (Mon 449 Mein/630 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="57">
+<p>
+πολυπραγμονεῖν ἀλλότρια μὴ βούλου κακά (Mon 583 M/653 J).
+</p>
+</div>
+<pb n="70"/>
 
-                <div type="textpart" subtype="sentence" n="58">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="59">
-                    <p> ῥυπαρὸς ὑπάρχων χρηστὸν οὐχ ἕξεις φίλον (Mon 703 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="60">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="61">
-                    <p> σοφοῦ παρ᾿ ἀνδρὸς ἐκδέχου συμβουλίαν (Mon 476 M/705 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="62">
-                    <p> τὸ γνῶθι σαυτὸν πᾶσίν ἐστι χρήσιμον (Mon 584 M/762 Var. J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="63">
-                    <p> τὰ δ᾿ αἰσχρὰ κέρδη συμφορὰς ἐργάζεται (Mon 586 M/755 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="64">
-                    <p> ὕβριν χαλίνου καὶ μέγας ἔσῃ σοφός (Gregorius, Carmen morale XXX 20). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="65">
-                    <p> ὕπουλος ἀνὴρ δίκτυον κεκρυμμένον (Mon 587 M/797 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="66">
-                    <p> φῶς ἐστι τῷ νῷ πρὸς θεὸν βλέπειν ἀεί (Mon 589 M/819 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="67">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="68">
-                    <p> φίλος φίλου δεόμενος οὐκ ἔστιν φίλος (Mon 590 M/820 J). </p>
-                </div>
-                <pb n="71"/>
+<div type="textpart" subtype="sentence" n="58">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="59">
+<p>
+ῥυπαρὸς ὑπάρχων χρηστὸν οὐχ ἕξεις φίλον (Mon 703 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="60">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="61">
+<p>
+σοφοῦ παρ᾿ ἀνδρὸς ἐκδέχου συμβουλίαν (Mon 476 M/705 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="62">
+<p>
+τὸ γνῶθι σαυτὸν πᾶσίν ἐστι χρήσιμον (Mon 584 M/762 Var. J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="63">
+<p>
+τὰ δ᾿ αἰσχρὰ κέρδη συμφορὰς ἐργάζεται (Mon 586 M/755 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="64">
+<p>
+ὕβριν χαλίνου καὶ μέγας ἔσῃ σοφός (Gregorius, Carmen morale XXX 20).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="65">
+<p>
+ὕπουλος ἀνὴρ δίκτυον κεκρυμμένον (Mon 587 M/797 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="66">
+<p>
+φῶς ἐστι τῷ νῷ πρὸς θεὸν βλέπειν ἀεί (Mon 589 M/819 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="67">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="68">
+<p>
+φίλος φίλου δεόμενος οὐκ ἔστιν φίλος (Mon 590 M/820 J).
+</p>
+</div>
+<pb n="71"/>
 
-                <div type="textpart" subtype="sentence" n="69">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="70">
-                    <p> ψυχῆς νοσούσης ἐστὶ φάρμακον λόγος (Mon 550 M/840 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="71">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="72">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="73">
-                    <p> οὐδεὶς ποιῶν πονηρὰ λανθάνει θεόν (Mon 582 M/626 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="74">
-                    <p> πονηρὸν ἄνδρα μηδέποτε ποιοῦ φίλον (Mon 453 M/638 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="75">
-                    <p> πειρῶ βλάβην σὺ μᾶλλον ἢ δίκας ἔχειν (Mon 675 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="76">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="77">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="78">
-                    <p> σιγᾶν ἄμεινον ἢ λαλεῖν ἃ μὴ πρέπει (Mon 484 M/710 J). </p>
-                </div>
-                <pb n="72"/>
+<div type="textpart" subtype="sentence" n="69">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="70">
+<p>
+ψυχῆς νοσούσης ἐστὶ φάρμακον λόγος (Mon 550 M/840 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="71">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="72">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="73">
+<p>
+οὐδεὶς ποιῶν πονηρὰ λανθάνει θεόν (Mon 582 M/626 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="74">
+<p>
+πονηρὸν ἄνδρα μηδέποτε ποιοῦ φίλον (Mon 453 M/638 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="75">
+<p>
+πειρῶ βλάβην σὺ μᾶλλον ἢ δίκας ἔχειν (Mon 675 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="76">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="77">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="78">
+<p>
+σιγᾶν ἄμεινον ἢ λαλεῖν ἃ μὴ πρέπει (Mon 484 M/710 J).
+</p>
+</div>
+<pb n="72"/>
 
-                <div type="textpart" subtype="sentence" n="79">
-                    <p> σοφοῖς ὁμιλῶν καὐτὸς ἐκβήσῃ σοφός (Mon 475 M/383 Var. J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="80">
-                    <p> τοῦτ᾿ ἐστὶ τὸ ζῆν μὴ σεαυτῷ ζῆν μόνῳ (Mon 585 M/775 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="81">
-                    <p> ὑπὲρ εὐσεβείας καὶ λάλει καὶ μάνθανε (Mon 521 M/781 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="82">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="83">
-                    <p> ὕδωρ θαλάσσης ὁ τρόπος τῶν δυσκόλων (Mon 588 M/798 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="84">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="85">
-                    <p> φεῦγ᾿ ἡδονὴν φέρουσαν ὕστερον βλάβην (Mon 532 M/806 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="86">
-                    <p> χαίρειν προσήκει τοῖς παθῶν ἐλευθέροις (Mon 591 M/838 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="87">
-                    <p> χαίρειν ἐπ᾿ αἰσχροῖς οὐδέποτε χρὴ πράγμασιν (Mon 544 M/833 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="88">
-                    <p> ψυχῆς ὄλεθρός ἐστι σωμάτων ἔρως (Mon 593 M/851 J). </p>
-                </div>
-                <pb n="73"/>
+<div type="textpart" subtype="sentence" n="79">
+<p>
+σοφοῖς ὁμιλῶν καὐτὸς ἐκβήσῃ σοφός (Mon 475 M/383 Var. J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="80">
+<p>
+τοῦτ᾿ ἐστὶ τὸ ζῆν μὴ σεαυτῷ ζῆν μόνῳ (Mon 585 M/775 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="81">
+<p>
+ὑπὲρ εὐσεβείας καὶ λάλει καὶ μάνθανε (Mon 521 M/781 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="82">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="83">
+<p>
+ὕδωρ θαλάσσης ὁ τρόπος τῶν δυσκόλων (Mon 588 M/798 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="84">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="85">
+<p>
+φεῦγ᾿ ἡδονὴν φέρουσαν ὕστερον βλάβην (Mon 532 M/806 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="86">
+<p>
+χαίρειν προσήκει τοῖς παθῶν ἐλευθέροις (Mon 591 M/838 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="87">
+<p>
+χαίρειν ἐπ᾿ αἰσχροῖς οὐδέποτε χρὴ πράγμασιν (Mon 544 M/833 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="88">
+<p>
+ψυχῆς ὄλεθρός ἐστι σωμάτων ἔρως (Mon 593 M/851 J).
+</p>
+</div>
+<pb n="73"/>
 
-                <div type="textpart" subtype="sentence" n="89">
-                    <p> </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="90">
-                    <p> ὧν ἦρξε γαστὴρ τὸ φρονεῖν ἀφῃρέθη (Mon 876 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="91">
-                    <p> ὡς μέγα τὸ μικρόν ἐστιν ἐν καιρῷ δοθέν (Mon 752 M/872 J). </p>
-                </div>
-                <div type="textpart" subtype="sentence" n="92">
-                    <p> ὦ γῆρας ἀνθρώποισιν εὐκταῖον κακόν (Mon 877 J). </p>
-                </div>
-            </div>
-        </body>
-    </text>
+<div type="textpart" subtype="sentence" n="89">
+<p>
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="90">
+<p>
+ὧν ἦρξε γαστὴρ τὸ φρονεῖν ἀφῃρέθη (Mon 876 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="91">
+<p>
+ὡς μέγα τὸ μικρόν ἐστιν ἐν καιρῷ δοθέν (Mon 752 M/872 J).
+</p>
+</div>
+<div type="textpart" subtype="sentence" n="92">
+<p>
+ὦ γῆρας ἀνθρώποισιν εὐκταῖον κακόν (Mon 877 J).
+</p>
+</div>
+</div>
+</body>
+</text>
 </TEI>
