@@ -59,12 +59,12 @@
             </publicationStmt>
             
             <sourceDesc>
-                <listBibl xml:lang="lat">
+                <listBibl>
                     <biblStruct>
                         <monogr>
                             <editor>
                                 <persName>
-                                    <name xml:lang="en">John Anthony Cramer</name>
+                                    <name>John Anthony Cramer</name>
                                 </persName>
                             </editor> 
                             <title>Catenæ Græcorum Patrum in Novum Testamentum</title>
@@ -84,14 +84,12 @@
         <encodingDesc>
             <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
           <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
         
         <profileDesc>
             <langUsage>
-                <language ident="lat">Latin</language>
                 <language ident="grc">Greek</language>
             </langUsage>
         </profileDesc>
@@ -103,7 +101,7 @@
 <head>CATΕΝΑ ΙΝ EVANGELIUM S. MATTHÆI Ε CODD. BODL. ET PARIS.</head>
 
 <pb n="1"/>
-<div type="textpart" subtype="book" n="toc">
+  <div type="textpart" subtype="chapter" n="toc">
 <head>ΚΕΦΑΛΑΙΑ
 ΤΟΥ ΚΑΤΑ ΜΑΤΘΑΙΟΝ ΕΥΑΓΓΕΛΙΟΥ.</head>
 <p>α'. Περὶ τῶν μάγων.</p>
@@ -191,7 +189,7 @@ bis. s ρνησις Possin. t αἰτήσεως Possin. ἀναστάσεως 
 </div>
 
 <pb n="4"/>
-<div type="textpart" subtype="book" n="praef">
+<div type="textpart" subtype="chapter" n="prologue">
 
 <head>ΠΡΟΛΟΓΟΣ
 ΕΙΣ THN
@@ -228,7 +226,7 @@ m ἢ καὶ Cord. n Folium sequens deest.</note>
 </div>
 
 <pb n="5"/>
-<div type="textpart" subtype="book" n="1">
+<div type="textpart" subtype="chapter" n="praef">
 <head>EΥΑΓΓΕΛΙΟΝ ΤΟ ΚΑΤΑ ΜΑΤΘΑΙΟΝ.</head>
 <p>Τοὐ ὲν ἁγίοις πατρὸς ἡμῶν Ἰωάννου Τοῦ Χρυσοστόμου
 ἑρμηνεία. Εὐαγγέλιον ἡ παροῦσα βίβλος λέγεται ὅτι κολάσεως
@@ -526,6 +524,7 @@ m ἢ καὶ Cord. n Folium sequens deest.</note>
 εἰσὶ διηνεκῶς εἰρημένα. νοητέον δὲ καὶ οὕτως· “ οὐκ ἐγίνωσκεν
 αὐτὴν 1” πόθεν συνέλαβεν, ἕως οὑ ἔτεκε,” καὶ εἰδεν τὰ γενόμενα <lb n="15"/>
 σημεία·</p>
+</div>
 
 <div type="textpart" subtype="chapter" n="1">
 <head>ΚΕΦ. Α.</head>
@@ -9640,7 +9639,7 @@ XXIII. 37. ΜΑTΘΑ1oΝ ΕΥΑΓΓΕΛΙΟΥ. <lb n="193"/>
 <p>Εγράφη δὲ τὸ Εὐαγγέλιον ἐκεῖνο εἰς τὸ Πατριαρχεῖον,
 ἐπὶ Σεργίου τοῦ Πατριάρχου.</p>
 </div>
-</div>
+
 </div>
 </body>
   </text>
