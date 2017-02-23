@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>De venereis (ap. Oribasium)</title>
+                <editor>Ioannes Raeder</editor>
+                <sponsor>HARVARD COLLEGE LIBRARY</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg0057.tlg035.1st1K-grc3.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2016</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United State</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title>Oribasii collectionum
+                                medicarum reliquiae</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Ioannes Raeder</name>
+                                    <name>Hans Raeder</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0057">Galen</author>
+                            <imprint>
+                                <publisher>LIPSIAE</publisher>
+                                <pubPlace>ET BEROLINI IN AEDIBVSB B. G. TEVBNERI</pubPlace>
+                                <date>1928</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                            <biblScope unit="pp" from="187" to="189">187-189</biblScope>
+                        </monogr>
+                        <ref target="http://cmg.bbaw.de/epubl/online/cmg_06_01_01.php">Corpus
+                            Medicorum Graecorum/Latinorum</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0057.tlg035.1st1K-grc3">
+                <div type="textpart" subtype="chapter" n="1">
+                    <pb n="187"/>
+                    <lb n="5"/>
+                    <head>λε. Περὶ τῆϲ ἐπὶ τῶν ϲιμῶν διαβάϲεωϲ, ἐκ τοῦ αὐτοῦ λόγου.</head>
+                    <lb n="534"/>
+                    <p>Πνεύματοϲ τονωτικὸν τοῦτο τὸ γυμνάϲιον καὶ εὐκαμπείαϲ τῆϲ <lb n="1"/> περὶ τὸ
+                        ϲῶμα, μάλιϲτα δὲ τῆϲ περὶ ϲκέλη ποιητικὸν μετὰ τοῦ καὶ ἰϲχὺν περιποιεῖν τοῖϲ
+                        κινουμένοιϲ μέρεϲιν· ἔϲτι δὲ καὶ μακροτονίαϲ παραϲκευαϲτικὸν καὶ νεύρων
+                        καταλλάξεωϲ ἐπιτρεπτικόν· μεταβιβάζει <lb n="10"/> καὶ ὕλην καὶ περιττώματα
+                        μετέωρα πρὸϲ τὰϲ ἐξόδουϲ ἀπωθεῖ. εἰ δὲ <lb n="2"/> καὶ μετὰ κρατήϲεωϲ
+                        ἁλτηρίων παραλαμβάνοιτο, τῶν ϲτιβαρωτάτων γυμναϲίων ἕν τι γίνεται, διαπονοῦν
+                        ὁμοίωϲ καὶ τὰ ἄνω καὶ τὰ κάτω τοῦ ϲώματοϲ.</p>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="2">
+                    <head>λϛ. Περὶ ὁπλομαχίαϲ, ἐκ τοῦ αὐτοῦ λόγου.</head>
+                    <lb n="15"/>
+                    <p>Οὐ τῶν παλαιῶν γυμναϲίων τοῦτο, λέγω δὲ τῶν τοῖϲ κά|μνουϲιν <lb n="1"/><lb
+                            n="535"/> ὠφελίμων, ἐπεὶ ἄλλωϲ ἡ ἐν ὅπλοιϲ ἄϲκηϲιϲ παλαιά. Ῥωμαῖοι δ᾿
+                        ἐξεῦρον <lb n="2"/> τὴν ὁπλομαχίαν τήνδε, πρῶτον δ᾿ ὑπὲρ τῆϲ εἰϲ πόλεμον
+                        παραϲκευῆϲ· τὸ δὲ νῦν ὑπὲρ τοῦ διαπονεῖν τὰ ϲώματα οἵ γε οὖν ϲτρατιῶται·
+                        μονομάχων γὰρ ὅπλα ἐνδυόμενοι ἢ πρὸϲ ἀντιπάλουϲ ἢ πρὸϲ <lb n="20"/> κίονα ὡϲ
+                        πρὸϲ ἀντίπαλον διαμάχονται. δύναται δὲ τοῦτο τὸ γυμνάϲιον <lb n="3"/>
+                        εὐκίνητόν τε ποιῆϲαι τὸ ϲῶμα καὶ εὔϲαρκον· πλαδαρὰν μέντοι ϲάρκα περιποιεῖ·
+                        κεφαλῇ δ᾿ ἀλυϲιτελὲϲ διά τε τὸ ϲκέπεϲθαι λίαν αὐτὴν ὑπὸ τῶν πίλων καὶ τῆϲ
+                        περικεφαλαίαϲ διά τε τὸ μοχθεῖν ὑπὸ τοῦ βάρουϲ. μέγιϲτον δ᾿ ἐπάγγελμα τοῦδε
+                        τοῦ γυμναϲίου μακρόπνοια καὶ<lb n="4"/>
+                        <lb n="25"/> ϲυντονία τοῦ ϲώματοϲ, ἔνθεν οἱ προεθίϲαντεϲ αὐτῷ πᾶϲαν ἄλλην
+                        ἀποδίωξιν πνεύματοϲ ὑποφέρειν εἰϲὶν ἱκανοί. |</p>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="3">
+                    <head>λζ. Περὶ ἀφροδιϲίων, ἐκ τῶν Γαληνοῦ.</head>
+                    <lb n="536"/>
+                    <p>Ἀφροδιϲίων δὲ κατὰ μὲν Ἐπίκουρον οὐδεμία χρῆϲιϲ ὑγιεινή· κατὰ <lb n="1"/> δὲ
+                        τἀληθὲϲ ἐκ διαλειμμάτων τηλικούτων, ὡϲ ἐπὶ ταῖϲ χρήϲεϲι μήτε <lb n="30"/>
+                        ἐκλύϲεωϲ αἰϲθάνεϲθαι καὶ κουφότερον αὐτὸν αὑτοῦ δοκεῖν γεγονέναι καὶ
+                        εὐπνούϲτερον. ὁ δὲ καιρὸϲ τῆϲ χρήϲεωϲ, ὅταν ἀκριβῶϲ μέϲον ᾖ <lb n="2"/> τῶν
+                        ἔξωθεν περιϲτάϲεων ἁπαϲῶν τὸ ϲῶμα, μήτε ὑπερπεπληρωμένον <note
+                            type="footnote">28 — p. 188, 5 Gal. Art. med. 24 (I 371—372 K.) 28 cf.
+                            Epicur. fragm. 62 Usener</note>
+                        <note type="footnote">2 ελοκρατυντικὸν codd.: corr. Matthaei νεύρα A1
+                            τριπτὸν A1 5 x inscriptione solum praebet περὶ τῆ A1 7 τῆϲ] τοῖϲ N 9
+                            ἐπιϲτρεπτικόν N 10 ἀποδεῖ C 11 ἀρτηριῶν codd.: corr. C2Dg 14
+                            inscriptionen om. A1 16 ἐπεὶ δ᾿ ἄλλωϲ C 18 διποιεῖν A 20 διαμάχονταϲ C
+                            21 ἀκίνητον C 22 τὸ] τοῦ CN ϲκέπτεϲθαι codd.: corr. N1 Matthaei 25 ἔνθα
+                            codd.: corr Dg προενθίϲαντεϲ codd: corr. C2N2Dg 25. 26 ἀποδίωϲιν C 27
+                            nscriptionem om. A1 ἐκ τῶν om. A2C: ἐκ τοῦ N 29 μήτε] μετ᾿ C</note>
+                        <note type="footnote">31 εὐνούϲτερον N1: ἀπλούϲτερον C 32 περιϲτάϲεων om, C
+                            μήτε] μεθ’ C ὑπερπληρωμένον N</note>
+                        <pb n="188"/> μήτε ἐνδεὲϲ μήτε ὑπερεψυγμένον μήτε ὑπερτεθερμαϲμένον <add
+                            cause="omitted">ἢ ἐξηραμ <lb n="3"/> μένον ἢ ὑγραϲμένον</add> ἀμέτρωϲ.
+                        εἰ δὲ καὶ διαμαρτάνοιέν ποτε κατά τι, μικρὸν μὲν ἔϲτω τὸ ἁμαρτανόμενον·
+                        ἄμεινον δὲ τὸ τεθερμαϲμένῳ <lb n="537"/> μᾶλλον ἢ ἐψυγμένῳ, | καὶ
+                        πεπληρωμένῳ μᾶλλον ἢ <add cause="omitted">ἐνδεεῖ, καὶ ὑγραϲμένῳ μᾶλλον
+                            ἢ</add> ἐξηραμμένῳ τῷ ϲώματι χρῆϲθαι τοῖϲ ἀφροδιϲίοιϲ. <lb n="5"/>
+                        <lb n="4"/> οἱ μὲν οὖν ἀϲθενῆ τὴν δύναμιν ἔχοντεϲ ὑπὸ τῆϲ λαγνείαϲ εἰϲ
+                        ἐϲχάτην ἀρρωϲτίαν ἀφικνοῦνται· οἱ δ’ ἰϲχυρὰν καὶ νοϲοῦντεϲ ἀπὸ φλέγματοϲ
+                            <add cause="omitted">οὔτε καταλυθήϲονται καὶ ξηραίνουϲι τὴν τοῦ
+                            φλεγματοϲ</add> περιουϲίαν τῷ διαφορεῖν ἐπὶ πλέον τοὺϲ χυμούϲ· ἀβλαβῆ
+                        γὰρ ἀφροδίϲια τοῖϲ <lb n="5"/> ὑγροῖϲ καὶ θερμοῖϲ ἐϲτι καὶ ὅϲοι φύϲει
+                        πολύϲπερμοι. ἀλλὰ καὶ θερμαίνει <lb n="10"/> τὸ ϲῶμα τοῖϲ ἐρρωμένην ἔχουϲι
+                        τὴν δύναμιν ἡ λαγνεία· τοῖϲ δ᾿ ἀϲθενέϲιν ἐν μὲν τῷ παραχρῆμα θερμαίνει.
+                        ψύχει δὲ μετὰ ταῦτω <lb n="538"/><lb n="6"/> γενναίωϲ. ἔνιοι μὲν οὖν εὐ|θέωϲ
+                        ἐπὶ ταῖϲ ϲυνουϲίαιϲ ἀπὸ νεότητοϲ ἀϲθενεῖϲ γίνονται· τινὲϲ δέ, εἰ μὴ ϲυνεχῶϲ
+                        χρῷντο, βαρύνονται τὴν κεφαλὴν ἀϲώδειϲ τε καὶ πυρετώδειϲ γίνονται καὶ χεῖρον
+                        ὀρέγονται <lb n="15"/> καὶ ἧττον πέττουϲιν· τοιαύτηϲ γοῦν ἐνίουϲ ὄνταϲ
+                        φύϲεωϲ, εἶτα ἐγκρατεῖϲ ἀφροδιϲίων χρήϲεωϲ γενομένουϲ ναρκώδειϲ τε καὶ
+                        δυϲκινήτουϲ ἔγνωμεν ἀποτελεϲθένταϲ, ἐνίουϲ δὲ καὶ ϲκυθρωπούϲ ἀλόγωϲ καὶ
+                        δυϲέλπιδαϲ ὁμοίωϲ τοῖϲ μελαγχολικοῖϲ, ταῦτα δὲ παυόμενα ταχέωϲ ἐπὶ ταῖϲ <lb
+                            n="7"/> τῶν ἀφροδιϲίων χρήϲεϲιν. ταῦτα ἀναλογιζομένῳ μοι μεγάλωϲ
+                        φαίνεται <lb n="20"/> βλάπτειν ἡ τοῦ ϲπέρματοϲ ἐπίϲχεϲιϲ, ἐφ᾿ ὧν αὐτό τε
+                        φύϲει κακοχυμότερον καὶ πλεῖον, ἀργότερόϲ τε ὁ βίοϲ, καὶ τῶν ἀφροδιϲίων ἡ
+                            <lb n="539"/> χρῆϲιϲ πρότερον μὲν ἱκανὴ πάνυ, μετὰ ταῦτα δὲ <gap
+                            reason="omitted"/> | ἰϲχυροί τε καὶ νέοι· τούτοιϲ ἡ τοῦ ϲώματοϲ ἕξιϲ εἰϲ
+                        ἀραιότητα πλέον ἤπερ ἡ δύναμιϲ εἰϲ ἀρρωϲτίαν ἀλλοιοῦται, καὶ τοίνυν
+                        ἐπανόρθωϲιϲ διὰ τῶν <lb n="25"/> ϲυναγόντων καὶ ϲφιγγόντων γίνεται αὐτοῖϲ,
+                        ὁποῖόν ἐϲτι τὸ παραϲκευαϲτικὸν <lb n="8"/> γυμνάϲιον. εἰ δὲ δὴ καὶ ψῦξίϲ τιϲ
+                        ἐπὶ τοῖϲ ἀφροδιϲίοιϲ ἐγγίνοιτο, καὶ κατὰ τοῦτο ἂν εἴη τῷ παραϲκευαϲτικῷ
+                        γυμναϲίῳ χρηϲτέον· <lb n="9"/> ἐπεγείρει γὰρ τὴν θερμότητα. τῆϲ δ᾿ ὥραϲ τοῦ
+                        ἔτουϲ ἐπιτρεπούϲηϲ, <lb n="10"/> οὐδὲ τῆϲ ψυχρολουϲίαϲ ἀφεκτέον. ἐδέϲματα δὲ
+                        τῷ πλήθει μὲν ἐλάττω, <lb n="30"/> τῇ ποιότητι δ᾿ ὑγρότερα δοτέον, ἵνα καὶ
+                        πέψη καλῶϲ αὐτὰ καὶ τὴν <lb n="11"/> ἐκ τῶν ἀφροδιϲίων ἐπανορθώϲηται
+                        ξηρότητα. χρὴ δ᾿ οὐδὲ ψυχρότερα τὴν κρᾶϲιν, ἀλλὰ τῆϲ μέϲηϲ ἰδέαϲ τῶν
+                        θερμαινόντων ὑπάρχειν αὐτὰ· <note type="footnote">6—9 Gal. in Hipp. Epid. VI
+                            comm. V 23 (XVIII 2, 284 K.) 9—10 Gal. De san. tu. VI 4, 5 (VI 402 K.)
+                            10—13 Gal. in Hipp. Epid. VI comm. V 23 (XVII 2, 384 K.) 13—23 Gal. De
+                            loc. aff. VI 5 (VIII 417—419 K.) 23—p. 189, 4 Gal. De san. tu. III 11,
+                            9—15 (VI 223—224 K.)</note>
+                        <note type="footnote">1 ήτε (primo loco)] μετ᾿ C μήτε secundum om. C μήτε
+                            ὑπερτεθερμαϲμένον om. C 1. 2 ἢ ἐξηραμμένον ἢ ὑγραϲμένον add. N2Dg e Gal.
+                            3 ὸ διαμαρτανόμενον Ϲ τὸ (posteriore loco) Dg: τῷ codd. 4 ἢ posterius
+                            om. AC 4. 5 suppl. Dg 6 post ὑπὸ add. τε C 8 suppl. Dg e Gal. περιουϲίαϲ
+                            9 ἀβλαβὴϲ codd.: corr. C2Dg 11 ἀρρωμένην C 12 δ᾿ om. C</note>
+                        <note type="footnote">τῷ om. 4 13 εὐθέωϲ] θέωϲ A 15 ἀϲώδειϲ] νοϲώδειϲ A 17
+                            ἀφροδηϲίαϲ C 20 μοι] μὴ C 21 ἐπίχυϲιϲ codd.: corr. C2Dg 23 lacunam
+                            indicavi</note>
+                        <note type="footnote">τε om. C 24 ἀριθμότητα codd.: corr. Dg 26 ϲυναγαγόντων
+                            A. 29 τοῦ ἔθουϲ C: τούτουϲ A1 30 δὲ om. Ϲ 31 ὑγρότερον codd.: corr.
+                            C2N2Dg 32 ψυχροτέραν N: ψυχροτέραν C: χυχροτέραν A</note>
+                        <pb n="189"/> διότι γὰρ | ἐξ ἀφροδιϲίων ἀραιότερον ἅμα καὶ ἀϲθενέϲτερον καὶ
+                        ξηρότερον <lb n="540"/> ἀποτελεῖται τὸ ϲῶμα, χρὴ δήπου τὰ πυκνοῦντα καὶ
+                        θερμαίνοντα καὶ τὴν δύναμιν ἀναρρωννύντα προϲφέρεϲθαι, καὶ τούτουϲ εἶναι
+                        ϲκοποὺϲ ἐπ᾿ αὐτοῖϲ.</p>
+                </div>
+
+            </div>
+        </body>
+    </text>
+</TEI>
