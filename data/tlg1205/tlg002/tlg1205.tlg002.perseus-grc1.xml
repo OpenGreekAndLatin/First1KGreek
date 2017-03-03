@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>De Resurrectione</title>
+        <title xml:lang="lat">De Resurrectione</title>
         <author>Athenagoras</author>
         <editor role="editor">Johann Karl Theodor von Otto</editor>
+	      	<funder>A Google Digital Humanities Award</funder>
+		<principal>Gregory Crane</principal>
+		<respStmt>
+		    <persName xml:id="DDD">Digital Divide Data</persName>
+		    <resp>Corrected and encoded the text</resp>
+		</respStmt>
+		<respStmt>
+		    <persName>Gregory Crane</persName>
+		    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+		</respStmt>
+		<respStmt>
+		    <persName>Matt Munson</persName>
+		    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+		</respStmt>
+		<respStmt>
+		    <persName>Annette Gessner</persName>
+		    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+		</respStmt>
+		<respStmt>
+		    <persName>Thibault Clérice</persName>
+		    <resp>Lead Developer (University of Leipzig)</resp>
+		</respStmt>
+		<respStmt>
+		    <persName>Bruce Robertson</persName>
+		    <resp>Technical Advisor</resp>
+		</respStmt>
       </titleStmt>
-      <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+      <publicationStmt>
+	      <publisher>Trustees of Tufts University</publisher>
+	      <pubPlace>Medford, MA</pubPlace>
+	      <authority>Perseus Project</authority>
+	    </publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
-            <title>Athenagorae Philosophi Atheniensis Opera</title>
+            <title xml:lang="lat">Athenagorae Philosophi Atheniensis Opera</title>
             <author>Athenagoras</author>
             <editor role="editor">Johann Karl Theodor von Otto</editor>
             <imprint>
               <publisher>Mauke</publisher>
-              <pubPlace>Ienae</pubPlace>
+              <pubPlace xml:lang="lat">Ienae</pubPlace>
               <date>1857</date>
             </imprint>
           </monogr>
@@ -34,6 +64,7 @@
     </encodingDesc><profileDesc>
       <langUsage>
 	<language ident="grc">Greek</language>
+	      <language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
     <revisionDesc>
@@ -41,7 +72,7 @@
       <change who="Jack Duff" when="2016-06-14">Corrected fileDesc, replaced pb alt with milestones.</change>
     </revisionDesc></teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg1205.tlg002.perseus-grc1">
+  <text><body> <div type="edition"  xml:lang="grc" n="urn:cts:greekLit:tlg1205.tlg002.perseus-grc1">
 <pb n="v.2.p.186"/>
 
 <head>ΑΘΗΝΑΓΟΡΟΥ
