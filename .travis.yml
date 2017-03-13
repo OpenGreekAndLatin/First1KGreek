@@ -17,6 +17,7 @@ before_deploy:
 - git tag $GIT_TAG -a -m "$DATE" -m "PASSING FILES" -m "$results"
 - git push -q https://$GITPERM@github.com/sonofmun/First1KGreek --tags
 - ls -R
+
 env:
   global:
     major_version: 0
@@ -27,7 +28,7 @@ deploy:
   api_key:
     secure: cp9U+4Hf3Jp6T+foE58YZk2ZtDHQTU2rTVuJLQdzENAzncrLxcAczn0Y161CX8ANT42NAmsay2tev6m3QEeOb5QAH0b9qg1zcRbzQXnWQopR6lOHqaifUIi+M6Z7mVG5c0nSqPyQXV7xKa3LPqOq3UyOsjahzWLyb757EsCd2z90JQWp1HwIC6+vBB90DOyx20Y5M1FD86Jl54Xv4DM61vo/aBTGjZQI62Q7f2CoGuT5GYwDTu6M9lbqkA/jO5oHt+pE14+gx1raJic5oIWPgdE9/5shxXq7A0dkYhCTc1bhk4UCvA50kd+aEJFQ0l1x2Jtr7vLezE4tt8l7wysZrcQzlzyIk2RxHy1PL6TESlUsHb/uI88NilWfwKYD+lSJZ/h1PohVDjrUyBPiJb++5cJ/M0KUDPMCgkO2F/7SVOTWHnw9+EcRRYm9FIkQSXbDl3E0LTPe1+kufNNAE5x+4hJR8vnKwtVB0ZUotXiLWgUD5qwR0kdyxpSwdZAwiKRn++3s88aY9wTsnGB09t2tOq3192HsGz19SNdBQRG1FgGkyYtexMWb33rTbEGM9ewl8RNFJpHZwLxAaCzTAfanz2p6ZEO/AruWH7b3sjsE/qk0BRtpfIB/KGxUMZRw1IJcpRRTC2EjAlHqZhqn3jGc6EjBXQfdmpOQv6BLSeNg9l0=
   file: release.tar.gz
- skip_cleanup: true
+  skip_cleanup: true
   on:
     repo: sonofmun/First1KGreek
     branch: master
