@@ -29,5 +29,5 @@ python3 github_pages.py --url_base https://raw.githubusercontent.com/OpenGreekAn
 touch .
 
 git add -A .
-git commit -m "rebuild pages at ${rev}"
+git commit -m "rebuild pages at $GIT_TAG"
 git push -q upstream HEAD:gh-pages
