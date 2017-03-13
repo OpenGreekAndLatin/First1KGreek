@@ -23,7 +23,7 @@ git reset upstream/gh-pages
 
 pwd
 
-python3 github_pages.py --url_base https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data
+python3 ./github_pages.py --url_base https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data
 
 touch .
 
