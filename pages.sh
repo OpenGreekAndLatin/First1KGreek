@@ -21,6 +21,8 @@ git remote add upstream "https://$GITPERM@github.com/sonofmun/First1KGreek.git"
 git fetch upstream
 git reset upstream/gh-pages
 
+pwd
+
 python3 github_pages.py --url_base https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data
 
 touch .
