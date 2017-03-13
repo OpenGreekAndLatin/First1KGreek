@@ -19,13 +19,12 @@ git config user.email "munson@dh.uni-leipzig.de"
 
 git remote add upstream "https://$GITPERM@github.com/sonofmun/First1KGreek.git"
 git fetch upstream
-git reset upstream/gh-pages
 git checkout gh-pages
 git pull upstream gh-pages
 
 ls
 
-python3 /home/travis/build/sonofmun/First1KGreek/pages/github_pages.py --url_base https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data
+python3 github_pages.py --url_base https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/master/data
 
 touch .
 
