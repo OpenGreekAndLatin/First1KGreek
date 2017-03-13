@@ -1,0 +1,37 @@
+language: python
+python:
+- '3.5'
+matrix:
+  allow_failures:
+  - python: '3.5'
+install:
+- pip3 install https://github.com/Capitains/HookTest/archive/console.zip
+script: hooktest --scheme epidoc --workers 3 --travis --countword --allowfailure ./
+before_deploy:
+- hooktest-build --travis ./
+- results=$(cat manifest.txt)
+- DATE=`date +%Y-%m-%d`
+- git config --global user.email "builds@travis-ci.com"
+- git config --global user.name "Travis CI"
+- export GIT_TAG=$major_version.$minor_version.$TRAVIS_BUILD_NUMBER
+- git tag $GIT_TAG -a -m "$DATE" -m "PASSING FILES" -m "$results"
+- git push -q https://$GITPERM@github.com/sonofmun/canonical-latinLit --tags
+- ls -R
+
+env:
+  global:
+    major_version: 0
+    minor_version: 0
+    
+deploy:
+  provider: releases
+  api_key:
+    secure: brYtjGtkEibaI1HE49CpLlTqSsDazItx7eTLH4f/D0lthLCPHnyUrRWy6Zl2ojxEwFxaraepdWIBxWuvRF5wc+O5WJvJXcQMqOnhRn2YEz+OWKp6dG3mhXKiNtNZOWWrOSlayXhcPA2UIMYSC1egvEh6GROWEH3i6GHcyS5Mu7u7fGdUdeFD3USAcNwuiO7w9pSfNQwPque3mVvwtFaa2Ymrm6a1lcnuZiE7F1GbfiKZoqZa9W219V5gqcnbbfpmrBEEcj48boZG8uiUfBm/ZCQ1wAsgc8DLW1Cefrmnh2TwiPj+Ou8dVhyschoU1PZ5nGvR8+nuVywkhEtarEw9y/XRCciAlErZHioO/DwzK4VMTl5wH96YAtw7Yv43o1qskjXUtv+dWsvPCmLu6uAH+2kWL3oSGWuzc/qaOE3/srkEst5e8BDAJmKhpXVdd6neTjKdhRSM+tGMD1BDWcHYnpjieqsv1wPPtwIUgDf3D6fxFEDugiQn55lF18NHPwcBfCF5DiswgOtlneA+YxQon4CF4wz54C7bdmx45psm5pUTzVGlbn7y7RZbgUDJCAOV0tjsC8cdS1pyo0Wq8f+hocgjKkf1IlwZP24CqbGY2ieHV3m1vYSwyBbbhRV43+l+1+HAuziifKomLHb3fJIhyBqvbvCiKypjMTMYDzU3HoU=
+  file: release.tar.gz
+  skip_cleanup: true
+  on:
+    repo: sonofmun/canonical-latinLit
+    branch: master
+
+after_deploy:
+- bash pages.sh
