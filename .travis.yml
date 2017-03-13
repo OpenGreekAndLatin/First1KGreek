@@ -6,7 +6,7 @@ matrix:
   - python: '3.5'
 install:
 - pip3 install https://github.com/Capitains/HookTest/archive/console.zip
-script: hooktest --scheme epidoc --workers 3 --travis --countword --allowfailure ./
+script: hooktest --scheme epidoc --workers 3 --travis --countword --allowfailure -j results.json ./
 before_deploy:
 - hooktest-build --travis ./
 - results=$(cat manifest.txt)
