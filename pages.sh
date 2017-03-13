@@ -21,6 +21,7 @@ git remote add upstream "https://$GITPERM@github.com/sonofmun/First1KGreek.git"
 git fetch upstream
 git reset upstream/gh-pages
 git checkout gh-pages
+git pull upstream gh-pages
 
 ls
 
