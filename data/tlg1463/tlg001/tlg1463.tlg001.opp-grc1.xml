@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">
     <fileDesc>
-<titleStmt><title>DAS BUCH HENOCH</title>
- <editor>DR. JOH. FLEMMING</editor>
-<sponsor>University of Leipzig</sponsor>
+<titleStmt xml:lang="lat"><title>Apocalypsis Enochi</title>
+<author xml:lang="lat">Liber Enoch</author>
+<editor>Johann Flemming</editor>
+<editor>Ludwig Radermacher</editor>
 <funder>European Social Fund Saxony</funder>
 <principal>Gregory Crane</principal>
 <principal>Monica Berti</principal>
@@ -60,22 +61,27 @@
 <pubPlace>Germany</pubPlace>
 </publicationStmt>
 <sourceDesc>
-<listBibl xml:lang="lat">
+<listBibl>
  <biblStruct>
   <monogr>
-   <title>DAS BUCH HENOCH</title>
+   <title xml:lang="deu">Das Buch Henoch</title>
    <editor>
 	<persName>
-	 <name xml:lang="lat">DR. JOH. FLEMMING</name>
+	 <name xml:lang="lat">Johannes Flemming</name>
 	</persName>
    </editor>
-   <author ref="urn:tmp">DR. JOH. FLEMMING</author>
+	  <editor>
+	<persName>
+	<name xml:lang="deu">Ludwig Radermacher</name>
+	</persName>
+	</editor>
+<author ref="urn:cts:greekLit:tlg1463" xml:lang="lat">Liber Enoch</author>
    <imprint>
-	<publisher>J.C.HINRICHS'SCHE BUCHHANDLUNG</publisher>
-	<pubPlace>LEIPZIG</pubPlace>
+	<publisher xml:lang="deu">J.C.Hinrichs'sche Buchhandlung</publisher>
+	<pubPlace xml:lang="deu">Leipzig</pubPlace>
 	<date>1901</date>
    </imprint>
-   <biblScope unit="volume">vol.</biblScope>
+  
   </monogr>
  </biblStruct>
 </listBibl>
@@ -92,6 +98,7 @@
 <langUsage>
 <language ident="grc">Greek</language>
 <language ident="lat">Latin</language>
+<language ident="deu">German</language>
 </langUsage>
 </profileDesc>
 <revisionDesc>
@@ -99,7 +106,7 @@
 </revisionDesc>
 </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg1463.tlg001.opp-grc1">
+    <body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1463.tlg001.opp-grc1">
 	   <div type="textpart" subtype="chapter" n="1">
  <div type="textpart" subtype="section" n="1">
 <pb n="17"/>
