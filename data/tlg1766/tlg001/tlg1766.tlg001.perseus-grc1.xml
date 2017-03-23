@@ -1,21 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc>
+<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" 
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+	<fileDesc>
       <titleStmt>
-        <title>Oratio ad Graecos</title>
-        <author>Tatianus</author>
-        <editor role="editor">Ioann. Carol. Theod. Otto</editor>
+        <title xml:lang="lat">Oratio ad Graecos</title>
+        <author xml:lang="lat">Tatianus</author>
+        <editor>Johann Carl Theodor Otto</editor>
       </titleStmt>
-      <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+      <publicationStmt><publisher>Trustees of Tufts University</publisher>
+	      <pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority>
+		</publicationStmt>
       <sourceDesc>
         <biblStruct>
           <monogr>
-            <title>Oratio ad Graecos</title>
-            <author>Tatiani Assyrii</author>
-            <editor role="editor">Ioann. Carol. Theod. Otto</editor>
+            <title xml:lang="lat">Corpus apologetarum Christianorum saeculi secundi</title>
+            <author ref="urn:cts:greekLit:tlg1766" xml:lang="lat">Tatianus</author>
+            <editor role="editor">Johann Carl Theodor Otto</editor>
             <imprint>
               <publisher>Mauke</publisher>
               <pubPlace>Jena</pubPlace>
               <date>1851</date>
             </imprint>
+	   <biblScope unit="volume">vol.6</biblScope>
           </monogr>
           <ref target="https://books.google.de/books/about/Oratio_ad_Graecos.html?id=057kZUS5h14C">Google Books</ref>
         </biblStruct>
@@ -29,6 +36,9 @@
     </encodingDesc><profileDesc>
       <langUsage>
 	<language ident="grc">Greek</language>
+      </langUsage>
+	<langUsage>
+	<language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
 <revisionDesc>
