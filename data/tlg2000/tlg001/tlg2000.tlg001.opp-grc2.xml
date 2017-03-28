@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+    <teiHeader xml:lang="eng">
         <fileDesc>
             <titleStmt>
-                <title>Enneades</title>
-                <author>Plotinus</author>
+                <title xml:lang="lat">Enneades</title>
+                <author xml:lang="lat">Plotinus</author>
                 <editor>Richard Volkmann</editor>
                 <funder>A Google Digital Humanities Award</funder>
                 <principal>Gregory Crane</principal>
@@ -42,14 +42,15 @@
             <sourceDesc>
                 <biblStruct>
                     <monogr>
-                        <author>Plotinus</author>
-                        <title>Plotini Enneades, Vol 1-2</title>
+                        <author xml:lang="lat">Plotinus</author>
+                        <title xml:lang="lat">Plotini Enneades</title>
                         <editor>Richard Volkmann</editor>
                         <imprint>
-                            <publisher>B. G. Teubneri</publisher>
+                            <publisher xml:lang="lat">B. G. Teubneri</publisher>
                             <pubPlace>Leipzig</pubPlace>
-                            <date>1883-1884</date>
+                            <date from="1883" to="1884">1883-1884</date>
                         </imprint>
+                        <biblScope unit="volume" to="1" from="2">1-2</biblScope>
                     </monogr>
                     <ref target="https://archive.org/details/plotinienneadesp00plot">Internet Archive</ref>
                 </biblStruct>
@@ -69,6 +70,9 @@
         <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
+            </langUsage>
+            <langUsage>
+                <language ident="lat">Latin</language>
             </langUsage>
         </profileDesc>
     </teiHeader>
