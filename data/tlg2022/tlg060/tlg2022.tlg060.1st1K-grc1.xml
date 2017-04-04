@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"> 
-  <teiHeader>
+  <teiHeader xml:lang="eng">
     <fileDesc>
-<titleStmt><title>Sententiae (corresponds to quotes from Gregory Nazianzen, Carmen morale XXX) (Greek)</title>
+<titleStmt>
+  <title xml:lang="mul">Sententiae (corresponds to quotes from Gregory Nazianzen, Carmen morale XXX) (Greek)</title>
         <author>pseudo-Menander</author>
         <editor role="editor">Manfred Ullmann</editor>
         <funder>Andrew W. Mellon Foundation</funder>
@@ -50,14 +51,14 @@
 <date>2016</date>
 </publicationStmt>
 <sourceDesc>
-<biblStruct default="NO">
+<biblStruct>
           <monogr>
             <author>pseudo-Menander</author>
-            <title>Die arabische Überlieferung der sogenannten Menandersentenzen</title>
+            <title xml:lang="deu">Die arabische Überlieferung der sogenannten Menandersentenzen</title>
             <editor role="editor">Manfred Ullmann</editor>
             <imprint>
               <pubPlace>Wiesbaden</pubPlace>
-              <publisher>Kommissionsverlag Franz Steiner</publisher>
+              <publisher xml:lang="deu">Kommissionsverlag Franz Steiner</publisher>
               <biblScope unit="pp" from="77" to="80">77-80</biblScope>
               <date>1961</date>
             </imprint>
@@ -67,14 +68,13 @@
 </fileDesc>
 <encodingDesc>
 <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>  <refsDecl n="CTS">
-        <cRefPattern matchPattern="(\w+).(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-        <cRefPattern matchPattern="(\w+).(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-        <cRefPattern matchPattern="(\w+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern matchPattern="(\w+)" n="sentence" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
 <profileDesc>
-<langUsage default="NO">
-        <language ident="greek">Greek</language>
+<langUsage>
+        <language ident="grc">Greek</language>
+  <language ident="deu">German</language>
       </langUsage>
     </profileDesc>
 </teiHeader>

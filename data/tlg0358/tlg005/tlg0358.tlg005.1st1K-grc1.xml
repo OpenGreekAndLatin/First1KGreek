@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader>
+<teiHeader xml:lang="eng">
 <fileDesc>
 <titleStmt>
-<title>Problemata arithmetica</title>
+<title xml:lang="lat">Problemata arithmetica</title>
+ <author xml:lang="lat">Nicomachus Gerasenus</author>
 <editor>Richard Hoche</editor>
  <funder>Harvard Library Arcadia Fund</funder>
  <principal>Gregory Crane</principal>
@@ -46,22 +47,22 @@
 <sourceDesc>
 <listBibl>
  <biblStruct>
- <monogr>
+  <monogr xml:lang="lat">
   <title>Problemata arithmetica</title>
   <editor>
 	<persName>
-	 <name xml:lang="lat">Richard Hoche</name>
+	 <name>Richard Hoche</name>
 	</persName>
   </editor>
-  <author ref="urn:cts:greekLit:tlg1210">UNKNOWN</author>
+  <author ref="urn:cts:greekLit:tlg0358">Nicomachus Gerasenus</author>
   <imprint>
-	<publisher>LIPSIAE</publisher>
-	<pubPlace>IN AEDIBUS B. G. TEUBNERI</pubPlace>
+	<publisher>Lipsiae</publisher>
+   <pubPlace>In Aedibus B. G. Teubneri</pubPlace>
 	<date>1866</date>
   </imprint>
   <biblScope unit="volume"></biblScope>
  </monogr>
-  <ref target="https://archive.org/details/autolycidesphaer00autouoft">Internet Archive</ref>
+  <ref target="https://archive.org/stream/autolycidesphaer00autouoft#page/n609/mode/2up">Internet Archive</ref>
  </biblStruct>
 </listBibl>
 </sourceDesc>
@@ -69,7 +70,7 @@
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
  <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+)" n="work" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+  <cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
 </encodingDesc>
 <profileDesc>
@@ -85,11 +86,10 @@
 <text>
 <body>
  
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0358.tlg005.1st1K">
-<div type="textpart" subtype="work" n="1">
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0358.tlg005.1st1K-grc1">
 <pb n="148"/>
 <head>ΠΡΟΒΛΗΜΑΤΑ ΑΡΙΘΜΗΤΙΚΑ.</head>
-<lb n="1"/> <p>α. ΤΟΤ ΚΥΝΟΣ.</p>
+<div type="textpart" subtype="section" n="1"> <p>α. ΤΟΤ ΚΥΝΟΣ.</p>
 <p>Δοθέντων ἀπὸ μονάδος ὁποσωνοῦν
 ἀριθμῶν ἐφεξῆς εὑρεῖν, ὅσος ἐστὶν ὁ
 σύμπας.</p> <lb n="5"/>
@@ -125,7 +125,8 @@ numeroru ζ ═ 6, η ═ 7, θ 8, ι ═ 9 ponitur; κ (16) ═ 10.</note>
 <l>α β γ δ ε ζ η θ ι — κ</l>
 <l>α| β| γ| δ| ε| ϛ| ζ| η| θ|— ι|.</l>
 </lg>
-<lb n="10"/> <p>β. Πῶς ἂν ἐκ μεθόδου προχειρότατα <lb n="2"/>
+</div>
+  <div type="textpart" subtype="section" n="2"><lb n="10"/> <p>β. Πῶς ἂν ἐκ μεθόδου προχειρότατα 
 γινώσκοι τις ἀκριβῶς τὴν τῶν συντιθεμένων
 ἀπὸ μονάδος καὶ ἐφεξῆς ἀριθμῶν
 γινομένου ποσότητα, μέχρις οὗ δηλονότι
@@ -160,7 +161,8 @@ geometriaee libros VI priores; lat. vert. Conr. Dasyp.“[odius].
 ἐπὶ τὸν ιε, γίνονται ρκ. καὶ ἔστι καὶ οὕτως
 ἡ εὕρεσις ἀσφαλεστάτη, ὡς καὶ ἐπὶ τῆς προτέρας <lb n="10"/>
 μεθόδου· ὅπερ ἔδει δεῖξαι. ΤΟΥ ΑΥΤΟΥ.</p>
-<lb n="3"/> <p>γ. Ἀριθμῶν ὅσων δήποτε ἐκκειμένων
+</div>
+  <div type="textpart" subtype="section" n="3"><p>γ. Ἀριθμῶν ὅσων δήποτε ἐκκειμένων
 ἐν ἴσῃ ὑπεροχῇ τὸν συγκεφαλαιούμενον ἐκ
 τῆς συνθέσεως αὐτῶν λαμβάνειν.</p> <lb n="15"/>
 <p>Ποίοι οὕτω· λάμβανε τούς ἄκρους τῶν ἐκκειμένων
@@ -190,7 +192,9 @@ geometriaee libros VI priores; lat. vert. Conr. Dasyp.“[odius].
 τὰ ἡμίση τῶν ἄκρων ι καὶ τὸ πλῆθος ζ· δεκάκις
 οὖν τὰ ζ ποιοῦσιν ο· καὶ ἐπὶ τῶν ἄλλων ὁμοίως.
 ΤΟΥ ΑΥΤΟΥ.</p>
-<p>δ. α, α, α, γ, γ, ε, ε, ε, ζ, θ·</p> <lb n="4"/>
+</div>
+  <div type="textpart" subtype="section" n="4">
+   <p>δ. α, α, α, γ, γ, ε, ε, ε, ζ, θ·</p>
 <lb n="5"/> <p>Ταῦτα τὸ δέκα στοιχεῖα συντιθέμενα
 ποιοῦσι μονάδαςμ· φασὶν οὖν τὸν βασιλέα
 Λέοντα ταῦτα ἐκθεῖναι· καὶ ζητεῖν, ὡς ἂν
@@ -224,13 +228,15 @@ tertu οὔσης.</note>
 πρώτου, καὶ πενταπλασιαζόμενα ὑπὸ τοῦ πρώτου
 ποιοῦσιν ξ· ὁμοίως καὶ τῆς ἑτέρας μερίδος κ καὶ
 τριπλασιαζόμενα ὑπὸ τοῦ πρώτου ποιοῦσιν ξ.</p>
-<lb n="5"/> <p>ε. Μέθοδος, διʼ ἧς ἀστείως εὑρήσεις,
+  </div>
+  <div type="textpart" subtype="section" n="5">
+   <p>ε. Μέθοδος, διʼ ἧς ἀστείως εὑρήσεις,
 οἷον ἀριθμὸν ἔχει τις ἐπὶ νοῦν.</p> <lb n="5"/>
 <p>Ἀριθμὸν ὁντιναοῦν τῶν ἀπὸ τοῦ ζ μέχρι τοῦ ρε
 ὑπό τινος ἐν διανοίᾳ εἰλημμένον ζητῶν εὑρεῖν ὁπόσος
 ἐστί, λήψῃ αὐτὸν μεθόδῳ τοιᾷδε· ἐπίταξον τῷ
 κατὰ διάνοιαν ἔχοντι τὸν ἀριθμὸν κρυφίως παρ᾿
-αὐτῷ ἐκβαλεῖν ἀπʼ αὐτοῦ τὸν γ, ὁσάκις ἐγχωρεῖ, <lb n="10"/>
+αὐτῷ ἐκβαλεῖν ἀπʼ αὐτοῦ τὸν γ, ὁσάκις ἐγχωρεῖ, <lb n="10"/>/
 καὶ τὰ καταλειφθέντα κάτωθεν τοῦ γ, εἰ καταλειφθείη
 δηλονότι, ἐκφωνήσαντα εἰπεῖν πρὸς σέ· οὐ καὶ
 εἰπόντος σύ ἀνθʼ ἑκάστης μονάδος τῶν καταλειφθεισῶν
@@ -296,8 +302,9 @@ tertu οὔσης.</note>
 λαβεῖν ρκε, ὡς μηδένα οὕτω χρύσινον ὑπολειφθῆναι,
 σλβ ἦσαν χρύσινοι καὶ τρίτον χρυσίνου καὶ δωδέκατον
 καὶ ἑκατοστοενενηκοστοδεύτερον ἕν.</p> <lb n="10"/>
-</div>
 
+
+ </div>
  </div>
 </body>
 </text>

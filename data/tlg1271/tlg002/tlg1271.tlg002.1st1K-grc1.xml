@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+    <teiHeader xml:lang="eng">
         <fileDesc>
             <titleStmt>
-                <title>Epistula II ad Corinthios</title>
-                <author>Clemens Romanus</author>
+                <title xml:lang="lat">Epistula II ad Corinthios</title>
+                <author xml:lang="lat">Clemens Romanus</author>
                 <editor>Kirsopp Lake</editor>
                 <funder>A Google Digital Humanities Award</funder>
                 <principal>Gregory Crane</principal>
@@ -47,14 +47,17 @@
             <sourceDesc>
                 <biblStruct>
                     <monogr>
-                        <author>Clemens Romanus</author>
+                        <author ref="urn:cts:greekLit:tlg1271" xml:lang="lat">Clemens Romanus</author>
                         <editor>Kirsopp Lake</editor>
-                        <title>The Apostolic Fathers, Vol 1</title>
+                        <title>The Apostolic Fathers</title>
                         <imprint>
-                            <publisher>William Heinemann; The Macmillan Co.</publisher>
-                            <pubPlace>London; New York</pubPlace>
+                             <publisher>William Heinemann</publisher>
+                            <publisher>The Macmillan Company</publisher>
+                            <pubPlace>New York</pubPlace>
+                            <pubPlace>London</pubPlace>
                             <date>1912</date>
                         </imprint>
+                          <biblScope unit="volume">1</biblScope>
                     </monogr>
                     <ref target="https://archive.org/details/theapostolicfath00unknuoft">Internet
                         Archive</ref>
@@ -74,6 +77,7 @@
         <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
             </langUsage>
         </profileDesc>
     </teiHeader>
