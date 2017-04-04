@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt><title>Fragmenta In Jeremiam</title>
 				<editor>DR. ERICH KLOSTERMANN</editor>
@@ -83,7 +84,7 @@
 		</fileDesc>
 		<encodingDesc>
 			<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-			<refsDecl n="CTS">
+			  <refsDecl n="CTS">
 				<cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
@@ -100,7 +101,7 @@
 	</teiHeader>
 	<text>
 		<body>
-			<div type="edition" n="urn:cts:greekLit:tlg2042.tlg010.opp-grc1">
+			<div type="edition" n="urn:cts:greekLit:tlg2042.tlg010.opp-grc1" xml:lang="grc">
 				<pb n="199"/>
 				<head>Die selbständigen Fragmente aus der Prophetenkatene.</head>
 				<note>c = cod. Chis. R. VIII. 54 saec. X. l = cod. Laur. V, 9 saec. XI. o = cod. Vat. Ottob.

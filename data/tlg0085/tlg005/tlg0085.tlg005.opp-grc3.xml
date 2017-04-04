@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    
     <fileDesc>
       <titleStmt>
         <title type="work" n="Ag.">Agamemnon</title>
@@ -35,7 +38,7 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <refsDecl n="CTS">
+        <refsDecl n="CTS">
         <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -57,9 +60,10 @@
       </change>
       <change who="Jack Duff" when="2016-06-10">Removed two extraneous XPath, corrected duplicate line numbers, corrected editor attributes.</change>
     </revisionDesc>
-  </teiHeader>
+</teiHeader>
+
   <text>
-    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg005.opp-grc3">
+    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg005.opp-grc3" xml:lang="grc">
       <head>
         <foreign xml:lang="grc">Ἀγαμέμνων</foreign>
       </head>

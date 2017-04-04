@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader>
+    
   <fileDesc>
    <titleStmt><title>In Aristotelis Sophisticos Elenchos Commentarius [Sp.]</title>
     <author>Alexander of Aphrodisias</author>
@@ -93,7 +94,7 @@
   <encodingDesc>
    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
     Architecture.</p>
-   <refsDecl n="CTS">
+     <refsDecl n="CTS">
     <cRefPattern n="page" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
    </refsDecl>
   </encodingDesc>
@@ -107,7 +108,7 @@
  </teiHeader>
  <text>
   <body>
-   <div type="edition" n="urn:cts:greekLit:tlg0732.tlgX01.opp-grc1">
+   <div type="edition" n="urn:cts:greekLit:tlg0732.tlgX01.opp-grc1" xml:lang="grc">
     
      <head>ALEXANDRI QUOD FERTUR IN ARISTOTELIS SOPHISTICOS ELENCHOS COMMENTARIUM</head>
 

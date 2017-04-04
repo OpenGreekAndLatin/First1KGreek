@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
    <titleStmt><title>Commentaria in Aristotelem Graeca</title>
     <sponsor>University of Leipzig</sponsor>
@@ -86,7 +87,7 @@
   <encodingDesc>
    <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture.</p>
-    <refsDecl n="CTS">
+      <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -100,7 +101,7 @@
   
  </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg4015.tlg006.opp-grc1">
+    <body><div type="edition" n="urn:cts:greekLit:tlg4015.tlg006.opp-grc1" xml:lang="grc">
 <head>IOANNIS PHILOPONI
 IN ARISTOTELIS LIBROS
 DE GENERATIONE ET CORRUPTIONE

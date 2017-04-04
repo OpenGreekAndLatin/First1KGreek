@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
 	      <title>Apologia</title>
@@ -26,7 +27,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
 
@@ -40,7 +41,7 @@
       <change who="Jack Duff" when="2016-06-10">Removed Latin langUsage.</change>
     </revisionDesc></teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg0645.tlg001.opp-grc1">
+  <text><body> <div type="edition" n="urn:cts:greekLit:tlg0645.tlg001.opp-grc1" xml:lang="grc">
 <pb xml:id="v.2.p.8"/>
 <head>ΑΠΟΛΟΓΙΑ I. <bibl n="Gerhard archive.org siustiniapologia00just"/></head>
 <div type="textpart" subtype="chapter" n="1"><p>Αὐτοκράτορι Τίτῳ Αἰλίῳ Ἀδριανῷ Ἀντωνίνῳ Εὐσεβεῖ

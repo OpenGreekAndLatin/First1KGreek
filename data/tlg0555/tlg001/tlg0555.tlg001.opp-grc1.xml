@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader>
+    
     <fileDesc>
       <titleStmt>
 	     <title>Protrepticus</title>
@@ -25,7 +26,7 @@
     </fileDesc>
 
     <encodingDesc>
-     <refsDecl n="CTS">
+       <refsDecl n="CTS">
       <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
      </refsDecl>
 
@@ -37,9 +38,10 @@
 	<language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+</teiHeader>
 
- <text><body> <div type="edition" n="urn:cts:greekLit:tlg0555.tlg001.opp-grc1">
+
+ <text><body> <div type="edition" n="urn:cts:greekLit:tlg0555.tlg001.opp-grc1" xml:lang="grc">
 <pb n="v.3.p.3"/>
 <head>ΠΡΟΤΡΕΠΤΙΚΟΣ ΠΡΟΣ ΕΛΛΗΝΑΣ</head>
 <milestone unit="section" n="1"/><div type="textpart" subtype="chapter" n="1"><p>Ἀμφίων ὁ Θηβαῖος καὶ Ἀρίων ὁ Μηθυμναῖος ἄμφω μὲν ἤστην 

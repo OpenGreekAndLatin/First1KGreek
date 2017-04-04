@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
         <title>Legatio sive Supplicatio pro Christianis</title>
@@ -27,7 +28,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
 
@@ -41,7 +42,7 @@
     <change who="Jack Duff" when="2016-06-14">Corrected editor field, replaced alt pb with milestones.</change>
   </revisionDesc></teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg1205.tlg001.perseus-grc1">
+  <text><body> <div type="edition" n="urn:cts:greekLit:tlg1205.tlg001.perseus-grc1" xml:lang="grc">
 <pb n="v.2.p.4"/>
 <head>ΑΘΗΝΑΓΟΡΟΥ
 ΑΘΗΝΑΙΟΥ ΦΙΛΟΣΟΦΟΥ ΧΡΙΣΤΙΑΝΟΥ

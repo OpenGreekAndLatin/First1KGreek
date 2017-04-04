@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
+    
         <fileDesc>
             <titleStmt><title>Fragmenta In Jeremiam (E Philocalia)</title>
                 <editor>DR. ERICH KLOSTERMANN</editor>
@@ -85,7 +86,7 @@
         </fileDesc>
         <encodingDesc>
             <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-            <refsDecl n="CTS">
+              <refsDecl n="CTS">
                 <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
                 <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
@@ -99,10 +100,11 @@
             <change who="Jack Duff" when="2016-07-08">Corrected metadata, added ref, expanded pb.
                 Put citations in headers.</change>
         </revisionDesc>
-    </teiHeader>
+  </teiHeader>
+
     <text>
         <body>
-            <div type="edition" n="urn:cts:greekLit:tlg2042.tlg084.opp-grc1">
+            <div type="edition" n="urn:cts:greekLit:tlg2042.tlg084.opp-grc1" xml:lang="grc">
                 <pb n="195"/>
                 <head>Die Fragmente aus der Philokalie.</head>
                 <note>A = cod.Patm. 270 saec. X. B = cod. Ven. 47 saec. XI. C = cod. Paris. Suppl.

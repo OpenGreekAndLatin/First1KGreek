@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
+    
 <fileDesc>
 <titleStmt>
 <title>Introductio arithmetica</title>
@@ -60,7 +61,7 @@
 	<pubPlace>Lipsiae</pubPlace>
 	<date>1866</date>
   </imprint>
-  <biblScope unit="volume"></biblScope>
+  <biblScope unit="volume"/>
  </monogr>
   <ref target="https://archive.org/details/autolycidesphaer00autouoft">Internet Archive</ref>
  </biblStruct>
@@ -69,7 +70,7 @@
 </fileDesc>
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
- <refsDecl n="CTS">
+   <refsDecl n="CTS">
   <cRefPattern matchPattern="(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
   <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
@@ -1928,7 +1929,7 @@ H in mg. — 4. συζευγνύμενοι S — τῆς ἀπὸ τρ. P —
 <note type="footnote">2. ποικιλότερον P ποιητικώτερον G — 3. ἐγχειριστέον
 S — 5. προφρανθέντας G — 6. 7. διπλασίους . . . τριπλασί-
 ους . . . τετραπλασίους CSH — 9. τίνες πρότεροι CSH —
-10> 11. καὶ δὴ . . . παρακολ. om. C — 13. μῆκος GP lon-
+10&gt; 11. καὶ δὴ . . . παρακολ. om. C — 13. μῆκος GP lon-
 gitudo Boëth. 24. πλάτος cet. cf. p. 52 1. 4. — 24. ἐκκείσθωσαν
 CSH — τῷ om. H — ὁ addidi, οἱ CSH</note>
 
