@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
 <titleStmt><title xml:lang="lat">Fragmenta In Job (In Catenis)</title>
   <author>Methodius</author>
@@ -84,7 +85,7 @@ License</p>
 </fileDesc>
 <encodingDesc>
 <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-  <refsDecl n="CTS">
+    <refsDecl n="CTS">
         <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -99,7 +100,7 @@ License</p>
 </revisionDesc>
 </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2959.tlg007.opp-grc1">
+    <body><div type="edition" n="urn:cts:greekLit:tlg2959.tlg007.opp-grc1" xml:lang="grc">
 <div type="textpart" subtype="fragment" n="1">
  <p>Hiob 9, 2. Δύναται, φησί, γενέσθαι δίκαιος συγκρίσει ἀνθρώπων·
 ὡς δὲ πρὸς τὸν τῶν ὅλων κύριον »πῶς ἔσται δίκαιος βροτός;«

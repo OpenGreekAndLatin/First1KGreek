@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
   <titleStmt><title>Ecclesiastes</title>
    <editor>John Henry Arthur Hart</editor>
@@ -69,13 +70,13 @@
      <name xml:lang="eng">John Henry Arthur Hart</name>
     </persName>
     </editor>
-    <author ref="urn:tmp"></author>
+    <author ref="urn:tmp"/>
     <imprint>
     <publisher>Cambridge University Press</publisher>
     <pubPlace>Cambridge</pubPlace>
     <date>1909</date>
     </imprint>
-    <biblScope unit="volume"></biblScope>
+    <biblScope unit="volume"/>
    </monogr>
    </biblStruct>
   </listBibl>
@@ -83,7 +84,7 @@
  </fileDesc>
  <encodingDesc>
   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-   <refsDecl n="CTS">
+     <refsDecl n="CTS">
         <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -104,7 +105,7 @@
  </revisionDesc>
  </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg0527.tlg030.opp-grc2">
+    <body><div type="edition" n="urn:cts:greekLit:tlg0527.tlg030.opp-grc2" xml:lang="grc">
 <div type="textpart" subtype="chapter" n="praef">
 <head>EKKΛHΣIAΣTIKOΣ</head>
 <pb n="xviii"/>

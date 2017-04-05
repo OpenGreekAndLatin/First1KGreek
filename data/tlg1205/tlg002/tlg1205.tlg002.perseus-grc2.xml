@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="eng">
 	<teiHeader>
+    
 		<fileDesc>
       <titleStmt>
         <title xml:lang="lat">De resurrectione</title>
@@ -54,7 +55,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
   <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
   <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -71,7 +72,7 @@
   </revisionDesc>
 </teiHeader>
 
-  <text><body> <div type="edition"  xml:lang="grc" n="urn:cts:greekLit:tlg1205.tlg002.perseus-grc2">
+  <text><body> <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1205.tlg002.perseus-grc2">
 <pb n="v.1.p.53"/>
 
 <head>ΑΘΗΝΑΓΟΡΟΥ

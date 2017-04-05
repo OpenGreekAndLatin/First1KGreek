@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
+    
         <fileDesc>
             <titleStmt>
                 <title>De septimestri partu</title>
@@ -75,10 +76,8 @@
         <encodingDesc>
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
+              <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
@@ -86,7 +85,8 @@
                 <language ident="grc">Greek</language>
             </langUsage>
         </profileDesc>
-    </teiHeader>
+  </teiHeader>
+
     <text>
         <body>
 
@@ -131,8 +131,7 @@
                         μητρὸς τοὺς πόνους. Οἱ <lb/>γὰρ ὑμένες τεινόμενοι καὶ ὁ ὀμφαλὸς σπασθεὶς
                         ὀδύνας ποιέει τῇ <lb/>μητρί· καὶ τὸ ἔμβρυον ἐκ τοῦ παλαιοῦ συνδέσμου ἐκλυθὲν
                         βαρύτερον <lb/>γίνεται· πολλαὶ δὲ τῶν γυναικῶν καὶ ἐπιπυρεταίνουσι τουτέων
-                        γινομένων, <lb/>αἱ δὲ καὶ ἀπόλλυνται σὺν τοῖσιν ἐμβρύοισιν. Χρῶνται δὲ <pb
-                            n="440"/> πᾶσαι ἑνὶ λόγῳ περὶ τουτέου· φασὶ γὰρ τοὺς ὀγδόους τῶν μηνῶν
+                        γινομένων, <lb/>αἱ δὲ καὶ ἀπόλλυνται σὺν τοῖσιν ἐμβρύοισιν. Χρῶνται δὲ <pb n="440"/> πᾶσαι ἑνὶ λόγῳ περὶ τουτέου· φασὶ γὰρ τοὺς ὀγδόους τῶν μηνῶν
                         <lb/>καὶ χαλεπώτατα φέρειν τὰς γαστέρας, ὀρθῶς λέγουσαι, Ἔστι δὲ <lb/>ὄγδοος
                         μὴν οὐ μόνον ὁ χρόνος οὗτος, ἀλλ’ εἰ καὶ ἡμέρας λάβοι ἀπό <lb/>τε τοῦ
                         ἑβδόμου μηνὸς καὶ τοῦ ἐννάτου. Ἀλλὰ τὰς ἡμέρας οὐχ <lb/>ὁμοίως οὔτε λέγουσιν

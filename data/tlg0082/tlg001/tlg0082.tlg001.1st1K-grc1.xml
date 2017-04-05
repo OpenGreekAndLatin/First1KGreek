@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
+    
 <fileDesc>
 <titleStmt>
 <title>De pronominibus</title>
@@ -72,7 +73,7 @@
 </fileDesc>
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
- <refsDecl n="CTS">
+   <refsDecl n="CTS">
   <cRefPattern matchPattern="(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
  </refsDecl>
 </encodingDesc>

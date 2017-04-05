@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt>
 				<title>Dialogus cum Tryphone</title>
@@ -33,11 +35,9 @@
 			
 		</fileDesc>
 		<encodingDesc>
-			<refsDecl n="CTS">
-				<cRefPattern n="section" matchPattern="(.+).(.+)"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-				<cRefPattern n="chapter" matchPattern="(.+)"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+				<cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		
@@ -50,7 +50,7 @@
 
 	<text>
 		<body>
-			<div type="edition" n="urn:cts:greekLit:tlg0645.tlg003.perseus-grc2">
+			<div type="edition" n="urn:cts:greekLit:tlg0645.tlg003.perseus-grc2" xml:lang="grc">
 				<head>[ΤΟΥ ΑΓΙΟΥ ΙΟΥΣΤΙΝΟΥ ΦΙΛΟΣΟΦΟΥ ΚΑΙ ΜΑΡΤΥΡΟΣ ΠΡΟΣ ΤΡΥΦΩΝΑ ΙΟΥΔΑΙΟΝ ΔΙΑΛΟΓΟΣ]</head>
 				<div type="textpart" subtype="chapter" n="1">
 					<div type="textpart" subtype="section" n="1">

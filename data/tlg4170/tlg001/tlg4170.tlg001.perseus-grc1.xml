@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/dev/tei-epidoc.rng" type="xml"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
+    
         <fileDesc>
             <titleStmt>
                 <title>Scholia vetera in Pindari carmina</title>
@@ -60,10 +61,8 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+)" n="chapter"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
+              <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
@@ -71,10 +70,11 @@
                 <language ident="grc">Greek</language>
             </langUsage>
         </profileDesc>
-    </teiHeader>
+  </teiHeader>
+
     <text>
         <body>
-            <div type="edition" n="urn:cts:greekLit:tlg4170.tlg001.perseus-grc1">
+            <div type="edition" n="urn:cts:greekLit:tlg4170.tlg001.perseus-grc1" xml:lang="grc">
             <div type="textpart" subtype="chapter" n="1">
                 <head>Βίος Πινδάρου. <note n="A"/></head>
                 <p>Πίνδαρος ὁ ποιητὴς Θηβαῖος ἦν ἐκ Κυνοκεφάλων· κώμη δέ ἐστι Θηβαϊκή· υἱὸς δὲ
@@ -91,8 +91,7 @@
                     Θηβαίων χιλίαις δραχμαῖς ἃς ἐξέτισαν ὑπὲρ αὐτοῦ Ἀθηναῖοι. ἦν δὲ οὐ μόνον εὐφυὴς
                     ποιητὴς, ἀλλὰ καὶ ἄνθρωπος θεοφιλής. ὁ γοῦν Πὰν ὁ θεὸς ὤφθη μεταξὺ τοῦ
                     Κιθαιρῶνος καὶ τοῦ Ἑλικῶνος ᾄδων παιᾶνα Πινδάρου· διὸ καὶ ᾆσμα ἐποίησεν εἰς τὸν
-                    θεὸν ἐν ᾧ χάριν ὁμολογεῖ τῆς τιμῆς αὐτῷ, οὗ ἡ ἀρχή (fr. 95)· ὦ Πὰν Πὰν <note
-                        n="5"/> Ἀρκαδίας μεδέων καὶ σεμνῶν ἀδύτων φύλαξ. ἀλλὰ καὶ ἡ Δημήτηρ ὄναρ
+                    θεὸν ἐν ᾧ χάριν ὁμολογεῖ τῆς τιμῆς αὐτῷ, οὗ ἡ ἀρχή (fr. 95)· ὦ Πὰν Πὰν <note n="5"/> Ἀρκαδίας μεδέων καὶ σεμνῶν ἀδύτων φύλαξ. ἀλλὰ καὶ ἡ Δημήτηρ ὄναρ
                     ἐπιστᾶσα αὐτῷ ἐμέμψατο, ὅτι μόνην τῶν θεῶν οὐχ ὕμνησεν· ὁ δὲ εἰς αὐτὴν ἐποίησε
                     ποίημα οὗ ἡ ἀρχή (fr. 37)· Πότνια θεσμοφόρε χρυσάνιον. ἀλλὰ καὶ βωμὸν ἀμφοτέρων
                     τῶν θεῶν πρὸ τῆς οἰκίας τῆς ἰδίας ἱδρύσατο. Παυσανίου δὲ τοῦ <note n="10"/>
