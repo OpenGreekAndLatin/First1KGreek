@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt>
 				<title>De iuventute et senectute, De vita et morte</title>
@@ -46,9 +47,8 @@
 		<encodingDesc>
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -206,8 +206,7 @@
 						εἰσιοῦσα, καθάπερ καὶ τοῖς ἀνθρώποις τὸ <lb/>πρῶτον προσενεγκαμένοις· αἱ δὲ νηστεῖαι
 						θερμαίνουσι καὶ <lb/>δίψας ποιοῦσιν· ἀκίνητος γὰρ ὢν ὁ ἀὴρ ἀεὶ θερμαίνεται, <lb/>τῆς δὲ
 						τροφῆς εἰσιούσης καταψύχει κινούμενος, ἕως ἂν <lb/>λάβῃ τὴν πέψιν. Ἐὰν δὲ ἢ τὸ περιέχον
-						ὑπερβάλλῃ <lb/>ψυχρότητι διὰ τὴν ὥραν, ἰσχυρῶν γινομένων πάγων, ἐξαυαίνεται, <pb n="329"
-						/> αίνεται, ἢ τοῦ θέρους ἰσχυρὰ συμβαίνῃ καύματα καὶ μὴ <lb/>δύνηται τὸ σπώμενον ἐκ τῆς
+						ὑπερβάλλῃ <lb/>ψυχρότητι διὰ τὴν ὥραν, ἰσχυρῶν γινομένων πάγων, ἐξαυαίνεται, <pb n="329"/> αίνεται, ἢ τοῦ θέρους ἰσχυρὰ συμβαίνῃ καύματα καὶ μὴ <lb/>δύνηται τὸ σπώμενον ἐκ τῆς
 						γῆς ὑγρὸν καταψύχειν, φθείρεται <lb/>μαραινόμενον τὸ θερμόν, καὶ λέγεται σφακελίζειν καὶ
 						<lb/>ἀστρόβλητα γίνεσθαι τὰ δένδρα περὶ τοὺς καιροὺς τούτους. <lb/>Διὸ καὶ γένη τινὰ
 						λίθων ταῖς ῥίζαις ὑποβάλλουσι καὶ ὕδωρ <lb/>ἐν ἀγγείοις, ὅπως αἱ ῥίζαι ψύχωνται τῶν

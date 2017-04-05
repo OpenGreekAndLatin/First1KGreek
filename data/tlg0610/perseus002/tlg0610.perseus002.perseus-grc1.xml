@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt>
 				<title>Peri Sophiston</title>
@@ -60,9 +61,8 @@
 		<encodingDesc>
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -74,7 +74,7 @@
 
 	<text>
 		<body>
-			<div type="edition" n="urn:cts:greekLit:tlg0610.perseus002.perseus-grc1">
+			<div type="edition" n="urn:cts:greekLit:tlg0610.perseus002.perseus-grc1" xml:lang="grc">
 				<head>ΑΛΚΙΔΑΜΑΝΤΟΣ ΠΕΡΙ ΤΩΝ ΤΟΥΣ ΓΡΑΠΤΟΥΣ ΛΟΓΟΥΣ ΓΡΑΦΟΝΤΩΝ Η ΠΕΡΙ ΣΟΦΙΣΤΩΝ.</head>
 				<div type="textpart" subtype="chapter" n="1">
 					<p>Ἐπειδή τινες τῶν καλουμένων σοφιστῶν ἱστορίας μὲν καὶ παιδείας ἠμελήκασι καὶ τοῦ
@@ -87,8 +87,7 @@
 				<div type="textpart" subtype="chapter" n="2">
 					<p> οὐχ ὡς ἀλλοτρίαν ἐμαυτοῦ τὴν δύναμιν αὐτῶν ἡγούμενος, ἀλλ᾿ ὡς ἐφ᾿ ἑτέροις μεῖζον
 						φρονῶν καὶ τὸ γράφειν ἐν παρέργῳ μελετᾶν οἰόμενος χρῆναι, καὶ τοὺς ἐπ᾿ αὐτὸ τοῦτο τὸν
-						βίον καταναλίσκοντας ἀπολελεῖφθαι πολὺ καὶ ῥητορικῆς καὶ φιλοσοφίας ὑπειληφώς, καὶ <pb
-							n="194"/> πολὺ δικαιότερον ἂν ποιητὰς ἢ σοφιστὰς προσαγορεύεσθαι νομίζων.</p>
+						βίον καταναλίσκοντας ἀπολελεῖφθαι πολὺ καὶ ῥητορικῆς καὶ φιλοσοφίας ὑπειληφώς, καὶ <pb n="194"/> πολὺ δικαιότερον ἂν ποιητὰς ἢ σοφιστὰς προσαγορεύεσθαι νομίζων.</p>
 				</div>
 
 				<div type="textpart" subtype="chapter" n="3">
@@ -258,8 +257,7 @@
 					<p> Ἡγοῦμαι δὲ καὶ ταῖς ἐπιθυμίαις τῶν ἀκροατῶν ἄμεινον χρῆσθαι τοὺς αὐτοσχεδιάζοντας τῶν
 						τὰ γεγραμμένα λεγόντων. οἱ μὲν γὰρ πολὺ πρὸ τῶν ἀγώνων τὰ συγγράμματα διαπονήσαντες
 						ἐνίοτε τῶν καιρῶν ἁμαρτάνουσιν· ἢ γὰρ μακρότερα τῆς ἐπιθυμίας λέγοντες ἀπεχθάνονται τοῖς
-						ἀκούουσιν, ἢ βουλομένων ἔτι τῶν ἀνθρώπων ἀκροᾶσθαι προαπολείπουσι τοὺς λόγους. <pb
-							n="201"/>
+						ἀκούουσιν, ἢ βουλομένων ἔτι τῶν ἀνθρώπων ἀκροᾶσθαι προαπολείπουσι τοὺς λόγους. <pb n="201"/>
 					</p>
 				</div>
 

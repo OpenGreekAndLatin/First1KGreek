@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt>
 				<title>De longitudine et brevitate vitae</title>
@@ -67,16 +68,15 @@
 							<date>1837</date>
 						</imprint>
 					</monogr>
-					<ref target="https://catalog.hathitrust.org/Record/001222547"></ref>
+					<ref target="https://catalog.hathitrust.org/Record/001222547"/>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -136,8 +136,7 @@
 						κατὰ συμβεβηκὸς δ’ οὐθὲν τῶν ἐν <lb/>ταῖς οὐσίαις ἐναντίων φθείρεται, διὰ τὸ μηθενὸς
 						ὑποκειμένου <lb/>κατηγορεῖσθαι τὴν οὐσίαν. Ὥσθ’ ᾧ μή ἐστιν ἐναντίον καὶ <lb/>ὅπου μή
 						ἐστιν, ἀδύνατον ἂν εἴη φθαρῆναι· τί γὰρ ἔσται τὸ <lb/>φθεροῦν, εἴπερ ὑπ’ ἐναντίων μὲν
-						φθείρεσθαι συμβαίνει <lb/>μόνων, τοῦτο δὲ μὴ ὑπάρχει, ἢ ὅλως ἢ ἐνταῦθα; Ἢ τοῦτο <pb
-							n="317"/> τῇ μὲν ἀληθές ἐστι τῇ δ’ οὔ· ἀδύνατον γὰρ τῷ ὕλην ἔχοντι <lb/>μὴ ὑπάρχειν
+						φθείρεσθαι συμβαίνει <lb/>μόνων, τοῦτο δὲ μὴ ὑπάρχει, ἢ ὅλως ἢ ἐνταῦθα; Ἢ τοῦτο <pb n="317"/> τῇ μὲν ἀληθές ἐστι τῇ δ’ οὔ· ἀδύνατον γὰρ τῷ ὕλην ἔχοντι <lb/>μὴ ὑπάρχειν
 						πως τὸ ἐναντίον. Πάντῃ μὲν γὰρ ἐνεῖναι τὸ <lb/>θερμὸν ἢ τὸ εὐθὺ ἐνδέχεται, πᾶν δ’ εἶναι
 						ἀδύνατον ἢ θερμὸν <lb/>ἢ εὐθὺ ἢ λευκόν· ἔσται γὰρ τὰ πάθη κεχωρισμένα. Εἰ <lb/>οὖν, ὅταν
 						ἅμα ᾖ τὸ ποιητικὸν καὶ τὸ παθητικόν, ἀεὶ τὸ <lb/>μὲν ποιεῖ τὸ δὲ πάσχει, ἀδύνατον μὴ
@@ -156,8 +155,7 @@
 				</div>
 				<div type="textpart" subtype="chapter" n="4">
 					<p>Ἔστι δ’ οὔτε τὰ μέγιστα ἀφθαρτότερα (ἵππος γὰρ ἀνθρώπου <lb/>βραχυβιώτερον) οὔτε τὰ
-						μικρά (ἐπέτεια γὰρ τὰ <lb/>πολλὰ τῶν ἐντόμων) οὔτε τὰ φυτὰ ὅλως τῶν ζῴων (ἐπέτεια <pb
-							n="318"/> γὰρ ἔνια τῶν φυτῶν) οὔτε τὰ ἔναιμα (μέλιττα γὰρ πολυχρονιώτερον <lb/>ἐνίων
+						μικρά (ἐπέτεια γὰρ τὰ <lb/>πολλὰ τῶν ἐντόμων) οὔτε τὰ φυτὰ ὅλως τῶν ζῴων (ἐπέτεια <pb n="318"/> γὰρ ἔνια τῶν φυτῶν) οὔτε τὰ ἔναιμα (μέλιττα γὰρ πολυχρονιώτερον <lb/>ἐνίων
 						ἐναίμων) οὔτε τὰ ἄναιμα (τὰ γὰρ μαλάκια <lb/>ἐπέτεια μέν, ἄναιμα δέ) οὔτε τὰ ἐν τῇ γῇ
 						(καὶ γὰρ φυτὰ <lb/>ἐπέτειά ἐστι καὶ ζῷα πεζά) οὔτε τὰ ἐν τῇ θαλάττῃ· καὶ <lb/>γὰρ ἐκεῖ
 						βραχύβια καὶ τὰ ὀστρακηρὰ καὶ τὰ μαλάκια. <lb/>Ὅλως δὲ τὰ μακροβιώτατα ἐν τοῖς φυτοῖς

@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 <teiHeader>
+    
 <fileDesc>
 <titleStmt>
 <title>Elementa Harmonica</title>
@@ -60,7 +61,7 @@
 	<pubPlace>Oxford</pubPlace>
 	<date>1902</date>
   </imprint>
-  <biblScope unit="volume"></biblScope>
+  <biblScope unit="volume"/>
  </monogr>
   <ref target="https://archive.org/details/aristoxenouharmo00arisuoft">Internet Archive</ref>
  </biblStruct>
@@ -69,7 +70,7 @@
 </fileDesc>
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
- <refsDecl n="CTS">
+   <refsDecl n="CTS">
   <cRefPattern matchPattern="(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
   <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
@@ -383,7 +384,7 @@ script.) B 21 τὴν cx σιὸν Mx: τὸν V B S 25 ἑτῳαν] post
 <lb n="25"/> μηδαμοῦ δοκεῖν ἵστασθαι. Κατὰ δὲ τὴν ἑτέραν ἣν ὀνομάζομεν
 διωaστηματικὴν ἐναντίως πέφυκε γίγνεσθαι· ἀλλὰ γὰρ
 ἵστασθαί τε δοκεῖ καὶ πάντες τὸν τοῦτο φαινόμενον ποιεῖν
-<lb n="30"/> οὐκέτι λέγειν φασὶν ἀλλʼ ᾄδειν. &#9651;ιό περ ἐν τῷ δωαλέγεσθαι <lb n="25"/>
+<lb n="30"/> οὐκέτι λέγειν φασὶν ἀλλʼ ᾄδειν. △ιό περ ἐν τῷ δωαλέγεσθαι <lb n="25"/>
 φεύγομεν τὸ ἱστάναι τὴν φωνήν, ἂν μὴ διὰ πάθος ποτὲ εἰς
 <note type="footnote">1 αὐτὴν Meibom : αὐςτὴν codd. 2 ἐφʼ ἑκατέρας B in marg.
 5 ἐπʼ] ἐ in ras. Mc : ὑπ VB R 6 κατʼ αὐςτὰς B R, Mc (κατʼ parvis
@@ -452,7 +453,7 @@ B 21 ἐλαφρότερον H : ἐλαφρoτέρaιs rell.: ἐλαφρστέ
 <lb n="20"/> τὴν χορδὴν καὶ ἑστάναι, ἦν δʼ ἡ μὲν ἐπίτασις κινουμένης τῆς
 χορδῆς, ἡ δʼ ὀξύτης ἠρεμούσης ἤδη καὶ ἑστηκυίας. Ταὐτὰ δὲ
 ἐροῦμεν καὶ περὶ τῆς ἀνέσεάς τε καὶ βαρύτητος πλὴν ἐπὶ τὸν
-<lb n="25"/> ἐναντίον τόπον. &#9651;ῆλον δὲ διὰ τῶν ερημένων, ὅτι ἥ τʼ ἄνεσις <lb n="15"/>
+<lb n="25"/> ἐναντίον τόπον. △ῆλον δὲ διὰ τῶν ερημένων, ὅτι ἥ τʼ ἄνεσις <lb n="15"/>
 τῆς βαρύτητος ἕτερόν τί ἐστιν, ὡς τὸ ποιοῦν τοῦ ποιουμένου,
 ἥ τʼ ἐπίτασις τῆς ὀξύτητος τὸν αὐτὸν τρόπον. Ὅτι
 <lb n="30"/> μὲν οὖν ἕτερα ἀλλήλων ἐστὶν ἐπίτασις μὲν ὀξύτητος ἄνεσις
@@ -913,7 +914,7 @@ in marg. 24 ἐξ del. Merquard δωοῖν H</note>
 βαρυτέρῳ τῶν μενόντων φθόγγων εἰλήφθω τὸ ἐλάχιστον <lb n="5"/>
 πυκνόν· τοῦτο δʼ ἔσται τὸ ἐκ δύο διέσεων <add cause="fix">ἐναρμονίων ἐλαχίστων·</add>
 ἔπειτα δεύτερον πρὸς τῷ αὐτῷ· τοῦτο δὲ ἔσται τὸ
-ἐκ δύο διέσεων> χραωματικῶν ἐλαχίστων. ἔσονται δὲ <add cause="fix">αἱ</add>
+ἐκ δύο διέσεων&gt; χραωματικῶν ἐλαχίστων. ἔσονται δὲ <add cause="fix">αἱ</add>
 <lb n="20"/> δύο λι| χανοὶ εἰλημμέναι δύο γενῶν βαρύταται, ἡ μὲν ἁρμονίας
 ἢ δὲ χρώματος. καθόλου γὰρ βαρύταται μὲν αἱ <lb n="10"/>
 <lb n="25"/> ἐναρμόνιοι λιχανοὶ σαν, ἐχόμεναι δʼ αἱ χρωματικαί, συν| τονώταται
@@ -1947,7 +1948,7 @@ rell. 13 τονιαῖον ex ἡμιτονιωαἴaaων Ma τονιαῖόν 
 ponit H 14 ἕξ . . . τέτταρες in marg. Mb: om. R 15 ὅσαι
 ex ὅσα Ma 16 παρυπάται δὲ τέτταρες seclusit Marquard παρυπάτης
 B : παρυπα (τʼ suprascr.) S δύεν M : δυοῖν V S 19 ἰδία
-H : ὄιος rell. 21 τῷ παρυπάτης om. R 23 φανερὸν . . > .
+H : ὄιος rell. 21 τῷ παρυπάτης om. R 23 φανερὸν . . &gt; .
 διαιόνων restituit Westphal</note>
 
 <pb n="143"/>

@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
+    
         <fileDesc>
             <titleStmt>
                 <title>Martyrium Polycarpi</title>
@@ -54,12 +55,9 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(.+).(.+)" n="section"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern matchPattern="(.+)" n="chapter"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
+              <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
@@ -67,13 +65,13 @@
                 <language ident="grc">Greek</language>
             </langUsage>
         </profileDesc>
-    </teiHeader>
+  </teiHeader>
+
     <text>
         <body>
-            <div type="edition" n="urn:cts:greekLit:tlg1484.tlg001.1st1K-grc1">
+            <div type="edition" n="urn:cts:greekLit:tlg1484.tlg001.1st1K-grc1" xml:lang="grc">
                 <pb n="312"/>
-                <head>ΜΑΡΤΥΡΙΟΝ ΤΟΥ ΑΓΙΟΥ ΠΟΛΥΚΑΡΠΟΥ ΕΠΙΣΚΟΠΟΥ ΣΜΥΡΝΗΣ <note type="footnote" n="1"
-                        >This title has no special support. Each MS. gives its osn title and though
+                <head>ΜΑΡΤΥΡΙΟΝ ΤΟΥ ΑΓΙΟΥ ΠΟΛΥΚΑΡΠΟΥ ΕΠΙΣΚΟΠΟΥ ΣΜΥΡΝΗΣ <note type="footnote" n="1">This title has no special support. Each MS. gives its osn title and though
                         there is a general resemblance no tso are the same.</note>
                 </head>
                 <div type="textpart" subtype="chapter" n="praef">
@@ -128,9 +126,7 @@
                             αὐτοῖς ψυχρὸν τὸ τῶν ἀπηνῶν βασανιστῶν. πρὸ ὀφθαλμῶν γὰρ εἶχον φυγεῖν τὸ
                             αἰώνιον καὶ μηδέποτε σβεννύμενον, καὶ τοῖς τῆς καρδίας ὀφθαλμοῖς
                             ἀνέβλεπον τὰ τηρούμενα τοῖς ὑπομείνασιν <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg007:2.9
-                                    urn:cts:greekLit:tlg0527.tlg048:64.4
-                                    urn:cts:greekLit:tlg0527.tlg048:65.16">1 Cor. 2, 9 (Is. 64, 4;
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg007:2.9                                     urn:cts:greekLit:tlg0527.tlg048:64.4                                     urn:cts:greekLit:tlg0527.tlg048:65.16">1 Cor. 2, 9 (Is. 64, 4;
                                     65, 16)</bibl>
                             </note> ἀγαθά, ἃ οὔτε οὖς ἤκουσεν οὔτε ὀφθαλμὸς εἶδεν οὔτε ἐπὶ καρδίαν
                             ἀνθρώπου ἀνέβη, ἐκείνοις δὲ ὑπεδείκνυτο ὑπὸ τοῦ κυρίου, οἵπερ μηκέτι
@@ -183,8 +179,7 @@
                     <div type="textpart" subtype="section" n="2">
                         <p> καὶ προσευχόμενος ἐν ὀπτασίᾳ γέγονεν πρὸ τριῶν ἡμερῶν τοῦ συλληφθῆναι
                             αὐτόν, καὶ εἶδεν τὸ προσκεφάλαιον αὐτοῦ ὑπὸ πυρὸς κατακαιόμενον: καὶ
-                            στραφεὶς εἶπεν πρὸς τοὺς σὺν αὐτῷ: Δεῖ με ζῶντα καῆναι. <note n="1"
-                                >kah=nai m, kauqh=nai bpsv.</note>
+                            στραφεὶς εἶπεν πρὸς τοὺς σὺν αὐτῷ: Δεῖ με ζῶντα καῆναι. <note n="1">kah=nai m, kauqh=nai bpsv.</note>
                         </p>
                     </div>
                 </div>
@@ -212,13 +207,11 @@
                                 <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:26.55">Mt. 26,
                                     55</bibl>
                             </note> μετὰ τῶν συνήθων αὐτοῖς ὅπλων ὡς ἐπὶ λῃστὴν τρέχοντες. καὶ ὀψὲ
-                            τῆς ὥρας συνεπελθόντες ἐκεῖνον μὲν εὗρον ἐν ὑπερῴῳ κατακείμενον: <note
-                                type="footnote" n="1">e)n u(perw/|w| katakei/menon E, e)/n tini
+                            τῆς ὥρας συνεπελθόντες ἐκεῖνον μὲν εὗρον ἐν ὑπερῴῳ κατακείμενον: <note type="footnote" n="1">e)n u(perw/|w| katakei/menon E, e)/n tini
                                 dwmati/w| e)n u(perw/|w| katakei/menon m, e)/n tini dwmati/w|
                                 katakei/menon e)n u(perw/|w| bpsv.</note> κἀκεῖθεν δὲ ἠδύνατο εἰς
                             ἕτερον χωρίον ἀπελθεῖν, <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg005:21.14
-                                    urn:cts:greekLit:tlg0031.tlg001:6.10">Acts 21, 14 cf. Mt. 6,
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg005:21.14                                     urn:cts:greekLit:tlg0031.tlg001:6.10">Acts 21, 14 cf. Mt. 6,
                                     10</bibl>
                             </note> ἀλλ̓ οὐκ ἠβουλήθη εἰπών: Τὸ θέλημα τοῦ θεοῦ γενέσθω. </p>
                     </div>
@@ -298,13 +291,11 @@
                         <p> Ἐπιμένοντος δὲ πάλιν αὐτοῦ καὶ λέγοντος: Ὄμοσον τὴν Καίσαρος τύχην,
                             ἀπεκρίνατο: Εἰ κενοδοξεῖς, ἵνα ὀμόσω τὴν καίσαρος τύχην, ὡς σὺ λέγεις,
                             προσποιεῖ δὲ ἀγνοεῖν με, τίς εἰμι, μετὰ παρρησίας ἄκουε: Χριστιανός
-                            εἰμι. εἰ δὲ θέλεις τὸν τοῦ Χριστιανισμοῦ μαθεῖν λόγον, δὸς ἡμέραν <pb
-                                n="326"/> καὶ ἄκουσον. </p>
+                            εἰμι. εἰ δὲ θέλεις τὸν τοῦ Χριστιανισμοῦ μαθεῖν λόγον, δὸς ἡμέραν <pb n="326"/> καὶ ἄκουσον. </p>
                     </div>
                     <div type="textpart" subtype="section" n="2">
                         <p> ἔφη ὁ ἀνθύπατος: Πεῖσον τὸν δῆμον. ὁ δὲ Πολύκαρπος εἶπεν: Σὲ μὲν κἂν <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg006:13.1
-                                    urn:cts:greekLit:tlg0031.tlg021:2.13">Rom. 13, 1 1 Pet. 2,
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg006:13.1                                     urn:cts:greekLit:tlg0031.tlg021:2.13">Rom. 13, 1 1 Pet. 2,
                                     13</bibl>
                             </note> λόγου ἠξίωσα: δεδιδάγμεθα γὰρ ἀρχαῖς καὶ ἐξουσίαις ὑπὸ τοῦ θεοῦ
                             τεταγμέναις τιμὴν κατὰ τὸ προσῆκον, τὴν μὴ βλάπτουσαν ἡμᾶς, ἀπονέμειν:
@@ -360,8 +351,7 @@
                         <p> ὅτε δὲ ἡ πυρκαϊὰ ἡτοιμάσθη, ἀποθέμενος ἑαυτῷ πάντα τὰ ἱμάτια καὶ λύσας
                             τὴν ζώνην ἐπειρᾶτο καὶ ὑπολύειν ἑαυτόν, μὴ πρότερον τοῦτο ποιῶν διὰ τὸ
                             ἀεὶ ἕκαστον τῶν πιστῶν σπουδάζειν, ὅστις τάχιον τοῦ χρωτὸς αὐτοῦ ἅψηται:
-                            παντὶ γὰρ καλῷ ἀγαθῆς ἕνεκεν πολιτείας καὶ πρὸ τῆς μαρτυρίας <pb n="330"
-                            /> ἐκεκόσμητο. </p>
+                            παντὶ γὰρ καλῷ ἀγαθῆς ἕνεκεν πολιτείας καὶ πρὸ τῆς μαρτυρίας <pb n="330"/> ἐκεκόσμητο. </p>
                     </div>
                     <div type="textpart" subtype="section" n="3">
                         <p> εὐθέως οὖν αὐτῷ περιετίθετο τὰ πρὸς τὴν πυρὰν ἡρμοσμένα ὄργανα.
@@ -417,8 +407,7 @@
                     <div type="textpart" subtype="section" n="1">
                         <p> Πέρας γοῦν ἰδόντες οἱ ἄνομοι μὴ δυνάμενον αὐτοῦ τὸ σῶμα ὑπὸ τοῦ πυρὸς
                             δαπανηθῆναι, ἐκέλευσαν προσελθόντα αὐτῷ κομφέκτορα παραβῦσαι ξιφίδιον.
-                            καὶ τοῦτο ποιήσαντος, ἐξῆλθεν <pb n="334"/> περιστερὰ καὶ <note n="1"
-                                >peristera\ kai\ om. E, Wordssorth emends to peri\ stu/raka (round
+                            καὶ τοῦτο ποιήσαντος, ἐξῆλθεν <pb n="334"/> περιστερὰ καὶ <note n="1">peristera\ kai\ om. E, Wordssorth emends to peri\ stu/raka (round
                                 the ssord-haft).</note> πλῆθος αἵματος, ὥστε κατασβέσαι τὸ πῦρ καὶ
                             θαυμάσαι πάντα τὸν ὄχλον, εἰ τοσαύτη τις διαφορὰ μεταξὺ τῶν τε ἀπίστων
                             καὶ τῶν ἐκλεκτῶν: </p>
@@ -441,8 +430,7 @@
                             κοινωνῆσαι τῷ ἁγίῳ αὐτοῦ σαρκίῳ. </p>
                     </div>
                     <div type="textpart" subtype="section" n="2">
-                        <p> ὑπέβαλεν γοῦν Νικήτην τὸν τοῦ Ἡρώδου πατέρα, ἀδελφὸν δὲ Ἄλκης, <note
-                                type="footnote" n="3">*da/lkhs E.</note> ἐντυχεῖν τῷ ἄρχοντι, ὥστε
+                        <p> ὑπέβαλεν γοῦν Νικήτην τὸν τοῦ Ἡρώδου πατέρα, ἀδελφὸν δὲ Ἄλκης, <note type="footnote" n="3">*da/lkhs E.</note> ἐντυχεῖν τῷ ἄρχοντι, ὥστε
                             μὴ δοῦναι αὐτοῦ τὸ σῶμα: μή, φησίν, ἀφέντες τὸν ἐσταυρωμένον τοῦτον
                             ἄρξωνται σέβεσθαι. καὶ ταῦτα εἶπον ὑποβαλλόντων καὶ ἐνισχυόντων τῶν
                             Ἰουδαίων, οἳ καὶ ἐτήρησαν, μελλόντων ἡμῶν ἐκ τοῦ πυρὸς αὐτὸν λαμβάνειν:
@@ -479,8 +467,7 @@
                         <p> Τοιαῦτα τὰ κατὰ τὸν μακάριον Πολύκαρπον, ὃς σὺν τοῖς ἀπὸ Φιλαδελφίας
                             δωδέκατος ἐν Σμύρνῃ μαρτυρήσας, μόνος ὑπὸ πάντων μᾶλλον μνημονεύεται,
                             ὥστε καὶ ὑπὸ τῶν ἐθνῶν ἐν παντὶ τόπῳ λαλεῖσθαι: οὐ μόνον διδάσκαλος
-                            γενόμενος ἐπίσημος, ἀλλὰ καὶ μάρτυς ἔξοχος, οὗ τὸ μαρτύριον <pb n="338"
-                            /> πάντες ἐπιθυμοῦσιν μιμεῖσθαι κατὰ τὸ εὐαγγέλιον Χριστοῦ γενόμενον.
+                            γενόμενος ἐπίσημος, ἀλλὰ καὶ μάρτυς ἔξοχος, οὗ τὸ μαρτύριον <pb n="338"/> πάντες ἐπιθυμοῦσιν μιμεῖσθαι κατὰ τὸ εὐαγγέλιον Χριστοῦ γενόμενον.
                         </p>
                     </div>
                     <div type="textpart" subtype="section" n="2">
@@ -499,15 +486,13 @@
                                 <note type="footnote" n="2">*marki/wnos m, *ma/rkou bps (v ends sith
                                 chap. xix.), Marcianum L. Lightfoot prefers *markianou=</note>
                             μαθόντες οὖν ταῦτα καὶ τοῖς ἐπέκεινα ἀδελφοῖς τὴν ἐπιστολὴν διαπέμψασθε,
-                            ἵνα καὶ ἐκεῖνοι δοξάζωσιν τὸν κύριον τὸν ἐκλογὰς ποιοῦντα ἀπὸ <note
-                                type="footnote" n="3">poiou=nta a)po/ bps, poiou/menon m.</note> τῶν
+                            ἵνα καὶ ἐκεῖνοι δοξάζωσιν τὸν κύριον τὸν ἐκλογὰς ποιοῦντα ἀπὸ <note type="footnote" n="3">poiou=nta a)po/ bps, poiou/menon m.</note> τῶν
                             ἰδίων δούλων. </p>
                     </div>
                     <div type="textpart" subtype="section" n="2">
                         <p> Τῷ δὲ δυναμένῳ πάντας ἡμᾶς εἰσαγαγεῖν ἐν τῇ αὐτοῦ χάριτι καὶ δωρεᾷ εἰς
                             τὴν ἐπουράνιον <note type="footnote" n="4">e)poura/nion m, ai)w/nion
-                                bps.</note> αὐτοῦ βασιλείαν διὰ τοῦ μονογενοῦς <note type="footnote"
-                                n="5">tou= monogenou=s au)tou= paido/s m, paido\s au)tou= tou=
+                                bps.</note> αὐτοῦ βασιλείαν διὰ τοῦ μονογενοῦς <note type="footnote" n="5">tou= monogenou=s au)tou= paido/s m, paido\s au)tou= tou=
                                 monogenou=s b, tou= paido\s au)tou= tou= monogenou=s ps.</note>
                             παιδὸς αὐτοῦ Ἰησοῦ Χριστοῦ, δόξα, <note type="footnote" n="6">do/ca m,
                                 w(=| h( do/ca bps.</note> τιμή, κράτος, μεγαλωσύνη εἰς τοὺς αἰῶνας.
@@ -520,8 +505,7 @@
                 </div>
                 <div type="textpart" subtype="chapter" n="21">
                     <div type="textpart" subtype="section" n="1">
-                        <p> Μαρτυρεῖ δὲ ὁ μακάριος Πολύκαρπος μηνὸς Ξανθικοῦ <note type="footnote"
-                                n="2">The more correct spelling, according to inscriptions, is
+                        <p> Μαρτυρεῖ δὲ ὁ μακάριος Πολύκαρπος μηνὸς Ξανθικοῦ <note type="footnote" n="2">The more correct spelling, according to inscriptions, is
                                 *candikou=.</note> δευτέρᾳ ἱσταμένου, πρὸ ἑπτὰ καλανδῶν Μαρτίων,
                             σαββάτῳ μεγάλῳ, ὥρᾳ ὀγδόῃ. συνελήφθη δὲ ὑπὸ Ἡρώδου ἐπὶ ἀρχιερέως
                             Φιλίππου Τραλλιανοῦ, ἀνθυπατεύοντος Στατίου Κοδράτου, βασιλεύοντος δὲ
