@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt>
 				<title>De spiritu</title>
@@ -74,9 +75,8 @@
 		<encodingDesc>
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -284,8 +284,7 @@
 						στέγειν καὶ περιέχειν, ἔτι δ’ εἰ ὥσπερ <lb/>ἀρχαὶ ἔνια, καθάπερ ὁ πόλος. Λέγω δὲ πρὸς
 						μὲν κίνησιν, <lb/>οἷον ποδὸς ἢ χειρὸς ἢ σκέλους ἢ ἀγκῶνος, ὁμοίως τήν τε <lb/>καμπτικὴν
 						καὶ τὴν κατὰ τόπον· οὐδὲ γὰρ τὴν τοπικὴν οἷόν <lb/>τε ἄνευ κάμψεως. Σχεδὸν δὲ καὶ τὰ
-						ἐρείσματα ἐν τούτοις. <lb/>Τὴν δὲ τοῦ στέγειν καὶ περιέχειν, οἷον τὰ ἐν τῇ κεφαλῇ <pb
-							n="364"/> τὸν ἐγκέφαλον, καὶ ὅσοι δὴ τὸν μυελὸν ἄρχειν. Αἱ δὲ <lb/>πλευραὶ τοῦ
+						ἐρείσματα ἐν τούτοις. <lb/>Τὴν δὲ τοῦ στέγειν καὶ περιέχειν, οἷον τὰ ἐν τῇ κεφαλῇ <pb n="364"/> τὸν ἐγκέφαλον, καὶ ὅσοι δὴ τὸν μυελὸν ἄρχειν. Αἱ δὲ <lb/>πλευραὶ τοῦ
 						συγκλείειν. Ἀρχὴ δὲ καὶ μένον ἡ ῥάχις, ἀφ’ <lb/>ἧς καὶ αἱ πλευραὶ πρὸς τὴν σύγκλεισιν.
 						Ἀνάγκη γὰρ εἶναί <lb/>τι τοιοῦτον· ἅπαν γὰρ τὸ κινούμενον ἐξ ἠρεμοῦντος. Ἄμα <lb/>δὲ καὶ
 						δεῖ γε εἶναι τὸ οὖ ἕνεκα. Ἐν ᾧ δὴ καὶ τὴν ἀρχὴν <lb/>ἔνιοι, τόν τε ῥαχίτην καὶ τὸν

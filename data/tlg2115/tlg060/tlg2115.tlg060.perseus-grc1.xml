@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    <fileDesc>
       <titleStmt>
         <title>Refutatio Omnium Haeresium</title>
         <author>Hippolytus</author>
@@ -22,7 +25,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -36,7 +39,7 @@
   <change who="Jack Duff" when="2016-06-15">Deleted 1 extra XPath, changed line number milestones to lines, added ref link, removed lat tag, made alt pb into milestone.</change>
 </revisionDesc></teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg2115.tlg060.perseus-grc1">
+  <text><body> <div type="edition" n="urn:cts:greekLit:tlg2115.tlg060.perseus-grc1" xml:lang="grc">
 <pb n="v.1.p.2"/>
 <head>ΤΟΥ ΚΑΤΑ ΠΑΣΩΝ ΑΙΡΕΣΕΩΝ ΕΛΕΓΧΟΥ </head>
 <div type="textpart" subtype="book" n="1">

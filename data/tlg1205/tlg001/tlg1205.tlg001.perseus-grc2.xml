@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
 	      <title>Supplication pro Christianis</title>
@@ -27,7 +28,7 @@
         </biblStruct>
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
 
@@ -40,9 +41,10 @@
     <change who="Jack Duff" when="2016-06-13">Revised reference structure to include both levels, deleted milestones, moved paragraphs inside sections.</change>
     <change who="Jack Duff" when="2016-06-16">Removed second level of reference to match Otto edition's structure.</change>
   </revisionDesc>
-  </teiHeader>
+</teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg1205.tlg001.perseus-grc2">
+
+  <text><body> <div type="edition" n="urn:cts:greekLit:tlg1205.tlg001.perseus-grc2" xml:lang="grc">
 <pb n="9"/>
 <head>ΑΘΗΝΑΓΟΡΟΥ
 ΑΘΗΝΑΙΟΥ ΦΙΛΟΣΟΦΟΥ ΧΡΙΣΤΓΑΝΟΥ

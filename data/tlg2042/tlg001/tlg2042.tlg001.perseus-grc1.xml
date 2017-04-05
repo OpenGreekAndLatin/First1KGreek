@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader><fileDesc>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+    <fileDesc>
       <titleStmt>
 	      <title>Contra Celsum</title>
         <author>Origenes</author>
@@ -23,7 +26,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -34,7 +37,7 @@
       </langUsage>
     </profileDesc></teiHeader>
 
- <text><body> <div type="edition" n="urn:cts:greekLit:tlg2042.tlg001.perseus-grc1">
+ <text><body> <div type="edition" n="urn:cts:greekLit:tlg2042.tlg001.perseus-grc1" xml:lang="grc">
 <pb n="v.1.p.51"/>
 <head>ΠΡΟΣ ΤΟΝ ΕΠΙΓΕΓΡΛΜΜΕΝΟΝ
 ΚΕΛΣΟΥ ΑΛΗΘΗ ΛΟΓΟΝ ΩΡΙΓΕΝΟΥΣ
@@ -15466,7 +15469,7 @@
 σφόδρα ὀλίγοις τῶν μαθητῶν καὶ τοῖς ἀκολουθῆσαι εἰς τὰ
 ὑψηλὰ δεδυνημένοις τοῦ ἀνωτάτου καὶ ὑψηλοτάτου νοῦ, περιέχοντος
  λόγια τῆς „ἐν μυστηρίῳ“ ἀποκεκρυμμένης σοφίας, „ἣν προώρισεν ὁ
-θεὸς πρὸ τῶν αἰώνων εἰς δόξαν“ τῶν δικαίων αὐτοῦ.></p>
+θεὸς πρὸ τῶν αἰώνων εἰς δόξαν“ τῶν δικαίων αὐτοῦ.&gt;</p>
 <p>ἀλλὰ πόθεν Κέλσῳ καὶ τοῖς ἐχθροῖς τοῦ θείου λόγου καὶ μὴ
 φιλαλήθως τὰ χριστιανισμοῦ ἐξετάσασιν εἰδέναι τὸ βούλημα τῶν
 διαφόρων τοῦ Ἰησοῦ μορφῶν; ἐγὼ δὲ λέγω καὶ ἡλικιῶν, καὶ εἴ τι
@@ -17552,7 +17555,7 @@
 
 ἀναγινώσκοντι, ὅτι πολλὰ βαθύτερον τοῦ αὐτόθεν ἐμφαινομένου <bibl n="Ph. 79 , 5"/>
 ἔχειν δύναται νοῦν, τοῖς ἀνατιθεῖσιν αὑτοὺς τῇ ἐξετάσει τοῦ λόγου
-φανερούμενον. καὶ φανερούμενον> κατὰ τὴν <pb ed="alt" n="738"/> ἀναλογίαν τῆς εἰς τὸν 
+φανερούμενον. καὶ φανερούμενον&gt; κατὰ τὴν <pb ed="alt" n="738"/> ἀναλογίαν τῆς εἰς τὸν 
 λόγον σχολῆς καὶ εἰς τὴν ἄσκησιν αὐτοῦ προθυμίας.</p>
 </div>
 
@@ -18882,7 +18885,7 @@
 <pb n="v.2.p.251"/>
 
 δὲ πρὸς τὸν εἰπόντα· „ἀπολοίμην, ἐὰν μή σε τιμωρήσωμαι,“
-„ἐγὼ δὲ,“ ἔφη, „ἐὰν μή σε> φίλον κτήσωμαι.“</p>
+„ἐγὼ δὲ,“ ἔφη, „ἐὰν μή σε&gt; φίλον κτήσωμαι.“</p>
 <p>καὶ οὐδέπω λέγω τοὺς κατὰ τὴν διδασκαλίαν Ἰησοῦ πεποιωμένους
 καὶ ἀκούσαντας τοῦ „ἀγαπᾶτε τοὺς ἐχθροὺς ὑμῶν καὶ προσεύχεσθε
  ὑπὲρ τῶν ἐπηρεαζόντων ὑμᾶς, ὅπως γένησθε υἱοὶ τοῦ πατρὸς

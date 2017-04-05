@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
 	      <title>Apologia Secunda</title>
@@ -27,7 +28,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
       
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -38,9 +39,10 @@
       </langUsage>
     </profileDesc>
   <revisionDesc><change who="Kate Miller" when="2016-06-10"> Fixed XPath, removed Latin language, added archive.org file, changed file name </change></revisionDesc>
-  </teiHeader>
+</teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg0645.tlg002.opp-grc1">
+
+  <text><body> <div type="edition" n="urn:cts:greekLit:tlg0645.tlg002.opp-grc1" xml:lang="grc">
 <pb xml:id="v.2.p.114"/>
 
 <head>ΑΠΟΛΟΓΙΑ ΙΙ.</head>

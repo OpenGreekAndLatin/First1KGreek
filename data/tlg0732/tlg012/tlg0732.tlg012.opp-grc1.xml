@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
         <title>Quaestiones</title>
@@ -49,7 +50,7 @@
           <p>Data Entry</p>
         </correction>
       </editorialDecl>      
-      <refsDecl n="CTS">
+        <refsDecl n="CTS">
         <cRefPattern n="essay" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="quaestio" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
@@ -59,11 +60,12 @@
         <language ident="grc">Greek</language>
       </langUsage>
     </profileDesc>
-  </teiHeader>
+</teiHeader>
+
 
   <text>
     <body>
-      <div type="edition" n="urn:cts:greekLit:tlg0732.tlg012.opp-grc1">
+      <div type="edition" n="urn:cts:greekLit:tlg0732.tlg012.opp-grc1" xml:lang="grc">
         <div type="textpart" subtype="quaestio" n="1">
           <div type="textpart" subtype="essay" n="2">
 

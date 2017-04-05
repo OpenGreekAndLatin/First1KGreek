@@ -62,13 +62,10 @@
 		<encodingDesc>
 			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
 				Architecture.</p>
-			<refsDecl n="CTS">
-				<cRefPattern matchPattern="(.+).(.+).(.+)" n="section"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
-				<cRefPattern matchPattern="(.+).(.+)" n="chapter"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-				<cRefPattern matchPattern="(.+)" n="book"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+).(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+				<cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+				<cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -79,7 +76,7 @@
 	</teiHeader>
 	<text>
 		<body>
-			<div type="edition" n="urn:cts:greekLit:tlg1419.tlg001.1st1K-grc1">
+			<div type="edition" n="urn:cts:greekLit:tlg1419.tlg001.1st1K-grc1" xml:lang="grc">
 				<pb n="6"/>
 				<div type="textpart" subtype="book" n="1">
 					<head>Ὅρασις <num n="1">α</num>
@@ -104,8 +101,7 @@
 									Italian <q>*willeggiatura</q> (summer holiday in the country).</note> καὶ
 								δοξάζοντος τὰς κτίσεις τοῦ θεοῦ, ὡς μεγάλαι καὶ ἐκπρεπεῖς καὶ δυναταί εἰσιν,
 								περιπατῶν ἀφύπνωσα. καὶ πνεῦμά με ἔλαβεν καὶ ἀπήνεγκέ με δἰ ἀνοδίας τινός, δἰ ἧς
-								ἄνθρωπος οὐκ ἐδύνατο ὁδεῦσαι: ἦν δὲ ὁ τόπος κρημνώδης καὶ ἀπερρηγὼς ἀπὸ τῶν <pb
-									n="8"/> ὑδάτων. διαβὰς οὖν τὸν ποταμὸν ἐκεῖνον ἦλθον εἰς τὰ ὁμαλὰ καὶ τιθῶ τὰ
+								ἄνθρωπος οὐκ ἐδύνατο ὁδεῦσαι: ἦν δὲ ὁ τόπος κρημνώδης καὶ ἀπερρηγὼς ἀπὸ τῶν <pb n="8"/> ὑδάτων. διαβὰς οὖν τὸν ποταμὸν ἐκεῖνον ἦλθον εἰς τὰ ὁμαλὰ καὶ τιθῶ τὰ
 								γόνατα καὶ ἠρξάμην προσεύχεσθαι τῷ κυρίῳ καὶ ἐξομολογεῖσθαί μου τὰς ἁμαρτίας.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
@@ -118,21 +114,16 @@
 						</div>
 						<div type="textpart" subtype="section" n="6">
 							<p> λέγω αὐτῇ: Νῦν σύ μου ἔλεγχος εἶ; Οὔ, φησίν, ἀλλὰ ἄκουσον τὰ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:2.4 urn:cts:greekLit:tlg0527.tlg027:123.1"
-										>Ps. 2, 4; 123, 1;</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:2.4 urn:cts:greekLit:tlg0527.tlg027:123.1">Ps. 2, 4; 123, 1;</bibl>
 								</note> ῥήματα, ἅ σοι μέλλω λέγειν. ὁ θεὸς ὁ ἐν τοῖς οὐρανοῖς κατοικῶν καὶ κτίσας ἐκ
 								τοῦ μὴ ὄντος <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg001:1.28 urn:cts:greekLit:tlg0527.tlg001:8.17 urn:cts:greekLit:tlg0527.tlg001:9.1 urn:cts:greekLit:tlg0527.tlg001:28.3"
-										>Gen. 1, 28; 8, 17; 9, 1; 28, 3 etc.</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg001:1.28 urn:cts:greekLit:tlg0527.tlg001:8.17 urn:cts:greekLit:tlg0527.tlg001:9.1 urn:cts:greekLit:tlg0527.tlg001:28.3">Gen. 1, 28; 8, 17; 9, 1; 28, 3 etc.</bibl>
 								</note> τὰ ὄντα καὶ πληθύνας καὶ αὐξήσας ἕνεκεν τῆς ἁγίας ἐκκλησίας αὐτοῦ ὀργίζεταί
 								σοι, ὅτι ἥμαρτες εἰς ἐμέ.</p>
 						</div>
 						<div type="textpart" subtype="section" n="7">
 							<p> ἀποκριθεὶς αὐτῇ λέγω: Εἰς σὲ ἥμαρτον; ποίῳ τόπῳ <note n="1">to/pw| N%2 L1, tro/pw|
-									Nc AL2(E).</note> ἢ πότε σοι αἰσχρὸν ῥῆμα ἐλάλησα; οὐ πάντοτέ σε ὡς θεὰν <note
-									n="2">qugate/ra A, dominam E.</note> ἡγησάμην; οὐ πάντοτέ σε ἐνετράπην ὡς ἀδελφήν;
+									Nc AL2(E).</note> ἢ πότε σοι αἰσχρὸν ῥῆμα ἐλάλησα; οὐ πάντοτέ σε ὡς θεὰν <note n="2">qugate/ra A, dominam E.</note> ἡγησάμην; οὐ πάντοτέ σε ἐνετράπην ὡς ἀδελφήν;
 								τί μου καταψεύδῃ, ὦ γύναι, τὰ πονηρὰ ταῦτα καὶ ἀκάθαρτα;</p>
 						</div>
 						<div type="textpart" subtype="section" n="8">
@@ -148,9 +139,7 @@
 						<div type="textpart" subtype="section" n="9">
 							<p> μετανοήσουσιν αἱ ψυχαὶ αὐτῶν, οἵτινες οὐκ ἔχουσιν ἐλπίδα, ἀλλὰ ἑαυτοὺς ἀπεγνώκασιν
 								καὶ τὴν ζωὴν αὐτῶν. ἀλλὰ σὺ προσεύχου <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg005:30.3 urn:cts:greekLit:tlg0527.tlg049:3.22"
-										>Deut. 30, 3 cf. Jer. 3, 22</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg005:30.3 urn:cts:greekLit:tlg0527.tlg049:3.22">Deut. 30, 3 cf. Jer. 3, 22</bibl>
 								</note> πρὸς τὸν θεόν, καὶ ἰάσεται τὰ ἁμαρτήματά σου καὶ ὅλου τοῦ οἴκου σου καὶ
 								πάντων τῶν ἁγίων. </p>
 						</div>
@@ -255,9 +244,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="2">
 							<p> ἐλθὼν οὖν εἰς τὸν τόπον τιθῶ τὰ γόνατα <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:85.9 urn:cts:greekLit:tlg0527.tlg027:85.12 urn:cts:greekLit:tlg0527.tlg048:24.15 urn:cts:greekLit:tlg0527.tlg048:66.5"
-										>Ps. 85, 9, 12; Is. 24, 15; 66, 5;</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:85.9 urn:cts:greekLit:tlg0527.tlg027:85.12 urn:cts:greekLit:tlg0527.tlg048:24.15 urn:cts:greekLit:tlg0527.tlg048:66.5">Ps. 85, 9, 12; Is. 24, 15; 66, 5;</bibl>
 								</note> καὶ ἠρξάμην προσεύχεσθαι τῷ κυρίῳ καὶ δοξάζειν αὐτοῦ τὸ ὄνομα, ὅτι με ἄξιον
 								ἡγήσατο καὶ ἐγνώρισέν μοι τὰς ἁμαρτίας μου τὰς πρότερον.</p>
 						</div>
@@ -310,9 +297,7 @@
 						<div type="textpart" subtype="section" n="6">
 							<p> ἐρεῖς οὖν τοῖς προηγουμένοις τῆς ἐκκλησίας, ἵνα κατορθώσωνται τὰς ὁδοὺς αὐτῶν ἐν
 								δικαιοσύνῃ, ἵνα ἀπολάβωσιν ἐκ πλήρους τὰς ἐπαγγελίας μετὰ πολλῆς δόξης. <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:15.2 urn:cts:greekLit:tlg0031.tlg005:10.35 urn:cts:greekLit:tlg0031.tlg019:11.33"
-										>Ps. 15, 2; Acts 10, 35; Heb. 11, 33</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:15.2 urn:cts:greekLit:tlg0031.tlg005:10.35 urn:cts:greekLit:tlg0031.tlg019:11.33">Ps. 15, 2; Acts 10, 35; Heb. 11, 33</bibl>
 								</note>
 							</p>
 						</div>
@@ -322,10 +307,8 @@
 								ἐρχομένην τὴν μεγάλην καὶ ὅσοι οὐκ ἀρνήσονται τὴν ζωὴν αὐτῶν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="8">
-							<p> ὤμοσεν γὰρ κύριος κατὰ τοῦ υἱοῦ αὐτοῦ, τοὺς ἀρνησαμένους τὸν Χριστὸν <note n="3"
-									>*xristo/n N%2, ku/rion Nc AL2, filium L1.</note> αὐτῶν ἀπεγνωρίσθαι ἀπὸ τῆς ζωῆς
-								αὐτῶν, τοὺς νῦν μέλλοντας ἀρνεῖσθαι ταῖς ἐρχομέναις ἡμέραις: τοῖς δὲ πρότερον <pb
-									n="22"/> ἀρνησαμένοις, διὰ τὴν πολυσπλαγχνίαν ἵλεως ἐγένετο αὐτοῖς. </p>
+							<p> ὤμοσεν γὰρ κύριος κατὰ τοῦ υἱοῦ αὐτοῦ, τοὺς ἀρνησαμένους τὸν Χριστὸν <note n="3">*xristo/n N%2, ku/rion Nc AL2, filium L1.</note> αὐτῶν ἀπεγνωρίσθαι ἀπὸ τῆς ζωῆς
+								αὐτῶν, τοὺς νῦν μέλλοντας ἀρνεῖσθαι ταῖς ἐρχομέναις ἡμέραις: τοῖς δὲ πρότερον <pb n="22"/> ἀρνησαμένοις, διὰ τὴν πολυσπλαγχνίαν ἵλεως ἐγένετο αὐτοῖς. </p>
 						</div>
 					</div>
 					<div type="textpart" subtype="chapter" n="3">
@@ -343,9 +326,7 @@
 								ταῦτα σέσωκέν σε, ἐὰν ἐμμείνῃς, καὶ πάντας σώζει τοὺς τὰ τοιαῦτα ἐργαζομένους καὶ
 								πορευομένους ἐν ἀκακίᾳ καὶ ἁπλότητι. οὗτοι κατισχύσουσιν <note n="1">katisxu/ousin
 									N.</note> πάσης πονηρίας <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:106.3 urn:cts:greekLit:tlg0527.tlg027:15.2"
-										>Ps. 106, 3; 15, 2</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:106.3 urn:cts:greekLit:tlg0527.tlg027:15.2">Ps. 106, 3; 15, 2</bibl>
 								</note> καὶ παραμενοῦσιν εἰς ζωὴν αἰώνιον.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
@@ -393,8 +374,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="2">
 							<p> νηστεύσας πολλάκις καὶ δεηθεὶς τοῦ κυρίου, ἵνα μοι φανερώσῃ <pb n="26"/> τὴν
-								ἀποκάλυψιν, ἥν μοι ἐπηγγείλατο δεῖξαι διὰ τῆς πρεσβυτέρας ἐκείνης, <note n="1"
-									>ekeinhs om. N.</note> αὐτῇ τῇ νυκτί μοι ὦπται ἡ πρεσβυτέρα καὶ εἶπέν μοι: Ἐπεὶ
+								ἀποκάλυψιν, ἥν μοι ἐπηγγείλατο δεῖξαι διὰ τῆς πρεσβυτέρας ἐκείνης, <note n="1">ekeinhs om. N.</note> αὐτῇ τῇ νυκτί μοι ὦπται ἡ πρεσβυτέρα καὶ εἶπέν μοι: Ἐπεὶ
 								οὕτως ἐνδεὴς εἶ καὶ σπουδαῖος εἰς τὸ γνῶναι πάντα, ἐλθὲ εἰς τὸν ἀγρόν, ὅπου
 								χονδρίζεις, καὶ περὶ ὥραν πέμπτην ἐμφανισθήσομαί σοι καὶ δείξω σοι, ἃ δεῖ σε
 								ἰδεῖν.</p>
@@ -418,8 +398,7 @@
 									mou—a)marti/as mou om. per homoiot. NL2.</note> ὡς καὶ πρότερον.</p>
 						</div>
 						<div type="textpart" subtype="section" n="6">
-							<p> ἡ δὲ ἦλθεν μετὰ νεανίσκων ἕξ, οὓς καὶ πρότερον ἑωράκειν, καὶ ἐστάθη <note n="4"
-									>e)sta/qh A, stetit post me L1E, e)pesta/qh is accepted by most editors as an
+							<p> ἡ δὲ ἦλθεν μετὰ νεανίσκων ἕξ, οὓς καὶ πρότερον ἑωράκειν, καὶ ἐστάθη <note n="4">e)sta/qh A, stetit post me L1E, e)pesta/qh is accepted by most editors as an
 									emendation.</note> μοι καὶ κατηκροᾶτο προσευχομένου καὶ ἐξομολογουμένου τῷ κυρίῳ
 								τὰς ἁμαρτίας μου. καὶ ἁψαμένη μου λέγει: <pb n="28"/> Ἑρμᾶ, παῦσαι περὶ τῶν ἁμαρτιῶν
 								σου πάντα ἐρωτῶν: ἐρώτα καὶ περὶ δικαιοσύνης, ἵνα λάβῃς μέρος τι ἐξ αὐτῆς εἰς τὸν
@@ -475,8 +454,7 @@
 						<div type="textpart" subtype="section" n="5">
 							<p> ἐν τετραγώνῳ δὲ ᾠκοδομεῖτο ὁ πύργος ὑπὸ τῶν ἓξ <note n="2">e(/c Nc ALE, e(ch/konta
 									N%2.</note> νεανίσκων τῶν ἐληλυθότων μετ̓ αὐτῆς: ἄλαι δὲ μυριάδες ἀνδρῶν παρέφερον
-								λίθους, οἱ μὲν ἐκ τοῦ βυθοῦ, οἱ δὲ ἐκ τῆς γῆς, καὶ ἐπεδίδουν τοῖς ἓξ <note n="2"
-									>e(/c Nc ALE, e(ch/konta N%2.</note> νεανίσκοις: ἐκεῖνοι δὲ ἐλάμβανον καὶ
+								λίθους, οἱ μὲν ἐκ τοῦ βυθοῦ, οἱ δὲ ἐκ τῆς γῆς, καὶ ἐπεδίδουν τοῖς ἓξ <note n="2">e(/c Nc ALE, e(ch/konta N%2.</note> νεανίσκοις: ἐκεῖνοι δὲ ἐλάμβανον καὶ
 								ᾠκοδόμουν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="6">
@@ -542,8 +520,7 @@
 					</div>
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="section" n="1">
-							<p> Ἀποκριθεὶς λέγω αὐτῇ: Κυρία, μεγάλως καὶ θαυμαστῶς ἔχει τὸ πρᾶγμα τοῦτο: οἱ δὲ <pb
-									n="36"/> νεανίσκοι οἱ ἓξ <note n="1">e(/c Nc AL, e(ch/konta N, om. E. (but in the
+							<p> Ἀποκριθεὶς λέγω αὐτῇ: Κυρία, μεγάλως καὶ θαυμαστῶς ἔχει τὸ πρᾶγμα τοῦτο: οἱ δὲ <pb n="36"/> νεανίσκοι οἱ ἓξ <note n="1">e(/c Nc AL, e(ch/konta N, om. E. (but in the
 									next verse N also reads e(/c).</note> οἱ οἰκοδομοῦντες, τίνες εἰσίν. κυρία; Οὗτοί
 								εἰσιν οἱ ἅγιοι ἄγγελοι τοῦ θεοῦ οἱ πρῶτοι κτισθέντες, οἷς παρέδωκεν ὁ κύριος πᾶσαν
 								τὴν κτίσιν αὐτοῦ αὔξειν καὶ οἰκοδομεῖν καὶ δεσπόζειν τῆς κτίσεως πάσης: διὰ τούτων
@@ -560,9 +537,7 @@
 								αὐτῶν, ποταπή ἐστιν. ἀποκριθεῖσά μοι λέγει: Οὐχ ὅτι σὺ ἐκ πάντων ἀξιώτερος εἶ, ἵνα
 								σοι ἀποκαλυφθῇ. ἄλλοι γάρ σου πρότεροί εἰσιν καὶ βελτίονές σου, οἷς ἔδει
 								ἀποκαλυφθῆναι τὰ ὁράματα ταῦτα: ἀλλ̓ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:86.9 urn:cts:greekLit:tlg0527.tlg027:86.12"
-										>Ps. 86, 9. 12</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:86.9 urn:cts:greekLit:tlg0527.tlg027:86.12">Ps. 86, 9. 12</bibl>
 								</note> ἵνα δοξασθῇ τὸ ὄνομα τοῦ θεοῦ, σοὶ ἀπεκαλύφθη καὶ ἀποκαλυφθήσεται διὰ τοὺς
 								διψύχους, τοὺς διαλογιζομένους ἐν ταῖς καρδίαις αὐτῶν, εἰ ἄρα ἔστιν ταῦτα ἢ οὐκ
 								ἔστιν. <note n="2">ei) a)/ra... ou)k e)/stin om. N%2.</note> λέγε αὐτοῖς, ὅτι ταῦτα
@@ -618,8 +593,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="2">
 							<p> τοὺς δὲ ἑτέρους, οὓς ἑώρακας πολλοὺς κειμένους, μὴ ὑπάγοντας εἰς τὴν οἰκοδομήν,
-								οὗτοι οἱ μὲν ἐψωριακότες εἰσίν, οἱ ἐγνωκότες τὴν ἀλήθειαν, μὴ ἐπιμένοντας <note
-									n="2">e)pime/nontas N, e)pimei/nantas A.</note> δὲ ἐν αὐτῇ. <note n="3">au)th=|
+								οὗτοι οἱ μὲν ἐψωριακότες εἰσίν, οἱ ἐγνωκότες τὴν ἀλήθειαν, μὴ ἐπιμένοντας <note n="2">e)pime/nontas N, e)pimei/nantas A.</note> δὲ ἐν αὐτῇ. <note n="3">au)th=|
 									NL2E, au)th=|, mhde\ kollw/menoi toi=s a(gi/ois. dia\ tou=to a)/xrhstoi/ ei)sin
 									AL1.</note>
 							</p>
@@ -627,9 +601,7 @@
 						<div type="textpart" subtype="section" n="3">
 							<p> Οἱ δὲ τὰς σχισμὰς ἔχοντες, τίνες εἰσίν; Οὗτοί εἰσιν οἱ κατ̓ ἀλλήλων ἐν ταῖς
 								καρδίαις ἔχοντες καὶ μὴ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg013:5.13 urn:cts:greekLit:tlg0031.tlg002:9.50"
-										>I Thess. 5, 13, cf. Mk. 9, 50</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg013:5.13 urn:cts:greekLit:tlg0031.tlg002:9.50">I Thess. 5, 13, cf. Mk. 9, 50</bibl>
 								</note> εἰρηνεύοντες ἐν ἑαυτοῖς, ἀλλὰ πρόσωπον εἰρήνης ἔχοντες, ὅταν δὲ ἀπ̓ ἀλλήλων
 								ἀποχωρήσωσιν, αἱ πονηρίαι αὐτῶν ἐν ταῖς καρδίαις ἐμμένουσιν: αὗται οὖν αἱ σχισμαί
 								εἰσιν, ἃς ἔχουσιν οἱ λίθοι.</p>
@@ -674,14 +646,10 @@
 							<p> οἱ δὲ πίπτοντες εἰς τὸ πῦρ καὶ καιόμενοι, οὗτοί εἰσιν οἱ <note>
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg019:3.12">Heb. 3, 12</bibl>
 								</note> εἰς τέλος ἀποστάντες τοῦ θεοῦ τοῦ ζῶντος, καὶ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg002:4.18 urn:cts:greekLit:tlg0031.tlg001:13.20-13.22"
-										>Mk. 4, 18; Mt. 13, 20. 22</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg002:4.18 urn:cts:greekLit:tlg0031.tlg001:13.20-13.22">Mk. 4, 18; Mt. 13, 20. 22</bibl>
 								</note> οὐκέτι αὐτοῖς ἀνέβη ἐπὶ τὴν καρδίαν τοῦ μετανοῆσαι διὰ τὰς ἐπιθυμίας τῆς
 								ἀσελγείας αὐτῶν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg005:19.5 urn:cts:greekLit:tlg0031.tlg005:10.48 urn:cts:greekLit:tlg0031.tlg005:2.38"
-										>Acts 19, 5 (10, 48; 2, 38)</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg005:19.5 urn:cts:greekLit:tlg0031.tlg005:10.48 urn:cts:greekLit:tlg0031.tlg005:2.38">Acts 19, 5 (10, 48; 2, 38)</bibl>
 								</note> καὶ τῶν πονηριῶν ὧν εἰργάσαντο.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
@@ -730,8 +698,7 @@
 							<p> ἡ δὲ ἑτέρα, ἡ περιεζωσμένη καὶ ἀνδριζομένη, Ἑγκράτεια καλεῖται: αὕτη θυγάτηρ ἐστὶν
 								τῆς Πίστεως. ὃς ἂν οὖν ἀκολουθήσῃ αὐτῇ, μακάριος γίνεται ἐν τῇ ζωῇ αὐτοῦ, ὅτι πάντων
 								τῶν πονηρῶν ἔργων ἀφέξεται, πιστεύων ὅτι, ἐὰν ἀφέξηται <note n="1">pisteu/wn o(/ti
-									e)a\n a)fe/chtai ALE, kai\ N.</note> πάσης ἐπιθυμίας πονηρᾶς, κληρονομήσει <note
-									n="2">kai\ klhronomh/sei N.</note> ζωὴν αἰώνιον.</p>
+									e)a\n a)fe/chtai ALE, kai\ N.</note> πάσης ἐπιθυμίας πονηρᾶς, κληρονομήσει <note n="2">kai\ klhronomh/sei N.</note> ζωὴν αἰώνιον.</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
 							<p> Αἱ δὲ ἕτεραι, κυρία, τίνες εἰσίν; Θυγατέρες ἀλλήλων εἰσίν καλοῦνται δὲ ἡ μὲν
@@ -764,8 +731,7 @@
 							<p> ἀλλ̓ οὐ σοὶ μόνῳ ταῦτα ἀπεκαλύφθη, ἀλλ̓ ἵνα πᾶσιν δηλώσῃς αὐτά,</p>
 						</div>
 						<div type="textpart" subtype="section" n="11">
-							<p> μετὰ τρεῖς ἡμέρας, νοῆσαί σε γὰρ δεῖ πρῶτον. ἐντέλλομαι δέ σοι πρῶτον, <note n="1"
-									>e)nte/llomai de/ soi prw=ton om N L1.</note> Ἑρμᾶ, τὰ ῥήματα ταῦτα, ἅ σοι μέλλω
+							<p> μετὰ τρεῖς ἡμέρας, νοῆσαί σε γὰρ δεῖ πρῶτον. ἐντέλλομαι δέ σοι πρῶτον, <note n="1">e)nte/llomai de/ soi prw=ton om N L1.</note> Ἑρμᾶ, τὰ ῥήματα ταῦτα, ἅ σοι μέλλω
 								λέγειν, λαλῆσαι αὐτὰ πάντα εἰς τὰ ὦτα τῶν ἁγίων, ἵνα ἀκούσαντες αὐτὰ καὶ ποιήσαντες
 								καθαρισθῶσιν ἀπὸ τῶν πονηριῶν αὐτῶν καὶ σὺ δὲ μετ̓ αὐτῶν. </p>
 						</div>
@@ -784,9 +750,7 @@
 						<div type="textpart" subtype="section" n="2">
 							<p> νῦν οὖν ἀκούσατέ μου καὶ εἰρηνεύετε ἐν ἑαυτοῖς καὶ ἐπισκέπτεσθε ἀλλήλους καὶ
 								ἀντιλαμβάνεσθε <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg006:15.17 urn:cts:greekLit:tlg0031.tlg006:20.35"
-										>Rom. 15, 17 cf. Acts 20, 35</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg006:15.17 urn:cts:greekLit:tlg0031.tlg006:20.35">Rom. 15, 17 cf. Acts 20, 35</bibl>
 								</note> ἀλλήλων, καὶ μὴ μόνοι τὰ κτίσματα τοῦ θεοῦ μεταλαμβάνετε ἐκ καταχύματος,
 								ἀλλὰ μεταδίδοτε καὶ τοῖς ὑστερουμένοις:</p>
 						</div>
@@ -815,9 +779,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="7">
 							<p> νῦν οὖν ὑμῖν λέγω <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:23.6 urn:cts:greekLit:tlg0031.tlg002:12.39 urn:cts:greekLit:tlg0031.tlg003:11.43 urn:cts:greekLit:tlg0031.tlg003:20.46"
-										>Mt. 23, 6 Mc. 12, 39 Lc. 11, 43; 20, 46</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:23.6 urn:cts:greekLit:tlg0031.tlg002:12.39 urn:cts:greekLit:tlg0031.tlg003:11.43 urn:cts:greekLit:tlg0031.tlg003:20.46">Mt. 23, 6 Mc. 12, 39 Lc. 11, 43; 20, 46</bibl>
 								</note> τοῖς προηγουμένοις τῆς ἐκκλησίας καὶ τοῖς πρωτοκαθεδρίταις: μὴ γίνεσθε
 								ὅμοιοι τοῖς φαρμακοῖς. οἱ φαρμακοὶ μὲν οὖν τὰ φάρμακα ἑαυτῶν εἰς τὰς πυξίδας
 								βαστάζουσιν, ὑμεῖς δὲ τὸ φάρμακον ὑμῶν καὶ τὸν ἰὸν εἰς τὴν καρδίαν.</p>
@@ -830,8 +792,7 @@
 								</note> βασιλέως τοῦ μεγάλου.</p>
 						</div>
 						<div type="textpart" subtype="section" n="9">
-							<p> βλέπετε οὖν, τέκνα, <pb n="52"/> μήποτε αὗται αἱ διχοστασίαι <note n="1"
-									>dixostasi/ai N%2 A, dixostasi/ai u(mw=n Nc LE.</note> ἀποστερήσουσιν τὴν ζωὴν
+							<p> βλέπετε οὖν, τέκνα, <pb n="52"/> μήποτε αὗται αἱ διχοστασίαι <note n="1">dixostasi/ai N%2 A, dixostasi/ai u(mw=n Nc LE.</note> ἀποστερήσουσιν τὴν ζωὴν
 								ὑμῶν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="10">
@@ -907,9 +868,7 @@
 							<p> ὥσπερ γὰρ οἱ πρεσβύτεροι, μηκέτι ἔχοντες ἐλπίδα τοῦ ἀνανεῶσαι, οὐδὲν <pb n="56"/>
 								ἄλλο προσδοκῶσιν εἰ μὴ τὴν κοίμησιν αὐτῶν, οὕτως καὶ ὑμεῖς μαλακισθέντες ἀπὸ τῶν
 								βιωτικῶν πραγμάτων παρεδώκατε ἑαυτοὺς εἰς τὰς ἀκηδίας <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:54.23 urn:cts:greekLit:tlg0031.tlg021:5.7"
-										>Ps. 54, 23; 1 Pet. 5,7</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:54.23 urn:cts:greekLit:tlg0031.tlg021:5.7">Ps. 54, 23; 1 Pet. 5,7</bibl>
 								</note> καὶ οὐκ ἐπερίψατε ἑαυτῶν τὰς μερίμνας ἐπὶ τὸν κύριον: ἀλλὰ ἐθραύσθη ὑμῶν ἡ
 								διάνοια καὶ ἐπαλαιώθητε ταῖς λύπαις ὑμῶν.</p>
 						</div>
@@ -986,9 +945,7 @@
 							<p> μόνος οὖν περιπατῶν ἀξιῶ τὸν κύριον, ἵνα τὰς ἀποκαλύψεις καὶ τὰ ὁράματα, ἅ μοι
 								ἔδειξεν διὰ τῆς ἁγίας Ἐκκλησίας αὐτοῦ, τελειώσῃ, ἵνα με ἰσχυροποιήσῃ καὶ δῷ τὴν
 								μετάνοιαν τοῖς <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:86.9-86.12 urn:cts:greekLit:tlg0527.tlg027:99.3"
-										>Ps. 86, 9. 12; 99, 3</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:86.9-86.12 urn:cts:greekLit:tlg0527.tlg027:99.3">Ps. 86, 9. 12; 99, 3</bibl>
 								</note> δούλοις αὐτοῦ τοῖς ἐσκανδαλισμένοις, ἵνα δοξασθῇ τὸ ὄνομα αὐτοῦ τὸ μέγα καὶ
 								ἔνδοξον, ὅτι με ἄξιον ἡγήσατο τοῦ δεῖξαί μοι τὰ θαυμάσια αὐτοῦ.</p>
 						</div>
@@ -1030,9 +987,7 @@
 						<div type="textpart" subtype="section" n="1">
 							<p> Μετὰ δὲ τὸ παρελθεῖν με τὸ θηρίον καὶ προελθεῖν ὡσεὶ πόδας <num>λ</num>, ἰδού,
 								ὑπαντᾷ μοι παρθένος <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:19.5 urn:cts:greekLit:tlg0031.tlg027:21.2"
-										>Ps. 19, 5; Rev. 21, 2</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:19.5 urn:cts:greekLit:tlg0031.tlg027:21.2">Ps. 19, 5; Rev. 21, 2</bibl>
 								</note> κεκοσμημένη ὡς ἐκ νυμφῶνος ἐκπορευομένη, ὅλη ἐν λευκοῖς καὶ ὑποδήμασιν
 								λευκοῖς, κατακεκαλυμμένη ἕως τοῦ μετώπου, ἐν μίτρᾳ δὲ ἦν ἡ κατακάλυψις αὐτῆς: εἶχεν
 								δὲ τὰς τρίχας αὐτῆς λευκάς.</p>
@@ -1058,9 +1013,7 @@
 									<note n="1">mega/lou ALE, a(gi/ou a)gge/lou N.</note> καὶ ἐνδόξου ὀνόματος. διὰ
 								τοῦτο ὁ κύριος ἀπέστειλεν τὸν ἄγγελον αὐτοῦ τὸν ἐπὶ τῶν θηρίων ὄντα, οὗ τὸ ὄνομά
 								ἐστιν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg056:6.22 urn:cts:greekLit:tlg0031.tlg019:11.33"
-										>Dan. 6, 22; cf. Hcb. 11, 33</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg056:6.22 urn:cts:greekLit:tlg0031.tlg019:11.33">Dan. 6, 22; cf. Hcb. 11, 33</bibl>
 								</note> Θεγρί, καὶ ἐνέφραξεν τὸ στόμα αὐτοῦ, ἵνα μή σε λυμάνῃ. μεγάλην θλῖψιν
 								ἐκπέφευγας διὰ τὴν πίστιν σου καὶ ὅτι τηλικοῦτο θηρίον ἰδὼν οὐκ ἐδιψύχησας:</p>
 						</div>
@@ -1078,9 +1031,7 @@
 							<p> πιστεύσατε τῷ κυρίῳ, οἱ δίψυχοι, ὅτι πάντα δύναται καὶ ἀποστρέφει τὴν ὀργὴν αὐτοῦ
 								ἀφ̓ ὑμῶν καὶ ἐξαποστέλλει μάστιγας ὑμῖν τοῖς διψύχοις. οὐαὶ τοῖς ἀκούσασιν τὰ ῥήματα
 								ταῦτα <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:26.24 urn:cts:greekLit:tlg0031.tlg002:14.21"
-										>Mt. 26, 24; Mk. 14, 21</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:26.24 urn:cts:greekLit:tlg0031.tlg002:14.21">Mt. 26, 24; Mk. 14, 21</bibl>
 								</note> καὶ παρακούσασιν: αἱρετώτερον ἦν αὐτοῖς τὸ μὴ γεννηθῆναι. <pb n="66"/>
 							</p>
 						</div>
@@ -1103,9 +1054,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> τὸ δὲ χρυσοῦν μέρος ὑμεῖς ἐστε οἱ ἐκφυγόντες τὸν κόσμον τοῦτον. ὥσπερ γὰρ τὸ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg021:1.7 urn:cts:greekLit:tlg0527.tlg034:2.5 urn:cts:greekLit:tlg0527.tlg029:17.3 urn:cts:greekLit:tlg0527.tlg032:23.10"
-										>I Pet. 1, 7; cf. Ecclus. 2, 5; Prov. 17, 3; Job 23, 10</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg021:1.7 urn:cts:greekLit:tlg0527.tlg034:2.5 urn:cts:greekLit:tlg0527.tlg029:17.3 urn:cts:greekLit:tlg0527.tlg032:23.10">I Pet. 1, 7; cf. Ecclus. 2, 5; Prov. 17, 3; Job 23, 10</bibl>
 								</note> χρυσίον δοκιμάζεται διὰ τοῦ πυρὸς καὶ εὔχρηστον γίνεται, οὕτως καὶ ὑμεῖς
 								δοκιμάζεσθε οἱ κατοικοῦντες ἐν αὐτοῖς. <note n="1">e)n au)toi=s NL, e)n au)tw=|
 									AE.</note> οἱ οὖν μείναντες καὶ πυρωθέντες ὑπ̓ αὐτῶν καθαρισθήσεσθε. ὥσπερ τὸ
@@ -1208,14 +1157,12 @@
 							<p> πρῶτον μὲν μηδενὸς καταλάλει μηδὲ ἡδέως ἄκουε <note>
 									<bibl corresp="urn:cts:greekLit:tlg0527.tlg020:4.11">Jam. 4, 11</bibl>
 								</note> καταλαλοῦντος: εἰ δὲ μή, καὶ σὺ ὁ ἀκούων ἔνοχος ἔσῃ τῆς ἁμαρτίας τοῦ
-								καταλαλοῦντος, ἐὰν πιστεύσῃς τῇ καταλαλιᾷ ᾗ ἂν ἀκούσῃς: πιστεύσας γὰρ <note n="1"
-									>ga/r AE(L1) Ath. Ant. om. NL2.</note> καὶ <pb n="72"/> σὺ αὐτὸς ἕξεις κατὰ τοῦ
+								καταλαλοῦντος, ἐὰν πιστεύσῃς τῇ καταλαλιᾷ ᾗ ἂν ἀκούσῃς: πιστεύσας γὰρ <note n="1">ga/r AE(L1) Ath. Ant. om. NL2.</note> καὶ <pb n="72"/> σὺ αὐτὸς ἕξεις κατὰ τοῦ
 								ἀδελφοῦ σου: οὕτως οὖν ἔνοχος ἔσῃ τῆς ἁμαρτίας τοῦ καταλαλοῦντος.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
 							<p> πονηρὰ ἡ καταλαλιά: ἀκατάστατον δαιμόνιόν ἐστιν, μηδέποτε εἰρηνεῦον, ἀλλὰ πάντοτε
-								ἐν διχοστασίαις κατοικοῦν. ἀπέχου οὖν ἀπ̓ αὐτοῦ, καὶ εὐθηνίαν πάντοτε ἕξεις <note
-									n="1">e(/ceis NcAL2E Ath., e)/xeis NL1.</note> μετὰ πάντων.</p>
+								ἐν διχοστασίαις κατοικοῦν. ἀπέχου οὖν ἀπ̓ αὐτοῦ, καὶ εὐθηνίαν πάντοτε ἕξεις <note n="1">e(/ceis NcAL2E Ath., e)/xeis NL1.</note> μετὰ πάντων.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> ἔνδυσαι δὲ τὴν σεμνότητα, ἐν ᾗ οὐδὲν πρόσκομμά ἐστιν πονηρόν, ἀλλὰ πάντα ὁμαλὰ καὶ
@@ -1328,9 +1275,7 @@
 						<div type="textpart" subtype="section" n="6">
 							<p> Τί οὖν, φημί, κύριε, ποιήσῃ ὁ ἀνήρ, ἐὰν ἐπιμείνῃ τῷ πάθει τούτῳ ἡ γυνή; Ἀπολυσάτω,
 								φησίν, αὐτὴν καὶ ὁ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg002:10.11 urn:cts:greekLit:tlg0527.tlg001:5.32 urn:cts:greekLit:tlg0527.tlg001:19.9 urn:cts:greekLit:tlg0527.tlg007:7.11"
-										>Mk. 10, 11; Mt. 5, 32; 19, 9; cf. I Cor. 7, 11</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg002:10.11 urn:cts:greekLit:tlg0527.tlg001:5.32 urn:cts:greekLit:tlg0527.tlg001:19.9 urn:cts:greekLit:tlg0527.tlg007:7.11">Mk. 10, 11; Mt. 5, 32; 19, 9; cf. I Cor. 7, 11</bibl>
 								</note> ἀνὴρ ἐφ̓ ἑαυτῷ μενέτω: ἐὰν δὲ ἀπολύσας τὴν γυναῖκα ἑτέραν γαμήσῃ, καὶ αὐτὸς
 								μοιχᾶται.</p>
 						</div>
@@ -1355,8 +1300,7 @@
 								τοῖς τοιούτοις μετάνοια εἶναι.</p>
 						</div>
 						<div type="textpart" subtype="section" n="11">
-							<p> ἐγὼ οὖν, φησίν, οὐ δίδωμι ἀφορμήν, ἵνα αὕτη ἡ πρᾶξις οὕτως συντελῆται, <note n="1"
-									>suntelh=tai Nc A, suntele/shtai N%2.</note> ἀλλὰ εἰς τὸ μηκέτι ἁμαρτάνειν τὸν
+							<p> ἐγὼ οὖν, φησίν, οὐ δίδωμι ἀφορμήν, ἵνα αὕτη ἡ πρᾶξις οὕτως συντελῆται, <note n="1">suntelh=tai Nc A, suntele/shtai N%2.</note> ἀλλὰ εἰς τὸ μηκέτι ἁμαρτάνειν τὸν
 								ἡμαρτηκότα. περὶ δὲ τῆς προτέρας ἁμαρτίας αὐτοῦ ἔστιν ὁ δυνάμενος ἴασιν δοῦναι:
 									<note n="2">o( duna/menos i)/asin dou=nai om. N%2.</note> αὐτὸς γάρ ἐστιν ὁ ἔχων
 								πάντων τὴν ἐξουσίαν. </p>
@@ -1375,9 +1319,7 @@
 							<p> ἀποκριθείς μοι λέγει: Ἐγώ, φησίν, ἐπὶ τῆς μετανοίας εἰμὶ καὶ πᾶσιν τοῖς
 								μετανοοῦσιν σύνεσιν δίδωμι. ἢ οὐ <pb n="82"/> δοκεῖ σοι, φησίν, αὐτὸ τοῦτο τὸ
 								μετανοῆσαι σύνεσιν εἶναι; τὸ μετανοῆσαι, φησίν, σύνεσίς ἐστιν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg008:2.11 urn:cts:greekLit:tlg0527.tlg008:3.12 urn:cts:greekLit:tlg0527.tlg008:4.1 urn:cts:greekLit:tlg0527.tlg008:10.6 urn:cts:greekLit:tlg0527.tlg008:13.1 urn:cts:greekLit:tlg0527.tlg0011:15.19"
-										>Judg. 2, 11; 3, 12; 4, 1; 10, 6; 13, 1; I Sam. 15, 19 etc.</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg008:2.11 urn:cts:greekLit:tlg0527.tlg008:3.12 urn:cts:greekLit:tlg0527.tlg008:4.1 urn:cts:greekLit:tlg0527.tlg008:10.6 urn:cts:greekLit:tlg0527.tlg008:13.1 urn:cts:greekLit:tlg0527.tlg0011:15.19">Judg. 2, 11; 3, 12; 4, 1; 10, 6; 13, 1; I Sam. 15, 19 etc.</bibl>
 								</note> μεγάλη: συνίει γὰρ ὁ ἁμαρτήσας, <note n="1">o( a(marth/sas ALE, o( a)nh\r o(
 									a(marth/sas N.</note> ὅτι πεποίηκεν τὸ πονηρὸν ἔμπροσθεν τοῦ κυρίου, καὶ ἀναβαίνει
 								ἐπὶ τὴν καρδίαν αὐτοῦ ἡ πρᾶξις, ἣν ἔπραξεν, καὶ μετανοεῖ καὶ οὐκέτι ἐργάζεται τὸ
@@ -1385,8 +1327,7 @@
 								βασανίζει, ὅτι ἥμαρτεν. βλέπεις οὖν, ὅτι ἡ μετάνοια σύνεσίς ἐστιν μεγάλη.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
-							<p> Διὰ τοῦτο οὖν, φημί, κύριε, ἐξακριβάζομαι παρὰ σοῦ πάντα: πρῶτον μέν, <note n="2"
-									>From here to Mand. IV. 3, 4 (kardiognw/sths) N is missing.</note> ὅτι ἁμαρτωλός
+							<p> Διὰ τοῦτο οὖν, φημί, κύριε, ἐξακριβάζομαι παρὰ σοῦ πάντα: πρῶτον μέν, <note n="2">From here to Mand. IV. 3, 4 (kardiognw/sths) N is missing.</note> ὅτι ἁμαρτωλός
 								εἰμι, ἵνα γνῶ, ποῖα ἔργα ἐργαζόμενος ζήσομαι, ὅτι πολλαί μου εἰσὶν αἱ ἁμαρτίαι καὶ
 								ποικίλαι.</p>
 						</div>
@@ -1599,11 +1540,8 @@
 						</div>
 						<div type="textpart" subtype="section" n="5">
 							<p> Ἀρέσκει μοι, φημί, κύριε, ταύτῃ τῇ ὁδῷ πορεύεσθαι. Πορεύσῃ, φησί, <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg049:24.7 urn:cts:greekLit:tlg0527.tlg039:2.12"
-										>Jer. 24, 7; Joel 2, 12</bibl>
-								</note> καὶ ὃς ἂν ἐξ ὅλης καρδίας ἐπιστρέψῃ πρὸς κύριον, πορεύσεται ἐν αὐτῇ. <pb
-									n="96"/>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg049:24.7 urn:cts:greekLit:tlg0527.tlg039:2.12">Jer. 24, 7; Joel 2, 12</bibl>
+								</note> καὶ ὃς ἂν ἐξ ὅλης καρδίας ἐπιστρέψῃ πρὸς κύριον, πορεύσεται ἐν αὐτῇ. <pb n="96"/>
 							</p>
 						</div>
 					</div>
@@ -1692,16 +1630,14 @@
 								καταφρονεῖται.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
-							<p> φοβήθητι δὲ τὰ ἔργα τοῦ διαβόλου, ὅτι πονηρά ἐστι. φοβούμενος οὖν τὸν κύριον <note
-									n="3">ku/rion A, add. fobhqh/sh| ta\ e)/rga tou= diabo/lou kai/ Ant. (L1), L2
+							<p> φοβήθητι δὲ τὰ ἔργα τοῦ διαβόλου, ὅτι πονηρά ἐστι. φοβούμενος οὖν τὸν κύριον <note n="3">ku/rion A, add. fobhqh/sh| ta\ e)/rga tou= diabo/lou kai/ Ant. (L1), L2
 									omits the shole clause.</note> οὐκ ἐργάσῃ αὐτά, ἀλλ̓ ἀφέξῃ ἀπ̓ αὐτῶν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> δισσοὶ οὖν εἰσιν οἱ φόβοι: ἐὰν γὰρ θέλῃς τὸ πονηρὸν ἐργάσασθαι, φοβοῦ τὸν κύριον,
 								καὶ οὐκ ἐργάσῃ αὐτό: ἐὰν δὲ θέλῃς πάλιν τὸ ἀγαθὸν ἐργάσασθαι, φοβοῦ τὸν κύριον, καὶ
 								ἐργάσῃ αὐτό. ὥστε ὁ φόβος τοῦ κυρίου ἰσχυρός ἐστι καὶ μέγας καὶ ἔνδοξος. φοβήθητι
-								οὖν τὸν κύριον, καὶ ζήσῃ αὐτῷ: καὶ ὅσοι ἂν φοβηθῶσιν αὐτὸν καὶ τηρήσωσι <note n="4"
-									>kai\ thrh/swsi E Ant., tw=n fulasso/ntwn A.</note> τὰς ἐντολὰς αὐτοῦ, ζήσονται τῷ
+								οὖν τὸν κύριον, καὶ ζήσῃ αὐτῷ: καὶ ὅσοι ἂν φοβηθῶσιν αὐτὸν καὶ τηρήσωσι <note n="4">kai\ thrh/swsi E Ant., tw=n fulasso/ntwn A.</note> τὰς ἐντολὰς αὐτοῦ, ζήσονται τῷ
 								θεῷ.</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
@@ -1795,9 +1731,7 @@
 						<div type="textpart" subtype="section" n="1">
 							<p> Λέγει μοι: Ἆρον ἀπὸ σεαυτοῦ τὴν διψυχίαν καὶ μὲν ὅλως διψυχήσῃς αἰτήσασθαί τι παρὰ
 								τοῦ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg049:24.7 urn:cts:greekLit:tlg0527.tlg039:2.12"
-										>Jer. 24, 7; Joel 2, 12</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg049:24.7 urn:cts:greekLit:tlg0527.tlg039:2.12">Jer. 24, 7; Joel 2, 12</bibl>
 								</note> θεοῦ, λέγων ἐν σεαυτῷ ὅτι πῶς δύναμαι αἰτήσασθαι παρὰ τοῦ κυρίου καὶ λαβεῖν,
 								ἡμαρτηκὼς τοσαῦτα εἰς αὐτόν;</p>
 						</div>
@@ -1807,8 +1741,7 @@
 								ἐγκαταλίπῃ, ἀλλὰ τὸ αἴτημα τῆς ψυχῆς σου πληροφορήσει.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
-							<p> οὐκ ἔστι γὰρ ὁ θεὸς ὡς οἱ ἄνθρωποι μνησικακοῦντες, ἀλλ̓ αὐτὸς ἀμνησίκακός <pb
-									n="108"/> ἐστι καὶ σπλαγχνίζεται ἐπὶ τὴν ποίησιν αὐτοῦ.</p>
+							<p> οὐκ ἔστι γὰρ ὁ θεὸς ὡς οἱ ἄνθρωποι μνησικακοῦντες, ἀλλ̓ αὐτὸς ἀμνησίκακός <pb n="108"/> ἐστι καὶ σπλαγχνίζεται ἐπὶ τὴν ποίησιν αὐτοῦ.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> σὺ οὖν καθάρισόν σου τὴν καρδίαν ἀπὸ πάντων τῶν ματαιωμάτων τοῦ αἰῶνος τούτου καὶ
@@ -1842,8 +1775,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="9">
 							<p> βλέπε τὴν διψυχίαν ταύτην: πονηρὰ γάρ ἔστι καὶ ἀσύνετος καὶ πολλοὺς ἐκριζοῖ ἀπὸ
-								τῆς πίστεως καί γε λίαν πιστοὺς καὶ ἰσχυρούς. καὶ γὰρ αὕτη ἡ διψυχία θυγάτηρ <note
-									n="1">a)delfh/ A.</note> ἐστὶ <pb n="110"/> τοῦ διαβόλου καὶ λίαν πονηρεύεται εἰς
+								τῆς πίστεως καί γε λίαν πιστοὺς καὶ ἰσχυρούς. καὶ γὰρ αὕτη ἡ διψυχία θυγάτηρ <note n="1">a)delfh/ A.</note> ἐστὶ <pb n="110"/> τοῦ διαβόλου καὶ λίαν πονηρεύεται εἰς
 								τοὺς δούλους τοῦ θεοῦ.</p>
 						</div>
 						<div type="textpart" subtype="section" n="10">
@@ -1876,8 +1808,7 @@
 							<p> Πῶς, φημί, κύριε, ἀδελφή ἐστι τούτων; ἄλλο γάρ μοι δοκεῖ εἶναι ὀξυχολία καὶ ἄλλο
 								διψυχία καὶ ἄλλο λύπη. Ἀσύνετος εἶ ἄνθρωπε, φησί, καὶ <note n="2">fhsi/, kai/ om.
 									A.</note> οὐ νοεῖς, ὅτι ἡ λύπη πάντων τῶν πνευμάτων πονηροτέρα ἐστὶ καὶ δεινοτάτη
-								τοῖς δούλοις τοῦ θεοῦ καὶ παρὰ πάντα τὰ πνεύματα καταφθείρει τὸν ἄνθρωπον καὶ <pb
-									n="112"/> ἐκτρίβει τὸ πνεῦμα τὸ ἅγιον καὶ πάλιν σώζει;</p>
+								τοῖς δούλοις τοῦ θεοῦ καὶ παρὰ πάντα τὰ πνεύματα καταφθείρει τὸν ἄνθρωπον καὶ <pb n="112"/> ἐκτρίβει τὸ πνεῦμα τὸ ἅγιον καὶ πάλιν σώζει;</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
 							<p> Ἐγώ, φημί, κύριε, ἀσύνετός εἰμι καὶ οὐ συνίω τὰς παραβολὰς ταύτας. πῶς γὰρ δύναται
@@ -1900,9 +1831,7 @@
 						<div type="textpart" subtype="section" n="6">
 							<p> οἱ δὲ φόβον ἔχοντες θεοῦ καὶ ἐρευνῶντες περὶ θεότητος καὶ ἀληθείας καὶ τὴν καρδίαν
 								ἔχοντες πρὸς τὸν κύριον, πάντα <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:111.10 urn:cts:greekLit:tlg0527.tlg029:1.7"
-										>Ps. 111, 10; Prov. 1, 7; etc.</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:111.10 urn:cts:greekLit:tlg0527.tlg029:1.7">Ps. 111, 10; Prov. 1, 7; etc.</bibl>
 								</note> τὰ λεγόμενα αὐτοῖς τάχιον νοοῦσι καὶ συνίουσιν, <note n="1">ta/xion noou=si
 									kai\ suni/ousi Ath (LE), taxu/nousi kai\ noou=si A.</note> ὅτι ἔχουσι τὸν φόβον
 								τοῦ κυρίου ἐν ἑαυτοῖς: ὅπου γὰρ ὁ κύριος κατοικεῖ, ἐκεῖ καὶ σύνεσις πολλή. <note>
@@ -2118,8 +2047,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="3">
 							<p> Ποῖα, φημί, κύριε, ἔργα ἐστὶν τῆς ἐπιθυμίας τῆς πονηρᾶς τὰ παραδιδόντα τοὺς
-								ἀνθρώπους εἰς θάνατον; γνώρισόν μοι, ἵνα ἀφέξωμαι ἀπ̓ αὐτῶν. Ἄκουσον, φησίν, <note
-									n="1">fhsi/n om. A.</note> ἐν ποίοις ἔργοις θανατοῖ ἡ ἐπιθυμία ἡ πονηρὰ τοὺς
+								ἀνθρώπους εἰς θάνατον; γνώρισόν μοι, ἵνα ἀφέξωμαι ἀπ̓ αὐτῶν. Ἄκουσον, φησίν, <note n="1">fhsi/n om. A.</note> ἐν ποίοις ἔργοις θανατοῖ ἡ ἐπιθυμία ἡ πονηρὰ τοὺς
 								δούλους τοῦ θεοῦ. </p>
 						</div>
 					</div>
@@ -2143,8 +2071,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> σὺ δὲ ἔνδυσαι τὴν ἐπιθυμίαν τῆς δικαιοσύνης, καὶ καθοπλισάμενος τὸν φόβον τοῦ
-								κυρίου ἀντίστηθι αὐταῖς: ὁ γὰρ φόβος τοῦ θεοῦ κατοικεῖ ἐν τῇ ἐπιθυμίᾳ τῇ ἀγαθῇ. <pb
-									n="128"/> ἡ ἐπιθυμία ἡ πονηρὰ ἐὰν ἴδῃ σε καθωπλισμένον <note>
+								κυρίου ἀντίστηθι αὐταῖς: ὁ γὰρ φόβος τοῦ θεοῦ κατοικεῖ ἐν τῇ ἐπιθυμίᾳ τῇ ἀγαθῇ. <pb n="128"/> ἡ ἐπιθυμία ἡ πονηρὰ ἐὰν ἴδῃ σε καθωπλισμένον <note>
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg020:4,7">Jam. 4,7</bibl>
 								</note> τῷ φόβῳ τοῦ θεοῦ καὶ ἀνθεστηκότα αὐτῇ, φεύξεται ἀπὸ σοῦ μακρὰν καὶ οὐκέτι
 								σοι ὀφθήσεται φοβουμένη τὰ ὅπλα σου.</p>
@@ -2180,9 +2107,7 @@
 								ῥήμασιν: ἐγὼ γὰρ μετὰ σοῦ ἔσομαι καὶ ἀναγκάσω αὐτοὺς πεισθῆναί σοι <note n="1">There
 									are some indications that in some recensions the Similitudes began here. A inserts
 									a)rxh/ before the next paragraph and E inserts initium similitudinum.</note>. <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:19.9 urn:cts:greekLit:tlg0527.tlg027:104.15"
-										>Ps. 19, 8;, 104, 15</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:19.9 urn:cts:greekLit:tlg0527.tlg027:104.15">Ps. 19, 8;, 104, 15</bibl>
 								</note>
 							</p>
 						</div>
@@ -2285,9 +2210,7 @@
 						<div type="textpart" subtype="section" n="2">
 							<p> πιστεύσατε οὖν τῷ θεῷ ὑμεῖς οἱ διὰ τὰς ἁμαρτίας ὑμῶν ἀπεγνωκότες τὴν ζωὴν ὑμῶν καὶ
 								προστιθέντες ἁμαρτίαις καὶ καταβαρύνοντες <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg049:24.7 urn:cts:greekLit:tlg0527.tlg039:2.12"
-										>Jer. 24, 7, Joel 2, 12</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg049:24.7 urn:cts:greekLit:tlg0527.tlg039:2.12">Jer. 24, 7, Joel 2, 12</bibl>
 								</note> τὴν ζωὴν ὑμῶν, ὅτι, ἐὰν ἐπιστραφῆτε πρὸς τὸν <note>
 									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:15.2">Ps. 15, 2</bibl>
 								</note> κύριον ἐξ ὅλης τῆς καρδίας ὑμῶν καὶ ἐργάσησθε τὴν δικαιοσύνην, τὰς λοιπὰς
@@ -2355,8 +2278,7 @@
 							<p> βλέπε οὖν σύ: ὡς ἐπὶ ξένης κατοικῶν μηδὲν πλέον ἑτοίμαζε σεαυτῷ εἰ μὴ τὴν
 								αὐτάρκειαν τὴν ἀρκετήν σοι, καὶ ἕτοιμος γίνου, ἵνα, ὅταν θέλῃ ὁ δεσπότης τῆς πόλεως
 								ταύτης ἐκβαλεῖν σε ἀντιταξάμενον τῷ νόμῳ αὐτοῦ, ἐξέλθῃς ἐκ τῆς πόλεως αὐτοῦ καὶ
-								ἀπέλθῃς ἐν τῇ πόλει σου καὶ τῷ σῷ νόμῳ χρήσῃ ἀνυβρίστως ἀγαλλιώμενος. <note n="1"
-									>a)nubri/stws a)galliw/menos LE, a)nubri/stws kai\ a)galliwme/nws. A.</note>
+								ἀπέλθῃς ἐν τῇ πόλει σου καὶ τῷ σῷ νόμῳ χρήσῃ ἀνυβρίστως ἀγαλλιώμενος. <note n="1">a)nubri/stws a)galliw/menos LE, a)nubri/stws kai\ a)galliwme/nws. A.</note>
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="7">
@@ -2397,8 +2319,7 @@
 						<div type="textpart" subtype="section" n="1">
 							<p> Περιπατοῦντός μου εἰς τὸν ἀγρὸν καὶ κατανοοῦντος πτελέαν καὶ ἄμπελον καὶ
 								διακρίνοντος περὶ αὐτῶν καὶ τῶν καρπῶν αὐτῶν, φανεροῦταί μοι ὁ ποιμὴν καὶ λέγει: Τί
-								σὺ ἐν ἑαυτῷ ζητεῖς περὶ τῆς πτελέας καὶ τῆς ἀμπέλου; Συζητῶ, φημί, κύριε, <note
-									n="1">ku/rie LE, om. A.</note> ὅτι εὐπρεπέσταταί εἰσιν ἀλλήλαις.</p>
+								σὺ ἐν ἑαυτῷ ζητεῖς περὶ τῆς πτελέας καὶ τῆς ἀμπέλου; Συζητῶ, φημί, κύριε, <note n="1">ku/rie LE, om. A.</note> ὅτι εὐπρεπέσταταί εἰσιν ἀλλήλαις.</p>
 						</div>
 						<div type="textpart" subtype="section" n="2">
 							<p> Ταῦτα τὰ δύο δένδρα, φησίν, εἰς τύπον κεῖνται τοῖς δούλοις τοῦ θεοῦ. Ἤθελον, φημί,
@@ -2595,8 +2516,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="5">
 							<p> μετὰ χρόνον ἦλθεν ὁ δεσπότης τοῦ δούλου καὶ τοῦ ἀγροῦ καὶ εἰσῆλθεν εἰς τὸν
-								ἀμπελῶνα. καὶ ἰδὼν τὸν ἀμπελῶνα κεχαρακωμένον εὐπρεπῶς, ἔτι δὲ καὶ ἐσκαμμένον <pb
-									n="156"/> καὶ πάσας τὰς βοτάνας ἐκτετιλμένας καὶ εὐθαλεῖς οὔσας τὰς ἀμπέλους,
+								ἀμπελῶνα. καὶ ἰδὼν τὸν ἀμπελῶνα κεχαρακωμένον εὐπρεπῶς, ἔτι δὲ καὶ ἐσκαμμένον <pb n="156"/> καὶ πάσας τὰς βοτάνας ἐκτετιλμένας καὶ εὐθαλεῖς οὔσας τὰς ἀμπέλους,
 								ἐχάρη λίαν ἐπὶ τοῖς ἔργοις τοῦ δούλου.</p>
 						</div>
 						<div type="textpart" subtype="section" n="6">
@@ -2606,8 +2526,7 @@
 								δεσπότης.</p>
 						</div>
 						<div type="textpart" subtype="section" n="7">
-							<p> καὶ λέγει αὐτοῖς: Ἐγὼ τῷ δούλῳ τούτῳ ἐλευθερίαν ἐπηγγειλάμην, <note n="1"
-									>e)phggeila/mhn A, Hilgenfeld and others emend to e)neteila/mhn.</note> ἐάν μου
+							<p> καὶ λέγει αὐτοῖς: Ἐγὼ τῷ δούλῳ τούτῳ ἐλευθερίαν ἐπηγγειλάμην, <note n="1">e)phggeila/mhn A, Hilgenfeld and others emend to e)neteila/mhn.</note> ἐάν μου
 								τὴν ἐντολὴν φυλάξῃ, ἣν ἐνετειλάμην αὐτῷ: ἐφύλαξε δέ μου τὴν ἐντολὴν καὶ προσέθηκε τῷ
 								ἀμπελῶνι ἔργον καλόν, καὶ ἐμοὶ λίαν ἤρεσεν. ἀντὶ τούτου οὖν τοῦ ἔργου οὗ εἰργάσατο
 								θέλω αὐτὸν συγκληρονόμον τῷ υἱῷ μου ποιῆσαι, ὅτι τὸ καλὸν φρονήσας οὐ παρενεθυμήθη,
@@ -2675,9 +2594,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="8">
 							<p> ἐὰν οὖν οὕτω τελέσῃς τὴν νηστείαν, ὥς σοι ἐνετειλάμην, <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg034:32.9 urn:cts:greekLit:tlg0527.tlg034:35.9 urn:cts:greekLit:tlg0031.tlg011:4.18 urn:cts:greekLit:tlg0527.tlg048:56.7"
-										>Ecclus. 32, 9 (*wulg. 35.9); Philipp. 4, 18, cf. Is. 56, 7; etc.</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg034:32.9 urn:cts:greekLit:tlg0527.tlg034:35.9 urn:cts:greekLit:tlg0031.tlg011:4.18 urn:cts:greekLit:tlg0527.tlg048:56.7">Ecclus. 32, 9 (*wulg. 35.9); Philipp. 4, 18, cf. Is. 56, 7; etc.</bibl>
 								</note> ἔσται ἡ θυσία σου δεκτὴ παρὰ τῷ θεῷ, <note n="1">qew=| A Ant., kuri/w| L
 									Ath.</note> καὶ ἔγγραφος ἔσται ἡ νηστεία αὕτη, καὶ ἡ λειτουργία οὕτως ἐργαζομένη
 								καλὴ καὶ ἱλαρά ἐστι καὶ εὐπρόσδεκτος τῷ κυρίῳ.</p>
@@ -2733,9 +2650,7 @@
 							<p> ὁ ἀγρὸς ὁ <note>
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:13.38">Mt. 13, 38</bibl>
 								</note> κόσμος οὗτός ἐστιν: ὁ δὲ κύριος τοῦ ἀγροῦ ὁ κτίσας <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg010:3.9 urn:cts:greekLit:tlg0527.tlg027:68.28"
-										>Eph. 3, 9 Cf. Ps. 68, 28</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg010:3.9 urn:cts:greekLit:tlg0527.tlg027:68.28">Eph. 3, 9 Cf. Ps. 68, 28</bibl>
 								</note> τὰ πάντα καὶ ἀπαρτίσας αὐτὰ καὶ δυναμώσας: <note n="1">L1 adds filius autem
 									spiritus sanctus est. Cf. Sim. ix. 1. 1, (e)kei=no ga\r to\ pneu=ma o( ui(o\s tou=
 									qeou= e)stin.)</note> ὁ δὲ δοῦλος ὁ υἱὸς τοῦ θεοῦ ἐστιν: αἱ δὲ ἄμπελοι ὁ λαὸς
@@ -2774,14 +2689,10 @@
 						</div>
 						<div type="textpart" subtype="section" n="3">
 							<p> αὐτὸς <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:15.11 urn:cts:greekLit:tlg0527.tlg029:16.17"
-										>Ps. 15, 11; Prov. 16, 17</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:15.11 urn:cts:greekLit:tlg0527.tlg029:16.17">Ps. 15, 11; Prov. 16, 17</bibl>
 								</note> οὖν καθαρίσας τὰς ἁμαρτίας τοῦ λαοῦ ἔδειξεν αὐτοῖς τὰς τρίβους τῆς ζωῆς,
 								δοὺς αὐτοῖς τὸν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg004:18.18 urn:cts:greekLit:tlg0031.tlg004:12.48-12.50 urn:cts:greekLit:tlg0031.tlg004:14.31 urn:cts:greekLit:tlg0031.tlg004:15.10"
-										>Joh. 10, 18 ; 12, 49. 50 ; 14, 31 15, 10</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg004:18.18 urn:cts:greekLit:tlg0031.tlg004:12.48-12.50 urn:cts:greekLit:tlg0031.tlg004:14.31 urn:cts:greekLit:tlg0031.tlg004:15.10">Joh. 10, 18 ; 12, 49. 50 ; 14, 31 15, 10</bibl>
 								</note> νόμον, ὃν ἔλαβε παρὰ τοῦ πατρὸς αὐτοῦ. <note n="2">L adds vides in#3uit
 									dominum eum esse populi accepta a patre suo omni potestate, shich the Editors are
 									inclined to accept.</note>
@@ -2853,9 +2764,7 @@
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg020:1.21">Jam. 1, 21</bibl>
 								</note> περὶ τῶν ἐντολῶν, ὅτι καλαὶ καὶ δυναταὶ καὶ ἱλαραὶ καὶ ἔνδοξοι καὶ δυνάμεναι
 								σῶσαι ψυχὴν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:1.1-1.2 urn:cts:greekLit:tlg0527.tlg027:119.1"
-										>Ps. 1, 1-2 ; 119, 1</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:1.1-1.2 urn:cts:greekLit:tlg0527.tlg027:119.1">Ps. 1, 1-2 ; 119, 1</bibl>
 								</note> ἀνθρώπου, ἔλεγον ἐν ἐμαυτῷ: Μακάριος ἔσομαι, ἐὰν ταῖς ἐντολαῖς ταύταις
 								πορευθῶ, καὶ ὃς ἂν ταύταις πορευθῇ, μακάριος ἔσται.</p>
 						</div>
@@ -2978,9 +2887,7 @@
 								</note> ἐστι καὶ δικαίως ἔπαθον ἕκαστος κατὰ τὰς πράξεις αὐτοῦ: δουλεύουσι δὲ λοιπὸν
 								τῷ κυρίῳ ἐν καθαρᾷ καρδίᾳ <note n="1">e)a\n de\ metanoh/swsi...kardi/a| L Ath., om.
 									A.</note> αὐτῶν καὶ εὐοδοῦνται ἐν πάσῃ <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:21.22 urn:cts:greekLit:tlg0031.tlg023:3.22"
-										>Mt. 21, 22; I Jo. 3, 22</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:21.22 urn:cts:greekLit:tlg0031.tlg023:3.22">Mt. 21, 22; I Jo. 3, 22</bibl>
 								</note> πράξει αὐτῶν, λαμβάνοντες τοῦ κυρίου πάντα, ὅσα ἂν αἰτῶνται: καὶ τότε
 								δοξάζουσι τὸν κύριον, ὅτι ἐμοὶ παρεδόθησαν, καὶ οὐκέτι οὐδὲν πάσχουσι τῶν πονηρῶν.
 							</p>
@@ -2994,8 +2901,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="2">
 							<p> Ἐλάχιστον, φημί, κύριε, βασανίζονται: <note n="2">e)la/xiston, fhmi/, ku/rie,
-									basani/zontai om. A. The Greek is reconstructed from L.</note> ἔδει γὰρ <pb
-									n="180"/> τοὺς οὕτω τρυφῶντας καὶ ἐπιλανθανομένους τοῦ θεοῦ ἑπταπλασίως
+									basani/zontai om. A. The Greek is reconstructed from L.</note> ἔδει γὰρ <pb n="180"/> τοὺς οὕτω τρυφῶντας καὶ ἐπιλανθανομένους τοῦ θεοῦ ἑπταπλασίως
 								βασανίζεσθαι.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
@@ -3082,8 +2988,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> Ἀλλ̓ ἰδού, φημί, κύριε, μετανενοήκασιν ἐξ ὅλης καρδίας αὐτῶν. Οἶδα, φησί, κἀγώ,
-								ὅτι μετανενοήκασιν ἐξ ὅλης καρδίας αὐτῶν: τῶν οὖν μετανοούντων εὐθὺς <note n="2"
-									>eu)qu/s LE, om. A.</note> δοκεῖς τὰς ἁμαρτιας ἀφίεσθαι; οὐ παντελῶς: ἀλλὰ δεῖ τὸν
+								ὅτι μετανενοήκασιν ἐξ ὅλης καρδίας αὐτῶν: τῶν οὖν μετανοούντων εὐθὺς <note n="2">eu)qu/s LE, om. A.</note> δοκεῖς τὰς ἁμαρτιας ἀφίεσθαι; οὐ παντελῶς: ἀλλὰ δεῖ τὸν
 								μετανοοῦντα βασανίσαι τὴν ἑαυτοῦ ψυχὴν καὶ ταπεινοφρονῆσαι ἐν πάσῃ πράξει αὐτοῦ
 								ἰσχυρῶς καὶ θλιβῆναι ἐν πάσαις θίψεσι ποικίλαις: καὶ ἐὰν <pb n="186"/> ὑπενέγκῃ τὰς
 								θλίψεις τὰς ἐπερχομένας αὐτῷ, πάντως <note>
@@ -3093,8 +2998,7 @@
 								</note> ἐνδυναμώσας καὶ ἴασίν τινα δώσει αὐτῷ:</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
-							<p> καὶ τοῦτο πάντως, ἐὰν ἴδῃ τὴν καρδίαν τοῦ μετανοοῦντος καθαρὰν <note n="1"
-									>pa/ntws... kaqara/n LE, pa/ntws tou= metanoou=ntos kaqarw=s A.</note> ἀπὸ παντὸς
+							<p> καὶ τοῦτο πάντως, ἐὰν ἴδῃ τὴν καρδίαν τοῦ μετανοοῦντος καθαρὰν <note n="1">pa/ntws... kaqara/n LE, pa/ntws tou= metanoou=ntos kaqarw=s A.</note> ἀπὸ παντὸς
 								πονηροῦ πράγματος. σοὶ δὲ συμφέρον ἐστὶ καὶ τῷ οἴκῳ σου νῦν θλιβῆναι. τί δέ σοι
 								πολλὰ λέγω; θλιβῆναί σε δεῖ, καθὼς προσέταξεν ὁ ἄγγελος κυρίου ἐκεῖνος, ὁ παραδιδούς
 								σε ἐμοί: καὶ τοῦτο εὐχαρίστει τῷ κυρίῳ, ὅτι ἄξιόν σε ἡγήσατο τοῦ προδηλῶσαί σοι τὴν
@@ -3150,8 +3054,7 @@
 								ἄγγελος τοὺς τὰς τοιαύτας ῥάβδους ἐπιδεδωκότας χωρὶς ἱστάνεσθαι.</p>
 						</div>
 						<div type="textpart" subtype="section" n="7">
-							<p> ἕτεροι δὲ ἐπεδίδοσαν ξηράς, ἀλλ̓ οὐκ ἦσαν βεβρωμέναι ὑπὸ σητός: καὶ τούτους <pb
-									n="190"/> ἐκέλευσε χωρὶς ἱστάνεσθαι. <note n="1">i(sta/nesqai PBerl, i(/stasqai A
+							<p> ἕτεροι δὲ ἐπεδίδοσαν ξηράς, ἀλλ̓ οὐκ ἦσαν βεβρωμέναι ὑπὸ σητός: καὶ τούτους <pb n="190"/> ἐκέλευσε χωρὶς ἱστάνεσθαι. <note n="1">i(sta/nesqai PBerl, i(/stasqai A
 									and so throughout this section.</note>
 							</p>
 						</div>
@@ -3168,8 +3071,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="11">
-							<p> ἕτεροι δὲ ἐπεδίδουν τὰς ῥάβδους τὸ ἥμισυ ξηρὸν καὶ τὸ ἥμισυ μέρος <note n="3"
-									>me/ros PBerl, om. A.</note> χλωρόν: καὶ οὗτοι χωρὶς ἱστάνοντο.</p>
+							<p> ἕτεροι δὲ ἐπεδίδουν τὰς ῥάβδους τὸ ἥμισυ ξηρὸν καὶ τὸ ἥμισυ μέρος <note n="3">me/ros PBerl, om. A.</note> χλωρόν: καὶ οὗτοι χωρὶς ἱστάνοντο.</p>
 						</div>
 						<div type="textpart" subtype="section" n="12">
 							<p> ἕτεροι δὲ προσέφερον τὰς ῥάβδους αὐτῶν τὰ δύο μέρη τῆς ῥάβδου χλωρά, τὸ δὲ τρίτον
@@ -3200,8 +3102,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="18">
-							<p> ἕτεροι δὲ ἐπεδίδουν τὰς ῥάβδους αὐτῶν χλωρὰς καὶ παραφυάδας ἐχούσας: αἱ δὲ <pb
-									n="192"/> παραφυάδες αὐτῶν ὡσεὶ καρπόν τινα εἶχον: καὶ λίαν ἱλαροὶ ἦσαν οἱ
+							<p> ἕτεροι δὲ ἐπεδίδουν τὰς ῥάβδους αὐτῶν χλωρὰς καὶ παραφυάδας ἐχούσας: αἱ δὲ <pb n="192"/> παραφυάδες αὐτῶν ὡσεὶ καρπόν τινα εἶχον: καὶ λίαν ἱλαροὶ ἦσαν οἱ
 								ἄνθρωποι ἐκεῖνοι, ὧν αἱ ῥάβδοι τοιαῦται εὑρέθησαν. καὶ ὁ ἄγγελος ἐπὶ τούτοις
 								ἠγαλλιᾶτο, καὶ ὁ ποιμὴν λίαν ἱλαρὸς ἦν ἐπὶ τούτοις. </p>
 						</div>
@@ -3290,8 +3191,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="6">
 							<p> Τίνες οὖν, φημί, κύριε, εἰσὶν οἱ ἐστεφανωμένοι καὶ εἰς τὸν πύργον ὑπάγοντες; Ὅσοι,
-								φησίν, ἀντεπάλαισαν τῷ διαβόλῳ καὶ ἐνίκησαν αὐτόν, ἐστεφανωμένοι εἰσίν: <note n="2"
-									>o(/soi... ei)si/n retranslated from LE; instead of e)ni/khsan editors usnally
+								φησίν, ἀντεπάλαισαν τῷ διαβόλῳ καὶ ἐνίκησαν αὐτόν, ἐστεφανωμένοι εἰσίν: <note n="2">o(/soi... ei)si/n retranslated from LE; instead of e)ni/khsan editors usnally
 									read katepa/laisan, but this is not justified by the Latin (colluctati ...
 									nicerunt).</note> οὗτοί εἰσιν οἱ ὑπὲρ τοῦ νόμου παθόντες:</p>
 						</div>
@@ -3309,8 +3209,7 @@
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="section" n="1">
 							<p> Καὶ μετὰ ἡμέρας ὀλίγας ἤλθομεν εἰς τὸν τόπον, καὶ ἐκάθισεν ὁ ποιμὴν εἰς τὸν τόπον
-								τοῦ ἀγγέλου, κἀγὼ παρεστάθην αὐτῷ. καὶ λέγει μοι: Περίζωσαι ὠμόλινον καὶ <note n="1"
-									>kai\ diako/nei... w)mo/linon om. A.</note> διακόνει μοι. περιεζωσάμην ὠμόλινον ἐκ
+								τοῦ ἀγγέλου, κἀγὼ παρεστάθην αὐτῷ. καὶ λέγει μοι: Περίζωσαι ὠμόλινον καὶ <note n="1">kai\ diako/nei... w)mo/linon om. A.</note> διακόνει μοι. περιεζωσάμην ὠμόλινον ἐκ
 								σάκκου γεγονὸς καθαρόν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="2">
@@ -3363,13 +3262,11 @@
 						<div type="textpart" subtype="section" n="4">
 							<p> εἶτα ἐπέδωκαν οἱ τὰ δύο μέρη ξηρὰ ἔχοντες, τὸ δὲ τρίτον χλωρόν: πολλοὶ ἐξ αὐτῶν
 								ἡμιξήρους ἐπέδωκαν, τινὲς δὲ ξηρὰς καὶ βεβρωμένας, ἕτεροι δὲ ἡμιξήρους, καὶ σχισμὰς
-								ἐχούσας, ὀλίγοι δὲ χλωράς: οὗτοι πάντες ἔστησαν εἰς τὸ ἴδιον τάγμα. <note n="1"
-									>ei)=ta... ta/gma retranslated from LE, om. A.</note>
+								ἐχούσας, ὀλίγοι δὲ χλωράς: οὗτοι πάντες ἔστησαν εἰς τὸ ἴδιον τάγμα. <note n="1">ei)=ta... ta/gma retranslated from LE, om. A.</note>
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
-							<p> ἐπέδωκαν δὲ οἱ τὰς ῥάβδους αὐτῶν χλωρὰς ἐσχηκότες, ἐλάχιστον δὲ ξηρὸν <note n="2"
-									>chro/n LE, om. A.</note> καὶ σχισμὰς ἐχούσας: ἐκ τούτων τινὲς χλωρὰς ἐπέδωκαν,
+							<p> ἐπέδωκαν δὲ οἱ τὰς ῥάβδους αὐτῶν χλωρὰς ἐσχηκότες, ἐλάχιστον δὲ ξηρὸν <note n="2">chro/n LE, om. A.</note> καὶ σχισμὰς ἐχούσας: ἐκ τούτων τινὲς χλωρὰς ἐπέδωκαν,
 								τινὲς δὲ χλωρὰς καὶ παραφυάδας: ἀπῆλθον καὶ οὗτοι εἰς τὸ τάγμα αὐτῶν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="6">
@@ -3402,9 +3299,7 @@
 						<div type="textpart" subtype="section" n="4">
 							<p> Ἄκουε, φησίν: ὧν αἱ ῥάβδοι ξηραὶ καὶ βεβρωμέναι ὑπὸ σητὸς εὑρέθησαν, οὗτοί εἰσιν
 								οἱ ἀποστάται καὶ προδόται τῆς ἐκκλησίας καὶ βλασφημήσαντες <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg020:2.7 urn:cts:greekLit:tlg0527.tlg001:48.16"
-										>Jam. 2, 7 cf. Gen. 48, 16; etc.</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg020:2.7 urn:cts:greekLit:tlg0527.tlg001:48.16">Jam. 2, 7 cf. Gen. 48, 16; etc.</bibl>
 								</note> ἐν ταῖς ἁμαρτίαις αὐτῶν τὸν κύριον, ἔτι δὲ καὶ ἐπαισχυνθεντες τὸ ὄνομα
 								κυρίου τὸ ἐπικληθὲν ἐπ̓ αὐτούς. οὗτοι οὖν εἰς τέλος ἀπώλοντο τῷ θεῷ. βλέπεις δέ, ὅτι
 								οὐδὲ εἷς αὐτῶν μετενόησε, καίπερ ἀκούσαντες τὰ ῥήματα, ἃ ἐλάλησας αὐτοῖς, ἅ σοι
@@ -3417,8 +3312,7 @@
 								μωραῖς πείθοντες αὐτούς. οὗτοι οὖν ἔχουσιν ἐλπίδα τοῦ μετανοῆσαι.</p>
 						</div>
 						<div type="textpart" subtype="section" n="6">
-							<p> βλέπεις δὲ πολλοὺς ἐξ αὐτῶν καὶ μετανενοηκότας, <pb n="206"/> ἀφ̓ ἧς ἐλάλησα <note
-									n="1">e)la/lhsa A, e)la/lhsas L, <q>nuntiatum est</q> E.</note> αὐτοῖς τὰς ἐντολάς
+							<p> βλέπεις δὲ πολλοὺς ἐξ αὐτῶν καὶ μετανενοηκότας, <pb n="206"/> ἀφ̓ ἧς ἐλάλησα <note n="1">e)la/lhsa A, e)la/lhsas L, <q>nuntiatum est</q> E.</note> αὐτοῖς τὰς ἐντολάς
 								μου: καὶ ἔτι μετανοήσουσιν. ὅσοι δὲ οὐ μετανοήσουσιν, ἀπώλεσαν τὴν ζωὴν αὐτῶν. ὅσοι
 								δὲ μετενόησαν ἐξ αὐτῶν, ἀγαθοὶ ἐγένοντο, καὶ ἐγένετο ἡ κατοικία αὐτῶν εἰς τὰ τείχη
 								τὰ πρῶτα: τινὲς δὲ καὶ εἰς τὸν πύργον ἀνέβησαν. βλέπεις οὖν, φησίν, ὅτι ἡ μετάνοια
@@ -3566,8 +3460,7 @@
 								ὅτι εἷς ἕκαστος τὰ ἴδια ἔργα ἐπιγνοὺς καὶ φοβηθεὶς τὸν θεὸν μετανοήσει.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
-							<p> ἀποκριθείς μοι λέγει: Ὅσοι, φησίν, ἐξ ὅλης καρδίας αὐτῶν μετανοήσωσι καὶ <note
-									n="2">metanoh/swsi kai/ LE, om. A.</note> καθαρίσωσιν ἑαυτοὺς ἀπὸ τῶν πονηριῶν
+							<p> ἀποκριθείς μοι λέγει: Ὅσοι, φησίν, ἐξ ὅλης καρδίας αὐτῶν μετανοήσωσι καὶ <note n="2">metanoh/swsi kai/ LE, om. A.</note> καθαρίσωσιν ἑαυτοὺς ἀπὸ τῶν πονηριῶν
 								αὐτῶν τῶν προειρημένων καὶ μηκέτι μηδὲν προσθῶσι ταῖς ἁμαρτίαις αὐτῶν, λήψονται
 								ἴασιν παρὰ τοῦ κυρίου τῶν προτέρων ἁμαρτιῶν, ἐὰν μὴ διψυχήσωσιν ἐπὶ <pb n="216"/>
 								ταῖς ἐντολαῖς ταύταις, καὶ ζήσονται τῷ θεῷ. ὅσοι δέ, φησίν, προσθῶσι ταῖς ἁμαρτίαις
@@ -3623,8 +3516,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="6">
 							<p> τὸ δὲ τέταρτον βοτάνας ἔχον ἡμιξήρους, τὰ μὲν ἐπάνω τῶν βοτανῶν χλωρά, τὰ δὲ πρὸς
-								ταῖς ῥίζαις ξηρά: τινὲς δὲ βοτάναι, ὅταν ὁ ἥλιος ἐπικεκαύκει, ξηραὶ ἐγίνοντο: <note
-									n="1">A adds to\ de\ o)/ros traxu\ li/an h)=n bota/nas e)/xon chra/s.</note>
+								ταῖς ῥίζαις ξηρά: τινὲς δὲ βοτάναι, ὅταν ὁ ἥλιος ἐπικεκαύκει, ξηραὶ ἐγίνοντο: <note n="1">A adds to\ de\ o)/ros traxu\ li/an h)=n bota/nas e)/xon chra/s.</note>
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="7">
@@ -3669,8 +3561,7 @@
 								δὲ εἰς τὰ τέσσαρα μέρη τῆς πύλης, ἀνὰ μέσον αὐτῶν ἀνὰ δύο παρθένοι.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
-							<p> ἐνδεδυμέναι δὲ <pb n="222"/> ἦσαν λινοῦς χιτῶνας καὶ περιεζωσμέναι ἦσαν <note
-									n="1">h)=san PAmh, om. A.</note> εὐπρεπῶς, ἔξω τοὺς ὤμους ἔχουσαι τοὺς δεξιοὺς ὡς
+							<p> ἐνδεδυμέναι δὲ <pb n="222"/> ἦσαν λινοῦς χιτῶνας καὶ περιεζωσμέναι ἦσαν <note n="1">h)=san PAmh, om. A.</note> εὐπρεπῶς, ἔξω τοὺς ὤμους ἔχουσαι τοὺς δεξιοὺς ὡς
 								μέλλουσαι φορτίον τι βαστάζειν. οὕτως ἕτοιμοι ἦσαν: λίαν γὰρ ἱλαραὶ ἦσαν καὶ
 								πρόθυμοι.</p>
 						</div>
@@ -3695,8 +3586,7 @@
 						<div type="textpart" subtype="section" n="1">
 							<p> Εἶδον ἓξ ἄνδρας ἐληλυθότας ὑψηλοὺς καὶ ἐνδόξους καὶ ὁμοίους τῇ ἰδέᾳ: καὶ ἐκάλεσαν
 								πλῆθός τι ἀνδρῶν. κἀκεῖνοι δὲ οἱ ἐληλυθότες ὑψηλοὶ ἦσαν ἄνδρες καὶ καλοὶ καὶ
-								δυνατοί: καὶ ἐκέλευσαν αὐτοὺς οἱ ἓξ ἄνδρες οἰκοδομεῖν ἐπάνω τῆς πέτρας <note n="2"
-									>pe/tras AE, pe/tras kai\ e)pa/nw th=s pu/lhs L.</note> πύργον τινά. ἦν δὲ θόρυβος
+								δυνατοί: καὶ ἐκέλευσαν αὐτοὺς οἱ ἓξ ἄνδρες οἰκοδομεῖν ἐπάνω τῆς πέτρας <note n="2">pe/tras AE, pe/tras kai\ e)pa/nw th=s pu/lhs L.</note> πύργον τινά. ἦν δὲ θόρυβος
 								τῶν ἀνδρῶν ἐκείνων μέγας τῶν ἐληλυθότων οἰκοδομεῖν τὸν πύργον ὧδε κἀκεῖσε
 								περιτρεχόντων <pb n="224"/> κύκλῳ τῆς πύλης.</p>
 						</div>
@@ -3943,13 +3833,11 @@
 						<div type="textpart" subtype="section" n="6">
 							<p> εἶτα κατενόει τοὺς τραχεῖς, καὶ σκληροὺς καὶ ὀλίγοι ἐξ αὐτῶν ἀπεβλήθησαν διὰ τὸ μὴ
 								δύνασθαι λατομηθῆναι: σκληροὶ γὰρ λίαν εὑρέθησαν. οἱ δὲ λοιποὶ αὐτῶν ἐλατομήθησαν
-								καὶ ἤρθησαν ὑπὸ τῶν παρθένων καὶ εἰς μέσην τὴν οἰκοδομὴν τοῦ πύργου ἡρμόσθησαν: <pb
-									n="240"/> ἀσθενέστεροι γὰρ ἦσαν.</p>
+								καὶ ἤρθησαν ὑπὸ τῶν παρθένων καὶ εἰς μέσην τὴν οἰκοδομὴν τοῦ πύργου ἡρμόσθησαν: <pb n="240"/> ἀσθενέστεροι γὰρ ἦσαν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="7">
 							<p> εἶτα κατενόει τοὺς ἔχοντας τοὺς σπίλους, καὶ ἐκ τούτων ἐλάχιστοι ἐμελάνησαν καὶ
-								ἀπεβλήθησαν πρὸς τοὺς λοιπούς. οἱ δὲ περισσεύοντες λαμπροὶ καὶ ὑγιεῖς <note n="1"
-									>u(giei=s L, e)kei=noi A, om. E.</note> εὑρέθησαν: καὶ οὗτοι ἡρμόσθησαν ὑπὸ τῶν
+								ἀπεβλήθησαν πρὸς τοὺς λοιπούς. οἱ δὲ περισσεύοντες λαμπροὶ καὶ ὑγιεῖς <note n="1">u(giei=s L, e)kei=noi A, om. E.</note> εὑρέθησαν: καὶ οὗτοι ἡρμόσθησαν ὑπὸ τῶν
 								παρθένων εἰς τὴν οἰκοδομήν, ἐξώτεροι δὲ ἐτέθησαν διὰ τὴν ἰσχυρότητα αὐτῶν. </p>
 						</div>
 					</div>
@@ -4099,12 +3987,9 @@
 									e)sti A, om. L.</note> Ἡ δὲ πύλη διατί καινή, φημί, κύριε;</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
-							<p> Ὅτι, φησίν, ἐπ̓ ἐσχάτων τῶν ἡμερῶν τῆς συντελείας φανερὸς ἐγένετο, διὰ τοῦτο <pb
-									n="250"/> καινὴ ἐγένετο ἡ πύλη, ἵνα οἱ μέλλοντες σώζεσθαι δἰ αὐτῆς εἰς τὴν
+							<p> Ὅτι, φησίν, ἐπ̓ ἐσχάτων τῶν ἡμερῶν τῆς συντελείας φανερὸς ἐγένετο, διὰ τοῦτο <pb n="250"/> καινὴ ἐγένετο ἡ πύλη, ἵνα οἱ μέλλοντες σώζεσθαι δἰ αὐτῆς εἰς τὴν
 								βασιλείαν εἰσέλθωσι τοῦ θεοῦ. <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg004:3.5 urn:cts:greekLit:tlg0031.tlg002:9.47 urn:cts:greekLit:tlg0031.tlg002:10.23-10.25 urn:cts:greekLit:tlg0031.tlg001:5.20 urn:cts:greekLit:tlg0031.tlg001:7.21 urn:cts:greekLit:tlg0031.tlg001:18.3"
-										>Jo. 3, 5 cf. Mc. 9, 47; 10, 23-25; Mt. 5, 20; 7, 21; 18, 3</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg004:3.5 urn:cts:greekLit:tlg0031.tlg002:9.47 urn:cts:greekLit:tlg0031.tlg002:10.23-10.25 urn:cts:greekLit:tlg0031.tlg001:5.20 urn:cts:greekLit:tlg0031.tlg001:7.21 urn:cts:greekLit:tlg0031.tlg001:18.3">Jo. 3, 5 cf. Mc. 9, 47; 10, 23-25; Mt. 5, 20; 7, 21; 18, 3</bibl>
 								</note>
 							</p>
 						</div>
@@ -4112,8 +3997,7 @@
 							<p> εἶδες, φησίν, τοὺς λίθους τοὺς διὰ τῆς πύλης εἰσεληλυθότας εἰς τὴν οἰκοδομὴν τοῦ
 								πύργου βεβλημένους, <note n="1">beblhme/nous om. A.</note> τοὺς δὲ μὴ εἰσεληλυθότας
 								πάλιν ἀποβεβλημένους εἰς τὸν ἴδιον τόπον; Εἶδον, φημί, κύριε. Οὕτω, φησίν, εἰς τὴν
-								βασιλείαν τοῦ θεοῦ οὐδεὶς εἰσελεύσεται, εἰ μὴ λάβοι τὸ ὄνομα τὸ ἅγιον <note n="2"
-									>to\ a(/gion A, tou= ui(ou= au)tou= E, tou= ui(ou= tou= qeou= L.</note> αὐτοῦ.</p>
+								βασιλείαν τοῦ θεοῦ οὐδεὶς εἰσελεύσεται, εἰ μὴ λάβοι τὸ ὄνομα τὸ ἅγιον <note n="2">to\ a(/gion A, tou= ui(ou= au)tou= E, tou= ui(ou= tou= qeou= L.</note> αὐτοῦ.</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
 							<p> ἐὰν γὰρ εἰς πόλιν θελήσῃς εἰσελθεῖν τινα κἀκείνη ἡ πόλις περιτετειχισμένη κύκλῳ
@@ -4138,8 +4022,7 @@
 								φημί, κύριε.</p>
 						</div>
 						<div type="textpart" subtype="section" n="8">
-							<p> Ὁ ἔνδοξος, φησίν, ἀνὴρ ὁ υἱὸς τοῦ θεοῦ ἐστι, κἀκεῖνοι οἱ ἓξ οἱ ἔνδοξοι ἄγγελοί <pb
-									n="252"/> εἰσι δεξιὰ καὶ εὐώνυμα συγκρατοῦντες αὐτόν. τούτων, φησί, τῶν ἀγγέλων
+							<p> Ὁ ἔνδοξος, φησίν, ἀνὴρ ὁ υἱὸς τοῦ θεοῦ ἐστι, κἀκεῖνοι οἱ ἓξ οἱ ἔνδοξοι ἄγγελοί <pb n="252"/> εἰσι δεξιὰ καὶ εὐώνυμα συγκρατοῦντες αὐτόν. τούτων, φησί, τῶν ἀγγέλων
 								τῶν ἐνδόξων οὐδεὶς εἰσελεύσεται πρὸς τὸν θεὸν ἄτερ αὐτοῦ: ὃς ἂν τὸ ὄνομα αὐτοῦ μὴ
 								λάβῃ, οὐκ εἰσελεύσεται εἰς τὴν βασιλείαν τοῦ θεοῦ. </p>
 						</div>
@@ -4164,8 +4047,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="4">
 							<p> ὅσους, φησί, λίθους εἶδες εἰς τὴν οἰκοδομὴν τοῦ πύργου εἰσεληλυθότας,
-								ἐπιδεδομένους διὰ τῶν χειρῶν αὐτῶν καὶ μείναντας εἰς τὴν οἰκοδομήν, <note n="1"
-									>Retranslated from LE, om. A.</note> τούτων τῶν παρθένων τὴν δύναμιν <pb n="254"/>
+								ἐπιδεδομένους διὰ τῶν χειρῶν αὐτῶν καὶ μείναντας εἰς τὴν οἰκοδομήν, <note n="1">Retranslated from LE, om. A.</note> τούτων τῶν παρθένων τὴν δύναμιν <pb n="254"/>
 								ἐνδεδυμένοι εἰσί.</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
@@ -4187,16 +4069,12 @@
 								δούλων τοῦ <note>
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg010:4.4">Eph. 4, 4</bibl>
 								</note> θεοῦ, καὶ ἦν αὐτῶν ἓν πνεῦμα καὶ ἓν σῶμα καὶ ἓν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg008:13.11 urn:cts:greekLit:tlg0031.tlg011:2.2 urn:cts:greekLit:tlg0031.tlg011:3.16 urn:cts:greekLit:tlg0031.tlg011:4.2 urn:cts:greekLit:tlg0031.tlg006:12.16"
-										>II Cor. 13, 11; Philipp, 2, 2; 3, 16; 4, 2; Rom. 12, 16</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg008:13.11 urn:cts:greekLit:tlg0031.tlg011:2.2 urn:cts:greekLit:tlg0031.tlg011:3.16 urn:cts:greekLit:tlg0031.tlg011:4.2 urn:cts:greekLit:tlg0031.tlg006:12.16">II Cor. 13, 11; Philipp, 2, 2; 3, 16; 4, 2; Rom. 12, 16</bibl>
 								</note> ἔνδυμα: τὰ γὰρ αὐτὰ ἐφρόνουν καὶ δικαιοσύνην εἰργάζοντο.</p>
 						</div>
 						<div type="textpart" subtype="section" n="8">
 							<p> μετὰ οὖν χρόνον τινὰ ἀνεπείσθησαν ὑπὸ τῶν γυναικῶν ὧν εἶδες μέλανα ἱμάτια <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:14.2 urn:cts:greekLit:tlg0031.tlg005:10.35 urn:cts:greekLit:tlg0527.tlg029:11.33"
-										>Ps. 14, 2; Acts 10, 35; Heb. 11, 33</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:14.2 urn:cts:greekLit:tlg0031.tlg005:10.35 urn:cts:greekLit:tlg0527.tlg029:11.33">Ps. 14, 2; Acts 10, 35; Heb. 11, 33</bibl>
 								</note> ἐνδεδυμένων, τοὺς ὤμους ἔξω ἐχουσῶν καὶ τὰς τρίχας λελυμένας καὶ εὐμόρφων:
 								ταύτας ἰδόντες ἐπεθύμησαν αὐτῶν καὶ ἐνεδύσαντο τὴν δύναμιν αὐτῶν, τῶν δὲ παρθένων
 								ἀπεδύσαντο τὸ ἔνδυμα καὶ τὴν δύναμιν. <note n="1">th\n du/namin AL2, to\ e)/nduma L1
@@ -4221,8 +4099,7 @@
 							<p> Εἰσελεύσονται, φησίν, ἐὰν τούτων τῶν γυναικῶν ἀποβάλωσι τὰ ἔργα, τῶν δὲ παρθένων
 								ἀναλάβωσι τὴν δύναμιν καὶ ἐν τοῖς ἔργοις αὐτῶν πορευθῶσι: διὰ τοῦτο γὰρ καὶ τῆς
 								οἰκοδομῆς ἀνοχὴ ἐγένετο, ἵνα, ἐὰν μετανοήσωσιν οὗτοι, ἀπέλθωσιν εἰς τὴν οἰκοδομὴν
-								τοῦ πύργου. ἐὰν δὲ μὴ μετανοήσωσι, τότε ἄλλοι εἰσελεύσονται, <note n="1"
-									>ei)seleu/sontai LE, a)peleu/sontai A.</note> καὶ οὗτοι εἰς τέλος
+								τοῦ πύργου. ἐὰν δὲ μὴ μετανοήσωσι, τότε ἄλλοι εἰσελεύσονται, <note n="1">ei)seleu/sontai LE, a)peleu/sontai A.</note> καὶ οὗτοι εἰς τέλος
 								ἐκβληθήσονται.</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
@@ -4305,8 +4182,7 @@
 							<p> Ἀνάγκην, φησίν, εἶχον δἰ ὕδατος ἀναβῆναι, <note>
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg004:3.5">Jo. 3, 5</bibl>
 								</note> ἵνα ζωοποιηθῶσιν: οὐκ ἠδύναντο γὰρ ἄλλως <pb n="262"/> εἰσελθεῖν εἰς τὴν
-								βασιλείαν τοῦ θεοῦ, εἰ μὴ τὴν νέκρωσιν ἀπέθεντο τῆς ζωῆς αὐτῶν τῆς προτέρας. <note
-									n="1">th=s prote/ras LE, om. A.</note>
+								βασιλείαν τοῦ θεοῦ, εἰ μὴ τὴν νέκρωσιν ἀπέθεντο τῆς ζωῆς αὐτῶν τῆς προτέρας. <note n="1">th=s prote/ras LE, om. A.</note>
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="3">
@@ -4413,9 +4289,7 @@
 						<div type="textpart" subtype="section" n="5">
 							<p> Ἔτι, φημί, κύριε, τῶν ὀρέων ἑνὸς ἑκάστου δήλωσόν μοι τὴν δύναμιν καὶ τὰς πράξεις,
 								ἵνα πᾶσα ψυχὴ πεποιθυῖα ἐπὶ τὸν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0527.tlg027:9.2 urn:cts:greekLit:tlg0527.tlg027:86.9-86.12 urn:cts:greekLit:tlg0527.tlg027:99.3"
-										>Ps. 9, 2; 86, 9, 12; 99, 3</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0527.tlg027:9.2 urn:cts:greekLit:tlg0527.tlg027:86.9-86.12 urn:cts:greekLit:tlg0527.tlg027:99.3">Ps. 9, 2; 86, 9, 12; 99, 3</bibl>
 								</note> κύριον ἀκούσασα δοξάσῃ τὸ μέγα καὶ θαυμαστὸν καὶ ἔνδοξον ὄνομα αὐτοῦ. Ἄκουε,
 								φησί, τῶν ὀρέων τὴν ποικιλίαν καὶ τῶν δώδεκα ἐθνῶν. </p>
 						</div>
@@ -4430,9 +4304,7 @@
 						<div type="textpart" subtype="section" n="2">
 							<p> ἐκ δὲ τοῦ δευτέρου ὄρους τοῦ ψιλοῦ οἱ πιστεύσαντες τοιοῦτοί εἰσιν: ὑποκριταὶ καὶ
 								διδάσκαλοι πονηρίας. καὶ οὗτοι οὖν τοῖς <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg011:1.11 urn:cts:greekLit:tlg0527.tlg019:12.11 urn:cts:greekLit:tlg0031.tlg020:3.18"
-										>Philipp. 1, 11; Heb. 12, 11; Jam. 3, 18;</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg011:1.11 urn:cts:greekLit:tlg0527.tlg019:12.11 urn:cts:greekLit:tlg0031.tlg020:3.18">Philipp. 1, 11; Heb. 12, 11; Jam. 3, 18;</bibl>
 								</note> προτέροις ὅμοιοί εἰσι, μὴ ἔχοντες καρπὸν δικαιοσύνης: ὡς γὰρ τὸ ὄρος αὐτῶν
 								ἄκαρπον, οὕτω καὶ οἱ ἄνθρωποι οἱ τοιοῦτοι ὄνομα μὲν ἔχουσιν, ἀπὸ δὲ τῆς πίστεως
 								κενοί εἰσι καὶ οὐδεὶς ἐν αὐτοῖς καρπὸς ἀληθείας. τούτοις οὖν μετάνοια κεῖται, ἐὰν
@@ -4454,19 +4326,14 @@
 							<p> Ἐκ δὲ τοῦ ὄρους τοῦ τρίτου τοῦ ἔχοντος ἀκάνθας καὶ τριβόλους οἱ πιστεύσαντες
 								τοιοῦτοί εἰσιν. ἐξ αὐτῶν οἱ μὲν πλούσιοι, οἱ δὲ πραγματείαις πολλαῖς ἐμπεφυρμένοι.
 								οἱ μὲν τρίβολοί εἰσιν οἱ πλούσιοι, αἱ δὲ ἄκανθαι οἱ ἐν ταῖς πραγματείαις <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:13.22 urn:cts:greekLit:tlg0031.tlg002:4.18-4.19"
-										>Mt. 13, 22; Mc. 4, 18. 19</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:13.22 urn:cts:greekLit:tlg0031.tlg002:4.18-4.19">Mt. 13, 22; Mc. 4, 18. 19</bibl>
 								</note> ταῖς ποικίλαις ἐμπεφυρμένοι.</p>
 						</div>
 						<div type="textpart" subtype="section" n="2">
-							<p> οὗτοι οὖν, οἱ ἐν πολλαῖς καὶ ποικίλαις πραγματείαις ἐμπεφυρμένοι, οὐ <note n="2"
-									>ou)=n... ou) retranslated from LE, om. A.</note> κολλῶνται τοῖς δούλοις τοῦ θεοῦ,
+							<p> οὗτοι οὖν, οἱ ἐν πολλαῖς καὶ ποικίλαις πραγματείαις ἐμπεφυρμένοι, οὐ <note n="2">ou)=n... ou) retranslated from LE, om. A.</note> κολλῶνται τοῖς δούλοις τοῦ θεοῦ,
 								ἀλλ̓ ἀποπλανῶνται πνιγόμενοι ὑπὸ τῶν πράξεων αὐτῶν: οἱ δὲ πλούσιοι δυσκόλως
 								κολλῶνται τοῖς δούλοις τοῦ θεοῦ, φοβούμενοι, μή τι <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:19.23 urn:cts:greekLit:tlg0031.tlg002:10.23 urn:cts:greekLit:tlg0031.tlg003:18.24"
-										>Mt. 19, 23; Mc. 10, 23; Luk. 18, 24</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:19.23 urn:cts:greekLit:tlg0031.tlg002:10.23 urn:cts:greekLit:tlg0031.tlg003:18.24">Mt. 19, 23; Mc. 10, 23; Luk. 18, 24</bibl>
 								</note> αἰτισθῶσιν ὑπ̓ αὐτῶν: οἱ τοιοῦτοι οὖν δυσκόλως εἰσελεύσονται εἰς τὴν
 								βασιλείαν τοῦ θεοῦ.</p>
 						</div>
@@ -4494,8 +4361,7 @@
 						</div>
 						<div type="textpart" subtype="section" n="2">
 							<p> διὰ τοῦτο τὰ θεμέλια αὐτῶν ξηρά ἐστι καὶ δύναμιν μὴ ἔχοντα, καὶ τὰ ῥήματα αὐτῶν
-								μόνα ζῶσι, τὰ δὲ ἔργα αὐτῶν νεκρά ἐστιν. οἱ τοιοῦτοι οὔτε ζῶσιν οὔτε <note n="2"
-									>ou)/te zw=sin, ou)/te LE, om. A.</note> τεθνήκασιν. ὅμοιοι οὖν εἰσὶ τοῖς
+								μόνα ζῶσι, τὰ δὲ ἔργα αὐτῶν νεκρά ἐστιν. οἱ τοιοῦτοι οὔτε ζῶσιν οὔτε <note n="2">ou)/te zw=sin, ou)/te LE, om. A.</note> τεθνήκασιν. ὅμοιοι οὖν εἰσὶ τοῖς
 								διψύχοις: καὶ γὰρ οἱ δίψυχοι οὔτε χλωροί εἰσιν οὔτε ξηροί: οὔτε γὰρ ζῶσιν οὔτε
 								τεθνήκασιν.</p>
 						</div>
@@ -4505,8 +4371,7 @@
 								εἰδωλολατροῦσι καὶ τὸ ὄνομα ἐπαισχύνονται τοῦ κυρίου αὐτῶν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
-							<p> οἱ τοιοῦτοι οὖν οὔτε ζῶσιν <note n="4">ou)/te zw=sin LE, om. A.</note> οὔτε <pb
-									n="274"/> τεθνήκασιν. ἀλλὰ καὶ οὗτοι ἐὰν ταχὺ μετανοήσωσιν, δυνήσονται ζῆσαι: ἐὰν
+							<p> οἱ τοιοῦτοι οὖν οὔτε ζῶσιν <note n="4">ou)/te zw=sin LE, om. A.</note> οὔτε <pb n="274"/> τεθνήκασιν. ἀλλὰ καὶ οὗτοι ἐὰν ταχὺ μετανοήσωσιν, δυνήσονται ζῆσαι: ἐὰν
 								δὲ μὴ μετανοήσωσιν, <note n="1">dunh/sontai... metanoh/swsin retranslated from LE,
 									om. A.</note> ἤδη παραδεδομένοι εἰσὶ ταῖς γυναιξὶ ταῖς ἀποφερομέναις τὴν ζωὴν
 								αὐτῶν. </p>
@@ -4622,9 +4487,7 @@
 							<p> οἱ δὲ ἐψωριακότες, οὗτοι οἱ ἀρνησάμενοί εἰσι καὶ μὴ ἐπιστρέψαντες ἐπὶ τὸν κύριον
 								ἑαυτῶν, ἀλλὰ χερσωθέντες καὶ γενόμενοι ἐρημώδεις: μὴ κολλώμενοι τοῖς δούλοις τοῦ
 								θεοῦ, ἀλλὰ μονάζοντες <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:10.39 urn:cts:greekLit:tlg0031.tlg003:9.24 urn:cts:greekLit:tlg0031.tlg003:17.33 urn:cts:greekLit:tlg0031.tlg004:12.25"
-										>Mt. 10, 39; Luk. 9, 24; 17, 33; Joh. 12, 25</bibl>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:10.39 urn:cts:greekLit:tlg0031.tlg003:9.24 urn:cts:greekLit:tlg0031.tlg003:17.33 urn:cts:greekLit:tlg0031.tlg004:12.25">Mt. 10, 39; Luk. 9, 24; 17, 33; Joh. 12, 25</bibl>
 								</note> ἀπολλύουσι τὰς ἑαυτῶν ψυχάς.</p>
 						</div>
 						<div type="textpart" subtype="section" n="4">
@@ -4705,11 +4568,8 @@
 									<bibl corresp="urn:cts:greekLit:tlg0031.tlg021:4.13-4.16">I Pet. 4, 13. 15,
 										16;</bibl>
 								</note> ὑμῶν καὶ ἀποθάνητε τῷ θεῷ. ὑμεῖς δὲ οἱ πάσχοντες ἕνεκεν τοῦ ὀνόματος
-								δοξάζειν ὀφείλετε τὸν θεόν, ὅτι ἀξίους ὑμᾶς ἡγήσατο ὁ θεός, ἵνα τοῦτο <note n="1"
-									>tou=to L2, tou/tou A, au)tou= L1E.</note> τὸ ὄνομα βαστάζητε καὶ πᾶσαι ὑμῶν <note>
-									<bibl
-										corresp="urn:cts:greekLit:tlg0031.tlg001:5.11-5.12 urn:cts:greekLit:tlg0031.tlg003:6.22 urn:cts:greekLit:tlg0031.tlg021:4.14"
-										>Mt. 5, 11. 12; Luk. 6, 22; 1 Pet. 4, 14</bibl>
+								δοξάζειν ὀφείλετε τὸν θεόν, ὅτι ἀξίους ὑμᾶς ἡγήσατο ὁ θεός, ἵνα τοῦτο <note n="1">tou=to L2, tou/tou A, au)tou= L1E.</note> τὸ ὄνομα βαστάζητε καὶ πᾶσαι ὑμῶν <note>
+									<bibl corresp="urn:cts:greekLit:tlg0031.tlg001:5.11-5.12 urn:cts:greekLit:tlg0031.tlg003:6.22 urn:cts:greekLit:tlg0031.tlg021:4.14">Mt. 5, 11. 12; Luk. 6, 22; 1 Pet. 4, 14</bibl>
 								</note> αἱ ἁμαρτίαι ἰαθῶσιν.</p>
 						</div>
 						<div type="textpart" subtype="section" n="6">
@@ -4818,8 +4678,7 @@
 							<p> διξο αυτεμ ομνιβυς, ϝοβις, #3υιξυμ#3υε σιγιλλυμ ηοξ αξξεπιστις, σιμπλιξιτατεμ
 								ηαβερε νε#3υε οφφενσαρυμ μεμορες εσσε νε#3υε ιν μαλιτια ϝεστρα περμανερε αυτ ιν
 								μεμορια οφφενσαρυμ αμαριτυδινις, ιν υνυμ #3υεμ#3υε σπιριτυμ φιερι ετ ηας μαλας
-								σξισσυρας περμεδιαρε αξ τολλερε α ϝοβις, υτ δομινυς πεξορυμ γαυδεατ δε ηις. <note
-									n="1">The Greek shich folloss is a #3uotation preserved in Antiochus.</note>
+								σξισσυρας περμεδιαρε αξ τολλερε α ϝοβις, υτ δομινυς πεξορυμ γαυδεατ δε ηις. <note n="1">The Greek shich folloss is a #3uotation preserved in Antiochus.</note>
 							</p>
 						</div>
 						<div type="textpart" subtype="section" n="5">
