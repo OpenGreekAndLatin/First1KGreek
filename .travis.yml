@@ -6,7 +6,7 @@ python:
 install:
   - pip3 install HookTest==0.2.2
 
-script: hooktest --scheme epidoc --workers 3 --verbose --travis --countword ./ --from_travis_to_hook "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
+script: hooktest --scheme epidoc --workers 3 --verbose --travis --countword --allowfailure ./ --from_travis_to_hook "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
 
 before_deploy:
   - hooktest-build --travis ./
