@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader xml:lang="eng">
@@ -49,7 +49,7 @@
         <biblStruct>
           <monogr>
             <title xml:lang="lat">Corpus apologetarum christianorum saeculi secvndi</title>
-            <author xml:lang="lat">>Theophilus Antiochenus</author>
+            <author xml:lang="lat">&gt;Theophilus Antiochenus</author>
             <editor role="editor">Johann Carl Theodor Otto</editor>
             <imprint>
               <publisher xml:lang="lat">prostat apud Frieder. Mauke</publisher>
@@ -63,7 +63,7 @@
         
         </sourceDesc>
     </fileDesc><encodingDesc>
-<refsDecl n="CTS">
+  <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>

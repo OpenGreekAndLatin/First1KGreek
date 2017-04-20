@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">    
     <fileDesc>
-<titleStmt><title>COMENTARIA IN ARISTOTELEM GRAECA</title>
-<editor>ADOLFUS BUSSE</editor>
+<titleStmt><title xml:lang="lat">Isagoge sive quinque voces</title>
+	<author xml:lang="lat">Porphyrius</author>
+<editor>Adolf Busse</editor>
 <sponsor>University of Leipzig</sponsor>
 <funder>European Social Fund Saxony</funder>
 <principal>Gregory Crane</principal>
@@ -50,7 +51,7 @@
       </titleStmt>
       <publicationStmt>
 <authority>University of Leipzig</authority>
-<idno type="filename">TO BE ADDED BY LEIPZIG</idno>
+<idno type="filename">tlg2034.tlg006.opp-grc1.xml</idno>
 <availability>
  <p>
   <ref target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</ref></p>
@@ -60,30 +61,33 @@
 <pubPlace>Germany</pubPlace>
 </publicationStmt>
 <sourceDesc>
-<listBibl xml:lang="lat">
+<listBibl>
  <biblStruct>
  <monogr>
- <title>COMENTARIA IN ARISTOTELEM GRAECA</title>
+ <title xml:lang="lat">Porphyrii isagoge et in Aristotelis categorias commentarium</title>
  <editor>
 	<persName>
-	 <name xml:lang="lat">ADOLFUS BUSSE</name>
+	 <name xml:lang="lat">Adolf Busse</name>
 	</persName>
  </editor>
- <author ref="urn:tmp">ADOLFUS BUSSE</author>
+ <author ref="urn:cts:greekLit:tlg2034">Porphyrius</author>
  <imprint>
-	<publisher>TYPIS ET IMPENSIS GEORGII REIMERI</publisher>
-	<pubPlace>BEROLINI</pubPlace>
-	<date>MDCCCLXXXVII.</date>
+	<publisher>Reimer</publisher>
+	<pubPlace>Berlin</pubPlace>
+	<date>1887</date>
  </imprint>
- <biblScope n="volume">vol. iv.</biblScope>
  </monogr>
+<series>
+<title level="s">Commentaria in Aristotelem graeca</title>
+ <biblScope n="volume">Vol. IV, Part I</biblScope>
+</series>
  </biblStruct>
 </listBibl>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
 <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-  <refsDecl n="CTS">
+    <refsDecl n="CTS">
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -98,7 +102,7 @@
 </revisionDesc>
 </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg2034.tlg006.opp-grc1">
+    <body><div type="edition" n="urn:cts:greekLit:tlg2034.tlg006.opp-grc1" xml:lang="grc">
 <div type="textpart" subtype="chapter" n="1">
 <head>PORPHYRII ISAGOGE ET
 IN ARISTOTELIS CATEGORIAS

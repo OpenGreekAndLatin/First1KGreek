@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
         <title type="work" n="PB">Prometheus Bound</title>
@@ -37,7 +39,7 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <refsDecl n="CTS">
+        <refsDecl n="CTS">
         <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -58,9 +60,10 @@
      
       </change>
     </revisionDesc>
-  </teiHeader>
+</teiHeader>
+
   <text>
-    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg003.opp-grc3">
+    <body> <div type="edition" n="urn:cts:greekLit:tlg0085.tlg003.opp-grc3" xml:lang="grc">
       <pb/>
       <head>
         <foreign xml:lang="grc">Προμηθευς δεσμωτης</foreign>

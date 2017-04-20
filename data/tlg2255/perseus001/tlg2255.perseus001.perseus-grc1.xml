@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
+    
     <fileDesc>
       <titleStmt>
         <title>Encomium of Helen</title>
@@ -30,9 +32,8 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+)"
-          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
 
     </encodingDesc>
@@ -46,7 +47,8 @@
       <change who="Thibault Clerice" when="2016-05-17">Changed refsDecl, added seg element for
         capitains scheme, added del to reflect [spurious text]</change>
     </revisionDesc>
-  </teiHeader>
+</teiHeader>
+
 
   <text>
     <body>
@@ -135,8 +137,7 @@
         <div type="textpart" subtype="section" n="10">
           <p><seg n="10">αἱ γὰρ ἔνθεοι διὰ λόγων ἐπῳδαὶ ἐπαγωγοὶ ἡδονῆς, ἀπαγωγοὶ λύπης γίγνονται·
               συγγιγνομένη γὰρ τῇ δόξῃ τῆς ψυχῆς ἡ δύναμις τῆς ἐπῳδῆς ἔθελξε καὶ ἔπεισε καὶ
-              μετέστησεν αὐτὴν γοητείᾳ. γοητείας δὲ καὶ μαγείας δισσαὶ τέχναι <pb xml:id="v.3.p.155"
-              /> ηὕρηνται, αἵ εἰσι ψυχῆς ἁμαρτήματα καὶ δόξης ἀπατήματα.</seg>
+              μετέστησεν αὐτὴν γοητείᾳ. γοητείας δὲ καὶ μαγείας δισσαὶ τέχναι <pb xml:id="v.3.p.155"/> ηὕρηνται, αἵ εἰσι ψυχῆς ἁμαρτήματα καὶ δόξης ἀπατήματα.</seg>
           </p>
         </div>
         <div type="textpart" subtype="section" n="11">
@@ -162,12 +163,10 @@
               τοὺς τῶν μετεωρολόγων λόγους, οἵτινες δόξαν ἀντὶ δόξης τὴν μὲν ἀφελόμενοι τὴν δ᾿
               ἐνεργασάμενοι τὰ ἄπιστα καὶ ἄδηλα φαίνεσθαι τοῖς τῆς δόξης ὄμμασιν ἐποίησαν· δεύτερον
               δὲ τοὺς ἀναγκαίους διὰ λόγων ἀγῶνας, ἐν οἷς εἷς λόγος πολὺν ὄχλον ἔτερψε καὶ ἔπεισε
-              τέχνῃ γραφείς, οὐκ ἀληθείᾳ λεχθείς· τρίτον φιλοσόφων λόγων ἁμίλλας, ἐν αἷς <pb
-                ed="alt" n="683"/> δείκνυται καὶ γνώμης τάχος <add>καὶ . . . . . </add> ὡς
+              τέχνῃ γραφείς, οὐκ ἀληθείᾳ λεχθείς· τρίτον φιλοσόφων λόγων ἁμίλλας, ἐν αἷς <pb ed="alt" n="683"/> δείκνυται καὶ γνώμης τάχος <add>καὶ . . . . . </add> ὡς
               εὐμετάβολον ποιοῦσι τὴν τῆς δόξης πίστιν. </seg></p>
         </div>
-        <div type="textpart" subtype="section" n="14"><p><seg
-              n="14">τὸν αὐτὸν δὲ λόγον ἔχει ἥ τε τοῦ λόγου δύναμις πρὸς τὴν τῆς ψυχῆς τάξιν ἥ τε
+        <div type="textpart" subtype="section" n="14"><p><seg n="14">τὸν αὐτὸν δὲ λόγον ἔχει ἥ τε τοῦ λόγου δύναμις πρὸς τὴν τῆς ψυχῆς τάξιν ἥ τε
               τῶν φαρμάκων τάξις πρὸς τὴν τῶν σωμάτων φύσιν. ὥσπερ γὰρ τῶν φαρμάκων ἄλλους ἄλλα
               χυμοὺς ἐκ τοῦ σώματος ἐξάγει, καὶ τὰ μὲν νόσου <pb xml:id="v.3.p.157"/> τὰ δὲ βίου
               παύει, οὕτω καὶ τῶν λόγων οἱ μὲν ἐλύπησαν, οἱ δὲ ἔτερψαν, οἱ δὲ ἐφόβησαν, οἱ δὲ εἰς
@@ -196,8 +195,7 @@
           <p><seg n="17">ἤδη δέ τινες ἰδόντες φοβερὰ καὶ τοῦ παρόντος ἐν τῷ παρόντι χρόνῳ φρονήματος
               ἐξέστησαν· οὕτως ἀπέσβεσε καὶ ἐξήλασεν ὁ φόβος τὸ νόημα. πολλοὶ δὲ καὶ ματαίοις πόνοις
               καὶ δειναῖς νόσοις καὶ δυσιάτοις μανίαις περιέπεσον· οὕτως εἰκόνας τῶν ὁρωμένων
-              πραγμάτων ἡ ὄψις ἐνέγραψεν ἐν τῷ φρονήματι. καὶ τὰ μὲν δειματοῦντα <pb ed="alt"
-                n="684"/> πολλὰ μὲν παραλείπεται, ὅμοια δ᾿ ἐστὶ τὰ παραλειπόμενα οἷάπερ τὰ
+              πραγμάτων ἡ ὄψις ἐνέγραψεν ἐν τῷ φρονήματι. καὶ τὰ μὲν δειματοῦντα <pb ed="alt" n="684"/> πολλὰ μὲν παραλείπεται, ὅμοια δ᾿ ἐστὶ τὰ παραλειπόμενα οἷάπερ τὰ
               λεγόμενα.</seg>
           </p>
         </div>

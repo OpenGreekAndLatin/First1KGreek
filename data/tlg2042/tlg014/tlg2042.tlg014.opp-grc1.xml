@@ -2,6 +2,7 @@
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
+    
         <fileDesc>
             <titleStmt><title>Fragmenta in Librum Primum Regnorum (In Catenis de Samuelis et
                     Regnorum)</title>
@@ -86,7 +87,7 @@
         </fileDesc>
         <encodingDesc>
             <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-            <refsDecl n="CTS">
+              <refsDecl n="CTS">
                 <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
@@ -100,10 +101,11 @@
                 015, removed sections, put references in headers, corrected metadata, added ref,
                 removed lat tag, made marginalia milestones, expanded pb.</change>
         </revisionDesc>
-    </teiHeader>
+  </teiHeader>
+
     <text>
         <body>
-            <div type="edition" n="urn:cts:greekLit:tlg2042.tlg014.opp-grc1">
+            <div type="edition" n="urn:cts:greekLit:tlg2042.tlg014.opp-grc1" xml:lang="grc">
                 <pb n="295"/>
                 <head>Die Fragmente aus der Katene zu den Samuel- und Königsbüchern.</head>
                 <note>c = cod. Coisl. 8 saec. X. s = cod. Scor. Σ—Π—19 saec. XIII. <lb n="5"/> V =

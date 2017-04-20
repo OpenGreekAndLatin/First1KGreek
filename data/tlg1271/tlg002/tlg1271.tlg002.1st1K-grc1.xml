@@ -66,12 +66,9 @@
         </fileDesc>
         <encodingDesc>
             <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
-            <refsDecl n="CTS">
-                <cRefPattern n="section" matchPattern="(.+).(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern n="chapter" matchPattern="(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
-                />
+              <refsDecl n="CTS">
+                <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
         <profileDesc>
@@ -80,10 +77,11 @@
                 <language ident="lat">Latin</language>
             </langUsage>
         </profileDesc>
-    </teiHeader>
+  </teiHeader>
+
     <text>
         <body>
-            <div type="edition" n="urn:cts:greekLit:tlg1271.tlg002.1st1K-grc1">
+            <div type="edition" n="urn:cts:greekLit:tlg1271.tlg002.1st1K-grc1" xml:lang="grc">
                 <pb n="128"/>
 
                 <div type="textpart" subtype="chapter" n="1">
@@ -143,9 +141,7 @@
                         <p> δ δὲ εἶπεν: Ὅτι πολλὰ τὰ τέκνα τῆς ἐρήμου μᾶλλον ἢ τῆς ἐχούσης τὸν
                             ἄνδρα: ἐπεὶ ἔρημος ἐδόκει εἶναι ἀπὸ τοῦ θεοῦ ὁ λαὸς ἡμῶν. νυνὶ δὲ
                             πιστεύσαντες πλείονες ἐγενόμεθα τῶν δοκούντων <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:9.18
-                                    urn:cts:greekLit:tlg0031.tlg002:2.17
-                                    urn:cts:greekLit:tlg0031.tlg003:5.32">Mt. 9, 18, Mk. 2, 17; Luke
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:9.18                                     urn:cts:greekLit:tlg0031.tlg002:2.17                                     urn:cts:greekLit:tlg0031.tlg003:5.32">Mt. 9, 18, Mk. 2, 17; Luke
                                     5, 32</bibl>
                             </note> ἔχειν θεόν. </p>
                     </div>
@@ -164,8 +160,7 @@
                         <p> οὕτως καὶ ὁ Χριστὸς ἠθέλησεν σῶσαι τὰ ἀπολλύμενα, καὶ <note>
                                 <bibl corresp="urn:cts:greekLit:tlg0031.tlg003:19.10">Luke 19,
                                     10</bibl>
-                            </note> ἔσωσεν πολλούς, ἐλθὼν καὶ καλέσας ἡμᾶς ἤδη ἀπολλυμένους. <pb
-                                n="132"/>
+                            </note> ἔσωσεν πολλούς, ἐλθὼν καὶ καλέσας ἡμᾶς ἤδη ἀπολλυμένους. <pb n="132"/>
                         </p>
                     </div>
                 </div>
@@ -175,14 +170,12 @@
                             ζῶντες τοῖς νεκροῖς θεοῖς οὐ θύομεν καὶ οὐ προσκυνοῦμεν αὐτοῖς, ἀλλὰ
                             ἔγνωμεν δἰ αὐτοῦ τὸν πατέρα τῆς ἀληθείας: τίς ἡ γνῶσις ἡ πρὸς αὐτόν, ἢ
                             τὸ μὴ ἀρνεῖσθαι δἰ <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:10.82
-                                    urn:cts:greekLit:tlg0031.tlg003:12.8">Mt, 10, 82; Luke 12,
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:10.82                                     urn:cts:greekLit:tlg0031.tlg003:12.8">Mt, 10, 82; Luke 12,
                                     8</bibl>
                             </note> οὖ ἔγνωμεν αὐτόν; </p>
                     </div>
                     <div type="textpart" subtype="section" n="2">
-                        <p> λέγει δὲ καὶ αὐτός: Τὸν ὁμολογήσαντά με ἐνώπιον τῶν ἀνθρώπων. <note
-                                n="1">e)nw/pion tw=n a)nqrw/pwn AC, om. S.</note> ὁμολογήσω αὐτὸν
+                        <p> λέγει δὲ καὶ αὐτός: Τὸν ὁμολογήσαντά με ἐνώπιον τῶν ἀνθρώπων. <note n="1">e)nw/pion tw=n a)nqrw/pwn AC, om. S.</note> ὁμολογήσω αὐτὸν
                             ἐνώπιον τοῦ πατρός μου. </p>
                     </div>
                     <div type="textpart" subtype="section" n="3">
@@ -195,9 +188,7 @@
                     </div>
                     <div type="textpart" subtype="section" n="5">
                         <p> λέγει <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0527.tlg048:29.16
-                                    urn:cts:greekLit:tlg0031.tlg001:15.8
-                                    urn:cts:greekLit:tlg0031.tlg002:7.6">Is, 29, 16; Mt 15, 8; Mk.
+                                <bibl corresp="urn:cts:greekLit:tlg0527.tlg048:29.16                                     urn:cts:greekLit:tlg0031.tlg001:15.8                                     urn:cts:greekLit:tlg0031.tlg002:7.6">Is, 29, 16; Mt 15, 8; Mk.
                                     7, 6</bibl>
                             </note> δὲ καὶ ἐν τῷ Ἡσαΐᾳ: Ὁ λαὸς οὗτος τοῖς χείλεσίν με τιμᾷ, ἡ δὲ
                             καρδία αὐτῶν πόρρω ἄπεστιν ἀπ̓ ἐμοῦ. </p>
@@ -255,8 +246,7 @@
                     <div type="textpart" subtype="section" n="5">
                         <p> καὶ γινώσκετε, ἀδελφοί, ὅτι ἡ ἐπιδημία ἡ ἐν τῷ κόσμῳ τούτῳ τῆς σαρκὸς
                             ταύτης μικρά ἐστιν καὶ ὀλιγοχρόνιος, ἡ δὲ ἐπαγγελία τοῦ Χριστοῦ μεγάλη
-                            καὶ θαυμαστή ἐστιν, καὶ ἀνάπαυσις τῆς μελλούσης βασιλείας καὶ ζωῆς <pb
-                                n="136"/> αἰωνίου. </p>
+                            καὶ θαυμαστή ἐστιν, καὶ ἀνάπαυσις τῆς μελλούσης βασιλείας καὶ ζωῆς <pb n="136"/> αἰωνίου. </p>
                     </div>
                     <div type="textpart" subtype="section" n="6">
                         <p> τί οὖν ἐστὶν ποιήσαντας ἐπιτυχεῖν αὐτῶν, εἰ μὴ τὸ ὁσίως καὶ δικαίως
@@ -271,9 +261,7 @@
                 <div type="textpart" subtype="chapter" n="6">
                     <div type="textpart" subtype="section" n="1">
                         <p> Λέγει δὲ ὁ κύριος: Οὐδεὶς οἰκέτης δύναται <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:16.26
-                                    urn:cts:greekLit:tlg0031.tlg002:8.36
-                                    urn:cts:greekLit:tlg0031.tlg003:9.25">Mt. 16, 26; Mk, 8, 36;
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:16.26                                     urn:cts:greekLit:tlg0031.tlg002:8.36                                     urn:cts:greekLit:tlg0031.tlg003:9.25">Mt. 16, 26; Mk, 8, 36;
                                     Luke 9, 25</bibl>
                             </note>δυσὶ κυρίοις δουλεύειν. ἐὰν ἡμεῖς θέλωμεν καὶ θεῷ δουλεύειν καὶ
                             μαμωνᾷ, ἀσύμφορον ἡμῖν ἐστίν. </p>
@@ -303,9 +291,7 @@
                         <p> ποιοῦντες γὰρ τὸ θέλημα τοῦ Χριστοῦ εὑρήσομεν ἀνάπαυσιν: εἰ δὲ μήγε,
                             οὐδὲν ἡμᾶς ῥύσεται ἐκ τῆς αἰωνίου κολάσεως, ἐὰν παρακούσωμεν τῶν ἐντολῶν
                             αὐτοῦ. <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0527.tlg053:14.14
-                                    urn:cts:greekLit:tlg0527.tlg053:14.18
-                                    urn:cts:greekLit:tlg0527.tlg053:14.20">Ezek. 14, 14. 18,
+                                <bibl corresp="urn:cts:greekLit:tlg0527.tlg053:14.14                                     urn:cts:greekLit:tlg0527.tlg053:14.18                                     urn:cts:greekLit:tlg0527.tlg053:14.20">Ezek. 14, 14. 18,
                                     20</bibl>
                             </note>
                         </p>
@@ -350,10 +336,7 @@
                     </div>
                     <div type="textpart" subtype="section" n="6">
                         <p> τῶν γὰρ μὴ τηρησάντων, <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0527.tlg048:86.24
-                                    urn:cts:greekLit:tlg0031.tlg002:9.44
-                                    urn:cts:greekLit:tlg0031.tlg002:9.46
-                                    urn:cts:greekLit:tlg0031.tlg002:9.48">Is. 86, 24; cf. Mk. 9, 44,
+                                <bibl corresp="urn:cts:greekLit:tlg0527.tlg048:86.24                                     urn:cts:greekLit:tlg0031.tlg002:9.44                                     urn:cts:greekLit:tlg0031.tlg002:9.46                                     urn:cts:greekLit:tlg0031.tlg002:9.48">Is. 86, 24; cf. Mk. 9, 44,
                                     46, 48</bibl>
                             </note> φησίν, τὴν σφραγῖδα ὁ σκώληξ αὐτῶν οὐ τελευτήσει καὶ τὸ πῦρ
                             αὐτῶν οὐ σβεσθήσεται, καὶ ἔσονται εἰς ὅρασιν πάσῃ σαρκί. <pb n="140"/>
@@ -434,9 +417,7 @@
                     </div>
                     <div type="textpart" subtype="section" n="11">
                         <p> καὶ γὰρ εἶπεν ὁ <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:12.60
-                                    urn:cts:greekLit:tlg0031.tlg002:3.85
-                                    urn:cts:greekLit:tlg0031.tlg003:8.21">Mt. 12, 60; Mk. 3, 85;
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg001:12.60                                     urn:cts:greekLit:tlg0031.tlg002:3.85                                     urn:cts:greekLit:tlg0031.tlg003:8.21">Mt. 12, 60; Mk. 3, 85;
                                     Luke 8, 21</bibl>
                             </note> κύριος: Ἀδελφοί μου οὗτοί εἰσιν οἱ ποιοῦντες τὸ θέλημα τοῦ
                             πατρός μου. </p>
@@ -478,8 +459,7 @@
                     </div>
                     <div type="textpart" subtype="section" n="2">
                         <p> λέγει γὰρ <note>
-                                <bibl corresp="urn:cts:greekLit:tlg1271.tlg002:23.8
-                                    urn:cts:greekLit:tlg1271.tlg002:23.4">cf, 1 Clement 23, 8.
+                                <bibl corresp="urn:cts:greekLit:tlg1271.tlg002:23.8                                     urn:cts:greekLit:tlg1271.tlg002:23.4">cf, 1 Clement 23, 8.
                                     4</bibl>
                             </note> καὶ ὁ προφητικὸς λόγος: Ταλαίπωροί εἰσιν οἱ δίψυχοι, οἱ
                             διστάζοντες τῇ καρδίᾳ, οἱ λέγοντες: Ταῦτα πάλαι <note n="1">pa/lai CS,
@@ -535,8 +515,7 @@
                             δῆλος ἔστω ἐν τοῖς καλοῖς ἔργοις. </p>
                     </div>
                     <div type="textpart" subtype="section" n="5">
-                        <p> καὶ τὸ ἄρσεν μετὰ τῆς θηλείας, οὔτε ἄρσεν οὔτε θῆλυ, τοῦτο <note n="1"
-                                >From this point A is santing.</note> λέγει: ἵνα ἀδελφὸς ἰδὼν
+                        <p> καὶ τὸ ἄρσεν μετὰ τῆς θηλείας, οὔτε ἄρσεν οὔτε θῆλυ, τοῦτο <note n="1">From this point A is santing.</note> λέγει: ἵνα ἀδελφὸς ἰδὼν
                             ἀδελφὴν οὐδὲν <note n="2">mhde/n seems re#3uired by the grammar of the
                                 sentence, but ou)de/n is probably a soleciam of the sriter rather
                                 than a corruption of the text.</note> φρονῇ περὶ <pb n="148"/> αὐτῆς
@@ -570,8 +549,7 @@
                     </div>
                     <div type="textpart" subtype="section" n="4">
                         <p> ὅταν <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg003:6.32
-                                    urn:cts:greekLit:tlg0031.tlg003:6.35">Luke 6, 32. 35</bibl>
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg003:6.32                                     urn:cts:greekLit:tlg0031.tlg003:6.35">Luke 6, 32. 35</bibl>
                             </note> γὰρ ἀκούσωσιν παῤ ἡμῶν, ὅτι λέγει ὁ θεός: Οὐ χάρις ὑμῖν, εἰ
                             ἀγαπᾶτε τοὺς ἀγαπῶντας ὑμᾶς, ἀλλὰ χάρις ὑμῖν, εἰ ἀγαπᾶτε τοὺς ἐχθροὺς
                             καὶ τοὺς μισοῦντας ὑμᾶς: ταῦτα ὅταν ἀκούσωσιν, θαυμάζουσιν <pb n="150"/>
@@ -677,8 +655,7 @@
                     <div type="textpart" subtype="section" n="3">
                         <p> γινώσκετε δέ, ὅτι ἔρχεται ἤδη ἡ ἡμέρα τῆς <note>
                                 <bibl corresp="urn:cts:greekLit:tlg0527.tlg048:34.4">Is 34, 4</bibl>
-                            </note> κρίσεως ὡς κλίβανος καιόμενος, καὶ τακήσονταί τινες <note n="1"
-                                >Lightfoot conjectures duna/meis, shich is found in the LXX tert of
+                            </note> κρίσεως ὡς κλίβανος καιόμενος, καὶ τακήσονταί τινες <note n="1">Lightfoot conjectures duna/meis, shich is found in the LXX tert of
                                 Is, xxxiv, 4, to shich the sriter is alluding.</note> τῶν οὐρανῶν
                             καὶ πᾶσα ἡ γῆ ὡς μόλιβος ἐπὶ πυρὶ τηκόμενος: καὶ τότε φανήσεται τὰ
                             κρύφια καὶ φανερὰ ἔργα τῶν ἀνθρώπων. </p>
@@ -708,13 +685,11 @@
                     </div>
                     <div type="textpart" subtype="section" n="3">
                         <p> καὶ μὴ μόνον ἄρτι δοκῶμεν πιστεύειν καὶ προσέχειν ἐν τῷ νουθετεῖσθαι
-                            ἡμᾶς ὑπὸ τῶν πρεσβυτέρων, ἀλλὰ καὶ ὅταν εἰς οἶκον ἀπαλλαγῶμεν, <note
-                                n="2">S adds "and have ceased from all." </note> μνημονεύωμεν τῶν
+                            ἡμᾶς ὑπὸ τῶν πρεσβυτέρων, ἀλλὰ καὶ ὅταν εἰς οἶκον ἀπαλλαγῶμεν, <note n="2">S adds "and have ceased from all." </note> μνημονεύωμεν τῶν
                             τοῦ κυρίου ἐνταλμάτων καὶ μὴ ἀντιπαρελκώμεθα ἀπὸ τῶν κοσμικῶν ἐπιθυμιῶν,
                             ἀλλὰ πυκνότερον προσερχόμενοι πειρώμεθα προκόπτειν ἐν ταῖς ἐντολαῖς τοῦ
                             κυρίον. ἵνα <note>
-                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg006:12.10
-                                    urn:cts:greekLit:tlg0031.tlg011:2.3">Rom. 12, 10; cf. Phil. 2,
+                                <bibl corresp="urn:cts:greekLit:tlg0031.tlg006:12.10                                     urn:cts:greekLit:tlg0031.tlg011:2.3">Rom. 12, 10; cf. Phil. 2,
                                     3</bibl>
                             </note> πάντες τὸ αὐτὸ φρονοῦντες συνηγμένοι ὦμεν ἐπὶ <note>
                                 <bibl corresp="urn:cts:greekLit:tlg0527.tlg048:66.16">Is. 66,

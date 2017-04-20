@@ -1,6 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?> <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
 	<teiHeader>
+    
 		<fileDesc>
 			<titleStmt>
 				<title>Defense of Palamedes</title>
@@ -30,9 +32,8 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<refsDecl n="CTS">
-				<cRefPattern n="section" matchPattern="(.+)"
-					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			  <refsDecl n="CTS">
+				<cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 			</refsDecl>
 
 		</encodingDesc>
@@ -45,7 +46,7 @@
 
 	<text>
 		<body>
-			<div type="edition" n="urn:cts:greekLit:tlg2255.perseus002.perseus-grc1">
+			<div type="edition" n="urn:cts:greekLit:tlg2255.perseus002.perseus-grc1" xml:lang="grc">
 				<head>ΓΟΡΓΙΟΥ ΥΠΕΡ ΠΑΛΑΜΗΔΟΥΣ ΑΠΟΛΟΓΙΑ</head>
 				<div type="textpart" subtype="section" n="1">
 					<p>Ἡ μὲν κατηγορία καὶ [ἡ ἀπολογία] κρίσις οὐ περὶ θανάτου γίγνεται· θάνατον μὲν γὰρ ἡ
