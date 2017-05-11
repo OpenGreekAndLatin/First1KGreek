@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt><title xml:lang="mul">Contents of Historia Ecclesiastica</title>
+        <author>Kirsopp Lake</author>
+        <sponsor>University of Leipzig</sponsor>
+        <funder>European Social Fund Saxony</funder>
+        <principal>Gregory Crane</principal>
+        <principal>Monica Berti</principal>
+        <meeting/>
+        <respStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>University of Leipzig</authority>
+        <idno type="filename">tlg2018.tlg002.1st1K-eng2.xml</idno>
+        <availability>
+          <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+            License</p>
+        </availability>
+        <date>2014</date>
+        <publisher>University of Leipzig</publisher>
+        <pubPlace>Germany</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <biblStruct>
+            <monogr>
+              <title>Eusebius</title>
+              <editor>
+                <persName>
+                  <name>Kirsopp Lake</name>
+                </persName>
+              </editor>
+              <author ref="urn:cts:greekLit:tlg2018">Eusebius</author>
+              <imprint>
+                <publisher>William Heinemann</publisher>
+                <publisher>G.P. Putnam's Sons</publisher>
+                <pubPlace>New York</pubPlace>
+                <pubPlace>London</pubPlace>
+                <date>1926</date>
+              </imprint>
+              <biblScope unit="volume">I</biblScope>
+            </monogr>
+          </biblStruct>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+      <refsDecl n="CTS">
+        <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="commentary" subtype="contents" xml:lang="eng" n="urn:cts:greekLit:tlg2018.tlg002.1st1K-eng2">
+        <pb n="vii"/>
+        <head>CONTENTS</head>
+        <p n="1">PAGE</p>
+        <p n="2">INTRODUCTION. . . . . . . ix</p>
+        <p n="3">BOOK I . . . . . . . . 2</p>
+        <p n="4">BOOK II . . . . . . . . . 98</p>
+        <p n="5">BOOK III . . . . . . . . 190</p>
+        <p n="6">BOOK IV . . . . . . . . 300</p>
+        <p n="7">BOOK V . . . . . . . . 400</p>
+      </div>
+    </body>
+  </text>
+</TEI>
