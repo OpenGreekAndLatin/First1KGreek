@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="mul">Preface to Anonymi Londinensis ex Aristotelis iatricis Menoniis et aliis medicis eclogae</title>
+        <author xml:lang="lat">Hermannus Diels</author>
+        <sponsor>University of Leipzig</sponsor>
+        <funder>European Social Fund Saxony</funder>
+        <principal>Gregory Crane</principal>
+        <principal>Monica Berti</principal>
+        <meeting/>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Gregory Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Gessner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>University of Leipzig</authority>
+        <idno type="filename">tlg0643.opp01.1st1K-lat1.xml</idno>
+        <availability>
+          <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+            License</p>
+        </availability>
+        <date>2014</date>
+        <publisher>University of Leipzig</publisher>
+        <pubPlace>Germany</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <biblStruct>
+            <monogr>
+              <title xml:lang="lat">Supplementum Aristotelicum</title>
+              <editor>
+                <persName>
+                  <name xml:lang="lat">Hermannus Diels</name>
+                </persName>
+              </editor>
+              <author ref="urn:cts:greekLit:tlg0643" xml:lang="lat">Anonymus Londinensis</author>
+              <imprint>
+                <publisher xml:lang="lat">Typis et Inpensis Georgii Reimeri</publisher>
+                <pubPlace xml:lang="lat">Berolini</pubPlace>
+                <date>1893</date>
+              </imprint>
+              <biblScope unit="volume">3</biblScope>
+            </monogr>
+            <ref target="https://archive.org/details/p1anonymilondine03diel">Internet Archive</ref>
+          </biblStruct>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+      <refsDecl n="CTS">
+        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      
+      <div type="commentary" subtype="preface" xml:lang="lat" n="urn:cts:greekLit:tlg0643.opp001.1st1K-lat1">
+<pb n="V"/>
+<head>AD FRIDERICUM G. KENYONEM EPISTULA EDITORIS</head>
+<p n="1">Iatricon libellus cum nunc in lucem prodit quem prius salutet quam
+TE, vir optime, qui cum de Aristotele ipso tum de Aristotelico lioc volumine
+uuice sis meritus. quod simulatque ante duos fere aunos ex
+Aegypto in Museum Britannicum trausvectum est, ubi uunc extat numero
+CXXXVII, Tu quamquam multis et gravissimis negotiis paene oppressus,
+statim lacera fragmenta explicare, levigare, ordinare coepisti, tum
+scripturam et difficilem per se et saeculorum iuiuria misere oblitteratam
+legere, conexus rimari, lacunas supplere, denique libri in dies magis
+crescentis materiam iutellegere, aetatem constituere, fontes expiscari.
+quae omnia tam incredibili celeritate ac sollertia perfecisti, ut iam mense
+Aprili MDCCCXCII viris doctis libri recentis formam et iudolem breviter
+sed accurate exponere posses. 1 iam tum recte intellexisti, vir doctissime,
+priorem partem volumiuis, quae in antiquorum medicorum memoria
+continetur et iterata Aristotelis mentione est insignis, excerptam esse ex
+Menonis Aristotelei latricis. qui nuntius ut alios ita me commovit. nam cum
+Aristotelicis litteris novum monumentum accrescere tum Doxographorum
+quaestionibus olim desertis novum quasi pabulum oflferri sensi. itaque
+quae ex Musei penu Te quasi promo condo prolata eraut, summa me
+expectatione replebant. quam augebant duae prioris partis eclogae, quas
+Fridebicus Blassius, vir eruditissimus, e Britannia redux peramice mecum
+communicaverat. quibus dum acrius incumbo, vidi sine totius voluminis
+contextu singula recte intellegi non posse. ita in dies vehementius
+editionem totius voluminis a VOBIS desiderare coepi. sed quaerenti mihi
+et instanti Tu respondisti nihil eiusmodi aut abs Te aut ab aliis parari
+<note type="footnote">1 Classical Review VI (1892) p. 237—240.</note>
+
+<pb n="VI"/>
+ac sero, si umquam, foie ut huic desiderio satisfieret. simul tamen, ne
+istius nuutii tristitiam nimis aegre ferrem, eximia benevolentia apographum
+TUA manu confectum in meum usum commisisti. acceptum volumen
+tractare, retractare, emendare, supplere meo marte coepi, qui labor
+etsi difficillimus erat, tamen quo magis minui videbam fenestrarum numerum,
+eo maior erat in dies spes restituendi omnia. sed ne solus thesauro
+incubare viderer ut avarus, iam in publicum edendi consilium ortum
+est. quod cum Tu probasses adiutoremque operis TE obtulisses, venia
+ab E. MAUNDE THOMPSON, summo bibliothecae praefecto, viro doctissimo
+et humanissimo, facile impetrata institutum opus iam iutentius promovere
+coepi, et quod privatim primo susceperam, iam Academiae nostrae
+auctoritate promulgare visum est, cuius Supplemento Aristotelico tam
+iusigne monumentum deesse fas non erat.</p>
+<p n="2">Interim TU nostram iam tamquam TUAM rem gerere, papyrum paene
+cottidie excutere, nostras coniecturas religiose conferre cum exemplari,
+TUA invicem supplementa mittere et acute excogitata et coram ipso teste
+probata. sic etsi aemulo illo studio labor iucredibilem in modum procedebat,
+tamen amicissimi hominis patientia et benevolentia abuti videbar,
+si diutius Tuis oeulis videre pergerem. ergo postquam quae ex supplenda
+altera volumiuis parte subnata erant studia Erasistratea et Stratonea
+absolvi 1, Londinum petii ac per mensem insolita caeli serenitate adiutus
+totam papyrum studiose perlustravi et in eius conspectu supplere quae
+hiabant studui. nam sic tenuissimis litterarum umbris, quae vix cerni
+nedum describi accuratius possint, ad restituenda verba uti licebat. hic
+vero etiam plenius TE admirabar, quantum oculis valeres ac mentis illa
+divinatione, quae caliginem scripturae tamquam face praetenta illustrat.
+sciant enim, qui talia studia non ipsi experti sunt, plurima quae nunc sine
+uUo dubitationis signo in hac editione leguntur, plane obscura et inexplicabilia
+fuisse, donec sententia felici coniectura inventa simul lectionem
+aperiret. ergo laboris difficillima et fructuosissima pars posteriores plane
+lateat necesse est; nam secundus lector munitam quodammodo et expeditam
+viam inveniet. sic igitur ego ductus a Te sensim fallacissimae
+scripturae assuefactus ultro pedem proferre ausus sum. quare TUA
+sunt merito non solum ea quae ipse explicuisti, sed etiam quae explicare
+me docuisti.</p>
+<note type="footnote">1 Uber das physikalische System des Straton (Sitzungsberichte der Berl. Akad. 1893
+p. 101–127).</note>
+
+<pb n="VII"/>
+<p n="3">Inveni illam papyrum vitris diligenter inclusam et in undecim tabulas commode divisam, quarum conspectum subiungo.1</p>
+<p n="4">Qui singulas nunc in manus sumet tabulas, forsitan dubitet de ordinis <note type="marginal">Papyri descnptio</note>
+veritate, quem Tu restituisti egoque usu probatum inveni. at Tibi
+praeter posticae scripturae indicia, de qua postea loquar, ampliora ac
+magis coutinentia fragmina voluminis olim praesto fuerunt, quae postea
+demum forfice sunt discissa in commodioris usus partes, quibus in diversas
+tabulas translatis quae olim cobaerebant dirempta sunt.2 etiam ceterae
+paginae aut nunc coniunctae servantur aut, si paucas excipias, manifesta prioris conexus retinent vestigia. sed singillatim haec persequi is
+tantummodo poterit, cui vitris sublatis ipsas chartas examinare licebit.
+opto vero, ut Tu qui huius papyri fata ab initio cognovisti, aliquando
+huic desiderio satis facias.</p>
+<p n="5">Voluminis quantum nunc restat longitudo, si partes contextas cogites, <note type="marginal">Ordo paginarum</note>
+est trium fere metrorum ac dimidii, latitudo (altitudo) XXIII fere centesimarum.
+plagularum singularum, ex quibus papyri corpus conglutinatum 
+est, commissuras vidi XIX, quae quinis fere denis centesimis inter se
+distant. sed veri simile est paulo plures fuisse, ut paulo plus quam scapum,
+quem Piinius (N. H. XIII 77) vicenis plagulis constare dieit, complevisse
+librarius videatur. ceterum scripturam commissuris plagularum nequaquam impeditam esse omuino hodie constat et hoc exemplo confirmatur.</p>
+<note type="footnote">1 tabula continet paginas (columnas) III III
+- II	-	-	-	IV V VI VII
+- III	-	-	-	VIII IX X XI
+- IV	-	-	-	XII XIII XIV XV
+- V		-	-	-	XVI XVII XVIII
+- VI	-	-	-	XIX et XX
+- VII	-	-	-	XXI XXII XXIII XXIV
+- VIII	-	-	-	XXV— XXVIII
+- IX	-	-	-	XXIX XXX XXXI
+- X		-	-	-	XXXII XXXIII XXXIV XXXV
+- XI	-	-	-	XXXVl XXXVII XXXVIII XXXIX</note>
+<note type="footnote">ex scissuris haec olim cobaesisse apparet extrema tabularum:
+tabulae I et II coniunctae fueiunt paginis III et
+- III - IV	-	-	-	XI - XII
+- V - VI	- 	-	-	XVIII - XIX
+- VI - VII	-	-	-	XX - XXI
+- VII - VIII	-	-	-	XXIV - XXV
+- VIII - IX	-	-	-	XXVIII - XXIX
+- IX - X	-	-	-	XXXI - XXXII
+- X - XI	-	-	-	XXXV -XXXVI</note>
+
+<pb n="VIII"/>
+<p n="6">Paginae (sive columnae) litteris completae servautur XXXIX, ultima
+semiplena; intervalla vacua, binarum fere centesimarum, extremus tamen
+margo dexter, ubi librarius substitit, duplo maior. versuum numerus in
+singulis paginis a quadragenis quaternis sensim auctus est finem versus
+usque ad undesexagenos. summa versuum, computatis etiam quos
+supplevi versibus, sed omissis, si qui inter versus aut extra additi sunt,
+est MDCCCCX; quibus si addas fragmenta posticae, fiunt MDCCCCXXVII.
+unde apparet quantum reliquum sit a iusti voluminis ambitu, cum praesertim
+ipsi versus legitimi sticbi mensura (XV syllabarum) sint minores. nam
+XIII fere syllabarum (i. e. XXX fere litterarum) modulo continentur.
+initium voluminis non servatur. neque tamen ea iactura plus quam una
+vel duae paginae perierunt, quantum ex Prooemii superstitis natura
+coniectari potest. periit igitur etiam titulus libri cum auctoris nomine.
+quod si quis in inscriptione IV 18.19 iuvenire voluerit, non invidebo;
+ego quid sentiam, infra p. XVIII aperiam.</p>
+<note type="marginal">Fragmenta</note> <p n="7">Praeter maiora fragmenta, quae olim incerta sede fluctuabaut, nunc
+autem omnia a TE partimque a me in rectum ordinem restituta sunt, nonnulla
+frustula vaga servantur, quae editioni adiunxi speraus fore ut haec
+quoque forte fortuna aliquando corpori reddantur. bis minutis fragmentis
+(III—XII) duo praefixi paulo ampliora, quae manu librarii in postica
+addita sunt. nam ut ipse liber iusto ordine i. e. in antica parte scriptus
+est, ubi secundum U. WILCKEII egregiam observationem fibrarum striae
+cum versuum lineis eandem derectionem tenent, ita fragmenta illa in
+postica posita sunt, quae fibris contrariis facile agnoscitur. quae fragmenta
+cum pertineant sine dubio ad eam disputationem, quae in extrema
+pagina XXXIX non tam clauditur quam abrumpitur, cumque laborantis
+librarii haud obscura signa praebeant, conieci ’ propterea suppleta
+esse, quia cum ulteriora iu exemplari magis magisque corrupto legentis
+laborem fallerent, illa sola aliquatenus enucleari possent. etiam antea
+exemplaris condicionem tristiorem fuisse veri simile est, ut oblitterati
+apices oculis librarii vix ac ne vix quidem exciperentur. qua re excusatur
+aliquo modo illius incredibilis neglegentia, quae usquequaque cernitur.
+tot supplementa sunt iuter versus et in margine, tot liturae, tot
+hiatus verborum et sententiarum. sed de his postea accuratius.</p>
+<note type="footnote">1 Vber die Excerpte von Menons Iatrika in dem Londoner Papyrus 137 (Hermae
+vol. XXVIII) p. 410.</note>
+
+<pb n="IX"/>
+<p n="8">In postica praeter ea quae ipse librarius supplevit praeceptum medici <note type="marginal">Praeccptam</note>
+inveuitur rudi calamo eoque receutiore exaratum, ut possessorem
+voluminis, id aspersisse credas; tum scholastica exercitatio, quam in
+postica tabulae II alieua (saeculi tamen II p. Chr.) manu scriptam legimus.
+est epistula M. Autonii triumviri, quae incipit: Μᾶρκος Ἀντώνιος <note type="marginal">Epistula Antonii</note>
+αὐτοκράτωρ Ι τριῶν ἀνδρῶν δημοσίων πραγμάτων Ι ἀπὸ καταστάσεως τῶι Κοινῶι
+τῶν ἀ|πὸ (sic) τῆς ’Aσίας Ἑλλήνων χαίρειν. Καὶ Ι πρότερον ἐντυχόντος μοι ἐν
+Ἐφέσωι Ι Μάρκου Ἀντωνίου Ἀρτεμιδώρου τοῦ Ι ἐμοῦ φίλου καὶ ἀλείπτου κτλ.
+integram epistulam TE mox editurum esse pollicitus es 1. praeter haec
+igitur duo calamorum posteriorum pericula cetera omuia uuius librarii
+manu perscripta sunt tam contextus verba quam quae correctii suppletave
+sunt.</p>
+<p n="9">De aetate librarii coutroversia est, de qua dixi Hermae 1. c. p. 411. <note type="marginal">Librarii aetas</note>
+ut euim Alexaudri Philalethis crebra mentione circa Christi natalem
+alter terminus fixus haeret, ita iuferior vacillat. assentior tamen TUAE
+sententiae, vir peritissime, qui scripturam altero saeculo haud posteriorem
+esse asseveras. 2 cum euim litterae sint similes primae potissimum quae
+exaravit vestri Aristotelis manui, tum siglorum forma, ut idem Τυ
+recte mouuisti, simillima. neque euim uuiversa ratio discrepat et octo
+notae plane eaedem (γάρ, ἐστίν, εἶναι, κατά, μέν, παρά, τῶν, ήν).
+minutias formarum rimeris, etiam antiquiora videantur latricon compendia
+pendia quam Aristotelea.3</p>
+<p n="10">Compendiorum autem in hoc volumine duo genera inveniuntur: unum <note type="marginal">compendia</note>
+liberum omnibusque sedibus eoncessum quod siglorum voco, alterum extremis
+versuum vocabulis reservatum compendiroum, quae proprie dico.
+ac sigla quidem tabula priore huic editioni adiuucta illustravi, de compendiis
+vero finalibus haee habeto:
+<lg>
+<l>lineola transversa superscripta quamlibet terminationem significat velut κουφοτερ</l>
+<l>(κουφότερα), γενݲ (γένηται, γεωομένης, γενομένην), μυελοݲ</l>
+<l>λαμβάνεσθαι sim.)</l>
+<l>significat ην velut κεφαλ (?) (κεφαλήν), τροφ</l>
+<l>α superscriptum αν</l>
+<l>ο - ον</l>
+<l>u - ou aut ους</l>
+<l>ω - ως aut ων</l>
+</lg>
+<note type="footnote">1 Classical Review Ι. c. p. 237.</note>
+  <note type="footnote">2 Classical Review I. c. p.</note>
+  <note type="footnote">3 nam si derectae et simplices formae ex flexis et compositis originem duxeruut (id
+quod in nonnullis notis demonstrari potest cf. Lehmann Tachygraph. Abkürzungen
+1880 p. 102. 105), hic scriptor genere antiquiore usus est quam Aristotelis.</note>
+
+<pb n="X"/>
+<lg>
+<l>δ σ</l>
+<l>tuin liheriore ratioiie: ava (dvdooats vel ἀνάδοσιν XXV 19. 25), αναδο (ἀναδόδεως</l>
+<l>μ υ θ</l>
+<l>14), αναθυ (ἀναθυμιαθεῖσαι VI 32), σπερματι (σπερματικοῖς ΧΧV 43) αισ (αἰσθητόν saepe)</l>
+<l>υ υ λ χ</l>
+<l>οι (οἱκοῦσαν XIV 44), ἡγεμονι (ἡγεμονικοῦ XVI 38), νοσο (νοσολογεῖ XI 41, τυγ</l>
+<l>(τυγχάνειν XXIV 36)</l>
+</lg></p>
+<note type="marginal">scriptura</note> <p n="11">De ipsa sciiptuia hoc dico, quod uni cuique autotypo nostro inspecto
+oculis videre licet, librarium non artificem fuisse libros mercede
+scribere consuetum, sed hominem mediocriter doctum, qui exemplar sive
+situ sive tritu corruptum in usum privatum describeret. eiusdem generis
+plerosque libros esse, qui nunc in Aegypto inveniuntur, et olim dixi1 et
+nunc post tot tamque egregia inventa etiam confidentius assero. itaque
+cum duplex fuerit ut apud nostrates ita apud antiquos litteratura, una
+pulchra et antiqua illa titulorum, qua antiquarii qui recte dicebantur
+libros Sosiorum vel Attlcorum iussu aifabre scribebant sive pingebant,
+altera vulgaris et cursiva, qua vulgus epistulas, commentarios, quidquid
+privato usui destinatum erat, currenti calamo couscribebat sive conscribillabat:
+homines docti qui librum descripturi erant cum vulgari geuere
+uti nollent, artificioso nescirent, utrumque miscebant. talis est scriptura
+semicursioa eorum qui Aristotelis r. p. Atheniensium exaraverunt, talis
+huius homiuis qui couatus est (neque euim perfecit) iu suum sibi usum
+latrica haec describere. ergo litteratura ista etsi ex cursivi generis
+levitate adspirat ad graudius illud, tamen parum accurate et distincte
+formatur, ut saepe immo plerumque incertum sit, utrum τ an υ, λ an α,
+λλ an μ, ν an αι, γ an τ, a an ε vel ο etc. voluerit scriptor. hinc maxima
+legendi difficultas oritur. praeterea fluctuant ipsae formae relabeute
+subinde librario in vulgare genus. velut praeter κ sollemnem formam
+cursivam illam u non raro adhibet, ut καί an ὡς scriptum sit plus semel
+haereas. inprimis cursiva utitur in eis quae vel supra vel extra versus
+supplet et in compendiis finalibus. quae cum ita sint, tutissimum erat
+volumeu totum lucis arte fideliter expressum lecturis ante oculos ponere,
+quod Vos, viri illustrissimi, in Aristotelis et Herodae autotypis egregio
+eventu fecistis. sed quod Tu mihi quaerenti olim praedixisti, re expertus
+sum: condicio papyri et inprimis subfuscus eius color obstant, quominus
+imago satis clara fiat. tamen eiusmodi autotypum editioni deesse nolui,
+ut scripturae saltem genus et ordo specimiue cognoscantur. interim
+<note type="footnote">1 Uber die Berl. Fragm. der Ἀθ. πολ. des Aristoteles (Abh. der Berl. Ak. d. W. 1885)
+p. 7 sq.</note>
+
+<pb n="XI"/>
+typis, quateuus fieii poterat, papyri imaginem repraeseutavi , qua iu re
+fidei magis quam pulchritudini studuisse me coufiteor. ceterum fore
+spero ut ex autotypo periti aetatem scripturae certius defiuiaut. ego
+enim a palaeographiae scientia inprimis papyrorum, qua TE potissimum
+niti par est, alienum me esse sentio. video tameu cum orthographiam
+universam tum memorabile illud τάτό fere constanter pro ταὐτό positum
+TUAE sententiae favere. nam eum morem intra duo illa saecula, quae
+dividuutur ut cardiue Christi natali, se continere satis constare videtur.2</p>
+<p n="12">Orthographiae autem haec genera discribam:</p> <note type="marginal">Orthographica</note>
+<p n="13">εݲιݲ pro ιݲ longa tum in iisu fuisse librariis constat cum ex aliis monumeutis
+Herculanensibus voluminibus. ipsi quoque auctores huius aetatis non aliter scripsisse
+videntur, ut recte in Philodemi editiouibus talia serventur. sic hic scriba paene constanter
+κεινεῖν, φρενεῖτις, πειμελή, πείνειν, πείπτειν, λείαν, ἡμεῖν per diphthongum exaravit, quae servani;
+vitiose semel κοιλειῶν XV 19, inconstanter εἰνῶν ΧVII 30, postea 31. 35 fvuiv posuit;
+itemque μῖξις iuxta ἐπίμειξις, ἐπιμειχθέντος, χιμῶνα iuxta χειμῶνος; miuus saepe contraria
+ratione pcccavit ἡμῖς, ἐπί (i. e. ἐπεί), ἀπισάκτωι, ἀπολίπεσθαι (praes. XXVI 48 c) ἀπολιφθῆναι
+XXVll 39 alia, quae commodo magis quam rationi consulens nostro usui accommodavi.</p>
+<p n="14">εݲιݲ pro ηݲιݲ apparet in παρειρῆσθαι III 30 et ἀφειρημένων XXXIII 3, qui
+etiam in Uerculanensibus vohiminibus observetur 3, tamquam aetatis signum servandus
+videtur.</p>
+<p n="15">ηݲ pro εݲιݲ raro exhibetur: XVII 6 ἐκμαγῆον, XXXIII 39 πλήονα (cf. ΧΧ II
+quoque primae Caesarum aetati conveniens 4.</p>
+<p n="16">εݲιݲ pro simplici εݲ babent βαρεῖα (i. e. βαρέα) XXXII 20, παχεῖα (παχέα)
+(cf. Βlass-Kühner Gr. Gr. I 1, 445 n.</p>
+<p n="17">εݲυݲ in augmento verbi αὔξειν pro ηυ retiuui XIII 33, ubi vide quae aduotavi et
+Blassium Ausspr. p. 44 114).</p>
+<p n="18">ωݲ pro scribitur XI 22 et XVIII 9 Κρωτωνιάτης, itemque πώρρω (XVI 40. XXI
+24. XXX 44). cognata, sed incerta κύριως XIV 41 et ἀνάδωσις XXVI 24. de οἰνοδώτης
+dixi ad XXIV 31. merus error πολυτροφότεροι ΧΧΧI 18 (cf. v. 8. 9. 19).
+an eodem pertineret θηροται XXXIII 29 i. e. θηρωταί, si vulgaris haec adgnoscitur
+scriptoris, at librarii) forma iuxta θηρευταί. quodsi haec explicatio probetur, forsitan
+etiam XXVIII 12 κεκομψωμένη plebeia forma pro κεκομψευμένη inlata videatur 5.</p>
+<note type="footnote">1 Classical Revtew Ι. c. p. 239.</note>
+<note type="footnote">2 cf. auctoritates, quas Hermae I. c. p. 411 1 attuli, et F. Blassius Ausspr.3 p. 77 sq.
+addo aetatis inferioris exempla ex Pap. graeca Berol. n. 6867 (auni 85 p. Chr.) quae
+nuper edita est in Aegypt. Urkunden d. Mus. z. Berlin VI (1893) n. 183, 3 ἑατοῦ v. 6 ἑατῇ
+v. 29 ἑατῆς; v. 5 corrige ἑατῆς (alterum documenlum interiectum v. 10—27 servat
+vulgares ἑαυτοῦ κτλ.) et ex P. 7206 (n. 197,5. 22, fasc. VII, anni 17 p. Chr.) ἑατῆς et
+ἐατοῖς. ceterum Londinensis papyri librarius ἐαυτοῦ κτλ. plene semper scripta praebet,
+quia crasis (secundum Wackernagelii explicationem Kuhn's Ζ. 1893 p. 7) hic magis latet.
+fortasse memorabile est XVIII 38 Σ i. e. ἁτός, ὁ αὐτός legi (superscripto tamen υ).</note>
+<note type="footnote">3 cf. Blass Αusspr. 3 p. 46 130. Mahaffy, Petrie Pap. II p. [19] B 13. [21] 3. [28] 11.</note>
+<note type="footnote">4 cf. Blass 1. c. p. 59 sq.</note>
+<note type="footnote">5 de bis ’dicatalectis’ videatur Lobeckii erudita dissertatio iu Rhematico p. 199—205.
+et Theophrastea nostra (Berlin 1883 Progr. n. 64) p. 12 sq.</note>
+
+<pb n="XII"/>
+<p n="19">Iota adscriptum tum plane obmutuisse omnium monumentorum testimoniis evincitur.
+inde vulgo omittitur non solum in privatis libris et titulis, sed etiam publicis.
+cuius rei lepidum exemplum exhibet Anaxenoris Magnesii titulus, qui propter litterulam
+illam civitati iguorantiae signum inussit. testimonium Strabonis XIV p. 648 ἰρsο titulo
+nuper a F. Hillero de Gaertringen, v. d., feliciter reperto luculenter confirmatum est: ΑΥΔΗ
+illud famosum in lapide nunc Berolinum transvecto iota caret. latricon librarius Magnesiorum
+neglegentia satis sibi cavit. nam in dativis fere constanter adscriptum est, at, quod
+mireris, eadem constantia in coniunctivis omissum. hoc casui tribuere nemo audebit, cum
+praesertim idem in antiquis titulis maxime Doriensibus usu venire notum sit. post
+Boeckhii et inprimis Ahreusii observationes (Dial. dor. 295) res trita, nec eam ratione
+carere viri linguarum periti docuerunt. sed de dialecticis postea. addo in aliis velut
+ταύτη et ταύτῃ antiquam inconstantiam etiam hic apparere; quam differentiam aut adscripto
+aut subscripto iota sine incommodo repraesentat nostra editio.1</p>
+<p n="20">Elisionem et crasim vocalium vitat librarius etiam in particulis, sed inveniuntur
+δ' ἐν sim., ἀμφ’ αὐτά, ταῦτ' ἐροῦσι, κἀπί, κἀπορεῖ, τἄμπαλιν, τοὐναντίον, τἆλλα.</p>
+<p n="21">νݲ paragogicum ut tota antiquitate ita hic quoque mira inconstantia et positum est
+omissum. equidem ulkim normam obtinuisse extra hiatus venatores pracfracte nego. nimirum
+oporae pretium vix essc videbatur sonum levissiraum accurate semper exprimere. ita etsi in
+hoc volumen cadit, quod in oranes antiquos scriptores, ν etiam ante consonantem saepius
+poni quam noster i. e. Hyzantinorum posteriorum canon permittit, tamen mira inconstantia
+hic librarius utitur. confer ὀνόμασι προσχρώμεθα et κομίζουσι τοιούτους et ἀποτελοῦσι· παρά et
+ὦσι, νοσάζουσιν et λέγουσι δέ cum διείληφεν περὶ vel ἔσχεν φρενεῖτις vel καταλείπουσιν ψυχῆς
+vel ἐστιν τεταγμένα vei φησὶν δὲ vel λαμβάνουσιν γάρ; iterura μεταβάλλουσιν ἢ vel σώμασιν
+ὡς vel ἐνκαλοῦσιν αὐτῶι καὶ λέγουσιν ἐκεῖνο cuin χωρήσωσι εἰς vel ἐροῦσι ἀπό vel περιέχουσι Ι
+ὀστέοις vel προῆλθε· ὑπέλαβεν γάρ — nihil credo regulae vel consuetudinis invenies, nisi
+quod semel πιστοῦσι ἀπὸ ΧΧΧV 7 addidit nasalem. in solvendis compendiariis formis
+et φ(ησίν) semper plenas formas exhibui (secutus librarii exempla III 15. VIII 12. XIV 12).</p>
+<p n="22">Eadem nasalis soni debilitas cernitur in aliis formis velut πάλι νόσους VI 36 et XVIII 5
+(cf. liObeckii Phryn. p. 284); sed etiam in πάλι ἐνποιεῖται XVII 20. verum haec res latius
+patet. nam cum scribit VIII 33 δι' ὑπερβολὴ καταψύξεως manifestum raihi videtur
+ὑπερβολὴγκαταψύξεως assiraulatum, tura sonum leviorem elisura esse. nara paria sunt
+XII b &gt; καὶ et XVII 11) μὴ&lt;ν&gt; καὶ (hoc tamen ab ipso scriba correctum),
+XXXI 44 κατὰ ἀφαίρεσι&lt;ν&gt; [γίνεται]. ex siniili assimulatione natum videtur XVI 11 ἐξ | 
+σαρκός, cf. ἐξ Ζέας C. I. A. II 793 f, 54 et ἐξυρίας (= ἐκ Συρίας) Philod. d. sign. c. 218.</p>
+<p n="23">De assimulatione cum locutus sim, moncndum est aequaliura more interdura emolliri	
+sonum x ante δ et liquidas ἐγ δὴ XXXII 47, ἐγ μέντοι V 10, ἐγ μὲν ΧΧ 7, ἐγ λόγωι ΧΧΙ
+27, ἐγλανθανει XXXIV 50. sed raro; paulo usitatius est contrarium, ut assimulatione
+omissa scriptum sit ἐνκέφαλος, συνπληροῖ similia.</p>
+<p n="24">Aegyptiorum dialectum in aspiratis maxime laborare et ex papyris cognoscitur et
+ex Macedonicae indole facile exitlicatur. hic taraen scriptor ut paiilo cultior homo non
+saepe peccavit: πρώθη XXVil 52 ipse correxit superscripto τη, καθάρρους VIII 44 excusatur
+proximae syllabae natura velut καθ' εὐθυωρίαν XVI 24, ubi alterius syllabae aspirata
+priorem infecit. contra plane conversa est aspiratarum sedes in τεθευκέναι XIV 34
+(pro τετευχέναι), quod in nota explicavi.</p>
+<p n="25">Veuio ad geminorum consonantiura compendia. pinguiore enim pronuntiatipne per
+totam graecitatera factura est, ut simplici liquida efferrentur quae duplici legitime scribuntur
+velut ἐναλάττειν, βάλειν sim. cuius generis sunt huius συστέλονται XXIX 3. 5. 21
+<note type="footnote">1 neglegentiae tribuo, si forte ῥάδιος scribitur vel abundanter οὕτωι vel τηικόμενον vel
+τοιαύτηι (nomin. XII 36, XXXII 4) vel ἐλάσσωι. nam hoc quidera XXXII 35 ipse librarius
+corrcxit. contra σώζειν, θνήσκειν, sirailia consulto scripsit spreta eruditiorura doetrina.</note>
+
+<pb n="XIII"/>
+(partim correcta), porro μεταβάλειν XXIV 28 (correctum), denique πεσόμενον ΧΧΧΙV 44
+(quod est πεσσόμενον). in p soni duplicatione velut in ἀπορρεῖν antiquitus fluctuabat et
+pronuntiatio et orthographia. hinc etsi vulgaris mos obtinet, inveniuntur tamen in bac
+papyro κατεραμμένον XXII 29 et ἀπορεῖ XXVI 41, ἀπορεῖν (ib. 48 f.). haec diligenter
+servavi, cum Aristarchus quoque simplicem ρ commendaverit.</p>
+<p n="26">ζݲ pro a XXIII 40 καταζβέννυσθαι ut in titulis et in Herculanensibus , sed raro
+omnino invenitur.</p>
+<p n="27">δݲ pro σݲ invenimus in ὀδμή XXXIV 38 (at ὀσμή XXXVIII 17) et
+19. XXXIV 48.</p>
+<p n="28">Quae ultimo loco tetigi, sponte traducunt ad ionicae dialecti vestigia,<note type="marginal">Duiectica</note>
+quae ex scriptoris eiusve auctoris patria derivanda esse conieci Herm.
+I. c. p. 414. nam ionica sunt ἀπουσία (detrimentum) XXXII 24, εἵνεκα
+V 23, κεῖνος post consonantes XXIV 32, XXV 28 (cf. XXXVII 40), δένδπος,
+δένδρους, δένδρει, δενδρῶν (cf. Index verborum), σκίδωασθαι XXXIII 35 (26).
+glossa (nescio cuius dialecti) est καιάτας XXXVI 57 (cf. Index v.). ad
+atticismum pertinent περίττωμα VIII 5. XII 10. XVI 20. XVII 45. XVIII 1,
+περιττότερος XII 20; περιττώσεις XX 9. cum διαλλάττον XXV 45 et ἦττον
+XXXVIII 40 posterioris sint partis, conici non licet atticum hunc colorem
+ex Menoniis translatum esse, nam tenuia sunt etiam alibi vestigia atticismi
+velut ὡς praepositionis usus, ὡς ὁμοίως similia, de quibus in Hermae Ι. c.
+p. 412 breviter sum locutus. sed oratio in universum abhorret a cultiore
+illo rhetorum studio et multa insunt vulgaria, velut XXIII 11 λαλήσομεν περὶ
+τῆς διοικήσεως, quod Phrynichus Bekkeri p. 51,3 vituperat2, οἰσθῆναι saepe
+pro ἐνεχθῆναι, συνεσταμένου, καταχθέντες (pro καταγέντες), quo tamen etiam
+Aristoteles usus est d. part. anim. A 1 p. 640 a 22, tum καταισθάνεσθαι passive
+(XXXII 5), ἐκφύειν intransitive (XXV 3) et praecipue in praepositionibus et
+particulis, in quibus Graeculorum inscitia maxime conspicua est; cf. Index
+verborum s. ἐπί, περί, τοι, γάρ τοι, τοιγάρτοι, οὐ μὴν δέ, ὡς ἄν, καί—δέ alia.</p>
+<p n="29">Interpunctum est a librario diligentius quam aequales consueverant. interpanctio
+quattuor enim invenias distinguendi genera. primum crasso puncto finis
+imponitur periodo XXXI 25, quod est singulare. legitime autem spatia
+vacua adhibentur, aut minutum (i. e. * huius editionis), quo membra periodi
+sive enuntiata minora dirimuntur, aut amplius (i. e. * * quo maiora
+enuntiata vel periodi finiuntur. huic autem spatiorum signo, quod est
+inter versus, respondet duplex item extra versus positum a sinistra. nam
+initio versuum minore spatio (*) diremptorum praetexi solet paragraphus
+obelo similis (—), itemque maioribus spatiis respondet diple (—).
+<note type="footnote">1 singulare, si recte explicui, εκδων (i. e. ἐξ ὦν) XXV 18 not.</note>
+<note type="footnote">2 cf. Apollodorus Poliorcet. p. 137, 4 ὑπελάλησα (sub Hadriano).</note>
+
+<pb n="XIV"/>
+quartum denique genus iungitur fere diplis, ἔκθεσιν dico, qua capitum
+singulorum initia litteris versuum primoribus sinistrorsum expositis facilius
+in legentium oculos cadant.1 ceterum totius rationis (quam utinam
+librarius constantius adhibuisset) quanta sit utilitas ad libri sententias
+sive intellegendas sive supplendas suapte sponte iutellegitur. quare
+huic rei nobis maxima impensa est cura.</p>
+<note type="marginal">discrrtio suscepturi</note> <p n="30">Etiam illud magnopere interest eorum qui supplendi negotium
+sint, ut versiculorum exitus sedulo notentur, cum praesertim
+in hac sede liberiore compendiorum genere usus sit librarius. omnino
+hoc tenendum est, quod non semper recte ab editoribus observatum vidi,
+inde ab Alexandrina aetate versiculos dirimi syllabatim. quod, etsi nusquam
+usus est in fugam vacui angulo illo, qui in Hyperideis et Herculanensibus
+voluminibus conspicitur, accurate tamen semper librarius observavit.
+perrara sunt illa VIII 2. 3 φαίνεται π|ρὸς et XII 8. 9 Δέξι|ππος.
+in duplicibus tamen consonantibus hic, ut aequales2, variat aut αἴσ|θησιν,
+εὐρώσ|των, ἐδεσ|τῶν, ἀσθενέσ|τεραι, ἴσ|χοντες dirimendo, aut Ἐρασί|στρατος,
+συ|στολὰς, μυ|κτῆρας. illud tamen commodius visum, ut vel Ἀσ|ληπιάκης
+cum scripsisset, κ post σ addere quam λ litterae praescribere mallet.</p>
+<note type="marginal">Librario omissa vel addita</note> <p n="31">Morcm iudolemque librarii scrutanti non omittenda est ea neglegentia,
+quae in omittendis litteris, syllabis, verbis, enuntiatis versatur.
+quae partim ipse correxit (neque enim quisquam praeter eum diorthotae
+munere functus est), partim nobis supplenda reliquit. atque illa quidem
+[] signo, haec &lt;&gt;. innumera huius neglegentiae exempla velut αναδοσ
+(ἀνάδοσις), εμηχατο (ἐμηχανήσατο), συνεσται (συνεστάναι), ποιλα (ποικίλα), βατερα
+(βαρύτερα), νοσοπειν (νοσοποιεῖν),3 αποικειται (ἀποικειοῦται), τουποδειγματι
+(τοῦτο ὑποδείγματι). non minus frequenter dittographias omninoque abundantias
+commisit. et dittographiarum quidem prius vocabulum delere
+solet velut XIV 20 οταν, quod ego in delendis supervacaneis (quae signavi [])
+secutus sum. delendi autem tria genera adhibet: lituram digitis madidum
+atramentum abstergentibus factam, puncta superposita, lineam transverquartum
+<note type="footnote">1 hoc genus in membranis inde ab antiquissimis quinti saeculi usque ad
+XIII interdum inveniri notum est (cf. Gardthausen Palaeogr. p. 275/6). ipse nuper eiusmodi
+codicem usurpavi Philonis Academiae Petersburgensis XX A a 1 chart. s. XIII /XIV
+fol. min., ubi post capitis exitum versus proximi initium rubro exponi solet.</note>
+<note type="footnote">2 cf. Blassius ad Hyperidem p. IX.</note>
+<note type="footnote">3 νοσοπειειν XIII 23 singuJare est ut στοιχοιων XIV 41 et εισνοιμενου XXIII 25
+pro εἰσπνεομένου.</note>
+
+<pb n="XV"/>
+sam. memorabile mihi videtur singulare abundantiae genus, quod nescio
+an ad indolem hominis pernoscendam faciat plurimum. ut si legimus
+XXXIV 44 00 πιθανῶς δὲ οὐδ' οὗτοι ἐπιχειροῦσιν πρὸς αὐτόν, nihil haeremus.
+at delevit ipse librarius πρὸς αὐτόν, scilicet quia non erat in exemplari,
+sed ex supervacuo ultro additum. eadem religione XXXVIII 3 τὸν αὐτὸν
+καὶ οἱ γιγνόμενοι κατατάσσονται τῶι σώματι delevit κατατάσσονται τ. σ. quae
+e loei contextu ariolatus contra exemplar addiderat; et sic saepe.</p>
+<p n="32">Talia non sunt operarii vix sensum curantis et digito syllabas <note type="marginal">Librarii indoles</note>
+exemplaris carpentis, sed paulo liberioris hominis, qui tota enuntiata
+excipere et extrema deficiente memoria cogitando supplere consueverit.
+itaque exarasse haec crediderim adulescentem aliquem medicinae studiosum,
+qui in suum sibi usum hanc isagogen describeret. de medicinae
+eius scientia nolo quidquam detrahere, quamquam caput et ventrem
+confundere (VIII 14) non cuiusvis est. at in philosophia plane hospes
+esse videtur, si modo ἐντρέχεια animae illa, quam iu prooemio compluries
+iactat, Aristotelica est ἐντελέχεια.1 neque casu factum videtur,
+quod ubi iterum animae mentio iniecta est XXXI 42 sqq., filum disputationis
+interrumpitur. scilicet librarii scribunt, ut ait Hierouymus, non
+quod inveniunt, sed quod intellegunt. obscuratis igitur exemplaris apicibus
+interdum intellegentiam eum defecisse consentaneum.</p>
+<p n="33">De auctoris nomine, secta, aetate, fontibus accuratiora ut invenirem, <note type="marginal">Auctor libri</note>
+ne nunc quidem contigit. quid mihi visum sit, significatum est alias2.
+hoc omni dubitationi exemptum est post Alexandrum Philalethem Laodicensem
+eum scripsisse i. e. primo p. Chr. saeculo (si modo exempli Londinensis
+aetas recte supra definita est) ac praeter hunc Menonis latrica,
+quae sub Aristotelis nomine ei ut aliis innotuerunt, ad doxographiam
+prioris partis (c. IV 31—XXXI 9) adsumpta esse.</p>
+<p n="34">Iatricon Menoniorum fragmenta ex V. Rosei, viri doctissimi, syllogis <note type="marginal">Menonia</note>
+Berolinensi3 et Lipsiensi4 transtuli (paucis tamen mutatis), ut imago
+tanti operis, de quo Londinensis papyri beneficio iam accuratius edocemur,
+quam plenissima restituatur. nam si latina fragmenta (IV—VII)
+<note type="footnote">1 Hermae 1. c. p. 411.</note>
+<note type="footnote">2 cf. Hermae l. c. p. 413 sq.</note>
+<note type="footnote">3 Aristotelis opera ed. Ac. R. Bor. V (1870) p. 1534 n. 335—341.</note>
+<note type="footnote">4 Aristotelis fragmenta Lips. 1886 p. 255 sqq. n. 373—379.</note>
+
+<pb n="XVI"/>
+ut parum certa omittas, ex Plutarchi tamen loco (fr. III) satis constat
+non solum principia morborum, quibus contentus fuit hic scriptor, sed
+etiam ipsorum morborum varietatem, doxographi nimirum ratione, persecutum
+esse Menonem. quid? si eidem fr. (conlatis praesertim fr. IV. V)
+fidas, videtur Menon placitorum enarrationi definitiones singulorum morborum
+praemisisse, quod neque dedecet Peripateticum philosophum et
+similiter invenitur in Doxographis. vide Aetii Placita I 1. 2. 9 sqq., quorum
+definitiones etsi colorem habent recentiorem, morem tamen traxisse videntur
+e schola Theophrastea, quemadmodum Characterum definitiones
+noviciae non sine exemplo antiquo scriptae mihi esse videntur.</p>
+<p n="35">De titulo libri quae exposui Hermae 1. c. p. 407 2 hic repetere non
+inutile credo. Laertii index V 25 in Aristotelis operibus recenset Ἰατρικὰ
+β, Hesychius q. d. Περὶ ἰατρικῆς βݲ et in eius epimetro Περὶ ἰατορικῆς ζݲ,
+(qui vita Ptolemaei Chenni usus videtur) n. 92 Περὶ ἐατρικῆς sine librorum
+numero. medici latini citant Aristotelem (fr. IV—VII) ut Demetrius Magnesius
+(fr. II) et anonymus Londinensis. contra Plutarchus (fr. III) Μενώνεια, et Galenus
+(fr. I) tradit hanc Ἰατρικὴν συναγωγὴν inscribi quidem Aristotelis, sed
+esse Menonis, Aristotelis discipuli; quare a nonnullis Μενώνεια appellari.
+utrum Galeni Ἱατρικὴ συναγωηὴ an catalogorum Ἰατρικὰ sive Περὶ ἰατρικῆς
+verum sit, diiudicare non ausim, cum Physica Φυσικά, Περὶ φύσεως (vel
+Περὶ κινήσεως), Φoσικὴ ἀκρόασις Peripateticis audiant eademque varietas
+in ceteris scriptis et apud ipsum Aristotelem appareat. sed Μενώνεια sic
+appellata esse arbitror ut Εὐδήμεια et Νικομάχεια (nam ea quoque Nicomachi
+auctoris credebantur), quibus si Aristotelis auctoritas addebatur,
+doctrinam ubique apparere Aristoteleam significabatur. scilicet Stagiritae
+magnum nomen obumhrat, etsi num quid praeter ipsum consilium et
+rationem colligendi Aristoteles impertiverit Menoni, dubium mihi esse
+videtur.</p>
+<p n="36">Sed quomodocumque ea de re iudicandum erit, gratulamur nobis,
+qui gravissimi certe operis iam non umbram solum, sed solida fragmenta
+teueamus. quae etsi compilatorum culpa pristino colore privata sunt
+nec magnis ipsius Menonis erroribus carent1, tamen campum diu neglectum,
+historiam dico medicorum graecorum, novo et insperato eruditionis
+flumine laetificarunt.</p>
+<note type="footnote">1 inprimis de Hippocratis scriptis egregie fallitur, ut exposui Hermae 1. c.
+p. 424—434.</note>
+
+<pb n="XVII"/>
+<p n="37">TIBI vero, FRIDERICE KENYON, cum finem facio praefandi, pro egregiis
+TUIS beneficiis dcbitam meritamque gratiam persolvo. si suavissima TUA
+laboris societate diutius uti et quot menses, tot annos mihi impendere
+licuisset, perfectius et maturatius iam opus proditurum esse probe scio.
+at exemplum celeritatis atque strenuitatis, quod TU in Aristotele et Heroda
+proposuisti, mihi sequeudum esse putavi, non solum quia nova quam
+velocissime efferri omnium virorum doctorum interest, sed quia commodatam
+quasi nec propriam rem me tenere existimavi, quam reddere
+quanto ocius fas est. quod dum facio, si quid hac festinatione vel
+omissum vel delictum est, consoletur uos illud Senecae: contenti simus
+inventis, aliquid veritati et posteri conferant.</p>
+<p n="38">Berolini Id. Sept. MDCCCLXXXXIII.</p>
+</div>
+</body>
+</text>
+</TEI>

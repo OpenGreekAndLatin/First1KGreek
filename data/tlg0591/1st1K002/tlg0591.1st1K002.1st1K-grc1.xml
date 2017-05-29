@@ -1,36 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
     <fileDesc>
   <titleStmt>
     <title>Odysseus</title>
+    <title xml:lang="grc">ΟΔΥΣΣΕΥΣ</title>
     <author>Antisthenes</author>
     <editor role="editor">Friedrich Blass</editor>
+	  <funder>A Google Digital Humanities Award</funder>
+<principal>Gregory Crane</principal>
+<respStmt>
+    <persName xml:id="DDD">Digital Divide Data</persName>
+    <resp>Corrected and encoded the text</resp>
+</respStmt>
+<respStmt>
+    <persName>Gregory Crane</persName>
+    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+</respStmt>
+<respStmt>
+    <persName>Matt Munson</persName>
+    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+</respStmt>
+<respStmt>
+    <persName>Annette Gessner</persName>
+    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+</respStmt>
+<respStmt>
+    <persName>Thibault Clérice</persName>
+    <resp>Lead Developer (University of Leipzig)</resp>
+</respStmt>
+<respStmt>
+    <persName>Bruce Robertson</persName>
+    <resp>Technical Advisor</resp>
+</respStmt>
   </titleStmt>
-  <publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
+  <publicationStmt><publisher>Trustees of Tufts University</publisher>
+    <pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority></publicationStmt>
   <sourceDesc>
     <biblStruct>
       <monogr>
-        <title>ΟΔΥΣΣΕΥΣ</title>
-        <author>ΑΝΤΙΣΘΕΝΟΥΣ</author>
+        <title type="m" xml:lang="lat">Antiphontis orationes et fragmenta</title>
+        <title type="s" xml:lang="lat">adiunctis Gorgiae, Antisthenis, Alcidamantis declamationibus</title>
+        <author ref="urn:cts:greekLit:tlg0591">Αntisthenes</author>
         <editor role="editor">Friedrich Blass</editor>
         <imprint>
           <publisher>Teubner</publisher>
           <pubPlace>Leipzig</pubPlace>
-          <date>1881</date>
+          <date>1908</date>
         </imprint>
       </monogr>
+      <ref target="https://archive.org/details/antiphontisorat01antigoog">Internet Archive</ref>
     </biblStruct>
         
         </sourceDesc>
     </fileDesc><encodingDesc>
   <refsDecl n="CTS">
-  <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p/tei:seg[@n='$1'])"/>
+  <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p/tei:seg[@n='$1'])"/>
       </refsDecl>
 
     </encodingDesc><profileDesc>
       <langUsage>
 	<language ident="grc">Greek</language>
+	<language ident="lat">Latin</language>
       </langUsage>
     </profileDesc>
 <revisionDesc>
@@ -40,7 +72,7 @@
   <change who="Jack Duff" when="2016-06-13">Deleted Latin language tag.</change>
 </revisionDesc></teiHeader>
 
-  <text><body> <div type="edition" n="urn:cts:greekLit:tlg2313.perseus002.perseus-grc1" xml:lang="grc">
+  <text><body> <div type="edition" n="urn:cts:greekLit:tlg0591.1st1K002.1st1K-grc1" xml:lang="grc">
 <head>ΑΝΤΙΣΘΕΝΟΥΣ ΟΔΥΣΣΕΥΣ.</head>
 <p><seg n="1"><milestone unit="section" n="1"/> Οὐ πρὸς σέ μοι μόνον ὁ λόγος, δι᾿ ὃν ἀνέστην,
 ἀλλὰ καὶ πρὸς τοὺς ἄλλους ἅπαντας· πλείω γὰρ ἀγαθὰ
