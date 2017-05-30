@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Supplementum Aristotelicum</title>
+        <editor xml:lang="lat">Hermannus Diels</editor>
+        <sponsor>University of Leipzig</sponsor>
+        <funder>European Social Fund Saxony</funder>
+        <principal>Gregory Crane</principal>
+        <principal>Monica Berti</principal>
+        <meeting/>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Gregory Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Gessner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <authority>University of Leipzig</authority>
+        <idno type="filename">tlg0643.tlg001.1st1K-mul2.xml</idno>
+        <availability>
+          <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+            License</p>
+        </availability>
+        <date>2014</date>
+        <publisher>University of Leipzig</publisher>
+        <pubPlace>Germany</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <biblStruct>
+            <monogr>
+              <title xml:lang="lat">Supplementum Aristotelicum</title>
+              <editor>
+                <persName>
+                  <name xml:lang="lat">Hermannus Diels</name>
+                </persName>
+              </editor>
+              <author ref="urn:cts:greekLit:tlg0643" xml:lang="lat">Anonymus Londinensis</author>
+              <imprint>
+                <publisher xml:lang="lat">Typis et Inpensis Georgii Reimeri</publisher>
+                <pubPlace xml:lang="lat">Berolini</pubPlace>
+                <date>1893</date>
+              </imprint>
+              <biblScope unit="volume">3</biblScope>
+            </monogr>
+            <ref target="https://archive.org/details/p1anonymilondine03diel">Internet Archive</ref>
+          </biblStruct>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+      <refsDecl n="CTS">
+        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:p[@n='$1'])"/>
+        <cRefPattern n="index" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change/>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="commentary" xml:lang="mul" n="urn:cts:greekLit:tlg0643.tlg001.1st1K-mul2">
+<pb n="XIX"/>
+<head>ANONYMI LONDINENSIS IATRICA</head>
+<div type="textpart" subtype="index" n="nominum">
+<pb n="113"/>
+<head>II INDEX NOMINUM</head>
+<p n="1">Α. ας de morbis 8,35 cf. n.</p>
+<p n="2">Ε;βυδηνός Alcamenes 7,41</p>
+<p n="3">Αἰγίμιος ὁ Ἠλεῖος 13,21 [Galen VIII 498 K.:
+6 δὲ τὸ Περὶ παλμῶν ἐπιγεγραμμένον Αἰγιμίου
+βιβλίον συνθείς, εἴτ᾿ αὐτὸς ἧν 6
+Ἠλεῖος Αἰγίμιος εἴτ᾿ ἄλλος τις, ἰδίως
+κέχρηται τῷ ὀνόματι (sc. παλμοῦ).] Ibidem
+p. 752: σκοπουμένοις εἰ γνήσιον ὄντως
+ἐστὶν Αἰγιμίου τὸ βιβλίον ἤ εἰ πρῶτος
+Αἰγίμιος ἁπάντων ἔγραψε περὶ σφυγμῶν
+βιβλίον ἤ καί τις ἄλλος πρὸ αὐτοῦ; cf.
+Anon. Synopsis de jmlsu in Riifi ed.
+Daiemb. Paiis. 1879 p. 219,2. Gal. VI 159
+ἀποδύεσθω μὲν ἐπὶ πεπεμμένοις ἀκριβῶς
+τοῖς οὔροις, ὡς ὁ Αἰγίμιος ἐκέλευσεν.
+Callimachus in Pinace (fr. 100d7 Schn.
+Athen. XIV 643 F): πλακουντοποιικὰ συγγράμματα
+Αἰγιμίου. cf. Daremberg adn.
+ad Ruf. p. 625. videtur Aegiinius aequalis
+fere Hippocratis.]</p>
+<p n="4">Αἰγινήτης Petro 20,1</p>
+<p n="5">Αἰγύπτιος Niny[as] 9,37</p>
+<p n="6">Αλέξανδρος ὁ Φιλαλήθειος citatur cum
+Asdepiaile de digestione 24,31 οἱ περὶ
+Ἀσκληπιάδη] καὶ Ἀλέφανδρον τὸν Φιλαλήθη
+35,22 τῷ καὶ κατ᾿ Ἀλέξανδρον λόγῳ
+35,22 auctor Asclepiadeae opiuionis
+citari videtur 39, 1 n. [Strabo XII p.580:
+μεταξὺ δὲ τῆς Ααοδικείας καὶ τῶν Καρούρων
+ρων ἱερόν ἐστι Μηνὸς Κάρου καλούμενον
+τιμώμενον ἀξιολόγως· συνέστη δὲ καθ᾿
+ἡμᾶς διδασκαλεῖον Ἡροφιλείων ἰατρῶν
+μέγα ὐπὸ Ζεύξιδος καὶ μετὰ ταῦτα Ἀλεξάνδρου
+τοῦ Φιλαλήθος. Theodo-
+rus Priscianus (Phys. in Hereraanni de
+Neuenare Octav. Hor. ed. Arg. 1532
+p. 102): Alexander amalor veri appellatus
+discipulus Asclepiadis [cf. de hac
+re Hermae XXVIII 413 1] libro primo de
+semine spumam sanguinis esse essenliam
+dixit. Gal. VIII 725 sq.: ὅ γε μὴν Ἡροφίλειος
+Ἀλέξανδρος ὁ Φιλαλήθης ἐπικληθεὶς
+διττὸν ἐποιήσατο διὰ τὰς τοιαύτας
+ἐπηρείας τὸν ὁρισμὸν τοῦ σφυγμοῦ . . . λαὶ
+λέγει γέ τινας λογισμοὺς ἐπ᾿ αὐτοῖς ὡς
+οἴεται, πιθανοὺς ἐν τῷ ε τῶν Ἀρεσκόντων
+. . . διὰ κεφαλαίων δὲ κἀγὼ περὶ αὐτῶν
+ἴσως ὀλίγον ὔστερον ὅλως ἐρῶ πρότερόν Τε
+παραγράψας τοὺς τοῦ Δημοσθένους ὅρους
+ὡσαύτως τῷ διδασκάλῳ [Alexandro] Φιλαλήθους
+ἐπικληθέντος [cf. Η. Schoene
+de Aristoxeni περὶ τῆς Ἡροφίλου αἱρέσεως
+libro XIII Bonnae 1893 p. 11 sqq.]. Soranus
+II 43 p. 338, 14 Rose: ὁ καλούμενος
+γυναικεῖος ῥοῦς κατὰ μὲν τοὺς ἀρχαίους,
+ὡς Ἀλέξανδρος ὁ Φιλαλήθης
+ἐν τῷ πρώτῳ λέγει τῶν Γυναικείων
+πλείονός ἐστιν αἵματος . . . , κατὰ δὲ Δημήτριον
+τὸν Ἡροφίλειον; tum citatur v. 23
+Asclepiailes. Galen. VIII 758: ἔνιοι δὲ καὶ
+αὐτοὶς τούτοις προσέθεσάν τινα, καθάπερ
+καὶ Μοσχίων ὁ Διορθωτὴς ἐπικληθείς,
+ἐπειδή τινα τῶι ὑπ᾿ Ἀσκληπιάδου λελεγμένων
+ἐπηνωρθοῦτο μὴ πάντῃ πειθόμενος
+τἀνδρί, καθάπερ οὐδ᾿ ὁ Ἀλέξανδρος
+Ἡροφίλῳ. Caelius Aur. ac. morb. II 1
+p. 74 Amm. Asclepiades hanc passionem
+non definivit, sed Alexander Laodicensis
+ex Asia secundurn ipsum [sc. Ascle-
+
+<pb n="114"/>
+piadem] ait lethui-gum esse subitain vel
+recentem jjassionem cum fehribus etc.
+De Alexandro in Asclepiadeis et fortasse
+Menoniis auctore Anonymi dixi
+Herm. XXVIII 414 sqq. cf. Sitzungsher. d.
+Β. Ak. 1893 p. 102 — Φιλαλήθειος col. 24,
+31 verum esse potest, si secta fuit τῶν
+Φιλαληθείων a Philalethe nescio quo
+medico condita (cf. Laert. Diog. prooem.
+17)]</p>
+<p n="7">Ἀλκαμένης ὁ &lt;Ἀ&gt;βυδηνός de morbis
+8,6</p>
+<p n="8">Ἀριστοτέλης (i. e. Menouia) 5,37 6,42 7,
+36. 38. 43 [cf. Praefatio p. XV sq.]
+Aristotelis de anima doctrina fortasse
+tangitur 1,21 sqq. [cf. Herm. XXVIII
+411. Praef. p. XV] eius opinio de
+somno et vigilia exponitur 23,42 24,9</p>
+<p n="9">Ἀρχαῖοι. citantur definitiones πάθους 1,
+2. 4 2, 18. 36 opponuntur οἱ νεώτεροι
+2,30 i. e. Stoici (2,39) de vesicae
+secretione ἰδία στάσις γεγένηται καὶ παρὰ
+τοῖς ἀρχαίοις τῶν φιλοσόφων 29,52 cf. οἱ
+πλείους τῶν ἀρχαίων 30,18</p>
+<p n="10">Ἀσκληπιάδης ὁ οἰνοδότης 24,31 test. de
+digestione 24,30 e crudis soiis fieri
+ἀνάδοσιν 25,24 de odoribus in corporibus
+percipiendis 34,7 sqq. 42. 53 de
+differentia τῶν dTrocpopdiv 35,20 doctrina
+de poris invisibilibus profertur 36,48
+— 38,53, tum ut ridicula refutatur 38,
+53 sqq., ubi eius rationes partim iterantur
+nomen extat 37,55. cf. 39, 1 n.
+dictum de natura iustitiae tatrice 36,48
+39,5 [de Asclepiade Prusensi cf. Susemihl
+Alex. Literaturg. II 428 sqq., qui de homonymis
+Hillscherum sequi non debebat
+cf. Sitzungsb. d. Β. Ak. 1893, 101]</p>
+<p n="11">Βακτριαναὶ κάμηλοι 39,24 n.</p>
+<p n="12">Δέξιππος ὁ Κῷος 12,9 [Siiidas s. v. Δέξιππος
+Κῷος ἰατρὸς Ἱπποκράτους μαθητής,
+ὅς μεταπεμφθεὶς ὑπὸ Ἑκατόμνου τοῦ
+Καρῶν βασιλέως ἰάσασθαι αὐτοῦ τοὺς παῖδας
+ἀπογνωσθέντας Μαυσωλὸν καὶ Πιξώδαρον,
+ἐπὶ ὑποσχέσει ἰάσατο τοῦ παῦσαι
+τὸν πρὸς Κᾶρας τότε αὐτῷ ἐνεστῶτα
+πόλεμον ἔγραψεν Ἰατρικὸν βιβλίον αݲ
+Περὶ προγνώσεων β (ubi Κῴους pro Κᾶρας
+intellegit ühn Addit. ad Fabricii elencli.
+med. XII, Lips. 1827, p. 6 ubi cetera
+testimonia. cf. infra Πόλυβος]</p>
+<p n="13">Δημόκριτος paniura odore supremos dies
+sustentat 37,35 sqq.</p>
+<p n="14">Ἐμπειρικοί de gravitate 31, 26 sqq.</p>
+<p n="15">Ἐρασιστράτειοι de arteriis 26,39.40 27,
+10.24.46.48 28,12 de concoctioue
+36,18</p>
+<p n="16">’EpaafaTpaTo? de principiis visibilibus et
+invisibilibus 21, 23 sqq. principia ponit
+nutrimentum et spiritum 22,51
+adversarii contra eius principia pugnant
+22,53 — 23,6 de respiratione 23,
+18 sanguinera solura nutriraentum
+dixit 25,27 digestionera non fieri
+arteriis 26,31 experimentura aviculae
+in trutina pensae 33,44 sqq.
+in pororura theoria ab Asclepiadeis ut
+videtur impugnatus 39,16 [de Erasistrato
+cf. praeter libros a Susemihlio
+citatos Alex. Literaturgesch. I 798 sqq.
+R. Fuchs Erasistratea I Lips. 1892 et
+quae disserui Sitzungsb. d. Β. Ak. 1893
+p. 104 sqq.]</p>
+<p n="17">Εὐρυφῶν ὁ Kviotoc de morbis 4, 31 sqq.
+consentit partimcum eoHerodicusCnidius
+4, 41sqq. dilFert Hippocrateus Alcamenes
+8,2 velut princeps sectae Hippocrateae
+perhiberi videtur 8,3 coU. cum
+7,40 [Vita Ilippocr. p. 450,23 Westerm. ὑπὸ
+Περδίκκα . . . παρακληθέντα (Ilippocratem)
+δημοσίᾳ πρὸς αὐτὸν ἐλθεῖν μετ᾿ Εὐρυφῶντος,
+ὅς καθ᾿ ἡλικίαν πρεσβύτερος ἦν.
+Plato comicus fr. 184 (I 652 Kock.), ubi
+Cinesiara Meletis f. tangit ἐσχάρας κεκαυμένος
+πλείστας ὑπ᾿ Εὐρυφῶντος ἐν
+τῷ σώματι. Gal. in Hipp. ep. VI 29
+(XVII A 886 K.) εἴρηταί γε μὴν ἡ πέμφιξ
+κἀν ταῖς Κνιδίαις γνώμαις, ἅς εἰς
+Εὐρυφῶντα τὸν καὶ ἰατρὸν τὸν Κνίδιον?]
+ἀναφέρουσι κατὰ τήνδε τὴν λέξιν·
+“οὐρεῖ ὀλίγον ἑκάστοτε καὶ κάει καὶ ἐφίσταται
+πέμφιξ οἷον ἐλαίου χλωρῆς ὥσπερ
+ἀράχνιον.” Idem de acut. m. victu I 17
+[XV 45.5] . . καὶ κατ᾿ αὐτὸν δὲ τὸν Ἱπποκράτην
+κατὰ τὸ Περὶ διαίτης ὑγιεινῆς.
+εἰ γὰρ καὶ μὴ Ἱπποκράτους ἐστὶν ἐκεῖνο
+Τὸ βιβλίον, Ἐὐρυφῶντος ἤ Φαῶντος
+ἤ Φιλιστίωνος ἤ Ἀρίστωνος ἤ τινος
+ἄλλου τῶν παλαίῶν εἰς πολλοὺς γὰρ
+ἀναφέρουσιν αὐτό) πάντες ἐκεῖνοι τῶν
+παλαιῶν ἀνδρῶν εἰσι, ἔνιοι μὲν Ἱπποκράτους
+πρεσβύτεροι, τινὲς δὲ συνηκμακότες
+
+<pb n="115"/>
+αὐτῷ cf.de diffic. resp.III 13 (VII 959 sq.)
+Idem de succedaa. XIX 721 ἐπειδὴ περὶ
+τῶν ἀντεμβαλλομένων λόγον ἐνεστήσαντο
+μὲν καὶ οἱ περὶ τὸν Διοσκουρίδην, οὐχ
+ἥκιστα δὲ καὶ οἱ περὶ τὸ Φιλιστίωνά τε
+καὶ Εὐρυφῶντα. apophthegma ap. Stob.
+ecl. I 8,40 a (I 102,14 W.) Euryphontis
+fragra. extant ap. Gal. in Hipp. ep. VI 29
+(XVII A 888) Rufum p. 147, 10 Darerab.,
+Censorinum 7,5 et Aetiura V 18, 7 cf.
+Doxogr. p. 195.429]</p>
+<p n="18">Ἠλεῖος Aegimius 13,21</p>
+<p n="19">* Ἡρ]ακλεόδωρος de morbis 9,5</p>
+<p n="20">Ἡρόδικος ὁ Κνίδιος de morbis 4,41 sqq.
+5,34 [cf.9,20 test.,ubi ad Galeni (XVII B
+99 K.) τοῦ Λεοντίνου conferantur Plat.
+Gorg. p. Β et vita Hippocr. p. 449,5
+West.]</p>
+<p n="21">Ἡρόδικος ὁ Σηλυμβριανός]. eius ars medica
+exponitur 9, 20 cf. test.</p>
+<p n="22">Ἡρόφιλος fragm. citatur: λεγέσθω δὲ τὰ
+φαινόμενα πρῶντα, καὶ εἰ μὴ ἔστιν πρῶτα
+21. 21</p>
+<p n="23">opinio de digestione 28,46sqq. ea
+rcfutatur 29,1 2 sqq. [de Herophilo ef. susemihl
+Alex. Litteraturg. I 785 sqq.]</p>
+<p n="24">* Θρασύμαχος ὁ Σαρδιανός 11,42 sqq.</p>
+<p n="25">Ἱπποκράτης de morbis, καθὼς διείληφεν
+περὶ αὐτοῦ Ἀριστοτέλης [i. e. auctor libri
+de flatibus] 5, 35 sqq. test. 6, 42 7, 39
+idem ὡς αὐτὸς Ἱπποκράτης λέγει i. e.
+auctor libri de νατθρα hominis 6,44 7, 15
+test. 40</p>
+<p n="26">Ἵππ[ων] ὁ Κροτωνιάτης bumidum principium
+ponit vitae et sensus 11, 22 sqq. n.
+ἐν ἄλλῳ δὲ βιβλίῳ pathologiam exponit
+11,32 sqq. [de Hippone cf. Hermae
+XXVIII 420 Zeller Gr. Phil. I5 254.
+cum Hipponis nomen c. 11,20 paulo
+brevius esse videatur pro hiatu, succurrit
+num forte Ἱππῶναξ plenum nomen
+pro vulgari hypocoristico scriptum fuerit;
+sic ab Aetio V 7,3 [Plutarcho Doxogr.
+p. 419, 24 et Stobaeo (cf. Wachsmuth
+in Add. ad Ecl. ed. p. XXXIV ad
+p. 295 n,)] Ἱππῶναξ de maris et feminae
+origine citatur (fortasse ex Menoniis)
+qui alias illic Ἵππων audit. similiter
+Galeno HETptovd; est qui ceteris et Menoni
+Πέρων cf. s. v. Πέτρων]</p>
+<p n="27">Κνίδιος Euryphon 4, 31. Herodicus 4,41</p>
+<p n="28">Κροτωνίατης Hippo 1 1 .22 n. Philolaus 18,9</p>
+<p n="29">Κῷος Dexippus 12, 9</p>
+<p n="30">Μενεκράτης ὁ Ζεὺς ἐπικληθεὶς ἐν Ἰατρικῇ
+19,18sqq.test. [cf. Herm. XXVIII 416 sq.]</p>
+<p n="31">Μεταποντῖνος Timotheus 8, 11</p>
+<p n="32">Νεώτεροι, τοῦτ᾿ ἔστιν οἱ Στωικοί (pathologia)
+2,22 sqq. 2,30 cf. 2,39</p>
+<p n="33">Νινύ[ας?] ὁ Αἰγύπτιος de morbis 9,37</p>
+<p n="34">Πέτρων ὁ Αἰγινήτης de morbis 20, 1 sqq.
+[Schol. lliad. Λ 624: καὶ Πέτρων δὲ
+Αἰγινήτης ἰατρὸς, ἐπεὶ δι᾿ ἔνδειαν ἐπίπτωσις
+ωόσων γίνοιτο [sic Maass restit.
+Schol. Towul. I 415,32], καὶ οἶνον καὶ
+καρέα προσέφερεν ἀναπληρῶν τὸ λεῖπον τῆς
+φύσεως. Celsus III 9: apud anliquos quoque
+ante Herophilum et Erasistratum maximeque
+post Hippocratem fuit Petron
+quidam, qui febricitantem hominem ubi
+aeceperat, multis veslimentis operiebat, ut
+simul valorem inyentem silimque excitaret.
+Galen. I 144: Πετρονᾶς (sic) δὲ καὶ
+κρέα ὕεια ὀπτὰ διδοῖ (febricitantibus)
+καὶ οἷνον μέλανα ἀκρατέστερον ἐμεῖν
+ἡνάγκαζε καὶ ὕδωρ ψυχρὸν ἐδίδου πίνειν
+ὅσον ἤθελον. Idem XV 435: εἴρηται δὲ
+καὶ ὑπὸ Ἐρασιστράτου κατὰ τὸ πρῶτον
+βιβλίον περὶ πυρετῶν . . . διελθὼν γὰρ ἐν
+τῷ προειρημένῳ βιβλίῳ τοὺς ἐναντιωτάταις
+ἀγωγαῖς ἐπὶ τῶν πυρεττόντων χρωμένοις
+ἰατρούς, τούς τε μακραῖς ἀσιτίαις καταπονοῦντας
+τοὺς κάμνοντας καὶ Πετρωνᾶν
+τὸν κρέα τε καὶ οἶνον διδόντα. cf. ühn
+Add. ad el. med. Fabric. XXI Lips. 1836
+p. 5, cui ex cod. Paris. suppl. gr. 636
+(cf. supra p. 6 test. 4,14) f. 37r addendum
+Ἀρίστων ὁ ἀπὸ Πέτρωνος)]</p>
+<p n="35">Πλάτων de corporis constitutione et morbis
+14,12sqq. cf. 14,26 18,7</p>
+<p n="36">Poeta ignotus (fortasse iambographus, certe
+non scenicus) 16,4</p>
+<p n="37">Πόλυβος de morbis (i. e. Pseudohipp. de
+natura hominis) 19,2 sqq. Galen. XV 11:
+οἱ πλεῖστοι με) γὰρ τῶν γνόντων Ἱπποκράτειον
+τέχνην τοῖ; τοῖς γνησίοις αὐτὸ [de
+natura hominis librum] συγκαταριθμοῦσι
+νομίζοντες τοῦ μεγάλου Ἱπποκράτους σύγγραμμα,
+τινὲς δὲ Πολύβου τοῦ μαθητοῦ
+τε ἅμα καὶ διαδεξαμένου τὴν τῶν νέων
+διδασκαλίαν, ὅς οὐδὲν ὅλως φαίνεται μετακινήσας
+τῶν Ἱπποκράτους δογμάτων ἐν
+οὐδενὶ τῶν ἑαυτοῦ βιβλίοις, ὥσπερ οὐδὲ
+
+<pb n="116"/>
+Θεσσαλὸς ὁ αὐτοῦ [Hippocratis] υἱός,
+θαυμάσιος με) ἀνὴρ καὶ οὗτοςλ γενόμενος,
+ἀλλ᾿ οὐ καταμείνας ἐν τῇ πατρίδι καθάπερ
+6 Πόλυβος. Ἀρχελάῳ γὰρ τῷ Μακεδονίας
+βασιλεῖ συνεγένετο (cf. Hermae vol. XXVIII
+430 sqq.). Idem XV 175: τὸ Περὶ διαίτης
+ὑγιεινῆς ἐν τοῖς πλείστοις με) ἄμεμπτόν
+ἐστιν, ἐχόμενον ἀεὶ τῆς Ἱπποκράτους
+στοιχειώσεως · ἔν τισι δ᾿ ἄν τι; αὐτῷ
+μέμψαιτο παντελῶς ὀλίγοις· ὑποκείσθω δ᾿
+εἶναι Πολύβου, καθότι πολλοῖς ἔδοξε.
+Idein XVI 3: ἀλλὰ ἐπεί τινες λέγουσι
+τουτί τὸ σύγγραμμα (de humoribus) εἶναι
+ἢ Θεσσαλοῦ τοῦ υἱέος τοῦ Ἱπποκράτους
+ἢ τοῦ Πολύβου τοῦ γαμβροῦ, ὧν αἱ
+γραφαὶ τῆς Ἱπποκράτους τέχνης εἰσὶ καὶ
+οὐ πόρρω αὐτῶν οὐδ᾿ ὅσα δοκεῖ μὲν Εὐρυφῶντος
+εἶναι, φέρεται δὲ ἐν τοῖς Ἱπποκράτους
+κτλ. cf. VII 951) sq. ëtius Plac.
+V 18,5 (Doxogr. p. 429, 1): Πόλυβος
+ἑκατὸν ὀγδοήκοντα δύο καὶ ἥμισυ ἡμέρας
+γίνεσθαι εἰς τὰ γόνιμα κτλ. (cf. § 3 et
+Olem. Alex. Strom. VI p. 811 P.), quocum
+comparandus liber Hipp. q. f. de sepimestri
+et octimestri partu]</p>
+<p n="38">Σαρδιανός Thrasymachus 11,42</p>
+<p n="39">Σηλυμβριανός Uerodicus [9,20] cf. test.</p>
+<p n="40">Στωικοί (i. q. νεώτεροι) pathologia 2,22 sqq.
+39 sqq. Stoica de mixtionis generibus
+proferuntiir 14,15 sqq. cf. test. et Herm.
+XXVIII 425 de sole cf. 30,18 test.
+opinionem σῶμα διὰ σώματος διελθεῖν cf.
+14,18 impugnat (Asclepiades?) 38,29
+39,4. 11</p>
+<p n="41">Τενέδιος Phasilas 12,36</p>
+<p n="42">Τιμόθεος Μεταποντῖνος de morbis 8,11</p>
+<p n="43">* Φασίλας ὁ Τενέδιος de morbis 12,36 (n.) sqq.</p>
+<p n="44">Φιλαλήθειος i. q. Φιλαλήθης cognomen
+Alexandri Laodicensis (quem v.) 24, 32</p>
+<p n="45">Φιλαλήθης cognoinen Alexandri
+Laodicensis 35,22</p>
+<p n="46">Φιλιστίων (sine ethuico) de elementis et
+morbis 20,25 sqq. (Laertius Diogen. VIII
+86 Εὔδοξος Αἰσχίνου Κνίδιος . . τὰ μὲν
+γεωμετρικὰ Ἀρχύτα διήκουσε, τὰ γε ἰατρικὰ
+Φιλιστίωνος τοῦ Σικελιώτου, &gt;
+καὶ Καλλίμαχος ἐν τοῖς Πίναξί φησι cf.
+§ 89. Athen. III 115 d Φιλιστίων ὁ
+Λοκρὸς fragm. affert ex Opsartyticis
+(cf. XII 516 c) Plut. Quaest. conv. VII 1
+p. 699 B : ἔτι δὴ τῶν μαρτύρων τῷ Πλάτωνι
+προσκαλοῦμαι Ψιλιστίωνά τε τὸν
+Λοκρόν, εὖ μάλα παλαιὸν ἄνδρα καὶ
+λαμπρὸν ἀπὸ τῆς τέχνης ὑμῶν γενόμενον
+καὶ Ἱπποκράτη καὶ Διώξιππον [i. e. Δέξιππον]
+τὸν Ἱπποκράτειον (cf. de Stoic.
+rep. 29 p. 1047 E) Gal. XVIII A 8 K.:
+ἐν δὲ τῷ διαιτητικῷ τῷ ὑγιεινῷ (i. e. Hipp.
+q. f. de victu salubri) τῷ Ἱπποκράτει με)
+ἐπιγεγραμμένῳ καὶ αὐτῷ, τοῖς δ᾿ ἀποξενοῦσιν
+αὐτὸ τισὶ μὲν εἰς Φιλιστίωνα,
+τισὶ δ᾿ εἰς Ἀρίστωνα τισὶ δ᾿ εἰς Φερεκύδην
+ἀναφέρουσι, γέγραπται ταυτί. (cf. XV 455
+et XIX 720 supra s. v. Εὐρυφῶν) Idem
+IV 471: τί ποτε οὖν τηλικοῦτόν ἐστι τὸ
+παρὰ της ἀναπνοῆς ἡμῖν Χρηστόν; ἆρά Τε
+τῆς ψυχῆς αὐτῆς ἐστι γένεσις, ὡς Ἀσκληπιάδης
+φησίν; ἢ γένεσις μὲν οὐχί, ῥῶσις
+δέ τι; ὡς τοῦ Νικάρχου Πραξαγόρας; ἢ
+τῆς ἐμφύτου θερμασίας ἀνάψυξίς τις ὡς
+Φιλιστίων τε καὶ Διοκλῆς ἔλεγον; Caelius
+bis Philistionis fratrem affert chrou. III 1
+p. 489 Amm. V 1 p. 555. Praecepta
+apud Plin. ΧΧ 31.86. 122</p>
+<p n="47">Φιλόλαος, ὁ Κροτωνιάτης [ cf. Herm.
+XXVIIl 417] 18,8 sqq. de morbis 20,
+22. 24</p>
+<p n="48">Φιλόσοφος Aristoteles i. e. Menon 8,12</p>
+<p n="49">Φιλόσοφοι. παρὰ τοῖς ἀρχαίοις τῶν φιλοσόφων
+disceptatur de vesicae secretione
+29,52 οἱ πλείους τῶν φιλοσόφων corpus
+esse animam aftirmant 31, 41</p>
+<p n="50">Ζεύς. Μενεκράτης ὁ Ζεὺς ἐπικληθείς 19,18
+cf. test.</p>
+<p n="51">Verba sive noinina asterisco notata desiderantur in lexicis.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>
