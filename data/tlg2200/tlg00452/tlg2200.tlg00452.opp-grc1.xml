@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
-    
+<teiHeader xml:lang="eng">
     <fileDesc>
-   <titleStmt>
-                <title>Orationes LI-LXIV</title>
-    <author>Libanius</author>
+        <titleStmt>
+            <title xml:lang="lat">Oratio 52</title>
+            <author>Libanius</author>
+            <editor>Richard Foerster</editor>
                 <sponsor>University of Leipzig</sponsor>
     <funder>European Social Fund Saxony</funder>
     <principal>Gregory Crane</principal>
@@ -54,33 +54,32 @@
     <availability>
      <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
     </availability>
-    <date>2014</date>
+    <date>2016</date>
     <publisher>University of Leipzig</publisher>
     <pubPlace>Germany</pubPlace>
    </publicationStmt>
    
    <sourceDesc>
-    <listBibl xml:lang="lat">
-     <biblStruct>
-      <monogr>
-       <editor>
-        <persName>
-         <name xml:lang="lat">Richardus Foerster</name>
-         <addName xml:lang="de">Richard Foerster</addName>
-        </persName>
-       </editor> 
-       <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
-       <title ref="urn:cts:greekLit:tlg2200.tlg004">Orationes LI-LXIV</title>
-       <imprint>
-        <publisher>In Aedibus B.G. Teubneri</publisher>
-        <pubPlace>Lipsiae</pubPlace>
-        <date>1908</date>
-       </imprint>
-       <biblScope unit="volume">4</biblScope>
-      </monogr>
-      <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>
-      
-     </biblStruct>
+    <listBibl>
+  <biblStruct>
+                <monogr>
+                    <editor>
+                        <persName>
+                            <name xml:lang="lat">Richardus Foerster</name>
+                            <addName xml:lang="deu">Richard Foerster</addName>
+                        </persName>
+                    </editor> 
+                    <author ref="urn:cts:greekLit:tlg2200">Libanius</author>  
+                    <title xml:lang="lat">Orationes LI-LXIV</title>
+                    <imprint>
+                        <publisher>Teubner</publisher>
+                        <pubPlace>Leipzig</pubPlace>
+                        <date>1908</date>
+                    </imprint>
+                    <biblScope unit="volume">4</biblScope>
+                </monogr>
+                <ref target="https://archive.org/details/libaniiopera01libagoog">Internet Archive</ref>                
+            </biblStruct>
     </listBibl>
    </sourceDesc>
    
@@ -95,7 +94,9 @@
   
   <profileDesc>
    <langUsage>
-    <language ident="lat">Latin</language>
+          <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+                <language ident="grc">Greek</language>
    </langUsage>
   </profileDesc>
   
