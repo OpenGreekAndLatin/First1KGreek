@@ -9,7 +9,7 @@ install:
 script: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5 --manifest --countword --hookUI "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
 
 before_deploy:
-  - hooktest-build --travis ./
+  - hooktest-build --travis --txt ./
   - results=$(cat manifest.txt)
   - DATE=`date +%Y-%m-%d`
   - git config --global user.email "builds@travis-ci.com"
