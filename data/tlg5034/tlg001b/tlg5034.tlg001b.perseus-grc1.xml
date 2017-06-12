@@ -7,7 +7,7 @@
 			<titleStmt>
 				<title>Scholia in Pindarum Pythian Odes</title>
 				<author>Pindar Scholia</author>
-				<editor>Drachmann</editor>
+				<editor>A. B. Drachmann</editor>
 				<funder>A Google Digital Humanities Award</funder>
 				<principal>Gregory Crane</principal>
 				<respStmt>
@@ -48,20 +48,23 @@
 						<monogr>
 							<author>Scholia Pindar</author>
 							<title>Scholia in Pindarum Pythian Odes</title>
+							<editor>A. B. Drachmann</editor>
 							<imprint>
 								<pubPlace>Leipzig</pubPlace>
-								<publisher>B.G. Teubneri</publisher>
+								<publisher xml:lang="lat">B.G. Teubneri</publisher>
 								<date>1910</date>
 							</imprint>
-							<biblScope unit="volume">2</biblScope>
+							
 						</monogr>
+						<series><title level="s" xml:lang="lat">Scholia in Olympionicas</title><biblScope n="volume">Vol. 2</biblScope></series>
+						
 						<ref target="https://archive.org/details/scholiaveterainp02drac">Internet Archive</ref>
 					</biblStruct>
 				</listBibl>
 			</sourceDesc>
 
 		</fileDesc>
-		<encodingDesc>
+		<encodingDesc> <p>text encoded in accordance with the latest EpiDoc standards</p>
 			  <refsDecl n="CTS">
 				<cRefPattern matchPattern="(.+).(.+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
 				<cRefPattern matchPattern="(.+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
