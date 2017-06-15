@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+    <teiHeader xml:lang="eng">
     
         <fileDesc>
             <titleStmt>
-                <title>Scholia in Pindarum Isthmian Odes</title>
+                <title xml:lang="mul">Scholia in Pindarum Isthmian Odes</title>
 
                 <author>Pindar Scholia</author>
-                <editor>Drachmann</editor>
+                <editor>A. B. Drachmann</editor>
                 <funder>A Google Digital Humanities Award</funder>
                 <principal>Gregory Crane</principal>
                 <respStmt>
@@ -48,20 +48,23 @@
                         <analytic/>
                         <monogr>
                             <author>Scholia Pindar</author>
-                            <title>Scholia in Pindarum Isthmian Odes</title>
+                            <title xml:lang="mul">Scholia in Pindarum Isthmian Odes</title>
+                            <editor>A. B. Drachmann</editor>
                             <imprint>
                                 <pubPlace>Leipzig</pubPlace>
-                                <publisher>B.G. Teubneri</publisher>
+                                <publisher xml:lang="lat">B.G. Teubneri</publisher>
                                 <date>1927</date>
                             </imprint>
-                            <biblScope unit="volume">3</biblScope>
+                           
                         </monogr>
+                        <series><title level="s" xml:lang="lat">Scholia in Olympionicas</title><biblScope n="volume">3</biblScope></series>
+                        
                         <ref type="NN"/>
                     </biblStruct>
                 </listBibl>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
+        <encodingDesc> <p>text encoded in accordance with the latest EpiDoc standards</p>
               <refsDecl n="CTS">
                 <cRefPattern matchPattern="(.+).(.+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
                 <cRefPattern matchPattern="(.+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
@@ -70,6 +73,7 @@
         <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
             </langUsage>
         </profileDesc>
   </teiHeader>

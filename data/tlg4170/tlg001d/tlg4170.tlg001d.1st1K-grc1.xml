@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+    
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Pentathlon et de novem lyricis</title>
+
+                <author>Pindar Scholia</author>
+                <editor>A. B. Drachmann</editor>
+                <funder>A Google Digital Humanities Award</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Trustees of Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <author>Pindar Scholia</author>
+                            <title xml:lang="lat">Scholia vetera in Pindari carmina</title>
+                            <imprint>
+                                <pubPlace>Leipzig</pubPlace>
+                                <publisher xml:lang="lat">B.G. Teubneri</publisher>
+                                <date>1903</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/details/scholiaveterainp01drac">Internet
+                            Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+              <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+  </teiHeader>
+
+    <text>
+        <body>
+            <div type="edition" n="urn:cts:greekLit:tlg4170.tlg001d.1st1K-grc1" xml:lang="grc">
+            <div type="textpart" subtype="chapter" n="1">
+                <head><note n="EPQ"/> Πένταθλον.</head>
+                <p>
+                    <lb/>Ἅλμα ποδὸς δίσκου τε βολὴ καὶ ἄκοντος ἐρωή <lb/>καὶ δρόμος ἠδὲ πάλη· μία δ᾿
+                    ἔπλετο πᾶσι τελευτή. <lb/>Ἅλμα πάλη δίσκευμα κοντὸς καὶ δρόμος.</p>
+            </div>
+
+            <div type="textpart" subtype="chapter" n="2">
+                <head><note n="EPQ"/> Εἰς τοὺς ἐννέα λυρικούς. <note n="5"/></head>
+                <p>
+                    <lb/>Ἐννέα τῶν πρώτων λυρικῶν πάτρην γενεήν τε <lb/>μάνθανε, καὶ πατέρας καὶ
+                    διάλεκτον ἄθρει. <lb/>ὧν Μιτυληναῖος μὲν ἔην, γεραρώτερος ἄλλων <lb/>Ἀλκαῖος
+                    πρότερος, ἠχικὸς Αἰολίδης. <lb/><note n="5"/> ἣ δ᾿ ἐπὶ τῷ, ξυνὴν πάτρην φωνήν τε
+                    δαεῖσα <note n="10"/>
+                    <lb/>Σαπφὼ, Κληῖδος καὶ πατρὸς Εὐρυγύου. <lb/>Στησίχορος Σικελός· πάτρη δέ οἱ
+                    Ἱμέρα ἐστίν· <lb/>Εὐφήμου πατρὸς, Δωρικὸς ἁρμονίην. <lb/>Ἴβυκος Ἰταλὸς ἐκ Ρηγίου
+                    ἠὲ Μεσήνης <lb/><note n="10"/> Ἠελίδα πατρὸς, Δωρίδα δ᾿ ἡρμόσατο. <note n="15"/>
+                    <lb/>Παρθενίου δὲ πατρὸς λιγυρὸς πάις ἠετιήου <lb/>εἴδει μελπόμενος, Τήιος
+                    Ἀνακρέων. <lb/>Πίνδαρος ἦν Θηβαῖος, ἀτὰρ πατρὸς Σκοπελίνου, <lb/>Δώριον αἰνήσας
+                    ἁρμονίην ἐπέων. <pb n="11"/>
+                    <lb/>ἠδὲ Σιμωνίδεω Κείου Δωριστὶ λαλοῦντος <note n="15"/>
+                    <lb/>τὸν πατέρ᾿ αἰνήσας ἴσθι Λεωπρεπέα. <lb/>ἶσα δαεὶς καὶ Κεῖος ἐὼν γενεῇ
+                    μελοποιὸς <lb/>Μίλωνος πατέρος ἔπλετο Βακχυλίδης. <lb/><note n="5"/> Ἀλκμὰν ἐν
+                    Λυδοῖσι μέγα πρέπει· ἀλλὰ Δάμαντος <lb/>ἐστὶ καὶ ἐκ Σπάρτης, Δωρίδος ἁρμονίης.
+                        <note n="20"/></p>
+                <p>Λυρικοὶ ποιηταὶ μουσικῶν ᾀσμάτων ἐννέα· ἐννέα δὲ <note n="(D)EFK(P)Q"/> καὶ αἱ
+                    καθ᾿ ἡμᾶς τῶν θείων ᾀσμάτων ὠδαί. | τὰ δὲ ὀνόματα <note n="(D)FKQ"/> τῶν
+                    προειρημένων λυρικῶν εἰσὶ τάδε· Ἀλκμὰν Ἀλκαῖος Σαπφὼ Στησίχορος Ἴβυκος Ἀνακρέων
+                    Σιμωνίδης Βακχυλίδης καὶ Πίνδαρος.</p>
+                <p>Ἐννέα δὲ οἱ λυρικοί· Ἀλκαῖος Σαπφὼ Στησίχορος Ἴβυκος <note n="Q br"/> Βακχυλίδης
+                    Σιμωνίδης Ἀλκμὰν Ἀνακρέων καὶ Πίνδαρος.</p>
+            </div>
+            </div>
+        </body>
+    </text>
+</TEI>

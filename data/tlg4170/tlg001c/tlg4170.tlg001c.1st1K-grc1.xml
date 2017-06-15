@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+    
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Vita metrica</title>
+
+                <author>Pindar Scholia</author>
+                <editor>A. B. Drachmann</editor>
+                <funder>A Google Digital Humanities Award</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Trustees of Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <author>Pindar Scholia</author>
+                            <title xml:lang="lat">Scholia vetera in Pindari carmina</title>
+                            <imprint>
+                                <pubPlace>Leipzig</pubPlace>
+                                <publisher xml:lang="lat">B.G. Teubneri</publisher>
+                                <date>1903</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/details/scholiaveterainp01drac">Internet
+                            Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+              <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+  </teiHeader>
+
+    <text>
+        <body>
+            <div type="edition" n="urn:cts:greekLit:tlg4170.tlg001c.1st1K-grc1" xml:lang="grc">
+            <div type="textpart" subtype="chapter" n="1">
+                <head><note n="EPQ"/> Πινδάρου γένος δι᾿ ἐπῶν. <note n="5"/></head>
+                <p>
+                    <lb/>Πίνδαρον ὑψαγόρην Καδμηίδος οὔδεϊ Θήβης <lb/>Κλειδίκη εὐνηθεῖσα μενεπτολέμῳ
+                    Δαϊφάντῳ <lb/>γείνατο ναιετάουσα Κυνὸς κεφαλῆς παρὰ χώρῳ, <lb/>οὐκ οἶον· ἅμα τῷ
+                    καὶ Ἐρίτιμον εἰδότα θήρην, <lb/><note n="5"/> εἰδότα πυγμαχίην τε παλαισμοσύνην
+                    τ᾿ ἀλεγεινήν. <note n="10"/>
+                    <lb/>τὸν μὲν ὅτε κνώσσοντα ποτὶ χθόνα κάτθετο μήτηρ <lb/>εἰσέτι παιδνὸν ἐόντα,
+                    μέλισσά τις ὡς ἐπὶ σίμβλῳ <lb/>χείλεσι νηπιάχοισι τιθαιβώσσουσα ποτᾶτο. <lb/>τῷ
+                    δὲ λιγυφθόγγων ἐπέων μελέων θ᾿ ὑποθήμων <lb/><note n="10"/> ἔπλετο δῖα Κόριννα·
+                    θεμείλια δ᾿ ὤπασε μύθων <note n="15"/>
+                    <pb n="9"/>
+                    <lb/>τὸ πρῶτον· μετὰ τὴν δ᾿ Ἀγαθοκλέος ἔμμορεν αὐδῆς, <lb/>ὅς τέ ῥά οἱ
+                    κατέδειξεν ὁδὸν καὶ μέτρον ἀοιδῆς. <lb/>εὖτε δ᾿ Ἀλεξάνδροιο Φιλιππιάδαο μενοινῇ
+                    <lb/>Καδμείων ἀφίκοντο Μακηδόνες ἄστεα πέρσαι, <lb/><note n="5"/> Πινδαρέων
+                    μεγάρων οὐχ ἥψατο θεσπιδαὲς πῦρ. <note n="15"/>
+                    <lb/>ἀλλὰ τὰ μὲν μετόπισθεν. ἔτι ζώοντι δ᾿ ἀοιδῷ <lb/>Φοῖβος ἄναξ ἐκέλευσε
+                    πολυχρύσου παρὰ Πυθοῦς <lb/>ἤια καὶ μέθυ λαρὸν ἀεὶ Θήβηνδε κομίζειν. <lb/>καὶ
+                    μέλος, ὡς ἐνέπουσιν, ἐν οὔρεσιν ἠυκέρως Πάν <lb/><note n="10"/> Πινδάρου αἰὲν
+                    ἄειδε, καὶ οὐκ ἐμέγηρεν ἀείδων. <note n="20"/>
+                    <lb/>ἦμος δ᾿ ἐν Μαραθῶνι καὶ ἐν Σαλαμῖνι παρέσταν <lb/>αἰναρέται Πέρσαι μετὰ
+                    Δάτιδος ἀγριοφώνου, <lb/>τῆμος ἔτι ζώεσκεν, ὅτ᾿ Αἰσχύλος ἦν ἐν Ἀθήναις. <lb/>τῷ
+                    δὲ Τιμοξείνη παρελέξατο δῖα γυναικῶν, <lb/><note n="15"/> ἥ τέκεν Εὔμητιν,
+                    μεγαλήτορα καὶ Δαΐφαντον, <note n="25"/>
+                    <lb/>Πρωτομάχην δ᾿ ἐπὶ τοῖσιν. ἔμελψε δὲ κῦδος ἀγώνων <lb/>τῶν πισύρων, μακάρων
+                    παιήονας ἐνδεδεγμένους, <lb/>καὶ μέλος ὀρχηθμοῖο, θεῶν τ᾿ ἐρικυδέας ὕμνους,
+                    <lb/>ἠδὲ μελιφθόγγων μελεδήματα παρθενικάων. <lb/><note n="20"/> τοῖος ἐὼν καὶ
+                    τόσσα παθὼν καὶ τόσσα τελέσσας <note n="30"/>
+                    <lb/>κάτθανεν ὀγδώκοντα τελειομένων ἐνιαυτῶν.</p>
+            </div>
+            </div>
+        </body>
+    </text>
+</TEI>

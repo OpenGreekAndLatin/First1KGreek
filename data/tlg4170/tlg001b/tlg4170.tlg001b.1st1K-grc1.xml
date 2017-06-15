@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+    
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Vita Thomana et hypothesis Olympiorum</title>
+
+                <author>Pindar Scholia</author>
+                <editor>A. B. Drachmann</editor>
+                <funder>A Google Digital Humanities Award</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Trustees of Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <author>Pindar Scholia</author>
+                            <title xml:lang="lat">Scholia vetera in Pindari carmina</title>
+                            <imprint>
+                                <pubPlace>Leipzig</pubPlace>
+                                <publisher xml:lang="lat">B.G. Teubneri</publisher>
+                                <date>1903</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/details/scholiaveterainp01drac">Internet
+                            Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+              <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+  </teiHeader>
+
+    <text>
+        <body>
+            <div type="edition" n="urn:cts:greekLit:tlg4170.tlg001b.1st1K-grc1" xml:lang="grc">
+            
+            <div type="textpart" subtype="chapter" n="1">
+                <head><note n="EHKQQ b θ"/> Πινδάρου γένος.</head>
+                <p>Πίνδαρος τὸ μὲν γένος Θηβαῖος, υἱὸς Δαϊφάντου κατὰ τοὺς ἀληθεστέρους· οἱ δὲ
+                    Σκοπελίνου· οἱ δὲ τὸν αὐτὸν <note n="10"/> Σκοπελίνου φασίν. οἱ δὲ Παγώνδα καὶ
+                    Μυρτοῦς, ἀπὸ κώμης Κυνοκεφάλων. ἡ δὲ Μυρτὼ ἐγαμήθη Σκοπελίνῳ τῷ αὐλητῇ, ὃς τὴν
+                    αὐλητικὴν διδάσκων τὸν Πίνδαρον, ἐπεὶ εἶδε μείζονος ἕξεως ὄντα, παρέδωκε Λάσῳ τῷ
+                    Ἑρμιονεῖ μελοποιῷ, παρ᾿ ᾧ τὴν λυρικὴν ἐπαιδεύθη. γέγονε δὲ κατὰ <note n="15"/>
+                    [τοὺς] χρόνους Αἰσχύλου, καὶ συγγεγένηται, καὶ τέθνηκεν ὅτε καὶ τὰ Περσικὰ
+                    ἤκμαζον. ἔσχε δὲ θυγατέρας δύο, <pb n="5"/> Εὔμητιν καὶ Πρωτομάχην. κατῴκει δὲ
+                    τὰς Θήβας, πλησίον τοῦ ἱεροῦ τῆς μητρὸς τῶν θεῶν τὴν οἰκίαν ἔχων. ἐτίμα δὲ τὴν
+                    θεὸν σφόδρα, ὢν εὐσεβέστατος, καὶ τὸν Πᾶνα, καὶ τὸν Ἀπόλλωνα, εἰς ὃν καὶ πλεῖστα
+                    γέγραφε. νεώτερος δὲ ἦν Σιμωνίδου, πρεσβύτερος δὲ Βακχυλίδου. κατὰ δὲ τὴν Ξέρξου
+                    κατάβασιν ἤκμαζε τῇ ἡλικίᾳ. ἐτιμήθη δὲ σφόδρα ὑπὸ πάντων τῶν Ἑλλήνων διὰ τὸ ὑπὸ
+                    τοῦ Ἀπόλλωνος φιλεῖσθαι οὕτως, ὡς καὶ μερίδα λαμβάνειν ἀπὸ τῶν προσφερομένων τῷ
+                    θεῷ, καὶ τὸν ἱερέα βοᾶν ἐν ταῖς θυσίαις· Πίνδαρον ἐπὶ τὸ δεῖπνον τοῦ θεοῦ. λόγος
+                    καὶ τὸν Πᾶνα εὑρῆσαί ποτε ᾄδοντα περὶ τοῦ Πέλοπος· λόγος δὲ ὅτι ποτὲ
+                    Λακεδαιμόνιοι Βοιωτοὺς ἐμπρήσαντες καὶ Θήβας ἀπέσχοντο μόνης τῆς οἰκίας αὐτοῦ,
+                    θεασάμενοι ἐπιγεγραμμένον τὸν στίχον τοῦτον· Πινδάρου τοῦ μουσοποιοῦ τὴν στέγην
+                    μὴ καίετε. ὅπερ καὶ τὸν Ἀλέξανδρον μετὰ ταῦτά φασι πεποιηκέναι· καὶ γὰρ οὗτος
+                    ἐμπρήσας τὰς Θήβας μόνης ἐκείνης ἐφείσατο. ἐχθρωδῶς δὲ διακειμένων τῶν Ἀθηναίων
+                    πρὸς τοὺς Θηβαίους, <pb n="6"/> ἐπεὶ εἶπεν ἐν τοῖς ποιήμασιν· ὦ ταὶ λιπαραὶ καὶ
+                    μεγαλοπόλιες Ἀθᾶναι, ἐζημίωσαν αὐτὸν χρήμασι Θηβαῖοι, ἅπερ ὑπὲρ αὐτοῦ ἔτισαν
+                    Ἀθηναῖοι. γέγραπται δὲ αὐτῷ ἑπτακαίδεκα βιβλία, ὧν τέσσαρα ἡ λεγομένη περίοδος
+                    λέγει τάδε· <note n="Q b v"/> Ὀλυμπιονίκας Πυθιονίκας Ἰσθμιονίκας Νεμεονίκας. |
+                    [Ἔστι <note n="5"/> δὲ τὰ Ὀλύμπια ἀγὼν εἰς τὸν Δία, τὰ Πύθια ἀγὼν εἰς τὸν
+                    Ἀπόλλωνα, τὰ Νέμεα ἀγὼν καὶ αὐτὸς εἰς Δία, τὰ δὲ Ἴσθμια ἀγὼν εἰς Ποσειδῶνα. τὰ
+                    δὲ ἔπαθλα τούτων ἐλαία, δάφνη, <note n="EHKQθ"/> σέλινον ξηρόν τε καὶ χλωρόν.] |
+                    ἀλλὰ περὶ μὲν τῶν ἄλλων καὶ τὰ ἐπιβάλλοντα τούτοις ὕστερον ἐροῦμεν· νῦν δὲ περὶ
+                        <note n="10"/> τῆς θέσεως τῶν Ὀλυμπιονικῶν λεκτέον. τινὲς μὲν οὖν ταύτην εἰς
+                    τὰ περὶ Οἰνομάου καὶ Πέλοπος τοῖς χρόνοις ἀναφέρουσιν· ἄλλοι δέ φασιν ὡς οὕτως
+                    αἰσχρὰν οὖσαν τὴν θέσιν οὐκ ἂν διεφύλαξαν· ἄλλοι δὲ Ἡρακλεῖ ἀνατιθέασιν, ὡς καὶ
+                    Πίνδαρος (O. X), ἐνδοξοτέροις κοσμῶν τὸν ἀγῶνα. <note n="15"/> ἐπεὶ γὰρ τὴν
+                    Αὐγείου κόπρον καθῆρε καὶ τῶν ἐπηγγελμένων <pb n="7"/> οὐκ ἔτυχε, συναγαγὼν
+                    στρατόπεδον τόν τε Αὐγείαν φονεύει καὶ τὴν Ἦλιν παρίσταται, καὶ πολλὰ λάφυρα
+                    περιποιησάμενος ἀγῶνα τίθησι τοῖς μετ᾿ αὐτοῦ πολεμήσασιν· ὅθεν καὶ τὸ ἔθος
+                    διαμεῖναι. ἀλλ᾿ οὐδὲ αὕτη ἔμεινεν ἡ θέσις, ἐπεὶ τῆς συμβάσης αὐτοῖς δυσχερείας
+                    ὑπόμνησις ἦν. ἀλλ᾿ Ἴφιτός τις καὶ Εὐρύλοχος τοὺς Κιρραίους πολεμήσαντες (οὗτοι
+                    δὲ ἦσαν οἱ τὴν πάραλον τῆς Φωκίδος λῃσταὶ κατέχοντες) καὶ πολλὰ λάφυρα
+                    συναγαγόντες, ὁ μὲν Ἴφιτος τὰ Ὀλύμπια κατέβαλεν, ὁ δὲ τὰ Πύθια· καὶ ταύτην
+                    ἐπιμεῖναι τὴν θέσιν συνέβη.</p>
+                <p>Τέθνηκε δὲ ὁ Πίνδαρος ἓξ καὶ ἑξήκοντα ἐτῶν γεγονὼς ἐπὶ Ἀβίωνος ἄρχοντος κατὰ τὴν
+                    ἕκτην καὶ ὀγδοηκοστὴν Ὀλυμπίαδα. ἤκουσε δὲ Σιμωνίδου.</p>
+                <p>ὁ δὲ ἐπινίκιος οὗ ἡ ἀρχή· Ἄριστον μὲν ὕδωρ, προτέτακται <note n="EKQθ"/> ὑπὸ
+                    Ἀριστοφάνους τοῦ συντάξαντος τὰ Πινδαρικὰ διὰ τὸ περιέχειν τοῦ ἀγῶνος ἐγκώμιον
+                    καὶ τὰ περὶ τοῦ Πέλοπος, ὃς πρῶτος ἐν Ἤλιδι ἠγωνίσατο. γέγραπται δὲ Ἱέρωνι
+                    βασιλεῖ Συρακουσίων· αἱ δὲ Συράκουσαι πόλις τῆς Σικελίας· ὃς καὶ κτίστης ἐγένετο
+                    Αἴτνης πόλεως, ἀπὸ ὄρους αὐτῆς <pb n="8"/> οὕτως αὐτὴν ὀνομάσας. ἀποστείλας δὲ
+                    οὗτος ἵππους εἰς Ὀλυμπίαν ἐνίκησε κέλητι.</p>
+                <p><note n="EKQ"/> Τὸ μέτρον τούτου ὑπάρχει τριάς· τριὰς δέ ἐστι ποίημα ἐν ᾧ στροφὴ,
+                    ἀντίστροφος, ἐπῳδός.</p>
+            </div>
+            </div>
+        </body>
+    </text>
+</TEI>
