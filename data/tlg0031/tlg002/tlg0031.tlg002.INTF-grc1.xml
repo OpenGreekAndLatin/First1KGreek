@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="document" n="01">01</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <name type="org">The Institut für neutestamentliche Textforschung</name>
+                </publisher>
+                <availability>
+                    <p>
+                        (C) 2017 Institut für neutestamentliche Textforschung.
+                    </p>
+                    <p>
+                        This work is licensed under a
+                        <ref type="license" target="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">
+                            Creative Commons Attribution-ShareAlike 3.0 Unported License
+                        </ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>United Kingdom</country>
+                        <settlement>London</settlement>
+                        <repository>British Library</repository>
+                        <idno>Add. 43725</idno>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <refsDecl n="CTS">
+                <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:ab[@n='$2'])"/>
+                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc"/>
+            </langUsage>
+            <handNotes>
+                <handNote xml:id="firsthand"/>
+                <handNote xml:id="corrector1"/>
+            </handNotes>
+        </profileDesc>
+    </teiHeader>
+    <text xml:lang="grc">
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0031.tlg002.INTF-grc1">
+                <div type="textpart" subtype="chapter" n="1">
+                    <ab n="1">
+                        <w>αρχη</w>
+                        <w>του</w>
+                        <w>
+                            ευαγγελι
+                            <lb break="no"/>
+                            ου
+                        </w>
+                        <w>
+                            <abbr type="nomSac">
+                                <hi rend="overline">ιυ</hi>
+                            </abbr>
+                        </w>
+                        <w>
+                            <abbr type="nomSac">
+                                <hi rend="overline">χυ</hi>
+                            </abbr>
+                        </w>
+                        <app>
+                            <rdg type="orig" hand="firsthand"/>
+                            <rdg type="corr" hand="corrector1">
+                                <w>
+                                    <abbr type="nomSac">
+                                        <hi rend="overline">υυ</hi>
+                                    </abbr>
+                                </w>
+                                <w>
+                                    <abbr type="nomSac">
+                                        <hi rend="overline">θυ</hi>
+                                    </abbr>
+                                </w>
+                            </rdg>
+                        </app>
+                    </ab>
+                    <ab n="2">
+                        <w>καθως</w>
+                        <w>
+                            γε
+                            <lb break="no"/>
+                            γραπται
+                        </w>
+                        <w>εν</w>
+                        <w>τω</w>
+                        <w>
+                            ησα
+                            <lb break="no"/>
+                            ια
+                        </w>
+                        <w>τω</w>
+                        <w>προφητη</w>
+                        <lb/>
+                        <w>ιδου</w>
+                        <w>εγω</w>
+                        <w>
+                            αποστε
+                            <lb break="no"/>
+                            λω
+                        </w>
+                        <w>τον</w>
+                        <w>αγγελον</w>
+                        <w>μου</w>
+                        <lb/>
+                        <w>προ</w>
+                        <w>προσωπου</w>
+                        <w>σου</w>
+                        <lb/>
+                        <w>ος</w>
+                        <w>κατασκευασει</w>
+                        <lb/>
+                        <w>την</w>
+                        <w>οδον</w>
+                        <w>σου</w>
+                        <lb/>
+                    </ab>
+                    <ab n="3">
+                        <w>φωνη</w>
+                        <w>βοωντος</w>
+                        <w>εν</w>
+                        <lb/>
+                        <w>τη</w>
+                        <w>ερημω</w>
+                        <w>
+                            ετοιμα
+                            <lb break="no"/>
+                            σατε
+                        </w>
+                        <w>την</w>
+                        <w>οδον</w>
+                        <w>
+                            <abbr type="nomSac">
+                                <hi rend="overline">κυ</hi>
+                            </abbr>
+                        </w>
+                        <lb/>
+                        <w>ευθιας</w>
+                        <w>ποιειτε</w>
+                        <w>τας</w>
+                        <lb/>
+                        <w>τριβους</w>
+                        <w>αυτου</w>
+                    </ab>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
