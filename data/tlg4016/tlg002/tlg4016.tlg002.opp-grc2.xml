@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
-    
-        <fileDesc>
-            <titleStmt><title>Commentaria in Aristotelem Graeca</title>
+    <teiHeader xml:lang="eng">
+            <fileDesc>
+            <titleStmt><title xml:lang="lat">In Aristotelis Categorias Commentarius</title>
+                <author xml:lang="lat">Ammonius</author>
+                <editor>Adolf Busse</editor>
                 <sponsor>University of Leipzig</sponsor>
                 <funder>European Social Fund Saxony</funder>
                 <principal>Gregory Crane</principal>
@@ -48,40 +49,41 @@
       </titleStmt>
       <publicationStmt>
                 <authority>University of Leipzig</authority>
-                <idno type="filename">commentaria_4_2.xml</idno>
+                <idno type="filename">tlg4016.tlg002.opp-grc2.xml</idno>
                 <availability>
                     <p>
                         <ref target="https://creativecommons.org/licenses/by-sa/4.0/">Available
                             under a Creative Commons Attribution-ShareAlike 4.0 International
                             License</ref></p>
                 </availability>
-                <date>2014</date>
+                <date>2016</date>
                 <publisher>University of Leipzig</publisher>
                 <pubPlace>Germany</pubPlace>
             </publicationStmt>
 
             <sourceDesc>
-                <listBibl xml:lang="lat">
+                <listBibl>
                     <biblStruct>
                         <monogr>
                             <editor>
                                 <persName>
                                     <name xml:lang="lat">Adolfus Busse</name>
-                                    <addName xml:lang="de">Adolf Busse</addName>
+                                    <addName xml:lang="deu">Adolf Busse</addName>
                                 </persName>
                             </editor>
-                            <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2036">Dexippus</author>
-                            <title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg2036.tlg001.opp-grc1">In Aristotelis Categorias Commentarium</title>
+                            <author ref="urn:cts:greekLit:tlg4016" xml:lang="lat">Ammonius</author>
+                            <title xml:lang="lat">In Aristotelis Categorias Commentarium</title>
                             <imprint>
-                                <publisher>Berolini: Typis et Impensis G. Reimeri</publisher>
+                                <publisher>Reimer</publisher>
                                 <pubPlace>Berlin</pubPlace>
-                                <date>1888</date>
+                                <date>1895</date>
                             </imprint>
-                            <biblScope>Volume 4.4</biblScope>
                         </monogr>
-                        <ref target="https://archive.org/stream/commentariainari04akaduoft#page/n327/mode/2up">Internet Archive</ref>
-
-
+                           <series>
+                <title level="s">Commentaria in Aristotelem Graeca</title>
+                <biblScope unit="volume">4.4</biblScope>
+                    </series>
+                        <ref target="http://www.archive.org/stream/commentariainari04akaduoft#page/n307/mode/2up">Internet Archive</ref>
                     </biblStruct>
                 </listBibl>
             </sourceDesc>
@@ -100,6 +102,8 @@
         <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
+                   <language ident="lat">Latin</language>
+                   <language ident="deu">German</language>
             </langUsage>
         </profileDesc>
 
