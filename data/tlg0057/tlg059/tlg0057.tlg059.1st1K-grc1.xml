@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <teiHeader>
+    <teiHeader xml:lang="eng">
     
         <fileDesc>
             <titleStmt>
-                <title>De differentiis pulsuum</title>
+                <title xml:lang="lat">De differentiis pulsuum</title>
                 <author>Galen</author>
                 <editor>Karl Gottlob Kühn</editor>
                 <funder>Andrew W. Mellon Foundation</funder>
                 <respStmt>
-                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="http://www.graeco-arabic-studies.org/">A Digital Corpus for Graeco-Arabic Studies, funded by the Andrew W. Mellon Foundation</orgName>
+                    <persName>Mark Schiefsky, Harvard University</persName>
+                    <persName>Gregory R. Crane, Universität Leipzig</persName>
+                    <persName>Uwe Vagelpohl, University of Warwick</persName>
+                </respStmt>
+                <respStmt>
                     <resp>Keyboarding</resp>
+                    <orgName xml:id="DDD">Digital Divide Data</orgName>
+                </respStmt>
+                <respStmt>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                    <persName>Gregory R. Crane</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                    <persName>Matt Munson</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+                    <persName>Annette Geßner</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                    <persName>Thibault Clérice</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>Technical Advisor</resp>
+                    <persName>Bruce Robertson</persName>
                 </respStmt>
             </titleStmt>
             <publicationStmt>
@@ -30,12 +57,12 @@
             <sourceDesc>
                 <biblStruct>
                     <monogr>
-                        <title>Claudii Galeni Opera Omnia</title>
+                        <title xml:lang="lat">Claudii Galeni Opera Omnia</title>
                         <author>Galen</author>
                         <editor>Karl Gottlob Kühn</editor>
                         <imprint>
                             <publisher>Cnobloch</publisher>
-                            <pubPlace>Lipsiae</pubPlace>
+                            <pubPlace xml:lang="lat">Lipsiae</pubPlace>
                             <biblScope unit="vol">8</biblScope>
                             <biblScope unit="pp" from="493" to="765">493-765</biblScope>
                             <date>1824</date>
@@ -58,6 +85,7 @@
                 <language ident="grc">Greek</language>
             </langUsage>
         </profileDesc>
+        <revisionDesc><change who="Pria Jackson" when="2017-06-21">Testing Epidoc, tagging figures</change></revisionDesc>
   </teiHeader>
 
     <text>
@@ -252,187 +280,190 @@
                             τῶν λοιπῶν δ’ ὑπαλλαττομένων. <lb/>καὶ αὖθις ἐννέα, τῆς μὲν κατὰ μῆκος
                             διαστάσεως <lb/>βραχείας μενούσης, τῶν δ’ ἄλλων ὑπαλλαττομένων.</p>
                         <milestone unit="ed2page" n="18"/>
-                        <list rend="table">
-                            <item>
-                                <list rend="row">
-                                    <item><label><num>α΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>πλατὺς</item>
-                                    <item>ὑψηλὸς</item>
-                                    <item>μέγας</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>β΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>πλατὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>γ΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>πλατὺς</item>
-                                    <item>ταπεινὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>δ΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ὑψηλὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ε΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ἰσχνὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ς΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταπεινὸς</item>
-                                    <item>ἰσχνὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ζ΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>στενὸς</item>
-                                    <item>ὑψηλὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>η΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>στενὸς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ἰσχνὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>θ΄</num></label></item>
-                                    <item>μακρὸς</item>
-                                    <item>στενὸς</item>
-                                    <item>ταπεινὸς</item>
-                                    <item>ἰσχνὸς</item>
-                                </list>
-                                <pb n="505"/>
-                                <list rend="row">
-                                    <item><label><num>ι΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>πλατὺς</item>
-                                    <item>ὑψηλὸς</item>
-                                    <item>ἁδρὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ια΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>πλατὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιβ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>πλατὺς</item>
-                                    <item>ταπεινὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιγ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ὑψηλὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιδ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>μέσος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιε΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταπεινὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ις΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>στενὸς</item>
-                                    <item>ὑψηλὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιζ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>στενὸς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιη΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>στενὸς</item>
-                                    <item>ταπεινὸς</item>
-                                    <item>ἰσχνὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ιθ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>πλατὺς</item>
-                                    <item>ὑψηλὸς</item>
-                                    <item>ἁδρὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>πλατὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ἁδρὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κα΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>πλατὺς</item>
-                                    <item>ταπεινὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κβ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ὑψηλὸς</item>
-                                    <item>ἁδρὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κγ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ἁδρὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κδ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταπεινὸς</item>
-                                </list>
-                                <pb n="506"/>
-                                <list rend="row">
-                                    <item><label><num>κε΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>στενὸς</item>
-                                    <item>ὑψηλὸς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κς΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>στενὸς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>κζ΄</num></label></item>
-                                    <item>βραχὺς</item>
-                                    <item>στενὸς</item>
-                                    <item>ταπεινὸς</item>
-                                    <item>μικρὸς</item>
-                                </list>
-                            </item>
-                        </list>
+                        <figure>
+                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;view=2up;seq=514"></graphic>
+                            <list rend="table">
+                                <item>
+                                    <list rend="row">
+                                        <item><label><num>α΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>πλατὺς</item>
+                                        <item>ὑψηλὸς</item>
+                                        <item>μέγας</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>β΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>πλατὺς</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>γ΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>πλατὺς</item>
+                                        <item>ταπεινὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>δ΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ὑψηλὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ε΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ἰσχνὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ς΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ταπεινὸς</item>
+                                        <item>ἰσχνὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ζ΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>στενὸς</item>
+                                        <item>ὑψηλὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>η΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>στενὸς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ἰσχνὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>θ΄</num></label></item>
+                                        <item>μακρὸς</item>
+                                        <item>στενὸς</item>
+                                        <item>ταπεινὸς</item>
+                                        <item>ἰσχνὸς</item>
+                                    </list>
+                                    <pb n="505"/>
+                                    <list rend="row">
+                                        <item><label><num>ι΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>πλατὺς</item>
+                                        <item>ὑψηλὸς</item>
+                                        <item>ἁδρὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ια΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>πλατὺς</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιβ΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>πλατὺς</item>
+                                        <item>ταπεινὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιγ΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ὑψηλὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιδ΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                        <item>μέσος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιε΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ταπεινὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ις΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>στενὸς</item>
+                                        <item>ὑψηλὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιζ΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>στενὸς</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιη΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>στενὸς</item>
+                                        <item>ταπεινὸς</item>
+                                        <item>ἰσχνὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ιθ΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>πλατὺς</item>
+                                        <item>ὑψηλὸς</item>
+                                        <item>ἁδρὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κ΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>πλατὺς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ἁδρὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κα΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>πλατὺς</item>
+                                        <item>ταπεινὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κβ΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ὑψηλὸς</item>
+                                        <item>ἁδρὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κγ΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ἁδρὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κδ΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>σύμμετρος</item>
+                                        <item>ταπεινὸς</item>
+                                    </list>
+                                    <pb n="506"/>
+                                    <list rend="row">
+                                        <item><label><num>κε΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>στενὸς</item>
+                                        <item>ὑψηλὸς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κς΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>στενὸς</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>κζ΄</num></label></item>
+                                        <item>βραχὺς</item>
+                                        <item>στενὸς</item>
+                                        <item>ταπεινὸς</item>
+                                        <item>μικρὸς</item>
+                                    </list>
+                                </item>
+                            </list>
+                        </figure>
                         <p>
                             <milestone unit="ed1page" n="10"/>Ὄντων δὴ τούτων ἑπτὰ καὶ εἴκοσι
                             σφυγμῶν, τῶν <lb/>κατὰ τὸ ποσὸν, ἐν ταῖς τρισὶν ἅμα διαστάσεσι
@@ -881,61 +912,67 @@
                             ταχὺν, ἢ τοῦ βραδέος <pb n="532"/> πρὸς τὸν βραδὺν, τοῦτο νῦν παρείσθω.
                             πλέονα γὰρ ἀσάφειαν <lb/>παρέξει. ἀλλ’ ὡς τῶν αὐτῶν καὶ ἴσων ἀλλήλοις
                             <lb/>ὑπαρχόντων ὁ παρὼν λόγος περαινέσθω.</p>
-                        <list rend="table">
-                            <item>
-                                <list rend="row">
-                                    <item><label><num>α΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>β΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>γ΄</num></label></item>
-                                    <item>ταχὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>δ΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ε΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ς΄</num></label></item>
-                                    <item>βραδὺς</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>ζ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>βραδὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>η΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>ταχὺς</item>
-                                </list>
-                                <list rend="row">
-                                    <item><label><num>θ΄</num></label></item>
-                                    <item>σύμμετρος</item>
-                                    <item>σύμμετρος</item>
-                                </list>
-                            </item>
-                        </list>
+                        <figure>
+                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;view=2up;seq=542"></graphic>
+                            <figDesc><list rend="table">
+                                <item>
+                                    <list rend="row">
+                                        <item><label><num>α΄</num></label></item>
+                                        <item>ταχὺς</item>
+                                        <item>βραδὺς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>β΄</num></label></item>
+                                        <item>ταχὺς</item>
+                                        <item>ταχὺς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>γ΄</num></label></item>
+                                        <item>ταχὺς</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>δ΄</num></label></item>
+                                        <item>βραδὺς</item>
+                                        <item>βραδὺς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ε΄</num></label></item>
+                                        <item>βραδὺς</item>
+                                        <item>ταχὺς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ς΄</num></label></item>
+                                        <item>βραδὺς</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>ζ΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>βραδὺς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>η΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>ταχὺς</item>
+                                    </list>
+                                    <list rend="row">
+                                        <item><label><num>θ΄</num></label></item>
+                                        <item>σύμμετρος</item>
+                                        <item>σύμμετρος</item>
+                                    </list>
+                                </item>
+                            </list></figDesc>
+                        </figure>
                         <p>Οὕτω δὲ καὶ εἰ τρεῖς ὑποθέμενος διαφερούσας ἀλλήλων κινήσεις, <lb/>καθ’
                             ἑκάστην αὐτῶν τοὺς τρεῖς σφυγμοὺς ὑπαλλάττων ﻿<pb n="533"/> συμπλέκοις,
                             ἑπτὰ μὲν καὶ εἴκοσιν ἔσται τὰ πάντα σχήματα, <lb/>τρία δ’ ἐξ αὐτῶν εἰς
                             ὁμαλότητα μεταπεσεῖν ἀναγκαῖον. ἔστι <lb/>δὲ καὶ τοῦτο δῆλον ἐπὶ
                             διαγράμματος.</p>
-                        <list rend="table">
+                        <figure>
+                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;page=root;view=image;size=100;seq=543;num=533"></graphic>
+                        <figDesc>
+                           <list rend="table">
                             <item>
                                 <list rend="row">
                                     <item><label><num>α΄</num></label></item>
@@ -1102,7 +1139,9 @@
                                     <item>σύμμετρος</item>
                                 </list>
                             </item>
-                        </list>
+                           </list>
+                       </figDesc>
+                       </figure>
 
                         <pb n="535"/>
 
@@ -2467,6 +2506,9 @@
                             <lb/>ὥστε γενέσθαι καθ’ ἑκάστην δυοῖν διαστάσεων σύζευξιν <lb/>ἐννέα
                             διαφορῶν, τὰς πάσας δ’ ἑπτὰ καὶ εἴκοσι. παραγράψω <lb/>δὲ μίαν, ἐξ ἧς
                             καὶ περὶ τῶν λοιπῶν ἐνέσται μαθεῖν.</p>
+                        <figure>
+                            <graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.hxpp8p;page=root;view=image;size=100;seq=626;num=536;orient=0"></graphic>
+                        <figDesc>
                         <list rend="table">
                             <item>
                                 <list rend="row">
@@ -2516,6 +2558,7 @@
                                 </list>
                             </item>
                         </list>
+                        </figDesc></figure>
 
                         <pb n="617"/>
 
