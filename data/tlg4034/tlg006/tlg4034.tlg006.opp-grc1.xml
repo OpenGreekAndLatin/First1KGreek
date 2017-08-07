@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">
     
     <fileDesc>
-   <titleStmt><title>Commentaria in Aristotelem Graeca</title>
+      <titleStmt><title>In Librum Quintum Ethicorum Nicomacheorum Commentarium</title>
     <sponsor>University of Leipzig</sponsor>
     <funder>European Social Fund Saxony</funder>
     <principal>Gregory Crane</principal>
@@ -48,41 +48,38 @@
       </titleStmt>
       <publicationStmt>
     <authority>University of Leipzig</authority>
-    <idno type="filename">commentaria_22_1.xml</idno>
+    <idno type="filename">tlg4030.tlg006.opp-grc1.xml</idno>
     <availability>
      <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
     </availability>
-    <date>2014</date>
+    <date>2016</date>
     <publisher>University of Leipzig</publisher>
     <pubPlace>Germany</pubPlace>
    </publicationStmt>
    
    <sourceDesc>
-    <listBibl xml:lang="lat">
+    <listBibl>
      <biblStruct>
       <monogr>
-       <editor>
+        <title xml:lang="lat">In Librum Quintum Ethicorum Nicomacheorum Commentarium</title>
+       <editor> 
         <persName>
          <name xml:lang="lat">Paulus Wendland</name>
-         <addName xml:lang="de">Paul Wendland</addName>
+         <addName xml:lang="deu">Paul Wendland</addName>
         </persName>
        </editor> 
        <author ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg4034">Michael Ephesius</author>  
-       <title ref="http://data.perseus.org/catalog/urn:cts:greekLit:tlg4034.tlg002.opp-grc1">In parva naturalia commentaria</title>
-       <imprint>
-        <publisher>Berolini: Typis et Impensis G. Reimeri</publisher>
+       <imprint> 
+        <publisher xml:lang="lat">Typis et Impensis G. Reimeri</publisher>
         <pubPlace>Berlin</pubPlace>
         <date>1903</date>
        </imprint>
        <biblScope unit="volume">22.1</biblScope>
       </monogr>
       <ref target="http://archive.org/stream/p1commentariaina22akaduoft#page/n7/mode/2up">Internet Archive</ref>
-      
-      
      </biblStruct>
     </listBibl>
    </sourceDesc>
-   
   </fileDesc>
   <encodingDesc>
    <p>The following text is encoded in accordance with EpiDoc standards and with the
@@ -91,17 +88,19 @@
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
-  
   <profileDesc>
    <langUsage>
     <language ident="grc">Greek</language>
     <language ident="lat">Latin</language>
+    <language ident="deu">German</language>
    </langUsage>
   </profileDesc>
-  
+    <revisionDesc>
+      <change who="Brittany Hardy" when="2017-06-16">deleted duplicate file opp-grc2, added lang tags, corrected title, updated cts file.</change>
+    </revisionDesc>
  </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg4034.tlg006.opp-grc1" xml:lang="grc">
+    <body><div type="commentary" n="urn:cts:greekLit:tlg4034.tlg006.opp-grc1" xml:lang="grc">
 <pb n="ix"/>
 <head>MICHAELIS EPHESII
 IN LIBRUM QUINTUM ETHICORUM
