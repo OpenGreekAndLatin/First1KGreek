@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+ <title xml:lang="lat">Fragmentum [Sp.] (e cod. Paris. suppl. gr. 387, fol. 181r)</title>
+ <author xml:lang="lat">Diaphantus Alexandrinus</author>
+<editor>Paul Tannery</editor>
+<sponsor>Harvard College Library</sponsor>
+ <funder>Harvard Library Arcadia Fund</funder>
+ <principal>Gregory Crane</principal>
+ <respStmt>
+  <persName xml:id="DDD">Digital Divide Data</persName>
+  <resp>Corrected and encoded the text</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Gregory Crane</persName>
+  <resp>Editor-in-Chief, Perseus Digital Library</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Matt Munson</persName>
+  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Annette Gessner</persName>
+  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Thibault Clérice</persName>
+  <resp>Lead Developer (University of Leipzig)</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Bruce Robertson</persName>
+  <resp>Technical Advisor</resp>
+ </respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>Harvard College Library</authority>
+<idno type="filename">tlg2039.tlg003.1st1K-grc1.xml</idno>
+<availability>
+ <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+ License</p>
+</availability>
+<date>2017</date>
+<publisher>Harvard College Library</publisher>
+<pubPlace>United States</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl>
+ <biblStruct>
+ <monogr>
+  <title xml:lang="lat">Diophanti Alexandrini opera omnia</title>
+  <editor>
+	<persName>
+	 <name>Paul Tannery</name>
+	</persName>
+  </editor>
+  <author ref="urn:cts:greekLit:tlg2039">Diophantus Alexandrinus</author>
+  <imprint>
+	<publisher>Teubner</publisher>
+	<pubPlace>Leipzig</pubPlace>
+	<date>1895</date>
+  </imprint>
+  <biblScope unit="volume">2</biblScope>
+ </monogr>
+  <ref target="http://hdl.handle.net/2027/njp.32101054395205">Hathi Trust</ref>
+ </biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+ <encodingDesc>
+  <p>Text encoded in accordance with the latest EpiDoc standards (March 2017)</p>
+  <refsDecl n="CTS">
+   <cRefPattern n="paragraph" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:p[@n='$2'])"/>
+   <cRefPattern n="fragment" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+  </refsDecl>
+ </encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+<language ident="lat">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+<text>
+	<body>
+		<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2039.tlg003.1st1K-grc1">
+<head>DIOPHANTUS
+PSEUDEPIGRAPHUS.</head>
+<div type="textpart" subtype="fragment" n="1">
+<pb n="3"/>
+<head>I.
+Ex codice Parisino Suppl. gr. 387, fo. 181r.</head>
+<p n="1">Ἐκ τῆς ἀριθμητικῆς Διοφάντου.</p>
+<p n="2">Ἀπὸ δύο μεθόδων εὑρίσκεται παντὸς τετραγώνου
+ἀριθμοῦ πλευρὰ ἤτοι δυνάμεως. καὶ ἡ μὲν μία ἔχει <lb n="5"/>
+οὕτως· ἀπόγραψαι τοιοῦτον ἀριθμὸν κατὰ τὴν τάξιν
+τῆς Ἰνδικῆς μεθόδου· εἶτα ἄρξαι ἀπὸ δεξιῶν ἐπὶ
+ἀριστερά, καθʼ ἕκαστον δὲ στοιχεῖον λέγε· γίνεται· οὐ
+γίνεται· γίνεται· οὐ γίνεται· ἕως ἂν τελειωθῶσι τὰ
+στοιχεῖα, καὶ εἰ μὲν τύχῃ τὸ τελευταῖον ὑπὸ τὸ γίνεται, <lb n="10"/>
+ἄρξαι τοῦ μερισμοῦ ἐκεῖθεν· εἰ δὲ ὑπὸ τὸ οὐ
+γίνεται, καταλιπὼν τὸ τελευταῖον στοιχεῖον ἄρξαι τοῦ
+μερισμοῦ ἀπὸ τοῦ μετʼ αὐτὸ στοιχείου τοῦ πρὸς τὰ
+δεξιά, ἐν δηλονότι φθάνει τὸ γίνεται.</p>
+</div>
+		</div>
+</body>
+</text>
+</TEI>
