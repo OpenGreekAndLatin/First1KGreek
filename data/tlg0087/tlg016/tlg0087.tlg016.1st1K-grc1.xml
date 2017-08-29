@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+ <title xml:lang="grc">Περὶ τοῦ ζώς</title>
+ <author xml:lang="lat">Herodianus</author>
+<editor>August Lentz</editor>
+ <funder>Harvard Library Arcadia Fund</funder>
+ <principal>Gregory Crane</principal>
+ <respStmt>
+  <persName xml:id="DDD">Digital Divide Data</persName>
+  <resp>Corrected and encoded the text</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Gregory Crane</persName>
+  <resp>Editor-in-Chief, Perseus Digital Library</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Matt Munson</persName>
+  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Annette Gessner</persName>
+  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Thibault Clérice</persName>
+  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Bruce Robertson</persName>
+  <resp>Technical Advisor</resp>
+ </respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>Harvard College Library</authority>
+<idno type="filename">tlg0087.tlg016.1st1K-grc1.xml</idno>
+<availability>
+ <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+</availability>
+<date>2017</date>
+<publisher>Harvard College Library</publisher>
+<pubPlace>United States</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl>
+ <biblStruct>
+ <monogr>
+  <title xml:lang="lat">Herodiani Technici Reliquiae</title>
+  <editor>
+	<persName>
+	 <name>August Lentz</name>
+	</persName>
+  </editor>
+  <author ref="urn:cts:greekLit:tlg0087" xml:lang="lat">Aelius Herodianus</author>
+  <imprint>
+	<publisher>Teubner</publisher>
+	<pubPlace>Leipzig</pubPlace>
+	<date>1868</date>
+  </imprint>
+  <biblScope unit="volume">3.2.1</biblScope>
+ </monogr>
+  <ref target="http://hdl.handle.net/2027/njp.32101054496086">Hathi Trust</ref>
+ </biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+ <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+ <refsDecl n="CTS">
+  <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+ </refsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+<language ident="lat">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0087.tlg016.1st1K-grc1">
+<pb n="778"/>
+  <head>ΠΕΡΙ ΤΟΥ ΖΩϹ.</head>
+  <div type="textpart" subtype="section" n="1">
+<p>1.</p>
+<p>E. M. 741, 52: λέγει ὁ τεχνικὸϲ ὅτι οὐδέν ἐϲτιν εἰϲ ωϲ μονοϲύλλαβον
+πλέον ἀρϲενικόν, εἰ μὴ τοῦτο (sc. ϲῶϲ), πρὸϲ ὃν ἔϲτιν εἰπεῖν,
+<lb n="5"/> ὅτι ϲὺ ἐδίδαξαϲ ἡμᾶϲ ἐν τῇ περὶ τοῦ ζώϲ μονοϲυλλάβου βίβλῳ,
+ ὅτι ἔϲτι τὸ ζώϲ καὶ τὸ Κῶϲ καὶ Γλῶϲ.</p>
+  </div>
+   <div type="textpart" subtype="section" n="2">
+<p>2.</p>
+<p>Mon. 41, 34 θοόϲ: τὰ εἰϲ οϲ καθαρὰ διϲύλλαβα τῷ ο παραληγόμενα
+φιλεῖ βαρύνεϲθαι κόοϲ, ϲόοϲ, νόοϲ, χνόοϲ, γόοϲ, πλόοϲ, ῥόοϲ,
+<lb n="10"/> θρόοϲ. διὸ καὶ τὸ ζόοϲ παῤ Ἐπιχάρμῳ οἱ πλείουϲ ἐβάρυναν «τρὶϲ ἀπεδόθη
+ζόοϲ» ὁμοίωϲ καὶ τὸ ϲόοϲ. τὸ μέντοι θοόϲ ἄντικρυϲ ὀξυνόμενον
+μονῆρεϲ. τὰ δὲ αἴτια τούτων ἐν ἑτέροιϲ δηλοῦμεν.</p>
+<note type="footnote">1. 8 cf. Il. Pr. Ε 887, Arcad. 126, 24.</note>
+   </div>
+</div>
+</body>
+</text>
+</TEI>
