@@ -89,7 +89,7 @@
             <refsDecl n="CTS">
                 
                 <cRefPattern n="paragraph" matchPattern="(.+).(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:p[@n='$1'])">
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:p[@n='$2'])">
                     <p>This pointer pattern extracts paragraphs</p>
                 </cRefPattern>
                 <cRefPattern n="fragment" matchPattern="(.+)"
