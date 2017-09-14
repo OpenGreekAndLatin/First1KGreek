@@ -86,11 +86,11 @@ Architecture.</p>
 <refsDecl n="CTS">
 
 <cRefPattern n="paragraph" matchPattern="(.+).(.+).(.+)"
-replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div/tei:p[@n='$1'])">
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:p[@n='$3'])">
 <p>This pointer pattern extracts paragraphs, including numbered fragments</p>
 </cRefPattern> 
 <cRefPattern n="section" matchPattern="(.+).(.+)"
-replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div[@n='$1'])">
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
 <p>This pointer pattern extracts sections, including fragment sections</p>
 </cRefPattern> 
 <cRefPattern n="book" matchPattern="(.+)"
