@@ -88,19 +88,19 @@
             <refsDecl n="CTS">
                 
                 <cRefPattern n="paragraph" matchPattern="(.+).(.+).(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div/tei:p[@n='$1'])">
-                    <p>This pointer pattern extracts fragments</p>
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:p[@n='$2'])">
+                    <p>This pointer pattern extracts fragments and paragraphs</p>
                 </cRefPattern> 
                 
                 <cRefPattern n="section" matchPattern="(.+).(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-                    <p>This pointer pattern extracts sections</p>
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts books</p>
                     
                 </cRefPattern>
                 
     <cRefPattern n="book" matchPattern="(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div/tei:div[@n='$1'])">
-                    <p>This pointer pattern extracts books</p>
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts sections</p>
                 </cRefPattern> 
                
                 
