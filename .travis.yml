@@ -9,7 +9,7 @@ before_install:
 install:
   - pip3 install HookTest>=1.0.0
 
-script: travis_wait 40 hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5 --manifest --countword --hookUI "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
+script: travis_wait 30 hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5 --manifest --countword --hookUI "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
 
 before_deploy:
   - hooktest-build --travis --txt ./
