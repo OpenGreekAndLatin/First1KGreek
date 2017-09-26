@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+  <teiHeader xml:lang="eng">
     
     <fileDesc>
-<titleStmt><title>Josue</title>
+      <titleStmt><title xml:lang="lat">Josue (Cod. Vaticanus + Cod. Alexandrinus)</title>
+        <author xml:lang="lat">Septuaginta</author>
 <editor>Henry Barclay Swete</editor>
   <sponsor>University of Leipzig</sponsor>
   <funder>European Social Fund Saxony</funder>
@@ -51,7 +52,7 @@
       </titleStmt>
       <publicationStmt>
   <authority>University of Leipzig</authority>
-<idno type="filename">old_testament_1901_vol1.xml</idno>
+<idno type="filename">tlg0527.tlg006.opp-grc2.xml</idno>
   <availability>
     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
       License</p>
@@ -61,24 +62,26 @@
   <pubPlace>Germany</pubPlace>
 </publicationStmt>
 <sourceDesc>
-  <listBibl xml:lang="grc">
+  <listBibl>
     <biblStruct>
       <monogr>
       <title>The Old Testament in Greek</title>
       <title>Genesis - IV Kings</title>
         <editor>
           <persName>
-            <name xml:lang="eng">Henry Barclay Swete</name>
+            <name>Henry Barclay Swete</name>
           </persName>
         </editor>
+        <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
         <imprint>
           <publisher>University Press</publisher>
           <pubPlace>Cambridge</pubPlace>
           <date>1901</date>
         </imprint>
-        <biblScope unit="volume">I</biblScope>
+        <biblScope unit="volume">1</biblScope>
       </monogr>
-    <ref target="http://heml.mta.ca/rigaudon/runs/oldtestamentingr01swetuoft">Rigaudon hOCR output</ref>
+      <ref target="http://heml.mta.ca/rigaudon/runs/oldtestamentingr01swetuoft">Rigaudon hOCR output</ref>
+      <ref target="https://archive.org/details/oldtestamentingr01swetuoft">The Internet Archive</ref>
     </biblStruct>
   </listBibl>
 </sourceDesc>
@@ -86,7 +89,7 @@
 <encodingDesc>
 <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
     <refsDecl n="CTS">
-        <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
@@ -104,42 +107,42 @@
     <body><div type="edition" n="urn:cts:greekLit:tlg0527.tlg006.opp-grc2" xml:lang="grc">
 <pb n="420"/>
 <div type="textpart" subtype="chapter" n="1">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <note type="marginal">Β</note> <p>ΚΑΙ ἐγένετο μετὰ τὴν τελευτὴν Μωυσῆ εἶπεν κύριος τῷ Ἰησοῖ υἱῷ 
 Ναυὴ τῷ ὑπουργῷ Μωυσῆ λέγων</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>Μωυσῆς ὁ θερόπων μου τετελεύτηκεν. <lb n="2"/>
 νῦν οὖν ἀναστὰς διάβηθι τὸν Ἰορδάνην, σὺ καὶ πᾶς ὁ λαὸς
 οὗτος, εἰς τὴν γῆν ἢν ἐγὼ δίδωμι αὐτοῖς.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>πᾶς ὁ τόπος ἐφ’ ὃν ἂν
 ἐπιβῆτε τῷ ἴχνει τῶν ποδῶν ὑμῶν, ὑμῖν δώσω αὐτόν, ὃν τρόπον <lb n="3"/>
 εἴρηκα τῷ Μωυσῇ·</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>τὴν ἔρημον καὶ τὸν Ἀντιλίβανον ἕως τοῦ ποταμοῦ <lb n="4"/>
 τοῦ μεγάλου, ποταμοῦ Εὐφράτου, καὶ ἕως τῆς θαλάσσης τῆς ἐσχάτης·
 ἀφ’ ἡλίου δυσμῶν ἱστοὶ τὰ δρία ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>οὐκ ἀντιστήσεται ἄνθρωπος <lb n="5"/>
 κατενώπιον ὑμῶν πάσας τὰς ἡμέρας τῆς ζωῆς σου· καὶ ὥσπερ ἤμην
 μετὰ Μωυσῆ, οὕτως ἔσομαι καὶ μετὰ σοῦ, καὶ οὐκ ἐνκαταλείψω σε
 οὐδὲ ὑπερόψομαί σε.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>ἴσχυε καὶ ἀνδρίζου· σὺ γὰρ διελεῖς τῷ λαῷ <lb n="6"/>
 τούτῳ τὴν γῆν ἢν ὤμοσα τοῖς πατράσιν ὑμῶν δοῦναι αὐτοῖς.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>ἴσχυε <lb n="7"/>
 οὑν καὶ ἀνδρίζου φυλάσσεσθαι καὶ ποιεῖν καθότι ἐνετείλατό σοι
 ὁ παῖς μου, καὶ οὐκ ἐκκλινεῖς ἀπ’ αὐτῶν εἰς δεξιὰ οὐδὲ
 ἀριστερά, γα συνῇς ἐν πᾶσιν οἷς ἐὰν πράσσῃς.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ οὐκ ἀποστήσεται <lb n="8"/>
 ἡ βίβλος τοῦ νόμου τούτου ἐκ τοῦ στόματός σου, καὶ
 μελετήσεις ἐν αὐτῇ ἡμέρας καὶ νυκτός, ἵνα εἰδῇς ποιεῖν πάντα τὰ
@@ -159,62 +162,62 @@ AF</note>
 <pb n="421"/>
 <lb n="9"/> συνήσεις.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>ἰδοὺ ἐντέταλμαί σοι· ἴσχυε καἰ ἀνδρίζου, μὴ δειλιάσῃς <note type="marginal">B</note>
 μηδὲ φοβηθῇς, ὅτι μετὰ σοῦ κύριος ὁ θεός σου εἰς πάντα οὗ
 <lb n="10"/> πορεύῃ.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>Καὶ ἐνετείλατο Ἰησοῦς τοῖς γραμματεῦσιν τοῦ λαοῦ λέγων
 <lb n="11"/></p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>Εἰσέλθατε κατὰ μέσον τῆς παρεμβολῆς τοῦ λαοῦ, καὶ ἐντείλασθε
 τῷ λαῷ λέγοντες Ἑτοιμάζεσθε ἐπισιτισμόν, ὅτι ἔτι τρεῖς ἡμέραι καὶ
 ὑμεῖς διαβαίνετε τὸν Ἰορδάνην τοῦτον, εἰσελθόντες κατασχεῖν τὴν
 <lb n="12"/> γῆν ἢν Κύριος ὁ θεὸς τῶν πατέρων ὑμῶν δίδωσιν ὑμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>Καὶ
 τῷ Ῥουβὴν καὶ τῷ Γὰδ καὶ τῷ ἡμίσει φυλῆς Μανασσὴ εἶπεν ’
 <lb n="13"/></p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>Μνήσθητε τὸ ῥῆμα ὅ ἐνετείλατο ὑμῖν Μωυσῆς ὁ παῖς κυρίου
 κύριος ὁ θεὸς ὑμῶν κατέπαυσεν ὑμᾶς καὶ ἔδωκεν ὑμῖν τὴν γῆν ταύτην.
 <lb n="14"/></p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>αἱ γυναῖκες ὑμῶν καὶ τὰ παιδία ὑμῶν καὶ τὰ κτήνη ὑμῶν κατοικείτωσαν
 ἐν τῇ γῇ ᾗ ἔδωκεν ὑμῖν· ὑμεῖς δὲ διαβήσεσθε εὔζωνοι
 πρότεροι τῶν ἀδελφῶν ὑμῶν, πᾶς ὁ ἰσχύων, καὶ συμμαχήσετε αὐτοῖς
 <lb n="15"/></p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>ἕως ἄν καταπαύσῃ κύριος ὁ θεὸς ἡμῶν τοὺς ἀδελφοὺς ὑμῶν ὥσπερ
 καὶ ὑμᾶς, καὶ κληρονομήσωσιν καὶ οὗτοι τὴν γῆν ἢν κύριος ὁ θεὸς
 ἡμῶν δίδωσιν αὐτοῖς· καὶ ἀπελεύσεσθε ἕκαστος εἰς τὴν κληρονομίαν
 αὐτοῦ, ἢν δέδωκεν ὑμῖν Μωυσῆς εἰς τὸ πέραν τοῦ Ἰορδάνου ἐπ’ ἀνατολῶν
 <lb n="16"/> ἡλίου.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ ἀποκριθέντες τῷ Ἰησοῖ εἶπ’ ἀν’ Πάντα ὅσα ἄν
 ἐντείλῃ ἡμῖν ποιήσομεν, καὶ εἰς πάντα τόπον οὗ ἐὰν ἀποστείλῃς
 <lb n="17"/> ἡμᾶς πορευσόμεθα.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>κατὰ πάντα ὅσα ἠκούσαμεν Μωυσῆ ἀκουσόμεθα
 σοῦ· πλὴν ἔστω κύριος ὁ θεὸς ἡμῶν μετὰ σοῦ ὃν τρόπον ἢν μετὰ
 <lb n="18"/> Μωυσῆ.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>ὁ δὲ ἄνθρωπος ὃς ἐὰν ἀπειθήσῃ σοι, καὶ ὅστις μὴ ἀκούσῃ
 τῶν ῥημάτων σου καθότι ἄν αὐτῷ ἐντείλῃ, ἀποθανέτω. ἀλλὰ ἴσχυε
 καὶ ἀνδρίζου.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="2">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Καὶ ἀπέστειλεν Ἰησοῦς υἱὸς Ναυὴ ἐκ Σάττειν δύο νεανίσκους
 <note type="footnote">9 εντεταλμαι] ἐντέλλομαι Α | ισχυε] ἴσ’... F | μὴ δειλιάσῃς (διλ. A)]
 διλιασεις F | φοβηθης] πτοηθῇς F | om σου 2° Α | πάντα] + τόπον F
@@ -239,58 +242,58 @@ vid” in B 18 ἔαν] ἀν’ F | ἀπιθήσει Α | oaru] ὃς ἔαν
 εἰς οἰκίον γυναικὸς πόρνης ᾗ ὄνομα Ῥαάβ, κα κατέλυσαν ἐκεῖ.
 </p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ ἀπηγγέλη τῷ βασιλεῖ Ἰερειχὼ λέγοντες Εἰσπεπόρευνται ὦδε <lb n="2"/>
 ἄνδρες τῶν υἱῶν Ἰσραὴλ κατασκοπεῦσαι τὴν γῆν.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ ἀπέστειλεν ὁ <lb n="3"/>
 βασιλεὺς Ἰερειχὼ καὶ εἶπεν πρὸς Ῥαὰβ λέγων Ἐξάγαγε τοὺς ἄνδρας
 τοὺς εἰσπεπορευμένους εἰς τὴν οἰκίαν σου τὴν νύκτα· κατασκοπεῦσαι
 γὰρ τὴν γῆν ἥκασιν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ λαβοῦσα ἡ γυνὴ τοὺς δύο ἄνδρας ἔκρυψεν <lb n="4"/>
 αὐτούς, καὶ εἶπεν αὐτοῖς λέγουσα Εἰδεληλύθασιν ἄσιν πρὸς μὲ οἱ ἄνδρες·
 </p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>ὡς δὲ ἡ πύλη ἐκλείετο ἐν τῷ σκότει, καὶ οἱ ἄνδρες ἐξῆλθον. οὐκ ἐπίσταμαι <lb n="5"/>
 ποῦ πεπόρευνται· καταδιώξατε ὀπίσω αὐτῶν, εἰ καταλήμψεσθε
 αὐτούς.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>αὕτη δὲ ἀνεβίβασεν αὐτοὺς ἐπὶ τὸ δῶμα, κα ἔκρυψεν <lb n="6"/>
 αὐτοὺς ἐν τῇ λινοκαλάμη τῇ ἐστοιβασμένῃ αὐτῇ ἐπὶ τοῦ δώματος.
 </p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ οἱ ἄνδρες κατεδίωξαν ὀπίσω αὐτῶν ὁδὸν τὴν ἐπὶ τοῦ Ἰορδάνου <lb n="7"/>
 ἐπὶ τὰς διαβάσεις, καὶ ἡ πύλη ἐκλείσθη.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἐγένετο ὡς ἐξήλθοσαν <lb n="8"/>
 οἱ διώκοντες ὀπίσω αὐτῶν, <milestone unit="altref" n="8"/> καὶ αὐτοὶ δὲ πρὶν ἢ κοιμηθῆναι αὐτούς,
 αὕτη δὲ ἀνέβη ἐπὶ τὸ δῶμα πρὸς αὐτοὺς</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ εἶπεν πρὸς αὐτούς <lb n="9"/>
 Ἐπίσταμαι ὅτι δέδωκεν ὑμῖν Κύριος τὴν γῆν, ἐπιπέπτωκεν γὰρ
 <note type="marginal">F</note> ὁ φόβος ὑμῶν ἐφ’ ἡμᾶς. ¶</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>ἀκηκόαμεν γὰρ ὅτι κατεξήρανεν Κύριος ὁ <lb n="10"/>
 θεὸς τὴν ἐρυθρὰν θάλασσαν ἀπὸ προσώπου ὑμῶν, ὅτε ἐξεπορεύεσθε
 ἐκ γῆς Αἰγύπτου, καὶ ὅσα ἐποίησεν τοῖς δυσὶ βασιλεῦσιν τῶν Ἀμορραίων
 οἳ ἦσαν πέραν τοῦ Ἰορδάνου, τῷ Σηὼν καὶ ὅγ’, οὓς ἐξωλεθρεύσατε
 αὐτούς.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἀκούσαντες ἡμεῖς ἐξέστημεν τῆ καρδίᾳ ἡμῶν, καὶ <lb n="11"/>
 οὐκ ἵστη ἔτι πνεῦμα ἐν οὐδενὶ ἡμῶν ἀπὸ προσώπου ὑμῶν· ὅτι
 κύριος ὁ θεὸς ὑμῶν ὃς ἐν οὐρανῷ ἄνω καὶ ἐπὶ τῆς γῆς κάτω.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ <lb n="12"/>
 νῦν ὀμόσατέ μοι Κύριον τὸν θεόν, ὅτι ποιῶ ὑμῖν ἕλεος,
 <note type="footnote">AF 1 κατασκοπεῦσαι] + κρύβη F | Ιεριχω BbA (ita pluries) | εισηλθοσαν οἱ δύο
@@ -312,32 +315,32 @@ F I ἧμας] η sup ras Α a? (υμας A*vid) 10 τὴν ἐρυθρὰν θ�
 <pb n="423"/>
 <lb n="13"/> καὶ ὑμεῖς ἕλεος ἐν τῷ τοῦ τοῦ πατρός μου.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ ζωγρήσατε τὸν <note type="marginal">B</note>
 οἶκον τοῦ πατρός μου, τὴν μητέρα μου καὶ τοὺς ἀδελφούς μου
 τὸν οἶκον μου καὶ πάντα ὅσα ἐστὶν αὐτοῖς, καὶ ἐξελεῖσθε τὴν
 <lb n="14"/> μου ἐκ θανάτου.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ εἶπαν αὐτῇ οἱ ἄνδρες Ἡ ψυχὴ ἡμῶν ἀνθ’
 εἰς θάνατον. καὶ αὐτὴ εἶπεν ὃς ὂν παραδοῖ Κύριος ὑμῖν τὴν πόλιν,
 <lb n="15"/> ποιήσετε εἰς ἐμὲ ἕλεος καὶ ἀλήθειαν.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ κατεχάλασεν αὐτοὺς διὰ § F
 <lb n="16"/> τῆς θυρίδος·</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>§ καὶ εἶπεν αὐτοῖς Εἰς τὴν ὀρεινὴν ἀπέλθετε, μὴ συναντήσωσιν
 ὑμῖν οἱ καταδιώκοντες, καὶ κρυβήσεσθε ἐκεῖ τρεῖς ἡμέας ἕως
 ἀν’ ἀποστρέψωσιν οἱ καταδιώκοντες ὀπίσω ὑμῶν, καὶ μετὰ ταῦτα
 <lb n="17"/> ἀπελεύσεσθε εἰς τὴν ὁδὸν ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ εἶπαν οἱ ἄνδρες πρὸς αὐτὴν
 <lb n="18"/> Ἀθῷοί ἐσμεν τῷ ὅρκῳ σου τούτῳ·</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>ἰδοὺ ἡμεῖς εἰσπορευόμεθα εἰς
 μέρος τῆς πόλεως, καὶ θήσεις τὸ σημεῖον, τὸ σπαρτίον τὸ κόκκινον
 τοῦτο ἐκδήσεις εἰς τὴν θυρίδα δι’ ἧς κατεβίβασας ἡμᾶς δι’ αὐτῆς, τὸν
@@ -345,31 +348,31 @@ F I ἧμας] η sup ras Α a? (υμας A*vid) 10 τὴν ἐρυθρὰν θ�
 τὸν οἶκον τοῦ πατρός σου συνάξεις πρὸς σεαυτὴν εἰς τὴν οἰκίαν σου.
 <lb n="19"/></p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ ἔσται πᾶς ὃς ἄν ἐξέλθῃ τὴν θύραν τῆς οἰκίας σου
 ἑαυτῷ ἔσται, ἡμεῖς δὲ ἀθῷοι τῷ ὅρκῳ σου τούτῳ· καὶ ὅσοι
 <lb n="20"/> μετὰ σοῦ ἐν τῇ οἰκίᾳ σου, ἡμεῖς ἔνοχοι ἐσόμεθα.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>ἐὰν δέ τις
 ἀδικήσῃ ἢ καὶ ἀποκαλύψῃ τοὺς λόγους ἡμῶν τούτους, ἐσόμεθα
 <lb n="21"/> τῷ ὅρκῳ σου τούτῳ.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ εἶπεν αὐτοῖς Κατὰ τὸ ῥῆμα ὑμῶν
 <lb n="22"/> καὶ ἐξαπέστειλεν αὐτούς.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ ἐπορεύθησαν καὶ ἤλθοσαν εἰς τὴν
 ὀρεινήν, καὶ κατέμειναν ἐκεῖ τρεῖς ἡμέρας· καὶ ἐξεζήτησαν οἱ καταδιώκοντες
 <lb n="23"/> πάσας τὰς ὁδούς, καὶ οὐχ εὕροσαν.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ ὑπέστρεψαν οἱ δύο
 νεανίσκοι καὶ κατέβησαν ἐκ τοῦ ὄρους, καὶ διέβησαν πρὸς Ἰησοῦν υἱὸν
 <lb n="24"/> Ναυή, καὶ διηγήσαντο αὐτῷ πάντα τὰ συμβεβηκότα αὐτοῖς.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ
 πρὸς Ἰησοῦν ὅτι Παρέδωκεν Κύριος πᾶσαν τὴν γῆν ἐν χειρὶ
 ν, καὶ κατέπτηκεν πᾶς ὁ κατοικῶν τὴν γῆν ἐκείνην ἀφ’ ἡμῶν.</p>
@@ -392,68 +395,68 @@ F 24 Ιησουν] + υἱὸν Ναυη F | Κυριος] + ο θεὸς ἤμ�
 </div>
 
 <div type="textpart" subtype="chapter" n="3">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Καὶ ὤρθρισεν Ἰησοῦς τὸ πρωὶ καὶ ἀπῆρεν ἐκ Σάττειν· καὶ ἤλθοσαν <lb n="1"/> 
 ἕως τοῦ Ἰορδάνου, καὶ κατέλυσαν ἐκεῖ πρὸ τοῦ διαβῆναι.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ ἐγένετο <lb n="2"/>
 μετὰ τρεῖς ἡμέρας διῆλθον οἱ γραμματεῖς διὰ τῆς παρεμβολῆς</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ <lb n="3"/>
 ἐνετείλαντο τῷ λαῷ λέγοντες Ὅταν ἴδητε τὴν κιβωτὸν τῆς διαθήκης
 κυρίου τοῦ θεοῦ ἡμῶν καὶ τοὺς ἱερεῖς ἡμῶν καὶ τοὺς Λευείτας αἴροντας
 αὐτήν, ἀπαρεῖτε ἀπὸ τῶν τόπων ὑμῶν καὶ πορεύεσθε ὀπίσω αὐτῆς.
 </p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>ἀλλὰ μακρὰν ἔστω ἀνὰ μέσον ἡμῶν καὶ ἐκείνης, ὅσον δισχιλίους <lb n="4"/>
 πήχεις στήσεσθε· μὴ προσεηίσητε αὐτῇ· ἵν ἐπίστησθε τὴν ὁδὸν ἣν
 πορεύεσθε αὐτήν. οὐ γὰρ πεπόρευσθε τὴν ὁδὸν ἀπ’ ἐχθὲς καὶ τρίτης
 ἡμέρας.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ εἶπεν Ἰησοῦς τῷ λαῷ Ἁγνίσασθε εἰς αὔριον, ὅτι αὔριον <lb n="5"/>
 ποιήσει ἐν ἡμῖν Κύριος θαυμαστό.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ εἶπεν Ἰησοῦς τοῖς ἱερεῦσιν <lb n="6"/>
 Ἄρατε τὴν κιβωτὸν τῆς διαθήκης κυρίου καὶ προπορεύεσθε τοῦ λαοῦ.
 καὶ ἦραν οἱ ἱερεῖς τὴν κιβωτὸν τῆς διαθήκης κυρίου καὶ ἐπορεύοντο
 ἔμπροσθεν τοῦ λαοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>Καὶ εἶπεν κύριος πρὸς Ἰησοῦν Ἐν τῆ <lb n="7"/>
 ἡμέρα ταύτῃ ἄρχομαι ὑψῶσαί σε κατενώπιον πάντων υἱῶν Ἰσραήλ,
 ἵνα γνῶσιν, καθότι ἤμην μετὰ Μωυσῆ, οὕτως ἔσομαι κα μετὰ σοῦ.
 </p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ νῦν ἔντειλαι τοῖς ἱερεῦσιν τοῖς αἴρουσιν τὴν κιβωτὸν τῆς διαθήκης <lb n="8"/>
 λέγων Ὡς ἄν εἰσέλθητε ἐπὶ μέσου τοῦ ὕδατος τοῦ Ἰορδάνου, καὶ ἐν τῷ
 Ἰορδάνῃ στήσεσθε.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>Καὶ εἶπεν Ἰησοῦς τοῖς υἱοῖς Ἰσραήλ Προσαυάγετε <lb n="9"/>
 ὧδε καὶ ἀκούσατε τὸ ῥῆμα Κυρίου τοῦ θεοῦ ἡμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>ἐν <lb n="10"/>
 τούτῳ γνώσεσθε ὅτι θεὸς ζῶν ἐν ὑμῖν, καὶ ὀλεθρεύων ὀλεθρεύσει ἀπὸ
 προσώπου ἡμῶν τὸν Χαναναῖον καὶ τὸν Χεττααῖον καὶ τὸν Φερεζαῖον
 καὶ τὸν Εὑαῖον καὶ τὸν Ἀμορραῖον καὶ τὸν Γεργεσαῖον καὶ τὸν
 Ἰεβουσαῖον.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>ἰδοὺ ἡ κιβωτὸς διαθήκης κυρίου πάσης τῆς γῆς διαβαίνει <lb n="11"/>
 τὸν Ἰορδάνην.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>προχειρίσασθε ὑμῖν δώδεκα ἄνδρας ἀπὸ τῶν υἱῶν <lb n="12"/>
 ἕνα ἀφ’ ἑκάστης φυλῆς.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ ἔσται ὡς ἂν <lb n="13"/>
 <note type="marginal">AF</note> 
 <note type="footnote">ΙΙΙ 1 ἄπηρον Α ἀπῆραν Y | ἐκ Σάττειν] εκαττειν (sic) F | ηλθοσαν] ἦλθον
@@ -477,12 +480,12 @@ om πάντων F | ὑιῶν] pr τῶν Α 8 ἱερεῦσι Α | αἴρο
 τῆς γῆς ἐν τῷ ὕδατι τοῦ Ἰορδάνου, τὸ ὕδωρ τοῦ Ἰορδάνου
 <lb n="14"/> ἐκλείψει, τὸ δὲ ὕδωρ τὸ καταβαῖνον στήσεται.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>Καὶ ἀπῆρεν ὁ
 λαὸς ἐκ τῶν σκηνωμάτων αὐτῶν διαβῆναι τὸν Ἰορδάνην, οἱ ’δε ἱερεῖς
 <lb n="15"/> ἤροσαν τὴν κιβωτὸν τῆς διαθήκης πρότεροι τοῦ λαοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>ὡς δὲ
 εἰσεπορεύοντο οἱ ἱερεῖς οἱ αἴροντες τὴν κιβωτὸν τῆς διαθήκης ἐπὶ
 τὸν Ἰορδάνην, καὶ οἱ πόδες τῶν ἱερέων τῶν αἰρόντων τὴν κιβωτὸν τῆς
@@ -490,13 +493,13 @@ om πάντων F | ὑιῶν] pr τῶν Α 8 ἱερεῦσι Α | αἴρο
 Ἰορδάνης ἐπλήρου καθ’ ὅλην τὴν κρηπῖδα αὐτοῦ, ὡσεὶ ἡμέραι θερισμοῦ
 <lb n="16"/> πυρῶν·</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ ἔστη τὰ ὕδατα τὰ καταβαίνοντα ἄνωθεν, ἔστη πῆγμα ἱν
 ἀφεστηκὸς μακρὰν σφόδρα σφοδρῶς ἕως μέρους Καθιαιρείν, τὸ δὲ
 καταβαῖνον κατέβη εἰς τὴν θάλασσαν Ἄραβά, θάλασσαν ἁλός, ἕως εἰς
 <lb n="17"/> τὸ τέλος ἐξέλιπεν· καὶ ὁ λαὸς ἱστήκει ἀπέναντι Ἰερειχώ.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ καὶ
 οἱ ἱερεῖς οἱ αἴροντες τὴν κιβωτὸν τῆς διαθήκης κυρίου ἐπὶ ξηρᾶς ἐν
 μέσῳ τοῦ Ἰορδάνου· καὶ πάντες οἱ υἱοὶ Ἰσραὴλ διέβαινον διὰ ξηρᾶς,
@@ -506,25 +509,25 @@ om πάντων F | ὑιῶν] pr τῶν Α 8 ἱερεῦσι Α | αἴρο
 </div>
 
 <div type="textpart" subtype="chapter" n="4">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>IVσυνετέλεσεν πᾶς ὁ λαὸς διαβαίνων τὸν Ἰορδάνην, καὶ εἶπεν κύριος τῷ
 <lb n="2"/> Ἰησοῖ λέγων</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>Παραλαβὼν ἄνδρας ἀπὸ τοῦ λαοῦ, ἕνα ἀφ’ ἑκάστης
 φυλῆς,</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>σύνταξον αὐτοῖς καὶ ἀνέλεσθε ἐκ μέσου τοῦ Ἰορδάνου
 ἑτοιμοὺς δώδεκα λίθους, καὶ τούτους διακομίσαντες ἅμα ὑμῖν καὶ
 αὐτοῖς θέτε αὐτοὺς ἐν τῇ στρατοπεδίᾳ ὑμῶν, οὗ ἐὰν παρεμβάλητε ἐκεῖ
 <lb n="4"/> τὴν νύκτα.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ ἀνακαλεσάμενος Ἰησοῦς δώδεκα ἄνδρας τῶν ἐνδόξων
 <lb n="5"/> ἀπὸ τῶν υἱῶν Ἰσραήλ, ἕνα ἀφ’ ἑκάστης φυλῆς,</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>εἶπεν αὐτοῖς Προσαγάτετε
 ἔμπροσθέν  μου πρὸ προσώπου κυρίου εἰς μέσον τοῦ <note type="marginal">F</note>
 Ἰορδάνου, καὶ ἀνελόμενος ἐκεῖθεν ἕκαστος λίθον ἀράτω ἐπὶ τῶν ὤμων
@@ -548,52 +551,52 @@ om και 1° Α | ανελεσθε (ανελεσθαι F)] εντευθεν Α 
 <pb n="426"/>
 <note type="marginal">B</note> αὐτοῦ κατὰ τὸν ἀριθμὸν τῶν δώδεκα φυλῶν τοῦ Ἰσραήλ·</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>ἵνα ὑπάρχωσιν <lb n="6"/>
  ὑμῖν οὗτοι εἰς σημεῖον κείμενον διὰ παντός· ἵνα ὅταν ἐρωτᾷ σε
 ὁ υἱός σου αὔριον λέγων Τί εἰσιν οἱ λίθοι οὗτοι ἡμῖν;</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ σὺ δηλώσεις <lb n="7"/>
 τῷ υἱῷ σου λέγων ὅτι Ἐξέλιπεν ὁ Ἰορδάνης ποταμὸς ἀπὸ προσώπου
 διαθήκης κυρίου πάσης τῆς γῆς, ὡς διέβαινεν αὐτόν. κα
 οἱ λίθοι οὗτοι ὑμῖν μνημόσυνον τοῖς υἱοῖς Ἰσραὴλ ἕως τοῦ
 αἰῶνος.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἐποίησαν οὕτως οἱ υἱοὶ Ἰσραὴλ καθότι ἐνετείλατο <lb n="8"/>
 κύριος τῷ Ἰησοῖ· καὶ λαβόντες δώδεκα λίθους ἐκ μέσου τοῦ Ἰορδάνου,
 συνέταξεν κύριος τῷ Ἰησοῖ ἐν τῆ συντελείᾳ τῆς διαβάσεως
 Ἰσραήλ, καὶ διεκόμισαν ἅμα ἑαυτοῖς εἰς τὴν παρεμβολὴν καὶ
 ἐκεῖ.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>ἔστησεν δὲ Ἰησοῦς καὶ ἅλλους δώδεκα λίθους ἐν <lb n="9"/>
 αὐτῷ τῷ Ἰορδάνῃ ἐν τῷ γενομένῳ τόπῳ ὑπὸ τοὺς πόδας τῶν ἱερέων
 τῶν αἰρόντων τὴν κιβωτὸν τῆς διαθήκης κυρίου, καὶ εἰσὶν ἐκεῖ ἕως τῆς
 σήμερον ἡμέρας.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>ἱστήκεισαν δὲ οἱ ἱερεῖς οἱ αἴροντες τὴν κιβωτὸν <lb n="10"/>
 <note type="marginal">§F</note> τῆς διαθήκης ἐν τῷ Ἰορδάνῃ ἕως οὗ § συνετέλεσεν Ἰησοῦς πάντα ἃ
 ἐνετείλατο κύριος ἀναγγεῖλαι τῷ λαῷ· καὶ ἔσπευσεν ὁ λαός, καὶ
 διέβησαν.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἐγένετο ὡς συνετέλεσεν πᾶς ὁ λαὸς διαβῆναι, καὶ <lb n="11"/>
 διέβη ἡ κιβωτὸς τῆς διαθήκης κυρίου, καὶ οἱ λίθοι ἔμπροσθεν αὐτῶν.
 </p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ διέβησαν οἱ υἱοὶ Ῥουβὴν καὶ οἱ υἱοὶ Γὰδ κα οἱ ἡμίσεις φυλῆς <lb n="12"/>
 Μανασσὴ διεσκευασμένοι ἔμπροσθεν τῶν υἱῶν Ἰσραήλ, καθάπερ
 ἐνετείλατο αὐτοῖς Μωυσῆς.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>τετρακισμύριοι εὔζωνοι εἰς μάχην
 διέβησαν ἐναντίον κυρίου εἰς πόλεμον πρὸς τὴν Ἰερειχὼ πόλιν.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>ἐν <lb n="14"/>
 ἐκείνῃ τῇ ἡμέρᾳ ηὔξησεν Κύριος τὸν Ἰησοῦν ἐναντίον τοῦ παντὸς
 
@@ -601,19 +604,19 @@ om και 1° Α | ανελεσθε (ανελεσθαι F)] εντευθεν Α 
 
 ἔζη.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>Καὶ εἶπεν κύριος τῷ Ἰησοῖ λέγων</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>Ἔντειλαι τοῖς ἱερεῦσιν  <lb n="16"/>
 τοῖς αἴρουσιν τὴν κιβωτὸν τῆς διαθήκης τοῦ μαρτυρίου κυρίου ἐκβῆναι
 ἐκ τοῦ Ἰορδάνου.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ ἐνετείλατο Ἰησοῦς τοῖς ἱερεῦσιν λέγων Ἔκβητε <lb n="17"/>
 ἐκ τοῦ Ἰορδάνου.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ ἐγένετο ὡς ἐξέβησαν οἱ ἱερεῖς οἱ αἴροντες τὴν <lb n="18"/>
 κιβωτὸν τῆς διαθήκης κυρίου ἐκ τοῦ Ἰορδάνου καὶ ἔθηκαν τοὺς πόδας
 <note type="footnote">AF 5 om δώδεκα Α 6 ὑπάρχωσιν] inter ω, σ ras T Ut Α? 6—7 τι
@@ -631,39 +634,39 @@ in mg et sup ras A a? | om Τυρίου F 18 του ορδ.] pr μέσου AF<
 ἐπὶ τῆς γῆς, ὥρμησεν τὸ ὕδωρ τοῦ Ἰορδάνου κατὰ χώραν, καὶ ἐπορεύετο
 <lb n="19"/> καθὰ ἐχθὲς καὶ τρίτην ἡμέραν δι’ ὅλης τῆς κρηπῖδος.</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ ὁ
 λαὸς ἀνέβη ἐκ τοῦ Ἰορδάνου δεκάτῃ τοῦ μηνὸς τοῦ πρώτου· καὶ κατεστρατοπέδευσαν
 οἱ υἱοὶ Ἰσραὴλ ἐν Γαλγάλοις κατὰ μέρος τὸ πρὸς
 <lb n="20"/> ἡλίου ἀνατολὰς ἀπὸ τῆς Ἰερειχώ.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ τοὺς δώδεκα λίθους τούτους
 <lb n="21"/> οὓς ἔλαβεν ἐκ τοῦ Ἰορδάνου ἔστησεν Ἰησοῦς ἐν Γαλγάλοις</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>λέγων
 ὅταν ἐρωτῶσιν ὑμᾶς οἱ υἱοὶ ὑμῶν λέγοντες Τί εἰσιν οἱ λίθοι οὗτοι;
 <lb n="22"/></p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>ἀναγγείλατε τοῖς υἱοῖς ὑμῶν ὅτι Ἐπὶ ξηρᾶς διέβη Ἰσραὴλ τὸν
 <lb n="23"/> Ἰορδάνην τοῦτον,</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>ἀποξηράναντος Κυρίου τοῦ θεοῦ ἡμῶν τὸ ὕδωρ τοῦ
 Ἰορδάνου ἐκ τῶν ἔμπροσθεν αὐτῶν μέχρι οὗ διέβησαν· καθάπερ
 ἔποιησεν κύριος ὁ θεὸς ἡμῶν τὴν ἐρυθρὰν θάλασσαν, ἢν ἀπεξήρανεν
 <lb n="24"/> Κύριος ὁ θεὸς ἡμῶν ἔμπροσθεν ἡμῶν ἕως παρήλθομεν·</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>ὅπως γνῶσιν
 πάντα τὰ ἔθνη τῆς γῆς ὅτι ἡ δύναμις τοῦ κυρίου ἰσχυρά ἐστιν, καὶ ἵνα
 ὑμεῖς σέβησθε κύριον τὸν θεὸν ἡμῶν ἐν παντὶ ἔργῳ.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="5">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Καὶ ἐγένετο ὡς ἤκουσαν οἱ βασιλεῖς τῶν Ἀμορραίων οἳ ἦσαν
 πέραν τοῦ Ἰορδάνου καὶ οἱ βασιλεῖς τῆς Φοινίκης οἱ παρὰ τὴν
 θάλασσαν, ὅτι ἀπεξήρανεν κύριος ὁ θεὸς τὸν Ἰορδάνην ¶ ποταμὸν
@@ -672,22 +675,22 @@ in mg et sup ras A a? | om Τυρίου F 18 του ορδ.] pr μέσου AF<
 φρόνησις οὐδεμία ἀπὸ προσώπου τῶν υἱῶν Ἰσραήλ.</p>
 <lb n="2"/> </div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>Ὑπὸ δὲ τοῦτον τὸν καιρὸν εἶπεν Κύριος τῷ Ἰησοῖ Ποίησον
 σεαυτῷ μαχαίρας πετρίνας ἐκ πέτρας ἀκροτόμου, καὶ καθίσας περίτεμε
 <lb n="3"/> τοὺς υἱοὺς Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ ἐποίησεν Ἰησοῦς μαχαίρας πετρίνας
 ἀκροτόμους, καὶ περιέτεμεν τοὺς υἱοὺς Ἰσραὴλ ἐπὶ τοῦ καλουμένου
 <lb n="4"/> τόπου βουνὸς τῶν ἀκροβυστιῶν .</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>ὃν δὲ τρόπον περιεκόθαρεν Ἰησοῦς
 τοὺς υἱοὺς Ἰσραήλ· ὅσοι ποτὲ ἐγένοντο ἐν τῇ ὁδῷ, καὶ ὅσοι ποτὲ
 <lb n="5"/> ἀπερίτμητοι ἦσαν τῶν ἐξεληλυθότων ἐξ Αἰγύπτου,</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>πάντας τούτους
 Ἰησοῦς· τεσσεράκοντα γὰρ καὶ δύο ἴτη ἀνέστραπται
 <note type="footnote">18 γης] ξηρὰς AF | ς γῆς ὥρμη sup ras Bab | ὥρμησεν] pr καὶ AF | χθὲς Bb AF
@@ -707,57 +710,57 @@ AF | μάρις B ab (vid) | ἐποίησαν Α | om ο θεὸς ημων 1
 <pb n="428"/>
 <note type="marginal">B</note> Ἰσραὴλ ἐν τῇ ἐρήμῳ τῇ Μαδβαρείτιδι·</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>διὸ οἱ ἀπερίτμητοι ἤσαν οἱ <lb n="6"/>
 πλεῖστοι αὐτῶν τῶν μαχίμων τῶν ἐξεληλυθότων ἐκ γῆς Αἰγύπτου,
 οἱ ἀπειθήσαντες τῶν ἐντολῶν τοῦ θεοῦ, οἷς καὶ διώρισεν μὴ ἰδεῖν
 αὐτοὺς τὴν γῆν ἢν ὤμοσεν κύριος τοῖς πατράσιν ἡμῶν δοῦναι, γῆν
 ῥέουσαν γάλα καὶ μέλι.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>ἀντὶ δὲ τούτων ἀντικατέστησεν τοὺς υἱοὺς <lb n="7"/>
 <note type="marginal">§ F</note> αὐτῶν, οὓς § Ἰησοῦς περιέτεμεν διὰ τὸ αὐτοὺς γεγεννῆσθαι κατὰ τὴν
 ὁδὸν ἀπεριτμήτους.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>περιτμηθέντες δὲ ἡσυχίαν εἶχον, αὐτόθι καθήμενοι <lb n="8"/>
 ἐν τῇ παρεμβολῇ ἕως ὑγιόσθησαν.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ εἶπεν Κύριος τῷ <lb n="9"/>
 Ἰησοῖ υἱῷ Ναυή Ἐν τῇ σήμερον ἡμέρᾳ ὀφεῖλον τὸν ὀνειδισμὸν
 Αἰγύπτου ἀφ’ ὑμῶν. καὶ ἐκάλεσεν τὸ ὄνομα τοῦ τόπου ἐκείνου Γάλγαλα.
 </p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>Καὶ ἐποίησαν οἱ υἱοὶ Ἰσραὴλ τὸ πάσχα τῆ̣ τεσσαρεσκαιἡμέρᾳ <lb n="10"/>
 τοῦ μηνὸς ἀπὸ ἑσπέρας, ἀπὸ δυσμῶν Ἰερειχὼ ἐν τῷ
 τοῦ Ἰαρδάνου ἐν τῷ πεδίῳ·</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἐφάγοσαν ἀπὸ τοῦ σίτου τῆς
 γῆς ἄζυμα καὶ νέα.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>ἐν ταύτῃ τῇ ἡμέρα ἐξέλιπεν τὸ μάννα μετὰ <lb n="11"/>
 τὸ βεβρωκέναι αὐτοὺς ἐκ τοῦ σίτου τῆς γῆς, καὶ οὐκέτι ὑπῆρχεν τοῖς <lb n="12"/>
 υἱοῖς Ἰσραὴλ μάννα· ἐκαρπίσαντο δὲ τὴν κουρὰν τῶν Φοινίκων ἐν
 τὼ ἐνιαυτῶ ἐκείνω.</p>
 </div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>Καὶ ἐγένετο ὡς ἦν Ἰησοῦς ἐν Ἰερειχώ, καὶ <lb n="13"/>
 ὀφθαλμοῖς ἴδεν ἄνθρωπον ἑστηκότα ἐναντίον αὐτοῦ,
 ἐσπασμένη ἐν τῆ χειρὶ αὐτοῦ. καὶ προσελθὼν
 Ἡμέτερος εἶ ἢ τῶν ὑπεναντίων;</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>ὁ δὲ εἶπεν αὐτῷ Ἐγὼ ἀρχιστράτηυος <lb n="14"/>
 δυνάμεως κυρίου νυνὶ παραγέγονα. καὶ Ἰησοῦς ἔπεσεν ἐπὶ
 πρόσωπον ἐπὶ τὴν γῆν καὶ εἶπεν αὐτῷ Δέσποτα, τί προστάσσεις τῶ
 σῷ οἰκέτῃ;</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ λέγει ὁ ἀρχιστράτηγος Κυρίου πρὸς Ἰησοῦν Λύσαι τὸ <lb n="15"/>
 υ· ὁ γὰρ τόπος ἐφ’ ᾧ νῦν ἕστηκας ἅγιός ἐστιν.
 <note type="footnote">AF 5 Μαδβαρειτιδι] Μαβδαρειτιδι B ab A Μαβδαριτιδι) 6 οἱ
@@ -781,58 +784,58 @@ VI</p></div>
 </div>
 
 <div type="textpart" subtype="chapter" n="6">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>VI<lb n="2"/> ἐξ αὐτῆς οὐδὲ εἰσεπορεύετο.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ εἶπεν κύριος πρὸς Ἰησοῦν ἰδοὺ
 ἐγὼ παραδίδωμι τὴν Ἰερειχὼ ὑποχειρίαν καὶ τὸν βασιλέα αὐτῆς τὸν
 <lb n="3"/> ἐν αὐτῇ, δυνατοὺς ὄντας ἐν ἰσχύι</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>σὺ δὲ περίστησον αὐτῇ τοὺς
 <lb n="4"/> μαχίμους κύκλῳ.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ ἔσται ὡς ἂν σαλπίσητε τῇ σάλπιγγι, ἀνακραγέτω
 <lb n="5"/> πᾶς ὁ λαὸς ἅμα·</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἀνακραγόντων αὐτῶν πεσεῖται αὐτόματα
 τὰ τείχη τῆς πόλεως, καὶ εἰσελεύσεται πᾶς ὁ λαὸς ὁρμήσας ἕκαστος
 <lb n="6"/> κατὰ πρόσωπον εἰς τὴν πόλιν.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>Καὶ εἰσῆλθεν Ἰησοῦς ὁ τοῦ
 <lb n="7"/> Ναυὴ πρὸς τοὺς ἱερεῖς</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ εἶπεν αὐτοῖς λέγων Παραγγείλατε τῷ
 λαῷ περιελθεῖν καὶ κυκλῶσαι τὴν πόλιν, καὶ οἱ μάχιμοι παραπορευέσθωσαν
 <lb n="8"/> ἐνωπλισμένοι ἐναντίον κυρίου·</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἑπτὰ ἱερεῖς
 ἔχοντες ἑπτὰ σάλπιγγας ἱερὰς παρελθέτωσαν ὡσαύτως ἐναντίον τοῦ
 κυρίου καὶ σημαινέτωσαν εὐτόνως· καὶ ἡ κιβωτὸς τῆς διαθήκης κυρίου
 <lb n="9"/> ἐπακολουθείτω.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>οἱ δὲ μάχιμοι ἔμπροσθεν παραπορευέσθωσαν, καὶ οἱ
 ἱερεῖς οἱ οὐραγοῦντες ὀπίσω τῆς κιβωτοῦ τῆς διαθήκης κυρίου σαλπίζοντες.
 </p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>τῷ δὲ λαῷ ἐνετείλατο Ἰησοῦς λέγων Μὴ βοᾶτε, μηδὲ 
 ἀκουσάτω μηθεὶς ὑμῶν τὴν φωνήν, ἕως ἂν ἡμέραν αὐτὸς
 <lb n="11"/> ἀναβοῆσαι· καὶ τότε ἀναβοήσετε.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ περιελθοῦσα ἡ κιβωτὸς τῆς
 διαθήκης τοῦ θεοῦ εὐθέως ἀπῆλθεν εἰς τὴν παρεμβολήν, καὶ ἐκοιμήθη
 <lb n="12"/> ἐκεῖ.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>Καὶ τῇ ἡμέρᾳ τῆ δευτέρᾳ ἀνέστη Ἰησοῦς τὸ πρωί, καὶ ἦραν
 <note type="footnote">VI 1 ωχυρωμενη] + ἄπο προσώπου τῶν ὑιῶν Ισραηλ F Ι ουθεις] οὐδεὶς AF | AFεἰσεπορεύετο οὐδὲ ἐξεπορεύετο ἐξ αυτης F 2 om ἐγὼ F την Ι. υποχειριαν]
 ὑποχείριον σου (σοι F) τὴν Ιερειχω (Ιεριχω Α) AF Ι ’τον ἐν
@@ -860,7 +863,7 @@ F | ανακραγετω] ανακραγετωσαν F | om ἄμα AF
 <pb n="430"/>
 <note type="marginal">B</note> οἱ ἱερεῖς τὴν κιβωτὸν τῆς διαθήκης κυρίου,</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ οἱ ἑπτὰ ἱερεῖς οἱ <lb n="13"/>
 φέροντες τὰς σάλπιγγας τὰς ἑπτὰ προεπορεύοντο ἐναντίον κυρίου.
 καὶ μετὰ ταῦτα εἰσεπορεύοντο οἱ μάχιμοι, καὶ ὁ λοιπὸς ὄχλος ὄπισθε
@@ -868,42 +871,42 @@ F | ανακραγετω] ανακραγετωσαν F | om ἄμα AF
 σάλπιγξι καὶ ὁ λοιπὸς ὄχλος ἅπας περιεκύκλωσε τὴν πόλιν ἐγγύθεν,
 </p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ ἀπῆλθεν πάλιν εἰς τὴν παρεμβολήν. οὕτως ἐποίει ἐπὶ ἓξ <lb n="14"/>
 ἡμέρας.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ τῇ ἡμέρᾳ τῇ ἑβδόμῃ ἀνέστησαν ὄρθρου, καὶ περιήλθοσαν <lb n="15"/>
 τὴν πόλιν ἑξάκις·</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ τῇ περιόδῳ ἑβδόμῃ ἐσάλπισαν οἱ ἱερεῖς, καὶ  <lb n="16"/>
 εἶπεν ὁ Ἰησοῦς τοῖς υἱοῖς Ἰσραήλ Κεκράξατε· παρέδωκεν γὰρ κύριος
 ὑμῖν τὴν πόλιν.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ ἔσται ἡ πόλις ἀνάθεμα, αὐτὴ καὶ πάντα ὅσα <lb n="17"/>
 ἐστὶν ἐν αὐτῇ, κυρίῳ σαβαώθ· πλὴν Ῥαὰβ τὴν πόρνην περιποιήσασθε,
 αὐτὴν καὶ ὅσα ἐστὶν ἐν τῷ οἴκῳ αὐτῆς.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>ἀλλὰ ὑμεῖς φυλάξασθε <lb n="18"/>
 σφόδρα ἀπὸ τοῦ ἀναθέματος, μή ποτε ἐνθυμηθέντες ὑμεῖς αὐτοὶ
 λάβητε ἀπὸ τοῦ ἀναθέματος καὶ ποιήσητε τὴν παρεμβολὴν τῶν υἱῶν
 Ἰσραὴλ ἀνάθεμα, καὶ ἐκτρίψητε ἡμᾶς.</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ πᾶν ἀργύριον ἢ χρυσίον <lb n="19"/>
 ἢ χαλκὸς ἢ σίδηρος ἅγιον ἔσται τῷ κυρίῳ· εἰς θησαυρὸν κυρίου
 εἰσενεχθήσεται.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ ἐσάλπισαν ταῖς σάλπιγξιν οἱ ἱερεῖς· ὡς δὲ <lb n="20"/>
 ἤκουσεν ὁ λαὸς τῶν σαλπίγγων, ἠλάλαξεν πᾶς ὁ λαὸς ἅμα ἀλαλαγμῷ
 μεγάλῳ καὶ ἰσχυρῷ. καὶ ἔπεσεν ἅπαν τὸ τεῖχος κύκλῳ, καὶ ἀνέβη
 πᾶς ὁ λαὸς εἰς τὴν πόλιν.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ ἀνεθεμάτισεν αὐτὴν Ἰησοῦς καὶ <lb n="21"/>
 ὅσα ἦν ἐν τῇ πόλει, ἀπὸ ἀνδρὸς καὶ ἕως γυναικός, ἀπὸ νεανίσκου
 καὶ ἕως πρεσβύτου, καὶ ἕως μόσχου καὶ ὑποζυγίου, ἐν
@@ -932,31 +935,31 @@ AF Ι om καὶ ° AF | πρεσβυτου] πρεσβυτέρου AF | υπο
 <pb n="431"/>
 <lb n="22"/> ῥομφαίας.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>Καὶ τοῖς δυσὶν νεανίσκοις τοῖς κατασκοπεύσασιν <note type="marginal">Β</note>
 εἶπεν Ἰησοῦ Εἰσέλθατε εἰς τὴν οἰκίαν τῆς γυναικός, καὶ ἐξαγάγετε
 <lb n="23"/> αὐτὴν ἐκεῖθεν καὶ ὅσα ἐστὶν αὐτῇ.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ εἰσῆλθον οἱ δύο νεανίσκοι οἱ
 κατασκοπεύσαντες τὴν πόλιν εἰς τὴν οἰκίαν τῆς γυναικός, καὶ ἐξηγάγοσαν
 Ῥαὰβ τὴν πόρνην καὶ τὸν πατέρα αὐτῆς καὶ τὴν μητέρα αὐτῆς
 καὶ τοὺς ἀδελφοὺς αὐτῆς ¶ καὶ τὴν συγγενίαν αὐτῆς καὶ πάντα ὅσα ¶
 <lb n="24"/> ἦν αὐτῆς, καὶ κατέστησαν αὐτὴν ἔξω τῆς παρεμβολῆς Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ
 ἡ πόλις ἐνεπρήσθη ἐνπυρισμῷ σὺν πᾶσιν τοῖς ἐν αὐτῇ· πλὴν ἀργυρίου
 καὶ χρυσίου καὶ χαλκοῦ καὶ σιδήρου· ἔδωκαν εἰς θησαυρὸν Κυρίου
 <lb n="25"/> εἰσενεχθῆναι.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ Ῥαὰβ τὴν πόρνην καὶ πάντα τὸν οἶκον τὸν
 πατρικὸν αὐτῆς ἐζώγρησεν Ἰησοῦς καὶ κατῴκησεν ἐν τῷ Ἰσραὴλ ἕως
 τῆς σήμερον ἡμέρας, διότι ἔκρυψεν τοὺς κατασκοπεύσαντας οὓς
 <lb n="26"/> ἀπέστειλεν Ἰησοῦς κατασκοπεῦσαι τὴν Ἰερειχώ.</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>Καὶ ὥρκισεν
 Ιησοῦς ἐν τῇ ἡμέρᾳ ἐκείνη ἐναντίον κυρίου λέγων
 ὁ ἄνθρωπος ὃς οἰκοδομήσει τὴν πόλιν ἐκείνην· ἐν τῷ
@@ -965,24 +968,24 @@ AF Ι om καὶ ° AF | πρεσβυτου] πρεσβυτέρου AF | υπο
 τῷ πρωτοτόκῳ ἐθεμελίωσεν αὐτήν, καὶ ἐν τῷ ἐλαχίστῳ διασωθέντι
 <lb n="27"/> ἐπέστησεν τὰς πύλας αὐτῆς.</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>Καὶ ἦν κύριος μετὰ Ἰησοῦ,
 καὶ ἢν τὸ ὄνομα αὐτοῦ κατὰ πᾶσαν τὴν γῆν.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="7">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Καὶ ἐπλημμέλησαν οἱ υἱοὶ Ἰσραὴλ πλημμελίαν μεγάλην καὶ
 ἐνοσφίσαντο ἀπὸ τοῦ ἀναθέματος· καὶ ἔλαβεν Ἀχὰρ υἱὸς Χαρμεὶ υἱοῦ
 ὶ υἱοῦ Σάρα ἐκ τῆς φυλῆς Ἰούδα ἀπὸ τοῦ ἀναθέματος· καὶ
 <lb n="2"/>ὀργῇ κύριος τοῖς υἱοῖς Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>Καὶ ἀπέστειλεν Ἰησοῦς
 ἄνδρας εἰς Γαῖ, ἥ ἐστιν κατὰ Βαιθήλ, λέγων κατασκέψασθε τὴν Γαῖ.
 <lb n="3"/></p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ ἀνέβησαν οἱ ἄνδρες καὶ κατεσκέψαντο τὴν Γαῖ, <milestone unit="altref" n="3"/> καὶ ἀνέστρεψαν
 πρὸς Ἰησοῦν καὶ εἶπαν πρὸς αὐτόν Μὴ ἀναβήτω πᾶς ὁ λαός, ἀλλ’ ὡς
 ἢ τρισχίλιοι ἄνδρες ἀναβήτωσαν καὶ ἐκπολιορκησάτωσαν
@@ -1001,62 +1004,62 @@ pr γῆν Α | ἀναβήτω] ἀναβαινέτω AF | εκπολιορκ
 <pb n="432"/>
 <note type="marginal">B</note> τὴν πόλιν· μὴ ἀναγάγῃς ἐκεῖ τὸν λαὸν πάντα, ὀλίγοι γάρ εἰσιν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ <lb n="4"/>
 ἀνέβησαν ὡσεὶ τρισχίλιοι ἄνδρες, καὶ ἔφυγον ἀπὸ προσώπου τῶν
 ἀνδρῶν Γαῖ.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἀπέκτειναν ἀπ’ αὐτῶν ἄνδρες Γᾶ εἰς τριάκοντα <lb n="5"/>
 καὶ ἓξ ἄνδρας, καὶ κατεδίωξαν αὐτοὺς ἀπὸ τῆς πύλης καὶ συνέτριψαν
 αὐτοὺς ἀπὸ τοῦ καταφεροῦς· καὶ ἐπτοήθη ἡ καρδία τοῦ λαοῦ καὶ
 ἐγένετο ὥσπερ ὕδωρ.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ διέρρηξεν Ἰησοῦς τὰ ἱμάτια αὐτοῦ· καὶ <lb n="6"/>
 ἔπεσεν Ἰησοῦς ἐπὶ τὴν γῆν ἐπὶ πρόσωπον ἐναντίον κυρίου ἕως
 ἑσπέρας, αὐτὸς καί οἱ πρεσβύτεροι Ἰσραήλ, καὶ ἐπεβάλοντο χοῦν
 ἐπὶ τὰς κεφαλὰς αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ εἶπεν Ἰησοῦς Δέομαι, Κύριε, ἵνα τί <lb n="7"/>
 διεβίβασεν ὁ παῖς σου τὸν λαὸν τοῦτον τὸν Ἰορδάνην, παραδοῦναι
 αὐτὸν τῷ Ἀμορραίῳ ἀπολέσαι σοι ἡμᾶς; καὶ εἰ κατεμείναμεν καὶ κατῳκίσθημεν
 παρὰ τὸν Ἰορδάνην.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ τί ἐρῶ, ἐπεὶ μετέβαλεν ’lσραὴλ <lb n="8"/>
 αὐχένα ἀπέναντι τοῦ ἐχθροῦ αὐτοῦ;</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἀκούσας ὁ Χαναναῖος καὶ <lb n="9"/>
 πάντες οἱ κατοικοῦντες τὴν γῆν περικυκλώσουσιν ἡμᾶς κα ἐκτρίψουσιν
 ἡμᾶς ἀπὸ τῆς γῆς· καὶ τί ποιήσεις τὸ ὄνομά σου τὸ μέγα;</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>Καὶ <lb n="10"/>
 κύριος πρὸς Ἰησοῦν Ἀνάστηθι· ἵνα τί τοῦτο σὺ πέπτωκας ἐπὶ
 πρόσωπον σου;</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>ἡμάρτηκεν ὁ λαὸς καὶ παρέβη τὴν διαθήκην ἣν <lb n="11"/>
 διεθέμην πρὸς αὐτούς· κλέψαντες ἀπὸ τοῦ ἀναθέματος ἐνέβαλον εἰς
 τὰ σκεύη αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>μὴ δύνωνται οἱ υἱοὶ Ἰσραὴλ ὑποστῆναι κατὰ <lb n="12"/>
 πρόσωπον τῶν ἐχθρῶν αὐτῶν· αὐχένα ὑποστρέψουσιν ἔναντι τῶν
 ἐχθρῶν αὐτῶν, ὅτι ἐγενήθησαν ἀνάθεμα· οὐ προσθήσω ἔτι εἶναι
 μεθ’ ὑμῶν, ἐὰν μὴ ἐξάρητε τὸ ἀνάθεμα ἐξ ὑμῶν αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>ἀναστὰς <lb n="13"/>
 ἁγίασον τὸν λαόν, καὶ εἰπὸν ἁγιασθῆναι εἰς αὔριον. τάδε λέγει
 κύριος ὁ θεὸς Ἰσραήλ To ἀνάθεμα ἐν ὑμῖν ἐστιν· οὐ δυνήσεσθε ἀντιστῆναι
 ἀπέναντι τῶν ἐχθρῶν ὑμῶν, ἕως ἂν ἐξάρητε τὸ ἀνάθεμα ἐξ
 ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ συναχθήσεσθε πάντες τὸ πρωὶ κατὰ φυλάς, καὶ ἔσται <lb n="14"/>
 ἡ φυλὴ ἢν ἀν’ δείξῃ Κύριος, προσάξετε κατὰ δήμους· καὶ τὸν δῆμον ὃν
 ἐὰν δείξη κύριος, προσάξετε κατ’ οἶκον· καὶ τὸν οἶκον ὃν ἐὰν
@@ -1078,51 +1081,51 @@ F 13 τάδε] pr ὅτι F εστιν εν υμιν AF | δυνησεσθαι 
 <pb n="433"/>
 <lb n="15"/> κύριος, προσάξετε κατ’ ἄνδρα.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ ὃς ἂν ἐνδειχθῇ, κατακαυθήσεται <note type="marginal">Β</note>
 ἐν πυρί, καὶ πάντα ὅσα ἐστὶν αὐτῷ· ὅτι παρέβη τὴν διαθήκην κυρίου
 <lb n="16"/> καὶ ἐποίησεν ἀνόμημα ἐν Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>Καὶ ὤρθρισεν Ἰησοῦς
 προσήγαγεν τὸν λαὸν κατὰ φυλάς· καὶ ἐνεδείχθη ἡ φυλὴ Ἰούδα.
 <lb n="17"/> καὶ προσήχθη κατά δήμους, καὶ ἐνεδείχθη δῆμος Ζαραεί·</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ προσήχθη
 <lb n="18"/> κατὰ ἄνδρα,</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ καὶ ἐνεδείχθη Ἀχὰρ υἱὸς Ζαμβρεὶ υἱοῦ
 <lb n="19"/></p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ εἶπεν Ἰησοῦς τῷ Ἀχάρ Δὸς δόξαν σήμερον τῷ κυρίῳ θεῷ Ἰσραήλ,
 καὶ δὸς τὴν ἐξομολόγησιν καὶ ἀνάγγειλόν μοι τί ἐποίησας, καὶ μὴ
 <lb n="20"/> κρύψῃς ἀπ’ ἐμοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ ἀπεκρίθη Ἀχὰρ τῷ Ἰησοῖ καὶ εἶπεν Ἀληθῶς
 ἥμαρτον ἐναντίον κυρίου θεοῦ Ἰσραήλ· οὕτως καὶ οὕτως ἐποίησα.
 <lb n="21"/></p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>ἴδον ἐν τῇ προνομῇ ψιλὴν ποικίλην καὶ διακόσια δίδραχμα ἀργυρίου
 καὶ γλῶσσαν μίαν χρυσῆν πεντήκοντα διδράχμων, καὶ ἐνθυμηθεὶς
 αὐτῶν ἔλαβον· καὶ ἰδοὺ αὐτὰ ἐνκέκρυπται ἐν τῆ σκηνῇ μου, καὶ
 <lb n="22"/> τὸ ἀργύριον κέκρυπται ὑποκάτω αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ ἀπέστειλεν Ἰησοῦς
 ἀγγέλους, καὶ ἔδραμον εἰς τὴν σκηνὴν εἰς τὴν παρεμβολήν· καὶ ταῦτα
 ἦν ἐνκεκρυμμένα εἰς τὴν σκηνήν, καὶ τὸ ἀργύριον ὑποκάτω αὐτῶν.
 <lb n="23"/></p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ ἐξήνεγκαν αὐτὰ ἐκ τῆς σκηνῆς καὶ ἤνεγκαν πρὸς Ἰησοῦν καὶ
 <lb n="24"/> τοὺς πρεσβυτέρους Ἰσραήλ, καὶ ἔθηκαν αὐτὰ ἔναντι κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ
 ἔλαβεν Ἰησοῦς τὸν Ἀχὰρ υἱὸν Ζάρα καὶ ἀνήγαγεν αὐτὸν εἰς φάραγγα
 Ἀχώρ, καὶ τοὺς υἱοὺς αὐτοῦ καὶ τὰς θυγατέρας αὐτοῦ καὶ τοὺς μόσχους
@@ -1130,12 +1133,12 @@ F 13 τάδε] pr ὅτι F εστιν εν υμιν AF | δυνησεσθαι 
 σκηνὴν αὐτοῦ καὶ πάντα τὰ ὑπάρχοντα αὐτοῦ, καὶ πᾶς ὁ λαός
 <lb n="25"/> μετ’ αὐτοῦ· καὶ ἀνήγαγεν αὐτοὺς εἰς Ἐμεκαχώρ.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ εἶπεν Ἰησοῦς
 τῷ Ἀχάρ Τί ὠλέθρευσας ἡμᾶς; ἐξολεθρεύσαι σε κύριος, καθὰ καὶ
 <lb n="26"/> σήμερον. καὶ ἐλιθοβόλησαν αὐτὸν λίθοις πᾶς Ἰσραήλ,</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ ἐπέαὐτῷ
 σωρὸν λίθων μέγαν· καὶ ἐπαύσατο Κύριος τοῦ θυμοῦ
 <note type="footnote">15 ἀν’] ἔαν F | ενδενχθη ενδιχθη AF)] + δία κυρίου F | καὶ πάντα] pr αὐτὸς AF
@@ -1161,69 +1164,69 @@ F | λίθοις πα, Ισραηλ] πᾶς Ισρ. ἐν λίθοις AF</no
 </div>
 
 <div type="textpart" subtype="chapter" n="8">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Καὶ εἶπεν κύριος πρὸς Ἰησοῦν Μὴ φοβηθῇς μηδὲ δειλιασῃς· λάβε <lb n="1"/> 
 σοῦ τοὺς ἄνδρας πάντας τοὺς πολεμιστάς, καὶ ἀναστάς ἀνάβηθι
 εἰς Γαῖ. ἰδοὺ δέδωκα εἰς τὰς χεῖράς σου τὸν βασιλέα Γαὶ καὶ τὴν <lb n="2"/>
 γῆν αὐτοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ ποιήσεις τὴν Γαὶ ὃν τρόπον ἐποίησας τὴν Ἰερειχὼ
 καὶ τὸν βασιλέα αὐτῆς, καὶ τὴν προνομὴν τῶν κτηνῶν προνομεύσεισ
 σεαυτῷ.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>κατάστησον δὲ σεαυτῷ ἔνεδρα τῆ πόλει εἰς τὰ ὀπίσω. <lb n="3"/> καὶ
 ἀνέστη Ἰησοῦς καὶ πᾶς ὁ λαὸς ὁ πολεμιστὴς ὥστε ἀναβῆναι εἰς
 Γαί. ἐπλεξεν δὲ Ἰησοῦς τριάκοντα χιλιάδας ἀνδρῶν δυνατοὺς ἐν
 ἰσχύι, καὶ ἀπέστειλεν αὐτοὺς νυκτός.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ ἐνετείλατε αὐτοῖς λέγων
 
 Ὑμεῖς ἐνεδρεύσατε ὀπίσω τῆς πόλεως· μὴ μακρὰν γίνεσθε ἀπὸ τῆς <lb n="4"/>
 πόλεως, καὶ ἔσεσθε πάντες ἕτοιμοι.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἐγὼ καὶ πάντες οἱ μέτ' ἐμοῦ
 προσάξομεν πρὸς τὴν πόλιν, καὶ ἔσται ὼς ἂν ἐξέλθωσιν οἱ κατοικοῦντες
 Γαὶ εἰς συνάντησιν ἡμῖν καθάπερ καὶ πρώην, καὶ φευξόμεθα
 ἀπὸ προσώπου αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ ὡς ἂν ἐξέλθωσιν ὀπίσω ἡμῶν, ἀποσπάσομεν
 αὐτοὺς ἀπὸ τῆς πόλεως· καὶ ἐροῦσιν Φεύγουσιν οὗτοι ἀπὸ
 προσώπου ἡμῶν ὃν τρόπον καὶ ἔμπροσθεν.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>ὑμεῖς δὲ ἐξαναστήσεσθε
 ἐκ τῆς ἐνέδρας, καὶ πορεύσεσθε εἰς τὴν πόλιν.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>κατὰ τὸ
 ῥῆμα τοῦτο ποιήσετε· ἰδοὺ ἐντέταλμαι ὑμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἀπέστειλεν αὐτοὺς
 Ἰησοῦς, καὶ ἐπορεύθησαν εἰς τὴν ἐνέδραν· καὶ ἀπέστειλαν αὐτοὺς
 Βαιθὴλ καὶ ἀνὰ μέσον Γαῖ, ἀπὸ θαλάσσης τῆς Γαῖ.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>Καὶ ὀρθρίσας <lb n="10"/>
 Ἰησοῦς τὸ πρωὶ ἐπεσκέψατο τὸν λαόν· καὶ ἀνέβησαν αὐτοὶ καὶ
 οἱ πρεσβύτεροι κατὰ πρόσωπον τοῦ λαοῦ ἐπὶ Γᾶ·</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ πᾶς ὁ λαὸς ὁ <lb n="11"/>
 πολεμιστὴς μετ’ αὐτοῦ ἀνέβησαν, κα πορευόμενοι ἦλθον ἐξ ἐναντίας
 τῆς πόλεως ἀπ’ ἀνατολῶν,</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ τὰ ἔνεδρα τῆς πόλεως ἀπὸ θαλάσσης· <lb n="12"/>
 
 </p></div>
 
-<div type="textpart" subtype="section" n="14"><p> καὶ ἐγένετο ὡς ἴδεν βασιλεὺς Γαῖ, ἔσπευσεν καὶ ἐξῆλθεν εἰς συνάναυτου <lb n="14"/>
+<div type="textpart" subtype="verse" n="14"><p> καὶ ἐγένετο ὡς ἴδεν βασιλεὺς Γαῖ, ἔσπευσεν καὶ ἐξῆλθεν εἰς συνάναυτου <lb n="14"/>
 <note type="footnote">F VIII 1 σου] σεαυτοῦ AF | τοὺς
 π
 αυτου] pr και λαον αυτου καὶ τὴν πόλιν αυτου F 2 ποιησης Α |
@@ -1250,61 +1253,61 @@ AF | Γᾶι] pr τῆς AF | εἰς συναντ. αυτοις] τησιν α�
 μετ’ αὐτοῦ· καὶ αὐτὸς οὐκ ᾔδει ὅτι ἔνεδρα αὐτῷ ἐστιν ὀπίσω τῆς πόλεως.
 <lb n="15"/></p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ ἴδεν καὶ ἀνεχώρησεν Ἰησοῦς καὶ Ἰσραὴλ ἀπὸ προσώπου α
 <lb n="16"/></p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ κατεδίωξαν ὀπίσω τῶν υἱῶν Ἰσραήλ, καὶ αὐτοὶ
 <lb n="17"/> ἀπὸ τῆς πόλεως·</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>οὐ κατελείφθη οὐθεὶς ἐν τῆ Γαῖ ὃς οὐ
 Ἰσραήλ· καὶ κατέλιπον τὴν πόλιν ἀνεῳγμένην, καὶ κατεδίωξεν
 ὀπίσω Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ εἶπεν κύριος πρὸς Ἰησοῦν Ἔκτεινον
 σου ἐν τῷ γαίσῳ τῷ ἐν τῇ χειρί σου ἐπὶ τὴν πόλιν, εῖς
 γὰρ τὰς χεῖράς σου παραδέδωκα αὐτήν· καὶ τὰ ἔνεδρα
 ἐξαναστήσονται ἐν τάχει ἐκ τοῦ τόπου αὐτῶν. καὶ ἐξέτεινεν Ἰησοῦς τὴν
 <lb n="19"/> χεῖρα αὐτοῦ, τὸν γαῖσον, ἐπὶ τὴν πόλιν·</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ τὰ ἔνεδρα ἐξανέστησαν
 ἐν τάχει ἐκ τοῦ τόπου αὐτῶν καὶ ἐξήλθοσαν ὅτε ἐξέτεινεν τὴν
 χεῖρα, καὶ ἤλθοσαν ἐπὶ τὴν πόλιν καὶ κατελάβοντο αὐτήν· καὶ σπεύσαντες
 <lb n="20"/> ἐνέπρησαν τὴν πόλιν ἐν πυρί.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ περιβλέψαντες οἱ
 κάτοικοι Γαῖ εἰς τὰ ὀπίσω αὐτῶν, καὶ ἐθεώρουν καπνὸν ἀναβαίνοντα
 ἐκ τῆς πόλεως εἰς τὸν οὐρανόν· καὶ οὐκέτι εἶχον ποῦ φύγωσιν
 <lb n="21"/> ὧδε ἢ ὧδε.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ Ἰησοῦς καὶ πᾶς Ἰσραὴλ εἶδον ὅτι ἔλαβον τὰ ἔνεδρα
 τὴν πόλιν, καὶ ὅτι ἀνέβη ὁ καπνὸς τῆς πόλεως εἰς τὸν οὐρανόν· καὶ
 <lb n="22"/> μεταβαλόμενοι ἐπάταξαν τοὺς ἄνδρας τῆς Γαῖ.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ οὗτοι
 ἐκ τῆς πόλεως εἰς συνάντησιν, καὶ ἐγενήθησαν ἀνὰ μέσον τῆς
 βολῆς, οὗτοι ἐντεῦθεν καὶ οὗτοι ἐντεῦθεν· καὶ ἐπάταξαν ἕως τοῦ
 <lb n="23"/> μὴ καταλειφθῆναι αὐτῶν σεσωσμένον καὶ διαπεφευγότα.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ τὸν
 βασιλέα τῆς Γαῖ συνέλαβον ζῶντα, καὶ προσήγαγον αὐτὸν πρὸς
 <lb n="24"/> Ἰησοῦν.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ ὡς ἐπαύσαντο οἱ υἱοὶ Ἰσραὴλ ἀποκτέννοντες πάντας
 τοὺς ἐν τῇ Γαῖ τοὺς ἐν τοῖς πεδίοις καὶ ἐν τῷ ὄρει ἐπὶ τῆς καταβάσεως
 οὗ κατεδίωξαν αὐτοὺς ἀπ’ αὐτῆς εἰς τέλος, καὶ ἀπέστρεψεν Ἰησοῦς εἰς
 <lb n="25"/> Γαῖ, καὶ ἐπάταξεν αὐτὴν ἐν στόματι ῥομφαίας.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ ἐγενήθησαν οἱ
 <note type="footnote">14 ο μετ’ αὐτοῦ] om ο μετ’ AF | ὀπίσω τῆς πολ.] ἄπο τῆς πολ. ὀπίσω Α
 15 ἔιδεν F | Ισραηλ] pr πᾶς AF 16 ἀπέστησαν ἄπο] ἤσαν ἀπ’ sup ras Ba(vid)
@@ -1325,16 +1328,16 @@ pr του Ισραηλ F Ι επαταξαν] επαταξεν AF + αὐτοὺ
 <note type="marginal">B</note> πεσόντες ἐν τῇ ἡμέρᾳ ἐκείνῃ ἀπὸ ἀνδρὸς καὶ ἕως γυναικὸς
 χιλιάδες, πάντας τοὺς κατοικοῦντας Γᾶ.</p></div>
 
-<div type="textpart" subtype="section" n="27"><p>πλὴν τῶν σκύλων τῶν ἐν <lb n="27"/>
+<div type="textpart" subtype="verse" n="27"><p>πλὴν τῶν σκύλων τῶν ἐν <lb n="27"/>
 τῇ πόλει πάντα ἃ ἐπρονόμευσαν ἑαυτοῖς ὁ υἱοὶ Ἰσραὴλ κατὰ πρόσταγμα
 Κυρίου, ὃν τρόπον συνέταξεν κύριος τῷ Ἰησοῖ.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ ἐνεπύρισεν <lb n="28"/>
 Ἰησοῦς τὴν πόλιν ἐν πυρί· χῶμα ἀοίκητον εἰς τὸν αἰῶνα
 ἔθηκεν αὐτὴν ἕως τῆς ἡμέρας ταύτης.</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>καὶ τὸν βασιλέα τῆς Γᾶ <lb n="29"/>
 ἐκρέμασεν ἐπὶ ξύλου διδύμου, καὶ ἦν ἐπὶ τοῦ ξύλου ἕως ἑσπέρας·
 καὶ ἐπιδύνοντος τοῦ ἡλίου συνέταξεν Ἰησοῦς καὶ καθείλοσαν αὐτοῦ τὸ
@@ -1344,33 +1347,33 @@ pr του Ισραηλ F Ι επαταξαν] επαταξεν AF + αὐτοὺ
 </div>
 
 <div type="textpart" subtype="chapter" n="9">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Ὡς δ’ ἤκουσαν οἱ βασιλεῖς τῶν Ἀμορραίων οἱ ἐν τῷ πέραν τοῦ <lb n="1"/> 
 Ἰορδάνου, οἱ ἐν τῇ ὀρεινῇ καὶ οἱ ἐν τῇ πεδινῇ καὶ οἱ ἐν πάσῃ τῆ
 παραλίᾳ τῆς θαλάσσης τῆς μεγάλης καὶ οἱ πρὸς τῷ Ἀντιλιβάνῳ,
 καὶ οἱ Χετταῖοι καὶ οἱ Χαναναῖοι καὶ οἱ Φερεζαῖοι καὶ οἱ Εὐαῖοι καὶ
 οἱ Ἀμορραῖοι καὶ οἱ Γεργεσαῖοι καὶ οἱ Ἰεβουσαῖοι,</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>συνήλθοσαν ἐπ’ <lb n="2"/>
 τὸ αὐτὸ ἐκπολεμῆσαι Ἰησοῦν καὶ Ἰσραήλ ἅμα πάντες.</p>
 </div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>Τότε οἰκοδόμησεν Ἰησοῦς θυσιαστήριον κυρίῳ τῷ θεῷ Ἰσραὴλ <lb n="3"/> <lb n="30"/> <note type="marginal">(VIII)</note>
 ἐν ὄρει Γαιβάλ,</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καθότι ἐνετείλατο Μωυσῆς ὁ θεράπων Κυρίου τοῖς <lb n="4"/>
 υἱοῖς Ἰσραήλ, καθὰ γέγραπται ἐν τῷ νόμῳ Μωυσῆ, θυσιαστήριον
 ἐκεῖ ὁλοκαυτώματα κυρίῳ, θυσίαν σωτηρίου.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἔγραψεν <lb n="5"/> <lb n="32"/>
 Ἰησοῦς ἐπὶ τῶν λίθων τὸ δευτερονόμιον, νόμον Μωυσῆ, ἐνώπιον
 υἱῶν Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ πᾶς Ἰσραὴλ καὶ οἱ πρεσβύτεροι αὐτῶν κα ὁ <lb n="6"/> <lb n="33"/>
 δικασταὶ καὶ οἱ γραμματεῖς αὐτῶν παρεπορεύοντο ἔνθεν καὶ ἔνθεν
 τῆς κιβωτοῦ ἀπέναντι, καὶ οἱ ἱερεῖς καὶ οἱ Λευεῖται ἦραν τὴν
@@ -1395,12 +1398,12 @@ AF</note>
 ὄρους Γαιβάλ· καθότι ἐνετείλατο Μωυσῆς ὁ θεράπων Κυρίου <note type="marginal">B</note>
 <lb n="34"/> <lb n="7"/> εὐλογήσοι τὸν λαὸν ἐν πρώτοις.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ μετὰ ταῦτα οὕτως ἀνέγνω
 Ἰησοῦς πάντα τὰ ῥήματα τοῦ νόμου τούτου, τὰς εὐλογίας καὶ τὰς
 <lb n="35"/> <lb n="8"/> κατάρας κατὰ πάντα τὰ γεγραμμένα ἐν τῷ νόμῳ Μωυσῆ·</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>οὐκ ἦν
 ἀπὸ πόντων ὧν ἐνετείλατο Μωυσῆς τῷ Ἰησοῖ ὃ οὐκ ἀνέγνω
 εἰς τὰ ὦτα πάσης ἐκκλησίας υἱῶν Ἰσραήλ, τοῖς ἀνδράσιν
@@ -1408,45 +1411,45 @@ AF</note>
 τῷ Ἰσραήλ.</p>
 <note type="marginal">(X)</note> <lb n="3"/> <lb n="9"/> </div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>Καὶ οἱ κατοικοῦντες Γαβαὼν ἤκουσαν πάντα ὅσα ἐποί
 <lb n="4"/> <lb n="10"/> Κύριος τῇ Ἰερειχὼ καὶ τῇ Γαῖ.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ ἐποίησαν καί γε αὐτοὶ
 πανουργίας, καὶ ἐλθόντες ἐπεσιτίσαντο καὶ ἡτοιμάσαντο.
 λαβόντες σάκκους παλαιοὺς ἐπὶ τῶν ὤμων αὐτῶν
 <lb n="5"/> <lb n="11"/> οἴνου παλαιοὺς καὶ κατερρωγότας ἀποδεδεμένους,</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ τὰ κοῖλα
 τῶν ὑποδημάτων αὐτῶν καὶ τὰ σανδάλια αὐτῶν παλαιὰ καὶ καταπεπελματωμένα
 ἐν τοῖς ποσὶν αὐτῶν, καὶ τὰ ἱμάτια αὐτῶν πεπαλαιωμένα
 ἐπάνω αὐτῶν· καὶ ὁ ἄρτος αὐτῶν τοῦ ἐπισιτισμοῦ
 <lb n="6"/> <lb n="12"/> ξηρὸς καὶ εὐρωτιῶν καὶ βεβρωμένος.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ ἤλθοσαν πρὸς Ἰησοῦν
 εἰς τὴν παρεμβολὴν Ἰσραὴλ εἰς Γάλγαλα, καὶ εἶπαν πρὸς Ἰησοῦν
 καὶ Ἰσραήλ Ἐκ γῆς μακρόθεν ἥκαμεν, καὶ νῦν διάθεσθε ἡμῖν
 <lb n="7"/> <lb n="13"/> διαθήκην.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ εἶπαν οἱ υἱοὶ Ἰσραὴλ πρὸς τὸν Χορραῖον ὅρα μὴ
 <lb n="8"/> <lb n="14"/> ἐν ἐμοὶ κατοικεῖς, καὶ πῶς σοι διαθῶμαι διαθήκην</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ εἶπαν πρὸς
 Ἰησοῦν οἰκέται σού ἐσμεν. καὶ εἶπεν πρὸς αὐτοὺς Ἰησοῦς Πόθεν
 <lb n="9"/> <lb n="15"/> ἐστέ, καὶ πόθεν παραγεγόνατε</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ εἶπαν Ἐκ γῆς μακρόθεν
 σφόδρα ἥκασιν οἱ παῖδές σου ἐν ὀνόματι κυρίου τοῦ θεοῦ σου.
 ἀκηκοάμεν γὰρ τὸ ονὸμἄ αὐτου, καὶ ὅσα έποίησεν έν Αἰγὐπτῴ.
 <lb n="10"/> <lb n="16"/></p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ ὅσα ἐποίησεν τοῖς βασιλεῦσιν τῶν Ἀμορραίων οἲ ἦσαν πέραν
 τοῦ Ἰορδάνου, τῷ Σηὼν βασιλεῖ τῶν Ἀμορραίων καὶ τῷ Ὢγ
 βασιλεῖ τῆς βασᾶν, ὃς κατῴκει ἐν Ἀσταρὼθ καὶ ἐν Ἐδράειν.
@@ -1467,73 +1470,73 @@ AF | τῶν Αμορραιων 2°] Εσεβων AF | Ασταγωθ Bb</note>
 <pb n="438"/>
 <note type="marginal">B</note></p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ κοὶ ἀκούσαντες εἶπαν πρὸς ἡμᾶς οἱ πρεσβύτεροι ἡμῶν καὶ <lb n="17"/> <lb n="11"/>
 πάντες οἱ κατοικοῦντες τὴν γῆν ἡμῶν λέγοντες Λάβετε ἑαυτοῖς
 ἐπισιτισμὸν εἰς τὴν ὁδὸν καὶ πορεύθητε εἰς συνάντησιν αὐτῶν, καὶ
 ἐρεῖτε πρὸς αὐτούς οἰκέται σού ἐσμεν, καὶ νῦν διάθεσθε ἡμῖν
 διαθήκην.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>οὗτοι οἱ ἄρτοι, θερμοὺς ἐφωδιάσθημεν αὐτοὺς ἐν <lb n="18"/> <lb n="12"/>
 θησαν καὶ γεγόνασιν βεβρωμένοι·</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ οὗτοι οἱ ἀσκοὶ τοῦ οἴνου <lb n="19"/>
 οὓς ἐπλήσαμεν καινούς, καὶ οὗτοι ἐρρώγασιν· καὶ τὰ ἱμάτια ἡμῶν
 καὶ τὰ ὑποδήματα ἡμῶν πεπαλαίωται ἀπὸ τῆς πολλῆς ὁδοῦ
 σφόδρα.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ ἔλαβον οἱ ἄρχοντες τοῦ ἐπισιτισμοῦ αὐτῶν, καὶ <lb n="20"/> <lb n="14"/>
 Κύριον οὐκ ἐπηρώτησαν.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ ἐποίησεν Ἰησοῦς πρός αὐτοὺς <lb n="21"/> <lb n="15"/>
 εἰρήνην. καὶ διέθεντο πρὸς αὐτοὺς διαθήκην τοῦ διασῶσαι αὐτούς,
 καὶ ὤμοσαν αὐτοῖς οἱ ἄρχοντες τῆς συναγωγῆς.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>Καὶ <lb n="22"/> <lb n="16"/>
 ἐγένετο μετὰ τρεῖς ἡμέρας μετὰ τὸ διαθέσθαι πρὸς αὐτοὺς διαθήκην,
 ἤκουσαν ὅτι ἐγγύθεν αὐτῶν εἰσιν, κα ὅτι ἐν αὐτοῖς κατοικοῦσιν.
 </p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ ἀπῆραν οἱ υἱοὶ Ἰσραὴλ καὶ ἦλθον εἰς τὰς πόλεις <lb n="23"/> <lb n="17"/>
 αὐτῶν. αἱ δὲ πόλεις αὐτῶν Γαβαὼν καὶ Κεφειρὰ καὶ Βειρών,
 καὶ πόλεις Ἰαρείν.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ οὐκ ἐμαχέσαντο αὐτοῖς οἱ υἱοὶ Ἰσραήλ, <lb n="24"/>
 ὅτι ὤμοσαν αὐτοῖς πάντες οἱ ἄρχοντες κύριον τὸν θεὸν Ἰαραήλ·
 καὶ διεγόγγυσαν πᾶσα ἡ συναγωγὴ ἐπὶ τοῖς ἄρχουσιν.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ <lb n="25"/> <lb n="19"/>
 εἶπαν οἱ ἄρχοντες πάσῃ τῆ συναγωγῇ Ἡμεῖς ὠμόσαμεν αὐτοῖς
 Κύριον τὸν θεόν Ἰσραήλ, καὶ νῦν οὐ δυνησόμεθα ἅψασθαι αὐτῶν·
 </p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>τοῦτο ποιήσομεν, ζωγρῆσαι αὐτούς, καὶ περιποιησόμεθα αὐτούς· <lb n="26"/> <lb n="20"/>
 καὶ οὐκ ἔσται καθ’ ἡμῶν ὀργὴ διὰ τὸν ὅρκον ὃν ὠμόσαμεν αὐτοῖς.
 </p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>ζήσονται, καὶ ἔσονται ξυλοκόποι καὶ ὑδροφόροι πάσῃ τῇ 
 συναγωγῇ, καθόπερ εἶπαν αὐτοῖς οἱ ἄρχοντες.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ συνεκάλεσεν <lb n="28"/> <lb n="22"/>
 αὐτοὺς Ἰησοῦς καὶ εἶπεν αὐτοῖς Διὰ τί παρελογίσασθέ με λέγοντες
 κατοικούντων ἐν ἡμῖν;</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>καὶ νῦν ἐπικατάρατοί ἐστε. οὐ μὴ <lb n="29"/> <lb n="23"/>
 ἐκλίπῃ ἐξ ὑμῶν δοῦλος οὐδὲ ξυλοκόπος ὀπὸς ἐμοὶ καὶ τῷ θεῷ μου.</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ <lb n="30"/> <lb n="24"/>
 <note type="footnote">AF 17 om ἀκούσαντες AF | εαυτοις] ὕμιν αὐτοῖς F Ι ερειται Α | σου] ὑμῶν AF
 διαθεσθαι Α 18 αρτοι] + ημων F 19 διαρρωγασιν F | ημων 2°] υμων Α
@@ -1555,16 +1558,16 @@ F</note>
 τῶν ψυχῶν ἡμῶν ἀπὸ προσώπου ὑμῶν, καὶ ἐποιήσαμεν τὸ
 <lb n="25"/> <lb n="31"/> πρᾶγμα τοῦτο.</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>καὶ νῦν ἰδοὺ ἡμεῖς ὑποχείριοι ὑμῖν· ὡς ἀρέσκει
 <lb n="26"/> <lb n="32"/> ὑμῖν καὶ ὡς δοκεῖ ὑμῖν, ποιήσατε ἡμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>καὶ ἐποίησαν αὐτοῖς
 οὕτως· καὶ ἐξείλατο αὐτοὺς Ἰησοῦς ἐν τῇ ἡμέρᾳ ἐκείνῃ ἐκ χειρῶν
 <lb n="27"/> <lb n="33"/> υἱῶν ’lσραήλ, καὶ οὐκ ἀνεῖλον αὐτούς.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>καὶ κατέστησεν αὐτοὺς
 Ἰησοῦς ἐν τῇ ἡμέρᾳ ἐκείνῃ ξυλοκόπους καὶ ὑδροφόρους πάσῃ
 τῇ συναγωγῇ καὶ τῷ θυσιαστηρίῳ τοῦ θεοῦ· διὰ τοῦτο ἐγένοντο οἱ
@@ -1574,37 +1577,37 @@ F</note>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="10">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Ὡς δὲ ἤκουσεν Ἀδωνιβέζεκ βασιλεὺς Ἰερουσαλὴμ ὅτι ἔλαβεν
 Ἰησοῦς τὴν Γαῖ καὶ ἐξωλέθρευσεν αὐτήν· ὃν τρόπον ἐποίησαν τὴν
 καὶ τὸν βασιλέα αὐτῆς, οὕτως ἐποίησαν τὴν Γαῖ καὶ τὸν
 καὶ ὅτι αὐτομόλησαν οἱ κατοικοῦντες Γαβαὼν πρὸς
 <lb n="2"/> Ἰησοῦν καὶ πρὸς Ἰσραήλ·</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ ἐφοβήθησαν ἀπ’ αὐτῶν σφόδρα· ᾔδει
 γὰρ ὅτι μεγάλη πόλις Γαβαὼν ὡσεὶ μία τῶν μητροπόλεων, καὶ πάντες
 <lb n="3"/> οἱ ἄνδρες αὐτῆς ἰσχυροί.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ ἀπέστειλεν Ἀδωνιβέζεκ βασιλεὺς
 Ἰερουσαλὴμ πρὸς Αἰλὰμ βασιλέα Χεβρὼν καὶ πρὸς Φείδων βασιλέα
 Ἰερειμοὺθ καὶ πρὸς Ἰέφθα βασιλέα Λαχεὶς καὶ πρὸς Δαβεὶν βασιλέα
 <lb n="4"/> Ὀδολλὰμ λέγων</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>Δεῦτε ἀνάβητε πρὸς μὲ καὶ βοηθήσατέ μοι, καὶ
 ἐκπολεμήσωμεν Γαβαών· αὐτομόλησαν γὰρ πρὸς Ἰησοῦν καὶ πρὸς
 <lb n="5"/> τοὺς υἱοὺς Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἀνέβησαν οἱ πέντε βασιλεῖς τῶν Ἰεβουσαίων,
 βασιλεὺς Ἰερουσαλὴμ καὶ βασιλεὺς βασιλεὺς καὶ βασιλεὺς
 Ἰερειμοὺθ καὶ βασιλεὺς Λαχεὶς καὶ βασιλεὺς Ὀδολλάμ, αὐτοὶ καὶ
 πᾶς ὁ λαὸς αὐτῶν, καὶ περιεκάθισαν τὴν Γαβαὼν καὶ ἐξεπολιόρκουν
 <lb n="6"/> αὐτήν.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ ἀπέστειλαν οἱ κατοικοῦντες Γαβαὼν πρὸς Ἰησοῦν εἰς
 <note type="footnote">30 λέγοντες] + ὅτι F | ἀνηγγέλη] ἀπηγγέλη Α pr ἀγγελία F | ὕμιν F* <note type="marginal">AF</note>
 ἥμιν F1) | om ο θεὸς σου F | M. τὼ παιδὶ] M. παιδὶ Α τὼ M. π. F |
@@ -1623,35 +1626,35 @@ B b A | τὴν Γᾶι 2°] pr καὶ Α Ι ηὐτομόλησαν Α 2 ἀ�
 ἡμᾶς καὶ βοήθησον ἡμῖν· ὅτι συνηγμένοι εἰσὶν ἐφ’ ἡμᾶς πάντες οἱ
 βασιλεῖς τῶν Ἀμορραίων οἱ κατοικοῦντες τὴν ὀρεινήν.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ ἀνέβη <lb n="7"/>
 Ἰησοῦς ἐκ Γαλγάλων, αὐτὸς καὶ πᾶς ὁ λαὸς ὁ πολεμιστὴς μετ’ αὐτοῦ,
 πᾶς δυνατὸς ἐν ἰσχύι.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ εἶπεν Κύριος πρὸς Ἰησοῦν Μὴ φοβηθῇς <lb n="8"/>
 αὐτούς, εἰς γὰρ τὰς χεῖράς σου παραδέδωκα αὐτούς· οὐχ ὑπολειξ
 αὐτῶν οὐθεὶς ἐνώπιον ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἐπεὶ παρεγένετο <lb n="9"/>
 αὐτοὺς Ἰησοῦς ἄφνω, ὅλην τὴν νύκτα εἰσεπορεύθη ἐκ Γαλγάλων.
 </p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ ἐξέστησεν αὐτοὺς κύριος ἀπὸ προσώπου τῶν υἱῶν Ἰσραήλ, <lb n="10"/>
 συνέτριψεν αὐτοὺς Κύριος συντρίψει μεγάλῃ ἐν Γαβαών· καὶ
 ἐδίωξαν αὐτοὺς ὁδὸν ἀναβάσεως Ὡρωνείν, καὶ κατέκοπτον αὐτούς
 ἔως Ἀζηκὰ καὶ ἕως Μακηδά.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>ἐν τῷ δὲ φεύγειν αὐτοὺς ἀπὸ προσώπου <lb n="11"/>
 τῶν υἱῶν Ἰσραὴλ ἐπὶ τῆς καταβάσεως Ὡρωνείν, καὶ κύριος
 ἐπέρριψεν αὐτοῖς λίθους χαλάζης ἐκ τοῦ οὐρανοῦ ἕως Ἀζηκά· καὶ 
 ἐγένοντο πλείους οἱ ἀποθανόντες διὰ τοὺς λίθους τῆς χαλάζης ἢ
 οὓς ἀπέκτειναν οἱ υἱοὶ Ἰσραὴλ μαχαίρᾳ ἐν τῷ πολέμῳ.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>Τότε <lb n="12"/>
 ἐλάλησεν Ἰησοῦς πρὸς κύριον, ᾗ ἡμέρᾳ παρέδωκεν ὁ θεὸς τὸν
 Ἀμορραῖον ὑποχείριον Ἰσραήλ, ἡνίκα συνέτριψεν αὐτοὺς ἐν Γοβαὼν
@@ -1661,30 +1664,30 @@ B b A | τὴν Γᾶι 2°] pr καὶ Α Ι ηὐτομόλησαν Α 2 ἀ�
 <l>καὶ ἡ σελήνη κατὰ Φάραγγα Ἁλῶν.</l>
 </p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <l>καὶ ἔστη ὁ ἥλιος καὶ ἡ σελήνη ἐν στάσει,</l> <lb n="13"/>
 <l>ἕως ἠμύνατο ὁ θεὸς τοὺς ἐχθροὺς αὐτῶν.</l>
   <p>καὶ ἵστη ὁ ἥλιος κατὰ μέσον τοῦ οὐρανοῦ, οὐ προεπορεύετο εἰς
 δυσμὰς εἰς τέλος ἡμέρας μιᾶς.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ οὐκ ἐγένετο ἡμέρα τοιαύτη <lb n="14"/>
 οὐδὲ τὸ πρότερον οὐδὲ τὸ ἔσχατον ὥστε ἐπακοῦσαι θεὸν ἀνθρώπου·
 </p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>συνεπολέμησεν τῷ Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>Καὶ ἔφυγον οἱ <lb n="16"/>
 πέντε βασιλεῖς οὗτοι, καὶ κατεκρύβησαν εἰς τὸ σπήλαιον τὸ ἐν
 Μακηδά.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ ἀπηγγέλη τῷ Ἰησοῦ λέγοντες Εὕρηνται οἱ πέντε <lb n="17"/>
 κεκρυμμένοι ἐν τῷ σπηλαίῳ τῷ ἐν Μακηδά.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ εἶπεν <lb n="18"/>
 κυλίσατε λίθους ἐπὶ τὸ στόμα τοῦ σπηλαίου, καὶ κατα-
 <note type="marginal">Α</note> <note type="footnote">6 βοήθησον] A a rescr Aa 8 υπολειφθησεται B ab (υπολιφθ.
@@ -1698,34 +1701,34 @@ sup ras A a? 11 τῶν ὑιῶν] om τῶν Α | Ωρωνειν] Βηθωρω
 <pb n="441"/>
 <lb n="19"/> στήσατε ἄνδρας φυλάσσειν ἐπ’ αὐτούς·</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>ὑμεῖς δὲ μὴ ἑστήκατε καταδιώκοντες <note type="marginal">B</note>
 ὀπίσω τῶν ἐχθρῶν ὑμῶν, καὶ καταλάβετε τὴν οὐραγίαν
 αὐτῶν κοὶ μὴ ἀφῆτε εἰσελθεῖν εἰς τὰς πόλεις αὐτῶν· παρέδωκεν
 <lb n="20"/> γὰρ αὐτοὺς Κύριος ὁ θεὸς ἡμῶν εἰς τὰς χεῖρας ἡμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ ἐγένετο ὡς
 κατέπαυσεν Ἰησοῦς καὶ πᾶς υἱὸς Ἰσραὴλ κόπτοντες αὐτοὺς κοπὴν
 μεγάλην σφόδρα ἕως εἰς τέλος, καὶ οἱ διασωζόμενοι διεσώθησαν εἰς
 <lb n="21"/> τὰς πόλεις τὰς ὀχυράς.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ ἀπεστράφη πᾶς ὁ λαὸς πρὸς Ἰησοῦν
 εἰς Μακηδὰ ὑγιεῖς, καὶ οὐκ ἔγρυξεν οὐθεὶς τῶν υἱῶν Ἰσραὴλ τῇ
 <lb n="22"/> γλώσσῃ αὐτοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ εἶπεν Ἰησοῦς Ἀνοίξατε τὸ σπήλαιον, καὶ
 <lb n="23"/> ἐξαγάγετε τοὺς πέντε βασιλεῖς τούτους ἐκ τοῦ σπηλαίου.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ
 ἐξηγάγοσαν τοὺς πέντε βασιλεῖς ἐκ τοῦ σπηλαίου, τὸν βασιλέα
 Ἰερουσαλὴμ καὶ τὸν βασιλέα Χεβρὼν καὶ τὸν βασιλέα Ἰ
 <lb n="24"/> καὶ τὸν βασιλέα Λαχεὶς καὶ τὸν βασιλέα Ὀδολλάμ.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ ἐπεὶ
 γαγον αὐτοὺς πρὸς Ἰησοῦν, καὶ συνεκάλεσεν Ἰησοῦς πά
 καὶ τοὺς ἐναρχομένους τοῦ πολέμου τοὺς συνπορευομένους αὐτῷ λέγων
@@ -1733,31 +1736,31 @@ sup ras A a? 11 τῶν ὑιῶν] om τῶν Α | Ωρωνειν] Βηθωρω
 αὐτῶν. καὶ προσελθόντες ἐπέθηκαν τοὺς πόδας αὐτῶν ἐπὶ
 <lb n="25"/> τοὺς τραχήλους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ εἶπεν πρὸς αὐτοὺς Ἰησοῦς Μὴ
 θῆτε αὐτοὺς μηδὲ δειλιάσητε· ἀνδρίζεσθε καὶ ἰσχύετε, ὅτι οὕτως
 κύριος πᾶσι τοῖς ἐχθροῖς ὑμῶν οὓς ὑμεῖς καταπολεμεῖτε αὐτούς.
 <lb n="26"/></p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ ἀπέκτεινεν αὐτοὺς Ἰησοῦς, καὶ ἐκρέμασεν αὐτοὺς ἐπὶ πέντε
 <lb n="27"/> ξύλων· καὶ ἦσαν κρεμάμενοι ἐπὶ τῶν ξύλων ἕως ἑσπέρας.</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ
 ἐγενήθη πρὸς ἡλίου δυσμὰς ἐνετείλατο Ἰησοῦς, καὶ καθεῖλον αὐτοὺς
 ἀπὸ τῶν ξύλων, καὶ ἔρριψαν αὐτοὺς εἰς τὸ σπήλαιον εἰς ὃ κατεφύγοσαν
 ἐκεῖ, καὶ ἐκύλισαν λίθους ἐπὶ τὸ σπήλαιον ἕως τῆς σήμερον
 <lb n="28"/> ἡμέρας.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>Καὶ τὴν Μακηδὰν ἐλάβοσαν ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ
 ἐφόνευσαν αὐτὴν ἐν στόματι μαχαίρας καὶ ἐξωλέθρευσαν πᾶν ἔνπνεον
 ἐν αὐτῇ, καὶ οὐ κατελείφθη ἐν αὐτῇ οὐδεὶς διασεσωσμένος καὶ
 διαπεφευγώς· καὶ ἐποίησαν τῷ βασιλεῖ Μακηδὰν ὃν τρόπον ἐποίησαν
 <lb n="29"/> τῷ βασιλεῖ Ἰερειχώ.</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ
 <note type="footnote">19 ἀφῆτε] + αὐτοὺς Α Ι ἀυτῶν 2°] ἀυτῶ sup ras B ? vid 20 πᾶς ὑίος]
 οἱ υἱοὶ Α | κόπτοντες αὐτοὺς bis scr Α 21 ἐπεστράφη Α |
@@ -1773,7 +1776,7 @@ BabA 28 Μακηδα Α (bis) | ἔλαβον Α | μαχαίρας] ξίφο�
 <pb n="442"/>
 <note type="marginal">Β</note> μετ’ αὐτοῦ ἐκ Μακηδὰ εἰς Λεβνά, καὶ ἐπολιόρκει Λεβνά.</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ παρέδωκεν <lb n="30"/>
 αὐτὴν κύριος εἰς χεῖρας Ἰσραήλ, καὶ ἔλαβον αὐτὴν καὶ
 βασιλέα αὐτῆς, καὶ ἐφόνευσεν αὐτὴν ἐν στόματι ξίφους κα πᾶν
@@ -1781,56 +1784,56 @@ BabA 28 Μακηδα Α (bis) | ἔλαβον Α | μαχαίρας] ξίφο�
 διαπεφευγώς· καὶ ἐποίησαν τῷ βααιλεῖ αὐτῆς ὃν τρόπον ἐποίησαν
 τῶ βασιλεῖ Ἰερειχώ.</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ <lb n="31"/>
 μετ’ αὐτοῦ ἐκ Λερνὰ εἰς Λαχείς, καὶ περιεκάθισεν αὐτὴν καὶ ἐπολιόρκει
 αὐτήν.</p></div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>καὶ παρέδωκεν Κύριος τὴν Λαχεὶς εἰς τὰς χεῖρας Ἰσραήλ, <lb n="32"/>
 καὶ ἔλαβεν αὐτὴν ἐν τῇ ἡμέρᾳ τῇ δευτέρᾳ, καὶ ἐφόνευσαν αὐτὴν ἐν
 στόματι ξίφους, καὶ ἐξωλέθρευσαν αὐτὴν ὃν τρόπον ἐποίησαν τὴν
 Αεβνά.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>Τότε ἀνέβη Αἱλὰμ βασιλεὺς Γάζης βοηθήσων τῇ <lb n="33"/>
 Λαχείς· καἰ ἐπάταξεν αὐτὸν Ἰησοῦς ἐν στόματι ξίφους καὶ τὸν λαὸν
 αὐτοῦ, ἕως τοῦ μὴ καταλειφθῆναι αὐτῶν σεσωσμένον καὶ διαπεφευγότα.
 </p></div>
 
-<div type="textpart" subtype="section" n="34">
+<div type="textpart" subtype="verse" n="34">
 <p>Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ ἐκ <lb n="34"/>
 εἰς Ὀδολλάμ, καὶ περιεκάθισεν αὐτὴν καὶ ἐπολιόρκησεν
 </p></div>
 
-<div type="textpart" subtype="section" n="35">
+<div type="textpart" subtype="verse" n="35">
 <p>καὶ παρέδωκεν αὐτὴν κύριος ἐν χειρὶ Ἰσραήλ, καὶ ἔλαβεν <lb n="35"/>
 ἐν τῆ ἡμέρᾳ ἐκείνῃ, καὶ ἐφόνευσεν αὐτὴν ἐν στόματι ξίφους,
 καὶ πᾶν ἐνπνέον ἐν αὐτῇ ἐφόνευσαν, ὃν τρόπον ἐποίησαν τῇ
 Λαχείς.</p></div>
 
-<div type="textpart" subtype="section" n="36">
+<div type="textpart" subtype="verse" n="36">
 <p>Καὶ ἀπῆλθεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ μετ’ αὐτοῦ εἰς <lb n="36"/>
 <note type="marginal">§ F</note> Χεβρών, καὶ περιεκάθισεν αὐτήν.</p></div>
 
-<div type="textpart" subtype="section" n="37">
+<div type="textpart" subtype="verse" n="37">
 <p>§ καὶ ἐπάταξεν αὐτήν ἐν στόματι <lb n="37"/>
 ξίφους καὶ πᾶν ἐνπνέον ὅσα ἦν ἐν αὐτῇ· οὐκ ἦν διασεσωσμένος· ὃν
 τρόπον ἐποίησαν τὴν Ὀδολλάμ, ἐξωλέθρευσαν αὐτὴν καὶ ὅσα ἦν ἐν
 αὐτῇ.</p></div>
 
-<div type="textpart" subtype="section" n="38">
+<div type="textpart" subtype="verse" n="38">
 <p>Καὶ ἀπέστρεψεν Ἰησοῦς καὶ πᾶς Ἰσραὴλ εἰς Δαβείρ, καὶ <lb n="38"/>
 περικαθίσαντες αὐτὴν</p></div>
 
-<div type="textpart" subtype="section" n="39">
+<div type="textpart" subtype="verse" n="39">
 <p>ἔλαβον αὐτὴν καὶ τὸν βασιλέα αὐτῆς κα τὰς <lb n="39"/>
 αὐτῆς, καὶ ἐπάταξαν αὐτὴν ἐν στόματι ξίφους, καὶ ἐξωλέθρευσαν
 καὶ πᾶν ἐνπνέον ἐν αὐτῇ, καὶ οὐ κατέλιπον αὐτῇ οὐδένα
 διασεσωσμένον· ὃν τρόπον ἐποίησαν τὴν Χεβρὼν καὶ τῷ βασιλεῖ
 αὐτῆς, οὕτως ἐποίησαν τῇ Δαβεὶρ καὶ τῷ βασιλεῖ αὐτῆς.</p></div>
 
-<div type="textpart" subtype="section" n="40">
+<div type="textpart" subtype="verse" n="40">
 <p>Καὶ <lb n="40"/>
 ἐπάταξεν Ἰησοῦς πᾶσαν τὴν γῆν τῆς ὀρεινῆς καὶ τὴν Ναβαὶ καὶ τὴν
 <note type="marginal">AF</note> <note type="footnote">29 ἐκ] ἐν Α | Λεβνα bis] Λεβμνα Α 30 καὶ 1°] + κݲςݲ A* (ras Α1?) |
@@ -1850,50 +1853,50 @@ BabA 28 Μακηδα Α (bis) | ἔλαβον Α | μαχαίρας] ξίφο�
 αὐτῶν σεσωσμένον, καὶ πᾶν ἐνπνέον ζωῆς ἐξωλέθρευσεν, ὃν τρόπον
 <lb n="41"/> ἐνετείλατο κύριος ὁ θεὸς Ἰσραήλ·</p></div>
 
-<div type="textpart" subtype="section" n="41">
+<div type="textpart" subtype="verse" n="41">
 <p>ἀπὸ Καδὴς Βαρνὴ ἕως Γάζης,
 <lb n="42"/> πᾶσαν τὴν Γόσομ ἕως τῆς Γαβαών.</p></div>
 
-<div type="textpart" subtype="section" n="42">
+<div type="textpart" subtype="verse" n="42">
 <p>καὶ πάντας τοὺς βασιλεῖς αὐτῶν
 καὶ τὴν γῆν αὐτῶν ἐπάταξεν Ἰησοῦς εἰς ἅπαξ· ὅτι Κύριος ὁ θεὸς
 συνεπολέμει τῷ Ἰσραήλ.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="11">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Ὡς δὲ ἤκουσεν Ἰαβεὶς βασιλεὺς Ἁσώρ, ἀπέστειλεν πρὸς Ἰωβὰβ
 βασιλέα Μαρρὼν καὶ πρὸς βασιλέα Συμοὼν καὶ πρὸς βασιλέα Ἀζείφ,
 <lb n="2"/></p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ πρὸς τοὺς βασιλεῖς τοὺς κατὰ Σιδῶνα τὴν μεγάλην, εἰς τὴν ὀρεινήν
 καὶ εἰς τὴν Ῥαβὰ ἀπέναντι Κενερώθ, καὶ εἰς τὸ πεδίον καὶ εἰς Φεναεδδώρ,
 <lb n="3"/></p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ εἰς τοὺς παραλίους  Χαναναίους ἀπὸ ἀνατολῶν καὶ εἰς τοὺς παραλίοθς
 Ἀμορραίους καὶ Εὑαίους καὶ Ἰεβουσαίους καὶ Φερεζαίους τοὺς ἐν
 <lb n="4"/> τῷ ὄρει καὶ τοὺς Χετταίους τοὺς ὑπὸ τὴν ἔρημον εἰς τὴν Μασευμάν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ
 ἐξῆλθον αὐτοὶ καὶ οἱ βασιλεῖς αὐτῶν μετ’ αὐτῶν, ὥσπερ ἡ ἄμμος τῆς θαλάσσης
 <lb n="5"/> τῷ πλήθει, καὶ ἵπποι καὶ ἅρματα πολλὰ σφόδρα.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ συνῆλθον
 πάντες οἱ βασιλεῖς αὐτοὶ καὶ παρεγένοντο ἐπὶ τὸ αὐτό, καὶ
 <lb n="6"/> βάλον ἐπὶ τοῦ ὕδατος Μαρρὼν πολεμῆσαι τὸν Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ εἶπεν
 Κύριος πρὸς Ἰησοῦν Μὴ φοβηθῇς ἀπὸ προσώπου αὐτῶν, ὅτι αὔριον
 ταύτην τὴν ὥραν ἐγὼ παραδίδωμι τετροπωμένους αὐτοὺς ἐναντίον τοῦ
 Ἰσραήλ· τοὺς ἵππους αὐτῶν νευροκοπήσεις, καὶ τὰ ἅρματα αὐτῶν
 <lb n="7"/> κατακαύσεις ἐν πυρί.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ ἦλθεν Ἰησοῦς καὶ πᾶς ὁ λαὸς ὁ πολεμιστὴς
 ἐπ’ αὐτοὺς ἐπὶ τὸ ὕδωρ Μαρρὼν ἐξάπινα, καὶ ἐπέπεσαν ἐπ’ αὐτοὺς ἐν
 <note type="footnote">40 κατέλιπον] κατελειπαν Α κατέλειπον F | αυτων] ἐν ἀυτὴ AF | σεσωδιασεσωσμ. <note type="marginal">AF</note>
@@ -1920,57 +1923,57 @@ BF1] αυτοις AF*</note>
 <pb n="444"/>
 <note type="marginal">B</note> τῇ ὀρεινῇ.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ παρέδωκεν αὐτοὺς κύριος ὑποχειρίους Ἰσραήλ, καὶ <lb n="8"/>
 κόπτοντες αὐτοὺς κατεδίωκον ἕως Σιδῶνος τῆς μεγάλης καὶ ἕως
 Μασερὼν καὶ ἕως τῶν πεδίων Μασσὼχ κοτ’ ἀνατολάς· κοὶ κατέκοψαν
 αὐτοὺς ἕως τοῦ μὴ καταλειφθῆναι αὐτῶν διασεσωσμένον.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ <lb n="9"/>
 αὐτοῖς Ἰησοῦς ὃν τρόπον ἐνετείλατο αὐτῷ Κύριος· τοὺς
 ὐτῶν ἐνευροκόπησεν καὶ τὰ ἅρματα αὐτῶν ἐνέπρησεν ἐν
 πυρί.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>Καὶ ἀπεστράφη Ἰησοῦς ἐν τῷ καιρῷ ἐκείνῳ, καὶ κατελάβετο <lb n="10"/>
 Ἀσὼρ καὶ τὸν βασιλέα αὐτῆς· ἦν δὲ Ἁσὼρ τὸ πρότερον
 ἄρχουσα πασῶν τῶν βασιλειῶν τούτων.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἀπέκτειναν πᾶν <lb n="11"/>
 ἐνπωέον ἐν αὐτῇ ἐν ξίφει καὶ ἐξωλέθρευσαν πάντας, καὶ οὐ κατελείφθη
 ἐν αὐτῇ ἐνπνέον· καὶ τὴν Ἀσὼρ ἐνέπρησαν ἐν πυρί.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ πάσας <lb n="12"/>
 τὰς πόλεις τῶν βασιλέων καὶ τοὺς βασιλεῖς αὐτῶν ἔλαβεν Ἰησοῦς κοὶ
 αὐτοὺς ἐν στόματι ξίφους, καὶ ἐξωλέθρευσαν αὐτοὺς ὃν τρόπον
 ἐν Μωυσῆς ὁ παῖς κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>ἀλλὰ πάσας τὰς πόλεις τὰς <lb n="13"/>
 σμένας οὐκ ἐνέπρησεν Ἰσραήλ· πλὴν Ἁσὼρ μόνην ἐνέπρησεν
 Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ πάντα τὰ σκῦλα αὐτῆς ἐπρονόμευσαν ἑαυτοῖς οἱ υἱοὶ <lb n="14"/>
 Ἰσραήλ. αὐτοὺς δέ πάντας ἐξωλέθρευσαν ἐν στόματι ξίφους ἕως
 ἀπώλεσεν αὐτούς, οὐ κατέλιπον ἐξ αὐτῶν οὐδὲ ἕλ’ ἐνπνέον.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>ὃν <lb n="15"/>
 τρόπον συνέταξεν Κύριος τῷ Μωυσῇ τῷ παιδὶ αὐτοῦ, κα Μωυσῆς
 ὡσαύτως ἐνετείλατο τῶ Ἰησοῖ, καὶ οὕτως ἐποίησεν Ἰησοῦς· οὐ
 ἀπὸ πόντων ὧν συνέταξεν αὐτῶ Μωυσῆς.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>Καὶ ἔλαβεν <lb n="16"/>
 πάσαν τὴν γῆν τὴν ὀρεινὴν καὶ πασαν τὴν Αοερ καὶ
 Γόσομ καὶ τὴν πεδινὴν καὶ τὴν πρὸς δυσμαῖς, καὶ τὸ ὄρος
 Ἰσραὴλ καὶ τὰ ταπεινὰ</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>τὰ πρὸς τῷ ὄρει ἀπὸ ὄρους Ἁχέλ, καὶ ὃ <lb n="17"/>
 εἰς Σηεὶρ καὶ ἕως Βαλαγάδ, καὶ τὰ πεδία τοῦ Λιβάνου
 ὑπὸ τὸ ὄρος τὸ Ἁερμών· καὶ πόντος τοὺς βασιλεῖς αὐτῶν ἔλαβεν καὶ
@@ -1993,32 +1996,32 @@ om ἐξ AF | οὐδὲ ἐν] οὐδὲν F 15 τὼ Μωυση] om τὼ F |
 <pb n="445"/>
 <lb n="18"/> ἀνεῖλεν καὶ ἀπέκτεινεν.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ πλείους ἡμέρας ἐποίησεν Ἰησοῦς πρὸς <note type="marginal">B</note>
 <lb n="19"/> τοὺς βασιλεῖς τούτους τὸν πόλεμον.</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>οὐκ ἦν πόλις ἣν οὐκ ἔλαβεν
 <lb n="20"/> Ἰσραήλ. πάντα ἐλάβοσαν ἐν πολέμῳ,</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>ὅτι διὰ κυρίου ἐγένετο κατιαὐτῶν
 τὴν καρδίαν συναντᾷν εἰς πόλεμον πρὸς Ἰσραήλ, ἵνα
 ιν, ὅπως μὴ δοθῇ αὐτοῖς ἕλεος ἀλλ’ ἵνα ἐξολεθρευθῶσιν
 <lb n="21"/> ὃν τρόπον εἶπεν κύριος πρὸς Μωυσῆν.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>Καὶ ἦλθεν Ἰησοῦς ἐν
 τῷ καιρῷ ἐκείνῳ καὶ ἐξωλέθρευσεν τοὺς Ἐνακεὶμ ἐκ τῆς ὀρεινῆς, ἐκ
 Χεβρὼν καὶ ἐκ Δαβεὶρ καὶ ἐξ Ἀναβὼθ καὶ ἐκ παντὸς γένους Ἰσραὴλ
 καὶ ἐκ παντὸς ὄρους Ἰούδα, σὺν ταῖς πόλεσιν αὐτῶν· καὶ ἑ
 <lb n="22"/> αὐτοὺς Ἰησοῦς.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>οὐ κατελείφθη τῶν Ἐνακεὶμ ἀπὸ τῶν
 <lb n="23"/> ἀλλὰ πλὴν ἐν Γάζῃ καὶ ἐν Ἀσελδὼ κατελείφθη.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ ἔλαβεν Ἰησοῦς
 πᾶσαν τὴν γῆν, καθότι ἐνετείλατο κύριος τῷ Μωυσῇ· καὶ ἔδωκεν
 αὐτοὺς Ἰησοῦς ἐν κληρονομίᾳ Ἰσραὴλ ἐν μερισμῷ κατὰ φυλὰς αὐτῶν.
@@ -2026,29 +2029,29 @@ om ἐξ AF | οὐδὲ ἐν] οὐδὲν F 15 τὼ Μωυση] om τὼ F |
 </div></div>
 
 <div type="textpart" subtype="chapter" n="12">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ οὗτοι οἱ βασιλεῖς τῆς γῆς οὓς ἀνεῖλον οἱ υἱοὶ Ἰσραὴλ καἰ
 κατεκληρονόμησαν τὴν γῆν αὐτῶν πέραν τοῦ Ἰορδάνου ἀφ’ ἡλίου
 ἀνατολῶν, ἀπὸ φάραγγος Ἀρνῶν ἕως τοῦ ὄρους Ἁερμών, καὶ πᾶσαν
 <lb n="2"/> τὴν γῆν Ἄραβά ἀπ’ ἀνατολῶν·</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>Σηὼν τὸν βασιλέα τῶν Ἀμορραίων,
 ὂς κατῴκει ἐν Ἑσεβών, κυριεύων ἀπὸ Ἀρνῶν, ἥ ἐστιν ἐν τῇ φάραγγι
 κατὰ μέρος τῆς φάραγγος, καὶ τὸ ἥμισυ τῆς Γαλαὰδ ἕως Ἰαβόκ, ὅρια
 <lb n="3"/> υἱῶν Ἄμμων,</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ Ἄραβά ἕως τῆς θαλάσσης Χενέρεθ κατ’ ἀνατολὰς
 καὶ ἕως τῆς θαλάσσης Ἄραβά, θάλασσαν τῶν ἁλῶν ἀπὸ ἀνατολῶν
 <lb n="4"/> ὁδὸν τὴν κατὰ Ἁσειμώθ, ἀπὸ Θαιμὰν τὴν ὑπὸ Μηδὼθ Φασγά·</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ
 Ωγ βασιλεὺς Βασὰ ὑπελείφθη ἐκ τῶν γιγάντων, ὁ κατοικῶν ἐν
 <lb n="5"/> Ἀσταρὼθ καὶ ἐν ’Eδράειν,</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>ἄρχων ἀπὸ ὄρους Ἁερμὼν καὶ ἀπὸ Σεκχαί.
 καὶ πᾶσαν τὴν βασᾶν ἕως ὁρίων Γεργεσεὶ καὶ τὴν Μαχεὶ καὶ τὸ ἥμισυ
 <note type="footnote">17 ἄνειλεν] + αὐτοὺς AF 18 ἡμέρας ημερας Α | βασιλεῖς τουτους]
@@ -2070,12 +2073,12 @@ F | Γεργεσει] Γεσουρι AF | Μαχει] Μαχατι Α Μαχαθ
 <pb n="446"/>
 <note type="marginal">B</note> Γαλαάδ, ὁρίων Σηὼν βασιλέως Ἑσεβών.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>Μωυσῆς ὁ παῖς Κυρίου καὶ <lb n="6"/>
 οἱ υἱοὶ Ἰσραὴλ ἐπάταξαν αὐτούς· καὶ ἔδωκεν αὐτὴν Μωυσῆς ἐν κληρονομίᾳ
 Ῥουβὴν καὶ Γὰδ καὶ τῷ ἡμίσει φυλῆς Μανασσή.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>Καὶ <lb n="7"/>
 οὗτοι οἱ βασιλεῖς τῶν Ἀμορραίων οὓς ἀνεῖλεν Ἰησοῦς καὶ οἱ υἱοὶ Ἰσραὴλ
 ἐν τῶ πέραν τοῦ Ἰορδάνου πα ἁ θάλασσαν Βαλαγαδὰ ἐν πεδίῳ
@@ -2083,78 +2086,78 @@ F | Γεργεσει] Γεσουρι AF | Μαχει] Μαχατι Α Μαχαθ
 αὐτὸν Ἰησοῦς ταῖς φυλαῖς Ἰσραὴλ κληρονομεῖν κατὰ κλῆρον αὐτῶν,
 </p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>ἐν τῷ ὄρει καὶ ἐν τῷ πεδίῳ καὶ ἐν Ἄραβά καὶ ἐν Ἀσηδὼθ καὶ ἐν τῇ <lb n="8"/>
 ἐρήμῳ καὶ Νάγεβ, τὸν Χετταῖον καὶ τὸν Ἀμορραῖον καὶ τὸν Χαναναῖον
 καὶ τὸν Φερεζαῖον καὶ τὸν Εὑαῖον καὶ τὸν Ἰεβουσαῖον·</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ τὸν <lb n="9"/>
 βασιλέα Ἰερειχὼ καὶ τὸν βασιλέα τῆς Γαῖ, ἥ ἐστιν πλησίον
 </p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>βασιλέα Ἰερουσαλήμ, βασιλέα Χεβρών,</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>βασιλέα Ἰερειμούθ, βασιλέα <lb n="10.11"/>
 <note type="marginal">¶ F</note> Δαχείς,</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>βασιλέα Αἰλάμ, ¶ βασιλέα Γάζερ,</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>βασιλέα Δαβείρ, βασιλέα <lb n="12.13"/>
 Ἄσει,</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>βασιλέα Ἐρμάθ, βασιλέα Αἰράθ, βασιλέα Ἀράθ,</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>βασιλέα <lb n="14.15"/>
 Λεβνά, βασιλέα Ὀδολλάμ,</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>βασιλέα Ἠλάδ,</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>βασιλέα Ἀταφόυτ, <lb n="16.17"/>
 βασιλέα Ὅφερ,</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>βασιλέα Ὀφεκ τῆς Ἀρώκ,</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>βασιλέα Ἁσόμ,</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>βασιλέα <lb n="18.19.20"/>
 Συμοών,</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>βασιλέα Μαμρώθ, βασιλέα Ἀζείφ,</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>βασιλέα Κάδης, βασιλέα <lb n="21.22"/>
 Ζακάχ, βασιλέα Μαρεδὼθ καὶ βασιλέα Ἰεκὸμ τοῦ Χερμέλ,</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>βασιλέα <lb n="23"/>
 Ἐλδὼμ τοῦ Φεννεδδώρ, βασιλέα Γεεὶ τῆς Γαλειλαίας,</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>βασιλέα Θάρσα· <lb n="24"/>
 πάντες οὗτοι βασιλεῖς εἴκοσι ἐννέα.</p>
 </div>
 </div>
 
 <div type="textpart" subtype="chapter" n="13">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ Ἰησοῦς πρεσβύτερος προβεβηκὼς τῶν ἡμερῶν. καὶ εἶπεν <lb n="1"/> 
 Κύριος πρὸς Ἰησοῦν Σὺ προβέβηκας τῶν ἡμερῶν, κα ἡ γῆ ὑπολέλειπται
 λειπται πολλὴ εἰς κληρονομίαν.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ αὕτη ἡ γῆ καταλελιμμενη· ὅρια <lb n="2"/>
 <note type="marginal">AF</note> <note type="footnote">5 βασιλέως] ω sup ras A ab βασιλευς A*fort) 6 ἀυτὴν] αὐτοὺς F*
 ἀυτὴν F1(vid) | κληρονομία] κλήρω AF | ἡμίσει] ἥμισυ F 7 Ιησους
@@ -2178,67 +2181,67 @@ AF | αὐτὸν] ἀυτὴν AF | κληρονομεῖν] κληρονομ�
 <pb n="447"/>
 <lb n="3"/> Φυλιστιείμ, ὁ Γεσειρεὶ καὶ ὁ Χαναναῖος·</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>ἀπὸ τῆς ἀοικήτου τῆς κατὰ <note type="marginal">B</note>
 πρόσωπον Αἰγύπτου ἕως τῶν ὁρίων Ἀκκαρὼν ἐξ εὐωνύμων τῶν
 χαναναίων προσλογίζεται ταῖς πέντε σατραπίαις τῶν Φυλιστιείμ, τῷ
 Γαζαίῳ καὶ τῷ Ἀζωτείῳ καὶ τῷ Ἀσκαλωνείτῃ καὶ τῷ Γεθθαίῳ καὶ τῷ
 <lb n="4"/> Ἀκκαρωνείτῃ καὶ τῷ Εὐαίῳ·</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>ἐκ Θαιμὰν καὶ πάσῃ γῇ Χανάαν ἐναντίον
 <lb n="5"/> Γάζης, καὶ οἱ Σιδώνιοι ἕως Ταφὲκ ἕως τῶν ὁρίων τῶν Ἀμορραίων·</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ
 πᾶσαν τὴν γῆν Γαλιὰθ Φυλιστιεὶμ καὶ πάντα τὸν Λίβανον ἀπὸ
 ἀνατολῶν ἡλίου, ἀπὸ Γαλγαὰ ὑπὸ τὸ ὄρος τὸ Ἁερμὼν ἕως τῆς εἰσόδου
 Ἑμάθ·</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>πᾶς ὁ κατοικῶν τὴν ὀρεινὴν ἀπὸ τοῦ Λιβάνου ἕως τῆς Μασερεθμεμφωνάιμ,
 πάντας τοὺς Σιδωνίους, ἐγὼ αὐτοὺς ἐξολεθρεύσω ἀπὸ
 προσώπου Ἰαραήλ· ἀλλὰ διάδος αὐτὴν ἐν κλήρῳ τῷ Ἰσραήλ, ὃν
 <lb n="7"/> τρόπον σοι ἐνετειλάμην.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ νῦν μέρισον τὴν γῆν ταύτην ἐν
 νομία ταῖς ἐννέα φυλαῖς καὶ τῷ ἡμίσει φυλῆς Μανασσή, ἀπὸ τοῦ
 Ἰορδάνου ἕως τῆς θαλάσσης τῆς μεγάλης κατὰ δυσμὰς ἡλίου
 <lb n="8"/> αὐτήν· ἡ θάλασσα ἡ μεγάλη ὁριεῖ.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>ταῖς φυλαῖς καὶ τῷ ἡμίσει
 Μανασσή, τῷ Ῥουβὴν καὶ τῷ Γάδ, ἔδωκεν Μωυσῆς ἐν τῷ πέραν τῷ
 Ἰορδάνῃ· κατ’ ἀνατολὰς ἡλίου δέδωκεν αὐτῷ Μωυσῆς ὁ παῖς κυρίου,
 <lb n="9"/></p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>ἀπὸ Ἀροήρ, ἥ ἐστιν ἐπὶ τοῦ χείλους χειμάρρου Ἀρνῶν, καὶ τὴν πόλιν
 τὴν ἐν μέσῳ τῆς φάραγγος, καὶ πᾶσαν τὴν Μεισὼρ ἀπὸ Δαιδαβάν·
 <lb n="10"/></p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>πάσας τὰς πόλεις Σηὼν βασιλέως Ἀμορραίων, ὃς ἐβασίλευσεν ἐν
 <lb n="11"/></p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>Ἑσεβών, ἕως τῶν ὁρίων υἱῶν Ἄμμων· καὶ τὴν Γαλααδείτιδα καὶ το
 ὅρια Γεσειρεὶ κα τοῦ Μαχατεί, πᾶν ὄρος Ἁερμών, καὶ πᾶσαν τὴν
 <lb n="12"/> Βασανεῖτιν ἕως Ἀχά·</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>πᾶσαν τὴν βασιλείαν Ὢγ ἐν τῇ Βασανείτιδι,
 ὃς ἐβασίλευσεν ἐν Ἐδράειν καὶ ἐν Ἀσταρώθ· οὗτος κατελείφθη ἀπὸ
 <lb n="13"/> τῶν γιγάντων, κα ἐπάταξεν αὐτὸν Μωυσῆς καὶ ἐξωλέθρευσεν.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ
 οὐκ ἐξωλέθρευσαν οἱ υἱοὶ Ἰσραὴλ τὸν Γεσειρεὶ καὶ τὸν Μαχατεὶ καὶ τὸν
 Χαναναῖον· καὶ κατῴκει βασιλεὺς Γεσειρεὶ καὶ ὁ Μαχατεὶ ἐν τοῖς
 <lb n="14"/> υἱοῖς Ἰσραὴλ Ἴως τῆς σήμερον ἡμέρας.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>πλὴν τῆς φυλῆς Λευεὶ οὐκ
 <note type="footnote">2 Γεσειρει] Γεσουρι Α 3 Αζωτιω Α | Ασκαλωνιτη Bb A |
 Bb A 4 Θαιμαν] Θεμαν Α Ι γῆ] pr τῆ Α | om Γάζης Α Ι Σει-
@@ -2260,68 +2263,68 @@ B* (Σιδ. B b) | Ταφεκ] Αφεκα Α 5 Γαλιαθ] Γαβλι Α |
 Μωυσῆς τοῖς υἱοῖς Ἰσραὴλ ἐν ἀραβὼθ Μωὰβ ἐν τῷ πέραν τοῦ
 Ἰορδάνου κατὰ Ἰερειχώ.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ ἔδωκεν Μωυσῆς τῇ φυλῇ Ῥουβὴν <lb n="15"/>
 κατὰ δήμους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ ἐγενήθη αὐτῶν τὰ δρία ἀπὸ Ἀροήρ, ἥ ἐστιν <lb n="16"/>
 κατὰ πρόσωπον φάραγγος Ἀρνών, καὶ ἡ πόλις ἡ ἐν τῇ Φάραγγι
 Ἀρνών· καὶ πᾶσαν τὴν Μεισὼρ</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>ἕως Ἑσεβών, κα πάσας τὰς πόλεις <lb n="17"/>
 τὰς οὔσας ἐν τῇ Μεισώρ, καὶ Δαιβὼν καὶ Βαιμὼν Βάαλ καὶ οἴκου
 Μεελβὼθ</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ βάσαν καὶ Βακεδμὼθ καὶ Μαιφάαθ,</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ Καριαθάιμ  <lb n="19"/>
 ἁ καὶ Σεραδὰ κοὶ Σείων ἐν τῷ ὄρει Ἔναβ,</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ Βαιθφογὼρ <lb n="20"/>
 καὶ Ἀσηδὼθ Φασγὰ καὶ Βαιθθασεινώθ,</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ πόσας τὰς πόλεις τοῦ <lb n="21"/>
 Μεισώρ, καὶ πᾶσαν τὴν βασιλείαν τοῦ Σηὼν βασιλέως τῶν Ἀμορραίων,
 ὃν ἐπάταξεν Μωυσῆς αὐτὸν καὶ τοὺς ἡγουμένους Μαδιάμ, κα τὸν Εὐεὶ
 κοὶ τὸν Ῥόβοκ καὶ τὸν Σοὺρ καὶ τὸν ὢρ κοὶ τὸν Ῥόβε ἄρχοντα,
 ἔναρα Σειών, καὶ τοὺς κατοικοῦντας Σειών.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ τὸν Βαλαὰμ τὸν τοῦ <lb n="22"/>
 Βεὼρ τὸν μάντιν ἀπέκτειναν ἐν τῇ ῥοπῇ.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>ἐγένετο δὲ τὰ ὅρια Ῥουβήν, <lb n="23"/>
 Ἰορδάνης ὅριον. αὕτη ἡ κληρονομία υἱῶν Ῥουβὴν κατὰ δήμους αὐτῶν,
 οἱ πόλεις αὐτῶν καὶ αἱ ἐπαύλεις αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>Ἔδωκεν δὲ Μωυσῆς <lb n="24"/>
 τοῖς υἱοῖς Γὰδ κατὰ δήμους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ ἐγένετο τὰ ὅρια αὐτῶν <lb n="25"/>
 Ἰαζήρ, πᾶσαι αἱ πόλεις Γαλαὰδ καὶ τὸ ἥμισυ γῆς υἱῶν Ἄμμων ἕως
 Ἄραβά, ἥ ἐστιν κατὰ πρόσωπον Ἀράδ,</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ ἀπὸ Ἑσεβὼν ἕως <lb n="26"/>
 ἀραβὼθ κατὰ τὴν Μασσηφά, καὶ Βοτανεὶ καὶ Βαὰν ἕως τῶν ὁρίων
 Δαιβών,</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ ’Eναδὼμ καὶ Ὀθαργαεὶ καὶ Βαινθαναβρὰ κα Σοκχωθὰ <lb n="27"/>
 καὶ Σαφάν καὶ τὴν λοιπὴν βασιλείαν Σηὼν βασιλέως Ἑσεβών· καὶ
 ὁ Ἰορδάνης ὁριεῖ ἕως μέρους τῆς θαλάσσης Χενέρεθ πέραν τοῦ Ἰορδάνου
 ἀπ’ ἀνατολῶν.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>αὕτη ἡ κληρονομία υἱῶν Γὰδ κατὰ δήμους αὐτῶν· <lb n="28"/>
 ἐπιστρέψουσιν ἐναντίον τῶν ἐχθρῶν αὐτῶν· ὅτι ἐγενήθη κατὰ
 <note type="marginal">Α</note> <note type="footnote">14 Ιεριχω BbA 16 ἀυτῶν] ἀυτῶ Α | η ἐν] om η Α | Μισωρ Α
@@ -2342,66 +2345,66 @@ B b τὴν γῆν Α 23 εγενετο] pr ras 1 (?) lit B ? | om ἀυτῶν
 <pb n="449"/>
 <lb n="29"/> δήμους αὐτῶν· αἱ πόλεις αὐτῶν κοὶ αἱ ἐπαύλεις αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>Καὶ <lb n="B"/>
 ἔδωκεν Μωυσῆς τῷ ἡμίσει φυλῆς Μανασσὴ κατὰ δήμους αὐτῶν.
 <lb n="30"/></p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ ἐγένετο τὰ δρία αὐτῶν ἀπὸ Μαανὰ καὶ πᾶσα βασιλεία Βασανεὶ
 καὶ πᾶσα βασιλεία Ὢγ βασιλέως βασᾶν, καὶ πάσας τὰς κώμας
 <lb n="31"/> Ἰαεὶρ αἵ εἰσιν ἐν τῆ Βασανείτιδι, ἑξήκοντα πόλεις·</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>καὶ τὸ ἥμισυ
 τῆς Γαλαάδ, καὶ ἐν Ἀσταρὼθ καὶ ἐν Ἐδράειν πόλεις βασιλείας Ὢγ ἐν
 Βασανείτιδι, τοῖς υἱοῖς Μαχεὶρ υἱοῖς Μανασσὴ καὶ τοῖς ἡμίσεσιν υἱοῖς
 <lb n="32"/> Μαχεὶρ υἱοῖς Μανασσὴ κατὰ δήμους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>Οὗτοι οὓς κατεκληρονόμησεν
 Μωυσῆς πέραν τοῦ Ἰορδάνου ἐν ἀραβὼθ Μωάβ, ἐν τῷ
 πέραν τοῦ Ἰορδάνου τοῦ κατὰ Ἰερειχὼ ἐπ’ ἀνατολῶν.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="14">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ οὗτοι οἱ κατακληρονομήσαντες υἱῶν Ἰσραὴλ ἐν τῆ γῇ Xανάαν,
 οἷς κατεκληρονόμησεν αὐτοῖς Ἐλεαζὰρ ὁ ἱερεὺς καὶ Ἰησοῦς ὁ τοῦ Ναυὴ
 <lb n="2"/> καὶ οἱ ἄρχοντες πατριῶν φυλῶν τῶν υἱῶν Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>κατὰ
 ἐκληρονόμησαν, ὃν τρόπον ἐνετείλατο Κύριος ἐν χειρὶ Ἰησοῦ ταῖς
 <lb n="3"/> ἐννέα φυλαῖς καὶ τῷ ἡμίσει φυλῆς,</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>ἀπὸ τοῦ πέραν τοῦ Ἰορδάνου
 <lb n="4"/> καὶ τοῖς Λευείταις οὐκ ἔδωκεν κλῆρον ἐν αὐτοῖς,</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>ὅτι ἦσαν οἱ
 Ιωσήφ δύο φυλαὶ Μανασσὴ καὶ Ἐφράιμ· καὶ οὐκ ἐδόθη μερὶς ἐν
 τῇ γῇ τοῖς Λευείταις, ἁλλ’ ἢ πόλεις κατοικεῖν καὶ τὰ ἀφωρισμένα
 <lb n="5"/> αὐτῶν τοῖς κτήνεσιν καὶ τὰ κτήνη αὐτῶν .</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>ὃν τρόπον ἐνετείλατο
 Κύριος τῷ Μωυσῇ, οὕτως ἐποίησαν οἱ υἱοὶ Ἰσραήλ, καὶ ἐμέρισαν
 <lb n="6"/> γῆν.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>Καὶ προσήληθοσαν οἱ υἱοὶ Ἰούδα πρὸς Ἰησοῦν ἐν Γαλγάλ,
 καὶ εἶπεν πρὸς αὐτὸν Χαλέβ ὁ τοῦ Ἰεφοννὴ ὁ Κενεζαῖος Σὺ ἐπίστῃ τὸ
 ῥῆμα ὃ ἐλάλησεν κύριος πρὸς Μωυσῆς ἄνθρωπον τοῦ θεοῦ περὶ ἐμοῦ
 <lb n="7"/> καὶ σοῦ ἐν Καδὴς Βαρνή.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>τεσσεράκοντα γὰρ ἐτῶν ἤμην ὅτε ἀπέστειλέν
 με Μωυσῆς ὁ παῖς τοῦ θεοῦ ἐκ Καδὴς Βαρνὴ κατασκοπεῦσαι τὴν γῆν,
 <lb n="8"/> καὶ ἀπεκρίθην αὐτῷ λόγον κατὰ τὸν νοῦν αὐτοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>οἱ δὲ ἀδελφοί μου
 οἱ ἀναβάντες μετ’ ἐμοῦ μετέστησαν τὴν καρδίαν τοῦ λαοῦ, ἐγὼ δὲ
 <note type="footnote">30 Μαανα] Μαναιμ Α Ι βασίλεια Βασανει] Βασα Α Ι Ιαιρ Α Ι Βασανιτιδι Α <note type="marginal">Α</note>
@@ -2422,41 +2425,41 @@ B b A (item 4) 4 ἀυτῶν] αὐτοῖς Α | om καὶ τὰ κτήνη 
 <pb n="450"/>
 <note type="marginal">B</note> προσέθην ἐπακολουθῆσαι Κυρίῳ τῷ θεῷ μου.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ὤμοσεν Μωυσῆς <lb n="9"/>
 ἐν ἐκείνη τῆ ἡμέρᾳ λέγων Ἡ γῆ ἐφ’ ἢν ἐπέβης σοὶ ἵστα ἐν
 τοῖς τέκνοις σου εἰς τὸν αἰῶνα, ὅτι προσετέθης ἐπακολουθῆσαι ὁπίσω
 κυρίου τοῦ θεοῦ ἡμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ νῦν διέθρεψέν με Κύριος ὃν τρόπον <lb n="10"/>
 εἶπεν τοῦτο τεσσερακοστὸν καὶ πέμπτον ἔτος ἀφ’ οὗ ἐλάλησεν κύριος
 τὸ ῥῆμα τοῦτο πρὸς Μωυσῆν, καὶ ἐπορεύθη Ἰσραὴλ ἐν τῇ ἐρήμῳ· καὶ
 νῦν ἰδοὺ ἐγὼ σήμερον ὀγδοήκοντα καὶ πέντε ἐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>ἔτι εἰμὶ σήμερον <lb n="11"/>
 ἰσχύων ὡσεὶ ὅτε ἀπέστειλέν με Μωυσῆς, ὡσαύτως ἰσχύω νῦν
 καὶ ἐξελθεῖν εἰς τὸν πόλεμον,</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ νῦν αἰτοῦμαί σε τὸ ὄρος τοῦτο, <lb n="12"/>
 καθὰ εἶπεν κύριος τῇ ἡμέρᾳ ἐκείνῃ· ὅτι σὺ ἀκήκοας τὸ ῥῆμα τοῦτο τῇ
 ἐκείνῃ. νυνὶ δὲ οἱ Ἐνακεὶμ ἐκεῖ εἰσιν, πόλεις ὀχυραὶ καὶ
 ἐὰν οὖν κύριος μετ’ ἐμοῦ ᾖ, ἐξολεθρεύσω αὐτοὺς ὃν τρόπον
 Κύριος.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ εὐλόγησεν αὐτὸν Ἰησοῦς, καὶ ἔδωκεν Χεβρὼν <lb n="13"/>
 τῶ Χαλὲβ υἱῷ Ἰεφοννὴ υἱῷ Κενὲζ ἐν κλήρῳ.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>διὰ τοῦτο ἐγενήθη ἡ <lb n="14"/>
 Χεβρὼν τῷ Χαλὲβ τῷ τοῦ Ἰεφοννὴ τοῦ Κενεζαίου ἐν κλήρῳ ἕως
 τῆς ἡμέρας ταύτης, διὰ τὸ αὐτὸν ἐπακολουθῆσαι τῷ προστάτματι
 Τυρίου θεοῦ Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>τὸ δὲ ὄνομα τῆς χεβρὼν ἦν τὸ πρότερον <lb n="15"/>
 πόλις Ἀγρόβ· μητρόπολις τῶν Ἐνακεὶμ αὕτη. καὶ ἡ γῆ ἐκόπασεν
 τοῦ πολέμου.</p>
@@ -2464,23 +2467,23 @@ B b A (item 4) 4 ἀυτῶν] αὐτοῖς Α | om καὶ τὰ κτήνη 
 </div>
 
 <div type="textpart" subtype="chapter" n="15">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ ἐγένετο τὰ ὃρια φυλῆς Ἰούδα κατὰ δήμους αὐτῶν ἀπὸ τῶν <lb n="1"/> 
 ὁρίων τῆς Ἰουδαίας, ἀπὸ τῆς ἐρήμου Σεῖν ἕως καδὴς πρὸς λίβα·</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ <lb n="2"/>
 αὐτῶν τὰ ὅρια ἀπὸ λιβὸς ἕως μέρους τῆς θαλάσσης τῆς
 ἁλυκῆς, ἀπὸ τῆς λοφιᾶς τῆς φερούσης ἐπὶ λίβα·</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ διαπορεύεται <lb n="3"/>
 ἀπέναντι τῆς προσαναβάσεως Ἀκραβείν, καὶ ἐκπεριπορεύεται Ἔννακ,
 καὶ ἀναβαίνει ἐπὶ λιβὸς ἐπὶ Καδὴς Βαρνή, καὶ ἐκπορεύεται ’
 καὶ προσαναβαίνει εἰς Σαράδα, καὶ ἐκπορεύεται τὴν κατὰ
 Καδής,</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ ἐκπορεύεται ἐπὶ Σεληῶναν, καὶ διεκβαλεῖ ἕως φάραγγος <lb n="4"/>
 <note type="marginal">A</note><note type="footnote">8 προσεθην] προσετέθην B ab (superscr τε) Α 9 ἢν] ἦς Α Ι
 προσετέθην Α | ὀπίσω κυρίου του θεοῦ ἤμων] κω τὼ θὼ μου Α 10 10
@@ -2501,59 +2504,59 @@ sup ras A?vid Ι Εννακ] Σεννακ Bab (pr Σ in mg sinistr) Σενα Α 
 Αἰγύπτου, καὶ ἔσται αὐτοῦ ἡ διέξοδος τῶν ὁρίων ἐπὶ τὴν θάλασσαν. <note type="marginal">B</note>
 <lb n="5"/> τοῦτό ἐστιν αὐτῶν ὃρια ἀπὸ λιβός.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ τὰ ὅρια ἀπὸ ἀνατολῶν πᾶσα
 ἡ θάλασσα ἡ ἁλυκὴ ἕως τοῦ Ἰορδάνου. καὶ τὰ ὃρια αὐτῶν ἀπὸ βορρᾶ,
 καὶ ἀπὸ τῆς λοφιᾶς τῆς θαλάσσης καὶ ἀπὸ τοῦ μέρους τοῦ Ἰορδάνου
 <lb n="6"/></p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>ἐπιβαίνει τὰ ὅρια ἐπὶ Βαιθαγλάαμ, καὶ παραπορεύεται ἀπὸ βορρᾶ ἐπὶ
 Βαιθαραβά, καὶ προσαναβαίνει τὰ ὅρια ἐπὶ λίθον Βαίων υἱοῦ Ῥουβήν·
 <lb n="7"/></p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ προσαναβαίνει τὰ ὅρια ἐπὶ τὸ τέταρτον τῆς φάραγγος ’
 καταβαίνει ἐπὶ Τααγάδ, ἥ ἐστιν ἀπέναντι τῆς προσβάσεως᾿ ’
 ἥ ἐστιν κατὰ λίβα τῇ Φάραγγι, καὶ διεκβαλεῖ ἐπὶ τὸ ὕδωρ πηγῆς ἡλίου,
 <lb n="8"/> κα ἔσται αὐτοῦ ἡ διέξοδος πηγὴ Ῥωγήλ.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἀναβαίνει τὰ ὅρια εἰς
 φάραγγα ῾Ονὸμ ἐπὶ νότου τοῦ Ἰεβούς ἀπὸ λιβός, αὕτη ἐστὶν Ἰερουσαλήμ,
 καὶ ἐκβάλλει τὰ ὅρια ἐπὶ κορυφὴν ὄρους ἥ ἐστιν κατὰ πρόσωπον
 φάραγγος ῾Ονὸμ πρὸς θαλάσσης, ἥ ἐστιν ἐκ μέρους γῆς Ραφαεὶν ἐπὶ
 <lb n="9"/> βορρᾶ·</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ διεκβάλλει τὸ ὃριον ἀπὸ κορυφῆς τοῦ ὄρους ἐπὶ πηγὴν
 ὕδατος Μαφθώ, καὶ διεκβάλλει εἰς τὸ ὄρος Ἐφρών, καὶ ἄξει τὸ ὅριον
 <lb n="10"/> Ἰεβάαλ, αὕτη ἐστὶν πόλις Ἰαρείμ·</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ περιελεύσεται ὅριον ἀπὸ Βάαλ
 ἐπὶ θάλασσαν, καὶ παρελεύσεται εἰς ὄρος Ἀσσὰρ ἐπὶ νώτου
 Ἰαρεὶν ἀπὸ βορρᾶ, αὕτη ἐστὶν Χασλών, καὶ καταβήσεται ἐπὶ
 <lb n="11"/> ἡλίου, καὶ παρελεύσεται ἐπὶ λίβα·</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ διεκβαλεῖ τὸ ὅριον κατὰ νώτου
 Ἀκκαρὼν ἐπὶ βορρᾶν, καὶ διεκβαλεῖ τὰ ὅρια εἰς Σοκχώθ, καὶ παρελεύσεται
 ὃρια ἐπὶ λίβα, καὶ διεκβαλεῖ ἑ ’πὶ λέμνα, καὶ ἔσται ἡ διέξοδος
 <lb n="12"/> τῶν ὁρίων ἐπὶ θάλασσαν.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ τὰ ὅρια αὐτῶν ἀπὸ θαλάσσης, ἡ
 θάλασσα ἢ μεγάλη ὁριεῖ. ταῦτα τὰ ὅρια υἱῶν Ἰούδα κύκλῳ κατὰ
 <lb n="13"/> δήμους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>Καὶ τῷ Χαλὲβ υἱῷ Ἰεφοννὴ ἔδωκεν μερίδα ἐν
 μέσῳ υἱῶν Ἰούδα ἀπὸ προστάγματος τοῦ θεοῦ, καὶ ἔδωκεν αὐτῷ
 Ἰησοῦς τὴν πόλιν Ἀρβὸκ μητρόπολιν ᾿Ενάκ, αὕτη ἐστὶν
 <lb n="14"/></p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ ἐξωλέθρευσεν ἐκεῖθεν χαλὲβ υἱὸς Ἰεφοννὴ τοὺς τρεῖς υἱοὺς
 <note type="footnote">4 τοῦτο] ταύτα Α | ὀρία] pr τὰ Α Ι λίβος] νότου Α 5 ἄπο βορρᾶ] ἔπι βορραν Α
 Α 6 Βαιθαγλααμ] Βαιθαλα Α Τ ἔπι 2°] ἄπο Α Ι τὰ Ἀγὰδ B b
@@ -2572,93 +2575,93 @@ om τῆ A? (φαρ sup ras 5 circ litt ut vid) | διεκβάλλει B ab A �
 <pb n="452"/>
 <note type="marginal">B</note> Ἐνάκ, τὸν Σουσεὶ καὶ Θοαλμεὶ καὶ τὸν Ἀχειμά.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ ἀνέβη ἐκεῖθεν <lb n="15"/>
 Χαλὲβ ἐπὶ τοὺς κατοικοῦντας Δαβείρ· τὸ δὲ ὄνομα Δαβεὶρ ἦν τὸ
 πρότερον Πόλις γραμμάτων.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ εἶπεν Χαλέβ Ὅς ἐὰν λάβῃ καὶ <lb n="16"/>
 ἐκκόψῃ τὴν Πόλιν τῶν γραμμάτων καὶ κυριεύσῃ αὐτῆς, δώσω αὐτῷ
 τὴν Ἄσχαν θυγατέρα μου εἰς γυναῖκα.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ ἔλαβεν αὐτὴν Γοθονιὴλ <lb n="17"/>
 υἱὸς Κενὲζ ἀδελφοῦ Χαλέβ· καὶ ἔδωκεν αὐτῷ τὴν Ἄσχαν θυγατέρα
 αὐτοῦ γυναῖκα.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ ἐγένετο ἐν τῷ ἐκπορεύεσθαι αὐτὴν καὶ συνεβουλεύσατο <lb n="18"/>
 αὐτῶ λέγουσα Αἰτήσομαι τὸν πατέρα μου ἀγρόν· καὶ ἐβόησεν
 ἐκ τοῦ ὄνου. καὶ εἶπεν αὐτῇ χαλέβ Τί ἐστίν σοι</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ εἶπεν αὐτῷ <lb n="19"/>
 Δός μοι εὐλογίαν, ὅτι εἰς γῆν Νάγεβ δέδωκάς με· δός μοι τὴν Βοθθανείς.
 καὶ ἔδωκεν αὐτῇ τὴν Γοναιθλὰν τὴν ἄνω καὶ τὴν Γοναιθλὰν τὴν
 κάτω.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>Αὓτη ἡ κληρονομία φυλῆς υἱῶν Ἰούδα.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>Ἐγενή- <lb n="20.21"/>
 θῆσαν δὲ πόλεις αὐτῶν πόλεις πρὸς τῇ φυλῇ υἱῶν, Ἰούδα ἐφ᾿ ὁρίων
 Ἐδὼμ ἐπὶ τῆς ἐρήμου, καιβισελεὴλ καὶ Ἄρα καὶ Ἀσὼρ</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ Ἰκὰμ <lb n="22"/>
 καὶ Ῥεγμὰ καὶ Ἀρουὴλ</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ κάδης κα Ἀσοριωνάιν καὶ Μαινὰμ <lb n="23"/>
 </p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ Βαλμαινὰν καὶ αἱ κῶμαι αὐτῶν,</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ αἱ πόλεις Ἁσερών <lb n="24.25"/>
 αὕτη Ἁσώρ,</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ Σὴν καὶ Σαλμάα καὶ Μωλαδὰ</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ Σερεὶ καὶ <lb n="26.27"/>
 Βαιφάλαδ</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ Χολασεωλὰ καὶ Βηρσάβεε καὶ αἱ κῶμα,ι αὐτῶν καὶ αἳ <lb n="28"/>
 ἐπαύλεις αὐτῶν,</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>Βαλὰ καὶ Βακὼκ καὶ Ἄσομ</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ Ἐλβωυδὰδ καὶ <lb n="29.30"/>
 Βαιθὴλ καὶ Ἑρμὰ</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>καὶ Σεκελὰκ καὶ Μαχαρεὶμ καὶ Σεθεννὰκ <lb n="31"/>
 </p></div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>καἰ Λαβὼς καὶ Σαλὴ καὶ Ἐρωμώθ, πόλεις κθ΄ καὶ αἱ κῶμαι <lb n="32"/>
 αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>Ἐν τῇ πεδινῇ Ἀσταὼλ καὶ Ῥαὰ καὶ Ἄσσα</p></div>
 
-<div type="textpart" subtype="section" n="34">
+<div type="textpart" subtype="verse" n="34">
 <p>καὶ <lb n="33.34"/>
 Ῥαμὲν καὶ Τανὼ καὶ Ἰλουθὼθ καὶ Μαιανεὶ</p></div>
 
-<div type="textpart" subtype="section" n="35">
+<div type="textpart" subtype="verse" n="35">
 <p>καὶ Ἰλουθὼθ καὶ Ὀδολλὰμ <lb n="35"/>
 καὶ Μεμβρὰ καὶ Σαωχὼ καὶ Ἰαζηκὰ</p></div>
 
-<div type="textpart" subtype="section" n="36">
+<div type="textpart" subtype="verse" n="36">
 <p>καὶ Σακαρεὶμ καὶ Γαδηρὰ καὶ αἱ <lb n="36"/>
 <note type="marginal">A</note> <note type="footnote">14 Σουσαι Α ! Θοαλμει] ’τον Θαλμαι Α | Αχιμα Α 15 om τὸ ’δε
 μὰ Δαβειρ Α | τὸ προτ. ἢν Α 16 ἔαν] ἀν’ Α | om καὶ εκκοψη Α
@@ -2682,97 +2685,97 @@ superscr N Α1)· | καὶ Σωχω· κα Αζηκα· και</note>
 <pb n="453"/>
 <lb n="37"/> ἐπαύλεις αὐτῆς, πόλεις δέκα τέσσαρες καὶ αἱ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="37">
+<div type="textpart" subtype="verse" n="37">
 <p>Σεννὰ καὶ <note type="marginal">B</note>
 <lb n="38.39"/> Ἀδασὰν καὶ Μαγαδὰ Γὰδ</p></div>
 
-<div type="textpart" subtype="section" n="38">
+<div type="textpart" subtype="verse" n="38">
 <p>καὶ Δαλὰλ καὶ Μασφὰ καὶ Ἰακαρεὴλ</p></div>
 
-<div type="textpart" subtype="section" n="39">
+<div type="textpart" subtype="verse" n="39">
 <p>καὶ
 <lb n="40"/> Μαχὴς καὶ Βασηδὼθ καὶ Ἰδεαδαλεὰ</p></div>
 
-<div type="textpart" subtype="section" n="40">
+<div type="textpart" subtype="verse" n="40">
 <p>καὶ Χαβρὰ καὶ Μαχὲς καὶ
 <lb n="41"/> Μααχὼς</p></div>
 
-<div type="textpart" subtype="section" n="41">
+<div type="textpart" subtype="verse" n="41">
 <p>καὶ καὶ Γεδδὼρ καὶ Βαγαδιὴλ καὶ Νωμᾶν καὶ Μακηδάν,
 <lb n="42.43"/> δέκα αἱ καὶ αἱ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="42">
+<div type="textpart" subtype="verse" n="42">
 <p>Λεμνὰ κα Ἴθακ καὶ Ἀνὼχ</p></div>
 
-<div type="textpart" subtype="section" n="43">
+<div type="textpart" subtype="verse" n="43">
 <p>καὶ Ἰανὰ
 <lb n="44"/> καὶ Νασεὶβ</p></div>
 
-<div type="textpart" subtype="section" n="44">
+<div type="textpart" subtype="verse" n="44">
 <p>καὶ Κεειλὰμ καὶ Ἀκιεζεὶ καὶ Κεζεὶβ καὶ Βαθησὰρ καὶ
 <lb n="45"/> Αἰλών, πόλεις δέκα καὶ αἱ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="45">
+<div type="textpart" subtype="verse" n="45">
 <p>Ἀκκαρὼν καὶ αἱ κῶμαι
 <lb n="46"/> αὐτῆς καὶ αἱ ἐπαύλεις αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="46">
+<div type="textpart" subtype="verse" n="46">
 <p>ἀπὸ Ἀκκαρὼν Γέμνα· καὶ πᾶσαι ὃσαι
 <lb n="47"/> εἰσὶν πλησίον Ἀσηδὼθ καὶ αἱ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="47">
+<div type="textpart" subtype="verse" n="47">
 <p>Ἀσειεδὼθ καὶ αἱ κῶμαι
 αὐτῆς καὶ αἱ ἐπαύλεις αὐτῆς· Γάζα καὶ αἱ κῶμαι αὐτῆς καὶ αἱ ἐπαύλεις
 αὐτῆς ἕως τοῦ χειμάρρου Αἰγύπτου· καὶ ἡ θάλασσα ἡ μεγάλη
 <lb n="48.49"/> διορίζει.</p></div>
 
-<div type="textpart" subtype="section" n="48">
+<div type="textpart" subtype="verse" n="48">
 <p>Καὶ ἐν τῇ ὀρεινῇ Σαμεὶρ καὶ Ἰεθὲρ καὶ Σωχὰ</p></div>
 
-<div type="textpart" subtype="section" n="49">
+<div type="textpart" subtype="verse" n="49">
 <p>καὶ
 <lb n="50"/> Ῥεννὰ καὶ Πόλις γραμμάτων, αὕτη Δαβείρ,</p></div>
 
-<div type="textpart" subtype="section" n="50">
+<div type="textpart" subtype="verse" n="50">
 <p>καὶ Ἀνὼν καὶ Ἐσκαι-
 <lb n="51"/> μὰν καὶ Αἰσὰμ</p></div>
 
-<div type="textpart" subtype="section" n="51">
+<div type="textpart" subtype="verse" n="51">
 <p>καὶ Γόσομ καὶ Χαλοὺ καὶ Χαννά, πόλεις ἕνδεκα
 <lb n="52.53"/> καὶ αἱ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="52">
+<div type="textpart" subtype="verse" n="52">
 <p>Αἰρὲμ καὶ Ῥεμνὰ καὶ Σομὰ</p></div>
 
-<div type="textpart" subtype="section" n="53">
+<div type="textpart" subtype="verse" n="53">
 <p>καὶ Ἰεμάειν καὶ
 <lb n="54"/> Βαιθαχοὺ καὶ Φακουὰ</p></div>
 
-<div type="textpart" subtype="section" n="54">
+<div type="textpart" subtype="verse" n="54">
 <p>καὶ Εὑμὰ καὶ πόλις Ἀρβόκ, αὕτη ἐστὶν Χεβρών,
 <lb n="55"/> καὶ Σώρθ, πόλεις ἐννέα καὶ αἱ ἐπαύλεις αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="55">
+<div type="textpart" subtype="verse" n="55">
 <p>Μαὼρ καὶ Χερμὲλ
 <lb n="56.57"/> καὶ Ὀζεὶβ καὶ</p></div>
 
-<div type="textpart" subtype="section" n="56">
+<div type="textpart" subtype="verse" n="56">
 <p>καὶ Ἰαριὴλ καὶ Ἰαρεικὰμ καὶ Ζακανάειμ</p></div>
 
-<div type="textpart" subtype="section" n="57">
+<div type="textpart" subtype="verse" n="57">
 <p>καὶ
 <lb n="58"/> Γαβαὰ καὶ Θαμναθά, πόλεις ἐννέα καὶ αἱ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="58">
+<div type="textpart" subtype="verse" n="58">
 <p>Ἁλουὰ καὶ
 <lb n="59"/> Βαιθσοὺρ καὶ Γεδδὼν</p></div>
 
-<div type="textpart" subtype="section" n="59">
+<div type="textpart" subtype="verse" n="59">
 <p>καὶ Μαγαρὼθ καὶ Βαιθανὰμ καὶ Θεκούμ, πόλεις
  ἓξ καὶ αἱ κῶμαι αὐτῶν·</p>
 </div>
 
-<div type="textpart" subtype="section" n="59a">
+<div type="textpart" subtype="verse" n="59a">
 <p>Θεκὼ καὶ Ἐφράθα, αὕτη ἐστὶν
 καὶ Φαγὼρ καὶ Αἰτὰν καὶ Κουλὸν καὶ Τατὰμ καὶ Ἐωβὴς καὶ Καρὲμ
 Γαλὲμ καὶ Θεθὴρ καὶ Μανοχώ, πόλεις ἕνδεκα καὶ αἱ κῶμαι αὐτ’
@@ -2799,19 +2802,19 @@ om ἀυτῶν Α 47 om Ασειεδωθ καὶ αἰ κώμαι Α 48 — 51
 <pb n="454"/>
 <note type="marginal">Β</note></p></div>
 
-<div type="textpart" subtype="section" n="60">
+<div type="textpart" subtype="verse" n="60">
 <p>καριαθβάαλ, αὕτη ἡ πόλις Ἰαρείμ, καὶ Σωθηβά, πόλεις δύο κα αἳ <lb n="60"/>
 ἐπαύλεις αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="61">
+<div type="textpart" subtype="verse" n="61">
 <p>καὶ Βαδδαργεὶς καὶ Θαραβαὰμ καὶ Αἰνὼν</p></div>
 
-<div type="textpart" subtype="section" n="62">
+<div type="textpart" subtype="verse" n="62">
 <p>καὶ <lb n="61.62"/>
 Αἰχιοδὰ <milestone unit="altref" n="62"/> καὶ Ναφλαζὼν καὶ αἱ πόλεις Σάδωμ καὶ Ἀκνάδης, πόλεις
 ἑπτὰ καὶ αἱ κῶμαι αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="63">
+<div type="textpart" subtype="verse" n="63">
 <p>Καὶ ὁ Ἰεβουσαῖος κατῴκει ἐν Ἰερουσαλήμ, <lb n="63"/>
 καὶ οὐκ ἠδυνάσθησαν οἱ υἱοὶ Ἰούδα ἀπολέσαι αὐτούς· καὶ
 κατῴκησαν οἱ Ἰεβουσαῖοι ἐν Ἰερουσαλὴμ ἕως τῆς ἡμέρας ἐκείνης.</p>
@@ -2819,52 +2822,52 @@ om ἀυτῶν Α 47 om Ασειεδωθ καὶ αἰ κώμαι Α 48 — 51
 </div>
 
 <div type="textpart" subtype="chapter" n="16">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ ἐγένετο τὰ ὅρια υἱῶν Ἰωσὴφ ἀπὸ τοῦ Ἰορδάνου τοῦ κατὰ <lb n="1"/> 
 Ἰερειχὼ ἀπ’ ἀνατολῶν, καὶ ἀναβήσεται ἀπὸ Ἰερειχὼ εἰς τὴν ὀρεινὴν
 τὴν ἔρημον εἰς Βαιθὴλ Λοῦζα,</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ ἐξελεύσεται εἰς Βαιθήλ, κα παρελεύσεται <lb n="2"/>
 ἐπὶ τὰ ὅρια τοῦ Χαταρωθεί,</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ διελεύσεται ἐπὶ τὴν θάλασσαν <lb n="3"/>
 ἐπὶ τὰ ὅρια Ἁπταλεὶμ ἕως τῶν ὁρίων Βαιθωρὼν τὴν κάτω,
 κοὶ ἱστᾶι ἡ διέξοδος αὐτῶν ἐπὶ τὴν θάλασσαν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ ἐκληρονόμησαν <lb n="4"/>
 οἱ υἱοὶ Ἰωσήφ, Ἐφράιμ καὶ Μανασσή.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>Καὶ ἐγενήθη ὅρια υἱῶν <lb n="5"/>
 Ἐφράιμ κατὰ δήμους αὐτῶν· καὶ ἐγενήθη τὰ ὅρια τῆς κληρονομίας
 αὐτῶν ἀπὸ ἀνατολῶν Ἀσταρὼθ καὶ Ἐρὸκ ἕως Βαιθωρὼν τὴν
 καὶ Γαζαρά.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ; ἐλεύσεται τὰ ὅρια ἐπὶ τὴν θάλασσαν εἰς <lb n="6"/>
 Ἱκασμὼν ἀπὸ βορρᾶ Θέρμα. περιελεύσεται εἰς ἀνατολὰς εἰς Θηνασὰ
 καὶ Σελλησά, καὶ παρελεύσεται ἀπ’ ἀνατολῶν εἰς Ἰανῶκα</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ εἰς <lb n="7"/>
 Μαχῶ καὶ Ἀσταρώθ, καὶ αἱ κῶμαι αὐτῶν· καὶ ἐλεύσεται ἐπὶ Ἰερειχώ,
 καὶ διεκβαλεῖ ἐπὶ τὸν Ἰορδάνην.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἀπὸ Τάφου πορεύσεται τὰ <lb n="8"/>
 ὅρια ἐπὶ θάλασσαν ἐπὶ Χελκανά, καὶ ἔσται ἡ διέξοδος αὐτῶν ἐπὶ
 θάλασσαν· αὕτη ἡ κληρονομία φυλῆς Ἐφράιμ κατὰ δήμους
 </p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ αἱ πόλεις αἱ ἀφορισθεῖσαι τοῖς υἱοῖς Ἐφράιμ ἀνὰ μέσον τῆς <lb n="9"/>
 κληρονομίας υἱῶν Μανασσή, πᾶσαι αἱ πόλεις καὶ αἱ κῶμα αὐτῶν;
 </p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ οὐκ ἀπώλεσεν Ἐφράιμ τὸν Χαναναῖον τὸν κατοικοῦντα ἐν <lb n="10"/>
 Γάζερ· καὶ κατῴκει ὁ Χαναναῖος ἐν τῶ Ἐφράιμ ἕως τῆς ἡμέρας
 <note type="marginal">Α</note> <note type="footnote">60 η πόλις Ιαρειμ] πόλις Ιαριμ Α | Σωθηβα] Αρεββα Α 61 om καὶ 10
@@ -2893,24 +2896,24 @@ om ἀυτῶν Α 47 om Ασειεδωθ καὶ αἰ κώμαι Α 48 — 51
 </div></div>
 
 <div type="textpart" subtype="chapter" n="17">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> καὶ ἐγένετο τὰ ὅρια φυλῆς υἱῶν Μανασσή, ὅτι οὗτος
 τῷ Ἰωσήφ· τῷ Μαχεὶρ πρωτοτόκῳ Μανασσὴ πατρὶ Γαλαάδ, ἀνὴρ
 <lb n="2"/> γὰρ πολεμιστὴς ἦν, ἐν τῇ Γαλααδείτιδι καὶ ἐν τῇ Βασανείτιδι.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ
 ἐγενήθη τοῖς υἱοῖς Μανασσὴ τοῖς λοιποῖς κατὰ δήμους αὐτῶν, τοῖς
 υἱοῖς ᾿Ιέζει καὶ τοῖς υἱοῖς Κέλεζ καὶ τοῖς υἱοῖς Ἰεζειὴλ κοὶ τοῖς
 Σύχεμ καὶ τοῖς υἱοῖς Συμαρεὶμ καὶ τοῖς υἱοῖς Ὃφερ· οὗτοι οἱ ἄρσενες
 <lb n="3"/> κατὰ δήμους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ τῷ Σαλπαὰδ υἱῷ Ὃφερ. οὐκ ἦσαν αὐτῷ
 υἱοὶ ἀλλ’ ἢ θυγατέρες· καὶ ταῦτα τὰ ὀνόματα τῶν θυγατέρων Σαλπαάδ·
 <lb n="4"/> Μααλὰ καὶ Νουὰ καὶ Ἑγλὰ καὶ Μελχὰ καὶ Θερσά.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ
 ἔστησαν ἐναντίον Ἐλεαζὰρ τοῦ ἱερέως καὶ ἐναντίον Ἰησοῦ καὶ
 ἐναντίον τῶν ἀρχόντων λέγουσαι ῾Ο θεὸς ἐνετείλατο διὰ χειρὸς
@@ -2918,26 +2921,26 @@ om ἀυτῶν Α 47 om Ασειεδωθ καὶ αἰ κώμαι Α 48 — 51
 κα ἐδόθη αὐταῖς διὰ προστάγματος Κυρίου κλῆρος ἐν τοῖς ἀδελφοῖς
 <lb n="5"/> τοῦ πατρὸς αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἔπεσεν ὁ σχοινισμὸς αὐτῶν ἀπὸ Ἀνασσά,
 <lb n="6"/> καὶ πεδίον Λαβὲκ ἐκ τῆς Γαλαὰδ ἥ ἐστιν πέραν τοῦ Ἰορδάνου·</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>ὅτι
 θυγατέρες υἱῶν Μανασσὴ ἐκληρονόμησαν κλῆρον ἐν μέσῳ τῶν ἀδελφῶν
 αὐτῶν. ἡ δὲ γῆ Γαλαὰδ ἐγενήθη τοῖς υἱοῖς Μανασσὴ τοῖς καταλελιμμένοις.
 <lb n="7"/></p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ ἐγενήθη δρία υἱῶν Μανασσὴ Δηλανάθ, ἤ
 κατὰ πρόσωπον υἱῶν Ἀνάθ, καὶ πορεύεται ἐπὶ τὰ ὃρια ἐπὶ ῾
 <lb n="8"/> καὶ Ἰασσεὶβ ἐπὶ πηγὴν Θαφθώθ·</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>τῷ Μανασσὴ ἔσται,
 <lb n="9"/> ἐπὶ τῶν ὁρίων Μανασσὴ τοῖς υἱοῖς Ἐφράιμ.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ καταβήσεται τὰ
 ὅρια ἐπὶ Φάραγγα κάρανά ἐπὶ λίβα κατὰ Φάραγγα Ἰαριήλ, τερέμινθος
 μινθος τῷ Ἐφράιμ ἀνὰ μέσον πόλεως Μανασσή. καὶ ὅρια Μανασσὴ
@@ -2958,50 +2961,50 @@ inferius B? | τῆς] γῆς Α | Γαλααδ] sup ras Α α? + καὶ τῆ
 <pb n="456"/>
 <note type="marginal">B</note> θάλασσα</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>ἀπὸ λιβὸς τῷ Ἐφράιμ, καὶ <lb n="10"/>
 ἱστᾶι ἡ θάλασσα ὅρια αὐτοῖς· καὶ ἐπὶ Ἰασὴβ συνάψουσιν ἐπὶ
 βορρᾶν, καὶ τῷ Ἰσσαχὰρ ὄπ’ ἀνατολῶν.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἔσται Μανασση <lb n="11"/>
 ἐν Ἰσσαχὰρ καὶ ἐν Ἀσὴρ Καιθοὰν καὶ αἱ κῶμαι αὐτῶν, κα τοὺς
 κατοικοῦντας Δῶρ’ καὶ τὰς κώμας αὐτῆς, καὶ τοὺς κατοικοῦντας Μαγεδδὼ
 καὶ τὰς κώμας αὐτῆς, καὶ τὸ τρίτον τῆς Μαφετὰ καὶ τὰς κώμας
 αὐτῆς.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ οὐκ ἠδυνάσθησαν οἱ υἱοὶ Μανασσὴ ἐξολεθρεῦσαι τὰς <lb n="12"/>
 πόλεις ταύτας. καὶ ἤρχετο ὁ Χαναναῖος κατοικεῖν ἐν τῇ γῇ ταύτῃ.
 </p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ ἐγενήθη καὶ ἐπεὶ κατίσχυσαν οἱ υἱοὶ Ἰσραὴλ, καὶ ἐποίησαν <lb n="13"/>
 τοὺς Χαναναίους ὑπηκόους, ἐξολεθρεῦσαι δὲ αὐτοὺς οὐκ ἐξωλέθρευσαν.
 </p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>᾿Αντεῖπαν δὲ οἱ υἱοὶ Ἰωσὴφ τῷ Ἰησοῦ λέγοντες Διὰ τί <lb n="14"/>
 μᾶς κλῆρον ἔνα καὶ σχοίνισμα ἓν ; ἐγὼ δὲ λαὸς
 εἰμι, καὶ ὁ θεὸς εὐλόγησέν με.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ εἶπεν αὐτοῖς Ἰησοῦς <lb n="15"/>
 Εἰ λαὸς πολὺς εἰ, ἀνάβηθι εἰς τὸν δρυμὸν καὶ ἐκκάθαρον σεαυτῷ,
 εἰ στενοχωρεῖ σε τὸ ὄρος τὸ Ἐφράιμ.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ εἶπαν Οὐκ ἀρέσκει <lb n="16"/>
 τὸ ὄρος τὸ Εφράιμ· καὶ ἳππος ἐπίλεκτος καὶ σίδηρος τῷ
 τῶ κατοικοῦντι ἐν αὐτῶ ἐν Βαιθαισὰν καὶ ἐν ταῖς κώμαις
 , ἐν τῇ κοιλάδι ᾿Ισραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ εἶπεν Ἰησοῦς τοῖς υἱοῖς Ἰωσήφ <lb n="17"/>
 Εἰ λαὸς πολὺς εἶ καὶ ἰσχὺν μεγάλην ἔχεις, οὐκ ἔσται σοι κλῆρος
 εἷς.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>ὁ γὰρ δρυμὸς ἔσται σοι, ὃτι δρυμός ἐστιν, καὶ ἐκκαθαριεῖς <lb n="18"/>
 αὐτόν, καὶ ἰᾶται σοι. καὶ ὅταν ἐξολεθρεύσῃς τὸν Χαναναῖον, ὅτι
 ἵππος ἐπίλεκτός ἐστιν αὐτῷ· σὺ γὰρ ὑπερισχύεις αὐτοῦ.</p>
@@ -3009,20 +3012,20 @@ inferius B? | τῆς] γῆς Α | Γαλααδ] sup ras Α α? + καὶ τῆ
 </div>
 
 <div type="textpart" subtype="chapter" n="18">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> καὶ ἐξεκκλησιάσθη πᾶσα συναγωγὴ υἱῶν Ἰσραὴλ εἰς Σηλώ, κα 
 ἔπηξαν ἐκεῖ τὴν σκηνὴν τοῦ μαρτυρίου, καὶ ἡ γῆ ἐκρατήθη ὑπ’ αὐτῶν·
 </p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ κατελείφθησαν οἱ υἱοὶ Ἰσραὴλ οἳ οὐκ ἐκληρονόμησαν, ἑπτὰ φυλαί. <lb n="2"/>
 </p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ εἶπεν Ἰησοῦς τοῖς υἱοῖς Ἰσραὴλ Ἓως τίνος ἐκλυθήσεσθε κληροἣν <lb n="3"/>
 ἔδωκεν κύριος ὁ θεὸς ἡμῶν ;</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>δότε ἐξ ὑμῶν <lb n="4"/>
 <note type="marginal">A</note> <note type="footnote">9 om θάλασσα A 10 post λίβος ras 2 litt A? | Μανασση] pr τὼ
 ἦρ Α | απ] ἄπο Α 11 καιθοαν B*b] Βαιθσαν B a mg Α | Δῶρ’]
@@ -3044,56 +3047,56 @@ Bab (περσχυεις B*)] ὑπερισχύσεις Α | αὐτοῦ] αὐ
 διαγραψάτωσαν αὐτὴν ἐναντίον μου καθὰ δεήσει διελθεῖν αὐτήν. κοὶ
 <lb n="5"/> διήλθοσαν πρὸς αὐτόν,</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ διεῖλεν αὐτοῖς ἑπτὰ μερίδας.
 στήσεται αὐτοῖς ὅριον ἀπὸ λιβός, καὶ οἱ υἱοὶ Ἰωσὴφ στήσονται
 <lb n="6"/> ἀπὸ βορρᾶ.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>ὑμεῖς δὲ μερίσατε τὴν γῆν ἑπτὰ μερίδας καὶ
 πρὸς μὲ ὧδε, καὶ ἐξοίσω ὑμῖν κλῆρον ἔναντι κυρίου τοῦ θεοῦ ἡμῶν.
 <lb n="7"/></p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>οὐ γάρ ἐστιν μερὶς τοῖς υἱοῖς Λευεὶ ἐν ὑμῖν, ἱερατεία γὰρ κυρίου
 αὐτοῦ· καὶ Γὰδ καὶ Ῥουβὴν καὶ τὸ ἥμισυ φυλῆς
 τὴν κληρονομίαν αὐτῶν πέραν τοῦ Ἰορδάνου ἐπ’ ἁ
 <lb n="8"/> ἣν ἔδωκεν αὐτοῖς Μωυσῆς ὁ παῖς κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἀναστάντες οἱ
 ἐπορεύθησαν. καὶ ἐνετείλατο Ἰησοῦς τοῖς ἀνδράσιν τοῖς πορευομένοις
 χωροβατῆσαι τὴν γῆν λέγων Πορεύεσθε καὶ χωροβατήσατε
 τὴν γῆν, καὶ παραγενήθητε πρὸς μέ· καὶ ὧδε ἐξοίσω ὑμῖν κλῆρον
 <lb n="9"/> ἔναντι κυρίου ἐν Σληώ.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἐπορεύθησαν καὶ ἐχωροβάτησαν τὴν
 γῆν, καὶ ἴδοσαν αὐτήν, καὶ ἔγραψαν αὐτὴν κατὰ πόλεις ἑπτὰ μερίδας
 <lb n="10"/> εἰς βιβλίον, καὶ ἤνεγκαν πρὸς Ἰησοῦν.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ ἐνέβαλεν αὐτοῖς Ἰησοῦς
 <lb n="11"/> κλῆρον ἐν Σηλὼ ἔναντι κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἐξῆλθεν ὁ κηῆρ
 πρῶτος κατὰ δήμους αὐτῶν· καὶ ἐξῆλθεν ὃρια τοῦ κλήρου
 <lb n="12"/> ἀνὰ μέσον Ἰούδα καὶ ἀνὰ μέσον τῶν υἱῶν Ἰωσήφ.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ ἐγενήθη
 αὐτῶν τὰ ὅρια ἀπὸ βορρᾶ· ἀπὸ τοῦ Ἰορδάνου προσαναβήσεται τὰ
 ὅρια κατὰ νώτου Ἰερειχὼ ἀπὸ βορρᾶ, καὶ ἀναβήσεται ἐπὶ τὸ ὄρος
 ἐπὶ τὴν θάλασσαν, καὶ ἔσται αὐτοῦ ἡ διέξοδος Μαβδαρεῖτις Βαιθών·
 <lb n="13"/></p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ διελεύσεται ἐκεῖθεν τὰ δρία Λοῦζα ἐπὶ νώτου Λοῦζα ἀπὸ λιβὸς
 αὐτῆς, αὕτη ἐστὶν Βαιθήλ· καὶ καταβήσεται τὰ ὅρια Μααταρωθορὲχ
 <lb n="14"/> ἐπὶ τὴν ὀρεινήν, ἥ ἐστιν πρὸς λίβα Βαιθωρών, ἡ κάτω·</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ διελεύσεται
 τὰ ὅρια καὶ παρελεύσεται ἐπὶ τὸ ὄρος τὸ βλέπον παρὰ θάλασσαν
 ἀπὸ λιβός, ἀπὸ τοῦ ὄρους ἐπὶ πρόσωπον Βαιθωρὼν λίβα, κοὶ ἔσται
@@ -3114,66 +3117,66 @@ Aa? | Μαννασση sup ras Aa? | ἀυτῶν] ἑαυτῶν B ab | ἀνα
 <pb n="458"/>
 <note type="marginal">Β</note> υἱῶν Ἰούδα· τοῦτό ἐστιν τὸ μέρος τὸ πρὸς θάλασσαν</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ μέρος <lb n="15"/>
 τὸ πρὸς λίβα ἀπό μέρους Καριαθβάαλ· καὶ διελεύσεται ὅρια εἰς
 Γασεἱν, ἐπὶ πηγὴν ὕδατος Ναφθώ·</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ καταβήσεται τὰ ὅρια ἐπὶ <lb n="16"/>
 μέρους, τοῦτό ἐστιν κατὰ πρόσωπον νάπης Σοννάμ, ὅ ἐστιν ἐκ μέρους
 Ἐμεκραφαεὶν ἀπὸ βορρᾶ· καὶ καταβήσεται Γαίεννα ἐπὶ νότον
 Ἰεβουσαὶ ἀπὸ λιβός, καταβήσεται ἐπὶ πηγὴν Ῥωγήλ·</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ διελεύσεται <lb n="17"/>
 ἐπὶ πηγὴν Βαιθσάμυς, καὶ παρελεύσεται ἐπὶ Γαλιαώθ, ἥ
 ἀπέναντι πρὸς ἀνάβασιν Αἰθαμείν, καὶ καταβήσεται ἐπὶ λίθον
 υἱῶν Ῥουβήν·</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ διελεύσεται κατὰ νώτου Βαιθαραβὰ ἀπὸ βορρᾶ, <lb n="18"/>
 καὶ καταβήσεται</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>ἐπὶ τὰ ὅρια ἐπὶ νῶτον θάλασσαν ἀπὸ βορρᾶ· καὶ <lb n="19"/>
 ἔσται ἡ διέξοδος τῶν ὁρίων ἐπὶ λοφιὰν τῆς θαλάσσης τῶν ἁλῶν
 ἑ ’πὶ βορρᾶν εἰς μέρος τοῦ Ἰορδάνου ἀπὸ λιβός· ταῦτα τὰ ἅ ἐστιν
 ἀπὸ λιβός.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ ὁ Ἰορδάνης ὁριεῖ ἀπὸ μέρους ἀνατολῶν. αὕτη <lb n="20"/>
 ἡ κληρονομία υἱῶν Βενειαμείν, τὰ ὅρια αὐτῆς κύκλῳ κατὰ δήμους.
 </p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ ἐγενήθησαν αἱ πόλεις τῶν υἱῶν Βενιαμέὶν κατὰ δήμους αὐτῶν <lb n="21"/>
 Ἰερειχὼ καὶ Βεθεγαιὼ καὶ Ἀμεκασεὶς</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ Βαιθαβαρὰ καὶ Σάρα <lb n="22"/>
 καὶ Βησανὰ</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ Αἰεὶν καὶ Φάρα καὶ Ἰεφραθὰ</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ Καραφὰ καὶ <lb n="23"/>
 Κεφειρὰ καὶ Μονεὶ καὶ Γάβαα, πόλεις δέκα δύο καὶ αἱ κῶμαι αὐτῶν·
 </p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>Γαβαὼν καὶ Ῥαμὰ καὶ Βεηρωθὰ</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ Μασσημὰ καὶ Μειρὼν καὶ <lb n="25.26"/>
 Ἁμωκὴ</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ Φειρὰ καί Καφὰν καὶ Νακὰν καὶ Σεληκὰν καὶ Θαρεηλὰ <lb n="27"/>
 </p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ Ἰεβούς, αὕτη ἐστὶν Ἰερουσαλήμ, καὶ πόλεις καὶ Γαβαωθιαρείμ, <lb n="28"/>
 πόλεις τρεῖς καὶ δέκα καὶ αἱ κῶμαι αὐτῶν. αὕτη ἡ κληρονομία υἱῶν
 Βενιαμεὶν κατὰ δήμους αὐτῶν.</p>
@@ -3181,15 +3184,15 @@ Aa? | Μαννασση sup ras Aa? | ἀυτῶν] ἑαυτῶν B ab | ἀνα
 </div>
 
 <div type="textpart" subtype="chapter" n="19">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ ἐξῆλθεν ὁ δεύτερος κλῆρος τῶν υἱῶν Συμεών· καὶ ἐγενήθη <lb n="1"/> 
 ἡ κληρονομία αὐτῶν ἀνὰ μέσον κλήρων υἱῶν Ἰούδα.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ ἐγενήθη ὁ <lb n="2"/>
 κλῆρος αὐτῶν Βηρσάβεε καὶ Σάμαα καὶ Κωλαδὰμ</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ Ἁρσωλὰ <lb n="3"/>
 <note type="marginal">Α</note> <note type="footnote">15 ὀρία] pr τὰ Α | Γασειν ] Γαῖν Α 16 μέρους] + του ὄρους Α | τουτο] ο Α |
 Σονναμ] υἱοῦ Ἔννομ’ Α | Εμεκραφαειμ Α | Γαιεννα] ἔπι Γᾶι Οννομ Α |
@@ -3210,79 +3213,79 @@ XIX 1 ο δεύτερος κληρος] ο κλ. ο δεῦτ’. Α | τῶν 
 <pb n="459"/>
 <lb n="4.5"/> καὶ βωλὰ καὶ Ἰάσον</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ Ἐλθουλὰ καὶ βουλὰ καὶ Ἑρμᾶ</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ Σικελὰκ <note type="marginal">Β</note>
 <lb n="6"/> καὶ Βαιθμαχερὲβ καὶ Σαρσουσεὶν</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ Βαθαρὼθ καὶ οἱ ἀγροὶ
 <lb n="7"/> ἀυτῶν, πόλεις οεκα τρεῖς καὶ αἰ κῶμαι αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>Ἐρεμμὼν καὶ Θαλχὰ
 <lb n="8"/> καὶ Ἰέθερ καὶ Ἀσάν, πόλεις τέσσαρες καὶ αἱ κῶμαι αὐτῶν</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>κυκλῳ
 τῶν πόλεων αὐτῶν ἕως Βαρὲκ πορευομένων Βάμεθ κατὰ λίβα· αὕτη ἡ
 <lb n="9"/> κληρονομία φυλῆς υἱῶν Συμεὼν κατὰ δήμους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>ἀπὸ τοῦ κλήρου
 ἡ κληρονομία φυλῆς υἱῶν Συμεὼν, ὅτι ἐγενήθη ἡ μερὶς υἱῶν
 μείζων τῆς αὐτῶν· καὶ ἐκληρονόμησαν οἱ υἱοὶ Συμεὼν ἐν μέσῳ
 τοῦ κλήρου αὐτῶν.</p>
 <lb n="10"/> </div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>Καὶ ἐξῆλθεν ὁ κλῆρος ὁ τρίτος τῷ Ζαβουλὼν κατὰ δήμους αὐτῶν.
 ἔσται τὰ ὃρια τῆς κληρονομίας αὐτῶν Ἐσεδεδκηωλά. ὅρια αὐτῶν
 <lb n="11"/></p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>ἡ θάλασσα καὶ Μαραγελδά, καὶ συνάψει ἐπὶ Βαιθαραβὰ εἰς τὴν
 <lb n="12"/> Φάραγγα, ἥ ἐστιν κατὰ πρόσωπον Ἰεκμάν·</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ ἀνέστρεψεν ἀπὸ
 Σεδδοὺκ ἐξ ἐναντίας ἀπ’ ἀνατολῶν Βαιθσάμυς ἐπὶ τὰ ὅρια Χασελωθαίθ,
 καὶ διελεύσεται ἐπὶ Δαβειρώθ, καὶ προσαναβήσεται ἐπὶ Φαγγαί·
 
 <lb n="13"/></p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ ἐκεῖθεν περιελεύσεται ἐξ ἐναντίας ἐπ’ ἀνατολὰς ἐπὶ Γεβερέ,
 ἐπὶ πόλιν Κατασέμ, καὶ διελεύσεται ἐπὶ Ῥεμμωνὰ Ἁμαθὰρ Ἁοζά·
 <lb n="14"/></p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ περιελεύσεται ὅρια ἐπὶ βορρᾶν ἐπὶ Ἁμώθ, καὶ ἔσται ἡ διέξοδος
 <lb n="15"/> αὐτῶν ἐπὶ Γαιφαὴλ</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ Κατανὰθ καὶ Ναβαὰλ καὶ Συμοὼν καὶ
 <lb n="16"/> Ἰερειχὼ καὶ Βαιθμάν.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>αὔτη ἡ κληρονομία φυλῆς υἱῶν Ζαβουλὼν
 κατὰ δήμους αὐτῶν, πόλεις καὶ αἱ κῶμαι αὐτῶν.
 <lb n="17"/></p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>Καὶ τῷ Ἰσσαχὰρ ἐξῆλθεν ὁ κλῆρος ὁ τέταρτος.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ ἐγενήθη
 <lb n="19"/> τὰ ὅρια αὐτῶν Ἰαζὴλ καὶ Χασαλὼθ καὶ Σουνὰν</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ Ἁγεὶν
 <lb n="20"/> Σιωνὰ καὶ Ῥεηρὼθ καὶ Ἀναχερὲθ</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ Δαβειρὼν καὶ Κεισὼν καὶ
 <note type="footnote">λαμ per ras B b)...Βαθαρωθ] Σαβεε· καὶ Μωλαδα·| καὶ Σερσουλα· καὶ
 και| Βελβωλα· καὶ Ασομ· καὶ Ελθουδαδ·| καὶ Ἑρμᾶ· καὶ
@@ -3306,79 +3309,79 @@ B a (vid) mg)...και Βηρσαφης] Ιεζραελ· καὶ Αχασε|λ�
 <pb n="460"/>
 <note type="marginal">Β</note> Ῥέβες</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ Ῥέμμας καὶ Ἰεὼν καὶ Τομμὰν καὶ Αἰμαρὲκ καὶ Βηρσαφής. <lb n="21"/>
 </p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ συνάψει τὰ δρία ἐπὶ Γαιθβὼρ καὶ ἐπὶ Σαλεὶμ κατὰ <lb n="22"/>
 θάλασσαν καὶ Βαιθσάμυς· καὶ ἔσται αὐτοῦ ἡ διέξοδος τῶν ὁρίων ὁ
 Ἰορδάνης.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>αὕτη ἡ κληρονομία φυλῆς υἱῶν Ἰσσαχὰρ κατὰ δήμους <lb n="23"/>
 αὐτῶν, οἱ πόλεις καὶ αἱ κῶμαι αὐτῶν.</p>
 </div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>Καὶ ἐξῆλθεν ὁ κλῆρος ὁ πέμπτος Ἀσήρ.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ ἐγενήθη τὰ δρία <lb n="24.25"/>
 ἐξ Ἑλεκὲθ καὶ Ἁλὲφ καὶ Βαίθοκ καὶ Κεὰφ</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ Ἐλειμέλεκ καὶ <lb n="26"/>
 καὶ Μαασά· καὶ συνάψει τῷ Καρμήλῳ κατὰ θάλασσαν καὶ
 τῷ Σειὼν καὶ Λαβανάθ.</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ ἐπιστρέψει ἀπ’ ἀνατολῶν ἡλίου καὶ <lb n="27"/>
 Βαιθεγενέθ, καὶ συνάψει τῷ Ζαβουλὼν καὶ ἐκ Γοῖ καὶ Φθαιὴλ κατὰ
 βορρᾶν, καὶ εἰσελεύσεται ὃρια Σαφθαιβαιθμὲ καὶ Ἰναήλ, καὶ διελεύεται
 εἰς Χωβαβασομὲλ</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ Ἐλβὼν καὶ Ῥαὰβ καὶ Ἑμεμαὼν καὶ <lb n="28"/>
 Κανθὰν ἕως Σ·ιδῶνος τῆς μεγάλης·</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>καὶ ἀναστρέψει τὰ ὅρια εἰς Ῥαμὰ <lb n="29"/>
 καὶ ἕως πηγῆς Μασφασσὰτ καὶ τῶν Τυρίων· καὶ ἀναστρέψει τὰ ὅρια
 ἐπὶ Ἰασείφ, καὶ ἔσται ἡ διέξοδος αὐτοῦ ἡ θάλασσα καὶ ἀπὸ Λὲβ
 καὶ Ἐχοζὸβ</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ Ἀρχώβ καὶ Ἀφὲκ καὶ Ῥααύ.</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>αὓτη ἡ κληρονομία <lb n="30.31"/>
 φυλῆς υἱῶν Ἀσὴρ κατὰ δήμους αὐτῶν, πόλεις καὶ αἱ κῶμαι αὐτῶν.</p>
 </div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>Καὶ τῷ Νεφθαλεὶ ἐξῆλθεν ὁ κλῆρος ὁ ἕκτος.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>καὶ ἐγενήθη <lb n="32.33"/>
 τὰ ὅρια οὕτων Μοολὰμ καὶ Μωλὰ καὶ Βεσεμιεὶν καὶ Ἀρμὲ καὶ Νάβωκ
 καὶ Ἰεφθαμαὶ ἕως Δωδάμ· καὶ ἐγενήθησαν αἱ διέξοδοι αὐτοῦ ὁ Ἰορδάνης.
 </p></div>
 
-<div type="textpart" subtype="section" n="34">
+<div type="textpart" subtype="verse" n="34">
 <p>καὶ ἐπιστρέφει τὰ ὅρια ἐπὶ θάλασσαν Ἐνὰθ Θαβώρ, καὶ <lb n="34"/>
 διελεύσεται ἐκεῖθεν ῾Ιακᾶνα, καὶ συνάψει τῷ Ζαβουλὼν ἀπὸ
 καὶ Ἀσὴρ συνάψει κατὰ θάλασσαν, καὶ ὁ Ἰορδάνης ἀπ’ ἀνατολῶν
 ἡλίου.</p></div>
 
-<div type="textpart" subtype="section" n="35">
+<div type="textpart" subtype="verse" n="35">
 <p>καὶ αἱ πόλεις τειχήρεις τῶν Τυρίων, Τύρος καὶ Ὡμαθά, <lb n="35"/>
 Δακὲθ καὶ Κενέρεθ·</p></div>
 
-<div type="textpart" subtype="section" n="36">
+<div type="textpart" subtype="verse" n="36">
 <p>καὶ Ἀρμαὶθ καὶ Ἁραὴλ καὶ Ἁσὼρ</p></div>
 
-<div type="textpart" subtype="section" n="37">
+<div type="textpart" subtype="verse" n="37">
 <p>καὶ κάδες <lb n="36.37"/>
 <note type="marginal">Α</note> <note type="footnote">Αεμε· | και Ραμαθ· καὶ Ηνγταννιμ· | καὶ Ηναδδα· καὶ Βαιθφασηε· Α 22 Γαιθβωρ]
 Θαφωθ Α | Σαλειμ] Σασειμαθ Α | Βαιθσαμυς] Βαιθσμας Α | om
@@ -3401,68 +3404,68 @@ om κα 3° Α | Ιασειφ] Σοῦσα Α | Λεβ] του σχοινίσμ
 <pb n="461"/>
 <lb n="38"/> καὶ Ἀσσαρέι κοὶ πηγὴ Ἁσὸρ</p></div>
 
-<div type="textpart" subtype="section" n="38">
+<div type="textpart" subtype="verse" n="38">
 <p>καὶ κερωὲ καὶ Μεγαλά, ῾Αρεὶμ καὶ <note type="marginal">B</note>
 <lb n="39"/> Βαιθθαμὲ καὶ Θεσσάμυς.</p></div>
 
-<div type="textpart" subtype="section" n="39">
+<div type="textpart" subtype="verse" n="39">
 <p>αὕτη ἡ κληρονομία φυλῆς υἱῶν Νεφθαλεί.</p>
 <lb n="40.41"/> </div>
 
-<div type="textpart" subtype="section" n="40">
+<div type="textpart" subtype="verse" n="40">
 <p>Καὶ τῷ Δὰν ἐξῆλθεν ὁ κλῆρος ὁ ἕβδομος.</p></div>
 
-<div type="textpart" subtype="section" n="41">
+<div type="textpart" subtype="verse" n="41">
 <p>καὶ ἐγενήθη τὰ ὅρια
 <lb n="42"/> αὐτῶν Σαρὰθ καὶ Ἀσά, πόλεις Σάμμαυς,</p></div>
 
-<div type="textpart" subtype="section" n="42">
+<div type="textpart" subtype="verse" n="42">
 <p>καὶ Σαλαβεὶν καὶ Ἀμμὼν
 <lb n="43.44"/> καὶ Σειλαθὰ</p></div>
 
-<div type="textpart" subtype="section" n="43">
+<div type="textpart" subtype="verse" n="43">
 <p>καὶ Αἰλὼν καὶ Θαμνᾶθα καὶ Ἀκκαρὼν</p></div>
 
-<div type="textpart" subtype="section" n="44">
+<div type="textpart" subtype="verse" n="44">
 <p>καὶ Ἀλκαθὰ
 <lb n="45"/> καὶ Βεγεθὼν καὶ Γεβεελὰν</p></div>
 
-<div type="textpart" subtype="section" n="45">
+<div type="textpart" subtype="verse" n="45">
 <p>καὶ Ἁζὼρ καὶ Βαναιβακὰτ καὶ Γεθρεμμών,
 <lb n="46.48"/>μών,</p></div>
 
-<div type="textpart" subtype="section" n="46">
+<div type="textpart" subtype="verse" n="46">
 <p>καὶ ἀπὸ θαλάσσης Ἰερακὼν ὅριον πλησίον Ἰόππης.  </p></div>
 
-<div type="textpart" subtype="section" n="48"><p>αὕτη
+<div type="textpart" subtype="verse" n="48"><p>αὕτη
 ἡ κληρονομία φυλῆς υἱῶν Δὰν κατὰ δήμους αὐτῶν, αἱ πόλεις αὐτῶν
 <lb n="48a"/> καὶ αἱ κῶμαι αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="48a"><p> καὶ οὐκ ἐξέθλιψαν οἱ υἱοὶ Δὰν τὸν Ἀμορραῖον
+<div type="textpart" subtype="verse" n="48a"><p> καὶ οὐκ ἐξέθλιψαν οἱ υἱοὶ Δὰν τὸν Ἀμορραῖον
 τὸν θλίβοντα αὐτοὺς ἐν τῷ ὄρει· καὶ οὐκ εἴων αὐτοὺς οἱ
 Ἀμορραῖοι καταβῆναι εἰς τὴν κοιλάδα, καὶ ἔθλιψαν ἀπ’ αὐτῶν
 <lb n="47"/> τὸ ὅριον τῆς μερίδος αὐτῶν. </p></div>
 
-<div type="textpart" subtype="section" n="47"><p> καὶ ἐπορεύθησαν οἱ υἱοὶ Ἰούδα καὶ
+<div type="textpart" subtype="verse" n="47"><p> καὶ ἐπορεύθησαν οἱ υἱοὶ Ἰούδα καὶ
 ἐπολέμησαν τὴν Λαχείς, καὶ κατελάβοντο αὐτὴν καὶ ἐπάταξαν αὐτὴν
 ἐν στόματι μαχαίρας, καὶ κατῴκησαν αὐτὴν καὶ ἐκάλεσαν τὸ
 <lb n="47a"/> ὄνομα αὐτῆς Λασεννδάκ. </p></div>
 
-<div type="textpart" subtype="section" n="47a"><p> καὶ ὁ Ἀμορραῖος ὑπέμεινεν τοῦ
+<div type="textpart" subtype="verse" n="47a"><p> καὶ ὁ Ἀμορραῖος ὑπέμεινεν τοῦ
 κατοικεῖν ἐν Ἐλὼμ καὶ ἐν Σαλαμείν· καὶ ἐβαρύνθη ἡ χεὶρ τοῦ
 <lb n="49"/> Ἐφράιμ ἐπ’ αὐτούς, καὶ ἐγένοντο αὐτοῖς εἰς φόρον. </p></div>
 
-<div type="textpart" subtype="section" n="49"><p>Καὶ
+<div type="textpart" subtype="verse" n="49"><p>Καὶ
 ἐπορεύθησαν ἐμβατεῦσαι τὴν γῆν κατὰ τὸ ὅριον αὐτῶν. καὶ ἔδωκαν
 <lb n="50"/> οἱ υἱοὶ Ἰσραὴλ κλῆρον Ἰησοῖ τῷ υἱῷ Ναυὴ ἐν αὐτοῖς</p></div>
 
-<div type="textpart" subtype="section" n="50">
+<div type="textpart" subtype="verse" n="50">
 <p>διὰ προστάγματος
 τοῦ θεοῦ· καὶ ἔδωκαν αὐτῷ τὴν πόλιν ἣν ᾐτήσατο Θαμαρἥ
 ἐστιν ἐν τῷ ὄρει Ἐφράιμ· καὶ ᾠκοδόμησεν τὴν
 <lb n="51"/> καὶ κατῴκει ἐν αὐτῇ.</p></div>
 
-<div type="textpart" subtype="section" n="51">
+<div type="textpart" subtype="verse" n="51">
 <p>Αὗται αἱ διαιρέσεις ἃς κατεκληρονόμησεν
 Ἐλεαζὰρ ὁ ἱερεὺς καὶ Ἰησοῦς ὁ τοῦ Ναυὴ καὶ οἱ ἄρχοντες
 τῶν πατριῶν ἐν ταῖς φυλαῖς Ἰσραὴλ κατὰ κλήρους ἐν ἐναντίον ἐναντίον
@@ -3471,10 +3474,10 @@ om κα 3° Α | Ιασειφ] Σοῦσα Α | Λεβ] του σχοινίσμ
 </div></div>
 
 <div type="textpart" subtype="chapter" n="20">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p>Καἰ ἐλάλησεν κύριος τῷ Ἰησοῖ λέγων</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>Λάλησον τοῖς υἱοῖς Ἴσραὴλ
 λέγων Δότε τὰς πόλεις τῶν φυγαδευτηρίων ἃς εἶπα πρὸς ὑμᾶς διὰ
 <note type="footnote">Ασωρ· καὶ Κεδες | καὶ Εδραει· καὶ πηγὴ Ασορ· και | Ιαριων· καὶ Μαγδαλιη <note type="marginal">Α</note>
@@ -3492,52 +3495,52 @@ om τῶν Α | Ισραηλ] pr του Α | ἔναντι Α | του κυρι�
 <pb n="462"/>
 <note type="marginal">B</note> Μωυσῆ.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>φυγαδευτήριον τῷ πατάξαντι ψυχὴν ἀκουσίως· <lb n="3"/>
 καὶ ἔσονται ὑμῖν αἱ πόλεις φυγαδευτήριον, καὶ οὐκ ἀποθανεῖται ὁ
 Φονευτὴς ὑπὸ τοῦ ἀγχιστεύοντος τὸ αἷμα, ἕως ἂν καταστῇ ἐναντίον
 τῆς συναγωγῆς εἰς κρίσιν. </p></div>
 
-<div type="textpart" subtype="section" n="7"><p>καὶ διέστειλεν τὴν Κάδης ἐν τῇ Γαλειλαίᾳ <lb n="7"/>
+<div type="textpart" subtype="verse" n="7"><p>καὶ διέστειλεν τὴν Κάδης ἐν τῇ Γαλειλαίᾳ <lb n="7"/>
 ἐν τῷ ὄρει τῷ Νεφθαλεί, καὶ Συχὲμ ἐν τῷ ὄρει τῷ Εφράιμ,
 καὶ τὴν πόλιν Ἀρβόκ, αὕτη ἐστὶν χεβρὼν ἐν τῷ ὄρει τῷ Ἰούδᾳ.
 </p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἐν τῷ πέραν τοῦ Ἰορδάνου ἔδωκεν Βόσορ ἐν τῇ ἐρήμῳ ἐν τῷ <lb n="8"/>
 πεδίῳ ἀπὸ τῆς φυλῆς Ῥουβήν, καὶ Ἀρημὼθ ἐν τῇ Γαλαὰδ ἐκ τῆς
 φυλῆς Γάδ, καὶ τὴν Γαυλῶν ἐν τῇ Βασανείτιδι ἐκ τῆς φυλῆς Μανασσή.
 </p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>αὗται αἱ πόλεις αἱ ἐπίκλητοι τοῖς υἱοῖς Ἰσραὴλ καὶ τῷ προσηλύτῳ τῷ <lb n="9"/>
 προσκειμένῳ ἐν αὐτοῖς, καταφυγεῖν ἐκεῖ παντὶ παίοντι ψυχὴν ἀκουκαταστῇ
 ἔναντι τῆς συναγωγῆς εἰς κρίσιν.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="21">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ προσήλθοσαν οἱ ἀρχιπατριῶται τῶν υἱῶν Λευεὶ πρὸς Ἐλέα· <lb n="1"/> 
 ζὰρ τὸν ἱερέα καὶ Ἰησοῦν τὸν τοῦ Ναυὴ κοὶ πρὸς τοὺς ἀρχιφύλους
 πατριῶν ἐκ τῶν φυλῶν Ἰσραὴλ,</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ εἶπον πρὸς αὐτοὺς ἐν Σηλὼ <lb n="2"/>
 ἐν γῇ Χανάαν λέγοντες Ἐνετείλατο κύριος ἐν χειρὶ Μωυσῆ δοῦναι
 ἡμῖν πόλεις κατοικεῖν καὶ τὰ περισπόρια τοῖς κτήνεσιν ἡμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ <lb n="3"/>
 ἔδωκαν οἱ ὑῶί Ἰσραὴλ τοῖς Λευείταις ἐν τῷ κατακληρονομεῖν διὰ
 προστάγματος κυρίου τὰς πόλεις καὶ τὰ περισπόρια αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ <lb n="4"/>
 ἐξῆλθεν ὁ κλῆρος τῷ δήμῳ Καάθ, καὶ ἐγένετο τοῖς υἱοῖς Ἀαρὼν τοῖς
 ἱερεῦσιν τοῖς Λευείταις ἀπὸ φυλῆς Ἰούδα καὶ ἀπὸ φυλῆς Συμεὼν
 καὶ ἀπὸ φυλῆς Βενιαμεὶν κληρωτεὶ πόλεις ιγ΄.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ τοῖς υἱοῖς <lb n="5"/>
 Καὰθ τοῖς καταλελιμμένοις ἐκ τῆς φυλῆς Ἐφράιμ καὶ ἐκ τῆς φυλῆς
 <note type="marginal">Α</note> <note type="footnote">ΧΧ 3 παταζαντι ψυχην ἀκουσίως] τι ψυχην α sup ras A a? | ὕπο] ἄπο
@@ -3563,73 +3566,73 @@ om τῶν Α | Ισραηλ] pr του Α | ἔναντι Α | του κυρι�
 Δὰν καὶ ἀπὸ τοῦ ἡμίσους φυλῆς Μανασσὴ κληρωτεὶ πόλεις δέκα. <note type="marginal">Β</note>
 <lb n="6"/></p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ τοῖς υἱοῖς Γεδσὼν ἀπὸ τῆς φυλῆς Ἰσσαχὰρ καὶ ἀπὸ τῆς φυλῆς
 Ἀσὴρ καὶ ἀπὸ τῆς φυλῆς Νεφθαλεὶ καὶ ἀπὸ τοῦ ἡμίσους φυλῆς
 <lb n="7"/> Μανασσὴ ἐν τῷ βασᾶν πόλεις δέκα τρεῖς·</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ ἐν τοῖς υἱοῖς Μεραρεὶ
 κατὰ δήμους αὐτῶν ἀπὸ φυλῆς Ῥουβὴν καὶ ἀπὸ φυλῆς Γάδ καὶ
 <lb n="8"/> ἀπὸ φυλῆς Ζαβουλὼν κληρωτεὶ πόλεις δώδεκα.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἔδωκαν οἱ
 υἱοὶ Ἰσραὴλ τοῖς Λευείταις τὰς πόλεις καὶ τὰ περισπόρια αὐτῶν ὃν
 <lb n="9"/> τρόπον ἐνετείλατο κύριος τῷ Μωυσῇ κληρωτεί.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἔδωκεν ἡ φυλὴ
 υἱῶν Ἰούδα καὶ ἡ φυλὴ υἱῶν Συμεὼν καὶ ἀπὸ τῆς φυλῆς υἱῶν
 <lb n="10"/> Βενιαμεὶν τὰς πόλεις ταύτας· καὶ ἐπεκλήθησαν</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>τοῖς υἱοῖς Ἀαρὼν
 ἀπὸ τοῦ δήμου τοῦ Καὰθ τῶν υἱῶν Λευεί, ὃτι τοῦτο ἐγενήθη ὁ κλῆρος.
 <lb n="11"/></p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἔδωκεν αὐτοῖς τὴν καραθαρβὸκ μητρόπολιν τῶν Ἐνάκ, αὕτη
 <lb n="12"/> ἐστὶν χεβρὼν ἐν τῷ ὄρει Ἰούδα· τὰ δὲ περισπόρια κύκλῳ αὐτῆς</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ
 τοὺς ἀγροὺς τῆς πόλεως καὶ τὰς κώμας αὐτῆς ἔδωκεν Ἰησοῦς τοῖς
 <lb n="13"/> υἱοῖς Χαλὲβ υἱοῦ Ἰεφοννὴ ἐν κατασχέσει.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ τοῖς υἱοῖς Ἀαρὼν
 ἔδωκεν τὴν πόλιν φυγαδευτήριον τῷ φονεύσαντι, τὴν Χεβρὼν καὶ
 τὰ ἀφωρισμένα τὰ σὺν αὐτῇ, καὶ τὴν λέμνα καὶ τὰ
 <lb n="14"/> τὰ πρὸς αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ τὴν Αἰλὼμ καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ
 <lb n="15"/> Τεμὰ καὶ τὰ ἀφωρισμένα αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ τὴν Γελλὰ καὶ τὰ ἁ
 <lb n="16"/> αὐτῇ, καὶ τὴν Δαβεὶρ καὶ τὰ ἀφωρισμένα αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ Ἄσα καὶ τὰ
 ἀφωρισμένα αὐτῇ, καὶ Τανὺ καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Βαιθσάμυς
 καὶ τὰ ἀφωρισμένα αὐτῇ· πόλεις ἐννέα παρὰ τῶν δύο φυλῶν τούτων.
 <lb n="17"/></p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>καὶ παρὰ τῆς φυλῆς Βενιαμεὶν τὴν Γαβαὼν καὶ τὰ ἀφωρισμένα
 <lb n="18"/> αὐτῇ, καὶ Γάθεθ καὶ τὰ ἀφωρισμένα αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ Ἀναθὼθ καὶ τὰ
 ρισμένα αὐτῇ, καὶ Γαμαλὰ καὶ τὰ ἀφωρισμένα αὐτῇ, πόλεις τέσσαρες.
 <lb n="19.20"/></p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>πᾶσαι αἱ πόλεις υἱῶν Ἀαρὼν τῶν ἱερέων δέκα τρεῖς.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>καὶ τοῖς
 <note type="footnote">5 ἡμίσους] ημισεις Α 6 Γεδσων ] Γε|δεων Β* (Γεδ|σων B ab) Γησωρ Α| <note type="marginal">A</note>
 i ἄπο τῆς φυ|λης Ασηρ κα ἄπο της| φῦ
@@ -3652,59 +3655,59 @@ pr τὰ πρὸς Α 16 Ασα] Λίν’ Α | ἀυτὴ 1°] pr τὰ πρ�
 Καὰθ, καὶ ἐγενήθη πόλις τῶν ἱερέων αὐτῶν ἀπὸ φυλῆς Ἐφράιμ·
 </p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ ἔδωκαν αὐτοῖς τὴν πόλιν τοῦ Φυγαδευτηρίου τὴν τοῦ Φονεύσαντος, <lb n="21"/>
 τὴν Συχὲμ καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Γαζαρὰ καὶ τὰ πρὸς
 αὐτὴν καὶ τὰ ἀφωρισμένα αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ Βαιθωρὼν κοὶ τὰ ἀφωρισμένα <lb n="22"/>
 αὐτῇ, πόλεις τέσσαρες.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ ἐκ τῆς φυλῆς Δὰν τὴν Ἐλκωθάιμ <lb n="23"/>
 καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ τὴν Γεθεδὰν καὶ τὰ ἀφωρισμένα αὐτῇ,
 </p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ Αἰλὼν καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Γεθερεμμὼν καὶ τὰ ἀφωρισμένα <lb n="24"/>
 αὐτῇ, πόλεις τέσσαρες.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ ἀπὸ τοῦ ἡμίσους φυλῆς <lb n="25"/>
 Τανὰχ καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ τὴν Ἰεβαθὰ καὶ
 αὐτῇ, πόλεις δύο.</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>πᾶσαι πόλεις δέκα καὶ τὰ ἀφωαὐτῇ <lb n="26"/>
 τὰ πρὸς αὐταῖς τοῖς δήμοις υἱῶν Καὰθ τοῖς ὑπολελιμ -
 </p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ τοῖς υἱοῖς Γεδσὼν τοῖς Λευείταις ἐκ τοῦ ἡμίσους φυλῆς <lb n="27"/>
 ἡ τὰς πόλεις τὰς ἀφωρισμένας τοῖς φονεύσασι, τὴν Γαυλῶν
 ἐν τῇ Βασανείτιδι καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ τὴν βοσορὰν καὶ
 τὰ ἀφωρισμένα αὐτῇ, πόλεις δύο.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ ἐκ τῆς φυλῆς Ἰσσαχὰρ <lb n="28"/>
 τὴν Κεισὼν καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Δεββὰ καὶ τὰ
 αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>καὶ τὴν Ῥεμμὰθ καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Πηγὴν γραμμάτων <lb n="29"/>
 καὶ τὰ ἀφωρισμένα αὐτῇ, πόλεις τέσσαρες.</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ ἐκ τῆς <lb n="30"/>
 φυλῆς Ἀσὴρ τὴν Βασελλὰν καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Δαββὼν
 καὶ τὰ ἀφωρισμένα αὐτῇ,</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>καὶ Χελκὰτ καὶ τὰ ἀφωρισμένα αὐτῇ, <lb n="31"/>
 καὶ Ραὰβ καὶ τὰ ἀφωρισμένα αὐτῇ, πόλεις τέσσαρες.</p></div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>καὶ ἐκ τῆς <lb n="32"/>
 Νεφθαλεὶ τὴν πόλιν τὴν ἀφωρισμένην τῷ φονεύσαντι, τὴν
 ἐν τῇ Γαλειλαίᾳ καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ τὴν Νεμμὰθ
@@ -3731,69 +3734,69 @@ pr τὰ πρὸς Α | Γεθερεμμων] τὴν Γεθρεμμων Α | �
 καὶ τὰ ἀφωρισμένα αὐτῇ, καὶ Θεμμὼν καὶ τὰ ἀφωρισμένα αὐτῇ, <note type="marginal">B</note>
 <lb n="33"/> πόλεις τρεῖς.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>πᾶσαι αἱ πόλεις τοῦ Γεδσὼν κατὰ δήμους
 <lb n="34"/> πόλεις δέκα τρεῖς.</p></div>
 
-<div type="textpart" subtype="section" n="34">
+<div type="textpart" subtype="verse" n="34">
 <p>καὶ τῷ δήμῳ υἱῶν Μεραρεὶ τοῖς Λευείταις τοῖς
 λοιποῖς ἐκ τῆς φυλῆς Ζαβουλὼν τὴν Μαὰν καὶ τὰ περισπόρια αὐτῆς,
 <lb n="35"/> καὶ τὴν Κάδης καὶ τὰ περισπόρια αὐτῆς,</p></div>
 
-<div type="textpart" subtype="section" n="35">
+<div type="textpart" subtype="verse" n="35">
 <p>καὶ Σέλλα καὶ τὰ περισπόρια
 <lb n="36"/> αὐτῆς, πόλεις τρεῖς.</p></div>
 
-<div type="textpart" subtype="section" n="36">
+<div type="textpart" subtype="verse" n="36">
 <p>καὶ πέραν τοῦ Ἰορδάνου τοῦ κατὰ
 ἐκ τῆς φυλῆς Ῥουβὴν τήν πόλιν τὸ φυγαδευτήριον τοῦ
 φονεύσαντος, τὴν Βόσορ ἐν τῇ ἐρήμῳ, τὴν Μεισὼ καὶ τὰ περισπόρια
 <lb n="37"/> αὐτῆς, <milestone unit="altref" n="37"/> καὶ τὴν Ἰαζὴρ καὶ τὰ περισπόρια αὐτῆς,</p></div>
 
-<div type="textpart" subtype="section" n="37">
+<div type="textpart" subtype="verse" n="37">
 <p>καὶ τὴν
 Δεκμὼν καὶ τὰ περισπόρια αὐτῆς, καὶ τὴν Μαφὰ καὶ τὰ περισπόρια
 <lb n="36"/> <lb n="38"/> αὐτῆς, πόλεις τέσσαρες.</p></div>
 
-<div type="textpart" subtype="section" n="38">
+<div type="textpart" subtype="verse" n="38">
 <p>καὶ ἀπὸ τῆς φυλῆς Γάδ τὴν
 τὸ φυγαδευτήριον τοῦ φονεύσαντος, καὶ τὴν Ῥαμὼθ ἐν τῇ Γαλαὰδ
 καὶ τὰ περισπόρια αὐτῆς, τὴν Καμέιν καὶ τὰ περισπόρια αὐτῆς,
 <lb n="37"/> <lb n="39"/></p></div>
 
-<div type="textpart" subtype="section" n="39">
+<div type="textpart" subtype="verse" n="39">
 <p>καὶ τὴν Ἑσβὼγ καὶ τὰ περισπόρια αὐτῆς, καὶ τὴν Ἰαζὴρ καὶ τὰ
 <lb n="38"/> <lb n="40"/> περισπόρια αὐτῆς· αἱ πᾶσαι πόλεις τέσσαρες.</p></div>
 
-<div type="textpart" subtype="section" n="40">
+<div type="textpart" subtype="verse" n="40">
 <p>πᾶσαι πόλεις τοῖς
 υἱοῖς Μεραρεὶ κατὰ δήμους αὐτῶν τῶν καταλελιμμένων ἀπὸ τῆς
 <lb n="39"/> <lb n="41"/> φυλῆς Λευεί· καὶ ἐγενήθη τὰ ὅρια αἱ πόλεις δέκα δύο.</p></div>
 
-<div type="textpart" subtype="section" n="41">
+<div type="textpart" subtype="verse" n="41">
 <p>πᾶσα πόλις
 τῶν Λευειτῶν ἐν μέσῳ κατασχέσεως υἱῶν Ἰσραὴλ τεσσεράκοντα
 <lb n="40"/> <lb n="42"/> ὀκτὼ πόλεις, καὶ τὰ περισπόρια αὐτῶν</p></div>
 
-<div type="textpart" subtype="section" n="42">
+<div type="textpart" subtype="verse" n="42">
 <p>κύκλῳ τῶν πόλεων τούτων·
 πόλις καὶ τὰ περισπόρια κύκλῳ τῆς πόλεως πάσαις ταῖς πόλεσιν
 <lb n="42a"/> ταύταις.</p></div>
 
-<div type="textpart" subtype="section" n="42a">
+<div type="textpart" subtype="verse" n="42a">
 <p>και συνετέλεσεν Ἰησοῦς διαμερίσας τὴν γῆν ἐν τοῖς
 <lb n="42b"/> ὁρίοις αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="42b">
+<div type="textpart" subtype="verse" n="42b">
 <p>καὶ ἔδωκαν οἱ υἱοὶ Ἰσραὴλ μερίδα τῷ Ἰησοῖ κατὰ
 πρόσταγμα κυρίου· ἔδωκαν αὐτῷ τὴν πόλιν ἢν ᾐτήσατο· τὴν Θαμ’.
 <lb n="42c"/> νασάραχ ἔδωκαν αὐτῷ ἐν τῷ ὄρει Ἐφράιμ. </p></div>
 
-<div type="textpart" subtype="section" n="42c">
+<div type="textpart" subtype="verse" n="42c">
 <p>καὶ ᾠκοδόμησεν
 <lb n="42d"/> Ἰησοῦς τὴν πόλιν καὶ ᾤκησεν ἐν αὐτῇ· </p></div>
 
-<div type="textpart" subtype="section" n="42d">
+<div type="textpart" subtype="verse" n="42d">
 <p>καὶ ἔλαβεν Ἰησοῦς τὰς
 μαχαίρας τὰς πετρίνας, ἐν αἷς περιέτεμεν τοὺς υἱούς Ἰσραὴλ τοὺς γενομένους
 ἐν τῇ ὁδῷ ἐν τῇ ἐρήμῳ, καὶ ἔθηκεν αὐτὰς ἐν Θαμνασαχαράθ.</p>
@@ -3815,18 +3818,18 @@ Ba ? b vid)] τὴν Νοεμμων Α | ἀυτὴ 3°] pr τὰ πρὸς Α 3
 <pb n="466"/>
 <note type="marginal">B</note> </div>
 
-<div type="textpart" subtype="section" n="43">
+<div type="textpart" subtype="verse" n="43">
 <p>καὶ Καὶ ἔδωκεν κύριος τῷ Ἰσραὴλ πᾶσαν τὴν γῆν ἢν ὤμοσεν <lb n="43"/> <lb n="41"/>
 δοῦναι τοῖς πατράσιν αὐτῶν, καὶ κατεκληρονόμησαν αὐτὴν κα
 κατῴκησαν ἐν αὐτῇ.</p></div>
 
-<div type="textpart" subtype="section" n="44">
+<div type="textpart" subtype="verse" n="44">
 <p>καὶ κατέπαυσεν αὐτοὺς κύριος κυκλόθεν, <lb n="44"/> <lb n="42"/>
 καθότι ὤμοσεν τοῖς πατράσιν αὐτῶν· οὐκ ἀνέστη οὐθεὶς κατενώπιον
 αὐτῶν ἀπὸ πάντων τῶν ἐχθρῶν αὐτῶν· πάντας τοὺς ἐχθροὺς
 αὐτῶν παρέδωκεν κύριος εἰς τὰς χεῖρας αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="45">
+<div type="textpart" subtype="verse" n="45">
 <p>οὐ διέπεσεν <lb n="45"/> <lb n="43"/>
 ἀπὸ πάντων τῶν ῥημάτων τῶν καλῶν ὧν ἐλάλησεν κύριος τοῖς
 υἱοῖς Ἰσραήλ· πάντα παρεγένετο.</p>
@@ -3834,28 +3837,28 @@ Ba ? b vid)] τὴν Νοεμμων Α | ἀυτὴ 3°] pr τὰ πρὸς Α 3
 </div>
 
 <div type="textpart" subtype="chapter" n="22">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Τότε συνεκάλεσεν Ἰησοῦς τοὺς υἱοὺς Ῥουβὴν καὶ τοὺς υἱοὺς Γὰδ <lb n="1"/> 
 καὶ τὸ ἥμισυ φυλῆς Μανασσή,</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ εἶπεν αὐτοῖς Ὑμεῖς ἀκηκόατε <lb n="2"/>
 πάντα ὅσα ἐνετείλατο ὑμῖν Μωυσῆς ὁ παῖς κυρίου, καὶ ἐπηκούσατε
 τῆς φωνῆς μου κατὰ πάντα ὅσα ἐνετείλατο ὑμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>οὐκ ἐνκαταλελοίπατε <lb n="3"/>
 τοὺς ἀδελφοὺς ὑμῶν ταύτας τὰς ἡμέρας πλείους· ἕως τῆς σήμερον
 ἡμέρας ἐφυλάξασθε τὴν ἐντολὴν κυρίου τοῦ θεοῦ ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>νῦν δὲ <lb n="4"/>
 κατέπαυσεν κύριος ὁ θεὸς ἡμῶν τοὺς ἀδελφοὺς ἡμῶν, ὃν τρόπον .
 αὐτοῖς. νῦν οὖν ἀποστραφέντες ἀπέλθατε εἰς τοὺς οἴκους
 καὶ εἰς τὴν γῆν τῆς κατασχέσεως ὑμῶν, ἢν ἔδωκεν ὑμὶν
 Μωυσῆς ἐν τῷ πέραν τοῦ Ἰορδάνου.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>ἀλλὰ φυλάξασθε ποιεῖν <lb n="5"/>
 σφόδρα τὰς ἐντολὰς καὶ τὸν νόμον ὃν ἐνετείλατο ἡμῖν ποιεῖν Μωυσῆς
 ὁ παῖς Τυρίου, ἀγαπᾷν Κύριον τὸν θεὸν ἡμῶν, πορεύεσθαι πάσαις
@@ -3863,18 +3866,18 @@ Ba ? b vid)] τὴν Νοεμμων Α | ἀυτὴ 3°] pr τὰ πρὸς Α 3
 αὐτῷ, καὶ λατρεύειν αὐτῷ ἐξ ὃλης τῆς διανοίας ὑμῶν κα ἐξ ὅλης
 τῆς ψυχῆς ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>καὶ ηὐλόγησεν αὐτοὺς Ἰησοῦς, καὶ ἐξαπέστειλεν <lb n="6"/>
 αὐτούς. καὶ ἐπορεύθησαν εἰς τοὺς οἴκους αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>Καὶ τῷ <lb n="7"/>
 ἡμίσει φυλῆς Μανασσὴ ἔδωκεν Μωυσῆς ἐν τῇ Βασαείτιδι, καὶ τῷ
 ἡμίσει ἔδωκεν Ἰησοῦς μετὰ τῶν ἀδελφῶν αὐτοῦ ἐν τῷ πέραν τοῦ
 Ἰορδάνου παρὰ θάλασσαν. καὶ ἡνίκα ἐξαπέστειλεν αὐτοὺς Ἰησους
 εἰς τοὺς οἴκους οὕτων καὶ εὐλόγησεν αὐτούς,</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἐν χρήμασιν πολλοῖς <lb n="8"/>
 εἰς τοὺς οἴκους αὐτῶν. καὶ κτήνη πολλὰ σφόδρα καὶ
 <note type="marginal">Α</note> <note type="footnote">44 ݲκݲς αὐτοὺς Β? | ουθεις ] οὐδεὶς Α | εἰς τὰς Χειρας] Pr αὐτοῖς
@@ -3892,64 +3895,64 @@ Ba ? b vid)] τὴν Νοεμμων Α | ἀυτὴ 3°] pr τὰ πρὸς Α 3
 ἀργύριον καὶ χρυσίον καὶ σίδηρον καὶ ἱματισμὸν πολὺν καὶ δίει- <note type="marginal">Β</note>
 <lb n="9"/> λαντο, τὴν προνομὴν τῶν ἐχθρῶν, μετὰ τῶν ἀδελφῶν αὐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>Καὶ
 ἐπορεύθησαν οἱ υἱοὶ Ῥουβὴν καὶ οἱ υἱοὶ Γὰδ καὶ τὸ ἥμισυ φυλῆς
 υἱῶν Μανασσὴ ἀπὸ τῶν υἱῶν Ἰσραὴλ ἐν Σηλὼ ἐν γῇ Χανάαν ἀπελθεῖν
 εἰς τὴν Γαλαὰδ εἰς γῆν κατασχέσεως αὐτῶν, ἣν ἐκληρονόμησαν
 <lb n="10"/> αὐτὴν διὰ προστάγματος Κυρίου ἐν χειρὶ Μωυσῆ.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ ἦλθον εἰς
 Γάλγαλα τοῦ Ἰορδάνου, ἥ ἐστιν ἐν γῆ Χανάαν· καὶ ᾠκοδόμησαν οἱ
 υἱοὶ Γὰδ καὶ οἱ υἱοὶ Ῥουβὴν καὶ τὸ ἥμισυ φυλῆς Μανασσὴ ἐκεῖ βωμὸν
 <lb n="11"/> ἐπὶ τοῦ Ἰορδάνου, βωμὸν μέγαν ἐπὶ τοῦ ἰδεῖν.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ ἤκουσαν οἱ
 υἱοὶ Ἰσραὴλ λεγόντων ἰδοὺ ᾠκοδόμησαν οἱ υἱοὶ Γὰδ καὶ οἱ υἱοὶ Ῥουβὴν
 καὶ τὸ ἥμισυ φυλῆς Μανασσὴ βωμὸν ἐπὶ τῶν ὁρίων γῆς Χανάαν ἐπὶ
 <lb n="12"/> τοῦ Γαλαὰδ τοῦ Ἰορδάνου ἐν τῷ πέραν υἱῶν Ἰσραὴλ.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ συνηθροίσθησαν
 πάντες οἱ υἱοὶ Ἰσραὴλ εἰς Σηλὼ ὥστε ἀναβάντες ἐκπολεμήσαι
 <lb n="13"/> αὐτούς.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>Καὶ ἀπέστειλαν οἱ υἱοὶ Ἰσραὴλ πρὸς τοὺς
 υἱοὺς Ῥουβὴν καὶ πρὸς τοὺς υἱοὺς Γὰδ καὶ πρὸς τοὺς υἱοὺς ἥμισυ φυλῆς
 Μανασσὴ εἰς γῆν Γαλαὰδ τόν τε Φεινεὲς υἱὸν Ἐλεαζὰρ υἱοῦ ’
 <lb n="14"/> τοῦ ἀρχιερέως</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ δέκα τῶν ἀρχόντων μετ’ αὐτοῦ·
 οἴκου πατριᾶς ἀπὸ πασῶν φυλῶν Ἰσραήλ· ἄρχοντες οἴκων εἶς ἀπὸ
 <lb n="15"/> εἰσιν, χιλίαρχοι Ἰσραήλ.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ παρεγένοντο πρὸς τοὺς υἰοὺς Γὰδ
 καὶ πρὸς τοὺς υἱοὺς Ῥουβὴν καὶ πρὸς τοὺς ἡμίσεις φυλῆς Μανασσὴ
 <lb n="16"/> εἰς τὴν Γαλαάδ, καὶ ἐλάλησαν πρὸς αὐτοὺς λέγοντες</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>Τάδε λέγει
 πᾶσα ἡ συναγωγὴ Κυρίου τίς ἡ πλημμελία αὕτη ἢν ἐπλημμελήσατε
 ἐναντίον τοῦ θεοῦ Ἰσραήλ, ἀποστραφῆναι σήμερον ἀπὸ Κυρίου
 ὑμῖν ἑαυτοῖς βωμόν, ἀποστάτας ὑμᾶς γενέσθαι ἀπὸ τοῦ
 <lb n="17"/> κυρίου;</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>μὴ μικρὸν ἡμῖν τὸ ἁμάρτημα Φογώρ ; ὅτι οὐκ ἐκαθαρίσθημεν
 ἀπ’ αὐτοῦ ἕως τῆς ἡμέρας ταύτης, καὶ ἐγενήθη πληγὴ ἐν τῇ
 <lb n="18"/> συναγωγῇ κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ ὑμεῖς ἀπεστράφητε σήμερον ἀπὸ Κυρίου·
 καὶ ἔσται ἐὰν ἀποστῆτε σήμερον ἀπὸ Κυρίου, καὶ αὔριον ἐπὶ
 <lb n="19"/> Ἰσραὴν ἔσται ἡ ὀργή.</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ νῦν εἰ μικρὰ ἡ γῆ ὑμῶν τῆς κατασχέσεως
 <note type="footnote">8 om κα σίδηρον Α | πολὺν] + σφόδρα Α | om και 7° Βa(vid)b A | εχθρων] <note type="marginal">Α</note>
 + αυτων Α 9 om ὑιῶν 1° Α | Μανασση] Μαν sup ras Ba? | εν 1°]
@@ -3971,52 +3974,52 @@ om ἔπι 2° B ab Α 11 Ρουβην καὶ οἱ υἱοὶ Γαδ Α | ἡ�
 οἰκοδομῆσαι ὑμᾶς βωμὸν ἔξω τοῦ θυσιαστηρίου κυρίου τοῦ θεοῦ ἡμῶν.
 </p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>οὐκ ἰδοὺ Ἀχἀρ ὁ τοῦ Σάρα πλημμελίᾳ ἐπλημμέλησεν ἀπὸ τοῦ <lb n="20"/>
 ἀναθέματος, καὶ ἐπὶ πᾶσαν συναγωγὴν Ἰσραὴλ ἐγενήθη ὀργή ; κα
 οὗτος εἷς μόνος αὐτὸς ἀπέθανεν τῇ ἑαυτοῦ ἁμαρτίᾳ.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>Καὶ <lb n="21"/>
 ἀπεκρίθησαν οἱ υἱοὶ Ῥουβὴμ καὶ οἱ υἱοὶ Γὰδ καὶ τὸ ἥμισυ φυλῆς
 Μανασσή, καὶ ἐλάλησαν τοῖς χιλιάρχοις Ἱσραὴλ λέγοντες</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>῾Ο θεὸς <lb n="22"/>
 θεός ἐστιν κύριος, καὶ ὁ θεὸς θεὸς αὐτὸς οἶδεν, καὶ Ἰσραὴλ αὐτὸς
 γνώσεται. εἰ ἐν ἀπ’ ὅστ’ ἀσίᾳ ἐπλημμελήσαμεν ἔναντι τοῦ κυρίου, μὴ
 ῥύσαιτο ἡμᾶς ἐν ταύτῃ·</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ εἰ ᾠκοδομήσαμεν αὑτοῖς βωμὸν ὥστε <lb n="23"/>
 ἀποστῆναι ἀπὸ κυρίου τοῦ θεοῦ ἡμῶν, ὥστε ἀναβιβάσαι ἐπ’ αὐτὸν
 θυσίαν ὁλοκαυτωμάτων ὥστε ποιῆσαι ἐπ’ αὐτοῦ θυσίαν σωτηρίου,
 κύριος ἐκζητήσει.</p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>ἀλλ᾿ ἕνεκεν εὐλαβείας ῥήματος ἐποιήσαμεν <lb n="24"/>
 τοῦτο λέγοντες Ἵνα μὴ εἴπωσιν αὔριον τὰ τέκνα ὑμῶν τοῖς
 ἡμῶν Τί ὑμῖν κυρίῳ τῷ θεῷ Ἱσραήλ ;</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ ὅρια ἔθηκεν κύριος <lb n="25"/>
 ἀνὰ μέσον ἡμῶν καὶ ὑμῶν τὸν Ἰορδάνην, καὶ οὐκ ἔστιν ὑμῖν μερὶς
 Κυρίου. καὶ ἀπαλλοτριώσουσιν οἱ υἱοὶ ὑμῶν τοὺς υἱοὺς ἡμῶν, ἵνα
 μὴ σέβωνται κύριον.</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>καὶ εἴπαμεν ποιῆσαι οὕτως τοῦ οἰκοδομῆσαι <lb n="26"/>
 τὸν βωμὸν τοῦτον, οὐχ ἕνεκεν καρπωμάτων οὐδὲ ἕνεκεν θυσίων ,
 </p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>ἀλλ' ἵνα ᾖ τοῦτο μαρτύριον ἀνὰ μέσον ἡμῶν καὶ ὑμῶν καὶ ἀνὰ <lb n="27"/>
 μέσον τῶν γενεῶν ἡμῶν μεθ’ ἡμᾶς, τοῦ λατρεύειν λατρίαν Κύρῳ
 αὐτοῦ ἐν τοῖς καρπώμασιν ἡμῶν καὶ ἐν ταῖς θυσίας ἡμῶν
 καὶ ἐν ταῖς θυσίαις τῶν σωτηρίων· καὶ οὐκ ἐροῦσιν τὰ τέκνα ὑμῶν
 τοῖς τέκνοις ἡμῶν αὔριον οὐκ ἔστιν ὑμῖν μερὶς κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ εἴπαμεν <lb n="28"/>
 Ἐὰν γένηταί ποτε καὶ λαλήσωσιν πρὸς ἡμᾶς καὶ ταῖς γενεαῖς
 ἡμῶν αὔριον, καὶ ἐροῦσιν ἴδετε ὀμοίωμα τοῦ θυσιαστηρίου κυρίου,
@@ -4038,33 +4041,33 @@ om ἔπι 2° B ab Α 11 Ρουβην καὶ οἱ υἱοὶ Γαδ Α | ἡ�
 θυσιῶν, ἀλλὰ μαρτύριόν ἐστιν ἀνὰ μέσον ὑμῶν καὶ ἀνὰ μέσον ἡμῶν
 <lb n="29"/> καὶ ἀνὰ μέσον τῶν υἱῶν ἡμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="29">
+<div type="textpart" subtype="verse" n="29">
 <p>ἡμὴ γένοιτο οὖν ἡμᾶς ἀποστραφῆναι
 ἀπὸ κυρίου ἐν ταῖς σήμερον ἡμέραις, ἀποστῆσαι ἀπὸ Τυρίου ὥστε
 οἰκοδομῆσαι ἡμᾶς θυσιαστηριον τοῖς καρπώμασιν καὶ ταῖς θυσίαις
 σαλαμεὶν καὶ τῇ θυσίᾳ τοῦ σωτηρίου, πλὴν τοῦ θυσιαστηρίου κυρίου
 <lb n="30"/> ὅ ἐστιν ἐναντίον τῆς σκηνῆς αὐτοῦ.</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>Καὶ ἀκούσας φεινεὲς ὁ
 ἱερεύς καὶ πάντες οἱ ἄρχοντες τῆς συναγωγῆς Ἰσραὴλ οἳ ἤσαν
 μετ’ αὐτοῦ τοὺς λόγους οὓς ἐλάλησαν οἱ υἱοὶ Ρουβὴν καὶ οἱ υἱοὶ
 <lb n="31"/> Γὰδ καὶ τὸ ἥμισυ φυλῆς Μανασσή, καὶ ἤρεσεν αὐτοῖς.</p></div>
 
-<div type="textpart" subtype="section" n="31">
+<div type="textpart" subtype="verse" n="31">
 <p>καὶ εἶπεν
 Φεινεὲς ὁ ἱερεὺς τοῖς υἱοῖς Ῥουβὴν καὶ τοῖς υἱοῖς Γὰδ καὶ τῷ ἡμίσει
 φυλῆς Μανασσῆ Σήμερον ἐγνώκαμεν ὅτι μεθ’ ἡμῶν κύριος, διότι
 οὐκ ἐπλημμελήσατε ἐναντίον κυρίου πλημμελίαν, καὶ ὅτι ἐρύσασθε
 <lb n="32"/> τούς υἱούς Ἰσραὴλ ἐκ χειρὸς κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="32">
+<div type="textpart" subtype="verse" n="32">
 <p>καὶ ἀπέστρεψεν Φεινεὲς ὁ
 ἱερεὺς καὶ οἱ ἄρχοντες ἀπὸ τῶν υἱῶν Ῥουβὴν καὶ ἀπὸ τῶν υἱῶν Γὰδ
 καὶ ἀπὸ τοῦ ἡμίσους φυλῆς Μανασσῆ ἐκ τῆς Γαλαὰδ εἰς γῆν Χανάαν
 <lb n="33"/> πρὸς τοὺς υἱοὺς Ἰσραὴλ, καὶ ἀπεκρίθησαν αὐτοῖς τοὺς λόγους.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>καὶ
 ἤρεσεν τοῖς υἱοῖς Ἰσραὴλ· καὶ ἐλάλησαν πρὸς τοὺς υἱοὺς Ἰσραήλ.
 καὶ εὐλόγησαν τὸν θεὸν υἱῶν Ἰσραὴλ, καὶ εἶπαν μηκέτι ἀναβῆναι
@@ -4072,19 +4075,19 @@ om ἔπι 2° B ab Α 11 Ρουβην καὶ οἱ υἱοὶ Γαδ Α | ἡ�
 καὶ τῶν υἱῶν Γὰδ καὶ τοῦ ἡμίσους φυλῆς Μανασσή· καὶ κατῴκησαν
 <lb n="34"/> ἐπ’ αὐτῆς.</p></div>
 
-<div type="textpart" subtype="section" n="34">
+<div type="textpart" subtype="verse" n="34">
 <p>καὶ ἐπωνόμασεν Ἰησοῦς τὸν βωμὸν τῶν Ῥουβὴν καὶ
 τῶν Γὰδ καὶ τοῦ ἡμίσους φυλῆς Μανασσὴ, καὶ εἶπεν ὅτι Μαρτύριόν
 ἀνὰ μέσον αὐτῶν ὅτι κύριος ὁ θεὸς αὐτῶν ἐστιν.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="23">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> καὶ ἐγένετο μεθ’ ἡμέρας πλείους μετὰ τὸ καταπαῦσαι Κύριον
 τὸν Ἰσραὴλ ἀπὸ πάντων τῶν ἐχθρῶν αὐτῶν κυκλόθεν, καἰ Ἰησοῦς
 <lb n="2"/> πρεσβύτερος προβεβηκὼς ταῖς ἡμέραις.</p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ συνεκάλεσεν Ἰησοῦς
 πάντας τοὺς υἱοὺς Ἰσραὴλ καὶ τὴν γερουσίαν αὐτῶν καὶ τοὺς ἄρχοντας
 πάντας καὶ τοὺς γραμματεῖς αὐτῶν καὶ τοὺς δικαστὰς αὐτῶν, καὶ
@@ -4102,60 +4105,60 @@ Aat) πατρίων Α | τῆς Γαλααδ] γῆς Γάλ’. Α 33 εὐ�
 <pb n="470"/>
 <note type="marginal">B</note> εἶπεν πρὸς αὐτούς Ἐγὼ γεγήρακα καὶ προβέβηκα ταῖς ἡμέροις.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>ὑμεῖς <lb n="3"/>
 δὲ ἑοράκατε ὅσα ἐποίησεν κύριος ὁ θεὸς ἡμῶν πᾶσιν τοῖς ἔθνεσιν
 τούτοις ἀπὸ προσώπου ἡμῶν, ὅτι κύριος ὁ θεὸς ἡμῶν ὁ ἑ ἐκπολεμήσας
 ἡμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>ἴδετε ὅτι ὅπερ εἶπα ὑμῖν, τὰ ἔθνη τὰ καταλελιμμένα ὑμῖν ταῦτα <lb n="4"/>
 ἐν τοῖς κλήροις εἰς τὰς φυλάς ὑμῶν· ἀπὸ τοῦ Ἰοπδάνου πάντα τὰ
 ἔθνη καὶ ἐξωλέθρευσα, καὶ ἀπὸ τῆς θαλάσσης τῆς μεγάλης ὁριεῖ
 ἐπὶ δυσμὰς ἡλίου.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>Κύριος δὲ ὁ θεὸς ἡμῶν, οὗτος ἐξολεθρεύσει αὐτοὺς <lb n="5"/>
 ἀπὸ προσώπου ἡμῶν, ἕως ἂν ἀπόλωνται· καὶ ἀποστελεῖ αὐτοῖς τὰ
 θηρία τὰ ἄγρια, ἕως δ’ ἐξολεθρεύσῃ αὐτοὺς καὶ τοὺς βασιλεῖς αὐτῶν
 ἀπὸ προσώπου ὑμῶν· καὶ κατακληρονομήσατε τὴν· γῆν αὐτῶν, καθὰ
 ἐλάλησεν κύριος ὁ θεὸς ἡμῶν ὑμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>κατισχύσατε οὖν σφόδρα <lb n="6"/>
 φυλάσσειν καὶ ποιεῖν πάντα τὰ γεγραμμένα ἐν τῷ βιβλίῳ τοῦ νόμου
 ἵνα μὴ ἐκκλίνητε εἰς δεξιὰν ἢ εὐώνυμα·</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>ὅπως μὴ εἰσέλθητε <lb n="7"/>
 τὰ ἔθνη τὰ καταλελιμμένα ταῦτα· καὶ τὰ ὀνόματα τῶν θεῶν
 ῶν οὐκ ὀνομασθήσεται ἐν ὑμῖν· οὐ μὴ προσκυνήσετε αὐτοῖς οὐδὲ
 τε αὐτοῖς,</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>ἀλλὰ Κυρίῳ τῷ θεῷ ἡμῶν προσκολληθήσεσθε, <lb n="8"/>
 ἐποιήσατε ἕως τῆς ἡμέρας ταύτης.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἐξολεθρεύσει αὐτοὺς <lb n="9"/>
 Κύριος ἀπὸ προσώπου ὑμῶν, ἔθνη μεγάλα καὶ ἰσχυρά, καὶ οὐθεὶς
 ἀντέστη κατενώπιον ἡμῶν ἕως τῆς ἡμέρας ταύτης·</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>εἷς ὑμὠν ἐδίωξεν <lb n="10"/>
 χιλίους, ὅτι κύριος ὁ θεὸς ἡμῶν ἐξεπολέμει ἡμῖν, καθάπερ εἶπεν
 ἡμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ φυλάξασθε σφόδρα τοῦ ἀγαπᾷν κύριον τὸν θεὸν ἡμῶν. <lb n="11"/>
 </p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>ἐὰν γὰρ ἀποστραφῆτε καὶ προσθῆσθε τοῖς ὑπολειφθεῖσιν ἔθνεσιν <lb n="12"/>
 τούτοις τοῖς μεθ’ ὑμῶν, καὶ ἐπιγαμίας ποιήσητε πρὸς αὐτούς, καὶ
 συνκαταμιηῆτε αὐτοῖς καὶ αὐτοὶ ὑμῖν,</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>γινώσκετε ὅτι οὐ μὴ προσθῇ <lb n="13"/>
 κύριος τοῦ ἐξολεθρεῦσαι τὰ ἔθνη ταῦτα ἀπὸ προσώπου ὑμῶν· καὶ
 ἔσονται ὑμίν εἰς παγίδας καὶ εἰς σκάνδαλα καὶ εἰς ἥλους ἐν ταῖς
@@ -4177,61 +4180,61 @@ ras καὶ | Α? 9 καὶ ° sup ras A? | ἐξολεθρεύσει] ἐξω�
 <pb n="471"/>
 <lb n="14"/> ὁ θεὸς ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>ἐγὼ δὲ ἀποτρέχω τὴν ὁδὸν καθὰ κοὶ πάντες οἱ <note type="marginal">B</note>
 ἐπὶ τῆς γῆς· καὶ γνώσεσθε τῆ καρδίᾳ ὑμῶν καὶ τῆ ψυχῇ ὑμῶν διότι
 οὐκ ἔπεσεν εἷς λόγος ἀπὸ πάντων τῶν λόγων ὧν εἶπεν κύριος ὁ
 θεὸς ἡμῶν πρὸς πάντα τὰ ἀνήκοντα ἡμῖν, οὐ διεφώνησεν ἐξ αὐτῶν.
 <lb n="15"/></p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>καὶ ἔσται ὃν τρόπον ἥκει πρὸς ἡμᾶς πάντα τὰ ῥήματα τὰ κόλα
 ἃ ἐλάλησεν κύριος πρὸς ἡμᾶς, οὕτως ἐπάξει Κύριος ὁ θεὸς ἐφ’ ὑμᾶς
 πάντα τὰ ῥήματα τὰ πονηρά, ἕως ἂν ἐξολεθρεύσῃ ὑμᾶς ἀπὸ τῆς
 <lb n="16"/> γῆς τῆς ἀγαθῆς ταύτης ἧς ἔδωκεν Κύριος ὑμῖν,</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>ἐν τῷ
 ὑμᾶς τὴν διαθήκην Κυρίου τοῦ θεοῦ ἡμῶν ἢν ἐνετείλατο
 πορευθέντες λατρεύσητε θεοῖς ἑτέροις καὶ προσκυνήσητε αὐτοῖς.</p>
 </div></div>
 
 <div type="textpart" subtype="chapter" n="24">
-<div type="textpart" subtype="section" n="1">
+<div type="textpart" subtype="verse" n="1">
 <p> Καὶ συνήγαγεν Ἰησοῦς πάσας φυλὰς Ἰσρὴλ εἰς Σηλώ, καὶ
 συνεκάλεσεν τοὺς πρεσβυτέρους αὐτῶν καὶ τοὺς γραμματεῖς αὐτῶν
 καὶ τοὺς δικαστὰς αὐτῶν, καὶ ἔστησεν αὐτοὺς ἀπέναντι τοῦ θεοῦ.
 <lb n="2"/></p></div>
 
-<div type="textpart" subtype="section" n="2">
+<div type="textpart" subtype="verse" n="2">
 <p>καὶ εἶπεν Ἰησοῦς πρὸς πάντα τὸν λαόν τάδε λέγει Κύριος ὁ θεὸς
 Ἰσραὴλ Πέραν τοῦ ποταμοῦ κατῴκησαν οἱ πατέρες ὑμῶν τὸ ἀπ’
 Θάρα ὁ πατὴρ Ἀβραὰμ καὶ ὁ πατὴρ Ναχώρ· καὶ ἐλάτρευσαν
 <lb n="3"/> ἑτέροις.</p></div>
 
-<div type="textpart" subtype="section" n="3">
+<div type="textpart" subtype="verse" n="3">
 <p>καὶ ἔλαβον τὸν πατέρα ὑμῶν τὸν Ἀβραὰμ ἐκ τοῦ πέραν
 τοῦ ποταμοῦ, καὶ ὡδήγησα αὐτὸν ἐν πάση τῇ γῆ· καὶ ἐπλήθυνα
 <lb n="4"/> αὐτοῦ σπέρμα καὶ ἔδωκα αὐτῷ τὸν Ἰσαὰκ,</p></div>
 
-<div type="textpart" subtype="section" n="4">
+<div type="textpart" subtype="verse" n="4">
 <p>καὶ τῷ Ἰσαὰκ τὸν Ἰακὼβ
 κοὶ τὸν Ἠσαύ· ἔδωκα τῷ Ἠσαὺ τὸ ὄρος τὸ Σηεὶρ κληρονομῆσαι
 αὐτῷ. καὶ Ἰακὼβ καὶ οἱ υἱοὶ αὐτοῦ κατέβησαν εἰς Αἴγυπτον, καὶ
 ἐγένοντο ἐκεῖ εἰς ἔθνος μέγα καὶ πολύ καὶ κραταιόν· καὶ ἐκάκωσαν
 <lb n="5"/> αὐτοὺς οἱ Αἰγύπτιοι.</p></div>
 
-<div type="textpart" subtype="section" n="5">
+<div type="textpart" subtype="verse" n="5">
 <p>καὶ ἐπάταξαν τὴν Αἴγυπτον ἐν οἷς ἐποίησαν
 αὐτοῖς. καὶ μετὰ ταῦτα ἐξήγαγεν</p></div>
 
-<div type="textpart" subtype="section" n="6">
+<div type="textpart" subtype="verse" n="6">
 <p>τοὺς παέρας ἡμῶν ἐξ Αἰγυπτίων, καὶ
 καὶ εἰσήλθατε εἰς τὴν θάλασσαν τὴν ἐρυθρόν· καὶ κατεδίωξαν οἱ
 Αἰγύπτιοι ὀπίσω τῶν πατέρων ἡμῶν ἐν ἅρμασιν καὶ ἐν ἵπποις εἰς
 <lb n="7"/> τὴν θάλασσαν τὴν ἐρυθράν.</p></div>
 
-<div type="textpart" subtype="section" n="7">
+<div type="textpart" subtype="verse" n="7">
 <p>καὶ ἀνεβοήσαμεν πρὸς κύριον· καὶ
 νεφέλην καὶ γνόφον ἀνὰ μέσον ἡμῶν καὶ ἀνὰ μέσον τῶν
 <note type="footnote">14 ὑμῶν 2’] ἤμων Α | οὐκ ἔπεσεν sup ras Aa? | λόγος εἰς Α | πάντα τα <note type="marginal">A</note>
@@ -4252,56 +4255,56 @@ pr λέγων Α | Ισραηλ] pr του Α | πέραν] pr λέγων Α 
 αὐτούς. καὶ εἴδοσαν οἱ ὀφθαλμοὶ ὑμῶν ὅσα ἐποίησεν κύριος ἐν γῇ
 Αἰγύπτῳ· καὶ ἦτε ἐν τῇ ἐρήμῳ ἡμέρας πλείους.</p></div>
 
-<div type="textpart" subtype="section" n="8">
+<div type="textpart" subtype="verse" n="8">
 <p>καὶ ἤγαγεν ἡμᾶς <lb n="8"/>
 εἰς γῆν Ἀμορραίων τῶν κατοικούντων πέραν τοῦ Ἰορδάνου, κα
 παραδέδωκεν αὐτοὺς κύριος εἰς τὰς Χεῖρας ἡμῶν· καὶ κατεκληρονομήσατε
 τὴν γῆν αὐτῶν, καὶ ἐξωλεθρεύσατε αὐτοὺς ἀπὸ προσώπου
 ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="9">
+<div type="textpart" subtype="verse" n="9">
 <p>καὶ ἀβέστη Βαλὰκ ὁ τοῦ Σεπφὼρ βασιλεὺς Μωὰβ καὶ παρετάξατο <lb n="9"/>
 τῷ Ἰσραὴλ, καὶ ἀποστείλας ἐκάλεσεν τὸν Βαλαὰμ ἀράσασθαι
 ἡμῖν.</p></div>
 
-<div type="textpart" subtype="section" n="10">
+<div type="textpart" subtype="verse" n="10">
 <p>καὶ οὐκ ἠθέλησεν Κύριος ὁ θεός σου ἀπολέσοι σε· κα <lb n="10"/>
 εὐλογίαν εὐλόγησεν ἡμᾶς, καὶ ἐξείλατο ἡμᾶς ἐκ χειρῶν αὐτῶν, κα
 αὐτούς.</p></div>
 
-<div type="textpart" subtype="section" n="11">
+<div type="textpart" subtype="verse" n="11">
 <p>καὶ διέβητε τὸν Ἰορδάνην, καὶ παρεγενήθητε <lb n="11"/>
 καὶ ἐπολέμησαν πρὸς ἡμᾶς οἱ κατοικοῦντες Ἰερειχώ,
 ὁ Ἀμορραῖος καὶ ὁ Χαναναῖος καὶ ὁ Φερεζαῖος κα ὁ Εὑαῖος καὶ ὁ
 Ἰεβουσαῖος καὶ ὁ Χετταῖος καὶ ὁ Γεργεσαῖος· καὶ παρέδωκεν αὐτοὺς
 κύριος εἰς τἀς χεῖρας ἡμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="12">
+<div type="textpart" subtype="verse" n="12">
 <p>καὶ ἐξαπέστειλεν προτέραν ἡμῶν <lb n="12"/>
 τὴν σφηκίαν, καὶ ἐξαπέστειλεν αὐτοὺς ἀπὸ προσώπου ήμῶν. δώδεκα
 βασιλεῖς τῶν Ἀμορραίων, οὐκ ἐν τῇ ῥομφαίᾳ σου οὐδὲ ἐν τῷ τόξῳ
 σου.</p></div>
 
-<div type="textpart" subtype="section" n="13">
+<div type="textpart" subtype="verse" n="13">
 <p>καὶ ἔδωκεν ὑμῖν γῆν ἐφ’ ἢν οὐκ ἐκοπιάσατε ἐπ’ αὐτῆς καὶ <lb n="13"/>
 πόλεις ἃς οὐκ ᾠκοδομήκατε, καὶ κατῳκίσθητε ἐν αὐταῖς· καὶ ἀμπελῶνας
 καὶ ἐλαιῶνας οὑς οὐκ ἐφυτεύσατε ὑμεῖς ἔδεσθε.</p></div>
 
-<div type="textpart" subtype="section" n="14">
+<div type="textpart" subtype="verse" n="14">
 <p>καὶ <lb n="14"/>
 νῦν φοβήθητε κύριον καὶ λατρεύσατε αὐτῷ ἐν εὐθύτητι καὶ ἐν δικαιοσύνῃ,
 καὶ περιέλεσθε τοὺς θεοὺς τοὺς ἀλλοτρίους οἷς ἐλάτρευσαν
 οἱ πατέρες ἡμῶν ἐν τῷ πέραν τοῦ ποταμοῦ καὶ ἐν Αἰγύπτῳ, καὶ
 λατρεύετε Κυρίῳ.</p></div>
 
-<div type="textpart" subtype="section" n="15">
+<div type="textpart" subtype="verse" n="15">
 <p>εἰ δὲ μὴ ἀρέσκει ὑμῖν λατρεύειν κυρίῳ, ἐκλέὑμῖν <lb n="15"/>
 ὑμῖν ἑαυτοῖς σήμερον τίνι λατρεύσητε, εἴτε τοῖς θεοῖς τῶν
 πατέρων ὑμῶν τοῖς ἐν τῷ πέραν τοῦ ποταμοῦ, εἴτε τοῖς θεοῖς τῶν
 Ἀμορραίων ἐν οἷς ὑμεῖς κατοικεῖτε ἐπὶ τῆς γῆς αὐτῶν· ἐγὼ δὲ καὶ
 ἡ οἰκία μου λατρεύσομεν Κυρίῳ, ὅτι ἅγιός ἐστιν.</p></div>
 
-<div type="textpart" subtype="section" n="16">
+<div type="textpart" subtype="verse" n="16">
 <p>καὶ ἀποκριθεὶς ὁ <lb n="16"/>
 <note type="marginal">Α</note> <note type="footnote">7 αὐτοὺς 2°] pr ἐπ’ Α | ιδοσαν Α | ὑμῶν] ἤμων Α 8 ἧμας]
 Ιορδανου] + καὶ παρετάξατο ὕμιν Α | παραδεδωκεν] παρέδωκεν Α | τὰς χειρας]
@@ -4320,57 +4323,57 @@ om τἂ Α 12 ἐξαπέστειλεν] εξεβαλεν Α | ἤμων °] �
 λαὸς εἶπεν Μὴ γένοιτο ἥμιν καταλιπεῖν κύριον, ὥστε λατρεύειν θεοῖς <note type="marginal">B</note>
 <lb n="17"/> ἑτέροις.</p></div>
 
-<div type="textpart" subtype="section" n="17">
+<div type="textpart" subtype="verse" n="17">
 <p>Κύριος ὁ θεὸς ἡμῶν αὐτὸς θεός ἐστιν· αὐτὸς ἀνήγαγεν
 ἡμᾶς καὶ τοὺς πατέρας ἡμῶν ἐξ Αἰγύπτου, καὶ διεφύλαξεν ἡμᾶς ἐν
 πάσῃ τῇ ὁδῷ ἧ ἐπορεύθημεν ἐν αὔη, καὶ ἐν πᾶσιν τοῖς ἔθνεσιν οὓς
 <lb n="18"/> παρήλθομεν δι’ αὐτῶν·</p></div>
 
-<div type="textpart" subtype="section" n="18">
+<div type="textpart" subtype="verse" n="18">
 <p>καὶ ἐξέβαλεν κύριος τὸν Ἀμορραῖον κοὶ
 πάντα τὰ ἔθνη τὰ κατοικοῦντα τὴν γῆν ἀπὸ προσώπου ἡμῶν. ἀλλὰ
 <lb n="19"/> καὶ ἡμεῖς λατρεύσομεν κυρίῳ, οὗτος γὰρ θεὸς ἡμῶν ἐστιν.</p></div>
 
-<div type="textpart" subtype="section" n="19">
+<div type="textpart" subtype="verse" n="19">
 <p>καὶ
 εἶπεν Ἰησοῦς πρὸς τὸν λαόν Οὐ μὴ δύνησθε λατρεύειν Κυρίῳ· ὅτι
 θεὸς ἅγιός ἐστιν, καὶ ζηλώσας οὗτος οὐκ ἀνήσει ὑμῶν τὰ ἁμαρτήματα
 <lb n="20"/> καὶ τὰ ἀνομήματα ὑμῶν.</p></div>
 
-<div type="textpart" subtype="section" n="20">
+<div type="textpart" subtype="verse" n="20">
 <p>ἡνίκα ἐὰν ἐνκαταλίπητε Τύριον καὶ
 λατρεύσητε θεοῖς ἑτέροις, καὶ ἐπελθὼν κακώσει ὑμᾶς καὶ ἐξαναλώσει
 <lb n="21"/> ὑμᾶς ἀνθ’ ὧν εὖ ἐποίησεν ὑμᾶς.</p></div>
 
-<div type="textpart" subtype="section" n="21">
+<div type="textpart" subtype="verse" n="21">
 <p>καὶ εἶπεν ὁ λαὸς πρὸς Ἰησοῦν
 <lb n="22"/> Ούχί, ἀλλὰ Κυρίῳ λατρεύσομεν.</p></div>
 
-<div type="textpart" subtype="section" n="22">
+<div type="textpart" subtype="verse" n="22">
 <p>καὶ εἶπεν Ἰησοῦς πρὸς τὸν λαόν
 Μάρτυρες ὑμεῖς καθ’ ὑμῶν, ὅτι ὑμεῖς ἐξελέξασθε Κυρίῳ λατρεύειν
 <lb n="23"/> αὐτῷ.</p></div>
 
-<div type="textpart" subtype="section" n="23">
+<div type="textpart" subtype="verse" n="23">
 <p>καὶ νῦν περιέλεσθε τοὺς θεοὺς τούς ἀλλοτρίους τοὺς ἐν
 ὑμῖν, καὶ εὐθύνατε τὴν καρδίαν ὑμῶν πρὸς κύριον θεὸν Ἰσραήλ.
 <lb n="24"/></p></div>
 
-<div type="textpart" subtype="section" n="24">
+<div type="textpart" subtype="verse" n="24">
 <p>καὶ εἶπεν ὁ πρὸς πρὸς Ἰησοῦν κυρίῳ λατρεύσομεν, καὶ τῆς φωνῆς
 <lb n="25"/> αὐτοῦ ἀκουσόμεθα.</p></div>
 
-<div type="textpart" subtype="section" n="25">
+<div type="textpart" subtype="verse" n="25">
 <p>καὶ καὶ διέθετο Ἰησοῦς διαθήκην πρὸς τὸν λαὸν
 ἐν τῇ ἡμέρᾳ ἐκείνῃ, καὶ ἔδωκεν αὐτῷ νόμον καὶ κρίσιν ἐν Σηλὼ
 <lb n="26"/> ἐνώπιον τῆς σκηνῆς τοῦ θεοῦ Ἰσραὴλ.</p></div>
 
-<div type="textpart" subtype="section" n="26">
+<div type="textpart" subtype="verse" n="26">
 <p>Καὶ ἔγραψεν τὰ ῥήματα
 ταῦτα εἰς βιβλίον, νόμον τοῦ θεοῦ· καὶ ἔλαβεν λίθον μέγαν καἰ
 <lb n="27"/> ἔστησεν αὐτὸν Ἰησοῦς ὑπὸ τὴν τερέμινθον ἀπέναντι Κυρίου.</p></div>
 
-<div type="textpart" subtype="section" n="27">
+<div type="textpart" subtype="verse" n="27">
 <p>καὶ
 εἶπεν Ἰησοῦς πρὸς τὸν λαόν Ἴδου ὁ λίθος οὗτος ἔσται ἐν ὑμῖν εἰς
 μαρτύριον, ὅτι αὐτὸς ἀκήκοεν πάντα τὰ λεχθέντα αὐτῷ ὑπὸ κυρίου
@@ -4378,11 +4381,11 @@ om τἂ Α 12 ἐξαπέστειλεν] εξεβαλεν Α | ἤμων °] �
 μαρτύριον ἐπ’ ἐσχάτων τῶν ἡμερῶν, ἡνίκα ἐὰν ψεύσησθε κυρίῳ
 <lb n="28"/> τῷ θεῷ μου.</p></div>
 
-<div type="textpart" subtype="section" n="28">
+<div type="textpart" subtype="verse" n="28">
 <p>καὶ ἀπέστειλεν Ἰησοῦς τὸν λαόν, καὶ ἐπορεύθησαν
 <lb n="31"/> ἕκαστος εἰς τὸν τόπον αὐτοῦ. </p></div>
 
-<div type="textpart" subtype="section" n="31"><p> καὶ καὶ ἐλάτρευσεν Ἰσραὴλ τῷ κυρίῳ
+<div type="textpart" subtype="verse" n="31"><p> καὶ καὶ ἐλάτρευσεν Ἰσραὴλ τῷ κυρίῳ
 πάσας τὰς ἡμέρας Ἰησοῦ καὶ πάσας τὰς ἡμέρας τῶν πρεσβυτέρων,
 ὅσοι ἐφείλκυσαν τὸν χρόνον μετὰ Ἰησοῦ καὶ ὅσοι ἴδοσαν πάντα τὰ
 ἔργα Κυρίου ὅσα ἐποίησεν τῷ Ἰσραήλ.</p>
@@ -4399,38 +4402,38 @@ om τἂ Α 12 ἐξαπέστειλεν] εξεβαλεν Α | ἤμων °] �
 <pb n="474"/>
 <note type="marginal">Β</note> </div>
 
-<div type="textpart" subtype="section" n="29"><p>καὶ ἐγένετο μετ’ ἐκεῖνα καὶ ἀπέθανεν Ἰησοῦς υἱὸς Ναυὴ <lb n="29"/>
+<div type="textpart" subtype="verse" n="29"><p>καὶ ἐγένετο μετ’ ἐκεῖνα καὶ ἀπέθανεν Ἰησοῦς υἱὸς Ναυὴ <lb n="29"/>
 δοῦλος κυρίου ἑκατὸν δέκα ἐτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="30">
+<div type="textpart" subtype="verse" n="30">
 <p>καὶ ἔθαψαν αὐτόν πρός τοῖς <lb n="30"/>
 ὁρίοις τοῦ κλήρου αὐτοῦ ἐν Θαμναθασαχαρὰ ἐν τῷ ὄρει τῷ Ἐφράιμ, ἀπὸ
 βορρᾶ τοῦ ὄρους τοῦ Γαλαάδ·</p></div>
 
-<div type="textpart" subtype="section" n="30a">
+<div type="textpart" subtype="verse" n="30a">
 <p> ἐκεῖ ἔθηκαν μετ’ αὐτοῦ εἰς τὸ μνῆμα, <lb n="30a"/>
 εἰς ὃ ἔθαψαν αὐτὸν ἐκεῖ, τἀς μαχαίρας τὰς πετρίνας ἐν αἷς περιέτεμεν
 τούς υἱοὺς Ἰσραὴλ ἐν Γαλγάλοις, ὅτε ἐξήγαγεν αὐτοὺς ἐξ Αἰγύπτου
 καθὰ συνέταξεν αὐτοῖς κύριος· καἰ ἐκεῖ εἰσιν ἕως τῆς σήμερον
 ἡμέρας. </p></div>
 
-<div type="textpart" subtype="section" n="32"><p>καὶ τὰ ὀστᾶ Ἰωσὴφ ἀνήγαγον οἱ υἱοὶ Ἰσραὴλ ἐξ Αἰγύπτου <lb n="32"/>
+<div type="textpart" subtype="verse" n="32"><p>καὶ τὰ ὀστᾶ Ἰωσὴφ ἀνήγαγον οἱ υἱοὶ Ἰσραὴλ ἐξ Αἰγύπτου <lb n="32"/>
 καὶ κατώρυξαν ἐν Σικίμοις, ἐν τῇ μερίδι τοῦ ἀγροῦ οὗ ἐκτήσατο
 Ἰακὼβ παρὰ τῶν Ἀμορραίων τῶν κατοικούντων ἐν Σικιμοις ἀμνάδων
 ἑκατόν.</p></div>
 
-<div type="textpart" subtype="section" n="33">
+<div type="textpart" subtype="verse" n="33">
 <p>Καὶ ἐγένετο μετὰ ταῦτα κοὶ Ἐλεαζὰρ υἱὸς Ἀαρὼν ὁ <lb n="33"/>
 ἀρχιερεὺς ἐτελεύτησεν καὶ ἐτάφη ἐν Γαβαὰρ Φεινεὲς τοῦ υἱοῦ αὐτοῦ,
 ἢν ἔδωκεν αὐτῷ ἐν τῷ ὄερι τῷ Ἐφράιμ. </p></div>
 
-<div type="textpart" subtype="section" n="33a">
+<div type="textpart" subtype="verse" n="33a">
 <p>ἐν ἐκείνη τῆ ἡμέρᾳ λαβόντες <lb n="33a"/>
 οἱ υἱοὶ Ἰσραὴλ τὴν κιβωτὸν τοῦ θεοῦ περιεφέροσαν ἐν ἑαυτοῖς· καὶ
 Φεινεὲς ἱεράτευσεν ἀντὶ Ἐλεαζὰρ τοῦ πατρὸς αὐτοῦ ἕως ἀπέθανεν,
 καὶ κατωρύγη ἐν Γαβαὰρ τῇ ἑαυτῶν.</p></div>
 
-<div type="textpart" subtype="section" n="33b">
+<div type="textpart" subtype="verse" n="33b">
 <p>b οἱ δὲ υἱοὶ Ἰσραὴλ ἀπήλθοσαν <lb n="33b"/>
 ἕκαστος εἰς τὸν τόπον αὐτῶν καὶ εἰς τήν ἑαυτῶν πόλιν. καὶ ἐσέβοντο
 οἱ υἱοὶ Ἰσραὴλ τὴν Ἀστάρτην καὶ Ἀσταρὼθ καὶ τοὺς θεοὺς τῶν ἐθνῶν
