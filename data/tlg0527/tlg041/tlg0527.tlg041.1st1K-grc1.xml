@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Jonas</title>
+    <author xml:lang="lat">Septuaginta</author>
+    <editor>Henry Barclay Swete D.D.</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0527.tlg041.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+      License</p>
+    </availability>
+    <date>2017</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United State</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title>The Old Testament in Greek</title>
+       <editor>
+        <persName>
+         <name>Henry Barclay Swete D.D.</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
+       <imprint>
+        <publisher>Cambridge University Press</publisher>
+        <pubPlace>Cambridge</pubPlace>
+        <date>1905</date>
+       </imprint>
+       <biblScope unit="volume">3</biblScope>
+      </monogr>
+      <ref target="https://archive.org/stream/theoldtestamenti03swetuoft">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+
+
+<text>
+  <body>
+    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0527.tlg041.1st1K-grc1">
+<pb n="48"/>
+<head>ΙΩΝΑΣ</head>
+<div type="textpart" subtype="chapter" n="1">
+<note type="marginal">B</note> <div type="textpart" subtype="verse" n="1"><p>ΚΑΙ ἐγένετο λόγος Κυρίου πρὸς Ἰωνᾶν τὸν τοῦ Ἀμαθεὶ λέγων,</p></div>
+<div type="textpart" subtype="verse" n="2"><p>ʼἈνάστηθι καὶ πορεύθητι εἰς Νινευὴ τὴν πόλιν τὴν μεγάλην καὶ
+κήρυξον ἐν αὐτῇ, ὅτι ἀνέβη ἡ κραυγὴ τῆς κακίας αὐτῆς πρὸς μέ.</p></div> <div type="textpart" subtype="verse" n="3"><p>καὶ
+ἀνέστη Ἰωνᾶς τοῦ φυγεῖν εἰς Θαρσεὶς ἐκ προσώπου Κυρίου, καὶ
+κατέβη εἰς Ἰόππην· καὶ εὗρεν πλοῖον βαδίζον εἰς Θαρσείς, καὶ ἔδωκεν
+τὸ ναῦλον αὐτοῦ καὶ ἐνέβη εἰς αὐτὸ τοῦ πλεῦσαι μετʼ αὐτῶν εἰς Θαρσεὶς
+ἐκ προσώπου Κυρίου.</p></div> <div type="textpart" subtype="verse" n="4"><p>Καὶ Κύριος ἐξήγειρεν πνεῦμα ἐπὶ τὴν
+θάλασσαν, καὶ ἐγένετο κλύδων μέγας ἐν τῇ θαλάσσῃ, καὶ τὸ πλοῖον
+ἐκινδύνευεν συντριβῆναι.</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ ἐφοβήθησαν οἱ ναυτικοὶ καὶ ἀνεβόησαν
+ἕκαστος πρὸς τὸν θεὸν αὐτοῦ, καὶ ἐκβολὴν ἐποιήσαντο τῶν σκευῶν
+τῶν ἐν τῷ πλοίῳ εἰς τὴν θάλασσαν, τοῦ κουφισθῆναι ἀπʼ αὐτῶν·
+Ἰωνᾶς δὲ κατέβη εἰς τὴν κοίλην τοῦ πλοίου, καὶ ἐκάθευδεν καὶ ἔρεγχεν.</p></div>
+<div type="textpart" subtype="verse" n="6"><p>καὶ προσῆλθεν πρὸς αὐτὸν ὁ πρωρεὺς καὶ εἶπεν αὐτῷ Τί σὺ ῥέγχεις;
+ἀνάστα καὶ ἐπικαλοῦ τὸν θεόν σου, ὅπως διασώσῃ ὁ θεὸς ἡμᾶς καὶ
+μὴ ἀπολώμεθα. </p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ εἶπευ ἕκαστος πρὸς τὸν πλησίον αὐτοῦ Δεῦτε
+βάλωμεν κλήρους καὶ ἐπιγνῶμεν τίνος ἕνεκεν ἡ κακία αὕτη ἐστὶν ἐν
+ἡμῖν. καὶ ἔβαλον κλήρους. καὶ ἔπεσεν ὁ κλῆρος ἐπὶ Ἰωνᾶν.</p></div> <div type="textpart" subtype="verse" n="8"><p>καὶ
+<note type="marginal">U+05D0AQ</note> <note type="footnote">Inscr Ιωνας ς BU+05D0AQ) I 1 Αμαθι AQ 2 πορευθητι Bᵃᵇ
+(-ρευθυτητι B*)] πορευου A | Νινευη] pr την A | κρουη U+05D0* (-γη U+05D0c. ᵃ)
+3 ηφυγειν] υγ rescr U+05D0¹ (φοιιν U+05D0*ᵛⁱᵈ) | εκ 1⁰] απο U+05D0A | Ιοππην] Ιππην U+05D0*
+(Ιοππ. U+05D0c. ᵃ) | om και εδωκεν... εις Θαρσεις (3°) U+05D0* (hab U+05D0c.ᵃ) μετ ουτων εις
+Θαρσεις] εις Θ. μετ ουτων A | Θαρσις (3⁰) U+05D0c.a 4 επι] εις U+05D0c.a, ο c.b AQ |
+εκινδυνευσεν] εκινδυνευε Qᵃ | συντριβηναι] του διαλυθηναι U+05D0c.b (postea συντρ.)
+A 5 ανεβοησαν] εβοων A ανεβοων U+05D0c.b) Q | αυτου] ουτων AQ* (-των
+Qᵃ) | ερεγκε Qᵃ 6 πρωρευς] οι γ΄ κυβερνητης Qmg | αυτω] προς αυτον
+A | ρεγχεις (ρεγκ. Qᵃ)] ρεγχει U+05D0* (-γχεις U+05D0c.a, c.ᵇ) | αναστα] αναστηθι
+U+05D0c.b Qᵃ om και 3⁰ Q | οπως] ειπως AQᵃ (επως Q*) | διασωσει Q* ᵛⁱᵈ | ημας]
+pr η U+05D0 | μη] pr ου U+05D0c.a AQᵃ 7 ειπεν] ειπαν Q | επιγνωμεν] επιγνωσο-
+μεν U+05D0* (-γνωμεν U+05D0c.a, c.ᵇ) | αυτη εστιν] η ε rescr U+05D0¹ εν ημιν] εφ ημας Q</note>
+
+<pb n="49"/>
+εἶπον πρὸς αὐτόν Ἀπάγγειλον ἡμῖν τίς σου ἡ ἐργασία ἐστίν, καὶ <note type="marginal">B</note>
+πόθεν ἔρχῃ. καὶ ἐκ ποίας χώρας καὶ ἐκ ποίου λαοῦ εἶ σύ;</p></div> <div type="textpart" subtype="verse" n="9"><p>καὶ εἶπεν
+πρὸς αὐτούς Δοῦλος Κυρίου ἐγὼ εἰμι, καὶ τὸν κύριον θεὸν τοῦ οὐρανοῦ
+ἐγῶ σέβομαι, ὃς ἐποίησεν τὴν θάλασσαν καὶ τὴν ξηράν. </p></div> <div type="textpart" subtype="verse" n="10"><p>καὶ ἐφοβήθησαν
+οἱ ἄνδρες φόβον μέγαν καὶ εἶπαν πρὸς αὐτόν Τί τοῦτο ἐποίησας;
+διότι ἔγνωσαν οἱ ἄνδρες ὅτι ἐκ προσώπου Κυρίου ἦν φεύγων,
+ὅτι ἀπήγγειλεν αὐτοῖς.</p></div> <div type="textpart" subtype="verse" n="11"><p>καὶ εἶπαν πρὸς αὐτόν Τί σοι ποιήσομεν, καὶ
+κοπάσει ἡ θάλασσα ἀφʼ ἡμῶν; ὅτι ἡ θάλασσα ἐπορεύετο καὶ ἐξήγειρεν
+μᾶλλον κλύδωνα.</p></div> <div type="textpart" subtype="verse" n="12"><p>καὶ εἶπεν Ἰωνᾶς πρὸς αὐτούς Ἄρατέ με καὶ
+ἐμβάλετέ με εἰς τὴν θάλασσαν, καὶ κοπάσει ἡ θάλασσα ἀφʼ ὑμῶν·
+διότι ἔγνωκα ἐγὼ ὅτι δι᾿ ἐμὲ ὁ κλύδων ὁ μέγας οὗτος ἐφʼ ὑμᾶς ἐστίν.</p></div>
+<div type="textpart" subtype="verse" n="13"><p>καὶ παρεβιάζοντο οἱ ἄνδρες τοῦ ἐπιστρέψαι πρὸς τὴν γῆν, καὶ οὐκ ἡδύναντο,
+ὅτι ἡ θάλασσα ἐπορεύετο καὶ ἐξηγείρετο μᾶλλον ἐπʼ αὐτούς.</p></div>
+<div type="textpart" subtype="verse" n="14"><p>καὶ ἀνεβόησαν πρὸς Κύριον καὶ εἶπαν Μηδαμῶς, Κύριε· μὴ ἀπολώμεθα
+ἕνεκεν τῆς ψυχῆς τοῦ ἀνθρώπου τούτου, καὶ μὴ δῷς ἐφʼ ἡμᾶς
+αἷμα δίκαιον, διότι σύ, Κύριε, ὃν τρόπον ἐβούλου πεποίηκας. </p></div> <div type="textpart" subtype="verse" n="15"><p>καὶ
+ἔλαβον τὸν Ἰωνᾶν καὶ ἐξέβαλον αὐτὸν εἰς τὴν θάλασσαν, καὶ ἔστη ἡ
+θάλασσα ἐκ τοῦ σάλου αὐτῆς.</p></div> <div type="textpart" subtype="verse" n="16"><p>καὶ ἐφοβήθησαν οἱ ἄνδρες φόβῳ
+μεγάλῳ τὸν κύριον, καὶ ἔθυσαν θυσίας τῷ κυρίῳ καὶ εὔξαντο εὐχάς.</p></div>
+</div>
+
+<div type="textpart" subtype="chapter" n="2">
+<div type="textpart" subtype="verse" n="1"><p>Καὶ προσέταξεν Κύριος κήτει μεγάλῳ καταπιεῖν τὸν <del status="error">Ἰωνᾶν·</del> καὶ
+ἦν Ἰωνᾶς ἐν τῇ κοιλίᾳ τοῦ κήτους τρεῖς ἡμέρας καὶ τρεῖς νύκτας.</p></div>
+<div type="textpart" subtype="verse" n="2"><p>καὶ προσηύξατο Ἰωνᾶς πρὸς Κύριον τὸν θεὸν αὐτοῦ ἐκ τῆς κοιλίας
+τοῦ κήτους,</p></div> <div type="textpart" subtype="verse" n="3"><p>καὶ εἶπεν
+<note type="footnote">8 ειπον] ειπαν U+05D0AQ | απαγγειλον] + δή Qmg | ημιν] + τινος ενεκεν η κακια <note type="marginal">U+05D0AQ</note>
+αυτη εστιν εν ημιν AQ | ερχη] + κ που πορευει U+05D0c.b + και που πορευη Qᵐᵍ |
+ει συ] συ ει Q 9 ειμι εγω U+05D0* (εγω ειμι U+05D0c mox ειμι εγω revoc) |
+τον κυριον θεον] κν τον θν Q | σεβομαι] φοβουμαι U+05D0c.b 10 φοβω
+μεγαλω U+05D0c.ᵇ ⁽ᵛiᵈ) (mox φοβον μεγαν revoc) | φευων U+05D0* (φευγων U+05D0c.a)
+11 ποιησωμεν U+05D0A | επορυετο U+05D0c.b επωρυετο AQ* : item 13 12 αυτους]
+αυτο Qᵃᵛⁱᵈ εμβαλετε] ενβαλατε U+05D0 | om με 2⁰ AQa οτι] διοτι U+05D0* (οτι
+U+05D0c.b) κλυδων] γ pro κ inceb U+05D0* (κλ. U+05D0¹) 13 καιπερ εβιαζοντο B* ᵛiᵈ (και
+παρεβιαζ. Bᵃᵇ) προς] θ΄σ΄ εις Qᵐᵍ εδυναντο A εηγειρετο U+05D0* (εξηγ. U+05D0¹ c.a)
+14 προς Κυριον και ειπαν μηδαμως sup ras et in mg Aa Κυριον] pr τον U+05D0*
+(om τον U+05D0c.b) om μη απολωμεθα...συ Κυριε U+05D0* (hab U+05D0c.a) απολοιμεθα U+05D0c.a
+(απολωμ. U+05D0c.b) Q διοτι] οτι AQ* (διοτι Qmg) συ] σου U+05D0c.ᵃ βεβουλου U+05D0*
+(εβ. U+05D0?) 15 εξεβαλον] εβαλον U+05D0*c.b ενεβαλον U+05D0c.ᵃA σαλους AQ* (-λου Qᵃ)
+16 εφοβηθησαν] incep ερ U+05D0* θυσιαν AQ* (-ας Qᵃ) om κυριω U+05D0* (superscr
+κω U+05D01) | ηυξξαντο U+05D0¹ (ηξ. U+05D0*) AQ II 1 κητει] τητει U+05D0* (κητι U+05D0c.a, c.ᵇ)
+καταπιειν] και κατεπιεν U+05D0* (καταπ. U+05D0c.a, c.ᵇ) τον Ιωναν] om τον U+05D0? 2 τον
+θεον] om τον U+05D0c.ᵃ (rurs ras) Q 2—3 om αυτου εκ της κοιλιας...Κυριον τον
+θεον (2⁰) U+05D0* (hab U+05D0¹c.a (ᵛiᵈ), c.b) 2 τον θεον] om τον Q 3 ειπεν] + ως Qmg</note>
+
+<pb n="50"/>
+ <note type="marginal">B</note> <lg><l>Ἐβόησα ἐν θλίψει μου πρὸς Κύριον τὸν θεόν μου, καὶ εἰσήκουσέν</l>
+<l>μου.</l>
+<l>ἐκ κοιλίας ᾅδου κραυγῆς μου ἤκουσας φωνῆς μου·</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="4"><p><lg><l>⁴ἀπέρριψάς με εἰς βάθη καρδίας θαλάσσης,</l>
+<l>καὶ ποταμοί με ἐκύκλωσαν,</l>
+<l>πάντες οἱ μετεωρισμοί σου καὶ τὰ κύματά σου ἐπʼ ἐμὲ</l>
+<l>διῆλθον.</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="5"><p><lg><l>⁵καὶ ἐγώ εἶπα Ἀπῶσμαι ἐξ ὀφθαλμῶν σου·</l>
+<l>ἆρα προσθήσω τοῦ ἐπιβλέψαι πρὸς τὸν λαὸν τὸν ἅγιόν</l>
+<l>σου;</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="6"><p><lg><l>⁶περιεχύθη ὕδωρ μοι ἕως ψυχῆς.</l>
+<l>ἄβυσσος ἐκύκλωσέν με ἐσχάτη,</l>
+<l>ἔδυ ἡ κεφαλή μου εἰς σχισμὰς ὀρέων,</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="7"><p><lg><l>⁷κατέβην εἰς γῆν ἧς οἱ μοχλοὶ αὐτῆς κάτοχοι αἰώνιοι·</l>
+<l>καὶ ἀναβήτω φθορὰ ζωῆς μου, Κύριε ὁ θεός μου,</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="8"><p><lg><l>8ἐν τῷ ἐκλιπεῖν ἀπʼ ἐμοῦ τὴν ψυχήν μου τοῦ κυρίου</l>
+<l rend="indent">ἐμνήσθην,</l>
+<l>καὶ ἔλθοι πρὸς σὲ ἡ εὐχή μου εἰς ναὸν ἅγιόν σου.</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="9"><p><lg><l>⁹φυλασσόμενοι μάταια καὶ ψευδῆ</l>
+<l>ἔλεος αὐτῶν ἐγκατέλιπον.</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="10"><p><lg><l>¹⁰ἐγὼ δὲ μετὰ φωνῆς αἰνέσεως καὶ ἐξομολογήσεως θύσω σοι,</l>
+<l>ὅσα ηὐξάμην ἀποδώσω σοι σωτηρίου τῷ κυρίῳ.</l></lg></p></div>
+ <div type="textpart" subtype="verse" n="11"><p><lg><l>¹¹Καὶ προσετάγη τῷ κήτει, καὶ ἐξέβαλεν τὸν Ἰωνᾶν ἐπὶ τὴν ξηράν.</l></lg></p></div>
+</div>
+
+<div type="textpart" subtype="chapter" n="3">
+<div type="textpart" subtype="verse" n="1"><p>Καὶ ἐγένετο λόγος Κυρίου πρὸς Ἰωνᾶν ἐκ δευτέρου λέγων</p></div>
+<div type="textpart" subtype="verse" n="2"><p>Ἀνάστηθι πορεύθητι εἰς Νινευὴ τὴν πόλιν τὴν μεγάλην, καὶ κήρυξον
+ἐν αὐτῇ κατὰ τὸ κήρυγμα τὸ ἔμπροσθεν ὃ ἐγὼ ἐλάλησα πρὸς σέ.</p></div>
+<div type="textpart" subtype="verse" n="3"><p>καὶ ἀνέστη Ἰωνᾶς καὶ ἐπορεύθη εἰς Νινευή, καθὰ ἐλάλησεν Κύριος·
+ἡ δὲ Νινευὴ ἦν πόλις μεγάλη τῷ θεῷ, ὡσεὶ πορείας ὁδοῦ ἡμερῶν τριῶν.</p></div>
+<note type="marginal">U+05D0AQ</note> <note type="footnote">3 εβοησα] pr ωδη A | κρουης U+05D0* (-γης U+05D0c.a) 4 απεριψας U+05D0Q* |
+με 1⁰] μες (sic) U+05D0 | om σου 2⁰ Q* (hab Q¹ᵐᵍ) 5 και εγω] καγω A | επι-
+βλεψαι] επιστρεφε U+05D0* (επιβλεψε U+05D0¹ -ψαι U+05D0c.a, c.b) | τον λαον B* ᵇ] τον ναον
+BᵃᵇU+05D0 ναον AQ 6 υδωρ μοι (μου U+05D0* μοι U+05D0¹)] μοι υδωρ AQ | ψυχης] + μου
+Qᵃ⁽ᵐᵍ)vid | εισχισμας U+05D0* (εις σχ. U+05D0c.b) 7 φθορα ζωης] εκ φθορας ζωης
+U+05D0c.c(vid) εκ φθορας η ζωη AQ | Κυριε] pr προς σε U+05D0c.c (vid) 8 εκλειπειν
+AQ | απ εμου την ψυχην μου] την ψ. μου απ εμου AQ | ευχη] προσευχη
+U+05D0c.ᵇAQ 9 ελεον U+05D0c.a (mox ελεος revoc) Q | εγκατελειπον AQ* (-λιπον Qa)
+10 αινεσως B* (-σεως Bᵃᵇ) | και] ε pro κ incep B* | σοι σωτηριου] εις σωτηριον
+μου U+05D0c.a non c,b AQ | τω κυριω] pr ω U+05D0* (om ω U+05D0¹c.a) pr τω U+05D0c.b (per incur)
+11 προσεταγη] + απο κυ U+05D0c.b (postea ras) III 2 πορευθητι] pr και U+05D0c.a
+(postea ras) AQ | Νινευην U+05D0 3 καθως AQ* (καθα Qa) | ποριας U+05D0A</note>
+
+<pb n="51"/>
+<div type="textpart" subtype="verse" n="4"><p>καὶ ἤρξατο Ἰωνᾶς τοῦ εἰσελθεῖν εἰς τὴν πόλιν ὡσεὶ πορείαν ἡμέρας <note type="marginal">B</note>
+μιᾶς, καὶ ἐκήρυξεν καὶ εἶπεν Ἔτι τρεῖς ἡμέραι καὶ Νινευὴ καταστραφήσεται.</p></div>
+<div type="textpart" subtype="verse" n="5"><p>καὶ ἐνεπίστευσαν οἱ ἄνδρες Νινευὴ τῷ θεῷ, καὶ ἐκήρυξαν
+νηστίαν, καὶ ἐνεδύσαντο σάκκους ἀπὸ μεγάλου αὐτῶν ἕως μικροῦ
+αὐτῶν.</p></div> <div type="textpart" subtype="verse" n="6"><p>καὶ ἤγγισεν ὁ λόγος πρὸς τὸν βασιλέα τῆς Νινευή· καὶ
+ἐξανέστη ἀπὸ τοῦ θρόνου αὐτοῦ, καὶ περιείλατο τὴν στολὴν αὐτοῦ
+ἀφʼ ἑαυτοῦ καὶ περιεβάλετο σάκκον, καὶ ἐκάθισεν ἐπὶ σποδοῦ.</p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ
+ἐκηρύχθη καὶ ἐρρέθη ἐν τῇ Νινευὴ παρὰ τοῦ βασιλέως καὶ παρὰ τῶν
+μεγιστάνων αὐτοῦ λέγων Οἱ ἄνθρωποι καὶ τὰ κτήνη καὶ οἱ βόες καὶ
+τὰ πρόβατα μὴ γευσάσθωσαν μηδὲν μηδὲ νεμέσθωσαν μηδὲ ὕδωρ
+πιέτωσαν.</p></div> <div type="textpart" subtype="verse" n="8"><p>καὶ περιεβάλοντο σάκκους οἱ ἄνθρωποι καὶ τὰ κτήνη,
+καὶ ἀνεβόησαν πρὸς τὸν θεὸν ἐκτενῶς· καὶ ἀπέστρεψαν ἕκαστος ἀπὸ
+τῆς ὁδοῦ αὐτοῦ τῆς πονηρᾶς καὶ ἀπὸ τῆς ἀδικίας τῆς ἐν χερσὶν αὐτῶν,
+λέγοντες</p></div> <div type="textpart" subtype="verse" n="9"><p>Τίς οἶδεν εἰ μετανοήσει ὁ θεὸς καὶ ἀποστρέψει ἐξ ὀργῆς
+θυμοῦ αὐτοῦ, καὶ οὐ μὴ ἀπολώμεθα;</p></div> <div type="textpart" subtype="verse" n="10"><p>καὶ εἶδεν ὁ θεὸς τὰ ἔργα
+αὐτῶν, ὅτι ἀπέστρεψαν ἀπὸ τῶν ὁδῶν αὐτῶν τῶν πονηρῶν· καὶ
+μετενόησεν ὁ θεὸς ἐπὶ τῇ κακίᾳ ᾗ ἐλάλησεν τοῦ ποιῆσαι αὐτοῖς, καὶ
+οὐκ ἐποίησεν.</p></div>
+</div>
+
+<div type="textpart" subtype="chapter" n="4">
+<div type="textpart" subtype="verse" n="1"><p>Καὶ ἐλυπήθη Ἰωνᾶς λύπην μεγάλην, καὶ συνεχύθη·</p></div>
+<div type="textpart" subtype="verse" n="2"><p>καὶ προσεύξατο πρὸς Κύριον καὶ εἶπεν Ὦ Κύριε, οὐχ οὗτοι
+οἱ λόγοι μου, ἔτι ὄντος μου ἐν τῇ γῇ μου διὰ τοῦτο προέφθασα
+τοῦ φυγεῖν εἰς Θαρσείς, διότι ἔγνων ὅτι σὺ ἐλεήμων καὶ οἰκτίρμων,
+μακρόθυμος καὶ πολυέλεος καὶ μετανοῶν ἐπὶ ταῖς κακίαις.</p></div> <div type="textpart" subtype="verse" n="3"><p>καὶ νῦν,
+δέσποτα Κύριε, λάβε τὴν ψυχήν μου ἀπʼ ἐμοῦ, ὅτι καλὸν τὸ ἀποθανεῖν
+με ἢ ζῇν με.</p></div> <div type="textpart" subtype="verse" n="4"><p>καὶ εἶπεν Κύριος πρὸς Ἰωνᾶν Εἰ σφόδρα λελύπησαι
+σύ;</p></div> <div type="textpart" subtype="verse" n="5"><p>καὶ ἐξῆλθεν Ἰωνᾶς ἐκ τῆς πόλεως, καὶ ἐκάθισεν ἀπέναντι τῆς
+<note type="footnote">4 εισελθειν] εισπορευεσθαι U+05D0c.b AQ | πορειαν (-ριαν U+05D0)] ποριας AQ* (πορειαν <note type="marginal">U+05D0AQ</note>
+Qᵃ) + οδου AQ | ημερας] μερας U+05D0* (ημ. U+05D01?c.a) εκηρυξω U+05D0* (-ξεν U+05D0¹) τρεις] οι
+λ΄ τεσσερακοντα Qmg 5 ενεπιστευσαν] επιστευσαν U+05D0c.a | νηστειαν Bᵃᵇ AQ |
+και 3⁰] αι U+05D0* (και U+05D0c.a) | μικρου αυτων (om αυτ. AQ* hab Qmg) εως μεγαλου
+αυτων U+05D0c.b (postea μεγ. αυτ. εως μικρ. αυτ. revoc) AQ 6 λογος] λαος
+U+05D0c.b (mox λογος revoc) | βασια U+05D0* (βασιλεα U+05D0c.a) | Νινευης U+05D0* (ς improb
+U+05D0c.a postea ras) περιειλετο Qa (vid) 7 ερρεθη (ερεθη U+05D0*)] ερρηθη BᵃᵇQᵃ |
+παρα των μεγιστανων αυτου] παντων μεγ. αυτω U+05D0c.a, c.b γευεσθωσαν U+05D0*
+(γευσασθ. U+05D0c.a, c.b) A | μηθεν A | νεμεσθωσαν] + μηδεν U+05D0* (om μηδεν U+05D0c.b) |
+πινετωσαν U+05D0 8 ανεστρεψαν U+05D0c.b Q* απεστρεψεν A α΄θ΄ επεστρεψαν Qᵐᵍ |
+πονηρας] πο sup ras seq ras pl litt Aᵃ 10 οιδε U+05D01?c.a (οιδες U+05D0* vid) | μετα-
+νοιησει Q* (-νοησ. Qᵃ) | τη κακια η] τα κακα α A | αυτοις] αυτοι U+05D0* (-τοις
+U+05D0c.a) IV 2 προσηυξατο Bᵇ et fort c U+05D0AQ | ω] + (?) ωδη U+05D0c.b vid ωδη certe
+Qa | μου 1⁰] + ους ελαλησα A | εγνων] + εγω U+05D0c.a (mox improb) συ] + θς Q |
+οικτειρμων U+05D0c.b AQ* (-κτιρμ. Qa) 3 η] ει BU+05D0* (η U+05D0c.b) pr μαλλον U+05D0c.a
+(μ. postea ras) om με 2⁰ U+05D0c.b AQ* vid (hab Qᵐᵍ) 4 σφοδρα] + συ U+05D0*
+(improb U+05D0c.a postea ras)</note>
+
+<pb n="52"/>
+<note type="marginal">B</note> πόλεως· καὶ ἐποίησεν ἑαυτῷ ἐκεῖ σκηνὴν καὶ ἐκάθητο ὑποκάτω αὐτῆς
+ἐν σκιῷ, ἕως οὗ ἀπίδῃ τί ἔσται τῇ πόλει.</p></div> <div type="textpart" subtype="verse" n="6"><p>καὶ προσέταξεν Κύριος
+ὁ θεὸς κολοκύνθῃ, καὶ ἀνέβη ὑπὲρ κεφαλῆς τοῦ Ἰωνᾶ τοῦ εἶναι σκιὰν
+ὑπεράνω τῆς κεφαλῆς αὐτοῦ, τοῦ σκιάζειν αὐτῷ ἀπὸ τῶν κακῶν
+αὐτοῦ· καὶ ἐχάρη Ἰωνᾶς ἐπὶ τῇ κολοκύνθῃ χαρὰν μεγάλην.</p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ
+προσέταξεν ὁ θεὸς σκώληκι ἑωθινῇ τῇ ἐπαύριον, καὶ ἐπάταξεν τὴν
+κολοκύνθαν, καὶ ἀπεξηράνθη.</p></div> <div type="textpart" subtype="verse" n="8"><p>καὶ ἐγένετο ἅμα τῷ ἀνατεῖλαι τὸν
+ἥλιον καὶ προσέταξεν ὁ θεὸς πνεύματι καύσωνος συνκαίοντι, καὶ
+ἐπάταξεν ὁ ἥλιος ἐπὶ τὴν κεφαλὴν Ἰωνᾶ· καὶ ὠλιγοψύχησεν καὶ
+ἀπελέγετο τὴν ψυχὴν αὐτοῦ, καὶ εἶπεν Καλόν μοι ἀποθανεῖν με ἢ
+ζῇν.</p></div> <div type="textpart" subtype="verse" n="9"><p>καὶ εἶπεν ὁ θεὸς πρὸς Ἰωνᾶν Εἰ σφόδρα λελύπησαι σὺ ἐπὶ
+τῇ κολοκύνθῃ; καὶ εἶπεν Σφόδρα λελύπημαι ἐγὼ ἕως θανάτου.</p></div> <div type="textpart" subtype="verse" n="10"><p>καὶ
+εἶπεν Κύριος Σὺ ἐφείσω ὑπὲρ τῆς κολοκύνθης, ὑπὲρ ἧς οὐκ ἐκακοπάθησας
+ἐπʼ αὐτήν, καὶ οὐκ ἐξέθρεψας αὐτήν, ἣ ἐγενήθη ὑπὸ νύκτα
+καὶ ὑπὸ νύκτα ἀπώλετο.</p></div> <div type="textpart" subtype="verse" n="11"><p>ἐγὼ δὲ οὐ φείσομαι ὑπὲρ Νινευὴ τῆς
+πόλεως τῆς μεγάλης, ἐν ᾗ κατοικοῦσιν πλείους δώδεκα μυριάδες
+ἀνθρώπων, οἵτινες οὐκ ἔγνωσαν δεξιὰν αὐτῶν ἢ ἀριστερὰν αὐτῶν,
+καὶ κτήνη πολλά;</p></div> 
+<note type="marginal">U+05D0AQ</note> <note type="footnote">5 εκει σκηνην εαυτω A | om ου Q | αφειδη A | τη πολει] pr εν U+05D0 6 κο-
+λοκυνθη bis] κολοκυντη AQ* (-νθη Qa) | του ειναι] om του AQ | σκιαν] pr
+εις U+05D0c.a (mox ras) | αυτου 2⁰] αυτων U+05D0* (-του U+05D0c.a, c.b) 7 ο θεος] ων
+U+05D0* pr κς AQ | σκωληκι] pr σ U+05D0* (improb U+05D0¹) | κολοκυνταν A 8 ο θεος]
+pr κς AQ | συγκαιοντι Bᵇ | ολιγοψυχησεν U+05D0 | om μοι Q* (hab Qmg)]
+αποθανειν] pr το U+05D0c.b AQ | om με U+05D0 | ζην] + με U+05D0c.aQ 9 ο θεος]
+pr κς U+05D0c.a A | κολοκυντη AQᵃ 10 κολοκυντης AQa | επ αυτην] επ αυτης
+U+05D0* (επ αυτην U+05D0c.a(vid)) A εις αυτην U+05D0c.a Qᵃ | και ουκ] ουδε U+05D0c.b | υπο νυκτα
+εγενηθη AQ 11 om της μεγαλης A | κατοικουσιν] + εν αυτη Qmg |
+πλειους] πλιου U+05D0* (πλιους U+05D0c.ᵃ) + ῃ U+05D0c.a Q | η 2⁰] ουδε A
+Subscr Ιωνας ς BU+05D0Q Ιωνας προφητης ς A</note>
+</div>
+
+
+
+
+    </div>
+  </body>
+</text>
+</TEI>
