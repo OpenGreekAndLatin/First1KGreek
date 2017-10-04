@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title>Nahum</title>
+    <author xml:lang="lat">Septuaginta</author>
+    <editor>Henry Barclay Swete D.D.</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0527.tlg042.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+      License</p>
+    </availability>
+    <date>2017</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United State</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title>The Old Testament in Greek</title>
+       <editor>
+        <persName>
+         <name>Henry Barclay Swete D.D.</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
+       <imprint>
+        <publisher>Cambridge University Press</publisher>
+        <pubPlace>Cambridge</pubPlace>
+        <date>1905</date>
+       </imprint>
+       <biblScope unit="volume">3</biblScope>
+      </monogr>
+      <ref target="https://archive.org/stream/theoldtestamenti03swetuoft">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+
+
+<text>
+  <body>
+    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0527.tlg042.1st1K-grc1">
+<pb n="53"/>
+<head>ΝΑΟΥΜ</head>
+<div type="textpart" subtype="chapter" n="1">
+<div type="textpart" subtype="verse" n="1"><p>ΑΗΜΜA Νινευή, βιβλίον ὁράσεως Ναοὺμ τοῦ Ἐλκεσαίου.</p></div> <note type="marginal">B</note>
+<div type="textpart" subtype="verse" n="2"><p>Θεὸς ζηλωτὴς καὶ ἐκδικῶν Κύριος μετὰ θυμοῦ, ἐκδικῶν Κύριος
+τοὺς ὑπεναντίους αὐτοῦ, καὶ ἐξαίρων αὐτὸς τοὺς ἐχθροὺς αὐτοῦ.</p></div>
+<div type="textpart" subtype="verse" n="3"><p>Κύριος μακρόθυμος. καὶ μεγάλη ἡ ἰσχὺς αὐτοῦ, καὶ ἀθῷον οὐκ ἀθῳώσει
+Κύριος· ἐν συντελείᾳ καὶ ἐν συνσεισμῷ ἡ ὁδὸς αὐτοῦ, καὶ
+νεφέλαι κονιορτὸς ποδῶν αὐτοῦ·</p></div> <div type="textpart" subtype="verse" n="4"><p>ἀπειλῶν θαλάσσῃ καὶ ξηραίνων
+αὐτήν, καὶ πάντας τοὺς ποταμοὺς ἐξερημῶν. ὀλιγώθη ἡ Βασανῖτις
+καὶ ὁ Κάρμηλος, καὶ τὰ ἐξανθοῦντα τοῦ Λιβάνου ἐξέλιπεν·</p></div> <div type="textpart" subtype="verse" n="5"><p>τὰ ὄρη
+ἐσείσθησαν ἀπʼ αὐτοῦ, καὶ οἱ βουνοὶ ἐσαλεύθησαν· καὶ ἀνεστάλη ἡ
+γῆ ἀπὸ προσώπου αὐτοῦ ἡ σύμπασα, καὶ πάντες οἱ κατοικοῦντες
+ἐν αὐτῇ.</p></div> <div type="textpart" subtype="verse" n="6"><p>ἀπὸ προσώπου ἀργῆς αὐτοῦ τίς ὑποστήσεται; καὶ τίς
+ἀντιστήσεται ἐν ὀργῇ θυμοῦ αὐτοῦ; ὁ θυμὸς αὐτοῦ τήκει ἀρχάς, καὶ
+αἱ πέτραι διεθρύβησαν ἀπʼ αὐτοῦ.</p></div> <div type="textpart" subtype="verse" n="7"><p>χρηστὸς Κύριος τοῖς ὑπομένουσιν
+αὐτὸν ἐν ἡμέρᾳ θλίψεως, καὶ γινώσκων τοὺς εὐλαβουμένους αὐτόν.</p></div>
+<div type="textpart" subtype="verse" n="8"><p>καὶ ἐν κατακλυσμῷ πορείας συντέλειαν ποιήσεται, τοὺς ἐπεγειρομένους
+καὶ τοὺς ἐχθροὺς αὐτοῦ διώξεται σκότος.</p></div> <div type="textpart" subtype="verse" n="9"><p>τί λογίζεσθε ἐπὶ
+τὸν κύριον; συντέλειαν αὐτὸς ποιήσεται, οὐκ ἐκδικήσει δὶς ἐπὶ τὸ
+αὐτὸ ἐν θλίψει·</p></div> <div type="textpart" subtype="verse" n="10"><p>ὅτι ἕως θεμελίου αὐτοῦ χερσωθήσεται, καὶ ὡς σμῖλαξ
+περιπλεκομένη βρωθήσεται, καὶ ὡς καλάμη ξηρασίας μεστή. </p></div> <div type="textpart" subtype="verse" n="11"><p>ἐκ
+<note type="footnote">Inscr Ναουμ ζ BU+05D0AQ I 1 Ελκαισεου U+05D0* Ελκεσεου U+05D0c.b 2 Κυ- <note type="marginal">U+05D0AQ</note>
+ριος 1⁰] + εκδικων Bᵃᵇ | εκδικων 2⁰] pr και U+05D0c.a | om Κυριος 2⁰ Q 3 αθωον]
+αθοων U+05D0c.a, c.b AQa αθοον Q* | αθοωσει B*U+05D0AQ* (αθωωσ. BᵇQᵃ) | συντελια
+U+05D0* (-λεια U+05D0c.b) | συσσεισμω BᵃᵇU+05D0Qᵃ 4 ωλιγθη BᵇU+05D0* (ολιγ. U+05D0c.a a, c.b
+A τα εξανθουντα] pr παντα U+05D0c.b ᵇ εξελειπεν AQ 5 απ] υπ Q* | om
+και οι βουνοι εσαλευθησαν και α U+05D0* (hab U+05D0¹?ᵃ? partim rescr partim inst
+U+05D0c.a c) ανεσταλη] ανεστη U+05D0c.b (ανεσταλ. revoc U+05D0c.c ) συνπασα U+05D0Α 6 om
+οργης Q* ᵛⁱᵈ (hab Qᵃ⁽ᵐᵍ) 8 ποριας U+05D0 | συντελιαν U+05D0* (- λειαν U+05D0c.b
+item 9 9 om τι ᵃ* (superscr Qᵃ) ποιησεται] ποιησει U+05D0c.b 9— 10 om
+ουκ εκδικησει.. .χερσωθησεται U+05D0* (hab U+05D0c.a, c.b) 10 αυτου] αυτης U+05D0c.a, c.b
+ουτων A χερσωθησονται A ωσμιλας U+05D0* (ως σμιλαξ U+05D0c.b) ωσμιλαξ A
+11 εκ σου] εξ ου U+05D0</note>
+
+<pb n="54"/>
+<note type="marginal">B</note> σοῦ ἐξελεύσεται λογισμὸς κατὰ τοῦ κυρίου πονηρά, βουλευόμενος
+ἐναντία.</p></div> <div type="textpart" subtype="verse" n="12"><p>τάδε λέγει Κύριος κατάρχων ὑδάτων πολλῶν Καὶ οὕτως
+διασταλήσονται, καὶ ἡ ἀκοὴ σου οὐκ ἐνακουσθήσεται ἔτι.</p></div> <div type="textpart" subtype="verse" n="13"><p>καὶ νῦν
+συντρίψω τὴν ῥάβδον αὐτοῦ ἀπὸ σοῦ, καὶ τοὺς δεσμοὺς διαρήξω·</p></div>
+<div type="textpart" subtype="verse" n="14"><p>καὶ ἐντελεῖται ὑπέρ σοῦ Κύριος, οὐ σπαρήσεται ἐκ τοῦ ὀνόματός
+σου ἔτι· ἐξ οἴκου θεοῦ σου ἐξολεθρεύσω τὰ γλυπτά, καὶ χωνευτὰ
+θήσομαι ταφὴν σου· ὅτι ταχεῖς.</p></div> <div type="textpart" subtype="verse" n="15"><p>δοὺ ἐπὶ τὰ ὄρη οἱ πόδες εὐαγγελιζομένου
+καὶ ἀπαγγέλλοντος εἰρήνην· ἑόρταζε, Ἰούδα, τὰς ἑορτάς
+σου, ἀπόδος τὰς εὐχάς σου, διότι οὐ μὴ προσθήσωσιν ἔτι τοῦ
+διελθεῖν διὰ σοῦ εἰς παλαίωσιν.</p></div>
+</div>
+
+<div type="textpart" subtype="chapter" n="2">
+<div type="textpart" subtype="verse" n="1"><p>Συντετέλεσται, ἐξῆρται·</p></div> <div type="textpart" subtype="verse" n="2"><p>ἀνέβη ἐμφυσῶν εἰς πρόσωπόν σου,
+ἐξαιρούμενος ἐκ θλίψεως. σκόπευσον ὁδόν, κράτησον ὀσφύος,
+ἄνδρισαι τῇ ἰσχύι σφόδρα·</p></div> <div type="textpart" subtype="verse" n="3"><p>διότι ἀπέστρεψεν Κύριος τὴν ὕβριν
+Ἰακὼβ καθὼς ὕβριν τοῦ Ἰσραήλ, διότι ἐκτινάσσοντες ἐξετίναξαν
+αὐτοὺς καὶ τὰ κλήματα αὐτῶν διέφθειραν.</p></div> <div type="textpart" subtype="verse" n="4"><p>ὅπλα δυναστείας αὐτῶν
+ἐξ ἀνθρώπων, ἄνδρας δυνατοὺς ἐμπαίζοντας ἐν πυρί αἱ ἡνίαι τῶν
+ἁρμάτων αὐτῶν ἐν ἡμέρᾳ ἑτοιμασίας αὐτοῦ, καὶ οἱ ἱππεῖς θορυβηθήσονται</p></div>
+<div type="textpart" subtype="verse" n="5"><p>ἐν ταῖς ὁδοῖς, καὶ συγχυθήσονται τὰ ἄρματα καὶ συνπλακήσονται
+ἐν ταῖς πλατείαις· ἡ ὅρασις αὐτῶν ὡς λαμπάδες πυρὸς καὶ
+ὡς ἀστραπαὶ διατρέχουσαι.</p></div> <div type="textpart" subtype="verse" n="6"><p>καὶ μνησθήσονται οἱ μεγιστᾶνες αὐτῶν,
+καὶ φεύξονται ἡμέρας καὶ ἀσθενήσουσιν ἐν τῇ πορίᾳ αὐτῶν, καὶ
+σπεύσουσιν ἐπὶ τὰ τείχη αὐτῆς καὶ ἑτοιμάσουσιν τὰς προφυλακὰς
+αὐτῶν.</p></div> <div type="textpart" subtype="verse" n="7"><p>πύλαι τῶν πόλεων διηνοίχθησαν, καὶ τὰ βασίλεια διέπεσεθ,</p></div>
+<div type="textpart" subtype="verse" n="8"><p>καὶ ἡ ὑπόστασις ἀπεκαλύφθη· καὶ αὕτη ἀνέβαινεν καὶ αἱ δοῦλαι
+αὐτῆς ἥγοντο καθὼς περιστεραὶ φθεγγόμεναι ἐν καρδίαις αὐτῶν.</p></div> <div type="textpart" subtype="verse" n="9"><p>καὶ
+<note type="marginal">U+05D0AQ</note> <note type="footnote">11 του κυριου] om του Q πονηρα] α᾿ κακιαν Qᵐᵍ βουλευομενος] λογιζο-
+μενος AQ AQa α᾿ βουλ. αποστασια Qmg εναντια] pr ποιησεται A* (ras τα A?)
+13 δεσμους] + σου U+05D0c.a A διαρρhξω BᵇU+05D0c.b AQ 14 υπερ] περι U+05D0 | εκ του
+ονοματος] εξ ονομ. U+05D0c.b εξ οικου] pr τα A τα γλυπτα] improb τα U+05D0c.ᵇ
++σου A 15 σου αποδος τας εν sup ras U+05D0¹ προσθησωσιν] προσθωσιν U+05D0ΑQ) |
+om δια σου AQ II 1 εξηρται] εξητε U+05D0* (εξηρτε X⁰ ρται U+05D0c.b ᵇ etiam
+ανηλωται B ᵇᵐᵍ) 2 ενφυσων U+05D0 | προσωπον] pr το Q* (improb το Qa)
+εξαιρουμενος] + σε A τη ισχυι] της ισχ. (nisi forte τη εισ χ ) N* +σου A
+3 υβιν U+05D0* (υβρ. U+05D0c.a) 4 δυναστιας U+05D0 | om εξ ανθρωπων Q* (hab) Qᵐᵃᵍ)
+οτων 2⁰] αυτου ᵃᵇ αυτου] οτων U+05D0c.b (bostea ruts του) 6 improb και
+10 U+05D0¹ (mox revoc) συγχυθησονται] συσχυθ. U+05D0* συνχυθ. U+05D0c.a, c.b συγχυνθ.
+A* συμπλακησονται BᵇU+05D0Α AQ* (συμπλεκ. Qᵃ) πλατιαις U+05D0A 6 τη πορια
+(-ρεια BᵃᵇQᵃ)] ταις πορειαις A om αυτης AQ ετοιμασουσι Qᵃ 7 ποιεων]
+signa v | adscr B? (ras aliq in mg) ποταμων U+05D0* (ποιεων U+05D0c.a,c.b βασιλεα U+05D0*
+(- λεια U+05D0c.a) διεπεσαν AQ 8 ανεβεννεν U+05D0 αναιβεννε| A καρδιαις] pr
+ταις A</note>
+
+<pb n="55"/>
+Νινευή, ὡς κολυμβήθρα ὕδατος τὰ ὕδατα αὐτῆς, καὶ αὐτοὶ φεύγοντες <note type="marginal">B</note>
+οὐκ ἔστησαν, καὶ οὐκ ἣν ὁ ἐπιβλέπων.</p></div> <div type="textpart" subtype="verse" n="10"><p>διήρπασαν τὸ ἀργύριον,
+διήρπαζον τὸ χρυσίον, καὶ οὐκ ἦν πέρας τοῦ κόσμου αὐτῆς· βεβάρυνται
+ἐπὶ πάντα σκεύη τὰ ἐπιθυμητὰ αὐτῆς.</p></div> <div type="textpart" subtype="verse" n="11"><p>ἐκτιναγμὸς καὶ
+ἀνατιναγμός, καὶ ἐκβραγμὸς καὶ καρδίας θραυσμός, καὶ ὑπόλυσις
+γονάτων καὶ ὠδῖυες ἐπὶ πᾶσαν ὀσφύν, καὶ τὸ πρόσωπον πάντων
+ὡς πρόσκαυμα χύτρας.</p></div> <div type="textpart" subtype="verse" n="12"><p>ποῦ ἐστιν τὸ κατοικητήριον τῶν λεόντων,
+καὶ ἡ νομὴ ἡ οὖσα τοῖς σκύμνοις ; ποῦ ἐπορεύθη λέων τοῦ εἰσελθεῖν
+ἐκεῖ σκύμνον λέοντος, καὶ οὐκ ἦν ὁ ἐκφοβῶν;</p></div> <div type="textpart" subtype="verse" n="13"><p>λέων ἥρπασεν τὰ
+ἱκανὰ τοῖς σκύμνοις αὐτοῦ καὶ ἀπέπνιξεν τοῖς λέουσιν αὐτοῦ, καὶ
+ἔπλησεν θήρας νοσσιὰν αὐτοῦ καὶ τὸ κατοικητήριον αὐτοῦ ἁρπαγῆς.</p></div>
+<div type="textpart" subtype="verse" n="14"><p>ἰδοὺ ἐγὼ ἐπὶ σέ, λέγει Κύριος Παντοκράτωρ, καὶ ἐκκαύσω ἐν καπνῷ
+πλῆθός σου, καὶ τοὺς λέοντάς σου καταφάγεται ῥομφαία, καὶ ἐξολεθρεύσω
+ἐκ τῆς γῆς τὴν θήραν σου, καὶ οὐ μὴ ἀκουσθῇ οὐκέτι τὰ
+ἔργα σου.</p></div>
+</div>
+
+<div type="textpart" subtype="chapter" n="3">
+<div type="textpart" subtype="verse" n="1"><p>Ὦ πόλις αἱμάτων, ὅλη ψευδής, ἀδικίας πλήρης, οὐ ψηλαφηθῇσεται
+θήρα.</p></div> <div type="textpart" subtype="verse" n="2"><p>φωνὴ μαστίγων καὶ φωνὴ σεισμοῦ τροχῶν, καὶ ἵππου
+διώκοντος καὶ ἅρματος ἀναβράσσοντος,</p></div> <div type="textpart" subtype="verse" n="3"><p>καὶ ἱππέως ἀναβαίνοντος καὶ
+στιλβούσης ῥομφαίας καὶ ἐξαστραπτόντων ὅπλων, καὶ πλήθους τραυματιῶν
+καὶ βαρείας πτώσεως, καὶ οὐκ ἦν πέρας τοῖς ἔθνεσιν αὐτῆς·
+καὶ ἀσθενήσουσιν ἐν τοῖς σώμασιν αὐτῶν ἀπὸ πλήθους πορνείας.</p></div>
+<div type="textpart" subtype="verse" n="4"><p>πόρνη καλὴ καὶ ἐπιχαρής, ἡγουμένη φαρμάκων, ἡ πωλοῦσα ἔθνη
+ἐν τῇ πορνείᾳ αὐτῆς καὶ λαοὺς ἐν τοῖς φαρμάκοις αὐτῆς.</p></div> <div type="textpart" subtype="verse" n="5"><p>ἰδοὺ ἐγὼ
+ἐπὶ σέ, λέγει Κύριος ὁ θεὸς ὁ παντοκράτωρ, καὶ ἀποκαλύψω τὰ
+ὀπίσω σου ἐπὶ τὸ πρόσωπόν σου, καὶ δείξω ἔθνεσιν τὴν αἰσχύνην
+<note type="footnote">9 ως] ην A τα] τειχη A φευγοντες] ηφθυη τες U+05D0* (φευγ. U+05D0c.a, c.b b(ᵛiᵈ) | <note type="marginal">U+05D0AQ</note>
+επιβλεπων] βλεπων A 10 διηρπασαν] διηρπαζον U+05D0AQ διηρπαζον το sup
+ras Bᵃᵇ επι] υπερ U+05D0AQ σκευη] pr τα AQ επιθυμηματα Q* (-θυμητα Qa)
+11 εντιναγμος Q* εκβρασμος B*fort ab U+05D0Q) om και 3⁰ Q θραυμος U+05D0*
+(θραυσμ. U+05D0c.a) χυθρας U+05D0* (χυτρ. U+05D0c.a, c.b) 12 η νομη] om η U+05D0* (hab U+05D0c.a)
+τοις σκυμνοις (-μνοι U+05D0* μνοις U+05D0c.a)] pr εν A | που 2⁰] ου A [ σκυμνον] σκυμνος
+U+05D0c.a AQ λεοντος] incep λο U+05D0* (λεοντ. U+05D0c.a a(vid)) εκφορων U+05D0* (εκφοβ. U+05D0c.a))
+13 ηρπασε Qᵃ απεπνιξε Qa + τα ικανα Q επλησεν] ενεπλησεν Q* (- σε Qᵃ)
+θηραν U+05D0* (θηρας U+05D0c.a, c.b) 14 εγω] + ειμι U+05D0c.a (rurs ras) σε] αι U+05D0* (σε
+U+05D0c.a, c.b) παντοκρατωρ] pr ο AQ om και3⁰ Q* της γης] om της Q* (hab
+Qmg) ου μη ακ. ουετι] ου μη ακ. ετι U+05D0? ουκετι ου αη ακ. A τα εργα] om τα
+Q* (superscr Qᵃ) III 1 πληρης αδικιας AQ 2 ιπων U+05D0* (-που U+05D0c.a, c.b)
+om αναβρασσοντος Q* (hab Qᵃ⁽ᵐᵍ) 3 improb και 1⁰ U+05D0c.b τραυματων]
+incep κ U+05D0* (τρ.U+05D01?c.a) πορνιας U+05D0 4 επιχαρις BᵃᵇQ εθνη] θνη U+05D0* (εθν.
+U+05D01?c.a) πορνια U+05D0 | λαους] φυλας U+05D0c.a, c.b AQ 5 ο παντοκρατωρ] improb ο U+05D0?
+(mox revoc) το προσωπον] om το AQ εθνεσι Qᵃ αισχυνην] ασ χημοσυνην A</note>
+
+<pb n="56"/>
+<note type="marginal">B</note> σου καὶ βασιλείαις τὴν ἀτιμίαν σου·</p></div> <div type="textpart" subtype="verse" n="6"><p>καὶ ἐπιρίψω ἐπὶ σέ βδελυγμὸν
+κατὰ τὰς ἀκαθαρσίας σου, καὶ θήσομαί σε εἰς παράδειγμα·</p></div> <div type="textpart" subtype="verse" n="7"><p>καὶ
+ἔσται πᾶς ὁ ὁρῶν σε καταβήσεται ἀπὸ σοῦ καὶ ἐρεῖ Δειλαία Νινευή·
+τίς στενάξει αὐτήν ; πόθεν ζητήσω παράκλησιν αὐτῇ;</p></div> <div type="textpart" subtype="verse" n="8"><p>ἑτοίμασαι
+μερίδα, ἅρμόσοι χορδήν, ἑτοίμασαι μερίδα, Ἄμμων, ἡ κατοικοῦσα ἐν
+ποταμοῖς· ὕδωρ κύκλῳ αὐτῆς, ἧς ἡ ἀρχὴ θάλασσα καὶ ὕδωρ τὰ τείχη
+αὐτῆς.</p></div> <div type="textpart" subtype="verse" n="9"><p>καὶ Αἰθιοπία ἰσχὺς αὐτῆς καὶ Aἵγυπτος, καὶ οὐκ ἔστιν πέρας
+τῆς φυγῆς, καὶ Λίβυες ἐγένοντο βοηθοὶ αὐτῆς.</p></div> <div type="textpart" subtype="verse" n="10"><p>καὶ αὐτὴ εἰς μετοικεσίαν
+πορεύσεται αἰχμάλωτος, καὶ τὰ νήπια αὐτῆς ἐδαφιοῦσιν
+ἐπʼ ἀρχὰς πασῶν τῶν ὁδῶν αὐτῆς, καὶ ἐπὶ πάντα τὰ ἔνδοξα
+αὐτῆς βαλοῦσιν κλήρους. καὶ πάντες οἱ μεγιστᾶνες αὐτῆς δεθήσονται
+χειροπέδαις.</p></div> <div type="textpart" subtype="verse" n="11"><p>καὶ σὺ μεθυσθήσῃ καὶ ἔσῃ ὑπερεαωραμένη,
+καὶ σὺ ζητήσεις σεαυτῇ στάσιν ἐξ ἐχθρῶν.</p></div> <div type="textpart" subtype="verse" n="12"><p>πάντα τὰ ὐχυρώματά
+σου συκαῖ σκοποὺς ἔχουσαι· ἐὰν σαλευθῶσιν, πεσοῦνται εἰς στόμα
+ἕσθοντος.</p></div> <div type="textpart" subtype="verse" n="13"><p>ἰδοὺ ὁ λαός σου ὡς γυναῖκες ἐν σοί· τοῖς ἐχθροῖς σου
+ἀνοιγόμεναι ἀνοιχθήσονται πύλαι τῆς γῆς σου, καταφάγεται πῦρ
+τοὺς μοχλούς σου.</p></div> <div type="textpart" subtype="verse" n="14"><p>ὕδωρ περιοχῆς ἐπίσπασαι σεαυτῇ, καὶ κατακράτησον
+τῶν ὀχυρωμάτων σου· ἔμβηθι εἰς πηλὸν καὶ συμπατήθητι
+ἐν ἀχύροις, κατακράτησον ὑπέρ πλίνθον·</p></div> <div type="textpart" subtype="verse" n="15"><p>ἐκεῖ καταφάγεταί σε
+πῦρ, ἐξολεθρεύσει σε ῥομφαία, καταφάγεταί σε ὡς ἀκρίς, καὶ
+βαρυνθήσει ὡς βροῦχος.</p></div> <div type="textpart" subtype="verse" n="16"><p>ἐπλήθυνας τὰς ἐμπορίας σου ὑπέρ τὰ
+ἄστρα τοῦ οὐρανοῦ· βροῦχος ὥρμησεν καὶ ἐξεπετάσθη.</p></div> <div type="textpart" subtype="verse" n="17"><p>ἐξήλατο
+ὡς ἀττέλεβος ὁ συμμικτός σου, ὡς ἀκρὶς ἐπιβεβηκυῖα ἐπὶ φραγμὸν
+ἐν ἡμέρᾳ πάγους· ὁ ἥλιος ἀνέτειλεν, καὶ ἀφήλατο, καὶ οὐκ ἔγνω
+<note type="marginal">U+05D0AQ</note> <note type="footnote">5 ατιμιαν] ιμιαν rescr U+05D0¹ 6 εσιρριφω Bᵃ (fort) ᵇQᵃ ακαθαρσιας] αμαρτιας
+U+05D0* (ακαθ. U+05D0c.b postea rurs αμ.) παραδισγμα U+05D0* (-δειγμα U+05D0c.b et iam antea) πα-
+ραδιγμα A 7 αυτην] απο σου A pr επ Qmg παρακλησις A 8 om
+ετοιμασαι μεριδα (10) U+05D0c.b om ετοιμασαι 2⁰ U+05D0c.b μεριδα 2⁰] μερις U+05D0c.a, b.c
+Αρμων U+05D0* (Aμμων U+05D0c.a, c.b ης] ως U+05D0* (ης U+05D0c.a) αρχη] + αυτης A 9 om
+και 1⁰ U+05D0c.b Εθιοπια U+05D0* (Αιθ. U+05D0c.a, c.b) ισχυς] pr η U+05D0c.a? c.b (postea ras)
+AQ εστιν] εσται A εστι Qᵃ | φυγης] + σου U+05D0c.aAQ εγενοντο] εγενεντο Qᵛⁱᵈ
+10 μετοικησιαν B* (-κεσιαν Bᵇ⁽ᵛⁱᵈ)) πορευεται Q και 2⁰] + πανηγυρια U+05D0*
+(improb U+05D0c.a, c.b) αρχης U+05D0c.b οδων] ορεων U+05D0* (οδ. U+05D0c.b) βαλουσι Qᵃ | μεγι-
+στανες] + αυτης U+05D0c.a 11 και 1⁰] + γε AQ υπερεωραμενη (υπερεορ. Qᵃ)]
+παρεωραμενη U+05D0c.b om εξ U+05D0* (hab εξ U+05D0c.b) 12 σκοπους] καρπους Bᵃᵇ |
+πεσουνται] pr και AQ ειστομα U+05D0* (εις στ. U+05D0c.a) A εσθιοντος U+05D0c.a (vid)
+(postea εσθοντ.revoc) 13 καταηφαγεται] pr α U+05D0* (ras U+05D0?) pr και A 14 om
+επισπασοι σεαυτη U+05D0* (hab U+05D0c.a) om και 10 U+05D0c.a, c.b AQ πηλον] πολεμον U+05D0*
+(πηλ.U+05D0¹⁽ᵛⁱᵈ⁾) συμπατηθητι (συνπ. Q* )] συνπατει A 15 καταφαγεται 2⁰]
+pr και U+05D0c.a A βαρυνθηση U+05D0AQ βουχος U+05D0* (βρ. U+05D0c.a) 16 om επλη-
+θυνας. βρουχος U+05D0* (hab U+05D0c.a) υπερ] ως U+05D0c.a ωσπερ U+05D0c.b ωρμησεν Qᵃ
+17 αττελαβος AQ* (- λεβος Qᵃ) ημεραις AQ παγου A γνω U+05D0* (εγν.U+05D0¹c)</note>
+
+<pb n="57"/>
+τὸν τόπον αὐτῆς. οὐαὶ αὐτοῖς.</p></div> <div type="textpart" subtype="verse" n="18"><p>ἐνύσταξαν οἱ ποιμένες σου, <note type="marginal">B</note>
+βασιλεὺς Ἀσσύριος ἐκοίμισεν τοὺς δυνάστας σου· ἀπῆρεν ὁ λαός
+σου ἐπὶ τὰ ὄρη, καὶ οὐκ ἦν ὁ ἐκδεχόμενος.</p></div> <div type="textpart" subtype="verse" n="19"><p>οὐκ ἔστιν ἴασις τῇ
+συντριβῇ σου, ἐφλέγμανεν ἡ πληγή σου· πάντες οἱ ἀκούοντες τὴν
+ἀγγελίαν σου κροτήσουσιν χεῖρας ἐπὶ σέ· διότι ἐπὶ τίνα οὐκ ἐπῆλθεν
+ἡ κακία σου διὰ παντός;</p></div>
+<note type="footnote">17 ουαι] +ουαι A 18 Ασσυρων Q εκοιμισε Qᵃ δυνστας] δυνα- <note type="marginal">U+05D0ΑQ</note>
+τους Q απηραν Q 19 ακουσαντες U+05D0c.b AQ κροτσουσι Qᵃ | χειρα
+A τιναν U+05D0*
+Subscr Ναουμ ζ BU+05D0ΑQ</note>
+</div>
+
+
+
+
+    </div>
+  </body>
+</text>
+</TEI>
