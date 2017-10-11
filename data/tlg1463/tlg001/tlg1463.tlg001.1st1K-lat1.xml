@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+<titleStmt xml:lang="lat"><title>Apocalypsis Enochi</title>
+<author xml:lang="lat">Liber Enoch</author>
+ <editor>Johann Flemming</editor>
+<editor>Ludwig Radermacher</editor>
+<sponsor>University of Leipzig</sponsor>
+<funder>European Social Fund Saxony</funder>
+<principal>Gregory Crane</principal>
+<principal>Monica Berti</principal>
+<meeting/>
+<respStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+<authority>University of Leipzig</authority>
+ <idno type="filename">tlg1463.tlg001.1st1K-lat1.xml</idno>
+<availability>
+ <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+  License</p>
+</availability>
+<date>2016</date>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl>
+ <biblStruct>
+  <monogr>
+   <title xml:lang="deu">Das Buch Henoch</title>
+   <editor>
+	<persName>
+	 <name xml:lang="lat">Johannes Flemming</name>
+	</persName>
+   </editor>
+	  <editor>
+	<persName>
+	 <name xml:lang="deu">Ludwig Radermacher</name>
+	</persName>
+   </editor>
+   <author ref="urn:cts:greekLit:tlg1463" xml:lang="lat">Liber Enoch</author>
+   <imprint>
+	<publisher xml:lang="deu">J.C.Hinrichs'sche Buchhandlung</publisher>
+	<pubPlace xml:lang="deu">Leipzig</pubPlace>
+	<date>1901</date>
+   </imprint>
+  </monogr>
+   <ref target="https://archive.org/stream/dasbuchhenochhrs00flemuoft">The Internet Archive</ref>
+ </biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+  <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="deu">German</language>
+<language ident="lat">Latin</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+  <text>
+    <body>
+      <div type="edition" xml:lang="lat" n="urn:cts:greekLit:tlg1463.tlg001.1st1K-lat1">
+        <div type="textpart" subtype="chapter" n="106">
+          <pb n="138 "/>
+          <div type="textpart" subtype="verse" n="1">
+            <p>Factum est autem cum esset Lamech annorum tricentorum
+              quinquagenta, natus est ei filius,</p></div><div type="textpart" subtype="verse" n="2"><p>cui oculi sunt sicut radi solis, capilli
+                autem eius candidiores in septies nive, corpori autem eius nemo homi-num 
+                potest intueri.</p></div><div type="textpart" subtype="verse" n="3"><p>et surrexit inter manus obstetricis suae et adoravit
+                  <lb n="5"/> dominum viventem in secula &lt;et&gt;laudavit.</p></div><div type="textpart" subtype="verse" n="4"><p>et timuit Lamech,</p></div><div type="textpart" subtype="verse" n="6"><p>ne
+                    uon ex eo natus esset nisi nontius dei, et venit ad patrem suum Mathu-salem
+                    et narravit illi omnia.</p></div><div type="textpart" subtype="verse" n="7"><p>dixit Mathusalem: Ego autem non possum
+                      scire nisi eamus ad patrem nostrum Enoc.</p></div><div type="textpart" subtype="verse" n="8"><p>quum autem vidit Enoc filium 
+                        suum Mathusalem venientem ad se, et ait: Quid est quod venisti ad
+                        <lb n="10"/> me, nate?</p></div><div type="textpart" subtype="verse" n="10"><p>Dixit, quod natus est &lt;filius&gt;filio suo nomine Lamech,
+                          cui oculi sunt sicut radi solis, capilli eius candidiores septies nive, corpori
+                          autem eius nemo hominum potest intueri,</p></div><div type="textpart" subtype="verse" n="11"><p>et surrexit inter manus
+                            obstetricis suae eadem hora, qua procidit de utero matris suae, oravit
+                            <note type="footnote">2 film | 3 candiores | 5 et + James | 10 + filius | 11 capillis | 13 et adoravit
+                              James.</note>
+          <pb n="140"/>
+          dominum viventem in secula et laudavit,</p></div><div type="textpart" subtype="verse" n="12"><p>et tirauit Lamech.</p></div><div type="textpart" subtype="verse" n="13"><p>et
+            dixit Enoc: Nontiatum est mihi, fili, quia post quingentos annos mittet 
+            deus cataclismum aquae, ut deleat omnem creaturam quadraginta &lt;diebus
+            sicut&gt; ostendit oculis nostris.</p></div><div type="textpart" subtype="verse" n="16"><p>et erunt illi tres filii, et erunt nomina 
+              <lb n="5"/> filiorum eius Sem Cham Jafeth,</p></div><div type="textpart" subtype="verse" n="18"><p>et ipse vocabitur Noe, qui inter-pretatur 
+                requies, quia requiem prestabit in archam.</p>
+                <note type="footnote">3/4 diebus sicut + James.</note>
+                
+        </div>
+      </div>
+      </div>
+</body>
+  </text>
+</TEI>
