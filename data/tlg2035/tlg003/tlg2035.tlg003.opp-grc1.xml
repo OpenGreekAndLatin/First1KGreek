@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">    
+    <fileDesc>
+      <titleStmt><title xml:lang="lat">De decretis Nicaenae synodi (Chapters 41 and 42)</title>
+        <author>Athanasius of Alexandria</author>
+        <editor>Gerhard Loeschke</editor>
+        <editor>Margret Heinemann</editor>
+<sponsor>University of Leipzig</sponsor>
+<funder>European Social Fund Saxony</funder>
+<principal>Gregory Crane</principal>
+<principal>Monica Berti</principal>
+<meeting/>
+<respStmt>
+          <persName>Gregory R. Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Geßner</persName>
+          <resp>Project Assistant (University of Leipzig), 2015 - present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Greta Franzini</persName>
+          <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Frederik Baumgardt</persName>
+          <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Simona Stoyanova</persName>
+          <resp>Project Manager (University of Leipzig), 2015</resp>
+          <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+<authority>University of Leipzig</authority>
+<idno type="filename">tlg2035.tlg003.opp-grc1.xml</idno>
+<availability>
+ <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+ License</p>
+</availability>
+<date>2016</date>
+<publisher>University of Leipzig</publisher>
+<pubPlace>Germany</pubPlace>
+</publicationStmt>
+      <sourceDesc>
+        <listBibl>
+          <biblStruct>
+            <monogr>
+              <title xml:lang="deu">Gelasius Kirchengeschichte</title>
+              <editor>
+                <persName>
+                  <name>Margret Heinemann</name>
+                </persName>
+              </editor>
+              <editor>
+                <persName>
+                  <name>Gerhard Loeschke</name>
+                </persName>
+              </editor>
+              <author ref="urn:cts:greekLit:tlg2035">Athanasius of Alexandria</author>
+              <imprint>
+                <publisher xml:lang="deu">J. C. Hinrichs'Sche Buchhandlung</publisher>
+                <pubPlace>Leipzig</pubPlace>
+                <date>1918</date>
+              </imprint>
+            </monogr>
+            <series>
+              <title xml:lang="deu">Die griechischen christlichen Schriftsteller der ersten drei Jahrhunderte</title>
+              <biblScope unit="volume">28</biblScope>
+            </series>
+          </biblStruct>
+        </listBibl>
+      </sourceDesc>
+</fileDesc>
+<encodingDesc>
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+    <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+<profileDesc>
+<langUsage>
+  <language ident="grc">Greek</language>
+  <language ident="lat">Latin</language>
+  <language ident="deu">German</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change/>
+</revisionDesc>
+</teiHeader>
+  <text>
+    <body><div type="edition" n="urn:cts:greekLit:tlg2035.tlg003.opp-grc1" xml:lang="grc">
+<div type="textpart" subtype="chapter" n="1">
+<div type="textpart" subtype="section" n="1">
+<p>Κατὰ Εὐσεβίου καὶ Θεογνίου.</p>
+<p>»Κωνσταντῖνος Σεβαστὸς τῇ καθολικῇ ἐκκλησίᾳ Νικομηδέων.</p>
+<lb n="20"/> <p>&gt;Τὸν δεσπότην θεὸν δηλαδὴ καὶ σωτῆρα Χριστὸν ἀκριβῶς ἄπαν-
+&gt;τες ἴστε, ἀγαπητοὶ ἀδελφοί, πατέρα τε καὶ υἱὸν εἶναι.
+<note type="footnote">14f vgl. E. Schwartz Gött. Nachr. 1904, 336</note>
+<note type="footnote">Α1Η V1P3 M2P1P2 Athan. B R (von Ζ. 19 an ist nur Athan.
+L = cod. Paris. Lat. 1682 s. u. (v. Z. 19 an)</note>
+<note type="footnote">1 ἑτέρους Athan. R | ἤδη Athan.] εἶναι HSS 3 ἀποφεύγοντες τῆς . .
+συνουσίας Athan. | τὴν3 &gt; H 4 ἀνταλλάξονται Athan. R 5 εἰ
+αὐτῶ HM2P1P2 ἧς αὐτῷ V1P3 | σαυτῷ πιστεύεις καὶ &gt; A1 6
+der späteren Hd. ει eingeschoben P3 9 δόξει Athan. R 10 τὰ &gt; A1 |
+Athan. R 11 εἴσομαι] ἔσομαι P2 12 συνησθήσομαι] συνδήσομαι
+13 ἄλλῃ χειρὶ nachträglich (wohl von späterer Hd.) gestrichen P3 |
+διαφυλάξαι (so!) + ἀδελφοὶ Athan. 14 Γαβδεντίου A1HM2P1P2</note>
+
+
+<pb n="193"/>
+&gt;φημὶ ἄναρχον ἄνευ τέλους γονέα τοῦ αἰῶνος αὐτοῦ, υἱὸν δέ, τοῦτ᾿
+&gt;τὴν τοῦ πατρὸς βούλησιν, ἥτις οὔτε δέ ἐνθυμήσεώς τινος
+οὔτε πρὸς τὴν τῶν ἔργων αὐτοῦ τελεσιουργίαν διά τινος ἐξεζητη-
+&gt;μένης οὐσίας κατελήφθη. ὃς γὰρ τοῦτο καὶ νοεῖ καὶ νοήσει,
+<lb n="5"/> &gt;ἕξει πρὸς ἅπαν τιμωρίας γένος ἀκάματον ὑπομονήν.</p></div>
+
+<div type="textpart" subtype="section" n="2">
+<p>ἀλλὰ γὰρ ὁ &gt;τοῦ θεοῦ υἱὸς Χριστὸς ὁ τῶν ἁπάντων δημιοεργὸς καὶ τῆς ἀθανα-
+&gt;σίας αὐτῆς χορηγὸς ἐγεννήθη ὅσον πρὸς πίστιν ἀνῆκεν ᾑ
+&gt;καμεν, ἐγεννήθη — μᾶλλον δὲ προῆλθεν αὐτὸς καὶ πάντοτε ἐν
+&gt;πατρὶ ὢν ἐπὶ τὴν τῶν ὑπ’ αὐτοῦ γεγενημένων διακόσμησιν —
+<lb n="10"/> &gt;τοίνυν ἀμερίστῳ προελεύσει· ἡ γὰρ βούλησις ὁμοῦ καὶ τῷ
+&gt;αὐτῆς ἐμπέπηγε καὶ ταῦθ’ ἅπερ διαφόρου δέεται ἐπιμελείας κατὰ τὴν
+&gt;ἑκάστου ποιότητα πράττει τε καὶ διοικεῖ. τί οὐν;</p></div>
+
+<div type="textpart" subtype="section" n="3">
+<p>ἔστι τι μεταξὺ &gt;τοῦ θεοῦ τοῦ πατρὸς καὶ τοῦ υἱοῦ; οὐδὲν δηλαδή· αὕτη γὰρ ἡ τῶν
+πραγμάτων συμπλήρωσις αἰσθήσει παρείληφε τὸ τῆς βουλήσεως πρόσ-
+<lb n="15"/> &gt;ταγμα, οὐχὶ δὲ μερισθεῖσαν ἐκ τῆς τοῦ πατρὸς οὐσίας τὴν
+&gt;διέστησεν. ὅ δὲ τούτοις ἕπεται· τίς έστιν, ὃς τοῦ Χριστοῦ τοῦ ἐμοῦ
+&gt;δεσπότου ὀπαδὸς δι’ αἰδῶ μᾶλλον ἢ μωρίαν δέδιεν;</p></div>
+
+<div type="textpart" subtype="section" n="4">
+<p>ἀρ’ οὖν πάσχει</p> <note type="Τfootnote">A1H V1P3 M2P1P2 Β</note>
+<note type="footnote">1 ἄναρχόν φημι ~ P2 3f ἑξεζητήμενος Athan. B 4 οὕτως H
+τον H | γὰρ ὁ &gt; H | ὁ A1 &gt; A1 7 αὐτοῦ H | πρὸς
+8 αὐτὸς + ὁ Athan. B 11 ἑαυτῆς Athan. B | ἐμπέπηγε &gt; P2 | τημελείας Athan.
+12 τι2 &gt; Athan. B 13 τοῦ2] καὶ Athan. B τοῦ3 &gt; Athan. B αὐτὴ las L μερισθεῖ-
+σαν = divisam L] μερισθεῖσα HSS Athan. B 17 ὀπαδὸς Athan. B sequax L] παιδὸς HSS</note>
+ 
+
+
+<pb n="194"/>
+<p>&gt;τὸ θεῖον, ἐπειδὰν ἡ τοῦ σεμνοῦ σώματος οἴκησις πρὸς
+&gt;τῆς ἰδίας ἁγιότητος ὁρμᾷ, ἢ ὑποπίπτει θίξει τὸ τοῦ σώματος
+&gt;χωρισμένον; ἆρ’ οὐχὶ διέστηκε τοῦθ’ ὅπερ ἐκ τῆς τοῦ σώματος
+&gt;ρηται ταπεινότητος; οὐχὶ δὲ ζῶμεν, κἂν πρὸς θάνατον ἡ τῆς
+<lb n="5"/> &gt;εὔκλεια τὸ σῶμα προσκαλέσηται;</p>
+</div>
+
+<div type="textpart" subtype="section" n="5">
+<p>&gt;Τί τοίνυν ἐνταῦθα ἡ ἀβλαβής τε καὶ εἰλικρινὴς πίστις ἄξιον &gt;ἀμφιβολίας κατείληφεν; ἢ οὐχ ὁρᾷς ὅτι σεμνότατον σῶμα ὁ
+&gt;ἐπελέξατο, δι’ οὗ τὰ τῆς πίστεως τεκμήρια καὶ τὰ τῆς οἰκείας
+&gt;τῆς ὑποδείγματα ἔμελλεν ἐμφανίζειν, καὶ τὴν ἤδη
+<lb n="10"/> &gt;ὀλεθρίῳ πλάνῃ τοῦ ἀνθρωπίνου γένους ἀπώλειαν ἀποσείεσθαι.
+&gt;τε θρησκείας διδόναι διδασκαλίαν καὶ τῷ τῆς ἁγνείας ὑποδείγματι
+&gt;τὰς ἀναξίας τοῦ νοῦ πράξεις καθαίρειν, ἔπειτα δὲ τὴν μὲν τοῦ 
+&gt;θανάτου βάσανον ἐκλύειν, τὰ δὲ τῆς ἀθανασίας ἔπαθλα προαναφω-
+&gt;νεῖν.</p></div>
+
+<div type="textpart" subtype="section" n="6">
+<p>ἀλλ’ ὑμεῖς, οὓς λοιπὸν ἀδελφοὺς ἡ τῆς ἀγάπης κοινωνία <lb n="15"/> &gt;εἰκότως ὑπ’ ἐμοῦ προσαγορεύεσθαι ποιεῖ, οὐκ ἀγνοεῖτέ με τὸν
+&gt;τερον συνθεράποντα, οὐκ ἀγνοεῖτε τὸ τῆς ὑμετέρας σωτηρίας
+&gt;ρωμα, οὗ τὴν φροντίδα γνησίως ἐπανῄρημαι, καὶ δι’ οὑ τῶν
+&gt;ἐχθρῶν οὐ μόνον τὰ ὅπλα κατεμαχεσάμεθα ἀλλὰ καὶ ζῶντας ἔτι</p>
+<note type="footnote">A1H V1P3 M2P1P2</note>
+<note type="footnote">4 ταπεινώσεως P2 8 ἐξελέξατο V1P3 9 ἐμφανίζειν] ἀφανίζειν P2
+Athan. B 10 ὀλέθριον HM2P1P2 | πλάνην viell.
+corr. Α1 | ἀΠοσείσασθαι Athan. B 11 καὶ &gt; HV1P3 |
+P3 (Balf.) 12 δὲ] μὲν A1HV1P3 &gt; M2P1P2 deinde autem
+P2 15f ἡμέτερον Μ2 16 τὸ wie es scheint von 2. Hd.
+aus με A1 | vestrae L ἡμετέρας HSS 18 ἐχθρῶν &gt; P2 | ἔτι] ἐπὶ HM2P1P2</note>
+
+
+
+
+<pb n="195"/>
+<p>&gt;τὴν ψυχὴν συγκατείρξαμεν πρὸς τὸ τὴν τῆς φιλανθρωπίας
+&gt;πίστιν ἐκφάναι.</p></div>
+
+<div type="textpart" subtype="section" n="7">
+<p>ἀλλ’ ἐγὼ ἐπὶ τοῖς ἀγαθοῖς τούτοις διὰ τὴν τῆς &gt;οἰκουμένης μάλιστα ἀνανέωσιν ἔχαιρον. καὶ γὰρ θαύματος ᾐν
+&gt;ἀληθῶς ἔθνη τοσαῦτα εἰς ὁμόνοιαν ἐπαγαγεῖν, ἃ πρὸ βραχέος ἐλέγετο
+<lb n="5"/> &gt;τὸν θεὸν ἀγνοεῖν. πλὴν τί ἔμελλε γινώσκειν τὰ ἔθνη ταῦτα, ἃ
+&gt;οὐδεμίαν φιλονεικίας ἐπανῄρηντο φροντίδα; τί οὐν νοεῖτε,
+&gt;ἀγαπητοί, ὡς ὑμᾶς αὐτοὺς αἰτιῶμαι; Χριστιανοί ἐσμεν καὶ
+&gt;διαθέσει διχονοοῦμεν.</p></div>
+
+<div type="textpart" subtype="section" n="8">
+<p>αὕτη ἄρα ἐστὶν ἡ ἡμετέρα πίστις, αὕτη ἡ &gt;τοῦ ἁγιωτάτου νόμου διδασκαλία; ἀλλὰ τίς έστιν εἰτία, δι’ ἥν ὁ τοῦ
+<lb n="10"/> &gt;παρόντος κακοῦ ὄλεθρος ἐξεγήγερται; ὢ τῆς ἀτοπίας, ὢ μίσους
+&gt;ὑπερβολὴ πάσης ἀγανακτήσεως μέγεθος ὑπερπαίουσα. τίς
+&gt;λῃστηρίου τούτου ἀναπέφανται δεινότης, ἣ τὸν τοῦ θεοῦ υἱὸν
+&gt;ται ἐξ ἀμερίστου τοῦ πατρὸς οὐσίας προεληλυθέναι; ἀρ’ οὐχὶ
+&gt;ταχοῦ ἐστιν ὁ θεός, καίτοι γε τοῦτον πάντοτε παρεῖναι ἡμῖν αἰσθα-
+<lb n="15"/> &gt;νόμεθα; ἆρ’ οὐχὶ διὰ τῆς τούτου δυνάμεως ἡ τῶν ὅλων
+&gt;εὐκοσμία; καίτοι γε τῆς τοῦ χωρισμοῦ διαστάσεως ἐστέρηται;</p>
+<note type="footnote">Α1Η V1P3 M2P1P2 L</note>
+<note type="footnote">1 ψυχὴν] εἰρκτὴν M2P1P2 | συγκαθείρξαμεν M2P1 καθείρξαμεν P2
+πρὸς] πρὸ P3 P2 | τὴν2 &gt; V1P3, nachträgl. eingefügt H 4f ἃ
+5 πλὴν τί] tamen quid L | τὰ ἔθνη &gt; P2 6 ἐπανῄρηθαι Athan. B 7
+Ρ3 | οἰκτρᾷ] viell. μετρίᾳ = mediocri L 9 ἐστιν + ἡ V1
+Athan. B 17f εὐκοσμία συνέστηκε ~ Α1</note>
+
+
+
+<pb n="196"/>
+</div>
+
+<div type="textpart" subtype="section" n="9">
+<p>Μὴ οὐν ὑμῖν τι πέπρακται; ὠ ἀγαπητοὶ ἀδελφοί, καταμάθετε νῦν, ἀξιῶ, τὰς βασάνους τῆς παρούσης ἀλγηδόνος. ὁμολογητὰς ὑμᾶς
+εἶναι τούτου ἐπηγγέλλεσθε, ὃν εἶναι ἀρνεῖσθε, τοῦθ’ ὑμᾶς τοῦ πανώλου
+διδασκάλου πείθοντος. ἱκετεύω, τίς ἐστιν ὁ ταῦτα διδάξας οὔτως
+<lb n="5"/> ἄκακον πλῆθος; Εὐσέβως δηλαδὴ ὁ τῆς τυραννικῆς ὠμότητος συμμύστης.
+ὅτι γὰρ πανταχοῦ τοῦ τυράννου γεγένηται προσφύλαξ,
+πανταχόθεν ἔστι συνορᾶν. τοῦτο μὲν γὰρ αἱ τῶν ἐπισκόπων σφαγαὶ
+διαμαρτύρονται, ἀλλὰ τῶν ἀληθῶς ἐπισκόπων, τοῦτο δὲ ἡ χαλεπωτάτη
+τῶν Χριστιανῶν ἐκδίωξις διαρρήδην βοᾷ.</p></div>
+
+<div type="textpart" subtype="section" n="10">
+<p>οὐδὲν γὰρ τῶν <lb n="10"/> εἰς ἐμὲ γεγενημένων ὕβρεων νῦν ἐρῶ, δι’ ὡν, ὅτε μάλιστα τῶν
+ἐναντίων μερῶν ἐπραγματεύσαντο συνδρομαί, οὑτος καὶ όφθαλμοὺς
+κατασκόπους ὑπέλαμπε κατ’ ἐμοῦ καὶ μόνον οὐκ ἐνόπλους τῷ τυράννῳ
+συνεισέφερεν ὑπουργίας.</p></div>
+
+<div type="textpart" subtype="section" n="11">
+<p>μηδ’ ἐμέ τις οἰέσθω εἶναι πρὸς τὴν τούτων ἀπόδειξιν ἀπαράσκευον· ἔλεγχος γάρ ἐστιν ἀκριβής, ὅτι</p>
+<note type="footnote">4 — S. 199, 16 vgl. S. 22ff (= Gel. 1) Thdt. I 20ff p. 66ff</note>
+<note type="footnote">A1H V1P3 M2P1P2 L Gel.1 Athan. B</note>
+<note type="footnote">1 ἡμῖν A1HM2P1P2 Athan. | ὦ &gt; A1M2P1P2 Athan. 3 ἐπαγγέλεσθε V1P3
+ἐπηγγέλλεσθε H ἐπηγγέλλεσθαι P2 | τοῦθ’] τοῦ καθ’ HM2P1P2 | V1P3 | ἠμᾶςΗ
+3f πανώλους A1 4 τις] τι P1 | διδάξας ταῦτα ~ Athan. B 6 πρόσφυξ Athan.
+B Thdt. = cliens L 7 πάντοθεν HM2P1P2 πολλαχόθεν L Athan. B Gel.1 Thdt.
+γὰρ &gt; Gel.1 9 διαρρήδην P3 9f γὰρ τῶν εἰς ἐμὲ A1 γὰρ + περὶ Αthan. B Thdt.
+γὰρ τῶν + περὶ τῶν HV 1 P 3 10 ὕβρεων] παρ’ αὐτοῦ Gel. 1 Ι ὡν corr. in ὅν A 1 |
+ὅτε Gel. 1 Athan. B Thdt. cum L] ὅτι HSS 11 μερῶν + καθ’ ἡμῶν Gel.1 | ἐπραγματεύοντο
+Gel.1 12 ἔπεμπε Gel.1 Athan. B That. 13 λειτουργίας Αthan.B
+ὑπουργίας + αὐτῷ χάριν Gel.1</note>
+
+
+
+<pb n="197"/>
+<p>τοὺς πρεσβυτέρους καὶ διακόνους τοὺς Εὐσεβίῳ παρεπομένους φανερῶς
+ὑπ’ ἐμοῦ συνειλῆφθαι συνέστηκεν. ἀλλὰ ταῦτα μὲν παρίημι, ἄ
+νῦν οὐκ ἀγανακτήσεως ἕνεκέν, ἀλλ’ εἰς ἐκείνων αἰσχύνην ὑπ’ ἐμοῦ
+προενήνεκται. ἐκεῖνο μόνον δέδια, ἐκεῖνο διαλογίζομαι, ὅτι ὑμᾶς ὁρῶ
+<lb n="5"/> πρὸς τὴν τοῦ ἐγκλήματος καλεῖσθαι κοινωνίαν. διὰ γὰρ τῆς Εύσεβίου
+ἀγωγῆς τε καὶ διαστροφῆς συνείδησιν τῆς ἀληθείας κεχωρισμέ-
+νην ἀνειλήφατε.</p></div>
+
+<div type="textpart" subtype="section" n="12">
+<p>ἀλλ’ ἔστιν οὐ βραβεῖα θεραπεία, εἴγε ἐπίσκοπον πιστόν τε καὶ ἀκέραιον νῦν γοῦν λαβόντες πρὸς τὸν θεὸν ἀπίδητε,
+ὅπερ ἐπὶ τοῦ παρόντος ἐν ὑμῖν ἐστι καὶ πάλαι ἐχρῆν τῆς ὑμετέρας
+<lb n="10"/> κρίσεως ἠρτῆσθαι, εἰ μὴ ὁ προειρημένος Εὐσέβιος + δεινῇ τότε συλλαβομένων
+αὐτῷ ἐνταῦθα ἐληλύθει καὶ τὴν τῆς τάξεως ὀρθότητα
+ανασχυντως † ουνεπεπραχει.</p>
+</div>
+
+<div type="textpart" subtype="section" n="13">
+<p>Ἀλλ’ ἐπειδὴ περὶ αὐτοῦ τοῦ Εὐσεβίου πρὸς τὴν ὑμετέραν ἀγάπην ὀλίγα προσῆκε φράσαι, μέμνηται ἡ ὑμετέρα ἀνεξικακία ἐπὶ τῆς Νι-
+<lb n="15"/> καέων πόλεως γεγενῆσθαι σύνοδον, ᾗ καὶ αὐτὸς ἐγὼ πρεπόντως τῇ</p>
+<note type="footnote">A1H V1P2 M2P1 P2 L Gel. 1 Athan. B
+1 καὶ + τοὺς Gel. 1 Athan. B Thdt. Ι Ἀσεβίῳ P 3 Ι παραπεμπομένους Gel. 1
+2 παρίημι, a] παρ’ ἡμῶν Gel. 1 3 αἰσχύνην ἐκείνων ~ Gel. 1 Ι ὑπ’ ἐμοῦ &gt;
+5 πρὸς] περὶ M 2 P 1 P 2 Ι καλεῖσθαι] καλουμένους A 1 6 διαγωγῆς Gel. 1 Ι
+τῆς ἀληθείας ~ Gel. 1 7 εἰλήφατε Gel. 1 Thdt. 8 λαβόντε P 3 Ι τὸν &gt;
+Gel. 1 Ι ἐσίδητε Ps 9 ἐστι + ὁ Gel. 1 Ι ἡμετέρας Ps 10 ὁ &gt; P 2 Ι
+δεινῶν AI κοινῆ P 2 δεινή P 3, am Rand ἢ δεῖνα Athan. B δεινῇ + τῶν Gel. 1 τότε]
+τῶν Athan. B Ι συναγομένων Athan. B 11 αὐτῷ V 1 P 3 Gel. 1 Athan. B Thdt.
+αὐτῶν d. übr. HSS αὐτῷ + προαιρέσει Gel. 1 11 f vgl. das S. 23, 6f Angemerkte
+13 τοῦ &gt; M2 τοῦ αὐτοῦ ~ Gel. 1 14 φράσαι + μακροθύμως ἀκούσαιτε Gel. 1
+ἡ &gt; V 1 P 3 Ι ἡμετέρα P 3 15 σύνοδον + ἐπισκόπων Gel.1</note>
+
+ 
+<pb n="198"/>
+<p>τῆς ἐμῆς συνειδήσεως λατρεία παρήμην, οὐδὲν ἕτερον βουλόμενος ἢ
+ὁμόνοιαν ἅπασιν ἐργάσασθαι καὶ πρὸ πάντων ἐλέγξαι τε καὶ ἀπο-
+σείσασθαι τὸ πρᾶγμα τοῦτο, ὃ τὴν μὲν ἀρχὴν εἰλήφει διὰ τῆς Ἀρείου
+ποῦ Ἀλεξανδρέως ἀπονοίας, ἰσχυροποιεῖτο δὲ παραχρῆμα διὰ τῆς
+<lb n="5"/> Εὐσεβίου ἀτόπου τε καὶ ὀλεθρίας σπουδῆς.</p></div>
+
+<div type="textpart" subtype="section" n="14">
+<p>ἀλλ’ αὐτὸς οὗτος Εὐσέβιος, προσφιλέστατοι καὶ τιμιώτατοι, μεθ’ ὅσης νομίζετε συνδρομῆς
+ἅτε δὴ ὑπὸ τῆς συνειδήσεως αὐτῆς ἡττώμενος, μεθ’ ὅσης δὲ
+αἰσχύνης τῇ πανταχόθεν ἐληλεγμένῃ ψευδολογίᾳ συνίστατο, ὑποπέμπων
+μέν μοι διαφόρους τοὺς ἀξιοῦντας ὑπὲρ αὐτοῦ, ἐξαιτούμενος
+<lb n="10"/> δὲ παρ’ ἐμοῦ συμμαχίαν τινά, ὅπως μὴ ἐπὶ τοσούτω̣ ἐλεγχθεὶς πλημμελήματι
+τῆς ὑπαρχούσης αὐτῷ τιμῆς ἐκβάλλοιτο; μάρτυς ἐστί μοι
+τούτου ὁ θεὸς αὐτός, ὅς ἐμοί τε καὶ ὑμῖν φιλαγάθως ἐπιμένοι, ἐπεὶ καὶ ἐμὲ
+ἐκεῖνος περιέτρεψε καὶ ἀπρεπῶς ὑφήρπασεν, ὃ κοὶ ὑμεῖς ἐπιγνώσεσθε.
+πάντα μὲν γὰρ ἐπράχθη τότε, καθὼς αὐτὸς ἐπόθει πᾶν ὁτιοῦν κακὸν
+<lb n="15"/> ἐπὶ τῆς ἑαυτοῦ διανοίας ἀποκρυπτόμενος.
+</p></div>
+
+<div type="textpart" subtype="section" n="15">
+<p>Ἀλλὰ πρώην, ἵνα τὰ λοιπὰ τῆς τούτου σκαιότητος παρῶ, τί</p> <note type="footnote">AiH V 1 P 3 M 2 P 1 P 3 L Gel. 1 Athan. B</note>
+<note type="footnote">2 τε &gt; Gel. 1 6 νομίζεται P 3 8 πάντοθεν HM 2 P 1 P 3 Ι
+αὐτοῦ Gel. 1 Ι συνίσταται Gel. 1 9 ὑπὲρ αὐτοῦ ἀξιοῦντας ~ Gel. 1 10 παρ’
+ἐμοῦ &gt; M 2 P 1 P 3 11 ἐκπέσοι τιμῆς Gel. 1 12 τούτων Gel. 1 Ι αὐτὸς &gt;
+αὐτὸς ὁ θεὸς ~ Gel. 1 Ι ἐπιμένει (corr. aus ἐπιμένοι) M 2 P 2 Ι ἐπεὶ] ὅτι Gel. 1 Ι ἐμὲ
++ αὐτὸς Gel. 1 13 ἐκεῖνος + Εὐσέβιος Gel. 1 Ι ὑφήρπασεν + ἀλλ’ ἡ θεία με
+πρόνοια ἐπὶ τὴν ἀληθεστάτην αὐτῆς ὁδὸν ἐπανήγαγεν Gel. 1 Ι ὑμεῖς + ἐπέγνωτε
+καὶ Gel. 1 14 ἐπράχθη + παρ’ αὐτοῦ τότε, Εὐσεβίου τοῦ ἀνοσίου λέγω Gel. 1
+15 ἀετοῦ Gel. 1 16 πρῲην] πρώτην M 2</note>
+
+
+
+
+<pb n="199"/>
+<p>μάλιστα μετὰ Θεοξενίου. ὃν τῆς ἀνοίας ἴχει κοινωνον διεπράξατο.
+ἀκούσατε, παρακαλῶ. Ἀλεξανδρέας τινὰς τῆς ἡμετέρας πίστεως
+ἀναχωρήσαντας ἐνταῦθα κεκελεύκειν ἀποσταλῆναι, ἐπειδὴ διὰ τῆς
+τούτων ὑπηρεσίας ὁ τῆς διχονοίας ἠγείρετο πυρσός..</p></div>
+
+<div type="textpart" subtype="section" n="16">
+<p>ἀλλ’ οὗτοι <lb n="5"/> τὸ καλοί τε καὶ ἀγαθοὶ ἐπίσκοποι, οὓς ἅπαξ ἡ τῆς συνόδου ἀλήθεια
+πρὸς μετάνοιαν τετηρήκει, οὐ μόνον ἐκείνους ὑπεδέξαντο καὶ πὰρ
+ἑαυτοῖς ἠσφαλίσαντο, ἀλλὰ καὶ ἐκοινώνησαν αὐτοῖς τῆς τῶν τρόπων
+κακοηθείας. διὸ τοῦτο περὶ τοὺς ἀχαρίστους τούτους ἔκρινα πρᾶξαι·
+</p></div>
+
+<div type="textpart" subtype="section" n="17">
+<p>ἁρπαγέντας γὰρ αὐτοὺς ἐκέλευσα ὡς πορρωτάτω ἐξορισθῆναι. νῦν <lb n="10"/> ὑμέτερόν ἐστι πρὸς τὸν θεὸν ἐκείνῃ τῇ πίστει βλέπειν ᾗ πάντοτε
+καὶ γεγενῆσθαι συνέστηκε καὶ εἶναι πρέπει, καὶ διαπράξασθαι
+οὕτως, ἴνα ἐπισκόπους ἁγνούς τε καὶ ὀρθοδόξους καὶ φιλανθρώπους
+ἔχοντες χαίρωμεν· εἴ τις δὲ ἢ πρὸς μνήμην τῶν λυμεώνων ἐκείνων
+ἢ πρὸς ἔπαινον ἀπρονοήτως ἐξαφθῆναι τολμήσει, παραχρῆμα τῆς
+<lb n="15"/> ἰδίας τόλμης διὰ τῆς τοῦ θεράποντος τοῦ θεοῦ, τοῦτ’ ἔστιν ἐμοῦ,
+ἐνεργείας ἀνασταλήσεται. ὁ θεὸς ὑμᾶς διαφυλάξει, ἀγαπητοὶ ἀδελφοί«.</p>
+<note type="footnote">A1H V1P3 M 2 P 1 P 3 L Gel. 1 Athan. B</note>
+<note type="footnote">1 τῆς ἀνοσίας αὐτοῦ προαιρέσεως ἔχει Gel. 1 2 Ἀλεξανδρείας Athan. B
+4 ὁ Gel. 1 &gt; Gel. 1 Ι οὑτοι] οὑ Ρ 3 6 ἐδέξαντο ἐκένους Gel. 1 8 περὶ
+M 2 περὶ τοὺς ἀχωρίστους P 3 10 ἡμέτερόν P 2 V 1 P 3 11 γεγενῆσθαι + καὶ
+V 1 P 3 Athan. B Ι συνεστηκέναι Ρ 3 ὑμᾶς Gel. 1 12 ἵνα Gel. 1 L &gt; HSS Athan.
+Thdt. 13 ἢ &gt; Gel. 1 Thdt. Ι μνήμην] λύμην Athan. B 16 ἡμᾶς Η Ι φυλάξει
+φυλάξοι P 3 Ι ἀδελφοὶ ἀγαπητοί ~ H Gel. 1 ὁ — ἀδελφοί &gt; Athan. B</note>
+
+
+
+
+<pb n="200"/>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="2">
+<div type="textpart" subtype="section" n="1">
+
+<p>Νικητὴς Κωνσταντῖνος Σεβαστὸς Θεοδότῳ·</p>
+<p>Ὅση τῆς θείας ὁργῆς ἡ ἰσχὺς πέφυκε, καὶ ἐξ ὡν Εὐσέβιός τε καὶ
+&gt;Θεόγνιος πεπόνθασιν εὐχερὲς καὶ σὲ μαθεῖν, οἳ εἰς τὴν ἁγιωτάτην
+&gt;παροινοῦντες θρησκείαν τὸ τοῦ σωτῆρος θεοῦ ὄνομα τῷ συστήματι
+<lb n="5"/> &gt;ποῦ οἰκείου λῃστηρίου καὶ μετὰ τὸ τυχεῖν συγγνώμης ἐμίαναν. ὅτε
+&gt;γὰρ μάλιστα μετὰ τὴν τῆς συνόδου ὁμογνώμονα συμφωνίαν ἐχρῆν
+&gt;τὴν προτέραν ἐπανορθώσασθαι πλάνην, τότε τοῖς αὐτοῖς ἀτοπημασιν
+&gt;σιν ἐμμένοντες ἑάλωσαν.</p></div>
+
+<div type="textpart" subtype="section" n="2">
+<p>διὰ τοῦτο γοῦν ἡ θεία πρόνοια αὐτοὺς ποῦ ἑαυτῆς ἀπώσατο λαοῦ· ἐπειδὴ μηδὲ ἔφερε τὰς ἀκάκους ψυχὰς
+<lb n="10"/> ὀλίγων ἀπονοίᾳ φθειρομένας καθορᾶν. καὶ νῦν μὲν ἀξίαν παρ’ αὐτῶν
+ᾔτησε δίκην, μείζονα δὲ καὶ εἰς τὸ ἐξῆς διὰ τοῦ παντὸς αἰῶνος
+λήψεται.</p>
+</div>
+
+<div type="textpart" subtype="section" n="3">
+<p>Ὅπερ τῇ σῇ ἀγχινοίᾳ δηλωθῆναι δεῖν ἡγησάμην, ἕν εἴ τις κακὴ &gt;παραίνεσις τῶν τοιούτων, ὡς ἔγωγε οὐκ εἶμαι, τῇ σῇ ένεκαθέσθη
+<lb n="15"/> προαιρέσει, ταύτην τῆς ψυχῆς ἀφελόμενος καθαρὰν ὡς προσῆκε τὴν
+διάνοιαν, εἰλικρινῆ τε καθοσίωσιν καὶ ἄχραντον πίστιν τῷ σωτῆρι
+θεῷ παρασχέσθαι προθυμηθῇς. καὶ γὰρ τοῦτο προσῆκόν ἐστιν ὑπὸ
+τούτου πράττεσθαι, ὃς δἂν ἀκεραίων τῶν τῆς αἰωνίου ζωῆς ἐπά-
+θλων ἀξιοῦσθαι βουλεύηται. ὁ θεός σε διαφυλάξειαν, ἀδελφὲ ἀγαπητέ«.</p>
+<note type="footnote">Α1Η V1P3 Μ2Ρ1 Ρ2 Athan. B</note>
+<note type="footnote">1 θεωδώτω VI 2 ὅσα corr. iu ὅση A1 Ι ἡ ἰσχὺς &gt; A 1 H Ι πέφηκε
+3 καὶ aus τε corr. A Ι μάθη (?) A 1 4 σωτῆρος θεοῦ A 1 HV 1 P3 πατρὸς θεοῦ
+Μ 2 Ρ 1 θεοῦ πατρὸς Ρ 2 7 πλάνου Ρ 2 8 ἐμμένοντες &gt; Ρ 2 ἐμμανέντες V 1 9
+διέφερε(?) V 1 10 ὀλίγων] ὀλίγον V 1 P3 11 ἔτισε (Correctur) Athan. B 13 δηλωθῆναι
+&gt; H Ι δηλωθ. + νῦν Ρ 2 Ι ἠγησάμην δεῖν ~ Ρ 2 14 τοιούτων +
+νεσις H 15 καθαρὰν] καθορᾶν Athan. B 19 βουλεύηται + καὶ ἄλλῃ χειρί Athan. B |
+σε] τε A 1 Ι διαφυλάξοι V 1 P 3 Ι ἀδελφοὶ ἀγαπητοί A 1 ἀγαπητὲ ἀδελφέ ~ H</note>
+</div>
+</div>
+</div>
+
+
+</body>
+  </text>
+</TEI>
