@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Dionysii Calliphontis filii Descriptio Graeciae</title>
+                <author>Dionysius Calliphontis</author>
+                <editor xml:lang="lat">Carolus Müllerus</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+
+                <idno type="filename">tlg0069.tlg001.1st1K-grc1.xml</idno>
+
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+
+                            <title xml:lang="lat">Geographi Graeci Minores</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Carolus Müllerus</name>
+                                    <addName xml:lang="deu">Karl Müller</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0069"
+                                >Dionysius Calliphontis</author>
+
+
+                            <imprint>
+                                <publisher>Ambroise-Firmin Didot</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1855</date>
+                            </imprint>
+                            
+                            <biblScope unit="volume">1</biblScope>
+                            
+                        </monogr>
+                        <ref target="https://archive.org/details/geographigraeci00philgoog">The Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+
+        <encodingDesc>
+
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+
+
+            <refsDecl n="CTS">
+
+                <cRefPattern n="line" matchPattern="(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:lg/tei:l[@n='$2'])">
+                    <p>This pointer pattern extracts lines</p>
+                </cRefPattern> 
+
+                <cRefPattern n="section" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts sections</p>
+
+                </cRefPattern>
+                
+         
+        
+            </refsDecl>
+
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Chiara Palladino">created the file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0069.tlg001.1st1K-grc1">
+
+
+                <div type="textpart" subtype="section" n="1">
+                    <pb n="238"/>
+                    <head>ΔΙΟΝΥΣΙΟΥ ΤΟΥ ΚΑΛΑΙΦΩΝΤΟΣ ΑΝΑΓΡΑΦΗ ΤΗΕ ΕΛΛΑΔΟΣ.</head>
+                    <lg>
+                        <l n="1"> Διὰ παντὸς, ὦ Θεόφραστε, καθάπερ οἶσθα σύ,</l>
+                        <l n="2"> ἴδιόν τι πλάττων, κοὐχὶ τὸν ἑτέρων πόνον,</l>
+                        <l n="3"> ὅπερ ἐνιοι ποιοῦσʼ ἐμαυτοῦ τιθέμενος</l>
+                        <l n="4"> νῦν ἱστόρηκα τὴν ἅπασαν Ἑλλάδα,</l>
+                        <l n="5">
+                            <lb n="5"/> ὑποταττομένας ταύτη δὲ τὰς ἑξῆς πόλεις,</l>
+                    </lg>
+                    <lg>
+                        <l n="6"> στοιχεῖον οὐκ ἄμουσον ἅμα θʼ Ἑλληνικόν</l>
+                        <l n="7"> ἱκανήν τε παρέχον διατριβὴν τοῖς δυναμένοις</l>
+                        <l n="8"> ὀρθῶς συνιδεῖν ἕκαστα. Τὰ γὰρ ἐν πλείοσιν</l>
+                        <l n="9"> ὑπὸ τῶν παλαιῶν συγγραφέων εἰρημένα,</l>
+                        <l n="10">
+                            <lb n="10"/> ταῦτʼ ἐμμέτρως ῥηθήσετ᾿ ἐν βραχεῖ χρόνῳ,</l>
+                    </lg>
+                    <lg>
+                        <l n="11"> ὅπερ ἐστὶν ἱκανῶς δύναμιν ἰσχυρὰν ἔχον·</l>
+                        <l n="12"> ὑπολαμβάνω γὰρ ἀσφαλῶς ἡμῖν ἔχειν</l>
+                        <l n="13"> κεῖσθαί τε τὰς μάλιστα διασήμους πόλεις,</l>
+                        <l n="14"> ἄλση, ποταμοὺς, νήσους τε τοὺς διάπλους τε καί</l>
+                        <l n="15">
+                            <lb n="15"/> λιμένας, ἅ τʼ ἐκτὶν ἐν Πελοποννήσῳ γένη</l>
+                    </lg>
+                    <lg>
+                        <l n="16"> λεγόμενα χὡμοροῦντ᾿ ἑαυτοῖς κατὰ τόπους,</l>
+                        <l n="17"> ἵνα μηδὲ ἕν σε τὸ σύνολον διαλανθάνῃ,</l>
+                        <l n="18"> φανερῶς ἑκάστων ὁμολόγως τε κειμένων,</l>
+                        <l n="19"> ὥστ᾿ ἀναλαβόντα καὶ διὰ μνήμης ἔχειν</l>
+                        <l n="20">
+                            <lb n="20"/> νωθρὰν γὰρ οὐχ εὕροις ἂν, ἀλλʼ ἐσπευσμένην</l>
+                    </lg>
+                    <lg>
+                        <l n="21"> τὴν πραγματείαν· διὸ σεαυτὸν μὴ βραδύν</l>
+
+                        <pb n="239"/>
+                        <l n="22">ὁλοσχερῶς ἐπὶ ταῦτα δοὺς καὶ σπουδάσας</l>
+                        <l n="23">συμφιλομάθησον, καθάπερ εἴωθας ποιεῖν.</l>
+                        <l n="24">Τῆς Ἑλλέδος ἐστὶν Ἀμβρακία πρώτη πόλις.</l>
+                        <l n="25"><lb n="25"/> Αὕτη δʼ ἀποικία λέγεται Κορινθίων</l>
+                    </lg>
+                    <lg>
+                        <l n="26"> εἶναι. Κατὰ τὸν κόλπον δὲ τὸν καλούμενον</l>
+                        <l n="27"> Ἀμβρακικὸν ᾤκισται μέση, σταδίους δʼ ἔχει</l>
+                        <l n="28"> ἀπὸ τῆς θαλάττης δγδοήκοντʼ. ἐπιφανὲς δʼ</l>
+                        <l n="29"> ἱερὸν Ἀθηνᾶς ἐστ᾿ ἐν αὐτῇ καὶ λιμήν</l>
+                        <l n="30">
+                            <lb n="30"/> κλειστός. Καλεῖται Δρυοπὶς ἡ χώρα δʼ ὅλη.</l>
+                    </lg>
+                    <lg>
+                        <l n="31"> Ἡ δʼ Ἑλλὰς ἀπὸ τῆς Ἀμβρακίας εἶναι δοκεῖ</l>
+                        <l n="32"> μάλιστα συνεχῆς· τὸ πέρας αὐτῆς δʼ ἔρχεται</l>
+                        <l n="33"> ἐπὶ τὸν ποταμὸν Πηνειὸν, ὡς Φιλέας γράφει,</l>
+                        <l n="34"> ὄρος τε Μαγνήτων Ὁμόλην κεκλημένον.</l>
+                        <l n="35">
+                            <lb n="35"/> Τινὲς δὲ τὴν Μαγνησίαν τῆς Ἑλλέδος</l>
+                    </lg>
+                    <lg>
+                        <l n="36"> λέγουσιν εἶναι, τὸν δὲ Φιλέαν ἀγνοεῖν</l>
+                        <l n="37"> ἀποχωρίσαντα, τεῦτο δʼ εἶναι συμφανές</l>
+                        <l n="38"> τοῖς φιλομαθεῖν μάλιστα φιλοτιμουμένοις.</l>
+                        <l n="39"> Πλὴν ἐπὶ τὰ λοιπὰ τοῦ λόγου προβήσομαι.</l>
+                        <l n="40">
+                            <lb n="40"/> Ἀπʼ Ἀμβρακίας εἰς Θετταλίαν τριῶν ὁδός</l>
+                    </lg>
+                    <lg>
+                        <l n="41"> ἔσθʼ ἡμερῶν. Ἔχει δὲ ποταμὸν λεγόμενον</l>
+                        <l n="42"> Ἄρατθον εἰς θάλατταν ἐξιόντα, καί</l>
+                        <l n="43"> ὄρος πρόσεστιν ἱερὸν ἐπικεκλημένον.</l>
+                        <l n="44"> Σταδίων δʼ ὁ παράπλους ἐστὶν ἑκατὸν εἴκοσιν.</l>
+                        <l n="45">
+                            <lb n="45"/> Εἶτα μετὰ ταύτην εἰσʼ Ὀρέσται λεγόμενοι·</l>
+                    </lg>
+                    <lg>
+                        <l n="46"> εἶτ᾿ Ἀμφιλοχία δʼ ἄργος ἐνταῦθʼ ἔστι τό</l>
+                        <l n="47"> Ἀμφιλοχικόν. Μετὰ τοῦτʼ Ἀκαρνᾶνες· πόλεις</l>
+                        <l n="48"> οὗτοι δʼ ἔχουσι πλείονας, καὶ Λευκάδα,</l>
+                        <l n="49"> ἀφʼ ἧς μέγας ἐστὶ κόλπος εἰς Ἰσθμὸν φέρων.</l>
+                        <l n="50">
+                            <lb n="50"/> Νῆσοι Κεφαλλήνων δʼ ἐν αὐτῷ κείμεναι·</l>
+                    </lg>
+                    <lg>
+                        <l n="51">Ἰθάκη σταδίων <supplied reason="omitted">ὡς</supplied> ὀγδοήκοντα,
+                            στενή,</l>
+
+                        <pb n="240"/>
+                        <l n="52">ὕψος δʼ ἔχουσα καὶ λιμένας τρεῖς· ἐχομένη <gap reason="lost"
+                                extent="unknown"/></l>
+                        <l n="53">πρὸς ἐκπέραν δʼ οἰκοῦσι τῆς Αἰτωλίας <gap reason="lost" extent="unknown"
+                            /></l>
+                        <!-- lacunae indicated as 1-2 verses -->
+                        <l n="54"> Ἱερὸν δʼ ὕπεστιν Ἡρακλέους καλούμενον,</l>
+                        <l n="55">
+                            <lb n="55"/> ἕτερον δʼ Ἀφροδίτης. Ποταμὸν ἡ χώρα δʼ ἔχει</l>
+                    </lg>
+                    <lg>
+                        <l n="56"> Ἀχελῷον. Ἡμερῶν δὶ καὶ νυκτῶν δύο</l>
+                        <l n="57"> ἔσθʼ ὁ παράπλους αὐτῆς. Ἔχεται δʼ Αἰτωλία,</l>
+                        <l n="58"> ἐν ᾗ πόλις Πλευρὼν ὑπόκειται, χἱερόν</l>
+                        <l n="59"> ἅγιον Ἀθηνᾶς ἐστιν ὠνομασμένον.</l>
+                        <l n="60">
+                            <lb n="60"/> Ἔπειτα Καλυδὼν, εἶτεν αἵ τʼ Ἐχινάδες</l>
+                    </lg>
+                    <lg>
+                        <l n="61"> νῆσοι ποταμός τʼ Εὔηνος ἐκ Πίνδου ῥέων.</l>
+                        <l n="62"> Οὗτοι Δολόπων οἰκοῦσι πρὸς μεσημβρίαν·</l>
+                        <l n="63"> παράπλους δὲ ταύτης ἐστὶν ἡμέρας μιᾶς.</l>
+                        <l n="64"> Εἶλτα μετὰ ταύτην ἡ Λοκρὶς καλουμένη,</l>
+                        <l n="65">
+                            <lb n="65"/> ἐν ᾗ πόλις Ναύπακτος· εἶθ᾿ ὑποκείμενος</l>
+                    </lg>
+                    <lg>
+                        <l n="66"> λιμὴν μέγας πόλις τε Τολοφών. Μετὰ δὲ τήν</l>
+                        <l n="67"> Τολοφῶνα ποταμός ἐσθ᾿ Ὕλαιθος λεγόμενος·</l>
+                        <l n="68"> τοῦτον δὲ ῥεῖν λέγουσιν ἐξ Αἰτωλίας.</l>
+                        <l n="69"> Ὁ πᾶς δὲ παράπλους οὐδʼ ὅλης ἔσθ᾿ ἡμέρας.</l>
+                        <l n="70">
+                            <lb n="70"/> Οὗτοι κατοικοῦσιν δὲ πρὸς μεσημβρίαν</l>
+                    </lg>
+                    <lg>
+                        <l n="71"> Αἰτωλίας, Λέλεγες τὸ πρὶν κεκλημένοι.</l>
+                        <l n="72"> Ἔπειτα Φωκεῖς εἰσι Λοκρῶν ἐχόμενοι,</l>
+                        <l n="73"> παῤ οἷς πεδίον Κρισαῖον. Ἀπὸ Κίρρας δʼ ἄνω</l>
+                        <l n="74"> προβάντι Δελφῶν πόλις ὕπεστι χἱερόν,</l>
+                        <l n="75">
+                            <lb n="75"/> ἐν τὸ μαντεῖον, ὅ τε Παρνασός, μέγα</l>
+                    </lg>
+                    <lg>
+                        <l n="76"> καὶ σύσκιον ὄρος, εἶτα νυμφῶν ἐχόμενον</l>
+                        <l n="77"> Κωρύκιον ἄντρον· εἶτεν Ἀντικύρα πόλις</l>
+                        <l n="78"> ποταμός τε Κηφισὸς ῥέων ἐκ Φωκίδος.</l>
+                        <l n="79"> Παράπλους δὲ ταύτης ἡμέρας ἔσθʼ οὐχ ὅλης.</l>
+
+                        <pb n="241"/>
+                        <l n="80">
+                            <lb n="80"/> ἐν τῇ μεσογείᾳ δʼ ἐστὶ Κυπάρισσος πόλις</l>
+                    </lg>
+                    <lg>
+                        <l n="81"> Κρῖσά τε, μετʼ αὐτὴν Δαυλίς. Ἡ Βοιωτία</l>
+                        <l n="82"> χώρα δὲ μετὰ Φωκεῖς ὑπόκειται, κειμένη</l>
+                        <l n="83"> τῆς Φωκίδος χώρας πρὸς ἕω· κἄστιν δύο</l>
+                        <l n="84"> ἐπίσημ᾿ ὄρη, τὸ μὲν Ἑλικὼν καλούμενον,</l>
+                        <l n="85">
+                            <lb n="85"/> ἕτερον Κιθαιρών. Εἶτεν Ὠρωπὸς πόλις,</l>
+                    </lg>
+                    <lg>
+                        <l n="86"> καὶ τῆς θαλάττης ἀπέχον ἱερὸν οὐ πολύ</l>
+                        <l n="87"> ἔστʼ Ἀμφιαράου καὶ νεὼς καὶ τὸ τέμενος,</l>
+                        <l n="88"> Αὐλίς τε Βοιωτῶν πόλις, πρὸς ᾗ λιμήν</l>
+                        <l n="89"> κἀρτέμιδος ἱερὸν ἅγιον, ὃ λέγεται κτίσαι</l>
+                        <l n="90">
+                            <lb n="90"/> Ἀγαμέμνονʼ, εἶτεν Ἐρέσιον καλούμενον</l>
+                    </lg>
+                    <lg>
+                        <l n="91"> ἀκρότατον, εἶτ᾿ Εὔριιπος. Ἀνθηδὼν δʼ ἔχει</l>
+                        <l n="92"> Ἀνθηδόνιον τὸν λιμένα· καὶ μετʼ οὐ πολύ</l>
+                        <l n="93"> Τάναγρα. Κεῖται δʼ ἐν μεσογεία πάνυ καλή</l>
+                        <l n="94"> πόλις, μεγάλαι Θῆβαι, σταδίων τὸ περίμετρον</l>
+                        <l n="95">
+                            <lb n="95"/> ἔχουσα τετταράκοντα καὶ προσέτι τριῶν,</l>
+                    </lg>
+                    <lg>
+                        <l n="96"> Κῶπαι <del>δὲ</del> πόλις κὠρχομενός· εἶτα μετʼ οὐ πολύ</l>
+                        <l n="97"> πόλις Λεβάδεια χἱερὸν Τροφωνίου,</l>
+                        <l n="98"> ὅπου τὸ μαντεῖον λέγουσι γεγονέναι.</l>
+                        <l n="99"> Εἶτʼ Ὠκαλέα πόλις ἐστὶ καὶ Μεδεών. Μετά</l>
+                        <l n="100">
+                            <lb n="100"/> ταύτην ὑπόκειται Θεσπιὰ, κᾆτʼ ἐχομένη</l>
+
+                        <pb n="242"/>
+                    </lg>
+                    <lg>
+                        <l n="101"> ἡ προσαγορευομένη Πλαταιαὶ, μετὰ δέ τις</l>
+                        <l n="102"> πόλις ὑπόκειται Νῖσα. Μῆκός ἐστι τῆς</l>
+                        <l n="103"> Βοιωτίας στάδι’, ὡς λέγεται, πεντακόσια,</l>
+                        <l n="104"> διακόσια δὲ χἁβδομήκοντʼ ἐστὶ τό</l>
+                        <l n="105">
+                            <lb n="105"/> πλάτος. Ποταμοὺς ἔχει δὲ τὸν μέν λεγόμενον</l>
+                    </lg>
+                    <lg>
+                        <l n="106"> Ἰσμηνὸν Ἀσωπόν τε, πεδία δʼ εὔυδρα</l>
+                        <l n="107"> παρακείμενʼ ἔστʼ· ἔπειτα χώρα Μεγαρέων.</l>
+                        <l n="108"> Ἐντεῦθεν ἀρχή τῆς Πελοποννήσου <gap reason="lost" extent="unknown"/></l>
+                        <l n="109">
+                            <gap reason="lost" unit="character" quantity="15"/> Λιμήν</l>
+                        <l n="110">χωστὸς ὑπόκειται καὶ Λέχαιον λεγομένη</l> 
+                            <l n="111">πόλις <gap reason="lost" extent="unknown"/></l>
+                        <!-- ISSUE!!! there is a strong irregularity in the numbering of the lines here. lacunae are not numbered, the progression starts again from Κρήτη! -->
+                    </lg>
+                </div>
+
+                <div type="textpart" subtype="section" n="2">
+                    <lg>
+
+                        <l n="110">
+                            <lb n="110"/>Κρήτη τίς ἐστι κατὰ Κύθηρα κειμένη</l>
+                    </lg>
+                    <lg>
+                        <l n="111"> νῆσος περίκλυστος· ἔστι δʼ αὐτῆς τὸ μέγεθος</l>
+                        <l n="112"> δισχιλίων καὶ πεντακοσίων που σχεδόν</l>
+                        <l n="113"> σταδίων· ἀπασῶν δʼ ἐστὶ πελαγιωτάτη,</l>
+                        <l n="114"> στενὴ δὲ τελέως· ἐν δὲ ταύτη τρία γένη</l>
+                        <l n="115">
+                            <lb n="115"/> ἐποικίαν ἔσχηκεν Ἑλλήνων· τὸ μέν</l>
+                    </lg>
+                    <lg>
+                        <l n="116"> Λακεδαιμονίων, ἔπειτεν Ἀργείων, τὸ δέ</l>
+                        <l n="117"> ἀπὸ τῶν Ἀθηναίων· ἔχει δὲ βάρβαρα</l>
+                        <l n="118"> αὐτόχθονα γένη. Φασὶ δʼ ἐν Κρήτη πόλιν</l>
+                        <l n="119"> εἶναι Φαλάσαρνα κειμένην πρὸς ἥλιον</l>
+                        <l n="120">
+                            <lb n="120"/> δύνοντα, κλειστὸν λιμένʼ ἔχουσαν χἱερόν</l>
+                    </lg>
+                    <lg>
+                        <l n="121"> Ἀρτέμιδος ἅγιον, καὶ καλεῖσθαι τὴν θεόν</l>
+                        <l n="122"> Δίκτυνναν· εἶτεν Ἀπτεραίαν λεγομένην</l>
+                        <l n="123"> ἐν τῆ μεσογείᾳ· κᾆτα Κνωσσὸν ἐχομένην</l>
+                        <l n="124"> καὶ πρὸς νότον Γόρτυναν· ἄλλαι τʼ εἰσὶν ἐν</l>
+                        <l n="125">
+                            <lb n="125"/> Κρήτῃ πόλεις, ἅς ἐστιν ἐργῶδες φράσαι.</l>
+                    </lg>
+                    <lg>
+                        <l n="126"> Ποταμοὺς δʼ ἔχει Ληθαῖον, εἶτα λεγομένους</l>
+                        <l n="127"> Διδύμους, ἔπειτα Μαινόμενον, εἴτ’ ἐχόμενον</l>
+                        <l n="128"> Κεδρισὸν Ἀμφιμέλαν τε καὶ Μεσσάπολιν,</l>
+                        <l n="129"> ὄρος τε Δικτυνναῖον ἐπὶ δυσμὰς φέρον.</l>
+                        <l n="130">
+                            <lb n="130"/>Τὰς δὲ Κυκλάδας νήσους ὁρῶμεν κειμένας</l>
+                    </lg>
+                    <lg>
+                        <l n="131"> ὑπὲρ Γεραιστοῦ, πρὸς δὲ τὴν μεσημβρίαν</l>
+                        <l n="132"> οὔσας μὲν Εὐβοίας, περιεχούσας δὲ τό</l>
+                        <pb n="243"/>
+                        <l n="133"> πέλαγος τὸ Μυρτῷον λεγόμενον, ἔτι δὲ καί</l>
+                        <l n="134"> τῆς Ἀττικῆς χώρας μετεχούσας παντελῶς.</l>
+                        <l n="135">
+                            <lb n="135"/> Ἐγγὺς Κέως πρώτη τετράπολις Σουνίου</l>
+                    </lg>
+                    <lg>
+                        <l n="136"> νῆσος ὑπόκειται καὶ λιμήν· ἔχεται Κύθνος</l>
+                        <l n="137"> νῆσος πόλις τ᾿, εἶτιν Σέριφος καὶ λιμήν,</l>
+                        <l n="138"> ἔπειτα Σίφνος καὶ Κίμωλος ἐχομένη . . .</l>
+                        <l n="139"> ἔχουσα λιμένας δύο· μετʼ αὐτὴν δʼ ἐστὶν ἡ</l>
+                        <l n="140">
+                            <lb n="140"/> Δῆλος ἱερὰ νῆσος λεγομένη, καὶ λιμήν</l>
+                    </lg>
+                    <lg>
+                        <l n="141"> νεώς τε τἀπόλλωνος, εἶτεν ἐχομένη</l>
+                        <l n="142"> Μύκονος· μετὰ ταύτην Τῆνός ἐστι καὶ λιμήν,</l>
+                        <l n="143"> Ἄνδρος τε νῆσος καὶ κατὰ Γέραιστον λιμήν.</l>
+                        <l n="144"> Αὗται μέν εἰσι Κυκλάδες, ἕτεραι λεγόμεναι</l>
+                        <l n="145">
+                            <lb n="145"/> Σποράδες, ἐκ αἷσι Μῆλοε, εἶτεν οὐ πολύ</l>
+                    </lg>
+                    <lg>
+                        <l n="146"> ἀπέχουσα Θήρα νῆσος, εἶτεν οὐ πολύ</l>
+                        <l n="147"> Ἴος, εἶτα Νάξος· μετὰ δὲ ταύτην πελαγία</l>
+                        <l n="148"> Σκῦρος· κατʼ Εὔβοιαν δʼ ὁρῶμεν κειμένην</l>
+                        <l n="149"> αὐτήν· ἀπὸ ταύτης ἐστὶν ἀπέχουσʼ οὐ πολύ</l>
+                        <l n="150">
+                            <lb n="150"/> νῆσος Πεπάρηθος ἡ τρίπολις καλουμένη <gap reason="omitted"
+                            /></l>
+                    </lg>
+                    <p><supplied reason="explanation">ΔΙΚΑΙΑΡΧΟΥ ΑΝΑΓΡΑΦΗ ΣΛΛΑΔΟΣ.</supplied></p>
+                    <!-- the subscriptio is in [], but seems not to be in the codex. I can't find any explanation in the notes -->
+                </div>
+            </div>
+
+
+
+        </body>
+    </text>
+</TEI>

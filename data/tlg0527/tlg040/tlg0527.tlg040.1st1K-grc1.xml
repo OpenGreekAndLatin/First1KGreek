@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Abdias</title>
+    <author xml:lang="lat">Septuaginta</author>
+    <editor>Henry Barclay Swete D.D.</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0527.tlg040.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+      License</p>
+    </availability>
+    <date>2017</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United State</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title>The Old Testament in Greek</title>
+       <editor>
+        <persName>
+         <name>Henry Barclay Swete D.D.</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0527" xml:lang="lat">Septuaginta</author>
+       <imprint>
+        <publisher>Cambridge University Press</publisher>
+        <pubPlace>Cambridge</pubPlace>
+        <date>1905</date>
+       </imprint>
+       <biblScope unit="volume">3</biblScope>
+      </monogr>
+      <ref target="https://archive.org/stream/theoldtestamenti03swetuoft">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+).(.+)" n="verse" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+
+
+<text>
+  <body>
+    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0527.tlg040.1st1K-grc1">
+<pb n="45"/>
+<head>ΟΒΔΕΙΟΥ</head>
+<div type="textpart" subtype="chapter" n="1">
+<p>ΡΑΣΙΣ Ὀβδειού.</p> <note type="marginal">B</note>
+<div type="textpart" subtype="verse" n="1"><p>Τάδε λέγει Κύριος ὁ θεὸς τῇ Ἰδουμαίᾳ Ἀκοὴν ἤκουσα παρὰ
+Κυρίου, καὶ περιοχὴν εἰς τὰ ἔθνη ἐξαπέστειλεν Ἀνάστητε καὶ ἐξαναστῶμεν
+ἐπʼ αὐτὴν εἰς πόλεμον.</p></div> <div type="textpart" subtype="verse" n="2"><p>ἰδοὺ ὀλιγοστὸν δέδωκά σε ἐν τοῖς
+ἔθνεσιν, ἠτιμωμένος σὺ εἶ σφόδρα·</p></div> <div type="textpart" subtype="verse" n="3"><p>ὑπερηφανία τῆς καρδίας σου
+ἐπῆρέν σε κατασκηνοῦντα ἐν ταῖς ὀπαῖς τῶν πετρῶν· ὑψῶν κατοικίαν
+αὐτοῦ, λέγων ἐν καρδίᾳ αὐτοῦ Τίς με κατάξει ἐπὶ τὴν γῆν ;</p></div> <div type="textpart" subtype="verse" n="4"><p>ἐὰν
+μετεωρισθῇς ὡς ἀετός, καὶ ἐὰν ἀνὰ μέσον τῶν ἄστρων θῇς νοσσιάν
+σου, ἐκεῖθεν κατάξω σε, λέγει Κύριος.</p></div> <div type="textpart" subtype="verse" n="5"><p>εἰ κλέπται εἰσῆλθον πρὸς
+σὲ ἢ λῃσταὶ νυκτός, ποῦ ἂν ἀπερρίφης; οὐκ ἂν ἔκλεψαν τὰ ἱκανὰ
+ἑαυτοῖς; καὶ εἰ τρυγηταὶ εἰσῆλθον πρὸς σέ, οὐκ ἂν ὑπελίποντο ἐπιφυλλίδας;</p></div>
+<div type="textpart" subtype="verse" n="6"><p> πῶς ἐξηρευνήθη Ἠσοὺ καὶ κατελήμφθη αὐτοῦ τὰ κεκριυμμένα.</p></div>
+<div type="textpart" subtype="verse" n="7"><p>ἕως τῶν ὁρίων ἐξαπέστειλάν σε· πάντες οἱ ἄνδρες τῆς διαθήκης
+σου ἀντέστησάν σοι, ἡδυνάσθησαν πρὸς σὲ ἄνδρες εἰρηνικοί σου,
+ἔθηκαν ἔνεδρα ὑποκάτω σου, οὐκ ἔστιν σύνεσις αὐτοῖς.</p></div> <div type="textpart" subtype="verse" n="8"><p>ἐν ἐκείνῃ τῇ
+ἡμέρᾳ, λέγει Κύριος, ἀπολῶ σοφοὺς ἐκ τῆς Ἰδουμαίας καὶ σύνεσιν ἐξ
+ὄρους Ἠσού·</p></div> <div type="textpart" subtype="verse" n="9"><p>καὶ πτοηθήσονται οἱ μαχηταί σου οἱ ἐκ Θαιμάν, ὅπαως
+<note type="footnote">Inscr Οβδειου ε B* Οβδιου ε Bc Aβδιου ε U+05D0Q Αβδειου ε A 1 Οβδιου <note type="marginal">U+05D0ΑQ</note>
+Bᵇ Aβιου U+05D0AQ) | εξαναστησωμαιν U+05D0* 3 υπερηφανια] pr η U+05D0c.a (om η
+U+05D0c.b) | κατασκηνουντος (nisi potius -ντες) U+05D0* -ντα U+05D0c.a -ντας U+05D0c.b | των πε-
+τρων] in ω 1⁰ fort ras aliq B? | καρδια] pr τη A 4 μετεωρισθη Q*
+(-θης Qᵃ) | om εαν 2⁰ U+05D0AQ* (hab Qᵃ om ανα ut vid) | αστερων U+05D0* (αστρων
+U+05D0c.b) 5 η] inceb ε U+05D0* ει A | απεριφης U+05D0 | εαυτοις] αυτοις (ε improb
+postea ras) U+05D0? | υπελιποντο] υπολιποντο U+05D0* (υπελ U+05D0c.a c.b) υπελειποντο AQᵃ
+(υπελειπον Q*) | επιφυλλιδας] υποφυλλιδας U+05D0*c.b υποφυλλιδα U+05D0c.a A 6 εξ-
+ηραυνηθη A | κατελημηφθη] κατελιφθη U+05D0 κατεληφθη Q | κεκρυμενα U+05D0 7 ο-
+ριων] + σου AQ* | εστιν] + σοι A | αυτοις] pr εν AQ αυτω Qa 8 λεγει]
+φησιν Qmg | αποιω] οι ο΄ απολεσω Qᵐᵍ 9 πτοηθησονται] οι ό ηττηθη-
+σονται Qmg | σου] σοι A* (σου A¹) | Θαιμαν] Θεμαν U+05D0Q</note>
+
+<pb n="46"/>
+<note type="marginal">B</note> ἐξαρθῇ ἄνθρωπος ἐξ ὄρους Ἠσαύ·</p></div> <div type="textpart" subtype="verse" n="10"><p>διὰ τὴν σφαγὴν καὶ τὴν ἀσέβειαν
+ἀδελφοῦ σου Ἰακὼβ καλύψει σε αἰσχύνη, καὶ ἐξαρθήσῃ εἰς τὸν
+αἰῶνα.</p></div> <div type="textpart" subtype="verse" n="11"><p> Ἀφʼ ἧς ἡμέρας ἀντέστης ἐξ ἐναντίας ἐν ἡμέραις αἰχμαλωτευόντων
+ἀλλογενῶν δύναμιν αὐτοῦ, καὶ ἀλλότριοι εἰσῆλθον εἰς
+πύλας αὐτοῦ καὶ ἐπὶ Ἰερουσαλὴμ ἔβαλον κλήρους, καὶ σὺ ἧς ὡς εἷς
+ἐξ αὐτῶν.</p></div> <div type="textpart" subtype="verse" n="12"><p>καὶ μὴ ἐπίδῃς ἡμέραν ἀδελφοῦ σου ἐν ἡμέρᾳ ἀλλοτρίων,
+καὶ μὴ ἐπιχαρῆς ἐπὶ τοὺς υἱοὺς Ἰούδα ἐν ἡμέρᾳ ἀπωλίας αὐτῶν, καὶ
+μὴ μεγαλορημονῆς ἐν ἡμέρᾳ θλίψεως·</p></div> <div type="textpart" subtype="verse" n="13"><p>μηδὲ εἰσέλθῃς εἰς πύλας
+λαῶν ἐν ἡμέρᾳ πόνων αὐτῶν, μηδέ ἐπίδῃς καὶ σὺ τὴν συναγωγὴν
+αὐτάων ἐν ἡμέρᾳ ὀλέθρου αὐτῶν, μηδἐ συνεπιθῇ ἐπὶ τὴν δύναμιν
+αὐτῶν ἐν ἡμέρᾳ ἀπωλίας αὐτῶν·</p></div> <div type="textpart" subtype="verse" n="14"><p>μηδὲ ἐπιστῆς ἐπὶ τὰς διεκβολὰς
+αὐτοῦ ἐξολεθρεῦσαι τοὺς ἀνασωζομένους αὐτοῦ, μηδέ συγκλείσῃς τοὺς
+φεύγοντας αὐτοῦ ἐν ἡμέρᾳ θλίψεως.</p></div> <div type="textpart" subtype="verse" n="15"><p>διότι ἐγγὺς ἡμέρα Κυρίου
+ἐπὶ πάντα τὰ ἔθνη· ὃν τρόπον ἐποίησας, οὕτως ἔσται σοι τὸ ἀνταπόδομά
+σου ἀνταποδοθήσεται εἰς κεφαλήν σου·</p></div> <div type="textpart" subtype="verse" n="16"><p> διότι ὃν τρόπον
+ἔπιες ἐπὶ τὸ ὄρος τὸ ἅγιόν μου, πίονται καὶ καταβήσονται, καὶ ἔσονται
+καθὼς οὐχ ὑπάρχοντες.</p></div> <div type="textpart" subtype="verse" n="17"><p> Ἐν δὲ τῷ ὄρει Σειὼν ἔσται σωτηρία,
+καὶ ἔσται ἅγιονʼ καὶ κατακληρονομήσουσιν ὁ οἵκος Ἰακὼβ τοὺς κατακληρονομήσαντας
+αὐτούς.</p></div> <div type="textpart" subtype="verse" n="18"><p>καὶ ἔσται ὁ οἶκος Ἰακὼβ πῦρ, ὁ δὲ
+οἶκος Ἰωσὴφ φλόξ, ὁ δὲ οἶκος Ἠσαύ εἰς καλάμην, καὶ ἐκκαυθήσονται
+εἰς αὐτοὺς καὶ καταφάγονται αὐτούς, καὶ οὐκ ἔσται πυροφόρος τῷ
+οἴκῳ Ἠσαύ, διότι Κύριος ἐλάλησεν.</p></div> <div type="textpart" subtype="verse" n="19"><p>καὶ κατακληρονομήσουσιν οἱ
+<note type="marginal">U+05D0ΑQ</note> <note type="footnote">9 εξαρθη] οι ό αρθη Qᵐᵍ 10 την ασεβειαν (-βιαν U+05D0)] pr δια Q |αδελφου]
+την εις τον αδελφον U+05D0c.ᵃ (mox αδελφου revoc) AQ* (αδελφου Q*mg) καλνψει]
+pr και U+05D0c.a (mox improb) AQ* αιωναν U+05D0* 11 αντεστη Q* |ημεραις]
+ημερα AQ αυτου 1⁰] ουτων U+05D0* (.του U+05D0c.a c.b) πυλας] pr τας A εβαλον]
+επβαλλον B (π improb U+05D01 vid λ 1⁰ improb U+05D0c) συ ης] υμεις εστε Qᵐᵍ
+12 επιδῃς (εφ. Qᵐᵍ ᵛⁱᵈ)] επιδοις A απωλειας Bᵃᵇ AQ μεγαλορημονης] μεγα-
+λορημονησης U+05D0¹ (μεγαρηονησης U+05D0*ᵛⁱᵈ) AQ* μεγαλορρ. 13 λαων] λαου
+μου U+05D0c.b ό λαου μου Qmg λαου σου A λαου Qᵃ (λαων ᵃᵇ) πονων] πονηρων
+(ηρ ras et lam antes improb U+05D0?) πονου AQ ουτων 1⁰, 20, 30 , 4⁰] αυτου U+05D0c.b
+μηδε 2⁰] μητε Q* μη Qᵃᵛiᵈ om μηδε συνεπιθη...αυτων (50) BᵃᵇU+05D0* (hab
+μηδε συν. επι την δ. αυτ. εν ημ. απολιας ουτων ε U+05D0c.a c.ᵇ) απωλειας AQ |
+οὕτων B⁰] οἱ γʼ αυτου )ᵐᵍ 14 επιστης] στης A συνεπιστης ) αυτου
+1⁰] οὕτων B⁰ (postea ruts του) A)* εξολεθρευσαι] pr του Aᵃ* αυτου 2⁰]
+ἐξ οὕτων B ᵈ (mΟX αυτου revoc) οὕτων A) συνκλισης Κ (συνκ. etiam
+Τ*ᵛⁱᵈ) ηφυγοντας ) αυτου 3⁰] οὕτων U+05D0c.a (mox αυτου revoc) ἐξ οὕτων
+A) 15 ημερα] pr η HA Κυρίου] pr του A ἔσται] ἔστω A αντα-
+ποδωμα, ανταποδωθ. A 16 διότι] δία τουτο A πίονται] + πανία τα
+ἔθνη οινον πίονται U+05D0c.ᵃ A + πίονται πανία τα ἔθνη οινον Q 17 βίων
+BᵇAQ) σωτήρια] pr η U+05D0c.b A 18 ο δὲ οικος 1⁰] καί ο οικ. Qmᵍ om εἰς 10
+U+05D0 | εκκαυθησεται AQ | om και 3⁰ U+05D0* (hab κ U+05D0c.ᵃ) | καταφαγεται Q | πυρ-
+φορος U+05D0?A τω οικω] pr ἐν AQ | Ησαυ 2⁰] υ rescr U+05D0¹ | διότι] ὅτι U+05D0c.bQa</note>
+
+<pb n="47"/>
+ἐν Νάγεβ τὸ ὄρος τὸ Ἠσαύ, καὶ οἱ ἐν τῇ Σεφηλὰ τοὺς ἀλλοφύλους· <note type="marginal">B</note>
+καὶ κατακληρονομήσουσιν τὸ ὄρος Ἐφράιμ καὶ τὸ πεδίον Σαμαρείας
+καὶ Βενιαμεὶν καὶ τὴν Γαλααδεῖτιν.</p></div> <div type="textpart" subtype="verse" n="20"><p> καὶ τῆς μετοικεσίας ἡ ἀρχὴ
+αὕτη· τοῖς υἱοῖς Ἰσραήλ, γῆ τῶν Χαναναίων ἕως Σαρέπτων, καὶ ἡ
+μετοικεσία Ἰερουσαλὴμ ἕως Ἐφράθα· κληρονομήσουσιν τὰς πόλεις
+τοῦ Νάγεβ.</p></div> <div type="textpart" subtype="verse" n="21"><p>καὶ ἀναβήσονται ἀνασωζόμενοι ἐξ ὄρους Σειὼν τοῦ
+ἐκδικῆσαι τὸ ὄρος Ἠσαύ, καὶ ἔσται τῷ κυρίῳ ἡ βασιλεία.</p></div>
+<note type="footnote">19 εναγεβ U+05D0* (εν N. U+05D0c.a, c.ᵇ) Σαφηλα Qmg Σαμαριας U+05D0 | Βενιαμειν Q | <note type="marginal">U+05D0AQ</note>
+Γαλααδιτιν AQᵃ 20 μετοικησιας, κησια Qᵃ | Χανανεων U+05D0 | εως 1⁰]
+pr και Q* | Σαρεηφθων Qᵃ | Εηφραθα] Σηφραθα Q*nisi fort 1 Σαφαραδ Qᵃ |
+κληρονομησουσιν] pr και U+05D0c.ᵃ (improb κ U+05D0c.b) AQ | πολις U+05D0* (-λεις U+05D0c.ᵇ)
+21 ανασωζομενοι] ανδρες σεσωσμενοι A ανδρες εσωομενοι (sic) Q* (ανασωζ-
+Qᵃ) | Σιων BᵇU+05D0AQ | βασιλια U+05D0* (-λεια U+05D0c.b)
+Subscr Οβδειου ε B* (Οβδιου Bᵇc) Αβδειου ε U+05D0 Αβδιου ε A Αβδαιου ε Q
+(+ δουλευων κω παρ Εβραιοις δ΄ Qᵃ)</note>
+</div>
+
+
+
+
+    </div>
+  </body>
+</text>
+</TEI>
