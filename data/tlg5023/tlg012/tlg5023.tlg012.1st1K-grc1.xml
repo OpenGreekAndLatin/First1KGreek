@@ -1,0 +1,1654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Scholia in Euripidis Troiades</title>
+                <editor>Karl Wilhelm Dindorf</editor>
+                <author xml:lang="lat">Scholia Euripidem</author>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg5023.tlg012.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Scholia Graeca in Euripidis tragoedias</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Gulielmus Dindorfius</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg5023" xml:lang="lat">Scholia
+                                Euripidem</author>
+                            <imprint>
+                                <publisher>Oxford University Press</publisher>
+                                <pubPlace>Oxford</pubPlace>
+                                <date>1863</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                        </monogr>
+                        <ref
+                            target="https://archive.org/stream/scholiagraecaine01dind#page/40/mode/2up"
+                            >Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+).(.+)" n="section"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern matchPattern="(.+)" n="chapter"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg5023.tlg012.1st1K-grc1">
+
+                <div type="textpart" subtype="chapter" n="1">
+                    <pb n="40"/>
+                    <head>ΤΡΩΙΑΔΕΣ.</head>
+
+                    <div type="textpart" subtype="section" n="1">
+                        <head>ΥΠΟΘΕΣΙΣ ΤΡΩΙΑΔΩΝ.</head>
+                        <p>ΜΕΤΑ τὴν Ἰλίου πόρθησιν ἔδοξεν Ἀθηνᾷ τε καὶ Ποσειδῶνι τὸ τῶν Ἀχαιῶν
+                            στράτευμα διαφθεῖραι, τοῦ μὲν εὐνοοῦντος τῇ πόλει <lb n="5"/> διὰ τὴν
+                            κτίσιν, τῆς δὲ μισησάσης τοὺς Ἕλληνας διὰ τὴν Αίσντος εἰς Κασάνδραν
+                            ὕβριν. οἱ δὲ Ἕλληνες κληρωσάμενοι περὶ τῶν αἰχμαλώτων γυναικῶν τὰς ἐν
+                            ἀξιώμασιν ἔδωκαν Ἀγαμέμνονι μὲν Κασάνδραν, Ἀνδρομάχην δὲ Νεοπτολέμῳ,
+                            Πολυξένην δὲ τῷ Ἀχιλλεῖ. ταύτην μὲν οὖν ἐπὶ τῆς τοῦ Ἀχιλλέως <lb n="10"
+                            /> ταφῆς ἔσφαξαν, Ἀστυάνακτα δὲ ἀπὸ τῶν τειχῶν ἔρριψαν. Ἑλένην δὲ ὡς
+                            ἀποκτενῶν Μενέλαος ἤγαγεν, Ἀγαμέμνων δὲ τὴν χρησμῳδὸν ἐνυμφαγώγησεν.
+                            Ἑκάβη δὲ τῆς μὲν Ἑλένης κατηγορήσασα, <note type="footnote">2. Ὑπόθεσις
+                                Τρῳάδων] Sic inscriptum Falsum est quod ἐκληρώσαντο in A. Argumentum
+                                est in Harl. esse dicitur, qui, pariter ut Neapolitanus, 5743 et
+                                Vaticano Palatino 287. κληρωσάμενοι habet. Est etiam in A. (Vaticano
+                                909.), 8. μὲν om. Havn. et Havniensi: de quibus diximus ib.
+                                Ἀνδρομάχην δὲ] ἀνδρομάχην μὲν ad Rhesi ὑπέθεσιν. 3. τὴν om. Havn. 9.
+                                τῷ Ἀχιλλεῖ] τῷ om. Havn. ib. πόρθησιν] πόρθωσιν A. ib. ἐπὶ τῆς τοῦ
+                                ἀχιλλέως ταφῆς ib. Ποσειδῶνι] τῷ ποσειδῶνι Havn. ἔσφαξαν A. Feminino
+                                τῆς ταφῆς 4. διαφθεῖραι] διαφθαρῆναι Harl. offensus corrector
+                                aliquis scripsit 5. Αἴαντος] τοῦ αἴαντος N. ἐπὶ τοῦ τοῦ ἀχιλλέως
+                                τάφου κατέσφαξαν, 6. Κασάνδραν] Sic A.N. hic et quod est in Havn.
+                                Alius in infra, non κασσάνδραν. Harl. ἐπὶ τῆς τοῦ προειρημένου ταφῆς
+                                ib. οἱ δὲ Ἕλληνες κληρωσάμενοι περὶ ἔσφαξαν. et in Pal. ἐπὶ τῆς τοῦ
+                                εἰρημένου των αἰχμαλώτων γυναικῶν τὰς ἐν ἀξιώμασιν] ταφῆς ἔσφαξαν,
+                                cui Musurus Sic A.N. et sic Harl. quo in Ald. substituit ἐπὶ τοῦ
+                                τάφου αὐτοῦ nisi quod post γυναικῶν interpungit τοῦ ἔσφαξαν. et
+                                pergit τὰς γὰρ ἐν ἀξιώμασι. 10. τειχῶν] τειχέων Havn. Quam
+                                scripturam in Ald., haud 11. ἀποκτενῶν] ἀποκτείνων libri. dubie ex
+                                Pal., posuit Musurus, nisi Correxit Musurus in Ald. quod ἐκληρώσαντο
+                                ex conjectura, ut ib. Μενέλαος libri. Μενέλεως Ald. videtur,
+                                scripsit pro κληρωσάμενοι.</note>
+                            <pb n="41"/> τοὺς ἀναιρεθέντας δὲ κατοδυραμένη καὶ τὸν Ἀστυάνακτα
+                            κηδεύσασα πρὸς τὰς Ὀδυσσέως ἤχθη σκηνὰς, τούτῳ λατρεύειν δοθεῖσα.</p>
+                        <note type="footnote">1. ἀναιρεθέντας δὲ] ἀναιρεθέντας Kirchhoffius. καὶ
+                            κηδεύσασα A. Havn. τε καὶ θρηνήσασα καὶ κη. μὲν A. ib. κατοδυραμένη A.
+                            Havn. κατοδυρομένη δεύσασα Harl. τε καὶ θρηνήσασα ceteri. ib, καὶ τὸν
+                            Ἀστυάνακτα κηδεύσασα 2, Ὀδυσσέως] τοῦ ὀδυσσέως Ald.</note>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="2">
+                    <pb n="42"/>
+                    <head>ΕΧΟΛΙΑ ΕΙΣ ΤΑΣ ΤΡΩΙΑΔΑΣ.</head>
+                    <div type="textpart" subtype="section" n="1">
+                        <p>1. ἭΚΩ λιπόν: ὅλος ἐστὶ τοῦ θεάτρου ὁ Εὐριπίδης, πρὸς ὃ ἀφορῶν τοὺς
+                            λόγους νῦν ὁ Ποσειδῶν ποιεῖ παρὼν ἐν τῇ ὑποθέσει. <lb n="5"/> πολλαχοῦ
+                            δὲ τοιοῦτος, ὡς ἐν ταῖς Βάκχαις ὁ Διόνυσος, ἥκω Διὸς παῖς τήνδε Θηβαίων
+                            χθόνα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="6">
+                        <p>6. οὔποτʼ ἐκ φρενῶν: τὸ ἑξῆς, ἐκ φρενῶν τῶν ἐμῶν. παρὰ Ὀμηρικὸν δὲ
+                            Ποσειδῶνα ταῦτα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="9">
+                        <p>9. ὁ γὰρ Παρνάσσιος: Παρνάσσιον αὐτὸν εἶπε Φωκέα ὄντα διὰ <lb n="10"/> τὸ
+                            τάττεσθαι Δελφοὺς ὑπὸ Φωκεῦσιν. Ὅμηρος <lg>
+                                <l>αὐτὰρ Φωκήων Σχεδίος καὶ Ἐπίστροφος ἦρχον,</l>
+                                <l>υἱέες Ἰφίτου μεγαθύμου Ναυβολίδαο.</l>
+                            </lg> εἶτα <lg>
+                                <l>οἳ Κυπάρισσον ἔχον Πυθῶνά τε πετρήεσσαν.</l>
+                            </lg>
+                            <lb n="15"/> παῤ ὃ δὴ ἠξιοῦντο τοῦ τε ἱεροῦ καὶ τῶν αὐτόθι χρημάτων
+                            ἔχειν τὴν ἐπιμέλειαν. ἔνθεν καὶ οἱ ἱεροὶ πόλεμοι κατερράγησαν,
+                            Λακεδαιμονίων μὲν ἀποδόντων Δελφοῖς τὸ ἱερὸν μετὰ τὸ καταπολεμῆσαι
+                            Φωκέας, Ἀθηναίων δὲ ἔμπαλιν Φωκεῦσιν αὐτὸ παραδόντων, καθάπερ Θουκυδίδης
+                            φησί. καλεῖται δὲ ἱερὸς ὅτι περὶ τοῦ ἱεροῦ τοῦ ἐν <lb n="20"/> Δελφοῖς
+                            ἐγένετο. Φώκου δὲ τοῦ Ψαμάθης καὶ Ἀστεροδίας τῆς Δηϊονέως ἐγένετο
+                            Πανοπεὺς καὶ Κρῖσος ὁ κρισάντου, τοῦ δὲ Πανοπέως <note type="footnote"
+                                >3. ἐστὶ Cobetus. ἐπὶ A. ib. ἔχειν L. Dindorfius. εἶχον A. 5.
+                                Βάκχαις] v. 1. 18. παραδόντων N. παραδόντων αὖτις 7. παρὰ L.
+                                Dindorfius. περὶ A. A. ib. Ὁμηρικὸν] Vid. Il. 12, 17. et 19.
+                                Θουκυδίδης] 1, 112. 13 init. 20. Ἀστεροδίας] Rectam hujus 9. διὰ τὸ
+                                τάττεσθαι L. Dindorfius. nominis scripturam Ἀστεροδείας esse
+                                διατάττεσθαι A. dixi in annot. ad schol. Homeri 10. Ὅμηρος] Il. 2,
+                                517. Odyss. p. 50, 1. 11. Σχεδίος] σχέδιος A. 21. Κρῖσος Κampmannus.
+                                κροῖσος 15. παῤ ὃ L. Dindorfius. παῤ A. ὦ A.</note>
+                            <pb n="43"/> Ἐπειός. οὗτος εἰς Τροίαν στρατεύσας τὸν δούρειον ἵππον
+                            ἐποίησεν. Ἄλλως. ὁ Φωκεὺς Παρνάσσιος εἴρηται, ἐπεὶ Δελφὸς ὢν σὺν τοῖς
+                            Φωκεῦσιν ἐτάττετο, ἢ διὰ τὸ πλησίον τῇ Φωκίδι εἶναι τὸν Παρνασσόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="14">
+                        <p>14. δούρειος ἵππος: ψυχρῶς ἠτυμολόγησε τὸν ἵππον ἀπό τῶν <lb n="5"/>
+                            δοράτων· ἄμεινον γὰρ παρὰ τὰ δοῦρα πεποιῆσθαι ἤγουν τὰ ξύλα. Ὅμηρος
+                            δουράτεον, ὅ ἐστι ξύλινον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="15">
+                        <p>15. ἔρημα δʼ ἄλση: ἔρημα αὐτά φησιν, ὡς τῶν θεῶν ἐκλελοιπότων τὰ ἱερά.
+                            αὐτὸς οὖν ὁ Ποσειδῶν φησι <lg>
+                                <l>λείπω τὸ κλεινὸν Ἴλιον βωμούς τʼ ἐμούς.</l>
+                                <lb n="10"/>
+                            </lg>
+                        </p>
+                    </div>
+                    <div type="textpart" subtype="section" n="16">
+                        <p>16. πρὸς δὲ κρηπίδων βάθροις: παρὰ τοῖς βάθροις δὲ τῶν κρηπίδων τοῦ
+                            ἑρκείου Διὸς ἀντὶ τοῦ ὑπὸ τοῖς βωμοῖς τοῦ Διός. τὸν δὲ ἕρκειον Δία ἄλλοι
+                            ἱστορικοὶ ἀναγράφουσιν ἰδίαν τινὰ σχέσιν περὶ αὐτοῦ ἱστοροῦντες, τρισὶν
+                            ὀφθαλμοῖς αὐτὸν κεχρῆσθαί φασιν, ὡς οἱ περὶ Ἀγίαν καὶ Δερκύλον.
+                            πεφόνευται δὲ ὁ Πρίαμος ὑπὸ Νεοπτολέμου <lb n="15"/> δικαίως, ἐπειδὴ καὶ
+                            τὸν πατέρα αὐτοῦ Ἀχιλλέα ἐλθόντα ἐπὶ τὸν γάμον τῆς Πολυξένης οἱ περὶ
+                            Ἀλέξανδρον ἐν τῷ τοῦ Θυμβραίου Ἀπόλλωνος ἱερῷ λόγχαις ἀνεῖλον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="20">
+                        <p>20. δεκασπόρῳ χρόνῳ: ἀντὶ τοῦ διὰ δέκα ἐνιαυτῶν· ἔνθεν καὶ ποιὰς τοὺς
+                            ἐνιαυτοὺς ἔλεγον ἀπὸ τῆς τῶν καρπῶν ἀναδόσεως.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="27">
+                        <p>27. νοσεῖ τὰ τῶν θεῶν: ἀντὶ τοῦ ἐξασθενεῖ, οἷον τὰ τῶν θεῶν ἀμελούμενα
+                            ὑπὸ τῶν ἀνθρώπων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="29">
+                        <p>29. βοῷ Σκάμανδρος: ἀντὶ τοῦ καταβοᾶται· ἐν τῷ αὐτὰς βοᾶν Νεοπτόλεμος καὶ
+                            ἄλλοι τινές.</p>
+                        <note type="footnote">ib. ὁ κρισάντου A. ὁκρισαν N., uterque 15. Ἀγίαν καὶ
+                            Δερκύλον] ἀγΐαν καὶ que vitiose. ὁ Κρῖσαν κτίσας Κampmannus. δέρκαλον A.
+                            Athenaeus 3. p. 86 F. Ἀγίας δὲ καὶ Δερκύλος ἐν Ἀργολικοῖς 2. ἐπεὶ Δελφὸς
+                            ὢν—ἐτάττετο Cobetus, τοὺς στραβήλους ἀστραβήλους ὀνομάζουσιν. ἐπειὸς δὲ
+                            ἁφῶν (ἀφʼ ὧν N.)— σιν. Clemens Alexandr. Strom. 1. p. 381. Ἴλιον
+                            ἑάλω—Θαργηλιῶνος μηνὸς ἐτάττοντο A.N. 7. Ὅμηρος] Od. 8, 493. 512. νὸς
+                            δευτέρᾳ ἐπὶ δέκα Ἀγίας δὲ καὶ 12. ἑρκείου—ἕρκειον] ἑρκίου—ἕρκιον
+                            Δερκύλος ἐν τῇ τρίτῃ μηνὸς Πανέμου ὀγδόῃ φθίνοντος. COBET. ib. τὸν δὲ
+                            Cobetus. τὸ δὲ A. 18. ἱερῷ Κampmannus. ἱερὸν A. 14. ἱστοροῦντες] Conf.
+                            Pausan. 2, ib. λέγειν] His in A. adjuncta 24, 4. et 8, 46, 2. COBET.
+                            sunt verba ταῦτα ἔνιοι—ἀφηγουμένων ib. αὐτὸν Kampmannus. αὐτοὺς τῶν
+                            Ἀθηναίων, quae scholio versus A. Ante τρισὶν excidit καί. 31. adjunxi,
+                            monente Cobeto.</note>
+
+                        <pb n="44"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="31">
+                        <p>31. εἴληχʼ Ἀθηναίων τε Θησεῖδαι πρόμοι: ἔνιοι ταῦτά φασι πρὸς χάριν
+                            εἰρῆσθαι· μηδὲν γὰρ εἰληφέναι τοὺς περὶ Ἀκάμαντα καὶ Δημοφῶντα ἐκ τῶν
+                            λαφύρων, ἀλλὰ μόνην τὴν Αἴθραν, διʼ ἣν καὶ ἀφίκοντο εἰς Ἴλιον Μενεσθέως
+                            ἡγουμένου. Λυσίμαχος δὲ τὸν τὴν <lb n="5"/> Πέρσιδα πεποιηκότα φησὶ
+                            γράφειν οὕτως <lg>
+                                <l>Θησείδαις δʼ ἔπορεν δῶρα κρείων Ἀγαμέμνων</l>
+                                <l>ἠδὲ Μενεσθῆϊ μεγαλήτορι ποιμένι λαῶν.</l>
+                            </lg> Ἄλλως. ταῦτα ἔνιοι πρὸς χάριν Ἀθηναίων Εὐριπίδην λέγειν· ἀγαπητὸν
+                            γὰρ εἶναι τοῖς περὶ Δημοφῶντα Αἴθραν ἀναλαβεῖν, ἦς ἕνεκα <lb n="10"/>
+                            αὐτούς φασιν ἐπὶ Τροίαν ἐλθεῖν Μενεσθέως ἀφηγουμένου τῶν Ἀθηναίων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="32">
+                        <p>32. ἄκληροι Τρῳάδων: γράφεται παρθένων. ὅσαι μὲν οὖν ἐκληρώθησαν
+                            ἀπεδόθησαν, ὅσαι δὲ ἀκλήρωτοι ἐξαιρέτως δοθεῖσαι τοῖς πρώτοις ἐνταῦθα
+                            τυγχάνουσιν.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="36">
+                        <p>36. τὴν δʼ ἀθλίαν: ἄμεινον ἦν ἀπὸ τῶν πραγμάτων παράγεσθαι ὀδυρομένην τὰ
+                            παρόντα. οὕτω γὰρ ἂν ἡ τραγῳδία τὸ πάθος εἶχε, νῦν δὲ ψυχρῶς τῷ θεάτρῳ
+                            προσδιαλέγεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="41">
+                        <p>41. ἣν δὲ παρθένον μεθῆκʼ Ἀπόλλων: ἣν οὐ διεκόρευσεν, ἀλλʼ εἴασε
+                            παρθένον· οἱ γὰρ ἐνθουσιῶντες ἐπιτετραμμένοι εἰσὶ τῇ <lb n="20"
+                            />κοινωνήσει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="44">
+                        <p>44. γαμεῖ βιαίως: ἀντὶ τοῦ γαμήσει· σεσημείωται καὶ μηκέτι αὐτῆς
+                            οἰκουμένης· ὑπώπτευκε γὰρ Ἀριστοφάνης ἐκ τούτου τὸ “νῦν δὲ δὴ Αἰνείαο
+                            βίη Τρώεσσιν ἀνάξει.”</p>
+                        <note type="footnote">2. πρὸς χάριν] κατὰ χάριν A. Correctum Cobetus, ut in
+                            scholio superiore ex scholio inferiore. legitur: recte, ut videtur, etsi
+                            ib. μηδὲν Cobetus. μὴ A. omissum φασί defendi quodammodo 5. Πέρσιδα
+                            Cobetus. περσηΐδα A. potest exemplis ad schol. Πέρσιδα dicit quam
+                            grammatici Ἰλίου Rhesi v. 28. allatis. πέρσιδα vei Ἰλιοπέρσιδα dicere
+                            solent, 10. φασιν Cobetus. φησὶν A. nisi id hic quoque restituendum, 16.
+                            οὕτω L. Dindorfius. οὐ A. quemadmodum apud Pausaniam ib. ἂν addidit
+                            Cobetus. 10, 15, 5. et Proclum Chrestom. 19. κοινωνήσει kampmannus.
+                            κοινήσει p. 483. ed. Gaisf. Ἰλίου πέρσιδος in A. Ἰλιοπέρσιδος mutandum.
+                            22. τὸ addidit Nauckius in libro 6. ἔπορεν] ἔπορε A. de Aristophane Byz.
+                            p. 30. Locus 8. Praefixi Ἄλλως. Scholion ipsum autem est Homeri Il. 20,
+                            307. ubi non hoc loco in A. legi, sed Aristophanem non unum tantum
+                            scholio v. 16. adjectum esse supra versum hunc, sed tres 306— 308.
+                            dicebam. videri suspectos habuisse monet ib. ταῦτα ἔνιοι] ταῦτά φασιν
+                            ἔνιοι Nauckius.</note>
+
+                        <pb n="45"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="51">
+                        <p>51. ἔξεστιν· αἱ γάρ: φιλονεικεῖ ὁ Ποσειδῶν σώζειν τὴν Ἴλιον, ἐπεὶ
+                            ᾠκοδόμησεν αὐτήν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="61">
+                        <p>61. ἐκεῖσε πρῶτʼ ἄνελθε: ἀντὶ τοῦ ἐκεῖνον ἀνάλαβε τὸν λόγον καὶ ἀνάτρεχε
+                            εἰς τὸν περὶ Ἑλλήνων λόγον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="89">
+                        <p>89. Μυκόνου: ἀκτή τις οὕτω καλουμένη. Καφηρεὺς δὲ ἀκρωτήριον <lb n="5"/>
+                            Εὐβοίας, μεταξὺ Σκύρου. Νεάνθης δὲ ὁ Κυζικηνὸς Καθηρέα αὐτόν φησι
+                            πρότερον κεκλῆσθαι· εἶναι γὰρ ἐκεῖ βωμὸν εἰς ὃν Εὐβοεῖς καθαιρόμενοι
+                            ἔθυον. χρόνου δὲ προϊόντος Καφηρεὺς ἐκλήθη παραφθειράντων τῶν
+                            ἐνοικούντων τὴν λέξιν. περὶ τοῦτο δὲ οἱ πλεῖστοι τῶν Ἑλλήνων κατὰ τὸν
+                            ἀπόπλουν διεφθάρησαν. κοινὰ δὲ διὰ τῆς <lb n="10"/> ἱστορίας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="96">
+                        <p>96. τύμβους θʼ, ἱερά: λείπει ὁ γάρ, ἵν᾿  ᾖ τὰ γὰρ ἱερὰ τῶν τεθνηκότων
+                            ἔρημα ποιήσας αὐτὸς ὕστερον ὀλεῖται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="99">
+                        <p>99. ἄνα δυσδαίμων: πρὸς ἑαυτὴν ταῦτα ἡ Ἑκάβη λέγει, ἀνάστηθι τὴν κεφαλήν
+                            σου, ὦ Ἑκάβη. ὁ δὲ λόγος, ἄνα δυσδαίμων, <lb n="15"/> ὦ ἐκ θεῶν
+                            δυσδαίμων κεφαλὴ γεγονυῖα, ἀνάστηθι. ἡ δὲ πεδόθεν κεφαλὴ ἐμπαθεστέρα
+                            ἐστὶ καὶ τοῖς ὑποκειμένοις οἰκείως ἔχουσα. ἡ γὰρ Ἑκάβη ἔρριψεν ἑαυτὴν
+                            διὰ τὰς συμφορὰς ἐπὶ τοῦ ἐδάφους καὶ τούτῳ οἰκείως ἐπέλεξε τὸ “ἐπάειρε
+                            δέρην,” ὡς πεπτωκυίας αὐτῆς καὶ κεκλιμένης ἐπὶ τοῦ ἐδάφους. καὶ τὸν
+                            Πρίαμον ὁμοίως κείμενον πρὶν <lb n="20"/> συνέστησεν οὕτως “πρὸς δὲ
+                            κρηπίδων βάθροις πέπτωκε Πρίαμος.” ὥστε εἰκὸς διὰ τὰ τοιαῦτα τὴν Ἑκάβην
+                            τὰς ἐπιτηδείους καθέδρας καταλιποῦσαν ἐπὶ τοῦ ἐδάφους κεῖσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="101">
+                        <p>101. ἀνέχου: ἀνέχου, φησὶν, ἐν εὐτελείᾳ τυγχάνουσα· οὐ γὰρ <note
+                                type="footnote">3. πρῶτʼ] πρῶτον A. 9. περὶ] π A.N. quod etiam παρὰ
+                                5. Μυκόνου] μυκίνου A. esse potest. ib. Καφηρεὺς Κampmannus. κά- 14.
+                                δυσδαίμων] δυσδαῖμον A. hic et φηρος A. 6. μεταξὺ] ἀντικρὺ Kampman-
+                                ib. ἀνάστηθι] ἀνάστησον dicere de- nus, nisi alius loci nomen exci
+                                bebat derit. καὶ Ἄνδρου addit Brunneman- 16. δυσδαίμων] δυσδαῖμον A.
+                                ib. πεδόθεν] παιδόθεν A. ib. Κυζικηνὸς Καθηρέα kampman- 17.
+                                ἐμπαθεστέρα] ἐμπαθέστερον A. nus. κυζικηνός:—καφήρειοί τʼ ἄκραι:.
+                                καφηρεὺς καθηρέα A. Verba Καφήρειοί ἐμπαθεστέρος N. τʼ ἄκραι (v.
+                                90.) e lemmate illata. ib. οἰκείως] οἰκείοις A. Narrationem autem
+                                Neanthis ex 19. τούτῳ scripsi pro τοῦτο. opere περὶ τελετῶν
+                                excerptam esse 21. συνέστησεν Kampmannus. συν- probabiliter conjecit
+                                Muellerus έστηκεν A. Fragm. Histor. vol. 3. p. 11. ib. οὕτως] v.
+                                16.</note>
+                            <pb n="46"/> τὰ παρόντα νῦν ἐστιν ἡ Τροία οὐδὲ ἡ πρὶν εὐδαιμονία, οὐδὲ
+                            νῦν βασιλεῖς ἐσμεν Τροίας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="103">
+                        <p>103. μηδὲ προσίστω: ἀντὶ τοῦ μὴ ἀντικεῖσθαι τοῖς πρὸς πρῷραν κύμασιν, ὅ
+                            ἐστι, μὴ ἀνθίστασο τῷ δαίμονι τοῦ βίου, ἀλλὰ πλέε <lb n="5"/> κατὰ τὸ
+                            εὐθύ· ὅταν γὰρ ἡ ναῦς πρὸς κῦμα ἢ πρὸς ἄνεμον πλέῃ, βλάπτεται. σὺ οὖν,
+                            φησὶ, πλέουσα πρὸς κῦμα μὴ ἀνθίστασο τῇ τύχῃ. τοῦτο δὲ ἐναντίον τῷ <lg>
+                                <l>ἡ δʼ ἔθεεν κατὰ κῦμα διαπρήσσουσα κέλευθον.</l>
+                            </lg>
+                        </p>
+                    </div>
+                    <div type="textpart" subtype="section" n="108">
+                        <p>108. ὦ πολὺς ὄγκος: ὄγκον λέγει τὴν πάλαι εὐτυχίαν μεταφορικῶς· <lb
+                                n="10"/> ὦ πολλὴ εὐδαιμονία τῶν προγόνων συσταλέντων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="113">
+                        <p>113. ἄρθρων κλισίας: ἀντὶ τοῦ φεῦ τῆς ἀνακλίσεως τῶν μελῶν ὡς
+                            διάκειμαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="117">
+                        <p>117. ἄκανθαν: τὴν τῶν μελῶν ἄκανθαν. λέγει δὲ τοὺς νωτιαίους σφονδύλους.
+                            τοίχους δὲ τὰς πλευρὰς μεταφορικῶς εἴρηκεν. <lb n="15"/> τὴν ῥάχιν οὖν
+                            ἄκανθάν φησιν. ὁ δὲ λόγος, πόθος μοί ἐστι τὴν ῥάχιν εἰλῆσαι περὶ τὰ
+                            πλευρά.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="119">
+                        <p>119. ἐπὶ τοὺς αἰεὶ δακρύων: ἡ ἐπί ἀντὶ τῆς διά, ὅ ἐστι βούλομαι διαδοῦναι
+                            ἐμαυτήν· κέκμηκα γὰρ διὰ τοὺς ἐλέγους καὶ τοὺς θρήνους.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="120">
+                        <p>120. Μοῦσα δὲ καὐτή: καὶ αὐτὴ δὲ, φησὶ, παραμυθία ἐστὶ <lb n="20"/> τοῖς
+                            δυστυχοῦσι, τὰς ἑαυτῶν ἀποδύρεσθαι συμφοράς. ἔστι γὰρ καὶ μοῦσα
+                            θρηνωδίας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="122">
+                        <p>122. ναῶν ὠκεῖαι: ὦ πρῷραι τῶν νηῶν, αἵτινες κώπαις ἀνὰ τὴν θάλασσαν καὶ
+                            τοὺς λιμένας μετʼ αὐλῶν βαίνουσαι τὴν πλεκτὴν τῆς Αἰγύπτου παιδείαν, ὅ
+                            ἐστι τὰ σχοινία, ἐν τοῖς κόλποις τῆς Τροίας <lb n="25"/> ἐξήψασθε, τὴν
+                            Μενελάου γυναῖκα μετερχόμεναι. Ἄλλως. τὰ σχοινία, φησὶν, ἐν τῷ τῆς
+                            Τροίας λιμένι ἐξήψασθε τὰ πρυμνήσια. Αἰγύπτου δὲ παιδείαν τὰ σχοινία,
+                            καθὸ ἡ Αἴγυπτος τὴν βύβλον τρέφει. ὁ δὲ νοῦς τοιοῦτος, ὦ νῆες ἐπὶ αὐλῶν
+                            στυγνῷ παιᾶνι τὴν Τροίαν <note type="footnote">1. οὐδὲ ἡ πρὶν] ἡ δὲ
+                                πρώην N. 13. 16. Verba τοὺς νωτιαίους et 3. πρῷραν] πρώραν A. περὶ
+                                τὰ πλευρὰ obliterata in A., ser- 7. τν] τὸ A. vata in N. 8. ἡ δʼ
+                                ἔθεεν] δὲ εὐθὺς in A. esse 19. καὐτή] Scribendum χαῦτη et videtur.
+                                δὲ εὐθεε N. Correctum ex in verbis scholiastae καὶ αὕτη. Hom. Od. 2,
+                                249. 25. ἐξήψασθε] ἐξήρτασθε A. Cor- ib. διαπρήσσουσα] διαπρήσας A.
+                                rectum ex scholio proximo. ἐξηρ- Correctum ex Homero. τήσασθε dixit
+                                poeta v. 129. 10. συσταλέντων N. συσταλτῶν A. 28, αὐλῶν στυγνῷ]
+                                αὐλῶν στυγνῶν ut videtur. A. αὐλῷ στυγνῷ N.</note>
+                            <pb n="47"/> προσωρμίσατε. παρʼ ὅσον αὐλοῦσιν αὐλοὺς ἔχοντες εἰς τὰς
+                            ναῦς. “ἀλλʼ Ἡρακλῆς αὐλεῖ τις.”</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="132">
+                        <p>132. Κάστορι λώβαν: τὴν γενομένην τῷ Κάστορι λώβαν καὶ τῷ Εὐρώτα
+                            δύσκλειαν, τῷ ποταμῷ Λακεδαίμονος. κοινοποιεῖ δὲ ἐπὶ πάσης Ἑλλάδος.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="139">
+                        <p>139. σκηναῖς ἔφεδρος Ἀγαμεμνονείαις: αὕτη μὲν ἔξω τῆς σκηνῆς ἦν, ὁ δὲ
+                            χορὸς ἔσω.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="141">
+                        <p>141. κουρᾷ ξυρήκει: τῇ ξυρικῇ κουρᾷ ἐκκαρθεῖσα τὴν πενθίμην κεφαλὴν, ἀντὶ
+                            τοῦ πένθιμον κεφαλὴν ἔχουσα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="147">
+                        <p>147. μάτηρ δʼ ὡσεὶ πτανοῖς: καθάπερ δὲ ὄρνισιν ἡ μήτηρ ἐξάρχει <lb n="10"
+                            /> τὴν πτῆσιν, οὕτως κἀγὼ κατὰ τὴν κλαγγὴν καὶ τὸν θρῆνον ἐξάρχωἐξάρχω
+                            δὲ οὐ κατὰ τὴν μολπὴν ἐκείνην, ἣν εἰώθειν εὐτυχοῦσα λέγειν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="150">
+                        <p>150. σκήπτρῳ Πριάμου: τῷ σκήπτρῳ τοῦ Πριάμου ἐπερειδομένη ταῖς εὐκόμποις
+                            πληγαῖς Φρύγιαι τοῦ ἀρχεχόρον ποδὸς ἐξῆρχον τοὺς θεοὺς, ὅ ἐστιν
+                            ἀνύμνουν.</p>
+                        <p>διερειδομένα: ἡ λέξις ἑκάτερον ἔχει, καὶ τὴν αὐτῆς ἀσθένειαν καὶ τὴν
+                            Πριάμου δυναστείαν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="168">
+                        <p>168. ἔξω κομίζεσθʼ οἴκων: ἔξω τῶν οἴκων εὐτρεπίζεσθε, πρὸς τὸ πλεῖν
+                            στέλλεσθε ἑαυτάς. λέγει πρὸς τὰς λοιπὰς τὰς ἔσω, ἵνα τὸ ἡμιχόριον
+                            ἐξέλθῃ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="169">
+                        <p>169. μὴ νῦν μοι τὰν ἐκβακχεύουσαν: ἐπειδὴ μέλλουσιν αἱ Τρῳάδες ἐξιέναι,
+                            συμβουλεύει ἡ Ἑκάβη μὴ ἐᾶν Κασάνδραν ἐξιέναι διὰ τὸ μαίνεσθαι.</p>
+                        <note type="footnote">1. προσωρμίσατε A. προσωρμήσατε N. non scholiastae,
+                            sed librarii vi- ib. αὐλοῦσιν] Scribendum, vide- tium esse videtur)
+                            πενθήρη κρᾶτʼ ἐκ- tur βαίνουσιν ex scholio praecedente. πορθηθεῖσα,
+                            quacum codices qui ho- Verba εἰς τὰς ναῦς, quae legere non die supersunt
+                            omnes consentiunt, potuerat Amatius, satis clare scri- nisi quod inter
+                            πενθήρει et πενθήρη pta sunt in A.N. Verba proxima variant. Vera
+                            scriptura est κουρᾷ ἀλλʼ Ἡρακλῆς αὐλεῖ τις particula esse πενθήρει κρᾶτʼ
+                            etc., ejecto ξυρήκει, videntur loci ex comico aliquo al- quod ex Alcest.
+                            427. illatum esse lati: de quo etiam Meinekius cogi vidit Bothius. tavit
+                            Com. vol. 4. p. 685. 12. εἰώθειν scripsi pro εἴωθεν. 3. τὴν—λώβαν N. In
+                            A. haec 16. ἑκάτερον N. ἑκατέρως A. obliterata et mox syllabae τῶ ποτα-
+                            18. κομΐζεσθ᾿] Metrum postulat μῷ λακεδαί et ἑλλάδος. Supplevi ex
+                            κομίσασθ᾿, quod in ed. Ald. legitur, N., qui τὸν ποταμόν. etsi fortasse
+                            ex editoris conjectura. 8. τῇ ξυρικῇ κουρᾶ] Decepit scho- 19. λέγει]
+                            Fort. λέγει δὲ—. liastam scriptura interpolata κουρᾷ 20. ἡμιχόριον
+                            Kampmannus. ἡμι- ξυρήκει (nam quod in scholio legi- χορὸν A. tur ξυρικῇ.
+                            adjectivum inauditum, 22. Τρῳάδες] τρωϊάδες A.</note>
+
+                        <pb n="48"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="171">
+                        <p>171. αἰσχύναν Ἀργείοισιν: μὴ πέμψητε αὐτὴν αἰσχύνην τοῖς Ἕλλησιν, ἵνα
+                            καταισχύνωσιν αὐτὴν οἱ Ἕλληνες.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="176">
+                        <p>176. οἴιμρι: τὸ λοιπὸν ἡμιχόριον ἐξῆλθεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="182">
+                        <p>182. ὀρθρεύου σὰν ψυχάν: ἔπαιρε τὴν σεαυτοῦ ψυχὴν, ὁ χορέ. <lb n="5"/>
+                            ἀπὸ μεταφορᾶς τῶν ὄρθρου ἐγειρομένων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="187">
+                        <p>187. τίς μʼ Ἀργείων: τίς τῶν Θεσσαλῶν ποτὲ ἢ νησιωτῶν ἄξει με; ἢ Θεσσαλὸς
+                            ἢ Ἀργεῖος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="192">
+                        <p>192. δειλαία νεκροῦ μορφά: ἥτις εἰμὶ δειλαία νεκροῦ μορφὴ, ἢ νεκρῶν
+                            ἄγαλμα.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="193">
+                        <p>193. ἄγαλμʼ, ἢ τὰν παρά τε προθύροις: ἢ θυρωρὸς ἐσομένη καὶ τὴν φυλακὴν
+                            τῶν προθύρων κατέχουσα, ἢ παίδων τροφὸς ἄγομαι. δέον, φησὶ, ταῦτα
+                            ποιῆσαι ἡ τῆς Τροίας δεσπότις.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="197">
+                        <p>197. ποίοις δʼ οἴκτοις: δύναται πρὸς τὴν Ἑκάβην, ἵνʼ ᾖ οὕτω, πῶς αὐταρκῶς
+                            δύνασαι τὰ κατὰ σὲ θρηνῆσαι;</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="199">
+                        <p>199. οὐκ δαίοις ἱστοῖσι: οὐχ ὡς πρότερον ἥδον ἐν τοῖς ἱστοῖς δινεύουσα
+                            καὶ στρέφουσα τὴν κερκίδα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="201">
+                        <p>201. νέατον τεκέων: ὅσῳ, φησὶ, νέα ὑπάρχουσα αἰχμάλωτος γέγονα, κρείσσους
+                            ἕξω μόχθους. καθὸ αἱ δυναταὶ ἰσχύουσαι πᾶν τὸ ἐπιτασσόμενον ποιοῦσιν·
+                            ἐὰν δὲ καὶ εὔμορφος , καὶ ὕβρισται. Ἄλλως. <lb n="20"/> τὰ ὑμῶν σώματα
+                            νέα ὁρῶ πρὸς ὑπομονὴν τῶν πόνων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="203">
+                        <p>203. ἢ λέκτροις πλαθεῖσʼ Ἑλλάνων: ἢ λέκτροις πλησιάσασα τῶν Ἑλλήνων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="204">
+                        <p>204. ἔρροι νύξ: φθειρέσθω ἡ νὺξ ἡ ἐμὲ νυμφεύουσα τοῖς πολεμίοις, ὁμοίως
+                            δὲ καὶ ὁ δαίμων ἔρροι.</p>
+                        <lb n="25"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="209">
+                        <p>209. ἔλθοιμεν Θησέως εὐδαίμονα χώραν: ταῦτα ὑποθεραπεύουσα τοὺς Ἀθηναίους
+                            λέγει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="210">
+                        <p>210. μὴ γὰρ δὴ δίναν: ἀπὸ κοινοῦ τὸ ἔλθοιμι. μὴ ἔλθοιμι, φησὶν, ὑπὸ τὴν
+                            δίνην τοῦ Εὐρώτου, ἥτις ἐστὶ Θεράπνη ἡ πόλις τῆς. Ἑλένης. οἰκητήριον δέ
+                            φησι τὰς Θεράπνας τῶν Διοσκούρων παρόσον <note type="footnote">2.ἴνα]
+                                ἵνα μὴ Κampmannus. 16. δινεόουσα scripsi pro δονεόὁρθρεόου 4. σάν]
+                                Vitiose pro ὀρ- ουσα. θρεύουσαν: quod fraudi fuit scho- 18. δυναταὶ]
+                                δοῦλαι Κampmannus. liastae. ib. ἰσχύουσαι A. N., non αἰσχραὶ 5. τῶν]
+                                τοῦ A.N. οὖσαι ut Amatius. 6. τίς τῶν—ᾶξει με] τίς πρὸς τὴν 23.
+                                φθειρέσθω scripsi pro φθαρέ- τῶν—ὰξει με χώραν kampmannus. σθω. ib.
+                                ποτὲ A. πότερον N.</note>
+                            <pb n="49"/> ὑπὸ τὴν γῆν τῆς Θεράπνης εἶναι λέγονται ζῶντες, ὡς Ἀλκμάν
+                            φησιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="214">
+                        <p>214. τὰν Πηνειοῦ σεμνὰν χώραν: Πηνειοῦ χώραν τὴν Θετταλίαν. τῆς γὰρ
+                            Μακεδονίας Ὄλυμπος, ἡ δὲ Μακεδονία τῆς Θετταλίας. αἰνίττεται δὲ τὸν
+                            Νεοπτόλεμον. Καλλίμαχος “Πηνειὲ <lb n="5"/> Φθιῶτα.”</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="218">
+                        <p>218. τάδε δεύτερά μοι: ἐν δευτέρᾳ μοι τάξει τῶν καλῶν ἐστι ταῦτα τὰ κατὰ
+                            τὸν Πηνειὸν μετὰ τὴν ἱερὰν πόλιν τοῦ Θησέως.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="220">
+                        <p>220. καὶ τὰν Αἰτναίαν Ἡφαίστου: ὁ λόγος, καὶ τὴν Αἴτνην τὴν τοῦ Ἡφαίστου
+                            χώραν τὴν καταντικρὺ κειμένην τῆς Φοινίκης τῆς τε <lb n="10"/>
+                            Καρχηδόνος, ἵνα λέγῃ τὴν Λιβυφοινίκων χώραν. μητέρα δὲ τῶν Σικελῶν ὀρέων
+                            ἀκούω ἐπὶ στεφάνοις σεμνύνεσθαι. τὴν Σικελίαν δὲ ὀρέων φησὶ μητέρα,
+                            ἐπειδὴ ὀρεινή.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="221">
+                        <p>221. Φοινίκας ἀντήρη χώραν: ἀντήρη Σικελίας τὴν Λιβύην εἴρηκε καὶ τὴν
+                            Καρχηδόνα, παρόσον τὸ Λιλύβαιον ἀκρωτήριον τῆς <lb n="15"/> Σικελίας
+                            ἀντικρὺ κεῖται τῆς Καρχηδόνος, εἰς ἣν ἀπῴκησαν Τύριοι. ἔστι δὲ ἡ
+                            Καρχηδὼν πόλις Λιβύης. ὀλίγῳ δὲ πρότερον τῶν Τρωικῶν Εὔδοξος ὁ Κνίδιος
+                            ἀπῳκηκέναι τοὺς Τυρίους εἰς αὐτὴν, Ἀζάρου καὶ Καρχηδόνος ἡγουμένων, ἀφʼ
+                            οὗ καὶ τὴν ὀνομασίαν ἔσχεν ἡ πόλις. τινές φασι καὶ τὴν Ῥώμην καὶ τὴν
+                            Καρχηδόνα ἐπὶ τῆς πρώτης <lb n="20"/> ὀλυμπιάδος κτισθῆναι. Σοφοκλῆς δὲ
+                            ἐπὶ τῶν καιρῶν Τριπτολέμου οἰκισθῆναι τὴν Καρχηδόνα, ἐν οἷς φησι <lg>
+                                <l>Καρχηδόνος δὲ κράσπεδ, ἣν ἀσπάζομαι.</l>
+                            </lg> Ἄλλως. ἀντήρη Σικελίας τὴν Λιβύην φησὶ καὶ τὴν Καρχηδόνα, παρόσον
+                            τὸ Λιλύβαιον ἀκρωτήριον τῆς Σικελίας καταντικρύ ἐστι <lb n="25"/>
+                            <note type="footnote">1. Ἀλκμάν Cobetus pro ἀλκμαίων, 20. τινές] τινὲς
+                                δέ Kampmannus. quod est in N. Nam in A. solae ib. ἐπὶ τῆς L.
+                                Dindorifius. ἀπὸ τῆς literae ἀλκ supersunt. N. ἀπρ A. 5. Καλλίμαχος]
+                                H. in Delum 112. 21. Σοφοκλῆς] In Triptolemo 11. λέγῃ τὴν
+                                Λιβυφοινίκων χώραν] fragm. 536. λέγηται λιβυηφοινίκων A.N. omisso
+                                χώ- 23. κράσπεδες (κράσπεδ cum com- ραν. Correxi ex gi. interl.
+                                φοινίκης pendio syllabae ες) ἀσπάζομαι N. τῆς καρχηδόνος, ἵνα λέγῃ
+                                τὴν τῶν λιβυ- κράσπεδ. ν ἀσπάζομαι A. unde Berg- φοινίκων χώραν.
+                                kius κράσπδʼ, ἣν ἀσπάζομαι. κράσπεδʼ 16. Τύριοι Kampmannus. τύρροι
+                                A. ἔστ᾿  B. ἀσπάζομαι Cobetus, addita et mox τυρρίους.
+                                interlocutoris nota. 18. ἀπῳκηκέναι] Infinitivus pen- 25. τοῦτο ante
+                                καταντικρὺ delevit det ab verbo φησὶ intellecto. Vid. Kampmannus. ad
+                                schol. Rhesi v. 28.</note>
+                            <pb n="50"/> Καρχηδόνος. ὁ δὲ Παρμενίσκος τὴν Σικελίαν ἀντήρη τῆς
+                            Φοινίκης φησίν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="224">
+                        <p>224. τάν τʼ ἀγχιστεύουσαν: καὶ τὴν ἀγχιστεύουσαν γῆν τῷ Ἰονίῳ. κατὰ
+                            κοινοῦ τὸ “ἀκούω κηρύσσεσθαι στεφάνοις ἀρετᾶς.” τὴν <lb n="5"/> Ἰταλίαν
+                            δὲ λέγει τὴν ἐγγὺς τοῦ Ἰονίου πελάγους· Ἰόνιον γὰρ πέλαγος τὸ πρὸς τὴν
+                            Ἰταλίαν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="228">
+                        <p>228. Κρᾶθις: δύο εἰσὶ Κράθιδες, ὡς Ἰαρμενίσκος φησίν· ὁ μὲν ἀπὸ
+                            Πελοποννήσου τὰς πηγὰς ἔχων μέχρι Ἀρκαδίας, ὃς ἐμβάλλει τῷ Ἀλφειῷ, οὗ
+                            ἐάν τις τὸ ὕδωρ ἐπὶ πολὺν χρόνον ἀφῇ οὐ σήπεται, <lb n="10"/> οὐδὲ ἐὰν
+                            ἀπʼ αὐτοῦ ἄρτοι πεφθῶσιν εὐρωτιῶσιν· ὁ δὲ ἐν Ἰταλία, οὗ νῦν μέμνηται ὁ
+                            Εὐριπίδης, ἐν ᾧ ἐάν τις λούσηται λελιπασμένος ἀνέρχεται, ὡς δοκεῖν
+                            ἠλεῖφθαι καὶ τὴν τρίχα ξανθίζειν, ὡς ἐν ὀλίγαις ἡμέραις τὸν λουόμενον ἐν
+                            αὐτῷ πυρρότριχα γίνεσθαι. ἔνιοι δέ φασι τὸν μὲν Κρᾶθιν τοῦτο μὴ ποιεῖν,
+                            τὸν δὲ ἐν Τροίᾳ βάνθον, ἀφʼ οὗ καὶ <lb n="15"/> ὀνομάζεται Σκάμανδρος
+                            καλούμενος. τὸν δὲ Εὐριπίδην ἐπὶ τοῦ Κράθιδός φασι τοῦτο μετενηνοχέναι.
+                            ὁ δὲ Αἰσχρίων φησὶν ὅτι ἐν Πελοποννήσῳ ἦν Κρᾶθις καλούμενος ποταμὸς, ὃς
+                            ἐποίει τὰς κόμας ξανθὰς τῶν λουομένων. οἱ δὲ ἀκὸ Πελοποννήσου ἀποικίαν
+                            στειλάμενοι καὶ κτίσαντες Σύβαριν τὸν ἐκεῖ ποταμὸν ὠνόμασαν Κρᾶθιν. ἀπὸ
+                            οὖν τοῦ <lb n="20"/> ἐν Πελοποννήσῳ ὁ Εὐριπίδης τοῦ ἐν Ἰταλίᾳ μέμνηται
+                            ὡς οὐ μόνον τὸ αὐτὸ ὄνομα ἔχοντος τῷ ἐν Ἀχαίᾳ ποταμῷ, ἀλλὰ καὶ τὴν
+                            δύναμιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="244">
+                        <p>244. τίνα πότμος εὐτυχής: τίνα τῶν Τρῳάδων πότμος εὐτυχὴς ἐκδέχεται;</p>
+                        <lb n="25"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="250">
+                        <p>250. ἢ τᾷ Λακεδαιμονίᾳ: παρόσον ἡ Κλυταιμνήστρα Τυνδάρεω, οὕτος δὲ
+                            Λακεδαιμόνιος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="258">
+                        <p>258. ἱεροὺς στολμούς: τὰς τῶν στεφάνων στολὰς ώσπερ ἔνδυσιν ποιούντων
+                            αὐτῇ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="267">
+                        <p>267. τί θέσμιον: τί θεσμοποιὸν, θεμιτὸν, ἢ νόμος τῶν Ἑλλήνων.</p>
+                        <note type="footnote">4. κατά] ἀπὸ margo N. quasi ἠλίφθαι scribere voluerit
+                            libra- 8. ἐμβάλλει τῷ Cobetus. συμβάλ- rius. Veteres ἀληλίφθαι dixerunt.
+                            λει καὶ τῷ A. 14. Κρᾶθιν] κράνθιν A. 12. εἰλῆφθαι A., quod ἠλεῖφθαι 21.
+                            τῷ—ποταμῷ Cobetus. τοῦ— esse intellexit L. Dindofius, etsi ποταμοῦ A.
+                            hanc formam rejicit Sextus Emp. 27. ἔνδυσιν ποιούντων (sc. τῶν στε-
+                            p.266. ἀλήλιπται μὲν εἴποιτις ν, ἤλει- φάνων) Karmpmannus. ἐν δυσὶ
+                            (δυσὶν πται δὲ οὐκέτι. In N. est εἰλίφθαι, N.) ποιουσῶν A.</note>
+
+                        <pb n="51"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="268">
+                        <p>268. εὐδαιμόνιζε παῖδα σήν: αἰνίττεται ὅτι τέθνηκεν, ἢ σαφῶς εἶπεν· καὶ ἡ
+                            Ἑκάβη οὔτε ἐστέναζεν οὕτε ἀπηλλάγη. εἴτε γὰρ οἶδεν οἰκτίσασθαι περὶ
+                            θυγατρὸς εἴτε μὴ οἶδεν, ἐρωτῆσαι καὶ μαθεῖν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="275">
+                        <p>275. ἐγὼ δὲ τῷ πρόσπολος: τίνι δὲ ἐγὼ ἐκληρώθην δούλη, ἡ <lb n="5"/>
+                            τριτοβάμονος βάκτρου δεομένη διὰ τὸ γηραιὸν κάρα· τρίτος γὰρ ποὺς ἡ
+                            βακτηρία.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="285">
+                        <p>285. ὃς πάντα κεῖθεν: τὰ μὲν ἐκεῖ διαβάλλων ἐνταῦθα ἀντίπαλα τίθησιν,
+                            αὖθις δὲ ἐκεῖ πολέμια τίθησι, δῆλον ὅτι τὸ ἐνταῦθα. τοῦτο γὰρ
+                            λείπει.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="296">
+                        <p>296. εἶτα τὰς εἰλεγμένας: τὰς κεκληρωμένας καὶ ἐκλελεγμένας τοῖς ἄλλοις
+                            δῶ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="301">
+                        <p>301. αὐτῶν τʼ ἐκπυροῦσι: καίουσι, φησὶν, ἑαυτὰς ἐξελθεῖν μέλλουσαι τῶν
+                            οἴκων. Ἄλλως. διὰ τὸ μὴ εἰθίσθαι δουλεύειν καίουσιν ἑαυτάς.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="303">
+                        <p>303. δυσλόφως: ἀπὸ μεταφορᾶς τῶν ὑποζυγίων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="304">
+                        <p>304. μὴ τὸ ταῖσδε: μὴ διὰ τὸ πρόσφορον ἑαυταῖς φονεύουσιν ἑαυτὰς καὶ
+                            λυπήσουσι τοὺς Ἕλληνας, κἀγὼ αἴτιός εἰμι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="308">
+                        <p>308. ἄνεχε, πάρεχε: ὡς πρός τινα ποιεῖται τὸν λόγον δᾳδουχοῦντα·
+                            ἀναχώρει, φησὶ, καὶ πάρεχε ὁδόν. δύναται δὲ πρὸς ἑαυτὴν <lb n="20"/>
+                            λέγειν ἀντὶ τοῦ ἄνεχε καὶ φέρε.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="310">
+                        <p>310. ὦ Ὑμὴν Ὑμέναι’: πρὸς Ὑμέναιον ἀποτείνεται διὰ τὸ μέλλειν γαμεῖν.
+                            καθαίρω, φησὶ, τὸ ἱερὸν, οὐχ ὅτι ἐν ἱερῷ ἦν, ἀλλʼ ὅτι μαινομένη ἐν ἱερῷ
+                            ἐνόμιζεν εἶναι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="315">
+                        <p>315. ἐπεὶ σὺ, μῆτερ: ἐπεὶ σὺ, μῆτερ, περὶ τὸν ἴδιον ἄνδρα, πατέρα <lb
+                                n="25"/> δὲ ἐμὸν, γίνῃ καταστενάζουσα αὐτὸν καὶ οὐ ποιεῖς τὰ μητέρων
+                            (νόμιμον γάρ ἐστι τῇ μητρὶ δᾳδουχεῖν ἐν τοῖς γάμοις τῶν θυγατέρων,) ἐγὼ
+                            τοῦτο ποιήσω ἐμαυτῷ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="321">
+                        <p>321. ἐς αὐγάν: ὥστε αὐγὴν καὶ αἴγλην ποιεῖν σοὶ, ὦ Ὑμέναιε· <note
+                                type="footnote">3. θυγατρὸς et ἐρωτῆσαι, pro quibus τὸν A. θογατρ...
+                                et ἐρωτ apud Amatium 7. βακτηρία] βάκτρα N. 9. πολέμια τίθησι
+                                Kampmannus. legitur, satis clare scripta πολέμια τίθειης A. sunt in
+                                A.N. Ante ἐρωτῆσαι aliquid 17. πρόσφορον] σύμφορον N. excidisse
+                                videtur. 5. ἐκληρώθην] κληρωθῶ N. 6. τριτοβάμονος—τὸ] τριβάμονος—
+                                ib. φονεύουσιν —λυπήσουσι] Immo φονεύσωσιν—λυπήσωσι.</note>
+                            <pb n="52"/> ἢ σὺ, ὦ Ἑκάτη, διδοῦσα φῶς, ὥσπερ νόμος ἐστὶ τοῖς
+                            παρθένοις· ἔθος γὰρ εἶχον πῦρ ἀνάπτειν ἐπὶ τὸν γάμον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="323">
+                        <p>323. ὦ Ἑκάτη: τὴν Ἑκάτην παρέμιξε διὰ τὸ μετʼ ὀλίγον ἀποθνήσκειν· χθονία
+                            δὲ ἡ θεός. ἢ ὅτι γαμήλιος ἡ Ἑκάτη.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="325">
+                        <p>325. πάλλε πόδʼ αἰθέριον: εἰς τὸν αἰθέρα χόρευε. λέγει δὲ Βακχικὰ
+                            ἐπιφθέγματα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="326">
+                        <p>326. εὐὰν εὐοῖ: τὸ εὐὰν εὐοῖ Βακχικὰ ἐπιφθέγματα. εἰσὶ δὲ ἐπιρρήματα
+                            θειασμοῦ. διόρισον. τὰ δὲ θειασμοῦ, οἷον, εὖ οἷ εὖ ἄν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="330">
+                        <p>330. ἀνάκτορον θυηπολῶ: ὥσπερ ἐν τῷ ἱερῷ οὖσα, οὕτως θυηπολῶ. <lb n="10"
+                            /> ἢ οὕτως, ἡγοῦ σὺ τοῦ θυηπόλου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="341">
+                        <p>341. βασίλεια: ταῦτά τινες τῷ Ταλθυβίῳ, τινὲς δὲ τῷ χορῷ
+                            ἐπιμερίζουσιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="343">
+                        <p>343. Ἥφαιστε, δᾳδουχεῖς: παρὰ τὸ πᾶν διαλέγεται· εἰ καὶ ἐν γάμοις
+                            δᾳδουχεῖς, ἀλλʼ οὐ νῦν ἐν εὐπραγίᾳ φαίνῃ.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="350">
+                        <p>350. ἐσωφρωνήκασʼ: σώφρονα πεποιήκασι, τὰ κακὰ σὲ οὐ πεπαιδεύκασιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="351">
+                        <p>351. δάκρυσί τʼ ἀνταλλάσσετε: δάκρυα, φησὶν, ἀνταλλάξατε ἀντὶ τῶν
+                            γαμηλίων χορῶν. τοῖς δὴ ταύτης γαμηλίοις μέλεσι δάκρυα ἀνταλλάξατε.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="357">
+                        <p>357. Ἑλένης γαμεῖ με: προμηνύει ὅτι δι᾿ αὐτὴν Ἀγαμέμνων ἀποθανεῖται, καὶ
+                            ἥδεται δοκοῦσα αὐτὸν ὥσπερ τιμωρῆσαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="361">
+                        <p>361. ἄλλατ’ ἐάσω: τινὰ, φησὶν, ἐάσω. διʼ ὧν δὲ δοκεῖ ἀποσιωπᾶν, διὰ
+                            τούτων λέγει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="366">
+                        <p>366. ἔνθεος μέν: ἔνθεος μέν εἰμι καὶ ἐμμανὴς, ὅμως διὰ τὴν <lb n="25"/>
+                            ἀλήθειαν ἔξω μωρίας καὶ βακχευμάτων δόξω εἶναι, ἐπειδὴ τὸ τὴν <note
+                                type="footnote">7. εὐὰν εὐοῖ] εὖ ἂν εὖ οἷ A. in lemmate dictum
+                                accepit. Recte judicarunt et in scholio. qui aliud quid scriptum ab
+                                Euripide 15. ἐσωφρονήκασʼ] ἐσωφρόνηκα A. pide fuisse censuerunt,
+                                velut σοφὴν. et mox. πεποίηκα—πεπαίδευκᾶ. ἐσωφρονήκασ᾿ ἔθηκαν. A. in
+                                textu, et sic ceteri 21. τιμωρῆσαι Kampmannus. τιμωρῆ... quoque
+                                libri, nisi quod ἐσωφρονήκασιν A. In A. τιμωρῆσαν esse est in ed.
+                                Ald. et ἔσω φρονίκασιν videtur, in N. τιμ, literis reliquis in cod.
+                                Flor. ex quo σεσωφρονίκασιν compendio expressis. feci: Stephanus.
+                                Scholiastae interpretatio 22. ἄλλατ᾿] Sic A. etiam in postulat οὐδὲ
+                                σʼ αἰ τύχα textu: quod pro ἀλλʼ ἄττʼ accepit, —σεσωφρονίκασιν, etsi
+                                hoc fortasse aut id ipsum legit, scholiasta. Veram non legit, sed
+                                σεσωφρονήκασʼ, a metri scripturam ἀλλʼ αὔτʼ restituit correctore
+                                positum, illo sens Musgravius.</note>
+                            <pb n="53"/> ἀλήθειαν λέγειν οὐκ ἔστι μαινομένου. τοσοῦτον οὖν, φησὶν,
+                            ἔξω γενήσομαι μανίας ὡς καὶ πιστεύεσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="372">
+                        <p>372. τέκνων ἀδελφῷ: τὸ ἐπὶ τῆς Ἰφιγενείας εἰπὼν πληθυντικῶς λέγει τέκνων
+                            ἀντὶ τοῦ τέκνου, ἀδελφῷ δὲ τῷ Μενελάῳ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="379">
+                        <p>379. τὰ δʼ οἴκοι: οἷς εἶκον· καὶ γὰρ καὶ οἱ ἐν τοῖς οἴκοις ἀπέθνησκον,
+                                <lb n="5"/> μὴ ὁρῶντες τοὺς οἰκείους.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="381">
+                        <p>381. οὐδὲ πρὸς τάφους: τῶν γὰρ τεθνηκότων οἱ παῖδες τιμῶσι τοὺς
+                            τεθνηκότας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="393">
+                        <p>393. Ἀχαιοῖς ὧν ἀπῆσαν: ὧν, τούτων, τὸ μεταξὺ τῶν οἰκιῶν ἀποθνήσκειν, αἱ
+                            ἡδοναὶ τοῖς Ἕλλησιν ἀπῆσαν· οὕτως τούτων ἐστέρηντο.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="396">
+                        <p>396. ἵξις ἐξεργάζεται: παρουσία, ἄφιξις. ἀνδρεῖον αὐτὸν ἀπέδειξεν.
+                            γράφεται καὶ ἦρξις, ἵνʼ ᾖ καὶ ἡ ἔρξις καὶ ἡ πρᾶξις.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="397">
+                        <p>397. εἰ δʼ ἦσαν οἴκοι, χρηστός: ὁ Ἕκτωρ χρηστὸς γεννηθεὶς κατεσιωπήθη ἂν,
+                            εἰ μὴ ἐστράτευσαν ἐπὶ Ἴλιον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="398">
+                        <p>398. Πάρις τʼ ἔγημε: ἑτερότροπόν ἐστιν· ἐπὶ γὰρ κακῷ ἔσχε τὸ κλέος, ὥσπερ
+                            ἡ Ἑλένη. Ὅμηρος “ ὡς καὶ ὀπίσσω ἀνθρώποισι πελώμεθ᾿ ἀοίδιμοι.”</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="401">
+                        <p>401. εἰ δʼ ἐς τόδʼ ἔλθοι: εἰ δὲ εἰς πόλεμον ἔλθοι, οὐκ αἰσχρὸν τῇ πόλει
+                            αὐτοῦ ἀποθνήσκειν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="407">
+                        <p>407. μέλπεις θʼ ἅ : καὶ ταῦτα, φησὶν, ἃ εἴρηκας καλῶς, οὐ δείξεις αὐτὰ
+                            σαφῶς καλὰ καὶ ἀληθῆ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="408">
+                        <p>408. εἰ μή σʼ Ἀπόλλων: μάταιός ἐστιν ὁ Τλθύβιος ἐπιπλήσσων καὶ λέγων, εἰ
+                            μὴ ἐμαίνου, ἐτιμωρήθης ἄν· πᾶς γάρ τις τοῖς μαινομένοις
+                            συμπεριφέρεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="411">
+                        <p>411. καὶ δοκήμασιν σοφά: τὰ τῷ δοκεῖν σοφά. λέγει δὲ περὶ <note
+                                type="footnote">13. γράφεται (γράψον apud Amatium) 14. γεννηθεὶς
+                                Kampmaunus. γενναθ` καὶ ἦρξις—πρᾶξις] In marg. ... A. cod. Harl. est
+                                γρ. καὶ ἔρξις, ἵνʼ ᾖ 15. κατεσιωπήθη L. Dindorfius. ἡ ἔρξις,
+                                τουτέστιν ἡ πρᾶξις, unde corrigendum κατεσκοπήθη A. scholion est,
+                                nisi ἦρξις 16. Πάρις] ἄλλως. πάρις A. pro ἔρξις scriptum scholiastam
+                                induxit 17. Ὅμηρος] Il. 6, 358. ut ex ἡ ἔρξις contractum ib.
+                                ὀπίσσω—πελώμεθʼ] ὀπίσω—γενόμεσθ᾿ crederet. ἧξις ἀντὶ τοῦ ἄφιξις
+                                Εὐριπίδης νόμεσθʼ A. Τρῳάσιν annotavit Antiatticista 19. πόλεμον
+                                -ἀποθνήσκειν] πόλιν in Bekk. Anecd. p. 99, 4: μου ἔλθοι, οὐκ
+                                αἰσχ...... τοῦ ἀποθν... A. ἵξις per παρουσία, ἄφιξις, ἱκετεία ex.
+                                Correxit Kampmannus. plicat Hesychius.</note>
+                            <pb n="54"/> Ἀγαμέμνονος, διὰ ταύτης ἐληλυθέναι εἰς ἔρωτα. τὰ σοφὰ,
+                            φησὶ, δοκοῦντα τῶν εὐτελῶν οὐκ ἔστι κρείσσονα· οἷον Ἀγαμέμνων ὁ σοφὸς οὐ
+                            διαφέρει τινὸς τῶν εὐτελῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="418">
+                        <p>418. καὶ Φρυγῶν ἐπαινέσεις: τὰς ὕβρεις τὰς εἰς τοὺς Ἕλληνας <lb n="5"/>
+                            καὶ τοὺς ἐπαίνους τοὺς εἰς τὴν Τροίαν ὑπὸ σοῦ λελεγμένους ἐῷ ἀνέμῳ
+                            φέρεσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="420">
+                        <p>420. καλὸν νύμφευμα: ἐν εἰρωνείᾳ ταῦτα λέγει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="424">
+                        <p>424. τί ποτʼ ἔχουσι τοὔνομα: τί ποτε αὐτοῖς ἐστι τὸ ὄνομα τοῦτο, ὥστε
+                            κοινῇ ὑπὸ πάντων ἐχθαίρεσθαι. εἰσὶ δὲ καὶ ἕτεροι κήρυλες, <lb n="10"/>
+                            οἱ περὶ τὰ δεῖπνα διακονοῦντες. Ὅμηρος <lg>
+                                <l>κήρυκες δʼ αὐτοῖσιν ὕδωρ ἐπὶ χεῖρας ἔχευαν.</l>
+                            </lg> Ἄλλως. διὰ τί πάντες τὸ αὐτὸ ὄνομα ἔχουσιν εἰς ἀπέχθειαν
+                            ἐπιτήδειον; Ἄλλως. διὰ τί ποτε τὸ ὄνομα αὐτῶν τοιοῦτον ὥστε ὑπὸ πάντων
+                            μισεῖσθαι;</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="430">
+                        <p>430. τἄλλα δʼ οὐκ ὀνειδιῶ: τὰ λοιπά· ἐν γὰρ Θρᾴκῃ κύων γενομένη
+                            ἀπέθανεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="432">
+                        <p>432. ὡς χρυσὸς αὐτῷ: τὰ ἐμὰ, φησὶ, καὶ τὰ τῶν Τρώων κακὰ νομίσει ποτὲ
+                            χρυσὸν εἶναι καὶ τίμια, παρὰ τὸ Ὁμηρικὸν “τρισμάκαρες Δαναοί.”</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="435">
+                        <p>435. οὗ δὴ στενὸν δίαυλον: ὁ λόγος, ἐλεύσεται δὲ εἰς τὸν στενὸν δίαυλον
+                            τῆς πέτρας, ὅπου ἦν οἰκοῦσα ἡ Χάρυβδις, δηλονότι ἐπὶ τῆς πέτρας. δίαυλον
+                            δὲ λέγει τὸν αὐλῶνα· ἦσαν γὰρ οἱ σκόπελοι πλησίον ἀλλήλων, ὁ τῆς Σκύλλης
+                            καὶ ὁ τῆς Χαρύβδεως.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="440">
+                        <p>440. αἳ σάρκα φωνήεσσαν: καὶ Ὅμηρος “κρέα δʼ ἀμφʼ ὀβελοῖσι <lb n="25"/>
+                            μέμυκεν.”</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="446">
+                        <p>446. νυκτὸς, οὐκ ἐν ἡμέρᾳ: πρὸς Ἀγαμέμνονα λέγει· ἐν νυκτὶ γὰρ
+                            τέθνηκεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="448">
+                        <p>448. κἀμέ τοι νεκρὸν φάραγγες: τῷ ὕδατι τῷ χειμερινῷ ῥέουσαι, ἀπὸ τῶν
+                            ὀρῶν καταφέρουσαι, πλησίον τοῦ τάφου τοῦ Ἀγαμέμνονος <lb n="30"/>
+                            κομίσουσί με· φονεύσασα γὰρ Ἀγαμέμνονα καὶ τὴν Κασάνδραν <note
+                                type="footnote">10. Ὅμηρος] Legitur hic versus 18. Ὁμηρικόν] Od. 5,
+                                306. Il. 9, 173. τοῖσι δὲ—αὐτίκα κήρυκες 23. Σκύλλης] σκύλης A. μὲν
+                                ὕδωρ ἐπὶ χεῖρας ἔχευαν. et ter 24. Ὅμηρος] Od. 12, 395. in Odyssea
+                                (1, 146. 3, 338. 21, 28. νεκρὸν] νεκρῶν A. 270.), τοῖσι δὲ κήρυκες
+                                μὲν ὕδωρ etc. ib. ῥέουσαι—καταφέρουσαι kampmannus. 11. ἔχευαν]
+                                ἔχευον A. ῥέουσα—καταφέρουσα A.</note>
+                            <pb n="55"/> εἰς ὄρος ἔρριψεν. ὑπʼ οὐδενὸς δὲ παραδίδοται ἡ Κασάνδρα
+                            ἄταφος ἐκβεβλημένη. Ἄλλως. ὅτι ἰδικῶς ἱστορεῖ ἄταφον τὴν Κασάνδραν
+                            ἐκβεβλῆσθαι εἰς ὄρος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="451">
+                        <p>451. ὦ στέφη: ὦ στέφη τοῦ Ἀπόλλωνος, ἅπερ ἐστί μοι ἀγάλματα· ἀπορρίπτει
+                            δὲ τοὺς στεφάνους.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="453">
+                        <p>453. σπαραγμοῖς: σπαρασσόμενοι, φησὶν, οἱ στέφανοι ἴτε ἀπʼ ἐμοῦ. ἤδη δὲ
+                            διεκορεύθη ὑπὸ τοῦ Αἴαντος, καὶ πῶς λέγει ἑαυτὴν παρθένον; φαμὲν οὖν
+                            ὅτι, ὅσον τὸ κατʼ αὐτὴν ἧκεν, παρθένος ἦν· βίᾳ γὰρ διεκορεύθη.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="456">
+                        <p>456. οὐκέτʼ ἂν φθάνοις: κατʼ ἐρώτησίν φησιν, οὐκέτι φθάνεις <lb n="10"/>
+                            με; καὶ τοῦτο λαμβάνεις ἐπὶ τὴν ναῦν προεπειγόμενος; ἢ ἀποφαντικῶς, ἐὰν
+                            μὴ νῦν με ἄγῃ, οὐκέτι ἔσται ἐπιτήδειος ἄνεμος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="457">
+                        <p>457. τριῶν Ἐρινύν: τρεῖς γάρ εἰσιν Ἐρινύες, Ἀληκτὼ, Τισιφόνη, Μέγαιρα.
+                            πεποίηται δὲ τὰ ὀνόματα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="460">
+                        <p>460. οὐ μακράν: λείπει ἡ εἰς· οὐκ εἰς μακρὰν, ὅ ἐστι μετ᾿ <lb n="15"/>
+                            ὀλίγον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="463">
+                        <p>463. δέσποιναν ὡς ἄναυδος: ὡσ. τιν. αὐτῆς ἐπιμελοῦμεν, πρὸς ἃς ποιεῖται
+                            τὸν λόγον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="466">
+                        <p>466. οὔτοι φίλα: τὰ μὴ ὄντα φίλα οὐδέποτε ἔσται φίλα· οὐκοῦν οὐχ ἥδομαι
+                            ἐπὶ τῷ ἀναστῆναι· οὐ γὰρ φίλον.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="467">
+                        <p>467. κεῖσθαι πεσοῦσαν: τὸ ἑξῆς, ἐᾶτέ με κεῖσθαι πεσοῦσαν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="470">
+                        <p>470. ὅμως δʼ ἔχει: ὅμως δὲ παραμυθία ἐστὶ τοῖς δυστυχοῦσιν ἀνακαλεῖσθαι
+                            τοὺς θεούς.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="472">
+                        <p>472. πρῶτον μὲν οὖν μοι: ἡδύ μοι, φησὶ, πρῶτον τὰ ἀγαθὰ ὑμνῆσαι· ὅτε γὰρ
+                            πρῶτον εἰς τὰ καλὰ μνημονεύσω, τῶν κακῶν τότε <lb n="25"/> μείζονα
+                            οἶκτον κινῶ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="487">
+                        <p>487. κοὔτ᾿ ἐξ ἐκείνων: καὶ οὔτε ἐκεῖναι ἐλπίζουσιν ἐμὲ ὄψεσθαι οὔτε ἐγὼ
+                            ἐκείνας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="489">
+                        <p>489. τὸ λοίσθιον δὲ θριγκός: τὸ ἔσχατον πάντων κακῶν τὸ δοῦλον εἶναι,
+                            οἱονεὶ τὸ τέλος ἐστὶ, μεταφορικῶς ἀπὸ τῶν οἰκοδομημάτων· <lb n="30"/>
+                            μετὰ γὰρ τὴν οἰκοδομὴν ἐπιτίθεται θριγκὸς, ὅπερ ἐστὶ τὸ γεῖσον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="496">
+                        <p>496. τὸ ἑξῆς, τρυχηρὰ πέπλων λακίσματα, ἤγουν σχίσματα.</p>
+                        <note type="footnote">13. εἰσιν L. Dindorfius. φησιν A. ib. Ἀληκτὼ] ἀλεκτὼ
+                            A.</note>
+
+                        <pb n="56"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="501">
+                        <p>501. ἔλυσας συμφοραῖς: τουτέστιν ἐν ἀτυχίαις ἔλυσάς σου τὴν παρθενίαν,
+                            οὐδὲ ἐν εὐτυχίαις.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="506">
+                        <p>506. ἄγετε τὸν ἁβρὸν δήποτʼ: τὸν ἐμὸν πόδα πρώην ἁβρὸν ὄντα, νῦν δὲ
+                            δοῦλον, ἄγετε εἰς τὴν στιβάδα καὶ εἰς τὰ πέτρινα κρήδεμνα <lb n="5"/>
+                            καὶ περιβόλαια.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="511">
+                        <p>511. ἀμφί μοι Ἴλιον: ποίησόν με ᾆσαι ἐπικήδειον μέλος εἰς τὴν Ἴλιον, ὅ
+                            ἐστι, περὶ τῆς Ἰλίου ποίησόν με θρηνῆσαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="516">
+                        <p>516. τετραβάμονος: ἀλληγορικῶς τὸν ἵππον τὸν δούρειον, τέσσαρας βάσεις
+                            ἔχοντα· ἀπήνην γὰρ τὸν ἵππον καλεῖ.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="525">
+                        <p>525. τόδʼ ἱερόν: πρὸς ἑαυτοὺς δὲ, φησὶ, παρεκελεύοντο οἱ Τρῶες, τοῦτο τὸ
+                            ἱερὸν ξόανον, τὸν ἵππον, ἄγετε τῇ Ἀθηνᾷ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="532">
+                        <p>532. πεύκᾳ ἐν οὐρείᾳ: ἐν τῇ οὐρείᾳ πεύκῃ· ξύλινος γὰρ ὁ ἵππος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="535">
+                        <p>535. θέᾳ δώσων: καὶ ὁ Πρίαμος ἐξῆλθε τὴν βλάβην <lb n="15"/>
+                            θεασόμενος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="536">
+                        <p>536. καὶ χάριν ἄζυγος: καὶ χάριν ἀντὶ τοῦ τέρψιν, ἐπιτερπῶς θεασόμενος
+                            τὸν ἵππον.</p>
+                        <p>ἀμβρότα: ὡς ἱππότα, ἵνʼ ᾖ ἀμβρότου πώλου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="537">
+                        <p>537. κλωστοῦ δʼ : καθάπερ ναὸς σκάφος κλωστοῦ λίνου ἀμφιβόλοις, <lb
+                                n="20"/> ὅ ἐστι σχοινίοις, οὕτως ἐπὶ τὸν ἵππον ἐπέβαλον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="539">
+                        <p>539. φοίνιά τε πατρίδι: ἀντὶ τοῦ φονίως, ἤτοι φοινιχθέντα. τοῦτο δὲ ἀπὸ
+                            τοῦ συμβεβηκότος λέγει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="541">
+                        <p>541. ἐν δὲ πόνῳ: πόνῳ διὰ τὸ κεκμηκέναι ἐν τῷ ἕλκειν, χαρᾷ διὰ τὸ
+                            ἐλπίζειν τι ἀγαθὸν ἐνηνοχέναι.</p>
+                        <lb n="25"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="547">
+                        <p>547. ἐνὶ δόμοις δὲ παμφαὲς σέλας: τὸ δὲ σέλας τοῦ πυρὸς τὴν μέλαιναν
+                            αἴγλαν δέδωκε τῷ ὕπνῳ, ὅ ἐστι τὴν μέλαιναν κατάστασιν τῷ ὕπνῳ. ἔδωκε τὸ
+                            πῦρ ἀντὶ τοῦ διεδέξατο ἡ νὺξ τὸ πῦρ· σβεσθέντος γὰρ αὐτοῦ ἐκοιμήθησαν·
+                            οἷον ἐπὶ τῶν λαμπάδων καιομένων ἐκοιμήθησαν. ἰδίως δὲ αἴγλην εἶπε τῆς
+                            νυκτὸς τὸ φῶς.</p>
+                        <lb n="30"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="562">
+                        <p>562. σφαγαὶ δʼ ἀμφιβώμιοι: ἐκ δὲ τοῦ σφάζεσθαι ἐρημία <note
+                                type="footnote">2. οὐδὲ Kampmannus. ... δὲ A. 18. ὡς ἱππότα] Decepit
+                                scholiastam 14. Verba καὶ ὁ Πρίαμος—θεασόμενος scriptura vitiosa
+                                ἀμβρότα πώλου in A. cum scholio praecedente pro ἀμβροτοπώλου, quod
+                                restituit sunt conjuncta, cum lemmate ξεστὸν Musgravius. λόχον
+                                ἀργείων. 21. ἤτοι L. Dindorfius. ἢ τὰ A.</note>
+                            <pb n="57"/> παρηκολούθησεν, ἥτις τῇ μὲν Ἑλλάδι στέφανον ἔφερε, τῇ δὲ
+                            Τροίᾳ πένθος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="568">
+                        <p>568. Ἑκάβη, λεύσσεις: ἀποθεωροῦσιν αἱ κατὰ τὸν χορὸν τὴν Ἀνδρομάχην
+                            παροδεύουσαν ἐπὶ ὀχήματος Ἑλληνικοῦ καὶ τὸν Ἀστυάνακτα αὐτῇ
+                            ἑπόμενον.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="570">
+                        <p>570. εἰρεσίᾳ: τῇ συζυγίᾳ. ἀπὸ μεταφορᾶς τῶν ἐρεσσόντων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="573">
+                        <p>573. σκύλοις τε Φρυγῶν: τί παρακαθέζῃ τοῖς σκύλοις, ὡς καὶ σκύλων ὄντων
+                            μετʼ αὐτῆς, ἐν οἷς καὶ τὸ Ἕκτορος ὅπλον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="577">
+                        <p>577. τί παιᾶν᾿ ἐμόν: ἐπειδὴ εἶκεν οἴμοι, λέγει, διὰ τί τὸν ἐμὸν θρῆνον
+                            θρηνεῖς; παιᾶνα δέ φησι κατὰ ἀντίφρασιν, ὡς τὸ <lb n="10"/> ἅπας δʼ
+                            ἀνευφήμησεν οἰμωγῇ λεώς.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="590">
+                        <p>590. οἱ δὲ πόθοι μεγάλοι: ἃ ποθεῖτε μεγάλα ἐστὶν, ἡ μὲν Ἕκτορα, ἡ δὲ
+                            Πρίαμον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="592">
+                        <p>592. δυσφροσύναις: κακοβουλίαις. καὶ ὁ Πάρις τεχθεὶς δυσφροσύναις τῶν
+                            θεῶν οὐκ ἀπώλετο.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="601">
+                        <p>601. δάκρυά τʼ ἐκ δακρύων: ὁ οἶκος αὐτὸς, φησὶν, ἐκ διαδοχῆς καὶ δακρύει
+                            καὶ θρηνεῖ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="614">
+                        <p>614. ἄλλος τις Αἴας: τῆς σῆς θυγατρὸς φαίνεται καὶ δεύτερος Αἴας, ἐπειδὴ
+                            καὶ τότε οὗτος αὐτὴν ἐδίωξεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="646">
+                        <p>646. ὄλωλεν ὡς ὄλωλεν: ἐμοῦ ζώσης εὐτυχέστερον ἀπώλετο· τοῦ <lb n="20"/>
+                            γὰρ αἰχμάλωτον δουλεύειν κρεῖσσον τὸ ἀποθανεῖν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="628">
+                        <p>628. οὐ ταυτὸν, ὦ παῖ. τὸ βλέπειν: ἔθος ἐστὶ τῷ Εὐριπίδῃ τῷ βλέπειν
+                            χρῆσθαι ἀντὶ τοῦ ζῆν, ὡς καὶ ἀλλαχοῦ <lg>
+                                <l>τὸ μὲν τέθνηκε σῶμα, τοῦτο δʼ αὖ βλέπει.</l>
+                            </lg>
+                        </p>
+                    </div>
+                    <div type="textpart" subtype="section" n="630">
+                        <p>630. ὦ μῆτερ ὦ τεκοῦσα: οὐ στοχάζεται τῶν ὑποκειμένων προσώπων. <lb
+                                n="25"/> καὶ γὰρ νῦν ἡ Ἀνδρομάχη τὰ αὐτὰ φιλοσοφεῖ ἅπερ καὶ
+                            ἔμπροσθεν ἡ Κασάνδρα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="636">
+                        <p>636. κείνη δʼ ὁμοίως: ἡ δὲ Πολυξένη ὥσπερ μὴ ἰδοῦσα τὸ φῶς καὶ μὴ
+                            αἰσθανομένη τέθνηκεν.</p>
+                        <note type="footnote">1. παρηκολούθησεν] παρηκολούθη A. 10. ὡς τὸ] Sophoclis
+                            Trach. 783. Sic ἀφώρμη pro ἀφώρμησα scriptum in 19. αὐτὴν (Casandram)
+                            Kampmannus. scholio v. 938., ἐξώρμ pro ἐξώρμησε mannus. αὐτὸν A. 24. δʼ
+                            αὖ βλέπει Cobetus. δʼ ἀναβλέπει ad v. 1129. 3. λεύσσεις] λεύσεις A. A.
+                            7. παρακαθέζῃ Kampmannus. παρακαθελκ... 26. τὰ αὐτὰ Kampmannus. σὺ A.
+                            28. κείνη] ἐκείνη A. A.</note>
+
+                        <pb n="58"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="638">
+                        <p>638. ἐγὼ δὲ τοξεύσασα: μεταφορικῶς φησιν, ἐγὼ δὲ τοξεύσασα καὶ βαλοῦσα
+                                <gap reason="omitted"/> τὸν σκοπὸν τῆς εὐδαιμονίας κατὰ τὸ πλεῖστον
+                            τῆς τύχης ἥμαρτον. ἢ οὕτως, ἐγὼ δὲ ἐπὶ τὴν εὐδοξίαν βαλοῦσα καὶ τῆς
+                            τύχης ἐτύγχανον συγκυρούσης, ὡς καὶ παῤ Ὁμήρῳ τὸ ἁμαρτάνω <lb n="5"/>
+                            ἐπὶ τοῦ συγκυρῶ τίθεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="642">
+                        <p>642. πρῶτον μὲν ἔνθα: πρῶτον μὲν κἂν ᾖ κἂν μὴ ᾖ ψόγος ταῖς γυναιξὶν, ὅμως
+                            κακῶς αὐτὰς ἀκούειν δεῖ, ὅταν μὴ μένωσιν οἴκοι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="645">
+                        <p>645. τούτου παρεῖσα πόθον: τοῦ ἐξέρχεσθαι ἀπὸ τῶν οἴκων ἐάσασα τὴν
+                            ἐπιθυμίαν ἀντὶ τοῦ μὴ ἐξερχομένη.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="650">
+                        <p>650. ᾔδειν δʼ ἁμὲ χρή: εἰς ἃ ἐχρῆν, κἀκείνῳ ὧν ἐχρῆν τὴν νίκην ἐᾶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="652">
+                        <p>652. καὶ τῶνδε κληδών: τούτων τῶν ἔργων καὶ τῆς εὐκοσμίας ἡ κληδὼν
+                            ἐλθοῦσα εἰς τοὺς Ἕλληνας ἀπώλεσέ με.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="653">
+                        <p>653. ᾑρέθην: τὴν γὰρ ἀρίστην ἔκρινεν αὐτὸς λαβεῖν ὁ <lb n="15"/>
+                            Νεοπτόλεμος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="655">
+                        <p>655. αὐθεντῶν δόμοις: τοῖς τῶν φονέων οἴκοις· αὐθέντας γὰρ λέγουσι τοὺς
+                            ἑκουσίῳ φόνῳ μετερχομένους, καὶ αὐτοέντας τοὺς αὐτόχειρας λέγουσιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="681">
+                        <p>681. αὐτὴ μὲν οὔπω ναός: ἐγὼ μὲν οὐδέποτε εἰς νῆα εἰσέβην, <lb n="20"/>
+                            γραφῇ δὲ μόνον καὶ ἀκοῇ οἶδα. εἰκάσαι δὲ βούλεται τὰ κατὰ τὴν ναῦν τοῖς
+                            ἑαυτῆς κακοῖς· ὥσπερ γὰρ οἱ ἐν νηὶ μετρίων ὄντων πόνων ἐλπίδα ἔχουσι
+                            σώζεσθαι, εἰ δὲ βία συμβῆ ἀπελπίζουσι τῆς ζωῆς, οὕτως κἀγὼ ἀπήλπισα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="703">
+                        <p>703. Φρυγῶν ἀρίστου: μήποτε οὐχ ὁ Ταλθύβιος, ἀλλ᾿ ἄλλος <lb n="25"/> τις
+                            ταῦτα λέγει. καὶ γὰρ οὐ λάτριν, ἀλλʼ ὀνομαστὶ Ταλθύβιον καλεῖν
+                            εἴωθεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="781">
+                        <p>781. τὰ δὲ τοιάδε: τὰ δὲ τοιαῦτα ἐπιτάγματα χρὴ ποιεῖν, ὅσοι ἀναιδεῖς
+                            εἰσι καὶ φίλοι τῇ ἀναιδείᾳ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="798">
+                        <p>798. ὄχθοις ἱεροῖς: ἀπὸ τῶν ὄχθων ἐπὶ τὴν πόλιν, ἐν ᾗ πόλει ἡ <lb n="30"
+                            /> Ἀθηνᾶ τὸν γλαυκῆς ἐλαίας κλάδον ἔδειξε, τὸν οὐράνιον στέφανον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="803">
+                        <p>803. ἔβας ἔβας: ὦ βασιλεῦ Τελαμὼν, ἔβας ὅτε τὸ πρῶτον ὁ <note
+                                type="footnote">2. Post βαλοῦσα nihil deese videtur. nisi
+                                negligenter locutus est scho- KAMPMANN. liasta. 4."/μαρτάνω]
+                                Scribendum vel οὐχ 23. ἀπήλπισα Kampmannus. ἀπ. ἁμαρτάνω vel in
+                                verbis proximis οὐ ... A. συγκυρῶ, ut monet kampmannus:</note>
+                            <pb n="59"/> Ἡροκλῆς τὸ τῶν Ἑλλήνων ἤγαγεν ἄνθος διὰ τοὺς πώλους
+                            λυπούμενος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="814">
+                        <p>814. τυκίσματα: τὰς κατασκευὰς, τὰ τείχη.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="821">
+                        <p>821. Λαομεδόντιε παῖ: τὸν Γανυμήδην καθʼ Ὅμηρον Τρωὸς ὄντα παῖδα
+                            Λαομέδοντος νῦν εἶπεν ἀκολουθήσας τῷ τὴν μικρὰν Ἰλιάδα <lb n="5"/>
+                            πεποιηκότι, ὃν οἱ μὲν Θεστορίδην Φωκέα φασὶν, οἱ δὲ Κιναίθωνα
+                            Λακεδαιμόνιον, ὡς Ἑλλάνικος, οἱ δὲ Διόδωρον Ἐρυθραῖον. φησὶ δὲ οὕτως <lg>
+                                <l>ἄμπελον, ἦν Κρονίδης ἔπορεν οὖ παιδὸς ἄποινα</l>
+                                <l>χρυσείην φύλλοισιν ἀγανοῖσι κομόωσαν</l>
+                                <lb n="10"/>
+                                <l>βότρυσί θʼ, οὓς Ἡφαιστος ἐπασκήσας Διὶ πατρὶ</l>
+                                <l>δῶχ᾿, ὁ δὲ Λαομέδοντι πόρεν Γανυμήδεος ἀντί.</l>
+                            </lg> καὶ Ἀντιφάνης Λαομέδοντος παῖδα τὸν Γανυμήδην φησὶ διὰ τούτων <lg>
+                                <l>τῶν οἰκιῶν οὖν ὧν ὁρᾷς ἐν τῇδε μὲν</l>
+                                <l>ὁ τῶν Φρυγῶν τύραννος οἰκῶν τυγχάνει</l>
+                                <lb n="15"/>
+                                <l>γέρων, ἀπʼ ἀρχῆς Λαομέδων καλούμενος.</l>
+                            </lg>
+                        </p>
+                    </div>
+                    <div type="textpart" subtype="section" n="828">
+                        <p>828. ἠϊόνες δʼ ἅλιαι: τὴν Ἀλκυόνην λέγει. οὕτως, φησὶν, ἐβόησαν οἱ
+                            αἰγιαλοὶ ὥσπερ οἰωνὸς, ἤγουν ἡ Ἀλκυόνη, ὑπὲρ τῶν τέκνων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="840">
+                        <p>840. Ἔρως Ἔρως: ὁ Ἔρως, μεγάλως τότε τὴν Τροίαν ηὔξησας διὰ τὸ τοὺς θεοὺς
+                            ἐρᾶν.</p>
+                        <note type="footnote">3. τυκτίσματα A. in lemmate ut Hermannus. in textu
+                            vitiose pro τυκίσματα. 11. θʼ et Διῒ om. schol. Orest. 4. Ὅμηρον] Il. 5,
+                            265. 20, 231. 12. δῶχ᾿, ὁ δὲ] δῶκεν. αὐτὰρ ὁ 6. Κιναίθωνα] κιναιθῶνα A.
+                            Dixi schol. Orest. de hoc nomine, apud alios Κυναίθων ib. πόρεν] πόρε A.
+                            et Κύναιθος scripto, in Thesauro vol. 4. ib. ἀντί] ἄρτι schol. Orest. p.
+                            2110. 13. Ἀντιφάνης Hermannus. ἀριστοφάνης 7. Ἑλλάνικος Hermannus Opusc.
+                            A. Versus ex prologo vol. 5. p. 185. μελάνικος A. fabulae Γανυμήδης
+                            inscriptae sumtos 10. χρυσείην] χρυσείοις A. Correxi esse monet Cobetus.
+                            Ceterum ex schol. Orest. 1392. ubi scholiasta paullo plura quam tres
+                            haec ex cyclo afferuntur, τινὲς οὐχ qui nunc leguntur versus attulisse
+                            ἵκπους, ἀλλὰ χρυσῆν ἄμπελόν φασι δεδόσθαι videtur. Nam in his nulla
+                            Ganymedis ὑπὲρ Γανυμήδους, καθάπερ ἐν medis mentio it. κύκλῳ λέγει, ubi
+                            excidit nomen poetae, ib. διὰ τούτων—οἰκῶν] Sic haec nisi λέγεται
+                            scripsit. correxit Cobetus. διὰ τὰς τῶν οἰκείων ib. φύλλοισιν ἀγανοῖσι]
+                            Sic etiam ... ὁρᾶς ἐν τῇδε μενόντων φρυγῶν in scholio ad Orest. vitio
+                            manifesto, τύραννος ὤκων A. οἰκιῶν etiam L. cnjus lenissima est
+                            correctio Dindorfius et ὁ τῶν—οἰκῶν Hermannus. ab Schneidero in Lexico
+                            facta ἀγαυσῖσιν, οῖσιν, sed merito rejecta ab Hermanno, 16. ἀρχῆς
+                            Seidlerus. ὀργῆς A. quum ἀγαυός non dicatur 18. ὥσπερ] ἢ addit A. de
+                            rebus inanimatis. φύλλοισι παναργυρέοις 19. ὦ kampmannus. ὁ A.</note>
+
+                        <pb n="60"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="850">
+                        <p>850. φέγγος ὀλοόν: τὸ δὲ φέγγος τῆς ἡμέρας, ἐστιν αὕτη ἡ ἡμέρα, πῶς
+                            περιεῖδε τὸν ὀλοὸν τοῦτον ὄλεθρον, τὸν κατὰ ταύτην τὴν γῆν ἐπηρμένον καὶ
+                            τῶν περγάμων, καίτοι ἄνδρα ἔχουσα ἐν ταύτῃ τεκνοποιὸν, ὡς καὶ τέκνα
+                            ἔχειν τὸν Μέμνονα.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="855">
+                        <p>855. ὃν ἀστέρων τέθριππος: τὸν Τιθωνὸν λέγει ἡ Ἡμέρα ἔχουσα. κατὰ δὲ
+                            Ἡσίοδον οὐκ ἔστι ταυτὸν Ἠὼς καὶ Ἡμέρα. λέγει ὁτὲ μὲν <lg>
+                                <l>Θεία δʼ Ἠέλιον τέκετο λαμπράν τε Σελήνην.</l>
+                            </lg> Ἄλλως. ὅντινα Τιθωνὸν ὁ τέθριππος, ὁ χορὸς τῶν ἄστερων, ὅ ἐστιν ὁ
+                                <lb n="10"/> λάμπων ἀστὴρ, τῇ πατρῴᾳ γῇ μεγάλην ἐλπίδα
+                            παρεχόμενος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="863">
+                        <p>863. Μενέλαός εἰμι: περισσὸν τὸ “Μενέλαός εἰμι·” αὔταρκες γὰρ τὸ “δάμαρτα
+                            τὴν ἐμὴν χειρώσομαι.”</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="884">
+                        <p>884. ὦ γῆς ὄχημα: τὴν γῆν ὀχῶν καὶ ἐπὶ γῆς ὀχούμενος. λέγει δὲ τὸν ἀέρα·
+                            ὦ συνέχων τὴν γῆν· ἔστι γὰρ καὶ ἐπάνωθεν ἀὴρ <lb n="15"/> καὶ κάτω, ὡς
+                            τὴν γῆν εἶναι μετέωρον. ὦ ὄχημα τῆς γῆς ὅστις εἶ, εἴτε Ζεὺς εἴτε ἄλλο
+                            τι, ἐπάκουσον, εἴτε τὸν νοῦν τοῖς ἀνθρώποις ἐντιθείς. δύναται καὶ οὕτως·
+                            ὁ διήκων διὰ πάντα νοῦς. καὶ μήποτʼ ἐστὶ βέλτιον· καὶ γὰρ ἔνιοί φασιν, ὁ
+                            νοῦς ἡμῶν ὁ θεός· ὁρᾶται δὲ ἐκ τῶν Ἀναξαγορείων λόγων. Ἄλλως. ἔνιοι
+                            οὕτως· ὁ τὸν νοῦν τοῖς ἀνθρώποις <lb n="20"/> τιθεὶς, ἢ ὁ διήκων ἐπὶ
+                            πάντας νοῦς, ὃ καὶ βέλτιον, εἴτε Ζεὺς ὁ τοιοῦτος ἀνθρωπόμορφος εἴτε
+                            φυσικὴ ἀνάγκη, ἢ τοιοῦτος νοῦς οἷον ἔχουσιν οἱ ἄνθρωποι, ἢ τοιοῦτον μὲν
+                            οὐδὲν, ἀναπλασμὸς δέ ἐστι τῆς ἡμῶν διανοίας ὁ θεός.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="890">
+                        <p>890. Μενέλαε: διὰ τί τολμηρῶς αὐτὸν Μενέλαον καὶ οὐ πόσιν <note
+                                type="footnote">4. τὸν Μέμνονα] Scribe Ἠμαθίωνα τέκετο debetur
+                                librario antiqui codicis καὶ Μέμνονα, collato Apollod.3, 12, 4.
+                                evanidam scripturam vel lacunam 6. Ἡσίοδον] Theog. 371. utcunque
+                                explenti. Eadem ib. Ἡμέρα—Θεία Cobetus. ἡμέρα de causa reliquam
+                                partem scholii, ταυτόν. λέγει ὅτε μενθεῖα A. quam expedire nullo
+                                modo poterat, 8. τέκετο] Scribendum τε μέγαν. omisit, sic
+                                supplendam: ὁτὲ Θεία δʼ Ἠέλιόν τε μέγαν λαμπράν τε Σελήνην Ἠῶ θʼ, ἣ
+                                πάντεσσιν ἐπιχθονίοισι φαείνει ἀθανάτοις τε θεοῖσι, τοὶ οὐρανὸν
+                                εὐρὺν ἔχουσι, γείναθʼ ὑποδμηθεῖσ’ Ὑπερίονος ἐν φιλότητι. Νυκτὸς δʼ
+                                αὖτ᾿ Αἰθήρ τε καὶ Ἡμέρη ἐξεγένοντο, οὓς τέκε κυσσαμένη Ἐρέβει
+                                φιλότητι μιγεῖσα. COBET. 16. ἀνθρώποις addidit Kampmannus ex scholio
+                                proximo. In A. lacuna.</note>
+                            <pb n="61"/> προσαγορεύει; διὰ τὸ μετὰ φόβου ἐξάγεσθαι ἀρχήν φησι τοῦ
+                            λόγου ταύτην ἀξίαν φόβου τὸ Μενέλαον αὐτὸν καὶ οὐ πόσιν
+                            προσσγορεύειν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="901">
+                        <p>901. οὐκ εἰς ἀκριβές: ὅ ἐστιν οὐκ εἰς τὸ ἀκριβὲς ἦλθεν ὥστε ἀριθμουμένων
+                            τῶν ψήφων εἰς τὸ βραχὺ ἐλθεῖν καὶ εἰς ἰσοψηφίαν <lb n="5"/>
+                            καταντῆσαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="906">
+                        <p>906. ἄκουσον αὐτῆς: καταφέρεται εἰς τὸ νόσημα τῶν ἀντιθέσεων· ἡ γὰρ
+                            πρότερον λέγουσα “ὅρα μή σε ἕλῃ” νῦν φησιν “ἄκουσον αὐτῆς.”</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="911">
+                        <p>911. σχολῆς τὸ δῶρον: ἀργίας, φησὶ, χρεία εἰς τὸ συγχωρῆσαι <lb n="10"/>
+                            αὐτῇ εἰπεῖν· ὅμως ἕνεκα τῶν σῶν λόγων, ὦ Ἑκάβη, δίδωμι αὐτῇ τὸ
+                            παρρησιάζεσθαι, οὐχ ἕνεκα ταύτης.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="916">
+                        <p>916. ἅ σʼ οἶμαι: ἅπερ σε οἶμαι διὰ λόγων ἰόντα κατηγορήσειν, ταῦτα ταῖς
+                            ἀντιθέσεσιν ἀνατρέψω.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="928">
+                        <p>928. εἴ σφε κρίνειεν Πάρις: εἰ κρίνει αὐτὴν ὁ Πάρις βελτίονα. <lb n="15"
+                            /> ταῦτα δὲ συλλογίζεται λέγουσα, ὅτι, εἰ μὴ εἵλετο ὁ Ἀλέξανδρος,
+                            ἐδούλευσεν τοῖς Τρωσὶν ἡ Ἑλλάς· ἡ γὰρ Ἀθηνᾶ τὴν βασιλείαν τῆς Ἑλλάδος
+                            αὐτῷ ὑπέσχετο.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="932">
+                        <p>932. οἰμοὶ γάμοι: οἱ ἐμοὶ γάμοι ὤνησαν τὴν Ἑλλάδα, καθὸ ἐκράτησε τῶν
+                            βαρβάρων· εἰ γὰρ ἐπείσθη τῇ ὑποσχέσει τῆς Ἀθηνᾶς, <lb n="20"/> ἔμελλον
+                            ἂν νικᾶσθαι ὑπὸ τῶν βαρβάρων οἱ Ἕλληνες.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="934">
+                        <p>934. οὔτʼ εἰς δόρυ: οὔτε εἰς μάχην σταθέντες οὔτε ἐν τυραννίδι, οἷον οὐκ
+                            ἐτυραννήθησαν. οἷον, εἰ γὰρ ἡ Ἥρα ἐκράτησε, τύραννον ἔλεγε καταστῆσαι
+                            Ἀλέξανδρον, ἡ δὲ Ἀθηνᾶ εἰς μάχην.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="938">
+                        <p>938. οὔπω με φήσεις: ἀλλʼ ἐρεῖς με, φησὶ, μὴ εἰπεῖν τὰ <lb n="25"/>
+                            ἀναγκαῖα. ποῖα δέ εἰσι τὰ ἀναγκαῖα; τὸ, πῶς ἀφώρμησα ἐκ τῶν σῶν
+                            οἴκων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="941">
+                        <p>941. ὁ τῆσδʼ ἀλάστωρ: ἡ ἀπολογία αὕτη ἐστίν· ὁ ταύτης ἀλάστωρ στωρ ὁ
+                            Ἀλέξανδρος ἦλθε μεθʼ ἑαυτὸν ἄγων οὐ μικρὰν θεὸν τὴν Ἀφροδίτην.</p>
+                        <note type="footnote">8. πρότερον] v. 891. scriptura est οὑμοί. 15.
+                            κρίνειεν] κρίνειε A. 26. ἀφώρμησα Kampmannus. 17. ἐδούλευσεν] ἂν addit
+                            Kampmannus. ἀφώρμη A. 28. ταύτης τῆς 18. αὐτῷ Kampmannus. αὐτῇ A. αὐτῆς
+                            A. 19. οἱμοὶ] οἱ μοὶ A. Recta 29. μικρὰνscripsi pro μικρόν.</note>
+
+                        <pb n="62"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="943">
+                        <p>943. σοῖσιν ἐν δόμοις: καὶ ταῦτα παρὰ τὴν ἱστορίαν φησίν· οὐ γὰρ παρόντος
+                            αὐτοῦ, ἀλλʼ ἀποδημοῦντος, ὁ Ἀλέξανδρος παρεγένετο.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="951">
+                        <p>951. ἔνθεν δʼ ἔχοις: τοῦτο καθʼ ἑαυτὸ ἀναγνωστέον· βούλεται <lb n="5"/>
+                            γὰρ λέγειν ἐκ τῶν λέγεσθαι μέλλοντων· ἐνταῦθα ἔχεις εἰς ἐμὲ εὐπρεπῆ
+                            λόγον, διὰ τί ἀποθανόντος Ἀλεξάνδρου οὐκ ἦλθες εἰς ἐμέ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="966">
+                        <p>966. βασίλει᾿, ἄμυνον: ἤγουν ὡς λέγοι· καλλιώτερον ἐγένετο <gap
+                                reason="omitted"/> ὅτι ἐφονεύθησαν ὑπὸ σοῦ καὶ ἡ Τροία διώλετο.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="975">
+                        <p>975. αἳ παιδιαῖσι καὶ χλιδῇ μορφῆς πέρι ἦλθον πρὸς Ἴδην: <lb n="10"/>
+                            ἀνοίκειον τοῦτο τοῦ ὑποκειμένου. ἔδει γὰρ αὐτὴν ἀνελεῖν καὶ μὴ εἰπεῖν
+                            ὅτι παίζουσαι ἦλθον εἰς τὴν τοῦ κάλλους ἔριν. διόπερ καὶ τοὺς ἐν Ἰλλιάδι
+                            στίχους ἀθετοῦσι τοὺς “ὃς νείκεσσε θεάς.” δύναται δὲ καὶ καθʼ ὑπόκρισιν
+                            ἐρωτηματικῶς ἀκούεσθαι, αἳ παιδιαῖς καὶ τρυφῇ ἦλθον εἰς Ἴδην οὐκ ἦλθον,
+                            οὐ δῆτα· ὥστε εἶναι πάντων τῶν προειρημένων <lb n="15"/> ἀναιρετικόν.
+                            τὸν γὰρ ἐναντίον λόγον χειρίζουσα ὀφείλει ἀναιρεῖν ἐκεῖνα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="983">
+                        <p>983. Κύπριν δʼ ἔλεξας: ἐλθεῖν δὲ τὴν Κύπριν ἔλεξας εἰς τοὺς Μενελάου
+                            δόμους σὺν τῷ ἐμῷ παιδὶ, ἅπερ γέλως εἴη.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="988">
+                        <p>988. ὁ σὸς δʼ ἰδών νιν: σὺ κατὰ τὸν ἐκπτοηθέντα νοῦν ἀναπλάσσῃ <lb n="20"
+                            /> Κύπριν ποιοῦσα. ὁ δὲ νοῦς οὕτως, ὁ δὲ σὸς νοῦς ἰδῶν τὸν Ἀλέξανδρον
+                            ἐποιήθη Κύπρις, οἷον ἐμωράνθη καὶ εἰς ἀκολασίαν ἐτράπη· ἡ γὰρ Ἀφροδίτη
+                            ἐπὶ ἀσελγείας λαμβάνεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="989">
+                        <p>989. τὰ μῶρα γάρ: συνεχῶς ὁ Εὐριπίδης μῶρα λέγει τὰ ἀκόλαστα καὶ
+                            κατωφερῆ. καὶ νῦν τοῦτό φησιν, ὅτι τὴν σαυτῆς ἀκολασίαν <lb n="25"/> εἰς
+                            τὴν θεὸν ἀποτρίβει· πάντα γὰρ τὰ ἀκόλαστα Ἀφροδίτη λέγεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="990">
+                        <p>990. καὶ τοὔνομʼ ὀρθῶς: τὴν Ἀφροδίτην ἐτυμολογοῦσιν οἱ μὲν <note
+                                type="footnote">6, διὰ τί Kampmannus. διὰ τὸ cognoscitur, quorum
+                                unus (29.) incipit ab verbis quae apposuit 7, 8. Scholion manus
+                                recentioris. suit scholiasta, ὃς νείκεσσε θεάς, quibus bus Cobetus
+                                καὶ τὰ ἑξῆς addidit. 9. Lemma praefixit Cobetus. In 12. τοὺς “ὃς
+                                νείκεσσε] τὸ ὃς νείκεσε A. est ἐγὼ γὰρ Ἥραν ex v. 971. A. 10. μὴ
+                                εἰπεῖν] negare. KAMPM. 22. ἀσελγείας] ἀσελγίας A. 11. αίζουσαι
+                                kampmannus. παίζουσα 25. ἀποτρίβει] Scribe ἀποτρίβῃ. A. Non utitur
+                                alias scholiasta forma ib. τοὺς ἐν Ἰλιάδι στίχους] Versus in ει.
+                                KAMPM. dicit 23—30. ut ex scholiis Homericis</note>
+                            <pb n="63"/> παρὰ τὸν ἀφρὸν τὸν ἐν τῇ συνουσίᾳ, οἱ δὲ παρὰ τὸν ἐν τῇ
+                            θαλάττῃ ἀφρὸν, ὡς Ἡσίοδος ἐν Θεογονίᾳ· οἱ δὲ ἀφόρητόν τινα εἶναι, ὡς
+                            αὐτός φησι <lg>
+                                <l>Κύπρις γὰρ οὐ φορητὸς, ἢν πολλὴ ῥυῇ.</l>
+                            </lg> οἱ δὲ Ἁβροδίτην ἁβροδίαιτόν τινα οὖσαν· μόνη γὰρ οὐκ οἶδε πολεμικὰ
+                                <lb n="5"/> ἔργα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="995">
+                        <p>995. χρυσῷ ῥέουσαν: ἤλπισας τὴν Τροίαν χρυσῷ ῥέουσαν ταῖς δαπάναις
+                            πλημμυρεῖν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1006">
+                        <p>1006. ἀνταγωνιστὴν μέγαν: ἀντεραστήν· λυποῦνται γὰρ οἱ ἐρῶντες, ὅταν οἱ
+                            ἀντερασταὶ ἐπαινῶνται.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1008">
+                        <p>1008. εἰς τὴν τύχην δʼ ὁρῶσα: πρὸς τὴν τύχην ἑκάστου ἐφέρου καὶ τὸν
+                            εὐτυχοῦντα ἐπῄνεις.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1010">
+                        <p>1010. κἄπειτα πλεκταῖς: καθόλου νῦν παρὰ τὸ προσῆκον ἡ Ἑκάβη δικαιολογεῖ,
+                            ὡς φησιν νικτην ὁ ποιητής. εἰσὶ δὲ αἱ τοιαῦται ἐπιχειρήσεις ἀμάρτυροι
+                            πίστεις.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1030">
+                        <p>1030. στεφάνωσον Ἑλλάδʼ: εὐήθης ἡ κάβη. ἀπὸ γὰρ τῆς ἐμβολῆς τοῦ ξίφους
+                            ἐχρῆν ἐπιγνῶναι τὴν διάθεσιν τοῦ ἀνδρὸς, ὡς ἐν τῇ Ἀνδρομάχῃ <lg>
+                                <l>οὐκ ἔκτανες γυναῖκα χειρίαν λαβών.</l>
+                            </lg>
+                        </p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1034">
+                        <p>1034. ἀφελοῦ πρὸς Ἑλλάδος: ἀφελοῦ τὸ θῆλυ, τουτέστιν μὴ <lb n="20"/>
+                            θηλυνθῇς, ἀνελὼν δὲ ταύτην σεαυτὸν ἀπαλλάξεις ψόγου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1036">
+                        <p>1036. ἐμοὶ σὺ συμπέπτωκας: πρὸς τὴν Ἑκάβην φησί· συμφωνεῖς νεῖς μοι
+                            λέγουσα τὰ τοιαῦτα, ἑκουσίᾳ ἐξελθεῖν τῶν ἐμῶν οἴκων καὶ μάτην τὴν Κύπριν
+                            προβάλλεσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1037">
+                        <p>1037. ἑκουσίως τήνδʼ ἐκ δόμων: ἑκουσίως ἔπλευσε, κόμπου δὲ <lb n="25"/>
+                            χάριν ἡ Ἀφροδίτη τοῖς λόγοις αὐτῆς ἐμβέβληται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1049">
+                        <p>1049. μὴ νῦν: καὶ τοῦτο γέλοιον, γελοιότερος δὲ ὁ ἀντερῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1051">
+                        <p>1051. οὐκ ἔστʼ: ὁ στίχος οὗτος ἐν παροιμίαις φέρεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1057">
+                        <p>1057. ῥᾴδιον μὲν οὐ τόδε: τὸ κατὰ τῶν γυναικῶν μῖσος ἑαυτοῦ <note
+                                type="footnote">2. Θεογονίᾳ] 197. syllabae ην) A. corrupte. ib.
+                                αὐτός] Hippol. 443. 17. ἐχρῆν] ἐχρὴν A. hic et alibi. 10. ἐπαινῶνται
+                                Kampmannus. 18. Ἀνδρομάχῃ] 628. ἐπαινοῦνται A. 19. γυναῖκα] γυναῖκα
+                                σὴν A. 13. προσῆκον] πρέπον apud Amatium. 22. φησί·
+                                συμφωνεῖς—προβάλλεσθαι] φησιν αμφῶ—προβάλλεσθε A. 14. νικτην (νικτ
+                                cum compendio Correxit Kampmannus.</note>
+                            <pb n="64"/> καὶ διὰ τούτων παρίστησιν ὁ Εὐριπίδης· οὐ γὰρ, φησὶ, ῥᾴδιόν
+                            ἐστι ποτε σωφρονίσαι γυναῖκα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1059">
+                        <p>1059. κἂν ἔτʼ ὦσ’ ἐχθίονες: κἂν ἀκόλαστοι πάνυ ὦσιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1064">
+                        <p>1064. σμύρνης αἰθερίας: εἰς τὸν αἰθέρα φθανούσης ἢ τῆς αἰθομένης τὴν
+                            ἀκρόπολιν. κατὰ κοινοῦ τὸ προὔδωκας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1068">
+                        <p>1068. τέρμονά τε: τέρμονα νῦν λέγει τὴν τοῦ Ἰδαίου ὄρους κορυφὴν διὰ τὸ
+                            τερματίζειν, πρωτόβολον δὲ διὰ τὸ ἐμβάλλειν τὸν ἥλιον πρῶτον ἀνίσχοντα
+                            εἰς αὐτήν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1070">
+                        <p>1070. ζαθέαν θεράπναν: ἔνθα τὸ θεῖον θεραπεύεται. νῦν δὲ θεράπναν <lb
+                                n="10"/> λέγει τὴν τοῦ Διὸς οἴκησιν, παρόσον ὁ Ζεὺς τὴν Ἴδην
+                            οἰκεῖ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1075">
+                        <p>1075. Φρυγῶν τε ζάθεοι: ἀμφιβόλως ἔχει, πότερον κατʼ ἐνιαυτὸν διὰ τὸ
+                            δωδεκασέληνον εἶναι τὸν ἐνιαυτὸν, ἢ διʼ ὅλου τοῦ ἐνιαυτοῦ κατὰ μῆνα.
+                            λέγουσι δὲ ἔνιοι καὶ τὰ πέμματα σελήνας διὰ τὸ λευκὰ εἶναι καὶ περιφερῆ·
+                            σελήνας δε <gap reason="omitted"/> ἱδρύεσθαι· δύναται οὖν λέγειν <lb
+                                n="15"/> ἐκ δώδεκα πεμμάτων θυσίαν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1079">
+                        <p>1079. αἰθέρα τε πόλεως: καὶ τὸν αἰθέρα ἐπιβεβηκώς. ὁ Δίδυμος τὸν
+                            ἐμπυρισμὸν, ἀπὸ τοῦ αἴθεσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1084">
+                        <p>1084. φθιμένοις ἀλαίνεις: ἐν τοῖς νεκροῖς διατρίβεις.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1090">
+                        <p>1090. κατάορα: ἐστεγασμένα, πεπυκνωμένα τοῖς δάκρυσι. κατῄορα <lb n="20"
+                            /> τῇ βοῆ. ἢ βοᾷ, ἵνʼ ᾖ ῥῆμα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1100">
+                        <p>1100. ἔνθʼ ἀκάτου: ἔνθα πορευομένης τῆς νεὼς τοῦ Μενελάου κατὰ τὸ μέσον
+                            πέλαγος τοῦ Αἰγαίου. τὸ δίπαλτον πῦρ τὸ ἱερὸν, ὅ ἐστιν ὁ κεραυνὸς,
+                            κεραυνώσει κατὰ τὸ μέσον τὴν πλάτην, ὅ ἐστι τὸ πλοῖον· εὔχονται γὰρ κατὰ
+                            τὸ μέσον πέλαγος κεραυνωθῆναι.</p>
+                        <lb n="25"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1107">
+                        <p>1107. χρύσεα δʼ ἔνοπτρα: φαίνεται ἐπιλαθόμενος ὧν προείρηκεν· ἀπῆκται γὰρ
+                            ἐπὶ τὰς ναῦς ὡς ἀποτυμπανισθησομένη. ἤτοι οὖν ἐπιλελησμένην αὐτὴν
+                            εἰσάγει καὶ καταστοχαζομένην, ὅτι πάλαι ἔχει τὰ ἔνοπτρα καὶ
+                            καλλωπίζεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1112">
+                        <p>1112. χαλκόπυλόν τε: τινὲς θεᾶς μέλαθρον. ἢ προσυπακουστέον <lb n="30"/>
+                            αὐτὸ ἔξωθεν. ἔστι δὲ χαλκιοίκου Ἀθηνᾶς ἐν Σπάρτῃ ἱερόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1118">
+                        <p>1118. καινὰ καινῶν: παρασκευάζουσαι αἱ συντυχίαι τῇ Τροίᾳ. τὸ ἑξῆς δὲ,
+                            λεύσσετε Τρώων ἄλοχοι μέλεαι.</p>
+                        <note type="footnote">3. Praefixi lemma κἂν ἔτʼ ὦσʼ ἐχθίονες. 30.
+                            χαλκιοίκου] χαλκειοίκου A. In A. verba κἄν—ὦσιν scholio 32. λεύσσετε]
+                            λεύσετε A. praecedenti adjecta sunt.</note>
+
+                        <pb n="65"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1121">
+                        <p>1121. ὃν πύργων δίσκημα: ἀντὶ τοῦ ἔκτεινον ῥίψαντες καὶ δισκεύσαντες
+                            αὐτὸν ἀπὸ τῶν τειχῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1123">
+                        <p>1123. νεὼς μὲν πίτυλος: ἀντὶ τοῦ μία ναῦς· πίτυλος γὰρ ἡ κωπηλασία, ὡς
+                            τῆς Ἀνδρομάχης παρακαλεσάσης αὐτὸν μετὰ τῆς ἀσπίδος θάπτεσθαι. διὰ τοῦτο
+                            Ταλθύβιος λέγει μίαν ναῦν καταλελεῖφθαι <lb n="5"/> ἐπʼ αὐτὸ τοῦτο.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1126">
+                        <p>1126. αὐτὸς δʼ ἀνῆκται: ἀναγωγὴ λέγεται ἡ ἀπὸ τοῦ λιμένος εἰς τὸ πέλαγος
+                            ἀναχώρησις· δοκεῖ γὰρ ὑψηλότερον εἶναι ἡ θάλασσα τῆς γῆς.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1128">
+                        <p>1128. Ἄκαστος ἐκβέβληκεν: ὁ μὲν Εὐριπίδης ὑπὸ Ἀκάστου <lb n="10"/> φησὶν
+                            ἐκβεβλῆσθαι τὸν Πηλέα, εἰσὶ δὲ οἵ φασιν ὑπὸ τῶν δύο αὐτοῦ παίδων,
+                            Ἀρχάνδρου καὶ Ἀρχιτέλους, κατὰ τὸν καιρὸν ὃν ἔμελλον Ἕλληνες ἐξ Ἰλίου
+                            ἐπανιέναι ἐξεληλάσθαι, καὶ ἐλθόντα εἰς ἀπάντησιν τῷ Νεοπτολέμῳ
+                            προσελθεῖν διὰ χειμῶνα τῇ Κῷ τῇ νήσῳ καὶ ξενισθέντα ὑπὸ Μόλωνός τινος
+                            Ἄβαντος ἐκεῖ καταλύσασθαι <lb n="15"/> τὸν βίον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1129">
+                        <p>1129. οὗ θᾶσσον: θᾶσσον τοῦ δέοντος ἐξώρμησε καὶ οὐκ ἐπεμέρισέ τινα τῇ
+                            μονῇ χάριν. οὔτε γὰρ ἡγήσατο κεχαρισμένον ἑαυτῷ εἶναι τὸ μεῖναι, ἀλλʼ
+                            ἀνήχθη. τοῦτο δὲ πρὸς τὴν δραματικὴν ὑπόθεσιν μεμηχάνηται, ὅπως τὸ
+                            ἐπεισόδιον ἐπαγάγοι τοῦτο ἐπὶ τῆς σκηνῆς, <lb n="20"/> τήν τε ἀσπίδα
+                            παρεισενέγκοι καὶ τὸν Ἀστυάνακτα. πρὸς μὲν οὖν τὴν ταχεῖαν ἀναχώρησιν
+                            εὗρεν ὅτι αἴτιον τῷ Νεοπτολέμῳ τὸν Πηλέα ὑπὸ Ἀκάστου ἐκβεβλῆσθαι, περὶ
+                            δὲ τῆς ἀσπίδος, ὅτι ἠξίωσεν αὐτὸν ἡ Ἀνδρομάχη τὴν ἀσπίδα αὐτῇ ἀφεῖναι,
+                            ὅπως μὴ ἐν τῷ αὐτῷ θαλάμῳ ἡ τοῦ Ἕκτορος ἀσπὶς ᾖ. κομψὰ δὲ ταῦτα πάντα
+                            πεποίηκε, <lb n="25"/> παρῄρητο δὲ τὸ τραγικὸν κατασκεύασμα. εἴπερ γὰρ
+                            παρῆν ἡ Ἀνδρομάχη, οἰκτρότερον ἂν ἐγένετο τὸ πάθος θρηνούσης αὐτῆς τὸν
+                            ἴδιον παῖδα. ἀντικατήλλακται δὲ τοῦ τοιούτου πάθους τὴν τῆς ἀσπίδος
+                            εἰσαγωγήν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1133">
+                        <p>1133. καί σφʼ ᾐτήσατο: παρεκάλεσε δὲ συνθάψαι καὶ τὴν <lb n="30"/>
+                            ἀσπίδα, ἥτις τοῖς Ἕλλησι φόβον παρεσκεύασεν.</p>
+                        <note type="footnote">1. δισκεύσαντες L. Dindorfius. διεσκευάσαντο 18. οὔτε]
+                            Immo οὐδέ. A. 21. παρεισενέγκοι Cobetus. παρεισενέγκῃ 12. καιρὸν L.
+                            Dindorfius. σκανὸν A. 24. αὐτῇ] αυ A. 17. ἐξώρμησε Cobetus. ἐξώρμ A. 26.
+                            γὰρ addidit Cobetus.</note>
+
+                        <pb n="66"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1138">
+                        <p>1138. μή νιν πορεῦσαι: παρεκάλεσεν αὐτὸν μὴ ἄγειν τὴν ἀσπίδα εἰς τὸν
+                            Πηλέως οἶκον, πρὸς τὸ μὴ λυπεῖσθαι ὁρῶσαν αὐτήν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1141">
+                        <p>1141. ἀλλʼ ἀντὶ κέδρου: ἀντὶ σοροῦ· ἀπὸ κέδρου γὰρ αἱ σοροί. συνθάπτειν
+                            τὴν ἀσπίδα.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1143">
+                        <p>1143. ὡς περιστείλῃς νεκρόν: ἵνα σὺ περιστείλῃς, ἐπειδὴ ἡ Ἀνδρομάχη
+                            βέβηκε· τὸ γὰρ τοῦ Νεοπτολέμου τάχος ἀφείλετʼ αὐτὴν ὥστε μὴ διʼ ἑαυτὴν
+                            θάπτειν τὸν νεκρόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1152">
+                        <p>1152. ἔλουσα νεκρόν: καὶ καθόλου ἔλουσα καὶ κατὰ μέρος ἀπένιψα.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1153">
+                        <p>1153. ἀλλʼ εἰμʼ ὀρυκτόν: ἀλλὰ πορεύομαι ἐπὶ τῷ ὀρύξαι τάφον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1154">
+                        <p>1154. ὡς σύντομʼ ἡμῖν: ἵνα συντόμως διʼ ἐμοῦ καὶ διὰ σοῦ πραχθέντα ταῦτα
+                            παρασκευάσῃ ἡμᾶς πλεῖν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1158">
+                        <p>1158. ὦ μείζονʼ ὄγκον δορός: ὦ Ἀχαιοὶ μᾶλλον κομποῦντες ἐν <lb n="15"/>
+                            λόγοις ἢ ἐν πολέμῳ, εἰ τοῦτον ἐφοβήθητε.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1161">
+                        <p>1161. οὐδὲν ἦτʼ ἄρα: οὐδὲν ἐτυγχάνετε, ὅτι Ἕκτορος μὲν ζῶντος ἐπορθήσατε
+                            τὴν πόλιν, τοῦτον δὲ νῦν φοβεῖσθε.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1166">
+                        <p>1166. ὅστις φοβεῖται: ὅστις μὴ μετὰ λογισμοῦ φοβεῖται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1175">
+                        <p>1175. ὃν πόλλʼ ἐκήπευσʼ: κῆπος κουρᾶς εἶδος, ἣν οἱ κειρόμενοι <lb n="20"
+                            /> διεβάλλοντο, κατελίμπανον δὲ τὰς ἔξω τῆς κεφαλῆς περὶ τὰ ἄκρα τρίχας.
+                            οὐ κέχρηται οὖν μεταφοραῖς ὁ Εὐριπίδης, ἀλλὰ τὸ τῆς κουρᾶς εἶδος
+                            αἰνίττεται. οὕτως ὁ Ἐρατοσθένης· οὐ γὰρ ἀξιοῖ μεταφορὰν εἶναι. λέγει
+                            οὖν, ὅντινα βόστρυχον κῆπον ἔκειρε. τὴν τοιαύτην δὲ κουρὰν καλοῦσι
+                            κῆπον. Ἄλλως. κατά τινας ἐπιμελείας ἠξίωσεν,· <lb n="25"/> ἐθεράπευσεν,
+                            ἵνʼ ᾖ μεταφορά. ἔστι δὲ καὶ εἶδος κουρᾶς ὁ κῆπος, ᾧ οἱ χρώμενοι
+                            διεβάλλοντο, κατελίμπανον δὲ τὰς ἔξω τῆς κεφαλῆς τρίχας. νῦν οὖν ὁ
+                            Εὐριπίδης τὸ εἶδος τῆς κουρᾶς, ὡς καὶ Ἐρατοσθένης λέγει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1176">
+                        <p>1176. ἔνθεν ἐκγελᾷ: ἔνθεν ἀπὸ τῶν βοστρύχων τῶν ὀστέων ῥαγέντων διαχάσκει
+                            ὁ φόνος· φόνον δὲ λέγει τὸν ἐγκέφαλον.</p>
+                        <lb n="30"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1177">
+                        <p>1177. ἵνʼ αἰσχρὰ μὴ λέγω: ἵνα τὰ εἰθισμένα μὴ εἴπω· αἰσχρὸν γὰρ λέγειν
+                            ἐγκέφαλον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1178">
+                        <p>1178. ὦ χεῖρες, ὡς εἰκοῦς: τῆς μὲν εἰκόνος καὶ τῆς εἰκασίας τοῦ <note
+                                type="footnote">1. παρεκάλεσεν — ἄγοι (praetuli spectant ad v. 1136.
+                                ἄγειν) kampmannus. παρεκαλ...... 13. παρασκευάσῃ] παρασκευάσει A.
+                                14. κομποῦντες] κομπῶντες A. ἄγει A. 4. συνθάπτειν τὴν ἀσπίδα]
+                                Haec</note>
+                            <pb n="67"/> πατρὸς κέκτησθέ τι, οἷον, ὅμοιοι μέν ἐστε τοῦ πατρὸς, ἐν δὲ
+                            τοῖς ἄρθροις ἐκλελυμένοι πρόκεισθε.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1182">
+                        <p>1182. ὦ μῆτερ, ηὔδας: ἔλεγες τοιαῦτα, φησὶν, ὅτι, ὅτε τεθνήξῃ, τὸν
+                            πλόκαμον σου κεροῦμαι, καὶ τοῦτο ἔλεγες, ὅτι ὑμνήσω σε μετὰ τῶν
+                            ὁμηλίκων.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1189">
+                        <p>1189. γράψειεν ἄν σε: εἰώθασιν ἐν τοῖς τάφοις τῶν ἀποθνησκόντων γράφειν
+                            τὰ ἀνδραγαθήματα. καὶ σὲ οὖν πῶς γράψει; ἆρα ὡς ἐφονεύθης ὑπὸ τῶν
+                            Ἑλλήνων, αἰσχύνην τοῖς Ἕλλησι, διʼ ὧν λέγει αὐτοὺς ἕνα παῖδα
+                            πεφοβῆσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1196">
+                        <p>1196. σὸς κεῖται τύπος: ὁ τοί <gap reason="omitted"/> τύπος τοῦ Ἕκτορος
+                            συμβέβηκεν <lb n="10"/> εἶναι ἐκ τοῦ ἱδρῶτος, ἢ ἀπλῶς ὁ ἱδρὼς κεῖται, ὃν
+                            ἔσταξεν ὁ Ἕκτωρ ἐκ τοῦ μετώπου τοῖς περιδρόμοις τῆς ἀσπίδος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1201">
+                        <p>1201. οὐ γὰρ ὁ δαίμων δίδωσιν εἰς κάλλος τὰς τύχας: ἀντὶ τοῦ, οὐκ ἔστιν
+                            εὐπρεπὴς οὐδὲ πο <gap reason="omitted"/>.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1204">
+                        <p>1204. τοῖς τρόποις γὰρ αἱ τύχαι: αἱ γὰρ τύχαι πηδῶσιν, ὅ ἐστι <lb n="15"
+                            /> γίνονται κατὰ τοὺς τρόπους τοῦ εὐμεταβλήτου καὶ ἄλλοτε ἄλλῃ πηδῶντος
+                            ἀνθρώπου· ἔμπληκτος γὰρ ὁ εὐμετάβλητος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1207">
+                        <p>1207. καὶ μὴν πρὸ χειρῶν: ἕτεραι Τρῳάδες φέρουσι σκῦλα τῷ τεθνηκότι
+                            Φρυγῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1223">
+                        <p>1223. θανῇ γὰρ οὐ θανοῦσα: καίτοι συνθαπτομένη τῷ νεκρῷ οὐκ <lb n="20"/>
+                            ἀποθανῇ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1230">
+                        <p>1230. νεκρῶν ἴακχον: ἐγὼ στενάζω τὸν νεκρῶν ἴακχον, τὸν θρῆνον τὸν εἰς
+                            τὸν Ἴακχον, ὅν φασι Περσεφόνης εἶναι υἱόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1233">
+                        <p>1233. τλήμων ἰατρός: κἀγῶ, φησὶν, ἰατρὸς νομιζομένη, τὰ δὲ ἔργα τῶν
+                            ἰατρῶν οὐκ εἰδυῖα, τοῖς ῥάκεσι πληρώσω τὰ ἕλκη σου.</p>
+                        <lb n="25"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1240">
+                        <p>1240. οὐκ ἦν ἄῤ ἐν θεοῖσιν: οὐδὲν ἦν ἐν τοῖς θεοῖς, φησὶν, εἰ μὴ ἡ Τροία
+                            καὶ οἱ ἐμοὶ πόνοι· οἷον περὶ οὐδενὸς ἐφρόντιζον οἱ θεοὶ εἰ μὴ περὶ ἐμοῦ
+                            καὶ τῶν ἐμῶν πόνων καὶ τῆς Τροίας τῆς μεγάλως μισουμένης.</p>
+                        <note type="footnote">2. πρόκεισθε] πρόσκεισθε A. Supplevi verbum e textu.
+                            7. ἆρα Cobetus. ἄρα A. 17. ἀνθρώπου Kampmannus. τοῦ 11. ἔστσξεν vel
+                            ἔσταζεν kampmannus. ἀνθρώπου A. ἔταξεν A. 21. ἀποθανῇ Kampmannus.
+                            ἀποθανῇ 14. πο......] πολυτελής Kampmannus. με A. 15. πηδῶσιν om. A. in
+                            lacuna. A. 22. νεκρῶν—νεκρῶν] νεκρὸν—νεκρὸν</note>
+
+                        <pb n="68"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1244">
+                        <p>1244. ἀφανεῖς ἂν ὄντες: νῦν, φησὶ, περιβόητοι ἐγενόμεθα· εἰ δὲ ὡς ἔτυχεν
+                            ἐπορθήθημεν οὐδὲ, ὑμνούμεθα. τρίτον δὲ τὸ ἄν παρέλαβε δέον ἅπαξ. Ἀττικὸν
+                            δὲ τὸ ἔθος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1248">
+                        <p>1248. δοκῶ δὲ τοῖς θανοῦσιν: δοκῶ δὲ μηδὲν διαφέρειν τοῖς <lb n="5"/>
+                            νεκροῖς τό τε πολυτελῆ καὶ ὀλίγον θάπτεσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1250">
+                        <p>1250. κενὸν δὲ γαύρωμʼ ἐστί: τὸ γὰρ πλουσίως ταφῆναι κόμπος μόνον ἐστὶ
+                            τοῖς ζῶσιν, οὐδὲν δὲ τοῖς τεθνηκόσι διαφέρει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1254">
+                        <p>1254. μέγα δʼ ὀλβισθείς: νομισθεὶς δὲ εὐδαίμων εἶναι, τε δὴ ἀγαθῶν γονέων
+                            ὑπάρχων, νῦν ἐν συμφορᾷ δεινῇ περιπέπτωκας.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1257">
+                        <p>1257. λεύσσω φλογέας: ὁρῶ τοὺς Ἕλληνας πορθοῦντας τὴν Ἴλιον, ἵνα ταχέως
+                            ἀποπλεύσωσι. φλογέας δὲ ἅπτοντας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1260">
+                        <p>1260. αὐδῶ λοχαγοῖς: λέγω, φησὶν, ὑμῖν, τοῖς τὸ Ἴλιον ἐπιτεταγμένοις
+                            πιμπράναι, μὴ ἀργεῖν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1266">
+                        <p>1266. χωρεῖτε, Τρώων παῖδες: καὶ ὑμεῖς χωρεῖτε, ὦ Τρῳάδες. <lb n="15"/>
+                            ἵνα ὁ λόγος δύο τάξεις ἔχῃ, τό τε συμβουλεύειν τοῖς καίουσι καὶ ὑμᾶς
+                            ἐξιέναι. μορφὰς δὲ εἰώθασι λέγειν τὰς τάξεις, ἵνα, φησὶ, δύο τάξεις ὁ
+                            λόγος ἔχῃ, ἵνα δι᾿ ἑνὸς λόγου δύο πράγματα γίνωνται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1275">
+                        <p>1275. ἀλλʼ ὦ γεραιὲ πούς: πρὸς γὰρ αὐτὸν ὁ λόγος, ὡσεὶ ἔλεγε, συγκαυθῶ
+                            αὐτῇ.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1295">
+                        <p>1295. λέλαμπεν: τὸ Ἴλιον τῷ πυρὶ λέλαμπεν, ὁμοίως δὲ καὶ τὰ Πέργαμα καὶ
+                            τὰ τέραμνα τῶν Περγάμων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1299">
+                        <p>1299. οὐρανία πεσοῦσα: πέσουσα δὲ ἡ γῆ τῇ οὐρανίᾳ, ὅ ἐστι τῇ ὑψηλῇ,
+                            ἑαυτῆς πτέρυγι, ὅ ἐστι τῇ ἀκροπόλει, καταφθίνει καὶ μαραίνεται τῷ πυρὶ
+                            ὡς καπνός.</p>
+                        <lb n="25"/>
+                        <p>καταφθίνει γᾶ: ἡ δὲ γῆ, φησὶν, ὑπὸ τοῦ δόρατος φθίνει καὶ ὁ καπνὸς ὡσπερ
+                            πτέρυγι χρώμενος οὕτως ἀνίπταται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1304">
+                        <p>1304. ἰαλέμῳ τοὺς θανόντας: ἀνακαλεῖς τοὺς τεθνηκότας θρήνῳ, οὐχ ὡς
+                            ἕτεροι σπονδαῖς. Ἄλλως. ἀνακαλοῦμαι, φησὶν, αὐτοὺς τὰ γεραιὰ μέλεα
+                            προστιθεῖσα τῇ γῇ καὶ ταῖς δισσαῖς χερσὶ κτυποῦσα <lb n="30"/> τὴν
+                            γῆν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1307">
+                        <p>1307. διάδοχόν σοι: οὐκοῦν, φησὶν, ἐγὼ διαδέχομαί σε, καὶ τῷ θρηνεῖν τὸ
+                            γόνυ τίθημι ἐπὶ τῆς γῆς.</p>
+                        <note type="footnote">3. δέον Cobetus. δὲ A. 11. φλογέας δὲ ἅπτοντας] Haec
+                            8. μέγα—εὐδαίμων] μελέα μήτηρ: non integra. Hoc dicit, φλογέας
+                            νομισθεῖσα δὲ εὐδαίμων A. δαλοῖσι χέρας διερέσσοντας significare 10.
+                            λεύσσω] λεύσω A. ut solet. τοὺς δαλοὺς ἅπτοντας.</note>
+
+                        <pb n="69"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1310">
+                        <p>1310. ἀγόμεθα: τ <gap reason="omitted"/>εγόμεθα δούλειον ὑπὸ
+                            μέλαθρον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1315">
+                        <p>1315. θάνατος ὅσιον: ὅτι ἐπὶ τοῦ ἑρκείου Διὸς ἡ σφαγή. τινὲς δὲ διὰ τὸ
+                            αὐτὸν μὲν εἶναι ὅσιον, ἀνοσίαν δὲ τὴν σφαγήν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1316">
+                        <p>1316. ἰὼ θεῶν μέλαθρα: ἰδίως τοὺς βωμοὺς, ἢ θεῶν μέλαθρα διὰ τὸ
+                            θεόκτιστον εἶναι τὴν πόλιν.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="1320">
+                        <p>1320. κόνις δʼ ἴσα: ἡ δὲ κόνις καὶ ἡ σποδὸς, ὁμοίως τῷ καπνῷ ὡς πτέρυγι
+                            χρωμένη, ἄϊστον καὶ ἀφανῆ τὸν ἐμὸν οἶκον τίθησιν. ἡ δὲ σποδὸς, φησὶ,
+                            καθάπερ καπνὸς ἀναστήσεται πρός τὸν αἰθέρα τῶν ἐμῶν οἴκων ἀφανισθέντων
+                            πυρί.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="1325">
+                        <p>1325. ἐμάθετε: αἰσθάνεσθε, φησὶ, πεσούσης τῆς Τροίας, ὡς <lb n="10"/> τῶν
+                            Ἑλλήνων τὰ λείψανα καταρριπτούντων.</p>
+                        <note type="footnote">1. τ......εγόμεθα] τουτέστιν ἀγόμεθα 10. αἰσθάνεσθε,
+                            φησὶ, —καταρριπτούτων kampmannus. Kampmannus. αἰσθάνεσθαί 2. ἑρκείου]
+                            ἑρκίου A. φησι—καταριπτούντων A.</note>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
