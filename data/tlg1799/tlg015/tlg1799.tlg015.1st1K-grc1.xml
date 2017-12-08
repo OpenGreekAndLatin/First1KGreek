@@ -71,6 +71,11 @@
         </fileDesc>
         <encodingDesc>
             <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage>
