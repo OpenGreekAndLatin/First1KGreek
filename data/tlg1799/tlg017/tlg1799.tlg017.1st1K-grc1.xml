@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Epigramma</title>
+                <author>Euclid</author>
+                <editor>Heinrich Menge</editor>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg1799.tlg017.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Euclidis Opera Omnia</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Henricus Menge</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg1799">Euclid</author>
+                            <imprint>
+                                <publisher>Leipzig</publisher>
+                                <pubPlace>Teubner</pubPlace>
+                                <date>1916</date>
+                            </imprint>
+                            <biblScope unit="volume">8</biblScope>
+                        </monogr>
+                        <ref
+                            target="https://archive.org/stream/euclidisoperaomn08eucluoft#page/186/mode/2up"
+                            >Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="work"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1799.tlg017.1st1K-grc1">
+                <div type="textpart" subtype="work" n="1">
+                    <pb n="286"/>
+                    <head>Εὐκλείδου γεωμετρικόν.</head>
+                    <p>Ἡμίονος καὶ ὄνος φορέουσαι οἶνον ἔβαινον, αὐτὰρ ὄνος στενάχιζεν ἐπ᾿ ἄχθει
+                        φόρτου ἑοῖο. τὴν δὲ βαρυστενάχουσαν ἰδοῦσ᾿ ἐρέεινεν ἐκείνη· <lb n="5"/>
+                        μῆτερ, τί κλαίουσ᾿ ὀλοφύρεαι ἠύτε κούρη; εἰ μέτρον ἕν μοι δοίης, διπλάσιον
+                        σέθεν ἦρα, εἰ δὲ ἓν ἀντιλάβοις, πάντως ἰσότητα φυλάξεις. εἰπὲ τὸ μέτρον,
+                        ἄριστε γεωμετρίης ἐπίιστορ.</p>
+                    <p>Primus edidit Aldus in Florilegio 1503 (MM p. 9), deinde praeter reliquas
+                        Anthologiae editiones, uelut Henrici Stephani 1566 p. 493, Bachetus in
+                        Diophanto p. 370 sine Euclidis nomine (p. 349: „placet hoc loco
+                        elegantissima aliquot epigrammata proferre non iniucundas quaestiones de
+                        rebus arithmeticis continentia, quae nondum edita fuerunt, quaeque pridem e
+                        codice probatissimo Palatino excerpta tradidit nobis vir eruditissimus
+                        Claudius Salmasius“, et deinde p. 368; „his, quae nondum edita erant,
+                        epigrammatis subiicere libet quinque sequentia cum nostra interpretatione,
+                        ne quid ad hanc materiam pertinens hic deesse sinamus, quamuis olim haec
+                        edita circumferantur in Anthologia“) et Brunckius Anal. I p. 168. ego hosce
+                        contuli codices: Vatic. Gr. 63 bomb. s. XIV (A, fol. 121), Vatic. Gr. 1347
+                        chart. s. XVI (B, fol. 216), Vatic. Gr. 1379 chart. S. XV (C, fol. 33),
+                        Mutin. III B 11 chart. s. XV (D), Barberin. I 128 chart. s. XV (E, fol.
+                        124), Musei Britann. add. 22 858 chart. s. XVI (F, fol. 105u), Bodl.
+                        Barocceian. 125 chart. s. XVI, u Coxe I p. 203 (G, fol. 146). exstat etiam
+                        in Vindob. philos. 331.</p>
+                    <note type="footnote">1. γεωμετρικόν] γεωμετρικοῦ F, ἐπίγραμμα γεωμετρικόν G. 2.
+                        οἶνον] ἷνον F. 3. στενάχισεν F, sed corr. 4. βαριστε-</note>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>
