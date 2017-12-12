@@ -86,12 +86,12 @@ Architecture.</p>
 
 <refsDecl n="CTS">
 <cRefPattern n="corresp" matchPattern="(\w+).(\w+)"
-replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@corresp='$2']"/>
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@corresp='$2'])"/>
 <!-- this pattern extracts references to the original work -->
 <cRefPattern n="section" matchPattern="(\w+).(\w+)"
-replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']"/>
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
 <cRefPattern n="book" matchPattern="(\w+)"
-replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']"/>
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
 
 
 
