@@ -84,7 +84,7 @@
     <encodingDesc>
       <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
       <refsDecl n="CTS">
-        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -103,7 +103,7 @@
       <div type="commentary" subtype="preface" xml:lang="eng" n="urn:cts:greekLit:tlg2018.tlg002.1st1K-eng1">
         <pb n="v"/>
         <head>PREFACE</head>
-        <p n="1">THE text of the Historia Ecclesiastica of Eusebius in
+        <div type="textpart" subtype="paragraph" n="1"><p>THE text of the Historia Ecclesiastica of Eusebius in
           the following pages is that of E. Schwartz in volumes
           i and ii. of Part II. of the edition of Eusebius in
           Die griechischen christlichen Schriftsteller der erstern
@@ -124,7 +124,7 @@
           and undertook the laborious work of verifying and
           inserting the references which were taken from
           Schwartz.</p>
-      </div>
+      </div></div>
     </body>
   </text>
 </TEI>

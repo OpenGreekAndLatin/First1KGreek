@@ -80,7 +80,7 @@
             <p>Text encoded in accordance with the latest EpiDoc standards</p>
             <refsDecl n="CTS">
                 <cRefPattern matchPattern="(.+)" n="paragraph"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
                 />
             </refsDecl>
         </encodingDesc>
@@ -99,7 +99,7 @@
             <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg051.1st1K-grc1">
                     <pb n="397"/>
                     <head>ΩΡΙΓΕΝΟΥΕ ΕΚΛΟΓΑΙ ΕΧΣ ΛΕΥΙΤΙΚΟΝ.</head>
-                    <p n="1">Καὶ ἀνεκάλεσε Μωϋσῆν. Λευϊτικὸν ὠνόμασται, ἐπειδὴ τὸ τῆς ἱερωσύνης καὶ τὰ
+                    <div type="textpart" subtype="paragraph" n="1"><p>Καὶ ἀνεκάλεσε Μωϋσῆν. Λευϊτικὸν ὠνόμασται, ἐπειδὴ τὸ τῆς ἱερωσύνης καὶ τὰ
                         τῶν θυσιῶν καὶ ὅσα τοιαῦτα προσέταξεν ὁ Θεὸς, ἐν τούτῳ Λευϊτικῷ φέρεται.
                         Ἔχει μὲν οὖν καὶ ἡ Ἔξοδος τοῦ Θεοῦ νομοθεσίας· ὅπως δὲ ἐτελέσθησαν οἱ
                         ἱερεῖς χρισθέντες, καὶ ὅπως κατεσκευάσθη ἡ σκηνὴ καὶ σύμπηξιν ἔλαβεν
@@ -255,7 +255,7 @@
                     <note type="footnote">18 Levit. XIV, 5. 19 ibid., 9. 20 ibid., 10. 21 ibid.,
                         11. ibid., 55.</note>
                 
-            </div>
+            </div></div>
         </body>
     </text>
 </TEI>

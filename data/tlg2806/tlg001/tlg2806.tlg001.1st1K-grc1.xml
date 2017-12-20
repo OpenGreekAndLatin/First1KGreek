@@ -70,7 +70,7 @@
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards</p>
  <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+).(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:p[@n='$2'])"/>
+  <cRefPattern matchPattern="(.+).(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
   <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
 </encodingDesc>
@@ -90,7 +90,7 @@
 <div type="textpart" subtype="chapter" n="1">
 <pb n="1"/>
 <head>ΒΙΟΣ ΤΟΥ ΑΓΙΟΥ ΠΟΡΦΟΥΡΙΟΥ ΕΠΙΣΚΟΠΟΥ ΓΑΖΗΣ</head>
-<p n="1">Τῶν ἁγίων ἀνδρῶν τοὺϲ ἄθλουϲ καὶ τὸν θεϊκὸν αὐτῶν <lb n="1"/>
+<div type="textpart" subtype="paragraph" n="1"><p>Τῶν ἁγίων ἀνδρῶν τοὺϲ ἄθλουϲ καὶ τὸν θεϊκὸν αὐτῶν <lb n="1"/>
 ζῆλόν τε καὶ πόθον καλόν ἐϲτιν τοῖϲ ὀφθαλμοῖϲ θεωρεῖν
 (ὁρώμενα γὰρ ἀξιοφίλητα γίνεται), φέρει δὲ ὅμωϲ ὠφέ- <lb n="5"/>
 λειαν οὐ μετρίαν καὶ τὰ διηγήματα παρὰ τῶν ἀκριβῶϲ
@@ -2788,12 +2788,12 @@ ex τὸ et κόϲμω in ras V</note>
 7 μεγάλην: ἁγίαν V 8 λιγατεύϲαϲ BV corr. v
 11 ἐπππϲκοπίϲαϲ B 12 η: ὀκτὼ B 13 εἰδωλωμανεῖϲ B
 16 ἐλεήϲει V -ϲειεν Ha</note>
-</div>
+</div></div>
 
  <div type="textpart" subtype="chapter" n="2">
 <pb n="83"/>
 <head>ΒΙΟΣ ΚΑΙ ΠΟΛΙΤΕΤΙΑ ΕΝ ΣΥΝΤΟΜΩΙ ΤΟΥ ΑΓΙΟΥ ΠΟΡΦΥΡΙΟΥ ΕΠΙΣΚΟΠΟΥ ΛΑΖΗΣ</head><note type="marginal">f. 222</note>
-<p n="1">Ὁ ἐν ἁγίοιϲ πατὴρ ἡμῶν Πορφύριοϲ οὗτοϲ ὥρμητο
+<div type="textpart" subtype="paragraph" n="1"><p>Ὁ ἐν ἁγίοιϲ πατὴρ ἡμῶν Πορφύριοϲ οὗτοϲ ὥρμητο
 ἐκ τῆϲ θεϲϲαλονικέων πόλεωϲ, πλουϲίων καὶ εὐγενῶν
 γονέων ὑπάρχων υἱόϲ, ἐπὶ τῆϲ βαϲιλείαϲ Ἀρκαδίου καὶ <lb n="5"/>
 Ὁνωρίου. ἀπάραϲ δὲ τῆϲ ἐνεγκαμένηϲ καὶ πλεύϲαϲ εἰϲ
@@ -3136,13 +3136,13 @@ f ἑαυτῶν</note>
 <note type="footnote">20 ct. Tim. 1 2,4</note>
 <note type="footnote">2 κλάροϲ τοῦ ϲταϲιάϲαντοϲ 12 εἰκάδα 15 αὐτ]ου acc.
 om. ut vidstur</note>
-</div>
+</div></div>
 
 <div type="textpart" subtype="chapter" n="3">
 <pb n="94"/>
 <note type="marginal">f.120v</note><head>ΒΙΟΣ ΚΑΙ ΠΟΔΙΤΕΙΑ ΤΟΥ EN ΑΓΙΟΙΣ
 ΠΑΤΡΟΣ ΗΜΩΝ ΠΟΡΦΥΡΙΟΥ ΕΠΙΣΚΟΠΟΥ  ΓΑΖΗΣ.</head>
-<p n="1">Γάζα πόλιϲ ἐϲτὶ τῆϲ Παλαιϲτίνηϲ, μεθόριον αὐτθϲ καὶ.
+<div type="textpart" subtype="paragraph" n="1"><p>Γάζα πόλιϲ ἐϲτὶ τῆϲ Παλαιϲτίνηϲ, μεθόριον αὐτθϲ καὶ.
 <lb n="4"/> τθῆϲ Αἰγύπτου κειμένη· περιφανὴϲ ἡ πόλιϲ εἴδωλα πλοῦ-
 <note type="marginal">f. 121</note> τοῦϲα μετὰ τῶν ἄλλων, πλοῦτον φεῦ τὸν κακόν. ταύτηϲ
 ὁ καλὸϲ Πορφύριοϲ θεοῦ κρίμϲιν ἀπορρήτcιϲ καλῶϲ τὸν
@@ -3641,7 +3641,7 @@ p. 79 27 κατεχέθη: cf. Lobect Phryn. p. 731</note>
 ϲιλείαϲ τρυφῶντι τῆϲ ἀύλου· καὶ γὰρ ἐν αὐτοῖϲ τῷ θεῷ
 πρέπει δόξα κράτοϲ τιμή τε καὶ προϲκύνηϲιϲ ἅμα καὶ νῦν
 καὶ ἀεὶ καὶ εἰϲ χρόνουϲ αἰώνων. ἀμήν.</p><lb n="25"/>
-</div>
+</div></div>
 </div>
 </body>
 </text>

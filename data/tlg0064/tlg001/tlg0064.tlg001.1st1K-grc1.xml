@@ -85,7 +85,7 @@
             <refsDecl n="CTS">
 
                 <cRefPattern n="paragraph" matchPattern="(.+)"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])">
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
                     <p>This pointer pattern extracts paragraphs</p>
 
                 </cRefPattern>
@@ -116,7 +116,7 @@
                         <title type="sub">ὃν καὶ ἀνέθηκεν ἐν τῷ τοῦ Κρόνου τεμένει, δηλοῦντα
                             τάδε.</title>
                     </head>
-                    <p n="1">Ἔδοξε Καρχηδονίοις Ἅννωνα πλεῖν ἔξω Στηλῶν Ἡροκλείων καὶ πόλεις κτίζειν
+                    <div type="textpart" subtype="paragraph" n="1"><p>Ἔδοξε Καρχηδονίοις Ἅννωνα πλεῖν ἔξω Στηλῶν Ἡροκλείων καὶ πόλεις κτίζειν
                         Λιβυφοινίκων. Καὶ ἔπλευσε πεντηκοντόρους ἑξήκοντα ἄγων, καὶ πλλῆθος ἀνδρῶν
                         καὶ γυναικῶν εἰς ἀριθμὸν μυριάδων τριῶν καὶ σἶτα καὶ τὴν ἄλλην
                         παρασκευήν.</p>
@@ -200,7 +200,7 @@
                         ἐπλεύσαμεν προσωτέρω, τῶν σίτων ἡμᾶς ἐπιλιπόντων.</p>
 
 
-            </div>
+            </div></div>
         </body>
     </text>
 </TEI>

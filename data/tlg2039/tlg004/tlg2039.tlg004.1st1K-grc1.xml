@@ -72,7 +72,7 @@
  <encodingDesc>
   <p>Text encoded in accordance with the latest EpiDoc standards (March 2017)</p>
   <refsDecl n="CTS">
-   <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+   <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
   </refsDecl>
  </encodingDesc>
 <profileDesc>
@@ -93,7 +93,7 @@ PSEUDEPIGRAPHUS.</head>
 <head>II. <lb n="15"/>
 Ex codice Parisino 453.
 (A ═ fo. 72v—76v, B 82v—86r).</head>
-<p n="1">Μέθοδοι εὔχρηστοι πρὸς τοὺς ἀπὸ μορίων πολλαπλασιοσμοὺς
+<div type="textpart" subtype="paragraph" n="1"><p>Μέθοδοι εὔχρηστοι πρὸς τοὺς ἀπὸ μορίων πολλαπλασιοσμοὺς
 κατὰ τὸν τῆς ἀστρονομίας κανόνα πλέον
 τῶν ἄλλων μεθόδων σώζουσαι τὴν ἀκριβείαν· πᾶσαν.</p> <lb n="20"/>
 <note type="footnote">3 Διοφάντους codex. 18 Μέθοδος εὔχρηστος B.</note>
@@ -445,7 +445,7 @@ Ex codice Parisino 453.
 οὕτω δὲ καὶ πέμπτα λεπτὰ παρὰ τὸν ξ τέταρτα ποιεῖ,
 καὶ ἕκτα, πέμπτα.</p>
 
-		</div>
+		</div></div>
 </body>
 </text>
 </TEI>
