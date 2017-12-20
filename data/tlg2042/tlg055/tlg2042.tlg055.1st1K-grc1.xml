@@ -80,7 +80,7 @@
             <p>Text encoded in accordance with the latest EpiDoc standards</p>
             <refsDecl n="CTS">
                 <cRefPattern matchPattern="(.+)" n="paragraph"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
                 />
             </refsDecl>
         </encodingDesc>
@@ -99,7 +99,7 @@
             <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg055.1st1K-grc1">
                     <pb n="949"/>
                     <head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ ΕΙΣ ΤΟΥΣ ΚΡΙΤΛΣ.</head>
-                    <p n="1">Καὶ εῦξατο Ἱεμθάε τῷ Κυφίῳ. Εἰ Πνεῦμα Κυρίου ἐπ᾿ αὐτὸν, πῶς εὔχεται ἃ μὴ
+                    <div type="textpart" subtype="paragraph" n="1"><p>Καὶ εῦξατο Ἱεμθάε τῷ Κυφίῳ. Εἰ Πνεῦμα Κυρίου ἐπ᾿ αὐτὸν, πῶς εὔχεται ἃ μὴ
                         προσήκει; Ἐνῆν γὰρ καὶ κύνα ἀπαντῆσαι ἐπανιόντι τῷ Ἰεφθάε. Ἆῤ οὖν ἐσφάλη
                         τὸ Πνεῦμα; οὐδαμῶς· ἀλλὰ τὸ μὲν Πνεῦμα βοηθεῖν παραγέγονεν, οὐχ
                         ὑποβάλλειν τὴν ἄτοπον εὐχήν· αὐτὸς δὲ σφάλλεται ἀπερισκέπτως
@@ -131,7 +131,7 @@
                     <note type="footnote">54 Jud. xi, 30. 55 Jud. xii, 6. 56 Jud. xiii, 2. 57
                         Jud. xvi, 17. 58 Jud. xvii, 5. 59 Jud. xx, 34. 60 Psal. lxxiv, 3.</note>
                 
-            </div>
+            </div></div>
         </body>
     </text>
 </TEI>

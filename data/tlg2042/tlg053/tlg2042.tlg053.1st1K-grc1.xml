@@ -80,7 +80,7 @@
             <p>Text encoded in accordance with the latest EpiDoc standards</p>
             <refsDecl n="CTS">
                 <cRefPattern matchPattern="(.+)" n="paragraph"
-                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
                 />
             </refsDecl>
         </encodingDesc>
@@ -99,7 +99,7 @@
             <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg053.1st1K-grc1">
                     <pb n="805"/>
                     <head>ΩΡΙΓΕΝΟΥΣ ΕΙΣ ΤΟ ΔΕΥΤΕΡΟΝΟΜΙΟΝ ΕΚΛΟΓΑΙ.</head>
-                    <p n="1">Ἐλάλησε Μωϋσῆς πρὸς πάντας υἱοὑς Ἰσραήλ κατὰ πάντα ὅσα ἐνετείλατο Κύριος
+                    <div type="textpart" subtype="paragraph" n="1"><p>Ἐλάλησε Μωϋσῆς πρὸς πάντας υἱοὑς Ἰσραήλ κατὰ πάντα ὅσα ἐνετείλατο Κύριος
                         αὐτῷ. Ἐπειδὴ ὁ μὲν Θεὸς τὴν δύναμιν ἀπεκάλυπτεν· ὁ δὲ προφήτης τῇ ἑαυτοῦ
                         γλώσσῃ ἐκέχρητο πρὸς παράστασιν τῶν δεδηλωμένων. Κίνησις οὖν λέγεται ἡ
                         προφητικὴ φωνὴ, οἷα παριστῶσα τὰ ὑπὸ Θεοῦ εἰρημένα.</p>
@@ -355,7 +355,7 @@
                         ibid. 99 Rom. VIII, 32. 1 Deut. XXXIII, 3. 1 Core XV, 26. 3 Deut.
                         XXXIII, 5. 4 Psal. XLVI, 4. 5ibid., 10. 6 Matth. III, 17.</note>
                 
-            </div>
+            </div></div>
         </body>
     </text>
 </TEI>

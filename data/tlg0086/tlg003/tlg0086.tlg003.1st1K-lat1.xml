@@ -85,7 +85,7 @@
     <encodingDesc>
       <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
       <refsDecl n="CTS">
-        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -102,7 +102,7 @@
       <div type="commentary" xml:lang="lat" n="urn:cts:greekLit:tlg0086.tlg003.1st1K-lat1">
 <pb n="V"/>
 <head>PRAEFATIO</head>
-<p n="1">Aristotelis libellus de re publica Atheniensium cur in hoc Supplemento <note type="marginal">Auctoritas libri Aristotelici</note>
+<div type="textpart" subtype="paragraph" n="1"><p>Aristotelis libellus de re publica Atheniensium cur in hoc Supplemento <note type="marginal">Auctoritas libri Aristotelici</note>
 locum obtineat, facile sine verbosis argumentis quivis intelliget. Post cetera 
 Stagiritae opera, quibus tempus edax pepercit, nunc sub finem saeculorum
 in lucera protractus, in editione Academica Berolinensi locum quasi de iure
@@ -465,7 +465,7 @@ indefesus.</p>
 <p n="24">Datum Berolini</p>
 <p n="25">a. d. VII Kal. Nov.</p>
 <p n="26">Georgius Wentzei.</p>
-</div>
+</div></div>
 </body>
 </text>
 </TEI>
