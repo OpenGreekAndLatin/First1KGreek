@@ -84,7 +84,7 @@
     <encodingDesc>
       <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
       <refsDecl n="CTS">
-        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+        <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
     <profileDesc>
@@ -103,7 +103,7 @@
       <div type="commentary" subtype="preface" xml:lang="eng" n="urn:cts:greekLit:tlg2018.tlg002.1st1K-eng1">
         <pb n="v"/>
         <head>PREFACE</head>
-        <p n="1">THE text of the Historia Ecclesiastica of Eusebius in
+        <div type="textpart" subtype="paragraph" n="1"><p>THE text of the Historia Ecclesiastica of Eusebius in
           the following pages is that of E. Schwartz in volumes
           i and ii. of Part II. of the edition of Eusebius in
           Die griechischen christlichen Schriftsteller der erstern
@@ -111,10 +111,12 @@
           Changes have only been introduced in a few very
           small points, such as the accentuation of the proper
           names in the genealogy of Christ.</p>
-        <p n="2">I am most grateful to the Academy for its kindness
+        </div>
+<div type="textpart" subtype="paragraph" n="2"><p>I am most grateful to the Academy for its kindness
           in allowing me the use of this magnificent
           example of how a text ought to be edited.</p>
-        <p n="3">In preparing the English I have in difficult passages
+        </div>
+<div type="textpart" subtype="paragraph" n="3"><p>In preparing the English I have in difficult passages
           frequently consulted the translation of A.C.M‘Giffert
           and have derived much benefit from his notes. I
           am also greatly indebted to my friends Mrs.
@@ -124,7 +126,7 @@
           and undertook the laborious work of verifying and
           inserting the references which were taken from
           Schwartz.</p>
-      </div>
+      </div></div>
     </body>
   </text>
 </TEI>
