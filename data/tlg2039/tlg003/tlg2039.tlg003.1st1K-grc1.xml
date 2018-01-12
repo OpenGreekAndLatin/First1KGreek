@@ -72,7 +72,7 @@
  <encodingDesc>
   <p>Text encoded in accordance with the latest EpiDoc standards (March 2017)</p>
   <refsDecl n="CTS">
-   <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:p[@n='$1'])"/>
+   <cRefPattern n="paragraph" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
   </refsDecl>
  </encodingDesc>
 <profileDesc>
@@ -93,8 +93,9 @@ PSEUDEPIGRAPHUS.</head>
 <pb n="3"/>
 <head>I.
 Ex codice Parisino Suppl. gr. 387, fo. 181r.</head>
-<p n="1">Ἐκ τῆς ἀριθμητικῆς Διοφάντου.</p>
-<p n="2">Ἀπὸ δύο μεθόδων εὑρίσκεται παντὸς τετραγώνου
+<div type="textpart" subtype="paragraph" n="1"><p>Ἐκ τῆς ἀριθμητικῆς Διοφάντου.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="2"><p>Ἀπὸ δύο μεθόδων εὑρίσκεται παντὸς τετραγώνου
 ἀριθμοῦ πλευρὰ ἤτοι δυνάμεως. καὶ ἡ μὲν μία ἔχει <lb n="5"/>
 οὕτως· ἀπόγραψαι τοιοῦτον ἀριθμὸν κατὰ τὴν τάξιν
 τῆς Ἰνδικῆς μεθόδου· εἶτα ἄρξαι ἀπὸ δεξιῶν ἐπὶ
@@ -106,7 +107,7 @@ Ex codice Parisino Suppl. gr. 387, fo. 181r.</head>
 μερισμοῦ ἀπὸ τοῦ μετʼ αὐτὸ στοιχείου τοῦ πρὸς τὰ
 δεξιά, ἐν δηλονότι φθάνει τὸ γίνεται.</p>
 
-		</div>
+		</div></div>
 </body>
 </text>
 </TEI>
