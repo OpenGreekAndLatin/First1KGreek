@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Scholia in Euclidis phaenomena (scholia vetera)</title>
+                <author xml:lang="lat">Scholia in Euclidem</author>
+                <editor>Heinrich Menge</editor>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg5022.tlg006.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Euclidis Opera Omnia</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Henricus Menge</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg5022" xml:lang="lat">Scholia in Euclidem</author>
+                            <imprint>
+                                <publisher>Leipzig</publisher>
+                                <pubPlace>Teubner</pubPlace>
+                                <date>1916</date>
+                            </imprint>
+                            <biblScope unit="volume">8</biblScope>
+                        </monogr>
+                        <ref
+                            target="https://archive.org/stream/euclidisoperaomn08eucluoft#page/134/mode/2up"
+                            >Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+).(.+)" n="section"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern matchPattern="(.+)" n="chapter"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg5022.tlg006.1st1K-grc1">
+                <div type="textpart" subtype="chapter" n="pr">
+                    <div type="textpart" subtype="section" n="1">
+                        <pb n="134"/>
+                        <p>1. Ad init. Τρία μόνα ζητοῦνται ἐν τῷδε τῷ συντάγματι· τὸ σφαῖραν εἶναι
+                            τὸ πᾶν, τὸ σφαιροειδὲς τὸ ὅμοιον εἶναι, τὸ τὴν γῆν κέντρου λόγον
+                            ἐπέχειν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="2">
+                        <p>2. Διαστήματα τὰ αὐτὰ ἔχοντα p.<del>2,5</del> οἷον τοῦ Ὠρίωνος <lb n="5"
+                            /> τὸ τυχὸν τὸ ἀπὸ τῆς ζώνης ἄχρις τῶν ποδῶν αὐτοῦ διάστημα τὸ αὐτό
+                            ἐστιν ἀεί.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="3">
+                        <p>3. Ταῦτα δέ ἐστι p. <del>2,19</del> τὰ μήτε ἀνατέλλοντα δηλαδὴ μήτε
+                            δυόμενα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="4">
+                        <p>4. P. <del>4,10sqq.</del> ταῦτα ὡς πρὸς τοὺς πρὸς τῷ φανερῷ <lb n="10"/>
+                            πόλῳ ἀστέρας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="5">
+                        <p>5. Ταῦτα πάντα ἔδειξεν ὁ Αὐτόλυκος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="6">
+                        <p>6. Ἐν τοῖς ἐναλλὰξ τμήμασι <del>p. 4,17</del> τοῦτο ἐδείχθη ἐν τῷ ιθʹ
+                            θεωρήματι τοῦ δευτέρου βιβλίου τῶν Σφαιρικῶν.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="7">
+                        <p>7. Ἐπὶ τῶν λοξῶν κύκλων p. <del>6,1</del> τοῦ τοῦ γάλακτος δηλαδὴ καὶ τοῦ
+                            ζῳδιακοῦ.</p>
+                        <p>7΄. Περὶ γάλακτος καὶ ζῳδιακοῦ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="8">
+                        <p>8. Λαμβανόμενοι p. <del>6,2</del> ὁρώμενοι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="9">
+                        <p>9. Ἀεὶ ἐπὶ ἡμικυκλίων ἴσων φερόμενοι <del>p. 6,3</del> διὰ <lb n="20"/>
+                            τοὺς ὅλους ἀστέρας τοῦτό φησι τοὺς ὁρωμένους ἐν τῷ ζῳδιακῷ καὶ ἐν τῷ τοῦ
+                            γάλακτος κύκλῳ, ὅτι, εἰ μὴ ἦν ὁ κόσμος σφαιρικός, ἀλλὰ κῶνος ἢ
+                            κύλινδρος, οὐ μὴν ἐφαίνετο πάντα ἡμικύκλιον τὸ φαινόμενον τμῆμα τοῦ
+                            ζφδιακοῦ κύκλου ἢ τοῦ γάλακτος, ἀλλά ποτε μεῖζον ἡμικυκλίου, <lb n="25"
+                            /> ποτὲ ἔλαττον, καὶ ἄλλου μέντοι καὶ ἄλλου κύ- <note type="footnote">1.
+                                VI. 2 Vat· CD λ A p1qrsx. 3. V2l. 4. V2. 5. V 6. V2. 7. V3 vv1. 7΄.
+                                Vat2p2. 8. V3LIvv1. 9. V2l1.</note>
+                            <note type="footnote">5. τό (pr)] om. λ. ἄχρι A r. 17. γάλακτος]
+                                γαλαξίου p. 18. ἢ ὁρ. Llvv1.</note>
+                            <pb n="135"/> κλου τμῆμα, καὶ οὐδὲ κύκλοι δὲ εἶεν οὗτοι, ἀλλὰ
+                            παρεγκεκλιμένοι τὰ μάλιστα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="10">
+                        <p>10. Μὴ παρὰ τὴν βάσιν p. <del>6,5</del> μὴ παραλλήλω δηλαδή.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="11">
+                        <p>11. Μὴ παράλληλα παρὰ τὴν βάσιν.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="12">
+                        <p>12. Τοιούτου σχήματος p. <del>6,7</del> κώνου ἢ κυλίνδρου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="13">
+                        <p>13. Ἀνόμοια τμήματα p. <del>6,9</del> τὰ κατὰ μῆκος τοῖς κατὰ πλάτος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="14">
+                        <p>14. Διὰ δή p. <del>6,11</del> ὅτι ἀδύνατον, τὸν κόσμον μὴ εἶναι
+                            σφαιροειδῆ.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="15">
+                        <p>15. Ἐν τῷ ἴσῳ χρόνῳ p. <del>8,5</del> διὰ τὸ βʹ τοῦ Αὐτολύκου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="16">
+                        <p>16. Ἑκάτερος τῶν τεμνόντων p. <del>8,14</del> διὰ τὸ ιβʹ τοῦ αʹ τῶν
+                            Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="17">
+                        <p>17. Ἐὰν δὲ ἐν σφαίρᾳ p. <del>8,25</del> διὰ τὸ ιβʹ τοῦ Αὐτούκου. <lb
+                                n="15"/> ἐκ τούτου δὲ δῆλον, ὅτι οἴ προδιωρισμένοι ἐπὶ τοῦ ιβʹ ἀργοὶ
+                            φανήσονται, εἴγε οὕτως κείσονται· ἐὰν ἐν σφαίρᾳ μένων κύκλος κύκλον
+                            μέγιστον τῶν ἐν τῇ σφαίρᾳ δίχα τέμνῃ, καὶ ὁ μένων μέγιστος ἔσται. ἐπεὶ
+                            δὲ ὁ Αὐτόλυκος οὐ δύναται ὁρᾶν μέγιστον, διὰ τοῦτο προξιορίζεται <lb
+                                n="20"/> λέγων· ἐὰν ἐν σφαίρᾳ μένων κύκλος φερόμενόν τινα τῶν ἐν τῇ
+                            σφαίρᾳ κύκλων ἀεὶ δίχα τέμνει, ὁ δʼ ἕτερος αὐτῶν μήτε πρὸς ὀρθὰς ᾖ τῶ
+                            ἄξονι μήτε διὰ τῶν πόλων τῆς σφαίρας, ἑκάτερος αὐτῶν μέγιστος ἔσται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="18">
+                        <p>18. Διὰ τὸ ιβʹ τοῦ Αὐτολύκου, εἰ γράφεται· ὁ δʹ <lb n="25"/> ἔτερος αὐτῶν
+                            μήτε πρὸς ὀρθὰς ᾖ τῷ ἄξονι μήτε διὰ τῶν πόλων, ἀλλὰ μὴ γράφεται
+                            μηδέτερονʼ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="19">
+                        <p>19. Τί ἐξαλλαγὴ τῆς περιφερείας ἢ ἡμισφαιρίου;</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="20">
+                        <p>20. P. <del>10,3</del> τουτέστι τότε διέρχεταί τις περιφέρεια τὸ φανερὸν
+                            ἡμισφαίριον ἐξαλλάσσουσα τὴν κίνησιν ἀπὸ τοῦ <lb n="30"/>
+                            <note type="footnote">10. V3. 11. Vat p2. 12. V3lvv1. 13. V3lvv1. 14. V2
+                                at2p2 15. V2B. 16. V2lB. 17. V2l. 18. BCM3. 19. VI. 20. V2l.</note>
+                            <note type="footnote">9. μὴ εἶναι τὸν κόσμον Vat p. 27 πόλλων Μ.</note>
+                            <pb n="136"/> φανεροῦ ἡμισφαιρίου ἐς τὸ ἀφανὲς μεταμείβουσα, ὅταν —τὸ
+                            Ασημεῖον τὸ προηγούμενον, ἔστω δὲ ἡ ΑΒ θπεριφέρεια ἐπὶ τὴν ἀνατολὴν
+                            δείξασα — <lb n="5"/> τὸ ἑπόμενον τὸ Β ἀνατείλῃκαὶ πρὸς δυσμὰς γενομένη
+                            κρύψασα τὸ ἡγούμενον σημεῖον τὸ Α ἐπικρύψῃ καὶ τὸ ἑπόμενον τὸ Β.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" n="1">
+                    <head>Ad prop. I.</head>
+                    <lb n="10"/>
+                    <div type="textpart" subtype="section" n="21">
+                        <p>21. Εὐῦεῖά ἐστιν p. <del>10,20</del> διὰ τὸν ὅρον τῶν Ὀπτικῶν <del>def.
+                                I.</del></p>
+                    </div>
+                    <div type="textpart" subtype="section" n="22">
+                        <p>22. Μετακινηθέντος p. <del>10,24</del> πῶς μετακινηθείσης τῆς διόπτρας
+                            καὶ τοῦ ζῳδιακοῦ ὁραθήσεται ὁ Λέων; καὶ μὴν ἀφʼ ἧς περιφερείας ἀνατέλλει
+                            ὁ Καρκίνος, ἀπʼ ἐκείνης <lb n="15"/> καὶ ὁ Δέων ἀνατέλλει, ὥστε οὐ
+                            μετακινηθήσεται ἡ διόπτρα διὰ τὸ ἀπὸ τῆς τοῦ Καρκίνου ἀρχῆς ἀνατολῆς
+                            ἀνατέλλειν καὶ τὸν Λέοντα. ἰστέον οὗν, ὅτι ἀνατολὴ ἐνταῦθα οὐ τὴν ὅλην
+                            ἀρχὴν τοῦ ζῳδίου ὑπὲρ τὸν ὁρίζοντα λέγει ἀνάβασιν, ἀλλὰ τὴν τῆς ἀρχῆς
+                            καὶ μόνην αὐτοῦ, <lb n="20"/> ἐπειδὴ ἡ δύσις οὐ τὴν ὅλην ὑπὸ ὁρίζοντα
+                            κατάβασιν τοῦ Δέοντος, ἀλλὰ τοῦ προηγουμένου σημείου τὴν δύσιν. ἐπεὶ
+                            τοίνυν, κἂν ἀπὸ τῆς αὐτῆς περιφερείας τοῦ ὁρίζοντος τὰ ζῴδια τὴν
+                            ἀνάβασιν ποιῶνται, ὁ Καρκίνος δηλαδὴ καὶ ὁ Λέων ἀπὸ ἄλλου καὶ ἄλλου
+                            σημείου τὰς ἀρχὰς <lb n="25"/> τῆς ἀνατολῆς ποιοῦνται. ἔνθα μὲν γὰρ ἡ
+                            ἀρχὴ τοῦ Λέοντος πρώτως ἀνατέλλει, ἐκεῖθεν τὸ τέλος τοῦ Καρκίνου
+                            φαίνεται· ἔνθα δὲ πάλιν τὸ τοῦ Λέοντος τέλος ἀναφερόμενον δείκνυται,
+                            ἐκεῖθεν πάλιν πρώτως ἡ ἀρχὴ ἀνατέλλει τοῦ Καρκίνου ζῳδίου. διὰ τοῦτο
+                            μετακινεῖσθαι <lb n="30"/> λέγει ὁ Εὐκλείδης τὴν διόπτραν καὶ ἐξ ἄλλου
+                            καὶ ἄλλου <note type="footnote">21. V2CB. 22. V2].</note>
+                            <note type="footnote">6."κρυ- in legi non potest. 17. Post Λέοντα comp.
+                                obscurum et deinde lac. 2—3 lilt. V. 23. Καρκίνος·]κο- (sic)
+                                V.</note>
+                            <pb n="137"/> σημείου τὰς ἀρχὰς τῶν ζῳδίων τοῦ Καρκίνου καὶ τοῦ Δέοντος
+                            ἀνατελλούσας, ἃς ἀρχὰς βούλεται καὶ κατοοπτεύειν τὸν διορῶντα. τοῦτο
+                            τοίνυν καὶ ἐπὶ τῶν δύσεων τῶν ζῳδίων. κἂν γὰρ ἐπὶ τοῦ αὐτοῦ καὶ ἑνὸς
+                            τόπου ὁρίζοντος τμήματος ὅτε Λέων καὶ ὁ Καρκίνος δύνουσι <lb n="5"/> ἀπʼ
+                            ἄλλου καὶ ἄλλου σημείου, τὰς ἀρχὰς καὶ τὰ τέλη αὐτῶν κρύπτουσι τὰ ζῴδια.
+                            ἔνθα μὲν γὰρ ἡ ἀρχὴ τοῦ Λέοντος, δύνει ἐκεῖσε τὸ τέλος τοῦ Καρκίνου·
+                            ἔνθα δὲ τὸ τέλος τοῦ Δέοντος, ἐκεῖσε ἡ τοῦ Καρκίνου ἀρχή ἐστιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="23">
+                        <p>23."Ἀνατέλλων p. <del>12,1</del> ἀρχὴν ποιούμενος τῆς ἀνατολῆς.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="24">
+                        <p>24. &#8736;ύνων p. <del>12,3</del> ἀρχὴν ποιούμενος τῆς δύσεως.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="2">
+                    <head>Ad prop. Π.</head>
+                    <div type="textpart" subtype="section" n="25">
+                        <p>25. Ad fig. p. 14 Ὁ πόλος τοῦ ὁρίζοντος ἐν τῷδε τῷ ἐιαγράμματι μεταξύ
+                            ἐστι τοῦ θερινοῦ τροπικοῦ καὶ ἀεὶ <lb n="15"/> φανεροῦ κύκλου κατὰ τὸ ἔ
+                            σημεῖον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="26">
+                        <p>26. P. <del>12,14</del> μία κόσμου περιφορά ἐστι τὸ ἀπὸ τοῦ εὐτοῦ ἐπὶ τὸ
+                            αὐτὸ σημεῖον τὴν κίνησιν φθάσαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="27">
+                        <p>27. Τῆς σφαίρας πόλοι λέγονται τὰ μέρη ἐκεῖνα, ἐν οἷς ὁ ἄξων αὐτῆς
+                            στρέφεται· κύκλου δὲ πόλος λέγεται <lb n="20"/> σημεῖόν τι ἐπὶ τῆς
+                            ἐπιφανείας τῆς σφαίρας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="28">
+                        <p>28. Ὅταν μεσουρανῇ τὰ τροπικά, τουτέστιν ὅταν ἐπὶ τοῦ μεσημβρινοῦ
+                            γένωνται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="29">
+                        <p>29. Ὅπερ ἐστὶν ἀπὸ τῆς ὀρθῆς σφαίρας ἄχρις υΣήνης.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="30">
+                        <p>30. Ἐπὶ τῆς ἡμετέρας ἄρα οἰκήσεως οὐδέποτε ὁ ζῳδιακὸς <lb n="25"/> πρὸς
+                            τὸν ὁρίζοντά ἐστιν ὀρθός.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="31">
+                        <p>31. Μεταξύ p. <del>12,18</del> ἤτοι τοῦ θερινοῦ τροπικοῦ ἤτοι τοῦ
+                            μεγίστου τῶν ἀεὶ φανερῶν ἤτοι τῶν ἀρκτικῶν.</p>
+                        <note type="footnote">23. V2. 24. V2. 25. Va. 26. Vat1 Cpa2tx 27. Vat2. 28.
+                            Vat1 BD Μ3p2. 29. Vat1 Bp2. 30. BC Μ3qsx. 31. Vat2 p2.</note>
+                        <note type="footnote">2. Post καί 4 litt. a tineis rosae, item lin. 5 post
+                            Καρκίνος et lin. 8 post ἐκεῖσε V. 7. αὐτῶν] supra VI. 8. δέ] addidi. 9.
+                            ἐστιν] om. I. 16. P] litt. est fig. depravatae eod. V (v. p. 15 adn
+                            1).</note>
+
+                        <pb n="138"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="32">
+                        <p>32. &#8736;έδεικται p. <del>14 8</del> ἐν τῷ ιʹ θεωρήματι τοῦ
+                            Αὐτολύκου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="33">
+                        <p>33. Ἀπὸ τοῦ ιʹ τοῦ περὶ κινουμένης σφαίρας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="34">
+                        <p>34. &#8736;ιὰ τῶν πόλων τῆς σφαίρας κύκλος μεσημβρινός.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="35">
+                        <p>35. Ὁ ΚΛ p. <del>16,1</del> ὁ ζῳδιακός.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="36">
+                        <p>36. Ἴση ἄρα ἐστίν p. <del>16,5</del> διὰ τὸ θ΄ τοῦ βʹ τῶν Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="37">
+                        <p>37. Ἀπὸ τοῦ θ΄ τοῦ ἐν τῷ βʹ τῶν Σφαιρικῶν.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="38">
+                        <p>38. Ἐπὶ τὸ Π παρέσται p. <del>16,12</del> διὰ τὸ βʹτοῦ Αὐτολύκου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="39">
+                        <p>39. Ἀπὸ τοῦ βʹ τοῦ περὶ κινουμένης σφαίρας.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="40">
+                        <p>40. Ὁ ΞΘΟΠ ἄρα p. <del>16,16</del> διὰ τὸ εʹ τοῦ βʹ τῶν Σφαιρικῶν.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="41">
+                        <p>41. Ὁ  γὰρ μεσημβρινὸς ἀεὶ ὀρθός ἐστι πρὸς τὸν ὁρίζοντα. ἐπεὶ γὰρ ἐν
+                            σφαίρᾳ δύο κύκλοι, ὁ ὁρίζων καὶ ὁ ἀρκτικός, ἐφάπτονται ἀλλήλων, διὰ δὲ
+                            τῶν πόλων τοῦ ἀρκτικοῦ ἐστιν ὁ μεσημβρινός, ἤξει ἄρα καὶ διὰ τῶν τοῦ
+                            ὁρίζοντος πόλων διὰ τὸ εʹ τοῦ βʹ τῶν Σφαιρικῶν.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="42">
+                        <p>42. Ἔσται ὀρθός p. <del>16,17</del> διὰ τοῦ ιεʹ τοῦ αʹ τῶν Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="43">
+                        <p>43. Ἀπὸ τοῦ αʹ τῶν Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="44">
+                        <p>44. ΘΒ Π p <del>16,17</del> ὁ ζῳδιακός.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="45">
+                        <p>45. τὸν ΞΘΟΠ p. <del>16,18</del> τὸν μεσημβρινόν.</p>
+                        <lb n="25"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="46">
+                        <p>46. ὁ ΚΛ κύκλος p. <del>18,13</del> ὁ ζῳδιακσς.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="47">
+                        <p>47. ΑΟ κύκλον p. <del>18,15</del> ἤτοι τὸν μεσημβρινόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="48">
+                        <p>48. P. <del>18,15</del> ὥστε ἔχεις καὶ τὴν δευτέραν πρότασιν
+                            ἀποδεδειγμένην· διὸ γὰρ ὁ ζῳδιακὸς ἀπεδείχθη ὀρθὸς πρὸς τὸν μεσημβρινὸν
+                            καὶ ἀπὸ τῆς θέσεως.</p>
+                        <note type="footnote">32. V 33. Vat1. 35. V3. 36. V2. 37 Vat1. 38. V2 39.
+                            Vat2. 40. V2Vat2. 41. V2I Vat2 BCDM3 p1 qsx. 42. Vet2. 43. Vat1. 44.
+                            Vat2. 45. Vat2. 46. V2I v' Vat2. 47. V2v1 Vat2. 48. Vat2 p2.</note>
+                        <note type="footnote">13. τό] τοῦ Vat. 15. γάρ] om. q. 18 ἔτι 26. ἤτοι] om
+                            v1 Vat.</note>
+
+                        <pb n="139"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="49">
+                        <p>49. P. <del>18, 16</del> νῦν τὰ μετὰ τὴν δευτέραν ἀποδείκνυσι πρότασιν
+                            καὶ πρῶτον τοῦτο, ὅτι οὐδέποτε ἔσται ὀρθὸς πρὸς τὸν ὁρίζοντα ὁ ζῳδιακός,
+                            ὅταν ὁ πόλος μέσον ἐστὶ τοῦ θερινοῦ τροπικοῦ καὶ τῶν μεγίστων ἀεὶ
+                            φανερῶν καὶ καθεξῆς τὰ ἄλλα.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="50">
+                        <p>50. Ad fig. 1 p. <del>21</del>βόρειος πόλος τοῦ ὁρίζοντος ἐπὶ τοῦ θερινοῦ
+                            ἐστι τοῦ τροπικοῦ κατὰ τὸ Μ σημεῖον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="51">
+                        <p>51. Τεμεῖ αὐτὸν διὰ τῶν πόλων p. <del>18,26</del> διὰ τοῦ ιγʹ τοῦ αʹ τῶν
+                            Σαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="52">
+                        <p>52. Ὅπερ ἀδύνατον p. <del>20,2</del> ἐφάπτεται γὰρ τοῦ τρο <lb n="10"/>
+                            κικοῦ ὁ ζῳδιακός, οὐ μὴν τέμνει αὐτόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="53">
+                        <p>53. Ἀεὶ γὰρ ἐφάπτεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="54">
+                        <p>54. Ad fig.2 p. <del>21</del> ἐν τῷ πόλῳ τοῦ ὁρίζοντος μεταξὺ τὧν
+                            τροπικῶν. ἐστι κατὰ τὸ Θ σημεῖον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="55">
+                        <p>55. Ἐφάψονται δή p. <del>22,7</del> διὰ τὸ ζ τοῦ βʹ τῶν <lb n="15"/>
+                            Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="56">
+                        <p>56. &#8736;ίχα τε αὐτὸν τεμεῖ p. <del>22,9</del> διὰ τοῦ ιεʹ τοῦ αʹ τὧν
+                            Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="57">
+                        <p>57. Ὁμοία ἐστὶν ἡ ΚΣ p. <del>22,13</del> διὰ τοῦ ιγʹ τοῦ β΄ τὧν
+                            Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="58">
+                        <p>58. Πάλιν, ἐπεὶ p. <del>22,9</del> ἐπεὶ γὰρ ὁμοία ἐδείχθη ἡ ΚΜ τῇ ΛΝ, ἐξ
+                            ὧν ἡ Κ Σ τῇ Λ ὁμοία, λοιπὴ ἄρα ἡ Σ Μ  λοιπῇ τῇ ΤΝ ὁμοία ἐστίν. διὰ τὰ
+                            αὐτὰ καὶ ἡ ΜΠ τῇ ΝΡ ἐστιν ὁμοία, ἐὰν τὸν ζῳδιακὸν ὁμοίως γράψωμεν.</p>
+                        <lb n="25"/>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" n="3">
+                    <head>Ad prop. ΙΙΙ.</head>
+                    <div type="textpart" subtype="section" n="59">
+                        <p>59. Ὁ Κ Θ Γ ἄρα p. <del>24,13</del> διὰ τὸ αʹ τοῦ Αὐτολύκου.</p>
+                        <note type="footnote">49. Vat2 p2. 50. Va. 51. Vat2. 52 Vat2. 53. Vat1. 54.
+                            Va. 55. V2 Vat2. 56. Vat2. 57. V2 Vat1. 58. V2I Vat1 BCDλ M5 p2 sx. 59.
+                            V2.</note>
+                        <note type="footnote">15. τό] τοῦ Vat. ζ΄] ϛʹ Vat. 21. ὁμοία] om. SX 22.
+                            λοιπῇ] VI, om. cett. 23. ἐστίν] VI, om. cett.; item lim. 25 ἐστιν. ΝΡ]
+                            ΜΡ λ.</note>
+                    </div>
+                </div>
+
+                <pb n="140"/>
+                <div type="textpart" subtype="chapter" n="4">
+                    <head>Ad prop. lV.</head>
+                    <div type="textpart" subtype="section" n="60">
+                        <p>60. Οἷον ὡς ἐπὶ τοῦ ζῳδιακοῦ δύνατον καὶ ἐπὶ ἄλλου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="61">
+                        <p>61. Ὁμοία ἄρα p. <del>26,14</del> διὰ τὸ ιγʹ τοῦ β΄ τῶν Σφαιρικῶν.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="62">
+                        <p>62. Λοιπὴ ἄρα p. <del>26, 15</del> ἐπειδὴ πᾶς κύκλος παντὶ κύκλῳ ὅμοιός
+                            ἐστιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="63">
+                        <p>63. Λέγω ὅτι p. <del>26, 23</del> ἢ καὶ οὕτως· λέγω, ὅτι τὸ πρότερον
+                            δύνεται τοῦ Ζ. ἐπεὶ γὰρ ἡ ΚΘ μείζων ἐστὶν ἢ ὁμοία τῆς ΜΛ, ὧν ἡ ΚΖ ὁμοία
+                            ἐστὶ τῇ ΜΝ, λοιπὴ <lb n="10"/> ἄρα ἡ ΘΖ μείζων ἐστὶν ἢ ὁμοία τῆς ΝΛ.
+                            πρότερον ἄρα δύνεται τὸ Ν τοῦ Ζ· ἀλλὰ καὶ τὸ Η τοῦ Ν πολλῷ ἄρα τὸ Η
+                            πρότερον δύσεται τοῦ Ζ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="64">
+                        <p>64. Ὁμοία ἄρα p. <del>26, 27</del> διὰ τὸ ιγʹ τοῦ β΄ ιῶν Σφαιρικῶν.</p>
+                    </div>
+                </div>
+                <lb n="15"/>
+                <div type="textpart" subtype="chapter" n="5">
+                    <head>Ad prop. VI.</head>
+                    <div type="textpart" subtype="section" n="65">
+                        <p>65. Κατὰ συζυγίαν p. <del>30,27</del> τουτέστιν, ὅτε ἐναντίον τὸ ἓν
+                            δύνει, τὸ ἄλλο ἀνατέλλει, καὶ ὅτε δύνει τόδε, ἀνατέλλει τὸ ἕτερον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="66">
+                        <p>66. Κατὰ συζυγίαν ἀνατέλλειν καὶ δύνειν ἄστρα <lb n="20"/> λέγεται, ὅσα
+                            κατὰ διάμετρον ὄντα ἐν ἴσῳ χρόνω ἴσας περιφερείας διέρχεται καὶ τὸ μὲν
+                            ἀπὸ ἀνατολῆς ἐπὶ δύσιν πορεύεται, τὸ δὲ ἀπὸ δύσεως ἐπʼ ἀνατολήν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="67">
+                        <p>67. Ἴση ἄρα ἡ ΕΒ p. <del>32,9</del> ἐὰν γὰρ ἐπιζεύξωμεν τὰς ΑΒ, ΕΖ, δύο
+                            δυσὶν ἴσαι ἔσονται, ὡς ἐκ τοῦ κέντρου <lb n="25"/> καὶ αἱ γωνίαι ἴσαι σἱ
+                            κατὰ κορυφήν· βάσις ἄρα ἡ ἀπὸ τοῦ Ε ἐπὶ τὸ Β βάσει τῇ ἀπὸ τοῦ Α ἐπὶ τὸ Ζ
+                            ἐστιν <note type="footnote">60. Vat1 λp2 x. 61. V2 Vat2. 62. Vat2 p2.
+                                63. Ο (m. rec.) A sx. 64. V2. 65. V2I. 66. Vat2 p2t. 67, V2I Vat1
+                                M3p1q.</note>
+                            <note type="footnote">2. ἄλλου] τῶν ἄλλων λ. 3. διὰ τό] ἀπὸ τοῦ Vat. 16.
+                                ἐναντίον — 17. ἀνατέλλει] ἀνατέλλει τὸ ἔν, δύνει τὸ ἄλλο l. 24. ὡς]
+                                VI, καί Vat p, om. cett. 25. αἱ (alt)] om. q. Post κορυφήν add γάρ
+                                supra m. rec. q.</note>
+                            <pb n="141"/> ἴση, ὥστε καὶ περιφέρεια ἡ ΕΒ τῇ ΑΖ περιφερείᾳ ἐστὶν
+                            ἴση.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="68">
+                        <p>68. Ἀλλ ἡ ΕΒ p. <del>32,10</del> ἐπεὶ γὰρ δύο ἐπίπεδα παράλληλα τὰ ΕΖ, ΒΓ
+                            ὑπό τινος ἐπιπέδου τέμνεται τοῦ ΑΘΒΓ αἱ κοιναὶ αὐτῶν τομαὶ παράλληλοί
+                            εἰσιν· παράλληλος <lb n="5"/> ἄρα ἐστὶν ἡ ἀπὸ τοῦ Ε ἐπὶ τὸ Ζ τῇ ἀπὸ τοῦ
+                            Β ἐπὶ τὸ Γ. ἐὰν ἄρα ἐπιζεύξωμεν ὡς τὴν ΕΓ καὶ τὴν ΒΖ, αἱ ἐναλλὰξ γωνίαι
+                                <lb n="10"/> αἱ ὑπὸ ΕΓΒ, ΓΕΖ ἴσαι ἀλλήλαις ἔσονται, ὥστε καὶ
+                            περιφέρεια ἡ ΕΒ τῇ ΓΖ ἐστιν ἴση. ἐν γὰρ τοῖς ἴσοις κύκλοις αἱ γωνίαι τὸν
+                            αὐτὸν <lb n="15"/> λόγον ἔχουσι τῶν περιφερειῶν, ἐφʼ ὧν βεβήκασιν, ἐάν
+                            τε πρὸς τοῖς κύκλοις, ἐάν τε πρὸς ταῖς περιφερείαις ὦσι βεβηκυῖαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="69">
+                        <p>69. Ἴσος ἄρα p. <del>32,12</del> διὰ τὸ ιζ τοῦ β΄ τῶν Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="70">
+                        <p>70. Ἴση ἄρα p. <del>32,14</del> διὰ τὸ ιθ΄ τοῦ β΄ τῶν Σφαιρικῶν.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="71">
+                        <p>71. Ἐν ἴσῳ ἄρα p. <del>32,15</del> διὰ τὸ β΄ τοῦ Αὐτολύκου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="72">
+                        <p>72. Πάλιν, ἐπεί p. <del>32,22</del> ὑπὸ γὰρ μεγίστου τοῦ ὁρίζοντος
+                            ἑκάτερος αὐτῶν μέγιστος ὢν δίχα τέμνεται.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" n="6">
+                    <head>Ad prop. VII.</head>
+                    <lb n="25"/>
+                    <div type="textpart" subtype="section" n="73">
+                        <p>73. Μεθιστάμενος p. <del>34,14</del> κινούμενος.</p>
+                        <note type="footnote">68. V2I Vat1 C D A M3 p1 q sx. Fig. praebent V (arc.
+                            ΒΖ om.) Vat p. 69. V2l. 70. V2. 11. V2. 72. Vat1p2. 73. V3.</note>
+                        <note type="footnote">1. περιφέρεια] om. Mq, comp. cett., item περιφερείᾳ.
+                            2. ἴση ἐπτί (comp.) q. 3. παράλληλα] om. CD q sx, π. ἐστι τὰ ΕΖ, ΒΓ καὶ
+                            τέμνεται A. 5. παράλληλος ἄρα ἐστίν] om. q s x. 11. ὑπό] VlA, om. cett.
+                            12. ἔσονται] VlA, εἰσίν cett. καί] καὶ ἡ codd. rec. b. 13. περιφέρεια
+                            om. s (lac.). 14. ἴση ἐστίν A p qs. ἐν — 18. βεβηκυῖαι] Vl, om. cett.
+                            24. μέγιστος ὤν] μεγίστων p.</note>
+
+                        <pb n="142"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="74">
+                        <p>74. Καὶ ἄλλοτε p. <del>34,18</del> ἀντὶ τοῦ ποτὲ ἑαυτοῦ ὁρθότερος μᾶλλον,
+                            ποτὲ δὲ κεκλιμένος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="75">
+                        <p>75. Ὅτι μέν p. <del>36,2</del> διὰ τὸ ιαʹ τοῦ Αὐτολύκου.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="76">
+                        <p>76. Λῆμμα. ἐν γὰρ σφαίρᾳ μέγιστος κύκλος ὁ ΒΕΛΜ <lb n="5"/> τοῦ ΑΛ
+                            ἁπτέσθω κατὰ τὸ &#8736; καθʼ οὗ δὲ φέρεται παραλλήλου κύκλου τὸ Ε, ἔστω
+                            ὁ ΘΕΜΗ λέγω, ὅτι ἡ Ε&#8736; ἴση ἐστὶ τῇ &#8736;Μ.</p>
+                        <p>εἰλήφθω γὰρ ὁ πόλος τοῦ ΘΕΜ τὸ Ρ καὶ διὰ τὸ Ρ καὶ τῆς ἀρῆς μέγιστος
+                            κύκλος γεγράφθω ὁ Ρ&#8736;Γ <lb n="10"/> Ρ&#8736;Γ ἄρα ἥξει διὰ τῶν τοῦ
+                            ΒΕΛΜ κύκλου πόλων διὰ τὸ εʹ τοῦ βʹ τῶν Σφαιρικῶν. καὶ ἐπεὶ ἐν σφαίρᾳ δύο
+                            κύκλοι οἱ ΒΕ&#8736;Μ, ΘΕΜΗ τέμνουσιν ἀλλήλους, διὰ δὲ τῶν πόλων αὐτῶν
+                            μέγιστος κύκλος γέγραπται ὁ Ρ&#8736; ὁ Ρ&#8736;Γ ἄρα δίχα τεμεῖ τὰ
+                            ἀπειλημμένα τμήματα τῶν <lb n="15"/> κύκλων <del>Theodos. ΙΙ, 9</del>,
+                            ὥστε ἴση ἐστὶν ἠ Ε&#8736; τῇ &#8736;Μ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="77">
+                        <p>77. Καὶ ἐπεὶ ἴση ἐστίν p. <del>36,14</del> διὰ τὸ λῆμμα.</p>
+                        <note type="footnote">1) Fig. codd. VIp (M om. p). 2) Fig. cod. Vat.</note>
+                        <note type="footnote">74. V2I Vat1 M p2 qrt. 75. V2 76 .V2I Vat M3p1. 77.
+                            V3.</note>
+                        <note type="footnote">2. δέ] VI, om. cett. 4. ΒΕ&#8736;Μ] &#8736;ΕΒ Vat p,
+                            ΒΕ&#8736; Μ. <lb n="7."/> ἐστί] in hoc. voc. des. M. 9. Ρ&#8736;Β VatMp,
+                            item. lim. 10, 13, 14. 10. τῶν] ins. Vat. διά — 11. Σφαιρικῶν] om. Vat
+                            Mp 14. τεμεῖ] τέμνει Vat Mp.</note>
+
+                        <pb n="143"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="78">
+                        <p>78. Ἡμικύκλιον δέ p. <del>38,2</del> διὰ τὸ μεγίστους κύκλους· τὸν
+                            ζῳδιακὸν καὶ τὸν ὁρίζοντα δίχα τέμνειν ἀλλήλους.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="79">
+                        <p>79. Καὶ φανερόν p. <del>40,6</del> διὰ τὸ κβʹ τοῦ βʹ τῶν Σφαιρικῶν.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapterer" n="7">
+                    <head>Ad prop. VIII.</head>
+                    <lb n="5"/>
+                    <div type="textpart" subtype="section" n="80">
+                        <p>80. Λῆμμα. Αἱ μὲν ΗΚ, ΚΝ, ΝΓ ἴσαι εἰσὶ διὰ τὴν ὑπόθεσιν. ὅτι δὲ
+                            τεταρτημορίου ἐστὶν ἑκατέρα τῶν ΓΗ, ΗΒ, ἐκεῖθεν δῆλον. ἐπειδὴ ὁ ζῳδιακὸς
+                            καὶ ὁ τροπικὸς ἅπτονται ἀλλήλων, διὰ δὲ τοῦ ἑνὸς πόλων καὶ τῆς ἀρῆς
+                            ἐγιστος κύκλος γέγραπται ὁ μεσημβρινός, ἤξει ἄρα καὶ <lb n="10"/> διὰ
+                            τῶν τοῦ ζῳδιακοῦ πόλων. ἐπεὶ οὖν ἐν σφαίρᾳ δύο ύκλοι, ὁ ζῳδιακὸς καὶ ὁ
+                            ἰσημερινός, τέμνουσιν ἀλλήυς, διὰ δὲ τῶν πόλων αὐτῶν μέγιστος κύκλος
+                            γέγραται, ὁ μεσημβρινός, δίχα τέμνει τὰ ἀπειλημμένα τμήματα.</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="81">
+                        <p>81. Αἱ ΖΛ, ΛΞ, ΞΓ p. <del>42,5</del> διὰ τὸ ζ τοῦ γʹ τῶν Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="82">
+                        <p>82. Ἴσος ἄρα p. <del>42,19</del> διὰ τὸ ιζʹ τοῦ β΄ ιῶν Σαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="83">
+                        <p>83. ἄρα p. <del>42,23</del> διὰ τὸ ιηʹ τοῦ βʹ τῶν Σφαιρικῶν.</p>
+                        <lb n="20"/>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="8">
+                    <head>Ad prop. IX.</head>
+                    <div type="textpart" subtype="section" n="84">
+                        <p>84. Καλῶς οἱ προδιωρισμένοι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="85">
+                        <p>85. Ὅταν p. <del>44,13</del> τουτέστιν μὴ ὀρθὴν ἐχέτω κίνησιν ἡ
+                            σφαῖρα.</p>
+                        <lb n="25"/>
+                        <note type="footnote">78. V2. 79. V2. 80. VI et inde ab lin. 7 ὅτι Vat1 C D
+                            M2 λp1 qx, inde a lin. 10 ἥξει s. 81. V 82. V2. 83. V2 84. V2, 85.
+                            V2.</note>
+                        <note type="footnote">7."δέ] γάρ codd. rec. b. ἐκατέρα ἐστίν Vat λ p. 8. καὶ
+                            ὁ τροπικός] om. λ X. 9. ἅπτονται ἀλλήλων] om. Ο (lac. 10 litt.) λ x. τοῦ
+                            ἑνὸς πόλων] τῶν πάντων πόλων Μ qx. πόλων] πόλου Vat λp. 10. Post
+                            μεσημβρινός spat. vac. 9 lin. λ. 14. τά] CD qx.</note>
+
+                        <pb n="144"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="86">
+                        <p>86. Λᾶθός μοι ἐγένετο εἰς τὸν παρόντα τόπον θάτερον, ὅτι τὰ δύο σχήματα,
+                            ἅπερ εἶχε τὸ ἀντιβολαῖον, εἰσὶν ἓν σχῆμα ἤτοι τοῦ θ 8 καὶ ι??.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="9">
+                    <head>Ad prop. ΧΙ.</head>
+                    <lb n="5"/>
+                    <div type="textpart" subtype="section" n="87">
+                        <p>87. Καὶ ἐπεί p. <del>58,13</del> διὰ τὸ Ϛ΄.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="88">
+                        <p>88. Ἐν ὧ ἄρα p. 60,24 rec. <del>b</del>διὰ τὸ καθʼ ἕν σημεῖον τὸ Ε
+                            συναπτόμενον τῶν ΕΘ, ΕΓ περιφερειῶν φερομένης τῆς ΕΘ περιφερείας πάντως
+                            συμφέρεσθαι καὶ τὴν ΓΕ περιφέρειαν συνημμένην τῇ ΕΘ καὶ τὰ Θ, Γ σημεῖα,
+                                <lb n="10"/> ἐπὶ τοῦ ὁρίζοντος εἶναι.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="10">
+                    <head>Ad prop. XII.</head>
+                    <div type="textpart" subtype="section" n="89">
+                        <p>89. Σαφεστέρα ἡ β ἔκδοσις, ἥτις κεῖται μετὰ γ φύλλα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="90">
+                        <p>90. Ἔσφαλται.1)</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="91">
+                        <p>91. Ἔσφαλται ἡ καταγραφή. ὅπου γὰρ τὸ Α κεῖται, <lb n="15"/> ὀφείλει
+                            κεῖσθαι τὸ Β, καὶ ὅπου τὸ Β, τὸ Α· ἔνθα τε κεῖται τὸ Γ ὀφείλει κεῖσθαι
+                            τὸ &#8736;, καὶ ἔνθα τὸ &#8736;, τὸ Γ. καὶ οὕτως ὁ τῶν ζῳδίων κύκλος
+                            θέσιν ἔχειν τὴν Β&#8736;. ὅτε γὰρ ἀνατεταλμένον ἐστὶ τὸ μετὰ τὸν
+                            Καρκίνον ἡμικύκλιον, ὀφείλει κεῖσθαι ὡς τὰ δυτικῶν ἐν τοῖς ἀνατολικοῖς,
+                                <lb n="20"/> καὶ οὕτως ἀσφαλτὸν τὴν καταγραφὴν γενέσθαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="92">
+                        <p>92. Τῶν ΒΞ, &#8736;Ξ p. <del>62,15</del> ὅτι ἡ ΒΞ ἴση τῇ Ξ&#8736;,
+                            δείκνυται ἐν τῷ λήμματι τῷ ἐν τῷ ηʹ θεωρήματι [v schol. mr.
+                                <del>80</del>.</p>
+                        <note type="footnote">1) lnde ab hoc ἔσφαλται codd. rec. a scholia non
+                            habent: in scholiis, quae sequumntur, numeri paginarum et linearum ad
+                            recensionem b pertinent.</note>
+                        <note type="footnote">86. r. 87, V2. 88. V2 Vat p2; v. fig. rec. b. 89. Vat
+                            Dsx. 90. V2, 91. D (bipartitum: 1. ἔσφαλται — 9. τά 2. δυτικῶν — 20.
+                            γενέσθαι) Ε (des. in lin. 18 ἡμικύκλιον) M2 (post lim. 19 τά rupture
+                            bombyc. et figura interruptum) q. 92. Dsx.</note>
+                        <note type="footnote">12. ἔκδοσις] -οσις om. in fine lin. Vat. κεῖται —
+                            φύλλα] καπτα τὸ μγʹ φύλλον x. 14. καταγραφή — κεῖται] τὸ χωρίον, ὅπου ἡ
+                            κατὰ τὸ Α κεῖται γραφή q; — γραφή, ὅπου γάρ supra Μ. 17. οὕτω DΕM. ὁ]
+                            om., lacuna relicts EM., τόν D. 18. τὸ om. lac. rel. DE. 20, Post
+                            γενέσθαι add. ἤ M; v. schol. nr. 93. 22. ηʹ θεωρήματι] om. s.</note>
+
+                        <pb n="145"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="93">
+                        <p>93. Γραφέντος διὰ τοῦ Κ μεγίστου κύκλου ἐφαπτομένου, οὗ καὶ ὁ ὁρίζων
+                            ἐφάπτεται κατὰ τὸ Ε, ὥστε ἀσύμπτωτον εἶναι τὸ ἀπὸ τοῦ Ϛ ἡμικύκλιον ὡς
+                            ἐπὶ τὰ Κ μέρη τῷ ἀπὸ τοῦ Ε, καθʼ ἐφάπτεται ὁ ὁρίζων τοῦ τροπικοῦ
+                            ἡμικυκλίου, ὡς ἐπὶ τὰ Ε, Π μέρη.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="94">
+                        <p>94. P. <del>68,11</del> ὥστε ἔχεις ἀποδεδειγμένον, ὅτι ἐν πλείονι χρόνῳ ἡ
+                            πρὸς τῇ συναφῇ τοῦ τροπικοῦ ἤτοι ἡ Β Κ, ἐν ἐλάσσονι δὲ ἐξῆς τούτου ἤτοι
+                            ἡ Κ Λ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="95">
+                        <p>95. ΡΛ p. <del>68,4</del> ὅτι δὲ ἡ ΡΛ καὶ τῆς Ξα μείζων ἐστὶν ἢ ὁμοία,
+                            δῆλον. ἐπεὶ γὰρ ἐφεξῆς μείζων ἐστὶν ἡ <lb n="10"/> Ηα τῆς αἵ, ἡ δὲ αβ
+                            τῆς βΞ, μείζων ἔσται καὶ ἡ Ηα τῆς βΞ· κοινῆς προσκειμένης τῆς αβ μείζων
+                            ἐστὶν ἡ Ηβ τῆς αΞ, ὥστε καὶ μείζων ἢ ὁμοία ἡ Ηβ τῆς σΞ. μοία δὲ ἡ Ηβ τῇ
+                            ΡΛ· μεταξὺ γὰρ τῶν ἀσυμπτώτων ἡμικυκλίων· μείζων ἄρα ἢ ὁμοία ἡ ΡΛ τῆς
+                            αΞ. ἐλάττων <lb n="15"/> δὲ ἢ ὁμοία ἐδείχθη ἡ ΡΛ τῆς ΗΞ, ὥστε ἡ τῇ ΡΛ
+                            ὁμοία τιθεμένη ἀπὸ τοῦ μεταξὺ τῶν α σημείων πεσεῖται ὡς ἡ Ξε.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="96">
+                        <p>96. ΚΛ περιφέρεια p. <del>70,10</del> αὕτη γάρ ἔστι ἡ Ογ εταβᾶσα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="97">
+                        <p>97. P. <del>70,13</del> ἔχεις καὶ ταύτην τὴν πρότασιν ἀποδεειγμένην τὴν
+                            ὅτι ἐν ἐλαχίστοις χρόνοις πρὸς τῷ ἰσημερινῷ· πρὸς τῷ ἰσημερινῷ γάρ ἐστι
+                            ἡ ΛΞ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="98">
+                        <p>98. Καὶ ἐπεί p. <del>72,20</del> δείξας τὰ πρὸς τῇ συναφῇ τοῦ ἑνὸς τῶν
+                            τροπικῶν, ὅτι ἐν πλείονι, δείκνυσι καὶ τὰ πρὸς <lb n="25"/> τῇ ἑτέρᾳ
+                            συναφῇ τοῦ ἑτέρου τροπικοῦ, ὅτι ἐν πλείονι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="99">
+                        <p>99. Λέγω, ὅτι p. <del>72,25</del> εἰπὼν ἐν τῇ τελευταίᾳ προτάσει, ὅτι αἰ
+                            ἴσον ἀπέχουσαι τοῦ ἰσημερινοῦ κύκλου ἐν ἴσοις χρόνοις καὶ δύνουσι καὶ
+                            ἀνατέλλουσιν, καὶ δείξας, ὅτι ἐν σοῖς χρόνοις δύνουσιν, νῦν δείκνυσι ὡς
+                            ἐπὶ <lb n="30"/>
+                            <note type="footnote">93. CDx et M2q coniunctum cum nr. 91. 94. Vat2 p2.
+                                95. Vat1 CD M2 p1 sx. 96. Vat1p2. 97. Vat2 p2. 98. Vat2 p2. 99. Vat2
+                                p2.</note>
+                            <note type="footnote">17. τοῦ. τῆς s.</note>
+                            <note type="footnote">Eucides, edd Heiberg et Menge. VIII. 10</note>
+                            <pb n="146"/> ἄλλης καταγραφῆς, ὡς ὅτι καὶ ἐν ἴσοις χρόνοις
+                            ἀνατέλλουσιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="100">
+                        <p>100. Ἀλλὰ ΠΩ p. <del>76,17</del> ὡς ἴση τῶν κύκλων ἴσων ντον.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="101">
+                        <p>101. P. <del>76,25</del> ἔχεις καὶ τὴν ἐσχάτην πρότασιν ἀποδεδειγμένην,
+                            ὅτι Ἐν ἴσῳ δὲ αἱ ἴσον ἀπέχουσαι τοῦ ἰσημερινοῦ κύκλου ἴσον γὰρ ἀπέχουσι
+                            τοῦ ἰσημερινοῦ ἡ ΛΞ καὶ ἡ ΞΜ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="102">
+                        <p>102. Ἐκ περισσοῦ. τῆς αὐτῆς καταγραφῆς μενούσης <lb n="10"/> λέγω, ὅτι ἡ
+                            ΑΒ τῇ ΒΓ ἐν ἴσῳ χρόνῳ δύνει. ἐπεὶ γὰρ ἡ Γ&#8736; τῆς ΒΕ μείζων ἐστὶν ἢ
+                            ὁμοία, κείσθω τῇ ΒΕ ὁμοία ἡ Γ Ζ, καὶ ὁ ζῳδίων κύκλος θέσιν ἐχέτω τὴν
+                            ΖΕΗ. καὶ ἐπεὶ ἴση ἐστὶν ἡ ΑΒ τῇ ΒΓ, ἴσος ἐστὶν ὁ ΑΘ κύκλος τῷ Γ&#8736;
+                            κύκλῳ· ἴση ἄρα καὶ ἡ ΑΕ τῇ Ε&#8736;. ἔστι δὲ καὶ <lb n="15"/> ἡ ΖΕ τῇ ΕΗ
+                            ἴση, ἐπεὶ καὶ ἡ ΓΒ τῇ ΒΑ ἴση· ἐστιν ἄρα καὶ ἡ ἀπὸ τοῦ Η ἐπὶ τὸ Α τῇ ἀπὸ
+                            τοῦ &#8736; ἐπὶ τὸ Ζ ἴση ἄρα καὶ ἡ ΑΗ περιφέρεια τῇ &#8736; Ζ
+                            περιφερείᾳ· ἀλλʼ ἡ ΑΗ τῇ ΕΒ ἔστιν ὁμοία· καὶ ἡ ΕΒ ἄρα τῇ &#8736;Ζ ἐστιν
+                            ὁμοία. ἐν ᾧ ἄρα χρόνῳ τὸ Β ἀρξάμενον ἀπὸ τοῦ Β τὴν <lb n="20"/> ΒΕ
+                            διελθὸν ἐπὶ τὸ Ε παραγίγνεται, ἐν τούτῳ καὶ τὸ Ζ ἀρξάμενον ἀπὸ τοῦ Ζ τῇᾶ
+                            Ζ&#8736; διελθὸν ἐπὶ τὸ &#8736; παρέσται· <note type="footnote">100. C
+                                (mg. c. signo om.) x; in textu Mq. 101. Vat2 p2 102. Hoc scholium
+                                pos prop. XII in textu hab. codd. rec b.</note>
+                            <note type="footnote">16. Post Z add. ἴση m. 2 Vat.</note>
+                            <pb n="147"/> ἀλλʼ ὅταν μὲν τὸ Β ἐπὶ τὸ Ε παραγένηται, δύνει ἡ Β Α
+                            περιφέρεια· ὅταν δὲ τὸ Ζ ἐπὶ τὸ &#8736; παραγένηται, δύνει ἡ ΖΕ,
+                            τουτέστιν ἡ ΓΒ ἡ ΑΒ ἄρα τῇ ΒΓ ἐν ἴσω χρόνῳ δύνει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="103">
+                        <p>103. Ad schol. nr. 102 lin. <del>12</del> ἡ γὰρ ΒΓ ἡ αὐτή ἐστι <lb n="5"
+                            /> τῇ ΕΖ· ὁμοίως καὶ ἡ ΑΒ τῇ ΗΕ ὁ γὰρ ζῳδιακὸς κύκλος ὁ ΑΒΓ μεταξὺ τῶν
+                            Η, Ζ καί ἐστιν ὁ αὐτός.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="11">
+                    <head>Ad prop XIV.</head>
+                    <div type="textpart" subtype="section" n="104">
+                        <p>104. Σαφεστέρα ἡ βʹ ἔκδοσίς ἐστιν, ἥτις κεῖται μετὰ γ ἥμισυ φύλλα.</p>
+                        <lb n="10"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="105">
+                        <p>105. Σαφεστέρα ἔκδοσις εὑρίσκεται μετὰ τὰ δ ἥμισυ φύλλα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="106">
+                        <p>106.1) Ἐξαλλαγή ἐστι φανεροῦ ἡμισφαιρίου, ὅταν τοῦ προηγουμένου σημείου
+                            τῆς περιφερείας ἐπὶ τῆς ἀνατολῆς ὄντος τὸ ἑπόμενον ἀνατεῖλαν καὶ διελθὸν
+                            ὅλον τὸ φανερὸν <lb n="15"/>
+                            <note type="footnote">1) Hoc scholium rursus ad dem. alt. prop. X
+                                praebent Vat1 p2; p. 148 lim. 3 τήν (alt nom om.</note>
+                            <note type="footnote">103. Vat2 p2. 104. Vat1 DM2 x. 105. C. 106. Vat2
+                                CDλ Ap2 stx; v. p. 10 lin. 3 sqq..</note>
+                            <note type="footnote">7."τῶν Η, Ζ καί] τεθεὶς εἰς τὸν μείζονα p.</note>
+                            <pb n="148"/> ἡμισφαίριον ἐπὶ τῆς δύσεως γένηται, τουτέστιν ὥστε ἀπὸ τοῦ
+                            ἀφανοῦς ἡμισφαιρίου εἰς τὸ ἀφανὲς ἐλθεῖν τὴν περιφέρειαν τὴν τῶν δύο
+                            σημείων, τοῦ ἡγουμένου καὶ τοῦ ἑπομένου.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="107">
+                        <p>107, Τοῦ τῶν ζῳδίων κύκλου τῶν ἴσων τε περιφερειῶν καὶ ἴσον ἀπεχουσῶν ἀπὸ
+                            τῆς τροπικῆς συναφῆς ὁποτεροσοῦν, ἐν ᾧ ἡ ἑτέρα ἀνατέλλει, ἡ ἑτέρα δύνει
+                            καὶ τὸ ἀνάπαλιν.</p>
+                        <p>ἔστω ἐν κόσμῳ ὁρίζων ὁ ΑΒΓ θερινὸς δὲ τροπικὸς <lb n="10"/> ὁ Α Β,
+                            χειμερινὸς δὲ τροπικὸς ὁ Γ&#8736;, ὁ δὲ τῶν ζῳδίων κύκλος ἔστω ὁ ΑΠΡΓΗΞ,
+                            καὶ ἔστω ἴση ἡ ΠΡ τῇ ΞΗ λέγω· ἐν ᾧ ἡ ΠΡ δύνει, ἡ ΞΗ ἀνατέλλει.</p>
+                        <p>εἰλήφθω γὰρ τῇ περιφερείᾳ ΠΡ ἴση τε καὶ ἀπεναντίον περιφέρεια ἡ ΣΤ καὶ
+                            μεταξὺ τῶν ΞΗ, ΣΤ ὁ ἰσημερινὸς <note type="footnote">107. Vat M C D λ
+                                Ap1 st (v. p. 84 lin. 9 sqq.)</note>
+                            <note type="footnote">3. τήν (alt.) om. Vat. 5. τε] om. A M p. 6. ἀπὸ .
+                                . .]ἀφʼ ποτερασοῦν τρ. D. 7. Post ᾧ add. χρόνῳ D Μ. ἀνατέλλει, ἡ
+                                ἔτέρα] om. λ. 9. Α Β Γ] ΑΒΓ D, Α Β λ. 13. περιφερίρ] om. λ A M, item
+                                lin. 14 περιφέρεια. 14. καί] om. t.</note>
+                            <pb n="149"/> ἔστω ὁ ΥΧΦ. καὶ ἐπεὶ ἐν ᾧ χρόνῳ ἡ ΠΡ δύνει, ἡ ΣΤ
+                            ἀνατέλλει· ἀλλʼ ἐν ἡ ΣΤ ἀνατέλλει, ἐν τούτῳ καὶ ἡ ΗΞ· ἴσον γὰρ ἀπέχουσι
+                            τοῦ ἰσημερινοῦ· καὶ ἐν ἄρα ἡ ΠΡ δύνει, ἡ Η Ξ ἀνατέλλει· ἐκεῖνό γε μὴν
+                            φανερόν, ὅτι ἡ Α Ξ ἴση ἔστὶ τῇ ΑΠΡ.</p>
+                        <lb n="5"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="108">
+                        <p>108. Ad schol. nr. 107 p. <del>149,3</del> πῶς δὲ ἴσον ἀπέχουσι τοῦ
+                            ἰσημερινοῦ ἡ ΣΤ καὶ ἡ ΗΞ, οὕτω δείκνυται· ἐπεὶ τὸ μὲν Α τῷ Γ κατὰ
+                            διάμετρον, τὸ δὲ Π τῷ Τ ἴση ἄρα ἡ Α Π περιφέρεια τῇ ΖΤ, τῶν διαμέτρων
+                            ἐπι ζευχθεισῶν δηλονότι καὶ οὕτω τῶν γωνιῶν τῶν ἴσωον ἐπὶ ἴσων <lb
+                                n="10"/> περιφερειῶν βαινουσῶν. ἀλλὰ ἡ Α Π τῇ ΑΞ ἴση ἐστὶ διὰ τὸ
+                            σχόλιον τοῦ ξ (nr. 76). καὶ ἡ ΑΞ ἄρα ἴση τῇ ΤΓ ἐπεὶ οὖν ὅλη ἡ ΑΧ ὅλῃ τῇ
+                            ΧΓ ἔστιν ἴση, ἐξ ὧν ΑΞ τῇ ΤΓ ἐστιν ἴση, λοιπὴ ἄρα ἡ ΞΧ λοιπῇ τῇ ΧΤ στιν
+                            ἴση. διὰ τὸ τὴν μὲν ΠΡ ἴσην εἶναι τῇ Ξ ἀπὸ <lb n="15"/> τοῦ σχολίου τοῦ
+                            ἐν τῷ ζ΄, τὴν δὲ ΠΡ κεῖσθαι ἴσην τῇ ΣΤ, ἡ ΞΗ ἴση ἐστὶν τῇ Σ λοιπὴ ἄρα ἡ
+                            ΗΧ τῇ ΧΣ ἴση ἐστίν· ἴσον ἄρα ἀπέχουσι τοῦ ἰσημερινοῦ ἡ ΣΤ καὶ ΗΞ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="109">
+                        <p>109. Πάλιν ἐπεί p. <del>88,13</del> δίελθε ὁ ἀναγιγνώσκων τὴν ἀπόδειξιν
+                            τοῦ κβ΄τοῦ β΄ ιῶν Σφαιρικῶν καὶ ἐκεῖσεμαθήσει, <lb n="20"/> ὡς πάντων
+                            τῶν μεγίστων κύκλων τῶν τοῦ αὐτοῦ κύκλου ἐφαπτομένων κύκλων οἱ πόλοι ἐφʼ
+                            ἑνὸς κύκλου εἰσίν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="110">
+                        <p>110. P. <del>90,14</del> ἔχεις, ὅτι αἱ ἴσαι περιφέρειαι οὐκ ἐν ἴσοις
+                            χρόνοις ἐξαλλάσσουσιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="111">
+                        <p>111. P. <del>90,15</del> καὶ ἐπεὶ τὸ Η τῷ Μ τὸ αὐτό ἐστιν ὡς <lb n="25"/>
+                            ἐν μίᾳ περιφερείᾳ, ἀπώτερόν ἐστι τὸ &#8736; τοῦ Ξ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="112">
+                        <p>112. Ἴκη ἄρα ἐστίν p. <del>90,17</del> διὰ τὸ ιγʹ τοῦ βʹ τῶν
+                            Σφαιρικῶν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="113">
+                        <p>113. &#8736;ύνει p. <del>94,3</del> διὰ τὸ λῆμμα τὸ μετὰ πέντε φύλλα
+                                <note type="footnote">108. Vat1 p1. 109. Dλ Μ3 x. 110. Vat2 p2. 111
+                                Vat1 D M2 p2. 112. M1. 113. Dsx (διὰ τὸ λῆμμα etiam M1).</note>
+                            <note type="footnote">4. Post ἄρα add χρόνῳ Dλ. 5. ἡ . . .] ὅλη ἡ — ὄλῃ
+                                τῇ — ἴση ἐστίν t. 9. περιφέρεια] ἐστι p. 14. τῇ (alt.)] τῇ τῇ p. 18
+                                ΗΞ] Η om. Vat. 29. πέντε] om. sx.</note>
+                            <pb n="150"/> ἔξωοθεν γεγραμμένον, ἐν ᾧ καὶ τὸ τοιοῦτόν ἐστι σημεῖον Ϲ;
+                            v. schol. nr. 107.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="12">
+                    <head>Ad prop. XV.</head>
+                    <div type="textpart" subtype="section" n="114">
+                        <p>114. Ἐξαλλαγή ἐστιν ἀφανοῦς ἡμισφαιρίου, ὅταν τοῦ <lb n="5"/>
+                            προηγουμένου σημείου τῆς περιφερείας δύναντος καὶ διελθόντος ὅλον τὸ
+                            ἀφανὲς ἡμισφαίριον τὸ ἑπόμενον ἐπὶ τῆς ἀνατολῆς γένηται, τουτέστιν ὥστε
+                            ἀπὸ τοῦ ἐμφανοῦς ἡμισφαιρίου εἰς τὸ ἐμφανὲς πάλιν ἐλθεῖν τὴν περιφέρειαν
+                            τὴν ὑπὸ τοῦ προηγουμένου καὶ τοῦ ἑπομένου <lb n="10"/> σημείου
+                            γενομένην.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="13">
+                    <head>Ad prop. XVI.</head>
+                    <div type="textpart" subtype="section" n="115">
+                        <p>115. Ἀλλʼ ἐν ᾧ μὲν χρόνῳ p. <del>106,18</del> διὰ τὸ ιεʹ· ἴσον γὰρ
+                            ἀπέχουσιν ὁποτεροσοῦν τῶν συναφῶν ἀπὸ τοῦ σχολίου τοῦ ζ8 (nr.80).</p>
+                        <lb n="15"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="116">
+                        <p>116. Αλλʼ ἐν ᾧ μὲν χρόνῳ p. <del>108,6</del> διὰ τὸ ιέ, οὗ ἡ ἀρχὴ
+                            ‘ὡσαύτως δὲ καὶ ἐπὶ τοῦ μετὰ τὸν Αἰγόκερων ἡμικυκλίουʼ.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="14">
+                    <head>Ad prop. XVII.</head>
+                    <div type="textpart" subtype="section" n="117">
+                        <p>117. &#8736;ιὰ τὰ αὐτά p. <del>110,7</del> ἐπεὶ αἱ ΜΛ, ΘΚ ἴσον <lb n="20"
+                            /> ἀπέχουσι τοῦ θερινοῦ τροπικοῦ, ἔχομεν δὲ ἀπὸ τοῦ ιεʹ θεωρήματος, ὅτι
+                            ἴσον ἀπέχουσαι τοῦ θερινοῦ τροπικοῦ ἐν ἴσοις χρόνοις ἐξαλλάσσουσι τὸ
+                            φανερὸν ἡμισφαίριον,ετι δὲ καὶ ἀπὸ τοῦ ιζ΄, ὅτι αἱ ἴσον ἀπέχουσαι
+                            ὁποτερασοῦντῶν συναφῶν ἐν ἴσοις χρόνοις ἐξαλλάσσουσι τὸ ἀφανὲς
+                            ἡμισφαίριον, <lb n="25"/> πρὸς δὲ καὶ ἀπὸ τοῦ ἴσου ὡς αἱ ἴσαι καὶ
+                            ἀπεναντίον περιφέρειαι ἐν ᾧ χρόνῳ ἡ ἑτέρα ἐξαλλάσσει τὸ φανερὸν <note
+                                type="footnote">114. Vat1 λ D A M3 p1q stx; in λ textui post
+                                schol.nr.125 interpositum (mg. σχόλιον); v. p. 10,6 sqq. 115. Vat1λ
+                                p2 s. 116. λς.</note>
+                            <note type="footnote">117. CM3 S; in s bipartitum: 1. ἐπεί — lin. 21
+                                θεωρήματος. 2. (post spatium vacuum) lin. 21 ὅτι — p. 151 lim. 3
+                                ἀνάπαλιν.</note>
+                            <note type="footnote">5. περιφερείας] γωνίας λ. 6. τὸ ἑπόμενον] om. D
+                                stx. 7. ἐμιφανοῦς] ἀφανοῦς tx. 10. σημείου γενομένην] om. D.
+                                γενομένην] —ων tx, περιεχομένην A. 20. ιεʹ] ἰδ’ hui. edit. 23. ιζʹ]
+                                ιϚ hui. edit. ιζʹ — ὁποτεροσοῦν] in M. evan. 24, Post χρόνοις add.
+                                δέ s 25. ἴσου] ιϚʹ s. αἰ] om. s,</note>
+                            <pb n="151"/> ἡμισφαίριον, ἐν τῷ αὐτῷ ἡ ἐτέρα τὸ ἀφανὲς καὶ ἀνάπαλιν.
+                            διὰ δὴ ταῦτα ἐν ᾧ χρόνῳ ἡ Ζ ἐξαλλάσσει τὸ φανερὸν ἡμισφαίριον, ἐν τούτῳ
+                            ἡ Κῶ τὸ ἀφανὲς καὶ ἀνάπαλιν.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="15">
+                    <head>Ad prop. XVIII.</head>
+                    <div type="textpart" subtype="section" n="118">
+                        <p>118. Σχόλιον. εἰδέναι χρή, ὅτι, ἢν βουλώμεθα δεῖξαι, <lb n="5"/> ἐν
+                            πλείονι χρόνῳ ἐξαλλάσσειν τὸ φανερὸν ἡμισφαίριον, δεῖ φυλάττειν
+                            ἀκίνητον, τουτέστι μὴ αὐτὴν τὴν κατὰ διάμετρον λαμβάνειν, ἀλλὰ ‘τῆς
+                            τυχούσηςʼ λέγειν τὴν ,κατὰ διάμετρον· αὐτὴ γὰρ ἡ κατὰ διάμετρον
+                            λαμβανομένη ἐγγυτέρα εὑρίσκεται τοῦ χειμερινοῦ, ἡ δὲ μείνασα <lb n="10"
+                            /> ἀκίνητος ἐγγυτέρα τοῦ θερινοῦ.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="16">
+                    <head>Ad prop. XΙΙ demonstr. alt.</head>
+                    <div type="textpart" subtype="section" n="119">
+                        <p>119. P. <del>120,14</del> ὥστε ἔχεις τὴν πρώτην πρστασιν δεζειγμένην.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="120">
+                        <p>120. Καὶ ἐπεί p. <del>120,18</del> μετατεθεῖσαι γάρ εἴσιν αἱ ΛΚ, <lb
+                                n="15"/> ΚΘ, αἵτινες ἦσαν ἴσαι· α ϛΕ, Ελ διὰ τοῦτο οὖν ἴσαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="121">
+                        <p>121. Σχόλιον. ὅτι δὲ ἴσον ἀπέχουσαι τοῦ ῖσημερινοῦ ἐν ἴσῳ χρόνῳ καὶ
+                            ἀνατέλλουσι, δέδεικται μὲν ἐν τῇ ἄλλῃ ἐκδόσει τοῦ θεωρήματος ἐν τῇ πρὸ
+                            ταύτης καταγραφῇ· ἡαὐτὴ δέ ἐστιν ἡ ἐν τούτῳ δεῖξις ἡ περὶ τοῦ ἐν ἴσῳ
+                            χρόνῳ δύνειν, <lb n="20"/> τὰς παρ ’ἑκατέρῳ τοῦ ἰσημερινοῦ τοῦ ἐν ἴσῳ
+                            ἀνατέλλειν αὐτάς. ἐὰν γὰρ μεταστρέψωμεν τὸν ζῳδιακὸν καὶ ποιήσωμεν τὸ ΑΓ
+                            ὐπὸ γῆν, ὡς ἔχει ἡ καταγραφή, ἡ αὐτὴ ἀπόδειξις ἁρμόσει.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="122">
+                        <p>122. Ad finem prop. τῆς γὰρ αὐτῆς μενούσης καταγραφῆς ἐὰν μεταστρέψωμεν
+                            τὸν ζῳδιακὸν καὶ ποιήσωμεν <lb n="25"/> το ΑΓ ἡμικύκλιον τοῦ ζῳδιακοῦ
+                            ὑπὸ γῆν, ἡ αὐτὴ ἀπόδειξις προβήσεται καὶ δειχθήσονται αἱ ἴσον ἀπέχουσαι
+                            τοῦ ἰσημερινοῦ ἐν ἴσῳ χρόνῳ καὶ ἀνατέλλουσαι.</p>
+                        <note type="footnote">118. Vat1 AM3 p1q sx. 119. Vat2p2. 120. Vat1Dp2. 121.
+                            Vat1 CDλM2p1qx. 122. Vat (textui m. rec. interpos., oms. cett.).</note>
+                        <note type="footnote">3. ΚΘ ]ΗΘ M, ΘΗ S. 5. σχόλιον] om. Mp. χρὴ εἰδέναι
+                            Msx. ἤν] εἰ qsx. 8. λέγειν] λέγει s. 11. ἐγγυτέρου q x 17. σχόλιον] om.
+                            C. ὅτι] εἰσί q. 20. δεῖξις] ἀπόδειξις CDqx. 23. Ante ἡ add. αὕτη CD
+                            qx.</note>
+                    </div>
+                </div>
+
+                <pb n="152"/>
+                <div type="textpart" subtype="chapter" n="17">
+                    <head>Ad prop. XIV demonstr. alt.</head>
+                    <div type="textpart" subtype="section" n="123">
+                        <p>123. Ἡ ΤΥ ἄρα περιφέρεια p. <del>124,4</del> διὰ γὰρ τοῦ Υ καὶ τοῦ Μ
+                            πόλου τοῦ ΑΒΓ κύκλου μέγιστος κύκλος γεγράφθω ὁ ΜΥω· ὁ ΜΥω ἄρα ὀρθός
+                            ἐστι πρὸς τὸν <lb n="5"/> ΑΒΓ· διὰ γὰρ τῶν πόλων αὐτοῦ ἐστιν. καὶ ἐπεὶ
+                            κύκλου τοῦ ΑΒΓ ἐπὶ διαμέτρου τῆς ἀπὸ τοῦ ω ὀρθὸν τμῆμα κύκλου ἐφέστηκε
+                            τὸ ω ΥΜ καὶ ἀφῃρημένη ἐστὶν ἡ Υω ἐλάσσων ἢ ἡμίσεια οὗσα τοῦ ἐφεστῶτος
+                            τμήματος· καὶ γὰρ ἡ ἀπὸ τοῦ ω ἐπὶ τὸ Μ πόλον τοῦ ΑΜΓ κύκλου
+                            τεταρτημορίου <lb n="10"/> ἐστίν· ὑπόκειται γὰρ ὁ πόλος μεταξὺ τοῦ τε
+                            Α&#8736; καὶ τοῦ ΛΚ κύκλου· ἡ ἄρα Υω ἐλάσσων ἐστὶν, ἢ ἡμίσεια τοῦ
+                            ἐφεστῶτος τμήματος. καὶ διὰ τοῦ α΄ τοῦ γ΄ τῶν Σφαιρικῶν ἐλάσσων ἐστὶν ἡ
+                            μὲν ἀπὸ τοῦ Υ ἐπὶ τὸ ω τῆς ἀπὸ τοῦ Υ ἐπὶ τὸ Τ, ἡ δὲ ἀπὸ τοῦ Υ ἐπὶ τὸ <lb
+                                n="15"/> Τ τῆς ἀπὸ τοῦ Υ ἐπὶ τὸ Σ· ὥστε καὶ ἡ ΥΤ ἐλάσσων ἐστὶ τῆς
+                            ΥΝΣ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="124">
+                        <p>124. Ἔχε τὴν ἐπίστασίν σου, ἄνθρωπε.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="125">
+                        <p>125. Αἱ ΣΗ, ΠΡ ἄρα p. <del>128,14</del> δέδεικται λοιπόν, ὅτι ἐν ἴσῳ
+                            χρόνῳ αἱ ἴσον ἀπέχουσαι τοῦ θερινοῦ.</p>
+                        <lb n="20"/>
+                    </div>
+                    <div type="textpart" subtype="section" n="126">
+                        <p>126. Σχόλιον. καθόλου χρὴ εἰδέναι, ὅτι τῶν προηγουμένων σημείων ἐπὶ τοῦ
+                            ὁρίζοντος ὄντων ἡ περιφέρειὰ οὔπω ἀνατέλλει οὔτε δύνει, τῶν δὲ ἑπομένων
+                            σημείων ἐπὶ τοῦ ὁρίζοντος ὄντων πᾶσα ἀνέτειλε καὶ πᾶσα ἔδυ. τὰ γὰρ
+                            προηγούμενα σημεῖα καὶ πρότερα ἀνατέλλει καὶ <lb n="25"/> πρότερα δύνει
+                            κατὰ τὸ δ΄ θεώρημα. τῆς ΠΡ περιφερείας προηγούμενον σημεῖόν ἐστι τὸ Π,
+                            τῆς δὲ ΗΖ προηγούμενον τὸ Η. λαβὼν οὖν τὴν μὲν ΠΡ δύνουσαν, τὴν δὲ ΗΖ
+                            ἀνατέλλουσαν, ἀναγκαίως τὰς ἐξαλλαγὰς αὐτῶν <note type="footnote">123.
+                                V1 D λ Ap1sx. 124. D.125 Vat2 p2. 126. Vat1CD M3p1 (ὡς ἐν τῷ σχολίῳ)
+                                qrs; in textu λ.</note>
+                            <note type="footnote">8. ἐλάσσων] ἄρα codd. 10. τοῦ] τῶν sx. 15. τῆς —
+                                Σ] om. sx. Post ΥΤ add. περιφέρειαν A, item lin. 16 περιφερείας post
+                                ΥΝΣ. 17. ἔχε] comp. obscurum. 20. καθόλου] καὶ ἐν καθόλῳ qrs. 21. ἡ]
+                                addidi. 24, προηγούμενα] προηγμένα Vat. 25. δ΄] ε΄ Vat Mp. Post τῆς
+                                add. οὖν Cs. 26. Ante σημεῖον add. ἦν Cs. ἐστι] om. Gs.</note>
+                            <pb n="153"/> ζητῶν τὰς ἐπὶ τοῦ φανεροῦ ἡμισφαιρίου προσέλαβε τῆς μὲν ΠΡ
+                            τὴν δύσιν, τῆς δὲ ΗΖ τὴν ἀνατολήν. ὅτε γὰρ τὸ Π ἐπὶ τὸ Λ ἔρχεται, ἡ ΠΡ
+                            οὔπω δύνει, ἄλλʼ ἔτι ὑπὲρ γῆς ἐστιν· διὸ προσέλαβεν αὐτῆς τὴν δύσιν. τοῦ
+                            γὰρ Π κατὰ τὸ Κ ἐπὶ τῆς ἀνατολῆς ὄντος, ἡ ΠΡ πᾶσα ὑπὸ <lb n="5"/> γῆν
+                            ἐστι καὶ κινουμένης τῆς σφαίρας ἄνω φέρεται πᾶσα. διὸ ἐν τὸ Π ἀπὸ τοῦ Κ
+                            ἐπὶ τὸ Λ ἔρχεται, μετὰ τῆς δύσεως τῆς ΠΡ ὁ χρόνος ἐστίν, ἐν ᾧ ἡ ΠΡ
+                            ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον. πάλιν τοῦ Ζ κατὰ τὸ Κ ἐπὶ τῆς
+                            ἀνατολῆς ὄντος ἡ ΗΖ πᾶσα προανέτειλεν· διὸ <lb n="10"/> προσέλαβεν αὐτῆς
+                            τὴν ἀνατολήν. γενομένου δὲ τοῦ Ζ κατὰ τὸ Λ, πᾶσα ἡ ΗΖ δύνει. διὸ ἐν ᾧ τὸ
+                            ἀπὸ τοῦ Κ ἐπὶ τὸ Λ ἔρχεται, μετὰ τῆς ἀνατολῆς τῆς ΗΖ ὁ χρόμος ἐστίν, ἐν
+                            ᾧ ἡ ΗΖ ἐξαλλάττει τὸ φανερὸν ἡμισφαίιον. ἐὰν δέ, ὡς ἔχει ἐν ἄλλῃ
+                            ἐκδόσει, τῆς μὲν ΠΡ τὴν <lb n="15"/> ἀνατολήν, τῆς δὲ ΗΖ τὴν δύσιν,
+                            οὐκέτι λήψει τὰ Π, Ζ σημεῖα, ἀλλὰ τὰ Ρ Η καὶ τὸν χρόνον, ἐν ᾧ τότε Ρ τὴν
+                            ΝΜ διέρχεται καὶ τὸ Η τὴν ΝΜ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="127">
+                        <p>127. Ἐκ περισσοῦ. τῶν αὐτῶν ὑποκειμένωων ἀπειλήφθω ἡ ΕΖ μὴ μείζων
+                            τεταρτημορίου, καὶ ἔστω καθʼ οὗ φέρεαι <lb n="20"/> τὸ Ζ σημεῖον, ὁ ΖΚΘ
+                            κύκλος· ἴση ἄρα ἐστὶν ἡ Ε τῇ ΕΚ [Theodos. ΙΙ, <del>13</del>· κείσθω τῇ
+                            ΕΚ ἴση ἡ ΛΚ ὅλη ἄρα ἡ ΕΖΚ ὅλῃ τῇ ΕΛ ἐστιν ἴση· λέγω, ὅτι, εἰ μὲν
+                            τεταρτημορίου ἐστὶν ἡ ΕΖ, αἱ ΖΕΚ, ΕΚΛ ἐν ἴσῳ χρόνῳ ἐξαλλάσσουσι τὸ
+                            φανερὸν ἡμισφαίριον· εἰ δὲ <lb n="25"/> ἐλάσσων ἐστὶ τεταρτημορίου ἡ ΕΖ,
+                            ἐν πλείονι χρόνῳ ἡ ΖΕΚ ἐξαλλάσσει τὸ φανερὸν ἡμισφαίριον ἤπερ ἡ ΕΚ. ἔστω
+                            πρότερον τεταρτημορίου ἡ ΕΖ· καὶ ἡ ΕΚ ἄρα τεταρτημορίου ἐστίν·
+                            ἰσημερινὸς ἄρα ἐστὶν ὁ ΗΖ. καὶ ἐπεὶ αἰ ΕΚ, ΚΛ ἴσον ἀπέχουσι τοῦ
+                            ἰσημερινοῦ, ἐν <lb n="30"/>
+                            <note type="footnote">Scholia 127, 128, 129 post den alt prop. XIV in
+                                textu hab. Vat.</note>
+                            <note type="footnote">1. προέλαβεν p. 5. τό] τοῦ Vat. 12. τό (pr.)] τοῦ
+                                p. 23. ΕΛ] ΕΚΛ m. 2 Vat. 27. ΕΚΛ] Λ add.m. 2 Vat.</note>
+                            <pb n="154"/> ᾧ ἄρα χρόνῳ ἡ ΕΚ δύνει, ἐν τούτῳ καὶ ἡ ΚΛ <del>prop.
+                                12</del>· ἐν ᾧ δὲ χρόνῳ ἡ ΕΚ δύνει, ἐν τούτῳ ἡ ΕΖ ἀνατέλλει· καὶ ἐν
+                            ᾧ ἄρα χρόνῳ ἡ ΕΖ ἀνατέλλει, ἡ ΚΛ δύνει. κοινὸς προσκείσθω ὁ χρόνος, ἐν ᾧ
+                            ἡ ΕΚ ἐξαλλάττει τὸ <lb n="5"/> φανερὸν ἡμισφαίριον· ὁ ἄρα χρόνος, ἐν ᾧ ἡ
+                            ΚΛ δύνει, μετὰ τοῦ χρόνου, ἐν ᾧ ἡ ΕΚ ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον,
+                            ἴσος ἐστὶ τῷ χρόνῳ, ἐν ἡ ΕΖ ἀνατέλλει καὶ ἡ ΕΚ ἐξαλλάττει τὸ φανερὸν
+                            ἡμισφαίριον. ἀλλʼ ὁ μὲν χρόνος, ἐν ᾧ ἡ <lb n="10"/> ΛΚ δύνει καὶ ἡ ΚΕ
+                            ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον, ὁ χρόνος ἐστίν, ἐν ᾧ ἡ ΚΛ ἐξαλλάσσει
+                            τὸ φανερὸν <lb n="15"/> ἡμισφαίριον· ὁ δὲ χρόνος, ἐν ᾧ ἡ ΕΖ ἀνατέλλει,
+                            μετὰ τοῦ χρόνου, ἐν ᾦ ἡ ΕΚ ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον, <lb n="20"
+                            /> ὁ χρόνος ἐστίν, ἐν ᾧ ἡ ΖΕΚ ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον· αἱ ΖΕΚ,
+                            ΕΚΛ ἄρα ἐν ἴσῳ χρόνῳ ἐξαλλάσσουσι τὸ φανερὸν ἡμισφαίριον.</p>
+                        <p>ἀλλʼ ἔστω ἡ ΕΖ περιφέρεια ἐλάσσων τεταρτημορίου· <lb n="25"/> καὶ ἡ ΕΚ
+                            ἄρα ἐλάσσων ἐστὶ τεταρμορίου. κείσθω τεταρτημορίου ἡ ΕΜ καὶ κείσθω τῇ ΜΚ
+                            ἴση ἡ ΚΝ. λοιπὴ ἄρα ἡ ΕΝ λοιπῇ τῇ ΜΛ ἐστιν ἴση. καὶ ἡ ΕΝ ἔγγιον τῆς
+                            συναφῆς τοῦ θερινοῦ τροπικοῦ ἤπερ ἡ ΜΛ· ἐν. πλείονι ἄρα χρόνῳ ἡ ΕΝ δύνει
+                            ἤπερ ἡ ΜΛ <del>prop. XII</del>. <lb n="30"/> διὰ τὰ αὐτὰ δὴ καὶ ἡ ΝΚ ἐν
+                            πλείονι χρόνῳ δύνει ἤπερ ἡ ΚΜ· καὶ ἡ ΕΚ ἄρα τῆς ΚΛ ἐν πλείονι χρόνῳ
+                            δύνει. ἐν ᾧ δὲ χρόνῳ ἡ ΕΚ δύνει, ἡ ΕΖ ἀνατέλλει <del>schol. nr.
+                                107</del>. ἐν πλείονι ἄρα χρόνῳ ἡ ΕΖ ἀνατέλλει ἤπερ ἡ <note
+                                type="footnote">30. ΝΚ] ΗΝΚ Vat, sed Η del. ἤπερ ἡ] in ras. m. 2
+                                Vat.</note>
+                            <pb n="155"/> ΚΛ δύνει. κοινὸς προσκείσθω ὁ χρόνος, ἐν ᾧ ἡ ΕΚ ἐξαλλάττει
+                            τὸ φανερὸν ἡμισφαίριον· ἐν πλείονι ἄρα χρόνῳ ἡ ΖΕΚ ἐξαλλάττει τὸ φανερὸν
+                            ἡμισφαίριον ἤπερ ἡ ΕΛ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="128">
+                        <p>128. Ἐκ περισσοῦ. τῶν αὐτῶν ὑποκειμένων ἀπειλήφθω <lb n="5"/> ἡ ΕΖ μὴ
+                            μείζων τεταρτημορίου, καὶ εἰλήφθω τυχὸν σημεῖον τὸ Η, καὶ ἔστω καθʼ οὗ
+                            φέρεται τὸ Η σημεῖον παράλληλος κύκλος ὁ ΘΚΗΛ, καὶ κείσθω τῇ ΖΗ ἴση ἡ ΚΜ
+                            ἴση ἄρα ἔστὶ καὶ ἡ ΚΕΗ τῇ ΜΕΝ· λέγω, ὅτι ἐν πλείονι <lb n="10"/> χρόνῳ ἡ
+                            ΚΕΗ περιφέρεια ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον ἤπερ ἡ ΜΕΖ.</p>
+                        <p>ἔστω καθʼ οὗ φερεται <lb n="15"/> τὸ Μ σημεῖον παράλληλος κύκλος ὁ ΝΜΞ·
+                            ἴση ἄρα ἐστὶν ἡ ΚΜ τῇ ΟΗ. καὶ ἐπεὶ ἔγγιόν ἐστιν ἡ <lb n="20"/> ΟΗ τῆς
+                            συναφῆς τοῦ</p>
+                        <p>θερινοῦ τροπικοῦ ἤπερ ἡ ΗΖ, ἐν πλείονι ἄρα χρόνῳ ἡ ΟΗ δύνει ἤπερ ἡ ΗΖ. ἐν
+                            ᾧ δὲ χρόνῳ ἡ ΟΗ δύνει, ἡ ΜΚ ἀνατέλλει· ἐν πλείονι ἄρα χρόνῳ ἡ ΜΚ
+                            ἀνατέλλει ἤπερ ἡ ΗΖ <lb n="25"/> δύνει. κοινὸς προσκείσθω ὁ χρόνος, ἐν ᾧ
+                            ἡ ΜΕΗ ἐξαλλάσσει τὸ φανερὸν ἡμισφαίριον· ἐν πλείονι ἄρα χρόνῳ ἡ ΚΕΗ
+                            ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον ἤπερ ἡ ΜΕΖ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" n="129">
+                        <p>129. Ἐκ περισσοῦ. τῶν αὐτῶν ὑποκειμένων ἀπειλήφθωσαν <lb n="30"/>
+                            <note type="footnote">129. M3 qs.</note>
+                            <note type="footnote">26. ΜΕΗ] Η in ras. m. 2 Vat. 28 ἤπερ ἡ ΜΕΖ] add.
+                                m. 2 Vat.</note>
+                            <pb n="156"/> ἴσαι τε καὶ ἀπεναντίον περιφέρειαι αἱ ΖΗ, ΘΚ, καὶ ἔστω ἡ
+                            ΖΗ ἔγγιον τῆς συναφῆς τοῦ θερινοῦ τροπικοῦ ἤπερ ἡ ΘΚ· λέγω, ὅτι ἐν
+                            πλείονι χρόνῳ ἡ ΖΗ ἐξαλλάσσει τὸ φανερὸν ἡμισφαίριον ἤπερ ἡ ΘΚ.</p>
+                        <lb n="5"/>
+                        <p>ἐπεὶ γὰρ ἡ ΖΗ ἔγγιόν ἐστι τῆς συναφῆς τοῦ θερινοῦ τροπικοῦ ἤπερ ἡ ΘΚ,
+                            μείζων ἐστὶν ἡ ΘΕ τῆς ΕΖ. κείσθω τῇ μὲν ΖΕ ἴση ἡ ΕΛ, τῇ δὲ ΖΗ <lb n="10"
+                            /> ἴση ἡ ΛΜ. ἐπεὶ οὖν αἱ ΛΜ, ΖΗ ἴσον ἀπέχουσι τῆς συναφῆς τοῦ θερινοῦ,
+                            ἐν ᾧ χρόνῳ ἡ ΛΜ ἐξαλλάττει τὸ φανερὸν <lb n="15"/> ἡμισφαίριον, ἐν τούτῳ
+                            καὶ ἡ ΖΗ <del>prop. XIV</del>. ἐν πλείονι δὲ χρόνῳ ἡ ΛΜ ἐξαλλάττει τὸ
+                            φανερὸν ἡμισφαίριον ἤπερ ἡ ΘΚ ἐν πλείονι ἄρα χρόνῳ <lb n="20"/> καὶ ἡ ΖΗ
+                            ἐξαλλάττει τὸ φανερὸν ἡμισφαίριον ἤπερ ἡ ΘΚ.</p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="18">
+                    <head>Ad prop. XV demonstr. alt.</head>
+                    <div type="textpart" subtype="section" n="130">
+                        <p>130. Ad p. <del>130,16</del> διὰ τὸ ι΄ καὶ θ΄ τοῦ β΄τῶν Σφαιρικῶν καὶ τῶν
+                            ἀξιωμάτων, ἐὰν ἀπὸ τῶν ἴσων ἴσα ἀφέλῃς.</p>
+                        <note type="footnote">130. M3 qs</note>
+                        <note type="footnote">12. Post θερινοῦ add. τροπικοῦ m. 2 Vat.</note>
+                    </div>
+                </div>
+
+            </div>
+        </body>
+    </text>
+</TEI>
