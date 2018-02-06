@@ -70,17 +70,19 @@
   <encodingDesc>
    <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
    <refsDecl>
-    <cRefPattern matchPattern="book" replacementPattern=""></cRefPattern>
+    <cRefPattern n="edition" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3']"></cRefPattern>
+    <cRefPattern matchPattern="(.+).(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']"></cRefPattern>
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']"></cRefPattern>
    </refsDecl>
   </encodingDesc>
   <profileDesc>
    <langUsage>
-    <language ident="grc">Greek</language>
-    <language ident="lat">Latin</language>
+    <language ident="grc"></language>
+    <language ident="lat"></language>
    </langUsage>
   </profileDesc>
   <revisionDesc>
-   <change/>
+   <change who="Katie Mikos" when="2018-02-06">Corrected TEI Header</change>
   </revisionDesc>
  </teiHeader>
  <text>
