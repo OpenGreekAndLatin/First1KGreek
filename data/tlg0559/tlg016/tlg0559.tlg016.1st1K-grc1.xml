@@ -4,34 +4,43 @@
 <teiHeader>
 <fileDesc>
 <titleStmt>
-<title xml:lang="lat">Heronis Alexandrini geometricorum et stereometricorum reliquiae</title>
+ <title xml:lang="lat">Liber geeponicus [Sp.]</title>
 <author xml:lang="lat">Heronis Alexandrini</author> 
 <editor xml:lang="lat">Fridericus Hultsch</editor>
-<sponsor>Harvard College Library</sponsor>
- <funder>Harvard Library Arcadia Fund</funder>
-<principal>Gregory Crane</principal>
-<meeting/>
-<respStmt>
- <persName xml:id="DDD">Digital Divide Data</persName>
- <resp>Corrected and encoded the text</resp>
-</respStmt>
-<respStmt>
- <persName>Rhea Lesage</persName>
- <resp>Librarian for Hellenic Studies and Coordinator for the Classics
-Collection Development</resp>
-</respStmt>
-<respStmt>
- <persName>Bruce Robertson</persName>
- <resp>Technical Advisor</resp>
-</respStmt>
+ <funder>Harvard Library</funder>
+ <principal>Gregory Crane</principal>
+ <respStmt>
+  <persName xml:id="DDD">Digital Divide Data</persName>
+  <resp>Corrected and encoded the text</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Gregory Crane</persName>
+  <resp>Editor-in-Chief, Perseus Digital Library</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Matt Munson</persName>
+  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Annette Gessner</persName>
+  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Thibault Clérice</persName>
+  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+ </respStmt>
+ <respStmt>
+  <persName>Bruce Robertson</persName>
+  <resp>Technical Advisor (Mount Allison University)</resp>
+ </respStmt>
 </titleStmt>
 <publicationStmt>
 <authority>Harvard College Library</authority>
- <idno type="filename">tlg0559.tlg016</idno>
+ <idno type="filename">tlg0559.tlg016.1st1K-grc1.xml</idno>
 <availability>
  <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
 </availability>
-<date>2017</date>
+<date>2018</date>
 <publisher>Harvard College Library</publisher>
 <pubPlace>United State</pubPlace>
 </publicationStmt>
@@ -59,7 +68,11 @@ Collection Development</resp>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+ <p>Text encoded in accordance with the latest EpiDoc standards</p>
+ <refsDecl n="CTS">
+  <cRefPattern matchPattern="(.+)" n="chapter"
+   replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+ </refsDecl>
 </encodingDesc>
 <profileDesc>
 <langUsage>
@@ -73,8 +86,7 @@ Collection Development</resp>
 </teiHeader>
 <text>
 <body>
- <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0559.tlg016.opp-grc1">
-<div type="textpart" subtype="book" n="1">
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0559.tlg016.1st1K-grc1">
 <pb n="208"/>
 <head>VII.
 Heronis Liber Geeponicus.</head>
@@ -1657,7 +1669,7 @@ p. 234, 1) 31. κριθ G (item p. 234,2) διὰ] &#8736; cum nota compendii, 
 nonnulla vacua, nisi quod in primo verba ρεὸς ποὺς ἔχει ξε΄ νε usque ad finem
 repetita sunt.</note>
 </div>
-</div>
+
 </div>
 </body>
 </text>
