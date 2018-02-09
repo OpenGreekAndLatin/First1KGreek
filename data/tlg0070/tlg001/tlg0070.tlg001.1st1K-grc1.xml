@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Isidori Characeni Mansiones Parthicae</title>
+                <author>Isidorus Characenus</author>
+                <editor xml:lang="lat">Carolus Müllerus</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+
+                <idno type="filename">tlg0070.tlg001.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+
+                            <title xml:lang='lat'>Geographi Graeci Minores</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Carolus Müllerus</name>
+                                    <addName xml:lang="deu">Karl Müller</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0070"
+                                >Isidorus Characenus</author>
+
+
+
+                            <imprint>
+                                <publisher>Ambroise-Firmin Didot</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1855</date>
+                            </imprint>
+                            
+                            <biblScope unit="volume">1</biblScope>
+                            
+                        </monogr>
+                        <ref target="https://archive.org/details/geographigraeci00philgoog">The Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+
+        <encodingDesc>
+
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+
+
+            <refsDecl n="CTS">
+                
+                
+                <cRefPattern n="paragraph" matchPattern="(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts paragraphs</p>
+                </cRefPattern> 
+                
+
+                <cRefPattern n="section" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts sections</p>
+
+                </cRefPattern>
+
+            </refsDecl>
+
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Chiara Palladino">created the file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0070.tlg001.1st1K-grc1">
+
+                <pb n="244"/>
+     
+                
+                <div type="textpart" subtype="section" n="1">
+                    
+                <ab>
+                    <title type="summary">
+                    ΙΣΙΔΩΡΟΥ ΣΤΑΘΜΟΙ ΠΑΡΘΙΚΟΙ.</title>
+                </ab>
+                <list type="index">
+                    <item>Μεσοποταμίας καὶ Βαβυλωνίας σχοῖνοι ροα΄.</item>
+                    <item>Ἀπολλωνιάτιδος σχοῖνοι λγ΄.</item>
+                    <item>Χαλωνίτιδος σχοῖνοι κα΄.</item>
+                    <item>Μηδίας σχοῖνοι κβ΄.</item>
+                    <item>Καμβαδηνῆς σχοῖνοι λα΄.</item>
+                    <item>Μηδίας τῆς ἄνω σχοῖνοι λη΄.</item>
+                    <item>Ῥαγιανῆς Μηδίας σχοῖνοι νη΄.</item>
+                    <item>Χοαρηνῆς σχοῖνοι ιθ΄.</item>
+                    <item>Κομισηνῆς σχοῖνοι νη΄.</item>
+                    <lb n="10"/>
+                    <item>Ὑρκανίας σχοῖνοι ξ΄.</item>
+                    <item>Ἀσταυηνῆς σχοῖνοι ξ΄.</item>
+                    <item>Παρθυηνῆς σχοῖνοι κε΄.</item>
+                    <item>Ἀπαυαρκτικηνῆς σχοῖνοι κζ΄.</item>
+                    <item>Μαργιανῆς σχοῖνοι λ΄.</item>
+                    <lb n="15"/>
+                    <item>Ἀρείας σχοῖνοι λ΄.</item>
+                    <item>Ἀναυῆς σχοῖνοι νε΄.</item>
+                    <item>Ζαραγγιανῆς σχοῖνοι κα΄.</item>
+                    <item>Σακαστανῆς σχοῖνοι ξγ΄.</item>
+                    <item>Ἀραχωσίας σχοῖνοι λϚ΄.</item>
+                    <lb n="20"/>
+                    <item>Ὁμοῦ σχοῖνοι ωνη΄.</item>
+                </list>
+
+                    <ab>
+                        <title>
+                        Μεσοποταμίας καὶ Βαβυλῶνος σχοῖνοι ροα΄.</title>
+                    </ab>
+                    <div type="textpart" subtype="paragraph" n="1"><p>1. Διαβάντων τὸν Εὐφράτην κατὰ Ζεῦγμα, πόλις <pb n="245"/> ἐστὶν
+                        Ἀπάμεια, εἶτα Δαίαρα κώμη. Ἀπέχει δὲ Ἀπαμείας καὶ τοῦ Εὐφράτου ποταμοῦ
+                        σχοίνους γ΄. Εἶτα Χάραξ Σίδου, ὑπὸ δὲ Ἑλλήνων Ἀνθεμουσιὰς <gap
+                            reason="omitted"/> πόλις, <pb n="246"/> σχοῖνοι ε΄· μεθʼ ἣν Κοραία ἡ ἐν
+                        Βατάνῃ, ὀχύρωμα, σχοῖνοι γʼ. Ἐν δεξιοῖς ταύτης Μαννούορρα Λὐυρὴθ, ὀχύρωμα
+                        καὶ κρήνη, ἐξ ἧς ἄρδουσιν οἱ ἐγχώριοι, σχοῖνοι ε΄. Εἶτα Κομμισίμβηλα
+                        ὀχύρωμα· παραρρεῖ δὲ ποταμὸς Βίληχα, σχολνοι δ΄. Εἶτα Ἄλαγμα ὀχύρωμα,
+                        σταθμὸς βασιλικὸς, σχοῖνοι γ΄· μεθʼ ὃν Ἴχναι πόλις Ἑλληνὶς, <pb n="247"/>
+                        Μακεδόνων κτίσμα· κεῖται δʼ ἐπὶ Βάλιχα ποταμοῦ, σχοῖνοι γ΄. Εἶτα Νικηφόριον
+                        παῤ Εὐφράτην πόλις Ἑλληνὶς, κτίσμα Ἀλεξάνδρου βασιλέως, σχοῖνοι ε΄. Ἔνθεν
+                        παραποταμία Γαλάβαθα, κώμη ἔρημος, σχοῖνοι δ΄, Εἶτα Χουμβανὴ κώμη, σχοῖνος
+                        α΄ ἔνθεν Θιλλάδα Μιρράδα, σταθμὸς βασιλικὸς, σχοῖνοι δ΄, βασίλεια, Ἀρτέμιδος
+                        ἱερὸν, Δαρείου κτίσμα, κωμόπολις· ἐνταῦθα Σεμιράμιδός ἐστι διῶρυξ, καὶ
+                        λίθοις πέφρακται ὁ Εὐφράτης, ἵνα στενοχωρούμενος ὑπερκλύζῃ τὰ πεδία· θέρους
+                        μέντοι ναυαγεῖ τὰ πλοῖα, Εἶτα Ἀλλὰν κωμόπολις, σχοῖνοι δ΄· ἔνθεν Βηονὰν,
+                        Ἀρτέμιδος ἱερὸν, <pb n="248"/> σχοῖνοι δ΄. Εἶτα Φάλιγα κώμη πρὸς τῷ Εὐφράτῃ·
+                        λέγοιτο δʼ ἂν ἑλληνιστὶ μεσοπορικὸν, σχοῖνοι Ϛ΄. Ἀπὸ Ἀντιοχείας ἕως τούτου
+                        σχοῖνοι ρκ΄· ἐντεῦθεν δὲ ἐπὶ Σελεύκειαν τὴν πρὸς τῷ Τίγριδι σχοῖνοι ρ΄.
+                        Παράκειται δὲ τῆ Φάλιγα κωμόπολις Ναβαγὰθ, καὶ παραρρεῖ αὐτὴν ποταμὸς
+                        Ἀβούρας, ὃς ἐμβέλλει εἰς τὸν Εὐφράτην· ἐκεῖθεν διαβαίνει τὰ στρατόπεδα εἰς
+                        τὴν κατὰ Ῥωμαίους πέραν. Εἶτα Ἄσιχα κώμη, σχοῖνοι δʼ· ἔνθεν Δοῦρα Νικάνορος
+                        πόλις, κτίσμα Μακεδόνων, ὑπὸ δὲ Ἑλλήνων Εὔρωπος καλεῖται, σχοῖνοι Ϛ΄. Εἶτα
+                        Μέραν ὀχύρωμα, κωμόπολις, σχοῖνοι ε΄. Εἶτα Γιδδὰν πόλις, σχοῖνοι ε΄. Εἶτα
+                        Βηλεσὶ Βιβλάδα, σχοῖνοι ζ΄. Ἔνθεν νῆσος κατὰ τὸν Εὐφράτην, σχοῖνοι Ϛ΄·
+                        ἐνταῦθα γάζα ἦν Φραάτου τοῦ ἀποσφάξαντος τὰς παλλακίδας, ὅτε Τηριδάτης <pb
+                            n="249"/> φυγὰς ὢν εἰσέβαλεν. Εἶτα Ἀναθὼ νῆσος κατὰ τὸν Εὐφράτην σταδίων
+                        δ΄, ἐν ᾗ πόλις, σχοῖνοι δ΄· μεθʼ ἣν Θιλαβοὺς νῆσος κατὰ τὸν Εὐφράτην, ἔνθα
+                        γάζα Πάρθων, σχοῖνοι β΄. Εἶτα Ἴζαν νησόπολις, σχοῖνοι ιβ΄. Εἶτα Ἀείπολις,
+                        ἔνθα ἀσφαλτίτιδες πηγαὶ, σχοῖνοι ιϚ΄. Ἔνθεν Βεσήχανα πόλις, ἐν ᾗ ἱερὸν
+                        Ἀτάργατι, σχοῖνοι ιβ΄. Εἶτα Νεάπολις παρὰ τὸν Εὐφράτην, σχοῖνοι κβ΄. Ἔνθεν
+                        διαβάντων τὸν Εὐφράτην καὶ Ναρμάλχαν ἐπὶ Σελεύκειαν τὴν πρὸς τῷ Τίγριδι,
+                        σχοῖνοι θ΄. Ἄχρι τούτου Μεσοποταμία καὶ Βαβυλωνία· καὶ εἰσὶν ἀπὸ Ζεύγματος
+                        ἄχρι Σελευκείας σχοῖνοι ροα΄.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="2"><p>2. Ἐντεῦθεν ἄρχεται ἡ Ἀ πολλωνιᾶτις, ἥτις κατέχει σχοίνους λγ΄. Ἔχει δὲ
+                        κώμας, ἐν αἷς σταθμὸς, πόλιν δὲ Ἑλληνίδα Ἀρτεμίτα· διὰ μέσης δὲ ταύτης ῥεῖ
+                            <pb n="250"/> ποταμὸς Σίλλᾳ. Εἰσὶ δὲ εἰς αὐτὴν ἀπὸ Σελευκείας σχοῖνοι
+                        ιε΄. Νῦν μέντοι ἡ πόλις καλεῖται Χαλάσαρ.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="3"><p>3. Ἐνταῦθεν ἡ s Χαλωνῖτις, σχοῖνοι κα΄· ἐν ᾗ κῶμαι ε΄, ἐν αἷς σταθμὸς,
+                        πόλις δὲ Ἑλληνὶς Χάλα, ἀπὸ τῆς Ἀπολλωνιάτιδος σχοῖνοι ιε΄, Εἶτα ἀπὸ σχοίνων
+                        ε΄. ὄρος ὃ καλεῖται Ζάγρος, ὅπερ ὁρίζει τὴν Χαλωνῖτιν χώραν καὶ τὴν τῶν
+                        Μήδων.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="4"><p>4. Ἐντεῦθεν s Μηδία, ἥτις κατέχει σχοίνους κβ΄. Ἡ ἀρχὴ αὐτῶν ἡ χώρα
+                        Κάρινα· ἐν ᾗ κῶμαι ε΄, ἐν αἷς σταθμὸς, πόλις δὲ οὐδεμία.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="5"><p>5. Ἐντεῦθεν Καμβαδηνὴ, s ἥτις κατέχει σχοίνους λα΄, ἐν ᾗ κῶμαι ε΄, ἐν
+                        αἷς σταθμὸς, πόλις δὲ Βάπτανα ἐπʼ ὄρους κειμένη· ἔνθα Σεμιράμιδος ἄγαλμα καὶ
+                        στήλη.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="6"><p>6. Ἐντεῦθεν ἡ Μνδία ἡ ἄνω, σχοῖνοι λη΄· καὶ ἄρχεται εὐθὺς πόλις
+                        Κογκοβάρ· ἔνθα Ἀρτέμιδος ἱερὸν, σχοῖνοι γ΄. Εἶτα Βαζιγράβαν, ὅ ἐστι
+                        τελώνιον, σχοῖνοι γ΄. Εἶτα εἰς Ἀδραπάναν τὰ βασίλεια τῶν νολις, ἃ Τιγράνης ὁ
+                        Ἄρμένιος καθεῖλε, σχοῖνοι δ΄. Εἶτα <pb n="251"/> Βάτανα, μητρόπολις Μηδίας
+                        καὶ θησαυροφυλάκιον καὶ ἱερὸν, ὅπερ Ἀναΐτιδος· ἀεὶ θύουσιν· σχοῖνοι ιβ΄,
+                        Εἶτα ἑξῆς τρεῖς κῶμαι, ἐν αἷς σταθμός.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="7"><p>7. Ἐντεῦθεν <supplied reason="omitted">Ῥαγιανὴ</supplied> Μηδία, σχοῖνοι <supplied reason="omitted">νη΄</supplied>. Ἐν ᾗ
+                        κῶμαι ι΄, πόλεις δὲ ε΄. Ἀπὸ σχοίνων ζ΄ Ῥάγα καὶ Χάραξ, ὧν μεγίστη τῶν κατὰ
+                        τὴν Μηδίαν ἡ Ῥάγα. Εἰς δὲ τὴν Χάρακα πρῶτος βασιλεὺς Φραάτης τοὺς Μάρδους
+                        ᾤκισεν· ἔστιν ὑπὸ τὸ ὄρος, ὃ καλεῖται Κάσπιος, ἀφʼ οὗ Κάσπιαι πύλαι.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="8"><p>8. Ἐντεῦθεν ὑπερβάντων τὰς Κασπίας πύλας ἐστὶν αὐλὼν καὶ ἡ Χοαρηνὴ,
+                            <supplied reason="omitted">σχοῖνοι ιθ΄.</supplied>· ἐν ᾗ Ἀπάμεια πόλις ἀπὸ σχοίνων δ΄· κῶμαι δέ δ΄,
+                        ἐν αἷς σταθμός. Ἐντεῦθεν Κομισηνὴ, s σχοῖνοι νη΄, ἐν ᾗ κῶμαι
+                        η΄, ἐν αἷς σταθμός· πόλις δὲ οὐκ ἔστιν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="10"><p>10. Ἐντεῦθεν Ὑρκανία, σχοῖνοι ξ΄, ἐν ᾗ κῶμαι ια΄, ἐν αἷς σταθμοί.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="11"><p>11. Ἐντεῦθεν Ἀσταυηνὴ, s s s σχοῖνοι ξ΄, ἐν κῶμαι ιβ΄, ἐν αἷς σταθμοί·
+                        πόλις δὲ Ἀσαὰκ, ἐν ᾗ Ἀρσάκης <pb n="252"/> πρῶτος βασιλεὺς ἀπεδείχθη· καὶ
+                        φυλάττεται ἐνταῦθα πῦρ ἀθάνατον.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="12"><p>12. Ἐντεῦθεν Παρθυηνὴ, σχοῖνοι κε, ἧς αὐλών· Παρθαύνισα ἡ πόλις ἀπὸ
+                        σχοίνων ς΄· ἔνθα βασιλικαὶ ταφαί Ἕλληνες δὲ Νίσαιαν λέγουσιν. Εἶτα Γάθαρ
+                        πόλις ἀπὸ σχοίνων Ϛ΄. Εἶτα Σιρὼκ πόλις ἀπὸ σχοίνων ε΄. Κώμας δὲ οὐκ ἔχει
+                        πλὴν μιᾶς, ἥτις καλεῖται Σαφρί.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="13"><p>13. Ἐντεῦθεν Ἀπαυαρκτικηνὴ, σχοῖνοι κζ΄. ἐν ᾗ πόλις Ἀπαυαρκτική. Εἶτα
+                        Ῥαγαῦ πόλις καὶ κῶμαι δύο.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="14"><p>14. Ἐντεῦθεν Μαργιαν ὴ, σχοῖνοι λ΄. Ἔνθα Ἀντιόχεια <pb n="253"/> ἡ
+                        καλουμένη Ἔνυδρος· κῶμαι δὲ οὐκ εἰσίν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="15"><p>15. Ἐντεῦθεν Ἄρεια, σχοῖνοι λ΄. Ἔνθα Κανδὰκ πόλις καὶ Ἀρτακαύαν πόλις
+                        καὶ Ἀλεξάνδρεια ἡ ἐν Ἀρείοις· κῶμαι δὲ δ΄.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="16"><p>16. Ἐντεῦθεν Ἀναύων χώρα τῆς Ἀρείας, σχοῖνοι νε΄, ἐν ᾗ πόλις μεγίστη
+                        Φρὰ καὶ Βὶς πόλις καὶ Γαρὶ πόλις καὶ Νιὴ πόλις· κώμη δὲ οὐκ ἔστιν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="17"><p>17. Ἐντεῦθεν Ζαραγγιανὴ, σχοῖνοι κα΄. Ἔνθα πόλις Πάριν καὶ Κορὸκ
+                        πόλις.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="18"><p>18. Ἐντεῦθεν Σακαστανὴ Σακῶν Σκυθῶν, ἡ καὶ Παραιτακηνὴ, σχοῖνοι ξγ΄,
+                        Ἔνθα Βαρδὰ πόλις καὶ Μὶν πόλις καὶ Παλακεντὶ πόλις καὶ Σιγὰλ πόλις· ἔνθα <pb
+                            n="254"/> βασίλεια Σακῶν· καὶ πλησίον Ἀλεξάνδρεια πόλις <del>καὶ πλησίον
+                        Ἀλεξανδρόπολις πόλις</del>· κῶμαι δὲ ἕξ.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="19"><p>19. Ἐντεῦθιν Ἀραχωσία, σχοῖνοι λϚ΄. Ταύτην δὲ οἱ Πάρθοι Ἰνδικὴν Λευκὴν
+                        καλοῦσιν· ἔνθα Βιὺτ πόλις καὶ Φάρσανα πόλις καὶ Χοροχοὰδ πόλις καὶ Δημητριὰς
+                        πόλις· εἶτα Ἀλεξανδρόπολις, μητρόπολις Ἀραχωσίας· ἔστι δὲ Ἑλληνὶς, καὶ
+                        παραρρεῖ αὐτὴν ποταμὸς Ἀραχωτός. Ἄχρι τούτου ἐστὶν ἡ τῶν Πέρθων
+                        ἐπικράτεια.</p>
+                    <p>Ἰσαιδώρου Χαρακηνοῦ σταθμοὶ Παρθικοί.</p>
+                    <!-- this is a subscription -->
+                </div></div>
+
+
+
+                <div type="textpart" subtype="section" n="2">
+                    <!-- both the following paragraphs are fragments from quotations. -->
+                    <ab><title>ΠΑΡΘΙΑΣ ΠΕΡΙΗΓΗΣΙΣ.</title></ab>
+                    <div type="textpart" subtype="paragraph" n="20"><p>20. 
+                        <cit>
+                        <bibl>Athenæus III, p. 93, D</bibl><quote>Ἰσίδωρος δʼ ὁ Χαρακηνὸς ἐν τῷ τῆς Παρθίας
+                        Περιηγητικῷ κατὰ τὸ Περσικὸν πέλαγος νῆσόν φησιν εἶναί τινα, ἔνθα πλείστην
+                        μαργαρἶτιν εὑρίσκεσθαι. Διόπερ σχεδίας καλαμίνας πέριξ εἶναι τῆς νήσου, ἐξ
+                        ὧν καθαλλομένους εἰς τὴν θάλασσαν ἐπʼ ὀργυιὰς εἴκοσιν ἀναφέρειν διπλοῦς
+                        κόγχους. Φασὶ δ᾿ , ὅταν βρονταὶ συνεχεῖς ὦσι καὶ ὄμβρων ἐκχύσεις, τότε
+                        μᾶλλον τὴν πίνναν κύειν, καὶ πλείστην γίγνεσθαι μαργαρῖτιν καὶ εὐμεγέθη. Τοῦ
+                        δὲ χειμῶνος εἰς τὰς ἐμβυθίους θαλάμας δύνειν εἰώθασιν αἱ πίνναι· θέρους δὲ
+                        τὰς μὲν νύκτας κεχήνασι διανηχόμεναι, ἡμέρας δὲ μύουσιν. Ὅσαι δʼ ἂν πέτραις
+                        ἢ σπιλέσι πρεσφυῶσι, ῥιζοβολοῦσι, κἀνταῦθα ἐνὸῦσαι τὴν μαργαρῖτιν γεννῶσι.
+                        Ζωογονοῦνται δὲ καὶ τρέφονται διὰ τοῦ προσπεφυκότος τῆ σαρκὶ μέρους. Τοῦτο
+                        δὲ συμπέφυκε τῷ τοῦ κόγχου στόματι, χηλὰς ἔχον καὶ νομὴν εἰσφέρον. Ὃ δή
+                        ἐστιν ἐοικὸς καρκίνῳ μικρῷ, <pb n="255"/> καλούμενον πιννοφύλαξ. Διήκει δʼ
+                        ἐκ τούτου ἡ σὰρξ μέχρι μέσου τοῦ κόγχου, οἱονεὶ ῥίζα, παῤ ἣν ἡ μαργαρῖτις
+                        γεννωμένη, αὔξεται διὰ τοῦ στερεοῦ τῆς κόγχης, καὶ τρέφεται, ὅσον ἂν ᾖ
+                        προσπεφυκυῖα χρόνον. Ἐπειδὰν δὲ παρὰ τὴν ἔκφυσιν ὑποδυομένη ἡ σὰρξ καὶ
+                        μαλακῶς ἐντέμνουσα χωρίσῃ τὴν μαργαρῖτιν ἀπὸ τοῦ κόγχου, ἀμπέχουσα μὲν
+                        οὐκέτι τρέφει, λειοτέραν δʼ αὐτὴν καὶ διαυγεστέραν ποιεῖ καὶ καθαρωτέραν. Ἡ
+                        μὲν οὖν ἐμβύθιος πίννα διαυγεστάτην ποιεῖ καὶ καθαρωτάτην καὶ μεγάλην γεννᾷ
+                        μαργαρῖτιν, ἡ δὲ ἐπιπολάζουσα καὶ ἀνωφερής διὰ τὸ ὑπὸ τοῦ ἡλίου
+                        ἀκτινοβολεῖσθαι, δύσχρους καὶ ἥσσων. Κινδυνεύουσι δʼ οἱ θηρῶντες τοὺς
+                        μαργαρίτας, ὅταν εἰς κεχηνότα κόγχον κατʼ εὐθὺ ἐκτείνωσι τὴν χεῖρα· μύει γὰρ
+                        τότε, καὶ πολλάκις οἱ δάκτυλοι αὐτῶν ἀποπρίονται· ἔνιοι δὲ καὶ παραχρῆμα
+                        ἀποθνήσκουσιν. Ὁσοι δʼ ἂν ἐκ πλαγίου ὑποθέντες τὴν χεῖρα τύχωσι, ῥᾳδίως τοὺς
+                        κόγχους ἀπὸ τοῦ λίθου ἀπο· πῶσιν.</quote>
+                    </cit>
+                    </p>
+                </div></div>
+
+                    <div type="textpart" subtype="section" n="3">
+                        <pb n="256"/>
+                       <ab><title>EX ISIDORI CHARACENI OPERE INCERTO.</title></ab>
+                        <!-- the paragraph numbering starts from 34 because the previous ones (21-33) are in Latin -->
+                        <div type="textpart" subtype="paragraph" n="34"><p>34. 
+                            <cit>
+                            <bibl>Lucianus Macrob. c. 15</bibl> <quote>Ἀρταξέρξης ἕτερος Περσῶν βασιλεὺς, ὅν φησιν
+                            ἐπὶ τῶν πατέρων ἑαυτοῦ Ἰσίδωρος ὁ Χαρακηνὸς συγγραφτὺς βασιλεύειν, ἔτη
+                            ερία καὶ ἐνενήκοντα βιοὺς ἐπιβουλῇ τἀδελφοῦ Γωσίθρου ἐδολοφονήθη.</quote></cit></p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="35"><p>35. 
+                            <cit>
+                            <bibl>Id. ib. c. 18</bibl> <quote>Γόαισος δὲ, ὥς φησιν Ἰσίδωρος ὁ Χαρακηνὸς, ἐπὶ τῆς
+                            ἑαυτοῦ ἡλικίας Ὀμανῶν τῆς ἀρωιατοφόρου βασιλεύσας πεντεκαίδακα καὶ
+                            ἐκατὸν γεγοοὼς ἐτῶν ἐτελεύτησε νόσῳ.</quote>
+                        </cit>
+                        </p>
+                    </div></div>
+                </div>
+
+
+
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,2049 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+<title xml:lang="lat">Stadiasmus Magni Maris</title>
+<author>Anonymous</author>
+<editor xml:lang="lat">Carolus Müllerus</editor>
+<funder>Harvard Library Arcadia Fund</funder>
+<principal>Gregory Crane</principal>
+<respStmt>
+<persName xml:id="DDD">Digital Divide Data</persName>
+<resp>Corrected and encoded the text</resp>
+</respStmt>
+<respStmt>
+<persName>Gregory Crane</persName>
+<resp>Editor-in-Chief, Perseus Digital Library</resp>
+</respStmt>
+<respStmt>
+<persName>Matt Munson</persName>
+<resp>Project Manager (University of Leipzig), 2016 - present</resp>
+</respStmt>
+<respStmt>
+<persName>Annette Gessner</persName>
+<resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+</respStmt>
+<respStmt>
+<persName>Thibault Clérice</persName>
+<resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+</respStmt>
+<respStmt>
+<persName>Bruce Robertson</persName>
+<resp>Technical Advisor</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<authority>Harvard College Library</authority>
+
+<idno type="filename">tlg0077.tlg001.1st1K-grc1.xml</idno>
+<availability>
+<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+</availability>
+<date>2017</date>
+<publisher>Harvard College Library</publisher>
+<pubPlace>United States</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<listBibl>
+<biblStruct>
+<monogr>
+
+
+<title xml:lang="lat">Geographi Graeci Minores</title>
+<editor>
+<persName>
+<name xml:lang="lat">Carolus Müllerus</name>
+<addName xml:lang="deu">Karl Müller</addName>
+</persName>
+</editor>
+<author ref="urn:cts:greekLit:tlg0077">Anonymous</author>
+
+<imprint>
+<publisher>Ambroise-Firmin Didot</publisher>
+<pubPlace>Paris</pubPlace>
+<date>1855</date>
+</imprint>
+
+<biblScope unit="volume">1</biblScope>
+
+</monogr>
+<ref target="https://archive.org/details/geographigraeci00philgoog">The Internet Archive</ref>
+</biblStruct>
+</listBibl>
+</sourceDesc>
+</fileDesc>
+
+
+<encodingDesc>
+
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+Architecture.</p>
+
+
+<refsDecl n="CTS">
+
+<cRefPattern n="paragraph" matchPattern="(.+).(.+)"
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts paragraphs</p>
+</cRefPattern>
+
+<cRefPattern n="section" matchPattern="(.+)"
+replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts sections</p>
+
+</cRefPattern>
+
+
+</refsDecl>
+
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+<language ident="lat">Latin</language>
+<language ident="deu">German</language>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change who="Chiara Palladino">created the file</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0077.tlg001.1st1K-grc1">
+<div type="textpart" subtype="section" n="1">
+<pb n="427"/>
+<head>ΑΝΩΝΥΜΟΥ ΕΤΑΔΙΑΣΜΟΣ ΗΤΟΙ ΠΕΡΙΠΛΟΥΣ ΤΗΣ ΜΕΓΑΛΗΣ ΘΑΛΑΣΣΗΣ.</head>
+<head>ΠΡΟΟΙΜΙΟΝ.</head>
+<div type="textpart" subtype="paragraph" n="1a"><p>Δεδειγμένων οὖν τούτων, τὸ φιλομαθὲς καὶ σπουδαῖον ἀγαμένῳ τῆς σῆς ἀγάπης, ἀδελφὲ τιμιώτατε,
+<pb n="428"/> ἔδοξέ μοι καὶ τὸν τῆς μεγάλης θαλάσσης σταδιασμὸν ἤτοι περίπλουν δηλῶσαί σοι
+ἀκριβέστατα, ὅπως καὶ τούτων ἀναγνοὺς ἔμπειρος ἔσῃ. Ἀρξάμενος <supplied reason="omitted"
+>οὖν</supplied> ἀπὸ Ἀλεξανδρείας τῆς Φαρίτιδος <supplied reason="omitted">τὰ τῆς Λιβύης διηγήσομαι
+<lb n="5"/> ἕως τῶν Ἡρακλεωτικῶν Στηλῶν, εἶτα τὰ τῆς Ἀσίας, πάλιν ἀρξάμενος ἀπὸ Ἀλεξανδρείας τῆς
+Φαρίτιδος</supplied> ἕως Διοσκουρίδος, τῆς ἐν τῷ Πόντῳ κειμένης, καὶ <supplied reason="omitted"
+>τὰ</supplied> τῆς Εὐρώπης ἀπὸ Ἱεροῦ, τῆς πρὸς τῇ Χαλκηδονίῃ κειμένης, μέχρι Ἡρακλεωτικῶν Στηλῶν καὶ
+<lb n="10"/> Γαδείρων, θέλων πάντας ἀνθρώπους ὠφελεῖν. Ἐμφανιῶ δὲ καὶ τὰς διαιρέσεις ἀπὸ τῆς Ἀσίας
+πρὸς τὴν Εὐρώπην, γράψω δὲ καὶ τῶν νήσων τὰ ἀπʼ ἀλλήλων διαστήματα, πόσαι τέ εἰσι, καὶ τίνες
+φαίνονται ἐν τῷ πλέειν αὐτὰς, καὶ ὁπηλίκαι εἰσὶ, καὶ τίσιν ἀνέμοις <lb n="15"/> χρῶνται, καὶ ποῖος ὁ
+πλοῦς δείξω σοὶ κατὰ ἀλήθειαν.</p>
+<pb n="429"/>
+</div></div>
+
+<div type="textpart" subtype="section" n="2">
+<head>ΣΤΑΔΙΑΣΜΟΣ ΤΗΣ ΘΑΛΑΣΣΗΣ</head>
+
+
+<div type="textpart" subtype="paragraph" n="1"><p>1. Ἀπὸ Ἀλεξανδρείας εἰς Χερσόνησον — λιμήν ἐστι — στάδιοι β΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="2"><p>2. Ἀπὸ Χερσονήσου εἰς Δυσμὰς — (λιμήν ἐστι <supplied reason="omitted">φορτηγοῖς</supplied>
+ἀγωγῆς χιλίων οὐ μείζονος) — <supplied reason="omitted">στάδιοι</supplied>
+<lb n="5"/>ζ΄.</p>
+
+<pb n="430"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="3"><p>3. Ἀπὸ Δυσμῶν εἰς Πλινθίνην — σάλος ἐστίν· ὁ τόπος ἀλίμενος — στάδιοι ζ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="4"><p>4. Ἀπὸ Πλινθίνης ἐπὶ Ταπόσιριν — πόλις ἐστὶν ἀλίμενος ἱερὸν τοῦ Ὀσίριδος — στάδιοι ζ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="5"><p>5. Ἀπὸ Ταποσίρεως ἐπὶ τὸ Χιμὼ — κώμη ἐστί· <lb n="5"/> βράχη ἐπιφαινόμενα — στάδιοι ζ΄.</p>
+
+<pb n="431"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="6"><p>6. Ἀπὸ τοῦ Χιμὼ ἐπὶ τὸν Γλαῦκον στάδιοι π΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="7"><p>7. Ἀπὸ τοῦ Γλαύκου εἰς Ἀντίφρας — σάλος ἐστὶν ὁ τόπος — στάδιοι π΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="8"><p>8. Ἀπὸ τῶν Ἀντιφρῶν ἐπὶ τὴν Δέραν — ὕφορμός <lb n="5"/> ἐστι θερινὸς, καὶ ὕδωρ ἔχει —
+στάδιοι ζ΄.</p>
+
+<pb n="432"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="9"><p>9. Ἀπὸ τῆς Δέρρας ἐπὶ τὸ Ζεφύριον — λιμήν ἐστι καὶ σάλον ἔχει — στάδιοι υ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="10"><p>10. Ἀπὸ τοῦ Ζεφυρίου εἰς Πεζώνην στάδιοι ρι΄. Ἀπὸ <gap reason="omitted"/> σταδίων ταύτης
+σκόπελός ἐστι, καὶ καλεῖται <lb n="5"/> Μύρμηξ· καὶ ἀκρωτήριον, καὶ καλεῖται Τραχεῖα.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="11"><p>11. Ἀπὸ Πεζώνης εἰς Πνιγέα στάδιοι ζ΄· ἀκρωτήριόν ἐστι ταπεινόν· εἰσάγου δεξιῶς εἰς τὸν
+πλαταμῶνα.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="12"><p>12. Ἀπὸ τοῦ Πνιγέως εἰς τὸν Φοινικοῦντα στάδιοι <lb n="10"/> ρμ΄· νησία εἰσὶ Δίδυμα· ὕφορμος
+ὑπʼ αὐτέ· βάθος φορτηγοῖς· ὕδωρ ἔχει λακκαῖον ἐν τῇ φάραγγι.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="13"><p>13. Ἀπὸ Φοινικοῦντος ἐπὶ τὰ Ἑρμαῖα στάδιοι ζ΄· ἐκ δεξιῶν τὴν ἄκραν ἔχων ὁρμίζου· ὕδωρ ἔχει
+ἐπὶ τοῦ πύργου.</p>
+
+
+<pb n="433"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="14"><p>14. Ἀπὸ Ἑρμαίων ἐπὶ Λευκὴν ἀκτὴν στάδιοι κ΄· νησίον παράκειται ἐκεῖ ταπεινὸν, ἀπέχον ἀπὸ τῆς
+γῆς σταδίους β΄· ὕφορμός ἐστι φορτηγοῖς, τοῖς ἀφʼ ἑσπέρας ἀνέμοις ἐν δὲ τῆ γῇ ὑπὸ τὸ ἀκρωτήριον
+ὅρμος ἐστὶ <lb n="5"/> μακρὸς παντοίαις ναυσίν· ἱερὸν Ἀπόλλωνος, ἐπίσημον χρηστήριον· καὶ ὕδωρ ἔχει
+παρὰ τὸ ἱερόν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="15"><p>15. Ἀπὸ Λευκῆς Ἀκτῆς ἐπὶ Ζύγριν στάδιοι ζ΄· νησίον ἐστί· <supplied reason="omitted">τοῦτο
+ἔχων</supplied> εὐώνυμον προσορμίζου· ὕδωρ ἔχει ἐν τῆ ἄμμῳ.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="16"><p><lb n="10"/>16. Ἀπὸ Ζύγρεως εἰς Λαδαμαντίαν στάδιοι κ΄· νῆσος ἱκανή παράκειται <del>μεγάλη</del>· αὐτὴν
+ἔχων δεξιὰν, κατάγου λιμήν ἐστι παντὶ ἀνέμῳ· ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="17"><p>17. Ἀπὸ Λαδαμαντίας ἐπὶ τὰ Καλαμαίου στάδιοι μ΄· ἀκρωτήριόν ἐστιν ἔχον σκόπελον ἐκ δεξιῶν
+αὐτοῦ ὕφορμον.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="18"><p><lb n="15"/>18. Ἀπὸ τῶν Καλαμαίου ἐπὶ Γραίας γόνυ στάδιοι θ΄. ἄκρα ἐστὶ τραχεῖα, ἔχουσα ἐπὶ τοῦ ὑψηλοῦ
+σκόπελον· ἐπὶ δὲ τῆς γῆς δένδρον· ὅρμος ἐστὶ, καὶ ὕδωρ ἔχει ὑπὸ <supplied reason="omitted"
+>τὸ</supplied> δένδρον· φυλάσου νότον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="19"><p>19. Ἀπὸ Γραίας γόνατος ἐπὶ τὸν Ἄρτον στάδιοι ρκ΄. <lb n="20"/> ἀκρωτήριόν ἐστι τραχὺ, οὐκ
+ἔχον ὕφορμον, καὶ ἐπὶ τοῦ ἀκρωτηρίου ταῦροι δύο ὡς νῆσοι ἀνατείνοντες εἰς τὸ πέλαγος ταύτην κάμψας,
+ὄψει τὴν πόλιν Παραιτόνιον. <pb n="434"/> Γίνονται ὁμοῦ οἱ πάντες ἀπὸ Ἀλεξανδρείας εἰς Παραιτόνιον
+στάδιοι αφν΄.<pb n="435"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="20"><p>20. Ἀπὸ Παραιτονίου εἰς Δελφῖνας <supplied reason="omitted">καὶ</supplied> ἐπὶ τὸ Ζεφύριον
+στάδιοι ζ΄· νῆσοί εἰσι δύο καὶ ἀκρωτήριον· λιμήν ἐστι παντὶ ἀνέμῳ· καὶ ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="21"><p>21. Ἀπὸ τοῦ Ζεφυρίου καὶ τῶν Δελφίνων ἐπὶ τὸν <lb n="5"/> Ἆπιν στάδιοι λ΄· κώμη ἐστί· ταύτην
+πλέεις σταδ. κ΄· ὅρμος ἐστίν· ὕδωρ ἔχει ἐν τῇ κώμῃ.</p>
+
+<pb n="436"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="22"><p>22. Ἀπὸ τοῦ Ἄπιος εἰς Νήσους στάδιοι ζ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="23"><p>23. Ἀπὸ τῶν Νήσων εἰς Σεληνίδα στάδιοι ο΄· ἄκρα ἐστὶν, ἔχουσα ὕφορμον· ἔχει δὲ ἐκ δεξιῶν
+βρέχη· καθορῶν τὸ βράχος κατάγου.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="24"><p><lb n="5"/>24. Ἀπὸ Σεληνίδος ἐπὶ Ἀζὺ στέδιοι η΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="25"><p>25. Ἀπὸ τῆς Ἀζὺ ἐπὶ Τυνδαρείους στάδιοι ρκ΄· σκόεἰσιν· <pb n="437"/> ὑπὸ τούτους ἐστὶ
+φορτηγοῖς ἀγκυροβολία.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="26"><p>26. Ἀπὸ <supplied reason="omitted">τῶν Τυνδαρείων</supplied> σκοπέλων ἐπὶ τὸ Χαυτοῖον
+στάδιοι ρμ΄· ὕφορμός ἐστι πλοίοις μικροῖς· ὕδωρ ἔχει πηγαῖον ἀνακτὸν ἐν τοῖς ἀγροῖς.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="27"><p><lb n="5"/>27. Ἀπὸ τοῦ Χαυταίου ἐπὶ Ζυγρὰς στάδιοι ρμ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="28"><p>28. Ἀπὸ Ζυγρῶν εἰς Ἐννησύφοραν στάδιοι ο΄· ὕφορμός ἐστι θερινός ὕδωρ ἔχει ἐν τῇ ἄμμῳ, καὶ
+ἐπὶ θαλάσσης σκόπελον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="29"><p>29. Ἀπὸ Ἐννησυφόρας εἰς Καταβαθμὸν στάδιοι ρκ΄· <pb n="438"/> χώρα ἐστὶν ὑψηλή· λιμήν ἐστι
+παντὶ ἀνέμῳ· ὕδωρ ἔχει ἐν <supplied reason="omitted">τῇ</supplied> πρώτη νάπῃ εἰς τὸ πρὸς νότον
+μέρος, ἐν τῷ φρουρίῳ, ὄμβριον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="30"><p>30. Ἀπὸ Καταβαθμοῦ εἰς Πετράντα στάδιοι ρν΄. <lb n="5"/> Παραπλεύσας ὡς σταδίους λ΄ ὄψει
+παρεμφαίνουσαν ὅο. ἄκραν ὑψηλὴν καὶ μεγάλην· κατʼ αὐτὴν ὄψει εἰς σάλον καὶ λίμνην μεγάλην· ἐκ δὲ τῶν
+εὐωνύμων χειροποίητος ὅρμος ἐστίν· ἔχει δὲ ὕδωρ ὑπὸ τὴν συκῆν· διὸ καὶ ὁ τόπος Συκῆ καλεῖται.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="31"><p><lb n="10"/>31. Ἀπὸ Συκῆς εἰς Πάνορμον στάδιοι λ΄· νάπη ἐστὶ ὄι. βαθεῖα· ὕδωρ ἔχει ὑπὸ τὰς συκᾶς πάνυ
+καλόν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="32"><p>32. Ἀπὸ Πανόρμου ἐπὶ τὴν Εὐρεῖαν στάδιοι ρν΄· <pb n="439"/> φάραγξ ἐστὶν, ἔσω δὲ αἰγιαλὸς
+καὶ ἐπʼ αὐτοῦ συκαῖ· ὅρμος ἐστὶ καλός ὕδωρ ἔχει γλυκύ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="33"><p>33. Ἀπὸ Εὐρείας ἐπὶ τὸν Πετράντα <supplied reason="omitted">στέδιοι<gap reason="omitted"
+/></supplied>· ὕδωρ ἔχει πολὺ ἐν ἑκατέροις τοῖς μέρεσιν.
+<lb n="5"/>
+Γίνονται ὁμοῦ ἀπὸ Ἀλεξανδρείας ἕως Πετράντος στάδιοι αϚ΄.</p>
+<pb n="440"/>
+
+</div></div>
+
+<div type="textpart" subtype="section" n="3">
+<head>ΛΟΙΠΟΝ ΜΑΡΜΑΡΙΚΗ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="34"><p>34. Ἀπὸ Πετράντος ἐπὶ τὴν Κάρδαμιν στάδιοι ρν΄· ὅρμος ἐστιν· ἄκρα ἀπολήγουσα, σκοπὰς ἔχουσα·
+ὁρμίζου ἐπʼ αὐτὴν τοῖς ἄνωθεν ἀνέμοις· ὕδωρ ἔχει ἐν ταῖς ἠπείροις.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="35"><p>
+<lb n="5"/>35. Ἀπὸ τῆς Καρδάμεως ἕως εἰς Μενέλαον στάδιοι ρ΄· λιμήν ἐστιν· ὕδωρ ἔχει πλατὺ ἐν τῇ
+ἄμμῳ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="36"><p>36. <supplied reason="omitted">Ἀπὸ Μενελάου εἰς Κατανεῖς στάδιοι <gap reason="omitted"
+/></supplied></p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="37"><p>37. Ἀπὸ Κατανέων εἰς Κυρθάνιον στάδιοι ρν΄· ἀπὸ σταδίων ὀκτὼ παράπλεε <del>ἔχει γὰρ βράχη
+ὑψηλά</del>· <lb n="10"/> ἔχει ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="38"><p>38. Ἀπὸ Κυρθανίου εἰς Ἀντίπυργον στάδιοι σκ΄· ὅρμος ἐστὶ θερινός νῆσος δέ ἐστι, καὶ κατʼ
+αὐτὴν πύργος· <pb n="441"/> ἱερὸν τοῦ Ἄμμωνος ὕδωρ ἔχει ἐν τῷ αἰγιαλῷ τῷ ἐξ ἐναντίας.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="39"><p>39. <supplied reason="omitted">Ἀπὸ Ἀντιπύργου εἰς τὸν Μικρὸν Πετρέντα . στάδιοι <gap
+reason="omitted"/>.</supplied></p>
+
+<pb n="442"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="40"><p>40. Ἀπὸ τοῦ Μικροῦ Πετράντος εἰς τὸν Βάτραχον στάδιοι λ΄· ὕφορμός ἐστι θερινός ἄκρα ἐστὶ
+σκοπὰς ἔχουσα· ἔχει ὕδωρ πολὺ ἐν τῇ νάπῃ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="41"><p>41. Ἀπὸ τοῦ Βατράχου εἰς Πλατεῖαν στάδιοι σν΄· πρὸς τῷ πελάγει κεῖταινῆσος καλουμένη Σιδωνία
+(ἔχει ὕφορμον θερινὸν φορτηγοῖς) ἀπὸ σταδίων λ΄· ἔχει δὲ ὕδωρ πρὸς τῇ γῇ ἐν τῷ πύργῳ.</p>
+
+<pb n="443"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="42"><p>42. Ἀπὸ Πλατείας εἰς τὸν Παλίουρον <supplied reason="omitted">στέδιοι <gap reason="omitted"
+/></supplied>· ὕδωρ ἔχει πλατύ.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="43"><p>43. Ἀπὸ τοῦ Παλιούρου εἰς τὴν Φαίαν στάδιοι ζ΄· ὕδωρ ἔχει συνακτὸν ἀπὸ σταδίων ιε΄.</p>
+
+<pb n="444"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="44"><p>44. Ἀπὸ τῆς Φαίας εἰς τὸν Διόνυσον στάδιοι ζ΄· τεῦθεν <supplied reason="omitted"
+>ἐν</supplied> ἀριστερᾷ κατάγου.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="45"><p>45. Ἀπὸ τοῦ Διονύσου εἰς Χερρόνησον στάδιοι ζ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="46"><p>46. Ἀπὸ Χερρονήσου ἐπὶ τὴν Ἄζαριν στάδιοι ρ΄· <lb n="5"/> ἐντεῦθεν ἀναχθεὶς παράπλεε· πέτραι
+εἰσὶν ὑψηλαί· ὕδωρ ἔχει καὶ ποταμὸν μέγαν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="47"><p>47. Ἀπὸ τῆς Ἀζάριδος παραπλεύσαντι τὰ παράγαια. εἰς Δάρνην στάδιοι ρν΄.</p>
+
+<pb n="445"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="48"><p>48. Ἀπὸ Δάρνης ἐπὶ τὸ Ζεφύριον στάδιοι ρν΄· ἄκρα ἐστὶ δασεῖα· ὕφορμός ἐστι θερινός.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="49"><p>49. Ἀπὸ τοῦ Ζεφυρίου εἰς Χέρσιν στάδιοι ο΄· ἀναμέσον τοῦ Ζεφυρίου καὶ τῆς Χέρσιος, ἀπέχων
+σταδίους <lb n="5"/> ι΄, ἔστιν ὅρμος Ἀφροδισιὰς καλούμενος ἔστι δʼ ἐπ᾿ αὐτῷ ἱερὸν Ἀφροδίτης.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="50"><p>50. Ἀπὸ τῆς Χέρσιος ἐπὶ τὸ Ἐρυθρὸν στάδιοι ζ΄· κώμη ἐστίν.</p>
+
+<pb n="446"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="51"><p>51. Ἀπὸ τοῦ Ἐρυθροῦ εἰς Ναύσταθμον στάδιοι ο΄· σάλος ἐστὶν ἀνατείνων· ὕδωρ ἔχει ἐν τῇ
+ἄμμῳ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="52"><p>52. Ἀπὸ Ναυστάθμου εἰς Ἀπολλωνίαν στάδιοι ρκ΄. Πάντες ὁμοῦ ἀπὸ Παραιτονίου εἰς Ἀπολλωνιάδα
+στάδιοι <lb n="5"/> γφν΄.</p>
+
+<pb n="447"/>
+</div></div>
+
+<div type="textpart" subtype="section" n="4">
+<head>ΛΟΙΠΟΝ <supplied reason="omitted">ΠΕΝΤΑΠΟΛΙΣ</supplied> ΚΥΡΗΝΗΣ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="53"><p>53. Ἀπὸ Ἀπολλωνιάδος εἰς Φυκοῦντα στάδιοι ρ΄· κώμην ἔχει· ὁρμίζοιο ἂν ὑπʼ αὐτὸν τοῖς ἀφʼ
+ἑσπέρας ἀνέμοις· ὅρμος ἐστὶ θερινός· ἔχει ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="54"><p>54. Ἀκὸ Φυκοῦντος εἰς Ναυσίδα στάδιοι ρζ΄· κώμη <lb n="5"/> ἐστίν· ἔχει ὕδωρ ἐν τῷ
+αἰγιαλῷ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="55"><p>55. Ἀπὸ Ναυσίδος εἰς Πτολεμαΐδα στάδιοι σν΄· πόλις <pb n="448"/> ἐστὶ μεγίστη· ἐπίσαλός
+ἐστιν ὁ τόπος, καὶ νῆσον ἔχει· Ἶλος καλεῖται· ἀσφαλίζου.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="56"><p>56. Ἀπὸ Πτολεμαΐδος εἰς Τεύχειρα στάδιοι σν΄· πόλις ἐστὶ Πενταπόλεως ἀρχαία. Αὕτη καλεῖται
+Ἀρσινόη.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="57"><p><lb n="5"/>57. Ἀπὸ Τευχείρων εἰς Βερνικίδα στάδιοι τν΄. <pb n="449"/> Ὁ πλοῦς κάμπτεται· πλεύσας ἐς
+σταδίους Ϛʼ ὄψει ἀκρωτήριον προτεῖνον πρὸς ἐσπέραν· παράκειται δὲ βράχη μετέωρα· φυλάσσου παραπλέων·
+ὄψει δὲ νησίον ταπεινὸν <pb n="450"/> μελανόν· Βραχέα καλεῖται τὸ ἀκρωτήριον· εἰς τὰ εὐώνυμα ἔχει
+ὅρμον πλοιαρίοις μικροῖς.</p>
+<p>Οἱ πάντες ὁμοῦ ἐξ Ἀπολλωνιάδος εἰς Βερνικίδα στάδιοι αρν΄.</p>
+
+
+
+<pb n="451"/>
+</div></div>
+
+<div type="textpart" subtype="section" n="5">
+<head>ΑΟΙΠΟΝ ΣΥΡΤΙΕ ΚΥΡΗΝΑΙΩΝ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="58"><p>58. Ἀπὸ Βερνικίδος εἰς τὰ Ῥίνια στέδιοι ξ΄.</p>
+
+<pb n="452"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="59"><p>59. Ἀπὸ Ῥίνων ἐπὶ τὸν Πίθον στάδιοι ι΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="60"><p>60. Ἀπὸ τοῦ Πίθου ἐπὶ Θεοτιμαῖον στάδ. α΄· ὅρμος ἐστὶ θερινός· αἰγιαλὸς βαθύς.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="61"><p>61. Ἀπὸ Θεοτιμαίου ἐπὶ τὰς Ἁλὰς στάδιοι ψι΄· αἰγιαλός <lb n="5"/> ἐστιν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="62"><p>62. Ἀκὸ τῶν Ἁλῶν ἐπὶ τὸ Βόρειον στάδιοι ν΄· ἀκρωτήριόν ἐστιν ἔχον ὕφορμον.
+<del>Σίρτις Κυρήνης.</del></p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="63"><p>63. Ἀπὸ τοῦ Βορείου εἰς Χέρσιν στάδιοι ρμ΄· ὅρμος ἐστὶ τοῖς ἐτησίοις· ὕδωρ ἔχει ἐπὶ τοῦ
+φρουρίου.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="64"><p><lb n="10"/>64. Ἀπὸ τοῦ Κέρκιος ἐπὶ τὴν Ἀμάστορος στάδιοι ρι΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="65"><p>65. Ἀπὸ τῆς Ἀμάστορος ἐπὶ τὸ Ἡράκλειον στάδιοι π΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="66"><p>66. Ἀπὸ τοῦ Ἡρακλείου εἰς τὸ Δρέπανον στάδιοι ζ΄·
+
+<pb n="453"/>
+ἀκρωτήριόν ἐστιν ὑψηλὸν τοῦ Ἡρακλείου, ἔχον θῖνα ἄμμου λευκῆς· ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="67"><p>67. Ἀπὸ τοῦ Δρεπάνου ἐπὶ τὸ Σεραπεῖον στάδιοι ρ΄. παράδρομον ὄψει θῖνα λευκήν μεγίστην, ἀφʼ
+ἧς, ἂν <lb n="5"/> ὀρύξῃς, ἔξεις ὕδωρ γλυκύ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="68"><p>68. Ἀπὸ τοῦ Σεραπείου εἰς Διαρροιάδα στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="69"><p>69. Ἀπὸ Διαρροιάδος ἐπὶ τὸν Ἆπιν στάδ. α΄· ὕφορμός ἐστιν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="70"><p>70. Ἀπὸ δὲ τοῦ Σεραπείου ἐπὶ τὸν Καινὸν στάδιοι <lb n="10"/> ρν΄· φρούριόν ἐστιν ἔρημον ὕδωρ
+ἔχει· ἔστι δὲ ἀλίμενος.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="71"><p>71. Ἀπὸ τοῦ Καινοῦ ἐπὶ τὸν Εὔσχοινον στάδιοι ο΄ <del>ὁ</del> αἰγιαλός ἐστι βαθύς· βουνὸς δέ
+ἐστιν ἐν τῇ χώρῳ περιφερής· ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="72"><p>72. Ἀπὸ τοῦ Εὐσχοίνου ἐπὶ τοὺς Ὑφάλους στέδιοι ο΄· νησίον ἐστὶν ὑπόσαλον· ἔχει δὲ καὶ
+αἰγιαλὸν βαθύν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="73"><p>73. Ἀπὸ τῶν Ὑφάλων ἐπὶ τὸν Σκοπελίτην στάδιοι π΄· σκόπελός ἐστιν, ἀπὸ τῆς γῆς σταδίοις ιε΄,
+ὑψηλὸς, ὅμοιος ἐλέφαντι.</p>
+
+<pb n="454"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="74"><p>74. Ἀπὸ τοῦ σκοπέλου πρὸς λίβα <supplied reason="omitted">ἐν</supplied> σταδίοις β΄ νῆσός
+ἐστιν ὑψηλή· Ποντία καλεῖται.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="75"><p>75. Ἀπὸ Ποντίας πρὸς μεσημβρίαν <supplied reason="omitted">ἐν</supplied> σταδίοις <lb n="5"
+/> ζ΄ νῆσός ἐστι καλουμένη Μαία, καὶ ὑπʼ αὐτήν ὕφορμος· ὕδωρ ἔχει ἀνακτόν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="76"><p>76. Ἀπὸ τῆς Μαίας ἐπὶ τὸν Ἀστρόχονδα στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="77"><p>77. Ἀπὸ τοῦ Ἀστρόχονδα ἐπὶ τὸν Κροκόδειλον στάδιοι π΄· ὅρμος ἐστὶ θερινὸς καὶ ὕδωρ ἔχει
+ῥεύματα ἔχον.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="78"><p><lb n="10"/>78. Ἀπὸ τοῦ Κροκοδείλου ἐπὶ τὸ Βόρειον στάδιοι πδ΄· <pb n="455"/> κώμη ἐστί· φρούριον
+ἔρημον· ὅρμος καλὸς ἀπὸ λιβός ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="79"><p>79. Ἀπὸ τοῦ Βορείου εἰς τὸ Ἀντιδρέπανον στάδιοι κ΄· ἀκρωτήριόν ἐστιν ὕδωρ ἔχον.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="80"><p><lb n="5"/>80. Ἀπὸ τοῦ Ἀντιδρεπάνου ἐπὶ τὸ Μένδριον στάδιοι ν΄· ἄνυδρός”</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="81"><p>81. Ἀπὸ τοῦ Μενδρίου ἐπὶ τὸ Κοζύνθιον στάδιοι ρκ΄· ἄκρα ἐστὶ τραχεῖα· ὅρμος καλὸς, ἄνυδρος
+δέ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="82"><p>82. Ἀπὸ τοῦ Κοζυνθίου ἐπὶ Ἀμμωνίου Πηγὰς στάδιοι <lb n="10"/> ρι΄· αἰγιαλός ἐστιν.</p>
+
+<pb n="456"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="83"><p>83. Ἀπὸ Ἀμμωνίου Πηγῶν εἰς Αὐτομάλακα στάδιοι ρπ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="84"><p>84. Ἀπὸ Αὐτομαλάκων ἐπὶ Φιλαίνων βωμοὺς στάδιοι ρπε΄· ὅρμος ἐστὶ θερινὸς καλὸς, καὶ ὕδωρ
+ἔχει. <pb n="457"/> Ἕως τούτου τοῦ ἀκρωτηρίου εἰσὶ Κυρηναίων ὄρη καὶ Κυρηναίων χώρα.</p>
+<p>Οἱ πάντες ὁμοῦ ἀπὸ Βερνικίδος ἕως Φιλαίνων βωμῶν στάδιοι β.</p>
+
+</div></div>
+
+<div type="textpart" subtype="section" n="6">
+<head>ΑΟΙΠΟΝ ΣΥΡΤΙΣ ΜΕΓΑΛΗ.</head>
+
+
+<lb n="5"/>
+<div type="textpart" subtype="paragraph" n="85"><p>85. Ἀπὸ Φιλαίνων βωμῶν ἕως Ἵππου ἄκρας στάδιοι <pb n="458"/> υ΄· ἀκρωτήριόν ἐστι τραχύ· ἔχει
+ὕφορμον καὶ ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="86"><p>86. Ἀπὸ Ἵππου ἄκρας ἐπὶ τὸν Ἔπηρον στάδιοι τν΄· λιμήν ἐστι πλοίοις μικροῖς· ἔχει ὕδωρ· τοῦτό
+ἐστι φρούριον <lb n="5"/> βαρβάρων.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="87"><p>87. Ἀπὸ Ἐπήρου ἐπὶ Κόρακα στάδιοι ρν΄.</p>
+
+<pb n="459"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="88"><p>88. Ἀπὸ Κόρακος εἰς Εὐφραντὰς στάδιοι σ΄· λιμήν ἐστι, καὶ ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="89"><p>89. Ἀπὸ Εὐφραντῶν ἐπὶ τὸν Δυσωπὸν στάδιοι ρν΄.</p>
+
+<pb n="460"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="90"><p>90. Ἀπὸ Δυσωποῦ ἐπὶ Ἀσπίδα στάδιοι τν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="91"><p>91. Ἀπὸ Ἀσπίδος εἰς Ταριχείας στάδιοι τν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="92"><p>92. Ἀπὸ Ταριχειῶν ἐπὶ Κεφαλὰς στάδιοι υ΄· <supplied reason="omitted">ἀκρωτήριόν
+ἔστιν.</supplied></p>
+
+<pb n="461"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="93"><p>93. <supplied reason="omitted">Ἀπὸ Κεφαλῶν εἰς Νεάπολιν στάδιοι φν΄.</supplied>
+Προσφερόμενος ἐκ τοῦ πελάγους ὄψει χώραν ταπεινὴν, νησία ἔχουσαν· ὅταν δὲ αὐτοῖς ἐγγίσῃς, ὄψει τὴν
+πόλιν παραθαλάσσιον καὶ θῖνα λευκὸν καὶ αἰγιαλόν· ἡ δὲ <pb n="462"/> πόλις ἐστὶ λευκὴ ὅλη· λιμένα δὲ
+οὐκ ἔχει ἀσφαλῶς ὁρμίζου ἐπὶ τοῦ Ἑρμαίου. Αὕτη καλεῖται Λέπτις. Οἱ πάντες ὁμοῦ ἀπὸ Φιλαίνων βωμῶν
+εἰς Λέπτιν τὴν Μεγάλην στάδιοι δϚ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="94"><p><lb n="5"/>94. Ἀπὸ Λέπτεως ἐπὶ Ἑρμαῖον στάδιοι ε΄· ὅρμος ἐστὶ πλοίοις μικροῖς.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="95"><p>95. Ἀπὸ Ἑρμαίου ἐπὶ Γάφαρα στάδιοι τ΄· ἄκρα ἐστὶν <pb n="463"/> ἔχουσα ὅρμον ἐξ ἑκατέρων τῶν
+μερῶν· ἔχει ὕδωρ· καλεῖται <supplied reason="omitted">Aἰ</supplied>νεόσπορα· ἔστι γὰρ ὁμοία
+νήσῳ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="96"><p>96. Ἀπὸ τῶν Γαφάρων ἐπὶ τὸν Ἀμαραίαν στάδιοι μ΄· πύργος ἐστὶ ὕφορμος· ὕδωρ ἔχει ποτάμιον·
+ἔστι δὲ γεώργιον πλησίον τοῦ ποταμοῦ. Οἰνολάδων ὁ ποταμὸς καλεῖται.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="97"><p>97. Ἀπὸ τοῦ Ἀμαραία ἐπὶ Μεγέρθιν στάδιοι μ΄· πόλις ἐστὶ καὶ λιμένα ἔχει καὶ ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="98"><p>98. Ἀπὸ Μεγέρθεως εἰς Μακαραίαν στάδιοι υ΄.</p>
+
+<pb n="464"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="99"><p>99. Ἀπὸ Μακαραίας εἰς Σαβράθαν στάδιοι υ΄· πόλις ἐστὶν ἀλίμενος σάλον ἔχει.</p>
+
+</div></div>
+<div type="textpart" subtype="section" n="7">
+<head>ΑΟΙΠΟΝ ΣΥΡΤΙΣ ΜΙΚΡΑ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="100"><p>100. Ἀπὸ Σαβράθης ἐπὶ Λοκροὺς στάδιοι τ΄· κώμη ἐστὶ, καὶ ὑπεράνω τῆς κώμης πύργος
+ὑψηλός.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="101"><p>
+<lb n="5"/>101. Ἀπὸ Λοκρῶν ἐπὶ Ζεύχαριν στάδιοι τ΄· φρούριον <pb n="465"/> ἔχον πύργον· <del>ὁ δὲ
+πύργος</del> λιμήν ἐστι ἐπίσημος.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="102"><p>102. Ἀπὸ Ζευχάριος ἐπὶ Γέργιν στάδιοι τν΄· πύργος ἐστὶ, καὶ φρούριον ἔχει καὶ λιμένα καὶ
+ὕδωρ.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="103"><p><lb n="5"/>103. Ἀπὸ Γέργεως εἰς Μήνιγγα στάδιοι ρν΄· πόλις ἐστὶν ἐπὶ νήσῳ· ἡ δὲ νῆσος ἀπέχει τῆς γῆς
+σταδίους η΄· ἔχει δὲ πόλεις ἱκανὰς, μητρόπολις δέ ἐστιν <supplied reason="omitted">αὕτη</supplied>.
+Αὕτη οὖν ἐστιν ἡ τῶν Λωτοφάγων νῆσος. Ἔστιν ἐν αὐτῇ βωμὸς Ἡρακλέους μέγιστος καλεῖται. Ἔστι δὲ <lb
+n="10"/> λιμὴν καὶ ὕδωρ ἔχει.
+
+<pb n="466"/>
+Οἱ πάντες ὁμοῦ ἀπὸ Λέπτεως εἰς Μήνιγγαστάδιοι βτ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="104"><p>104. Ἀπὸ Μήνιγγος εἰς τὴν ἤπειρον <gap reason="omitted"/> στάδιοι σ΄· πόλις ἐστὶ, ἔχει δὲ
+καλὸν λιμένα καὶ ὕδωρ.</p>
+
+<pb n="467"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="105"><p>105. Ἀπὸ δὲ τῆς Γέργεως εἰς Κιδιφθὰν στάδιοι ρπ΄· πόλις ἐστὶ καὶ λιμένα ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="106"><p>106. <supplied reason="omitted">Ἀκὸ Κιδιφθῆς εἰς Τακάπην στάδιοι σʼ</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="107"><p>107. Ἀπὸ Τακάπης εἰς Νεάπολιν στάδιοι ρ΄· πόλις <lb n="5"/> ἐστὶ καὶ λιμένα έχει.</p>
+
+<pb n="468"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="108"><p>108. <supplied reason="omitted">Ἀπὸ Νεαπόλεως εἰς Θέναν στάδιοι σκ΄</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="109"><p>109. <supplied reason="omitted">Ἀπὸ Θένης εἰς Ἄχολλαν στάδιοι φ΄</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="110"><p>110. Ἀπὸ Ἀχόλλης εἰς Ἀλιπόταν στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="111"><p>111. <supplied reason="omitted">Ἀπὸ Ἀλιπότης εἰς Θάψον στάδιοι ρκ΄</supplied>.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="112"><p><lb n="5"/>112. Αὗται αἱ πόλεις λιμένας ἔχουσι, διὰ <supplied reason="omitted">δὲ</supplied> τὸ
+ἐπικεῖσθαι αὐταῖς βράχη εἰς ταύτας πλέουσι σύμμετρα πλοῖα. Τῇ δὲ Ἀχόλλῃ καὶ τῇ Ἀλιπότῃ καὶ τῇ
+Κιδιφθῇ ἐπίκειται Κέρκινα ἡ νῆσος, ἀπέχουσα σταδίους ρκ΄. Ἀπὸ δὲ τῆς Λωτοφάγων, ἥπερ ἐστὶ Μῆνιγξ,
+ἐπὶ τὴν <lb n="10"/> Κέρκιναν νῆσον διὰ πόρου στάδιοι ψν΄. Ἀπὸ Θένης <pb n="469"/> εἰς Κέρκιναν <gap
+reason="omitted"/>· κατὰ <supplied reason="omitted">τὴν</supplied> πόλιν βράχη ἐστὶ φερόμενα πρὸς
+τὴν πόλιν. Ἀπὸ Κερκίνης εἰς Θάψον στάδιοι ψ΄· ἔχει δὲ νῆσον καλὴν, πελαγίαν, κειμένην κατὰ Θάψον
+πρὸς βορρᾶν, ἀπέχουσαν σταδίους π΄· ἔχει δὲ <lb n="5"/> λιμένα καὶ ὕδωρ. Αὗται αἱ νῆσοι περιέχουαι
+τὸ Ἰκάριον πέλαγος.</p>
+</div></div>
+
+<div type="textpart" subtype="section" n="8">
+
+<head>ΛΟΙΠΟΝ ΦΟΙΝΙΚΗ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="113"><p>113. Ἀπὸ Θάψου εἰς Λέπτιν τὴν μικρὰν στάδιοι ρο΄· πόλις μικρά ἐστι· καταφανῆ ἔχει βράχη· καὶ
+ἡ καταγωγή ἐστιν ἐπὶ τῇ πόλει δύσκολος πένυ.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="114"><p><lb n="10"/>114. Ἀπὸ Λέπτεως εἰς Θερμὰς στάδιοι ξ΄· κώμη ἐστί· τὸν δʼ αὐτὸν τρόπον καὶ ὧδε βράχη ἐστὶ
+δυσκατάγωγα.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="115"><p>115. Ἀπὸ Θερμῶν πλεύσας σταδίους μ΄ ὄψει ἀκρωτήριον <pb n="470"/> ἐπʼ αὐτῶ ἔχον δύο νησία
+ἐσκολοπισμένα· ὕφορμός ἐστιν.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="116"><p>116. Ἀπὸ τοῦ ἀκρωτηρίου ὄψει Ἀδραμύτην τὴν πόλιν ἀπὸ σταδίων μ΄· ἀλίμενος.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="117"><p><lb n="5"/>117. Ἀπὸ Ἀδραμύτου ἐπὶ τὴν Ἀσπίδα στέδιοι φ΄· ἀκρωτήριόν ἐστιν ὑψηλὸν καὶ περιφανές, οἷον
+ἀσπίς. Ἐπʼ αὐτὴν πλέε τὴν ἄρκτον <supplied reason="omitted">ὡς</supplied> παραφαίνειν ἐξ εὐωνύμων·
+εἰσὶ γὰρ εἰς τὸ πέλαγος ἐκεῖνο βράχη πολλὰ καὶ τραχέα· εἶτα ἐκφανήσεταί σοι <del>ἡ Ἀσπὶς καὶ ἐπʼ <lb
+n="10"/> αὐτῇ</del> Νεάπολις. Ἀπὸ τοῦ κόλπου Νεαπόλεως ἐπὶ τὴν Ἀσπίδα στάδιοι σʼ· ὑψηλός ἐστιν ὁ
+τόπος, καὶ ἐπʼ αὐτῷ ἡ πόλις ἔχει λιμένα πρὸς ζέφυρον ἀπὸ σταδίων ι΄ ἀνώτερον τῆς πόλεως.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="118"><p>118. Ἀπὸ Ἀσπίδος <supplied reason="omitted">ἐπὶ τὴν Ἑρμαίαν ἄκραν στάδιοι <lb n="15"/>
+σ΄</supplied>.</p>
+
+<pb n="471"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="119"><p>119. <supplied reason="omitted">Ἀπὸ τῆς Ἑρμαίας ἄκρας ἐπὶ Μισούαν λιμένα στάδιοι
+ρκ΄</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="120"><p>120. <supplied reason="omitted">Ἀπὸ Μισούας λιμένος</supplied> ἐπὶ Θερμὰ στάδιοι ξ΄. κώμη
+ἐστὶ καὶ ἐπάνω τὰ θερμά.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="121"><p><lb n="5"/>121. Ἀπὸ τῶν Θερμῶν εἰς Κάρπην στάδιοι ρξ΄· πόλις ἐστὶ καὶ λιμένα ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="122"><p>122. Ἀπὸ Κάρπης εἰς Μάξυλαν στάδιοι κ΄· πόλις ἐστὶ καὶ λιμένα ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="123"><p>123. Ἀπὸ Μαξύλων ἐπὶ τὸν Γαλάβραντα στάδιοι ν΄ — <lb n="10"/> ὅρμος ἐστὶν ἕως <supplied
+reason="omitted">τῆς τῶν</supplied> ἀμμώδων ἀγωγῆς.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="124"><p>124. Ἀπὸ τοῦ Γαλάβραντος εἰς Καρχηδόνα στάδιοι ρκ΄· πόλις ἐατὶ μεγίστη καὶ λιμένα ἔχει, ἐν
+δὲ τῇ πόλει πύργος ἐστίν· <supplied reason="omitted">ἐπὶ</supplied> δεξιὰν ὁρμίζου ὑπὸ τὸ χῶμα. Οἱ
+πάντες ὁμοῦ ἀπὸ Μήνιγγος τῆς τῶν Λωτοφάγων <lb n="15"/> νήσου ἕως εἰς Καρχηδόνα στάδιο φν΄.</p>
+
+<pb n="472"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="125"><p>125. Ἀπὸ δὲ Καρχηδόνος εἰς Κάστρα Κορνηλίου στάδιοι τγ΄· λιμήν ἐστι παραχειμαστικός· ἐν
+τούτῳ παραχειμάζει μεγάλα πλοῖα.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="126"><p>126. Ἀπὸ Κάστρων Κορνηλίου εἰς Οὔτικα στάδιοι <lb n="5"/> κδ΄· πόλις ἐστί· λιμένα οὐκ ἔχει,
+ἀλλὰ σάλον ἔχει ἀσφαλίζου.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="127"><p>127. Ἀπὸ Οὐτίχων <gap reason="omitted"/>.</p>
+<p><supplied reason="omitted">Λείπει τὰ ἀπὸ Οὐτικων ἕως τῶν Ἡρακλείων στηλῶν καὶ τὰ ἀπʼ
+Ἀλεξανδρείας ἕως Κάρνῶν.</supplied></p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="128"><p><lb n="10"/>128. <supplied reason="omitted">Ἀπὸ <gap reason="omitted"/></supplied> εἰς Κάρνας στάδιοι
+κδ΄· σάλος ἐστί· κοιτῶνας δὲ ἔχει πλοίοις μικροῖς ἀσφαλῶς κατάγου.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="129"><p>129. Ἀπὸ Καρνῶν <del>ἐπὶ χωρίον</del> ἐπʼ ἀκρωτήριον καλούμενον Βαλανέας στάδιοι σ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="130"><p>130. Ἀπὸ ἀκρωτηρίου βαλανεῶν ἐπʼ ἀκρωτήριον <lb n="15"/> Πάλτον στάδιοι ζ΄.</p>
+
+<pb n="473"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="131"><p>131. Ἀπὸ ἀκρωτηρίου Πάλτου κάμψαντος ἐπʼ ἀκρωτήριον Βραχίων σταδ. ι΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="132"><p>132. Ἀπὸ δὲ Βαλανεῶν ἄκρας ἐπ᾿ εὐθείας εἰς Πάλτον στάδιοι σ΄.
+<lb n="5"/>
+Οἱ πάντες ἐκ Πτολεμαΐδος, παρὰ γῆν παραπλέοντος, <del>εἰςελθεῖν</del> εἰς Πάλτον στάδιοι
+β.</p>
+</div></div>
+
+
+<div type="textpart" subtype="section" n="9">
+<head>ΚΑΙ ΑΟΙΠΟΝ ΚΟΪΑΗ ΣΥΡΙΑ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="133"><p>133. Ἀπὸ Πελτου ἐπὶ χωρίον Παλτηνῶν στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="134"><p>134. Ἀπὸ Παλτηνῶν ἐπὶ λιμένα κείμενον ἐπʼ αἰγιαλῷ, <lb n="10"/> ἔχοντα καθʼ αὑτὸν φάραγγα,
+στάδιοι κ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="135"><p>135. Ἀπὸ Παλτηνῶν εἰς Γάβαλα στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="136"><p>136. Ἀπὸ Γαβάλων εἰς ποταμὸν πλωτὸν καλούμενον<gap reason="omitted"/>, στάδιοι μ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="137"><p>137. Ἀπὸ <gap reason="omitted"/>πλωτοῦ ποταμοῦ εἰς ἄκραν, ἐφʼ ἧς κεῖται <lb n="15"/> πόλις
+Λαοδίκεια, στάδιοι σ΄· ἀπὸ δὲ τοῦ ποταμοῦ εἰς Βαλανέας στάδιοι ο΄· ἀπὸ Βαλανεῶν εἰς Λαοδίκειαν
+εὐβωδρομοῦντι λευκονότῳ ἐπὶ τὰ πρὸς ἠῶ <supplied reason="omitted">μέρη</supplied> τῆς ἄρκτου,
+στάδιοι σ΄.</p>
+
+<pb n="474"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="138"><p>138. Ἀπὸ Λαοδικείας εἰς Ἡράκλειαν στάδιοι κ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="139"><p>139. Κάμψαντι δὲ τὸ ἀκρωτήριον λιμήν ἐστι καλού. μινος Λευκός· στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="140"><p>140. Ἀπὸ Λευκοῦ λιμένος ἐπὶ κώμην καλουμένην <lb n="5"/> Πασιερέαν στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="141"><p>141. Ἀπὸ τῆς κώμης ἐπ᾿ ἄκραν Πολιὰν καλουμένην στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="142"><p>142. Ἀπὸ Ἡρακλείας ἐπὶ Ποσείδιον τὸν ἐπίτομον στάδιοι ρ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="143"><p><lb n="10"/>143. Ἀπὸ δὲ τῆς ἄκρας τοῦ ἐπὶ Ποσειδίου εἰς πόλιν Σιδῶνα στάδιοι τ΄· ὑπὲρ ἧς ἐστιν ὄρος
+ὑψηλὸν, καλούμενον Θρόνος.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="144"><p>144. Ἀπὸ Σιδωνίας πόλεως εἰς τόπον ὁρίζοντα τὸ Κάσιον, καλούμενον δὲ Χαλαδρόπολιν στάδιοι
+ξ΄.</p>
+
+<pb n="475"/>
+
+</div>
+<div type="textpart" subtype="paragraph" n="145"><p>145. Ἀπὸ Χαλάδρου ἐπὶ νῆσον καλουμένην Μακρὰν στάδιοι ι΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="146"><p>146. Ἀπὸ Μακρᾶς νήσου ἐπὶ τὸ Νυμφαῖον στάδιοι ν΄, Ὁ δὲ ὅλος περίπλους τραχύς ἐστιν ἀπὸ τοῦ
+Κασίου. <lb n="5"/> Τοῦτον τὸν τόπον παράπλεε ἀπὸ τῆς γῆς στάδίοις κ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="147"><p>147. Ἀπὸ Νυμφαίου ἐπὶ κόλιιν Ἀντιόχειαν, ἔχουσαν ἐμπόριον καὶ παῤ αὑτὴν ποταμὸν Ὀρόντην
+καλούμενον, στάδιοι υ΄· ἔστι δὲ ὁ ποταμὸς ἀπὸ σταδίων ιε΄.</p>
+
+
+<lb n="10"/>
+</div>
+<div type="textpart" subtype="paragraph" n="148"><p>148. Ἀπὸ τοῦ ποταμοῦ εἰς Σελεύκειαν στάδιοι μ΄. ἀπὸ δὲ τοῦ Ποσειδίου τὸν ἐπίτομον εἰς
+Σελεύκειαν πεσόντι <gap reason="omitted"/>ζεφύρῳ στάδιοι ρι΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="149"><p>149. Ἀπὸ Σελευκείας ἐπὶ τὰ Γεώργια στάδιοι ρμβ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="150"><p>150. Ἀπὸ τῶν Γεωργίων ἐπὶ τὸν Ῥωσαῖον κόλπον <lb n="15"/> στάδιοι τ΄· ἀπὸ δὲ τοῦ Ποσειδίου
+ἀκρωτηρίου ἐπὶ τὸν κόλπον οὐριώτατα στάδιοι σ΄.</p>
+
+<pb n="476"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="151"><p>151. Ἀπὸ Ῥωσοῦ Τερδνίας εἰς πόλιν Μυρίανδρον στάδιοι ζ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="152"><p>152. Ἀπὸ τοῦ Μυριάνδρου εἰς Ἀλεξάνδρειαν κατʼ Ἰσσὸν στάδιοι ρκ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="153"><p><lb n="5"/>153. Ἀπὸ Ἀλεξανδρείας εἰς τὰς Κιλικίας πύλας στάδιοι σ΄.
+Ὁμοῦ οἱ πάντες ἀπὸ Πάλτοω ἕως τῶν Κιλικίων πυλῶν στάδιοι βφ΄.</p>
+
+</div></div>
+
+<div type="textpart" subtype="section" n="10">
+<head>ΛΟΙΠΟΝ ΚΙΛΙΚΙΛ.</head>
+
+<pb n="477"/>
+
+<div type="textpart" subtype="paragraph" n="154"><p>154. Ἀπὸ τῶν Κιλικίων πυλῶν εἰς τὸ Ἱερὸν στάδιοι ρκ΄· <supplied reason="omitted"
+>ἀπὸ</supplied> τούτου ἐστὶν ὑπερβῆναι εἰς <del>τὸν τόπον</del> εἰς <supplied reason="omitted"
+>Νικό</supplied> πολιν.</p>
+
+<pb n="478"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="155"><p>155. Ἀπὸ τοῦ Ἱεροῦ εἰς πόλιν Ἰεσὸν στάδιοι ψ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="156"><p>156. Ἀπὸ Ἰσσοῦ εἰς τὰς Ἀμανικὰς πύλας ἐν τῷ κοιλοτάτῳ τοῦ κόλπου στάδιοι Ϛ΄.</p>
+
+<pb n="479"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="157"><p>157. Ἀπὸ τῶν Πωλῶν εἰς κώμην Ἀλὰς στέδιοι ν΄· ἀτὸ τοῦ Μυριάνδρου, οὐριοδρομοῦντος, στάδιοι
+ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="158"><p>158. Ἀπὸ τῶν Ἀλῶν εἰς πόλιν Αἰγαίας στάδιοι ρ΄· ἀπὸ δὲ τοῦ Μυριάνδρου εἰς Αἰγαίας
+εὐθυδρομοῦντος ἐπὶ <lb n="5"/> τὸν πόλον νότῳ στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="159"><p>159. Ἀπὸ Αἰγαιῶν ὁ παράπλους κρημνώδης ἐπὶ αὄρ. κώμην Σερρέτιλλιν σταδίων ρν΄. Ἀπὸ δὲ Ῥωσοῦ
+εὐΘυδρομοῦντι ἐπὶ τὴν Σερρέτιλλιν ἐπὶ τὸν πόλον νότῳ στάδιοι σν΄, Κατὰ δὲ τὴν Σερρέτιλλιιν κώμη
+ἐπάνω <lb n="10"/> Πύραμος καλεῖται, καὶ ὑπεράνω αὐτοῦ ὄρος καλούμενον Πάριον ἀπὸ σταδίων ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="160"><p>160. Ἀπὸ τῆς Σερρετίλλεως κώμης ἐπ᾿ ἄκραν Ἰανουαρίαν στάδ. α΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="161"><p>161. Ἀπὸ τῆς Ἰανουαρίας ἄκρας ἐπὶ τὰς Διδύμους <lb n="15"/> νήσους στάδιοι λ΄.</p>
+
+<pb n="480"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="162"><p>162. Ἀπὸ τῶν Διδύμων νήσων εἰς πόλιν καλουμένην Μαλλὸν στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="163"><p>163. Ἀπὸ Μαλλοῦ εἰς Ἀντιόχειαν ἐπὶ Πυράμου ποταμοῦ στάδιοι ρν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="164"><p><lb n="5"/>164. Ἀπὸ τῆς Ἀντιοχείας ἐπὶ τὴν Ἰωνίαν, ἣν νῦν Κεφαλὴν καλοῦσι, στάδιοι ο΄. Παρὰ τὸ
+ἀκρωτήριον ποταμός ἐστι πλωτὸς, <supplied reason="omitted">ὃς</supplied> Πύραμος καλεῖται.
+
+<pb n="481"/>
+Ἀπὸ τοῦ <supplied reason="omitted">Ῥωσαίου</supplied> σκοπέλου δὲ μὴ κατακολπίζοντι, ἀλλʼ
+ἐπʼ εὐθείας πλέοντι εἰς Ἀντιόχειαν ἐπὶ τὰ πρὸς ἑσπέραν <supplied reason="omitted">τῆς ἄρκτου
+μέρη</supplied> νότῳ, <supplied reason="omitted">κατὰ</supplied> τὰ εὐώνυμα τῆς ἠπείρου μακρὸν
+διαφαλλομένῳ, στάδιοι τν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="165"><p><lb n="5"/>165. Ἀπὸ τοῦ Πυράμου ποταμοῦ εὐθυδρομοῦντι εἰς Σόλους ἐπὶ τὰ πρὸς ἑσπέραν μέρη τῆς ἄρκτου
+<supplied reason="omitted">ἀπηλιώτῃ</supplied> νότου μικρόν <supplied reason="omitted">τι</supplied>
+παρέλκοντι στάδιοι φ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="166"><p>166. Ἀπὸ τῆς κεφαλῆς τοῦ Πυράμου ἐπὶ τὸν ποταμὸν Σάρον στάδιοι ρκ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="167"><p><lb n="10"/>167. Ἀπὸ Σάρου ποταμοῦ ἐπὶ <supplied reason="omitted">τὸ</supplied> στόμα τῆς λίμνης, ὃ
+καλεῖται Ῥηγμοὶ, στάδιοι ο΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="168"><p>168. Ἀπὸ Ῥηγμῶν εἰς Ταρσὸν στάδιοι ο΄. διὰ μέσης τῆς πόλεως ποταμὸς Κύδνος.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="169"><p>169. Ἀπὸ Ῥηγμῶν ἐπὶ χωρίον Ζεφύριον στάδιοι ρκ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="170"><p><lb n="15"/>170. <supplied reason="omitted">Ἀπὸ Ζεφυρίου εἰς Σόλους στάδιοι ν΄</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="171"><p>171. Ἀπὸ δὲ Σόλων ἐπὶ κώμην Καλανθίαν στάδιοι ν΄. <del>ρν΄</del>.</p>
+
+<pb n="482"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="172"><p>172. Ἀπὸ Καλανθίας κώμης εἰς Ἐλαιοῦντα στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="173"><p>173. Ἀπὸ Ἐλαιούσσης εἰς κώμην καλουμένην Κώρυκον στάδιοι κ΄· ἀπὸ δὲ Σόλων εἰς Κώρυκον
+στάδιοι <lb n="5"/> σπ΄· ὑπὲρ ὧν ἀπέχον ἐστὶν ἄντρον Κωρύκιον καλούμενον σταδίους ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="174"><p>174. Ἀπὸ τοῦ Κωρύκου ἐπὶ λιμένα καλούμενον Καλὸν Κορακήσιον στάδιοι ρκε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="175"><p>175. Ἀπὸ τοῦ Κορακησίου ἐστὶν ἡ Ποικίλη πέτρα, <lb n="10"/> ἥτις ἔχει κλίμακα, διʼ ἧς ἐστιν
+ὁδὸς εἰς Σελεύκειαν τὴν ἐπὶ Καλυκάδνου σταδίων ο΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="176"><p>176. Ἀπὸ τοῦ Κορακησίου ἐπὶ τὸν ποταμὸν Καλωδνὸν στάδιοι μ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="177"><p>177. Ἀπὸ τοῦ ποταμοῦ ἐπὶ ἄκραν ἀμμώδη, στενὴν, <pb n="483"/> Σαρπηδονίαν καλουμένην, στάδιοι
+π΄. Ἀπʼ αὐτῆς ἀνατείνοντα βράχεα ὡς σταδίους κ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="178"><p>178. Ἀπὸ τῆς ἄκρας τῆς Σαρπηδονίας, ἔγγιστα <supplied reason="omitted">κειμένης</supplied>
+πρὸς τὴν Κύπρον, εἰς πόλιν Καρπάσειαν οὐριώτατα <lb n="5"/> στάδιοι υ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="179"><p>179. Ἀπὸ Σαρπηδονίας ἄκρας εἰς Σελεύκειαν στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="180"><p>180. Ὁμοίως καὶ εἰς Ὅλμους στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="181"><p>181. Ἀπὸ δὲ τῶν Ὅλμων ἐπʼ ἄκραν καὶ κώμην καλουμένην <lb n="10"/> Μύλας στάδιοι μ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="182"><p>182. Ἀπὸ τῆς ἄκρας εἰς λιμένα Νησούλιον καὶ ἄκραν ἐπινησίαν στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="183"><p>183. Ἀπὸ τῆς ἄκρας ἐπὶ χωρίον Φιλαίαν στάδιοι κ΄. Οἱ πάντες ἀπὸ Μυλαίων εἰς Φιλαίαν τὸν
+ἐπίτομον <lb n="15"/> στάδιοι φ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="184"><p>184. Ἀπὸ τῆς Φιλαίας ἐπὶ νῆσον Πιτυοῦσσαν στάδιοι ρλ΄. Ἀπέχει ἡ Πιτυοῦσσα ἀπὸ χερρονήσου τῆς
+πρὸς τῇ Μόλῃ σταδίους κ΄. Ἀπὸ τῶν ἀκρῶν τῆς Πιτυούσσης πρὸς τὴν Ἀφροσιδιάδα στάδιοι με΄.</p>
+
+<pb n="484"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="185"><p>185. Ἀπὸ Ἀφροδισιάδος, ἐκ τῶν εὐωνύμων ἔχοντι τὴν Πιτυοῦσσαν, ἐπὶ πύργον κείμενον πρὸς
+ἄκραν, ἣ προσονομάζεται Ζεφύριον, στάδιοι μ΄· ἀπὸ δὲ τῆς Σαρπηδονίας ἄκρας εἰς Ἀφροδισιάδα ὁ πλοῦς
+σταδίων ρκ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="186"><p><lb n="5"/>186. Ἡ δὲ Ἀφροδισιὰς κεῖται ἔγγιστα τῆς Κύπρου πρὸς Ἀχαιῶν ἀκτὴν, <supplied reason="omitted"
+>ἐῤ ἣν</supplied> κατὰ πρύμναν ἔχοντι τὰ μέρη τῆς ἄρκτου στάδιοι φ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="187"><p>187. Ἀπὸ Ἀφροδισιάδος ἐπὶ χωρίον καλούμενον Κίφισον στάδιοι λε΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="188"><p><lb n="10"/>188. Ἀπὸ Μέλανος ποταμοῦ ἐπὶ ἄκραν Κρουνοὺς στάδιοι μ΄.</p>
+
+<pb n="485"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="189"><p>189. Ἀπὸ τῶν Κρουνῶν ἐπὶ τὰ Πισούργια, εὐώνυμον ἔχοντι τὴν Κράμβουσαν, στάδιοι με΄. Ἀπὸ τῆς
+Ἀφροδισιάδος ἐπὶ τὰ Πισούργια στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="190"><p>190. Ἀπὸ τῶν Πισουργίων εἰς κόλπον Βερνίκην στάδιοι <lb n="5"/> ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="191"><p>191. <supplied reason="omitted">Ἀπὸ Βερνίκης ἐπὶ Κελένδεριν στάδιοι ν΄</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="192"><p>192. Ἀπὸ Κελενδέρεως εἰς Μανδάνην στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="193"><p>193. Ἀπὸ Μανδάνης ἐπ᾿ ἀκρωτήριον Ποσείδιον καλούμενον στάδιοι ξ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="194"><p><lb n="10"/>194. Ἀπὸ Μανδάνης ἐπὶ τὰ Διονυσοφάνους στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="195"><p>195. Ἀπὸ <supplied reason="omitted">τῶν</supplied> Διονυσοφάνους εἰς Ῥυγμανοὺς στάδιοι
+ν΄.</p>
+
+<pb n="486"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="196"><p>196. Ἀπὸ Ῥυγμανῶν εἰς Ἀνεμούριον στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="197"><p>197. Ἀπὸ Ἀνεμουρίου ἐπὶ τὰ τῆς Κύπρου ιἔγγιστα, ἐπὶ Κρομμύου ἄκραν, στάδιοι τ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="198"><p>198. Ἀπὸ δὲ Ἀνεμουρίου εἰς Πλατανοῦντα στάδιοι <lb n="5"/> τν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="199"><p>199. Ἀπὸ Πλατανοῦντος ἐπὶ χωρίον Χάραδρον στάδιοι τν΄. Ὑπέρ δὲ Χαράδρου κεῖται ὄρος μέγα,
+Ἄνδροκος καλούμενον, ἀπὸ σταδίων λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="200"><p>200. Ἀπὸ τοῦ Χαράδρου ἐπὶ χωρίον Κράγον καλούμενον <lb n="10"/> στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="201"><p>201. Ἀπὸ τοῦ Κράγου ἐπὶ χωρίον ἐπὶ θαλάσσης Nεφέλιον στάδιοι κε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="202"><p>202. Ἀπὸ τοῦ Νεφελίου ἐπὶ ἄκραν νησιάζουσαν στάδιοι π΄.</p>
+
+<pb n="487"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="203"><p>203. Ἀπὸ νησιαζούσης ἄκρας εἰς Σελινοῦντα στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="204"><p>204. Ἀπὸ Σελινοῦντος ἐπὶ τὸν Ἀκάμαντα τῆς Κύπρου αοή. στάδιοι αϚ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="205"><p>
+<lb n="5"/>205. Ἀπὸ δὲ Σελινοῦντος εἰς Ναύλους στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="206"><p>206. Ἀπὸ τῶν Ναύλων ἐπὶ χωρίον λεγόμενον Λαέρτην ἐπὶ θαλάσσης στάδιοι τκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="207"><p>207. Ἀπὸ Λαέρτου εἰς Κορακήσιον στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="208"><p>208. Ἀπὸ Κορακησίου εἰς Αὔνησιν <del><gap reason="omitted"/> ἐπὶ χωρίον <lb n="10"/>
+Ἁμαξίαν</del> στάδιοι π΄.</p>
+
+<pb n="488"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="209"><p>209. Ἀπὸ Αὐνήσεως εἰς χωρίον καλούμενον Αὐγὰς στάδιοι ο΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="210"><p>210. Ἀπὸ Αὐγῶν ἐπʼ ἀκρωτήριον Λευκόθειον στάδιοι ν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="211"><p><lb n="5"/>211. Ἀπὸ Λευκοθείου εἰς Κίβυραν στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="212"><p>212. Ἀπὸ Κιβύρας ἐπὶ Ἀρτέμιδος ναὸν στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="213"><p>213. Ἀπὸ Ἀρτέμιδος ναοῦ ἐπὶ ποταμὸν πλωτὸν Mέλανα στάδιοι θ΄.
+Γίνονται οὖν οἱ πάντες ὁμοῦ ἀπὸ Κιλικίων πυλῶν <lb n="10"/> ἕως τοῦ Μέλανος ποταμοῦ στάδιοι
+δν΄.</p>
+</div></div>
+
+
+<div type="textpart" subtype="section" n="11">
+<head>ΛΟΙΠΟΝ ΠΑΜΦΙΛΙΑ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="214"><p>214. Ἀπὸ τοῦ Μέλανος ποταμοῦ εἰς Σίδην στάδιοι ν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="215"><p>215. Ἀπὸ Σίδης εἰς Ἀττάλειαν στάδιοι τν΄· ἀπὸ Ἀτταλείας εἰς τὸ <supplied reason="omitted"
+>Κωρύκιον</supplied> ἐμπόριον στάδιοι τ΄, ἀπὸ δὲ <supplied reason="omitted">τοῦ</supplied> Κωρυκίου
+<supplied reason="omitted">ἐμπορίου</supplied> εἰς Σίδην στάδιοι ν΄. <lb n="15"/> Ἀπὸ Σίδης εἰς τὸν
+Ἀκάμαντα στάδιοι ας΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="216"><p>216. Ἀπὸ Σίδης εἰς Σελεύκειαν στάδιοι π΄.</p>
+
+<pb n="489"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="217"><p>217. Ἀπὸ Σελευκείας εἰς ποταμὸν πλωτὸν καλούμενον Εὐρυμέδοντα στάδιοι ρ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="218"><p>218. <supplied reason="omitted">Ἀπʼ Εὐρυμέδοντος εἰς Κυνοσάριον στάδιοι <gap
+reason="omitted"/></supplied></p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="219"><p>219. Ἀπὸ Κυνοσαρίου ἐπὶ ποταμὸν καλούμενον Κέστρον <lb n="5"/> στάδιοι ξ΄, Ἀναπλεύσαντι τὸν
+ποταμὸν πόλις ἐστὶ Πέργη.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="220"><p>220. <supplied reason="omitted">Ἀπὸ</supplied> τοῦ Κέστρου ἐπὶ Ῥουσκόποδα <supplied
+reason="omitted">στάδωʼ</supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="221"><p>221. Ἀπὸ Ῥουσκόποδος ἐπὶ Μάσουραν καὶ τοὺς Καταράκτας <lb n="10"/> στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="222"><p>222. Ἀπὸ Μασούρας εἰς Μυγδάλην στάδιοι ο΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="223"><p>223. Ἀπὸ Μυγδάλων εἰς Ἀττἀλειαν στάδιοι ι΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="224"><p>224. Ἀπὸ Ἀτταλείας ἐπὶ χωρίον Τένεδον στάδιοι κ΄.</p>
+
+<pb n="490"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="225"><p>225. Ἀπὸ Τενέδου εἰς Λύρναντα χωρίον στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="226"><p>226. <supplied reason="omitted">Ἀπὸ Λύρναντος εἰς Φάσηλιν στάδιοι ρο΄·</supplied> ὑπὲρ τῆς
+πόλεως ὄρος μέγα ὑπέρκειται <del>Φάσηλις</del>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="227"><p>227. Ἐκ δὲ Φασήλιδος εἰς Κώρυκον στάδιοι<gap reason="omitted"/>.</p>
+
+
+<lb n="5"/>
+</div>
+<div type="textpart" subtype="paragraph" n="228"><p>228. Ἀπὸ Κωρύκου ἐπὶ τὸν Φοινικοῦντα στάδιοι λ΄. ὑπὲρ <supplied reason="omitted"
+>αὐτοῦ</supplied> μέγα ὄρος ὑψηλὸν κεῖται Ὄλυμπος καλούμενον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="229"><p>229. <supplied reason="omitted">Ἀπὸ Φοινικοῦντος εἰς Κράμβουσαν στάδιοι ἄας. ν΄·</supplied>
+ἐκ δὲ Φασήλιδος ἐπʼ εὐθείας εἰς Κράμβουσαν στάδιοι <lb n="10"/> ρ΄.</p>
+
+<pb n="491"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="230"><p>230. Ἀπὸ Κραμβούσης ἐπὶ χώραν Ποσιδαρισοῦντα στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="231"><p>231. Ἀπὸ Ποσιδαρισοῦντος ἐπὶ Μωρὸν ὕδωρ καλούμενον στάδιοι λ΄.</p>
+
+
+<lb n="5"/>
+</div>
+<div type="textpart" subtype="paragraph" n="232"><p>232. Ἀπὸ Μωροῦ ιὕδατος ἐπὶ ἄκραν Ἱερὰν καὶ νῆσιον Χελιδονίαν στάδιοι ν΄. 
+Ὁμοῦ οἱ πάντες ἀπὸ τοῦ Μέλανος ποταμοῦ ἕως Χελιδονίων τῷ παρὰ γῆν πλέοντι στάδιοι φ΄· τὸν δὲ
+ἐπίτομον διὰ πόρου εἰς τὰς Χελιδονίας στάδιοι χ΄.</p>
+
+
+<lb n="10"/>
+</div>
+<div type="textpart" subtype="paragraph" n="233"><p>233. Ἔστι δὲ ἀπὸ τῶν Χελιδονίων <supplied reason="omitted">ἐπὶ</supplied> Μάριον καὶ τὸ τῆς
+Κύπρου ἀκρωτήριον, τὸν Ἀκάμαντα, ἐπʼ ἀνατολὰς τοῦ ἡλίου οὐριώτατα ζεφύρῳ στάδιοι αω΄· ἀπὸ δὲ τοῦ
+Ἀνεμουρίου ἐπὶ τὰς Χελιδονίας νήσους στάδιοι αϚ΄·</p>
+</div></div>
+
+
+<div type="textpart" subtype="section" n="12">
+<head>ΑΟΙΠΟΝ ΑΥΚΙΑ.</head>
+
+<lb n="15"/>
+<div type="textpart" subtype="paragraph" n="234"><p>234. Ἀπὸ δὲ τῆς Ἱερᾶς ἄκρας ἐπὶ Μελανίππην στάδιοι λ΄.</p>
+
+<pb n="492"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="235"><p>235. Ἀπὸ δὲ Μελανίππης εἰς Γάγας στάδιοι ξ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="236"><p>236. Ἀπὸ δὲ Γαγῶν ἐπὶ ποταμὸν Λάμυρον στάδιοι ξ΄· ὑπέρ σταδίους ξ΄ κεῖται πόλις Λάμυρα
+καλουμένη.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="237"><p>237. Ἀπὸ Λαμύρου ποταμοῦ εἰς πύργον τὸ Ἴσιον αδγ. <lb n="5"/> καλούμενον στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="238"><p>238. Ἀπὸ τοῦ Ἰσίου πύργου εἰς Ἀνδριακὴν στάδιοι ξ.</p>
+
+<pb n="493"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="239"><p>239. Ἀπὸ Ἀνδριακῆς εἰς Σόμηνα στάδιοι δ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="240"><p>240. Ἀπὸ Σομήνων εἰς Ἀπέρλας στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="241"><p>241. <supplied reason="omitted">Ἀπὸ Ἀπερλῶν ἐπὶ <gap reason="omitted"/>ἀκρωτήριον στάδιοι
+ν΄.</supplied></p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="242"><p>242. Ἀπὸ ἀκρωτηρίου εἰς Ἀντίφελλον στάδιοι ν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="243"><p><lb n="5"/>243. Ἀπὸ Ἀντιφέλλου εἰς νῆσον Μεγίστην στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="244"><p>244. Ἀπὸ Μεγίστης εἰς νῆσον Ῥώγην στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="245"><p>245. Ἀπὸ Ῥώγης ἐπὶ τὰς Ξεναγόρου νήσους στάδιοι τ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="246"><p>246. Ἀπὸ τῶν Ξεναγόρου νήσων εἰς Πάταρα στάδιοι <lb n="10"/> ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="247"><p>247. Ἀπὸ Πατάρων ἐπὶ ποταμὸν πλωτὸν <supplied reason="omitted">Ξάνθον</supplied>
+<del>ὑπέρκειται πόλις Ξάνθος</del> στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="248"><p>248. Ἀπὸ τοῦ ποταμοῦ Ξάνθου εἰς Πύδνας ἐπʼ εὐθείας στάδιοι ξ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="249"><p><lb n="15"/>249. Ἀπὸ Πυδνῶν ἕως τῆς Ἱερᾶς ἄκρας στάδιοι π΄.</p>
+
+<pb n="494"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="250"><p>250. Ἀπὸ Ἱερᾶς ἄκρας εἰς Καλαβαντίαν στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="251"><p>251. Ἀπὸ Καλαβαντίων εἰς Περδικίας στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="252"><p>252. Ἀπὸ Περδικιῶν εἰς Κιεσίδας στάδιοι ν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="253"><p><lb n="5"/>253. Ἀπὸ Κισσίδων ἐπὶ νῆσον Λάγουσαν στάδιοι π΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="254"><p>254. Ἀπὸ Λαγούσης ἐπὶ Τελμησσὸν στάδιοι ε΄. Γίνονται ὁμοῦ οἱ πάντες <supplied
+reason="omitted">ἀπὸ τῆς Ἱερᾶς ἄκρας</supplied> ἕως Τελμησσοῦ στάδιοι αφ΄.</p>
+
+</div></div>
+
+<div type="textpart" subtype="section" n="13">
+<head>ΑΟΙΠΟΝ ΚΑΡΙΑ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="255"><p>255. Ἀπὸ Τελμησσοῦ ἐπὶ Πηδάλιον κατὰ τὴν Ῥόπισαν <lb n="10"/> στάδιοι σ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="256"><p>256. Ἐκ Τελμησσοῦ εἰς Δαίδαλα στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="257"><p>257. Εκ Δαιδάλων εἰς Καλλιμάχην στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="258"><p>258. Ἐκ Καλλιμάχης εἰς Κρύα στίδιοι ξ΄.</p>
+
+<pb n="495"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="259"><p>259. Ἐκ Κρύων εἰς τὰς Κλύδας, στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="260"><p>260. Ἐκ Κλυδῶν ἐπὶ τὸ Πηδάλιον ἀκρωτήριον στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="261"><p>261. Ἀπὸ τοῦ Πηδαλίου ἐπὶ τὸν Ἀγκῶνα τὸν ἐπὶ τοῦ <lb n="5"/> Γλαύκου στάδιοι π΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="262"><p>262. Ἀπὸ τοῦ ἄγκωνος ἐπὶ τὸν Καυνίων Πάνορμον στάδιοι ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="263"><p>263. Ἀπὸ τοῦ Πανόρμου ἐπὶ τὴν Κυμαρίαν καλουμένην στάδιοι ν΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="264"><p><lb n="10"/>264. Ἀπὸ Κυμαρίας εἰς Πασάδαν στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="265"><p>265. Ἀπὸ Πασάδης εἰς Καῦνον στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="266"><p>266. Ἀπὸ Καύνου εἰς τὴν Ῥόπουσαν στάδιοι ιε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="267"><p>267. Ἀπὸ τῆς Ῥοπούσης εἰς τὸ ἀπέναντι, εἰς Λευκόπαγον, στάδιοι μ΄· ἀπὸ δὲ τῆς Ῥοπούσης εἰς
+Σάμον <lb n="15"/> στάδιοι ρ΄.</p>
+
+<pb n="496"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="268"><p>268. Ἀπὸ τῆς Σάμου ἐπὶ <supplied reason="omitted">τὸ</supplied> Ποσείδιον στάδιοι ξ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="269"><p>269. Ἀπὸ τοῦ Ποσειδίου ἐπὶ τὸν Φάλαρον στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="270"><p>270. Ἀπὸ τοῦ Φαλάρου εἰς νῆσον Ἐλαιοῦσσαν καλουμένην <lb n="5"/> στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="271"><p>271. Ἀπὸ τῆς Ἐλαιούσσης εἰς Ῥόδον στάδιοι ρν΄· ἥτις ποιεῖ ἐπὶ Μαλλὸν μὲν σταδ. χ΄, καὶ ἐπὶ
+τὸ Ἱερὸν τῶν Βυζαντίων σταδ. χ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="272"><p>272. Ἐκ Ῥόδου εἰς Ἀλεξάνδρειαν στάδιοι δφ΄. <lb n="10"/> Ἐκ Ῥόδου εἰς Ἀσκάλωνα στάδιοι γχ΄.
+Ἐκ Ῥόδου εἰς Καισάρειαν στάδιοι γχ΄. Ἐκ Ῥόδου εἰς Βηρυτὸν στάδιοι γχ΄. Ἐκ Ῥόδου εἰς Σιδόνα στάδιοι
+γχ΄. Ἐκ Ῥόδου εἰς Βύβλον στάδιοι γχ΄. <lb n="15"/> Ἐκ Ῥόδου εἰς Τρίπολιν στάδιοι γχ΄. Ἐκ Ῥόδου εἰς
+Σελεύκιαν στάδιοι γχ΄. Ἐκ Ῥόδου εἰς Κιλικίαν στάδιοι αφ΄. Ἐκ Ῥόδου εἰς Κώρυκον στάδιοι α. Ἐκ Ῥόδου
+δὲ ἐπὶ τὴν Κύπρον τὴν ἑσπερίαν ἐπʼ <lb n="20"/> ἀνατολὰς τοῦ ἡλίου οὐριώτατα ζεφύρῳ στάδιοι βω΄. Ἐκ
+Ῥόδου εἰς Πάταρα στάδιοι ψ΄. Ἐκ Ῥόδου εἰς Καῦνον στάδιοι υν΄. Ἐκ Ῥόδου εἰς νῆσον Ῥόπουσαν στάδιοι
+τν΄. Ἐκ Ῥόδου εἰς Φύσκον στάδιοι υν΄. <pb n="497"/> Ἐν Ῥόδου εἰς Ἄγνην στέδιοι τν΄. Ἐκ Ῥόδου εἰς
+Κνίδον στέδιοι ψν΄. Ἐκ Ῥόδου εἰς Νίσυρον στάδιοι ψκ΄. Ἐκ Ῥόδου εἰς Τῆλον στάδιοι φν΄. <lb n="5"/>
+Ἀπὸ Λεπαταλέων ἐπὶ τὸ Ποσιίδιον τὸ Καρπάθου στάδιοι υκ΄. Ἐκ Ῥόδου εἰς τὴν Κῶ στάδιοι ων΄. Ἐκ Ῥόδοω
+εἰς τὴν Χίον στάδιοι γ. Ἐκ Ῥόδου εἰς Μύνδον στάδιοι α. Ἐκ Ῥόδου εἰς Σάμον στάδιοι αω΄. Ἐκ Ῥόδου εἰς
+Τένεδον στάδιοι γψ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="273"><p>273. <supplied reason="omitted">Ἔστι δὲ ἀκὸ Ῥόδου εἰς τὸ Σκύλλαιον τῆς Ἀργολίδος πλέειν ἐπὶ
+τὴν δύσιν τοῦ ἡλίου οὐριώτατα ἀπηλιώτῃ σταδίοις <gap reason="omitted"/></supplied>· πλεύσεις δὲ ἔχων
+ἐκ τῶν εὐωνύμων <lb n="15"/> νήσους <supplied reason="omitted">τὴν</supplied> Νίσυρον καὶ τὴν
+Ἀστυπάλειαν, ἐκ δὲ τῶν δεξιῶν τὴν Κῶ καὶ τὴν Λέρον <supplied reason="omitted">καὶ τὴν Κίναραν καὶ
+τὴν Ἀμοργὸν, καὶ πλεύσεις ἐπὶ τὴν Δόνουσαν σταδίοωςν<gap reason="omitted"/></supplied>· τὸ λοιπὸν
+ἀπὸ τῆς Δονούσης λαβὲ εὐωνύμους καὶ Ἰὸν καὶ Σίκινόν καὶ τὴν Σίφνον <del>καὶ τὴν Θήραν</del>
+<lb n="20"/> καὶ τήν Σέριφον καὶ τὴν Κύθνον, ὅθεν ὁρᾶται τὸ Σκύλλαιον.</p>
+
+<pb n="498"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="274"><p>274. Ἀπὸ Κνίδου εἰς τὴν Κῶ στάδιοι ρπ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="275"><p>275. Ἀπὸ Κῶ εἰς Ἁλικαρνασὸν στάδιοι ρπ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="276"><p>276. Ἀπὸ Ἁλικαρνασοῦ εἰς Μύνδον στάδιοι σκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="277"><p>277. Ἀπὸ Μύνδου εἰς Λέρον στάδιοι τν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="278"><p>278. Ἀπὸ Μύνδου εἰς τὴν Κῶ στάδιοι ρμ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="279"><p>279. Ἀπὸ δὲ Κῶ εἰς Λέρον στάδιοι τν΄.
+Ἀκὸ Κῶ εἰς Δῆλον στάδιοι ατ΄.
+Ἀπὸ Κῶ εἰς Σάμον στάδιοι α.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="280"><p>280. Ἔστι δὲ ἀπὸ Κῶ εἰς τὴν Δῆλον πλέειν <supplied reason="omitted">ἐπὶ τὴν <lb n="10"/>
+δύσιν</supplied> τοῦ ἡλίου οὐριώτατα ἀπηλιώτῃ σταδίοις ατ΄. Πλεύσεις δὲ εἰς Κάλυδναν· καταπλεύσεις
+δὲ ἐκ δεξιῶν ἔχων τὸ Ὑψίρισμα καὶ τὰς Καλύδνας καὶ <del>τὴν Κέλεριν καὶ</del> τὴν Λέρον καὶ τὴν
+Πότμον δεξιὰς λαβὼν, τοὺς δὲ Μελαντείους καὶ τὴν Μύκονον ἐκ τῶν εὐωνύμων καὶ <lb n="15"/> Τῆνον
+<supplied reason="omitted">ἐκ δεξιῶν ἔχων</supplied> καταχθῇς εἰς Δῆλον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="281"><p>281. Ἀπὸ Μύνδσυ <gap reason="omitted"/> ἥτις ἐστὶ διὰ τῆς Ἀττικῆς στάδ. σφ΄. πλεύσεις δὲ διὰ
+τῶν Κορσικῶν καὶ τῆς τε Λέρου καὶ τῆς Καλύδνης καὶ τὴν Ὀροβίδα λαβὼν <pb n="499"/>
+<supplied reason="omitted">δεξιὰν</supplied> πλέε ἐπὶ τὰς Ἀμοργίας τήν τε Δόνουσαν καὶ τὴν Νάξον καὶ
+τὴν Κύθνον ἔχε δεξιάν.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="282"><p>282. Ἐὰν δὲ θέλῃς διὰ νήσων πλέειν, οὕτως πλέεις· Ἀπὸ Κῶ εἰς Λέρον σταδίους ον΄. <lb n="5"/>
+Ἐκ Λέρου εἰς Λέβινθον σταδίους σν΄. Ἐκ Λεβίνθου εἰς Κίναρον σταδίους φ΄. Ἐκ Κινάρου ἐπὶ τὰ ἔγγιστα
+τῆς Ἀμοργίας <del>ἐπὶ τὰ πέρατα</del> σταδίους πε΄. Καὶ ὁ παράπλους τῆς Ἀμοργίας εἰς Μινώαν σταδίων
+<lb n="10"/> πε΄. <supplied reason="omitted">Ἀπὸ Μινώας ἐπὶ τὴν Κέρειαν πλεύσεις σταδίους
+πε΄</supplied>. Ἐκ τῆς Κερείας, εὐώνυμον ἔχων τὴν Κέρειαν, εἰς τὸν Ναξίων Πάνορμον σταδίους ξε΄. Ἀπὸ
+τοῦ Πανόρμου εἰς Δῆλον σταδίους υκ΄. <lb n="283."/> Ἀπὸ Κῶ εἰς Λέρον σταδίους τκ΄. Ἀπὸ Λέρου ἐπὶ τὸ
+Παρθένιον σταδίους ξ΄. Ἀπὸ <supplied reason="omitted">τοῦ Παρθενίου τῆς</supplied> Λέρου ἐπὶ τὸ τῆς
+Πότμου Ἀμαζόνιον σταδίους σ΄. Ἀπὸ τοῦ Ἀμαζονίου ἐπὶ τὴν Κορσίαν σταδίους υ΄. <lb n="20"/> Ἀπὸ τῆς
+ἄψης <gap reason="omitted"/> Ἀμαζονίου εἰς Δῆλον σταδίους ψν΄. Ἀπὸ Δήλου εἰς Σῦρον σταδίους ρν΄. <pb
+n="500"/>
+<supplied reason="omitted">Ἀπὸ Σύρου εἰς Ἄνδρον σταδίους ρν΄</supplied>. Ἀπὸ Ἄνδρου εἰς λιμένα
+Γαυρίου σταδίους π΄. Ἀπὸ Γαυρίου ἐπὶ <supplied reason="omitted">τὸ Παιώνιον</supplied> ἀκρωτήριον
+σταδίους ν΄. <lb n="5"/> Ἀπὸ τοῦ ἀκρωτηρίου εἶς <supplied reason="omitted">Γεραιστὸν</supplied>
+ἔγγιστα ἄκρας σταδίους υν΄. Ἀπὸ τῆς Γεραιστοῦ εἰς Κάρυστον σταδίους ρκ΄. Ἐκ Καρύστου εἰς Πεταλίας
+σταδίους ρ΄.</p>
+
+
+<!-- this is actually a mismatch, the edition misses n. 283 -->
+</div>
+<div type="textpart" subtype="paragraph" n="284"><p>284. Ἐπάνειμι· πάλιν ἐπὶ τὰ ἐκ Δήλου διαστήματα <lb n="10"/> πρὸς νήσους τάσδε· Ἐκ Δήλου εἰς
+Θήραν στάδιοι τν΄. Ἐκ Δήλου ἐπὶ τὴν Ἀμοργίαν <del>εἰς τὴν Μινώαν</del> στάδιοι χν΄. Ἐκ Δήλου εἰς
+Ἀνάφην στάδιοι ρ΄. <lb n="15"/> Ἐκ Δήλου εἰς Ἰὸν στάδιοι χν΄. Ἐκ Δήλου εἰς τὰς Κορσίας στάδιοι χν΄.
+Ἐκ Δήλου εἰς Κίμωλον στάδιοι ω΄. Ἐκ Δήλου εἰς Σίφνον στάδιοι χμ΄. Ἐκ Δήλου εἰς Κύθνον στάδιοι τν΄.
+<lb n="20"/> Ἐκ Δήλου εἰς Τῆνον στάδιοι τν΄. Ἐκ Δήλου εἰς Νάξον στάδιοι τν΄. Ἐκ Δήλου ἐπὶ τὴν
+Δόνουσαν στάδιοι τκ΄. Ἐκ Δήλου εἰς Πάτμον στάδιοι ων΄. Ἐκ Δήλου ἐπὶ τὸν Μελέντειον σκόπελον στάδιοι
+ρπ΄. <lb n="25"/> Ἐκ Δήλου εἰς Κέων στάδιοι τ΄. Ἐκ Δήλου εἰς Ἄνδρον στάδιοι ω΄. Ἐκ Δήλου εἰς Πάρον
+στάδιοι υ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="285"><p>285. Ἐπάνειμι πάλιν εἰς Μύνδον, ἀφʼ ἧς κατέλιπον.Ἐκ Μύνδου εἰς Πάνορμον στάδιοι π΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="286"><p><lb n="30"/>286. Ἐκ Μύνδου εἰς Βαργύλια στάδιοι σν΄.</p>
+
+<pb n="501"/>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="287"><p>287. Ἀπὸ Πανόρμου εἰς Ποσείδιον <supplied reason="omitted">τὸ</supplied> καὶ Ἄγκιστρον
+στάδιοι σν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="288"><p>288. Ἀπὸ Βαργυλίων εἰς Ἴασον στάδιοι σκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="289"><p>289. Ἀπὸ Ἰάσου ἐπʼ ἀκρωτήριον Ποσείδιον στάδιοι <lb n="5"/> ρκ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="290"><p>290. Ἀπὸ Ποσειδίου εἰς τὴν Ἀκρίταν στάδιοι σμ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="291"><p>291. Κεῖται κατέναντι <supplied reason="omitted">Ἰάσου</supplied> Πάσσαλα πηγή· ἔνθεν ἐστὶν
+ἀποβῆναι εἰς Μύλασα σταδ. κ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="292"><p>292. Ἀπὸ δὲ τοῦ Ποσειδίου εἰς Πάνορμον στάδιοι μ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="293"><p><lb n="10"/>293. Ἀπὸ Πανόρμου εἰς Μίλητον στάδιοι π΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="294"><p>294. Ἐπάνειμι πάλιν διὰ πόρου εἰς Μύνδον, Ἀπὸ Πανόρμου εἰς Μίλητον στάδιοι τ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="295"><p>295. Ἀπὸ δὲ τῆς Φαρμακούσσης εἰς Μίλητον στάδιοι ρκ΄.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="296"><p><lb n="15"/>296. Ἀπὸ Μιλήτου εἰς Σάμον στάδιοι τ΄. Οἱ πάντες ἀπὸ Τελμησσοῦ ἕως Μιλήτου στάδιοι βφ΄.<pb n="502"/></p>
+
+
+</div></div>
+
+<div type="textpart" subtype="section" n="14">
+
+<head><supplied reason="omitted">ΚΥΠΡΟΥ ΠΕΡΙΠΛΟΥΕ.</supplied></head>
+
+
+<div type="textpart" subtype="paragraph" n="297"><p>297. Ἀπὸ τοῦ Ἀκάμαντος, τὴν Κύπρον εὐώνυμον ἔχοντι εἰς Πάφον στάδιοι τ΄· πόλις ἐστὶ κειμένη
+πρὸς μεσημβρίαν· ἔχει δὲ λιμένα τριπλοῦν παντὶ ἀνiμῳ, καὶ ἱερὸν Ἀφροδίτης.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="298"><p><lb n="5"/>298. Ἀπὸ Πάφου εἰς Νουμήνιον (νῆσός ἐστιν ἔχουσα πηγήν· ὁ δὲ πλοῦς βραχύς· ὅταν δὲ ἐγγίσῃς
+τῷ νησίῳ, τὴν γῆν θλῖβι δεξιᾷ) στάδιοι ρκε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="299"><p>299. Ἀπὸ Νουμηνίου εἰς Παλαίπαφον στάδιοι ρκε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="300"><p>300. Ἀπὸ Παλαιπάφου εἰς Τρήτους (ἀκρωτήριόν <lb n="10"/> ἐστι) στάδιοι ν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="301"><p>301. <supplied reason="omitted">Ἀπὸ Τρήτων εἷς τὸ Κουριακὸν στάδιοι <gap reason="omitted"
+/></supplied>.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="302"><p>302. Ἀπὸ τοῦ Κουριακοῦ εἰς Ἀμαθοῦντα στάδιοι ρν΄· πόλις ἐστὶν ἀλίμενος ἀσφαλίζου τὸν
+τόπον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="303"><p>303. Ἀπὸ δὲ τοῦ Κουριακοῦ ἐπὶ Καργαίας στάδιοι μ΄· <lb n="15"/> ἀκρωτήριόν ἐστιν ἔχον
+λιμένα, ὕφορμον καὶ ὕδωρ. <gap reason="omitted"/></p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="304"><p>304. Ἀπὸ δὲ τοῦ Πηδαλίου ἐπὶ νήσους στάδιοι π΄· πόλις ἐστὶν ἔρημος, λεγομένη Ἀμμόχωστος ἔχει
+δὲ λιμένα παντὶ ἀνέμῳ· ἔχει δὲ ἐν τῇ καταγωγῇ χοιράδας· διαφυλάττου.<pb n="503"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="305"><p>305. Ἀπὸ τῶν νήσων εἰς Σαλαμῖνα στάδιοι ν΄· πόλις ἐστὶ, λιμένα ἔχει.</p>
+</div>
+    <div type="textpart" subtype="paragraph" n="305a"><p>305. Ἀπὸ Σαλαμῖνος εἰς Παλαιὰν στάδιοι ρκ΄· ἐστὶ καὶ λιμένα ἔχει καὶ ὕδωρ.</p>
+<!-- it occurs in this way in the edition. -->
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="306"><p><lb n="5"/>306. Ἀπὸ Παλαιᾶς ἐπὶ τὸν Φιλεοῦντα στάδιοι τ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="307"><p>307. Ἀπὸ Φιλεοῦντος ἐπὶ τὰ Ἄκρα <gap reason="omitted"/> στάδιοι ξ΄· ὄρμοι εἰσὶ δύο, ὁ μέν
+ἐστι χαροπὸς, ὁ δὲ λευκὸς, ἔχοντες ἑκάτεροι ὕδωρ. Ἐπίκειται δὲ ἐπάνω ἱερὸν Ἀφροδίτης· ἐπίκεινται δὲ
+καὶ νῆσοι δύο, ἔχουσαι ἀμφότεραι <lb n="10"/> ἀνάπλους.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="308"><p>308. Ἀπὸ τοῦ Ἀνεμουρίου τῆς Κιλικίας ἐπὶ τὸν Ἀκάμαντα τῆς Κύπρου στάδιο ψ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="309"><p>309. Ἀπὸ Ἀκάμαντος ἔχων δεξιὰν τὴν Κύπρον εἰς Ἀρσινόην τῆς Κύπρου στάδιοι σο΄· πόλις ἐστί·
+λιμέν <lb n="15"/> ἔχει ἔρημον· χειμάζει βορέου.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="310"><p>310. Ἀπὸ δὲ τοῦ Κρομμυακοῦ ἐπὶ τὸ Μελαβοὸν στάδιοι ν΄· ὅρμος ἐστὶ θερινός.<pb n="504"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="311"><p>311. Ἀπὸ Μελαβροῦ εἰς Σόλους στάδιοι τ΄· πόλις ἐστὶν ἀλίμενος.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="312"><p>312. Ἀπὸ Σόλων εἰς Κερύνειαν στάδιοι τν΄· πόλις ἐστίν· ἔχει ὕφορμον.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="313"><p><lb n="5"/>313. Ἀπὸ Κερυνείας εἰς Λάπαθον στάδιοι υν΄. πόλις ἐστὶν ἔχουσα ὅρμον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="314"><p>314. Ἀπὸ Λαπάθου εἰς Καρπάσειαν στάδιοι τν΄· πόλις ἐστίν· ἔχει λιμένα μικροῖς πλοίοις·
+χειμάζει βορέου.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="315"><p><lb n="10"/>315. Ἀπὸ Καρπαθείας ἐπὶ τὰ Ἄκρα στάδιοι ρ΄· ἐντεῦθεν μετέβημεν εἰς τὸ Ἀνεμούριον. Ὁ πᾷς
+περίπλους τῆς Κύπρου στάδιοι ασν΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="316"><p>316. Ἀπὸ τοῦ αὐτοῦ Κουριακοῦ εἰς τὸ Πηλούσιον στάδιοι ατ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="317"><p>317. Ἀπὸ δὲ τοῦ Κιτίου τῆς Κύπρου εἰς Ἀσκάλωνα στάδιοι γτ΄.<pb n="505"/></p>
+
+</div></div>
+
+
+<div type="textpart" subtype="section" n="15">
+<head>ΚΡΗΤΗΣ ΠΕΡΙΠΑΟΥΣ.</head>
+
+
+<div type="textpart" subtype="paragraph" n="318"><p>318. Ἀπὸ τοῦ Κάσου ἐπὶ τὸ Σαμώνιον τῆς Κρήτης, στάδιοι φ΄· ἀκρωτήριόν ἐστι τῆς Κρήτης ἀνέχον
+πρὸς βορρᾶν ἐπιπολύ· ἔστι δὲ ἱερὸν Ἀθηνᾶς ἔχει ὕφορμον καὶ ὕδωρ· τὰ δὲ ἄλλα ἠφανισμένα.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="319"><p><lb n="5"/>319. Ἀπὸ Σαμωνίου εἰς Ἱερὰν Πύδναν στάδιοι π΄· πόλις ἐστίν· ἔχει ὅρμον· ἔχει δὲ καὶ νῆσον
+<supplied reason="omitted">ἣ</supplied> καλεῖται Χρύσεα· ἔχει λιμένα καὶ ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="320"><p>320. Ἀπὸ Ἱερᾶς Πύδνης εἰς Βίενον στάδιοι ο΄· λίδριόν ἐστιν ἀπέχον τῆς θαλάσσης.<pb n="506"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="321"><p>321. Ἀπὸ Βιένου εἰς Αέβηναν στάδιοι ο΄· ἐκεῖ παράκειται νησίον, δ καλεῖται Ὀξεῖα· ὅδωρ
+ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="322"><p>322. Ἀπὸ Λεβήνας εἰς Ἁλὰς στάδιοι κ΄.<pb n="507"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="323"><p>323. Ἀπὸ Ἁλῶν εἰς Μάταλαν στάδιοι τ΄· πόλις ἐστὶ, καὶ λιμένα ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="324"><p>324. Ἀπὸ Ματάλης εἰς Σουλίαν στάδιοι ξε΄· ἀκρωτήριόν ἐστιν ἀνέχον πρὸς μεσημβρίαν· λιμήν
+ἐστι· <lb n="5"/> καλὸν ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="325"><p>325. Ἀπὸ Σοωλήνας εἰς Ψυχέα στάδιοι ιβ΄· ἀπὸ δὲ Πύδνης ἐπὶ τὸν Ψτχέα στάδιοι τν΄· λιμὴν
+θερινός· καὶ ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="326"><p>326. Ἀπὸ Ψχέως ἐπὶ τὸν Λάμωνα στάδιοι ρν΄· λιμήν <lb n="10"/> ἐστι· καὶ πόλιν ἔχει καὶ
+ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="327"><p>327. Ἀπὸ Λάμωνος ἐπὶ Ἀπολλωνιάδα στάδιοι λ΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="328"><p>328. Ἀπὸ Ἀπολλωνίας εἰς Φοίνικα στάδιοι ρ΄· πόλις <pb n="508"/> ἐστίν· ἔχει λιμένα καὶ
+νῆσον. Ἀπὸ δὲ Κλαωδίας εἰς Φοίνικα στάδιοι τ΄. Ἔχει πόλιν καὶ λιμένα.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="329"><p>329. Ἀπὸ Φοίνικος εἰς Τάρρον στάδιοι ξ΄· πόλις μικρά ἐστιν· ἔχει ὅρμον.<pb n="509"/>
+</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="330"><p>330. Ἀπὸ Τάρρου εἰς Ποικιλασσὸν στάδιοι ξ΄· πόλις ἐστὶ καὶ ὅρμον ἔχει καὶ ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="331"><p>331. Ἀπὸ Ποικιλασσοῦ εἰς Σύθαν στάδιοι ν΄· πόλις ἔστὶ καὶ λιμένα καλὸν ἔχει.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="332"><p><lb n="5"/>332. <supplied reason="omitted">Ἀπὸ Σύβης εἰς Λισσὸν στάδιοι λ΄.</supplied></p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="333"><p>333. Ἀπὸ Λισσοῦ εἰς Καλαμύδην στάδιοι σν΄.<pb n="510"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="334"><p>334. Ἀπὸ Καλαμύδης εἰς Κριοῦ Μέτωπον στάδιοι λ΄. ἀκρωτήριόν ἐστιν ὑψηλόν· ἔχει ὕδωρ καὶ
+ὕφορμον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="335"><p>335. Ἀπὸ Κριοῦ Μετώπου περίπλους εἰς Bίεννον στάδιοι ιβ΄· λιμένα ἔχει καὶ ὕδωρ.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="336"><p><lb n="5"/>336. Ἀπὸ Βιέννου εἰς Φαλάσαρναν στάδιοι σξ΄· ὅρμος ἐστὶν, ἐμπόριον, πόλις παλαιά νῆσος δὲ
+ἀπὸ σταδίων ξ΄ Ἰουσάγουρα, βλέπουσα πρὸς ἀνατολάς· ἔχει λιμένα· ἔχει δὲ ἱερὸν Ἀπόλλωνος ἐν τῷ
+λιμένι· ἔστι δὲ καὶ ἄλλη νῆσος ἀπὸ σταδίων γ΄· καλεῖται Μέση, καὶ ὅρμον <lb n="10"/> ἔχει· ἡ δὲ
+τρίτη καλεῖται Μύλη ὁ δὲ πλοῦς βαθύς ἀγορὰν ἔχει.<pb n="511"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="337"><p>337. Ἀκὸ Μύλης ἐπὶ τὸν Τρητὸν στάδιοι ν΄· ἀκρωτήριόν ἐστι τετρημένον, κατάκρημνον τῆς
+Κρήτης.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="338"><p>338. Ἀπὸ τοῦ Τρητοῦ εἰς Ἀγνεῖον στάδιοι ν΄· λιμήν ἐστιν ἔχων ἱερὸν Ἀπόλλωνος ἔστι δὲ
+ἐσώτερος κόλπος, <lb n="5"/> καὶ καλεῖται Μυρτῖλος καὶ ὕδωρ ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="339"><p>339. Ἀπὸ Ἀγνείου εἰς Κίσαμον στάδιοι π΄ πόλις ἐστὶν ἐν κόλπῳ κειμένη. ἐστὶ δὲ λιμήν· ἔχει
+καὶ ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="340"><p>340. Ἀπὸ Κισάμου ἐπὶ Τίτυρον στάδιοι κε΄· ἀκρωτήριόν ἐστιν ὑψηλὸν, κατάδενδρον· βλέπει πρὸς
+ἄρκτον.<lb n="10"/></p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="341"><p>341. Ἀπὸ Τιτύρου ἐπὶ τὸ Δικτυνναῖον στάδιοι π΄· ὅρμος ἐστὶν ἐν αἰγιαλῷ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="342"><p>342. Ἀπὸ τοῦ Δικτυνναίου ἐπὶ τὴν Κοίτην στάδιοι <pb n="512"/> ρο΄· νῆσός ἐστιν· ἔχει ὅρμον
+καὶ ὕδωρ· βλέπει πρὸς τήν Κρήτην <supplied reason="omitted">καὶ</supplied> πρὸς ἄρκτον.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="343"><p>343. Ἀπὸ τοῦ Ἀκοιτίου εἰς Κυδωνίαν στάδιοι ξ΄· πόλις ἐστίν· ἔχει λιμένα, καὶ εἰς τὴν εἴσοδον
+βράχη <lb n="5"/> ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="344"><p>344. Ἀπὸ Κυδωνίας εἰς Ἀπτέραν περιπλέεται σταδίοις ρν΄· πεζῃ δὲ στάδιοι ρκ΄· ὁ τόπος Μίνως
+καλεῖται, εἰς ὃν κεῖνται νῆσοι τρεῖς, αἴ καλοῦνται Λευκαί.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="345"><p>345. Ἀπὸ τῆς Μίνωος εἰς Ἀμφιμάτριον στάδιοι ρν΄· <pb n="513"/> ποταμός ἐστι καὶ λιμήν περὶ
+αὐτὸν παραχειμαστικὸς, καὶ πύργον ἔχει.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="346"><p>346. Ἀπὸ Ἀμφιματρίου εἰς Ὕδραμον στάδιοι ρ΄· πόλις ἐστίν· ἔχει αἰγιαλόν· καλεῖται δὲ ἡ πόλις
+Ἐλευ. <lb n="5"/> θέρα· πεζῇ δὲ ἀναβῆναι ἀπὸ τοῦ Ἀμφιματρίου στάδιοι ν΄·</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="347"><p>347. Ἀπὸ Ἀμφιματρίου εἰς Ἀστάλην στάδιοι λ΄. λιμήν ἐστιν εὐωνύμως· ἔχει ὕδωρ. <supplied
+reason="omitted">Ἐντεῦθεν Ἐλευθέρα ἀπὸ σταδίων ν΄.</supplied><pb n="514"/></p>
+
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="348"><p>348. Ἀπὸ Ἆστάλης εἰς Ἡράκλειον στάδιοι ρ΄· πόλις ἐστίν· ἔχει λιμένα καὶ ὕδωρ· ἀπὸ σταδίων κ΄
+πόλις κεῖται Κνωσός· ἀπόκειται δὲ καὶ νῆσος ἀπὸ σταδίων μ΄ πρὸς δύσιν· καλεῖται Δῖος.</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="349"><p><lb n="5"/>349. Ἀπὸ τοῦ Ἡρακλείου εἰς Χερρόνησον πόλιν στάδιοι λ΄· ὕδωρ ἔχει καὶ νῆσον ἔχουσαν πύργον
+καὶ λιμένα.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="350"><p>350. Ἀπὸ Χερρονήσου εἰς Ὀλοῦντα στάδιοι ξ΄· ἄκρα ἐστίν· ὕφορμον ἔχει καὶ ὕδωρ καλόν· ἀπέχει
+δὲ ἀπὸ τῆς γῆς σταδίους κ΄<gap reason="omitted"/>·</p>
+
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="351"><p><lb n="10"/>351. Ἀπὸ Ὀλοῦντος εἰς Καμάραν στάδιοι ιε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="352"><p>352. Ἀπὸ Καμάρας εἰς Ἴστρον στάδιοι κε΄.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="353"><p>353. Ἀπὸ τῆς Ἴστρου ἐπὶ τὴν Κητίαν ἄκραν στάδιοι ιε΄· ὕφορμός ἐστιν, ἄνυδρος δέ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="354"><p>354. Ἀπὸ τῆς Κητίας ἄκρας εἰς Διονυσιάδας στάδιοι <lb n="15"/> τ΄· νῆσοι εἰσὶ δύο, ἔχουσαι
+λιμένα καὶ ὕδωρ.</p>
+
+
+</div>
+<div type="textpart" subtype="paragraph" n="355"><p>355. Ἀπὸ Διονυσιάδων εἰς τὸ Σαμώνιον, ὅθεν ἠρξάμεθα περιάγειν τὴν Κρήτην, στάδιοι ρκ΄.</p>
+
+</div></div>
+</div>
+</body>
+</text>
+</TEI>

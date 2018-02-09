@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Selecta in Jesum Nave</title>
+                <author xml:lang="lat">Origenes</author>
+                <editor>Charles Delarue</editor>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg2042.tlg054.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Origenis Opera Omnia</title>
+                            <editor>
+                                <persName>
+                                    <name>Charles Delarue</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+                            <imprint>
+                                <publisher>J. P. Migne</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1862</date>
+                            </imprint>
+                            <biblScope unit="volume">2</biblScope>
+                        </monogr>
+                        <series>
+                            <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+                                Graeca)</title>
+                            <biblScope unit="volume">12</biblScope>
+                        </series>
+                        <ref
+                            target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_012#page/n413/mode/2up"
+                            >Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="paragraph"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg054.1st1K-grc1">
+                    <pb n="820"/>
+                    <head>ΩΡΙΓΕΝΟΥΣ ΕΙΣ ΙΗΣΟΥΝ ΝΑΥΗ ΕΚΛΟΓΑΙ.</head>
+                    <div type="textpart" subtype="paragraph" n="1"><p>Σὺ, καὶ πᾶς ὁ λαὸς οὗτος, Τοῖς φυλάσσουσι τὸν νόμον ὑπέσχετο διδόναι ἂ
+                        προείρηκεν· οὐ γὰρ Ἰησοῦ τῷ Ναυῆ. Μὴ φυλάξαντες γὰρ οἱ Ἰσραηλῖται οὐκ
+                        ἕλαβον, ὡς δηλοῖ τὰ ἑξῆς.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="2"><p>Πᾶς ὁ τόπος ἐφʼ ᾧ ἂν ἐπιβῆτε. Ἀντέστηπαν οἱ ἐπὶ τῆς Γαῒ διὰ τὴν τοῦ Ἀχὰρ
+                        παρανομίαν. Καὶ ἄλλως· Ὅτι τοῦ Θεοῦ παραδόντος εἰς χεῖρας αὐτῶν τὰ ἕθνη
+                        οὐκ ἐξωλόθ ρευσαν, καὶ ἐγενήθησαν, εἰς σκόλοπα αὐτοῖς.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="3"><p>Καὶ εἰσήλθοσαν εἰς οἰκίαν γυναικός πόρνης, ὄνομα Ῥαάβ. Πόρνῃ πιστεύουσιν
+                        οἱ κατάσκοποι τὴν ἑαυτῶν σωτηρίαν· καὶ μάλα εἰκότως. Δείκτυται γὰρ ἐξ ὧν
+                        ἡ πόρνη διαλέγεται, μόνη πιστὴ καὶ τὸν Θεὸν φοβουμένη· διὸ καὶ διʼ αὐτῆς
+                        ἡ συγγένεια σώζεται.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="4"><p>Τοῦ αὐτοῦ. Ῥαὰβ ἑρμηνεύεται πλατυσμὸς, σύμβολον οὗσα τὴς ἀπὸ τῶν ἐθνῶν
+                        Ἐκκλησίας λεγούσης· « Στενός μοι ὁ τόπος, ποίησόν μοι τόπον ἵνα οἰκήσω.
+                        »</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="5"><p>Τοῦ αὐτοῦ. Οὐκ ἐκ τῆς δεξιώσεως μόνης σώζεται, ἀλλὰ προηγουμένως ἀπὸ τῆς
+                        πίστεως καὶ τῆς πρὸς τὸν Θεὸν διαθέσεως.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="6"><p>Καὶ ἔκρυψεν αὐτοὺς ἐν τῇ λινοκαλάμῃ. Τοῖς ξύλοις αὐτοὺς ἔκρυψε τῆς
+                        λινοκαλάμης οἷς εἶχεν ἐπὶ τοῦ δώματος ἑτοιμάζουσα ἐργάζεσθαι τὴν βύσσον
+                        αὐτοῖς ὡς ἀξίοις οὖσιν ἐνδύματος ἀρχιερατικοῦ. Ἡ γὰρ λινοκαλάμη ποιεῖ
+                        τὴν βύσσον ἐξ ἧς τὸ ἱερατικὸν ἔνδυμα γίνεται.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="7"><p>Καὶ κατεχάλασεν αὐτοὺς διὰ τῆς θυρίδος. Ἰστέον ὅτι ὁ οἶκος αὐτῆς ἐν τῷ
+                        τείχει ἦν. Ἀδελφὰ τῆς παλαιᾶς τὰ νέα· ὅμοιον γάρ ἐστι τὸ ἐπὶ τοῦ Παύλου,
+                        ὅτε ἐχάλασαν αὐτὸν ἐν σαργάνῃ διὰ τοῦ τείχους.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="8"><p>Τοῦ αὐτοῦ. Ὁ Ἀπόστολος δεύτερον ἐσώθη ἀπὸ τῶν ἐχθρῶν ὁμοιοτρόπως, ὥς
+                        φησιν ἐν τῇ δευτέρᾳ πρὸς Κορινθίους αὐτοῦ Ἐπιστολῇ· « Καὶ διὰ θυρίδος ἐν
+                        σαργάνῃ ἐχαλάσθην διὰ τοῦ τείχους, καὶ ἐξέφυγον. » Πάλιν ἐν ταῖς
+                        Πράξεσι· « Παρετηροῦντο δὲ καὶ τὰς πύλας ἡμέρας καὶ νυκτὸς, ὅπως αὐτὸν
+                        ἀνέλωσι· λαβόντες δὲ οἱ μαθηταὶ αὐτοῦ νυκτὸς, τοῦ τείχους καθῆκαν αὐτὸν,
+                        χαλάσαντες ἐν σπυρίδι. »</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="9"><p>Καὶ κατέμειναν ἐκεῖ τρεῖς ἠμέρας. Οὐχ ὅτ τριῶν ἡμερῶν ἦν ἡ ὁδός· πάνυ γὰρ
+                        πλησίον ὁ Ἰορδάνης <note type="footnote">7 Jos. i, 2. 8. ibid., 3. 9
+                            Jos.ii, 1. 10 Isa. xlix. 20 11 Jos. ii 6. 12 ibid., 15 13 ii Cor.
+                            xi, 37. 14 Act. ix, 24, 25. 15 Jos. ii, 22.</note>
+                        <pb n="821"/> τῆς Ἰεριχὼ, ἀλλὰ διὰ τὴν τῶν κατασκόπων ἀκριβῆ ἐξέτασιν. «
+                        Ἐζήτησαν γὰρ, φησὶν, οἱ καταδιώκοντες πάσας τὰς ὀδοὺς, καὶ οὐχ εὗρον.
+                        »</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="10"><p>« Τετράκις μύριοι εὔζωνοι. Σημειωτέον ὅτι ἡ τετρὰς, εἴτε μονάδων, εἴτε
+                        ἑκατοντάδων, εἴτε ἑτέρου πλείονος ἀριθμοῦ, ἐπὶ κακώσεως κεῖται.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="11"><p>Ποίησόν σοι μαχαίρας πετρίνας ἐκ πέτρας ἀμροτόμου. Ζητητέον διὰ τί οὐ
+                        περιετμήθησαν οἱ ἐν τῇ ἐρήμῳ τεχθέντες· ἢ διὰ τί τῷ Σαββάτῳ τις ξύλα
+                        συλλέξας ἐπὶ Μωϋσέως ἐκ προστάγματος Θεοῦ λιθόλευστος γέγονε. Τοσοῦτον
+                        δὲ πλῆθος ἀπερίτμητον μεμενηκὸς ἐν τῇ ἐρήμῳ οὐδὲ ἐμέμφθη, καίτοι τοῦ
+                        Θσοῦ μὲν ἀποφῃναμένου ἐξολοθρεύεσθαι τὴν ψυχὴν τὴν μὴ περιτμημένην τῇ
+                        ἡμέρᾳ τῇ ὀγδόῃ, οὐκέτι δὲ ἐπὶ τῶν παραβαινόντων τὸ Σάββατον τοῦτο
+                        ὡρίσαντος. Ἥδη μὲν οὖν καὶ αὐτόθεν εὔδηλον, ὅτι περιτομὴ καὶ Σάββατον
+                        οὐκ αὐτὰ καθʼ ἑαυτὰ καλὰ, ἀλλὰ ἐπειδὴ πρὸς καιρὸν ἐχρησίμευσεν. Ἰστέον
+                        δὲ ὅτι σημείου χάριν διὰ τῆς περιτομῆς ἐβουλήθη γνωρίζεσθαι, καὶ οὐκ
+                        ἀνασχομένους ἀπὸ πίστεως φαίνεσθαι, ὡς πρόβατα ἄλογα τῷ καυτῆρι κἂν
+                        πλανηθῇ, ῥᾳδίαν ἔχει τὴν ἑαυτοῦ εὕρεσιν· οὕτω τοὺς Ἰουδαίους
+                        ἐπιμιγνυμένους τοῖς ἔθνεσιν ἀπὸ τῆς περιτομῆς φανεροὺς εἶναι βουληθείς.
+                        Καὶ τούτου ἀπόδειξις τὸ ἐν μὲν τῇ Αἰγύπτῳ περιτέμνεσθαι αὐτοὺς, ἐν δὲ τῇ
+                        ἐρήμῳ, ἐπειδὴ μόνοι ἦσαν καὶ Αἰγυπτίων κεχωρισμένοι καὶ τῶν ἄλλων ἐθνῶν
+                        τῶν κατὰ Παλαιστίνην, ἀπεριτμήτους μεμενηκέναι. Ὅτε δὲ παρελθόντες τὸν
+                        Ἰορδάνην ἔμελλον ἐν μέσῳ εἶναι τῶν ἐθνῶν, αὖθις προσετάχθησαν
+                        περιτμηθῆναι. Διόπερ ἐκ δευτέρου εἶπεν, ὅτι οὐκ ὀκταημέρους
+                        περιετέμνοντο, ἀλλʼ ἀνδροθέντας ἤδη, καὶ πρὸς γῆράς τινας νενευκότας. Ἡ
+                        δὲ πετρίνη μάχαιρα τὸν Κύριον ἡμῖν δηλοῖ τὸν τὴν νοητὴν δόντα ἡμῖν
+                        περιτομὴν, τὴν εἰς νοῦν καὶ καρδίαν. Διὰ τοῦτο γὰρ καὶ ὁ Ἀπόστο λος ἡμῖν
+                        ἔλεγε περιτομὴν τοῦ Χριστοῦ, οὐκ ἐν τῇ ἀπεκδύσει τῆς σαρκὸς ἡμῶν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="12"><p>Ἐγὼ ἀρχιστράτηγος τῆς δυνάμεως Κυρίου, νῦν παραγέγονα. Μεμνῆσθαι δεῖ ὅτι
+                        ἡνίκα ἐμοσχοποίησαν. ὁ Θεὸς τῷ Μωϋσεῖ φησιν, ὅτι « Ἀνάγαγε τὸν λαὸν
+                        τοῦτον, οὐ γὰρ μὴ συναναβῶ διὰ τὸ τὸν λαὸν σκληροτράχηλον εἶναι. Καὶ
+                        ἰδοὺ ἀποστελῶ τὸν ἄγγελόν μου πρὸ προσώπου σου. Πρόσεχε οὖν σεαυτῷ, καὶ
+                        μὴ ἀπείθει. » Ὁ δὲ Μωϋσῆς πρὸς αὐτόν φησιν· « Εἰ μὴ συνανέρχῃ ἡμῖν, μή
+                        με ἀναγάγῃς ἐντεῦθεν. » Καὶ τοῦτο εἰπὼν ἔπεισε· καὶ ἦν μετὰ τοῦ λαοῦ,
+                        ἕως τῆς τελευτῆς Μωϋσῆ. Μετὰ δὲ τὴν τούτου ἀποβίωσιν, φαίνεται μὲν καὶ
+                        διαλέγεται τῷ τοῦ Ναυῆ Ἰησοῦ. Μετὰ γοῦν τὴν ἐπιστασίαν τοῦ λαοῦ εἰς τὸν
+                        μαθητὴν Μωϋσέως λοιπὸν παραδίδωσιν αὐτὸν τῷ ἀρχιστρατήγῳ τῷ Μιχαήλ.
+                        Οὗτος ἦν ἄρχων τοῦ λαοῦ, ὡς ἐν τῷ Δανιὴλ φαίνεται λέγων ἕτερος
+                        ἄγγελος.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="13"><p>Πορευόμενοι κεὶ σαλπίζοντες. Αὐταὶ αἱ σάλπιγγες, σύμβολόν εἰσι τῶν ἐν τῇ
+                        ἐσχάτῃ ἡμέρᾳ. « Αὐτὸς γὰρ, φησὶν, ὁ Κύριος ἐν κελεύσματι, ἐν φωνῇ
+                        ἀρχαγγέλου, καὶ ἐν σάλπιγγι Θεοῦ καταβήσεται ἀπʼ <note type="footnote"
+                            >16 Jos. ii, 23. 17 Jos. iv, 13. 18 Jos. v, 2. 19 Coloss. ii. 11. 20
+                            Jos. V, 14 21 Exod. xxxiii. 22 ibid. 23 Jos. vi, 9. 24 1 Thess. iv,
+                            15.</note>
+                        <pb n="824"/> οὐρανοῦ. » Τὸ δὲ, ἐπὶ ἓξ ἡμέρας κυκλοῦν τὴν πόλαι τοὺς
+                        ἱερεῖς, σημεῖον ἂν εἴη τοῦ διὰ τῶν ἓξ ἡμερῶν τοῦ παρόντος αἰῶνος τοὺς
+                        ἁγίους ἅπαντα, σαλπίζειν καὶ κηρύττειν ἄφεσιν ἁμαρτιῶν τοῖς μετανοεῖν
+                        βουλομένοις.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="14"><p>Καὶ εἶπεν Ἰησοῦς τοῖς υἱοῖς Ἰσραὴλ, Κεκράξατε. Τὴν μέντοι κραυγὴν, τὴν
+                        τῶν ῥημάτων εἰκὸς δοξολογίαν εἶναι καὶ φωνὴν αἰνέσεως τὴν εἰς τὸν Θεὸν,
+                        μαχομένην τῇ πλάνῃ τῶν Ἱεριχουντίων, νικῶσαν δὲ τὴν παράδοξον νίκην καὶ
+                        θαύματος γέμουσαν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="15"><p>Οὕτως ἐποίησεν Ὁζάν. Ἐκ τούτου δείκνυται ὡς οὐκ Ἰησοῦς ὁ τοῦ Ναυῆ, ἀλλʼ
+                        ἕτερός τις μετὰ πολλὰς γενεὰς ταῦτα συνέγραψε. Καὶ ἀληθὲς μὲν νοηθὲν,
+                        οὐκ ἐναντίον δὲ οἷς πρότερον εἰρήκαμεν. Ἔγραψε γὰρ ὁ Ἰησοῦς τὰ ἐπʼ αὐτοῦ
+                        γεγονότα, ἢ ἀποκαλυφθέντα, ὥσπερ καὶ Μωϋσῆς τὰ κατὰ τοὺς ἐπʼ αὐτοῦ
+                        χρόνους. Μετὰ δὲ ταῦτα τοῦ ναοῦ οἰκοδομηθέντος ἤδη ὑπὸ τοῦ σοφοῦ
+                        Σολομῶντος, καὶ τοῦ λαοῦ ὑποκλίναντος εἰς πολλὴν ἀσέβειαν, καὶ τοῦ Θεοῦ
+                        τὸν ναὸν ἔρημον καταλιπόντος ὡς μόλις εὑρεθῆναι τὸ Δευτερονόμιον
+                        ἐῤῥιμμένον ὡς ἔτυχε· διά τοι τοῦτο τοῦ λαοῦ τὴν Βαβυλωνικὴν αἰχμαλωσίαν
+                        ὑποστάντος, Ἔσδρας νομικώτατος ὢν, καὶ ἀποστομίζων πᾶσαν τὴν Παλαιὰν
+                        Διαθήκην, ἔγραψε τὸν νόμον, καὶ ἕτερά τινα τὰ γεγονότα καὶ
+                        ἀποκαλυφθέντα. Ταῦτα πάλαι μὲν προεῤῥέθη, μετὰ δὲ ταῦτα γέγονε. Τοιοῦτόν
+                        ἐστι δήπου καὶ οὖ νῦν ἐμνημονεύσαμεν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="16"><p>Ἔτι σήμερον ἰσχύω, ὡσεὶ ὅτε ἀπέστειλέ με Μωϋσῆς. Ἐν ἀμφοτέροις οὖν ἰσχύει
+                        τοῖς λόγοις ὁ ἅγιος. Ἰσχύει γὰρ ἐν παλαιοῖς καὶ ἐν καινοῖς μυστηρίοις.
+                        Τοῦτό ἐστι τὸ ἰσχύειν ἐπὶ Μωϋσέως καὶ ἐπὶ Ἰησοῦ.</p>
+                
+            </div></div>
+        </body>
+    </text>
+</TEI>

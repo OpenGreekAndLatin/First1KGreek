@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="lat">Ex Orestis Stasimo I</title>
+				<author xml:lang="lat">Canticum Euripidis</author>
+				<editor>Karl Jahn</editor>
+				<funder>Harvard Library Arcadia Fund</funder>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<persName xml:id="DDD">Digital Divide Data</persName>
+					<resp>Corrected and encoded the text</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Gregory Crane</persName>
+					<resp>Editor-in-Chief, Perseus Digital Library</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Matt Munson</persName>
+					<resp>Project Manager (University of Leipzig), 2016 - present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Annette Gessner</persName>
+					<resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Thibault Clérice</persName>
+					<resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Bruce Robertson</persName>
+					<resp>Technical Advisor</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Harvard College Library</authority>
+				<idno type="filename">tlg2138.tlg001.opp-grc1.xml</idno>
+				<availability>
+					<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</p>
+				</availability>
+				<date>2017</date>
+				<publisher>Harvard College Library</publisher>
+				<pubPlace>United States</pubPlace>
+			</publicationStmt>
+			<sourceDesc>
+				<listBibl>
+					<biblStruct>
+						<monogr>
+							<title xml:lang="lat">Musici scriptores Graeci</title>
+							<editor>
+								<persName>
+									<name>Karl Jahn</name>
+								</persName>
+							</editor>
+							<author ref="urn:cts:greekLit:tlg2138" xml:lang="lat">Canticum Euripidis</author>
+							<imprint>
+								<publisher>Teubner</publisher>
+								<pubPlace>Leipzig</pubPlace>
+								<date>1895</date>
+							</imprint>
+						</monogr>
+						<ref target="http://catalog.hathitrust.org/Record/001227462">Hathi Trust</ref>
+					</biblStruct>
+				</listBibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>Text encoded in accordance with the latest EpiDoc standards</p>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change/>
+		</revisionDesc>
+	</teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2138.tlg001.opp-grc1">
+<div type="textpart" subtype="section" n="1">
+<pb n="430"/>
+<head>Canticum
+Ex Orestis</head>
+<p>1 κατολοφύρομαι ματέρος οἷμα σᾶς
+3 ὅ σ’ ἀναβακχεύει ὁ μέγας ὄλβος οὐ
+5 μόνιμος ἐμ βροτοῖς  ἀνὰ δὲ λαῖφος ὥς
+7 τις ἀκάτου θοᾶς τιωάξας δαίμων
+9 κατέκλυσεν δεινῶν πόνων ὡως πόντου
+11 λάβροις ὀλεθρίοισιν ἐν κύμασιν.</p>
+<note type="footnote">ln pede 3 super βακ Ws et Cr construxerunt e sola.
+infima linea. in τινάξας p. 8 post C Cr vidisse sibi videtur
+signum \. p. 9 super κατ: Φ Cr, vel Δ Ws. ante δεινῶν
+super vidit Cr. lineam l. idem super δ(εινῶν) detexit macu-
+las nigras (P?). p. 11 P incertum: postea e puncto con-
+struxit C Cr. p. 12 super ἐν construxit Ws, Cr.</note>
+
+ <pb n="431"/>
+<p>Euripidis.
+stasimo l. v. 330ss.</p>
+<figure>
+	<graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.32044040570293;view=1up;seq=529"/>
+	<figDesc>1 κα– τὸ– λο– φύ– ρο–μαι μα – τέ–ρος αἷ– μα σᾶς,
+			3 ὅ σ’ ἀ– να– βακχεύ– ει ὁ μέ– γας ὄλ– βος οὐ
+			5 μό–νι– μος ἑν βρο–οῖς· ἀ–νὰ δὲ λαὶ– φος ὥς
+			7 τις ἀ–κά –τὸ θο– ᾶς τι νά –ξας δαί –μων
+			9 κα– τέ -κλυ–σεν δεινῶν πόνων ὡς τόνων— του
+			11 λάβροις ὀλεθρίοισιν ἐν κύμασιν.</figDesc>
+</figure>
+<note type="footnote">Signo x notavi sonos dies (quarta toni parte) acutiores.
+sonos in papyro desideratos supplere conati sunt Wessely
+p. 7, Crusius p. 189.</note>
+</div>
+</div>
+</body>
+</text>
+</TEI>

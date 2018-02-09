@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Selecta in Judices</title>
+                <author xml:lang="lat">Origenes</author>
+                <editor>Charles Delarue</editor>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg2042.tlg055.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Origenis Opera Omnia</title>
+                            <editor>
+                                <persName>
+                                    <name>Charles Delarue</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+                            <imprint>
+                                <publisher>J. P. Migne</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1862</date>
+                            </imprint>
+                            <biblScope unit="volume">2</biblScope>
+                        </monogr>
+                        <series>
+                            <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+                                Graeca)</title>
+                            <biblScope unit="volume">12</biblScope>
+                        </series>
+                        <ref
+                            target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_012#page/n479/mode/2up"
+                            >Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="paragraph"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg055.1st1K-grc1">
+                    <pb n="949"/>
+                    <head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ ΕΙΣ ΤΟΥΣ ΚΡΙΤΛΣ.</head>
+                    <div type="textpart" subtype="paragraph" n="1"><p>Καὶ εῦξατο Ἱεμθάε τῷ Κυφίῳ. Εἰ Πνεῦμα Κυρίου ἐπ᾿ αὐτὸν, πῶς εὔχεται ἃ μὴ
+                        προσήκει; Ἐνῆν γὰρ καὶ κύνα ἀπαντῆσαι ἐπανιόντι τῷ Ἰεφθάε. Ἆῤ οὖν ἐσφάλη
+                        τὸ Πνεῦμα; οὐδαμῶς· ἀλλὰ τὸ μὲν Πνεῦμα βοηθεῖν παραγέγονεν, οὐχ
+                        ὑποβάλλειν τὴν ἄτοπον εὐχήν· αὐτὸς δὲ σφάλλεται ἀπερισκέπτως
+                        ὑποσχόμενος.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="2"><p>Καὶ εἶπαν αὐτῷ· Εἰπὸν δὴ στάχυς. Οἱ δὲ ἔλεγον στάχυς· σημαίνει σέβηλα,
+                        ὅπερ ἐστὶν ἄσταχυς. Οἱ δὲ ἔλεγον σεβήλω καὶ οὐκ ἐδύναντο τρανῶς εἰπεῖν
+                        σέδηλα. Εἰ γὰρ καὶ Ἑβραῖοι ἐτύγχανον, ἀλλὰ κατὰ συμμετρίαν βραχύτητι
+                        παρήλλασσον ἐν τῇ τῆς διαλέξεως προφορᾷ. Τὸ οὖν σύνθεμα ἦν σέβηλα, ὅπερ
+                        οἱ ἐπερωτώμενοι λέγοντες σεδήλω, ἠλέγχοντο οὐκ ὄντες τῶν οἰκείων τοῦ
+                        Ἰεφθάε, ἀλλὰ τῶν ἐπαναστάντων.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="3"><p>Καὶ γυνὴ αὐτοῦ στεῖρα καὶ οὐκ ἔτεκεν. Οὐκ ἀπὸ τῆς φύσεως, ἀλλ᾿ ἀπὸ τῆς
+                        διακονίας ἐπὶ τοῦ παρόντος στείραν καλεῖ.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="4"><p>Σίδηρος οὐκ ἀνέβη ἐπὶ τὴν κεφαλήν μου ὅτι Ναζιραῖος τοῦ Θεοῦ ἐγώ εἰμι.
+                        Δι᾿ ὅλης τῆς περὶ τὸν Σαμψὼν ἱστορίας αἱ τρίχες φαίνονται τὴν πᾶσαν αὐτῷ
+                        περιποιεῖν ἰσχύν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="5"><p>Τοῦ αὐτοῦ. Ναζιραῖον τὸ πεφυλαγμένον κατὰ τὴν Σύρων φωνὴν ὀνομάζει. Μὴ
+                        ἐξακολουθεῖν δὲ τῇ τάξει τῶν Ἰσραηλιτῶν τὸν Σαμψὼν ὁ Θεὸς προστάσσει,
+                        κατ᾿ ἐκεῖνο καιροῦ τὴν κεφαλὴν ξυρωμένων διὰ τὸ εὐσήμους εἶναι πρὸς
+                        πάντας.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="6"><p>Καὶ ἐποίησεν Ἐφὼδ καὶ Θεραφείν. Ἐφὼδ ὕφασμα ἦν ἱερατικὸν, ὅπερ
+                        περικειμένῳ τῷ ἱερεῖ ἐφοίτα τοῦ ἁγίου Πνεύματος ἡ χάρις. Τὸ δὲ Θεραφεὶν
+                        τοιοῦτο μέντοι, οὐ θεῖκὸν δὲ, ἀλλʼ εἰδωλικὸν, ὡς ἐν ταῖς βασιλείαις
+                        δείκνυται.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="7"><p>Καὶ ἐξῆλθον οἱ υἱοὶ Βενιαμίν. Τίνος ἕνεκεν ἡττῶνται δικαίως ἐπελθόντες; Ἥ
+                        δῆλον ὅτι διὰ προλαβούσης αἰτίας. Καὶ ὁ ψαλμός φησιν· « Ὅταν λάβω
+                        καιρὸν, ἐγὼ εὐθύτητας κρινῶ. » Εἶτα καὶ μετὰ τὸ ἡττηθῆναι, καὶ μίαν καὶ
+                        δευτέραν, μετῆλθεν ὀργὴ ἐπὶ τοὺς ἠδικηκότας, καὶ νικῶσι δίκαιαν
+                        νίκην.</p>
+                    <note type="footnote">54 Jud. xi, 30. 55 Jud. xii, 6. 56 Jud. xiii, 2. 57
+                        Jud. xvi, 17. 58 Jud. xvii, 5. 59 Jud. xx, 34. 60 Psal. lxxiv, 3.</note>
+                
+            </div></div>
+        </body>
+    </text>
+</TEI>

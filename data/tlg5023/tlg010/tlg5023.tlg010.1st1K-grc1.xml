@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Vitae Euripidis</title>
+                <editor>Karl Wilhelm Dindorf</editor>
+                <author xml:lang="lat">Scholia Euripidem</author>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg5023.tlg010.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Scholia Graeca in Euripidis tragoedias</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Gulielmus Dindorfius</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg5023" xml:lang="lat">Scholia Euripidem</author>
+                            <imprint>
+                                <publisher>Oxford University Press</publisher>
+                                <pubPlace>Oxford</pubPlace>
+                                <date>1863</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/stream/scholiagraecaine01dind#page/n33/mode/2up">Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg5023.tlg010.1st1K-grc1">
+                    <div type="textpart" subtype="chapter" n="1">
+                        <pb n="1"/>
+                        <head>I.</head>
+                        <head>Γένος Εὐριπίδου καὶ βίος.</head>
+                        <p>ΕΥΡΠΠΔΗΣ ὁ ποιητὴς υίὸς ἐγένετο Μνησάρχου καπήλου καὶ Κλειτοῦς <note
+                                type="footnote">1. Γένος Εὐριπίδου καὶ βίρς] Excerpta scholasticis
+                                a. 1828 II. n. 2. Similia de Vita Euripidis in codici. de vita
+                                Euripidis excerpta edidit, bus aliis vel simpliciter βίος Εὑριπίδου
+                                qualia etiam in codice Havniensi vel Εὐριπίδου γένος vel γένος
+                                Εὐριπίδου 3549. (chartaceo seculi inscribuntur. “Nunc primum, quarti
+                                quintive decimi) reperiuntur, ni fallor, in lucem prodit quae O. D.
+                                Blochius in Friedemanni haec Euripidis Vita e bibliotheca et
+                                Seebodii Miscell. crit. Collegii Ambrosiani. quod Mediolani 1822. I.
+                                p. 394—396. edidit. Tribus est. Codicis nota est A. 104. aliis usus
+                                est Kirchhoffius, Vaticano Leguntur in eo primæ tres Euripidis 1345.
+                                (ex bibliotheca Fulvii tragoediae a recentiore manu Ursini)
+                                chartaceo, qui Oppianum satis mendose scriptae. Unde venerit
+                                continet cum tribus primis tragoediis in Ambrosianam bibliothecam,
+                                Euripidis; Palatino inter Vaticanos prima pagina declarat his n.
+                                98., Urbinate 140. Quibus verbis: Hic codex optimae notae fuit uit
+                                ex libris ego, omissis quisquiliis, emptus Pisisa Gratia Maria
+                                Gratia V. ea tantum annotabo quae memorata Cl. nomine Ill. mi Card.
+                                Federici Borromaei morata digna sunt. In Havniensi Ambros. ac
+                                Bibliot. ae fundatoris nonnulla bis scripta sunt, quae ubi anno M.
+                                D. I. X. C. (1591.) Vita differunt siglis Havn. a. et Havn.
+                                Euripidis ex eodem fonte derivata b. designabo. Et hic quidem est,
+                                ex quo illam, quae in Aldina Havn. loco priore μνησαρ . . ., altero
+                                editione legitur, hausit Thomas μνησάρχου. In Vat. 1345. est
+                                μνησαρχίδου, Magister. Sed utraque nonnulla quae fortasse vera
+                                nominis sibi propria habet, quibus altera scriptura est habenda, si
+                                quid careat.” ELMSL. in Appendice Μνησαρχίδου nepotis nomini, quod
+                                ad Euripidis Bacchas p. 192. Est infra memoratur, tribuendum est.
+                                haec Vita ab grammatico scripta et Nam nepotes saepissime avorum
+                                antiquiore et doctiore quam reliqua nominibus appellatos fuisse
+                                constat. omnia de vita Euripidis excerpta per codices sparsa. Ea
+                                ipsa ib. Κλειτοῦς] κλυτοῦς Ambr. Nomen vel simili aliqua de vita
+                                Euripidis recte scriptum apud reliquos commentatione usus est vetus
+                                Diogenis biographos, Suidam s. v. Εὐριπίδης Laertii interpolator, ut
+                                mox et schol. Arist. Thesm. ad v. I. a dicetur. quo Euripides
+                                Κλειτοῦς υἱωνός dicitur 2. Μνησάρχου] μνηστάρχου Ambr. ad v. 910.
+                                quum υἱός dicendus ut infra μνησταρχίδης pro μνησαρχίδης. esset:
+                                nisi hic librarii error est. Notavit Elmsleius. Recte Κλειτοῦς
+                                nominis exempla alia attuli scriptum in cod. Vindob. 119. ex in
+                                Thesauro vol 4. p. 1614. quo E. Zimmermannus Diariis</note>
+                            <pb n="2"/> λαχανοπώλιδος, Ἀθηναῖος μὲν, ἐγεννήθη δὲ ἐν Σαλαμῖνι ἐπὶ
+                            Καλλιάδου ἄρχοντος κατὰ τὴν οε΄ ὀλυμπιάδα, ὅτε ἐναυμάχησαν τοῖς Πέρσαις
+                            οἱ Ἕλληνες. ἤσκησε δὲ κατʼ ἀρχὰς μὲν παγκράτιον ἢ πυγμὴν, τοῦ πατρὸς
+                            αὐτοῦ χρησμὸν λαβόντος ὅτι στεφανηφόρους ἀγῶνας <lb n="5"/> νικήσει. καί
+                            φασιν αὐτὸν Ἀθήνησι νικῆσαι. ἀναγνοὺς δὲ ἐπὶ τραγῳδίαν ἐτράπη, καὶ
+                            πολλοὺς προσεξεῦρε λόγους, φυσιολογίας, ῥητορείας, ἀναγνωρισμοὺς, ὡς δὴ
+                            ἀκουστὴς γενόμενος Ἀναξαγόρου καὶ Προδίκου καὶ Πρωταγόρου καὶ Σωκράτους
+                            ἑταῖρος. δοκεῖ δὲ αὐτῷ καὶ Σωκράτης ὁ φιλόσοφος καὶ Μνησίλοχος
+                            συμπεποιηκέναι τινὰ, <lb n="10"/> ὥς φησι Τηλεκλείδης <lg>
+                                <l>Μνησίλοχός ἐστʼ ἐκεῖνος, ὃς φρύγει τι δρᾶμα καινὸν</l>
+                                <l>Εὑριπίδῃ, καὶ Σωκράτης τὰ φρύγανʼ ὑποτίθησιν.</l>
+                            </lg>
+                            <note type="footnote">1. λαχανοπώλιδος] λαχανοπωλητρίας in Thesauro vol.
+                                1. part. 2. 9. 319. dixit Arist. Thesm. 387. omisso collatis Io.
+                                Malalae exemplis 9. 92 Κλειτοῦς nomine. Eodem redit 12. ἔμεινεν ὁ
+                                Πάρις ἀνατρεφόμενος καὶ quod σκάνδικας vendidisse dicitur, ἐν αὐτῷ
+                                διάγων καὶ ἀναγινώσκων. ad quod alludit Arist. Ach. 478. p. 352, 9.
+                                ἀνεγίνωσκεν ἔσω εἰς τὸ παλάτιον. Eq. 19. ubi videndae scholiastarum
+                                p. 383, 6. ἐν Κωνσταντινουπόλει annotationes. ἀνατραφεὶς καὶ
+                                ἀναγνούς. quibus ib. Σαλαμῖνι] Phlyensium demo in Praefat. ad
+                                Xenophontis Memor. adscribitur apud Photium (ex eoque ed. Oxon.
+                                addidit glossam Hesychii apud Suidam) p. 651, 21. Φλυεία παραμείνας
+                                (codex παραμήνας): (Φλυεῖς vel forma Attica Φλυῆς παραναγνούς. Non
+                                intellexit scribere debebat): δῆμος τῆς Κεκροπίδος. Thomas M. qui in
+                                Vita Euripidis ἐκ τούτου δὲ τοῦ δήμου ἦν Εὐριπίδης infra p. 11, 16.
+                                aliud quid substituit, ὁ τῆς τραγῳδίας ποιητής. ἀγχίνους δὲ ὢν,
+                                εἴπερ τις, καὶ τῷ πονεῖν ib. Καλλιάδου] καλλίου Ambr. in ἑαυτὸν
+                                ἐκδεδωκὼς εἰς τραγῳδίαν ἐτράπη. qua scriptura codices omnes qui 6.
+                                προσεξεῦρε] προεξεῦρε Ambr. excerpta de Vita Euripidis continent ib.
+                                λόγους—ὡς δὴ om. Vind. In consentire videntur. Correctum Havn. est
+                                προλόγους καὶ φυσιολογίας ex aliorum scriptorum locis, . . .
+                                ῥητορείας γενόμενος. In λόγους ab Clintono indicatis Fast. cum Ambr.
+                                consentit Vat. 1345. Hell. vol. 2. p. 28. Nauckius conjecit πολλὰ
+                                προσεξεῦρε, 2. οε΄] ἑβδομηκοστοπέμπτην Ambr. προλόγους—. Anni notam
+                                omittunt Vindob. 7. δὴ om. Vaticani tres. Havn. a.: in Havn. b.
+                                corrupte 8. Πρωταγόρου] πρωταγόρα Vat. Urb. κατὰ τὴν εἰκοστὴν
+                                ὀλυμπιάδα. ib. ἑταῖρος. δοκεῖ δὲ αὐτῷ] ἑταῖρος 3. μὲν om. Havn.,
+                                proximum δὲ δοκεῖ αὐτῷ Ambr. Correxi ex αὐτοῦ om. idem et Vind.
+                                Vind. Havn. 4. αὐτοῦ om. Vind. Havn. 9. ὁ φιλόσοφος om. Vind. Havn.
+                                ib. στεφανηφόρους] νικηφόρους Vind. ib. καὶ Μνησίλοχος ex
+                                sequentibus Havn. irrepsisse videbatur Elmsleio. 5. ἀναγνοὺς]
+                                ἀναγινώσκειν a Byzantinis 10. ὡς φησι—Τιμοκράτην Ἀργεῖον dicuntur
+                                qui literis operam omissa in Vind. et Havn. dant: de quo dixit L.
+                                Dindorfius 11. Μνησίλοχος—ὑποτίθησιν] Sic</note>
+                            <pb n="3"/> οἱ δὲ τὰ μέλη φασὶ Κηφισοφῶντα ποιεῖν ἢ Τιμοκράτην Ἀργεῖον.
+                            φασὶ δὲ αὐτὸν καὶ ζωγράφον γενέσθαι καὶ δείκνυσθαι αὐτοῦ πινάκια ἐν
+                            Μεγάροις· γενέσθαι δὲ αὐτὸν καὶ πυρφόρον τοῦ Ζωστηρίου Ἀπόλλωνος,
+                            γεννηθῆναι δὲ τῇ αὐτῇ ἡμέρᾳ καὶ Ἑλλάνικον ἐν ᾗ ἐνίκων τὴν περὶ Σαλαμῖνα
+                            ναυμαχίαν οἱ Ἕλληνες, ἄρξασθαι δὲ ἀγωνίζεσθαι <lb n="5"/>
+                            <note type="footnote">correxi quod in Ambr. est μνησίλοχος σεμνὴ καὶ
+                                φρονεῖς οὕτω μέγα; | Β. ἔξεστι δὲ ἐκεῖνος φρυγικόντι δρᾶμα καινὸν
+                                γάρ μοι· Σωκράτης γὰρ αἴτιος.” εὐριπίδῃ καὶ σωκράτης ὑποτίθησιν
+                                (εὑριπίδου Videntur autem omnia illa “ἐδόκει καὶ σωκράτου τὰ φρύγανα
+                                δὲ συμποιεῖν—τὰς σοφάς,” quae loco ὑποτἴθησιν Vat. 1345.) Comparanda
+                                parum apto illata sunt, non Diogenis cum his quae apud Diog. esse,
+                                sed interpolatoris, qui L. in initio ViIae Socratis leguntur ea
+                                margini adscripsit, ex Vita Euripidis 2, 18. Σωκράτης Σωφρονίσκου
+                                μὲν ἦν sumta, qua integriore usus υἱὸς λιθουργοῦ καὶ Φαιναρέτης
+                                μαίας, ὡς est quam nunc in codice Ambrosiano καὶ Πλάτων ἐν Θεαιτήτῳ
+                                φησὶν, Ἀθηναῖος, legitur. De quo monuit L. τῶν δήμων Ἀλωπεκῆθεν.
+                                ἐδόκει Dindorfius in Praefat. ad Xenoph. δὲ συμποιεῖν Εὐρικίδῃ. ὅθεν
+                                Μνησίλοχος Memor. p. xix. ed. Oxon. Lemma οὕτω φησὶ “Φρύγες ἐστὶ
+                                καινὸν δρᾶμα Ἀριστοφάνης Νεφέλαις ex § 20. huc τοῦτʼ Εὐριπίδου, ᾧ
+                                καὶ Σωκράτης τὰ illatum esse conjecit Roeperus in φρύγανα
+                                ὑποτίθησι.” καὶ πάλιν “Εὐριπίδης Schneidewini Philologo vol. 3. p.
+                                σωκρατογόμφους.” καὶ Καλλίας 51. Πεδήταις “ἤδη σὺ σεμνὴ καταφρονεῖς
+                                1. οἱ δὲ τὰ μέλη—] Hic incipit (καὶ φρονεῖς Menagius) οὕτω μέγα.
+                                codex Paris. bibliothecae S. Genovevae, ἔξεστι γάρ μοι· Σωκράτης γὰρ
+                                αἴτιος.” ex quo haec edidit I. P. Ἀριστοφάνης Νεφέλαις “Εὐριπίδης δʼ
+                                ὁ Rossignolius in Journal des Savans τὰς τραγῳδίας ποιῶν τὰς
+                                περιλαλούσας 1832. p. 240—1244. οὖτός ἐστι τὰς σοφάς.” ἀκούσας δὲ
+                                ib. φασὶ Κηφισοφῶντα] φασὶν ἱοφῶντα Ἀναξαγόρου etc. Quorum media
+                                Ambr. Correxit Welckerus ego ad Arisoph. Fragmenta p. in Museo Rhen.
+                                (a. 1833.) vol. 1. 511. ed. Oxon. sic esse in ordinem p. 300.
+                                collatis quae infra ex codice redigenda ostendi, collata Vita
+                                Euripidis, Paris. sumta leguntur, ubi nomen ἔθεν Τηλεκλείδης (in
+                                Ἡσιόδων in σιοφῶντα est corruptum. fabula, ut videtur, in qua alium
+                                2. αὐτὸν] τινὲς τὸν εὐριπίδην Urb. quoque poetam tragicum,
+                                Philoclem, et omisso τινὲς Vind. Havn. exagitatum fuisse cognovimus
+                                ib. γενέσθαι] γεγονέναι iidem tres ex scholio lacero libri
+                                Ravennatis codices. ad Arist. Thesm. 168.) “Μνησίλαχός ib. πινάκια]
+                                πίνακα Vind. πινάκιον ἐστʼ ἐκεῖνος, ὃς φρύγει τι δρᾶμα Havn. καινὸν
+                                | Εὐριπίδῃ, καὶ Σωκράτης τὰ 3. γενέσθαι—Ἕλληνες om. Vind. φρύγανʼ
+                                ὑποτίθησι.” καὶ πάλιν “Εὐριπίδης Havn. Multo plura (καὶ δείκνυσθαι
+                                δʼ ὁ τὰς τραγῳδίας ποιῶν |τὰς —ἐσχηκέναι, γυναῖκα) om. Urb.
+                                σωκρατογόμφους οὗτός ἐστι, τὰς σοφάς.” 4. καὶ Ἑλλάνικον (ἐλλανικὸν
+                                Ambr.) καὶ Καλλίας Πεδήταις (in qua comoedia ex margine illata esse
+                                conjecit Callias plures tragicos in scenam Welckerus. nam produxisse
+                                videtur: v. schol. 5. ἀγωνίζεσθαι] ἀγωνίσασθαι Vat. Arist. Av. 31.
+                                151.) “A. τί δὴ σὺ</note>
+                            <pb n="4"/> γενόμενον ἐτῶν κϚ΄. μετέστη δὲ ἐν Μαγνησίᾳ καὶ προξενίᾳ
+                            ἐτιμήθη καὶ ἀτελείᾳ. ἐκεῖθεν δὲ εἰς Μακεδονίαν περὶ Ἀρχέλαον γενόμενος
+                            διέτριψε καὶ χαριζόμενος αὐτῷ δρᾶμα ὁμωνύμως ἔγραψε, καὶ μάλα ἔπραττε
+                            παῤ αὐτῷ, ὅτε καὶ ἐπὶ τῶν διοικήσεων ἐγένετο. ἐλέγετο δὲ <lb n="5"/> καὶ
+                            βαθὺν πώγωνα θρέψαι καὶ ἐπὶ τῆς ὄψεως φακοὺς ἐσχηκέναι, γυναῖκα δὲ γῆμαι
+                            πρώτην Μελιτὼ, δευτέραν δὲ Χοιρίλην. καὶ υἱοὺς κατέλιπε τρεῖς,
+                            Μνησαρχίδην πρεσβύτερον, ἔμπορον, δεύτερον δὲ Μνησίλοχον, ὑποκριτὴν,
+                            νεώτερον δὲ. Εὐριπίδην, ὃς ἐδίδαξε τοῦ πατρὸς ἔνια δράματα. ἤρξατο δὲ
+                            διδάσκειν ἐπὶ Καλλίου ἄρχοντος <lb n="10"/> κατὰ ὀλυμπιάδα πά΄ ἔτει α΄,
+                            πρῶτον δὲ ἐδίδαξε τὰς Πελιάδας, ὅτε καὶ τρίτος ἐγένετο. τὰ πάντα δʼ ἦν
+                            αὐτῷ δράματα Ϟβ΄, σώζεται δὲ οη΄. τούτων νοθεύεται τρία, Τέννης,
+                            Ῥαδάμανθυς, Πειρίθους. ἐτελεύτησε δὲ, ὥς φησι Φιλόχορος, ὑπὲρ τὰ ο΄ ἔτη
+                            γεγονὼς, ὡς δὲ Ἐρατοσθένης, οε΄, καὶ ἐν Μακεδονίᾳ ἐτάφη. κενοτάφιον δὲ
+                            αὐτοῦ ἐν <note type="footnote">1. κϚ΄] εἰκοσιὲξ Ambr. πέντε καὶ
+                                Probabilius πρεσβύτατον Kirchhoffius, εἴκοσι infra ap. Thomam M. ut
+                                νεώτατον pro νεώτερον Nauckius. ib. μετέστη—διοικήσεων ἐγένετο om.
+                                8. ὃς ἐδίδαξε] οἳ ἐδίδαξαν Vind. Vind. Havn. ib. Μαγνησί. Elmsl.
+                                μαγνησίῳ Havn. et Pal. 9. ἤρξατο — -ἐγένετο om. Vind. Ambr. ib.
+                                προξενίᾳ Elmsl. προξένῳ Ambr. Havn. Pal. Urb. Paris. Vat. 10. κατὰ
+                                om. Ambr. Vat.: habet 2. ἀτελείᾳ] ἀτελίᾳ Ambr. Par. ib. δὲ om. Vat.
+                                ib. ἔτει α΄ huc transposuit Elmsl.: ib. Μακεδονίαν] μακεδόνα Vat. in
+                                Ambr. post πελειάδας (nam sic 3. μάλα] Neque εὖ, λαμπρῶς vel codex:
+                                πλειάδας Paris.). Πελιάδας simile quid excidit, quod opinabatur est
+                                in Vat. Elmsleius, neque μάλα in μεγάλα 11. αὐτῷ] αὐτοῦ Havn. In
+                                Pal. mutandum, quod aliis placuit. est τὰ . . αὐ . . δράματα πάντα
+                                ἐνενήκοντα 6. γυναῖκα] γυναῖκας Havn. καὶ ὀκτὼ ὡς φανερόν. ib.
+                                πρώτην—δευτέραν] πρῶτον—δεύτερον ib. σώζεται—Πειρίθους om. Urb.
+                                Havn. 12. οη΄] οκ Vind. οζ Suidas. ib. δευτέραν δὲ] δὲ om. Havn.
+                                Urb. ib. τούτων] καὶ τούτων Pal. Havn. ib. Χοιρίλην] χοιρίλλην Havn.
+                                χοιρίλλαν ib. νοθεύεται] νοθεύονται Vat. Vind. χοιρίλλου Urb.
+                                χοιρίνην ib. Τέννης—Πειρίθους om. Pal. Vind. Vat. Χοιρίνη ap. schol.
+                                Arist. Havn. Thesm. init. et alibi. Videnda de ib. Τέννης Elmsl.
+                                γέννης Ambr. et hoc nomine quae ex Philochoro Par. attulit schol.
+                                Hecubae v. 1. 13. ὥς om. Ambr.: habent reliqui. 7. Μνησαρχίδην]
+                                μνησταρχίδην Ambr. ib. ο΄] ἑβδομήκοντα Ambr. Correctum ex aliis. 14.
+                                καὶ ἐν Μακεδονίᾳ ἐτάφη] καὶ ib. πρεσβύτερον] μὲν πρεσβύτερον ἐτάφη
+                                ἐν μακεδονίᾳ Vat. Pal. Urb. Vind. Havn. μὲν πρῶτον Vat. Par. ἐτάφη
+                                δὲ ἐν μακεδονίᾳ Havn.</note>
+                            <pb n="5"/> Ἀθήνησιν ἐγένετο, καὶ ἐπίγραμμα ἐπεγέγραπτο Θουκυδίδου τοῦ
+                            ἱστοριογράφου ποιήσαντος ἢ Τιμοθέου τοῦ μελοποιοῦ· <lg>
+                                <l>μνῆμα μὲν Ἑλλὰς ἅπασ᾿  Εὐριπίδου, ὀστέα δʼ ἴσχει</l>
+                                <l>γῆ Μακεδών· τῇ γὰρ δέξατο τέρμα βίου.</l>
+                                <l>πατρὶς δʼ Ἑλάδος Ἑλλὰς, Ἀθῆναι. πλεῖστα δὲ Μούσας</l>
+                                <lb n="5"/>
+                                <l>τέρψας ἐκ πολλῶν καὶ τὸν ἔπαινον ἔχει.</l>
+                            </lg>
+                        </p>
+                        <p>Φασὶ δὲ καὶ κεραυνωθῆναι ἀμφότερα μνημεῖα. λέγουσι δὲ καὶ Σοφοκλέα,
+                            ἀκούσαντα ὅτι ἐτελεύτησε, αὐτὸν μὲν ἱματίῳ φαιῷ προελθεῖν, τὸν δὲ χορὸν
+                            καὶ τοὺς ὑποκριτὰς ἀστεφανώτους εἰσαγαγεῖν ἐν τῷ προαγῶνι καὶ δακρῦσαι
+                            τὸν δῆμον. ἐτελεύτησε δὲ τὸν τρόπον τοῦτον. <lb n="10"/> ἐν τῇ Μακεδονίᾳ
+                            κώμη ἐστὶ καλουμένη Θρᾳκῶν διὰ τό ποτε κατῳκηκέναι ἐνταῦθα Θρᾷκας. ἐν
+                            ταύτῃ ποτὲ τοῦ Ἀρχελάου Μολοττικὴ <note type="footnote">1. ἐπίγραμμα] δὲ
+                                add. Vat. fuit priore ex cod. Paris. edidit ib. ἐπεγέγραπτο Par.
+                                γέγραπτο Rossignolius. Est etiam in Havn. Ambr. Vat. αὐτῶ
+                                ἐπιγέγραπται Vind. et Vat. 1345. In Vat. titulus περὶ Havn. Urb.
+                                Epigramma Θουκυδίδου τῆς τελευτῆς εὐριπίδου. nomine inscriptum
+                                legitur Anth. 8. φαιῷ] ἤτοι πορφυρῷ scholion in Pal. 7, 45. inepte
+                                illata forma Dorica marg. habet Vat., in textu Par. μνᾶμα. 10.
+                                προαγῶνι] προγῶνι Vat. ἀγῶνι 4. Μακεδὼν] μακεδόνων libri. Correctum
+                                Rossignolius. ex Anthol. ib. ἐτελεύτησε—] Hic usque ad κυνὸς ib. τῇ
+                                γὰρ δέξατο] περ (vel ἧπερ) δίκη p. 6, 14. in Havn. praemissa ἐδέξατο
+                                Ambr. et, nisi quod δέξατο, quae supra p. 1.—2, 3. leguntur Pal.
+                                Vind. ἥπερ δέξατο Urb. Havn. εὐριπίδης υἱὸς μὲν ἐγένετο—τοῖς πέρσαις
+                                ᾗ πούπερ δέξατο Par. Vat. Correctum οἱ ἕλληνες verbis leviter
+                                mutatis. Sic ex Anthol. ubi ἢ (ᾗ editores) etiam codex Venetus 515.
+                                et Vat. γὰρ δέξατο, quod τῇ—scribendum 1363. apud Kirchhoffium. In
+                                Urb. esse monuit Meinekius. haec leguntur post ἀναθεῖναι p. ib.
+                                τέρμα βίου Vind. Havn. Anthol. 9, 4. τὸ τέρμα τοῦ βίου Ambr. et, ib.
+                                τὸν τρόπον τοῦτον] τοιουτοτρόπως omisso τὸ, Vat. Par. Havn. Ven.
+                                515. et Vat. 1363. In 5. πατρὶς Vind. et Anth. πατέρες Urb. est φασὶ
+                                δὲ τοῦτον τελευτῆσαι Ambr. πάτρη Par. πάτη Vat. πάτρα τὸν τρόπον τὸν
+                                εὐριπίδην. Havn. 11. ἐστὶ] δέ ἐστι Havn. Vat. 1363. ib. Ἑλλὰς om.
+                                Ambr. Vind. Havn. ib. Θρᾳκῶν] θράκις Havn. b. (i. e. Urb. Θρᾷκις, ut
+                                Rossignolius conjecerat). ib. πλεῖστα δὲ Μούσας (Μούσαις Βορμίσκον
+                                memorat Steph. Byz. Antb.) τέρψας] πολλὰ δὲ γράψας μούσαις
+                                Βορμίσκος· χωρίον Μακεδονίας, ἐν ᾧ κυνοσπάρακτος Par. Vat.
+                                νοσπάρακτος γέγονεν Εὐριπίδης. 6. πολλῶν] πλείστων Par. ib. ποτε om.
+                                Havn. ib. ἔχει] ἔχειν Ambr. qui hic desinit, 12. ἐνταῦθα Vat. ἐν
+                                ταύτῃ Par. Reliquam hujus Vitae partem, αὐτόθι Havn. Ven. 515. Vat.
+                                1363. ab alio adjectam grammatico, ib. ἐν ταύτῃ ποτὲ] εἰς ταύτην
+                                ποτὲ qui tempore et doctrina inferior Urb.</note>
+                            <pb n="6"/> κύων ἦλθεν ἀποπλανηθεῖσα. ταύτην Θρᾷκες, ὡς ἔθος, θύσαντες
+                            ἔφαγον. καὶ δὴ ὁ Ἀρχέλαος ἐζημίωσεν αὐτοὺς ταλάντῳ. ἐπεὶ οὖν οὐκ εἶχον,
+                            Εὐριπίδου ἐδεήθησαν ἀπολύσεως τυχεῖν, δεηθέντος τοῦ βασιλέως. χρόνῳ δὲ
+                            ὕστερον Εὐριπίδου ἐν ἄλσει τινὶ πρὸ τῆς <lb n="5"/> πόλεως ἠρεμοῦντος,
+                            Ἀρχελάου δὲ ἐπὶ κυνηγέσιον ἐξελθόντος, τῶν σκυλάκων ἀπολυθέντων ὑπὸ τῶν
+                            κυνηγῶν καὶ περιτυχόντων Εὐριπίδῃ, διεσπαράχθη καταβρωθεὶς ὁ ποιητής.
+                            ἦσαν δὲ ἔκγονοι οἱ σκύλακες τῆς ὑπὸ Θρᾳκῶν ἀναιρεθείσης κυνὸς, ὅθεν καὶ
+                            ἡ παροιμία ἐστὶ παρὰ τοῖς Μακεδόσι, κυνὸς δίκη. ἔσκωπτε δὲ τὰς γυναῖκας
+                            διὰ ποιημάτων <lb n="10"/> διʼ αἰτίαν τοιαύτην. εἶχεν οἰκογενὲς
+                            μειράκιον ὀνόματι Κηφισοφῶντα. πρὸς τοῦτον ἐφώρασε τὴν οἰκείαν γυναῖκα
+                            ἀτακτοῦσαν. τὸ μὲν οὖν πρῶτον ἀπέτροπεν ἁμαρτάνειν· ἐπεὶ δʼ οὐκ ἔπειθε,
+                            κατέλιπεν αὐτῷ τὴν γυναῖκα, βουλομένου αὐτὴν ἔχειν τοῦ Κηφισοφῶντος.
+                            λέγει οὖν καὶ ὁ Ἀριστοφάνης <lg>
+                                <lb n="15"/>
+                                <l>Κηφισοφῶν ἄριστε καὶ μελάντατε,</l>
+                                <l>σὒ δὴ συνέζης ὡς τὰ πόλλʼ Εὐριπίδῃ</l>
+                            </lg>
+                            <note type="footnote">1. κύων] αὐτόμολος κύων Urb. αὐτόμολος ib.
+                                Εὐριπίδῃ] εὐριπίδου Ven. 515. ἡ κύων Ven. 515. Vat. 1363. ib.
+                                ταύτην] δὲ addit Havn. Ven. 7. διεσπαράχθη] διεταράχθη Vat. 515.
+                                Vat. 1363. ἐσπαράχθη Havn. Urb. Ven. 515. 2. ἐζημίωσεν αὐτοὺς
+                                ταλάντῳ Vat. Vat. 1363. Par. ἐζημίωσεν αὖτοὺς ταλάντου Havn. ib. ὁ
+                                ποιητής om. Urb., sed addit ἐζημίωσεν αὐτοῖς τάλαντον Vat. 1363. καὶ
+                                ἀπέθανεν. ζημίαν ἐπήγαγεν αὐτοῖς ταλάντου Urb. ib. ἔκγονοι om. Havn.
+                                Ven. 515. Vt. 1363. 3. εἶχον] δοῦναι addit Ven. 515. 8. ἡ om. iidem
+                                et Urb. ib. Εὐριπίδου—ἀπολύσεως] εὐριπίδου ib. ἐστὶ] ἐπὶ Havn. Par.
+                                ἔτι Rossignolius. (εὐριπίδην Havn.) ἐδεήθησαν τυχεῖν ἀπολύσεως Havn.
+                                Urb. Ven. 515. ib. παρὰ τοῖς M.] ἐν μ. Urb. τοῖς Vt. 1363. μ. Havn.
+                                Ven. 515, Vat. 1363. ib. δεηθέντος] δεηθέντα Havn. 10. Κηφισοφῶντα]
+                                κισιφῶντα P. hic 4. Εὐριπίδου—ἠρεμοῦντος Par. εὐριπίδης— et infra
+                                κισιφῶντος et κισιφῶν. ἠρέμει ceteri. 14. Ἀριστοφάνης] In Gerytade
+                                5. κυνηγέσιον] τὸ κυνηγέσιον Urb. fabula, ut videtur: de quo dixi ad
+                                Vat. 1363. κυνηγεσίου Havn. Fragm. p. 594. ib. ἐξελθόντος] ἐλθόντος
+                                Havn. Ven. 15. μελάντατε] ταλάντατε Seidlerus, 515. Var. 1363. parum
+                                probabiliter, ostendi ib. τῶν] καὶ τῶν Urb. l. c. p. 595. 6.
+                                ἀπολυθέντων ὑπὸ τῶν κυνηγῶν καὶ 16. δὴ συνέζης] δὲ συνέζης Par.
+                                Illud om. Havn. Urb. Ven. 515. Vat. malui quam δὲ ξυνέζης. ib. ὡς
+                                Fixius pro εἰς. ib. περιτυχόντων] ἐπιτυχόντων Havn. ib. Εὐριπίδῃ
+                                Rossignolius pro εὐριπίδου. Ven. 515. Vat. 1363.</note>
+                            <pb n="7"/>
+                            <lg>
+                                <l>καὶ συνεποίεις ὡς φησὶ καὶ τὴν μελῳδίαν.</l>
+                            </lg> λέγουσι δὲ καὶ ὅτι αἱ γυναῖκες διὰ τοὺς ψόγους, οὓς ἐποίει εἰς
+                            αὐτὰς διὰ τῶν ποιημάτων, τοῖς θεσμοφορίοις ἐπέστησαν αὐτῷ βουλόμεναι
+                            ἀνελεῖν, ἐφείσαντο δʼ αὐτοῦ πρῶτον μὲν διὰ τὰς Μούσας, ἔπειτα δὲ
+                            βεβαιωσαμένου μηκέτι αὐτὰς κακῶς ἐρεῖν. ἐν γοῦν τῇ Μελανίππῃ <lb n="5"/>
+                            περὶ αὐτῶν τάδε φησὶ <lg>
+                                <l>μάτην ἄῤ ἐς γυναῖκας ἐξ ἀνδρῶν ψόγος</l>
+                                <l>ψάλλει κενὸν τόξευμα καὶ κακῶς λέγει·</l>
+                                <l>αἱ δʼ εἴσʼ ἀμείνους ἀρσένων. ἐγὼ λέγω</l>
+                            </lg> καὶ τὰ ἑξῆς. οὕτω δʼ αὐτὸν Φιλήμων ἠγάπησεν ὡς τολμῆσαι περὶ <lb
+                                n="10"/> αὐτοῦ θανόντος εἰπεῖν <lg>
+                                <l>εἰ ταῖς ἀληθείαισιν οἱ τεθνηκότες</l>
+                                <l>αἴσθησιν εἶχον, ἄνδρες ὥς φασίν τινες,</l>
+                                <l>ἀπηγξάμην ἂν, ὥστ᾿ ἰδεῖν Εὐριπίδην.</l>
+                            </lg></p>
+                        <note type="footnote">1. ὡς φησὶ καὶ τὴν] ὥς φασι, τὴν 1345. addunt haec
+                            loco prorsus Rossignolius parum apte. ὦ φθισικὲ, alieno illata, περὶ
+                            τραγῳδίας ἔνιοι τὴν Nauckius, conjectura ingeniosa, ταῦτά φασι, τοῖς
+                            πρῶτον νικήσασι quam certam dicerem, τρύγα δοθῆναι κατʼ ἀρχὰς ἆθλον καὶ
+                            si de usu adjectivi, φθισικὸς apud ἀπὸ τούτου κληθῆναι τρυγῳδίας (τραγ.
+                            Atticos veteres constaret. Par.). τρύγα δὲ ἐκάλουν οἱ παλαιοὶ τὸν 2. αἱ
+                            addidit Kirchhoffius. νέον οἶνον. ἦν δὲ τὸ (τὸ om. Par.) ὄνομα 3. τοῖς
+                            θεσμοφορίοις] Haec ex Aristophanis κοινὸν καὶ πρὸς τὴν τραγῳδίαν καὶ
+                            Thesmophor. ficta: ubi πρὸς τὴν (τὴν om. Par.) κωμῳδίαν, vide v. 181
+                            seqq. ἐπεὶ οὔπω διεκέκριτο τὰ τῆς ποιήσεως ib. διὰ τὰς μούσας Vat. Urb.
+                            διʼ ἑκάτερα. ἔνιοι δὲ οὐ τρυγῳδίας ἀπὸ τῆς αὐτὰς μούσας Par. τρυγὸς,
+                            ἀλλὰ τραγῳδίαν ὠνομάσθαι λέγουσι 5. αὐτὰς Meinekius. αὐταῖς Par. τράγος
+                            καὶ (scribe τράγος γὰρ, ib Μελανίππῃ scripsi pro μεναλίππῃ vel ἐπειδὴ
+                            τράγος, deleto καὶ) ὡρίσθη quod etiam alibi ab librariis τοῖς νικήσασιν.
+                            ὕστερον δὲ τὸ μὲν κοινὸν illatum. ὄνομα μόνη ἔσχεν ἡ τραγῳδία, ἡ δὲ
+                            κωμῳδία 7. ἐς] εἰς Par. (κωμῳδία δὲ Par., omissis 9. εἴσ᾿ Rossignolius
+                            pro εἰς. praecedentibus ἔνιοι δὲ οὐ—ἔσχεν ἡ ib. ἐγὰ] ᾗ ᾿γὼ Nauckius,
+                            collato τραγῳδία) ὠνομάσθη, ἐπειδὴ πρότερον Soph. El. 338. κατὰ κώμας
+                            ἔλεγον αὐτὴν ἐν ταῖς ἑορταῖς 11. θανόντος Rossignolius pro τοῦ τοῦ Διὸς
+                            καὶ τῆς Δήμητρος ἢ ἀπὸ ὄντος. 14. Post Εὐριπίδην Par. et Vatic. τοῦ
+                            κωμάζειν.</note>
+                    </div>
+
+                    <div type="textpart" subtype="chapter" n="2">
+                        <pb n="8"/>
+                        <head>II.</head>
+                        <p>Φασὶ δʼ αὐτὸν ἐν Σαλαμῖνι σπήλαιον κατασκευάσαντα ἀναπνοὴν ἔχον εἰς τὴν
+                            θάλασσαν ἐκεῖσε διημερεύειν φεύγοντα τὸν ὄχλον· ὅθεν καὶ ἐκ θαλάσσης
+                            λαμβάνει τὰς πλείστας τῶν ὁμοιώσεων. σκυθρωπὸς <lb n="5"/> δὲ καὶ
+                            σύννους καὶ αὐστηρὸς ἐφαίνετο καὶ μισόγελως καὶ μισογύνης, καθὰ καὶ
+                            Ἀριστοφάνης αὐτὸν αἰτιᾶται, “στρυφνὸς ἔμοιγε προσειπεῖν Εὐριπίδης.”
+                            λέγουσι δὲ αὐτὸν γήμαντα τὴν Μνησιλόχου θυγατέρα Χοιρίλην καὶ νοήσαντα
+                            τὴν ἀκολασίαν αὐτῆς γράψαι πρῶτον δρᾶμα τὸν Ἱππόλυτον, ἐν ᾧ τὴν
+                            ἀναισχυντίαν ἐθριάμβευε τῶν γυναικῶν, <lb n="10"/> ἔπειτα δὲ αὐτὴν
+                            ἀποπέμψασθαι. λέγοντος δὲ τοῦ γήμαντος αὐτὴν “σωφρονεῖ παῤ ἐμοί,
+                            “δύστηνος εἶ” έφη “εἰ γυναῖκα δοκεῖς παῤ ᾧ μὲν αὐτὴν σωφρονεῖν, παῤ ᾧ δὲ
+                            μή·” ἐπιγῆμαι δὲ αὐτὸν δευτέραν, ἣν εὑρὼν ἀκολαστοτέραν προχειροτέρως
+                            εἰς τὴν κατὰ τῶν γυναικῶν βλασφημίαν ἐθρασύνετο. αἱ δὲ γυναῖκες
+                            ἐβουλήθησαν <lb n="15"/> αὐτὸν κτεῖναι εἰσελθοῦσαι εἰς τὸ σπήλαιον, ἐν
+                            γράφων διετέλει. διαβάλλεται δὲ ὑπὸ φθόνου ὡς τὸν Κηφισοφῶντα εἶχε
+                            συμποιοῦντα αὐτῷ τὰς τραγῳδίας. λέγει δὲ καὶ Ἕρμιππος Διονύσιον τὸν
+                            Σικελίας <note type="footnote">2. Haec usque ad finem hujus 7. λέγουσι]
+                                φασὶ Urb. excerpti sunt in Vind. et Havn. 8. Χοιρίλην] χοιρίλλην
+                                Havn. χοιρίλλην φασὶ δʼ αὐτὸν usque ad στόμα (p. 9, Vind. χοιρίλλου
+                                Urb. 8.) om. Vat. et Par. ib. πρῶτον (πρώτων Havn.) δρᾶμα] ib. Φασὶ]
+                                Conf. Philochorus ap. τὸ δρᾶμα πρὸς Vind. In Urb. γράψαι Gellium 15,
+                                20. πρότερον τὸ δρᾶμα τὸν ἱππόλυτον. Urb. ib. κατασκευάσαντα]
+                                ἀνασκευάσαντα Recte habet πρῶτον, cui respondet Vind. ἔπειτα δέ. 3.
+                                ἐκεῖσε διημερεύειν φεύγοντα] ἐκεῖ 9. ἐθριάμβευε] ἐθριάβευε Havn.
+                                διημερεύοντα φεύγειν Urb. ἐθριαβεύει Urb. θριαμβεύει Vind. 4. τὰς
+                                πλείστας] τοὺς (voluit τὰς, 10. αὐτὴν om. Vind. ut Urb.) πλείους
+                                Havn. ib. ἀποπέμψασθαι] ἀποπέμπεσθαι 5. δὲ καὶ] δὲ ἢ Havn. Vind. ib.
+                                ἐφαίνετο] κατεφαίνετο Urb. ib. λέγοντος—διετέλει om. Urb. ib.
+                                μισογύνης om. Urb. In ἰσογροίης 11. σωφρονεῖ] σωφρονεῖν Vind.
+                                corruptum in Havn. Havn. Ficta autem haec ex Eurip. 6. Ἀριστοφάνης]
+                                Immo Alexander El. 923. ut vidit Nauckius, ubi Aetolus, cujus versum
+                                integrum legitur, δύστηνός ἐστιν, εἰ δοκεῖ τὸ σωφρονεῖν (ὁ δʼ
+                                Ἀναξαγόρου τρόφιμος χαιοῦ φρονεῖν ἐκεῖ μὲν αὐτὴν οὐκ ἔχειν, παῤ οἷ
+                                στρυφνὸς μὲν ἔμοιγε προσειπεῖν) cum δʼ ἔχειν. duobus versibus
+                                proximis servavit 16. συμποιοῦντα] συμπονοῦντα Havn. Gellius 15, 20:
+                                de quibus dixit 17. λέγει—τὸν] λέγουσι δὲ καὶ ἕρμιππον Meinekius in
+                                Anal. Alex. p. 247. τὸν Vind. Urb. ib. αὐτὸν om. Havn.</note>
+                            <pb n="9"/> τύραννον μετὰ τὴν τελευτὴν τοῦ Εὐριπίδου τάλαντον τοῖς
+                            κληρονόμοις αὐτοῦ πέμψαντα λαβεῖν τὸ ψαλτήριον καὶ τὴν δέλτον καὶ τὸ
+                            γραφεῖον, ἅπερ ἰδόντα κελεῦσαι τοὺς φέροντας ἐν τῷ Μουσῶν ἱερῷ
+                            ἀναθεῖναι, ἐπιγράψαντα τοῖς αὐτοῦ Εὐριπίδου ὀνόμασιν. διὸ καὶ
+                            ξενοφιλώτατον κεκλῆσθαί φησι διὰ τὸ μάλιστα ὑπὸ ξένων φιλεῖσθαι· <lb
+                                n="5"/> ὑπὸ γὰρ Ἀθηναίων ἐφθονεῖτο. μειρακίου δέ τινος
+                            ἀπαιδευτοτέρου στόμα δυσῶδες ἔχειν ὑπὸ φθόνου αὐτὸν εἰπόντος “εὐφήμει”
+                            ἔφη “μέλιτος καὶ Σειρήνων γλυκύτερον στόμα.” ἔσκωπτε δὲ τὰς γυναῖκας διὰ
+                            τῶν ποιημάτων διʼ αἰτίαν τοιάνδε. εἶχεν οἰκογενὲς μειράκιον ὀνόματι
+                            Κηφισοφῶντα. πρὸς τοῦτον ἐφώρα τὴν ἰδίαν γυναῖκα ἀτακτοῦσαν· <lb n="10"
+                            /> καὶ τὸ μὲν πρῶτον ἀπέτρεπεν ἁμαρτάνειν, ἐπεὶ δʼ οὐκ ἔπειθε, κατέλιπεν
+                            αὐτῷ τὴν γυναῖκα, βουλομένου αὐτὴν ἔχειν τοῦ Κηφισοφῶντος. οὕτω δʼ αὐτὸν
+                            Φιλήμων ἠγάπησεν ὡς καὶ τάδε περὶ αὐτοῦ τολμῆσαι εἰπεῖν <note
+                                type="footnote">1. τοῦ om. Urb. διὰ τὸ πεφωρᾶσθαι τὸν Κηφισοφῶντα
+                                ib. τάλαντον] τάλαντα Vind. Urb. (κισιφῶντα a m. pr., κιφησοφῶντα a
+                                2. αὐτοῦ om. Havn. m. sec.), οἰκογενῆ ὄντα συνελθεῖν τῇ ib.
+                                πέμψαντα] ἐκπέμψαντα Havn. οἰκείᾳ γυναικί· αἳ τὰ σκώμματα μὴ ib. τὸ
+                                ψαλτήριον om. Vind. spatio φέρουσαι ἀνελεῖν αὐτὸν ἔγνωσαν. ἔπειτα
+                                relicto. ἐφείσαντο αὐτοῦ πρῶτα μὲν διὰ τὰς ib. τὴν δέλτον] Similem
+                                de Aeschyli Μούσας, ἔπειτα δὲ διὰ τὸ συνθέσθαι pugillaribus (πυξίῳ)
+                                narrationem (sic Kirchhoffius pro σὸν θέσθαι) apud Lucian. Adv.
+                                indoctum μηκέτι αὐταῖς πεφωρᾶσθαι κακῶς ἐροῦντα. c. 15. comparavit
+                                Westermannus: ἐν τοῖς ἀμοιβαίοις φασὶ περιττὸν de quo v. Meinek.
+                                Hist. com. καὶ φορτικὸν (codex φορτίον) εἶναι, ἐν p. 362. τοῖς
+                                προλόγοις ὀχληρὸν, ῥητορικώτατον 3. ἰδόντα] ἰδὼν Havn. τῇ κατασκευῇ
+                                καὶ ποικίλον τῇ φράσει ib. τοὺς om. Havn. Urb. καὶ ἱκανὸν
+                                ἀνασκευάσαι τὰ εἰρημένα. ib. Μουσῶν] τῶν Μουσῶν Westerm. Cum
+                                postremis ἐν τοῖς ἀμοιβαίοις — 4. ἐπιγράψαντα] ἐπιγράψαι Vind.
+                                εἰρημένα comparanda quae ex codice ib. Εὐριπίδου] καὶ Εὐριπίδου
+                                Kirchh. Vaticano 1345. infra posuimus ib. διὸ—στόμα om. Urb. sub
+                                III. 5. φησι] φασι Havn. 8.—p. 10, 4. Eadem fere, aliis 6.
+                                ἐφθονεῖτο] φθονεῖται Vind. interpositis, supra p. 6, 9.—7, 14. ib.
+                                ἀπαιδευτοτέρου] ἀπαιδεύτου Vind. 10. Κηφισοφῶντα] κισσιφῶντα Vat. 7.
+                                δυσῶδες ἔχειν] δυσωδεῖν Vind. et infra κισσιφῶντος. κτησιφῶντα hic
+                                ib. εὐφήμει] ἡ φήμη Vind. et infra κτησιφῶντος Vind. 8. Σειρήνων
+                                γλυκύτερον] σειρῆνος γλυκὺ ib. τοῦτον] τούτῳ Havn. Vind. ib.
+                                ἐφώρασε] ἐφώρα Vind. Havn. ib. στόμα] Sequuntur in Urb. ib. ἰδίαν
+                                om. Havn. ἐτελεύτησε—κυνὸς δίκη (quae supra 12. αὐτῷ] αὐτὸς Havn.
+                                leguntur p. 5, 10. — 6, 9. post 13. Φιλήμων] καὶ φιλήμων Havn. quae
+                                sic pergit, ἐν τοῖς ποιήμασι δὲ ib. καὶ—εἰπεῖν] τολμήσαντα αὐτὸν
+                                αὐτοῦ ὡς εἴρηται, τὰς γυναῖκας ἔσκωπτε τοῦτο Havn., omissis reliquis
+                                εἰ ταῖς</note>
+                            <pb n="10"/>
+                            <lg>
+                                <l>εἰ ταῖς ἀληθείαισιν οἱ τεθνηκότες</l>
+                                <l>αἴσθησιν εἶχον, ἄνδρες ὥς φασίν τινες,</l>
+                                <l>ἀπηγξάμην ἂν, ὥστ᾿ ἰδεῖν Εὐριπίδην.</l>
+                            </lg> οὕτως ἡγοῦντο πολλοῦ τινος ἄξιον.</p>
+                    </div>
+
+                    <div type="textpart" subtype="chapter" n="3">
+                        <lb n="5"/>
+                        <head>III.</head>
+                        <p>Εὐριπίδης Μνησαρχίδου Ἀθηναῖος.</p>
+                        <p>Τοῦτον οἱ τῆς ἀρχαίας κωμῳδίας ποιηταὶ ὡς λαχανοπώλιδος κωμῳδοῦσι.
+                            γενέσθαι δὲ κατʼ ἀρχὰς μὲν αὐτόν φασι ζωγράφον, σχολάσαντα δὲ Ἀρχελάῳ τῷ
+                            φυσικῷ καὶ Ἀναξαγόρᾳ ἐπὶ τραγῳδίαν <lb n="10"/> ὁρμῆσαι. ὅθεν καὶ πλέον
+                            τι φρονήσας εἰκότως περιίστατο τῶν πολλῶν οὐδεμίαν φιλοτιμίαν περὶ τὰ
+                            θέατρα ποιούμενος. διὸ τοσοῦτον αὐτὸν ἔβλαπτε τοῦτο ὅσον ὠφέλει τὸν
+                            Σοφοκλέα. ἐπέκειντο δὲ καὶ οἱ κωμικοὶ φθόνῳ αὐτὸν διασύροντες. ὑπεριδὼν
+                            δὲ πάντα εἰς Μακεδονίαν ἀπῆρε πρὸς Ἀρχέλαον τὸν βασιλέα, κἀνταῦθα
+                            ὀψιαίτερον <lb n="15"/> ἀναλύων ὑπὸ βασιλικῶν ἐφθάρη κυνῶν. ἤρξατο δὲ
+                            διδάσκειν κατὰ τὴν πα ὀλυμπιάδα ἐπὶ ἄρχοντος Καλλίου. πλάσματι δὲ μέσῳ
+                            χρησάμενος περιγέγονε τῇ ἑρμηνείᾳ ἄκρως εἰς ἀμφότερον χρώμενος ταῖς
+                            ἐπιχειρήσεσι. καὶ τοῖς μέλεσίν ἐστιν ἀμίμητος παραγκωνιζόμενος τοὺς
+                            μελοποιοὺς σχεδὸν πάντας, ἐν δὲ τοῖς ἀμοιβαίοις περισσὸς καὶ <note
+                                type="footnote">— ἄξιον. In Vat. est ὡς τολμῆσαι Vat. quasi
+                                ἐκωμῴδουν vel, quod περὶ αὐτοῦ τοιοῦτον εἰπεῖν, in Vind. ὡς Nauckius
+                                conjecit, ἐκκωμῳδοῦσι scribere καὶ τάδε περὶ αὐτοῦ τολμῆσαι εἰπεῖν,
+                                ut voluerit librarius. est ap. Thomam M. 9. τῷ addidit Kirchh. 1.
+                                ἀληθείαισιν] ἀληθείησιν Vat. ib. τραγῳδίαν Kirchh. τραγωδίας 4.
+                                οὕτως — ἄξιον] Haec omissa Vat. supra post p. 7, 14. in Vat. Par. et
+                                11. τοσοῦτον Nauckius. τοῦτον Havn.: habent Vind. et Thomas Vat. M.
+                                13. φθόνῳ Kirchh. φόνω Vat. 6. Εὐριπίδης—] Hoc excerptum ex ib.
+                                πάντα] πάντας Kirchh. cod. Vat. 1345. chartaceo, qui olim 14.
+                                Μακεδονίαν Kirchh. μακεδόνα Fulvii Ursini fuit, primum edidit Vat.
+                                Kirchhoffius. Legitur autem in 16. μέσῳ—τῇ ἑρμηνείᾳ Meinekius.
+                                codice supra p. 5. 6. inter ἔχει et μέσον—τῆς ἑρμηνείας Vat. φασί
+                                loco alieno illatum. 19. ἐν δὲ τοῖς ἀμοιβαίοις—εἰρημένα] ib.
+                                Μνησαρχίδου Kirchh. μνησαρχίδης Eadem fere leguntur in alio alius
+                                Vat. codicis excerpto quod attulimus ad 8. κωμῳδοῦσι Kirchh.
+                                ἐκωμωδοῦσι p. 9, 8.</note>
+                            <pb n="11"/> φορτικὸς, καὶ ἐν τοῖς προλόγοις δὲ ὀχληρὸς, ῥητορικώτατος
+                            δὲ τῇ κατασκευῇ καὶ ποικίλος τῇ φράσει καὶ ἱκανὸς ἀνασκευάσαι τὰ
+                            εἰρημένα. τὰ πάντα δʼ ἦν αὐτῷ δράματα Ϟη΄. σώζεται δὲ αὐτοῦ δράματα ξζ΄,
+                            καὶ γ΄ πρὸς τούτοις τὰ ἀντιλεγόμενα, σατυρικὰ δὲ η΄. ἀντιλέγεται δὲ καὶ
+                            τούτων τὸ α΄. νίκας δὲ ἔσχε ε΄. </p>
+                        <lb n="5"/>
+                    </div>
+
+                    <div type="textpart" subtype="chapter" n="4">
+                        <head>IV.</head>
+                        <p>Θωμᾶ τοῦ Μαγίστρου σύνοψις τοῦ βίου τοῦ Εὑριπίδου.</p>
+                        <p>Εὐριπίδῃ τῷ ποιητῇ πατρὶς μὲν Ἀθῆναι, πατέρες δὲ Μνήσαρχος κάπηλος καὶ
+                            Κλειτὼ λαχανόπωλις. γεννηθεὶς δὲ ἐν Σαλαμῖνι τῇ πρὸ τῆς Ἀττικῆς νήσῳ ἐπὶ
+                            Καλλιάδου ἄρχοντος κατὰ τὴν οε΄ ὀλυμπιάδα, <lb n="10"/> ὅτε καὶ τὸ τοῦ
+                            Ξέρξου ναυτικὸν κατεναυμάχησαν Ἀθηναῖοι, πρῶτον μὲν ἤσκησε παγκράτιον
+                            καὶ πυγμὴν, τοῦ πατρὸς αὐτῷ χρησμὸν λαβόντος ὅτι στεφανηφόρους ἀγῶνας ὁ
+                            παῖς αὐτῷ νικήσει. ὃ δὴ καὶ εἰς ἔργον προύβη· ἐνίκησε γὰρ ταῦτα
+                            Ἀθήνησιν. ἔπειτα εἰς λόγους ὡρμηκὼς ἐφοίτησε παρὰ Ἀναξαγόρᾳ καὶ Προδίκῳ
+                            καί τισιν <lb n="15"/> ἄλλοις. ἀγχίνους δὲ ὢν, εἴπερ τις, καὶ τῷ πονεῖν
+                            ἑαυτὸν ἐκδεδωκὼς εἰς τραγῳδίαν ἐτράπη καὶ ἔλαμψεν ἐπὶ ταύτῃ σεμνῶς·
+                            πολλὰ γὰρ <note type="footnote">4. τούτοις Kirchh. τούτους Vat. ἀθηναῖος
+                                B. 5. ἀντιλέγεται Kirchh. ἀντιλέγει 10. Καλλιάδου] καλλίου B. AId.
+                                Vat Correxi cum Meursio, etsi non ib. ε΄ Kirchh. ῑε Vat. librarii
+                                esse error videtur, sed ipsius 7. Θωμᾶ] Hanc Vitam, quam Thomae, qui
+                                scripturam vitiosam Thomas Magister ex antiquiorum in codice suo
+                                invenerat, ut grammaticorum, quae supra proposuimus, est in
+                                Ambrosiano, de quo supra excerptis composuit su. dicebam ad p. 2, 1.
+                                isque additamentis exornavit, primum ib. οε΄] πέμπτην καὶ
+                                ἑβδομηκοστὴν edidit Aldus. Ego codice B. Ald. Parisino 2713. (P.)
+                                usus sum, a 11. κατεναυμάχησαν] κατεναυμαχήσθησαν quo leviter tantum
+                                discrepat Monacensis (sic, B. (60. chartaceus seculi 12. αὐτῷ]
+                                Rectius αὐτοῦ supra sexti decimi, quem memoravi ubi p. 2, 4. ubi
+                                pronomen in duobus operae pretium erat. codicibus omissum. ib. Θωμᾶ—
+                                Εὐριπίδου] σύνοψις τοῦ 14. Ἀθήνησιν] ἀθήνῃσιν B. Ald. τε βίου τοῦ
+                                ποιητοῦ καὶ τῆς τοῦ δράματος hic et infra. (i. e. Hecubae) ὑποθέσεως
+                                B. fol. 16. ἀγχίνους] Vid. ad p. 2, 5. 3 b. et Ald. in quibus haec
+                                cum ib. ἑαυτὸν om. B. Hecubae ὑποθέσει sunt conjuncta. 17. σεμνῶς
+                                Ald. σεμνόν B. Mon. 8. πατρὶς μὲν Ἀθῆναι] γένος μὲν</note>
+                            <pb n="12"/>
+                            <pb n="13"/>
+                            <lg>
+                                <l>μνῆμα μὲν Ἑ΅λλὰς ἅπασ᾿ Εὑριπίδου, ὀστέα δʼ ἴσχει</l>
+                                <l>γῆ Μακεδών· ἥπερ δέξατο τέρμα βίου.</l>
+                                <l>πάτρη δʼ Ἑλλάδος Ἑλλὰς, Ἀθῆναι. πλεῖστα δὲ Μούσας</l>
+                                <l>τέρψας ἐκ πολλῶν παὶ τὸν ἔπαινον ἔχει.</l>
+                            </lg> φασὶ δὲ ἐπὶ τῷ ἀκούσματι τῆς Εὐριπίδου τελευτῆς τοὺς μὲν Ἀθηναίους
+                                <lb n="5"/> πάντας πενθῆσαι, Σοφοκλέα δὲ αὐτὸν μὲν καὶ φαιὸν
+                            ἐνδεδύσθαι χιτῶνα, τοὺς δὲ ὑποκριτὰς αὐτοῦ ἀστεφανώτους τῷ τότε
+                            εἰσαγαγεῖν πρὸς τὸν ἀγῶνα. οὕτω δʼ αὐτὸν Φιλήμων ἠγάπησεν ὡς καὶ τάδε
+                            περὶ αὐτοῦ τολμῆσαι εἰπεῖν <lg>
+                                <l>εἰ ταῖς ἀληθείαισιν οἱ τεθνηκότες</l>
+                                <lb n="10"/>
+                                <l>αἴσθησιν εἶχον, ἄνδρες ὥς φασίν τινες,</l>
+                                <l>ἀπηγξάμην ἂν, ὥστʼ ἰδεῖν Εὐριπίδην.</l>
+                                <l>οὕτως ἡγοῦντο πολλοῦ τινος ἄξιον.</l>
+                            </lg></p>
+                    </div>
+
+                    <div type="textpart" subtype="chapter" n="5">
+                        <head>V.</head>
+                        <p>Μανουὴλ τοῦ Μοσχοπούλου σύνοψις τοῦ βίου τοῦ <lb n="15"/> Εὐριπίδου.</p>
+                        <p>Εὐριπίδης Μνησάρχου ἢ Μνησαρχίδου καὶ Κλειτοῦς, οἳ φεύγοντες εἰς Βοιωτίαν
+                            μετῴκησαν, εἶτα ἐν τῇ Ἀττικῇ. οὐκ ἀληθὲς δὲ ὡς λαχανόπωλις ἦν ἡ μήτηρ
+                            αὐτοῦ· καὶ γὰρ τῶν σφόδρα εὐγενῶν <note type="footnote">1. μνῆμα] μνᾶμα
+                                Ald. eodem 11. φασίν] φασὶ B. errore quo in Anthol. codex Palatinus,
+                                12. ἰδεῖν] εἰδεῖν B. tinus. ut notavi ad p. 5, 1. 15.
+                                Μανουὴ—Εὐριπίδου] Haec inscriptio 2. Μακεδών] μακεδόνων B. pr., sad
+                                est in Ald., fortasse editoris correctum μακεδών, et Mon. arbitrio.
+                                Γένος Εὐριπίδου inscriptum ib. ἥπερ B. Mon. ἣ γὰρ Ald. ab manu
+                                seculi 15. exeuntis, quod corrector ex Anthol. Pal. ut videtur, in
+                                Guelf. fol. 1. intulisse videtur: v. ad p. 5, 4. σύνοψις τοῦ βίου
+                                τοῦ ποιητοῦ. αἱ δὲ τῶν ib. τέρμα] τέρμα B., sed deleto δραμάτων
+                                ὑποθέσεις εἴσθησαν (sic). αἱ τοῦ τέρμα γε Mon. φερόμεναι γὰρ ἦσαν
+                                ἀπαραποιήτως ἐν τοῖς παλαιοῖς βιβλίοις in B. fol. 2 b. 3. πάτρη B.
+                                Mon. πατρὶς Ald. ut Neque in codicibus Venetis Marcianis in Anthol.
+                                ib. Ἑλλάδος supra versum additum 470. et 614. aliisque Moschopuli ab
+                                alia manu B. nomen praescriptum. Neque 4. πολλῶν] πολλῶν πάνυ B.,
+                                sed eo opus erat, quum haec Vita deleto πάνυ, et Mon. tota ex Suida
+                                sit transcripta. ib. ἔχει] σὺν δίκη addit B., sed deletum. 17.
+                                Κλειτοῦς] κλητοῦς B. Habet etiam Mon.</note>
+                            <pb n="14"/> ἐτύγχανεν οὖσα, ὡς Φιλόχορος ἀποδείκνυσιν. ἐν δὲ τῇ
+                            διαβάσει Ξέρξου ἐκυοφορεῖτο ὑπὸ τῆς μητρὸς, ἐτέχθη δὲ καθʼ ἢν ἡμέραν
+                            Ἕλληνες ἐτρέψαντο τοὺς Πέρσας. γέγονε δὲ τὰ πρῶτα ζωγράφος, εἶτα μαθητὴς
+                            Προδίκου ἐν τοῖς ῥητορικοῖς, Σωκράτους δὲ ἐν τοῖς <lb n="5"/> ἠθικοῖς
+                            καὶ φιλοσόφοις. διήκουσε δὲ καὶ Ἀναξαγόρου τοῦ Κλαζομενίου. ἐπὶ
+                            τραγῳδίαν δὲ ἐτράπη τὸν Ἀναξαγόραν ἰδὼν ὑποστάντα κινδύνους διʼ ἅπερ
+                            εἰσῆξε δόγματα. σκυθρωπὸς δὲ τὸ εἶδος ἦν καὶ ἀμειδὴς καὶ φεύγων τὰς
+                            συνουσίας, ὅθεν καὶ μισογύνης ἐδοξάσθη· ἔγημε δὲ ὅμως πρώτην μὲν
+                            Χοιρίλην, θυγατέρα Μνησιλόχου, ἐξ ἧς <lb n="10"/> ἔσχε Μνησίλοχον καὶ
+                            Μνησαρχίδην καὶ Εὐριπίδην. ἀπωσάμενος δὲ ταύτην ἔσχε καὶ δευτέραν, καὶ
+                            ταύτης ὁμοίως ἀκολάστου πειραθεὶς, μεταναστὰς ἀπʼ Ἀθηνῶν ἦλθε πρὸς
+                            Ἀρχέλαον τὸν βασιλέα τῶν Μακεδόνων, παῤ ᾧ διῆγεν ἄκρας ἀπολαύων τιμῆς.
+                            ἐτελεύτησε δὲ ἐξ ἐπιβουλῆς Ἀρριβαίου τοῦ Μακεδόνος καὶ Κρατεύα τοῦ
+                            Θετταλοῦ, <lb n="15"/> ποιητῶν ὄντων καὶ φθονησάντων αὐτῷ καὶ πεισάντων
+                            τὸν βασιλέως οἰκέτην, ὄνομα Λυσίμαχον, δέκα μνῶν ἀγορασθέντα, τοὺς
+                            βασιλικοὺς σὓς αὐτὸς ἔτρεφε κύνας ἐπαφεῖναι τῷ Εὐριπίδῃ. ἕτεροι δὲ
+                            ἱστόρησαν οὐχ ὑπὸ κυνῶν, ἀλλʼ ὑπὸ γυναικῶν αὐτὸν διασπασθῆναι
+                            πορευόμενον ἀωρὶ πρὸς Κρατερὸν τὸν ἐρώμενον Ἀρχελάου (καὶ γὰρ <lb n="20"
+                            /> σχεῖν αὐτὸν καὶ περὶ τοὺς τοιούτους ἔρωτας), οἱ δὲ πρὸς τὴν γαμετὴν
+                            Νικοδίκου τοῦ Ἀρεθουσίου. ἔτη δὲ βεβιωκέναι φασὶν αὐτὸν οε΄, καὶ τὰ ὀστᾶ
+                            αὐτοῦ ἐν Πέλλῃ μετακομίσαι τὸν βασιλέα. δράματα δὲ αὐτοῦ κατὰ μέν τινας
+                            οε΄, κατὰ δὲ ἄλλους Ϟβ. σώζονται δὲ οζ΄. <note type="footnote">1. οὖσα
+                                om. Suidas. 15. καὶ πεισάντων] πεισάντων τε 3. γέγονε Guelf. et
+                                Suidas. ἐγένετο Suidas. B. Ald. 17. τῷ Εὐριπίδη] αὐτῷ Suidas. 7.
+                                κινδύνους om. Guelf. ib. ἕτεροι] οἱ Suidas. ib. τὸ εἶδος ἦν] ἦν τὸ
+                                ἦθος apud 19. καὶ γὰρ — Ἀρεθουσίου om. B. Suidam in cod. Paris. A.:
+                                nam et Guelf. ceteri libri τὸ ἦθος omittunt. 21. βεβιωκέναι] βιῶναι
+                                Suidas, 9. Χοιρίλην] Χοιρίνην ap. Suidam, omisso φασίν. nisi quod in
+                                cod. Bruxell. χοιρίλλην. 21. 23. οε΄] ἑβδομήκοντα πέντε B. et 12.
+                                μεταναστὰς] ἀπάρας δʼ Suidas. priore loco Guelf. ib. τὸν ex Suida
+                                addidi. 22. καὶ τὰ ὀστᾶ—οε΄ om. Suidae 13. διῆγεν—ἐξ] διῆγε τῆς —
+                                ὑπὸ codex Par. A. ib. Πέλλῃ] πέλη B. Suidas. 14. Ἀρριβαίου ex Suida.
+                                ἀριβαίου 23. Ϟβ΄] ἐννενήκοντα δύο B. B. Guelf. Ald. ib. σώζονται δὲ
+                                οζ΄ om. B. Guelf. ib. Κρατεύα] κρατέα Guelf. κραταίως et Suidae
+                                codex Leidensis. B.</note>
+                            <pb n="15"/> νίκας δὲ εἵλετο πέντε, τὰς μὲν τέσσαρας περιὼν, τὴν δὲ μίαν
+                            μετὰ τὴν τελευτὴν, ἐπιδειξαμένου τὸ δρᾶμα τοῦ ἀδελφιδοῦ αὐτοῦ Εὐριπίδου.
+                            ἐπεδείξατο δʼ ὅλους ἐνιαυτοὺς κβ΄. τελευτᾶ δὲ ἐπὶ τῆς Ϟγ΄
+                            ὀλυμπιάδος.</p>
+                        <note type="footnote">1. εἵλετο] ἀνείλετο Suidae codex libris κϚ scriptum,
+                            vitiosum esse Paris. A. animadvertit Bernhardyus, qui μβ΄ ib. τὴν om. B.
+                            propius ab vero abesse monet. 2. ἐπιδειξαμένου — κβ΄ om. B. 3. Ϟγ΄]
+                            ἐννενηκοστῆς τρίτης] B. Guelf. Guelf. Ald., habet Suidas. Numerum Ald.
+                            κβ΄, in deterioribus Suidae</note>
+                    </div>
+
+            </div>
+        </body>
+    </text>
+</TEI>
