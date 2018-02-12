@@ -60,8 +60,8 @@
 	<pubPlace>Leipzig</pubPlace>
 	<date>1864</date>
   </imprint>
-  <biblScope unit="volume">I</biblScope>
  </monogr>
+  <ref target="https://archive.org/details/metrologicorums03hultgoog">The Internet Archive</ref>
  </biblStruct>
 </listBibl>
 </sourceDesc>
@@ -69,7 +69,7 @@
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards</p>
  <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+  <cRefPattern matchPattern="(.+).(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
   <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
 </encodingDesc>
