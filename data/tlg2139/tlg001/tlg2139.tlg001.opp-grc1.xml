@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="lat">Sicili Epitaphium</title>
+				<author xml:lang="lat">Epitaphium Sicili</author>
+				<editor>Karl Jahn</editor>
+				<funder>Harvard Library Arcadia Fund</funder>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<persName xml:id="DDD">Digital Divide Data</persName>
+					<resp>Corrected and encoded the text</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Gregory Crane</persName>
+					<resp>Editor-in-Chief, Perseus Digital Library</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Matt Munson</persName>
+					<resp>Project Manager (University of Leipzig), 2016 - present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Annette Gessner</persName>
+					<resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Thibault Clérice</persName>
+					<resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Bruce Robertson</persName>
+					<resp>Technical Advisor</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Harvard College Library</authority>
+				<idno type="filename">tlg2139.tlg001.opp-grc1.xml</idno>
+				<availability>
+					<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</p>
+				</availability>
+				<date>2017</date>
+				<publisher>Harvard College Library</publisher>
+				<pubPlace>United States</pubPlace>
+			</publicationStmt>
+			<sourceDesc>
+				<listBibl>
+					<biblStruct>
+						<monogr>
+							<title xml:lang="lat">Musici scriptores Graeci</title>
+							<editor>
+								<persName>
+									<name>Karl Jahn</name>
+								</persName>
+							</editor>
+							<author ref="urn:cts:greekLit:tlg2139" xml:lang="lat">Epitaphium Sicili</author>
+							<imprint>
+								<publisher>Teubner</publisher>
+								<pubPlace>Leipzig</pubPlace>
+								<date>1895</date>
+							</imprint>
+						</monogr>
+						<ref target="http://catalog.hathitrust.org/Record/001227462">Hathi Trust</ref>
+					</biblStruct>
+				</listBibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>Text encoded in accordance with the latest EpiDoc standards</p>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change/>
+		</revisionDesc>
+	</teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2139.tlg001.opp-grc1">
+<div type="textpart" subtype="section" n="1">
+
+<pb n="452"/>
+<note type="header"><p>5. Sicili</p></note>
+<p>Εἰκὼν ἡ λίθος εἰμι· τίθησι μὲ Σείκιλος ἔνθα</p>
+<p>μνήμης ἀθανάτου σῆμα πολυχρόνιον.</p>
+<lb n="5"/> <p>Ὅσον ζῇς, φαί-νου,</p>
+<p>μηδὲν ὅλως συ λυποῦ·</p>
+<p>πρὸς ὀλίγον ἐστὶ τὸ ζῆν,</p>
+<lb n="10"/><p>τὸ τέλος ὁ χρόνος ἀπ-αι -τ ε ῖ.</p>
+<p>Σείκιλος εὐτερ<gap reason="omitted"/>
+ζῇ.</p>
+<note type="footnote">5 Crus p. 163. 8 ?? Crus. 161, sed p. 163 idem ait
+punctum in l delendum videri.</note>
+
+<pb n="453"/>
+<note type="header"><p>epitaphium.</p>
+<p>Bulletin de correspondance hellenique VII p. 277.</p>
+	<p>Crusius in Philologo LII (N F VI) p.160.</p></note>
+<figure>
+	<graphic url="https://babel.hathitrust.org/cgi/pt?id=nyp.33433082166244;view=1up;seq=551"/>
+	<figDesc>Ὅ -σον ζῇς φ α ί -νου,
+		μη - θὲν ὅ - λως σὺ λὺ -ποῦ·
+		πρὸς ὁ -λί -γον ἐ σ - τὶ τὸ ζῆν,
+		τὸ τέ -λος ὁ χρό-νος ἀπ αι -τεῖ.</figDesc>
+</figure>
+<note type="footnote">De signo morae productae et de punctis quibus pedis
+ictus signatur cf. Anonymum Bell. § 3. syneopas hic exstare
+et in exitus syllabis . . ποῦ, ξῆν, . . τεῖ satis premendum esse
+sonum extremum docet Spitta p. 109.</note>
+</div>
+</div>
+</body>
+</text>
+</TEI>

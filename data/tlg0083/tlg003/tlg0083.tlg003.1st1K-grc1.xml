@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">De Bospori Navigatione</title>
+                <author>Dionysius of Byzantium</author>
+                <editor xml:lang="lat">Carolus Müllerus</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg0083.tlg003.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            
+                            <title xml:lang="lat">Geographi Graeci Minores</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Carolus Müllerus</name>
+                                    <addName xml:lang="deu">Karl Müller</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0083">Dionysius of Byzantium</author>
+                  
+                            <imprint>
+                                <publisher>Ambroise-Firmin Didot</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1861</date>
+                            </imprint>
+                            
+                            <biblScope unit="volume">2</biblScope>
+                            
+                        </monogr>
+                        <ref target="https://archive.org/details/bub_gb_63VfAAAAMAAJ">The Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        
+        
+        <encodingDesc>
+            
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+            
+            
+            <refsDecl n="CTS">
+                
+                <cRefPattern n="fragment" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment(s)</p>
+                    
+                </cRefPattern>
+         
+            </refsDecl>
+            
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Chiara Palladino">created the file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0083.tlg003.1st1K-grc1">
+                
+                <div type="textpart" subtype="fragment" n="1">
+                    <pb n="1"/>
+                    <head>ΔΙΟΝΥΣΙΟΥ  ΒΥΖΑΝΤΙΟΥ
+                        ΑΝΑΠΛΟΥΣ ΒΟΣΠΟΡΟΥ</head>
+                    <p>Εἰ μόνην συνέβαινε τοῖς ἀναπλέουσιν εἰς τὸν Εὔξεινον
+                        Πόντον καὶ τὸ καλούμενον αὑτοῦ Στόμα τερπνὴν
+                        ἅμα καὶ θαυμαστὴν εἶναι τὴν ὄψιν, δυσχερὴς <supplied reason="omitted">ἂν</supplied> ἦν
+                        ἄλλως ἐπὶ τοῖς ὁρωμένοις ὁ λόγος· ἀπείργαστο γὰρ δὴ
+                        τὸ σύμπαν ὑπὸ τῆς ὄψεως ἀξιοθαύμαστον ἑαυτὴν παρεχομένης
+                        κατά τε ἐγγύτητα καὶ στενοχωρίαν τοῦ
+                        πορθμοῦ καὶ τὴν δι᾿  ὀλίγου τῆς θαλάττης πρὸς ἀμφοτέραν
+                        τὴν ἤπειρον ἐπιμιξίαν <supplied reason="omitted">καὶ τὴν</supplied> ἀγχιβαθῆ
+                        κόλπων καὶ λιμένων ἀνάχυσιν, ὑφ᾿  ὧν οὐχ ἧττον εὔθηρός
+                        ἐστιν ἢ σκεπανή, τοῦ ῥεύματος τὸ μὲν πλέον
+                        κατιόντος, ἔστι δὲ ὅτε κατ᾿  ἐπικράτειαν ἀναστρέφοντος,
+                        εἰσιόντων τε τῶν ἀκρωτηρίων τὴν παραγωγὴν
+                        παῤ ἀλλήλων ἀναπτυσσομένων καὶ ἐκ τῆς κατ᾿  εὐθὺ
+                        πορίας ἀναλυόντων τοῦ ῥεύματος τὴν βίαν· ἐπεὶ δὲ
+                        οὐκ ἐλάττω παρέχεται τῆς ὄψεως τὴν ἀκρόασιν, ἀναγκαῖον
+                        ἔδοξέ μοι συγγράψαι περὶ τούτων, ὡς τοῖς μὲν
+                        ἰδοῦσι μηδὲν ἐνδέοι τῆς ὁλοκλήρου καὶ τελειοτάτης
+                        ἱστορίας, οἱ δὲ μὴ θεασάμενοι τὸ γοῦν ἀκηκοέναι
+                        περὶ αὐτῶν ἔχοιεν. Ἀρχὴ δὲ αὑτὴ τοῦ τε λόγου καὶ
+                        τῆς τῶν χωρίων φύσεως πέλαγός ἐστιν ὁ Πόντος ὁ
+                        Εὔξεινος μεγέθει τῶν ἄλλων πλεῖστον, ὅσα μὴ πρὸς
+                        τὴν ἔξω θάλασσαν ἰσώσασθαι. Μόνη δὲ ὑπὲρ αὐτὸν
+                        ἀνακέχυται λίμνη Μαιῶτις, ἣν μητέρα καὶ τροφὸν
+                        
+                        <pb n="2"/>
+                        τοῦ Πόντου κατεφήμισε λόγος ἐκ παλαιᾶς μνήμης
+                        παραδεδομένος. Ταύτης τὸ μὲν περίμετρόν ἐστι δισχιλίων
+                        σταδίων, τὸ δὲ πέρας ποταμὸς ὁ Τάναϊς, ὅρος
+                        τῶν δυεῖν ἠπείρων.</p>
+                </div>
+                
+                
+            </div>
+            
+
+        </body>
+    </text>
+</TEI>

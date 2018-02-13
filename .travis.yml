@@ -2,11 +2,11 @@ language: python
 
 python:
   - '3.5'
-
+  
 install:
   - pip3 install HookTest>=1.0.0
 
-script: hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5 --manifest --countword --hookUI "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
+script: travis_wait 60 hooktest ./ --console table --scheme epidoc --workers 3 --verbose 5 --manifest --countword --hookUI "http://ci.perseids.org/api/hook/v2.0/user/repositories/OpenGreekAndLatin/First1KGreek"
 
 before_deploy:
   - hooktest-build --travis --txt ./
@@ -19,7 +19,6 @@ before_deploy:
   - git commit -m "Removed failing files" -m "Release $GIT_TAG"
   - git tag $GIT_TAG -a -m "$DATE" -m "PASSING FILES" -m "$results"
   - git push -q https://$GITPERM@github.com/OpenGreekAndLatin/First1KGreek --tags
-  - ls -R
 
 deploy:
   provider: releases

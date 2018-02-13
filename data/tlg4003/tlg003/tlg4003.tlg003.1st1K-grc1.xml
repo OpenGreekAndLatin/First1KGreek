@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Artemidori Geographia (Epitome Marciani)</title>
+                <author>Marcianus of Heraclea</author>
+                <editor xml:lang="lat">Carolus Müllerus</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+
+                <idno type="filename">tlg4003.tlg003.1st1K-grc1.xml</idno>
+  
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+
+                            <title xml:lang="lat">Geographi Graeci Minores</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Carolus Müllerus</name>
+                                    <addName xml:lang="deu">Karl Müller</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg4003"
+                                >Marcianus of Heraclea</author>
+
+                            <imprint>
+                                <publisher>Ambroise-Firmin Didot</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1855</date>
+                            </imprint>
+                            
+                            <biblScope unit="volume">1</biblScope>
+                            
+                        </monogr>
+                        <ref target="https://archive.org/details/geographigraeci00philgoog">The Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+
+        <encodingDesc>
+
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+
+
+            <refsDecl n="CTS">
+                
+                <cRefPattern n="paragraph" matchPattern="(.+).(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+                    <p>This pointer pattern extracts fragments and paragraphs</p>
+                </cRefPattern> 
+                
+                <cRefPattern n="section" matchPattern="(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts books</p>
+                    
+                </cRefPattern>
+                
+    <cRefPattern n="book" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts sections</p>
+                </cRefPattern> 
+               
+                
+            </refsDecl>
+
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Chiara Palladino" xml:id="CP">created the file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg4003.tlg003.1st1K-grc1">
+
+                <div type="textpart" subtype="section" n="1">
+                    <pb n="574"/>
+                    <head>ΜΑΡΚΙΑΝΟΥ ΗΡΑΚΛΕΩΤΟΥ ΤΩΝ ΕΝΔΕΚΛ ΤΗΣ ΑΡΤΕΜΙΔΩΡΟΥ ΤΟΥ ΕΦΕΣΙΟΥ ΓΕΩΓΡΑΦΙΑΣ
+                        ΒΙΒΛΙΩΝ ΕΠΙΤΟΜΗ.</head>
+                    <head>ΕΥΡΩΠΗ.</head>
+                    <div type="textpart" subtype="book" n="1">
+                        <!-- short explanation of the encoding system: 
+                        Müller uses fragments from other sources to recover missing parts of the Epitome (essentially Stephanus Byzantius and other works of Marcian). Unless otherwise specified, 
+                        the numbered paragraphs come from the Epitome itself (which is variously mentioned in the fragment); when the source is specified at the beginning, 
+                        it is encoded with the <cit> structure. 
+                        <p> is used to encode all the fragments, in absence of a clearer structural division. 
+                        
+                        -->
+
+                        <head>ΒΙΒΛ. Α΄.</head>
+                        <div type="textpart" subtype="paragraph" n="1"><p>1. 
+                            <cit>
+                                <bibl>
+                                    <expan resp="#CP">
+                                        <abbr>St</abbr>
+                                        <ex>ephanus</ex>
+                                    </expan>
+                                    <expan resp="#CP">
+                                        <abbr>B</abbr>
+                                        <ex>yzantius</ex>
+                                    </expan>
+                                    <!-- Stephanus Byzantius, Ethnika, expanded for more clarity -->
+                                </bibl>
+                                <quote>Λίγυρες, ἔθνος προσεχὲς τοῖς Τυρρηνοῖς· <lb n="10"/>
+                                    Ἀρτεμίδωρος ἐν Ἐπιτομῇ τῶν ἕνδεκα· ἀπὸ Λιγύρου ποταμοῦ. </quote>
+                            </cit>
+                        </p>
+
+
+                        </div>
+<div type="textpart" subtype="paragraph" n="2"><p>2. Δερτών. πόλις Λιγύρων. Ἀρτεμίδωρος ἐν Ἐπιτομῆ τῶν ια΄· « Τὴν
+                            καλουμένην Δερτῶνα πόλιν. Τὸ ἐθνικὸν Δερτώνιος, ὡς Ἀντρώνιος.</p>
+
+                        </div>
+<div type="textpart" subtype="paragraph" n="3"><p> 3. Μαστραμέλη, πόλις καὶ λίμνη τῆς Κελτικῆς. Ἀρτεμίδωρος ἐν τῷ
+                            Ἐπιτομῇ τῶν ἕνδεκα.</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="4"><p>4. 
+                            <cit>
+                                <bibl>Marcian. II, 19</bibl>
+                                <quote>Τῆς γὰρ Ναρβωνησίας τὸν περίπλουν ἐν τῇ ἐπιτομῇ τῆς
+                                    Ἀρτεμιδώρου γεωγραφίας ἤτοι περίπλου σαφῶς διεξήλθομεν, εἰ καὶ ὁ
+                                    προειρημένος <lb n="20"/> Ἀρτεμίδωρος τὴν διαίρεσιν τῶν ἐν
+                                        <supplied reason="omitted">τῇ Κελτογαλατίᾳ ὡς καὶ τῶν ἐν
+                                        τῇ</supplied> Ἰβηρίᾳ ἐπαριῶν αὐκ ἐποτήσατο.</quote>
+                            </cit>
+                        </p>
+
+                        </div>
+<div type="textpart" subtype="paragraph" n="5"><p>5.
+                            <cit>
+
+                                <bibl>
+                                    <expan resp="#CP">
+                                        <abbr>St</abbr>
+                                        <ex>ephanus</ex>
+                                    </expan>
+                                    <expan resp="#CP">
+                                        <abbr>B</abbr>
+                                        <ex>yzantius</ex>
+                                    </expan>
+                                </bibl>
+                                <quote>Νάρβων, ἐμπόριον καὶ πόλις κελτική <gap reason="omitted"/>
+                                    Μαρκιανὸς δὲ Ναρβωνησίαν αὐτήν φησιν.</quote>
+                            </cit>
+                        </p>
+                    </div></div>
+
+                    <div type="textpart" subtype="book" n="2">
+                        <!-- TWO books are given in the same section here -->
+                        <pb n="575"/>
+                        <head>ΒΙΒΛ. Β΄. Γ΄.</head>
+                        <div type="textpart" subtype="paragraph" n="6"><p>
+                         6. Μαλάκη, πόλις Ἰβηρίας. Μαρκιανὸς ἐν β΄ τῶν Ἐπιτομῶν
+                                Ἀρτεμιδώρου.
+                        </p>
+
+                        </div>
+<div type="textpart" subtype="paragraph" n="7"><p>7. 
+                            <cit>
+                            <bibl>Marc. I, 4 </bibl>
+                            <quote>Οἱ δὲ κατὰ Γάδειρα τὴν νῆσον (τὰς φ. Ἡρακλείους στήλας εἶναί
+                                φασιν), ὥσπερ καὶ Ἀρτεμίδωρος <lb n="5"/> ὁ γεωγράφος.</quote>
+                        </cit>
+                        </p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="8"><p>
+                           
+                    8. Σολκοί, πόλις ἐν Σαρδοῖ, ὡς Ἀρτεμίδωρος ἐν Ἐπιτομῇ· « ἀπὸ δὲ
+                                Καράλεως ἐπὶ Σολκούς ».
+                        </p>
+                    </div></div>
+
+                    <div type="textpart" subtype="book" n="4">
+                        <head>ΒΙΒΛ. Δ΄.</head>
+
+                        <div type="textpart" subtype="paragraph" n="9"><p>9. Τέγεστρα, οὐδετέρως, πόλις Ἰλλυρίας πρὸς τῇ Ἀκυληίᾳ, <supplied reason="omitted">ἀπὸ
+                                Τεγέστρου</supplied>. Ἀρτεμίδωρος δʼ ἐν <lb n="10"/> Ἐπιτομῇ τῶν ἕνδεκα
+                            Τέργεστρον αὐτὴν καὶ κώμην οἶδεν « Ἀπὸ Τεργέστρου κώμης καὶ τοῦ μυχοῦ
+                            ἐπὶ τὸν Ἀδρίαν στάδιοι εκε΄. »</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="10"><p>10. Φλάνων, πόλις καὶ λιμὴν περὶ τὴν Ἄψυρτον νῆσον. Ἀρτεμίδωρος ἐν
+                            Ἐπιτομῇ τῶν ια΄. « Μετὰ <lb n="15"/> δὲ τὴν Ἄλωον λιμήν ἐστι Φλάνων καὶ
+                            πόλις Φλάνων, καὶ πᾶς ὁ κόλπος οὗτος Φλανωνικὸς καλεῖται. »</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="11"><p>11. Ἀψυρτίδες, νῆσοι πρὸς τῷ Ἀδρίᾳ, ἀπὸ Ἀψύρτου παιδὸς Αἰήτου ἐν μιᾷ
+                            δολοφονηθέντος ὑπὸ τῆς ἀδελφῆς Μηδείας. Οἱ νησιῶται Ἀψυρτεῖς καὶ
+                            Ἄψυρτοι. <lb n="20"/> (Ἔστι καὶ τόπος ἐν τῷ Εὐξείνῳ πόντῳ Ἄψαρος,
+                            Ἄψυρτος πρότερον λεγόμες.) Ἀρτεμίδωρος ἐν Ἐπιτομῇ καὶ πόλιν
+                                <supplied reason="omitted">καὶ</supplied> νῆσον Ἄψυρτον ἱστορεῖ.</p>
+                    </div></div>
+
+                    <div type="textpart" subtype="book" n="5">
+                        <!-- TWO books are given in the same section here -->
+                        
+                        <head>ΒΙΒΛ. Ε΄ Ϛ΄</head>
+                        <div type="textpart" subtype="paragraph" n="12"><p>12. Κώθων, νῆσος οὐ πόρρω Κυθήρων. Ἀρτεμίδωρος ἐν Ἐπιτομῇ τῶν ἕνδεκα. Τὸ
+                            ἐθνικὸν Κωθώνιος, <lb n="25"/> ὡς Σιδώνιος.<pb n="576"/></p>
+
+                        
+                        </div>
+<div type="textpart" subtype="paragraph" n="13"><p>13. Λῶς, νῆσος περὶ Θετταλίαν, ὡς Κῶς. Ἀρτεμίδωρος ἐν Ἐπιτομῇ τῶν ἕνδεκα.
+                            Λῷος ὁ νησιώτης.</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="14"><p>14. Ἀσταί, ἔθνος Θρᾴκης. Ἀρτεμίδωρος ἐν Ἐπιτομῇ <lb n="5"/> τῶν
+                            ἕνδεκα.</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="15"><p>15. Φίλιποι, πόλις Μακεδονίας, οἱ πρότερον Κρηνίδες. Ἀρτεμίδωρος ἐν
+                            Ἐπιτομῇ τῶν ἕνδεκα· « Καὶ πόλις Φίλιπποι τὸ παλαιὸν Κρηνίδες. Τοῖς δὲ
+                            Κρηνίταις πολεμουμένοις ὑπὸ Θρακῶν βοηθήσας ὁ Φίλιππος <lb n="10"/>
+                            Φιλίππους ὠνόμασεν. » Ἔνθεν ἦν Ἄδραστος ὁ περιπατητικὸς φιλόσοφος,
+                            Ἀριστοτέλους μαθη τής.</p>
+                    </div></div>
+                </div>
+                
+                <div type="textpart" subtype="section" n="2">
+
+                    <head>ΛΙΒΥΗ.</head>
+
+                    <div type="textpart" subtype="book" n="7">
+                        
+                        <head>ΒΙΒΛ. Ζ΄.</head>
+                        <div type="textpart" subtype="paragraph" n="16"><p>16. Ξοῦχις, πόλις Λιβύης. Ἀρτεμίδωρος ἐν Ἐπιτομῇ <lb n="15"/> τῶν ἕνδεκα.
+                            Τὸ ἐθνικὸν Ξουχίτης.</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="17"><p>17. Λαοδαμάντεια, νῆσος ἐν Λιβύῃ. Ἀρτεμίδωρος ἐν Ἐπιτομῇ τῶν ἕνδεκα.
+                            Ἐκαλεῖτο δὲ <supplied reason="omitted">καὶ</supplied> Λαομεδόντεια, ἴσως ἀπὸ Λαομέδοντος τοῦ Τρωός.
+                            Τὸ ἐθνικὸν ἀμφότερον Λαομεδοντίτης καὶ Λαοδαμαντίτης.</p>
+                    </div></div>
+                </div>
+                
+                
+                <div type="textpart" subtype="section" n="3">
+                    <head>ΑΣΙΑ.</head>
+                    <div type="textpart" subtype="book" n="9">
+
+                        <head>
+                            <lb n="20"/> ΒΙΒΛ. Θ΄.</head>
+                        <div type="textpart" subtype="paragraph" n="18"><p>18. Δῶρος, πόλις Φοινίκης. Ἑκαταῖος Ἀσίᾳ· « Μετὰ δὲ ἡ πάλαι Δῶρος· νῦν δὲ
+                            Δῶρα καλεῖται. »<gap reason="omitted"/> Καὶ Ἀρτεμίδωρος Δῶρα τὴν πόλιν
+                            οἶδεν ἐν Ἐπιτομῆ τῶν ια΄· « Συνεχῶς δʼ ἐστὶ Στράτωνος πύργος, <lb n="25"
+                            /> εἶτα ἔνι Δῶρα, ἐπὶ χερσονησοειδοῦς τόπου κείμενον πολισμάτιον,
+                            ἐρχομένου τοῦ ὄρους τοῦ Καρμήλου. Καὶ ἐν θ΄ Γεωγραφουμένων τὸ αὐτό.</p>
+                    </div></div>
+
+                    <div type="textpart" subtype="book" n="10">
+                        <head>ΒΙΒΛ. Ι΄.</head>
+                        <div type="textpart" subtype="paragraph" n="19"><p>19. Πάλτος. πόλις Συρίας. Ἀρτεμίδωρος ἐν <lb n="30"/> Ἐπιτομῇ.</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="20"><p>20. Κρύα, πόλις Λυκίας. Ἀρτεμίδωρος ἐν Ἐπιτομῆς πρώτῳ. τὸ ἐθνικὸν Κρυεύς·
+                            « Εἰσὶ δὲ καὶ νῆσοι Κρυέων, Κάρυσις καὶ Ἄλινα.»</p>
+                        </div>
+<div type="textpart" subtype="paragraph" n="21"><p>21. Θεμισώνιον, χωρίον Φρυγίας. Ἀρτεμίδωρος <lb n="30"/> ἐν Ἐπιτομῇ.</p>
+                    </div></div>
+
+                    <div type="textpart" subtype="book" n="11">
+                        <head>ΒΙΒΛ. ΙΑ΄.</head>
+                        <div type="textpart" subtype="paragraph" n="22"><p>22. 
+                            <cit>
+                                <bibl>Sch. Ap. Rh. III, 859</bibl>
+                                <quote>Περὶ τῆς Κασπίας θαλάσσης ἱστορεῖ Ἀρτεμίδωρος
+                            ἐν τῇ Ἐπιτομῇ τῶν Γεωγραφουμένων. Ἔστο δὲ πλησίον τοῦ ὠκεανοῦ· ᾗ
+                            παράκειται <lb n="40"/> ἔθνος ὠνομασμένον Κάσπιον, ὅμορον δὲ
+                            Πέρσαις.</quote>
+                            </cit>
+                         </p>
+                    </div></div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

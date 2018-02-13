@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Scholia in Euclidis data et catoptrica (scholia vetera)</title>
+                <author xml:lang="lat">Scholia in Euclidem</author>
+                <editor>Heinrich Menge</editor>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg5022.tlg007.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Euclidis Opera Omnia</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Henricus Menge</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg5022" xml:lang="lat">Scholia in Euclidem</author>
+                            <imprint>
+                                <publisher>Leipzig</publisher>
+                                <pubPlace>Teubner</pubPlace>
+                                <date>1916</date>
+                            </imprint>
+                            <biblScope unit="volume">8</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/stream/euclidisoperaomn08eucluoft#page/190/mode/2up">Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="work"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg5022.tlg007.1st1K-grc1">
+                <div type="textpart" subtype="work" n="1">
+                    <pb n="290"/>
+                    <p>Scholia codicis Vat. Gr. 1038 fol. 129 sub fine Datorum in mg. inferiore.</p>
+                    <p>α α α α α α α α α α</p>
+                    <p>α β γ δ ε Ϛ ζ η θ ι</p>
+                    <p>δυαδικαὶ συζυγίαι α γ ϛ ι ιε κα κη λϚ με</p>
+                    <p>τριαδικαὶ συζυγίαι α δ ι1) κ λε νς πδ ρκ</p>
+                    <p>α ε ιε λε ο ρκς σι</p>
+                    <p>α Ϛ κα νϚ ρκϚ σνβ</p>
+                    <p>α ζ κη πδ σι</p>
+                    <p>α η λϚ ρκ</p>
+                    <p>α θ με</p>
+                    <p>αι</p>
+                    <p>α</p>
+                    <p>Ὅρων δοθέντων ὁποσαοῦν εὑρεῖν δυαδικὰς συζυγίας. εὑρίσκομεν δὲ αὐτὰς οὕτως·
+                        λαμβάνομεν τῶν δοθέντων ὅρων ῑ ἀριθμὸν μονάδι ἐλάττονα καὶ πολυπλασιάζομεν
+                        αὐτὸν εἰς τὸν ἐγγὺς αὐτοῦ μονάδι μείζονα καὶ ἐκ τοῦ <lb n="5"/> γενομένου
+                        ποσοῦ λαμβάνομεν τὸ ἥμισυ· καὶ ἔχομεν αὐτὴν εὕρεσιν τῶν δοθέντων ὅρων
+                        δυαδικὰς συζυγίας. τὰς δὲ τριαδικὰς οὕτως· λαμβάνομεν τὸν δυάδι ἐλάσσονα
+                        ἀριθμὸν τοῦ ποσοῦ τῶν ἐξ ἀρχῆς δοθέντων ὅρων καὶ πολλαπλασιάζομεν ἐπὶ τὸ
+                        ποσὸν τὸ γεγονὸς ἐκ τῶν <lb n="10"/> δυαδικῶν συζυγιῶν ἐκ τοῦ ποσοῦ τῶν
+                        δοθέντων ἐξ ἀρχῆς ὄρων καὶ τοῦ γεγονότος πολλαπλασιασμοῦ λαμβάνομεν τὸ
+                        τρίτον μέρος· καὶ ἔχομεν τριαδικὰς συζυγίας. καὶ ἑξῆς ὁμοίως.</p>
+                    <p>Μέθοδος εἰς τοὺς τριγωνικοὺς ἀριθμούς.</p>
+                    <note type="footnote">1) Quadratum vacuum.</note>
+                    <note type="footnote">3. ἀριθμόν] om. lacuna relicta. 7. τὰς δέ] om. lac.
+                        relicta.</note>
+
+                    <pb n="291"/>
+                    <p>δοθείσης πλευρᾶς εὑρεῖν τὸ πλῆθος τῶν μονάδων τοῦ ἐμβαδοῦ. ἔστω ἡ πλευρὰ
+                        μοιρῶν ζ· ταύτης τὸ ἥμισυ γίνεται γ ἥμισυ. πρόσθες καθόλου τὸ ἥμισυ· γίνεται
+                        δ. τετράκις τὸ ζ γίνεται κη. πάλιν ἔστω ἡ πλευρὰ μοιρῶν η· ὧν τὸ ἥμισυ δ.
+                        πρόσθες ἥμισυ· γίνεται δ??. ἐπὶ τὸ <lb n="5"/> η γένεται λϚ. ὁμοίως ἐπὶ
+                        πάντων.</p>
+                    <p>μέθοδος ἄλλη χρησιμωτέρα.</p>
+                    <p>πᾶς ἀριθμὸς διαιρεθεὶς εἰς δύο ἀριθμούς, ὥστε μονάδι ἀλλήλων διαφέρειν τὰ
+                        τμήματα, ἐὰν πολλαπλασιασθῇ ἐφ᾿ ὁποιονοῦν, ὁ ὅλος τριγωνικὸς ἔσται· πλευρὰ
+                            <lb n="10"/> δὲ ἔσται τοῦ μὲν μείζονος τριγώνου ὁ ἐξ ἀρχῆς ἀριθμός, τοῦ
+                        δὲ ἐλάττονος ὁ μονάδι ἐλάσσων αὐτοῦ· οἷον ὁ θ διαιρεῖται εἰς δ καὶ ε·
+                        γίνεται οὖν λϚ, με· πλευρὰ δὲ τοῦ μὲν ὁ η, τοῦ δὲ ὁ θ. πάλιν ὁ ιβ εἰς ε
+                        ἥμισυ καὶ ϛ ἥμισυ· γίνεται ξϚ, οη· πλευρὰ δὲ τοῦ μὲν ὁ ια, τοῦ δὲ <lb n="15"
+                        /> ὁ ιβ.</p>
+                    <p>Scholium codicis Vaticani Gr. 204 fol. 134v ad Euclidis Catoptrica prop.
+                        I.</p>
+                    <p>Δῆλον τοῦτό ἐστι μάλιστα ἀπὸ τῶν ἡλιακῶν ἀκτίνων. ἐὰν γὰρ ἐν σταθερᾷ
+                        μεσημβρίᾳ τοῦ ἡλίου φλογῶδες <lb n="20"/> ἐλλάμποντος ὕδωρ τις ἐν πινακίσκῳ
+                        βαλὼν ἔγγιον αὐτὸ θῇ τοίχου τινός, κατ᾿ ἐκεῖνο δηλονότι τὸ μέρος, ἐν ᾧ ὁ
+                        ἥλιος τὰς ἀκτῖνας ἀφίησιν, αὐτίκα γενήσονται παλμοί τινες ἐπὶ τὸν τοῖχον ἀπὸ
+                        τοῦ ὕδατος, ὡς ὁρᾶσθαι τὰς ἀκτῖνας παλλομένας τοῦ ἡλίου ἐπὶ τὸν τοῖχον καὶ
+                            <lb n="25"/> οἷον ὑποτρεμούσας, ὅπερ ἐστὶν ἡ λεγομένη ἀντανάκλασις. καὶ
+                        εἴγε ἦν αἰσθητικώτερον ἰδεῖν τὴν ἀκτῖνα, καθάπερ ξύλον ἢ λίθον ἢ ἄλλο τι
+                        σῶμα τοιοῦτον, εἶδες ἂν τὴν ἀπὸ ταύτης ἐπὶ τὴν ἀνακλωμένην εὐθεῖαν
+                        ἐπίζευγνυμένην γραμμὴν πρὸς ἴσας γωνίας οὖσαν ἑκατέραις καὶ <lb n="30"/>
+                        διάνδιχα ταύτας μερίζουσαν. ἐπεὶ τοίνυν, ὅπερ ἐστὶν <note type="footnote"
+                            >26. ὑποτρεμούσας] -μ- obscurum, fortasse χ.</note>
+                        <pb n="292"/> ἥλιος ἐν κόσμῳ, τοῦτο ἐν σώματι ὀφθαλμός, τὸ αὐτὸ καὶ ἐπὶ
+                        τούτου γενήσεται, ὅπερ καὶ ἐπὶ τοῦ ἡλίου, ὅταν θεωρῇ διά τινος σώματος
+                        καθαρωτάτου καὶ διαφανοῦς, οἷον τὸ τῆς ὑέλλου. ὑποστήσεται γάρ τινα παλμὸν ἡ
+                            <lb n="5"/> ἀπὸ τοῦ ὀφθαλμοῦ ἐπὶ τὴν ὕελλον ἀποχεομένη ἀκτὶς καὶ γωνίαν
+                        τὴν αὐτὴν ποιήσει πρὸς τῷ ἐνόπτρῳ, οἵαν ἡ ἀπὸ τοῦ ὄμματος πρὸς αὐτό. δῆλον,
+                        ὅτι, εἰ μὲν πρὸς ὀρθὰς γωνίας ἐστὶν αὐτὴ ἡ ἀπὸ τοῦ ὄμματος, αὐτὴ δἰ ἑαυτῆς
+                        ἀνακλασθήσεται, εἰ δὲ πρὸς ἀμβλείας, ἔσται ἀναλόγως <lb n="10"/> καὶ ἡ
+                        ἀντανακλωμένη αὐτὴ ἰσογώνιος αὐτῇ, τουτέστιν ἴσην ἔχουσα τὴν πρὸς τῇ κατὰ τὸ
+                        ἔνοπτρον συναφῇ γωνίαν τῇ ἀπὸ τῆς τοῦ ὄμματος ἀκτῖνος πρὸς τῷ αὐτῷ σημείῳ,
+                        καὶ τοῦτό ἐστιν, ὅπερ φησὶν Εὐκλείδης, ὅτι ἀπὸ τῶν ἐπιπέδων ἐνόπτρων καὶ
+                        κυρτῶν καὶ κοίλων <lb n="15"/> αἱ ὄψεις ἐν ἴσαις γωνίαις ἀνακλῶνται.</p>
+                    <note type="footnote">11. ἴσην] bis 12. τῆς] supra.</note>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Periplus Hannonis</title>
+                <author>Hanno</author>
+                <editor xml:lang="lat">Carolus Müllerus</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg0064.tlg001.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United State</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+
+                            <title xml:lang="lat">Geographi Graeci Minores</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Carolus Müller</name>
+                                    <addName xml:lang="deu">Karl Müller</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0064">Hanno</author>
+
+                            <imprint>
+                                <publisher>Ambroise-Firmin Didot</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1855</date>
+                            </imprint>
+
+                            <biblScope unit="volume">1</biblScope>
+
+                        </monogr>
+                        <ref target="https://archive.org/details/geographigraeci00philgoog">The Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+
+        <encodingDesc>
+
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+
+
+            <refsDecl n="CTS">
+
+                <cRefPattern n="paragraph" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts paragraphs</p>
+
+                </cRefPattern>
+          
+            </refsDecl>
+
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Chiara Palladino">created the file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0064.tlg001.1st1K-grc1">
+            
+                    <pb n="1"/>
+                    <head>
+                        <title type="main">ΑΝΝΩΝΟΣ ΚΑΡΧΗΔΟΝΙΩΝ ΒΑΣΙΛΕΩΣ ΠΕΡΙΠΛΟΥΣ</title>
+                        <title type="sub">ΤΩΝ ΥΠΕΡ ΤΑΣ ΗΡΑΚΛΕΟΥΣ ΣΤΗΛΑΣ ΛΙΒΥΚΩΝ ΤΗΣ ΓΗΣ
+                            ΜΕΡΩΝ,
+                        </title>
+                        <title type="sub">ὃν καὶ ἀνέθηκεν ἐν τῷ τοῦ Κρόνου τεμένει, δηλοῦντα
+                            τάδε.</title>
+                    </head>
+                    <div type="textpart" subtype="paragraph" n="1"><p>Ἔδοξε Καρχηδονίοις Ἅννωνα πλεῖν ἔξω Στηλῶν Ἡροκλείων καὶ πόλεις κτίζειν
+                        Λιβυφοινίκων. Καὶ ἔπλευσε πεντηκοντόρους ἑξήκοντα ἄγων, καὶ πλλῆθος ἀνδρῶν
+                        καὶ γυναικῶν εἰς ἀριθμὸν μυριάδων τριῶν καὶ σἶτα καὶ τὴν ἄλλην
+                        παρασκευήν.</p>
+                
+                    </div>
+<div type="textpart" subtype="paragraph" n="2"><p>2. Ὡς δʼ ἀναχθέντες τὰς Στήλας παρημείψαμεν καὶ ἔξω πλοῦν δυοῖν ἡμερῶν
+                        ἐπλεύσαμεν, ἐκτίσαμεν πρώτην πόλιν, ἥντινα ὠνομάσαμεν Θυμιατήριον· πεδίον δʼ
+                        αὐτῇ μέγα ὑπῆν.   <pb n="3"/></p>
+                
+                 
+                    </div>
+<div type="textpart" subtype="paragraph" n="3"><p>3. Κἄπειτα πρὸς ἑσπέραν ἀναχθέντες ἐπὶ Σολόεντα, Λιβυκὸν ἀκρωτήριον λάσιον
+                        δένδρεσι, συνήλθομεν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="4"><p>4. Ἔνθα Ποσειδῶνος ἱερὸν ἱδρυσάμενοι πάλιν ἐπέβῃμεν πρὸς ἥλιον ἀνίσχοντα
+                        ἡμέρας ἥμισυ, ἄχρι ἐκομίσθημεν εἰς λίμνην οὐ πόρρω τῆς θαλάττης κειμένην,
+                        καλάμου μεστήν πολλοῦ καὶ μεγάλου· ἐνῆσαν δὲ καὶ ἐλέφαντες καὶ τἆλλα θηρία
+                        νεμόμενα πάμπολλα.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="5"><p>5. Τήν τε λίμνην παραλλάξαντες ὅσον ἡμέρας πλοῦν, κατῳκίσαμμεν πόλεις πρὸς
+                        τῇ θαλάττῃ καλουμένας Καρικόν <pb n="5"/> τε τεῖχος καὶ Γύττην καὶ Ἄκραν καὶ
+                        Μέλιτταν καὶ Ἄραμβυν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="6"><p>6. Κἀκεῖθεν δʼ ἀναχθέντες ἤλθομεν ἐπὶ μέγαν ποταμὸν Λίξον, ἀπὸ τῆς Λιβύης
+                        ῥέοντα. Παρὰ δʼ αὐτὸν <pb n="6"/> νομάδες ἄνθρωποι Λιξῖται βοσκήματʼ ἔνεμον,
+                        παρʼ οἷς ἐμείναμεν ἄχρι τινὸς, φίλοι γενόμενοι.</p>
+
+                    </div>
+<div type="textpart" subtype="paragraph" n="7"><p>7. Τούτων δὲ καθύπερθεν Αἰθίοπες ᾤκουν ἄξενοι, γῆν νεμόμενοι θηριώδη,
+                        διειλημμένην ὄρεσι μεγάλοις, ἐξ ὧν ῥεῖν φασι τὸν Λίξον, περὶ δὲ τὰ ὄρη
+                        κατοικεῖν ἀνθρώπους ἀλλοιομόρφους, Τρωγλοδύτας· οὓς ταχυτέρους ἵππων ἐν
+                        δρόμοις ἔφραζον οἱ Λιξῖται.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="8"><p>8. Λαβόντες δὲ παρʼ αὐτῶν ἑρμηνέας, παρεπλέομεν τὴν ἐρήμην πρὸς μεσημβρίαν
+                        δύο ἡμέρας· ἐκεῖθεν δὲ <pb n="7"/> πάλιν πρὸς ἥλιον ἀνίσχοντα ἡμέρας δρόμον.
+                        Ἔνθα εὕρομεν ἐν μυχῷ τινος κόλπου νῆσον μικρὰν, κύκλον ἔχουσαν σταδίων
+                        πέντε· ἥν κατῳκίσαμεν, Κέρνην ὀνομάσαντες. Ἐτεκμαιρόμεθα δʼ αὐτὴν ἐκ τοῦ
+                        περίπλου κατʼ εὐθὺ κεῖσθαι Καρχηδόνος· ἐῴκει γὰρ ὁ πλοῦς <pb n="8"/> ἔκ τε
+                        Καρχηδόνος ἐπὶ Στήλας κἀκεῖθεν ἐπὶ Κέρνην.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="9"><p>9. Τοὐντεῦθεν εἰς λίμνην ἀφικόμεθα, διά τινος ποταμοῦ μεγάλου διαπλεύσαντες,
+                            <supplied reason="omitted">ᾧ ὄνομα</supplied> 
+                        <!-- [] supplevit -->
+                        Χρετης· <pb n="9"/> εἶχε δὲ νήσους ἡ λίμνη τρεῖς
+                        μείζους τῆς Κέρνης. Ἀφʼ ὧν ἡμερήσιον πλοῦν κατανύσαντες, εἰς τὸν μυχὸν τῆς
+                        λίμνης ἤλθομεν, ὑπὲρ ἣν ὄρη μέγιστα ὑπερέτεινε, μεστὰ ἀνθρώπων ἀγρίων,
+                        δέρματα θήρεια ἐνημμένων, οἳ πέτροις βάλλοντες ἀπήραξαν ἡμᾶς, κωλύοντες
+                        ἐκβῆναι.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="10"><p>10. Ἐκεῖθεν πλέοντες εἰς ἕτερον ἤλθομεν ποταμὸν μέγαν καὶ πλατὺν, γέμοντα
+                        κροκοδείλων καὶ ἵππων ποταμίων. Ὅθεν δὴ πάλιν ἀποστρέψαντες εἰς Κέρνην
+                        ἐπανήλθομεν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="11"><p>11. Ἐκεῖθεν δὲ ἐπὶ μεσημβρίαν ἐπλεύσαμεν δώδεκα ἡμέρας, τὴν γῆν
+                        παραλεγόμενοι, ἣν πᾶσαν κατῴκουν Αἰθίοπες φεύγοντες ἡμᾶς καὶ οὐχ
+                        ὑπομένοντες· ἀσύνετα δʼ ἐφθέγγοντο καὶ τοῖς μεθʼ ἡμῶν Λιξίταις.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="12"><p>12. Τῇ δʼ οὖν τελευταίᾳ ἡμέρᾳ προσωρμίσθημεν ὄρεσι μεγάλοις δασέσιν. Ἦν δὲ τὰ
+                        τῶν δένδρων ξύλα εὐώδη τε καὶ ποικίλα.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="13"><p>13. Περιπλεύσαντες δὲ ταῦτα ἡμέρας δύο ἐγινόμεθα <pb n="10"/> ἐν θαλάττης
+                        χάσματι ἀμετρήτῳ, ἦς ἐπὶ θάτερα πρὸς τῇ γῇ πεδίον ἦν· ὅθεν νυκτὸς ἀφεωρῶμεν
+                        πῦρ ἀναφερόμενον πανταχόθεν κατʼ ἀποστάσεις, τὸ μὲν πλέον, τὸ δʼ
+                        ἔλαττον.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="14"><p>14. Ὑδρευσάμενοι δ’ ἐκεῖθεν ἐπλέομεν εἰς τοὔμπροσθεν ἡμέρας πέντε παρὰ γῆν,
+                        ἄχρι ἤλθομεν εἰς μέγαν κόλπον, ὃν ἔφασαν οἱ ἑρμηνέες καλεῖσθαι Ἑσπέρου
+                        Κέρας. Ἐν δὲ τούτῳ νῆσος ἦν μεγάλη καὶ ἐν τῆ <pb n="11"/> νήσῳ λίμνη
+                        θαλασσώδης, ἐν δὲ ταύτῃ νῆσος ἑτέρα, εἰς ἣν ἀποβάντες ἡμέρας μὲν οὐδὲν
+                        ἀφεωρῶμεν ὅτι μὴ ὕλην, νυκτὸς δὲ πυρά τε πολλὰ καιόμενα, καὶ φωνὴν <pb
+                            n="12"/> αὐλῶν ἠκούομεν κυμβάλων τε καὶ τυμπάνων πάταγον καὶ κραυγὴν
+                        μυρίαν. Φόβος οὖν ἔλαβεν ἡμᾶς, καὶ οἱ μάντεις ἐκέλευον ἐκλείπειν τὴν
+                        νῆσον.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="15"><p>15. Ταχὺ δʼ ἐκπλεύσαντες παρημειβόμεθα χώραν διάπυρον θυμιαμάτων μεστ<supplied reason="omitted">ήν·
+                            μέγιστ</supplied>οι 
+                        <!-- supplevit [] -->
+                        δʼ ἀπʼ αὐτῆς <pb n="13"/> πυρώδεις ῥύακες ἐνέβαλλον εἰς
+                        τὴν θάλατταν. Ἡ γῆ δ’ ὑπὸ θέρμης ἄβατος ἦν.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="16"><p>16. Ταχὺ οὖν κἀκεῖθεν φοβηθέντες ἀπεπλεύσαμεν. Τέτταρας δʼ ἡμέρας φερόμενοι,
+                        νυκτὸς τὴν γῆν ἀφεωρῶμεν φλογὸς μεστήν· ἐν μέσῳ δʼ ἦν ἠλίβατόν τι πῦρ, τῶν
+                        ἄλλων μεῖζον, ἁπτόμενον, ὡς ἐδόκει, τῶν ἄστρων. Τοῦτο δʼ ἡμέρας ὄρος
+                        ἐφαίνετο μέγιστον, Θεῶν ὄχημα καλούμενον.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="17"><p>17. Τριταῖοι δʼ ἐκεῖθεν πυρώδεις ῥύακας παραπλεύσαντες ἀφικόμεθα εἰς κόλπον
+                        Νότου Κέρας λεγόμενον.</p>
+                    </div>
+<div type="textpart" subtype="paragraph" n="18"><p>18. Ἐν δὲ τῷ μυχῷ νῆσος ἦν, ἐοικυῖα τῇ πρώτῃ, λίμνην ἔχουσα· καὶ ἐν ταύτῃ
+                        νῆσος ἦν ἑτέρα, μεστὴ ἀνθρώπων ἀγρίων. Πολὺ δὲ πλείους ἦσαν γυναῖκες,
+                        δασεῖαι τοῖς σώμασιν· ἃς οἱ ἑρμηνέες ἐκάλουν Γορίλλας. Διώκοντες δὲ ἄνδρας
+                        μὲν συλλαβεῖν οὐκ ἠδυνήθημεν, <pb n="14"/> ἀλλὰ πάντες <del>μὲν</del>
+                        <!-- delevit = () -->
+                        ἐξέφυγον,
+                        κρημνοβάται ὄντες καὶ τοῖς πέτροις ἀμυνόμενοι, γυναῖκας δὲ τρεῖς, αἳ
+                        δάκνουσαί τε καὶ σπαράττουσαι τοὺς ἄγοντας οὐκ ἤθελον ἕπεσθαι. Ἀποκτείναντες
+                        μέντοι αὐτὰς ἐξεδείραμεν καὶ τὰς δορὰς ἐκομίσαμεν εἰς Καρχηδόνα. Οὐ γὰρ ἔτι
+                        ἐπλεύσαμεν προσωτέρω, τῶν σίτων ἡμᾶς ἐπιλιπόντων.</p>
+
+
+            </div></div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Mensuris marmorum</title>
+    <author xml:lang="lat">Didymus Alexandrinus</author>
+    <editor>Frederick Hultsch</editor>
+    <funder>Harvard Library</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor (Mount Allison University)</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0357.tlg001.1st1K-grc2.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018/</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Metrologicorum Scriptorum</title>
+       <editor>
+        <persName>
+         <name>Frederick Hultsch</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0559" xml:lang="lat">Didymus Alexandrinus</author>
+       <imprint>
+        <publisher>Teubner</publisher>
+        <pubPlace>Leipzig</pubPlace>
+        <date>1864</date>
+       </imprint>
+      </monogr>
+      <ref target="https://archive.org/details/metrologicorums03hultgoog">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0357.tlg001.1st1K-grc2">
+<div type="textpart" subtype="chapter" n="12">
+<head>3. Electa quaedam e Didymi libello de mensuris
+marmorum.
+(Vide prol. § 3. 14.)</head>
+<p>1. <gap reason="omitted"/> Ὁ πῆχυϲ ἔχει παλαιϲτὰϲ ϛ´, δακτύλουϲ κδ´ ,
+<lb n="10"/> πόδα Πτολομαϊκὸν α΄ϛ, Ῥωμαϊκὸν δὲ πόδα α΄ ϛ ε˝  ι˝.</p></div>
+ <div type="textpart" subtype="chapter" n="13">
+<p>2. Ὁ ποὺϲ ὁ Πτολομαϊκὸϲ ἔχει εὐθυμετρικοὺϲ
+ παλαιϲτὰϲ δ΄, ἐμβαδικοὺϲ ιϛ΄, ϲτερεοὺϲ ξδ΄. </p></div>
+ <div type="textpart" subtype="chapter" n="14">
+  <p>ὁ δὲ
+Ῥωμαϊκὸϲ ποὺϲ ἔχει εὐθυμετρικοὺϲ παλαιϲτὰϲ γ΄ γ˝,
+ἐμβαδικοὺϲ δὲ ια΄ θ˝, ϲτερεοὺϲ δὲ λϛ´ κζ˝.</p></div>
+ <div type="textpart" subtype="chapter" n="18">
+<lb n="15"/> <p>3. <gap reason="omitted"/> Ἔχει δὲ καὶ λόγον ὁ Πτολομαϊκὸϲ ποὺϲ πρὸϲ
+ τὸν βαϲιλικὸν πῆχυν κατὰ εὐθυμετρίαν ὡϲ β´ πρὸϲ γ´.</p></div>
+ <div type="textpart" subtype="chapter" n="27">
+<p>4. <gap reason="omitted"/> Ὁ Ῥωμαϊκὸϲ ποὺϲ πρὸϲ τὸν βαϲιλικὸν πῆχυν
+λόγον ἔχει κατὰ εὐθυμετρίαν ὡϲ ε´ πρὸϲ θ´.</p>
+</div>
+
+</div>
+</body>
+</text>
+</TEI>

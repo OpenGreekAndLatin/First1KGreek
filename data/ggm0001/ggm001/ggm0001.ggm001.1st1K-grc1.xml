@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Anametresis Pontou</title>
+                <author>Anonymous</author>
+                <editor xml:lang="lat">Carolus Müllerus</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+    
+                <idno type="filename">ggm0001.ggm001.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2017</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Geographi Graeci Minores</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Carolus Müllerus</name>
+                                    <addName xml:lang="deu">Karl Müller</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:ggm0001">Anonymous</author>
+
+                            <imprint>
+                                <publisher>Ambroise-Firmin Didot</publisher>
+                                <pubPlace>Paris</pubPlace>
+                                <date>1855</date>
+                            </imprint>
+                            
+                            <biblScope unit="volume">1</biblScope>
+                            
+                        </monogr>
+                        <ref target="https://archive.org/details/geographigraeci00philgoog">The Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+
+        <encodingDesc>
+
+            <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+
+
+            <refsDecl n="CTS">
+
+                <cRefPattern n="paragraph" matchPattern="(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts paragraphs</p>
+
+                </cRefPattern>
+
+                <cRefPattern n="chapter" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts chapters</p>
+                </cRefPattern> 
+            </refsDecl>
+
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change who="Chiara Palladino">created the file</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:ggm0001.ggm001.1st1K-grc1">
+                <div type="textpart" subtype="chapter" n="1">
+                    <pb n="224"/>
+                    <head>ΑΝΩΝΥΜΟΥ
+                        ΑΝΑΜΕΤΡΗΣΙΣ ΤΗΣ ΟΙΚΟΥΜΕΝΗΣ ΗΑΣ ΗΕ
+                        ΚΑΤΑ ΣΥΝΟΨΙΝ.</head>
+
+                        <div type="textpart" subtype="paragraph" n="1"><p>1. Χρὴ γινώσκειν ὅτι πάσης τῆς γῆς ὁ περίμετρος.
+                        στάδιά ἐστι δισχίλια καὶ μυριάδες εἴκοσι πέντε· μῆκος
+                        δὲ τῆς ἡμετέρας οἰκουμένης ἀπὸ στόματος Γάγγου ἕως
+                        Γαδείρων στάδια ὀκτακισμύρια τρισχίλια ὀκ τακόσια·
+                        <lb n="5"/> τὸ δὲ πλάτος ἀπὸ τῆς Αἰθιοπικῆς θαλάσσης ἕως τοῦ
+                        Τανάϊδος ποταμοῦ στάδια τρισμύρια πεντακισχίλια
+                        τὸ δὲ μεταξὺ Εὐφράτου καὶ Τίγριδος ποταμοῦ, ὃ καλεῖται
+                        Μεσοποτάμιον, διάστημα ἔχει σταδίων τρισχιλίων,
+                        Ταύτην τὴν ἀναμέτρησιν πεποίηκεν Ἐρατοσθένης
+                        <lb n="10"/> ὁ τῶν ἀρχαίων μαθητικώτατος.</p>
+                    
+                </div></div>
+                    <div type="textpart" subtype="chapter" n="2">    
+                        <head>ΤΟΥ ΠΟΝΤΟΥ Ο ΠΕΡΙΜΕΤΡΟΣ.</head>
+                      
+                    
+                            <div type="textpart" subtype="paragraph" n="2"><p>2. Ἀπὸ τοῦ Βυζαντίου εἰς τὸ Σωσθένιον στάδια
+                            ὀγδοήκοντα, μίλια δέκα καὶ ἥμισυ· ἀπὸ δὲ τοῦ Σωσθενίου
+                            εἰς τὸ Ἱερὸν στάδια τεσσαράκοντα, μίλια πέντε
+                            ἥμισυ· τὸ πᾶν μίλια δεκαέξ. Ἀπὸ δὲ τοῦ Ἱεροῦ Διὸς
+                            <lb n="15"/> Οὐρίου ἤτοι στόματος τοῦ Πόντου ἕως τοῦ ἱεροῦ στόματος
+                            τοῦ Ἴστρου ποταμοῦ στάδια τρισχίλια ἑξακόσια
+                            τεσσαράκοντα, μίλια τετρακόσια ὀγδοήκοντα πέντε ἥμισυ.</p>
+                        
+                        <pb n="425"/>
+                        
+              
+                            </div>
+<div type="textpart" subtype="paragraph" n="3"><p>3. Ἀπὸ δὲ τοῦ Ἱεροῦ Διὸς Οὐρίου ἕως Βορυσθένους
+                            ποταμοῦ τοῦ καὶ Δανάπρεως καλουμένου στάδια πεντακισχίλια
+                            ἑξακόσια, μίλια ἑπτακόσια τεσσαρακονταὲξ
+                            ἥμισυ. Ἀπὸ δὲ τοῦ Ἱεροῦ Διὸς Οὐρίου ἕως Πορθμίας
+                            <lb n="5"/> πόλεως, τῆς ἐν τέλει τῆς Εὐρώπης τῶν τοῦ Πόντου μερῶν
+                            <supplied reason="omitted">τῆς ἐν τῷ στομίῳ</supplied> τῆς Μαιώτιδος λίμνης ἤτοι
+                            Βοσπόρου τοῦ Κιμμερίου καλουμένου, στάδια <supplied reason="omitted">μύρια</supplied>
+                            χίλια ἑκατόν, μίλια <supplied reason="omitted">χίλια</supplied> τετρακόσια ὀγδοήκοντα.
+                            Λέγεται δὲ τῆς Εὐρώπης τῆς Ποντικῆς ὁ περίπλους
+                            <lb n="10"/> ἴσος εἶναι τῶ περίπλῳ τῶν τῆς Ἀσίας μερῶν.</p>
+                        
+    
+                            </div>
+<div type="textpart" subtype="paragraph" n="4"><p>4. Ἀπὸ δὲ τοῦ Ἱεροῦ Διὸς Οὐρίου ἕως Ἀμισοῦ
+                            στάδια τετρακισχίλια ἑξακόσια ἐξήκοντα, μίλια ἑξακόσια
+                            εἰκοσιὲν ἥμισυ. Ἀπὸ δὲ Ἀμισοῦ ἕως τοῦ Φάσεως
+                            ποταμοῦ στάδια τρισχίλια ὀκτακόσια δύο, μίλια πεντακόσια
+                            <lb n="15"/> ἑπτά. Ἀπὸ δὲ τοῦ Φάσεως ποταμοῦ ἕως τοῦ
+                            στόματος τῆς Μαιώτιδος λίμνης <supplied reason="omitted">ἤτοι ἕως τῆς Ἀχιλλείου
+                                κώμης στάδια τετρακισχίλια εἴκοσι πέντε, μίλια
+                                πεντακόσια τριακονταὲξ ἥμισυ, ὡς γίνεσθαι ἀπὸ τοῦ
+                                Ἱεροῦ Διὸς Οὐρίου ἕως τοῦ στόματος τῆς Μαιώτιδος
+                                <lb n="20"/> λίμνης</supplied> στάδια <supplied reason="omitted">μύρια δισ</supplied>χίλια τετρακόσια ὀγδοήκοντα
+                            ἑπτὰ, μίλια <supplied reason="omitted">χίλια</supplied> ἑξακόσια ἐξήκοντα πέντε
+                            ἥμισυ.</p>
+                        
+                            </div>
+<div type="textpart" subtype="paragraph" n="5"><p>5. Ὁμοῦ γίνεται ὁ περίπλους τοῦ Εὐξείνου Πόντου,
+                            τῶν τε δεξιῶν τῶν <del>τε</del> παρὰ τὴν Ἀσίαν μερῶν τοῦ
+                            <lb n="25"/> Πόντου, ἀριστερῶν δὲ τῶν παρὰ τὴν Εὐρώπην μερῶν
+                            τοῦ Πόντου, ἀπὸ τοῦ Ἱεροῦ <supplied reason="omitted">Διὸς Οὐρίου, στάδια δισμύρια
+                                τρισχίλια πεντακόσια ὀγδοήκοντα ἑπτὰ</supplied>, μίλια
+                            τρισχίλια ἑκατὸν τεσσαράκοντα πέντε. Ἔστι δὲ
+                            καὶ ὁ περίπλους τῆς Μαιώτιδος λίμνης <supplied reason="omitted">στάδια ἐννακισχίλια</supplied>.
+                            <lb n="30"/> μίλια χίλια διακόσια.</p>
+                        
+                        <pb n="426"/>
+             
+                                                    </div>
+<div type="textpart" subtype="paragraph" n="6"><p>6. Περὶ τοῦ σταδίου. Τὸ στάδιον πήχεις ἔχει
+                            τετρακοσίους, πόδας ὀκτακοσίους, ὀργυιὰς ἑκατὸν τριάκοντα
+                            τρεῖς ἥμισυ.</p>
+                        
+    
+                                </div>
+<div type="textpart" subtype="paragraph" n="7"><p>7. Περὶ τοῦ μιλίου. Τὸ μίλιον ἔχει στάδια ἑπτὰ
+                            ἥμισυ, πήχεις τρισχιλίους, πόδας ἑξακισχιλίους.</p>
+                            
+
+                        </div>
+<div type="textpart" subtype="paragraph" n="8"><p>8. Περὶ τοῦ ἐνιαυτοῦ. Ἅπας ἔχει ὥρας ὀκτακισχιλίας
+                            ἑπτακοσίας <supplied reason="omitted">ἐξήκοντα</supplied> ἓξ, ἡμέρας τριακοσίας
+                            ἑξήκοντα πέντε καὶ τέταρτον.</p>
+                        
+                    </div></div>
+                
+
+            </div>
+        </body>
+    </text>
+</TEI>
