@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Excerpta</title>
+                <author xml:lang="lat">Cassius Longinus</author>
+                <editor>Leonard Spengel</editor>
+                <sponsor>Harvard College Library</sponsor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig)</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg2178.tlg002.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2018</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Rhetores Graeci ex Recognitione</title>
+                            <editor>
+                                <persName>
+                                    <name xml:lang="lat">Leonardi Spengel</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg2178" xml:lang="lat">Cassius Longinus</author>
+                            <imprint>
+                                <publisher>Teubner</publisher>
+                                <pubPlace>Leipzig</pubPlace>
+                                <date>1853</date>
+                            </imprint>
+                            <biblScope unit="volume">1</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/stream/rhetoresgraeci03spengoog#page/n368/mode/2up">Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+)" n="section"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2178.tlg002.1st1K-grc1">
+                
+                    <pb n="325"/>
+                    <head>EK ΤΩΝ ΛΟΓΓΙΝΟΥ.</head>
+                <div type="textpart" subtype="section" n="1">
+                    <p>1. Ὅτι χρὴ πεφεισμένως χρῆσθαι ταῖς τροπαῖς καὶ μετὰ τέχνης, μὴ παραλείπειν
+                        δὲ παντελῶς· οὕτως πρὸς πολλὰ χρήσιμον <del>ὂν</del> τὸ τοιοῦτον εἶδος. καὶ
+                        γὰρ καὶ Λυσίας οὕτως πεποίηκεν.</p>
+                    <lb n="5"/>
+                </div>
+                <div type="textpart" subtype="section" n="2">
+                    <p>2. Ὅτι ὁ Ἀριστοτέλης τοὺς πάντα μεταφέροντας αἰνίγματα γράφειν ἔλεγεν. διὸ
+                        λέγει Λογγῖνος σπανίως κεχρῆσθαι καὶ τούτῳ τῷ εἴδει.</p>
+                </div>
+                <div type="textpart" subtype="section" n="3">
+                    <p>3. Ὅτι τροπὴ ἐκ τοῦ πανούργου καὶ ἐξάλλαξις οὐδεμία ἦν ἐν τοῖς ἀρχαίοις, ἀλλὰ
+                        καὶ τὰ τοῦ νοῦ σχήματα <lb n="10"/> ὀψέ ποτε εἰς τοὺς δικανικοὺς λόγους
+                        παρεισῆλθεν· ἡ πλείων γὰρ αὐτοῖς σπουδὴ περὶ τὴν λέξιν καὶ τὸν ταύτης κόσμον
+                        ἦν καὶ τὴν συνθήκην καὶ ἁρμονίαν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="4">
+                    <p>4. Ὅτι δεῖ σκέπτεσθαι τὴν δύναμιν τῶν κεφαλαίων, καὶ τὴν τῶν ἀντιθέσεων
+                        διαφοράν, καὶ μήτε ἀπὸ τῶν <lb n="15"/> ἀσθενῶν ἄρχεσθαι μήτε τελευτᾶν εἰς
+                        ταῦτα, ἀλλὰ μιμεῖσθαι τὴν ἐν τοῖς πολέμοις τακτικὴν εἰς μέσον τοὺς χείρους
+                        λοχίζουσαν. τοῦτο δὲ καὶ ἐπὶ συνουσίαις ἄριστον, οὐ μόνον ἐν συγγραφῇ. πρὸς
+                        γὰρ τὰ ἀσθενῆ ῥᾳδίως ἀντιλέγουσιν, ὥσπερ οἱ εἰς τοὺς ψιλοὺς τῶν πολεμίων <lb
+                            n="20"/> ἐμβαλόντες, ἀλλʼ οὐκ εἰς τοὺς ὁπλίτας.</p>
+                </div>
+                <div type="textpart" subtype="section" n="5">
+                    <p>5. Ὅτι Δημοσθένης δεινότατος ὢν ἐν ταῖς ἀντιθέσεσιν οὐκ ἀεὶ τῇ τέχνῃ ἐμμένει,
+                        ἀλλʼ αὐτὸς γίνεται τέχνη πολλάκις. ὡσαύτως καὶ Ἀριστείδης.</p>
+                </div>
+                <div type="textpart" subtype="section" n="6">
+                    <p>6. Ὅτι τὸ παραγράφεσθαι ἐπὶ τῶν λαμπρῶν προσώπων <lb n="25"/>
+                        <pb n="326"/> ἄτοπόν φησι· καθαιρετικὸν γάρ ἐστιν ἀξιώματος, καὶ ὑποψίαν
+                        ἐμποιεῖ.</p>
+                </div>
+                <div type="textpart" subtype="section" n="7">
+                    <p>7. Ὅτι χρὴ ἐν ταῖς συνθήκαις τῶν κώλων εὐπρεπῆ εἶναι τὴν λέξιν καὶ τὴν
+                        συνθήκην οὐκ ἀνάρμοστον, ὡς <lb n="5"/> ἂν παίωνας εἶναι καὶ ἡρῴους τοὺς
+                        πλείστους, ἐξ ὧν εὔογκος ἡ ἑρμηνεία γίνεται καὶ σεμνή· παραδείγματα δὲ τὰ
+                        Πλάτωνος καὶ Δημοσθένους· οὗτοι γὰρ ἄριστοι γνώμονες τῶν τοιούτων.</p>
+                </div>
+                <div type="textpart" subtype="section" n="8">
+                    <p>8. Ὅτι ἐν τοῖς ἀδόξοις καὶ φέρουσιν αἰσχύνην τῷ <lb n="10"/> ἀπολογουμένῳ
+                        κάλλιστος ὁ διʼ εἰκασίας τρόπος, οἱονεὶ πορνείας κατηγορηθεὶς μὴ παρὰ
+                        ἕκαστον πειρῶ ἀπολογεῖσθαι καὶ λύειν εὐτελὲς γὰρ καὶ καθαιροῦν τὸ ἀξίωμα,
+                        κἂν τὰ μάλιστα πολλοὺς ἔχῃς ἐλέγχους τοῦ συκοφαντήματος. παράδειγμα τῆς
+                        μεθόδου ταύτης τοιόνδε ἔχε· <lb n="15"/> βλασφημηθεὶς γάρ τις ὑπό τινος, ὡς
+                        ἐπὶ τοῖς αἰσχίστοις συνεγένετο βασιλεῖ, διʼ εἰκασίας ἀπελογήσατο· κἀκεῖνος
+                        πρὸς τὰ βελτίω προὔτρεπε συνών, καὶ αὐτὸς οὐχ ἡπτόμην τῶν μοχθηρῶν
+                        ἐπιτηδευμάτων. ἐφυλάξατο ἐνταῦθα τὸ ἄδοξον τῆς ἀπολογίας.</p>
+                    <lb n="20"/>
+                </div>
+                <div type="textpart" subtype="section" n="9">
+                    <p>9. Ὅτι ὁ πρῶτος ἄριστα πρὸς τὴν πεζὴν λέξιν τὸν Ὁμηρικὸν ὄγκον μετενεγκὼν
+                        Πλάτων ἐστίν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="10">
+                    <p>10. Ὅτι πολλάκις ἐνδείᾳ φύσεως καὶ οἱ ἐπιστήμονες κατὰ τὴν ἐργασίαν
+                        ἀποτυγχάνουσιν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="11">
+                    <p>11. Ὅτι Θεόφραστος ἓξ τρόπους αὐξήσεως παραδέδωκεν· <lb n="25"/> τὰ μὲν γὰρ
+                        ἐκ τῶν πραγμάτων λέγει ἔχειν τὴν αὔξησιν, τὰ δὲ ἐκ τῶν ἀποβαινόντων, τὰ δὲ
+                        ἐξ ἀντιπαραβολῆς καὶ κρίσεως, τὰ δὲ ἐκ τῶν καιρῶν καὶ τοῦ πάθους φαίνεται
+                        μεγάλα. οἱ δὲ νέοι ῥήτορες καὶ ἐκ τῆς αἰτίας φασὶν ἔχειν τὸ μέγεθος μεγάλην
+                        ῥοπήν.</p>
+                    <lb n="30"/>
+                </div>
+                <div type="textpart" subtype="section" n="12">
+                    <p>12. Ὅτι τὴν πλεονάσασαν περὶ τὴν Ἀσίαν ἔκλυσιν ἀνεκτήσατο Ἀριστείδης· συνεχῶς
+                        γάρ ἐστι καὶῥέων καὶ πιθανός.</p>
+
+                    <pb n="327"/>
+                </div>
+                <div type="textpart" subtype="section" n="13">
+                    <p>13. Ὅτι ἠθικὸς λόγος γίνεται κατὰ διάνοιαν, ὅταν χρηστὴν ἔχῃ προαίρεσιν καὶ
+                        πρὸς τὰ βελτίω ῥέπουσαν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="14">
+                    <p>14. Ὅτι ἄριστοι λόγοι καὶ μιμήσεως ἄξιοι οἱ μὴ ἔχοντες ἐνὸς χαρακτῆρα, ἀλλὰ
+                        διαφόρων.</p>
+                </div>
+                <div type="textpart" subtype="section" n="15">
+                    <p>15. Ὅτι τὰ κεφάλαια τῆς δημηγορίας τέτταρα λέγει <lb n="5"/> εἶναι, ὅσαπερ
+                        καὶ καθάπαξ εἴωθεν ἐμπίπτειν εἰς τὰς συμβουλάς, τὸ δίκαιον τὸ συμφέρον τὸ
+                        δυνατὸν τὸ ἔνδοξον, ταῦτα δʼ ἄριστα τὸν Θουκυδίδην φησὶ φυλάξαι.</p>
+                </div>
+                <div type="textpart" subtype="section" n="16">
+                    <p>16. Ὅτι αἱ γνωμολογίαι ἄρισται ἐπὶ τῇ κατασκευῇ. οὐ δεῖ δὲ κατακόρως ταύταις
+                        κεχρῆσθαι.</p>
+                    <lb n="10"/>
+                </div>
+                <div type="textpart" subtype="section" n="17">
+                    <p>17. Ὅτι τὸν κατὰ Μειδίου λόγον ἐπιφορικόν φησιν εἶναι, εἰλῆφθαι δὲ ἑκ τῆς
+                        ποιότητος τοῦ προσώπου.</p>
+                </div>
+                <div type="textpart" subtype="section" n="18">
+                    <p>18. Ὅτι τέχνης ἐστὶ μᾶλλον τὸ ποῖα δεῖ προτάττειν, καὶ ποῖα ἐπιζευγνύειν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="19">
+                    <p>19. Ὅτι ὑπόστασιν καλοῦσιν τὸ ἔμφασιν ἔχον καὶ πάθους <lb n="15"/> τινὸς
+                        ἐνδεικτικόν, καθάπερ τὸ Δημοσθενικόν· ,,οὕτως ὠργίσθη καὶ παρωξύνθη“. καὶ
+                        ἄλλως· ,,ὅσῳ πλείοσιν οὗτος ἠνόχληκεν“.</p>
+                </div>
+                <div type="textpart" subtype="section" n="20">
+                    <p>20. Ὅτι δεῖ τὰ προοίμια ἐν μὲν τοῖς συμβουλευτικοῖς ἑκ τῶν κεφαλαίων, ἐν δὲ
+                        τοῖς δικανικοῖς ἑκ τῶν ὑπολήψεων,  <lb n="20"/> ἐν δὲ τοῖς πανηγυρικοῖς ἐκ
+                        τῆς ὅλης σχέσεως τοῦ λόγου λαμβάνειν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="21">
+                    <p>21. Ὅτι χρὴ τὸν παραμυθούμενον μὴ μετὰ σοφιστικῆς τρανότητος, ἀλλὰ μετὰ
+                        συμπεπονθυίας λέγειν ἁπλότητος· οὐ γὰρ ῥητορικῶς ἀλλὰ θεραπευτικῶς ἔξεστι
+                        λέγειν.</p>
+                    <lb n="25"/>
+                </div>
+                <div type="textpart" subtype="section" n="22">
+                    <p>22. Ὅτι πραγματικὴ σύνταξίς ἐστιν ἡ πρὸς τὸ σημαινόμενον τὴν ἀναφορὰν ἔχουσα,
+                        ἀλλʼ οὐ πρὸς τοὺς χαρακτῆρας τῶν ὀνομάτων ἤγουν τῶν λέξεων, ὡς τὸ „ἀπενέοντο
+                        ἡ πληθὺς ἐπὶ νῆας Ἀχὰιῶν“. καὶ τὸ ,,ὑμεῖς δʼ ὁ <lb n="30"/> δῆμος“. καὶ
+                        ,,ἅπασα ἡ Ἑλλὰς ἐσιδηροφόρουν“.</p>
+
+                    <pb n="328"/>
+                </div>
+                <div type="textpart" subtype="section" n="23">
+                    <p>23. Ὅτι ἐπὶ δεινῷ λόγῳ οὐ χρὴ τοῖς γυμνοῖς χρῆσθαι τῶν ὀνομάτων, ἀλλὰ τοῖς
+                        διʼ ἐμφάσεως τὸ βούλημα σημαίνουσιν.</p>
+                </div>
+                <div type="textpart" subtype="section" n="24">
+                    <p>24. Ὅτι ῥητορικῆς ἔργον τὰ μὲν σμικρὰ μεγάλως λέγειν, τὰ δὲ μεγάλα σμικρῶς,
+                        καὶ τὰ μὲν καινὰ παλαιῶς, <lb n="5"/> τὰ δὲ παλαιὰ καινῶς.</p>
+                </div>
+
+            </div>
+        </body>
+    </text>
+</TEI>
