@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Dimensio circuli</title>
+    <author xml:lang="fre">Archimède</author>
+    <editor>Charles Mugler</editor>
+    <funder>Harvard Library</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor (Mount Allison University)</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0552.tlg002.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="fre">Archimède</title>
+       <editor>
+        <persName>
+         <name>Charles Mugler</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0552">Archimedes</author>
+       <imprint>
+        <publisher xml:lang="fre">Belles Lettres</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1970</date>
+       </imprint>
+       <biblScope unit="volume">1</biblScope>
+      </monogr>
+      <ref target="http://digital.slub-dresden.de/werkansicht/dlf/106432/1/0/">SLUB Dresden</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+    <language ident="fre">French</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0552.tlg002.1st1K-grc1">
+<pb n="138"/>
+<head>ΚΥΛΟΥ ΜΕΤΡΗΣΙΣ</head>
+<div type="textpart" subtype="chapter" n="1">
+<head>α΄.</head>
+<p>Πᾶς κύκλος ἴσος ἐστὶ τριγώνῳ ὀρθογωνίῳ, οὗ ἡ μὲν ἐκ
+τοῦ κέντρου ἴση μιᾷ τῶν περὶ τὴν ὀρθήν, ἡ δὲ περίμετρος
+τῇ βάσει.</p>
+<lb n="5"/> <p>Ἐχέτω ὁ ΑΒΓ&#9651; κύκλος τριγώνῳ τῷ Ε, ὡς ὑπόκειται·
+λέγω ὅτι ἴσος ἐστίν.</p>
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12882220"/></figure>
+<p>Εἰ γὰρ δυνατόν, ἔστω μείζων ὁ κύκλος, καὶ ἐγγεγράφθω
+τὸ ΑΓ τετράγωνον, καὶ τετμήσθωσαν αἱ περιφέρειαι δίχα,
+καὶ ἔστω τὰ τμήματα ἤδη ἐλάσσονα τῆς ὑπεροχῆς, ᾗ
+<lb n="10"/> ὑπερέχει ὁ κύκλος τοῦ τριγώνου· τὸ εὐθύγραμμον ἄρα
+ἔτι τοῦ τριγώνου ἐστὶ μεῖζον. Εἰλήφθω κέντρον τὸ Ν καὶ
+κάθετος ἡ ΝΞ· ἐλάσσων ἄρα ἡ ΝΞ τῆς τοῦ τριγώνου
+πλευρᾶς. Ἔστιν δὲ καὶ ἡ περίμετρος τοῦ εὐθυγράμμου τῆς
+
+<pb n="139"/>
+λοιπῆς ἐλάττων, ἐπεὶ καὶ τῆς τοῦ κύκλου περιμέτρου
+ἔλαττον ἄρα τὸ εὐθύγραμμον τοῦ Ε τριγώνου· ὅπερ
+ἄτοπον.</p>
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12882220"/></figure>
+<p>Ἔστω δὲ ὁ κύκλος, εἰ δυνατόν, ἐλάσσων τοῦ Ε τριγώνου,
+<lb n="5"/> καὶ περιγεγράφθω τὸ τετράγωνον, καὶ τετμήσθωσαν αἱ
+περιφέρειαι δίχα, καὶ ἤχθωσαν ἐφαπτόμεναι διὰ τῶν
+σημείων· ὀρθὴ ἄρα ἡ ὑπὸ ΟΑΡ. Ἡ ΟΡ ἄρα τῆς ΜΡ ἐστὶν
+μείζων· ἡ γὰρ ΡΜ τῇ ΡΑ ἴση ἐστί· καὶ τὸ ΡΟΠ τρίγωνον
+ἄρα τοῦ ΟΖΑΜ σχήματος μεῖζόν ἐστιν ἢ τὸ ἥμισυ. Λελείφθωσαν
+<lb n="10"/> οἱ τῷ ΠΖΑ τομεῖ ὅμοιοι ἐλάσσους τῆς ὑπεροχῆς,
+ᾗ ὑπερέχει τὸ Ε τοῦ ΑΒΓ&#9651; κύκλου· ἔτι ἄρα τὸ περιγεγραμμένον
+εὐθύγραμμον τοῦ Ε ἐστὶν ἔλασσον· ὅπερ
+ἄτοπον· ἔστιν γὰρ μεῖζον, ὅτι ἡ μὲν ΝΑ ἴση ἐστὶ τῇ
+καθέτῳ τοῦ τριγώνου, ἡ δὲ περίμετρος μείζων ἐστὶ τῆς
+<lb n="15"/> βάσεως τοῦ τριγώνου. Ἴσος ἄρα ὁ κύκλος τῷ Ε τριγώνῳ.</p>
+</div>
+
+<div type="textpart" subtype="chapter" n="2">
+<head>β΄.</head>
+<p>Ὁ κύκλος πρὸς τὸ ἀπὸ τῆς διαμέτρου τετράγωνον
+λόγον ἔχει, ὃν ῑᾱ πρὸς ῑδ.</p>
+<p>Ἔστω κύκλος, οὗ διάμετρος ἡ ΑΒ, καὶ περιγεγράφθω
+<lb n="20"/> τετράγωνον τὸ ΓΗ, καὶ τῆς Γ&#9651; διπλῆ ἡ &#9651;Ε, ἕβδομον δὲ ἡ
+ΕΖ τῆς Γ&#9651;. Ἐπεὶ οὖν τὸ ΑΓΕ πρὸς τὸ ΑΓ&#9651; λόγον ἔχει,
+ὃν κᾱ πρὸς ζ, πρὸς δὲ τὸ ΑΕΖ τὸ ΑΓ&#9651; λόγον ἔχει, ὃν ἑπτὰ
+
+<pb n="140"/>
+πρὸς ἐν, τὸ ΑΓΖ πρὸς τὸ ΑΓ&#9651; ἐστίν, ὡς κβ πρὸς ζ. Ἀλλὰ
+τοῦ ΑΓ&#9651; τετραπλάσιόν ἐστι τὸ ΓΗ τετράγωνον, τὸ δὲ
+ΑΓ&#9651;Ζ τρίγωνον τῷ ΑΒ κύκλῳ ἴσον ἐστίν <del>ἐπεὶ ἡ μὲν ΑΓ
+κάθετος ἴση ἐστὶ τῇ ἐκ τοῦ κέντρου, ἡ δὲ βάσις τῆς διαμέτρου
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12882220"/></figure>
+<lb n="5"/> τριπλασίων καὶ τῷ ζ΄ ἔγγιστα ὑπερέχουσα δειχθήσεται</del>·
+ὁ κύκλος οὖν πρὸς τὸ ΓΗ τετράγωνον λόγον ἔχει,
+ὃν ῑᾱ πρὸς ιδ.</p>
+</div>
+
+<div type="textpart" subtype="chapter" n="3">
+<head>γ΄.</head>
+<p>Παντὸς κύκλου ἡ περίμετρος τῆς διαμέτρου τριπλασίων
+<lb n="10"/> ἐστὶ καὶ ἔτι ὑπερέχει ἐλάσσονι μὲν ἢ ἑβδόμῳ μέρει τῆς
+διαμέτρου, μείζονι δὲ ἢ δέκα ἑβδομηκοστομόνοις.</p>
+<p>Ἔστω κύκλος καὶ διάμετρος ἡ ΑΓ καὶ κέντρον τὸ Ε καὶ
+ἡ ΓΛΖ ἐφαπτομένη καὶ ἡ ὑπὸ ΖΕΓ τρίτου ὀρθῆς· ἡ ΕΖ
+ἄρα πρὸς ΖΓ λόγον ἔχει, ὃν τς τρὸς ρνγ, ἡ δὲ ΕΓ πρὸς
+<lb n="15"/> <del>τὴν</del> ΓΖ λόγον ἔχει, ὃν σξε πρὸς ρνγ, Τετμήσθω οὖν ἡ
+ὑπὸ ΖΕΓ δίχα τῇ ΕΗ· ἔστιν ἄρα, ὡς ἡ ΖΕ πρὸς ΕΓ, ἡ ΖΗ
+
+<pb n="141"/>
+πρὸς ΗΓ <del>καὶ ἐναλλὰξ καὶ συνθέντι</del>. Ὡς ἄρα συναμφότερος
+ἡ ΖΕ. ΕΓ πρὸς ΖΓ, ἡ ΕΓ πρὸς ΓΗ· ὥστε ἡ ΓΕ πρὸς
+ΓΗ μείζονα λόγον ἔχει ἤπερ φοα πρὸς ρνγ. Ἡ ΕΗ ἄρα
+πρὸς ΗΓ δυνάμει λόγον ἔχει, ὃν Μ θυν πρὸς Μ γυθ·
+<lb n="5"/> μήκει ἄρα, ὃν φU+A7FCα η΄ πρὸς ρνγ. Πάλιν δίχα ἡ ὑπὸ ΗΕΓ
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12882220"/></figure>
+τῇ ΕΘ· διὰ τὰ αὐτὰ ἄρα ἡ ΕΓ πρὸς ΓΘ μείζονα λόγον
+ἔχει ἢ ὃν αρξβ η΄πρὸς ρνγ· ἡ ΘΕ ἄρα πρὸς ΘΓ μείζονα
+λόγον ἔχει ἢ ὃν αροβ η΄ πρὸς ρνγ. Ἔτι δίχα ἡ ὑπὸ ΘΕΓ
+τῇ ΕΚ· ἡ ΕΓ ἄρα πρὸς ΓΚ μείζονα λόγον ἐχει ἢ ὃν βτλδ
+<lb n="10"/> δ᾿ πρὸς ρνγ· ἡ ΕΚ ἄρα πρὸς ΓΚ μείζονα ἢ ὃν βτλθ δ᾿ πρὸς
+ρνγ. Ἔτι δίχα ἡ ὑπὸ ΚΕΓ τῇ ΛΕ· ἡ ΕΓ ἄρα πρὸς ΛΓ
+μείζονα <del>μήκει</del> λόγον ἔχει ἤπερ τὰ δχογ U+2220΄ πρὸς ρνγ.
+Ἐπεὶ οὖν ἡ ὑπὸ ΖΕΓ τρίτου οὖσα ὀρθῆς τέτμηται τετράκις
+δίχα, ἡ ὑπὸ ΛΕΓ ὀρθῆς ἐστι μη΄. Κείσθω οὖν αὐτῇ ἴση
+<lb n="15"/> πρὸς τῷ Ε ἡ ὑπὸ ΓΕΜ· ἡ ἄρα ὑπὸ ΛΕΜ ὀρθῆς ἐστι κδ΄.
+Καὶ ἡ ΛΜ ἄρα εὐθεῖα τοῦ περὶ τὸν κύκλον ἐστὶ πολυγώνου
+πλευρὰ πλευρὰς ἔχοντος (??)ς. Ἐπεὶ οὖν ἡ ΕΓ πρὸς τὴν
+
+<pb n="142"/>
+ΓΛ ἐδείχθη μείζονα λόγον ἔχουσα ἤπερ δχογ U+2220΄ πρὸς ρνγ,
+ἀλλὰ τῆς μὲν ΕΓ διπλῆ ἡ ΑΓ, τῆς δὲ ΓΛ διπλασίων ἡ ΛΜ,
+καὶ ἡ ΑΓ ἄρα πρὸς τὴν τοῦ (??)ς γώνου περίμετρον μείζονα
+λόγον ἔχει ἤπερ δχογ U+2220΄πρὸς Μ δχπη. Καὶ ἐστιν τριπλασία,
+<lb n="5"/> καὶ ὑπερέχουσιν χξζ U+2220΄, ἅπερ τῶν δχογ U+2220΄ ἐλάττονά
+ἐστιν ἢ τὸ ἕβδομον· ὥστε τὸ πολύγωνον τὸ περὶ τὸν
+κύκλον τῆς διαμέτρου ἐστὶ τριπλάσιον καὶ ἐλάττονι ἢ τῷ
+ἑβδόμῳ μέρει μεῖζον· ἡ τοῦ κύκλου ἄρα περίμετρος πολὺ
+μᾶλλον ἐλάσσων ἐστὶν ἢ τριπλασίων καὶ ἑβδόμῳ μέρει
+<lb n="10"/> μείζων.</p>
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12882220"/></figure>
+<p>Ἔστω κύκλος καὶ διάμετρος ἡ ΑΓ, ἡ δὲ ὑπὸ ΒΑΓ
+τρίτου ὀρθῆς· ἡ ΑΒ ἄρα πρὸς ΒΓ ἐλάσσονα λόγον ἔχει
+ἢ ὃν αταν πρὸς ψπ <del>ἡ δὲ ΑΓ πρὸς ΓΒ, ὃν αφξ πρὸς ψπ</del>.
+Δίχα ἡ ὑπὸ ΒΑΓ τῇ ΑΗ. Ἐπεὶ οὖν ἴση ἐστὶν ἡ ὑπὸ ΒΑΗ
+<lb n="15"/> τῇ ὑπὸ ΗΓΒ, ἀλλὰ καὶ τῇ ὑπὸ ΗΑΓ, καὶ ἡ ὑπὸ ΗΓΒ τῇ
+ὑπὸ ΗΑΓ ἐστὶν ἴση. Καὶ κοινὴ ἡ ὑπὸ ΑΗΓ ὀρθή·
+καὶ τρίτη ἄρα ἡ ὑπὸ ΗΖΓ τρίτῃ τῇ ὑπὸ ΑΓΗ ἴση. Ἰσογώνιον
+ἄρα τὸ ΑΗΓ τῷ ΓΗΖ τριγώνῳ· ἔστιν ἄρα, ὡς ἡ ΑΗ πρὸς
+ΗΓ, ἡ ΓΗ πρὸς ΗΖ καὶ ἡ ΑΓ πρὸς ΓΖ. Ἀλλʼ ὡς ἡ ΑΓ
+<lb n="20"/> πρὸς ΓΖ, <del>καὶ</del> συναμφότερος ἡ ΓΑΒ πρὸς ΒΓ· καὶ ὡς
+συναμφότερος ἄρα ἡ ΒΑΓ πρὸς ΒΓ, ἡ ΑΗ πρὸς ΗΓ. Διὰ
+
+<pb n="143"/>
+τοῦτο οὖν ἡ ΑΗ πρὸς <del>τὴν</del> ΗΓ ἐλάσσονα λόγον ἔχει
+ἤπερ βϡια πρὸς ψπ, ἡ δὲ ΑΓ πρὸς τὴν ΓΗ ἐλάσσονα ἢ
+ὃν γιγ U+2220΄ δ΄ πρὸς ψπ. Δίχα ἡ ὑπὸ ΓΑΗ τῇ ΑΘ· ἡ ΑΘ
+ἄρα διὰ τὰ αὐτὰ πρὸς τὴν ΘΓ ἐλάσσονα λόγον ἔχει ἢ ὃν
+<lb n="5"/> εϡκδ U+2220΄ δ΄ πρὸς ψπ ἢ ὃν αωκγ πρὸς σμ· ἑκατέρα γὰρ
+ἑκατέρας δ ιγ΄· ὥστε ἡ ΑΓ πρὸς τὴν ΓΘ ἢ ὃν αωλη θ ια΄
+πρὸς σμ. Ἔτι δίχα ἡ ὑπὸ ΘΑΓ τῇ ΚΑ· καὶ ὁ ΑΚ πρὸς
+τὴν ΚΓ ἐλάσσονα <del>ἄρα</del> λόγον ἔχει ἢ ὃν αζ πρὸς ξς·
+ἑκατέρα γὰρ ἑκατέρας ια μ΄. Ἡ ΑΓ ἄρα πρὸς <del>τὴν</del> ΚΓ ἢ
+<lb n="10"/> ὃν αθ ϛ΄ πρὸς ξς. Ἔτι δίχα ἡ ὑπὸ ΚΑΓ τῇ ΛΑ· ἡ ΑΛ ἄρα
+πρὸς <del>τὴν</del> ΛΓ ἐλάσσονα λόγον ἔχει ἢ ὃν τὰ βις ϛ΄ πρὸς
+ξς, ἡ δὲ ΑΓ πρὸς ΓΛ ἐλάσσονα ἢ τὰ βιζ δ΄ πρὸς ξς.
+Ἀνάπαλιν ἄρα ἡ περίμετρος τοῦ πολυγώνου πρὸς τὴν
+διάμετρον μείζονα λόγον ἔχει ἤπερ ςτλς πρὸς βιζ δ΄. ἅπερ
+<lb n="15"/> τῶν βιζ δ΄ μείζονά ἐστιν ἢ τριπλασίονα καὶ δέκα οα΄· καὶ
+ἡ περίμετρος ἄρα τοῦ (??)ςγώνου τοῦ ἐν τῷ κύκλῳ τῆς
+διαμέτρου τριπλασίων ἐστὶ καὶ μείζων ἢ ι οα΄· ὥστε καὶ
+ὁ κύκλος ἔτι μᾶλλον τριπλασίων ἐστὶ καὶ μείζων ἢ ι οα΄.</p>
+<p>Ἡ ἄρα τοῦ κύκλου περίμετρος τῆς διαμέτρου τριπλασίων
+<lb n="20"/> ἐστὶ καὶ ἐλάσσονι μὲν ἢ ἑβδόμῳ μέρει, μείζονι δὲ ἢ ι οα΄
+μείζων.</p>
+</div>
+
+</div>
+</body>
+</text>
+</TEI>
