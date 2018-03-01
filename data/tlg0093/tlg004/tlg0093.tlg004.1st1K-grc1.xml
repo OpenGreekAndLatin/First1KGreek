@@ -70,8 +70,8 @@
   <encodingDesc>
    <p>Text encoded in accordance with the latest EpiDoc standards</p>
    <refsDecl n="CTS">
-    <cRefPattern matchPattern="(.+)" n="chapter"
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+    <cRefPattern matchPattern="(.+).(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern matchPattern="(.+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
    </refsDecl>
   </encodingDesc>
   <profileDesc>
