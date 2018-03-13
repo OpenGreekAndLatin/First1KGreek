@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Stomachion</title>
+    <author xml:lang="fre">Archimède</author>
+    <editor>Charles Mugler</editor>
+    <funder>Harvard Library</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor (Mount Allison University)</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0552.tlg009.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="fre">Archimède</title>
+       <editor>
+        <persName>
+         <name>Charles Mugler</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0552">Archimedes</author>
+       <imprint>
+        <publisher xml:lang="fre">Belles Lettres</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1971</date>
+       </imprint>
+       <biblScope unit="volume">3</biblScope>
+      </monogr>
+      <ref target="http://digital.slub-dresden.de/werkansicht/dlf/106436/1/0/">SLUB Dresden</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+    <language ident="fre">French</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0552.tlg009.1st1K-grc1">
+<div type="textpart" subtype="chapter" n="1">
+<pb n="70"/>
+<head>ΣΤΟΜΑΧΙΟΝ</head>
+<p>Ἀρχιμήδους Στομάχιον</p>
+<p>Τοῦ λεγομένου Στομαχίου ποικίλαν ἔχοντος τᾶς ἐξ
+ὧν συνέστακε σχημάτων μεταθέσεως θεωρίαν ἀναγκαῖον
+ἡγησάμην πραττον του <add cause="omitted"><gap reason="omitted"/></add> ρῶν ἐκθέσθαι, εἴς τε ἃ
+<lb n="5"/> διαιρεῖται, ἕκαστόν τε αὐτῶν τίνι ἐστὶν ὁμοιούμενον,
+ἔτι δὲ καὶ ποῖαι γωνίαι σύνδυο λαμβανόμεναι <add cause="omitted"><gap reason="omitted"/></add> καὶ
+<add cause="omitted"><gap reason="omitted"/></add> θάς, εἴρηται πρὸς τὸ τὰς ἐναρμόσεις τῶν ἐξ αὐτῶν
+γεννωμένων σχαμάτων γιγνώσκεσθαι, εἴτε ἐπʼ εὐθείας
+εἰσὶν αἱ γεννώμεναι ἐν τοῖς σχάμασι πλευραί, εἴτε καὶ
+<lb n="10"/> μικρῶς λείπουσαι τᾷ θεωρίᾳ λανθάνουσιν τὰ γὰρ τοιαῦτα
+φιλότεχνα καὶ ἐὰν ἐλάχιστον μὲν λείπηται, τᾷ δὲ θεωρίᾳ
+λανθάνῃ, οὐ παρὰ τοῦτʼ ἐστὶν ἔκβλητα ἃ συνίσταται.</p>
+<p>Ἔστι μὲν οὖν ἐξ αὐτῶν οὐκ ὀλίγων σχημάτων <gap reason="omitted"/>ο<gap reason="omitted"/>
+διὰ τὸ<gap reason="omitted"/>ν<gap reason="omitted"/>τον εἶναι εἰς ἕτερον τόπον τοῦ ἴσου καὶ
+<lb n="15"/> ἰσογωνίου σχάματος μετατιθεμε<gap reason="omitted"/> καὶ ἑτέ<gap reason="omitted"/> λαμβάνοντας.
+<add cause="omitted">Ἐνιό</add>τε δὲ καὶ δύο σχημάτων συνάμφω ἑνὶ σχήματι
+ἴσων ὄντων καὶ ὁμοίων τῷ ἑνὶ σχήματι ἢ καὶ δύο σχημάτων
+συνάμφω ἴσων τε καὶ ὁμοίων ὄντων δυσὶ σχήμασι συνάμφω
+πλείονα σχήματα συνίσταται ἐκ τῆς μεταθέσεως. Προγράφομεν
+<lb n="20"/> οὖν τι θεώρημα εἰς αὐτὸ συντεῖνον.</p>
+
+<pb n="71"/>
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
+<p>Ἔστω γὰρ παραλληλόγραμμον ὀρθογώνιον τὸ ΖΓ,
+καὶ δε. ι<gap reason="omitted"/>ω ἡ ΕΖ τῷ Κ, καὶ.. διήχθωσαν ἀπὸ τῶν Γ, Β
+αἱ ΓΚ, ΒΕ. ει<gap reason="omitted"/>ων<gap reason="omitted"/>τῶν<gap reason="omitted"/>Γ <gap reason="omitted"/>ἐκ<add cause="omitted">βεβλή</add>σθωσαν αἱ
+ΓΚ, ΒΖ καὶ συμπιπτέ<add cause="omitted">τωσαν κατὰ τὸ &#9651;<gap reason="omitted"/></add> ἡ ΓΗ. Ἐπεὶ
+<lb n="5"/> ἴση ἐστὶν ἡ ΕΚ τῇ ΚΖ, <add cause="omitted">ἴση</add> καὶ ἡ ΓΕ, τουτέστιν ἡ ΒΖ,
+τῇ Ζ&#9651; ὥ<add cause="omitted">στε</add> μείζων ἡ ΓΖ τῆς Ζ&#9651; καὶ γωνία <add cause="omitted">ἄρα</add>
+ἡ ὑπὸ τῶν Ζ&#9651;Γ τῆς ὑπὸ τῶν ΖΓ&#9651; μείζων. Ἶσοι δέ εἰσιν
+αἱ ὑπὸ ΗΒ&#9651;, ΖΓΒ · ἡμίσεια γὰρ ὀρθῆς ἑκατέρα μείζων
+ἄρα καὶ ἡ ὑπὸ τῶν ΓΗΒ, ἐπεὶ ἡ ὑπὸ ΓΗΒ ἴση δυσὶ ταῖς
+<lb n="10"/> ἐντὸς καὶ ἀπεναντίον ταῖς ὑπὸ ΗΒ&#9651;, Η&#9651;Β, τῆς ὑπὸ τῶν
+ΗΓΒ ὥστε μείζων ἐστὶν ἡ ΓΒ τῆς ΒΗ. Ἐὰν ἄρα δίχα
+τμηθῇ ἡ ΓΗ κατὰ Χ, ἔσται ἀμβλεῖα μὲν ἡ ὑπὸ ΓΧΒ
+ἐπεὶ γὰρ ἴση ἡ ΓΧ τῇ ΧΗ, καὶ κοινὴ ἡ ΧΒ, δύο δυσὶν ἴσαι
+καὶ βάσις ἡ ΓΒ τῆς ΒΗ μείζων καὶ ἡ γωνία ἄρα τῆς
+<lb n="15"/> γωνίας μείζων. Ἀμβλεῖα μὲν ἄρα ἡ ὑπὸ ΓΧΒ, ὀξεῖα δὲ
+ἡ ἐφεξῆς. Ἡμίσεια δὲ ὀρθῆς ἡ ὑπὸ ΓΒΗ τοῦτο γάρ
+ἐστιν ὑποκείμενον τοῦ παραλληλογράμμου ὀξεῖα δὲ ἡ
+ὑπὸ ΒΧΗ. Καὶ. τι δὴ ἴση ἡ λοιπαὶ ΓΒΗ καὶ συνίσταται
+καὶ διαιρεῖται τοῦτο ἐπ. ον τὸν<gap reason="omitted"/> βάσιος<gap reason="omitted"/> τι<gap reason="omitted"/>
+<lb n="20"/> αστ<gap reason="omitted"/>α<gap reason="omitted"/> ἄρα ο<gap reason="omitted"/> ΑΒ<gap reason="omitted"/>αν<gap reason="omitted"/>ο<gap reason="omitted"/>τὴν ΓΑ<gap reason="omitted"/>νῶν<gap reason="omitted"/>έχον<gap reason="omitted"/>τὸ
+
+<pb n="72"/>
+ἐπίλοιπ<gap reason="omitted"/>δύνασθαι ἀρ<gap reason="omitted"/>ξειν ἑκ<gap reason="omitted"/>τῶν τομῶν
+<gap reason="omitted"/>τῶν τάξιν ἐχοντ<gap reason="omitted"/>.</p>
+<figure><graphic url="http://heml.mta.ca/lace/sidebysideview2/12871276"/></figure>
+<p>Τετμήσθω ἡ ΓΑ δίχα κατὰ τὸ Ε, καὶ διὰ τοῦ Ε τῇ ΒΓ
+παράλληλος ἤχθω ἡ ΕΖ ἔστιν οὖν τετράγωνα τὰ ΓΖ,
+<lb n="5"/> ΖΑ. Ἤχθωσαν διάμετροι αἱ Γ&#9651;, ΒΕ, Ε&#9651;, καὶ τετμήσθωσαν
+δίχα αἱ ΓΗ, Ε&#9651; κατὰ τὰ Θ, Χ, καὶ ἐπεζεύχθωσαν αἱ ΒΘ,
+ΧΖ, καὶ διὰ τῶν<gap reason="omitted"/>, Κ τῇ Β&#9651; παράλληλοι ἤχθωσαν αἱ
+Κ<gap reason="omitted"/>,<gap reason="omitted"/>Ξ. Διὰ τὸ προκείμενον ἄρα θεώρημα τοῦ ΒΓΘ
+τριγώνου ἡ πρὸς τῷ Θ γωνία ἀμβλεῖα, ἡ δὲ λοιπὴ ὀξεῖα<gap reason="omitted"/>
+<lb n="10"/> νερὸν φανερὸν δὲ<gap reason="omitted"/>ει<gap reason="omitted"/>.</p>
+</div>
+
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Adnotationes in Leviticum (fragmenta e catenis)</title>
+    <author>Origen</author>
+    <editor>Charles Vincent Delarue</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg2042.tlg068.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Origenis Opera Omnia</title>
+       <editor>
+        <persName>
+         <name>Charles Vincent Delarue</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+       <imprint>
+        <publisher xml:lang="fre">Imprimerie Catholique</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1857</date>
+       </imprint>
+       <biblScope unit="volume">7</biblScope>
+      </monogr>
+        <series>
+          <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+          Graeca)</title>
+         <biblScope unit="volume">17</biblScope>
+        </series>
+      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n13/mode/2up">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl> 
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fre">French</language>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg068.1st1K-grc1">
+<head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ
+ΕΙΣ ΤΟ ΛΕΥΙΤΙΚΟΝ.</head>
+
+<div type="textpart" subtype="chapter" n="4">
+ <head>ΚΕΦ. Δ΄.</head>
+ <div type="textpart" subtype="verse" n="27" corresp="urn:cts:greekLit:tlg0527.tlg003:4.27">
+<p>Στίχ. κζ΄. Ψυχὴ ἐὰν ἁμάρτῃ ἀκουσίως. φησὶ. καὶ
+μὴ ποιήσῃ ἀπὸ πασῶν τῶν ἐντολῶν Κυρίου, ὧν
+δεῖ ποιεῖν.</p>
+<p>(12) Εἰ δὲ κατὰ φύσιν ἔχει. Ἔστι τάχα τινὰ προστάγματα
+Κυρίου, ἃ οὐ δεῖ ποιεῖν, κατὰ τό· Ἕδωξαν
+αὐτοῖς προστάγματα οὐ καλά. Ψυχὴ οὖν ἁμαρτάνει
+ἀκουσίως, ὅτε προφάσει εὐσεβείας τὸ μὴ δέον τηρεῖ.
+Καὶ δεῖται θυσίας πρὸς ἄφεσιν, οὐ δεομένου
+θυσίας τοῦ δρῶντος ἐξεπίτηδες· ὡς ὁ γεγονὼς Ἰουδαῖος,
+ἵνα Ἰουδαίους κερδήσῃ, καὶ περιτεμὼν τὸν
+Τιμόθεον.</p></div>
+ <div type="textpart" subtype="verse" n="28" corresp="urn:cts:greekLit:tlg0527.tlg003:4.28">
+<p>Στίχ. κη΄. Σημαίνει οὖν, ὅτι ἀμσρτία καλεῖται καὶ
+αὐτὸ τὸ προσαγόμενον. Οὕτω νοητέον τό· Ἁμαρτίας
+λαοῦ μου φάγονται. Εἰ οὖν ὁ ἁμαρτάνων αὐτὴν δοκεῖ
+θύειν τὴν ἁμαρτίαν ἐν τῷ μετανοεῖν, οὐκ ὀφείλει
+τοῖς αὐτοῖς περιπίπτειν, ἐπεὶ ἀναζῇ ἡ ἁμαρτία.
+Οὕτω δυνατὸν τὸν Χριστὸν καλεῖν ἀμαρείαν, ὡς ὑπὸρ
+τῆς πάντων ἁμαρτίας τυθέντα.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+ <head>ΚΕΦ. ΙΒ΄.</head>
+ <div type="textpart" subtype="verse" n="2" corresp="urn:cts:greekLit:tlg0527.tlg003:12.2">
+<p>Στίχ. β΄. Γυνὴ ἥτις ἐὰν σπερματισθῇ, καὶ τέκῃ
+ἄρσεν.</p>
+<p>Παρέλκειν δόξει τὸ, ἐὰν σπερματισθῇ, προτασσόμενον
+τοῦ· καὶ τέκῃ ἄρσεν. Ἀλλʼ ἐφίστημι μήποτε
+ἵνα προφητικῶς ἡ Μαρία, οὐκ ἐκ τοῦ ἐσπερματίσθαι
+<note type="footnote">4 Ezech. xx, 25. 7Ose. iv, 8.</note>
+<note type="footnote">(11) Cod. 534, ἐπεἴχε τῷ Μωῦσῇ.</note>
+<note type="footnote">(12) Cod. 534 non habet εἰ δέ. Videtur legendum
+ὗδε Mox in cod. 534, εἰσὶ γὰρ τάχα τινὰ καί. Et
+ἔδωκα, pro ἔδωξαν.</note>
+<note type="footnote">(13) Vulgata, Doctrinam et veritatem; Heb. Urim
+et thummim, luces et perfectiones; quod est, gemmas
+Redundare videatur illud, si semen susceperit,
+quod præmittitur ante et pepererit masculum. At
+enim inclinor animo ut suspicer, prophetice Ma-
+pellucidas et pretiosas.</note>
+<note type="footnote">(14) IHæc refer ad distinctionem non sponte et ex
+prætexrtu vel motivo agentis, non vero ad d cuod
+mnquit, indiget vel non indiget hostia pro venia. A-
+lioqui sequeretur Paulum n his non laudabthter
+egisse.</note>
+
+<pb n="20"/>
+(17) τεκοῦσα ἄρσεν, μὴ νομισθῇ ἀκάθαρτος
+εἶναι, γεγεννηκυῖα τὸν Σωτῆρα, εἴρηκεν ὅλον
+Ἐδύνατο δὲ καὶ μὴ προκειμένου τοῦ, Ἐὰν
+σπερματισθῇ, νοεῖσθαι μὴ οὖσα ἀκάθαρτος ἡ Μαρία·
+οὐ γὰρ ἀπλῶς γυνὴ, ἀλλὰ παρθένος.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="13">
+ <head>ΚΕΦ. ΙΓ΄.</head>
+ <div type="textpart" subtype="verse" n="45" corresp="urn:cts:greekLit:tlg0527.tlg003:13.45">
+<p>Στίχ. με΄. Καὶ ὁ λεπρὸς, ἐν ᾧ ἐστιν ἀφὴ, τὰ ἱμάτια
+αὐτοῦ ἔσται παραλελυμένα, καὶ ἡ κεφαλὴ
+αὐτοῦ ἀκάλυπτος.</p>
+<p>Διατί τοῦ λεπροῦ ἀκάλυπτον εἶναι κελεύει τὴν κεφαλὴν,
+καὶ τὰ ἱμάτια παραλελυμένα; Ἵνα γνωριστὸς
+ᾗ καὶ μὴ μετσλαγχάνωσι τῆς ἀκαθαρσίας οἱ προσπελάζοντες.
+Οὕτως ὁ Ἀπόστολος περὶ τῶν ἁμαρτανόντων
+ἔφη· Στέλλεσθε ὑμᾶς ἀπὸ παντὸς ἀδελφοῦ
+ἀτάκτως περιπατοῦντος, καὶ μὴ κατὰ τὴν
+παράδοσιν, ἣν παρελάβετε παῤ ἡμῶν· καὶ, Ἐάν
+τις ἀδελφὸς ὀνομαζόμενος, ἢ πόρνος, ἢ πλεονέκτης,
+ἢ εἰδωλολάτρης, ἢ μέθυσος, ἢ λοίδορος, ἢ
+ἅρπαξ· τῷ τοιούτῳ μὴ συνεσθίειν (18).</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+ <head>ΚΕΦ. ΚΓ΄.</head>
+ <div type="textpart" subtype="verse" n="2" corresp="urn:cts:greekLit:tlg0527.tlg003:23.2">
+<p>Στίχ. β΄. Αὗται αἱ ἑορταὶ Κυρίου.
+Πᾶσα ἱλαρὰ ἡμέρα, ἐν ᾗ προτέτακται (19), ὡς ἐν
+ἁγίᾳ τάδε τινὰ ποιεῖν παρὰ τὰς λοιπὰς ἐξαίρετα,
+ἑορτὴ καλεῖται. Οὐ πᾶσα δέ ἐστι πανήγυρις· ἀλλὰ
+κατὰ τοὔνομα, ὅτε ἐπὶ τὸ αὐτὸ συναθροίζονται πανταχόθεν.
+Ὥστε ἡ μὲν πανήγυρίς ἐστι καὶ ἑορτή·
+οὐκέτι δὲ ἑορτὴ, καὶ πανήγυρις· οἷον· Σάββατα καὶ
+Νουμηνίαι, ἑορταί εἰσιν· Ἄζυμα δὲ, καὶ ἡμέραι τῶν
+Ἑβδομάδων, καὶ Σκηνοπηγίαι οὐ μόνον ἑορταὶ, ἀλλὰ
+καὶ πανηγύρεις.</p></div>
+ <div type="textpart" subtype="verse" n="40" corresp="urn:cts:greekLit:tlg0527.tlg003:23.40">
+<p>Στίχ. μ΄. Καὶ κάλλυντρα φοινίκων.
+Πάρεστι διὰ τούτων νοεῖν (20), καὶ πάλιν ἡμῖν ἐν
+Χριστῷ τὰς ἐν παραδείσῳ τρυφὰς ἀπονέμει Θεός.
+Φυτῶν δὲ τῶν ἀειθαλῶν οἱ κλάδοι, τὸ διηνεκὲς τῆς
+χάριτος καὶ τὸ ἀμάραντον τῆς ἐλπίδος ἐφʼ ἑαυτοῖς
+σημαίνουσι.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="27">
+ <head>ΚΕΦ. ΚΖ΄.</head>
+ <div type="textpart" subtype="verse" n="15" corresp="urn:cts:greekLit:tlg0527.tlg003:27.15">
+<p>Στίχ. ιε΄. Ἐὰν δὲ ὁ ἁγιάσας αὐτὴν λυτρῶται τὴν
+οἰκίαν αὐτοῦ, προσθήσει ἐπʼ αὐτὸ τὸ ἐπίπεμπτον
+τοῦ ἀργυρίου τῆς ταμῆς, καὶ ἔσται αὐτῷ.
+Εἰ δὲ μὴ τιμὴν οἰκίας, ἢ ἀγροῦ τις, ἀλλʼ αὐτὰ
+ἁγιάσαι Θεῷ, τὴν τιμὴν καθήσει μετὰ τοῦ πέμπτου
+λυτρούμενος αὐτὰ, καὶ|καθέξει τὰς κτήσεις· ἑτέροις
+δὲ οὐκ ἀποδώσεται. Ἀλλὰ κἂν ἀποδῶται, μέχρι τοῦ
+Ἰωβηλαίου καθέξει ὁ πριάμενος, καὶ μετὰ τοῦτον
+ἔσται Θεοῦ.</p></div>
+ <div type="textpart" subtype="verse" n="16" corresp="urn:cts:greekLit:tlg0527.tlg003:27.16">
+<p>Στίχ. ις΄. Ἐὰν δὲ ἀπὸ τοῦ ἀγροῦ.</p>
+<p>Τὸν δὲ ἐξ ἀγορασίας ἀγρὸν ἀγοράσας, οὐκ ἀνακτήσεται
+τοῦτον ἑαυτῷ· ἀλλὰ πρὸς λόγον ἀποδοὺς
+τὸν καρπὸν τῷ Θεῷ, ἐν τῷ Ἰωβὴλ ἀποκαταστήσεται
+τὸν ἀγρὸν τῷ πεπρακότι.</p>
+<note type="footnote">(15) Hebr. naghah, et tangere et plaga afficere si-
+gnificat.</note>
+<note type="footnote">(16) Hoc est, diamatus, infamis.</note>
+<note type="footnote">(17) Cod. al., σπερματίσθαι.</note>
+<note type="footnote">(18) Ad hunc locum referendum videtur fragmen-
+tum sequens quod sub Origenis nomine edidit
+card. Angelo Mai in Classici Auctores, X, Romæ
+Ὠριγένους εἰς Λευιτικόν.</note>
+<note type="footnote">Καί γε τοὺς περὶ λέπρας νόμους ὑπολαμβάνω
+εἴδη</note>
+<note type="footnote">(19) Al. προστ. et mox ἐξαίρεται.</note>
+<note type="footnote">(20) Deest ὡς vel ὅτι.</note>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

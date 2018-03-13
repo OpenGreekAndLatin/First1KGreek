@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Catoptrica</title>
+    <author>Hero of Alexandria </author>
+    <editor xml:lang="deu">Wilhelm Schmidt</editor>
+    <editor>Ludwig Nix</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor (Mount Allison University)</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg0559.tlg005.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Heronis Alexandrini opera quae supersunt omnia</title>
+       <editor>
+        <persName>
+         <name xml:lang="deu">Wilhelm Schmidt</name>
+        </persName>
+       </editor>
+       <editor>
+        <persName>
+         <name>Ludwig Nix</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg0559">Hero of Alexandria </author>
+       <imprint>
+        <publisher>Teubner</publisher>
+        <pubPlace>Leipzig</pubPlace>
+        <date>1900</date>
+       </imprint>
+       <biblScope unit="volume">2.1</biblScope>
+      </monogr>
+      <ref target="https://archive.org/details/heronisalexandr02schogoog">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern matchPattern="(.+)" n="chapter"
+     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+    <language ident="deu">German</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+ <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0559.tlg005.1st1K-grc1">
+<pb n="368"/>
+<head>ΚΑΤΟΠΤΡΙΚΑ.</head>
+<div type="textpart" subtype="chapter" n="1">
+<head>FRAGMENTUM.</head>
+<p>Ἐπειδὴ γὰρ τοῦτο ὡμολογημένον ἐστὶ παρὰ πᾶσιν,
+ὅτι οὐδὲν μάτην ἐργάζεται ἡ φύσις οὐδὲ ματαιοπονεῖ,
+ἐὰν μὴ δώσωμεν πρὸς ἴσας γωνίας γίνεσθαι τὴν ἀνάκλασιν,
+πρὸς ἀνίσους ματαιοπονεῖ ἡ φύσις, καὶ ἀντὶ
+τοῦ διὰ βραχείας περιόδου φθάσαι τὸ ὁρώμενον τὴν
+ὄψιν, διὰ μακρᾶς περιόδου τοῦτο φανήσεται καταλαμβάνουσα.
+εὑρεθήσονται γὰρ αἱ τὰς ἀνίσους γωνίας
+περιέχουσαι εὐθεῖαι, αἵτινες ἀπὸ τῆς ὄψεως <del>περιέχουσαι</del>
+<sic>φερομένας</sic> πρὸς τὸ κάτοπτρον κἀκεῖθεν πρὸς
+τὸ ὁρώμενον, μείζονες οὖσαι τῶν τὰς ἴσας γωνίας
+περιεχουσῶν εὐθειῶν. καὶ ὅτι τοῦτο ἀληθές, δῆλον
+ἐντεῦθεν.</p>
+<p>Ὑποκείσω γὰρ τὸ κάτοπτρον εὐθεῖά τις ἡ ΑΒ,
+καὶ ἔστω τὸ μὲν ὁρῶν Γ, τὸ δʼ ὁρώμενον τὸ &#8736;, τὸ
+δὲ Ε σημεῖον τοῦ κατόπτρου, ἐν ᾧ προσπίπτουσα ἡ
+ὄψις ἀνακλᾶται πρὸς τὸ ὁρώμενον, ἔστω, καὶ ἐπεζεύχθω
+<note type="footnote">Exstat apud Olympiod. in Meteor. III, 2 ed. Stüve (Comm.
+Arist. XIl, 2, 212, 5—213, 20), ed. Ideler II, 96 4 ματαιο-
+πονεῖ Ald. ld.: ματαιοποιεῖ R. Schoene 5 δώσομεν Ald., corr.
+R. Schoene. de aoristi forma cf. Veitch Greek verbs p. 169</note>
+<note type="footnote">8—9 καταλαμβάνουσα del. Ideler 10 περιέχουσαι del.
+R. Schoene 11 φερομένας Ald. Id.: φέρονται R. Schoene:
+f. 〈εἰσι〉 φερόμεναι πρὸς (bis) R. Schoene: περὶ codd. et
+Aldina 16 [τὸ] &#8736; Ideler</note>
+
+<pb n="370"/>
+ἡ ΓΕ Ε&#8736;. λέγω ὅτι ἡ ὑπὸ ΑΕΓ γωνία ἴση ἐστὶ τῇ ὑπὸ
+&#8736;ΕΒ. εἰ γὰρ μὴ ἔστιν ἴση, ἔστω ἕτερον σημεῖον τοῦ
+κατόπτρου, ἐν ᾧ προσπίπτουσα ἡ ὄψις πρὸς ἀνίσους
+γωνίας ἀνακλᾶται, τὸ Ζ, καὶ ἐπεζεύχθω ἡ ΓΖ, Ζ&#8736;.
+δῆλον ὅτι ἡ ὑπὸ ΓΖΑ γωνία μείζων ἐστὶ τῆς ὑπὸ <lb n="5"/>
+&#8736;ΖΕ γωνίας. λέγω ὅτι αἱ ΓΖ, Ζ&#8736; εὐθεῖαι, αἵτινες τὰς
+ἀνίσους γωνίας περιέχουσιν ὑποκειμένης τῆς ΑΒ εὐθείας,
+μείζονές εἰσι τῶν ΓΕ, Ε&#8736; εὐθειῶν, αἵτινες τὰς
+ἴσας γωνίας περιέχουσι μετὰ τῆς ΑΒ. ἤχθω γὰρ κάθετος
+ἀπὸ τοῦ &#8736; ἐπὶ τὴν ΑΒ κατὰ τὸ Η σημεῖον <lb n="10"/>
+<note type="marginal">213</note> | καὶ ἐκβεβλήσθω ἐπʼ εὐθείας ὡς ἐπὶ τὸ Θ. φανερὸν
+δὴ ὅτι αἱ πρὸς τῷ γωνίαι ἴσαι εἰσίν. ὀρθαὶ γάρ
+εἰσι. καὶ ἔστω ἡ &#8736;Η τῇ ΗΘ ἴση, καὶ ἐπεζεύχθω ἡ
+ΘΖ καὶ ἡ ΘΕ. αὕτη μὲν ἡ κατασκευή. ἐπεὶ οὖν ἴση
+ἐστὶν ἡ &#8736; τῇ ΗΘ, ἀλλὰ καὶ ἡ ὑπὸ &#8736;ΗΕ γωνία <lb n="15"/>
+τῇ ὑπὸ ΘΗΕ γωνίᾳ ἴση ἐστί, κοινὴ δὲ πλευρὰ τῶν
+δύο τριγώνων ἡ ΗΕ, καὶ βάσις ἡ ΘΕ βάσει τῇ Ε&#8736;
+ἴση ἐστί, καὶ τὸ ΗΘΕ τρίγωνον τῷ &#8736;ΗΕ τριγώνῳ
+ἴσον ἐστί, καὶ <add cause="omitted">αἱ</add> λοιπαὶ γωνίαι ταῖς λοιπαῖς γωνίαις
+εἰσὶν ἴσαι, ὑφʼ ἃς αἱ ἴσαι πλευραὶ ὑποτείνουσιν. ἴση <lb n="20"/>
+ἄρα ἡ ΘΕ τῇ Ε&#8736;. πάλιν ἐπειδὴ τῇ ΗΘ ἴση ἐστὶν
+ἡ Η&#8736; καὶ γωνία ἡ ὑπὸ &#8736;ΗΖ γωνίᾳ τῇ ὑπὸ ΘΗΖ
+ἴση ἐστί, κοινὴ δὲ ἡ ΗΖ τῶν δύο τριγώνων τῶν &#8736;ΗΖ
+καὶ ΘΗΖ, καὶ βάσις ἄρα ἡ ΘΖ βάσει τῇ Ζ&#8736; ἴση
+ἐστί, καὶ τὸ ΖΗ&#8736; τρίγωνον τῷ ΘΗΖ τριγώνῳ ἴσον <lb n="25"/>
+ἐστίν. ἴση ἄρα ἐστὶν ἡ ΘΖ τῇ Ζ&#8736;. καὶ ἐπεὶ ἴση
+<note type="footnote">1 ΑΕΓ Aldina δεα V (═ Coislin.), qui etiam aliis locis
+in angulorum litteris et in figura a codice Vaticano et ed.
+Aldina dissentit. vid. Stüve 2 εἰ . . . ἴση suspecta, f. del.</note>
+<note type="footnote">3—4 ἀνίσους γωνίας scripsi: ἄνισον γωνίαν codd. ed.</note>
+<note type="footnote">6 &#8736;ΖΕ G (═ Vatic.): δεζ Ald.: γεζ Ideler perverse 12 τῷ</note>
+VG: τὸ Ald. 15 δ G: δηθ V AId 17 f. βάσις 〈ἄρα〉
+
+<pb n="372"/>
+ἐστὶν ἡ ΘΕ τῇ Ε&#8736;, κοινὴ προσκείσθω ἡ ΕΓ. δύο
+ἄρα αἱ ΓΕ, Ε&#8736; δυσὶ ταῖς ΓΕ, ΕΘ ἴσαι εἰσίν. ὅλη
+ἄρα ἡ ΓΘ δυσὶ ταῖς ΓΕ, Ε&#8736; ἴση ἐστί. καὶ ἐπεὶ
+παντὸς τριγώνου αἱ δύο πλευραὶ τῆς λοιπῆς μείζονές
+εἰσι πάντῃ μεταλαμβανόμεναι, τριγώνου ἄρα τοῦ ΘΖΓ <lb n="5"/>
+αἱ δύο πλευραὶ αἱ ΘΖ, ΖΓ μιᾶς τῆς ΓΘ μείζονές
+εἰσιν. ἀλλʼ ἡ ΓΘ ἴση ἐστὶ ταῖς ΓΕ, Ε&#8736;. αἱ ΘΖ.
+ΖΓ ἄρα μείζονές εἰσι τῶν ΓΕ, Ε&#8736;. ἀλλʼ ἡ ΘΖ τῇ
+Ζ&#8736; ἐστὶν ἴση. αἱ ΖΓ, Ζ&#8736; ἄρα τῶν ΓΕ, Ε&#8736;
+μείζονές εἰσι. καί εἰσιν αἱ ΓΖ, &#8736; αἱ τὰς ἀνίσους <lb n="10"/>
+γωνίας περιέχουσαι· αἱ ἄρα τὰς ἀνίσους γωνίας περιέχουσαι
+μείζονές εἰσι τῶν τὰς ἴσας γωνίας περιεχουσῶν.</p>
+<note type="footnote">5 θζ Ald.: θγζ V: θ G 7 γε εδ Ald.: γε εθ VG</note>
+</div>
+
+</div>
+</body>
+</text>
+</TEI>

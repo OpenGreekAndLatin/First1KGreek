@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Adnotationes in Numeros</title>
+    <author>Origen</author>
+    <editor>Charles Vincent Delarue</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg2042.tlg069.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Origenis Opera Omnia</title>
+       <editor>
+        <persName>
+         <name>Charles Vincent Delarue</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+       <imprint>
+        <publisher xml:lang="fre">Imprimerie Catholique</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1857</date>
+       </imprint>
+       <biblScope unit="volume">7</biblScope>
+      </monogr>
+        <series>
+          <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+          Graeca)</title>
+         <biblScope unit="volume">17</biblScope>
+        </series>
+      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n19/mode/2up">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl> 
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fre">French</language>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg069.1st1K-grc1">
+<pb n="21"/>
+<head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ
+ΕΙΣ ΤΟΥΣ ΑΡΙΘΜΟΥΣ.</head>
+
+<div type="textpart" subtype="chapter" n="11">
+ <head>ΚΕΦ. ΙΑ΄.</head>
+ <div type="textpart" subtype="verse" n="7" corresp="urn:cts:greekLit:tlg0527.tlg004:11.7">
+<p>Στίχ. ζ΄. Τὸ δὲ μάννα, ὼσεὶ σπέρμα κορίου.
+(21) Τὸ δὲ ὡσεὶ σπέρμα κορίου, οἱ λοιποὶ βδελίου·
+ἄλλος φησὶν, ἐκ μέλιτος· Ἀκύλας καὶ Σύμμαχος,
+μαστοῦ ἔλαιον, μαστοῦ εἰς λίπας.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="12">
+ <head>ΚΕΦ. ΙΒ΄.</head>
+ <div type="textpart" subtype="verse" n="1" corresp="urn:cts:greekLit:tlg0527.tlg004:12.1-12.15">
+<p>Στίχ. α΄, β΄, ι΄, ιε΄. Λοιδορήσασα Μαριὰμ τὸν
+Μωσέα, ἐλεπρώθη, ἔξω τῆς παρεμβολῆς γενομένη
+ἑπτὰ ἡμέρας καθίσασα. Τοῦτο δὲ γέγονε πρὸς
+φόβον τοῦ λαοῦ. Εἰ γὰρ τῆς ἀδελφῆς οὐκ ἐφείσατο,
+οὐδὲ ἑτέρου.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="14">
+ <head>ΚΕΦ. ΙΔ΄</head>
+ <div type="textpart" subtype="verse" n="7" corresp="urn:cts:greekLit:tlg0527.tlg004:14.36">
+<p>Στίχ. λς΄. Καὶ οἱ ἄνθρωποι.
+Οἱ τὴν γῆν ψέγοντες, ψεύστην τὸν Θεὸν, κατʼ αὐτοὺς
+εὐσεβῶς, ἔδειξαν, ἐπαινοῦντα (22) τὴν Παλαιστίνην.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="22">
+ <head>ΚΕΦ. ΚΒ΄.</head>
+ <div type="textpart" subtype="verse" n="2" corresp="urn:cts:greekLit:tlg0527.tlg004:22.2">
+<p>Στίχ. β΄. καὶ ἰδὼν Βαλάκ.
+Ἤκουσαν ἔθνη καὶ ὠργίσθησαν. Ἐν οἷς καὶ τό·
+Ἄρχοντες Μωαβιτῶν, ἔλαβεν αὐτοὺς τρόμος.</p></div>
+ <div type="textpart" subtype="verse" n="4" corresp="urn:cts:greekLit:tlg0527.tlg004:22.4"><p>
+Στίχ. δ΄. (23) Ὅτι ὥσπερ μάντιν τὸν μισθὸν ταύτης
+ἔφερον προσαγαγεῖν αὐτόν.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="23">
+ <head>ΚΕΦ. ΚΓ΄.</head>
+ <div type="textpart" subtype="verse" n="7" corresp="urn:cts:greekLit:tlg0527.tlg004:23.7">
+<p>(24) Στίχ. ζ΄. Καὶ ἀναλαβὼν τὴν παραβολήν.
+Ἡθεία Γραφὴ ἔν τισιν τόποις προκρίνει καὶ προτίθηοι
+τὸ συμβολικὸν ὂν τῆς ἱστορικῆς διηγήσεως ἐν
+τῇ αὐτοῦ ὑποθέσει.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="24">
+ <head>ΚΕΦ. ΚΔ΄.</head>
+ <div type="textpart" subtype="verse" n="7" corresp="urn:cts:greekLit:tlg0527.tlg004:24.7">
+<p>Στίχ. ζ΄. Καὶ κυριεύσει ἐθνῶν πολλῶν.
+(25) Εἰσὶ δὲ κύριοι πολλοὶ, καὶ θεοὶ πολλοί. Μακάριοι
+δὲ οἱ τὸν Κύριον ἡμῶν Ἰησοῦν Χριστὸν ἔχοντες
+κύριον· κυριεύσουσι γὰρ κυρίας πολλάς.</p></div>
+ <div type="textpart" subtype="verse" n="17" corresp="urn:cts:greekLit:tlg0527.tlg004:24.17">
+<p>Στίχ. ιζ΄. Καὶ ἀναστήσεται ἄνθρωπος ἐξ Ἰσραήλ.
+Φασὶ τὸν Βαλαὰμ ἔχειν φοιτητὰς τῇ τέχνῃ, μαθητεύσαντας
+αὐτῷ τῇ μαγικῇ· καὶ δόξαν περὶ αὐτοῦ
+<note type="footnote">Exod. xv, 15. 14ICor. viii, 5.
+εἴδη τινὰ τῆς ψυχῆς διαγράφειν διάφορα· τίς γὰρ οὐκ
+ἂν ἀπορήσῃ ὁρῶν, ὅτι πῆ μὲν ἡ λέπρα ποιεῖ τὸν
+ἄνθρωπον ἀκάθαρτον ἐγγενομένη χρωτὶ ζῶντι, πῆ
+δὲ πάσης ἀκαθαρσίας ἀπολύει ὅλον λεπρὸν γεγονότα;
+τότε γὰρ ἀκάθαρτος εἶναι λογίζεταί τις, ὅτε
+χρὼς ζῶν μετὰ τὸ ὁλόλεπρον εὑρίσκεται ἐν αὐτῷ,
+μιαίνοντος τοῦ ζῶντος χρωτὸς τὴν ἐξ ὅλων λέπραν,
+ἀμίαντον εἶναι λεγομένην· ἡγοῦμαι γὰρ τὴν λέπραν
+ἀντὶ ἀλόγων λαμβάνεσθαι τῆς ψυχῆς παθημάτων·
+τὸν δὲ ζῶντα χρῶτα, ἀντὶ τῆς λογικῆς καταστά-</note>
+<note type="footnote">(21) Præcedit Μᾶν ὠνομάσθη, etc., ut in edit. ex
+cod. 334, pag. 175.</note>
+<note type="footnote">(22) Cod. et ms. Bonjoan. ἐπαινοῦντ.</note>
+<note type="footnote">(23) Hæc subduntur is quæ in edit. habentur
+σεως· δοκεῖ οὖν μοι μυστήριον περιέχειν ὁ λόγος·
+ἐν γὰρ τῇ τῶν βρεφῶν ἡλικίᾳ ἀνέγκλητός ἐστιν ἡ
+ψυχὴ, τῆς ἀλογίας ἀπολυούσης αὐτὴν παντὸς ψόγου·
+ἐὰν δὲ ὀφθῇ χρὼς ζῶν ἐν αὐτῇ, ὅ ἐστιν ἐὰν ἀρχαὶ
+τοῦ λόγου ὑποφύωσι, τότε ἀρχὴ τῆς ἁμαρτίας ὑφί-
+σταται, ἕως ἐπικρατήσαντος τοῦ χρωτὸς τοῦ ζῶν-
+τος, τουτέστι τοῦ λόγου αὐξάνοντος καὶ τελειουμέ-
+νου, ὁ λόγος γένηται ὁ χρὼς ζῶν, καὶ τέλεον ἡ λέ-
+πρα ἐξαφανισθῇ. Edit. Patrol.</note>
+<note type="footnote">p. 272 A, post πρόῤῥησις.</note>
+<note type="footnote">(24) In cod. 534, pag. 191.</note>
+<note type="footnote">(25) Hæc præter edita pag. 273.</note>
+
+<pb n="24"/>
+(26), ἀναγράψασθαι τὰς προφητείας αὐτοῦ,
+καὶ καταλιπεῖν, ἐν αἷς καὶ τό· Ἀνατελεῖ
+ἄστρον. Ἤ καὶ ἐκ τῆς πατρικῆς παραδόσεως τοῦτο
+καὶ διαδοχῆς παραλαβόντες οἱ Μάγοι, ἐπὶ τὴν Βηθλεὲμ
+παρεγένοντο.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>
