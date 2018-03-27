@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Fragmenta</title>
+                <editor>Max Wellmann</editor>
+                <author xml:lang="lat">Crateuas</author>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                <idno type="filename">tlg0657.tlg001.1st1K-grc1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2018</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <listBibl>
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="lat">Pedanii Dioscuridis Anazarbei de materia medica libri quinque</title>
+                            <editor>
+                                <persName>
+                                    <name>Max Wellmann</name>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0657" xml:lang="lat">Crateuas</author>
+                            <imprint>
+                                <publisher>Weidmann</publisher>
+                                <pubPlace>Berlin</pubPlace>
+                                <date>1958</date>
+                            </imprint>
+                            <biblScope unit="volume">3</biblScope>
+                        </monogr>
+                        <ref target="https://archive.org/stream/BIUSante_65865x03#page/n143/mode/2up">Internet Archive</ref>
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(.+).(.+)" n="section"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern matchPattern="(.+)" n="chapter"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"
+                />
+            </refsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change/>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0657.tlg001.1st1K-grc1">
+                    <div type="textpart" subtype="chapter" n="1">
+                        <pb n="144"/>
+                        <head>B. Fragmenta.</head>
+                        <div type="textpart" subtype="section" n="1">
+                            <p>1 Cod. Const. fol. 18r Κρατεύας ῥιζοτομικός.</p>
+                            <p>Ἀριστολόχιος μακρὰ ποιεῖ πρὸς ἑρπετὰ καὶ θανάσιμα ὁλκὴ πινομένη μετ᾿ 
+                                οἴνου καὶ καταπλασσομένη, τὰ δὲ ἐν μήτρᾳ <lb n="10"/> συνιστάμενα
+                                λόχια καὶ ἔμμηνα καὶ ἔμβρυα ἐκβάλλει ποθεῖσα μετὰ πεπέρεως καὶ
+                                σμύρνης· καὶ ἐν πεσσῷ δὲ προστεθεῖσα τὸ αὐτὸ δρᾷ. Diosc. III 4 (II
+                                7, 18 sq.). Plin. N. H. 25, 97.</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="2">
+                            <p>2 Cod. Const. fol. 19v Κρατεύας ῥιζοτομικός.</p>
+                            <p>ἀριστολόχιος <add cause=" omitted">στρογγύλη</add> πινομένη μετ᾿ 
+                                οἴνου μέλανος <lb n="15"/> ποιεῖ πρὸς ἑρπετῶν δήγματα· χωρεῖ δὲ καὶ
+                                εἰς ἀντιδότους τὰς θηριακάς, χωρεῖ καὶ εἰς τὰς ποδαγρικὰς συνθέσεις,
+                                ἔτι δὲ ἐμπλάστρους. ἄγει δὲ καὶ ἔμμηνα καὶ ἔμβρυα ἐκβάλλει· βοηθεῖ
+                                ἄσθματι, λυγμῷ, ῥίγει, σπληνί, ῥήγμασιν, σπάσμασιν. ποθεῖσα δὲ μεθ᾿ 
+                                ὕδατος ἀνάγει σκόλοπας, ἀκίδας, λεπίδας ὀστῶν καταπλασσομένη <lb
+                                    n="20"/> ἀφίστησιν καὶ σηπεδόνας περιχαράσσει καὶ τὰ ῥυπαρὰ
+                                καθαίρει ἕλκη· σμήχει δὲ καὶ ὀδόντας καὶ οὖλα. Diosc. III 4 (8, 3
+                                sq.). Plin. l. s.</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="3">
+                            <p>3 Cod. Const. fol. 25r Κρατεύας ῥιζοτομος.</p>
+                            <p>Ἀχίλλειος· ταύτης τῆς βοτάνης ἡ κόμη λεία ἐναίμων ἐστὶν <lb n="25"/>
+                                κολλητικὴ καὶ ἀφλέγμαντος, αἱμορραγίας τε ἐφεκτικὴ καὶ τῆς ἐκ μήτρας
+                                ἐν προσθέτῳ, καὶ τὸ ἀφέψημα δὲ αὐτῆς ἐστιν ἐγκάθισμα ῥοικαῖς,
+                                πίνεται καὶ πρὸς δυσεντερίαν. ὅλη δὲ κοπεῖσα μετὰ ἀξουγγίας παλαιᾶς
+                                τὰ παλαιὰ τῶν ἑλκῶν καὶ δυσαπούλωτα θεραπεύει, ξηρὰ δὲ κοπεῖσα καὶ
+                                μέλιτι μιγεῖσά ἐστιν ἀνακαθαρτική. <lb n="30"/> Diosc. IV 36 (196,
+                                6).</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="4">
+                            <p>4 Cod. Const. fol. 26r Κρατεύας.</p>
+                            <p>ἀνεμώνη ἡ φοινικῆ· ἀνεμώνη δύναμιν ἔχει δριμεῖαν, ὅθεν ὁ χυλὸς τῆς
+                                ῥίζης αὐτῆς γίνεται ἔγχυτος πρὸς κεφαλῆς κάθαρσιν. μασηθεῖσα δὲ ἡ
+                                ῥίζα ἄγει φλέγμα· ἑψηθεῖσα δὲ ἐν γλυκεῖ <lb n="35"/> καὶ
+                                καταπλασσομένη ὀφθαλμῶν φλεγμονὰς αἴρει, ὁμοίως καὶ <note
+                                    type="footnote">9 ερπετας C θανασα (ιμ ins.)C 12 ζμυρνης C 15
+                                    ἀριστολόχιον C στρογγύλη addidi πιννομένη C μετ᾿ ] δὲ C 20
+                                    σκώλοπας C 28 ῥικοῖς C πίννεται C ὅλη C, fort. χλωρὰ 33 ἀνεμόνη
+                                    C 34 αὖτου C, corr.</note>
+                                <pb n="145"/> τὰς οὐλὰς ἀποσμήχει. τὰ δὲ φύλλα καὶ οἱ καυλοὶ
+                                συνεψηθέντα πτισάνῃ καὶ ἐσθιόμενα γάλα κατασπᾷ, ἐν προσθέτῳ δὲ
+                                ἔμμηνα ἄγει, καταπλασθέντα δὲ λέπρας ἀφίστησιν. Diosc. II 176 (244,
+                                11 sq.). Plin. n. h. 21, 164.</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="5">
+                            <lb n="5"/>
+                            <p>5 Cod. Const. fol. 27r Κρατεύας ῥιζοτομικός.</p>
+                            <p>ἀσφόδελος· τούτου αἱ ῥίζαι δύναμιν ἔχουσιν διουρητικὴν καὶ ἐμμήνων
+                                κατασπαστικήν· θεραπεύει καὶ ποδάγρας ἀλγήματα καὶ σπάσματα καὶ
+                                βῆχας καὶ ῥήγματα ⋖μία τὸ πλῇθος τῆς ῥίζης ἐν οἴνῳ πινομένη. ποιεῖ
+                                καὶ <add cause=" omitted">αὐεμεστέρους ὄσον ἀστράγαλος <lb n="10"/>
+                                    βρωθεῖσα καὶ</add> ἐρπετοδήκτοις δίδοται ὠφελίμως πλῆθος τριῶν·
+                                καταπλάσσειν δὲ δεῖ τὰ δήγματα ὅλῃ τῇ βοτάνῃ σὺν οἴνῳ. θεραπεύει
+                                    <add cause=" omitted">καὶ</add> τὰ ῥυπαρὰ καὶ νεμόμενα ἕλκη,
+                                ποιεῖ καὶ πρὸς μαστῶν καὶ διδύμων φλεγμονὰς καὶ φύματα καὶ δοθιῆνας
+                                συγκαθεψομένη τρυγὶ οἴνου ἡ ῥίζα, πρὸς δὲ τὰς προσφάτους <lb n="15"
+                                /> φλεγμονὰς μετ᾿  ἀλφίτου. ὁ δὲ χυλὸς τῆς ῥίζης προσλαβὼν οἴνου
+                                παλαιοῦ τι γλυκέος καὶ σμύρνης καὶ κρόκου συνεψηθέντων ἐπὶ ταὐτὸ
+                                ἔγχριστον γίγνεται ὀφθαλμῶν καὶ πρὸς ὦτα πυορροοῦντα σὺν λιβάνῳ καὶ
+                                μέλιτι. Diosc. II 169 (235, 4).</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="6">
+                            <lb n="20"/>
+                            <p>6 Cod. Const. fol. 30r Κρατεύας ῥιζοτομικός. ἀρνόγλωσσον δύναμιν ἔχει
+                                τηκτικὴν καὶ ἀφλέγμαντον· κοπεῖσα γὰρ μετὰ στέατος καὶ ἐπιτιθεμένη
+                                τοῖς τὰ χειρώνια ἔχουσιν εὐθετεῖ, πρὸς δὲ τὰ λοιπὰ ποιεῖ σχε <gap
+                                    reason="omitted"/> Diosc. II 126 (199, 5).</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="7">
+                            <lb n="25"/>
+                            <p>7 Cod. Const. fol. 31r Κρατεύας ῥιζοτομικός.</p>
+                            <p>ἄσαρον· δύναμιν ἔχει θερμαντικὴν καὶ διουρητικήν, ἁρμόζουσαν
+                                ὑδρωπικοῖς, ἰσχιαδικοῖς χρονίοις. ἄγουσιν <add cause=" omitted">αἱ
+                                    ῥίζαι</add> καὶ ἔμμηνα, μετὰ μελικράτου δὲ ποθεῖσαι πλῆθος ἓξ ὡς
+                                ἐλλέβορος λευκὸς καθαίρουσι· μείγνυται δὲ καὶ μύροις ναὶ ἀντιδότοις.
+                                    <lb n="30"/> Diosc. I 10 (15, 6).</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="8">
+                            <p>8 Cod. Const. fol. 40r Κρότεύας ῥιζοτομικός.</p>
+                            <p>ἀναγαλλίδες ἀμφότεραι τραυματικαί, ἀφλέγμαντοι, σκολόπων τε
+                                ἐπισπαστικαὶ <add cause=" omitted">καὶ</add> νομῶν ἐφεκτικαί. ὁ δὲ
+                                χυλὸς αὐτῶν <note type="footnote">3 καταπλασθισα C 7 κατασπατικην C
+                                    8 βῆκας C ⋖ addidi 9 εὐεμεστέρους — καὶ addidi e D. 10 δίδοται
+                                    ὠφελίμως] ΑΙΜωϹ (sic) C 12 καὶ addidi 13 μασθων C δοθιονας C 14
+                                    τρυγος C 15 χυλὸς] καυλὸς corr. in χυλὸς m. rec. C 16 σμύρνης]
+                                    πέρνης corr. m. rec. in σμύρνης C συνεψηθέντα C, correxi 17
+                                    ταὐτὸ] το C (ch. laesa) 18 ποιωρο . . . τα C 22 καὶ] κ C
+                                    ἐπιτιθημένη C 23 σχε (ch. laesa) C 26 ἁρμόζουσα C 27
+                                    εἰσχιαδικοῖς χρονία (οις superscr. m. rec.) C αἱ ῥίζαι addidi 29
+                                    καθερι C μείγνυται] μηγεψεται C 38 καὶ addidi</note>
+                                <pb n="146"/> ῥινέγχυτος ὀδόντων πόνον παύσει, ἐὰν εἰς τὸν
+                                ἀντικείμενον μυξωτῆρα τοῦ ἀλγοῦντος ἐγχέῃς· καθαίρει καὶ ἄργεμα μετὰ
+                                μέλιτος Ἀττικοῦ καὶ ἀμβλυωπίαις βοηθεῖ, φασὶν δὲ ἔνιοι τὴν μὲν
+                                ἔχουσαν τὸ κυάνεον ἄνθος πρόπτωσιν δακτυλίου στέλλειν, τὴν δὲ
+                                φοινικοῦν ἐξερεθίζειν καταπλασθεῖσαν. χρῶνται <lb n="5"/> δὲ αὐτῇ
+                                καὶ εἰς τὰς Δημοκρίτου δυνάμεις. Diosc. II 178 (247, 6).</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="9">
+                            <p>9 Cod. Const. fol. 29r Κρατεύας ῥιζοτομικός.</p>
+                            <p>ἀργεμώνη· αὕτη ἡ βοτάνη κοπεῖσα μετὰ ἀξουγγίας χοιράδας διαλύει·
+                                ποιεῖ καὶ πρὸς ἀλφοὺς μέλανας μετὰ νίτρου καὶ θείου <lb n="10"/>
+                                ἀπύρου ξηρὰ κοπεῖσα καὶ σησθεῖσα, ἐν βαλανείῳ τοὺς χρωμένους
+                                θεραπεύει προξηροτριβηθέντας· ποιεῖ καὶ πρὸς ψώραν 1).</p>
+                        </div>
+
+                        <div type="textpart" subtype="section" n="10">
+                            <p>10 Cod. Const. fol. 33r Κρατεύας ῥιζοτομικός.</p>
+                            <p>ἀστέριον· αὕτη χλωρὰ κοπεῖσα μετὰ ἀξουγγίας παλαιᾶς <lb n="15"/>
+                                ποιεῖ πρὸς λυσσοδήκτους, βρογχοκηλικούς, ὑποθυμιωμένη δὲ φυγαδεύει
+                                θηρία.</p>
+                        </div>
+                    </div>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
