@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Adnotationes in Jesu filium Nave (fragmenta e catenis)</title>
+    <author>Origen</author>
+    <editor>Charles Vincent Delarue</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg2042.tlg071.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Origenis Opera Omnia</title>
+       <editor>
+        <persName>
+         <name>Charles Vincent Delarue</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+       <imprint>
+        <publisher xml:lang="fre">Imprimerie Catholique</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1857</date>
+       </imprint>
+       <biblScope unit="volume">7</biblScope>
+      </monogr>
+        <series>
+          <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+          Graeca)</title>
+         <biblScope unit="volume">17</biblScope>
+        </series>
+      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n25/mode/2up">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl> 
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fre">French</language>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg071.1st1K-grc1">
+<head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ
+ΕΙΣ ΙΗΣΟΥΝ ΤΟΝ ΝΑΥΗ.</head>
+
+<div type="textpart" subtype="chapter" n="3">
+ <head>ΚΕΦ. Γ΄.</head>
+ <div type="textpart" subtype="verse" n="14" corresp="urn:cts:greekLit:tlg0527.tlg006:3.14">
+<p>Στίχ. ιδ΄. Καὶ ἀπῆρε πᾶς λαὸς ἐκ τῶν σκηνωμάτων
+αὐτῶν.</p>
+<p>Τουτέστιν, ὡς ἅλω πλήρωσις (69). Οὐ γὰρ μόνον
+ἐπήγνυτο, ὡς ἐν τῇ Ἐρυθρᾷ, ἀλλʼ ὡς θημὼν πυροῦ
+ἐσωρεύετο. Εἰς τύπον τῶν ἀποστόλων δηλονότι.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="6">
+ <head>ΚΕΦ. ??΄.</head>
+ <div type="textpart" subtype="verse" n="15" corresp="urn:cts:greekLit:tlg0527.tlg006:6.15-6.16">
+<p>Στίχ. ιε΄, ις΄. Κεκράξατε· παρέδωνε γὰρ Κύριος
+ὑμῖν τὴν πόλιν.</p>
+<p>(70) Διατί τὴν Ἰεριχὼ ἀναθεματισθῆναι προσέταξε;
+Πρώτην ταύτην εἷλον πόλιν μετὰ τὸ διαβῆναι31
+τὸν ποταμόν. Ὥσπερ τοίνυν προσέταξεν αὐτοὺς τῶν
+<note type="footnote">33. Gal. iii, 10. 34 Gen. xlix, 4.</note>
+<note type="footnote">(67) Confer Theodoretum.</note>
+<note type="footnote">(68). Τῷ.</note>
+<note type="footnote">hili ἀλω πλήρ σῖ, Edit. Patrol.</note>
+<note type="footnote">(70) Præcedunt τὴν μέντοι . . . . γέμουσαν, ut in
+(69) Ἅλω πλήρωσις. Sic correximus verba ni- edit. pag. 395.</note>
+
+<pb n="37"/>
+καρπῶν προσφέρειν τὰς ἀπαρχὰς, οὕτως ἐκέλευσε τὰ
+τῶν σκύλων προσενεγκεῖν ἀκροθίνια. Πρὸς δὲ τούτοις
+καὶ γυμνάζει αὐτοὺς διὰ τούτων τῶν νόμων, ὥστε
+τοὺς ἀναγκαίους νόμους τηρεῖν. Τὴν οἰκείαν δὲ αὐτοῖς
+ἐπιδεικνὺς δύναμιν, τὴν πρώτην πόλιν δίχα
+ὅπλων καὶ μηχανημάτων ἑλεῖν παρεσκεύασε, καὶ
+μόνῃ κατέλυσε τῇ τῶν σαλπίγγων ἠχῇ· ἵνʼ ὅταν ἡττηθῶσι
+παραταττόμενοι, γνῶσιν, ὡς αὐτοὶ παρέσχον
+τῆς ἥττης τὰς ἀφορμὰς, τῶν θείων νόμων καταφρονήσαντες.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="8">
+ <head>ΚΕΦ. Η΄.</head>
+ <div type="textpart" subtype="verse" n="2" corresp="urn:cts:greekLit:tlg0527.tlg006:8.2">
+<p>(71) Στίχ. β΄. Καὶ τὴν προνομὴν τῶν κτηνῶν προνομεύσεις
+σεαυτῷ.</p>
+  <p>Ἐπειδὴ οὐκ ἔδει ὡς ἐν τῇ Ἱεριχὼ τὰ πάντα ἀνατεθῆναι.</p></div>
+ <div type="textpart" subtype="verse" n="26" corresp="urn:cts:greekLit:tlg0527.tlg006:8.26">
+<p>(72) Στίχ. κς΄. Καὶ ἐξέτεινεν ὁ Ἰησοῦς τὸν γαισὸν,
+καὶ τὴν χεῖρα αὐτοῦ.</p>
+<p>Ἔμενε γὰρ Ἰησοῦς ἐκτεταμένην ἔχων τὴν χεῖρα·
+ἵνα, θεασάμενοι οἱ τῆς ἐνέδρας, προκαταλάβωνται
+τὴν πόλιν.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

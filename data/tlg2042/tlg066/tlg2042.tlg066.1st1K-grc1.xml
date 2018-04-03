@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Adnotationes in Genesim</title>
+    <author>Origen</author>
+    <editor>Charles Vincent Delarue</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg2042.tlg066.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Origenis Opera Omnia</title>
+       <editor>
+        <persName>
+         <name>Charles Vincent Delarue</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+       <imprint>
+        <publisher xml:lang="fre">Imprimerie Catholique</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1857</date>
+       </imprint>
+       <biblScope unit="volume">7</biblScope>
+      </monogr>
+           <series>
+          <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+          Graeca)</title>
+         <biblScope unit="volume">17</biblScope>
+        </series>
+      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n13/mode/2up">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fre">French</language>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg066.1st1K-grc1">
+<head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ.
+ΕΙΣ ΤΗΝ ΓΕΝΕΣΙΝ (1).</head>
+
+<div type="textpart" subtype="chapter" n="7">
+<pb n="12"/>
+<head>(3) ΚΕΦ. Ζ΄.</head>
+ <div type="textpart" subtype="verse" n="4" corresp="urn:cts:greekLit:tlg0527.tlg001:7.4">
+<p>Στιχ. δ΄. Ἐγὼ ἐπάγω ὑετὸν (ἐπὶ) τὴν γῆν τεσσαράκοντα
+ἡμέρας, καὶ τεσσαράκοντα νύκτας.
+Καὶ ἐξαλείψω πᾶσαν τὴν ἐξανάστασιν, ἣν
+ἐποίησα, ἀπὸ προσώπου τῆς γῆς, ἀπὸ ἀνθρώπουἕως κτήνους.</p>
+<p>Τί δήποτε τῷ κατακλυσμῷ τὰ τῶν ἀνθρώπων πλήθη
+διέφθειρεν; Ἐξαλεῖψαι τοῦ Κάῖν τὸ γένος ἠθέλησε·
+ἀνεμίγη δὲ αὐτῷ καὶ τῶν εὐσεβῶν ἡ φυλή· διὸ
+καὶ τῆς τιμωρίας μετέσχηκεν. Ἀρχὴν δέ τινα καιτοῦ
+βίου ποιήσασθαι βουληθεὶς, τὸν Νῶε καὶ τοὺς ἐκείνου
+παῖδας σὺν ταῖς γυναιξὶ διετήρησεν, εὐσεβῆ ὄντα
+καὶ δίκαιον, καὶ ἐκ τῆς τῶν συγγενῶν εὐσεβείας
+βλαστήσαντα, καὶ τὴν τῆς παρανομίας ἐπιμιξίαν μισήσαντα.
+Οὐ μὴν, ὥς τινές φασιν, ὀργῇ (4) τινι καὶ μεταμελείᾳ
+ταῦτα πεποίηκε. Ταῦτα γάρ τοι ἀνθρώπινα
+πάθη· ἡ δὲ θεία φύσις, ἐλευθέρα παθῶν. Ἄλλως τε
+ἡ μεταμέλεια τοῖς μετὰ τὴν πεῖραν μανθάνουσι τῶν
+πραγμάτων τὴν φύσιν κατάλληλος· εἶτα τῇ πείρᾳ
+μανθάνοντες ὡς οὐκ ὀρθῶς ἐβουλεύσαντο, μεταμέλονται.
+Ὁ δὲ Θεὸς οὕτως ὁρᾷ τὰ μετὰ πολλὰς ἐσόμενα
+γενεὰς, ὡς ἤδη γεγενημένα. Ὡς προορῶν τοίνυν καὶ
+προγινώσκων, οὕτως ἅπαντα πρυτανεύει. Τί δήποτε
+τοίνυν μεταμέλεται, ἅπαντα πρὸς τὴν πρόγνωσιν τὴν
+<note type="footnote">ubique, ad editionem cod. Alexandrini Breitinge-
+rianam, Tiguri 1730.</note>
+<note type="footnote">(4) Sic correximus verbum nihili ὀγῇ.</note>
+
+<pb n="13"/>
+οἰκε ίαν οἰκονομῶν; Οὐκοῦν ἐπὶ Θεοῦ μεταμέλεια οἰκε
+νομίας μεταβολή· Μεταμέλομαι γὰρ, φησὶν, ὅτι
+κέ κρικα τὸν Σαοὺλ εἰς βασιλέα· ἀντὶ τοῦ· Εὐδοκίμασα
+μὲν παῦσαι τοῦτον, ἕτερον δὲ χειροτονῆσαι.
+Οὕτω κἀνταῦθα· Ἐνεθυμήθην, ὅτι ἐποίησα ἄνθρωπον·
+ἐδοκίμασα διολέσαι τῶν ἀνθρώπων τὸ γένος.
+Ἀλλὰ φιλάνθρωπος ὢν, σπέρμα τὸν Νῶε τῇ φύσει
+τετήρηκεν. Ἐπειδὴ δὲ καὶ τῶν ἀλόγων τὰ γένη τῆς
+τῶν ἀνθρώπων εἵνεκα δεδημιούργηκε χρείας· καὶ
+ταῦτα τοῖς ἀνθρώποις συνδιεφθάρη, πλὴν τῶν ἐν τῇ
+κιβωτῷ σὺν τῷ Νῶε διαφυλαχθέντων. Ἐκέλευσε γὰρ
+ὁ δεσπότης Θεὸς ἀνὰ δύο μὲν ἐξ ἑκάστου γένους τῶν
+δοκούντων ἀκαθάρτων διασωθῆναι, ἀνὰ ἑπτὰ δὲ τῶν
+καθαρῶν. Ἐπειδὴ γὰρ ἤμελλε συγχωρεῖν τοῖς ἀνθρώποις
+μεταλαμβάνειν κρεῶν, ἤμελλον δὲ καὶ θυσίας
+αὐτῷ προσφέρειν τῆς εὐσεβείας οἱ τρόφιμοι,
+πλείονα τὰ καθαρὰ φυλαχθῆναι προσέταξε· τὰς μὲν
+τρεῖς συζυγίας, εἰς τὴν αὔξησιν τοῦ γένους, τὸ δὲ ἓν
+τὸ περιττὸν εἰς θυσίαν. Εὐθὺς γὰρ ὁ Νῶε μετὰ τὴν
+καῦλαν τῆς τιμωρίας, θυσίαν τῷ Θεῷ εὐχαριστήριον
+προσενήνοχεν, ἀπὸ πάντων, φησὶ, κτηνῶν τῶν
+καθαρῶν, καὶ ἀπὸ πάντων τῶν πετεινῶν τῶν καθαρῶν.
+Ὡς εἶναι δῆλον ὅτι τούτου χάριν, ἀνὰ ἑπτὰ
+προσέταξεν ἐξ ἑκάστου γένους τῶν καθαρῶν εἰς τὴν
+τιβωτὸν εἰσαχθῆναι, ἵνα, τὸ ἓν ζῶον ἐξ ἑκάστου γένους
+ὁ Νῶε προσφέρων, μὴ διαφθείρῃ τὰς συζυγίας.</p></div>
+ <div type="textpart" subtype="verse" n="16"  corresp="urn:cts:greekLit:tlg0527.tlg001:7.16"><p>
+(4·) Στίχ. ις΄. Καὶ ἔκλεισε Κύριος ὁ Θεὸς ἔξωθεν
+<lg>
+<l>αὐτοῦ τὴν κιβωτόν.</l>
+</lg></p>
+<p>Θειοτέρας τινὸς δυνάμεως ἔχρῃζεν ἡ ἀσφάλεια τῆς
+θύρας κλειομένης.</p>
+</div>
+</div>
+<div type="textpart" subtype="section" n="19">
+<head>ΚΕΦ. ΙΘ΄.</head>
+ <div type="textpart" subtype="verse" n="25"  corresp="urn:cts:greekLit:tlg0527.tlg001:19.25-19.26">
+<p>Σπίχκε΄. Καὶ κατέστρεφεν τὰς πόλεις ταύτας, καὶ
+πασαν τὴν περίχωρον, καὶ πάντας τοὺς κατοικοῦντας
+ἐν ταῖς πόλεσι.</p>
+<p>Στίχ. κς΄. Καὶ ἀπέλεψεν ἡ γυνὴ αὐτοῦ εἰς τὰ
+ὀπίσω, καὶ ἐγένετο στήλη ἁλός.</p>
+<p>Ὁ Κύριος οὐ μόνον τοὺς ἀσεβεῖς ἀπόλλυσιν, ἀλλὰ
+καὶ τὰς τροφὰς αὐτῶν οὔσας Σοδομιτικὰς καὶ ἐπιβλαβεῖς·
+ἐν αἷς ἐστι καὶ ἄμπελος, περὶ ἧς γέγραπται·
+Ἐκ γὰρ ἀμπέλου Σοδόμων ἡ ἄμπελος
+αὐτῶν καὶ ἡ κλημαεὶς αὐτῶν ἐκ Γομόῤῤας.
+(5) Ἅμα τε εἰς τὴν πόλιν ἀπεσώθη, καὶ τὸ
+πῦρ ἐπεφέρετο ταῖς πόλεσι, σημεῖον τῆς μελλούσης
+συντελείας. Στήλη οὐχ ἁπλῶς ἐγένετο, ἀλλὰ μάλιστα
+στήλη ἁλὸς, διὰ τό· Ὑμεῖς ἐστε τὸ ἄλας τῆς γῆς.
+Ἐφαρμόσῃ δὲ τῇ στήλῃ τοῦ ἁλὸς τό· Ἐὰν δὲ τὸ
+ἅλας μωρανθῇ; Οὐκ ἀθρόως ἀναβαίνει εἰς τὸ ὄρος
+κατὰ τὰ εἰρημένα αὐτῷ, ἀλλὰ πρῶτον εἰς Σηγὼρ γίνεται,
+καίτοιγε μὴ θαῤῥήσας ἑαυτῷ περὶ τοῦ ἀναβῆναι
+εἰς τὸ ὄρος.</p>
+</div>
+</div>
+<div type="textpart" subtype="section" n="23">
+<head>ΚΕΦ. ΚΓ΄.</head>
+ <div type="textpart" subtype="verse" n="15"  corresp="urn:cts:greekLit:tlg0527.tlg001:23.15">
+<p>(6) Στίχ. ιε΄. Γῆ τετρακοσίων διδράχμων.
+Σημειωτέον, ὅτι τάφου τιμή ἐστι τὰ τετρακόσια,
+τῷ κακωτικὴν εἶναι τὴν τετράδα καὶ ἑκατοντάδα. Καὶ
+ζητήσας τὰ ὅμοια ἐκ τῶν Γραφῶν εὑρήσεις.</p>
+<note type="footnote">Reg. xv, 11. 2Gen. viii, 20. 2 Deut. xxxii, 32.</note>
+<note type="footnote">(4·) Ex cod. 534, pag. 24.</note>
+<note type="footnote">(5) Confer huc Nyssenum.</note>
+</div>
+</div>
+<div type="textpart" subtype="section" n="37">
+<pb n="16"/>
+<head>ΚΕΦ. ΛΖ΄.</head>
+ <div type="textpart" subtype="verse" n="10"  corresp="urn:cts:greekLit:tlg0527.tlg001:37.10">
+<p>(7) Στίχ.ι΄. Ἆρά γε ἐλθόντες ἐλευσόμεθα ἐγώ τεκαὶ
+ἡ μήτηρ σου, καὶ οἱ ἀδελφοί σου προσκυνῆσαί
+σοι ἐπὶ τὴν γῆν;</p>
+<p>Σαφῶς ἡ μήτηρ τοῦ Ἰωσὴφ πρὸ τῶν ἐνυπνίων
+ἐτελεύτησεν. Μήποτε οὖν δυνάμεθα τὴν Μαριὰμ καὶ
+τὸν Ἰωσὴφ εἰπεῖν προφητεύεσθαι προσκυνήσειν τῷ
+Χριστῷ;</p>
+</div>
+</div>
+<div type="textpart" subtype="section" n="43">
+<head>ΚΕΦ. ΜΓ΄.</head>
+ <div type="textpart" subtype="verse" n="22"  corresp="urn:cts:greekLit:tlg0527.tlg001:43.22">
+<p>(8) Στίχ. κβ΄. Εἶπε δὲ αὐτοῖς· Ἵλεως ὑμῖν, μὴ φοβεῖσθε.</p>
+<p>Ἔοικεν ὠφεληθῆναι ὁ ἄνθρωπος οὗτος εἰς θεοσέβειαν
+παρὰ τῷ Ἰωσήφ.</p>
+</div>
+</div>
+<div type="textpart" subtype="section" n="46">
+<head>ΚΕΦ. ΜϚ΄.</head>
+ <div type="textpart" subtype="verse" n="34"  corresp="urn:cts:greekLit:tlg0527.tlg001:46.34">
+<p>(9) Στίχ. λδ΄. Ἄνδρες κτηνοτρόφοι ἐσμέν.
+Βδέλυγμα Αἰγυπτίοις πᾶς ποιμὴν προβάτων, ἀλλ᾿
+οὐχ Ἑβραίοις. Εἰ μὲν οὖν ὧς ποιμὴν ἐφέστηκεν ἡμῖν,
+βδέλυγμά ἐστιν Αἰγυπτίοις· εἱ δὲ ὡς μισθωτὸς, τάχς
+καὶ φίλος Αἰγυπτίοις.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

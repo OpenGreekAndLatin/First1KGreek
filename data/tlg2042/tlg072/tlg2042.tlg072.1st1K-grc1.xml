@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Adnotationes in Judices</title>
+    <author>Origen</author>
+    <editor>Charles Vincent Delarue</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg2042.tlg072.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Origenis Opera Omnia</title>
+       <editor>
+        <persName>
+         <name>Charles Vincent Delarue</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+       <imprint>
+        <publisher xml:lang="fre">Imprimerie Catholique</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1857</date>
+       </imprint>
+       <biblScope unit="volume">7</biblScope>
+      </monogr>
+        <series>
+          <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+          Graeca)</title>
+         <biblScope unit="volume">17</biblScope>
+        </series>
+      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n13/mode/2up">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl> 
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fre">French</language>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg072.1st1K-grc1">
+<head>ΩΡΙΓΕΝΟΥΣ ΕΚΛΟΓΑΙ
+ΕΙΣ ΤΟΥΣ ΚΡΙΤΑΣ.</head>
+
+<div type="textpart" subtype="chapter" n="15">
+ <head>ΚΕΦ. ΙΕ΄.</head>
+ <div type="textpart" subtype="verse" n="19" corresp="urn:cts:greekLit:tlg0527.tlg008:15.19">
+<p>(73) Στίχ. ιθ΄. Καὶ ἔῤῥηξεν ὁ Θεὸς τὸ τραῦμα τὸ ἐν
+σιαγόνι, καὶ ἐξῆλθεν ἐξ αὐτοῦ ὕδωρ.</p>
+<p>Ἀντὶ τοῦ· Ἔῤῥηξε τῇ πληγῇ τῆς σιαγόνος τὴν γῆν,
+καὶ ἐξῆλθεν ὕδατα.</p>
+</div>
+</div>
+<div type="textpart" subtype="chapter" n="20">
+ <head>ΚΕΦ. Κ΄.</head>
+ <div type="textpart" subtype="verse" n="21" corresp="urn:cts:greekLit:tlg0527.tlg008:20.21">
+<p>(74) Στίχ. κα΄. Καὶ ἐξῆλθον υἱοὶ Βενιαμίν.
+Τίνος ἕνεκεν ἡττῶνται δικαίως ἐπεξελθόντες; Ἢ
+δηλονότι διὰ προλαβούσας αἰτίας. Καὶ ὁ ψαλμός φησιν·
+Ὅταν λάβω καιρὸν, ἐγὼ εὐθύτητας κρινῶ. Εἶτα dicit :
+μετὰ τὸ ἡττηθῆναι καὶ μίαν καὶ δευτέραν, μετῆλθεν
+ἡ ὀργὴ ἐπὶ τοὺς ἠδικηκότας, νικῶσι δικαίαν δίκην(75).
+Θαυμάσαι δὲ ἄξιον τὸ πλῆθος τῶν Ἰσραηλιτῶν, ὅτι,
+δικαίως τοῖς Βενιαμίταις ἐπελθόντες, καὶ ἡττηθέντες,
+οὐκ ἐνενόησάν τι πονηρὸν κατὰ τοῦ Θεοῦ, ἀλλὰ μᾶλλον
+οὐδὲ ἐπαύσαντο προκλαίοντες, ἕως ὅτε δίκην ἔλαβον
+κατὰ τῶν ἠδικηκότων.</p>
+<p>Οὐ καταμεμφόμενοι τοῦ Θεοῦ εἶπον· Ἀλλὰ ἀπόχρη
+τοῦτο. Τρόπον μαθεῖν ἱκέτευον. Τό Βενιαμὶν λύκος
+ἅρπαξ· πραῒ ἔδεται, καὶ τὸ ἑ. (76) διαδώσει τροφὴν,
+ἐνταῦθα πληροῦται. Καὶ γὰρ πρότεροννικήσας,
+ἔσχατον βρῶμα τοῦ λαοῦ γέγονε.</p>
+<note type="footnote">35 Psal. lxxiv, 3. 36 Gen. xlix, 27.</note>
+<note type="footnote">(71) Cod. 534, pag. 249.</note>
+<note type="footnote">(72) Cod. xv.</note>
+<note type="footnote">(73) Cod. 534.</note>
+<note type="footnote">(74) Cod. xv.</note>
+<note type="footnote">(75) Hactenus et in edit. Quæ sequuntur etiam
+reliquos versus respiciunt.</note>
+<note type="footnote">(76) Forte ἐσπέρας.</note>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

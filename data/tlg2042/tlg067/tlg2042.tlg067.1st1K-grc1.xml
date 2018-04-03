@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+  <fileDesc>
+   <titleStmt>
+    <title xml:lang="lat">Adnotationes in Exodum</title>
+    <author>Origen</author>
+    <editor>Charles Vincent Delarue</editor>
+    <funder>Harvard Library Arcadia Fund</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+     <persName xml:id="DDD">Digital Divide Data</persName>
+     <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Gregory Crane</persName>
+     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Matt Munson</persName>
+     <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Annette Gessner</persName>
+     <resp>Project Assistant (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Thibault Clérice</persName>
+     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+    </respStmt>
+    <respStmt>
+     <persName>Bruce Robertson</persName>
+     <resp>Technical Advisor</resp>
+    </respStmt>
+   </titleStmt>
+   <publicationStmt>
+    <authority>Harvard College Library</authority>
+    <idno type="filename">tlg2042.tlg067.1st1K-grc1.xml</idno>
+    <availability>
+     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
+    </availability>
+    <date>2018</date>
+    <publisher>Harvard College Library</publisher>
+    <pubPlace>United States</pubPlace>
+   </publicationStmt>
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Origenis Opera Omnia</title>
+       <editor>
+        <persName>
+         <name>Charles Vincent Delarue</name>
+        </persName>
+       </editor>
+       <author ref="urn:cts:greekLit:tlg2042">Origen</author>
+       <imprint>
+        <publisher xml:lang="fre">Imprimerie Catholique</publisher>
+        <pubPlace>Paris</pubPlace>
+        <date>1857</date>
+       </imprint>
+       <biblScope unit="volume">7</biblScope>
+      </monogr>
+        <series>
+          <title level="s" xml:lang="lat">Patrologiae cursus completus (series
+          Graeca)</title>
+         <biblScope unit="volume">17</biblScope>
+        </series>
+      <ref target="https://archive.org/stream/patrologiae_cursus_completus_gr_vol_017#page/n13/mode/2up">The Internet Archive</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+   <p>Text encoded in accordance with the latest EpiDoc standards</p>
+   <refsDecl n="CTS">
+    <cRefPattern n="verse" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+   </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+   <langUsage>
+    <language ident="fre">French</language>
+    <language ident="grc">Greek</language>
+    <language ident="lat">Latin</language>
+   </langUsage>
+  </profileDesc>
+  <revisionDesc>
+   <change/>
+  </revisionDesc>
+ </teiHeader>
+<text>
+<body>
+
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2042.tlg067.1st1K-grc1">
+<head>ΩΡΙΓΕΝΟΥΕ ΕΚΛΟΓΑΙ
+ΕΙΣ ΤΗΝ ΕΞΟΔΟΝ.</head>
+
+<div type="textpart" subtype="chapter" n="15">
+ <head>ΚΕΦ. ΙΕ΄.</head>
+ <div type="textpart" subtype="verse" n="25" corresp="urn:cts:greekLit:tlg0527.tlg002:15.25">
+<p>Στίχ. κε΄. Ἐκεῖ ἔθετο αὐτῷ ὁ Θεὸς δικαώματα καὶ
+κρίσεις, καὶ ἐκεῖ αὐτὸν ἐπείραζε.</p>
+<p>Ἐπʼ ὠφελείᾳ πειράζει ὁ Θεός. Ἀπείραστος γάρ
+κακῶν. Ἀλλὰ διὰ τοῦτο πειράζει, ἵνα ἐὰν
+ὑπακούσωσιν αὐτῷ, τύχωσιν ἀγαθῶν, καὶ ἀπαλλα
+γῶσι κακῶν.</p>
+</div>
+
+</div>
+<div type="textpart" subtype="chapter" n="20">
+ <head>ΚΕΦ. Κ΄.</head>
+ <div type="textpart" subtype="verse" n="4" corresp="urn:cts:greekLit:tlg0527.tlg002:20.4">
+<p>Στίχ. δ΄. (10) Οὐ ποιήσεις σεαυτῷ εἴδωλον.
+Ἄλλο εἴδωλον, καὶ ἕτερον ὁμοίωμα. Ὁμοίωμα γάρ
+ἐστιν, ἐὰν ποιῇς ἰχθύος ἢ τετραπόδου, ἢ θηρίου, ἢ
+διὰ τεχνουργίας ἢ διὰ ζωγραφίας ὁμοίωμα· εἴδωλον
+δὲ, ὅσα ἀνατυποῦσα ψυχὴ ποιεῖ ἐξ οὐχ ὑπαρχόντων
+πρωτοτύπως· οἷον, ἀναμεμιγμένον τι ζῶον ἀπὸ ἀνθρώπου
+καὶ ἵππου.</p>
+<p>Στίχ. δ΄ Ὅσα ἐν τῷ οὐρανῷ ἄνω, καὶ ὅσα ἐν τῇ
+γῇ κάτω. καὶ ὅσα ἐν τοῖς ὕδασιν ὑποκάτω τῆς
+γῆς. Οὐ προσκυνήσεις αὐτοῖς, οὐδὲ μὴ λατρεύσεις
+αὐτοῖς.</p>
+<p>Ἄλλο προσκυνεῖν, καὶ ἄλλο λατρεύειν. Ὁ μὲν γὰρ
+ἐξ ὅλης ψυχῆς δουλεύων τούτοις οὐ μόνον προσκυνεῖ.
+ἀλλὰ καὶ λατρεύει· ὁ δὲ καθυποκρινόμενος, καὶ δια
+τὰ ἔθη ποιῶν, οὐ λατρεύει μὲν, προσκυνεῖ δέ. Εὑρήσεις
+δὲ τοιούτους ἐν τοῖς Ἀριθμοῖς χαριζομένους γυναιξὶ,
+καὶ εἴδωλα προσκυνοῦντας.</p>
+<note type="footnote">(10) Edidit Montfauc. in Hex. Est in cod. 534,
+p. 100.</note>
+</div>
+
+</div>
+<div type="textpart" subtype="chapter" n="28">
+<pb n="17"/>
+ <head>ΞΕΦ. ΚΗ΄.</head>
+ <div type="textpart" subtype="verse" n="30" corresp="urn:cts:greekLit:tlg0527.tlg002:28.30">
+<p>Στίχ. λ΄. Ἐπειδὴ προσήκει τὸν ἀρχιερέα καὶ
+ἔμπροσθεν καὶ ὄπισθεν, καθάπερ ἀσπίδα, περιφέρν
+τὴν προφυλακετικὴν ἐπιμέλειαν, μήπου τις ἐναντία
+βουλὴ τῶν τῆς πονηρίας πνευμάτων τὸ λογικὸν
+τρώσειεν, καὶ τὸ δόκιμον τῶν κρίσεων συνταράξῃ,
+καὶ τὴν δήλωσιν καὶ τὴν ἀλήθειαν τῇ ἐπιμιξίᾳ
+τῆς κακίας ἀποστῆναι ποιήσειεν.</p>
+</div>
+
+</div>
+<div type="textpart" subtype="section" n="31">
+ <head>ΚΕΦ. ΛΑ΄.</head>
+ <div type="textpart" subtype="verse" n="1" corresp="urn:cts:greekLit:tlg0527.tlg002:31.1">
+<p>Στίχ. α΄. Καὶ ἐλάλησε Κύριος πρὸς Μωϋσῆν.
+Ἐν ὅλαις τεσσαράκοντα ἡμέραις δοῦναι τὸν νόμον
+κατεῖχε τὸν Μωῦσῆν (11) ὁ πάνσοφος Θεὸς, καίτοι
+δυνατῶς ἔχων ἐν τρισὶν ἡμέραις δοῦναι τὸν Νόμον.
+Ἀλλʼ ἵνα τὸ κεκρυμμένον τῆς ἀσεβείας ἐν τῷ βάθει
+τῆς καρδίας τῶν Ἰουδαίων ὁ χρόνος τῆς ἀπουσίας
+Μωῦσέως ἐλέγξῃ.</p>
+</div>
+</div>
+
+</div>
+</body>
+</text>
+</TEI>
