@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Geographiae Informatio</title>
+                <author>Agathemerus</author>
+                <editor xml:lang="lat">Samuel Tennulius</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                     <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - 2018</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig), 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig), 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                
+                <idno type="filename">tlg0090.tlg001.opp-lat4.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2018</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+
+            <sourceDesc>
+                <listBibl xml:lang="lat">
+                    <biblStruct>
+                        <monogr>
+                            <title xml:lang="grc">ΑΓΑΘΗΜΕΡΟΥΣ τοῦ Ὄρθωνος Ὑποτυπώσεων Γεωγραφίας ἐν
+                                ἐπιτομῇ ΒΙΒΛΊΑ ΔΎΟ.</title>
+                            <title>AGATHEMERIS Orthonis filii Compendiariæ Geographiæ
+                                expositionum Libri Duo.</title>
+                            <title type="subtitle">Cura et Interpretatione Samuelis Tennulii</title>
+
+                            <editor ref="http://viaf.org/viaf/102332296">
+                                <persName>
+                                    <name xml:lang="lat">Samuel Tennulius</name>
+                                    <addName xml:lang="dut">Samuel Ten Nuyl</addName>
+                                </persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0090"
+                                >Agathemerus </author>
+
+                            <imprint>
+                                <publisher>Apud Joannem Ravesteinium</publisher>
+                                <pubPlace>Amsterdam</pubPlace>
+                                <date>1671</date>
+                            </imprint>
+
+
+
+                        </monogr>
+
+                        <ref
+                            target="http://www.mdz-nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:de:bvb:12-bsb11088603-0"
+                            >Bayerische Staatsbibliothek</ref>
+
+                    </biblStruct>
+                </listBibl>
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+            <p>Text encoded in accordance with the latest EpiDoc standards</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the
+                CTS/CITE Architecture.</p>
+
+            <refsDecl n="CTS">
+                <cRefPattern n="section" matchPattern="(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts chapters and sections</p>
+                </cRefPattern>
+                <cRefPattern n="chapter" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts chapters</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="lat">Latin</language>
+                <language ident="grc">Greek</language>
+                <language ident="dut">Dutch</language>
+            </langUsage>
+        </profileDesc>
+
+        <revisionDesc>
+            <change who="Chiara Palladino" when="2018-03-21">Created the XML file and made it CTS compliant</change>
+            
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <div type="translation" n="urn:cts:greekLit:tlg0090.tlg001.opp-lat4" xml:lang="lat">
+
+                <head>
+                    <title type="main" xml:lang="grc">ΑΓΑΘΗΜΕΡΟΥΣ τοῦ Ὄρθωνος Τῆς Γεωγραφίας
+                        ὑποτυπώσεων ἐν ἐπιτομῇ Πρὸς Φίλωνα</title>
+                    <title type="subtitle" xml:lang="grc">ΒΙΒΛΙΟΝ ΠΡΩΤΟΝ.</title>
+                    <title type="main">AGATHEMERIS Orthonis filii Compendiariæ
+                        Geographiæ expositionum ad Philonem</title>
+                    <title type="subtitle">LIBER PRIMUS.</title>
+                    <title type="subtitle">Cura et interpretatione Samuelis
+                        Tennulii</title>
+                </head>
+
+                <pb n="1"/>
+
+                <head>
+                    <title type="main" xml:lang="grc"> ΑΓΑΘΗΜΕΡΟΥΣ τοῦ Ὄρθωνος Τῆς Γεωγραφίας
+                        ὑποτυπώσεων ἐν ἐπιτομῇ Πρὸς Φίλωνα </title>
+                    <title type="subtitle" xml:lang="grc">ΒΙΒΛΙΟΝ ΠΡΩΤΟΝ.</title>
+                    <title type="main">AGATHEMERIS Orthonis filii Compendiariarum
+                        Geographiæ expositionum ad Philonem</title>
+                    <title type="subtitle">LIBER PRIMUS.</title>
+                    <title type="subtitle">Cura et interpretatione Samuelis
+                        Tennulii.</title>
+                </head>
+
+
+                <div type="textpart" subtype="chapter" n="1">
+                    <milestone unit="section" n="1"/>
+                    <div type="textpart" subtype="section" n="1">
+                        <head><title type="subtitle">
+                                <supplied reason="explanation"> De veterum Geographia.
+                                    Caput I. </supplied>
+                            </title></head>
+
+                        <p> Anaximander Milesius, Thaletis auditor, sustinuit omnium primus situm
+                            orbis terrarum in tabula pingere: Post quem Hecatæus Milesius, vir multæ
+                            peregrinationis, idem <fw type="catchword">argu</fw></p>
+                        <pb n="2"/>
+                        <p>argumentum tam accurate tractavit, ut homines fuerint rapti in
+                            admirationem. Nam Hellanicus Lesbius, quamquam alias doctissimus, minus
+                            concinne ista tradidit. Deinde Damastes Citticensis, qui sua ex Hecatæo
+                            descripsit, littoream navigationem composuit. Mox Democritus et Eudoxus
+                            aliique nonnulli terræ circuitiones ac circumnavigationes composuerunt.
+                        </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="2">
+                        <p> Veteres ergo orbem habitabilem effigiarunt rotundum, complexum in sui
+                            medio Græciam, in cujus centro statuunt Delphos, quos vocarunt umbilicum
+                            terrarum. Sed Democritus, cujus multa scientiæ experimenta exstant,
+                            primus affirmavit terram esse oblongam; ita ut longitudo ad Latitudinem
+                            habeat rationem sesquialteram. cui sententiæ etiam Dicæarchus
+                            Peripateticus accessit. Eudoxus autem dixit longitudinem ad latitudinem
+                            esse in ratione dupla; sed Eratosthenes in majore quam dupla. Crates
+                            semicirculo assimilavit: Hipparchus similem Trapezio, alii caudæ
+                            belluinæ, Posidonius Stoïcus fundæ tradidit, cujus media latitudo ab
+                            Austro in Boream pateat, angustior pars circa orientem et occidentem
+                            procedat, sic tamen ut latissima sit, qua India pertinet ad Eurum. <fw
+                                type="catchword">Ter</fw><pb n="3"/>
+                        </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="3">
+
+                        <p>Termini continentium sunt: Europæ quidem atque Africæ columnæ Herculis;
+                            Africæ et Asiæ Nilus, vel, ut alii volunt, Isthmus, qui a palude
+                            Sarbonide ad sinum Arabicum porrigitur: Asiæ vero et Europæ terminum
+                            antiqui dixerunt Phasin fluvium, et Isthmum, qui a Sarbo ad mare Caspium
+                            extenditur; postea autem recentiores tradiderunt Mæotidem paludem et
+                            fluvium Tanaïn. </p>
+                    </div>
+                    <milestone unit="section" n="2"/>
+                    <div type="textpart" subtype="section" n="4">
+
+                        <p>Continentes autem appellantur Græca voce Epiri, quia videlicet sunt
+                            inexploratæ magnitudinis. Asia dicta est ab <foreign xml:lang="grc"
+                                >ἄσσον</foreign>, quod propinqua sit ex Europa in illam euntibus,
+                            sive terrestri itinere, sive navali secundum insulas ordine sitas,
+                            quales sunt Eubœa, Andrus, Tenus, Myconos, Icaria, Samos, Mycale. Europa
+                            dicta est a vento Euro. Lybiæ vocabulum Græcis plane latet, sed a populo
+                            nobili inter Phœnices venit, et significat leones. Oceanus dictus ab
+                            æstuum terras undique pulsantium concitatione.</p>
+
+
+                    </div>
+                    <milestone unit="section" n="3"/>
+                    <div type="textpart" subtype="section" n="5">
+                        <p> Tandem Dicæarchus definit orbem terrarum non aquis, sed ductu lineæ
+                            cujusdam simpliciter rectæ, a columnis Herculis per Sardiniam, Siciliam,
+                            Peloponnesum, Ioniam, Cariam, Lyciam, Pamphyliam, Ciliciam, et mon <fw
+                                type="catchword">tem</fw></p>
+                        <pb n="4" break="no"/>
+                        <p>tem Taurum, et inde usque ad Imaum actæ: Secundum quæ loca alias orbis
+                            partes Boreales, alias Australes nominat.</p>
+                    </div>
+                </div>
+
+
+                <div type="textpart" subtype="chapter" n="2">
+                    <milestone unit="section" n="4"/>
+                    <div type="textpart" subtype="section" n="6">
+                        <head type="title">
+                            <supplied reason="explanation">De Ventis. Caput II.
+                            </supplied>
+                        </head>
+
+
+                        <p>Venti autem flant ex diversis partibus, ab Æquinoctiali nimirum ortu
+                            Apeliotes, ab occasu Æquinoctiali Zephyrus; a meridie Notus, a
+                            Septentrione Aparctias. Rursus ab æstivi Tropici ortu spirat Cæcias;
+                            dein ab ortu Æquinoctiali (ut dictum modo) Apeliotes, ab hyberno denique
+                            Eurus.</p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="7">
+                        <p> Rursus secundum solem occidentem, ab occasu hiberno provenit Libs,
+                            deinde ab occasu Æquinoctiali dictus jam Zephyrus, ab occasu vero æstivo
+                            Argestes, alias Olympias dictus. Tantem Notus et Aparctias adversi
+                            flant; ita ut venti omnes sint octo. Timosthenes autem, qui conscripsit
+                            marium circumnavigationes, tradit duodecim ventos, quia inter Aparctiam
+                            et Cæciam medium ponit Boream, inter Eurum et Notum Phœnicem, qui et
+                            Euronotus vocatur; inter Notum et Libem Leuconotum, qui alias Libonotus
+                            dicitur, inter A <fw type="catchword">par</fw></p>
+                        <pb n="5" break="no"/>
+                        <p>parctiam et Argesten Thrascian, quem accolæ istius oræ etiam Circium
+                            appellant. Tradit et quæ gentes unicuique ventorum plagæ sint subjectæ;
+                            nimirum Bactriani habitant sub Apeliote, Indi sub Euro, sub Phœnice mare
+                            Rubrum et Æthiopia jacet; sub Noto altera Æthiopia, ultra Ægyptum sita.
+                                <milestone unit="section" n="5"/> Ad Leuconotum collocat Garamantas,
+                            qui supra Syrtes colunt, ad Libem Æthiopas, et omnes occidentales supra
+                            Mauros; ad Zephyrum vero columnas Herculis, unde Africa et Europa
+                            incipiunt; ad Argestem Iberiam, quæ nunc vocatur Hispania; Ad Thrascian
+                            Scythas supra Thraciam sitos; Ad Borean Pontum Euxinum, paludem Mæotin
+                            ac Sauromatas; ad Cæciam denique Mare Caspium et Sacas. </p>
+                    </div>
+                </div>
+
+
+                <div type="textpart" subtype="chapter" n="3">
+                    <milestone unit="section" n="6"/>
+                    <div type="textpart" subtype="section" n="8">
+                        <head type="title">
+                            <supplied reason="explanation">Circumnavigatio marium. Caput
+                                III</supplied>
+                        </head>
+                        <p>Syrtium autem altera major quinque millibus stadiorum ambitur, minor
+                            mille et sexcenta continet. Fauces vero maris Adriatici, quod nonnulli
+                            vocant Ionium pelagus, patent in latitudinem 1700 stadia, a promontorio
+                            Japygiæ ad montes Ceraunios Epiri. <fw type="catchword">Ægæum </fw><pb
+                                n="6"/>
+                        </p>
+
+
+
+                    </div>
+
+                    <div type="textpart" subtype="section" n="9">
+
+                        <p>Ægæum mare sequitur Hellespontus, ad Abydum et Sestum desinens:
+                            Hellespontum excipit Propontis usque ad Chalcedonem et Byzantium patens,
+                            ubi rursum in angustias contrahitur, a quibus Pontus Euxinus incipit,
+                            post quem jacet Palus Mæotis. <milestone unit="section" n="7"/> Rursum
+                            si incipias a confiniis Africæ et Europæ, erit Ibericum seu Hispanicum
+                            mare, quod a Columnis Herculis pertinet ad montem Pyrenæum, inde
+                            Ligusticum ad fines usque Hetruriæ. Huic adjacet Sardoum supra Sardiniam
+                            versus Africam inferne vergens. Nam a sinistra Tyrrhenum ab extrema
+                            Liguria porrigitur usque ad Siciliam. Deinde sequitur Africanum,
+                            Creticum et Siculum, tum et Ionium cum Adriatico; quod ipsum a Siculo
+                            mari refunditur. Postea se offert Cortinthiacus sinus, qui et Alcyonium
+                            mare vocatur. <milestone unit="section" n="8"/> Inter Sunium et Scyllæum
+                            promontoria jacet Saronicum pelagus, hinc sequitur Myrtoum et Icarium,
+                            quod continet insulas Cycladas; Inde transitur in Carpathium, Pamphylium
+                            atque Ægyptium, super autem Icarium statim est Ægæum.</p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="10">
+
+
+
+                        <p> Potest autem Europa ab ostiis Tanais fluvii ad columnas Herculis
+                            præternavigari stadiis 69709; <fw type="catchword">Africa</fw></p>
+                        <pb n="7"/>
+                        <p>Africa vero ab oppido Tingi usque ad ostium Nili Canobicum stadiis 29252.
+                            Asiæ omnis ora stringitur a Canobo ad ostia Tanais fluvii per stadia
+                            40111, littoribus omnibus et sinubus una comprehensis: Ita ut littoralis
+                            omnis ora universi nostri orbis, qua internum mare accolitur, conficiat
+                            summam stariodum 139072: si tamen Mæotis palus, cujus ambitus est
+                            stadiorum 9000, connumeretur: Ejus ostium, quo in Euxinum derivatur,
+                            vocatur Bosporus Cimmerius, longus est stadia 78. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="11">
+
+                        <p> Euxinus vero Pontus ambitur stadiis 23083. coitque in angustias freti,
+                            quod Thracius Bosporus appellatur, sex stadia longus, quem Darius ponte
+                            junxit subitario, cum adversus Scythas expeditionem suscepisset. </p>
+                    </div>
+
+
+                    <milestone unit="section" n="9"/>
+                    <div type="textpart" subtype="section" n="12">
+
+                        <p> Mare Persicum, quod est valde rotundum, et ostium suum aperit inter
+                            Carmaniam et Arabiam, habet circuitum stadiorum 20000. Ostium vero ipsum
+                            inter Arabiam et Carmaniam patet stadia 400.</p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="13">
+                        <p> Hyrcanum vero, quod et Caspium mare dicitur, lunato flexu sinuatum, et
+                            ut aliis placet, oblongum, extenditur in stadia 22000, fauces
+                            trajiciuntur stadiis quatuor. <fw type="catchword">Ara</fw>
+                        </p>
+
+                    </div>
+
+                    <div type="textpart" subtype="section" n="14">
+                        <pb n="8"/>
+                        <p> Arabicus sinus, qui est angustior et oblongior, initium capit ab Heroum
+                            oppido, præterit oram Trogloditicam, ad Ptolemaïdem oppidum usque, quod
+                            propter venationes est conditum, habet stadiorum 9000 longitudinem
+                            interjectam. <milestone unit="section" n="10"/> Hujus sinus fauces ad
+                            oppidum Diren latæ stadia non amplius 60: a Ptolemaïde ad hunc locum
+                            navigatur stadiis 6500. Reliquum maris rubri est ultra Diren ad usque
+                            Oceanum octo millia stadiorum extentum, et ibi navigari desinit. Sinus
+                            vero latus, quod Arabiæ prætenditur a recessu Elanitico ad eandem Diren,
+                            est stadiorum 14000. Porro ipsa Arabia ad rubrum mare exporrigitur, et
+                            extenditur per longitudinem 12000 stadiorum. </p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="4">
+                    <milestone unit="section" n="11"/>
+                    <div type="textpart" subtype="section" n="15">
+                        <head type="title">
+                            <supplied reason="explanation">De Longitudine et Latitudine
+                                orbis habitati. Caput. IV.</supplied>
+                        </head>
+                        <p> Longitudo vero orbis terrarum concipitur a fluvio Gange ad Gades esse
+                            stadiorum 68549 hoc modo. A Gange ad Myriandrum urbem Syriæ, in sinu
+                            Issico positam, sunt stadia 41725; quæ summa sic colligitur. A Gange ad
+                            Indi fluminis ostia <fw type="catchword">sunt</fw></p>
+                        <pb n="9"/>
+                        <p>sunt 16000 stadia: ab Indo ad portas Caspias 15300, hinc ad Euphratem
+                            10050; inde ad Myriandrum restantia sunt stadia 375; et ita conficitur
+                            summa illa stadiorum 41725.</p>
+                    </div>
+
+                    <milestone unit="section" n="12"/>
+                    <div type="textpart" subtype="section" n="16">
+                        <p> Jam vero a Myriandro usque Gades computamus stadia 26820, hoc modo:
+                            Myriandro proxima navigatione solvitur in Cyprum ejusque primas insulas,
+                            quas Cleidas (quali dixeris claves) appellant, stadiis 1400: Inde abest
+                            ejusdem insulæ promontorium ultimum Acamas stadiis 3300. Hinc in
+                            Chelidonias insulas per mare Pamphylium stadia sunt 1300. Tum ad oppidum
+                            Lyciæ Patara 800. dein ut sis e regione Rhodi insulæ, numerantur 700.
+                            Postea Carpathium mare navigatur stadiis 140, donec Astypalæam
+                            pervenias. Abest inde Tænarus Peloponnesi promontorium stadiis 1450, et
+                            ab hoc Pachynus Siciliæ 4000, unde Lilybæum ejusdem insulæ oppidum
+                            distat navigatione maris Lybici stadia 1520. Ab hoc loco per mare
+                            Tyrrenum abest Caralis Sardiniæ oppidum stadia 2800; unde Gades tenditur
+                            præternavigatis insulis Gymnesiis seu Balearibus 10000. stadiorum cursu.
+                            Ad extremum Gadibus præter Sacrum promontorium navigatur in Artabrorum
+                            portum stadiis 3932. Ita fiunt in universum 72477. stadia. <fw
+                                type="catchword">In</fw></p>
+
+
+                    </div>
+
+                    <div type="textpart" subtype="section" n="17">
+                        <pb n="10"/>
+                        <p> Alia via, quæ certior itinere terreno maxime patet. A Gange ad Euphratem
+                            amnem stadia 41350. Ab Euphrate ad oppidum Cappadociæ Mazaca 2550. A
+                            Mazacis vero per mediam Phrygiam submontanam et magnam Cariam recta
+                            Ephesum 3320. Ita colliguntur a Gange Ephesum usque stadia in universum
+                            47220. Ab Epheso per Ægæum pelagus usque Delum sunt stadia 1600. Hinc ad
+                            Isthmum Corinthium sunt 1700 omnino. Ab Isthmo per sinum Corinthiacum
+                            Patras Achaiæ oppidum stadia interjacent 720. Abinde Leucadem 700. mox
+                            hinc in Corcyram tantundem. A Corcyra usque ad montes Epiri, quos
+                            Acroceraunia vocant, stadia sunt 1060. Inde Brundusium 700. Unde
+                            terrestri itinere Romam proficiscenti restant 2880. <milestone
+                                unit="section" n="13"/> Roma usque ad Alpes et vicum Scingomagum, de
+                            sub ipsis Alpibus positum, stadia sunt 4152. Unde per Galliam ad
+                            Pyrenæos montes et oppidum Illiberim numerantur <gap reason="omitted"
+                                extent="unknown">
+                                <desc>lacuna stated by the editor but restored by Karl Müller with
+                                    excerpts from the indirect tradition.</desc>
+                            </gap>
+                            <milestone unit="section" n="14"/> Hinc usque Gades secundum mansiones
+                            computant 2651. in quam insulam trajectus est stadiorum 60. Omnis ergo
+                            numerus ab extremo Gange ad Gades colligitur consurgere in 71560 stadia,
+                                <fw type="catchword">Lati</fw>
+                        </p>
+                    </div>
+                    <milestone unit="section" n="15"/>
+                    <div type="textpart" subtype="section" n="18">
+                        <pb n="11"/>
+                        <p> Latitudo terræ, qua modo habitatur, currit ab extremo Æthiopico oceano
+                            ad Æquatorem primum in stadia 8000, ac rursum in Meroën altera totidem:
+                            Inde Alexandriam in 10000 stadia. Ab Alexandria vero in ostium Tanais
+                            amnis stadiorum 18056 summa procedit. Nam ab ostio Tanais ulteriora
+                            versus septentiones incomperta sunt. Hæc autem dinumeratio sic
+                            instituitur. Ab Alexandria ad Lindum insulæ Rhodi oppidum stadia
+                            definiuntur 4500. Sed relicta Rhodo ad dextram in Thoantium Carpathi
+                            promontorium navigatur stadiis 400. Inde in insulam Telum stadiis 560.
+                            Hinc ad Lacterem insulæ Cô promontorium 320 stadiis curritur. Ad ejusdem
+                            insulæ promontorium alterum, quod Drepanum vocant, 100. <milestone
+                                unit="section" n="16"/> Deinde ad Acriten insulam stadia sunt 230,
+                            moxque ad Corassias insulas 100, a quibus abest Ampelos insulæ Sami
+                            promontorium stadiis 30. Abinde ad Ægæum Argenon Lesbi promontorium Ægæo
+                            jam mari navigatur stadiis 800, hunc in modum computatis. Abest Samo
+                            Erythræum Corcyræum stadiis 270, inde Phlium promontorium Chii 50; unde
+                            ad Melanea promontorium Lesbi sunt 450. Deinceps ad Sigrium ejus Lesbi
+                            promon <fw type="catchword">torium</fw></p>
+                        <pb n="12" break="no"/>
+                        <p>torium alterum 500 stadia computantur. Inde ad insulam Tenedum sunt 450,
+                            a qua 100 sunt ad Sigæum: Hinc vero 2500 ad os Ponti, tum Carambin 2800;
+                            mox ad os Mæotidis Paludis 250, ac deinceps in Tanaim 2670.</p>
+                    </div>
+                    <milestone unit="section" n="17"/>
+
+                    <div type="textpart" subtype="section" n="19">
+                        <p>Aliter etiam a Rhodo cursus hic intelligitur, in Gnidum insulam numeratis
+                            stadiis 700. In Cô insulam 200. Samum deinde 800. Abest hinc Chios
+                            stadia 750. Ultra hanc Mitylene 520. Sequitur Tenedos post stadia 350,
+                            mox Sigeum 100. Os Ponti abest inde stadiis 2500. Et Carambis hinc post
+                            2800 stadia. Jam ad Os Mæotidis paludis sunt 2500, ac deinceps ad Tanaim
+                            fluvium 2200. Summa stadiorum ab Alexandria in Tanaim fit 18620. </p>
+                    </div>
+                </div>
+
+                <div type="textpart" subtype="chapter" n="5">
+                    <milestone unit="section" n="18"/>
+                    <div type="textpart" subtype="section" n="20">
+                        <head type="title">
+                            <supplied reason="explanation"> Insularum dimensio. Caput.
+                                V.</supplied>
+                        </head>
+
+
+                        <p>Restat, ut dicamus de insulis et singularum ambitu, quatenus eæ nobis
+                            sunt cognitæ, prout accepimus ab Artemidoro, Menippo et aliis classicis
+                            auctoribus. <milestone unit="section" n="19"/> Gades in Hispaniæ ora
+                            longa est stadia 108, lata tantum 16. Fre <fw type="catchword"
+                            >tum</fw></p>
+                        <pb n="13" break="no"/>
+                        <p>tum autem columnarum Herculis illi proximum, qua angustissimum est, patet
+                            80 stadia. <milestone unit="section" n="20"/> Præterea in mari Hispanico
+                            jacent insulæ, ut duæ Pithyusæ, quarum major et habitata longa est
+                            stadia 300; Minor 100 tantum. Gymnesiarum vero, quæ a Carthaginiensibus
+                            vocantur Baleares, quasi dicerent funditorias (Nam funditores hoc nomine
+                            appellantur) major longa est stadia 1200, lata 400. minor in stadia 300.
+                            extenditur. Post has Stœchades sequuntur, quæ, quia in directum jacent,
+                            suo nomine indicant ordinem, et urbibus Massiliensium sunt oppositæ:
+                            Harum tres sunt majores; minores duæ proximæ Massiliæ. Insula Sardinia
+                            refert plantam pulli equini, in medio sui cava, longa 200 stadia. Cyrnus
+                            (quam Latini vocant Corsicam) adjacet Sardiniæ, vilior multo illa,
+                            brevior paulo minus dimidio; in longitudinem patet stadia <gap
+                                reason="omitted" extent="unknown"/>
+                            <milestone unit="section" n="21"/>Ex Populonio Hetruriæ promontorio in
+                            Sardiniam ut et in Corsicam vela dimittuntur trajectu stadiorum 2200.
+                            Siciliæ ambitus secundum Timosthenem est 4746 stadiorum, habens figuram
+                            triangularem, <fw type="catchword">cujus</fw></p>
+                        <pb n="14"/>
+                        <p> cujus latera sunt inæqualia; a Peloro promontorio in Italiam trajectus
+                            est undecim stadiorum: latera ejus sunt hæc, a Peloro ad Pachynum
+                            stadiorum 1037. a Pachyno ad Lilybæum 1600. Et juxta Timosthenem a
+                            Lilybæo rursum in Peloriadem oram stadia 1700. A Lilybæo in Clypeam
+                            Africæ oppidum trajectus patet stadia 1600.</p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="21">
+                        <p> Insula Cercina habet longitudinem stadiorum 70. Et ubi angustissima est,
+                            latitudinem 40. Jacet e regione urbis Thenarum, sitæ in continente
+                            Africæ juxta initium Syrtis minoris: Adjacet vero Cercinæ Cercinitis
+                            insula ponte conjuncta, eademque longa stadia 40, et lata 25.</p>
+                    </div>
+
+
+                    <milestone unit="section" n="22"/>
+                    <div type="textpart" subtype="section" n="22">
+
+
+
+                        <p>A Cercina in insulam Meningem, <hi rend="italic">Lotophagitim</hi> olim
+                            appellatam, solvitur velificatione stadiorum 600, quantum etiam Syrtis
+                            minoris ostium dicitur patere. Meninx vero longa est stadia 600, lata
+                            180: Circa hanc maximæ maris æstuantis reciprocationes contingunt. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="23">
+                        <p> Cephallenia insula habet quatuor urbes, longitudinem stadiorum
+                                400.<milestone unit="section" n="23"/> Sunt quoque in Adriatico mari
+                            insulæ propter oram Illyrici, quarum maxime insignes sunt Is <fw
+                                type="catchword">sa</fw></p>
+                        <pb n="15" break="no"/>
+                        <p>sa, et Corcyra Melæna cognominata, Pharus dein et Melita, quarum
+                            dimensiones non habeo compertas.</p>
+                    </div>
+                    <milestone unit="section" n="24"/>
+                    <div type="textpart" subtype="section" n="24">
+                        <p>Omnis Peloponesus, si connumeres etiam ejus omnes sinus, circumnavigatur
+                            stadiis 8627: quod si sinus prætereas, ambietur stadiis 400. Longitudo
+                            ejus a Malea promontorio ad mare Ægæum est stadiorum 1400, Platani folio
+                            similis, quia magnis sinibus in angulosos recessus dispescitur;
+                            coarctatur tandem in angustias Isthmi Corinthiaci lati 40 stadia.
+                                <milestone unit="section" n="25"/> A sinu Corinthio et Saronico jam
+                            mari in Scyllæum Peloponnesi promontorium vehentibus illinc sinistrorsum
+                            objacet Calauria insula Neptuno sacra. Hinc sequitur sinus Hermionicus.
+                            Inde se aperit sinus Argolicus usque ad promontorium Maleæ, quod
+                            longissime in mare procurrit: Dein post Maleam jacet dextrorsum sinus
+                            Laconicus usque ad Tænari promontorium patens; Nam Tænarus a sinistra
+                            terminat sinum Messeniacum, ut eundem a dextra finiunt extrema Acritæ.
+                                <milestone unit="section" n="26"/> Postea in mare prominet
+                            promontorium Ichthys (juxta quod Zacynthus objacet) et alterum
+                            promontorium Chelonates: postremum vero est Araxus, situm <fw
+                                type="catchword">ex</fw></p>
+                        <pb n="16"/>
+                        <p> ex adverso Acarnaniæ. Inde incipit sinus Corinthiacus effundi conclusus
+                            ostio septem tantum stadia lato, inter Toriasum Peloponnesi et
+                            Antirrhium Locridis promontoria. Præterea a Tænaro Peloponnesi
+                            promontorio in Phycuntem Africæ urbem trajicitur 3000 stadiis. </p>
+                    </div>
+                    <milestone unit="section" n="27"/>
+                    <div type="textpart" subtype="section" n="25">
+                        <p>Insula Ægina ex adversum Atticam sita, oblonga est, et in stadia 160.
+                            extenditur. Salamis quoque in hoc tractu habet Longitudinem 70.
+                            stadiorum. Ceus longa est 120. stadia. Inter Cycladas insulas prima est
+                            Naxus, quare etiam vocatur <hi rend="italic">Minor Sicilia</hi>: Hinc ad
+                            dextram Sporades insulæ sunt sitæ. Eubœa ponte cum Bœotia jungitur;
+                            prætexitur Bœotiæ, Phocidi, Locris, et altera sui parte aliquantum ipsi
+                            etiam Atticæ. Est enim longa, ideoque Macris appellatur ob longitudinem,
+                            quæ est 1700 stadiorum.</p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="26">
+                        <p>At vero Creta proxime ad Maleam Peloponnesi promontorium accedit; suo
+                            ambitu stadia implet 4700, longitudine 2300. Nam plurimum de longitudine
+                            occupat Cythera insula inter Cretum et oram Laconicam medium tenet.
+                                <milestone unit="section" n="28"/> Cyprus habet figuram similem
+                            tergo bovis, et circumna <fw type="catchword">vigatur</fw></p>
+                        <pb n="17" break="no"/>
+                        <p>vigatur stadiis 3420, longa est 1300. Ab hujus promontorio Papho flante
+                            Borea trajicitur Alexandriam spatio stadiorum 3800.<milestone
+                                unit="section" n="29"/> Insula Rhodus circuitur stadiis 1300. Cos
+                            550 cingitur. Samos suum ambitum 630 definit. Icaria confragosa undique
+                            et asperis vallata rupibus clauditur 300. Chius in circuitu continet
+                            640, Lesbus 1100 ipsa stadia. </p>
+                    </div>
+                </div>
+
+            
+
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Geographiae Informatio</title>
+                <author>Agathemerus</author>
+                <editor>Aubrey Diller</editor>
+                <funder>Harvard Library Arcadia Fund</funder>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <persName xml:id="DDD">Digital Divide Data</persName>
+                    <resp>Corrected and encoded the text</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Crane</persName>
+                    <resp>Editor-in-Chief, Perseus Digital Library</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matt Munson</persName>
+                    <resp>Project Manager (University of Leipzig), 2016 - 2018</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Annette Gessner</persName>
+                    <resp>Project Assistant (University of Leipzig), 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Thibault Clérice</persName>
+                    <resp>Lead Developer (University of Leipzig), 2015 - 2017</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bruce Robertson</persName>
+                    <resp>Technical Advisor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Harvard College Library</authority>
+                
+                <idno type="filename">tlg0090.tlg001.opp-eng1.xml</idno>
+                <availability>
+                    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
+                        License</p>
+                </availability>
+                <date>2018</date>
+                <publisher>Harvard College Library</publisher>
+                <pubPlace>United States</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+
+                <listBibl>
+
+
+                    <biblStruct>
+                        <monogr>
+                            <title>Agathemerus. "Sketch of Geography"</title>
+                            <editor>
+                                <persName>Aubrey Diller</persName>
+                            </editor>
+                            <author ref="urn:cts:greekLit:tlg0090">Agathemerus</author>
+                            
+                            <imprint>
+                                <biblScope unit="issue">16</biblScope>
+                                <biblScope unit="pp" from="59" to="76">59-76</biblScope>
+                                <publisher>Duke University Libraries</publisher>
+                                <pubPlace>Duke University</pubPlace>
+                                <date>1975</date>
+                            </imprint>
+
+                        </monogr>
+                        <ref target="http://grbs.library.duke.edu/article/view/8681">Greek Roman and Byzantine Studies n. 16</ref>
+
+
+
+                    </biblStruct>
+                </listBibl>
+
+            </sourceDesc>
+        </fileDesc>
+
+        <encodingDesc>
+
+        
+        
+                <p>Text encoded in accordance with the latest EpiDoc standards</p>
+                <p>The following text is encoded in accordance with EpiDoc standards and with the
+                    CTS/CITE Architecture.</p>
+
+            <refsDecl n="CTS">
+                <cRefPattern n="section" matchPattern="(.+).(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts chapters and sections</p>
+                </cRefPattern>
+                <cRefPattern n="chapter" matchPattern="(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts chapters</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+
+        <profileDesc>
+            <langUsage>
+                <language ident="eng">English</language>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+
+        <revisionDesc>
+
+  <change who="Chiara Palladino" when="2018-03-20">Created the XML file and made the file
+                CTS compliant</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <div type="translation" n="urn:cts:greekLit:tlg0090.tlg001.opp-eng1" xml:lang="eng">
+
+
+<pb n="67"/>
+
+                <div type="textpart" subtype="chapter" n="1">
+                    <div type="textpart" subtype="section" n="1">
+                        <p> Anaximander of Miletus, disciple of Thales, ﬁrst attempted to draw the
+                            earth on a map. After him Hecataeus of Miletus, a widely- traveled man,
+                            improved the work marvelously. Hellanicus of Lesbos, a man of much
+                            learning, gave his account without a map. Then Damastes of Citium wrote
+                            a circumnavigation, drawing mostly on Hecataeus. Next Democritus and
+                            Eudoxus and others wrote tours of the earth by land and sea. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="2">
+                        <p> The ancients drew the earth round, and regarded Hellas as the center and
+                            Delphi as the center of Hellas, since it had the navel of the earth.
+                            Democritus, a man of much experience, ﬁrst perceived that the earth was
+                            oblong, with the length half again the breadth. Dicaearchus the
+                            Peripatetic agreed with him. Eudoxus made the length double the breadth,
+                            Eratosthenes more than double, Crates semicircular, Hipparchus
+                            trapezoid, others . . . , Posidonius the Stoic sling-shaped and wide in
+                            the middle from south to north, narrow to the east and west, wider,
+                            however, to the southeast, toward India. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="3">
+                        <p> Boundaries of the continents: of Europe and Libya the Pillars of
+                            Hercules; of Libya and Asia the Nile, but some say the isthmus between
+                            Lake Serbonis and the Arabian gulf; of Asia and Europe the ancients said
+                            the Phasis River and the isthmus to the Caspian, the later and more
+                            recent ones say Lake Maeotis and the Tanais River. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="4">
+                        <p> The continents were called <foreign xml:lang="grc">ἤπειροι</foreign> as being 
+                            boundless <foreign xml:lang="grc">(ἄπειροι)</foreign> , out of
+                            ignorance. Asia was named for coming close
+                            <foreign xml:lang="grc">(ἆσσον)</foreign> for those going over
+                            from Europe both by land and by the islands lying in a row: Euboea
+                            Andros Tenos Myconos Icaria Samos Mycale. Europe was named for its
+                            breadth <foreign xml:lang="grc">(εὖρος)</foreign>. Libya was quite unknown to the Greeks,
+                            but from a
+                            signal nation †Phoenicians were named seafaring†. The ocean was named
+                            for quickly encircling <foreign xml:lang="grc">(ὠκέως ἀνύειν)</foreign> the earth. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="5">
+                        <p> Dicaearchus bounds the earth not by waters but by a straight line from
+                            the Pillars through Sardinia Sicily Peloponnesus Ionia Caria Lycia
+                            Pamphylia Cilicia and Taurus on to Mt Imaus, and he calls the several
+                            regions either northern or southern. </p>
+                    </div>
+
+                </div>
+
+                <div type="textpart" subtype="chapter" n="2">
+                    <div type="textpart" subtype="section" n="6">
+                        <p> The winds blow: from equinoctial sunrise <hi rend="italic">apeliotes</hi>, 
+                            from equinoctial
+                            sunset <hi rend="italic">zephyros</hi> from midday <hi rend="italic">notos</hi>, 
+                            from the bear <hi rend="italic">aparctias</hi>, 
+                            <pb n="68"/>
+                            from summer
+                            solstice (sunrise) <hi rend="italic">kaikias</hi>, and next, from equinoctial sunrise
+                            <hi rend="italic">apeliotes</hi>, and from winter sunrise <hi rend="italic">euros</hi>,
+                            and in the west, from winter
+                            sunset <hi rend="italic">lips</hi>, 
+                            and next again, from equinoctial sunset <hi rend="italic">zephyros</hi> 
+                            from
+                            summer sunset <hi rend="italic">argestes</hi> 
+                            or <hi rend="italic">Olympias</hi> also called <hi rend="italic">Iapyx</hi>, 
+                            then <hi rend="italic">notos</hi> and
+                            <hi rend="italic">aparctias</hi> blowing opposite each other; so there are eight. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="7">
+                        <p> But Timosthenes, who wrote the circumnavigations, says there are twelve,
+                            adding <hi rend="italic">boreas</hi> between <hi rend="italic">aparctias</hi> 
+                            and <hi rend="italic">kaikias</hi>, <hi rend="italic">phoinix</hi> also called
+                            <hi rend="italic">euronotos</hi> between <hi rend="italic">euros</hi> 
+                            and <hi rend="italic">notos</hi>, <hi rend="italic">leuconotos</hi> 
+                            or <hi rend="italic">libonotos</hi> between <hi rend="italic">notos</hi>
+                            and <hi rend="italic">lips</hi>, <hi rend="italic">thrascias</hi> 
+                            or <hi rend="italic">kirkios</hi> (as called by the local people) between
+                            <hi rend="italic">aparctias</hi> and <hi rend="italic">argestes</hi>. 
+                            He says nations dwell on the borders of the
+                            earth, towards <hi rend="italic">apeliotes</hi> Bactrians, 
+                            towards <hi rend="italic">euros</hi> Indians, towards
+                            <hi rend="italic">phoinix</hi> the Red Sea and Aethiopia, towards 
+                            <hi rend="italic">notos</hi> Aethiopia beyond Egypt,
+                            towards <hi rend="italic">leuconotos</hi> Garamantes
+                            beyond the Syrtes, towards <hi rend="italic">lips</hi> western
+                            Aethiopians beyond Moors, towards <hi rend="italic">zephyos</hi> 
+                            the Pillars and the beginnings
+                            of Libya and Europe, towards <hi rend="italic">argestes</hi> 
+                            Iberia, now Hispania, towards
+                            <hi rend="italic">thrascias</hi> 
+                            Celts and their neighbors, towards <hi rend="italic">aparctias</hi> 
+                            Scythians beyond
+                            Thrace, towards <hi rend="italic">borras</hi> 
+                            Pontus Maeotis Sarmatians, towards <hi rend="italic">kaikias</hi> the
+                            Caspian Sea and Sacae. </p>
+                    </div>
+                </div>
+
+
+                <div type="textpart" subtype="chapter" n="3">
+                    <div type="textpart" subtype="section" n="8">
+                        <p>The Great Syrtis is 5000 stades, the Little Syrtis 1600 stades. The mouth
+                            of the Adriatic, which some call the Ionian Sea, has a passage of 700
+                            stades from the tip of Iapygia to the Ceraunian mountains in Epirus.
+                        </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="9">
+                        <p> After the Aegean Sea comes the Hellespont ending at Abydus and Sestus,
+                            then the Propontis ending at Chalcedon and Byzantium, where the narrows
+                            are from which the Pontus begins, then Lake Maeotis. Again, from the
+                            beginning of Europe and Libya the Iberian Sea from the Pillars to Mt
+                            Pyrene, the Ligurian as far as the borders of Etruria, the Sardinian
+                            beyond Sardinia bending down towards Libya, the Tuscan ending as far as
+                            Sicily and beginning from the capes of Liguria, then the Libyan, then
+                            the Cretan and Sicilian and Ionian and Adriatic and the one opening out
+                            of the Sicilian sea, which they call the gulf of Corinth or Halcyon sea.
+                            The Saronic sea enclosed by Sunium and Scyllaeum, then the Myrtoan and
+                            Icarian, in which are the Cyclades, then the Carpathian and Pamphylian
+                            and Egyptian. Beyond the Icarian spreads the Aegean. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="10">
+                        <p>The coast of Europe from the outlet of the Tanais River to the Pillars of
+                            Hercules is 69709 stades, of Libya from Tingis to the Canobic mouth is
+                            29252 stades, of Asia from Canobus to the Tanais River, with the gulfs,
+                            is <pb n="69"/> 40111 stades; altogether, the coast of our earth, with the gulfs, is
+                            139072 stades, including Lake Maeotis, of which the perimeter is 9000
+                            stades and the mouth at the Cimmerian Bosporus is 
+                            
+                            <choice>
+                                <corr resp="#AD" evidence="conjecture">20</corr>
+                                <sic>70</sic>
+                            </choice>
+                        
+                            
+                            
+                            stades. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="11">
+                        <p> The Pontus is 3350 stades, the narrows at the Thracian Bosporus, where
+                            Dareius built the bridge against the Scythians, is six stades.</p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="12">
+                        <p>The Persian Sea, being round and narrowing to the mouth at the capes of
+                            Carmania and Arabia, has a perimeter of 20000 stades; the mouth, between
+                            Arabia and Carmania is 400 stades. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="13">
+                        <p> The Hyrcanian or Caspian Sea, being crescent-shaped, but some say
+                            oblong, is 20000 stades and has a passage of 1000 stades at the
+                            mouth.</p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="14">
+                        <p> The Arabian Gulf, being narrow and oblong, begins from the gulf of
+                            Heroöpolis along Troglodytica to Ptolemais at the Hunts 9000 stades
+                            long, where follows a voyage of 6500 stades, the narrows at Deire of 60
+                            stades, along the Red Sea to the ocean 5000 stades, the rest is not
+                            navigated. The side along Arabia from the gulf of Aelana is 14000
+                            stades. Arabia itself extends to the Red Sea and lengthens to 12000
+                            stades.</p>
+                    </div>
+
+                </div>
+
+                <div type="textpart" subtype="chapter" n="4">
+                    <div type="textpart" subtype="section" n="15">
+                        <p> The length of the earth from the Ganges to Gades is 68545 stades, thus:
+                            from the Ganges River to Myriandrus in the gulf of Issus 41725 stades,
+                            thus: from the Ganges to the outlet of the Indus River 16000 stades,
+                            from the Indus to the Caspian Gates 15300 stades, to the Euphrates 10050
+                            stades, to Myriandrus 375 stades. </p>
+                    </div>
+
+
+
+                    <div type="textpart" subtype="section" n="16">
+                        <p>From Myriandrus to Gades 26820 stades, thus: from Myriandrus to the Keys
+                            of Cyprus 1400 stades, to Cape Acamas 1300 stades, to the Chelidoniae
+                            through the Pamphylian sea 1900 stades, to Patara 800 stades, to Rhodes
+                            700 stades, to Astypalaea through the Carpathian †140 stades, to
+                            Taenarum 1950 stades, to Pachynum in Sicily 4000 stades, to Lilybaeum
+                            through the Libyan sea 1520 stades, to Caralis in Sardinia through the
+                            Tuscan sea 1800 stades, to Gades past the Gymnesiae islands 10000
+                            stades, from Gades past the Sacred Cape and harbor of the Artabrians
+                            7932. Altogether 76477 stades. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="17">
+                        <p>Another way: from the Ganges to the Euphrates River 41350, from the
+                            Euphrates to Mazaca in Cappadocia 1950 stades, from Mazaca through
+                            piedmont and great Phrygia and Caria to Ephesus 3990 stades, altogether
+                            from the Ganges to Ephesus 47290 stades. From Ephesus to Delos through
+                            the Aegean 1600 stades, to the Isthmus 1700 stades, from the Isthmus
+                            through the Gulf of Corinth to Patrae 720 stades, to Leucas 700 stades, <pb n="70"/>
+                            to Corcyra 700 stades, to the Acroceraunian mountains 660 stades, to
+                            Brundisium 700 stades, from Brundisium by land to Rome 2880 stades, from
+                            Rome to the Alps at the village Scingomagus beneath the Alps 4152
+                            stades, then through Celtica to the town Illygyris beneath Pyrene 3744
+                            stades, then through Iberia to Gades 6654 stades, and the passage to
+                            Gades by way of the inns 60 stades. Altogether from the Ganges to Gades
+                            71560 stades.</p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="18">
+                        <p>The breadth of the earth from the Aethiopian sea to Meroe 5000 stades,
+                            from Meroe to Alexandria 10000 stades, from Alexandria to the Tanais
+                            †11056, above the outlet of the Tanais to the north is unknown, thus:
+                            from Alexandria to Lindus in Rhodes 4500 stades, to Thoantion passing
+                            Rhodes on the right 400 stades, to Telos 160 stades, to Lacter in Cos
+                            120 stades, to Drepanon in Cos 100 stades, to the island Arcitis 230
+                            stades, to Corsiae 100, to Ampelus in Samos 30 stades, to Argennon
+                            through the Aegean 500 stades, to Erythraean Corynaion 270 stades, to
+                            Cape †Phlion in Chios 50 stades, to Cape Melaneus in Lesbos 450 stades,
+                            to Sigrion in Lesbos 500 stades, to the island Tenedos 450 stades, to
+                            Sigeum 100 stades, to the mouth of Pontus 2500 stades, to Carambis 2800
+                            stades, to the mouth of Maeotis 2500 stades, to the Tanais 2200 stades.
+                        </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="19">
+                        <p>Another way, from city to city: from Alexandria to Rhodes 4670 stades, to
+                            Cnidus 700 stades, to Cos 200 stades, to Samos 800 stades, to Chios 750
+                            stades, to Mitylene 520 stades, to Tenedos 950, to Sigeum 100, to the
+                            mouth of Pontus 2500, to Carambis 2800, to the mouth of Maeotis 2500, to
+                            the Tanais River 2200; altogether from Alexandria to Tanais 18690
+                            stades. </p>
+                    </div>
+
+                </div>
+
+                <div type="textpart" subtype="chapter" n="5">
+                    <div type="textpart" subtype="section" n="20">
+                        <p> Finally, we will give the perimeters of the islands of our earth taking
+                            them from Artemidorus and Menippus and other trustworthy authors. Gades
+                            is 120 stades long, 16 wide; the passage at the Pillars of Hercules is
+                            80 stades at the narrowest; in the Iberian sea, of the Pityussae islands
+                            the greater, inhabited, is 300 stades long, the lesser 100 stades; of
+                            the Gymnasiae, which the Carthaginians call Baliariae (for slingers are
+                            thus called Baliares) the greater is 1200 stades long, 400 stades wide,
+                            the lesser 300 stades. The Stoechades so-called lie in a row in front of
+                            the Massilian towns, three greater and two small near Massilia itself.
+                            Sardinia has the shape of a footprint, hollow in the middle, 2200 long;
+                            Corsica near Sardinia but much poorer is less than half as long as
+                            Sardinia; the take-off for Sardinia and Corsica is Popu<pb n="71" break="no"/>
+                            lonium in
+                            Etruria, the passage 1200 stades. The perimeter of Sicily according to
+                            Timosthenes is 4740 stades, the shape a scalene triangle, the passage
+                            from Cape Pelorus to Italy 12 stades. The side of the island from
+                            Pelorus to Pachynum is 1360 stades, from Pachynum to Lilybaeum 1600
+                            stades, from Lilybaeum to Pelorias according to Timosthenes 1700 stades;
+                            the passage from Lilybaeum to Aspis in Libya about 1500 stades. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="21">
+                        <p> The island Cercina is 200 long, 70 stades wide, but 40 at the narrowest;
+                            it lies off the town Theёne on the mainland at the beginning of the
+                            lesser Syrtis; beside Cercina lies the island Carcinitis, joined by a
+                            bridge, 40 stades long, 25 stades wide. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="22">
+                        <p>From Cercina to the island Meninx Lotophagitis the passage is 600 stades,
+                            as is said to be the mouth of the lesser Syrtis; Meninx is 600 stades
+                            long, 180 stades wide, and there are great currents around it. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="23">
+                        <p>The island Cephallenia, of four towns, is 400 stades long. There are also
+                            in the Adriatic islands along Illyria, especially Issa and Black Corcyra
+                            and Pharos and Melite, of which I do not know the perimeters. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="24">
+                        <p>The circumnavigation of the Peloponnesus counting the gulfs is 5627
+                            stades, without entering the gulfs 4000 stades; the length from Malea to
+                            Aegium is 1400 stades; the shape like a plane leaf, cut up by great
+                            gulfs; it narrows in the Gulf of Corinth to the Isthmus 40 stades wide
+                            between the Corinthian and Saronic gulfs.
+                            
+                            <gap resp="#AD" extent="unknown" reason="omitted"/>
+                            
+                            to Cape Scyllaeum with
+                            the island Calauria to the left sacred to Poseidon, then the gulf of
+                            Hermione, next the gulf of Argos as far as Cape Malea, which juts far
+                            into the sea, next after Malea the gulf of Laconia as far as Taenarum on
+                            the right, which bounds the gulf of Messenia on the left with Cape
+                            Acritas on the right, then Cape Ichthys, off which is Zacynthus, and
+                            Cape Chelonatas, and ﬁnally Cape Araxus facing Acarnania, after which
+                            opens up the Gulf of Corinth narrowing to a mouth of 7 stades at Rhion
+                            in the Peloponnesus and Antirhion in Locris. From Taenarum to Phycus in
+                            Libya the passage is 3000 stades. </p>
+                    </div>
+
+
+                    <div type="textpart" subtype="section" n="25">
+                        <p>The island Aegina 160 stades long lies against Attica; Salamis 70 stades
+                            long, Ceia 120. Of the Cyclades the greatest is Naxos, hence called
+                            Little Sicily; to the right are the Sporades. Euboea is joined to
+                            Boeotia by a bridge; it extends along Boeotia Phocis Locris, and on the
+                            other end even a little along Attica, for it is long, hence called
+                            Macris, the length 1700 stades. </p>
+                    </div>
+
+                    <div type="textpart" subtype="section" n="26">
+                        <p> Crete is near the Peloponnesus off Malea, 4100 stades around, 2300 long,
+                            for it is much lengthened; Cythera is between Crete and Laconia. Cyprus
+                            has the shape of a hide, perimeter 3420 stades, length 1300; from Paphos
+                            to Alexandria the passage is from <pb n="71"/> 
+                            the north, 3800 stades. The perimeter
+                            of Rhodes is 1300 stades, of Cos 540 stades, of Samos 630 stades. Icaria
+                            is long and rugged, the length 300 stades. The perimeter of Chios is 660
+                            stades, of Lesbos 1100 stades. </p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </body>
+    </text>
+</TEI>
