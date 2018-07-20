@@ -18,14 +18,14 @@ before_deploy:
   - git add -A
   - git commit -m "Removed failing files" -m "Release $GIT_TAG"
   - git tag $GIT_TAG -a -m "$DATE" -m "PASSING FILES" -m "$results"
-  - git push -q https://$GITPERM@github.com/OpenGreekAndLatin/First1KGreek --tags
+  - git push -q https://$GITPERM@github.com/jdeen33/First1KGreek --tags
 
 deploy:
   provider: releases
   api_key: $GITPERM
   skip_cleanup: true
   on:
-    repo: OpenGreekAndLatin/First1KGreek
+    repo: jdeen33/First1KGreek
     branch: master
 
 env:
