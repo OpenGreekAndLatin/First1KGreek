@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            
+            <titleStmt>
+                <title xml:lang="lat">Mirabilia de aquis</title>
+                <title type="sub">an electronic transcription.</title>
+                <author>Paradoxographus Florentinus</author>
+                <editor>Henrich Öhler</editor>
+                <!--<funder>Center for Hellenic Studies</funder>-->
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Proofreading</resp>
+                    <orgName>Mount Allison University</orgName>
+                    <persName>Dawson Fraser</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>CTS conversion</resp>
+                    <orgName>Perseus Digital Library</orgName>
+                    <persName>Lisa M. Cerrato</persName>
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher ref="https://www.opengreekandlatin.org">Open Greek and Latin</publisher>
+                <idno type="filename">tlg0580.tlg001.1st1K-grc1.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date type="proofreading">2020-05-06</date>
+                <date type="publication">2020-06-18</date>
+            </publicationStmt> 
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author xml:lang="lat">Paradoxographus Florentinus</author>
+                        <title xml:lang="lat">Paradoxographi Florentini Anonymi Opusculum De Aquis Mirabilibus: Ad Fidem Codicum Manu Scriptorum Ed. Commentario Instructum.</title>
+                        <editor>
+                            <persName><name>Henrich Öhler</name></persName>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Tübingen</pubPlace>
+                            <publisher>J. J. Heckenhauer</publisher>
+                            <date>1913</date>
+                        </imprint>
+                        <biblScope/>
+                    </monogr>
+                    <ref target="https://archive.org/details/b29006284/">The Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            
+            <editorialDecl>
+                <quotation marks="none"/>
+                <normalization>
+                    <p></p>
+                </normalization>
+                <correction>
+                    <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            
+        <refsDecl n="CTS">
+                    <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                        <p>This pointer pattern extracts sections</p>
+                    </cRefPattern>
+                </refsDecl>
+            
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2020-06-18" who="Lisa Cerrato">initial markup of new file</change>
+        </revisionDesc>
+    </teiHeader>
+  
+  <text>
+    <body xmlns:tei="http://www.tei-c.org/ns/1.0">
+
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:1">
+          <p><pb facs="b29006284_0051"/>ἐν Ποτνίαις περὶ Θήβας, ἐξ ἧς οἱ ἵπποι πίνοντες μαίνονται· ὡς ἱστορεῖ Ἰσίγονος ἐν δευτέρωι ἀπίστων: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:2">
+          <p>κρήνη ἐν Κλαζομεναῖς· ἀφʼ ἧς τὰ θρέμματα πίνοντα, τὴν ἐρέαν χρωματίνην ποιεῖ· ὡς ἱστορεῖ ὁ προειρημένος Ἰσίγονος: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:3">
+          <p>κρήνη ἐν Ἰνδοῖς· ἥ τοὺς κολυμβῶντας ἐπὶ τὴν γῆν ἐκβάλλει ὡς ἀπʼ ὀργάνου· ὡς ἱστορεῖ Κτησίας: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:4">
+          <p>ἐν Κρήτηι ὀχετὸς ὕδατός ἐστιν· ὅν οἱ διαβαίνοντες ὕοντος τοῦ Διὸς, ἄβροχοι διαβαίνουσιν ἐφʼ ὅσον ἐν τῶι ὀχετῶι εἰσιν: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:5">
+          <p>ἐν Πέρσαις φασὶν Ἀλεξάνδρωι φανῆναι κρήνην ἐλαίου πληρουμένην αὐτομάτως: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:6">
+          <p>παρὰ Κιλικίαι φασὶν ὕδατος εἶναί τι σὐστημα· ἐν ὦι τὰ πεπνιγμένα τῶν ὀρνέων καὶ τῶν ἀλόγων ζῴων ἐμβραχέντα ἀναζῆν: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:7">
+          <p>ἐν τῆι ἐπὶ Συρακουσῶν ὁδῶι, κρήνη ἐστὶν οὐ μεγάλη· οὐδὲ ὕδωρ πολὺ ἔχουσα· ὄχλου δὲ ἐπελθόντος εἰς τὸν τόπον καὶ ψόφου γινομένου, παρέχει ὕδωρ ἄφθονον ὧς φησιν Ἀριστοτέλης: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:8">
+          <p>κρήνη ἐν Παλικοῖς· ἥτις εἰς ὕψος ἀναρριπτεῖ τὸ ὕδωρ πήχεων ἕξ· ἔμφασιν ποιοῦσα μέλλειν κατακλύζειν τοὺς ὑποκειμένους τόπους· καθόλου δὲ οὐχ ὑπερεκχεῖται οὐδέν ἐπὶ ταύτης οἱ ἐπιχώριοι, τοὺς ὑπὲρ τῶν μεγίστων ὅρκους ποιοῦνται ὡς ἱστορεῖ Ἰσίγονος ἐν δευτέρωι ἀπίστων: <pb facs="b29006284_0052"/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:9">
+          <p>Σκότουσαν τῆς Θεσσαλίας κρηνίδιόν ἐστι μικρόν· ὅ τὰ ἕλκη πάντα θεραπεύει καὶ τῶν ἀλόγων ζῴων· εἰς ὅ ἐάν τις ξύλον μὴ λίαν συντρίψας ἀλλὰ σχίσας ἐμβάληι, ἀποκαθίσταται· οὕτως κολλῶδες ἔχει τὸ ὕδωρ ὥς φησιν Ἰσίγονος; </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:10">
+          <p>ἐν Λουσίοις τῆς Ἀρκαδίας φησὶν Ἀριστοτέλης κρήνην τινὰ εἶναι. ἐν ἧι μῦς χερσαίους γίνεσθαι· καὶ τούτους κολυμβᾶν ἐν ἐκείνηι τὴν δίαιταν ποιουμένους: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:11">
+          <p>φησὶν Ἰσίγονος ἐν Ἀθαμᾶσι κρήνην εἶναι ἧς τὸ μὲν ὕδωρ ψυ1Sα· χρὸν ὑπάρχειν· τὸ δ´ ὑπὲρ αὐτὸ οὕτως θερμὸν ὑπάρχειν, ὥστε ἄν τις ὑπερθῆ: φρύγανα, παραχρῆμα ἐξάπτεσθαι: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:12">
+          <p>παρὰ Κλειτορίοις ὁ αὐτός φησιν εἶναι κρήνην· ἧς ὅταν τις τοῦ ὕδατος πίηι, τοῦ οἴνου τὴν ὀσμὴν οὐ φέρει: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:13">
+          <p>ὁ αὐτός φησιν ἐν Ἰταλίαι ἐν τω: Ῥεατίνω: ἀγρῶι κρήνην εἶναι Μέντην ὀνομαζομένην ὁμοίαν τῆι προειρημέρνη: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:14">
+          <p>ὁμοίως ἐγγὺς Κόσης ἔστι κρήνη· εἰς ἥν ἐὰν θῆις κεράμιον οἴνου γέμον, ὥστε ὑπερχεῖν τὸ στόμα, παντὸς ὄξους εἶναι δριμύτερον παραχρῆμα ὡς ἱστορεῖ ὁ αὐτός: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:15">
+          <p>Θεόπομπος ἱστορεῖ κρήνην ἐν Χρωψὶ τῆς Θραίκης· ἐξ ἧς τοὺς λουσαμένους παραχρῆμα μεταλλάσσειν: <pb facs="b29006284_0053"/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:16">
+          <p>Ἑλλάνικός φησι παρὰ Μαγνησίαν τὴν ἐπὶ Σιπύλου πηγὴν εἶναι ἀφʼ ἧς τοὺς πίνοντας τὰς κοιλίας ἀπολιθοῦσθαι: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:17">
+          <p>Κτησίας δὲ ἐν Αἰθιοπίαι κρήνην ἱστορεῖ τῶι χρώματι κιννέβαρι παραπλησίαν· τοὺς δὲ πίνοντας ἀπ´ αὐτῆς παραλλάττειν τὴν διάνοιαν· ὥστε καὶ τὰ κρυφίως πεπραγμένα ὁμολογεῖν: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:18">
+          <p>ἐν Ἀραβίαι ἔστιν Ἴσιδος κρήνη· ἥτις κοτύλης οἴνου ἐμβληθείσης κιρνᾶται· καὶ πρὸς τὴν πόσιν εὔκρατος γίνεται· ὧς φησιν Ἀμώμητος </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:19">
+          <p>Ἀριστοτέλης Ἄμμωνος κρήνην εἶναί φησιν· ἧς τὸ ὕδωρ μεσημβρίας καὶ μεσονὐκτου γίνεσθαι θερμόν· ὄν φύσει ψυχρότατον: 10 </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:20">
+          <p>Θεόπομπος ἐν Λυγκήστωι φησὶ πηγὴν εἶναι· τῆι μὲν γεύσει ὅξίζουσαν· τοὺς δὲ πίνοντας μεθύσκεσθαι ὡς ἀπὸ οἴνου: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:21">
+          <p>ἐν Συκαμίναις πόλει· λίμνη ἐστίν· ἧς τι ὕδατι οἱ λουσάμενοι ἤ πιόντες ἀπ´ αὐτοῦ, μαδῶσι τὰς τρίχας· τῶν δὲ ἀλόγων ζώων αἱ ὁπλαὶ ἀποπίπτουσιν· ὡς ἱστορεῖ Ἰσίγονος: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:22">
+          <p>Ἡρακλείδης ὁ Ποντικὸς λίμνην ἐν Σαυρομάταις φησὶν εἶναι περὶ ἤν τὰ πετασθέντα τῶν ὀρνέων εἰς αὐτὴν πίπτειν: <pb facs="b29006284_0054"/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:23">
+          <p>ἐν Μακροβίοις Αἰθίοψι κρήνην ἱστορεῖ ἀφʼ ἧς τοὺς λουἘ 145· σαμένους λιπαίνεσθαι: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:24">
+          <p>ἐν Κλειτορίοις δὲ τῆς Ἀρκαδίας κρήνην φασὶν εἶναι· ἀφʼ ἧς τοὺς πίνοντας μισεῖν τὸν οἶνον· ἐπικεχάρακται δὲ ἐπʼ αὐτῆς ἐπίγραμμα τοιόνδε: <lb/>ἀγρότα σὺν ποίμναις τὸ μεσημβρινὸν ἢν σε βαρύνηι, <lb/>δίψος ἀνʼ ἐσχατιὰς Κλείτορος ἐρχόμενον, <lb/>τῆς μὲν ἀπὸ κρήνης ἄρυσαι πόμα· καὶ παρὰ νύμφαις, <lb/>ὑδριάσι στῆσον πάν τὸ σὸν αἰπόλιον. <lb/>ἀλλὰ σὺ μήτʼ ἐπὶ λουτρὰ βάληις χροὶ· μή σε καὶ αὔρη <lb/>πημήνηι τερπνῆς, ἐντὸς ἐόντα μέθης· <lb/>φεῦγε ὅ ἐμὴν πηγὴν μισάμπελον ἔνθα Μελάμπους <lb/>λουσάμενος λύσσης, Προιτίδος ἀργαλέης <lb/>πάντα καθαρμὸν ἔκοψεν ἀπόκρυφον· α γὰρ ἀπʼ Ἄργους <lb/>οὔρεα τρηχείης ἤλυθον Ἀρκαδίης: <lb/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:25">
+          <p>Ἀρίστων δὲ ὁ περιπατητικὸς φιλόσοφος ἐν τῆι Κίωι πηγὴν <lb/>φησὶν ὕδατος εἶναι· ἀφʼ ἧς τοὺς πίνοντας ἀναισθήτους γίνεσθαι ταῖς ψυχαῖς· εἶναι δὲ καὶ ἐπὶ ταύτης ἐπίγραμμα τοιόνδε.<lb/>ῆδεῖα ψυχροῖς ποτοῦ λιβὰς ἢν ἀναβάλλει <lb/>πηγή· ἀλλὰ νόωι, πέτρος ὁ τῆσδε πιών: <lb/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:26">
+          <p>ἐν δὲ Σούσοις τῆς Περσίδος, ὕδωρ εἶναι λέγουσιν· ὅ τῶν πιόντων ἐκπίπτειν ποιεῖ παραχρῆμα τοὺς ἐμπροσθίους ὀδόντας· κεχάρακται δὲ καὶ ἐπὶ ταύτης τὸ ἐπίγραμμα τόδε. <lb/>ὕδατα ταῦτα βλέπεις φοβερὰ ξένε· τῶν ἄπο χερσὶ <lb/>λουτρὰ μὲν ἀνθρώποις ἀβλαβῆ ἐστιν ἔχειν· <lb/>ἤν δὲ βάληις κοίλης ποτὶ νηδύος ἀγλαὸν ὕδωρ <lb/>ἄκρα μόνον δολιχοῦ χείλεος ἁψάμενος, <lb/><pb facs="b29006284_0055"/><lb/>αὐτῆμαρ πριστῆρες ἐπὶ χθόνι δαιτὸς ὀδόντες <lb/>πίπτουσιν, γενύων ὀρφανὰ θέντες ἔδη: <lb/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:27">
+          <p>ἐν δὲ Ἀλιφάνωι τῆς Ἰταλίας φρεάτιόν ἐστι βαθύ· οὐ τὸ μὲν ὕδωρ βλέπεται· ἡλίκον δὲ ἄν τις χαλάσηι σχοινίον, οὐκ ἐφάπτεται τοῦ ὕδατος· ἀλλ᾽ ὑπὸ τινος θείου κωλύεται ὥς φησιν Ἰσίγονος· </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:28">
+          <p>Ἄουερνός ἐστι λίμνη ἐν Ἰταλίαι περὶ Κούμας· εἰς ἥν τὰ ἐκ τῆς περικειμένης ὕλης ἐμπίπτοντα φύλλα ἢ κάρφη, ἀφανῇ γίνεται· βυθιζόμενα παραχρῆμα </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:29">
+          <p>[Ἀριστοτέλης] ἱστορεῖ κατὰ Καρχηδόνα κρήνην εἶναι ἐλαίου V προσηνεστέραν· ἄν δὲ μή τις ἁγνὸς προσίηι, ἐκλείπειν αὐτήν: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:30">
+          <p>περὶ Γέλαν τῆς Σικελίας ἔστι λίμνη Σίλλα καλουμένη ἐλαχίστη τὸ μέγεθος· ἥτις τοὺς ἐν αὐτῆι λουομένους, εἰς τὸ ξηρὸν ἐκρίπτει ὡς ἀπʼ ὀργάνου τινός· ὥς φησιν Ἀριστοτέλης: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:31">
+          <p>παρὰ τὸν Ἠριδανὸν ποταμόν, ἔστι λίμνη κατὰ τὰς Ἠλεκτρίδας νήσους· ὕδωρ ἔχουσα θερμόν· ὀσμὴν δὲ βαρεῖαν· ἀφʼ ἧς οὐδὲν ζῷον γεύεται: <pb facs="b29006284_0056"/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:32">
+          <p>κατὰ Ἄβδηρα λίμνην Κύστειρον καλουμένην φασὶ τὸ Ξέρξου στράτευμα πῖνον, ἀναξηρᾶναι: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:33">
+          <p>Ἱερώνυμος ἱστόρησεν ἐν τῆι Ναβαταίων χώραι τῶν Ἀράβων εἶναι λίμνην πικράν· ἐν ἦι οὔτʼ ἰχθῦς, οὔτε ἄλλο τι τῶν ἐνύδρων ζῴων γάνεσs θαι: ἀσφάλτου δὲ πλίνθους ἐξ αὐτῆς ἀρέσθαι ὑπὸ τῶν ἐπιχωρίων: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:34">
+          <p>Πύθερμός φησιν· ἐάν τις σκύφον εἰς τὰς τοῦ Στρυμόνος ποταμοῦ δίνας ἐμβάληι, τοῦτὸν εὑρήσει ἐν τῆι περὶ Ἀπολλωνίαν λίμνηι: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:35">
+          <p>Φαέθων φησὶ τὸν ἐν Βοσπόρωι ποταμὸν οὕτως εἶναι ψυχρὸν ὥστε μηδὲν τῶν ζῴων ὑπομένειν αὐτοῦ τὴν ψυχρότητα: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:36">
+          <p>περὶ δὲ Ταρρακίναν τῆς Ἰταλίας φησίν Ἰίγονος λίμνην εἶναι Μυκλαίαν καλουμένην· καὶ παρʼ αὐτῆ: πόλιν ἔρημον· ἧς τοὺς ἐνοικοῦντας στερηθῆναι τῆς πόλεως διὰ τὸ πλῆθος τῶν ὕδρων: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:37">
+          <p>ἐπὶ τῆς ἐν Ἰταλίαι λίμνης καλουμένης μὲν Βηνάκου· οὔσης δὲ τὸ περίμετρον σταδίων φ´, νῆσός ἐστιν οἰκουμένη κατάφυτος δένδρεσιν ἡμέροις ἐπινηχομένη καὶ μεταβαίνουσα πρὸς τὰς τῶν πνευμάτων φοράς: τὸ δʼ αὐτὸ τοῦτο καὶ ἐν ἑτέραι λίμνηι τῆς Ἰταλίας Κουτιλίαι καλουμένηι γίνεται: <pb facs="b29006284_0057"/></p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:38">
+          <p>δὲ καὶ λάκκος Οὐαδίμωνος καλουμένη λίμνη οὐ μεγάλη ἐν Ἰταλίαι ὀμοίως ἔχουσα νησία πλείονα πάσηι πνοῆι μετακινούμενα: U </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:39">
+          <p>ἡ κατὰ Σάρδεις λίμνη καλουμένη δὲ Κολόη, πληθος μὲν ὄψου πάμπολυ τρέφει· ἔχει δὲ καὶ αὐτὴ νήσους οἰκουμένας πρὸς ἀπάτην· ἐπινήχονται γάρ· καὶ τῆι τῶν ἀνέμων πνοῆι συμμετοικοῦσι· πτηνῶν δὲ τῶν ἐνύδρων τοσοῦτο τρέφει πλῆθος, ὥστε καὶ ταριχεύεσθαι: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:40">
+          <p>τὸ δὲ κατὰ τὴν Σουσιανὴν ὕδωρ, φασὶν εἷναι Μηδείας καὶ πεφαρμάχθαι καυστικοῖς φαρμάκοις· ὅ ῥεῖ μὲν, ἐκ πηγῆς τινος· φυλάσσεται δὲ ὑπὸ τῶν ἐπιχωρίων· ἔχει δὲ δύναμιν τοιαύτην· τὰ γὰρ χρισθέντα ἢ βραχέντα ἐξ αὐτοῦ ζῷα ἢ σκεύη· δειχθέντος μακρόθεν πυρός, πρὸς αὑτὰ ἐπισπᾶται· καὶ παραχρῆμα καίεται· καλεῖται δὲ νάφθα· ἐξενεχθέντα μέντοι τῆς χώρας, ἀπόλλυσι τὴν δύναμιν· ὡς ἱστορεῖ Ἰσίγονος: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:41">
+          <p>ἐν Ἰταλίαι λίμνη Σάβατος καλουμένη· ἧς ὅταν τὸ ὕδωρ διαυγὲς γένηται καταφαίνονται ἐν τῶι βυθῶι θεμέλιοι πολλοὶ καὶ ναοί· καὶ πλῆθος ἀνδριάντων· φασὶ δὲ οἱ ἐπιχώριοι· πόλιν ποτὲ οὖσαν καταποθῆναι: τὸ δʼ αὐτὸ λέγεται καὶ περὶ τὸ Κιμίνου λάκκου ἐν Ἰταλίαι· ὡς πόλεως πρότερον οὔσης· καὶ αἰφνιδίως καταποθείσης: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:42">
+          <p>ἡ ἐν Μακεδονίαι λίμνη, καλεῖται μὲν Λυχνίς, διαπλέουσι δὲ αὐτὴν ἱστορίας ἕνεκεν· ἐγκύπτοντες γὰρ εἰς τὸν βυθόν. ὁρῶσι τρικλίνους πολυτελεῖς· καὶ ἀργυρωμάτων ἀφυόνων πλῆθος τῶι μεγέθει θαυμασίων· 20 καί χρυσέων πινάκων τε καὶ ἐκπωμάτων καὶ πάντων τῶν ἐν βασιλικῶι πλούτωι πρὸς τρυφὴν κατασκευασμάτων: </p>
+        </div>
+        <div type="textpart" subtype="section" n="urn:cts:greekLit:tlg0580.tlg001.1st1K-grc1:43">
+          <p>ἐν Λυδίαι ἔστι λίμνη Τάλα μὲν καλουμένη· ἱερὰ δὲ οὖσα νυμφῶν· ἥ φέρει καλάμων πλῆθος καὶ μέσον αὐτῶν ἕνα, ὅν βασιλέα προσαγορεύουσιν οἱ ἐπιχώριοι· θυσίας δὲ καὶ ἑορτὰς ἐπιτελοῦντες ἐνιαυσίους 25 <pb facs="b29006284_0058"/>τούτων δέ ἐπιτελουμένων, ἐπειδὰν ἐπὶ τῆς ἠϊόνος κτύπος συμφωνίας γένηται· πάντες οἱ κάλαμοι χορεύουσι· καὶ ὁ βασιλεὺς σύν αὐτοῖς χορεύων παραγίνεται ἐπὶ τὴν ἠϊόνα· οἱ δὲ ἐπιχώριοι ταινίαις αὐτὸν καταστέψαντες, ἀποπέμπουσιν· εὐχόμενοι καὶ εἰς τὸ ἐπιὸν αὐτόν τε καὶ ἑαυτοὺς παραγενέσθαι· ὡς εὐετηρίας ὄντι σημείωι· ὡς ἱστορεῖ Ἰσίγονος ἐν δευτέρωι ἀπίστων:</p>
+        </div>
+      
+
+    </body>
+  </text>
+</TEI>
