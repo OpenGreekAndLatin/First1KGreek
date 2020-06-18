@@ -1,48 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>
-          <!-- hmmm -->
-        </title>
-        <title type="sub">an electronic transcription.</title>
-        <author>
-          <!-- it's in the javascript ... -->
-        </author>
-        <tei:respStmt xmlns:tei="http://www.tei-c.org/ns/1.0">
-          <tei:name>Fraser, Dawson</tei:name>
-          <tei:resp>proofreader</tei:resp>
-        </tei:respStmt>
-      </titleStmt>
-      <tei:publicationStmt xmlns:tei="http://www.tei-c.org/ns/1.0">
-        <tei:publisher>Open Greek and Latin (OGL)</tei:publisher>
-        <tei:idno type="filename">urn.cts.greekLit.tlg0580.tlg001.1st1K-grc1.xml</tei:idno>
-        <tei:pubPlace/>
-        <tei:availability>
-          <tei:licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</tei:licence>
-        </tei:availability>
-        <tei:date when="2020-05-06-03:00"/>
-      </tei:publicationStmt>
-      <sourceDesc>
-        <p>Anonymous; Öhler, Heinrich (1913). Paradoxographi Florentini anonymi Opusculum de aquis mirabilibus Vol. 1. H. Lauppii.</p>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <refsDecl>
-        <!-- TODO: I don't understand refsDecl -->
-        <cRefPattern matchPattern="" replacementPattern=""/>
-      </refsDecl>
-      <appInfo>
-        <application ident="Lace" version="0.6.0">
-          <desc>Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the<ref target="https://nbif.ca/en">NBIF</ref>.</desc>
-          <!-- these break TEI simple rng -->
-          <!--ptr target="#text"/>
-                    <ptr target="#refsDecl"/-->
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </teiHeader>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            
+            <titleStmt>
+                <title xml:lang="lat">Mirabilia de aquis</title>
+                <title type="sub">an electronic transcription.</title>
+                <author>Paradoxographus Florentinus</author>
+                <editor>Henrich Öhler</editor>
+                <!--<funder>Center for Hellenic Studies</funder>-->
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Proofreading</resp>
+                    <orgName>Mount Allison University</orgName>
+                    <persName>Dawson Fraser</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>CTS conversion</resp>
+                    <orgName>Perseus Digital Library</orgName>
+                    <persName>Lisa M. Cerrato</persName>
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher ref="https://www.opengreekandlatin.org">Open Greek and Latin</publisher>
+                <idno type="filename">tlg0580.tlg001.1st1K-grc1.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date type="proofreading">2020-05-06</date>
+                <date type="publication">2020-06-18</date>
+            </publicationStmt> 
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author xml:lang="lat">Paradoxographus Florentinus</author>
+                        <title xml:lang="lat">Paradoxographi Florentini Anonymi Opusculum De Aquis Mirabilibus: Ad Fidem Codicum Manu Scriptorum Ed. Commentario Instructum.</title>
+                        <editor>
+                            <persName><name>Henrich Öhler</name></persName>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Tübingen</pubPlace>
+                            <publisher>J. J. Heckenhauer</publisher>
+                            <date>1913</date>
+                        </imprint>
+                        <biblScope/>
+                    </monogr>
+                    <ref target="https://archive.org/details/b29006284/">The Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            
+            <editorialDecl>
+                <quotation marks="none"/>
+                <normalization>
+                    <p></p>
+                </normalization>
+                <correction>
+                    <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            
+        <refsDecl n="CTS">
+                    <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                        <p>This pointer pattern extracts sections</p>
+                    </cRefPattern>
+                </refsDecl>
+            
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2020-06-18" who="Lisa Cerrato">initial markup of new file</change>
+        </revisionDesc>
+    </teiHeader>
+  
   <text>
     <tei:body xmlns:tei="http://www.tei-c.org/ns/1.0">
       <tei:div type="primary_text">
