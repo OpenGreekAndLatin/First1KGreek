@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="eng">
+      <fileDesc>
+         
+         <titleStmt>
+            <title>Syrinx</title>
+            <title type="sub">an electronic transcription.</title>
+            <author>Theocritus</author>
+            <editor>A. S. F. Gow</editor>
+            <!--<funder>Center for Hellenic Studies</funder>-->
+            <respStmt>
+               <resp>Published original versions of the electronic texts</resp>
+               <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+               <persName role="principal">Gregory Crane</persName>
+               <persName role="principal">Leonard Muellner</persName>
+               <persName role="principal">Bruce Robertson</persName>
+            </respStmt>
+            
+            <respStmt>
+               <resp>Proofreading</resp>
+               <orgName>University of Virginia</orgName>
+               <persName>Rebecca Frank</persName>
+            </respStmt>
+            
+            <respStmt>
+               <resp>CTS conversion</resp>
+               <orgName>Perseus Digital Library</orgName>
+               <persName>Lisa M. Cerrato</persName>
+            </respStmt>
+         </titleStmt>
+         
+         <publicationStmt>
+            <publisher ref="https://www.opengreekandlatin.org">Open Greek and Latin</publisher>
+            <idno type="filename">tlg0005.tlg003.1st1K-grc1.xml</idno>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+            </availability>
+            <date>2020-06-24</date>
+         </publicationStmt> 
+
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <author>Theocritus</author>
+                  <title>Syrinx</title>
+                  <editor>
+                     <persName><name>A. S. F. Gow</name></persName>
+                  </editor>
+                  <imprint>
+                     <pubPlace>Oxford</pubPlace>
+                     <publisher>Clarendon Press</publisher>
+                     <date type="printing">1952</date>
+                  </imprint>
+                  <biblScope unit="volume"/>
+               </monogr>
+               <ref target="http://digital.slub-dresden.de/werkansicht/dlf/109395/188/">SLUB</ref>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         
+         <editorialDecl>
+            <quotation marks="none"/>
+            <normalization>
+               <p/>
+            </normalization>
+            <correction>
+               <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+            </correction>
+         </editorialDecl>
+         
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+         
+       <refsDecl n="CTS">
+          <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])">
+                        <p>This pointer pattern extracts lines.</p>
+                    </cRefPattern>
+                </refsDecl>
+      </encodingDesc>
+      
+      <profileDesc>
+         <langUsage>
+            <language ident="grc">Greek</language>
+         </langUsage>
+      </profileDesc>
+      
+      <revisionDesc>
+         <change when="2020-06-24" who="Lisa Cerrato">initial markup of new file</change>
+      </revisionDesc>
+   </teiHeader>              
+                  
+<text>
+<body>
+   <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1">                                                                              
+<l n="1" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl"><pb facs="bucogr_415773970_0188"/>Οὐδενὸς εὐνάτειρα Μακροπτολέμοιο δὲ μάτηρ </l>
+      <l n="2" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">μαίας ἀντιπέτροιο θοὸν τέκεν ἰθυντῆρα, </l>
+      <l n="3" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">οὐχὶ Κεράσταν ὅν ποτε θρέψατο ταυροπάτωρ, </l>
+      <l n="4" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ἀλλ᾽ ου πειλιπὲς αἶθε πάρος φρένα τέρμα σάκους, </l>
+<l n="5" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="editor">οὔνομ᾽ Ὅλον, δίζων, ὃς τᾶς μέροπος πόθον </l>
+      <l n="6" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">κούρας γηρυγόνας ἔχε τᾶς ἀνεμώδεος, </l>
+      <l n="7" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ὃς Μοίσᾳ λιγὺ πᾶξεν ἰοστεφάνῳ </l>
+      <l n="8" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ἕλκος, ἄγαλμα πόθοιο πυρισμαράγου, </l>
+      <l n="9" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ὃς σβέσεν ἀνορέαν ἰσαυδέα </l>
+      <l n="10" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="editor">παπποφόνου Τυρίας τ᾽ ἐ<add>ξήλασεν</add>. </l>
+      <l n="11" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ᾧ τόδε τυφλοφόρων ἐρατόν </l>
+      <l n="12" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">πῆμα Πάρις θέτο Σιμιχίδας· </l>
+      <l n="13" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ψυχὰν ᾇ, βροτοβάμων, </l>
+      <l n="14" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">στήτας οἶστρε Σαέττας, </l>
+      <l n="15" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="editor">κλωποπάτωρ, ἀπάτωρ, </l>
+      <l n="16" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">λαρνακόγυιε, χαρείς </l>
+      <l n="17" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ἁδὺ μελίσδοις </l>
+      <l n="18" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">ἔλλοπι κούρᾳ, </l>
+      <l n="19" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="ogl">Καλλιόπᾳ </l>
+      <l n="20" xml:base="urn:cts:greekLit:tlg0005.tlg003.1st1K-grc1" resp="editor">νηλεύστῳ. </l></div>
+
+</body></text></TEI>
