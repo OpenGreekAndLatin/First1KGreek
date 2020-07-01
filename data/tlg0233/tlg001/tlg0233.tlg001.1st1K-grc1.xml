@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+<title xml:lang="lat">Fragmentum (128)</title>
+<author>Hipponax</author>
+<editor>Paul Brandt</editor>
+<!--<funder>Center for Hellenic Studies</funder>-->
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                    
+                <respStmt>
+                    <resp>Proofreading</resp>
+                    <orgName>University of Virginia</orgName>
+                    <persName>Rebecca Frank</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>CTS conversion</resp>
+                    <orgName>Perseus Digital Library</orgName>
+                    <persName>Lisa M. Cerrato</persName>
+                </respStmt>
+            </titleStmt>
+                    
+        <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg0233.tlg001.1st1K-grc1.xml</idno>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date></date>
+            </publicationStmt> 
+                    
+ <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Hipponax</author>
+                        <title xml:lang="lat">Corpusculum Poesis Epicae Graecae Ludibundae</title>
+                        <editor>
+                            <persName><name>Paul Brandt</name></persName>
+                        </editor>
+                        <imprint>
+                            <pubPlace>Leipzig</pubPlace>
+                            <publisher>Teubner</publisher>
+                            <date type="printing">1888</date>
+                        </imprint>
+                        <biblScope unit="volume">1</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/corpusculumpoesi01lipsuoft/page/34/mode/2up">The Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+          <editorialDecl>
+                <quotation marks="none"/>
+                <normalization>
+                    <p></p>
+                </normalization>
+                <correction>
+                    <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>       
+            <refsDecl n="CTS">
+                    <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                        <p>This pointer pattern extracts sections</p>
+                    </cRefPattern>
+                </refsDecl>
+        </encodingDesc>
+    <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2020-07-01" who="Lisa Cerrato">there is a great deal not done here: no live cross references to Homer, no commentary cross references or linked app crit, etc.</change>
+            <change when="2020-06-30" who="Lisa Cerrato">initial markup of new file</change>
+        </revisionDesc>
+    </teiHeader>
+
+                    
+<text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1" xml:lang="grc">
+<!--<div type="primary_text">-->
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1" n="frag128">
+<head rend="center" xml:lang="lat">Hipponactis fragmentum</head>
+<p><pb facs="corpusculumpoesi01lipsuoft_0035"/>
+<lb n="1" resp="ogl" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1"/>Μοῦσά μοι Εὐρυμεδοντιάδεα, τὴν πολτοχάρυβδιν, 
+<lb n="2" resp="ogl" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1"/>τὴν ἐγγαστριμάχαιραν, ὃς ἐσθίει οὐ κατὰ κόσμον, 
+<lb n="3" resp="ogl"  xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1"/>ἔννεφʼ, ὅπως ψηφῖσιν <add>ἀγεὶς</add> κακὸν οἶτον ὄληται 
+<lb n="4" resp="ogl" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1"/>βουλῇ δημοσίῃ παρὰ θῖνʼ ἁλὸς ἀτρυγέτοιο. </p>
+</div>
+                    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1" n="similes">
+<head rend="center" xml:lang="lat">HOMERI LOCI SIMILES</head>
+<p corresp="#1"><num>1</num> ἄνδρα μοι ἔννεπε, Μοῦσα <bibl>α 1</bibl></p>
+<p corresp="#2"><num>2</num> ἐπεὶ σύ περ οὐ κατὰ κόσμον | αἰτίζεις <bibl>υ 181</bibl> sq.</p> 
+<p corresp="#3"><num>3</num> σὺ δέ κεν κακὸν οἶτον ὄληαι* <bibl>Γ 417</bibl></p> 
+<p corresp="#3">κακὸς κακὸν ἡγηλάζει* <bibl>ρ 217</bibl></p>
+<p corresp="#4"><num>4</num> παρὰ θῖνʼ ἁλὸς ἀτρυγέτοιο* <bibl>Α 316</bibl></p>
+</div>                   
+                    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1" n="testimonium">
+<head rend="center" xml:lang="lat">TESTIMONIVM</head>                    
+<p><bibl>Ath. XV 698b</bibl>: Πολέμων δʼ ἐν τῷ δωδεκάτῳ τῶν πρὸς Τίμαιον περὶ τῶν τὰς παρῳδίας γεγραφότων ἱστορῶν τάδε γράφει ... <q>εὐρετὴν μὲν οὖν τοῦ γένους Ἱππώνακτα φατέον τὸν ἰαμβοποιόν. λέγει γὰρ οὕτως ἐν τοῖς ἑξαμέτροις·  <q>Μοῦσα — ἀτρυγέτοιο</q></q>. </p>                   
+</div>                                     
+                    
+<!--<div type="translation"/>-->
+                    
+<!--<div type="app_crit">-->
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1:1" n="variants">
+<head rend="center" xml:lang="lat">VARIETAS LECTIONIS</head>
+<p><foreign xml:lang="lat">ln testimonio</foreign> Ἱππώνακτε φατέον <foreign xml:lang="lat">Α</foreign> ἐν τόνοις ἑξαμέτροις <foreign >Meineke</foreign> οὗτος <foreign xml:lang="lat">Α</foreign>, οὕτως <foreign xml:lang="lat">Schrader</foreign> <num>1</num> πολτοχάρυβδιν <foreign xml:lang="lat">Wachsmuth:</foreign> ποντοχάρυβδιν <foreign xml:lang="lat">Α</foreign>, παντοχάρυβδιν <foreign xml:lang="lat">Bergk in Poet. Lyr. Graec. editione prima et Meineke</foreign> <num>2</num> ἐνγαστριμαχαιρανος <foreign xml:lang="lat">Α</foreign> <num>3</num> ψηφῖσιν <add>ἀγεὶς</add> <foreign xml:lang="lat">Stadtmueller:</foreign> ψηφῖδι <foreign xml:lang="lat">Α</foreign>, κακὸς <foreign xml:lang="lat">suppl. Cobet pro vulgato</foreign> κακῇ ὀλεῖται <foreign xml:lang="lat">Cobet probante Tenbrinkio et Meinekio.</foreign> 
+</p></div>
+                   
+<!--<div type="commentary">-->
+ <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0233.tlg001.1st1K-grc1:1" n="commentary">
+<head rend="center" xml:lang="lat">COMMENTARIVS</head>
+<p xml:lang="lat"><label rend="bold">V. l.</label> <q>Corrige <foreign xml:lang="grc">πολτοχάρυβδιν</foreign>; nequaquam enim <foreign xml:lang="grc">ποντοφάρυγξ</foreign> potest comparari; ipsa vero <foreign xml:lang="grc">Χάρυβδις</foreign> a qua imago ducitur, maritima est. Pessime igitur dicitur <foreign xml:lang="grc">ποντοχάρυβδις</foreign>. Immo fuit addendum aliquid quo vel ubi habitet altera illa Charybdis significetur (ut <foreign xml:lang="grc">γαστροχάρυβδις</foreign> quidam <pb facs="corpusculumpoesi01lipsuoft_0036"/>audit apud Cratinum Ι 121 Kock) vel quid devoret. Alterum praetuli; cf. Ps.-Plautinum parasitum cui nomen fuit <foreign xml:lang="grc">Πολτοφαγωνίδης</foreign> (cf. Ritschl op. IIl p. 328)</q>. Wachsmuthius. <label rend="bold">V. 2.</label> Hesychius: <foreign xml:lang="grc">ἐγγαστριμάχαιραν· τὴν ἐν τῇ γαστρὶ κατατέμνουσαν</foreign>. Cf. <foreign xml:lang="grc">ἐγγαστρίμυθος, ἐγγαστρίμαντις</foreign>. <label rend="bold">V. 3.</label> <foreign xml:lang="grc">ὅπως — ὄληται</foreign> finali sensu accipiendum esse supra p. 33 adnotavi. <q>Verba <foreign xml:lang="grc">παρὰ θῖνʼ ἁλὸς ἀτρυγέτοιο</foreign> docent <foreign xml:lang="grc">ψηφῖδα</foreign> nomen non de suffragiis esse usurpatum (sic enim vulgo interpretabantur ut <foreign xml:lang="grc">ψηφίς</foreign> dicatur pro <foreign xml:lang="grc">ψῆφος</foreign>, cuius usus nullum exstat exemplum), sed de silicibus: sunt enim <foreign xml:lang="grc">ψηφῖδες</foreign> proprie lapilli qui in litoribus inveniuntur: <foreign xml:lang="grc">αἱ ἐν τοῖς αἰγιαλοῖς ψηφῖδες (ἐν τοῖς αἰγιαλοῖς = παρὰ θῖνʼ ἁλός)</foreign> Luc. pisc. 35, Tim. 5, Parasit. 52; fortasse scribendum <foreign xml:lang="grc">ὅπως ψηφῖσιν ἀγεὶς κακὸν οἶτον ὄληται βουλῇ</foreign> (an <foreign xml:lang="grc">ψηφῖσι ῥαγεὶς</foreign> vel <foreign xml:lang="grc">δαρείς</foreign>, lapidibus laceratus, contusus?)</q>. Stadtmuellerus. Bergkio in editione quarta videtur <foreign xml:lang="grc">Ψηφῖδι</foreign> scribendum <q>ut loci sit appellatio</q> eius fortasse <q>ubi tunc populus Ephesius suffragia ferebat</q>. Omnium adhuc plausum tulerat Cobetus supplendo <foreign xml:lang="grc">κακός</foreign>. <label rend="bold">V. 4.</label> Verba incorrupta <foreign xml:lang="grc">βουλῇ δημοσίῃ</foreign> infeliciter temptarunt Cobetus, Hartungius, Bergkius olim. </p></div>
+</div></body></text></TEI>
