@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader xml:lang="eng">
         <fileDesc>
             <titleStmt>
                 <title xml:lang="grc">Περὶ τῶν παρὰ Δημοσθένει σχημάτων</title>
-                <author xml:lang="lat">Tiberius Rhetor</author>
+                <author>Tiberius Rhetor</author>
                 <editor>Leonhard von Spengel</editor>
-                <principal>Gregory Crane</principal>
-                <tei:respStmt xmlns:tei="http://www.tei-c.org/ns/1.0">
-                    <tei:name>Michael Konieczny</tei:name>
-                    <tei:resp>proofreader</tei:resp>
-                </tei:respStmt>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Proofreading and CTS conversion</resp>
+                    <persName>Michael Konieczny</persName>
+                    <orgName/>
+                </respStmt>
             </titleStmt>
-            <tei:publicationStmt xmlns:tei="http://www.tei-c.org/ns/1.0">
-                <tei:publisher>Open Greek and Latin (OGL)</tei:publisher>
-                <tei:idno type="filename">urn.cts.greekLit.tlg2601.tlg001.1st1K-grc1.xml</tei:idno>
-                <tei:pubPlace/>
-                <tei:availability>
-                    <tei:licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</tei:licence>
-                </tei:availability>
-                <tei:date when="2020-07-05"/>
-            </tei:publicationStmt>
+            
+                <publicationStmt>
+                    <publisher>Open Greek and Latin</publisher>
+                    <idno type="filename">tlg2601.tlg001.1st1K-grc1.xml</idno>
+                    <availability>
+                        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                    </availability>
+                    <date>2020-07-05</date>
+                </publicationStmt> 
+                
+            
             <sourceDesc>
              <biblStruct>
                 <monogr>
@@ -39,26 +49,35 @@
              </biblStruct>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
+        
+        <encodingDesc>    
+            <editorialDecl>
+                <quotation marks="none"/>
+                <normalization>
+                    <p></p>
+                </normalization>
+                <correction>
+                    <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+
             <refsDecl n="CTS">
                 <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
                 <p>This pointer pattern extracts sections</p>
                 </cRefPattern>
             </refsDecl>
-            <appInfo>
-                <application ident="Lace" version="0.6.0">
-                    <desc>Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the
-                        <ref target="https://nbif.ca/en">NBIF</ref>.
-                    </desc><!--these break TEI simple rng --><!--ptr target="#text"/>
-                    <ptr target="#refsDecl"/-->
-                </application>
-            </appInfo>
         </encodingDesc>
+        
         <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
             </langUsage>
         </profileDesc>
+        
+        <revisionDesc>
+            <change when="2020-07-15" who="Lisa Cerrato">markup review</change>
+            <change when="2020-07-05" who="Michael Konieczny">initial markup of new file</change>
+        </revisionDesc>
     </teiHeader>
     
 <text>
