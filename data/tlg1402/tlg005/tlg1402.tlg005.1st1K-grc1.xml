@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="lat">Fragmenta Hephaestionea</title>
+				<author>Hephaestion</author>
+				<editor>Maximilian Consbruch</editor>
+				<funder>Center for Hellenic Studies</funder>
+
+				<respStmt>
+					<resp>Published original versions of the electronic texts</resp>
+					<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+					<persName role="principal">Gregory Crane</persName>
+					<persName role="principal">Leonard Muellner</persName>
+					<persName role="principal">Bruce Robertson</persName>
+				</respStmt>
+
+				<respStmt>
+					<resp>Proofreading</resp>
+					<persName>Madeline McIntire</persName>
+					<orgName>Mt. Allison University</orgName>
+				</respStmt>
+
+				<respStmt>
+					<resp>CTS conversion</resp>
+					<persName>Michael Konieczny</persName>
+					<orgName>Center for Hellenic Studies</orgName>
+				</respStmt>
+			</titleStmt>
+
+			<publicationStmt>
+				<publisher>Open Greek and Latin</publisher>
+				<idno type="filename">tlg1402.tlg005.1st1K-grc1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+				</availability>
+				<date>2020-08-01</date>
+			</publicationStmt>
+
+
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title xml:lang="lat">Hephaestionis Enchiridion cum commentariis veteribus</title>
+						<author>Hephaestion</author>
+						<editor>Maximilian Consbruch</editor>
+						<imprint>
+							<pubPlace>Leipzig</pubPlace>
+							<publisher>Teubner</publisher>
+							<date>1906</date>
+						</imprint>
+					</monogr>
+					<ref target="https://archive.org/details/hephaestionisenc00heph/page/n111/mode/2up">The
+						Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc>
+			<editorialDecl>
+				<quotation marks="none"/>
+				<normalization>
+					<p/>
+				</normalization>
+				<correction>
+					<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+						University. Developed through the support of the <ref target="https://nbif.ca/en"
+							>NBIF</ref>.</p>
+				</correction>
+			</editorialDecl>
+
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+)" n="fragment"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+					<p>This pointer pattern extracts fragments.</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+			</langUsage>
+		</profileDesc>
+
+		<revisionDesc>
+			<change when="2020-08-02" who="Michael Konieczny">initial markup of new file</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<div type="edition" n="urn:cts:greekLit:tlg1402.tlg005.1st1K-grc1" xml:lang="grc">
+				<div type="textpart" subtype="fragment" n="1">
+					<p><pb facs="hephaestionisenc00hephuoft_0110"/>schol. in Hermog. RhG VII 892,10 ῥυθμὸς...,
+						ὡς δὲ Ἀριστόξενος καὶ Ἡφαιστίων φασί, χρόνων τάξις. χρόνος δέ ἐστι μόριον ποδὸς ἢ φωνῆς
+						μέτρον ἐλάχιστον ἢ μέτρον τι κινήσεως, καὶ ὥσπερ ἐκ χειρῶν τυχὸν καὶ ποδῶν μερῶν ὄντων
+						καὶ τῶν ἄλλων ὁ ἄνθρωπος συνίσταται, ὅς ἐστιν εἶδος, οὕτως ἐκ συνθήκης καὶ <pb
+							facs="hephaestionisenc00hephuoft_0111"/>ἀναπαύσεως γίνεται ὁ ῥυθμός, ἐκ μερῶν ὄντων
+						ἐκείνων, αὐτὸς ὥσπερ εἶδος ὥν. </p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="2">
+					<p>schol. in Hermog. RhG VII 983,26 ἐν τῷ περὶ μέτρων φησὶν ὁ Ἡφαιστίων ὅτι συγγένεια
+						γίνεται μέτρου πρὸς μέτρον τριχῶς, κατὰ ἀφαίρεσιν, κατὰ πρόσθεσιν, <add>κατὰ
+							μετάθεσιν</add>· οἷον ἐὰν ἀφείης τοῦ <quote rend="blockquote"><lb/>μῆνιν ἄειδε θεά
+						</quote><lb/>τὴν πρώτην συλλαβήν, ποιεῖς ἀντὶ δακτυλικοῦ μέτρου ἀναπαιστικόν· οὕτως οὖν
+						καὶ τὸ ἰωνικὸν ἀπὸ μείζονος συγγενές ἐστι τῷ τροχαϊκῷ κατὰ μετάθεσιν· τοῦ γὰρ ἰωνικοῦ
+						ἀπὸ μείζονος ἐκ μακρῶν δύο καὶ δύο βραχειῶν ὄντος, ἔξεστι μεταθεῖναι καὶ ποιῆσαι
+						διτρόχαιον ἐκ μακρᾶς καὶ βραχείας καὶ μακρὰς καὶ βραχείας. ἰωνικοὶ δὲ καλοῦνται, ἐπειδὴ
+						Ἰώνων εἰσὶν εὕρημα· μαλακὸν τὸ μέτρον καὶ τρυφερώτατον, ᾧ καὶ Σωτάδης ἐχρήσατο, ὥς φησιν
+						Δογγῖνος. </p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="3">
+					<p>schol. in Hermog. RhG VII 936,26 ἰστέον ὅτι Ἀφαιστίων φυσικὰ μέτρα γενικὰ βούλεται
+						εἶναι ἐννέα· δακτυλικόν, ἀναπαιστικόν, ἰαμβικόν, τροχαϊκόν, ἀντισπαστικόν, χοριαμβικόν,
+						ἰωνικὸν ἀπὸ μείζονος, ἰωνικὸν <pb facs="hephaestionisenc00hephuoft_0112"/>ἀπʼ ἐλάττονος,
+						κρητικόν· τὰ δὲ παρὰ ταῦτα καλεῖ ἀσυνάρτητα καὶ συγκεχυμένα. </p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="4">
+					<p>schol. in Hermog. RhG VII 982,15 ὁ τροχαῖος τροχαλὸν ποιεῖ τὸν λόγον, διὸ τροχαῖος
+						καλεῖται ὁ τῶν τρεχόντων ῥυθμός, ὥς φησιν Λογγῖνος ὁ φιλολόγος, † ὅθεν καὶ ἴαμβος
+						καλεῖται ἀπὸ τοῦ ἰαμβίζειν, ὅ ἐστι λοιδορεῖν· τοῦτο δὲ ποιοῦσιν οἱ κωμικοὶ οἱ τῷ ἰάμβῳ
+						χρησάμενοι. (ἐπεὶ οὖν καὶ οἱ τρέχοντες καὶ ὑβρίζοντες σπουδῇ τοῦτο ποιοῦσιν, οὐ δεῖ ἐν
+						σεμνότητι χρῆσθαι τούτοις τροχαίῳ καὶ τῷ συγγενεῖ αὐτῷ ἰωνικῷ οὐδὲ ἰαμβικῷ ἐπιπολύ).
+					</p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="5">
+					<p>schol. in Hermog. RhG VII 985,1 δεῖ οὖν ἄνευ προσθήκης καὶ ἀφαιρέσεως μεθαρμόσαι τὰ ἔπη
+						οὕτως· <lb/>ὡς ὁ πρόσθʼ ἵππων τανυσθεὶς κεῖτο καὶ δίφρου· <lb/>ὁ δὲ δεύτερος κατὰ μὲν
+						Λογγῖνόν ἐστι χοριαμβικός. </p>
+				</div>
+			</div>
+
+			<!--<div type="apparatus" n="urn:cts:greekLit:tlg1402.tlg005.1st1K-grc1" xml:lang="mul">
+				<div type="textpart" subtype="fragment" n="1">
+					<p><pb facs="hephaestionisenc00hephuoft_0110"/>20 ὥς φησιν Ἀριστόξενος ἢ Ἡφαιστίων Max.
+						Plan. <pb facs="hephaestionisenc00hephuoft_0111"/></p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="2">
+					<p>7 κατὰ μετάθεσιν addidi || 12 prius δύο om. cod. Par. 2977, alterum cod. Par. 1983 <pb
+							facs="hephaestionisenc00hephuoft_0112"/></p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="5">
+					<p>17 δεύτερος] referend. ad vers. αἱματοέσσης κόνιος δεδραγμένος βεβρυχός (Hermog. II
+						295,16). <pb facs="hephaestionisenc00hephuoft_0115"/></p>
+				</div>
+
+			</div>
+
+			<div type="commentary" n="urn:cts:greekLit:tlg1402.tlg005.1st1K-grc1" xml:lang="mul">
+				<div type="textpart" subtype="fragment" n="1">
+					<p><pb facs="hephaestionisenc00hephuoft_0110"/>I. Aristox. ῥυθμ. στοιχ. frg. 1; 19—20 ex
+						scholiis fluxit ad Max. Plan. RhG V 454,20; cf. Proll. Long. 82,1 sqq. <pb
+							facs="hephaestionisenc00hephuoft_0111"/></p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="2">
+					<p>II. cf. schol.ᴮ c. III p. 5,20 sqq. c. VII p. 9,9 sqq. Ar. Quint. 36,15. M. Vict. VI
+						63,16. 94,15. 102,12 || 7 Ioa. Sic. RhG VI 237,26—30. schol.ᴬ 121,18. 131,2 sqq.
+						|| 14 ἰωνικοὶ] An. Ambr. AV 228,13—17. Choer. 61,19. — </p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="3">
+					<p>III. ex scholiis desumpser. Max. Plan. RhG V 473,7—12. Ps.-Castor RhG III 712,4 sqq.
+						(§ 1 ed. Studem. Vratisl. 1888) || 20 φυσικὸν μέτρον ap. Hermog. II 280,3 (Speng.), ad
+						γενικά cf. p. 63,10 <pb facs="hephaestionisenc00hephuoft_0112"/></p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="4">
+					<p>IV. ex Longini commentario Hephaest. desumpt. || 4 τροχαῖος] Choer. 58,16. An. Ambr.
+						AV 223,2. 7. schol.ᴮ (lib. V) p. 28,11. An. Chis. AV 206,5 || 7 ἴαμβος] schol.ᴮ (lib.
+						V) p. 18,12 28,9. Choer. 59,4. An. Chis. AV 206,17 || 11 cf. p. 77,10V, </p>
+				</div>
+
+				<div type="textpart" subtype="fragment" n="5">
+					<p>ex Longini commentario Hephaest. || προσθήκης καὶ ἀφαιρέσεας] p. 77,6 || 16 versus ex
+						Hermog. sumpt. II 295,15 (Speng.) <pb facs="hephaestionisenc00hephuoft_0115"/></p>
+				</div>
+
+			</div>-->
+
+		</body>
+	</text>
+</TEI>
