@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="lat">Prolegomena Longini commentariique reliquiae</title>
+				<author>Cassius Longinus</author>
+				<editor>Maximilian Consbruch</editor>
+				<funder>Center for Hellenic Studies</funder>
+
+				<respStmt>
+					<resp>Published original versions of the electronic texts</resp>
+					<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+					<persName role="principal">Gregory Crane</persName>
+					<persName role="principal">Leonard Muellner</persName>
+					<persName role="principal">Bruce Robertson</persName>
+				</respStmt>
+
+				<respStmt>
+					<resp>Proofreading</resp>
+					<persName>Madeline McIntire</persName>
+					<orgName>Mt. Allison University</orgName>
+				</respStmt>
+
+				<respStmt>
+					<resp>CTS conversion</resp>
+					<persName>Michael Konieczny</persName>
+					<orgName>Center for Hellenic Studies</orgName>
+				</respStmt>
+			</titleStmt>
+
+			<publicationStmt>
+				<publisher>Open Greek and Latin</publisher>
+				<idno type="filename">tgl2178.tlg004.1st1K-grc1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+				</availability>
+				<date>2020-08-02</date>
+			</publicationStmt>
+
+
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title xml:lang="lat">Hephaestionis Enchiridion cum commentariis veteribus</title>
+						<author>Hephaestion</author>
+						<editor>Maximilian Consbruch</editor>
+						<imprint>
+							<pubPlace>Leipzig</pubPlace>
+							<publisher>Teubner</publisher>
+							<date>1906</date>
+						</imprint>
+					</monogr>
+					<ref target="https://archive.org/details/hephaestionisenc00heph/page/n115/mode/2up">The
+						Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc>
+			<editorialDecl>
+				<quotation marks="none"/>
+				<normalization>
+					<p/>
+				</normalization>
+				<correction>
+					<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+						University. Developed through the support of the <ref target="https://nbif.ca/en"
+							>NBIF</ref>.</p>
+				</correction>
+			</editorialDecl>
+
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+).(\w+)" n="section"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+					<p>This pointer pattern extracts fragment and section.</p>
+				</cRefPattern>
+
+				<cRefPattern matchPattern="(\w+)" n="fragment"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+					<p>This pointer pattern extracts fragments.</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+			</langUsage>
+		</profileDesc>
+
+		<revisionDesc>
+			<change when="2020-08-02" who="Michael Konieczny">initial markup of new file</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<div type="edition" n="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1" xml:lang="grc">
+				<div type="textpart" subtype="fragment" n="1">
+					<div type="textpart" subtype="section" n="1">
+						<head rend="center"><pb facs="hephaestionisenc00hephuoft_0115"/>Τὰ προλεγόμενα εἰς τὸ
+							τοῦ Ἡφαιστίωνος ἐγχειρίδιον</head>
+						<p rend="indent">Ἀλλʼ εἴτε νέα τῶν μέτρων ἡ θεωρία εἴτε Μούσης εὕρημα παλαιᾶς ἑκάτερον
+							ἕξει καλῶς. ἀρχαία ὲν γὰρ οὖσα ἐκ τῆς παλαιότητος ἕξει τὴν σεμνότητα, νέα δὲ οὖσα
+							ποθεινοτέρα καθʼ Ὅμηρον (α 351)· <quote rend="blockquote"><lb/>τὴν γὰρ ἀοιδὴν πάντες
+								ἐπικλείουσʼ ἄνθρωποι, <lb/>ἥτις ἀϊόντεσσι νεωτάτη ἀμφιπέληται. </quote></p>
+						<p rend="indent">Μέτρου δὲ πατὴρ ῥυθμὸς καὶ θεός· ἀπὸ ῥυθμοῦ ὰρ ἔσχε τὴν ἀρχήν, θεὸς δὲ
+							τὸ μέτρον ἀνεφθέγξατο. </p>
+						<div type="textpart" subtype="section" n="2">
+							<p rend="indent"><pb facs="hephaestionisenc00hephuoft_0115"/>Τοῦ δὲ περὶ μέτρων λόγου
+								πολλοὶ πολλαχῶς ἤρξαντο, οἱ μὲν ἀπὸ στοιχείων ὡς Φιλόξενος, οἱ δὲ ἀπὸ τοῦ μέτρων
+								ὅρου ὡς Ἡλιόδωρος· ἡμεῖς δὲ ʼHφαιστίωνι κατακολουθήσομεν ἀπὸ συλλαβῆς ἀρξάμενοι.
+								ρῶτον δὲ ὀλίγα προειπεῖν δίκαιον. <pb facs="hephaestionisenc00hephuoft_0116"/></p>
+						</div>
+
+						<div type="textpart" subtype="section" n="3">
+							<p rend="indent">Κριτήριον μέτρου ἀκοή. ἔνιοι γοῦν οὕτως ὡρίσαντο· μέτρον ἐστὶ ποδῶν ἢ
+								βάσεων σύνταξις αἰσθήσει τῇ διʼ ἀκοῆς παραλαμβανομένη. εἰ δὲ τὸ κρῖνόν ἐστιν ἀκοή,
+								τὸ κοσμοῦν ἐστι φωνή. ὡς γὰρ τὸν ἦχον ῆς εὐρυθμίας ἐκτείνουσά τε καὶ συστέλλουσα
+									<add>ἡ</add> φωνὴ σχηματίζει τὰς συλλαβάς, οὕτως εἰσδεξαμένη κρίνει ἡ ἀκοή. διὰ
+								τοῦτο πολλὰ τῶν μέτρων συμβέβηκεν ἀποκρύπτεσθαι σιωπώμενα ἐν τῇ κατὰ πεζὸν ῥήσει·
+								καὶ αὖ πάλιν πολλὰς συνεμπτώσεις ἔχει πρὸς λλα μέτρα. εὕροι γοῦν ἄν τις παρὰ
+								Δημοσθένει τῷ ῥήτορι στίχον ἡρωϊκὸν κεκρυμμένον, ὃς ἠδυνήθη λαθεῖν διὰ τὸ πεζὴν
+								οὖσαν τὴν προφορὰν συναρπάσαι τῷ λόγῳ τὴν ἀκοήν. φησὶ γοῦν (de cor. 143) <quote
+									rend="blockquote">
+									<lb/>τὸν γὰρ ἐν Ἀμφίσσῃ πόλεμον, διʼ ὅν εἰς Ἐλάτειαν <lb/>ἦλθε Φίλιππος.
+								</quote><lb/>στίχος ἐστὶν ἡρῷος· ἀλλὰ μὴν καὶ Ἰωνικόν, ὅταν λέγῃ (Ol. III 4) <quote
+									rend="blockquote"><lb/>πολλῶν δὲ λόγων καὶ θορύβου γιγνομένου παρʼ ὑμῖν. </quote>
+								<lb/>τοῦτο γὰρ ἄντικρυς Ἰωνικόν ἐστιν ἀπὸ μείζονος ὅμοιον ῷ (Sapph. 76 = Heph. 36,
+								17) <quote rend="blockquote"><lb/>εὐμορφοτέρα Μνασιδίκα τᾶς ἁπαλᾶς Γυρίννως.
+								</quote><lb/>τὰς δὲ τῶν μέτρων συνεμπτώσεις ἐν τοῖς ἑξῆς ἐπιδείξομεν. <pb
+									facs="hephaestionisenc00hephuoft_0117"/></p>
+						</div>
+
+						<div type="textpart" subtype="section" n="4">
+							<p rend="indent">Διαφέρει δὲ μέτρον ῥυθμοῦ. ὕλη μὲν γὰρ τοῖς μέτροις ἡ συλλαβὴ καὶ
+								χωρὶς συλλαβῆς οὐκ ἂν γένοιτο μέτρον, ὁ δὲ ῥυθμὸς γίνεται μὲν καὶ ἐν συλλαβαῖς,
+								γίνεται δὲ καὶ χωρὶς συλλαβῆς· καὶ γὰρ ἐν κρότῳ· ὅταν μὲν γὰρ τοὺς χαλκέας ἴδωμεν
+								τὰς σφύρας καταφέροντας, ἅμα τινὰ καὶ ῥυθμὸν ἀκούομεν. καὶ ἵππων δὲ πορεία ῥυθμὸς
+								ἐνομίσθη καὶ κίνησις δακτύλων καὶ μελῶν σχήματα καὶ χορδῶν κινήματα καὶ τῶν ὀρνίθων
+								τὰ πτερυγίσματα. μέτρον δὲ οὐκ ἂν γένοιτο χωρὶς λέξεως ποιᾶς καὶ ποσῆς. Ἔτι τοίνυν
+								διαφέρει ῥυθμοῦ ὸ μέτρον, ᾗ τὸ μὲν μέτρον πεπηγότας ἔχει τοὺς χρόνους, μακρόν τε καὶ
+								βραχύν καὶ τὸν μεταξὺ τούτων τὸν κοινὸν καλούμενον, ὃς καὶ αὐτὸς πάντως μακρός ἐστιν
+								ἢ βραχύς· ὁ δὲ ῥυθμὸς ὡς βούλεται ἕλκει τοὺς χρόνους. πολλάκις γοῦν καὶ τὸν βραχύν
+								χρόνον ποιεῖ ακρόν. Ὅτι δὲ τοῦτο οὕτως ἔχει καὶ τὴν διαφορὰν ἴσασιν οἱ ποιηταί,
+								λάβωμεν παράδειγμα ἀπὸ παιζούσης κωμῳδίας ἐν σπουδαζούσῃ φιλοσοφίᾳ· ὁ γοῦν
+									<del>Ἀριστοφάνης</del> ἐν ταῖς Νεφέλαις (638) φησὶ Σωκράτης, εἰ καὶ τωθάζει
+								Ἀριστοφάνης· <quote rend="blockquote"><lb/>πότερον περὶ μέτρων ἢ περὶ ἐπῶν ἢ ῥυθμῶν·
+								</quote><lb/>ἀντιδιέστειλε γὰρ ἐκεῖνος ἀπὸ ῥυθμῶν τὰ μέτρα· εἰς ἑκάτερον γοῦν τὸ
+								παράδειγμα σημειωτέον, ὅτι τε ῥυθμὸς μέτρου διαφέρει καὶ ὅτι ἴσασιν ἐν διδασκαλίᾳ οἱ
+								παλαιοὶ τὴν τῶν μέτρων θεωρίαν. <pb facs="hephaestionisenc00hephuoft_0118"/></p>
+						</div>
+
+						<div type="textpart" subtype="section" n="5">
+							<p rend="indent">Το δὲ μέτρον λέγεται πολλαχῶς. καὶ γὰρ τὴν εὐμετρίαν μέτρον
+								προσαγορεύομεν ὡς ὁ εἰπὼν μέτρον ἄριστον — εἴτε σοφὸν ἀπόφθεγμα εἶτε θεῖον ἀνάθημα.
+								Ἀπόλλωνι μὲν γὰρ ἁρμοδιώτατον, ἐπεὶ καὶ μέτρων ὑρετής. — Λέγεται δὲ μέτρον καὶ αὐτὸ
+								τὸ μετροῦν καὶ τὸ μετρούμενον· ὡς ὅταν εἴπωμεν τὸν μέδιμνον μέτρον καὶ τὸ ἐν αὐτῷ
+								μετρηθὲν <del>μέτρον</del>, ἀμφότερα δὲ καλεῖται μέδιμνος· καὶ αὖ πάλιν εἰ εἴποιμι
+								χόα τὸ σκεῦος, ἐν ᾧ μετρῶ ποσότητά τινα, καὶ <del>αὖ πάλιν</del> ὐτὴν τὴν ποσότητα
+								χόα <del>προσαγορεύομεν</del>· — καὶ αὖ πάλιν αὐτὸ τὸ ξύλον, ὃ μόνον ἔχει πῆχυν,
+								πῆχυν προσαγορεύομεν· – οὕτως μὲν οὖν καὶ ἐπὶ ταύτης τῆς θεωρίας πολλαχόθεν λέγεται
+								μέτρον· Μέτρον τε γὰρ καλοῦμεν πᾶν τὸ μὴ πεζόν, ὡς ὅταν εἴπω τὰ ὲν Πλάτωνος πεζά, τὰ
+								δὲ Ὁμήρου μέτρα. μέτρον καλεῖται καὶ εἶδος ἕκαστον, ὡς ὅταν εἴπω μέτρον ἰωνικὸν καὶ
+								μέτρον ἰαμβικὸν καὶ μέτρον τροχαϊκόν. μέτρον καλεῖται καὶ στίχος ἕκαστος, ὡς ὅταν
+								εἴπω· ἡ πρώτη Ὁμήρου ῥαψῳδία μέτρα ἔχει ἑξακόσια <add>καὶ δέκα</add> – τοῦτο δὲ
+								Ὀδυσσεὺς ὁ μετρικὸς ἐσημειώσατο· – ἔτι τοίνυν μέτρον καλοῦμεν τὴν συζυγίαν,
+									τουτέστι<pb facs="hephaestionisenc00hephuoft_0119"/> τὴν διποδίαν, ὡς ὅταν τὸ
+								ἰαμβικὸν τὸ ἀπὸ ἕξ ποδῶν συγκείμενον τρίμετρον καλῶμεν. <add>μέτρον καλοῦμεν καὶ τὸν
+									πόδα ......</add>. μέτρον καλοῦμεν καὶ τὸν χρόνον, ὅν τινες τῶν ῥυθμικῶν σημεῖον
+								προσαγορεύουσιν. ὅτι δὲ τοῦτο οὕτως ἔχει, παράδειγμα τεθήσεται, ὅ τινες μὲν Ὀρφέως,
+								τινὲς δὲ τῆς Πυθίας ὑπολαμβάνουσι· περὶ γὰρ τῶν ἐπῶν λέγων ἢ λέγουσα <quote
+									rend="blockquote"><lb/>ὄρθιον ἑξαμερὲς τετόρων καὶ εἴκοσι μέτρων. </quote></p>
+							<p rend="indent">Καὶ ταῦτα οὕτως ἔχει ὥσπερ εἴρηκα. μέτρον γὰρ καὶ ὸ μετροῦν καὶ τὸ
+								μετρούμενον· οὕτως καὶ ἐπὶ τῶν προειρημένων αὐτὸ τὸ μετρούμενον τουτέστι τὸ ποίημα
+								μέτρον προσαγορεύεται, καὶ ἕκαστον τῶν μετρούντων τῆς ὁμοίας τετύχηκεν ὀνομασίας.
+								χρόνος γὰρ συλλαβὴν ποιεῖ, συλλαβὴ δὲ πόδα, ποὺς δὲ συζυγίαν, συζυγία δὲ στίχον,
+								στίχος δὲ ποίημα. πάντα οὖν εἰκότως μέτρα προσαγορεύεται. </p>
+						</div>
+
+						<div type="textpart" subtype="section" n="6">
+							<p rend="indent">Γέγονε δὲ ἀπὸ τοῦ μείρω ῥήματος, ὅ ἐστι μερίζω, ἀφʼ οὗ παρὰ τῷ ποιητῇ
+								(I 612) <quote rend="blockquote"><lb/>ἶσον ἐμοὶ βασίλευε καὶ ἥμισυ μείρεο τιμῆς.
+								</quote><lb/>ὡς γὰρ παρὰ τὸ σείω σεῖστρον γίνεται καὶ παρὰ τὸ δέρω δέρτρον καὶ παρὰ
+								τὸ φέρω φέρτρον, οὕτω καὶ παρὰ τὸ μείρω <add>μέρτρον καὶ</add> μέτρον. ὄνομα γοῦν
+								ἐστὶ καὶ ἐκ τῆς ἐτυμολογίας τοῦ μερισμοῦ. <pb facs="hephaestionisenc00hephuoft_0120"
+								/></p>
+						</div>
+
+						<div type="textpart" subtype="section" n="7">
+							<p rend="indent">Περὶ δὲ ὅρου μέτρου νῦν εἰπεῖν οὐκ ἀναγκαῖον· αὐτὸς γὰρ ὁ Ἡφαιστίων
+								αἰτιᾶται τὸν Ἡλιόδωρον, ὅτι τοῖς ὑπαρχομένοις γράφει· τοῖς γὰρ ἀπείροις καὶ
+									<del>τοῖς</del> μήπω τῆς μετροποιίας γεγευμένοις ἀδύνατον νοῆσαι ὸν ὅρον. </p>
+						</div>
+
+						<div type="textpart" subtype="section" n="8">
+							<p rend="indent">Ἐπιγέγραπται δὲ ἐγχειρίδιον, οὐχ ὥς τινες ᾠήθησαν παρὰ τὸ ξίφος διὰ
+								τὸ ὀξύνειν τῶν μετιόντων τὰς ψυχάς, ἀλλὰ διὰ τὸ ἐν χερσὶν ἔχειν τοὺς βουλομένους τὰ
+								κεφάλαια τῶν μετρικῶν παραγγελμάτων. τι δὲ ταῦτα οὕτως ἔχει, Ἡλιόδωρος τοῦ
+								ἐγχειριδίου ἀρχόμενος οὕτως λέγει· τοῖς βουλομένοις ἐν χερσὶν ἔχειν τὰ
+								κεφαλαιωδέστατα τῆς μετρικῆς γέγραπται τὸ βιβλίον τοῦτο. </p>
+						</div>
+
+						<div type="textpart" subtype="section" n="9">
+							<p rend="indent">Ἤρξατο δὲ αὐτὸς ὁ Ἡφαιστίων, ὡς ἔφην, ἀπὸ υλλαβῆς. ὕλη γὰρ τοῖς
+								μέτροις ἡ συλλαβή, καὶ ἄνευ ταύτης οὐκ ἂν συσταίη τὸ μέτρον· τὸ <add>δέ</add> ποιοῦν
+								πρὸ τοῦ ποιηθέντος, ὅθεν <add>ἀπὸ συλλαβῆς</add> ἄρξασθαι δίκαιον. οὐκ ἀπὸ τοῦ
+								γένους δὲ ἤρξατο, ἀλλʼ ἀπὸ τοῦ εἴδους. διαφέρει δὲ εἶδος καὶ γένος, ᾗ γένος μέν ἐστι
+								ὸ πρωτότυπον εἰς εἴδη διαιρεθῆναι δυνάμενον, εἶδος δὲ τὸ ἀπὸ τοῦ γένους διηρημένον,
+								οἷον εἴ τις λέγοι ζῷον γένος, εἴδη δὲ αὐτοῦ ἄνθρωπον ἵππον καὶ τὰ λοιπά. οὐκοῦν
+								γένος μέν ἐστιν ἡ συλλαβή, εἴδη δὲ <pb facs="hephaestionisenc00hephuoft_0121"/>αὐτῆς
+								βραχεῖα καὶ μακρὰ καὶ <add>ἡ</add> κοινὴ καλουμένη. οὐκ ἔδοξεν οὖν αὐτῷ ἀπὸ τοῦ
+								γένους ποιήσασθαι τὴν ἀρχὴν (τεχνικὸς γὰρ οὗτος ὁ λόγος καὶ οὐ πάνυ τοῖς μέτροις
+								συμβάλλεται) οὐδὲ ὅρῳ τὴν συλλαβὴν περιλαβεῖν οὐδὲ τὸν περὶ αὐτῆς εἰπεῖν λόγον τῆς
+								ἐτυμολογίας· καὶ γὰρ ἐν τοῖς τεχνικοῖς ἔλεγχον ἔσχεν ὁ ὅρος, ὅτι ἡ συλλαβὴ παρὰ
+								τοῦτο ὠνόμασται, παρὰ τὸ ποσότητα στοιχείων εἰς ταὐτὸν συλλαμβάνειν ὧν ἔξεστιν ὑφʼ
+								ἕνα. φθόγγον παραλαβεῖν· <add>οὐχ γὰρ</add> ἂν εἴποι τις τὰς μονογραμμάτους. ἀλλὰ
+								ταῦτα μὲν ζητείτωσαν ἱ τεχνικοί. — </p>
+						</div>
+
+						<div type="textpart" subtype="section" n="10">
+							<p rend="indent">Ἐν δὲ τοῖς μετρικοῖς εἰδέναι δεῖ, ὅτι πᾶσα βραχεῖα ἴση καὶ πᾶσα μακρὰ
+								ἴση· καθόλου γὰρ αἱ μέν εἰσι δίχρονοι, αἱ δὲ μονόχρονοι. ἐντεῦθεν τὸν μὲν δάκτυλον
+								καλοῦμεν τετράχρονον, τὸν δὲ πυρρίχιον δίχρόνον, οὐ πολυπραγμονοῦντες τῆς ποιητικῆς
+								λέξεως ἢ συλλαβῆς τὰ στοιχεῖα οὐδὲ ἐν ποσότητι καταμετροῦντες τοὺς χρόνους ἀλλʼ ἐν
+								δυνάμει <del>τῆς ποσότητος</del>. </p>
+						</div>
+					</div>
+
+					<div type="textpart" subtype="fragment" n="2">
+						<div type="textpart" subtype="section" n="1">
+							<head rend="center">Περὶ βραχείας συλλαβῆς</head>
+							<p rend="indent">Ἀρκτέον δὲ ἀπὸ βραχείας. οὕτω τοίνυν ὁ Ἡφαιστίων αὐτὴν ὁρίζεται·
+								βραχεῖά ἐστι συλλαβὴ ἡ <pb facs="hephaestionisenc00hephuoft_0122"/>ἔχουσα βραχὺ
+								φωνῆεν ἢ βραχυνόμενον, μὴ ἐπὶ τέλους λέξεως, οὕτως ὡς μεταξὺ αὐτοῦ καὶ τοῦ ἐν τῇ
+								ἑξῆς συλλαβῇ φωνήεντος μὴ ὑπάρχειν σύμφωνα πλείονα ἑνὸς ἁπλοῦ, ἀλλʼ ἤτοι ἓν ἢ ηδὲ
+								ἕν. — Πάνυ οὖν ἐπαίνου ἄξιος ὁ ὅρος ὡς πάντα ἔχων ὅσα δεῖ ὑγιῆ ὅρον ἔχειν. ὑγιὴς γὰρ
+								ὅρος καὶ τοῖς φιλοσόφοις εἶναι δοκεῖ ὁ μηδὲν ἔξωθεν τῶν ὁριζομένων συμπεριλαμβάνων
+								καὶ <del>ὁ</del> μηδὲν τῶν ὁριζομένων καταλιπών, ὃς ἀντιστρέφει πρὸς τὸ κεφαλαιῶδες.
+								μὲν οὖν μὴ † συμπεριλαμβάνων παραγγελίαν τοιαύτην οὐ καλῶς ἔχει, οἷον εἴ τις τὸν
+								ἄνθρωπον ὁρίζοιτο † μηκέτι <gap reason="lost"/> τὸν θεὸν τῷ ὅρῳ συμπεριλαμβάνων.
+								ἑκάτερον δὲ ὑπάρξει, ἐὰν ἀντιστρέφῃ πρὸς τὸ κεφαλαιῶδες, τουτέστιν ἐὰν ἀλλήλων
+								ὑπάρχωσιν ὅροι ὐτός τε ὁ ὅρος καὶ τὸ ὁριζόμενον, οὕτως ὡς ἐπὶ τοιοῦδε παραδείγματος·
+								ἄνθρωπός ἐστι ζῷον λογικὸν θνητὸν νοῦ καὶ ἐπιστήμης δεκτικόν. εἴ τι οὖν ἐστὶ ζῷον
+								λογικὸν θνητὸν νοῦ καὶ ἐπιστήμης δεκτικόν, τοῦτό ἐστιν ἄνθρωπος πάντως. καὶ αὖ
+								πάλιν· φωνή ἐστιν ὴρ πεπληγμένος. εἴ τι οὖν ἐστὶν ἀὴρ πεπληγμένος, τοῦτο φωνὴ
+								πάντως· οὕτως οὖν καὶ ἐπὶ τοῦ προκειμένου ὅρου ἴδωμεν τὸ ἀντιστρέφον· εἴ τι ἐστὶ
+								βραχὺ φωνῆεν, μὴ ἐπὶ τέλους λέξεως κείμενον, μετα<add>ξύ ἑαυτοῦ<pb
+										facs="hephaestionisenc00hephuoft_0123"/> καὶ</add> τῆς ἄλλης συλλαβῆς οὐκ ἔχον
+								σύμφωνα ἑνὸς πλείονα, τοῦτο πάντως ἐστὶ συλλαβὴ βραχεῖα. – Πρόσκειται δὲ τὸ μὴ ἐπὶ
+								τέλους λέξεως κείμενον διὰ τὴν κοινὴν λεγομένην. ἐὰν γὰρ εἰς μέρος ἀπαρτίζῃ λόγου,
+								τῷ τῆς κοινῆς ὑποπίπτει λόγῳ, οἷον ἡ τ͞α συλλαβὴ βραχεῖά ἐστιν, ἐπὶ <add>δὲ</add>
+								τέλους λέξεως κειμένη ἐνομίσθη ποτὲ μακρὰ ὡς παρὰ τῷ ποιητῇ (Φ 352) <quote
+									rend="blockquote"><lb/>τὰ περὶ καλὰ ῥέεθρα. </quote><lb/>καὶ αὖ πάλιν ἡ πρὸς
+								συλλαβὴ βραχεῖά ἐστιν, ἀλλʼ ἐν τόπῳ κεῖται μακρᾶς, ὅταν Ὅμηρος εἴπῃ (I 147) <quote
+									rend="blockquote"><lb/>πρὸς οἶκον Πηλῆος· <lb/></quote>σπονδεῖον γὰρ δεῖ εἶναι τὸν
+								πόδα <quote>πρὸς οἷ</quote>. — Ἔτι δέ φησι μὴ ἔχειν σύμφωνα μεταξὺ – ἓν διὰ τὴν
+									<add>θέσει</add> μακράν· εἰ γὰρ συμβαίη βραχεῖ ἢ βραχυνομένῳ φωνήεντι δύο σύμφωνα
+								ἐπενεχθῆναι, μακρὰν ποιήσει ὴν συλλαβήν, οἷον ἡ ε̄ συλλαβή ἐστι βραχεῖα, ἀλλʼ ἐὰν
+								δύο σύμφωνα ἐπενεχθῇ ὡς ἐν τῷ Ἕκτωρ, μακρὰν ποιήσει τὴν συλλαβήν. διὰ τοῦτο
+								προσέθηκε μὴ δεῖν ὑπάρχειν σύμφωνα δύο, ἀλλʼ ἓν ἁπλοῦν ἢ μηδὲ ἕν. καὶ γὰρ ἐὰν
+								διπλοῦν προσενεχθῇ, μακρὰν ποιήσει ὴν συλλαβὴν ὡς ἐν τῷ (A 139) <quote
+									rend="blockquote"><lb/>ἄξω ἑλών. </quote></p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--<div type="apparatus" n="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1" xml:lang="mul">
+				<div type="textpart" subtype="fragment" n="1">
+					<div type="textpart" subtype="section" n="1">
+						<p><pb facs="hephaestionisenc00hephuoft_0115"/>2 τοῦ om. C || 4—84,7 μέτρον om. C || 5
+							εὕρεμα A || 8 πάντες] μᾶλλον Homerus, An. Ambr. || 9 ἀκουόντεσσι Homerus, An. Ambr. ||
+							11 ἔσχε Boivin; ἔσχον codd. | ἀνεφθέγξατο Toupius coll. Suid. s.v. ἐλεγείνειν;
+							ἀπεφθέγξατο codd. || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="2">
+						<p>14 τοῦ] τοῦ περὶ A || 15 ἀρξαμένῳ Westph. <pb facs="hephaestionisenc00hephuoft_0116"
+							/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="3">
+						<p>1 κριτήριον Hoersch., τεκμήριον codd., cf. κριτικὴ Choer., κριτήριον An. Ambr. 231,
+							20, Io. Sic. 82,20 || 5 ἡ inser. ex Choer., An. Ambr., RhG VII 934,21 || 6 ἐπιδεξαμένη
+							Choer., ἐκδεξαμένη Nauck || 9 συνεμπτώσεις scrib. coll. 22; πτώσεις codd. || 14 ἀμφίση
+							codd. || 18 γενομένου A || 21 γυρίννως Heph., γυρίννω codd. <pb
+								facs="hephaestionisenc00hephuoft_0117"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="4">
+						<p>1 δὲ Y, γὰρ X || 3 ἐν συλλαβαῖς X, An. Ambr., RhG V 473,15, ἐν συλλαβῇ Y || 8 μελῶν
+							Y, μελῶν καὶ X || 9 πτερυγίσματα Toupius, πτερίσματα codd. || 12 μεταξὺ τούτων Morus,
+							μετὰ τοῦτον codd. || 14 ἢ Mendels., καὶ codd. || 17 παράδειγμα ἀπὸ Wilam.,
+							παραδείγματα codd. || 18 Ἀριστοφάνης del. Boivin, sed cf. Choer. || 21 ἢ περὶ ῥυθμῶν
+							codd. <pb facs="hephaestionisenc00hephuoft_0118"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="5">
+						<p>2 εὐμετρίαν X, συμμετρίαν Y, Choer., An. Ambr. || 6 εἴπωμεν μέδιμνον τὸ μέτρον κτλ.,
+							deletis vv. μέτρον — μέδιμνος prop. Hoersch. || 7 μέτρον del. Wilam., cf. An. Ambr.
+							231, 15 || 8 εἰ om. C || 9 αὖ πάλιν delevi || 10 προσαγορεύομεν del. Wilam. | καὶ — 12
+							προσαγορεύομεν del. Egger, sed cf. Choer. || 14 ὡς Y, om. X || 16 ἕκαστον Hoersch.,
+							ἑκάστου codd. || 17 καὶ μ. τρ. om. C || 19 δέκα καὶ ἑξακόσια An. Ambr., χʼ codd., sunt
+							ap. Homer. 611 || 21 ἔτι Boivin, εἰ codd. <pb facs="hephaestionisenc00hephuoft_0119"
+							/>1 ὡς Y, om. X || 2 καλοῦμεν C | ex 15 et Choer. et An. Ambr. efficitur de pede
+							explicationem hic excidisse || 4 ὃν] ὃ C | ῥυθμικῶν] μετρικῶν C || 6 ὃ — Ὀρφέως om. C
+							|| 7 ὑπολαμβάνουσι Kroll, παραλαμβάνουσι codd. | λέγει C || 8 ἢ] ἡ A || 9 τεττάρων C |
+							μέτρον C || 10 γὰρ scripsi, δὲ codd. || 12 μετρούμενον Pearcius, μέτρον codd. || 13
+							καὶ — 17 προσαγορεύεται om. C || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="6">
+						<p>19 ἀφʼ οὗ] ὃ? Hoersch. || 21 γὰρ scripsi coll. An. Ambr., δὲ A, δὴ C || 23 μέρτρον
+							καὶ inser. Wilam. (cf. Herodian. II 298,4) | γοῦν] γάρ C <pb
+								facs="hephaestionisenc00hephuoft_0120"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="7">
+						<p>1 ὅρου C, ὅρων rell. || 3 ὑπαρχομένοις C, ἐπαρχομένοις AP | καὶ τοῖς] τοῖς del.
+							Hoersch. || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="8">
+						<p>7 παρὰ τὸ ξίφος Hoersch. coll. schol.ᴬ 93,4, διὰ τὸ ξίφος ἀλλὰ codd., διὰ τὸ ξίφος
+							καὶ Egger || 8 ἀλλὰ Hoersch., καὶ codd. || 10 post ἔχει Hoersch. excidisse putat haec
+							fere φανερὸν· ὁ γὰρ || 12 ἔχειν om. C | κεφαλαιωδέστατα Choer. schol.ᴬ,
+							κεφαλαιωδέστερα codd. || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="9">
+						<p>14 αὐτὸς Hoersch., αὐτοῦ codd. || 17 ἀπὸ συλλαβῆς inser. Mendelssohn || 18 ἤρξατο]
+							ἤρξαντο AC || 20 εἶδος — 21 διῃρημένον om. C || 23 ἡ post ἐστιν del. Mendels. <pb
+								facs="hephaestionisenc00hephuoft_0121"/>1 ἡ inser. Mendels. || 6 καὶ γὰρ Mendels,
+							καίτοι codd. || 7 ὅτι C, ἔτι A, ἔστι P || 8 ταυτὸ C | ὧν Boivin, ὧν οὐκ codd. || 9 οὐ
+							γὰρ inserui; fort. οὐχ ὑπάγεσθαι γὰρ coll. AV 98 § 2 | εἴποι] εἴπη AC || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="10">
+						<p>15 τὸν — δίχρονον om. C || 17 καταμετροῦντες C, καταριθμοῦντες A || 18 τῆς ποσότητος
+							del. Hoersch. </p>
+					</div>
+
+				</div>
+
+				<div type="textpart" subtype="fragment" n="2">
+					<div type="textpart" subtype="section" n="1">
+						<p>20 περὶ βραχείας συλλαβῆς in codd. post 22 ὁρίζεται, transpos. Hoersch. || 22 ἐστι
+							om. C <pb facs="hephaestionisenc00hephuoft_0122"/>2 αὐτοῦ scripsi, αὐτῆς codd. || 6
+							ὑγιὴς γὰρ C; in A lac. 4-5 litterar., om. P || 7 εἶναι δοκεῖ scripsi, δοκεῖ εἶναι C,
+							δοκεῖ cum spatio 4-5 litt. A || 8 καὶ Hoersch., ἢ codd. | ὁ del. Hoersch. || 10
+							συμπεριλαμβάνων] fort. φυλάττων || 12 lac. ind. Wilam. | τὸν θεὸν] τὸ θνητὸν Hoersch.
+							|| 13 ἑκάτερον] ὁλόκληρος Iendelssohn, ὑγιὴς ὅρος Hoersch. | ἀντιστρέφει C || 15 ὡς
+							om. C || 17 εἴ τι — 18 δεκτικόν bis scripta in C || 22 ἴδωμεν Hoersch., εἴδωμεν codd.
+							|| 23 μεταξὺ ἑαυτοῦ καὶ Boivin, μετὰ codd. <pb facs="hephaestionisenc00hephuoft_0123"
+							/>2 πρόσκειται Kroll, προείρηται codd., προσέθηκε Choer. || 4 ἐὰν γὰρ Westph., ἐάνπερ
+							codd. || 5 ἡ τ͞α Choer., ὅταν codd. || 6 δὲ inserui, &lt;ἀλλ’&gt; ἐπὶ Hoersch. || 7 ὡς
+							Hoersch., ὡς ἡ codd. || 9 εἴποι? C || 12 τὸν πόδα πρὸς οἶ scripsi coll. Choer. p. 38,
+							18, τὸν πρὸς οἶ C, τὸν πᾶ rell. | ἔτι Westph., εἰ codd. || 13 ἔχειν Hoersch., ἔχη A,
+							ἔχει C, ὑπάρχειν Caes. | σύμφωνον A || 14 θέσει add. ex Choer. p. 38,19 | βραχὺ C ||
+							16 ἡ ε̄ Mendels., ἡ μὲν codd., ἡ μὲν ε̄ Boivin || 19 ἀλλὰ AC </p>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div type="commentary" n="urn:cts:greekLit:tlg2178.tlg004.1st1K-grc1" xml:lang="mul">
+				<div type="textpart" subtype="fragment" n="1">
+					<div type="textpart" subtype="section" n="1">
+						<p><pb facs="hephaestionisenc00hephuoft_0115"/>ad cap. I cf. Choer. AV 33—36,21 et An.
+							Ambr. AV 230,8 —231,29 || 4—11 Ps. Cens. GL VI 607—9 || 10 Planud. RhG V 473,21.
+							schol. Ar. Nub. 638 (RV) cf. Graf: Rhythm. u. Metr. (Marbg. 1891) p. 43 || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="2">
+						<p>12 Ar. Quint. 28,18. An. AV 98 § 2 <pb facs="hephaestionisenc00hephuoft_0116"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="3">
+						<p>1—17 schol. in Herm. RhG VII 934,18—935 3. Io. Sic. VI 166,8. 82,14; Ar. Quint.
+							21,13. Mar. Vict. VI 50,9 (iudicium). || 4 schol. in Dion. Thr. 181,8 || 10 RhG VII
+							1046,16 <pb facs="hephaestionisenc00hephuoft_0117"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="4">
+						<p>1 fr. I p. 76,19. Planud. RhG V 473,13. Quint. IX 4,48. Ar. Quint. 32,7. Diom. I 474.
+							Mar. Vict. VI 41,28 sqq. Anon. GL VI 206,7. At. Fort. VI 282 || 14 Mar. Vict. VI 42,3
+								<pb facs="hephaestionisenc00hephuoft_0118"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="5">
+						<p>Io. Sic. RhG VI 112,14 sqq. || 2 πᾶν μέτρον ἄριστον Choer. 34,13. Ps.-Phokyl. 36. cf.
+							Brunco in Act. semin. Erlang. III 325. Dieterich Nekyia (Lpz. 1893) p. 179 || 5 τὸ
+							μετροῦν καὶ τὸ μετρούμενον] schol. (Ven.) I 324. Φ 502. Plut. de def. orac. c. XII
+							416ᵇ. Mar. Vict. VI 50,5—9. 51,19—52,15. An. GL VI 633,7—13. — Psell. 1 (Aristox.
+							ρυθμ. στοιχ. frg. I 5) <pb facs="hephaestionisenc00hephuoft_0119"/>Mar. Vict. VI 52,
+							9—18 || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="6">
+						<p>18 Ar. Quint. 32,8 <pb facs="hephaestionisenc00hephuoft_0120"/></p>
+					</div>
+
+					<div type="textpart" subtype="section" n="7">
+						<p>2 cf. supra p.81,14. — schol. in Dion. Thr. 509,17 || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="8">
+						<p>6 schol.ᴬ p. 98,3 || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="9">
+						<p>14 Ar. Quint. 28,18—20. An. AV 98 § 2. a syllaba inc. Mall. Theod. GL VI 586,12 <pb
+								facs="hephaestionisenc00hephuoft_0121"/>6 Dion. Thr. 16,7. schol. in Dion. Thr. 48,
+							1 sqq. alias At. Fort. VI 279,22. Mar. Vict. VI 34,28 sqq. Prisc. GL II 44,3 || 9 An.
+							AV 98 § 2,4 || </p>
+					</div>
+
+					<div type="textpart" subtype="section" n="10">
+						<p>12 cf. supra p. 83,12. Choer. 34,25 sqq. 36,22 sqq. schol. in Dion. Thr. 205,24 sqq.
+						</p>
+					</div>
+
+				</div>
+
+				<div type="textpart" subtype="fragment" n="2">
+					<div type="textpart" subtype="section" n="1">
+						<p>7 cf. e. g. schol. in Dion. Thr. 107,30—108,11. 156,18 sqq. || 13 φωνὴ] schol. in
+							Dion. Thr. 181,4 sqq. Prisc. GL II 5,1. Mar. Vict. VI 4,14. Ar. Quint. 4,24 alias.
+						</p>
+					</div>
+
+				</div>
+
+			</div>-->
+
+		</body>
+	</text>
+</TEI>
