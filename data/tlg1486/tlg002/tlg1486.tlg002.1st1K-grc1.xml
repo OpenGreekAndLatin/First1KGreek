@@ -77,15 +77,15 @@
 
 <refsDecl n="CTS">
 <cRefPattern n="line" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']//tei:l[@n='$2'])">
-<p>This pointer pattern extracts poem and line</p>
+<p>This pointer pattern extracts fragment and line</p>
 </cRefPattern>
 <cRefPattern n="poem" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])">
-<p>This pointer pattern extracts poem</p>
+<p>This pointer pattern extracts fragment</p>
 </cRefPattern>
 </refsDecl>
-
 </encodingDesc>
-<profileDesc>
+
+  <profileDesc>
 <langUsage>
 <language ident="grc">Greek</language>
 <language ident="lat">Latin</language>
@@ -160,7 +160,7 @@
 <pb facs="corpusculumpoesi01lipsuoft_0113"/></note>
 
 <!--<div type="commentary">-->
-<note resp="ogl" place="end" type="commentary" n="2" xml:lang="lat">
+<note resp="ogl" place="end" type="testimonia" n="2" xml:lang="lat">
 <pb facs="corpusculumpoesi01lipsuoft_0105"/>
 <ab rend="center">Testimonia</ab> 
 
