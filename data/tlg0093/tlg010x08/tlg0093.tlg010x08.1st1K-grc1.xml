@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+
+<titleStmt>
+<title xml:lang="grc">Περὶ Παραλύσεως</title>
+<author>Theophrastus</author>
+<editor>Friedrich Wimmer</editor>
+<funder>University of Virginia</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>University of Virginia</orgName>
+<persName>Rebecca Frank</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0093.tlg010x08.1st1K-grc1</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-08-12</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Theophrastus</author>
+<title xml:lang="lat">Theophrasti Eresii Opera, Quae Supersunt, Omnia.</title>
+<editor>
+<persName><name>Friedrich Wimmer</name></persName>
+</editor>
+<imprint>
+<pubPlace>Paris</pubPlace>
+<publisher>A.F. Didot</publisher>
+<date type="printing">1866</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+<ref target="https://babel.hathitrust.org/cgi/pt?id=uiug.30112023840660">HathiTrust</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>    
+
+<refsDecl n="CTS">
+<!--<cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts chapter and section</p>
+</cRefPattern>-->
+<cRefPattern n="section"  matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts section.</p>
+</cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>
+<change when="2020-08-12" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0093.tlg010x08.1st1K-grc1">        
+<div type="textpart" subtype="section" n="1"><p rend="indent"><pb facs="uiug.30112023840660-1583374486redo_0436"/>Ὅτι ὑπὸ καταψύξεώς φησιν, ὡς κοινῷ λόγῳ φάναι τὴν παράλυσιν γίνεσθαι· καὶ ταύτην οἱ μὲν ὑπὸ πνεύματος (καταψυχομένου), — πνευματικὸν γὰρ τὸ πάθος, — οἱ δὲ ἐκλείψει καὶ στερήσει τοῦ πνεύματος. Τοῦτο γὰρ εἶναι τὸ τὴν θερμότητα καὶ τὴν κίηησιν ὅλως ποιοῦν· ἀκινησίας δὲ γινομένης κατάψυξις <pb facs="uiug.30112023840660-1583374486redo_0437"/> γίνεται τοῦ αἵματος ἢ ἁπλῶς εἰπεῖν τῆς ὑγρότητος. Διὰ τοῦτο γὰρ καὶ ἡ νάρκη γίνεται ἐν τοῖς ποσὶν ἢ καὶ ἐν τοῖς ἄνω μέρεσιν ὅταν ἀποπιεσθῶσιν ἀπὸ καθέδρας ἢ ἄλλῳ τινὶ τρόπῳ. Τότε γὰρ διαλαμβάνει τῇ πιέσει τὸ πνεῦμα καὶ οὐ δυνάμενον τὴν οἰκείαν κίνησιν κινεῖσθαι ἵστησι καὶ ἀποψύχει τὸ αἷμα. <pb facs="uiug.30112023840660-1583374486redo_0444"/></p></div></div></body></text></TEI>
