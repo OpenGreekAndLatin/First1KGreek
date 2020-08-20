@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" 
+  schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Ἀγαθοδαίμων εἰς τὸν χρησμὸν Ὀρφέως συναγωγὴ καὶ ὑπόμνημα</title>
+        <author>Agathodaemon</author>
+        <editor>Marcellin Berthelot</editor>
+        <editor>Charles-Émile Ruelle</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>Janan Assaly</persName>
+          <orgName>Mt. Allison University</orgName>
+        </respStmt>
+
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Michael Konieczny</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg4086.tlg002.1st1K-grc1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2020-08-15</date>
+      </publicationStmt>
+
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="fre">Collection des anciens alchimistes grecs</title>
+            <editor>Marcellin Berthelot</editor>
+            <editor>Charles-Émile Ruelle</editor>
+            <imprint>
+              <publisher>Georges Steinheil</publisher>
+              <pubPlace>Paris</pubPlace>
+              <date>1888</date>
+            </imprint>
+            <biblScope unit="volume">3</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/collectiondesan02bertgoog/page/n31/mode/2up"
+            >Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <editorialDecl>
+        <quotation marks="none"/>
+        <normalization>
+          <p/>
+        </normalization>
+        <correction>
+          <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+            University. Developed through the support of the <ref target="https://nbif.ca/en"
+              >NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2020-08-15" who="Michael Konieczny">markup of new file</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg4086.tlg002.1st1K-grc1" xml:lang="grc">
+        <div type="textpart" subtype="section" n="1">
+          <head rend="center"><pb facs="collectiondesanc23bert_0310"/>ΑΓΑΘΟΔΑΙΜΩΝ ΕΙΣ ΤΟΝ ΧΡΗΣΜΟΝ ΟΡΦΕΩΣ ΣΥΝΑΓΩΓΗ ΚΑΙ
+            ΥΗΟΜΝΗΜΑ</head>
+          <p>Ἀγαθοδαίμων Ὀσιρίδει χαίρειν. </p>
+          <p rend="indent">Ἤδη σοι τοῦτο τέταρτον βιβλίον γράφω ἐκ τοῦ
+            ἀρχαίου χρησμοῦ· σὺ δ᾽ ἂν συνιῇς, ἤγουν ἂν συνετοὺς ὑποκρίναι, ἤγουν αὐτὸς ἐνταῦθα πρὸς
+            ἡμᾶς τῇδε ὃς πόλει ἠλιθείης ἐλθὲ ἀκουόμενος ἀναφανδὸν, ὅπου ἡμῖν παρακελεύων ἔρχεσθαι ἐν
+            Μέμφει· ἄγοντά σοι ἐκεῖ ἠλιθείης, ὑπομνήματα τοῦ χρησμοῦ, τέως δὲ ἕως κατὰ κέλευσιν
+            ὑποθήσομαί σοι πάλιν ὑπὸ χρησμὸν, καὶ τὰς εἰς αὐτὸν τῶν πολλῶν συναγωγὰς, καὶ οὕτως
+            τὰ ὑπομνήματα. </p>
+        </div>
+
+        <div type="textpart" subtype="section" n="2">
+          <p rend="indent">Ἴσθι δὲ, Ὄσιρι, ὅτι ὁ χρησμὸς ἀπό τε ξανθώσεως ἤρξατο· παρὰ λοιπὸν τὴν λεύκωσιν, τὴν
+            ξάνθωσιν οὐκ ἄλειπον εἴρηκεν· διὰ τί; ὅτι ὁ ἐρωτὸν περὶ οὗ ἐνεθύμητον ἤκουσεν. Πρὸς γὰρ
+            τὰς διαθέσεις τοῦ νοῦ τὸν χρησμὸν ὑποκρίνονται. Ὁ γοῦν Ὀρφεὺς ἦν ποίησων τὴν λεύκωσιν
+            οἶδε πάντα τὰ παρ᾽ ἑαυτῷ ἑτοίματα ὀργάνῳ ὕδατα καὶ κηροτακίδα, καὶ τὰ μέρη τῆς ξανθώσεως
+            πάσης, λέγω δὴ ὕδατος θείου ἀθίκτου, καὶ τὰ ἄλλα ἕτοιμα : καὶ μόνον μίξει ζητεῖ τοῦ
+            ὐστέρου σκωριδίου. <pb facs="collectiondesanc23bert_0311"/></p>
+        </div>
+
+        <div type="textpart" subtype="section" n="3">
+          <p rend="indent">Ὅπερ οὖν ἐζήτει, τοῦτο (f. 262 v.) ὁ χρησμὸς ἔδωκεν. Ἐνδεής οὖν ὁ χρησμὸς τῶν μετὰ
+            τῶν σοφῶν πρὸς συμπλήρωσιν ἀπεπλήρωσαν αὐτοῦ τὰ λείποντα· ἀρσενοείτε εἰς τὸν ξανθὸν, καὶ
+            ἄλλοι ἄλλας· τῆς μέντοι λευκώσεως οὐδεὶς κατηξίωσεν μνημονεύσας, εἰ μὴ ἐγώ· ἣν καὶ 
+            ἔγραψα πολλαχῶς, καὶ πάλιν γράφω, ἀρχόμενος πάλιν ἀπὸ τοῦ χρησμοῦ κατ᾽ ἐπερώτησιν· ἔχει
+            δὲ ὧδε· 
+          <quote rend="indent">Ἐπεὶ <del>μὲν</del> δοκεῖς εὐσθένεσιν δεήσεσιν, ζακορὲ, λιτάζῃ πρὸς τροφοῦ ἰδίου χρυσοῦ
+            σθένος, δέλτησιν ἐγχείρωσε τοὺς ἐμοὺς λόγους. </quote></p>
+        </div>
+
+        <div type="textpart" subtype="section" n="4">
+          <p rend="indent">Χαλκὸν κεκαυμένον, τούτου καὶ σφόδρα λίαν πλυνθέντος καὶ ἀνακαυθέντος, καὶ πάλιν
+            ἔστω, κάθες καλλίστῳ ἀργύρῳ ψῆγμα, μύριν ἑκάστην πρὸς δύνην, καὶ δ<seg
+              rend="superscript">ον</seg>, καὶ γῆ Σινώπης,
+            καὶ ὄστρακον κάθμις, καὶ χρυσὸν τῶν Μακεδώνων γαίης, καὶ μύσεως λέγω σοι ἀσιατικοῦ·
+            ξυνειχώνεις· καὶ ἀσπάσω τὸν χρυσὸν. Καὶ οὕτως μὲν ὁ ἀρχαίοτατος χρησμός· κατένεγκαι
+            προσέχων βίβλον ἐδαφιστικὴν μεγάλην. Καὶ ἡ βίβλος ὑπομνήματα παραδίδωσιν ἀζώσις
+            φωνῆς, καὶ ἡ παράδοσις δείξει· καὶ ἡ δείξης ἐμπειρίαν εὐθύαν εὐεργεσίαν ἐνεπιβολὴν,
+            εἴδησιν μυστικὴν, διὰ τοὺς φθόνους, καιρὸν καὶ καιροὺς, καὶ σύμπαντα τὰ τῆς τέχνης. </p>
+        </div>
+
+        <div type="textpart" subtype="section" n="5">
+          <p rend="indent">Τὸ γοῦν πρῶτον ἔτος τοῦ χρησμοῦ, τὴν τοῦ χαλκοῦ λεύκωσιν τῶν κατασταθέντων καὶ
+            λειωθέντων, καὶ φρυχθέντα ἕως μεταβάλῃ εἰς τὸν κηρόν· σύγκειται δὲ ἀστοῦν χαλκὸν ἐκ
+            τῶν δ' σωμάτων, χαλκοῦ, <pb facs="collectiondesanc23bert_0312"/>σιδήρου, κασσιτέρου,
+            μολύβδου, καὶ τῶν (f. 263 r.) οὐσιαστικῶν μετάλλων, καὶ θείου λευκοῦ· τάδε χρῄζουσιν μὲν
+            προταριχείας ἀπὸ μηνὸς μεχὶρ ἕως μηνὸς φαρμουθὶ ιε' ἡμέραι μα', εἶτα πλύσεως, ζέσεως,
+            γλυκασμοῦ, ὑλισμοῦ, συσταθμίας, καθάρσεως. Καθαίροντα δὲ τὰ δ' σώματα ἕως ἔχῃς
+            πανταχοῦ, εἶτα μίγνυται σταθμῷ. Ἔστι δὲ ἡ σταθμία· ἐκ χαλκοῦ λίτραι δ', σιδήρου λίτραι
+            α', κασσιτέρου λίτραι β' 𐅵, μολύβδου λίτραι β' 𐅵, ὁ μὲν τοῦ χαλκοῦ, λάμβανε ἀργύρου
+            λίτραν α'· ἔστι αὐτοῦ κάτοχος. </p>
+        </div>
+
+        <div type="textpart" subtype="section" n="6">
+          <p rend="indent">Ἔχουσιν δὲ ἐν ταῖς ἄλλαις γραφαῖς καὶ διαφόρους σταθμοὺς, καὶ μίξεις καὶ
+            ἐργασίας, καὶ αὐτὰς καλὰς καὶ οὐκεῖ κενὰ, οὐδὲ ματαίους. Οἱ μὲν γὰρ αὐτῶν ὅλα τὰ σώματα
+            ὑφ' ἓν μιγνύντες ἔχουσιν σκωρίαν ἢ καὶ ἐργάζονται· οἱ δ᾽ ἐπιει καὶ ἑτέρων ποιοῦσιν,
+            προκαθαίρουσιν γὰρ τὸν χαλκὸν, ὡς ἐνδέχεται, καὶ μίσγουσιν τὸν ἄργυρον· εἶτα τὸν σίδηρον
+            ἀρσενώσαντες, ὡς ἐν τῷ χαλκῷ, καὶ ποιήσαντες ἁπαλὸν, σμίγουσιν· τὸν δὲ κασσίτερον καὶ
+            μόλυβδον λύσαντες ἐπιδάλλουσιν τὰ μέταλλα καὶ σκορπιστικῇ καμίνῳ, καὶ φρύξαντες οὕτω
+            λείουσιν καὶ πλύνουσιν· καὶ οὕτω μίσγουσιν τὸν σιδηρόχαλκον, ἄλλοι δὲ τὸν μὲν μόλυβδον·
+            σκορπίζουσι τὰ μέταλλα· τὸν δὲ κασσίτερον, ὀνυχοποιήσαντες μίγμα, καὶ λοιπὸν βάλλοντες,
+            τὸν μὲν μόλυβδον λειοῦσιν καὶ τὸν κασσίτερον ὁμοίως λειοῦσιν, καὶ μίσγουσιν καὶ
+            πλύνουσιν, καθὼς λειοῦται ἔμπροσθεν τρυβλίῳ, καὶ τοῖς ἄλλοις. Εἰ μὴ γὰρ πλυνθῇ καὶ ἀρθῇ
+            ἡ μελανία ἀπ αὐτοῦ, οὐδέν ἐστιν. Αἴρεται δὲ διὰ πλύσεως καὶ ζέσεως μετ᾽ αὐτοῦ, εἶτα
+            πήξεως (f. 263 v.), εἶτα κατεράσεως, εἶτα σήψεως, εἶτα ἀνασπάσεως. </p>
+        </div>
+
+        <div type="textpart" subtype="section" n="7">
+          <p rend="indent">Λοιπὸν ὁ μόλυβδος ἔχων τὰ οὐσιαστικὰ εἴδη ἐκ δευτέρου βαλλόμενα εἰς τὴν ξάνθωσιν
+            μετὰ ἀργύρου, ποτὲ μὲν καὶ σκορπιζόμενα, ποτὲ δὲ συνλειούμενα καὶ κατασπώμενα, καὶ διὰ
+            τῶν ἄλλων μυρίων τεχνῶν τῶν ἐν ταῖς γραφαῖς αὐτῶν γινομένων· πλατεῖα γάρ ἐστιν ἡ <pb
+              facs="collectiondesanc23bert_0313"/>τέχνη, καὶ ὅλα τὰ μέρη, καὶ σκωρίδια, καὶ τὸ
+            καλούμενον ἐξάνθημα, καὶ ὁ μόλυβδος τοῦ ὀξυζωμίου καὶ χρυσοζωμίου, καὶ εἴ τι τοιοῦτον
+            περὶ τούτου στίχου νόει. Τὸ δὲ χρυσοκόλλην καὶ σινώπην, καὶ καθμίαν, ὡς ἔφην, μετὰ τοῦ
+            μολύβδου, τὰ οὐσιαστικὰ εἴδη νόει· τὸ μύσι τὸ ἀσιατικὸν, τὸ θεῖον ὕδωρ δηλοῖ ποτὲ μὲν
+            τὸ μερικὸν, ποτὲ δὲ τὸ καθόλου τὸ ἄθικτον. Καὶ τὸ μὲν μερικόν ἐστιν τὸ δι᾽ ἀσβέστου ἔχον
+            πόας καὶ πάντα λειοῦν, ὀπτὸν τὸ μέρος τῶν ξανθῶν, καὶ σηπτόν· τὸ δὲ καθόλου, ὅταν τὸ
+            σαπὲς ἀναλύσῃς τῷ προταγέντι χαλκῷ, καὶ ἀνασπάσῃς, εἴτε αἰθάλην μετὰ κόμμεως, καὶ ἔχεις,
+            καὶ περιχέεις μαλάγματα, φησὶν, τὸ αὐτὸ μέρος τῷ εἴδει ξανθωθέντι καὶ ἀναδειχθέντι,
+            καὶ ζέσῃς, καὶ τοῦτο ποιήσας τρίτον, καὶ τοῦτο ἐπιβάλλῃς. </p>
+        </div>
+
+        <div type="textpart" subtype="section" n="8">
+          <p rend="indent">Ἔχουσιν οὖν αἱ ἀρχαῖαι γραφαὶ ποτὲ μὲν καθησμὸν πάντα, ποτὲ δὲ καὶ συγκεχυμένος,
+            ἅτινα πάντα σοι ὑπογραφήσεται· ἔχει δὲ ὧδε. Λαβὼν κύθραν ὠμὴν, ξήρανον ἐν ἡμέρας ι', καὶ
+            λαβὼν ὤχρας καὶ κυανοῦ ἀνὰ μέρος α', λείου ὄξει ἀκράτῳ· ποιήσας μέλιτος πάχος, χρίε
+            τὴν κύθραν ἔσωθεν· καὶ (f. 264 r.) ὄπτα σανδαράχης ἀλῆς, καὶ λαβὼν ἰὸν χαλκοῦ, λείου
+            οὔρῳ ἀφθόρου, καὶ χρίε πάλιν ἐπάνω τὴν κύθραν· καὶ περιφημώσας ὄπτα ἡμέρας γ'· καὶ
+            ἐξελών εὑρήσεις ὡς καγχρία· ταῦτα ἐπίβαλλε ἀργύρῳ, οἱ μὲν μελανωθέντι, οἱ δὲ οὐ ψυγῆ
+            χρυσὸν μελάνωσις· ὤχρας μέρος, κασσιτέρου μέρος προσποιεῖ ἀμφότερα, τὸν αὐτὸν σίδηρον
+            πρὸς τὸ ἴσον· καὶ μαγνησίᾳ τὸ αὐτὸ ποιήσεις· καὶ <add>λαβὼν</add> ἥμισυ καὶ θεῖον ἄπυρον,
+            καὶ μίγνυε ἀνὰ μέρος ἥμισυ ἐν χώστρᾳ ἐπὶ ἡμέρας β'· εἶτα λείου τοῦτο μετὰ χαλκάνθου,
+            καὶ κηκήδιν ἀφρῷ ἴσα τέως ἡμέρας γ', καὶ ὄπτα, καὶ ἐπίβαλλε χρυσὸν, καὶ μελανωθήσεται
+            τούτου ἓν ἀργύρου μέρος. <pb facs="collectiondesanc23bert_0327"/></p>
+        </div>
+
+      </div>
+    </body>
+  </text>
+</TEI>
