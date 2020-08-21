@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De prophetarum vita et obitu (recensio scholiis Hesychii aliorumque patrum in prophetas adjecta)</title>
+        <author xml:lang="lat">Vitae Prophetarum (Scholius Hesychius)</author>
+        <editor>Theodorus Schermann</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Madeline</forename>
+            <surname>McIntire</surname>
+          </persName>
+        </respStmt>
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>
+           Mount Allison University
+          </orgName>
+          <persName>
+            Bruce Robertson
+          </persName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1750.tlg003.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-08-19"/>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Prophetarum vitae fabulosae</title>
+            <editor>Theodorus Schermann</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1907</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/prophetarumvita00schegoog/page/n172/mode/1up">
+          </ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p rend="indent">Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="sections" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+      <p>This pointer pattern extracts sections</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2020-08-21" who="Lisa Cerrato">additional CTS and EpiDoc refinement</change>
+      <change when="2020-08-19" who="Bruce Robertson">initial markup of new file.</change>
+    </revisionDesc>
+    </teiHeader>
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="1">
+          <p rend="indent"><pb facs="prophetarumvita00schegoog_0174"/>αʹ. Ὠσηὲ ἑρμηνεύεται σωζόμενος. Οὗτος ἦν ἐκ Bελεμὼθ τῆς φυλῆς Ἰσάχαρ, καὶ ἔδωκε τέρας ἥξειν κύριον ἐπὶ γῆς ἀνθρώποις συναναστρεφόμενον καὶ ἡ δρῦς ἡ ἐν Σιλὼμ μερισθήσεται εἰς δώδεκα μέρη· καὶ γενήσονται δώδεκα δρύες ἐπακοῦσαι καὶ ἀκολουθῆσαι αὐτῷ ἐπὶ γῆς φανέντι θεῷ, καὶ δι᾽ αὐτοῦ σωθήσεται πᾶσα ἡ γῆ· καὶ οὕτως θανὼν ἐτάφη ἐν τῇ γῇ αὐτοῦ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="2">
+          <p rend="indent">βʹ. Ἰωὴλ ἑρμηνεύεται ἀγαπητὸς κυρίου ἢ ἀρχή. Οὗτος ἦν ἐκ τῆς φυλῆς Ῥουβὴν ἀγροῦ Βεθομόρων· ἐν εἰρήνῃ ἀπέθανε καὶ ἐτάφη ἐκεῖ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="3">
+          <p rend="indent">γʹ. Ἀμὼς ἑρμηνεύεται στερέωσις ἢ ἰσχύς. Ἀμὼς ἦν ἐκ Θεκουέ· καὶ Ἀμασίας συχνῶς αὐτὸν τυμπανίσας τέλος ἀνεῖλεν αὐτὸν ξίφει· ἔτι δὲ ἐμπνέοντος αὐτοῦ ἀνῆλθεν εἰς τὴν γῆν αὐτοῦ· καὶ μεθ᾽ ἡμέρας δύο ἀπέθανε καὶ ἐτάφη ἐκεῖ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="4">
+          <p rend="indent">δʹ. Ἀβδιοῦ ἑρμηνεύεται δοῦλος ἐξομολογητός. Οὗτος ἦν ἐκ τῆς Συχέμ. Οὗτος ἦν ὁ τριστάτης ἑκατόνταρχος· ὁ τρίτος Ὀχοζίου καὶ δεηθεὶς τοῦ Ἠλίου, καὶ διασωθεὶς παραδόξως ἐγένετο αὐτοῦ λειτουργός. Πολλὰ δὲ παθὼν καὶ ὑπὸ τοῦ Ἀχαὰβ διὰ τὸν Ἠλίαν τέλος καταφρονήσας θανάτου, <pb facs="prophetarumvita00schegoog_0175"/> καταλιπὼν τὸν βασιλέα, ἠκολούθησε τῷ Ἠλίᾳ καὶ προεφήτευσε καὶ ἀποθανὼν ἐν εἰρήνῃ ἐτάφη μετὰ τῶν πατέρων αὐτοῦ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="5">
+          <p rend="indent">εʹ. Ἰωνᾶς ἑρμηνεύεται ὑψίστου πονοῦντος ἢ περιστερά. Ἰωνᾶς ἦν ἐκ γῆς Καριαθὲμ πλησίον Ἀζώτου πόλεως Ἐλλήνων κατὰ θάλασσαν· καὶ ἐκβρασθεὶς ἐκ τοῦ κήτους, ἀπελθὼν εἰς Νινευῒ καὶ κηρύξας καὶ ἀνακάμψας οὐκ ἔμεινεν ἐν τῇ γῇ αὐτοῦ· ἀλλὰ παραλαβὼν τὴν μητέρα αὐτοῦ παρῴκησεν ἐν τῇ Ἀσσοὺρ χώρᾳ ἀλλοφύλων ἐθνῶν· ἔλεγεν γάρ, ὅτι <q>οὕτως ἀφελῶ τὸ ὄνειδός μου, ὅτι ἐψευσάμην προφητεύσας κατὰ Νινευῒ τῆς μεγάλης πόλεως.</q>  Ἦν τις Ἠλίας ἐλέγχων τὸν Ἀχαὰβ καὶ καλέσας λιμὸν ἐπὶ τῆν γῆν ἔφυγε· καὶ ἐλθὼν εἰς Σαραφθὰ ηὗρε τὴν χήραν μετὰ τοῦ υἱοῦ αὐτῆς, καὶ ἔμεινε παρ᾽ αὐτοῖς· οὐδὲ γὰρ ἠδύνατο μένειν μετὰ τῶν ἀπεριτμήτων· καὶ εὐλόγησεν αὐτὴν διὰ τὴν ξενοδοχίαν, ἦν γὰρ προγινώσκων αὐτὴν ἐκ πρώτου. Θανόντος δὲ τοῦ υἱοῦ αὐτῆς ἐν μέσῳ ἀπεριτμήτων, πάλιν ἤγειρεν ὁ θεὸς διὰ τοῦ Ἠλία ἐκεῖ νεκρόν· ἠθέλησε γὰρ δεῖξαι αὐτῷ, ὅτι οὐ δύναταί τις ἀποδρᾶσαι θεόν. Καὶ ἀναστὰς Ἰωνᾶς μετὰ τὸν λιμὸν ἦλθεν εἰς τὴν Ἰουδαῖαν· καὶ ἀπέθανεν ἡ μήτηρ αὐτοῦ κατὰ τὴν ὁδόν, καὶ ἔθαψεν αὐτὴν ἐχόμενα τῆς βαλάνου Δεββώρας. Καὶ κατῴκησεν ἐν γῇ Σαραήρ. Ἀπέθανε δὲ ἐκεῖ καὶ ἐτάφη ἐν σπηλαίῳ Κενὲζ κριτοῦ γενομένου ἐν ἡμέραις τῆς ἀναρχίας. <pb facs="prophetarumvita00schegoog_0176"/> Καὶ ἔδωκε τέρας πολὺ ἐπὶ Ἰσραὴλ καὶ ἐφ᾽ ὅλην τὴν γῆν· ὅταν φησὶ ἴδωσι λίθον βοῶντα οἰκτρῶς, καὶ κάνθαρον ἀπὸ ξύλου πρὸς θεὸν φθεγγόμενον, τότε ἐγγίζειν τὴν σωτηρίαν· τότε ὄψονται τὴν Ἱερουσαλὴμ ἠδαφισμένην ἕως θεμελίων ὅλην, καὶ εἰς αὐτὴν πάντα τὰ ἔθνη [ἐν] προσκυνήσει τῷ κυρίῳ· καὶ μεταθήσουσι τοὺς λίθους κατὰ δυσμὰς ἡλίου, καὶ ἐκεῖ ἔσται ἡ προσκύνησις τοῦ ἠλειμμένου διὰ τὸ τὴν Ἱερουσαλὴμ βδελυχθῆναι ἐν ἐρημώσει θηρίων καὶ πάσης ἀκαθαρσίας, καὶ τότε ἥξει τὸ τέλος πάσης πνοῆς.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="6">
+          <p rend="indent">ϛʹ. Μιχαίας ἑρμηνεύεται ταπείνωσις ἢ ταπεινούμενος. Οὗτος ἦν ἀπὸ Μοραθεὶ ἐκ φυλῆς Ἐφραΐμ. Οὗτος πολλὰ ποιήσας τῷ Ἀχαάβ· ὑπὸ Ἰωρὰμ τοῦ υἱοῦ αὐτοῦ ἀνῃρέθη κρημνῷ, ὅτι ἤλεγχεν αὐτὸν ἐπὶ ταῖς ἀσεβείαις τῶν πατέρων αὐτοῦ· καὶ ἐτάφη ἐν τῇ γῇ αὐτοῦ μόνος, σύνεγγυς πολυανδρίου Ἐνακείμ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="7">
+          <p rend="indent">ζ´. Ναοὺμ ἑρμηνεύεται παράκλητος. Οὗτος ἦν ἀπὸ Ἐλκεσὶν πέραν τοῦ Ἰηνβαρεὶν ἐκ φυλῆς Συμεών. Οὗτος μετὰ τὸν Ἰωνᾶν τέρας ἔδωκεν, ὅτι ὑπὸ ὑδάτων γλυκέων καὶ πυρὸς ἀπολεῖται ἡ Νινευΐ: ὃ καὶ γέγονεν. Ἡ γὰρ περιέ αὐτὴν λίμνη κατέκλυσεν αὐτὴν ἐν σεισμῷ καὶ πῦρ ἐκ τῆς ἐρήμου τὸ ὑψηλότερον αὐτῆς μέρος ἐνέπρησεν· ἀπέθανε δ᾽ ἐν εἰρήνῃ καὶ ἐτάφη ἐν τῇ γῇ αὐτοῦ.<pb facs="prophetarumvita00schegoog_0177"/></p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="8">
+          <p rend="indent">ηʹ. Ἀμβακοὺμ ἢ Ἀββακού, ἑρμηνεύεται πατὴρ ἐγέρσεως. [Ἀμβακοὺμ ὁ προφήτης ἦν ἐξ ἀγροῦ Βεθουχάρ, φυλῆς Συμεών. Καὶ εἶδε πρὸ τῆς αἰμαλωσίας περὶ τῆς ἁλώσεως τῆς Ἱερουσαλὴμ καὶ ἐπένθησε σφόδρα. Καὶ ὅτε ἦλθε Ναβουχοδονόσορ ἐν Ἱερουσαλήμ, ἔφυγεν εἰς Ὀστρακίνην, καὶ ἦν πάροικος ἐν γῇ Ἰσραήλ. Ὡς δὲ ἐπέστρεψαν οἱ Χαλδαῖοι καὶ οἱ κατάλοιποι οἱ ὄντες ἐν Ἱερουσαλὴμ κατέβησαν εἰς Αἴγυπτον, ἦν οὗτος παροικῶν τὴν γῆν αὐτοῦ καὶ λειτουργῶν θερισταῖς τοῦ λαοῦ αὐτοῦ. Ὡς δὲ ἔλαβε τὸ ἔδεσμα ἀπενέγκαι τοῖς ἐργάταις, προεφήτευσε τοῖς Ἰουδαίοις εἰπών· Πορεύομαι εἰς γῆν μακράν, καὶ ταχέως ἐλεύσομαι. Ἐὰν δὲ βραδύνω, ἀπενέγκατε τοῖς θερισταῖς τὸ ἄριστον αὐτῶν. Καὶ γενόμενος ἐν Βαβυλῶνι, καὶ δοὺς τὸ ἄριστον τῷ Δανιὴλ ἐπέστη τοῖς θερισταῖς ἐσθίουσι καὶ οὐδενὶ εἶπε τὸ γεγονός. Συνῆκε δὲ ἐκ τούτου, ὅτι τάχιον ἐπιστρέψει ὁ λαὸς ἐκ Βαβυλῶνος. Καὶ πρὸ δύο ἐτῶν τῆς ἐπιστροφῆς θανὼν ἐτάφη ἐκεῖ ἐν ἀγρῷ. Ἔδωκε δὲ τέρας τοῖς ἐν τῇ Ἰουδαίᾳ, ὅτι ὄψονται ἐν τῷ ναῷ φῶς, καὶ οὕτως ἴδωσι τὴν δόξαν τοῦ ναοῦ. Καὶ περὶ τῆς συντελείας τοῦ ναοῦ προεῖπεν, ὅτι ὑπὸ ἔθνους δυτικοῦ γενήσεται. Καὶ τότε τὸ ἅπλωμα τοῦ Δαβεὶρ εἰς μικρὰ διαῤῥαγήσεται, καὶ τὰ ἐπίκρανα τῶν δύο στύλων ἀφαιρεθήσεται· καὶ οὐδεὶς γνώσεται, ποῦ ἔσονται. Ταῦτα δὲ ἐν τῇ ἐρήμῳ ἀπενεχθήσονται ὑπὸ ἀγγέλου, ὅπου ἐν ἀρχῇ ἐπάγη ἡ σκηνὴ τοῦ μαρτυρίου καὶ τοῖς ἐπὶ τέλει γνωσθήσεται κύριος.]</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="9">
+          <p rend="indent">θʹ. Σοφονίας ἑρμηνεύεται σκοπιὰ κυρίου. Οὗτος ἦν ἐκ φυλῆς Συμεὼν ἀγροῦ Σαρὼθ καὶ προεφήτευσε περὶ τῆς <pb facs="prophetarumvita00schegoog_0178"/> πόλεως Ἱερουσαλὴμ καὶ περὶ τέλους Ἰσραὴλ καὶ ἀντεισαγωγῆς καὶ σωτηρίας ἐθνῶν, καὶ αἰσχύνης ἀσεβῶν, καὶ δόξης δικαίων, καὶ κριτοῦ πάσης πνοῆς· καὶ θανὼν ἐτάφη ἐν τῷ ἀγρῷ αὐτοῦ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="10">
+          <p rend="indent">ιʹ. Ἀγγαῖος ἑορτάζων ἑρμηνεύεται. Οὗτος ἐτέχθη εἰς Βαβυλῶνα· ἦν δὲ ἐκ φυλῆς Λευὶ καὶ ἔτι νέος ὤν ἦλθεν ἀπὸ Βαβυλῶνος εἰς Ἱερουσαλὴμ καὶ φανερῶς περὶ τῆς ἐπιστροφῆς τοῦ λαοῦ προεφήτευσεν· καὶ εἶδεν ἐκ μέρους τὴν οἰκοδομὴν τοῦ ναοῦ· καὶ ἀποθανὼν ἐν Ἱερουσαλὴμ ἐτάφη πλησίον τάφου τῶν ἱερέων ἐνδόξως, ὡς αὐτοί, ἐπειδὴ καὶ αὐτὸς ἦν ἐκ γένους ἱερατικοῦ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="11">
+          <p rend="indent">ιαʹ. Ζαχαρίας ἑρμηνεύεται μνήμη ὑψίστου λέοντος. Οὗτος ἦν ἐκ γένους Λευΐ, ἐγεννήθη ἐν Γαλαὰδ καὶ ἐλθὼν ἀπὸ Χαλδαίων ἤδη προβεβηκώς, καὶ πολλὰ τῷ ναῷ προφητεύσας ἔδωκεν εἰς ἀπόδειξιν. Οὗτος εἶπε τῷ Ἰωσεδέκ, ὅτι γεννήσει υἱόν, καὶ ἐν Ἱερουσαλὴμ ἱερατεύσει, εἰς τύπον τοῦ ἀληθῶς ἀρχιερέως. Οὗτος καὶ τὸν Σαλαθιὴλ ἐπὶ υἱῷ ηὐλόγησε, καὶ τὸ ὄνομα αὐτοῦ Ζοροβάβελ ἐπέθηκε καὶ ἐπὶ Κύρου τέρας ἔδωκεν εἰς νῖκος· καὶ περὶ τῆς λειτουργίας αὐτοῦ προεφήτευσεν, ἥν ποιήσει ἐν Ἱερουσαλήμ, καὶ ηὐλόγησεν αὐτὸν σφόδρα. Τὸ δὲ τῆς προθέσεως εἶδεν Ἱερουσαλήμ· καὶ περὶ τέλους Ἰσραήλ, καὶ ἀρχῆς ἐθνῶν καὶ τέλους τοῦ ναοῦ, ὡς θεμελίων καταστροφῆς, καὶ ἀργίας προφητῶν καὶ ἱερέων καὶ σαββάτων, καὶ διπλῆς κρίσεως ἐξέθετο. Καὶ ἀπέθανεν ἐν γήρει μακρῷ καὶ ἐκλιπὼν ἐτέθη σύνεγγυς τοῦ Ἀγγαίου.<pb facs="prophetarumvita00schegoog_0179"/></p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="12">
+          <p rend="indent">ιβʹ. Μαλαχίας ἑρμηνεύεται ἄγγελος. Οὗτος μετὰ τὴν ἐπιστροφὴν τίκτεται ἐν Σοφιρᾷ ἐκ γένους Λευΐ, καὶ ἔτι πάνυ νέος ὤν καλὸν βίον ἔσχεν. Καὶ ἐπειδὴ πᾶς ὁ λαὸς ἐτίμα αὐτὸν ὡς ἄμεπτον καὶ πραΰν, ἐκάλεσε Μαλαχίαν αὐτόν, ὅ ἐστιν ἄγγελος. Ἦν γὰρ καὶ τῷ εἴδει εὐπρεπής· ἀλλὰ καὶ ὅσα αὐτὸς εἶπεν ἐν προφητείᾳ, αὐτῇ τῇ ἡμέρᾳ ἄγγελος ὀφθεὶς θεοῦ ἐπεδευτέρου τοὺς λόγους αὐτοῦ· τὸν δὲ ἄγγελον οὐδεὶς ἀνάξιος ἐθεώρει, ἀλλ᾽ ἤτοι φωνὴν αὐτοῦ ἤκουε μόνον· οἱ δὲ ἄξιοι καὶ τὸ εἶδος αὐτοῦ ἐθεώρουν, ὡς ἐγένετο ἐν ταῖς ἡμέραις τῆς ἀναρχίας, ὡς γέγραπται ἐν σχωφετείμ, τουτέστιν ἐν βίβλῳ κριτῶν. Καὶ ἔτι νέος ὤν προσετέθη πρὸς τοὺς πατέρας αὐτοῦ ἐν βίῳ ἀγαθῷ, καὶ ἐτάφη μετὰ τῶν πατέρων αὐτοῦ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1750.tlg003.1st1K-grc1" n="13">
+          <p rend="indent">[ιγʹ. Ἡσαΐας ὁ προφήτης ἐγένετο μὲν ἐν Ἱερουσαλὴμ ἐκ φυλῆς Ἰούδα, θνήσκει δὲ ὑπὸ Μανασσῆ τοῦ βασιλέως Ἰούδα πρίονι ξυλίνῳ πρισθεὶς εἰς δύο, καὶ ἐτέθη ὑποκάτω δρυὸς Ῥωγὴλ ἐχόμενα τῆς διαβάσεως τῶν ὑδάτων, ὧν ἀπλεσεν Ἐζεκίας ὁ βασιλεὺς χώσας αὐτά.</p>
+          <p rend="indent">Ἱερεμίας ὁ προφήτης ἦν ἐξ Ἀναθὼθ καὶ ἐν Τάφναις Αἰγύπτου λιθοβοληθεὶς ὑπὸ τοῦ λαοῦ ἐτελεύτησεν.</p>
+          <p rend="indent">Ἰεζεκιὴλ ὁ προφήτης ἦν ἐκ γῆς Σαρηρᾶ, ἐκ τῶν υἱῶν τῶν ἀρχιερέων λευΐτης· ἀπέθανε δὲ ἐν τῇ γῇ τῶν ΧΚαλδαίων ἐπὶ τῆς αἰχμαλωσίας.]<pb facs="prophetarumvita00schegoog_0207"/></p>
+        </div>
+      </div>
+     
+    </body>
+  </text>
+</TEI>
