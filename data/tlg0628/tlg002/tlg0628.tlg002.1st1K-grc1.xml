@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Fragmenta minora</title>
+        <author>Musonius Rufus</author>
+        <editor>Otto Hense</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>Janan Assaly</persName>
+          <orgName>Mt. Allison University</orgName>
+        </respStmt>
+
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Michael Konieczny</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0628.tlg002.1st1K-grc1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2020-08-28</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">C. Musonii Rufi reliquiae</title>
+            <author>Musonius Rufus</author>
+            <editor>Otto Hense</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1905</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/cmusoniirufirel00hensgoog/page/n161/mode/2up">The
+            Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+
+      <editorialDecl>
+        <quotation marks="none"/>
+        <normalization>
+          <p/>
+        </normalization>
+        <correction>
+          <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+            University. Developed through the support of the <ref target="https://nbif.ca/en"
+              >NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+        Architecture</p>
+
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="fragment"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts fragments.</p>
+        </cRefPattern>
+      </refsDecl>
+
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+        <!--add more langs as appropriate if app crit is restored-->
+      </langUsage>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2020-08-28" who="Michael Konieczny">Initial markup of new file</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg0628.tlg002.1st1K-grc1" xml:lang="grc">
+        <div type="textpart" subtype="fragment" n="22">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent"><pb facs="cmusoniirufirel00hensgoog_0162"/>Οὐκ ἔστι τὴν ἐνεστηκυῖαν
+            ἡμέραν καλῶς βιῶναι μὴ προθέμενον αὐτὴν ὡς ἐσχάτην <del>βιῶσαι</del>. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="23">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Τί προβαλλόμεθα τοὺς τυράννους μακρῷ χείρονες αὐτῶν καθεστῶτες; τὰς γὰρ
+            ὁμοίας αὐτοῖς ἔχομεν ὁρμὰς ἐν ταῖς οὐχ ὁμοίαις τύχαις. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="24">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Κἂν ἡδονῇ κανονιστέον ᾖ τὰ ἀρεστά, οὐδὲν τῆς <pb
+              facs="cmusoniirufirel00hensgoog_0163"/>σωφροσύνης ἥδιον· κἂν πόνῳ κανονιστέον ᾖ τὰ
+            φευκτά, οὐδὲν τῆς ἀκρασίας ἐπιπονώτερον. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="25">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Μουσώνιος ἔλεγεν ὑπερβολὴν ἀναισχυντίας εἶναι τὸ πρὸς μὲν τὰς τῶν πόνων
+            ὑπομονὰς μεμνῆσθαι τῆς τοῦ σώματος ἀσθενείας, πρὸς δὲ τὰς τῶν ἡδονῶν ἐκλανθάνεσθαι. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="26">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Ἀρχὴ τοῦ μὴ κατοκνεῖν τὰ ἀσχήμονα <add>πράττειν</add> τὸ μὴ κατοκνεῖν τὰ
+            ἀσχήμονα λέγειν. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="27">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Καὶ ἂν τοῦ συμφέροντος μάλιστα προαιρῇ ἔχεσθαι, <pb
+              facs="cmusoniirufirel00hensgoog_0164"/>μὴ δυσχέραινε ταῖς περιστάσεσιν, ἐνθυμούμενος
+            πόσα ἤδη σοι τῶν ἐν βίῳ οὐχ ὡς σύ ἐβούλου συνέπεσεν, ἀλλʼ ὡς συνέφερεν. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="28">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Ἅρπαζε τὸ καλῶς ἀποθνῄσκειν, ὅτε ἔξεστι, μὴ μετὰ μικρὸν τὸ μὲν
+            ἀποθνῄσκειν σοι παρῇ, τὸ δὲ καλῶς μηκέτι ἐξῇ. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="29">
+          <head rend="center">Τοῦ αὐτοῦ.</head>
+          <p rend="indent">Oὐκ ἔστιν ἐπὶ πολλῶν συμφέροντι ζῶντα καθηκόντως ἀποθανεῖν, μὴ ἐπὶ
+            πλειόνων ἀποθνῄσκοντα συμφέροντι. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="30">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Αἰδοῦς παρὰ πᾶσιν ἄξιος ἔσῃ, ἐὰν πρῶτον ἄρξῃ σαυτὸν αἰδεῖσθαι. <pb
+              facs="cmusoniirufirel00hensgoog_0165"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="31">
+          <head rend="center">Μουσωνίου.</head>
+          <p rend="indent">Οὐ πολύν διάγουσι χρόνον οἱ πρὸς τοὺς ὑπηκόους ὑπὲρ ὧν ἂν πράττωσι μὴ τὸ
+              <q>καθήκει μοι</q> λέγειν μεμελετηκότες, ἀλλὰ τὸ <q>ἔξεστί μοι.</q> </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="32">
+          <head rend="center">Τοῦ αὐτοῦ.</head>
+          <p rend="indent">Mὴ θέλε ἐπιτάσσειν τὰ καθήκοντα τοῖς συγγιγνώσκουσί σοι τὰ μὴ καθήκοντα
+            πράττοντι. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="33">
+          <head rend="center">Τοῦ αὐτοῦ.</head>
+          <p rend="indent">Πειρατέον καταπληκτικὸν μᾶλλον τοῖς ὑπηκόοις ἢ φοβερὸν θεωρεῖσθαι· τῷ μὲν
+            γὰρ σεμνότης, τῷ δὲ ἀπήνεια παρακολουθεῖ. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="34">
+          <head rend="center">Μυσωνίου.</head>
+          <p rend="indent">Τῶν μὲν Κροίσου καὶ Κινύρου θησαυρῶν πενίαν <pb
+              facs="cmusoniirufirel00hensgoog_0166"/>ἐσχάτην καταψηφιούμεθα, ἕνα δὲ καὶ μόνον
+            πιστεύσομεν εἶναι πλούσιον <del>ἢ σοφὸν</del> τὸν δυνάμενον κτήσασθαι τὸ ἀνενδεὲς
+            πανταχοῦ. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="35">
+          <head rend="center">Μυσωνίου.</head>
+          <p rend="indent">Τοῦ ἀποθανεῖν ὁμοίως ἐπικεκλωσμένου πᾶσιν, οὐ τὸ βραδέως ἀλλὰ τὸ ἐμφανῶς
+            ἀποθανεῖν μακάριον. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="36">
+          <p rend="indent">Καὶ μὴν ὧν γε μεμνήμεθα Μουσωνίου καλῶν ἕν ἐστιν, Σύλλα, τὸ δεῖν ἀεὶ
+            θεραπευομένους βιοῦν <pb facs="cmusoniirufirel00hensgoog_0167"/>τοὺς σῴζεσθαι μέλλοντας.
+            οὐ γὰρ ὡς ἐλλέβορον, οἶμαι, δεῖ θεραπεύσαντα συνεκφέρειν τῷ νοσήματι τὸν λόγον, ἀλλʼ
+              <add>ἐᾶν</add> ἐμμένοντα τῇ ψυχῇ συνέχειν τὰς κρίσεις καὶ φυλάσσειν. φαρμάκοις γὰρ οὐκ
+            ἔοικεν ἀλλὰ σιτίοις ὑγιεινοῖς ἡ δύναμις αὐτοῦ, μεθ᾽ ὑγιείας ἕξιν ἐμποιοῦσα χρηστὴν οἷς
+            ἂν γένηται συνήθης· αἱ δὲ πρὸς ἀκμάζοντα τὰ πάθη καὶ οἰδοῦντα παραινέσεις καὶ νουθεσίαι
+            σχολῇ μὲν ἀνύτουσι καὶ μόλις, οὐδὲν δὲ τῶν ὀσφραντῶν διαφέρουσιν, ἃ τοὺς ἐπιληπτικοὺς
+            ἐγείροντα καταπίπτοντας οὐκ ἀπαλλάττει τοῦ νοσήματος. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="37">
+          <p rend="indent">Ὁ Ῥουτίλιος ἐκεῖνος ἐν Ῥώμῃ τῷ Μουσωνίῳ προσελθών <q>Μουσώνιε</q> εἶπεν
+              <q>ὁ Ζεὺς ὁ Σωτήρ, ὃν σὺ μιμῇ καὶ ζηλοῖς, οὐ δανείζεται.</q> καὶ ὁ Μουσώνιος μειδιάσας
+            εἶπεν <q>οὐδὲ δανείζει.</q> ὁ γὰρ Ῥουτίλιος δανείζων αὐτὸς ὠνείδιζεν ἐκείνῳ δανειζομένῳ.
+          </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="38">
+          <head rend="center">Ῥούφου ἐκ τῶν Ἐπικτήτου Περὶ φιλίας.</head>
+          <p rend="indent">Τῶν ὄντων τὰ μὲν ἐφʼ ἡμῖν ἔθετο ὁ θεός, τὰ <pb
+              facs="cmusoniirufirel00hensgoog_0168"/>δʼ οὐκ ἐφʼ ἡμῖν. ἐφʼ ἡμῖν μὲν τὸ κάλλιστον καὶ
+            σπουδαιότατον, ᾧ δὴ καὶ αὐτὸς εὐδαίμων ἐστί, τὴν χρῆσιν τῶν φαντασιῶν. τοῦτο γὰρ ὀρθῶς
+            γιγνόμενον ἐλευθερία ἐστίν, εὔροια, εὐθυμία, εὐστάθεια, τοῦτο δὲ καὶ δίκη ἐστὶ καὶ νόμος
+            καὶ σωφροσύνη καὶ ξύμπασα ἀρετή. τὰ δʼ ἄλλα πάντα οὐκ ἐφʼ ἡμῖν ἐποιήσατο. οὐκοῦν καὶ
+            ἡμᾶς συμψήφους χρὴ τῷ θεῷ γενέσθαι καὶ ταύτῃ διελόντας τὰ πράγματα τῶν μὲν ἐφʼ ἡμῖν
+            πάντα τρόπον ἀντιποιεῖσθαι, τὰ δὲ μὴ ἐφ᾽ ἡμῖν ἐπιτρέψαι τῷ κόσμῳ καί, εἴτε τῶν παίδων
+            δέοιτο εἴτε τῆς πατρίδος εἴτε τοῦ σώματος εἴτε ὁτουοῦν, ἀσμένους παραχωρεῖν. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="39">
+          <head rend="center">Ῥούφου ἐκ τοῦ Ἐπικτήτου Περὶ φιλίας.</head>
+          <p rend="indent">Τὸ δὲ Λυκούργου τοῦ Λακεδαιμονίου τίς ἡμῶν οὐ θαυμάζει; πηρωθεὶς γὰρ ὑπό
+            τινος τῶν πολιτῶν τῶν ὀφθαλμῶν τὸν ἕτερον καὶ παραλαβὼν τὸν νεανίσκον παρὰ τοῦ δήμου,
+            ἵνα τιμωρήσαιτο ὅπως αὐτὸς βούλεται, τούτου μὲν ἀπέσχετο, παιδεύσας δὲ αὐτὸν καὶ <pb
+              facs="cmusoniirufirel00hensgoog_0169"/>ἀποφήνας ἄνδρα ἀγαθὸν παρήγαγεν εἰς τὸ θέατρον.
+            θαυμαζόντων δὲ τῶν Λακεδαιμονίων <q>τοῦτον μέν τοι λαβών</q> ἔφη <q>παρʼ ὑμῶν ὑβριστὴν
+              καὶ βίαιον ἀποδίδωμι ὑμῖν ἐπιεικῆ καὶ δημοτικόν.</q>
+          </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="40">
+          <head rend="center">Ῥούφου ἐκ τοῦ Ἐπικτήτου Περὶ φιλίας.</head>
+          <p rend="indent">Ἀλλὰ παντὸς μᾶλλον τῆς μὲν
+            φύσεως ἐκεῖνο τὸ ἔργον, συνδῆσαι καὶ συναρμόσαι τὴν ὁρμὴν τῇ τοῦ προσήκοντος καὶ
+            ὠφελίμου φαντασίᾳ. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="41">
+          <head rend="center">Τοῦ αὐτοῦ.</head>
+          <p rend="indent">Τὸ δὲ οἴεσθαι εὐκαταφρονήτους τοῖς ἄλλοις ἔσεσθαι, ἐὰν μὴ τοὺς
+            πρώτους ἐχθροὺς παντὶ τρόπῳ βλάψωμεν, σφόδρα ἀγεννῶν καὶ ἀνοήτων ἀνθρώπων. φαμὲν γὰρ τὸν
+            εὐκαταφρόνητον νοεῖσθαι μὲν καὶ κατὰ τὸ ἀδύνατον εἶναι βλάψαι· ἀλλὰ πολὺ μᾶλλον νοεῖται
+            κατὰ τὸ ἀδύνατον εἶναι ὠφελεῖν. <pb facs="cmusoniirufirel00hensgoog_0170"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="42">
+          <head rend="center">Ῥούφου ἐκ τοῦ Ἐπικτήτου Περὶ φιλίας.</head>
+          <p rend="indent">Ὅτι τοιαύτη ἡ τοῦ κόσμου φύσις
+            καὶ ἦν καὶ ἔστι καὶ ἔσται καὶ οὐχ οἷόν τε ἄλλως γίγνεσθαι τὰ γιγνόμενα ἢ ὡς νῦν ἔχει·
+            καὶ ὅτι ταύτης τῆς τροπῆς καὶ τῆς μεταβολῆς οὐ μόνον οἱ ἄνθρωποι μετειλήφασι καὶ τἄλλα
+            ζῷα τὰ ἐπὶ γῆς, ἀλλὰ καὶ τὰ θεῖα, καὶ νὴ Δίʼ αὐτὰ τὰ τέτταρα στοιχεῖα ἄνω καὶ κάτω
+            τρέπεται καὶ μεταβάλλει καὶ γῆ τε ὕδωρ γίνεται καὶ ὕδωρ ἀήρ, οὗτος δὲ πάλιν εἰς αἰθέρα
+            μεταβάλλει, καὶ ὁ αὐτὸς τρόπος τῆς μεταβολῆς ἄνωθεν κάτω. ἐὰν πρὸς ταῦτά τις ἐπιχειρῇ
+            ῥέπειν τὸν νοῦν καὶ πείθειν ἑαυτὸν ἑκόντα δέχεσθαι τὰ ἀναγκαῖα, πάνυ μετρίως καὶ
+            μουσικῶς διαβιώσεται τὸν βίον. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="43">
+          <p rend="indent">Θρασέας εἰώθει λέγειν <q>σήμερον ἀναιρεθῆναι θέλω μᾶλλον ἢ αὔριον
+            φυγαδευθῆναι.</q> τί οὖν αὐτῷ Ῥοῦφος εἶπεν; <q>εἰ μὲν ὡς βαρύτερον ἐκλέγῃ, τίς ἡ μωρία τῆς
+            ἐκλογῆς; εἰ δʼ ὡς κουφότερον, τίς σοι δέδωκεν; οὐ θέλεις μελετᾶν ἀρκεῖσθαι τῷ
+            δεδομένῳ;</q>
+              <pb facs="cmusoniirufirel00hensgoog_0171"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="44">
+          <p rend="indent">Τί ἔτι ἀργοὶ καὶ ῥᾴθυμοι καὶ νωθροί ἐσμεν καὶ προφάσεις ζητοῦμεν,
+            καθ᾽ ἃς οὐ πονήσομεν οὐδʼ ἀγρυπνήσομεν ἐξεργαζόμενοι τὸν αὐτῶν λόγον; — Ἄν οὖν ἐν
+            τούτοις πλανηθῶ, μή τι τὸν πατέρα ἀπέκτεινα; — Ἀνδράποδον, ποῦ γὰρ ἐνθάδε πατὴρ ἦν, ἵν᾽
+            αὐτὸν ἀποκτείνῃς; τί οὖν ἐποίησας; ὃ μόνον ἦν κατὰ τὸν τόπον ἁμάρτημα, τοῦτο ἡμάρτηκας.
+            ἐπεί τοι τοῦτʼ αὐτὸ καὶ ἐγὼ Ῥούφῳ εἶπον ἐπιτιμῶντί μοι ὅτι τὸ παραλειπόμενον ἓν ἐν
+            συλλογισμῷ τινι οὐχ εὕρισκον. <q>οὐχ οἷον μέν</q> φημι <q><add>εἰ</add> τὸ Καπιτώλιον
+            κατέκαυσα,</q> ὁ δʼ <q>ἀνδράποδον,</q> ἔφη, <q>ἐνθάδε τὸ παραλειπόμενον Καπιτώλιόν
+              ἐστιν.</q> ἢ ταῦτα
+            μόνα ἁμαρτήματά ἐστι τὸ Καπιτώλιον ἐμπρῆσαι καὶ τὸν πατέρα ἀποκτεῖναι, τὸ δʼ εἰκῇ καὶ
+            μάτην καὶ ὡς ἔτυχεν χρῆσθαι ταῖς φαντασίαις ταῖς αὐτοῦ καὶ μὴ παρακολουθεῖν λόγῳ μηδʼ
+            ἀποδείξει μηδὲ σοφίσματι μηδʼ ἀπλῶς βλέπειν τὸ καθ᾽ αὑτὸν καὶ οὐ καθ᾽ αὑτὸν ἐν ἐρωτήσει
+            καὶ ἀποκρίσει, τούτων δʼ οὐδέν ἐστιν ἁμάρτημα; </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="45">
+          <p rend="indent">οὕτως καὶ Ῥοῦφος πειράζων με εἰώθει λέγειν <q>συμβήσεταί <pb
+              facs="cmusoniirufirel00hensgoog_0172"/>σοι τοῦτο καὶ τοῦτο ὑπὸ τοῦ δεσπότου.</q>
+            κἀμοῦ πρὸς αὐτὸν ἀποκριναμένου ὅτι ἀνθρώπινα, <q>τί οὖν</q> ἔφη <q>ἐκεῖνον παρακαλῶ παρὰ σοῦ
+            αὐτὰ λαβεῖν δυνάμενος; τῷ γὰρ ὄντι, ὃ ἐξ αὐτοῦ τις ἔχει, περισσὸς καὶ μάταιος παρʼ ἄλλου
+            λαμβάνων.</q> </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="46">
+          <p rend="indent">Τῶν νέων τοὺς μαλακοὺς οὐκ ἔστι προτρέψαι ῥᾴδιον· οὐδὲ γὰρ τυρὸν
+            ἀγκίστρῳ λαβεῖν· οἱ δʼ εὐφυεῖς, κἂν ἀποτρέπῃς, ἔτι μᾶλλον ἔχονται τοῦ λόγου. διὸ καὶ ὁ
+            Ῥοῦφος τὰ πολλὰ ἀπέτρεπεν τούτῳ δοκιμαστηρίῳ χρώμενος τῶν εὐφυῶν καὶ ἀφυῶν. ἔλεγε γὰρ
+            ὅτι <q>ὡς ὁ λίθος, κἂν ἀναβάλῃς, ἐνεχθήσεται κάτω ἐπὶ τὴν αὑτοῦ κατασκευήν, οὕτω καὶ ὁ
+              εὐφυής, ὅσῳ μᾶλλον ἀποκρούεταί τις αὐτόν, τοσούτῳ μᾶλλον νεύει ἐφʼ ὃ πέφυκεν.</q> </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="47">
+          <p rend="indent">Ῥούφῳ τις ἔλεγεν Γάλβα σφαγέντος ὅτι <q>νῦν προνοίᾳ ὁ κόσμος
+            διοικεῖται;</q> ὁ δὲ <q>μὴ παρέργως ποτ’</q> <pb
+              facs="cmusoniirufirel00hensgoog_0173"/>ἔφη <q>ἀπὸ
+            Γάλβα κατεσκεύασα, ὅτι προνοίᾳ ὁ κόσμος διοικεῖται;</q> </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="48">
+          <p rend="indent">Εἴωθε λέγειν ὁ Ῥοῦφος <q>εἰ εὐσχολεῖτε ἐπαινέσαι με, ἐγᾦδʼ οὐδὲν
+            λέγων.</q> τοιγαροῦν οὕτως ἔλεγεν, ὥσθ’ ἕκαστον ἡμῶν καθήμενον οἴεσθαι, ὅτι τίς ποτε
+            αὐτὸν διαβέβληκεν· οὕτως ἥπτετο τῶν γινομένων, οὕτω πρὸ ὀφθαλμῶν ἐτίθει τὰ ἑκάστου κακά.
+          </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="49" xml:lang="lat">
+          <p rend="indent"><gap reason="lost" rend="* * *"/>Musonium philosophum solitum accepimus.
+            <q>Cum philosophus</q> inquit <q>hortatur, monet, suadet, obiurgat aliudve quid
+            disciplinarum disserit, tum, qui audiunt, si de summo et soluto pectore obvias
+            vulgatasque laudes effutiunt, si clamitant etiam, si gestiunt, si vocum eius
+            festivitatibus, si modulis verborum, si quibusdam quasi frequentamentis orationis
+            moventur, <pb facs="cmusoniirufirel00hensgoog_0174"/>exagitantur et gestiunt, tum scias
+            et qui dicit et qui audiunt frustra esse, neque illi philosophum loqui, sed tibicinem
+            canere. animus</q> inquit <q>audientis philosophum, <add>dum</add> quae dicuntur utilia ac
+            salubria sunt et errorum atque vitiorum medicinas ferunt, laxamentum atque otium
+            prolixe profuseque laudandi non habet. quisquis ille est, qui audit, nisi ille est plane
+            deperditus, inter ipsam philosophi orationem et perhorrescat necesse est et pudeat
+            tacitus et paeniteat et gaudeat et admiretur, varios adeo vultus disparilesque sensus
+            gerat, proinde ut eum conscientiamque eius adfecerit utrarumque animi partium, aut
+            sincerarum aut aegrarum, philosophi pertractatio.</q> </p>
+          <p rend="indent">Praeterea dicebat magnam laudem non abesse ab admiratione, admirationem
+            autem, quae maxima est, non verba parere, sed silentium. <q>idcirco</q> inquit <q>poetarum
+            sapientissimus auditores illos Ulixi labores suos inlustrissime narrantis, ubi loquendi
+            finis factus, non exultare nec strepere nec vociferari facit, sed consiluisse universos
+            dicit quasi attonitos et obstupidos delenimentis aurium ad origines usque vocis
+            permanantibus: <quote rend="blockquote" xml:lang="grc">ὣς φάτο· τοὶ δʼ ἄρα πάντες ἀκὴν
+              ἐγένοντο σιωπῇ, <lb/>κηληθμῷ δʼ ἔσχοντο κατὰ μέγαρα σκιόεντα. </quote></q><pb
+              facs="cmusoniirufirel00hensgoog_0175"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="50" xml:lang="lat">
+          <p rend="indent"><q>Musonius</q> inquit <add>Herodes</add> <q>aeruscanti cuipiam id genus et
+            philosophum sese ostentanti dari iussit mille nummum, et cum plerique dicerent nebulonem
+            esse hominem malum et malitiosum et nulla re bona dignum, tum Musonium subridentem
+            dixisse aiunt: <q xml:lang="grc">ἄξιος οὖν ἐστιν ἀργυρίου.</q></q>
+          </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="51" xml:lang="lat">
+          <p rend="indent">Adulescentuli cum etiamtum in scholis essemus, <foreign
+            xml:lang="grc">ἐνθυμημάτιον</foreign> hoc Graecum
+            quod adposui, dictum esse <pb facs="cmusoniirufirel00hensgoog_0176"/>a Musonio
+            philosopho audiebamus et, quoniam vere atque luculente dictum verbisque est brevibus et
+            rotundis vinctum, perquam libenter memineramus: <q xml:lang="grc">Ἄν τι πράξῃς καλὸν
+              μετὰ πόνου, ὁ μὲν πόνος οἴχεται, τὸ δὲ καλὸν μένει· ἄν τι ποιήσῃς αἰσχρὸν μετὰ ἡδονῆς,
+              τὸ μὲν ἡδὺ οἴχεται, τὸ δὲ αἰσχρὸν μένει.</q>
+          </p>
+          <p rend="indent">Postea istam ipsam sententiam in Catonis oratione, quam dixit Numantiae
+            apud equites, positam legimus. quae etsi laxioribus paulo longioribusque verbis
+            comprehensa est praequam illud Graecum, quod diximus, quoniam tamen prior tempore
+            antiquiorque est, venerabilior videri debet. verba ex oratione haec sunt: <quote>Cogitate cum
+            animis vestris: si quid vos per laborem recte feceritis, labor ille a vobis cito
+            recedet, bene factum a vobis, dum vivitis, non abscedet; sed si qua per voluptatem
+            nequiter feceritis, voluptas cito abibit. nequiter factum illud apud vos semper
+            manebit.</quote> </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="52" xml:lang="lat">
+          <p rend="indent"><q>remittere </q>inquit Musonius <q>animum quasi amittere
+              est.</q>
+            <pb facs="cmusoniirufirel00hensgoog_0177"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="53">
+          <p rend="indent">προτρέπων μέ τις θαρρῆσαι Μουσωνίου διῄει λόγον· <q>ἐκεῖνος</q> ἔφη
+            <q>βουλόμενός τινα ἀναστῆσαι κάμνοντα καὶ ἀπειρηκότα οὑτωσί πως εἶπεν καθαπτόμενος· τί
+            μένεις; ποῖ βλέπεις; ἢ μέχρι ἂν αὐτὸς ὁ θεὸς παραστάς σοι φωνὴν ἀφιῇ; ἔκκοψον τὸ
+            τεθνηκὸς τῆς ψυχῆς, καὶ γνώσῃ τὸν θεόν.</q> τοιαῦτʼ ἔφη τὸν Μουσώνιον εἰπεῖν. <pb
+              facs="cmusoniirufirel00hensgoog_0180"/></p>
+        </div>
+
+      </div>
+
+      <!--<div type="apparatus">
+        <div type="textpart" subtype="fragment" n="22">
+          <p><pb facs="cmusoniirufirel00hensgoog_0162"/>1 Stobaeus III 1, 48 p. 19, 1 H. ecl. cum
+            lemmate hab. MA sed lemmate in A abscisso, addito lemmate etiam Tr. p. 7. iterat gnomam
+            M (olim etiam A) III 1, 77 p. 32, 10 H. || 3 βιῶσαι seclusit Nauck || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="23">
+          <p>4 Stobaeus III 5, 31 p. 185, 11 H. ecl cum lemmate habent MA || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="24">
+          <p>8 Stobaeus III 5, 21 p. 263, 6 H. ecl. cum lemmate hab. MALBr || 9 ad 'E ἂν aberravit L
+            rubr. | ἧ L Br ἡ vel ᾑ rell. <pb facs="cmusoniirufirel00hensgoog_0163"/>1 ἴδιον pro
+            ἥδιον L | ἥ L Βr: ἢ Mᵈ ἥ A Tr. || 2 οὐδὲν (quod coniectura repperit Meineke) L Br: οὐδὲν
+            ἐστι Mᵈ ALTr. ἐπιπονώτερον Meineke : ἐπωδυνώτερον Mᵈ ALTr. ἐπωδυνότερον Br || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="25">
+          <p>3 Stobaeus III 6, 21 p. 285, 11 H. ecl. cum lemmate hab. MA, sine lemmate L || 5
+            ὑπομονὰς μεμνῆσθαι Mᵈ A ὑπομεμνῆσθαι L || 6 ἐκλανθάνεσθαι libri sed ἐκ bis scr. L ||
+          </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="26">
+          <p>8 Stobaeus III 6, 22 p. 285, 16 H. ecl. habent lemmate addito MA, detracto L || 9 τοῦ
+            LA τὸ sed una littera post ο erasa Mᵈ || 10 τὰ ἀσχήμονα τὸ μὴ κατοκνεῖν om. Mᵈ |
+            πράττειν addendum esse vidit Gaisford || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="27">
+          <p>11 Stobaeus III 7, 22 p. 314 H. ecl. cum lemmate hab. MA <pb
+              facs="cmusoniirufirel00hensgoog_0164"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="28">
+          <p>4 Stobaeus III 7, 23 p. 315, 3 H. ecl. cum lemmate habent MA, sine lemm. Br; μουσωνίου
+            M τοῦ αὐτοῦ A. de Maximo vide Sternbach gnomol. Vat. 118 || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="29">
+          <p>8 Stobaeus lII 7, 24 p. 315, 7 H. ecl. cum lemmate hab. M A || 9 συμφέρον τῷ ζῶντα Mᵈ
+            συμφέρον τῷ ζῶντι A: tacite corr Gesn.² p. 88 | καθηκόντως Mᵈ προσεικόντως A || 10 ἐπὶ
+            Buecheler et Wachsmuth: ὑπὲρ Mᵈ A || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="30">
+          <p>12 Stobaeus III 31, 6 p. 670, 6 H. eclogam cum lemmate hab. SMLBr. iteratur ecloga
+            lemmaque corp. Par 675 Elt. sine lemmate etiam in florilegio Schenkelii (Wien. stud. XI
+            p. 10) 3 || 13 ἄρξῃς M || 14 σεαυτὸν flor. Schenk. <pb
+              facs="cmusoniirufirel00hensgoog_0165"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="31">
+          <p>1 Stobaeus flor. 48, 14 Mein. ecl. cum lemmate hab. SMA || 3 πράττωσιν M || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="32">
+          <p>5 Stobaeus flor. 48, 15 M. ecl. habent SMA, lemma τοῦ αὐτοῦ praefigunt M A, uno lemmate
+            tres ecl. 14. 15. 16 comprendit S || 6 –κουσιν M || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="33">
+          <p>8 Stobaeus flor. 48, 16 M. ecl. hab. SMA, lemma addunt MA, uno lemmate ecl. 14. 15. 16
+            comprendit S || 9 puto καταλλακτικὸν placabilem || 11 ἀπέχθεια prop. Meineke || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="34">
+          <p>12 Stobaeus flor. 94, 23 Mein. ecl. cum lemmate hab. SMA || 13 Κινύρου Valckenaer:
+            κύρου libri <pb facs="cmusoniirufirel00hensgoog_0166"/>2 ἢ σοφὸν seclusi. qui adscripsit
+            intempestive memor erat paradoxi Stoicorum istius ὅτι μόνος ὁ σοφὸς πλούσιος (Cic.
+            parad. 6). ἢ libri, καὶ scr. Gesn.¹ f. 451⁴ 3 fortasse ἀπανταχοῦ, cf. supra p. 36, 21.
+            41, 9. 1, 17. 48, 12. 99, 1 || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="35">
+          <p>4 Stobaeus flor. 118, 26 M. ecl. cum lemmate hab. SA, μοῦσ’ S || 5 ἐπικεκλωσμένον Tr.
+            ἐπικεκλωμένου S ἐπικεκλιμένου A || 6 ἐμφανῶς] ῾ εὐθανάτως vel tale quid expectabamʼ
+            Meineke. immo interpretandum videtur haud ignobiliter || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="36">
+          <p>7 Plutarchus de cohib. ira p. 453 D, qui dicentem haec facit C. Minicium Fundanum,
+            Musonii admiratorem, de quo monui in praef. <pb facs="cmusoniirufirel00hensgoog_0167"/>3
+            ἐᾶν addidit Elter || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="37">
+          <p>11 Plutarchus de vitando aere al. p. 830 B. || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="38">
+          <p>16 Stobaeus II 8, 30 p. 159, 23 W. ecl. hab. FP, lemma habet F in marg. || 17 ὄντων τὰ
+            F ὄντα P τὰ δʼ οὐκ (om ἐφʼ ἡμῖν) Canter, inde Meineke τὰ δʼ οὔ <pb
+              facs="cmusoniirufirel00hensgoog_0168"/>4 εὔροια (ut coniecit Schweighaeuser) sed corr.
+            in εὕροι F εὕροι P || 5 σύμπασα P || 7 συψήφους P || 9 ἐπιστρέψαι P || 11 ὁτιοῦν FP:
+            corr. Meineke || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="39">
+          <p>12 Stobaeus III 19, 13 p. 532, 14 H. ecl. hab cum lemm. SMA, lemmate omisso Br. ἐκ ᵀ
+            (ἐκ τῶν interpretatur Meineke) S || 14 τῶν ὀφθαλμῶν τὸν ἕτερον S: τὸν ἕτερον τῶν
+            ὀφθαλμῶν Mᵈ A Βr || 16 ὅπως 〈ἂν〉 αὐτὸς βούληται C. Schenkl | βούληται libri: corr
+            Meineke an βούλοιτο? <pb facs="cmusoniirufirel00hensgoog_0169"/>1 ἤγαγεν A || 3 ἡμῶν A
+            || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="40">
+          <p>5 Stobaeus III 20, 60 H. ecl. cum lemm. hab. SMA. ἐκᵀ S ἐκ τῶν cum Trincavelliana
+            editione Meineke || 7 s. τῆς – φαντασίας libri: corr. Buecheler || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="41">
+          <p>9 Stobaeus III 20, 61 p. 552, 8 H. ecl. cum lemm. hab. SMA || 12 ἀγενῶν sine acc. Mᵈ ||
+            13 τὸ εὐκ. mavult Wachsmuth || 14 ἀδύνατον (sic ut correxit Schweighaeuser) hic et 15 A
+            : δυνατὸν utroque loco SMᵈ <pb facs="cmusoniirufirel00hensgoog_0170"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="42">
+          <p>1 Stobaeus flor. 108, 60 M. ecl. cum lemm. hab SMA. 'admodum carptim raptimqueʼ haec
+            excerpta esse, vel iterata illa ὅτι et καὶ indicantʼ recte Bernays l. c. || 2 καὶ ante
+            ἔστι om. A || 9 αἰθέρα (ut prop. Nieuwland ap. Peerlk. p. 81) iam A²: ἕτερα SMA || 10
+            ἐὰν 〈γοῦν〉 coni. Gesnerus, ἐὰν 〈δὲ〉 ego, ἐὰν 〈οὖν) C. Schenkl || 11 τρέπειν Gesn.¹ f.
+            491ᵛ mrg. || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="43">
+          <p>Arriani diss. Epictet. I 1, 26 s. p. 8, 11-15 Schenkl <pb
+              facs="cmusoniirufirel00hensgoog_0171"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="44">
+          <p>1 Arrianus Epict. diss. I 7, 30 ss. Sch. || 10 εἰ addidit Blass qui verba οὐχ οἷον μὲν
+            εἰ interpretatur 'es ist jedenfalls (μὲν) nicht so schlimm. als wenn' lit. Centralbl.
+            1899 p. 170 οὐχ οἱονεὶ praeiverat Elter | κατέκαυσα H. Schenkl: κατεσκεύασα
+            S(aibantianus) κατέσκαψα codicis S apographa sive omnia sive singula); μὴ γὰρ, ἔφην, τὸ
+            Κ. ἐνέπρησα; unum apogr. || 13 τ δʼ (supra τ una littera erasa) S τὸ δʼ ex corr. S ||
+          </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="45">
+          <p>19 Arr. diss. Epict. I 9, 29 p. 36, 15-20 Schenkl <pb
+              facs="cmusoniirufirel00hensgoog_0172"/>3 ἔπι (pro ἔφη) primo S(aibantianus) | παρακαλῇ
+            Meibomius. cf Zeller die phil. d. Gr.³ III 1 p. 735 adn. 3 | αὑτὰ S m. pr. vel Sa: αὐτοῦ
+            S || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="46">
+          <p>6 Arr. diss. Epict. III 6, 9 Sch. || 11 γῆν κατὰ suppl. post ἐπὶ Schweighaeuser || 12
+            αὐτοῦ S(aibant.): corr. ed. Lond || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="47">
+          <p>15 Arr. diss. Epict. III 15, 14 Sch. ubi in codice Saibantiano scholium adscriptum
+            legitur hoc (p. LXXVIII ed. Schenkl): ὡς ἔοικεν οὗτος οὐκ ἦν φιλόσοφος, ὃν ἐπιρραπίζει ὁ
+            φιλόσοφος Ῥοῦφος λέγων ὅτι παρέργως φιλοσοφεῖ· ἔδει γάρ σέ φησι προηγουμένως
+            κατασκευάζειν, ὅτι ἔστι πρόνοια καὶ μὴ ἀπὸ Γάλβα· ἐγὼ γὰρ ταῦτό φησιν οὐκ ἐποίησα: - ||
+            16 μὴ γὰρ ἐγώ σοί ποτʼ Coraes. si quid mutandum, scribatur κατεσκεύασας mox cum Eltero
+              <pb facs="cmusoniirufirel00hensgoog_0173"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="48">
+          <p>3 Arr. diss. Epict. III 23, 29 Sch. || 4 ἐγᾦδ’ (vel ἐγὼ οἶδʹ) - λέγων scripsi: ἐγὼ δʼ -
+            λέγω S || 6 fort. τῶν γενομένων || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="49">
+          <p>8 Gellius N. A. V 1 Hos., ubi summarium praemittitur hoc: 'Quod Musonius philosophus
+            reprehendit inprobavitque laudari philosophum disserentem a vociferantibus et in
+            laudando gestien- tibusʼ | lacunam statuit Hertz, cf. infra fr. LI initium || 12 si
+            gestiunt om. Carrio, aut hic aut p. 131, 1 exsiliunt Ioa. Fr. Gro- novius, aestuant
+            lacobus Gronovius || 14 fretamentis libri melio- res: corr. libri deteriores;
+            irritamentis Salmasius. fermentis vel fricamentis prop. Hosius | orationibus libri haud
+            pauci <pb facs="cmusoniirufirel00hensgoog_0174"/><lb/>4 dum add Hertz, si Carrio
+            &lt;quoad&gt; vel &lt;a quo&gt; mavult <lb/>Hosius || 5 fuerunt libri mel., corr.
+            deteriores <lb/><pb facs="cmusoniirufirel00hensgoog_0175"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="50">
+          <p>1 Gell. N. A. IX 2, 8 Hos. C. Musonium Rufum intellegendum esse praeter alios iudicavit
+            etiam Zeller pphilos. der Gr.³ III 1 p. 691 adn. || </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="51">
+          <p>7 Gellius N. A. XVI 1, 1 ss. ubi summarium praemittitur hoc 'Verba Musoni philosophi
+            Graeca digna atque utilia audiri observarique; eiusdemque utilitatis sententia a M.
+            Catone multis ante annis Numantiae ad equites dictaʼ. <pb
+              facs="cmusoniirufirel00hensgoog_0176"/></p>
+        </div>
+        
+        <div type="textpart" subtype="fragment" n="52">
+          <p>18 Gellius N.A. XVIII 2, 1 Hos., inde Macrobius sat. I 5, 12 Eyss. <pb
+          facs="cmusoniirufirel00hensgoog_0177/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="53">
+          <p>1 Aelius Aristides or. LII vol. II p. 467, 6 ss. Keil. || 2 ἔφη βουλόμενος Laurentianus
+            pl. LX cod. 3: βουλόμενος ἔφη alii libri || 3 εἶπεν Keil: εἰπεῖν libri || 4 μέχρισ cod.
+            Urbinas graec. 123 <pb facs="cmusoniirufirel00hensgoog_0180"/></p>
+        </div>
+
+      </div>
+
+      <div type="commentary">
+        <div type="textpart" subtype="fragment" n="22">
+          <p><pb facs="cmusoniirufirel00hensgoog_0162"/>1 Similes huius sententias congessit
+            Gatakerus ad Marci Antonini II 11 VII 29. 56. 69. cf. Sen. ep. 93, 6 nullum (sc. diem)
+            non' tamquam ultimum aspexi </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="23">
+          <p>4 cf. Seneca de ira II 31, 3 epist. 47, 20 </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="24">
+          <p>8 Musonius 'Epicureis criteriis, voluptate et <pb facs="cmusoniirufirel00hensgoog_0163"
+            />dolore, ad temperantiam commendandam utiturʼ: Vsener ἄpicur. p. LVII </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="26">
+          <p>8 cf. Clem. Al. paed. II p. 199 P. τὸ γὰρ ἐν τοῖς ὀνόμασιν ἀτακτεῖν μελέτην ἐμποιεῖ τοῦ
+            καὶ εἰς τὰ ἔργα ἀκοσμεῖν <pb facs="cmusoniirufirel00hensgoog_0164"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="28">
+          <p>4 cf. Seneca epist. 58, 34 et fortasse paulo ante quam debet, faciendum est (sc.
+            educere animum), ne cum fieri debebit, facere non possis ib. 70, 6 </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="30">
+          <p>12 cf. Galenus περὶ ψυχῆς παθῶν p. 20, 10 <pb facs="cmusoniirufirel00hensgoog_0165"
+            />Marq. σὺ δὲ σαυτὸν αἰδοῦ μάλιστα πειθόμενος τῷ, φάντι πάντων δὲ μάλιστʼ αἰσχύνεο
+            σαυτόνʼ </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="33">
+          <p>8 cf. Clem. Alex. paed. II 48 p. 197 P. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="34">
+          <p>12 Clemens Al. paed. III 34 p. 274 P. ἐὰν δὲ ἄρα <pb
+              facs="cmusoniirufirel00hensgoog_0166"/>πλουτῇ μὲν Κινύρα τε καὶ Μίδα μᾶλλον, ἡ δὲ
+            ἄδικος καὶ ὑπερήφανος, . . . ἄθλιός τέ ἐστι καὶ ἀνιαρῶς ζῇ. cf. quae composuit Wendland
+            quaest. Muson. p. 64 Philos schr. über die Vorsehung p. 21 adn. 1 καταψηφιούμεθα verbo
+            nescias an aliquid coloris haereat cynici, nam Cynicos scriptores interdum
+            psephismatisinvento usos esse ex Luciani imitationibus probabile fit, cf. Guil. Schmid
+            Philol. v. L p. 304 Cicero parad. VI 51 non esse cμpίἀuσι pecunia est, non esse emacem
+            vectigal est ; contentum vero suis rebus esse maximae sunt certissimaeq. divitiae.
+            Attalus Senecae ep. 110, 18 ad veras potius te coverte divitias. disce parvo esse
+            contentus e. q. s. Clem. Alex. paed. II 39 p. 191 P. πλοῦτος δὲ ἄριστος ἡ τῶν ἐπιθυμιῶν
+            πενία </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="35">
+          <p>4 Ps.-Isocrates ad Demon. 43 τὸ μὲν γὰρ τελευτῆσαι πάντων ἡ πεπρωμένη κατέκρινε, τὸ δὲ
+            καλῶς ἀποθανεῖν ἴδιον τοῖς σπουδαίοις ἀπέυειμεν. Tacitus ann. XlV 59 </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="36">
+          <p>8 cf. Muson. p. 61, 14 ss. 63, 2 <pb facs="cmusoniirufirel00hensgoog_0167"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="38">
+          <p>16 de lemmate huius eclogae et sequentium vide quae disseruit R. Asmus Quaest. Epict.
+            Friburgi Br. ed. a. 1888 p. 41 ss. 17 τὰ μὲν ἐφʼ ἡμῖν . . . τὰ δʼ οὐκ ἐφʼ ἡμῖν] cf.
+            Clem. Alex. paed. III 36 p. 275 P. sim. passim Arrianus in diss. Epict. velut I 1, 7 τὸ
+            κράτιστον ἀπάντων καὶ κυριεῦον οἱ θεοὶ μόνον ἐφʼ ἡμῖν ἐποίησαν, τὴν χρῆσιν τὴν ὀρθὴν
+            ταῖς φαντασίαις, τὰ δʼ ἄλλα οὐκ ἐφʼ ἡμῖν <pb facs="cmusoniirufirel00hensgoog_0168"/> 10
+            μὴ δυσχέραινε ταῖς περιστάσεσιν supra Musonius fr XXVII, ἑκόντα δέχεσθαι τὰ ἀναγκαῖα
+            suadet fr. XLII </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="39">
+          <p>12 cf. Plutarchus Lycurg. c. 11. ceterum haec de Lycurgo historiola plane convenit eis
+            quae supra de iniuriis non persequendis Musonium disserentem facit Lucius p. 52 ss. <pb
+              facs="cmusoniirufirel00hensgoog_0170"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="42">
+          <p>1 'Musonius Rufus aperte heraclitissansʼ Bernays ges. abh. I p. 2 adn. 1 7 cf. Cicero
+            de nat deorum II 33, 84 </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="43">
+          <p>18 cf. Te- les p. 28, 12 s. et quae ibi adnotavimus, Musonius fr. XXVII <pb
+              facs="cmusoniirufirel00hensgoog_0171"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="44">
+          <p>cf Diog. Laert. VII 120 ἀρέσκει τε αὐτοῖς (sc. τοῖς Στωικοῖς) ἴσα ἡγεῖσθαι τὰ
+            ἁμαρτήματα, sed vide nunc quae composuit ab Arnim Stoicorum vet. fr. II p. 140 ss. <pb
+              facs="cmusoniirufirel00hensgoog_0172"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="46">
+          <p>6 cf. Diog. Laert IV 47; Musonius supra p. 61, 7 ἔστι δὲ ἄμεινον μηδὲ προσιέναι τῷ
+            φιλοσόφῳ τοὺς πλείονας τῶν φιλοσοφεῖν λεγόντων νέων, ὅσοι σαθροί τε καὶ μαλακοί, διʼ οὓς
+              <pb facs="cmusoniirufirel00hensgoog_0173"/>προσιόντας ἀναπίμπλαται κηλίδων φιλοσοφία
+            Sen. epist. 112, 1 et quae ibi adnotavi </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="48">
+          <p>3 comparetur fragmentum proximum, inprimis verba 'tum scias et qui dicit et qui audiunt
+            frustra esseʼ. praeterea Sternbachii gnom. Vat. 9 et 135 comparat H. Schenkl </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="49">
+          <p>8 ss. Seneca ep. 52, 9 'quid enim turpius philosophia captante clamores? numquid aeger
+            laudat medicum secantem? tacete, favete et praebete vos curationi.' <pb
+              facs="cmusoniirufirel00hensgoog_0174"/><lb/>4 de imagine cf. supra p. 1, 9 ss. Zeller,
+            die phil. der Gr.³ <lb/>III 1 p. 733 adn. 2 7 cf. supra p. 64, 17 οἵ γε μὴ τελέως
+            <lb/>ἀπερρωγότες 23 Od. ν 1 <lb/><pb facs="cmusoniirufirel00hensgoog_0175"/></p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="50">
+          <p>1 Gellius N. A. IX 2, 1 ss. Ad Herodem Atticum, consularem virum ingenioque amoeno et
+            Graeca facundia celebrem, adiit nobis praesentibus palliatus quispiam et crinitus
+            barbaque prope ad pubem usque porrecta ac petit aes sibi dari εἰς ἄρτους. tum Herodes
+            interrogat, quisnam esset. atque ille vultu sonituque vocis obiurgatorio philosophum
+            sese esse dicit et mirari quoque addit, cur quaerendum putasset quod videret. 'Videoʼ
+            inquit Herodes 'barbam et pallium, philosophum nondum video. quaeso autem te, cum bona
+            venia dicas mihi, quibus nos uti posse argumentis existimas, ut esse te philosophum
+            noscitemus?' Interim aliquot ex his, qui cum Herode erant, erraticum esse hominem dicere
+            et nulli rei incolamque esse sordentium ganearum, nisi accipiat, quod petit, convicio
+            turpi solitum incessere; atqne ibi Herodes: 'Demusʼ inquit 'huic aliquid aeris,
+            cuicuimodi est, tamquam homines, non tamquam hominiʼ, et iussit dari pretium panis
+            triginta dierum. Tum nos adspiciens, qui eum sectabamur: 'Musoniusʼ inquit 'aeruscanti -
+            ἐστιν ἀργυρίουʼ. </p>
+        </div>
+
+        <div type="textpart" subtype="fragment" n="51">
+          <p>8 unde adsumpserit hoc dictum vel Musonius vel olim Cato nescimus. non recte opinatur
+            Hirzel (dial. II p. 239 adn. 3) Musonium <pb facs="cmusoniirufirel00hensgoog_0176/>Catonianam sententiam Graece vertisse.
+            immo Graecum exemplar hic ut alibi a Rufo adhibitum esse ut per se veri est similius ita
+            ipsius dicti comprobatur concisa brevitate. cf. etiam adn. fr. XXIV 7 M. Catonis rel.
+            or. V 1 p. 38, 10 Iord. 13 ss. Cicero de sen. 19, 69 'tantum remanet quantum virtute et
+            recte factis consecutus sis' comparat Iordan </p>
+         </div>
+         
+         <div type="textpart" subtype="fragment" n="52">
+            <p>18 latino, non ut assolet, graeco sermone Musonium hoc concepisse e lusu verborum
+            colligebant velut Hirzel der dial. II p. 242 adn. 3, <pb
+            facs="cmusoniirufirel00hensgoog_0177/>subesse potius Graecum tale ὅμοιον τὸ ἀνιέναι ψυχὴν τῷ ἀφιέναι suspicatur M. Croiset
+            hist. de la litt. grecque t. V p. 419 n. 3. et comparari potest Arr. Epict. diss. IV 9,
+            14, quem locum supra exscripsimus ad p. 98, 15. strenua et assidua exercitatio
+            commendatur Περὶ ἀσκήσεως p. 22 ss. <pb facs="cmusoniirufirel00hensgoog_0180"/></p>
+        </div>
+
+      </div>-->
+
+    </body>
+  </text>
+</TEI>
