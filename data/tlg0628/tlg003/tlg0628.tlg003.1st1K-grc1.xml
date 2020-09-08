@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Epistulae spuriae</title>
+        <author>Musonius Rufus</author>
+        <editor>Otto Hense</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>Kirsten Mason</persName>
+          <orgName>Mt. Allison University</orgName>
+        </respStmt>
+
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Michael Konieczny</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0628.tlg003.1st1K-grc1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2020-08-29</date>
+      </publicationStmt>
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">C. Musonii Rufi reliquiae</title>
+            <author>Musonius Rufus</author>
+            <editor>Otto Hense</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1905</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/cmusoniirufirel00hensgoog/page/n179/mode/2up">The
+            Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+
+      <editorialDecl>
+        <quotation marks="none"/>
+        <normalization>
+          <p/>
+        </normalization>
+        <correction>
+          <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+            University. Developed through the support of the <ref target="https://nbif.ca/en"
+              >NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+        Architecture</p>
+
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+).(\w+)" n="section"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+          <p>This pointer pattern extracts letter and section.</p>
+        </cRefPattern>
+        
+        <cRefPattern matchPattern="(\w+)" n="letter"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts letters.</p>
+        </cRefPattern>
+      </refsDecl>
+
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <!--add more langs as appropriate if app crit is restored-->
+      </langUsage>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2020-08-29" who="Michael Konieczny">Initial markup of new file</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg0628.tlg003.1st1K-grc1" xml:lang="grc">
+        <div type="textpart" subtype="letter" n="1">
+          <div type="textpart" subtype="section" n="1">
+            <head rend="center"><pb facs="cmusoniirufirel00hensgoog_0180"/>Παγκρατίδῃ. </head>
+            <p rend="indent">Καὶ ἐκ τῶν ἀπαγγελλομένων
+              ἡμῖν περὶ σοῦ καὶ ἐξ ὧν αὐτὸς ἀπέστειλας τοῖς υἱοῖς σου τεκμαιρόμενος μὴ τὰ αὐτὰ τοῖς
+              λαώδεσιν, ἀλλ᾽ ἅπερ οἰκεῖόν ἐστι σὲ φρονεῖν περὶ φιλοσοφίας, προεθυμήθην κατὰ μὲν τὸ
+              παρὸν συνησθῆναί σοι ἐπ᾽ αὐτοῖς, εἰς δὲ τὸ ἐπιὸν συνεύξασθαι, μὴ ἐφ᾽ ἕτερόν τι
+              αὐτοὺς ἀποκλῖναι, τηροῦντας δὲ ἢν ἔχουσι νῦν πρόθεσιν ἄχρι τέλους φιλοσοφῆσαι, ἴν᾽
+              αὐτοί τε εὖ ἀπαλλάττωσι καὶ σὲ ἀνθ᾽ ὧν ἐκ σοῦ ἔπαθον ἀμείψασθαι δυνηθῶσι. δυοῖν γὰρ ὡς
+              καθόλου εἰπεῖν οὐσῶν αἰτιῶν, παρ᾽ ἅς ἄνθρωποι εὐτάκτως καὶ ὁδῷ ζῶσιν, ἐμπειρίας τε
+              καὶ ἐγκρατείας, πῶς ἂν δυναίμεθα ἢ πρὸς ἑαυτοὺς ἢ πρὸς ἑτέρους ποιεῖν τὰ δέοντα ὑπ᾽
+              ἀγνοίας ἄμα καὶ ἀκρασίας κατεχόμενοι; </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="2">
+            <p>ἡ μὲν οὖν τούτων ἀπόλυσις ἀναγκαίως πάνυ ἔοικε παρ᾽ ἡμῶν ἀπαιτεῖσθαι· πρὸς γὰρ τὸ
+              τεταγμένως καὶ εὐσχημόνως ζῆν γεγόναμεν, τοῦ λόγου εἰς τοῦτο ἡμῖν καθάπερ ἐπισκόπου
+              καὶ ἄρχοντος ὑπὸ τῆς φύσεως δεδομένου. ἀπολυθῆναι μέντοι ἀγνοίας καὶ ἀκρασίας οὐχ οἷόν
+              τε ἡμᾶς ἄνευ τοῦ ἐπιτρέψαι αὐτοὺς τῇ διὰ τοῦ λόγου ἰατρείᾳ· προσελθοῦσα γὰρ <pb
+                facs="cmusoniirufirel00hensgoog_0181"/>αὕτη καὶ τὸ προεστηκὸς ἐν ἡμῖν ἐκ τοῦ παρὰ
+              φύσιν εἰς τὸ κατὰ φύσιν αἰεὶ τρέπουσα τὰς μὲν μοχθηρὰς τῶν κρίσεων καὶ ἐκ τῆς
+              διαστροφῆς ἐγκειμένας ἐπικόπτειν καὶ ἐξάγειν ἐκ τῆς ψυχῆς ἀεὶ πειρᾶται, τὰς δ᾽ ὑγιεῖς
+              καὶ ἀκολούθους τῇ φύσει ἀντεισάγειν ἢ ἀσθενούσας ἀνακτᾶσθαι. </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="3">
+            <p>ἰσχὺν δὲ αὗται καὶ εὐστάθειαν προσλαβοῦσαι ὡς χρὴ ἡμᾶς ἐν ἅπασι τοῖς κατὰ τὸν
+              βίον ὁδηγοῦσιν, ὥστε καὶ ὁρᾶν ἀεὶ τὰ ἐπιβάλλονθ᾽ ἡμῖν καὶ σύμφωνα οἷς ἐδοκιμάσαμεν
+              πράττειν. τοιαῦτα οὐκ ἐπαγγελλομένης μόνον ἀλλὰ καὶ παρεχούσης τῆς κατὰ τὴν ψυχὴν
+              ἰατρείας τίνα ἄν τις δικαιότερον ἐπὶ τὸ βοηθεῖν τοῖς σοῖς παισὶν ἢ σὲ καλέσειεν; ἢ οὐκ
+              εὐδαιμονεῖν μὲν αὐτοὺς προαιρῇ πατὴρ ὤν, ἑτοίμως δ᾽ ἔχεις πᾶν ὁτιοῦν ὑποστῆναι, ἵνα
+              αὐτοὺς ὁρᾷς ἐν ἀγαθοῖς ὄντας; ἢ οὐκ ἐπὶ ταῦτα καὶ ἐγέννησας αὐτοὺς καὶ ἀνεθρέψω; οὐ
+              τοιαῦτα δὲ διηνεκῶς σὺ περὶ αὐτῶν εὔχῃ τοῖς θεοῖς; </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="4">
+            <p>ἀρετῆς δὲ καὶ εὐσχημοσύνης βίου ἀντιποιούμενος οὐκ ἂν ἐθελήσειας ὁρᾶν τοὺς
+              σεαυτοῦ παῖδας εὐτάκτους μὲν ἐν ἐδωδαῖς καὶ πόσεσι, κρατοῦντας δὲ τῶν ὑπὸ γαστέρα, ὡς
+              πρὸς σπορὰν μόνον τέκνων, ὅταν εὔκαιρον ᾖ, τοῖς γεννητικοῖς μέρεσι χρῆσθαι, καὶ
+              ὀλίγῳ μὲν ὕπνῳ πρὸς ἀνάπαυσιν ἀρκουμένους, ἐσθῆτι δὲ ἀπράγμονι καὶ μὴ ἐψευσμένῃ, ἀλλὰ
+              καθαρᾷ καὶ πρὸς τὸ ἐκ τῆς φύσεως εἰς τὸ σκέπειν ἀπαιτούμενον ἡρμοσμένῃ ἠμφιεσμένους,
+              βλέμμα δ᾽ εἶναι καὶ βάδισμα αὐτῶν <pb facs="cmusoniirufirel00hensgoog_0182"/>αἰδοῖ καὶ
+              φρονήσει κεχαρακτηρισμένον, ὡς μὴ ἄν τινα θαρσῆσαι ἐπ᾽ αὐτῶν ἢ ποιῆσαί τι ἢ εἰπεῖν
+              ἄκοσμον, ἐν ἑτοίμῳ δ᾽ εἶναι αὐτοῖς ὁπότε βουληθεῖεν καὶ δεήσειεν ὅλῳ τε τῷ σώματι καὶ
+              παντὶ μέρει αὐτοῦ εἰς ὃ πέφυκε χρῆσθαι; </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="5">
+            <p>οὐκ ἂν δὲ ἐθελήσειας αὐτοὺς ἐπεσκεμμένους τὰ θεῖα καὶ τὰ ἀνθρώπινα πρὸς μὲν
+              θεοὺς εὐσεβείᾳ καὶ ὁσιότητι κοσμεῖσθαι, πρὸς ἀνθρώπους δὲ δικαιοσύνῃ καὶ ὁσιότητι, καὶ
+              πατρίδα μὲν γονέων προτιμᾶν, καὶ αὐτῶν τοῦτο βουλησομένων τῶν γονέων εἴπερ σωφρονοῖεν,
+              γονεῖς δὲ τῶν οἰκείων καὶ συγγενῶν, αὐτῶν δὲ τῶν γονέων τῷ πατρὶ τὸ πρεσβεῖον
+              ἀπονέμοντας, τὸ μὲν αἰτεῖν ἢ μέμφεσθαι θάτερον αὐτῶν ἀσεβὲς ἡγεῖσθαι, τὸ δ᾽ ἀμείβεσθαι
+              ὑπὲρ τῶν προηγησαμένων εὐχαρίστῳ καὶ μνημονευούσῃ διαθέσει ἀναγκαῖον, ὡς ἂν μόνως
+              οὕτως ἐκτίνειν δυναμένους παλαιὰς χάριτας ἐπὶ νέαις δανεισθείσας, ἑτοίμως δ᾽ ἔχοντας
+              ὑπερμαχεῖν αὐτῶν καὶ δι᾽ αὐτοὺς εἰ δεήσειεν ἀποθνῄσκειν, ὁπότε δὲ χαλεπήνειαν, μὴ
+              ῥήματα μόνον, ἀλλὰ καὶ πληγὰς καὶ τραύματα ἀπ᾽ ὀργῆς οὐ διαθέσεως φερόμενα πρᾴως
+              ἐκδέχεσθαι, οὐχ ὑπὲρ ἑαυτῶν τότε, ἀλλ᾽ ὑπὲρ τῶν γονέων εὐλαβῶς ἔχοντας, μὴ ἐκ τοῦ
+              διατιθέναι αὐτοί τι κακὸν πάθωσι; </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="6">
+            <p>τί δ᾽ οὐκ ἂν ὑπομείνειας, ὥστε πεισθῆναι περὶ αὐτῶν, ὅτι τὸν αὐτὸν μὲν
+              οἰκήσουσι διὰ βίου οἶκον, ἑαυτοὺς δὲ καὶ τὰ ἑαυτῶν ἐν κοινῷ θέμενοι διατελέσουσιν
+              ὁμονοοῦντες, ὡς καὶ σπουδαῖς καὶ ἀνέσεσι ταῖς αὐταῖς χρῆσθαι; ἢ ταῦτα μὲν ἐθέλῃ <pb
+                facs="cmusoniirufirel00hensgoog_0183"/>σειας ἂν αὐτοῖς ὑπάρξαι, θανάτου δὲ καὶ πόνου
+              καὶ δόξης οὐκ ἂν βούλοιο αὐτοὺς ὑπεράνω εἶναι, οἷς ὁ πολὺς καταδεδουλωμένος, ὅποι ἂν
+              ἀπίῃ, τῷ δι᾽ αὐτῶν κατισχύοντι ὥσπερ τι ἄτιμον ἀνδράποδον ἄγεταί τε καὶ φέρεται, τὸ δὲ
+              τῇ φύσει μὲν πολὺ ῥᾳδιώτερον τῶν προτέρων, ἐν δὲ τοῖς καθ᾽ ἡμᾶς χρόνοις ὑπὸ τῆς ἐπὶ
+              τοσαῦτα κατεχούσης διαστροφῆς γεγονὸς δυσχερέστερον οὐκ ἂν εὔξαιο αὐτοῖς ὑπάρξαι, ὥστε
+              μὴ ἀργυρίῳ αὐτοὺς πάντα μετρεῖν καὶ αὐτοὺς μᾶλλον καὶ γονεῖς καὶ τέκνα ἢ χρήματα
+              προΐεσθαι, ἀλλὰ κτήσεως μὲν ἀντιποιεῖσθαι ἐφ᾽ ὅσον ἀναγκαῖον διὰ τὰς εἰς αὐτοὺς καὶ
+              τοὺς οἰκείους αὐτῶν χρείας, θησαυρισμοῦ δὲ καὶ τοῦ πλείονος παρὰ τὸ ἀρκοῦν
+              ὑπερφρονεῖν, ὑφ᾽ ὧν ἰδίᾳ τε καὶ κοινῇ εἰς κακὰ ἐπάλληλα καὶ ἀνήκεστα ἄνθρωποι
+              ἐκτρέπονται; </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="7">
+            <p>ἀλλὰ ταῦτα μὲν εὐκτά, οὐκ ἐπίσης δ᾽ εὐκτὸν τό τε ἄρχειν αὐτοὺς καὶ δικάζειν
+              δύνασθαι κατὰ νόμους καὶ τὸ δίκαιον, καὶ τὸ συμφωνοῦντας ἑαυτοῖς τε καὶ ἀλλήλοις καὶ
+              ἐν οἷς πράττουσι καὶ ἐν οἷς λέγουσι τὸν μὲν βίον ἔχειν ἀεὶ προαιρησόμενον τοὺς λόγους,
+              τὸν δὲ λόγον νῷ καὶ τῷ φρονεῖν τὰ ἄριστα βεβαιούμενον καὶ εἰς προφορὰν ὅταν ᾖ
+              καιρὸς ἐντεινόμενον, καὶ τόνδ᾽ ἡγεῖσθαι, ἐπειδὰν ὑπερμαχεῖν μέλλωσιν ἱερῶν, πατρίδος,
+              γονέων, φίλων, ἀληθείας, νόμων, καὶ συλλαβόντι εἰπεῖν τῶν ἀδικουμένων; οὔτε γὰρ σὲ
+              οὔτε ἕτερόν τινα οἴομαι, εἴπερ εὖ φρονοίη, ὡς πολιτικὸν δοκιμάζειν λόγον τὸν μὴ εἰς
+              ταῦτα ἀλλ᾽ εἰς τἀναντία ἐντεινόμενον. </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="8">
+            <p>εἰ τοίνυν καὶ εὐκτὰ ταῦτα καὶ αἱρετά, πῶς οὐ καὶ τὸ φιλοσοφεῖν θείη ἄν τις καὶ
+              εὐκτὸν καὶ αἱρετόν, <pb facs="cmusoniirufirel00hensgoog_0184"/> δι᾽ οὗ μόνου
+              περιγίνεται ταῦτα; φιλοσοφεῖ μὲν γὰρ ὁ τῆς ἐκκαθάρσεως τοῦ λόγου ἐπιμελούμενος καὶ
+              ἐπιτηδεύων λόγον ὀρθόν, ὁ δ᾽ ἐπιμελούμενος λόγου ἑαυτοῦ τε ἅμα ἐπιμελεῖται καὶ
+              πατρίδος καὶ πατρὸς καὶ ἀδελφῶν καὶ φίλων καὶ συλλαβόντι εἰπεῖν πάντων. θεωροὺς γὰρ ἡ
+              φύσις κόσμου καὶ τῶν ἐν αὐτῷ κατασκευάσασα, διὰ τοῦ μεταδοῦναι ἡμῖν λόγου, κοινοῦ
+              μὲν ὄντος πρὸς τούτους, ἰδίου δὲ παρὰ τὰ ἄλλα ζῷα, ἀξιοῖ ἡμᾶς τοὺς μὲν θεοὺς καθάπερ
+              τινὰς ἀρίστους καὶ πρώτους ἡγεμόνας καὶ κοινούς εὐεργέτας τε ἡμῶν καὶ γονεῖς ζηλοῦν τε
+              καὶ ἀμείβεσθαι διὰ τῆς πρὸς αὐτοὺς εὐπειθείας, ἀνθρώπων δὲ καὶ κατὰ τὸ κοινὸν καὶ
+              κατὰ τὰς ἰδιαίτερον γινομένας ἐπιπλοκὰς καὶ κηδεμονικῶς καὶ εὐποιητικῶς προΐστασθαι.
+            </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="9">
+            <p>ἐπειδὰν δὲ νόμῳ καὶ δίκῃ συγκεράσωμεν τὰ ἀνθρώπινα καὶ τὰ θεῖα, φησὶν ἄκρως μὲν
+              κατὰ φύσιν ἡμᾶς διατεθήσεσθαι ἄτε τελείους γεγονότας καὶ ἐπὶ τὰ ἀνωτάτω
+              προελθόντας, νόμον καὶ δίκην, οἷς καὶ τὰ θεῖα οἰακίζεταί τε καὶ μακάρια γίνεται,
+              τοιούτους δ᾽ ὄντας διὰ τὴν τοῦ λόγου καὶ τοῦ κατ᾽ αὐτὸν σχηματιζομένου ἤθους ὀρθότητα
+              καὶ βιώσεσθαι εὐδαιμόνως καὶ καταστρέψειν τὸν βίον εὐδαιμόνως, ὥσπερ τι δρᾶμα εὐ
+              συντεταγμένον ἀπ᾽ ἀρχῆς μέχρι τέλους ἀστείως ὑποκριναμένους καὶ ἀπαρτίσαντας. </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="10">
+            <p>θαρρῶν οὖν, ὦ Παγκρατίδη, μὴ ἐπίτρεπε μόνον ἀλλὰ καὶ παρακάλει τοὺς παῖδας
+              φιλοσοφεῖν, καὶ συναγωνιστὴν παρέχων σεαυτὸν διέγειρε αὐτούς, καὶ πασῶν ἁρμοδιωτάτην
+              παρρησίαν παρασκεύαζε. ἐξέσται γάρ σοι τοιαῦτα προελομένῳ καὶ πρὸς τοὺς ἐξ
+              αἵματος ὑμῖν δικαίους ὄντας λέγειν, ὅτι οὐ τέκνα μόνον εἰς τὸ γένος ἀλλὰ καὶ τοιάδε
+              τέκνα εἰσήγαγες, καὶ πρὸς τὴν πατρίδα, ὅτι οὐχ οἵους ἔτυχε μόνον ἀνθρώπους αὐτῇ ἀλλὰ
+              καὶ οἵους δεῖ πολίτας παρέστησας. </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="11">
+            <p>εἰ δὲ θαρρήσετε κοινῇ καὶ πρὸς τὴν <pb facs="cmusoniirufirel00hensgoog_0185"
+              />ἑαυτῶν τε καὶ ἀλλήλων θεραπείαν ὡς ἄξιόν ἐστι διαναστήσετε τὰς ψυχάς, εὐθὺς μὲν ἐν
+              τῇ ἀγωνοθεσίᾳ τοῦ θεοῦ συμφιλοσοφήσετε ἀλλήλοις, οὐ μόνον τὰ νομιζόμενα
+              παρασκευάζοντες αὐτῇ, ἅπερ ἐκ βαλαντίου ψιλοῦ γίνεται, ἀλλὰ καί, οὖ ἕνεκεν
+              νενόμισται, ἀκολουθοῦντες τῇ ἱερᾷ καὶ ἀρχαίᾳ παραδόσει, ὅπερ ἐκ μόνης τῆς εὐσεβοῦς καὶ
+              φιλοσόφου περιγίνεται διαθέσεως, καὶ ἀπὸ τῆς ἐν τῷ ἀγῶνι εὐταξίας ἐπὶ τὸν κοινὸν ὑμῖν
+              τε καὶ πᾶσιν ἡμῖν ἀγῶνα τραπήσεσθε, οὐδὲν μὲν τῶν κατὰ φύσιν ἀφαιρησόμενον, μόνα δὲ τὰ
+              λύπης καὶ θορύβου αἴτια ἡμῶν περισπάσοντα. </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="12">
+            <p>ἐν ᾧ ἀγῶνι ἡττηθῆναι μὲν ἀνάγκη τὸν ἀπαράσκευον, ἡττηθέντα δὲ ἐκπεσεῖν χρὴ εἰς
+              δουλείαν καὶ κακοδαιμονίαν, ἣν οὐδ᾽ ἐξομόσασθαί τινι ἡμῶν συγκεχώρηται. κρατούμεθα γὰρ
+              ἐν αὐτῇ ὑπό τε τῶν ἀιδίων καὶ τῶν τῆς φύσεως καὶ ὑπὸ τῶν θέσει νόμων, εὐτακτεῖν
+              ἑκάστῳ καὶ ζῆν δικαίως ἅμα καὶ ὁσίως προστασσόντων. ταῦτα οἶμαί σε ὡς παρὰ πατρὸς
+              παίδων πατέρα προσδεξάμενον αὐτόν τε ἄμεινον ἕξειν καὶ τοῖς υἱοῖς εἰς τὰ ἄριστα
+              συλλήψεσθαι. ἀσπάζομαί σε καὶ διὰ τἄλλα καὶ διὰ τὴν εἰς ἡμᾶς εὔνοιαν. ἴσθι ὑπ᾽ ἐμοῦ
+              στεργόμενος. τοιούτων δὲ καὶ ἑτέρων φιλοσοφοῦντες εὐπορήσετε </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="2">
+          <div type="textpart" subtype="section" n="1">
+            <head rend="center">Ἀπολλώνιος Μουσωνίῳ φιλοσόφῳ χαίρειν. </head>
+            <p rend="indent">Βούλομαι παρὰ σὲ ἀφικόμενος κοινωνῆσαί σοι
+              λόγου καὶ <pb facs="cmusoniirufirel00hensgoog_0186"/>στέγης, ὥς τι ὀνήσαιμί σε, εἴ γε
+              μὴ ἀπιστεῖς, ὡς Ἡρακλῆς ποτὲ Θησέα ἐξ Ἅιδου ἔλυσε. γράφε τί βούλει. </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="3">
+          <div type="textpart" subtype="section" n="1">
+            <head rend="center">Μουσώνιος Ἀπολλωνίῳ φιλοσόφῳ χαίρειν. </head>
+            <p rend="indent">Ὧν μὲν ἐνενοήθης, ἀποκείσεταί σοι ἔπαινος· ἀνὴρ
+              δὲ ὁ ὑπομείνας ἀπολογίαν καὶ ὡς οὐδὲν ἀδικεῖ δείξας ἑαυτὸν λύει. </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="4">
+          <div type="textpart" subtype="section" n="1">
+            <head rend="center">Ἀπολλώνιος Μουσωνίῳ φιλοσόφῳ χαίρειν. </head>
+            <p rend="indent">Σωκράτης ὁ Ἀθηναῖος ὑπὸ τῶν ἑαυτοῦ φίλων
+              λυθῆναι μὴ βουληθεὶς παρῆλθε μὲν ἐς τὸ δικαστήριον, ἀπέθανε δέ. </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="5">
+          <div type="textpart" subtype="section" n="1">
+            <head rend="center">Μουσώνιος Ἀπολλωνίῳ φιλοσόφῳ χαίρειν. </head>
+            <p rend="indent">Σωκράτης ἀπέθανεν, ἐπεὶ μὴ παρεσκεύασεν ἑαυτὸν
+              εἰς ἀπολογίαν, ἐγὼ δὲ ἀπολογήσομαι. ἔρρωσο. </p>
+          </div>
+
+        </div>
+
+      </div>
+      
+      <!--<div type="apparatus">
+        <div type="textpart" subtype="letter" n="1">
+          <div type="textpart" subtype="section" n="1">
+            <p><pb facs="cmusoniirufirel00hensgoog_0180"/>1 Epistologr. gr. p. 401 ss. Herch.; A =
+              codex Mazarineus 611 A, a = ed. Aldina || 2 ἐπαγγελλομένων A || 9 δυνηθῶσιν A |
+              δυει(οι)ν A: corr. Hercher || 13 ἀγνοίας A ἀγνείας α || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="2">
+            <p>17 δεδομένου A διδομένου α || 18 opto ἐπιτρέψαι ἑαυτοὺς cf. v. 12 <pb
+                facs="cmusoniirufirel00hensgoog_0181"/>1 τὸ (ante προεστηκὸς) om. A || 2 ἀεὶ scr.
+              Hercher || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="3">
+            <p>5 δ᾽ A || 9 τοιαῦτα A τοιαῦτα δὲ α || 11 καλέσει in ras. A || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="4">
+            <p>17 ἑαυτοῦ codd.: corr. Hercher || 18 κρατοῦντες A | ὑπὸ A ὑπὸ τὴν α | σπορὰς A <pb
+                facs="cmusoniirufirel00hensgoog_0182"/>1 φρονήματι A || 2 αὐτοῖς A || 3 δεήθειεν
+              (sic) A || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="5">
+            <p>5 οὐκ ἂν] οὐ καὶ A || 8 μὲν om. A || 10 τῶν om. A || 13 εὐχαρίστῃ A || 14 μόνους A ||
+              16 δὲ] τὸν A || 20 διατιθέναι] ῾ malim κακῶς διατιθέναιʼ Hercher, poterat lenius μὴ ἐκ
+              τοῦ 〈μὴ εὖ〉 διατιθέναι | πάθωσιν A. <pb facs="cmusoniirufirel00hensgoog_0183"/></p>
+          </div>
+
+          <div type="textpart" subtype="section" n="6">
+            <p>2 ὁ πολὺς] ὄχλος videtur excidisse Herchero vel ὅμιλος vel ἄνθρωπος. at certe
+              Phrynichus bis dicit ὁ πολύς (pro οἱ πολλοί) p. 280 et 481 Rutherf. servavi igitur
+              indicium scriptae vix ante Commodi aetatem epistulae || 5 ῥᾳδιέστερον scr. Hercher, tu
+              vide Croenert mem. gr. Herc. p. 196 adn. 8 || 6 κατεχούσης sic Aa || 11 θησαυρισμῶν A
+              || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="7">
+            <p>17 λέγουσιν A <pb facs="cmusoniirufirel00hensgoog_0184"/></p>
+          </div>
+
+          <div type="textpart" subtype="section" n="8">
+            <p>10 τε om. A si recte intellego Hercherum || 12 κηδαιμονικῶς A || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="9">
+            <p>16 οἷς A: οἵαν a || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="10">
+            <p>23. 24 καὶ συναγωνιστὴν — διέγειρε αὐτοὺς acc. ex A || 25 ἁρμονιωτάτην A || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="11">
+            <p>30 πρὸς om. A. <pb facs="cmusoniirufirel00hensgoog_0185"/>τε om. A | διαναστήσετε
+              Hercher: διαναστῆτε libri || 2 τὰς ψυχὰς Hercher: ταῖς ψυχαῖς libri || 4 γίνεται A
+              γίγνεται a || 7 διαθέσει A || 10 περισπάσονται A || </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="12">
+            <p>12 δ᾽ </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="2">
+          <div type="textpart" subtype="section" n="1">
+            <p>22 iteravimus has ineptias fere ex epistolographis Hercheri p. 127 s., qui adnotavit
+              diversitates quae inter Kayseri recensionem (κ) et Laurentianum LVII 12 (L) sive
+              Aldinam (α) intercedunt <pb facs="cmusoniirufirel00hensgoog_0186"/>1 ὀνήσαιμί σε. εἴ
+              γε et mox ἔλυσε, γράφε distinguit </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="3">
+          <div type="textpart" subtype="section" n="1">
+            <p>4 διενοήθης La | δὲ ὁ δὲ La || 6 λύει abest a </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="4">
+          <div type="textpart" subtype="section" n="1">
+            <p>8 ὁ abest a k || 9 τὸ non legitur </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="5">
+          <div type="textpart" subtype="section" n="1">
+            <p>12 ἐς ἀπολογίαν ἑαυτόν k </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div type="commentary">
+        <div type="textpart" subtype="letter" n="1">
+          <div type="textpart" subtype="section" n="1">
+            <p><pb facs="cmusoniirufirel00hensgoog_0180"/>1 ipsius Musonii hanc epistulam non esse
+              sed eius qui sermonibus Musonianis large usus sit docti consentiunt. cf. Wendland
+              quaest. Muson. p. 45 ubi haud pauca ille eaque epistulae plus minus cognata ex
+              Clemente Al. composuit. alia id genus addidit C. Praechter Hierokles passim. adscribo
+              potiora 11 ὀδῷ ζ.] cf. supra p. 89, 1 <pb facs="cmusoniirufirel00hensgoog_0181"/></p>
+          </div>
+
+          <div type="textpart" subtype="section" n="4">
+            <p>16 εὐσχημ.] cf. Musonius p. 100, 3 17 cf. Clemens Al. paed. ΙΙ 90 p. 224 P. χρὴ . . .
+              κρατεῖν τε ἡδονῶν, γαστρός τε ἔτι καὶ τῶν ὑπὸ γαστέρα δεσπόζειν ἀρχικώτατον
+              (ἀρχικώτατα Wendland quaest. Mus. p. 44) . . . πῶς οὐχὶ πολὺ πλέον τοῦ συνουσιαστικοῦ
+              ἐπικρατητέον μορίου τοῖς σοφίαν διώκουσιν; 21 ut simplici vestitu utamur πᾶν ὅσον
+              ἀπατηλὸν καὶ τῆς ἀληθείας καταψευδόμενον παρωσάμενοι hortatur etiam Clemens Al. paed.
+              ΙΙΙ 53 p. 285 P. 23 Clemens Al. paed. ΙΙ 60 p. 204 P. καθεστὼς δὲ καὶ τὸ βλέμμα ἔστω
+              ibid. ΙΙΙ 59 p. 288 P. καὶ στάσιν καὶ κίνησιν καὶ βάδισμα . . . ὅτι μάλιστα
+              ἐλευθεριώτατον ἐπαναιρετέον <pb facs="cmusoniirufirel00hensgoog_0182"/></p>
+          </div>
+
+          <div type="textpart" subtype="section" n="5">
+            <p>cf. Cicero de off. Ι 17, 58 (i. e. Panaetius) sed si cοπteπtίο quaedam et comparatio
+              fiat, quibus plurimum tribuendum sit officii, principes sint patria et parentes.
+              quorum beneficiis πιπrίπιίε obligati sumus, proximi liberi totaque domus . . .,
+              deinceps bene convenientes propinqui comparavit C. Praechter Hierokles p. 12 11 cf.
+              Hierocles Stob. flor. 79, 54 ΙΙΙ p. 98, 17 M. 15 δανεισθείσας] cf. Hierocles Stob. 1.
+              c. ΙΙΙ p. 96, 23 M. </p>
+          </div>
+
+          <div type="textpart" subtype="section" n="6">
+            <p>23 ὁμονοοῦντες] cf. Musonius p. 81, 8 <pb facs="cmusoniirufirel00hensgoog_0183"/>cf.
+              Stobaeus flor. 86, 19 M. Διογένης πυνθανομένου τινὸς τίνες τῶν ἀνθρώπων εὐγενέστατοι
+              ῾οἱ καταφρονοῦντες᾽ εἶπε πλούτου δόξης ἡδονῆς ζωῆς, τῶν δὲ ἐναντίων ὑπεράνω ὄντες
+              πενίας ἀδοξίας πόνου θανάτου <pb facs="cmusoniirufirel00hensgoog_0184"/></p>
+          </div>
+
+          <div type="textpart" subtype="section" n="9">
+            <p>19 ss. de imagine cf. Teles p. 11, 5 et quae composui prol. in Tel. p. XCVIII s. </p>
+          </div>
+
+        </div>
+
+        <div type="textpart" subtype="letter" n="2">
+          <div type="textpart" subtype="section" n="1">
+            <p>22 Philostratus Apollon. vit. IV c. 46 p. 85, 13 Kays. ἐτύχχανε δὲ περὶ τὸν χρόνον
+              τοῦτον καὶ Μουσώνιος κατειλημμένος ἐν τοῖς δεσμωτηρίοις τοῦ Νέρωνος, ὅν φασι τελεώτατα
+              ἀνθρώπων φιλοσοφῆσαι, καὶ φανερῶς μὲν οὐ διελέγοντο ἀλλήλοις παραιτησαμένου τοῦ
+              Μουσωνίου τοῦτο, ὡς μὴ ἄμφω κινδυνεύ1 <pb facs="cmusoniirufirel00hensgoog_0186"
+              />σειαν, ἐπιστολιμαίους δὲ τὰς ξυνουσίας ἐποιοῦντο φοιτῶντος ἐς τὸ δεσμωτήριον τοῦ
+              Μενίππου καὶ τοῦ Δάμιδος. τὰς δὲ οὐχ ὑπὲρ μεγάλων ἐπιστολὰς ἐάσαντες τὰς ἀναγκαίας
+              παραθησόμεθα κἀξ ὡν ὑπάρχει κατιδεῖν τι μέγα. Ἀπολλώνιος Μουσωνίῳ (c. 47 p. 85, 28)
+              ἀπολογήσομαι. ἔρρωσο᾽. cf. Suidas s. v. 3ουσώνιος: πρὸς ὃν (sc. Μουσώνιον) καὶ
+              ἐπιστολαὶ φέρονται Ἀπολλωνίου, κἀκείνου πρὸς Ἀπολλώνιον </p>
+          </div>
+
+        </div>
+
+      </div>-->
+
+    </body>
+  </text>
+</TEI>
