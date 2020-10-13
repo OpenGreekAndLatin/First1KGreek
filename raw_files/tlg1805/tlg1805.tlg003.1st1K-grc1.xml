@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<tei:TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+  <tei:teiHeader xml:lang="en">
+    <tei:fileDesc>
+      <tei:titleStmt>
+        <tei:title xml:lang="lat">Proculi Chrestomathiae Eclogae</tei:title>
+        <tei:title type="sub">an electronic transcription.</tei:title>
+        <tei:author>Proclus</tei:author>
+        <tei:editor>Thomas W. Allen</tei:editor>
+        <tei:funder>Center for Hellenic Studies</tei:funder>
+                                    
+        <tei:respStmt>
+          <tei:resp>Published original versions of the electronic texts</tei:resp>
+          <tei:orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</tei:orgName>
+          <tei:persName role="principal">Gregory Crane</tei:persName>
+          <tei:persName role="principal">Leonard Muellner</tei:persName>
+          <tei:persName role="principal">Bruce Robertson</tei:persName>
+        </tei:respStmt>
+                                    
+        <tei:respStmt>
+          <tei:resp>proofreader</tei:resp>
+          <tei:persName>
+            <tei:forename>Heather</tei:forename>
+            <tei:surname>Snowden</tei:surname>
+            <!--tei:idno type=""></tei:idno-->
+          </tei:persName>
+        </tei:respStmt>
+                                    
+        <tei:respStmt>
+          <tei:resp>CTS conversion</tei:resp>
+          <tei:orgName>University of Virginia</tei:orgName>
+          <tei:persName>Heather Snowden</tei:persName>
+        </tei:respStmt>
+      </tei:titleStmt>
+                           
+      <tei:publicationStmt>
+        <tei:publisher>Open Greek and Latin</tei:publisher>
+        <tei:idno type="filename">urn.cts.greekLit.tlg1805.tlg003.1st1K-grc1.xml</tei:idno>
+        <tei:pubPlace/>
+        <tei:availability>
+          <tei:licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</tei:licence>
+        </tei:availability>
+        <tei:date when="2020-09-23"/>
+      </tei:publicationStmt>
+                           
+      <tei:sourceDesc>
+        <tei:biblStruct>
+          <tei:monogr>
+            <!--Removed author, since there is more than one-->
+            <!--Short version of title; no period; lang attribute-->
+            <tei:title xml:lang="lat">Homeri Opera</tei:title>
+            <tei:editor>Thomas W. Allen</tei:editor>
+            <tei:imprint>
+              <tei:pubPlace>Oxford</tei:pubPlace>
+              <tei:publisher>Oxonii : e typographeo Clarendoniano</tei:publisher>
+              <tei:date>1912</tei:date>
+            </tei:imprint>
+            <tei:biblScope unit="volume">5</tei:biblScope>
+          </tei:monogr>
+          <tei:ref target="https://archive.org/details/homeriopera05home/page/98/mode/2up">Internet Archive</tei:ref>
+        </tei:biblStruct>
+      </tei:sourceDesc>
+    </tei:fileDesc>
+                  
+    <tei:encodingDesc>
+      <tei:editorialDecl>
+        <tei:correction>
+          <tei:p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <tei:ref target="https://nbif.ca/en">NBIF</tei:ref>.</tei:p>
+        </tei:correction>
+      </tei:editorialDecl>
+      <tei:p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</tei:p>
+      <!-- sample top level refsDecl for lines -->
+      <tei:refsDecl n="CTS">
+        <tei:cRefPattern matchPattern="(\w+)" n="lines" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </tei:refsDecl>
+      <tei:p>This pointer pattern extracts lines</tei:p>
+    </tei:encodingDesc>
+                  
+    <tei:profileDesc>
+      <tei:langUsage>
+        <tei:language ident="grc">Greek</tei:language>
+      </tei:langUsage>
+    </tei:profileDesc>
+                  
+    <tei:revisionDesc>
+      <tei:change when="2020-10-04" who="Heather Snowden">initial markup of new file.</tei:change>
+    </tei:revisionDesc>
+  </tei:teiHeader>
+         
+  <tei:text>
+    <tei:body>
+      <tei:div type="edition"><tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1805.tlg003.1st1K-grc1:1">
+        <tei:p><tei:pb facs="homeriopera05home_0115"/>Ὁμήρου χρόνοι, βίος, χαρακτήρ, ἀναγραφὴ ποιημάτων. <tei:lb/>Ἐπῶν ποιηταὶ γεγόνασι πολλοί· τούτων δʼ εἰσὶ κράτιστοι 
+                 Ὅμηρος Ἡσίοδος Πείσανδρος Πανύασσις Ἀντίμαχος. Ὅμηρος μὲν οὖν τίνων γονέων ἢ ποίας ἐγένετο πατρίδος, οὐ ῥᾴδιον ἀποφήνασθαι· οὔτε γὰρ αὐτός τι λελάληκεν, 
+                 ἀλλʼ οὐδὲ οἱ περὶ αὐτοῦ εἰπόντες συμπεφωνήκασιν, ἀλλʼ ἐκ τοῦ μηδὲν ῥητῶς ἐμφαίνειν περὶ τούτων τὴν ποίησιν αὐτοῦ μετὰ πολλῆς ἀδείας ἕκαστος οἷς ἠβούλετο ἐχαρίσατο. 
+                 καὶ διὰ τοῦτο οἱ μὲν Κολοφώνιον αὐτὸν ἀνηγόρευσαν, οἱ δὲ Χῖον, οἱ δὲ Σμυρναῖον, οἱ δὲ Ἰήτην, ἄλλοι δὲ Κυμαῖον· καὶ καθόλου πᾶσα πόλις ἀντιποιεῖται τἀνδρός, ὅθεν 
+                 εἰκότως ἂν κοσμοπολίτης λέγοιτο. οἱ μὲν οὖν Σμυρναῖον αὐτὸν ἀποφαινόμενοι Μαίονος μὲν πατρὸς λέγουσιν εἶναι, γεννηθῆναι δὲ ἐπὶ Μέλητος τοῦ ποταμοῦ, ὅθεν καὶ 
+                 Μελησιγενῆ ὀνομασθῆναι· δοθέντα δὲ Χίοις εἰς ὁμηρείαν Ὅμηρον κληθῆναι. οἱ δὲ ἀπὸ τῆς τῶν ὀμμάτων πηρώσεως τούτου τυχεῖν αὐτόν φασι τοῦ ὀνόματος· τοὺς γὰρ 
+                 τυφλοὺς ὑπὸ Αἰολέων ὁμήρους καλεῖσθαι. Ἑλλάνικος (fr. 6) δὲ καὶ Δαμάστης (F. H. G. ii. 66) καὶ Φερεκύδης (F. H. G. iv. 639) εἰς <tei:pb facs="homeriopera05home_0116"/>
+                 Ὀρφέα τὸ γένος ἀνάγουσιν αὐτοῦ· Μαίονα γάρ φασι τὸν Ὁμήρου πατέρα καὶ Δῖον τὸν Ἡσιόδου γενέσθαι Ἀπέλλιδος τοῦ Μελανώπου τοῦ Ἐπιφράδεος τοῦ Χαριφήμου τοῦ 
+                 Φιλοτέρπεος τοῦ Ἰδμονίδα τοῦ Εὐκλέους τοῦ Δωρίωνος τοῦ Ὀρφέως. Γοργίας δὲ ὁ Λεοντῖνος (fr. 25 Diels) εἰς Μουσαῖον αὐτὸν ἀνάγει. περὶ δὲ τῆς τελευτῆς αὐτοῦ λόγος 
+                 τις φέρεται τοιοῦτος. ἀνελεῖν φασὶν αὐτῷ τὸν θεὸν χρωμένῳ περὶ ἀσφαλείας τάδε· <tei:lb/>ἔστιν Ἴος νῆσος μητρὸς πατρὶς ἥ σε θανόντα <tei:lb/>δέξεται· ἀλλὰ νέων ἀνδρῶν 
+                 αἴνιγμα φύλαξαι. <tei:lb/>λέγουσιν οὖν αὐτὸν εἰς Ἴον πλεύσαντα διατρῖψαι μὲν παρὰ Κρεωφύλῳ, γράψαντα δὲ Οἰχαλίας ἅλωσιν τούτῳ χαρίσασθαι, ἥτις νῦν ὡς Κρεωφύλου 
+                 περιφέρεται. καθεζόμενον δὲ ἐπί τινος ἀκτῆς, θεασάμενον ἁλιεῖς προσειπεῖν αὐτοὺς καὶ ἀνακρῖναι τοῖσδε τοῖς ἔπεσιν· <tei:lb/>ἄνδρες ἀπʼ Ἀρκαδίης θηρήτορες, ἆρʼ 
+                 ἔχομέν τι; <tei:lb/>ὑποτυχόντα δὲ αὐτῶν ἕνα εἰπεῖν <tei:lb/>οὓς ἕλομεν λιπόμεσθʼ, οὓς δʼ οὐχ ἕλομεν φερόμεσθα. <tei:lb/>οὐκ ἐπιβάλλοντος δʼ αὐτοῦ διελέσθαι τὸ αἴνιγμα, 
+                 ὅτι ἐπὶ ἰχθυΐαν καταβάντες ἀφήμαρτον, φθειρισάμενοι δὲ ὅσους μὲν ἔλαβον τῶν φθειρῶν ἀποκτείναντες ἀπολείπουσιν, ὅσοι δὲ αὐτοὺς διέφυγον, τούτους ἀποκομίζουσιν, 
+                 οὕτω δʼ ἐκεῖνον ἀθυμήσαντα σύννουν ἀπιέναι τοῦ χρησμοῦ ἔννοιαν λαμβάνοντα, καὶ οὕτως ὀλισθέντα περιπταῖσαι λίθῳ καὶ τριταῖον <tei:pb facs="homeriopera05home_0117"/>
+                 τελευτῆσαι. ἀλλὰ δὴ ταῦτα μὲν πολλῆς ἔχεται ζητήσεως· ἵνα δὲ μηδὲ τούτων ἄπειρος ὑπάρχῃς, διὰ τοῦτο εἰς ταῦτα κατεχώρισα. τυφλὸν δὲ ὅσοι τοῦτον ἀπεφήναντο, αὐτοί 
+                 μοι δοκοῦσι τὴν διάνοιαν πεπηρῶσθαι· τοσαῦτα γὰρ κατεῖδεν ἄνθρωπος ὅσα οὐδεὶς πώποτε. εἰσὶ δὲ οἵτινες ἀνεψιὸν αὐτὸν Ἡσιόδου παρέδοσαν ἀτριβεῖς ὄντες ποιήσεως· 
+                 τοσοῦτον γὰρ ἀπέχουσι τοῦ γένει προσήκειν ὅσον ἡ ποίησις διέστηκεν αὐτῶν. ἄλλως δὲ οὐδὲ τοῖς χρόνοις συνεπέβαλον ἀλλήλοις ἄθλιοι δὲ οἱ τὸ αἴνιγμα πλάσαντες 
+                 τοῦτο <tei:lb/>Ἡσίοδος Μούσαις Ἑλικωνίσι τόνδʼ ἀνέθηκεν, <tei:lb/>ὕμνῳ νικήσας ἐν Χαλκίδι δῖον Ὅμηρον. <tei:lb/>ἀλλὰ γὰρ ἐπλανήθησαν ἐκ τῶν Ἡσιοδείων Ἡμερῶν· 
+                 ἕτερον γάρ τι σημαίνει. τοῖς δὲ χρόνοις αὐτὸν οἱ μὲν περὶ τὸν Ἀρίσταρχόν φασι γενέσθαι κατὰ τὴν τῆς Ἰωνίας ἀποικίαν, ἥτις ὑστερεῖ τῆς Ἡρακλειδῶν καθόδου ἔτεσιν 
+                 ἑξήκοντα, τὸ δὲ περὶ τοὺς Ἡρακλείδας λείπεται τῶν Τρωϊκῶν ἔτεσιν ὀγδοήκοντα· οἱ δὲ περὶ Κράτητα (fr. ed. Wachs. p. 40) ἀνάγουσιν αὐτὸν εἰς τοὺς Τρωϊκοὺς χρόνους. 
+                 φαίνεται δὲ γηραιὸς ἐκλελοιπὼς τὸν βίον· ἡ γὰρ ἀνυπέρβλητος ἀκρίβεια τῶν πραγμάτων προβεβηκυῖαν ἡλικίαν παρίστησιν. πολλὰ δὲ ἐπεληλυθὼς μέρη τῆς οἰκουμένης 
+                 ἐκ τῆς πολυπειρίας τῶν τόπων εὑρίσκεται. τούτῳ δὲ προσυπονοητέον καὶ πλούτου πολλὴν περιουσίαν γενέσθαι· αἱ γὰρ μακραὶ ἀποδημίαι πολλῶν ἀναλωμάτων δέονται, 
+                 καὶ ταῦτα κατʼ ἐκείνους τοὺς χρόνους οὔτε πάντων πλεομένων <tei:pb facs="homeriopera05home_0118"/>ἀκινδύνως οὔτε ἐπιμισγομένων ἀλλήλοις πω τῶν ἀνθρώπων 
+                 ῥᾳδίως. γέγραφε δὲ ποιήσεις δύο, Ἰλιάδα καὶ Ὀδύσσειαν, ἣν Ξένων καὶ Ἑλλάνικος ἀφαιροῦνται αὐτοῦ. οἱ μέντοι γε ἀρχαῖοι καὶ τὸν κύκλον ἀναφέρουσιν εἰς αὐτόν. 
+                 προστιθέασι δὲ αὐτῷ καὶ παίγνιά τινα, Μαργίτην, βατραχομαχίαν ἢ μυομαχίαν· ἑπτάπεκτον αἶγα, Κέρκωπας κενούς. <tei:lb/></tei:p></tei:div>
+      </tei:div>
+      <tei:div type="translation"/>
+      <tei:div type="apparatus"/>
+      <tei:div type="commentary"/>
+    </tei:body>
+  </tei:text>
+</tei:TEI>

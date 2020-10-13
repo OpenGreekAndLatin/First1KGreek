@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<tei:TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+  <tei:teiHeader xml:lang="en">
+    <tei:fileDesc>
+      <tei:titleStmt>
+        <tei:title xml:lang="lat">Versus heroici Homero adscripti qui neque in Iliade Odyssea Hymnis neque in Cycli fragmentis inveniuntur.</tei:title>
+          <tei:title type="sub">an electronic transcription.</tei:title>
+        <tei:author>Hippocrates et al.</tei:author>
+        <tei:editor>Thomas W. Allen</tei:editor>
+        <tei:funder>Center for Hellenic Studies</tei:funder>
+        
+        <tei:respStmt>
+          <tei:resp>Published original versions of the electronic texts</tei:resp>
+          <tei:orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</tei:orgName>
+          <tei:persName role="principal">Gregory Crane</tei:persName>
+          <tei:persName role="principal">Leonard Muellner</tei:persName>
+          <tei:persName role="principal">Bruce Robertson</tei:persName>
+        </tei:respStmt>
+        
+        <tei:respStmt>
+          <tei:resp>proofreader</tei:resp>
+          <tei:persName>
+            <tei:forename>Heather</tei:forename>
+            <tei:surname>Snowden</tei:surname>
+            <!--tei:idno type=""></tei:idno-->
+          </tei:persName>
+        </tei:respStmt>
+        
+        <tei:respStmt>
+          <tei:resp>CTS conversion</tei:resp>
+          <tei:orgName>University of Virginia</tei:orgName>
+          <tei:persName>Heather Snowden</tei:persName>
+        </tei:respStmt>
+      </tei:titleStmt>
+      
+      <tei:publicationStmt>
+        <tei:publisher>Open Greek and Latin</tei:publisher>
+        <tei:idno type="filename">urn.cts.greekLit.tlg1802.tlg001.1st1K-grc1.xml</tei:idno>
+        <tei:pubPlace/>
+        <tei:availability>
+          <tei:licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</tei:licence>
+        </tei:availability>
+        <tei:date when="2020-09-23"/>
+      </tei:publicationStmt>
+      
+      <tei:sourceDesc>
+        <tei:biblStruct>
+          <tei:monogr>
+            <!--Removed author, since there is more than one-->
+            <!--Short version of title; no period; lang attribute-->
+            <tei:title xml:lang="lat">Homeri Opera</tei:title>
+            <tei:editor>Thomas W. Allen</tei:editor>
+            <tei:imprint>
+              <tei:pubPlace>Oxford</tei:pubPlace>
+              <tei:publisher>Oxonii : e typographeo Clarendoniano</tei:publisher>
+              <tei:date>1912</tei:date>
+            </tei:imprint>
+            <tei:biblScope unit="volume">5</tei:biblScope>
+          </tei:monogr>
+          <tei:ref target="https://archive.org/details/homeriopera05home/page/146/mode/2up">Internet Archive</tei:ref>
+        </tei:biblStruct>
+      </tei:sourceDesc>
+    </tei:fileDesc>
+    
+    <tei:encodingDesc>
+      <tei:editorialDecl>
+        <tei:correction>
+          <tei:p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of 
+                   the <tei:ref target="https://nbif.ca/en">NBIF</tei:ref>.</tei:p>
+        </tei:correction>
+      </tei:editorialDecl>
+      <tei:p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</tei:p>
+      <!-- sample top level refsDecl for lines -->
+      <tei:refsDecl n="CTS">
+        <tei:cRefPattern matchPattern="(\w+)" n="lines" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </tei:refsDecl>
+      <tei:p>This pointer pattern extracts lines</tei:p>
+    </tei:encodingDesc>
+    
+    <tei:profileDesc>
+      <tei:langUsage>
+        <tei:language ident="grc">Greek</tei:language>
+      </tei:langUsage>
+    </tei:profileDesc>
+    
+    <tei:revisionDesc>
+      <tei:change when="2020-09-25" who="Heather Snowden">initial markup of new file.</tei:change>
+    </tei:revisionDesc>
+  </tei:teiHeader>
+        
+  <tei:text>
+    <tei:body>
+      <tei:div type="edition">
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:1, 2">
+        <tei:p><tei:pb facs="homeriopera05home_0163"/>I, II. Hippocrates περὶ ἄρθρων ἐμβολῆς 8. <tei:lb/>καλῶς γὰρ Ὅμηρος καταμεμάθηκε ὅτι πάντων τῶν προβάτων βόες μάλιστα 
+                 ἀτονέουσι ταύτην τὴν ὥρην, καὶ βοῶν οἱ ἀρόται, ὅτι τὸν χειμῶνα ἐργάζονται. τούτοισι τοίνυν καὶ ἐκπίπτει μάλιστα· οὗτοι γὰρ μάλιστα λεπτύνονται. . . . διὰ τοῦτο οὖν ἐποίησεν 
+                 τάδε τὰ ἔπη· <tei:pb facs="homeriopera05home_0164"/><tei:lb/>ὡς δʼ ὁπότʼ ἀσπάσιον ἔαρ ἤλυθε βουσὶν ἕλιξιν <tei:lb/>ὅτι ἀσμενωτάτη αὐτοῖσιν ἡ βαθεῖα ποίη 
+                 φαίνεται. <tei:lb/>Mochlicon 5 ὦμος δὲ ἐκπίπτει κάτω· . . . οἷον καὶ βουσὶ χειμῶνος φαίνεται διὰ λεπτότητα . . . τό τε Ὁμήρειον καὶ διότι λεπτότατοι βόες τηνικαῦτα. </tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:3">
+        <tei:p>III. Plat. Gorg. 516 C οὐκοῦν οἵ γε δίκαιοι ἥμεροι, ὡς ἔφη Ὅμηρος. </tei:p></tei:div>
+      
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:4">
+        <tei:p>IV. Xen. Sympos. viii. 30 καὶ ἐγὼ δέ φημι καὶ Γανυμήδην οὐ σώματος ἀλλὰ ψυχῆς ἕνεκα ὑπὸ Διὸς εἰς Ὄλυμπον ἀνενεχθῆναι. μαρτυρεῖ δὲ τοὔνομα 
+                 αὐτοῦ· ἔστι μὲν γὰρ δήπου καὶ Ὁμήρῳ <tei:lb/>γάνυται δέ τʼ ἀκούων· <tei:lb/>τοῦτο δὲ φράζει ὅτι ἥδεται δέ τʼ ἀκούων. ἔστι δὲ καὶ ἄλλοθί που 
+                 <tei:lb/>πυκινὰ φρεσὶ μήδεα εἰδώς· <tei:lb/>τοῦτο δʼ αὖ λέγει σοφὰ φρεσὶ βουλεύματα εἰδώς. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:5">
+        <tei:p>V. Plato Phaedr. 252 B λέγουσι δέ, οἶμαι, τινὲς Ὁμηριδῶν ἐκ τῶν ἀποθέτων ἐπῶν δύο ἔπη εἰς τὸν Ἔρωτα, ὧν τὸ ἕτερον ὑβριστικὸν πάνυ καὶ οὐ σφόδρα τι ἔμμετρον· ὑμνοῦσι 
+                 δὲ ὧδε· <tei:lb/>τὸν δʼ ἤτοι θνητοὶ μὲν Ἔρωτα καλοῦσι ποτηνόν, <tei:lb/>ἀθάνατοι δὲ Πτέρωτα διὰ πτερόφοιτον ἀνάγκην. <tei:lb/><tei:pb facs="homeriopera05home_0165"/>
+                 </tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:6">
+        <tei:p>VI. Aeschines i. § 128 καὶ οὕτως ἐναργές ἐστι καὶ οὐ πεπλασμένον ὃ λέγω ὥσθʼ εὑρήσετε καὶ τοὺς προγόνους φήμης ὡς θεοῦ μεγίστης βωμὸν ἱδρυμένους, 
+                 καὶ τὸν Ὅμηρον πολλάκις ἐν τῇ Ἰλιάδι λέγοντα πρὸ τοῦ τι τῶν μελλόντων γενέσθαι <tei:lb/>φήμη δʼ ἐς στρατὸν ἦλθε.<tei:lb/></tei:p></tei:div>
+
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:7">
+        <tei:p><tei:pb facs="homeriopera05home_0165"/>VII. schol. Τ Ω 420 ἀδύνατον νεκρῶν τραύματα μύειν, ὥς φησιν Ἀριστοτέλης (fr. 159 Rose) εἰρηκέναι Ὅμηρον <tei:lb/>μῦσεν δὲ 
+                 περὶ βροτόεσσʼ ὠτειλή. <tei:lb/>τοῦτο δὲ τὸ ἡμιστίχιον οὐ φέρεται. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:8">
+        <tei:p>VIII. Ar. de An. I. c. 2. 404 A 25 ὁμοίως δὲ καὶ Ἀναξαγόρας ψυχὴν εἶναι λέγει τὴν κινοῦσαν, καὶ εἴ τις ἄλλος εἴρηκεν ὡς τὸ πᾶν ἐκίνησε νοῦς, οὐ μὴ παντελῶς γʼ ὥσπερ 
+                 Δημόκριτος (§ 100 Diels). ἐκεῖνος μὲν γὰρ ἁπλῶς ταὐτὸν ψυχὴν καὶ νοῦν· τὸ γὰρ ἀληθὲς εἶναι τὸ φαινόμενον· διὸ καλῶς ποιῆσαι τὸν Ὅμηρον ὡς <tei:lb/>Ἕκτωρ κεῖτʼ 
+                 ἀλλοφρονέων. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:9, 10, 11">
+        <tei:p>IX, X, XI. Ar. Eth. Nic. iii. 8. 1116 B 26 ἰτητικώτατον γὰρ ὁ θυμὸς πρὸς τοὺς κινδύνους, ὅθεν καὶ Ὅμηρος <tei:lb/>σθένος ἔμβαλε θυμῷ <tei:lb/>καὶ μένος καὶ θυμὸν ἔγειρε <tei:lb/>
+                 καὶ δριμὺ δʼ ἀνὰ ῥῖνας μένος (ω 318, 319 ordine turbato) <tei:lb/>καὶ ἔζεσεν αἷμα. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:12">
+        <tei:p>XII. Chrysippus ap. Galen. de plac. Hipp. et Plat. iii. 115 <tei:lb/>πρῆσεν ἐνὶ στήθεσφιν ἐρισθενέος Διὸς ἀλκὴν <tei:lb/>γνωμέναι. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:13">
+        <tei:p>XIII. idem ib. <tei:lb/>τότε δὴ στηθέων θʼ ἅμα φρένας ἐξέλετο Ζεύς <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:14">
+        <tei:p>XIV. idem ib. <tei:lb/>ἄλλο δʼ ἐνὶ στήθεσσι νόος καὶ μῆτις ἀμύμων. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:15">
+        <tei:p>XV. Plutarchus vit. Hom. ii. 23 ἔστι δὲ καὶ ἄλλος τρόπος ἡ μετωνυμία . . . οἷόν ἐστι παρʼ αὐτῷ <tei:lb/>ἦμος ὅτʼ αἰζηοὶ Δημήτερα κωλοτομεῦσι <tei:lb/>
+                 <tei:pb facs="homeriopera05home_0166"/><tei:lb/>idem de Iside et Osiride 66, 377 D <tei:lb/>ποιητὴς δέ τις ἐπὶ τῶν θεριζόντων <tei:lb/>τῆμος ὅτʼ αἰζηοὶ 
+                 Δημήτερα κωλοτομεῦσιν. <tei:lb/></tei:p></tei:div>
+         
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:16">
+         <tei:p>XVI. Plut. vit. Hom. ii. 20 <tei:lb/><tei:lb/>εἰσὶ δὲ παρʼ αὐτῷ μεταφοραὶ ποικίλαι, αἱ μὲν ἀπὸ ἐμψύχων ἐπὶ ἔμψυχα, οἷον <tei:lb/>φθέγξατο δʼ ἡνίοχος νηὸς 
+                  κυανοπρῴροιο. <tei:lb/>anonymus in anecd. graec. Boissonadii iii. 286 ἔτι τῶν μεταφορῶν αἱ μὲν ἀντιστρέφουσιν, αἱ δʼ οὔ. καὶ ἀντιστρέφουσι μὲν αἱ τοιαῦται [eadem] 
+                  καὶ <tei:lb/>ἵππων κυβερνητῆρες (cf. Oppian. i. 96). <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:17">
+        <tei:p>XVII. idem ii. 55 τὸ ἐνεργητικὸν ἀντὶ τοῦ παθητικοῦ <tei:lb/>δωρήσω τρίποδα χρυσούατον <tei:lb/>ἀντὶ τοῦ δωρήσομαι. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:18">
+         <tei:p>XVIII. schol. in Lycophr. 86 λεύσσω θέοντα γρυνόν] ... γρυνὸν δὲ εἶπε τὸν Ἀλέξανδρον κατὰ μετωνυμίαν καλέσας· γρυνὸς γάρ ἐστιν ὁ κορμός· 
+           καὶ Ὅμηρος <tei:lb/>γρυνοὶ μὲν δαίοντο μέγας δʼ Ἥφαιστος ἀνέστη <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:19">
+        <tei:p>XIX. Ammonius περὶ διαφορᾶς ὀνομάτων in v. οὗτος <tei:lb/>οὗτος τοι Διομήδης. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:20">
+        <tei:p>XX. id. in v. λῃτουργεῖν <tei:lb/>λήιτον ἀμφεπένοντο. <tei:lb/></tei:p></tei:div>
+                  
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:21">
+        <tei:p>XXI. Galenus in Hippocr. περὶ ἀγμῶν ii. 70 <tei:lb/>καὶ μέσον μὲν γὰρ ὁ ποιητὴς ἑνικῶς εἶπεν αὐτό· <tei:lb/>περὶ ζώνην <tei:lb/>βάλλεται ἰξύην ἑκατὸν θυσάνοις 
+                 ἀραρυῖαν. <tei:lb/></tei:p></tei:div>
+               
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:22">
+        <tei:p>XXII. Ammonius in Porph. isag. prooem. 4 r. 30 (ed. Busse, p. 9) καὶ ὁ ποιητὴς <tei:lb/>ἐπεὶ σοφὸς ἤραρε τέκτων. <tei:lb/><tei:pb facs="homeriopera05home_0167"/>
+                 Clem. Alex. strom. i. 4. 1 Ὅμηρος δὲ καὶ τέκτονα σοφὸν καλεῖ. </tei:p></tei:div>
+                                
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:23">
+        <tei:p>XXIII. Servius in Verg. Aen. xii. 691 striduntque hastilibus aurae] Homerus <tei:lb/>συρίζουσα ΜΑΚΕΛΟΝ ΙϹΙΤΙΤΑΤΕ λόγχη <tei:lb/></tei:p></tei:div>
+                 
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:24">
+        <tei:p>XXIV. Probus in Verg. Georg. ii. 506 <tei:lb/>Tyron enim Sarram appellatam Homerus docuit. <tei:lb/></tei:p></tei:div>
+                 
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:25">
+        <tei:p>XXV. Suidas θωύσσοντες· ὑλακτοῦντες. Ὅμηρος <tei:lb/>βαρύβρομα θωύσσοντες. <tei:lb/>96-100 αἰδεῖσθε ξενίων <tei:lb/>120, 1 αἶψα πόδες <tei:lb/>164 
+                     οἵῃ μʼ αἴσῃ δῶκε <tei:lb/>203, 4 Θεστορίδη <tei:lb/>225-32 κλῦθι Ποσειδάων <tei:lb/>239-41 πότνια γῆ <tei:lb/>251-4 ναῦται ποντοπόροι <tei:lb/>270-3 ἄλλη τίς σου 
+                     πεύκη <tei:lb/>292-5 Γλαῦκε βοτῶν <tei:lb/>401-4 κλῦθί μοι εὐχομένῳ κουροτρόφε <tei:lb/>409-13 ἀνδρὸς μὲν στέφανος παῖδες <tei:lb/>487, 8 τοίων γὰρ 
+                     πατέρων <tei:lb/></tei:p></tei:div>
+      </tei:div>
+             
+    <tei:div type="translation"/>
+    <tei:div type="apparatus"/>
+    <tei:div type="commentary">
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:4">
+        <tei:p><tei:pb facs="homeriopera05home_0164"/>auctor seu cyclici carminis seu hymni figura ludit etymologica. </tei:p></tei:div>
+             
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:5">
+        <tei:p>unde hos versus traxerit Plato incertum : hymnum sapere nobis visi sunt C. Q. 1907. 136.</tei:p></tei:div>
+             
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:6">
+        <tei:p>Dem. Epitaph. 29 v. Iliu pers. IV; Aristoph. Pac. 1282, 1283, 1286, 1287 v. p. 116. </tei:p></tei:div>        
+      
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:7">
+        <tei:p><tei:pb facs="homeriopera05home_0165"/>verissime scholiasta. </tei:p></tei:div>
+             
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:13">
+        <tei:p>emendatio incerta. cf. P 470 Z 234 T 137. </tei:p></tei:div>
+             
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:18">
+        <tei:p><tei:pb facs="homeriopera05home_0166"/>eundem versum Etym. magn. 241. 45 sed γρουνοί. </tei:p></tei:div>
+             
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:21">
+        <tei:p>cf. Ξ 181. corrupta fortasse varia lectio versuum ε 231 κ 544 sc. <tei:lb/>περὶ δὲ ζώνην βάλετʼ ἰξυῖ <tei:lb/>καλὴν χρυσείην ἑκατὸν θυσάνοις ἀραρυῖαν. <tei:lb/></tei:p></tei:div>
+             
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:22">
+        <tei:p><tei:pb facs="homeriopera05home_0167"/>eadem Nicomach. isag. init. Elias proleg. philosoph. c. 9 David id. c. 15, Eust. 1023. 14. cf. Ψ 712 τούς τε κλυτὸς ἤραρε 
+                   τέκτων. Bywater J. Ph. vii. 66. </tei:p></tei:div>
+
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:23">
+        <tei:p>conicias μακεδνόν (auctori idem quod μακρόν) et ἵστατο vel ἴπτατο. </tei:p></tei:div>
+      
+      <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1:25">
+        <tei:p>His versibus, quorum hi pro variis lectionibus Homericis habendi videntur esse, hi e cyclo vel hymnis orti, illi adiciendi sunt quos scriptor vitae Herodoteae nescio
+                    unde decerpsit. versus hexametricos anonymos quotquot exstant colligere non huius loci est : licet tamen adferre initium versus in vase inscriptum apud 
+                    Kretschmerum Vaseninschriften p. 90 n. 64 <tei:lb/>ωδε ποτ εν τιρυνθι <tei:lb/>quattuor pedes ab Hephaestione Ench. 1. 3. servatos <tei:lb/>Τίρυνς οὐδέ τι τεῖχος 
+                    ἐπήρκεσε. <tei:lb/>praebuit papyrus nonnullos qui supra Alexandrinam aetatem videntur ascendere, sed fragmenta tantum : cf. Greek Papyri, Series II, 1897, p. 13, 
+                    Hibeh Papyri i. 1906, p. 41, Oxyrhynchus Papyri iii. n. 422 sqq., vi. n. 859, 864, Berliner Klassikertexte ii, p. 145 sqq., Pap. Mus. Brit. 121 in Greek Papyri in the British 
+                    Museum 1893 f. 83 sqq. in hac cf. V. 42 τω νυν μηδε συ [τα] υτα τεη ειπησθα γυναικι. </tei:p></tei:div>        
+      </tei:div>
+    </tei:body>
+  </tei:text>
+</tei:TEI>
