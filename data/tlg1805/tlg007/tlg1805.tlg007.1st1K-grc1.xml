@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Vita septima</title>
+        <title type="sub">Eustathius in Od. 1713. 17.</title>
+        <author xml:lang="lat">Vitae Homeri</author>
+        <editor>Thomas W. Allen</editor>
+        <funder>Center for Hellenic Studies</funder>
+                                    
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Heather</forename>
+            <surname>Snowden</surname>
+            <!--idno type=""></idno-->
+          </persName>
+          <orgName>University of Virginia</orgName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>University of Virginia</orgName>
+          <persName>Heather Snowden</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Tufts University</orgName>
+        </respStmt>
+      </titleStmt>
+                           
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1805.tlg007.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-09-23"/>
+      </publicationStmt>
+                           
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Homeri Opera</title>
+            <editor>Thomas W. Allen</editor>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1912</date>
+            </imprint>
+            <biblScope unit="volume">5</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/homeriopera05home/page/252/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+                  
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+                  
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+                  
+    <revisionDesc>
+      <change when="2020-10-15" who="Lisa Cerrato">reviewed CTS markup and made additional changes.</change>
+      <change when="2020-09-02" who="Heather Snowden">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+         
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1805.tlg007.1st1K-grc1">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg007.1st1K-grc1" n="1">
+       <p rend="indent"><pb facs="homeriopera05home_0269"/>Eustathius1 in Od. 1713. 17.</p>
+<p rend="indent">Ἀλέξανδρος δὲ ὁ Πάφιος ἱστορεῖ τὸν Ὅμηρον υἱὸν Αἰγυπτίων Δμασαγόρου καὶ Αἴθρας· τροφὸν δὲ αὐτοῦ προφῆτίν τινα θυγατέρα Ὤρου ἱερέως Ἴσιδος, ἧς ἐκ τῶν μαστῶν μέλι ῥεῦσαί ποτε εἰς τὸ στόμα τοῦ παιδίου. καὶ τὸ βρέφος ἐν νυκτὶ φωνὰς ἐννέα προέσθαι· χελιδόνος, ταῶνος, περιστερᾶς, κορώνης, πέρδικος, πορφυρίωνος, ψαρός, ἀηδόνος καὶ κοττύφου. εὑρεθῆναί τε τὸ παιδίον μετὰ περιστερῶν ἐννέα παῖζον ἐπὶ τῆς κλίνης, εὐωχουμένην δὲ παρὰ τοῖς τοῦ παιδὸς τὴν Σίβυλλαν ἐμμανῆ γεγονυῖαν ἔπη σχεδιάσαι, ὧν ἀρχὴ 
+<quote rend="blockquote">Δμασαγόρα πολύνικε,</quote>
+ἐν οἷς καὶ μεγακλεῆ καὶ στεφανίτην αὐτὸν προσειπεῖν, καὶ ναὸν κτίσαι κελεῦσαι ἐννέα Πιερίδων· ἐδήλου δὲ τὰς μούσας. τὸν δὲ καὶ τοῦτο ποιῆσαι καὶ τῷ παιδὶ ἀνδρωθέντι ἐξειπεῖν τὸ πρᾶγμα. καὶ τὸν ποιητὴν οὕτω σεμνῦναι τὰ <pb facs="homeriopera05home_0270"/> ζῷα οἷς βρέφος ὢν συνέπαιζε, καὶ ποιῆσαι αὐτὰ τῷ Διὶ τὴν ἀμβροσίαν κομίζοντα.</p></div>
+      </div>
+    
+    </body>
+  </text>
+</TEI>
