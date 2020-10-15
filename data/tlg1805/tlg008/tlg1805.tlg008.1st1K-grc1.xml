@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Tzetzae vita</title>
+        <author xml:lang="lat">Vitae Homeri</author>
+        <editor>Thomas W. Allen</editor>
+        <funder>Center for Hellenic Studies</funder>
+                                    
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Heather</forename>
+            <surname>Snowden</surname>
+            <!--idno type=""></idno-->
+          </persName>
+          <orgName>University of Virginia</orgName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>University of Virginia</orgName>
+          <persName>Heather Snowden</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Tufts University</orgName>
+        </respStmt>
+      </titleStmt>
+                           
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1805.tlg008.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-09-23"/>
+      </publicationStmt>
+                           
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Homeri Opera</title>
+            <editor>Thomas W. Allen</editor>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1912</date>
+            </imprint>
+            <biblScope unit="volume">5</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/homeriopera05home/page/254/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+                  
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+     
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+                  
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+                  
+    <revisionDesc>
+      <change when="2020-10-15" who="Lisa Cerrato">reviewed CTS markup and made additional changes.</change>
+      <change when="2020-09-05" who="Heather Snowden">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+         
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1805.tlg008.1st1K-grc1">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg008.1st1K-grc1" n="1">
+          <note place="inline" xml:lang="lat"><pb facs="homeriopera05home_0270"/>Ioannes Tzetzes cum binas Homeri vitas reliquerit quae novi aliquid adferant, visum est alteram ceteris subiungere sine lectionis varietate: </note>  
+        <p rend="indent"><pb facs="homeriopera05home_0270"/><foreign xml:lang="lat">(1) Chil. xiii. 626 sqq. ed. Kiessling. </foreign>
+<quote rend="indent">
+<lb n="626"/>Ὁ Ὅμηρος ὁ πάνσοφος ἡ θάλασσα τῶν λόγων 
+<lb/>πλὴν γέμουσα τοῦ νέκταρος οὐχ ἁλμυρῶν ὑδάτων, 
+<lb/>ἑπτὰ πατρίδων λέγεται τυγχάνειν ἀμφιβόλων. 
+<lb/>ἑπτὰ πατέρων γέννημα καὶ τούτων ἀμφιβόλων. 
+<lb n="630"/>σὺ δὲ Σμυρναῖον γίνωσκε τὸν Ὅμηρον ὑπάρχειν, 
+<lb/>υἱὸν δὲ δὴ τοῦ Μέλητος ὄντα καὶ Κριθηίδος 
+<lb/>ἐῶ τὰ μυθωδέστερα γονῆς τῆς τούτου λέγειν. 
+<lb/>διδάσκαλον Ὁμήρου δὲ τὸν Πορναπίδην νόει. 
+<lb/>σύνευνος ἦν Ὁμήρου δὲ τὴν κλῆσιν Εὐρυδίκη, 
+<lb n="635"/>Γνώστορος εἴτε Πάστορος θυγάτηρ τοῦ Κυμαίου.  
+<lb/>Σερίφων καὶ Θεόλαος υἱοὶ δὲ τοῦ Ὁμήρου· 
+<lb/>θυγάτηρ Ἀρσιφόνη δέ, ἣν ἔγημε Στασῖνος, 
+<lb/>Στασῖνος ὁ τὰ Κύπρια συγγράμματα ποιήσας 
+<lb/>ἅπερ οἱ πλείους λέγουσιν Ὁμήρου πεφυκέναι, 
+<lb n="640"/>εἰς προῖκα δὲ σὺν χρήμασι δοθῆναι τῷ Στασίνῳ
+<lb/>Ἀρκτῖνος ὁ Μιλήσιος ἦν μαθητὴς Ὁμήρου, 
+<lb/>καὶ δοῦλος δὲ τῷ ποιητῇ κλῆσιν ὑπῆρχε Βύκκων 
+<lb/>ὃν βίκωνα καὶ φλάσκωνα παίζων ὁ Τζέτζης λέγει. 
+<lb/>βιβλία τοῦ Ὁμήρου δὲ τρία εἰσὶ καὶ δέκα. 
+<lb n="645"/>ὁ χρόνος τούτου σύγχρονος ἦν ἐκστρατείας δύο,  
+<lb/>Θηβαικῇ καὶ Τρωικῇ κατὰ πολλοὺς ἑτέρους. 
+<lb/>ὁ δʼ Ἀπολλόδωρος αὐτὸς ὁ χρονογράφος λέγει 
+<lb/>τελεῖν μετʼ ὀγδοήκοντα ἔτη τῆς Τρώων μάχης. 
+<lb/>Ἡσίοδος δὲ ἤκμαζεν ὡς εὗρον ἐν ἑτέροις, 
+<lb n="650"/>κατὰ τὴν ἑνδεκάτην μὲν αὐτὴν Ὀλυμπιάδα. 
+<pb facs="homeriopera05home_0271"/>
+<lb/>τοιάδε τῷ Ὁμήρῳ δὲ ἡ τελευτὴ συνέβη. 
+<lb/>ἦν προχρησθὲν θανεῖν αὐτὸν ὅταν ἠρωτημένος 
+<lb/>οὐ δυνηθῇ τὸ αἴνιγμα ἐκεῖνο ἐπιλῦσαι. 
+<lb/>πένης τελῶν δὲ ὁ ἀνὴρ καί γε τυφλὸς ἐκ γήρως· 
+<lb n="655"/>τὰ μυθικὰ ληρήματα τίς γὰρ φρονῶν ἐγγράφοι; 
+<lb/>ἁπανταχοῦ διήρχετο τὰς χώρας τῆς Ἑλλάδος 
+<lb/>λέγων αὐτοῦ ποιήματα δεχόμενος ἐντίμως 
+<lb/>εἰς δʼ Ἀρκαδίαν ξενισθεὶς ὑπὸ τοῦ Κρεωφύλου 
+<lb/>περιπατήσων ἔρχεται ἐπὶ τὴν παραλίαν. 
+<lb n="660"/>ὡς δʼ εἶπεν ἄνδρες ἁλιεῖς Ἀρκάδες ἔχομέν τι; 
+<lb/>οἱ δʼ ἀπεκρίθησαν αὐτῷ περὶ φθειρῶν λαλοῦντες 
+<lb/>ὡς οὓς εἷλον οὐκ ἔχουσιν, ἔχουσι δʼ οὕς περ εἷλον, 
+<lb/>ὑπέστρεφε λυπούμενος ὡς μὴ νοήσας τοῦτο. 
+<lb/>πηλοῦ δʼ ὄντος ὠλίσθησε καὶ κεκρουκὼς εἰς πέτραν 
+<lb n="665"/>κλᾶται πλευρὰν τὴν δεξιὰν καὶ τελευτᾷ τριταῖος.</quote>
+<note xml:lang="lat" place="inline"><pb facs="homeriopera05home_0271"/> Cf. et xii. 183-205. </note>
+</p></div></div>
+        
+      
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Eustathii vita</title>
+        <title xml:lang="lat" type="subtitle">Il. 4.17</title>
+        <author xml:lang="lat">Vitae Homeri</author>
+        <editor>Thomas W. Allen</editor>
+        <funder>Center for Hellenic Studies</funder>
+                                    
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Heather</forename>
+            <surname>Snowden</surname>
+            <!--idno type=""></idno-->
+          </persName>
+          <orgName>University of Virginia</orgName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>University of Virginia</orgName>
+          <persName>Heather Snowden</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Tufts University</orgName>
+        </respStmt>
+      </titleStmt>
+                           
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1805.tlg0098.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-09-23"/>
+      </publicationStmt>
+                           
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Homeri Opera</title>
+            <editor>Thomas W. Allen</editor>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1912</date>
+            </imprint>
+            <biblScope unit="volume">5</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/homeriopera05home/page/254/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+                  
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+     
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+                  
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+                  
+    <revisionDesc>
+      <change when="2020-10-15" who="Lisa Cerrato">reviewed CTS markup and made additional changes.</change>
+      <change when="2020-09-05" who="Heather Snowden">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+         
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1805.tlg009.1st1K-grc1">
+  
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg009.1st1K-grc1" n="2">
+        <note xml:lang="lat" place="inline">(2) Exeges. in Iliad. ed. Hermann 1812, p. 7. 12-38 9 cum paucissima tantum proferat nova, satis duximus in adnotationibus ceterarum vitarum adscribere si 
+          quando opus esset. </note>
+       <p rend="indent"><foreign xml:lang="lat">Eustathius in Iliadem 4. 17</foreign> </p>
+<p>Ὁμήρου δὲ γένος οὐδʼ αὐτὸ περιεργασόμεθα. εἴρηται γὰρ πολλοῖς ἑτέροις ὡς οὐκ ἂν ἡμεῖς κρειττόνως εἴπωμεν. εἰ μὴ ἄρα τοῦτο καὶ μόνον ῥητέον κατὰ τὸ ἐπιτρέχον, ὅτι ἐπικρύψας ἑαυτὸν ὁ ποιητὴς καὶ σιγήσας ὅστίς ποτε καὶ ὅθεν ἦν, περιμάχητος μᾶλλον ἐγένετο καὶ πολύπατρις. ἔστι γὰρ κατὰ τὴν τῶν ποθούντων ἔφεσιν καὶ Ἰήτης καὶ Σμυρναῖος καὶ Ἀθηναῖος καὶ Αἰγύπτιος, ἤδη δὲ καὶ Ἰταλός. ἀμφισβητοῦσι δʼ αὐτοῦ καὶ Χῖοι μαρτύριον προχειριζόμενοι τοὺς καλουμένους Ὁμηρίδας ὧν καὶ Πίνδαρος μέμνηται. καὶ ἕτεροι δὲ πολλοὶ Ὁμήρου μεταποιοῦνται σφετεριζόμενοι καὶ ἁβρυνόμενοι αὐτὸν ἔχειν πολίτην ἢ ἑτέροις ἀγαθοῖς σεμνύνεσθαι. <pb facs="homeriopera05home_0272"/></p></div>
+      </div>
+
+    </body>
+  </text>
+</TEI>
