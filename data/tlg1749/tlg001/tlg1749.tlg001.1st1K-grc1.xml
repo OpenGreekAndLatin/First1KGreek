@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Vitae Hesiodi Particula</title>
+        <author/>
+        <editor>Thomas W. Allen</editor>
+        <funder>Center for Hellenic Studies</funder>
+        
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Heather</forename>
+            <surname>Snowden</surname>
+            <!--idno type=""></idno-->
+          </persName>
+          <orgName>University of Virginia</orgName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>University of Virginia</orgName>
+          <persName>Heather Snowden</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Tufts University</orgName>
+        </respStmt>
+      </titleStmt>
+      
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1749.tlg001.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-09-23"/>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Homeri Opera</title>
+            <editor>Thomas W. Allen</editor>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1912</date>
+            </imprint>
+            <biblScope unit="volume">5</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/homeriopera05home/page/222/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the  <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+
+
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    
+    <revisionDesc>
+      <change when="2020-10-15" who="Lisa Cerrato">reviewed CTS markup and made additional changes.</change>
+      <change when="2020-09-25" who="Heather Snowden">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+         
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1749.tlg001.1st1K-grc1">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1749.tlg001.1st1K-grc1" n="1">
+          <p><pb facs="homeriopera05home_0238"/> συνηκμακέναι δʼ αὐτὸν οἱ μὲν Ὁμήρῳ φασίν, οἱ δὲ καὶ Ὁμήρου προγενέστερον εἶναι διισχυρίζονται. καὶ οἱ μὲν προγενέστερον εἶναι τοῦτον Ὁμήρου διισχυριζόμενοι ἐν ἀρχαῖς εἶναί φασι τῆς Ἀρχίππου ἀρχῆς, Ὅμηρον δʼ ἐν τῷ τέλει. ὁ δʼ Ἄρχιππος οὗτος υἱὸς ἦν Ἀκάστου, ἄρξας Ἀθηναίων ἔτη λε'. οἱ δὲ συγχρόνους αὐτοὺς εἶναι λέγοντες ἐπὶ τῇ τελευτῇ τοῦ Ἀμφιδάμαντος τοῦ βασιλέως Εὐβοίας φασὶν αὐτοὺς ἀγωνίσασθαι καὶ νενικηκέναι Ἡσίοδον ἀγωνοθετοῦντος καὶ κρίνοντος Πανήδου τοῦ βασιλέως, τοῦ ἀδελφοῦ Ἀμφιδάμαντος, Γανύκτορός τε καὶ τῶν λοιπῶν. ἐξηρωτηκέναι γὰρ αὐτοὺς πολλὰ πρὸς ἀλλήλους φασὶ δι' ἐπῶν αὐτοσχεδίων καὶ ἀποκρίνασθαι, καὶ πᾶσι τὸν Ὅμηρον τὰ πρωτεῖα λαμβάνειν· τέλος τοῦ βασιλέως Πανήδου εἰπόντος αὐτοῖς τὰ κάλλιστα τῶν ἑαυτῶν ἐπῶν ἀναλεξαμένους εἰπεῖν, Ὅμηρος μὲν ἄρχεται λέγειν τοῦτο τὸ χωρίον ἀπὸ πολλῶν ἐπῶν ἀρξάμενος ὄπισθεν· 
+            <quote rend="blockquote"><lb/>ἀσπὶς ἄρʼ ἀσπίδʼ ἔρειδε κόρυς κόρυν ἀνέρα δʼ ἀνήρ, 
+            <lb/>ψαῦον δʼ ἱππόκομοι κόρυθες λαμπροῖσι φάλοισι 
+            <lb/>νευόντων· ὡς πυκνοὶ ἐφέστασαν ἀλλήλοισι, 
+            <lb/>καὶ περαιτέρω τούτων. Ἡσίοδος δὲ τῶν 
+            <lb/>Πληιάδων Ἀτλαγενέων ἐπιτελλομενάων </quote>
+         <pb facs="homeriopera05home_0239"/> ἀπάρχεται καὶ ὁμοίως Ὁμήρῳ προβαίνει μέχρι πολλοῦ τῶν ἐπῶν. καὶ πάλιν ἐπὶ τούτοις οἱ παρεστῶτες πάντες τῶν ἐλλογίμων καὶ στρατιωτῶν τὸν Ὅμηρον ἐστεφάνουν, ὁ δὲ Πανήδης ἔκρινε νικᾶν Ἡσίοδον ὡς εἰρήνην καὶ γεωργίαν διδάσκοντα, καὶ οὐ καθάπερ Ὅμηρος πολέμους καὶ σφάγια. ἀλλὰ ταῦτα μέν εἰσι ληρήματα τῶν νεωτέρων καὶ πλάσεις τῶν πρὸς ἀλλήλους ἐρωτημάτων καὶ τῶν ἐξ Ὁμήρου παρεκβεβλημένων ἐπῶν καὶ ὑπʼ ἐκείνου δῆθεν ῥηθέντων. Ὅμηρος γὰρ ὁ χρυσοῦς, ὡς ἐγᾦμαι, μᾶλλον δʼ ἀκριβεστάτως ἐπίσταμαι, πολύ τε παλαιότερος Ἡσιόδου ὑπῆρχε, καὶ εἰ πρὸς τοὺς θρυλλουμένους ἐκείνους θεοὺς ἔριν ἐστήσατο λόγων, καὶ κατὰ τούτων ἂν τὰ πρωτεῖα καὶ τοὺς στεφάνους ἠνέγκατο. ἀλλʼ ἴσως ἕτερος Ὅμηρος ἦν ὁ τῷ Ἡσιόδῳ ἰσόχρονος, ὁ τοῦ Εὔφρονος παῖς ὁ Φωκεύς, ὁ καὶ τούτῳ τὴν ἔριν στησάμενος, κἂν τὰ ἔπη τοῦ θείου ἐκείνου ἀνδρὸς τῇ ὁμωνυμίᾳ πεπλανημένοι λέγειν τοῦτον ἐπλάσαντο. Ὅμηροι γὰρ πολλοὶ γεγόνασιν ἕτεροι ζήλῳ τοῦ παλαιοῦ τὴν κλῆσιν λαμβάνοντες· καὶ γὰρ καὶ τοῦ Φωκέως Ὁμήρου τούτου ἕτερος ὑπάρχει νεώτερος Ὅμηρος. οὗτος ὁ νεώτερος Ὅμηρος ἦν παῖς Ἀνδρομάχου, τῷ γένει Βυζάντιος, ὁ τὴν Εὐρυπύλειαν ποιήσας. τὸν παλαιὸν δʼ Ὅμηρον Διονύσιος ὁ κυκλογράφος <foreign xml:lang="lat">(F.H.G. ii. 10)</foreign> φησὶν ἐπʼ ἀμφοτέρων ὑπάρχειν τῶν Θηβαικῶν στρατειῶν καὶ τῆς <pb facs="homeriopera05home_0240"/> Ἰλίου ἁλώσεως. ἐκ τούτου οὖν λογίζομαι τοῦτον τοῦ Ἡσιόδου εἶναι υ' ἐτῶν προγενέστερον. Ἀριστοτέλης γὰρ ὁ φιλόσοφος, μᾶλλον δʼ οἶμαι ὁ τοὺς πέπλους συντάξας <foreign xml:lang="lat">(f. 1574 Ros,)</foreign> ἐν τῇ Ὀρχομενίων πολιτείᾳ <foreign xml:lang="lat">(fr. 100 Neumann 524 Ros.)</foreign>, Στησίχορον τὸν μελοποιὸν εἶναί φησιν υἱὸν Ἡσιόδου, ἐκ τῆς Κτιμένης αὐτῷ γεννηθέντα τῆς Ἀμφιφάνους καὶ Γανύκτορος ἀδελφῆς, θυγατρὸς δὲ Φηγέως. ὁ δὲ Στησίχορος οὗτος σύγχρονος ἦν Πυθαγόρᾳ τῷ φιλοσόφῳ καὶ τῷ Ἀκραγαντίνῳ Φαλάριδι· οἱ δʼ Ὁμήρου υ' ὑστερίζοντα ἔτεσι καθά φησι καὶ Ἡρόδοτος. συνεγράψατο δʼ ὁ τοιοῦτος Ἡσίοδος βίβλους ιϛʼ, Ὅμηρος δʼ ὁ παλαιὸς ιγ'.</p>
+        </div>
+      </div>
+
+    </body>
+  </text>
+</TEI>
