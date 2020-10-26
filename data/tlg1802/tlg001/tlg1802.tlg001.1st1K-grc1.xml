@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Versus heroici</title>
+        <author>Various</author>
+        <editor>Thomas W. Allen</editor>
+        <funder>Center for Hellenic Studies</funder>
+        
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Heather</forename>
+            <surname>Snowden</surname>
+            <!--idno type=""></idno-->
+          </persName>
+          <orgName>University of Virginia</orgName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>University of Virginia</orgName>
+          <persName>Heather Snowden</persName>
+        </respStmt>
+        
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Tufts University</orgName>
+        </respStmt>
+      </titleStmt>
+      
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1802.tlg001.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-09-23"/>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Homeri Opera</title>
+            <editor>Thomas W. Allen</editor>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1912</date>
+            </imprint>
+            <biblScope unit="volume">5</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/homeriopera05home/page/146/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of  the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    
+    <revisionDesc>
+      <change when="2020-10-26" who="Lisa Cerrato">reviewed CTS markup and made additional changes.</change>
+      <change when="2020-09-25" who="Heather Snowden">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+        
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1">
+        <head xml:lang="lat">Versus heroici Homero adscripti qui neque in Iliade Odyssea Hymnis neque in Cycli fragmentis inveniuntur.</head>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="1">
+        <p rend="indent"><pb facs="homeriopera05home_0163"/><label xml:lang="eng">I, II. </label><bibl xml:lang="eng"><author>Hippocrates</author> <title xml:lang="grc">περὶ ἄρθρων ἐμβολῆς</title> 8.</bibl></p>
+        <p rend="indent">καλῶς γὰρ Ὅμηρος καταμεμάθηκε ὅτι πάντων τῶν προβάτων βόες μάλιστα ἀτονέουσι ταύτην τὴν ὥρην, καὶ βοῶν οἱ ἀρόται, ὅτι τὸν χειμῶνα ἐργάζονται. τούτοισι τοίνυν καὶ ἐκπίπτει μάλιστα· οὗτοι γὰρ μάλιστα λεπτύνονται. . . . διὰ τοῦτο οὖν ἐποίησεν τάδε τὰ ἔπη· <pb facs="homeriopera05home_0164"/> 
+          <quote rend="blockquote">ὡς δʼ ὁπότʼ ἀσπάσιον ἔαρ ἤλυθε βουσὶν ἕλιξιν</quote> 
+          ὅτι ἀσμενωτάτη αὐτοῖσιν ἡ βαθεῖα ποίη φαίνεται.</p></div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="2">
+        <p rend="indent"><bibl xml:lang="eng"><title>Mochlicon</title> 5</bibl> ὦμος δὲ ἐκπίπτει κάτω· . . . οἷον καὶ βουσὶ χειμῶνος φαίνεται διὰ λεπτότητα . . . τό τε Ὁμήρειον καὶ διότι λεπτότατοι βόες τηνικαῦτα. </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="3">
+        <p rend="indent"><label xml:lang="eng">III.</label> <bibl xml:lang="eng">Plat. Gorg. 516 C</bibl> οὐκοῦν οἵ γε δίκαιοι ἥμεροι, ὡς ἔφη Ὅμηρος. </p></div>
+      
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="4">
+        <p rend="indent"><label xml:lang="eng">IV.</label> <bibl xml:lang="eng">Xen. Sympos. viii. 30</bibl> καὶ ἐγὼ δέ φημι καὶ Γανυμήδην οὐ σώματος ἀλλὰ ψυχῆς ἕνεκα ὑπὸ Διὸς εἰς Ὄλυμπον ἀνενεχθῆναι. μαρτυρεῖ δὲ τοὔνομα αὐτοῦ· ἔστι μὲν γὰρ δήπου καὶ Ὁμήρῳ 
+          <quote rend="blockquote">γάνυται δέ τʼ ἀκούων· </quote>
+          τοῦτο δὲ φράζει ὅτι ἥδεται δέ τʼ ἀκούων. ἔστι δὲ καὶ ἄλλοθί που 
+          <quote rend="blockquote">πυκινὰ φρεσὶ μήδεα εἰδώς·</quote> 
+          τοῦτο δʼ αὖ λέγει σοφὰ φρεσὶ βουλεύματα εἰδώς. <note rend="inline" xml:lang="lat">auctor seu cyclici carminis seu hymni figura ludit etymologica. </note></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="5">
+       <p rend="indent"><label xml:lang="eng">V.</label> <bibl xml:lang="eng">Plato Phaedr. 252 B</bibl> λέγουσι δέ, οἶμαι, τινὲς Ὁμηριδῶν ἐκ τῶν ἀποθέτων ἐπῶν δύο ἔπη εἰς τὸν Ἔρωτα, ὧν τὸ ἕτερον ὑβριστικὸν πάνυ καὶ οὐ σφόδρα τι ἔμμετρον· ὑμνοῦσι δὲ ὧδε· 
+         <quote rend="blockquote"><l>τὸν δʼ ἤτοι θνητοὶ μὲν Ἔρωτα καλοῦσι ποτηνόν,</l> 
+           <l>ἀθάνατοι δὲ Πτέρωτα διὰ πτερόφοιτον ἀνάγκην. </l></quote><note rend="inline" xml:lang="lat">unde hos versus traxerit Plato incertum : hymnum sapere nobis visi sunt C. Q. 1907. 136.</note></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="6">
+        <p rend="indent"><label xml:lang="eng">VI.</label> <bibl xml:lang="eng">Aeschines i. § 128</bibl> καὶ οὕτως ἐναργές ἐστι καὶ οὐ πεπλασμένον ὃ λέγω ὥσθʼ εὑρήσετε καὶ τοὺς προγόνους φήμης ὡς θεοῦ μεγίστης βωμὸν ἱδρυμένους, καὶ τὸν Ὅμηρον πολλάκις ἐν τῇ Ἰλιάδι λέγοντα πρὸ τοῦ τι τῶν μελλόντων γενέσθαι 
+          <quote rend="blockquote">φήμη δʼ ἐς στρατὸν ἦλθε.</quote><note rend="inline" xml:lang="lat">Dem. Epitaph. 29 v. Iliu pers. IV; Aristoph. Pac. 1282, 1283, 1286, 1287 v. p. 116.</note></p></div>
+
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="7">
+        <p rend="indent"><pb facs="homeriopera05home_0165"/><label xml:lang="eng">VII.</label> <bibl xml:lang="eng">schol. Τ <foreign xml:lang="grc">Ω</foreign> 420</bibl> ἀδύνατον νεκρῶν τραύματα μύειν, ὥς φησιν Ἀριστοτέλης <bibl xml:lang="eng">(fr. 159 Rose)</bibl> εἰρηκέναι Ὅμηρον 
+          <quote rend="blockquote">μῦσεν δὲ περὶ βροτόεσσʼ ὠτειλή.</quote> 
+          τοῦτο δὲ τὸ ἡμιστίχιον οὐ φέρεται. <lb/><note rend="inline" xml:lang="lat">verissime scholiasta.</note></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="8">
+        <p rend="indent"><label xml:lang="eng">VIII.</label> <bibl xml:lang="eng">Ar. de An. I. c. 2. 404 A 25</bibl> ὁμοίως δὲ καὶ Ἀναξαγόρας ψυχὴν εἶναι λέγει τὴν κινοῦσαν, καὶ εἴ τις ἄλλος εἴρηκεν ὡς τὸ πᾶν ἐκίνησε νοῦς, οὐ μὴ παντελῶς γʼ ὥσπερ Δημόκριτος (§ 100 Diels). ἐκεῖνος μὲν γὰρ ἁπλῶς ταὐτὸν ψυχὴν καὶ νοῦν· τὸ γὰρ ἀληθὲς εἶναι τὸ φαινόμενον· διὸ καλῶς ποιῆσαι τὸν Ὅμηρον ὡς 
+          <quote rend="blockquote">Ἕκτωρ κεῖτʼ ἀλλοφρονέων. </quote></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="9">
+        <p rend="indent"><label xml:lang="eng">IX, X, XI.</label><bibl xml:lang="eng"> Ar. Eth. Nic. iii. 8. 1116 B 26</bibl> ἰτητικώτατον γὰρ ὁ θυμὸς πρὸς τοὺς κινδύνους, ὅθεν καὶ Ὅμηρος 
+          <quote rend="blockquote">σθένος ἔμβαλε θυμῷ</quote> 
+          καὶ <quote rend="indent">μένος καὶ θυμὸν ἔγειρε</quote> 
+         καὶ <quote rend="indent">δριμὺ δʼ ἀνὰ ῥῖνας μένος <foreign xml:lang="lat">‹<foreign xml:lang="grc">ω</foreign> 318, 319 ordine turbato›</foreign></quote> 
+         καὶ <quote rend="indent">ἔζεσεν αἷμα.</quote> <lb/></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="12">
+        <p rend="indent"><label xml:lang="eng">XII.</label> <bibl xml:lang="lat">Chrysippus ap. Galen. de plac. Hipp. et Plat. iii. 115</bibl>
+        <quote rend="blockquote"><l>πρῆσεν ἐνὶ στήθεσφιν ἐρισθενέος Διὸς ἀλκὴν</l> <l>γνωμέναι.</l></quote></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="13">
+        <p rend="indent"><label xml:lang="eng">XIII.</label> <foreign xml:lang="lat">idem ib.</foreign> 
+          <quote rend="blockquote">τότε δὴ στηθέων θʼ ἅμα φρένας ἐξέλετο Ζεύς </quote><note rend="inline" xml:lang="lat">emendatio incerta. cf. P 470 Z 234 T 137.</note></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="14">
+        <p rend="indent"><label xml:lang="eng">XIV.</label> <foreign xml:lang="lat">idem ib.</foreign> 
+          <quote rend="blockquote">ἄλλο δʼ ἐνὶ στήθεσσι νόος καὶ μῆτις ἀμύμων. </quote></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="15">
+        <p rend="indent"><label xml:lang="eng">XV.</label> <bibl xml:lang="lat">Plutarchus vit. Hom. ii. 23</bibl> ἔστι δὲ καὶ ἄλλος τρόπος ἡ μετωνυμία . . . οἷόν ἐστι παρʼ αὐτῷ 
+          <quote rend="blockquote">ἦμος ὅτʼ αἰζηοὶ Δημήτερα κωλοτομεῦσι</quote> <pb facs="homeriopera05home_0166"/>
+          <bibl xml:lang="lat">idem de Iside et Osiride 66, 377 D</bibl> 
+          <quote rend="blockquote"><l>ποιητὴς δέ τις ἐπὶ τῶν θεριζόντων</l> 
+          <l rend="indent">τῆμος ὅτʼ αἰζηοὶ Δημήτερα κωλοτομεῦσιν.</l></quote> </p></div>
+         
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="16">
+         <p rend="indent"><label xml:lang="eng">XVI.</label> <bibl xml:lang="lat">Plut. vit. Hom. ii. 20</bibl></p> 
+        <p rend="indent">εἰσὶ δὲ παρʼ αὐτῷ μεταφοραὶ ποικίλαι, αἱ μὲν ἀπὸ ἐμψύχων ἐπὶ ἔμψυχα, οἷον 
+          <quote rend="blockquote">φθέγξατο δʼ ἡνίοχος νηὸς κυανοπρῴροιο. </quote>
+          <bibl xml:lang="lat">anonymus in anecd. graec. Boissonadii iii. 286</bibl> ἔτι τῶν μεταφορῶν αἱ μὲν ἀντιστρέφουσιν, αἱ δʼ οὔ. καὶ ἀντιστρέφουσι μὲν αἱ τοιαῦται <foreign xml:lang="lat">[eadem]</foreign> καὶ 
+          <quote rend="blockquote">ἵππων κυβερνητῆρες <foreign xml:lang="lat">‹cf. Oppian. i. 96.›</foreign></quote></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="17">
+        <p rend="indent"><label xml:lang="eng">XVII.</label> <bibl xml:lang="lat">idem ii. 55</bibl> τὸ ἐνεργητικὸν ἀντὶ τοῦ παθητικοῦ 
+          <quote rend="blockquote">δωρήσω τρίποδα χρυσούατον</quote> 
+          ἀντὶ τοῦ δωρήσομαι. <lb/></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="18">
+         <p rend="indent"><label xml:lang="eng">XVIII.</label> <bibl xml:lang="eng">schol. in Lycophr. 86</bibl> λεύσσω θέοντα γρυνόν] ... γρυνὸν δὲ εἶπε τὸν Ἀλέξανδρον κατὰ μετωνυμίαν καλέσας· γρυνὸς γάρ ἐστιν ὁ κορμός·  καὶ Ὅμηρος 
+           <quote rend="blockquote">γρυνοὶ μὲν δαίοντο μέγας δʼ Ἥφαιστος ἀνέστη</quote><note rend="inline" xml:lang="lat">eundem versum Etym. magn. 241. 45 sed <foreign xml:lang="grc">γρουνοί</foreign>. </note></p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="19">
+        <p rend="indent"><label xml:lang="eng">XIX.</label> <bibl xml:lang="eng">Ammonius <foreign xml:lang="grc">περὶ διαφορᾶς ὀνομάτων</foreign> in v. <foreign xml:lang="grc">οὗτος</foreign></bibl> 
+          <quote rend="blockquote">οὗτος τοι Διομήδης.</quote> </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="20">
+        <p rend="indent"><label xml:lang="eng">XX.</label> <bibl xml:lang="lat">id. in v. <foreign xml:lang="grc">λῃτουργεῖν</foreign></bibl> 
+          <quote rend="blockquote">λήιτον ἀμφεπένοντο.</quote> </p></div>
+                  
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="21">
+        <p rend="indent"><label xml:lang="eng">XXI.</label> <bibl xml:lang="lat">Galenus in Hippocr. <foreign xml:lang="grc">περὶ ἀγμῶν</foreign> ii. 70</bibl> </p>
+        <p rend="indent">καὶ μέσον μὲν γὰρ ὁ ποιητὴς ἑνικῶς εἶπεν αὐτό· 
+          <quote rend="blockquote"><l rend="indent">περὶ ζώνην</l> 
+            <l>βάλλεται ἰξύην ἑκατὸν θυσάνοις ἀραρυῖαν.</l></quote><note rend="inline" xml:lang="lat">cf. <foreign xml:lang="grc">Ξ</foreign> 181. corrupta fortasse varia lectio versuum <foreign xml:lang="grc">ε</foreign> 231 <foreign xml:lang="grc">κ</foreign> 544 sc. <foreign xml:lang="grc"><lb/>περὶ δὲ ζώνην βάλετʼ ἰξυῖ <lb/>καλὴν χρυσείην ἑκατὸν θυσάνοις ἀραρυῖαν.</foreign> </note> </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="22">
+        <p rend="indent"><label xml:lang="eng">XXII.</label> <bibl xml:lang="lat">Ammonius in Porph. isag. prooem. 4 r. 30 <foreign xml:lang="eng">(ed. Busse, p. 9)</foreign></bibl> καὶ ὁ ποιητὴς 
+          <quote rend="blockquote">ἐπεὶ σοφὸς ἤραρε τέκτων.</quote></p><pb facs="homeriopera05home_0167"/>
+        <p rend="indent"><bibl xml:lang="eng">Clem. Alex. strom. i. 4. 1</bibl> Ὅμηρος δὲ καὶ τέκτονα σοφὸν καλεῖ. <note rend="inline" xml:lang="lat">eadem Nicomach. isag. init. Elias proleg. philosoph. c. 9 David id. c. 15, Eust. 1023. 14. cf. <foreign xml:lang="grc">Ψ</foreign> 712 <foreign xml:lang="grc">τούς τε κλυτὸς ἤραρε τέκτων</foreign>. Bywater J. Ph. vii. 66. </note></p></div>
+                                
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="23">
+        <p rend="indent"><label xml:lang="eng">XXIII.</label> <bibl xml:lang="lat">Servius in Verg. Aen. xii. 691</bibl> <foreign xml:lang="lat">striduntque hastilibus aurae] <emph>Homerus</emph></foreign> 
+          <quote rend="blockquote">συρίζουσα <emph rend="bold">ΜΑΚΕΛΟΝ ΙϹΙΤΙΤΑΤΕ</emph> λόγχη</quote><note rend="inline" xml:lang="lat">conicias <foreign xml:lang="grc">μακεδνόν</foreign> (auctori idem quod <foreign xml:lang="grc">μακρόν</foreign>) et <foreign xml:lang="grc">ἵστατο</foreign> vel <foreign xml:lang="grc">ἴπτατο</foreign>.</note> </p></div>
+                 
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="24">
+        <p rend="indent"><label xml:lang="eng">XXIV.</label> <bibl xml:lang="lat">Probus in Verg. Georg. ii. 506</bibl> 
+          <quote xml:lang="lat" rend="blockquote">Tyron enim Sarram appellatam Homerus docuit.</quote> </p></div>
+                 
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="25">
+        <p rend="indent"><label xml:lang="eng">XXV.</label> <bibl xml:lang="lat">Suidas</bibl> θωύσσοντες· ὑλακτοῦντες. Ὅμηρος 
+          <quote rend="blockquote">βαρύβρομα θωύσσοντες.</quote></p></div>
+        
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1802.tlg001.1st1K-grc1" n="end">
+          <p xml:lang="lat" rend="indent">His versibus, quorum hi pro variis lectionibus Homericis habendi videntur esse, hi e cyclo vel hymnis orti, illi adiciendi sunt quos scriptor vitae Herodoteae nescio unde decerpsit. </p>
+          <p><lb/>96-100 αἰδεῖσθε ξενίων 
+          <lb/>120, 1 αἶψα πόδες 
+          <lb/>164  οἵῃ μʼ αἴσῃ δῶκε 
+          <lb/>203, 4 Θεστορίδη 
+          <lb/>225-32 κλῦθι Ποσειδάων 
+          <lb/>239-41 πότνια γῆ 
+          <lb/>251-4 ναῦται ποντοπόροι 
+          <lb/>270-3 ἄλλη τίς σου πεύκη 
+          <lb/>292-5 Γλαῦκε βοτῶν 
+          <lb/>401-4 κλῦθί μοι εὐχομένῳ κουροτρόφε 
+          <lb/>409-13 ἀνδρὸς μὲν στέφανος παῖδες 
+          <lb/>487, 8 τοίων γὰρ πατέρων </p>
+          <p rend="indent"><foreign xml:lang="lat">versus hexametricos anonymos quotquot exstant colligere non huius loci est: licet tamen adferre initium versus in vase inscriptum apud Kretschmerum Vaseninschriften p. 90 n. 64</foreign> 
+            <quote rend="blockquote">ωδε ποτ εν τιρυνθι</quote>
+            <foreign xml:lang="lat">quattuor pedes ab Hephaestione Ench. 1. 3. servatos</foreign> 
+            <quote rend="blockquote">Τίρυνς οὐδέ τι τεῖχος ἐπήρκεσε.</quote> 
+            <foreign xml:lang="lat">praebuit papyrus nonnullos qui supra Alexandrinam aetatem videntur ascendere, sed fragmenta tantum:</foreign> <foreign xml:lang="eng">cf. <title rend="italic">Greek Papyri, Series II</title>, 1897, p. 13,  <title rend="italic">Hibeh Papyri</title> i. 1906, p. 41, <title rend="italic">Oxyrhynchus Papyri</title> iii. n. 422 sqq., vi. n. 859, 864, <title xml:lang="deu" rend="italic">Berliner Klassikertexte</title> ii, p. 145 sqq., <title rend="italic">Pap. Mus. Brit.</title> 121 in <title rend="italic">Greek Papyri in the British Museum</title> 1893 f. 83 sqq.</foreign> <foreign xml:lang="lat">in hac cf. V. 42</foreign> τω νυν μηδε συ [τα] υτα τεη ειπησθα γυναικι. </p></div>     
+      </div>
+    </body>
+  </text>
+</TEI>
