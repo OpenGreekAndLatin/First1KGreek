@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">* * * *</title>
+                     <author>Hermes Trismegistus</author>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                  <resp>Published original versions of the electronic texts</resp>
+                  <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                      <persName role="principal">Gregory Crane</persName>
+                      <persName role="principal">Leonard Muellner</persName>
+                      <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                     <resp>proofreader</resp>
+                     <persName><forename>Hanhardt</forename><surname>Lia</surname><!--tei:idno type=""></idno--></persName>
+                </respStmt>
+                <respStmt>
+                   <resp>CTS conversion</resp>
+                       <orgName>Center for Hellenic Studies</orgName>
+                       <persName>Charlotte Houghton</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1286.tlg017.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons 
+                      Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2020-08-19"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr><!--Removed author, since there is more than one--><!--Short version of title; no period; lang attribute-->
+                        <title xml:lang="lat">Hermetica Vol One</title>
+                        <editor>Walter Scott</editor>
+                        <imprint>
+                            <pubPlace>Oxford</pubPlace>
+                            <publisher>Oxford University Press</publisher>
+                            <date>1924</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/ScottHermeticaVolOne/page/n275/mode/2up">The Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+           <editorialDecl>
+               <correction>
+                 <p>Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, 
+                 Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+               </correction>
+           </editorialDecl>
+           <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p><!-- sample top level refsDecl for lines -->
+           <refsDecl n="CTS">
+               <cRefPattern matchPattern="(\w+)" n="sections" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+           </refsDecl>
+           <p>This pointer pattern extracts sections</p>
+        </encodingDesc>
+        <profileDesc>
+           <langUsage>
+               <language ident="grc">Greek</language>
+               <language ident="lat">Latin</language>
+           </langUsage>
+        </profileDesc>
+        <revisionDesc><!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
+           <change when="2020-02-02" who="Jane Smith">initial markup of new file.</change>
+           <change when="2020-10-23" who="Charlotte Houghton">CTS and EpiDoc work.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+       <body>
+          <div type="edition" n="urn:cts:greekLit:tlg.1286.tlg017" xml:lang="grc">
+              <div type="textpart" subtype="section" n="1">
+                  <p rend="indent">
+                  <pb facs="ScottHermeticaVolOne_0275"/>
+                  εἰ δὲ νοεῖς, ἔστιν, ὦ βασιλεῦ, καὶ σωμάτων ⟨εἴδωλα⟩ ἀσώματα. 
+                  —Ποῖα; ἔφη ὁ βασιλεύς.—Τὰ ἐν τοῖς ἐσόπτροις φαινόμενα 
+                  [σώματα] οὐ δοκεῖ σοι ἀσώματα εἶναι;—Οὕτως ἔχει, ὦ Τάτ, 
+                  [θείως νοεῖς,] ὁ βασιλεὺς εἶπεν.—Ἔστι δὲ καὶ ἀσώματα 
+                  ἄλλα· οἷον αἱ ἰδέαι οὐ δοκ῀Υϲί σοι ἀσώματοι εἶναι, ὅ[υ]σαι ἐν 
+                  σώμαϲι φαίνοΝΤαι οὐ μόνον τῶν ἐμψύχων, ἀλλὰ καὶ τῶν 
+                  ἀψύχων;—Εὖ λέγεις, ὦ Τάτ.—⟨. . .,⟩ οὕτως ἀντανακλάσεις 
+                  εἰσὶ τῶν ἀσωμάτων πρὸς τὰ σώματα, [καὶ τῶν σωμάτων πρὸς 
+                  τὰ ἀσώματα, τουτέστι τοῦ αἰσθητοῦ πρὸς τὸν νοητὸν κόσμον,] 
+                  καὶ τοῦ νοητοῦ ⟨κόσμου⟩ πρὸς τὸν αἰσθητόν. διὸ προσκύνει 
+                  τὰ ἀγάλματα, ὦ βασιλεῦ, ὡς καὶ αὐτὰ ἰδέας ἔχοντα ἀπὸ τοῦ
+                  [αἰσθητοῦ] ⟨νοητοῦ⟩ κόσμου.</p>
+                  <pb facs="ScottHermeticaVolOne_0277"/>
+                  <p rend="indent">
+                  ὁ οὖν βασιλεὺς ἐξαναστὰς ἔφη· Ὥρα ἐστίν, ὦ προφῆτα,
+                  περὶ τὴν τῶν ξένων ἐπιμέλειαν γενέσθαι· τῇ δὲ ἐπιούσῃ περὶ 
+                  τῶν ἑξῆς θεολογήσομεν.
+                  </p>
+              </div>
+          </div>
+       </body>
+    </text>
+</TEI>

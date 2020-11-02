@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                 <title xml:lang="grc">Ἑρμοῦ τοῦ τρισμεγίστου λόγος ἱερός. ⟨ὅτι⟩ πρῶτοϲ ἁπάντων ὁ θεός, καὶ θεῖον ⟨τὸ πᾶν⟩, καὶ ⟨ἡ⟩ φύσις θεία</title>
+                 <author>Hermes Trismegistus</author>
+                <editor>Walter Scott</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                         <persName role="principal">Gregory Crane</persName>
+                         <persName role="principal">Leonard Muellner</persName>
+                         <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <resp>proofreader</resp>
+                    <persName><forename>Hanhardt</forename><surname>Lia</surname><!--idno type=""></idno--></persName>
+                </respStmt>
+                <respStmt>
+                    <resp>CTS conversion</resp>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <persName>Charlotte Houghton</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1286.tlg003.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">
+                        Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2020-08-19"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr><!--Removed author, since there is more than one--><!--Short version of title; no period; lang attribute-->
+                        <title xml:lang="lat">Hermetica Vol One</title>
+                        <editor>Walter Scott</editor>
+                        <imprint>
+                            <pubPlace>Oxford</pubPlace>
+                            <publisher>Oxford University Press</publisher>
+                            <date>1924</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/ScottHermeticaVolOne/page/n147/mode/2up">The Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. 
+                        Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.
+                    </p>
+                </correction>
+            </editorialDecl>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p><!-- sample top level refsDecl for lines -->
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+)" n="sections" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+            </refsDecl>
+            <p>This pointer pattern extracts sections</p>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc><!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
+            <change when="2020-02-02" who="Jane Smith">initial markup of new file.</change>
+            <change when="2020-10-15" who="Charlotte Houghton">CTS conversion.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="edition" n="urn:cts:greekLit:tlg1286.tlg003.1st1K-grc1" xml:lang="grc">
+                <div type="textpart" subtype="section" n="1a">
+                    <p rend="indent">
+                        <pb facs="ScottHermeticaVolOne_0147"/>
+                        Ἀρχὴ τῶν ὄντων ὁ θεός, καὶ νοῦ[ς] καὶ φύσεωϲ καὶ ὕλη⟨ς⟩, <l n="25"/> 
+                        σοφία⟨ς⟩ εἰς δεῖξιν ⟨ποιήσας πάντ⟩α, πάντων ὢν ἀρχή· 
+                        ⟨⟨καὶ⟩⟩ το⟨ῦ⟩ θε[ι]ο῀Υ [[καὶ]] ⟨⟨ἐνέργεια⟩⟩ ἡ φύσις [καὶ] [[ἐνέργεια]], κατ᾽ 
+                        ἀνάγκη⟨ν⟩ καὶ τέλος καὶ ἀνανέωσιΝ ⟨ἐνεργοῦσα⟩. 
+                        <pb facs="ScottHermeticaVolOne_0146"/>
+                    </p>
+                </div>
+                <div type="textpart" subtype="section" n="1b">
+                    <p rend="indent">
+                       ἦν γὰρ σκότος [[ἄπειρον ἐν ἀβύσσῳ, καὶ ὕδωρ ⟨⟨ἄπειρον⟩⟩, 
+                       καὶ πνεῦμα λεπτὸν νοερόν, δυνάμει θείᾳ ⟨ . . . .⟩ον τὰ ἐν χάει. 
+                       ⟨⟨ἀδιορίστων δὲ ὄντων ἁπάντων καὶ ἀκατασκευάστων,⟩⟩ ἀνείθη 
+                       δὴ φῶς ἅγιον· [[καὶ ἐπάγη ὑπ᾽ ἄμμῳ ἐξ ὑγρᾶς οὐσίας]] 
+                       ⟨καὶ ἐγένετο τὰ⟩ στοιχεῖα [καὶ θεοὶ πάντες]. [[καταδιαιροῦσι φύσεως <l n="5"/> ἐνσπόρου]] 
+                    </p>
+                </div>
+                <div type="textpart" subtype="section" n="2a">
+                    <p rend="merge">
+                        [[ἀδιορίστων δὲ ὄντων ἁπάντων καὶ ἀκατασκευάστων] 
+                        ⟨⟨τῶν ⟨γὰρ⟩ ὅλων διορισθέντων⟩⟩ ἀπεχωρίσθη τὰ ἐλαφρὰ 
+                        εἰς ὕψος, ⟨⟨ἀνακρεμασθέντοϲ ⟨τοῦ πυρὸς τῷ⟩ πνεύματι 
+                        ὀχεῖσθαι·⟩⟩ καὶ τὰ βαρέα ⟨κατηνέχθη, καὶ⟩ ἐθεμελιώθη ὑφ᾽ 
+                        ὑγρᾷ ⟨οὐσίᾳ⟩ ἄμμοϲ, ⟨⟨καὶ ἐπάγη ⟨ἡ ξηρὰ⟩ [ὑπ᾽ ἄμμῳ] ἐξ <l n="10"/> 
+                        ὑγρᾶς οὐσίας.⟩⟩ [πυρὶ] [[τῶν ὅλων διορισθέντων]] [καὶ] [[ἀνακρεμασθέντων πνεύματι ὀχεῖσθαι]]. 
+                    </p>
+                </div>
+                <div type="textpart" subtype="section" n="2b">
+                    <p rend="indent">
+                        ⟨⟨καὶ διηρθρώθη ⟨ἡ πυρίνη οὐσία⟩ σὺν τοῖς ἐν αὐτῇ θεοῖς·⟩⟩ 
+                        καὶ ὤφθη ὁ οὐρανὸς ἐν κύκλοις ἑπτά, καὶ θεοὶ [ταῖς] ἐν ἄστρων 
+                        ἰδέαις ὀπτανόμενοι σὺν τοῖς αὐτῶν σημείοις ἅπασι· [[καὶ <l n="15"/> 
+                        διηρθρώθη σὺν τοῖς ἐν αὐτῇ θεοῖς]] καὶ περιε⟨ι⟩λίχθη τὸ 
+                        [περικύκλιον] α⟨ἰθ⟩έρι⟨ον⟩ κυκλίῳ δρομήματι, πνεύματι θείῳ ὀχούμενον. 
+                    </p>
+                </div>
+                <div type="textpart" subtype="section" n="3a">
+                    <p rend="indent">
+                        ἀνῆκε δὲ ἕκαστος θεὸς διὰ τῆς ἰδίας δυνάμεως τὸ προσταχθὲν 
+                        αὐτῷ· καὶ ἐγένετο θηρία τετράποδα καὶ ἑρπετὰ καὶ ἔνυδρα <l n="20"/> 
+                        καὶ πτηνά, [καὶ πᾶσα σπορὰ ἔνσπορος] καὶ χόρτος καὶ ἄνθους 
+                        παντὸς χλόη, ⟨⟨κατὰ διαίρεσι⟨ν⟩ φύσεωΝ ἔνσπορα,⟩⟩ 
+                        τὸ σπέρμα τῆς παλιγγενεσίας ἐν ἑαυτοῖς [ε]σπερμοΓοΝοῦντα[ς]. 
+                    </p>
+                </div>
+                <div type="textpart" subtype="section" n="3b">
+                    <p rend="indent">
+                        ⟨ . . .⟩ τε γεινέσεις τῶν ἀνθρώπων, [εἰς ἔργων θείων γνῶσιν, 
+                        καὶ φύσεως ἐνεργούσΗc μαρτυρίαν, [καὶ πλῆθος ἀνθρώπων] <l n="25"/> 
+                        καὶ πάντων τῶν ὑπ᾽ οὐρανὸν δεσποτείαν, καὶ ἀγαθῶν ἐπίγνωσιν] 
+                        εἰς τὸ αὐξάνεσθαι ἐν αὐξήσει καὶ πληθύνεσθαι ἐν πλήθει. 
+                        καὶ πᾶσαν ἐνσαρκ⟨ο⟩ῖ ψυχὴν διὰ δρομήματος θεῶν ἐγκυκλίων, 
+                        παρασκεγάϲας εἰς κατοπτ⟨ε⟩ίαν οὐρανοῦ [καὶ δρομήματος 
+                        οὐρανίων θεῶν] ⟨⟨καὶ πάντων τῶν ὑπ᾽ οὐρανὸν δεσποτείαν⟩⟩, 
+                        <l n="30"/> καὶ ⟨⟨εἰς γνῶσιν θείας δυνάμεως⟩⟩ [ἔργων θείων] καὶ φύσεως 
+                        <pb facs="ScottHermeticaVolOne_0151"/>
+                        ἐνεργείας ⟨⟨μαρτυρίαν⟩⟩, εἴς τε σημείω⟨σιν⟩ ἀγαθῶν [[εἰς 
+                        γνῶσιν θείας δυνάμεως]], μοίρας ⎡ὀχλουμένης⎤ 
+                        γνῶναι ἀγαθῶν καὶ φαύλων, καὶ πᾶσαν [ἀγαθῶν] δαιδαλουργίαν εὑρεῖν. 
+                    </p>
+                </div>
+                <div type="textpart" subtype="section" n="4">
+                    <p rend="indent">
+                        ⟨ὑπ⟩άρχε⟨ι⟩ τε αὐτοῖϲ βιῶσαί τε καὶ ἀφ⟨αν⟩ισθῆναι πρὸς 
+                        μοῖραν δρομήματος ⟨ἐγ⟩κυκλίων θεῶν, καὶ ἀναλυθῆναι εἰς ⎡ο⎤ 
+                        <l n="5"/> ⟨. . . . καὶ οἱ μὲν ὀνομαστοὶ⟩ ἔσονται, μεγάλα ἀπομνημονεύματα 
+                        τεχνουργημάτων ἐπὶ τῆς γῆς καταλιπόντες· 
+                        ⟨τῶν δὲ πολλ⟩ῶν ⟨τὰ⟩ ὀνόματα ⟨ὁ⟩ χρόνοϲ ἀμαυρώσει. καὶ πᾶσαν 
+                        γένεσιν ἐμψύχου σαρκὸς καὶ καρποῦ σπορᾶς [καὶ πάσας 
+                        τεχνουργίας] ⟨διαδέξεται φθορά⟩· τὰ ⟨δὲ⟩ ἐλαττούμενα ἀνανεωθήσεται <l n="10"/> 
+                        [ἀνάγκῃ] [καὶ ἀνανεώσει] θεῶν [καὶ φύσεως] 
+                        ⟨ἐγ⟩κυκλίωΝ ἐναριθμίῳ δρομήματι. το⟨ῦ⟩ γὰρ θε[ι]ο῀Υ ⟨ἐκκρέμαται⟩ 
+                        ἡ πᾶσα κοσμικὴ σύγκρασις, φύσει ἀνανεουμένη· 
+                        ἐν γὰρ τῷ θε[ι]ῷ καὶ ἡ φύσις καθέστηκεν. 
+                    </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

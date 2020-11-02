@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+     <teiHeader xml:lang="eng">
+          <fileDesc>
+             <titleStmt>
+                  <title xml:lang="grc">Ἑρμοῦ τοῦ τρισμεγίστου. περὶ νοήσεως καὶ αἰσθήσεως 
+                    [καὶ ὅτι ἐν μόνῳ τῷ θεῷ τὸ καλὸν καὶ τὸ ἀγαθόν ἐστιν, ἀλλαχόθι δὲ οὐδαμοῦ].</title>
+                  <author>Hermes Trimegistus</author>
+                  <funder>Center for Hellenic Studies</funder>
+                  <respStmt>
+                     <resp>Published original versions of the electronic texts</resp>
+                     <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                        <persName role="principal">Gregory Crane</persName>
+                        <persName role="principal">Leonard Muellner</persName>
+                        <persName role="principal">Bruce Robertson</persName>
+                  </respStmt>
+                  <respStmt>
+                     <resp>proofreader</resp>
+                          <persName>
+                            <forename>Hanhardt</forename><surname>Lia</surname><!--idno type=""></idno-->
+                          </persName>
+                  </respStmt>
+                  <respStmt>
+                      <resp>CTS conversion</resp>
+                      <orgName>Center for Hellenic Studies</orgName>
+                      <persName>Charlotte Houghton</persName>
+                  </respStmt>
+             </titleStmt>
+             <publicationStmt>
+               <publisher>Open Greek and Latin</publisher>
+               <idno type="filename">tlg1286.tlg009.1st1K-grc1.xml</idno>
+               <pubPlace/>
+               <availability>
+                   <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 
+                                       International License</licence>
+               </availability>
+               <date when="2020-08-19"/>
+             </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr><!--Removed author, since there is more than one--><!--Short version of title; no period; lang attribute-->
+                        <title xml:lang="lat">Hermetica Vol One</title>
+                        <editor>Walter Scott</editor>
+                        <imprint>
+                            <pubPlace>Oxford</pubPlace>
+                            <publisher>Oxford University Press</publisher>
+                            <date>1924</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/ScottHermeticaVolOne/page/n181/mode/2up">The Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+          </fileDesc>
+          <encodingDesc>
+              <editorialDecl>
+                 <correction><p>Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. 
+                  Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                 </correction>
+              </editorialDecl>
+              <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p><!-- sample top level refsDecl for lines -->
+              <refsDecl n="CTS">
+                  <cRefPattern matchPattern="(\w+)" n="sections" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+              </refsDecl>
+              <p>This pointer pattern extracts sections</p>
+          </encodingDesc>
+          <profileDesc>
+             <langUsage>
+                 <language ident="grc">Greek</language>
+                 <language ident="lat">Latin</language>
+             </langUsage>
+          </profileDesc>
+          <revisionDesc><!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
+              <change when="2020-02-02" who="Jane Smith">initial markup of new file.</change>
+              <change when="2020-10-16" who="Charlotte Houghton">CTS conversion.</change>
+          </revisionDesc>
+     </teiHeader>
+     <text>
+        <body>
+           <div type="edition" n="urn:cts:greekLit:tlg1286.tlg009" xml:lang="grc">
+               <div type="textpart" subtype="section" n="1a">
+                    <p rend="indent">
+                    <pb facs="ScottHermeticaVolOne_0181"/>
+                    Χθές, ὦ Ἀσκληπιέ, τὸν τέλειον ἀπ[οδ]έδωκα λόγον· νῦν δὲ <l n="10"/> 
+                    ἀναγκαῖον ἡγοῦμαι ἀκόλουθον ἐκείνῳ καὶ τὸν περὶ αἰσθήσεως 
+                    λόγον διεξελθεῖν. 
+                    </p>
+               </div>
+               <div type="textpart" subtype="section" n="1b">
+                    <p rend="indent">
+                    αἴσθησις γὰρ καὶ Νόησις διαφορὰν μὲν δοκοῦσιν ἔχειν, 
+                    ὅτι ἡ μὲν ὑλική ἐστιν, ἡ δὲ οὐσιώδης· ἐμοὶ δὲ δοκοῦσιν 
+                    ἀμφότεραι ἡνῶσθαι καὶ μὴ διαιρεῖσθαι, ἐν ἀνθρώποις λέγω· <l n="15"/> 
+                    ἐν γὰρ τοῖς ἄλλοις ζῴοις ἡ αἴσθησις τῇ φύσει ἥνωται, ἐν δὲ 
+                    ἀνθρώποις ⟨τ⟩ῇ νοήσει. 
+                    </p>
+               </div>
+               <div type="textpart" subtype="section" n="1c">
+                   <p rend="indent">
+                   νοήσεως δὲ ὁ νοῦς διαφέρει τοσοῦτον ὅσον ὁ θεὸς θειότητος. 
+                   ἡ μὲν γὰρ θειότης ὑπὸ τοῦ θεοῦ γίνεται, ἡ δὲ νόησις ὑπὸ τοῦ 
+                   νοῦ, ἀδελφὴ οὖσα τοῦ λόγου. καὶ ὄργανα ⟨ταῦτα⟩ ἀλλήλων· <l n="20"/> 
+                   οὔτε γὰρ ὁ λόγος [[ἐκφωνεῖται]] ⟨ . . . ⟩ χωρὶς νοήσεως, οὔτε 
+                   ἡ νόησις [φαίνεται] ⟨⟨ἐκφωνεῖται⟩⟩ χωρὶς λόγου. 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="2">
+                   <p rend="indent">
+                   ἡ οὖν αἴσθησις καὶ ἡ νόησις ἀμφότεραι εἰς τὸν ἄνθρωπον 
+                   συνεπεισρέουσιν ἀλλήλαις, ὥσπερ συμπεπλεγμέναι· οὔτε γὰρ 
+                   χωρὶς αἰσθήσεως δυνατὸν νοῆσαι, οὔτε αἰσθέσθαι χωρὶς <l n="25"/> 
+                   νοήσεως [δυνατὸν δὲ νόησιν]. ⟨ . . . ⟩ χωρὶς αἰσθήσεως 
+                   νοεῖσθαι, καθάπερ οἱ διὰ τῶν ὀνείρων φανταζόμενοι ὁράματα· 
+                   <pb facs="ScottHermeticaVolOne_0183"/>
+                   ἐμοὶ δὲ δοκεῖ ⟨ . . . ⟩ τὸ γεγονέναι ἀμφοτέρας τὰς ἐνεργείας 
+                   ἐν τῇ τῶν ὀνείρων ὄψει· ἐγρηγοροῦσι γὰρ ⟨ . . . ⟩ αἰσθήσει. 
+                   διῄρηται γὰ⟨ρ ἡ αἴσθησις⟩ εἴς τε τὸ σῶμα καὶ εἰς τὴν ψυχήν· 
+                   καὶ ὅταν ἀμφότερα τὰ μέρη τῆς αἰσθήσεως πρὸς ἄλληλα 
+                   συμφωνήσῃ, τότε ⟨συμβαίνει⟩ τὴν νόησιν ἐκφαίνε[ι]σθαι, <l n="5"/> 
+                   ἀποκυηθεῖσαν ὑπὸ τοῦ νοῦ. 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="3">
+                   <p rend="indent">
+                   ὁ γὰρ νοῦς κύει πάντα τὰ νοήματα, ἀγαθὰ μέν, ὅταν ὑπὸ 
+                   τοῦ θεοῦ τὰ σπέρματα λάβῃ, ἐναντία δέ, ὅταν ὑπό τινος τῶν 
+                   δαιμόν[ι]ων, [μηδενὸς μέρους τοῦ κόσμου κενοῦ ὄντος δαίμονος,] 
+                   ⟨⟨ὅστις ὑπεισελθὼν⟩⟩ τῷ ⟨μὴ⟩ ὑπὸ τοῦ θεοῦ πεφωτισμένῳ <l n="10"/> 
+                   [δαίμονι] [[ὅστις ὑπεισελθὼν]] ἔσπειρε τῆς ἰδίας ἐνεργείας τὸ 
+                   σπέρμα, καὶ ἐκύησεν ὁ νοῦς τὸ σπαρέν, μοιχείας, φόνους, 
+                   πατροτυπίας, ἱεροσυλίας, ἀσεβείας [ἀγχόνας, κατὰ κρημνῶν 
+                   καταφοράς, καὶ ἄλλα πάντα ὅσα δαιμόνων ἔργα]. 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="4a">
+                   <p rend="merge">
+                   τοῦ γὰρ θεοῦ τὰ σπέρματα ὀλίγα, μεγάλα μέν⟨τοι⟩ καὶ καλὰ καὶ <l n="15"/> 
+                   ἀγαθά, ἀρετὴ καὶ σωφροσύνη καὶ εὐσέβεια. εὐσέβεια δέ 
+                   ἐστι θεοῦ γνῶσις· ὃν ὁ ἐπιγνούς, πλήρης γενόμενος πάντων 
+                   τῶν ἀγαθῶν, τὰς νοήσεις θείας ἴσχει, καὶ οὐ τοῖς πολλοῖς ὁμοίας. 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="4b">
+                   <p rend="indent">
+                   διὰ τοῦτο οἱ ἐν γνώσει ὄντες οὔτε τοῖς πολλοῖς ἀρέσκουσιν, <l n="20"/> 
+                   οὔτε οἱ πολλοὶ αὐτοῖς· μεμηνέναι δὲ δοκοῦσι, καὶ γέλωτα 
+                   ὀφλισκάνουσι, μισούμενοί τε καὶ καταφρονούμενοι, καὶ τάχα 
+                   που καὶ φονευόμενοι. τὴν γὰρ κακίαν ἐνθάδε δεῖν οἰκεῖν 
+                   εἶποΝ, ἐν τῷ ἑαυτῆς χωρίῳ οὖσαν· χωρίον γὰρ αὐτῆς ἡ γῆ, 
+                   οὐχ ὁ κόσμος, ὡς ἔνιοί ποτε ἐροῦσι βλασφημοῦντες. ὁ μέντοι <l n="25"/> 
+                   θεοσεβὴς πάντα ὑποστήσει ἀ⟨ντ⟩ισχόμενος τῆς γνώσεως. 
+                   πάντα γὰρ τῷ τοιούτῳ, κἂν τοῖς ἄλλοις ⟨ᾖ⟩ [τὰ] κακά, ἀγαθά 
+                   ἐστι· καὶ ἐπιβουλευόμενος πάντα ἀναφέρει εἰς τὴν γνῶσιν, 
+                   καὶ τὰ κακὰ μόνος ἀγαθοποιεῖ. 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="5">
+                   <p rend="indent">
+                   ἐπάνειμι πάλιν ἐπὶ τὸν τῆς αἰσθήσεως λόγον. ἀνθρώπινον <l n="30"/> 
+                   οὖν τὸ κοινωνῆσαι αἴϲΘΗϲιν νοήσει· οὐ πᾶς δὲ ἄνθρωπος, ὡς 
+                   προεῖπον, ἀπολαύει τῆς νοήσεως· [ἀλλ’ ὁ μὲν ὑλικός, ὁ δὲ 
+                   <pb facs="ScottHermeticaVolOne_0185"/>
+                   οὐσιώδης.] ὁ μὲν γὰρ μετὰ κακίας [ὑλικός] ⟨νοεῖ⟩, ὡς ἔφην, 
+                   ἀπὸ τῶν δαιμόνων τὸ σπέρμα τῆς νοήσεως ἴσχωΝ, οἱ δὲ μετὰ 
+                   τοῦ ἀγαθοῦ [οὐσιωδῶς], ὑπὸ τοῦ θεοῦ σωζόμενοι. ὁ μὲν γὰρ 
+                   θεός, πάντων δημιουργὸς [δημιουργ] ὤν, πάντα ποιεῖ [μὲν] 
+                   ἑαυτῷ ὅμοια, ταῦτα δ᾽, ἀγαθὰ γενόμενα, ἐν τῇ χρήσει τῆς <l n="5"/> 
+                   ἐνεργείας ⎡αφορα⎤· ἡ γὰρ κοσμικὴ φορά, τρέπουσα τὰς 
+                   γενέσεις, ποιὰς ποιεῖ, τὰς μὲν ῥυπαίνουσα τῇ κακίᾳ, τὰς δὲ 
+                   καθαίρουσα τῷ ἀγαθῷ. 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="6">
+                   <p rend="indent">
+                   καὶ γὰρ ὁ κόσμος, ὦ Ἀσκληπιέ, αἴσθησιν ἰδίαν καὶ Νόησιν 
+                   ἔχει, οὐχ ὁμοίαν τῇ ἀνθρωπείᾳ, οὐδὲ ⟨οὕτ⟩ως ποικίλην, ἀλλ⟨ὰ⟩ <l n="10"/> 
+                   [ως δὲ] κρείττω καὶ ἁπλουστέραν. ἡ γὰρ αἴσθησις καὶ νόησις 
+                   τοῦ κόσμου μία ἐστί, τὸ πάντα ποιεῖν καὶ εἰς ἑαυτὸν ἀποποιεῖν, 
+                   ὄργανον ⟨ὄντα⟩⟩ τῆς τοῦ θεοῦ βουλήσεως, καὶ [[ὄντως]] ⟨ἐπὶ 
+                   τοῦτο⟩ [ὀργανο] ποιηθέν⟨τα⟩, ἵνα πάντωΝ ⟨τῶν⟩ παρ᾽ ἑαυτῷ 
+                   ἀπὸ τοῦ θεοῦ λαβὼν τὰ σπέρματα ⟨καὶ⟩ φυλάττων ἐν ἑαυτῷ <l n="15"/> 
+                   πάντα ποιῇ ἐνεργῶς. ⟨⟨φερόμενος δὲ πάντα ζωοποιεῖ·⟩⟩ καὶ 
+                   διαλύων πάντα, ἀνανεοῖ [καὶ] ⟨τὰ⟩ δια-[τοῦτο]-λυθέντα, ὥσπερ 
+                   ἀγαθὸς [ζωῆς] γεωργὸς τῇ καταβολῇ ἀνανέωσιν αὐτοῖς [φερόμενος] 
+                   παρέχωΝ. οὐκ ἔστιν ὃ μὴ ζωογονεῖ· [[φερόμενος δὲ 
+                   πάντα ζωοποιεῖ·]] καὶ ὁμοῦ τόπος ἐστὶ καὶ δημιουργὸς ζωῆς. <l n="20"/>
+                   τὰ δὲ σώματα ἀπὸ ὕλης, ἐν διαφορᾷ· 
+                   </p>
+               </div>
+               <div type="textpart" subtype="section" n="7">
+                  <p rend="merge">
+                  [τὰ μὲν γάρ ἐστιν ἐκ 
+                  γῆς, τὰ δὲ ἐξ ὕδατος, τὰ δὲ ἐξ ἀέρος, τὰ δὲ ἐκ πυρός·] πάντα 
+                  δέ ἐστι σύνθετα, καὶ τὰ μὲν μᾶλλον, τὰ δὲ ἁπλούστερα· 
+                  μᾶλλον μὲν τὰ βαρύτερα, ἧττον δὲ τὰ κουφότερα. τὸ δὲ 
+                  τάχος αὐτοῦ τῆς φορᾶς τὴν ποικιλίαν τῶν [ποιῶν] γενέσεων <l n="25"/> 
+                  ἐργάζεται. πνοὴ γάρ, οὖσα πυκνοτάτη, προτείνει τὰ ποιὰ 
+                  τοῖς σώμασι μετὰ ἑνὸς πληρώματος τῆς ζωῆς. 
+                  </p>
+               </div>
+               <div type="textpart" subtype="section" n="8">
+                  <p rend="merge">
+                  [πατὴρ μὲν 
+                  οὖν ὁ θεὸς τοῦ κόσμου, ὁ δὲ κόσμος τῶν ἐν τῷ κόσμῳ· καὶ 
+                  ὁ μὲν κόσμος υἱὸς τοῦ θεοῦ, τὰ δὲ ἐν τῷ κόσμῳ ⟨υἱοὶ⟩ [ὑπὸ] 
+                  τοῦ κόσμου.] καὶ εἰκότως κόσμος κέκληται· κοσμεῖ⟨ται⟩ γὰρ <l n="30"/> 
+                  <pb facs="ScottHermeticaVolOne_0187"/>
+                  τὰ πάντα τῇ ποικιλίᾳ τῆς γενέσεως, καὶ τῷ ἀδιαλείπτῳ τῆς 
+                  ζωῆς, καὶ ⟨τῷ⟩ ἀκοπιάστῳ τῆς ἐνεργείας, καὶ τῷ τάχει ⟨τῆς 
+                  φορᾶς, καὶ τῷ ἀτρέπτῳ⟩ τῆς ἀνάγκης, καὶ τῇ συστάσει τῶν 
+                  στοιχείων, καὶ τῇ τάξει τῶν γινομένων. ὁ αὐτὸς οὖν κόσμος 
+                  καὶ ⎡ἀναγκαίως⎤ καὶ οἰκείως καλοῖτο. 
+                  </p>
+               </div>
+               <div type="textpart" subtype="section" n="9">
+                  <p rend="indent">
+                  πάντων οὖν τῶν ζῴων ἡ αἴσθησις καὶ νόησις ἔξωθεν 
+                  ἐπεισέρχεται, εἰσπνέουσα ἀπὸ τοῦ περιέχοντος· ὁ δὲ κόσμος, 
+                  ἅπαξ λαβὼν ἅμα τῷ γενέσθαι, ἀπὸ τοῦ θεοῦ λαβὼν ἔχει. 
+                  ὁ δὲ θεὸς οὐχ ὥσπερ ἐνίοις δόξει ἀναίσθητός ἐστι καὶ ἀνόητος· 
+                  ὑπὸ γὰρ δεισιδαιμονίας βλασφημοῦσι. ⟨⟨καὶ τοῦτο ἔστιν ἡ <l n="10"/> 
+                  αἰσθησις καὶ νόησις τοῦ θεοῦ, τὸ τὰ πάντα ἀεὶ κινεῖν.⟩⟩ 
+                  πάντα γὰρ ὅσα ἔστιν, ὦ Ἀσκληπιέ, ταῦτα ἐν τῷ θεῷ ἐστι, 
+                  καὶ ὑπὸ τοῦ θεοῦ γινόμενα, καὶ ἐκεῖθεν ἠρτημένα, τὰ μὲν διὰ 
+                  σωμάτων ἐνεργοῦντα, τὰ δὲ διὰ οὐσίας ψυχικῆς κινοῦντα, τὰ 
+                  δὲ διὰ πνεύματος ζωοποιοῦντα, τὰ δὲ τὰ κεκμηκότα ὑποδεχόμενα. <l n="15"/> 
+                  [καὶ εἰκότως.] [[μᾶλλον δὲ λέγω ὅτι οὐκ αὐτὸς αὐτὰ 
+                  ἔχεῖ, ἀλλὰ τὸ ἀληθὲς ἀποφαίνομαι, αὐτὸς ἅπαντά ἐστιν]] 
+                  [οὐκ ἔξωθεν αὐτὰ προσλαμβάνων, ἔξω δὲ ἐπιδιδούς.] [[καὶ 
+                  τοῦτό ἐστιν ἡ αἴσθησις καὶ νόησις τοῦ θεοῦ, τὸ τὰ πάντα ἀεὶ 
+                  κινεῖν.]] καὶ οὐκ ἔσται ποτὲ χρόνος ὅτε ἀπολειφθήσεταί τι <l n="20"/> 
+                  τῶν ὄντων· [ὅταν δὲ λέγω τῶν ὄντων, λέγω τοῦ θεοῦ·] τὰ γὰρ 
+                  ὄντα ὁ θεὸς ἔχει, καὶ οὔτε αὐτοῦ οὐδὲν ἐκτὸς οὔτε αὐτὸς 
+                  οὐδενός. ⟨⟨μᾶλλον δὲ λέγω ὅτι οὐκ αὐτὸς αὐτὰ ἔχει, ἀλλὰ 
+                  τὸ ἀληθὲς ἀποφαίνομαι, αὐτὸς ἅπαντά ἐστιν.⟩⟩ 
+                  </p>
+               </div>
+               <div type="textpart" subtype="section" n="10">
+                   <p rend="indent">
+                   ταῦτά σοι, Ἀσκληπιέ, ἐννοοῦντι ⟨μὲν⟩ ἀληθῆ δόξειεν ἄΝ, <l n="25"/> 
+                   ⟨μὴ ἐν⟩νοοῦντι δὲ ἄπιστα· τῷ γὰρ νοῆσαι ἕπεται τὸ πιστεῦσαι, 
+                   τὸ ἀπιστῆσαι δὲ τῷ μὴ νοῆσαι. ὁ γὰρ λόγος [μ] οὐ φθάνει 
+                   μέχρι τῆς ἀληθείας· ὁ δὲ νοῦς μέγας ἐστί, καὶ ὑπὸ τοῦ 
+                   λόγου μέχρι τινὸς ὁδηγηθείς, φθάνει Μέχρι τῆς ἀληθείας· καὶ 
+                   <pb facs="ScottHermeticaVolOne_0189"/>
+                   περινοήσας τὰ πάντα, καὶ εὑρὼν σύμφωνα τοῖς ὑπὸ τοῦ 
+                   λόγου ἑρμηνευθεῖσιν, ἐπίστευσε, καὶ τῇ καλῇ πίστει ἐπανεπαύσατο. 
+                   τοιΓ⟨αρ⟩οῦν [[τὰ προειρημένα]] [ὑπὸ τοῦ θεοῦ] νοήσασι 
+                   μὲν πιστὰ ⟨⟨τὰ προειρημένα⟩⟩, μὴ νοήσασι δὲ ἄπιστα. </p>
+                   <p>ταῦτα καὶ τοσαῦτα περὶ νοήσεως καὶ αἰσθήσεως λεγέσθω. <l n="5"/> </p>
+               </div>
+           </div>
+        </body>
+     </text>
+</TEI>
