@@ -4,8 +4,8 @@
     <teiHeader xml:lang="eng">
         <fileDesc>
             <titleStmt>
-                <title xml:lang="grc">* * * *</title>
-                     <author>Hermes Trismegistus</author>
+                <title xml:lang="lat">Dialogus (sine titulo)</title>
+                     <author>Anonymous</author>
                 <funder>Center for Hellenic Studies</funder>
                 <respStmt>
                   <resp>Published original versions of the electronic texts</resp>
@@ -15,8 +15,8 @@
                       <persName role="principal">Bruce Robertson</persName>
                 </respStmt>
                 <respStmt>
-                     <resp>proofreader</resp>
-                     <persName><forename>Hanhardt</forename><surname>Lia</surname><!--tei:idno type=""></idno--></persName>
+                     <resp>Proofreading</resp>
+                     <persName><forename>Hanhardt</forename><surname>Lia</surname></persName>
                 </respStmt>
                 <respStmt>
                    <resp>CTS conversion</resp>
@@ -36,14 +36,15 @@
             </publicationStmt>
             <sourceDesc>
                 <biblStruct>
-                    <monogr><!--Removed author, since there is more than one--><!--Short version of title; no period; lang attribute-->
-                        <title xml:lang="lat">Hermetica Vol One</title>
+                    <monogr>
+                        <title xml:lang="mul">Hermetica. The Ancient Greek and Latin Writings which Contain Religious or Philosophic Teachings Ascribed to Hermes Trismegistus.</title>
                         <editor>Walter Scott</editor>
                         <imprint>
                             <pubPlace>Oxford</pubPlace>
                             <publisher>Oxford University Press</publisher>
                             <date>1924</date>
                         </imprint>
+                        <biblScope unit="volume">1</biblScope>
                     </monogr>
                     <ref target="https://archive.org/details/ScottHermeticaVolOne/page/n275/mode/2up">The Internet Archive</ref>
                 </biblStruct>
@@ -57,10 +58,13 @@
                </correction>
            </editorialDecl>
            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p><!-- sample top level refsDecl for lines -->
-           <refsDecl n="CTS">
-               <cRefPattern matchPattern="(\w+)" n="sections" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-           </refsDecl>
-           <p>This pointer pattern extracts sections</p>
+          
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts sections.</p>
+                </cRefPattern>
+            </refsDecl>
+            
         </encodingDesc>
         <profileDesc>
            <langUsage>
@@ -68,36 +72,17 @@
                <language ident="lat">Latin</language>
            </langUsage>
         </profileDesc>
-        <revisionDesc><!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
-           <change when="2020-02-02" who="Jane Smith">initial markup of new file.</change>
+        <revisionDesc>
+            <change when="2020-11-06" who="Lisa Cerrato">Minor revisions to markup and formatting</change>
            <change when="2020-10-23" who="Charlotte Houghton">CTS and EpiDoc work.</change>
         </revisionDesc>
     </teiHeader>
+    
     <text>
        <body>
-           <div type="edition" n="urn:cts:greekLit:tlg.1286.tlg017.1st1K-grc1" xml:lang="grc">
-              <div type="textpart" subtype="section" n="1">
-                  <p rend="indent">
-                  <pb facs="ScottHermeticaVolOne_0275"/>
-                  εἰ δὲ νοεῖς, ἔστιν, ὦ βασιλεῦ, καὶ σωμάτων ⟨εἴδωλα⟩ ἀσώματα. 
-                  —Ποῖα; ἔφη ὁ βασιλεύς.—Τὰ ἐν τοῖς ἐσόπτροις φαινόμενα 
-                  [σώματα] οὐ δοκεῖ σοι ἀσώματα εἶναι;—Οὕτως ἔχει, ὦ Τάτ, 
-                  [θείως νοεῖς,] ὁ βασιλεὺς εἶπεν.—Ἔστι δὲ καὶ ἀσώματα 
-                  ἄλλα· οἷον αἱ ἰδέαι οὐ δοκ῀Υϲί σοι ἀσώματοι εἶναι, ὅ[υ]σαι ἐν 
-                  σώμαϲι φαίνοΝΤαι οὐ μόνον τῶν ἐμψύχων, ἀλλὰ καὶ τῶν 
-                  ἀψύχων;—Εὖ λέγεις, ὦ Τάτ.—⟨. . .,⟩ οὕτως ἀντανακλάσεις 
-                  εἰσὶ τῶν ἀσωμάτων πρὸς τὰ σώματα, [καὶ τῶν σωμάτων πρὸς 
-                  τὰ ἀσώματα, τουτέστι τοῦ αἰσθητοῦ πρὸς τὸν νοητὸν κόσμον,] 
-                  καὶ τοῦ νοητοῦ ⟨κόσμου⟩ πρὸς τὸν αἰσθητόν. διὸ προσκύνει 
-                  τὰ ἀγάλματα, ὦ βασιλεῦ, ὡς καὶ αὐτὰ ἰδέας ἔχοντα ἀπὸ τοῦ
-                  [αἰσθητοῦ] ⟨νοητοῦ⟩ κόσμου.</p>
-                  <pb facs="ScottHermeticaVolOne_0277"/>
-                  <p rend="indent">
-                  ὁ οὖν βασιλεὺς ἐξαναστὰς ἔφη· Ὥρα ἐστίν, ὦ προφῆτα,
-                  περὶ τὴν τῶν ξένων ἐπιμέλειαν γενέσθαι· τῇ δὲ ἐπιούσῃ περὶ 
-                  τῶν ἑξῆς θεολογήσομεν.
-                  </p>
-              </div>
+           <div type="edition" n="urn:cts:greekLit:tlg1286.tlg017.1st1K-grc1" xml:lang="grc">
+              <div type="textpart" subtype="section" n="1"><p rend="indent"><pb facs="ScottHermeticaVolOne_0275"/> εἰ δὲ νοεῖς, ἔστιν, ὦ βασιλεῦ, καὶ σωμάτων ⟨εἴδωλα⟩ ἀσώματα. —Ποῖα; ἔφη ὁ βασιλεύς.—Τὰ ἐν τοῖς ἐσόπτροις φαινόμενα [σώματα] οὐ δοκεῖ σοι ἀσώματα εἶναι;—Οὕτως ἔχει, ὦ Τάτ, [θείως νοεῖς,] ὁ βασιλεὺς εἶπεν.—Ἔστι δὲ καὶ ἀσώματα ἄλλα· οἷον αἱ ἰδέαι οὐ δοκ῀Υϲί σοι ἀσώματοι εἶναι, ὅ[υ]σαι ἐν σώμαϲι φαίνοΝΤαι οὐ μόνον τῶν ἐμψύχων, ἀλλὰ καὶ τῶν ἀψύχων;—Εὖ λέγεις, ὦ Τάτ.—⟨. . .,⟩ οὕτως ἀντανακλάσεις εἰσὶ τῶν ἀσωμάτων πρὸς τὰ σώματα, [καὶ τῶν σωμάτων πρὸς τὰ ἀσώματα, τουτέστι τοῦ αἰσθητοῦ πρὸς τὸν νοητὸν κόσμον,] καὶ τοῦ νοητοῦ ⟨κόσμου⟩ πρὸς τὸν αἰσθητόν. διὸ προσκύνει τὰ ἀγάλματα, ὦ βασιλεῦ, ὡς καὶ αὐτὰ ἰδέας ἔχοντα ἀπὸ τοῦ [αἰσθητοῦ] ⟨νοητοῦ⟩ κόσμου.</p> <pb facs="ScottHermeticaVolOne_0277"/> 
+                  <p rend="indent">ὁ οὖν βασιλεὺς ἐξαναστὰς ἔφη· Ὥρα ἐστίν, ὦ προφῆτα, περὶ τὴν τῶν ξένων ἐπιμέλειαν γενέσθαι· τῇ δὲ ἐπιούσῃ περὶ τῶν ἑξῆς θεολογήσομεν. </p> </div>
           </div>
        </body>
     </text>

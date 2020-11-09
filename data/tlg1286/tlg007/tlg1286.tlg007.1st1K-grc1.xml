@@ -5,7 +5,7 @@
          <fileDesc>
              <titleStmt>
                    <title xml:lang="grc">[Ἑρμοῦ τοῦ τρισμεγίστου.] ὅτι μέγιστον κακὸν ἐν τοῖς ἀνθρώποις ἡ περὶ τοῦ θεοῦ ἀγνωσία</title>
-                   <author>Hermes Trismegistus</author>
+                   <author>Anonymous</author>
                    <funder>Center for Hellenic Studies</funder>
                   <respStmt>
                       <resp>Published original versions of the electronic texts</resp>
@@ -16,7 +16,7 @@
                       <respStmt><resp>proofreader</resp>
                            <persName>
                                <forename>Hanhardt</forename>
-                               <surname>Lia</surname><!--idno type=""></idno-->
+                               <surname>Lia</surname>
                            </persName>
                       </respStmt>
                       <respStmt>
@@ -37,14 +37,15 @@
              </publicationStmt>
              <sourceDesc>
                  <biblStruct>
-                     <monogr><!--Removed author, since there is more than one--><!--Short version of title; no period; lang attribute-->
-                           <title xml:lang="lat">Hermetica Vol One</title>
+                     <monogr>
+                           <title xml:lang="mul">Hermetica. The Ancient Greek and Latin Writings which Contain Religious or Philosophic Teachings Ascribed to Hermes Trismegistus.</title>
                            <editor/>
                            <imprint>
                                <pubPlace>Oxford</pubPlace>
                                 <publisher>Oxford University Press</publisher>
                                 <date>1924</date>
                            </imprint>
+                         <biblScope unit="volume">1</biblScope>
                      </monogr>
                      <ref target="https://archive.org/details/ScottHermeticaVolOne/page/n173/mode/2up">The Internet Archive</ref>
                  </biblStruct>
@@ -52,82 +53,37 @@
          </fileDesc>
          <encodingDesc>
              <editorialDecl>
-               <correction><p>Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. 
-                  Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+               <correction><p>Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
                </correction>
              </editorialDecl>
-            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p><!-- sample top level refsDecl for lines -->
-            <refsDecl n="CTS">
-                <cRefPattern matchPattern="(\w+)" n="lines" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-            </refsDecl>
-              <p>This pointer pattern extracts sections.</p>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+             <refsDecl n="CTS">
+                 <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                     <p>This pointer pattern extracts sections.</p>
+                 </cRefPattern>
+             </refsDecl>
          </encodingDesc>
+        
          <profileDesc>
             <langUsage>
                 <language ident="grc">Greek</language>
                 <language ident="lat">Latin</language>
             </langUsage>
          </profileDesc>
-         <revisionDesc><!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
-               <change when="2020-02-02" who="Jane Smith">initial markup of new file.</change>
+         <revisionDesc>
+             <change when="2020-11-06" who="Lisa Cerrato">Minor revisions to markup and formatting</change>
                <change when="2020-10-15" who="Charlotte Houghton">CTS conversion.</change>
          </revisionDesc>
     </teiHeader>
+    
     <text>
       <body>
-          <div type="edition" n="urn:cts:greekLit:tlg1286.tlg007.1st1K-grc1" xml:lang="grc"> <div type="textpart" subtype="section" n="1a">
-               <p rend="indent">
-               <pb facs="ScottHermeticaVolOne_0173"/>
-               Ποῖ φέρεσθε, ὦ ἄνθρωποι, μεθύοντες, τὸν τῆς ἀγνωσίας <l n="20"/> 
-               ἄκρατον [λόγον] ἐκπιόντες; ὃν οὐδὲ φέρειν δύνασθε, ἀλλ᾽ 
-               ἤδη αὐτὸν καὶ ἐμεῖτε. στῆτε νήψαντες, ἀναβλέψαντες τοῖς 
-               τῆς καρδίας ὀφθαλμοῖς, καὶ εἰ μὴ πάντες δύνασθε, οἵ γε καὶ δυνάμενοι. 
-               </p>
-         </div>
-         <div type="textpart" subtype="section" n="1b">
-              <p rend="indent">
-              ἡ γὰρ τῆς ἀγνωσίας κακία ἐπικλύζει πᾶσαν τὴν γῆν, <l n="25"/> 
-              καὶ συϲϲΎρει τὴν ἐν τῷ σώματι κατακεκλεισμένην ψυχήν, 
-              μὴ ἐῶσα ἐνορμίϲασθαι τοῖς τῆς σωτηρίας λιμέσι. μὴ 
-              <pb facs="ScottHermeticaVolOne_0175"/> 
-              συγκατενεχθῆτε τοιγαροῦν τῷ πολλῷ ῥεύματι· 
-              </p>
-         </div>
-         <div type="textpart" subtype="section" n="2a">
-             <p rend="merge">
-             ἀναρροίᾳ δὲ χρησάμενοι, οἱ δυνάμενοι λαβέσθαι τοῦ [τῆς σωτηρίας] 
-             λιμένος, ἐνορμισάμενοι τούτῳ, ζητήσατε χειραγωγόν, τὸν 
-             ὁδηγήσοντα ὑμᾶς ἐπὶ τὰς τῆς γνώσεως θύρας, ὅπου ἐστὶ τὸ 
-             λαμπρὸν φῶς, τὸ καθαρὸν σκότους· ὅπου οὐδὲ εἷς μεθύει, <l n="5"/> 
-             ἀλλὰ πάντες νήφουσιν, ἀφορῶντες τῇ καρδίᾳ εἰς τὸν ⟨οὕτως⟩ 
-             ὁραθῆναι θέλοντα· οὐ γάρ ἐστιν ἀκουστός, οὐδὲ λεκτός, οὐδὲ 
-             ὁρατὸς ὀφθαλμοῖς, ἀλλὰ νῷ καὶ καρδίᾳ. 
-             </p>
-         </div>
-         <div type="textpart" subtype="section" n="2b">
-              <p rend="indent">
-              πρῶτον δὲ δεῖ σε περιρρήξασθαι ὃν φορεῖς χιτῶνα, ⟨⟨τὸν 
-              σκοτεινὸν περίβολον,⟩⟩ τὸ τῆς ἀγνωσίας ὕφασμα, τὸ τῆς <l n="10"/> 
-              κακίας ⎡στήριγμα⎤, τὸν τῆς φθορᾶς δεσμόν, [[τὸν σκοτεινὸν 
-              περίβολον,]] τὸν ζῶντα θάνατον, τὸν αἰσθητ⟨ικ⟩ὸν νεκρόν, τὸν 
-              περιφόρητον τάφον, τὸν ἔνοικον λῃστήν, ⟨⟨⟨τὸν⟩ ἐχθρὸν⟩⟩ τὸν 
-              [δι᾽] ὧν ⟨ἐ⟩φίεϲαι μισοῦντα καὶ [δι᾽] ὧν ⟨ἐπιθυ⟩μ⟨ε⟩ῖς ⟨σ⟩οι 
-              φθονοῦντα. 
-              </p>
-         </div>
-         <div type="textpart" subtype="section" n="3">
-              <p rend="merge">
-              τοιοῦτός ἐστιν ὃν ἐνεδύσω [[ἐχθρὸν]] χιτών[α], <l n="15"/> 
-              ἄγχων σε κάτω πρὸς αὑτόν, ἵνα μὴ ἀναβλέψας καὶ θεασάμενος 
-              τὸ κάλλος τῆς ἀληθείας, καὶ τὸ ἐ[γ]κεῖ μένον ἀγαθόν, 
-              μισήσῃς τὴν τούτου κακίαν, νοήσας αὐτοῦ τὴν ἐπιβουλὴν ἣν 
-              ἐπεβούλευσέ σοι, τὰ [δοκοῦντα καὶ μὴ] νομιζόμενα αἰσθητήρια 
-              ἀναίσθητα ποιῶν, τῇ πολλῇ ὕλῃ αὐτὰ ἀποφράξας, καὶ <l n="20"/> 
-              μυσαρᾶς ἡδονῆς ἐμπλήσας, ἵνα μήτε ἀκούῃς περὶ ὧν ἀκούειν 
-              σε δεῖ, μήτε βλέπῃς [περὶ ὧν] ⟨ἃ⟩ βλέπειν σε δεῖ. 
-             <pb facs="ScottHermeticaVolOne_0177"/>
-              </p>
-         </div>
+          <div type="edition" n="urn:cts:greekLit:tlg1286.tlg007.1st1K-grc1" xml:lang="grc"> 
+              <div type="textpart" subtype="section" n="1a"><p rend="indent"><pb facs="ScottHermeticaVolOne_0173"/> Ποῖ φέρεσθε, ὦ ἄνθρωποι, μεθύοντες, τὸν τῆς ἀγνωσίας <l n="20"/> ἄκρατον [λόγον] ἐκπιόντες; ὃν οὐδὲ φέρειν δύνασθε, ἀλλ᾽ ἤδη αὐτὸν καὶ ἐμεῖτε. στῆτε νήψαντες, ἀναβλέψαντες τοῖς τῆς καρδίας ὀφθαλμοῖς, καὶ εἰ μὴ πάντες δύνασθε, οἵ γε καὶ δυνάμενοι. </p> </div>
+         <div type="textpart" subtype="section" n="1b"><p rend="indent">ἡ γὰρ τῆς ἀγνωσίας κακία ἐπικλύζει πᾶσαν τὴν γῆν, <l n="25"/> καὶ συϲϲΎρει τὴν ἐν τῷ σώματι κατακεκλεισμένην ψυχήν, μὴ ἐῶσα ἐνορμίϲασθαι τοῖς τῆς σωτηρίας λιμέσι. μὴ <pb facs="ScottHermeticaVolOne_0175"/> συγκατενεχθῆτε τοιγαροῦν τῷ πολλῷ ῥεύματι· </p> </div>
+         <div type="textpart" subtype="section" n="2a"><p>ἀναρροίᾳ δὲ χρησάμενοι, οἱ δυνάμενοι λαβέσθαι τοῦ [τῆς σωτηρίας] λιμένος, ἐνορμισάμενοι τούτῳ, ζητήσατε χειραγωγόν, τὸν ὁδηγήσοντα ὑμᾶς ἐπὶ τὰς τῆς γνώσεως θύρας, ὅπου ἐστὶ τὸ λαμπρὸν φῶς, τὸ καθαρὸν σκότους· ὅπου οὐδὲ εἷς μεθύει, <l n="5"/> ἀλλὰ πάντες νήφουσιν, ἀφορῶντες τῇ καρδίᾳ εἰς τὸν ⟨οὕτως⟩ ὁραθῆναι θέλοντα· οὐ γάρ ἐστιν ἀκουστός, οὐδὲ λεκτός, οὐδὲ ὁρατὸς ὀφθαλμοῖς, ἀλλὰ νῷ καὶ καρδίᾳ. </p> </div>
+         <div type="textpart" subtype="section" n="2b"><p rend="indent">πρῶτον δὲ δεῖ σε περιρρήξασθαι ὃν φορεῖς χιτῶνα, ⟨⟨τὸν σκοτεινὸν περίβολον,⟩⟩ τὸ τῆς ἀγνωσίας ὕφασμα, τὸ τῆς <l n="10"/> κακίας ⎡στήριγμα⎤, τὸν τῆς φθορᾶς δεσμόν, [[τὸν σκοτεινὸν περίβολον,]] τὸν ζῶντα θάνατον, τὸν αἰσθητ⟨ικ⟩ὸν νεκρόν, τὸν περιφόρητον τάφον, τὸν ἔνοικον λῃστήν, ⟨⟨⟨τὸν⟩ ἐχθρὸν⟩⟩ τὸν [δι᾽] ὧν ⟨ἐ⟩φίεϲαι μισοῦντα καὶ [δι᾽] ὧν ⟨ἐπιθυ⟩μ⟨ε⟩ῖς ⟨σ⟩οι φθονοῦντα. </p> </div>
+         <div type="textpart" subtype="section" n="3"><p>τοιοῦτός ἐστιν ὃν ἐνεδύσω [[ἐχθρὸν]] χιτών[α], <l n="15"/> ἄγχων σε κάτω πρὸς αὑτόν, ἵνα μὴ ἀναβλέψας καὶ θεασάμενος τὸ κάλλος τῆς ἀληθείας, καὶ τὸ ἐ[γ]κεῖ μένον ἀγαθόν, μισήσῃς τὴν τούτου κακίαν, νοήσας αὐτοῦ τὴν ἐπιβουλὴν ἣν ἐπεβούλευσέ σοι, τὰ [δοκοῦντα καὶ μὴ] νομιζόμενα αἰσθητήρια ἀναίσθητα ποιῶν, τῇ πολλῇ ὕλῃ αὐτὰ ἀποφράξας, καὶ <l n="20"/> μυσαρᾶς ἡδονῆς ἐμπλήσας, ἵνα μήτε ἀκούῃς περὶ ὧν ἀκούειν σε δεῖ, μήτε βλέπῃς [περὶ ὧν] ⟨ἃ⟩ βλέπειν σε δεῖ. <pb facs="ScottHermeticaVolOne_0177"/> </p> </div>
          </div>
       </body>
     </text>
