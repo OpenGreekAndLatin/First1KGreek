@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Fragmenta</title>
+        <author xml:lang="lat">Callinicus</author>
+        <editor>Hugo Hinck</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Charlotte</forename><surname>Houghton</surname></persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+    
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg2189.tlg003.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-04-13" />
+    </publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Polemonis Declamationes quae exstant duae.</title>
+            <editor>Hugo Hinck</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1873</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/declamationesqua00poleuoft/page/n57/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+ 
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.17 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+   
+    <refsDecl n="CTS">
+      <cRefPattern n="section" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+        <p>This pointer pattern extracts section.</p>
+      </cRefPattern>
+    </refsDecl>
+   
+  </encodingDesc>
+  
+    <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+    </langUsage>
+  </profileDesc>
+    
+    <revisionDesc>
+      <change when="2021-04-13" who="Lisa Cerrato">initial markup of new file.</change>
+    </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg2189.tlg003.1st1K-grc1" xml:lang="grc">
+      <pb facs="declamationesqua00poleuoft_0059"/>
+      <head rend="center">Καλλινίκου εἰς τὰ πάτρια Ρώμης.</head> 
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg2189.tlg003.1st1K-grc1" n="1">
+       <p rend="indent">Οὔτε ἡ καθ’ ὑμᾶς γῆ πρὸς ἕτερον οὐδὲν εὐαρμόστως εἶχε πλὴν βασιλείας οὔτε ἡ βασιλεία πρὸς ἄλλο χωρίον οὐδὲν πλὴν ταύτης ἐχώρησεν· ἡ δὲ τῶν φόρων σύνταξις οὔθ’ ὑμετέρα πλεονεξία γίγνεται οὔτε τῶν διδόντων ζημία, ἀλλʼ εἰς τὸ μάχιμον γένος δαπανωμένη διʼ ἐκείνων πάλιν εἰς τοὺς διδόντας ἐπάνεισιν ὥστε δανείσμασι προσεοικέναι τὸ διδόμενον μᾶλλον ἢ φόρων ἀπαγωγῇ. <gap reason="lost" rend=". . . . . . . . . ."/> Ἀλέξανδρος μὲν γὰρ οὐδὲν τῶν περὶ Κλέαρχον σεμνότερον διεπράξατο ἀνδρῶν κρατήσας ἀνανδρίᾳ συντρόφων, ἐκκλίνας τοὺς εἰδότας νικᾶν, πρὸς δὲ Πέρσας ἀγωνισάμενος τοὺς παιδευθέντας ἡττᾶσθαι ταὐτὸν παθὼν τοῖς ὄναρ εὐτυχοῦσιν, ἐν τῇ τῆς εὐτυχίας ἀκμῇ καταλύσας αὐτὴν καὶ τοσοῦτον ἄρξας τὸν ἅπαντα χρόνον ὅσος ὑμῖν οὐκ ἀρκεῖ τὴν ὑμετέραν ἐπελθεῖν. <gap reason="lost" rend=". . . . . . . . . . "/> τοῖς μὲν οὖν πολλοῖς εἴρηται τυφλῶν εἶναι ζημίαν τὸ μὴ τὸν ἥλιον βλέπειν· ἐγὼ δ’ ἂν ἐπὶ τῶν θεωμένων φήσαιμι τὴν ἴσην εἶναι ζημίαν εἴ τις μὴ ταύτην θεάσαιτο. καὶ τῶν παρελθόντων εἰς φῶς ὅσοι μὲν ἀπείρατοι τῆς ὑμετέρας ἔμειναν, νόθον τινὰ βίον ὡς εἰπεῖν διαντλοῦσιν, <pb facs="declamationesqua00poleuoft_0060"/> ὅσοι δὲ ἐν πείρᾳ γεγένηνται, γνήσιοι τοῦ βίου μέτοχοι καὶ πλέον τῶν ἑτέρων διαλλάττουσιν  ἢ τῶν βεβήλων οἱ τελεσθέντες. </p></div></div>
+</body>
+</text>
+</TEI>
