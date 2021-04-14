@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Fragmentum paraphrasis in Aristotelis rhetorica</title>
+        <author xml:lang="lat">Anonymi in Aristotlis Artem Rhetoricam</author>
+        <editor>Hugo Rabe</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Charlotte</forename><surname>Houghton</surname></persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+
+<publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">urn.cts.greekLit.tlg4026.tlg003.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-04-14" />
+    </publicationStmt>
+   
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Anonymi et Stephani in Artem Rhetoricam Commentaria</title>
+            <editor>Hugo Rabe</editor>
+            <imprint>
+              <pubPlace>Berlin</pubPlace>
+              <publisher>Typ. et impensis G. Reimeri</publisher>
+              <date>1896</date>
+            </imprint>
+          </monogr>
+          <series>
+            <title level="s" xml:lang="lat">Commentaria in Aristotelem graeca</title>
+            <biblScope unit="volume">21, part 2</biblScope>
+          </series>
+          <ref target="https://archive.org/details/commentariaina21pt12akaduoft/page/330/mode/1up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>     
+    </fileDesc>
+     
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.17 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+        <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <!-- sample top level refsDecl for lines -->
+    
+    <refsDecl n="CTS">
+      <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+        <p>This pointer pattern extracts fragment.</p>
+      </cRefPattern>
+    </refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021-04-14" who="Lisa Cerrato">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg4026.tlg003.1st1K-grc1" xml:lang="grc">
+      <pb facs="commentariaina21pt12akaduoft_0670"/>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg4026.tlg002.1st1K-grc1" n="1">
+        <head>ΠΕΡΙ ΕΡΩΤΗΣΕΩΣ</head>
+       <p rend="indent"><label>18.</label> Ἐρώτα δὲ αὐτὸν τετραχῶς· τοσοῦτοι γάρ εἰσι τῶν ἐρωτήσεων οἱ τρόποι· πολλάκις γὰρ αὗται κατὰ καιρὸν †  μὴ γινόμεναι καὶ ὤνησαν καὶ ἔβλαψαν. εἰσὶ δὲ οἱ τρόποι οἵδε· τὸ εἰς ἄτοπον ἀπάγειν, τὸ τὰ ὁμο λογούμενα ἐρωτᾶν, καὶ τὸ ἐρωτᾶν τότε, ὅταν μέλλῃς εἰς τοὐναντίον περι τρέπειν, καὶ τὸ ἀληθέσι ψευδῆ συμπλέκοντα πυνθάνεσθαι.</p> 
+        <p rend="indent"><bibl xml:lang="lat">[1419a 1]</bibl> Εἰς μὲν οὖν τὸ ἄτοπον ἐμβάλλεις τὸν ἀντίδικον ἐρωτήσας οὕτως, ὡς  ερικλῆς Λάμπωνα ἤρετο <q rend="single">τί ταῦτά ἐστιν</q> εἰπῶν <q rend="single">τὰ δρώμενα ἐν τοῖς μυστηρίοις;</q> εἰπόντος δὲ τοῦ Λάμπωνος ὡς 'οὐχ οἷόν τε ταῦτα τοῖς ἀμυήτοις ἐξαγγέλλειν', ἀνήρετο ὁ  ερικλῆς, εἰ αὐτὸς οἶδεν·   οὐ συμφήσαντος δὲ τοῦ Λάμπωνος ἐν τοῖς <q rend="single">οὐχ οἷόν τε ταυτὶ τοῖς ἀμυήτοις ἐξαγγέλλειν</q>, <q rend="single">καὶ πῶς' εἶπεν 'ἀτέλεστος ὤν;</q></p>
+         <p rend="indent"><bibl xml:lang="lat">[a 5]</bibl> Ὁμολογούενα δὲ ἐρωτήσεις, εἰ τὰ ἐξ ἀνάγκης δοθησόμενα ὑπὸ τῶν ἀντιδίκων πυνθάνοιο, καὶ ὧν ῥηθέντων ἐπὶ τὸ συμπέρασμα εὐθὺς †  οὐ χωρήσεις, τὰ ὁμολογούμενα εὐθὺς παραλιπών, ὡς  λάτων ἐν τῇ Σωκράτους ἀπολογίᾳ· λεγόντων γὰρ τῶν κατηγόρων, ὡς Σωκράτης θεοὺς οὐ νομίζει καὶ καινὰ δαιμόνια εἰσάγει, ἀνήρετο αὐτοὺς περὶ τῶν δαιμονίων, <pb facs="commentariaina21pt12akaduoft_0671"/> εἰ μὴ θεοὺς ἢ θεῶν παῖδας γοῦνται αὐτούς· ὡς δὲ συνέφησαν, <q rend="single">ἔστι δέ, 147 ὅστις θεοὺς οὐ νομίζει θεῶν παῖδας νομίζων;</q> παρέλιπε γὰρ τὸ αὐτόθεν  ὁμολογούμενον, ὅτι ὁ δαιμόνια νομίζων θεοὺς νομίζει.</p> 
+         <p rend="indent"><bibl xml:lang="lat">[a 12]</bibl> Εἰς τὸ ἐναντίον δὲ περιστήσεις, ὡς Λυσίας ἐν τῷ Ἐρατοσθέ νους· ἐπειδὴ γὰρ ὡμολόγει μὲν ἀπάγειν τὸν ἀδελφὸν αὐτοῦ  ολέμαρχον 5 διὰ τὸ προστάξαι τοὺς τριάκοντα, ὧν εἷς ἦν καὶ αὐτός, ἐρωτηθεὶς δέ, εἰ παρῆν καὶ αὐτὸς προτεθείσης περὶ αὐτοῦ βουλῆς καὶ εἰ ἀντέλεγεν ἢ ἐπῄνει τὰ δοκοῦντα τοῖς ἄλλοις, ὡς δὲ ἔφη καὶ παρεῖναι καὶ ἀντιλέγειν τοῖς ἄλλοις, προσηρώτησεν, εἰ ἄδικα πάσχειν ἡγεῖτο αὐτόν, καὶ συγχωρήσαντος 10 ἐπήγαγεν <q>εἶτα, ὧ σχετλιώτατε πάντων, ἀντέλεγες μέν, ἵνα σώσειας, συνε λάμβανες δέ, ἵνα ἀποκτείνης;</q></p> 
+         <p rend="indent"><bibl xml:lang="lat">[a 13]</bibl> Τελευταῖος δὲ τοῦ ἐρωτᾶν καιρός, ὅταν μὴ ἐγχωρῇ λῦσαι τὴν ἐρώτησιν  † σοφιστικῶς ἀποκρινόμενον· οἷον <q rend="single">τὰ μὲν ἔστι, τὰ δὲ οὔ' ἢ πῂ μὲν ἀληθὲς τὸ λεγόμενον, πῂ δὲ ψεῦδός ἐστι</q>· πρὸς γὰρ τοὺς οὕτως ἀπο κριναμένους οἱ ἀκροώμενοι θορυβοῦσιν ὡς ἀποροῦντας καὶ οὐκ ἔχοντας ἀντειπεῖν. </p>
+         <p rend="indent"><bibl xml:lang="lat">[a 16]</bibl> Δεῖ δὲ παρὰ ταῦτα μηδένα ἄλλον τρόπον ἐρωτήσεων τῶν 20 πρὸς τὸν ἀντίδικον ἐπινοεῖν· ἐνστάντος γὰρ τοῦ ἐρωτωμένου πρὸς ὁτιοῦν, οὐ πρὸς ὁτιοῦν ἡττῆσθαι δόξει.</p> 
+         <p rend="indent"><bibl xml:lang="lat">[a 19]</bibl> Δεῖ δὲ †  ὁμοίως ἐρωτᾶν μηδὲ διὰ πολλῶν ἐρωτημάτων περαι οῦσθαι τὰ ἐνθυμήματα· ἀσθενὴς γὰρ ὁ ἀκροατής.</p> 
+         <p rend="indent">Φεύγοντος τοῦ ἐρωτωμένου τὴν ἀπόκρισιν καὶ ἀνάγκαζε αὐτὸν ἀποκρίνεσθαι· οἵ τε γὰρ φεύγοντες τὰς ἀποκρίσεις ἐγνωκέναι δοκοῦσι <pb facs="commentariaina21pt12akaduoft_0672"/> καὶ τάχα ἂν εὕροιέν τινα διάλογον βιασθέντες ἀπαντῆσαι πρὸς τὴν ἀπόκρισιν.</p>
+        <p rend="indent"> Ἔστι δὲ ἄλλος τρόπος ἔξω τῶν πρὸς τὸν ἀντίδικον τοῦ | ἐρωτᾶν †· τοῦτο δὲ ποιεῖν δεῖ, ὅταν ἴδωμεν τοὺς δικαστὰς συμπεριφερομένους ἡμῖν καὶ ἃ ἡμεῖς ἂν βουληθείημεν ἀποκριναμένους πυνθάνεσθαι καὶ τούτων· τοῦτον γὰρ τὸν τρόπον ἔστιν ἄνευ κινδύνου πάντα συλλογίζεσθαι· ὡς γὰρ αὐτοῦ τοῦ πράγματος ἔχοντος τἀληθὲς οἱ ἀκούοντες καὶ τοῖς ἐξ ἐναντίας  † τοῖς ἐρωτῶσι προσομολογεῖν.</p> 
+         <p rend="indent">Δεῖ δὲ καὶ τὰς αἰτίας ἐπιφέρειν ταῖς ἐρωτήσεσι [καὶ ταῖς ἀποκρίσεσιν], αἷς αὐτο * ἐρωτῶμεν, οἷον <q rend="single">εἰ δέ τίς σε ἔροιτο· τί δήποτε; τοῦτο γὰρ εὔλογον ἢ φύσιν ἔχον ἐστὶ †  τοῦ ἀποκρίνασθαι ἢ τοῦ εὐνοϊκῶς ἔχον τος τῇ πόλει· καὶ γὰρ ἡδὺ καὶ ἀκριβέστερον οὕτω φαίνεται.</q> χρήσῃ δὲ καὶ τούτῳ τῷ ὀργάνῳ πανταχοῦ. </p>
+         <p rend="indent">Εἰσὶν οὖν τῶν ἐρωτήσεων οὗτοι οἱ τρόποι· τὸ τὰ ὁμολογούμενα ἐρωτᾶν, τὸ εἰς ἄτοπον ἐμβαλεῖν τὸν ἐρωτώμενον, καὶ τὸ ἐρωτᾶν τότε, ὅτε εἰς τοὐναντίον μέλλῃς περιστήσειν, καὶ ἀληθέσι ψευδῆ συμπλέκοντα ἐρωτᾶν, καὶ μὴ διὰ πολλῶν ἐρωτήσεων συμπεραίνειν τὸν συλλογισμόν, καὶ αὐτὸν ἐρωτᾶν, ὅταν ἴδωμεν καὶ τοὺς δικαστὰς συμπεριφερομένους ἡμῖν, καὶ τὸ μετὰ προσθέσεως τῆς αἰτίας ἐρωτᾶν. </p></div>
+         
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg4026.tlg002.1st1K-grc1" n="2">
+        <head>ΠΕΡΙ ΑΠΟΚΡΙΣΕΩΣ.</head>
+        <p rend="indent"><bibl xml:lang="lat">[1419a 19]</bibl> Τρόποι δὲ αὐτῶν ἢ διώσασθαι τὰς ἀποκρίσεις τέλεον ἢ φθάσαντες αὐτοὺς ἐρωτήσομεν· εἰ ἄρα δὲ ἀποκρίνασθαι δεῖ, τὴν αἰτίαν <pb facs="commentariaina21pt12akaduoft_0673"/> προσθέντες ἀποκρινούμεθα, καὶ τὰ ἀμφίβολα ἐξαπλώσομεν καὶ τῷ λόγῳ καὶ πρὸ τοῦ συμπεράσματος, †  ὅταν εἰς τοὐναντίον ἡ ἐρώτησις περιάγοι, εἰ φέροι εὐθὺς τὴν λύσιν καὶ αὐτὸ τὸ συμπέρασμα αὐτὸς ἔχων λῦσαι, μὴ προσποιούμενος, ὅτι αὐτὸς ἀντερωτᾷ τὸ συμπέρασμα.</p>
+        <p rend="indent">Τρόποι μὲν οὖν οὗτοι· παραδείγματος δὲ ἕνεκα ὑποτάξω καθ’ ἕκαστον. ἔφην γὰρ <q rend="single">τὰς ἀποκρίσεις ἤτοι διωσόμεθα καθάπαξ</q>, ἂν ἔχωσί τι δυσχερές, οἷον ὡς Καλλίας ποτὲ λέγεται εἰπεῖν, ὅτι ἀποκρίνεται, εἰ τοσοῦτον αὐτῷ δοίη χρόνον ⟨ὁ⟩ ἐρωτῶν, ὅσον αὐτὸς ἐμελέτα τὴν ἐρώτησιν, <q rend="single">ἢ φθάσαντες ἐρωτῶμεν αὐτούς</q>, ἃ ῥᾴδιά ἐστιν ἀποκρίνασθαι, οἷον ἐπειδὰν ἐρωτᾷ με, τί ⟨ἂν⟩ ἐποίησα 'οὐκ ἂν τόδε, ἀλλὰ τόδε', οἷον <q rend="single">οὐκ ἂν ἐσυκοφάντουν τοὺς φίλους, ἀλλ’ εἰργαζόμην</q>. </p>
+          <p rend="indent"><bibl xml:lang="lat">[a 25]</bibl> Ἐὰν δὲ ἀναγκαῖον ἢ πάντως ἀποκρίνασθαι, αἰτίαν τινὰ χρὴ προστιθέναι τῇ ἀποκρίσει, οἷον ὡς Ὑπερίδης ἐρωτηθεὶς ὑπὸ Ἀριστογείτονος, εἰ ἔγραφε τοὺς δούλους ἐλευθέρους εἶναι, ἔφη, ἵνα μὴ οἱ ἐλεύθεροι δου λεύωσι.</p> 
+          <p rend="indent"><bibl xml:lang="lat">[a 20]</bibl> Τά γε μὴν ἀμφίβολα οἷον τὸ <q rend="single">πῂ μὲν ἔπραξα, πῂ δὲ οὔ' ἐξαπλοῦν τῷ λόγῳ καὶ τὰς αἰτίας προστιθέναι, οἷον 'τόδε μὲν ἔπραξα διὰ τόδε</q>, καὶ ὅλως τὰς βραχυλογίας καὶ συντομίας παρέχεσθαι ἐπὶ ταῖς ἀπο κρίσεσι, †  τὰ δὲ προσδιορισμοῦ φευκτέον. | </p>
+        <p rend="indent"><bibl xml:lang="lat">[a 21]</bibl> Εἰ δὲ εἰς ἐναντίον ἡ ἐρώτησις ἀπάγει, τὴν λύσιν φέρειν χρὴ ἤτοι πρὸ τοῦ ἐπιόντος ἐρωτήματος ἢ ἁπλῶς πρὸ τοῦ συμπερανθῆναι τὸν συλλο γισμὸν τῷ ἐρωτῶντι· σχεδὸν γὰρ οὐκ ἄδηλον εὐθὺς ἐρωτῶντος, ὅτι βούλεται ὁ λόγος· ὥστε φθάσαντα τὴν αἰτίαν ἐπενεγκεῖν, ἢ ἀφαιρήσει τὸν τόπον.</p> 
+        <p rend="indent"><bibl xml:lang="lat">[a 25]</bibl> Ἔστι δὲ καὶ τῷ συμπεράσματι ὡς ἐρωτήματι χρῆσθαι μὴ προσποιούμενον, ὅτι ὁ ἐρωτῶν συμπέρασμα ἐπήγαγεν, ἀλλ’ ὡς πρὸς τὰς ἄλλας προτάσεις ἀποκρίνασθαι καὶ πρὸς τὸ συμπέρασμα ὡς ἐρωτῶντος.</p> 
+        <p rend="indent"><bibl xml:lang="lat">[a 31]</bibl> Ἔτι ἀπομνημονεύουσι περὶ τοῦ τῆς ἐφορείας εὐθυνομένου Λάκωνος· ἑαλωκότων ἔτι τῶν συναρχόντων ἐρωτηθείς, εἰ δοκήσει †  δικαίως <pb facs="commentariaina21pt12akaduoft_0674"/> ἀπήχθησαν οἱ ἔφοροι, ἔφη· πάλιν δὲ ἀναπυνθανομένων, εἰ τῆς πράξεως κεκοινώνηκεν αὐτοῖς, <q rend="single">κεκοινώνηκα</q>. <q rend="single">οὐκοῦν</q> λεγόντων <q rend="single">καὶ σὺ δικαίως ἂν ἀπόλοιο;</q> <q rend="single">οὐ δῆτα</q>, ἔφη· <q rend="single">οἱ μὲν γὰρ χρήματα λαμβάνοντες ταῦτα ἔπραξαν, ἐγὼ δὲ ἀπὸ γνώμης.</q> μὴ προσποιηθείς, ὅτι συμπέρασμα ἐπή γαγεν, ἔλυσε καὶ λογικῶς τὸν συλλογισμόν. ὅθεν καὶ τὸ αὐτὸ τοῖς ἐρωτῶσι παραφυλακτέον, * πολύς τις τῇ τῶν πραγμάτων ἀληθείᾳ περιείη μάλιστα, ὡς μήτε αὐτὸ τὸ συμπέρασμα ἄλλα τινὰ συ * |  συλλογισαμένου ἅπαξ· εἰ γὰρ μετὰ τὴν ἀπόκρισιν τοῦ ἐφόρου τουτουὶ τὴν δευτέραν ὁ συλλογισμὸς ἐπήχθη τῷ κατηγόρῳ αφο * <q>δῆλον τοίνυν, ὅτι καὶ σὲ τεθνάναι χρή</q>, οὐκ ἂν ἔσχεν ἀποκρίνασθαι καὶ σωθῆναι.</p>
+        </div>
+      </div>
+    
+   
+  </body>
+</text>
+</TEI>
