@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Gnomologium Epicteteum (e Stobaei libris 1-2)</title>
+        <author xml:lang="lat">Epictetus</author>
+        <editor>Heinrich Schenkl</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName>Karina Cooper</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+      
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0557.tlg004.1st1K-grc1.xml</idno>
+        <pubPlace />
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2021-04-14"/>
+      </publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Epicteti Dissertationes ab Arriano Digestae</title>
+            <editor>Heinrich Schenkl</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1916</date>
+            </imprint>
+          </monogr>
+          <ref target="https://babel.hathitrust.org/cgi/pt?id=mdp.39015065316021&amp;view=2up&amp;seq=596">HathiTrust</ref>
+        </biblStruct>
+      </sourceDesc>     
+    </fileDesc>
+  
+<encodingDesc>
+<editorialDecl>
+    <correction>
+        <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+<refsDecl n="CTS">
+      <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>This pointer pattern extracts section</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    
+<langUsage>
+      <language ident="grc">Greek</language>
+    </langUsage>
+  </profileDesc>
+  
+<revisionDesc>
+  <change when="2021-04-14" who="Lisa Cerrato">initial markup of new file.</change>
+</revisionDesc>
+</teiHeader>
+
+<text>  
+<body>
+  <div type="edition" n="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" xml:lang="grc">
+  <pb facs="ldpd_10922736_000_0595"/>
+   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="1">
+        <p rend="indent">Ἐπικτήτου. Θεοὺς δικαίᾳ καὶ μεμετρημένῃ διαθέσει τίμα, ἀλλὰ μὴ ἀμέτροις δωρεαῖς κολάκευε· οὔτε γὰρ κολακείᾳ χαίρει θεὸς οὔτε ὁ κολακεύων τιμᾷ τὸ θεῖον.</p>
+       <p rend="indent">Θεοῖς θῦε μὴ ἡνίκα ἂν πλουτήσῃς, ἀλλʼ ἡνίκα ἂν φρονήσῃς, τὸ μὲν γὰρ πλουτεῖν καὶ τῶν κακοδαιμόνων, τὸ δὲ φρονεῖν μόνον ἴδιον εὐδαιμόνων.</p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="2">
+        <p rend="indent">Παρὰ θεῶν μὴ συνεχῆ αἴτει ὑγίειαν σώματος, ἀλλὰ διη νεκῶς λάμβανε σωφροσύνην ψυχῆς· καὶ οὔτε ῥᾳδίως νοσήσεις οὔτε νοσῶν δυσαρεστήσεις.</p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="3">
+        <p rend="indent">Μὴ ὧν ἐπιθυμεῖς ταῦτα παρὰ θεῶν αἴτει, ἀλλʼ ὅπως αὐτῆς ἀπαλλαγῇς τῆς ἐπιθυμίας, τοῦτο ζήτει παρὰ θεῶν. τότε σου εἰσακούουσιν οἱ θεοί, ἡνίκα ἂν μὴ περὶ τῶν ἡδέων, ἀλλὰ περὶ τῶν καλῶν εὔχῃ. καὶ τότε σοι δώσουσι τὰ καλά, ἡνίκα μὴ ἡδονῇ, ἀλλʼ ἀρετῇ χαίρεις.</p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="4">
+        <p rend="indent">Μέμνησο παρὰ τῶν μεγάλων αἰτεῖν τὰ μεγάλα· μικρὰ γὰρ οὐκ ἂν δοῖεν. οὐδὲν θεοῦ μεῖζον καὶ ὑψηλότερον· εὐχόμενος τοιγαροῦν θεοῖς αἴτει τὰ θεῖα, ὧν οὐδὲν σάρκινον καὶ γήινον ψαύει πάθος. <pb facs="ldpd_10922736_000_0596"/></p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="5">
+        <p rend="indent">Ἐπικτήτου. Ὥσπερ μέλιτταν οὐ διὰ τὸ κέντρον μισεῖς, ἀλλὰ διὰ τὸν καρπὸν τημελεῖς, οὕτω καὶ φίλον μὴ διʼ ἐπίπληξιν ἀποστραφῇ, ἀλλὰ διὰ τὴν εὔνοιαν ἀγάπα.</p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="6">
+  <p rend="indent">Ἐοίκασιν οἱ κόλακες κηφῆσι· καὶ γὰρ ἀργοὶ καὶ ἄκεντροι καὶ τοὺς ἀλλοτρίους ἀναλίσκοντες καμάτους. οἱ φθονεροὶ σφηξί· καὶ γὰρ πληκτικοὶ καὶ ἄποροι καὶ ἀμετάδοτοι καὶ ἄχρ‹ε›ιοι. οἱ χρηστοὶ μελίτταις· καὶ γὰρ φιλόπονοι καὶ αὐτουργοὶ καὶ οἰκον ομικοὶ καὶ εὔποροι καὶ πρᾷοι καὶ ἐπιπληκτικοὶ καὶ κοινωνικοί. ὥστʼ, εἰ βούλει φίλος ὑπάρχων μετὰ πολλῶν διάγειν φίλων, μι μοῦ τὴν μέλιτταν· καθαρὸν ἔστω σοι τὸ σμῆνος κηφήνων καὶ σφηκῶν.</p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="7">
+        <p rend="indent">Τοὺς εἰς φιλίαν σοι καθιέντας δοκίμαζε μὴ ἐξ ὧν σοι δω ροῦνται, ἀλλʼ ἐξ ὧν ἑαυτοῖς μνῶνται καὶ χαρίζονται καὶ κατεπ ηγγείλαντο καὶ διέθεσαν.</p>
+      </div>
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0557.tlg004.1st1K-grc1" n="8">
+        <p rend="indent">Οὐ τὰ χρήματα φίλοι, ἀλλʼ ὁ φίλος χρήματα. καὶ χρήματα μὲν φιλίαν οὐδέποτʼ ἂν ἐργάσαιντο, ὥσπερ οὐδὲ γῇ θεόν· φιλία δὲ χρήματα καὶ ἄλλως ἂν κτήσαιτο, καθάπερ θεὸς γῆν.
+   </p>
+   </div>
+    </div>
+  </body>
+</text>
+</TEI>
