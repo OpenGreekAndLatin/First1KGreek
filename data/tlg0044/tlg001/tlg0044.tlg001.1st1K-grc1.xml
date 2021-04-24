@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+    <titleStmt>
+    <title xml:lang="lat">Epistulae</title>
+    <author xml:lang="lat">Antiochus Epistolographus</author>
+    <editor>Rudolf Hercher</editor>
+    <funder>Center for Hellenic Studies</funder><respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName></respStmt>
+
+        <respStmt>
+            <persName><forename>Julia</forename><surname>Deen</surname></persName>
+            <orgName>Center for Hellenic Studies</orgName>
+            <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+            <persName>Lisa M. Cerrato</persName>
+            <orgName>Perseus Digital Library</orgName>
+            <resp>Digital editor</resp>
+        </respStmt>
+    </titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0044.tlg001.1st1K-grc1.xml</idno>
+<pubPlace/>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-04-07"/>
+</publicationStmt>
+    
+    <sourceDesc>
+        <biblStruct>
+            <monogr>
+                <title xml:lang="lat">Epistolographi Graeci</title>
+                <editor>Rudolf Hercher</editor>
+                <imprint>
+                    <pubPlace>Paris</pubPlace>
+                    <publisher>A. F. Didot</publisher>
+                    <date>1873</date>
+                </imprint>
+            </monogr>
+            <ref target="https://www.archive.org/stream/epistolographoih00hercuoft#page/108/mode/2up">Internet Archive</ref>
+        </biblStruct>
+    </sourceDesc>
+</fileDesc>
+    
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+    
+    <refsDecl n="CTS">
+        <cRefPattern n="epistle" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <p>This pointer pattern extracts epistle.</p>
+        </cRefPattern>
+    </refsDecl>
+</encodingDesc>
+
+ <profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+</langUsage>
+ </profileDesc>
+
+    <revisionDesc>
+        <change when="2022-04-23" who="Lisa Cerrato">initial markup of new file</change>
+    </revisionDesc>
+</teiHeader>
+    
+<text>
+<body>
+    <div type="edition" n="urn:cts:greekLit:tlg0044.tlg001.1st1K-grc1" xml:lang="grc">
+    <pb facs="epistolographoih00hercuoft_0202"/>
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0044.tlg001.1st1K-grc1" n="1">
+<p rend="indent"><label>α′.</label> Βασιλεὺς Ἀντίοχος Πτολεμαίῳ χαίρειν. Τῶν Ἰουδαίων καὶ παραυτίκα μέν, ἡνίκα τῆς χώρας ἐπέβημεν αὐτῶν, ἐπιδειξαμένων τὸ πρὸς ἡμᾶς φιλότιμον, καὶ παραγενομένους δʼ εἰς τὴν πόλιν λαμπρῶς ἐκδεξαμένων καὶ μετὰ μὲν τῆς γερουσίας ἀπαντησάντων, ἄφθονον δὲ τὴν χορηγίαν τοῖς στρατιώταις καὶ τοῖς ἐλέφασι παρεσχημένων, συνεξελόντων δὲ καὶ τοὺς ἐν τῇ ἄκρᾳ φρουροὺς τῶν Αἰγυπτίων, ἠξιώσαμεν καὶ ἡμεῖς τούτων αὐτοὺς ἀμείψασθαι καὶ τὴν πόλιν αὐτῶν ἀναλαβεῖν κατεφθαρμένην ὑπὸ τῶν περὶ τοὺς πολέμους συμπεσόντων, καὶ συνοικίσαι τῶν διεσπαρμένων εἰς αὐτὴν πάλιν συνελθόντων. πρῶτον δʼ αὐτοῖς ἐκρίναμεν διὰ τὴν εὐσέβειαν παρασχεῖν τὴν εἰς τὰς θυσίας σύνταξιν, κτηνῶν τε θυσίμων καὶ οἴνου καὶ ἐλαίου καὶ λιβάνου, ἀργυρίου τιμὴν μυριάδας δύο, καὶ σεμιδάλεως ἀρτάβας ἱερὰς ἕξ κατὰ τὸν ἐπιχώριον νόμον, καὶ πυρῶν μεδίμνους χιλίους τετρακοσίους καὶ ἑξήκοντα, καὶ ἀλῶν μεδίμνους τριακοσίους ἑβδομήκοντα πέντε. τελεῖσθαι δʼ αὐτοῖς ταῦτα βούλομαι καθὼς ἐπέσταλκα, καὶ τὸ περὶ τὸ ἱερὸν ἀπαρτισθῆναι ἔργον, τάς τε στοὰς καὶ εἴ τι ἕτερον οἰκοδομῆσαι δέοι. ἡ δὲ τῶν ξύλων ὕλη κατακομιζέσθω ἐξ αὐτῆς τε τῆς Ἰουδαίας καὶ ἐκ τῶν ἄλλων ἐθνῶν καὶ ἐκ τοῦ Διβάνου μηδενὸς εἰσπρασσομένου τέλους· ὁμοίως δὲ καὶ ἐν τοῖς ἄλλοις ἐν οἷς ἂν ἐπιφανεστέραν γίνεσθαι τὴν τοῦ ἱεροῦ ἐπισκευὴν δέη. πολιτευέσθωσαν δὲ πάντες οἱ ἐκ τοῦ ἔθνους κατὰ τοὺς πατρῴους νόμους, ἀπολυέσθω δὲ ἡ γερουσία καὶ οἱ ἱερεῖς καὶ οἱ γραμματεῖς τοῦ ἱεροῦ καὶ οἱ ἱεροψάλται ὧν ὑπὲρ τῆς κεφαλῆς τελοῦσι καὶ τοῦ στεφανίτου φόρου καὶ τοῦ ὑπὲρ τῶν ἄλλων. ἵνα δὲ θᾶττον ἡ πόλις κατοικισθῇ; δίδωμι τοῖς τε νῦν κατοικοῦσι καὶ κατελευσομένοις ἕως τοῦ Ὑπερβερεταίου μηνὸς ἀτελέσιν εἶναι μέχρι τριῶν ἐτῶν. ἀπολύομεν δὲ καὶ εἰς τὸ λοιπὸν αὐτοὺς τοῦ τρίτου μέρους τῶν φόρων, ὥστε αὐτῶν ἐπανορθωθῆναι τὴν βλάβην. καὶ ὅσοι ἐκ τῆς πόλεως ἁρπαγέντες δουλεύουσιν, αὐτούς τε τούτους καὶ τοὺς ὑπ αὐτῶν γεννηθέντας ἐλευθέρους ἀφίεμεν, καὶ τὰς οὐσίας αὐτοῖς ἀποδίδοσθαι κελεύομεν.</p></div>
+        
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0044.tlg001.1st1K-grc1" n="2">
+    <p rend="indent"><label>β′.</label> Βασιλεὺες Ἀντίοχος Ζεύξιδι τῷ πατρὶ χαίρειν. Εἰ ἔρρωσαι, εὖ ἂν ἔχοι, ὑγιαίνω δὲ καὶ αὐτός. πυνθανόμενος τοὺς ἐν Λυδίᾳ καὶ Φρυγίᾳ νεωτερίζοντας, μεγάλης ἐπιστροφῆς ἡγησάμην τοῦτό μοι δεῖσθαι. καὶ βουλευσαμένῳ μοι μετὰ τῶν φίλων τί δεῖ ποιεῖν, ἔδοξεν εἰς τὰ φρούρια καὶ τοὺς ἀναγκαιοτάτους <pb facs="epistolographoih00hercuoft_0203"/> τόπους τῶν ἀπὸ τῆς Μεσοποταμίας καὶ βαβυλωνίας Ἰουδαίων οἴκους δισχιλίους σὺν ἐπισκευῇ μεταγαγεῖν· πέπεισμαι γὰρ εὔνους αὐτοὺς ἔσεσθαι τῶν ἡμετέρων φύλακας διὰ τὴν πρὸς τὸν θεὸν αὐτῶν εὐσέβειαν, καὶ μαρτυρουμένους δʼ αὐτοὺς ὑπὸ τῶν προγόνων πίστιν οἶδα καὶ προθυμίαν εἰς ἃ παρακαλοῦνται. βούλομαι τοίνυν, καίπερ ἐργώδους ὄντος, τούτους μεταγαγειν, ὑποσχόμενος νόμοις αὐτοὺς χρήσεσθαι τοῖς ἰδίοις. ὅταν δʼ αὐτοὺς ἀγάγῃς εἰς τοὺς προειρημένους τόπους, εἴς τε οἰκοδομὰς οἰκιῶν δώσεις αὐτοῖς τόπον ἑκάστῳ καὶ χώραν εἰς γεωργίαν καὶ φυτείαν ἀμπέλων, καὶ ἀτελεῖς τῶν ἐκ τῆς γῆς καρπῶν ἀνήσεις ἐπ ἔτη δέκα. μετρείσθωσαν δὲ καὶ ἄχρις ἂν τοὺς παρὰ τῆς γῆς ἄρτους λαμβάνωσι, σῖτον εἰς τὰς τῶν θεραπόντων διατροφάς διδόσθω δὲ καὶ τοῖς εἰς τὰς χρείας ὑπερετοῦσι τὸ αὔταρκες, ἵνα τῆς παρ ἡμῶν τυγχάνοντες φιλανθρωπίας προθυμοτέρους παρέχωσιν αὑτοὺς περὶ τὰ ἡμέτερα. πρόνοιαν δὲ ποιοῦ καὶ τοῦ ἔθνους κατὰ τὸ δυνατόν, ὅπως ὑπὸ μηδενὸς ἐνοχλῆται.
+</p></div></div>
+</body></text></TEI>

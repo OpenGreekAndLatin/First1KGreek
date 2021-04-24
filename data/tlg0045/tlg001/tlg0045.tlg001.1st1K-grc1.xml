@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+    <titleStmt>
+    <title xml:lang="lat">Epistulae</title>
+    <author xml:lang="lat">Artaxerxis Epistulae</author>
+    <editor>Rudolf Hercher</editor>
+    <funder>Center for Hellenic Studies</funder><respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName></respStmt>
+
+        <respStmt>
+            <persName><forename>Julia</forename><surname>Deen</surname></persName>
+            <orgName>Center for Hellenic Studies</orgName>
+            <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+            <persName>Lisa M. Cerrato</persName>
+            <orgName>Perseus Digital Library</orgName>
+            <resp>Digital editor</resp>
+        </respStmt>
+    </titleStmt>
+    
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0045.tlg001.1st1K-grc1.xml</idno>
+<pubPlace/>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-04-07"/>
+</publicationStmt>
+    
+    <sourceDesc>
+        <biblStruct>
+            <monogr>
+                <title xml:lang="lat">Epistolographi Graeci</title>
+                <editor>Rudolf Hercher</editor>
+                <imprint>
+                    <pubPlace>Paris</pubPlace>
+                    <publisher>A. F. Didot</publisher>
+                    <date>1873</date>
+                </imprint>
+            </monogr>
+            <ref target="https://www.archive.org/stream/epistolographoih00hercuoft#page/174/mode/2up">Internet Archive</ref>
+        </biblStruct>
+    </sourceDesc>
+</fileDesc>
+    
+<encodingDesc>   
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+    <refsDecl n="CTS">
+        <cRefPattern n="epistle" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <p>This pointer pattern extracts epistle.</p>
+        </cRefPattern>
+    </refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+</langUsage>
+</profileDesc>
+
+    <revisionDesc>
+        <change when="2022-04-23" who="Lisa Cerrato">initial markup of new file</change>
+    </revisionDesc>
+</teiHeader>
+    
+<text>
+<body>
+ <div type="edition" n="urn:cts:greekLit:tlg0045.tlg001.1st1K-grc1" xml:lang="grc">
+     <pb facs="epistolographoih00hercuoft_0269"/>
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0045.tlg001.1st1K-grc1" n="1">
+    <p rend="center"><label>α′.</label></p>
+<p rend="indent">Βασιλεὺς μέγας Ἀρταξέρξης τοῖς ἀπὸ Ἰνδικῆς ἕως τῆς Αἰθιοπίας ἑπτὰ καὶ εἴκοσι καὶ ἑκατὸν σατραπειῶν ἄρχουσι τάδε γράφει. Πολλῶν ἐθνῶν ἄρξας, καὶ πάσης ἧς ἐβουλήθην κρατήσας οἰκουμένης, καὶ μηδὲν ὑπὸ τῆς ἐξουσίας ὑπερήφανον μηδὲ σκαιὸν εἰς τοὺς ἀρχομένους ἀναγκασθεὶς ἁμαρτεῖν, ἀλλ’ ἐπιεικῆ καὶ πρᾶον ἐμαυτὸν παρασχών, καὶ προνοησάμενος εἰρήνης καὶ εὐνομίας αὐτοῖς, ἐζήτουν πῶς εἰς ἅπαντα τούτων ἀπολαύειν αὐτοῖς γένοιτο, τοῦ δὲ διὰ σωφροσύνην καὶ δικαιοσύνην παρ’ ἐμοὶ τὴν πρώτην μοῖραν δόξης καὶ τιμῆς ἔχοντος, καὶ μετ’ ἐμὲ δευτέρου διὰ πίστιν καὶ βεβαίαν εὔνοιαν, Ἀμάνου, κηδεμονικῶς ὑποδείξαντός μοι παντάπασιν ἀνθρώποις ἀναμεμῖχθαι δυσμενὲς ἔθνος καὶ τοῖς νόμοις ἀλλόκοτον καὶ τοῖς βασιλεῦσιν ἀνυπότακτον καὶ παρηλλαγμένον τοῖς ἔθεσι καὶ τὴν μοναρχίαν μισοῦν καὶ δύσνουν τοῖς ἡμετέροις πράγμασι, κελεύω τοὺς δηλουμένους ὑπὸ τοῦ δευτέρου μου πατρὸς Ἀμάνου πάντας σὺν γυναιξὶ καὶ τέκνοις ἀπολέσαι, μηδεμίαν φειδῶ ποιησαμένους, μηδ’ ἐλέῳ πλέον ἢ τοῖς ἐπεσταλμένοις πεισθέντας παρακοῦσαι τῶν γραμμάτων. καὶ τοῦτο γενέσθαι βούλομαι τῇ τετάρτῃ καὶ δεκάτῃ τοῦ δωδεκάτου μηνὸς τοῦ ἐνεστῶτος ἔτους, ὅπως οἱ πανταχόθεν ἡμῖν πολέμιοι μιᾷ ἡμέρᾳ διαφθαρέντες τοῦ λοιποῦ μετʼ εἰρήνης ἡμῖν τὸν βίον διάγειν παρέχωσιν.</p></div>
+
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0045.tlg001.1st1K-grc1" n="2">
+    <p rend="center"><label>β′.</label></p>
+    <p rend="indent">Βασιλεὺς μέγας Ἀρταξέρξης τοῖς ἄρχουσι καὶ τὰ ἡμέτερα φρονοῦσι χαίρειν. Πολλοὶ διὰ μέγεθος εὐεργεσίας καὶ τιμῆς, ἣν δι’ ὑπερβολὴν τῆς χρηστότητος τῶν παρεχόντων ἐκαρποῦντο, οὐκ εἰς τοὺς ὑποδεεστέρους μόνον ἐξυβρίζουσιν, ἀλλ’ οὐδ’ αὐτοὺς ἀδικεῖν ὤκνησαν τοὺς εὐεργετοῦντας, τὸ εὐχάριστον ἐξ ἀν θρώπων ἀναιροῦντες, καὶ δι’ ἀπειροκαλίαν τῶν οὐκ ἐξ ὧν προσεδόκησαν ἀγαθῶν κόρον εἰς τοὺς αἰτίους ἀφέντες, λήσεσθαι τὸ θεῖον ἐπὶ τούτοις νομίζουσι καὶ τὴν ἐξ αὐτοῦ διαφεύξεσθαι δίκην. ἔνιοι δὲ τούτων προστασίαν πραγμάτων ἐπιτραπέντες παρὰ τῶν φίλων τοὺς κρατοῦντας ψευδέσιν αἰτίαις καὶ διαβολαῖς ἔπεισαν κατὰ μηδὲν ἠδικηκότων ὀργὴν ἀναλαβεῖν, ὑφ’ ἧς ἐκινδύνευσαν ἀπολέσθαι. τοῦτο δὲ οὐκ ἐκ τῶν ἀρχαιοτέρων <pb facs="epistolographoih00hercuoft_0270"/>  οὐδ’ ἀκοῇ γνωρίμων ἡμῖν οὕτως ἰδεῖν ἔστιν ἔχον, ἀλλ’ ἐκ τῶν παρὰ τὰς ἡμετέρας ὄψεις τετολμημένων· ὡς διαβολαῖς μὲν καὶ κατηγορίαις μὴ προσέχειν ἔτι τοῦ λοιποῦ, μηδ’ οἷς ἕτεροι πείθειν ἐπιχειροῦσι, κρίνειν δὲ ὅσα τις αὐτὸς οἶδε πεπραγμένα, καὶ κολάζειν μὲν ἂν ιἦ τοιαῦτα, χαρίζεσθαι δ’ ἂν ἑτέρως ἔχη, τοῖς ἔργοις αὐτοῖς ἀλλὰ μὴ τοῖς λέγουσι προστιθέμενον. ὡς μὲν οὖν Ἀμάνης Ἀμαδάθου μὲν παῖς, Ἀμαληκίτης δὲ τὸ γένος, ἀλλότριος ὢν τοῦ Περσῶν αἵματος ἐπιξενωθεὶς ἡμῖν ἀπέλαυσε τῆς πρὸς ἅπαντας χρηστότητος, ἐπὶ τοσοῦτον ὡς πατέρα μου τὸ λοιπὸν προσαγορεύεσθαι καὶ προσκυνούμενον διατελεῖν καὶ μεθ’ ἡμᾶς τὰ δεύτερα τῆς βασιλικῆς παρὰ πάντων τιμῆς ἀποφέρεσθαι, τὴν εὐτυχίαν οὐκ ἤνεγκεν, οὐδὲ σώφρονι λογισμῷ τὸ μέγεθος τῶν ἀγαθῶν ἐταμίευσεν, ἀλλὰ τῆς βασιλείας ἐπεβούλευσέ με καὶ τῆς ψυχῆς, τὸν αἴτιον αὐτῷ τῆς ἐξουσίας, ἀφελέσθαι, τὸν εὐεργέτην μου καὶ σωτῆρα Μαρδοχαῖον καὶ τὴν κοινωνὸν ἡμῖν καὶ τοῦ βίου καὶ τῆς ἀρχῆς Ἐσθῆρα κακούργως καὶ μετ’ ἀπάτης πρὸς ἀπώλειαν αἰτησάμενος· τούτῳ γάρ με τῷ τρόπῳ τῶν εὐνοούντων ἐρημώσας ἐβούλετο τὴν ἀρχὴν εἰς ἄλλους μεταβαλεῖν. ἐγὼ δὲ τοὺς ὑπὸ τοῦ ἀλιτηρίου πρὸς ἀπώλειαν ἐκδοθέντας Ἰουδαίους οὐ πονηροὺς κατανοήσας, ἀλλὰ τὸν ἄριστον πολιτευομένους τρόπον, καὶ τῷ θεῷ προσανέχοντας ὃς ἐμοί τε καὶ τοῖς προγόνοις ἡμῶν τὴν βασιλείαν διεφύλαξεν, οὐ μόνον ἀπολύω τῆς ἐκ τῶν προσαπεσταλμένων ὑπὸ Ἀμάνου γραμμάτων τιμωρίας, οἷς ποιήσετε καλῶς μὴ προσέχοντες, ἀλλὰ καὶ τιμῆς αὐτοὺς ἁπάσης τυγχάνειν βούλομαι, καὶ τὸν ταῦτα κατ’ αὐτῶν μηχανησάμενον πρὸ τῶν πυλῶν τῶν ἐν Σούσοις ἀνεσταύρωσα μετὰ τῆς γενεᾶς, τοῦ πάντα ἐφορῶντος θεοῦ ταύτην αὐτῷ τὴν δίκην ἐπιβαλόντος. κελεύω δὲ ὑμᾶς, τὸ ἀντίγραφον τῆς ἐπιστολῆς ἐκθέντας εἰς ἅπασαν τὴν βασιλείαν, τοὺς Ἰουδαίους ἀφεῖναι τοῖς ἰδίοις νόμοις χρωμένους ζῆν μετ’ εἰρήνης, καὶ βοηθεῖν αὐτοῖς ὅπως τοὺς ἐν οἷς ἠτύχησαν καιροῖς ἀδικήσαντας αὐτοὺς ἀμύνωνται, τῇ τρισκαιδεκάτῃ τοῦ δωδεκάτου μηνός, ὅς ἐστιν Ἄδαρ, τῇ αὐτῇ ἡμέρᾳ· ταύτην γὰρ αὐτοῖς ὁ θεὸς ἀντὶ ὀλεθρίας σωτήριον πεποίηκεν. ἔστω δὲ ἀγαθὴ μὲν τοῖς εὐνοοῦσιν ἡμῖν, ὑπόμνησις δὲ τῆς τῶν ἐπιβουλευσάντων κολάσεως. εἰδέναι μέντοι γε βούλομαι καὶ πόλιν καὶ πᾶν ἔθνος, κἂν τῶν γεγραμμένων τινὸς παρακούσῃ, ὅτι καὶ πυρὶ καὶ σιδήρῳ δαπανηθήσεται. τὰ μέντοι γεγραμμένα προτεθήτω καθ’ ὅλης τῆς ἡμῖν ὑπηκόου χώρας, καὶ παρασκευαζέσθωσαν πάντως εἰς τὴν προγεγραμμένην ἡμέραν, ἵνα τοὺς ἐχθροὺς μετέλθωσιν.</p></div></div>
+</body></text></TEI>
