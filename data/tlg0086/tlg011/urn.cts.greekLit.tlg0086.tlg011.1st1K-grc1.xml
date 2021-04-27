@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei:TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+  <tei:teiHeader xml:lang="en">
+    <tei:fileDesc>
+      <tei:titleStmt>
+        <tei:title xml:lang="grc">
+          <!--This ought to be the title of
+                    the work as it appears in the printed edition, 
+                    e.g. Πρὸς τὰς ἀρχομένας ὑποχύσεις -->
+        </tei:title>
+        <tei:title type="sub">an electronic transcription.</tei:title>
+        <tei:author>
+          <!-- Put the ancient author's name here -->
+        </tei:author>
+        <tei:funder>
+          <!-- e.g. Center for Hellenic Studies-->
+        </tei:funder>
+        <tei:respStmt>
+          <tei:resp>Published original versions of the electronic texts</tei:resp>
+          <tei:orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</tei:orgName>
+          <tei:persName role="principal">Gregory Crane</tei:persName>
+          <tei:persName role="principal">Leonard Muellner</tei:persName>
+          <tei:persName role="principal">Bruce Robertson</tei:persName>
+        </tei:respStmt>
+        <tei:respStmt>
+          <tei:resp>proofreader</tei:resp>
+          <tei:persName>
+            <tei:forename/>
+            <tei:surname/>
+            <!--tei:idno type=""></tei:idno-->
+          </tei:persName>
+        </tei:respStmt>
+        <tei:respStmt>
+          <tei:resp>CTS conversion</tei:resp>
+          <tei:orgName>
+            <!-- The institution of the person doing conversion -->
+          </tei:orgName>
+          <tei:persName>
+            <!-- The person doing conversion -->
+          </tei:persName>
+        </tei:respStmt>
+      </tei:titleStmt>
+      <tei:publicationStmt>
+        <tei:publisher>Open Greek and Latin</tei:publisher>
+        <tei:idno type="filename">urn.cts.greekLit.tlg0086.tlg011.1st1K-grc1.xml</tei:idno>
+        <tei:pubPlace/>
+        <tei:availability>
+          <tei:licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</tei:licence>
+        </tei:availability>
+        <tei:date when="2021-04-23"/>
+      </tei:publicationStmt>
+      <tei:sourceDesc>
+        <tei:biblStruct>
+          <tei:monogr>
+            <!-- proofread the following carefully, as it is automatically generated
+                                 from whatever metadata was provided by the scanning site -->
+            <tei:author>
+              <tei:persName>Hercher, Rudolf, 1821-1878</tei:persName>
+            </tei:author>
+            <!--Short version of title; no period; lang attribute-->
+            <tei:title xml:lang="lat">Epistolographoi hellenikoi. Epistolographi graeci, recensuit, recognovit, adnotatione critica et indicibus instruxit Rudolphus Hercher; accedunt Francisci Boissonadii ad Synesium notae ineditae</tei:title>
+            <tei:editor/>
+            <tei:imprint>
+              <tei:pubPlace>
+                <!-- like 'Paris' -->
+              </tei:pubPlace>
+              <tei:publisher>Parisiis A.F. Didot</tei:publisher>
+              <tei:date>1873</tei:date>
+            </tei:imprint>
+          </tei:monogr>
+          <!-- 'target' needs to point to the page on which the text begins. 
+                            For example 'https://archive.org/details/poetaebucoliciet00amei/page/n435/mode/2up?q=suffusiones'.
+                        -->
+          <tei:ref target="">
+            <!-- e.g. Internet Archive -->
+          </tei:ref>
+        </tei:biblStruct>
+      </tei:sourceDesc>
+    </tei:fileDesc>
+    <tei:encodingDesc>
+      <tei:editorialDecl>
+        <tei:correction>
+          <tei:p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <tei:ref target="https://nbif.ca/en">NBIF</tei:ref>.</tei:p>
+        </tei:correction>
+      </tei:editorialDecl>
+      <tei:p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</tei:p>
+      <!-- sample top level refsDecl for lines -->
+      <tei:refsDecl n="CTS">
+        <tei:cRefPattern matchPattern="(\w+)" n="lines" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <tei:p>This pointer pattern extracts lines</tei:p>
+      </tei:refsDecl>
+    </tei:encodingDesc>
+    <tei:profileDesc>
+      <tei:langUsage>
+        <tei:language ident="grc">Greek</tei:language>
+      </tei:langUsage>
+    </tei:profileDesc>
+    <tei:revisionDesc>
+      <!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
+      <tei:change when="2020-02-02" who="Jane Smith">initial markup of new file.</tei:change>
+    </tei:revisionDesc>
+  </tei:teiHeader>
+  <tei:text>
+    <tei:body>
+      <tei:div type="edition">
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:1">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:1.1">
+            <tei:p><tei:pb facs="epistolographoih00hercuoft_0266"/>α′. Φιλίππῳ. Οἱ τὰς ἡγεμονίας ἀναλαμβάνοντες πρὸς εὐεργεσίαν τῶν ἀρχομένων οὐχ ὑπὸ τῆς τύχῃς ἀλλ’ οὐδ’ ὑπὸ τῆς φύσεως προηγμένοι τὰς ἀρχὰς ἐμπιστεύονται, αἳ μεταπίπτειν εἰώθασιν, ἀλλ’ ἐπὶ ταῖς ἀρεταῖς μέγα φρονοῦσιν εὖ καὶ σφόδρα σοφῶς πολιτευόμενοι. οὐδὲν γὰρ τῶν ἐν ἀνθρώποις βέβαιον, καὶ ἐχυρὸν οὐδὲν ὃ μέχρι τῆς ἑσπέρας ἥλιος τραχείᾳ ῤοπῇ συναλλοιοῖ καὶ μεταφέρει. ποικίλλουσα τοὺς βίους ἅπαντας καθάπερ τραγῳδίας ὑποκρίσει τοῖς ἡμετέροις κακοῖς ἡ τύχη μετασκευάζει, εἴπερ μὴ διεψεύσμεθα τῆς ἀληθείας ὅτι τὸν αὐτὸν τρόπον ὅνπερ τῶν ἐκ γῆς φυομένων ἕκαστα, καὶ τοὺς ἄνδρας ἀνθεῖν ποτὲ συμβαίνει καὶ τὰς ἀκμὰς ἐν χρόνοις τισὶν ἀναλαμβανομένους πολὺ τῶν ἄλλων διαφέρειν. διὸ πειρῶ μήτε τῆς Ἑλλάδος τυραννικώτερον προΐστασθαι μήτε τοῖς ῥήμασι σοβαρώτερον· τὸ μὲν γὰρ προπετείας ἐστὶ σημεῖον, τὸ δὲ ὁμολογουμένης ἀβουλίας τεκμήριον. δεῖ γὰρ τοὺς νοῦν ἔχοντας τῶν δυναστευόντων μὴ διὰ τὰς ἀρχὰς ἀλλὰ διὰ τῶν ἀρχῶν θαυμάζεσθαι, ἵνα τῆς τύχης μεταπεσούσης τῶν αὐτῶν ἐγκωμίων ἀξιῶνται. τὰ δ’ ἄλλα εὖ πρᾶττε, ψυχὴν πρὸς φιλοσοφίαν σῶμα δὲ πρὸς ὑγίειαν ἄγων, καὶ ** ἐπιμελούμενος.</tei:p>
+          </tei:div>
+        </tei:div>
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:2">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:2.1">
+            <tei:p>β′. Ἀλεξάνδρῳ. Ἀπορῶ τίνων ἢ ποίων ἀρχή με λάβῃ πρός σε ἐφ’ ἃ γὰρ ἂν ἐπισκοπῶν ἐπιβάλω τὴν διάνοιαν, πάντα μοι φαίνεται μεγάλα καὶ θαυμαστά, καὶ λήθης οὐδὲν ἄξιον ὁρῶ, μνήμης δὲ οἰκεῖα καὶ προτρέψεως. ὧν οὐδὲν οὐδεὶς ἀμαυρώσει χρόνος· αἱ γὰρ καλαὶ τῶν διδασκάλων παραινέσεις καὶ προτρέψεις θεατὴν ἔχουσι τὸν αἰῶνα. διὸ πειρῶ τὴν ἀρχὴν μὴ εἰς ὕβριν ἀλλ’ εἰς εὐεργεσίαν κατατίθεσθαι, ἧς οὐδὲν μεῖζον τῶν ἐν βίῳ ὑπάρχειν πέφυκε. διὸ καὶ τὸ θνητὸν τῆς φύσεως πολλάκις ὑπὸ τοῦ χρεὼν διαλυόμενον ἄφθαρτον διὰ τὸ μέγεθος τῶν ἔργων κέκτηται τὴν μνήμην. τούτων οὖν τὴν ἔννοιαν ἔχε· οὐ γὰρ ἀλόγως ἠνέχθης ὡς ἔνιοι, οἳ ἀτόπως καὶ τὰς γνώμας διετέθησαν. σοὶ καὶ γένος ἔντιμον καὶ βασιλεία πατρῷος καὶ παιδεία βέβαιος καὶ δόξα περίβλεπτος, καὶ ὅσον ταῖς ἀφορμαῖς τῆς τύχης διαφέρεις, τοσοῦτον καὶ ταῖς ἀρεταῖς τῶν<tei:pb facs="epistolographoih00hercuoft_0267"/>καλῶν πρωτεύειν σε δεῖ, τὰ δ’ ἄλλα πρᾶττε μὲν τὰ συμφέροντα, ἐπιτέλει δὲ τὰ δόξαντα.</tei:p>
+          </tei:div>
+        </tei:div>
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:3">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:3.1">
+            <tei:p>γ′. Φιλίππῳ. Οἱ πολλοὶ τῶν φιλοσόφων τὴν εὐεργεσίαν θεῷ ἰσόμοιρον παρεσκεύασαν· ὡς γὰρ ἁπλῶς εἰπεῖν χάριτος δόσις καὶ ἀμοιβὴ συνέχει τοὺς τῶν ἀνθρώπων βίους, τῶν μὲν διδόντων, τῶν δὲ λαμβανόντων, τῶν δ’ αὖ πάλιν ἀνταποδιδόντων. διὸ καλὸν καὶ δίκαιόν ἐστι πάντας μὲν τοὺς ἀναξίως ἀτυχοῦντας ἐλεεῖν· οἶκτος μὲν γὰρ ἡμέρου ψυχῆς ἐστὶ σημεῖον, χαλεπότης δὲ ἀπαιδεύτου· αἰσχρὸν γὰρ καὶ σχέτλιον ἀρετὴν ἀτυχοῦσαν περιορᾶν. ὅθεν ἐπαινῶ καὶ τὸν ἡμέτερον γνώριμον Θεόφραστον λέγοντα τὴν χάριν ἀμεταμέλητον εἶναι καὶ καλὸν καρπὸν φέρειν τὸν παρὰ τῶν εὖ παθόντων ἔπαινον. διόπερ δεῖ τοὺς νοῦν ἔχοντας τῶν ἀνθρώπων εἰς πολλοὺς αὐτὴν κατατίθεσθαι, νομίζοντας χωρὶς τῆς εὐφημίας ἔρανόν τινα τοῦτον αὐτοῖς ὑπάρξειν ἐν ταῖς μεταβολαῖς τῶν πραγμάτων, καὶ εἴγε μὴ πάντας, ἀλλ’ ἕνα τινὰ τῶν εὐεργετηθέντων ἀποδώσειν τὴν χάριν. ὅθεν πειρῶ πρόθυμος μὲν εἶναι ταῖς εὐεργεσίαις, ἔποχος δὲ τοῖς θυμοῖς· τὸ μὲν γὰρ βασιλικόν τε καὶ ἥμερον, τὸ δὲ βάρβαρόν τε καὶ στυγητόν. τὰ δ’ ἄλλα καθὼς ἂν δοκιμάζῃς πρᾶττε μὴ παρορῶν τὰς λυσιτελεῖς ψήφους.</tei:p>
+          </tei:div>
+        </tei:div>
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:4">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:4.1">
+            <tei:p>δ′. Τῷ αὐτῷ. Οἱ διάραντες τῶν βασιλέων ἐπὶ φρονήσει καὶ ταῖς ὑπεροχαῖς τῶν ἄστρων ψαύσαντες εὐεργετοῦσιν οὐδὲ πρὸς τοὺς αὐτοὺς πολιτευόμενοι καιρούς, ἀλλὰ καὶ θεωροῦντὲς τὸ τῆς τύχης ἄστατον θησαυρίζουσι τὴν χάριν πρὸς ἑκάτερα, ἐν μὲν ταῖς εὐπραγίαις τιμῆς βουλόμενοι μεταλαμβάνειν (τιμὴ γὰρ οἰκεῖον ἀρετῆς ἐστίν ἐν δὲ τοῖς συμπτώμασι βοηθείας· αἱ γὰρ συμφοραὶ τἀναγκαῖα κρίνουσι τῶν καλῶν πρότερα. σαφέστατος γὰρ εὐνοίας ἔλεγχος ὁ τῆς τύχης καιρός· ἀπαιτεῖ γὰρ οὐ λόγους ἀλλὰ πράξεις δεόντως, ἡ γὰρ τῶν εὐνοουντων ὄψις ὥσπερ ἐν πελάγει χειμαζομένῳ παρεφάνη γῆ. πᾶσα γὰρ ὡς ἔοικεν ἐν ἐρήμῳ πεσοῦσα τύχη σκοπὸς ἀληθῶς ἔκκειται τοῖς πολεμεῖν ἢ ἀδικεῖν ἣ συκοφαντεῖν αἱρουμένοις, μόνη δ’ ἡ τῶν σπουδαίων διαγωγὴ τὸ τῆς τύχης εὐκίνητον οὐκ ἀπαρνεῖται, φέρουσα δ’ εὐλόγως πᾶν τὸ προσπῖπτον ἐκ τῶν κατὰ Πλάτωνα κρειττόνων εὖ διατίθεται, διὸ καὶ τὴν ταχυτῆτα τῶν πραγμάτων εὐλαβοῦ καὶ τὸν κύκλον τῆς μεταπτώσεως τήρει καὶ τὰς ἐν τῷ ζῆν ψήφους λογίζου· πολλὰ γὰρ ἡ ταὐτομάτου φορὰ κομίζει τῷ βίῳ καὶ ῥοπὰς αὐτονόμους ποιεῖ. τοῖς μὲν ἀγνοοῦσι μετάνοιαν δίδου, τοῖς δ’ εὐνοοῦσι τὰς χάριτας προχείρους νέμε· ταῦτα γὰρ πράττων οὐχ ἅπαξ ἀλλὰ δι’ ὅλου συντηρῶν ἀσφαλέστατα καὶ ἀκίνδυνα τὰ τῆς ἡγεμονίας ἕξεις μέλαθρα. ὡς μὲν ὑπὲρ μεγάλων ὀλίγα, ὡς δὲ πρὸς σέ, πάντα σχεδὸν εἴρηται.<tei:pb facs="epistolographoih00hercuoft_0268"/></tei:p>
+          </tei:div>
+        </tei:div>
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:5">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:5.1">
+            <tei:p>ε′. Θεοφράστῳ. Ἡ πρόχειρος ἀδικία τῆς πολυχρονίου λυσιτελεστέρα πέφυκεν ὑπάρχειν· ἣ μὲν γὰρ ὀλιγοχρόνιον ἔχει καὶ τὴν μνήμην καὶ τὴν βλάβην, ἣ δὲ γηράσκουσα καὶ περιπεποιημένη τὴν δυσμένειαν ἔχθραν ἀίδιον παρασκευάζει, καὶ τῇ μὲν πολλάκις λόγον δωρησάμενοι γαληνισμὸν ηὕρομεν, τῇ δὲ καὶ μερίσαντες τὰς τρικυμίας σάλον καὶ ἀνίας εἴδομεν πορθμόν. διό φημι δεῖν τὴν ἑταιρίαν μάλιστα μὲν μὴ ἀδικεῖν, οὐδὲ γὰρ εὔλογον ἔχει τὴν πρόφασιν· εἰ δὲ μή γε, ἀκουσίως τοῦτο πράξασαν θᾶττον διαλύεσθαι τὴν ἔχθραν· τὸ μὲν γὰρ μὴ ἀδικεῖν ἴσως ὑπὲρ ἄνθρωπόν ἐστι, τὸ δὲ πλανηθέντα διασώσασθαι ἐπιφέρει τι καλόν, καὶ σφόδρα τοῦτο εὐσταθοῦς διανοίας ἴδιόν ἐστιν.</tei:p>
+          </tei:div>
+        </tei:div>
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:6">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1:6.1">
+            <tei:p>ς′. Ἀριστοτέλλης βασιλεῖ Ἀλεξάνδρῳ εὖ πράττειν. Ἔγραψάς μοι περὶ τῶν ἀκροατικῶν λόγων οἰόμενος δεῖν αὐτοὺς φυλάττειν ἐν ἀπορρήτοις. ἴσθι οὖν αὐτοὺς καὶ ἐκδεδομένους καὶ μὴ ἐκδεδομένους· ξυνετοὶ γάρ εἰσι μόνοις τοῖς ἡμῶν ἀκούσασιν.<tei:pb facs="epistolographoih00hercuoft_0269"/></tei:p>
+          </tei:div>
+        </tei:div>
+      </tei:div>
+      <tei:div type="translation"/>
+      <tei:div type="apparatus"/>
+      <tei:div type="commentary"/>
+    </tei:body>
+  </tei:text>
+</tei:TEI>
