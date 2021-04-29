@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei:TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+  <tei:teiHeader xml:lang="en">
+    <tei:fileDesc>
+      <tei:titleStmt>
+        <tei:title xml:lang="grc">
+          <!--This ought to be the title of
+                    the work as it appears in the printed edition, 
+                    e.g. Πρὸς τὰς ἀρχομένας ὑποχύσεις -->
+        </tei:title>
+        <tei:title type="sub">an electronic transcription.</tei:title>
+        <tei:author>
+          <!-- Put the ancient author's name here -->
+        </tei:author>
+        <tei:funder>
+          <!-- e.g. Center for Hellenic Studies-->
+        </tei:funder>
+        <tei:respStmt>
+          <tei:resp>Published original versions of the electronic texts</tei:resp>
+          <tei:orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</tei:orgName>
+          <tei:persName role="principal">Gregory Crane</tei:persName>
+          <tei:persName role="principal">Leonard Muellner</tei:persName>
+          <tei:persName role="principal">Bruce Robertson</tei:persName>
+        </tei:respStmt>
+        <tei:respStmt>
+          <tei:resp>proofreader</tei:resp>
+          <tei:persName>
+            <tei:forename/>
+            <tei:surname/>
+            <!--tei:idno type=""></tei:idno-->
+          </tei:persName>
+        </tei:respStmt>
+        <tei:respStmt>
+          <tei:resp>CTS conversion</tei:resp>
+          <tei:orgName>
+            <!-- The institution of the person doing conversion -->
+          </tei:orgName>
+          <tei:persName>
+            <!-- The person doing conversion -->
+          </tei:persName>
+        </tei:respStmt>
+      </tei:titleStmt>
+      <tei:publicationStmt>
+        <tei:publisher>Open Greek and Latin</tei:publisher>
+        <tei:idno type="filename">urn.cts.greekLit.tlg0632.tlg002.1st1K-grc1.xml</tei:idno>
+        <tei:pubPlace/>
+        <tei:availability>
+          <tei:licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</tei:licence>
+        </tei:availability>
+        <tei:date when="2021-04-23"/>
+      </tei:publicationStmt>
+      <tei:sourceDesc>
+        <tei:biblStruct>
+          <tei:monogr>
+            <!-- proofread the following carefully, as it is automatically generated
+                                 from whatever metadata was provided by the scanning site -->
+            <tei:author>
+              <tei:persName>Hercher, Rudolf, 1821-1878</tei:persName>
+            </tei:author>
+            <!--Short version of title; no period; lang attribute-->
+            <tei:title xml:lang="lat">Epistolographoi hellenikoi. Epistolographi graeci, recensuit, recognovit, adnotatione critica et indicibus instruxit Rudolphus Hercher; accedunt Francisci Boissonadii ad Synesium notae ineditae</tei:title>
+            <tei:editor/>
+            <tei:imprint>
+              <tei:pubPlace>
+                <!-- like 'Paris' -->
+              </tei:pubPlace>
+              <tei:publisher>Parisiis A.F. Didot</tei:publisher>
+              <tei:date>1873</tei:date>
+            </tei:imprint>
+          </tei:monogr>
+          <!-- 'target' needs to point to the page on which the text begins. 
+                            For example 'https://archive.org/details/poetaebucoliciet00amei/page/n435/mode/2up?q=suffusiones'.
+                        -->
+          <tei:ref target="">
+            <!-- e.g. Internet Archive -->
+          </tei:ref>
+        </tei:biblStruct>
+      </tei:sourceDesc>
+    </tei:fileDesc>
+    <tei:encodingDesc>
+      <tei:editorialDecl>
+        <tei:correction>
+          <tei:p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <tei:ref target="https://nbif.ca/en">NBIF</tei:ref>.</tei:p>
+        </tei:correction>
+      </tei:editorialDecl>
+      <tei:p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</tei:p>
+      <!-- sample top level refsDecl for lines -->
+      <tei:refsDecl n="CTS">
+        <tei:cRefPattern matchPattern="(\w+)" n="lines" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <tei:p>This pointer pattern extracts lines</tei:p>
+      </tei:refsDecl>
+    </tei:encodingDesc>
+    <tei:profileDesc>
+      <tei:langUsage>
+        <tei:language ident="grc">Greek</tei:language>
+      </tei:langUsage>
+    </tei:profileDesc>
+    <tei:revisionDesc>
+      <!-- put your name in 'who' and this date in YYYY-MM-DD format in 'when' -->
+      <tei:change when="2020-02-02" who="Jane Smith">initial markup of new file.</tei:change>
+    </tei:revisionDesc>
+  </tei:teiHeader>
+  <tei:text>
+    <tei:body>
+      <tei:div type="edition">
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0632.tlg002.1st1K-grc1:1">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0632.tlg002.1st1K-grc1:1.1">
+            <tei:p><tei:pb facs="epistolographoih00hercuoft_0695"/>α′. Πυθαγόρας Ἀναξιμένει. Καὶ σύ, ὦ λῷστε, εἰ μηδὲν ἀμείνων ἦς Πυθαγόρεω γενεήν τε καὶ κλέος, μεταναστὰς ἂν οἴχεο ἐκ Μιλήτου· νῦν δὲ κατερύκει σε ἡ πατρόθεν εὔκλεια, καὶ ἐμὲ δὲ ἂν κατείρυκεν Ἀναξιμένει ἐοικότα. εἰ δὲ ὑμεῖς οἱ ὀνήιστοι τὰς πόλιας ἐκλείψετε, ἀπὸ μὲν αὐτέων ὁ κόσμος αἱρεθήσεται, ἐπικινδυνότερα δ’ αὐτῇσι τὰ ἐκ Μήδων. οὔτε δὲ αἰεὶ καλὸν αἰθερολογεῖν, μελεδωνόν τε εἶναι τῇ πατρίδι κάλλιον. καὶ ἐγὼ δὲ οὐ πάντα περὶ τοὺς ἐμεωυτοῦ μύθους, ἀλλὰ καὶ ἐν πολέμοις, οὓς διαφέρουσι εἰς ἀλλήλους Ἰταλιῶται.</tei:p>
+          </tei:div>
+        </tei:div>
+        <tei:div type="textpart" subtype="1" n="urn:cts:greekLit:tlg0632.tlg002.1st1K-grc1:2">
+          <tei:div type="textpart" subtype="2" n="urn:cts:greekLit:tlg0632.tlg002.1st1K-grc1:2.1">
+            <tei:p>β′. Πυθαγόρας Ἱέρωνι. Ἀσφαλὴς ὁ ἐμὸς βίος καὶ ἡσύχιος, ὁ δὲ σὸς κατ’ οὐδὲν ἐμοὶ προσπελάζει. μέτριος ἀνὴρ καὶ λιποδεὴς Σικελικῆς τραπέζης οὐδὲν προσδεῖται. πάντ’ ἔχει Πυθαγόρας ἱκανὰ τὰ καθ’ ἡμέραν, οἷ ἂν ἔλθῃ· θεραπεία δὲ δυνάστου βαρὺ καὶ ἐπαχθὲς τῷ μὴ εἰθισμένῳ. μέγα καὶ ἀσφαλὲς αὐτάρκεια· οὔτε γὰρ ἔχει τὸν φθονήσοντα οὔτε τὸν ἐπιβουλεύσοντα. διὸ καὶ δοκεῖ εἶναι ἐγγυτάτω θεοῦ ἡ διαγωγή. διάθεσις ἀγαθὴ οὐ γεννᾶται ὑπὸ ἀφροδισίων οὐδὲ ὑπὸ ἐδεσμάτων, ἀλλ’ ὑπὸ ἐνδείας ἀγούσης πρὸς ἀνδρὸς ἀρετήν· ἡδοναὶ δὲ ποικίλαι καὶ ἀκρατεῖς δουλοῦνται ψυχὰς ἀσθενῶν ἀνθρώπων, πολὺ δὲ μάλιστα ὧν σὺ ἀπολαύεις. διὸ καὶ ἐπιδοὺς σεαυτὸν εἰς τὰ τοιαῦτα αἰωρῇ καὶ οὐ δύνασαι σώζεσθαι· λόγος γὰρ ὁ παρὰ σοῦ οὐκ ἐναντιοῦται τοῖς ἀσυμφόροις. μὴ οὖν κάλει Πυθαγόραν συμβιώσοντά σοι· οὐδὲ γὰρ ἰατροὶ αἱροῦνται τοῖς νοσοῦσι συγκάμνειν.</tei:p>
+          </tei:div>
+        </tei:div>
+      </tei:div>
+      <tei:div type="translation"/>
+      <tei:div type="apparatus"/>
+      <tei:div type="commentary"/>
+    </tei:body>
+  </tei:text>
+</tei:TEI>
