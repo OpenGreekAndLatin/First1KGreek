@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Epistulae</title>
+        <author xml:lang="lat">Bruti Epistulae</author>
+        <editor>Rudolf Hercher</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName></respStmt>
+        <respStmt>
+          <persName><forename>Julia</forename><surname>Deen</surname></persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Panagiotis Androulakis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Tom Chambers</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Tamara Cheishvili</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Francesca Cocchi</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Saulo Delle Donne</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Axelle Gaydon</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Katerina Giakimtsouki-Magaraki</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Kirsty Harrod</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Alexis Heng</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Mayara Krieger Bogossian Khalil</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sheanna Murray</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Humberto Olmos Pellicer</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Regan</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Emeline Torrens</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+      
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1803.tlg001.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+        <date when="2021-04-07"/></publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Epistolographi Graeci</title>
+            <editor>Rudolf Hercher</editor>
+            <imprint>
+              <pubPlace>Paris</pubPlace>
+              <publisher>A. F. Didot</publisher>
+              <date>1873</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.archive.org/stream/epistolographoih00hercuoft#page/178/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+   
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+      
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      
+      <refsDecl n="CTS">
+        <cRefPattern n="epistle"  matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts epistle.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+    
+    <revisionDesc>
+      <change when="2021-05-07" who="Lisa Cerrato">initial markup of new file</change>
+    </revisionDesc>
+  </teiHeader>
+  
+  <text>
+    <body>
+      
+<div type="edition" n="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" xml:lang="grc"> 
+<pb facs="epistolographoih00hercuoft_0272"/> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="1"> 
+<head rend="center"><label>α′.</label> Βροῦτος Περγαμηνοῖς.</head>
+<p rend="indent">Ἀκούω ὑμᾶς Δολοβέλλᾳ χρήματα δεδωκέναι. ἃ εἰ μὲν ἑκόντες ἔδοτε, ὁμολογεῖτε ἀδικεῖν· εἰ δὲ ἄκοντες, ἀποδείξατε τῷ ἐμοὶ ἑκόντες δοῦναι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="2"> 
+<head rend="center"><label>β′.</label> Περγαμηνοὶ Βρούτῳ.</head>
+<p rend="indent">Χρήματα Δολοβέλλᾳ μὲν ἔτι εὐποροῦντες ἐβιάσθημεν παρασχεῖν, σὺ δὲ ἡμᾶς δοῦναι θέλοντας ᾔτησας, ὅτε δυσπλήρωτον ἐν ἀπορίᾳ τὸ πρόθυμον.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="3"> 
+<head rend="center"><label>γ′.</label> Βροῦτος Περγαμηνοῖς.</head>
+<p rend="indent">Τὰ χρήματα ἡμῖν εἰς ὃν ἐπετάξαμεν καιρὸν μὴ πέμψαντες οὐδὲν ἄλλο εἰ μὴ τὸ δοκεῖν μετὰ τοῦ βεβιάσθαι ταῦτα παρασχεῖν ὠφέλησθε. ὥστε διχόθεν ὑμᾶς βεβλάφθαι, καὶ τῷ τὸ ἀνάλωμα κατ’ ἴσον ὑπομεῖναι (δώσετε γὰρ τοσούτῳ κάκιον ὅσῳπερ ἄκοντες) καὶ τῷ ἣν εἰκὸς ἀντὶ τῶν ὑπουργηθέντων φέρεσθαι χάριν ὑμᾶς ἀφῃρῆσθαι· οὐ γὰρ χρὴ τὴν τῶν προθύμων ὑπηκόων παρρησίαν νέμεσθαι τοὺς οὐκ ἂν εἰ μὴ μετὰ ἀνάγκης ταῦθ’ ἡμῖν παρασχόντας.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="4"> 
+<head rend="center"><label>δ′.</label> Περγαμηνοὶ Βρούτῳ.</head>
+<p rend="indent">Εἰ ῥᾴδιος ὁ πορισμὸς ἦν, οὐκ ἂν περιεμείναμεν βραδυτῆτι διαβαλεῖν τὴν χάριν. τί γὰρ δὴ ὄφελος τοῖς κἂν ἀρνήσωνται βιασθησομένοις, ἐὰν μετὰ μελλήσεως ἀμφότερα ζημιωθῶσι, καὶ διδόντες τὸ ἀνάλωμα καὶ τὴν ἀμοιβὴν ἀπολέσαντες; ἀλλ’ ἴσθι ὅτι τὸ μὲν τάχος περιουσίας ἔργον ἐστίν, ὁ δὲ χρόνος σπουδῆς ἐκνικῆσαι βιαζομένης ἀπορίαν. οὐ δὴ δίκαιον τὴν τῶν παρὰ δύναμιν ἐπεκταθέντων κακοπραγίαν ἔλαττον φέρεσθαι τῶν οὐκ ἂν εἰ μὴ ὑπὸ εὐπορίας ταχυνάντων.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="5"> 
+<head rend="center"><label>ε′.</label> Βροῦτος Περγαμηνοῖς.</head>
+<p rend="indent">Τὰ χρήματα ὑμῶν ἐκόμισαν οἱ πρέσβεις, ὡς μὲν πρὸς ἣν ᾐτιᾶσθε ἀσθένειαν πλείω, ὡς δὲ πρὸς ἣν ᾐτούμεθα χρείαν ὀλίγα. φυλάττεσθε οὖν μὴ καὶ δύνησθε πλεῖον οὗ προσποιεῖσθε καὶ βούλησθε ἔλαττον οὗ δύνασθε.<pb facs="epistolographoih00hercuoft_0273"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="6"> 
+<head rend="center"><label>ϛ′.</label> Περγαμηνοὶ Bρούτῳ.</head>
+<p rend="indent">Ἐπέμψαμέν σοι χρήματα εἰ καὶ τῆς σῆς ἐλάττονα χρείας, ἀλλ’ οὖν τῆς ἑαυτῶν ὑποσχέσεως πλείονα· παρῃτούμεθα μὲν γὰρ ὡς μικρότερα ἢ βουλόμεθα ἔχοντες, ἐπορίσαμεν δὲ ὡς πλεῖον ἢ δυνάμεθα σπουδάσαντες.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="7"> 
+<head rend="center"><label>ζ′.</label> Βροῦτος Περγαμηνοῖς.</head>
+<p rend="indent">Δολοβέλλας ἐστὶν ἡμῖν μὲν πολέμιος, ὑμῖν δὲ φίλος, ᾧ εἰς ἅπαν καὶ καθ’ ἡμῶν ὑπουργεῖσθε. τί δῆτα ἂν ἕποιτο τοῖς τὰ αὐτὰ ἐκείνῳ ἑλομένοις εἰ μὴ ἁλόντας ἴσα πολεμίοις πάσχειν; οὐδὲ γὰρ μετάνοιαν δοτέον τοῖς οὐ πρὶν ἢ εἰς τὸ παντελὲς ἀποκαμεῖν μετανοοῦσι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="8"> 
+<head rend="center"><label>η′.</label> Περγαμηνοὶ Βρούτῳ.</head>
+<p rend="indent">Τῆς μὲν πάλαι πρὸς Δολοβέλλαν φιλίας σὺ αἴτιος, ὀψὲ ἡμῖν ἐπιστέλλων· ἀνάγκη γὰρ τὰς ἐκείνου κολακεύειν ἐπιταγὰς πρὶν ἢ σχεῖν πρὸς ὃν ἀποκλίνωμεν. τὴν δὲ εἰς τὸ μέλλον μετάνοιαν μὴ ἀφαιροῦ τῶν εἰ καὶ βραδέως, ἀλλ’ οὖν ὅταν δύνωνται τὸ ἀγνοηθὲν διορθούντων.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="9"> 
+<head rend="center"><label>θ′.</label> Βροῦτος Περγαμηνοῖς.</head>
+<p rend="indent">Ψήφισμα ὑμέτερον οἱ πρέσβεις ὑμῶν ἀπεκόμισάν μοι ἐν Ἀβδήροις τὴν ἀπ’ Ἰταλίας στρατιὰν ἐπισκοπουμένῳ, δεξάμενος δὲ τῆς μὲν βραδυτῆτος ὑμᾶς ἐμεμψάμην (Περγαμηνοὺς γὰρ ταῦτα φρονεῖν ἐκ πολλοῦ ἂν ἐβουλόμην καὶ ἔδει), ἐπῄνεσα δὲ τῆς εἰς τὰ ἄλλα προθυμίας καὶ τῆς δωρεᾶς τῶν διακοσίων ταλάντων, δι’ ἧς πάλαι ἄκοντες δοῦναι Δολοβέλλᾳ τὰ πεντήκοντα ἐπεδείξασθε.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="10"> 
+<head rend="center"><label>ι′.</label> Περγαμηνοὶ Βρούτῳ.</head>
+<p rend="indent">Καὶ τάχιον ἐφρονοῦμεν ἃ προσῆκον ἦν, καὶ νῦν οὐ βραδέως ἀλλ’ ἡνίκα δυνατὸν ἐξεγένετο ἡμῖν τὰ εἰκότα συντελοῦμεν. οἱ γοῦν ἐν περιουσίᾳ μὴ πλεῖον Δολοβέλλᾳ πεντήκοντα δόντες ταλάντων τετραπλασίονά σοι καίπερ ἐνδεόμενοι συνεισφέρομεν, ὅπως μάθῃς, ὅσον ἑκούσιος ὑπουργία πενομένων τοὺς ἀβουλήτως ἐν εὐπορίᾳ βιασθέντας ὑπεραίρει.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="11"> 
+<head rend="center"><label>ια′.</label> Βροῦτος Ῥοδίοις.</head>
+<p rend="indent">Ξανθίους ἀποστάντας ἡμῶν χειρωσάμενοι ἡβηδὸν ἀπεσφάξαμεν, τήν τε πόλιν αὐτῶν κατεπρήσαμεν· Παταρεῦσι δὲ προσθεμένοις ἡμῖν τῶν τε φόρων ἄφεσιν ἐδώκαμεν, ἐλευθέρους αὐτοὺς καὶ αὐτονόμους συγχωρήσαντες εἶναι, εἰς ἐπισκευήν τε τῶν ὑπὸ τοῦ χρόνου καταλελυμένων παρ’ αὐτοῖς πεντήκοντα τάλαντα ἐχαρισάμεθα. ὑμῖν οὖν βουλευομένοις περὶ ἑαυτῶν <pb facs="epistolographoih00hercuoft_0274"/> πάρεστιν ὁρᾶν ὄψει, εἴτε χρὴ πολεμίους ἡμᾶς ὥσπερ Ξανθιοι, εἴτε φίλους καὶ εὐεργέτας ὅνπερ τρόπον Παταρεῖς αἱρεῖσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="12"> 
+<head rend="center"><label>ιβ′.</label> Ῥόδιοι Βρούτῳ.</head>
+<p rend="indent">Οὐκ εἰ σὺ βαρέως τοῖς ἐλευθεριάσασι Ξανθίων προσηνέχθης, ἤδη καὶ ἡμεῖς τοὺς ἐπὶ δουλείᾳ δεκασθέντας μιμησόμεθα Παταρεῖς, ἀλλ’ ἐκείνων μὲν ἀπευξάμενοι τὴν τύχην πειρασόμεθα τῆς εὐγενείας ἔχεσθαι, τούτους δὲ μεμψάμενοι τῆς γνώμης οὐ δεησόμεθα τῶν ἀπὸ σοῦ λημμάτων, ἐνδοξοτέραν ἡγούμενοι τὴν μετὰ κινδύνων ἐλευθερίαν τῆς ἐπὶ τῷ κερδαίνειν αὐτομολίας.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="13"> 
+<head rend="center"><label>ιγ′.</label> Βροῦτος Κώοις.</head>
+<p rend="indent">Ῥόδος μὲν ἤδη δεδούλωται Κασσίῳ, πόλις αὐθαδέστερον αἰσθομένη τῆς οἰκείας ἰσχύος ἢ βεβαιότερον, Λυκία δὲ ἡμῖν ὑπήκοος πᾶσα, ἣ μὲν πολέμῳ καμοῦσα, ἣ δ’ ἐκ τῆς ἀνάγκης ὠφελημένη τὸ ἀβίαστον· ἑκοῦσα γὰρ εἵλετο ἃ μετ’ οὐ πολὺ ἔμελλε μὴ βουλομένη. καὶ ὑμεῖς οὖν ἕλεσθε ἢ πολέμῳ βιασθέντες δοῦλοι ἢ ἑκουσίως ἡμᾶς δεξάμενοι φίλοι γενέσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="14"> 
+<head rend="center"><label>ιδ′.</label> Κῶοι Βρούτῳ.</head>
+<p rend="indent">Οὔτε ἡ Ῥοδίων ἅλωσις ἐξέπληξεν ἂν τοὺς μὴ τὰ σὰ φρονοῦντας, οὔτε ἡ Λυκίων εὐπραξία μετὰ κολακείας ἔπεισεν· ἐλπὶς γὰρ καὶ φόβος ἐν φίλοις μὲν ἀξιόπιστα, ἐν δὲ τοῖς ἠλλοτριωμένοις εὐκαταφρόνητα. ἀλλ’ ἡμεῖς ἄνωθέν σοι προσχωροῦντες καθ’ ἓν ἀχθόμεθα, εἴ γε δόξομεν ἢ ἀπειλῆς ἢ ὑποσχέσεως γεγονέναι κτῆμα. ἔχε οὖν ἡμᾶς ὑπόδειγμα φιλίας πρὸς ἄλλους μᾶλλον ἢ ἑτέρων ἐφ’ ἡμᾶς προσδέου.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="15"> 
+<head rend="center"><label>ιε′.</label> Βροῦτος Κώοις.</head>
+<p rend="indent">Οὐδὲν οὔτε θαλάττης ἄνευ νεῶν οὔτε ἀγεωργήτου γῆς ὄφελος. πονήσατε οὖν περὶ τὰ σκάφη ὡς εἰ τῶνδε εἴητε ἄποροι, μηδὲν ἠπειρωτῶν πλέον ἐκ θαλάττης ὀνησόμενοι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="16"> 
+<head rend="center"><label>ιϚ′.</label> Κῶοι Βρούτῳ.</head>
+<p rend="indent">Καὶ γεωργίαν ἔστιν ὅτε καὶ ναυτιλίαν ἐμποδίζει καιρός, ἀλλ’ οὔτε γῆς ἀποστεροῦνται οὔτε θαλάττης οἱ φύσει ταῦτα ἔχοντες· οὐ γὰρ ἴσον τῷ μηδ’ ὅλως κεκτῆσθαι τὸ κἂν ἐλλείπῃ ποτὲ εἰς τὴν χρείαν εὐδιόρθωτον.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="17"> 
+<head rend="center"><label>ιζ′.</label> Βροῦτος Παταρεῦσιν.</head>
+<p rend="indent">Δαμάσιππον Ῥοδίων ναύαρχον μετὰ τὴν Ῥοδίων ἅλωσιν φυγόντα μετὰ δυοῖν καταφράκτων ἐπυθόμην παρὰ Ἑρμοδώρου τοῦ Σαμίου ἐμπόρου πεφηνέναι ἐν τῷ μεγίστῳ ὑμετέρῳ λιμένι. καταχθῆναι μὲν οὖν <pb facs="epistolographoih00hercuoft_0275"/> αὐτὸν ἐκεῖσε οὐδὲν ἁμάρτημα ὑμέτερον ἡγοῦμαι εἶναι, καταχθέντα δὲ εἰ περαιτέρω ποι τῆς γῆς ὑμῶν ἀποδρᾶναι δρᾶναι ἐάσετε, καὶ ἀδικίαν καὶ ἀνανδρίαν ὑμῶν καταγνώσομαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="18"> 
+<head rend="center"><label>ιη′.</label> Παταρεῖς Βρούτῳ.</head>
+<p rend="indent">Εἰ θᾶττον ἡμῖν Ἑρμόδωρος ἢ σοὶ περὶ τοῦ ναυάρχου προσήγγειλεν, οὐκ ἄν, ὥσπερ εἰσπλεύσας ἔλαθε Δαμάσιππος, οὕτω καὶ ἀπαίρων διέφυγεν, ἀλλὰ μέρος ἂν τῆς Ῥοδίων ἁλώσεως ἐγένετο. νυνὶ δὲ σύγγνωθι τῷ τέλει τῆς ἀγνοίας, ἧς καὶ τῇ ἀρχῄ ὑποτίμησιν δέδωκας· οὔτε γὰρ ἀδικίας ἔργον τὸ λαθόντα καταδέξασθαι, οὔτε ἀσθενείας τὸ ἐκδιδράσκοντα ἀγνοῆσαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="19"> 
+<head rend="center"><label>ιθ′.</label> Βροῦτος Καυνίοις.</head>
+<p rend="indent">Εὐνοεῖν μὲν ἡμῖν πρεσβευόμενοι προσποιεῖσθε, τὰ δὲ ἔργα εἰς οὐδὲν ὧν ἐχρῆν ἐσπουδακότας ἐλέγχει. ὁρᾶτε οὖν μὴ καὶ ἡμεῖς τῇ διὰ τῶν ἔργων πεισθέντες δυσμενείᾳ μᾶλλον ἢ τὴν ἐκ τῶν λόγων ἡδονὴν θηρώμενοι ὡς ἐχθροῖς ὑμῖν προσενεχθῶμεν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="20"> 
+<head rend="center"><label>κ′.</label> Καύνιοι Βρούτῳ.</head>
+<p rend="indent">Οὐδὲν θαυμαστὸν εἰ πρεσβευόμενοι ὑπὲρ εὐνοίας ἐν ταῖς ὑπουργίαις καταδεέστεροι τῆς χρείας ἐλεγχόμεθα· ἐκεῖνο μὲν γὰρ ἐσπουδακότων ἔργον, τοῦτο δὲ ἀσθενούντων. διὸ χρή τε τὴν ἐκ τῆς προθυμίας διάθεσιν μᾶλλον ἢ τὸ ἐν τοῖς ἔργοις ὑπολιπὲς σκοποῦντα φίλους νομίζειν τοὺς καὶ ἃ μὴ δυνάμεθα σπουδάζοντας.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="21"> 
+<head rend="center"><label>κα′.</label> Βροῦτος Λυκίοις.</head>
+<p rend="indent">Ὅσα ὑμῖν ἐστὶ μηχανικὰ ὄργανα τειχομαχίας ἢ ναυμαχίας ἐπὶ Καῦνον, παραπέμψατε Κασσίῳ τῷ συνάρχοντί μου πορθοῦντι Ῥόδον θᾶττον ἡμερῶν τριάκοντα, ἀφ’ ἧς ἂν ἡμέρας τὴν ἐπιστολὴν ταύτην δέξησθε, ἵνα μὴ τοῖς κατ’ ἐκείνων ἡμῖν παρεσκευασμένοις ἀναγκασθῶμεν χρήσασθαι καθ’ ὑμῶν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="22"> 
+<head rend="center"><label>κβ′.</label> Λύκιοι Βρούτῳ.</head>
+<p rend="indent">Ὀξείας ἐπιταγῆς ἀπόκρισις μία τὸ ῥᾳδίως ὑπουργῆσαι. διὸ πειρασόμεθα φθάσαι τοῖς ἔργοις τὴν ἀπὸ σοῦ προθεσμίαν, ἐπεὶ καὶ σὺ ταῖς ἀπειλαῖς τὴν παρ’ ἡμῶν ὑπόσχεσιν ἔφθακας. εἴη μέντοι τὰ ὄργανα μὴ ἄχρηστα φανῆναι διὰ παλαιότητα, ὡς καὶ τὰ Ῥοδίων εὑρήσεις ἐπ’ ἄλλους ἄχρηστα.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="23"> 
+<head rend="center"><label>κγ′.</label> Βροῦτος Λυκίοις.</head>
+<p rend="indent">Αἱ μηχαναὶ ὑμῶν μετὰ τὸν πόλεμον, ὡς ἡ παροιμία, ἐκομίσθησαν. ἀλλ’ ὑμᾶς γε ἐπαινοῦμεν· οὐ γὰρ ὑστερήσατε εἰς ἣν ἐκελεύσαμεν προθεσμίαν, Κάσσιος δὲ ἔφθασεν.<pb facs="epistolographoih00hercuoft_0276"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="24"> 
+<head rend="center"><label>κδ′.</label> Λύκιοι Βρούτῳ.</head>
+<p rend="indent">Καὶ σοὶ τάχιον ἐλπίδος νικᾶν συμβαίνει, καὶ ἡμῖν μὴ βράδιον ἐπιταγῆς ὑπουργεῖν, εἰ μέλλεις τοὺς συμμάχους ἐξ ὧν ἂν κελεύσῃς χρόνων μᾶλλον ἢ ἐξ ὧν ἂν ταχύνῃ Κάσσιος ἀποδέχεσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="25"> 
+<head rend="center"><label>κε′.</label> Βροῦτος Λυκίοις.</head>
+<p rend="indent">Ξάνθιοι τὴν ἐμὴν εὐεργεσίαν ὑπεριδόντες τάφον τῆς ἀνοίας ἐσχήκασι τὴν πατρίδα, Παταρεῖς δὲ πιστεύσαντες ἑαυτοὺς ἐμοὶ οὐδὲν ἐλλείπουσι διοικοῦντες τὰ καθ’ ἕκαστα τῆς ἐλευθερίας. ἐξὸν οὖν καὶ ὑμῖν ἢ τὴν Παταρέων κρίσιν ἢ τὴν Ξανθίων τύχην ἑλέσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="26"> 
+<head rend="center"><label>κς′.</label> Λύκιοι Βρούτῳ.</head>
+<p rend="indent">Ξανθίοις μὲν συναχθόμεθα τῆς συμφορᾶς, ἣν πρόστιμον τῆς ἀνοίας ἔχουσι τῷ μηδὲ μετανοῆσαι δύνασθαι, Παταρεῦσι δὲ συνήσθημεν σωφρόνως ἅμα καὶ εὐτυχῶς ἑλομένοις ἃ ἔμελλε συνοίσειν αὐτοῖς. αὐτοὶ δὲ οὐχ οὕτως ἠλίθια φρονοῦμεν, ὥστε, παρὸν ἐν φίλοις ἀριθμουμένοις εὐτυχεῖν, τὴν τῶν δι’ ἔχθραν κεκολασμένων ἀτυχίαν ἑλέσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="27"> 
+<head rend="center"><label>κζ′.</label> Βροῦτος Λυκίοις.</head>
+<p rend="indent">Ξανθίων τοὺς διαφυγόντας οἱ ὑποδεξάμενοι ὑμῶν οὐδὲν μετριώτερον πείσονται Ξανθίων, Παταρεῦσι δὲ καὶ Μυρεῦσι καὶ Κωρυκίοις καὶ Φασηλίταις, κἂν ἄλλο τι τι εὖ ποιεῖν ὑποδεξάμενοι αὐτοὺς ἐθέλωσιν, ἐπιτρέπω, ἷνα ὀρθῶς αὑτοῖς βεβουλεῦσθαι φίλους ἡμᾶς ἀλλὰ μὴ πολεμίους ἑλόμενοι ἔργῳ αἴσθωνται ὁρῶντες Ξανθίους.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="28"> 
+<head rend="center"><label>κη′.</label> Λύκιοι Βρούτῳ.</head>
+<p rend="indent">Οὐδ’ αὐτοὶ Ξανθίους ὑποδέξασθαι ἐγνώκαμεν, εἰ κοινωνεῖν τῆς συμφορᾶς μᾶλλον ἢ ἐπικουφίζειν μέλλομεν αὐτοῖς τὸ ἀτύχημα, ἐοίκασι δὲ κἀκεῖνοι παραλιπόντες τοὺς μηδὲν ὀνήσαντας ἡμᾶς Παταρεῦσι καὶ Μυρεῦσι καὶ Κωρυκίοις καὶ Φασηλίταις ὡς βεβαιοτέροις προσφεύξεσθαι βοηθοῖς. δῆλον γὰρ πεποίηκας, ὦ Βροῦτε, οὐ δι’ ὀργὴν ἐλαύνων τοὺς φυγάδας ἐκ Λυκίας, ὑπὸ δὲ χρηστότητος διδάσκων τίσιν ἥδιον αὐτοὺς χαρίσῃ.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="29"> 
+<head rend="center"><label>κθ′.</label> Bροῦτος Κώοις.</head>
+<p rend="indent">Οἱ πεμφθέντες ἐπὶ τὴν παρ’ ὑμῶν συμμαχίαν ἀπήγγειλάν μοι τὰς ναῦς ὑμῶν ἄρτι κατασκευάζεσθαι· εἰ δὲ εἰς τὸν τοῦ πολέμου καιρὸν παρασκεθάζεσθε, τί χρήσεσθε ταῖς παρασκευαῖς οὐκ οἶδα. τί γὰρ πλέον ἰσχύος ἀκαίρου, ἧς παντελὴς ἀσθένεια τὸ ἄχρηστον; <pb facs="epistolographoih00hercuoft_0277"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="30"> 
+<head rend="center"><label>λ′.</label> Κῶοι Βρούτῳ.</head>
+<p rend="indent">Τοὺς μὲν ἰδίους ἐπιστάμεθα καιροὺς ὅτι μακρόθεν τῆς χρείας προηυτρεπίσθαι δεῖ, τοὺς δὲ τῶν συμμάχων οὐ ῥᾴδιον συνιδεῖν, εἰ μὴ πρὸ πολλοῦ τις καταγγέλλοι. τὴν μέντοι παρασκευὴν μὴ νόμιζε ἄχρηστον εἶναι διὰ τὸ βραδύ· κἂν γὰρ εἰς τὸ παρὸν ἐλλείπῃ, σώζεται γοῦν ἀκραιφνὴς εἰς τὰ μέλλοντα.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="31"> 
+<head rend="center"><label>λα′.</label> Βροῦτος Καυνίοις.</head>
+<p rend="indent">Αἱ μὲν κατ’ ὄψιν ὑπουργίαι τῶν ὑπηκόων κολακείας καὶ φόβου τὸ πλέον μεμοίρανται, τὸ δὲ προθύμως εἰς ὃ ἂν ἐπιστέλλωμεν ὑπακούειν πολλὴν ἐνδείκνυται βεβαιότητα. καὶ ὑμεῖς οὖν ὑπὲρ ὧν ἐγράψαμεν διασκέψασθε, πότερον ὑμῶν καὶ τὰς ἄλλας ὑπουργίας δι’ ἀνάγκην ἁπάσας ἢ δι’ εὔνοιαν χρὴ δέχεσθαι. πίστις γὰρ αὐτάρκης βεβαιότητος φανεῖται τὸ διηνεκῶς ὑμῶν εἰς τὰς χρείας ἕτοιμον.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="32"> 
+<head rend="center"><label>λβ′.</label> Καύνιοι Βρούτῳ.</head>
+<p rend="indent">Πίστις εὐνοίας οὐ τὸ συνεχῶς ὑπουργεῖν, τοῦτο γὰρ μόνης ἰσχύος ἔργον, ἀλλὰ τὸ μὴ ὀκνεῖν ἐν οἷς ἄν τις δυνατὸς ᾖ καιροῖς. ἡμεῖς δ’ εἰ μέλλοιμεν ἐκ τῶν ἐλλειμμάτων τὴν παλαιὰν σπουδὴν ἀπιστεῖσθαι, μάτην ἂν ἡγησαίμεθα καὶ τὰ πρότερα μεμοχθηκέναι· οὐδὲ γὰρ εἰκὸς τότε ἡμᾶς πεπλάσθαι τὴν πρὸς σὲ φιλίαν, ἣν φόβος μὲν καὶ ἀποῦσαν πάντως ἂν ἐκολάκευσε, κολακεία δὲ καὶ παροῦσαν ἂν διεψεύσατο.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="33"> 
+<head rend="center"><label>λγ′.</label> Βροῦτος Δαμᾷ.</head>
+<p rend="indent">Ὅπλων καὶ χρημάτων χρεία. ἢ πέμπε ἢ ἀποφαίνου.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="34"> 
+<head rend="center"><label>λδ′.</label> Δαμᾶς Βρούτῳ.</head>
+<p rend="indent">Εὐπορούντων ἔργον τὸ πέμψαι, πενομένων δὲ τὸ ἀποφαίνεσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="35"> 
+<head rend="center"><label>λε′.</label> Βροῦτος Κυζικηνοῖς.</head>
+<p rend="indent">Τὰ ἀπὸ Βιθυνίας ὅπλα παραπέμψατε μέχρι Ἑλλησπόντου ἢ κατὰ γῆν ἐπιθέμενοι ἢ κατὰ θάλατταν, αἴσθοισθε δ’ ἂν αὐτοὶ τῆς ῥᾴονος αὐτῶν κομιδῆς. εἰ μέντοι βραδύτερον ἢ δεῖ ἡμῖν ἔλθοι, ἢ καὶ ὑπὸ τοῖς πολεμίοις γένοιτο, ὑφ’ ὑμῶν ἠδικῆσθαι δόξομεν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="36"> 
+<head rend="center"><label>λϛ′.</label> Κυζικηνοὶ Βρούτῳ.</head>
+<p rend="indent">Παραπέμψαι τὰ ὅπλα καὶ κατὰ γῆν διὰ τοὺς πολεμίους καὶ κατὰ θάλατταν διὰ τοὺς χειμῶνας χαλεπόν, μάλιστα σοῦ τὰ ἐναντιώτατα συνάψαντος, τάχος καὶ ἀσφάλειαν. ὅμως δὲ σπουδῆς οὐδεμιᾶς λελειψόμεθα, <pb facs="epistolographoih00hercuoft_0278"/> ἐὰν τὰ ἐκ τῆς τύχης συμβησόμενα μὴ τοῖς ἀόκνως ὑπουργήσασι προσθῇς.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="37"> 
+<head rend="center"><label>λζ′.</label> Βροῦτος Κυζικηνοῖς.</head>
+<p rend="indent">Ἐκομίσθη τὰ ὅπλα καὶ εἰς ὅν ἐβουλόμεθα καιρόν. τῆς οὖν λειτουργίας ταύτης ἐν δέοντι γενομένης ἀντιδίδομεν ὑμῖν τὴν Προκόννησον σὺν ταῖς ἐν αὐτῇ θουργίαις.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="38"> 
+<head rend="center"><label>λη′.</label> Κυζικηνοὶ Βρούτῳ.</head>
+<p rend="indent">Οὔτε κέρδους ἐλπίδι ἐσπουδάσαμεν ἂ ἐπέστειλας, οὔτε εἰς τὰ λοιπὰ ὀκνηρῶς ἐμέλλομεν ἕξειν, ἐπαινεθέντες ἀμισθί. ὅμως ἀξιούμενοι δωρεᾶς ἡδόμεθα τῇ σῇ μαρτυρίᾳ πλέον ἢ ταῖς Προκοννησίων λατομίαις.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="39"> 
+<head rend="center"><label>λθ′.</label> Βροῦτος Κυζικηνοῖς.</head>
+<p rend="indent">Οἱ πρέσβεις ὑμῶν συνέτυχόν μοι ἀπιόντι ἐπὶ τὸν πόλεμον καὶ παρεῖσθαι τῆς συμμαχίας ἱκέτευον ἀσθένειαν αἰτιώμενοι καὶ τὸ ἀπορεῖν τὰ κοινά. δίκαιον μὲν οὖν ἦν, πλησίον ἤδη τῆς χρείας κατεπειγούσης, καὶ εἰ πρότερον οὐκ ἔδοτε, κἂν νῦν ἐπιπέμψαι. πλέον γὰρ ἂν ἐτίμα τὴν λειτουργίαν ὑμῶν ὁ καιρός. ἐπεὶ δὲ ἐοίκατε τὰ κακίω τοῦ πολέμου προλαβεῖν ἐλπίδι, τῇ μὲν ἀσθενείᾳ ὑμῶν ἣν αἰτιᾶσθε ἥδομαι (τοὐναντίον γὰρ ἂν ἠχθέσθην ἀκούων ἰσχύειν ὑμᾶς κακοὺς ὄντας), τοὺς δὲ ἄνδρας ὑμῶν συμμάχους μὲν οὐκέτι, ὑπουργοὺς δὲ καὶ ἄκοντας ἕξω. λέληθε δὲ ὑμᾶς οὐδαμῶς ὡς δεινὸν τῆς ἐκ τοῦ πολέμου μετασχεῖν νίκης, εἰ γένοιτο, τοὺς τό γ’ ἐφ’ ἑαυτοῖς εἰς πᾶσαν ἡμᾶς ἀσθένειαν προδόντας.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="40"> 
+<head rend="center"><label>μ′.</label> Κυζικηνοὶ Βρούτῳ.</head>
+<p rend="indent">Τὸ σπουδαῖον ἡμῶν οὐκ ἐξ ὧν πολλάκις ὑπουργήσαμεν μόνον, ἀλλὰ καὶ ταῖς παρὰ σοῦ δωρεαῖς μαρτυρηθὲν ἐδόκει πεπιστεῦσθαι. ἐπεὶ δὲ τοῖς κατὰ προαίρεσιν οὐχ ἅπαντες ὁμονοοῦσιν οἱ καιροί, τί δεῖ μέρος ἔχθρας ἀριθμῆσαι τήν ποτε ἀσθένειαν; πᾶν γὰρ τοὐναντίον μιᾶς ὑποληπτέον μεγαλοψυχίας τὸ πολυωρεῖν τοὺς ὀρθῶς διακονήσαντας καὶ συγγνώμην ὑποτιμήσει χαρίζεσθαι. σὺ δὲ καὶ πρὸς ἐφήδεσθαι τῇ ἀδυναμίᾳ ἔφης ἡμῶν, ὥσπερ οὐχὶ σοὶ ἐλλείπειν μέλλοντος ὅσον ἂν ἡμῖν ἐνδέῃ. τοὺς μὲν οὖν ἄνδρας, εἴτε συμμάχους εἴτε ὑπουργοὺς ἐθέλεις (οὐ διοισόμεθα γὰρ περὶ ὀνομάτων), ἄπαγε, ἡμεῖς δὲ εἰ ἀπεγνώκειμέν σου τὰς εἰς τὸν πόλεμον ἐλπίδας, οὐκ ἂν ἐθεραπεύομεν αὐτὰς πρεσβευόμενοι. νῦν δὲ τὰ βέλτιστα εὐχόμενοι περὶ σοῦ καὶ νὴ Δία προσδοκῶντες, εἰ καὶ τῶν ἐπινικίων ἀπελαθησόμεθα ὡς ἐχθροί, τῆς γοῦν χαρᾶς μεθέξομεν ὡς φίλοι. <pb facs="epistolographoih00hercuoft_0279"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="41"> 
+<head rend="center"><label>μα′.</label> Βροῦτος Σμυρναίοις.</head>
+<p rend="indent">Τὸ πρόθυμον τῶν ὑπηκόων διηνεκὲς μὲν ὂν βεβαιότητα δηλοῖ πρὸς τοὺς ἡγεμόνας, ἐλλεῖπον δὲ καὶ τὸν ὅτε ἑτοίμως ὑπούργει χρόνον δι’ ἀσθένειαν ἐλέγχεται τὴν ἑαυτοῦ μᾶλλον ἢ γνώμην ὑπουργοῦν. σπουδάσατε οὖν ἐκπληρῶσαι ὅσα ὑμῖν ἐπέστειλα πρὸς τὸν πόλεμον, ὡς εἰ νῦν κακοὶ φανεῖσθε, μηδ’ ἣν πρόσθεν ἐπορίσασθε μαρτυρίαν ἔτι οἰσόμενοι· οὐ γὰρ χρὴ δοκεῖν ἕξειν τὰ ἴσα μὴ ὁμοίους ἀεὶ φανέντας.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="42"> 
+<head rend="center"><label>μβ′.</label> Σμυρναῖοι Βρούτῳ.</head>
+<p rend="indent">Εὐχῆς ἔργον τὸ διηνεκῶς δύνασθαι, καιροῦ δὲ τὸ ἐνίοτε μὴ ἀρκεῖν, τάς τ’ ὑπουργίας οὐ μόνον αἱ ἀσθένειαι τῶν κελευσθέντων, ἀλλὰ καὶ ἡ συνέχεια τῶν ἐπιταγῶν ἐλλιπεῖς ποιεῖ. ἡμεῖς δὲ εἰ καὶ πάλαι διὰ φόβον ἐλειτουργοῦμεν, οὐδ’ ἂν νῦν ἐτολμῶμεν ἀρνεῖσθαι. ἀλλὰ πᾶν τοὐναντίον ἢ δοκεῖ συμβέβηκεν · ἐσπούδασε μὲν γὰρ ἡ γνώμη τότε, ὑποτιμᾶται δὲ νῦν ἡ ἀσθένεια. ὥστε ἄτοπον εἰ τοῖς ἐλλείμμασιν αἱ ὑπουργίαι διαβληθήσονται μᾶλλον ἢ ταῖς ὑπουργίαις παρηγορηθήσεται τὸ ἐλλεῖπον.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="43"> 
+<head rend="center"><label>μγ′.</label> Βροῦτος Μυρεῦσι.</head>
+<p rend="indent">Ξάνθιοι ἁλόντες ἑλεεῖσθαι ὑφ’ ἡμῶν ἱκέτευον, ἦν δὲ οἶμαι χαλεπὸν τοὺς τῆς ἐλπίδος τοῦ πολέμου κοινωνοῦντας φεύγειν τὰ πάθη καὶ τὴν ἐκ τῆς νίκης ἡδονὴν θηρωμένους ἴσῃ χρῆσθαι τῇ διαμαρτίᾳ πρὸς τὸ ἄλυπον. καὶ τούτους οὖν ἐπιτηδείους παντελοῦς ἀπωλείας ἐθέμεθα, καὶ τοῖς ἄλλοις ἀποκηρύττομεν, εἰ μὴ εὐθέως ἡμᾶς δέχοιντο, μηδενὶ τὴν ἡμετέραν γνώμην ἐπιεικεστέραν τῆς ἐκείνων τύχης ἔσεσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="44"> 
+<head rend="center"><label>μδ′.</label> Μυρεῖς Βρούτῳ.</head>
+<p rend="indent">Οὐδὲ Ξανθίους ἔδει σωτηρίας ἀποτυχεῖν, ἧς τάχα ἂν καὶ αὐτοὶ μετέδωκαν τοῖς ἐναντίοις, εἰ ἐκράτησαν· ὡς γὰρ ἡ τοῦ νικᾶν ἴση τοὺς πολεμοῦντας ἐλπὶς ἐξαίρει, οὕτω καὶ τὸ τῆς ἥττης πάθος εἰς κοινὸν ἔλεον ἔρχεται διὰ τὸ ἀνθρώπινον· καὶ πρὸς τοὺς λοιποὺς δὲ παρασκευαστικὴν εὐνοίας ἴσθι τὴν χρηστότητα· ἀπειλὴ μὲν γὰρ ἔχθραν ποιεῖ καὶ πρὸς τὰ οἰκεῖα διὰ τὴν ἐκ τῶν φόβων ἀπόγνωσιν, ἐλπὶς δὲ καὶ τοὺς διαφόρους εἰς εὔνοιαν πεπιστευμένην ἤθει προσάγεται.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="45"> 
+<head rend="center"><label>με′.</label> Βροῦτος Μυρεῦσι.</head>
+<p rend="indent">Ἡ συμμαχία ὑμῶν ἧκεν ἤδη νενικηκόσιν ἡμῖν. τοῦ μὲν οὖν μηδ’ ὅλως τὸ βράδιον ἀφικέσθαι ἄμεινον, πρὸς μέντοι τὴν τοῦ πολέμου ὑπουργίαν ὁμοίως ἦτε ἄχρηστοι· ἡ γὰρ ἐν πολέμῳ βραδυτὴς ἴσον ἔχει τῷ μηδ’ ὅλως γινομένῳ τὸ ἄπρακτον. <pb facs="epistolographoih00hercuoft_0280"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="46"> 
+<head rend="center"><label>μϛ′.</label> Μυρεῖς Βρούτῳ.</head>
+<p rend="indent">Συνήσθημέν σοι νικήσαντι τὸν πόλεμον θᾶττον ἢ τὴν παρ’ ἡμῶν συμμαχίαν καίπερ μετὰ σπουδῆς ἐκπεμφθεῖσαν παραγενέσθαι, πρὸς μέντοι τὴν εὔνοιαν οὐδὲ ἡμεῖς ἄπρακτοι ἤλθομεν· οὐδὲ γὰρ ἴσον τῷ μηδ’ ὅλως κινηθέντι τὸ κἂν ἑνὸς ὑστερήσῃ πρὸς τὰ λοιπὰ ἕτοιμον.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="47"> 
+<head rend="center"><label>μζ′.</label> Βροῦτος Μιλησίοις.</head>
+<p rend="indent">Οὐδὲ χρημάτων πένεσθαι πόλει συγγνωστόν· ἐκ πολλοῦ γὰρ ὀφείλει φυλάττεσθαι τὸ ἄπορον · τὸ δὲ ἐν τοσούτῳ πλήθει μηδ’ ἄνδρας ὑμᾶς ἔχειν γενναίως ἀγωνιουμένους παντελῶς ἴστε οὐ τύχης ἐνδεεῖς ἀλλὰ τῆς σωτηρίου γνώμης ἐλεγχόμενοι. εἰ δὲ μήτε ὅσα εἰς ἀρετὴν ἀσκεῖτε μήτε ὅσα πρὸς ἰσχὺν παρασκευάζεσθε, ἀδίκως ἴστε πόλις λεγόμενοι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="48"> 
+<head rend="center"><label>μη′.</label> Μιλήσιοι Βρούτῳ.</head>
+<p rend="indent">Καὶ χρημάτων καὶ στρατιωτῶν ἐνδεῖν αἰσχρὸν οὐ τοῖς μὴ ἐν ἰδίᾳ καθεστῶσι χρεία, πολὺ δὲ μᾶλλον τοῖς εἰ καὶ οἴκοθεν εὐποροῖεν, διὰ γοῦν τὸ μὴ ἐπαρκεῖν ἄλλων προσδεομένοις. ἡμεῖς δὲ καὶ γνώμης ἕνεκα καὶ τῆς εἰς τὸ δεῦρο τύχης δοκοῦμεν πόλις εἶναι μέχρι τοῦ εἰ καὶ μὴ ἑτέροις ἐπαρκεῖν, ἀλλ’ οὖν μηδὲ τῶν πέλας χρῄζειν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="49"> 
+<head rend="center"><label>μθ′.</label> Βροῦτος Μιλησίοις.</head>
+<p rend="indent">Εἰ μὲν ἔστιν ὑμῖν ὅπλα ἐν κοινῷ, μὴ χρώμενοι τούτοις ἁμαρτάνετε, μία γὰρ ἰσχὺς ὅπλων τὸ χρῆσθαι· εἰ δὲ καὶ τῆς κατασκευῆς αὐτῶν ἀμελεῖτε, μεμφθέντες ἂν εἰ καὶ ἔχοντες μὴ ἐχρῆσθε, πόσῳ μεμπτότεροι μηδὲ ἔχοντες;</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="50"> 
+<head rend="center"><label>ν′.</label> Μιλήσιοι Βρούτῳ.</head>
+<p rend="indent">Οὐ τὰ ὅπλα ἰσχὺς ἀνδρῶν, ἀλλὰ τῶν ὅπλων οἱ ἄνδρες· ἐκεῖνα μὲν γὰρ δίχα τῶνδε ἄπρακτα, οἳ δὲ καὶ πορίσαι αὐτὰ καὶ χρήσασθαι αὐτοῖς δύνανται. οὔτε οὖν εἰ ἄπεστιν ὅπλα ἐνδεῖ τοῖς πορίσαι αὐτὰ δυναμένοις, οὔτε χρήσιμα τυγχάνει τοῖς κἂν ἔχωσι χρήσασθαι μὴ δυναμένοις.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="51"> 
+<head rend="center"><label>να′.</label> Βροῦτος Τραλλιανοῖς.</head>
+<p rend="indent">Εἰ μὲν ἐν τῇ ὑμετέρᾳ στρατοπεδεύειν Δολοβέλλαν ἀνεχόμενοι οἴεσθε μηδὲν ἀδικεῖν με, οὐκ ὀρθῶς φρονεῖτε· εἰ δὲ νομίζετε, ὧν ἂν τοὺς ἑαυτῶν πολεμίους ἀφελώμεθα, τούτων ὑμῖν ὡς ὄντων οἰκείων παραχωρήσειν, αὐτίκα πλανᾶσθαί μοι δοκεῖτε. ἢ εἴργετε οὖν αὐτὸν τῆς σφετέρας, ἢ ὅλως μηδ’ ὑφ’ ἡμῶν ἀδικεῖσθαι φάσκετε ὧν ἂν ἔχειν αὐτοὶ Δολοβέλλαν ἀφελόμενοι, ἀλλὰ μὴ ὑμῖν παραχωρεῖν ἀξιῶμεν. <pb facs="epistolographoih00hercuoft_0281"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="52"> 
+<head rend="center"><label>νβ′.</label> Τραλλιανοὶ Βρούτῳ.</head>
+<p rend="indent">Καὶ Δολοβέλλας ἐν τῇ ἡμετέρᾳ στρατοπεδεύει, καὶ πᾶς ὁ μετ’ ἐκεῖνον βιαζόμενος ἴστω μὴ ἕξων αὐτὴν δορίκτητον· οὐ γὰρ εἰ στρατηγὸν Ῥωμαίων σύμμαχοι ὄντες μὴ ἐξείργομεν τῆς ἑαυτῶν, ἤδη καὶ τοῖς πρὸς ἐκεῖνον διαφερομένοις ἆθλον αὐτὴν πολέμου κατηγγέλκαμεν, ἀλλ’ ὃς ἂν ἀκόντων ἡμῶν εἰσβιάζηται, δείξομεν ἔργῳ καὶ Δολοϐέλλαν μὴ ἂν ἄλλως εἰ μὴ ἑκόντων στρατοπεδεύειν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="53"> 
+<head rend="center"><label>νγ′.</label> Βροῦτος Τραλλιανοῖς.</head>
+<p rend="indent">Καὶ πρόσθεν ὑμῖν ἐπέστειλα, ὅτι ἁμαρτάνετε Δολοϐέλλαν ἐν τῇ ὑμετέρᾳ στρατοπεδεύοντα περιορῶντες, καὶ τὸ παρὸν ἴστε, εἰ μὲν ὡς οἰκείας αὐτῷ παραχωρεῖτε, οὐδ’ ἂν εἰ πρὸς ἡμῶν ἀφαιρεθείητε ὧν ἐκείνῳ ὡς ἀλλοτρίων ἐξέστητε, ἡμῖν ὡς ἰδίων ἀντιποιησάμενοι εἰ δὲ ὡς φίλῳ ἐν τῇ ὑμετέρᾳ στρατοπεδεύειν δίδοτε, κοινωνεῖν αὐτῷ τῆς ἐπὶ τῷ πολέμῳ τύχης ἀρξάμενοι μενοι οὐδὲ ἡμῖν ἀκούσιοι πολέμιοι φανεῖσθε.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="54"> 
+<head rend="center"><label>νδ′.</label> Τραλλιανοὶ Βρούτῳ.</head>
+<p rend="indent">Ἐδηλώσαμέν σοι καὶ πρότερον περὶ Δολοϐέλλα, καὶ νῦν ἴσθι, ὅτι οὔτε ἐν ἰδίᾳ στρατοπεδεύει γῇ, ἔστι γὰρ ἡμετέρα, οὔτε εἴ τις αὐτὴν ἀφέλοιτο ἄλλος, χωρήσομεν ἀκόντων ἔχειν, ὅτι τὰ παρ’ ἡμῶν ἐπιτραπέντα βιάσαιτο. εἰ δὲ δοκοῦμεν τῆς ἐπὶ τῷ πολέμῳ τύχης αὐτῷ κοινωνεῖν, αἱρετώτερον τοῖς ἄρχουσι χειρῶν ἀντιπρᾶξαι ἢ σύμμαχον ἄνδρα ἐξείργοντας ἀκουσίους Ῥωμαίοις ἐχθροὺς φανῆναι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="55"> 
+<head rend="center"><label>νε′.</label> Βροῦτος Τραλλιανοῖς.</head>
+<p rend="indent">Ἠγγέλθη μοι Μηνόδωρον ὑμέτερον πολίτην, ξένον καὶ φίλον Δολοϐέλλᾳ τῷ ἡμετέρῳ πολεμίῳ, καὶ πρότερον ὑμᾶς μὴ εἴργειν αὐτὸν ἐν τῇ ὑμετέρᾳ στρατοπεδεύοντα πεῖσαι, καὶ νῦν ὅπως καὶ αὐτὸν καὶ τὴν στρατιὰν αὐτοῦ τῇ πόλει δέξησθε συμβουλεύειν. ἐγὼ δὲ ὡς μὲν οὐδὲν ὀνήσει Δολοβέλλαν, εἰ καὶ ταῦτα καὶ ἔτι πλείω τούτων ποιῆσαι προσαχθείητε ὑπὸ Μηνοδώρου ἢ καὶ εἴ τις ἄλλος πείσειεν, οὐκ ἀγνοῶ, οὐδὲ μὴν οὔτε Μηνόδωρον ἡ Δολοβέλλα φιλία καὶ ξενία, οὐ μὴν ἀλλ’ οὐχ ὅπως κολάσαιμί τινας σκοπῶν ἐφεδρεύειν οἶμαι τοῖς ἑνὸς ἑκάστου ἁμαρτήμασιν. ἵνα μέντοι μηδὲν δὲν ἄξιον ἁμαρτεῖν ἀναγκασθῆτε, κελεύω ὑμᾶς Μηνόδωρον φυγαδεῦσαι τῆς πατρίδος τοῦ ἰδίου λυσιτελοῦς ἕνεκα, εἴ γέ τι λυσιτελεῖν ἔμελλεν αὐτῷ τὴν πατρίδα πωλοῦντι, Δολοβέλλαν δὲ μήτε τῇ πόλει δέχεσθαι, τῆς τε γῆς ἐξελάσαι, βιαζόμενον δὲ ὅπλοις ἀμύνασθαι, ἢ ἀπειθοῦντας οὐχ ὑπὸ Μηνοδώρου ταῦθ’ ὑμᾶς οἰήσομαι προαχθέντας πεισθῆναι, ἀλλ’ αὐτοὺς Μηνοδώρῳ τούτων ἀφορμὴν δοῦναι ἐθέλοντας. <pb facs="epistolographoih00hercuoft_0282"/></p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="56"> 
+<head rend="center"><label>νς′.</label> Τραλλιανοὶ Βρούτῳ.</head>
+<p rend="indent">Οὐ Μηνόδωρος ὑποδέξασθαι τῇ πόλει Δολοβέλλαν καὶ τὴν στρατιὰν αὐτοῦ προηγάγετο ἡμᾶς, ὥσπερ οὐδὲ πάλαι στρατοπεδεύοντα περιορᾶν ἔπειθεν. ἀλλ’ οὐδὲ εἰ ταῦτα ἐπέπρακτο, ἡγούμεθα δοκεῖν αὐτοὶ Μηνοδώρῳ τοιαύτης εὐβουλίας ἀφορμὴν παρεσχῆσθαι· τάχιον γὰρ ἂν τὴν πρὸς Ῥωμαίους ὁμολογήσαιμεν συμμαχίαν ἡμεῖς ἢ σὺ τοῖς παρ’ ἡμῶν τὴν Δολοβέλλα ξενίαν ἐπικαλεῖς, οἷς εἰ καὶ μηδέν, ὡς λέγεις, ὄφελος οἴσεται ἡ πρὸς ἀλλήλους ὁμόνοια, μέγα γοῦν περιγένοιτ’ ἂν τὸ ἐκ τῆς πίστεως εὐσυνείδητον. ὅπλων μέντοι καὶ φυγαδείας οὐδέν τι τοῖς πράγμασι προσδεῖ· Μηνόδωρος γὰρ συναπῆρκε Δολοβέλλᾳ, μὰ Δί’ οὐχ ὡς πιπράσκειν τὴν πατρίδα κεκωλυμένος, ἀλλὰ τὴν ἀρχὴν οὐδὲ νομίζων ἀδίκημα τῷ φίλῳ συνίστασθαι εἰς τὰ ἐπιτήδεια. σὺ δ’ εἰ καλὸν ὑπολαμβάνεις, ὥσπερ καὶ ἔστι καλόν, τὸ μὴ περιμένειν ποτὲ ἁμαρτάνοντας ἀμύνεσθαι, πολλῷ μᾶλλον οἰήθητι δεῖν μὴ προεξανίστασθαι τῶν διαβολῶν, ἀλλ’ ἐπὶ τῷ συμβησομένῳ τὴν κρίσιν τηρεῖν, ἐπεὶ δόξεις οὐκ ἐφ’ οἷς ἂν μέμφῃ τοὺς πέλας δυσμενῶς διατίθεσθαι, πρὸς οὓς δ’ ἂν ἔχθραν ἔχῃς, αἰτίας τούτοις ἐπιφέρειν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="57"> 
+<head rend="center"><label>νζ′.</label> Βροῦτος Τραλλιανοῖς.</head>
+<p rend="indent">Χρήματα ὅσα Δολοβέλλας κατέθετο παρὰ Μηνοδώρῳ τῷ ἑαυτοῦ ξένῳ, εἴ τέ τινας ἄλλας παρακαταθήκας, παρὰ τῶν τέκνων αὐτοῦ κομισάμενοι τῶν διαδεξαμένων αὐτοῦ τὴν οὐσίαν μετὰ τὴν ἐκείνου φυγὴν ἀναπέμψατε πρός με· εἰ δέ γε μὴ εἶναί φατε, αὐτοὺς τοὺς ἄνδρας μετὰ τέκνων καὶ γυναικῶν· οὐ γὰρ δίκαιον τοῖς τῶν ἐμῶν πολεμίων φίλοις ἢ καὶ ξένοις περαιτέρω τοῦ μηδὲν αὐτοὺς παθεῖν λυσιτελῆσαι τὴν ἡμετέραν ἐπιείκειαν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="58"> 
+<head rend="center"><label>νη′.</label> Τραλλιανοὶ Βρούτῳ.</head>
+<p rend="indent">Οὔτε Δολοβέλλαν ἐν τοῖς δαπανηροτάτοις τοῦ πολέμου καιροῖς ἀποθησαυρίσαι παρακαταθήκας εἰκός, οὔτε Μηνόδωρον ἀπαλλασσόμενον ἐκ τῆς πατρίδος οἷόν τε καταλιπεῖν οἴκοι τὰ τῆς φυγῆς ἐφόδια. τὸ μέντοι γε ἀναπέμπειν πρός σε ἢ τὰ μὴ ὄντα χρήματα ἢ τοὺς ἀναιτίους ἀνθρώπους τῇ μὲν ἀδύνατον τῇ δὲ ἄδικον· οὐ γὰρ ἄξιον τοῖς ἡμετέροις πολίταις διὰ τοὺς σοὺς πολεμίους μέχρι συμφορᾶς ἀλυσιτελῆ εἶναι τὴν παρ’ ἡμῶν, ἐὰν πεισθῶμεν, προδοσίαν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="59"> 
+<head rend="center"><label>νθ′.</label> Βροῦτος Βιθυνοῖς.</head>
+<p rend="indent">Μηδενὶ δοκείτω χαλεπόν, εἰ πολλὰ εἰσπράττομεν πολλῶν δεόμενοι· τούτων γὰρ ἡμεῖς ἔργα ἀποδίδομεν. εἰ δὲ τὸ τῶν εἰσφορῶν πλῆθος βαρύνεσθε, μεμνῆσθαι χρὴ πόσοι πόνοι σὺν τοῖς διδομένοις ὑφ’ ἡμῶν ἀναλίσκονται. <pb facs="epistolographoih00hercuoft_0283"/> παντὶ γὰρ δῆλον ὅτι τοῦ παρασκευαζομένου κάμνει πλεῖον ὁ ταῖς παρασκευαῖς τοῦ πολέμου χρώμενος, ἄλλως τε καὶ ὑμῶν μὲν τῆς οἰκείας φροντίδος ἑκάστῳ, ἡμῖν δὲ τῆς ἁπάντων προνοεῖν ἀνάγκη.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="60"> 
+<head rend="center"><label>ξ′.</label> Βιθυνοὶ Βρούτῳ.</head>
+<p rend="indent">Οὐχ ὅσων δεῖσθαί σοι συμβέβηκεν ἤδη καὶ ἡμῖν εὐπορεῖν τοσούτων περίεστι· γνοίης δ’ ἂν δι’ ὅσων ἀθροίζεται τὰ παρασκευαζόμενα καμάτων ἐξ ὧν αὐτὸς ἀναλίσκων αὐτὰ κοπιᾷς. καίτοι τὸ μὲν ὑπὲρ ἄλλων εἰσφέρειν μετὰ πόνου καὶ ἀλυσιτελὲς φαίνεται, τὸ δὲ ταῖς ἑτέρων παρασκευαῖς χρῆσθαι μετ’ ὠφελείας ἐστὶ ρᾴδιον. εἰ δὲ καὶ ὑπὲρ πολλῶν φὴς κακοπαθεῖν, καὶ ἀπὸ πλειόνων σοι ποριστέον· οὐ γὰρ οἷόν τε ἡμᾶς τοὺς περὶ μόνων ἑαυτῶν φροντίζοντας ταῖς ὑπὲρ ἁπάντων εἰσφοραῖς ἐξαρκεῖν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="61"> 
+<head rend="center"><label>ξα′.</label> Βροῦτος Βιθυνοῖς.</head>
+<p rend="indent">Ἀκύλαν ἐμὸν φίλον ἔπεμψα πρὸς ὑμᾶς κατασκευάσοντά μοι ναῦς στρογγύλας πεντήκοντα καὶ μακρὰς διακοσίας, τοσαύτας δὲ καὶ Δολοβέλλᾳ πυνθάνομαι ὑμᾶς παρασχέσθαι. ὀρθῶς οὖν ποιήσετε ναύτας καὶ ἐρέτας εἰς ταῦτα τὰ πλοῖα, ἄχρι ἂν πρὸς ἐμὲ ἀνακομισθῇ, παρασχόντες τῷ Ἀκύλᾳ καὶ σιτηρέσιον τούτοις μηνῶν τεσσάρων. τῶν γὰρ εἰς τὴν ναυπηγίαν δεόντων ξύλων καὶ τῆς τούτων παρακομιδῆς ἐπὶ θάλασσαν καὶ τεχνιτῶν εὖ οἶδ’ ὅτι οὐδὲν ἀμελήσετε μηδὲ Δολοβέλλᾳ ἐλλιπόντες.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="62"> 
+<head rend="center"><label>ξβ′.</label> Βιθυνοὶ Βρούτῳ.</head>
+<p rend="indent">Οὐκ εἴ τι Δολοβέλλας ἔφθασεν ἁρπάσας, τοῦτο ἤδη καὶ σοὶ λαβεῖν εὔπορον καταλέλοιπεν. οἱ γοῦν ἐκείνῳ πεντήκοντα καὶ ἑκατὸν νεῶν οὐ πλέον δυνάμενοι παρασχεῖν βιασθέντες πῶς οἷοί τε ἂν εἴημεν σοὶ τὰς ἴσας ἐξ ἀπόρων χορηγῆσαι, καὶ μάλιστα σὺν ἐρέταις καὶ ξύλοις καὶ ναυπηγοῖς, ἃ καὶ ἅπαξ εἰσενεγκεῖν χαλεπόν, δὶς δὲ ἀδύνατον; σιτηρέσιον δὲ οὐδὲ Δολοβέλλας ἡμῖν ἅτε μηδ’ εἰ κελεύσειε παρασχεῖν δυνησομένοις ἐπήγγειλε. σύγγνωθι οὖν ἡμῖν καὶ σοὶ ἀρνουμένοις κἀκείνῳ ἀρνήσασθαι μὴ δυνηθεῖσιν.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="63"> 
+<head rend="center"><label>ξγ′.</label> Βροῦτος Βιθυνοῖς.</head>
+<p rend="indent">Ἔγραψέ μοι Ἀκύλας πολλήν τινα ὑμῖν ῥᾳθυμίαν ἐγκεῖσθαι τῆς εἰς τὰ πλοῖα ὑπουργίας, ἐγὼ δὲ ἐκεῖνον σφόδρα ἐμεμψάμην τῆς ἀνεξικακίας, πειθόμενον ἐπιστολῶν μοι τῶν καθ’ ὑμῶν, ἃς παρ’ ἕκαστα πέμπων οὐ παύεται, δεῖν μᾶλλον ἢ νεῶν, κἂν εἰ σὺν ταῖς κατ’ αὐτοῦ πρεσβείαις δέοι· οὐ γὰρ οἷόν τε διὰ τούτων ἐκείνας καταρτισθῆναι. ὑμᾶς δὲ ὑπομνήσαιμ’ ἂν ἡδέως καὶ νῦν καὶ ἔπειτα τοῦ μὴ ἄκοντας ἡμῖν ἀλλ’ ἑκόντας καὶ εἰς ταῦτα καὶ εἰς τὰ ἄλλα πάντα ὁμοίως <pb facs="epistolographoih00hercuoft_0284"/> συναγωνίζεσθαι· ἐκ τῶν παρόντων γὰρ καὶ περὶ ἐκείνων ρᾴδιον τεκμαίρεσθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="64"> 
+<head rend="center"><label>ξδ′.</label> Βιθυνοὶ Βρούτῳ.</head>
+<p rend="indent">Ἀκύλας οὐ κατήγορος ἡμῶν τῆς ὀλιγωρίας μᾶλλον ἢ μάρτυς φαίνεται τῆς ἀσθενείας. εἰ γοῦν ἀμελοῦντας ἀληθῶς ἐγίγνωσκεν, οὐκ ἂν παρὸν βιάσασθαι τὴν ὀλιγωρίαν περὶ αὐτῆς σοι ἐπέστελλεν, ἄλλως τε μηδ’ ἡμῶν πρεσβεύεσθαι μελλόντων κατὰ τοῦ διακονοῦντος πρὸς τὸν πέμψαντα. νυνὶ δὲ Ἀκύλας μὲν συνεῖδε τὸ τῆς χρείας ἀδύνατον, σὺ δὲ δι’ ἀπειλῆς λύσειν νομίζων τὸ ἄπορον ἀδίκως ἅμα καὶ ἀνωφελῶς χαλεπαίνεις· οὔτε γὰρ ἐλπὶς οὔτε φόβος χορηγίας αἴτιον, ἀλλὰ τὸ δύνασθαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="65"> 
+<head rend="center"><label>ξε′.</label> Βροῦτος Βιθυνοῖς.</head>
+<p rend="indent">Οἱ ἄκοντες ἡμῖν ὑπηρετοῦντες οὐχ ἃ μὴ βούλονται παρέχειν κερδαίνουσιν (ἀγαπητὸν γὰρ ἂν ἦν αὐτοῖς τοῦτό γε) ἀλλα τὴν ἐπ’ ἐκείνοις χάριν, ἥτις ἂν αὐτοῖς ὠφείλετο ὑφ’ ἡμῶν, ἀποβάλλουσι. κατασκευάσαντες οὖν τὰς ναῦς ὅνπερ τρόπον ἐπεστείλαμεν σὺν τοῖς ἐρέταις καὶ τῷ ὀφειλομένῳ σιτηρεσίῳ πέμψατε, ἢ ἀναγκασθήσεσθε οὐκ ἐπὶ τούτοις ἄχθεσθαι, ἀλλ’ ὧν ἂν ὑπολίπωμεν χάριν ἡμῖν εἰδέναι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="66"> 
+<head rend="center"><label>ξϛ′.</label> Βιθυνοὶ Βρούτῳ.</head>
+<p rend="indent">Οἱ βιαζόμενοι τοὺς ὑπουργεῖν μὴ ἰσχύοντας οὐχ ἃ προστάττουσιν ὠφελοῦνται (ἡδὺ γὰρ ἂν ἦν μὴ γενέσθαι χρείας καὶ οἱ ἐν ἀπειλῇ), ἀλλὰ τὸ δοκεῖν μὴ εὐγνώμονες εἶναι ζημιοῦνται· εἴξουσι γὰρ τῇ ἀνάγκῃ πρὸς τὸ ἄπορον, καὶ εἰ μὴ διὰ φιλανθρωπίαν τῇ ἐνδείᾳ συνέγνωσαν. ἡμεῖς μὲν οὖν τάχιον ἂν εὐπορήσαιμεν καὶ ὑπὲρ ἰσχὺν ἢ ἀρνησόμεθα χορηγεῖν ἔχοντες, σὺ δὲ εἰ πλέον οἴει πορίσειν ἀφ’ ἡμῶν διὰ βίας, ἴσθι μὴ ὧν ἂν παραλίπῃς, ἀλλ’ ὧν ἂν χρήσασθαι δυνηθῇς χάριν ἡμῖν παρέξων.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="67"> 
+<head rend="center"><label>ξζ′.</label> Βροῦτος Βιθυνοῖς.</head>
+<p rend="indent">Τὰ πλοῖα ἐγὼ πάντα, ὅσων μοι ἔδει, ἐν θαλάσσῃ ἔχω παρασχόντων μοι Μακεδόνων καὶ Λεσβίων καὶ Φοινίκων. ὑμεῖς οὖν ἐπεὶ παρὰ τοὺς χειμῶνας αἰφνιδίως ἐπιπεσόντας ὑστερήσατε, τετρακόσιά μοι τάλαντα εἰς τὸ ἐπιβατικὸν αὐτῶν συγκομίσατε· νομίζω γὰρ εἰς μηδὲν ὑμῖν τούτων αἴτιον τὸν χειμῶνα γεγονέναι, ἐθελησάντων δὲ ὑμῶν ἐνοχλῆσαι.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="68"> 
+<head rend="center"><label>ξη′.</label> Βιθυνοὶ Βρούτῳ.</head>
+<p rend="indent">Ὁ μὲν χειμὼν διεκώλυσε τὴν ναυτικὴν ἡμῶν συμμαχίαν, ἡ δὲ ναυτικὴ παρασκευὴ ἐξανάλωσε τὰ χρήματα, ὥστε ἡμᾶς εἰ καὶ μὴ σοί, ἀλλ’ οὖν αὑτοῖς γε <pb facs="epistolographoih00hercuoft_0285"/> δαπανηρῶς μεμοχθηκέναι. τῆς οὖν χρείας ὑπ’ ἄλλων πεπληρωμένης αἰτούμεθα συγγνώμην, βραδύναντες μὲν διὰ τὴν τύχην, ἀποροῦντες δὲ διὰ τὸ ἀνάλωμα· οὐ γὰρ δυνατὸν ἡμῖν τὰς ναῦς ποιῆσαι χρήματα ὡς ἐκ τῶν χρημάτων ναῦς.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="69"> 
+<head rend="center"><label>ξθ′.</label> Βροῦτος Σαμίοις.</head>
+<p rend="indent">Αἱ βουλαὶ ὑμῦν ὀλίγωροι, αἱ ὑπουργίαι βραδεῖαι. τί τούτων τέλος ἐννοεῖσθε.</p> </div> 
+<div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg1803.tlg001.1st1K-grc1" n="70"> 
+<head rend="center"><label>ο′.</label> Σάμιοι Βρούτῳ.</head>
+<p rend="indent">βουλεύεσθαι μὲν ὀκνηρῶς ἀσφάλεια, ὑπουργεῖν δὲ βραδέως ἀσθένεια· τούτων ἀμφοτέρων ἓν τέλος συγγνώμη. <pb facs="epistolographoih00hercuoft_0288"/></p> </div> </div>
+  
+    </body>
+  </text>
+</TEI>
