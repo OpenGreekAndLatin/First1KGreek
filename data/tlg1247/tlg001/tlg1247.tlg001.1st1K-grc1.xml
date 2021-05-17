@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Cebetis tabula</title>
+                <author xml:lang="lat">Cebes</author>
+                <editor>Karl Praechter</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                
+                <respStmt>
+                    <persName>Lia Hanhardt</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Nick Bultman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Brittany Hardy</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Jen Knickerbocker</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Seumas Macdonald</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Gregory Miller</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Bernadette Mustacchio</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1247.tlg001.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability>
+               <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+                <date when="2021-03-13"/>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Cebetis Tabula</title>
+                        <editor>Karl Praechter</editor>
+                        <imprint>
+                            <pubPlace>Leipzig</pubPlace>
+                            <publisher>Teubner</publisher>
+                            <date>1893</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/cebetistabula00cebe/page/n15/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+            
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            <refsDecl n="CTS">
+                <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts chapter and section.</p>
+                </cRefPattern>
+                <cRefPattern n="chapter"  matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts chapter.</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-05-12" who="Lisa Cerrato">initial markup of new file</change>
+        </revisionDesc>
+    </teiHeader>
+   
+<text>
+    <body>
+<div type="edition" n="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" xml:lang="grc">
+<pb facs="cebetistabula00cebe_0017"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:1" n="1">
+<p rend="indent">Ἐτυγχάνομεν περιπατοῦντες ἐν τῷ τοῦ Κρόνου ἱερῷ, ἐν ᾧ πολλὰ μὲν καὶ ἄλλα ἀναθήματα ἐθεωροῦμεν· ἀνέκειτο δὲ καὶ πίναξ τις ἔμπροσθεν τοῦ νεώ, ἐν ᾧ ἦν γραφὴ ξένη τις καὶ μύθους ἔχουσα ἰδίους, οὓς οὐκ ἠδυνάμεθα συμβαλεῖν, τίνες καί ποτε ἦσαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:1" n="2">
+<p>οὔτε γὰρ πόλις ἐδόκει ἡμῖν εἶναι τὸ γεγραμμένον οὔτε στρατόπεδον, ἀλλὰ περίβολος ἦν ἐν αὑτῷ ἔχων ἑτέρους περιβόλους δύο, τὸν μὲν μείζω, τὸν δὲ ἐλάττω. ἦν δὲ καὶ πύλη ἐπὶ τοῦ πρώτου περιβόλου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:1" n="3">
+<p>πρὸς δὲ τῇ πύλῃ ὄχλος ἐδόκει ἡμῖν πολὺς ἐφεστάναι, καὶ ἔνδον δὲ ἐν τῷ περιβόλῳ πλῆθός τι γυναικῶν ἑωρᾶτο. ἐπὶ δὲ <del>τῆς εἰσόδου</del> τοῦ <del>πρώτου</del> πυλῶνος <del>καὶ περιβόλου</del> γέρων τις ἑστὼς ἔμφασιν ἐποίει ὡς προστάττων τι τῷ εἰσιόντι ὄχλῳ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:2" n="1">
+<p rend="indent">Ἀπορούντων οὖν ἡμῶν περὶ τῆς μυθολογίας πρὸς ἀλλήλους πολὺν χρόνον πρεσβύτης τις παρεστώς, Οὐδὲν δεινὸν πάσχετε, ὦ ξένοι, ἔφη, ἀποροῦντες περὶ <pb facs="cebetistabula00cebe_0018"/> τῆς γραφῆς ταύτης. οὐδὲ γὰρ τῶν ἐπιχωρίων πολλοὶ οἴδασι, τί ποτε αὕτη ἡ μυθολογία δύναται·</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:2" n="2">
+<p>οὐδὲ γάρ ἐστι πολιτικὸν ἀνάθημα· ἀλλὰ ξένος τις πάλαι ποτὲ ἀφίκετο δεῦρο, ἀνὴρ ἔμφρων καὶ δεινὸς περὶ σοφίαν, λόγῳ τε καὶ ἔργῳ Πυθγόρειόν τινα καὶ Παρμενίδειον ἐζηλωκὼς βίον, ὃς τό τε ἱερὸν τοῦτο καὶ τὴν γραφὴν ἀνέθηκε τῷ Κρόνῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:2" n="3">
+<p rend="indent">Πότερον οὖν, ἔφην ἐγώ, καὶ αὐτὸν τὸν ἄνδρα γινώσκεις ἑωρακώς; </p>
+<p rend="indent">Καὶ ἐθαύμασά γε, ἔφη, αὐτὸν πολυχρονιώτατον νεώτερος ὤν. πολλὰ γὰρ καὶ σπουδαῖα διελέγετο. τότε δὴ καὶ περὶ ταύτης <del>δὲ</del> τῆς μυθολογίας πολλάκις αὐτοῦ ἠκηκόειν διεξιόντος.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:3" n="1">
+<p rend="indent">Πρὸς Διὸς τοίνυν, ἔφην ἐγώ, εἰ μή τις σοι μεγάλη ἀσχολία τυγχάνει οὖσα, διήγησαι ἡμῖν· πάνυ γὰρ ἐπιθυμοῦμεν ἀκοῦσαι, τί ποτέ ἐστιν ὁ μῦθος.</p>
+<p rend="indent">Οὐδεὶς φθόνος, ὦ ξένοι, ἔφη. ἀλλὰ τουτὶ πρῶτον δεῖ ὑμᾶς ἀκοῦσαι, ὅτι ἐπικίνδυνόν τι ἔχει ἡ ἐξήγησις.</p>
+<p rend="indent">Οἷον τί; ἔφην ἐγώ. <pb facs="cebetistabula00cebe_0019"/> </p>
+<p rend="indent">Ὅτι εἰ μὲν προσέξετε, ἔφη, καὶ συνήσετε τὰ λεγόμενα, φρόνιμοι καὶ εὐδαίμονες ἔσεσθε, εἰ δὲ μή, ἄφρονες καὶ κακοδαίμονες καὶ πικροὶ καὶ ἀμαθεῖς γενόμενοι κακῶς βιώσεσθε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:3" n="2">
+<p>ἔστι γὰρ ἡ ἐξήγησις ἐοικυῖα τῷ τῆς Σφιγγὸς αἰνίγματι, ὃ ἐκείνη προεβάλλετο τοῖς ἀνθρώποις εἰ μὲν οὖν αὐτὸ συνίει τις, ἐσώζετο, εἰ δὲ μὴ συνίει, ἀπώλετο ὑπὸ τῆς Σφιγγός. ὡσαύτως δὲ καὶ ἐπὶ τῆς ἐξηγήσεως ἔχει ταύτης. ἡ γὰρ ἀφροσύνη τοῖς ἀνθρώποις Σφίγξ ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:3" n="3">
+<p>αἰνίττεται δὲ τάδε, τί ἀγαθόν, τί κακόν, τί οὔτε ἀγαθὸν οὔτε κακόν ἐστιν ἐν τῷ βίῳ. ταῦτʼ οὖν ἐὰν μέν τις μὴ συνιῇ, ἀπόλλυται ὑπʼ αὐτῆς, οὐκ εἰσάπαξ, ὥσπερ ὁ ὑπὸ τῆς Σφιγγὸς καταβρωθεὶς ἀπέθνησκεν, ἀλλὰ κατὰ μικρὸν ἐν ὅλῳ τῷ βίῳ καταφθείρεται καθάπερ οἱ ἐπὶ τιμωρίᾳ παραδιδόμενοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:3" n="4">
+<p>ἐὰν δέ τις γνῷ, ἀνάπαλιν ἡ μὲν ἀφροσύνη ἀπόλλυται, αὐτὸς δὲ σώζεται καὶ μακάριος καὶ εὐδαίμων γίνεται ἐν παντὶ τῷ βίῳ. ὑμεῖς οὖν προσέχετε καὶ μὴ παρακούετε.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:4" n="1">
+<p rend="indent">Ὦ Ἡράκλεις, ὡς εἰς μεγάλην τινὰ ἐπιθυμίαν ἐμβέβληκας ἡμᾶς, εἰ ταῦθʼ οὕτως ἔχει.</p>
+<p rend="indent">Ἀλλʼ ἔστιν, ἔφη, οὕτως ἔχοντα.</p> 
+<p rend="indent">Οὐκ ἂν φθάνοις τοίνυν διηγούμενος ὡς ἡμῶν <pb facs="cebetistabula00cebe_0020"/> προσεξόντων οὐ παρέργως, ἐπείπερ καὶ τὸ ἐπιτίμιον τοιοῦτόν ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:4" n="2">
+<p rend="indent">Ἀναλαβὼν οὖν ῥάβδον τινὰ καὶ ἐκτείνας πρὸς τὴν γραφήν, Ὁρᾶτε, ἔφη, τὸν περίβολον τοῦτον;</p>
+<p rend="indent">Ὁρῶμεν.</p>
+<p rend="indent">Τοῦτο πρῶτον δεῖ εἰδέναι ὑμᾶς, ὅτι καλεῖται οὗτος ὁ τόπος Βίος. καὶ ὁ ὄχλος ὁ πολὺς ὁ παρὰ τὴν πύλην ἐφεστὼς οἱ μέλλοντες εἰσπορεύεσθαι εἰς τὸν Βίον οὗτοί εἰσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:4" n="3">
+<p>ὁ δὲ γέρων ὁ ἄνω ἑστηκὼς ἔχων χάρτην τινὰ ἐν τῇ χειρὶ καὶ τῇ ἑτέρᾳ ὥσπερ δεικνύων τι, οὗτος Δαίμων καλεῖται προστάττει δὲ τοῖς εἰσπορευομένοις, τί δεῖ αὐτοὺς ποιεῖν, ὡς ἂν εἰσέλθωσιν εἰς τὸν Βίον· δεικνύει δὲ ποίαν ὁδὸν αὐτοὺς δεῖ βαδίζειν, εἰ μέλλουσι σώζεσθαι ἐν τῷ Βίῳ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:5" n="1">
+<p rend="indent">Ποίαν οὖν ὁδὸν κελεύει βαδίζειν ἢ πῶς; ἔφην ἐγώ.</p>
+<p rend="indent">Ὁρᾷς οὖν, εἶπε, παρὰ τὴν πύλην θρόνον τινὰ κείμενον κατὰ τὸν τόπον, καθʼ ὃν εἰσπορεύεται ὁ ὄχλος, ἐφʼ οὗ κάθηται γυνὴ πεπλασμένη τῷ ἤθει καὶ πιθανὴ φαινομένη, ἣ ἐν τῇ χειρὶ ἔχει ποτήριόν τι;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:5" n="2">
+<p rend="indent">Ὁρῶ. ἀλλὰ τίς ἐστιν αὕτη; ἔφην.</p>
+<p rend="indent">Ἀπάτη καλεῖται, φησίν, ἡ πάντας τοὺς ἀνθρώπους πλανῶσα. <pb facs="cebetistabula00cebe_0021"/></p> 
+<p rend="indent">Εἶτα τί πράττει αὕτη; Τοῦς εἰσπορευομένους εἰς τὸν Βίον ποτίζει τῇ ἑαυτῆς δυνάμει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:5" n="3">
+<p rend="indent">Τοῦτο δὲ τί ἐστι τὸ ποτόν;</p>
+<p rend="indent">Πλάνος, ἔφη, καὶ ἄγνοια.</p> 
+<p rend="indent">Εἶτα τί;</p>
+<p rend="indent">Πιόντες τοῦτο πορεύονται εἰς τὸν Βίον.</p> 
+<p rend="indent">Πότερον οὖν πάντες πίνουσι τὸν πλάνον ἢ οὔ;</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:6" n="1">
+<p rend="indent">Πάντες πίνουσιν, ἔφη, ἀλλʼ οἱ μὲν πλεῖον, οἱ δὲ ἧττον. Ἔτι δὲ οὐχ ὁρᾷς ἔνδον τῆς πύλης πλῆθός τι γυναικῶν ἑτέρων παντοδαπὰς μορφὰς ἐχουσῶν; </p>
+<p rend="indent">Ὁρῶ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:6" n="2">
+<p rend="indent">Αὗται τοίνυν Δόξαι καὶ Ἐπιθυμίαι καὶ Ἡδοναὶ καλοῦνται. ὅταν οὖν εἰσπορεύηται ὁ ὄχλος, ἀναπηδῶσιν αὗται καὶ πλέκονται πρὸς ἕκαστον, εἶτα ἀπάγουσι.</p> 
+<p rend="indent">Ποῦ δὲ ἀπάγουσιν αὐτούς;</p> 
+<p rend="indent">Αἱ μὲν εἰς τὸ σώζεσθαι, ἔφη, αἱ δὲ εἰς τὸ ἀπόλλυσθαι διὰ τὴν ἀπάτην.</p> 
+<p rend="indent">Ὦ δαιμόνιε, ὡς χαλεπὸν τὸ πόμα λέγεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:6" n="3">
+<p rend="indent">Καὶ πᾶσαί γε, ἔφη, ἐπαγγέλλονται ὡς ἐπὶ τὰ βέλτιστα <pb facs="cebetistabula00cebe_0022"/> ἄξουσαι καὶ εἰς βίον εὐδαίμονα καὶ λυσιτελῆ. οἱ δὲ διὰ τὴν ἄγνοιαν καὶ τὸν πλάνον, ὅν πεπώκασι παρὰ τῆς Ἀπάτης, οὐχ εὑρίσκουσι ποία ἐστὶν ἡ ἀληθινὴ ὁδὸς ἡ ἐν τῷ Βίῳ, ἀλλὰ πλανῶνται εἰκῆ, ὥσπερ ὁρᾷς καὶ τοὺς πρότερον εἰσπορευομένους ὡς περιάγονται ὅποι ἂν τύχῃ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:7" n="1">
+<p rend="indent">Ὁρῶ τούτους, ἔφην. ἡ δὲ γυνὴ ἐκείνη τίς ἐστιν ἡ ὥσπερ τυφλὴ καὶ μαινομένη τις εἶναι δοκοῦσα καὶ ἑστηκυῖα ἐπὶ λίθου τινὸς στρογγύλου;</p> 
+<p rend="indent">Καλεῖται μέν, ἔφη, Τύχη· ἔστι δὲ οὐ μόνον τυφλὴ καὶ μαινομένη, ἀλλὰ καὶ κωφή.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:7" n="2">
+<p rend="indent">Αὕτη οὖν τί ἔργον ἔχει;</p> 
+<p rend="indent">Περιπορεύεται πανταχοῦ, ἔφη· καὶ παρʼ ὧν μὲν ἁρπάζει τὰ ὑπάρχοντα καὶ ἑτέροις δίδωσι· παρὰ δὲ τῶν αὐτῶν πάλιν ἀφαιρεῖται παραχρῆμα ἃ δέδωκε καὶ ἄλλοις δίδωσιν εἰκῆ καὶ ἀβεβαίως. διὸ καὶ τὸ σημεῖον καλῶς μηνύει τὴν φύσιν αὐτῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:7" n="3">
+<p rend="indent">Ποῖον τοῦτο; ἔφην ἐγώ.</p>
+<p rend="indent">Ὅτι ἐπὶ λίθου στρογγύλου ἕστηκεν. <pb facs="cebetistabula00cebe_0023"/></p>
+<p rend="indent">Εἶτα τί τοῦτο σημαίνει;</p>
+<p rend="indent">Οὐκ ἀσφαλὴς οὐδὲ βεβαία ἐστὶν ἡ παρʼ αὐτῆς δόσις. ἐκπτώσεις γὰρ μεγάλαι καὶ σκληραὶ γίνονται, ὅταν τις αὐτῇ πιστεύσῃ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:8" n="1">
+<p rend="indent">Ὁ δὲ <del>τῶν ἀνθρώπων</del> πολὺς ὄχλος οὗτος ὁ περὶ αὐτὴν ἑστηκὼς τί βούλεται καὶ τίνες καλοῦνται; </p>
+<p rend="indent">Καλοῦνται μὲν οὗτοι ἀπροβούλευτοι· αἰτοῦσι δὲ ἕκαστος αὐτῶν ἃ ῥίπτει. </p>
+<p rend="indent">Πῶς οὖν οὐχ ὁμοίαν ἔχουσι τὴν μορφήν, ἀλλʼ οἱ μὲν αὐτῶν δοκοῦσι χαίρειν, οἱ δὲ ἀθυμοῦσιν ἐκτετακότες τὰς χεῖρας;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:8" n="2">
+<p rend="indent">Οἱ μὲν δοκοῦντες, ἔφη, χαίρειν καὶ γελᾶν αὐτῶν οἱ εἰληφότες τι παρʼ αὐτῆς εἰσιν· οὗτοι δὲ καὶ ἀγαθὴν Τύχην αὐτὴν καλοῦσιν. οἱ δὲ δοκοῦντες κλαίειν <del>καὶ ἐκτετακότες</del> εἰσὶ παρʼ ὧν ἀφείλετο ἃ δέδωκε πρότερον αὐτοῖς. οὗτοι δὲ πάλιν αὐτὴν κακὴν Τύχην καλοῦσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:8" n="3">
+<p rend="indent">Τίνα οὖν ἐστιν ἃ δίδωσιν αὐτοῖς, ὅτι οὕτως οἱ μὲν λαμβάνοντες χαίρουσιν, οἱ δὲ ἀποβάλλοντες κλαίουσι; </p>
+<p rend="indent">Ταῦτα, ἔφη, ἃ παρὰ τοῖς πολλοῖς ἀνθρώποις δοκεῖ εἶναι ἀγαθά. Ταῦτα οὖν τίνα ἐστί; <pb facs="cebetistabula00cebe_0024"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:8" n="4">
+<p rend="indent">Πλοῦτος δηλονότι καὶ δόξα καὶ εὐγένεια καὶ τέκνα καὶ τυραννίδες καὶ βασιλεῖαι καὶ τἆλλα ὅσα τούτοις παραπλήσια. </p>
+<p rend="indent">Ταῦτα οὖν πῶς οὐκ ἔστιν ἀγαθά; </p>
+<p rend="indent">Περὶ μὲν τούτων, ἔφη, καὶ αὖθις ἐκποιήσει διαλέγεσθαι, νῦν δὲ περὶ τὴν μυθολογίαν γινώμεθα. Ἔστω οὕτως.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:9" n="1">
+<p rend="indent">Ὁρᾷς οὖν, ὡς ἂν παρέλθῃς τὴν πύλην ταύτην, ἀνωτέρω ἄλλον περίβολον καὶ γυναῖκας ἔξω τοῦ περιβόλου ἑστηκυίας κεκοσμημένας ὥσπερ ἑταῖραι εἰώθασι; </p>
+<p rend="indent">Καὶ μάλα. </p>
+<p rend="indent">Αὗται τοίνυν ἡ μὲν Ἀκρασία καλεῖται, ἡ δὲ Ἀσωτία, ἡ δὲ Ἀπληστία, ἡ δὲ Κολακεία.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:9" n="2">
+<p rend="indent">Τί οὖν ὧδε ἑστήκασιν αὗται; </p>
+<p rend="indent">Παρατηροῦσιν, ἔφη, τοὺς εἰληφότας τι παρὰ τῆς Τύχης. </p>
+<p rend="indent">Εἶτα τί; </p>
+<p rend="indent">Ἀναπηδῶσι καὶ συμπλέκονται αὐτοῖς καὶ κολακεύουσι καὶ ἀξιοῦσι παρʼ αὑταῖς μένειν λέγουσαι ὅτι βίον ἕξουσιν ἡδύν τε καὶ ἄπονον καὶ κακοπάθειαν ἔχοντα οὐδεμίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:9" n="3">
+<p>ἐὰν οὖν τις πεισθῇ ὑπʼ αὐτῶν εἰσελθεῖν εἰς τὴν Ἡδυπάθειαν, μέχρι μέν τινος ἡδεῖα δοκεῖ <pb facs="cebetistabula00cebe_0025"/> εἶναι ἡ διατριβή, ἕως ἂν γαργαλίζῃ τὸν ἄνθρωπον, εἶτʼ οὐκέτι. ὅταν γὰρ ἀνανήψῃ, αἰσθάνεται ὅτι οὐκ ἤσθιεν, ἀλλʼ ὑπʼ αὐτῆς κατησθίετο καὶ ὑβρίζετο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:9" n="4">
+<p>διὸ καὶ ὅταν ἀναλώσῃ πάντα ὅσα ἔλαβε παρὰ τῆς Τύχης, ἀναγκάζεται ταύταις ταῖς γυναιξὶ δουλεύειν καὶ πάνθʼ ὑπομένειν καὶ ἀσχημονεῖν καὶ ποιεῖν ἕνεκεν τούτων πάντα ὅσα ἐστὶ βλαβερά, οἷον ἀποστερεῖν, ἱεροσυλεῖν, ἐπιορκεῖν, προδιδόναι, ληΐζεσθαι καὶ πάνθʼ ὅσα τούτοις παραπλήσια. ὅταν οὖν πάντα αὐτοῖς ἐπιλίπῃ, παραδίδονται τῇ Τιμωρίᾳ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:10" n="1">
+<p rend="indent">Ποία δέ ἐστιν αὕτη; </p>
+<p rend="indent">Ὁρᾷς ὀπίσω τι, ἔφη, αὐτῶν ἄνω ὥσπερ θυρίον μικρὸν καὶ τόπον στενόν τινα καὶ σκοτεινόν; </p>
+<p rend="indent"><add>Καὶ μάλα.</add></p>
+<p rend="indent">Οὐκοῦν καὶ γυναῖκες αἰσχραὶ καὶ ῥυπαραὶ καὶ ῥάκη ἠμφιεσμέναι δοκοῦσι συνεῖναι;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:10" n="2">
+<p rend="indent">Καὶ μάλα. </p>
+<p rend="indent">Αὗται τοίνυν, ἔφη, ἡ μὲν τὴν μάστιγα ἔχουσα καλεῖται Τιμωρία, ἡ δὲ τὴν κεφαλὴν ἐν τοῖς γόνασιν ἔχουσα Λύπη, ἡ δὲ τὰς τρίχας τίλλουσα ἑαυτῆς Ὀδύνη. <pb facs="cebetistabula00cebe_0026"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:10" n="3">
+<p rend="indent">Ὁ δὲ ἄλλος οὗτος ὁ παρεστηκὼς αὐταῖς δυσειδής τις καὶ λεπτὸς καὶ γυμνός, καὶ μετʼ αὐτοῦ τις ἄλλη ὁμοία αὐτῷ αἰσχρὰ καὶ λεπτή, τίς ἐστιν; </p>
+<p rend="indent">Ὁ μὲν Ὀδυρμὸς καλεῖται, ἔφη, ἡ δὲ Ἀθυμία, ἀδελφὴ δʼ ἐστὶν αὕτη αὐτοῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:10" n="4">
+<p>τούτοις οὖν παραδίδοται καὶ μετὰ τούτων συμβιοῖ τιμωρούμενος· εἶτα ἐνταῦθα πάλιν εἰς τὸν ἕτερον οἶκον ῥίπτεται, εἰς τὴν Κακοδαιμονίαν, καὶ ὧδε τὸν λοιπὸν βίον καταστρέφει ἐν πάσῃ κακοδαιμονίᾳ, ἂν μὴ ἡ Μετάνοια αὐτῷ ἐπιτύχῃ ἐκ προαιρέσεως συναντήσασα.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:11" n="1">
+<p rend="indent">Εἶτα τί γίνεται, ἐὰν ἡ Μετάνοια αὐτῷ συναντήσῃ; </p>
+<p rend="indent">Ἐξαιρεῖ αὐτὸν ἐκ τῶν κακῶν καὶ συνίστησιν αὐτῷ ἑτέραν Δόξαν <del>καὶ Ἐπιθυμίαν</del> τὴν εἰς τὴν ἀληθινὴν Παιδείαν ἄγουσαν, ἅμα δὲ καὶ τὴν εἰς τὴν Ψευδοπαιδείαν καλουμένην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:11" n="2">
+<p rend="indent">Εἶτα τί γίνεται; </p>
+<p rend="indent">Ἐὰν μέν, φησί, τὴν Δόξαν ταύτην προσδέξηται τὴν ἄξουσαν αὐτὸν εἰς τὴν ἀληθινὴν Παιδείαν, καθαρθεὶς <pb facs="cebetistabula00cebe_0027"/> ὑπʼ αὐτῆς σώζεται καὶ μακάριος καὶ εὐδαίμων γίνεται ἐν τῷ βίῳ· εἰ δὲ μή, πάλιν πλανᾶται ὑπὸ τῆς Ψευδοδοξίας.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:12" n="1">
+<p rend="indent">῏Ω Ἡράκλεις, ὡς μέγας ὁ κίνδυνος ἄλλος οὗτος. ἡ δὲ Ψευδοπαιδεία ποία ἐστίν; ἔφην ἐγώ. </p>
+<p rend="indent">Οὐχ ὁρᾷς τὸν ἕτερον περίβολον ἐκεῖνον;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:12" n="2">
+<p rend="indent">Καὶ μάλα, ἔφην ἐγώ. </p>
+<p rend="indent">Οὐκοῦν ἔξω τοῦ περιβόλου παρὰ τὴν εἴσοδον γυνή τις ἕστηκεν, ἣ δοκεῖ πάνυ καθάριος καὶ εὔτακτος εἶναι; </p>
+<p rend="indent">Καὶ μάλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:12" n="3">
+<p rend="indent">Ταύτην τοίνυν οἱ πολλοὶ καὶ εἰκαῖοι τῶν ἀνδρῶν Παιδείαν καλοῦσιν· οὐκ ἔστι δέ, ἀλλὰ Ψευδοπαιδεία, ἔφη. οἱ μέν τοι σωζόμενοι ὁπόταν βούλωνται εἰς τὴν ἀληθινὴν Παιδείαν ἐλθεῖν, ὧδε πρῶτον παραγίνονται. </p>
+<p rend="indent">Πότερον οὖν ἄλλη ὁδὸς οὐκ ἔστιν ἐπὶ τὴν ἀληθινὴν Παιδείαν ἄγουσα; <add>Οὐκ</add> ἔστιν, ἔφη.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:13" n="1">
+<p rend="indent">Οὗτοι δὲ οἱ ἄνθρωποι οἱ ἔσω τοῦ περιβόλου ἀνακάμπτοντες τίνες εἰσίν; </p>
+<p rend="indent">Οἱ τῆς Ψευδοπαιδείας, ἔφη, ἐρασταὶ ἠπατημένοι καὶ οἰόμενοι μετὰ τῆς ἀληθινῆς Παιδείας συνομιλεῖν. </p>
+<p rend="indent">Τίνες οὖν καλοῦνται οὗτοι;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:13" n="2">
+<p rend="indent">Οἱ μὲν ποιηταί, ἔφη, οἱ δὲ ῥήτορες, οἱ δὲ διαλεκτικοί, οἱ δὲ μουσικοί, οἱ δὲ ἀριθμητικοί, οἱ δὲ γεωμέτραι, <pb facs="cebetistabula00cebe_0028"/> οἱ δὲ ἀστρολόγοι, οἱ δὲ κριτικοί, οἱ δὲ ἡδονικοί, οἱ δὲ περιπατητικοὶ καὶ ὅσοι ἄλλοι τούτοις εἰσὶ παραπλήσιοι.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:14" n="1">
+<p rend="indent">Αἱ δὲ γυναῖκες ἐκεῖναι αἱ δοκοῦσαι περιτρέχειν ὅμοιαι ταῖς πρώταις, ἐν αἷς ἔφης εἶναι τὴν Ἀκρασίαν <del>καὶ αἱ ἄλλαι αἱ μετʼ αὐτῶν</del> τίνες εἰσίν; </p>
+<p rend="indent">Αὐταὶ ἐκεῖναί εἰσιν, ἔφη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:14" n="2">
+<p rend="indent">Πότερον οὖν καὶ ὧδε εἰσπορεύονται; </p>
+<p rend="indent">Νὴ Δία καὶ ὧδε, σπανίως δὲ καὶ οὐχὶ ὥσπερ ἐν τῷ πρώτῳ περιβόλῳ. </p>
+<p rend="indent">Πότερον οὖν καὶ αἱ Δόξαι; ἔφην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:14" n="3">
+<p rend="indent">Μένει γὰρ καὶ ἐν τούτοις τὸ πόμα, ὃ ἔπιον παρὰ τῆς Ἀπάτης, καὶ ἡ ἄγνοια μένει <del>ἐν τούτοις νὴ Δία</del> καὶ μετʼ αὐτῆς γε ἡ ἀφροσύνη, καὶ οὐ μὴ ἀπέλθῃ ἀπʼ αὐτῶν οὔθʼ ἡ δόξα οὔθʼ ἡ λοιπὴ κακία μέχρι ἂν ἀπογνόντες τῆς Ψευδοπαιδείας εἰσέλθωσιν εἰς τὴν ἀληθινὴν <pb facs="cebetistabula00cebe_0029"/> ὁδὸν καὶ πίωσι τὰς τούτων καθαρτικὰς δυνάμεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:14" n="4">
+<p>εἶτα ὅταν καθαρθῶσι καὶ ἐκβάλωσι τὰ κακὰ πάνθʼ ὅσα ἔχουσι καὶ τὰς δόξας καὶ τὴν ἄγνοιαν καὶ τὴν λοιπὴν κακίαν πᾶσαν, τότε ἂν οὕτω σωθήσονται. ὧδε δὲ μένοντες παρὰ τῇ Ψευδοπαιδείᾳ οὐδέποτε ἀπολυθήσονται οὐδὲ ἐλλείψει αὐτοὺς κακὸν οὐδὲν ἕνεκα τούτων τῶν μαθημάτων</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="15">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:15" n="1">
+<p rend="indent">Ποία οὖν αὕτη ἡ ὁδός ἐστιν ἡ φέρουσα ἐπὶ τὴν ἀληθινὴν Παιδείαν; <del>ἔφην</del>. </p>
+<p rend="indent">Ὁρᾷς ἄνω, ἔφη, τόπον τινὰ ἐκεῖνον, ὅπου οὐδεὶς ἐπικατοικεῖ, ἀλλʼ ἔρημος δοκεῖ εἶναι; </p>
+<p rend="indent">Ὁρῶ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:15" n="2">
+<p rend="indent">Οὐκοῦν καὶ θύραν τινὰ μικρὰν καὶ ὁδόν τινα πρὸ τῆς θύρας, ἥτις οὐ πολὺ ὀχλεῖται, ἀλλʼ ὀλίγοι πάνυ πορεύονται ὥσπερ διʼ ἀνοδίας τινὸς καὶ τραχείας καὶ πετρώδους εἶναι δοκούσης; </p>
+<p rend="indent">Καὶ μάλα, ἔφην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:15" n="3">
+<p rend="indent">Οὐκοῦν καὶ βουνός τις ὑψηλὸς δοκεῖ εἶναι καὶ <pb facs="cebetistabula00cebe_0030"/> ἀνάβασις στενὴ πάνυ καὶ κρημνοὺς ἔχουσα ἔνθεν καὶ ἔνθεν βαθεῖς.</p> 
+<p rend="indent">‘Ορῶ.</p>
+<p rend="indent">Αὕτη τοίνυν ἐστὶν ἡ ὁδὸς, ἔφη, ἡ ἄγουσα πρὸς τὴν ἀληθινὴν Παιδείαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:15" n="4">
+<p rend="indent">Καὶ μάλα γε χαλεπὴ προσιδεῖν. </p>
+<p rend="indent">Οὐκοῦν καὶ ἄνω ἐπὶ τοῦ βουνοῦ ὁρᾷς πέτραν τινὰ μεγάλην καὶ ὑψηλὴν καὶ κύκλῳ ἀπόκρημνον; </p>
+<p rend="indent">Ὁρῶ, ἔφην.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="16">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:16" n="1">
+<p rend="indent">Ὁρᾷς οὖν καὶ γυναῖκας δύο ἑστηκυίας ἐπὶ τῆς πέτρας λιπαρὰς καὶ εὐεκτούσας τῷ σώματι, ὡς ἐκτετάκασι τὰς χεῖρας προθύμως; </p>
+<p rend="indent">Ὁρῶ, ἀλλὰ τίνες καλοῦνται, ἔφην, αὗται;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:16" n="2">
+<p rend="indent">Ἡ μὲν Ἐγκράτεια καλεῖται, ἔφη, ἡ δὲ Καρτερία εἰσὶ δὲ ἀδελφαί. </p>
+<p rend="indent">Τί οὖν τὰς χεῖρας ἐκτετάκασι προθύμως οὕτως;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:16" n="3">
+<p rend="indent">Παρακαλοῦσιν, ἔφη, τοὺς παραγινομένους ἐπὶ τὸν τόπον θαρρεῖν καὶ μὴ ἀποδειλιᾶν λέγουσαι ὅτι βραχὺ ἔτι δεῖ καρτερῆσαι αὐτοὺς, εἶτα ἥξουσιν εἰς ὁδὸν καλήν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:16" n="4">
+<p rend="indent">Ὅταν οὖν παραγένωνται ἐπὶ τὴν πέτραν, πῶς ἀναβαίνουσιν; ὁρῶ γὰρ ὁδὸν φέρουσαν οὐδεμίαν ἐπʼ αὐτάς. </p>
+<p rend="indent">Αὗται ἀπὸ τοῦ κρημνοῦ προσκαταβαίνουσι καὶ ἕλκουσιν αὐτοὺς ἄνω πρὸς αὑτάς, εἶτα κελεύουσιν <pb facs="cebetistabula00cebe_0031"/> αὐτοὺς διαναπαύσασθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:16" n="5">
+<p>καὶ μετὰ μικρὸν διδόασιν ἰσχὺν καὶ θάρσος καὶ ἐπαγγέλλονται αὐτοὺς καταστήσειν πρὸς τὴν ἀληθινὴν Παιδείαν καὶ δεικνύουσιν αὐτοῖς τὴν ὁδόν, ὡς ἔστι καλή τε καὶ ὁμαλὴ καὶ εὐπόρευτος καὶ καθαρὰ παντὸς κακοῦ, ὥσπερ ὁρᾷς. Ἐμφαίνει νὴ Δία.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="17">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:17" n="1">
+<p rend="indent">Ὁρᾷς οὖν, ἔφη, καὶ ἔμπροσθεν τοῦ ἄλσους ἐκείνου τόπον τινά, ὃς δοκεῖ καλός τε εἶναι καὶ λειμωνοειδὴς καὶ φωτὶ πολλῷ καταλαμπόμενος; </p>
+<p rend="indent">Καὶ μάλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:17" n="2">
+<p rend="indent">Κατανοεῖς οὖν ἐν μέσῳ τῷ λειμῶνι περίβολον ἕτερον καὶ πύλην ἑτέραν; </p>
+<p rend="indent">Ἔστιν οὕτως. ἀλλὰ τίς καλεῖται ὁ τόπος οὗτος; </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:17" n="3">
+<p rend="indent">Εὐδαιμόνων οἰκητήριον, ἔφη· ὧδε γὰρ διατρίβουσιν αἱ Ἀρεταὶ πᾶσαι καὶ ἡ Εὐδαιμονία. </p>
+<p rend="indent">Εἶεν, ἔφην ἐγώ, ὡς καλὸν λέγεις τὸν τόπον εἶναι.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="18">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:18" n="1">
+<p rend="indent">Οὐκοῦν παρὰ τὴν πύλην ὁρᾷς, ἔφη, ὅτι γυνή τις ἐστὶ καλὴ καὶ καθεστηκυῖα τὸ πρόσωπον, μέσῃ δὲ καὶ κεκριμένῃ ἤδη τῇ ἡλικίᾳ, στολὴν δʼ ἔχουσα ἁπλῆν τε καὶ ἀκαλλώπιστον; ἕστηκε δὲ οὐκ ἐπὶ στρογγύλου λίθου, ἀλλʼ ἐπὶ τετραγώνου ἀσφαλῶς κειμένου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:18" n="2">
+<p>καὶ μετὰ ταύτης ἄλλαι δύο εἰσὶ θυγατέρες τινὲς δοκοῦσαι εἶναι. <pb facs="cebetistabula00cebe_0032"/> 
+Ἐμφαίνει οὕτως ἔχειν. </p>
+<p rend="indent">Τούτων τοίνυν ἡ μὲν ἐν τῷ μέσῳ Παιδεία ἐστίν, ἡ δὲ Ἀλήθεια, ἡ δὲ Πειθώ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:18" n="3">
+<p rend="indent">Τί δὲ ἕστηκεν ἐπὶ λίθου τετραγώνου αὕτη; </p>
+<p rend="indent">Σημεῖον, ἔφη, ὅτι ἀσφαλής τε καὶ βεβαία ἡ πρὸς αὐτὴν ὁδός ἐστι τοῖς ἀφικνουμένοις καὶ τῶν διδομένων ἀσφαλὴς ἡ δόσις τοῖς λαμβάνουσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:18" n="4">
+<p rend="indent">Καὶ τίνα ἐστίν, ἃ δίδωσιν αὕτη; </p>
+<p rend="indent">Θάρσος καὶ ἀφοβία, ἔφη ἐκεῖνος. </p>
+<p rend="indent">Ταῦτα δὲ τίνα ἐστίν; </p>
+<p rend="indent">Ἐπιστήμη, ἔφη, τοῦ μηδὲν ἄν ποτε δεινὸν παθεῖν ἐν τῷ βίῳ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="19">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:19" n="1">
+<p rend="indent">Ὦ Ἡράκλεις ὡς καλά, ἔφην, τὰ δῶρα. ἀλλὰ τίνος ἕνεκεν οὕτως ἔξω τοῦ περιβόλου ἕστηκεν; </p>
+<p rend="indent">Ὅπως τοὺς παραγινομένους, ἔφη, θεραπεύῃ καὶ ποτίζῃ τὴν καθαρτικὴν δύναμιν. εἶθʼ ὅταν καθαρθῶσιν, οὕτως εἰσάγει τούτους πρὸς τὰς Ἀρετάς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:19" n="2">
+<p rend="indent">Πῶς τοῦτο; ἔφην ἐγώ, οὐ γὰρ συνίημι. </p>
+<p rend="indent">Ἀλλὰ συνήσεις, ἔφη. ὡς ἄν, εἴ τις φιλοτίμως κάμνων ἐτύγχανε, πρὸς ἰατρὸν ἂν δήπου γενόμενος πρότερον καθαρτικοῖς ἐξέβαλλε τὰ νοσοποιοῦντα, εἶτα <pb facs="cebetistabula00cebe_0033"/> οὕτως ἂν ὁ ἰατρὸς αὐτὸν εἰς ἀνάληψιν καὶ ὑγείαν κατέστησεν, </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:19" n="3">
+<p>εἰ δὲ μὴ ἐπείθετο οἷς ἐπέταττεν, εὐλόγως ἂν δήπου ἀπωσθεὶς ἐξώλετο ὑπὸ τῆς νόσου . </p>
+<p rend="indent">Ταῦτα μὲν συνίημι, ἔφην ἐγώ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:19" n="4">
+<p rend="indent">Τὸν αὐτὸν τοίνυν τρόπον, ἔφη, καὶ πρὸς τὴν Παιδείαν ὅταν τις παραγένηται, θεραπεύει αὐτὸν καὶ ποτίζει τῇ ἑαυτῆς δυνάμει, ὅπως ἐκκαθάρῃ πρῶτον καὶ ἐκβάλῃ τὰ κακὰ πάντα ὅσα ἔχων ἦλθε. </p>
+<p rend="indent">Ποῖα ταῦτα;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:19" n="5">
+<p rend="indent">Τὴν ἄγνοιαν καὶ τὸν πλάνον, ὃν ἐπεπώκει παρὰ τῆς Ἀπάτης, καὶ τὴν ἀλαζονείαν καὶ τὴν ἐπιθυμίαν καὶ τὴν ἀκρασίαν καὶ τὸν θυμὸν καὶ τὴν φιλαργυρίαν καὶ τὰ λοιπὰ πάντα, ὧν ἀνεπλήσθη ἐν τῷ πρώτῳ περιβόλῳ.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="20">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:20" n="1">
+<p rend="indent">Ὅταν οὖν καθαρθῇ, ποῦ αὐτὸν ἀποστέλλει; </p>
+<p rend="indent">Ἔνδον, ἔφη, πρὸς τὴν Ἐπιστήμην καὶ πρὸς τὰς ἄλλας Ἀρετάς. </p>
+<p rend="indent">Ποίας ταύτας;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:20" n="2">
+<p rend="indent">Οὐχ ὁρᾷς, ἔφη, ἔσω τῆς πύλης χορὸν γυναικῶν, ὡς εὐειδεῖς δοκοῦσιν εἶναι καὶ εὔτακτοι καὶ στολὴν ἀτρύφερον καὶ ἁπλῆν ἔχουσιν· ἔτι τε ὡς ἄπλαστοί εἰσι καὶ οὐδαμῶς κεκαλλωπισμέναι καθάπερ αἱ ἄλλαι;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:20" n="3">
+<p rend="indent">Ὁρῶ, ἔφην. ἀλλὰ τίνες αὗται καλοῦνται; <pb facs="cebetistabula00cebe_0034"/> </p>
+<p rend="indent">‘Ημὲν πρώτη Ἐπιστήμη, ἔφη, καλεῖται, αἱ δὲ ἄλλαι ταύτης ἀδελφαὶ Ἀνδρεία, Δικαιοσύνη, Καλοκἀγαθία, Σωφροσύνη, Εὐταξία, Ἐλευθερία, Ἐγκράτεια, Πρᾳότης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:20" n="4">
+<p rend="indent">Ὦ κάλλιστε, ἔφην ἔγωγε, ὡς ἐν μεγάλῃ ἐλπίδι ἐσμέν.
+Ἐὰν συνῆτε, ἔφη, καὶ ἕξιν περιποιήσησθε ὧν ἀκούετε. </p>
+<p rend="indent">Ἀλλὰ ποσέξομεν, ἔφην ἔγωγε, ὡς μάλιστα. </p>
+<p rend="indent">Τοιγαροῦν, ἔφη, σωθήσεσθε.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="21">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:21" n="1">
+<p rend="indent">Ὅταν οὖν παραλάβωσιν αὐτὸν αὗται, ποῦ ἄγουσι; </p>
+<p rend="indent">Πρὸς τὴν μητέρα, ἔφη. </p>
+<p rend="indent">Αὕτη δὲ τίς ἐστιν; </p>
+<p rend="indent">Εὐδαιμονία, ἔφη. </p>
+<p rend="indent">Ποία δʼ ἐστὶν αὕτη;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:21" n="2">
+<p rend="indent">Ὁρᾶς τὴν ὁδὸν ἐκείνην τὴν φέρουσαν ἐπὶ τὸ ὑψηλὸν ἐκεῖνο, ὅ ἐστιν ἀκρόπολις τῶν περιβόλων πάντων; </p>
+<p rend="indent">Ὁρῶ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:21" n="3">
+<p rend="indent">Οὐκοῦν ἐπὶ τοῦ προπυλαίου γυνὴ καθεστηκυῖα εὐειδής τις κάθηται ἐπὶ θρόνου ὑψηλοῦ κεκοσμημένη ἐλευθέρως καὶ ἀπεριέργως καὶ ἐστεφανωμένη στεφάνῳ εὐανθεῖ πάνυ καλῷ; <pb facs="cebetistabula00cebe_0035"/> 
+Ἐμφαίνει οὕτως. </p>
+<p rend="indent">Αὕτη τοίνυν ἐστὶν ἡ Εὐδαιμονία, ἔφη.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="22">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:22" n="1">
+<p rend="indent">Ὅταν οὖν ὧδέ τις παραγένηται, τί ποιεῖ; Στεφανοῖ αὐτόν, ἔφη, τῇ ἑαυτῆς δυνάμει ἥ τε Εὐδαιμονία καὶ αἱ ἄλλαι Ἀρεταὶ πᾶσαι ὥσπερ τοὺς νενικηκότας τοὺς μεγίστους ἀγῶνας. </p>
+<p rend="indent">Καὶ ποίους ἀγῶνας νενίκηκεν αὐτός; ἔφην ἐγώ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:22" n="2">
+<p rend="indent">Τοὺς μεγίστους, ἔφη, καὶ τὰ μέγιστα θηρία, ἃ πρότερον αὐτὸν κατήσθιε καὶ ἐκόλαζε καὶ ἐποίει δοῦ ταῦτα πάντα νενίκηκε καὶ ἀπέρριψεν ἀφʼ ἑαυτοῦ καὶ κεκράτηκεν ἑαυτοῦ, ὥστε ἐκεῖνα νῦν τούτῳ δουλεύουσι, καθάπερ οὗτος ἐκείνοις πρότερον.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="23">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:23" n="1">
+<p rend="indent">Ποῖα ταῦτα λέγεις θηρία; πάνυ γὰρ ἐπιποθῶ ἀκοῦσαι. </p>
+<p rend="indent">Πρῶτον μέν, ἔφη, τὴν Ἄγνοιαν καὶ τὸν Πλάνον. ἢ οὐ δοκεῖ σοι ταῦτα θηρία; </p>
+<p rend="indent">Καὶ πονηρά γε, ἔφην ἐγώ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:23" n="2">
+<p rend="indent">Εἶτα τὴν Λύπην καὶ τὸν Ὀδυρμὸν καὶ τὴν Φιλαργυρίαν καὶ τὴν Ἀκρασίαν καὶ τὴν λοιπὴν ἅπασαν Κακίαν. πάντων τούτων κρατεῖ καὶ οὐ κρατεῖται ὥσπερ πρότερον. </p>
+<p rend="indent">Ὢ καλῶν ἔργων, ἔφην ἐγώ, καὶ καλλίστης νίκης. <pb facs="cebetistabula00cebe_0036"/> ἀλλʼ ἐκεῖνο ἔτι μοι εἰπέ· τίς ἡ δύναμις τοῦ στεφάνου, ᾧ ἔφης ... στεφανοῦν αὐτόν;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:23" n="4">
+<p rend="indent">Εὐδαιμονική, ὦ νεανίσκε. ὁ γὰρ στεφανωθεὶς ταύτῃ τῇ δυνάμει εὐδαίμων γίνεται καὶ μακάριος καὶ οὐκ ἔχει ἐν ἑτέροις τὰς ἐλπίδας τῆς εὐδαιμονίας, ἀλλʼ ἐν αὑτῷ. XXIV.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="24">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:24" n="1">
+<p rend="indent">Ὡς καλὸν τὸ νίκημα λέγεις. ὅταν δὲ στεφανωθῇ, τί ποιεῖ ἢ ποῖ βαδίζει;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:24" n="2">
+<p rend="indent">Ἄγουσιν αὐτὸν ὑπολαβοῦσαι αἱ Ἀρεταὶ πρὸς τὸν τόπον ἐκεῖνον, ὅθεν ἦλθε πρῶτον, καὶ δεικνύουσιν αὐτῷ τοὺς ἐκεῖ διατρίβοντας ὡς κακῶς διατρίβουσι καὶ ἀθλίως ζῶσι καὶ ὡς ναυαγοῦσιν ἐν τῷ βίῳ καὶ πλανῶνται καὶ ἄγονται κατακεκρατημένοι ὥσπερ ὑπὸ πολεμίων, οἱ μὲν ὑπʼ Ἀκρασίας, οἱ δὲ ὑπʼ Ἀλαζονείας, οἱ δὲ ὑπὸ Φιλαργυρίας, ἕτεροι δὲ ὑπὸ Κενοδοξίας, οἱ δὲ ὑφʼ ἑτέρων Κακῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:24" n="3">
+<p>ἐξ ὧν οὐ δύνανται ἐκλῦσαι ἑαυτοὺς τῶν δεινῶν, οἷς δέδενται, ὥστε σωθῆναι καὶ ἀφικέσθαι ὧδε, ἀλλὰ ταράττονται διὰ παντὸς τοῦ βίου. τοῦτο δὲ πάσχουσι διὰ τὸ μὴ δύνασθαι τὴν ἐνθάδε ὁδὸν εὑρεῖν· ἐπελάθοντο γὰρ τὸ παρὰ τοῦ Δαιμονίου πρόσταγμα.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="25">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:25" n="1">
+<p rend="indent">Ὀρθῶς μοι δοκεῖς λέγειν. ἀλλὰ καὶ τοῦτο πάλιν ἀπορῶ, διὰ τί δεικνύουσιν αὐτῷ τὸν τόπον ἐκεῖνον αἱ Ἀρεταί, ὅθεν ἥκει τὸ πρότερον. <pb facs="cebetistabula00cebe_0037"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:25" n="2">
+<p rend="indent">Οὐκ ἀκριβῶς ᾔδει οὐδὲ ἠπίστατο, ἔφη, οὐδὲν τῶν ἐκεῖ, ἀλλ’ ἐνεδοίαζε καὶ διὰ τὴν ἄγνοιαν καὶ τὸν πλάνον, ὃν δὴ ἐπεπώκει, τὰ μὴ ὄντα ἀγαθὰ ἐνόμιζεν ἀγαθὰ εἶναι καὶ τὰ μὴ ὄντα κακὰ κακά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:25" n="3">
+<p>διὸ καὶ ἔζη κακῶς, ὥσπερ οἱ ἄλλοι οἱ ἐκεῖ διατρίβοντες. νῦν δὲ ἀπειληφὼς τὴν ἐπιστήμην τῶν συμφερόντων αὐτός τε καλῶς ζῇ καὶ τούτους θεωρεῖ ὡς κακῶς πράσσουσιν.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="26">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:26" n="1">
+<p rend="indent">Ἐπειδὰν οὖν θεωρήσῃ πάντα, τί ποιεῖ ἢ ποῦ ἔτι βαδίζει; </p>
+<p rend="indent">Ὅπου ἂν βούληται, ἔφη. πανταχοῦ γὰρ ἔστιν αὐτῷ ἀσφάλεια ὥσπερ τῷ τὸ Κωρύκιον ἄντρον ἔχοντι, καὶ πανταχοῦ, οὗ ἂν ἀφίκηται, πάντα καλῶς βιώσεται μετὰ πάσης ἀσφαλείας. ὑποδέξονται γὰρ αὐτὸν ἀσμένως πάντες καθάπερ τὸν ἰατρὸν οἱ πάσχοντες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:26" n="2">
+<p rend="indent">Πότερον οὖν κἀκείνας τὰς γυναῖκας, ἃς ἔφης θηρία εἶναι, οὐκέτι φοβεῖται, μή τι πάθῃ ὑπ’ αὐτῶν; </p>
+<p rend="indent">Οὐ μὴ διοχληθήσεται οὐδὲν οὔτε ὑπὸ Ὀδύνης οὔτε ὑπὸ Λύπης οὔτε ὑπ’ Ἀκρασίας οὔτε ὑπὸ Φιλαργυρίας οὔτε ὑπὸ Πενίας οὔτε ὑπὸ ἄλλου Κακοῦ οὐδενός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:26" n="3">
+<p>ἁπάντων γὰρ κυριεύει καὶ ἐπάνω πάντων ἐστὶ τῶν <pb facs="cebetistabula00cebe_0038"/> πρότερον αὐτὸν λυπούντων καθάπερ οἱ ἐχιοδεῖκται. τὰ γὰρ θηρία δήπου τὰ πάντας τοὺς ἄλλους κακοποιοῦντα μέχρι θανάτου ἐκείνους οὐ λυπεῖ διὰ τὸ ἔχειν ἀντιφάρμακον αὐτούς. οὕτω καὶ τοῦτον οὐκέτι οὐδὲν λυπεῖ διὰ τὸ ἔχειν ἀντιφάρμακον. </p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="27">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:27" n="1">
+<p rend="indent">Καλῶς ἐμοὶ δοκεῖς λέγειν. ἀλλ’ ἔτι τοῦτό μοι εἰπέ. τίνες εἰσὶν οὗτοι οἱ δοκοῦντες ἐκεῖθεν ἀπὸ τοῦ βουνοῦ παραγίνεσθαι;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:27" n="2">
+<p>καὶ οἱ μὲν αὐτῶν ἐστεφανωμένοι ἔμφασιν ποιοῦσιν εὐφροσύνης τινός, οἱ δὲ ἀστεφάνωτοι λύπης καὶ ταραχῆς καὶ τὰς κνήμας καὶ τὰς κεφαλὰς δοκοῦσι τετρῖφθαι, κατέχονται δὲ ὑπὸ γυναικῶν τινων. </p>
+<p rend="indent">Οἱ μὲν ἐστεφανωμένοι οἱ σεσωσμένοι εἰσὶ πρὸς τὴν Παιδείαν καὶ εὐφραίνονται τετυχηκότες αὐτῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:27" n="3">
+<p>οἱ δὲ ἀστεφάνωτοι οἱ μὲν ἀπεγνωσμένοι ὑπὸ τῆς Παιδείας ἀνακάμπτουσι κακῶς καὶ ἀθλίως διακείμενοι· οἱ δὲ ἀποδεδειλιακότες καὶ οὐκ ἀναβεβηκότες πρὸς τὴν Καρτερίαν πάλιν ἀνακάμπτουσι καὶ πλανῶνται ἀνοδίᾳ. <pb facs="cebetistabula00cebe_0039"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:27" n="4">
+<p rend="indent">Αἱ δὲ γυναῖκες αἱ μετ’ αὐτῶν ἀκολουθοῦσαι τίνες εἰσὶν αὗται; </p>
+<p rend="indent">Λῦπαι, ἔφη, καὶ Ὀδύναι καὶ Ἀθυμίαι καὶ Ἀδοξίαι καὶ Ἄγνοιαι.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="28">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:28" n="1">
+<p rend="indent">Πάντα κακὰ λέγεις αὐτοῖς ἀκολουθεῖν. </p>
+<p rend="indent">Νὴ Δία πάντα, ἔφη, ἐπακολουθοῦσιν. ὅταν δὲ οὗτοι παραγένωνται εἰς τὸν πρῶτον περίβολον πρὸς τὴν Ἡδυπάθειαν καὶ τὴν Ἀκρασίαν,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:28" n="2">
+<p>οὐχ ἑαυτοὺς αἰτιῶνται, ἀλλ’ εὐθὺς κακῶς λέγουσι καὶ τὴν Παιδείαν καὶ τοὺς ἐκεῖσε βαδίζοντας, ὡς ταλαίπωροι καὶ ἄθλιοί εἰσι καὶ κακοδαίμονες, οἳ τὸν βίον τὸν παρ’ αὐταῖς ἀπολιπόντες κακῶς ζῶσι καὶ οὐκ ἀπολαύουσι τῶν παρ’ αὐταῖς ἀγαθῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:28" n="3">
+<p rend="indent">Ποῖα δὲ λέγουσιν ἀγαθὰ εἶναι; </p>
+<p rend="indent">Τὴν ἀσωτίαν καὶ τὴν ἀκρασίαν, ὡς εἴποι ἄν τις ἐπὶ κεφαλαίου. τὸ γὰρ εὐωχεῖσθαι βοσκημάτων τρόπον ἀπόλαυσιν μεγίστων ἀγαθῶν ἡγοῦνται εἶναι.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="29">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:29" n="1">
+<p rend="indent">Αἱ δὲ ἕτεραι γυναῖκες αἱ ἐκεῖθεν παραγινόμεναι ἱλαραί τε καὶ γελῶσαι τίνες καλοῦνται;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:29" n="2">
+<p rend="indent">Δόξαι, ἔφη, καὶ ἀγαγοῦσαι πρὸς τὴν Παιδείαν τοὺς εἰσελθόντας πρὸς τὰς Ἀρετὰς ἀνακάμπτουσιν, ὅπως <pb facs="cebetistabula00cebe_0040"/> ἑτέρους ἀγάγωσι, καὶ ἀναγγέλλουσιν, ὅτι εὐδαίμονες ἤδη γεγόνασιν οὓς τότε ἀπήγαγον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:29" n="3">
+<p rend="indent">Πότερον οὖν, ἔφην ἐγώ, αὗται εἴσω πρὸς τὰς Ἀρετὰς <add>οὐκ</add> εἰσπορεύονται; </p>
+<p><del>Ἔφη οὔ.</del> Οὐ γὰρ θέμις Δόξαν εἰσπορεύεσθαι πρὸς τὴν Ἐπιστήμην, ἀλλὰ τῇ Παιδείᾳ παραδιδόασιν αὐτούς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:29" n="4">
+<p>εἶτα ὅταν ἡ Παιδεία παραλάβῃ, ἀνακάμπτουσιν αὗται πάλιν ἄλλους ἄξουσαι, ὥσπερ αἱ νῆες τὰ φορτία ἐξελόμεναι πάλιν ἀνακάμπτουσι καὶ ἄλλων τινῶν γεμίζονται.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="30">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:30" n="1">
+<p rend="indent">Ταῦτα μὲν δὴ καλῶς μοι δοκεῖς, ἔφην, ἐξηγεῖσθαι. ἀλλ’ ἐκεῖνο οὐδέπω ἡμῖν δεδήλωκας, τί προστάττει τὸ Δαιμόνιον τοῖς εἰσπορευομένοις εἰς τὸν Βίον ποιεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:30" n="2">
+<p rend="indent">Θαρρεῖν, ἔφη. διὸ καὶ ὑμεῖς θαρρεῖτε· πάντα γὰρ ἐξηγήσομαι καὶ οὐδὲν παραλείψω. </p>
+<p rend="indent">Καλῶς λέγεις, ἔφην ἐγώ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:30" n="3">
+<p rend="indent">Ἐκτείνας οὖν τὴν χεῖρα πάλιν, Ὁρᾶτε, ἔφη, τὴν γυναῖκα ἐκείνην, ἣ δοκεῖ τυφλή τις εἶναι καὶ ἐπὶ λίθου στρογγύλου ἑστάναι, ἣν καὶ ἄρτι ὑμῖν εἶπον ὅτι Τύχη καλεῖται; </p>
+<p rend="indent">Ὁρῶμεν.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="31">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:31" n="1">
+<p rend="indent">Ταύτῃ κελεύει, ἔφη, μὴ πιστεύειν καὶ βέβαιον μηδὲν νομίζειν μηδὲ ἀσφαλὲς εἶναι, ὅ τι ἂν παρ <pb facs="cebetistabula00cebe_0041"/> αὐτῆς τις λάβῃ μηδὲ ὡς ἴδια ἡγεῖσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:31" n="2">
+<p>οὐδὲν γὰρ κωλύει πάλιν ταῦτα ἀφελέσθαι καὶ ἑτέρῳ δοῦναι. πολλάκις γὰρ εἴωθε τοῦτο ποιεῖν. καὶ διὰ ταύτην οὖν τὴν αἰτίαν κελεύει πρὸς τὰς παρ’ αὐτῆς δόσεις ἴσους γίνεσθαι καὶ μήτε χαίρειν ὅταν διδῷ μήτε ἀθυμεῖν ὅταν ἀφέληται καὶ μήτε ψέγειν αὐτὴν μήτε ἐπαινεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:31" n="3">
+<p>οὐδὲν γὰρ ποιεῖ μετὰ λογισμοῦ, ἀλλ’ εἰκῆ καὶ ὡς ἔτυχε πάντα, ὥσπερ πρότερον ὑμῖν ἔλεξα. διὰ τοῦτο οὖν τὸ Δαιμόνιον κελεύει μὴ θαυμάζειν, ὅ τι ἂν πράττῃ αὕτη, μηδὲ γίνεσθαι ὁμοίους τοῖς κακοῖς τραπεζίταις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:31" n="4">
+<p>καὶ γὰρ ἐκεῖνοι ὅταν μὲν λάβωσι τὸ ἀργύριον παρὰ τῶν ἀνθρώπων, χαίρουσι καὶ ἴδιον νομίζουσιν εἷναι, ὅταν δὲ ἀπαιτῶνται, ἀγανακτοῦσι καὶ δεινὰ οἴονται πεπονθέναι, οὐ μνημονεύοντες, ὅτι ἐπὶ τούτῳ ἔλαβον τὰ θέματα, ἐφ’ ᾧ οὐδὲν κωλύει τὸν θέμενον πάλιν κομίσασθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:31" n="5">
+<p>ὡσαύτως τοίνυν κελεύει ἔχειν τὸ Δαιμόνιον καὶ πρὸς τὴν παρ’ αὐτῆς δόσιν καὶ μνημονεύειν, ὅτι τοιαύτην φύσιν ἔχει ἡ Τύχη, ὥστε ἃ δέδωκεν ἀφελέσθαι καὶ ταχέως πάλιν δοῦναι πολλαπλάσια, αὖθις δὲ ἀφελέσθαι ἃ δέδωκεν, οὐ μόνον δέ, ἀλλὰ καὶ τὰ <pb facs="cebetistabula00cebe_0042"/> προϋπάρχοντα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:31" n="6">
+<p>ἃ γοῦν δίδωσι, λαβεῖν κελεύει παρ’ αὐτῆς καὶ συντόμως ἀπελθεῖν βλέποντας πρὸς τὴν βεβαίαν καὶ ἀσφαλῆ δόσιν.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="32">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:32" n="1">
+<p rend="indent">Ποίαν ταύτην; ἔφην ἐγώ. </p>
+<p rend="indent">Ἣν λήψονται παρὰ τῆς Παιδείας, ἢν διασωθῶσιν ἐκεῖ. </p>
+<p rend="indent">Αὕτη οὖν τίς ἐστιν;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:32" n="2">
+<p rend="indent">Ἡ ἀληθὴς ἐπιστήμη τῶν συμφερόντων, ἔφη, καὶ ἀσφαλὴς δόσις καὶ βεβαία καὶ ἀμεταμέλητος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:32" n="3">
+<p>φεύγειν οὖν κελεύει συντόμως πρὸς ταύτην, καὶ ὅταν ἔλθωσι πρὸς τὰς γυναῖκας ἐκείνας, ἃς καὶ πρότερον εἶπον ὅτι Ἀκρασία καὶ Ἡδυπάθεια καλοῦνται, καὶ ἐντεῦθεν κελεύει συντόμως ἀπαλλάττεσθαι καὶ μὴ πιστεύειν μηδὲ ταύταις μηδέν, ἕως ἂν πρὸς τὴν Ψευδοπαιδείαν ἀφίκωνται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:32" n="4">
+<p>κελεύει οὖν αὐτοῦ χρόνον τινὰ ἐνδιατρῖψαι καί λαβεῖν ὅ τι ἂν βούλωνται παρʼ αὐτῆς ὥσπερ ἐφόδιον, εἶτα ἐντεῦθεν ἀπιέναι πρὸς τὴν ἀληθινὴν Παιδείαν συντόμως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:32" n="5">
+<p>ταῦτά ἐστιν ἃ προστάττει τὸ Δαιμόνιον. ὅστις τοίνυν παρ’ αὐτά τι ποιεῖ ἢ παρακούει, ἀπόλλυται κακὸς κακῶς.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="33">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:33" n="1">
+<p rend="indent">Ὁ μὲν δὴ μῦθος, ὦ ξένοι, ὁ ἐν τῷ πίνακι τοιοῦτος ἡμῖν ἐστιν. εἰ δὲ δεῖ τι προσπυθέσθαι περὶ ἑκάστου τούτων, οὐδεὶς φθόνος· ἐγὼ γὰρ ὑμῖν φράσω. <pb facs="cebetistabula00cebe_0043"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:33" n="2">
+<p rend="indent">Καλῶς λέγεις, ἔφην ἐγώ. ἀλλὰ τί κελεύει αὐτοὺς τὸ Δαιμόνιον λαβεῖν παρὰ τῆς Ψευδοπαιδείας; </p>
+<p rend="indent">Ταῦτα ἃ δοκεῖ εὔχρηστα εἶναι. </p>
+<p rend="indent">Ταῦτ’ οὖν τίνα ἐστί;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:33" n="3">
+<p rend="indent">Γράμματα, ἔφη, καὶ τῶν ἄλλων μαθημάτων ἃ καὶ Πλάτων φησὶν ὡσανεὶ χαλινοῦ τινος δύναμιν ἔχειν τοῖς νέοις, ἵνα μὴ εἰς ἕτερα περισπῶνται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:33" n="4">
+<p rend="indent">Πότερον δὲ ἀνάγκη ταῦτα λαβεῖν, εἰ μέλλει τις ἥξειν πρὸς τὴν ἀληθινὴν Παιδείαν; ἢ οὔ; </p>
+<p rend="indent">Ἀνάγκη μὲν οὐδεμία, ἔφη, χρήσιμα μέντοι ἐστὶ πρὸς τὸ συντομωτέρως ἐλθεῖν. πρὸς δὲ τὸ βελτίους γενέσθαι οὐδὲν συμβάλλεται ταῦτα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:33" n="5">
+<p rend="indent">Οὐδὲν ἄρα, ἔφην, λέγεις ταῦτα χρήσιμα εἶναι πρὸς τὸ βελτίους γενέσθαι ἄνδρας; </p>
+<p rend="indent">Ἔστι γὰρ καὶ ἄνευ τούτων βελτίους γενέσθαι, ὅμως δὲ οὐκ ἄχρηστα κἀκεῖνά ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:33" n="6">
+<p>ὡς γὰρ δι’ ἑρμηνέως συμβάλλομεν τὰ λεγόμενά ποτε, ὅμως μέντοι γε οὐκ ἄχρηστον ἦν ἡμᾶς καὶ αὐτοὺς τὴν φωνὴν εἰδέναι, ἀκριβέστερον γὰρ ἄν τι συνήκαμεν, οὕτω καὶ ἄνευ τούτων τῶν μαθημάτων οὐδὲν κωλύει <add>βελτίους</add> γενέσθαι .... <pb facs="cebetistabula00cebe_0044"/></p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="34">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:34" n="1">
+<p rend="indent">Πότερον οὖν οὐδὲ προέχουσιν οὗτοι οἱ μαθηματικοὶ πρὸς τὸ βελτίους γενέσθαι τῶν ἄλλων ἀνθρώπων;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:34" n="2">
+<p rend="indent">Πῶς <add>γὰρ</add> μέλλουσι προέχειν, ἐπειδὰν φαίνωνται ἠπατημένοι περὶ ἀγαθῶν καὶ κακῶν ὥσπερ καὶ οἱ ἄλλοι καὶ ἔτι κατεχόμενοι ὑπὸ πάσης κακίας;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:34" n="3">
+<p>οὐδὲν γὰρ κωλύει εἰδέναι μὲν γράμματα καὶ κατέχειν τὰ μαθήματα πάντα, ὁμοίως δὲ μέθυσον καὶ ἀκρατῆ εἶναι καὶ φιλάργυρον καὶ ἄδικον καὶ προδότην καὶ τὸ πέρας ἄφρονα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:34" n="4">
+<p rend="indent">Ἀμέλει πολλοὺς τοιούτους ἔστιν ἰδεῖν. Πῶς οὖν οὗτοι προέχουσιν, ἔφη, εἰς τὸ βελτίους ἄνδρας γενέσθαι ἕνεκα τούτων τῶν μαθημάτων;</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="35">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:35" n="1">
+<p rend="indent">Οὐδαμῶς φαίνεται ἐκ τούτου τοῦ λόγου. ἀλλὰ τί ἐστιν, ἔφην ἐγώ, τὸ αἴτιον, ὅτι ἐν τῷ δευτέρῳ περιβόλῳ διατρίβουσιν ὥσπερ ἐγγίζοντες πρὸς τὴν ἀληθινὴν Παιδείαν;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:35" n="2">
+<p rend="indent">Καὶ τί τοῦτο ὠφελεῖ αὐτούς, ἔφη, ὅτε πολλάκις ἔστιν ἰδεῖν παραγινομένους ἐκ τοῦ πρώτου περιβόλου ἀπὸ τῆς Ἀκρασίας καὶ τῆς ἄλλης Κακίας εἰς τὸν τρίτον περίβολον πρὸς τὴν Παιδείαν τὴν ἀληθινήν, οἳ τούτους τοὺς μαθηματικοὺς παραλλάττουσιν; ὥστε πῶς ἔτι προέχουσιν ἄρα, εἰ ἀκινητότεροι ἢ δυσμαθέστεροί εἰσι; <pb facs="cebetistabula00cebe_0045"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:35" n="3">
+<p rend="indent">Πῶς τοῦτο; ἔφην ἐγώ. </p>
+<p rend="indent">Ὅτι οἱ <add>μὲν</add> ἐν τῷ πρώτῳ περιβόλῳ ...... , <add>οἱ δʼ ἐν τῷ δευτέρῳ περιβόλῳ,</add> εἰ μηδὲν ἄλλο, ὃ προσποιοῦνταί γε ἐπίστασθαι οὐκ οἴδασιν. ἕως δʼ ἂν ἔχωσι ταύτην τὴν δόξαν, ἀκινήτους αὐτοὺς ἀνάγκη εἶναι πρὸς τὸ ὁρμᾶν πρὸς τὴν ἀληθινὴν Παιδείαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:35" n="4">
+<p>εἶτα τὸ ἕτερον οὐχ ὁρᾷς, ὅτι καὶ αἱ Δόξαι ἐκ τοῦ πρώτου περιβόλου εἰσπορεύονται πρὸς αὐτοὺς ὁμοίως; ὥστε οὐδὲν οὗτοι ἐκείνων βελτίους εἰσίν, ἐὰν μὴ καὶ τούτοις συνῇ ἡ Μεταμέλεια καὶ πεισθῶσιν, ὅτι οὐ παιδείαν ἔχουσιν, ἀλλὰ ψευδοπαιδείαν, διʼ ἣν ἀπατῶνται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:35" n="5">
+<p>οὕτω δὲ διακείμενοι οὐκ ἄν ποτε σωθεῖεν. καὶ ὑμεῖς τοίνυν, ὦ ξένοι, ἔφη, οὕτω ποιεῖτε καὶ ἐνδιατρίβετε τοῖς λεγομένοις μέχρι ἂν ἕξιν λάβητε. ἀλλὰ περὶ τῶν αὐτῶν πολλάκις δεῖ ἐπισκοπεῖν καὶ μὴ διαλείπειν, τὰ δʼ ἄλλα πάρεργα ἡγήσασθαι. εἰ δὲ μή, οὐδὲν ὄφελος ὑμῖν ἔσται ὧν νῦν ἀκούετε.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="36">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:36" n="1">
+<p rend="indent">Ποιήσομεν. τοῦτο δὲ ἐξήγησαι, πῶς οὐκ ἔστιν ἀγαθά, ὅσα λαμβάνουσιν οἱ ἄνθρωποι παρὰ τῆς Τύχης, οἷον τὸ ζῆν, τὸ ὑγιαίνειν, τὸ πλουτεῖν, τὸ <pb facs="cebetistabula00cebe_0046"/> εὐδοκιμεῖν, τὸ τέκνα ἔχειν, τὸ νικᾶν καὶ ὅσα τούτοις παραπλήσια;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:36" n="2">
+<p>ἢ πάλιν τὰ ἐναντία πῶς οὐκ ἔστι κακά; πάνυ γὰρ παράδοξον ἡμῖν καὶ ἄπιστον δοκεῖ τὸ λεγόμενο. </p>
+<p rend="indent">Ἄγε τοίνυν, ἔφη, πειρῶ ἀποκρίνασθαι τὸ φαινόμενον περὶ ὧν ἄν σε ἐρωτῶ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:36" n="3">
+<p rend="indent">Ἀλλὰ ποιήσω τοῦτο, ἔφην ἐγώ. </p>
+<p rend="indent">Πότερον οὖν, ἐὰν κακῶς τις ζῇ, ἀγαθὸν ἐκείνῳ τὸ ζῆν; </p>
+<p rend="indent">Οὔ μοι δοκεῖ, ἀλλὰ κακόν, ἔφην ἐγώ. </p>
+<p rend="indent">Πῶς οὖν ἀγαθόν ἐστι τὸ ζῆν, ἔφη, εἴπερ τούτῳ ἐστὶ κακόν;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:36" n="4">
+<p rend="indent">Ὅτι τοῖς μὲν κακῶς ζῶσι κακόν μοι δοκεῖ εἶναι, τοῖς δὲ καλῶς ἀγαθόν. Καὶ κακὸν ἄρα λέγεις τὸ ζῆν καὶ ἀγαθὸν εἶναι; Ἔγωγε.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="37">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:37" n="1">
+<p rend="indent">Μὴ οὖν ἀπιθάνως λέγε. ἀδύνατον τὸ αὐτὸ πρᾶγμα κακὸν καὶ ἀγαθὸν εἶναι. τοῦτο μὲν γὰρ καὶ ὠφέλιμον καὶ βλαβερὸν ἂν εἴη καὶ αἱρετὸν καὶ φευκτὸν τὸ αὐτὸ πρᾶγμα ἀεί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:37" n="2">
+<p rend="indent">Ἀπίθανον μέν. ἀλλὰ πῶς οὐχὶ τὸ κακῶς ζῆν, ᾧ ἂν ὑπάρχῃ, κακόν τι αὐτῷ ὑπάρχει; οὐκοῦν εἰ κακόν τι ὑπάρχει αὐτῷ, κακὸν αὐτὸ τὸ ζῆν ἐστιν. <pb facs="cebetistabula00cebe_0047"/> 
+Ἀλλ’ οὐ ταὐτό, ἔφη, ὑπάρχει τὸ ζῆν καὶ τὸ κακῶς ζῆν. ἢ οὔ σοι φαίνεται; </p>
+<p rend="indent">Ἀμέλει οὐδʼ ἐμοὶ δοκεῖ ταὐτὸ εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:37" n="3">
+<p rend="indent">Τὸ κακῶς τοίνυν ζῆν κακόν ἐστι, τὸ δὲ ζῆν οὐ κακόν. ἐπεὶ εἰ ἦν κακόν, τοῖς ζῶσι καλῶς κακὸν ἂν ὑπῆρχεν, ἐπεὶ τὸ ζῆν αὐτοῖς ὑπῆρχεν, ὅπερ ἐστὶ κακόν. </p>
+<p rend="indent">Ἀληθῆ μοι δοκεῖς λέγειν. </p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="38">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:38" n="1">
+<p rend="indent">Ἐπεὶ τοίνυν ἀμφοτέροις συμβαίνει τὸ ζῆν, καὶ τοῖς καλῶς ζῶσι καὶ τοῖς κακῶς, οὐκ ἂν εἴη οὔτε ἀγαθὸν εἶναι τὸ ζῆν οὔτε κακόν· ὥσπερ οὐδὲ τὸ τέμνειν καὶ καίειν ἐν τοῖς ἀρρωστοῦσίν ἐστι νοσερὸν καὶ ὑγιεινόν, ἀλλὰ τὸ πῶς τέμνειν, οὐκοῦν οὕτω καὶ ἐπὶ τοῦ ζῆν οὐκ ἔστι κακὸν αὐτὸ τὸ ζῆν ἀλλὰ τὸ κακῶς ζῆν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:38" n="2">
+<p rend="indent">Ἔστι ταῦτα. </p>
+<p rend="indent">Εἰ τοίνυν οὕτως <add>ἔχει</add>, θεώρησον, πότερον ἂν βούλοιο ζῆν κακῶς ἢ ἀποθανεῖν καλῶς καὶ ἀνδρείως. </p>
+<p rend="indent">Ἀποθανεῖν ἔγωγε καλῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:38" n="3">
+<p rend="indent">Οὐκοῦν οὐδὲ τὸ ἀποθανεῖν κακόν ἐστιν, εἴπερ αἱρετώτερόν ἐστι πολλάκις τὸ ἀποθανεῖν τοῦ ζῆν. </p>
+<p rend="indent">Ἔστι ταῦτα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:38" n="4">
+<p rend="indent">Οὐκοῦν ὁ αὐτὸς λόγος καὶ περὶ τοῦ ὑγιαίνειν καὶ <pb facs="cebetistabula00cebe_0048"/> νοσεῖν. πολλάκις γὰρ οὐ συμφέρει ὑγιαίνειν, ἀλλὰ τοὐναντίον, ὅταν ᾖ περίστασις τοιαύτη. </p>
+<p rend="indent">Ἀληθῆ λέγεις.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="39">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:39" n="1">
+<p rend="indent">Ἄγε δὴ σκεψώμεθα καὶ περὶ τοῦ πλουτεῖν οὕτως, εἴγε θεωρεῖν ἔστιν — ὡς πολλάκις ἔστιν ἰδεῖν — ὑπάρχοντά τινι πλοῦτον, κακῶς δὲ ζῶντα τοῦτον καὶ ἀθλίως. </p>
+<p rend="indent">Νὴ Δία, πολλούς γε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:39" n="2">
+<p rend="indent">Οὐκοῦν οὐδὲν τούτοις ὁ πλοῦτος βοηθεῖ εἰς τὸ ζῆν καλῶς; </p>
+<p rend="indent">Οὐ φαίνεται· αὐτοὶ γὰρ φαῦλοί εἰσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:39" n="3">
+<p rend="indent">Οὐκοῦν τὸ σπουδαίους εἶναι οὐχ ὁ πλοῦτος ποιεῖ, ἀλλὰ ἡ Παιδεία. </p>
+<p rend="indent">Εἰκός γε. </p>
+<p rend="indent">Ἐκ τούτου ἄρα τοῦ λόγου οὐδὲ ὁ πλοῦτος ἀγαθόν ἐστιν, εἴπερ οὐ βοηθεῖ τοῖς ἔχουσιν αὐτὸν εἰς τὸ βελτίους εἶναι. </p>
+<p rend="indent">Φαίνεται οὕτως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:39" n="4">
+<p rend="indent">Οὐδὲ συμφέρει ἄρα ἐνίοις πλουτεῖν, ὅταν μὴ ἐπίστωνται τῷ πλούτῳ χρῆσθαι. </p>
+<p rend="indent">Δοκεῖ μοι. </p>
+<p rend="indent">Πῶς οὖν τοῦτο ἄν τις κρίνοι ἀγαθὸν εἶναι, ὃ πολλάκις οὐ συμφέρει ὑπάρχειν;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:39" n="5">
+<p rend="indent">Οὐδαμῶς. <pb facs="cebetistabula00cebe_0049"/> </p>
+<p rend="indent">Οὐκοῦν εἰ μέν τις ἐπίσταται τῷ πλούτῳ χρῆσθαι καλῶς καὶ ἐμπείρως, εὖ βιώσεται, εἰ δὲ μή, κακῶς. Ἀληθέστατά μοι δοκεῖς τοῦτο λέγειν.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="40">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:40" n="1">
+<p rend="indent">Καὶ τὸ σύνολον δέ, ἔστι τὸ τιμᾶν ταῦτα ὡς ἀγαθὰ ὄντα ἢ ἀτιμάζειν ὡς κακά, τοῦτο δέ ἐστι τὸ ταράττον τοὺς ἀνθρώπους καὶ βλάπτον, ὅτι ἐὰν τιμῶσιν αὐτὰ καὶ οἴωνται διὰ τούτων μόνων εἶναι τὸ εὐδαιμονεῖν, <del>καὶ</del> πάνθʼ ὑπομένουσι πράττειν ἕνεκα τούτων καὶ τὰ ἀσεβέστατα καὶ τὰ αἰσχρότατα δοκοῦντα εἶναι οὐ παραιτοῦνται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:40" n="2">
+<p>ταῦτα δὲ πάσχουσι διὰ τὴν τοῦ ἀγαθοῦ ἄγνοιαν. ἀγνοοῦσι γὰρ ὅτι οὐ γίνεται ἐκ κακῶν ἀγαθόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:40" n="3">
+<p>πλοῦτον δὲ ἔστι πολλοὺς κτησαμένους ἰδεῖν ἐκ κακῶν καὶ αἰσχρῶν ἔργων, οἷον λέγω ἐκ τοῦ προδιδόναι καὶ ληΐζεσθαι καὶ ἀνδροφονεῖν καὶ συκοφαντεῖν καὶ ἀποστερεῖν καὶ ἐξ ἄλλων πολλῶν καὶ μοχθηρῶν. </p>
+<p rend="indent">Ἔστι ταῦτα.</p></div></div>
+
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1" n="41">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:41" n="1">
+<p rend="indent">Εἰ τοίνυν γίνεται ἐκ κακοῦ ἀγαθὸν μηδέν, ὥσπερ εἰκός, πλοῦτος δὲ γίνεται ἐκ κακῶν ἔργων, ἀνάγκη μὴ εἶναι ἀγαθὸν τὸν πλοῦτον. <pb facs="cebetistabula00cebe_0050"/> 
+Συμβαίνει οὕτως ἐκ τούτου τοῦ λόγου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:41" n="2">
+<p rend="indent">Ἀλλʼ οὐδὲ τὸ φρονεῖν γε οὐδὲ δικαιοπραγεῖν οὐκ ἔστι κτήσασθαι ἐκ κακῶν ἔργων, ὡσαύτως δὲ οὐδὲ τὸ ἀδικεῖν καὶ ἀφρονεῖν ἐκ καλῶν ἔργων, οὐδὲ ὑπάρχειν ἅμα τῷ αὐτῷ δύναται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:41" n="3">
+<p>πλοῦτον δὲ καὶ δόξαν καὶ τὸ νικᾶν καὶ τὰ λοιπὰ ὅσα τούτοις παραπλήσια οὐδὲν κωλύει ὑπάρχειν τινὶ ἅμα μετὰ κακίας πολλῆς. ὥστε οὐκ ἂν εἴη ταῦτα ἀγαθὰ οὔτε κακά, ἀλλὰ τὸ φρονεῖν μόνον ἀγαθόν, τὸ δὲ ἀφρονεῖν κακόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1247.tlg001.1st1K-grc1:41" n="4">
+<p rend="indent">Ἱκανῶς μοι δοκεῖς λέγειν, ἔφην.</p></div></div></div>
+</body></text></TEI>
