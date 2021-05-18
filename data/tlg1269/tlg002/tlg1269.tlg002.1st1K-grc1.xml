@@ -143,14 +143,8 @@
                </editorialDecl>
                <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p> 
                <refsDecl n="CTS">
-                <cRefPattern matchPattern="(\w+).(\w+).(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3']">
-                   <p>This pointer pattern extracts fragments.</p>
-                </cRefPattern>  
-                    <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-                    <p>This pointer pattern extracts sections.</p>
-                    </cRefPattern>
-                    <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-                    <p>This pointer pattern extracts chapters.</p>
+                    <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragments.</p>
                     </cRefPattern>
                 </refsDecl>
           </encodingDesc>
@@ -167,11 +161,9 @@
      <text>
           <body>
                <div type="edition" n="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" xml:lang="grc">
-                         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="prologue">
-                              <head rend="center"><foreign xml:lang="lat">Cleanthis Assii fragmenta et apophthegmata.</foreign></head>
-                              <div type="textpart" subtype="section"  xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="1">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">Vita et mores.</foreign></head>
-                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="463">
+                   <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="463">
+                                   <head rend="center"><foreign xml:lang="lat">Cleanthis Assii fragmenta et apophthegmata.</foreign></head>
+                          <head type="subhead" rend="center"><foreign xml:lang="lat">Vita et mores.</foreign></head>
                                    <pb facs="stoicorumveterum01arniuoft_0153"/>
                                         <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 168.</foreign> Κλεάνθης Φανίου Ἄσσιος. οὖτος πρῶτον ἦν πύκτης,
                                         ὥς φησιν Ἀντισθένης ἐν Διαδοχαῖς. ἀφικόμενος δὲ εἰς Ἀθήνας τέσσαρας ἔχων δραχμάς, καθὰ φασί τινες, καὶ
@@ -287,10 +279,10 @@
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="480">
                                         <p rend="indent"><foreign xml:lang="lat">Cicero Acad. Pr. II 73. Quis hunc philosophum (scil. Democritum) non 
                                         anteponit Cleanthi, Chrysippo, reliquis inferioris aetatis? qui mihi cum illo collati quintae classis videntur.</foreign></p></div>
-                              </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="2">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">Scripta.</foreign></head>
+                           
+                                   
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="481">
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Scripta.</foreign></head>
                                         <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 174.</foreign> Βιβλία δὲ κάλλιστα καταλέλοιπεν, ἅ ἐστι τάδε·
                                              <lb/>περὶ χρόνου
                                              <lb/>περὶ τῆς [τοῦ] Ζήνωνος φυσιολογίας δύο
@@ -346,26 +338,23 @@
                                              <lb/>περὶ κατηγορημάτων
                                              <lb/>Ταῦτα αὐτῷ τὰ βιβλία.<lb/></p>
                                    </div>
-                              </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="3">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">Placita.</foreign></head>
+                                   
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="482">
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Placita.</foreign></head>
                                         <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 41.</foreign> ὁ δὲ Κλεάνθης ἓξ μέρη φησί type="subhead" rend="center"><foreign xml:lang="lat">scil.</foreign>
                                              τοῦ κατὰ φιλοσοφίαν λόγου) διαλεκτικόν, ῥητορικόν, ἠθικόν, πολιτικόν, φυσικόν, θεολογικόν.</p></div>
-                                   </div>
-                         </div>
-                         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="1">
-                              <head rend="center"><foreign xml:lang="lat">A. Fragmenta logica et rhetorica.</foreign></head>
-                                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="1">
-                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Utilitas Logicae.</foreign></head>
+
                                   <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="483">
+                                       <head rend="center"><foreign xml:lang="lat">Fragmenta logica et rhetorica.</foreign></head>
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Utilitas Logicae.</foreign></head>
                                         <p rend="indent"><foreign xml:lang="lat">Arrianus Epict. Diss. I 17, 11.</foreign> ἐκεῖνο ἀπαρκεῖ ὅτι τῶν 
                                                      ἄλλων ἐστὶ διακριτικὰ καὶ ἐπισκεπτικὰ καί, ὡς ἄν τις εἴποι, μετρητικὰ καὶ στατικά (<foreign xml:lang="lat">scil.</foreign> 
                                              τὰ λογικὰ). τίς λέγει ταῦτα; μόνος Χρύσιππος καὶ Ζήνων καὶ Κλεάνθης; Ἀντισθένης δʼ οὐ λέγει; </p></div>
-                                   </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="2">
-                                         <head type="subhead" rend="center"><foreign xml:lang="lat">De Visis.</foreign></head>
+                                   
+                              
+                                         
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="484">
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">De Visis.</foreign></head>
                                         <p rend="indent"><foreign xml:lang="lat">Sextus adv. math. VII 228.</foreign> φαντασία οὖν ἐστὶ κατʼ αὐτοὺς τύπωσις ἐν ψυχῇ.
                                                   περὶ ἧς εὐθὺς καὶ διέστησαν· Κλεάνθης μὲν γὰρ ἤκουσε τὴν
                                              τύπωσιν κατὰ εἰσοχήν τε καὶ ἐξοχήν, ὥσπερ καὶ ⟨τὴν⟩ διὰ τῶν δακτυλίων γιγνομένην τοῦ κηροῦ τύπωσιν. — <foreign xml:lang="lat">ib,</foreign> 372. εἰ γὰρ τ
@@ -375,11 +364,11 @@
                                              ς φασιν, οὐ δυνήσεταί τις τύπωσιν ἐπινοεῖν ἐν αὐτῷ οὔτε κατ’ εἰσοχὴν καὶ ἐξοχήν, ὡς ἐπὶ τῶν σφραγίδων ὁρῶμεν, οὔτε [κ
                                              ατὰ] τὴν τερατολογουμένην ἑτεροιωτικήν.
                                                   <pb facs="stoicorumveterum01arniuoft_0159"/></p></div>
-                                   </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="3">
-                                   <head type="subhead" rend="center">Περὶ Σημαινόντων.<lb/> (<foreign xml:lang="lat">Vol. II p. 43 sq.</foreign>)</head>
+
+                                   
                                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="485">
-                                                  <p rend="indent"><foreign xml:lang="lat">Varro de lingua lat. V 9. quod si summum gradum non attigero, tamen secundum praeteribo, quod 
+                                                  <head type="subhead" rend="center">Περὶ Σημαινόντων.<lb/> (<foreign xml:lang="lat">Vol. II p. 43 sq.</foreign>)</head>
+                                             <p rend="indent"><foreign xml:lang="lat">Varro de lingua lat. V 9. quod si summum gradum non attigero, tamen secundum praeteribo, quod 
                                                        nom solum ad Aristophanis sed etiam ad Cleanthis lucubravi.</foreign></p>
                                                   <p rend="indent"><foreign xml:lang="lat">Secundus gradus explanatur § 7. quo grammatica escendit antiqua, quae os
                                              tendit quemadmodum quodque poeta finxerit verbum, confinxerit, declinarit.</foreign></p></div>
@@ -395,10 +384,9 @@
                                                   <p rend="indent"><foreign xml:lang="lat">Seneca Epist. 108, 10. Nam, ut dicebat Cleanthes, quemadmodum spiritus noster
                                              clariorem sonum reddit, cum illum tuba, per longi canalis angustias tractum, patentiore novissimo exitu effudit; sic 
                                              sensus nostros clariores carminis arta necessitas efficit.</foreign></p></div>
-                                             </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="4">
-                                   <head type="subhead" rend="center">Περὶ Σημαινομένων.<foreign xml:lang="lat">(Vol. II p. 48.)</foreign></head>
+                                   
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="488">
+                                        <head type="subhead" rend="center">Περὶ Σημαινομένων.<foreign xml:lang="lat">(Vol. II p. 48.)</foreign></head>
                                              <p rend="indent"><foreign xml:lang="lat"> Clemens Alex. Strom. VIII 9, 26 p. 930 P.</foreign> λεκτὰ γὰρ τὰ κατηγορήματα
                                                καλοῦσι Κλεάνθης καὶ Ἀρχέδημος.</p></div>
                                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="489">
@@ -421,25 +409,20 @@
                                                        Κλεάνθης τοίνυνλέγει ὅτι τέχνη ἐστὶν ἕξις ὁδῷ πάντα ἀνύουσα.</p>
                                                    <p rend="indent"><foreign xml:lang="lat">Quintil. Inst. Or. II 17, 41. nam sive, ut Cleanthes voluit, ars est 
                                              potestas viam, id est ordinem efficiens. — Cf. Zeno n. 72sq.</foreign></p></div>
-                         </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="5">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Rhetorica.</foreign></head>
+                              
                                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="491">
+                                             <head type="subhead" rend="center"><foreign xml:lang="lat">De Rhetorica.</foreign></head>
                                              <p rend="indent"><foreign xml:lang="lat">Quintilianus Inst. Or. II 15, 34—35. 
                                              huic eius substantiae maxime conveniet finitio <q>rhetoricen esse bene dicendi scientiam.</q> nam et orationis omnes 
                                              virtutes semel complectitur, et protinus etiam mores oratoris, cum bene dicere non possit nisi bonus. idem valet 
                                              Chrysippi finis ille ductus a Cleanthe <q>scientia recte dicendi.</q></foreign></p></div>
                                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="492">
                                              <p rend="indent"><foreign xml:lang="lat">Cicero de finibus IV 7. Quamquam scripsit artem
-                                             rhetoricam Cleanthes — sed sic ut siquis obmutescere concupierit, nihil aliud legere debeat.</foreign></p>
-                                   </div>
-                         </div>
-                    </div>
-                    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="2">
-                         <head rend="center"><foreign xml:lang="lat">B. Fragmenta physica et theologica.</foreign></head>
-                                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="1">
-                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Physicae Fundamenta.<lb/> (Vol. II p. 111)</foreign></head>
+                                             rhetoricam Cleanthes — sed sic ut siquis obmutescere concupierit, nihil aliud legere debeat.</foreign></p></div>
+                    
                                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="493">
+                                             <head rend="center"><foreign xml:lang="lat">B. Fragmenta physica et theologica.</foreign></head>
+                                             <head type="subhead" rend="center"><foreign xml:lang="lat">Physicae Fundamenta.<lb/> (Vol. II p. 111)</foreign></head>
                                              <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 134.</foreign> δοκεῖ δ’ αὐτοῖς 
                                              ἀρχὰς εἶναι τῶν ὅλων δύο, τὸ ποιοῦν καὶ τὸ πάσχον. τὸ μὲν οὖν πάσχον εἶναι τὴν ἄποιον οὐσίαν, τὴν ὕλην, τὸ δὲ ποιοῦν τὸν
                                              ἐν αὐτῇ λόγον, τὸν θεόν. τοῦτον γὰρ ἀίδιον ὄντα διὰ πάσης αὐτῆς δημιουργεῖν ἕκαστα. τίθησι δὲ τὸ δόγμα τοῦτο... 
@@ -526,11 +509,9 @@
                                                   genere pubescant. quare cum solis ignis similis eorum ignium sit, qui sunt in corporibus animantium, solem
                                                   quoque animantem esse oportet, et quidem reliqua astra, quae oriantur in ardore caelesti, qui aether vel caelum
                                                   nominatur.</foreign></p></div>
-                                        </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="2">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De mundo et de meteoris. <lb/> (Vol. II p. 167 et p. 195.)</foreign></head>
-                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="505">
-                                   <p rend="indent"><foreign xml:lang="lat">Geminus elem. astron. Petav. Uranolog. p. 53.</foreign> ὑπὸ τὴν διακεκαυμένην ζώνην 
+                                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="505">
+                                             <head type="subhead" rend="center"><foreign xml:lang="lat">De mundo et de meteoris. <lb/> (Vol. II p. 167 et p. 195.)</foreign></head>
+                                             <p rend="indent"><foreign xml:lang="lat">Geminus elem. astron. Petav. Uranolog. p. 53.</foreign> ὑπὸ τὴν διακεκαυμένην ζώνην 
                                         τινὲς τῶν ἀρχαίων ἀπεφήναντο, ὧν ἐστι καὶ Κλεάνθης ὁ Στωικὸς φιλόσοφος, ὑποκεχύσθαι μεταξὺ τῶν τροπικῶν τὸν ὠκεανόν.</p></div>
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="506">
                                    <p rend="indent"><foreign xml:lang="lat">Stobaeus Ecl. I 26, 1 i p. 219, 14 W. (Arii Did. fr. 34 Diels).</foreign> Κλεάνθης πυροειδῆ
@@ -596,10 +577,9 @@
                                         <pb facs="stoicorumveterum01arniuoft_0166"/>
                                         Ὀμφάλην προσηγορευκέναι. Τοὺς δὲ δώδεκα ἄθλους ἐνδέχεται μὲν ἀναγαγεῖν οὐκ ἀλλοτρίως ἐπὶ τὸν θεόν, ὡς καὶ Κλεάνθης ἐποίησεν· 
                                         οὐ δεῖ δὲ δοκεῖν πανταχοῦ τὸ εὑρεσίλογον πρεσβεύειν.</p></div>
-                         </div> 
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="3">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De animalibus.</foreign></head>
+                              
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="515">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De animalibus.</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Plutarchus</foreign> πότερα τῶν ζῴων φρονιμώτερα <foreign xml:lang="lat">cp. 11 p. 967e.</foreign>
                                         ὁ μὲν οὗν Κλεάνθης ἔλεγε, καίπερ οὐ φάσκων μετέχειν λόγου τὰ ζῷα, τοιαύτῃ θεωρίᾳ παρατυχεῖν· μύρμηκας ἐλθεῖν ἐπὶ μυρμηκιὰν
                                         ἑτέραν μύρμηκα νεκρὸν φέροντας· ἀνιόντας οὖν ἐκ τῆς μυρμηκιᾶς ἑτέρους οἷον ἐντυγχάνειν αὐτοῖς καὶ πάλιν κατέρχεσθαι· καὶ τοῦτο
@@ -619,10 +599,9 @@
                                    <p rend="indent"><foreign xml:lang="lat">Stobaeus Floril. 4, 90 Vol. l p. 240 Hense.</foreign> Κλεάνθης ἔφη τοὺς ἀπαιδεύτους μόνῃ τῇ μορφῇ τῶν θηρίων 
                                         διαφέρειν.</p>
                                    <p rend="indent"><foreign xml:lang="lat">Idem Stob. Ecl. II 31, 64 p. 212, 22 W.</foreign></p></div>
-                         </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="4">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De anima hominis.</foreign></head>
+                              
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="518">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De anima hominis.</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Tertullianus de An. c. 5. vult et Cleanthes non solum corporis lineamentis, sed et
                                         animae notis similitudinem parentibus in filios respondere de speculo, scilicet morum et ingeniorum et adfectuum: corporis
                                         autem similitudinem et dissimilitudinem capere: et animam itaque
@@ -671,10 +650,9 @@
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="526">
                                    <p rend="indent"><foreign xml:lang="lat">Apollonius soph. lex. Homer. p. 114 ed Bekk. s. v.</foreign> μῶλυ (κ 305) Κλεάνθης δὲ ὁ φιλόσοφος
                                         ἀλληγορικῶς φησι δηλοῦσθαι τὸν λόγον, δι ʼοὗ μωλύονται αἱ ὁρμαὶ καὶ τὰ πάθη.</p></div>
-                              </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="5">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Fato. <lb/> (Cf. n. 551. Vol. II p. 264.)</foreign></head>
+                             
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="527">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Fato. <lb/> (Cf. n. 551. Vol. II p. 264.)</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Epictet. Man. c. 53.</foreign>
                                         <lb/>ἄγου δέ μʼ, ὦ Ζεῦ, καὶ σύ γʼ ἡ πεπρωμένη,
                                         <lb/>ὅποι ποθʼ ὑμῖν εἰμὶ διατεταγμένος,
@@ -691,10 +669,9 @@
                                         <lb/>adsum impiger. fac nolle, comitabor gemens,
                                         <lb/>malusque patiar, quod pati licuit bono.
                                         <lb/>ducunt volentem fata, nolentem trahunt.<lb/></foreign></p></div>
-                              </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="6">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Natura Deorum. <lb/>(Vol. II p. 299.)</foreign></head>
+                              
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="528">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Natura Deorum. <lb/>(Vol. II p. 299.)</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Cicero de nat. deor. II 13-15. Cleanthes quidem noster quattuor de causis dixit 
                                         in animis hominum informatas deorum esse notiones. primam posuit eam, de qua modo dixi, quae orta esset ex praesensione rerum 
                                              futurarum; alteram, quam ceperimus ex magnitudine commodorum, quae percipiuntur caeli temperatione, fecunditate
@@ -871,10 +848,9 @@
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="547">
                                    <p rend="indent"><foreign xml:lang="lat">Plutarchus de Is. et Osir. 66 p. 377d.</foreign> Φερσεφόνην δὲ φησί που Κλεάνθης
                                              τὸ διὰ τῶν καρπῶν φερόμενον καὶ φονευόμενον πνεῦμα.</p></div>
-                              </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="7">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Providentia et Divinatione. <lb/>(Vol. II p. 322 et 342.)</foreign></head>
+                              
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="548">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Providentia et Divinatione. <lb/>(Vol. II p. 322 et 342.)</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Philo de provid. II 74 p. 94 Aucher: Numerus autem planetarum prodest universo; verum hominum est otio praeditorum 
                                              dinumerare singulorum utilitatem. Haec autem nota sunt non solum ratione, verum etiam sensu, ita movente providentia, 
                                              quae, ut dicit Chrysippus et Cleanthes, nihil praetermisit pertinentium ad certiorem utilioremque dispensationem. quod
@@ -896,13 +872,9 @@
                                    <p rend="indent"><foreign xml:lang="lat">Chalcidius in Tim. c. 144. ex quo fieri ut, quae secundum fatum sunt, etiam ex providentia sint, eodemque 
                                              modo quae secundum providentiam, ex fato, ut Chrysippus putat. alii vero quae quidem ex providentiae auctoritate, 
                                              fataliter quoque provenire, nec tamen quae fataliter, ex providentia, ut Cleanthes.</foreign></p></div>
-                                   </div>
-                    </div>
-                    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="3">
-                         <head rend="center"><foreign xml:lang="lat">C. Fragmenta moralia</foreign></head>
-                                   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="1">
-                                        <head type="subhead" rend="center"><foreign xml:lang="lat">De Fine Bonorum. <lb/> (Vol. III p. 3 sq.)</foreign></head>
-                                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="552">
+                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="552">
+                                             <head rend="center"><foreign xml:lang="lat">Fragmenta moralia</foreign></head>
+                                  <head type="subhead" rend="center"><foreign xml:lang="lat">De Fine Bonorum. <lb/> (Vol. III p. 3 sq.)</foreign></head>
                                              <p rend="indent"><foreign xml:lang="lat">Stobaeus Ecl. II 7, 6a, p. 76, 3.</foreign>
                                                   Κλεάνθης... οὕτως ἀπέδωκε· τέλος ἐστὶ τὸ ὁμολογουμένως
                                                   τῇ φύσει ζῆν. － <foreign xml:lang="lat">Cf. Diog. Laërt. VII 87.</foreign> ὁ Ζήνων － τέλος εἶπε τὸ ὁμολογουμένως τῇ φύσει ζῆν·
@@ -940,10 +912,9 @@
                                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="556">
                                              <p rend="indent"><foreign xml:lang="lat">Stobaeus Floril. 6, 66 Vol. I p. 304 Hense, 6, 37 Mein.</foreign>
                                              Κλεάνθης ἔλεγεν, εἰ τέλος ἐστὶν ἡ ἡδονή, πρὸς κακοῦ τοῖς ἀνθρώποις τὴν φρόνησιν δεδόσθαι.</p></div>
-                                        </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="2">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Bono et Honesto.</foreign></head>
+                             
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="557">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Bono et Honesto.</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Clemens Alex. Protrept. VI 72 p. 61 P.</foreign>
                                         Κλεάνθης δὲ ὁ Ἀσσεύς, ὁ ἀπὸ τῆς Στοᾶς φιλόσοφος, ὃς οὐ θεογονίαν ποιητικήν,
                                         <pb facs="stoicorumveterum01arniuoft_0177"/>
@@ -974,10 +945,8 @@
                                    qui primum haec natura cohaerentia opinione distraxissent. cui quidem ita sunt Stoici assensi, ut et quidquid honestum esset, id utile esse censerent, 
                                    nec utile quicquam, quod non honestum. — id. de leg. I 33. recte Socrates exsecrari eum solebat, qui primus utilitatem α iure seiunxisset: id enim 
                                    querebatur caput esse exitiorum omnium.</foreign></p></div>
-                         </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="3">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Indifferentibus.<lb/> (Vol. III p. 28.)</foreign></head>
-                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="559">
+                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="559">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Indifferentibus.<lb/> (Vol. III p. 28.)</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Clemens Alex. Strom. V 3, 17 p. 655 P.</foreign> καὶ ἡ Κλεάνθους δὲ τοῦ Στωικοῦ 
                                    φιλοσόφου ποιητικὴ ὧδέ πως τὰ ὅμοια γράφει
                                         <lb/>μὴ πρὸς δόξαν ὅρα, ἐθέλων σοφὸς αἶψα γενέσθαι,
@@ -1011,10 +980,8 @@
                                    ἀντείρηκε τῶν πάνυ φιλοσόφων τις, ὃν οὐδείς, ἐμοὶ δοκεῖν, φαίη ἄν ποτε φιλονικοῦντα τούτοις τε ἀντειρηκέναι καὶ τοῖς ὑπὸ Σοφοκλέους εἰς τὸν πλοῦτον εἰρημένοις,
                                    ἐκείνοις μὲν ἐπ’ ὀλίγον, τοῖς δὲ τοῦ Σοφοκλέους ἐπὶ πλέον, οὐ μήν, ὥσπερ νῦν ἡμεῖς, διὰ μακρῶν, ἅτε οὐ παραχρῆμα κατὰ πολλὴν ἐξουσίαν διεξιών, ἀλλ’ ἐν 
                                    βίβλοις γράφων.</p></div>
-                              </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="4">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Virtute.<lb/> (Vol. III p. 48.)</foreign></head>
-                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="563">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="563">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Virtute.<lb/> (Vol. III p. 48.)</foreign></head>
                                   <p rend="indent"><foreign xml:lang="lat">Plutarchus de Sto. Rep. cp. 7 p. 1034d.</foreign>
                                         ὁ δὲ Κλεάνθης ἐν ὑπομνήμασι φυσικοῖς εἰπὼν ὅτι <q>πληγὴ πυρὸς ὁ
                                    τόνος ἐστί, κἂν ἱκανὸς ἐν τῇ ψυχῇ γένηται πρὸς τὸ ἐπιτελεῖν τὰ ἐπιβάλλοντα, ἰσχὺς καλεῖται καὶ κράτος,</q>
@@ -1046,10 +1013,9 @@
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="569">
                                    <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 128.</foreign> ἀρέσκει δὲ αὐτοῖς καὶ διὰ παντὸς χρῆσθαι τῇ 
                                    ἀρετῇ, ὡς οἱ περὶ Κλεάνθην φασίν. ἀναπόβλητος γάρ ἐστι· καὶ πάντοτε τῇ ψυχῇ χρῆται οὔσῃ τελείᾳ ὁ σπουδαῖος.</p></div>
-                              </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="5">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Affectibus.<lb/> (Vol. III p. 92.)</foreign></head>
+                                                      
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="570">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Affectibus.<lb/> (Vol. III p. 92.)</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Galenus de Hipp. et Plat. plac. V 6 (Vol. V p. 476 K., p. 456 Iu. Mueller.).</foreign>
                                         τὴν μὲν οὖν τοῦ Κλεάνθους γνώμην ὑπὲρ τοῦ παθητικοῦ τῆς ψυχῆς ἐκ τῶνδε φαίνεσθαί φησι τῶν ἐπῶν.
                                         <lb/>Λογισμός. τί ποτʼ ἐσθʼ ὃ βούλει, θυμέ; τοῦτό μοι φράσον.
@@ -1076,20 +1042,17 @@
                                    μήτε κατὰ φύσιν αὐτὴν (<foreign xml:lang="lat">scil.</foreign> τὴν ἡδονὴν) εἶναι μήτ’ ἀξίαν ἔχειν αὐτὴν ἐν τῷ βίῳ, καθάπερ δὲ τὸ κάλλυντρον κατὰ φύσιν μὴ εἶναι.</p></div>
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="575">
                                    <p rend="indent"><foreign xml:lang="lat">Stobaeus Floril. 108, 59 Mein.</foreign> ὁ δὲ Κλεάνθης ἔλεγε τὴν λύπην ψυχῆς παράλυσιν.</p></div>
-                              </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="6">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Consolatione.</foreign></head>
-                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="576">
+                              
+                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="576">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Consolatione.</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Cicero Tusc. disp. III 76. sunt qui unum officium consolantis putent
                                    <q>malum illud omnino non esse,</q> ut Cleanthi placet.</foreign></p></div>
                               <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="577">
                                    <p rend="indent"><foreign xml:lang="lat">Cicero Tusc. disp. III 77. nam Cleanthes quidem sapientem consolatur, qui consolatione non
                                    eget. nihil enim esse malum, quod turpe non sit, si lugenti persuaseris, non tu illi luctum, sed stultitiam detraxeris; alienum autem tempus docendi. 
                                    et tamen non satis mihi videtur vidisse hoc Cleanthes, suscipi aliquando aegritudinem posse ex eo ipso, quod esse summum malum [Cleanthes] ipse fatebatur.</foreign></p></div>
-                         </div>
-                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="7">
-                              <head type="subhead" rend="center"><foreign xml:lang="lat">De Officiis.<lb/> (Vol. III p. 134 et 172)</foreign></head>
-                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="576x">
+                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="576x">
+                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Officiis.<lb/> (Vol. III p. 134 et 172)</foreign></head>
                                    <p rend="indent"><foreign xml:lang="lat">Seneca de Benef. VI 12, 2. Ille, qui totus ad se spectat et nobis prodest, quia aliter prodesse sibi non 
                                    potest, eo mihi loco est, quo
                                         <pb facs="stoicorumveterum01arniuoft_0181"/>
@@ -1130,20 +1093,18 @@
                                              <lb/>κακουργότερον οὐδὲν διαβολῆς ἔστι πω·
                                              <lb/>λάθρα γὰρ ἀπατήσασα τὸν πεπεισμένον
                                              <lb/>μῖσος ἀναπλάττειπρὸς τὸν οὐδὲν αἴτιον.</p></div>
-                              </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="8">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">De Civitate.</foreign></head>                                   
-                                   <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="587">
+                             <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="587">
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">De Civitate.</foreign></head> 
                                         <p rend="indent"><foreign xml:lang="lat">Stobaeus Ecl. II 7, 111, p. 103, 12 W.</foreign> ἱκανῶς δὲ καὶ Κλεάνθης περὶ τὸ σπουδαῖον εἶναι τὴν πόλιν λόγον 
                                         ἠρώτησε τοιοῦτον. πόλις μὲν ⟨εἰ⟩ ἔστιν οἰκητήριον κατασκεύασμα, εἰς ὃ καταφεύγοντας ἔστι δίκην δοῦναι καὶ λαβεῖν, οὐκ ἀστεῖον δὴ πόλις ἐστίν; ἀλλὰ μὴν
                                         τοιοῦτόν ἐστιν ἡ πόλις οἰκητήριον· ἀστεῖον ἄρ’ ἔστιν ἡ πόλις.</p></div>
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="588">
                                         <p rend="indent"><foreign xml:lang="lat">Seneca de Tranq. An. I 7. promptus compositus sequor Zenona, Cleanthem, Chrysippum, 
                                         quorum tamen nemo ad rem publicam accessit, at nemo non misit.</foreign></p></div>
-                                   </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="9">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">Varia.</foreign></head>
+                              
+                                   
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="589">
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Varia.</foreign></head>
                                         <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 14.</foreign> ἐνίοτε δὲ καὶ χαλκὸν εἰσέπραττε τοὺς περιϊσταμένους 
                                         (ὁ Ζήνων) ** * *** * τὸ διδόναι μὴ ἐνοχλεῖν, καθά φησι Κλεάνθης ἐν τῷ περὶ χαλκοῦ.</p></div>
                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="590">
@@ -1156,10 +1117,8 @@
                                         τῶν κατασκευασάντων φησὶν ὀνομασθῆναι τήν τε Θηρίκλειον κύλικα καὶ τὴν Δεινιάδα. － <foreign xml:lang="lat">ib. 471 b.</foreign> Κλεάνθης δ’ ἐν τῷ περὶ μεταλήψεως συγγράμματί φησι 
                                         <q>τὰ τοίνυν εὑρήματα καὶ ὅσα τοιαῦτα, ἔτι κατάλοιπά ἐστι, οἷον θηρίκλειος, Δεινιάς, Ἰφικρατίς. ταῦτα γὰρ πρότερον συνιστόρει τοὺς εὑρόντας, φαίνεται δ’
                                              ἔτι καὶ νῦν. εἰ δὲ μὴ ποιεῖ τοῦτο, μεταβεβληκὸς ἂν εἴη μικρὸν τοὔνομα. ἀλλά, καθάπερ εἴρηται, οὐκ ἔστιν πιστεῦσαι τῷ τυχόντι.</q></p></div>
-                                   </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="10">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">Spuria.</foreign></head>
-                                   <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="592">
+                                  <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="592">
+                                        <head type="subhead" rend="center"><foreign xml:lang="lat">Spuria.</foreign></head>
                                        <p rend="indent"><foreign xml:lang="lat">Certamen Homer. et Hesiod. p. 4, 18 ed. Nietzsch (in act. societ. philol. Lips. tom. I fasc. 1).</foreign>
                                              Ἑλλάνικος μὲν γὰρ καὶ Κλεάνθης Μαίονα λέγουσι (πατέρα Ὁμήρου).</p>
                                         <p rend="indent"><foreign xml:lang="lat">Cf. Proci. vit. Hom. ap. Gaisford. Hephaestion p. 516:</foreign> οἱ μὲν οὖν Σμυρναῖον αὐτὸν ἀποφαινόμενοι Μαίονος μὲν πατρὸς λέγουσιν εἶναι.
@@ -1192,10 +1151,8 @@
                                                   <p rend="indent"><foreign xml:lang="lat">[Pseudo-Plut. de Fluv. XVII 4.</foreign> γενναται δ’ ἐν αὐτῷ (<foreign xml:lang="lat">Taygeto</foreign>)
                                                        βοτάνη καλουμένη Χαρισία ἣν ⟨αἱ⟩ γυναῖκες ἔαρος ἀρχομένου τοίς τραχήλοις περιάπτουσι καὶ ὑπὸ 
                                                        τῶν ἀνδρῶν συμπαθέστερον ἀγαππῶνται· καθὼς ἱστορεῖ Κλεάνθης ἐν αʹ περὶ ὀρῶν.]</p></div>
-                              </div>
-                              <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="11">
-                                   <head type="subhead" rend="center"><foreign xml:lang="lat">Cleanthis apophthegmata.</foreign></head>
-                                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="597">
+                             <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="597">
+                                         <head type="subhead" rend="center"><foreign xml:lang="lat">Cleanthis apophthegmata.</foreign></head>
                                          <p rend="indent"><foreign xml:lang="lat">Diogenes Laërt. VII 169.</foreign> φασὶ δὲ καὶ Ἀντίγονον αὐτοῦ πυθέσθαι ὄντα ἀκροατήν, διὰ τί ἀντλεῖ; τὸν δ’ εἰπεῖν <q>ἀντλῶ γὰρ 
                                               μόνον; τί δ’; οὐχὶ σκάπτω; τί δ’: οὐκ ἄρδω; καὶ πάντα ποιῶ φιλοσοφίας ἕνεκα.</q> καὶ γὰρ ὁ Ζήνων αὐτὸν συνεγύμναζεν εἰς τοῦτο, καὶ ἐκέλευεν ὀβολὸν 
                                               φέρειν ἀποφορᾶς. － <foreign xml:lang="lat">Plut. de vitand. aere alieno 7, 5 p. 830c.</foreign> Κλεάνθην δὲ ὁ βασιλεὺς Ἀντίγονος ἠρώτα, διὰ χρόνου θεασάμενος ἐν ταῖς Ἀθήναις 
@@ -1288,8 +1245,6 @@
                                              <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1269.tlg002.1st1K-grc1" n="619">
                                                   <p rend="indent"><foreign xml:lang="lat">Arrianus Epict. diss. IV 1, 173.</foreign> παράδοξα μὲν ἴσως φασὶν οἱ φιλόσοφοι, καθάπερ καὶ ὁ Κλεάνθης ἔλεγεν, οὐ μὴν παράλογα. 
                                                        <foreign xml:lang="lat">Cf. Zeno n. 281.</foreign></p></div>
-                              </div>
-                         </div>
                </div>
           </body>
      </text>
