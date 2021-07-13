@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Epistula ad Flacillum</title>
+        <author>Eusebius of Caesarea</author>
+        <editor>Erich Klostermann</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        
+        <respStmt>
+          <persName><forename>Daniel</forename><surname>Whittle</surname>
+          </persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        
+        <respStmt>
+          <persName>Erini Drakou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Ioanna Kostopoulou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Vivian Platanou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Aglaia Poulida</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Theodora Pylarinou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Solomiia Rozlutska</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Victoria Rozlutska</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Athanasia Stathonikou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+        
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg2018.tlg008.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+        <date when="2021-04-29"/>
+      </publicationStmt>
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="mul">Eusebius Werke</title>
+            <author>Eusebius</author>
+            <editor>Erich Klostermann</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher> J. C. Hinrichs</publisher>
+              <date>1906</date>
+            </imprint>
+            <biblScope unit="volume">4</biblScope>
+          </monogr>                        
+          <ref target="https://archive.org/details/eusebiuswerke04euse/page/60/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    
+    <encodingDesc>
+      <editorialDecl>
+        <correction><p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p> 
+      
+      
+<refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="letter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts letter.</p>
+        </cRefPattern>
+</refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+        <language ident="deu">German</language>
+      </langUsage>
+    </profileDesc>
+        
+    <revisionDesc>
+      <change when="2021-07-14" who="Lisa Cerrato">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+    
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg2018.tlg008.1st1K-grc1" xml:lang="grc">
+        <div type="textpart" subtype="letter" xml:base="urn:cts:greekLit:tlg2018.tlg008.1st1K-grc1" n="1">
+          <pb facs="eusebiuswerke04euse_0098"/>
+          <head rend="center">Τῷ τιμιωτάτῳ καὶ ἀγαπητῷ συλλειτουργῷ Φλακίλλῳ Εὐσέβιος ἐν κυρίῳ χαίρειν.</head>
+             <p rend="indent">Εἰ πρὸς τὴν ἀδόλεσχον καὶ πολυεπῆ Μαρκέλλου γραφὴν τὰ παρ’ ἡμῶν ἐν βραχέσιν ἤρκεσεν, οὐ χρὴ θαυμάζειν· οὐ γὰρ δὴ πολλῶν ἔδει λόγων πρὸς ἀνατροπὴν τῶν αὐτόθεν καὶ τοῖς τυχοῦσιν κατεγνωσμένων. διὸ δὴ ἐν δυσὶ τοῖς πρώτοις μόνῃ τῇ παραθέσει τῶν τοῦ ἀνδρὸς ῥημάτων χρησάμενος δίχα πάσης ἀντιρρήσεως ἐξ αὐτῶν τὸν κατ’ αὐτῶν <pb n="48v"/> ἔλεγχον φανερὸν ἐποιούμην. νυνὶ δὲ πρὸς ἐκείνῃ τῇ φώρᾳ καὶ τὴν ἀνατροπὴν τῶν αὐτῶν διὰ τριῶν τῶν μετὰ χεῖρας προσήγαγον. ὁ μὲν γὰρ ἕν τι διωλύγιον καὶ πολυπλανὲς σύγγραμμα συντάξας τοῦτό φησιν πεποιηκέναι <quote rend="blockquote"><label xml:lang="deu">(Nr. 115)</label> διὰ τὸ ἕνα γνωρίζειν θεόν,</quote> μή πη λάθῃ τῷ υἱῷ τοῦ θεοῦ χώραν διδοὺς ὑποστάσεως διελὼν τὴν γραφήν. ἡμεῖς δὲ τὴν παναγίαν καὶ τρισμακαρίαν τιμῶντες τριάδα ἐν τοσούτοις τὴν πᾶσαν ὑπόθεσιν συνειλήφαμεν, φεισάμενοι μὲν πολυλογίας, ἐν ἐπιτόμοις δὲ καὶ βραχέσιν τὴν ἀληθῆ παραστήσαντες θεολογίαν. εἰ μὲν οὖν αὐταρκῶς ἔχει τὰ γραφέντα, κρίνειας ἂν αὐτὸς ἐντυγχάνων· εἰ δέ τινα λείποι, καὶ ταῦτα 〈ἂν〉 ἀναπληρώσειας, δηλαδὴ [ἃ δὴ] ἀδελφὸς ἀδελφοῦ τὰ ὑστερήματα, εἴ που καὶ θεραπείας δέοιτο, δι’ ἐπανορθώσεως ἐξιώμενος.</p>
+          <p rend="indent">Ἔρρωσθαί σε καὶ μνημονεύειν μου τῷ κυρίῳ διὰ παντὸς εὔχομαι.</p>
+        </div></div>
+
+    </body>
+  </text>
+</TEI>
