@@ -125,15 +125,20 @@
     <sourceDesc>
       <biblStruct>
         <monogr>
-          <editor>Usener and Radermacher</editor>
-          <title xml:lang="lat">Dionysii Halicarnasei Opuscula 2.1</title>
+          <title xml:lang="grc">Διονυσίου Ἁλικαρασέως τοῦ περὶ συνθεσέως ὀνομάτων ἐπιτομή</title>
+          <editor>Hermann Usener</editor>
+          <editor>Ludwig Radermacher</editor>
           <imprint>
             <pubPlace>Leipzig</pubPlace>
             <publisher>Teubner</publisher>
             <date>1904</date>
           </imprint>
         </monogr>
-        <ref target="https://hdl.handle.net/2027/uc1.c020256950?urlappend=%3Bseq=155">HthiTrust</ref>
+        <series>
+          <title xml:lang="lat">Opuscula</title>
+          <biblScope unit="volume">2.1</biblScope>
+        </series>
+        <ref target="https://hdl.handle.net/2027/uc1.c020256950?urlappend=%3Bseq=155">HathiTrust</ref>
       </biblStruct>
     </sourceDesc>
   </fileDesc>
@@ -148,7 +153,7 @@
     <p>The following text is encoded in accordance with EpiDoc standards and with the
     CTS/CITE Architecture</p>
     <refsDecl n="CTS">
-      <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <cRefPattern n="section" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
         <p>This pointer pattern extracts section.</p></cRefPattern>
     </refsDecl>
   </encodingDesc>
