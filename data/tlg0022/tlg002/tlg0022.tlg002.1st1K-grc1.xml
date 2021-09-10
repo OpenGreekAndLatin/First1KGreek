@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Αλεξιφάρμακα</title>
+        <author>Nicander of Colophon</author>
+        <editor>Otto Schneider</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName>Sophia Elzie</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Evren Bulay</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Domi Couvet</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Dimitra Fylaktopoulou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Anastasios Kolestis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Zoe Koukoutianou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Chloe Papadopolou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Theodoros Pazarloglou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Celia Prescott-Decie</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Dora Profyri</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Aikaterini Remma</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Panagiotis Sotiroudis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Chrysanthi Tsalafouta</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Jiaqi Zhao</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Zeyu Wen</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Panagiotis Sotiroudis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Houghton</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digial editor</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0022.tlg002.1st1K-grc1.xml</idno>
+        <pubPlace />
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2021-05-31" />
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author> Nicander of Colophon</author>
+            <title xml:lang="lat">Theriaca et Alexipharmaca</title>
+            <editor><persName>Otto Schneider</persName></editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1856</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/bub_gb_qdeEAAAAIAAJ/page/n288/mode/1up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+     <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+     
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body//tei:l[@n='$1'])">
+          <p>This pointer pattern extracts line.</p>
+        </cRefPattern>
+      </refsDecl>
+     
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2021-09-09" who="Lisa Cerrato">Review of markup.</change>
+      <change when="2021-08-27" who="Charlotte Houghton">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1" xml:lang="grc">
+       
+    <pb facs="theriacaetalexip00nica_0289"/>
+        <l n="1" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Εἰ καὶ μὴ σύγκληρα κατ’ Ἀσίδα τείχεα δῆμοι</l>
+        <l n="2" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τύρσεσιν ἐστήσαντο, τέων ἀνεδέγμεθα βλάστας,</l>
+        <l n="3" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Πρωταγόρη, δολιχὸς δὲ διάπροθι χῶρος ἐέργει,</l>
+        <l n="4" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥεῖά κέ τοι ποσίεσσιν ἀλέξια φαρμακοέσσαις</l>
+        <l n="5" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐδήσαιμ’, ἅτε φῶτας ἐνιχριμφθέντα δαμάζει·</l>
+        <l n="6" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἦ γὰρ δὴ σὺ μὲν ἄγχι πολυστροίβοιο θαλάσσης</l>
+        <l n="7" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄρκτον ὑπ’ ὀμφαλόεσσαν ἐνάσσαο, ἧχί τε Ῥείης</l>
+        <l n="8" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Λοβρίνης θαλάμαι τε καὶ ὀργαστήριον Ἄττεω.</l>
+        <l n="9" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτὰρ ἐγὼ, τόθι παῖδες ἐυζήλοιο Κρεούσης</l>
+        <l n="10" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πιοτάτην ἐδάσαντο γεωμορίην ἠπείρου,</l>
+        <l n="11" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἑζόμενος τριπόδεσσι παρὰ Κλαρίοις Ἑκάτοιο. —</l>
+        <l n="12" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἀλλ’ ἤτοι χολόεν μὲν ἰδὲ στομίοισι δυσαλθὲς</l>
+        <l n="13" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πνυθείης ἀκόνιτον, ὃ δή ῥ’ Ἀχερωίδες ὄχθαι</l>
+        <l n="14" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φύουσιν, τόθι χάσμα δυσέκδρομον Εὐβουλῆος</l>
+        <l n="15" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄστυρά τε Πριόλαο καταστρεφθέντα δέδουπε.</l> 
+        <pb facs="theriacaetalexip00nica_0290"/>
+        <l n="16" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τοῖο δὲ πάντα χαλινὰ καὶ οὐρανόεσσαν ὑπήνην</l>
+        <l n="17" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὖλά θ’ ὑποστύφει χολόεν ποτὸν, ἀμφὶ δὲ πρώτοις</l>
+        <l n="18" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἰλύεται στέρνοισι κακῇ ἀλάλυγγι βαρῦνον</l>
+        <l n="19" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φῶτ’ ἐπικαρδιόωντα· δύῃ δ’ ἐπιδάκνεται ἄκρον</l>
+        <l n="20" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νειαίρης ἄκλειστον ἀειρόμενον στόμα γαστρός,</l>
+        <l n="21" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τεύχεος ἣν κραδίην ἐπιδορπίου, οἱ δὲ δοχαίην</l>
+        <l n="22" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κλείουσι στομάχοιο, πύλη δ’ ἐπικέκλιται ἀρχαῖς</l>
+        <l n="23" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρῶτα κόλων, ὅθι πᾶσα βροτῶν ἅλις ἐμφέρεται δαῖς·</l>
+        <l n="24" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἰεὶ δ’ ἐκ φαέων νοτέων ὑπολείβεται ἱδρώς·</l>
+        <l n="25" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἡ δὲ ταρασσομένη τὰ μὲν ἔβρασεν ἤλιθα νηδὺς</l>
+        <l n="26" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πνεύματα, πολλὰ δ’ ἔνερθε κατὰ μέσον ὄμφαλον ἵζει·</l>
+        <l n="27" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κράατι δ’ ἐν βάρος ἐχθρὸν, ὑπὸ κροτάφοισι δὲ παλμὸς</l>
+        <l n="28" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πυκνὸς ἐπεμφέρεται, τὰ δὲ διπλόα δέρκεται ὄσσοις</l>
+        <l n="29" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷα χαλικραίῃ νύχιος δεδαμασμένος οἴνῃ.</l>
+        <l n="30" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὡς δ’ ὁπότ’ ἀγριόεσσαν ὑποθλίψαντες ὀπώρην</l>
+        <l n="31" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Σιληνοὶ κεραοῖο Διωνύσοιο τιθηνοὶ</l>
+        <l n="32" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρῶτον ἐπαφρίζοντι ποτῷ φρένα θωρηχθέντες</l>
+        <l n="33" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄθμασι δινήθησαν ἔπι, σφαλεροῖσι δὲ κώλοις</l>
+        <l n="34" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Νυσαίην ἀνὰ κλιτὺν ἐπέδραμον ἀφραίνοντες,</l>
+        <l n="35" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὣς οἵγε σκοτόωσι κακῇ βεβαρηότες ἄτῃ.</l> 
+        <pb facs="theriacaetalexip00nica_0291"/>
+        <l n="36" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τὴν μέν τε κλείουσι μυοκτόνον, ἦ γὰρ ἀνιγροὺς</l>
+        <l n="37" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">παμπήδην ὕρακας λιχμήμονας ἠρήμωσεν,</l>
+        <l n="38" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἱ δέ τε πορδαλιαγχὲς, ἐπεὶ θήρεσσι πελώροις</l>
+        <l n="39" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πότμον βουπελάται τε καὶ αἰγινομῆες ἔθεντο</l>
+        <l n="40" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἴδης ἐν νεμέεσσι Φαλακραίῃ ἐνὶ βήσσῃ,</l>
+        <l n="41" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι θηλυφόνον καὶ κάμμαρον· ἐν δ’ Ἀκοναίοις</l>
+        <l n="42" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δηλήειν ἀκόνιτον ἐνεβλάστησεν ὀρόγκοις.</l>
+        <l n="43" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ καί που τιτάνοιο χερὸς βάρος ἔσσεται ἄρκος</l>
+        <l n="44" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πιμπλαμένης, ὅτε νέκταρ ἐύτριβι κιρρὸν ἀφύσσῃς</l>
+        <l n="45" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">μετρήδην — κοτύλη δὲ πέλοι καταμέστιος οἴνης —,</l>
+        <l n="46" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δὲ καὶ ἁβροτόνοιο ταμὼν ἄπο καύλεα θάμνου</l>
+        <l n="47" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ χλοεροῦ πρασίοιο, τὸ δὴ μελίφυλλον ὑδεῦσι·</l> 
+        <pb facs="theriacaetalexip00nica_0292"/>
+        <l n="48" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σὺ ποιήεντος ἀειθαλέος χαμελαίης</l>
+        <l n="49" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βλάστην πηγάνιόν τε πόροις ἐν βάμματι σίμβλων,</l>
+        <l n="50" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σβεννὺς αἰθαλόεντα μύδρον γενύεσσι πυράγρης</l>
+        <l n="51" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σιδηρήεσσαν ἀπὸ τρύγα, τήν τε καμίνων</l>
+        <l n="52" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἔντοσθεν χοάνοιο διχῆ πυρὸς ἤλασε λιγνύς,</l>
+        <l n="53" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δὲ χρυσοῖο νέον βάρος ἐν πυρὶ θάλψας</l>
+        <l n="54" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ καὶ ἀργυρόεν θολερῷ ἐνὶ πώματι βάπτοις·</l>
+        <l n="55" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἡμιδαὲς χειρὸς βάρος αἴνυσο θρίων</l>
+        <l n="56" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">παῦρα χαμαιπίτυος, τότ’ ὀνίτιδος αὖον ὀρείης</l>
+        <l n="57" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ νέον ῥάδικα πολυκνήμοιο κολούσας,</l>
+        <l n="58" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τέτρασι δ’ ἐν κυάθοισι χαδεῖν μελιανθέος οἴνης·</l>
+        <l n="59" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι μυελόεντα χαλικρότερον πότον ἴσχοις</l>
+        <l n="60" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄρνιθος στρουθοῖο κατοικάδος, εὖθ’ ὑπὸ χύτρῳ</l>
+        <l n="61" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γυῖα καταθρύπτῃσι βιαζομένη πυρὸς αὐγή·</l>
+        <l n="62" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε βοὸς νέα γέντα περιφλίοντος ἀλοιφῇ</l>
+        <l n="63" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τηξάμενος κορέσαιο ποτῷ εὐχανδέα νηδύν·</l>
+        <l n="64" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ναὶ μὴν βαλσάμοιο τότ’ ἐν σταγόνεσσι γάλακτος</l>
+        <l n="65" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θηλυτέρης πώλοιο χέαις ὀπὸν, ἄλλοτε νύμφαις,</l>
+        <l n="66" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἔστ’ ἂν ὑπὲκ φάρυγος χεύῃ παναεργέα δόρπον.</l> 
+        <pb facs="theriacaetalexip00nica_0293"/>
+        <l n="67" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἢ σκίνακος δερκευνέος ἢ ἀπὸ νεβροῦ</l>
+        <l n="68" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πυετίην τμήξαιο, πόροις δ’ ἐν νέκταρι φύρσας,</l>
+        <l n="69" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε καὶ μορέης ἀπὸ ῥίζεα φοινηέσσης,</l>
+        <l n="70" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὅλμου ἐνὶ στύπεϊ προβαλὼν καὶ ὁμήρεα κόψας</l>
+        <l n="71" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἴνῳ, ἐνεψηθέντα πόροις καμάτοισι μελίσσης,</l>
+        <l n="72" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί κεν ἐπικρατέουσαν ἀπεχθέα νοῦσον ἀλάλκοις</l>
+        <l n="73" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φωτὸς, ὁ δ’ ἀσφαλέεσσι πάλιν μετὰ ποσσὶν ὁδεύοι.</l>
+        <l n="74" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Δεύτερα δ’ αἰγλήεντος ἐπιφράζευ πόσιν ἐχθρὴν</l>
+        <l n="75" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κιρναμένην ὀλοοῦ ψιμυθίου, ἢ τε γάλακτι</l>
+        <l n="76" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πάντοθεν ἀφρίζοντι νέην εἰδήνατο χροιὴν,</l>
+        <l n="77" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πελλίσιν ἐν γρώνῃσιν ὅτ’ εἴαρι πῖον ἀμέλξαις</l>
+        <l n="78" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τοῦ μὲν ὑπὲρ γένυάς τε καὶ ᾗ ῥυσαίνεται οὖλα</l>
+        <l n="79" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀφρὸς ἐπιστύφων ἐμπλάσσεται, ἀμφὶ καὶ ὁλκὸς</l>
+        <l n="80" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τέτρηχε γλώσσης, νέατος δ’ ὑποκάρφεται ἰσθμός·</l>
+        <l n="81" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ξηρὰ δ’ ἐπιλλύζων ὀλοῇ χελλύσσεται ἄτῃ·</l>
+        <l n="82" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀβλεμὲς ἦ γὰρ κεῖνο πέλει βάρος, αὐτὰρ ὃ θυμῷ</l>
+        <l n="83" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ναυσιόεις ὀλοοῖσιν ὑποτρύει καμάτοισι·</l>
+        <l n="84" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἐν φαέεσσιν ἄλην ἑτερειδέα λεύσσων,</l> 
+        <pb facs="theriacaetalexip00nica_0294"/>
+        <l n="85" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ ὑπναλέος ψύχει δέμας, οὐδ’ ἔτι γυῖα</l>
+        <l n="86" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὡς τὸ πάρος δονέει, καμάτῳ δ’ ὑποδάμναται εἴκων.</l>
+        <l n="87" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ καὶ πρημαδίης ἢ ὀρχάδος εἶαρ ἐλαίης</l>
+        <l n="88" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι μυρτίνης σχεδίην δεπάεσσιν ὀρέξαις,</l>
+        <l n="89" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρ’ ἂν ὀλισθήνασα χέῃ κακὰ φάρμακα νηδύς·</l>
+        <l n="90" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σύ γ’ οὐθατόεντα διοιδέα μαζὸν ἀμέλξας</l>
+        <l n="91" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥεῖα φέροις, φιαρὴν δὲ ποτοῦ ἀποαίνυσο γρῆυν.</l>
+        <l n="92" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σύ γ’ ἢ μαλάχης ῥαδάμους ἢ φυλλάδα τήξας</l>
+        <l n="93" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χυλῷ ἐνὶ κλώθοντι κακηπελέοντα κορέσσαις.</l>
+        <l n="94" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι σήσαμα κόπτε, πόροις δ’ ἐν νέκταρι καὶ τά·</l>
+        <l n="95" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σὺ κληματόεσσαν ἐν ὕδατι πλύνεο τέφρην</l>
+        <l n="96" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θαλπομένην, τὸ δὲ ῥύμμα νεοπλεκέος καλάθοιο</l>
+        <l n="97" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κόλποις ἰκμήνειας· ὃ γάρ τ’ ἀναδέξεται ἰλύν.</l>
+        <l n="98" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε κατατριφθέντα μετ’ ἀργήεντος ἐλαίου</l>
+        <l n="99" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σκλήρ’ ἀπὸ περσείης κάρυα βλάβος οἶον ἐρύξει,</l>
+        <l n="100" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Περσεὺς ἥν ποτε ποσσὶ λιπὼν Κηφηίδα γαῖαν,</l>
+        <l n="101" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐχέν’ ἀποτμήξας ἅρπῃ γονόεντα Μεδούσης,</l>
+        <l n="102" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥεῖα Μυκηναίῃσιν ἐνηέξησεν ἀρούραις,</l>
+        <l n="103" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Κηφῆος νέα δῶρα, μύκης ὅθι κάππεσεν ἅρπης.</l>
+        <l n="104" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄκρον ὑπὸ πρηῶνα Μελανθίδος, ἔνθα τε νύμφη</l>
+        <l n="105" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Λαγγείης πόμα κεῖνο Διὸς τεκμήρατο παιδί.</l> 
+        <pb facs="theriacaetalexip00nica_0295"/>
+        <l n="106" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἐνθρύψειας ἐν ὀπταλέῃσιν ἀκοσταῖς</l>
+        <l n="107" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Γερραίης λιβάνοιο χύσιν περιπηγέα θάμνοις·</l>
+        <l n="108" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σύ γ’ ἢ καρύης ἄπο δάκρυον ἢ ἀταλύμνου</l>
+        <l n="109" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ πτελέης, ὅ τε πολλὸν ἀεὶ καταλείβεται ὄσχαις,</l>
+        <l n="110" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κόμμινά τε χλιόωντι ποτῷ ἐπαρωγέα τήξαις,</l>
+        <l n="111" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρα τὰ μέν τ’ ἐρύγῃσι, τὰ δ’ ἑψητοῖσι δαμασθεὶς</l>
+        <l n="112" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀλθήσῃ ὑδάτεσσιν, ὅτ’ ἰκμήνῃ δέμας ἱδρώς.</l>
+        <l n="113" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί κεν ὅγ’ ἄλλοτε δόρπα δεδεγμένος, ἄλλοτε δ’ οἴνης</l>
+        <l n="114" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πιοτέρης κορέοιτο, καὶ ἀκλέα πότμον ἀλύξαι.</l>
+        <l n="115" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Μὴ μὲν, κανθαρίδος σιτηβόρου εὖτ’ ἂν ὀδώδῃ,</l>
+        <l n="116" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κεῖνο ποτὸν δέξαιτο, χυτῇ ἐναλίγκια πίσσῃ·</l>
+        <l n="117" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πίσσης γὰρ ῥώθωσιν ἄγει βάρος, ἐν δὲ χαλινοῖς</l>
+        <l n="118" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷά τε δὴ καρφεῖα νέον βεβρωμένα κέδρου.</l>
+        <l n="119" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Αἳ δ’ ὁτὲ μὲν πλαδόωντι ποτῷ ἐπὶ χείλεσι δηχμὸν</l>
+        <l n="120" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τεύχουσιν, τοτὲ δ’ αὖτε περὶ στόμα νείατα γαστρός·</l>
+         <l n="121" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1"> ἄλλοτε καὶ μεσάτη ἐπιδάκνεται ἄλγεσι νηδὺς</l> 
+        <pb facs="theriacaetalexip00nica_0296"/>
+        <l n="122" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ κύστις βρωθεῖσα· περιψαύουσι δ’ ἀνῖαι,</l>
+        <l n="123" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θώρηκος τόθι χόνδρος ὑπὲρ κύτος ἕζετο γαστρός ·</l>
+        <l n="124" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτοὶ δ’ ἀσχαλόωσιν, ἄλη δέ φιν ἤθεα φωτὸς</l>
+        <l n="125" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄψυχος πεδάει· ὃ δ’ ἀελπέα δάμναται ἄταις,</l>
+        <l n="126" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷά τε δὴ γήρεια νέον τεθρυμμένα κάκτου</l>
+        <l n="127" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠέρ’ ἐπιπλάζοντα διαψαίρουσι πνοῇσι.</l>
+        <l n="128" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δὲ σὺ πολλάκι μὲν γληχὼ ποταμηίσι νύμφαις</l>
+        <l n="129" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐμπλήδην κυκεῶνα πόροις ἐν κύμβεϊ τεύξας,</l>
+        <l n="130" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νηστείρης Δῃοῦς μορόεν ποτόν, ᾧ ποτε Δῃὼ</l>
+        <l n="131" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">λαυκανίην ἔβρεξεν ἀν’ ἄστυρον Ἱπποθόωντος</l>
+        <l n="132" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Θρηίσσης ἀθύροισιν ὑπὸ ῥήτρῃσιν Ἰάμβης.</l>
+        <l n="133" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δήποτε δ’ ἢ σιάλοιο καρήατος ἠὲ καὶ ἀμνοῦ</l>
+        <l n="134" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀμμίγδην σπεράδεσσιν ἐυτροχάλοισι λίνοιο,</l>
+        <l n="135" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ νέον κορσεῖα ταμὼν κερόεντα χιμαίρης,</l>
+        <l n="136" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι που χηνὸς μορόεν ποτὸν αἴνυσο χύτρου,</l>
+        <l n="137" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐς δ’ ἔμετον κορέσαιο, τὰ δ’ ἀθρόα νειόθι βράσσοις</l>
+        <l n="138" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐμμαπέως ἔτ’ ἄπεπτα πύλῃ μεμιασμένα δόρπα.</l> 
+        <pb facs="theriacaetalexip00nica_0297"/>
+        <l n="139" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἐν κλυστῆρι νέον γλάγος οἰὸς ἀμέλξας</l>
+        <l n="140" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κλύζε, τὰ δ’ ἤλιθα γαστρὸς ἀφόρδια κεινώσειας·</l>
+        <l n="141" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτ’ ἀλυσθαίνοντι ποθὲν γάλα πῖον ἀρήξει·</l>
+        <l n="142" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σύ γ’ ἀμπελόεντα γλυκεῖ ἔνι καύλεα κόψαις</l>
+        <l n="143" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χλωρὰ, νέον πετάλοισι περιβρίθοντα κολούσας·</l>
+        <l n="144" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ μελισσάων καμάτῳ ἔνι παῦρα μορύξαις</l>
+        <l n="145" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σκορπιόεντα χαδὼν ψαθυρῆς ἐκ ῥίζεα γαίης</l>
+        <l n="146" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἰὲν κεντρήεντα· πόη γε μὲν ὕψι τέθηλεν</l>
+        <l n="147" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἵη περ μολόθουρος, ἔνισχνα δὲ καύλεα βάλλει.</l>
+        <l n="148" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σὺ δραχμάων πισύρων βάρος αἴνυσο γαίης</l>
+        <l n="149" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Παρθενίης, τὴν Φυλλὶς ὑπὸ κνημοῖσιν ἀνῆκεν,</l>
+        <l n="150" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἰμβρασίδος γαίης χιονώδεος, ἥν τε κεράστης</l>
+        <l n="151" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀμνὸς Χησιάδεσσι νέον σημήνατο νύμφαις</l>
+        <l n="152" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Κερκέτεω νιφόεντος ὑπὸ σχοινώδεσιν ὄχθαις·</l>
+        <l n="153" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ καὶ σειραίοιο πόσιν διπλήθεα τεύξαις·</l> 
+        <pb facs="theriacaetalexip00nica_0298"/>
+        <l n="154" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δέ τε πηγανόεντας ἐνιθρύψειας ὀράμνους,</l>
+        <l n="155" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὀργάζων λίπεϊ ῥοδέῳ θρόνα, πολλάκι χραίνοις</l>
+        <l n="156" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἰρινέῳ, τό τε πολλὸν ἐπαλθέα νοῦσον ἔτευξεν.</l>
+        <l n="157" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἤν γε μὲν οὐλόμενόν γε ποτὸν κορίοιο δυσαλθὲς</l>
+        <l n="158" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀφραδέως δεπάεσσιν ἀπεχθομένοισι πάσηται,</l>
+        <l n="159" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἳ μέν τ’ ἀφροσύνῃ ἐμπληγέες οἷά τε μάργοι</l>
+        <l n="160" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δήμια λαβράζουσι παραπλῆγές θ’ ἅτε Βάκχαι</l>
+        <l n="161" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὀξὺ μέλος βοόωσιν ἀταρμύκτῳ φρενὸς οἴστρῳ.</l>
+        <l n="162" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ μέν τ’ ἐξ ἑδανοῖο πόροις δέπας ἔμπλεον οἴνης,</l>
+        <l n="163" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Πράμνιον αὐτοκρηὲς, ὅπως ὑπετύψατο ληνοῦ·</l>
+        <l n="164" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ νύμφαις τήξαιο βαλὼν ἁλὸς ἔμπλεα κύμβην·</l>
+        <l n="165" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ὀρταλίχων ἁπαλὴν ὠδῖνα κενώσας</l>
+        <l n="166" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀφρὸν ἐπεγκεράσαιο, θοοῦ δορπήια κέπφου.</l>
+        <l n="167" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῷ γὰρ δὴ ζωήν τε σαοῖ, καὶ πότμον ἐπισπεῖ</l>
+        <l n="168" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὖτε δόλοις νήχοντα κακοφθόρα τέκν’ ἁλιήων</l>
+        <l n="169" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἰωνὸν χραίνωσιν, ὃ δ’ ἐς χέρας ἔμπεσε παίδων</l>
+        <l n="170" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θηρεύων ἀφροῖο νέην κλύδα λευκαίνουσαν.</l>
+        <l n="171" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σύ γ’ ἀγλεύκην βάψαις ἰόεντα θάλασσαν,</l>
+        <l n="172" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἥν τε καὶ ἀτμεύειν ἀνέμοις πόρεν Ἐννοσίγαιος</l>
+        <l n="173" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν πυρί. καὶ γὰρ δὴ τὸ πνοαῖς συνδάμναται ἐχθραῖς·</l>
+        <l n="174" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πῦρ μὲν ἀείζωον καὶ ἀχύνετον ἔτρεσεν ὕδωρ</l>
+        <l n="175" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀργέστας, καί ῥ’ ἣ μὲν ἀκοσμήεσσα, φιλοργὴς</l>
+        <l n="176" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δεσπόζει νηῶν τε καὶ ἐμφθορέων αἰζηῶν,</l> 
+        <pb facs="theriacaetalexip00nica_0299"/>
+        <l n="177" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὕλη δ’ ἐχθομένοιο πυρὸς κατὰ θεσμὸν ἀκούει.</l>
+        <l n="178" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ναὶ μὴν ἀτμένιόν τε κεραιόμενον λίπος οἴνῃ</l>
+        <l n="179" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ χιόνι γλυκέος μίγδην πόσις ἄλγος ἐρύξει,</l>
+        <l n="180" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἦμος ὑπὸ ζάγκλῃσι περιβρίθουσαν ὀπώρην</l>
+        <l n="181" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥυσαλέην ἑδανοῖο καὶ ἐκ ψιθίης ἑλίνοιο</l>
+        <l n="182" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κείροντες θλίβωσιν, ὅτε ῥοιζηδὰ μέλισσαι,</l>
+        <l n="183" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πεμφρηδὼν, σφῆκές τε καὶ ἐκ βέμβικες ὄρειαι</l>
+        <l n="184" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γλεῦκος ἅλις δαίνυνται ἐπὶ ῥαγέεσσι πεσοῦσαι,</l>
+        <l n="185" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πιοτέρην ὅτε βότρυν ἐσίνατο κηκὰς ἀλώπηξ.</l>
+        <l n="186" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Καί τε σὺ κωνείου βλαβόεν τεκμαίρεο πῶμα·</l>
+        <l n="187" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κεῖνο ποτὸν δὴ γάρ τε καρήατι φοινὸν ἰάπτει</l>
+        <l n="188" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νύκτα φέρον σκοτόεσσαν· ἐδίνησεν δὲ καὶ ὄσσε,</l>
+        <l n="189" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἴχνεσι δὲ σφαλεροί τε καὶ ἐμπλάζοντες ἀγυιαῖς</l>
+        <l n="190" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χερσὶν ἐφερπύζουσι· κακὸς δ’ ὑπὸ νείατα πνιχμὸς 190</l>
+        <l n="191" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἴσθμια καὶ φάρυγος στεινὴν ἐμφράσσεται οἶμον·</l>
+        <l n="192" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄκρα δέ τοι ψύχει, περὶ δὲ φλέβες ἔνδοθι γυίων</l>
+        <l n="193" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥωμαλέαι στέλλονται· ὃ δ’ ἠέρα παῦρον ἀτύζει</l>
+        <l n="194" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷα κατηβολέων, ψυχὴ δ’ Ἀιδωνέα λεύσσει.</l> 
+        <pb facs="theriacaetalexip00nica_0300"/>
+        <l n="195" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τὸν μέν τ’ ἢ λίπεος κορέοις ἢ ἀμισγέος οἴνης,</l>
+        <l n="196" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρα κεν ἐξερύγῃσι κακὴν καὶ ἐπώδυνον ἄτην·</l>
+        <l n="197" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σύ γε κλυστῆρος ἐνεὶς ὁπλίζεο τεῦχος.</l>
+        <l n="198" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἢ οἴνης ἀμιγῆ πόσιν, ἢ ἀπὸ δάφνης,</l>
+        <l n="199" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τεμπίδος ἢ δαυχνοῖο φέροις ἐκ καύλεα κόψας,</l>
+        <l n="200" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1"> ἢ πρώτη Φοίβοιο κατέστεφε Δελφίδα χαίτην,</l>
+        <l n="201" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ πέπερι κνίδης τε μίγα σπερμεῖα λεήνας</l>
+        <l n="202" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νείμειας, τοτὲ νέκταρ ὀπῷ ἐμπευκέι χράνας·</l>
+        <l n="203" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δήποτε δ’ ἰρινέου θυέος μετρηδὸν ὀρέξαις</l>
+        <l n="204" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σίλφιά τ’ ἐνθρυφθέντα μετ’ ἀργήεντος ἐλαίου·</l>
+        <l n="205" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐν δὲ μελιζώρου γλυκέος πόσιν, ἐν δὲ γάλακτος</l>
+        <l n="206" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀφριόεν νέμε τεῦχος ὑπὲρ πυρὸς ἠρέμα θάλψας.</l>
+        <l n="207" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Καί κεν λοιγήεντι παρασχεδὸν ἄχθος ἀμύνοις</l>
+        <l n="208" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τοξικῷ εὖτ’ ἀχέεσσι βαρύνηται ποτῷ ἀνήρ.</l>
+        <l n="209" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τοῦ καὶ ἔνερθε γλῶσσα παχύνεται, ἀμφὶ δὲ χείλη</l>
+        <l n="210" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἰδαλέα βρίθοντα περὶ στομάτεσσι βαρύνει·</l>
+        <l n="211" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ξηρὰ δ’ ἀναπτύει, νεόθεν δ’ ἐκρήγνυται οὖλα’</l>
+        <l n="212" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἐς κραδίην πτοίην βάλε, πᾶν δὲ νόημα</l>
+        <l n="213" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἔμπληκτον μεμόρηκε κακῇ ἐσφαλμένον ἄτῃ,</l>
+        <l n="214" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτὰρ ὃ μηκάζει μανίης ὕπο μυρία φλύζων,</l>
+        <l n="215" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δηθάκι δ’ ἀχθόμενος βοάᾳ, ἅ τις ἐμπελάδην φὼς</l>
+        <l n="216" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀμφιβρότην κώδειαν ἀπὸ ξιφέεσσιν ἀμηθεὶς,</l>
+        <l n="217" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἅτε κερνοφόρος ζάκορος βωμίστρια Ῥείης</l>
+        <l n="218" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἰνάδι λαοφόροισιν ἐνιχρίμπτουσα κελεύθοις</l>
+        <l n="219" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">μακρὸν ἐπεμβοάᾳ γλώσσῃ θρόον, οἱ δὲ τρέουσιν</l>
+        <l n="220" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἰδαίης ῥιγηλὸν ὅτ’ εἰσαῖωσιν ὑλαγμόν·</l> 
+        <pb facs="theriacaetalexip00nica_0301"/>
+        <l n="221" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὣς ὃ νόου λύσσῃ ἐσφαλμένα βρυχανάαται</l>
+        <l n="222" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὠρυδὸν, λοξαῖς δὲ κόραις ταυρώδεα λεύσσων</l>
+        <l n="223" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θήγει λευκὸν ὀδόντα, παραφρίζει δὲ χαλινοῖς.</l>
+        <l n="224" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τὸν μὲν καὶ δεσμοῖσι πολυπλέκτοισι πιάξας</l>
+        <l n="225" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νέκταρι θωρήξαιο, καὶ οὐ χατέοντα κορέσκων</l>
+        <l n="226" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἦκα βιησάμενος· διὰ δὲ στόμα βρῦκον ὀχλίζοις.</l>
+        <l n="227" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρ’ ἂν ὑπεξερύγῃσι δαμαζόμενος χερὶ λώβην.</l>
+        <l n="228" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σὺ βοσκαδίης χηνὸς νέον ὀρταλιχῆα</l>
+        <l n="229" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὕδασιν ἐντήξαιο πυρὸς μεμορημένον αὐγαῖς·</l>
+        <l n="230" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σὺ μηλείης ῥηχώδεος ἄγρια κάρφη</l>
+        <l n="231" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὔρεσιν ἐνθρέφθεντα πόροις ἀπὸ σίνεα κόψας,</l>
+        <l n="232" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι καὶ κλήροισιν ἐπήβολα, τοῖά περ ὧραι</l>
+        <l n="233" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἰαριναὶ φορέουσιν ἐνεψιήματα κούραις,</l>
+        <l n="234" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δὲ στρούθεια, τοτὲ βλοσυροῖο Κύδωνος</l>
+        <l n="235" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κεῖνο φυτὸν Κρήτηθεν, ὃ δή ῥ’ ἐκόμισσαν ἄναυροι· 235</l>
+        <l n="236" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δὴ σφύρῃσιν ἅλις ἐναολλέα κόψας</l>
+        <l n="237" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὕδασιν ἐμβρέξαιο, νέην δ’ ὀσμήρεα γληχὼ</l>
+        <l n="238" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σπέρμασι μηλείοισι βάλοις ἐνομήρεα φύρων.</l>
+        <l n="239" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σύ γ’ ἢ ῥοδέης θυόεν μαλλοῖσιν ἀφύσσων</l>
+        <l n="240" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">παῦρα λίπος στάξειας ἀνοιγομένος στομάτεσσιν,</l>
+        <pb facs="theriacaetalexip00nica_0302"/>
+        <l n="241" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ καὶ ἰρινέοιο· μόλις δέ κε μυρί’ ἐπιτλὰς</l>
+        <l n="242" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἤμασιν ἐν πολέεσσιν ἀκροσφαλὲς ἴχνος ἰήλαι</l>
+        <l n="243" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀσφαλέως, πτοιητὸν ἔχων ἑτεροπλανὲς ὄθμα.</l>
+        <l n="244" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ μὲν Γερραῖοι νομάδες χαλκήρεας αἰχμὰς</l>
+        <l n="245" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἵ τε παρ’ Εὐφρήταο ῥόον πολέοντες ἀρούρας</l>
+        <l n="246" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χραίνουσιν· τὰ δὲ πολλὸν ἀναλθέα τραύματα τεύχει</l>
+        <l n="247" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σάρκα μελαινομένην, πικρὸς δ’ ὑποβόσκεται ὕδρης</l>
+        <l n="248" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἰὸς, σηπόμενον δὲ μύδῳ ἐκρήγνυται ἔρφος.</l>
+        <l n="249" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἢν δὲ τὸ Μηδείης Κολχηίδος ἐχθόμενον πῦρ</l>
+        <l n="250" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κεῖνό τις ἐνδέξηται, ἐφήμερον, οὗ περὶ χείλη</l>
+        <l n="251" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δευομένου δυσάλυκτος ἰάπτεται ἄμμιγα κνηθμὸς</l>
+        <l n="252" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷά τ’ ὀπῷ νιφόεντι κράδης ἢ τρηχέι κνίδῃ</l>
+        <l n="253" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χρῶτα μιαινομένοις ἢ καὶ σπειρώδεϊ κόρσῃ</l>
+        <l n="254" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σκίλλης, ἥ τ’ ἔκπαγλα νέην φοινίξατο σάρκα.</l>
+        <l n="255" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τοῦ καὶ ἐπισχομένοιο περὶ στόμαχον βάρος ἵζει</l>
+        <l n="256" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρῶτον ἐρεπτόμενον, μετέπειτα δὲ λοιγέι συρμῷ</l> 
+        <pb facs="theriacaetalexip00nica_0303"/>
+        <l n="257" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥιζόθεν ἑλκωθέντα, κακὸν δ’ ἀποήρυγε δειρῆς,</l>
+        <l n="258" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὡς εἴ τε κρεάων θολερὸν πλύμα χεύατο δαιτρός,</l>
+        <l n="259" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δέ τε καὶ νηδὺς μεμιασμένα λύματα βάλλει.</l>
+        <l n="260" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἀλλὰ σὺ πολλάκι μὲν χαίτην δρυὸς οὐλάδα κόψας,</l>
+        <l n="261" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι καὶ φηγοῖο πόροις ἀκύλοισιν ὁμαρτῇ,</l>
+        <l n="262" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σύ γε βδήλαιο νέον γλάγος ἔνδοθι πέλλης,</l>
+        <l n="263" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτὰρ ὃ τοῦ κορέοιτο, καὶ ἐν στομάτεσσιν ἐρύξας.</l>
+        <l n="264" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἦ μὴν πουλυγόνοιο τοτὲ βλαστήματ’ ἀρήξει,</l>
+        <l n="265" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δὴ ῥιζεῖα καθεψηθέντα γάλακτι.</l>
+        <l n="266" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δὲ καὶ ἀμπελόεις ἕλικας ἐνθρύπτεο νύμφαις,</l>
+        <l n="267" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἴσως καὶ βατόεντα περὶ πτορθεῖα κολούσας.</l>
+        <l n="268" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σὺ γυμνώσειας ἐυτρεφέος νέα τέρφη</l>
+        <l n="269" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καστηνοῦ, καρύοιο λαχυφλοίοιο κάλυμμα,</l>
+        <l n="270" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νείαιραν τόθι σάρκα περὶ σκύλος αὖον ὀπάζει</l>
+        <l n="271" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δυσλεπέος καρύοιο, τὸ Καστανὶς ἔτρεφεν αἶα.</l>
+        <l n="272" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥεῖα δὲ νάρθηκος νεάτην ἐξαίνυσο νηδὺν,</l>
+        <l n="273" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὅς τε Προμηθείοιο κλοπὴν ἀνεδέξατο φώρης·</l> 
+        <pb facs="theriacaetalexip00nica_0304"/>
+        <l n="274" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δὲ καὶ ἑρπύλλοιο φιλοζώοιο πέτηλα,</l>
+        <l n="275" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὐφίμου τ’ ἀπὸ καρπὸν ἅλις καταβάλλεο μύρτου·</l>
+        <l n="276" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ καί που σιδόεντος ἀποβρέξαιο κάλυμμα</l>
+        <l n="277" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καρπείου, μιγάδην δὲ βαλὼν ἐμπίσεο μήλοις,</l>
+        <l n="278" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρ’ ἂν ἔπι στῦφόν τι ποτῷ, νοῦσον δὲ κεδάσσεις.</l>
+        <l n="279" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἰξιόεν δέ σε μή τι δόλῳ παρὰ χείλεσι πῶμα</l>
+        <l n="280" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὐλόμενον λήσειεν, ὅ τ’ ὠκιμοειδὲς ὄδωδε.</l>
+        <l n="281" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τοῦ μὲν ὑπὸ γλώσσης νέατος τρηχύνεται ὁλκὸς</l>
+        <l n="282" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νέρθεν ἐπιφλεγέθων, τὸ δέ οἱ ἀμπάζεται ἦτορ·</l>
+        <l n="283" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">λυσσηθεὶς γλῶσσαν δὲ καταπρίει κυνοδόντι,</l>
+        <l n="284" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δὴ γὰρ ὅτ’ ἔμπληκτος φρένα δάμναται· ἀμφὶ δὲ δοιοὺς</l>
+        <l n="285" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἰκῇ ἐπιφράσσουσα πόρους τυφλώσατο νηδὺς</l> 
+        <pb facs="theriacaetalexip00nica_0305"/>
+        <l n="286" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὑγρῶν τε βρωτῶν τε, καταπνίγουσα δὲ πνεῦμα</l>
+        <l n="287" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐντὸς ὑποβρομέει, ὀλίγῳ δ’ ἐνελίσσεται ὄγμῳ</l>
+        <l n="288" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δὴ βροντῇσιν ἀνομβρήεντος ὀλύμπου</l>
+        <l n="289" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἰδόμενον, τοτὲ δ’ αὐτε κακοῖς ῥόχθοισι θαλάσσης,</l>
+        <l n="290" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἵοις πετραίῃσιν ὑποβρέμεται σπιλάδεσσι.</l>
+        <l n="291" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῷ καὶ στρευγομένῳ περ ἀνήλυθεν ἐκ καμάτοιο</l>
+        <l n="292" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πνεῦμα μόλις, πόσιες δὲ παραυτίκα λύματ’  ἔχευαν</l>
+        <l n="293" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φαρμακόεις ὠοῖσιν ἀλίγκια, τοῖά τε βοσκὰς</l>
+        <l n="294" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὀρταλὶς αἰχμητῇσιν ὑπευνασθεῖσα νεοσσοῖς</l>
+        <l n="295" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε μὲν πληγῇσι νέον θρομβήια γαστρὸς</l>
+        <l n="296" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἔκβαλεν ἐν μήνιγξιν ἀνόστεα, πολλάκι νούσῳ</l>
+        <l n="297" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δαμναμένη δύσποτμον ὑπὲκ γόνον ἔκχεε γαίῃ.</l>
+        <l n="298" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ μέν τ’ εὐβραχέος ἀψινθίου ἄλγος ἐρύξει</l>
+        <l n="299" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐνστῦφον πόμα κεῖνο νεοθλίπτῳ ὑπὸ γλεύκει·</l> 
+        <pb facs="theriacaetalexip00nica_0306"/>
+        <l n="300" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί ποτε ῥητίνην τερμινθίδα, πολλάκι πεύκης,</l>
+        <l n="301" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι καὶ πίτυος γοερῆς ἀπὸ δάκρυα τμήξαις,</l>
+        <l n="302" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Μαρσύου ἧχί τε Φοῖβος ἀπὸ φλόα δύσατο γυίων,</l>
+        <l n="303" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἣ δὲ μόρον πολύπυστον ἐπαιάζουσα κατ’ ἄγκη</l>
+        <l n="304" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἴη συνεχέως ἀδινὴν ἀναβάλλεται ἠχήν.</l>
+        <l n="305" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἆσαι δ’ ἢ πολίοιο μυοκτόνου ἀργέος ἄνθην,</l>
+        <l n="306" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι καὶ ῥυτῆς πεδανὰς ἀπαμέργεο βλάστας,</l>
+        <l n="307" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νάρδον, λιμναίου τε χαδὼν ἀπὸ κάστορος ὄρχιν·</l>
+        <l n="308" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ὀδελὸν κνηστῆρι κατατρίψαιο χαρακτῷ</l>
+        <l n="309" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σιλφίου, ἄλλοτε δ’ ἶσον ἀποτμήξειας ὀποῖο.</l>
+        <l n="310" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἀγροτέρης τραγοριγάνου ἠὲ γάλακτος</l>
+        <l n="311" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πηγνυμένου κορέοιτο νεημέλκτῃ ἐνὶ πέλλῃ.</l>
+        <l n="312" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἢν δέ τις ἀφροσύνῃ ταύρου νέον αἷμα πάσηται,</l>
+        <l n="313" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">στρευγεδόνι προδέδουπε δαμαζόμενος καμάτοισιν,</l>
+        <l n="314" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἦμος πιλνάμενον στέρνοις κρυσταίνεται εἶαρ</l>
+        <l n="315" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥεῖα, θρομβοῦται δὲ μέσῳ ἐνὶ τεύχεϊ γαστρός·</l>
+        <l n="316" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φράσσονται δὲ πόροι, τὸ δὲ θλίβεται ἔνδοθι πνεῦμα</l>
+        <l n="317" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐχένος ἐμπλασθέντος, ὃ δὲ σπαδόνεσσιν ἀλύων</l>
+        <l n="318" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δηθάκις ἐν γαίῃ σπαίρει μεμορυχμένος ἀφρῷ.</l> 
+        <pb facs="theriacaetalexip00nica_0307"/>
+        <l n="319" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ μέν τ’ ἢ ὀπόεντας ἀποκραδίσειας ἐρινοὺς,</l>
+        <l n="320" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄξει δ’ ἐμπίσαιο, τὸ δ’ ἀθρόον ὕδατι μίξαις</l>
+        <l n="321" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">συγκεράων νύμφας τε καὶ ἐνστῦφον ποτὸν ὄξευς,</l>
+        <l n="322" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ καὶ ἐκβδήλαιο καταχθέος ἕρματα γαστρός.</l>
+        <l n="323" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σὺ πυετίην ὀθόνης πολυωπέι κόλπῳ</l>
+        <l n="324" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φύρσιμον ἠθήσαιο, τοτὲ προκὸς, ἄλλοτε νεβροῦ,</l>
+        <l n="325" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἐρίφου, τοτὲ δ’ ἂν σὺ καὶ εὐσκάρθμοιο λαγωοῦ</l>
+        <l n="326" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἰνύμενος μογέοντι φέροις εὐαλθέ’ ἀρωγήν.</l>
+        <l n="327" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ λίτρου στήδην ὀδελοῦ πόρε τριπλόον ἄχθος</l>
+        <l n="328" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὐτριβέος, κίρνα δὲ ποτῷ ἐνδευκέι Βάκχου,</l>
+        <l n="329" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐν καὶ σιλφιόεσσαν ὁποῖό τε μοιρίδα λίτρην,</l>
+        <l n="330" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καὶ σπέραδος κραμβῆεν ἄδην μεμορυχμένον ὄξει.</l>
+        <l n="331" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἆσαι δὲ ῥάδικα κακοχλοίοιο κονύζης</l> 
+        <pb facs="theriacaetalexip00nica_0308"/>
+        <l n="332" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ πέπεριν, τά τε βλαστὰ κατασμώξαιο βάτοιο,</l>
+        <l n="333" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί κεν πηγνυμένοιο χύσιν διὰ ῥεῖα κεδάσσαις</l>
+        <l n="334" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ διαθρύψειας ἐν ἄγγεσιν ἑστηκυῖαν.</l>
+        <l n="335" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Μὴ μὲν ἐπαλγύνουσα πόσις βουπρήστιδος ἐχθρῆς</l>
+        <l n="336" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">λήσειεν, σὺ δὲ φῶτα δαμαζόμενον πεπύθοιο.</l>
+        <l n="337" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἣ δ’ ἤτοι λίτρῳ μὲν ἐπιχρώζουσα χαλινὰ</l>
+        <l n="338" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἴδεται ἐμβρυχθεῖσα, βαρύπνοος· ἀμφὶ δὲ γαστρὸς</l>
+        <l n="339" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλγεα δινεύοντα περὶ στομάτεσσιν ὄρωρεν·</l>
+        <l n="340" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὖρα δὲ τυφλοῦται, νεάτη δ’ ὑπὸ κύστις ὀρεχθεῖ·</l>
+        <l n="341" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πᾶσα δέ οἱ νηδὺς διαπίμπραται, ὡς ὁπόθ’ ὕδρωψ</l>
+        <l n="342" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τυμπανόεις ἀνὰ μέσσον ἀφυσγετὸς ὀμφαλὸν ἵζει·</l>
+        <l n="343" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀμφὶ δέ οἱ γυίοις τετανὸν περιφαίνεται ἔρφος.</l>
+        <l n="344" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἣ καί που δαμάλεις, ἐριγάστορας ἄλλοτε μόσχους</l>
+        <l n="345" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πίμπραται, ὁππότε θῆρα νομαζόμενοι δατέονται·</l>
+        <l n="346" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τούνεκα τὴν βούπρηστιν ἐπικλείουσι νομῆες.</l>
+        <l n="347" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δὲ καὶ εὐκραδέος τριέτει ἐν νέκταρι μίξαις</l>
+        <l n="348" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">συκέης αὐανθεῖσαν ἅλις πόσιν ὀμφαλόεσσαν,</l> 
+        <pb facs="theriacaetalexip00nica_0309"/>
+        <l n="349" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι καὶ σφύρῃ μιγάδην τεθλασμένα κόψας</l>
+        <l n="350" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐν πυρὶ τηξάμενος πορέειν ἀλκτήρια νούσων.</l>
+        <l n="351" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί κε μελιζώροιο νέον κορέσαιο ποτοῖο</l>
+        <l n="352" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀνέρα λαιμάσσοντα, τοτὲ γλάγος εἰν ἑνὶ χεύας·</l>
+        <l n="353" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι φοίνικος ψαφαρὸν καταμίσγεο καρπὸν,</l>
+        <l n="354" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ αὐαλέας δὴν ἀχράδας, ἢ ἀπὸ βάκχης</l>
+        <l n="355" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἀπὸ μυρτίνης ὁτὲ μυρτίδας οἰνάδι βάλλων.</l>
+        <l n="356" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ὅγε καὶ θηλῆς ἅτε δὴ βρέφος ἐμπελάοιτο</l>
+        <l n="357" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀρτιγενὲς, μαστοῦ δὲ ποτὸν μοσχηδὸν ἀμέλγοι,</l>
+        <l n="358" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἵη τ’ ἐξ ὑμένων νεαλὴς ὕπο οὔθατα μόσχος</l>
+        <l n="359" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βράσσει ἀνακρούουσα χύσιν μενοεικέα θηλῆς·</l>
+        <l n="360" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε πιαλέης πόσιος χλιαροῖο κορέσκοις,</l>
+        <l n="361" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐς δ’ ἔμετον βιάοιο καὶ οὐ ποθέοντά περ ἔμπης</l>
+        <l n="362" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χειρὶ βιησάμενος ἠὲ πτερῷ, ἢ ἀπὸ βύβλου</l>
+        <l n="363" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">στρεβλὸν ἐπιγνάμψαιο ταμὼν ἐρυτῆρα φάρυγγος.</l>
+        <l n="364" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἢν δ’ ἐνιτυρωθῇ νεαρὸν γάλα τεύχει γαστρὸς,</l>
+        <l n="365" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δὴ τότε τόνδε πνιχμὸς ἀθροιζομένοιο δαμάζει.</l> 
+        <pb facs="theriacaetalexip00nica_0310"/>
+        <l n="366" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δ’ ἤτοι τρισσὰς πόσιας πόρε, μέσσα μὲν ὄξευς,</l>
+        <l n="367" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δοιὰς δὲ γλυκέος, στεγανὴν δ’ ὑποσύρεο νηδύν·</l>
+        <l n="368" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι καὶ Λιβύηθε ποτῷ ἐγκνήθεο ῥίζας</l>
+        <l n="369" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σιλφίου, ἄλλοτ’ ὀποῖο, νέμοις δ’ ἐν βάμματι τήξας·</l>
+        <l n="370" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δὲ θρύπτειραν ἐπεγκεράσαιο κονίην</l>
+        <l n="371" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ νέον βρυόεντα θύμου στάχυν· ἄλλοτ’ ἀμύνει</l>
+        <l n="372" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βότρυς ἐυκνήμοιο μίγα βρεχθέντος ἐν οἴνῃ·</l>
+        <l n="373" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐν καί που ταμίσοιο ποτὸν διεχεύατο θρόμβους,</l>
+        <l n="374" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καὶ χλοεραὶ μίνθης ἄπο φυλλάδες, ἠὲ μελίσσης</l>
+        <l n="375" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ καὶ ἐνστύφοντι ποτῷ μεμορυχμέναι ὄξευς.</l>
+        <l n="376" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἀλλ’ ἄγε δὴ φράζοιο δορύκνιον, οὗ τε γάλακτι</l>
+        <l n="377" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὠπή τε βρῶσίς τε παρὰ στομάτεσσιν ἔικται.</l>
+        <l n="378" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῷ δ’ ἤτοι λυγμοὶ μὲν ἀηθέσσοντος ὁμαρτῇ</l>
+        <l n="379" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐχέν’ ἀνακρούουσιν, ὃ δ’ ἀχθόμενος στόμα γαστρὸς</l>
+        <l n="380" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι μὲν δαίτην ἀπερεύγεται αἱματόεσσαν,</l>
+        <l n="381" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε νηδυίων θολερὴν μυξώδεα χεύει,</l>
+        <l n="382" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τηνεσμῷ ὡς εἴ τε δυσέντερος ἀχθόμενος φώς·</l> 
+        <pb facs="theriacaetalexip00nica_0311"/>
+        <l n="383" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δήποτε τειρόμενος καμάτοις κάρφουσι δέδουπε</l>
+        <l n="384" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γυῖα δαμείς· οὐ μὲν ποθέει ξηρὸν στόμα δεῦσαι.</l>
+        <l n="385" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δὲ σὺ πολλάκι μὲν γλάγεος πόσιν, ἄλλοτε μίγδην</l>
+        <l n="386" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥεῖα γλυκὺ νείμειας ἀλυκρότερον δεπάεσσι·</l>
+        <l n="387" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε καὶ ὄρνιθος φιαρῆς πυρὶ τηκομένη σὰρξ</l>
+        <l n="388" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θωρήκων ἤμυνεν ἐυτρεφέων βρωθεῖσα·</l>
+        <l n="389" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἤμυνεν καὶ χυλὸς ἅλις κύμβησι ῥοφηθεὶς,</l>
+        <l n="390" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὅσσα τε πετρήεντος ὑπὸ ῥόχθοισι θαλάσσης</l>
+        <l n="391" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κνώδαλα φυκιόεντας ἀεὶ περιβόσκεται ἀγμούς·</l>
+        <l n="392" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὧν τὰ μὲν ὠμὰ δάσαιτο, τὰ δ’ ἑφθέα, πολλὰ δὲ θάλψας</l>
+        <l n="393" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐν φλογιῇ· στρόμβων δὲ πολὺ πλέον, ἢ ἔτι κάλχης,</l>
+        <l n="394" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κηραφίδος, πίνης τε καὶ αἰθήεντος ἐχίνου</l>
+        <l n="395" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δαῖτες ἐπαλθήσουσιν ἰδὲ κτένες· οὐδέ τι κήρυξ</l>
+        <l n="396" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δὴν ἔσεται τήθη τε γεραιρόμενα μνίοισι.</l>
+        <l n="397" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Μηδέ σέ γ’ ἐχθομένη λήθῃ πόσις — οὐ γὰρ ἄιδρις —</l>
+        <l n="398" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φαρικοῦ, ἣ γναθμοῖσιν ἔπι βαρὺν ὤπασε μόχθον.</l>
+        <l n="399" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τὴν ἤτοι γευθμῷ μὲν ἰσαιομένην μάθε νάρδῳ·</l> 
+        <pb facs="theriacaetalexip00nica_0312"/>
+        <l n="400" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἤνυσε δὲ σφαλεροὺς, ὁτὲ δ’ ἄφρονας, ἐν δὲ μονήρει</l>
+        <l n="401" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥηιδίως ἀκτῖνι βαρὺν κατεναίρεται ἄνδρα.</l>
+        <l n="402" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἀλλὰ σὺ πολλάκι μὲν σταδίην εὐανθέα νάρδου</l>
+        <l n="403" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥιζίδα θυλακόεσσαν ὀπάζεο, τήν τε Κίλισσαι</l>
+        <l n="404" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρηόνες ἀλδαίνουσι παρὰ πλημμυρίδα Κέστρου,</l>
+        <l n="405" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δὲ σμυρνεῖον ἐυτριβές. αἵνυσο δ’ αὐτὴν</l>
+        <l n="406" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἴριδα λειριόεν τε κάρη, τό τ’ ἀπέστυγεν Ἀφρὼ,</l>
+        <l n="407" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὕνεκ’ ἐριδμαίνεσκε χροῆς ὕπερ, ἐν δέ νυ θρίοις</l>
+        <l n="408" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀργαλέην μεσάτοισιν ὀνειδείην ἐπέλασσε</l>
+        <l n="409" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δεινὴν βρωμήεντος ἐνανθήσασα κορύνην.</l>
+        <l n="410" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δὲ σκύλαιο κάρη, περὶ δ’ αἴνυσο λάχνην</l>
+        <l n="411" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κέρσας εὐήκει νεόθεν ξυρῷ, ἐν δέ νυ θάλψαις</l>
+        <l n="412" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἤια κριθάων νεοθηλέα φυλλάδα τ’ ἰσχνὴν</l>
+        <l n="413" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πηγάνου, τήν τ’ ὤκιστα βορῇ ἐπεσίνατο κάμπη,</l>
+        <l n="414" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βάμματι δ’ ἐνδεύσαιο καὶ εὖ περὶ κόρσεα πλάσσοις.</l>
+        <l n="415" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Μὴ δὲ συοσκυάμῳ τις ἀιδρήεντα κορέσκοι</l>
+        <l n="416" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νηδύν, οἷά τε πολλὰ παρασφαλέες τεύχονται,</l>
+        <l n="417" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ νέον σπείρημα καὶ ἀμφίκρηνα κομάων</l>
+        <l n="418" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κοῦροι ἀπειπάμενοι ὀλοήν θ’ ἑρπηδόνα γυίων</l> 
+        <pb facs="theriacaetalexip00nica_0313"/>
+        <l n="419" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὀρθόποδες βαίνοντες ἄνευ σμυγεροῖο τιθήνης</l>
+        <l n="420" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠλοσύνῃ βρύκωσι κακανθήεντας ὀράμνους,</l>
+        <l n="421" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ νέον βρωτῆρας ὑπὸ γναθμοῖσιν ὀδόντας</l>
+        <l n="422" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φαίνοντες, τότε κνηθμὸς ἐνοιδέα δάμναται οὖλα.</l>
+        <l n="423" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δ’ ὁτὲ μὲν γλάγεος καθαρὴν πόσιν ἤλιθα* *,</l>
+        <l n="424" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε βουκέραος χιληγόνου, ὅρρα κεραίας</l>
+        <l n="425" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὐκαμπεῖς πετάλοισιν ὑπηνεμίοισιν ἀέξει,</l>
+        <l n="426" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀτμενίῳ μέγ’ ὄνειαρ ὅτ’ ἐμπλώῃσιν ἐλαίῳ·</l>
+        <l n="427" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σύ γ’ αὐαλέον κνίδης σπόρον, ἄλλοτε δ’ αὐτὴν</l>
+        <l n="428" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νείμαις ὠμόβρωτον ἄδην ἀνὰ φυλλάδ’ ἀμέλξαι,</l>
+        <l n="429" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κίχορα, καρδαμίδας τε καὶ ἣν Πέρσειον ἔπουσιν,</l>
+        <l n="430" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐν δέ τε νάπειον ῥάφανόν θ’ ἅλις, ἐν δέ τε λεπτὰς</l>
+        <l n="431" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄμμιγα κρομμύων γηθυλλίδας· ἤρκεσε δ’ ἄτην</l>
+        <l n="432" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὐάγλις κώδεια νέον σκορόδοιο ποθεῖσα.</l> 
+        <pb facs="theriacaetalexip00nica_0314"/>
+        <l n="433" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Καί τε σὺ μήκωνος κεβληγόνου ὁππότε δάκρυ</l>
+        <l n="434" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πίνωσιν, πεπύθοιο καθυπνέας· ἀμφὶ γὰρ ἄκρα</l>
+        <l n="435" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γυῖα καταψύχουσι, τὰ δ’ οὐκ ἀναπίτναται ὄσσε,</l>
+        <l n="436" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀλλ’ αὕτως βλεφάροισιν ἀκινήεντα δέδηεν·</l>
+        <l n="437" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀμφὶ καὶ ὀδμήεις καμάτῳ περιλείβεται ἱδρὼς</l>
+        <l n="438" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀθρόος, ὠχραίνει δὲ ῥέθος, πίμπρησι δὲ χείλη,</l>
+        <l n="439" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δέσμα δ’ ἐπεγχαλάουσι γενειάδος, ἐκ δέ τε παῦρον</l>
+        <l n="440" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐχένος ἑλκόμενον ψυχρὸν διανίσσεται ἄσθμα·</l>
+        <l n="441" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἠὲ πελιδνὸς ὄνυξ μόρον ἢ ἔτι μυκτὴρ</l>
+        <l n="442" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">στρεβλὸς ἀπαγγέλλει, ὁτὲ δ’ αὖ κοιλώπεες αὐγαί.</l>
+        <l n="443" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἅσσα σὺ μὴ δείδιχθι, μέλοιο δὲ πάμπαν ἀρωγῆς,</l>
+        <l n="444" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἰνάδι καὶ γλυκόεντι ποτῷ κεκαφηότα πιμπλὰς</l>
+        <l n="445" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τινθαλέῳ, τοτὲ δ’ ἔργα διαθρύψαιο μελίσσης</l>
+        <l n="446" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄμμιγα ποιπνύων Ὑμησσίδος, αἵ τ’ ἀπὸ μόσχου</l>
+        <l n="447" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σκήνεος ἐξεγένοντο δεδουπότος ἐν νεμέεσσιν·</l>
+        <l n="448" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἔνθα δὲ καὶ κοίλοιο κατὰ δρυὸς ἐκτίσσαντο</l>
+        <l n="449" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρῶτόν που θαλάμας συνομήρεες, ἀμφὶ καὶ ἔργων</l> 
+        <pb facs="theriacaetalexip00nica_0315"/>
+        <l n="450" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">μνησάμεναι Δῃοῖ πολυωπέας ἤνυσαν ὄμπας</l>
+        <l n="451" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βοσκόμεναι θύμα ποσσὶ καὶ ἀνθεμόεσσαν ἐρείκην.</l>
+        <l n="452" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δήποτε δ’ ἢ ῥοδέοιο νέον θύος εὔτριχι λήνει,</l>
+        <l n="453" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὀχλίζων κυνόδοντα τότ’ ἠμύουσι χαλίνοις,</l>
+        <l n="454" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐνθλίβοις, μαλλὸν δὲ βαθὺν κεκορημένον ἕλκοις,</l>
+        <l n="455" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ καὶ ἰρινόεν, τοτὲ δ’ αὖ μορόεντος ἐλαίης·</l>
+        <l n="456" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἶψα δὲ τόν γ’ ἑκάτερθε διὰ ῥέθος ἔγρεο πλήσσων,</l>
+        <l n="457" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ ἐμβοόων, τοτὲ δὲ κνώσσοντα σαλάσσων,</l>
+        <l n="458" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρα κατηβολέων ὀλοὸν διὰ κῶμα κεδαίῃ,</l>
+        <l n="459" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῆμος δ’ ἐξερύγῃσιν ἀλεξόμενος κακὸν ἄλγος.</l>
+        <l n="460" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σπεῖρα δ’ ἐνὶ χλιαρῷ λίπεϊ, πρὸ δὲ νέκταρι βάπτων</l>
+        <l n="461" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τρῖβε καὶ ἐκθέρμαινε ποτῷ ἐψυγμένα γυῖα,</l>
+        <l n="462" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ ἐν δροίτῃ κεράων ἐμβάπτεο σάρκας,</l>
+        <l n="463" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἶψα δὲ τινθαλέοισιν ἐπαιονάασθε λοετροῖς</l>
+        <l n="464" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἷμ’ ἀναλυόμενοι τέτανόν τ’ ἐσκληκότα ῥινόν.</l>
+        <l n="465" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Εἰδείης δὲ λαγοῖο κακοφθορέος πόσιν αἰνὴν,</l> 
+        <pb facs="theriacaetalexip00nica_0316"/>
+        <l n="466" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὐλομένην, τὸν κῦμα πολυστίου τέκεν ἅλμης.</l>
+        <l n="467" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τοῦ δ’ ἤτοι λοπίδων μὲν ἰδὲ πλύματος πέλει ὀδμὴ,</l>
+        <l n="468" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γευθμὸς δ’ ἰχθυόεις νεπόδων ἅτε σαπρυνθέντων</l>
+        <l n="469" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ καὶ ἀρρύπτων, ὁπόταν λοπὶς αὐξίδα χραίνῃ.</l>
+        <l n="470" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὅς δ’ ἤτοι ῥυπόεις μὲν ὑπ’ ὀστλίγγεσσιν ἀραιαῖς</l>
+        <l n="471" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τευθίδος ἐμφέρεται νεαλὴς γόνος ἢ ἀπὸ τεύθου,</l>
+        <l n="472" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷά τε σηπιάδος φυξήλιδος, ἥ τε μελαίνει</l>
+        <l n="473" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἶδμα χολῇ δολόεντα μαθοῦσ’ ἀγρώστορος ὁρμήν.</l>
+        <l n="474" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῶν ἤτοι ζοφόεις μὲν ἐπὶ χλόος ἔδραμε γυίοις</l>
+        <l n="475" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἰκτερόεις, σάρκες δὲ περὶ σταλάδην μινύθουσι</l>
+        <l n="476" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τηκόμεναι, ὅ δὲ δόρπα κατέστυγεν· ἄλλοτε ῥινὸς</l>
+        <l n="477" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄκρον ἐποιδαίνων σφυρὰ πίμπραται, ἀμφὶ δὲ μήλοις</l>
+        <l n="478" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄνθε’ ἅτε βρυόεντα κυλοιδιόωντος ἐφίζει.</l>
+        <l n="479" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δὴ γὰρ ἐφωμάρτησεν ὀλιζοτέρη κρίσις οὔρων</l>
+        <l n="480" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε πορφυρέη, τότ’ ἐπιπλέον αἱμάσσουσα.</l>
+        <l n="481" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πᾶς δὲ παρὰ δρακέεσσι φανεὶς ἐχθαίρεται ἔλλοψ,</l>
+        <l n="482" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτὰρ ὃ ναυσιόεις ἁλίην ἀπεμύξατο δαῖτα.</l> 
+        <pb facs="theriacaetalexip00nica_0317"/>
+        <l n="483" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ μὲν Φωκήεσσαν ἅλις πόσιν ἐλλεβόροιο</l>
+        <l n="484" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νείμειας, τοτὲ δάκρυ νεοβλάστοιο κάμωνος,</l>
+        <l n="485" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὄφρα ποτὸν νέποδός τε κακοῦ ἐκ φύρματα χεύῃ·</l>
+        <l n="486" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε βρωμήεντος ἀμελγόμενος γάλα πίνοι</l>
+        <l n="487" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ χύτρῳ τήξας μαλάχης λιπόωντας ὀράμνους·</l>
+        <l n="488" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί ποτε κεδρινέης πελάνου βάρος ἔμμορε πίσσης·</l>
+        <l n="489" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βρύκοι δ’ ἄλλοτε καρπὸν ἅλις φοινώδεα σίδης</l>
+        <l n="490" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Κρησίδος, οἰνωπῆς τε καὶ ἣν Προμένειον ἔπουσι,</l>
+        <l n="491" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δὲ καὶ Αἰγινῆτιν, ὅσαι τὰ σκληρέα κάρφη</l>
+        <l n="492" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φοίνι’ ἀραχνήεντι διαφράσσουσι καλύπτρῃ·</l>
+        <l n="493" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ οἰνοβρῶτα βορὴν ἐν κυρτίδι θλίψαις</l>
+        <l n="494" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ὡς εἴ περ νοτέουσαν ὑπὸ τριπτῆρσιν ἐλαίην.</l>
+        <l n="495" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἤν δέ τις ἀζαλέῃ πεπιεσμένος αὐχένα δίψῃ</l>
+        <l n="496" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐκ ποταμοῦ ταυρηδὸν ἐπιπροπεσὼν ποτὸν ἴσχῃ</l>
+        <l n="497" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">λεπτὰ διαστείλας παλάμῃ μνιώδεα θρῖα,</l>
+        <l n="498" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῷ μέν τε ῥοιζηδὰ φιλαίματος ἐμπελάουσα</l>
+        <l n="499" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥύμῃ ἅλις προὔτυψε ποτοῦ μέτα χήτεϊ βρώμης</l>
+        <l n="500" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">βδέλλα πάλαι λαπαρή τε καὶ ἱμείρουσα φόνοιο·</l>
+        <l n="501" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ὅθ’ ὑπὸ ζοφερῆς νυκτὸς κεκαλυμμένος αὐγὰς</l> 
+        <pb facs="theriacaetalexip00nica_0318"/>
+        <l n="502" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀφραδέως κρωσσοῖο κατακλίνας ποτὸν ἴσχῃ</l>
+        <l n="503" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χείλεσι πρὸς χείλη πιέσας, τὸ δὲ λαιμὸν ἀμείψῃ</l>
+        <l n="504" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κνώδαλον ἀκροτάτοισιν ἐπιπλῶον ὑδάτεσσι,</l>
+        <l n="505" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τὰς μὲν ἵνα πρώτιστον ὀχλιζόμενος ῥόος ὤσῃ,</l>
+        <l n="506" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀθρόα προσφύονται ἀμελγόμεναι χροὸς αἷμα,</l>
+        <l n="507" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε μέν τε πύλῃσιν ἐφήμεναι, ἔνθα τε πνεῦμα</l>
+        <l n="508" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἰὲν ἀθροιζόμενον στεινοῦ διαχεύεται ἰσθμοῦ,</l>
+        <l n="509" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δὲ στομίοισι πέριξ ἐπενήνοθε γαστρὸς</l>
+        <l n="510" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀνέρα πημαίνουσα, νέην δ’ ἐπενείματο δαῖτα.</l>
+        <l n="511" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ σὺ τότ’ ἐν δεπάεσσι κεραιόμενον ποτὸν ὄξευς</l>
+        <l n="512" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νείμειας, ποτὲ δαῖτα συνήρεα χιονόεσσαν,</l>
+        <l n="513" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι κρυστάλλοιο νέον βορέαο παγέντος.</l>
+        <l n="514" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σὺ γυρώσαιο καθαλμέα βώλακα γαίης</l>
+        <l n="515" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ναιομένην, θολερὴν δὲ πόσιν μενοεικέα τεῦχε·</l>
+        <l n="516" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ αὐτὴν ἅλα βάπτε, τότ’ ἠελίοισι δαμάζων</l>
+        <l n="517" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἶθαρ ὀπωρινοῖσι, τότ’ ἠνεκὲς ἐν φλογὶ θάλψας·</l>
+        <l n="518" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἢ ἅλα πηκτὸν ὁμιλαδὸν ἢ ἁλὸς ἄχνην</l>
+        <l n="519" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐμπίσαις, τήν τ’ αἰὲν ἀνὴρ ἁλοπηγὸς ἀγείρει</l>
+        <l n="520" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">νειόθ’ ὑφισταμένην, ὁπόθ’ ὕδασιν ὕδατα μίξῃ.</l>
+        <l n="521" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Μὴ μὲν δὴ ζύμωμα κακὸν χθονὸς ἀνέρα κήδοι</l>
+        <l n="522" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι μὲν στέρνοισιν ἀνοιδέον, ἄλλοτε δ’ ἄγχον,</l>
+        <l n="523" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὖθ’ ὑπὸ φωλεύοντα τραφῇ βαθὺν ὁλκὸν ἐχίδνης,</l> 
+        <pb facs="theriacaetalexip00nica_0319"/>
+        <l n="524" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἰὸν ἀνικμαῖνον στομίων τ’ ἀποφώλιον ἄσθμα.</l>
+        <l n="525" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κεῖνο κακὸν ζύμωμα, τὸ δὴ ῥ’ ὑδέουσι μύκητας</l>
+        <l n="526" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">παμπήδην, ἄλλῳ γὰρ ἐπ’ οὔνομα κέκριται ἄλλο.</l>
+        <l n="527" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἀλλὰ σύ γ’ ἢ ῥαφάνοιο πόροις σπειρώδεα κόρσην.</l>
+        <l n="528" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ῥυτῆς κλώθοντα περὶ σπάδικα κολούσας,</l>
+        <l n="529" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι καὶ χαλκοῖο πάλαι μεμογηότος ἄνθην·</l>
+        <l n="530" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε κληματόεσσαν ἐν ὄξεϊ θρύπτεο τέφρην·</l>
+        <l n="531" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δήποτε ῥιζάδα τρῖβε πυρίτιδα βάμματι χραίνων</l>
+        <l n="532" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ λίτρον, τοτὲ φύλλον ἐναλδόμενον πρασιῇσι</l>
+        <l n="533" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καρδαμίδος, Μῆδόν τε καὶ ἐμπρίοντα σίνηπυν.</l>
+        <l n="534" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σὺν δὲ καὶ οἰνηρὴν φλογιῇ τρύγα τεφρώσαιο</l>
+        <l n="535" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ πάτον στρουθοῖο κατοικάδος· ἐκ δὲ βαρεῖαν</l>
+        <l n="536" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χεῖρα κατεμματέων ἐρύγοι λωβήμονα κῆρα.</l>
+        <l n="537" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἢν δὲ λιπορρίνοιο ποτὸν δυασάλυκτον ἰάψῃ</l>
+        <l n="538" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φαρμακίδος σαύρης πανακηδέος, ἣν σαλαμάνδρην</l> 
+        <pb facs="theriacaetalexip00nica_0320"/>
+        <l n="539" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κλείουσιν, τὴν οὐδὲ πυρὸς λωβήσατο λιγνύς,</l>
+        <l n="540" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἶψα μὲν ἐπρήσθη γλώσσης βάθος, ἂψ δ’ ὑπὸ μάλκης</l>
+        <l n="541" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δάμνανται, βαρύθων δὲ κακὸς τρόμος ἅψεα λύει·</l>
+        <l n="542" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἳ δὲ περισφαλόωντες ἅτε βρέφος ἑρπύζουσι</l>
+        <l n="543" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τετραποδί· νοεραὶ γὰρ ἀπὸ φρένες ἀμβλύνονται·</l>
+        <l n="544" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σάρκα δ’ ἐπιτροχόωσαι ἀολλέες ἄκρα πελιδναὶ</l>
+        <l n="545" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σμώδιγγες στίζουσι κεδαιομένης κακότητος.</l>
+        <l n="546" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δὲ σὺ πολλάκι μὲν πεύκης ἀπὸ δάκρυ’ ἀμέρξας</l>
+        <l n="547" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τενθρήνης ἀναμίγδα πόροις ἐν πίοσιν ἔργοις·</l>
+        <l n="548" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ χαμαιπίτυος βλαστήμονος ἄμμιγα κώνοις</l>
+        <l n="549" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">φύλλα καθεψήσειας, ὅσους ἐθρέψατο πεύκη·</l>
+        <l n="550" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δὲ σπέραδος κνίδης μυλοεργέι μίσγων</l>
+        <l n="551" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τερσαίνοις ὀρόβοιο παλήματι· καί ποτε κνίδην</l>
+        <l n="552" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἑψαλέην κρίμνοισι παλυνάμενος ψαθυροῖσιν</l>
+        <l n="553" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εὖ λίπεϊ χραίνοιο, βορῆς δ’ ἀέκοντα κορέσκοις.</l>
+        <l n="554" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ναὶ μὴν ῥητίνη τε καὶ ἱερὰ ἔργα μελίσσης</l>
+        <l n="555" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ῥίζα τε χαλβανόεσσα καὶ ὤεα θιβρὰ χελύνης</l>
+        <pb facs="theriacaetalexip00nica_0321"/>
+        <l n="556" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀλθαίνει, τοτὲ νέρθε πυρὸς ζαφέλοιο κεραίης</l>
+        <l n="557" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">[ἀλθαίνει καὶ γέντα συὸς φλιδόωντος ἀλοιφῇ]</l>
+        <l n="558" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀμμίγδην ἁλίοιο καθεψηθέντα χελύνης</l>
+        <l n="559" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γυίοις, ἥ τ’ ἀκιρῇσι διαπλώει πτερύγεσσιν,</l>
+        <l n="560" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ οὐρείης κυτισηνόμου, ἥν τ’ ἀκάκητα</l>
+        <l n="560x">αὐδήεσσαν ἔθηκεν ἀναύδητόν περ ἐοῦσαν</l>
+        <l n="561" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἑρμείης· σαρκὸς γὰρ ἀπ’ οὖν νόσφισσε χέλειον</l>
+        <l n="562" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αἰόλον, ἀγκῶνας δὲ δύω παρετείνατο πέζαις.</l>
+        <l n="563" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σύ γ’ ἢ γερύνων λαιδροὺς δαμάσαιο τοκῆας,</l>
+        <l n="564" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄμμιγα δὲ ῥίζας ἠρυγγίδας, ἢ καὶ ἐπαρκὲς</l>
+        <l n="565" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">θάλπε βαλὼν χύτρῳ σκαμμώνιον. οἷσι κορέσκοις</l>
+        <l n="566" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀνέρα, καὶ θανάτοιο πέλας βεβαῶτα σαώσεις.</l>
+        <l n="567" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἤν γε μὲν ἐκ φρυνοῖο θερειομένου ποτὸν ἴσχῃ</l>
+        <l n="568" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ ἔτι καὶ κωφοῖο λαχειδέος, ὃς ποτὶ θάμνοις</l>
+        <pb facs="theriacaetalexip00nica_0322"/>
+        <l n="569" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">εἴαρι προσφύεται μορόεις λιχμώμενος ἔρσην, —</l>
+        <l n="570" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῶν ἤτοι θερόεις μὲν ἄγει χλόον ἠύτε θάψου,</l>
+        <l n="571" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">γυῖα δὲ πίμπρησιν, τὸ δὲ συνεχὲς ἀθρόον ἄσθμα</l>
+        <l n="572" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δύσπνοον ἐκφέρεται, παρὰ χείλεσι δ’ ἐχθρὸν ὄδωδεν.</l>
+        <l n="573" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀλλὰ σὺ τῷ βατράχοιο καθεφθέον ἠὲ καὶ ὀπτὴν</l>
+        <l n="574" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">σάρκα πόροις, ὁτὲ πίσσαν ἐν ἡδέι μίγμενος οἴνῃ·</l>
+        <l n="575" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε σπλὴν ὀλοοῖο κακὸν βάρος ἤρκεσε φρύνης,</l>
+        <l n="576" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">λιμναίης φρύνης πολυαλγέος, ἥ τ’ ἐνὶ φύκει</l>
+        <l n="577" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρῶτον ἀπαγγελέουσα βοᾷ θυμάρμενον εἶαρ.</l>
+        <l n="578" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτὰρ ὅ γ’ ἄφθογγός τε καὶ ἐν δονάκεσσι θαμίζων</l>
+        <l n="579" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι μὲν πύξοιο χλόον κατεχεύατο γυίοις,</l>
+        <l n="580" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ ὑγραίνει χολόεν στόμα· καί ποτε λυγμοὶ</l>
+        <l n="581" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀνέρα καρδιόωντα θαμειότεροι κλονέουσι·</l>
+        <l n="582" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">δὴν δὲ κατικμάζων ἄγονον σπόρον ἄλλοτε φωτὸς,</l>
+        <l n="583" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι θηλυτέρης σκεδάων γυίοισι τέλεσκε.</l>
+        <l n="584" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ναὶ μὴν τοῖς ὁτὲ νέκταρ ἀφυσγετὸν ἐν δεπάεσσι</l>
+        <l n="585" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χεύαις, εἰς ἔμετον δὲ καὶ οὐ χατέοντα πελάζοις,</l>
+        <l n="586" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ πίθου φλογιῇ θάλψας κύτος αἰὲν ἐναλθῆ</l>
+        <l n="587" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀνέρα θερμάσσαιο, χέαι δ’ ἀπὸ νήχυτον ἱδρῷ·</l>
+        <l n="588" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καί τε καὶ αὐξηρῶν δονάκων ἀπὸ ῥίζεα κόψας</l>
+        <pb facs="theriacaetalexip00nica_0323"/>
+        <l n="589" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἴνῃ ἐπεγκεράσαιο, τὰ δή ῥ’ ὑποτέτροφε λίμνη</l>
+        <l n="590" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἰκείη, τόθι λεπτὰ διὲκ πόσιν ἑρπετὰ νήχει,</l>
+        <l n="591" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ φιλοζώοιο κυπειρίδος ἠὲ κυπείρου,</l>
+        <l n="592" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">αὐτόν τ’ ἠνεκέεσσι τρίβοις πανάπαστον ἐδωδῆς</l>
+        <l n="593" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καὶ πόσιος ξήραινε, κατατρύσαιο δὲ γυῖα.</l>
+        <l n="594" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἐχθραλέον δέ σε μή τι λιθάργυρος ἀλγινόεσσα</l>
+        <l n="595" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">λήσειεν τότε γαστρὶ πέσῃ βάρος, ἀμφὶ δὲ μέσσον</l>
+        <l n="596" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πνεύματ’ ἀνειλίσσοντα κατ’ ὀμφάλιον βρομέῃσιν,</l>
+        <l n="597" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἷά περ εἰλίγγοιο δυσαλθέος, ὅς τε δαμάζει</l>
+        <l n="598" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀνέρας ἀπροφάτοισιν ἐνιπλήσσων ὀδύνῃσιν.</l>
+        <l n="599" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὐ μὲν τῶν γ’ οὔρων ἄνυται ῥύσις, ἀμφὶ δὲ γυῖα</l>
+        <l n="600" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πίμπραται, αὐτάρ που μολίβῳ εἰδήνατο χροιή.</l>
+        <l n="601" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Τῷ δ’ ὁτὲ μὲν σμύρνης ὀδελοῦ πόρε διπλόον ἄχθος,</l>
+        <l n="602" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἄλλοτε δ’ ὁρμίνοιο νέην χύσιν, ἄλλοτε κόψαις</l>
+        <l n="603" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οὐρείην ὑπέρεικον, ὅθ’ ὑσσώπου ὀροδάμνους,</l>
+        <l n="604" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πολλάκι δ’ ἀγριόεντα κράδην, σπέραδός τε σελίνου</l>
+        <l n="605" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἴσθμιον, ᾧ θ’ ὑπὸ κοῦρον ἀλίβλαπτον Μελικέρτην</l>
+        <l n="606" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Σισυφίδαι κτερίσαντες ἐπηέξησαν ἀέθλους.</l>
+        <pb facs="theriacaetalexip00nica_0324"/>
+        <l n="607" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠὲ σύ γ’ ἐν πέπεριν ῥυτῇ συνομήρεα φώξας</l>
+        <l n="608" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἴνῳ ἐνιτρίψαιο, κακῆς δ’ ἀπερύκεο νούσου,</l>
+        <l n="609" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κύπρου τε βλαστεῖα νεανθέα, πολλάκι σίδης</l>
+        <l n="610" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πρωτόγονον κυτίνοιο πόροις ἀνθήμονα καρπόν.</l>
+        <l n="611" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">[Μὴ μὲν δὴ σμῖλον σὺ κακὴν ἐλατηίδα μάρψαις</l>
+        <l n="612" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Οἰταίην, θανάτοιο πολυκλαύτοιο δότειραν,</l>
+        <l n="613" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἥν τε καὶ ἐμπλείουσα χαλικροτέρη πόσις οἴνης</l>
+        <l n="614" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">οἴη ἐπαλθήσειε παραχρέος, ἡνίκα φωτὸς</l>
+        <l n="615" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἴσθμια καὶ φάρυγος στεινὴν ἐμφράσσεται οἶμον.]</l>
+        <l n="616" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">[Καὶ τὰ μὲν οὖν Νίκανδρος ἑῇ ἐνικάτθετο βίβλῳ</l>
+        <l n="617" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">μοχθήεντα μύκητα παρ’ ἀνέρι φαρμακόεντα.</l>
+        <l n="618" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Πρὸς δ’ ἔτι τοῖς, Δίκτυννα τεῆς ἐχθήρατο κλῶνας</l>
+        <l n="619" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Ἥρη τ’ Ἰμβρασίη μούνη στέφος οὐχ ὑπέδεκτο</l>
+        <l n="620" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">κάλλεος, οὕνεκα Κύπριν, ὅτ’ εἰς ἔριν ἠέρθησαν</l>
+        <l n="621" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἀθάναται, κόσμησεν ἐν Ἰδαίοισιν ὄρεσσι, —</l>
+        <l n="622" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">τῆς σύ γ’ ἀπ’ εὐύδροιο νάπης, εὐαλθὲς ὄνειαρ.</l>
+        <l n="623" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">καρπὸν πορφυρόεντα συναλδέα χειμερίῃσιν</l>
+        <pb facs="theriacaetalexip00nica_0325" />
+        <l n="624" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἠελίου θαλφθέντα βολαῖς δοίδυκι λεήνας</l>
+        <l n="625" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">χυλὸν ὑπὲκ λεπτῆς ὀθόνης ἢ σχοινίδι κύρτῃ</l>
+        <l n="626" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἐκθλίψαντα πορεῖν κυάθου κοτυληδόνα πλήρη</l>
+        <l n="627" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">ἢ πλεῖον, πλεῖον γὰρ ὀνήιον· — οὐ γὰρ ἀνιγρὸν</l>
+        <l n="628" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">πῶμα βροτοῖς·— τόδε γάρ τε καὶ ἄρκιον, αἴκε πίῃσθα.]</l>
+          <l n="629" rend="indent" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">Καί κ’ ἔνθ’ ὑμνοπόλοιο καὶ εἰσέτι Νικάνδροιο</l>
+        <l n="630" xml:base="urn:cts:greekLit:tlg0022.tlg002.1st1K-grc1">μνῆστιν ἔχοις, θεσμὸν δὲ Διὸς ξενίοιο φυλάσσοις. </l>
+        <pb facs="theriacaetalexip00nica_0377" />
+        
+      </div>
+    </body>
+  </text>
+</TEI>
