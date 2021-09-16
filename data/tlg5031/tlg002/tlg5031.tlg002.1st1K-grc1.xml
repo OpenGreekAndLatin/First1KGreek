@@ -1,0 +1,947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+  <fileDesc>
+    <titleStmt>
+      <title xml:lang="lat">Scholia in Nicandri Alexipharmaca (scholia vetera et recentiora)</title>
+      <author xml:lang="lat">Scholia in Nicandrum</author>
+      <editor>Otto Schneider</editor>
+      <funder>Center for Hellenic Studies</funder>
+      <respStmt>
+        <resp>Published original versions of the electronic texts</resp>
+        <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+        <persName role="principal">Gregory Crane</persName>
+        <persName role="principal">Leonard Muellner</persName>
+        <persName role="principal">Bruce Robertson</persName>
+      </respStmt>
+      <respStmt>
+        <persName>Sophia Elzie</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Evren Bulay</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Domi Couvet</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Dimitra Fylaktopoulou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Anastasios Kolestis</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Zoe Koukoutianou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Chloe Papadopolou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Theodoros Pazarloglou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Celia Prescott-Decie</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Dora Profyri</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Aikaterini Remma</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Panagiotis Sotiroudis</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Chrysanthi Tsalafouta</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Jiaqi Zhao</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Zeyu Wen</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Panagiotis Sotiroudis</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Charlotte Houghton</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital editor</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg5031.tlg002.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+       <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-05-31" />
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author>
+            <persName>Nicander of Colophon</persName>
+          </author>
+          <title xml:lang="lat">Nicandrea. Theriaca et Alexipharmaca</title>
+          <editor><persName>Otto Schneider</persName></editor>
+          <imprint>
+            <pubPlace>Leipzig</pubPlace>
+            <publisher>Teubner</publisher>
+            <date>1856</date>
+          </imprint>
+        </monogr>
+        <ref target="https://archive.org/details/bub_gb_qdeEAAAAIAAJ/page/n452/mode/1up">Internet Archive</ref>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+      <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>This pointer pattern extracts section</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+      <language ident="lat">Latin</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021-09-10" who="Lisa Cerrato">Review of markup.</change>
+    <change when="2021-08-31" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" xml:lang="grc">
+      
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="0"> 
+  <pb facs="theriacaetalexip00nica_0451"/>
+<p rend="indent">Τὸ ποίημα οἱ μὲν ἐπιγράφουσι περὶ θανασίμων φαρμάκων, οἱ δ’ ἀντιφάρμακα, ἄλλοι δ’ ἀλεξιφάρμακα· καὶ γὰρ αὐτός φησιν ὁ Νίκανδρος (4) <quote type="blockquote">ῥεῖά κέ τοι ποσίεσσιν ἀλέξια φαρμακοέσσαις.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="1"> 
+<p rend="indent">Εἰ καὶ μὴ σύγκληρα. Νίκανδρός ἐστίν ὁ λέγων Κολοφώνιος Πρωταγόρᾳ Κυζικηνῷ, ὁ δὲ νοῦς· εἰ καὶ μὴ σύνεγγυς ἔχομεν τοὺς κλήρους τῶν πόλεων ἐπὶ τῆς Ἀσίας, ἀλλὰ τό σοι προσφωνεῖν οὐκ ἀνοίκειον ἡγοῦμαι. Δήμους δὲ λέγει τὰ ἀθροίσματα τῶν τε προγόνων καὶ τῶν κτιστῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="2"> 
+<p rend="indent">Τύρσεις δεῖ ἀκούειν τὰς πόλεις, ἀλλ’ οὐ τὰς ἐπάλξεις, ὅπερ κυρίως σημαίνουσιν· ἀπεμφαίνων, γὰρ ὁ λόγος ἐστὶν, εἰ χάριν τῶν ἐπάλξεων οἱ δῆμοι τὰ τείχη ἔκτισαν, αλλὰ μὴ χάριν τῶν πόλεων. Σύγκληρα δὲ σύνοικα τῶν αὐτοκλήρων. Τὸ δὲ τέων οὐκ ὀρθῶς κεῖται· σημαίνει γὰρ τὸ τίνων· Ὅμηρος (<bibl xml:lang="mul">Il. ω 387</bibl>)· <quote type="blockquote">τέων δ′ ἔξ ἐσσι τοκήων;</quote> βούλεται δὲ λέγειν ὧν. Τζέτζης· τέων, τῶν, ὧν δωρικῶς· καλῶς ἔχει. Βλάστας δὲ τὰ βλαστήματα, τὰ γένη· ὁ γὰρ ἄνθρωπος δίκην φυτοῦ αὔξει. Τύρσεσι δὲ ταῖς πόλεσιν ἀπὸ μέρους τῶν τειχῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="3"> 
+<p rend="indent">Δολιχός· μακρὸς, πολύς· ἀπέχουσι γὰρ ἀλλήλων ἡ Κύζικος καὶ ἡ Κολοφών.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="4"> 
+<p rend="indent">Ἀλέξια φαρμακοέσσαις· τὰ ἀλεξιτήρια τῶν φαρμάκων εἴποιμι ἀντὶ τοῦ καὶ βλαπτούσας καὶ ὠφελούσας βοτάνας εἴποιμι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="5"> 
+<p rend="ndent">Ἅ τε φῶτας· ἔδει εἰπεῖν αἵτινες, αἱ πόσιες, ὁ δ’ ἐπὶ τὸ ὁμώνυμον οὐδετέρως μετῆλθεν Ὁμηρικῶς· πρὸς τὰ φάρμακα γὰρ τὰ φθοροποιὰ ἔφη τὰ ἀλεξιτήρια τῶν φαρμάκων εἴποιμι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="6"> 
+<p rend="indent">Πολυστροίβοιο δὲ τῆς πολυταράχου παρὰ τὸ στροβεῖν τὰς ναῦς, ὅ ἐστι ταράσσειν, κατὰ παρένθεσιν τοῦ ι πολυστρόφου, τῆς πολλὰς στροφὰς ἐούσης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="7"> 
+<p rend="indent">Ἄρκτον ὑπ’ ὀμφαλόεσσαν· ἀρκτικωτέρα γὰρ ἡ Κύζικος τῆς Κολοφῶνος, ὀμφαλὸν δὲ καλεῖ τὸν βόρειον πόλον, ὡς μεσαίτατον, ἢ αὐτὴν τὴν ἄρκτον διὰ τὸν παρακείμενον αὐτῇ τῶν ἄστρων χορόν· ὀμφαλόεσσα εἴρηκε διὰ τὸ μέσον τοῦ βορείου κεῖσθαι. Τινὲς δ’ ἐπειδὴ δοκεῖ ὁ κατὰ τὰς ἄρκτους τόπος εὐβοτώτατος, ὀμφαλόεσσαν εἰρῆσθαί φασι τὴν τροφώδη· ὀμφαλὸς γὰρ ἀπὸ τῆς ὄμπνης εἴρηται, ὅ ἐστι τροφὴ, ἀφ’ οὐ καὶ ἡ Δημήτηρ ὀμπνία, ἄλλοι δὲ τὴν Κρητικήν· Ὀμφαλὸς γὰρ τόπος ἐν Κρήτῃ, ὡς καὶ Καλλίμαχος (<bibl xml:lang="lat">Hymn. in Jovem 44</bibl>)· <quote type="blockquote"><lb/>πέσε, δαῖμον, ἀπ’ ὀμφαλὸς, ἔνθεν ἐκεῖνο <lb/>Ὀμφάλιον μετέπειτα πέδον καλέουσι Κύδωνες.</quote> <pb facs="theriacaetalexip00nica_0452"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="8"> 
+<p rend="indent">Λοβρίνης θαλάμαι· τόποι ἱεροὶ ὑπόγειοι, ἀνακείμενοι τῇ Ῥέᾳ, ὅπου ἐκτεμνόμενοι τὰ μήδεα κατετίθεντο οἱ τῷ Ἄττει καὶ τῇ Ῥέᾳ λατρεύοντες, εἰσὶ δὲ τὰ Λόβρινα ὄρη Φρυγίας ἢ τόπος Κυζίκου· δύο γὰρ ὂρη εἰσὶν ἐν Κυζίκῳ, Δίνδυμον καὶ Λόβρινον. Λοβρίνης· οὕτω καλεῖται ἡ Ῥέα ἀπὸ τοῦ ὄρους τῆς Κυζίκου, ὁ καλεῖται Λόβρινον, ὅπου ἱερόν ἐστι τῆς Ῥέας. Ἂττεω· ἱστορεῖται, ὅτι ποιμὴν ἦν Φρὺξ ὁ Ἂττης, ποιμαίνων δὲ καὶ ὑμνῶν τὴν μητέρα τῶν θεῶν ἐφιλήθη ὑπ’ αὐτῆς, καὶ δὴ φαινομένη πολλάκις τιμῆς αὐτὸν ἠξίωσεν, ὁ Ζεὺς δ’ ἐπὶ τούτῳ δυσανασχετῶν ἀνεῖλεν αὐτὸν οὐ φανερῶς δι’ αἰδῶ τῆς μητρὸς, ἀλλὰ σῦν ἄγριον πέμψας, ἡ δὲ κατολοφυρομένη αὐτὸν ἔθαψεν, οἱ δὲ Φρύγες κατὰ τὸ ἔαρ θρηνοῦσιν αὐτόν. Ὥσπερ δ’ ἀπὸ τοῦ Ἂλτης Ἂλτεω, οὕτω καὶ ἀπὸ τοῦ Ἄττης Ἄττεω, ἡ ὡς ἀπὸ περισπωμένου, ὥσπερ Ἑρμῆς Ἑρμέω</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="9"> 
+<p rend="indent">Κρεούσης τῆς Ἐρεχθέως καὶ Ἀπόλλωνος Ἴων, ἀφ’ οὗ Ἴωνες οἱ Αθηναῖοι καὶ Ἱάδες πολλαὶ πόλεις, ἡ δὲ Κολοφὼν τῆς Ἰωνίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="11"> 
+<p rend="indent">Ἑζόμενος· γράφεται καὶ ἔξομένη Κλαρίοιο θεοῦ παρὰ πίονι νηῷ· Κλάρος γὰρ εἴρηται παρὰ τὸ κεκληρῶσθαι τὸν τόπον Ἀπόλλωνι, ἡ ὅτι ἐκεῖ ἐκληρώσαντο Ζεὺς, Ποσειδῶν καὶ Πλούτων, ἡ ὅτι ἐκεῖ ἔκλαυσεν ἡ Μαντὼ σύν τῷ ἀνδρὶ Βακχιάδῃ διὰ τὴν τοῦ τόπου ἐρημίαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="13"> 
+<p rend="indent">Πνυθείης ἀντὶ τοῦ πνῦθι, ἤγουν σύνες, γνῶθι, εὐκτικὸν ἀντὶ προστακτικοῦ, ακουε, μάθε· τὸ δ’ ἀκόνιτον ῥιζίον τί ἐστι βοτάνης ὅμοιον ἀγρώστιδι, οὗ ἡ πόσις πικρὰ οὖσα τὸ μὲν στόμα ἅπαν στύφει, τὴν δὲ καρδίαν δάκνει, τὸ δὲ πνεῦμα ὑπὸ καταψύξεως τοῦ πνεύμονος ἐπικόπτει, λυγμοὺς συνεχεῖς ἀποτελοῦσα· διὸ καὶ τὸν στόμαχον ἀεικίνητον ὄντα ἐμποδίζουσα κλείει, τὴν δὲ κοιλίαν πνευμάτων ἐμπίπλησι καὶ τὸν κῶλον, τοῖς δὲ κροτάφοις παλμὸν παρέχουσα καὶ τῇ κεφαλῇ βάρος καὶ τοῖς μέλεσιν ἱδρῶτας, ἔκφρονας ποιεῖ καὶ ἀσθενεῖς. Τὸ ἀκόνιτον εἶδος βοτάνης ἐστὶν, ὅπερ καλοῦσιν ἀπὸ τοῦ συμβεβηκότος πορδαλιαγχὲς διὰ τὸ ἀπόλλυσθαι ὑπ’ αὐτοῦ τὴν πόρδαλιν, ἐπειδὴ ἀντιφάρμακον ἔχει τὴν ἀνθρωπείαν κόπρον, καὶ οὐ πρότερον ἐσθίουσιν αἱ πορδάλεις, εἰ μὴ ἔχοιεν τὴν κόπρον πλησίον, ἵν’ εὐθέως προσενέγκοιντο τὴν βοήθειαν· οἱ οὖν νομεῖς τὸν ἀπόπατον ἐξάπτουσιν ἐκ δένδρων, εἶτα, ἐπειδὰν φάγωσιν αἱ πορδάλεις τὸ ἀκόνιτον καὶ ὁρμήσωσιν ἐπὶ τὴν κόπρον, ἀνασπῶσιν οἱ ποιμένες, καὶ περιαλλόμεναι τουτέστιν ἐπιπηδῶσαι ἀποθνήσκουσιν· ἱστορεῖ Ἀριστοτέλης ἐν τῷ ἐννεακαιδεκάτῳ περὶ ζώων (<bibl xml:lang="lat">H. A. IX 6, T. I, p. 612</bibl>). Πνυθείης· τὸ ἀκόνιτόν φασιν ἐκ τοῦ ἐμέτου τοῦ Κερβέρου φυῆναι· ἱστορεῖται γὰρ τὸν Κέρβερον ἐξ ᾅδου ἀνενεχθέντα μὴ δύνασθαι ὑπομεῖναι τὰς αὐγὰς τοῦ ἡλίου καὶ ἐμέσαι, καὶ ἐκ τοῦ ἐμέτου ταύτην γενέσθαι τὴν βοτάνην. Ἀχέρων δὲ ποταμὸς ἐν Ἡρακλείᾳ τῇ Ποντικῇ, ἔνθα τὸν τοῦ Ἅιδου κύνα ὁ Ἡρακλῆς ἐξήγαγε, καὶ ὁ λόφος Ἀκόνιτος λέγεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="14"> 
+<p rend="indent">Εὐβουλῆος δὲ τοῦ Ἅιδου κατ’ εὐφημισμόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="15"> 
+<p rend="indent">Ἄστυρά τε· τὰ ἄστυρα πολίσματά εἰσι, καὶ χωρίον οὕτω λεγόμενον, <pb facs="theriacaetalexip00nica_0453"/> ὁ δὲ Πριόλαος υἱὸς Λύκου βασιλέως Μαρυανδηνῶν, ὃς ἀπέθανεν ἐν Ἡρακλείᾳ τῇ Ποντικῇ, Ηρακλέους πολεμοῦντος τοῖς πλησίον, οὗ εἰς ὄνομα ὁ πατὴρ τὴν πόλιν ἐκάλεσεν ἐγγὺς οὖσαν Ἡρακλείας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="16"> 
+<p rend="indent">Ουρανόεσσαν δ’ ὑπήνην ἢ τὸ ἐπάνω τοῦ χείλους τρίχωμα, ἢ τὴν ὑπερῴαν, ἤτοι τὸν οὐρανίσκον καταχρηστικῶς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="19"> 
+<p rend="indent">Δύῃ· τῇ ταλαιπωρίᾳ δὲ τοῦ πάθους τὸ τῆς καρδίας ἄκρον ὑποδάκνεται. Ἄκρον νειαίρης· τῆς κοιλίης τῆς κατωτάτω, κατὰ τὸ ἄκρον καὶ ἄκλειστον στόμα τῆς νειαίρης γαστρὸς ἀειρόμενον τὸ φάρμακον, στόμα δὲ γαστρὸς ὁ στόμαχος, ποιητικῶς δ’ ἐξέφρασεν· ἡ δὲ κάκωσίς φησιν ἐπιτίθεται τῷ στόματι τῆς κοιλίας, ὁ δὴ διὰ παντὸς ἀνεῳργός ἐστιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="21"> 
+<p rend="indent">Τεύχεος· τοῦ στόματος τῆς κοιλίας, ἢν οἱ μὲν καρδίαν καλοῦσιν, οἱ δὲ δοχεῖον τῶν ἐντέρων τῆς βρώσεως, λέγει δὲ τὸ κῶλον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="22"> 
+<p rend="indent">Πύλη δ’ ἐπικέκλιται· ἐμπέφρακται τῶν παχέων ἐντέρων ἡ εἴσοδος· τοῦτο γάρ φησιν, ὅτι φράττεται τὰ δοχεῖα μέρη τῶν σιτίων διὰ τὴν ἀλγηδόνα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="24"> 
+<p rend="indent">Νοτέων ὑπολείβεται ἱδρώς· παρακολουθεῖ δ’ ἀεὶ τοῖς τὸ ἀκόνιτον πεπωκόσιν ἐκ τῶν βλεφάρων καὶ τῶν μελῶν ὑγρὰ ὑπόσταξις, ἡ δὲ γαστὴρ πνευματουμένη καὶ ταρασσομένη τὰ μὲν πολλὰ τῶν πνευμάτων ἄνωθεν ἐκβάλλει, τὰ δὲ λοιπὰ κάτω πέμπει, ἅτινα κατὰ τὸν ὀμφαλὸν ἱδρυνθέντα ἐμφράσσει τὴν κοιλίαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="27"> 
+<p rend="indent">Κράατι δ’ ἐν βάρος· πνευμάτωσις δὲ πολλὴ καὶ βάρος κεφαλῆς καὶ κροτάφων παλμός. Διπλόα δ’ ἀντὶ τοῦ διπλὰ ὁρᾷ, οἷα συμβαίνει τοῖς ἐσκοτωμένοις τῇ μέθῃ· οὕτω φησὶ βαρεῖται υπὸ τοῦ φαρμάκου ὁ πιὼν αὐτὸ, ὡς ἀνὴρ κραιπαλῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="30"> 
+<p rend="indent">Ἀγριόεσσαν ὀπώρην νῦν τὴν σταφυλὴν λέγει ἀντὶ τοῦ ἀγριοποιόν, ἐπειδὴ ὁ οἶος ἀγριοποιός ἐστι, καθάπερ λέγεται ἡ ἀγρία καὶ ὀρεινή Ὑποθλίψαντες δ’ ἤγουν ἐκπιέσαντες τὴν σταφυλὴν οἱ Σιληνοί, οὗτοι δ’ οὓς ἡμεῖς Σατύρους λέγομεν οἱ ἀρχαῖοι Σιληνοὺς ἐκάλουν ἀπὸ τοῦ σιλλαίνειν, ὅ ἐστι λοιδορεῖν, γράφεται δὲ διὰ τοῦ ι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="31"> 
+<p rend="indent">Κεραοῖο, ὅτι οἱ ἀρχαῖοι κέρασιν ἐχρῶντο ἐν τῇ πόσει ἀντὶ ποτηρίων, ὅθεν καὶ τὸ κεράσαι εἴρηται· ἢ διὰ τὸ ταυρωτικὸν τῶν πινόντων, τουτέστι τὴν ἀπὸ τοῦ οἴνου ἰσχὺν, ὡς κέρατα ἐχόντων, ὁ δὲ Διόνυσος καὶ ταυρόκερως λέγεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="32"> 
+<p rend="indent">Θωρηχθέντες ἀντὶ τοῦ μεθυσθέντες· καὶ Ἱπποκράτης τὴν οἰνοποσίαν θώρηξιν εἴρηκεν (<bibl xml:lang="lat">Aphor. II 21 et saepius alibi</bibl>).</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="34"> 
+<p rend="indent">Νυσαίην ἀνὰ κλιτύν· ἤγουν ἀνὰ κλιτὺν τοῦ Νυσαίου ὄρους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="35"> 
+<p rend="indent">Ὡς οἵγε σκοτόωσιν· οὕτω φησὶ καὶ οἱ βεβρωκότες τὸ ἀκόνιτον διατίθενται ἔκφρονες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="36"> 
+<p rend="indent">Τὴν μέν τε· ταύτην μέντοι τὴν βοτάνην τὸ ἀκόνιτον καὶ μυοκτόνον καλοῦσι διὰ τὸ τοὺς περιλείχοντας αὐτὴν μύας φονεύειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="37"> 
+<p rend="indent">Ὕρακας τοὺς μύας κατ’ Αἰτωλούς· λέγεται γὰρ ὗς ὁ χοῖρος καὶ ὕραξ, ὕρακας δὲ νῦν τοὺς μύας ἐκάλεσε, διότι παρεοίκασι χοίροις τὰ ῥάμφη. Λιχμήρεας δὲ τοὺς περιλείχοντας, καὶ ἀνιγροὺς τοὺς ἀνιαροὺς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="38"> 
+<p rend="indent">Πορδαλιαγχὲς λέγεται τὸ ἀκόνιτον, ἐπειδὴ τούτου αἱ πορδάλεις <pb facs="theriacaetalexip00nica_0454"/> γευσάμεναι ἀποπνίγονται, ὥσπερ οἱ ἀγχόμενοι, ἅς ἡ τοῦ ἀνθρώπου κόπρος θεραπεύει, οἱ δὲ νομεῖς καὶ οἱ βουπελάται πορδαλιαγχὲς αὐτὸ ἔθηκαν, ἐπεὶ τοῖς θηρίοις τοῖς πελώροις, τουτέστι ταῖς πορδάλεσι ταῖς μεγάλαις, πορδαλιαγχὲς πότμον αὐτὸ ἔθηκαν, βουπελάται δ’ οἱ βουκόλοι παρὰ τὸ πλησιάζειν ταῖς βουσὶ καὶ κολλᾶσθαι αὐτοῖς. Ἰστέον, ὅτι ἡ πόρδαλις, ἐὰν φάγῃ τὸ ἀκόνιτον, ἀναιρεῖται· οὐ πρότερον οὑν ἐσθίει ἐξ αὐτοῦ, εἰ μὴ ἔχει πλησίον κόπρον ἀνθρωπείαν· ταύτῃ γὰρ κέχρηται ἀντιφαρμάκῳ· οἱ οὐν νομεῖς ἐξάπτουσι τὴν κόπρον εἰς δένδρον τοσοῦτον ὕψος, ὅσον οὐ δύναται ἡ πόρδαλις πηδῶσα φθάσαι· ὁρῶσα οὐν ἡ πόρδαλις τὴν κόπρον, ἄτε δὴ θαρροῦσα ἔχειν τὸ ἀντιφάρμακον, τρώγει τὸ ἀκόνιτον, εἶτα ὁρμᾷ ἐπὶ τὸ χρήσασθαι τῷ ἀντιφαρμάκῳ, καὶ οὐκ ἐφίκεται αὐτοῦ διὰ τὸ ὕψος· οὕτως οὖν ἐφαλλομένη καὶ πηδῶσα λαβεῖν τὸ φάρμακον μὴ δυναμένη διὰ τὸ ὕψος ἀποθνήσκει ἢ ἀτονεῖ· ἄτονον γὰρ τὸ ζῷον φύσει· καὶ οὕτως αὐτὴν σφάττουσιν οἱ νομεῖς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="40"> 
+<p rend="indent">Ἴδης ἐν κνημοῖσιν· ἐν τοῖς τόποις τῆς Ἴδης· κορυφαὶ δ’ ἤγουν ἐξοχαὶ τῆς Ἲδης τέσσαρες, Φαλάκρα, Λεκτὸν, Σίγειον, Γάργαρον· Φαλάκρα δ’ ἀκρωτήριοι Ἴδης· διὸ καὶ Λυκόφρων φησίν (<bibl xml:lang="lat">vs. 24</bibl>). <quote type="blockquote">αἱ Φαλακραῖαι κόραι.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="41"> 
+<p rend="indent">Θηλυφόνον, ὅτι, ἐὰν ἅψηται μορίου θήλεος, διαφθείρει τὸ ζῶον· παντός φησι ζώου θήλεος εἰς τὴν φύσιν ἐντιθέμενον τὸ ἀκόνιτον φθορᾶς σιτίον γίνεται. Κάμμορον· κακῷ μόρῳ ἀναιροῦν. Ἐν δ’ ἀκοναίοις· ἐν τοῖς τόποις, οἷς γίνοται αἱ ἀκόναι· ταύτας δὲ τὰς ἀκόνας οἱ μὲν ἐν Ἡρακλείᾳ φασὶ γίνεσθαι, οἱ δ’ ἐν Ἑρμιόνῃ, οἱδ’ ἐν Τανάγρᾳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="42"> 
+<p rend="indent">Ὁρόγκοις δὲ τοῖς μετεώροις τόποις ἀπὸ τοῦ τοὺς ὀρεινοὺς τόπους ὄγκους ἔχειν, ἢ τοῖς τόποις τοῖς ἐξοχὰς ἔχουσιν. Ἐντεῦθεν δὲ λέγονται τὰ βοηθήματα καὶ ἀντίδοτα τοῦ ἀκονίτου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="43"> 
+<p rend="indent">Τῷ καί που τιτάνοιο· πάρεστιν ἐπὶ τὰ βοηθήματα τοῦ ποτίσματος τοῦ ἀκονίτου, καί φησι δράκα κονίας ἀσβέστου μιγνυμένην οἲνῳ βοηθήσειν τῷ πεπωκότι· τίτανος γὰρ ἡ ἄσβεστος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="44"> 
+<p rend="indent">Ὅτε νέκταρ κιρρόν· ὅτ’ οἶνον πυρρὸν ἐν τρυβλίῳ μετρηδὸν ἀντὶ τοῦ μετρήσας ἀφύσσῃς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="46"> 
+<p rend="indent">Θάμνου δ’ ἤτοι τοῦ θαμνώδους ἢ τοῦ θαμνώδη φύλλα ἔχοντος· καυλέα δὲ κλῶνας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="47"> 
+<p rend="indent">Χλοεροῦ πρασίοιο· τρία γένη εἰσὶ τοῦ πρασίου, δηλοῖ δὲ, τὸ ποῖον βούλεται λέγειν· φησὶν οὖν τὸ μελίφυλλον, ἐστὶ δὲ τοῦτο πικρὸν, οὗ τὰ φύλλα σὺν οἲνῳ ἔψησον, πληρώσας τὴν χεῖρα· ἡ ἀβροτόνου, καὶ ποτήριον πληρώσας δὸς πιεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="48"> 
+<p rend="indent">Ἀειθαλέος δ’ ὅτι ἀεὶ χλωρά ἐστιν ἡ χαμελαία καλουμένη βοτάνη· τοῦ δὲ πηγανίου εἴδη εἰσὶ δύο, ἄδηλον δὲ, ποῖον λέγει· ὅμως δὲ καὶ αὐτὸ ληφθὲν εἰς ἥμισυ βάθος χειρὸς πλήρωμα καὶ μετ’ οἴνου ἑψηθὲν ἢ μέλιτος καὶ τεσσάρων ποτηρίων ἤτοι κοτυλῶν ποθὲν ὠφελεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="50"> 
+<p rend="indent">Αἰθαλόεντα μύδρον· πεπυρακτωμένον σίδηρον, ἤτοι κεκαυμένον ἐναποσβεννύς φησιν εἰς ὕδω πῖνε. Τρύγα δὲ τὴν σκωρίαν λέγει. Πᾶν δ’ ὑγρὸν βάμμα καλεῖται, σημείωσαι, ὅτι μόνον βάμμα τὸ <pb facs="theriacaetalexip00nica_0455"/> ὂξος· εἰ δὲ μετά τινος, δηλοῖ ᾧ μέμικται. Τὴν σκωρίαν τοῦ σιδήρου τρύγα φησὶν, ἥν ἐν τῷ καμίνῳ ἡ τοῦ πυρὸς φλὸξ ἐχώρισεν ἀπὸ τοῦ σιδήρου. Χοάνοιο διχῆ· τὸ μὲν γὰρ τοῦ χωνευομένου καθαρόν ἐστι, τὸ δ’ ἀκάθαρτον· διὸ καὶ διχῆ εἶπεν· καὶ ταύτην δὲ σβέσας ἐν μέλιτι. πότισον τὸ ἀπόβαμμα αὐτῆς τὸν κάμνοντα, καὶ χρυσοῦ δ’ ἢ ἀργύρου τὸ βάμμα τοῦ ἐληλασμένου καὶ ζέοντος. Τήν τε καμίνων· ἥντινα ἔντοσθεν τῶν καμίνων τοῦ χωνευτηρίου διχῆ ἢλασεν ἡ τοῦ πυρὸς λιγνύς. Ἄλλοτε δὲ χρυσοῖο· καὶ ἀπόβαμμα δὲ χρυσοῦ ἢ ἀργύρου πινόμενον ὠφελεῖ, λιγνὺς δ’ ἐστὶ κυρίως τὸ καπνῶδες τοῦ πυρὸς, νῦν δ’ αὐτὴ ἡ φλόξ</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="55"> 
+<p rend="indent">Θρίων· θρῖα δ’ ἰδίως μὲν τὰ φύλλα τῆς συκῆς, ὥσπερ οἵναρα τὰ τῆς ἀμπέλου, νῦν δὲ τὰ τῆς χαμαιπίτυός φησιν, ἢ καὶ ονόγυρος καὶ σιδηρῖτις λέγεται καὶ ἰωνιὰ ἀγρία. Ὀνίτιδα λέγει τὸ ὀρίγανον, δύο δὲ γένη ὀριγάνων, ᾦ ἡμεῖς χρώμεθα, ὁ καὶ ἥμερον λέγεται, καὶ ὅ οἱ ὄνοι σιτοῦνται, ὅ καὶ παρείληφεν, ὅ καὶ ὀνῖτις λέγεται, ἧς λαμβάνειν κελεύει τὰ φύλλα εἰς ἥμισυ πληροῦντα τὸ βάθος τῆς χειρὸς, ἢ τοῦ πολυκνήμου, ἢ τῆς χαμαιπίτυος, καὶ μετὰ τεσσάρων κοτυλῶν οἴνου ποτίζειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="57"> 
+<p rend="indent">Ῥάδιξ ἡ ῥάβδος· πολύκνημον δ’ ἐστὶν οὕτω τι βοτάνιον παρὰ τοῖς ῥιζοτομικοῖς λεγόμενον, δύο δ’ αὐτοῦ διαφορὰς εἶναί φασιν οἱ τὰ ῥιζοτομικὰ γράψαντες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="59"> 
+<p rend="indent">Μυελόεντα· τὴν ἐκ τῆς ἑψήσεως σύντηξιν τῶν ὀρνιθείων σαρκῶν, ἢ τὸν ὡς μυελὸν γενόμενον ἐκ τῆς ἑψήσεως· κελεύει δὲ τὴν κατοικίδα ὄρνιν ἕψεσθαι, ἕως ἂν τακῇ αὐτῆς τὰ κρέα καὶ γένηται ὡς χυλὸς, καὶ τότε προσφέρεσθαι τὸν ζωμόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="62"> 
+<p rend="indent">Καί τε βοός· καὶ μοσχαρίου κρέατα ἑψήσας περισφριγῶντος καὶ περιπλήθοντος τῷ λίπει πλήρωσον τὸ ποτὸν τοῦ ζωμοῦ· καθ’ ὑπερβολὴν γὰρ ὁ τοιοῦτος ζωμὸς ὠφελεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="64"> 
+<p rend="indent">Βλασάμοιο· βαλσάμου φησὶ τὸν ὀπὸν δεῖ πίνειν μετὰ γάλακτος γυναικείου ἢ μεθ’ ὕδατος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="65"> 
+<p rend="indent">Θηλυτέρης πώλοιο· πρωτοτόκου γυναικός οὐ γὰρ ἵππου πάντως φησίν· ὅτι δὲ χρήσιμον τὸ γυναικεῖον γάλα, καὶ Ἑρασίστρατος μαρτυρεῖ ἐν τῷ περὶ θανασίμων. Τὸ δ’ ἑξῆς· ἐν ταῖς σταγόσι τοῦ βαλσάμου ποτὸν χέας γάλακτος θηλυτέρας πώλου, ἤτοι τῆς ἀνθρώπου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="66"> 
+<p rend="indent">Χεύῃ· προεμέσῃ, πιὼν τούτων ἑκάτερον, προσφερόμενον χρησίμως οὐχ ἁπλῶς, ἀλλὰ μετὰ τὸ ἐμέσαι. Παναεργέα δ ἀργὸν, ἀνέψητον, ἀδιέργαστον, ἀδιάπεπτον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="67"> 
+<p rend="indent">Δερκευνέος δὲ τοῦ ὁρῶντος ἐν τῷ κοιμᾶσθαι· τοῦ δερκευνέος φησὶ σκίνακος, ὅ ἐστι τοῦ σκιρτητικοῦ λαγωοῦ, τοῦ ἐν τῷ κοιμᾶσθαι βλέποντος, καθάπερ ὁ λέων καὶ ὁ ὄφις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="69"> 
+<p rend="indent">Ἄλλοτε καὶ μορέης· καὶ συκαμίνου προστάσσει τὰς ῥίζας λαμβάνειν καὶ ἐν ὅλμῳ ξυλίνῳ κόπτειν ὁμοῦ, καὶ ἕψειν μετ’ οἴνου καὶ διδόναι πιεῖν μετὰ μέλιτος· λέγει δ’ οὐχ ἀπλῶς τὰς ῥίζας τῆς συκαμίνου. ἀλλὰ τὸν φλοιὸν τῆς ῥίζης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="74"> 
+<p rend="indent">Τοῦ ψιμμυθίου φαρμάκου ἢ χροιὰ λιπαρῷ γάλακτι ἔοικεν ἀμελχθέντι νεωστὶ ἐν κισσυβίῳ καὶ ἔτι ἀφρίζοντι. <pb facs="theriacaetalexip00nica_0456"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="77"> 
+<p rend="indent">Πελλίσι δὲ σκαφίσι, ποιμενικοῖς ἀγγείοις, ἐν οἷς τὸ γάλα ἀμέλγεται. Ὅμηρος (<bibl xml:lang="mul">Il. π 642</bibl>) <quote type="blockquote">περιγλαγέας κατὰ πέλλας.</quote> Γρώνῃσι δὲ κοίλαις καὶ βαθείαις καὶ δεκτικαῖς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="78"> 
+<p rend="indent" >ούτου φησὶ, τοῦ λαμβάνοντος τὸ δηλητήριον τοῦ ψιμμυθίου, τὰ ἔνδον τῶν σιαγόνων καὶ ὅπου τὰ οὖλα ῥυσσαίνεται ὁ ἀφρὸς τοῦ ψιμμυθίου ἐπιστύφων ἐμπελάζει. Ἂλλως· οὐ τὰς ἐκτὸς λέγει, ἀλλὰ τὰς ἐντὸς, ὅπου οἱ ὀδόντες εἰσίν· διὸ καὶ ῥᾳδίως ῥυτιδοῦνται ὑπὸ τοῦ ψιμμυθίου ψυχόμεναι, ὡς ξηρανθεῖσαι· ὁ γὰρ ἀφρὸς αὐτοῦ ὡς λεπτομερὴς περικαθίζει τοῖς οὔλοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="79"> 
+<p rend="indent">Ἀμφὶ δ’ ὁλκός· περιφραστικῶς τὸ μῆκος καὶ ἡ παράτασις τῆς γλώσσης ἡ μὲν γλῶσσά φησι τραχύνεται, ὁ δὲ νέατος ἰσθμὸς, τουτέστιν ὁ ἔσχατος, ἤγουν τὰ παρίσθμια, ἅ λέγεται ἐγγὺς εἶναι τοῦ φάρυγγος, ὑποξηραίνεται ἢ τραχύνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="81"> 
+<p rend="indent">Ξηρὰ δέ· βήσσων διὰ χέλυος, τουτέστι τοῦ στήθους, τὴν ἀναφορὰν τῶν ἐρυγμάτων ποιεῖται ἄπαυστον· καὶ Ἱπποκράτης· <q>ἀναχελύσσεται καὶ ἐρυγγάνει θαμινὰ πνεύματα·</q> καὶ τῆς κιθάρας τὸ στῆθος χέλυς λέγεται. Χελλύσσεται· τὸ στῆθος πάσχει. Ἂλλως· χελλύσσεται, τουτέστι διὰ τὴν χέλυν τὴν ἀναφορὰν ποιεῖται βήσσων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="82"> 
+<p rend="indent">Ἀβλεμὲς δ’ ἀντὶ τοῦ ἀδρανὲς, ὡς ἀπὸ τοῦ βλεμαίνω</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="84"> 
+<p rend="indent">Ἄλην ἑτερειδέα· πλάνην ἀλλοειδῆ βλέπει, ἐνεργημάτων μὴ ὑποκειμένων φησὶν ὁρατικὴν φαντασίαν γίνεσθαι, δοκεῖ δὲ τοῖς ὀφθαλμοῖς ὁρᾷν φανταζόμενος μὴ ὑποκειμένων ἐνεργείᾳ τινῶν πραγμάτων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="85"> 
+<p rend="indent">Ὑπναλέος· ἄλλοτε δ’ ὥσπερ κοιμώμενος ἀποψύχεται τὸ σῶμα καὶ ψυχροῦται ὅλος καταβαρούμενος ὕπνῳ, τῷ καμάτῳ δ’ εἴκων ὑποδάμναται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="87"> 
+<p rend="indent">Πρημαδίης· πρημαδίη καὶ ὀρχὰς καὶ μυρτίνη εἴδη ἐλαιῶν εἰσιν, οὐδὲν δὲ διαφέρει ἐκ τούτων λαμβάνειν τὸ ἔλαιον, ἢ ἐξ ὁποίας ποτέ· οἱ γοῦν περὶ τούτων πεπραγματευμένοι ψιλῶς ἀντὶ τοῦ φανερῶς παραγγέλλουσιν. Εἶαρ ὑπὸ τῶν νεωτέρων τὸ αἷμα, τὸ λίπος· καὶ Καλλίμαχος ἐλαίας τὸ αἶμα τὸ δαῦον εἶπεν· <quote type="blockquote">πολλάκι δ’ ἐκ λύχνου πῖον ἔλειξαν ἔαρ.</quote> καὶ ἡ μυρτίνη ἥδ’ ἐλαία ἐστὶ βραχὺν ἔχουσα καρπόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="91"> 
+<p rend="indent">Γρῆυν· τὸ πεπηγότα ἀφρὸν τοῦ γάλακτος ἀπγράισον, ἤτοι τὸ πεπηγὸς τοῦ γάλακτος ἀπογράισον, γραῦς δ’ ὁ ἐπὶ τοῦ γάλακτος γινόμενος πάγος, ἐπειδὴ ῥυτιδοῦται, ὥσπερ ταῖς γραυσὶ τὸ σῶμα συμβαίνει ῥυτιδοῦσθαι· τὸ ἐπιπολάζον τῷ γάλακτι, ὅ οἱ Σικελοὶ σῦφαρ καλοῦσιν, ἀφελοῦ, καὶ οὕτω τὸ γάλα δὸς πιεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="93"> 
+<p rend="indent">Χυλῷ ἐνὶ κλώθοντι· τῷ ὡς νῆμα κλωθομένῳ χυλῷ τῆς μαλάχης μετ’ οἴνου κόρεσον τὸν κακηπελέοντα, ἤτοι τὸν κακῶς ἔχοντα ἡ πάσχοντα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="95"> 
+<p rend="indent">Κελεύει κονίαν ἀπὸ τῶν κλημάτων πλύναντα καλαμίνῳ καλάθω διυλίζειν, καὶ μεθ’ ὕδατος θερμάναντα διδόναι πίνειν· δοκεῖ <pb facs="theriacaetalexip00nica_0457"/> γὰρ ἡ κονία ἤγουν ἡ τέφρα ἤτοι στακτὴ ἀπορρύπτειν ἀπὸ τῶν σωμάτων πᾶν τὸ περιπλασσόμενον τοῦ ψιμμυθίου τοῖς σπλάγχνοις· ῥύμμα δὲ τὸ σμῆγμα, τὸ κάθισμα, τὸν ῥύπον· φησὶ δὲ πλύνεσθαι τὴν τέφραν τὴν κληματίνην καὶ διηθεῖσθαι ἐν τοῖς κόλποις τοῦ νεοπλεκοῦς καλάθου διὰ τὴν ἰλύν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="99"> 
+<p rend="indent">Σκλήρ’ ἀπὸ περσείης· γράφεται καὶ ξήρ’ ἀπὸ περσείης· ἐν τοῖς τῶν περσεῶν λέπεσιν· οἱ πολλοὶ ὀστέον καλοῦσιν· ἐστὶ δ’ ὅμοιον καρύῳ· Θεόφραστος οὖν ἐν τῷ τετάρτῳ τῶν φυτικῶν (<bibl xml:lang="lat">II. P. IV, 2, § 5</bibl>) κάρυον αὐτὸ προσηγόρευσε, κάρυα δὲ λέγονται ὅλα τὰ ξυλῶδες λέπος ἔχοντα. Περσείης δ′ εἶπε τὸ ἀρχαῖον ἀπὸ τοῦ Θεοδοσιακοῦ Νικάνδρου μεταγεγραμμένον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="101"> 
+<p rend="indent">Τῶν ἄλλων ἱστορούντων τὴν περσείαν καταφυτεῦσαι τὸν Περσέα ἐν Αἰγύπτῳ ὡς καὶ Καλλίμαχος· <quote type="blockquote"><lb/>καὶ τριτάτη Περσῆος ἐπώνυμος, ἧς ὀρόδαμνον <lb/>Αἰγύπτῳ κατέπηξεν·</quote> ὁ Νίκανδρός φησιν ἐν Μυκήναις καταφυτευθῆναι. Γονόεντα Μεδούσης· ἐπειδὴ ὁ αὐχὴν τῆς Μεδούσης Γοργόνος ἀποτμηθεὶς ἐγέννησε τὸν Χρυσάορα καὶ τὸν Πήγασον ἵππον, ὡς Ἡσίοδος (<bibl xml:lang="mul">Θεογ. 280 et 281</bibl>)· ἐκ γὰρ τοῦ αἵματος αὐτῆς οὗτοι ἐγένοντο.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="103"> 
+<p rend="indent">Μύκης κυρίως τὸ ἄκρον τοῦ ξίφους, τὸ κατακλεῖον τὴν θήκην Ἂλλως· ἀπὸ τοῦ μύκητος τοῦ ξίφους φησὶ πεσόντος ὠνομάσθαι τὰς Μυκήνας, τινὲς δ’ ἀφ’ ἡρωίδος Νύμφης, ἧς μέμνηται καὶ Ὅμηρος (<bibl xml:lang="mul">Od. β 120</bibl>)· <quote type="blockquote">Τυρώ τ’ Ἀλκμήνη τε ἐυστέφανός τε Μυκήνη·</quote> Λάγγεια δὲ κρήνη τοῦ Ἄργους. Διὸς παιδὶ τῷ Περσεῖ· ζητῶν δὲ τὴν λαβὴν τοῦ ξίφους περιέτυχε τῇ πηγῇ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="106"> 
+<p rend="indent">Ἀκοσταῖς, πεφρυγμέναις κριθαῖς, βούλεται δὲ τὴν ἐκ κριθῆς πτισάνην λέγειν· ἀκοσταῖς οὐν ταῖς κριθαῖς παρὰ τὸ ἄκος ποιεῖν τοῖς νοσοῦσι πινομέναις, ὅθεν καὶ τὸ ἀκοστήσας, οἷον κριθιάσας, ἡ ἴαμα τῆς στάσεως εὑρών.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="107"> 
+<p rend="indent">Γερραίης δὲ τῆς Ἀραβικῆς· Γέρρα γὰρ πόλις τῆς Ἀραβίας. Λιβάνοιο χύσιν, ἐπεὶ περίκειται τοῖς κλάδοις τὸ δάκρυον τῆς λιβάνου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="108"> 
+<p rend="indent">Καρύης δ’ οἱ μὲν τῆς καθ’ ἡμᾶς λεγομένης, οἱ δ’ ἄλλου τινὸς δένδρου ξυλολεπῆ φέροντος καρπόν· κάρυον δ’ ὁμωνύμως λέγεται καὶ τὸ δένδρον καὶ ὁ καρπὸς, ὥσπερ ἐλαία τό τε κότινον καὶ τὸ ἐσθιόμενον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="109"> 
+<p rend="indent">Πτελέης· ἀπὸ κοινοῦ τὸ δάκρυον· ὀσχοφόροι δὲ λέγονται Ἀθήνησι παῖδες ἀμφιθαλεῖς ἁμιλλώμενοι κατὰ φυλὰς, οἳ λαμβάνοντες κλήματα ἀμπέλου ἐκ τοῦ ἱεροῦ τοῦ Διονύσου ἔτρεχον εἰς τὸ τῆς Σκιράδος Ἀθηνᾶς ἱερὸν, νῦν δ’ ὁ Νίκανδρος ὄσχας λέγει τὰ τῆς πτελέας κλήματα. Ὂσχαι κυρίως οἱ κλάδοι τῆς ἀμπέλου, νῦν δὲ καταχρηστικῶς καὶ ἐπὶ τῆς πτελέας εἶπε τοὺς κλάδους ὄσχας. Κόμμι δὲ τὸ κομμίδιον· οὕτω γάρ ἐστιν ἡ σύστασις αὐτοῦ, ὡς κόμμεως.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="111"> 
+<p rend="indent">Ὁ νοῦς οὗτος· ὅπως φησὶ τὰ μὲν ἐμέσῃ, τὰ δὲ πέψη, ἐκλυθεὶς <pb facs="theriacaetalexip00nica_0458"/> ἐν ἑψητοῖς ὕδασι, τουτέστι λουτροῖς· ὅτε γὰρ ὑγρανεῖ τὸ σῶμα ὁ ἱδρὼς, τουτέστι μετὰ τὸ ἱδρῶσαι αὐτὸν εἰς τὸ προμάλακτον, ἵνα εὐθέως ἐμβαίνῃ εἰς τὴν ἔμβασιν, καὶ χρονίσῃ, μέχρις ὅτου ἐκλυθῇ καὶ διαπέψῃ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="115"> 
+<p rend="indent">Κανθαρίδος· κανθαρίδες εἰσὶ τὰ κοπροφόρα καὶ σιτοφθόρα ζῶα οἱ λεγόμενοι κάνθαροι, ὧν ἡ μὲν ὀσμὴ ὁμοία ἐστὶ πίσσῃ χυτῇ, ὅ ἐστι τῷ ὑγροπίσσῳ, ἡ δὲ γεῦσις κεδρίσιν· μηδαμῶς οὖν φησιν ἐκεῖνο τὸ ποτὸν δέξαιο· τὰ ψήγματα δὲ τῆς κέδρου κεδρία λέγει κάρφη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="119"> 
+<p rend="indent">Ἀντὶ τοῦ ποτὲ μὲν δηγμὸν ποιοῦσιν ἐπὶ τῷ διύγρῳ ποτῷ ποθέντι τῷ χείλει, ποτὲ δὲ περὶ τὰ νείατα καὶ ἔσχατα τῆς γαστρὸς, τουτέστι περὶ τὸ στόμα αὐτῆς, ἤγουν περὶ τὸν στόμαχον· οἱ μὲν οὖν στόμαχον, ἄλλοι δὲ πύλην, ἄλλοι δὲ δοχεῖον βρωμάτων τὴν γαστέρα ὀνομάζουσιν· ἐκ δὲ τοῦ στόμια κατὰ συγκοπὴν γίνεται στόμα, ὡς μηρία μηρά.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="123"> 
+<p rend="indent">Χόνδρος· τοῦ στομάχου ἔντερον, ὅθεν καὶ ὑποχόνδριά φαμεν, ἢ μέρος τοῦ θώρακος, μεθ’ ὁ τὰ ὑποχόνδρια· ἀπὸ κοινοῦ δὲ τὸ δάκνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="124"> 
+<p rend="indent">Ἄλη δέ φιν· τό φιν παρέλκει· περιφραστικῶς δ’ ἤθεα φωτὸς ἀντὶ τοῦ τὸν φῶτα, ὅ ἐστι τὸν ἄνδρα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="126"> 
+<p rend="indent">Οἷά τε δὴ γήρεια· οὕτω φέρεται αὐτῶν ἡ γνώμη, ὡς ἀκάνθης ἄνθος· γήρεια δὲ τὰ ἄνθη τὰ λευκὰ καὶ πολιοειδῆ, πάππος δ’ ὁ καυλὸς αὐτῶν, ἐξ οὑ θρύπτονται καὶ πίπτουσιν, ἢ αὐτὴ ἡ σύστασις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="128"> 
+<p rend="indent">Τούτῳ δέ φησι τῷ φαρμασσομένῳ σὺ τὸν γλήχωνα ταῖς ποταμίαις νύμφαις τεύξας κυκεῶνα (τουτέστι γλήχωνα μεθ’ ὕδατος· ἐμπληδήν δ’ ἀντὶ τοῦ πληρώσας) πόροις, ὅ ἐστι δίδου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="130"> 
+<p rend="indent">Νηστείρης Δηοῦς· ἰστέον, ὅτι τῆς Κόρης, ἤγουν τῆς Περσεφόνης, ἁρπαγείσης ὑπὸ τοῦ Πλούτωνος ἡ μήτηρ αὐτῆς ἡ Δηὼ περιήρχετο νῆστις ζητοῦσα αὐτήν, ὑπεδέχθη δ’ ἐν τοῖς οἴκοις τοῦ Ἱπποθόωντος, ὃς ἦν υἱὸς τοῦ Ποσειδώνος ἐξ Ἀλόπης τῆς Κερκυόνος, ὑπὸ τῆς γυναικὸς αὐτοῦ Μετανείρας, ἥτις Μετάνειρα παρέθηκεν αὐτῇ τράπεζαν καὶ ἐκέρασεν αὐτῇ οἶνον ἐπὶ τῇ θλίψει, ἡ δὲ θεὸς οὐκ ἐδέξατο, λέγουσα μὴ θεμιτὸν εἶναι πιεῖν αὐτῇ οἶνον ἐπὶ τῇ θλίψει τῆς θυγατρὸς, ἀλφίτων δ’ αὐτὴν κυκεῶνα ἐκέλευσε κατασκευάσαι, ὃν δεξαμένη ἔπιεν· Ἰάμβη δέ τις δούλη τῆς Μετανείρας ἀθυμοῦσαν τὴν θεὸν ὁρῶσα γελοιώδεις λόγους καὶ σκώμματά τινα πρὸς τὸ γελάσαι τὴν θεὸν ἔλεγεν· ἦσαν δὲ τὰ ῥηθέντα ὑπ’ αὐτῆς ἰαμβικῷ μέτρῳ ῥυθμισθέντα, ὅπερ αὐτὴ πρῶτον εἶπεν, ἐξ ἧς καὶ τὴν προσηγορίαν ἔλαβον ἴαμβοι λέγεσθαι· Ἰάμβη δὲ θυγάτηρ Ἠχοῦς καὶ Πανὸς, Θρᾷσσα δὲ τὸ γένος. Μορόεν δὲ ποτόν, τὸ ἐν κακοπαθείᾳ δοθέν· ὅτι δὲ διὰ γλήχωνος ἔπιεν ἡ Δημήτηρ τὸν κυκεῶνα καὶ διὰ τὴν χλεύην τῆς Ἰάμβης ἐγέλασεν ἡ θεὰ, ἐν τοῖς εἰς Ὅμηρον ἀναφερομένοις ὕμνοις λέγεται (<bibl xml:lang="lat">Hymm. in Cer. 192 sqq.</bibl>). <pb facs="theriacaetalexip00nica_0459"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="132"> 
+<p rend="indent">Ἀθύροισιν· υπὸ τοῖς παγνιώδεσι λόγοις τῆς Θρᾳκικῆς Ἰάμβης, καὶ τὰ ἑξῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="134"> 
+<p rend="indent">Ἐυτροχάλοιο δὲ λίνου· τουτέστι τὴν κεφαλὴν ἑψηθεῖσαν σπέρματι λίνου ἤτοι τῷ λινοσπέρμῳ καλουμένῳ· γράφεται καὶ εὐτροχάλοιο λίνοιο. Μορόεν ἢ τὸ μετὰ πόνου γινόμενον καὶ ἑψόμενον, ἢ μορίδιον ἀντὶ τοῦ αἲσιμον, ὅ ἄν τις ἐπὶ τοῦ συμφέροντος ἐκδέξαιτο, ἢ τὸ ἁρμόζον τῷ πάθει. Ὅμηρος (<bibl xml:lang="mul">Od. η 227 et ν 48</bibl>)· <quote type="blockquote">ἐπεὶ κατὰ μοῖραν ἔειπεν.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="135"> 
+<p rend="indent">Χιμαίρας, αἰγάγρου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="137"> 
+<p rend="indent">Εἰς δ’ ἔμετον· ἀντὶ τοῦ ἕως ἐμἐσῃς κορέσθητι, τὰ δὲ φάρμακα ἀθρόα κάτωθεν ἀναβάλλοις ἐμματέων, τοὺς δακτύλους καθιεὶς διὰ τοῦ στόματος εἰς τὴν φάρυγγα· ἐμμάττειν γάρ ἐστι τὸ καθιέναι τοὺς δακτύλους εἰς κοῖλον τόπον. Ὅμηρος (<bibl xml:lang="mul">Il. υ 425</bibl>)· <quote type="blockquote">ἐγγὺς ἀνὴρ, ὅς ἐμόν γε μάλιστ’ ἐπεμάσσατο θυμόν,</quote> τουτέστι καθήψατο τῆς ψυχῆς, καὶ οἷον ἐνέβαλλεν εἰς αὐτὴν χεῖρα. Ἄλλως· ἐμματεῖν ἐστι τὸ εἴς τι καθιέναι καὶ ἅπτεσθαί τινων· βούλεται ουν δηλοῦν τὸ καθιέντα τοὺς δακτύλους ἐμεῖν βιάζεσθαι, ἔτι τοῦ ληφθέντος ἐν τῇ κοιλίᾳ παρακειμένου καὶ μήπω διὰ τῆς πύλης ὡρμηκότος πρὸς ἀνάδοσιν· τότε γὰρ μετ’ αὐτῆς τῆς τροφῆς συνανενεχθήσεται καὶ τὸ φάρμακον. Μεμιασμένα δὲ δόρπα ἀντὶ τοῦ ἄπεπτα καὶ ῥυπαρά· καὶ μεμιασμένα τὰ δόρπα τοῖς ἰοβόλοις φαρμάκοις ἐν τῇ πύλῃ τῆς γαστρὸς ἀναβάλλοις, καθιεὶς τοὺς δακτύλους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="139"> 
+<p rend="indent">Νεωστὶ ἀμελχθὲν γάλα βαλὼν ἐν ἐργαλείῳ δὸς ἔνεμά φησι διὰ τῆς ἔδρας, ὅπως ὑπάρδῃς τὴν γαστέρα· ἀφόρδια γὰρ τὰ ἀφοδεύματα, οἱονεὶ τὰ ἄποθεν τῆς ὀδοῦ, ὥσπερ καὶ ἀποπατήματα τὰ ἄποθεν τοῦ πάτου, ἤγουν τῆς ὀδοῦ. Ὅμηρος (<bibl xml:lang="mul">Il. ζ 202</bibl>)· <quote type="blockquote">πάτον ἀνθρώπων ἀλεείνων.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="142"> 
+<p rend="indent">Κόψαι κελεύει κλήματα ἀμπέλου χλωρὰ σὺν τοῖς φύλλοις καὶ ἐν γλεύκει ἢ μέλιτι ἑψήσαντα δοῦναι πιεῖν· τοῦτο γὰρ παραδεκτέον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="145"> 
+<p rend="indent">Ψαφαρῆς δὲ ῥίζια γαίης· τῆς πετρώδους καὶ ὀρεινῆς γῆς· ἐν τοιαύτῃ γὰρ γῇ ἡ βοτάνη γίνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="146"> 
+<p rend="indent">Διὰ παντὸς τραχύτητα ἔχοντα. Ὕψι τέθηλε, τουτέστι τοῖς κλωσὶν ὑψηλήν· τὴν τοιαύτην γοῦν βοτάνην ἤγουν τὸ σκορπίουρον δὸς τῷ πεφαρμαγμένῳ ἑψηθεῖσαν μετὰ μέλιτος πιεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="147"> 
+<p rend="indent">Η μολόθουρος βοτάνη ἐστὶν, ἀειθαλὴς δέ· διὸ καὶ Εὐφορίων φησίν· <quote type="blockquote">πτῶκες ἀειχλωροῖσιν ἰαύεσκον μολοθούροις.</quote> Ἔνισχνα δὲ καύλεα ἀντὶ τοῦ ἰσχνὰ καὶ καλαμώδη καὶ λεπτὰ καυλεῖα ποιεῖ· τὰ γὰρ εἰς ὕψος ἀνατρέχοντα φυτὰ λεπτὰ καυλεῖα ποιοῦσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="149"> 
+<p rend="indent">Παρθενία οὐκ αὐτὴ ὅλη ἡ Σάμος, ἀλλά τις ἐν αὐτῇ εὑρεθεῖσα γῇ. Φυλλὶς δὲ τὸ καλούμενον γεωφάνιον ἐν Σαμοθράκῃ καὶ Μελίφυλλον ἐκαλεῖτο, Νίκανδρος δὲ φυλλίδα καλεῖ· κελεύει οὐν τέσσαρας δραχμὰς Σαμίας λαμβάνειν. Παρθενία γὰρ ἡ Σάμος ἐκαλεῖτο <pb facs="theriacaetalexip00nica_0460"/> καὶ φυλλὶς μία τῶν Νυμφῶν. Τὸν Σάμιον ἀστέρα λέγει, ὃν δοκεῖ κριὸς ἐν Σάμῳ εὑρηκέναι· Φυλλὶς γὰρ ἡ Σάμος· ἢ φυλλάδα τὴν βοτάνην ἰδίως καλεῖ, ἥν τιυες μελιτόφυλλόν φασιν, ἧς τὸ χρήσιμον ἀστὴρ λέγεται· ἢ Φυλλὰς οὖν ἡ Μελάμφυλλός ἐστιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="150"> 
+<p rend="indent">Ἰμβρασίδος· τῆς Σαμιακῆς, (Ἴμβρασος γὰρ ποταμὸς ἐν Σάμῳ) ἥν κριὸς λέγεται εὑρηκέναι, ταύτης δὲ τὸ χρησιμώτερον ἀστὴρ καλεῖται, ἐξ ἧς βούλεται ἡμᾶς ὁ Νίκανδρος λαμβάνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="151"> 
+<p rend="indent">Ἀμνός ἐστιν ὁ μηδέπω κέρατα ἔχων· πῶς οὖν οὗτος κεράστην εἶπεν αὐτὸν οὐκ ὀρθῶς; Χησιεῖς δὲ πρῶτον ὤκησαν ἐν Σάμῳ, εἶτα Ἀστυπαλαεῖς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="153"> 
+<p rend="indent">Διπλήρεα· διπλῆν κελεύει πόσιν τῶν τεσσάρων δραχμῶν δοῦναι, ὅ ἐστιν ὀκτὼ δραχμῶν, καὶ σὺν τῷ ἑψήματι πηγανίου κλῶνας διδόναι, καὶ ῥόδινον μύρον ἢ ἴρινον μύρον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="155"> 
+<p rend="indent">Ὀργάζων δ’ ἀντὶ τοῦ μιγνύων τὴν γῆν τὴν Παρθενίαν, ἢ καταβρέχων ἐλαίῳ ῥοδίνῳ. Ἄλλως. τῷ ἀπ’ ἲριδος γινομένῳ μύρῳ, ἤγουν ἐλαίῳ, τουτέστι τὸ ῥόδινον ἔλαιον μίξας ἄλειψον μετὰ πηγάνου κλάδων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="157"> 
+<p rend="indent">Πάσηται· ὡς πρὸς δεύτερων πρόσωπον ἀποτείνεται περὶ τρίτου τινὸς, περὶ τοῦ ἀγρίου δὲ κορίου τῆς βοτάνης λέγει· εἴδη γὰρ ταύτης εἰσὶ δύο, ἥμερόν τε καὶ ἄγριον, ὧν τὸ μὲν ἥμερον εὐῶδές ἐστι καὶ ἡδὺ, τὸ δ’ ἄγριον παραπλήσιον τῷ ἡμέρῳ, πλατυφυλλότερον δὲ καὶ εὐμηκέστερον καὶ πολλὰς ἔχον παραφυάδας καὶ πολύρριζον καὶ πολυανθὲς, τοῦτο δὲ βρωθὲν ἢ ποθὲν ἢ ἄλλως πως προσενεχθὲν θανάσιμον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="158"> 
+<p rend="indent">Ἀφραδέως δ’ εἶπεν, ὅ ἐστιν ἀφρόνως καὶ ἀπείρως· τὸ γὰρ χύλισμα τοῦ κορίου τῆς γεύσεως ἀλλότριον ὑπάρχον οὐ δύναται λαθεῖν διδόμενον, εἰ μή τις αὐθαιρέτως αὐτὸ βουληθείη λαβεῖν ἐν καιρῷ περιστάσεως.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="160"> 
+<p rend="indent">Λαβράζουσι· ἐν τῷ δήμῳ λάβρως φωνοῦσιν· καὶ Ὅμηρος (<bibl xml:lang="mul">Il. ψ 474</bibl>)· <quote type="blockquote">τί πάρος λαβρεύεαι;</quote> καὶ Αἰσχύλος (<bibl xml:lang="lat">Prometh. 327</bibl>)· <quote type="blockquote">μὴ λαβροστόμει.</quote> Παραπλῆγες δ’ ἀντὶ παράφρονες, τὸ δ’ ἑξῆς παραπληγέες τῷ οἴστρῳ, ὁ δ’ οἶστρος ζῶόν τί ἐστι παραπλήσιον μεγίστῃ μυίᾳ, κέντρον ἔχον ἐπίμηκες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="161"> 
+<p rend="indent">Ὀξὺ δὲ μέλος τὸ διατεταμένον καὶ μέγα. Ἀταρμύκτῳ ἀφόβῳ, ἀπὸ δὲ τοῦ τάρβους καὶ τοῦ μύειν συντέθειται ἡ λέξις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="163"> 
+<p rend="indent">Πράμνιος δ’ οἶνος ἀπ’ ἀμπέλου πραμνίας, ἣν καὶ ψιθίαν τινὲς καλοῦσιν. Αὐτοκρηὲς δ’ ἀντὶ τοῦ αὐτοκέραστον, ἀμιγὲς, ἄκρατον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="164"> 
+<p rend="indent">Ἀντὶ τοῦ πεπληρωμένον τοῦ θαλασσίου ὕδατος τὸ τρυβλίον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="165"> 
+<p rend="indent">Γράφεται καὶ ἀλαλὴν, ἤτοι ὅτι ἐστέρηται τοῦ λαλεῖν, ἢ ὅτι <pb facs="theriacaetalexip00nica_0461"/> χωρὶς στεναγμοῦ τίκτει. Ορταλίχων νῦν τὰς ὄρνιθας λέγει· οὐ γὰρ τὰ νήπια ὠοτοκεῖ, ἀλλὰ τὰ τέλεια, κελεύει δὲ τὸ ὠὸν κενῶσαι, καὶ ἀφρὸν θαλάσσης συμμιγνύντα κεράσαι, ὅστις ἀφρὸς τροφὴ τοῦ κέπφου ὢν καὶ θανάτου αὐτῷ παραίτιος γίνεται· οἱ γὰρ ἁλιεῖς χερσὶ τὸ θαλάσσιον ὕδωρ ἀνακλύζοντες ἀφρὸν προσενεγκεῖν καταναγκάζουσι, καὶ τοῦτον δολίως τῷ κέπφῳ προτείνουσιν, ὁ δὲ τὸν ἀφρὸν λαβεῖν ἐφιέμενος εἰς τὰς χεῖρας αὐτῶν ἔρχεται καὶ οὕτω θηρεύεται· ὁ δὲ κέπφος θαλάσσιόν ἐστιν ὄρνεον παραπλήσιον λάρῳ, ὅπερ ὡς εἴρηται ὑπὸ τῶν ἁλιέων ἁλίσκεται· χραινόντων γὰρ καὶ ποιούντων ἀφρὸν προσέρχεται τῷ ἀφρῷ, καὶ οὕτως ἁλίσκεται. Ἁπαλὴν δ’ ὠδῖνα τὴν στερουμένην βίας, ἐπεὶ τίκτουσιν ἄνευ ἀλγηδόνος</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="171"> 
+<p rend="indent">Ἀγλεύκην· ἀγλυκῆ καὶ πικρὰν καὶ ἐστερημένην γλεύκης, ὅ ἐστι γλυκύτητος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="172"> 
+<p rend="indent">Ἀτμεύειν δὲ δουλεύειν, ὑποκεῖσθαι· ἀτμένες γὰρ οἱ δοῦλοι ὅτι δὲ δουλεύει ἡ θάλασσα καὶ τὸ πῦρ ἀνέμοις, κατὰ θεῖον νόμον δηλονότι, τοῦτο δὲ καὶ Ἡράκλειτος καὶ Μενεκράτης εἴρηκεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="174"> 
+<p rend="indent">Ἀργεστὰς, οἱονεὶ τοὺς ἀνέμους. Ἀχύνετον δὲ τὸ πολύχυτον· τὸ γὰρ α ἐπιτατικόν ἐστιν· ἐκτίθεσθαι οὖν βούλεται διὰ τούτων καὶ Ἡράκλειτος, ὅτι πάντα ἐναντία ἀλλήλοις ἐστὶ κατ’ αὐτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="175"> 
+<p rend="indent">Ἀκοσμήεσσα ἡ ἀκόσμιος, ἡ ἄτακτος, ἡ μὴ κοσμίως κινουμένη. Φιλοργὸς δὲ διὰ τὸ ῥοῶδες, ἡ φιλοῦσα ὀργίζεσθαι καὶ ὀργᾷν καὶ μαίνεσθαι διὰ τὰς τρικυμίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="176"> 
+<p rend="indent">Δεσπόζει νηῶν· τῇ γὰρ θαλάσσῃ ὑπόκεινται τὰ πλοῖα, τῷ δὲ πυρὶ ἡ ὕλη. Ἐμφθορέων δ’ αἰζηῶν, τῶν ἐν θαλάσσῃ φθειρομένων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="177"> 
+<p rend="indent">Ἡ δ’ ὕλη ὑπακούει καὶ πείθεται κατὰ τὸν θεσμὸν τοῦ ἐχθομένου πυρὸς, οὐ καθόλου δὲ τὸ πῦρ ἐχθόμενον λέγει, ἀλλὰ τῇ ὕλῃ ἐχθόμενον διὰ τὸ ἀφανίζεσθαι αὐτὴν ὑπ’ αὐτοῦ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="178"> 
+<p rend="indent">Ἀτμένιον· πολυδούλευτον καὶ πολυκατέργαστον ἤτοι τὸ μετὰ πολλοῦ καμάτου γενόμενον διὰ τὴν τοῦ ἐλαίου σκευασίαν, ἢ ὃ οἱ δοῦλοι καὶ οἱ γεωργοὶ κατεσκεύασαν· οἱ δὲ τὸ θαλάσσιον ὕδωρ, ἐπεὶ καὶ ἀνωτέρω εἴρηται· ἥν τε καὶ ἀτμεύειν (172)· κελεύει δ’ ἔλαιον μιγνύντα μετ’ οἴνου νεωστὶ πεπατημένου πίνειν, ἡ χιόνα μετὰ γλεύκεος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="180"> 
+<p rend="indent">Ζάγκλῃσι· ταῖς δρεπάναις τῶν τρυγητῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="181"> 
+<p rend="indent">Ῥυσαλέην δὲ τὴν ἐρρυσσωμένην, ἤτοι τὴν πεπανθεῖσαν καὶ πέπειρον. Ἑδανοῖο τοῦ ἡδυτάτου, τοῦ γλεύκους Ψιθία δ’ εἶδος ἀμπέλου, ἥτις καὶ πραμνία λέγεται. Ἑλίνοιο, τοῦ κλάδου τῆς ἀμπέλου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="182"> 
+<p rend="indent">Κείροντες· κόπτοντες πατοῦσι καὶ πιέζουσι τῷ καιρῷ, ὅτε ῥοιζηδὸν αἱ μέλισσαι ἐπὶ ταῖς ῥαξὶ τῶν βοτρύων πεσοῦσαι νέμονται τὸ γλεῦκος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="183"> 
+<p rend="indent">Πεμφρηδὼν δὲ ζῶόν ἐστι τῶν σφηκωδῶν, μεῖζον μὲν μύρμηκος, μελίσσης δ’ ἔλασσον, ἐπτέρωται δὲ καὶ ποικίλην ἔχει λευκῷ καὶ μέλανι τὴν ἐπιφάνειαν, τοῦτο δὲ κατὰ τὴν ὀρεινὴν νεμόμενον δρέπεται ἀπὸ τῶν ἐν τοῖς ἄγκεσι θάμνων παντοῖα ανθη, καὶ φερόμενον εἰς <pb facs="theriacaetalexip00nica_0462"/> τὰς κοίλας καθίπταται δρῦς. Καὶ αἱ βεμβίδες δὲ τῶν σφηκωδῶν εἰσιν εἶδος μελισσῶν, ἅς ἔνιοι βέμβικας καλοῦσι· ταῦτα δὲ πάντα εἴδη μελισσῶν εἰσιν, ἅ δὴ ἐπινέμεται πεπείρους ὄντας τοὺς βότρυας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="185"> 
+<p rend="indent">Κηκὰς δ’ ἡ ἀλώπηξ, ἤτοι κακωτικὴ, κακοποιὸς, κακοῦργος ἢ χλευαστική· Καλλίμαχος· <quote type="blockquote">κηκάδι σὺν γλώσσῃ·</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="186"> 
+<p rend="indent">Κωνείου. Τοῦτο οἱ μὲν κορίαννον, οἱ δ’ ἀννησοειδὲς καλοῦσι, σημεῖον δὲ τούτου τὸ καρηβαρεῖν. Φοινὸν δ’ ἀντὶ τοῦ πεφοινιγμένον ἢ ὀλέθριον, φόνιον, κατὰ πλεονασμὸν τοῦ ι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="189"> 
+<p rend="indent">Σφαλλόμενοι δὲ τοῖς σκέλεσι ταῖς χερσὶ βαδίζουσιν, ὅ ἐστι πίπτοντες ἐπερείδονται αὐταῖς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="191"> 
+<p rend="indent">Ἢτοι τὰ ἐσωτέρω καὶ κατωτέρω τοῦ στόματος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="192"> 
+<p rend="indent">Αἱ ἀρτηρίαι φησὶ μεγάλως σφύζουσιν, αἳ πρὶν ἐρρωμέναι συστέλλονται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="193"> 
+<p rend="indent">Ἀτίζει δ’ ἀντὶ τοῦ ἀτενίζει, βλέπει νῦν, ἢ ἕλκει, ὅ ἐστι σπᾷ τὸν ἀέρα καὶ ὀλίγον ἀναπνεῖ, εἰ καὶ ἐπὶ τῆς ταραχῆς αὐτὸ τέθεικεν Ὅμηρος εἰπών (<bibl xml:lang="mul">Il. ζ 468</bibl>)· <quote type="blockquote"><lb/>πατρὸς φίλον ὄψιν ἀτιχθείς.</quote> γράφεται καὶ ἀλύξει, οἷον· <q>ἠέρα παῦρον ἀλύξει</q>.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="194"> 
+<p rend="indent">Κατηβολέων· λειποθυμῶν, τὴν ὑστάτην εἱμαρμένην ἔχων, ὁ δ’ οἷα ἐν καταβολῇ ὢν καὶ κάτω διὰ λειποθυμίαν βλέπων, ὀλίγον ἀέρα διὰ τῆς ἀναπνοῆς ἕλκων, τὸν θάνατον ὁρῶν, καταπίπτων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="197"> 
+<p rend="indent">Τεῦχος κατασκεύαζε ἐμβαλὼν ἀντὶ τοῦ παραπέμψας· ἐν δὲ τῷ μὴ λέγειν κλυστῆρα ποῖον, δῆλον ὅτι κοινὸν λέγει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="198"> 
+<p rend="indent">Δάφνης δὲ Τεμπίδος· Θεσσαλικῆς, διότι πρῶτον ἐκεῖ εὑρέθη τὸ φυτὸν, κατέστεφε δὲ χαίτην Δελφίδα εἶπε διὰ τὸ τὴν κόρην διωκομένην ὑπ’ Ἀπόλλωνος εἰς τοῦτο τὸ φυτὸν μεταβληθῆναι, ἐξ οὖ ἔχει καὶ τὸ ὄνομα. Δάφνη γὰρ ἡ κόρη ἐλέγετο, καὶ Ἀπόλλων ἰδὼν αὐτὴν μεταβληθεῖσαν εἰς τὸ φυτὸν ἐξ αὐτοῦ τοῦ φυτοῦ ἐστέψατο, λέγει δέ· ἢ ἀπὸ δάφνης κατὰ κοινοῦ πόσιν δίδου, τουτέστι δαφνέλαιον δὸς πιεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="201"> 
+<p rend="indent">Κνίδην λέγει τὴν ἀκαλήφην, εἴρηται δ’ ἀμφότερα διὰ τὸ κνήθειν· καὶ γὰρ ἡ ακαλήφη παρὰ τὸ κάλφεσθαι· ἔστι δὲ καὶ θαλάσσιον ζῶον ἀκαλήφη λεγόμενον· φησὶ γοῦν ὅτι καὶ κνίδης σπέρμα σὺν πεπέρει λεάνας διὰ τὸ σφόδρα θερμαντικὸν δίδου χρῆσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="202"> 
+<p rend="indent">Ἐμπευκέι ὀπῷ χράνας ἀντὶ τοῦ μίξας τῷ πικρῷ ὀπῷ, λέγει δὲ τῷ κυρηναϊκῷ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="203"> 
+<p rend="indent">Τὸ ἀπὸ τῆς ἲριδος βοτάνης γινόμενον ἔλαιον, ἴρινον δὲ μύρον λέγει· αὕτη ἡ βοτάνη εὔπνους ἐστί· παραλέλοιπε δὲ τῆς πόσεως τὴν ποσότητα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="204"> 
+<p rend="indent">Κελεύει δὲ καὶ σιλφίου ῥίζαν τρίψαντα μετὰ λευκοῦ ἐλαίου παρέχειν πίνειν· τὸ δὲ σίλφιον καὶ ῥιζίον Κυρηναϊκὸν καλοῦσί τινες, ἐξ οὗ γίνεται ὀπὸς, νῦν δὲ περὶ τοῦ ῥιζίου φησίν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="205"> 
+<p rend="indent">Μελιζώρου ἀντὶ τοῦ μελικράτου. <pb facs="theriacaetalexip00nica_0463"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="206"> 
+<p rend="indent">Καὶ γάλακτος δὲ τὸ ἀφρῶδες, τουτέστι τὸ ἐπιπόλαιον καὶ πεπηγὸς ὡς ἀφρὸς νέμε, ἐπὶ πυρὸς θάλψας τὸ τεῦχος ἠρέμα, ὅ ἐστι θερμάνας, τουτέστιν ἵνα χλιάσῃς αὐτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="207"> 
+<p rend="indent">Ἡ σύνταξις οὕτως· καὶ τὸ ἐπὶ τῷ λοιγήεντι τοξικῷ ἄχθος ἀμύνοις καὶ ἀποδιώξοις. Παρασχεδὸν ἀντὶ τοῦ παραχρῆμα, λείπει δὲ τὸ οὕτω, ἵν’ ᾖ· οὕτως ἀμύνοις καὶ διώξοις· τοξικὸν δὲ καλεῖται τὸ τοιοῦτον φάρμακον διὰ τὸ ὁμοίως τοῖς τοξεύμασιν ἀναιρεῖν παραχρῆμα βρωθὲν ἢ ποθὲν, ἢ ἐπεὶ οἱ Πάρθοι καὶ Σκύθαι τοξεύοντες τούτῳ παραχρίουσι τὰς τῶν βελῶν ἀκίδας· οὐ γὰρ, ὥς τινες, τὸ κώνειον νομιστέον· ἢ διότι ὁμοίως τόξου ἀφέσει ἀναιρεῖ βρωθὲν ἢ ποθὲν λέγεται ὑπό τινων Σκυθικόν· ἄλλοι δὲ λέγουσιν, ὅτι ἐκ τοῦ αἵματος τῆς υδρας ἀνεφύη, τὴν δ’ ὕδραν ἀνεῖλεν ὁ Ἡρακλῆς, καὶ διὰ τοῦτο τοξικὸν καλεῖται</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="208"> 
+<p rend="indent">Ἡνίκα πιών τις βαρύνηται ὑπὸ τῶν ὀδυνῶν. Παχύνεται δ’ οἰδαίνεται, καὶ τὸ οἰδαλέα διῳδηκότα καὶ ἐξωγκωμένα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="211"> 
+<p rend="indent">Ξηρὰ, ἐπειδὴ ξηραίνει τὸ δηλητήριον, τὰ δ’ οὖλα τῶν ὀδόντων ἐκ βάθρων ῥήγνυται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="213"> 
+<p rend="indent">Ἔμπληκτον· μανιῶδες, μανικόν. Μεμόρηκεν, ἐκάκωσε, παρὰ τὴν μοῖραν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="214"> 
+<p rend="indent">Μηκάζει δ’ ἀντὶ τοῦ μηκᾶται ὡς πρόβατον, οἱονεὶ οὕτω βοᾷ καὶ κράζει, φλύζων, φλυαρῶν ὑπὸ τῆς μανίας· καὶ οἱ Ἰταλιῶται τοὺς φλυαρογραφοῦντας φλυζογράφους ἐκάλουν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="215"> 
+<p rend="indent">Συνεχῶς δέ φησιν ἀχθόμενος βοᾷ. Ἐμπελάδην οἱονεὶ ἐμπελαστικῶς καὶ ὁρμητικῶς, ὁποῖά τις φὼς, ἤγουν ἀνὴρ, τὴν ἀμφιβρότην κώδειαν ἀποτμηθεὶς ξίφει· τοῦτο γὰρ τὸ ἀπαμηθείς, κώδειαν δὲ νῦν τὴν κεφαλὴν, καὶ ἀμφιβρότην τὴν ὅλον τὸν ἄνδρα συνέχουσαν κεφαλήν· ἡ γὰρ κεφαλὴ συνέχει πᾶν τὸ σῶμα· καὶ Ὅμηρος δὲ κώδειάν φησι τὴν κεφαλὴν, (<bibl xml:lang="mul">Il. ξ 499</bibl>)· <quote type="blockquote">ὁ δὲ φὴ κώδειαν ἀνασχών.</quote> Ἂλλως· καὶ γάρ φησιν, ἐνίοτε πλησιάζοντος αὐτῷ ἀνθρώπου τινὸς, μισανθρωπίαν νοσῶν καὶ βαρούμενος προΐεται φωνὴν ὡς ἀποκεφαλιζόμενος· τοῦτο δ’ εἶπε πλανηθεὶς ἐκ τοῦ ποιητοῦ καὶ κακῶς νοήσας τό (<bibl xml:lang="mul">Il. κ. 457 et Od. χ 329</bibl>)· <quote type="blockquote">φθεγγομένου δ’ ἄρα τοῦ γε κάρη κονίῃσιν ἐμίχθη.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="217"> 
+<p rend="indent">Κερνοφόρος· ἡ τοὺς κρατῆρας φέρουσα ἱέρεια· κέρνους φασὶ τοὺς μυστικοὺς κρατῆρας, ἐφ’ ὧν λύχνους τιθέασιν· ζάκορος δ’ ἡ νεωκόρος, καὶ βωμίστρια ἡ ἱέρεια τῆς κρατηροφόρου Ῥέας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="218"> 
+<p rend="indent">Εἰνάδι δ’ ἀντὶ τοῦ ἐννάτῃ τοῦ μηνὸς ηγουν τῆς σελήνης· τότε γὰρ τὰ μυστήρια αὐτῆς ἐπιτελοῦσιν· ἢ εἰκάδι, τῇ εἰκοστῇ τῆς σελήνης· τότε γὰρ κατὰ τὴν σελήνην ἐμέτρουν τὸν ἐνιαυτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="220"> 
+<p rend="indent">Ἰδαίης· τῆς ὀρεινῆς· Ἴδη γὰρ καταχρηστικῶς πᾶν ὄρος καλεῖται. Τρέουσι δ’ ἤγουν οἱ Κορύβαντες, ἢ οἱ παρατυχόντες φοβοῦνται, ὅτ’ Ἰδαίης τὸν ῥιγηλὸν ὑλαγμὸν εἰσαΐωσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="221"> 
+<p rend="indent">Βρυκανάαται· γράφεται καὶ βρυχανάαται, βρυχᾶται, κλαυθμυρίζει, <pb facs="theriacaetalexip00nica_0464"/> ὡς παιδίον φωνεῖ, ἢ δακρύει, ὡς Μένανδρος. Ὠρυδὸν δ’ ἁντὶ τοῦ μετ’ ὠρυγῆς, ὡς λύκος ὠρυόμενος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="222"> 
+<p rend="indent">Ἀντὶ τοῦ καθάπερ ταῦρος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="224"> 
+<p rend="indent">Διὰ τὸ ἀστατεῖν αὐτὸν δέσας φησὶ προσένεγκε αὐτῷ βοη θήματα καὶ μὴ καταδεχομένῳ μηδὲ θέλοντι, κατ’ ὀλίγον οἶνον διδοὺς κόρεσον καὶ μεθυσθῆναι ποίησον ἀνενοχλήτως, ἡσύχως δὲ βιαζόμενος τῇ σῇ χειρὶ ἄνοιγε τὸ μεμυκὸς αὐτοῦ στόμα, ἕως οὗ ἐμέσῃ, καὶ μετὰ τὸν τοῦ γλυκέος ἔμετον πότισον αὐτὸν ζωμὸν πολὺν χήνειον, προσφέρων αὐτῷ καὶ τῶν ἐαρινῶν ἀγρίων ἢ ἡμέρων μήλων τὰς σάρκας, ῥίψας τὸ δέρμα αὐτῶν· ἐὰν δὲ μὴ παρῶσι ταῦτα, τῶν λεγομένων στρουθομήλων ὁλοσχερῶς ἐμφόρησον αὐτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="225"> 
+<p rend="indent">Τουτέστι τὸν θώρακα πλήρωσον, ἤγουν χόρτασον αὐτὸν οἲνῳ γλυκεῖ, καὶ μὴ χρῄζοντα ἡρέμα βιαζόμενος, καὶ μὴ κακώσῃς αὐτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="226"> 
+<p rend="indent">Βρῦκον τὸ μεμυκὸς στόμα· συνερείδει γὰρ τοὺς ὀδόντας τὸ βρῦκον αὐτοῦ στόμα φησὶν, ἤγουν τὸ συνδεθὲν καὶ σφιγχθέν. Ὀχλίζοις, οἱονεὶ ἄνοιξον, ὡς ἂν τὴν λώβην ἐμέσῃ δαμαζόμενος καὶ νικώμενος διὰ τοῦ ποτίζειν αὐτὸν τῇ χειρί σου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="229"> 
+<p rend="indent">Μεμορημένον ἀντὶ τοῦ δεδασμένον καὶ ἑψηθέντα τῷ πυρί.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="230"> 
+<p rend="indent">Μηλείης δὲ τῆς μηλέας τὰ κάρφη ἤγουν τὰ δέρματα ἢ τὰ ἄνθη Γράφεται δὲ καὶ ῥηχώδεος καὶ τρηχώδεος, ἀμφότερα κατὰ τοῦ αὐτοῦ σημαινομένου, τῆς τραχείας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="231"> 
+<p rend="indent">Σίνεα· τὰς σινωτικὰς ἀκάνθας ἀποβαλὼν, ἢ μᾶλλον τὰ δέρματα τῶν μήλων λεπίσας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="232"> 
+<p rend="indent">Ἐπήβολα, ἤγουν μέτοχα τοῖς ἡμετέροις χωρίοις, τουτέστι τὰ τοῖς ἡμῶν κλήροις ἤγουν κήποις ἐπιβάλλοντα, οἱονεὶ τὰ ἡμέτερα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="233"> 
+<p rend="indent">Ἐνεψιήματα δὲ τὰ παίγνια· παίζουσι γὰρ αἱ κόραι καὶ τέρπονται τοῖς μήλοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="234"> 
+<p rend="indent">Καὶ τὰ στρούθεια δ’ εἴδη μήλων, οἱ δέ φασιν εἶδος βοτάνης, τὸ δὲ κυδώνιόν φησι μῆλον. Κυδῶνος, τοῦ στυπτικοῦ κυδωνίου, ὃ μάλιστα ἐν τῇ Κρήτῃ φύεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="235"> 
+<p rend="indent">Ἐκόμισαν δ’ ἄναυροι, τουτέστιν ἔθρεψαν αἱ ὂχθαι τῶν ποταμῶν τὰ κυδώνια.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="236"> 
+<p rend="indent">Ἅλις δ’ ἀντὶ τοῦ ἱκανῶς, καὶ ἀολλέα ὁμοῦ κόψας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="237"> 
+<p rend="indent">Ὀσμήρεα, ὀδμὴν ἔχουσαν, εὐώδη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="239"> 
+<p rend="indent">Ῥοδέοις, τοῖς ῥόδοις, ἢ ῥοδίνου ἐλαίου. Καὶ θυόεν μαλλοῖσιν ἀφύσσων παῦρα λίπος ἀντὶ τοῦ θυόεν τὸ εὐῶδες ἐν τοῖς ῥόδοις ἔλαιον ἤτοι τὸ ῥόδινον στάζε μετ’ ἐρίου εἰς τὸ στόμα αὐτοῦ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="241"> 
+<p rend="indent">Ἰρινέου δὲ τοῦ ἀπ’ ἴριδος γινομένου μύρου</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="242"> 
+<p rend="indent">Ἀκροσφαλὲς τὸ ἄκρως σφαλερόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="244"> 
+<p rend="indent">Γερραῖοι ἔθνος Ἀραβίας ἀπὸ Γέρρας, μιᾶς αὐτῶν πόλεως. Νομάδες δὲ νομάδα βίον ἔχοντες· τούτῳ φησὶ τῷ τοξικῷ οἱ ἐν τῇ Γέρρᾳ τῆς Ἀραβίας καὶ οἱ περὶ τὸν Εὐφράτην πρὸς τὰς αἰχμὰς αὐτῶν χραίνουσιν, ὅ ἐστι βάπτουσιν. Οἱ Γερραῖοι τῷ τοιούτῳ φαρμάκῳ βουλόμενοι χρῆσθαι καὶ τοὺς αὐτὸ προσενεγκαμένους τοῖς εἰρημένοις βοηθήμασιν ἰᾶσθαι, οὕτω δοκιμάζουσι τὰ ἀλεξιφάρμακα· μέρος τοῦ ἑαυτῶν <pb facs="theriacaetalexip00nica_0465"/> ποδὸς χαράξαντες αἷμα ἀφιᾶσι, καὶ εὐθὺς προσάπτουσι τὸ φάρμακον· ἐὰν γοῦν ἀναδράμῃ διὰ τοῦ αἵματος, τάχιον τοῖς βοηθήμασι τούτοις καθαίρουσιν αὐτὸ, πρὶν ἐμπεσεῖν τὸν ἰὸν εἰς τὴν καρδίαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="248"> 
+<p rend="indent">Ἔρφος δὲ τὸ δέρμα, ὅπερ οἱ Ἴωνες στέρφος λέγουσιν· διὸ καὶ στερφῶσαι λέγομεν ἐν τῇ συνηθείᾳ</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="249"> 
+<p rend="indent">Μηδείης· ἤτοι τὸ ἐφήμερον σκευαστικόν ἐστι φάρμακον, ὃ καλεῖται κολχικὸν, ὃ βαρβαρικὸν, ὃ καὶ οἱ βάρβαροι νάφθαν καλοῦσιν, ὃ οἱ χριόμενοι ἢ ἱμάτιον ἀληλιμμένον ὑπ’ αὐτοῦ φοροῦντες ἢ ἄλλο τι, ἐὰν ἔναντι ἡλίου στῶσιν, ὡς ὑπὸ πυρὸς κατεσθίονται δαπανώμενοι· ἔστι γὰρ καυστικὸν, δοκεῖ δ’ ἡ Μήδεια τὴν κατασκευὴν αὐτοῦ εὑρηκέναι, διὸ καὶ κολχικὸν λέγεται· οἱ δ’ ἶριν αὐτὸ προσαγορεύουσιν, ἄλλοι φαρικὸν, ἕτεροι ἐφήμερον, ὅτι ἐν αὐτῇ τῇ ημέρᾳ ᾗ ποθῇ ἀναιρεῖ· γίνεται δὲ παρὰ τὸν Ὕπανιν τὸν ποταμόν· τοῦτο γεννᾶται ὄρθρου, μαραίνεται δὲ περὶ μεσημβρίαν· ἢ διὰ τὸ ἡμέραν ὅλην μὴ δύνασθαι ἐξαρκεῖν τοὺς πιόντας αὐτό· τοῦτο οὖν τὸ ἐφήμερον ἐν μὲν τῇ γεύσει εὐθὺς τὰ εἴσω τῶν χειλέων κινεῖ πρὸς κνησμὸν, ὡς ἀπὸ γάλακτος συκῆς, ἢ σκίλλης ἢ κνίδης, ἐν δὲ τῇ καταπόσει ἐσθίον τὸν στόμαχον καὶ δηγμοὺς ἱκανοὺς παρέχον βάρος εἰς αὐτὸν ἐνίησιν, ἔπειτα σφοδρῶς αὐτον καταξέσαν ἑλκοῖ τοσοῦτον, ὥστε ποτὲ μὲν ἐμεῖν ὅμοιον πλύματι κρεῶν θολερῶν, ποτὲ δὲ κόπρον προϊέναι· βοηθεῖ δὲ τοῖς πεπωκόσι τὸ φάρμακον γάλα ποθὲν, ἐναποβεβρεγμένων εἰς αὐτὸ δρυὸς φύλλων· ποιοῦσι καὶ τὰς περὶ τὴν κεφαλὴν θάλψεις· ἢ γάλακτος βοείου προσαγωγῇ, τοῦ μὲν πινομένου εἰς κόρον θερμοῦ, τοῦ δ’ ἐν τῷ στόματι τηρουμένου· βοηθεῖ δὲ καὶ ὁ βλαστὸς τοῦ πολυγόνου, ἢ καὶ ἡ ῥίζα κατακοπεῖσα καὶ ἐν γάλακτι ἑψηθεῖσα, ἢ ἐν ἀποβρέγματι μήλων, ἢ κυδωνίων, ἢ στυπτικῶν μύρτων, ἢ ἑλίκων ἀμπέλου, ἢ βάτου κλάδων, καὶ τοῦ ἑρπύλλου τὰ φύλλα ἑψηθέντα ἐν ἀποβρέγματι τῶν ἐντοσθίων τοῦ νάρθηκος, ἢ σαρδιανῶν βαλάνων, καὶ ποθέντα βοηθεῖ, καὶ ἡ ἐντεριώνη τοῦ νάρθηκος τετριμμένη ποθεῖσα, βοηθεῖ δὲ καὶ ἡ ὀρίγανος λειανθεῖσα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="252"> 
+<p rend="indent">Νιφόεντι λευκῷ, οἷα τῷ ὀπῷ τῆς συκῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="253"> 
+<p rend="indent">Σπειρώδεϊ δὲ σπερματώδει ἢ πολλαῖς περιβολαῖς περικαλυπτομένῃ· αὕτη γὰρ ἡ βοτάνη ἐν τῇ κεφαλῇ τὸ σπέρμα ἔχει· ἢ σπειρώδεϊ τῇ πολλὰ σπεῖρα, ἤγουν ἐνδύματα, ἐχούσῃ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="254"> 
+<p rend="indent">Ἤγουν τὴν ἁπαλὴν σάρκα ἐπυράκτωσεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="255"> 
+<p rend="indent">Ἐπισχομένοιο δὲ, καταποθέντος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="256"> 
+<p rend="indent">Ἀνερεπτόμενον, ἤγουν ἀνερευγόμενον τῇ περιτρίψει. Συρμῷ δὲ, τῇ ζέσει καὶ τῇ ὀλεθρίᾳ καύσει τὸν στόμαχον ἑλκωθέντα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="257"> 
+<p rend="indent">Ἀπήμεσε δ’ ὥσπερ θολερὸν πλύμα ἀπὸ κρεῶν ὁ μάγειρος ἐκχέει, τοιοῦτόν φησι ῥυπαρὸν καὶ ὄζον, συναποβάλλει δὲ καὶ ἡ νηδὺς μεμιασμένα ἀποπατήματα, ἤγουν ἀφρώδη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="260"> 
+<p rend="indent">Πολλάκις μὲν καὶ τῆς φηγοῦ φησι τὴν χαίτην βάλλοις ὁμοῦ τοῖς ἀκύλοις, τουτέστι τῷ καρπῷ. Οὐλάδα δὲ τὴν ὑγιαστικήν (<bibl xml:lang="mul">Od. ω, 402</bibl>)· <pb facs="theriacaetalexip00nica_0466"/> <quote type="blockquote">οὖλέ τε καὶ μέγα χαῖρε.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="261"> 
+<p rend="indent">Ἤγουν σὺν αὐταῖς ταῖς βαλάνοις· διαφέρει γάρ φησι δρῦς καὶ φηγὸς, εἰ μή που φηγὸν τὴν πρῖνον εἶπεν· ἄλλη γὰρ δρῦς, καὶ ἄλλη φηγὸς, καὶ ἄλλη πρῖνος, τὰ δὲ τρία δρύες καλοῦνται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="263"> 
+<p rend="indent">Οὗτος ὁ φαρμαχθεὶς τούτου κορεσθείη καὶ ἐν τῷ στόματι κατάσχοι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="264"> 
+<p rend="indent">Τὸ δὲ πολύγονον βοτάνη ἐστὶν ἐν τῷ πίνεσθαι ἐντατική· ἢ τὰ ῥιζεῖα τοῦ πολυγόνου γάλακτι ἑψηθέντα καὶ κατατριβέντα βοηθεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="266"> 
+<p rend="indent">Τὸ δ’ ἀμπελόεις ἀμπελοέσσας· ὁ τρόπος μετάληψις, ἄλλοι δ’ αἰτιατικὴν πληθυντικῶν φασιν εἶναι ὁμόφωνον τῇ εὐθείᾳ, αἱ ἀμπελόεις γάρ ἐστιν, ὡς τὰς πανηγύρεις αἱ πανηγύρεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="267"> 
+<p rend="indent">Ομοίως καὶ τοὺς κλάδους τοῦ βάτου· εἴρηται δὲ βάτος διὰ τὸ ἄβατος εἶναι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="268"> 
+<p rend="indent">Νέα δὲ τέρφη ἀντὶ τοῦ χλωρὰ λέπη καστάνου, τοῦ εὖ τρέ φειν δυναμένου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="269"> 
+<p rend="indent">Δασυφλοίοιο εἶπε, διότι χνοώδης ὁ ἐντός ἐστι φλοῦς, ἢ τὸ δασὺ πρὸς τὸ στρυφνὸν τοῦ λέπους ἔφη· γράφεται δὲ καὶ λαχυφλοίοιο, ἤτοι ἐλάχιστον φλοιὸν ἔχοντος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="270"> 
+<p rend="indent">Νείαιραν δὲ σάρκα τὴν ἐσωτάτω λέγει· ἀμφοτέρους γὰρ τοὺς φλοιοὺς ἀφελέσθαι κελεύει· νείαιραν οὖν τὸν ἐνδότερον περὶ την σάρκα ὑμένα, τὸν στύφοντα λέγει. Σκύλος· τὸ δέρμα ἤτοι τὸ ἔνδυμα, ὅθεν καὶ τὸ σκυλεύω, νῦν δὲ τὸ μαῦρον καὶ ξηρὸν λέγει ἔνδυμα· γυμνώσειας δὲ σὺ τοῦ καλῶς τεθραμμένου καρύου ἢ τοῦ καλῶς τρέφοντος τοῦ καστάνου τὰ νέα τέρφη τοῦ δασυφλοίου, τὸ δὲ κάλυμμα, ὅπερ κατὰ τὴν νείαράν ἐστι σάρκα περὶ σκύλος, ἤγουν περὶ τὸ δέρμα καὶ ἔνδυμα τὸ μέλαν, τουτέστι τὸ μετὰ τὴν ἄκανθαν, ἐκεῖνό φησιν ἑψήσας δίδου πιεῖν, οἱονεὶ τὸ στῦφον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="271"> 
+<p rend="indent">Τὸ Καστανὶς ἔτρεφε, πόλις Θεσσαλίας, ὅθεν τὰ καστάνια ἀπὸ τῆς Καστανίδος γῆς· ἢ Καστανὶς πόλις Πόντου, ὅπου πλεονάζει τὸ καστάνιον. Καστανέα ὄρος Θεσσαλίας, ἐξ οὗ τὰ κάστανα· τῶν δὲ καστάνων τὸ μὲν σαρδιανὸν, τὸ δὲ λόπιμον, τὸ δὲ μαλακὸν, τὸ δὲ γυμνόλοπον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="273"> 
+<p rend="indent">Τουτέστι τῆς κλοπῆς τῆς ἑστιώσης τὸν νάρθηκα, ἤτοι τὸν κλέψαντα τὴν κλοπὴν τοῦ κλέπτου Προμηθέως· κλοπὴν γὰρ λέγει αὐτὸ τὸ πῦρ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="274"> 
+<p rend="indent">Φιλόζωον δὲ λέγει τὸν ἕρπυλλον, διότι ἀεὶ ἀνθεῖ καὶ οὐδέποτε φυλλορροεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="275"> 
+<p rend="indent">Εὐφίμου δὲ τοῦ φιμοῦντος τῇ στύψει, ἤτοι τοῦ στυπτικοῦ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="279"> 
+<p rend="indent">Τὸ τοῦ ἰξοῦ δηλητήριον. Ἰξία δὲ καὶ βούπρηστις σιλφίων γένη μελαινῶν, πινόμενα δὲ κατέχει τὴν τροφὴν, ὡς ἰξός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="280"> 
+<p rend="indent">Οὐλοφόνον δὲ τὰ οὖλα βλάπτον, ἢ ὅλον φονευτικόν. Ὠκιμοειδὲς δ’ ὅπερ μάλιστα ὡς ὤκιμον ὄζει· ὤκιμον δ’ εἶδος βοτάνης παραπλήσιον ἡδυόσμῳ, ἀλλ’ οὐ δασύ ἐστιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="282"> 
+<p rend="indent">Ἐμπλάζεται ἦτορ ἀντὶ τοῦ περιφέρεται τῇ διανοίᾳ, ἤτοι ταράσσεται καὶ ἔμπληκτος γίνεται· καὶ λυσσηθεὶς ἀντὶ τοῦ μανεὶς κατατρώγει τὴν γλῶσσαν αὑτοῦ. Ἰξία γένος ἐστὶ τῆς σίλφης, ἐστὶ δὲ τῇ χροιᾷ μέλαν, τῇ δ’ ὀσμῇ ἐν τῇ πόσει ὅμοιον ὠκίμου σπέρματι, ἤτοι τῆς <pb facs="theriacaetalexip00nica_0467"/> βασιλικοῦ πνοὴν ἔχον, ποθὲν δὲ τὸ φάρμακον τοῦτο τὴν μὲν γλῶσσαν οἰδεῖ, φλέγον αὐτὴν, παὶ παραφροσύνην ἐμποιοῦν ἐσθίειν αὐτὴν παρασκευάζει, δίκην δ’ ἰξοῦ τὴν τροφὴν κατέχει, ἔμφραξιν ἐργαζόμενον οὔρου τε καὶ κόπρου, καταπνῖγον δὲ τὸ πνεῦμα περὶ τὰς στενὰς τῶν ἐντέρων ὁδοὺς εἱλεῖσθαι ποιεῖ καὶ δι’ ἕδρας ψόφους παρασκευάζει, ἢ διὰ στόματος ἐρεύγεσθαι δίδωσιν. Τοῦτο τὸ ποτὸν πολλάκις ἐμεῖν παρασκευάζει τὴν τροφὴν παραπλήσιον τοῖς ἄνευ ὀστράκων ὠοῖς τῶν ὀρνίθων, οἷον τοῖς ἀτελέσι καὶ ἐν τῷ ὑμένι οὖσι, τουτέστι νεωστὶ τεθρομβωμένοις ἐν τοῖς ἐγκάτοις αὐτῶν καὶ ὑμένας μόνους ἔχουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="285"> 
+<p rend="indent">Εἰκῆ· ἀδιαχώριστόν φησι γίνεται, εἰκῆ καὶ ἄνευ λόγου ἐντὸς ἐνειλούμενον τὸ πνεῦμα ψόφον ἀποτελεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="287"> 
+<p rend="indent">Ἐν ὀλίγῳ δὲ φυσήματι ἑλίσσεται, τουτέστιν ἐν μικρῷ πνεύματι ταράσσεται· μικρὸν γὰρ τὸ πνεῦμα εὐθὺς ἀπολύει. Ὀγμῷ τῷ ἀναφερομένῳ πνεύματι, ἄρτι δὲ καὶ τῷ φερομένῳ, λέγει δὲ καὶ τοῦ φυσέλου, οὗ τὴν ὑπερβολὴν εἴκασε βροντῇ, φαντασίαις δὲ βροντῶν ἢ ἤχων θαλασσίων· ἢ ὁποῖος ῥόχθος ἐπηχεῖ ταῖς σπιλάσιν· πολλάκις δὲ φησι ταῖς βρονταῖς τοῦ Ὀλύμπου ὁμοιούμενος, ποτὲ δὲ τοῖς ἤχοις τῆς θαλάσσης παραπλήσιος ὤν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="288"> 
+<p rend="indent">Ἀνομβρήεντος δὲ πολυόμβρου, ὥς φησιν Ὅμηρος (<bibl xml:lang="mul">Od. ζ, 20 43 et 44</bibl>)· <quote type="blockquote"><lb/>οὐδέ ποτ’ ὄμβρῳ. <lb/>δεύεται</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="291"> 
+<p rend="indent">Στρευγομένῳ· ἐλαυνομένῳ ἢ συνεχομένῳ, οἱ δὲ γλωσσογράφοι κατὰ στράγγα ἀπολλυμένῳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="292"> 
+<p rend="indent">Λύματα δ’ ἀκαθαρσίας ἀντὶ τοῦ καθάρματα· τὰ πινόμενά φησι τῶν φαρμάκων παρασκευάζουσι διεφθορυῖαν τὴν τροφὴν παραπλησίαν τοῖς ἄνευ λεπύρου τικτομένοις καὶ διεφθαρμένοις ὠοῖς· πολλὰ γὰρ διά τινα πληγὴν ἢ περίστασιν ἐκβάλλει ἡ ὄρνις χωρὶς τοῦ κελύφου τῶν ὠῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="293"> 
+<p rend="indent">Φαρμακόεις δ’ ἀντὶ τοῦ φαρμακόεσσαι, ἀλεξιφάρμακοι· αἱ φαρμακώδεις πόσεις φησὶ τὰς ἀκαθαρσίας ἔχεαν ὁμοίας τοῖς ῴοῖς, οἷα η νομὰς ὄρνις ἐκβάλλει νεωστὶ τεθρομβωμένα καὶ φυσοειδῆ χωρὶς τοῦ κελύφου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="294"> 
+<p rend="indent">Καὶ αἰχμητῇσι νεοσσοῖς· τοῖς ἀλεκτρυόσι δηλαδή· οὗτοι γὰρ πρὸς ἀλλήλους πολεμισταὶ γίνονται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="295"> 
+<p rend="indent">Πάσχει γὰρ καὶ ἀπὸ πληγῆς καὶ ἐκ πλήθους ἐναποκειμένου αὐτῇ· τὸ ῥίπτειν φησὶν ἀτελῆ τὰ ὠὰ καὶ οἷα φύσας τινὰς καὶ ἀνόστρακα πολλάκις καὶ ἀπὸ νόσου γίνεται αὐτῇ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="297"> 
+<p rend="indent">Δύσπεπτον δὲ γόνον ἀντὶ τοῦ ἀμετάβλητον τὸν γόνον ἔτι ἐν τῷ ὑμένι ὄντα ἐκβάλλει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="298"> 
+<p rend="indent">Εὐβρεχέος· τῷ μὲν τοῦτο πεπωκότι τὸ ἄλγος ἀρήξει τὸ μετὰ γλεύκους ἐνστῦφον πόμα τοῦ ἀψινθίου· εἴωθε γὰρ τὰ πικρὰ καὶ δριμέα στύφοντα καλεῖν· τοὺς γοῦν ὄμφακας ἐπιστύφοντας εἶπεν· <pb facs="theriacaetalexip00nica_0468"/> <quote type="blockquote">ὄμφακες (δ’) ἡνίκα χεῖλος ἐπιστύφουσι ποθεῖσαι.</quote> κελεύει οὖν ἐν γλεύκει βρέχειν ἀψίνθιον καὶ οὕτω διδόναι πίνειν, προστάττει δὲ καὶ ῥητίνην τερεβινθίνην ἢ πευκίνην λαβεῖν, ἢ πίτυος δάκρυον μετὰ γλεύκους, καὶ τὰ ἑξῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="299"> 
+<p rend="indent">Νεοτρίπτῳ δ’ ἤγουν νεωστὶ τριβέντι, οἷον θλιβέντι, πατηθέντι, τουτέστι μετὰ γλεύκους τὸν τοῦ ἀψινθίου ζωμόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="301"> 
+<p rend="indent">Γοερῆς, ὅτι πολὺ στάζει δάκρυον, ἢ ὅτι ἐν αὐτῇ ἀπεδερματίσθη Μαρσύας· μυθεύεται γὰρ, ὡς, ἐπειδὴ Μαρσύας δεθεὶς ἐκ πίτυος ἐξεδάρη ὑπὸ τοῦ Ἀπόλλωνος, ἡ πίτυς συμπαθὴς ἐπ’ αὐτῷ γινομένη θρηνώδης ὑπάρχει. Τμῆξαι δ’ ἀντὶ τοῦ κόψαι ἢ ξέσαι· ἢ μίξαι· ἢ τῆς πίτυός φησιν ᾗχι τοῦ Μαρσύου τὸν φλόα ὁ Φοῖβος ἀπεδύσατο ἐκ τῶν μελῶν, τουτέστιν ὅπου αὐτὸν ἔξεσεν· εἰς πίτυν γὰρ αὐτὸν ἔξεσε καὶ ἐξέδειρε κρεμάσας, αὕτη δ’ ἡ πίτυς τὸν μόρον τοῦ Μαρσύου τὸν πολύπυστον ἐπαιάζουσα κατ’ ἄγκη, καὶ τὰ ἑξῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="305"> 
+<p rend="indent">Κόρεσον αὐτὸν τοῦ ἄνθους τοῦ μυοκτόνου πολίου. ἰδίως δὲ μυοκτόνον εἴρηκεν· οὕτω γὰρ οὔτε κέκληκέ τις, οὔτε μύας ἀναιρεῖ· κελεύει οὖν λαβεῖν πολίου ἄνθος καὶ πηγάνου βλάστας καὶ νάρδον καὶ κάστορος ὄρχιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="307"> 
+<p rend="indent">Λιμναῖον δ’ ἔφη, ἐπειδὴ ἐν τοῖς ποταμοῖς καὶ ταῖς λίμναις διαιτᾶται καθάπερ καὶ ὁ ἱπποπόταμος, δοκεῖ δ’ ὁ ὄρχις τούτου ὅμοιος εἶναι τῷ τοῦ κάστορος· οὗτος δ’ ὁ κάστωρ, ὥς φασι, διωκόμενος κόψας τοὺς ὄρχεις ῥίπτει, εἰδὼς, ὅτι δι’ αὐτοὺς διώκεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="308"> 
+<p rend="indent">Ἢ ὀδελὸν σιλφίου τῷ χαρακτηρικῷ κνηστῆρι, ἤγουν χαρακτῷ κατάτριψον, οἷον ξέσον, κόψον κνηστῆρι χαρακτῷ, μαχαίρᾳ φησὶ, σιλφίου τῆς ῥίζης τοῦ ὀποῦ ὀβολοὺς δύο καὶ τραγορίγανον, ἢ γάλα προσφάτως ἠμελγμένον· τραγορίγανον δ’ ἐστὶν ὄρειον, ὅπερ ἐσθίοντες οἱ τράγοι γίνονται κατωφερεῖς· διὸ οὕτως εἴρηται· αὐτὴ ἡ ῥίζα λέγεται σίλφιον, ὁ δὲ ταύτης ὀπὸς Κυρηναϊκὸς καλεῖται ὀπός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="310"> 
+<p rend="indent">Ἢ τοῦ γάλακτος τοῦ νεωστὶ πηγνυμένου ἐν τῇ νεαμέλκτῳ πέλλῃ κορεσθείη, τουτέστι τοῦ νεωστὶ τυροῦ πήξαντος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="312"> 
+<p rend="indent">Τὸ ταύρειον αἷμά φησι Πραξαγόρας πινόμενον πήγνυσθαι ἐν τῷ στήθει καὶ θρομβοῦσθαι, ἔπειτα, συνεχομένων τῶν πνοῶν, θνήσκειν ποιεῖ, οὐ λανθάνει δὲ πινόμενον, ὥσπερ καὶ τὰ ἄλλα δηλητήρια πολλάκις ἀγνοοῦνται· ἔστι γὰρ εὐτονώτερον τοῦ τῶν ἄλλων ζώων αἵματος, ὡς Ἀριστοτέλης (<bibl xml:lang="lat">H. A., III 19 et P. A. II, 4 T. I, p. 520 b, et 35 651 a</bibl>)· διὸ καὶ ἀφρόνως εἶπεν· τινὲς ἀποκαρτεροῦντες πίνουσιν αὐτὸ καὶ τελευτῶσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="314"> 
+<p rend="indent">Εἶαρ δὲ τὸ αἷμα παρὰ τὸ ἐν ἔαρι πλημμυρεῖν καὶ πλεονάζειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="315"> 
+<p rend="indent">Θρομβοῦται δ’ ἀντὶ τοῦ πήγνυται τὸ ταύρειον αἷμα ποθὲν καὶ ἐμφράσσει τοὺς πόρους τῆς ἀναπνοῆς, καὶ οὕτως ἀπόλλυται ὁ πίνων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="316"> 
+<p rend="indent">Οἱ πόροι τῶν πινόντων φράσσονται, τὸ πνεῦμα θλίβεται ἐντὸς, οἱονεὶ σφίγγεται, τοῦ αὐχένος ἐμπλασθέντος, οἱονεὶ ἐμφραχθέντος καὶ ἀποκλεισθέντος. <pb facs="theriacaetalexip00nica_0469"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="318"> 
+<p rend="indent">Μεμορυγμένος, τουτέστι μεμολυσμένος τῷ ἀφρῷ, περιφραστικῶς δ’ ἀφρίζων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="319"> 
+<p rend="indent">Αποκραδίσειας, ἀπὸ τῆς κράδης κόψειας, οἷον ἀποσυκίσειας, τουτέστι λάβοις. Ἐρινοὺς δὲ τοὺς κλάδους τῆς συκῆς· ἐρινεὸς γὰρ ἡ συκῇ παρὰ τὸ ἐρίζειν παντὶ φυτῷ, ἐστὶ δ’ ἐρινεὸς ἡ ἀγρία συκῆ. Ἄλλως· ἀφέλοιο τοὺς τῆς ἀγρίας συκῆς ὀλύνθους· οὗτοι γὰρ μηδέπω ὄντες πέπειροι ἔχουσιν ὀπὸν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="320"> 
+<p rend="indent">Τὸ δ’ ἀθρόον· ἀθρόον καὶ πολὺ ὄξος μίξας ὕδατι συγκέρασον καὶ δὸς πιεῖν, τὸ δ’ ὄξος φησὶν, ἤτοι εἰς ὃ ἀπεβράχησαν οἱ ὄλυνθοι τῆς ἀγρίας συκῆς, ἢ ἁπλῶς δι’ ἑτέρου βοηθήματος· εἰ δὲ τὸ πρότερον, τὸ ἐμπίσαιο ἀντὶ τοῦ βρέξον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="322"> 
+<p rend="indent">Εκφλοίοιο, ἐκσύρειας, ἐκθλίψειας, κλύσον φησὶ τὴν γαστέρα· ἢ καὶ τοῦ τῆς συκῆς φλοιοῦ. Καταχθέος κατάγοντος τὰ περιττώματα τῆς γαστρός· ἢ πολυαχθέος, τῆς πολὺ ἄχθος ἐχούσης, δηλονότι περιττωμάτων. Καταχθέος τῆς πληθυνούσης κατὰ τοῦ κατάγοντος καταχθέα ῥύματα γαστρός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="323"> 
+<p rend="indent">Πυετίαν φησὶ λαβὼν ἢ προκὸς, ὅ ἐστι δορκάδος, ἢ ἐρίφου ἢ νεβροῦ ἢ λαγωοῦ κόψον καὶ ἤθησον ἐν ῥάκει λεπτῷ, καὶ τρεῖς νίτρου ὀβολοὺς τρίψας καὶ μίξας ἐν οἴνῳ δίδου πιεῖν. Πολυωπέι δ’ ἤτοι πολυωπῷ κόλπῳ τῆς ὀθόνης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="328"> 
+<p rend="indent">Ἐνὶ δεύκεϊ Βάκχου· καὶ γὰρ τὸ ἐνὶ δεύκεϊ ἡδὺ, ἡδέως· ἰδίως δεύκεα λέγει τὸν ἡδὺν, ἢ μᾶλλον τὸν παλαιὸν ὡς πικρίζοντα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="329"> 
+<p rend="indent">Σιλφιόεσσαν δὲ λίτρην αντὶ τοῦ ἴσην μοῖραν λαμβάνειν σιλφίου καὶ ὀποῦ καὶ σπέρμα κράμβης μετ’ ὄξους. Ἄλλως· καὶ σιλφίου φησὶ καὶ ὀποῦ Κυρηναϊκοῦ καὶ σπέρμα Κράμβης τῶν τριῶν ὁμοῦ λίτραν μεμοιραμένην.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="332"> 
+<p rend="indent">Κατασμώξαιο· κατάτριψον τὰ ἁπαλὰ τοῦ βάτου· τούτῳ τὴν πῆξιν τοῦ ταυρείου αἵματος ῥᾳδίως σκεδάσειας, ἤτοι ἑστῶσαν ἐν τῇ γαστρὶ διαθρύψειας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="335"> 
+<p rend="indent">Βούπρηστις ζῷόν ἐστι χερσαῖον, ὠνόμασται δ’ ἀπὸ τοῦ ἐμπιπράναι τοὺς βόας, ἐπειδὰν δηχθῶσιν, ἢ αὐτὸ μόνον περιχάνωσιν. Φησὶν Ἀριστοτέλης ἐν τῷ περὶ ζώων (<bibl xml:lang="lat">H. A. VIII. 22 t. I. p. 604 b</bibl>) ὅτι, ἐὰν καὶ ἵππος περιχάνῃ τὸν λεγόμενον σταφυλῖνον, ἐστὶ δὲ ζῶον ὅμοιον σφονδύλῃ, διαφθείρεται. Ἄλλοι δέ φασι ζῶον εἶναι ὅμοιον κανθαρίδι. Μὴ λάθῃ σε ἡ ἀλγηδόνα παρέχοισα πόσις τῆς βουπρήστιδος, πεύσῃ δὲ καὶ γνώσῃ δαμαζόμενον τὸν πιόντα ἄνδρα. Βούπρηστις δὲ ζῶόν ἐστι παραπλήσιον φαλαγγίῳ, ὃ διατίθησι τοὺς βόας κακῶς· τοῖς οὖν πίνουσί φησι τὴν βούπρηστιν ὀδύνη παρακολουθεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="337"> 
+<p rend="indent">Ἡ βούπρηστις ἐγχρωτάζουσα εἰς τὰ χαλινὰ λίτρῳ ὁμοίαν ἔχει τὴν γεῦσιν. Νίτρῳ τὴν χροιὰν παραπλησίαν γίνεσθαί φησι κατὰ τοὺς χαλινοὺς τῶν πινόντων, εἰ μὴ ἄρα νιτρώδεις φησὶν αὐτοὺς ἔχειν προφορὰς κατὰ τὴν ἀντίληψιν, περὶ δὲ τὴν κοιλίαν πόνοι καὶ οὔρων περικράτησις, καὶ ἡ κύστις ῥοχθεῖ, ὅ ἐστι ψοφεῖ, τοῖς δ’ ὑδρωπικοῖς παραπλησίως ὀγκοῦται, τοῦ δέρματος αὐτῶν παράτασιν λαμβάνοντος, <pb facs="theriacaetalexip00nica_0470"/> ὡς καὶ τῶν βοῶν, ὅταν φάγωσι τὰ καυλεῖα, τουτέστι τὰς βοτάνας, ἐν αἷς τὰ θηρία.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="339"> 
+<p rend="indent">Ὑπερβατόν· ἐν τοῖς στόμασι τῆς γαστρὸς τὰ ἄλγη περιπολεύοντα ὄρωρεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="341"> 
+<p rend="indent">Διαπίμπραται, φυσᾶται, ὡς ὑφ’ ὕδρωπος· τρία δὲ γένη ὑδρώπων, ὧν ὁ εἷς τυμπανόεις λέγεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="342"> 
+<p rend="indent">Ἀφυσγετὸς δὲ καλεῖται κυρίως μὲν ὁ ἐκ τῶν ποταμῶν γινόμενος συρφετὸς, ἤτοι ἡ ἀθροιζομένη χορτώδης ὕλη, νῦν δ’ εἴρηκε διὰ τὸ πᾶσαν ἀκαθαρσίαν τοῦ σώματος εἰς τὴν γαστέρα συνερρυηκέναι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="345"> 
+<p rend="indent">Ὁππότε θῆρα· τουτέστιν οτε δατέονται καὶ μερίζονται τὸν τῶν θηρῶν τόπον βοσκόμενοι. (Ἀντὶ τοῦ εἰπεῖν ἐνταῦθα τὸν ἐξηγητὴν· δατέονται καὶ μερίζονται τὸν θῆρα, ἤτοι μᾶλλον κατατρώγουσι, τὰ γὰρ μασώμενα καὶ κατατρωγόμενα μερίζονται, ἔφη κακῶς· αἱ δαμάλεις καὶ οἱ μόσχοι νομαζόμενοι καὶ βοσκόμενοι τὸν τόπον τῶν θηρῶν) Ἄλλως· γράφεται πίμπραται ἐσχατιῇσιν ὅταν καυλεῖα φάγωσιν· ὅταν φησὶν ἐν ταῖς ἐσχατιαῖς περὶ τὰ πρόποδα τῶν ὀρῶν τὰ καυλεῖα αὐτῆς, τουτέστι τῆς βουπρήστιδος, φάγωσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="347"> 
+<p rend="indent">Τῷ καὶ εὐκραδέης· διχῶς ἡ γραφὴ καὶ ἡ ἐξήγησις· μία μὲν οὕτως· τῷ καὶ εὐκραδέης τριπετῆ ἐν νέκταρι μίξαις, καὶ τὰ ἑξῆς, ἵνα συνταχθῇ οὕτως· διὰ τοῦτο καὶ τῆς καλῆς κράδης τὴν τριπετῆ τῶν σύκων πόσιν τὴν ἱκανῶς ξηρανθεῖσαν καὶ ὀμφαλόεσσαν ἐν νέκταρι μίξαις· τριπετῆ οὖν, οἱονεὶ τριπέτηλον, τὴν ἐκ σύκων σχιζομένων εἰς τρία πέτηλα· τὰ γὰρ σῦκα ξηραινόμενα εἰς τρία σχίζονται· ἡ ὅτι τὰ φύλλα τῆς συκῆς εἰς τρία ἔσχισται. Ὀμφαλόεσσαν δ’ ἢ τὴν τῷ ὀμφαλῷ προσιζάνονσαν, ἢ τὴν ἐκ σύκων τῶν ὀμφαλοὺς ἐχόντων· τὰ γὰρ σῦκα κάτω τρύπας ἔχουσι δίκην ὀμφαλοῦ, δι’ ὧν τρυπῶν ὁ ὀπὸς αὐτῶν ῥεῖ. Γράφεται καὶ τριετεῖ ἐν νέκταρι, ἵν’ ἢ· τῆς καλῆς κράδης τὴν ἐκ τῶν σύκων αὐανθεῖσαν ἅλις πόσιν τὴν ὀμφαλόεσσαν ἐν τριετεῖ νέκταρι μίξαις. Ἀλλως· αὐανθεῖσαν τὴν ἀπὸ ξηρῶν σύκων, τριπετῆ δὲ τρίσχιστον, ὅτι τὰ φύλλα τῆς συκῆς εἰς τρία ἔσχισται. Τοῖς δὲ γράφεται καὶ εὐκραδέος· κελεύει οὖν ξηρὰ σῦκα μετ’ οἴνου ἑψήσαντα διδόναι πιεῖν. Ἢ ὀμφαλόεσσαν τὴν τροφόεσσαν παρὰ τὸν ὀμφαλόν· βρῶσις γὰρ ὀμφαλὸς, ἐπεὶ δι’ αὐτοῦ τὰ ἔμβρυα πάντα τὴν τροφὴν δέχεται καὶ ἀναπνεῖ, τοῦ στόματος μεμυκότος διὰ τὸ πλῆθος τῶν ὑγρῶν, ἵνα μὴ ἀπόληται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="351"> 
+<p rend="indent">Μελιζώροιο. Ἀμφίβολον, πότερον τὸ τῶν σύκων πόμα μελίζωρον εἴρηκεν, ἢ ἕτερον ἐκ τῆς μελιζώρου βοτάνης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="352"> 
+<p rend="indent">Τὸ δὲ γλάγος εἰν ἑνὶ χεύαις, ἀγγείῳ δηλονότι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="353"> 
+<p rend="indent">Ψαφαρὸν, αὐχμηρὸν, ξηροὺς δὲ φοίνικας κελεύει εἰς τὸ γάλα μιγνύναι· μίξον δέ φησι τὸ γάλα τοῖς ξηροῖς φοίνιξιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="354"> 
+<p rend="indent">Ἄλλοτε δ’ αυαλέης· ἀπὸ κοινοῦ τὸ καταμίσγεο καρπόν· ἀχρὰς δὲ καὶ βάκχη καὶ μυρτίνη εἶδος ἀπίων, ἔστι δὲ καὶ εἶδος ἐλαίας μυρτίνη καλουμένη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="356"> 
+<p rend="indent">Θηλάζειν φησὶ τὸν πάσχοντα ποτὲ μὲν γυναῖκα, ποτὲ δὲ βοῦν. Ἅτε δὴ βρέφος· ὡς οἷα βρέφος ἀρτιγενὲς, οὕτως ἐμπελάσοι τῷ <pb facs="theriacaetalexip00nica_0471"/> δεσμῷ ᾔγουν τῷ μαστῷ. Μοσχηδὸν δὲ δίμην μόσχου, δι’ οὗ σημαίνει τὸ ἁπαλὸν καὶ τρυφερόν· μόσχευμα γὰρ πᾶν τὸ ἁπαλόν. Ὅμηρος (<bibl xml:lang="mul">Il. λ, 105</bibl>). <quote type="blockquote">μόσχοισι λύγοισιν.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="358"> 
+<p rend="indent">Οἵη τ’ ἐξ ὑμένων βράσει ἡ νεαλὴς, ὅ ἐστιν ἡ νεαρὰ μόσχος τὰ οὔθατα ἀνακρούουσα ἐκ τῶν ὑμένων ταράσσει τὴν μενεοικέα χύσιν τῆς θηλῆς, καὶ τὰ ἑξῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="360"> 
+<p rend="indent">Ἔλαιόν φησι θερμὸν λαβὼν βιάζου ἐμεῖν, ἐντιθεὶς τὰς χεῖρας ἢ πτερὸν ἢ ἀπὸ τῶν παπύρων τὸν πρὸς ἔμετον ἐπιτήδειον, τῶν κακῶν φησι τοῦ φάρυγγος ἑλκυστῆρα Ἀνακεφαλαίωσις τῆς θεραπείας τῆς βουπρήστιδος· ἀπὸ συκῆς ξηρῶν σύκων τετριμμένων μετ’ οἴνου πόσις, ἢ μελιζώρου ἱκανὴ πόσις, ἢ γάλακτος καὶ φοινίκων καρποῦ μεμιγμένη πόσις, ἢ ψυκτῆς ἀχράδος ἢ ἄλλων ἀπίων μετ’ οἴνου, ἢ ἵνα θηλάζῃ μαστὸν γυναικὸς ὡς παιδίον, ἢ θερμοῦ ἐλαίου εἰς κόρον πόσις, δεῖ δ’ ἐφ’ ἑκάστῃ πόσει τοὺς δακτύλους χαλᾷν, ἢ πάπυρον, ἢ πτερὰ ἐμβάλλεν εἰς τὸ στόμα καὶ ἀναγκάζειν ἐμεῖν, ὅπως τάχιστα τῆς νόσον ἀπαλαγῇ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="364"> 
+<p rend="indent">Ἐὰν δὲ θρομβωθῇ, τουτέστι τυρωθῇ τὸ νεαλὲς γάλα, ἤγουν τὸ νεωστὶ ποθὲν, πνιγμὸς ἐπακολουθεῖ εἰς ἓν ἀθροιζομένου τοῦ πόματος ἤγουν τοῦ γάλακτος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="366"> 
+<p rend="indent">Τρισσὰς δὲ πόσιας ἀντὶ τοῦ τρεῖς μοίρας, μέσας μὲν ὄξεος, δοιὰς δὲ γλυκέος τουτέστι τὰς δύο μοίρας γλυκέος καὶ τὴν μέσην τούτων, τουτέστι τὴν μίαν ὄξους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="368"> 
+<p rend="indent">Ἀλλὰ καὶ τοῦ ἐκ τῆς Λιβύης σιλφίου τὰς ῥίζας. Ποτῷ ἐγκνήθεο, τουτέστιν ἔντριβε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="369"> 
+<p rend="indent">Ὀποῦ· τοῦ Κυρηναϊκοῦ λέγει. Ἰστέον, ὅτι οὗτος ὁ ὀπὸς συνεστηκώς ἐστι καὶ πεπηγὼς, ὥσπερ τὸ κομμίδιον ἢ ὁ λίβανος ἢ ἡ μαστίχη ἢ εἴ τι τοιοῦτον· διὰ τοῦτο οὖν εἶπε τήξας, οἱονεὶ ἀναλύσας. Ἐνὶ βάμματι ἀντὶ τοῦ ἐν ὄξει διαλύσας· ὁ γὰρ Κυρηναϊκὸς ὀπὸς διαλύει τὴν φαρμακείαν· καὶ γὰρ ἐὰν πεπηγότι γάλακτι ἐπιχέῃ αὐτόν τις, διαλυθήσεται· ἔστι δὲ καὶ τὸ νίτρον διαλυτικὸν τοῦ γάλακτος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="370"> 
+<p rend="indent">Κονίλην, ἤτοι κονίαν, ἢ θύμου καρπὸν, ἢ τῆς εὐκνήμου βότρυν, ὅπερ κόριον καλοῦσι, μετ’ οἴνου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="371"> 
+<p rend="indent">Ἄλλοτ’ ἀμύνει· ἄλλοτε δ’ ἀμύνει καὶ βότρυς εὐκνήμου, ὡσανεὶ τῆς καλὰς κνήμας ἐχούσης ἀμπέλου, κνήμας δὲ τὰ μεταξὺ τῶν κονδύλων ἢ τῶν κάμψεων λέγει, τοῦ βότρυος βρεχθέντος ἐν οἴνῳ· ἢ εὔκνημος εἶδος βοτάνης</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="373"> 
+<p rend="indent">Τοῦτο ἄξιον θαύματος, πῶς διαχεῖ ἡ πυτία τὸ συνεστηκὸς ἐν τῇ κοιλίᾳ γάλα, ἀλλ’ οὖν ἄλλο ἐπισυνίστησιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="374"> 
+<p rend="indent">Καὶ τὸ μελισσόφυλλον δέ φησιν δίδου σὺν ὄξει· ἢ μελίσσης ποτὸν ἔφη τὸ μέλι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="375"> 
+<p rend="indent">Στυφόεν δὲ ποτὸν τὴν ἡδύοσμον ἔφη κατ’ εὐφημισμόν. Μίνθη Ἅιδου παλλακὴ οὕτω καλουμένη, ἣν διεσπάραξεν ἡ Περσεφόνη, ἐφ’ ᾗ τὴν ὁμώνυμον πόαν ἀνέδωκεν ὁ Ἅιδης. <pb facs="theriacaetalexip00nica_0472"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="376"> 
+<p rend="indent">Τὸ δορύκνιον, ὃ καὶ μελισσόφυλλον καλεῖται, ἀγρία βοτάνη ἐστίν· αὕτη κοπτομένη ὀπὸν ἀποστάζει ὅμοιον γάλακτι τὴν θέαν καὶ τὴν γεῦσιν καὶ τὴν ὀσμὴν, ὅθεν καὶ δυσδιάκριτόν ἐστι τῷ πίνοντι, πότερον γάλα ἐστὶν, ἢ οὔ. Δημοφῶν δ’ ἐτυμολογῶν φησιν οὕτω κεκλῆσθαι διὰ τὸ δόρατι αὐτὸν ἴσον εἶναι κατὰ τὴν ἀναίρεσιν, Λυσίμαχος δ’ ὁ Ἱπποκράτειος διὰ τὸ ξύλον εἶναι κνίφης παρασκευαστικὸν τοῖς προςενεγκαμένοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="377"> 
+<p rend="indent">Ὠπὴ δ’ ἡ πρόσοψις, ἡ θέα, τὸ εἶδος. Καὶ ἡ βρῶσις περὶ τοῖς στόμασιν ἀπεικάζεται γάλακτι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="378"> 
+<p rend="indent">Λυγμοὶ δ’ αἱ τοῦ πνεύματος ἀναγωγαί.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="382"> 
+<p rend="indent">Τηνεσμῷ τῇ διατάσει· διαφέρει τηνεσμὸς καὶ δυσεντέριον, σύνεγγυς μέντοι ἀλλήλων· καὶ γὰρ ἔστι πάθος, ὃ καλεῖται χορδαψὸς, τηνεσμὸς δ’ ἐστὶν, ὃν νῦν λέγομεν βιασμόν. Ἄλλως· τοῖς τηνεσμώδεσι παρακολουθεῖ δυσεντερία, εἶτα ὁ χορδαψὸς, ὃν δή φασι συναμματιζομένου τοῦ ἐντέρου, ὁτὲ προηγεῖταί τηνεσμὸς, ὁτὲ δυσεντερία, τηνεσμῷ περὶ τὸ δυσεντέριον τάσις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="387"> 
+<p rend="indent">Καὶ τῆς ὄρνιθος τηκομένη ἡ σὰρξ τῶν εὐτραφῶν στηθῶν ἤμυνε βρωθεῖσα· τὸ στῆθος τῆς λιπαρᾶς φησιν ὄρνιθος βρωθὲν ὠφελεῖ· θωρήκων οὖν τῶν στηθίων σαρκῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="389"> 
+<p rend="indent">Χυλὸς ἅλις, ἤτοι τοῦ στήθους τῆς ὄρνιθος ὁ χυλὸς, ἢ ἕτερον βοήθημα λέγει, χυλὸν πτισάνης, ἄμεινον δὲ τὸ πρότερον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="390"> 
+<p rend="indent">Καὶ ὅσα κατὰ τοὺς φυκιόεντας ἀγμοὺς, ὅ ἐστιν αἰγιαλοὺς, περιβόσκεται κνώδαλα, κωβιοὶ καὶ τὰ τοιαῦτα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="393"> 
+<p rend="indent">Κάλχης· εἶδος πορφύρας, ἀφ’ ἧς αἱ γυναῖκες κάλχιον βάπτουσιν· καλχαίνειν γὰρ τὸ πορφύρειν. Τὸν δὲ στρόμβον, ὃν ἔλεγον οἱ ἀρχαῖοι ὄστρακον, τῶν κογχυλίων, οἷς καὶ ἐχρῶντο ἀντὶ σάλπιγγος· καὶ Ἀπολλόδωρος ἐν τοῖς Ὁμήρου οὕτως εἶπεν (<bibl xml:lang="mul">Il. ξ 413</bibl>) <quote type="blockquote">Στρόμβον δ’ ὣς ἔσσευεν.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="394"> 
+<p rend="indent">Αἰθηέντος δ’ ἐρυθροῦ καὶ πυρροῦ κατὰ τὴν σάρκα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="396"> 
+<p rend="indent">Τήθη τε· τὰς ἀγρίας λεπάδας, ἃς ἡμεῖς ὠτία λέγομεν, ὁ δ’ Ἀριστοτέλης ὄστρεια, καὶ Ὅμηρος (<bibl xml:lang="mul">Il. π 747</bibl>) κοινῶς τὰ ὄστρεια. Τὸ δὲ δὴν ἔσεται, ἤτοι πολὺ ἀπέσται ἀντὶ τοῦ ἐκτὸς ἔσται. Καὶ τὸ γεραιόμενον αὐξανόμενον ἐν τοῖς βρύοις, ἢ νηχόμενον, ἢ ἀγρευόμενον, ἢ κοσμούμενον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="398"> 
+<p rend="indent">Τὸ Φαρικὸν ὁμοίως τῶν θανασίμων ἐστὶν, ἱστορεῖ δὲ Πραξαγόρας κληθῆναι αὐτὸ ἀπὸ Φαρικοῦ τινος Κρητὸς, τοῦ ἐξευρόντος αὐτό. Ἄλλως· τοῦτό φησιν ἐν Φάροις τῆς Ἀρκαδίας εὑρεθῆναι, καλεῖται δὲ καὶ Μηδικόν· τινὲς δέ φασιν αὐτὸ πρῶτον ἐν Θεσσαλίᾳ εὑρεθῆναι ἐν Φέραις, ἄλλοι δ’ ἐν Λακεδαίμονι. Φᾶρις γοῦν ἐστι τῆς Λακωνικῆς· <quote type="blockquote">Φᾶρίν τε Σπάρτην τε (<bibl xml:lang="mul">Il. β 582</bibl>).</quote> Τοῦτο δὲ τὸ ποτὸν τῇ μὲν γεύσει ἐστὶν ὅμοιον νάρδῳ, τοῦ δὲ πεπωκότος τὰς μὲν σιαγόνας ἐνέπλησε, τοῖς δὲ τοῦ σώματος πᾶσι μέλεσι τρόμον ἐπήνεγκε καὶ παραφροσύνην ἐν τοῖς τῆς ψυχῆς νοήμασιν ἐνέθηκεν. <pb facs="theriacaetalexip00nica_0473"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="399"> 
+<p rend="indent">Γευθμῷ· τῇ γεύσει. Ἰσαιομένην· ὁμοίαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="400"> 
+<p rend="indent">Ηνυσε δὲ σφαλερούς· ἐποίησε τρομεροὺς καὶ παράφρονας, καὶ ἐν μιᾷ ἡμέρᾳ πολλάκις πρὸς θάνατον ἤγαγεν· μονήρει γὰρ ἀκτῖνι ἀντὶ τοῦ ἐν μιᾷ ἡμέρᾳ ἀναιρεῖ τὸν ἄνδρα τὸν βαρὺν, ἤτοι γενναῖον, ἰδίως δὲ μονήρει εἶπεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="402"> 
+<p rend="indent">Σταδίην δὲ σταθμῷ, ἢ ἀντὶ τοῦ σταθμηθεῖσαν, οὐκ εἶπε δὲ πόσον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="403"> 
+<p rend="indent">Καὶ θυλακόεσσαν τὴν ἐμφερῆ θυλάκῳ, σχηματίσας δ’ εἶπεν ἀπὸ τῆς ῥίζης· τοιαύτη γὰρ ἡ τῆς νάρδου ῥίζα, θυλακώδης τῷ εἴδει· διὸ καὶ παρά τινων θυλάκιον τῆς νάρδου ὀνομάζεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="404"> 
+<p rend="indent">Αἱ ἐξοχαὶ αὐξάνουσι Κέστρου, ποταμοῦ Παμφυλίας ἢ Κιλικίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="405"> 
+<p rend="indent">Τὸ σμυρνεῖον παραπλήσιόν ἐστι νάρθηκι, τὸ δὲ σπέρμα πράων ἔχει, ὀσμὴν δὲ σμύρνης. Αἴνυσο· λάβε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="406"> 
+<p rend="indent">Τὸ δ’ ἴριδα ὤφειλεν ἶριν, ὥσπερ ἔριν· εἴη δ’ ὀξυτόνως ἰρὶς, ὥσπερ βολίς· ἢ ὡς Κύπριδα. Λειριόεν κάρη· τὸ τοῦ κρίνου ἄνθημα. Ἀφρὼ ἡ Ἀφροδίτη ἢ ἀφρογενὴς ὑποκοριστικῶς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="407"> 
+<p rend="indent">Θρίοις· φύλλοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="408"> 
+<p rend="indent">Ὁνειδείην· αἰσχύνην.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="409"> 
+<p rend="indent">Βρωμήεντος· τοῦ ὄνου. Ἐναλδήσασα· ἐναυξήσασα. Κορύνην· τὸ αἰδοῖον τοῦ ὄνου. Λειριόεν κάρη· τὴν κεφαλὴν τοῦ λειρίου, λείριον δέ φασι τὸ κρίνον· τούτῳ δὲ λέγεται τὴν Ἀφροδίτην ἐρίσαι περὶ εὐχροίας, τὴν δ’ ὀργισθεῖσαν ὅμοιον αἰδοίῳ ποιῆσαι ὄνου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="410"> 
+<p rend="indent">Σκύλαιο· ξύρησον. Ἐπεσίνατο· ἔβλαψεν. Περὶ κόρσεα πλάσσοις· ἐπίπλασσε τὴν κεφαλήν. Σκύλαιο κάρη· κελεύει ξυρᾷν τὴν κεφαλὴν αὐτοῦ καὶ καταπλάττειν πηγάνῳ καὶ ἀλεύρῳ κριθίνῳ καὶ ποτίζειν νάρδῳ ὡς πλεῖστον, καὶ ὄξους ἐσκευασμένου· βλάπτεσθαι δέ φησι τὸ πήγανον ὑπὸ τῆς κάμπης. Ἄλλως· ξύρισόν φησι τὴν κεφαλὴν καὶ κατάπλασον ὠμῇ λύσει μετὰ πηγάνου· τὸ δὲ πήγανον παρὰ τὸ πήγνυσθαι τὴν γονήν· ἔστι γὰρ καὶ ἐπισχετικὸν τῆς συνουσίας, διὸ καὶ οἱ μυούμενοι αὐτῷ χρῶνται· ἢ διὰ τὸ ἐν πάγοις φύεσθαι τὸ πήγανον. Ἄλλως· Σκύλαιό φησι τὴν κεφαλὴν τοῦ πηγάνου, καὶ ἔπαρον αὐτοῦ τὴν λάχνην, ἤγουν τὸ ἄνθος, κόψας αὐτὸ κάτωθεν εὐήκει ξυρῷ, ὅ ἐστιν εὐακονήτῳ, καὶ ἔψησον ἄλευρα κριθῶν νεάλεστα καὶ φυλλάδα πηγάνου ἐν ὄξει, καὶ ποίησον τροχίσκους, καὶ περὶ τὴν κεφαλὴν τοῦ πάσχοντος κατάπλασσε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="415"> 
+<p rend="indent">Μηδεὶς ἀπείρως ἔχων τοῦ ὑοσκυάμου τὴν νηδὺν κορέσκοι, οἷα ποιοῦσιν οἱ σφαλλόμενοι τοῖς φρεσίν· ἰδίως δ’ εἴρηκε τὸ ἀιδρήεντα ἀντὶ τοῦ ἀιδρηέντως· λέγει οὖν, ὅτι ἐάν τις ἀπείρως προσενέγκῃ τὸν ὑοσκύαμον περὶ τὰ ἁπαλὰ λάχανα σὺν τοῖς σπέρμασιν ἁπαλοῖς οὖσιν, ἢ καὶ ὅταν τὰ παιδία προσενέγκηται, ποίει παραφυλάττεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="416"> 
+<p rend="indent">Παρασφαλέες δὲ σπέρχονται ἀντὶ τοῦ οἱ ἐσφαλμένοι τρέχουσι καὶ σπεύδουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="418"> 
+<p rend="indent">Κοῦροι· ὅπερ οἱ παῖδες οἱ ἄρτι ἐπισύρεσθαι παυσάμενοι καὶ τὰς τροφοὺς ἀπαρνησάμενοι ποιοῦσιν ἀγνοίᾳ, καὶ ἐμβάλλοντες εἰς τὰ χαλινὰ αὐτῶν, ὅπερ ἂν αὐτοῖς ὑποπέσηται ἢ εὕρωσιν. <pb facs="theriacaetalexip00nica_0474"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="417"> 
+<p rend="indent">Ἠὲ νέον σπείρημα· λέγει τὸ ἄκρον τῆς κόμης, ὅ ἐστιν ἁπαλὸν, ὃ δὴ πολλάκις συμβαίνει τοῖς ἤδη δυναμένοις παισὶ χωρὶς τῶν τιθηνῶν πορεύεσθαι καὶ ἐσθίειν. Ἄλλως· νέον σπείρημα· οἱ ἔτι τὰς τρίχας ἀπὸ τῆς σπορᾶς φθεροῦντες· σπείρημα γὰρ τὸ σπέρμα. Ἀμφικάρηνα κομάων, ἤγουν τὰ περὶ τὴν κεφαλὴν τῶν κομῶν. Γράφεται δὲ τὸ σπέρχονται καὶ τεύχονται ἀντὶ τοῦ ποιοῦσιν, ὁ δὲ νοῦς τοιοῦτος· τὰ παιδία τὰ νεωστὶ ἐκφυγόντα τὸ ἐπὶ γαστέρα σύρεσθαι καὶ τετραποδίζειν καὶ ἀπειπάμενα τῶν τριχῶν τὸ ἀμφικάρηνον, τουτέστι τὰ νεωστὶ κουρευθέντα καὶ ἀρξάμενα περιπατεῖν ἄνευ τῆς τροφοῦ, λέγει δὲ τὰ ὄντα περὶ τὰ τέσσαρα ἔτη καὶ τὰ πέντε· ταῦτα γὰρ ἐπιτυγχάνοντα τῷ ὑοσκυάμῳ ἐσθίουσιν αὐτὸν καὶ βλάπτονται· ὀλοὴν γὰρ ἑρπυδόνα τὸν τετραποδισμὸν καὶ τὸν συρμόν. Ἄνις δ’ ἀντὶ τοῦ ἄνευ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="420"> 
+<p rend="indent">Τῇ ἀφροσύνῃ τρώγωσι τοὺς κακανθήσαντας κλάδους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="421"> 
+<p rend="indent">Οἷα γὰρ οἱ νεωστὶ ἐν τοῖς γναθμοῖς τοὺς βρωτῆρας ὀδόντας ὑποφαίνοντες, τοιοῦτός φησι κνηθμὸς ἐν τοῖς φαγοῦσιν ὑοσκύαμον, οἷος ἐν τοῖς παισὶν, ὅταν ἀποβάλλωσι τοὺς ὀδόντας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="424"> 
+<p rend="indent">Βουκέραος· εἶδος βοτάνης, τοῦτο δὲ καμπύλον ἐστὶ καθάπερ βοὸς κέρας· διὸ καὶ τῆς ὀνομασίας ταύτης ἔτυχεν. Καὶ σιτηγόνου τοῦ εἰς σιτισμὸν καὶ τροφὴν γινομένου· γράφεται καὶ χιλογόνου. Ὅρρα κεραίας· ὅπερ βούκερας κεραίας τινὰς εὐκαμπεῖς κάτωθεν ὑπὸ τοῖς ὑπηνεμίοις φύλλοις αὔξει. Ἄλλως· σιτηγόνου· γράφεται καὶ κεβληγόνου, τοῦ ἐν τῇ κεφαλῇ ἔχοντος τὸν γόνον· κέβλη γὰρ ἡ κεφαλὴ ἐν συγκοπῇ τοῦ α καὶ τροπῇ τοῦ φ εἰς β.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="426"> 
+<p rend="indent">Ἀτμενίῳ δὲ τῷ ἐλαίῳ τῷ μετὰ κακοπαθείας γινομένῳ· ἀτμένες γὰρ οἱ δοῦλοι, οἷς ἕπεται τὸ κακοπαθεῖν· μέγα φησὶν ὄνειάρ ἐστι τὸ βούκερας, ὅταν ἐμπλεύσῃ καὶ βράχῇ τῷ ἀτμενίῳ ἐλαίῳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="428"> 
+<p rend="indent">Τουτέστιν ὠμὰ τὰ φύλλα διαμασήσασθαι καὶ τὸν χυλὸν αὐτῶν καταπίνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="429"> 
+<p rend="indent">Κίχορα δὲ καὶ καρδαμίδας εἴδη λαχάνων καὶ γηθυλλίδας εἶδος κρομμύων, ἤτοι τὰς κεφαλὰς ἢ τὰς ῥίζας, ἢ τὰ ὑπ’ ἐνίων λεγόμενα ἀγριόφυτα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="432"> 
+<p rend="indent">Καὶ εὔαγλις, καλὰς ἄγλιθας ἔχουσα· ἄγλιθες οἱ κόκκοι, ἐξ ὧν αἱ κεφαλαὶ τῶν σκορόδων σύγκεινται, ἅπερ σκελίδια ἡ συνήθειά φησιν, τὰ δὲ κίχορα οἱ Ἀττικοὶ κιχόριά φασιν, ἡμεῖς δὲ γογγύλια, γαθυλλὶς τὸ νέον κρόμμυον. Κίχορα ἡμεῖς μὲν γιγγικίδια, οἱ δ’ Ἀττικοὶ κιχόρια.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="433"> 
+<p rend="indent">Κεβληγόνου· τῆς ἐν τῇ κεφαλῇ τὸν γόνον ἐχούσης, ὅ ἐστι τὸ σπέρμα· συγγενὲς γὰρ τὸ β τῷ φ· καὶ Καλλίμαχος· <quote type="blockquote"><lb/>ἀμφί τε κέβλην <lb/>εἰργμένος ἀγλίθων οὖλον ἔχει στέφανον.</quote> Τινὲς τῆς κατὰ τὴν κεφαλὴν κομώσης μήκωνος· βοτάνη γάρ ἐστιν ἡ μήκων, ἐν τῇ κεφαλῇ ἔχουσα τὸν γόνον· καὶ Εὐφορίων περὶ τῆς Ἀθηνᾶς· <quote type="blockquote">κεβληγόνου Ἀτρυτώνης.</quote> Μήκων δ’ εἴρηται παρὰ τὸ μὴ κονεῖν, ὅ ἐστι μὴ ἐνεργεῖν· κονεῖν γὰρ λέγεται τὸ ἐνεργεῖν, κωλυτικὸν δὲ τοῦτο τῶν κατὰ φύσιν ἐνεργειῶν. <pb facs="theriacaetalexip00nica_0475"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="434"> 
+<p rend="indent">Καθυπνέας· ὑπνοῦντας· ἄγει γὰρ τὸ μηκώνειον εἰς ὕπνον· ἐτυμολογοῦσι δὲ τὴν μήκωνα, ἤτοι τὴν μὴ ἀκονεῖν, ὡς εἴρηται, μηδ’ ἐνεργεῖν ποιοῦσαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="435"> 
+<p rend="indent">Ἀντὶ τοῦ οὐκ ἀνοίγονται οἱ ὀφθαλμοί.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="436"> 
+<p rend="indent">Τὸ δὲ δέδηεν ἀντὶ τοῦ δέδεται, δεσμεῖται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="437"> 
+<p rend="indent">Ὀδμήεις δ’ ὀζώδης, ὀδμὴν ἔχων τὴν ἀπὸ τοῦ ὀποῦ· φέρεται γὰρ ἱδρὼς ψυχομένου τοῦ σώματος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="438"> 
+<p rend="indent">Τὸ δὲ πρόσωπον ὠχρὸν γίνεται καὶ τὰ χείλη ἐμπίμπραται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="439"> 
+<p rend="indent">Παῦρον· ἐκ δὲ τοῦ αὐχένος ὀλίγον ἆσθμα ἑλκόμενον ψυχρὸν διέρχεται, καὶ πάρεσις τῶν σιαγόγων γίνεται, πολλάκις δὲ καὶ οἱ ὄνυχες πελιδνοὶ γινόμενοι, ὡς ἐντὸς τοῦ αἵματος χωροῦντος, καὶ ἡ ῥὶς στρεβλουμένη καὶ οἱ ὀφθαλμοὶ κοῖλοι γινόμενοι θάνατον ἀπαγγέλλουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="443"> 
+<p rend="indent">Μέλοιο δ’ ἐπιμελοῦ τῆς θεραπείας καὶ βοηθείας, γλυκὺν θερμὸν οἶνον διδοὺς αὐτῷ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="444"> 
+<p rend="indent">Κεκαφηότα ἀντὶ τοῦ ὀλιγοψυχοῦντα πληροῖς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="445"> 
+<p rend="indent">Καὶ τινθαλέῳ θερμῷ, διαπύρῳ. Ἔργα μελίσσης ἀντὶ τοῦ σύμμισγε καὶ μέλι μετὰ θερμοῦ οἴνου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="446"> 
+<p rend="indent">Ὑμηττίδος δ’ Ἀττικοῦ ἀφ’ Ὑμηττοῦ τοῦ ὄρους Ἀττικῆς. Μόσχου· αἱ μέλισσαι ὥς φησιν αὐτός (<bibl xml:lang="lat">Th. 741</bibl>)· <quote type="blockquote">ἵπποι μὲν σφηκῶν γένεσις, ταῦροι δὲ μελισσῶν.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="448"> 
+<p rend="indent">Κατὰ δρυός· παλαιάν τινα μελιττουργίαν ἐκτίθεται· μήπω γὰρ ἡμερούμεναι αἱ μέλισσαι, ἀλλ’ ἔτι ἄγριαι οὖσαι, ἐν τοῖς κοιλώμασι τῶν δρυῶν τὰ κηρία συνετίθεσαν, καὶ νῦν ἔτι ἔστιν ὅτε τοῦτο ποιοῦσιν. Τὸ δ’ ἐκτίσαντο ἀντὶ τοῦ κατεσκεύασαν. Ἄλλως· τοῦτο καὶ Ἡσίοδος (<bibl>ἔργ. 233</bibl>)· <quote type="blockquote">ἄκρη μέν τε φέρει βαλάνους, μέσση δὲ μελίσσας.</quote> καὶ Φωκυλίδης (<bibl>Ποι. νουθ. 159-162</bibl>)· <quote type="blockquote"><lb/>κάμνει δ’ ἠερόφοιτος ἀριστοπόνος τε μέλισσα <lb/>ἠὲ πέτρης κοίλης κατὰ χηραμὸν ἢ δονάκεσσιν,  <lb/>ἢ δρυὸς ὠγυγίης κατὰ κοιλάδος ἔνδοθι σίμβλων, <lb/>σμήνεσι μυριότρητα κατ’ ἄγγεα κηροδομοῦσα.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="449"> 
+<p rend="indent">Φησὶ δ’ ὅτι ἐν τῷ Ὑμηττῷ πρῶτον ἐγένοντο μέλισσαι. Συνομήρεες· συνερχόμεναι βοτρυδόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="450"> 
+<p rend="indent">Πολυωπέας· πολλὰς ὀπὰς ἐχούσας· τοιαῦτα γὰρ τὰ κηρία. Ὄμπαι οἱ μέλιτι δεδευμένοι πυροί· καὶ Καλλίμαχος· ἐν δὲ θεοῖσιν ἐπὶ φλογὶ καιέμεν ὄμπνας. τούτους γὰρ Δημητρὶ ἔθυον· Νίκανδρος δ’ ἰδίως εἴρηκε τὰ κηρία ὄμπας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="451"> 
+<p rend="indent">Ἀντὶ τοῦ διερχόμεναι τὰ θύμα τοῖς ποσίν. Τὸ δ’ ἀνθεμόεσσαν γράφεται καὶ ἠνεμόεσσαν, ἐρείκη δ’ ἐστὶ δένδρον, οὑ τὰ φύλλα οἱ μυούμενοι ὑποστρωννύουσι διὰ τὸ ψυκτικὰ εἶναι καὶ ἁγνά· ἔστι γὰρ τὸ ἁγνεύειν καὶ χωρὶς γονῆς μένειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="452"> 
+<p rend="indent">Ἡ σύνταξις οὕτως· ἢ καὶ ἰρινέου μαλλὸν βαθὺν κορέσκων ἕλκοις ἀντὶ τοῦ ἕλκε τὸν ἰὸν, ὀχλίζων διὰ τὸ κλείειν τὸ στόμα τῇ μύσει <pb facs="theriacaetalexip00nica_0476"/> συνδεδεμένον τοῖς χαλινοῖς, διανοίγων αὐτὸ ἐνθλίβοις τῷ ἐρίῳ ῥόδινον ἢ καὶ ἴρινον ἔλαιον. Τότ’ ἠμύουσιν ἀντὶ τοῦ ὅτ’ ἠμύουσιν οἱ πασχοντες, τοὺς συμμεμυκότας χαλινοὺς αὐτῶν ἐνθλίβοις τῷ ἐρίῳ βοηθείας χάριν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="455"> 
+<p rend="indent">Τοῦ κυπρίου ἐλαίου φησὶν, ὅ ἐστι θερμαντικόν. Καὶ μορόεντος ἀντὶ τοῦ μοροέσσης· καὶ Ὅμηρος (<bibl xml:lang="mul">Od. σ 298</bibl>)· <quote type="blockquote">τρίγληνα μορόεντα.</quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="456"> 
+<p rend="indent">Διὰ ῥέθος ἔγρεο· κατὰ τὸ πρόσωπον τύπτων καὶ πλήσσων ἔγειρε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="457"> 
+<p rend="indent">Παλάσσων ἀντὶ τοῦ κοιμώμενον κινῶν καὶ σείων ἀνάστησον, ὅπως κεφαλαλγῶν τὸν ὀλέθριον ὕπνον ἀποβάλλῃ, καὶ τὸν κακὸν πόνον ἐξεμέσῃ βοηθούμενος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="458"> 
+<p rend="indent">Κῶμα· τὴν μεταξὺ ὕπνου καὶ ἐγρηγόρσεως καταφορὰν κῶμα καλοῦσιν, ὅθεν καὶ κωμάζειν τὸ ἐπιφοιτᾷν τοῖς κοιμωμένοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="459"> 
+<p rend="indent">Τὸ δὲ τῆμος ἐξερύγῃσιν ἀντὶ τοῦ τηνικαῦτα ἐξεμέσῃ ἀποοβῶν τὸ κακὸν ἄλγος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="460"> 
+<p rend="indent">Ἀλλὰ καὶ σπεῖρα ἤγουν ῥάκη βρέχων ἐν οἰνελαίῳ τρίβε καὶ ἀναθέρμαινε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="462"> 
+<p rend="indent">Ἐν πυέλῳ· κελεύει δ’ αὐτὸν ἐν πυέλῳ ἤγουν ἐν σκάφῃ θερμοῦ ὕδατος καθεῖναι καὶ καταντλᾷν τῷ θερμῷ, ἵνα τὸ συντεθραμμένον δέρμα διαλυθῇ. Ἐμβάπτεο σάρκα, τὴν σάρκα αὐτοῦ τοῦ πάσχοντος δηλονότι, ἄγε ἐκεῖνον αὐτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="463"> 
+<p rend="indent">Κυρίως δ’ ἐπαιονᾶσθαί ἐστι τὸ ἐπ’ ἠιόνος λούεσθαι, νῦν δὲ τὸ ἐπὶ τινθαλέοις ἤγουν θερμοῖς λοετροῖς θερμαίνεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="464"> 
+<p rend="indent">Αἷμα δ’ ἀναλυόμενος ἀντὶ τοῦ τὸ θρομβῶσαν αἷμα τοῦ παθόντος διὰ την ἐκ τοῦ δηλητηρίου ψύξιν ἀναλύων τῇ θέρμῃ τῶν λοετρῶν. Ἐσκληκότα ῥινὸν τὸ κατεσκληκὸς δέρμα φησίν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="465"> 
+<p rend="indent">Τοῦ θαλασσίου λαγωοῦ, ὅς ἐστιν εἶδος ἰχθύος, καὶ Ἱππῶναξ μνημονεύει· τὴν μὲν ἀσθένειαν ἀφρῷ παραπλήσιος, τὴν δ’ ἐπιφάνειαν μέλας, θανάσιμος δὲ βροθεὶς, οὗ ἡ μὲν ὀσμὴ ταῖς τῶν ἰχθύων λεπίσι καὶ τῷ ἀποπλύματι αὐτῶν ἔοικεν, ἡ δὲ γεῦσις ἰχθύων σεσηπότων γεύσει ὁμοία ἐστίν. Κακοφθορέος δὲ κακῶς φθείροντος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="466"> 
+<p rend="indent">Ἤγουν τῆς πολυψήφου θαλάσσης· στεῖαι γὰρ αἱ ψῆφοι τῆς θαλάσσης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="468"> 
+<p rend="indent">Νεπόδων δ’ ἰχθύων. Καὶ σαπρυνθέντων ἀντὶ τοῦ σαπρωθέντων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="469"> 
+<p rend="indent">Λοπὶς αὐξίδα· ἢ ὅταν ἡ λοπὶς τὴν ὅλην αὐξίδα μολύνῃ, ἐξ οὗ δηλοῖ τὸ φθείρει· αὐξὶς εἶδος ἰχθύος ὅμοιον θύννῳ. Αὐξίδα χραίνῃ, τουτέστι τὸ σῶμα ἀφανίζῃ, αὐξὶς δὲ τὸ σῶμα· μετὰ γὰρ τὸ ἀγρευθῆναι οἷον δή τινα ἰχθὺν, εἰ μένοι ἐπ’ αὐτῷ τὸ λέπος αὐτοῦ, ἀφανίζει αὐτὸν καὶ ὄζειν ποιεῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="470"> 
+<p rend="indent">Ὁ λαγωὸς νεωστὶ γεννηθεὶς ὅμοιός ἐστι ταῖς θριξὶν ἤγουν κατὰ τὰς τρίχας τῆς τευθίδος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="471"> 
+<p rend="indent">Τεύθου, τουτέστι τοῦ ἄρρενος. Ὑπ’ ὀστλίγεσσιν, ἐπειδὴ γληνώδης ὑπάρχει, οστλιγγας δὲ λέγει τοὺς βοστρύχους, ὅ ἐστι τὰς κόμας <pb facs="theriacaetalexip00nica_0477"/> τῶν τευθίδων καὶ σηπιῶν, ἐν αἷς ἄρτι γεννώμενοι οἱ θαλάσσιοι λαγωοὶ διατρίβουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="473"> 
+<p rend="indent">Χολῄ· τῷ μέλανι. Ἀγρώστορος· ἐπειδὰν γὰρ ἴδῃ τὸν ἁλιέα, ἐκβάλλει τὸ μέλαν εἰς τὴν θάλασσαν, ἵνα ἀθεώρητος ᾖ· τοῖς δὲ πίνουσιν ἀκολουθεῖ σκότωσις χολώδης, ἰκτεριώδης· τοῦτο γάρ φησιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="474"> 
+<p rend="indent">Τῶν ἤτοι ζοφόεις, τουτέστι τῶν φαγόντων τὸν λαγωόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="475"> 
+<p rend="indent">Περιστολάδην δ’ ἀντὶ τοῦ οὐκ ἀθρόαι, ἀλλ’ οἷον κατὰ σταλαγμὸν ἐλαττοῦνται, ὁ δὲ λόγος· οἷον κατὰ σταλαγμὸν ἐκ τοῦ κατ’ ὀλίγον τηκόμεναι καὶ καταστάζουσαι φθείρονται, ὁ δὲ τροφὴν οὐ προσίεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="476"> 
+<p rend="indent">Ῥινός· ἀρσενικῶς εἶπεν ὁ ῥινὸς, τουτέστι τὸ δέρμα· καὶ τοῦ δέρματος κατὰ τὴν ἐπιφάνειαν γίνεται ἔπαρμα, μάλιστα δὲ περὶ τὰ σφυρὰ, περὶ δὲ τὰ τοῦ προσώπου μῆλα γίνεται οἰδήματα ἐν ἐρυθήματι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="478"> 
+<p rend="indent">Κυλοιδιόωντος, τοὺς ὀφθαλμοὺς διοιδοῦντος καὶ κοίλους ἔχοντος· κοῖλοι γάρ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="479"> 
+<p rend="indent">Ἐπακολουθεῖ γὰρ καὶ ὀλιγωτέρα ἔκκρισις τῶν οὔρων, ποτὲ μὲν πορφυρᾶ, ποτὲ δ’ αἱματώδης διὰ τὸ ξύεσθαι τὰ ἐντός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="481"> 
+<p rend="indent">Πᾶς δ’ ἔλλοψ, τουτέστιν ἰχθὺς φανεὶς τοῖς ὀφθαλμοῖς αὐτοῦ μισεῖται, τουτέστιν, ἐὰν ἴδῃ ἰχθὺν, ἀποστρέφεται (τοῦτο γὰρ σημαίνει τὸ ἐμυδάξατο ἀντὶ τοῦ ἐμυσάξατο, ἀπεμυκτήρισε), παρῇτήσατο τοσοῦτον, ὡς καὶ ναυτιάσαι καὶ ἐμέσαι ὑπὸ τῆς ἀηδίας βιάζεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="483"> 
+<p rend="indent">Τῶν μὲν φοινήεσσαν. Γράφεται τῶν μὲν Φωκήεσσαν ἀντὶ τοῦ Φωκικήν· ἡ γὰρ τοῦ ἐλλεβόρου πόσις ἐν Φωκίδι δοκεῖ εὑρεθῆναι· κελεύει δ’ ἐλλέβορον ἢ σκαμμωνίαν διδόναι πίνειν τῷ κάμνοντι, ἵνα τῆς κοιλίας κατενεχθείσης καὶ τὸ τοῦ φαρμάκου κακὸν συναπορραγῇ. Εἴρηκε δὲ καὶ φοινήεσσαν τὴν τοῦ μέλανος ἐλλεβόρου πόσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="484"> 
+<p rend="indent">Τὸ κάμωνος κατ’ ἔνδειαν τοῦ σ, λέγει δὲ τὸν σκαμμωνίας χυλόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="485"> 
+<p rend="indent">Ἀντὶ τοῦ τὰ κόπρια καὶ σκύβαλα ἐκβάλλῃ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="486"> 
+<p rend="indent">Βρωμήεντος τοῦ ὄνου παρὰ τὸ βρωμᾶσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="488"> 
+<p rend="indent">Κεδρινέαν νῦν λέγει, εἰ καὶ πίσσαν αὐτὴν εἶπεν· πᾶν γὰρ τὸ ἀποστάζον πίσσαν καλεῖ. Πελάνου βάρος ἀντὶ τοῦ ὀβολοῦ ὁλκήν· οὐ γὰρ μόνον τὸ πέμμα, ἤγουν τὸ ἕψημα, πέλανος λέγεται, ἀλλὰ καὶ ἡ τοῦ ὀβολοῦ ὁλκή. Ἄλλως· τῆς πεπηγυίας κεδρίνης πίσσης, λέγει δὲ τὴν κεδρίαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="490"> 
+<p rend="indent">Οἰνωπῆς· εἶδος ῥοιᾶς καὶ οἰνάδος. Καὶ προμένειον δ’ εἶδος ῥοιᾶς, ὠνόμασε δ’ αὐτὴν ἀπό τινος Προμένου Κρητός. Καὶ τὴν Αἰγινῖτιν δὲ καὶ ὅσαι τὰ σκληρὰ κάρφη, ἤγουν τοὺς ἁπλοῦς κόκκους κατ’ ἀντίφρασιν, τῇ ἰσχνῇ καλύπτρᾳ καλύπτουσιν· ἢ ὅτι κάρφη τὰ λέπη, τοὺς φλοιούς. Ἄλλως· διαφράσσουσι καλύπτρῃ τῇ ἰσχνῇ περιβολῇ τῶν κόκκων, ὅσαι φησὶ τὰ σκληρὰ καὶ φοίνια ἤγουν ἐρυθρὰ κάρφη, τουτέστι τοὺς ἐρυθροὺς κόκκους, τῇ ἀραχνώδει καὶ ὑμενώδει καλύπτρᾳ διαφράσσουσι, τουτέστι τῷ ἔσωθεν τοῦ δέρματος ὑμένι. <pb facs="theriacaetalexip00nica_0478"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="493"> 
+<p rend="indent">Τὴν ἐν οἴνῳ φησὶ τρωγομένην βορὰν, τουτέστι τὴν σταφυλὴν ἐν κυρτίδι θλίψας καὶ οἱονεὶ ἐκπιέσας δίδου αὐτῷ πιεῖν, οἱονεὶ γλεῦκος, ὃ λέγεται ἐν συνηθείᾳ μοῦστον· κυρτὶς κατασκεύασμά τι ἐκ λεπτῶν σχοινίων γεγονὸς, ᾧ καὶ οἱ μυρεψοὶ χρῶνται περὶ τὴν τῶν μύρων ἔκθλιψιν, ὑλιστήριον αὐτὸ καλοῦντες ἢ καὶ ὑλίστριον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="494"> 
+<p rend="indent">Τριπτὴρ δ’ ἐστὶ κατασκεύασμα πρὸς πιεσμὸν εὔθετον. Ἄλλως· κυρτὶς κατασκεύασμά τι, ἐν ᾧ τὰς σταφυλὰς θλίβουσι, λέγει δὲ σταφυλὴν δίδου πιεσθεῖσαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="495"> 
+<p rend="indent">Ἢν δέ τις αὐαλέῃ ἐὰν δέ τίς φησι ξηρᾷ συνεχόμενος δίψῃ, καὶ προσπεσὼν ἐπί τινα ποταμὸν ἢ λίμην πίνῃ ταυρηὸν, τῇ δὲ βίᾳ τοῦ ἑλκυσμοῦ προσπέσῃ βδέλλα, καὶ τὰ ἑξῆς· ἰστέον δ’ ὅτι ἀπὸ τῆς βδέλλας γίνεται ο οἶστρος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="497"> 
+<p rend="indent">Θρῖα δὲ κυρίως μὲν τὰ τῆς συκῆς φύλλα, νῦν δὲ τῶν μνίων φησὶ, τουτέστι τῶν βρύων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="498"> 
+<p rend="indent">Τοῦ μέν τε· λείπει τὸ πίνοντος· τούτου φησὶ ῥοιζηδὰ πίνοντος ἡ φιλαίματος βδέλλα προσπελάζουσα ἐπὶ τὰ χείλη αὐτοῦ τῆς βρώμης ἕνεκα τῇ ῥύμῃ τοῦ ποτοῦ, ἤτοι τῇ φορᾷ καὶ τῇ ὁρμῇ προὔτυψε παρὰ τῇ λαπάρᾳ αὐτοῦ ἱμείρουσα καὶ τοῦ φόνου. Ἄλλως· ῥύμῃ ἅλις· βούλεται εἰπεῖν, ὅτι φερομένη τῇ τοῦ ὕδατος ὁρμῇ, ὅπου αὐτὴν τὰ πρῶτα ὁ ῥοῦς προσπελάσῃ καταποθεῖσαν, ἀθρόως προσφύεται ἀμέλγουσα τὸ αἷμα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="501"> 
+<p rend="indent">Ἢ ὅθ’ ὑπὸ ζοφέης νυκτός· ἢ ὅθ’ ὑπὸ τῆς ζοφώδους νυκτὸς κεκαλυμμένος τὰς αὐγὰς, ἤγουν τοὺς ὀφθαλμοὺς, τὰ χείλη αὐτοῦ πρὸς τὰ χείλη τῆς ὑδρίας πιέσας καὶ κατακλίνας ἑαυτὸν ἀφραδέως τὸ ποτὸν ἴσχει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="505"> 
+<p rend="indent">Τὰς μέν· μετέβη ἀπὸ τοῦ ἑνικοῦ εἰς τὸ πληθυντικόν· ταύτας δὲ τὰς βδέλλας φησὶν ὅπου ἂν ὁ ῥοῦς ὤσῃ καὶ τὰ ἑξῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="506"> 
+<p rend="indent">Ἀμελγόμεναι δ’ ἀντὶ τοῦ πιεζόμεναι ἤτοι πιέζουσαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="507"> 
+<p rend="indent">Πύλῃσιν· τουτέστι τοῦ πνεύμονος ταῖς πύλαις ἢ τῇ ἀρχῆ τοῦ λαιμοῦ, ἤτοι τῷ φάρυγγι, ἢ τοῦ ἥπατος, ἢ τοῦ στομάχου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="509"> 
+<p rend="indent">Πέριξ δ’ ἐπενήνοθε γαστρὸς ἀντὶ τοῦ ὁτὲ τῷ στόματι τῆς κοιλίας ἐπίκειται λαμβάνουσα τὴν προσφάτως ἐπενεχθεῖσαν τροφὴν, τὸ δ’ ἐπενήνοθεν ἀντὶ τοῦ ἐπίκειται, πάλιν δ′ ἀνέδραμεν ἀπὸ τοῦ πληθυντικοῦ ἐπὶ τὸ ἑνικόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="510"> 
+<p rend="indent">Νέην δ’ ἐπενείματο δαῖτα, ἤτοι ἣν ἄρτι ἔφαγε, διεμερίσθη καὶ ἐπεβοσκήθη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="511"> 
+<p rend="indent">Τῷ σὺ, ἤτοι τῷ καταπίνοντι τὴν βδέλλαν νείμειας ὅ ἐστι δοίης συνημμένην τῷ ὄξει ψυχρὰν πόσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="512"> 
+<p rend="indent">Χιονόεσσαν γὰρ τουτέστιν ὑπὸ χιόνος παγεῖσαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="513"> 
+<p rend="indent">Καὶ τὸ νέον βορέῃσι παγέντος ἀντὶ τοῦ νεωστὶ βορείαις πνοαῖς παγέντος τοῦ κρυστάλλου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="514"> 
+<p rend="indent">Γυρώσαιο ἀντὶ τοῦ σκάψειας, ὀρύξειας, καθαλμέα δὲ βώλακα τὸν ὑφάλμυρον βῶλον τῆς γῆς, λέγει δὲ τὸ ἅλας, ἢ τὸν ὀρυκτὸν ἅλα· ἐν ἁλμυροῖς γὰρ τόποις οὐ γίνεται ἡ βδέλλα· διόπερ ποιεῖ τὸ ἁλμυρὸν ὕδωρ πρὸς ἀντιπάθειαν αὐτῆς, ἅλμην δὲ κελεύει πιεῖν Καππαδοκικοῦ ἁλός. <pb facs="theriacaetalexip00nica_0479"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="515"> 
+<p rend="indent">Ναιομένην δ’ ἤτοι πατουμένην, ὁδευομένην, ἠροτριωμένην. Τὸ θαλερὴν δὲ γράφεται καὶ θολερὴν, διότι ὠφελιμός ἐστιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="516"> 
+<p rend="indent">Ἢ αὐτὴν ἅλα βάπτε· ἢ αὐτήν φησι τὴν θάλασσαν, τουτέστι τὸ θαλάσσιον ὕδωρ, διδόναι πιεῖν, ποτὲ μὲν ἡλίῳ θερμαίνοντα, ποτὲ δὲ πυρί· βᾶπτε γὰρ ἀντὶ τοῦ ἄντλει, γέμιζε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="517"> 
+<p rend="indent">Καὶ ἠελίοις ὀπωρινοῖς, τουτέστι ταῖς ἡμέραις. Τότ’ ἠνεκὲς ἀντὶ τοῦ ἐπιπολὺ τῷ πυρὶ θάλψας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="518"> 
+<p rend="indent">Ἅλα πηκτόν· τὸν ὀρυκτὸν, τὸν ἐκμέταλλον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="519"> 
+<p rend="indent">Καὶ ἐμπίσαις ἀντὶ τοῦ ἐμμίξαις τὴν ἄχνην· λέγει γὰρ τὸν ἀφρὸν, ὅντινα ὁ ἁλοπηγὸς ἀνὴρ συνάγει. Καὶ τὸ νειόθ’ ὑφισταμένην ἀντὶ τοῦ κάτωθεν ἐκ βάθους συνισταμένην τοῦ κράματος τῶν ἁλῶν, ἐπὰν οὗτοι μίξιν λάβωσιν· ἰστέον ὅτι οἱ ἁλοπηγοὶ μιγνύουσι τοῖς θαλασσίοις ὕδασι γλυκέα ὕδατα, καὶ συνταράσσουσιν ἀμφότερα, ὥσπερ ἀποπλύναντες τὰ θαλάσσια ὕδατα τοῦ βρώμου τοῖς γλυκέσιν· ἐν γοῦν τῷ ταράσσεσθαι ἀφρός τις ἀναδίδοται, ὅντινα λέγουσιν ἄχνην ἁλός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="521"> 
+<p rend="indent">Μὴ μὲν δὴ ζύμωμα κακόν· καὶ γὰρ ζύμωμα εἶπε τὸν μύκητα, ἐπειδὴ ζυμῷ ἔοικε τῆς γῆς, τουτέστι πηλῷ· ὅμοιος γάρ ἐστι βώλῳ γῆς. Ἄλλως· ζύμωμα κακὸν τοὺς μύκητάς φησιν, ἐπειδὴ ἐκ τῆς γῆς γεννῶνται, οὗτοι δ’ ὁτὲ μὲν ἐν τοῖς στέρνοις ἀνοιδοῦσιν, ὁτὲ δὲ καὶ περὶ τὸν λαιμὸν ἀνίσταται ἡ ἀπ’ αὐτῶν κάκωσις· τότε δ’ ἐνεργοῦσιν οἱ μύκητες, ὅταν φυῶσιν ἐν τῷ τόπῳ, ὅπου ἐφώλευσεν ἔχιδνα ζύμωμα δ′ αὐτοὺς ἐκάλεσεν, ἐπειδὴ ἀναζυμοῦνται ἔσωθεν μὴ πεττόμενοι, ἢ ὅτι ὥσπερ ζύμωμά εἰσι τῆς γῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="522"> 
+<p rend="indent">Ἄγχον· οἱ μέν φασι πόαν τινὰ εἶναι πλησίον τοῦ φωλεοῦ τῆς ἐχίδνης φυομένην, καὶ τὸν ἆσθμα αὐτῆς ἀνιμωμένην αὐτὴν, ἄλλοι δ’ ἐκ τοὺ ἱδρῶτος τοῦ ὄφεως. Τὸ δὲ πολλάκι μὲν στέρνοισιν ἀνοιδέον, καθὸ βρωθέντες οἱ μύκητες ἀνοιδοῦσιν ἐν γαστρί. Καὶ τὸ εὖτ’ ἐπὶ φωλεύοντα ἀντὶ τοῦ· ὅτε τραφῇ περὶ τὸν φωλεύοντα βαθὺν ὁλκὸν τῆς ἐχίδνης, ἤτοι περιφραστικῶς περὶ τὸν βαθὺν φωλεὸν τῆς ἐχίδνης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="524"> 
+<p rend="indent">Ἰὸν ἀποπνεῖον ἤγουν τὸν ἰὸν αὐτῆς ἀποπνέον τῶν στομίων τῆς ἐχίδνης· γράφεται δὲ καὶ ἀνικμάζον, τουτέστιν ἀνιμώμενον καὶ ἀναπῖνον τὸν ἰόν· καὶ τὸ ἀποφώλιον ὅ ἐστι χαλεπὸν ἆσθμα, τουτέστι τὴν χαλεπὴν πνοὴν τῆς ἐχίδνης τῶν στομίων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="525"> 
+<p rend="indent">Κεῖνο ποτὸν καὶ ζύμωμα· τοὺς μύκητας ἀδιαφόρως ζύμωμα καλοῦσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="526"> 
+<p rend="indent">Παμπήδην ἀντὶ τοῦ πανταχοῦ, οἱ πλεῖστοι· ἢ καθολικῶς μύκητας ὅλκους καλοῦσιν, οἱονεὶ ἀμανίτας. Οὔνομα κέκριται ἄλλο· πολυώνυμον γάρ ἐστι τὸ ζύμωμα· ὃ γὰρ καλεῖται ζύμωμα, μύκης, ἀμανίτης, βῶλος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="527"> 
+<p rend="indent">Σύ γ’ ἢ ῥαφάνοιο· δίδου φησὶ τὸν καυλὸν, ἤτοι τὴν κεφαλὴν τῆς κράμβης, τουτέστι τὸν ἀσφάραγον, ἐπειδὴ ῥαφάνας τὴν κράμβην φησίν· εὔχρηστον γὰρ πρὸς ἀντιπάθειαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="528"> 
+<p rend="indent">Ἢ ῥυτῆς· ῥυτῆς δ’ ἤτοι πηγάνου χλωρὸν, θάλλοντα καὶ χλοάζοντα ῥάβδον, ὅ ἐστι κλάδον, κόψας. Γράφεται καὶ ῥάδικα, οἷον κλῶνα. <pb facs="theriacaetalexip00nica_0480"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="529"> 
+<p rend="indent">Χαλκοῖο δ’ ἤτοι παλαιᾶς χαλκάνθου· προστάσσει γὰρ χαλκοῦ ἄνθος πιεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="530"> 
+<p rend="indent">Κληματόεσσαν· κληματίδος φησὶ θρύψον σποδὸν ἐν τῷ ὄξει, τουτέστι ἔμβαλε σποδὸν κλήματος ἐν ὄξει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="531"> 
+<p rend="indent">Πυρίτιδα δὲ βοτάνην πύρεθρον καλουμένην. Καὶ βάμματι, ὄξει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="532"> 
+<p rend="indent">Τό τε φύλλον, ἤγουν καὶ τὸ τοῦ καρδάμου φύλλον τὸ ἐν ταῖς πρασιαῖς αὐξανόμενον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="533"> 
+<p rend="indent">Καὶ Μῆδον δὲ τὸ Μηδικὸν καλούμενον, ἐστὶ δ’ εἶδος φυτοῦ. Γράφεται καὶ μῆλον, ἐστὶ δὲ τὸ Μηδικὸν μῆλον, ὅ ἐστι τὸ νεράνζιον. Καὶ ἐμπρίοντα σίνηπι· τὸ τραχὺ ὂν τῇ γεύσει, ἢ παρόσον οἱ κλάδοι τοῦ σινήπεως τραχύτητα ἔχουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="534"> 
+<p rend="indent">Οἰνηρὴν δ’ ἀντὶ τοῦ οἴνου τρύγα καὶ ὀπτὴν ἐν ὄξει τρίψας δίδου πιεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="535"> 
+<p rend="indent">Ἢ καὶ στρουθοῖο πάτον· ἀφόδευμα ὀπτὸν ὄρνιθος κατοικάδος, παραλέλοιπε δὲ τὸ μετὰ τίνος δεῖ πίνειν αὐτὸ, εἰ μὴ καθάπερ τὰ προειρημένα μετ’ ὄξους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="536"> 
+<p rend="indent">Βαρεῖαν χεῖρα τὴν δεξιὰν λέγει· ταύτην φησὶ καθεὶς ἐπὶ τὸ ἐμέσαι, ὡς ἐπιτηδειοτέραν μὲν καὶ πρακτικωτέραν, ταύτην οὖν εἰς τὸν φάρυγγα καθιεὶς κατάσχοις τὴν ὅλην κάκωσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="537"> 
+<p rend="indent">Λιπορρίνοιο· καὶ γὰρ ἡ σαλαμάνδρα ζῷόν ἐστι τετράπουν, μικρὸν ὡς ἡ σαύρα, τῷ χερσαίῳ κροκοδείλῳ ἐοικὸς, φυχρὸν δὲ τῇ φύσει· διὸ καὶ τὸ πῦρ σβεννύει· οὔτε δέρμα ἔχει, οὔτε λεπίδα, ὅθεν καὶ λιπόρρινον αὐτὸν ἔφη· ῥινὸς γὰρ τὸ δέρμα· ἢ διότι λίπος ἀφίησιν ἀπὸ τοῦ δέρματος· γλίσχρος γάρ ἐστὶ καὶ λιπώδης, καὶ ἀπὸ τοῦ σώματος ὑγρασία ῥεῖν εἴωθεν, ἥτις τὸ πῦρ σβεννύει. Ἄλλως· ἡ σαλαμάνδρα εἶδος ἀσκαλαβώτου, Ἀνδρέας δέ φησιν· κἂν τῷ αἵματι αὐτῆς ἢ χεῖρα ἢ ἐσθῆτα χρίσῃς, ἀβλαβὴς ἔσται ἐκ πυρός. Δυσάλυκτον δ’ ἀντὶ τοῦ δύσφευκτον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="540"> 
+<p rend="indent">Τὸ δὲ γλώσσης βάθος περιφραστικῶς ἀντὶ τοῦ ἡ γλῶσσα ἐπρήσθη· τῶν πινόντων γάρ φησιν ἡ γλῶσσα παχύνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="543"> 
+<p rend="indent">Τετράποδες· οὗτοι δὲ σφαλλόμενοι τετραποδιστὶ σύρονται, καθάπερ βρέφη· αἱ γαρ διάνοιαι αὐτῶν ἀμαυροῦνται καὶ ἀφανίζονται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="544"> 
+<p rend="indent">Σάρκα δ’ ἐπιτροχόωσιν ἀντὶ τοῦ ἐπιτρέχει τῇ σαρκὶ πελιδνότης, ἐξ ἧς ὑγρασία, καὶ ἐπιπορθμευομένης τῆς κακίας ἤτοι σκεδαννυμένης ἢ σκεδαζούσης, καὶ τὰ ἑξῆς· βοήθειαν δὲ διδοὺς ῥητίνην πευκίνην, ἀναμίσγων ταύτην τῷ μέλιτι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="545"> 
+<p rend="indent">Σμώδιγγες· αὗται κατὰ σύντηξιν τῆς σαρκὸς στάζουσιν· ἐὰν δὲ στίζουσι γράφηται, καθάπερ οἱ στιζόμενοι· γράφεται γὰρ στίζουσαι, ἵν’ ἡ σημαῖνον τὸ ποικίλως πελιδνοῦσθαι, καθάπερ τοὺς στιζομένους. Καὶ δαιομένης δ’ ἀντὶ τοῦ μεριζομένης πανταχοῦ τῷ σώματι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="547"> 
+<p rend="indent">Τενθρήνης· τενθρήνην εἶπε τὴν τενθρηδόνα, ζῷον δ’ ἐστὶ <pb facs="theriacaetalexip00nica_0481"/> μελιτοποιὸν, ὃ υπ’ ἐνίων λέγεται βέμβιξ, ἐστὶ δ’ ἐμφερὲς μελίσσῃ. Ἄλλως· τενθρήνη εἶδος μελίσσης, ἢ τόπος, ὅπου αἱ μέλισσαι διατρίβουσιν, ὡς εἶναι τὸ μελίσσειον· δύναται δὲ κατὰ συγκοπὴν τενθρηδόνος ἀντὶ τοῦ Θεσσαλικοῦ. Ὅμηρος (<bibl xml:lang="mul">Il. β 756</bibl>)· <quote type="blockquote">Πρόθοος Τενθρηδόνος υἱός.</quote> ἐπεὶ καὶ ἡ τενθρηδὼν, ὅ ἐστι μελίσσης εἶδος, ποιεῖ ἔργα· παρακελεύεται οὖν ἐκ τούτων τὸ μέλι λαμβάνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="548"> 
+<p rend="indent">Ἢ τῆς χαμαιπίτυος τοῦ βλαστοῦ μετὰ κώνων· εἰσὶν οὖν κῶνοι πίτυος οἱ στρόβιλοι· συνεψήσας οὗν φησι τούτους τοῖς φύλλοις τῆς χαμαιπίτυος δίδου πιεῖν. Ἠὲ χαμαιπίτυος· τῆς πίτυος τὰ φύλλα καὶ τοὺς κώνους ἀφεψήσαντα κελεύει τὸν χυλὸν διδόναι πιεῖν, ὁμωνύμως δὲ λέγεται ὁ καρπὸς καὶ ὁ στρόβιλος καὶ ὁ κῶνος. Ἢ τῆς χαμαιπίτυός φησι τῆς βλαστήμονος ἀναμεμιγμένως καθεψήσας τὰ φύλλα καὶ τοὺς κώνους ὅσους ἐθρέψατο ἡ πεύκη, τουτέστι ὅλα ὁμοῦ σύμμικτα ἑψήσας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="550"> 
+<p rend="indent">Ἄλλοτε δὲ σπέραδος· κνίδης σπέρμα καὶ ὀρόβου ἄλευρον κελεύει κόψαντα διδόναι πιεῖν, μετὰ τίνος δ’ οὐκ εἴρηκεν. Μυλοεργέι ἀντὶ τοῦ τῷ ὑπὸ μύλης κατεργασθέντι ἀλεύρῳ τοῦ ὀρόβου ξηραίνειν καὶ φρύγειν, καὶ τὰ ἑξῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="552"> 
+<p rend="indent">Ἑψαλέην ἤτοι ἡψημένην, ξηρανθεῖσαν ὑφ’ ἡλίου, καὶ αὐτὴν δὲ τὴν κνίδην ἔψων πότιζε μίσγων ἀλεύρῳ ὀρόβου ἢ καὶ κριθίνῳ ἀλεύρῳ μετ’ ἐλαίου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="555"> 
+<p rend="indent">Χαλβανόεσσα· καὶ ἡ ῥητίνη καὶ μέλι καὶ ῥίζα χαλβάνης καὶ ὠὰ χελώνης· διδόναι κελεύει ἑψηθέντα ἐπ’ ἀνθράκων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="556"> 
+<p rend="indent">Ἀλθαίνει καὶ γέντα· ἐν ἄλλω οὕτως· ἀλθαίνει τότ’ ἔνερθε πυρὸς ζαφλεγοῖο κεραίης· τὸ γὰρ ἔνερθε πυρὸς ζαφλεγοῖο κεραίης τὸ ἄγαν σφοδρῶς ἐν τῇ σποδιᾷ τοῦ κέρατος ἑψηθῆναι ταῦτα δηλοῖ· κεραία γαρ λέγεται τὸ ἄκρον καὶ ἔσχατον, ἡ χαλβάνη δ’ ὀπός ἐστιν ἐκ τῆς ῥίζης τῶν πανάκων πεπηγμένος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="557"> 
+<p rend="indent">Ἁλίοιο· θαλασσίου ἢ ἐνύδρου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="558"> 
+<p rend="indent">Ταχινῇσιν· γράφεται ἥτ’ ἄκρῃσι διαπλώει. Πτερύγεσσι δ’ ἀντὶ τοῦ ποσίν· τούτοις γὰρ ἐπινήχεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="559"> 
+<p rend="indent">Οὐρείης ἢ χερσαίης χελώνης, ἢ ὀρεινῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="560"> 
+<p rend="indent">Αὐδήεσσαν δὲ διὰ τὴν λύραν, ἣν ἐποίησε τῷ Ἀπόλλωνι ἀντὶ τῶν βοῶν· μισθωτὸς γὰρ ὢν Ἀδμήτου ὁ Ἀπόλλων ἔβοσκεν αὐτοῦ τὰς βόας οὓς ἔκλεψεν ὁ Ἑρμῆς, καὶ φωραθεὶς ἔδωκεν αὐτῷ ἀντίλυτρον τὴν κιθάραν τὴν ἐκ τῆς χελώνης αὐτῷ κατεσκευασμένην, τὴν λεγομένην χέλυν, ὅθεν καὶ λύρα ἐκλήθη, οἱονεὶ λύτρα τις οὖσα ὑπὲρ τῶν βοῶν. Κυτισηνόμου δ’ ἐπειδὴ χελώνης εἴδη δύο, ὄρειον καὶ θαλάσσιον, ὧν αἱ ὀρειναὶ χελῶναι ὑπ’ ἀνέμων πληροῦνται, ὥσπερ αἱ ὄρτυγες· ἢ τῆς ἐν κυτίνῳ διατριβούσης, κύτινοι δ’ αἱ ἐξανθήσεις τῶν ῥοιῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="562"> 
+<p rend="indent">Χέλειον ἀντὶ τοῦ ὄστρακον ποικίλον. Καὶ ἀγκῶνας δύο ἤτοι κανόνας, ὅθεν δέδενται αἱ νευραί. Καὶ πέζαις τοῖς ὢμοις· τοῖς ὤμοις φησὶ τοῦ ὀστράκου αὐτῆς δύο παρέθηκε πήγματα, ἅ φησιν ἀγκῶνας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="563"> 
+<p rend="indent">Γερύνων δὲ, βατράχων. Καὶ λαιδροὺς τοὺς ἀναιδεῖς διὰ τὸ <pb facs="theriacaetalexip00nica_0482"/> βοᾶν ἀεὶ τῇ φωνῇ τραχυτέρᾳ. Δαμάσαιο, ἑψήσειας. Τοκῆας τῶν γερύνων φησὶ, τουτέστι τῶν μικρῶν βατράχων, τοὺς ἀναιδεῖς. Πράσων ἢ ῥίζας ἠρύγγου, ὅ ἐστιν εἶδος βοτάνης, προσπάσσων ἀμμωνιακὸν καὶ χορτάσας, ὑγιάσεις τὸν κάμνοντα. Ἄλλως· χύτρῳ σκαμμώνιον· τούτοις εἰ κορέσοις τὸν ἄνθρωπον, καὶ θανάτου πλησίον ἐλθόντα σώσεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="567"> 
+<p rend="indent">Φρύνοιο· περὶ φρύνου διαλέγεται, ὅς ἐστι βατράχου εἶδος, εἰς δὲ τὸ τέλειον λόγον προσληπτέον τὸ τὶς, ἔνιοι δ’ ἀγνοοῦντες γράφουσι μετὰ τοῦ ς, δύσφημον ποιοῦντες τὸν λόγον· δύο οὖν γένη εἰσὶ βατράχων, χειμερινοί τε καὶ θερινοὶ, οἱ δὲ χειμερινοὶ ἄφωνοι καὶ θανάσιμοι. Ἢ οὕτως· φρύνου ἀντὶ τοῦ φωνητικοῦ· εἰσὶ γὰρ καὶ κωφοὶ καὶ ἄφωνοι, ὧν πρὸς ἀντιδιαστολὴν εἶπε φρύνου, τουτέστι φωνητικοῦ, οἱονεὶ φώνοιο, ἐστὶ δὲ καὶ ἐμφερὴς βατράχῳ, ἀλλὰ τοὺς ὀφθαλμοὺς μείζονας ἔχει, ταῖς ῥίζαις δὲ τῶν καλάμων ἢ τῶν θάμνων προσκάθηται ὁ φρῦνος. Θερειομένου δὲ τουτέστιν ἐν θέρει κατεσκευασμένου εἰς δηλητήριον· τὴν ἐπιφάνειαν γὰρ τοῦ δέρματος κεντοῦντες ποιοῦσι τραυματίαν, εἶτα τὸν ἰχῶρα τούτου λαβόντες μίσγουσι βρώσει ἢ πόσει, καὶ οὕτω διδόντες ἀναιροῦσιν· ὁμογενῆ δὲ τὰ ζῶά εἰσιν, ὁ δὲ κωφὸς βάτραχός ἐστιν, ἀλλ’ οὐ φρῦνος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="568"> 
+<p rend="indent">Κωφοῖο λαχειδέος· τοῦ ἀφώνου καὶ δασέος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="569"> 
+<p rend="indent">Προσφύεται δὲ, οὐ προσκάθηται. Καὶ μορόεις ὁ κακοποιὸς, ἤγουν ὁ μόρον ἄγων. Καὶ λιχμώμενος ἔρσην ἀντὶ τοῦ ζητῶν ἢ λείχων τὴν δρόσον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="570"> 
+<p rend="indent">Καὶ θερόεις· ἐξ οὗ τῷ θέρει κατασκευάζεται δηλητήριον. Λαχειδέος δασέος, ὡς οἱ πρὶν ἐξηγησάμενοί φασιν, ἢ, ὡς οἴεται ὁ Τζέτζης, πρασίζοντος, λαχανοειδέος, καὶ ἐν συγκοπῇ λαχειδέος. Ἂλλως· λαχειδέος τοῦ δασέος· ἢ μικροῦ, ἐὰν ἐλαχειδέος. Τῶν ἤτοι θερόεις· ἀνέστρεψεν ἐπὶ τὸν φρῦνον· θερόεις γὰρ οὗτος, ἐπεὶ τῇ θερείᾳ τὸ ἀπ’ αὐτοῦ φάρμακον συντίθεται, ὃ δυναμικώτερόν ἐστιν. Ἢ ἔτι καὶ κωφοῖο· μεταβέβηκε ἀπὸ τοῦ φρύνου ἐπὶ τὸν βάτραχον, ἐπεὶ ὁμογενῆ τὰ ζῶά εἰσιν· ὁ γὰρ κωφὸς βάτραχός ἐστιν, ἀλλ’ οὐ φρῦνος, δύο δὲ γένη τῶν βατράχων, καὶ ὁ μὲν φθεγγόμενος ἀβλαβὴς, ὁ δὲ κωφὸς θανάσιμος. Ἄγει δὲ χλόον· δηλονότι τῷ φαρμακευομένῳ. Θάψου· ὅτι οἱ φαρμακευθέντες ὠχροὶ γίνονται, ὅτι δ’ οὐ πᾶς βάτραχος ἐπιτήδειος, ἀλλ’ ὁ ἐν θερμοτέροις διατρίβων τόποις, καὶ Ἀπολλόδωρός φησιν· τὴν αὐτὴν δὲ πόσιν ἀπ’ οἴνου δοτέον· ἡ δὲ θάψος ἐστὶν εἶδος βοτάνης χλωρᾶς, ᾗ προσεικάζει τὴν χροιὰν τοῦ κάμνοντος, τὸ δ’ ἆσθμα αὐτοῦ ἀθρόον συνάγεται, καὶ ἡ ἀναπνοὴ δυσώδης ἐστίν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="575"> 
+<p rend="indent">Καί τε σπλήν· καὶ ὁ τῆς λιμναίης καὶ πολυλάλου φρύνης σπλὴν, τῆς βοώσης κατ’ ἀρχὴν τοῦ ἔαρος, τὸ κακὸν βάρος τοῦ ὀλεθρίου ἐκείνου φαρμάκου, τοῦτο γὰρ λείπει, ἤρκεσεν, ἐβοήθησε, τῷ κάμνοντι βρωθεὶς ὀπός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="577"> 
+<p rend="indent">Θυμάρμενον δ’ εἶαρ τὸ θυμηρέστατον, τὸ τῇ ψυχῇ ἡρμοσμένον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="578"> 
+<p rend="indent">Αὐτὰρ ὅγ’ ἄφθογγος· οὗτος δὲ κέρβερος καλεῖται, ἄφθογγος <pb facs="theriacaetalexip00nica_0483"/> ὤν· ἐνταῦθα γὰρ περὶ τοῦ ἀλάλου φρύνου διαλαμβάνει, ἐπειδὴ ανω περὶ τοῦ εὐλάλου εἶπεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="580"> 
+<p rend="indent">Ἄλλοτε δ’ ὑγραίνει· φησὶν οὕτω, τουτέστιν ἀγόνους κατασκευάζει τοὺς ἄνδρας καὶ τὰς γυναῖκας διὰ τὸ ἐπιπολὺ ἐξυγραίνεσθαι τὸ σπέρμα, ὥστ’ ἐκ τοῦ αὐτομάτου ῥεῖν· ἀγόνους φησὶ τοὺς πίνοντας γίνεσθαι διὰ τὸ διαλύεσθαι τὸ σῶμα καὶ ῥοῶδες γίνεσθαι. Χολόεν στόμα· χολαῖς ὑγραίνει τὸ στόμα, τουτέστι χολῆς ἀποπληροῖ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="581"> 
+<p rend="indent">Καρδιόωντα· ἤτοι τὴν καρδίαν ἀλγοῦντα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="582"> 
+<p rend="indent">Καὶ κατικμάζων ἀντὶ τοῦ καταστάζειν ποιῶν ἄνευ γονῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="583"> 
+<p rend="indent">Σκεδάων γυίοισιν ἀντὶ τοῦ σκορπίζων τὸν σπόρον τοῖς μέλεσιν ἀποτελεῖ ἀγόνους τοὺς φαρμακευθέντας, κἄν τ’ ἀνὴρ ᾖ, κἄν τε γυνή.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="584"> 
+<p rend="indent">Ἀφυσγετὸν δ’ ἀντὶ τοῦ πολὺ, δαψιλὲς, ἀφύσιμον καὶ ἀρύσιμον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="586"> 
+<p rend="indent">Ἠὲ πίθου· δεῖ δ’ αὐτόν φησιν ἐν πίθῳ διθύρῳ ἐντεθέντα ξηροπυρίαν λαμβάνειν, ὥσπερ οἱ ὑδρωπικοί. Ἐναλθῆ ἤγουν τὸν θεραπείας ἐπιδεόμενον· γράφεται καὶ ἀναλθῆ,</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="587"> 
+<p rend="indent">Θερμάσαιο ἀντὶ τοῦ θέρμανον. Νήχυτον ἱδρῶ, τουτέστιν ἵν’ ἱδρώσῃ τὸν νήχυτον, οἱονεὶ τὸν πολύχυτον, τὸν πολὺν ἱδρῶτα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="588"> 
+<p rend="indent">Αὐξηρῶν, ἤτοι τῶν μεγάλων· γράφεται καὶ οὕτως· ἢ ξηρῶν· τῶν αὐχμηρῶν· Πραξαγόρας δέ φησι τὸ χλωρὸν τῶν καλάμων ἐσθιόμενον ὠφέλιμον ὑπάρχειν τοῖς ὑπὸ φρύνων πεφαρμακευμένοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="589"> 
+<p rend="indent">Οἴνῳ ἐπεγκεράσαιο· τῷ οἴνῳ φησὶν, ἐν ᾧ τὰ ἀποβρέγματα τῶν ῥιζῶν τῶν καλάμων εἰσὶν, ἢ τοῦ κυπείρου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="590"> 
+<p rend="indent"><foreign xml:lang="lat">seq.</foreign> Τρίβοις πανάπαστον· ἀνάτριψαι αὐτὸν νῆστιν. Ὑποτέτροφε· οἰκεῖ ἐν ταῖς τῶν καλάμων ῥίζαις, ἢ ἐτράφη ὑπὸ λίμνην. Οἰκείη, ἤγουν ἑκάστη οἰκειουμένη αὐτοῖς. Ἑρπετὰ νήχει· τοὺς μικροὺς βατράχους λέγει, βατράχων δ’ εἴδη δύο, τὸ μὲν κρακτικὸν, τὸ δ’ ἄφωνον, ἀμφότερα δὲ θανάσιμα, ἡ δὲ φαρμακεία ἡ διὰ τῶν βατράχων γινομένη ἐστὶν αὕτη· λαμβάνουσι καὶ κατακεντοῦσιν ὅλον τὸ σῶμα, φυλασσόμενοι κατὰ βάθος ποιεῖσθαι τὰ κεντήματα, αὐτην δὲ μόνην παίοντες τὴν ἐπιφάνειαν τῆς σαρκὸς, καὶ εἰς ἀπίσσωτον σταμνίον βάλοντες μικρὸν ὕδωρ ἐπιρραίνοντες, καὶ τὸ ἀπορρέον τούτου συμμίσγουσι βρωτῷ ἢ ποτῷ καὶ οὕτως ἀναιροῦσιν. Νήχει ἀντὶ τοῦ περιπατεῖ· δύο δ’ εἴδη κυπείρου ἀρσενικόν τε καὶ θηλυκὸν, φιλόζωον δ’ αὐτό φησι διὰ τὸ τὴν ῥίζαν ἔχειν στερεωτάτην. Τρίβοις· περιπάτοις ἀναγκάζει αὐτὸν χρῆσθαι μακροῖς, μήτε βρωτὸν, μήτε ποτὸν προσφέροντα, ξηραίνοντα δὲ τὸ σῶμα, ἵνα κατισχνωθῇ. Καὶ κατατρύσαιο δὲ γυῖα ἀντὶ τοῦ κατίσχνωσον αὐτοῦ τὰ μέλη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="594"> 
+<p rend="indent">Ἐχθομένη δέ σε· καὶ τῆς λιθαργύρου τὸ πόμα θανάσιμόν ἐστι, μάλιστα δ’ οἱ περὶ Ἀπολλόδωρον αὐτό φασι δίδοσθαι μετὰ φακοῦ ἢ πισσίου ἢ πλακοῦντος· διὰ τοῦτο γὰρ λανθάνει ὁμοχροῦν· φησὶ δὲ τοῖς ἐνεγκαμένοις παρέπεσθαι βάρος κατὰ τῆς κοιλίας, μετὰ δὲ τὴν μέσην αὐτὴν πνεύματα βορβορίζοντα ἀνειλεῖσθαι, τὰ δὲ μέλη πίμπρασθαι, τὴν δὲ χροιὰν ἐοικέναι μολίβδῳ. <pb facs="theriacaetalexip00nica_0484"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="596"> 
+<p rend="indent">Πνεύματ’ ἀνειλίσσοντα, ἤγουν ἐμπνευματοῖ παραπλησίως στρόφῳ ἢ εἰλίγγῳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="597"> 
+<p rend="indent">Εἰλίγγοιο δυσαλθέος· τῆς κοιλιοστροφίας φησίν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="599"> 
+<p rend="indent">Οὐ μὴν τῶν οὔρων· γράφεται καὶ οὐ μὲν τῶν γ’ οὔρων ἀντὶ τοῦ τῷ κακωθέντι ὑπὸ τοῦ λιθαργύρου καὶ οὕτω καὶ ἡ τῶν οὔρων ῥύσις κατέχεται, τὰ δὲ μόρια πίμπραται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="600"> 
+<p rend="indent">Καὶ τὸ εἰδήνατο χροιὴν ἀντὶ τοῦ ὡμοιώθη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="601"> 
+<p rend="indent">Τῷ δ’ ὁτὲ μέν· δύο ὀβολοὺς σμύρνης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="602"> 
+<p rend="indent">Ἄλλοτε οὔρειον, ὅ ἐστιν ὀρεινὴν ὑπέρεικον, ἄλλοτε ὁρμίνιον, ἐστὶ δ’ εἶδος βοτάνης, ἄλλοτε ὑσσώπου κλάδους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="604"> 
+<p rend="indent">Κράδην τὴν ἀγρίαν συκῆν. Σπέραδός τε σελίνου· τοῦ ὀρεο σελίνου καλουμένου· φυτὸν γὰρ τοιοῦτόν ἐστι διουρητικόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="605"> 
+<p rend="indent">Ἴσθμιον· ἡ ἱστορία εὔγνωστός ἐστι πᾶσι τοῦ ἀγῶνος τοῦ Μελικέρτου. Σισυφίδαι δ’ οἱ Κορίνθιοι· ἄγεται δὲ τῷ Μελικέρτῃ ὁ Ἰσθμιακὸς ἀγὼν, ἐν ᾧ ὁ στέφανος ἦν πρότερον τοῖς νικῶσιν ἀπὸ σελίνου, ὕστερον δ’ ἀπὸ πίτυος, γίνεσθαι δέ φασιν ἐπὶ Σίνιδι, τὸν Θησέα διαθεῖναι, οἱ δὲ Ποσειδῶνι τῷ πατρῴῳ θεῷ τελεῖσθαι, οἱ πλεῖστοι δέ φασι τελεῖσθαι τῷ Μελικέρτῃ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="607"> 
+<p rend="indent">Ῥυσίμῳ· καὶ γὰρ ῥύσιμόν ἐστιν εἶδος βοτάνης, ἰδίως δ’ αὐτὸ εἴρηκε χωρὶς τοῦ ε, ὅ τινες πήγανόν φασιν. Ἐνομηρέα δ’ ἀντὶ τοῦ ὁμοῦ μίξας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="609"> 
+<p rend="indent">Κύπρου· οἱ μὲν εἶδος φυτοῦ τὴν κύπρον φασὶν, οἱ δὲ τὰ ἀπὸ τῆς Κύπρου νήσου βλαστήματα· καὶ τῆς κύπρου φησὶ τὰ νεοανθῆ βλαστεῖα, καὶ τοὺς τῆς σίδης ἤτοι τῆς ῥοιᾶς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="610"> 
+<p rend="indent">Κυτίνοιο τὸν ἀνθημὸνα καρπὸν μετ’ οἴνου τρίψας παράσχε αὐτῷ πιεῖν· κύτινόν φασι τὸ ἄνθος τῆς ῥοιᾶς, ὅπερ αὐξηθὲν ῥοιὰ γίνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="611"> 
+<p rend="indent">Μὴ μὲν δὴ σμῖλον· ἡ σμῖλος φυτόν ἐστιν ἐλάτῃ ὅμοιον· διὸ καὶ ἐλατηίδα εἶπε· περὶ δὲ τῆς σμίλου φησὶν Ἀνδρέας περὶ Αἰτωλίαν πληθύνειν, καὶ τοὺς ἐγκοιμηθέντας αὐτῷ ἀποθνήσκειν, ὁ δὲ Θεόφραστος (<bibl xml:lang="lat">H. P. III. 10, §2</bibl>) περὶ μὲν τῶν ἀνθρώπων οὐδὲν εἴρηκεν, αὐτὸ δὲ μόνον, ὅτι τὰ λόφουρα τῶν ζώων γευσάμενα ἀποθνήσκει, λόφουρα δ’ εἰσὶ βόες, ἡμίονοι. Καλλίμαχος δέ· ἑρπετὰ, τῶν αἰεὶ τεθράφαται λοφιαί.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="612"> 
+<p rend="indent">Οἰταίην· τὴν οἴτου αἰτίαν γινομένην, ἢ τὴν ἐν Οἴτῃ φυομένην, ὄρει τῆς Αἰτωλίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="613"> 
+<p rend="indent">Χαλικροτέρη ἀντὶ τοῦ ἀκρατοτέρα πόσις οἴνου πολλὴ παραχρῆμα ἰάσαιτο.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="616"> 
+<p rend="indent">Τὰ μὲν οὖν Νίκανδρος, ἤτοι καὶ ταῦτα μὲν ὁ Νίκανδρος τῇ ἰδίᾳ κατέθετο βίβλῳ τὰ ἐπίπονα καὶ φαρμακώδη ἑκάστῳ ἀνδρὶ τὰ ἐκ τοῦ μύκητος, λείπει δὲ τὸ γινόμενα ἢ τὰ μύκητος, ὅ ἐστι τὰ δηλητήρια. Ἄλλως· παρ’ ἀνέρι, ἢ παρὰ πρὸς τὸ κατέθετο, ἵν’ ᾖ παρακατέθετο ἀνδρὶ ἑκάστῳ ἐν τῇ ἰδίᾳ βίβλῳ μοχθήεντα ἀντὶ τοῦ ἐπίπονα. Ἢ οὕτως· τῷ ἐπὶ φαρμάκῳ μύκητι κακοπαθοῦντι ἀνθρώπῳ· ταῦτα γὰρ βοηθήματα ἐν τῇ ἰδίᾳ βίβλῳ κατέθετο.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="618"> 
+<p rend="indent">Πρὸς δέ τί σοι· πρὸς δὲ τούτοις φησὶ βοηθεῖ καὶ ἧστινος τοὺς κλῶνας ἐμίσησεν ἡ Δίκτυννα, λέγει δὲ περὶ τῆς μυρσίνης· φησὶ <pb facs="theriacaetalexip00nica_0485"/>γάρ· αὐτὴν ἡ Δίκτυνα μισεῖ, καὶ μόνη αὕτη ἡ μυρσίνη τῆς Ἰμβρασίας Ἥρας οὐχ ὑπεδέξατο τὸ στέφος, τουτέστιν οὐκ ἐγένετο στέφος τῆς Ἰμβρασίας Ἥρας, διότι κάλλους ἕνεκεν εἰς ἔριν διηγέρθησαν αἱ ἀθάνατοι θεαὶ, ὅτι τὴν Κύπριν ἐκόσμησεν αὕτη ἡ μυρσίνη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="621"> 
+<p rend="indent">Ἰδαίοισιν· ἐν τοῖς τῆς Ἰδης, ἐν τοῖς κατὰ Τροίαν ὄρεσιν. Ἄλλως· καὶ ἡ μυρδίνη φησὶ βοηθεῖ, ἧς τοὺς κλῶνας ἐμίσησεν ἡ Δίκτυννα, καὶ μόνη οὐκ ἐδέξατο τὸ τῆς Ἰμβρασίας Ἥρας στέφος, ὅτι τὴν Ἀφροδίτην ἐκόσμησεν, ὅτε περὶ κάλλους αἱ ἀθάνατοι ἤρισαν θεαί. Ἢ οὕτως· τὴν Ἴδην ἐκόσμησαν αἱ θεοὶ τοῖς ἄνθεσι τῶν βοτανῶν, καὶ ταῖς λόχμαις, ἔνθα διὰ κάλλους εἰς ἅμιλλαν κριθησόμεναι παρεγένοντο. Δίκτυννα δὲ καὶ ἡ Ἄρτεμις λέγεται. Καὶ τὸ τέης, ἧστινος ἐμίσησεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="622"> 
+<p rend="indent">Τῆς σύγ’ ἀπ’ εὐύδροιο νάπης· ταύτης οὖν φησι τῆς μυρσίνης τὸ εὐανθὲς ὄφελος· ὁ γὰρ καρπὸς αὐτῆς ὠφέλιμός ἐστι τοῖς πάσχουσιν, ὅ ἐστι τὸν καρπὸν τὸν πορφυροῦν, τὸν συναύξοντα ταῖς χειμεριναῖς νυξὶν, οἱονεὶ τῷ ἔαρι, ἢ τὸν συναύξοντα ταῖς χειμεριναῖς πνοαῖς ἢ ἡμέραις· μᾶλλον γὰρ τῷ χειμῶνι ἀνθεῖν τοῦτόν φησι τὸν καρπὸν, ἀπὸ τῆς εὐύδρου νάπης λαβὼν, καὶ θαλφθέντα ταῖς τοῦ ἡλίου ἀκτῖσι λειώσας, τουτέστι ξηρανθέντα λειώσας, καὶ τὸν χυλὸν δι’ ὀθόνης ἢ κυρτίδος ἐκπιέσας δίδου κοτύλην τῷ μέτρῳ πεπληρωμένην ἐν κυάθῳ, ἢ καὶ κοτύλης πλεῖον. Εὐαλθές· τὸ εὐανθὲς ὄφελος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="624"> 
+<p rend="indent">Καὶ ἠελίοιο βολῇς, ἤτοι ταῖς ἀκτῖσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="625"> 
+<p rend="indent">Καὶ σχοινίδι κύρτῃ· τῇ ἐκ σχοίνου πεποιημένῃ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="627"> 
+<p rend="indent">Ὀνήιον· ὠφέλιμον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="628"> 
+<p rend="indent">Καὶ ἄρκιον βοηθητικὸν καὶ ὠφελιμώτατον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg5031.tlg002.1st1K-grc1" n="629"> 
+<p rend="indent">Ὑμνοπόλοιο· τοῦ ἐν τοῖς ὕμνοις καὶ ᾠδαῖς καὶ ποιήμασιν ἀναστρεφομένου, τουτέστι ποιητοῦ· ἐν τῷ μεμνῆσθαι τοίνυν ἡμῶν τὸν νόμον φυλάσσοις τοῦ ξενίου Διός· μνῆστιν γὰρ ἀντὶ τοῦ μνείαν.</p> </div> </div>
+  </body>
+</text>
+</TEI>
