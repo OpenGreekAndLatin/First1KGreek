@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Περὶ φυτῶν</title>
+                <author>Aristotle</author>
+                <editor>Immanuel Bekker</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                <respStmt>
+                    <persName>Lucy Parr</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Hillary Cheney</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Evie Edmundson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Claudia Filos</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carlos R. Gutiérrez-Rueda</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Catharine Haldeman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kelly Hamilton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew L Hokom</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Devin Lawson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zijun Liao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sean Mao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Halle Richardson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Adam Rosengarten</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Will Shao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuti Shelat</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Mel Ashton Trump</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Landon Van Berkum</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt></titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0086.tlg039.1st1K-grc1.xml</idno>
+<pubPlace/>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+          
+<sourceDesc>
+<biblStruct>
+<monogr>
+      <title xml:lang="lat">Aristotelis Opera</title>
+        <author>Aristotle</author>
+        <editor>Immanuel Bekker</editor>
+          <imprint>
+            <publisher>Oxford University Press</publisher>
+            <pubPlace>Oxford</pubPlace>
+           <biblScope unit="volume">6</biblScope>
+           <date>1837</date>
+           </imprint>
+    </monogr>
+    <ref target="https://archive.org/details/operaexrecension06arisuoft/page/60/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc> 
+        </fileDesc>            
+            
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+<ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+    <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+            <p>This pointer pattern extracts part, chapter, and section.</p></cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <p>This pointer pattern extracts part and chapter.</p></cRefPattern>
+        <cRefPattern n="part" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <p>This pointer pattern extracts part.</p></cRefPattern>
+    </refsDecl>
+</encodingDesc>        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-10-19" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1" xml:lang="grc">
+<pb facs="operaexrecension06arisuoft_0070"/>
+    <milestone unit="page" resp="Bekker" n="814a"/>
+   <head rend="center">ΠΡΟΛΟΓΟΣ ΤΟΥ ΕΡΜΗΝΕΩΣ ΕΙΣ ΤΟ ΠΕΡΙ ΦΥΤΩΝ ΑΡΙΣΤΟΤΕΛΟΥΣ</head>
+<div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1" n="prol">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="1">
+<p>ΤΩΙ τῆς Ἀριστοτελικῆς ἀειθαλεῖ φιλοσοφίας λειμῶνι πολλαὶ μὲν καὶ ἄλλαι δέλτοι κατὰ τὰ εὐγενῆ παραπεφύκασι τῶν φυτῶν, παμφόρους μὲν οἶς θεωροῦμεν, πολύχοας δὲ καὶ οἷς διαπραττόμεθα προϊέμεναι τοὺς καρπούς.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="2">
+<p>Ἦν δὲ πρὸς ταῖς ἄλλαις καὶ ἡ περὶ τῶν φυτῶν ὅσα καὶ φυτὸν εὐφυὲς βραχὺ μέν, ἀλλὰ συχναῖς ταῖς χάρισι βρύον καὶ καλλίστοις ἐκφορίοις τοὺς τῶν λόγων ἐραστὰς δεξιούμενον, οὐ μόνον  λέγω τοὺς ἡμετέρους, τοὺς πάνυ, τοὺς περιφανεῖς τὰ ἐς λόγους καὶ τὴν σοφίαν ἀπαραμίλλους καὶ τὴν σύνεσιν Αὔσονας, ἀλλὰ καὶ τοὺς ἐκ μοίρας Ἰταλικῆς, καὶ οὐ τούτους μόνον, ἀλλὰ καὶ ὅσους τοιούτους οἶδεν ἡ τῶν εὐδαιμόνων Ἀράβων τρέφειν καὶ τῶν Ἰνδῶν.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="3">
+<p>Συχνὸν γὰρ ἐνέβαλεν ἵμερον τῶν ἑαυτοῦ συγγραμμάτων τοῖς ὁπουδήποτε φιλοσόφοις ὁ ἐκ Σταγείρων ἄκρος φιλόσοφος. Ἀλλὰ τὸ τοιοῦτον φυτὸν οὐκ οἶδ’ ὅπως οὐ μόνον αὔανσιν πέπονθε παρ’ ἡμῖν, ἀλλοίωσίν τινα τάχα περὶ τὸ χεῖρον, οἶα φιλεῖ ὁ χρόνος ποιεῖν, ἀλλὰ καὶ προθέλυμνον ἐκκοπὴν καὶ εἰς τὸ μὴ ὂν ἀποστροφήν, ὡς οὐδ’ ἄν ποτε φυτηκόμον εἶδεν, οὐδ’ εἰ προῆλθεν εἰς φῶς.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="4">
+<p>Ὑπέστη τὰ ἶσα καὶ Ἰταλὸς μακρὸν χρόνον σὺν ἡμῖν χηρεύων τοῦ χρήματος. Τοῖς Ἄραψιν ἐγνωρίζετο μόνοις, καὶ μόνοι τῶν τούτου καρπῶν ἀφθόνως ἀπήλαυον.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="5">
+        <p>Ἀλλά τις Κελτὸς μὲν τὸ γένος, ἐς τοσοῦτον δὲ τῆς τῶν Ἰταλῶν σοφίας ἐλάσας ὡς τῶν πρωτείων παραχωρεῖν μηδενί, εἶτα βραχὺ τοῦτο, καίπερ ὂν τοσοῦτον, καθ’ ἑαυτὸν οἰηθείς, ἂν μὴ καὶ τὴν τῶν Ἀράβων μετὰ τὴν τῶν Λατίνων  μεταλάβοι γνῶσιν καὶ τὴν καλλίστην ἔξιν ἀσκήσειεν, ὅλος γίνεται τοῦ ἔργου, καὶ εἰς πέρας τὴν γνώμην ἀγαγεῖν <pb facs="operaexrecension06arisuoft_0071"/> θέλει καὶ τυχεῖν παντοίως τοῦ ἐφετοῦ.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="6">
+        <p>Στέλλεται λοιπὸν τὴν ἀλλοδαπήν, χρῆται τοῖς Ἄραψι παιδευταῖς, καὶ τῇ εὐφυΐᾳ συμμετρήσας σπουδὴν τοσοῦτον  εὐμοίρησε παιδείας, φασίν, ὡς δύνασθαι καὶ τὰ τῶν Ἀράβων εἰς Ἰταλοὺς καὶ τὰ τῶν Ἰταλῶν μεταπορθμεύειν εἰς Ἄραβας. Οὗτος οὖν πρός τισιν ἄλλαις καὶ τὴν περὶ φυτῶν τήνδε βίβλον μεθερμηνεύει, κὰκ τῶν λογικῶν Ἀραβικῶν λειμώνων ὅσα καὶ φυτὸν εὐγενὲς εἰς τὰς Ἰταλικὰς μετακηπεύει <milestone unit="page" resp="Bekker" n="814b"/> φυταλιάς.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="7">
+<p>Ἔχαιρε γοῦν Ἰταλὸς ἐπὶ τούτῳ, καὶ τὰ μεγάλα ἐκόμπαζε· ταῖς Ἀριστοτελικαῖς γὰρ φιλοτιμεῖσθαι βίβλοις ὑπὲρ πάντας βρενθύεται· καὶ τοσοῦτον ἐνεκαυχᾶτο τῷ χρήματι, Ξέρξης οὐχ ἢττον ἐκεῖνος εἰς ἢν ὑπεσκιάσθη καὶ ἣν χρυσέαν ἔδειξε πλάτανον. Ἦλθον εἰς ἐπιθυμίαν (μακρὸς ἐξότου χρόνος) κἀγὼ τοῦ φυτοῦ· λόγοι γάρ μοι τῶν τοῦ κόσμου πάντων χρῆμα ὅ τὸ τιμιώτατον.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="8">
+<p>Ἐπόθουν ἐμφορηθῆναι τῶν τούτου καρπῶν, τῶν νοημάτων εἰς ἔξιν ἐλθεῖν. Ἐψυχαγώγει μοι τὴν ἐπιθυμίαν ἐλπίς, καὶ τὴν ἐλπίδα πάλιν εὐχὴ διεδέχετο. Ἀλλὰ μέχρι πολλοῦ τὰ τῆς ἐπιθυμίας ἀτέλεστα, ἡ ἐλπὶς καὶ μόνον ἐλπίς· τὰ δὲ τῆς εὐχῆς ἐπετείνετο. Τί δ’ ἡ τῶν ἀγαθῶν ἀπάντων παντελὴς αἰτία καὶ ὑπερτελὴς καὶ προτέλειος; Ἠρεμίαν τῇ ἐπιθυμίᾳ χορηγεῖ, τῇ ἐλπίδι πέρας, καὶ τὰ τῆς αἰτήσεως τῇ εὐχῇ.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="9">
+<p>Ἰταλὸς γάρ τις ἔκποθεν ἡμῖν αἰφνιδίως ἀναφανείς, ἱκανῶς ἔχων λογικῆς παιδείας καὶ γνώσεως, πρόσεισιν ὡς ἡμᾶς, ἀσπάζεται χαριέντως, τὰ φιλικὰ προσλαλεῖ, εἶτα τὴν ποθουμένην βίβλον ἡμῖν ἐγχειρίζεται. Ηὐφράνθην ἐγὼ ὡς ἐφ’ ἑρμαίῳ τῷ χρήματι. Ἐδεξάμην τὴν βίβλον ἐκθύμως.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="10">
+<p>Ὅλος αὐτῆς ἐγενόμην, τὸν ἐγκείμενον νοῦν ἀνελεξάμην ἐπιμελῶς, καὶ οἶον ὡς ἐν ἐσόπτρῳ τῇδε ἐκ πρώτης αὐτῆς βαλβῖδος τὸν Ἀριστοτέλην  ἔγνων καὶ τοὺς Ἀριστοτελικοὺς κατὰ τῶν πάλαι φιλοσοφούντων ἀντιλογικοὺς ἐτασμούς.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="11">
+<p>Ἀδικεῖν δ’ ᾠήθην, μὰ τοὺς λόγους, τοὺς λόγους αὐτοὺς καὶ τοὺς αὐτῶν ἐραστάς, καὶ γραφῆναι βασκάνου ψυχῆς ηὐλαβήθην, ἂν μὴ ταύτην ἱκανῶς ἔχων ὑπὸ τῆς ἄνωθεν χάριτος πρὸς τὴν Ἑλλάδα μεθερμηνεύσαιμι γλῶτταν καὶ ταῖς λοιπαῖς Ἀριστοτελικαῖς δέλτοις δείξαιμι συναρίθμιον.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="12">
+<p>Τῷ τοι καὶ σὺν θεῷ τὸ ἔργον διήνυσα, καὶ εἰς κοινὴν προὐθέμην τὴν βίβλον τοῖς ἀρουμένοις ἀπόλαυσιν, πολλὴν εὑρὼν τὴν δυσχέρειαν καὶ τὴν τῶν ὀνομάτων σύγχυσιν διὰ τὰς συχνὰς τῶν μεθερμηνεύσεων μεταβολὰς ἐκ τῆς ἡμετέρας εἰς τὴν τῶν Ἰταλῶν, εἰς τοὺς Ἄραβας <pb facs="operaexrecension06arisuoft_0072"/> ἐκεῖθεν, καὶ πάλιν ἐξ Ἀράβων εἰς Ἰταλούς, καὶ εἰς ἡμᾶς ἐκ τούτων ἐπ’ ἔσχατον.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="13">
+        <p>Οὐ γὰρ διπρόσωπος, <milestone unit="page" resp="Bekker" n="815a"/> ὅσον ἐπὶ ταύτῃ τῇ βίβλῳ, ὁ Σταγειρίτης ὤφθη κατὰ τὸν θρυλλούμενον Ἰτανον ἐκεῖνον, ὃν καὶ εἰς χρόνον ἄγει λόγος ἰσχνός, ἀλλὰ πολύμορφος κατὰ τὸν Πρωτέα τὸν Φάριον.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="14">
+<p>Ἐπεὶ δὲ πᾶσα δέλτος ἐκ μιᾶς πρὸς ἑτέραν μεταφερομένη διάλεκτον ἢ κατὰ λέξιν ἢ κατ’ ἔννοιαν προχωρεῖ, καὶ ἡ μὲν ὑστέρα τὸ σαφὲς ἔχουσα τοῦ ἀκριβοῦς ἀπολείπεται, ἡ δ’ ἑτέρα καὶ προτέρα προσόντος τοῦ ἀκριβοῦς εἰς ἀσάφειαν καταστρέφεται, ἡμεῖς ὡς ἀσφαλεστέρῳ τούτῳ τῷ μέρει καὶ ἀδιαβλήτῳ στοιχοῦντες, καθὼς καὶ ἐν ἑτέραις πεποιήκαμεν δέλτοις, τῆς ἀκριβείας ἐχόμεθα.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="15">
+        <p>Ἵνα δὲ μὴ φαινοίμεθα καὶ χώραν τῇ ἀσαφείᾳ διδόντες, ἢν κακίαν παντελῆ τοῖς λόγοις ἐγνώκαμεν, ἐπανερμηνείαις τισὶ καὶ <milestone unit="page" resp="Bekker" n="815b"/> σχολικαῖς παρασημειώσεσιν, εἴ τι που ἐκ τῆς ἀσαφείας ἄχαρι καὶ ἀτερπές, ἐψυχαγωγήσαμεν, κὰκ τῆς σκληρᾶς καὶ τραχείας τοὺς λογικοὺς ὁδίτας εἰς τὴν λείαν τε καὶ πλατεῖαν ἐχειραγωγήσαμεν, καὶ τῷ ὑπὲρ ἡμᾶς τὴν εὐχαριστίαν καὶ τήν, ὡς εἰκός, ἀνθομολόγησιν ἀπενείμαμεν.</p></div>
+    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:prol.1" n="16">
+<p>Τοῦτο γὰρ ἀφ’ ἡμῶν ἀπαιτεῖ τῶν ὑπὸ χεῖρα ὁ μόνος σοφὸς καὶ δυνατὸς θεὸς κατὰ τὸν θεῖον ἀπόστολον. Τίνος γὰρ ἄλλου δεῖται παρ’ ἡμῶν, ὃς διά τινος τῶν προφητῶν περὶ ἑαντοῦ λέγει "τὸν οὐρανὸν  πληρῶ καὶ τὴν γῆν," καὶ οὗ ἡ οἰκουμένη καὶ τὸ πλήρωμα αὐτῆς, κατὰ τὸν Δαβίδ, καὶ μεθ’ οὗ πᾶς ἀγρὸς παντοίοις ὡραϊσμένος φυτοῖς;</p></div></div></div>
+
+<div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1" n="1">
+    <milestone unit="page" resp="Bekker" n="815a"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="1">
+<p>Ἡ ΖΩΗ ἐν τοῖς ζῴοις καὶ ἐν τοῖς φυτοῖς εὑρέθη. Ἀλλ’ ἐν μὲν τοῖς ζῴοις φανερὰ καὶ πρόδηλος, ἐν τοῖς φυτοῖς δὲ κεκρυμμένη καὶ οὐκ ἐμφανής. Εἰς τὴν ταύτης γοῦν βεβαίωσιν πολλὴν ἀνάγκη ἐστὶ ζήτησιν προηγήσασθαι. Συνίσταται γὰρ πότερον ἔχουσιν ἢ οὐχὶ τὰ φυτὰ ψυχὴν καὶ δύναμιν ἐπιθυμίας ὀδύνης τε καὶ ἡδονῆς καὶ διακρίσεως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="2">
+    <p>Ἀναξαγόρας μὲν οὖν καὶ Ἐμπεδοκλῆς ἐπιθυμίᾳ ταῦτα κινεῖσθαι λέγουσιν, αἰσθάνεσθαί τε καὶ λυπεῖσθαι καὶ ἥδεσθαι διαβεβαιοῦνται.
+<pb facs="operaexrecension06arisuoft_0073"/> Ὧν ὁ μὲν Ἀναξαγόρας καὶ ζῷα εἶναι καὶ ἥδεσθαι καὶ λυπεῖσθαι εἶπε, τῇ τε ἀπορροῇ τῶν φύλλων καὶ τῇ αὐξήσει  τοῦτο ἐκλαμβάνων, ὁ δὲ Ἐμπεδοκλῆς  γένος ἐν τούτοις κεκραμένον εἶναι ἐδόξασεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="3">
+<p>Ὡσαύτως καὶ ὁ Πλάτων ἐπιθυμεῖν μόνον αὐτὰ διὰ τὴν σφοδρὰν τῆς θρεπτικῆς δυνάμεως ἀνάγκην ἔφησεν. Ὅ ἐὰν συσταίη, ἥδεσθαι ὄντως αὐτὰ καὶ λυπεῖσθαι αἰσθάνεσθαί τε σύμφωνον ἔσται. Ἃν δὲ συσταίη τοῦτο, τῷ ἐπιθυμεῖν, εἰ καὶ ἀεὶ τῷ ὕπνῳ ἀνακτῶνται καὶ ἐγείρονται ταῖς ἐγρηγόρσεσι, σύμφωνον  ἔσται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="4">
+<p>Ὡσαύτως καὶ ἐὰν ζητήσωμεν εἰ πνοὴν καὶ γένος ἐκ συγκράσεως ἔχουσιν ἢ  τὸ ἐναντίον, πολλὴν ἄν τὴν περὶ τούτου ἀμφιβολίαν καὶ μακρὰν ποιήσωμεν τὴν ζήτησιν. Τὸ δὲ τὰ τοιαῦτα παραλιμπάνειν καὶ μὴ εὐαναλώτοις περὶ τὰ καθ’ ἕκαστον ἐρεύναις ἐνδιατρίβειν πρέπον ἐστίν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="5">
+    <p>Τίνες δὲ ἔχειν ψυχὰς τὰ φυτὰ εἶπον, ὅτι γεννᾶσθαι τρέφεσθαι καὶ αὐξάνεσθαι, νεάζειν καὶ χλοάζειν γήρᾳ τε διαλύεσθαι τεθεωρήκασιν, ἐπείπερ οὐδὲν ἄψυχον ταῦτα μετὰ τῶν φυτῶν ἔχει κοινά. Διότι δὲ ἔχουσι ταῦτα τὰ φυτά, καὶ τὸ ἐπιθυμίᾳ ὡσαύτως κατέχεσθαι ἐπίστευον. Ἀλλὰ πρῶτον τοῖς <milestone unit="page" resp="Bekker" n="815b"/> φανεροῖς, εἶτα  καὶ τοῖς κεκρυμμένοις ἀκολουθήσωμεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="6">
+<p>Λέγομεν τοίνυν ὡς ἐὰν εἴ τι τρέφεται, ἢδη καὶ ἐπιθυμεῖ, καὶ  ἡδύνεται μὲν τῷ κόρῳ, λυπεῖται δὲ ὅτε πεινᾷ· καὶ οὐκ ἐμπίπτουσιν αὗται αἱ διαθέσεις εἰ μὴ μετὰ αἰσθήσεως. Τούτου ἄρα θαυμάσιος μέν, οὐ μὴν φαῦλος πλανᾶται σκοπός, ὃς καὶ τὰ φυτὰ αἰσθάνεσθαι καὶ ἐπιθυμεῖν ἐδόξασεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="7">
+<p>Ὁ δὲ Ἀναξαγόρας καὶ ὁ Δημόκριτος καὶ ὁ Ἐμπεδοκλῆς καὶ νοῦν καὶ γνῶσιν εἶπον ἔχειν τὰ φυτά. Ἡμεῖς δὲ τὰ τοιαῦτα ὡς φαῦλα ἀποτρεπόμενοι τῷ ὑγιεῖ ἐνστῶμεν λόγῳ. Λέγομεν  οὖν ὅτι τὰ φυτὰ οὔτε ἐπιθυμίαν οὔτε αἴσθησιν ἔχουσιν. Ἡ γὰρ ἐπιθυμία οὐκ ἔστιν εἰ μὴ ἐξ αἰσθήσεως, καὶ τὸ τοῦ ἡμετέρου  δὲ θελήματος τέλος πρὸς τὴν αἴσθησιν ἀποστρέφεται.</p></div>
+<pb facs="operaexrecension06arisuoft_0074"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="8">
+<p>Οὐχ εὑρίσκομεν  γοῦν ἐν τοῖς τοιούτοις αἴσθησιν οὔτε μέλος αἰσθανόμενον, οὔτε ὁμοιότητα αὐτοῦ, οὔτε εἶδος διωρισμένον, οὔτε τι ἀκόλουθον τούτῳ, οὔτε  τοπικὴν κίνησιν, οὔτε ὁδὸν πρός τι αἰσθητόν, οὔτε σημεῖόν τι δι’ οὗ ἂν  κρίνωμεν ταῦτα αἴσθησιν ἔχειν,  καθὼς σημεῖα δι’ ὧν ἐπιστάμεθα ταῦτα καὶ τρέφεσθαι καὶ  αὐξάνεσθαι εὑρίσκομεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="9">
+<p>Οὐδὲ συνίσταται παρ’ ἡμῶν τοῦτο εἰ μὴ διότι τὸ θρεπτικὸν καὶ αὐξητικὸν νοοῦμεν μέρη εἶναι τῆς ψυχῆς. Ὁπόταν γοῦν τὸ τοιοῦτον φυτὸν εὑρίσκωμέν τι μέρος ψυχῆς τοιαύτης ἐν ἑαυτῷ ἔχον, ἐξ ἀνάγκης νοοῦμεν καὶ ψυχὴν ἔχειν αὐτό· ὅτε δὲ στερεῖται αἰσθήσεως, τότε αἰσθητικὸν αὐτὸ μὴ εἶναι μὴ ἐγχωρεῖν οὐ δεῖ· ἡ γὰρ αἴσθησις αἰτία ἐστὶν ἐλλάμψεως ζωῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="10">
+<p>Τὸ δὲ θρεπτικὸν αἰτία ἐστὶν αὐξήσεως πράγματός τινος ζῶντος. Αὗται δὲ αἱ διαφοραὶ προβαίνουσιν ἐν τῷ τόπῳ τούτῳ, ὅτι  δυσχερὲς ἐν ταὐτῷ μεταξὺ ζωῆς καὶ τῆς στερήσεως αὐτῆς <milestone unit="page" resp="Bekker" n="816a"/> μέσον τι καταλαβεῖν.  Εἴποι δέ τις ἂν ὡς ἐπεὶ τὸ φυτὸν ζῶν ἐστίν, ἤδη τοῦτο καὶ ζῷον εἴποιμεν ἄν. Οὐδαμῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="11">
+<p>Καὶ γὰρ  δυσνόητόν ἐστι τὴν διοίκησιν τοῦ φυτοῦ ἀποδιδόναι τῇ διοικήσει τῆς ψυχῆς τοῦ ζῴου. Τὸ γὰρ τὰ φυτὰ τοῦ ζῆν ἀποφάσκον οὕτως, τοῦτο ἐστὶν ὅτι οὐκ αἰσθάνονται. Καὶ γάρ εἰσι καί τινα ζῷα γνώσεως ἐστερημένα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="12">
+<p>Ἐπεὶ δὲ ἡ φύσις τὴν τοῦ ζῴου ζωὴν ἐν τῷ θανάτῳ φθείρουσα, πάλιν ἐν τῷ ἰδίῳ γένει ταύτην διὰ γενέσεως συντηρεῖ, πάντῃ ἀσύμφωνόν ἐστιν ἵνα μέσον ἐμψύχου τε καὶ ἀψύχου ἄλλο τι μέσον τιθῶμεν. Ἐπιστάμεθα  δὲ ὅτι καὶ τὰ κογχύλιά εἰσι ζῷα, γνώσεως ἐστερημένα, διότι εἰσὶ φυτὰ ἐν ταὐτῷ καὶ ζῷα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="13">
+<p>Μόνη ἄρα ἡ αἴσθησίς ἐστιν αἰτία δι’ ἣν ταῦτα λέγονται ζῷα. Τὰ γὰρ γένη διδόασι τοῖς οἰκείοις εἴδεσιν ὀνόματα καὶ ὁρισμούς, τὰ δὲ εἴδη τοῖς οἰκείοις ἀτόμοις ὀνόματα. Δεῖ  τε τὸ γένος ἐκ μιᾶς καὶ κοινῆς αἰτίας <pb facs="operaexrecension06arisuoft_0075"/> εἶναι ἐν τοῖς πολλοῖς, καὶ οὐκ ἐκ πολλῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="14">
+<p>Ὁ λόγος δὲ τῆς αἰτίας, δι’ ἣν βεβαιοῦται τὸ γένος, οὐ τῷ τυχόντι ἐστὶ γνώριμος. Πάλιν εἰσὶ ζῷα ἅπερ στεροῦνται γένους θήλεος, ἕτερα ἅπερ οὐ γεννῶσιν, ἕτερα ἅπερ κίνησιν οὐκ ἔχουσιν· καὶ εἰσὶν ἄλλα διαφόρων χρωμάτων, καὶ εἰσί τινα ἃ ποιοῦσι τόκον ἑαυτοῖς ἀνόμοιον, εἰσί τε ἄλλα ἃ αὐξάνουσιν ἐκ τῆς γῆς ἢ ἐκ δένδρων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="15">
+<p>Τίς οὖν ἐστὶν ἡ ἀρχὴ ἡ ἐν τῇ ψυχῇ τοῦ ζῴου; Τί ἄλλο εἰ μὴ τὸ εὐγενὲς ζῷον, ὃ τὸν οὐρανὸν περιοδεύει, τὸν ἥλιον, τὰ ἄστρα καὶ τοὺς πλάνητας, τὰ ἀπὸ τῆς ἐνειρμένης ἐξωτερικὰ ἀμφιβολίας, ἃ δὴ καὶ ἀπαθῆ εἰσίν; ἡ γὰρ αἴσθησις τῶν αἰσθανομένων πάθος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="16">
+<p>Ἰστέον δὲ καὶ ὅτι οὐκ ἔχουσι τὰ φυτὰ κίνησιν ἐξ ἑαυτῶν· τῇ γὰρ γῇ εἰσὶ πεπηγότα, ἡ δὲ γῆ ἀκίνητός ἐστι. Συλλογισώμεθα τοίνυν πόθεν ἂν ταύτῃ  ζωή, ἵνα ποιήσωμεν καὶ αὐτὰ αἰσθητικά. Οὐ γὰρ περιέχει ταῦτα ἓν πρᾶγμα κοινόν. Λέγομεν δὲ ὅτι τῆς ζωῆς τῶν ζῴων κοινή ἐστιν αἰτία ἡ αἴσθησις. Αὕτη δὲ ποιεῖ διάκρισιν μέσον ζωῆς καὶ θανάτου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="17">
+<p>Ὁ οὐρανὸς δὲ ἐπεὶ  ἔχει διοίκησιν εὐγενεστέραν καὶ ἀξιολογωτέραν τῆς ἡμετέρας διοικήσεως, ἀπεμακρύνθη τούτων. Δεῖ τοίνυν ἵνα τὸ ζῷον τὸ τέλειον καὶ τὸ ἠλαττωμένον ἔχῃ τι κοινόν· καὶ τοῦτο ἐστὶν ὁ σκοπὸς τῆς ζωῆς. Τῇ ταύτης γοῦν στερήσει δεῖ ἵνα πᾶς τις ἀποχωρῇ τῶν τοιούτων ὀνομάτων, ὅτι οὐκ ἔστι μέσον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="18">
+<p>Ἡ δὲ ζωή ἐστι μέσον· τὸ γὰρ ἄψυχον οὐκ ἔχει ψυχὴν οὐδέ τι τῶν μερῶν αὐτῆς. Τὸ δὲ φυτὸν οὐκ ἔστιν ἐκ τῶν στερουμένων ψυχῆς, ὅτι ἐν αὐτῷ ἐστί τι μέρος ψυχῆς· ἀλλ’ οὐκ ἔστι ζῷον, ὅτι οὐδὲ αἴσθησις ἐν αὐτῷ. Ἐξέρχεται δὲ <milestone unit="page" resp="Bekker" n="816b"/> ἐκ ζωῆς εἰς μὴ ζωὴν κατὰ βραχύ, ὡς καὶ τὰ καθ’ ἕκαστον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="19">
+<p>Δυνάμεθα δὲ καὶ ἄλλως λέγειν, ὅτι  ἔστιν ἔμψυχον τὸ φυτόν, καὶ οὐ λέγομεν ὅτι ἄψυχον. Εἰ ἔχει δὲ ψυχήν, οὐ λέγομεν ὅτι καί τινα ἤδη ἔχει αἴσθησιν. Πρᾶγμα γὰρ τὸ τρεφόμενον οὐκ ἔστιν ἄνευ ψυχῆς. Πᾶν δὲ ζῷον ἔχει ψυχήν. Τὸ δὲ φυτόν ἐστιν ἀτελὲς πρᾶγμα. Πάλιν <pb facs="operaexrecension06arisuoft_0076"/> τὸ ζῷον ἔχει μέλη διωρισμένα, τὸ φυτὸν ἀδιόριστα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="20">
+<p>Ἔχει δὲ ὕλην  οἰκείαν κινήσεως, ἣν ἔχει ἐν ἑαυτῷ, Πάλιν δυνάμεθα λέγειν τὰ φυτὰ ψυχὴν ἔχειν, ὅτι ψυχή ἐστιν ἡ ποιοῦσα ἐν αὐτοῖς γεννᾶσθαι τὰς κινήσεις. Ἐπιθυμία δὲ καὶ κίνησις ἡ ἐν τόποις οὐκ ἔστιν εἰ μὴ κατὰ αἰσθήσεως. Πάλιν τὸ ἕλκειν τροφήν ἐστιν ἐξ ἀρχῆς φυσικῆς, καὶ τοῦτ’ αὐτό ἐστι τὸ κοινὸν ζῴου καὶ φυτοῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="21">
+<p>Οὐκ ἔσται δὲ φροντὶς  ἐπὶ τῇ ἑλκύσει τῆς τροφῆς αἰσθήσεως τὸ παράπαν, ὅτι πάν τὸ τρεφόμενον χρῄζει ἐν τῇ οἰκείᾳ τροφῇ δύο ποιοτήτων τινῶν, θερμότητός φημι καὶ ψυχρότητος· καὶ διὰ τοῦτο δεῖται τροφῆς ὑγρᾶς ὁμοίως καὶ ξηρᾶς· ἡ δὲ θερμότης καὶ  ἡ ψυχρότης εὑρίσκεται ἐν βρώμασι ξηροῖς καὶ ὑγροῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.1" n="22">
+<p>Οὐδεμία δὲ τῶν τοιούτων φύσεων χωρίζεται τῆς συμμετόχου αὐτῆς. Διὰ τοῦτο γὰρ καὶ πρώτως ἐγένετο ἡ τροφὴ τῷ τρέφοντι συνεχὴς ἕως καὶ εἰς αὐτὴν τὴν ὥραν τῆς φθορᾶς· καὶ ὀφείλουσι χρῆσθαι ταύτῃ τὸ ζῷον καὶ τὸ φυτὸν τοιαύτῃ ὁποῖόν ἐστιν ἑκάτερον αὐτῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="1">
+<p>Διερευνήσωμεν οὖν καὶ τοῦτο, ὃ προηγήσατο ἐν τῷ ἡμετέρῳ λόγῳ, περὶ ἐπιθυμίας φυτοῦ καὶ κινήσεως αὐτοῦ καὶ ψυχῆς ἰδίας, καὶ εἴ τι ἀναλύεται ἀπ’ αὐτοῦ τοῦ φυτοῦ, ὅσον εἰς πνοήν. Ἀναξαγόρας γὰρ εἶπε ταῦτα ἔχειν καὶ πνοήν. Καὶ πῶς, εἴπερ εὑρίσκομεν πολλὰ  ζῷα μὴ ἔχοντα πνοήν, καὶ πάλιν εὐρίσκομεν ἀκριβῶς ὅτι τὰ φυτὰ οὔτε ὑπνώττουσιν οὔτε γρηγοροῦσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="2">
+<p>Τὸ γὰρ γρηγορεῖν οὐδέν ἐστιν εἰ μὴ ἀπὸ διαθέσεως τῆς αἰσθήσεως, τὸ δὲ ὑπνώττειν οὐδὲν εἰ μὴ ἀσθένεια αὐτῆς· καὶ οὐχ  εὑρίσκεταί τι τούτων ἐν πράγματι  τρεφομένῳ μὲν πάσαις ὥραις κατὰ διοίκησιν μίαν, ἐν τῇ οἰκείᾳ δὲ φύσει μὴ αἰσθανομένῳ. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="3">
+    <p>Τὸ γὰρ ζῷον ὅτε τρέφεται, τί συμβαίνει; τὸ ἀναβαίνειν ἀναθυμίασιν ἀπὸ τῆς τροφῆς πρὸς τὴν κεφαλὴν αὐτοῦ, καὶ ὑπνώττειν ἐντεῦθεν <pb facs="operaexrecension06arisuoft_0077"/> πάντως· καὶ ὅταν καταναλωθῇ ἡ ἀναθυμίασις ἡ ἀναβαίνουσα πρὸς τὴν κεφαλήν, τότε γρηγορεῖ. Ἔν τισι δὲ τῶν ζῴων ἐστὶν αὕτη ἡ ἀναθυμίασις πολλή, καὶ τέως ὀλίγον ὑπνώττουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="4">
+<p>Ὁ δὲ νυσταγμός ἐστι συνοχὴ τῆς κινήσεως, ἡ δὲ συνοχὴ πάλιν ἠρεμία πράγματος κινουμένοῦ. Ὃ δὲ μάλιστα καὶ κυρίως ἐστὶ ζητητέον ἐν ταύτῃ τῇ <milestone unit="page" resp="Bekker" n="817a"/> ἐπιστήμῃ, τοῦτο ἐστὶν ὅπερ εἶπεν ὁ Ἐμπεδοκλῆς, ἤγουν εἰ εὑρίσκεται ἐν τοῖς φυτοῖς γένος θῆλυ καὶ γένος ἄρρεν, καὶ εἰ ἔστιν εἶδος κεκραμένον ἐκ τούτων τῶν δύο γενῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="5">
+<p>Λέγομεν τοίνυν ὅτι τὸ ἄρρεν, ὅτε γεννᾷ, εἰς ἄλλο γεννᾶ, καὶ εἰσὶν ἄμφω κεχωρισμένα ἀπ’ ἀλλήλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="6">
+<p>Ἐπεὶ γοῦν εὑρίσκεται ἐν τοῖς φυτοῖς ὅτι ἔχει τὰ φυτὰ γένος ἄρρεν καὶ θῆλυ, καὶ πάντως τὸ μὲν ἄρρεν ἐστὶ τραχύτερον καὶ σκληρότερον καὶ μᾶλλον φρίσσον, τὸ δὲ θῆλυ ἀσθενέστερον καὶ καρποφόρον πλέον, πάλιν ὀφείλομεν ζητεῖν πότερον εὑρίσκονται ταῦτα τὰ δύο γένη κεκραμένα ἅμα ἐν τοῖς φυτοῖς, ὡς εἶπεν Ἐμπεδοκλῆς,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="7">
+<p>Ἀλλ’ ἐγὼ οὐχ ὑπολαμβάνω τοῦτο τὸ πρᾶγμα οὕτως ἔχειν. Τὰ γὰρ κεκραμένα ὀφείλουσιν εἶναι πρῶτον ἁπλᾶ ἐν ἑαυτοῖς, καὶ εἶναι καθ’ αὑτὸ μὲν τὸ ἄρρεν καθ’ αὑτὸ δὲ τὸ θῆλυ, κἀντεῦθεν κιρνᾶσθαι. Ἡ δὲ κρᾶσις οὐκ ἔσται εἰ μὴ διὰ τὴν οἰκείαν γένεσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="8">
+<p>Εὐρέθη  γοῦν ἐν τοῖς φυτοῖς πρὸ τῆς κράσεως κρᾶσις, ἣ καὶ ὀφείλει εἶναι αἰτία ποιητικὴ καὶ παθητικὴ ἐν μιᾷ ὥρᾳ· ἀλλ’ οὐχ εὑρίσκεται ἀρρενότης καὶ θηλύτης ἡνωμέναι ἔν τινι τῶν φυτῶν. Εἰ δὲ τοῦτο οὕτως ἦν, τάχα ἂν τὸ φυτὸν ἦν τελειότερον τοῦ ζῴου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="9">
+<p>Καὶ πῶς, εἴπερ τὸ ζῷον οὐ δεῖται ἐν τῇ οἰκείᾳ γενέσει πράγματός τινος ἐξωτερικοῦ, τὸ δὲ φυτὸν τοῦτο δεῖται ἐν τοῖς καιροῖς τοῦ ἔτους; Δεῖται γὰρ ἡλίου καὶ εὐκρασίας καὶ τοῦ  ἀέρος πλέον· καὶ τούτων δεῖται μᾶλλον ἐν τῇ ὥρᾳ τῆς ἐκφύσεως αὑτοῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="10">
+<p>Ἔστι δὲ καί τις ἀρχὴ τῆς μὲν τροφῆς τῶν φυτῶν ἀπὸ τῆς γῆς, καὶ πάλιν ἀρχὴ ἑτέρα  τῆς γενέσεως ἀπὸ τοῦ ἡλίου. Εἶπε δὲ καὶ Ἀναξαγόρας ὅτι ἡ ὑγρότης τούτων ἐστὶν ἀπὸ <pb facs="operaexrecension06arisuoft_0078"/> τῆς γῆς, καὶ διὰ τοῦτο ἔφη πρὸς Λεχίνεον ὅτι ἡ γῆ μήτηρ μέν ἐστι τῶν φυτῶν, ὁ δὲ ἥλιος πατήρ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="11">
+<p>Ἀλλὰ τὴν κρᾶσιν τοῦ ἄρρενος τῶν φυτῶν καὶ τοῦ θήλεος ὀφείλομεν διατυπώσασθαι οὐχ οὕτως ἀλλ’ ἄλλῳ τινὶ τρόπῳ, οἶον ὅτι τὸ σπέρμα τοῦ φυτοῦ ὅμοιόν ἐστιν ἐγκυμονήσει ζῴου, ἥτις ἐστὶ μίξις ἄρρενός τε καὶ θήλεος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="12">
+<p>Καὶ ὥσπερ ἐστὶν ἐν τοῖς ᾠοῖς ὅτε γίνεται νεοσσός, ἔστιν ἐντεῦθεν καὶ ἡ τροφὴ αὐτοῦ μέχρι καὶ αὐτῆς τῆς ὥρας τῆς συμπληρώσεως καὶ τῆς οἰκείας ἐξόδου, καὶ τότε τὸ θῆλυ ἐκτίθησι τὸν νεοσσὸν ἐν μιᾷ ὥρᾳ.· οὕτω καὶ τὸ σπέρμα τοῦ φυτοῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="13">
+<p>Εἶπε δὲ πάλιν Ἐμπεδοκλῆς ὅτι τὰ φυτά, εἰ καὶ νεοσσοὺς οὐ γεννῶσι, διότι τὸ γεννώμενον οὐ γεννᾶται εἰ μὴ ἐκ τῆς φύσεως τοῦ σπέρματος, καὶ  ὅτι ὅπερ μένει ἐξ αὐτοῦ ἐν τῇ ἀρχῇ τροφὴ γίνεται τῆς ῥίζης, καὶ τὸ γεννώμενον κινεῖ αὐτὸ ἑαυτὸ παραυτίκα, ὅμως οὕτως ὀφείλομεν ὑπολαμβάνειν <milestone unit="page" resp="Bekker" n="817b"/> καὶ ἐν τῇ μίξει τῶν ἀρρένων καὶ τῶν θηλέων φυτῶν, ὡς ἐπὶ τῶν ζῴων, ὅτι καὶ ἡ μίξις τῶν φυτῶν ἐστὶν ἐν διοικήσει τινί· ἀλλ’ ἐν τοῖς ζῴοις,  ὅτε μίγνυνται, τὰ γένη μίγνυνται καὶ αἱ δυνάμεις τῶν γενῶν, αἳ ἦσαν πρότερον κεχωρισμέναι, καὶ προῆλθεν ἐκ τούτων ἀμφοτέρων πρᾶγμά τι ἔν· ὃ δὴ οὐκ ἔστιν ἐν τοῖς φυτοῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="14">
+<p>Οὐ γἀρ ὅτε μίγνυνται τὰ γένη, καὶ αἱ δυνάμεις αὑτῶν μετὰ ταῦτα γίνονται κεχωρισμέναι. Εἰ γοῦν ἡ φύσις ἔμιξε τὸ ἄρρεν μετὰ τοῦ θήλεος, καλῶς προέβη, ὅτι οὐχ εύρίσκομεν ἐνέργειάν τινα ἐν τοῖς φυτοῖς παρὰ τὴν γένεσιν τῶν καρπῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="15">
+<p>Οὐδὲ γάρ ἐστι ζῷον κεχωρισμένον τοῦ θήλεος εἰ μὴ ἐν ὥραις αἷς οὐ συνἀπτεται. Τοῦτο δέ ἐστι διὰ τὰς πολλὰς ἐνεργείας αὐτοῦ καὶ διὰ τὰς πολλὰς αὐτοῦ ἐπιστήμας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="16">
+<p>Εἰσὶ δὲ οἵτινες τὰ φυτὰ πεπληρωμένα ὑπολαμβάνουσι, καὶ τὴν χάριν τῆς ζωῆς αὐτῶν εἶναι διὰ τὰς δύο δυνάμεις ἂς ἔχει, ἤγουν διὰ τὴν τροφὴν τὴν ἐπιτηδείαν εἰς τὸ τρέφειν αὐτὰ καὶ διὰ τὴν μακρότητα <pb facs="operaexrecension06arisuoft_0079"/> τῆς  οἰκείας ὑπάρξεως καὶ τοῦ καιροῦ ὁπόταν βλαστάνῃ καὶ καρποφορῇ ἡ ζωὴ αὐτῶν, καὶ στρέφηται πρὸς αὐτὰ ἡ νεότης αὐτῶν, καὶ οὐ γίνηται ἐν αὐτοῖς τι περιττόν,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="17">
+<p>Οὐ δεῖται δὲ τὸ φυτὸν ὕπνου διὰ πολλὰς αἰτίας, ὅτι  κεῖται τὸ φυτὸν ἐν τῇ γῇ, καὶ δεσμεῖται ὑπ’ αὐτῆς, καὶ οὐκ ἔχει κίνησιν, ἐν ἑαυτῷ, οὐδὲ ὅρον διωρισμένον ἐν τοῖς οἰκείοις μέρεσιν οὔτε αἴσθησιν ἔχει, οὔτε κίνησιν αὐτοπροαίρετον, οὔτε ψυχὴν τελείαν· τοῦτο δὲ ἔχει μᾶλλον μέρος μέρους ψυχῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="18">
+<p>Καὶ τὸ φυτὸν οὐκ ἐδημιουργήθη εἰ μὴ διὰ τὸ ζῷον, τὸ δὲ ζῷον οὐκ ἐδημιουργήθη διὰ τὸ φυτόν. Καὶ πάλιν ἐὰν εἴπῃ τις ὅτι τὸ φυτὸν δεῖται μὲν τροφῆς εὐτελοῦς καὶ μοχθηράς, εἰ καὶ δεῖται δὲ τοιαύτης, ὅμως κατὰ πολὺ σταθηρᾶς καὶ συνεχοῦς καὶ μὴ ῥᾳδίως διαφθειρομένης, κἀντεῦθεν συνίσταται ἵνα τὸ φυτὸν ἔχῃ τι κρεῖττον παρὰ τὸ ζῷον, καὶ διὰ τοῦτο ἀνάγκη καὶ πράγματα ἄψυχα εἶναι εὐγενέστερα τῶν ἐμψύχων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="19">
+<p>Ἀλλὰ ἔργον ἐν τοῦ ζῴου ἐστὶ κρεῖττον παρὰ πᾶν ἔργον τοῦ φυτοῦ, Ἄλλως τε εὑρίσκομεν καὶ ἐν τῷ ζῴῳ πάσας τὰς δυνάμεις τὰς ἐν τῷ φυτῷ, καὶ ἄλλας πολλάς, οὐ μὴν καὶ ἔμπαλιν. Εἶπε πάλιν ὁ Ἐμπεδοκλῆς ὅτι τὰ φυτὰ ἔχουσι γένεσιν ἐν κόσμῳ ἠλαττωμένῳ καὶ οὐ τελείῳ κατὰ τὴν συμπλήρωσιν αὐτοῦ, ταύτης δὲ συμπληρουμένης οὐ γεννᾶται ζῷον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.2" n="20">
+<p>Ἀλλ’ οὖτος ὁ λόγος ἀνάρμοστός ἐστι, διότι ὁ κόσμος ὁλοτελής ἐστι καὶ διηνεκής, καὶ οὐκ ἔπαυσε πώποτε γεννᾶν ζῴα καὶ φυτὰ καὶ πάντα ἀλλοῖα εἴδη. Ἐν ἑκάστῳ δὲ εἴδει τῶν <milestone unit="page" resp="Bekker" n="818a"/> φυτῶν ἔστι θερμότης καὶ ὑγρότης φυσική, ἥτις ὁπόταν ἀναλωθείη, ἀσθενοῦσι τὰ φυτὰ καὶ γηράσκουσι καὶ φθίνουσι καὶ ξηραίνονται. Καὶ τινὲς μὲν λέγουσι τοῦτο φθοράν, ἄλλοι δ’ οὐχί.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="1">
+<p>Τινὰ τῶν φυτῶν ἔχουσί τι ὑγρὸν ὡς ῥητίνην, ὡς κόμι, ὡς σμύρναν, ὡς θυμίαμα καὶ ὡς κόμι Ἀραβικόν. Πάλιν τινὰ δένδρα ἔχουσι δεσμοὺς καὶ φλέβας καὶ κοιλίαν καὶ φιτρούς <pb facs="operaexrecension06arisuoft_0080"/> καὶ φλοιὸν καὶ μυελὸν ἐντός. Καὶ τινὰ ὡς ἐπὶ τὸ πλεῖστόν εἰσι φλοιός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="2">
+<p>Καὶ τινῶν μὲν ὁ καρπὸς ὑπὸ τὸν φλοιὸν ἤγουν ἐντὸς τοῦ φλοιοῦ καὶ τοῦ φιτροῦ. Καὶ τινὰ μὲν μέρη τοῦ δένδρου εἰσὶν ἀπλᾶ, ὡς ὁ χυμὸς ὁ εὑρισκόμενος ἐν αὐτοῖς καὶ οἱ δεσμοὶ καὶ αἱ φλέβες· τινὰ δέ εἰσι σύνθετα ἐκ τούτων, ὡς κλάδοι καὶ λύγοι καὶ φύλλα. Ταῦτα δὲ πάντα οὐχ εὐρίσκομεν ἐν πᾶσι τοῖς φυτοῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="3">
+<p>Τινὰ γὰρ τῶν φυτῶν ἔχουσι καὶ ταῦτα καὶ ἄλλα μέρη, λύγους, φύλλα, κλάδους, ἄνθη καὶ βλαστούς καὶ φλοιὸν τὸν περικυκλοῦντα τὸν καρπόν. Καὶ καθώς εἰσι καὶ ἐν τοῖς ζῴοις μέλη ὁμοιομερῆ, οὕτω καὶ ἐν τοῖς φυτοῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="4">
+<p>Καὶ ἕκαστα τῶν μερῶν τοῦ φυτοῦ σύνθετα εἰσὶν ὅμοια μέλεσι ζῴου· ὁ δὲ φλοιὸς τοῦ φυτοῦ ὅμοιός ἐστι φυσικῶς  δέρματι ζῴου, οἱ δὲ δεσμοὶ πάλιν ὅμοιοι νεύροις ζῴου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="5">
+<p>Ὁμοίως καὶ τὰ λοιπὰ τὰ ἐν αὐτῷ, Καὶ τινὰ μὲν τῶν μερῶν διαιροῦνταί πως διὰ μερῶν ἀνομοίων, τινὰ δὲ δι’ ὁμοίων, οἷον ὡς ἐπὶ τοῦ πηλοῦ· οὗτος γὰρ ἑνὶ τρόπῳ διαιρεῖται διὰ τῆς γῆς μόνον, καὶ ἀλλοτρόπως διὰ τῶν στοιχείων. Ὡσαύτως ὁ πνεύμων καὶ ἡ σὰρξ διαιροῦνται μὲν πρώτως, καὶ εἰσὶ μέρη τούτων σὰρξ καὶ πνεύμων· ἄλλως δὲ διαιροῦνται καὶ διὰ τῶν στοιχείκων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="6">
+<p>Ὁμοίως καὶ αἱ τῶν φυτῶν ῥίζαι. Πλὴν οὐ διαιρεῖται καὶ ἡ χεὶρ εἰς ἄλλην χεῖρα, οὐδὲ ἡ ῥίζα εἰς ἄλλην ῥίζαν, οὐδὲ τὰ φύλλα εἰς ἄλλα φύλλα. Ἐν ταύταις γοῦν ταῖς ῥίζαις καὶ ἐν αὐτοῖς τοῖς φύλλοις ἐστὶν ἡ σύνθεσις. Πάλιν τινὲς μὲν τῶν καρπῶν εἰσὶν ἐκ μερῶν ὀλίγων συγκείμενοι, τινὲς δὲ ἐκ μερῶν πολλῶν, ὡς ἐπὶ τῶν ἐλαιῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="7">
+<p>Αὗται γὰρ ἔχουσι φλοιὸν σάρκα καί τι ὀστρακῶδες καὶ σπέρμα καὶ καρπόν.  Τινὰ δὲ ἔχουσι καὶ περικαλύμματα. Πάντα δὲ τὰ σπέρματά εἰσιν ἐκ δύο φλοιῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="8">
+<p>Καὶ μέρη μὲν τῶν φυτῶν εἰσὶν ἅπερ εἴπομεν, ἡ δ’ ἀκρότης τοῦ παρόντος λόγου ἐστὶ διορίσασθαι ταῦτα τὰ μέρη τῶν φυτῶν, τὰ περικαλύμματα αὐτῶν καὶ τὰς  αὐτῶν διαφοράς· ὅπερ ἐστὶ πάνυ δυσχερές, <pb facs="operaexrecension06arisuoft_0081"/> καὶ ἐξαιρέτως τὸ διορίσασθαι τὴν οὐσίαν αὐτῶν καὶ τὸ χρῶμα καὶ τὸν καιρὸν τῆς διαμονῆς αὐτῶν καὶ τὰς συνοχὰς τὰς περιπιπτούσας αὐτοῖς, καὶ ὅτι οὐκ ἔχουσι τὰ φυτὰ ἤθη <milestone unit="page" resp="Bekker" n="818b"/> ψυχῆς, οὐδὲ διάθεσιν ἴσην διαθέσει ψυχῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="9">
+<p>Ἐὰν γοῦν κατὰ ἀναλογίαν θῶμεν τὰ μέρη τῆς ψυχῆς μετὰ τῶν μερῶν τοῦ φυτοῦ, μηκυνθήσεται ὁ λόγος, καὶ τυχὸν οὐδὲ δυνηθείημεν διεξελθεῖν ἂν ταῦτα, μεγάλαις διαφοραῖς ἀπαριθμοῦντες τὰ μέρη τῶν φυτῶν. Καὶ γὰρ μέρος ἑκάστου πράγματος ἐκ τοῦ ἰδίου γένους ἐστὶ καὶ ἐκ τῆς ἰδίας οὐσίας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="10">
+<p>Καὶ ὅταν γεννηθῇ τι εἶδος φυτοῦ, μένει ἐν τῇ οἰκείᾳ διαθέσει, ἂν μή τινι χρονικῇ ἀσθενείᾳ καὶ βαρείᾳ τῆς οἰκείας ἐκπέσῃ τοιᾶσδε διαθέσεως. Τῶν ἀνθέων τοίνυν καὶ τῶν καρπῶν καὶ τῶν φύλλων τῶν ἐν  τοῖς φυτοῖς τινὰ μὲν ἐν παντὶ ἔτει εἰσί, τινὰ δὲ οὐχ οὕτως ἔχει οὐδὲ διαμένουσιν, ὡς ὁ φλοιὸς καί τι σῶμα πῖπτον ἀπὸ πράγματος τοῦ ἀπορρίπτοντος τοῦτο διά τινα αἰτίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="11">
+<p>Οὐ μένουσι δὲ ταῦτα ἐν τῷ φυτῷ, ὅτι πολλάκις πίπτουσιν ἐξ αὐτοῦ μέρη τινὰ μὴ διωρισμένα, ὡς τρίχες ἐξ ἀνθρώπων καὶ ὄνυχες. Πλὴν γεννῶνται τρίχες ἢ ἐν αὐτοῖς τοῖς μέρεσιν ὅθεν ἐξέπεσον, ἢ ἐκτὸς ἐν ἄλλοις. Καὶ ἤδη φανερὸν γέγονεν ὅτι τὰ μέρη τοῦ φυτοῦ οὐκ εἰσὶ διωρισμένα, εἴτε  καὶ μή, ἀλλὰ μόνον ἀδιόριστα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="12">
+<p>Ἡμῖν δὲ αἰσχρόν ἐστι λέγειν πράγματά τινα μεθ’ ῏ον αὐξάνεται τὸ ζῷον καὶ συμπληροῦται μετ’ αὐτῶν, μὴ εἶναι μέρη αὐτοῦ, ἀλλ’ εἶναι κατὰ τὰ φύλλα καὶ πάντα τὰ τοιαῦτα τὰ ἐν τῷ φυτῷ, κἂν καὶ οὐκ ὦσιδιωρισμένα τὰ τοιαῦτα μέρη τοῦ ζῴου, κἂν καὶ κατὰ μικρὸν ἐκπίπτωσιν, ὡς τὰ κέρατα τῆς ἐλάφου καὶ κόμαι τινῶν ζῴων καὶ τρίχες ἄλλων, ἃ δὴ κρύπτουσιν ἑαυτὰ κατὰ τὸν χειμερινὸν καιρὸν ἐν ὀπαῖς καὶ  ὑπὸ γῆν πίπτουσι, κἂν καὶ τὸ τοιοῦτον πάθος παρόμοιον ἔχωσι τῇ πτώσει τῶν φυτῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="13">
+<p>Ὀφείλομεν  οὖν εἰπεῖν περὶ τῶν πραγμάτων ὦν πρότερον ἰστορήσαμεν, καὶ ἄρξασθαι ἀπαριθμεῖν τὰ ἴδια μέρη τῶν φυτῶν καὶ τὰ κοινά καὶ τὰς τούτων διαφοράς. Λέγομεν τοίνυν ὡς ἐπὶ τοῖς <pb facs="operaexrecension06arisuoft_0082"/> μέρεσι τῶν φυτῶν ἐστὶ μεγάλη διαφορὰ ἐν τῷ πλήθει καὶ ἐν τῇ ὀλιγότητι, ἐν τῷ μεγέθει καὶ ἐν τῇ σμικρότητι, ἐν τῇ δυνάμει καὶ ἐν τῆ ἀσθενείᾳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="14">
+<p>Τοῦτο δέ ἐστιν ὅτι ὁ χυμὸς ὁ ἐν τοῖς μεγάλοις δένδροις ἐν τισὶ μέν ἐστιν ὡς γάλα, οἶον ἐπὶ τῆς συκῆς, ἐν τισὶν ὅμοιος ὑγρᾷ πίσσῃ, ὡς ὁ χυμὸς ὁ στάζων ἐκ τῆς ἀμπέλου, ἐν τισὶ δὲ ἀρχέγονος, ὡς ἐν τῷ ὁριγάνῳ καὶ ἐν φυτῷ τῷ λεγομένῳ ὀπιγαῒς καὶ ἐν ἄλλοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="15">
+<p>Πάλιν ἔστι φυτὸν τὸ ἔχον μέρη ξηρά, ἕτερον ὑγρά, καὶ τά τοιαῦτα. Καὶ ἔστι τὸ ἔχον μέρη  διακεκριμένα, οὔτε ὅμοια οὔτε ἶσα. Καὶ τινὰ ἔχει μέρη ὅμοια μέν, οὐκ ἶσα δέ· τινὰ ἶσα μέν, οὐχ ὅμοια δέ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.3" n="16">
+<p>Καὶ ὅτι οὐδέ ἐστι τόπος ἐν τούτοις ὡρισμένος. Αἱ <milestone unit="page" resp="Bekker" n="819a"/> διαφοραὶ δὲ τῶν φυτῶν ἐν τοῖς οἰκείοις μέρεσι γινώσκονται καλῶς· ὁμοίως δὲ καὶ τὰ σχήματα αὐτῶν ἐκ τοῦ χρώματος, ἐκ τῆς ἀραιότητος, ἐκ τῆς πυκνότητος, ἐκ τῆς τραχύτητος, καὶ ἐκ πάντων ἄλλων τῶν συμβεβηκότων αὐτοῖς ἐν ἰσότητι, ἐν αὐξήσει φυσικῇ, ἐν διακρίσει, ἐν μεγέθει, ἐν σμικρότητι. Καὶ εἰσὶ μὲν ταῦτα τοιούτου τρόπου, ἔχουσι δὲ καὶ διαφορὰς πολλάς, καθὼς καὶ προείπομεν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="1">
+<p>Καὶ πάλιν τῶν φυτῶν τινὰ προάγουσι καρπὸν ἐπάνω τῶν ἰδίων φύλλων, τινὰ δὲ ὑποκάτω τῶν φύλλων. Καὶ τινῶν μὲν ὁ καρπὸς ἀπῃώρηται τοῦ ἰδίου φιτροῦ, τινῶν δὲ ἀπὸ τῆς ῥίζης, ὡς τὰ ἐν Αἰγύπτῳ φυτὰ τὰ λεγόμενα μαργαρῖται. Τινῶν δὲ οἱ καρποὶ ἐν μέσῳ αὐτῶν. Καὶ τινῶν οἱ καρποὶ καὶ τὰ φύλλα καὶ οἱ δεσμοὶ ἀδιάκριτοί εἰσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="2">
+<p>Καὶ τινῶν τὰ φύλλα πρὸς ἄλληλα ὅμοια, ἄλλων δ’ οὔ. Καὶ τινὰ μὲν ἔχουσι κλάδους ἴσους, τινὰ δὲ οὐ τοιούτους. Εἰσὶ δὲ καὶ  τὰ μέρη ἅπερ ὠνομάσαμεν ἐν πᾶσι τοῖς δένδροις, αὔξησιν πάσχοντα καὶ πρόσθεσιν, ὡς ἡ ῥίζα, οἱ λύγοι, οἱ φιτροὶ καὶ οἱ κλάδοι· καὶ ταῦτα παρομοιοῦνται μέλεσιν ἀνθρώπων τοῖς περιέχουσι πάντα τὰ ἄλλα μέλη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="3">
+<p>Καὶ ἡ μὲν ῥίζα μεσιτεύει ἔν τε τῷ φυτῷ καὶ ἐν τῇ τροφῇ, καὶ καλοῦμεν αὐτὴν οὐ μόνον ῥίζαν ἀλλὰ καὶ αἰτίαν ζωῆς· αὕτη γὰρ ζωὴν τοῖς φυτοῖς <pb facs="operaexrecension06arisuoft_0083"/> προσφέρει. Καὶ φιτρὸς μέν ἐστιν ὁ μόνος γινόμενος ἀπὸ τῆς γῆς, καὶ ἐστὶν ὅμοιος ἡλικίᾳ ἀνθρώπου· παραφυάδες δέ εἰσι τὰ ἀπὸ τῆς ῥίζης τοῦ δένδρου βλαστάνοντα, κλάδοι δέ, οἵτινες αὐξάνουσιν ἐπάνω τῶν παραφυάδων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="4">
+<p>Οὐχ εύρίσκονται δὲ ταῦτα ἐν πᾶσι τοῖς φυτοῖς. Καὶ πάλιν τῶν κλάδους ἐχόντων τινὰ μέν εἰσι διηνεκῆ, τινὰ δὲ οὐχί, μᾶλλον δὲ ἀπὸ ἔτους μετὰ ἔτος. Καὶ πάλιν εἰσὶ φυτὰ μὴ ἔχοντα κλάδους μηδὲ φύλλα, ὡς οἱ μύκητες καὶ τὰ ὅμοια.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="5">
+<p>Οἱ κλάδοι δὲ οἱ γεννώμενοι ἐν τοῖς δένδροις καὶ οἱ φλοιοὶ καὶ οἱ φιτροὶ καὶ οἱ μυελοὶ οὐ γεννῶνται εἰ μὴ ἀπ’ αὐτοῦ τοῦ  χυμοῦ τῶν δένδρων. Καί τινες καλοῦσιν αὐτὸν τὸν μυελὸν τὸν ἐν τοῖς δένδροις μήτραν, ἄλλοι σπλάγχνα, ἕτεροι δὲ καρδίαν. Ταῦτα δὲ καὶ αἱ φλέβες καὶ ἡ σὰρξ ὅλου τοῦ δένδρου ἐκ τῶν τεσσάρων στοιχείων πεφύκασι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="6">
+<p>Καὶ πολλάκις εὑρίσκονται μέρη τινὰ ἐπιτήδεια εἰς τὸ γεννᾶν φύλλα καὶ ἄνθη. Καὶ λύγοι δέ τινες βραχεῖς εἰσίν,  εἰς τὸ γεννᾶν ἐπιτήδειοι ἄνθη, ὡς ἐπὶ τῶν ἰτεῶν. Τινὲς δὲ καὶ ἄνθη καὶ καρποὺς ἐν τοῖς δένδροις, καὶ τἆλλ’ ὁπόσα γεννῶνται ἐκ σπέρματος, καὶ ὅσα περικαλύπτουσιν αὐτά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="7">
+<p>Καὶ πάλιν τῶν φυτῶν  τινὰ μέν εἰσι δένδρα, τινὰ δὲ μέσον δένδρων καὶ βοτανῶν· καὶ ταῦτα ὀνομάζονται <milestone unit="page" resp="Bekker" n="819b"/> θάμνοι. Καὶ τινὰ μέν εἰσι βοτάναι, τινὰ δὲ λάχανα. Σχεδὸν μὲν οὖν πάντα τὰ φυτὰ τοῖς τοιούτοις ὑποπίπτουσιν ὀνόμασι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="8">
+<p>Πάλιν εἰσὶ δένδρα ἅπερ ἔχουσιν ἐκ τῆς οἰκείας ῥίζης φιτρόν, καὶ γεννῶνται ἐν αὐτοῖς κλάδοι πολλοί, ὡς συκαῖ καὶ ἐλαῖαι· τινὰ δ’ οὔ. Πάλιν εἰσὶν ἄλλα φυτὰ μέσον, ὡς εἴπομεν, δένδρων καὶ βοτανῶν σμικρῶν, τὰ λεγόμενα θάμνοι, ἔχοντα ἐν ταῖς ῥίζαις αὐτῶν πολλοὺς κλάδους, ὡς τὰ καλούμενα ἄγνοι καὶ βάτοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="9">
+<p>Λάχανα δέ εἰσι τὰ ἔχοντα πολλοὺς φιτροὺς ἐκ d μιᾶς ῥίζης καὶ πολλοὺς κλάδους, ὡς τὸ πήγανον, αἱ κράμβαι καὶ τὰ τοιαῦτα. Εἰσὶ δὲ καὶ βοτάναι αἵτινες οὐκ ἔχουσι φιτρὸν ἐκ τῆς οἰκείας ῥίζης, ἀλλὰ παραυτίκα φέρουσι φύλλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="10">
+<p>Καὶ τινὰ μὲν κατὰ πάν <pb facs="operaexrecension06arisuoft_0084"/> ἔτος γεννῶνται καὶ ξηραίνονται, ὡς σῖτος καὶ τὰ παραπλήσια, τινὰ δ’ οὔ. Οὐ δυνάμεθα δὲ ταῦτα πάντα ἐπίστασθαι εἰ μὴ διὰ συλλογισμῶν καὶ παραδειγμάτων καὶ ὑπογραφῶν. Πάλιν εἰσὶ βοτάναι εἰς δύο ἄκρα κλίνουσαι, ὡς τὸ λεγόμενον λάχανον βασιλικόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="11">
+<p>Εἰσὶ δὲ ἄλλαι αἱ λεγόμεναι ἐν ταὐτῷ βοτάναι καὶ λάχανα· καί τινες ἄλλαι αἳ ἐν τῷ γεννάσθαι μὲν πρώτως φαίνονται ἐν σχήματι στάχυος, μετὰ ταῦτα δὲ γίνονται δένδρα, ὡς οἱ Ἀραβικοὶ βέντελοι καὶ τὸ φυτὸν τὸ λεγόμενον ἡλιοσκόπιον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="12">
+<p>Μυρσίνη δὲ καὶ μηλέα καὶ ὄχνη καὶ τὰ λοιπὰ ὅμοια δένδρα εἰς τοῦτο τὸ γένος περιέχονται, ὦν πολλοὶ καὶ μάταιοί εἰσι κλάδοι, ἐκ τῶν ῥιζῶν αὐτῶν φυόμενοι. Καὶ διὰ τοῦτο πρέπον προσδιορίζειν ταῦτα, ἵνα ὦσιν εἰς παράδειγμα καὶ συλλογισμόν· οὐ γὰρ ὀφείλομεν διερευνᾶν ὁρισμούς ἐν πᾶσι,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="13">
+<p>Πάλιν τῶν φυτῶν τὰ μέν εἰσὶ κατοικίδια, τὰ δὲ κηπαῖα, καὶ ἕτερα ἄγρια. Τοιουτοτρόπως δὲ λέγομεν ὄχνας καὶ ἄλλα τοιαῦτα εἴδη φυτῶν ἄγρια, ὅτι οὐκ εἰσὶν ἐξ ἐπιμελείας γεωργικῆς. Πάλιν τῶν φυτῶν τινὰ μὲν ποιοῦσι καρπόν, τινὰ δ’ οὔ, ὡς ἰτέαι καί τινα εἴδη δρυῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="14">
+<p>Καὶ τινὰ μὲν ποιοῦσιν ἔλαιον, τινὰ δ’ οὐχί. Καὶ τινὰ μὲν ποιοῦσι φύλλα, τινὰ δ’ οὔ. Καὶ τινῶν πίπτουσι τὰ φύλλα, τινῶν δ’ οὔ. Καὶ τισὶ μὲν γίνονται κλάδοι, τισὶ δ’ οὔ. Περὶ διαφορᾶς γοῦν τῶν φυτῶν ἐν μεγέθει καὶ σμικρότητι, ἐν ὡραιότητι καὶ ἀμορφίᾳ, ἐν χρηστότητι καρπῶν καὶ κακίᾳ πολλὰ ἔστιν εἰπεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="15">
+<p>Πάλιν τὰ ἄγρια δένδρα μᾶλλον καρποφοροῦσι παρὰ τὰ κηπαῖα, καὶ οἱ καρποὶ τῶν κηπαίων κρείττονές εἰσι τῶν ἀγρίων. Καὶ τινὰ μὲν τῶν φυτῶν γεννῶνται ἐν τόποις ξηροῖς, τινὰ δὲ ἐν θαλάσσῃ· καὶ τινὰ μὲν ἐν ποταμοῖς, ἄλλα δὲ ἐν τῇ ἐρυθρᾷ θαλάσσῃ· καὶ τινὰ ἐν τόποις μὲν ἄλλοις μεγάλα, ἐν ἑτέροις δὲ μικρά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="16">
+<p>Καὶ τινὰ <milestone unit="page" resp="Bekker" n="820a"/> μὲν γεννῶνται ἐν ὄχθαις ποταμῶν, τινὰ δὲ ἐν λίμναις. Καὶ τῶν γεννωμένων ἐν τόποις ξηροῖς τινὰ μὲν γεννῶνται ἐν ὄρεσι, τινὰ δὲ ἐν πεδιάσι. Καὶ τινὰ ζῶσιν ἐν τόποις ξηροτάτοις, ὡς τὰ ἐν τῇ γῇ τῶν Αἰθιόπων, καὶ ἐκεῖσε κρειττόνως αὐξάνουσι παρὸ ἀλλαχοῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.4" n="17">
+<p>Καὶ τινὰ μὲν ζῶσιν ἐν τόποις ὑψηλοῖς, τινὰ δὲ ἐν <pb facs="operaexrecension06arisuoft_0085"/> χθαμαλοῖς. Καὶ τινὰ μὲν ζῶσιν ἐν τόποις ὑγροῖς, τινὰ δὲ ἐν ξηροῖς, τινὰ  δὲ ἐν ἑκατέροις, ὡς ἡ ἰτέα. Τὰ γοῦν φυτὰ κατὰ πολὺ ἐναλλάττονται τῇ διαφορᾷ τῶν τόπων, καὶ ἐντεῦθεν χρὴ κατανοεῖν καὶ τὰς διαφορὰς αὐτῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="1">
+<p>Πάλιν τῶν φυτῶν τινὰ μὲν τῇ γῇ πεπήγασι καὶ οὐ φιλοῦσι χωρίζεσθαι ἀπ’ αὐτῆς· τινὰ δὲ ἐν τόποις κρείττοσι μετατίθενται. Ὁμοίως τινὲς τῶν καρπῶν κρείττονές εἰσιν ἐν τῷδε τῷ τόπῳ παρὸ ἐν ἑτέρῳ. Καὶ τινῶν μὲν φυτῶν τὰ φύλλα σκληρά εἰσι, τινῶν δὲ λεῖα· καὶ τινῶν μὲν ἐσχισμένα, ὡς τὰ τῶν ἀμπέλων καὶ τῶν συκῶν, τινῶν δ’ οὔ· ἑτέρων δὲ κατὰ πολὺ ἐσχισμένα, ὡς τὰ τῆς πεύκης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="2">
+<p>Τινὰ δὲ φυτά εἰσιν ὅλως φλοιὸς μεσιτεύων. Καὶ τινὰ ἔχουσι δεσμούς, ὡς οἱ κάλαμοι, τινὰ δ’ οὔ. Καὶ τινὰ ἔχουσιν ἀκάνθας, ὡς αἱ ῥάμνοι, τινὰ δὲ ἐστέρηνται ἀκανθῶν. Καὶ τινὰ ἔχουσι πολλοὺς κλάδους, ὡς ἡ ἀγρία μορέα, τινὰ δ’ οὔ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="3">
+<p>Καὶ τινὰ μὲν ἔχουσι διαφορὰς ἄλλας ἐξ ὦ προβαίνουσι παραφυάδες καὶ ἐξ ὦν οὐχί· τοῦτο δὲ οὐκ ἄλλοθέν ἐστιν εἰ μὴ ἐκ τῆς διαφορᾶς τῶν ῥιζῶν. Τινὰ δὲ ἔχουσι μίαν ῥίζαν, ὡς ἡ σκίλλα· αὕτη δὲ γεννᾶται ἐκ τοῦ ἐδάφους, καὶ ἀραιῶς πρόεισιν, ὅτι ὑποκάτω πλατύνεται, καὶ ἀκολουθοῦσα μᾶλλον διακρίνεται τῷ ἡλίῳ· ὅταν γὰρ προσβάλλῃ αὐτῇ, αὐξάνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="4">
+<p>Οὖτος δὲ ταύτης καὶ τὰς παραφυάδας κάτωθεν ἐκμυζᾷ. Πάλιν τῶν χυλῶν τῶν ἐν τοῖς καρποῖς οἱ μέν εἰσι ποτοί, οἱ δὲ οὐ ποτοί· καὶ ποτοὶ μὲν οἱ τῶν σταφυλῶν καὶ τῶν ῥοιῶν καὶ λοιπῶν ἄλλων πολλῶν, ἄποτοι δὲ ἄλλων φυτῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="5">
+<p>Καἰ τινῶν μέν εἰσι λιπαροί, ὡς οἱ τῆς ἐλαίας, τῆς πεύκης καὶ τῆς καρύας, τινῶν δ’ οὔ. Καὶ τινῶν μὲν γλυκεῖς καὶ μελιηδεῖς, ὡς τῶν φοινίκων καὶ τῶν συκῶν· καὶ τινῶν μὲν θερμοὶ καὶ δριμεῖς, ὡς τοῦ ὀριγάνου καὶ τοῦ σινήπιος, τινῶν δὲ πικροί, ὡς τοῦ ἀψινθίου καὶ τῆς κενταυρέας. Πάλιν τῶν καρπῶν οἱ μέν εἰσι σύνθετοι ἐκ σαρκῶν καὶ κόκκων καὶ λεμμάτων, ὡε οἱ σικυοί, τινὲς δὲ ἐκ χυμοῦ καὶ κόκκων, ὡς αἱ ῥοιαί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="6">
+<p>Καὶ τινὰ μὲν <pb facs="operaexrecension06arisuoft_0086"/> τοὺς φλοιοὺς ἔχουσιν ἐκτός, τὴν δὲ σάρκα ἐντός, τινὰ δὲ τὸ ὀστοῦν ἐντὸς καὶ τὴν σάρκα ἐκτός. Τινὰ δέ εἰσιν ἐν οἶς παραυτίκα γίνεται <milestone unit="page" resp="Bekker" n="820b"/> τὸ σπέρμα καὶ τὸ περικάλυμμα ᾦ περικαλύπτονται, ὡς οἱ καρποὶ τῶν φοινίκων καὶ τῶν ἀμυγδαλῶν· τινῶν δ’ οὐχί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="7">
+<p>Καὶ τινὲς καρποί εἰσι βρώσιμοι καὶ κατὰ συμβεβηκὸς ἄβρωτοι· καὶ τινὲς καρποὶ ἡμῖν μὲν ἄβρωτοι, ἄλλοις δὲ βρώσιμοι, ὡς ὁ ὑοσκύαμος καὶ ὁ ἑλλέβορος ἀνθρώποις μὲν δηλητήριον, τροφὴ δὲ τοῖς ὄρτυξι. Πάλιν τινὲς τῶν καρπῶν εἰσὶν ἐν θήκαις, ὡς οἱ κόκκοι τοῦ κυάμου· τινὲς ἐν περικαλύμματι καὶ ἐν λέμματι οἷον ὑφάσματί τινι, ὡς ἐν σίτῳ εὑρίσκεται καὶ τοῖς λοιποῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="8">
+<p>Καὶ τινὲς μὲν ἐν σαρκί εἰσιν, ὡς οἱ τῶν φοινίκων καρποί, τινὲς δὲ οἶον ἐν οἰκίσκοις, ὡς αἱ βάλανοι, ἄλλοι δ’ ἐν οἰκίσκοις πολλοῖς καὶ λέμμασι καὶ ὀστράκοις, ὡς τὰ κάρυα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="9">
+<p>Καὶ τινὲς μὲν ὀξέως πεπαίνονται, ὡς οἱ καρποὶ τῆς  μορέας καὶ τῆς κεράσου, τινὲς δὲ βραδέως, ὡς πάντες οἱ καρποὶ οἱ ἄγριοι ἢ οἱ πλείονες αὐτῶν. Καὶ τινὰ μὲν φυτὰ ὀξέως προάγουσι φύλλα καὶ καρπούς, τινὰ δὲ βραδέως· καὶ τούτων τινὰ τῷ χειμῶνι ἀκολουθοῦσι, πρὶν ἂν πεπανθῶσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="10">
+<p>Καὶ πάλιν τὰ χρώματα τῶν φύλλων καὶ τῶν καρπῶν καὶ τῶν οἶον ἐπ’ αὐτοῖς ὑφασμάτων λίαν εἰσὶ διάφορα· τινὰ γὰρ τῶν φυτῶν ἐν τῇ οἰκείᾳ ὁλότητι εἰσὶ χλοάζοντα, καὶ τινὰ μὲν ἐκκλίνουσιν εἰς μελανίαν, τινὰ δὲ εἰς λευκότητα, καὶ τινὰ εἰς ἐρυθρότητα διὰ τὴν θερμότητα τὴν ἐκκαίουσαν τὸν ἀέρα τὸν κεκραμένον μετὰ τοῦ προσγείου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.5" n="11">
+<p>Πάλιν τὰ σχήματα τῶν καρπῶν, εἰ εἰσὶν ἄγρια, καὶ διαφόρων εἰσὶ θέσεων· οὐδὲ γὰρ πάντες οἱ καρποί εἰσι γωνιώδεις, οὐδὲ πάντες διὰ γραμμῆς εὐθείας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="1">
+<p>Πάλιν τῶν ἀρωματοφόρων δένδρων τινῶν μὲν ἡ ῥίζα ἀρωματική ἐστιν, τινῶν ὁ φλοιός, τινῶν τὸ ξύλον· ἄλλων τὰ μέρη ὅλα εἰσὶν ἀρωματικά, ὡς τὸ βάλσαμον. Πάλιν τῶν δένδρων τὰ μὲν γεννῶνται ἐκ σπέρματος, τὰ δὲ δι’ ἑαυτῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="2">
+<p>Καὶ πάλιν τὰ μὲν ἀπὸ ῥιζῶν ἐκσπῶνται καὶ μεταφυτεύονται, <pb facs="operaexrecension06arisuoft_0087"/> τὰ δὲ ἐκ τοῦ φιτροῦ, τὰ δὲ ἐκ τῶν κλάδων ἢ ἀπὸ τοῦ σπέρματος. Καὶ τινὰ  μὲν δι’ ἑαυτῶν κατὰ μικρὸν ἐκτείνονται, τινὰ δὲ ἐν τῇ γῇ. Καὶ τινὰ μὲν ἐν τοῖς δένδροις φυτεύονται, ὡς τὰ ἐγκεντριζόμενα. Ἔστι δὲ βελτίων ὁ ἐγκεντρισμὸς ὁμοίων εἰς ὅμοια.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="3">
+<p>Ἔστι δὲ καὶ ἀναλογία ἄλλη τις, δι’ ἦς ἀρίστως συμβαίνουσι τὰ ἀνόμοια, ὡς αἱ μηλέαι μετὰ τῶν ὀχνῶν. Ἐν δὲ τοῖς ὁμοίοις, ὡς συκῆ ἐν συκῇ καὶ ἄμπελος ἐν ἀμπέλῳ καὶ ἀμυγδαλῆ  ἐν ἀμυγδαλῇ,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="4">
+<p>Ἔστι δὲ καὶ ἄλλος ἐμφυλλισμὸς ἐν ἄλλοις διαφόροις γένεσιν, ὡς ἀρτεμισία εἰς ἀγρίαν ἀρτεμισίαν καὶ καλλιέλαιος εἰς ἀγριέλαιον καὶ ἡ  μορέα εἰς πολλὰ δένδρα. <milestone unit="page" resp="Bekker" n="821a"/> Τῶν δένδρων πάλιν τὰ ἄγρια καὶ τὰ κηπαῖα, καὶ πᾶν φυτὸν οὐ προάγει σπέρμα ὅμοιον τῷ σπέρματι ἐξ οὗ ἀνεφύη ἕκαστον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="5">
+<p>Τινὰ γὰρ κρεῖττον σπέρμα ποιοῦσι, τινὰ χεῖρον. Καὶ ἐκ τινῶν κακῶν σπερμάτων καλὰ δένδρα προβαίνουσιν, ὡς τὰ ἐξ ἀμυγδαλῆς μικρᾶς καὶ ῥοιᾶς ὀξώδους. Τινῶν δένδρων πάλιν σπέρμα ἂν ἀσθενὲς γένηται, ἐκλείπει τὸ γενέσθαι καλὰ αὐτά, ὡς αἱ πεῦκαι καὶ οἱ φοίνικες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="6">
+<p>Οὐ  προέρχονται δὲ ῥᾳδίως ἐκ σπέρματος κακοῦ καλὰ δένδρα,  οὐδ’ ἐκ σπέρματος ἀγαθοῦ κακὰ δένδρα. Τὸ δὲ ἐκ πονηροῦ γενέσθαι ἀγαθόν, καὶ τὸ ἐναντίον, ἐν τοῖς ζῴοις πολλάκις εὑρίσκεται. Πάλιν δένδρον τὸ ἔχον σκληρὸν λίαν τὸν φλοιὸν στεῖρον ἀποκαθίσταται· ἐὰν δὲ σχισθῇ ἡ ῥίζα αὐτοῦ καὶ τῇ σχισμῇ λίθος ἐμβληθῇ, εὔφορον γίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="7">
+<p>Ἐν δὲ τοῖς φοίνιξιν ἂν φύλλα ἢ ψῆνες ἢ φλοιὸς τοῦ ἄρρενος φοίνικος τοῖς φύλλοις τοῦ θήλεος συντεθείη, ἵνα πως συναφθῶσι, ταχέως πεπαίνονται οἱ καρποί, κωλύεται δὲ καὶ ἡ πτῶσις αὐτῶν, Διακρίνεται δὲ ὁ ἄρρην ἀπὸ τοῦ θήλεος, ὅτι πρώτως βλαστάνουσι  τὰ τούτου φύλλα, ἅ εἰσι παρὰ τὰ τοῦ θήλεος μικρότερα· ἀλλὰ καὶ διὰ τῆς εὐωδίας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="8">
+    <p>Ἀλλαχοῦ δὲ ἔκ τινος τούτων ἢ ἐκ πάντων συμβαίνει. Τυχὸν δὲ καὶ εἰ ἐκ τῆς εὐωδίας <pb facs="operaexrecension06arisuoft_0088"/> τοῦ ἄρρενος ἐπαγάγῃ τι ἄνεμος πρὸς τὸν θῆλυν, πεπαίνονται καὶ οὕτως οἱ καρποί, ὥσπερ ὁπόταν τὰ φύλλα τοῦ ἄρρενος τῷ θήλει ἀπαιωρῶνται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.6" n="9">
+<p>Συκαῖ ὡσαύτως ἄγριαι εἰς τὴν γῆν ἐξαπλωθεῖσαι συμβάλλονται τὰ πολλὰ ταῖς κηπαίαις συκαῖς. Τὰ  βαλαύστια ταῖς ἐλαίαις συμβάλλουσιν, ὅταν ὁμοῦ φυτεύωνται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="1">
+<p>Πάλιν τῶν φυτῶν τινὰ μεταλλάττονται, ὡς φασίν, εἰς ἄλλο εἶδος, ὡς ἡ καρύα,  ὅταν γηράσῃ. Λέγουσι πάλιν ὡς ἡ καλαμίνθη μεταβάλλεται εἰς ἡδύοσμον· καὶ τὸ τράγιον δὲ τμηθὲν καὶ φυτευθὲν παρὰ τὴν θάλασσαν τυχὸν ἔσται σισύμβριον. Φασὶ πάλιν ὡς ὁ σῖτος καὶ τὸ λίνον μεταβάλλονται εἰς ἕτερον εἶδος,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="2">
+<p>Βελένιον δὲ τὸ δηλητηριῶδες, τὸ γινόμενον ἐν τῇ  Περσίδι, μεταφυτευόμενον ἐν Αἰγύπτῳ ἢ ἐν Παλαιστίνῃ γίνεται βρώσιμον. Ὡσαύτως ἀμυγδαλῆ καὶ ῥοιὰ μεταβάλλονται ἀπὸ τῆς ἰδίας κακίας διὰ  γεηπονίαν εἰς τὸ χρηστότερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="3">
+<p>Ἀλλ’ αἱ ῥοιαὶ μὲν χοιρείας κόπρου ἐμβεβλημένης ταῖς ῥίζαις, καὶ δι’ ὕδατος γλυκέος καὶ ψυχροῦ  ποτιζόμεναι βελτιοῦνται· ἀμυγδαλαῖ δὲ ἥλων ἐμπηγνυμένων αὐταῖς, καὶ  κόμεος διὰ πολλοῦ κάρου ἐντεῦθεν  ἐκβαλλομένου. Πολλὰ δὲ φυτὰ ἄγρια διὰ ταύτης τῆς ἐπιτεχνήσεως <milestone unit="page" resp="Bekker" n="821b"/> γίνονται κηπαῖα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="4">
+<p>Τόπος δὲ καὶ γεηπονία σφόδρα τούτοις συμβάλλονται, καὶ μᾶλλον ὁ τοῦ ἔτους καιρός, οὗ χρῄζουσι μᾶλλον οἱ φυτευταί, Πάλιν τῶν φυτῶν τὰ πλείονα φυτεύονται ἐν ἔαρι, ὀλίγα ἐν χειμῶνι καὶ φθινοπώρῳ, καὶ ὀλίγιστα ἐν θέρει μετὰ τὴν ἐπιτολὴν τοῦ κυνάστρου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="5">
+<p>Ἐν ὀλίγοις δὲ τόποις γίνεται ἡ τοιαύτη φυτεία, καὶ οὐδέποτε γίνεται εἰ μὴ ἀραιός, ὡς ἐν τῇ Ρώμῃ κατὰ τήνδε τὴν ὥραν. Ἐν Αἰγύπτῳ δὲ οὐ γίνεται ἡ φυτεία εἰ μὴ ἅπαξ τοῦ ἐνιαυτοῦ, Πάλιν τινὰ τῶν φυτῶν ἐκ τῶν οἰκείων ῥιζῶν φύλλα προβάλλονται, τινὰ ἐκ τῶν οἰκείων κομέων ἢ ἐκ τῶν οἰκείων ξύλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="6">
+<p>Καὶ τινὰ μὲν πλησίον τῆς γῆς, τινὰ δὲ πόρρω, τινὰ <pb facs="operaexrecension06arisuoft_0089"/> ἐν μέσῳ. Καὶ τινὰ μὲν ἅπαξ τοῦ ἐνιαυτοῦ καρποφοροῦσι, τινὰ δὲ πλειστάκις, ἀλλ’ οὐ πεπαίνονται οἱ καρποὶ αὐτῶν, ἀπομένουσι δὲ ὠμοί,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="7">
+<p>Καὶ τινὰ δένδρα εἰσὶν εὔφορα διὰ πολλῶν χρόνων, ὡς αἱ συκαῖ· τινὰ ἐν ἑνὶ καρποφοροῦσιν ἔτει, ἐν δὲ τῷ ἑτέρῳ ἀνακτῶνται ἑαυτά, ὡς αἱ ἐλαῖαι πολλοὺς κλάδους προβαλλόμεναι, οἷς καὶ περικαλύπτονται. Καὶ τινὰ μὲν τῶν φυτῶν εὐφορώτερά εἰσιν ἐν γήρᾳ, τινὰ δὲ ἐκ τοῦ ἐναντίου μᾶλλον καρποφοροῦσιν ἐν νεότητι, ὡς ἀμυγδαλαῖ καὶ ὄχναι καὶ αἴγειροι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="8">
+<p>Ἡ διαφορὰ δὲ τῶν φυτῶν τῶν ἀγρίαν καὶ τῶν κηπαίων διακρίνεται δι’ ἀρρένων καὶ θηλέων, ὁπόταν ἕκαστον αὐτῶν γνωρισθείη διὰ τῶν ἰδιωμάτων τῶν εὑρισκομένων ἐν αὐτοῖς, ὅτι τὸ μὲν ἄρρεν ἐστὶ πυκνότερον σκληρότερον καὶ  πολυκλονώτερον, ἧττον ὑγρόν, καὶ  ταχύτερον εἰς πέπανσιν, καὶ φύλλα ἔχον διάφορα καὶ παραφυάδας. Τὸ δὲ θῆλυ ἐπ’ ἔλαττον ἔχει ταῦτα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="9">
+<p>Δεῖ τοίνυν, ὅταν κατανοήσωμεν ταῦτα, πάλιν  στοχάσασθαι πῶς ἂν γνοίημεν τὰ δένδρα καθ’ αὐτὰ καὶ τὰ γένη καθ’ αὐτά. Καὶ περὶ τῶν βοτανῶν ὡσαύτως, πῶς ἂν κατανοήσωμεν ἃ εἶπον οἱ παλαιοί. Πῶς;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="10">
+<p>Ἐὰν ἐπιμελῶς σκοπήσωμεν τὰς βίβλους αὐτῶν, ἂς ἔγραψαν, καὶ δυνηθείημεν διερευνῆσαι τούτων τὸν μυελὸν ἐρεύνῃ συνοπτικῇ, καὶ γνωρίσαι βοτάνας τὰς ἐλαιώδεις καὶ βοτάνας τὰς σπέρμα μόνον ἐχούσας, καὶ τὰς βοήθειαν χορηγούσας, καὶ τὰς ἰατρικὰς καὶ τὰς φθοροποιούς. Ὡσαύτως καὶ τὰ δένδρα μετὰ τῶν βοτανῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:1.7" n="11">
+<p>Πρὸς δὲ τὸ μαθεῖν καὶ τὰς αἰτίας αὐτῶν ὀφείλομεν ζητῆσαι τὴν γένεσιν τούτων, πῶς τινὰ μὲν γεννῶνται ἐν τισὶ τόποις, ἐν ἄλλοις δ’ οὔ· ἔτι δὲ καὶ τὰς φυτείας αὐτῶν καὶ τὰς ῥίζας, καὶ τὰς διαφορὰς τῶν χυλῶν καὶ τῶν ὀδμῶν καὶ τοῦ γάλακτος καὶ τοῦ κόμεος, καὶ τὴν χρηστότητα <milestone unit="page" resp="Bekker" n="822a"/> καὶ τὴν κακίαν ἑκάστων, καὶ τὰς διαμονάς, πῶς τινῶν μὲν διαμένουσιν οἱ καρποὶ τινῶν δ’ οὔ, καὶ δι’ ἣν αἰτίαν τινῶν μὲν σήπονται συντόμως τινῶν δὲ <pb facs="operaexrecension06arisuoft_0090"/> βραδέως, ἐρευνῆσαί τε καὶ τὰς ἰδιότητας τῶν φυτῶν, καὶ μᾶλλον τῶν ῥιζῶν· καὶ πῶς τινῶν μὲν καρποὶ μαλθάσσονται, τινῶν δ’ οὔ· καὶ πῶς τινὲς ἀφροδίτην προκαλοῦνται, τινὲς δὲ ὕπνον, τινὲς δὲ καὶ διαφθείρουσι, καὶ πολλὰς ἄλλας διαφοράς· καὶ πῶς τινῶν μὲν οἱ καρποὶ ποιοῦσι  γάλα, τινῶν δ’ οὔ Β. Τὸ δένδρον τρεῖς ἔχει δυνάμεις, πρώτην ἐκ τοῦ γένους τῆς γῆς, δευτέραν ἐκ τοῦ γένους τοῦ ὕδατος, τρίτην ἐκ τοῦ γένους τοῦ πυρός. Ἀπὸ τῆς γῆς γάρ ἐστιν ἡ ἔκφυσις τῆς βοτάνης, ἀπὸ τοῦ ὕδατος ἡ σύμπηξις, ἀπὸ τοῦ πυρὸς ἡ ἕνωσις τῆς συμπήξεως τοῦ φυτοῦ. Βλέπομεν δὲ πολλὰ τούτων καὶ ἐν τοῖς  ὁστρακώδεσιν.</p></div></div></div>
+    
+<div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1" n="2">
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="2">
+<p>Εἰσὶ γὰρ ἐν τούτοις τρία, πηλός, ἐξ οὗ γένεται πλίνθος ὀστρακώδης, δεύτερον ὕδωρ, ὅπερ ἐστὶ τὸ στερεοῦν τὰ ὀστρακώδη, τρίτον τὸ πῦρ τὸ συνάγον τὰ μέρη αὐτοῦ, ἔστ’ ἂν δι’ αὐτοῦ πληρωθείη ἡ τούτου γένεσις. Ἡ φανέρωσις γοῦν ὅλης τῆς ἑνώσεως τούτων ἀπὸ τοῦ πυρός ἐστιν, ὅτι ἀραιότης ἔνεστι τοῖς ὁστρακώδεσι κατὰ τὰ ἴδα μέρη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="3">
+<p>Καὶ ὁπόταν μίξῃ ταῦτα τὸ πῦρ, τελειοῦται ἡ ὕλη τοῦ ὑγροῦ, καὶ συγκολλῶνται τὰ μέρη τοῦ πηλοῦ, προέρχεταί τε ξηρότης ἐν τῷ τόπῳ τοῦ ὑγροῦ, Καὶ διὰ τὴν ἐπικράτειαν ἕπεται πέψις ἐν παντὶ ζῴῳ καὶ φυτῷ καὶ μετάλλοις. Πέψις γάρ ἐστιν, ὅπου ὑγρότης καὶ θερμότης ἰδίῳ πέρατι ἀκολουθεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="4">
+<p>Ἔστι δὲ τοῦτο ἐν τῇ πέψει τοῦ λίθου καὶ τῶν μετάλλων ἐκφανές· ἐν τῷ ζῴῳ δὲ καὶ τῷ φυτῷ οὐχ οὕτως, ὅτι τούτων τὰ μέρη οὐκ εἰσὶ συμπεπηγότα εἰς ἓν ὡς τοῖς λίθοις, καὶ ὅτι ἐκ τούτων καταρροή τις προβαίνει, ἐκ δὲ τῶν λίθων καὶ τῶν μετάλλων οὐκ ἔξεισι καταρροὴ ἢ τις ἱδρώς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="5">
+    <p>Τὰ γὰρ μέρη αὐτῶν οὐκ εἰσὶν ἀραιά, κἀντεῦθεν οὐδέ τινα ἀπ’ αὐτῶν ἐξέρχονται, ὡς ἀπὸ τοῦ ζῴου καὶ τοῦ φυτοῦ περιττώματα, οὐδὲ γίνεται ἔξοδός τις ἄλλη ἀπὸ τῆς ἀραιότητος. <pb facs="operaexrecension06arisuoft_0091"/> Ἐν ᾦ γὰρ ἀραιότης οὐκ ἔστιν, ἀπ’ αὐτοῦ παντελῶς οὐδέν τι ἐξέρχεται. Διὰ τοῦτο στερεόν ἐστιν, εἰς ὃ αὐξάνεσθαί  τι οὐ πέφυκε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="6">
+<p>Καὶ γὰρ τὸ αὐξάνεσθαι πεφυκὸς δεῖται τόπου, ἐν ᾦ ἂν πλατυνθείη καὶ περατωθείη. Λίθοι δὲ καὶ ὄστρακα καὶ τὰ τοιαῦτα ἀεί εἰσιν ἐν ταὐτῷ, οὔτε αὐξάνουσιν <milestone unit="page" resp="Bekker" n="822b"/> οὔτε ἐκτείνονται. Πάλιν τοῖς φυτοῖς δευτέρῳ τρόπῳ ἔνεστι κίνησις, ἔστι καὶ ἐφέλκυσις, ἥτις ἐστὶ δύναμις ἐκ τῆς γῆς ἐφελκομένη τὸ ὑγρόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="7">
+<p>Ἔστι  δὲ τῇ ἐφελκύσει κίνησις ἥτις ἔρχεται εἰς τόπον, καὶ τελειοῦταί πως ἡ πέψις· καὶ διὰ τοῦτο ὡς ἐπὶ τὸ πλεῖστον αἱ μικραὶ βοτάναι μιᾷ ὥρᾳ μιᾶς ἡμέρας γεννῶνται. Οὐκ ἔστι δὲ τοῦτο καὶ ἐν τοῖς ζῴοις· ἡ γὰρ ὕλη ἐν τοῖς ζῴοις ἐστὶ καθ’ ἑαυτὴν καὶ διῃρημένῃ. Οὐκ ἔστι δὲ οὐδὲ ἡ πέψις εἰ μὴ ἐν χρήσει μάλιστα καὶ αὕτη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="8">
+<p>Ἡ ὥλη δὲ τοῦ φυτοῦ τούτῳ ἐστὶ πλησίον, καὶ διὰ τοῦτο ὀξυτέρα ἐστὶν ἡ τούτου γένεσις. Τεννᾶται δὲ καὶ αὐξάνει καὶ ὅπερ μᾶλλόν ἐστι λεπτὸν ἐν αὐτῷ, παρὰ τὸ πυκνόν. Τὸ γὰρ πυκνὸν πολυτρόπων δεῖται δυνάμεων διά τε τὴν  διαφορὰν τοῦ οἰκείου σχήματος καὶ διὰ τὸ μῆκος τῶν μερῶν αὐτοῦ πρὸς ἄλληλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="9">
+<p>Κἀντεῦθεν ὀξυτέρα καὶ φυτοῦ γένεσις, διὰ τὴν λεπτότητα ἑτέρου πρὸς ἕτερον, καὶ ταχυτέρα ἡ τελείωσις. Τὰ μέρη τῶν φυτῶν ὡς ἐπὶ τὸ πλεῖστόν εἰσιν ἀραιά, ὅτι ἡ θερμότης  αὐτῶν τὴν ὑγρότητα πρὸς τὰ ἄκρα τῶν φυτῶν ἐφέλκεται. Διασπείρεταί τε ἡ ὕλη ἡ θρεπτικὴ εἰς ὅλα τὰ μέρη αὐτῶν· ὃ δὲ περιττεύει, ἐκχεῖται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.1" n="10">
+<p>Ὥσπερ  δὲ ἐν τοῖς βαλανείοις ἡ θερμότης τὴν ὑγρότητα ἐφέλκεται καὶ ταύτην εἰς ἀτμίδα μεταστρέφει, αὕτη δὲ κουφιζομένη, ὁπόταν περιττεύσῃ, μεταβάλλεται εἰς σταγόνας, οὕτως καὶ ἐν τοῖς ζῴοις καὶ ἐν τοῖς φυτοῖς  τὰ περιττώματα ἀναβαίνουσιν ἀπὸ τῶν κατωτέρων εἰς τὰ ἀνώτερα,  καὶ καταβαίνουσιν ἀπὸ τῶν ἀνωτέρων εἰς τὰ κατώτερα. Τοιουτοτρόπως δὲ καὶ οἱ ποταμοὶ οἱ ὑπὸ τὴν γῆν γεννῶνται ἀπὸ τῶν ὁρέων. Ὕλη γὰρ αὐτῶν εἰσὶν οἱ ὑετοί· καὶ ὅταν πληθυνθῶσι τὰ ὕδατα <pb facs="operaexrecension06arisuoft_0092"/> καὶ στενοχωρῶνται ἐντός, γίνεται ἐκ τούτων ἀτμὶς περιττή, ἥτις διὰ τὸν ἐντὸς συμπιεσμὸν σχίζει τὴν γῆν· καὶ οὕτω φαίνονται πηγαὶ καὶ ποταμοὶ οἱ πρότερον μὴ φαινόμενοι ἀλλ’ ἐγκεκρυμμένοι τυγχάνοντες.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="1">
+<p>Ἐκτεθείκαμεν δὲ αἰτίας περὶ τῆς γενέσεως τῶν πηγῶν καὶ τῶν ποταμῶν ἐν τῷ ἡμετέρῳ βιβλίῳ  τῷ περὶ μετεώρων, ἐν ᾧ εἴπομεν καὶ περὶ σεισμῶν ὅτι πολλάκις δεικνύουσιν οὗτοι πηγὰς καὶ ποταμούς, οἳ πρότερον οὐκ ἐφαίνοντο, οἶον ὅτε σχίζεται ἡ γῆ ἐκ τῆς ἀναθυμιάσεως. Πολλάκις δὲ εὑρίσκομεν ὅτι καὶ πηγαὶ καὶ ποταμοὶ συζεύγνυνται, ὅτε γίνεται σεισμός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="2">
+<p>Τοῦτο δὲ τῷ φυτῷ οὐ συμβαίνει, ὅτι ἀὴρ ἐν τῇ ἀραιότητι τῶν μερῶν αὐτοῦ ἐστί, καὶ τοῦδε πάλιν <milestone unit="page" resp="Bekker" n="823a"/> σημεῖον, ὅτι σεισμὸς οὐδὲ ἐν τοῖς τόποις τοῖς ψαμμώδεσι πέφυκε γίνεσθαι, ἀλλ’ ἐν τόποις πυκνοῖς καὶ σκληροῖς, ὁποῖοί εἰσιν οἱ τῶν ὑδάτων καὶ τῶν ὁρέων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="3">
+<p>Καὶ γὰρ συμβαίνει σεισμὸς ἐν τοῖς τόποις τούτοις, ὅτι τὸ ὕδωρ ἐστὶ στερρὸν καὶ οἱ λίθοι στερροί· τῇ φύσει δὲ τοῦ ἀέρος τοῦ θερμοῦ καὶ ξηροῦ ἔνεστι τὸ ἀναβαίνειν ἐκ τῆς κουφότητος. Ὄτε γοῦν συνέλθωσι τὰ μέρη αὐτοῦ καὶ κατακυριεύσωσι, συνωθοῦσι τὸν τόπον, καὶ ἐντεῦθεν ἐξέρχεται ἀπ’ αὐτοῦ βιαία ἀναθυμίασις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="4">
+<p>Ἐὰν δὲ ὁ τόπος ἦν ἀραιός, οὐκ ἂν ἐξήρχετο οὕτως, ἀλλ’ ὡς ἐπὶ τῆς ψάμμου συμβαίνει. Ἐξέρχεται γὰρ καὶ ἐντεῦθεν ἀναθυμίασις, ἀλλὰ κατὰ βραχύ· καὶ διὰ τοῦτο οὐ γίνεται σεισμός, Ἁπλῶς οὖν ἐν τοῖς στερεοῖς πᾶσι τοῦτο οὐ συμβαίνει, λέγω τὸ κατὰ βραχὺ τὸν ἀέρα ἐξέρχεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="5">
+<p>Συναγόμενα γὰρ τὰ μέρη τούτου δύνανται τὴν γῆν σχίζειν, καὶ τοῦτο ἐστὶν αἰτία τοῦ σεισμοῦ ἐν σώμασι στερεοῖς. Ἐν τοῖς μέρεσι δὲ τῶν φυτῶν καὶ τῶν ζῴων σεισμὸς οὐ γίνεται, ἀλλ’ ἐν ἄλλοις πᾶσι, καὶ πλειστάκις ἔν τε τοῖς ὁστρακώδεσι καὶ  ἐν ὑέλῳ καὶ λοιποῖς μετάλλοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="6">
+<p>Ἐν ᾧ γὰρ σώματί ἐστι πολλὴ ἀραιότης, ἔθος καὶ τὴν ἀναθυμίασιν ἀναβαίνειν· ὑποκουφίζει γὰρ αὐτὴν ὁ ἀήρ. Καὶ συχνάκις τοῦτο βλέπομεν, <pb facs="operaexrecension06arisuoft_0093"/> ὅταν βάλλωμεν χρυσὸν εἰς τὸ ὕδωρ ἢ ἄλλο τι βαρύ, καὶ παραυτίκα βυθίζεται· καὶ πάλιν ὅταν βάλλωμεν ξύλον ἀραιὸν ἤ βραχύ, καὶ ἐπιπλέει καὶ οὐ βυθίζεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="7">
+<p>Ὅθεν οὐ διὰ τὰ φύλλα οὐ καταδύεται τὸ καταδυόμενον πολλάκις ξύλον, οὐδὲ διὰ τὸ ὑποκείμενον τὸ βαρύ, ἀλλ’ ὅτι τὸ μέν ἐστι στερρὸν καὶ πυκνόν, τὸ δὲ  ἀραιόν· τὸ δὲ ἀραιὸν παντάπαν οὐ βυθίζεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="8">
+<p>Ἔβενος δὲ καὶ τὰ αὐτῷ παραπλήσια βυθίζονται, ὅτι μικρά ἐστιν ἐν τούτοις ἡ ἀραιότης· καὶ οὐδὲ ἔστιν ἐν αὐτοῖς ἀὴρ ὁ δυνάμενος ταῦτα κουφίσαι. Καταδύονται δέ, ὅτι τὰ μέρη αὐτῶν λίαν εἰσὶ πυκνὰ καὶ στερρά. Πᾶν δὲ ἔλαιον καὶ πάντα τὰ φύλλα τοῦ ὕδατος ὑπερνήχονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="9">
+<p>Καὶ τοῦτο ἤδη ἀποδεικνύομεν. Ἔγνωμεν γὰρ ὅτι ἐν τούτοις ἐστὶν ὑγρότης καὶ θερμότης, καὶ ἔθος τοῦ ὑγροῦ ἐστὶ τοῖς τοῦ ὕδατος μέρεσι συνάπτεσθαι· ἡ δὲ θερμότης ποιεῖ ἀνάγεσθαι τὸ ὑγρόν, καθὼς παρέπεται ἐν τῷ καιρῷ τοῦ ἔαρος. Ἔθος δὲ καὶ τοῦ ὕδατος τὸ κουφίζειν πάντα πρὸς τὴν ἰδίαν ἐπιφάνειαν ἕως τῆς τοῦ ἀέρος ἐπιφανείας, ὥστε ποιεῖν αὐτὸν ἀνέρχεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="10">
+<p>Τὴν δὲ ἐπιφάνειαν αὐτοῦ οὐχ ὑπερβαίνει τὸ ὕδωρ· ἡ γὰρ ὅλη ἐπιφάνεια αὐτοῦ μία ἐστὶ μετὰ τῆς τοῦ ἀέρος. Καὶ διὰ τοῦτο ἄνεισι καὶ τὸ ἔλαιον ὑπεράνω τοῦ ὕδατος. Εἰσὶ δὲ καί τινες λίθοι οἳ τοῦ ὕδατος ὑπερνήχονται, διὰ τὸ κενὸν μόνον τὸ ἐν τούτοις μεῖζον ὂν τῶν ἐν αὐτοῖς <milestone unit="page" resp="Bekker" n="823b"/> μερῶν, καὶ διὰ τὸ τὸν τόπον τοῦ ἀέρος μείζονα εἶναι τοῦ τόπου τοῦ σώματος τῆς γῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="11">
+<p>Φύσις γάρ ἐστι τοῦ ὕδατος ὑπεράνω βαίνειν τῆς γῆς, τοῦ δὲ ἀέρος τὸ ὑπεράνω βαίνειν τοῦ ὕδατος, Ἡ τοῦ ἀέρος τοίνυν φύσις τοῦ ἐγκλειομένου τῷ λίθῳ ἀναβαίνει ἐπάνω τοῦ ὕδατος, καὶ τῷ ὅλῳ ἀέρι συνάπτεται· καὶ γὰρ ἕκαστον τὸ οἰκεῖον ὅμοιον ἐφέλκεται, καὶ συνακολουθεῖ ἡ φύσις τοῦ μέρους τῷ ὅλῳ ιὧ συζεύγνυται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="12">
+<p>Εἰ τοίνυν ἔσται τις ῥαχία κούφη, τὸ μὲν ἥμισυ αὐτῆς καταδύσεται ἐν ὕδατι, τὸ δὲ λοιπὸν ὑπερνήξεται, ὅτι μείζων ἐν αὐτῷ ὁ ἀὴρ τοῦ λοιποῦ σώματος τοῦ λίθου. Διὰ τοῦτο πάντα τὰ δένδρα βαρύτερά εἰσι τῶν <pb facs="operaexrecension06arisuoft_0094"/> τοιούτων λίθων. Οἱ ἐν τοῖς ὕδασι δὲ λίθοι γίνονται ἐκ τῆς συγκρούσεως τῶν ὑδάτων τῆς ἰσχυρᾶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="13">
+<p>Γίνεται γὰρ πρῶτον ἀφρός, εἶτα συμπήγνυται οὕτως οἷόν τι γάλα λιπαρόν· καὶ ὅτε τὸ ὕδωρ τῇ ψάμμῳ προστρίβεται, συναθροίζει ἡ ψάμμος τὴν λιπότητά πως τοῦ ἀφροῦ, ξηραίνει τε αὐτὴν ἡ ξηρότης τῆς θαλάσσης μετά περιττῆς τῆς ἁλυκότητος· καὶ οὕτω συνάγονται τὰ μέρη τῆς ψάμμου, καὶ τῷ ἐπιμήκει τοῦ χρόνου γίνονται λίθοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="14">
+<p>Ἡ δήλωσις δὲ ὅτι ἡ θάλασσα ποιεῖ καθ’ ἑαυτὴν ψάμμον, οὕτως ἐστίν, ὅτι πᾶσα γῆ οὐκ ἔστι γλυκεῖα· ὅτε οὖν στῇ ἐν αὐτῇ τι ὕδωρ, κωλύεται ὁ ἀὴρ ἀλλοιῶσαι αὐτό,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="15">
+<p>Ἔτι δὲ χρονίζοντος τῷ τόπῳ τοῦ ἐμπεριειλημμένου ὕδατος, ἐπεὶ οὐ δύναται τοῦτο παρομοιῶσαι ἑαυτῷ ὁ ἀήρ (κυριεύουσι γὰρ ἐν αὐτῷ τῷ ὕδατι  τὰ μέρη τὰ γεώδη, ἅ εἰσιν ἁλυκά), ἀνάγκη ἐπὶ πλέον θερμανθέντα κατὰ βραχὺ καὶ ἄμφω ποιῆσαι πηλὸν ἔμφυτον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="16">
+<p>Τοῦτο δὲ οὐ δύναται γενέσθαι ἐν ὕδασι γλυκεροῖς διὰ τὴν γλυκύτητα καὶ τὴν λεπτότητα αὐτῶν, ἀλλ’ ἐν τοῖς ἁλμυροῖς, ὅτι κυριεύει ἐν τούτοις ἡ ξηρότης τῆς γῆς, καὶ ἢ μεταβάλλει τὸ ὕδωρ εἰς τὸ εἶδος αὐτῆς, ἢ πλησίον αὐτῆς τοῦτο ποιεῖ, καὶ ἑκάτερον ἀλλοιοῦται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="17">
+<p>Σκληρύνουσα δὲ ἡ σκληρότης τῆς γῆς κατὰ τὴν δύναμιν τῆς συμπήξεως αὐτῆς τὴν ὑπόστασιν τοῦ ὕδατος, διαιρεῖ τὸν πηλὸν εἰς ἴδια μέρη σμικρά· καὶ διὰ τοῦτο γίνεται ἡ γῆ ἡ τῇ  θαλάσσῃ πλησιάζουσα ψαμμώδης. Οὕτως καὶ αἱ πεδιάδες, αἵτινες οὐκ ἔχουσιν ὅπερ ἂν περικαλύψῃ αὐτὰς ἀπό τοῦ ἡλίου, εἰσί τε καὶ μεμακρυσμέναι ἀπὸ ὕδατος γλυκεροῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="18">
+<p>Ξηραίνει γὰρ ὁ ἥλιος τὰ μέρη τῆς ὑγρότητος τῆς γλυκείας, ἀπομένει δὲ ὅ ἐστιν ἐκ τοῦ γένους τῆς γῆς. Καὶ διότι ἐνδιατρίβει ὁ ἥλιος ἐν τούτῳ τῷ τόπῳ τῷ ἀπερικαλύπτῳ, διαχωρίζονται τὰ μέρη τοῦ πηλοῦ, καὶ γίνεται ἐντεῦθεν ψάμμος. Τούτου δὲ σημεῖόν ἐστιν, ὅτι ἐν τοιούτῳ τόπῳ βαθὺ κοιλαίνομεν καὶ εὑρίσκομεν πηλὸν ἔμφυτον, καὶ ἔστιν οὗτος ῥίζα ψάμμου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="19">
+<p><milestone unit="page" resp="Bekker" n="824a"/> Οὐ γίνεται δὲ ψάμμος εἰ μὴ κατὰ συμβεβηκός. Συμβαίνει δὲ τοῦτο, ὅτι ἔστι διατρίβὴ τῆς κινήσεως τοῦ ἡλίου, <pb facs="operaexrecension06arisuoft_0095"/> ὡς ἔφημεν, καὶ μακρυσμὸς ἀπὸ ὕδατος γλυκεροῦ. Τοιουτοτρόπως νοητέον καὶ περὶ τῆς ἁλμυρότητος τῶν ὑδάτων τῆς θαλάσσης. Ἡ ῥίζα μὲν γὰρ πάντων τῶν ὑδάτων ἐστὶ γλυκερά, καὶ οὐκ ἄλλως συμβαίνει αὐτῇ ἁλμυρότης εἰ μὴ κατὰ τὸν τρόπον τὸν λεχθέντα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="20">
+<p>Καὶ τοῦτο σημεῖόν ἐστιν αἰσθητὸν ὅτι ἡ γῆ μέν ἐστιν ὑποκάτω τοῦ ὕδατος, τὸ δὲ ὕδωρ ὑπεράνω ἐξ ἀνάγκης καὶ φυσικῶς. Κἀντεῦθεν καὶ κυριώτερον συμβέβηκε τῷ ὕδατι τὸ εἶναι στοιχείῳ παρὸ τῇ γῇ. Ἐφρόνησαν δέ τινες στοιχεῖον εἶναι τὸ πάντων τῶν ὑδάτων πλεῖστον· πλεῖστον δέ ἐστι τὸ ὕδωρ τῆς θαλάσσης, καὶ διὰ τοῦτο καὶ στοιχεῖον  πάντων ἐκρίθη τῶν ὑδάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="21">
+<p>Ἔστι δὲ τὸ ὕδωρ φυσικῶς ὑπερέχον τῆς γῆς καὶ λεπτότερον αὐτῆς. Καὶ διὰ τοῦτο ἀπεδείξαμεν ὅτι καὶ τὸ ὕδωρ πάντως κουφότερόν ἐστι τὸ γλυκὺ τοῦ ἁλμυροῦ. Πλὴν λάβωμεν καὶ ὡς ἐν παραδείγματι δύο σκεύη ἶσα, καὶ θῶμεν ἐν αὐτοῖς ὕδωρ γλυκὺ καὶ ὕδωρ ἀλμυρόν. Μετὰ ταῦτα προσλάβωμεν ᾠόν, θῶμεν δὲ τοῦτο ἐν τῷ ὕδατι τῷ γλυκεῖ, καὶ αὐτίκα καταδύσεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="22">
+<p>Μετὰ ταῦτα θῶμεν αὐτὸ καὶ ἐν τῷ ὕδατι τῷ ἁλμυρῷ, καὶ ὑπερνήξεται, καὶ ἀναβήσεται ἐπάνω τῶν μερῶν τοῦ τοιούτου ὕδατος, διότι τὰ μέρη τούτου οὐ διαζεύγνυνται ὠς τὰ μέρη τοῦ ὕδατος τοῦ γλυκεροῦ. Ἐκείνου μὲν γὰρ τὰ μέρη οὐ δύνανται ὑπομένειν διὰ τὴν λεπτότητα βάρος, τούτου δὲ διὰ τὴν παχύτητα δύνανται· καὶ διὰ τοῦτο οὐ καταδύεται τὸ ἐπιτεθὲν αὐτῷ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="23">
+<p>Οὕτω φυσικῶς ἐν τῇ νεκρᾷ θαλάσσῃ οὔτε καταδύεται ζῷον οὔτε γεννᾶται· κυριεύει γὰρ ἡ ξηρότης ἐν αὐτῷ, καὶ ἐν παντὶ ὅπερ ἐστὶ πλησίον τοῦ σχήματος τῆς γῆς. Φαίνεται τοίνυν ἐντεῦθεν ὅτι τὸ ὕδωρ τὸ παχύ ἐστιν ὑποκάτω τοῦ μὴ παχέος. Τὸ γὰρ παχύ ἐστιν ἐκ τοῦ γένους τῆς γῆς, τὸ δὲ λεπτὸν καὶ ἀραιὸν ἐκ τοῦ γένους τοῦ ἀέρος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="24">
+    <p>Καὶ διὰ τοῦτο ὑπερέχει τὸ ὕδωρ τὸ γλυκὺ πάντων τῶν ὐδάτων· ἐκεῖνο γάρ ἐστιν ὑπάρχον τῆς γῆς πορρωτέρω. Ἤδη τοιγαροῦν ἔγνωμεν ὅτι τὸ ὕδωρ τὸ πορρωτάτω τῆς γῆς φυσικόν <pb facs="operaexrecension06arisuoft_0096"/> ἐστι. Καὶ τὸ γλυκὺ τοῦ θαλαττίου ὑπερκεῖσθαι ἀπεδείξαμεν. Καὶ φυσικὸν τοῦτο εἶναι τῷ ῥηθέντι σημείῳ φανερὸν καὶ ἀναγκαῖον ἐγένετο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.2" n="25">
+<p>Γεννᾶται δέ τὸ ἅλας ἐν ἱσταμένοις ὕδασιν, οἷς τὸ γλυκὺ γίνεται ἁλμυρόν. Ὑπερβαίνει δὲ ἡ ἁλμυρότης τῆς γῆς ἐκείνην τὴν ἁλμυρότητα. Ἀπομένει γὰρ ἐκείνῃ μὲν ἀὴρ ἐγκεκλεισμένος, ταύτῃ δ’ οὔ. Καὶ διὰ τοῦτο οὐκ ἔστιν ἐκεῖνο τῆς γῆς τὸ σῶμα, γλυκύτητός τινος μετέχον <milestone unit="page" resp="Bekker" n="824b"/> κατὰ πάντα τρόπον, εἰ καὶ τὸ γένος τοῦτο ἐξ ὕδατός ἐστιν, ὃ ἐξέρχεται ἐξ αὐτῆς τῆς γῆς ὡς ἱδρώς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="1">
+<p>Πρὸς τούτοις ὀφείλομεν εἰδέναι ὅτι καὶ αἱ βοτάναι καὶ τὰ εἴδη οὐκ εἰσὶν εἰ μὴ ἐκ συνθέσεως, καὶ οὐκ ἐξ ὕλης ἁπλῆς, ἀλλ’ ὥσπερ ἐστὶν ἡ ἁλυκότης ἀπὸ τοῦ ὕδατος τῆς θαλάσσης  καὶ τῆς οὐσίας τῶν ψάμμων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="2">
+<p>Αἱ ἀναθυμιάσεις γὰρ αἱ ἀναβαίνουσαι, ὅταν συμπαγῶσι, δύνανται συμπεριλαβεῖν τὴν αἰτίαν τῆς τῶν βοτανῶν ὑπάρξεως· καταπίπτει γὰρ ἀὴρ ἐντεῦθεν, καὶ δροσίζει τὸν τόπον, καὶ  προέρχονται ἐξ αὐτοῦ διὰ τῆς δυνάμεως τῶν ἀστέρων τὰ εἴδη τῶν σπερμάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="3">
+<p>Ὕλη δὲ ἀναγκαία ἐστὶ τὸ ὕδωρ, εἰ καὶ διαφορά ἐστιν ἐν τῷ γένει τοῦ ὕδατος. Τὸ γὰρ ἀνερχόμενον οὐκ ἔστιν εἰ μὴ ὕδωρ γλυκύ· τὸ δὲ ἁλμυρὸν βαρύ ἐστι, καὶ οὐ συναναβαίνει τῷ γλυκεῖ. Τὸ δὲ ὑπερβαῖνον τοῦτο τὸ λεπτότερόν ἐστι τοῦ ὕδατος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="4">
+<p>Ὃ δὴ ἐὰν ἐφελκυσθείη ὑπὸ τοῦ ἀέρος, λεπτύνεται καὶ ἐπὶ πλέον ἀναβαίνει, κἀντεῦθεν γίνονται πηγαὶ καὶ ποταμοὶ ἐν τοῖς ὄρεσι, καὶ εἰς πολὺ διατρέχουσι. Καὶ σημεῖον τούτου ἐστὶ τὸ αἷμα τὸ ἀνερχόμενον εἰς τὸν ἐγκέφαλον. Ὥσπερ γάρ τι ἐκ τῶν τροφῶν μετὰ τῆς ἀναθυμιάσεως ἀνέρχεται, οὕτω καὶ εἰς πάντα τὰ ὕδατα,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="5">
+<p>Καὶ γὰρ καί τι τοῦ ὕδατος τοῦ ἁλυκοῦ ἄνεισι μετ’ ἐκείνου  ὃ ἐξήρανεν ἡ θερμότης,  εἰς τὸ εἶδος τοῦ ἀέρος, ὅς ἐστιν ἀκριβῶς ὑπεράνω παντὸς γλυκέος ὕδατος καὶ ἁλμυροῦ, Παράδειγμα τοῦ δὲ τοῦ λόγου τούτου εὑρήκαμεν ἐν τοῖς βαλανείοις πολλάκις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="6">
+    <p>Ὅταν γὰρ τὸ ὕδωρ τὸ ἁλμυρὸν καταλάβῃ θερμότης, λεπτύνει <pb facs="operaexrecension06arisuoft_0097"/> τὰ μέρη αὐτοῦ, ἀναβαίνει τε ἀναθυμίασις, ἥτις ἦν ἐν τῷ ἐδάφει τοῦ βαλανείου, καὶ ἀναχωροῦσι τὰ πυκνὰ μέρη τῆς ἁλυκότητος μετὰ τοῦ ὑγροῦ τοῦ φυσικοῦ (οὐδὲ γάρ εἰσιν ἐκ τοῦ γένους τοῦ ἀέρος), ἵνα ἀκολουθήσωσι τῇ ἀναθυμιάσει, ἥτις μία μετὰ τὴν ἄλλην  προχωρεῖ ἄνω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="7">
+<p>Ὅταν γοῦν  προχωρήσωσι πολλαί, καταπιέζεται ὁ ὄροφος, κἀντεῦθεν συνάγεται καὶ συμπήγνυται καὶ ἐπιστρέφει καὶ κάτω στάζει τὸ ὕδωρ τὸ γλυκύ. Καὶ οὕτως ἐν πᾶσι τοῖς βαλανείοις τοῖς ἁλμυροῖς ἐστὶν ὕδωρ γλυκύ. Αἱ τοίνυν βοτάναι αἱ φυόμεναι ἐν τοῖς ὕδασι τοῖς ἁλυκοῖς οὐκ ὀφείλουσιν ἔχειν πληθυσμὸν διὰ τὴν ξηρότητα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="8">
+    <p>Καὶ γὰρ τὸ φυτὸν δύο δεῖται, ὕλης λέγω καὶ τόπου, τῇ ἰδίᾳ φύσει ἁρμοζόντων. Ὅταν γοῦν τὰ τοιαῦτα δύο παρῶσιν ὁμοῦ, προκόπτει τὸ φυτόν. Ὅταν δὲ εὕρωμεν ὕλην πορρωτάτω τῆς εὐκρασίας, ἐπικενῆς ἐστίν· ἐμποδὼν γάρ ἐστι τῷ εἶναι τὸ ἐν τόπῳ εἶναι μὴ εὐκραεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="9">
+<p>Ἔτι κοινῶς οὐχ εὑρίσκομεν φυτὸν <milestone unit="page" resp="Bekker" n="825a"/> ἐν χιόνι, πλὴν βλέπομέν ποτε φυτὸν φαινόμενον ἐν αὐτῇ, καί τινα ζῷα, καὶ ἐξαιρέτως ἕλμινθας. Οὗτοι γὰρ γεννῶνται ἐν τῇ χιόνι, καὶ φλόμος, καὶ πᾶσαι βοτάναι πικραί. Ἀλλ’ ἡ χιὼν οὐ ζητεῖ προχωρεῖν ἐπὶ τούτῳ, ἂν μὴ καὶ συζευχθείη τις αἰτία ἐν αὐτῇ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="10">
+<p>Καὶ αὕτη ἐστὶν ὅτι ἡ χιὼν κατέρχεταί ποτε ὁμοία καπνῷ, συμπήγνυσί τε ταύτην ἄνεμος καὶ συσφίγγει ἀήρ. Πλῆν γίνεται καὶ ἀραιότης τις ἐν τοῖς μέρεσιν αὐτῆς· κατέχεται γὰρ ἐν τούτοις θερμόν τι μέρος ἀέρος, μένει τε ἐξ αὐτοῦ καὶ ὕδωρ σεσημμένον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="11">
+<p>Ὅταν γοῦν ὁ ἀὴρ ὁ ἐγκεκλεισμένος πλείονος γένηται πλατύνσεως καὶ ὁ ἥλιος παρουσιάσηται, ἀπορρήγνυται ὁ ἀὴρ ὁ συμπιληθεὶς ἐν τῇ χιόνι, καὶ φαίνεται ἡ ὑγρότης ἡ σεσημμένη, ἥτις καὶ συμπήγνυται μετὰ τῆς θερμότητος τοῦ ἡλίου· καὶ οὕτω φύονταί τινες βοτάναι,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="12">
+<p>Ἐὰν δὲ ᾖ ὁ τόπος περικεκαλυμμένος, οὐ γίνονται ἐν αὐτῷ βοτάναι  ἀλλ’ ἢ ἄνευ φύλλων· ἀπεχώρησε γὰρ ἀπ’ αὐτοῦ ἡ εὐκρασία τῆς γῆς, ἡ ὁμογενὴς <pb facs="operaexrecension06arisuoft_0098"/> αὐτῇ, Ὄθεν ἄνθη καὶ φύλλα ἐν βοτάναις μικραῖς μεμιγμένα εὑρίσκονται ἐν τόποις κεκραμένοις καθαρῶς δι’ ἀέρος καὶ ὕδατος· ἐν ἑτέροις δὲ μὴ τοιούτοις σπάνιά εἰσι τὰ ἄνθη καὶ τὰ φύλλα τῶν φυτῶν τῶν συμβαινόντων ἐν τῇ χιόνι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="13">
+<p>Ὁμοίως καὶ ἐν τόποις πολλοῖς ἁλμυροῖς καὶ ξηροῖς ὡς ἐπὶ τὸ πλεῖστον οὐ φαίνεται φυτόν. Οὖτοι γὰρ οἱ τόποι πόρρω εἰσὶν εὐκρασίας· ἐλαττονεῖται γὰρ ἡ γῆ, ἐξ ἦς μακράν εἰσιν  ὑγρότης καὶ θερμότης, ἅπερ εἰσὶ διὰ γλυκέος  ὕδατος. Τίνεται δέ ποτε ἡ γλυκερὰ γῆ νεκρά, καὶ τότε οὐ γεννῶνται ὀξέως ἐν αὐτῇ βοτάναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="14">
+<p>Ἐν τόποις δὲ θερμοῖς, ὅπου ἔστιν ὕδωρ γλυκὺ καὶ θερμότης πολλή, προφθάνει πέψις ἐκ τῶν δύο μερῶν, ἐκ τῆς διαθέσεως τοῦ τόπου μετὰ  καὶ τοῦ ἀέρος τοῦ ἐν αὐτῷ ὑπάρχοντος. Ἡ δὲ πέψις τοῦ ἀέρος ἐκ τῆς θερμότητός ἐστι τοῦ ἡλίου τῆς ἐν ἐκείνῳ τῷ τόπῳ. Ἐντεῦθεν καὶ τὰ ὄρη ἐφέλκονται ὑγρότητα, βοηθεῖ τε αὐτοῖς καὶ ἡ θερμότης τοῦ ἀέρος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="15">
+<p>Ἐπισπεύδει δὲ καὶ ἡ πέψις· καὶ διὰ τοῦτο τὰ φυτὰ ὡς ἐπὶ τὸ πολὺ ἐν τοῖς ὄρεσι φύονται. Ἐν δὲ τοῖς ψάμμοις νικᾷ, ὡς προέφημεν, ἡ ἀλμυρότης, καὶ ἀπομένουσιν ἐν τοῖς μέρεσι τῆς ψάμμου ἀραιότητες ὅμοιαι πρὸς ἀλλήλας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.3" n="16">
+<p>Ὁ τοίνυν ἥλιος οὐκ ἔχει δύναμιν ἵνα ἐν αὐταῖς ἀπαρτίσῃ καὶ βεβαιώσῃ συνέχειαν οὐσίας. Τῷ τοι καὶ φυτὰ ἐν αὐταῖς ὡς τὰ πολλὰ οὐ γίνονται· εἰ δὲ καὶ γίνονται, οὐ κατὰ εἴδη ἴδια καὶ διάφορα, ἀλλὰ κατὰ εἴδη ὅμοια πρὸς ἄλληλα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="1">
+<p>Τὰ δὲ φυτὰ ἃ ἐν τῇ ἐπιφανείᾳ τοῦ ὕδατος γεννῶνται, οὐκ ἄλλως γεννῶνται εἰ μὴ διὰ τὸ πάχος τοῦ ὕδατος. Ὄταν <milestone unit="page" resp="Bekker" n="825b"/> γὰρ θερμότης ἅψηται τοῦ ὕδατος, ἥτις ἄνω που οὐκ ἔχει πῶς ἂν κινηθείη, τότε προέρχεται ἐπ’ αὐτὴν παρόμοιόν τι νεφέλῃ, ὀλίγον τε τοῦ ἀέρος κατέχει, καὶ σήπεται τὸ τοιοῦτον ὑγρόν, ἐφέλκεταί τε αὐτὸ ἡ θερμότης, ἥτις ἐκτείνεται εἰς τὴν ὄψιν τοῦ ὕδατος, καὶ γίνεται ἐντεῦθεν φυτόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="2">
+<p>Οὐκ ἔχει δὲ ῥίζαν, ὅτι ἡ ῥίζα ἐν τοῖς μέρεσιν ἑδράζεται τῆς γῆς, ἔχουσα μέρη <pb facs="operaexrecension06arisuoft_0099"/> διῃρημένα. Οὐκ ἔχει δὲ πάλιν οὐδὲ φύλλα, ὅτι μακράν ἐστιν ἀπὸ τῆς εὐκρασίας, καὶ οὐδὲ τὰ μέρη αὐτοῦ εἰσὶ συμπεπηγότα. Τοῦτο δὲ τὸ φυτὸν οἷον εἰς ὁμοιότητα φύλλων γεννᾶται, καὶ καλεῖται ἐπίπτερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="3">
+<p>Τῶν δὲ λοιπῶν φυτῶν τῶν ἐν τῇ γῇ, ἐπεὶ τὰ τῆς γῆς μέρη εἰσὶ συμπεπηγότα, καὶ τὰ μέρη ἐξ ἀνάγκης τούτων εἰσὶ τοιαῦτα. Τὰ γοῦν φυτὰ τὰ ἐκ τῆς γῆς συμπεπηγότα γίνονται ἐκ σήψεων ἐν τόπῳ ὑγρῷ καὶ καπνώδει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="4">
+<p>Αἱ γὰρ σήψεις κατέχουσιν ἀέρα· καὶ ὅταν πληθύνωνται οἱ ὑετοὶ καὶ οἱ ἄνεμοι, ὁ ἥλιος φαίνεσθαι ποιεῖ αὐτάς, κατεπείγει τε ξηραίνεσθαι καὶ συμπήγνυσθαι, καὶ ἡ ξηρότης τῆς γῆς τὰς ῥίζας αὐτῶν ποιεῖ· καὶ γίνονται ἐντεῦθεν φυτὰ καὶ μύκητες καὶ  ὕδνα καὶ τὰ ὅμοια.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="5">
+<p>Πάντα δὲ ταῦτα γίνονται ἐν τόποις θερμοῖς κατὰ λόγον, διὸ ἡ θερμότης πέττει τὸ ὕδωρ ἐν τοῖς ἐνδοτέροις τῆς γῆς, κατέχει τε ταύτην ὁ ἥλιος, καὶ γίνεται ἀναθυμίασις, καὶ ἐντεῦθεν συμβαίνει ἡ ἀλλοίωσις εἰς φυτόν. Ὁμοίως καὶ ἐν πᾶσι τόποις ὡς ἐπὶ τὸ πλεῖστον θερμοῖς πληροῦται ἡ τοῦ φυτοῦ ἀπάρτισις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="6">
+<p>Οἱ δὲ τόποι οἱ ψυχροί, εἰ καὶ οὖτοι τὸ ὅμοιον ποιοῦσί ποτε, πλὴν ἐκ τοῦ ἐναντίου. Ὁ γὰρ ψυχρὸς ἀὴρ τὸν θερμὸν συμπιέζει κάτω, συμπήγνυσί τε τὰ μέρη αὐτοῦ, καὶ ὁ τόπος ἕψησιν πάσχει μετὰ τῆς προσούσης ὑγρότητος αὐτῷ· τοῦ γοῦν περισσοῦ ὑγροῦ ξηρανθέντος σχίζεται ὁ τόπος, καὶ  ἐξέρχονται ἐξ αύτοῦ φυτά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="7">
+<p>Ἐν τόποις δὲ γλυκεροῖς, ἐν οἶς τὸ ὕδωρ μὴ ἐπὶ πολὺ συμβαίνει χωρίζεσθαι, ὁπόταν ὁ ἀὴρ τῇ γῇ ἐγκλειόμενος ξηρανθῇ, ἡ ὑγρότης τε τοῦ ὕδατος συμπαγῇ, καὶ ὁ αὐτὸς ἀὴρ μείνῃ ἐν τοῖς ἐνδοτέρω τοῦ ὕδατος, ἐξέρχονται φυτά, ὡς τὸ νοῦφαρ τὸ ἰατρικὸν, καὶ εἴδη βοτανῶν ἄλλα πολλῶν καὶ σμικρῶν, ἃ δὴ τοιουτοτρόπως γεννῶνται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="8">
+<p>Πλὴν οὐκ εἰσὶν ἐκτεταμένα, διότι αἱ ῥίζαι αὐτῶν εἰσὶν ἐπιπολαίως ἐν τῇ γῇ. Ἐν τόποις ὡσαύτως ἐν οἶς ὕδωρ θερμὸν τρέχει, πολλάκις φυτὰ γεννῶνται, διότι ἡ θερμότης τοῦ ὕδατος ἐφέλκεται ἀναθυμιάσεις προσφάτους ἐπὶ τῆς γῆς, ἡ <pb facs="operaexrecension06arisuoft_0100"/> δὲ ψυχρὰ φύσις τῆς ὑγρότητος τοῦ ὕδατος ὑποκάτω  ἀπομένει,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="9">
+<p>καὶ συμπήγνυται ὁ ἀὴρ ὁ ἐν τούτῳ τῷ ὑγρῷ. Καὶ ὅταν  πεφθῇ ἡ θερμότης τοῦ ἀέρος, πάλιν ἐν τούτῳ γεννᾶται τὸ φυτόν, οὐκ <milestone unit="page" resp="Bekker" n="826a"/> ἄλλως εἰ μὴ ἐν καιρῷ πολλῷ,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="10">
+<p>Αἱ βοτάναι δὲ αἱ μικραί, αἱ φαινόμεναι ἐν τόποις θεαφώδεσι, γίνονται ὅταν ἄνεμοι ὀξέως πνέωσιν ἀντίπνοιάν τε ποιῶσι καὶ ἀντιπλήττωσιν ἀλλήλους, καὶ ἐξεγερθῇ ἀὴρ ὁ ἐν αὐτοῖς καὶ θερμανθῇ ὁ τόπος καὶ γένηται ἐντεῦθεν πῦρ, καὶ μετὰ ταῦτα γεννηθῇ ὅπερ ἐστὶν ἐν τῷ βάθει ἀρσενίκιον, ὃ καταβαίνει ἐκ τῆς ἰλύος τοῦ ἀέρος, καὶ ἐφέλκεται πῦρ μετὰ σήψεως (τοῦτο γὰρ τὸ ἀρσενίκιον)· τότε γὰρ γίνεται ἐκ τούτου φυτά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="11">
+<p>Οὐ πολλὰ δὲ ταῦτα προβάλλεται φύλλα, καθὼς προαπεδείξαμεν, ὅτι ἡ εὐκρασία ἐκ τούτων πόρρω ἐστίν. Ὄπερ  δὲ φέρει τρόφιμόν τι φυτόν, ἐκεῖνο φύεται ἐν τόποις θερμοῖς  καὶ κούφοις καὶ ὑψηλοῖς, καὶ μᾶλλον ἐν τῷ κλίματι τῷ τρίτῳ καὶ τῷ τετάρτῳ· καὶ πάλιν ὃ δένδρον ποιεῖ τι ἐγγὺς τροφίμου, ἐκεῖνο γεννᾶται ἐν τόποις ὑψηλοῖς καὶ ψυχροῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.4" n="12">
+<p>Καὶ διὰ τοῦτο πληθύνονται τὰ εἴδη ἐν τόποις τοιούτοις, διὰ τὴν ἐφέλκυσιν τοῦ ὑγροῦ καὶ τὴν εὐκρασίαν τὴν ἐκ τῆς θερμότητος τοῦ ἡλίου ἐν ἡμέραις χειμεριναῖς. Ὁμοίως καὶ ὁ πηλὸς ὁ ἔμφυτος ὀξέως προάγει φυτὰ πίονα· ἡ συμπίλησις γὰρ τῆς ὑγρότητος τούτου ἐν τόποις γλυκεροῖς γίνεται, ὡς προειρήκαμεν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.5" n="1">
+<p>Πάλιν τὸ φυτὸν τὸ ἐν τοῖς λίθοις τοῖς στερροῖς γεννώμενον μακρῷ χρόνῳ συμβαίνει. Ὁ γὰρ ἀὴρ ὁ ἐμπεριειλημμένος τούτοις βιάζεται ἀναβῆναι, ἔξοδον δὲ μὴ εὑρίσκων διὰ τὴν ἰσχυρότητα τῶν λίθων ἐπαναστρέφει καὶ θερμαίνει ἑαυτόν, ἐφέλκεταί τε τὸ ὑγρὸν τὸ ἐναπολειφθὲν τοῖς λίθοις ἄνω, ἐξέρχεταί τε ἀναθυμίασις σὺν ὑγρότητι, μετὰ ἀναλύσεως σμικροτάτων μερῶν τῶν ἐν τοῖς λίθοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.5" n="2">
+<p>Καὶ γὰρ πολλάκις ἔθος ἐστὶ τοῖς λίθοις ἵνα βοηθῇ αὐτοῖς ὁ ἥλιος διὰ τῆς δίας πέψεως. Καὶ οὕτω γεννᾶται ἐξ αὐτῶν φυτόν. Ὄ δὲ οὐκ <pb facs="operaexrecension06arisuoft_0101"/> ἀναβαίνει, ἐὰν μὴ πλησίον ᾖ γῆς ἢ ὑγροῦ. Ἡ γὰρ ὑπόστασις τοῦ φυτοῦ  δεῖται γῆς ὕδατος καὶ ἀέρος. Κατανοείσθω τοιγαροῦν τὸ φυτόν· καὶ εἰ ἔστι πλησίον τοῦ ἡλίου, ταχέως γεννᾶται, εἰ δέ ἐστιν ὁ ἤλιος εἰς δυσμάς, βραδύνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.5" n="3">
+<p>Πάλιν τὸ φυτὸν ἐν κυριεύει τὸ ὕδωρ, οὐ παραχωρεῖ τῷ ἀέρι ἀναβαίνειν, καὶ διὰ τοῦτο οὐ τρέφεται. Ὁμοίως καὶ ἡ ξηρότης ὅταν κρατήσῃ, ἀναστρέφει ἡ φυσικὴ θερμότης εἰς τὰ ἄκρα, καὶ βύει τοῦ φυτοῦ τὰς ὁδοὺς δι’ ὦν οἱ πόροι· καὶ διὰ τοῦτο οὐ τρέφεται τὸ φυτόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="1">
+<p>Καθολικῷ δὲ λόγῳ πᾶν φυτὸν τεττάρων τινῶν δεῖται, σπέρματος διωρισμένου, τόπου ἁρμοδίου ὕδατος συμμέτρου καὶ ἀέρος ὁμοίου. Ὄταν οὖν ταῦτα πάντα συντελεσθῶσι, γεννᾶται <milestone unit="page" resp="Bekker" n="826b"/> φυτὸν καὶ αὐξάνει· ὅτε δὲ ταῦτα ἀποχωρήσουσιν, ἀσθενεῖ τῇ ἀποχωρήσει καὶ τὸ φυτόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="2">
+<p>Πάλιν τὸ φυτὸν τὸ προϊὸν ἐν ὄρεσιν ὑψηλοῖς, εἰ ἔσται εἶδος, ἔσται προχειρότερον καὶ προσφυέστερον εἰς ἰατρείαν· ὁ καρπὸς δὲ ὁ σκληρότερος εἰς πέψιν οὐχ ὡς ἐπὶ τὸ πολὺ τρέφει. Τόποι δὲ ἀπομεμακρυσμένοι τοῦ ἡλίου οὐκ εἰσὶ πολλῶν βοτανῶν γεννητικοί,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="3">
+<p>Ὁμοίως ἐὰν ὁ ἥλιος μακρότητα τῇ ἡμέρᾳ προσάγῃ ἐν τῇ κινήσει αὐτοῦ  καὶ κατακυριεύῃ τῆς ὑγρότητος, οὐκ ἔχει τὸ φυτὸν δυνάμεις φύλλα καὶ καρποὺς προάγειν. Τί δὲ καὶ περὶ τῶν φυτῶν χρὴ νοεῖν, ἃ γεννῶνται ἐν ὑδαρώδεσι τόποις ; Ἐν τούτοις ὅτε τὸ ὕδωρ ἠρεμεῖ, γίνεταί τι καθάπερ ἰλύς, καὶ οὐκ ἔστι δύναμις ἐν τῷ ἀέρι ἵνα  ὑποστήσῃ τὰ μέρη τοῦ ὕδατος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="4">
+<p>Κατέχεται γὰρ αὐτὸς ὁ ἀὴρ ἐν τοῖς ἐνδοτέροις τῆς γῆς, καὶ κωλύει τὴν παχύτητα τοῦ ὕδατος ἀναβαίνειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="5">
+<p>Εἰ γοῦν  πλημμυρήσῃ ἄνεμος ἐν ἐκείνῳ τῷ τόπῳ καὶ συσφιγχθῇ ἡ γῆ, συμπιέσῃ τε ἑαυτὸν ὁ ἐμπεριειλημμένος ἀήρ, καὶ συμπήξῃ ὁ ἄνεμος τὴν ὑγρότητα, προελεύσεται ἐκ ταύτης τῆς ὑγρότητος φυτὰ οὐ πολὺ διαφέροντα ἀλλήλων ἐν εἴδει καὶ σχήματι, διὰ τὴν διαμονὴν καὶ <pb facs="operaexrecension06arisuoft_0102"/> τὴν παχύτητα τοῦ ὕδατος καὶ τὴν θερμότητα τοῦ ἡλίου ἄνωθεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="6">
+<p>Πάλιν περὶ τῶν φυτῶν ἅ εἰσιν ἐν τόποις ὑγροῖς, καὶ ἡ ἐπιφάνεια αὐτῶν φαίνεται ἐν  τῇ ὄψει τῆς γῆς χλοάζουσα, λέγω ὅτι ἐν ἐκείνῳ τῷ τόπῳ μικρά ἐστιν ἀραιότης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="7">
+<p>Ὄταν οὖν ἐμπεσὼν ὁ ἥλιος κινήσῃ τὴν ἐν ἐκείνῳ ὑγρότητα, καὶ θερμάνῃ τὸν τόπον τῇ συμβαινούσῃ κινήσει καὶ τῇ θερμότητι τῇ  ἐμπεριειλημμένῃ τοῖς ἐνδοτέροις τῆς γῆς, ὅπερ δὴ οὐ συμβαίνει ἐν οἷς οὐκ ἔχει τὸ φυτὸν ὅθεν ἂν αὐξηθῇ, καὶ ἡ ὑγρότης τῇ ἰδίᾳ ἐκτάσει διαχυθῇ, γίνεται καπνὸς ὑπεράνω τῆς γῆς ὡς ὕφασμα χλοάζον, κἀντεῦθεν γεννᾶται φυτὸν μὴ ἔχον φύλλα, ὑπάρχον ἐκ τοῦ γένους τοῦ φυτοῦ τοῦ φαινομένου εἰς τὴν ἐπιφάνειαν τοῦ ὕδατος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="8">
+<p>Ἔστι δὲ μεῖζον ἐκείνου, διότι πλησίον ἐστὶ τῆς γῆς, εἰ καὶ οὐκ ἀναβαίνειν καὶ ἐπεκτείνεσθαι δύναται. Πολλάκις δὲ καὶ ἐν φυτοῖς ἄλλο φυτὸν γεννᾶται οὐ τοῦ αὐτοῦ εἴδους καὶ τῆς αὐτῆς ὁμοιώσεως, ἄνευ ῥίζης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="9">
+<p>Κινεῖται δὲ τοῦτο οὕτως· ὁπόταν φυτὸν πολλῶν ἀκανθῶν ἐν πίονι ὕδατι κινήσῃ ἑαυτό, ἀνοίγονται τὰ μέρη αὐτοῦ, καὶ ἀνιμᾶται ὁ ἥλιος τὰς ἐν αὐτῷ σήψεις, πέψιν τε ποιεῖ τούτῳ, καὶ τῇ ἰδίᾳ φύσει εἰς τὸν τόπον τὸν σεσημμένον βοήθειαν χορηγεῖ μετὰ θερμότητος εὐκράτου, κἀντεῦθεν αὐξάνει τὸ φυτόν, ὡς δοκεῖν νήματα ἐκτείνεσθαι εἰς ὅλον αὐτό.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.6" n="10">
+<p>Καὶ τοῦτο ἴδιόν ἐστι τοῖς <milestone unit="page" resp="Bekker" n="827a"/> φυτοῖς τοῖς ἔχουσι πολλὰς ἀκάνθας. Τότε γοῦν γεννᾶται βοτάνη ἡ λεγομένη λινόζωστις καὶ τὰ ταύτῃ ὅμοια. Πᾶσαι δὲ αἱ βοτάναι, καὶ εἴ τι αὐξάνει ἐπάνω τῆς γῆς καὶ ἐν τῇ γῇ, πρόεισιν ἔκ τινος τούτων τῶν πέντε, ἅ εἰσι σπέρμα, ὑγρότης ἐξ ὕδατος, τόπος ἐπιτήδειος, ἀὴρ καὶ φυτεία. Καὶ ταῦτα τὰ πέντε εἰσίν, ὡς ἂν εἴποι τις, ῥίζαι φυτῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="1">
+    <p>Τριπλώς δὲ ἡ τῶν δένδρων εὐπορία ἀκολουθεῖ· ἢ γὰρ προάγουσι τοὺς καρποὺς πρὸ τῶν φύλλων, ἤ σύναμα τοῖς φύλλοις, ἢ μετὰ τὰ φύλλα. Ἔστι τοίνυν φυτὸν ὅπερ οὐκ ἔχει ῥίζαν ἢ φύλλα· ἔστι καὶ ὅπερ φέρει φιτρὸν ἄνευ καρποῦ <pb facs="operaexrecension06arisuoft_0103"/> καὶ φύλλων, ὡς Ἡ λεγομένη χρυσοκόμη ἢ  χρυσῖτις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="2">
+<p>Ἀλλὰ τὰ φυτὰ ἂ καρπὸν πρὸ τῶν φύλλων προάγουσι, πολλὴν ἔχουσι τὴν πιότητα. Ὅταν γοῦν ἐκταθείη ἡ θερμότης ἡ οὖσα φυσικῶς τῷ φυτῷ, ταχύνει καὶ ἡ τούτου πέψις, ῥώννυταί τε καὶ ζέει ἐν τοῖς κλάδοις τοῦ φυτοῦ, κωλύει τε τὸν χυμὸν ἵνα μὴ ἀναβαίνῃ ἀπ’ αὐτοῦ· κἀντεῦθεν προχωροῦσι καρποὶ καὶ φύλλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="3">
+<p>Ἐν δὲ τοῖς φυτοῖς ἃ ταχύτερον τὰ φύλλα προάγουσι, τί νοητέον; Αἱ διαθέσεις τῶν ὑγρῶν εἰσὶ πολλαί, Ὁπόταν γοῦν ἡ θερμότης τοῦ ἡλίου ἄρξηται διασπείρειν τὰ μέρη τοῦ ὕδατος, ἄνω ἐφέλκεται ὁ ἥλιος τὰ μέρη τῆς ὑγρότητος, καὶ βραδύνει ἡ πεπειρότης, διότι ἡ πέψις τοῦ καρποῦ οὐκ ἔστιν εἰ μὴ ἐν συμπήξει, καὶ προηγοῦνται τὰ φύλλα τῶν καρπῶν τῇ προσαγωγῇ τῆς πολλῆς ὑγρότητος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="4">
+<p>Πολλάκις δὲ συμβαίνει αὐτοῖς καὶ πιότης, ὁπόταν ἡ ὑγρότης ἡ ἐν τῷ φυτῷ πέψιν λάβῃ καὶ ἀναβῇ ἐξ αὐτῆς ἀτμὶς πυκνή, καὶ ἑλκύσῃ αὐτὴν ὁ ἀὴρ μετὰ τοῦ ἡλίου· τότε γὰρ ἐξέρχεται ἐκ τῆς ὑγρότητος ἐκείνης καὶ πιότης καὶ καρπὸς καὶ φύλλα μιᾷ ἐκθέσει. Οἱ παλαιοὶ δὲ σοφοὶ τὰ φύλλα πάντα καρποὺς εἶναι διεβεβαιοῦντο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="5">
+<p>Ἰστέον οὖν ὡς ὁπόταν ἡ ὑγρότης ἐστὶ τόση ὥστε μὴ πεπαίνεσθαι  μηδὲ συμπήγνυσθαι διὰ τὴν ἐκ τοῦ ἀέρος ἀνάπτυξιν καὶ τὴν ἄνωθεν σπουδὴν τῆς ἐφελκύσεως τοῦ ἡλίου, τότε ἡ ὑγρότης αὕτη, εἰς ἢν οὐκ ἐνηργήθη πέψις, ἀλλοιοῦται εἰς φύλλα· ἃ δὴ οὐκ ἔχουσιν ἄλλον σκοπὸν εἰ μὴ τὴν ἐφέλκυσιν τῆς ὑγρότητος, καὶ ἵνα ὦσι καὶ περικαλύμματα τῶν καρπῶν ἀπὸ τῆς σφοδρότητος τοῦ ἡλίου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="6">
+<p>Οὐ τοίνυν ὁμοίως δεῖ ἵνα τὰ φύλλα ὦσιν ὡς οἱ καρποί· ὁ γὰρ χυμὸς ὁ ἀναβαίνων ἀλλοιωθείς, οὖτός ἐστι τὰ φύλλα, ὡς εἴπομεν. Τοιουτοτρόπως ἐστὶν ἡ κρίσις καὶ ἐν ταῖς ἐλαίαις, αἳ πολλάκις στερίσκονται τῶν ἐδίων καρπῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="7">
+<p>Ὁπόταν γὰρ ἡ φύσις πέψιν ποιήσῃ, ἀναβαίνει <milestone unit="page" resp="Bekker" n="827b"/> πρώτως ἐκ τῆς λεπτότητος, ὅπερ οὐκ ἐπεπάνθη ἐκ τῆς θερμότητος. Ἔστιν οὖν αὕτη ἡ ὑγρότης φύλλα, Ἡ δὲ πέψις ἐστὶν <pb facs="operaexrecension06arisuoft_0104"/> ἄνθος. Ὅταν δὲ τελειωθῇ τῷ δευτέρῳ ἔτει ἡ πέψις, γεννῶνται καρποί, καὶ ἐκβαίνει εἰς τέλος ἡ ὕλη κατὰ τὸν τόπον τὸν ἐν αὐτοῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="8">
+<p>Αἱ ἄκανθαι ὡσαύτως εἰσὶν ἐκ τοῦ γένους τῶν φυτῶν, οὐ μὴν τῆς αὐτῆς φύσεως. Λέγω γοῦν ὅτι ἐν τῷ φυτῷ ἐστὶν ἀραιότης, καὶ ἐν τῇ ἀρχῇ τῆς φύσεως αὐτοῦ ἐστὶ πέψις, καὶ ἀναβαίνει ὑγρότης ψυχρὰ καὶ μετ’ αὐτῆς βραχεῖα διάκρισις, διερχομένη ἐν ἐκείνῃ τῇ ἀραιότητι. Ποιεῖ γοῦν ταύτην συμπήγνυσθαι ὁ ἥλιος, κἀντεῦθέν εἰσιν αἱ ἄκανθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.7" n="9">
+<p>Διὰ τοῦτο καὶ τὸ εἶδος αὐτῶν ἐστὶ πυραμοειδές· ἔστι γὰρ ἡ βάσις αὐτῶν ἀρχομένη ἀπὸ  παχέος καὶ προχωροῦσα εἰς ἰσχνόν. Τοῦτο δὲ γίνεται, διότι κατὰ βραχὺ ὁ ἀὴρ ἐπεκτεινόμενος τῷ φυτῷ αὐξάνει τὰ μέρη αὐτοῦ μετ’ ἐπντάσεως τῆς ὑικῆς. Τοιουτοτρόπως καὶ πᾶν δένδρον ἢ φυτὸν γίνεται, οὖ ἡ κεφαλή ἐστι πυραμοειδής.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="1">
+<p>Ἡ χλοάζουσα χλοάζουσα δὲ χροιὰ ὀφείλει εἶναι πρᾶγμα κοινότατον ἐν τοῖς δένδροις. Βλέπομεν γὰρ ὅτι, ὥσπερ κοινή ἐστιν ἡ λευκότης ἐντός, οὕτως καὶ ἡ χλοερότης ἐκτός. Καὶ τοῦτό ἐστιν, ὅτι ὕλῃ χρῶνται πλησιωτέρᾳ ἤγουν μᾶλλον πεπεμμένῃ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="2">
+<p>Δεῖ τοίνυν ἵνα ᾖ χλοερότης ἐν πᾶσι τοῖς φυτοῖς, ὅτι αἱ ὖλαι ἕλκουσι καὶ ἀραιοῦσι τὸ ξύλον τοῦ δένδρου, βραχεῖάν τε ἡ θερμότης πέψιν ἐργάζεται, καὶ ἀπομένει τι ἐκεῖ ὑγρόν, ὃ φαίνεται ἔξωθεν· καὶ τοῦτό ἐστιν ἡ χλοερότης ἡ ἐν τοῖς φυτοῖς, ἐὰν μὴ μείζων γένηται ἡ πέψις. Ὀφείλει δὲ εἶναι μέση ἐν τοῖς φύλλοις καὶ ἐν τοῖς ξύλοις τῇ δυνάμει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="3">
+<p>Ἡ δὲ χλοερότης οὐ φθείρεται, ἐὰν ᾖ ὑγρότης ἐν αὐτῇ, ἥτις ἐστὶν ἐκ τοῦ γένους τῆς γῆς. Ἐξ ἀμφοτέρων γοῦν τούτων ἡ χροιὰ γίνεται ἡ χλοερά. Τούτου σημεῖον ὅτι οἱ φλοιοὶ τοῦ δένδρου, ὅταν ξηραίνηται αὐτό, μελαίνονται, ἐντὸς δέ εἰσι λευκοί. Ἐν τοῖς δένδροις γοῦν μεταξὺ τῶν δύο χρωμάτων χρῶμα χλοερὸν γίνεται ἐν τῇ ἐπιφανείᾳ αὐτῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="4">
+    <p>Τοῦ δὲ σχήματος τῶν φυτῶν τρεῖς εἰσὶ τρόποι· τινὰ γὰρ ἄνω προχωροῦσι, <pb facs="operaexrecension06arisuoft_0105"/> τινὰ κάτω, τινὰ μέσον. Τὰ μὲν οὖν ἄνω ἐκτεινόμενα ἔχουσιν αἰτίαν, ὅτι ἡ φύσις αὐτῶν φαίνεται ἐν τῇ ἐντεριώνῃ, καὶ ἕλκει τὴν θερμότητα, καὶ συμπιέζει ἐν ἑαυτῇ τὸν ἀέρα τὸν ὄντα ἐν ταῖς ἀραιότησιν αὐτῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="5">
+    <p>Πυραμιδοῦνται δέ, ὥσπερ πυραμιδοῦται τὸ πῦρ ἐν ταῖς ἐδίαις ὕλαις καὶ κουφίζεται. Ὅσα δὲ κάτω ἐκτείνεται, τούτων οἱ πόροι συμπήγνυνται. Ὅταν γὰρ πέψις γένηται, τότε ἡ ὕλη πυκνοῦται τοῦ ὑγροῦ, ἐν ᾦ ἐστὶν ἡ <milestone unit="page" resp="Bekker" n="828a"/> ἐντεριώνη. Κἀντεῦθεν ἐκπορεύεται μὲν τὸ λεπτὸν ἄνω, ἐπαναστρέφει δὲ τὸ ὑγρὸν πρὸς τὰ μέρη ἐκεῖνα κάτω· κινεῖ γὰρ ταύτην ἡ οἰκεία βαρύτης. Ἃ δὲ φυτὰ μέσον τῶν δύο εἰσίν, ἔχουσιν οὕτως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="6">
+<p>Λεπτύνεται τὸ ὑγρόν, ὅτι ἡ φύσις τῆς εὐκρασίας γειτνιάζει τῇ πέψει, εἰσί  τε καὶ οἱ πόροι μέσοι, καὶ ἡ ὕλη ἐπεκτείνεται καὶ ἄνω καὶ κάτω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="7">
+<p>Ἔστι δὲ ἡ μὲν πρώτη πέψις ὑπὸ τὸ φυτόν, δὲ δευτέρα ἐν τῇ ἐντεριώνῃ, ἥτις ἐξέρχεται μὲν ἀπὸ τῆς γῆς, ἔστι  δὲ καὶ ἐν τῷ μέσῳ τοῦ φυτοῦ· καὶ μετὰ ταῦτα γίνεται ἡ διαίρεσις, ἥτις συμβαίνει ἀπὸ τῆς δευτέρας, οὐκ ἀπὸ τῆς πρώτης πέψεως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="8">
+<p>Ἡ δὲ τρίτη πέψις ἐστὶν ἐν τῷ ζῴῳ· οὐ γὰρ γίνεται αὕτη ἡ πέψις εἰ μὴ διὰ τὴν διαίρεσιν τῆς φύσεως τῶν μελῶν καὶ τὴν διάστασιν τῶν φυσικῶν πρὸς ἄλληλα. Τὰ δὲ φυτὰ γείτονά εἰσι πρὸς ἑαυτά, καὶ διὰ τοῦτο πληθύνονται ἐν πολλοῖς τόποις. Ὡς ἐπὶ τὸ πλεῖστον δὲ ἡ ὕλη τῶν φυτῶν κάτω ἐκτείνεται,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="9">
+<p>Τὰ σχήματα τοίνυν τῶν φυτῶν εἰσὶν ἐν τῇ φύσει καὶ τῇ ποσότητι τῶν σπερμάτων, τὰ ἄνθη δὲ τῶν φυτῶν καὶ οἱ καρποί εἰσιν ἐν ταῖς ὑγρότησι καὶ ἐν ταῖς ὕλαις. Κεῖται τοίνυν ἡ πρώτη κίνησις καθολικῶς καὶ ἡ πέψις ἐν πᾶσι τοῖς ζῴοις, καὶ οὐκ ἀποχωροῦσιν ἀπ’ αὐτῆς πάντα τὰ ζῷα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="10">
+<p>Ἐν τοῖς φυτοῖς δέ ἐστιν ἡ πρώτη πέψις, εἶτα ἡ πέπανσις κατὰ τὴν τροφὴν αὐτῶν. Ἕκαστον  οὖν δένδρον ἀναβαίνει ἀεί, ἔστ’ ἂν πληρωθείη. Αἰτία δὲ αὕτη ἐστίν, ὅτι ἐπὶ μὲν τῶν ζῴων ἑκάστου τὸ μῆκος πλησίον ἐστὶ τοῦ ἰδίου πλάτους, ἐν τῷ φυτῷ δὲ πόρρω, ὅτι <pb facs="operaexrecension06arisuoft_0106"/> ἡ ῥίζα αὐτοῦ, ἤγουν τὸ πῦρ καὶ τὸ ὕδωρ, σπεύδουσιν εἰς ἀνάβασιν, ἵνα δημιουγηθῇ τὸ φυτόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.8" n="11">
+<p>Ἡ διαφορὰ δὲ τῶν φυτῶν ἐν τοῖς κλάδοις ἐστὶν ἐκ τῆς περιττῆς ἀραιότητος. Ὅταν γὰρ συμπιεσθῶσιν οἱ χυμοί, θερμαίνεται ἡ φύσις καὶ σπεύδει εἰς τὴν πέψιν, κἀντεῦθεν τυποῦνται οἱ κλάδοι καὶ  φύεται τὰ φύλλα, ὡς προείπομεν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="1">
+<p>Τὸ δὲ τὰ τῶν δένδρων φύλλα πίπτειν ἐστὶ διὰ τὴν ἐπιφορὰν τῆς ὀξείας ἀραιότητος. Ὅταν γὰρ πεφθῇ ἡ ὑγρότης μετὰ τῆς ὕλης, πυραμιδοῦται, καὶ μετὰ ταῦτα κατισχναίνουσι. Καὶ ὅταν φανῇ ἡ ὕλη τῇ πέψει πεπληρωμένῃ, τότε τελείως βύονται τὰ ἄκρα τῶν πόρων ἄνω. Καὶ διὰ ταῦτα ἐπεὶ τὰ φύλλα οὐκ ἔχουσιν ὕλην, ξηραίνονται καὶ πίπτουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="2">
+<p>Ἐὰν δὲ συμβῇ τὸ ἐναντίον ὦν εἴπομεν, οὐ πίπτει τὸ φυτὸν εἰς στέρησιν τῶν ἰδίων φύλλων. Ὅταν δὲ πάλιν κινήσῃ τὸ φυτὸν ψυχρότης, θερμαίνει αὐτὸ ἡ ἐγκλειομένη τούτῳ θερμότης, καὶ ἡ φανέρωσις τῆς ψυχρότητος γίνεται <milestone unit="page" resp="Bekker" n="828b"/> ἐκτὸς ἐν τοῖς ἄκροις αὐτοῦ, καὶ ἀποτελοῦνται ἐντεῦθεν τὰ φύλλα γλαυκά, καὶ οὐδὲ πίπτουσιν, ὡς οὐδὲ ἐπὶ τῶν ἐλαιῶν καὶ τῶν μυρσινῶν καὶ τῶν λοιπῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="3">
+<p>Ὁπόταν δὲ ἔχωσι τὰ δένδρα καὶ τὰ φυτὰ δύναμιν τοῦ ἕλκειν σφοδρῶς, γίνεται καρποφορία ὁμοῦ· ἥτις συμβαίνει, ὅτι χρῆται ἡ φύσις πέψει κατὰ διαδοχὴν συχνῇ, καὶ ἐν ἑκάστῃ πέψει καρπὸν προάγει πολύν, Καὶ διὰ τοῦτο τινὰ φυτὰ καὶ πολλάκις ἐν τῷ χρόνῳ καρποφοροῦσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="4">
+<p>Τὸ δὲ φυτὸν ὅπερ ἐστὶν ὡς ἡ φύσις τοῦ ὕδατος, μόλις καρποφορεῖ διὰ τὴν ἐπικράτειαν τῆς ὑγρότητος αὐτοῦ καὶ τὸν πλατυσμὸν τῶν ἰδίων πόρων καὶ τὴν ἀπορροὴν τῶν ἰδίων ῥιζῶν. Ὅτε δὲ ἰσχυροποιηθῇ τὸ θερμόν, ταχύνει τε ἡ τούτου πέψις, καὶ λεπτύνεται ἡ ὑγρότης καὶ οὐ συμπήγνυται· οὐδ’ οὕτως πάλνιν γίνεσθαι καρποφορίαν συμβαίνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="5">
+<p>Καὶ τοῦτο εὑρίσκεται ἐν πάσαις ταῖς βοτάναις ταῖς λεπταῖς, ἀλλὰ δὴ καὶ ἔν τισι λαχάνοις. Φαίοτης δὲ γίνεται ἐν τόποις σφόδρα θερμοῖς, καὶ ἔστιν ἐν τούτοις <pb facs="operaexrecension06arisuoft_0107"/> ὀλίγος καρπὸς ἐκ τῆς ὑγρότητος, διότι εἰσὶ στενοὶ οἱ πόροι. Ὅταν γοῦν θελήσῃ ἡ φύσις πέψιν ποιῆσαι, μὴ ἔχουσα ὑγρότητα ἀρκοῦσαν τῇ ὕλῃ, τότε γίνονται οἱ πόροι στενώτεροι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="6">
+<p>Ἐπαναστρέφει γοῦν ἡ πέψις, καὶ συνεχῆ ταύτην ποιεῖ ἡ θερμότης, καὶ φαίνεται τότε τὸ μέσον λευκοῦ καὶ μέλανος ἐν χρώματι. Καὶ ὅτε τοῦτο τοιουτοτρόπως γένηται, τότε τὸ ξύλον φθάνει γίνεσθαι μέλαν, καὶ πᾶν τὸ πλησιάζον τῷ φαιῷ· καὶ τοῦτο ἔστιν ἰδεῖν ἀπὸ τοῦ ἐβένου καὶ τῆς πτελέας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="7">
+<p>Ὁ δὲ ἔβενος καταδύεται ἐν τῷ ὕδατι, ὅτι τὰ μέρη αὐτοῦ εἰσὶ συμπεπηγότα καὶ οἱ πόροι στενοί, καὶ ἀὴρ οὐκ εἰσέρχεται ἐν αὐτοῖς. Ὃ δὲ ἐκ τῶν ξύλων τῶν  λευκῶν βυθίζεται, ἔστι διὰ τὴν στενότητα τῶν πόρων καὶ τὴν περιττότητα τῆς ὑγρότητος τῆς βυούσης τοὺς πόρους, ὥστε μὴ ἐξέρχεσθαι ἀπ’ αὐτῶν ἀέρα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="8">
+<p>Τὸ δὲ ἄνθος ἐκ λεπτῆς μόνον ὕλης ἐστίν, ὅταν ἄρξηται ἡ πέψις· καὶ διὰ τοῦτο προηγεῖται τοῦ φυτοῦ, ὡς ἐδείξαμεν. Ἐντεῦθεν γοῦν δεικνύομεν καὶ τὴν αἰτίαν δι’ ἣν τὰ φυτὰ ἐκφέρουσι φύλλα πρότερον, εἶτα καρπούς. Ὃ ἐν τῷ φυτῷ τῷ ἔχοντι στενοὺς πόρους γίνεται χρῶμα, ἔσται ἐν χρώματι σαπφειρίνηῳ, καὶ διότι συμπιέζονται αὐτοῦ τὰ μέρη, εἰς λευκότητα κλίνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="9">
+<p>Ὅταν δὲ εἰς εὐκρασίαν φθάσῃ, ἐστὶ γλαυκόν. Διότι δέ τινα φυτὰ ἄνθη οὐκ ἔχουσιν, ἔστιν ἡ αἰτία ὅτι ὡς ἐπὶ τὸ πλεῖστον γίνεται τοῦτο διὰ τὴν διαφορὰν τῶν ἐν αὐτοῖς μερῶν καὶ τὴν ἐν αὐτοῖς λεπτότητα καὶ τραχύτητα καὶ παχύτητα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="10">
+<p>Οὐκ ἔχουσι δὲ ἄνθη φοίνικες, συκαῖ καὶ τὰ τούτοις ὅμοια. Τὸ δὲ φυτὸν τὸ παχεῖς ἔχον <milestone unit="page" resp="Bekker" n="829a"/> φλοιοὺς ἐκτείνεται κατὰ τὴν ἔκτασιν τῆς ὑγρότητος καὶ τὴν συνώθησιν τῆς θερμότητος. Καὶ τοῦτό ἐστιν ἐν τῇ πεύκῃ καὶ τῷ φοίνικι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="11">
+<p>Τὸ δὲ φυτὸν τὸ γάλα ἐκβάλλον ἔχει τοῦτο ἐν τῷ μέσῳ. Ἔστι  δὲ ἡ θερμότης ὑποκάτω ἰσχυροτέρα, καὶ μένει ἐκεῖ πιότης, Ὁπόταν οὖν ἄρξηται ἡ θερμότης πέττειν, στρέφεται ἡ πιότης εἰς τὴν οἰκείαν ὑγρότητα, καὶ συμπήγνυσι ταύτην συμπήξει  βραχείᾳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="12">
+<p>Καὶ <pb facs="operaexrecension06arisuoft_0108"/> θερμαινομένου τοῦ τόπου γίνεται ἡ ὑγρότης λιπαρά, ὁμοία γάλακτι, ἐγείρεταί τε ἀναθυμίασις ἀπὸ τῆς ὑγρότητος τῆς ἑλκούσης τὸ γάλα ἐκεῖνο εἰς τὰς ἀκρότητας, καὶ κατέχει ἡ ὑγρότης τὴν θερμότητα τὴν φαινομένην, καὶ οὕτω συμπήγνυται τὸ γάλα· φύσις γάρ ἐστι τῆς θερμότητος τὸ συμπηγνύειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="13">
+<p>Ὁποῖον δή τι δὲ γάλα πολῆς ἐστὶ συμπήξεως, τότε γίνεται, ὅταν ἐν τῷ δένδρῳ  φανῇ ψῦχος· συμπηγνύμενον γὰρ μετὰ ταῦτα ἐξέρχεται ἀπὸ τοῦ οἰκείου τόπου. Καὶ ἐντεῦθέν ἐστι τὸ κόμι. Τὸ κόμι δὲ τὸ θερμὸν προέρχεται ἐν τῷ στάζεσθαι· ὁπόταν γοῦν τοῦ ἀέρος ἅψηται, συμπήγνυται καὶ καταρρεῖ ἐν τόπῳ εὐκράτῳ, καὶ ἔστιν ὅμοιον ὕδατι,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="14">
+<p>Ἕτερον δὲ χέεται καὶ συμπήγνυται ὅμοιον λίθοις ἡ κογχυλίοις. Ὅτε δὲ κατὰ στράγγα ῥεῖ, μένον ἐν τῷ οἰκείῳ εἴδει γίνεται ὡς τὸ λεγόμενον σμηρίον. Τὸ δὲ ἀλλοιούμενον ὡς λίθος ἐστὶ κατὰ τὸ φαινόμενον λίαν ψυχρόν. Ποιεῖ δὲ τοῦτο ἡ θερμότης τοιοῦτον εἶναι· ὅταν δὲ ψῦχος καὶ καταρρῇ, ἀπολιθοῦται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="15">
+<p>Πάλιν τῶν δένδρων τινὰ ἀλλοιοῦνται ἐν τῷ χειμῶνι, καὶ ποτὲ μὲν γίνονται χλοερὰ ποτὲ δὲ γλαυκά, καὶ οὐ φθείρονται οὔτε τὰ φύλλα αὐτῶν οὔτε οἱ καρποί, ὅτι τὰ φυτὰ ἐν οἶς τοῦτο συμβαίνει ἔχουσιν ἐπάνω θερμότητα παχεῖαν καὶ ἐν ταῖς ῥίζαις ὑγρότητα λεπτήν· ὅθεν ἐν τῇ προόδῳ τοῦ ἔτους κατέχει ἡ ὑγρότης ἐκεῖνο τὸ χρῶμα διὰ τὴν ψυχρότητα τοῦ ἀέρος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.9" n="16">
+<p>Καὶ ὅτε παραβάλλει ἡ θερμότης πρὸς τὴν ψυχρότητα, ὠθεῖ ἡ θερμότης τὴν ὑγρότητα ἔξωθεν, μετὰ τοῦ οὖπερ  ἔβαψε χρώματος τοῦ ἐν τῇ ἐπιφανείᾳ τοῦ δένδρου ἀκολουθοῦντος. Ὅτε δὲ στρέφεται πάλιν ἡ ψυχρότης καὶ ἡ ξηρότης εἰς ἐνέργειαν, καὶ ἡ ὑγρότης κατέχει τὴν θερμότητα, τότε τὸ χρῶμα φαίνεται τὸ γλαυκόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="1">
+<p>Πικρὸς δὲ γίνεται καρπός, ὅτε ἡ θερμότης καὶ ἡ ὑγρότης οὐκ εἰσὶ πλήρεις ἐν τῇ πέψει. Ἡ ψυχρότης γὰρ καὶ ἡ ξηρότης ἐμποδίζουσι τὴν τελείωσιν, καὶ οὕτω στρέφεται εἰς πικρίαν ὁ καρπός. Τούτου σημεῖον ὅτι τὸ πικρὸν εἰς πῦρ <pb facs="operaexrecension06arisuoft_0109"/> ἐμβληθὲν γλυκὺ γίνεται. Δένδρα δὲ ὅσα γεννῶνται ἐν ὕδατι ὀξώδει, ποιοῦσι καρπὸν γλυκύν, διότι τὸ ὀξῶδες ἕλκει <milestone unit="page" resp="Bekker" n="829b"/> μετὰ θερμότητος τοῦ ἡλίου, ὅπερ ἐστὶ τῆς ἰδίας  ποιότητος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="2">
+<p>Καὶ τοῦτο ψυχρότης ἐστὶ καὶ ξηρότης· κἀντεῦθεν ἀπομένουσιν ὑγρότητές τινες ὀλίγαι ἔνδον γλυκεῖαι. Θερμαίνεταί τε καὶ ἡ κοιλία τοῦ δένδρου, ὅταν προσμείνῃ ἐς αὐτὴν ὁ ἥλιος, καὶ οὕτως γένεται ὁ χυμὸς τοῦ καρποῦ στύφος ὀλίγον. Καὶ ὅσον πλέον πεπεμμένος γένηται, διαλύεται κατὰ μικρὸν τὸ ὀξῶδες, ἔστ’ ἂν καταναλωθείη καὶ φανῇ ἡ γλυκύτης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="3">
+<p>Ἔσται τοίνυν ὁ καρπὸς γλυκύς, τὰ δὲ φύλλα αὐτοῦ καὶ οἱ ἀκρέμονες ξηροί. Ὅταν δὲ τελειωθῇ ἡ πεπειρότης, ἐπὶ πλέον γίνεται ὁ καρπὸς πικρός. Τοῦτο δέ ἐστι διὰ τὴν περισσὴν θερμότητα μετὰ βραχείας ὑγρότητος. Καταναλίσκεται γὰρ ἡ ὑγρότης, ποιεῖ τε ὁ καρπὸς τὴν θερμότητα ἀναβαίνειν, καὶ ἐστὶ τότε ὁ καρπὸς πικρός. Γίνονται δὲ καὶ</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="4">
+<p>οἱ πυρῆνες πυραμοειδεῖς διὰ τὴν ἐφέλκυσιν τοῦ θερμοῦ καὶ τὴν περιττὴν ψυχρότητα  καὶ ὑγρότητα τὴν ἐντὸς κειμένην, ἅ εἰσιν ἐκ γέγους τοῦ ὀξώδους ὕδατος. Μένει γὰρ τὸ ὑγρὸν ἐν μέσῳ καὶ καταπυκνοῦται καὶ ἰσχναίνει τὰ ἄκρα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="5">
+<p>Τὰ δένδρα δὲ τὰ ὄντα ἐν γῇ εὐκράτῳ ἐπισπεύδουσι τὴν πεπειρότητα πρὸ τῶν χειμερινῶν ἡμερῶν, ὅτι ἡ θερμότης ὅταν πλησίον τῆς εὐκρασίας, γένηται δὲ καὶ ἡ ὑγρότης φανερὰ καὶ ὁ ἀὴρ καθαρός, καὶ οὐ δεῖται ὁ καρπὸς πολλῆς ὑγρότητός τε καὶ πέψεως, σπεύδει τότε ἡ τοῦδε πεπειρότης, καὶ πρόεισι πρὸ ἡμερῶν χειμερινῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="6">
+<p>Ἐν πᾶσι γοῦν τοῖς δένδροις, ὅτε πρῶτον φυτευθῶσιν, ἐπικρατεῖ τὸ πικρὸν ἢ τὸ στρυφνόν, ἐπεὶ ἡ ὑγρότης ὅταν ἐν τοῖς ἄκροις γένηται αὐτῶν, πέττει τοὺς τόπους τοὺς ὄντας ἐν τῷ μέσῳ τῶν δένδρων, ἐξ ὦν ἐστὶ καὶ ἡ ὕλη τῶν καρπῶν,  προέρχεταί τε ξηρότης καὶ ἐπακολουθεῖ τῇ ὑγρότητι, καὶ οὕτω γίνεται ἡ πρώτη πέψις δριμεῖα ἢ πικρὰ ἢ στρυφνή.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="7">
+<p>Αἰτία δέ ἐστιν ὅτι μετὰ θερμότητος καὶ ὑγρότητός ἐστι πέψις. Ὅταν δὲ <pb facs="operaexrecension06arisuoft_0110"/> ἐπικρατήσῃ ὑγρότης καὶ ξηρότης τοῦ θερμοῦ, ἔστιν ἐξ αὐτοῦ καρπὸς ἐν τῇ ἀρχῇ οὐκ εὔπεπτος, διότι ἡ γέννησις τοῦ καρποῦ ἐν τῇ ἀρχῇ ἐστὶ χωρὶς γλυκύτητος. Τῶν μυροβαλάνων δὲ δένδρων ἐν τῇ ἀρχῇ, ὅταν φανῶσιν, οἱ καρποί εἰσι γλυκεῖς· κοινῶς δέ εἰσι στρυφνοὶ καὶ ἐν τῇ κράσει αὐτῶν πικροί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="8">
+<p>Αἰτία δέ ἐστιν ὅτι τὸ δένδρον αὐτῶν ἐστὶν ἀραιὸν τοῖς κλάδοις. Ἐν ὥρᾳ δὲ πέψεως, ὅταν ὦσιν οἱ πόροι πλατεῖς, ἕπεται θερμότης τῇ ὑγρότητι, καὶ πεπειροῦνται οἱ καρποί, καὶ ἐστὶν ἐν τῇ ἀρχῇ γλυκεῖς. Πάλιν ἀκολούθως ἕλκει διὰ τὴν ἀραιότητα τοῦτο τὸ δένδρον πόρους, ἐπικρατεῖ τε ψυχρότης καὶ ξηρότης τοῦ θερμοῦ καὶ ὑγροῦ, κἀντεῦθεν ἀλλοιοῦνται οἱ καρποὶ εἰς στρυφνότητα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg039.1st1K-grc1:2.10" n="9">
+<p><milestone unit="page" resp="Bekker" n="830a"/> Ἐπικρατεῖ πάλιν ὁ ἥλιος μετὰ τῆς θερμότητος διὰ τῆς ἐφελκύσεως τῆς περιττῆς ξηρότητος ἐν τῷ σπέρματι ἐκείνῳ, ὅπερ ἐστὶν ἐν τῇ ἐπιφανείᾳ τῶν δένδρων, νικᾷ τε ἡ ψυχρότης τὴν ξηρότητα, καὶ εἰσὶν οἱ καρποὶ ἰσχυρᾶς στρυφνότητος. <milestone unit="page" resp="Bekker" n="830b"/> Ἐντεῦθεν δὲ πάλιν ἀναβαίνει θερμότης φυσικὴ ἄνω, καὶ βοηθεῖ αὐτῇ ἡ θερμότης τοῦ ἡλίου ἔξωθεν, νικᾷ τε ἡ θερμότης καὶ ἡ ξηρότης, καὶ γίνονται οἱ καρποὶ πικροί.</p></div></div></div></div>
+
+
+</body></text></TEI>
