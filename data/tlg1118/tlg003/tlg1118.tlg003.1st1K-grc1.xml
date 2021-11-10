@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+  <fileDesc>
+    <titleStmt>
+      <title xml:lang="lat">De lapidibus</title>
+      <author xml:lang="lat">Pseudo-Dioscorides</author>
+      <editor>Fernand de Mély</editor>
+      <funder>Center for Hellenic Studies</funder>
+      
+      <respStmt>
+        <resp>Published original versions of the electronic texts</resp>
+        <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+        <persName role="principal">Gregory Crane</persName>
+        <persName role="principal">Leonard Muellner</persName>
+        <persName role="principal">Bruce Robertson</persName>
+      </respStmt>
+      
+      <respStmt>
+        <persName>Daniel Whittle</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Erini Drakou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Ioanna Kostopoulou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Vivian Platanou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Aglaia Poulida</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Theodora Pylarinou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Solomiia Rozlutska</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Victoria Rozlutska</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Athanasia Stathonikou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Charlotte Houghton</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital editor</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg1118.tlg003.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-05-26" />
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author xml:lang="lat">Pseudo-Dioscorides</author>
+          <editor>Fernand de Mély</editor>
+          <title xml:lang="fre">Les Lapidaires de L'antiquité et du Moyen Age; Les Lapidaires Grecs</title>
+          <imprint>
+            <pubPlace>Paris</pubPlace>
+            <publisher>Ernest Leroux</publisher>
+            <date>1898</date>
+          </imprint>
+          <biblScope unit="volume">2.1</biblScope>
+        </monogr>
+        <ref target="https://hdl.handle.net/2027/uc1.c3080492?urlappend=%3Bseq=209">HathiTrust</ref>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the  <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+      <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">      
+        <p>This pointer pattern extracts chapter and section.</p>
+      </cRefPattern>
+      <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">      
+        <p>This pointer pattern extracts chapter.</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+      <language ident="lat">Latin</language>
+      <language ident="fre">French</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021-09-07" who="Lisa Cerrato">Review of markup</change>
+    <change when="2021-08-10" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1" xml:lang="grc">
+      <pb facs="leslapidairesdel00mely_0207"/>
+      <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1" n="1">
+        <head rend="center">ΠΕΡΙ ΑΙΘΩΝ</head>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="1">
+         <p rend="indent"> Λιθάργυρος· Ἀγαρηνοὶ μάρτικ· ἡ μὲν ἐκ μολιβδίτιδος ἄμμου γεννᾶται χωνευομένη ἄχρι τελείας ἐκπυρώσεως, ἡ δὲ ἐξ ἀργύρου, εἴτε ἐκ μολίβδου· γίνεται δὲ ἐν Ἀττικῇ καὶ Ἰνδίᾳ καὶ Σικελίᾳ καὶ Ἱσπανίᾳ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="2">
+          <p rend="indent">Λίθος ἀγήραντος.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="3">
+          <p rend="indent">Λίθος ἀετίτης.</p>
+          <p rend="indent" xml:lang="lat">Hi duo, vacuis interjacentibus spatiis, descriptione carent. (Iriarte.).</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="4">
+          <p rend="indent">Λίθος αἱματίτης Ῥωμαῖοι αἱματίστα· ἀπὸ τῆς κατὰ τὴν χρόαν ὁμοιότητος· παραξυόμενος γὰρ ἀκόναις αἱματώδη χυλὸν ἀνίησι. Τοσοῦτον μετέχων τῆς ψύξεως ὅσον καὶ τῆς στύψεως, οὗτος τριβόμενος καὶ πινόμενος αἱμορραγίαν παύει· καὶ αἱμάτων πτύσεσιν ἁρμόττει, καὶ πᾶσιν ἕλκεσι καὶ δυσουρίαις· ξηρὸς δὲ λειωθεὶς καταστέλλει τὰ ὑπερσαρκοῦντα· σὺν δὲ γάλακτι γυναικείῳ ὑφαίμους ὀφθαλμοὺς θεραπεύει.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="5">
+          <p rend="indent">Λίθος ἄσσιος ὁ ἐν Ἄσσῳ γενόμενος· κισσηρώδης.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="6">
+          <p rend="indent">Λίθος ἀρμένιος· Ἀγαρηνοὶ λαζουέρδ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="7">
+         <p rend="indent">Λίθος γαιώδης· Ἄφροι γάγζαρ ἔλαρ. Οὗτος στύφει καὶ ξηραίνει καὶ ἀποκαθαίρει τὰ ἐπισκοτοῦντα ταῖς κόραις· χρισθεὶς δὲ μεθ’ ὕδατος μασθῶν καὶ ὀρχέων παύει φλεγμονάς.</p></div>
+          <pb facs="leslapidairesdel00mely_0208"/>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="8">
+         <p rend="indent">Λίθος γαγάτης ὁ ἐν Λυκίᾳ εὑρισκόμενος παρὰ τὸν Γάγην ποταμόν· ξηραίνει δὲ ἱκανῶς καὶ μαλάσσει καὶ διαφορεῖ· τὸ ἀψέψημα δὲ αὐτοῦ πινόμενον ἕλμινθας ἐκτινάσσει, καὶ περιαπτόμενος κεφαλαλγίας χρονίας παύει· καὶ ὠκυτοκίας ἐργάζεται τῇ χειρὶ κρατούμενος· προσαγόμενος δὲ πυρὶ καὶ ἐν οἴνῳ σβεννύμενος ὠφελεῖ καρδιακοὺς τοῦ οἴνου ποθέντος.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="9">
+         <p rend="indent">Λίθος γαλακτίτης παραπλησίαν τῷ μοροξῷ χρόαν ἔχων, ὑπόχλωρον καὶ γαλακτώδη χυλὸν ἀνίησιν· οὗτος πολυγάλους τὰς γυναῖκας ποιεῖ λουσαμένας καὶ μεθ’ ὕδατος ἢ οἴνου πιούσας· μίγνυται δὲ καὶ ὀφθαλμικαῖς δυνάμεσι. Φασὶ δὲ αὐτὸν περιαπτόμενον τραχήλῶ παιδίων ὀδοντιώντων ἔκφυσιν παρασκευάζειν.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="10">
+          <p rend="indent">Λίθος ἠλέκτρου ἢ λυγγούριον ἢ σούχινον. Πινόμενος οὗτος ἰᾶται δυσουρίαν καὶ στομαχικοὺς ὠφελεῖ καὶ ὠχριάσεις· καὶ τὸ ἤλεκτρον δὲ σὺν μαστίχῃ πινόμενον ἀλγήματα στομάχου ἰᾶται.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="11">
+          <p rend="indent">Λίθος θρᾳκίας γίνεται μὲν ἐν Σινθίᾳ ἐν ποταμῷ τῷ λεγομένῳ Πόντῳ· δύναμιν δὲ ἔχει τὴν αὐτὴν τῷ γαγάτῃ· ἱστόρηται δὲ ἐκθερμαίνεσθαι ὑφ’ ὕδατος, σβέννυσθαι ὑπὸ ἐλαίου καθάπερ καὶ τὴν ἀσφάλτην.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="12">
+          <p rend="indent">Λίθος ἴασπις· Ἄφροι ζομουράδ. Ὁ μέν τίς ἐστι σμαραγδίζων, ὁ δὲ κρυσταλλίζων καὶ φλέγματι ἐοικώς· ὁ δὲ ἀερίζων· ὁ δὲ καπνίζων· ὁ δὲ λευκίζων καὶ ἀποστίλβων· ὁ δὲ τερμινθίζων. Δοκοῦσι δὲ πάντες εἶναι φυλακτήρια περιαπτόμενοι καὶ ὠκυτοκίαν ἐργαζόμενοι καὶ ἀλγήματα στομάχου ἰώμενοι, καὶ ὀδύνης...</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="13">
+         <p rend="indent">Λίθος ἱασπαχάτη; ἐκ τῆς σμαραγδιζούσης ἐστὶν ἰάσπιδος καὶ τοῦ ἀχάτου· δύναμιν δὲ ἔχει δίψους παυστικὴν· καὶ ὑδρωπικοῖς βοηθεῖ, καὶ ἡπατικοῖς καὶ περιπνευμονικοῖς πινόμενος· καὶ τὸ σῶμα εὐανθὲς ποιεῖ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="14">
+          <p rend="indent">Λίθος ἱερακίτης καὶ ἰνδικὸς περιαπτόμενος μηρῷ δεξιῷ τὰς αἱμορροΐδας ἀναξηραίνουσιν, ὡς καὶ ἡμεῖς ἐπειράθημεν· ὁ δὲ Διογένης ἐν τῷ περὶ λίθων οὕτω φησίν· Ἱερακίτης λίθος ὑπόχλωρος μέν ἐστι καὶ πρὸς τὸ μέλαν ἐπικλίνει· δύναμιν δὲ ἔχει ἀναξηραντικὴν αἱμορροΐδων.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="15">
+          <p rend="indent">Λίθος ἰνδἰκὸς τὴν μὲν χρόαν ἐστὶν ὑπόπυρος· τριβόμενος δὲ πορφυροῦν <pb facs="leslapidairesdel00mely_0209"/> ἀνίησι χυλόν· καὶ μετ’ ἀκράτου οἴνου πινόμενος αἱμοπτυϊκοὺς ὠφελεῖ· καὶ αἱμορροΐδας ἀναξηραίνει.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="16">
+        <p rend="indent">Λίθος κίσσηρις ῥυπτικῆς ἐστι δυνάμεως, ὡς καὶ ἡ σμύρις. Λαμπρύνει τοὺς ὄδόντας.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="17">
+          <p rend="indent">Λἱθος ἴασπις καλούμενος ὁ ἐκ τῆς Αἰθιοπίας κομιζόμενος ὑπόχλωρός ἐστι· καὶ γαλακτώδη χυλὸν ἀνίησιν· καὶ διὰ τοῦτο ἁρμόζει εἰς τὸ καθᾶραι καὶ ῥύψαι τὰ χωρὶς φλεγμονῆς ἐπισκοτοῦντα ταῖς κόραις.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="18">
+          <p rend="indent">Λιθόκολλα μίγμα οὖσα μαρμάρου ἢ λίθου λιπαροῦ καὶ ταυροκόλλης· δύναται δὲ περὶ πυρὶ τρίχας κολλᾶν.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="19">
+          <p rend="indent">Λίθος μελιτίτης ἡδύτητος καὶ θερμότητος μετείληφε· καὶ διὰ τὴν γεῦσιν οὕτως ὠνόμασται· ἐνεργεῖ δὲ ὁμοίως τῷ γαλακτίῳ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="20">
+          <p rend="indent">Λίθος μοροξός, οἱ δὲ λευκογραφίδα καλοῦσι κατ’ Αἴγυπτον γινομένην· τούτῳ χρῶνται λαμπρύνοντες τὰς ὀθόνας.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="21">
+         <p rend="indent">Λίθος μαγνήτης εἴτε ἡρακλείας· Ἄφροι χαζαρμές· παραπλησίαν ἔχει δύναμιν τῷ αἱματίτῃ, ξηραντικὴν καὶ ῥυπτικὴν καὶ ἑλκτικήν, ψυχράν, καὶ ξηρὰν τῆς β’ τάξεως. Φασὶ δὲ χειραγροὺς ἢ ποδαγροὺς κρατοῦντας αὐτὴν ἀνοδύνως διάγειν. Βοηθεῖ δὲ καὶ σπασμοῖς. Ἄριστος δὲ ὁ τὸν σίδηρον εὐχερῶς ἕλκων, καὶ τὴν χρόαν κυανίζων· πυκνὸς δὲ καὶ οὐκ ἄγαν βαρύς· εὐεργεῖ δὲ εἰς ὅσα καὶ ἡ σκωρία τοῦ σιδήρου.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="22">
+         <p rend="indent">Λίθος νάξιος καὶ τὸ τῆς ναξίας ἀκόνης ἀπότριμμα ψυκτικῆς ἐστι δυνάμεως· ὅθεν καὶ μετ’ ὄξους ποθὲν σπλῆνα ἀναιρεῖ· καὶ ἐπιληψίας ὠφελεῖ καὶ ποδαγρικοῖς μετὰ ῥοδίνου προσάγεται.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="23">
+         <p rend="indent">Λίθοι μέλανες, πλακώδεις, ἀσθενῆ φλόγα γεννῶντες, εἰ κατὰ πυρὸς ἐπι τεθεῖεν· οἱ ἐν τῇ Κοίλη Συρίᾳ πλησίον τῆς Ἰεριχῶ ἐν λόφῳ γινόμενοι, ἔνθα καὶ ἡ ἄσφαλτος γίνεται, ὅθεν καὶ τὴν ὀσμὴν τοιαύτην κέκτηται· ἐχρησάμην δὲ αὐτοῖς εἰς ἐμφυματα χρόνια ξηραντικοῖς καὶ κολλητικοῖς οὖσι.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="24">
+          <p rend="indent">Λίθος ὀφίτης ὁ μέν τίς ἐστι στιβαρὸς καὶ πιμελώδης, σποδοειδής, ὁ δὲ γραμμὰς ἔχων. Ἱστόρηται οὗτος λήθαργον καὶ κεφαλαλγίας ὠφελεῖν· καυθεὶς δὲ <pb facs="leslapidairesdel00mely_0210"/> καὶ ῥυπτικῆς καὶ θρυπτικῆς γίγνεται δυνάμεως· πινόμενος δὲ μετ’ οἴνου λευκοῦ καὶ λέπτου τοὺς ἐν κύστει λίθους θρύπτει.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="25">
+          <p rend="indent">Λίθος ὀστρακίτης τὸ 〈 ἐκ〉 τῶν κεραμίδων ῥυπτικῆς ἐστι δυνάμεως· καὶ μᾶλλον ὁ ἐκ τῶν κλιβάνων· σαρκώδης δέ ἐστι καὶ δύσχρηστος ὁμοίως ὀστράκῳ· ῷ χρῶνται ἀντὶ κισσήρεως αἱ γυναῖκες πρὸς ἄρσιν τριχῶν· ἐπέχει δὲ καὶ τὰ καταμήνια πινόμενον σὺν οἴνῳ. Ἐὰν δέ τις ἐπὶ ἡμέρας δ’ μετὰ τὸν ἄφεδρον πίῃ, ἀσυλληψίαν ποιεῖ· σὺν μέλιτι δὲ ἐπιτιθέμενος, μασθοὺς φλεγμαίνοντας ὠφελεῖ καὶ νομὰς ἵστησι.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="26">
+          <p rend="indent">Λίθος ὁστρακίτης ὁ ἐκ τῶν κλιβάνων ὀστράκων, ὃν ἡφαιστιάδα καὶ γάγον ὀνομάζουσι· κάλλιστόν ἐστιν ἐπουλωτικὸν φάρμακον.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="27">
+          <p rend="indent">Λίθος πυρίτης, ἀφ’ οὖ ὁ χαλκὸς μεταλλεύεται· οὗτος δεύεται μέλιτι καὶ εἰς ἀνθρακίαν τίθεται· καὶ ῥιπίζεται συνεχῶς ἕως κιρρὸς γένηται· δύναμιν δὲ ἔχει θερμαντικήν, καθαρτικὴν καὶ συσταλτικὴν τῶν ὑπερσαρκούντων.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="28">
+         <p rend="indent">Λίθος σχιστὸς εἴτε ἀμίαντον γεννᾶται μὲν ἐν τῇ καθ’ ἑσπέραν Ἰβηρίᾳ· ἄριστος δέ ἐστιν ὁ παρακροκίζων εὔθρυπτός τε καὶ εὔσχιστος· δύναμιν δὲ τὴν αὐτὴν τῷ αἱματίτῃ ἔχει.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="29">
+          <p rend="indent">Λίθος σμύρις τουτέστι τῆς σμύρνης· Ἄφροι σεμβεδίν· ἔστι δὲ λιπαρά, ἥτις ἀλφοὺς ἢ δακτύλους σμήχει, ῥυπτικῆς δυνάμεως οὖσα· χρησιμεύει δὲ καὶ εἰς σαπήματα οὔλων καὶ ὀδόντων σμῆξιν.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="30">
+         <p rend="indent">Λἴθοι οἱ ἐν σπόγγοις εὑρισκόμενοι θρυπτικῆς δυνάμεώς εἰσιν, οὐ μὲν οὕτως ἰσχυρᾶς ὥστε τοὺς ἐν κύστει λίθους θρύπτειν, τοὺς δὲ ἐν νεφροῖς οἴνῳ ποθέντες.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="31">
+         <p rend="indent">Λίθος συριγγίτης ἐστὶ λεπτός, συριγγοειδής, διατετρωμένος, περὶ θᾶλασσον εὑρισκόμενος καὶ ἐν πέτραις κεκολλημένος· ἀπαρτώμενος τοῦ πάσχοντος ἄκρως ἀναξηραίνει, κατορθοῖ τὰς σύριγγας. Τοῦτον οἱ κούρσορες εἴσω βουβώνων φοροῦσι.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="32">
+         <p rend="indent">Λίθος σεληνίτης, ὃν ἀφροσέλινον καλοῦσι, διὰ τὸ εὑρίσκεσθαι αὐτὸν ἐν τῇ σελήνῃ νυκτός. Οὗτος γεννᾶται ἐν Ἀραβίᾳ· λευκός, διαυγής, κοῦφος. Τούτου <pb facs="leslapidairesdel00mely_0211"/> τὸ ξέσμα εἰς πότον διδόασι ἐπιληπτικοῖς· φυλακτηρίῳ δὲ περιάμματι αὐτῷ αἱ γυναῖκες χρῶνται· δοκεῖ δὲ δένδρεσι προστεθεὶς καρποφορίας ἐμποιεῖν.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="33">
+         <p rend="indent">Λίθος σάπφειρος μετὰ γάλκτος ποθεὶς λεῖος ἰᾶται τὰς ἐντὸς ἑλκώσεις πάσας, καὶ 〈 τὰς 〉 ἔξω, καὶ ἱδρῶτας παύει· καὶ λεῖος τὰς ἐν γλώσσῃ διακοπὰς παύει· ξηραντικῆς δέ ἐστι δυνάμεως· ὅθεν πινόμενος τοὺς ὑπὸ σκορπίων πληγέντας ὠφελεῖ.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="34">
+         <p rend="indent">Λίθος σμάραγδος ὀπτηθεῖσα καὶ λεία μέλιτι ἀττικῷ μιγεῖσα ἀμβλυωπίας ἰᾶται, καὶ περιαπτομένη αἷμα ἐπέχει, ὁπόθεν ἂν τύχοι φερόμενον.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="35">
+         <p rend="indent">Λίθος συρἰακός, ὅν τινες κόλιθον καλοῦσιν· ἔστιν ἰσχυρὸς τὴν δύναμιν. ἐν τῇ Συρίᾳ τῆς Παλαιστίνης γινόμενος· λευκὸς μὲν τὴν χρόαν, εὔρυθμος δὲ τὸ σχῆμα, γραμμὰς ἔχων ὡς ἀπὸ τόρνου γεγονυίας· ὀνομάζεται δὲ ἰουδαικῶς καὶ τηκόλιθος· ἔστι δὲ τῶν ἐν νεφροῖς λίθων δραστήριος δι’ ὕδατος θερμοῦ ποθείς· μετὰ δὲ μυρσίνου ἐλαίου ποδαγρικοῖς ἐπιχριόμενος βοηθεῖ. Ὁ δὲ Νεχεψώς φησι· Τρίψας τὸν τηκόλιθον μεθ’ ὕδατος καὶ ποιήσας γλοίου λεπτοῦ πάχος, καὶ ἀποξυρίσας τὰς τρίχας, χρίε κύστιν καὶ αἰδοῖα, καὶ τήξεις τὸν ἐν κύστει λίθον.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="36">
+         <p rend="indent">Λίθος ὕαλος λεῖος πινόμενος μετ’ οἴνου λευκοῦ καὶ λεπτοῦ τοὺς ἐν κύστει λίθους θρύπτει ἱκανῶς.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1118.tlg003.1st1K-grc1:1" n="37">
+         <p rend="indent">Λίθος φρύγιος ὁ ἐν Φρυγίᾳ, ῷ οἱ βασιλεῖς χρῶνται· γεννᾶται δὲ ἐν Καππαδοκίᾳ· ἄριστος δέ ἐστιν ὁ ὠχρὸς καὶ μέσος καὶ βαρύς· ἔστιν δὲ δυνάμεως ξηραντικῆς καὶ στυπτικῆς. Τέλος.</p> <pb facs="leslapidairesdel00mely_0213" />
+        </div>
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>

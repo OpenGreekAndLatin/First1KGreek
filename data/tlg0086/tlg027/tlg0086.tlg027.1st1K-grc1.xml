@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Περὶ θαυμασίων ἀκουσμάτων</title>
+                <author>Aristotle</author>
+                <editor>Immanuel Bekker</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                <respStmt>
+                    <persName>Lucy Parr</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Hillary Cheney</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Evie Edmundson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Claudia Filos</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carlos R. Gutiérrez-Rueda</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Catharine Haldeman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kelly Hamilton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew L Hokom</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Devin Lawson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zijun Liao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sean Mao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Halle Richardson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Adam Rosengarten</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Will Shao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuti Shelat</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Mel Ashton Trump</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Landon Van Berkum</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt></titleStmt>
+            
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0086.tlg027.1st1K-grc1.xml</idno>
+<pubPlace/>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Aristotelis Opera</title>
+                        <author>Aristotle</author>
+                        <editor>Immanuel Bekker</editor>
+                        <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <pubPlace>Oxford</pubPlace>
+                            <biblScope unit="volume">6</biblScope>
+                            <date>1837</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/operaexrecension06arisuoft/page/100/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc> 
+        </fileDesc>            
+        
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+<ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+    <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"> 
+            <p>This pointer pattern extracts chapter.</p></cRefPattern>
+    </refsDecl>
+</encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-10-20" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+                                                                                                                                            <text>                                                                                                          <body>
+  <div type="edition" n="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" xml:lang="grc">
+<pb facs="operaexrecension06arisuoft_0111"/>
+<milestone unit="page" resp="Bekker" n="830a"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:1" n="1">
+    <p rend="indent">Ἐν τῇ Παιονίᾳ φασὶν ἐν τῷ ὄρει τῷ Ἠσαίνῳ καλουμένῳ, ὃ τὴν Παιονικὴν καὶ τὴν Μαιδικὴν ὁρίζει, εἶναί τι θηρίον τὸ καλούμενον βόλινθον, ὑπὸ δὲ τῶν Παιόνων μόναιπον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:1" n="2">
+<p>Τοῦτον λέγουσι τὴν μὲν ὅλην φύσιν παραπλήσιον εἶναι βοΐ, διαφέρειν δὲ τῷ μεγέθει καὶ τῇ εὐρωστίᾳ, προσέτι δὲ καὶ τῇ χαίτῃ· ἔχει γὰρ ἀπὸ τοῦ αὐχένος, ὥσπερ ὁ ἵππος, κατατείνουσαν βαθεῖαν σφόδρα, καὶ ἀπὸ τῆς κορυφῆς ἕως τῶν ὀφθαλμῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:1" n="3">
+<p>Τὰ δὲ κέρατα οὐχ ὥσπερ οἱ βόες, ἀλλὰ κατεστραμμένα, καὶ τὸ ὀξὺ κάτω παρὰ τὰ ὦτα. χωρεῖν δὲ αὐτὰ ἡμιχόου πλεῖον ἑκάτερον αὐτῶν, καὶ μέλανα σφόδρα εἶναι, διαστίλβειν δὲ ὡσανεὶ λελεπισμένα. Ὅταν δὲ ἐκδαρῇ τὸ δέρμα, κατέχειν τόπον ὀκτακλίνου. Ἠνίκα δὲ πληγῇ, φεύγει, κἂν ἐξαδυνατοῦν μένει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:1" n="4">
+<p>Ἔστι δὲ ἡδύκρεων. Ἀμύνεται δὲ λακτίζον καὶ προσαφοδεῦον ὡς ἐπὶ τέτταρας ὀργυιάς· ῥᾳδίως δὲ χρῆται τούτῳ καὶ πολλάκις τῷ εἴδει, καὶ ἐπικαίει δ᾽ ὥστ᾽ ἀποψήχεσθαι τὰς τρίχας τῶν κυνῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:1" n="5">
+<p>Τεταραγμένου μὲν οὖν τοῦτο ποιεῖν <pb facs="operaexrecension06arisuoft_0112"/> φασὶ τὸν ἄφοδον, ἀταράχου δὲ μὴ ἐπικαίεν. Ὅταν δὲ τίκτωσι, πλείους γενόμενοι καὶ συναχθέντες ἅμα πάντες οἱ μέγιστοι τίκτουσι καὶ κύκλῳ προσαφοδεύουσι· πολὺ γάρ τι τούτου τοῦ περιττώματος τὸ θηρίον προΐεται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:2" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="830b"/> Τοὺς ἐν Ἀραβίᾳ φασὶ καμήλους μὴ ἀναβαίνειν ἐπὶ τὰς μητέρας, ἀλλὰ κἂν βιάσηταί τις, οὐ θέλουσι. Καὶ γάρ ποτε λέγεται, ἐπεὶ οὐκ ἦν ὀχεῖον, τὸν ἐπιμελητὴν καλύψαντα ἐφεῖναι τὸν πῶλον. Ὡς δ’ ὀχεύοντος ἐπέβη, τότε μέν, ὡς ἔοικε, συνετέλεσε, μικρῷ δ᾽ ὕστερον δάκνων τὸν καμηλίτην ἀπέκτεινεν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:3" n="1">
+    <p rend="indent">Τοὺς κόκκυγάς φασι τοὺς ἐν Ἐλίκῃ, ὅταν μέλλωσι τίκτειν, μὴ ποιεῖν νεοττιάν, ἀλλ᾽ ἐν ταῖς τῶν φαττῶν ἢ ταῖς τῶν τρυγόνων ἐντίκτειν, καὶ μήτ᾽ ἐπῳάζειν μήτ᾽ ἐκκολάπτειν μήτε τρέφειν αὐτούς· ἀλλ᾽ ὅταν γεννηθῇ ὁ νεοττὸς καὶ ἐκτραφῇ, μεθ᾽ ὦν ἂν οὖτος συνῇ, τούτους ἐκ τῆς νεοττιᾶς ἐκβάλλειν. Γίνεται δ᾽, ὡς ἔοικε, μέγας καὶ καλός, ὥστε ῥᾳδίως κατακρατεῖν τῶν λοιπῶν. Τούτῳ δὲ χαίρειν φασὶ καὶ τὰς φάττας οὕτως ὥστε καὶ αὐτὰς συνεκβάλλειν ἐκείνῳ τοὺς ἰδίους νεοττούς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:4" n="1">
+    <p rend="indent">Αἱ ἐν Κρήτῃ αἶγες ὅταν τοξευθῶσι, ζητοῦσιν, ὡς ἔοικε, τὸ δίκταμον τὸ ἐκεῖ φυόμενον. Ὄταν γὰρ φάγωσιν, εὐθὺς ἐκβάλλουσι τὰ τοξεύματα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:5" n="1">
+    <p rend="indent">Φασί τινας ἐν Ἀχαΐᾳ τῶν ἐλάφων, ὅταν ἀποβάλωσι τὰ κέρατα, εἰς τοιούτους τόπους ἔρχεσθαι ὥστε μὴ ῥᾳδίως <pb facs="operaexrecension06arisuoft_0113"/> εὑρεθῆναι. Τοῦτο δὲ ποιεῖν διὰ τὸ μὴ ἔχειν ᾧ ἀμυνοῦνται, <milestone unit="page" resp="Bekker" n="831a"/> καὶ διὰ τὸ πονεῖν τοὺς τόπους ὅθεν τὰ κέρατα ἀπέβαλον. Πολλαῖς δὲ καὶ κισσὸν ἐπιπεφυκότα ἐν τῷ τῶν κεράτων τόπῳ ὁρᾶσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:6" n="1">
+    <p rend="indent">Ἐν Ἀρμενίᾳ φάρμακόν τί φασι φύεσθαι ὃ καλεῖται παρδάλειον. Τούτῳ οὖν, ὅταν ὀφθῇ πάρδαλις, χρίσαντες τὸ ἱερεῖον ἀφιᾶσιν. Ἡ δὲ ὅταν ἅψηται αὐτοῦ, ζητεῖ, ὡς ἔοικε, τὴν τοῦ ἀνθρώπου κόπρον. Διὸ καὶ οἱ κυνηγοὶ εἰς ἀγγεῖον αὐτὴν ἐμβαλόντες ἔκ τινος δένδρου κρεμῶσιν, ἵνα προσαλλομένη καὶ ὑπέρκοπος γενομένη ὑπ᾽ αὐτοῦ παραλυθῇ καὶ ὑποχείριος γένηται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:7" n="1">
+    <p rend="indent">Ἐν Αἰγύπτῳ δὲ τοὺς τροχίλους φασὶν εἰσπετομένους εἰς τὰ στόματα τῶν κροκοδείλων καθαίρειν αὐτῶν τοὺς ὀδόντας, τὰ σαρκία τὰ ἐνεχόμενα τοῖς ῥύγχεσιν ἐξέλκοντας· τοὺς δ᾽ ἥδεσθαι καὶ μηδὲν βλάπτειν αὐτούς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:8" n="1">
+    <p rend="indent">Τοὺς ἐν Βυζαντίῳ φασὶν ἐχίνους αἰσθάνεσθαι ὅτε βόρεια καὶ νότια πνεῖ πνεύματα, καὶ μεταβάλλειν εὐθὺς τὰς ὀπάς, καὶ ὅταν μὲν ᾖ νότια, ἐκ τοῦ ἐδάφους τὰς ὀπὰς ποιεῖσθαι, ὅταν δὲ βόρεια, ἐκ τῶν τοιχῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:9" n="1">
+    <p rend="indent">Αἱ ἐν Κεφαλληνίᾳ αἶγες οὐ πίνουσιν, ὡς ἔσικεν, ὥσπερ καὶ τἆλλα τετράποδα, καθ᾽ ἡμέραν δὲ πρὸς τὸ πέλαγος ἀντία τὰ πρόσωπα ποιήσασαι χάσκουσιν εἰσδεχόμεναι τὰ πνεύματα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:10" n="1">
+    <p rend="indent">Φασὶν ἐν Συρίᾳ τῶν ἀγρίων ὄνων ἕνα ἀφηγεῖσθαι τῆς ἀγέλης, ἐπειδὰν δέ τις νεώτερος ὢν τῶν πώλων ἐπί τινα <pb facs="operaexrecension06arisuoft_0114"/> θήλειαν ἀναβῇ, τὸν ἀφηγούμενον θυμοῦσθαι, καὶ διώκειν ἕως τούτου ἕως ἂν καταλάβῃ τὸν πῶλον, καὶ ὑποκύψας ἐπὶ τὰ ὀπίσθια σκέλη τῷ στόματι ἀποσπάσῃ τὰ αἰδοῖα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:11" n="1">
+    <p rend="indent">Τὰς χελώνας λέγουσιν, ὅταν ἔχεως φάγωσιν, ἐπεσθίειν τὴν ὀρίγανον, ἐὰν δὲ μὴ θᾶττον εὕρῃ, ἀποθνήσκειν. Πολλοὺς δ᾽ ἀποπειράζοντας τῶν ἀγραυλούντων εἰ τοῦτ᾽ ἀληθές ἐστιν, ὅταν ἴδωσιν αὐτὴν τοῦτο πράττουσαν, ἐκτίλλειν τὴν ὀρίγανον· τοῦτο δὲ ὅταν ποιήσωσι, μετὰ μικρὸν αὐτὴν ὁρᾶσθαι ἀποθνήσκουσαν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:12" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="831b"/> Τὸ τῆς ἰκτίδος λέγεται αἰδοῖον εἶναι οὐχ ὅμοιον τῇ φύσει τῶν λοιπῶν ζῴων, ἀλλὰ στερεὸν διὰ παντὸς οἷον ὀστοῦν, ὅπως ἄν ποτε διακειμένη τύχῃ. Φασὶ δὲ στραγγουρίας αὐτὸ φάρμακον εἶναι ἐν τοῖς ἀρίστοις, καὶ δίδοσθαι ἐπιξυόμενον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:13" n="1">
+    <p rend="indent">Τὸν δρυοκολάπτην φασὶ τὸ ὄρνεον ἐπὶ τῶν δένδρων βαδίζειν ὥσπερ τοὺς ἀσκαλαβώτας, καὶ ὕπτιον καὶ ἐπὶ τὴν γαστέρα. Νέμεσθαι δὲ λέγεται καὶ τοὺς ἐκ τῶν δένδρων σκώληκας, καὶ οὕτω σφόδρα κατὰ βάθους ὀρύττειν τὰ δένδρα ζητοῦντα τοὺς σκώληκας ὥστε καὶ καταβάλλειν αὐτά.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:14" n="1">
+    <p rend="indent">Φασὶ τοὺς πελεκᾶνας τὰς ἐν τοῖς ποταμοῖς γινομένας κόγχας ὀρύττοντας καταπίνειν, ἔπειτα ὅταν πλῆθος εἰσφρήσωσιν αὐτῶν, ἐξεμεῖν, εἶθ᾽ οὕτως τὰ μὲν κρέα ἐσθίειν τῶν κογχῶν, τῶν δ᾽ ὀστράκων μὴ ἅπτεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="15">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:15" n="1">
+    <p rend="indent">Ἐν Κυλλήνῃ φασὶ τῆς Ἀρκαδίας τοὺς κοσσύφους λευκοὺς γίνεσθαι, ἄλλοθι δ᾽ οὐδαμῇ, καὶ φωνὰς ποικίλας. προΐεσθαι, ἐκπορεύεσθαί τε πρὸς τὴν σελήνην. Τὴν δ᾽ ἡμέραν εἴ τις ἐπιχειροίη, σφόδρα δυσθηράτους εἶναι.</p></div></div><pb facs="operaexrecension06arisuoft_0115"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="16">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:16" n="1">
+    <p rend="indent">Λέγεται δ᾽ ὑπό τινων μέλι τὸ καλούμενον ἄνθινον περὶ Μῆλον καὶ Κνίδον γίνεσθαι εὐῶδες μὲν τῇ ὀσμῇ, ὀλιγοχρόνιον δέ, ἐν τούτῳ δὲ καὶ τὴν ἐριθάκην γίνεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="17">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:17" n="1">
+<p>Περὶ Καππαδοκίαν ἔν τισι τόποις ἄνευ κηρίον φασὶν ἐργάζεσθαι τὸ μέλι, γίνεσθαι δὲ τὸ πάχος ὅμοιον ἐλαίῳ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="18">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:18" n="1">
+<p>Ἐν Τραπεζοῦντι τῇ ἐν τῷ Πόντῳ γίνεται τὸ ἀπὸ τῆς πύξου μέλι βαρύοσμον· καί φασι τοῦτο τοὺς μὲν ὑγιαίνοντας ἐξιστάναι, τοὺς δ᾽ ἐπιλήπτους καὶ τελέως ἀπαλλάττειν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="19">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:19" n="1">
+<p>Φασὶ δὲ καὶ ἐν Λυδίᾳ ἀπὸ τῶν δένδρων τὸ μέλι συλλέγεσθαι πολύ, καὶ ποιεῖν ἐξ αὐτοῦ τοὺς ἐνοικοῦντας ἄνευ κηροῦ τροχίσκους, καὶ ἀποτέμνοντας χρῆσθαι διὰ τρίψεως σφοδροτέρας. Γίνεται μὲν οὖν καὶ ἐν Θρᾴκῃ, οὐχ οὕτω δὲ στερεόν, ἀλλ᾽ ὡσανεὶ ἀμμῶδες. Ἄπαν δὲ μέλι πηγνύμενον τὸν ἴσον ἔχειν ὄγκον φασίν, οὐχ ὥσπερ τὸ ὕδωρ καὶ τἆλλα ὑγρά.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="20">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:20" n="1">
+<p><milestone unit="page" resp="Bekker" n="832a"/> Ἡ Χαλκιδικὴ πόα καὶ τὰ ἀμύγδαλα χρησιμώτατα πρὸς τὸ μέλι ποιεῖν· πλεῖστον γὰρ γόνον φασὶν ἐξ αὐτῶν γίνεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="21">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:21" n="1">
+<p>Τὰς μελίττας λέγουσιν ὑπὸ μύρου καροῦσθαι καὶ οὐκ ἀνέχεσθαι τὴν ὀσμήν· ἔνιοι δὲ λέγουσι μάλιστα τοὺς μεμυρισμένους τύπτειν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="22">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:22" n="1">
+<p>Ἐν Ἰλλυριοῖς φασὶ τοὺς Ταυλαντίους καλουμένους ἐκ τοῦ μέλιτος ποιεῖν οἶνον. Ὅταν δὲ τὰ κηρία ἐκθλίψωσιν, ὕδωρ ἐπιχέοντες ἕψουσιν ἐν λέβητι ἕως ἂν ἐκλίπῃ τὸ ἥμισυ, ἔπειτα εἰς κεράμια ἐκχέαντες καὶ ἡμίσεα ποιήσαντες τιθέασιν εἰς σανίδας· ἐν ταύταις δέ φασι ζεῖν πολὺν χρόνον, καὶ γίνεσθαι οἰνῶδες καὶ ἄλλως <pb facs="operaexrecension06arisuoft_0116"/> ἡδὺ καὶ εὔτονον. Ἤδη δέ τισι καὶ τῶν ἐν Ἑλλάδι συμβεβηκέναι λέγουσι τοῦτο, ὥστε μηδὲν διαφέρειν οἴνου παλαιοῦ· καὶ ζητοῦντας ὕστερον τὴν κρᾶσιν μὴ δύνασθαι εὑρεῖν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="23">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:23" n="1">
+    <p rend="indent">Περὶ Θετταλίαν μνημονεύουσιν ὄφεις ζῳογονηθῆναι τοσούτους ὥστε, εἰ μὴ ὑπὸ τῶν πελαργῶν ἀνῃροῦντο, ἐκχωρῆσαι ἂν αὐτούς. Διὸ δὴ καὶ τιμῶσι τοὺς πελαργούς, καὶ κτείνειν οὐ νόμος· καὶ ἐάν τις κτείνῃ, ἔνοχος τοῖς αὐτοῖς γίνεται οἷσπερ καὶ ὁ ἀνδροφόνος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="24">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:24" n="1">
+<p>Ὡσαύτως καὶ ἐν Λακεδαίμονι κατά τινας χρόνους μνημονεύεται γενέσθαι τοσοῦτον πλῆθος ὄφεων ὥστε διὰ σπανοσιτίαν καὶ τροφῇ τοὺς Λάκωνας χρῆσθαι αὐτοῖς· ὅθεν καὶ τὴν Πυθίαν φασὶ προσαγορεῦσαι αὐτοὺς ὀφιοδείρους.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="25">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:25" n="1">
+    <p rend="indent">Ἐν Κύπρῳ τῇ νήσῳ λέγεται τοὺς μῦς τὸν σίδηρον ἐσθίειν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="26">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:26" n="1">
+<p>Φασὶ δὲ καὶ τοὺς Χαλύβας ἔν τινι ὑπερκειμένῳ αὐτοῖς νησιδίῳ τὸ χρυσίον συμφορεῖσθαι παρὰ πλειόνων. Διὸ δὴ καὶ τοὺς ἐν τοῖς μετάλλοις ἀνασχίζουσιν, ὡς ἔοικεν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="27">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:27" n="1">
+    <p rend="indent">Λέγεται δὲ ἐκ Σούσων εἰς Μηδίαν ἰοῦσιν ἐν τῷ δευτέρῳ σταθμῷ σκορπίων ἄπλετόν τι πλῆθος γίνεσθαι. Διὸ καὶ ὁ βασιλεὺς ὁ Περσῶν, ὅτε διοδεύοι, τρεῖς ἡμέρας ἔμενε, πᾶσι τοῖς αὐτοῦ συντάσσων ἐκθηρεύειν· τῷ δὲ πλείστους θηρεύσαντι ἆθλον ἐδίδου.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="28">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:28" n="1">
+    <p rend="indent">Ἐν Κυρήνῃ δέ φασιν οὐχ ἓν εἶναι μυῶν γένος, <milestone unit="page" resp="Bekker" n="832b"/> ἀλλὰ πλείω καὶ διάφορα καὶ ταῖς μορφαῖς καὶ ταῖς χρόαις· ἐνίους γὰρ πλατυπροσώπους, ὥσπερ αἱ γαλαῖ, γίνεσθαι, τινὰς δὲ ἐχινώδεις, οὓς καλοῦσιν ἐχῖνας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="29">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:29" n="1">
+    <p rend="indent">Περὶ Κιλικίαν δέ φασιν εἶναι ὕδατος συστρεμμάτιον, εἰς <pb facs="operaexrecension06arisuoft_0117"/> ὃ τὰ πεπνιγμένα τῶν ὀρνέων καὶ τῶν λοιπῶν ζῴων ὅταν ἀποβαφῇ, πάλιν ἀναβιοῖ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="30">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:30" n="1">
+    <p rend="indent">Ἐν δὲ Σκύθαις τοῖς καλουμένοις Γελωνοῖς φασὶ θηρίον τι γίνεσθαι, σπάνιον μὲν ὑπερβολῇ, ὃ ὀνομάζεται τάρανδος· λέγεται δὲ τοῦτο μεταβάλλειν τὰς χρόας τῆς τριχὸς καθ᾽ ὃν ἂν καὶ τόπον ᾖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:30" n="2">
+    <p>Διὰ δὲ τοῦτο εἶναι δυσθήρατον [καὶ διὰ τὴν μεταβολήν]· καὶ γὰρ δένδρεσι καὶ τόποις, καὶ ὅλως ἐν οἶς ἂν ᾖ, τοιοῦτον τῇ χροίᾳ γίνεσθαι. Θαυμασιώτατον δὲ τὸ τὴν τρίχα μεταβάλλειν· τὰ γὰρ λοιπὰ τὸν χρῶτα, οἶον ὅ τε χαμαιλέων καὶ ὁ πολύπους. Τὸ δὲ μέγεθος ὡσανεὶ βοῦς, Τοῦ δὲ προσώπου τὸν τύπον ὅμοιον ἔχει ἐλάφῳ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="31">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:31" n="1">
+    <p rend="indent">Λέγεται δέ τινα ἐν Ἀβύδῳ παρακόψαντα τῇ διανοίᾳ καὶ εἰς τὸ θέατρον ἐρχόμενον ἐπὶ πολλὰς ἡμέρας θεωρεῖν, ὡς ὑποκρινομένων τινῶν, καὶ ἐπισημαίνεσθαι· καὶ ὡς κατέστη τῆς παρακοπῆς, ἔφησεν ἐκεῖνον αὐτῷ τὸν χρόνον ἥδιστα βεβιῶσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="32">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:32" n="1">
+<p>Καὶ ἐν Τάραντι δέ φασιν οἰνοπώλην τινὰ τὴν μὲν νύκτα μαίνεσθαι, τὴν δ᾽ ἡμέραν οἰνοπωλεῖν, Καὶ γὰρ τὸ κλειδίον τοῦ οἰκήματος πρὸς τῷ ζωνίῳ διεφύλαττε, πολλῶν δ᾽ ἐπιχειρούντων παρελέσθαι καὶ λαβεῖν οὐδέποτε ἀπώλεσεν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="33">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:33" n="1">
+    <p rend="indent">Ἐν Τήνῳ τῇ νήσῳ φασὶν εἶναι φιάλιον σύγκρα ἔχον, ἐξ οὖ πῦρ ἀνάπτουσι πάνυ ῥᾳδίως. Καὶ ἐν Βιθυνίᾳ δὲ τῆς Θρᾴκης ἐν τοῖς μετάλλοις γίνεται ὁ καλούμενος σπίνος, ἐξ οὗ φασὶ πῦρ ἀνάπτεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="34">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:34" n="1">
+<p>Ἐν δὲ Λιπάρᾳ τῇ <pb facs="operaexrecension06arisuoft_0118"/> λέγουσιν εἶναί τινα εἰσπνοήν, εἰς ἢν ἐὰν κρύψωσι χύτραν, ἐμβαλόντες ὃ ἂν ἐθέλωσιν ἕψουσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="35">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:35" n="1">
+<p>῎Εστι δὲ καὶ <milestone unit="page" resp="Bekker" n="833a"/> ἐν Μηδίᾳ καὶ ἐν Ψιττακηνῇ τῆς Περσίδος πυρὰ καιόμενα, τὸ μὲν ἐν Μηδίᾳ ὀλίγον, τὸ δ᾽ ἐν Ψιττακηνῇ πολὺ καὶ καθαρὸν τῇ φλογί· διὸ καὶ μαγειρεῖα πρὸς αὐτῷ κατεσκεύασεν ὁ Περσῶν βασιλεύς. Ἄμφω δ᾽ ἐν ὁμαλοῖς τόποις καὶ οὐκ ἐν ὑψηλοῖς, Ταῦτα δὲ καὶ νύκτωρ καὶ μεθ᾽ ἡμέραν φανερά, τὰ δὲ περὶ Παμφυλίαν νύκτωρ μόνον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="36">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:36" n="1">
+<p>Φασὶ δὲ καὶ περὶ Ατιτανίαν, πρὸς τοῖς ὁρίοις τῆς Ἀπολλωνιάτιδος, εἶναί τινα πέτραν ἐξ ἦς τὸ μὲν ἀνιὸν πῦρ οὐ φανερόν ἐστιν, ἐπειδὰν δὲ ἔλαιον ἐπιχυθῇ ἐπ᾽ αὐτήν, ἐκφλογοῦται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="37">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:37" n="1">
+<p>Λέγεται δὲ καὶ τὰ ἔξω στηλῶν Ἡρακλείων καίεσθαι, τὰ μὲν διὰ παντός, τὰ δὲ νύκτωρ μόνον, ὡς ὁ Ἄννωνος περίπλους ἱστορεῖ. Καὶ τὸ ἐν Λιπάρᾳ δὲ φανερὸν καὶ φλογῶδες, οὐ μὴν ἡμέρας, ἀλλὰ νύκτωρ μόνον. Εἶναι δὲ καὶ ἐν Πιθηκούσαις φασὶ πυρῶδες μὲν καὶ θερμὸν ἐκτόπως, οὐ μὴν καιὁμενον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="38">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:38" n="1">
+<p>Τὸ δ᾽ ἐν τῇ Λιπάρᾳ ποτὲ καὶ ἔκλιπεῖν φησὶ Ξενοφάνης ἐπ᾽ ἔτη ἑκκαίδεκα, τῷ δὲ ἑβδόμῳ ἐπανελθεῖν. Τὸν δ᾽ ἐν τῇ Αἴτνῃ ῥύακα οὔτε φλογώδη φασὶν οὔτε συνεχῆ, ἀλλὰ διὰ πολλῶν ἐτῶν γίνεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="39">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:39" n="1">
+<p>Λέγεται δὲ καὶ περὶ Λυδίαν ἀναζέσαι πῦρ πάμπληθες, καὶ καίεσθαι ἐφ᾽ ἡμέρας ἑπτά.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="40">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:40" n="1">
+<p>Θαυμαστὸν δὲ τὸ ἐν Σικελίᾳ περὶ τὸν ῥύακα γινόμενον· τὸ γὰρ πλάτος ἐστὶ τὸ τῆς τοῦ πυρὸς <pb facs="operaexrecension06arisuoft_0119"/> ἀναζέσεως τεσσαράκοντα σταδίων, τὸ δὲ ὕψος δι᾽ οὗ φέρεται, τριῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="41">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:41" n="1">
+<p>Φασὶ δὲ τὸν ἐν τῇ Θρᾴκῃ λίθον τὸν καλούμενον σπίνον διακοπέντα καίεσθαι, καὶ συντεθέντα πρὸς ἑαυτόν, ὥσπερ τὴν σμαρίλην, οὕτως κἀκεῖνον εἰς ἑαυτὸν τεθέντα καὶ ἐπιρραινόμενον ὕδατι καίεσθαι. Τὸ δ᾽ αὐτὸ ποιεῖν καὶ τὸν μαριέα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="42">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:42" n="1">
+    <p rend="indent">Περὶ Φιλίππους τῆς Μακεδονίας εἶναι λέγουσι μέταλλα, ἐξ ὦν τὰ ἐκβαλλόμενα ἀποσύρματα αὐξάνεσθαί φασι καὶ φύειν χρυσίον, καὶ τοῦτ᾽ εἶναι φανερόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="43">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:43" n="1">
+<p>Φαοὶ δὲ καὶ ἐν Κύπρῳ περὶ τὸν καλούμενον Τυρρίαν χαλκὸν ὅμοιον γίγνεσθαι. <milestone unit="page" resp="Bekker" n="833b"/> Κατακόψαντες γάρ, ὡς ἔοικεν, εἰς μικρὰ σπείρουσιν αὐτόν· εἶθ᾽ ὑδάτων ἐπιγενομένων αὐξάνεται καὶ ἐξανίησι καὶ οὕτως συνάγεται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="44">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:44" n="1">
+<p>Φασὶ δὲ καὶ ἐν Μήλῳ τῇ νήσῳ ἐν τοῖς ἐξορυσσομένοις τόποις τῆς γῆς πάλιν ἀναπληρώματα γίγνεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="45">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:45" n="1">
+    <p rend="indent">Περὶ Παιονίαν λέγουσιν, ὅταν συνεχεῖς ὄμβροι γένωνται, εὑρίσκεσθαι περιτηκομένης τῆς γῆς χρυσὸν τὸν καλούμενον ἄπυρον. Λέγουσι δ᾽ ἐν τῇ Παιονίᾳ οὕτω χρυσίζειν τὴν γῆν ὥστε πολλοὺς εὑρηκέναι καὶ ὑπὲρ μνᾶν χρυσίου ὁλκήν. Τῷ δὲ βασιλεῖ τινά φασιν εὑρόντα ἀνενεγκεῖν δύο βώλους, τὸν μὲν τρεῖς μνᾶς ἄγοντα, τὸν δὲ πέντε· οὕς φασιν ἐπὶ τῆς τραπέζης αὐτῷ παρακεῖσθαι, καὶ ἐπ᾽ ἐκείνων πρῶτον, εἴ τι ἐσθίε, ἀπάρχεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="46">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:46" n="1">
+    <p>Φασὶ δὲ καὶ ἐν Βάκτροις τὸν ῏Ωξον ποταμὸν καταφέρειν βωλία χρυσίου πλήθει πολλά, καὶ ἐν Ἰβηρίᾳ δὲ τὸν καλούμενον Θεόδωρον ποταμὸν <pb facs="operaexrecension06arisuoft_0120"/> ἐκβράσσειν τε πολὺ περὶ τὰ χείλη χρυσίον, ὁμοίως δὲ καὶ καταφέρειν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="47">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:47" n="1">
+    <p rend="indent">Λέγουσι δὲ καὶ ἐν Πιερίᾳ τῆς Μακεδονίας ἄσημόν τι χρυσίον κατορωρυγμένον ὑπὸ τῶν ἀρχαίων βασιλέων, χασμάτων τεττάρων ὄντων, ἐξ ἑνὸς αὐτῶν ἀναφῦναι χρυσίον τὸ μέγεθος σπιθαμιαῖον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="48">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:48" n="1">
+<p>Λέγεται δὲ ἰδιαιτάτην εἶναι γένεσιν σιδήρου τοῦ Χαλυβικοῦ καὶ τοῦ Ἀμισηνοῦ. Συμφύεται γάρ, ὥς γε λέγουσιν, ἐκ τῆς ἄμμου τῆς καταφερομένης ἐκ τῶν ποταμῶν. Ταύτην δ᾽ οἱ μὲν ἁπλῶς φασὶ πλύναντας καμινεύειν, οἱ δὲ τὴν ὑπόστασιν τὴν γενομένην ἐκ τῆς πλύσεως πολλάκις πλυθεῖσαν συγκαίειν, παρεμβάλλειν δὲ τὸν πυρίμαχον καλούμενον λίθον· εἶναι δ᾽ ἐν τῇ χώρᾳ πολύν. Οὖτος δ᾽ ὁ σίδηρος πολὺ τῶν ἄλλων γίνεται καλλίων. Εἰ δὲ μὴ ἐν μιᾷ καμίνῳ ἐκαίετο, οὐδὲν ἄν, ὡς ἔοικε, διέφερε τἀργυρίου. Μόνον δέ φασιν αὐτὸν ἀνίωτον εἶναι, οὐ πολὺν δὲ γίνεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="49">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:49" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="834a"/> Φασὶ δὲ καὶ ἐν Ἰνδοῖς τὸν χαλκὸν οὕτως εἶναι λαμπρὸν καὶ καθαρὸν καὶ ἀνίωτον, ὥστε μὴ διαγινώσκεσθαι τῇ χρόᾳ πρὸς τὸν χρυσόν, ἀλλ᾽ ἐν τοῖς Δαρείου ποτηρίοις βατιακὰς εἶναί τινας καὶ πλείους, ἃς εἰ μὴ τῇ ὀσμῇ, ἄλλως οὐκ ἦν διαγνῶναι πότερόν εἰσι χαλκαῖ ἢ χρυσαῖ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="50">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:50" n="1">
+    <p rend="indent">Τὸν κασσίτερον τὸν Κελτικὸν τήκεσθαί φασι πολὺ τάχιον μολύβδου. Σημεῖον δὲ τῆς εὐτηξίας, ὅτι τήκεσθαι δοκεῖ καὶ ἐν τῷ ὕδατι· χρώζει γοῦν, ὡς ἔοικε, ταχύ. Τήκεται δὲ καὶ ἐν τοῖς ψύχεσιν, ὅταν γένηται πάγη, ἐγκατακλειομένου ἐντός, ὡς φασί, καὶ συνωθουμένου τοῦ θερμοῦ τοῦ ἐνυπάρχοντος αὐτῷ διὰ τὴν ἀσθένειαν.</p></div></div><pb facs="operaexrecension06arisuoft_0121"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="51">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:51" n="1">
+    <p rend="indent">Ἐν τῷ Πανθείῳ ἐστὶν ἐλαία, καλεῖται δὲ καλλιστέφανος. ταύτης πάντα τὰ φύλλα ταῖς λοιπαῖς ἐλαίαις ἐναντία πέφυκεν· ἔξω γὰρ ἀλλ᾽ οὐκ ἐντὸς ἔχει τὰ χλωρά. Ἀφίησί τε τοὺς πτόρθους ὥσπερ ἡ μύρτος εἰς τοὺς στεφάνους συμμέτρως. Ἀπὸ ταύτης φυτὸν λαβῶν ὁ Ἠρακλῆς ἐφύτευσεν Ὀλυμπίασιν, ἀφ᾽ ἦς οἱ στέφανοι τοῖς ἀθληταῖς δίδονται. ῎Εστι δὲ αὕτη παρὰ τὸν λισσὸν ποταμόν, σταδίους ἑξή κοντα τοῦ ποταμοῦ ἀπέχουσα. περιῳκοδόμηται δέ, καὶ ζημία μεγάλη τῷ θιγόντι αὐτῆς ἐστίν. Ἀπὸ ταύτης δὲ τὸ φυτὸν λαβόντες ἐφύτευσαν Ἠλεῖοι ἐν Ὀλυμπίᾳ, καὶ τοὺς στεφάνους ἀπ᾽ αὐτῆς ἔδωκαν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="52">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:52" n="1">
+    <p rend="indent">Ἐν τοῖς περὶ Λυδίαν μετάλλοις τοῖς περὶ Πέργαμον, ἃ δὴ καὶ Κροῖσος εἰργάσατο, πολέμου τινὸς γενομένου κατέφυγον οἱ ἐργαζόμενοι ἐπ᾽ αὐτά, τοῦ δὲ στομίου ἐποικοδομηθέντος ἀπεπνίγησαν· καὶ ὕστερον χρόνῳ πολλῷ τῶν μετάλλων ἀνακαθαρθέντων εὑρέθη οἷς ἐχρῶντο ἀγγείοις πρὸς τὰς ὑπὸ χεῖρα χρείας ἀπολελιθωμένα, οἷον ἀμφορεῖς καὶ τὰ τοιουτότροπα. Ταῦτα δὴ πεπληρωμένα οὗ τινὸς ἔτυχον ὑγροῦ ἐλελίθωτο, καὶ προσέτι τὰ ὀστᾶ τῶν ἀνθρώπων.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="53">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:53" n="1">
+    <p rend="indent">Ἐν τῇ Ἀσκανίᾳ λίμνη οὕτω νιτρῶδές ἐστι τὸ ὕδωρ ὥστε τὰ ἱμάτια οὐδενὸς ἑτέρου ῥύμματος προσδεὶσθαι· κἂν πλείω χρόνον ἐν τῷ ὕδατι ἐάσῃ τις, διαπίπτει.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="54">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:54" n="1">
+<p>Περὶ τὴν Ἀσκανίαν λίμνην Πυθόπολίς ἐστι κώμη ἀπέχουσα Κίου ὡς σταδίους ἑκατὸν εἴκοσι, ἐν ᾖ τοῦ χειμῶνος ἀναξηραίνεται <milestone unit="page" resp="Bekker" n="834b"/> πάντα τὰ φρέατα ὥστε μὴ ἐνδέχεσθαι βάψαι τὸ ἀγγεῖον, τοῦ δὲ θέρους πληροῦται ἕως τοῦ στόματος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="55">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:55" n="1">
+    <p rend="indent">Ὀ πορθμὸς ὁ μεταξὺ Σικελίας καὶ Ἰταλίας αὔξεται καὶ φθίνει ἅμα τῷ σεληνίῳ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="56">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:56" n="1">
+<p>Καὶ διότι ἐπὶ τῆς ὁδοῦ τῆς εἰς Συρακούσας <pb facs="operaexrecension06arisuoft_0122"/> κρήνη ἐστὶν ἐν λειμῶνι οὔτε μεγάλη οὔτε ὕδωρ ἕχουσα πολύ. συναπαντήσαντος δὲ εἰς τὸν τόπον ὄχλου πολλοῦ παρέσχεν ὕδωρ ἄφθονον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="57">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:57" n="1">
+<p>Ἔστι δὲ καὶ κρήνη τις ἐν Παλικοῖς τῆς Σικελίας, ὡς δεκάκλινος· αὕτη δ᾽ ἀναρρίπτει ὕδωρ εἰς ὕψος ἓξ πήχεις, ὥστε ὑπὸ τῶν ἰδόντων νομίζεσθαι κατακλυσθήσεσθαι τὸ πεδίον· καὶ πάλιν εἰς ταὐτὸ καθίσταται. Ἔστι δὲ καὶ ὅρκος, ὃς ἅγιος αὐτόθι δοκεῖ εἶναι· ὅσα γὰρ ὄμνυσί τις, γράψας εἰς πινακίδιον ἐμβάλλει εἰς τὸ ὕδωρ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:57" n="2">
+<p>Ἐὰν μὲν οὖν εὐορκῇ, ἐπιπολάζει τὸ πινακίδιον· ἐὰν δὲ μὴ εὐορκῇ, τὸ μὲν πινακίδιον βαρὺ γενόμενον ἀφανίζεσθαί φασι, τὸν δ᾽ ἄνθρωπον πίμπρασθαι. Διὸ δὴ λαμβάνειν τὸν ἱερέα παρ᾽ αὐτοῦ ἐγγύας ὑπὲρ τοῦ καθαίρειν τινὰ τὸ ἱερόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="58">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:58" n="1">
+    <p rend="indent">Δημόνησος ἡ Καρχηδονίων νῆσος ἀπὸ Δημονήσου τοῦ πρώτου ἐργασαμένου τὴν ἐπωνυμίαν εἴληφεν· ἔχει δ᾽ ὁ τόπος κυανοῦ τὸ μέταλλον καὶ χρυσοκόλλης. Ταύτης δ᾽ ἡ καλλίστη πρὸς χρυσίον εὑρίσκει τιμήν· καὶ γὰρ φάρμακον ὀφθαλμῶν ἐστίν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:58" n="2">
+<p>Ἔστι δὲ αὐτόθι χαλκὸς κολυμβητὴς ἐν δυοῖν ὀργυιαῖς τῆς θαλάσσης· ὅθεν ὁ ἐν Σικυῶνί ἐστιν ἀνδριὰς ἐν τῷ ἀρχαίῳ νεῷ τοῦ Ἀπόλλωνος καὶ ἐν Φενεῷ οἱ ὀρείχαλκοι καλούμενοι. Ἐπιγέγραπται δ᾽ αὐτοῖς " <q>Ἠρακλῆς Ἀμφιτρύωνος ῏Ηλιν ἑλὼν ἀνέθηκεν.</q></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:58" n="3">
+<p>Ἀἱρεῖ δὲ τὴν ῏Ηλιν ἡγουμένης κατὰ χρησμὸν γυναικός, ἦς τὸν πατέρα Αὐγείαν ἀπέκτεινεν. Οἱ δὲ τὸν χαλκὸν ὀρύττοντες ὀξνδερκέστατοι γίνονται, καὶ οἱ βλεφαρίδας μὴ ἔχοντες φύουσι· παρὸ καὶ οἱ ἰατροὶ τῷ ἄνθει τοῦ χαλκοῦ καὶ τῇ τέφρᾳ τῇ Φρυγίᾳ χρῶνται πρὸς τοὺς ὀφθαλμούς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="59">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:59" n="1">
+<p>Ἔστι δὲ αὐτόθι σπήλαιον ὃ καλεῖται γλαφυρόν· ἐν δὲ τούτῳ κίονες πεπήνόταγασιν <pb facs="operaexrecension06arisuoft_0123"/> ἀπό τινων σταλαγμῶν. Ἀποδηλοῖ δὲ τοῦτο ἐν τῇ συναγωγῇ τῇ πρὸς τὸ ἔδαφος· ἔστι γὰρ ταύτῃ στενώἘκ τατον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="60">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:60" n="1">
+    <p rend="indent">τοῦ ζεύγους δὲ τῶν ἀετῶν θάτερον τῶν ἐγγόνων <milestone unit="page" resp="Bekker" n="835a"/> ἁλιαίετος γίνεται παραλλάξ, ἕως ἂν σύζυγα γένηται. Ἐκ δὲ ἁλιαιέτων φήνη γίνεται, ἐκ δὲ τούτων περκνοὶ καὶ γῦπες· οὗτοι δ᾽ οὐκέτι διορίζουσι περὶ τοὺς γῦπας, ἀλλὰ γεννῶσι τοὺς μεγάλους γῦπας· οὗτοι δ᾽ εἰσὶν ἄγονοι. Σημεῖον δὲ τοῦτο, διότι νεοττιὰν οὐδεὶς ἑώρακε γυπὸς μεγάλου.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="61">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:61" n="1">
+    <p rend="indent">Θαυμαστὸν δέ τί φασιν ἐν Ἰνδοῖς περὶ τὸν ἐκεῖ μόλυβδον συμβαίνειν· ὅταν γὰρ τακεὶς εἰς ὕδωρ καταχυθῇ ψυχρόν, ἐκπηδᾶν ἐκ τοῦ ὕδατος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="62">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:62" n="1">
+    <p rend="indent">Φασὶ τὸν Μοσσύνοικον χαλκὸν λαμπρότατον καὶ λευκότατον εἶναι, οὐ παραμιγνυμένου αὐτῷ κασσιτέρου, ἀλλὰ γῆς τινὸς αὐτοῦ γινομένης καὶ συνεψομένης αὐτῷ. Λέγουσι δὲ τὸν εὑρόντα τὴν κρᾶσιν μηδένα διδάξαι· διὸ τὰ προγεγονότα ἐν τοῖς τόποις χαλκώματα διάφορα, τὰ δ᾽ ἐπιγιγνόμενα οὐκέτι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="63">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:63" n="1">
+    <p rend="indent">Ἐν τῷ Πόντῳ λέγουσι τοῦ χειμῶνος τῶν ὀρνέων τινὰ εὑρίσκεσθαι φωλεύοντα, οὔτε ἀφοδεύοντα, οὔτε δὲ ὅταν τὰ πτερὰ αὐτῶν τίλλωσιν, αἰσθάνεσθαι, οὔτε ὅταν ἐπὶ τὸν ὀβελίσκον ἀναπαρῇ, ἀλλ᾽ ὅταν ὑπὸ τοῦ πυρὸς διακαυθῇ. Πολλοὺς δὲ καὶ τῶν ἰχθύων λέγουσι περικοπέντας καὶ περιτμηθέντας μὴ αἰσθάνεσθαι, ἀλλ᾽ ὅταν ὑπὸ τοῦ πυρὸς διαθερμανθῶσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="64">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:64" n="1">
+    <p rend="indent">Ἡ μέλιττα δοκεῖ τὰς τροπὰς σημαίνειν τῷ ἐπὶ τὰ ἔργα <pb facs="operaexrecension06arisuoft_0124"/> βαδίζειν, ᾧ οἱ μελιττοπόλοι σημείῳ χρῶνται· ἠρεμία γὰρ αὐτῶν γίνεται. Δοσκοῦσι δὲ καὶ οἱ τέττιγες ᾄδειν μετὰ τροπάς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="65">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:65" n="1">
+    <p rend="indent">Φασὶ δὲ καὶ τὸν ἐχῖνον ἄσιτον διαμένειν ἄχρι ἐνιαυτοῦ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="66">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:66" n="1">
+    <p rend="indent">Τὸν δὲ γαλεώτην, ὅταν ἐκδύσηται τὸ δέρμα, καθάπερ οἱ ὄφεις, ἐπιστραφέντα καταπίνειν· τηρεῖσθαι γὰρ ὑπὸ τῶν ἰατρῶν διὰ τὸ χρήσιμον εἶναι τοῖς ἐπιληπτικοῖς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="67">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:67" n="1">
+    <p rend="indent">Λέγουσι δὲ καὶ τὸ τῆς ἄρκτου στέαρ, ὅταν διαπεπηγὸς ᾖ διὰ τὸν χειμῶνα, καθ᾽ ὃν ἂν χρόνον ἐκείνη φωλεύῃ, αὐξάνεσθαι καὶ ὑπεραίρειν τὰ ἀγγεῖα ἐν οἷς ἂν ᾖ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="68">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:68" n="1">
+    <p rend="indent">Ἐν Κυρήνῃ φασὶ τοὺς ὄντας βατράχους ἀφώνους τὸ παράπαν εἶναι. Καὶ ἐν Μακεδονίᾳ ἐν τῇ τῶν Ἠμαθιωτῶν χώρᾳ τοὺς σῦς εἶναι μώνυχας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="69">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:69" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="835b"/> Ἐν Καππαδοκίᾳ φασὶν ἡμιόνους εἶναι γονίμους καὶ ἐν Κρήτῃ αἰγείρους καρποφόρους.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="70">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:70" n="1">
+    <p rend="indent">Φασὶ δὲ καὶ ἐν Σερίφῳ τοὺς βατράχους οὐκ ᾄδειν· ἐὰν δὲ εἰς ἄλλον τόπον μετενεχθῶσιν, ᾄδουσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="71">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:71" n="1">
+    <p rend="indent">Ἐν Ἰνδοῖς ἐν τῷ Κέρατι καλουμένῳ ἰχθύδιά φασι γίνεσθαι ἃ ἐν τῷ ξηρῷ πλανᾶται καὶ πάλιν ἀποτρέχει εἰς τὸν ποταμόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="72">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:72" n="1">
+<p>Φασὶ δὲ καὶ περὶ Βαβυλῶνά τινες ἰχθύας τινὰς μένειν ἐν ταῖς τρώγλαις ταῖς ἐχούσαις ὑγρότητα ξηραινομένου τοῦ ποταμοῦ· τούτους ἐξιόντας ἐπὶ τὰς ἅλως νέμεσθαι, καὶ βαδίζειν ἐπὶ τῶν πτερύγων, καὶ ἀνακινεῖν τὴν οὐράν· καὶ ὅταν διώκωνται, φεύγειν καὶ εἰσδύντας ἀντιπροσώπως ἵστασθαι· πολλάκις γὰρ προσιέναι τινὰς καὶ ἐρεθίζειν. Ἔχουσι δὲ τὴν κεφαλὴν ὁμοίαν βατράχῳ θαλαττίῳ, τὸ δὲ ἄλλο σῶμα κωβιῷ, βραγχία δὲ ὥσπερ καὶ οἱ ἄλλοι ἰχθύες.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="73">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:73" n="1">
+    <p rend="indent">Ἐν Ἡρακλείᾳ δὲ τῇ ἐν τῷ Πόντῳ καὶ ἐν Ῥηγίῳ γίνεσθαί <pb facs="operaexrecension06arisuoft_0125"/> φασιν ὀρυκτοὺς ἰχθῦς, τούτους δὲ μάλιστα κατὰ τὰ ποτάμια καὶ τὰ ἔνυδρα χωρία. Συμβαίνεν δέ ποτε ἀναξηραινομένων τῶν χωρίων κατά τινας χρόνους συστέλλεσθαι κατὰ γῆς, εἶτα μᾶλλον ἀναξηραινομένης διώκοντας τὴν ὑγρότητα διίεσθαι εἰς τὴν ὕλην, εἶτα ξηραινομένης διαμένειν ἐν τῇ ἰκμάδι, ὥσπερ τὰ ἐν ταῖς φωλεαῖς διαρκοῦντα. Ὅταν δὲ ἀνασκάπτωνται πρὶν ἢ τὰ ὕδατα ἐπιγενέσθαι, τότε κινεῖσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="74">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:74" n="1">
+<p>Φασὶ δὲ καὶ περὶ Παφλαγονίαν τοὺς ὀρυκτοὺς γίνεσθαι ἰχθῦς κατὰ βάθους, τούτους δὲ τῇ ἀρετῇ ἀγαθούς, οὔτε ὑδάτων φανερῶν πλησίον ὄντων οὔτε ποταμῶν ἐπιρρεόντων, ἀλλ᾽ αὐτῆς ζῳογονούσης τῆς γῆς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="75">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:75" n="1">
+    <p rend="indent">Τὰς ἐν Ἠπείρῳ ἐλάφους κατορύττειν φασὶ τὸ δεξιὸν κέρας, ὅταν ἀποβάλωσι, καὶ εἶναι πρὸς πολλὰ χρήσιμον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="76">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:76" n="1">
+<p>Καὶ τὴν λύγκα δέ φασι τὸ οὖρον κατακαλύπτειν διὰ τὸ πρὸς ἄλλα τε χρήσιμον εἶναι καὶ τὰς σφραγῖδας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="77">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:77" n="1">
+<p>Φασὶ δὲ καὶ τὴν φώκην ἐξεμεῖν τὴν πυτίαν, ὅταν ἁλίσκηται· εἶναι δὲ φαρμακῶδες καὶ τοῖς ἐπιλήπτοις χρήσιμον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="78">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:78" n="1">
+    <p rend="indent">Λέγεται δὲ περὶ τὴν Ἰταλίαν ἐν τῷ Κιρκαίῳ ὄρει φάρμακόν τι φύεσθαι θανάσιμον, ὃ τοιαύτην ἔχει τὴν δύναμιν ὥστε, ἂν προσρανθῇ τινί, παραχρῆμα πίπτειν ποιεῖ, <milestone unit="page" resp="Bekker" n="836a"/> καὶ τὰς τρίχας τὰς ἐν τῷ σώματι ἀπομαδᾶν, καὶ τὸ σύνολον τοῦ σώματος διαρρεῖν τὰ μέλη, ὥστε τὴν ἐπιφάνειαν τοῦ σώματος εἶναι τῶν ἀπολλυμένων ἐλεεινήν. Τοῦτο δέ φασι μέλλοντας διδόναι Κλεωνύμῳ τῷ Σπαρτιάτῃ Αὖλον τὸν Πευκέστιον καὶ Γάϊον φωραθῆναι, καὶ ἐξετασθέντας ὑπὸ Ταραντίνων θανατωθῆναι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="79">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:79" n="1">
+    <p rend="indent">Ἐν τῇ Διομηδείᾳ νήσῳ, ἣ κεῖται ἐν τῷ Ἀδρίᾳ, φασὶν <pb facs="operaexrecension06arisuoft_0126"/> ἱερόν τι εἶναι τοῦ Διομήδους θαυμαστόν τε καὶ ἅγιον, περὶ δὲ τὸ ἱερὸν κύκλῳ περικαθῆσθαι ὄρνιθας μεγάλους τοῖς μεγέθεσι, καὶ ῥύγχη ἔχοντας μεγάλα καὶ σκληρά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:79" n="2">
+<p>Τούτους λέγουσιν, ἐὰν μὲν Ἕλληνες ἀποβαίνωσιν εἰς τὸν τόπον, ἡσυχίαν ἔχειν, ἐὰν δὲ τῶν βαρβάρων τινὲς τῶν περιοίκων, ἀνίπτασθαι καὶ αἰωρουμένους καταράσσειν αὑτοὺς εἰς τὰς κεφαλὰς αὐτῶν, καὶ τοῖς ῥύγχεσι τιτρώσκοντας ἀποκτείνειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:79" n="3">
+<p>Μυθεύεται δὲ τούτους γενέσθαι ἐκ τῶν ἑταίρων τῶν τοῦ Διομήδους, ναυαγησάντων μὲν αὐτῶν περὶ τὴν νῆσον, τοῦ δὲ Διομήδους δολοφονηθέντος ὑπὸ τοῦ Αἰνέου τοῦ τότε βασιλέως τῶν τόπων ἐκείνων γενομένου.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="80">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:80" n="1">
+    <p rend="indent">Παρὰ τοῖς Ὀμβρικοῖς φασὶ τὰ βοσκήματα τίκτειν τρὶς τοῦ ἐνιαυτοῦ, καὶ τοὺς καρποὺς αὐτοῖς τὴν γῆν πολλαπλασίους ἀνίεσθαι τῶν καταβαλλομένων· εἶναι δὲ καὶ τὰς γυναῖκας πολυγόνους καὶ σπανίως ἓν τίκτειν, τὰς δὲ πλείστας δύο καὶ τρία.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="81">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:81" n="1">
+    <p rend="indent">Ἐν ταῖς Ἠλεκτρίσι νήσοις, αἳ κεῖνται ἐν τῷ μυχῳ τοῦ Ἀδρίου, φασὶν εἶναι δύο ἀνδριάντας ἀνακειμένους, τὸν μὲν κασσιτέρινον τὸν δὲ χαλκοῦν, εἰργασμένους τὸν ἀρχαῖον τρόπον. Λέγεται δὲ τούτους Δαιδάλου εἶναι ἔργα, ὑπόμνημα τῶν πάλαι, ὅτε Μίνω φεύγων ἐκ Σικελίας καὶ Κρήτης εἰς τούτους τοὺς τόπους παρέβαλε,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:81" n="2">
+<p>Ταύτας δὲ τὰς νήσους φασὶ προκεχωκέναι τὸν Ἠριδανὸν ποταμόν. Ἔστι δὲ καὶ λίμνη, ὡς ἔοικε, πλησίον τοῦ ποταμοῦ, ὕδωρ ἔχουσα θερμόν· ὀσμὴ δ᾽ ἀπ᾽ αὐτῆς βαρεῖα καὶ χαλεπὴ ἀποπνεῖ, καὶ οὔτε ζῷον οὐδὲν πίνει ἐξ αὐτῆς οὔτε ὄρνεον ὑπερίπταται, ἀλλὰ πίπτει καὶ ἀποθνήσκει. Ἔχει δὲ τὸν μὲν κύκλον <milestone unit="page" resp="Bekker" n="836b"/> σταδίων διακοσίων, τὸ δὲ εὖρος ὡς δέκα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:81" n="3">
+<p>Μυθεύουσι δὲ <pb facs="operaexrecension06arisuoft_0127"/> οἱ ἐγχώριοι Φαέθοντα κεραυνωθέντα πεσεῖν εἰς ταύτην τὴν λίμνην. Εἶναι δ’ ἐν αὐτῇ αἰγείρους πολλάς, ἐξ ὧν ἐκπίπτειν τὸ καλούμενον ἤλεκτρον. Τοῦτο δὲ λέγουσιν ὅμοιον εἶναι κόμμι, ἀποσκληρύνεσθαι δὲ ὡσανεὶ λίθον, καὶ συλλεγόμενον ὑπὸ τῶν ἐγχωρίων διαφέρεσθαι εἰς τοὺς Ἕλληνας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:81" n="4">
+<p>Εἰς ταύτας οὖν τὰς νήσους Δαίδαλόν φασιν ἐλθεῖν, καὶ κατασχόντα αὐτὰς ἀναθεῖναι ἐν μιᾷ αὐτῶν τὴν αὑτοῦ εἰκόνα, καὶ τὴν τοῦ υἱοῦ Ἰκάρου ἐν τῇ ἑτέρᾳ. Ὕστερον δ᾽ ἐπιπλευσάντων ἐπ᾽ αὐτοὺς Πελασγῶν τῶν ἐκπεσόντων ἐξ Ἄργους φυγεῖν τὸν Δαίδαλον, καὶ ἀφικέσθαι εἰς Ἴκαρον τὴν νῆσον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="82">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:82" n="1">
+    <p rend="indent">Ἐν τῇ Σικελίᾳ περὶ τὴν καλουμένην Ἔνναν σπήλαιόν τι λέγεται εἶναι, περὶ ὃ κύκλῳ πεφυκέναι φασὶ τῶν τε ἄλλων ἀνθέων πλῆθος ἀνὰ πᾶσαν ὥραν, πολὺ δὲ μάλιστα τῶν ἴων ἀπέραντόν τινα τόπον συμπεπληρῶσθαι, ἃ τὴν σύνεγγυς χώραν εὐωδίας πληροῖ, ὥστε τοὺς κυνηγοῦντας, τῶν κυνῶν κρατουμένων ὑπὸ τὴς ὀδμῆς, ἐξαδυνατεῖν τοὺς λαγὼς ἰχνεύειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:82" n="2">
+<p>Διὰ δὲ τούτου τοῦ χάσματος ἀσυμφανής ἐστιν ὑπόνομος, καθ᾽ ὅν φασι τὴν ἁρπαγὴν ποιήσασθαι τὸν Πλούτωνα τῆς Κόρης. Εὑρίσκεσθαι δέ φασιν ἐν τούτῳ τῷ τόπῳ πυροὺς οὔτε τοῖς ἐγχωρίοις ὁμοίους οἷς χρῶνται οὔτε ἄλλοις ἐπεισάκτοις, ἀλλ᾽ ἰδιότητά τινα μεγάλην ἔχοντας. Καὶ τούτῳ σημειοῦνται τὸ πρώτως παρ᾽ αὑτοῖς φανῆναι πύρινον καρπόν. Ὅθεν καὶ τῆς Δήμητρος ἀντιποιοῦνται, φάμενοι παρ᾽ αὑτοῖς τὴν θεὸν γεγονέναι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="83">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:83" n="1">
+    <p rend="indent">Ἐν Κρήτῃ λύκους καὶ ἄρκτους τούς τ᾽ ἔχεις, ὁμοίως δὲ καὶ τὰ παραπλήσια τούτοις θηρία οὔ φασι γίνεσθαι διὰ τὸ τὸν Δία γενέσθαι ἐν αὐτῇ.</p></div></div><pb facs="operaexrecension06arisuoft_0128"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="84">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:84" n="1">
+    <p rend="indent">Ἐν τῇ θαλάσσῃ τῇ ἔξω Ἡρακλείων στηλῶν φασὶν ὑπὸ Καρχηδονίων νῆσον εὑρεθῆναι ἐρήμην, ἔχουσαν ὕλην τε παντοδαπὴν καὶ ποταμοὺς πλωτούς, καὶ τοῖς λοιποῖς καρποῖς θαυμαστήν, ἀπέχουσαν δὲ πλειόνων ἡμερῶν πλοῦν· ἐν ᾗ ἐπιμισγομένων τῶν Καρχηδονίων πολλάκις διὰ τὴν εὐδαιμονίαν, <milestone unit="page" resp="Bekker" n="837a"/> ἐνίων γε μὴν καὶ οἰκούντων, τοὺς προεστῶτας τῶν Καρχηδονίων ἀπείπασθαι θανάτῳ ζημιοῦν τοὺς εἰς αὐτὴν πλευσομένους, καὶ τοὺς ἐνοικοῦντας πάντας ἀφανίσαι, ἵνα μὴ διαγγέλλωσι, μηδὲ πλῆθος συστραφὲν ἐπ᾽ αὐτῶν ἐπὶ τὴν νῆσον κυρίας τύχῃ καὶ τὴν τῶν Καρχηδονίων εὐδαιμονίαν ἀφέληται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="85">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:85" n="1">
+    <p rend="indent">Ἐκ τῆς Ἰταλίας φασὶν ἕως τῆς Κελτικῆς καὶ Κελτολιγύων καὶ Ἰβήρων εἶναί τινα ὁδὸν Ἡράκλειαν καλουμένην, δι᾽ ἧς ἐάν τε Ἕλλην ἐάν τε ἐγχώριός τις πορεύηται, τηρεῖσθαι ὑπὸ τῶν παροικούντων, ὅπως μηδὲν ἀδικηθῇ· τὴν γὰρ ζημίαν ἐκτίνειν καθ᾽ οὓς ἂν γένηται τὸ ἀδίκημα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="86">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:86" n="1">
+    <p rend="indent">Φασὶ δὲ παρὰ τοῖς Κελτοῖς φάρμακον ὑπάρχειν τὸ καλούμενον ὑπ᾽ αὐτῶν τοξικόν· ὃ λέγουσιν οὕτω ταχεῖαν ποιεῖν τὴν φθορὰν ὥστε τῶν Κελτῶν τοὺς κυνηγοῦντας, ὅταν ἔλαφον ἢ ἄλλο τι ζῷον τοξεύσωσιν, ἐπιτρέχοντας ἐκ σπουδῆς ἐκτέμνειν τῆς σαρκὸς τὸ τετρωμένον πρὸ τοῦ τὸ φάρμακον διαδῦναι, ἅμα μὲν τῆς προσφορᾶς ἕνεκα, ἅμα δὲ ὅπως μὴ σαπῇ τὸ ζῷον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:86" n="2">
+<p>Εὑρῆσθαι δὲ τούτῳ λέγουσιν ἀντιφάρμακον τὸν τῆς δρυὸς φλοιόν· οἱ δ᾽ ἕτερόν τι φύλλον, ὃ καλοῦσι κοράκιον διὰ τὸ κατανοηθῆναι ὑπ᾽ αὐτῶν κόρακα, γευσάμενον τοῦ φαρμάκου καὶ κακῶς διατιθέμενον, ἐπὶ τὸ φύλλον ὁρμήσαντα τοῦτο καὶ καταπιόντα παύσασθαι τῆς ἀλγηδόνος.</p></div></div><pb facs="operaexrecension06arisuoft_0129"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="87">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:87" n="1">
+    <p rend="indent">Ἐν τῇ Ἰβηρίᾳ λέγουσι τῶν δρυμῶν ἐμπρησθέντων ὑπό τινων ποιμένων, καὶ τῆς γῆς διαθερμανθείσης ὑπὸ τῆς ὕλης, φανερῶς ἀργύρῳ ῥεῦσαι τὴν χώραν, καὶ μετὰ χρόνον σεισμῶν ἐπιγενομένων καὶ τῶν τόπων ῥαγέντων πάμπληθες συναχθῆναι ἀργύριον, ὃ δὴ καὶ τοῖς Μασσαλιώταις πρόσοδον ἐποίησεν οὐ τὴν τυχοῦσαν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="88">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:88" n="1">
+    <p rend="indent">Ἐν ταῖς Γυμνησίαις ταῖς κειμέναις νήσοις κατὰ τὴν Ἰβηρίαν, ἃς μετὰ τὰς λεγομένας ἑπτὰ μεγίστας λέγουσιν εἶναι, φασὶν ἔλαιον μὴ γίνεσθαι ἐξ ἐλαιῶν, ἐκ δὲ τῆς τερμίνθου κομιδῇ πολὺ καὶ εἰς πάντα ἁρμόττον. Λέγουσι δὲ οὕτω τοὺς οἰκοῦντας αὐτὰς Ἴβηρας καταγύνους εἶναι ὥστε ἀντὶ ἑνὸς σώματος θηλυκοῦ διδόναι τοῖς ἐμπόροις τέτταρα <milestone unit="page" resp="Bekker" n="837b"/> καὶ πέντε σώματα ἄρρενα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:88" n="2">
+<p>Στρατευόμενοι δὲ παρὰ Καρχηδονίοις τοὺς μισθοὺς ὅταν λάβωσιν, ἄλλο μέν, ὡς ἔοικεν, οὐδὲν ἀγοράζουσι, γυναῖκας δέ. Οὐ γὰρ χρυσίον οὐδὲ ἀργύριον ἔξεστι παρ᾽ αὐτοῖς οὐδένα ἔχειν. Ἐπιλέγεται δέ τι τοιοῦτον ἐπὶ τῷ κωλύειν χρήματα εἰσάγειν αὐτούς, ὅτι τὴν στρατείαν Ἡρακλῆς ἐποιήσατο ἐπὶ τὴν Ἰβηρίαν διὰ τοὺς τῶν ἐνοικούντων πλούτους.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="89">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:89" n="1">
+    <p rend="indent">Ἐν τῇ τῶν Μασσαλιωτῶν χώρᾳ περὶ τὴν Λιγυστικήν φασιν εἶναί τινα λίμνην, ταύτην δὲ ἀναζεῖν καὶ ὑπερχεῖσθαι, καὶ τοσούτους ἰχθῦς ἐκβάλλειν τὸ πλῆθος ὥστε μὴ πιστεύειν. Ἐπειδὰν δὲ οἱ ἐτησίαι πνεύσωσιν, ἐπιχώννυσθαι τὸ ἔδαφος ἐπ᾽ αὐτὴν, καὶ τοιοῦτον κονιορτὸν γίνεσθαι αὐτόθι, καὶ ἀποστερεοῦσθαι τὴν ἐπιφάνειαν αὐτῆς ὡσανεὶ ἔδαφος. Τοῖς δὲ τριόδουσι διακόπτοντας τοὺς ἐγχωρίους ἑτοίμως ὅσους ἂν βούλωνται ἰχθύας ἐξαίρειν ἐξ αὐτῆς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="90">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:90" n="1">
+    <p>Λέγεται δέ τινας τῶν Λιγύων οὕτω σφενδονᾶν εὖ ὥστε, ὅταν πλείους ἴδωσιν <pb facs="operaexrecension06arisuoft_0130"/> ὄρνιθας, διερεθίζεσθαι πρὸς ἀλλήλους ποῖον ἕκαστος παρα σκευάζεται βαλεῖν, ὡς ἑτοίμως ἁπάντων τευξομένων.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="91">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:91" n="1">
+<p>Ἴδιον δέ φασι καὶ τοῦτο παρ᾽ αὐτοῖς εἶναι· αἱ γυναῖκες ἅμα ἐργαζὁμεναι τίκτουσιν, καὶ τὸ παιδίον ὕδατι περικλύσασαι παραχρῆμα σκάπτουσι καὶ σκάλλουσι καὶ τἆλλα οἰκονομοῦσιν ἃ καὶ μὴ τικτούσαις αὐταῖς ἦν πρακτέον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="92">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:92" n="1">
+<p>Θαῦμα δὲ καὶ τοῦτο παρὰ τοῖς Λίγυσι· φασὶ γὰρ παρ᾽ αὐτοῖς ποταμὸν εἶναι οὗ τὸ ῥεῦμα αἴρεται μετέωρον καὶ ῥεῖ, ὥστε τοὺς πέραν μὴ ὁρᾶσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="93">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:93" n="1">
+    <p rend="indent">Ἐν δὲ τῇ Τυρρηνίᾳ λέγεταί τις νῆσος Αἰθάλεια ὀνομαζομένη, ἐν ᾗ ἐκ τοῦ αὐτοῦ μετάλλου πρότερον μὲν χαλκὸς ὠρύσσετο, ἐξ οὗ φασὶ πάντα κεχαλκευμένα παρ᾽ αὐτοῖς εἶναι, ἔπειτα μηκέτι εὑρίσκεσθαι, χρόνου δὲ διελθόντος πολλοῦ φανῆναι ἐκ τοῦ αὐτοῦ μετάλλου σίδηρον, ᾧ νῦν ἔτι χρῶνται Τυρρηνοὶ οἱ τὸ καλούμενον Ποπλώνιον οἰκοῦντες.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="94">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:94" n="1">
+<p>Ἔστι δέ τις ἐν τῇ Τυρρηνίᾳ πόλις Οἰναρέα καλουμένη, ἣν ὑπερβολῇ φασὶν ὀχυρὰν εἶναι· ἐν γὰρ μέσῃ αὐτῇ λόφος ἐστὶν ὑψηλός, τριάκοντα σταδίους ἀνέχων ἄνω, καὶ κάτω ὕλην παντοδαπὴν καὶ ὕδατα, Φοβουμένους οὖν <milestone unit="page" resp="Bekker" n="838a"/> τοὺς ἐνοικοῦντας λέγουσι μή τις τύραννος γένηται, προΐστασθαι αὑτῶν τοὺς ἐκ τῶν οἰκετῶν ἠλευθερωμένους· καὶ οὗτοι ἄρχουσιν αὐτῶν, κατ᾽ ἐνιαυτὸν δ᾽ ἄλλους ἀντικαθιστάναι τοιούτους.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="95">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:95" n="1">
+    <p rend="indent">Ἐν τῇ Κύμῃ τῇ περὶ τὴν Ἰταλίαν δείκνυταί τις, ὡς ἔοικε, θάλαμος κατάγειος Σιβύλλης τῆς χρησμολόγου, ἣν πολυχρονιωτάτην γενομένην παρθένον διαμεῖναί φασιν, οὖσαν μὲν Ἐρυθραίαν, ὑπό τινων δὲ τὴν Ἰταλίαν κατοικούνδρων, <pb facs="operaexrecension06arisuoft_0131"/> των Κυμαίαν, ὑπὸ δέ τινων Μελάγκραιραν καλουμένην. Τοῦτον δὲ τὸν τόπον λέγεται κυριεύεσθαι ὑπὸ Λευκανῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:95" n="2">
+<p>Εἶναι δὲ λέγουσιν ἐν ἐκείνοις τοῖς τόποις περὶ τὴν Κύμην ποταμόν τινα Κετὸν ὀνομαζόμενον, εἰς ὅν φασι τὸν πλείω χρόνον τὸ ἐμβληθὲν πρῶτον περιφύεσθαι καὶ τέλος ἀπολιθοῦσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="96">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:96" n="1">
+    <p rend="indent">Ἀλκιμένει τῷ Συβαρίτῃ φασὶ κατασκευασθῆναι ἱμάτιον τοιοῦτον τῇ πολυτελείᾳ, ὥστε προτίθεσθαι αὐτὸ ἐπὶ Λακινίῳ τῇ πανηγύρει τῆς Ἥρας, εἰς ἣν συμπορεύονται πάντες Ἰταλιῶται, τῶν τε δεικνυμένων μάλιστα πάντων ἐκεῖνο θαυμάζεσθαι· οὗ φασὶ κυριεύσαντα Διονύσιον τὸν πρεσβύτερον ἀποδόσθαι Καρχηδονίοις ἑκατὸν καὶ εἴκοσι ταλάντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:96" n="2">
+<p>Ἧν δ᾽ αὐτὸ μὲν ἁλουργές, τῷ δὲ μεγέθει πεντεκαιδεκάπηχυ, ἑκατέρωθεν δὲ διείληπτο ζῳδίοις ἐνυφασμένοις, ἄνωθεν μὲν Σούσοις, κάτωθεν δὲ Πέρσαις· ἀνὰ μέσον δὲ ἦν Ζεύς, Ἥρα, Θέμις, Ἀθηνᾶ, Ἀπόλλων, Ἀφροδίτη. Παρὰ δ᾽ ἑκάτερον πέρας Ἀλκιμένης ἦν, ἑκατέρωθεν δὲ Σύβαρις.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="97">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:97" n="1">
+    <p rend="indent">Περὶ τὴν ἄκραν τὴν Ἰαπυγίαν φασὶν ἔκ τινος τόπου, ἐν ᾧ συνέβη γενέσθαι, ὡς μυθολογοῦσιν, Ἡρακλεῖ πρὸς γίγαντας μάχην, ῥεῖν ἰχῶρα πολὺν καὶ τοιοῦτον ὥστε διὰ τὸ βάρος τῆς ὀσμῆς ἄπλουν εἶναι τὴν κατὰ τὸν τόπον θάλασσαν. Λέγουσι δὲ πολλαχοῦ τῆς Ἰταλίας Ἡρακλέους εἶναι πολλὰ μνημόσυνα ἐν ταῖς ὁδοῖς ἃς ἐκεῖνος ἐπορεύθη. Περὶ δὲ Πανδοσίαν τῆς Ἰαπυγίας ἴχνη τοῦ θεοῦ δείκνυται, ἐφ᾽ ἃ οὐδενὶ ἐπιβατέον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="98">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:98" n="1">
+<p>Ἔστι καὶ περὶ ἄκραν Ἰαπυγίαν <milestone unit="page" resp="Bekker" n="838b"/> λίθος ἁμαξιαῖος, ὃν ὑπ᾽ ἐκείνου ἀρθέντα μετατεθῆναί φασιν, ἀφ᾽ ἑνὸς δὲ δακτύλου κινεῖσθαι συμβέβηκεν.
+</p></div></div><pb facs="operaexrecension06arisuoft_0132"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="99">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:99" n="1">
+    <p rend="indent">Ἐν τῇ τῶν Ὀρχομενίων πόλει τῇ ἐν Βοιωτοῖς φανῆναί φασιν ἀλώπεκα, ἣν κυνὸς διώκοντος εἰσδῦναι εἴς τινα ὑπόνομον, καὶ τὸν κύνα συνεισδῦναι αὐτῇ, καὶ ὑλακτοῦντα ἦχον μέγαν ποιεῖν ὡσανεὶ εὐρυχωρίας τινὸς ὑπαρχούσης αὐτῷ· τοὺς δὲ κυνηγέτας ἔννοιαν λαβόντας δαιμονίαν, ἀναρρήξαντας τὴν εἴσδυσιν συνῶσαι καὶ αὐτούς· ἰδόντας δὲ διά τινων ὀπῶν εἰσερχόμενον ἔσω τὸ φῶς, εὐσυνόπτως τὰ λοιπὰ θεάσασθαι, καὶ ἐλθόντας ἀπαγγεῖλαι τοῖς ἄρχουσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="100">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:100" n="1">
+    <p rend="indent">Ἐν τῇ Σαρδοῖ τῇ νήσῳ κατασκευάσματά φασιν εἶναι εἰς τὸν Ἑλληνικὸν τρόπον διακείμενα τὸν ἀρχαῖον, ἀλλα τε πολλὰ καὶ καλὰ καὶ θόλους περισσοῖς τοῖς ῥυθμοῖς κατεξεσμένους· τούτους δ᾽ ὑπὸ Ἰολάου τοῦ Ἰφικλέους κατασκευασθῆναι, ὅτε τοὺς Θεσπιάδας τοὺς ἐξ Ἡρακλέους παραλαβὼν ἔπλευσεν εἰς ἐκείνους τοὺς τόπους ἐποικήσων, ὡς κατὰ συγγένειαν αὑτῷ τὴν Ἡρακλέους προσήκοντας διὰ τὸ πάσης τῆς πρὸς ἑσπέραν κύριον</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:100" n="2">
+<p>Ἡρακλέα γενέσθαι. Αὕτη δὲ ἡ νῆσος, ὡς ἔοικεν, ἐκαλεῖτο μὲν πρότερον Ἰχνοῦσσα διὰ τὸ ἐσχηματίσθαι τῇ περιμέτρῳ ὁμοιότατα ἀνθρωπίνῳ ἴχνει, εὐδαίμων δὲ καὶ πάμφορος ἔμπροσθεν λέγεται εἶναι· τὸν γὰρ Ἀρισταῖον, ὅν φασι γεωργικώτατον εἶναι ἐπὶ τῶν ἀρχαίων, τοῦτον αὐτῶν ἄρξαι μυθολογοῦσιν, ὑπὸ μεγάλων ὀρνέων ἔμπροσθεν καὶ πολλῶν κατεχομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:100" n="3">
+<p>Νῦν μὲν οὖν οὐκέτι φέρει τοιοῦτον οὐδὲν διὰ τὸ κυριευθεῖσαν ὑπὸ Καρχηδονίων ἐκκοπῆναι πάντας τοὺς χρησίμους εἰς προσφορὰν καρπούς, καὶ θάνατον τὴν ζημίαν τοῖς ἐγχωρίοις τετάχθαι, ἐάν τις τῶν τοιούτων τι ἀναφυτεύῃ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="101">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:101" n="1">
+    <p rend="indent">Ἐν μιᾷ τῶν ἑπτὰ νήσων τῶν Αἰόλου καλουμένων, ἣ καλεῖται <pb facs="operaexrecension06arisuoft_0133"/>  Λιπάρα, τάφον εἶναι μυθολογοῦσι, περὶ οὗ καὶ ἄλλα μὲν πολλὰ καὶ τερατώδη λέγουσι, τοῦτο δ᾽ ὅτι οὐκ ἀσφαλές ἐστι προσελθεῖν πρὸς ἐκεῖνον τὸν τόπον τῆς νυκτός, συμφωνοῦσιν· ἐξακούεσθαι γὰρ τυμπάνων καὶ κυμβάλων <milestone unit="page" resp="Bekker" n="839a"/> ἦχον γέλωτά τε μετὰ θορύβου καὶ κροτάλων ἐναργῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:101" n="2">
+<p>Λέγουσι δέ τι τερατωδέστερον γεγονέναι περὶ τὸ σπήλαιον· πρὸ ἡμέρας γὰρ ἐγκοιμηθῆναί τινα ἐν αὐτῷ οἰνωμένον, καὶ τοῦτον ὑπὸ τῶν οἰκετῶν ζητούμενον ἐφ᾽ ἡμέρας τρεῖς διατελέσαι, τῇ δὲ τετάρτῃ εὑρεθέντα ὡς νεκρὸν ἀποκομισθῆναι ὑπὸ τῶν οἰκείων εἰς τὸν ἴδιον τάφον, καὶ τῶν νομιζομένων τυχόντα πάντων ἐξαίφνης ἀναστῆναι, καὶ διηγεῖσθαι τὰ καθ᾽ ἑαυτὸν συμβεβηκότα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:101" n="3">
+<p>Τοῦτο μὲν οὖν ἡμῖν φαίνεται μυθωδέστερον· ὅμως μέντοι ἔδει μὴ παραλιπεῖν ἀμνημόνευτον αὐτό, τῶν περὶ τὸν τόπον ἐκεῖνον τὴν ἀναγραφὴν ποιούμενον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="102">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:102" n="1">
+    <p rend="indent">Περὶ τὴν Κύμην τὴν ἐν Ἰταλίᾳ λίμνη ἐστὶν ἡ προσαγορευομένη ἄορνος, αὐτὴ μέν, ὡς ἔοικεν, οὐκ ἔχουσά τι θαυμαστόν· περικεῖσθαι γὰρ λέγουσι περὶ αὐτὴν λόφους κύκλῳ, τὸ ὕψος οὐκ ἐλάσσους τριῶν σταδίων, καὶ αὐτὴν εἶναι τῷ σχήματι κυκλοτερῆ, τὸ τὸ βάθος ἔχουσαν ἀνυπέρβλητον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:102" n="2">
+<p>Ἐκεῖνο δὲ θαυμάσιον φαίνεται· ὑπερκειμένων γὰρ αὐτῇ πυκνῶν δένδρων, καί τινων ἐν αὐτῇ κατακεκλιμένων, οὐδὲν ἔστιν ἰδεῖν φύλλον ἐπὶ τοῦ ὕδατος ἐφεστηκός, ἀλλ᾽ οὕτω καθαρώτατόν ἐστι τὸ ὕδωρ ὥστε τοὺς θεωμένους θαυμάζειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:102" n="3">
+<p>Περὶ δὲ τὴν ἀπέχουσαν ἤπειρον αὐτῆς οὐ πολὺ θερμὸν ὕδωρ πολλαχόθεν ἐκπίπτει, καὶ ὁ τόπος ἅπας καλεῖται Πυριφλεγέθων. Ὅτι δὲ οὐδὲν διίπταται ὄρνεον αὐτήν, ψεῦδος· οἱ γὰρ παραγενόμενοι λέγουσι πλῆθός τι κύκνων ἐν αὐτῇ γίνεσθαι.</p></div></div><pb facs="operaexrecension06arisuoft_0134"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="103">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:103" n="1">
+    <p rend="indent">Φασὶ τὰς Σειρηνούσας νήσους κεῖσθαι μὲν ἐν τῇ Ἰταλίᾳ περὶ τὸν πορθμὸν ἐπ᾽ αὐτῆς τῆς ἄκρας, ὃς κεῖται πρὸ τοῦ προπεπτωκότος τόπου καὶ διαλαμβάνοντος τοῖς κόλποις τόν τε περιέχοντα τὴν Κύμην καὶ τὸν διειληφότα τὴν Ποσειδωνίαν καλουμένην· ἐν ᾧ καὶ νεὼς αὐτῶν ἵδρυται, καὶ τιμῶνται καθ᾽ ὑπερβολὴν ὑπὸ τῶν περιοίκων θυσίαις ἐπιμελῶς· ὧν καὶ τὰ ὀνόματα μνημονεύοντες καλοῦσι τὴν μὲν Παρθενόπην, τὴν δὲ Λευκωσίαν, τὴν δὲ τρίτην Λίγειαν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="104">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:104" n="1">
+    <p rend="indent">Λέγεται δὲ μεταξὺ τῆς Μεντορικῆς καὶ τῆς Ἰστριανῆς <milestone unit="page" resp="Bekker" n="839b"/> ὄρος τι εἶναι τὸ καλούμενον Δέλφιον, ἔχον λόφον ὑψηλόν. Ἐπὶ τοῦτον τὸν λόφον ὅταν ἀναβαίνωσιν οἱ Μέντορες οἱ ἐπὶ τοῦ Ἀδρίου οἰκοῦντες, ἀποθεωροῦσιν, ὡς ἔοικε, τὰ εἰς τὸν Πόντον εἰσπλέοντα πλοῖα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:104" n="2">
+<p>Εἶναι δὲ καί τινα τόπον ἐν τοῖς ἀνὰ μέσον διαστήμασιν, εἰς ὃν ἀγορᾶς κοινῆς γινομένης πωλεῖσθαι παρὰ μὲν τῶν ἐκ τοῦ Πόντου ἐμπόρων ἀναβαινόντων τὰ Λέσβια καὶ Χῖα καὶ Θάσια, παρὰ δὲ τῶν ἐκ τοῦ Ἀδρίου τοὺς Κερκυραϊκοὺς ἀμφορεῖς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="105">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:105" n="1">
+    <p rend="indent">Φασὶ δὲ καὶ τὸν Ἴστρον ῥέοντα ἐκ τῶν Ἑρκυνίων καλουμένων δρυμῶν σχίζεσθαι, καὶ τῇ μὲν εἰς τὸν Πόντον ῥεῖν,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:105" n="2">
+    <p>τῇ δὲ εἰς τὸν Ἀδρίαν ἐκβάλλειν. Σημεῖον δὲ οὐ μόνον ἐν τοῖς νῦν καιροῖς ἑωράκαμεν, ἀλλὰ καὶ ἐπὶ τῶν ἀρχαίων μᾶλλον, οἷον τὰ ἐκεῖ ἄπλωτα εἶναι· καὶ γὰρ Ἰάσονα τὸν μὲν εἴσπλουν κατὰ Κυανέας, τὸν δὲ ἐκ τοῦ Πόντου ἔκπλουν κατὰ τὸν Ἴστρον ποιήσασθαί φασι· καὶ φέρουσιν ἄλλα τε τεκμήρια οὐκ ὀλίγα, καὶ κατὰ μὲν τὴν χώραν βωμοὺς ὑπὸ τοῦ Ἰάσονος ἀνακειμένους δεικνύουσιν, ἐν δὲ μιᾷ τῶν νήσων τῶν ἐν τῷ Ἀδρίᾳ ἱερὸν Ἀρτέμιδος ὑπὸ Μηδείας <pb facs="operaexrecension06arisuoft_0135"/> ἱδρυμένον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:105" n="3">
+<p>Ἔτι δὲ λέγουσιν ὡς οὐκ ἂν παρέπλευσε τὰς Πλαγκτὰς καλουμένας, εἰ μὴ ἐκεῖθεν ἀπέπλει. Καὶ ἐν τῇ Αἰθαλείᾳ δὲ νήσῳ, τῇ κειμένῃ ἐν τῷ Τυρρηνικῷ πελάγει, ἄλλα τε δεικνύουσι μνημεῖα τῶν ἀριστέων καὶ τὸ ἐπὶ τῶν ψήφων δὲ λεγόμενον· παρὰ γὰρ τὸν αἰγιαλὸν ψήφους φασὶν εἶναι ποικίλας, ταύτας δ᾽ οἱ Ἕλληνες οἱ τὴν νῆσον οἰκοῦντες λέγουσι τὴν χροιὰν λαβεῖν ἀπὸ τῶν στλεγγισμάτων ὧν ἐποιοῦντο ἀλειφόμενοι· ἀπὸ ἐκείνων γὰρ τῶν χρόνων οὔτε πρότερον ἑωρᾶσθαι μυθολογοῦσι τοιαύτας ψήφους οὔθ᾽ ὕστερον ἐπιγενομένας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:105" n="4">
+<p>Ἔτι δὲ τούτων φανερώτερα σημεῖα λέγουσιν, ὅτι οὐ διὰ τῶν Συμπληγάδων ἐγένετο ὁ ἔκπλους, αὐτῷ τῷ ποιητῇ ἐν ἐκείνοις τοῖς τόποις μάρτυρι χρώμενοι. Τὴν γὰρ δυσχέρειαν τοῦ κινδύνου ἐμφανίζοντα λέγειν ὅτι οὐκ ἔστι παραπλεῦσαι τὸν τόπον,
+<quote rend="blockquote">ἀλλά θ᾽ ὁμοῦ πίνακάς τε νεῶν καὶ σώματα φωτῶν
+<lb/>κύμαθ᾽ ἁλὸς φορέουσι πυρός τ᾽ ὀλοοῖο θύελλαι.</quote></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:105" n="5">
+<p><milestone unit="page" resp="Bekker" n="840a"/> Περὶ μὲν οὖν τὰς Κυανέας οὐ λέγεται πῦρ ἀναπέμπειν, περὶ δὲ τὸν πορθμὸν τὸν διαλαμβάνοντα τὴν Σικελίαν, ἐφ᾽ ἑκάτερα κειμένων τῶν τοῦ πυρὸς ἀναφυσημάτων, καὶ τῆς τε νήσου συνεχῶς καιομένης, καὶ τοῦ περὶ τὴν Αἴτνην ῥεύματος πολλάκις τὴν χώραν ἐπιδεδραμηκότος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="106">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:106" n="1">
+    <p rend="indent">Ἐν Τάραντι ἐναγίζειν κατά τινας χρόνους φασὶν Ἀτρείδαις καὶ Τυδείδαις καὶ Αἰακίδαις καὶ Λαερτιάδαις, καὶ Ἀγαμεμνονίδαις δὲ χωρὶς θυσίαν ἐπιτελεῖν ἐν ἄλλῃ ἡμέρᾳ ἰδίᾳ, ἐν ᾗ νόμιμον εἶναι ταῖς γυναιξὶ μὴ γεύσασθαι τῶν ἐκείνοις θυομένων. Ἔστι δὲ καὶ Ἀχιλλέως νεὼς παρ᾽ αὐτοῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:106" n="2">
+<p>Λέγεται δὲ μετὰ τὸ παραλαβεῖν τοὺς Ταραντίνους Ἡράκλειαν τὸν τόπον καλεῖσθαι ὃν νῦν κατοικοῦσιν, ἐν δὲ τοῖς ἄνω χρόνοις <pb facs="operaexrecension06arisuoft_0136"/> τῶν Ἰώνων κατεχόντων Πλεῖον· ἔτι δὲ ἐκείνων ἔμπροσθεν ὑπὸ τῶν Τρώων τῶν κατασχόντων αὐτὴν Σίγεον ὠνομάσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="107">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:107" n="1">
+<p>Παρὰ δὲ τοῖς Συβαρίταις λέγεται Φιλοκτήτην τιμᾶσθαι. Κατοικῆσαι γὰρ αὐτὸν ἐκ Τροίας ἀνακομισθέντα τὰ καλούμενα Μύκαλλα τῆς Κροτωνιάτιδος, ἅ φασιν ἀπέχειν ἑκατὸν εἴκοσι σταδίων, καὶ ἀναθεῖναι ἱστοροῦσι τὰ τόξα τὰ Ἡράκλεια αὐτὸν εἰς τὸ τοῦ Ἀπόλλωνος τοῦ ἁλίου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:107" n="2">
+<p>Ἐκεῖθεν δέ φασι τοὺς Κροτωνιάτας κατὰ τὴν ἐπικράτειαν ἀναθεῖναι αὐτὰ εἰς τὸ Ἀπολλώνιον τὸ παρ᾽ αὑτοῖς. Λέγεται δὲ καὶ τελευτήσαντα ἐκεῖ κεῖσθαι αὐτὸν παρὰ τὸν ποταμὸν τὸν Σύβαριν, βοηθήσαντα Ῥοδίοις τοῖς μετὰ Τληπολέμου εἰς τοὺς ἐκεῖ τόπους ἀπενεχθεῖσι καὶ μάχην συνάψασι πρὸς τοὺς ἐνοικοῦντας τῶν βαρβάρων ἐκείνην τὴν χώραν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="108">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:108" n="1">
+    <p rend="indent">Περὶ δὲ τὴν Ἰταλίαν τὴν καλουμένην Γαργαρίαν, ἐγγὺς Μεταποντίου, Ἀθηνᾶς ἱερὸν εἶναί φασιν Ἑλληνίας, ἔνθα τὰ τοῦ Ἐπειοῦ λέγουσιν ἀνακεῖσθαι ὄργανα, ἃ εἰς τὸν δούρειον ἵππον ἐποίησεν, ἐκείνου τὴν ἐπωνυμίαν ἐπιθέντος. Φανταζομένην γὰρ αὐτῷ τὴν Ἀθηνᾶν κατὰ τὸν ὕπνον ἀξιοῦν ἀναθεῖναι τὰ ὄργανα, καὶ διὰ τοῦτο βραδυτέρας τυγχάνοντα τῆς ἀναγωγῆς εἱλεῖσθαι ἐν τῷ τόπῳ, μὴ δυνάμενον ἐκπλεῦσαι· ὅθεν Ἑλληνίας Ἀθηνᾶς τὸ ἱερὸν προσαγορεύεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="109">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:109" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="840b"/> Λέγεται περὶ τὸν ὀνομαζόμενον τῆς Δαυνίας τόπον ἱερὸν εἶναι Ἀθηνᾶς Ἀχαΐας καλούμενον, ἐν ᾧ δὴ πελέκεις χαλκοῦς καὶ ὅπλα τῶν Διομήδους ἑταίρων καὶ αὐτοῦ ἀνακεῖσθαι. Ἐν τούτῳ τῷ τόπῳ φασὶν εἶναι κύνας οἳ τοὺς ἀφικνουμένους τῶν Ἑλλήνων οὐκ ἀδικοῦσιν, ἀλλὰ σαίνουσιν ὥσπερ <pb facs="operaexrecension06arisuoft_0137"/> τοὺς συνηθεστάτους. Πάντες οἱ Δαύνιοι καὶ οἱ πλησιόχωροι αὐτοῖς μελανειμονοῦσι, καὶ ἄνδρες καὶ γυναῖκες, διὰ ταύτην, ὡς ἔοικε, τὴν αἰτίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:109" n="2">
+<p>Τὰς γὰρ Τρῳάδας τὰς ληφθείσας αἰχμαλώτους καὶ εἰς ἐκείνους τοὺς τόπους ἀφικομένας, εὐλαβηθείσας μὴ πικρᾶς δουλείας τύχωσιν ὑπὸ τῶν ἐν ταῖς πατρίσι προϋπαρχουσῶν τοῖς Ἀχαιοῖς γυναικῶν, λέγεται τὰς ναῦς αὐτῶν ἐμπρῆσαι, ἵν᾽ ἅμα μὲν τὴν προσδοκωμένην δουλείαν ἐκφύγωσιν, ἅμα δ᾽ ὅπως μετ᾽ ἐκείνων μένειν ἀναγκασθέντων συναρμοσθεῖσαι κατάσχωσιν αὐτοὺς ἄνδρας. Πάνυ δὲ καὶ τῷ ποιητῇ καλῶς πέφρασται περὶ αὐτῶν· ἑλκεσιπέπλους γὰρ καὶ βαθυκόλπους κἀκείνας, ὡς ἔοικεν, ἰδεῖν ἔστιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="110">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:110" n="1">
+    <p rend="indent">Ἐν δὲ τοῖς Πευκετίνοις εἶναί φασιν Ἀρτέμιδος ἱερόν, ἐν ᾧ τὴν διωνομασμένην ἐν ἐκείνοις τοῖς τόποις χαλκῆν ἕλικα ἀνακεῖσθαι λέγουσιν, ἔχουσαν ἐπίγραμμα " Διομήδης Ἀρτέ" μιδι." Μυθολογεῖται δ᾽ ἐκεῖνον ἐλάφῳ περὶ τὸν τράχηλον περιθεῖναι, τὴν δὲ περιφῦναι, καὶ τοῦτον τὸν τρόπον εὑρισκομένην ὑπὸ Ἀγαθοκλέους ὕστερον τοῦ βασιλέως Σικελιωτῶν εἰς τὸ τοῦ Διὸς ἱερὸν ἀνατεθῆναί φασιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="111">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:111" n="1">
+    <p rend="indent">Ἐν τῇ ἄκρᾳ τῆς Σικελίας τῇ καλουμένῃ Πελωριάδι τοσοῦτον γίνεσθαι κρόκον, ὥστε παρὰ τισὶ μὲν τῶν ἐν ἐκείνοις τοῖς τόποις κατοικούντων μὴ γνωρίζεσθαι Ἑλλήνων ποῖόν τί ἐστι τὸ ἄνθος, ἐπὶ δὲ τῆς Πελωριάδος ἁμάξας κατακομίζειν μεγάλας τοὺς βουλομένους, καὶ κατὰ τὴν ἐαρινὴν ὥραν τὰς στρωμνὰς καὶ τὰς σκηνὰς ἐκ κρόκου κατασκευάζειν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="112">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:112" n="1">
+    <p rend="indent">Φησὶν εἶναι ὁ Πολύκριτος ὁ τὰ Σικελικὰ γεγραφὼς ἐν ἔπεσιν ἔν τινι τόπῳ τῆς μεσογείου λιμνίον τι ἔχον ὅσον <pb facs="operaexrecension06arisuoft_0138"/> ἀσπίδος τὸ περίμετρον, τοῦτο δ᾽ ἔχει ὕδωρ διαυγὲς μὲν μικρῷ δὲ θολερώτερον. Εἰς τοῦτ᾽ οὖν ἐάν τις εἰσβῇ λούσασθαι <milestone unit="page" resp="Bekker" n="841a"/> χρείαν ἔχων, αὔξεται εἰς εὖρος, ἐὰν δὲ καὶ δεύτερον, μᾶλλον πλατύνεται· τὸ δὲ πέρας ἕως εἰς πεντήκοντα ἀνδρῶν ὑποδοχὴν μεῖζον γενόμενον διευρύνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:112" n="2">
+<p>Ἐπειδὰν δὲ τοῦτον τὸν ἀριθμὸν λάβῃ, ἐκ βάθους πάλιν ἀνοιδοῦν ἐκβάλλειν μετέωρα τὰ σώματα τῶν λουομένων ἔξω ἐπὶ τὸ ἔδαφος· ὡς δ᾽ ἂν τοῦτο γένηται, εἰς τὸ ἀρχαῖον πάλιν σχῆμα τῆς περιμέτρου καθίσταται. Οὐ μόνον δ᾽ ἐπὶ ἀνθρώπων τοῦτο περὶ αὐτὸ γίνεται, ἀλλὰ καὶ ἐάν τι τετράπουν εἰσβῇ, τὸ αὐτὸ πάσχει.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="113">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:113" n="1">
+<p>Ἐν δὲ τῇ ἐπικρατείᾳ τῶν Καρχηδονίων φασὶν ὄρος εἶναι ὃ καλεῖται Οὐράνιον, παντοδαπῆς μὲν ὕλης γέμον, πολλοῖς δὲ διαπεποικιλμένον ἄνθεσιν, ὥστε τοὺς συνεχεῖς τόπους ἐπὶ πολὺ μεταλαμβάνοντας τῆς εὐωδίας αὐτοῦ ἡδίστην τινὰ τοῖς ὁδοιποροῦσι προσβάλλειν τὴν ἀναπνοήν. Πρὸς δὴ τοῦτον τὸν τόπον κρήνην ἐλαίου φασὶν εἶναι, τὴν δὲ ὀσμὴν ἔχειν τῆς κέδρου τοῖς ἀποπτίσμασιν ὁμοίαν. Δεῖν δέ φασι τὸν προσιόντα πρὸς αὐτὴν ἁγνὸν εἶναι, καὶ τούτου γινομένου πλεῖον ἀναβλύζειν αὐτὴν τὸ ἔλαιον, ὥστε ἀσφαλῶς ἀρύεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="114">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:114" n="1">
+<p>Φασὶ καὶ ταύτης τῆς κρήνης πλησίον εἶναί τινα πέτραν αὐτοφυῆ, μεγάλην τῷ μεγέθει. Ταύτην οὖν λέγουσιν, ἐπειδὰν μὲν ᾖ θέρος, φλόγα ἀναπέμπειν πυρός, χειμῶνος δὲ γενομένου ἐκ τοῦ αὐτοῦ τόπου κρουνὸν ὕδατος ἀναρραίνειν οὕτω ψυχροῦ ὥστε χιόνι συμβαλλόμενον μηδὲν διαφέρειν. Καὶ τοῦτό φασιν οὐκ ἀπόκρυφον οὐδὲ μικρὸν χρόνον φαίνεσθαι, ἀλλὰ <pb facs="operaexrecension06arisuoft_0139"/> τὸ μὲν πῦρ ἀνιέναι τὴν θερείαν ὅλην, τὸ δὲ ὕδωρ πάντα τὸν χειμῶνα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="115">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:115" n="1">
+    <p rend="indent">Λέγεται δὲ καὶ περὶ τὴν τῶν Σιντῶν καὶ Μαιδῶν χώραν καλουμένην τῆς Θρᾴκης ποταμόν τινα εἶναι Πόντον προσαγορευόμενον, ἐν ᾦ καταφέρεσθαί τινας λίθους οἳ καίονται καὶ τοὐναντίον πάσχουσι τοῖς ἐκ τῶν ξύλων ἄνθραξι· ῥιπιζόμενοι γὰρ σβέννυνται ταχέως, ὕδατι δὲ ῥαινόμενοι ἀναλάμπουσι καὶ ἀνάπτουσι κάλλιον. Παραπλησίαν δὲ ἀσφάλτῳ, ὅταν καίωνται, καὶ πονηρὰν οὕτως ὀσμὴν καὶ <milestone unit="page" resp="Bekker" n="841b"/> δριμεῖαν ἔχουσιν ὥστε μηδὲν τῶν ἑρπετῶν ὑπομένειν ἐν τῷ τόπῳ καιομένων αὐτῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="116">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:116" n="1">
+    <p>Εἶναι δέ φασι καὶ τόπον τινὰ παρ᾽ αὐτοῖς οὐ λίαν μικρόν, ἀλλ᾽ ὡς ἂν εἴκοσί που σταδίων, ὃς φέρει κριθὰς αἷς οἱ μὲν ἄνθρωποι χρῶνται, οἱ δ᾽ ἵπποι καὶ βόες οὐκ ἐθέλουσιν αὐτὰς ἐσθίειν, οὐδ᾽ ἄλλο οὐδέν. Ἀλλ᾽ οὐδὲ τῶν ὑῶν οὐδὲ τῶν κυνῶν οὐδεμία τολμᾷ γεύσασθαι τῆς κόπρου τῶν ἀνθρώπων, οἵτινες ἂν ἐκ τῶν κριθῶν τούτων μᾶζαν φαγόντες ἢ ἄρτον ἀφοδεύωσι, τῷ θνήσκειν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="117">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:117" n="1">
+    <p rend="indent">Ἐν δὲ Σκοτούσαις τῆς Θετταλίας φασὶν εἶναι κρηνίδιόν τι μικρόν, ἐξ οὖ ῥεῖ τοιοῦτον ὕδωρ ὃ τὰ μὲν ἕλκη καὶ θλάσματα ταχέως ὑγιεινὰ ποιεῖ καὶ τῶν ἀνθρώπων καὶ τῶν ὑποζυγίων, ἐὰν δέ τις ξύλον μὴ παντάπασι συντρίψας ἀλλὰ σχίσας ἐμβάλῃ, συμφύεται καὶ πάλιν εἰς τὸ αὐτὸ καθίΠερὶ</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="118">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:118" n="1">
+    <p rend="indent">δὲ τὴν Θρᾴκην τὴν ὑπέρ Ἀμφίπολιν φασὶ γίνεσθαί τι τερατῶδες καὶ ἄπιστον τοῖς μὴ τεθεαμένοις. Ἐξιόντες γὰρ οἱ παῖδες ἐκ τῶν κωμῶν καὶ τῶν ἐγγὺς χωρίων <pb facs="operaexrecension06arisuoft_0140"/> ἐπὶ θήραν τῶν ὀρνιθαρίων συνθηρεύειν παραλαμβάνουσι τούς ίέρακας, καὶ τοῦτο ποιοῦσιν οὕτως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:118" n="2">
+    <p>Ἐπειδὰν προέλθωσιν εἰς τόπον ἐπιτήδειον, καλοῦσι τοὺς ἱέρακας ὀνομαστὶ κεκραγότες· οί ἔ’ ὅταν ἀκούσωσι τῶν παίδων τὴν φωνήν, παραγινόμενοι κατασοβοῦσι τοὺς ὄρνιθας· οἱ δὲ δεδιότες ἐκείνους καταφεύγουσιν εἰς τοὺς θάμνους, ὅπου αὐτοὺς οἱ παῖδες ξύλοις τύπτοντες λαμαβάνουσιν. Ὀ δὲ πάντων ἄν 'τις μάλιστα θαυμάσειεν· οἱ μὲν γὰρ ἱέρακες ὅταν αὐτοί τινα λάβωσι τῶν ὀρνίθων, καταβάλλουσι τοῖς θηρεύουσιν, οἱ παῖδες ἁπάντων τῶν ἁλόντων μέρος τι τοῖς ἱέραξιν ἀποδόντες ἀπέρχονται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="119">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:119" n="1">
+    <p rend="indent">θαυμαστὸν δέ τι καὶ παρὰ τοῖς Ἐνετοῖς φασὶ γίνεσθαι. Ἐπὶ γὰρ τὴν χώραν αὐτῶν πολλάκις κολοιῶν ἀναριθμήτους μυριάδας ἐπιφέρεσθαι καὶ τὸν σῖτον αὐτῶν σπειράνταων καταναλίσκειν· οἶς τοὺς Ἐνετοὺς πρὸ τοῦ ἐφίπτασθαι μέλλειν ἐπὶ τὰ μεθόρια τῆς γῆς προτιθέναι δῶρα, παντοδαπῶν καρπῶν καταβάλλοντας σπέρματα, ὧν ἐὰν μὲν <milestone unit="page" resp="Bekker" n="842a"/>γεύσωνται οἱ κολοιοί, οὐχ ὑπερβαίνουσιν ἐπὶ τὴν χώραν αὐτῶν, ἀλλ’ οἴδασιν οἱ Ἐνετοὶ ὅτι ἔσονται ἐν εἰρήνη· ἐὰν δὲ μὴ γεύσαωνται, ὡσεὶ πολεμίων ἔφοδον αὑτοῖς γινομένην οὕτω προσδοκῶσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="120">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:120" n="1">
+    <p rend="indent">Ἐν δὲ τῇ Χαλκιδκῇ τῇ ἐπὶ Θρᾴκης πλησίον 'Ολύωθου φασὶν εἶναι Κανθαρώλεθρον ὀνομαζόμενον τόπον, μικρῷ μείζονα τὸ μέγεθος ἅλω, εἰς ὃν τῶν μὲν ἄλλων ζῴων ὅταν τι ἀφίκηται, πάλιν ἀπέρχεται, τῶν δὲ κανθάρων τῶν ἐλθόντων οὐδείς, ἀλλὰ κύκλῳ περιιόντες τὸ χωρίον λιμῷ τελευτῶσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="121">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:121" n="1">
+    <p rend="indent">δὲ Κύκλωψι τοῖς Θρᾳξὶ κρηνίδιόν ἐστιν ὕδωρ ἔχον ὅ τῇ μὲν ὄψει καθαρὸν καὶ διαφανὲς καὶ τοῖς ἄλλοις <pb facs="operaexrecension06arisuoft_0141"/> ὅμοιον, ὅταν δὲ πίῃ τι ζῷον ἐξ αὐτοῦ, παραχρῆμα διαφθείρεται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="122">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:122" n="1">
+    <p rend="indent">Φασὶ δὲ καὶ ἐν τῇ Κραστωνίᾳ παρὰ τὴν Βισααλτῶν χώραν τοὺς άλισκομένους λαγὼς δύο ἥπατα ἔχειν, καὶ τόπον τινὰ εἶναι ὅσον πλεθριαῖον, εἰς ὄν ὅ τι ἄν εἰσέλθῃ ζῷον ἀποθνήσκει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:122" n="2">
+    <p>Ἒστι δὲ καὶ ἄλλο αὐτόθι ἱερὸν Διονύσου μέγα καὶ καλόν, ἐν ᾦ τῆς ἑορτῆς καὶ τῆς θυσίας οὔσης λέγεται, ὅταν μὲν ὁ θεὸς εὐετηρίαν μέλλῃ ποιεῖν, ἐπιφαίνεσθαι μέγα σέλας πυρός, καὶ τοῦτο πάντας ὁρᾶν τοὺς περὶ τὸ τέ μένος διατρίβοντας, ὅταν δ’ ἀκαρπίαν, μὴ φαίνεσθαι τοῦτο τὸ φῶς, ἀλλὰ σκότος ἐπέχειν τὸν τόπον ὥσπερ καὶ τὰς ἄλλας νύκτας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="123">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:123" n="1">
+    <p rend="indent">'Εν Ἤλδι λέγουσιν εἶναί τι οἴκημα σταδίους ἀπέχον ὀκτὼ μάλιστα τῆς πόλεως, εἰς ὃ τιθέασι τοῖς Διονυσίοις λέβητας χαλκοῦς τρεῖς κενούς. Τοῦτο δὲ ποιήσαντες παρακαλοῦσι τῶν Ελλήνων τῶν ἐπιδημούντων τὸν βουλόμενον ἐξετάσαι τὰ ἀγγεῖα καὶ τοῦ οἴκου κατασφραγίζεσθαι τὰς θύρας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:123" n="2">
+<p>Καὶ ἐπειδὰν μέλλωσιν ἀνοίγειν, ἐπιδείξαντες τοῖς πολίταις καὶ τοῖς ξένοις τὰς σφραγῖδας, οὕτως ἀνοίγουσιν. Οἱ δ᾿ εἰσελθόντες εὑρίσκουσι τοὺς μὲν λέβητας οἴνου πλήρεις, τὸ δὲ ἔδαφος καὶ τοὺς τοίχους ὑγιεῖς, ὥστε μηδεμίαν εἶναι ὑποψίαν 'λαβεῖν ὡς τέχνῃ τινὶ κατασκευάζουσιν. Εἶναι δέ φασι παρ᾿ αὐτοῖς καὶ ἰκτίνους, οἳ παρὰ μὲν τῶν διὰ τῆς <milestone unit="page" resp="Bekker" n="842b"/> ἀγορᾶς τὰ κρέα φερόντων ἁρπάζουσι, τῶν δὲ ἱεροθύτων οὐχ ἅπτονται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="124">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:124" n="1">
+    <p rend="indent">Ἐυ Κορωνείᾳ δὲ τῆς Βοιωτίας λέγεται τοὺς ἀσπάλακας τὰ ζῷα μὴ δύνασθαι ζῆν μηδ᾿ ὀρύσσειν τὴν γῆν, τῆς λοιπῆς Βοιωτίας πολὺ πλῆθος ἐχούσης.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="125">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:125" n="1">
+    <p rend="indent">Ἐν Λουσοῖς δὲ τῆς ᾿Αρκαδίας κρήνην εἶναί τινά φασιν, ἐν ᾖ χερσαῖοι μύες γίνονται καὶ κολυμβῶσι, τὴν δίαιταν ἐν <pb facs="operaexrecension06arisuoft_0142"/> ἐκείνῃ ποιούμενοι. Λέγεται δ’ αὐτὸ τοῦτο καὶ ἐν Λαμὐάκῳ εἶναι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="126">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:126" n="1">
+    <p rend="indent">Ἐν δε Κράννωνι τῆς Θετταλίας φασὶ δύο κόρακας εἶναι μόνους ἐν τῇ πόλει. Οὖτοι ὅταν ἐκνεοττεύσωσιν, ἑαυτοὺς μέν, ὡς ἔοικεν, ἐκτοπίζουσιν, ἑτέρους δὲ τοσούτους τῶν ἐξ αὐτῶν γενομένων ἀπολείπουσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="127">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:127" n="1">
+    <p rend="indent">Ἐν δὲ Ἀπολλωνίᾳ τῇ πλησίον κειμένῃ τῆς τῶν Ἀτλαντίνων χώρας φασὶ γίγνεσθαι ἄσφαλτον ὀρυκτὴν καὶ πίσσαν, τὸν αὐτὸν τρόπον ἐκ τῆς γῆς ἀναπηδῶσαν τοῖς ὕδασιν, οὐδὲν διαφέρουσαν τῆς Μακεδονικῆς, μελαντέραν δὲ καὶ παχυτέραν πεφυκέναι ἐκ\είνης. Οὐ πόρρω δὲ τούτου τοῦ χωρίου πῦρ ἐστὶ καιόμενον πάντα τὸν χρόνον, ὡς φασὶν οἱ κατοικοῦντες περὶ τὴν χώραν ἐκείνην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:127" n="2">
+    <p>Ὀ δὲ καιόμενος τόπος ἐστὶν οὐ πολύς, ὡς ἔοικεν, ἀλλ᾿ ὅσον μάλιστα πεντακλίνου τὸ μέγεθος. Ὄζει δὲ θείου καὶ στυπτηρίας, καὶ πέφυκε περὶ αὐτὸν πόα τε βαθεῖα, ὃ καὶ θαυμάσειεν ἄν τις μάλιστα, καὶ δένδρα μεγάλα, οὐκ ἀπέχοντα τοῦ πυρὸς πήχεις τέσσαρας. Καίεται δὲ συνεχῶς περὶ Λυκίαν καὶ Μεγάλην πόλιν τὴν ἐν Πελοποννήσῳ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="128">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:128" n="1">
+    <p rend="indent">Λέγεται δὲ καὶ ἐν Ιλλυριοῖς τίκτειν τὰ βοσκήματα δὶς τοῦ ἐνιαυτοῦ, καὶ τὰ πλεῖστα διδυμοτοκεῖν, καὶ πολλὰ τρεῖς ἢ τέσσαρας ἐρίφους τίκτειν, ἕνια δὲ καὶ πέντε καὶ πλείους, ἔτι δὲ γάλακτος ἀφιέναι ῥᾳδίως τρία ἡμίχοα. Λέγουσι δὲ καὶ τὰς ἀλεκτορίδας οὐχ ὥσπερ παρὰ τοῖς ἄλλοις ἅπαξ τίκτειν, ἀλλὰ δὶς ἢ τρὶς τῆς ἡμέρας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="129">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:129" n="1">
+    <p rend="indent">Λέγεται δὲ καὶ ἐν Παιονίᾳ τοὺς βοῦς τούς ἀγρίους πολὺ μεγίστους ἁπάντων τῶν ἐν τοῖς λοιποῖς ἔθνεσι γίγνεσθαι, καὶ τὰ κέρατα αὐτῶν χαωρεῖν τέσσαρας χόας, ἐνίων δὲ καὶ πλεῖον.</p></div></div><pb facs="operaexrecension06arisuoft_0143"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="130">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:130" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="843a"/>Περὶ δὲ τοῦ πορθμοῦ τῆς Σικελίας καὶ ἄλλοι μὲν πλείους γεγράφασι, καὶ οὗτος δέ φησι συμβαίνειν τερατῶδες. Ἐκ γὰρ τοῦ Τυρρηνικοῦ πελάγους πολλῷ ῥοίζῳ φερόμενον τὸν κλύδωνα προσβάλλειν πρὸς ἀμφότερα τὰ ἀκρωτήρια, τὸ μὲν τῆς Σικελίας, τὸ δὲ τῆς Ιταλίας, τὸ προσαγορευόμενον Ῥήγιον, καὶ φερόμενον ἐκ μεγάλου πελάγους εἰς στενὸν συγκλείεσθαι, τούτου δὲ γινομένου κῦμα μετέωρον αἴρειν σὺν πολλῷ βρόμῳ ἐπὶ πάνυ πολὺν τόπον τῆς ἄνω φοράς, ὥστε τοῖς μακρὰν ἀπέχουσι σύνοπτον εἶναι τὸν μετεωρισμόν οὐχ ὅμοιον φαινόμενον θαλάσσης ἀναφορᾷ, λευκὸν δὲ καὶ ἀφρῶδες, παραπλήσιον δὲ τοῖς συρμοῖς τοῖς γινομένοις ἐν τοῖς ἀνυπερβλήτοις χειμῶσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:130" n="2">
+<p>Καὶ ποτὲ μὲν ἀλλήλοις συμπίπτειν ἐπ’ ἀμφοτέρων τῶν ἀκρωτηρίων τοὺς κλύδωνας, καὶ ποιεῖν συγκλυσμὸν ἄπιστον μὲν διηγεῖσθαι, ἀνυπομόνητον δὲ τῇ ὄψει θεάσασθαι· ποτὲ δὲ διισταμένους ἐκ τῆς πρὸς ἀλλήλους συρράξεως οὕτω βαθεῖαν καὶ φρικώδη τὴν ἄποψιν ποιεῖν τοῖς ἐξ ἀνάγκης θεωμένοις, ὥστε πολλοὺς μὲν μὴ κρατεῖν ἑαυτῶν, ἀλλὰ πίπτειν σκοτουμένους ὑπὸ δέους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:130" n="3">
+<p>Ἐπειδὰν δὲ προσπεσὸν τὸ κῦμα πρὸς ὁποτερονοῦν τῶν τόπων καὶ μετεωρισθὲν ἕως τῶν ἄκρων πάλιν εἰς τὴν ὑπορρέουσαν θάλασσαν κατενεχθῇ, τότε δὴ πάλιν σὺν πολλῷ μὲν βρυχηθμῷ μεγάλαις δὲ καὶ ταχείαις δίναις τὴν θάλασσαν ἀναζεῖν καὶ μετεωρίζεσθαι κυκωμένην ἐκ βυθῶν, παντοδαπὰς δὲ χρόας μεταλλάσσειν· ποτὲ μὲν γὰρ ζοφεράν, ποτὲ δὲ κυανῆν, πολλάκις δὲ πορφυρίζουσαν διαφαίνεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:130" n="4">
+<p>Τὸν δὲ δρόμον καὶ τὸ μῆκος αὐτῆς, ἔτι δὲ πρὸς τούτοις τὴν ἀνάρροιαν, οὐδὲ ἀκούειν οὐδὲν ἑρπετὸν οὔθ’ <pb facs="operaexrecension06arisuoft_0144"/> ὁρᾶν ὑπομένειν, φεύγειν δὲ πάντα πρὸς τὰς ὑποκειμένας ὑπωρείας. Λήγοντος δὲ τοῦ κλύδωνος τὰς δίνας μετεώρους φέρεσθαι ποικίλας οὕτω τὰς ἀναστροφὰς ποιουμένας, ὥστε δοκεῖν πρηστήρων ἢ τινων ἄλλων μεγάλων ὄφεων σπειράματι παρομοίους τὰς κινήσεις ἀποτελεῖν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="131">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:131" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="843b"/> Φασὶν οἰκοδομούντων Ἀθηναίων τὸ τῆς Δήμητρος ἱερὸν τῆς ἐν Ἐλευσῖνι περιεχομένην στήλην πέτραις εὑρεθῆναι χαλκῆν, ἐφ’ ἧς ἐπεγέγραπτο <q>Δηϊόπης τόδε σῆμα,</q> ἣν οἱ μὲν λέγουσι Μουσαίου εἶναι γυναῖκα, τινὲς δὲ Τριπτολέμου μητέρα γενέσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="132">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:132" n="1">
+    <p rend="indent">Ἐν μιᾷ τῶν Αἰόλου προσαγορευομένων νήσων πλῆθός τί φασι γενέσθαι φοινίκων, ὅθεν καὶ Φοινικώδη καλεῖσθαι. Οὐκ ἂν οὖν εἴη τὸ λεγόμενον ὑπὸ Καλλισθένους ἀληθές, ὅτι ἀπὸ Φοινίκων τῆς Συρίας τῶν τὴν παραλίαν οἰκούντων τὸ φυτὸν ἔλαβε τὴν προσηγορίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:132" n="2">
+<p>Ἀλλὰ καὶ αὐτοὺς τοὺς Φοίνικας ὑπὸ τῶν Ἑλλήνων φασί τινες [φοίνικας] προσαγορευθῆναι διὰ τὸ πρώτους πλέοντας τὴν θάλασσαν, ᾗ ἂν ἀποβαίησαν, πάντας ἀποκτείνειν καὶ φονεύειν. Καὶ κατὰ γλῶσσαν δ’ ἐστὶ τὴν Περραιβῶν τὸ αἱμάξαι φοινίξαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="133">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:133" n="1">
+    <p rend="indent">Τῆς καλουμένης Αἰνιακῆς χώρας περὶ τὴν ὀνομαζομένην Ὑπάτην λέγεται παλαιά τις στήλη εὑρεθῆναι, ἣν οἱ Αἰνιᾶνες τίνος ἦν εἰδέναι βουλόμενοι, ἔχουσαν ἐπιγραφὴν ἀρχαίοις γράμμασιν, ἀπέστειλαν εἰς Ἀθήνας τινὰς κομίζοντας αὐτήν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:133" n="2">
+<p>Πορευομένων δὲ διὰ τῆς Βοιωτίας, καί τισι τῶν ξένων ὑπὲρ τῆς ἀποδημίας ἀνακοινουμένων, λέγεται αὐτοὺς εἰσαχθῆναι εἰς τὸ καλούμενον Ἰσμήνιον ἐν Θήβαις· ἐκεῖθεν γὰρ μάλιστα ἂν εὑρεθῆναι τὴν τῶν γραμμάτων ἐπιγραφήν, <pb facs="operaexrecension06arisuoft_0145"/> λέγοντες εἶναί τινα ἀναθήματα ὁμοίους ἔχοντα τοὺς ῥυθμοὺς τῶν γραμμάτων ἀρχαῖα. Ὅθεν αὐτούς φασιν ἀπὸ τῶν γνωριζομένων τὴν εὕρεσιν ποιησαμένους τῶν ἐπιζητουμένων, ἀναγράψαι τούσδε τοὺς στίχους.
+<lb/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:133" n="3">
+<p><quote rend="blockquote">Ἡρακλέης τεμένισσε Κυθήρᾳ Φερσεφαάσσῃ,
+<lb/>Γηρυονείας ἀγέλας ἐλάων ἡδ’ Ἐρύθειαν ἄγων.
+<lb/>τὰς δ’ ἐδάμασσε πόθῳ Πασιφάεσσα θεά.
+<lb/>τῇδε δέ μοι τέκνῳ τῷ δ’ Ἐρύθου τε δάμαρ
+<lb/>νυμφογενὴς Ἐρύθη· δὴ τόδ’ ἔδωκα πέδον
+<lb/>μναμόσυνον φιλίας, φηγῷ ὕπο σκιερᾷ.
+</quote></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:133" n="4">
+    <p><milestone unit="page" resp="Bekker" n="844a"/> Τούτῳ τῷ ἐπιγράμματι ἐπεχώρησε καὶ ὁ τόπος ἐκεῖνος Ἔρυθος καλούμενος, καὶ ὅτι ἐκεῖθεν τὰς βοῦς καὶ οὐκ ἐξ Ἐρυθείας ἤγαγεν· οὐδὲ γὰρ ἐν τοῖς κατὰ Λιβύην καὶ Ἰβηρίαν τόποις οὐδαμοῦ τὸ ὄνομά φασι λέγεσθαι τῆς Ἐρυθείας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="134">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:134" n="1">
+    <p rend="indent">Τῆς δὲ Λιβύης ἐν Ἰτύκῃ τῇ καλουμένη, ἥ κεῖται μέν, ὡς λέγουσιν, ἐν τῷ κόλπῳ τῷ μεταξὺ Ἑρμαίας καὶ τῆς Ἵππου ἄκρας, ἐπέκεινα δὲ Καρχηδόνος ὡς σταδίους διακοσίους (ἣ καὶ πρότερον κτισθῆναι λέγεται ὑπὸ Φοινίκων αὐτῆς τῆς Καρχηδόνος ἔτεσι διακοσίοις ὀγδοήκοντα ἑπτά, ὡς ἀναγέγραπται ἐν ταῖς Φοινικικαῖς ἱστορίαις), γίνεσθαί φασιν ἅλας ὀρυκτούς, ἐπὶ τρεῖς ὀργυιὰς τὸ βάθος, τῇ ὄψει λευκοὺς καὶ οὐ στερεοὺς ἀλλ’ ὁμοίους τῷ γλισχρστάτῳ γλοιῷ· καὶ ὅταν ἀνενεχθῶσιν εἰς τὸν ἥλιον, ἀποστερεοῦσθαι καὶ γίνεσθαι <pb facs="operaexrecension06arisuoft_0146"/> ὁμοίους τῷ Παρίῳ λίθῳ. Γλύφεσθαι δὲ ἐξ αὐτῶν λέγουσι ζῴδια καὶ ἄλλα σκεύη.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="135">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:135" n="1">
+    <p rend="indent">Τοὺς πρώτους τῶν Φοινίκων ἐπὶ Ταρτησσὸν πλεύσαντας λέγεται τοσοῦτον ἀργύριον ἀντιφορτίσασθαι, ἔλαιον καὶ ἄλλον ναυτικὸν ῥῶπον εἰσαγαγόντας, ὥστε μηκέτι ἔχειν δύνασθαι μήτε ἐπιδέξασθαι τὸν ἄργυρον, ἀλλ’ ἀναγκασθῆναι ἀποπλέοντας ἐκ τῶν τόπων τά τε ἄλλα πάντα ἀργυρᾶ οἷς ἐχρῶντο κατασκευάσασθαι, καὶ δὴ καὶ τὰς ἀγκύρας πάσας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="136">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:136" n="1">
+    <p rend="indent">Λέγουσι τοὺς Φοίνικας τοὺς κατοικοῦντας τὰ Γάδειρα καλούμενα, ἔξω πλέοντας Ἡρακλείων στηλῶν ἀπηλιώτῃ ἀνέμῳ ἡμέρας τέτταρας, παραγίνεσθαι εἴς τινας τόπους ἐρήμους, θρύου καὶ φύκους πλήρεις, οὓς ὅταν μὲν ἄμπωτις ᾖ μὴ βαπτίζεσθαι, ὅταν δὲ πλημμύρα, κατακλύζεσθαι, ἐφ’ ὧν εὑρίσκεσθαι ὑπερβάλλον θύννων πλῆθος, καὶ τοῖς μεγέθεσιν ἄπιστον καὶ τοῖς πάχεσιν, ὅταν ἐποκείλωσιν· οὓς ταριχεύοντες καὶ συντιθέντες εἰς ἀγγεῖα διακομίζουσιν εἰς Καρχηδόνα. Ὧν Καρχηδόνιοι μόνων οὐ ποιοῦνται τὴν ἐξαγωγήν, ἀλλὰ διὰ τὴν ἀρετὴν ἣν ἔχουσι κατὰ τὴν βρῶσιν αὐτοὶ καταναλίσκουσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="137">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:137" n="1">
+    <p rend="indent">Ἐν τῇ Πηδασίᾳ τῆς Καρίας θυσία τῷ Διὶ συντελεῖται, <milestone unit="page" resp="Bekker" n="844b"/> ἐν ᾗ πέμπουσιν αἶγά τινα, περὶ ἣν θαυμαστόν τί φασι γίγνεσθαι. Βαδίζουσα γὰρ ἐκ Πηδάσων σταδίους ἑβδομήκοντα δι’ ὄχλου πολλοῦ τοῦ θεωροῦντος οὔτε διαταράττεται κατὰ τὴν πορείαν οὔτ’ ἐκτρέπεται τῆς ὁδοῦ, δεδεμένη δὲ σχοινίῳ προπορεύεται τοῦ τὴν ἱερωσύνην ἔχοντος. Θαυμαστὸν δ’ ἐστὶ καὶ τὸ δύο κόρακας εἶναι διὰ τέλους περὶ <pb facs="operaexrecension06arisuoft_0147"/> τὸ τοῦ Διὸς ἱερόν, ἄλλον δὲ μηδένα προσιέναι πρὸς τὸν τόπον, καὶ τὸν ἕτερον αὐτῶν ἔχειν τὸ πρόσθεν τοῦ τραχήλου λευκόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="138">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:138" n="1">
+    <p rend="indent">Ἐν Ἰλλνριοῖς δὲ τοῖς Ἀρδιαίοις καλουμένοις, παρὰ τὰ μεθόρια τῶν Αὐταριατῶν κἀκείνων, φασὶν ὄρος εἶναι μέγα, τούτου δὲ πλησίον ἄγκος, ὅθεν ὕδωρ ἀναπηδᾶν, οὐ πᾶσαν ὥραν ἀλλὰ τοῦ ἦρος, πολὺ τῷ πλήθει, ὃ λαμβάνοντες τὰς μὲν ἡμέρας ἐν τῷ στεγνῷ φυλάττουσι, τὰς δὲ νύκτας εἰς τὴν αἰθρίαν τιθέασι. Καὶ πέντε ἢ ἕξ ἡμέρας τοῦτο ποιησάντων αὐτῶν πήγνυται τὸ ὕδωρ, καὶ γίνεται κάλλιστον ἅλας, ὃ ἕνεκεν τῶν βοσκημάτων μάλιστα διατηροῦσιν· οὐ γὰρ εἰσάγονται πρὸς αὐτοὺς ἅλες διὰ τὸ κατοικεῖν πόρρω αὐτοὺς θαλάσσης καὶ εἶναι αὐτοὺς ἀμίκτους. Πρὸς οὖν τὰ βοσκήματα πλείστην αὐτοῦ χρείαν ἔχουσιν· ἁλίζουσι γὰρ αὐτὰ δὶς τοῦ ἐνιαυτοῦ. Ἐὰν δὲ μὴ ποιήσωσι τοῦτο, συμβαίνει αὐτοῖς ἀπόλλυσθαι τὰ πλεῖστα τῶν βοσκημάτων.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="139">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:139" n="1">
+    <p rend="indent">Ἐν Ἄργει δέ φασι γίνεσθαι ἀκρίδος τι γένος ὃ καλεῖται σκορπιομάχον. Ὅταν γὰρ ἴδῃ τάχιστα σκορπίον, ἀνθίσταται αὐτῷ· ὡσαύτως δὲ καὶ ὁ σκορπίος ἐκείνῃ. Καὶ κύκλῳ περιιοῦσα τρίζει περὶ αὐτόν· τὸν δὲ τὸ κέντρον ἐπαίροντα ἀντιπεριάγειν ἐν τῷ αὐτῷ τόπῳ, εἶτα κατὰ μικρὸν ἀνιέναι τὸ κέντρον, καὶ τέλος ὅλον ἐκτείνεσθαι, τῆς ἀκρίδος κύκλῳ τρεχούσης. Τὰ τελευταῖα δὲ προσελθοῦσα κατεσθίει αὐτὸν ἡ ἀκρίς. Αγαθὸν δέ φασιν εἶναι καὶ πρὸς τὰς πληγὰς τοῦ σκορπίου ἐπιφαγεῖν αὐτήν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="140">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:140" n="1">
+    <p rend="indent">Τοὺς ἐν Νάξῳ σφῆκάς φασιν, ὅταν φάγωσι τοῦ ἔχεως (προσφιλὴς δ’ αὐτοῖς ἡ σάρξ, ὡς ἔοικεν, ἐστίν), ἐπειδάν τινα <pb facs="operaexrecension06arisuoft_0148"/> κεντήσωσι, περιωδύνους οὓτῳ ποιεῖν ὥστε χαλεπαωτέραν φαίνεσθαι τῆς πληγῆς τῶν ἔχεον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="141">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:141" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="845a"/>Φασὶ τὸ Σκυθικὸν φάρμακον, ὦ ἀποβάπτουσι τοὺς ὀϊστούς, συντίθεσθαι ἐξ ἐχίδνης. Τηροῦσι δέ, ὡς ἔοικεν, οἱ Σκύθαι τὰς ἢδη ζῳοτοκούσας, καὶ λαβόντες αὐτὰς τήκουσιν ἡμέρας τινάς. Ὄταν δὲ ἱκανῶς αὐτοῖς δοκῇ σεσῆφθαι πᾶν, τὸ τοῦ ἀνθρώπου αἷμα εἰς χυτρίδιον ἐγχέοντες εἰς τὰς κοπρίας κατορύττουσι πωμάσαντες. Ὄταν δὲ καὶ τοῦτο σαπῇ, τὸ ὑφιστάμενον ἐπάνω τοῦ αἵματος, ὃ δή ἐστιν ὑδατῶδες, μιγνύουσι τῷ τῆς ἐχίδνης ἰχῶρι, καὶ οὕτω ποιοῦσι θανάσιμον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="142">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:142" n="1">
+    <p rend="indent">Ἐν Κουρίῳ τῆς Κύπρου ὄφεών τι γένος εἶναί φασιν, ὃ τὴν δύναμιν ὁμοίαν ἔχει τῇ ἐν Αἰγύπτῳ ἀσπίδι, πλὴν ὅτι τοῦ χειμῶνος ἐὰν δάκη, οὐδὲν ἐργάζεται, εἴτε δἰ ἄλλην τινὰ αἰτίαν, εἴτε διότι τὸ ζῷον δυσκίνητον γίνεται ὑπὸ τοῦ ψύχονς ἀποπηγνύμενον καὶ τελέως ἀδύνατον, ἐὰν μῆ θερμανθῇ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="143">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:143" n="1">
+    <p rend="indent">Ἐν Κέῳ φασὶν εἶναί τι γένος ἀχέρδου, ὑφ’ ἦε ἐάν τις πληγῇ τῇ ἀκάνθῃ, ἀποθνήσκει.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="144">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:144" n="1">
+    <p rend="indent">Ἐν Μυσίᾳ φασὶν ἄρκτων τι γένος εἶναι λευκόν, αἳ ὅταν κυνηγῶνται, ἀφιᾶσι τοιαύτην πνοὴν ὥστε τῶν κυνῶν τὰς σάρκας σήπειν, ὡσαύτως δὲ καὶ τῶν λοιπῶν θηρίων, ἀβρώτους τε ποιεῖν. Εὰν δέ τις καὶ βιάσηται καὶ ἐγγίση, ἀφιᾶσιν ἐκ τοῦ σπόματος φλέγμα πάμπολύ τι, ὡς ἔοικεν, ὃ προσφυσᾷ πρὸς τὰ πρόσωπα τῶν κυνῶν, ὡσαύτως δὲ καὶ τῶν ἀνθρώπων, ὥστε καὶ ἀποπνίγειν καὶ ἀποτυφλοῦν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="145">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:145" n="1">
+    <p rend="indent">Ἐν δὲ τῇ Αραβίᾳ ὑαινῶν τι γένος φασὶν εἶναι, ὃ ἐπειδὰν προΐδῃ τι θηρίον ἢ ἀνθρώπου ἐπιβῇ ἐπὶ τὴν σκιάν, ἀφωνίαν ἐργάζεται καὶ πῆξιν τοιαύτην ὥστε μὴ <pb facs="operaexrecension06arisuoft_0149"/> δύνασθαι κινεῖν τὸ σῶμα. Τοῦτο δὲ ποιεῖν καὶ ἐπὶ τῶν κυνῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="146">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:146" n="1">
+    <p rend="indent">Κατὰ δὲ Συρίαν εἶνα τί φασι ζῷον ὃ καλεῖται λεοντοφόνον· ἀποθνήσκει γὰρ ὁ λέων, ὡς ἔοικεν, ὅταν αὐτοῦ φάγῃ. Ἐκὼν μὲν οὖν τοῦτο οὐ ποιεῖ, ἀλλὰ φεύγει τὸ ζῷον· ὅταν δὲ συλλαβόντες αὠτὸ οἱ κυνηγέται καὶ ὀπτήσαντες ὥσπερ ἄλφιτα λευκὰ περιπάσσωσιν ἄλλῳ ζῴῳ, γευσάμενον ἀπόλλυσθαί φασι παραχρῆμα. Κακοῖ καὶ προσουροῦν τὸν λέοντα τοῦτο τὸ ζῷον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="147">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:147" n="1">
+    <p rend="indent">Λέγεται καὶ τοὺς γῦπας ὑπὸ τῆς τῶν μύρων ὀσμῆς <milestone unit="page" resp="Bekker" n="845b"/> ἀποθνήσκειν, ἐάν τις αὐτοὺς χρίσῃ ἢ δῷ τι μεμυρισμένον φαγεῖν. Ὠσαύτως δὲ καὶ τούς κανθάρους ὑπὸ τῆς τῶν ῥόδων ὀσμῆς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="148">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:148" n="1">
+    <p rend="indent">Καὶ ἐν Σικελίᾳ δέ φασι καὶ ἐν Ἰταλίᾳ τούς γαλεώτας θανάσιμον ἔχειν τὸ δῆγμα, καὶ οὐχ ὥσπερ τοὐς παῤ ἡμῖν ἀσθενὲς καὶ μαλακόν. Εἶνα δὲ καὶ μυῶν γένος ἐφιπτάμενον, ὃ ὅταν δάκη, ἀποθνήσκειν ποιὲ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="149">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:149" n="1">
+    <p>Ἐῳ δὲ τῇ Μεσοποταμίᾳ τῆς Συρίας φασὶ καὶ ἐν Ἰστροῦντι ὀφείδιά τινα γίγνεσθαι, ἄ τοὺς ἐγχαρίους οὐ δάκνει, τοὺς ξένους δὲ ἀδικεῖ σφόδρα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="150">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:150" n="1">
+<p>Περὶ δὲ τὸν Εὐφράτην καὶ τελείως φασὶ τοῦτο γίγνεσθαι. Πολλοὺς γὰρ φαίνεσθαι περὶ τὰ χείλη τοῦ ποταμοῦ καὶ διανέοντας ἐφ’ ἑκάτερα, ὥστε τῆς δείλης ἐνταῦθα θεωρουμένους ἄμα τῇ ἡμέρᾳ ἐπὶ θατέρου μέρους φαίνεσθαι, καὶ τούς ἀναπαυομένους τῶν μὲν Σύρων μὴ δάκνειν, τῶν δ’ Ἑλλήνων μὴ ἀπέχεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="151">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:151" n="1">
+    <p rend="indent">Ἐν Θεσσαλίᾳ φασὶ τὸν ἱερὸν καλούμενον ὄφιν πάντας ἀπολλύειν, οὐ μόνον ἐὰν δάκη, ἀλλὰ καὶ ἐἀν θίγῃ. Διὸ καὶ ὅταν φανῇ καὶ τὴν φωνὴν ἀκούσωσι (φαίνεται δὲ σπανίως), φεύγουσι καὶ οἱ ὄφεις καὶ οἱ ἔχεις καὶ τἆλλα πάντα <pb facs="operaexrecension06arisuoft_0150"/> θηρία. Τῷ δὲ μεγέθει οὐκ ἔστι μέγας ἀλλὰ μέτριος. Ἐν Τήνῳ δέ ποτέ φασιν αὐτὸν τῇ πόλει κατὰ Θετταλίαν ἀναιρεθῆναι ὑπὸ γυναικός, γενέσθαι δὲ τὸν θάνατον τοιόνδε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:151" n="2">
+<p>Γυναῖκα κύκλον γράψασαν καὶ τὰ φάρμακα θεῖσαν εἰσβῆναι εἰς τὸν κύκλον, αὐτὴν καὶ τὸν υἱόν, εἶτα μιμεῖσθαι τὴν φωνὴν τοῦ θηρίου· τὸ δ’ ἀντᾴδειν καὶ προσιέναι. Ἅἰδόντος δὲ καταδαρθεῖν τὴν γυναῖκα, καὶ ἐγγυτέρω προσιόντος μᾶλλον, ὥστς μὴ δύνασθαι κρατεῖν τοῦ ὕπνου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:151" n="3">
+<p>Τὸν δ’ υἱὸν παρακαθήμενον ἐγείρειν τύπτοντα, κελευούσης ἐκείνης, καὶ λέγειν ὅτι ἐὰν μὲν καθυπνώσῃ, ἀπολεῖται καὶ αὐτὴ καὶ ἐκεῖνος, ἐὰν δὲ βιάσηται καὶ προσαγάγηται τὸ θηρίον, σωθήσονται. Ὥς δὲ προσῆλθεν ὁ ὄφις εἰς τὸν κύκλον, αὗον εὐθὺς γενέσθαι αὐτόν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="152">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:152" n="1">
+    <p rend="indent">Λέγεται περὶ τὰ Τύανα ὓδωρ εἶναι ὁρκίου Διός (καλοῦσι δὲ αὐτὸ Ἀσβαμαῖον), οὗ πηγὴ ἀναδίδοται πάνυ ψυχρά. παφλάζει δὲ ὥσπερ οἱ λέβητες. Τοῦτο εὐόρκοις <milestone unit="page" resp="Bekker" n="846a"/> μὲν ἡδύ τε καὶ ἳλεων, ἐπιόρκοις δὲ παρὰ πόδας ἡ δίκη. Ἀποσκήπτει γὰρ καὶ εἰς ὀφθαλμοὺς καὶ εἰς χεῖρας καὶ ες πόδας, ἁλίσκονταί τε ὑδέροις καὶ φθόαις· καὶ οὐδὲ πρόσθεν ἀπελθεῖν δυνατόν, ἀλλ’ αὐτόθι ἔχονται καὶ ὀλοφύρονται πρὸς τῷ ὕδατι, ὁμολογοῦντες ἃ ἐπιώρκησαν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="153">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:153" n="1">
+    <p rend="indent">Ἀθήνησί φασι τὸν ἱερὸν τῆς ἐλαίας θαλλὸν ἐν ἡμέρα μιᾷ βλαστῆσαι καὶ πλείονα γενέσθαι, ταχύ δὲ αὗ πάλιν συστέλλεσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="154">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:154" n="1">
+    <p rend="indent">Τῶν ἐν Αἲτνῃ κρατήραων ἀναρραγέντων καὶ ἀνὰ τὴν γῆν φερομένων ἔνθα καὶ ἔνθα χειμάρρου δίκην, τὸ τῶν εὐσεβῶν γένος ἐτίμησε τὸ δαιμόνιον. Περικαταληφθέντων γὰρ ὑπὸ <pb facs="operaexrecension06arisuoft_0151"/> τοῦ ῥεύματος διὰ τὸ βαστάζειν γέροντας ἐπὶ τῶν ὥμων γονεῖς καὶ σώζειν, πλησίον αὠτῶν γενόμενον τὸ τοῦ πυρὸς ῥεῦμα ἐξεσχίσθη, παρέτρεψέ τε τοῦ φλογμοῦ τὸ μὲν ἔνθα τὸ δὲ ἔνθα, καὶ ἐτήρησεν ἀβλαβεῖς ἃμα τοῖς γονεῦσι τοὺς νεανίσκους.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="155">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:155" n="1">
+    <p rend="indent">Λέγεται τὸν ἀγαλματοποιὸν Φεδίαν κατασκευάζοντα τὴν ἐν ἀκροπόλει Ἀθηνᾶν ἐν μεσότητι ταύτης τῆς ἀσπίδος τὸ ἑαυτοῦ πρόσωπον ἐντυπώσασθαι, καὶ συνδῆσαι τῷ ἀγάλματι διά τινος ἀφανοῦς δημιουργίας, ὥστ’ ἐξ ἀνάγκης, εἴ τις βούλοιτο αὐτὸ περιαιρεῖν, τὸ σύμπαν ἄγαλμα λύειν τε καὶ σνγχεῖν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="156">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:156" n="1">
+    <p rend="indent">Φασὶν ὡς ἀνδριὰς ὁ τοῦ Βίτυος ἐν Ἄργει ἀπέκτεινε [τὸν αἲτιον] τοῦ θανάτου τῷ Βὑτυ, θεωροῦντι ἐμπεσών. ΅Εοι. κεν οὖν οὐκ εἰκῇ τὰ τοιαῦτα γίνεσθαι,</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="157">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:157" n="1">
+    <p rend="indent">Φασὶ τούς κύνας μόνον διώκειν τὰ θηρία πρὸς τὰς κορνφὰς τῶν Μελάνων καλουμένων ὀρῶν, ἀλλ’ ἀναστρέφειν, ὅταν ἄχρι τούτων διώκωσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="158">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:158" n="1">
+    <p rend="indent">Ἐν τῷ Φάσιδι ποταμῷ γεννᾶσθαι ῥάβδον ὀνομαζομένην λευκόφυλλον, ἣν οἱ ζηλότυποι τῶν ἀνδρῶν δρεπόμενοι ῥίπτουσι περὶ τὸν παρθένιον θάλαμον, καὶ ἀνόθευτον τηροῦσι τὸν γάμον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="159">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:159" n="1">
+<p>Ἐν δὲ τῷ Τίγριδι γίνεσθαί φασι λίθον μωδῶν κεκλημένον βαρβαρικῶς, τῆ χρόᾳ πάνυ λευκόν, ὃν ἐὰν κατέχῃ τις, ὑπὸ θηρίων οὐδὲν ἀδικεῖται</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="160">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:160" n="1">
+<p>Ἐν δὲ τῷ Σκαμάνδρῳ γίνεσθαί φασι βοτάνην σίστρον καλουμένην, παραπλησίαν ἐρεβίνθῳ, κόκκους δ’ ἔχει σειομένους, ὅθεν τὴν προσηγορίαν ἔλαβε· ταύτην τοὺς κατέχοντας μήτε δαιμόνιον μήτε φαντασίαν ἡντιναοῦν φοβεῖσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="161">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:161" n="1">
+    <p rend="indent">Περὶ Λιβύην ἄμπελός ἐστιν ἢν καλοῦσι μαινομένην τινές, <milestone unit="page" resp="Bekker" n="846b"/> ἣ τῶν καρπύῶν τοὺς μὲν πεπαίνει, τούς δ’ ὀμφακώδεις ἔχει, τοὺς δ’ ἀνθοῦντας καὶ βραχύν τινα χρόνον.</p></div></div><pb facs="operaexrecension06arisuoft_0152"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="162">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:162" n="1">
+    <p rend="indent">Περὶ τὸ Σίπυλον ὂρος γίνεσθαί φασι λίθον παρόμοιον κυλίνδρῳ, ὃν οἱ εὐσεβεῖς υἱοὶ ὅταν εὕρωσιν, ἐν τῷ τεμένει τῆς μητρὸς τῶν θεῶν τιθέασι, καὶ οὐδέποτε χάριν ἀσεβείας ῾αμαρτάνουσιν, ἀλλ’ ἀεί εἰσι φιλοπάτορες.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="163">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:163" n="1">
+    <p rend="indent">Ἐν ὄρει Τηϋγέτῳ γίνεσθαι βοτάνην καλουμένην χάρι· σίαν, ἣν γυναῖκες ἔαρος ἀρχομένου τοῖς τραχήλοις περιάπτουσι, καὶ ὑπὸ τῶν ἀνδρῶν συμπαθέστερον ἐρῶνται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="164">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:164" n="1">
+    <p rend="indent">Ὄθρυς ὂρος ἐστὶ Θετταλίας, ὃ φέρει ὄφεις τοὺς λεγομένους σῆπας, οἳ οὐκ ἔχουσι μίαν χροιάν, ἀλλ’ ἀεὶ ὁμοιοῦνται τῷ χώρῳ ἐν ὦ οἰκοῦσι. Τινὲς δὲ αὐτῶν ὅμοιον ἔχουσι τὸ χρῶμα τοῖς κόχλοις τῆς γῆς. Ἄλλοις δὲ χλοάζουσά ἐστιν ἡ φολίς. Ὄσοι δὲ αὐτῶν ἐν ψαμάθοις διατρίβουσι, ταύταις ἐξομοιοῦνται κατὰ τὸ χρῶμα. Δάκνοντες δὲ ἐμποιοῦσι δίψος. Ἔστι δὲ αὐτῶν τὸ δῆγμα οὗ τραχύ καὶ ἔμπυρον, ἀλλὰ κακόηθες.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="165">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:165" n="1">
+    <p rend="indent">Τοῦ περκνοῦ ἔχεως τῆ ἐχίδνῃ συγγινομένου, ἡ ἔχιδνα ἐν τῇ συνουσίᾳ τὴν κεφαλὴν ἀποκόπτει. Διὰ τοῦτο καὶ τὰ τέκνα, ὥσπερ τὸν θάνατον τοῦ πατρὸς μετερχόμενα, τὴν γαστέρα τῆς μητρὸς διαρρήγνυσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="166">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:166" n="1">
+    <p rend="indent">Ἐν τῷ Νείλῳ ποταμῷ γεννᾶσθαι λίθον φασὶ κυάμῳ παρόμοιον, ὃν ἄν κύνες ἲδωσιν, οὐχ ὑλακτοῦσι. Συντελεῖ δὲ καὶ τοῖς δαίμονί τινι γενομένοις κατόχοις· ἃμα γὰρ τῷ προστεθῆναι ταῖς ῥισὶν ἀπέρχεται τὸ δαιμόνιον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="167">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:167" n="1">
+    <p rend="indent">Ἐν δὲ τῷ Μαιάνδρῳ ποταμῷ τῆς Ἀσίας λίθον φασὶ σώφρονα καλούμενον κατ’ ἀντίφρασιν· ὃν ἐάν τις εἴς τινος ἐμβάλῃ κόλπον, ἐμμανὴς γίνεται καὶ φονεύει τινὰ τῶν συγγενῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="168">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:168" n="1">
+    <p rend="indent">Ῥῆνος καὶ Ἰστρος οἱ ποταμοὶ ὑπ’ ἄρκτον ῥέουσιν, ὁ μὲν Γερμανοὺς ὁ δὲ Παίονας παραμείβων· καὶ θέρους μὲν ναυσίπορον ἔχουσι τὸ ῥεῖθρον, τοῦ δὲ χειμῶνος παγέντες ὑπὸ κρύους ἐν πεδίου σχήματι καθιππεύονται.</p></div></div><pb facs="operaexrecension06arisuoft_0153"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="169">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:169" n="1">
+    <p rend="indent">Περὶ τὴν θούριον πόλιν δύο ποταμούς φασιν εἶναι, Σύβαριν καὶ Κρᾶθιν. Ὁ μὲν οὖν Σύβαρις τοὺς πίνοντας ἀπ’ αὐτοῦ πτυρτικοὺς εἶναι ποιεῖ, ὁ δὲ Κρᾶθις τοὺς ἀνθρώπους ξανθότριχας λουομένους.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="170">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:170" n="1">
+    <p>Ἐν δὲ Εὐβοίᾳ δύο ποταμοὐς εἶναι, ὧν ἀφ’ οὗ μὲν τὰ πίνοντα πρόβατα λευκὰ γίνονται· ὃς ὀνομάζεται Κέρβης· ὁ δὲ Νηλεύς, ὃς μέλανα ποιεῖ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="171">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:171" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="847a"/>Παρὰ Λυκόρμᾳ ποταμῷ γεννᾶσθαι βοτάνην λόγχῃ παρόμοιον, συντελοῦσαν πρὸς ἀμβλυωπίαν ἄριστα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="172">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:172" n="1">
+    <p rend="indent">Τὴν ἐν Συρακούσαις τῆς Σικελίας πηγὴν Ἀρέθουσαν διὰ πενταετηρίδος κινεῖσθαι λέγουσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="173">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:173" n="1">
+    <p rend="indent">Ἐν ὄρει βερεκυνθίῳ γεννᾶσθαι λίθον καλούμενον· μάχαιραν, ὃν ἐἀν εὕρῃ τις, τῶν μυστηρίων τῆς Ἐκάτης ἐπιτελουμένων ἐμμανὴς γίνεται, ὡς Εὔδοξός φησιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="174">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:174" n="1">
+<p>Ἐν ὄρει δὲ Τμώλῳ γεννᾶσθαι λίθον παρόμοιον κισσήρει, ὃς τετράκις τῆς ἡμέρας ἀλλάσσει τὴν χρόαν· βλέπεσθαι δὲ ὑπὸ παρθένων τῶν μὴ τῷ χρόνῳ φρονήσεως μετεχουσῶν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="175">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:175" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="847b"/> Ἐν Ἀρτέμιδος Ὀρθωσίας βωμῷ ταῦρον ἵστασθαι χρύσειον, ὃς κυνηγῶν εἰσελθόντων φωνὴν ἐπαφίησιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="176">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:176" n="1">
+    <p rend="indent">Ἐν Αἰτωλοῖς φασὶν ὁρᾶν τοὺς ἀσπάλακας ἀμυδρῶς, καὶ οὐδὲ σιτεῖσθαι γῆν ἀλλ’ ἀκρίδας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="177">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:177" n="1">
+    <p rend="indent">Τοὺς ἐλέφαντάς φασι κύειν ἔτη δύο, οἱ δὲ μῆνας ὀκτωκαίδεκα· ἐν δὲ τῆ έκτέξει δυστοκεῖν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1" n="178">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg027.1st1K-grc1:178" n="1">
+    <p rend="indent">Δημάρατον Τιμαίου τοῦ Λοκροῦ ἀκουστὴν νοσήσαντα ἄφωνόν φασιν ἐπὶ δέκα γενέσθαι ἡμέρας· ἐν δὲ τῇ ἑνδεκάτῃ ἀνανήψας βραδέως ἐκ τῆς παρακοπῆς ἔφησεν ἐκεῖνον τὸν χρόνον ἥδιστα αὑτῷ βεβιῶσθαι.
+</p></div></div></div>
+
+
+</body></text></TEI>
