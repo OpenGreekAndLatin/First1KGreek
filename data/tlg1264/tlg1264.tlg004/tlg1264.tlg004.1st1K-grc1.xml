@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+  <fileDesc>
+    <titleStmt>
+      <title xml:lang="lat">Fragmenta ad singulos libros relata</title>
+      <author>Chrysippus</author>
+      <editor>Hans Friedrich August von Arnim</editor>
+      <funder>Center for Hellenic Studies</funder>
+      <respStmt>
+        <resp>Published original versions of the electronic texts</resp>
+       <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+        <persName role="principal">Gregory Crane</persName>
+        <persName role="principal">Leonard Muellner</persName>
+        <persName role="principal">Bruce Robertson</persName>
+      </respStmt>
+      <respStmt>
+        <persName>Karina Cooper</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Niamh Tangney</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Charlotte Houghton</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital editor</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg1264.tlg004.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-08-23"/>
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author>Chrysippus</author>
+          <title xml:lang="lat">Stoicorum veterum fragmenta</title>
+          <editor>Hans Friedrich August von Arnim</editor>
+          <imprint>
+            <pubPlace>Stuttgart</pubPlace>
+            <publisher>Teubner</publisher>
+            <date>1903</date>
+            <date type="printing">1964</date>
+          </imprint>
+          <biblScope unit="volume">3</biblScope>
+        </monogr>
+        <ref target="https://archive.org/details/stoicorumveterum03arniuoft/page/194/mode/2up">Internet Archive</ref>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+  <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+    <refsDecl n="CTS">
+      <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>This pointer pattern extracts fragment.</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+      <language ident="lat">Latin</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021-11-29" who="Lisa Cerrato">markup review</change>
+    <change when="2021-10-05" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" xml:lang="grc">
+      <pb facs="stoicorumveterum03arniuoft_0202"/>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="1">
+        <head>I. Περὶ Ἀγαθῶν (<bibl>περὶ Ἀγαθοῦ <foreign xml:lang="lat">fr. 3</foreign></bibl>)</head>
+        <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.1: III p. 33, 19     <cb n="2"/>n. 137</foreign> (ἐν τῷ πρώτῳ)</p>
+        <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.2: III p. 35, 38      <cb n="2"/>n. 148</foreign> (ἐν τῷ πρώτῳ)</p>
+        <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.3: III p. 102, 11     <cb n="2"/>n. 418</foreign> (ἐν τῷ δεύτερῳ)</p>
+        <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.4: III p. 9, 2      <cb n="2"/>n. 25</foreign> (ἐν τῷ τρίτῳ).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="2">
+        <head>II. Περὶ Ἀνομολογίας</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 94, 43      <cb n="2"/>n. 390.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="3">
+        <head>III. Περὶ Ἀρετῶν πρὸς Πόλλιν βʹ (<foreign xml:lang="lat">Titulus II p. 9, 42</foreign>)</head>
+        <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.1: III p. 13, 18     <cb n="2"/>n. 49</foreign> (ἐν τῷ πρώτῳ)</p>
+          <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.2: III p. 72, 30     <cb n="2"/>n. 295</foreign> (ἐν τῷ πρώτῳ)</p>
+          <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.3: III p. 85, 27     <cb n="2"/>n. 350</foreign> (ἐν τῷ περὶ ἀρ.).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="4">
+        <head>IV. Περὶ τῆς τῶν Ἀρετῶν διαφορᾶς πρὸς Διόδωρον δʹ (<foreign xml:lang="lat">Titulus II p. 9, 40</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 61, 20     <cb n="2"/>n. 256</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 62, 20     <cb n="2"/>n. 259.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="5">
+        <head>V. Περὶ τοῦ ποιὰς εἶναι τὰς Ἀρετάς αʹ (<foreign xml:lang="lat">Titulus II p. 9, 41.</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 60, 13      <cb n="2"/>n. 256</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 62, 22      <cb n="2"/>n. 259.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="6">
+        <head>VI. Περὶ Αὐξανομένου</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>II p. 131, 6     <cb n="2"/>n. 357.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="7">
+        <head>VII. Περὶ Βίων Δ</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 173, 23     <cb n="2"/>n. 691 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 174, 15. 21     <cb n="2"/>n. 693 (<foreign xml:lang="grc">ἐν τοῖς π. β.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 175, 3      <cb n="2"/>n. 697 (<foreign xml:lang="grc">ἐν πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 175, 31     <cb n="2"/>n. 701 (<foreign xml:lang="grc">ἐν πρώτῳ?</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: III p. 180, 14     <cb n="2"/>n. 716 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.6: III p. 172, 6      <cb n="2"/>n. 685 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.7: III p. 176, 12     <cb n="2"/>n. 702 (<foreign xml:lang="grc">ἐν τῷ τετάρτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.8: III p. 176, 24     <cb n="2"/>n. 703 (<foreign xml:lang="grc">ἐν τῷ τετάρτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.9: II p. 16, 29     <cb n="2"/>n. 42 (<foreign xml:lang="grc">ἐν τῷ τετάρτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.10: II p. 89, 41      <cb n="2"/>n. 270 (<foreign xml:lang="grc">ἐν τῷ τετάρτῳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="8">
+        <head>VIII. Περὶ τῆς Διαλεκτικῆς πρὸς Ἀριστοκρέοντα Δ (<foreign xml:lang="lat">Titulus II p. 9, 34 in catalogo librorum moralium</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 38, 21     <cb n="2"/>n. 126.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="9">
+        <head>IX. Περὶ τῶν Δι’ αὑτὰ Αἱρετῶν Α</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 176, 31     <cb n="2"/>n. 704</p>
+        <pb facs="stoicorumveterum03arniuoft_0203"/>
+        <p rend="indent"><foreign xml:lang="lat">fr. 2:</foreign> <bibl xml:lang="lat">Athenaeus Deipnos. VII 285d.</bibl> Χρύσιππος δ’ ὁ φιλόσοφος ἐν τῷ περὶ τῶν δι’ αὑτὰ αἱρετῶν <q>τὴν ἀφύην, φησίν, [τὴν] ἐν Ἀθήναις μὲν διὰ τὴν δαψίλειαν ὑπερορῶσι καὶ πτωχικὸν εἶναί φασιν ὄψον, ἐν ἑτέραις δὲ πόλεσιν ὑπερθαυμάζουσι πολὺ χείρω γενομένην. εἶθ’ οἱ μέν, φησίν, ἐνταῦθα τοὺς ἀδριατικοὺς ὄρνιθας τρέφειν σπεύδουσιν ἀχρειοτέρους ὄντας, ὅτι τῶν παρ’ ἡμῖν πολὺ ἐλάττους εἰσίν· ἐκεῖνοι δὲ τἀναντία μεταπέμπονται τοὺς ἐνθάδε.</q></p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 36, 2     <cb n="2"/>n. 148 (<foreign xml:lang="grc">ἐν τῷ περὶ τῶν καθ’ αὑτὰ αἱρετῶν</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="10">
+        <head>X. Περὶ τῶν μὴ Δι’ αὑτὰ Αἱρετῶν</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 185, 17     <cb n="2"/>n. 744</p>
+       <p rend="indent"><foreign xml:lang="lat"><cb n="1"/>fr.2</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. IV p. 159a.</bibl> οἷον ὁ καλὸς Χρύσιππος διαγράφει ἐν τῷ περὶ τῶν μὴ δι’ αὑτὰ αἱρετῶν λέγων ὧδε <q>ἐπὶ τοσοῦτον τινὲς ἐκπίπτουσι πρὸς τὸ ἀργύριον ὥστε ἱστορῆσθαι πρὸς τῇ τελευτῇ τινὰ μὲν καταπιόντα οὐκ ὀλίγους χρυσοῦς ἀποθανεῖν τὸν δὲ ἕτερον ῥαψάμενον εἴς τινα χιτῶνα καὶ ἐνδύντ’ αὐτὸν ἐπισκῆψαι τοῖς οἰκείοις θάψαι οὕτως, μήτε καύσαντας μήτε θεραπεύσαντας.</q></p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="11">
+        <head>XI. Περὶ τοῦ Δικάζειν Α</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 326, 32      <cb n="2"/>n. 1125</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 175, 12     <cb n="2"/>n. 699.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="12">
+        <head>XII. Περὶ Δικαιοσύνης (<foreign xml:lang="lat">cf. II p. 3, 10</foreign>)</head>
+        <p rend="indent" xml:lang="lat">fr. 1: <bibl>Cicero de republ. III 8, 12</bibl> et reqeriret et tueretur, alter (scil. Aristoteles) autem de ipsa iustitia quattuor implevit sane grandis libros. Nam ab Chrysippo nihil magnum nec magnificum desideravi, qui suo quodam more loquitur, ut omnia verborum momentis, non rerum ponderibus examinet.</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 11, 44     <cb n="2"/>n. 30</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 337, 35      <cb n="2"/>n. 1175 (ἐν τῷ πρώτῳ)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 89, 27      <cb n="2"/>n. 367 (ἐν τῷ πρώτῳ)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: III p. 8, 10. 20     <cb n="2"/>n. 23 (ἐν τῷ τρίτῳ)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.6: III p. 146, 10     <cb n="2"/>n. 545 (ἐν τῷ τρίτῳ)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.7: III p. 186, 3      <cb n="2"/>n. 747 (ἐν τῷ τρίτῳ περὶ δικαίου)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.8: III p. 186, 7      <cb n="2"/>n. 748 (ἐν τῷ περὶ δικαιοσύνης)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.9: III p. 177, 2      <cb n="2"/>n. 705 (ἐν τοῖς περὶ δικαιοσύνης).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="12a">
+        <head>XIIa. Περὶ Δικαιοσύνης πρὸς Πλάτωνα (<foreign xml:lang="lat">fortasse pars eiusdem operis</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 110, 29     <cb n="2"/>n. 455 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 37, 16      <cb n="2"/>n. 157</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 70, 30      <cb n="2"/>n. 288</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 77, 20      <cb n="2"/>n. 313.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="12b">
+        <head>XIIb. Περὶ Δικαιοσύνης πρὸς Ἀριστοτέλην (<foreign xml:lang="lat">fortasse pars eiusdem operis</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 8, 22     <cb n="2"/>n. 24 (<foreign xml:lang="grc">Ἀριστοτέλει περὶ δικαιοσύνης ἀντιγράφων</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="13">
+        <head>XIII. Περὶ Δικαιοσύνης Ἀποδείξεις</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 71, 5. 10     <cb n="2"/>n. 289</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 73, 13      <cb n="2"/>n. 297.</p></div>
+        <pb facs="stoicorumveterum03arniuoft_0204"/>
+      
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="14">
+        <head>XIV. Περὶ τοῦ Διός Α</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 50, 31      <cb n="2"/>n. 211</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 52, 41      <cb n="2"/>n. 226.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="15">
+        <head>XV. Περὶ Δυνατῶν πρὸς Κλεῖτον Δ (<foreign xml:lang="lat">Titulus in catalogo II p. 5, 22</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 92, 33. 93, 10. 15     <cb n="2"/>n. 283 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 174, 5. 24     <cb n="2"/>n. 551 (<foreign xml:lang="grc">ἐν τῷ τετάρτῳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="16">
+        <head>XVI. Περὶ Εἱμαρμένης Β (<foreign xml:lang="lat">hoc opus restituere conatus est A. Gercke Chrysippea Fleck. ann. suppl. XIV</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 264, 17      <cb n="2"/>n. 913</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 265, 24      <cb n="2"/>n. 915</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 267, 26      <cb n="2"/>n. 927</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: II p. 270, 8     <cb n="2"/>n. 939</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: II p. 309, 33      <cb n="2"/>n. 1049</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.6: II p. 266, 33      <cb n="2"/>n. 925 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.7: II p. 292, 23      <cb n="2"/>n. 998 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.8: II p. 293, 12      <cb n="2"/>n. 999 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="17">
+        <head>XVII. Εἰσαγωγὴ τῆς περὶ Ἀγαθῶν καὶ Κακῶν πραγματείας (<foreign xml:lang="lat">respici videtur: II p. 11, 45</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 167, 3      <cb n="2"/>n. 667.</p>
+       <p rend="indent"><foreign xml:lang="lat">fr. 2</foreign>: <bibl xml:lang="lat">Athenaeus Deipnos. IV p. 159d.</bibl> Χρύσιππος δ’ ἐν τῇ εἰσαγωγῇ τῇ εἰς τὴν περὶ ἀγαθῶν καὶ κακῶν πραγματείαν νεανίσκον φησί τινα ἐκ τῆς Ἰωνίας σφόδρα πλούσιον ἐπιδημῆσαι ταῖς Ἀθήναις πορφυρίδα ἠμφιεσμένον ἔχουσαν χρυσᾶ κράσπεδα. πυνθανομένου δέ τινος αὐτοῦ ποδαπός ἐστιν ἀποκρίνασθαι ὅτι πλούσιος.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 3</foreign>: <bibl xml:lang="mul">Origenes contra Celsum IV 63 Vol. I p. 334, 15 Kö. (p. 552 Delarue).</bibl> (<foreign xml:lang="lt">Dum refutare studet Celsi opinionem</foreign> τὰ κακὰ οὔτε πλείονα οὔτε ἐλάττονα γίγνεσθαι) καὶ ἄλλως δ’ ἐλέγχεται ὁ τοῦ Κέλσου περὶ τῶν κακῶν λόγος ἀπὸ τῶν ἐξετασάντων φιλοσόφων τὰ περὶ ἀγαθῶν καὶ κακῶν καὶ παραστησάντων καὶ ἀπὸ τῆς ἱστορίας ὅτι πρῶτον μὲν ἔξω πόλεως καὶ προσωπεῖα περικείμεναι αἱ ἑταῖραι ἐξεμίσθουν ἑαυτὰς τοῖς βουλομένοις· εἶθ’ ὕστερον καταφρονήσασαι ἀπέθεντο τὰ προσωπεῖα καὶ ὑπὸ τῶν νόμων μὴ ἐπιτρεπόμεναι εἰσιέναι εἰς τὰς πόλεις, ἔξω ἦσαν αὐτῶν· πλείονος δὲ τῆς διαστροφῆς γινομένης ὁσημέραι, ἐτόλμησαν καὶ εἰς τὰς πόλεις εἰσελθεῖν. Ταῦτα δὲ Χρύσιππός φησιν ἐν τῇ περὶ ἀγαθῶν καὶ κακῶν εἰσαγωγῇ· <q>Ὅθεν ὡς τῶν κακῶν πλειόνων καὶ ἡττόνων γινομένων, ἔστι λαβεῖν ὅτι οἱ καλούμενοι ἀμφίβολοι ἦσάν ποτε προεστηκότες, πάσχοντες καὶ διατιθέντες καὶ ταῖς ἐπιθυμίαις τῶν εἰσιόντων δουλεύοντες, ὕστερον δὲ οἱ ἀγορανόμοι τούτους ἐξῶσαν.</q> Καὶ περὶ μυρίων δ’ ἂν τῶν ἀπὸ κεχυμένης τῆς κακίας ἐπεισελθόντων τῷ βίῳ τῶν ἀνθρώπων ἔστιν εἰπεῖν, ὅτι πρότερον οὐκ ἦν. Αἱ γοῦν ἀρχαιόταται ἱστορίαι, καίτοι γε μυρία ὅσα κατηγοροῦσαι τῶν ἁμαρτανόντων ἀῤῥητοποιοὺς οὐκ ἴσασι.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="18">
+        <head>XVIII. Περὶ τῶν Ἐναντίων πρὸς Διονύσιον Β (<foreign xml:lang="lat">Titulus in catalogo librorum moralium II p. 9, 9</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 49, 13 sq.     <cb n="2"/>n. 172 sq. ?</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="19">
+        <head>XIX. Περὶ Ἐνυπνίων Α (<foreign xml:lang="lat">cf. Cic. de div. I 6</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 342, 4     <cb n="2"/>n. 1187</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 344, 39. 345, 11     <cb n="2"/>n. 1204. 1205</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 345, 21      <cb n="2"/>n. 1206.</p></div>
+        <pb facs="stoicorumveterum03arniuoft_0205"/>
+      
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="20">
+        <head>XX. Περὶ Ἕξεων (<foreign xml:lang="lat">libri περὶ</foreign> ἕξεως πρὸς Κλέωνα αʹ βʹ γʹ <foreign xml:lang="lat">in catalogo
+        librorum moralium II p. 9, 38 fortasse diversi</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.II p. 147, 38     <cb n="2"/>n. 449.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="21">
+        <head>XXI. Ἐρωτικαὶ Ἐπιστολαί</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.II p. 314, 15     <cb n="2"/>n. 1072.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="22">
+        <head>XXII. Περὶ Ἔρωτος</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 180, 14     <cb n="2"/>n. 716</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 180, 36     <cb n="2"/>p. 718.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="23">
+        <head>XXIII. Περὶ Θεῶν Γ (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 201, 4     <cb n="2"/>n. 687</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 305, 26      <cb n="2"/>n. 1022 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 315, 1     <cb n="2"/>n. 1076 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: II p. 316, 20      <cb n="2"/>n. 1078 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: II p. 315, 25      <cb n="2"/>n. 1077 (in primo)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.6: II p. 316, 12      <cb n="2"/>n. 1077 (in secundo)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.7: II p. 316, 16      <cb n="2"/>n. 1078 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.8: II p. 326, 32      <cb n="2"/>n. 1125 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.9: II p. 309, 12      <cb n="2"/>n. 1049 (<foreign xml:lang="grc">ἐκ τοῦ τρίτου</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.10: II p. 313, 21     <cb n="2"/>n. 1068 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.11: III p. 50, 40     <cb n="2"/>n. 212 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ)</foreign></p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.12: III p. 80, 33     <cb n="2"/>n. 326 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="24">
+        <head>XXIV. Περὶ Ἡδονῆς (<foreign xml:lang="lat">num idem liber qui inscribitur</foreign> περὶ τοῦ καλοῦ
+        καὶ τῆς ἡδονῆς? <foreign xml:lang="lat">Cf. catalogum librorum moralium II p. 10, 3－6</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.III p. 37, 13     <cb n="2"/>n. 156.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="25">
+        <head>XXV. Ἠθικῶν Ζητημάτων Ι</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 141, 23     <cb n="2"/>n. 23</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 50, 18      <cb n="2"/>n. 210 (<foreign xml:lang="grc">ἐν τῷ ἕκτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 57, 39      <cb n="2"/>n. 243 (<foreign xml:lang="grc">ἐν τῷ ἕκτῳ</foreign>)</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 4</foreign>: <bibl xml:lang="mul">Scholia in Eur. Androm. v. 276 Vol. IV p. 152 Dind. Vol. II p. 274 Schw.</bibl> Χρύσιππος δὲ ἐν Ἠθικῶν δεκάτῳ λογισάμενον τὸν Πάριν τίνων δεῖ μᾶλλον ἀντέχεσθαι, πολεμικῆς ἀσκήσεως ἢ ἐρωτικῆς ἢ βασιλείας, νεῦσαι [αὐτὸν] μᾶλλον εἰς τὰ ἐρωτικὰ καὶ οὕτως τὸν περὶ τῆς κρίσεως μῦθον συντεθῆναι.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="26">
+        <head>XXVI. Περὶ τοῦ Καθήκοντος Ζ (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 186, 39     <cb n="2"/>n. 752 (<foreign xml:lang="grc">ἐν τῷ περὶ τοῦ κ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 41, 34      <cb n="2"/>n. 174 (<foreign xml:lang="grc">ἐν τῷ ἕκτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 173, 7      <cb n="2"/>n. 688 (<foreign xml:lang="grc">ἐν τῷ ἑβδόμῳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="27">
+        <head>XXVII. Περὶ τοῦ Καλοῦ Α (<foreign xml:lang="lat">sine dubio diversus a libro XXVIII</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 9, 29     <cb n="2"/>n. 30 (<foreign xml:lang="grc">ἐν τοῖς περὶ τοῦ κ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 9, 24     <cb n="2"/>n. 29 (<foreign xml:lang="grc">ἐν τῷ περὶ τοῦ κ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 76, 4     <cb n="2"/>n. 308 (<foreign xml:lang="grc">ἐν τῷ περὶ τοῦ κ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 178, 30     <cb n="2"/>n. 709a (<foreign xml:lang="grc">ἐν τῷ περὶ τοῦ κ.</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="28">
+        <head>XXVIII. Περὶ τοῦ Καλοῦ καὶ τῆς Ἡδονῆς πρὸς Ἀριστοκρέοντα Ι (<foreign xml:lang="lat">Titulus in catalogo II p. 10, 3</foreign>)</head>
+        <p rend="indent" xml:lang="lat">fr. 1: <bibl>Gellius N. A. XIV 4.</bibl> Condigne mehercule et condecore Chrysippus in librorum, qui inscribuntur <foreign xml:lang="grc">περὶ καλοῦ καὶ ἡδονῆς</foreign>, primo, os et oculos Iustititiae vultumque eius severis atque venerandis verborum <pb facs="stoicorumveterum03arniuoft_0206"/> coloribus depinxit. Facit quippe imaginem Iustitiae fierique solitam esse dicit a pictoribus rhetoribusque antiquioribus ad hunc ferme modum: <q>forma atque filo virginali, aspectu vehementi et formidabili, luminibus oculorum acribus, neque humilis neque atrocis, sed reverendae cuiusdam tristitiae dignitate.</q> Ex imaginis autem istius significatione intellegi voluit, iudicem, qui Iustitiae antistes est, oportere esse gravem, sanctum, severum, incorruptum, inadulabilem contraque improbos nocentesque immisericordem atque inexorabilem erectumque et arduum ac potentem, vi et maiestate aequitatis veritatisque terrificum. Verba ipsa Chrysippi de Iustitia scripta haec sunt:</p>
+<p rend="indent"><quote>Παρθένος δὲ εἶναι λέγεται κατὰ σύμβολον τοῦ ἀδιάφθορος εἶναι καὶ μηδαμῶς ἐνδιδόναι τοῖς κακούργοις, μηδὲ προσίεσθαι μήτε τοὺς ἐπιεικεῖς λόγους μήτε παραίτησιν καὶ δέησιν μήτε κολακείαν μήτε ἄλλο μηδὲν τῶν τοιούτων· οἷς ἀκολούθως καὶ σκυθρωπὴ γράφεται καὶ συνεστηκὸς ἔχουσα τὸ πρόσωπον καὶ ἔντονον καὶ δεδορκὸς βλέπουσα, ὥστε τοῖς μὲν ἀδίκοις φόβον ἐμποιεῖν, τοῖς δὲ δικαίοις θάρσος· τοῖς μὲν προσφιλοῦς ὄντος τοῦ τοιούτου προσώπου, τοῖς δὲ ἑτέροις προσάντους.</quote></p>
+       <p rend="indent" xml:lang="lat">Haec verba Chrysippi eo etiam magis ponenda existimavi, ut prompta ad considerandum iudicandumque sint, quoniam legentibus ea nobis delicatiores quidam disciplinarum philosophi, Saevitiae imaginem istam esse, non Iustitiae, dixerunt.</p>
+      <p rend="indent"><foreign xml:lang="lat">fr. 2</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. XIII p. 565 a.</bibl> τοῦ ξύρεσθαι τὸν πώγωνα κατ’ Ἀλέξανδρον εὑρημένου, ὥς φησιν ὑμῶν ὁ Χρύσιππος ἐν τῷ τετάρτῳ περὶ τοῦ καλοῦ καὶ τῆς ἡδονῆς. οὐκ ἀκαίρως δέ, ὡς ἐμαυτὸν πείθω, μεμνήσομαι τῆς λέξεως· χαίρω γὰρ πάνυ τῷ ἀνδρὶ διά τε τὴν πολυμαθίαν καὶ τὴν τοῦ ἤθους ἐπιείκειαν. λέγει δὲ οὕτως ὁ φιλόσοφος "τὸ ξύρεσθαι τὸν πώγωνα κατ’ Ἀλέξανδρον προῆκται, τῶν προτέρων οὐ χρωμένων αὐτῷ καὶ γὰρ Τιμόθεος ὁ αὐλητὴς πώγωνα μέγαν ἔχων ηὔλει, καὶ ἐν Ἀθήναις διατηροῦσιν οὐ σφόδρα ἀρχαῖον τὸν πρῶτον προσκειράμενον παρωνύμιον ἔχειν Κόρσην. διὸ καὶ Ἄλεξις ἔφη που·
+        <quote type="blockquote">ἂν πιττοκοπούμενόν τιν’ ἢ ξυρούμενον
+        <lb/>ὁρᾶς, δυοῖν τούτων ἔχειν δεῖ θάτερον·
+        <lb/>ἢ γὰρ στρατεύειν ἐπινοεῖν μοι φαίνεται
+        <lb/>καὶ πάντα τῷ πώγωνι δρᾶν ἐναντία
+        <lb/>ἢ πλουσιακὸν τούτῳ τι προσπίπτει κακόν.
+        <lb/>τί γὰρ αἱ τρίχες λυποῦσιν ἡμᾶς, πρὸς θεῶν,
+        <lb/>δι’ ἃς ἀνὴρ ἕκαστος ἡμῶν φαίνεται,
+        <lb/>εἰ μή τι ταύταις ἀντιπράττεσθ’ ὑπονοεῖς.</quote>
+        Διογένης δὲ ἰδών τινα οὕτως ἔχοντα τὸ γένειον ἔφησε, <q>μή τι ἔχεις ἐγκαλεῖν τῇ φύσει ὅτι ἄνδρα σ’ ἐποίησε καὶ οὐ γυναῖκα; ἕτερον δέ τινα ἐπὶ ἵππου ἰδὼν παραπλησίως ἔχοντα καὶ μεμυρισμένον καὶ τούτοις ἀκολούθως ἠμφιεσμένον, πρότερον μὲν ἔφησε ζητεῖν τί ἐστιν ὁ ἱππόπορνος, νῦν δὲ εὑρηκέναι. ἐν Ῥόδῳ δὲ νόμου ὄντος μὴ ξύρεσθαι οὐδὲ ὁ ἐπιληψόμενος οὐδείς ἐστι διὰ τὸ πάντας ξύρεσθαι. ἐν Βυζαντίῳ δὲ ζημίας ἐπικειμένης τῷ ἔχοντι κουρεῖ ξυρὸν οὐδὲν ἧττον πάντες χρῶνται αὐτῷ.</q> καὶ ταῦτα μὲν ὁ θαυμάσιος εἴρηκε Χρύσιππος.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 3</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. IV p. 137 f.</bibl> Χρύσιππός τ’ ἐν τετάρτῳ περὶ τοῦ καλοῦ καὶ τῆς ἡδονῆς φησὶν <q>ἐν Ἀθήναις δὲ ἱστοροῦσιν οὐ πάνυ ἀρχαίων δυοῖν γενομένων δείπνων, ἐν Λυκείῳ τε καὶ Ἀκαδημείᾳ, <pb facs="stoicorumveterum03arniuoft_0207"/> τοῦ μὲν εἰς τὴν Ἀκαδήμειαν εἰσενέγκαντος ὀψοποιοῦ λοπάδα πρὸς ἑτέραν τινὰ χρείαν τὸν κέραμον κατᾶξαι πάντα τοὺς ἱεροποιούς, ὡς μακρόθεν οὐκ ἀστείας παρεισδύσεως γινομένης, δέοντος ἀπέχεσθαι τούτων ⟨τῶν⟩ μακρόθεν· τὸν δ’ ἐν τῷ Λυκείῳ κρέας ταριχηρὸν εἰς τάριχος διασκευάσαντα μαστιγωθῆναι ὡς παρασοφιζόμενον πονηρῶς.</q></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 4</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. IX p. 373a.</bibl> καὶ Χρύσιππος δ’ ὁ φιλόσοφος ἐν τῷ πέμπτῳ περὶ τοῦ καλοῦ καὶ τῆς ἡδονῆς γράφει οὕτως <q>καθάπερ τινὲς τὰς λευκὰς ὄρνιθας τῶν μελαινῶν ἡδίους εἶναι μᾶλλον.</q></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 5</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. VIII 335 b.</bibl> Χρύσιππον δ’, ἄνδρες φίλοι, τὸν τῆς Στοᾶς ἡγεμόνα κατὰ πολλὰ θαυμάζων ἔτι μᾶλλον ἐπαινῶ, τὸν πολυθρύλητον ἐπὶ τῇ ὀψολογίᾳ Ἀρχέστρατον ἀεί ποτε μετὰ Φιλαινίδος κατατάττοντα, εἰς ἣν ἀναφέρεται τὸ περὶ ἀφροδισίων ἀκόλαστον σύγγραμμα.</p>
+        <p rend="indent"><bibl xml:lang="lat">id. 335a.</bibl> ἀλλ’ οὖν ὅ γε θαυμασιώτατος Χρύσιππος ἐν τῷ πέμπτῳ περὶ τοῦ καλοῦ καὶ τῆς ἡδονῆς φησί <q>καὶ βιβλία τά τε Φιλαινίδος καὶ τὴν τοῦ Ἀρχεστράτου Γαστρονομίαν καὶ δυνάμεις ἐρωτικὰς καὶ συνουσιαστικάς, ὁμοίως δὲ καὶ τὰς θεραπαίνας ἐμπείρους τοιῶνδε κινήσεών τε καὶ σχημάτων καὶ περὶ τὴν τούτων μελέτην γινομένας.</q> καὶ πάλιν <q>ἐκμανθάνειν τ’ αὐτοὺς τὰ τοιαῦτα καὶ κτᾶσθαι τὰ περὶ τούτων γεγραμμένα Φιλαινίδι καὶ Ἀρχεστράτῳ καὶ τοῖς τὰ ὅμοια γράψασι.</q> κἂν τῷ ἑβδόμῳ δέ φησι <q>καθάπερ γὰρ οὐκ ἐκμανθάνειν τὰ Φιλαινίδος καὶ τὴν Ἀρχεστράτου Γαστρονομίαν ἔστιν ὡς φέροντά τι πρὸς τὸ ζῆν ἄμεινον.</q></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 6</foreign>: <bibl xml:lang="lat">Athenaeus Deipnos. I p. 4e.</bibl> Ἀρχέστρατος ὁ Συρακόσιος ἢ Γελῷος ἐν τῇ ὡς Χρύσιππος ἐπιγράφει Γαστρονομίᾳ, ὡς δὲ Λυγκεὺς καὶ Καλλίμαχος Ἡδυπαθείᾳ.</p>
+        <p rend="indent"><foreign xml:lang="lat">Cf. III p. 104a.</foreign> Εἰς ταῦτ’ οὖν τις ἀποβλέπων, ἄνδρες φίλοι, εἰκότως ἂν ἐπαινέσειε τὸν καλὸν Χρύσιππον, κατιδόντα ἀκριβῶς τὴν Ἐπικούρου φύσιν καὶ εἰπόντα <q>μητρόπολιν εἶναι τῆς φιλοσοφίας αὐτοῦ τὴν Ἀρχεστράτου γαστρολογίαν, ἣν πάντες οἱ τῶν φιλοσόφων γαστρίμαργοι Θέογνίν τινα αὑτῶν εἶναι λέγουσι, τὴν καλὴν ταύτην ἐποποΐαν.</q></p>
+        <p rend="indent"><foreign xml:lang="lat">Cf. VII p. 278e.</foreign> Χρύσιππος δ’ αὐτὸν (<foreign xml:lang="lat">scil. Archestratum</foreign>) ὁ ὄντως φιλόσοφος καὶ περὶ πάντ’ ἀνὴρ ἀρχηγὸν Ἐπικούρῳ φησὶ γενέσθαι καὶ τοῖς τὰ τούτου ἐπισταμένοις τῆς πάντα διαλυμηναμένης ἡδονῆς.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 7</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. XIV p. 616a.</bibl> καὶ Χρύσιππος δ’ ὁ φιλόσοφος ἐν πέμπτῳ περὶ τοῦ καλοῦ καὶ τῆς ἡδονῆς περὶ τοῦ Πανταλέοντος τάδε γράφει <q>ὁ δὲ πλάνος Πανταλέων τελευτᾶν μέλλων ἑκάτερον τῶν υἱῶν κατ’ ἰδίαν ἐξηπάτησε, φήσας μόνῳ αὐτῷ λέγειν, ὅπου κατορωρύχοι τὸ χρυσίον· ὥστε μάτην ὕστερον κοινῇ σκάπτοντας αἰσθέσθαι ἐξηπατημένους.</q></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 8</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. XIV p. 616b.</bibl> οὐκ ἠπόρει δ’ ἡμῶν τὸ συμπόσιον οὐδὲ τῶν φιλοσκωπτούντων. περὶ δὲ τοιούτου τινὸς πάλιν ὁ Χρύσιππος ἐν τῷ αὐτῷ (<foreign xml:lang="lat">scil.</foreign> ἐν τῷ πέμπτῳ περὶ τοῦ καλοῦ καὶ τῆς ἡδονῆς) γράφει <q>φιλοσκώπτης μέλλων ὑπὸ τοῦ δημίου σφάττεσθαι εἶπε θέλειν ὥσπερ τὸ κύκνειον ᾄσας ἀποθανεῖν. ἐπιτρέψαντος δ’ ἐκείνου ἔσκωψεν.</q></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 9</foreign>: <bibl xml:lang="lat">Athenaei Deipnosoph. epit. lib. I p. 9c.</bibl> τὸ παρὰ πολλοῖς λασταυροκάκκαβον <pb facs="stoicorumveterum03arniuoft_0208"/> καλούμενον βρῶμα, ὥς φησι Χρύσιππος ⟨ἐν τῷ περὶ καλοῦ καὶ ἡδονῆς⟩ οὗ ἡ κατασκευὴ περιεργοτέρα.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 10</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. I p. 5e.</bibl> Ἀπὸ τούτου τοῦ Φιλοξένου καὶ φιλοξένειοί τινες πλακοῦντες ὠνομάσθησαν. περὶ τούτου Χρύσιππός φησιν <!--<q>-->ἐγὼ κατέχω τινὰ ὀψοφάγον ἐπὶ τοσοῦτον ἐκπεπτωκότα τοῦ μὴ ἐντρέπεσθαι τοὺς πλησίον ἐπὶ τοῖς γινομένοις, ὥστε φανερῶς ἐν τοῖς βαλανείοις τήν τε χεῖρα συνεθίζειν πρὸς τὰ θερμά, καθιέντα εἰς ὕδωρ θερμόν, καὶ τὸ στόμα ἀναγαργαριζόμενον θερμῷ, ὅπως δηλονότι ἐν τοῖς θερμοῖς δυσκίνητος ἦ. ἔφασαν γὰρ αὐτὸν καὶ τοὺς ὀψοποιοῦντας ὑποποιεῖσθαι, ἵνα θερμότατα παρατιθῶσι, καὶ μόνος καταναλίσκῃ αὐτός, τῶν λοιπῶν συνακολουθεῖν μὴ δυναμένων.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 11</foreign>: <bibl xml:lang="lat">Athenaeus VIII p. 336a.</bibl> (ὁ Σαρδανάπαλλος) ἐφ’ οὗ τοῦ τάφου ἐπιγεργάφθαι φησὶ Χρύσιππος τάδε
+        <quote type="blockquote">(<foreign xml:lang="lat">sequitur epigramma aliunde notum</foreign>)</quote>.
+        <foreign xml:lang="lat">Cf. p. 336f.</foreign> κρεῖττον δ’ ἂν εἶχε, φησὶν ὁ Χρύσιππος, εἰ μετελήφθη τὰ ἐπὶ τοῦ Σαρδαναπάλλου οὕτως
+        <quote type="blockquote">εὖ εἰδὼς ὅτι θνητὸς ἔφυς σὺν θυμὸν ἄεξε,
+        <lb/>τερπόμενος μύθοισι· φαγόντι σοι οὔτις ὄνησις.
+        <lb/>καὶ γὰρ ἐγὼ ῥάκος εἰμί, φαγὼν ὡς πλεῖστα καὶ ἡσθείς.
+        <lb/>ταῦτ’ ἔχω ὅσσ’ ἔμαθον καὶ ἐφρόντισα καὶ μετὰ τούτων
+        <lb/>ἔσθλ’ ἔπαθον· τὰ δὲ λοιπὰ καὶ ἡδέα πάντα λέλειπται.</quote></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 12</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. XV p. 686f.</bibl> καὶ ὁ θαυμασιώτατος δὲ Χρύσιππος τὴν ὀνομασίαν φησὶ λαβεῖν τὰ μύρα ἀπὸ τοῦ μετὰ πολλοῦ μόρου καὶ πόνου ματαίου γίνεσθαι. Λακεδαιμόνιοίτε ἐξελαύνουσι τῆς Σπάρτης τοὺς τὰ μύρα κατασκευάζοντας ὡς διαφθείροντας τοὔλαιον, καὶ τοὺς τὰ ἔρια δὲ βάπτοντας ὡς ἀφανίζοντας τὴν λευκότητα τῶν ἐρίων. Σόλων τε ὁ σοφὸς διὰ τῶν νόμων κεκώλυκε τοὺς ἄνδρας μυροπωλεῖν.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 13</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. XIV p. 659a.</bibl> ἐκάλουν δ’ οἱ παλαιοὶ τὸν μὲν πολιτικὸν μάγειρον Μαίσωνα τὸν δ’ ἐκτόπιον Τέττιγα. Χρύσιππος δ’ ὁ φιλόσοφος τὸν Μαίσωνα ἀπὸ τοῦ μασᾶσθαι οἴεται κεκλῆσθαι, οἷον τὸν ἀμαθῆ καὶ πρὸς γαστέρα νενευκότα, ἀγνοῶν ὅτι Μαίσων γέγονε κωμῳδίας ὑποκριτὴς Μεγαρεὺς τὸ γένος, ὃς καὶ τὸ προσωπεῖον εὗρε τὸ ἀπ’ αὐτοῦ καλούμενον μαίσωνα, ὡς Ἀριστοφάνης φησὶν ὁ Βυζάντιος ἐν τῷ περὶ προσώπων.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 14</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. II p. 67c.</bibl> κάλλιστον δ’ ὄξος εἶναί φησι Χρύσιππος ὁ φιλόσοφος τό τε Αἰγύπτιον καὶ τὸ Κνίδιον.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 15</foreign>: <bibl xml:lang="lat">Athenaeus Deipnosoph. I p. 8c.</bibl> Χρύσιππος δέ φησιν· ἀσύμβολον κώθωνα μὴ παραλίμπανε.</p> </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="29">
+        <head>XXIX. Περὶ Κατορθωμάτων</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.III p. 168, 27.9      <cb n="2"/>n. 674 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ) 672.</foreign></p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="30">
+        <head>XXX. Περὶ τοῦ Κενοῦ</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 165, 32      <cb n="2"/>n. 518</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 172, 15      <cb n="2"/>n. 543.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="31">
+        <head>XXXI. Περὶ Κινήσεως Β (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 143, 29      <cb n="2"/>n. 434 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 173, 15      <cb n="2"/>n. 550 (<foreign xml:lang="grc">ἐκ τοῦ δευτέρου</foreign>).</p></div>
+        <pb facs="stoicorumveterum03arniuoft_0209"/>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="32">
+        <head>XXXII. Περὶ Κόσμου Β (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 189, 34      <cb n="2"/>n. 624 (<foreign xml:lang="grc">ἐν τοῖς περὶ κ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 264, 14      <cb n="2"/>n. 913 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="33">
+        <head>XXXIII. Περὶ τοῦ κυρίως κεχρῆσθαι Ζήνωνα τοῖς ὀνόμασιν Α</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.III p. 158, 34      <cb n="2"/>n. 617.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="34">
+        <head>XXXIV. Περὶ Λόγου Β (<foreign xml:lang="lat">Titulus in catalogo librorum moralium II p. 9, 29</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 15, 16     <cb n="2"/>n. 37 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 33, 7      <cb n="2"/>n. 105 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 228, 27      <cb n="2"/>n. 841 (<foreign xml:lang="grc">ἐν τῇ π. λ. πραγματείᾳ</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="35">
+        <head>XXXV. Περὶ Λόγου Χρήσεως πρὸς Λεπτίναν Αʹ (περὶ τῆς χρήσεως τοῦ λόγου πρὸς Λεπτίναν 
+        <foreign xml:lang="lat">in catalogo librorum moralium II p. 9, 30</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 20, 10     <cb n="2"/>n. 50 (53 errore typothetae)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 38, 32     <cb n="2"/>n. 127 (omissa libri inscriptione)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 39, 15     <cb n="2"/>n. 129.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="36">
+        <head>XXXVI. Περὶ Μαντικῆς Β</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 340, 13      <cb n="2"/>n. 1183</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 342, 4     <cb n="2"/>n. 1187 (duobus libris)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 342, 23      <cb n="2"/>n. 1191 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: II p. 348, 17      <cb n="2"/>n. 1216.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="37">
+        <head>XXXVII. Περὶ τῶν Μερῶν Ε (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 165, 29      <cb n="2"/>n. 517 (ἐν τῷ τρίτῳ καὶ τετάρτῳ καὶ πέμπτῳ π. τ. μ.).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="38">
+        <head>XXXVIII. Περὶ Νόμου Α</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 42, 4     <cb n="2"/>n. 175</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 77, 33      <cb n="2"/>n. 314 (exordium libri).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="39">
+        <head>XXXIX. Περὶ Ὁμονοίας Β (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 86, 22      <cb n="2"/>n. 353.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="40">
+        <head>XL. Περὶ Ὁρμῆς</head>
+        <p rend="indent"><bibl xml:lang="lat">Arrianus Epict. dissert. I 4, 14 (nominato paulo ante Chrysippo)</bibl>: λάβε τὴν περὶ ὁρμῆς σύνταξιν καὶ γνῶθι πῶς αὐτὴν ἀνέγνωκα.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="41">
+        <head>XLI. Ὅρων Διαλεκτικῶν πρὸς Μητρόδωρον ϛʹ (<foreign xml:lang="lat">In catalogo logicorum titulus II
+        p. 4, 40</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 62, 41     <cb n="2"/>n. 193 (<foreign xml:lang="grc">ἐν τοῖς διαλ. ὅροις</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 75, 18      <cb n="2"/>n. 226 (<foreign xml:lang="grc">ἐν τῷ περὶ ὅρων</foreign> dubitans huc rettuli propter rem tractatam).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="42">
+        <head>XLII. Περὶ τῶν Ὅρων πρὸς Μητρόδωρον Ζ (Fuit de definitionibus moralibus; nam titulus exstat in moralium librorum catalogo II p. 9, 2. Ceteros libros, qui simili fuerunt inscriptione vide II p. 8, 33-37)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 264, 16         <cb n="2"/>n. 913 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ περὶ ὅρων</foreign>. Dubitari potest, num fragmentum ad hunc librum referendum sit. Nam etiam physicarum definitionum librum fuisse probabile est).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="43">
+        <head>Περὶ Οὐσίας Γ (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 136, 4     <cb n="2"/>n. 412 (<foreign xml:lang="grc">ἐν τοῖς π. οὐσίας λόγοις</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 338, 24      <cb n="2"/>n. 1178 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ</foreign>).</p></div>
+        <pb facs="stoicorumveterum03arniuoft_0210"/>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="44">
+        <head>XLIV. Περὶ Παθῶν Δ (<foreign xml:lang="lat">Tres libri priores fuerunt</foreign> λογικοί, <foreign xml:lang="lat">quartus</foreign>
+        θεραπευτικός <foreign xml:lang="lat">vel</foreign> ἠθικός)</head>
+        <p rend="indent" xml:lang="lat">Fragmenta composui III p. 110, 38 － 133, 26. n. 456-490.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="45">
+        <head>XLV. Περὶ Παροιμιῶν (<foreign xml:lang="lat">libri complures</foreign>)</head>
+        <p rend="indent"><foreign xml:lang="lat">fr. 1</foreign>: <bibl xml:lang="lat">Diog. Laërt. VII 1. (de
+        Zenone locutus)</bibl> ὅτι ἰσχνὸς ἦν, ὑπομήκης, μελάγχρως, ὅθεν τις αὐτὸν εἶπεν
+        Αἰγυπτίαν κληματίδα, καθά φησι Χρύσιππος ἐν πρώτῳ Παροιμιῶν.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 2</foreign>: <bibl xml:lang="lat">Schol. Pind. Isthm. II 17.</bibl> Χρήματα χρήματ’ ἀνήρ] τοῦτο ἀναγράφεται μὲν εἰς τὰς παροιμίας ὑπ’ ἐνίων, ἀπόφθεγμα δέ ἐστιν Ἀριστοδήμου, καθάπερ φησὶ Χρύσιππος ἐν τῷ περὶ παροιμιῶν. τοῦτον δὲ τὸν Ἀριστόδημον Πίνδαρος μὲν οὐ τίθησιν ἐξ ὀνόματος, ὡς δήλου ὄντος ὅς ἐστιν ὁ τοῦτο εἰπών, μόνον δὲ ἐσημειώσατο τὴν πατρίδα ὅτι Ἀργεῖος <foreign xml:lang="lat">etc.</foreign></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 3</foreign>: <bibl xml:lang="lat">Diogenianus Paroemiographus I 62 p. 10.</bibl> Αἲξ Σκυρία: Χρύσιππός φησιν ἐπὶ τῶν τὰς χάριτας ἀνατρεπόντων τετάχθαι τὴν παροιμίαν, ἐπειδὴ πολλάκις τὰ ἀγγεῖα ἀνατρέπει ἡ αἴξ.</p>
+        <p rend="indent" xml:lang="lat">Zenobius II 18.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 4</foreign>: <bibl xml:lang="lat">Zenobius V 32</bibl>. Οὐ νυκτιπλοεῖς: ἐπὶ τῶν μὴ ἀκριβῶς τι ποιούντων. Ἡ γὰρ νὺξ ἀκριβεστέρα τῆς ἡμέρας τοῖς πελαγοδρομοῦσι, διὰ τὰς τῶν ἄστρων σημειώσεις. Ὁ δὲ Χρύσιππος ἀφελὼν τὴν <q>οὐ</q> ἀπόφασιν <q>νυκτιπλοεῖς</q> εἶπεν.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 5</foreign>: <bibl xml:lang="lat">[Plut.] Prov. Alex. I 3 (Cod. VB.-Corp. Par. II p. 321).</bibl> Ὁπισάμβω[ν]· ταύτην Χρύσιππος τάττει κατὰ τῶν χεῖρον ἐν τοῖς πράγμασι προβαινόντων παρὰ τὸ ἀεὶ ὀπίσω βαίνειν. Μέμνηται τοῦ ὀνόματος Σοφοκλῆς.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 6</foreign>: <bibl xml:lang="lat">Zenobius Paroemiogr. III 40.</bibl> Δοῖδυξ αὔξει: ἐπὶ τῶν μὴ αὐξανομένων φησὶν ὁ Χρύσιππος, ἀλλὰ καὶ ⟨ἐπὶ τῶν⟩ μικρῶν μενόντων εἴρηται ἡ παροιμία. Ὁ γὰρ δοῖδυξ μικρός ἐστι καὶ στρογγύλος.</p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 7</foreign>: <bibl xml:lang="lat">Plutarchus vita Arati 1, 1.</bibl> Παροιμίαν τινὰ παλαιάν, ὦ Πολύκρατες, δείσας μοι δοκεῖ τὸ δύσφημον αὐτῆς, ὁ φιλόσοφος Χρύσιππος οὐχ ὃν ἔχει τρόπον, ἀλλ’ ὡς αὐτὸς ᾤετο βέλτιον εἶναι διατίθεται, <quote type="blockquote">τίς πατέρ’ αἰνήσει, εἰ μὴ εὐδαίμονες υἱοί;</quote> Διονυσόδωρος δὲ ὁ Τροιζήνιος ἐλέγχων αὐτὸν ἀντεκτίθησι τὴν ἀληθινὴν οὕτως ἔχουσαν· <quote type="blockquote">τίς πατέρ’ αἰνήσει, εἰ μὴ κακοδαίμονες υἱοί;</quote> <foreign xml:lang="lat">etc.</foreign></p>
+        <p rend="indent"><foreign xml:lang="lat">fr. 8</foreign>: <bibl xml:lang="lat">Suidas s. v. <foreign xml:lang="lat">Κέρκωπες</foreign> (pr.)</bibl> － ἡ δὲ παροιμία <q>κερκωπίζειν</q> ἣν ὁ Χρύσιππος ἀπὸ τῶν σαινόντων τῇ κέρκῳ ζῴων φησὶ μετενηνέχθαι.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="46">
+        <head>XLVI. Περὶ τοῦ πῶς δεῖ τῶν Ποιημάτων ἀκούειν Β (<foreign xml:lang="lat">Titulus in catalogo librorum moralium II p. 9, 18. Liber nusquam laudatur, sed probabiliter huc referuntur fragmenta II p. 31, 37 n. 100. 101. Plura etiam Plutarchus in libro πῶς δεῖ τὸν νέον ποιημάτων ἀκούειν ex hoc Chrysippi libro hausisse videtur; quae tamen vix possunt accurate definiri).</foreign></head>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="47">
+        <head>XLVII. Περὶ Πολιτείας</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 11, 46     <cb n="2"/>n. 30</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 177, 9      <cb n="2"/>n. 706</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 180, 3      <cb n="2"/>n. 714</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 183, 8      <cb n="2"/>n. 728</p>
+        <pb facs="stoicorumveterum03arniuoft_0211"/>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 185, 17     <cb n="2"/>n. 744</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: III p. 185, 20     <cb n="2"/>n. 745</p>
+        <p rend="indent"><foreign xml:lang="lat">fr.6:</foreign>
+        <bibl xml:lang="lat">Diogenes Laërt. VII 34</bibl>. ὅτι δ’ αὐτοῦ ἐστιν ἡ Πολιτεία (<foreign xml:lang="lat">scil. Zenonis</foreign>) καὶ
+        Χρύσιππος ἐν (ὥσπερ ἐν Β) τῷ περὶ Πολιτείας φησί.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="48">
+        <head>XLVIII. Περὶ Προνοίας Δ (<foreign xml:lang="lat">De hoc opere conf. A. Gercke Chrysippea in
+        Fleckeiseni ann. suppl. XIV</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 189, 28      <cb n="2"/>n. 623 (in libris quos de providentia scripsit)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 192, 1     <cb n="2"/>n. 634 (<foreign xml:lang="grc">ἐν τοῖς π. πρ.</foreign>).</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 201, 4     <cb n="2"/>n. 687 (<foreign xml:lang="grc">ἐν τῷ περὶ πρ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: II p. 305, 29      <cb n="2"/>n. 1023 (<foreign xml:lang="grc">ἐν τοῖς π. πρ</foreign>.)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: II p. 309, 26      <cb n="2"/>n. 1049 (<foreign xml:lang="grc">ἐν τοῖς π. πρ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.6: II p. 185, 43      <cb n="2"/>n. 604 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ π. πρ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.7: II p. 186, 8     <cb n="2"/>n. 605 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ π. πρ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.8: II p. 191, 34      <cb n="2"/>n. 633 (<foreign xml:lang="grc">ἐν πρώτῳ π. πρ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.9: II p. 194, 12      <cb n="2"/>n. 644 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ π. πρ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.10: II p. 293, 22     <cb n="2"/>n. 1000 (in libro <foreign xml:lang="grc">π. πρ.</foreign> quarto)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.11: II p. 335, 27     <cb n="2"/>n. 1169 (in libro <foreign xml:lang="grc">π. πρ.</foreign> quarto)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.12: II p. 336, 7      <cb n="2"/>n. 1170 (in eodem libro).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="49">
+        <head>XLIX. Περὶ τοῦ Προτρέπεσθαι Γ (<foreign xml:lang="lat">vel</foreign> Προτρεπτικά <foreign xml:lang="lat">cf. ad fr. 1</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 33, 36      <cb n="2"/>n. 139 (idem locus affertur <foreign xml:lang="grc">ἐν τῷ πρώτῳ
+        τῶν προτρεπτικῶν et ἐν τῷ πρώτῳ περὶ τοῦ προτρέπεσθαι;</foreign> itaque idem opus intelligitur)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 17, 12      <cb n="2"/>n. 69 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ τῶν προτρεπτικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 187, 10     <cb n="2"/>n. 753 (<foreign xml:lang="grc">ἐν τῷ (?) τῶν προτρεπτικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 188, 34     <cb n="2"/>n. 761 (<foreign xml:lang="grc">ἐν τοῖς περὶ τοῦ προτρέπεσθαι</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5 III p. 39, 18     <cb n="2"/>n. 167 (<foreign xml:lang="grc">ἐν αὐτοῖς τούτοις</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="50">
+        <head>L. Περὶ τῆς Ῥητορικῆς πρὸς Διοσκουρίδην Δ (<foreign xml:lang="lat">Titulus in catalogo librorum moralium II p. 9, 36</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 96, 12     <cb n="2"/>n. 297 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 96, 19     <cb n="2"/>n. 298 (<foreign xml:lang="grc">ἐν τῷ αὐτῷ βιβλίῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 35, 38      <cb n="2"/>n. 148 (<foreign xml:lang="grc">ἐν τῷ περὶ ῥητ.</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 175, 6      <cb n="2"/>n. 698 (<foreign xml:lang="grc">ἐν τῷ περὶ ῥητ.</foreign>).</p>
+        <p rend="indent" xml:lang="lat">Cicero cum Chrysippum artem rhetoricam scripsisse dicit II p. 95, 5 n. 288 vix hoc opus intelligit. Nam libri <foreign xml:lang="grc">περὶ ῥητορικῆς</foreign> non sunt <q>ars rhetorica.</q></p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="51">
+        <head>LI. Περὶ τῶν κατὰ Στέρησιν λεγομένων πρὸς Θέαρον Α (<foreign xml:lang="lat">Titulus in catalogo II
+        p. 5, 11. Eundem librum Simplicius appellat</foreign> τὰ περὶ στερητικῶν)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 51, 15     <cb n="2"/>n. 177 (<foreign xml:lang="grc">ἐν τοῖς περὶ τῶν στερητικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 52, 17     <cb n="2"/>n. 178</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 52, 26     <cb n="2"/>n. 179.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="52">
+        <head>LII. Περὶ Συλλογισμῶν εἰσαγωγὴ πρώτη (<foreign xml:lang="lat">Deest in catalogo II p. 6, 33 sq.,
+        nisi idem est liber</foreign> περὶ συλλογισμῶν εἰσαγωγικῶν <foreign xml:lang="lat">p. 7, 15 aut</foreign> τῶν πρὸς εἰσαγωγὴν
+        τρόπων <foreign xml:lang="lat">ibid. 16</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 80, 24     <cb n="2"/>n. 242.</p></div>
+        <pb facs="stoicorumveterum03arniuoft_0212"/>
+      
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="53">
+        <head>LIII. Κατὰ τῆς Συνηθείας πρὸς Μητρόδωρον ϛʹ (<foreign xml:lang="lat">Titulus in catalogo II p. 8, 22</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 33, 31     <cb n="2"/>n. 109.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="54">
+        <head>LIV. Ὑπὲρ τῆς Συνηθείας πρὸς Γοργιππίδην Ζ (<foreign xml:lang="lat">Titulus in catalogo II p. 8, 23</foreign>;
+        ὑπὲρ <foreign xml:lang="lat">Cobetus</foreign>, περί libri)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 33, 31     <cb n="2"/>n. 109.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="55">
+        <head>LV. Περὶ τῆς Συντάξεως τῶν τοῦ λόγου μορίων (<foreign xml:lang="lat">In catalogo II p. 6, 18</foreign> περὶ
+        τῆς συντάξεως τῶν λεγομένων δʹ, <foreign xml:lang="lat">fortasse idem liber. Cf. p. 41, 29</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 11, 28     <cb n="2"/>n. 28 (<foreign xml:lang="grc">ὑπὲρ τῆς συντάξεως τῶν τοῦ λόγου μορίων</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 67, 35     <cb n="2"/>n. 206a (<foreign xml:lang="grc">περὶ τῆς συντάξεως τῶν τοῦ λόγου μερῶν</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="56">
+        <head>LVI. Περὶ Τέλους Β (<foreign xml:lang="lat">aut</foreign> περὶ τελῶν, <foreign xml:lang="lat">ut Laërt. VII 85. 87</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1 II p. 11, 44      <cb n="2"/>n. 30 (<foreign xml:lang="grc">περὶ τελῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: III p. 21, 29    <cb n="2"/>n. 85 (<foreign xml:lang="grc">ἐν τῷ προτέρῳ περὶ τέλους</foreign>
+          et <foreign xml:lang="grc">ἐν τοῖς περὶ τέλους</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 52, 17      <cb n="2"/>n. 223 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ περὶ τέλους</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 3, 27     <cb n="2"/>n. 4 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ περὶ τελῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: III p. 43, 2     <cb n="2"/>n. 178 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ περὶ τελῶν)</foreign>.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="57">
+        <head>LVII. Ὑπογραφὴ τοῦ λόγου τοῦ ⟨ἠθικοῦ⟩ πρὸς Θεόπορον Α (<foreign xml:lang="lat">Titulus in catalogo 
+         librorum moralium II p. 8, 30.</foreign> ἠθικοῦ <foreign xml:lang="lat">addidi</foreign>)</head>
+        <p rend="indent"><foreign xml:lang="lat">fr. 1</foreign>: <bibl xml:lang="lat">Stob. Eclog. II 116, 11 W.</bibl> Περὶ γὰρ πάντων τῶν παραδόξων δογμάτων ἐν πολλοῖς μὲν καὶ ἄλλοις ὁ Χρύσιππος διελέχθη· καὶ γὰρ ἐν τῷ περὶ δογμάτων καὶ ἐν τῇ ὑπογραφῇ τοῦ λόγου καὶ ἐν ἄλλοις πολλοῖς τῶν κατὰ μέρος συγγραμμάτων.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="58">
+        <head>LVIII. Περὶ Φιλίας Β (<foreign xml:lang="lat">vel plures</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: III p. 182, 1      <cb n="2"/>n. 724.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="59">
+        <head>LIX. Περὶ Φύσεως Ε (vel plures)</head>
+        <p rend="indent" xml:lang="lat">A. <cb n="1"/>fr.1: II p. 179, 28     <cb n="2"/>n. 579 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 269, 1     <cb n="2"/>n. 937 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 339, 14      <cb n="2"/>n. 1181 (<foreign xml:lang="grc">ἐν τῷ δευτέρῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: III p. 36, 30      <cb n="2"/>n. 153 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: III p. 141, 15     <cb n="2"/>n. 526 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.6: III p. 188, 21     <cb n="2"/>n. 760 (<foreign xml:lang="grc">ἐν τῷ τρίτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.7: II p. 334, 24      <cb n="2"/>n. 1163 (<foreign xml:lang="grc">ἐν τῷ πέμπτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.8: III p. 187, 19     <cb n="2"/>n. 754 (<foreign xml:lang="grc">ἐν τῷ πέμπτῳ περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.9: II p. 192, 20      <cb n="2"/>n. 636 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ, ἐν τῷ τρίτῳ, ἐν τῷπέμπτῳ</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.10: II p. 309, 34     <cb n="2"/>n. 1049 (<foreign xml:lang="grc">ἐν τοῖς περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.11: II p. 334, 19     <cb n="2"/>n. 1163 (<foreign xml:lang="grc">ἐν τοῖς περὶ φύσεως</foreign>)</p>
+        <p rend="indent" xml:lang="lat">B. Dubium est, num ad hos libros referenda sint fragmenta: <foreign xml:lang="grc">ἐν
+        τῇ αʹ, βʹ, γʹ τῶν φυσικῶν</foreign> (scil. <foreign xml:lang="grc">βίβλων?</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.12: II p. 110, 8      <cb n="2"/>n. 300 (<foreign xml:lang="grc">ἐν τῇ πρώτῃ τῶν φυσικῶν πρὸς τῷ τέλει</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.13: II p. 179, 35. 180, 15      <cb n="2"/>n. 580 (<foreign xml:lang="grc">ἐν τῇ πρώτῃ τῶν φυσικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.14: II p. 180, 17     <cb n="2"/>n. 581 (<foreign xml:lang="grc">ἐν τῇ πρώτῃ τῶν φυσικῶν</foreign>)</p>
+        <pb facs="stoicorumveterum03arniuoft_0213"/>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.15: II p. 33, 3     <cb n="2"/>n. 105 (<foreign xml:lang="grc">ἐν τῇ βʹ ｢ιβʹ ΒΡ| τῶν φυσικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.16: II p. 43, 38      <cb n="2"/>n. 140 (<foreign xml:lang="grc">ἐν τῇ δευτέρᾳ τῶν φυσικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.17: II p. 211, 21     <cb n="2"/>n. 741 (<foreign xml:lang="grc">ἐν τῇ δευτέρᾳ τῶν φυσικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.18: II p. 233, 35     <cb n="2"/>n. 867 (<foreign xml:lang="grc">ἐν βʹ τῶν φυσικῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.19: II p. 157, 36     <cb n="2"/>n. 479 (<foreign xml:lang="grc">ἐν τῇ τρίτῃ τῶν φυσικῶν</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="60">
+        <head>LX. Φυσικὰ Ζητήματα <foreign xml:lang="lat">(complures libri) (Fragmenta
+        ad tria</foreign> ζητήματα <foreign xml:lang="lat">diversa libri primi pertinent</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 140, 35      <cb n="2"/>n. 429 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ τῶν φυσικῶν ζητημάτων</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 157, 40      <cb n="2"/>n. 480 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ τῶν φυσικῶν ζητημάτων</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 197, 39      <cb n="2"/>n. 665 (<foreign xml:lang="grc">ἐν τῷ πρώτῳ τῶν φυσικῶν ζητημάτων</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="61">
+        <head>LXI. Φυσικαὶ Θέσεις</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 39, 10     <cb n="2"/>n. 128 (<foreign xml:lang="grc">ἐν ταῖς φυσικαῖς θέσεσιν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 214, 37      <cb n="2"/>n. 763 (<foreign xml:lang="grc">ἐν ταῖς φυσικαῖς θέσεσιν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: III p. 17, 3     <cb n="2"/>n. 68 (<foreign xml:lang="grc">ἐν ταῖς φυσικαῖς θέσεσιν</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="61x">
+        <head>LXI. Φυσικαὶ Τέχναι</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 143, 34      <cb n="2"/>n. 435 (<foreign xml:lang="grc">ἐν ταῖς φυσικαῖς τέχναις</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 200, 21      <cb n="2"/>n. 683 (<foreign xml:lang="grc">ἐν ταῖς φυσικαῖς τέχναις</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: II p. 172, 15      <cb n="2"/>n. 543 (<foreign xml:lang="grc">ἐν τῇ πρώτῃ τῶν φυσικῶν τεχνῶν</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="63">
+        <head>LXIII. Περὶ τῶν ἀρχαίων Φυσιολόγων (<foreign xml:lang="lat">Idem liber vocatur</foreign> περὶ τῆς 
+        ἀρχαίας φυσικῆς <foreign xml:lang="lat">fr. 2</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 314, 1     <cb n="2"/>n. 1071 (<foreign xml:lang="grc">ἐν τῷ περὶ τῶν ἀρχαίων φυσιολόγων</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 212, 38      <cb n="2"/>n. 748 (<foreign xml:lang="grc">ἐν τῷ περὶ ἀρχαίας φυσικῆς</foreign>).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="64">
+        <head>LXIV. Περὶ Χαρίτων (<foreign xml:lang="lat">Cf. III n. 725. 726</foreign>)</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 316, 34      <cb n="2"/>n. 1081 (<foreign xml:lang="grc">ἐν τῷ περὶ Χαρίτων</foreign>)</p>
+          <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 316, 38      <cb n="2"/>n. 1082 (totum librum his ineptiis replet).</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="65">
+        <head>LXV. Περὶ Χρησμῶν</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 342, 6     <cb n="2"/>n. 1187 (uno de oraculis)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 344, 30      <cb n="2"/>n. 1202 (<foreign xml:lang="grc">ἐν τῷ περὶ χρησμῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.3: = fr. 2: II p. 344, 37     <cb n="2"/>n. 1203 (<foreign xml:lang="grc">ἐν τῷ περὶ χρησμῶν</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.4: II p. 345, 11      <cb n="2"/>n. 1205</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.5: II p. 345, 21      <cb n="2"/>n. 1206.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg004.1st1K-grc1" n="66">
+        <head>LXVI. Περὶ Ψυχῆς Β</head>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.1: II p. 22, 21     <cb n="2"/>n. 55 (<foreign xml:lang="grc">ἐν τῇ βʹ περὶ ψυχῆς</foreign>)</p>
+        <p rend="indent" xml:lang="lat"><cb n="1"/>fr.2: II p. 211, 37      <cb n="2"/>n. 743 (<foreign xml:lang="grc">ἐν τοῖς περὶ ψυχῆς</foreign>).</p>
+        <p rend="indent" xml:lang="lat">Cetera fragmenta composui II p. 235sq. n. 879-911. 
+        </p><pb facs="stoicorumveterum03arniuoft_0218"/>
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>
