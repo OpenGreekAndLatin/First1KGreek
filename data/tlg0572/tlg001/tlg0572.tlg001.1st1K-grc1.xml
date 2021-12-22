@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+     <teiHeader xml:lang="eng">
+          <fileDesc>
+               <titleStmt>
+                    <title xml:lang="lat">Fragmenta</title>
+                    <author xml:lang="lat">Gaius Romanus</author>
+                    <editor>Martin Joseph Routh</editor>
+                    <funder>Center for Hellenic Studies</funder>
+                    <respStmt>
+                         <resp>Published original versions of the electronic texts</resp>
+                         <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                         <persName role="principal">Gregory Crane</persName>
+                         <persName role="principal">Leonard Muellner</persName>
+                         <persName role="principal">Bruce Robertson</persName>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Kelli Frangoulis</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Derek Diaco</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>AnneMarie Michael</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Charlotte Pocard</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Mari Yamazaki</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Charlotte Houghton</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital editor</resp>
+                    </respStmt>
+               </titleStmt>
+               <publicationStmt>
+                    <publisher>Open Greek and Latin</publisher>
+                    <idno type="filename">tlg0572.tlg001.1st1K-grc1.xml</idno>
+                    <pubPlace/>
+                    <availability>
+                         <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike
+                              4.0 International License</licence>
+                    </availability>
+                    <date when="2021-08-24"/>
+               </publicationStmt>
+               <sourceDesc>
+                    <biblStruct>
+                         <monogr>
+                              <author xml:lang="lat">Gaius Romanus</author>
+                              <title xml:lang="lat">Reliquiae Sacrae: Sive, Auctorum Fere Jam Perditorum Secundi Tertiique Saeculi Post Christum Natum Quae Supersunt</title>
+                              <editor>Martin Joseph Routh</editor>
+                              <imprint>
+                                   <pubPlace>Oxford</pubPlace>
+                                   <publisher>Oxford University Press</publisher>
+                                   <date>1846</date>
+                              </imprint>
+                              <biblScope unit="volume">2</biblScope>
+                         </monogr>
+                         <ref target="https://archive.org/details/reliquiaesacraes02rout/page/126/mode/2up">Internet Archive</ref>
+                    </biblStruct>
+               </sourceDesc>
+          </fileDesc>
+          <encodingDesc>
+               <editorialDecl>
+                    <correction><p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University.
+                         Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                    </correction>
+               </editorialDecl>
+               <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+               
+               <refsDecl n="CTS">
+                    <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                         <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+                    <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts chapter.</p></cRefPattern>
+               </refsDecl>
+          </encodingDesc>
+          <profileDesc>
+               <langUsage>
+                    <language ident="grc">Greek</language>
+                    <language ident="lat">Latin</language>
+               </langUsage>
+          </profileDesc>
+          <revisionDesc>
+               <change when="2021-12-20" who="Lisa Cerrato">markup review</change>
+               <change when="2021-12-03" who="Charlotte Houghton">initial markup of new file.</change>
+          </revisionDesc>
+     </teiHeader>
+     <text>
+          <body>
+               <div type="edition" n="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1" xml:lang="grc">
+                    <pb facs="reliquiaesacraes02rout_0135"/>
+                    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1" n="1">
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:1" n="1">
+                              <head xml:lang="lat">Ex Dialogo, vel Disputatione, cum Proclo, sive Proculo, Montanista.</head>
+                              <p>Καὶ ἐν τῷ Γαΐου δὲ (<foreign xml:lang="lat">inquit</foreign> <bibl xml:lang="lat">Eusebius lib. iii. Hist. cap. 31.</bibl>) οὗ μικρῷ πρόσθεν (<bibl xml:lang="lat">cap. 28. ejusd. lib.</bibl>) ἐμνήσθημεν διαλόγῳ, Πρόκλος πρὸς ὃν ἐποιεῖτο τὴν ζήτησιν, περὶ τῆς Φιλίππου καὶ τῶν θυγατέρων αὐτοῦ τελευτῆς συνᾴδων τοῖς ἐκτεθεῖσιν οὕτω φησίν· Μετὰ τοῦτον δὲ προφήτιδες τέσσαρες αἱ Φιλίππου γεγένηνται ἐν Ἱεραπόλει τῇ κατὰ τὴν Ἀσίαν· ὁ τάφος αὐτῶν ἐστὶν ἐκεῖ, καὶ ὁ τοῦ πατρὸς αὐτῶν.</p>
+                         </div>
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:1" n="2">
+                              <head xml:lang="lat">Ex eodem Opere.</head>
+                              <p rend="indent">Ἐγὼ δὲ τὰ τρόπαια τῶν ἀποστόλων ἔχω δεῖξαι. ἐὰν γὰρ θελήσῃς ἀπελθεῖν ἐπὶ τὸν Βατικανὸν, ἢ ἐπὶ τὴν ὁδὸν τὴν Ὠστίαν, εὑρήσεις τὰ τρόπαια τῶν ταύτην ἱδρυσαμένων τὴν ἐκκλησίαν. <foreign xml:lang="lat">Attulit hoc</foreign> <bibl xml:lang="lat">Eusebius lib. ii. Hist. cap. 25.</bibl> </p>
+                         </div>
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:1" n="3">
+                              <pb facs="reliquiaesacraes02rout_0136"/>
+                              <head xml:lang="lat">Ex eodem Opere.</head>
+                              <p rend="indent">——Ἀλλὰ καὶ Κήρινθος [ὁ] δι’ ἀποκαλύψεων ὡς ὑπὸ ἀποστόλου μεγάλου γεγραμμένων, τερατολογίας ἡμῖν ὡς δι’ ἀγγέλων αὐτῷ δεδειγμένας ψευδόμενος ἐπεισάγει, λέγων, μετὰ τὴν ἀνάστασιν ἐπίγειον εἶναι τὸ βασίλειον τοῦ Χριστοῦ· καὶ πάλιν ἐπιθυμίαις καὶ ἡδοναῖς ἐν ερουσαλὴμ τὴν σάρκα πολιτευομένην δουλεύειν. καὶ ἐχθρὸς ὑπάρχων ταῖς γραφαῖς τοῦ Θεοῦ, ἀριθμὸν χιλιονταετίας ἐν γάμῳ ἑορτῆς θέλων πλανᾷν λέγει γίνεσθαι. <foreign xml:lang="lat">Haec posuit</foreign> <bibl xml:lang="lat">Eusebius lib. iii. Hist. cap. 28.</bibl></p>
+                         </div>
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:1" n="4">
+                              <head xml:lang="lat">De eodem Opere.</head>
+                              <p rend="indent">Ἦλθε δὲ εἰς ἡμᾶς (<foreign xml:lang="lat">inquit</foreign> <bibl xml:lang="lat">Eusebius lib. vi. Hist. cap. 20.</bibl>) καὶ Γαΐου λογιωτάτου ἀνδρὸς διάλογος, ἐπὶ Ῥώμης κατὰ Ζεφυρῖνον πρὸς Πρόκλον τῆς κατὰ Φρύγας αἱρέσεως ὑπερμαχοῦντα κεκινημένος· ἐν ᾧ τῶν δι’ ἐναντίας τὴν περὶ τὸ συντάττειν καινὰς γραφὰς προπέτειάν τε καὶ τόλμαν ἐπιστομίζων, τῶν τοῦ ἱεροῦ ἀποστόλου δεκατριῶν μόνων ἐπιστολῶν μνημονεύει, τὴν πρὸς Ἐβραίους μὴ συναριθμήσας ταῖς λοιπαῖς. </p>
+                         </div>
+                    </div>
+                    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1" n="2">
+                         <pb facs="reliquiaesacraes02rout_0137"/>
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:2" n="1">
+                              <head xml:lang="lat">Quae Sequuntur, ex Parvo Labyrintho Sumpta Sunt, Qui vel Caii, 
+                                   vel Anonymi Scriptoris Eiusdem Aevi Est.</head>
+                              <p rend="indent">Φασὶ γὰρ (<foreign xml:lang="lat">Hæretici</foreign>) τοὺς μὲν προτέρους ἅπαντας καὶ αὐτοὺς τοὺς ἀποστόλους παρειληφέναι τε καὶ δεδιδαχέναι ταῦτα, ἃ νῦν οὗτοι λέγουσι· καὶ τετηρῆσθαι τὴν ἀλήθειαν τοῦ κηρύγματος μέχρι τῶν Βίκτορος χρόνων, ὃς ἦν τρισκαιδέκατος ἀπὸ Πέτρου ἐν Ῥώμῃ ἐπίσκοπος· ἀπὸ δὲ τοῦ διαδόχου αὐτοῦ Ζεφυρίνου, παρακεχαράχθαι τὴν ἀλήθειαν. ἦν δ’ ἂν τυχὸν πιθανὸν τὸ λεγόμενον, εἰ μὴ πρῶτον μὲν ἀντέπιπτον αὐτοῖς αἱ θεῖαι γραφαί· καὶ ἀδελφῶν δέ τινων ἐστὶ γράμματα πρεσβύτερα τῶν Βίκτορος χρόνων, ἃ ἐκεῖνοι πρὸς τὰ ἔθνη ὑπὲρ τῆς ἀληθείας, καὶ πρὸς τὰς τότε αἱρέσεις ἔγραψαν· λέγω δὲ Ἰουστίνου καὶ Μιλτιάδου καὶ Τατιανοῦ καὶ Κλήμεντος καὶ ἑτέρων πλειόνων, ἐν οἷς ἅπασι θεολογεῖται ὁ Χριστός· τὰ γὰρ Εἰρηναίου τε καὶ Μελίτωνος καὶ τῶν λοιπῶν τίς ἀγνοεῖ βιβλία, Θεὸν καὶ ἄνθρωπον καταγγέλλοντα τὸν Χριστόν; ψαλμοὶ δὲ ὅσοι καὶ ᾠδαὶ ἀδελφῶν ἀπ’ ἀρχῆς <pb facs="reliquiaesacraes02rout_0138"/> ὑπὸ πιστῶν γραφεῖσαι, τὸν λόγον τοῦ Θεοῦ τὸν Χριστὸν ὑμνοῦσι θεολογοῦντες. πῶς οὖν ἐκ τοσούτων ἐτῶν καταγγελλομένου τοῦ ἐκκλησιαστικοῦ φρονήματος, ἐνδέχεται τοὺς μέχρι Βίκτορος οὕτως ὡς οὗτοι λέγουσι κεκηρυχέναι; πῶς δὲ οὐκ αἰδοῦνται ταῦτα Βίκτορος καταψεύ- δεσθαι· ἀκριβῶς εἰδότες, ὅτι Βίκτωρ τὸν σκυτέα Θεόδοτον τὸν ἀρχηγὸν καὶ πατέρα ταύτης τῆς ἀρνησιθέου ἀποστασίας, ἀπεκήρυξε τῆς κοινωνίας, πρῶτον εἰπόντα ψιλὸν ἄνθρωπον τὸν Χριστόν. εἰ γὰρ Βίκτωρ κατ’ αὐτοὺς οὕτως ἐφρόνει ὡς ἡ τούτων διδάσκει βλασφημία, πῶς ἂν ἀπέβαλλε Θεόδοτον τὸν τῆς αἱρέσεως ταύτης εὐρείην; <foreign xml:lang="lat">Attulit haec</foreign> <bibl xml:lang="lat">Eusebius lib. v. Hist. cap. 28</bibl>.</p>
+                         </div>
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:2" n="2">
+                              <head xml:lang="lat">Ex eodem Opere.</head>
+                              <p rend="indent">Ὑπομνήσω γοῦν πολλοὺς τῶν ἀδελφῶν πρᾶγμα ἐφ’ ἡμῶν γενόμενον· ὃ νομίζω ὅτιᵃ εἰ ἐν Σοδόμοις ἐγεγόνει, τυχὸν ἂν κᾀκείνους ἐνουθέτησε. Νατάλιος ἦν τὶς ὁμολογητὴς <pb facs="reliquiaesacraes02rout_0139"/> οὐ πάλαι, ἀλλ’ ἐπὶ τῶν ἡμετέρων γενόμενος καιρῶν. οὗτος ἠπατήθη ποτὲ ὑπὸ Ἀσκληπιοδότου (<foreign xml:lang="lat">for.</foreign> Ἀσκληπιάδου. <foreign xml:lang="lat">vid. notam</foreign>) καὶ ἑτέρου Θεοδότου τινὸς τραπεζίτου· ἦσαν καὶ οὗτοι ἄμφω Θεοδότου τοῦ σκυτέως μαθηταὶ, τοῦ πρώτου ἐπὶ ταύτῃ τῇ φρονήσει, μᾶλλον δὲ ἀφροσύνῃ, ἀφορισθέντος τῆς κοινωνίας ὑπὸ Βίκτορος ὡς ἔφην τοῦ τότε ἐπισκόπου. ἀνεπείσθη δὲ ὁ Νατάλιος ὑπ’ αὐτῶν ἐπὶ σαλαρίῳ ἐπίσκοπος κληρωθῆναι ταύτης τῆς αἱρέσεως, ὥστε λαμβάνειν παρ’ αὐτῶν μηνιαῖα δηνάρια ἑκατὸν πεντήκοντα. γενόμενος οὖν σὺν αὐτοῖς, δι’ ὁραμάτων πολλάκις ἐνουθετεῖτο ὑπὸ τοῦ Κυρίου. ὁ γὰρ εὔσπλαγχνος Θεὸς καὶ Κύριος ἡμῶν Ἰησοῦς Χριστὸς, οὐκ ἐβούλετο ἔξω ἐκκλησίας γενόμενον, ἀπολέσθαι μάρτυρα τῶν ἰδίων παθῶν. ἐπεὶ δὲ ῥαθυμότερον τοῖς ὁράμασι προσεῖχε, δελεαζόμενος τῇ τε παρ’ αὐτοῖς πρωτοκαθεδρίᾳ, καὶ τῇ πλείστους ἀπολλυούσῃ αἰσχροκερδείᾳ, τελευταῖον ὑπὸ ἀγίων ἀγγείων ἐμαστιγώθη, δι’ ὅλης τῆς νυκτὸς οὐ σμικρῶς αἰκισθείς· ὥστε ἕωθεν ἀναστῆναι, καὶ ἐνδυσάμενον σάκκον, καὶ σποδὸν καταπασάμενον, <pb facs="reliquiaesacraes02rout_0140"/> μετὰ πολλῆς σπουδῆς καὶ δακρύων προσπεσεῖν Ζεφυρίνῳ τῷ ἐπισκόπῳ, κυλιόμενον ὑπὸ τοὺς πόδας οὐ μόνον τῶν ἐν τῷ κλήρῳ, ἀλλὰ καὶ τῶν λαϊκῶν· συγχέαι τε τοῖς δάκρυσι τὴν εὔσπλαγχνον ἐκκλησίαν τοῦ ἐλεήμονος Χριστοῦ· πολλῇ τε τῇ δεήσει χρησάμνον, δείξαντά τε τοὺς μώλωπας ὧν εἰλήφει πληγῶν, μόλις κοινωνηθῆναι. <foreign xml:lang="lat">Attulit haec</foreign> <bibl xml:lang="lat">Eusebius ibid.</bibl></p>
+                         </div>
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0572.tlg001.1st1K-grc1:2" n="3">
+                              <head xml:lang="lat">Ex eodem Opere.</head>
+                              <p rend="indent">Γραφὰς μὲν θείας ἀφόβως ῥεραδιουργήκασι· πίστεως δὲ ἀρχαίας κανόνα ἠθετήκασι· Χριστὸν δὲ ἠγνοήκασιν· οὐ τί αἱ θεῖαι λέγουσι γραφαὶ ζητοῦντες, ἀλλ’ ὁποῖον σχῆμα συλλογισμοῦ εἰς τὴν τῆς ἀθεότητος εὑρεθῇ σύστασιν, φιλοπόνως ἀσκοῦντες· κἄν αὐτοῖς προτείνῃ τὶς ῥητὸν γραφῆς θεϊκῆς, ἐξετάζουσι πότερον συνημμένον ἢ διεζευγμένον δύναται ποιῆσαι σχῆμα συλλογισμοῦ. καταλιπόντες δὲ τὰς ἁγίας τοῦ Θεοῦ γραφὰς, γεωμετρίαν ἐπιτηδεύουσιν· ᵇὡς ἂν ἐκ τῆς γῆς ὄντες καὶ ἐκ τῆς γῆς <pb facs="reliquiaesacraes02rout_0141"/> λαλοῦντες, καὶ τὸν ἄνωθεν ἐρχόμενον ἀγνοοῦντες. Εὐκλείδης γοῦν παρά τισιν αὐτῶν φιλοπόνως γεωμετρεῖται· Ἀριστοτέλης δὲ καὶ Θεόφραστος θαυμάζονται· Γαληνὸς γὰρ ἴσως ὑπό τινων καὶ προσκυνεῖται. οἱ δὲ ταῖς τῶν ἀπίστων τέχναις εἰς τὴν τῆς αἱρέσεως αὐτῶν γνώμην ἀποχρώμενοι, καὶ τῇ τῶν ἀθέων πανουργίᾳ τὴν ἁπλῆν τῶν θείων γραφῶν πίστιν καπηλεύοντες· ὅτι μηδὲ ἐγγὺς πίστεως ὑπάρχουσι, τί δεῖ καὶ λέγειν; διατοῦτο ταῖς θείαις γραφαῖς ἀφόβως ἐπέβαλον τὰς χεῖρας, λέγοντες αὐτὰς διωρθωκέναι. καὶ ὅτι τοῦτο μὴ καταψευδόμενος αὐτῶν λέγω, ὁ βουλόμενος δύναται μαθεῖν. εἰ γάρ τις θελήσει συγκομίσας αὐτῶν ἑκάστου τὰ ἀντίγραφα ἐξετάζειν πρὸς ἄλληλα, κατὰ πολὺ ἂν εὕροι διαφωνοῦντα. ἀσύμφωνα γοῦν ἔσται τὰ Ἀσκληπιάδου τοῖς Θεοδότου. πολλῶν δέ ἐστιν εὐπορῆσαι, διὰ τὸ φιλοτίμως ἐγγεγράφθαι τοὺς μαθητὰς αὐτῶν τὰ ὑφ’ ἑκάστου αὐτῶν ὡς αὐτοὶ καλοῦσι κατωρθωμένα, τουτέστιν ἠφανισμένα. πάλιν δὲ τούτοις τὰ Ἐρμοφίλου οὐ συνᾴδει· <pb facs="reliquiaesacraes02rout_0142"/> τὰ γὰρ Ἀπολλωνίδου οὐδὲ αὐτὰ ἑαυτοῖς ἐστὶ σύμφωνα. ἔνεστι γὰρ συγκρῖναι τὰ πρότερον ὑπ’ αὐτῶν κατασκευασθέντα, τοῖς ὕστερον πάλιν ἐπιδιαστραφεῖσι, καὶ εὑρεῖν καταπολὺ ἀπᾴδοντα. ὅσης δὲ τόλμης ἐστὶ τοῦτο τὸ ἁμάρτημα, εἰκὸς μηδὲ ἐκείνους ἀγνοεῖν. ἢ γὰρ οὐ πιστεύουσιν ἁγίῳ πνεύματι λελέχθαι τὰς θείας γραφὰς, καὶ εἰσὶν ἄπιστοι· ἢ ἑαυτοὺς ἡγοῦνται σοφωτέρους τοῦ ἁγίου πνεύματος ὑπάρχειν· καὶ τί ἕτερον ἢ δαιμονῶσιν; οὐδὲ γὰρ ἀρνήσασθαι δύνανται ἑαυτῶν εἶναι τὸ τόλμημα, ὁπόταν καὶ τῇ αὐτῶν χειρὶ ᾖ γεγραμμένα· καὶ παρ’ ὧν κατηχήθησαν μὴ τοιαύτας παρέλαβον τὰς γραφάς· καὶ δεῖξαι ἀντίγραφα, ὅθεν αὐτὰ μετεγράψαντο, μὴ ἔχωσιν. ἔνιοι δὲ αὐτῶν οὐδὲ παραχαράσσειν ἠξίωσαν αὐτὰς, ἀλλ’ ἁπλῶς ἀρνησάμενοι τόν τε νόμον καὶ τοὺς προφήτας· ἀνόμου καὶ ἀθέου διδασκαλίας προφάσει χάριτος· εἰς ἔσχατον ἀπωλείας ὄλεθρον κατωλίσθησαν. <foreign xml:lang="lat">Attulit</foreign> <bibl xml:lang="lat">Eusebius ibid.</bibl> </p>
+                         </div>
+                    </div>
+               </div>
+          </body>
+     </text>
+</TEI>
