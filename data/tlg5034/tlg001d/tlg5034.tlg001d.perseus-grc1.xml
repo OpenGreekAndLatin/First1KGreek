@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
-<titleStmt>
-<title xml:lang="mul">Scholia in Pindarum Isthmian Odes</title>
-<author>Pindar Scholia</author>
-<editor>A. B. Drachmann</editor>
-<funder>Google Digital Humanities Awards Program</funder>
-<principal>Gregory Crane</principal>
-<respStmt>
-<persName xml:id="DDD">Digital Divide Data</persName>
-<resp>Corrected and encoded the text</resp>
-</respStmt>
-<respStmt>
-<persName>Gregory Crane</persName>
-<resp>Editor-in-Chief, Perseus Digital Library</resp>
-</respStmt>
-<respStmt>
-<persName>Matt Munson</persName>
-<resp>Project Manager (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Annette Gessner</persName>
-<resp>Project Assistant (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Thibault Clérice</persName>
-<resp>Lead Developer (University of Leipzig)</resp>
-</respStmt>
-<respStmt>
-<persName>Bruce Robertson</persName>
-<resp>Technical Advisor</resp>
-</respStmt>
-</titleStmt>
-<publicationStmt>
-<publisher>Trustees of Tufts University</publisher>
-<pubPlace>Medford, MA</pubPlace>
-<authority>Perseus Project</authority>
-<availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
-</publicationStmt>
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="mul">Scholia in Pindarum Isthmian Odes</title>
+        <author>Pindar Scholia</author>
+        <editor>A. B. Drachmann</editor>
+        <funder>Google Digital Humanities Awards Program</funder>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <persName xml:id="DDD">Digital Divide Data</persName>
+          <resp>Corrected and encoded the text</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Gregory Crane</persName>
+          <resp>Editor-in-Chief, Perseus Digital Library</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Matt Munson</persName>
+          <resp>Project Manager (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annette Gessner</persName>
+          <resp>Project Assistant (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thibault Clérice</persName>
+          <resp>Lead Developer (University of Leipzig)</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bruce Robertson</persName>
+          <resp>Technical Advisor</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+      </publicationStmt>
 
-<sourceDesc>
-<listBibl>
-<biblStruct>
-<analytic/>
-<monogr>
-<author>Scholia Pindar</author>
-<title xml:lang="lat">Scholia in Nemeonicas et Isthmionicas.</title>
-<editor>A. B. Drachmann</editor>
-<imprint>
-<pubPlace>Leipzig</pubPlace>
-<publisher xml:lang="lat">B.G. Teubneri</publisher>
-<date>1927</date>
-</imprint>
+      <sourceDesc>
+        <listBibl>
+          <biblStruct>
+            <analytic/>
+            <monogr>
+              <author>Scholia Pindar</author>
+              <title xml:lang="lat">Scholia in Nemeonicas et Isthmionicas.</title>
+              <editor>A. B. Drachmann</editor>
+              <imprint>
+                <pubPlace>Leipzig</pubPlace>
+                <publisher xml:lang="lat">B.G. Teubneri</publisher>
+                <date>1927</date>
+              </imprint>
 
-</monogr>
-<series><title level="s" xml:lang="lat">Scholia vetera in Pindari carmina</title>
-<biblScope n="volume">3</biblScope></series>
-<ref target="https://archive.org/details/scholiaveterainp0000drac/page/n3">InternetArchive</ref>
-</biblStruct>
-</listBibl>
-</sourceDesc>
-</fileDesc>
-<encodingDesc> <p>text encoded in accordance with the latest EpiDoc standards</p>
-<refsDecl n="CTS">
-<cRefPattern matchPattern="(.+).(.+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-<cRefPattern matchPattern="(.+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
-</refsDecl>
-</encodingDesc>
-<profileDesc>
-<langUsage>
-<language ident="grc">Greek</language>
-<language ident="lat">Latin</language>
-</langUsage>
-</profileDesc>
-</teiHeader>
+            </monogr>
+            <series><title level="s" xml:lang="lat">Scholia vetera in Pindari carmina</title>
+            <biblScope n="volume">3</biblScope></series>
+            <ref target="https://archive.org/details/scholiaveterainp0000drac/page/n3">InternetArchive</ref>
+          </biblStruct>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc> <p>text encoded in accordance with the latest EpiDoc standards</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(.+).(.+)" n="line" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern matchPattern="(.+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
 
-<text>
-<body>
-<div type="edition" n="urn:cts:greekLit:tlg5034.tlg001d.perseus-grc1" xml:lang="grc">
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg5034.tlg001d.perseus-grc1" xml:lang="grc">
 
-<div type="textpart" subtype="poem" n="introduction">
-<head><note n="D"/>Ὑπόθεσις Ἰσθμίων.</head>
-<p><note n="BD"/>a. Ἐτελοῦντο μὲν οἱ παλαιοὶ πάντες ἀγῶνες ἐπί τισι τετελευτηκόσιν. ἐτελεῖτο γὰρ ὁ μὲν Ὀλυμπικὸς τῷ Διΐ διὰ τὸν Πέλοπα, ὁ δὲ Πυθικὸς τῷ Ἀπόλλωνι διὰ τὸν δράκοντα, ὃν ἀπέκτεινεν ἐν Πυθοῖ, ὁ δὲ Ἰσθμικὸς τῷ Ποσειδῶνι. ἔστι δὲ ἡ ἱστορία αὕτη. Ἰνοῦς καὶ Ἀθάμαντος παῖδες Λέαρχος καὶ Μελικέρτης· τὸν μὲν δὴ Λέαρχον μανεὶς ὁ Ἀθάμας ἀπέκτεινεν, εἶτα ἡ μήτηρ αὐτοῦ καθῆκεν αὐτὸν εἰς λέβητα ὕδατος ζεστοῦ, μανεῖσα δὲ καὶ αὐτὴ τὸ τελευταῖον ἥλατο μετὰ τοῦ Μελικέρτου εἰς θάλασσαν, καὶ ἐγένετο μὲν ἡ Ἰνὼ μία τῶν Νηρεΐδων, ἧς καὶ ὁ ποιητὴς μέμνηται (ε 433)· ἔστι δὲ αὕτη Λευκοθέα· ὁ δὲ Μελικέρτης μετεβλήθη εἰς δαίμονα· ἔστι δὲ οὗτος Παλαίμων. χορεύουσαι τοίνυν ποτὲ αἱ Νηρεΐδες ἐπεφάνησαν τῷ Σισύφῳ καὶ ἐκέλευσαν εἰς τιμὴν τοῦ Μελικέρτου ἄγειν τὰ Ἴσθμια.</p>
-<p>b. ἄλλως. τὸν τῶν Ἰσθμίων ἀγῶνα οἱ μὲν ἐπὶ Σίνιδι τῷ Προκρούστῃ διαθεῖναί φασι τὸν Θησέα ἀνελόντα αὐτὸν, ὅτε περ καὶ τοὺς ἄλλους, ὥς φησι Σοφοκλῆς (fr. 819) λέγων περὶ αὐτοῦ· <lb/>ὃς παρακτίαν <lb/>στείχων ἀνημέρωσα κνωδάλων ὁδόν. ὁ δὲ Σίνις Ποσειδῶνος παῖς, ὃς δένδρα κάμπτων, εἶτα συνδεσμῶν εἰς ταῦτα τοὺς παριόντας, ἀθρόως ἀφιεὶς τὰ δένδρα, οὕτω διέφθειρεν. οἱ δὲ ἐπὶ Μελικέρτῃ, ὅτε τῷ Ἰσθμῷ ἄταφος προσεπελάσθη, καὶ μεταξὺ λιμοῦ τὴν Κορινθίων πόλιν κατασχόντος, τοῦ θεοῦ εἰπόντος οὐκ ἄλλην ἔσεσθαι τῶν κακῶν λύσιν ἢ τὴν ἐκείνου κηδείαν καὶ τιμὴν δι᾿ ἀγῶνος ἐπιταφίου· τοῦτο δὲ πρὸς ὀλίγον ποιησάντων τῶν Κορινθίων λιμὸς πάλιν ἐπέθετο, καὶ ἔχρησεν ὁ θεὸς αἰώνιον τὴν εἰς τὸν ἥρωα τιμὴν ὑπάρχειν, καὶ στέφανον σελίνου διὰ τὸ καταχθόνιον εἶναι τὸ φυτόν· ὕστερον μέντοι καὶ τῷ θεῷ προσένειμαν τὸν ἀγῶνα ἐναλλὰξ ἐπιτελοῦντες, καὶ πίτυϊ λοιπὸν ἐστεφάνουν διὰ τὴν πρὸς τὴν θάλασσαν ὁμοειδίαν τοῦ φυτοῦ καὶ διὰ τὸ ἄκαρπον αὐτὴν εἶναι. ὥσπερ τὴν θάλασσαν· διὸ καὶ ἀτρύγετος· εἶτα σημαίνοντες, ὡς οὐδὲν κέρδος τοῖς νικῶσιν ἀπὸ τοῦ στεφάνου πλὴν δόξης, ὅπερ καὶ ἐν Ὀλυμπία ἐποίησαν, κοτίνῳ στεφανοῦντες. πάντας δὲ εἰκότως τοὺς γενομένους ὑπερηφάνους καὶ γενναίους Ποσειδῶνος παῖδάς φασιν οἱ ποιηταὶ, εἰς τὸ τῆς θαλάσσης ἄγριον καὶ οὐ σταθερὸν ἀφορῶντες κἀκεῖθεν τὴν εἰκόνα τοῦ τοιούτου λαμβάνοντες· ὅπερ καὶ Ὅμηρος ὑποδηλῶν λέγει (Π 34)· <lb/>γλαυκὴ δέ σ᾿ ἔτικτε θάλασσα <lb/>πέτραι τ᾿ἠλίβατοι, ὅτι τοι νόος ἐστὶν ἀπηνής. οἱ δὲ κομίσαντες τὸ σῶμα τοῦ Μελικέρτου ἀπὸ τὴς Σχοινουντίας. ἐκεῖ γὰρ ἐξερρίφη, Ἀμφίμαχος καὶ Δονακῖνος ἐκαλοῦντο.</p>
-<p>c. ἄλλως. τὸν τῶν Ἰσθμιονικῶν ἀγῶνα τεθῆναί φασι δι᾿ αἰτίαν τοιαύτην. Ἰνὼ ὑπὸ Ἀθάμαντος ἀναιρεθῆναι μέλλουσα, κατὰ μανίαν προανῃρημένου τοῦ υἱοῦ αὐτῆς Λεάρχου, καὶ αὐτὴ μανεῖσα, τὸν λοιπὸν παῖδα Μελικέρτην ἁρπάσασα διὰ Γερανείας τοῦ ὄρους τοῦ Μεγαρικοῦ φυγοῦσα καὶ στᾶσα ἐπὶ τῆς καλουμένης Μολουρίδος πέτρας ἥλατο σὺν τῷ βρέφει εἰς τὴν ὑποκειμένην θάλασσαν. αὐτοὺς μὲν οὖν λόγος ἔχει ἀποτεθεῶσθαι, καὶ τὴν μὲν μετωνομάσθαι ἀντὶ Ἰνοῦς Λευκοθέαν, τὸν δὲ ἀντὶ Μελικέρτου Παλαίμονα· τὸ δὲ τοῦ παιδὸς σῶμα ἐκκομισθὲν ὑπὸ δελφῖνος εἰς τὸν Ἰσθμὸν εὗρε Σίσυφος ὁ τότε τῆς Κορίνθου βασιλεύων καὶ ἔθαψε διὰ τὴν συγγένειαν· ἦν γὰρ Ἀθάμαντος παῖς. ἕτεροι δὲ Σίσυφός τε καὶ Ἀθάμας Αἰόλου παῖδες τοῦ Διός. ἐκάλεσαν δὲ τὸν ἀγῶνα Ἴσθμια ἀπὸ τοῦ διείργοντος τὰς δύο θαλάσσας Ἰσθμοῦ. στέφος δέ ἐστι τοῦ ἀγῶνος πίτυς· τὸ δὲ ἀνέκαθεν σέλινα καὶ αὐτοῦ ἦν ὁ στέφανος.</p>
-<p>d. ἄλλως. τὰ Ἴσθμια ἄγεται τῷ Μελικέρτῃ. Ἀθάμαντος μανέντος διὰ χόλον τῆς Ἥρας καὶ σφάξαντος ἕνα τῶν παίδων τὸν Λέαρχον, μέλλοντος δὲ ἅμα εἰς ζέοντα λέβητα βαλεῖν καὶ τὸν Μελικέρτην, προλαβοῦσα ἡ Ἰνὼ κλέπτει· διωκομένη δὲ ἅλλεται εἰς θάλασσαν μετὰ τοῦ παιδός· Νηρεΐδες δὲ αὐτὴν ἔσωσαν, αἵ καὶ θεὸν αὐτὴν ἐποίησαν· φανεῖσα δὲ μία τῷ Σισύφῳ εἶπεν ἄγειν τὸν ἀγῶνα. ἐσιωπήθη δὲ πρὸς χρόνον διὰ τοὺς λῃστάς, Θησεὺς δὲ ἐλθὼν ἐκάθηρε τοὺς τόπους καὶ ἦγε δεύτερον.</p>
-</div>
+        <div type="textpart" subtype="poem" n="introduction">
+          <head><note n="D"/>Ὑπόθεσις Ἰσθμίων.</head>
+          <p><note n="BD"/>a. Ἐτελοῦντο μὲν οἱ παλαιοὶ πάντες ἀγῶνες ἐπί τισι τετελευτηκόσιν. ἐτελεῖτο γὰρ ὁ μὲν Ὀλυμπικὸς τῷ Διΐ διὰ τὸν Πέλοπα, ὁ δὲ Πυθικὸς τῷ Ἀπόλλωνι διὰ τὸν δράκοντα, ὃν ἀπέκτεινεν ἐν Πυθοῖ, ὁ δὲ Ἰσθμικὸς τῷ Ποσειδῶνι. ἔστι δὲ ἡ ἱστορία αὕτη. Ἰνοῦς καὶ Ἀθάμαντος παῖδες Λέαρχος καὶ Μελικέρτης· τὸν μὲν δὴ Λέαρχον μανεὶς ὁ Ἀθάμας ἀπέκτεινεν, εἶτα ἡ μήτηρ αὐτοῦ καθῆκεν αὐτὸν εἰς λέβητα ὕδατος ζεστοῦ, μανεῖσα δὲ καὶ αὐτὴ τὸ τελευταῖον ἥλατο μετὰ τοῦ Μελικέρτου εἰς θάλασσαν, καὶ ἐγένετο μὲν ἡ Ἰνὼ μία τῶν Νηρεΐδων, ἧς καὶ ὁ ποιητὴς μέμνηται (ε 433)· ἔστι δὲ αὕτη Λευκοθέα· ὁ δὲ Μελικέρτης μετεβλήθη εἰς δαίμονα· ἔστι δὲ οὗτος Παλαίμων. χορεύουσαι τοίνυν ποτὲ αἱ Νηρεΐδες ἐπεφάνησαν τῷ Σισύφῳ καὶ ἐκέλευσαν εἰς τιμὴν τοῦ Μελικέρτου ἄγειν τὰ Ἴσθμια.</p>
+          <p>b. ἄλλως. τὸν τῶν Ἰσθμίων ἀγῶνα οἱ μὲν ἐπὶ Σίνιδι τῷ Προκρούστῃ διαθεῖναί φασι τὸν Θησέα ἀνελόντα αὐτὸν, ὅτε περ καὶ τοὺς ἄλλους, ὥς φησι Σοφοκλῆς (fr. 819) λέγων περὶ αὐτοῦ· <lb/>ὃς παρακτίαν <lb/>στείχων ἀνημέρωσα κνωδάλων ὁδόν. ὁ δὲ Σίνις Ποσειδῶνος παῖς, ὃς δένδρα κάμπτων, εἶτα συνδεσμῶν εἰς ταῦτα τοὺς παριόντας, ἀθρόως ἀφιεὶς τὰ δένδρα, οὕτω διέφθειρεν. οἱ δὲ ἐπὶ Μελικέρτῃ, ὅτε τῷ Ἰσθμῷ ἄταφος προσεπελάσθη, καὶ μεταξὺ λιμοῦ τὴν Κορινθίων πόλιν κατασχόντος, τοῦ θεοῦ εἰπόντος οὐκ ἄλλην ἔσεσθαι τῶν κακῶν λύσιν ἢ τὴν ἐκείνου κηδείαν καὶ τιμὴν δι᾿ ἀγῶνος ἐπιταφίου· τοῦτο δὲ πρὸς ὀλίγον ποιησάντων τῶν Κορινθίων λιμὸς πάλιν ἐπέθετο, καὶ ἔχρησεν ὁ θεὸς αἰώνιον τὴν εἰς τὸν ἥρωα τιμὴν ὑπάρχειν, καὶ στέφανον σελίνου διὰ τὸ καταχθόνιον εἶναι τὸ φυτόν· ὕστερον μέντοι καὶ τῷ θεῷ προσένειμαν τὸν ἀγῶνα ἐναλλὰξ ἐπιτελοῦντες, καὶ πίτυϊ λοιπὸν ἐστεφάνουν διὰ τὴν πρὸς τὴν θάλασσαν ὁμοειδίαν τοῦ φυτοῦ καὶ διὰ τὸ ἄκαρπον αὐτὴν εἶναι. ὥσπερ τὴν θάλασσαν· διὸ καὶ ἀτρύγετος· εἶτα σημαίνοντες, ὡς οὐδὲν κέρδος τοῖς νικῶσιν ἀπὸ τοῦ στεφάνου πλὴν δόξης, ὅπερ καὶ ἐν Ὀλυμπία ἐποίησαν, κοτίνῳ στεφανοῦντες. πάντας δὲ εἰκότως τοὺς γενομένους ὑπερηφάνους καὶ γενναίους Ποσειδῶνος παῖδάς φασιν οἱ ποιηταὶ, εἰς τὸ τῆς θαλάσσης ἄγριον καὶ οὐ σταθερὸν ἀφορῶντες κἀκεῖθεν τὴν εἰκόνα τοῦ τοιούτου λαμβάνοντες· ὅπερ καὶ Ὅμηρος ὑποδηλῶν λέγει (Π 34)· <lb/>γλαυκὴ δέ σ᾿ ἔτικτε θάλασσα <lb/>πέτραι τ᾿ἠλίβατοι, ὅτι τοι νόος ἐστὶν ἀπηνής. οἱ δὲ κομίσαντες τὸ σῶμα τοῦ Μελικέρτου ἀπὸ τὴς Σχοινουντίας. ἐκεῖ γὰρ ἐξερρίφη, Ἀμφίμαχος καὶ Δονακῖνος ἐκαλοῦντο.</p>
+          <p>c. ἄλλως. τὸν τῶν Ἰσθμιονικῶν ἀγῶνα τεθῆναί φασι δι᾿ αἰτίαν τοιαύτην. Ἰνὼ ὑπὸ Ἀθάμαντος ἀναιρεθῆναι μέλλουσα, κατὰ μανίαν προανῃρημένου τοῦ υἱοῦ αὐτῆς Λεάρχου, καὶ αὐτὴ μανεῖσα, τὸν λοιπὸν παῖδα Μελικέρτην ἁρπάσασα διὰ Γερανείας τοῦ ὄρους τοῦ Μεγαρικοῦ φυγοῦσα καὶ στᾶσα ἐπὶ τῆς καλουμένης Μολουρίδος πέτρας ἥλατο σὺν τῷ βρέφει εἰς τὴν ὑποκειμένην θάλασσαν. αὐτοὺς μὲν οὖν λόγος ἔχει ἀποτεθεῶσθαι, καὶ τὴν μὲν μετωνομάσθαι ἀντὶ Ἰνοῦς Λευκοθέαν, τὸν δὲ ἀντὶ Μελικέρτου Παλαίμονα· τὸ δὲ τοῦ παιδὸς σῶμα ἐκκομισθὲν ὑπὸ δελφῖνος εἰς τὸν Ἰσθμὸν εὗρε Σίσυφος ὁ τότε τῆς Κορίνθου βασιλεύων καὶ ἔθαψε διὰ τὴν συγγένειαν· ἦν γὰρ Ἀθάμαντος παῖς. ἕτεροι δὲ Σίσυφός τε καὶ Ἀθάμας Αἰόλου παῖδες τοῦ Διός. ἐκάλεσαν δὲ τὸν ἀγῶνα Ἴσθμια ἀπὸ τοῦ διείργοντος τὰς δύο θαλάσσας Ἰσθμοῦ. στέφος δέ ἐστι τοῦ ἀγῶνος πίτυς· τὸ δὲ ἀνέκαθεν σέλινα καὶ αὐτοῦ ἦν ὁ στέφανος.</p>
+          <p>d. ἄλλως. τὰ Ἴσθμια ἄγεται τῷ Μελικέρτῃ. Ἀθάμαντος μανέντος διὰ χόλον τῆς Ἥρας καὶ σφάξαντος ἕνα τῶν παίδων τὸν Λέαρχον, μέλλοντος δὲ ἅμα εἰς ζέοντα λέβητα βαλεῖν καὶ τὸν Μελικέρτην, προλαβοῦσα ἡ Ἰνὼ κλέπτει· διωκομένη δὲ ἅλλεται εἰς θάλασσαν μετὰ τοῦ παιδός· Νηρεΐδες δὲ αὐτὴν ἔσωσαν, αἵ καὶ θεὸν αὐτὴν ἐποίησαν· φανεῖσα δὲ μία τῷ Σισύφῳ εἶπεν ἄγειν τὸν ἀγῶνα. ἐσιωπήθη δὲ πρὸς χρόνον διὰ τοὺς λῃστάς, Θησεὺς δὲ ἐλθὼν ἐκάθηρε τοὺς τόπους καὶ ἦγε δεύτερον.</p>
+        </div>
 
 <div type="textpart" subtype="poem" n="1">
 <p> Scholia in Isthmionicarum carmen I.</p>
@@ -1106,7 +1106,7 @@
 </div>
 
 <div type="textpart" subtype="line" n="59">
-<p><note n="B"/>θνᾴσκομεν γὰρ ὁμῶς: καθάπαξ γὰρ πάντες ἄνθρωποι ἑνὶ καὶ τῷ αὐτῷ ὑποπίπτομεν θανάτῳ, τὰ δὲ τοῦ δαίμονος καὶ τῆς τύχης οὐκέτι ἴσα ἐστὶ καὶ ὅμοια τοῖς πᾶσι.<note n="60b B"></p>
+<p><note n="B"/>θνᾴσκομεν γὰρ ὁμῶς: καθάπαξ γὰρ πάντες ἄνθρωποι ἑνὶ καὶ τῷ αὐτῷ ὑποπίπτομεν θανάτῳ, τὰ δὲ τοῦ δαίμονος καὶ τῆς τύχης οὐκέτι ἴσα ἐστὶ καὶ ὅμοια τοῖς πᾶσι.<note n="60b B"/></p>
 </div>
 
 <div type="textpart" subtype="line" n="60">
@@ -1301,6 +1301,7 @@
 <p>d. ὁ δὲ νοῦς· διὸ καὶ νῦν ὁ λόγος ἡμᾶς παρορμᾷ καὶ τὸ τῶν Μουσῶν ἅρμα τοῦ πυκτικωτάτου Νικοκλέους τὸ μνῆμα καὶ τὴν τῶν κατορθωμάτων ἀρετὴν ὑμνῆσαι καὶ τιμῆσαι αὐτόν.</p>
 <p>e. ὡς Ἴσθμια αὐτοῦ νενικηκότος τοῦ Νικοκλέους φησί· περὶ γὰρ αὐτοῦ ὁ λόγος.</p>
 </div>
+
 </div>
 </div>
 </body>
