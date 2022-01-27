@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Περὶ ἀτόμων γραμμῶν</title>
+                <author>Aristotle</author>
+                <editor>Immanuel Bekker</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                <respStmt>
+                    <persName>Lucy Parr</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Hillary Cheney</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Evie Edmundson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Claudia Filos</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carlos R. Gutiérrez-Rueda</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Catharine Haldeman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kelly Hamilton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew L Hokom</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Devin Lawson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zijun Liao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sean Mao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Halle Richardson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Adam Rosengarten</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Will Shao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuti Shelat</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Mel Ashton Trump</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Landon Van Berkum</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt></titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0086.tlg019.1st1K-grc1.xml</idno>
+<pubPlace/>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<title xml:lang="lat">Aristotelis Opera</title>
+<author>Aristotle</author>
+<editor>Immanuel Bekker</editor>
+<imprint>
+<publisher>Oxford University Press</publisher>
+<pubPlace>Oxford</pubPlace>
+<biblScope unit="volume">6</biblScope>
+<date>1837</date>
+</imprint>
+</monogr>
+    <ref target="https://archive.org/details/operaexrecension06arisuoft/page/174/mode/2up">Internet Archive</ref>
+</biblStruct>
+</sourceDesc> 
+</fileDesc>
+            
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+<ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+    
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <p>This pointer pattern extracts section.</p>
+        </cRefPattern>
+    </refsDecl>
+</encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-10-19" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text>
+<body>
+    <div type="edition" n="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" xml:lang="grc">
+        <pb facs="operaexrecension06arisuoft_0184"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="1">
+<p><milestone unit="page" resp="Bekker" n="968a"/> ἎΡΑ γ’ εἰσὶν ἄτομοι γραμμαί, καὶ ὅλως ἐν ἅπασι τοῖς ποσοῖς ἐστί τι ἀμερές, ὥσπερ ἔνιοί φασιν; Εἰ γὰρ ὁμοίως ὑπάρχει τό τε πολὺ καὶ τὸ μέγα καὶ τὰ ἀντικείμενα τούτοις, τό τε ὀλίγον καὶ τὸ μικρόν, τὸ δ' ἀπείρους σχεδὸν διαιρέσεις ἔχον οὐκ ἔστιν ὀλίγον ἀλλὰ πολύ, φανερὸν ὅτι πεπερασμένας ἕξει τὰς διαιρέσεις τὸ ὀλίγον καὶ τὸ μικρόν· εἰ δὲ πεπερασμέναι αἱ διαιρέσεις, ἀνάγκη τι εἶναι ἀμερὲς μέγεθος, ὥστε ἐν ἅπασιν ἐνυπάρξει τι ἀμερές, ἐπείπερ καὶ τὸ ὀλίγον καὶ τὸ μικρόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="2">
+<p>Ἔτι εἰ ἔστιν δέα γραμμῆς, ἡ δ' ἰδέα πρώτη τῶν συνωνύμων, τὰ δὲ μέρη πρότερα τοῦ ὅλου τὴν φύσιν, διαιρετὴ ἂν εἴη αὐτὴ ἡ γραμμή, τὸν αὐτὸν δὲ τρόπον καὶ τὸ τετράγωνον καὶ τὸ τρίγωνον καὶ τὰ ἄλλα σχήματα, καὶ ὅλως ἐπίπεδον αὐτὸ καὶ σῶμα· συμβήσεται γὰρ πρότερ’ ἅττα εἶναι τούτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="3">
+<p>Ἔτι εἰ σώματός ἐστι στοιχεῖα, τῶν δὲ στοιχείων μηδὲν πρότερον, τὰ δὲ μέρη τοῦ ὅλου πρότερα, ἀδιαίρετον ἂν εἴη τὸ πῦρ καὶ ὅλως τῶν τοῦ σώματος στοιχείων ἕκαστον, ὥστ’ οὐ μόνον ἐν τοῖς νοητοῖς ἀλλὰ καὶ ἐν τοῖς αἰσθητοῖς ἐστί τι <pb facs="operaexrecension06arisuoft_0185"/> ἀμερές.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="4">
+<p>Ἔτι δὲ κατὰ τὸν Ζήνωνος λόγον ἀνάγκη τι μέγεθος ἀμερὲς εἶναι, εἴπερ ἀδύνατον μὲν ἐν πεπερασμένῳ χρόνῳ ἀπείρων ἄψασθαι, καθ’ ἕκαστον ἁπτόμενον, ἀνάγκη δ' ἐτὶ τὸ ἥμισυ πρότερον ἀφικνεῖσθαι τὸ κινούμενον, τοῦ δὲ μὴ ἀμεροῦς πάντως ἔστιν ἥμισυ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="5">
+    <p>Εἰ δὲ καὶ ἅπτεται τῶν ἀπείρων ἐν πεπερασμένῳ χρόνῳ τὸ ἐπὶ τῆς γραμμῆς φερόμενον, τὸ δὲ θᾶττον ἐν τῷ ἴσῳ χρόνῳ πλε῀εῖον διανύει, ταχίστη δ' τῆς διανοίας κίνησις, κἂν ἡ διάνοια τῶν ἀπείρων ἐφάπτοιτο καθ’ ἕκαστον <milestone unit="page" resp="Bekker" n="968b"/> ἐν πεπερασμένῳ χρόνῳ, ὥστε εἰ τὸ καθ’ ἕκαστον ἅπτεσθαι τὴν διάνοιαν ἀριθμεῖν ἐστίν, ἐνδέχεται ἀριθμεῖν τὰ ἄπειρα ἐν πεπερασμένῳ χρόνῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="6">
+    <p>Εἰ δὲ τοῦτο ἀδύνατον, εἴη ἄν τις ἄτομος γραμμή. Ἔτι καὶ ἐξ ὦν αὐτοὶ οἱ ἐν τοῖς μαθήμασι λέγουσιν, εἴη ἄν τις ἄτομος γραμμή, ὡς φασίν, εἰ σύμμετροί εἰσὶν αἱ τῷ αὐτῷ μέτρῳ μετρούμεναι· ὅσαι δ' εἰσὶ σύμμετροι, πᾶσαί εἰσι μετρούμεναι. Εἴη γὰρ ἄν τι μῆκος πᾶσαι μετρηθήσονται. Τοῦτο δ’ ἀνάγκη ἀδιαίρετον εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="7">
+<p>Εἰ γὰρ διαιρετόν, καὶ τὰ μέρη μέτρου τινὸς ἔσται· σύμμετρα γὰρ τῷ ὅλῳ. Ὤστε μέρους τινὸς εἴη διπλασία τὴν ἡμίσειαν, ἐπειδὴ τοῦτ’ ἀδύνατον ἂν εἴη μέτρον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="8">
+    <p>Ὠσαύτως δὲ καὶ αἱ μετρούμεναι ἅπαξ ὑπ’ αὐτοῦ, ὥσπερ πᾶσαι αἱ ἐκ τοῦ μέτρου σύνθετοι γραμμαί, ἐξ ἀμερῶν σύγκεινται. Τὸ δ’ αὐτὸ συμβήσεται κἀν τοῖς ἐπιπέδοις· πάντα γὰρ τὰ ἀπὸ τῶν ῥητῶν γραμμῶν σύμμετρα ἀλλήλοις, ὥστε ἔσται τὸ μέτρον αὐτῶν ἀμερές.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="9">
+<p>Ἀλλὰ μὴν εἴ τι τμηθήσεται μέτρον τινὰ τεταγμένην καὶ ὡρισμένην γραμμήν, οὐκ ἔσται οὔτε ῥητὴ οὔτ’ ἄλογος, οὔτε τῶν ἄλλων οὐδεμία ὦν νῦν δὴ εἴρηται, οἷον <pb facs="operaexrecension06arisuoft_0186"/> ἀποτομὴν ἐκ δυοῖν ὀνομάτοιν· ἀλλὰ καθ’ αὐτὰς μὲν οὐδέ τινας ἕξουσι φύσεις, πρὸς ἀλλήλας δὲ ἔσονται ῥηταὶ καὶ ἄλογοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="10">
+<p>Ἣ πρῶτον μὲν οὐκ ἀνάγκη τὸ ἀπείρους ἔχον διαιρέσεις μὴ εἶναι μικρὸν καὶ ὀλίγον· καὶ γὰρ τόπον καὶ μέγεθος καὶ ὅλως τὸ συνεχὲς μικρὸν μὲν λέγομεν, καὶ ἐφ’ ὦν μὲν ἁρμόττει τὸ ὀλίγον, οὐ μὴν ἀλλ’ ἀπείρους διαιρέσεις φαμὲν ἔχειν. Ἔτι δ' εἰ ἐν τῷ συνθέτῳ γραμμαί, κατὰ τούτων τῶν ἀτόμων λέγεται <milestone unit="page" resp="Bekker" n="969a"/> τὸ μικρόν, καὶ ἄπειροι στιγμαὶ ἐνυπάρχουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="11">
+<p>Ἦι δὲ γραμμή, διαίρεσις κατὰ στιγμμήν, καὶ ὁμοίως καθ’ ὁποιανοῦν ἀπείρους ἂν ἔχοι διαιρέσεις ἅπασα ἡ μὴ ἄτομος, Ἔνιαι δὲ τούτων εἰς μακρὰ καὶ ἄπειροι οἱ λόγοι. Πᾶσαν δὲ τμηθῆναι τὸν ἐπιταχθέντα δυνατὸν τὴν μὴ ἄτομον. Ἔτι εἰ τὸ μέγα ἐκ μικρῶν τινῶν σύγκειται, ἢ οὐθὲν ἔσται τὸ μέγα, ἢ τὸ πεπερασμένας ἔχον διαιρέσεις οὐ μέγα ἔσται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="12">
+<p>Τὸ γὰρ ὅλον τὰς τῶν μερῶν ἔχει διαιρέσεις ὁμοίως. Εὕλογον δ' ἐστὶ τό τε σμικρὸν πεπερασμένας ἔχειν διαιρέσεις καὶ τὸ μέγα ἀπείρους, οὕτως ἀξιοῦσιν. Ὤστε φανερὸν ὅτι οὐκ ἐν τούτῳ λέγοιτο τὸ μέγα καὶ τὸ μικρόν, τῷ πεπερασμένας ἔχειν καὶ ἀπείρους διαιρέσεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="13">
+    <p>Εἰ δ’ ὅτι καὶ ἐν ἀριθμοῖς τὸ ὀλίγον πεπερασμένας ἔχει διαιρέσεις, καὶ ἐν γραμμαῖς τις ἀξιοίη τὸ μικρόν, εὔηθες. Ἔκεῖ μὲν γὰρ ἐξ ἀμερῶν τε ἡ γένεσις, καὶ ἔστι τι ὃ τῶν ἀριθμῶν ἀρχή ἐστι, καὶ πᾶς ὁ μὴ ἄπειρος πεπερασμένας ἔχει διαιρέσεις· ἐπὶ δὲ τῶν μεγεθῶν οὐχ ὁμοίως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="14">
+    <p>Οἱ δ' ἐν τοῖς εἴδεσι τὰς ἀτόμους κατασκευάζοντες τοὔλαττον ἴσως ἀξίωμα λαμβάνουσι τοῦ προρεῖ <pb facs="operaexrecension06arisuoft_0187"/> κειμένου, τὸ τιθέναι τούτων ἰδέας· καὶ τρόπον τινὰ ταῦτ’ ἀναιροῦσι δι' ὦν δεικνύουσιν. Καὶ γὰρ διὰ τούτων τῶν λόγων ἀναιρεῖται τὰ εἴδη. Πάλιν δὲ τῶν σωματικῶν στοιχείων εὔηθες τὸ ἀμερῆ ἀξιοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="15">
+<p>Εἰ γὰρ αὗ καὶ ἀποφαίνονταί τινες οὕτως, ἀλλὰ πρός γε τὴν ὑποκειμένην σκέψιν αὐτὸ τὸ ἐξ ἀρχῆς λαμβάνουσιν. Μᾶλλον δὲ ὅσῳ μᾶλλον τὸ ἐξ ἀρχῆς δόξειαν ἀναλαμβάνεσθαι, τόσῳ μᾶλλον δοκεῖ διαιρετὸν εἶναι σῶμα καὶ μῆκος καὶ τοῖς ὄγκοις καὶ τοῖς διαστήμασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="16">
+<p>Ὁ δὲ τοῦ Ζήνωνος λόγος οὐ συμβιβάζει οὐ συμπεπερασμένῳ χρόνῳ τῶν ἀπείρων ἅπτεσθαι τὸ φερόμενον ὡδὶ τὸν αὐτὸν τρόπον. Ὁ γὰρ χρόνος καὶ τὸ μῆκος ἄπειρον καὶ πεπερασμένον λέγεται, καὶ τόσας ἔχει διαιρέσεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="17">
+    <p>Οὐδὲ δὴ τὸ καθ’ ἕκαστον ἅπτεσθαι τῶν ἀπείρων τὴν διάνοιαν οὐκ ἔστιν ἀριθμεῖν, εἰ ἄρα τις καὶ νοήσειεν οὕτως ἐφάπτεσθαι τῶν ἀπείρων τὴν διάνοιαν. Ὄπερ ἴσως ἀδύνατον· οὐ γὰρ ἐν συνεχέσι καὶ <milestone unit="page" resp="Bekker" n="969b"/> ὑποκειμένοις ἡ τῆς διανοίας κίνησις, ὥσπερ ἡ τῶν φερομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="18">
+    <p>Εἰ δ’ οὖν καὶ ἑγχωρεῖ κινεῖσθαι οὕτως, οὐκ ἔστι τοῦτο ἀριθμεῖν· τὸ γὰρ ἀριθμεῖν ἐστὶ τὸ μετὰ ἐπιστάσεως. Ἀλλ’ ἄτοπον ἴσως τὸ μὴ δυναμένους λύειν τὸν λόγον δουλεύειν τῇ ἀσθενείᾳ, καὶ προσεξαπατᾶν ἑαυτοὺς μείζους ἀπάτας, βοηθοῦντας τῇ ἀδυναμίᾳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="19">
+<p>Τὸ δ' ἐπὶ τῶν συμμμέτρων γραμμῶν, ὡς ὅτι αἱ πᾶσαί τῷ αὐτῷ τινὶ καὶ ἑνὶ μετροῦνται, κομιδῇ σοφιστικὸν καὶ ἥκιστα κατὰ τὴν ὑπόθεσιν τὴν ἐν τοῖς μαθήμασιν· οὔτε γὰρ ὑποτίθενται οὕτως, οὔτε χρήσιμον αὐτοῖς ἐστίν. Ἄμα δὲ καὶ ἐναντίον πᾶσαν μὲν γραμμὴν σύμμετρον γίνεσθαι, πασῶν δὲ τῶν συμμέτρων κοινὸν μέτρον εἶναι ἀξιοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="20">
+<p>Ὤστε <pb facs="operaexrecension06arisuoft_0188"/> γελοῖον τὸ κατὰ τὰς ἐκείνων δόξας καὶ ἐξ ὦν αὐτοὶ λέγουσι φάσκοντες δείξειν, εἰς ἐριστικὸν ἅμα καὶ σοφιστικὸν ἐκκλίνειν λόγον, καὶ ταῦθ’ οὕτως ἀσθενῆ. Πολλαχῇ γὰρ ἀσθενής ἐστι καὶ πάντα τρόπον διαφυγεῖν καὶ τὰ παράδοξα καὶ τοὺς ἐλέγχους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="21">
+<p>Ἔτι δ' ἄτοπον ἄν εἴη διὰ μὲν τὸν Ζήνωνος λόγον παραπεπεῖσθαί τινας ἀτόμους ποιεῖν γραμμάς, τῷ μὴ ἔχειν ἀντειπεῖν, διὰ δὲ τῆς εὐθείας εἰς τὴν ἡμιόλιον κίνησιν, ἢν ἀναγκαῖον εὐθύς τέμνειν ἀπείρων μεταξὺ πιπτουσῶν περιφερειῶν καὶ διαστημάτων ὄντων, καὶ πάλιν διὰ τὴν τῶν ἴσων κύκλων εὔπειστον, ὅτι ἀνάγκη ἂν ὅτι κινηθῇ, μεῖζον ἡμικύκλιον κινεῖσθαι, καὶ ὅσα ἄλλα τοιαῦτα τεθεώρηται περὶ τὰς γραμμὰς μὴ οἶόν τε ἐνδέχεσθαι τοιαύτην δή τινα γενέσθαι κίνησιν ὥστ’ ἐφ’ ἑκάστην τῶν μεταξὺ μὴ πίπτειν πρότερον· πολὺ γὰρ ταῦτα μᾶλλον ὁμολογούμενα ἐκείνων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="22">
+<p>Ὄτι μὲν οὖν ἔκ γε τῶν εἰρημένων λόγων οὔτ’ ἀναγκαῖον ἀτόμους εἶναι γραμμὰς οὔτε πιθανόν, φανερόν. Ἔτι δὲ καὶ ἐκ τῶνδε γένοιτ’ ἂν φανερώτερον. Πρῶτον μὲν ἐκ τῶν ἐν τοῖς μαθήμασι δεικνυμένων καὶ τιθεμένων, ἃ οὐ δίκαιον ἢ πιστοτέροις λόγοις κινεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="23">
+<p>Οὔτς γὰρ ὁ τῆς γραμμῆς οὔτε ὁ τῆς εὐθείας ὅρος ἐφαρμόσει τῇ ἀτόμῳ διὰ τὸ μήτε μεταξὺ τινῶν εἶναι μήτ’ ἔχειν μέσον. Ἔπειτα πᾶσαι αἱ γραμμαὶ <milestone unit="page" resp="Bekker" n="970a"/> σύμμετροι ἔσονται. Πᾶσαι γὰρ ὑπὸ τῶν ἀτόμων μετρηθήσονται, αἵ τε μήκει σύμμετροι καὶ αἱ δυνάμει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="24">
+<p>Αἱ δὲ ἄτομοι σύμμετροι πᾶσαι μήκει· ἴσαι γάρ· ὥστε καὶ δυνάμει. Εἰ δὲ τοῦτο, διαιρετὸν ἔσται τὸ τετράγωνον. Ἔτι <pb facs="operaexrecension06arisuoft_0189"/> εἰ ἡ περὶ τὴν μείζω τὸ πλάτος ποιεῖ παραβαλλομένη, τὸ ἴσον τῶν ἀπὸ τῆς ἀτόμου καὶ τῆς ποδιαίας παραβαλλομένων περὶ τὴν δίπουν ἔλαττον ποιήσει τὸ πλάτος τῆς ἀμεροῦς· ἔσται ἔλαττον τὸ περὶ τῆς ἀτόμου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="25">
+<p>Ἔτι εἰ ἐκ τριῶν δοθεισῶν εὐθειῶν συνίσταται τρίγωνον, καὶ ἐκ τῶν ἀτόμων συσταθήσεται. Ἐν ἅπαντι δὲ ἰσοπλεύρῳ ἡ κάθετος ἐπὶ μέσην πίπτει, ὥστε καὶ ἐπὶ τὴν ἄτομον. Ἔτι εἰ τὸ τετράγωνον τῶν ἁμερῶν διὰ μέσου ἐμπεσούσης καὶ καθέτου ἀχθείσης, ἡ τοῦ τετραγώνου πλευρὰ τὴν κάθετον δύναται καὶ τὴν ἡμίσειαν τῆς διαμέτρου, ὥστε οὐκ ἐλαχίστη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="26">
+<p>Οὐδὲ διπλάσιον τὸ ἀπὸ τῆς διαμέτρου χωρίον ἔσται τοῦ ἀπὸ τῆς ἀτόμου. Ἀφαιρεθέντος γὰρ τοῦ ἴσον ἡ λοιπὴ ἔσται ἐλάσσων τῆς ἀμεροῦς. Εἰ γὰρ ἴσως τετραπλάσιον ἂν ἔγραψεν ἡ διάμετρος, ἄλλα δ’ ἄν τις καὶ ἕτερα τοιαῦτα συνάγοι· πᾶσι γὰρ ὡς εἰπεῖν ἐναντιοῦται τοῖς ἐν τοῖς μαθήμασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="27">
+<p>Πάλιν τοῦ μὲν ἀμεροῦς μία ἡ σύναψις, γραμμῆς δὲ δύο· καὶ γὰρ ὅλη ὅλης ἅπτεται, καὶ κατὰ τὸ πέρας ἐξ ἐναντίας. Ἔτι γραμμὴ προστεθεῖσα οὐ ποιεῖ μείζω τὴν ὅλην· τὰ γὰρ ἀμερῆ συντιθέμενα οὐ ποιήσει μεῖζον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="28">
+<p>Ἔτι ἐκ δυοῖν ἀμεροῖν μηδὲν γίνεσθαι συνεχὲς διὰ τὸ πλείους διαιρέσεις ἔχειν ἅπαν τὸ συνεχές· ἅπασα δὲ γραμμὴ παρὰ τὴν ἄτομον συνεχὴς οὐκ ἄν εἴη γραμμὴ ἄτομος. Ἔτι εἰ ἅπασα γραμμὴ παρὰ τῆς ἀτόμου καὶ ἴσα καὶ ἄνισα ὄιαιρεῖται, καὶ μὴ ἐκ τριῶν ἀτόμων καὶ ὅλως περιττῶν, ὥστ’ ἀδιαίρετος ἡ ἄτομος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="29">
+<p>Ὁμοίως δὲ κἄν εἰ δίχα τέμνεται· πᾶσα γὰρ ἡ ἐκ τῶν περιττῶν. Εἰ δὲ <pb facs="operaexrecension06arisuoft_0190"/> δίχα μὲν μὴ πᾶσα τέμνεται ἀλλ’ ἡ ἐκ τῶν ἀρτίων, τὴν δὲ δίχα διαιρουμένην καὶ ὅσα δυνατὸν τέμνειν, διαιρεθήσεται καὶ οὕτως ἄτομος, ὅταν ἡ ἐκ τῶν ἀρτίων εἰς ἄνισα διαιρῆται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="30">
+    <p>Πάλιν εἰ τὸ κεκινημένον ἐν ᾦ <milestone unit="page" resp="Bekker" n="970b"/> χρόνῳ κινεῖται τὴν ὅλην ἐν τῷ ἡμίσει τὴν ἡμίσειαν κινηθήσεται, καὶ ἐν τῷ ἐλάττονι ἔλαττον ἢ τὴν ἡμίσειαν, ὥστ’ εἰ μὲν περιττῶν σύγκειται τῶν ἀτόμων τὸ μῆκος, ἀναιρεθήσεται ἡ μέση τομὴ τῶν ἀτόμων, εἴπερ ἐν τῷ ἡμίσει χρόνῳ τὸ ἥμισυ δίεισιν· ὁμοίως γὰρ ὅ τε χρόνος καὶ ἡ γραμμὴ τμηθήσεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="31">
+<p>Ὤστε οὐδεμία τῶν συγκειμένων τμηθήσεται εἰς ἴσα καὶ ἄνισα, οὐδ’ ὁμοίως τοῖς χρόνοις τμηθήσονται. Οὐκ ἔσονται ἄτομοι γραμμαί. Τὰ δὲ τοῦ αὐτοῦ λόγου ἐστί, καθάπερ ἐλέχθη, τὸ πάντα ταῦτα ποιεῖν ἐξ ἀμερῶν. Ἔτι ἄπασα ἡ μὴ ἄπειρος δύο ἔχει πέρατα· γραμμὴ γὰρ ὥρισται τούτοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="32">
+    <p>Ἡ δὲ ἄτομος οὐκ ἄπειρος, ὥστε ἔξει πέρας. Διαιρετὴ ἄρα· τὸ γὰρ πέρας ἄλλο καὶ οὗ πέρας. Ἣ ἔσται τις οὔτ’ ἄπειρος οὔτε πεπερασμένη γραμμὴ παρὰ ταύτας. Ἕτι οὐκ ἐν ἁπάσῃ γραμμῇ στιγμὴ ἔσται. Ἐν μὲν γὰρ τῇ ἀτόμῳ οὐκ ἔστιν· εἰ μὲν γὰρ μία μόνη, ὑπάρξει γραμμή, εἶτα στιγμή· εἰ δὲ πλείους, διαιρετὴ ἡ γραμμή.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="33">
+<p>Εἰ μὲν οὖν ἐν τῇ ἀτόμῳ μὴ ἐνυπάρχει στιγμή, οὐδ’ ὅλως ἐν γραμμῇ ἔσται· αἱ γὰρ ἄλλαι ἐκ τῶν ἀτόμων. Ἔτι ἢ μηθὲν τῶν στιγμῶν ἔσται μεταξὺ ἢ γραμμή· εἰ δὲ μεταξὺ γραμμή, ἐν ἀπάσαις δὲ πλείους στιγμαί, οὐκ ἔσται ἄτομος. Ἔτι οὐχ ἀπάσης ἔσται γραμμῆς τετράγωνον· ἔξει γὰρ μῆκος καὶ πλάτος, ὥστε διαιρετόν, ἐπεὶ τὸ μέν, τὸ δέ τι,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="34">
+<p>Εἰ δὲ τὸ τετράγωνον, καὶ ἡ γραμμή. Ἔτι τὸ πέρας τῆς γραμμῆς στιγμὴ <pb facs="operaexrecension06arisuoft_0191"/> ἔσται, ἀλλ' οὐ γραμμή. Πέρας μὲν γάρ, τὸ ἔσχατον δὲ ἡ ἄτομος. Εἰ γὰρ στιγμή, τὸ πέρας τῇ ἀτόμῳ ἔσται στιγμή, καὶ ἔσται γραμμὴ γραμμῆς στιγμῇ μείζων. Εἰ δ' ἐνυπάρχει τῇ ἀτόμῳ ἡ στιγμή, διὰ τὸ ταὐτὸ πέρας τῶν συνεχουσῶν γραμμῶν, ἔσται τι πέρας τῆς ἀμεροῦς,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="35">
+<p>Ὄλως τε τί διοίσει στιγμὴ γραμμῆς; Οὐδὲν γὰρ ἴδιον ἔξει ἡ ἄτομος γραμμὴ παρὰ τὴν στιγμὴν πλὴν τοὔνομα. Ἕτι ὁμοίως μένει ἐπίπεδον καὶ σῶμά ἐστιν ἄτομον. Ἑνος γὰρ ὄντος ἀδιαιρέτου καὶ τἆλλα συνακολουθήσει διὰ τὸ θάτερον διῃρῆσθαι κατὰ θάτερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="36">
+<p>Σῶμα οὐκ ἔσται ἀδιαίρετον διὰ τὸ <milestone unit="page" resp="Bekker" n="971a"/> εἶναι ἐν αὐτῷ βάθος καὶ πλάτος, οὐδ’ ἂν γραμμὴ εἴη ἀδιαίρετος· σῶμα μὲν γὰρ κατ’ ἐπίπεδον, ἐπίπεδον δὲ κατὰ γραμμήν. Ἐπεὶ δὲ οἵ τε λόγοι δι' ὦν ἐπιχειροῦσι πείθειν ἀσθενεῖς εἰσί, καὶ ψευδεῖς ἐναντίαι δόξαι πάσαι τοῖς ἰσχύουσι πρὸς πίστιν, φανερὸν ὅτι οὐκ ἄν εἴη γραμμὴ ἄτομος. Δῆλον δ' ἐκ τούτων ὅτι οὐδ’ ἂν ἐκ στιγμῶν εἴη γραμμή.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="37">
+<p>Σχεδὸν γὰρ οἱ πλεῖστοι τῶν λόγων οἱ αὐτοὶ ἁρμόσουσιν. Ἀνάγκη γὰρ διαιρεῖσθαι τὴν στιγμήν, ὅταν ἢ ἐκ περιττῶν τέμνηται ἴσα ἢ ἐξ ἀρτίων τὰ ἄνισα. Καὶ τὸ τῆς γραμμῆς μέρος μὴ εἶναι γραμμήν, μηδὲ τὸ τοῦ ἐπιπέδου ἐπίπεδον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="38">
+<p>Καὶ γραμμὴ δὲ γραμμῆς στιγμῇ εἶναι μείζων· ἐξ ὦν γὰρ σύγκειται, τούτοις καὶ ὑπερέξει. Τοῦτο δ' ὅτι ἀδύνατον, ἔκ τε τῶν ἐν τοῖς μαθήμασι δῆλον, καὶ ἔτι συμβήσεται τὴν στιγμὴν ἐν χρόνῳ δὴ εἶναι τὸ φερόμενον, εἴπερ τὴν μείζω μὲν ἐν πλείονι χρόνῳ, τὴν δ’ ἴσην ἐν ἴσῳ, ἡ δὲ τοῦ χρόνου ὑπεροχὴ χρόνος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="39">
+<p>Ἁλλ' ἴσως καὶ ὁ <pb facs="operaexrecension06arisuoft_0192"/> χρόνος ἐστὶν ἐκ τῶν νῦν, καὶ τοῦ αὐτοῦ λόγου λέγειν ἄμφω. Εἰ δὴ τὸ νῦν ἀρχὴ καὶ πέρας τοῦ χρόνον καὶ ἡ γραμμὴ στιγμῆς, μή ἐστι δὲ συνεχὴς ἡ ἀρχὴ καὶ τὸ πέρας ἀλλ' ἔχουσί τι μεταξύ, οὐκ ἂν εἴη οὔτε τὰ νῦν οὔτε στιγμαὶ ἀλλήλοις συνεχεῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="40">
+<p>Ἔτι ἡ μὲν γραμμὴ μέγεθός τι, δὲ τῶν στιγμῶν σύνθεσις οὐδὲν ποιεῖ μέγεθος διὰ τὸ μηδ’ ἐπὶ πλείω τόπον ἔχειν. Ὄταν γὰρ ἐπὶ γραμμὴν γραμμὴ τεθῇ καὶ ἐφαρμόσῃ, οὐδὲν γίνεται μεῖζον τὸ πλάτος. Ἐν δὲ τῇ γραμμῇ καὶ στιγμαὶ ἐνυπάρχονσιν, οὐδ’ ἂν αἱ στιγμαὶ πλείω κατέχοιεν τόπον, ὥστε οὐκ ἂν ποιοῖεν μέγεθος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="41">
+<p>Ἔτι εἰ ἅπαντα ἅπτεται παντὸς ἢ ὅλον ὅλου ἢ τινὶ τινὸς ἢ ὅλον τινός, ἡ δὲ στιγμὴ ἀμερὴς ὅλως ἅπτοιτο. Τὸ δ’ ὅλον ὅλου ἁπτόμενον ἀνάγκη ἓν εἶναι. Εἰ γάρ τι ἐστὶν ἢ θάτερον μή ἐστιν, οὐκ ἂν ὅλον ὅλου ἅπτοιτο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="42">
+<p>Εἰ δ' ἅμα ἐστὶ τὰ ἀμερῆ, τὸν αὐτὸν κατέχει τόπον πλείων ὃν καὶ πρότερον τὸ ἕν· τῶν γὰρ ἅμα <milestone unit="page" resp="Bekker" n="971b"/> ὄντων καὶ μὴ ἐχόντων ἐπέκτασιν κατὰ ταὐτὰ ὁ αὐτὸς ἀμφοῖν τόπος, Τὸ δ’ ἀμερὲς οὐκ ἔχει διάστασιν, ὥστ’ οὐκ ἂν εἴη μέγεθος συνεχὲς ἐξ ἀμερῶν. Οὐκ ἄρα οὔθ’ ἡ γραμμὴ ἐκ στιγμῶν οὔθ’ ὁ χρόνος ἐκ τῶν νῦν,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="43">
+<p>Ἔτι εἰ ἔστιν ἐκ στιγμῶν, ἅψεται στιγμὴ στιγμῆς· ἐὰν οὖν ἐκ τοῦ Κ ἐκβληθῇ ἡ Α Β καὶ Γ Δ, ἅψεται τοῦ Κ καὶ ἡ ἐν τῇ Κ Δ στιγμή. Ὤστε καὶ ἄλλῳ τινί· τὸ γὰρ ἀμερὲς τοῦ ἀμεροῦς ὅλον ὅλου ἐφάπτεται. Ὤστε τὸν αὐτὸν ἐφέξει τόπον τοῦ Κ, καὶ ἁπτόμεναι στιγμαὶ ἐν τῷ αὐτῷ τόπῳ ἀλλήλαις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="44">
+<p>Εἰ δ’ ἐν τῷ αὑτῷ, καὶ ἄπτονται· τὰ γὰρ ἐν τῷ αὐτῷ τόπῳ ὄντα πρῶτα <pb facs="operaexrecension06arisuoft_0193"/> ἅπτεσθαι ἀναγκαῖον, εἶθ’ οὕτως εὐθεῖα εὐθείας ἅψεται κατὰ δύο στιγμάς. Ἡ γὰρ ἐν τῇ Α Κ στιγμὴ καὶ τῇ Κ Γ καὶ ἑτέρας ἅπτεται στιγμῆς. ῎Ωστε ἡ ἐκ τῆς Γ Δ κατὰ πλείους ἅπτεται στιγμάς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="45">
+<p>Ὁ αὐτὸς δὲ λόγος καὶ εἰ μὴ δι' ἀλλήλων ἀλλ’ ὁπωσοῦν ἥψατο γραμμῆς. Ἔτι καὶ ἡ τοῦ κύκλου τῆς εὐθείας ἅψεται κατὰ πλείω. Τῆς γὰρ συναφῆς καὶ ἡ ἐν τῷ κύκλῳ καὶ ἡ ἐν τῇ εὐθείᾳ ἅπτεται καὶ ἀλλήλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="46">
+<p>Εἰ δὲ τοῦτο μὴ δυνατόν, οὐδὲ τὸ ἅπτεσθαι στιγμὴν στιγμῆς· εἰ δὲ μὴ ἅπτεσθαι, οὐδ’ εἶναι τὴν γραμμὴν στιγμήν· οὐδὲ γὰρ ἅπτεσθαι ἀναγκαῖον. Ἔτι πῶς ποτὲ ἔσται εὐθεῖα γραμμὴ καὶ περιφερής; Οὐδὲν γὰρ διοίσει ἡ σύναψις τῶν στιγμῶν ἐν τῇ εὐθείᾳ καὶ τῇ περιφερεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="47">
+<p>Τὸ γὰρ ἀμερὲς τοῦ ἀμεροῦς ὅλον ὅλου ἅπτεται, καὶ οὐκ ἔστιν ὅλως ἅπτεσθαι. Εἰ οὖν αἱ μὲν γραμμαὶ διάφοροι, ἡ δὲ σύναψις ἀδιάφορος, οὐκ ἔσται δὴ γραμμὴ ἐκ τῆς συνάψεως, ὥστ’ οὐδ’ ἐκ στιγμῶν. Ἔτι ἀναγκαῖον ἢ ἅπτεσθαι ἢ μὴ ἅπτεσθαι τὰς στιγμὰς ἀλλήλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="48">
+<p>Εἰ μὲν οὖν τὸ ἐφεξῆς ἅπτεσθαι ἀνάγκη, ὁ αὐτὸς ἔσται λόγος· εἰ δὲ ἐνδέχεται ἐφεξῆς τι εἶναι μὴ ἁπτόμενον, τὸ δὲ συνεχὲς οὐδὲν ἄλλο λέγομεν ἢ τὸ ἐξ ὦν ἐστὶν ἁπτομένων· ὥστε καὶ οὕτως ἀνάγκη τὰς στιγμὰς ἅπτεσθαι ἀλλήλων, ἢ εἶναι γραμμὴν συνεχῆ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="49">
+<p><milestone unit="page" resp="Bekker" n="972a"/> Ἔτι εἰ ἄτοπον στιγμὴ ἐπὶ στιγμῆς, ἴν’ ᾖ γραμμὴ καὶ ἐπὶ στιγμῇ, ἐπεὶ ἡ γραμμὴ ἐπίπεδον, ἀδύνατον τὰ εἰρημένα εἶναι. Εἴτε γὰρ ἐφεξῆς αἱ στιγμαί εἰσι, τμηθήσεται ἡ γραμμὴ κατ’ οὐδετέραν τῶν στιγμῶν, ἀλλ’ ἀνὰ μέσον· εἴθ’ ἅπτονται, γραμμὴ ἔσται τῆς μιᾶς στιγμῆς χώρα. Τοῦτο δ’ ἀδύνατον. <pb facs="operaexrecension06arisuoft_0194"/></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="50">
+<p>Ἔτι διαιροῖτ’ ἂν ἅπαντα καὶ ἀναλύοιτο εἰς στιγμάς, καὶ ἡ στιγμὴ μέρος σώματος, εἴπερ τὸ μὲν σῶμα ἐξ ἐπιπέδων, τὸ δ' ἐπίπεδον ἐκ γραμμῶν, αἱ δὲ γραμμαὶ ἐκ στιγμῶν. Εἰ δ’ ἐξ ὦν πρώτων ἐνυπαρχόντων ἕκαστά ἐστι, στοιχεῖά ἐστι ταῦτα, αἱ στιγμαὶ ἂν εἴησαν στοιχεῖα σωμάτων. Ὥστε συνώνυμα στοιχεῖα οὐδέτερα τῷ εἴδει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="51">
+<p>Φανερὸν οὖν ἐκ τῶν εἰρημένων ὅτι οὐκ ἔστι γραμμὴ ἐκ στιγμῶν. Ἀλλ' οὐδ’ ἀφαιρεθῆναι οἶόν τε στιγμὴν ἀπὸ γραμμῆς. Εἰ γὰρ ἐνδέχεται ἀφαιρεθῆναι, καὶ προστεθῆναι δυνατόν· προστεθέντος δέ τινος τὸ προστεθὲν μεῖζον ἔσται τοῦ ἐξ ἀρχῆς, ἐὰν τοιοῦτον ᾖ τὸ προστιθέμενον ὥστε ἓν ὅλον ποιεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="52">
+<p>Ἔσται γραμμὴ γραμμῆς στιγμῇ μείζων. Τοῦτο δ’ ἀδύνατον. Ἀλλὰ καθ’ έαυτὴν μὲν οὐχ’ οἶόν τε, κατὰ συμβεβηκὸς δ' ἐνδέχεται στιγμὴν ἀπὸ γραμμῆς ἀφελεῖν, τῷ ἐνυπάρχειν ἐν τῇ ἀφαιρουμένῃ γραμμῇ. Εἰ τοῦ ὅλου ἀφαιρουμένου καὶ ἡ ἀρχὴ καὶ τὸ πέρας ἀφαιρεῖται, γραμμῆς δ’ ἦν ἡ ἀρχὴ καὶ τὸ πέρας στιγμή, καὶ γραμμῆς ἐγχωρεῖ ἀφαιρεῖν καὶ στιγμὴν ἐνδέχοιτο. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="53">
+<p>Αὕτη δ’ ἡ ἀφαίρεσις κατὰ συμβεβηκός. Εἰ δὲ τὸ πέρας ἅπτεται, οὔτε πέρας ἢ αὐτοῦ ἢ τῶν ἐκείνου τινός. Ἡ δὲ στιγμή, ᾗ πέρας γραμμῆς, ἅπτεται, Ἧι μὲν οὖν γραμμῆς ἔσται στιγμὴ μείζων, ἡ δὲ στιγμὴ ἐκ στιγμῶν· τῶν γὰρ ἁπτομένων οὐδὲν ἀνὰ μέσον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="54">
+    <p>Ὁ αὐτὸς λόγος καὶ ἐπὶ τῆς τομῆς, εἰ ἡ τομὴ στιγμῆς καὶ ἡ τομὴ ἅπτεταί τινος καὶ ἐπὶ στερεοῦ καὶ ἐπιπέδου· ὡσαύτως δὲ καὶ τὸ στερεὸν ἐξ ἐπιπέδων καὶ γραμμῶν. Οὐκ ἀληθὲς δὲ κατὰ στιγμὴν εἰπεῖν, οὐδ’ ὅτι ἐλάχιστον <pb facs="operaexrecension06arisuoft_0195"/> τῶν ἐκ γραμμῆς εἰς τὸ ἐλάχιστον τῶν ἐνυπαρχόντων εἴρηται. Τὸ δὲ ἐλάχιστον, ὦν ἐστὶν ἐλάχιστον, καὶ ἔλαττόν ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="55">
+<p><milestone unit="page" resp="Bekker" n="972b"/> Ἐν δὲ τῇ γραμμῇ οὐδὲν ἄλλο ἢ στιγμιαὶ καὶ γραμμαὶ ἐνυπάρχουσιν. Ἡ δὲ γραμμὴ τῆς στιγμῆς οὐκ ἔστι μείζων· οὐδὲ γὰρ αὗ τὸ ἐπίπεδον τῆς γραμμῆς. Ὥστ’ οὐκ ἔσται στιγμὴ τὸ ἐν γραμμῇ ἐλάχιστον. Εἰ δὲ συμβλητὸν τῇ γραμμῇ ἡ στιγμή, τὸ δὲ ἐλάχιστον ἐν τρισὶ προσώποις, οὐκ ἔσται ἡ στιγμὴ τῶν ἐν τῇ γραμμῇ ἐλάχιστον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="56">
+<p>Καὶ ἄλλ’ ἄττα ἐνυπάρχει παρὰ τὰς στιγμὰς καὶ τὰς γραμμὰς ἐν τῷ μήκει· οὐ γὰρ ἐκ στιγμῶν. Εἰ δὲ τὸ ἐν τόπῳ ὂν ἡ στιγμὴ μῆκος ἢ ἐπίπεδον ἢ στερεὸν ἐκ τούτων τι, ἐξ ὦν δ’ ἐστὶν ἡ γραμμή, ἐκεῖνα ἐν τόπῳ (καὶ γὰρ ἡ γραμμή), καὶ μήτε σῶμα μήτ’ ἐπίπεδον μήτε ἐκ τούτων τι ἐνυπάρχει τῇ γραμμῇ, οὐκ ἔσται οὐθὲν ὅλως παρὰ τὰς στιγμὰς καὶ τὰς γραμμὰς ἐν τῷ μήκει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="57">
+<p>Ἔτι εἰ τοῦ ἐν τόπῳ ὄντος τὸ μεῖζον λεγόμενον μῆκος ἡ ἐπιφάνεια στερεόν, ἡ δὲ στιγμὴ ἐν τόπῳ, τὸ δ' ἐν τῷ μήκει ὑπάρχον παρὰ τὰς στιγμὰς καὶ τὰς γραμμὰς οὐθὲν τῶν προειρημένων, ὥστ’ οὐκ ἔσται ἡ στιγμὴ τῶν ἐνυπαρχόντων ἐλάχιστον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="58">
+<p>Ἔτι εἰς ὃ ἐλάχιστόν τι τῶν ἐν τῇ οἰκίᾳ, μήτε τῆς οἰκίας συμβαλλομένης πρὸς αὐτὸ λέγεται· ὁμοίως δὲ καὶ ἐπὶ τῶν ἄλλων· οὐδὲ τὸ ἐν γραμμῇ ἐλάχιστον πρὸς γραμμὴν σνγκρινόμμενον ἔσται. Ὥστε οὐχ ἁρμόσει τὸ ἐλάχιστον, ἐπεὶ τὸ μὴ ὄν ἐν τῇ οἰκίᾳ μή ἐστι τῶν ἐν τῇ οἰκίια ἐλάχιστον. Ὁμοίως δὲ καὶ ἐπὶ τῶν ἄλλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="59">
+<p>Ἐνδέχεται γὰρ στιγμὴν αὐτὴν καθ’ αὐτὴν εἶναι. Οὐκ ἔσται κατὰ ταύτης ἀληθὲς εἰπεῖν ὅτι τὸ ἐν γραμμῇ ἐλάχιστον, ὅτι οὐκ ἔστιν ἡ στιγμὴ ἄρθρον <pb facs="operaexrecension06arisuoft_0196"/> ἀδιαίρετον. Τὸ μὲν γὰρ ἄρθρον ἀεὶ δυοῖν ὅρος, ἡ δὲ στιγμὴ καὶ μιᾶς γραμμῆς ὅρος ἐστίν. Ἔτι ἡ μὲν πέρας, τὸ δὲ διαίρεσίς ἐστι μᾶλλον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg019.1st1K-grc1" n="60">
+<p>Ἔτι ἡ γραμμὴ καὶ τὸ ἐπίπεδον ἄρθρα ἔσονται· ἀνάλογον γὰρ ἔχουσιν, ὅτι τὸ ἄρθρον διάφορόν πως ἐστίν, διὸ καὶ Ἐμπεδοκλῆς ἐποίησε διὸ δεῖ ὀρθῶς. Ἡ δὲ στιγμὴ καὶ τὸ ἐν τοῖς ἀκινήτοις. Ἔτι οὐδεὶς ἔχει ἄπειρα ἄρθρα ἐν τῷ σώματι ἢ τῇ χειρί, στιγμνὰς δ’ ἀπείρους. Ἔτι λίθου ἄρθρον οὐκ ἔστιν, οὐδ’ ἔχει, στιγμὰς δὲ ἔχει.</p></div></div>
+
+
+</body></text></TEI>

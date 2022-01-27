@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Epistulae</title>
+        <author xml:lang="eng">Aristotle</author>
+        <editor>Rudolf Hercher</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName></respStmt>
+        <respStmt>
+          <persName><forename>Julia</forename><surname>Deen</surname></persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Panagiotis Androulakis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Tom Chambers</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Tamara Cheishvili</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Francesca Cocchi</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Saulo Delle Donne</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Axelle Gaydon</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Katerina Giakimtsouki-Magaraki</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Kirsty Harrod</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Alexis Heng</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Mayara Krieger Bogossian Khalil</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sheanna Murray</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Humberto Olmos Pellicer</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Regan</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Emeline Torrens</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+      
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0086.tlg011.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability><date when="2021-04-07"/></publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Epistolographi Graeci</title>
+            <editor>Rudolf Hercher</editor>
+            <imprint>
+              <pubPlace>Paris</pubPlace>
+              <publisher>A. F. Didot</publisher>
+              <date>1873</date>
+            </imprint>
+          </monogr>
+          <ref target="https://www.archive.org/stream/epistolographoih00hercuoft#page/172/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+      
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      
+      <refsDecl n="CTS">
+        <cRefPattern n="epistle" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts epistle.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+    
+    <revisionDesc>
+      <change when="2021-04-27" who="Lisa Cerrato">initial markup of new file</change>
+    </revisionDesc>
+  </teiHeader>
+  
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" xml:lang="grc">
+        <pb facs="epistolographoih00hercuoft_0266"/>
+        <div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" n="1">
+          <head rend="center"><label>α′.</label> Φιλίππῳ.</head>
+          <p rend="indent">Οἱ τὰς ἡγεμονίας ἀναλαμβάνοντες πρὸς εὐεργεσίαν τῶν ἀρχομένων οὐχ ὑπὸ τῆς τύχῃς ἀλλ’ οὐδ’ ὑπὸ τῆς φύσεως προηγμένοι τὰς ἀρχὰς ἐμπιστεύονται, αἳ μεταπίπτειν εἰώθασιν, ἀλλ’ ἐπὶ ταῖς ἀρεταῖς μέγα φρονοῦσιν εὖ καὶ σφόδρα σοφῶς πολιτευόμενοι. οὐδὲν γὰρ τῶν ἐν ἀνθρώποις βέβαιον, καὶ ἐχυρὸν οὐδὲν ὃ μέχρι τῆς ἑσπέρας ἥλιος τραχείᾳ ῤοπῇ συναλλοιοῖ καὶ μεταφέρει. ποικίλλουσα τοὺς βίους ἅπαντας καθάπερ τραγῳδίας ὑποκρίσει τοῖς ἡμετέροις κακοῖς ἡ τύχη μετασκευάζει, εἴπερ μὴ διεψεύσμεθα τῆς ἀληθείας ὅτι τὸν αὐτὸν τρόπον ὅνπερ τῶν ἐκ γῆς φυομένων ἕκαστα, καὶ τοὺς ἄνδρας ἀνθεῖν ποτὲ συμβαίνει καὶ τὰς ἀκμὰς ἐν χρόνοις τισὶν ἀναλαμβανομένους πολὺ τῶν ἄλλων διαφέρειν. διὸ πειρῶ μήτε τῆς Ἑλλάδος τυραννικώτερον προΐστασθαι μήτε τοῖς ῥήμασι σοβαρώτερον· τὸ μὲν γὰρ προπετείας ἐστὶ σημεῖον, τὸ δὲ ὁμολογουμένης ἀβουλίας τεκμήριον. δεῖ γὰρ τοὺς νοῦν ἔχοντας τῶν δυναστευόντων μὴ διὰ τὰς ἀρχὰς ἀλλὰ διὰ τῶν ἀρχῶν θαυμάζεσθαι, ἵνα τῆς τύχης μεταπεσούσης τῶν αὐτῶν ἐγκωμίων ἀξιῶνται. τὰ δ’ ἄλλα εὖ πρᾶττε, ψυχὴν πρὸς φιλοσοφίαν σῶμα δὲ πρὸς ὑγίειαν ἄγων, καὶ ** ἐπιμελούμενος.</p></div>
+        
+        <div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" n="2">
+          <head rend="center"><label>β′.</label> Ἀλεξάνδρῳ.</head>
+            <p rend="indent">Ἀπορῶ τίνων ἢ ποίων ἀρχή με λάβῃ πρός σε ἐφ’ ἃ γὰρ ἂν ἐπισκοπῶν ἐπιβάλω τὴν διάνοιαν, πάντα μοι φαίνεται μεγάλα καὶ θαυμαστά, καὶ λήθης οὐδὲν ἄξιον ὁρῶ, μνήμης δὲ οἰκεῖα καὶ προτρέψεως. ὧν οὐδὲν οὐδεὶς ἀμαυρώσει χρόνος· αἱ γὰρ καλαὶ τῶν διδασκάλων παραινέσεις καὶ προτρέψεις θεατὴν ἔχουσι τὸν αἰῶνα. διὸ πειρῶ τὴν ἀρχὴν μὴ εἰς ὕβριν ἀλλ’ εἰς εὐεργεσίαν κατατίθεσθαι, ἧς οὐδὲν μεῖζον τῶν ἐν βίῳ ὑπάρχειν πέφυκε. διὸ καὶ τὸ θνητὸν τῆς φύσεως πολλάκις ὑπὸ τοῦ χρεὼν διαλυόμενον ἄφθαρτον διὰ τὸ μέγεθος τῶν ἔργων κέκτηται τὴν μνήμην. τούτων οὖν τὴν ἔννοιαν ἔχε· οὐ γὰρ ἀλόγως ἠνέχθης ὡς ἔνιοι, οἳ ἀτόπως καὶ τὰς γνώμας διετέθησαν. σοὶ καὶ γένος ἔντιμον καὶ βασιλεία πατρῷος καὶ παιδεία βέβαιος καὶ δόξα περίβλεπτος, καὶ ὅσον ταῖς ἀφορμαῖς τῆς τύχης διαφέρεις, τοσοῦτον καὶ ταῖς ἀρεταῖς τῶν<pb facs="epistolographoih00hercuoft_0267"/>καλῶν πρωτεύειν σε δεῖ, τὰ δ’ ἄλλα πρᾶττε μὲν τὰ συμφέροντα, ἐπιτέλει δὲ τὰ δόξαντα.</p></div>
+        
+        <div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" n="3">
+          <head rend="center"><label>γ′.</label> Φιλίππῳ.</head>
+          <p rend="indent">Οἱ πολλοὶ τῶν φιλοσόφων τὴν εὐεργεσίαν θεῷ ἰσόμοιρον παρεσκεύασαν· ὡς γὰρ ἁπλῶς εἰπεῖν χάριτος δόσις καὶ ἀμοιβὴ συνέχει τοὺς τῶν ἀνθρώπων βίους, τῶν μὲν διδόντων, τῶν δὲ λαμβανόντων, τῶν δ’ αὖ πάλιν ἀνταποδιδόντων. διὸ καλὸν καὶ δίκαιόν ἐστι πάντας μὲν τοὺς ἀναξίως ἀτυχοῦντας ἐλεεῖν· οἶκτος μὲν γὰρ ἡμέρου ψυχῆς ἐστὶ σημεῖον, χαλεπότης δὲ ἀπαιδεύτου· αἰσχρὸν γὰρ καὶ σχέτλιον ἀρετὴν ἀτυχοῦσαν περιορᾶν. ὅθεν ἐπαινῶ καὶ τὸν ἡμέτερον γνώριμον Θεόφραστον λέγοντα τὴν χάριν ἀμεταμέλητον εἶναι καὶ καλὸν καρπὸν φέρειν τὸν παρὰ τῶν εὖ παθόντων ἔπαινον. διόπερ δεῖ τοὺς νοῦν ἔχοντας τῶν ἀνθρώπων εἰς πολλοὺς αὐτὴν κατατίθεσθαι, νομίζοντας χωρὶς τῆς εὐφημίας ἔρανόν τινα τοῦτον αὐτοῖς ὑπάρξειν ἐν ταῖς μεταβολαῖς τῶν πραγμάτων, καὶ εἴγε μὴ πάντας, ἀλλ’ ἕνα τινὰ τῶν εὐεργετηθέντων ἀποδώσειν τὴν χάριν. ὅθεν πειρῶ πρόθυμος μὲν εἶναι ταῖς εὐεργεσίαις, ἔποχος δὲ τοῖς θυμοῖς· τὸ μὲν γὰρ βασιλικόν τε καὶ ἥμερον, τὸ δὲ βάρβαρόν τε καὶ στυγητόν. τὰ δ’ ἄλλα καθὼς ἂν δοκιμάζῃς πρᾶττε μὴ παρορῶν τὰς λυσιτελεῖς ψήφους.</p></div>
+        
+        <div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" n="4">
+          <head rend="center"><label>δ′.</label> Τῷ αὐτῷ.</head>
+          <p rend="indent">Οἱ διάραντες τῶν βασιλέων ἐπὶ φρονήσει καὶ ταῖς ὑπεροχαῖς τῶν ἄστρων ψαύσαντες εὐεργετοῦσιν οὐδὲ πρὸς τοὺς αὐτοὺς πολιτευόμενοι καιρούς, ἀλλὰ καὶ θεωροῦντὲς τὸ τῆς τύχης ἄστατον θησαυρίζουσι τὴν χάριν πρὸς ἑκάτερα, ἐν μὲν ταῖς εὐπραγίαις τιμῆς βουλόμενοι μεταλαμβάνειν (τιμὴ γὰρ οἰκεῖον ἀρετῆς ἐστίν ἐν δὲ τοῖς συμπτώμασι βοηθείας· αἱ γὰρ συμφοραὶ τἀναγκαῖα κρίνουσι τῶν καλῶν πρότερα. σαφέστατος γὰρ εὐνοίας ἔλεγχος ὁ τῆς τύχης καιρός· ἀπαιτεῖ γὰρ οὐ λόγους ἀλλὰ πράξεις δεόντως, ἡ γὰρ τῶν εὐνοουντων ὄψις ὥσπερ ἐν πελάγει χειμαζομένῳ παρεφάνη γῆ. πᾶσα γὰρ ὡς ἔοικεν ἐν ἐρήμῳ πεσοῦσα τύχη σκοπὸς ἀληθῶς ἔκκειται τοῖς πολεμεῖν ἢ ἀδικεῖν ἣ συκοφαντεῖν αἱρουμένοις, μόνη δ’ ἡ τῶν σπουδαίων διαγωγὴ τὸ τῆς τύχης εὐκίνητον οὐκ ἀπαρνεῖται, φέρουσα δ’ εὐλόγως πᾶν τὸ προσπῖπτον ἐκ τῶν κατὰ Πλάτωνα κρειττόνων εὖ διατίθεται, διὸ καὶ τὴν ταχυτῆτα τῶν πραγμάτων εὐλαβοῦ καὶ τὸν κύκλον τῆς μεταπτώσεως τήρει καὶ τὰς ἐν τῷ ζῆν ψήφους λογίζου· πολλὰ γὰρ ἡ ταὐτομάτου φορὰ κομίζει τῷ βίῳ καὶ ῥοπὰς αὐτονόμους ποιεῖ. τοῖς μὲν ἀγνοοῦσι μετάνοιαν δίδου, τοῖς δ’ εὐνοοῦσι τὰς χάριτας προχείρους νέμε· ταῦτα γὰρ πράττων οὐχ ἅπαξ ἀλλὰ δι’ ὅλου συντηρῶν ἀσφαλέστατα καὶ ἀκίνδυνα τὰ τῆς ἡγεμονίας ἕξεις μέλαθρα. ὡς μὲν ὑπὲρ μεγάλων ὀλίγα, ὡς δὲ πρὸς σέ, πάντα σχεδὸν εἴρηται.<pb facs="epistolographoih00hercuoft_0268"/></p></div>
+        
+        <div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" n="5">
+          <head rend="center"><label>ε′.</label> Θεοφράστῳ.</head>
+         <p rend="indent">Ἡ πρόχειρος ἀδικία τῆς πολυχρονίου λυσιτελεστέρα πέφυκεν ὑπάρχειν· ἣ μὲν γὰρ ὀλιγοχρόνιον ἔχει καὶ τὴν μνήμην καὶ τὴν βλάβην, ἣ δὲ γηράσκουσα καὶ περιπεποιημένη τὴν δυσμένειαν ἔχθραν ἀίδιον παρασκευάζει, καὶ τῇ μὲν πολλάκις λόγον δωρησάμενοι γαληνισμὸν ηὕρομεν, τῇ δὲ καὶ μερίσαντες τὰς τρικυμίας σάλον καὶ ἀνίας εἴδομεν πορθμόν. διό φημι δεῖν τὴν ἑταιρίαν μάλιστα μὲν μὴ ἀδικεῖν, οὐδὲ γὰρ εὔλογον ἔχει τὴν πρόφασιν· εἰ δὲ μή γε, ἀκουσίως τοῦτο πράξασαν θᾶττον διαλύεσθαι τὴν ἔχθραν· τὸ μὲν γὰρ μὴ ἀδικεῖν ἴσως ὑπὲρ ἄνθρωπόν ἐστι, τὸ δὲ πλανηθέντα διασώσασθαι ἐπιφέρει τι καλόν, καὶ σφόδρα τοῦτο εὐσταθοῦς διανοίας ἴδιόν ἐστιν.</p></div>
+        
+        <div type="textpart" subtype="epistle" xml:base="urn:cts:greekLit:tlg0086.tlg011.1st1K-grc1" n="6">
+          <head rend="center"><label>ς′.</label> Ἀριστοτέλλης βασιλεῖ Ἀλεξάνδρῳ εὖ πράττειν.</head>
+          <p rend="indent">Ἔγραψάς μοι περὶ τῶν ἀκροατικῶν λόγων οἰόμενος δεῖν αὐτοὺς φυλάττειν ἐν ἀπορρήτοις. ἴσθι οὖν αὐτοὺς καὶ ἐκδεδομένους καὶ μὴ ἐκδεδομένους· ξυνετοὶ γάρ εἰσι μόνοις τοῖς ἡμῶν ἀκούσασιν.</p>
+          
+        </div>
+      </div>
+    
+    </body>
+  </text>
+</TEI>

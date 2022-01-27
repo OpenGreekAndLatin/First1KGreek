@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Φυσιογνωμονικά</title>
+                <author>Aristotle</author>
+                <editor>Immanuel Bekker</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                <respStmt>
+                    <persName>Lucy Parr</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Hillary Cheney</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Evie Edmundson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Claudia Filos</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carlos R. Gutiérrez-Rueda</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Catharine Haldeman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kelly Hamilton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew L Hokom</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Devin Lawson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zijun Liao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sean Mao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Halle Richardson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Adam Rosengarten</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Will Shao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuti Shelat</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Mel Ashton Trump</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Landon Van Berkum</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt></titleStmt>
+                
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0086.tlg032.1st1K-grc1.xml</idno>
+<pubPlace/>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Aristotelis Opera</title>
+                        <author>Aristotle</author>
+                        <editor>Immanuel Bekker</editor>
+                        <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <pubPlace>Oxford</pubPlace>
+                            <biblScope unit="volume">6</biblScope>
+                            <date>1837</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/operaexrecension06arisuoft/page/36/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc> 
+        </fileDesc>        
+        
+        
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+<ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+    
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+    <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"> 
+            <p>This pointer pattern extracts chapter.</p></cRefPattern>
+    </refsDecl>
+</encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-10-20" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text>
+<body>
+    <div type="edition" n="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" xml:lang="grc">
+    <pb facs="operaexrecension06arisuoft_0046"/>
+        <milestone unit="page" resp="Bekker" n="805a"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="1">
+<p rend="indent">Ὄτιδιάνοιαι ἕπονται τοῖς σώμασι, καὶ οὐκ εἰσὶν αὐταὶ καθ’ ἑαυτὰς ἀπαθεῖς οὖσαι τῶν τοῦ σώματος κινήσεων. Τοῦτο δὲ δῆλον πάνυ γίνεται ἔν τε ταῖς μέθαις καὶ ἐν ταῖς ἀρρωστίαις· πολὺ γὰρ ἐξαλλάττουσαι φαίνονται αἱ διάνοιαι ὑπὸ τῶν τοῦ σώματος παθημάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="2">
+<p>Καὶ τοὐναντίον δὴ τοῖς τῆς ψυχῆς παθήμασι τὸ σῶμα συμπάσχον φανερὸν γίνεται περί τε τοὺς ἔρωτας καὶ τοὺς φόβους τε καὶ τὰς λύπας καὶ τὰς ἡδονάς. Ἔτι δὲ ἐν τοῖς φύσει γινομένοις μᾶλλον ἄν τις συνίδοι ὅτι οὕτως ἔχει πρὸς ἄλληλα σῶμά τε καὶ ψυχὴ συμφυῶς ὥστε τῶν πλείστων ἀλλήλοις αἴτια γίνεσθαι παθημάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="3">
+<p>Οὐδὲν γὰρ πώποτε ζῷον γεγένηται τοιοῦτον ὃ τὸ μὲν εἶδος ἔσχεν ἑτέρου ζῴου, τὴν δὲ διάνοιαν ἄλλου, ἀλλ’ ἀεὶ τοῦ αὐτοῦ τό τε σῶμα καὶ τὴν ψυχήν, ὥστε ἀναγκαῖον ἕπεσθαι τῷ τοιῷδε σώματι τοιάνδε διάνοιαν. Ἔτι δὲ καὶ τῶν ἄλλων ζῴων οἱ περὶ ἕκαστον ἐπιστήμονες ἐκ τῆς ἰδέας δύνανται θεωρεῖν, ἐππικοί τε ἵππους καὶ κυνηγέται κύνας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="4">
+<p>Εἰ δὲ ταῦτα ἀληθῆ εἴη (ἀεὶ δὲ ταῦτα ἀληθῆ ἐστίν), εἴη ἄν φυσιογνωμονεῖν. Οἱ μὲν οὖν προγεγενημένοι φυσιογνώμονες κατὰ τρεῖς τρόπους ἐπεχείρησαν φυσιογνωμονεῖν, ἕκαστος καθ’ ἕνα. Οἱ μὲν γὰρ ἐκ τῶν γενῶν τῶν ζῴων φυσιογνωμονοῦσι, τιθέμενοι καθ’ ἕκαστον γένος εἶδός τι ζῴου καὶ διάνοιαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="5">
+    <p>Οἱ δ' ἐπὶ τούτοις σῶμά τι, εἶτα τὸν ὅμοιον τῷ σώματι σῶμα ἔχοντα καὶ τὴν ψυχὴν ὁμοίαν ὑπελάμβανον. Ἅλλοι δέ τινες τοῦτο μὲν ἐποίουν, οὐκ ἐξ ἀπάντων δὲ τῶν ζῴων ἐδοκίμαζον, <pb facs="operaexrecension06arisuoft_0047"/> ἀλλ’ ἐξ αὐτοῦ τοῦ τῶν ἀνθρώπωνγένους, διελόμενοι κατὰ τὰ ἔθνη, ὅσα διέφερε τὰς ὄψεις καὶ τὰ ἤθη, οἶον Αἰγύπτιοι καὶ Θρᾷκες καὶ Σκύθαι, ὁμοίως τὴν ἐκλογὴν τῶν σημείων ἐποιοῦντο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="6">
+<p>Οἱ δέ τινες ἐκ τῶν ἠθῶν τῶν ἐπιφαινομένων, οἵᾳ διαθέσει ἕπεται ἕκαστον ἦθος, τῷ ὁργιζομένῳ, τῷ φοβουμένῳ, τῷ ἀφροδισιάζοντι, καὶ τῶν ἄλλων δὴ παθημάτων ἑκάστῳ. Ἔστι δὲ κατὰ πάντας τούτους τοὺς τρόπους φυσιογνωμονεῖν, καὶ ἔτι κατ’ ἄλλους, καὶ τὴν ἐκλογὴν τῶν σημείων ἀνομοίως ποιεῖσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="7">
+    <p>Οἱ μὲν οὖν κατὰ <milestone unit="page" resp="Bekker" n="805b"/> τὰ ἤθη μόνον φυσιογνωρμονοῦντες ἁμαρτάνουσιν, πρῶτον μὲν ὅτι ἔνιοι οὐχ οἱ αὐτοὶ ὄντες τὰ ἐπὶ τῶν προσώπωνἤθη τὰ αὐτὰ ἔχουσιν, οἷον ὅ τε ἀνδρεῖος καὶ ὁ ἀναιδὴς τὰ αὐτὰ ἔχουσι, τὰς διανοίας πολὺ κεχωρισμένοι, δεύτερον δὲ ὅτι κατὰ χρόνους τινὰς τὰ ἤθη οὐ τὰ αὐτὰ ἀλλ' ἑτέρων ἔχουσιν· δυσανίοις τε γὰρ οὖσιν ἐνίοτε συνέβη τὴν ἡμέραν ἡδέως διαγαγεῖν καὶ τὸ ἦθος λαβεῖν τὸ τοῦ εὐθύμου, καὶ τοὐναντίον εὔθυμον λυπηθῆναι, ὥστε τὸ ἦθος τὸ ἐπὶ τοῦ προσώπου μεταβαλεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="8">
+<p>Ἔτι πρὸς τούτοις περὶ ὄλίγων ἄν τις τοῖς ἐπιφαινομένοις τεκμαίροιτο. Οἱ δ' ἐκ τῶν θηρίων φυσιογνωμονοῦντες οὐκ ὀρθῶς τὴν ἐκλογὴν τῶν σημείων ποιοῦνται. Οὐ γὰρ δὴ ἑκάστου τῶν ζῴων τὴν ἰδέαν διεξελθόντα ἔστιν εἰπεῖν ὅτι, ὃς ἂν ὅμοιος τούτῳ τὸ σῶμα ᾖ, καὶ τὴν ψυχὴν ὅμοιος ἔσται. Πρῶτον μὲν γὰρ ὡς ἀπλῶς εἰπεῖν οὕτως ὅμοιον θηρίῳ ἄνθρωπον οὐδεὶς ἂν εὕροι, ἀλλὰ προσεοικόταμέν τι,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="9">
+<p>Ἔτι πρὸς τούτοις τὰ ζῷα ὀλίγα μὲν τὰ ἴδία ἔχει σημεῖα, πολλὰ δὲ τὰ κοινά· ὥστε ἐπειδὰν ὅμοιός τις ᾖ μὴ κατὰ τὸ ἴδιον ἀλλὰ κατὰ τὸ κοινόν, τί μᾶλλον οὖτος λέοντι ἢ ἐλάφῳ ὁμοιότερος; Εἰκος γὰρ τὰ μὲν δία τῶν σημείων ἴδιόν τι σημαίνειν, τὰ δὲ κοινὰ κοινόν. Τὰ μὲν οὖν κοινὰ τῶν σημείων οὐδὲν ἂν διασαφηθείη τῷ φυσιογνωμονοῦντι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="10">
+<p>Εἰ δέ <pb facs="operaexrecension06arisuoft_0048"/> τις τὰ ἴδια ἑκάστου τῶν θηρίων ἐκλέξειεν, οὐκ ἂν ἔχοι ἀποδοῦναι οὗ ἐστὶ ταῦτα σημεῖα. Εἰκὸς γὰρ τοῦ ἰδίου, ἴδιον δὲ οὐδενὸς οὐδὲν τῶν ζῴων τῶν φυσιογνωμονουμένων ἔνγε τῇ διανοίᾳ ἔχοι ἄν τις λαβεῖν· οὔτε γὰρ ἀνδρεῖον μόνον ὁ λέων ἐστίν, ἀλλὰ καὶ ἄλλα πολλά, οὔτε δειλὸν ὁ λαγωός, ἀλλὰ καὶ ἄλλα μυρία.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="11">
+<p>Εἰ οὖν μήτε τὰ κοινὰ σημεῖα ἐκλέξαντι σαφές τι γίνεται μήτε τὰ ἴδια, οὐκ ἂν εἴη καθ’ ἕκαστον τῶν ζῷων σκέπτεσθαι, ἀλλ ἐξ ἀνθρώπων τὴν ἐκλογὴν ποιητέον τῶν τὸ αὐτὸ πάθος πασχόντων, οἷον, ἂν μὲν ἀνδρείου ἐπισκοπῇ τις τὰ σημεῖα, τὰ ἀνδρεῖα τῶν ζῴων εἰς ἓν λαβόντα δεῖ ἐξετάσαι, ποῖα παθήματα τούτοις μὲν ἅπασιν ὑπάρχει, τῶν δὲ ἄλλων ζῴων οὐδενὶ συμβέβηκεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="12">
+    <p>Εἰ γὰρ <milestone unit="page" resp="Bekker" n="806a"/> οὕτω τις ἐκλέξειεν, ὅτι ταῦτά ἐστι τὰ σημεῖα ἀνδρείας τοῖς προκριθεῖσι ζῴοις, μὴμόνον ἀνδρείας κοινὸν ὑπάρχειν πάθημα τῶν ἐν τῇ διανοίᾳ, ἀλλὰ καὶ ἄλλοτι· οὕτω δ’ ἂν ἀπορήσειε πότερον ἀνδρείας ἢ θατέρου τὰ σημεῖά ἐστιν. Ἀλλὰ δεῖ ἐκ πλείστων τε ἐκλέγεσθαι ζῴων, καὶ μηδὲν πάθος κοινὸν ἐχόντων ἐν τῇ διανοίᾳ ἄλλο τι, οὗ ἂν τὰ σημεῖα σκοπῇ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="13">
+<p>Ὅσα μὲν οὖν τῶν σημείων μόνιμά ἐστι, μόνιμον ἄν τι καὶ σημαίνοι· ὅσα δὲ ἐπιγινόμενά τε καὶ ἀπολείποντα, πῶς ἂν τὸ σημεῖον ἀληθὲς εἴη τοῦ ἐν τῇ διανοίᾳ μὴ μένοντος; Εἰ μὲν γὰρ μόνιμον ἐπιγινόμενόν τε καὶ ἀπολεῖπον σημεῖόν τις ὑπολάβοι, ἐνδέχοιτο μὲν ἂν αὐτὸ ἀληθὲς εἶναι, οὐ μὴν ἐπιεικὲς ἂν εἴη, μὴ ἀεὶ τῷ πράγματι παρεπόμενον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.1" n="14">
+<p>Ὅσα δὲ παθήματα ἐγγινόμενα τῇ ψυχῇ μηδέν τι ἐνδιαλλάττει τὰ σημεῖα τὰ ἐν τῷ σώματι, οἷς χρῆται ὁ φυσιογνώμων, οὐκ ἂν εἴη τὰ τοιαῦτα γνωρίσματα τῇ τέχνῃ, οἷον τὰ περὶ τὰς δόξας καὶ τὰς ἐπιστήμας ἰατρὸν ἢ κιθαριστὴν οὐκ ἐνδέχεται γνωρίζειν· ὁ γὰρ μαθὼν ὅ τι μάθημα, οὐδὲν ἐξήλλαξε τῶν σημείων οἶς χρῆται ὁ φυσιογνώμων.</p></div></div>
+<pb facs="operaexrecension06arisuoft_0049"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="1">
+<p rend="indent">Δεῖ δὴ οὖν ὁρίσαι περὶ ποῖα ἄττα ἐστὶν ἡ φυσιογνωμονία, ἐπειδὴ οὐ περὶ πάντα, καὶ ἐκ τίνων ἕκαστα σημεῖα λαμβάνεται, ἔπειτ’ ἐφεξῆς καθ’ ἓν ἕκαστον περὶ τῶν ἐπιφανεστέρων δηλῶσαι. Ἡ μὲν οὖν φυσιογνωμονία ἐστί, καθάπερ καὶ τοὔνομα αὐτῆς λέγει, περὶ τὰ φυσικὰ παθήματα τῶν ἐν τῇ διανοίᾳ, καὶ τῶν ἐπικτήτων ὅσα παραγινόμενα μεθίστησι τῶν σημείων τῶν φυσιογνωμονουμένων. Ὁποῖα δὲ ταῦτά ἐστιν, ὕστερονδηλωθήσεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="2">
+<p>Ἐξ ὧν δὲ γενῶν τὰ σημεῖα λαμβάνεται, νῦν ἐρῶ, καὶ ἔστιν ἅπαντα· ἔκ τε γὰρ τῶν κινήσεων φυσιογνωμονοῦσι, καὶ ἐκ τῶν σχημάτων, καὶ ἐκ τῶν χρωμάτων, καὶ ἐκ τῶν ἠθῶν τῶν ἐπὶ τοῦ προσώπου ἐμφαινομένων, καὶ ἐκ τῶν τριχωμάτων, καὶ ἐκ τῆς λειότητος, καὶ ἐκ τῆς φωνῆς, καὶ ἐκ τῆς σαρκός, καὶ ἐκ τῶν μερῶν, καὶἐκ τοῦ τύπου ὅλου τοῦ σώματος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="3">
+<p>Καθόλου μὲν οὖν τοιαῦτά ἐστιν ἃ λέγουσιν οἱ φυσιογνώμονες περὶ ὅλων τῶν γενῶν ἐν οἷς ἐστὶ τὰ σημεῖα. Εἰ μὲν οὖν ἀσαφὴς ἢ μὴ εὔσημος ἦν ἡ τοιαύτη διέξοδος, ἀπέχρησεν ἂν τὰ εἰρημένα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="4">
+    <p>Νυνὶ δ' ἴσως βέλτιόν ἐστι καθ’ ἕκαστον περὶ πάντων, ὅσα ἐπιφανῆ παρὰ τῶν φυσιογνωμονουμένων, <milestone unit="page" resp="Bekker" n="806b"/> ἀκριβέστερον φράσαι, τά τε σημεῖα λέγοντα, οἷά τ’ ἐστὶν ἕκαστακαὶ ἐπὶ τί ἀναφέρεται, ὅσαμὴ ἐν τοῖς προειρημένοις δεδήλωται. Αἱ μὲν οὖν χροιαὶ σημαίνουσιν αἱ μὲν ὀξεῖαι θερμὸν καὶ ὕφαιμον, αἱ δὲ λευκέρυθροι εὐφυΐαν, ὅταν ἐπὶ λείου χρωτὸς συμβῇ τοῦτο τὸ χρῶμα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="5">
+<p>Τὰ δὲ τριχώματα τὰ μὲν μαλακὰ δειλόν, τὰ δὲ σκληρὰ ἀνδρεῖον. Τοῦτο δὲ τὸ σημεῖον εἴληπται ἐξ ἁπάντων τῶν ζῴων. Δειλότατον μὲν γάρ ἐστιν ἔλαφος λαγωὸς πρόβατα, καὶ τὴν τρίχα μαλακωτάτην ἔχει· ἀνδρειότατον δὲ λέων, ὗς ἄγριος, καὶ τρίχα σκληροτάτην φέρει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="6">
+<p>Ἔστι δὲ καὶ ἐν τοῖς ὄρνισι τὸ αὐτὸ τοῦτο ἰδεῖν· καθόλου τε γὰρ ὅσοι μὲν σκληρὸν τὸ πτερὸν ἔχουσιν, ἀνδρεῖοι, ὅσοι <pb facs="operaexrecension06arisuoft_0050"/> δὲ μαλακόν, δειλοί, καὶ κατὰ μέρη ἔστιταὐτὸ τοῦτο ἰδεῖν ἔν τε τοῖς ὄρτυξι καὶ ἐν τοῖς ἀλεκτρυόσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="7">
+<p>Ὁμοίως δὲ καὶ ἐπὶ τῶν γενῶν τῶν ἀνθρώπων ταὐτὸ τοῦτο συμπίπτει· οἱ μὲν γὰρ ὑπὸ ταῖς ἄρκτοις οἰκοῦντες ἀνδρεῖοί τε εἰσι καὶ σκληρότριχες, οἱ δὲ πρὸς μεσημβρίαν δειλοί τε καὶ μαλακὸν τρίχωμα φέρουσιν. Ἡ δὲ δασύτης ἡ περὶτὴν κοιλίαν λαλιὰν σημαίνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="8">
+<p>Τοῦτο δὲ ἀναφέρεται εἰς τὸ γένος τῶν ὀρνίθων· ἴδιον γὰρ ὄρνιθος τῶν περὶ τὸ σῶμα ἡ δασύτης ἡ περὶ τὴν κοιλίαν, τῶν δὲ περὶ διάνοιαν ἡ λαλιά. Ἡ δὲ σὰρξ ἡ μὲν σκληρὰ καὶ εὐεκτικὴ φύσει ἀναίσθητον σημαίνει, ἡ δὲ λεία καὶ εὐφυέα καὶ ἀβέβαιον, ἐὰν μὴ ἐπ’ ἰσχυροῦ σώματος καὶ τὰ ἀκρωτήρια ἐγκρατῆ ἔχοντος τοῦτο συμβῇ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="9">
+<p>Αἱ δὲ κινήσεις αἱ μὲν νωθραὶ μαλακὴν διάνοιαν, αἱ δὲ ὀξεῖαι ἔνθερμον. Ἐπὶ δὲ τῆς φωνῆς ἡ μὲν βαρεῖα καὶ ἐπιτεινομένη ἀνδρεῖον, ἡ δὲ ὀξεῖα καὶ ἀνειμένη δειλόν. Τὰ δὲ σχήματα καὶ τὰ παθήματα τὰ ἐπιφαινόμενα ἐπὶ τῶν προσώπων κατὰ τὰς ὁμοιότητας λαμβάνεται τῷ πάθει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="10">
+<p>Ὅταν γὰρ πάσχῃ τι, γίνεται οἷον εἰ τοιοῦτον ἔχει ὅταν τις ὀργίζηται, ὀργίλον τὸ σημεῖον τοῦ αὐτοῦ γένους. Τὸ δὲ ἄρρεν τοῦ θήλεος μεῖζον καὶ ἰσχυρότερον, καὶ τὰ ἀκρωτήρια τοῦ σώματος ἰσχυρότερα καὶ λιπαρώτερα καὶ εὐεκτικώτερα καὶ βελτίω κατὰ πάσας τὰς ἀρετάς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="11">
+    <p>Ἰσχυρότερα δὲ τῶν ἐπὶ τοῖς μέρεσι σημείων ἐστὶ τὰ ἐν τοῖς ἤθεσι τοῖς ἐν τοῖς ἐπιφαινομένοις λαμβανόμενα καὶ τὰ κατὰ τὰς κινήσεις καὶ τὰ σχήματα. Ὅλως δὲ τὸ ἑνὶ μὲν πιστεύειν <milestone unit="page" resp="Bekker" n="807a"/> τῶν σημείων εὔηθες· ὅταν δὲ πλείω συμφωνοῦντα καθ’ ἑνὸς λάβῃ, μᾶλλον ἤδη κατὰ τὸ εἰκὸς ἄν τις ὑπολαμβάνοι ἀληθῆ εἶναι τὰ σημεῖα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="12">
+<p>Ἔστι δὲ ἄλλος τρόπος καθ’ ὃν ἄν τις φυσιογνωμονοίη· οὐδεὶς μέντοι ἐπικεχείρηκεν. Οἷον εἰ ἀνάγκη ἐστὶ τὸν ὀργίλον καὶ τὸν δυσάνιον καὶ μικρὸν τὸ ἦθος φθονερὸν εἶναι, εἰ καὶ <pb facs="operaexrecension06arisuoft_0051"/> μή ἐστι φθονεροῦσημεῖα, ἐξ ἐκείνων δὲ τῶν προτέρων ἐνδέχοιτο ἂν τῷ φυσιογνώμονι καὶ τὸν φθονερὸν εὑρίσκειν, μάλιστα μὲν ἂν ὁ τοιοῦτος ἴδιος τρόπος εἴη τοῦ πεφιλοσοφηκότος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="13">
+<p>Τὸ γὰρ δύνασθαι τινῶν ὄντων ἀναγκαῖον εἶναι, ἴδιον ὑπολαμβάνοιμεν φιλοσοφίας· ὅπερ ἐστὶν ὅτε ἐναντιοῦται τούτῳ κατὰ τὰ πάθη φυσιογνωμονεῖν καὶ τὰ κακά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="14">
+<p rend="indent">Περὶ φωνῆς κατὰ μὲν τὸ πάθος ἐπισκοπῶν ὀξεῖαν οἰηθείη ἄν τις δυεῖν ἕνεκεν τιθέναι τοῦ θυμοειδοῦς. Ὁ γὰρ ἀγανακτῶν καὶ ὀργιζόμενος ἐπιτείνειν εἴωθε τὸν φθόγγον καὶ ὀξὺ φθέγγεσθαι, ὁ δὲ ῥαθύμως διακείμενος τόν τε τόνον ἀνίησι καὶ βαρὺ φθέγγεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="15">
+    <p>Τῶν δ' αὖ ζῴων τὰ μὲν ἀνδρεῖα βαρύφωνά ἐστι, τὰ δὲ δειλὰ ὀξύφωνα, λέων μὲν καὶ ταῦρος, καὶ κύων ὑλακτικός, καὶ τῶν ἀλεκτρυόνων οἱ εὔψυχοι βαρύφωνοι φθέγγονται· ἔλαφος δὲ καὶ λαγὼς ὀξύφωνά ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="16">
+<p>Ἀλλ’ ἴσως καὶ ἐν τούτοις κρεῖσσόν ἐστι μὴ ἐν τῷ βαρεῖαν ἢ ὀξεῖαν εἶναι τὴν φωνὴν αὐτῶν ἀνδρεῖον ἢ δειλὸν τιθέναι, ἀλλ’ ἐν τῷ τὴν μὲν ἐρρωμένηνἀνδρείου τὴν δὲ ἀνειμένην καὶ ἀσθενῆ δειλοῦ ὑποληπτέον εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.2" n="17">
+<p>Ἔστι δὲ κράτιστον, ὅταν τὰ σημεῖα μὴ ὁμολογούμενα ἀλλ’ ὑπεναντιούμενα, μηδὲν τιθέναι, εἰ μή ἐστι τῶν διῃρημένων ποῖα ποίων πιστότερα, καὶ μάλιστα μὲν εἰς εἴδη ἀλλὰ μὴ εἰς ὅλα τὰ γένη ἀναφέρειν. Ὁμοιότερα γάρ ἐστι τῷ ζητουμένῳ· οὐγὰρ ὅλον τὸ γένος τῶν ἀνθρώπων φυσιογνωμονοῦμεν, ἀλλά τινα τῶν ἐν τῷ γένει.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="1">
+    <p rend="indent">Ἀνδρείου σημεῖα τρίχωμα σκληρόν, τὸ σχῆμα τοῦ σώματος ὀρθόν, ὀστᾶ καὶ πλευραὶ καὶ τὰ ἀκρωτήρια τοῦ σώματος ἰσχυρὰ καὶ μεγάλα, καὶ κοιλία πλατεῖα καὶ προσεσταλμένη· ὠμοπλάται πλατεῖαι καὶ διεστηκυῖαι, οὔτε λίαν <pb facs="operaexrecension06arisuoft_0052"/> συνδεδεμέναι οὔτε παντάπασιν ἀπολελυμέναι· τράχηλος ἐρρωμένος, οὐ σφόδρα σαρκώδης· τὸ στῆθος σαρκῶδές τε καὶ πλατύ, ἰσχίον προσεσταλμένον, γαστροκνημίαι κάτω <milestone unit="page" resp="Bekker" n="807b"/> προσεσπασμέναι· ὄμμα χαροπόν, οὔτε λίαν ἀνεπτυγμένον οὔτε παντάπασι συμμύον· αύχμηρότερον τὸ χρῶμα τὸ ἐπὶ τοῦ σώματος· ὀξὺ μέτωπον, εὐθύ, οὐ μέγα, ἰσχνόν, οὔτε λεῖον οὔτε παντάπασι ῥυτιδῶδες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="2">
+<p>Δειλοῦ σημεῖα τριχωμάτιον μαλακόν, τὸ σῶμα συγκεκαθικός, οὐκ ἐπισπερχής· αἱ δὲ γαστροκνημίαι ἄνω ἀνεσπασμέναι· περὶ τὸ πρόσωπον ὕπωχρος· ὄμματα ἀσθενῆ καὶ σκαρδαμύττοντα, καὶ τὰ ἀκρωτήρια τοῦ σώματος ἀσθενῆ, καὶ μικρὰ σκέλη, καὶ χεῖρες λεπταὶ καὶ μακραί· ὀσφὺς δὲ μικρὰ καὶ ἀσθενής· τὸ σχῆμα σύντονον ἐν ταῖς κινήσεσιν· οὐκ ἰταμὸς ἀλλ’ ὕπτιος καὶ τεθαμβηκώς· τὸ ἦθος τὸ ἐπὶ τοῦ προσώπου εὐμετάβολον,κατηφής.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="3">
+    <p>Εὐφυοῦς σημεῖα σὰρξ ὑγροτέρα καὶ ἁπαλωτέρα, οὐκ εὐεκτικὴ οὐδὲ πιμελώδης σφόδρα· τὰ περὶ τὰς ὠμοπλάτας καὶ τράχηλον ἰσχνότερα, καὶ τὰ περὶ τὸ πρόσωπον, καὶ σύνδετα τὰ περὶ τὰς ὠμοπλάτας, καὶ τὰ κάτω ἀφειμένα· εὔλυτα τὰ περὶ τὰς πλευράς· καὶ τὸν νῶτον ἀσαρκότερος· τὸ σῶμα λευκέρυθρον καὶ καθαρόν· τὸ δερμάτιον λεπτόν, τριχωμάτιονμὴ λίαν σκληρὸν μηδὲ λίαν μέλαν, ὄμμα χαροπόν, ὑγρόν.</p></div>
+ <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="4">
+     <p>Ἀναισθήτου σημεῖα τὰ περὶ τὸν αὐχένα καὶ τὰ σκέλη σαρκώδη καὶ συμπεπλεγμένα καὶ συνδεδεμένα, κοτύλη στρογγύλη, ὠμοπλάται ἄνω ἀνεσπασμέναι, μέτωπον μέγα περιφερὲς σαρκῶδες, ὄμμα χλωρὸν κωφόν, κνῆμαι περὶ σφυρὸν παχεῖαι σαρκώδεις στρογγύλαι, σιαγόνες μεγάλαι σαρκώδεις, ὀσφὺς σαρκώδης, σκέλη μακρά, τράχηλος παχύς, πρόσωπον σαρκῶδες, ὑπόμακρον ἱκανῶς. Τὰς δὲ κινήσεις καὶ τὸ σχῆμα καὶ τὸ ἦθος τὸ ἐπὶ τοῦ προσώπου ἐπιφαινόμενον κατὰ τὰς ὁμοιότητας ἀναλαμβάνει.</p></div> <pb facs="operaexrecension06arisuoft_0053"/> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="5">
+<p>Ἀναιδοῦς σημεῖα ὀμμάτιον ἀνεπτυγμένον καὶ λαμπρόν, βλέφαρα ὕφαιμα καὶ παχέα· μικρὸν ἔγκυρτος· ὠμοπλάται ἄνω ἐπῃρμέναι· τῷ σχήματι μὴ ὀρθὸς ἀλλὰ μικρῷ προπετέστερος, ἐν ταῖς κινήσεσιν ὀξύς, ἐπίπυρρος τὸ σῶμα· τὸ χρῶμα ὕφαιμον·στρογγυλοπρόσωπος· τὸ στῆθος ἀνεσπασμένον. Κοσμίου σημεῖα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="6">
+    <p>Ἐν ταῖς κινήσεσι βραδύς, καὶ διάλεκτος βραδεῖα καὶ φωνὴ πνευματώδης καὶ ἀσμενής, ὀμμάτιον ἀλαμπὲς μέλαν καὶ μήτε λίαν ἀνεπτυγμένον μήτε παντάπασι συμμεμυκός, σκαρδαμυκτικὸν βραδέως· τὰ μὲν γὰρ ταχέως <milestone unit="page" resp="Bekker" n="808a"/> σκαρδαμύττοντα τῶν ὀμμάτων τὰ μὲν δειλὸν τὰ δὲ θερμὸν σημαίνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="7">
+<p>Εὐθύμου σημεῖα μέτωπον εὐμέγεθες καὶ σαρκῶδες καὶ λεῖον, τὰ περὶ τὰ ὄμματα ταπεινότερα. Καὶ ὑπνωδέστερον τὸ πρόσωπον φαίνεται, μήτε δεδορκὸς μὴτε σύννουν. Ἔν τε ταῖς κινήσεσι βραδὺς ἔστω καὶ ἀνειμένος· τῷ σχήματι καὶ τῷ ἤθει τῷ ἐπὶ τοῦ προσώπου μὴ ἐπισπερχὴς ἀλλὰ ἀγαθὸς φαινέσθω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="8">
+<p>Ἀθύμου σημεῖα. Τὰ ῥυτιδώδη τῶν προσώπων καὶ ἰσχνὰ ὄμματα κατακεκλασμένα, ἅμα δὲ καὶ τὰ κεκλασμένα τῶν ὀμμάτων, δύο σημαίνει, τὸ μὲν μαλακὸν καὶ θῆλυ, τὸ δὲ κατηφὲς καὶ ἄθυμον. Ἐν τῷ σχήματι ταπεινὸς καὶ ταῖς κινήσεσιν ἀπηγορευκώς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="9">
+<p>Κιναίδου σημεῖα ὄμμα κατακεκλασμένον, γονύκροτος· ἐγκλίσεις τῆς κεφαλῆς εἰς τὰ δεξιά· αἱ φοραὶ τῶν χειρῶν ὕπτιαι καὶ ἔκλυτοι, καὶ βαδίσεις διτταί, ἡ μὲν περινεύοντος, ἡ δὲ κρατοῦντος τὴν ὀσφύν· καὶ τῶν ὀμμάτων περιβλέψεις, οἷος ἂν εἴη Διονύσιος ὁ σοφιστής.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="10">
+<p>Πικροῦ σημεῖα τὸ πρόσωπον σεσηρός· μελανόχρως, ἰσχνός· τὰ περὶ τὸ πρόσωπον διεξυσμένα, τὸ πρόσωπον ῥυτιδώδες ἄσαρκον· εὐθύθριξ καὶ μελάνθριξ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="11">
+<p>Θυμώδους σημεῖα. Ὀρθὸς τὸ σῶμα, τῷ σχήματι εὔπλευρος, εὔθυμος, <pb facs="operaexrecension06arisuoft_0054"/> ἐπίπυρρος· ὠμοπλάται διεστηκυῖαι καὶ μεγάλαι καὶ πλατεῖαι· ἀκρωτήρια μεγάλα καὶ ἐγκρατῆ· λεῖος καὶ περὶ τὰ στήθη καὶ περὶ βουβῶνας, εὐπώγων· εὐαυξὴς ὁ περίδρομος τῶν τριχῶν, κάτω κατεληλυθώς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="12">
+<p>Πραέος σημεῖα. Ἰσχυρὸς τὸ εἶδος, εὔσαρκος· ὑγρὰ σὰρξ καὶ πολλή· εὐμεγέθης καὶ σύμμετρος· ὕπτιος τῷ σχήματι· ὁ περίδρομος τῶν τριχῶν ἀνεσπασμένος. Εἴρωνος σημεῖα πίονα τὰ περὶ τὸ πρόσωπον, καὶ τὰ περὶ τὰ ὄμματα ῥυτιδώδη· ὑπνῶδες τὸ πρόσωπον τῷ ἤθεῖ φαίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="13">
+<p>Μικροψύχου σημεῖα. Μικρομελής, μικρογλάφυρος,ἰσχνός, μικρόμματος καὶ μικροπρόσωπος, οἷος ἂν εἴη Κορίνθιος ἢ Λευκάδιος, Φιλόκυβοι γαλεαγκῶνες καὶ ὀρχησταί. Φιλολοίδοροι οἷς τὸ ἄνω χεῖλος μετέωρον· καὶ τὰ εἴδη προπετεῖς, ἐπίπυρροι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="14">
+    <p>Ἐλεήμονες ὅσοι γλαφυροὶ καὶ λευκόχροοι καὶ λιπαρόμματοι καὶ τὰ ῥινία ἄνωθεν διεξυσμένοι, καὶ ἀεὶ δακρύουσιν. Οἱ αὐτοὶ οὗτοι καὶ φιλογύναιοι καὶ θηλυγόνοι καὶ περὶ τὰ ἤθη ἐρωτικοὶ καὶ ἀειμνήμονες καὶ εὐφυεῖς καὶ ἕνθερμοι. Τούτων δὲ σημεῖα <milestone unit="page" resp="Bekker" n="808b"/> εἴρηται. Ἐλεήμων ὁ σοφὸς καὶ δειλὸς καὶ κόσμιος, ἀνελέητος ἀμαθὴς καὶ ἀναιδής.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="15">
+<p>Ἀγαθοὶ φαγεῖν οἷς τὸ ἀπὸ τοῦ ὀμφαλοῦ πρὸς στῆθος μεῖζόν ἐστιν ἢ τὸ ἐντεῦθεν πρὸς τὸν αὐχένα. Λάγνου σημεῖα. Λευκόχρως καὶ δασὺς εὐθείαις θριξὶ καὶ παχείαις καὶ μελαίναις· καὶ οἱ κρόταφοι δασεῖς εὐθείαις θριξί· λιπαρὸν τὸ ὀμμάτιον καὶ μάργον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.3" n="16">
+<p>Φίλυπνοι οἱ τὰ ἄνω μείζω ἔχοντες καὶ γυπώδεις καὶ θερμοί, εὐεκτικὴν σάρκα ἔχοντες, καὶ γλαφυροὶ τὰ εἴδη, καὶ δασεῖς τὰ περὶ τὴν κοιλίαν. Μνήμονες οἱ τὰ ἄνω ἐλάττονα ἔχοντες καὶ γλαφυρὰ καὶ σαρκωδέστερα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="1">
+<p rend="indent">Δοκεῖ δέ μοι ἡ ψυχὴ καὶ τὸ σῶμα συμπαθεῖν ἀλλήλοις· καὶ ἡ τῆς ψυχῆς ἕξις ἀλλοιουμένη συναλλοιοῖ τὴν τοῦ <pb facs="operaexrecension06arisuoft_0055"/> σώματος μορφήν, πάλιν τε ἡ τοῦ σώματος μορφὴ ἀλλοιουμένη συναλλοιοῖ τὴν τῆς ψυχῆς ἕξιν. Ἐπειδὴ γάρ ἐστι ψυχῆς τὸ ἀνιᾶσθαί τε καὶ εὐφραίνεσθαι, καταφανὲς ὅτι οἱ ἀνιώμενοι σκυθρωπότεροί εἰσι καὶ οἱ εύφραινόμενοι ἱλαροί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="2">
+<p>Εἰ μὲν οὖν ἦν τῆς ψυχῆς λελυμένης ἔτι τὴν ἐπὶ τοῦ σώματος μορφὴν μένειν, ἦν μὲν ἂν καὶ οὕτως ἡ ψυχή τε καὶ τὸ σῶμρα συμπαθῆ, οὐ μέντοι συνδιατελοῦντα ἀλλήλοις. Νῦν δὲ καταφανὲς ὅτι ἑκάτερον ἑκατέρῳ ἕπεται. Μάλιστα μέντοι ἐκ τοῦδε δῆλον γένοιτο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="3">
+<p>Μανία γὰρ δοκεῖ εἶναι περὶ ψυχήν, καὶ οἱ ἰατροὶ φαρμάκοις καθαίροντες τὸ σῶμα καὶ διαίταις τισὶ πρὸς αὐτοῖς χρησάμενοι ἀπαλλάττουσι τὴν ψυχὴν τῆς μανίας. Ταῖς δὴ τοῦ σώματος θεραπείαις καὶ ἅμα ἥ τε τοῦ σώματος μορφὴ λέλυται καὶ ἡ ψυχὴ μανίας ἀπήλλακται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="4">
+<p>Ἐπειδὴ οὖν ἅμα ἀμφότερα λύονται, δῆλον ὅτι συνδιατελοῦσιν ἀλλήλοις. Συμφανὲς δὲ καὶ ὅτι ταῖς δυνάμεσι τῆς ψυχῆς ὅμοιαι αἱ μορφαὶ τοῖς σώμασιν ἐπιγίνονται, ὥστ’ ἐστὶν ἅπαντα ἐν τοῖς ζῴοις τοῦ αὐτοῦ τινὸς δηλωτικά. Πολλὰ δὲ καὶ ὧν διαπράττεται τὰ ζῷα, τὰ μὲν ἴδια ἑκάστου γένους πάθη τῶν ζῴων ἐστί,τὰ δὲ κοινά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="5">
+<p>Ἐπὶ μὲν οὖν τοῖς ἰδίοις ἔργοις τῆς ψυχῆς ἴδια τὰ πάθη κατὰ τὸ σῶμα, ἐπὶ δὲ τοῖς κοινοῖς τὰ κοινά. Κοινὰ μὲν οὖν ἐστὶν ὕβρις τε καὶ ἡ περὶ τὰ ἀφροδίσια ἔκστασις. Τῶν μὲν οὖν λοφούρων κοινόν ἐστιν ὕβρις, τῶν δὲ ὄνων τε καὶ συῶν ἡ περὶ τὰ ἀφροδίσια ἕξις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="6">
+    <p>Ἴδιον δ’ ἐστὶν ἐπὶ μὲν τῶν κυνῶν τὸ λοίδορον, ἐπὶ δὲ τῶν ὄνων τὸ ἄλυπον. Ὡς μὲν <milestone unit="page" resp="Bekker" n="809a"/> οὖν τὸ κοινόν τε καὶ τὸ ἴδιον χρὴ διελέσθαι, εἴρηται. Δεῖ μέντοι πρὸς ἅπαντα πολλῆς συνηθείας, εἰ μέλλει τις αὐτὸς ἔσεσθαι ἱκανὸς περὶ τούτων ἕκαστα λέγειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="7">
+<p>Ἐπειδὴ γὰρ τὰ ὁρώμενα ἐπὶ τῶν σωμάτων λέγεται ἀναφέρεσθαι ἐπὶ τὰς <pb facs="operaexrecension06arisuoft_0056"/> ὁμοιότητας τάς τε ἀπὸ τῶν ζῴων καὶ τὰς ἀπὸ τῶν πράξεων γινομένας, καὶ ἰδέαι τινὲς ἄλλαι ἀπὸ θερμοτήτων καὶ ἀπὸ ψυχροτήτων γίνονται, ἔστι τε τούτων ἔνια τῶν ἐπιφαινομένων ἐπί τε τοῖς σώμασι μικραῖς διαφοραῖς κεχρημένα καὶ τῷ αὐτῷ ὀνόματι προσαγορευόμενα, οἷον αἵ τε ἀπὸ φόβων ὠχρότητες καὶ ἀπὸ πόνων (αὗται γὰρ ὀνόματί τε τῷ αὐτῷ κέχρηνται, καὶ διαφορὰν μικρὰν ἔχουσι πρὸς ἀλλήλας), μικρᾶς δὲ οὔσης τῆς διαφοράς οὐ ῥᾴδιον γινώσκειν ἀλλὰ ἢ ἐκ τῆς συνηθείας τῆς μορφῆς τὴν ἐπιπρέπειαν εἰληφότα, ἔστι μὲν οὖν καὶ τάχιστος καὶ ἄριστος ὁ ἀπὸ τῆς ἐπιπρεπείας, καὶ ἔστι γε οὕτως τούτῳ χρώμενον πολλὰ διαγινώσκειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="8">
+<p>Καὶ οὐ μόνον καθόλου χρήσιμόν ἐστιν, ἀλλὰ καὶ πρὸς τὴν τῶν σημείων ἐκλογήν· ἕκαστον γὰρ τῶν ἐκλεγομένων καὶ πρέπειν δεῖ τοιοῦτον οἷον τὸ ἐκλεγόμενον θέλει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.4" n="9">
+<p>Ἔτι τε κατὰ τὴν ἐκλογὴν τῶν σημείων, καὶ τῷ συλλογισμῷ, ᾧ δεῖ χρῆσθαι ὅπου ἄν τι τύχῃ, προστιθέντας τοῖς προσοῦσι τὰ προσήκοντα, οἷον εἰ ἀναιδής τε εἴη καὶ μικρολόγος, καὶ κλέπτης ἂν εἴη καὶ ἀνελεύθερος, καὶ κλέπτης μὲν ἑπομένως τῇ ἀναιδείᾳ, τῇ δὲ μικρολογίᾳ ἀνελεύθερος. Ἐπὶ μὲν οὖν τῶν τοιούτων ἑκάστου δεῖ τοῦτον τὸν τρόπον προσαρμόζοντα τὴν μέθοδον ποιεῖσθαι.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="1">
+<p rend="indent">Νυνὶ δὲ πρῶτον πειράσομαι τῶν ζῴων διελέσθαι, ὁποῖα αὐτῶν προσήκει διαλλάττειν πρὸς τὸ εἶναι ἀνδρεῖα καὶ δειλὰ καὶ δίκαια καὶ ἄδικα. Διαιρετέον δὲ τὸ τῶν ζῴων γένος εἰς δύο μορφάς, εἰς ἄρσεν καὶ θῆλυ, προσάπτοντα τὸ πρέπον ἑκατέρᾳ μορφῇ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="2">
+<p>Ἔστι δὲ ὅμοια. Ἐπιχειροῦμεν οὖν τρέφειν τῶν θηρίων προσηνέστερα καὶ μαλακώτερα τὰς ψυχὰς τὰ θήλεα τῶν ἀρρένων, ἧττόν τε ῥωμαλεούμενα, τάς τε τροφὰς καὶ τὰς χειροηθείας μᾶλλον προσδεχόμενα. Ὥστε τοιαῦτα ὄντα εἴη που ἂν ἀθυμότερα τῶν ἀρρένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="3">
+<p>Καταφανὲς δὲ τοῦτο ἐξ ἡμῶν πού ἐστιν, ὅτι ἐπὰν ὑπὸ θυμοῦ <pb facs="operaexrecension06arisuoft_0057"/> κρατηθῶμεν, δυσπαραπιστότεροί τε, καὶ μάλισταἐρρώμεθα πρὸς τὸ μηδαμῇ μηδὲν εἶξαι, ἐπὶ τὸ βιάζεσθαι δὲ καὶ πρᾶξαι φερόμεθα, πρὸς ὃ ἂν ὁ θυμὸς ὁρμήσῃ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="4">
+    <p>Δοκεῖ δέ μοι καὶ κακουργότερα γίνεσθαι τὰ θήλεα τῶν ἀρρένων, καὶ προπετέστερά τε καὶ ἀναλκέστερα. <milestone unit="page" resp="Bekker" n="809b"/> Αἱ μὲν οὖν γυναῖκες καὶ τὰ περὶ ἡμᾶς τρεφόμενα καὶ πάνυ που φανερὰ ὄντα· τὰ δὲ περὶ τὴν ὕλην πάντες ὁμολογοῦσιν οἱ νομεῖς τε καὶ θηρευταὶ ὅτι τοιαῦτά ἐστιν οἷα προείρηται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="5">
+<p>Ἀλλὰ μὴν καὶ τόδε δῆλον, ὅτι ἕκαστον ἐν ἑκάστῳ γένει θῆλυ ἄρρενος μικροκεφαλώτερόν ἐστι καὶ στενοπροσωπότερον καὶ λεπτοτραχηλότερον, καὶ τὰ στήθη ἀσθενέστερα ἔχει, καὶ ἀπλευρότερά ἐστι, τά τε ἰσχία καὶ τοὺς μηροὺς περισαρκότερα τῶν ἀρρένων, γονύκροτα δὲ καὶ τὰς κνήμας λεπτὰς ἔχοντα, τούς τε πόδας κομψοτέρους, τήν τε τοῦ σώματος ὅλην μορφὴν ἡδίω μάλιστ’ ἂν ἢ γενναιοτέραν, ἀνευρότερα δὲ καὶ μαλακώτερα, ὑγροτέραις σαρξὶ κεχρημένα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="6">
+<p>Τὰ δὲ ἄρρενα τούτοις ἅπασιν ἐναντία, τὴν φύσιν ἀνδρειοτέραν καὶ δικαιοτέραν εἶναι γένει, τὴν δὲ τοῦ θήλεος δειλοτέραν καὶ ἀδικωτέραν. Τούτων οὕτως ἐχόντων, φαίνεται τῶν ζῴων ἁπάντων λέων τελεώτατα μετειληφέναι τῆς τοῦ ἄρρενος ἰδέας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="7">
+<p>Ἔστι γὰρ ἔχων στόμα εὐμέγεθες, τὸ δὲ πρόσωπον τετραγωνότερον, οὐκ ἄγαν ὀστῶδες, τὴν ἄνω τε γένυν οὐ προεξεστηκυῖαν ἀλλὰ ἰσορροποῦσαν τῇ κάτω, ῥῖνα δὲ παχυτέραν ἢ λεπτοτέραν, χαροποὺς ὀφθαλμοὺς ἐγκοίλους, οὐ σφόδρα περιφερεῖς οὔτε ἄγαν προμήκεις, μέγεθος δὲ μέτριον, ὀφρύν εὐμεγέθη, μέτωπον τετράγωνον, ἐκ μέσου ὑποκοιλότερον, πρὸς δὲ τὰς ὀφρῦς καὶ τὴν ῥῖνα ὑπὸτοῦ μετώπου οἷον νέφος ἐπανεστηκός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="8">
+<p>Ἄνωθεν δὲ τοῦ μετώπου κατὰ τὴν ῥῖνα ἔχει τρίχας ἐκκλινεῖς οἷον ἂν ἄσιλον, κεφαλὴν μετρίαν, τράχηλον εὐμήκη,πάχει σύμμετρον, θριξὶ ξανθαῖς κεχρημένον, οὐ φριξαῖς οὔτε ἄγαν ἀπεστραμμέναις· τὰ περὶ τὰς κλεῖδας <pb facs="operaexrecension06arisuoft_0058"/> εὐλυτώτερα μᾶλλον ἢ συμπεφραγμένα· ὤμους ῥωμαλέους, καὶ στῆθος νεανικόν, καὶ τὸ μετάφρενον πλατὺ καὶ εὔπλευρον καὶ εὔνωτον ἐπιεικῶς· ζῷον ἀσαρκότερον τὰ ἰσχία καὶ τοὺς μηρούς· σκέλη ἐρρωμένα καὶ νευρώδη, βάσιν τε νεανικήν, καὶ ὅλον τὸ σῶμα ἀρθρῶδες καὶ νευρῶδες, οὔτε λίαν σκληρὸν οὔτε λίαν ὑγρόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="9">
+<p>Βαδίζον δὲ βραδέως, καὶ μεγάλα διαβαῖνον, καὶ διασαλεῦον ἐν τοῖς ὤμοις, ὅταν πορεύηται. Τὰ μὲν οὖν περὶ τὸ σῶμα τοιοῦτον· τὰ δὲ περὶ τὴν ψυχὴν δοτικὸν καὶ ἐλεύθερον, μεγαλόψυχον καὶ φιλόνικον, καὶ πραῢ καὶ δίκαιον καὶ φιλόστοργον πρὸς ἃ ἂν ὁμιλήσῃ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="10">
+<p>Ἡ δὲ πάρδαλις τῶν ἀνδρείων εἶναι δοκούντων θηλυμορφότερόν ἐστιν, ὅτι μὴ κατὰ τὰ σκέλη· τούτοις δὲ συνεργεῖ καί τι ἔργον ῥώμης ἀπεργάζεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="11">
+    <p>Ἔστι γὰρ ἔχον πρόσωπον μικρόν, στόμα μέγα, ὁφθαλμοὐς μικρούς, <milestone unit="page" resp="Bekker" n="810a"/> ἐκλεύκους, ἐγκοίλους, αὐτοὺς δὲ περιπολαιοτέρους· μέτωπον προμηκέστερον, πρὸς τὰ ὦτα περιφερέστερον ἢ ἐπιπεδώτερον· τράχηλον μακρὸν ἄγαν καὶ λεπτόν, στῆθος ἄπλευρον, καὶ μακρὸν νῶτον, ἰσχία σαρκώδη καὶ μηρούς, τὰ δὲ περὶ τὰς λαγόνας καὶ γαστέρα ὁμαλὰ μᾶλλον· τὸ δὲ χρῶμα ποικίλον, καὶ ὅλον ἄναρθρόν τε καὶ ἀσύμμετρον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.5" n="12">
+<p>Ἡ μὲν οὖν τοῦ σώματος ἰδέα τοιαύτη, τὰ δὲ περὶ τὴν ψυχὴν μικρὸν καὶ ἐπίκλοπον καὶ ὅλως εἰπεῖν δολερόν. Τὰ μὲν οὖν ἐκπρεπέστερα μετειληφότα ζῷα τῶν δοκούντων ἀνδρείων εἶναι τῆς τε τοῦ ἄρρενος ἰδέας καὶ τῆς τοῦ θήλεος εἴρηται. Τὰ δ' ἄλλα οἷα τυγχά· νει, ῥᾴδιον ἤδη μετιέναι. Ὅσα δὲ πρὸς τὸ φυσιογνωμονῆσαι συνιδεῖν ἁρμόττει ἀπὸ τῶν ζῴων, ἐν τῇ τῶν σημείων ἐκλογῇ ῥηθήσεται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="1">
+<p rend="indent">Ἡ δὲ ἐκλογὴ τῶν σημείων ἡ κατὰ τοὺς ἀνθρώπους ὦδς λαμβάνεται. Ὅσος οἱ πόδες εὐφυεῖς τε καὶ μεγάλοι διηρθρωμένοι τε καὶ νευρώδεις, ἐρρωμένοι τὰ περὶ τὴν ψυχήν· ἀναφέρεται ἐπὶ τὸ ἄρρεν γένος. Ὅσοι δὲ τοὺς πόδας <pb facs="operaexrecension06arisuoft_0059"/> μικροὺς στενοὺς ἀνάρθρους ἔχουσιν, ἡδίους τε ἰδεῖν ἢ ῥωμαλεωτέρους, μαλακοὶ τὰ περὶ τὴν ψυχήν· ἀναφέρεταιἐπὶ τὸ θῆλυγένος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="2">
+<p>Οἷς τῶν ποδῶν οἱ δάκτυλοι καμπύλοι, ἀναιδεῖς, καὶ ὅσοις ὄνυχες καμπύλαι· ἀναφέρεται ἐπὶ τοὺς ὄρνεις τοὺς γαμψώνυχας. Οἷς τῶν ποδῶν τὰ δάκτυλα συμπεφραγμένα ἐστί, δειμαλέοι· ἀναφέρεται ἐπὶ τοὺς ὄρτυγας τοὺς στενόποδας τῶν λιμναίων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="3">
+<p>Ὅσοις τὰ περὶ τὰ σφυρὰ νευρώδη τε καὶ διηρθρωμένα ἐστίν, εὔρωστοι τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ ἄρρεν γένος. Ὄσοι τὰ σφυρὰ σαρκώδεις καὶ ἄναρθροι, μαλακοὶ τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ θῆλυ γένος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="4">
+<p>Ὅσοι τὰς κνήμας ἔχουσιν ἠρθρωμένας τε καὶ νευρώδεις καὶ ἐρρωμένας, εὔρωστοι τὴν ψυχήν· ἀναφέρεται ἐπὶ τὸ ἄρρεν. Ὅσοι δὲ τὰς κνήμας λεπτὰς νευρώδεις ἔχουσι, λάγνοι· ἀναφέρεται ἐπὶ τοὺς ὄρνιθας. Ὅσοι τὰς κνήμας περιπλέους σφόδρα ἔχουσιν, οἶον ὀλίγου διαρρηγνυμένας, βδελυροὶ καὶ ἀναιδεῖς· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="5">
+    <p>Οἱ γονύκροτοι κίναιδοι· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν. Οἱ τοὺς μηροὺς ὁστώδεις καὶ νευρώδεις ἔχοντες εὔρωστοι· ἀναφέρεται ἐπὶ τὸ ἄρρεν. Οἱ δὲ τοὐς μηροὺς ὁστώδεις καὶ περιπλέους ἔχοντες μαλακοί· ἀναφέρεται <milestone unit="page" resp="Bekker" n="810b"/> ἐπὶ τὸ θῆλυ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="6">
+    <p>Ὅσοι δὲ πῦγα ὀξεῖαν ὀστώδη ἔχουσιν, εὔρωστοι, ὅσοι δὲ σαρκώδη πίονα ἔχουσι, μαλακοί, Ὄσοι δὲ ἔχουσιν ὀλίγην σάρκα, οἶον ἀπωμοργμένα, κακοήθεις· ἀναφέρεται ἐπὶ τοὺς πιθήκους. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="7">
+<p>Οἱ ζωνοὶ φιλόθηροι· ἀναφέρεται ἐπὶ τοὺς λέοντας καὶ τοὺς κύνας. Ἴδοι δ' ἄν τις καὶ τῶν κυνῶν τοὺς φιλοθηροτάτους ζωνοὺς ὄντας. Οἷς τὰ περὶ τὴν κοιλίαν λαπαρά, εὔρωστοι· ἀναφέρεται ἐπὶ τὸ ἄρρεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="8">
+    <p>Ὅσοι δὲ μὴ λαπαροί, μαλακοί· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν. Ὅσοις τὸ νῶτον εὐμέγεθές τε καὶ ἐρρωμένον, <pb facs="operaexrecension06arisuoft_0060"/> εὔρωστοι τὰς ψυχάς·ἀναφέρεται ἐπὶ τὸ ἄρρεν. Ὅσοι δὲ τὸ νῶτον στενὸν καὶ ἀσθενὲς ἔχουσι, μαλακοί· ἀναφέρεται ἐπὶ τὸ θῆλυ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="9">
+<p>Οἱ εὔπλευροι εὔρωστοι τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ ἄρρεν. Οἱ δὲ ἄπλευροι μαλακοὶ τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ θῆλυ. Ὅσοι δὲ ἐκ τῶν πλευρῶν περίογκοί εἰσιν, οἷον πεφυσημένοι, λάλοι καὶ μωρολόγοι· ἀναφέρεται ἐπὶ τοὺς βοῦς ἢ ἐπὶ τοὺς βατράχους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="10">
+<p>Ὅσοι δὲ τὸ ἀπὸ τοῦ ὀμφαλοῦ πρὸς τὸ ἀκροστήθιον μεῖζον ἔχουσιν ἢ τὸ ἀπὸ τοῦ ἀκροστηθίου πρὸς τὸν τράχηλον, βοροὶ καὶ ἀναίσθητοι, βοροὶ μὲν ὅτι τὸ τεύχος μέγα ἔχουσιν ᾦ δέχονται τὴν τροφήν, ἀναίσθητοι δὲ ὅτι στενώτερον τὸν τόπον ἔχουσιν αἱ αἰσθήσεις, συνενωμένον τε τῷ τὴν τροφὴν δεχομένῳ, ὥστε τὰς αἰσθήσεις βεβαρύνθαι διὰ τὰς τῶν σιτίων πληρώσειςἢ ἐνδείας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="11">
+<p>Ὅσοι δὲ τὰστηθία ἔχουσι μεγάλα καὶ διηρθρωμένα, εὔρωστοι τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ ἄρρεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="12">
+<p>Ὅσοι δὲ τὸ μετάφρενον ἔχουσι μέγα καὶ εὔσαρκον καὶ ἀρθρῶδες, εὔρωστοι τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ ἄρρεν. Ὅσοι δ' ἀσθενὲς καὶ ἄσαρκον καὶ ἄναρθρον, μαλακοὶ τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ θῆλυ. Ὅσοις δὲ τὸ μετάφρενον κυρτόν ἐστι σφόδρα οἵ τε ὦμοι πρὸς τὸ στῆθος συνηγμένοι, κακοήθεις· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν, ὅτι ἀφανίζεται τὰ ἔμπροσθεν προσήκοντα φαίνεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="13">
+<p>Ὅσοι δὲ τὸ μετάφρενον ὕπτιον ἔχουσι, χαῦνοι καὶ ἀνόητοι· ἀναφέρεται ἐπὶ τοὺς ἵππους. Ἐπεὶ δὲοὔτε κυρτὸν σφόδρα δεῖ εἶναι οὔτε κοῖλον, τὸ μέσον ζητητέον τοῦ εὖ πεφυκότος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="14">
+    <p>Ὅσοις αἱ ἐπωμίδες ἐξηρθρωμέναι καὶ οἱ ὧμοι, εὔρωστοι τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ ἄρρεν. Ὅσοις δὲ οἱ ὦμοι ἀσθενεῖς, ἄναρθροι, μαλακοὶ τὰς ψυχάς· ἀναφέρεται ἐπὶ τὸ θῆλυ. <pb facs="operaexrecension06arisuoft_0061"/><milestone unit="page" resp="Bekker" n="811a"/> Ταὐτὰ λέγω ἅπερ περὶποδῶν καὶ μηρῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="15">
+<p>Ὅσοις ὦμοι εὔλυτοί εἰσιν, ἐλεύθεροι τὰς ψυχάς· ἀναφέρεται δὲ ἀπὸ τοῦ φαινομένου, ὅτι πρέπει τῇ φαινομένῃ μορφῇ ἐλευθεριότης. Ὅσοις δὲ οἱ ὦμοι δύσλυτοι συνεσπασμένοι, ἀνελεύθεροι· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="16">
+<p>Οἷς τὰ περὶ τὰς κλεῖδας εὔλυτα, αἰσθητικοί· εὐλύτων γὰρ ὄντων τῶν περὶ τὰς κλεῖδας εὐκόλως τὴν κίνησιν τῶν αἰσθήσεων δέχονται. Οἷς δὲ τὰ περὶ τὰς κλεῖδαςσυμπεφραγμένα ἐστίν, ἀναίσθητοι· δυσλύτων γὰρ ὄντων τῶν περὶ τὰς κλεῖδας ἐξαδυνατοῦσι τὴν κίνησιν παραδέχεσθαι τῶν αἰσθήσεων. Ὅσοι τὸν τράχηλον παχὺν ἔχουσιν, εὔρωστοι τὰς ψυχάς·</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="17">
+<p>ἀναφέρεται ἐπὶ τὸ ἄρρεν. Ὅσοι δὲ λεπτόν, ἀσθενεῖς· ἀναφέρεται ἐπὶ τὸ θῆλυ. Οἷς τράχηλος παχὺς καὶπλέως, θυμοειδεῖς· ἀναφέρεται ἐπὶ τοὺς θυμοειδεῖς ταύρους. Οἷς δὲ εὐμεγέθης μὴ ἄγαν παχύς, μεγαλόψυχοι· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἷς λεπτὸς μακρός, δειλοί· ἀναφέρεται ἐπὶ τοὺς ἐλάφους. Οἷς δὲ βραχὺς ἄγαν, ἐπίβουλοι· ἀναφέρεται ἐπὶ τοὺς λύκους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="18">
+<p>Οἷς τὰ χείλη λεπτὰ καὶ ἐπ’ ἄκραις ταῖς συγχειλίαις χαλαρά, ὡς ἐπὶ τοῦ ἄνω χείλους πρὸς τὸ κάτω ἐπιβεβλῆσθαι τὸ πρὸς τὰς συγχειλίας, μεγαλόψυχοι· ἀναφέρεται ἐπὶ τούς λέοντας. Ἴδοι δ' ἄν τις τοῦτο καὶ ἐπὶ τῶν μεγάλων καὶ εὐρώστων κυνῶν,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="19">
+<p>Οἷς τὰ χείλη λεπτὰ σκληρά, κατὰ τοὺς κυνόδοντας τὸ ἐπανεστηκός, οἱ οὕτως ἔχοντες εὐγενεῖς· ἀναφέρεται ἐπὶ τοὺς ὗς. Οἱ δὲ τὰ χείλη ἔχοντες παχέα καὶ τὸ ἄνω τοῦ κάτω προκρεμώμενον μωροί· ἀναφέρεται ἐπὶ τοὺς ὄνους τε καὶ πιθήκους. Ὅσοι δὲ τὸ ἄνω χεῖλος καὶ τὼ οὖλα προεστηκότα ἔχουσι, φιλολοίδοροι· ἀναφέρεται ἐπὶ τοὺς κύνας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="20">
+    <p>Οἱ δὲ τὴν ῥῖνα ἄκραν παχεῖαν ἔχοντες ῥάθυμοι· ἀναφέρεται ἐπὶ τοὺς βοῦς. Οἱ δὲ τὴν ῥῖνα ἀκρόθεν παχεῖαν ἔχοντες ἀναίσθητοι· ἀναφέρεται ἐπὶ τοὺς ὗς. Οἱ τὴν ῥῖνα <pb facs="operaexrecension06arisuoft_0062"/> ἄκραν ὀξεῖαν ἔχοντες δυσόργητοι· ἀναφέρεται ἐπὶ τοὺς κύνας. Οἱ δὲ τὴν ῥῖνα περιφερῆ ἔχοντες ἄκραν, ἀμβλεῖαν δέ, μεγαλόψυχοι· ἀναφέρεται ἐπὶ τοὺς λέοντας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="21">
+<p>Οἱ δὲ τὴν ῥῖνα ἄκραν λεπτὴν ἔχοντες ὀρνιθώδεις. Οἱ ἐπίγρυπον ἀπὸ τοῦ μετώπου εὐθὺς ἀγομένην ἀναιδεῖς· ἀναφέρεται ἐπὶ τοὺς κόρακας. Οἱ δὲ γρυπὴν ἔχοντες καὶ τοῦ μετώπου διηρθρωμένην μεγαλόψυχοι· ἀναφέρεται ἐπὶ τοὺς ἀετούς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="22">
+    <p>Οἱ δὲ τὴν ῥῖνα ἔγκοιλον ἔχοντες τὰ πρὸ τοῦ μετώπου περιφερῆ, τὴν δὲ περιφέρειαν <milestone unit="page" resp="Bekker" n="811b"/> ἄνω ἀνεστηκυῖαν, λάγνοι· ἀναφέρεται ἐπὶ τοὺς ἀλεκτρυόνας. Οἱ δὲ σιμὴν ἔχοντες λάγνοι· ἀναφέρεται ἐπὶ τοὺς ἐλάφους. Οἶς δὲ οἱ μυκτῆρες ἀναπεπταμένοι, θυμώδεις· ἀναφέρεται ἐπὶ τὸ πάθος τὸ ἐν τῷ θυμῷγινόμενον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="23">
+<p>Οἱ τὸ πρόσωπον σαρκῶδες ἔχοντες ῥάθυμοι· ἀναφέρεται ἐπὶ τοὺς βοῦς. Οἱ τὰ πρόσωπα ἰσχνὰ ἔχοντες ἐπιμελεῖς, οἱ δὲσαρκώδη δειλοί· ἀναφέρεται ἐπὶ τοὺς ὄνους καὶ τὰς ἐλάφους. Οἱ μικρὰ τὰ πρόσωπα ἔχοντες μικρόψυχοι· ἀναφέρεται ἐπὶ αἴλουρον καὶ πίθηκον. Οἷς τὰ πρόσωπα μεγάλα, νωθροί· ἀναφέρεται ἐπὶ τοὺς ὄνους καὶ βοῦς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="24">
+<p>Ἐπεὶ δὲ οὔτε μικρὸν οὕτε μέγα δεῖ εἶναι, ἡ μέση ἔξις εἴη ἂν τούτων ἐπιεικής. Οἶς δὲ τὸ πρόσωπον φαίνεται μικροπρεπές, ἀνελεύθεροι· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="25">
+<p>Οἷς τὸ ἀπὸ τῶν ὀφθαλμῶν οἶον κύστιδες προκρέμανται, οἶνόφλυγες. Ἀναφέρεται ἐπὶ τὸ πάθος· ἔστι γὰρ τοῖς σφόδρα ἐμπεπτωκόσι τὰ πρὸ τῶν ὀφθαλμῶν οἷον κύστιδες. Ἐφεστήκασι, φίλυπνοι· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι τοῖς ἐξ ὕπνου ἀνεστηκόσιν ἐπικρέμαται τὰ ἐπὶ τοῖς ὀφθαλμοῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="26">
+<p>Οἱ τοὺς ὀφθαλμοὺς μικροὺς ἔχοντες μικρόψυχοι· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν καὶ ἐπὶ πίθηκον. Οἱ δὲ μεγαλόφθαλμοι νωθροί· ἀναφέρεται ἐπὶ τοὺς βοῦς. Τὸν ἄρα εὖ φύντα δεῖ μήτε μικροὺς μήτε μεγάλους ἔχειν τοὺς ὀφθαλμούς. Οἱ δὲ κοίλους <pb facs="operaexrecension06arisuoft_0063"/> ἔχοντες κακοῦργοι· ἀναφέρεται ἐπὶ πίθηκον. Ὄσοι ἐξόφθαλμοι, ἀβέλτεροι· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειάν τε καὶτοὐς ὄνους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="27">
+<p>Ἐπεὶ δὲ οὔτε ἐξόφθαλμον οὔτε κοιλόφθαλμον δεῖ εἶναι, ἡ μέση ἔξις ἂν κρατοίη. Ὄσοις ὀφθαλμοὶ μικρὸν ἐγκοιλότεροι, μεγαλόψυχοι· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἶς δ' ἐπὶ πλεῖον, πραεῖς· ἀναφέρεται ἐπὶτοὺς βοῦς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="28">
+<p>Οἱ τὸ μέτωπον μικρὸν ἔχοντες ἀμαθεῖς· ἀναφέρεται ἐπὶτοὺς ὗς. Οἱ δὲ μέγα ἄγαν ἔχοντες νωθροί· ἀναφέρεται ἐπὶ τοὺς βοῦς. Οἱ δὲ περιφερὲς ἔχοντες ἀναίσθητοι· ἀναφέρεται ἐπὶ τοὺς ὄνους. Οἱ μακρότερον ἐπίπεδον ἔχοντες ἀναίσθητοι· ἀναφέρεται ἐπὶ τοὺς κύνας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="29">
+<p>Οἱ δὲ τετράγωνον σύμμετρον τῷ μετώπῳ ἔχοντες μεγαλόψυχοι· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἱ δὲ συννεφὲς ἔχοντες αὐθάδεις· ἀναφέρεται ἐπὶ ταῦρον καὶ λέοντα. Οἱ δ' ἀτενὲς ἔχοντες κόλακες· ἀναφέρεται ἐπὶ τὸ γιγνόμενον πάθος, Ἴδοι δ' ἄν τις ἐπὶ τῶν κυνῶν, ὅτι οἱ κύνες ἐπειδὰν θωπεύωσι, γαληνὲς τὸ μέτωπον ἔχουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="30">
+    <p>Ἐπειδὴ οὖν ἥ τε <milestone unit="page" resp="Bekker" n="812a"/> συννεφὴς ἕξις αὐθάδειαν ἐμφαίνει ἥ τε γαληνὴ κολακείαν, ἡ μέση ἂν τούτων ἕξις εὐαρμόστως ἔχοι. Οἱ σκυθρωπὰ μέτωπα ἔχοντες δυσάνιοι· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι οἱ ἀνιώμενοι σκυθρωποί εἰσιν. Οἱ δὲ κατηφεῖς ὀδύρται· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι οἱ ὀδυρόμενοι κατηφεῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="31">
+<p>Οἱ τὴν κεφαλὴν μεγάλην ἔχοντες αἰσθητικοί· ἀναφέρεται ἐπὶ τοὺς κύνας. Οἱ δὲ μικρὰν ἀναίσθητοι· ἀναφέρεται ἐπὶ τοὺς ὄνους. Οἱ τὰς κεφαλὰςφοξοὶ ἀναιδεῖς· ἀναφέρεται ἐπὶ τοὺς γαμψώνυχας. Οἱ τὰ ὦτα μικρὰ ἔχοντες πιθηκώδεις, οἱ δὲ μεγάλα ὀνώδεις· ἴδοι δ' ἄν τις καὶ τῶν κυνῶν τοὺς ἀρίστους μέτρια ἔχοντας ὦτα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="32">
+<p>Οἱ ἄγαν μέλανες δειλοί· ἀναφέρεται ἐπὶ τοὺς Αἰγυπτίους, Αἰθίοπας. Οἱ δὲ λευκοὶ ἄγαν δειλοί· ἀναφέρεται ἐπὶ τὰς γυναῖκας. Τὸ δὲ πρὸς ἀνδρείαν συντελοῦν χρῶμα μέσον <pb facs="operaexrecension06arisuoft_0064"/> δεῖ τούτων εἶναι. Οἱ ξανθοὶ εὔψυχοι· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἱ πυρροὶ ἄγαν πανοῦργοι· ἀναφέρεται ἐπὶ τὰς ἀλώπεκας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="33">
+<p>Οἱ δὲ ἔνωχροι καὶ τεταραγμένοι τὸ χρῶμα δειλοί· ἀναφέρεται ἐπὶ τὸ πάθος τὸ ἐκ τοῦ φόβου γιγνόμενον. Οἱ δὲ μελίχλωροι ἀπεψυγμένοι εἶσίν· τὰ δὲ ψυχρὰ δυσκίνητα· δυσκινήτων δὲ ὄντων τῶν κατὰ τὸ σῶμα εἶεν ἂν βραδεῖς. Οἶς τὸ χρῶμα ἐρυθρόν, ὀξεῖς, ὅτι πάντα τὰ κατὰ τὸ σῶμα ὑπὸ κινήσεως ἐκθερμαινόμενα ἐρυθραίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="34">
+<p>Οἶς δὲ τὸ χρῶμα φλογοειδές, μανικοί, ὅτι τὰ κατὰ τὸ σῶμα σφόδρα ἐκθερμανθέντα φλογοειδῆ χροιὰν ἴσχει· οἱ δὲ ἄκρως θερμανθέντες μανικοὶ ἂν εἴησαν. Οἶς δὲ περὶ τὰ στήθη ἐπιφλεγές ἐστι τὸ χρῶμα, δυσόργητοι· ἀναφέρεται ἐπὶ τὸ πάθος· τοῖς γὰρ ὀργιζομένοις ἐπιφλέγεται τὰ περὶ τὰ στήθη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="35">
+<p>Οἶς τὰ περὶ τὸν τράχηλον καὶ τοὺς κροτάφους αἱ φλέβες κατατεταμέναι εἰσί, δυσόργητοι· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι τοῖς ὀργιζομένοις ταῦτα συμβαίνει. Οἶς τὸ πρόσωπον ἐπιφοινίσσον ἐστίν, αἰσχυντηλοί εἰσιν· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι τοῖς αἰσχυνομένοις ἐπιφοινίσσεται τὸ πρόσωπον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="36">
+<p>Οἶς αἱ γνάθοι ἐπιφοινίσσουσιν, οἰνόφλυγες· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι τοῖς μεθύουσιν ἐπιφοινίσσουσιν αἱ γνάθοι. Οἶς δὲ ὀφθαλμοὶ ἐπιφοινίσσουσιν, ἐκστατικοὶ ὑπὸ ὀργῆς· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι οἱ ὑπ’ ὀργῆς ἐξεστηκότες ἐκφοινίσσυνται τοὺς ὀφθαλμούς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="37">
+    <p>Οἶς δὲ οἱ ὀφθαλμοὶ <milestone unit="page" resp="Bekker" n="812b"/> ἄγαν μέλανες, δειλοί· ἡ γὰρ ἄγανμελαίνη χρόα ἐφάνη δειλίαν σημαίνουσα. Οἱ δὲ μὴ ἄγαν μέλανες ἀλλὰ κλίνοντες πρὸς τὸ ξανθὸν χρῶμα εὔψυχοι. Οἶς δὲ οἱ ὀφθαλμοὶ γλαυκοὶ ἢ λευκοί, δειλοί· ἐφάνη γὰρ τὸ λευκὸν χρῶμα δειλίαν σημαῖνον. Οἱ δὲ μὴ γλαυκοὶ ἀλλὰ χαροποὶ εὔψυχοι· ἀναφέρεται ἐπὶ λέοντα καὶ ἀετόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="38">
+<p>Οἶς δὲ οἰνωποί, μάργοι· ἀναφέρεται ἐπὶ τὰς αἶγας. Οἶς δὲ πυρώδεις, ἀναιδεῖς· ἀναφέρεται ἐπὶ τοὺς κύνας. Οἱ ὠχρόμματοι ἐντεταραγμένους <pb facs="operaexrecension06arisuoft_0065"/> ἔχοντες τοὺς ὀφθαλμοὺς δειλοί· ἀναφέρεται ἐπὶ τὸ πάθος, ὅτι οἱ φοβηθέντες ἔνωχροι γίνονταιχρώμματι οὐχ ὁμαλῷ. Οἱ δὲ τοὺς ὀφθαλμοὺς στιλπνοὺς ἔχοντες λάγνοι· ἀναφέρεται ἐπὶ τοὺς ἀλεκτρυόνας καὶ κόρακας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="39">
+<p rend="indent">Οἱ δασείας ἔχοντες τὰς κνήμας λάγνοι· ἀναφέρεται ἐπὶ τοὺς τράγους. Οἱ δὲ περὶ τὰ στήθη καὶτὴν κοιλίαν ἄγαν δασέως ἔχοντες οὐδέποτε πρὸς τοῖς αὐτοῖς διατελοῦσιν· ἀναφέρεται ἐπὶ τοὺς ὄρνιθας, ὅτι ταῦτα τὰ στήθη καὶ τὴν κοιλίαν δασυτάτην ἔχουσιν. Οἱ τὰ στήθη ψιλὰ ἄγαν ἔχοντες ἀναιδεῖς· ἀναφέρεται ἐπὶ τὰς γυναῖκας. Ἐπειδὴ οὖν οὔτε ἄγαν δασέα δεῖ εἶναι οὔτε ψιλά, ἡ μέση ἕξις κρατίστη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="40">
+<p>Οἱ τοὺς ὤμους δασεῖς ἔχοντες οὐδέποτε πρὸς τοῖς αὐτοῖς διατελοῦσιν· ἀναφέρεται ἐπὶ τοὺς ὄρνιθας. τὸν νῶτον δασὺν ἔχοντες ἄγαν ἀναιδεῖς· ἀναφέρεται ἐπὶ τὰ θηρία. Οἱ δὲ τὸν αὐχένα ὄπισθεν δασὺν ἔχοντες ἐλευθέριοι· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἱ δὲ ἀκρογένειοι εὔψυχοι· ἀναφέρεται ἐπὶ τοὺς κύνας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="41">
+<p>Οἱ δὲ συνόφρυες δυσάνιοι· ἀναφέρεται ἐπὶ τὴν τοῦ πάθους ὁμοιότητα. Οἱ δὲ τὰς ὀφρῦς κατεσπασμένοι πρὸς τῆς ῥινός, ἀνεσπασμένοι δὲ πρὸς τὸν κρόταφον εὐήθεις· ἀναφέρεται ἐπὶ τοὺς σῦς. Οἱφριξὰς τὰς τρίχας ἔχοντες ἐπὶ τῆς κεφαλῆς δειλοί· ἀναφέρεται ἐπὶ τὸ πάθος, ὄτικαὶ οἱ ἔκφοβοι γιγνόμενοι φρίσσουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="42">
+<p>Οἱ τὰς τρίχας σφόδρα οὔλας ἔχοντες δειλοί· ἀναφέρεται ἐπὶ τοὺς Αἰθίοπας. Ἐπειδὴ οὖν αἵ τε φριξαὶ καὶ αἱ σφόδρα οὖλαι δειλίαν ἀναφέρουσιν, αἱ ἄκρουλοι ἂν εἶεν πρὸς εὐψυχίαν ἄγουσαι· ἀναφέρεται δὲ καὶ ἐπὶ τὸν λέοντα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="43">
+    <p>Οἱ τοῦ μετώπου τὸ πρὸς τῇ κεφαλῇ ἀναστεῖλον ἔχοντες ἐλευθέριοι· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἱ ἐπὶ τῆς κεφαλῆς προσπεφυκυίας ἔχοντες τὰς τρίχας ἐπὶ τοῦ μετώπου κατὰ τὴν <pb facs="operaexrecension06arisuoft_0066"/> ῥῖναἀνελεύθεροι· ἀναφέρεται <milestone unit="page" resp="Bekker" n="813a"/> ἐπὶ τὴν ἐπιπρέπειαν, ὅτι δουλοπρεπὲς τὸ φαινόμενον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="44">
+<p>Μακροβάμων καὶ βραδυβάμων εἴη ἂν νωθρεπιθέτης τελεστικός, ὅτι τὸ μακρὰ βαίνειν ἀνυστικόν, τὸ βραδέως δὲ μελλητικόν. Βραχυβάμων βραδυβάμων νωθρεπιθέτης οὐ τελεστικός, ὅτι τὸ βραχέα βαίνεινκαὶ βραδέως οὐκ ἀνυστικόν. Μακροβάμων ταχυβάμων οὐκ ἐπιθετικός, τελεστικός, ὅτι τὸ μὲν τάχος τελεστικόν, ἡ δὲ μακρότης οὐκ ἀνυστικόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="45">
+<p>βραχυβάμων ταχυβάμων ἐπιθετικός, οὐ τελεστικός. Περὶ δὲ χειρὸς καὶ πήχεος καὶ βραχίονος φορᾶς, αἱ αὐταὶ ἀναφέρονται. Οἱ δὲ τοῖς ὤμοις ἐπισαλεύοντες ὀρθοῖς ἐκτεταμένοιςγαλεαγκῶνες· ἀναφέρεται ἐπὶ τοὺς ἵππους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="46">
+<p>Οἱ τοῖς ὤμοις ἐπενσαλεύοντες ἐγκεκυφότες μεγαλόφρονες· ἀναφέρεται ἐπὶ τοὺς λέοντας. Οἱ τοῖς ποσὶν ἐξεστραμμένοις πορευόμενοι καὶ ταῖς κνήμαις θηλείαις· ἀναφέρεται ἐπὶ τὰς γυναῖκας. Οἱ δὲ τοῖς σώμασι περικλώμενοι καὶ ἐντριβόμενοι κόλακες· ἀναφέρεται ἐπὶ τὸ πάθος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="47">
+<p>Οἱ ἐγκλινόμενοι εἰς τὰ δεξιὰ ἐν τῷ πορεύεσθαι κίναιδοι· ἀναφέρεται ἐπὶ τὴν ἐπιπρέπειαν. Οἱ εὐκινήτους τοὺς ὀφθαλμοὺς ἔχοντες ὀξεῖς, ἁρπαστικοί· ἀναφέρεται ἐπὶ τοὺς ἱέρακας. Οἱ σκαρδαμύκται δειλοί, ὅτι ἐν τοῖς ὄμμασι πρῶτα τρέπονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="48">
+<p>Οἱ κατιλλαντιωρίαν τε, καὶ οἶς τὸ ἕτερον βλέφαρον ἐπιβέβηκε τοῖς ὀφθαλμοῖς, κατὰ μέσον τῆς ὄψεως ἑστηκυίας, καὶ οἱ ὑπὸ βλέφαρα τὰ ἄνω τὰς ὀψίας ἀνάγοντες, μαλακόν τε βλέποντες, καὶ οἱ τὰ βλέφαρα ἐπιβεβληκότες, ὅλως τε πάντες οἱ μαλακόν τε καὶ διακεχυμένον βλέποντες, ἀναφέρονται ἐπὶ τὴν ἐπιπρέπειαν καὶ <pb facs="operaexrecension06arisuoft_0067"/> τὰς γυναῖκας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="49">
+<p>Οἱ τοὺς ὀφθαλμοὺς διὰ συχνοῦ χρόνου κινοῦντες, ἔχοντές τε βάμμαλευκώματος ἐπὶ τῷ ὀφθαλμῷ, ὡς προσεστηκότας, ἐννοητικοί· ἂν γὰρ πρός τινι ἐννοίᾳ σφόδρα γένηται ἡ ψυχή, ἴσταται καὶ ἡ ὄψις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="50">
+    <p>Οἱ μέγα φωνοῦντες βαρύτονον ὑβρισταί· ἀναφέρεται ἐπὶ τοὺς ὄνους. Ὄσοι δὲ φωνοῦσιν ἀπὸ βαρέος ἀρξάμενοι, τελευτῶσι δὲ εἰς ὀξύ, δυσθυμικοί, ὀδύρται· ἀναφέρεται ἐπὶ τοὺς βοῦς καὶ ἐπὶ τὸ πρέπον τῇ φωνῇ. Ὄσοι δὲ ταῖς φωναῖς ὀξείαις μαλακαῖς κεκλασμέναις διαλέγονται, κίναιδοι· ἀναφέρεται <milestone unit="page" resp="Bekker" n="813b"/> ἐπὶ τὰς γυναῖκας καὶ ἐπὶ τὴν ἐπιπρέπειαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="51">
+<p>Ὄσοι βαρύτονον φωνοῦσι μέγα, μὴ πεπλεγμένον, ἀναφέρεται ἐπὶ τοὺς εὐρώστους κύνας καὶ ἐπὶ τὴν ἐπιπρέπειαν. Ὄσοι μαλακὸν ἄτονον φωνοῦσι, πραεῖς· ἀναφέρεται ἐπὶ τὰς ὅϊς. Ὄσοι δὲ φωνοῦσιν ὀξὺ καὶέγκεκραγός, μάργοι· ἀναφέρεται ἐπὶ τὰς αἶγας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="52">
+<p>Οἱ μικροὶ ἄγαν ὀξεῖς· τῆς γὰρ τοῦ αἵματος φορᾶς μικρὸν τόπον κατεχούσης καὶ αἱ κινήσεις ταχὺ ἄγαν ἀφικνοῦνται ἐπὶ τὸ φρονοῦν. Οἱ δὲ ἄγαν μεγάλοι βραδεῖς· τῆς γὰρ τοῦ αἵματος φορᾶς μέγαν τόπον κατεχούσης αἱ κινήσεις βραδέως ἀφικνοῦνται ἐπὶ τὸ φρονοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="53">
+<p>Ὄσοι τῶν μικρῶν ξηραῖς σαρξὶ κεχρημένοι εἰσὶν ἢ καὶ χρώμασιν, ἃ διὰ θερμότητα τοῖς σώμασιν ἐπιγίνονται, οὐδὲν ἀποτελοῦσιν· οὔσης γὰρ τῆς φορᾶς ἐν μικρῷ καὶ ταχείας διὰ τὸ πυρῶδες, οὐδέποτε κατὰ ταὐτόν ἐστι τὸ φρονεῖν, ἀλλὰ ἄλλοτ’ ἐπ’ ἄλλων, πρὶν τὸ ὑπερέχον περᾶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="54">
+<p>Ὄσοι δὲ τῶν μεγάλως ὑγραῖς σαρξὶ κεχρημένοι, ἢ καὶ χρώμασιν ἃ διὰ ψυχρότητα ἐγγίνονται, οὐδὲν ἐπιτελοῦσιν· οὔσης γὰρ τῆς φορᾶς ἐνμεγάλῳ τόπῳ καὶ βραδείαςδιὰ τὴν ψυχρότητα, οὐ συνανύει ἀφικνουμένην ἐπὶ τὸ φρονοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="55">
+<p>Ὄσοι δὲ τῶν μικρῶν ὑγραῖς σαρξὶ κεχρημένοι εἰσὶ καὶχρώμασι διὰ ψυχρότητα, <pb facs="operaexrecension06arisuoft_0068"/> γίνονται ἐπιτελεστικοί· οὔσης γὰρ τῆς κινήσεως ἐν μικρῷ, τὸ δυσκίνητον τῆς κράσεως συμμετρίαν παρέσχε τὸ πρῶτον ἐπιτελεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="56">
+<p>Ὅσοι δὲ τῶν μεγάλων ξηραῖς σαρξὶ κεχρημένοι εἰσὶ καὶ χρώμασι διὰ θερμότητα, γίνονται ἐπιτελεστικοὶ καὶ αἰσθητικοί· τὴν γὰρ τοῦ μεγέθους ὑπερβολὴν σαρκῶν τε καὶ χρώματος ἡ θερμότης ἠκέσατο, ὥστε σύμμετρον εἶναι πρὸς τὸ ἐπιτελεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="57">
+<p>Τὰ μὲν οὖν μεγέθεσιν ὑπερβάλλοντα τῶν σωμάτων ἢ σμικρότησιν ἐλλείποντα, ὡς τυχόντα ἐπιτελεστικά ἐστι καὶ ὡς ἀτελῆ, εἴρηται, Ἡ δὲ τούτων μέση φύσις πρὸς τὰς αἰσθήσεις κρατίστη καὶ τελεστικωτάτη, οἷς ἂν ἐπιθῆται· αἱ γὰρ κινήσεις οὐ διὰ πολλοῦ οὖσαι ῥᾳδίως ἀφικνοῦνται πρὸς τὸν νοῦν· οἶσαί τε οὐ κατὰ μικρὸν ὑπερχωροῦσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="58">
+    <p>Ὥστε τὸν τελεώτατον πρὸς τὸ ἐπιτελεῖν τε ἂ ἄν προθῆται καὶ αἰσθάνεσθαι μέλλοντα μέτριον δεῖ εἶναι τὸ μέγεθος. Οἱ ἀσύμμετροι πανοῦργοι· <milestone unit="page" resp="Bekker" n="814a"/> ἀναφέρεται ἐπὶ τὸ πάθος καὶ τὸ θῆλυ. Εἰ γὰρ οἱ ἀσύμμετροι πανοῦργοι, οἱ σύμμετροι δίκαιοι ἂν εἴησαν καὶ ἀνδρεῖοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="59">
+<p>Τὴν δὲ τῆς συμμετρίας ἀναφορὰν πρὸς τὴν τῶν σωμάτων εὐαγωγίαν καὶ εὐφυΐαν ἀνοιστέον, ἀλλ’ οὐ πρὸς τὴν τοῦ ἄρρενος δέαν, ὥσπερ ἐν ἀρχῇ διῃρέθη. Καλῶς δ' ἔχει καὶ πάντα τὰ σημεῖα, ὅσα προείρηται, ἀναφέρειν ἐπὶ τὴν ἐπιπρέπειαν καὶ εἰς ἄρρεν καὶ θῆλυ· ταῦτα γὰρ τελεωτάτην διαίρεσιν διῄρηται, καὶ ἐδείχθη ἄρρεν θήλεος δικαιότερον καὶ ἀνδρειότερον καὶ ὅλως εἰπεῖν ἄμεινον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg032.1st1K-grc1.6" n="60">
+    <p>Ἐν ἁπάσῃ δὲ <milestone unit="page" resp="Bekker" n="814b"/> τῇ τῶν σημείων ἐκλογῇ ἕτερα ἑτέρων σημεῖα μᾶλλον δηλοῦσιν ἐναργῶς τὸ ὑποκείμενον. Ἐναργέστερα δὲ τὰ ἐν ἐπικαιροτάτοις τόποις ἐγγινόμενα. Ἐπικαιρότατος δὲ τόπος ὁ περὶ τὰ ὄμματά τε καὶ τὸ μέτωπον καὶ κεφαλὴν καὶ πρόσωπον, δεύτερος δὲ ὁ περὶ τὰ στήθη καὶ ὤμους, <pb facs="operaexrecension06arisuoft_0069"/> ἔπειτα περὶ τὰ σκέλη τε καὶ πόδας· τὰ δὲ περὶ τὴν κοιλίαν ἥκιστα. Ὅλως δὲ εἰπεῖν οὗτοι οἱ τόποι ἐναργέστατα σημεα παρέχονται, ἐφ’ ὦν καὶ φρονήσεως πλείστης ἐπιπρέπεια γίνεται.</p></div></div></div>
+</body></text></TEI>

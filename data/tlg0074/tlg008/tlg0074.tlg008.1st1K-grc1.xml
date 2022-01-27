@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Epistula ad Lucium Gellium</title>
+                <author xml:lang="lat">Arrian</author>
+                <editor>A.G. Roos</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Karina Cooper</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>
+
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg0074.tlg008.1st1K-grc1.xml</idno>
+                <pubPlace />
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2021-04-14"/>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Flavii Arriani Quae Exstant Omnia. Scripta Minora et Fragmenta.</title>
+                        <editor>A. G. Roos</editor>
+                        <imprint>
+                            <pubPlace>Leipzig</pubPlace>
+                            <publisher>Teubner</publisher>
+                            <date>1910</date>
+                        </imprint>
+                        <biblScope unit="volume">2</biblScope>
+                    </monogr>
+                    <ref target="https://babel.hathitrust.org/cgi/pt?id=uiug.30112024054923&amp;view=2up&amp;seq=250">HathiTrust</ref>
+                </biblStruct>
+            </sourceDesc>     
+        </fileDesc>
+        
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment.</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2021-04-14" who="Lisa Cerrato">initial markup of new file.</change>
+        </revisionDesc>
+    </teiHeader>
+        
+<text>
+<body>
+    <div type="edition" n="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" xml:lang="grc">
+        <pb facs="ldpd_10922736_000_0124"/>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="1">
+        <head rend="center">Ἀρριανὸς Λουκίῳ Γελλίῳ χαίρειν.</head>
+        <p rend="indent">Οὔτε συνέγραψα ἐγὼ τοὺς Ἐπικτήτου λόγους οὕτως ὅπως ἄν τις συγγράψειε τὰ τοιαῦτα οὔτε ἐξήνεγκα εἰς ἀνθρώπους αὐτός, ὅς γε οὐδὲ συγγράψαι φημι.</p></div>
+
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="2">
+<p>ὅσα δὲ ἤκουον αὐτοῦ λέγοντος, ταῦτα αὐτὰ ἐπειράθην αὐτοῖς ὀνόμασιν ὡς οἷόν τε ἦν γραψάμενος ὑπομνήματα εἰς ὕστερον ἐμαυτῷ διαφυλάξαι τῆς ἐκείνου διανοίας καὶ παρρησίας.</p></div>
+
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="3">
+<p>ἔστι δὴ τοιαῦτα ὥσπερ εἰκὸς ὁποῖα ἄν τις αὐτόθεν ὁρμηθεὶς εἴποι πρὸς ἕτερον, οὐχ ὁποῖα ἂν ἐπὶ τῷ ὕστερον ἐντυγχάνειν τινὰς αὐτοῖς συγγράφοι. τοιαῦτα δʼ ὄντα οὐκ οἴδα ὅπως οὔτε ἑκόντος ἐμοῦ οὔτε εἰδότος ἐξέπεσεν εἰς ἀνθρώπους.</p></div>
+
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="5">
+<p>ἀλλʼ ἐμοί γε οὐ πολὑς λόγος, εἰ οὐχ ἴκανὸς φανοῦμαι συγγράφειν, Ἐπικτήτῳ τε οὐδʼ ὀλίγος, εἰ καταφρονήσει τις αὐτοῦ τῶν λόγων, ἐπεὶ καὶ λέγων αὐτοὺς οὐδενὸς ἄλλου δῆλος ἦν ἐφιέμενος ὅτι μὴ κινῆσαι τὰς γνώμας τῶν ἀκουόντων πρὸς τὰ βέλτιστα.</p></div>
+
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="6">
+<p>εἰ μὲν δὴ τοῦτό γε αὐτὸ διαπράττοιντο οἶ λόγοι οὗτοι, ἔχοι‹εν› ἂν οἶμαι ὅπερ χρὴ ἔχειν τοὺς τῶν φιλοσόφων λόγους·</p></div>
+
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="7">
+<p>εἰ δὲ μή, ἀλλʼ ἐκεῖνο ἴστωσαν οἱ ἐντυγχάνοντες ὅτι, αὐτὸς ὁπότε ἔλεγεν αὐτούς, ἀνάγκη ἦν τοῦτο πάσχειν <pb facs="ldpd_10922736_000_0125"/> τὸν ἀκροώμενον αὐτῶν ὅπερ ἐκεῖνος αὐτὸν παθεῖν ήβούλετο.</p></div>
+
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0074.tlg008.1st1K-grc1" n="8">
+<p>εἰ δʼ οἱ λόγοι αὐτοὶ ἐφʼ αὐτῶν τοῦτο οὐ διαπράτ τονται, τυχὸν μὲν ἐγὼ αἴτιος, τυχὸν δὲ καὶ ἀνάγκη οὕ τως ἔχειν. ἔρρωσο. </p></div></div>
+</body></text></TEI>

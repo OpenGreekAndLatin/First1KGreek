@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" 
+  schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Fragmentum alchemicum</title>
+        <author>Agathodaemon</author>
+        <editor>Marcellin Berthelot</editor>
+        <editor>Charles-Émile Ruelle</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>Janan Assaly</persName>
+          <orgName>Mt. Allison University</orgName>
+        </respStmt>
+
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Michael Konieczny</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+        </respStmt>
+      </titleStmt>
+
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg4086.tlg001.1st1K-grc1.xml</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+            Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date>2020-08-15</date>
+      </publicationStmt>
+
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="fre">Collection des anciens alchimistes grecs</title>
+            <editor>Marcellin Berthelot</editor>
+            <editor>Charles-Émile Ruelle</editor>
+            <imprint>
+              <publisher>Georges Steinheil</publisher>
+              <pubPlace>Paris</pubPlace>
+              <date>1888</date>
+            </imprint>
+            <biblScope unit="volume">2</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/collectiondesan00bertgoog/page/n21/mode/2up"
+            >Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <editorialDecl>
+        <quotation marks="none"/>
+        <normalization>
+          <p/>
+        </normalization>
+        <correction>
+          <p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+            University. Developed through the support of the <ref target="https://nbif.ca/en"
+              >NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section"
+          replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2020-08-15" who="Michael Konieczny">markup of new file</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg4086.tlg001.1st1K-grc1" xml:lang="grc">
+        <div type="textpart" subtype="section" n="1">
+          <p rend="indent"><pb facs="collectiondesanc23bert_0021"/>Μετὰ τὴν τοῦ χαλκοῦ ἐξίωσιν καὶ
+            μέλανσιν καὶ ἐς ὕστερον λεύκωσιν, τότε ἔσται βεβαία ξάνθωσις. </p>
+        </div>
+
+      </div>
+    </body>
+  </text>
+</TEI>

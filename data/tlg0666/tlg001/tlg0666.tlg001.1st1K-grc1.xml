@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Declamatio</title>
+        <author xml:lang="lat">Adrianus</author>
+        <editor>Hugo Hinck</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName><forename>Charlotte</forename><surname>Houghton</surname></persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Perseus Digital Library</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+    
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg0666.tlg001.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-02-10" />
+    </publicationStmt>
+      
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Polemonis Declamationes quae exstant duae.</title>
+            <editor>Hugo Hinck</editor>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1873</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/declamationesqua00poleuoft/page/n59/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+ 
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.17 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+   
+    <refsDecl n="CTS">
+      <cRefPattern n="section" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+        <p>This pointer pattern extracts section.</p>
+      </cRefPattern>
+    </refsDecl>
+   
+  </encodingDesc>
+  
+    <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+    </langUsage>
+  </profileDesc>
+    
+    <revisionDesc>
+      <change when="2021-04-12" who="Lisa Cerrato">initial markup of new file.</change>
+    </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg0666.tlg001.1st1K-grc1" xml:lang="grc">
+      <pb facs="declamationesqua00poleuoft_0060"/>
+      <head rend="center">Ἁλοῦσά τις φαρμακείας οὐχ οἵα τε ἦν καυθῆναι· ὑπέσχετό τις γυνὴ καύσειν αὐτὴν καὶ ἔκαυσεν. ἀξιοῖ Ἀδριανὸς ὁ ῥήτωρ καὶ ταύτην καῆναι.</head> 
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0666.tlg001.1st1K-grc1" n="1">
+        <p rend="indent">Πρὸς μὲν τὸ λέγειν ὡς οὐ τὰς κεκτημένας τὴν τέχνην ὁ νόμος ἀλλὰ τὰς ἐπὶ κακῷ χρησαμένας ἀπαιτεῖ τιμωρίαν, εὐχερὲς ἀπʼ αὐτοῦ ποιήσασθαι τοῦ νόμου τὴν διδασκαλίαν· ὁ γὰρ οὐ τὴν φαρμακεύσασαν εἰπὼν ἀλλὰ τὴν φαρμακίδα καὶ τῇ προσηγορίᾳ τῆς τέχνης τὴν τιμωρίαν ὑποθείς, δῆλός ἐστι μισῶν τὸ δρᾶσαι δύνασθαι. καὶ γὰρ ὅσα μὲν τῶν ἀδικημάτων τόλμης ἔχεται μόνης, ἐκ τοῦ πραχθῆναι διελέγχεται, ὅσα δʼ ἐστὶ τέχνης καθάπερ φαρμακεία, ταῦτα καὶ πρὸ τῆς πράξεως ἀπὸ τῆς γνώμης διαβάλλεται. καὶ γὰρ τοὺς τέχνας ἀφʼ ὧν ἐστι τὸ δύνασθαι βλάψαι προσλαβεῖν μανθάνοντας ἀπʼ αὐτῆς ὑποπτεύειν ἀνάγκη τῆς ἐπιθυμίας. οὐ γὰρ χρὴ τὸ παθεῖν ἀναμείναντας οὕτως ἀμύνασθαι ζητεῖν τοὺς ἐξ ὧν ἔπαθον δρᾶσαι δυνηθέντας ἀλλὰ πρίν τι παθεῖν ὑποπτεύειν τὸ δρᾶσαι δύνασθαι. τί τοίνυν; ὁ φαρμακεύς ἐστι λῃστὴς ὡμολογημένος προτείνων τέχνην ἀδικημάτων, ἄσκησις ἐπιβουλῆς, παρανομίας <pb facs="declamationesqua00poleuoft_0061"/> ἐπάγγελμα, ἰσχὺς ἀσεβημάτων. ἐπεὶ καὶ τῶν θηρίων τουτωνὶ τῶν ὁμοτέχνων ὑμῖν, ὦ γύναι, τὰ πολλὰ κολάζομεν οὐδὲν ὑπʼ αὐτῶν προαδικηθέντες ἀλλὰ τὴν δύναμιν αὐτῶν μεμισηκότες, ὅτι κἀκείνων τι ἕκαστον ἔχει φάρμακον ἐν τῇ φύσει. καὶ γὰρ εἰ τῷ δυνηθῆναι λαθεῖν οὐ πεφώρασαι περὶ ὧν ἔδρασας, ἀλλʼ ὅτι δύνασαι δρᾶσαι πεφωραμένη δώσεις ὡς δράσασα δίκην, εἰ καὶ μέχρι νῦν δεδύνησαι λαθεῖν. καὶ τί δεῖ λέγειν περὶ σοῦ; εἰ μὲν γὰρ ἐμίσεις τὴν τέχνην, οὐκ ἂν ἐμάνθανες· εἰ δὲ ἔχεις τὴν ἐπιστήμην, ἐφθόνεις, οὐκ ἐμίσεις· κολάζει γάρ τις ὃ φεύγει, ζηλοτυπεῖ δὲ ὃ μετʼ ἄλλων ἔχει. καὶ γὰρ λῃστὴς ἤδη λῃστὴν ἀπέκτεινεν ὑπὲρ σκύλων  ργισμένος καὶ τύραννον καθεῖλέ τις μοναρχεῖν ἐθέλων. τοιοῦτόν τι γεγένηται καὶ τὸ νῦν ὑπὸ σοῦ τετολμημένον· μοναρχίαν φαρμακείας οἴει σεαυτῇ διαπεπρᾶχθαι τὴν κοινωνοῦσαν τῆς τέχνης μετακεχειρισμένη. </p></div>
+</div>
+   
+  </body>
+</text>
+</TEI>

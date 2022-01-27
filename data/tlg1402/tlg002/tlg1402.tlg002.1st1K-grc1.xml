@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="grc">Μετρικὴ εἰσαγωγή</title>
+				<author>Hephaestion</author>
+				<editor>Maximilian Consbruch</editor>
+				<funder>Center for Hellenic Studies</funder>
+
+				<respStmt>
+					<resp>Published original versions of the electronic texts</resp>
+					<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+					<persName role="principal">Gregory Crane</persName>
+					<persName role="principal">Leonard Muellner</persName>
+					<persName role="principal">Bruce Robertson</persName>
+				</respStmt>
+
+				<respStmt>
+					<resp>Proofreading</resp>
+					<persName>Dawson Fraser</persName>
+					<orgName>Mt. Allison University</orgName>
+				</respStmt>
+
+				<respStmt>
+					<resp>CTS conversion</resp>
+					<persName>Michael Konieczny</persName>
+					<orgName>Center for Hellenic Studies</orgName>
+				</respStmt>
+			</titleStmt>
+
+			<publicationStmt>
+				<publisher>Open Greek and Latin</publisher>
+				<idno type="filename">tlg1402.tlg002.1st1K-grc1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+				</availability>
+				<date>2020-07-30</date>
+			</publicationStmt>
+
+
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<author>Hephaestion</author>
+						<title xml:lang="lat">Hephaestionis Enchiridion cum commentariis veteribus</title>
+						<editor>Maximilian Consbruch</editor>
+						<imprint>
+							<pubPlace>Leipzig</pubPlace>
+							<publisher>Teubner</publisher>
+							<date>1906</date>
+						</imprint>
+					</monogr>
+					<ref target="https://archive.org/details/hephaestionisenc00heph/page/n93/mode/2up">The
+						Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc>
+			<editorialDecl>
+				<quotation marks="none"/>
+				<normalization>
+					<p/>
+				</normalization>
+				<correction>
+					<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+						University. Developed through the support of the <ref target="https://nbif.ca/en"
+							>NBIF</ref>.</p>
+				</correction>
+			</editorialDecl>
+
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+)" n="section"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+					<p>This pointer pattern extracts sections.</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+			</langUsage>
+		</profileDesc>
+
+		<revisionDesc>
+			<change when="2020-07-30" who="Michael Konieczny">initial markup of new file</change>
+		</revisionDesc>
+	</teiHeader>
+
+	<text>
+		<body>
+			<div type="edition" n="urn:cts:greekLit:tlg1402.tlg002.1st1K-grc1" xml:lang="grc">
+				<div type="textpart" subtype="section" n="1">
+					<pb facs="hephaestionisenc00hephuoft_0092"/>
+					<head rend="center">Περὶ ποιήματος.</head>
+					<p rend="indent">Τῶν ποιημάτων τὰ μέν ἐστι κατὰ στίχον, τὰ δὲ συστηματικά, τὰ δὲ μικτά, τὰ
+						δὲ κοινά. </p>
+					<p rend="indent">Κατὰ στίχον μὲν ὅσα ὑπὸ τοῦ αὐτοῦ μέτρου καταμετρεῖται, ὡς τὰ Ὁμήρου καὶ
+						τῶν ἐποποιῶν ἔπη· καταχρηστικῶς δὲ κἂν ὑπὸ κώλου ἢ κόμματος, ὡς τὸ Καλλιμάχειον τοῦτο
+						ποιημάτιον (118) <lb/>ἡ παῖς ἡ κατάκλειστος, <lb/>τὴν οἵ φασι τεκόντες. <lb/><pb
+							facs="hephaestionisenc00hephuoft_0093"/>καταμετρεῖται γὰρ ὑπὸ κόμματος ἀντισπαστικοῦ,
+						καλουμένου Φερεκρατείου. </p>
+					<p rend="indent">Συστηματικὰ δὲ ὅσα ὑπὸ πλειόνων μέτρων εἰς ἓν σῶμα παραληφθέντων
+						καταμετρεῖται ἢ συμπληροῦται. </p>
+					<p rend="indent">Μικτὰ δὲ ὅσα μέρος μέν τι ἔχει ὑπὸ στίχου καταμετρούμενον, μέρος δὲ
+						συστηματικόν. </p>
+					<p rend="indent">Κοινὰ δὲ ὅσα ὑπὸ συστήματος μὲν καταμετρεῖται, αὐτὸ δὲ τὸ σύστημα ἔχει
+						πληρούμενον, οἷά ἐστι τὰ ἐν τῷ δευτέρῳ καὶ τρίτῳ Σαπφοῦς· ἐν οἷς καταμετρεῖται μὲν ὑπὸ
+						διστιχίας, αὐτὴ δὲ ἡ διστιχία ὁμοία ἐστί. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="2">
+					<p rend="indent"><add>Καὶ τὰ μέν ἐστι</add> κατὰ σχέσιν, τὰ δὲ ἀπολελυμένα, τὰ δὲ ἐξ
+						ὁμοίων, τὰ δὲ μετρικὰ ἄτακτα, τὰ δὲ μικτά, τὰ δὲ κοινά. </p>
+					<p rend="indent">Καὶ κατὰ σχέσιν μέν ἐστιν, ὅσα μετρεῖται ὑπὸ συστήματος, καλεῖται δὲ
+						οὕτως διὰ τὸ <add>κατὰ</add> σχέσιν τινὰ πρὸς ἄλληλα τὰ ἐν τῷ ποιήματι συστήματα
+						καταμετρεῖσθαι. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="3">
+					<p rend="indent">Ἐξ ὁμοίων δὲ ὅσα ἐκ τοῦ αὐτοῦ ποδὸς ἐστιν ἢ τῆς αὐτῆς συζυγίας ἢ τῆς
+						αὐτῆς περιόδου ἀρχικῆς, οὔτε ὑπὸ στίχου οὕτε ὑπὸ συστήματος καταμετρούμενα. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="4">
+					<p rend="indent">Μετρικὰ δὲ ἄτακτα, ὅσα ἐκ μέτρων μὲν ὁμολογουμένων <pb
+							facs="hephaestionisenc00hephuoft_0094"/>συνέστηκε, τάξιν δὲ καὶ ἀνακύκλησιν οὐκ ἔχει,
+						οὕτε κατὰ στίχον οὔτε συστηματικά· οἷός ἐστιν ὁ Μαργίτης ὁ εἰς Ὅμηρον ἀναφερόμενος, ἐν ᾧ
+						παρέσπαρται τοῖς ἔπεσιν ἰαμβικά, καὶ ταῦτα οὐ κατʼ ἴσον σύστημα. τοιοῦτόν ἐστι καὶ τὸ
+						Σιμωνίδειον ἐπίγραμμα (Sim. 188) <lb/>Ἴσθμια δίς, Νεμέᾳ δίς, Ὀλυμπίᾳ ἐστεφανώθην,
+						<lb/>οὐ πλάτει νικῶν σώματος, ἀλλὰ τέχνᾳ, <lb/>Ἀριστόδαμος θράσυος Ἀλεῖος πάλᾳ.
+						<lb/></p>
+				</div>
+
+				<div type="textpart" subtype="section" n="5">
+					<p rend="indent">Μικτὰ δὲ ὅσα μέρος μέν τι ἔχει κατὰ σχέσιν, μέρος δέ τι ἀπολελυμένον ἢ ἐξ
+						ὁμοίων. </p>
+					<p rend="indent">Κοινὰ δὲ ὅσα καθʼ ἑτέραν μὲν ἰδέαν γέγραπται τοῦ συστήματος, δύναται δὲ
+						καὶ καθʼ ἑτέραν γεγράφθαι δοκεῖν· οἷον, φέρʼ εἰπεῖν, ἐξ ὁμοίων ὄντα κατὰ σχέσιν δοκεῖν
+						γεγράφθαι. </p>
+					<p rend="indent">Τοσαῦτα μὲν δὴ ταῦτα. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="6">
+					<p rend="indent">Πάλιν δὲ ἕκαστα τῶν προειρημένων ὑποδιαιρετέον. Τῶν γὰρ κατὰ σχέσιν τὰ
+						μέν ἐστι μονοστροφικά, τὰ δὲ ἐπῳδικά, τὰ δὲ κατὰ περικοπὴν ἀνομοιομερῆ, τὰ δὲ
+						ἀντιθετικά, τὰ δὲ μικτὰ κατὰ σχέσιν, <add>τὰ δὲ κοινὰ κατὰ σχέσιν</add>. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="7">
+					<p rend="indent">Τὰ μὲν οὖν μονοστροφικά ἐστιν, ὁπόσα ὑπὸ μιᾶς στροφῆς καταμετρεῖται. <pb
+							facs="hephaestionisenc00hephuoft_0095"/></p>
+				</div>
+
+				<div type="textpart" subtype="section" n="8">
+					<p rend="indent">Τὰ δὲ <gap reason="lost"/> ἐπῳδικὰ καλεῖται, ἐὰν δὲ ἐν τῇ πρώτῃ,
+						προῳδικά, ἐὰν δὲ ἐν μέσῳ, μεσῳδικά. Ταῦτα μὲν οὖν καὶ ἐν τριάσιν ὁρᾶται· ἐὰν δὲ
+						ὑπερεξαγάγῃ τὴν τριάδα, γίνονται καὶ ἄλλαι ἰδέαι δύο. ἤτοι γὰρ περιῳδικά ἐστιν, ὅταν αἱ
+						μὲν ἑκατέρωθεν ἀνόμοιοι ὦσιν <add>ἀλλήλαις, αἱ δὲ ἐν μέσῳ</add> ἀλλήλαις μὲν ὅμοιαι,
+						ταῖς δὲ περιεχούσαις ἀνὀμοιοι· ἢ παλινῳδικά, ὅταν αἱ ἑκατέρωθεν ἀλλήλαις μὲν ὦσιν
+						ὅμοιαι, <add>ταῖς δὲ ἐν μέσῳ ἀνόμοιοι</add> καὶ αἱ ἐν μέσῳ ταῖς μὲν περιεχούσαις
+						ἀνόμοιοι, <add>ἀλλήλαις δὲ ὅμοιαι</add>. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="9">
+					<p rend="indent">Τὰ δὲ κατὰ περικοπὴν ἀνομοιομερῆ τὰς μὲν περικοπὰς ὁμοίας ἀλλήλαις ἔχει,
+						τὰς δὲ ἐν ταῖς περικοπαῖς περιόδους ἀνομοίους· καλεῖται δὲ τὰ μὲν δυαδικά, ὅσα δύο τὰς
+						ἐν τῇ περικοπῇ περιόδους ἔχει, τὰ δὲ τριαδικά, ὅσα τρεῖς, τὰ δὲ τετραδικά, ὅσα τέσσαρας·
+						καὶ ἐπὶ τῶν ἑξῆς κατὰ τὸν αὐτὸν λόγον. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="10">
+					<p rend="indent">Ἀντιθετικὰ δέ, ὅσα κατὰ σχέσιν μὲν γέγραπται, <pb
+							facs="hephaestionisenc00hephuoft_0096"/>οὐ μέντοι κατὰ τὴν αὐτὴν τάξιν παραβάλλεται
+						ἀλλήλοις τὰ ἀντιστρέφοντα, τὸ πρῶτον τῷ πρώτῳ <gap reason="lost"/> παραβάλλεσθαι, τὸ
+							<add>δὲ</add> δεύτερον ἀπὸ τέλους τῷ δευτέρῳ ἀπʼ ἀρχῆς· τὸ δὲ τρίτον ἀπὸ τέλους τῷ
+						τρίτῳ· καὶ ἐπὶ τῶν λοιπῶν οὕτω. ταύτης τῆς ἰδέας ἐστὶ τὸ Ὠιὸν τὸ Σιμίου καὶ ἄλλα
+						παίγνια. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="11">
+					<p rend="indent">Μικτὰ δὲ κατὰ σχέσιν ἐστίν, ὅσα ἐκ μερῶν ἐστιν, πάντων μὲν κατὰ σχέσιν,
+						ἀνομοίων δὲ ἀλλήλοις κατὰ τὴν ἰδέαν, <add>οἷον</add> ἔκ τε ἐπῳδικῶν καὶ μονοστροφικῶν, ἢ
+						κατὰ περικοπήν. </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="12">
+					<p rend="indent">Κοινὰ δέ ἐστι κατὰ σχέσιν, ὅσα καθʼ ἑτέραν μὲν ἰδέαν τῶν κατὰ σχέσιν
+						γέγραπται, δύναται δὲ καὶ καθʼ ἑτέραν γεγράφθαι δοκεῖν, οἷον, εἰ μονοστροφικῶς γραφὲν
+						δύναται τοῦτο καὶ ἐπῳδικῶς γεγράφθαι δοκεῖν. </p>
+				</div>
+			</div>
+
+			<!--<div type="apparatus" n="urn:cts:greekLit:tlg1402.tlg002.1st1K-grc1" xml:lang="mul">
+				<div type="textpart" subtype="section" n="1">
+					<p><pb facs="hephaestionisenc00hephuoft_0092"/>12 εἰσαγωγή A || 13 ἡφαιστίωνος περὶ
+						ποιημάτων Ϲ, περὶ ποιημάτων (om. ἡφ.) H, de huius capitis auctore atque indole cf. BA V
+						3,29 sqq. || 18 κώματος A || 21 τὴν οἵ φασι Ϲ; τὴν οἱ φασι Α, τήν οἱ φασι Ι <pb
+							facs="hephaestionisenc00hephuoft_0093"/>8 post σύστημα add. Bergk &lt;κατὰ
+						στίχον&gt;, Westphal &lt;ἐκ τῶν αὐτῶν μέτρων&gt; | ἔχει I, ἔστι AH || 10 διστοιχείαισ̄
+						(sic) A, διστοιχίας 7, διστιχείας H | αὐτὴ Flor., αὕτή codd. | διστιχία H, διστοιχία AI
+						|| </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="2">
+					<p>11 τὰ — ἐστι inserui; &lt;τῶν δὲ συστηματικῶν ἐστι&gt; Westph. || 14 καὶ AH, om. I ||
+						15 κατὰ σχέσιν τινὰ scripsi, ἔχειν τινά σχέσιν Ϲ, ἔχειν τινὰ rell. || 16 τὰ] σχέσιν τὰ H
+						| post συστήματα add. ἐν τῷ H || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="3">
+					<p>ante v. 18 desunt τὰ ἀπολελυμένα, sed non codicum vitio || 19 ἀρχῆς I || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="4">
+					<p>21 ἐκ Η, καὶ Α, ἐκ καὶ Ι <pb facs="hephaestionisenc00hephuoft_0094"/>2 οὔτε (post. l.) IH,
+						οὐδὲ A | συστηματικά] κατὰ συστήματα H | μαργείτης A || 4 ἰαμβικὰ codd., ἰαμβεῖα Wilam. ||
+						6 νέμεα I | ὀλυμπία A, ὀλύμπια IH || 8 Ἀριστόδαμος Scaliger, ἀριστοδάμας codd. |
+						Θράσυος Wilam., θρασὺς codd., Θράσιδος Scal. | Ἀλεῖος Scal., ἅλιος (in A litt. ιος
+						fenestra haustae) codd. || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="5">
+					<p>10 τι I, τε A || 11 ἰδέαν Η, ἰδίαν AI || 12 καθʼ ἑτέραν Flor., θατέραν (om. καθ᾽) H,
+						καθʼ ἕτερον ΑI || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="6">
+					<p>16 ἕκαστα &lt;τῶν τριῶν πρώτων&gt; Hense || 18 κατὰ om. A || 19 τὰ – σχέσιν Turn., om.
+						codd. || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="7">
+					<p>21 μονοστροφικὰ Ι, μονόστροφα A <pb facs="hephaestionisenc00hephuoft_0095"/></p>
+				</div>
+
+				<div type="textpart" subtype="section" n="8">
+					<p>1 lacunam sic explevit Hense: &lt;ἐπῳδικά ἐστιν ἐν οἷς περιόδοις ὁμοίαις ἀνομοία τις
+						προστέτακται. Ἐὰν μὲν οὖν τὴν ἀνομοίαν ἔχῃ ἐν τῇ τελευταίᾳ χώρᾳ, ὁμωνύμως τῷ γένει&gt;;
+						cf. p.67,1 sqq. || 4 μεσῳδικὰ Turn., ὠδικὰ ΑΙΗ | καὶ ταῦτα μὲν οὖν ἐν Hense || 5 δὲ om. A
+						| ὑπερεξαγάγῃ codex quidam interpol., ὑπερεξαπάγη Α, ὑπερεξεπάγη ΙΜ, ὑπὲρ ἓξ ἀπάγη Η |
+						γίνονται] τίνονται Α || 6 ἐστιν ὅταν αἱ Turn., ἐστι δʼ ὅτʼ εἰ codd. || 7 ἀνόμοιοι scripsi,
+						ἀνόμοιαι codd. | ἀλλήλαις inserui, αἱ — μέσῳ ins. Westph. || 8 ἀνόμοιοι A, ὁμοῖαι Ι || 9
+						πάλιν ᾠδικὰ Α || 10 μὲν ὦσιν Studem., μελιωπαι Α, μελοποιίαι ΙΗ | ταῖς – ἀνόμοιοι inserui |
+						αἱ om. A || 11 ἀνόμοιοι scripsi, ἀνόμοιαι codd. | ἀλληλ. δ. ὁμ. add. Westph. || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="9">
+					<p>13 μὲν scripsi, δὲ codd., om. Gaisf. || 15 ἀνομοίας Hense ] 17 τρεῖς Turn., τρία codd. |
+						τέσσαρας Turn., τέσσαρα codd. || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="10">
+					<p>19 σχέσιν Meibom.; θέσιν codd. | τὸ πρῶτον] ἀλλὰ τὸ πρῶτον ἀπὸ τοῦ τέλους Η <pb
+							facs="hephaestionisenc00hephuoft_0096"/>2 lacunam indicavi; haec fere intercidisse
+						videntur ἀλλʼ οὕτως ὥστε τὸ τελευταῖον τῷ πρώτῳ | παραβάλλεται Turn., παραβάλλεσθαι τῷ
+						ἀπὸ τῆς ἀρχῆς H || 3 δὲ addidi || 5 το̽ (sic, post. l.) A, τοῦ I || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="11">
+					<p>7 εἰσὶν I | μερῶν Westph., μέτρων codd. || 8 πάντων scripsi, ἐκ πάντων codd., ἁπάντων
+						Caesar | ἀνομοίων vel οὐχ ὁμοίων Pauw, ὁμοίως codd. || 9 οἷον inserui || 10 post
+						περικοπὴν add. ἀνομοιομερῶν Westph. || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="12">
+					<p>11 ἑτέρων μὲν ἰδεῶν I || 13 ἑτέρων I || 14 post δοκεῖν libri finis indicatur in A
+						additis picturae emblematis nonnullis, deinde sequitur titulus ἡφ. π. π. || </p>
+				</div>
+
+			</div>
+
+			<div type="commentary" n="urn:cts:greekLit:tlg1402.tlg002.1st1K-grc1" xml:lang="mul">
+				<div type="textpart" subtype="section" n="1">
+					<p><pb facs="hephaestionisenc00hephuoft_0092"/>12 ad hoc caput cf. infra p.62—69.
+						Ar. Quint. 37,6—20. Mar. Vict. VI 56,22—59,23 — Diom. I 501,29—502,5 (BA V 3,119) ||
+						14 κατὰ στίχον ἢ περίοδον ἢ στροφήν Dion. Hal. de comp. verb. c. 25 p. 125,10 || 14—19
+						Is. Tzetz. AP Ι 60,12 sqq. <pb facs="hephaestionisenc00hephuoft_0093"/>3—5 At. Fort. VI
+						296,1 || 4 κατὰ σχέσιν schol. in Aristoph. Nub. 518 (V) || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="3">
+					<p>18 ad carmina ἐξ ὁμοίων cf. Ter. Maur. VI v. 1512 sqq. 2056 sqq. Mar. Vict. VI 91,8 sqq.
+						|| 19 de periodo cf. Mar. Vict. VI 55,1. Is. Tzetz. AP I 64,29 sqq. || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="4">
+					<p>21—60,5 Is. Tzetz. AP I 64,10—16 <pb facs="hephaestionisenc00hephuoft_0094"/>2 de
+						Margite cf. Mar. Vict. VI 79,12. Atil. Fort. VI 286,3. schol. in Dion. Thr. 472,1 ||
+					</p>
+				</div>
+
+				<div type="textpart" subtype="section" n="7">
+					<p>21 Caes. Bass. VI 266,26—267,2. Mar. Vict. VI 59,6—7. 162,1—3. 167,18. At. Fort. VI
+						294,24—27 <pb facs="hephaestionisenc00hephuoft_0095"/></p>
+				</div>
+
+				<div type="textpart" subtype="section" n="8">
+					<p>3—4 Atil. Fort. VI 295,1—15. Mar. Vict. VI 58,5—23 (BA V 3,98) || </p>
+				</div>
+
+				<div type="textpart" subtype="section" n="9">
+					<p>13—18 Mar. Vict. 59,8—23 <pb facs="hephaestionisenc00hephuoft_0096"/></p>
+				</div>
+
+			</div>-->
+		</body>
+	</text>
+</TEI>

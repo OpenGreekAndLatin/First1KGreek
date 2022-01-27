@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?> <?xml-model
+href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng"
+schematypens="http://relaxng.org/ns/structure/1.0"?> 
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="grc">Πρὸς τὰς ἀρχομένας ὑποχύσεις</title>
+				<author xml:lang="lat">Aglaias, Byzantius</author>
+				<editor>U. C. Bussemaker</editor>
+				<funder>Center for Hellenic Studies</funder>
+
+
+				<respStmt>
+					<resp>Published original versions of the electronic texts</resp>
+					<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+					<persName role="principal">Gregory Crane</persName>
+					<persName role="principal">Leonard Muellner</persName>
+					<persName role="principal">Bruce Robertson</persName>
+				</respStmt>
+
+				<respStmt>
+					<resp>Proofreading</resp>
+					<orgName>Center for Hellenic Studies</orgName>
+					<persName>Janan Assaly</persName>
+				</respStmt>
+
+				<respStmt>
+					<resp>CTS conversion</resp>
+					<orgName>Mount Allison University</orgName>
+					<persName>Bruce Robertson</persName>
+				</respStmt>
+			</titleStmt>
+
+			<publicationStmt>
+				<publisher>Open Greek and Latin</publisher>
+				<idno type="filename">urn.cts.greekLit.tlg0676.tlg001.1st1K-grc1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a
+						Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+				</availability>
+				<date when="2020-07-22"/>
+			</publicationStmt>
+
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title xml:lang="lat">Poetae bucolici et didactici</title>
+						<editor>Karl Friedrich Ameis</editor>
+						<imprint>
+							<pubPlace>Paris</pubPlace>
+							<publisher>Firmin Didot</publisher>
+							<date>1862</date>
+						</imprint>
+					</monogr>
+					<ref target="https://archive.org/details/poetaebucoliciet00amei/page/n435/mode/2up"
+						>Internet Archive</ref>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+
+		<encodingDesc>
+			<editorialDecl>
+				<correction>
+					<p>Lace v0.6.8 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison
+						University. Developed through the support of the <ref target="https://nbif.ca/en"
+							>NBIF</ref>.</p>
+				</correction>
+			</editorialDecl>
+			<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
+				Architecture</p>
+
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(\w+)" n="line"
+					replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:l[@n='$1'])">
+					<p>This pointer pattern extracts lines</p>
+				</cRefPattern>
+			</refsDecl>
+		</encodingDesc>
+
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+			</langUsage>
+		</profileDesc>
+
+		<revisionDesc>
+			<change when="2020-07-22" who="Bruce Robertson">initial markup of new file</change>
+			<change when="2020-07-24" who="Michael Konieczny">proofreading of header; further markup of
+				file</change>
+			<change when="2020-08-03" who="Michael Konieczny">further markup, proofreading of
+				file</change>
+		</revisionDesc>
+	</teiHeader>
+
+
+	<text>
+		<body>
+			<div type="edition" n="urn:cts:greekLit:tlg0676.tlg001.1st1K-grc1" xml:lang="grc">
+				<l n="1"><pb facs="poetaebucoliciet00amei_0437"/>Ἀγλαΐας τόδε σοι Βυζάντιος ἐσθλὸν ἰάλλω </l>
+				<l n="2">Ἰητὴρ ἑτάρῳ δῶρον ἀοιδοπόλῳ, </l>
+				<l n="3">Ὁφθαλμῶν μὲν ἄκος, Δημήτερα (?) τῶν ὑποχεῖσθαι </l>
+				<l n="4">Ἀρχομένων, ὑπʼ ἐμῆς δʼ εὑρεθὲν εὐμογίης. </l>
+				<l n="5">Καί σοι δʼ ἔξοχον ἔσται ἐς ἄχθεα, παντί τʼ ὄνειαρ </l>
+				<l n="6">Παρμόνιμον, κάμψῃς ἄχρι κεν ἐς πλέονας. </l>
+				<l n="7">Ὅσσα δʼ ἔχει θρόνα λέξαι ἔοικε μοι, ὡς ἐπαρήγειν </l>
+				<l n="8">Οἷς ἄν τι σθεναρὴ σύνθεσις ἥδε πέλει. </l>
+				<l n="9">Ἄνθους μὲν χαλκοῦ πεντώβολον, ἰσοβαρὲς δὲ </l>
+				<l n="10">Τοῦ συοδηλήτου τὴν ἀρετὴν γενέτιν· </l>
+				<l n="11">Καὶ μεῖον τούτων ὀβολῷ στρόγγυλμα πυραιθὲς </l>
+				<l n="12">Πρόσθες, ὃ Γαλλαϊκοῖς (?) ἀλδαίνετ’ ἐν δαπέδοις· </l>
+				<l n="13">Καὶ δύο διδράχμω, τὸ μὲν ἐκ ξανθότριχος ἄνθους, </l>
+				<l n="14">Ἔνυμα * δʼ ἐκ μηδέων θάτερον ἱπποδάμου· </l>
+				<l n="15">Ἡμίσταθμον, ὃ τοῦ πατρὸς ψευδώνυμος, ἔστω </l>
+				<l n="16">Ὃς γῆμαι δμωῆς υἱέϊ δῶκε κόρην· </l>
+				<l n="17">Στῆσον δʼ αὖ ἀλόϊον ἒν ἥμισυ τοῦ προτέροιο </l>
+				<l n="18">Ἄχθος· ἄγε στάχυος Σινδογενοῦς ὀβολόν· </l>
+				<l n="19">Διστάσιος δʼ αὐτῷ πελέτω λίθος εἰαριήτης· </l>
+				<l n="20">Διστάσιον δʼ ἀφροῦ θρύμμα φακουσιακοῦ· </l>
+				<l n="21">Σὺν δὲ τριάκοντα δραχμαῖς ἔτι καὶ δύο μίσγε </l>
+				<l n="22">Ὁλκὰς ἐξ ἄνθους ναμασιπηγὸς ἁλός· </l>
+				<l n="23">Καὶ Ζακορίσου * Μούσαις ἰσάριθμον ὄπισμα </l>
+				<l n="24">Δραχμόθεν ἔστω σοι συγκατακιρνάμενον </l>
+				<l n="25">Τετραμόρῳ κοτύλης, ὃ τιτύσκεται οὐ διὰ χειρῶν <pb
+						facs="poetaebucoliciet00amei_0438"/></l>
+				<l n="26">Ἐν δαπεδοῖς * Bάκτης, ἀλλὰ διὰ στομάτων. </l>
+				<l n="27">Λεῖα δὲ πάντα καθʼ ἓν τρίψας ἀνάμισγε σὺν ὑγροῖς, </l>
+				<l n="28">Τημελέως τʼ ἀπόθου τεῦχος ἐς ἀργύρεον. </l>
+			</div>
+		</body>
+	</text>
+</TEI>
