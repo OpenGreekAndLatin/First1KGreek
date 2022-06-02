@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Fragmenta</title>
+                <author xml:lang="eng">Antiphon of Athens</author>
+                <editor>Hermann Diels</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Sophia Elzie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alessandro Buccheri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Valia Chotou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Domi Couvet</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dimitra Fylaktopoulou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Arnie He</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Elsa Karafyllidi</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Anatasios Koletsis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Theodoros Pazarloglou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Celia Prescott-Decie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dora Profyri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Panagiotis Sotiroudis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zeyu Wen</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>  
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1147.tlg003.1st1K-grc1.xml</idno>
+                <pubPlace />
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2021-08-25"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="deu">Die Fragmente der Vorsokratiker</title>
+                        <editor>Hermann Diels</editor>
+                        <imprint>
+                            <pubPlace>Berlin</pubPlace>
+                            <publisher>Weidmann</publisher>
+                            <date>1922</date>
+                        </imprint>
+                        <biblScope unit="volume">2</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/diefragmentederv02dieluoft/page/292/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment.</p></cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2022-05-13" who="Lisa Cerrato">File markup and header review.</change>
+        </revisionDesc>
+    </teiHeader>
+
+     <text>
+     <body>
+     <div type="edition" n="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" xml:lang="grc">
+     <pb facs="diefragmentederv02dieluoft_0338"/>
+         <head rend="center">ΑΝΤΙΦΩΝΤΟΣ ΑΛΗΘΕΙΑΣ Ᾱ Β̄.</head>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="1">
+     <p rend="indent"><label>1.</label> <label xml:base="mul">[81 a Blass <title>Antiphont.</title> or. p. 130; 99ᵃ Sauppe <title>Oratt. att.</title> II 147]</label> <bibl xml:lang="mul">GAL. in Hipp. de med. off. XVIII B 656 K. nach Kritias c. 81 B 40:</bibl> ὥσπερ καὶ ὁ Ἀ. ἐν τῶι προτέρωι τῆς Ἀληθείας οὕτω λέγων· ταῦτα δὲ γνοὺς εἴσηι ἕν τι οὐδὲν 〈ὂν〉 αὐτῶι οὔτε ὧν ὄψει ὁρᾶι 〈ὁ ὁρῶν〉 μακρότατα οὔτε ὧν γνώμηι γιγνώσκει ὁ μακρότατα γιγνώσκων’. <bibl xml:lang="mul">Dagegen HIPPOCR. de arte 2 [p. 36, 18 Gomp.²].</bibl> δοκεῖ δή μοι τὸ μὲν σύμπαν τέχνη εἶναι οὐδεμία οὐκ ἐοῦσα· καὶ γὰρ ἄλογον τῶν ἐόντων τι ἡγεῖσθαι μὴ ἐόν· ἐπεὶ τῶν γε μὴ ἐόντων τίνα ἄν τις οὐσίην θεησάμενος ἀπαγγείλειεν ὡς ἔστιν; εἰ γὰρ δὴ ἔστι γ’ ἰδεῖν τὰ μὴ ἐόντα ὥσπερ τὰ ἐόντα, οὐκ οἶδ’, ὅπως ἄν τις αὐτὰ νομίσειε μὴ ἐόντα, ἅ γε εἴη καὶ ὀφθαλμοῖσιν ἰδεῖν καὶ γνώμηι νοῆσαι ὡς ἔστιν. ἀλλ’ ὅπως μὴ οὐκ ἦι τοῦτο τοιοῦτον· ἀλλὰ τὰ μὲν ἐόντα αἰεὶ ὁρᾶταί τε καὶ γινώσκεται, τὰ δὲ μὴ ἐόντα οὔτε ὁρᾶται οὔτε γινώσκεται. γινώσκεται τοίνυν, δεδιδαγμένων ἤδη 〈τῶν εἰδέων, ἑκάστη〉 τῶν τεχνέων, καὶ οὐδεμία ἐστὶν ἥ γε ἔκ τινος εἴδεος οὐχ ὁρᾶται. οἶμαι δὲ ἔγωγε καὶ τὰ ὀνόματα αὐτὰς διὰ τὰ εἴδεα λαβεῖν· ἄλογον γὰρ <pb facs="diefragmentederv02dieluoft_0339"/> ἀπὸ τῶν ὀνομάτων ἡγεῖσθαι τὰ εἴδεα βλαστάνειν καὶ ἀδύνατον· τὰ μὲν γὰρ ὀνόματα [φύσεως] νομοθετήματά ἐστιν, τὰ δὲ εἴδεα οὐ νομοθετήματα, ἀλλα βλαστήματα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="2">
+     <p rend="indent"><label>2.</label> <label xml:lang="lat">[81ᵇ B., 99ᵇ S.]</label> <bibl xml:lang="mul">GAL. in Hipp. de med. off. a. O. [nach fr. 1]</bibl> καί· <q>πᾶσι γὰρ ἀνθρώποις ἡ γνώμη τοῦ σώματος ἡγεῖται καὶ εἰς ὑγίειαν καὶ νόσον καὶ εἰς τὰ ἄλλα πάντα.</q></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="3">
+     <p rend="indent"><label>3.</label> <label xml:lang="lat">[102 B., 120 S.]</label> <bibl xml:lang="lat">POLLUX VI 143</bibl> <q>ἀπαρασκεύωι γνώμηι</q> ἐν τοῖς Περὶ ἀληθείας Ἀ. εἶπεν, ἀπαρασκεύαστον δὲ ἐν ταῖς ῥητορικαῖς Τέχναις (δοκοῦσι δ’ οὐ γνήσιαι). <bibl xml:lang="lat">S. A 6. B 93 (II 307, 2 Anm.).</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="4">
+     <p rend="indent"><label>4.</label> <label xml:lang="lat">[86 B., 104 S.]</label> <bibl xml:lang="lat">HARPOCR.</bibl> ἄοπτα: ἀντὶ τοῦ ἀόρατα καὶ οὐκ ὀφθέντα, ἀλλὰ δόξαντα ὁρᾶσθαι Ἀ. Ἀληθείας ᾱ. <bibl xml:lang="lat">Auch POLL. II 58.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="5">
+     <p rend="indent"><label>5.</label> <label xml:lang="lat">[87 B., 105 S.]</label> <bibl>—</bibl> ἀπαθῆ: ἀντὶ τοῦ τὰ μὴ ὡς ἀληθῶς γεγονότα πάθη Ἀ. Ἀληθείας ᾱ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="6">
+     <p rend="indent"><label>6.</label> <label xml:base="lat">[161 B., 165ᵃ S.]</label> <bibl xml:lang="lat">POLL. II 58</bibl> διοπτεύειν Κριτίας <bibl>[81, 53]</bibl> καὶ Ἀ., Ἀ. δὲ καὶ εἴσοπτοι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="7">
+     <p rend="indent"><label>7.</label> <label xml:lang="lat">[174 B., 178 S.]</label> <bibl>— — 57</bibl> Ἀ. δὲ καὶ τὸ ὀψόμενον εἶπε καὶ τῆι ὄψει <bibl xml:lang="lat">[B 1]</bibl> οἷον τοῖς ὀφθαλμοῖς καὶ ὀπτὴρ <bibl xml:lang="lat">[d. Rhamn., d. caed. Her. 27]</bibl> καὶ ἄοπτα <bibl xml:lang="lat">[B 4]</bibl>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="8">
+     <p rend="indent"><label>8.</label> <label xml:lang="lat">[173 B., 177 S.]</label> <bibl>— — 76</bibl> ἡ γὰρ ὀδμὴ καὶ εὐοδμία δοκεῖ μὲν τοῖς πολλοῖς εἶναι καλὰ τὰ ὀνόματα, ἔστι δὲ ποιητικά, ἐν δὲ τοῖς καταλογάδην ἰωνικὰ καὶ αἰολικά· παρὰ μόνωι δ’ Ἀντιφῶντι ὀδμὰς καὶ εὐοδμίαν εὕροι τις ἄν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="9">
+     <p rend="indent"><label>9.</label> <label xml:lang="lat">[105ᵃ B.]</label> <bibl xml:lang="lat">AËT. I 22, 6 (D. 318)</bibl> Ἀ. καὶ Κριτόλαος νόημα ἢ μέτρον τὸν χρόνον, οὐχ ὑπόστασιν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="10">
+     <p rend="indent"><label>10.</label> <label xml:lang="lat">[80 B., 98 S.]</label> <bibl xml:lang="mul">SUID.</bibl> ἀδέητος: ὁ μηδενὸς δεόμενος καὶ πάντα ἔχων. Ἀ. ἐν ᾱ Ἀληθείας· διὰ τοῦτο οὐδενὸς δεῖται οὐδὲ προσδέχεται οὐδενός τι, ἀλλ’ ἄπειρος καὶ ἀδέητος’. <bibl xml:lang="lat">Vgl. HARPOCR. s. v.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="11">
+     <p rend="indent"><label>11.</label> <label xml:lang="lat">[89 B., 107 S.]</label> <bibl xml:lang="mul">HARP.</bibl> δεήσεις: ἀντὶ τοῦ ἐνδείας Ἀ. Αληθείας 30 ᾱ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="12">
+     <p rend="indent"><label>12.</label> <label xml:lang="lat">[98 B., 117 S.]</label> <bibl xml:lang="mul">ORIG. c. Cels. IV 25</bibl> κἂν Δημοσθένης τις οὖν ὁ ῥήτωρ ἦι μετὰ τῆς παραπλησίας ἐκείνωι κακίας καὶ τῶν ἀπὸ κακίας <pb facs="diefragmentederv02dieluoft_0340"/> αὐτῶι πεπραγμένων, κἂν Α. ἄλλος ῥήτωρ νομιζόμενος εἶναι καὶ τὴν πρόνοιαν ἀναιρῶν ἐν τοῖς ἐπιγεγραμμένοις Περὶ ἀληθείας παραπλησίως τῆι Κέλσου ἐπιγραφῆι, οὐδὲν ἧττόν εἰσιν οὗτοι σκώληκες ἐν βορβόρου γωνίαι τοῦ τῆς ἀμαθίας καὶ ἀγνοίας καλινδούμενοι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="13">
+     <p rend="indent"><label>13.</label> <label xml:lang="lat">[103 B.]</label> <bibl xml:lang="mul">ARIST. phys. A 1. 185ᵃ 14</bibl> ἅμα δ’ οὐδὲ λύειν ἅπαντα προσήκει, ἀλλ’ ἢ ὅσα ἐκ τῶν ἀρχῶν τις ἐπιδεικνὺς ψεύδεται, ὅσα δὲ μή, οὔ· οἷον τὸν τετραγωνισμὸν τὸν μὲν διὰ τῶν τμημάτων γεωμετρικοῦ διαλῦσαι, τὸν δ’ Ἀντιφῶντος οὐ γεωμετρικοῦ. <bibl xml:lang="lat">Vgl. soph. el. 11. 172ᵃ 7.</bibl> <bibl xml:lang="lat">SIMPL. phys. 54, 12</bibl> τὸν γὰρ τετραγωνισμὸν τοῦ κύκλου πολλῶν ζητούντων (τοῦτο δὲ ἦν τὸ κύκλωι ἴσον τετράγωνον θέσθαι) καὶ Ἀ. ἐνόμισεν εὑρίσκειν καὶ Ἱπποκράτης ὁ Χῖος <bibl xml:lang="lat">[c. 30, 3]</bibl> ψευσθέντες. ἀλλὰ τὸ μὲν Ἀντιφῶντος ψεῦδος διὰ τὸ μὴ ἀπὸ γεωμετρικῶν ἀρχῶν ὡρμῆσθαι, ὡς μαθησόμεθα, οὐκ ἔστι γεωμετρικοῦ λύειν ... </p>
+         <p rend="indent">ὁ δὲ Ἀ. γράψας κύκλον ἐνέγραψέ τι χωρίον εἰς αὐτὸν πολύγωνον τῶν ἐγγράφεσθαι δυναμένων. ἔστω δὲ εἰ τύχοι τετράγωνον τὸ <figure/> ἐγγεγραμμένον. ἔπειτα ἑκάστην τῶν τοῦ τετραγώνου πλευρῶν δίχα τέμνων ἀπὸ τῆς τομῆς ἐπὶ τὰς περιφερείας πρὸς ὀρθὰς ἦγε γραμμάς, αἳ δηλονότι δίχα ἔτεμνον ἑκάστη τὸ καθ’ αὑτὴν τμῆμα τοῦ κύκλου. ἔπειτα ἀπὸ τῆς τομῆς ἐπεζεύγνυεν ἐπὶ τὰ πέρατα τῶν γραμμῶν τοῦ τετραγώνου εὐθείας, ὡς γίνεσθαι τέτταρα τρίγωνα τὰ ἀπὸ τῶν εὐθειῶν, τὸ δὲ ὅλον σχῆμα τὸ ἐγγεγραμμένον ὀκτάγωνον. καὶ οὕτως πάλιν κατὰ τὴν αὐτὴν μέθοδον, ἑκάστην τῶν τοῦ ὀκταγώνου πλευρῶν δίχα τέμνων ἀπὸ τῆς τομῆς ἐπὶ τὴν περιφέρειαν πρὸς ὀρθὰς ἄγων καὶ ἐπιζευγνὺς ἀπὸ τῶν σημείων, καθ’ ἃ αἱ πρὸς ὀρθὰς ἀχθεῖσαι ἐφήπτοντο τῶν περιφερειῶν, εὐθείας ἐπὶ τὰ πέρατα τῶν διηιρημένων εὐθειῶν, ἑκκαιδεκάγωνον ἐποίει τὸ ἐγγραφόμενον. καὶ κατὰ τὸν αὐτὸν πάλιν λόγον τέμνων τὰς πλευρὰς τοῦ ἑκκαιδεκαγώνου τοῦ ἐγγεγραμμένου καὶ ἐπιζευγνὺς εὐθείας καὶ διπλασιάζων τὸ ἐγγραφόμενον πολύγωνον καὶ τοῦτο ἀεὶ ποιῶν ὤιετό ποτε δαπανωμένου τοῦ ἐπιπέδου ἐγγραφήσεσθαί τι πολύγωνον τούτωι τῶι τρόπωι ἐν τῶι κύκλωι, οὗ αἱ πλευραὶ διὰ σμικρότητα ἐφαρμόσουσι τῆι τοῦ <pb facs="diefragmentederv02dieluoft_0341"/> κύκλου περιφερείαι. παντὶ δὲ πολυγώνωι ἴσον τετράγωνον δυνάμενοι θέσθαι, ὡς ἐν τοῖς Στοιχείοις <bibl xml:lang="mul">[Eukl. II 14]</bibl> παρελάβομεν, διὰ τὸ ἴσον ὑποκεῖσθαι τὸ πολύγωνον τῶι κύκλωι ἐφαρμόζον αὐτῶι, ἐσόμεθα καὶ κύκλωι ἴσον τιθέντες τετράγωνον. <bibl xml:lang="lat">THEMIST. phys. 4, 2</bibl> πρὸς Ἀντιφῶντα δὲ οὐκέτ’ ἂν ἔχοι λέγειν ὁ γεωμέτρης, ὃς ἐγγράφων τρίγωνον ἰσόπλευρον εἰς τὸν κύκλον καὶ ἐφ’ ἑκάστης τῶν πλευρῶν ἕτερον ἰσοσκελὲς συνιστὰς πρὸς τῆι περιφερείαι τοῦ κύκλου καὶ τοῦτο ἐφεξῆς ποιῶν ὤιετό ποτε ἐφαρμόσειν τοῦ τελευταίου τριγώνου τὴν πλευρὰν εὐθεῖαν οὖσαν τῆι περιφερείαι. τοῦτο δὲ ἦν 〈τοῦ〉 τὴν ἐπ’ ἄπειρον τομὴν ἀναιροῦντος, ἣν ὑπόθεσιν ὁ γεωμέτρης λαμβάνει.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="14">
+     <p rend="indent"><label>14.</label> <label xml:lang="lat">[82 B., 100 S.]</label> <bibl xml:lang="mul">HARP.</bibl> διάθεσις: ... καὶ γὰρ τὸ ῥῆμα διαθέσθαι λέγουσιν ἐπὶ τοῦ διοικῆσαι. Ἀ. Ἀληθείας ᾱ· γυμνωθεῖσα δὲ ἀφορμῆς πολλὰ ἂν καὶ καλὰ κακῶς διαθεῖτο.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="15">
+         <p rend="indent"><label>15.</label> <label xml:lang="lat">[83 B., 101 S.]</label> <bibl>—</bibl> ἔμβιος: Ἀ. Ἀληθείας ᾱ· <q>καὶ ἡ σηπεδὼν ... ἔμβιος γένοιτο</q> ἀντὶ τοῦ <q>ἐν τῶι ζῆν</q>, τουτέστι <q>Ζήσειε καὶ μὴ ξηρανθείη μηδ’ ἀποθάνοι</q>. <bibl xml:lang="mul">ARIST. phys. B 1. 193ᵃ 9</bibl> δοκεῖ δ’ ἡ φύσις καὶ ἡ οὐσία τῶν φύσει ὄντων ἐνίοις εἶναι τὸ πρῶτον ἐνυπάρχον ἑκάστωι ἀρρύθμιστον καθ’ ἑαυτό, οἷον κλίνης φύσις τὸ ξύλον, ἀνδριάντος δ’ ὁ χαλκός. σημεῖον δέ φησιν Ἀ. ὅτι εἴ τις κατορύξειε κλίνην καὶ λάβοι δύναμιν ἡ σηπεδὼν ὥστε ἀνεῖναι βλαστόν, οὐκ ἂν γενέσθαι κλίνην ἀλλὰ ξύλον, ὡς τὸ μὲν κατὰ συμβεβηκὸς ὑπάρχον, τὴν κατὰ νόμον διάθεσιν καὶ τὴν τέχνην, τὴν δ’ οὐσίαν οὖσαν ἐκείνην ἣ καὶ διαμένει ταῦτα πάσχουσα συνεχῶς.</p>
+         <p rend="indent">εἴ τις κατορύξειε κλίνην καὶ ἡ σηπεδὼν τοῦ ξύλου ἔμβιος γένοιτο, οὐκ ἂν γένοιτο κλίνη, ἀλλὰ ξύλον.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="16">
+         <p rend="indent"><label>16.</label> <label xml:lang="lat">[156 B., 160 S.]</label> <bibl xml:lang="lat">AN. BEKK. Lex. VI p. 470, 25</bibl> ἀφήκοντος: Ἀ. ἀντὶ τοῦ διήκοντος.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="17">
+         <p rend="indent"><label>17.</label> <label xml:lang="lat">[88 B., 106 S.]</label> <bibl xml:lang="lat"> — — p. 472, 14</bibl> Ἀφροδίτης: ἀντὶ τοῦ ἀφροδισίων. οὕτως Ἀ. ἐν Ἀληθείας πρώτωι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="18">
+         <p rend="indent"><label>18.</label> <label xml:lang="lat">[84 B. 102 S.]</label> <bibl xml:lang="mul">HARPOCR.</bibl> ἀναποδιζόμενα: ἀντὶ τοῦ 〈πάλιν〉 ἐξεταζόμενα ἢ ἀντὶ τοῦ ἄνωθεν τὰ αὐτὰ πολλάκις λεγόμενα ἢ πραττόμενα Ἀ. Ἀληθείας ᾱ. <bibl xml:lang="lat">Vgl. Poll. II 196.</bibl></p></div><pb facs="diefragmentederv02dieluoft_0342"/>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="19">
+         <p rend="indent"><label>19.</label> <label xml:lang="lat">[85 B., 103 S.]</label> <bibl xml:lang="mul">HARPOCR.</bibl> ἀνήκει: παρ’ Ἀ—τι Ἀληθείας ᾱ ἀντὶ τοῦ ἁπλοῦ ἥκει ἢ οἷον ἀνεβιβάσθη καὶ προελήλυθεν. <bibl xml:lang="lat">AN. BEKK. VI 403, 5</bibl> Ἀ. μὲν ἀντὶ τοῦ καθήκει.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="20">
+         <p rend="indent"><label>20.</label> <label xml:lang="lat">[90 B., 108 S.]</label> <bibl>—</bibl> ἐπαλλάξεις: ἀντὶ τοῦ συναλλαγὰς ἢ μίξεις Ἀ. Ἀληθείας ᾱ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="21">
+     <p rend="indent"><label>21.</label> <label xml:lang="lat">[91 B., 109 S.]</label> <bibl>—</bibl> ὀριγνηθῆναι: ἀντὶ τοῦ ἐπιθυμῆσαι Ἀ. Ἀληθείας ᾱ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="22">
+     <p rend="indent"><label>22.</label> <label xml:lang="lat">[97 B., 116 S.]</label> <bibl xml:lang="mul">HARPOCR. [vgl. PHOT. A Reitzenst. 37, 18]</bibl> ἀειεστώ· Ἀ. ἐν Ἀληθείας δευτέρωι τὴν ἀιδιότητα καὶ τὸ ἐπὶ τῶν αὐτῶν ἀεὶ ἑστάναι, ὥσπερ καὶ εὐεστὼ ἡ εὐδαιμονία καλεῖται <bibl xml:lang="lat">[vgl. 55 A 167, B 4]</bibl>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="23">
+     <p rend="indent"><label>23.</label> <label xml:lang="lat">[94 B., 113 S.]</label> <bibl>—</bibl> διάστασις· Ἀ. Ἀληθείας β̄. <q>περὶ τῆς νῦν κρατούσης διαστάσεως</q> ἀντὶ τοῦ διακοσμήσεως τῶν ὅλων.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="24">
+     <p rend="indent"><label>24.</label> <label xml:lang="lat">[144 B., 147 S.]</label> <bibl>—</bibl> ἀδιάστατον: τὸ μήπω διεστηκὸς μηδὲ διακεκριμένον Ἀ. εἶπεν. <bibl xml:lang="mul">PHOT. A p. 31, 17 Reitz.</bibl> ἀδιάστατον: ὡς Ἀ. <q>καὶ τὸ οἰκοδόμημα ἀδιάστατον</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="24a">
+     <p rend="indent"><label xml:lang="lat">24ᵃ.</label> <label xml:lang="lat">[160 B., 165 S.]</label> <bibl xml:lang="mul">SUID.</bibl> διάθεσις: ... Ἀ. δὲ τῆι διαθέσει ἐχρήσατο ἐπὶ γνώμης ἢ διανοίας· ὁ αὐτὸς καὶ ἐπὶ τοῦ διαθεῖναι λόγον τουτέστιν ἐπὶ τοῦ ἐξαγγεῖλαί τι. ἐν τῶι δευτέρωι τῆς Ἀληθείας ὁ αὐτὸς κέχρηται καὶ ἐπὶ τῆς διακοσμήσεως. <bibl xml:lang="lat">[Vgl. B 23]</bibl>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="25">
+     <p rend="indent"><label>25.</label> <label xml:lang="lat">[95 B., 114 S.]</label> <bibl xml:lang="mul">HARP.</bibl> δίνωι: ἀντὶ τοῦ δινήσει Ἀ. Ἀληθείας β̄.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="26">
+     <p rend="indent"><label>26.</label> <label xml:lang="lat">[103ᵃ B.]</label> <bibl xml:lang="lat">AËT. II 20, 15 (D. 351)</bibl> (περὶ οὐσίας ἡλίου) Ἀ. πῦρ ἐπινεμόμενον μὲν τὸν περὶ τὴν γῆν ὑγρὸν ἀέρα, ἀνατολὰς δὲ καὶ δύσεις ποιούμενον τῶι τὸν μὲν ἐπικαιόμενον ἀεὶ προλείπειν, τοῦ δ’ ὑπονοτιζομένου πάλιν ἀντέχεσθαι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="27">
+         <p rend="indent"><label>27.</label> <label xml:lang="lat">[104ᵃ B., 121 S.]</label> — II 28, 4 (D. 358) Ἀ. ἰδιοφεγγῆ μὲν τὴν σελήνην, τὸ δὲ ἀποκρυπτόμενον περὶ αὐτὴν ὑπὸ τῆς προσβολῆς τοῦ ἡλίου ἀμαυροῦσθαι, πεφυκότος τοῦ ἰσχυροτέρου πυρὸς τὸ ἀσθενέστερον ἀμαυροῦν· ὃ δὴ συμβαίνειν καὶ περὶ τὰ ἄλλα ἄστρα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="28">
+         <p rend="indent"><label>28.</label> <label xml:lang="lat">[104ᵇ B.]</label> — II 29, 3 (D. 359) (περὶ ἐκλείψεως σελήνης) Ἀλκμαίων [14 A 4], Ἡράκλειτος [12 A 12], Ἀ. κατὰ τὴν τοῦ σκαφοειδοῦς στροφὴν καὶ τὰς περικλίσεις.</p></div><pb facs="diefragmentederv02dieluoft_0343"/>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="29">
+         <p rend="indent"><label>29.</label> <label xml:lang="lat">[92 B., 110 S.]</label> GAL. in Epid. III 32 [XVII A 691 K.] οὕτω δὲ καὶ παρ’ Ἀντιφῶντι κατὰ τὸ δεύτερον τῆς Ἀληθείας ἔστιν εὑρεῖν γεγραμμένην τὴν προσηγορίαν [<foreign xml:lang="deu">näml.</foreign> εἰλούμενον] ἐν τῆιδε τῆι ῥήσει <foreign xml:lang="deu">[Entstehung des Hagels]</foreign>· <q>ὅταν οὖν γένωνται ἐν τῶι ἀέρι ὄμβροι τε καὶ πνεύματα ὑπεναντία ἀλλήλοις, τότε συστρέφεται τὸ ὕδωρ καὶ πυκνοῦται κατὰ πολλά· ὅτι δ’ ἂν τῶν ξυμπιπτόντων κρατηθῆι, τοῦτ’ ἐπυκνώθη καὶ συνεστράφη ὑπό τε τοῦ πνεύματος εἰλούμενον καὶ ὑπὸ τῆς βίας</q>. καὶ γὰρ καὶ οὗτος τὸ κατακλειόμενον ἢ συνειλούμενον εἰς ἑαυτὸ φαίνεται δηλῶν διὰ τῆς εἰλούμενον φωνῆς.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="30">
+         <p rend="indent"><label>30.</label> <label xml:lang="lat">[93ᵃ B., 111ᵃ S.]</label> <bibl xml:lang="lat">HARP.</bibl> γρυπάνιον: Ἀ. Ἀληθείας β̄· <q>καῖον γὰρ τὴν γῆν καὶ συντῆκον γρυπάνιον ποιεῖ</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="31">
+         <p rend="indent"><label>31.</label> <label xml:lang="lat">[93ᵇ B., 111ᵇ S.]</label> <bibl xml:lang="lat">ETYM. GEN.</bibl> γρυπανίζειν: σείεσθαι τὴν γῆν παλλομένην καὶ ὥσπερ ῥυσοῦσθαι ἀπὸ σεισμοῦ· οὕτως Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="32">
+         <p rend="indent"><label>32.</label> <label xml:lang="lat">[105 B.]</label> <bibl xml:lang="lat">AËT. III 16, 4</bibl> (<bibl xml:lang="lat">D. 381</bibl> περὶ θαλάσσης πῶς συνέστη καὶ πῶς ἐστι πικρά) Ἀ. ἱδρῶτα τοῦ 〈πρώτου ὑγροῦ ἐξατμισθέντος ὑπὸ τοῦ〉 θερμοῦ, ἐξ οὗ τὸ περιλειφθὲν ὑγρὸν ἀπεκρίθη 〈καὶ θάλασσα ἐπωνομάσθη〉 τῶι καθεψηθῆναι παραλυκίσασα, ὅπερ’ ἐπὶ παντὸς ἱδρῶτος συμβαίνει.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="33">
+         <p rend="indent"><label>33.</label> <label xml:lang="lat">[96 B., 115 S.]</label> <bibl xml:lang="lat">HARP.</bibl> πεφοριῶσθαι: . . . ὅτι γὰρ καὶ ἐπ’ ἀνθρώπων τάσσουσι τὴν φορίνην, δῆλον ποιεῖ Ἀ. ἐν β̄ Ἀληθείας.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="34">
+         <p rend="indent"><label>34.</label> <label xml:lang="lat">[p. 150 n. B.]</label> <bibl xml:lang="lat">POLL. II 41</bibl> κεφαλαλγία καὶ καρηβαρία . . . καὶ καρηβαρικὸν ποτὸν ἢ βρῶμα. τὸ δὲ τοῦτο ποιεῖν καροῦν Ἀ. φησίν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="35">
+         <p rend="indent"><label>35.</label> <label xml:lang="lat">[p. 150 n. B.]</label> <bibl xml:lang="lat">— II 215</bibl> ἔναιμον, καὶ ἐναιμῶδες παρὰ Ἀντιφῶντι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="36">
+         <p rend="indent"><label>36.</label> <label xml:lang="lat">[p. 150 n. B.]</label> <bibl xml:lang="mul">— II 223 [I 151, 12 Bethe]</bibl> καὶ Ἀ. δ’ εἴρηκεν. <q>ἐν ὧι τὸ ἔμβρυον αὐξάνεταί τε καὶ τρέφεται, καλεῖται χόριον</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="37">
+         <p rend="indent"><label>37.</label> <label xml:lang="lat">[a. o. B.]</label> <bibl xml:lang="lat">— II 224</bibl> ἐπίπλους ὀνομάζεται· Ἀ. δ’ αὐτὸν καὶ ἀρρενικῶς καὶ οὐδετέρως καλεῖ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="38">
+         <p rend="indent"><label>38.</label> <label xml:lang="lat">[148 B., 151 S.]</label> <bibl xml:lang="lat">— II 7</bibl> καὶ ἄμβλωσις ὡς Λυσίας <bibl xml:lang="lat">[fr. 24 S.]</bibl> καὶ ἄμβλωμα ὡς Ἀ.</p></div><pb facs="diefragmentederv02dieluoft_0344"/>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="39">
+     <p rend="indent"><label>39.</label> <label xml:lang="lat">[101 B.]</label> <bibl xml:lang="lat">POLL. II 61</bibl> Ἀ. δ’ ἐν τοῖς Περὶ ἀληθείας καὶ ἀνάπηρα εἴρηκεν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="40">
+         <p rend="indent"><label>40.</label> <label xml:lang="lat">[158 B., 162 S.]</label> <bibl xml:lang="lat">POLL. VII 169</bibl> Ἀ. βάψιν χαλκοῦ καὶ σιδήρου.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="41">
+         <p rend="indent"><label>41.</label> <label xml:lang="lat">[159 B., 163 S.]</label> <bibl xml:lang="lat">— VII 189</bibl> ἀμήχανοι, ἀμηχανία, βιομήχανοι ὡς Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="42">
+         <p rend="indent"><label>42.</label> <label xml:lang="lat">[179 B., 183 S.]</label> <bibl xml:lang="lat">— IX 53</bibl> ἡ μὲν γὰρ Ἀ—τος ταλάντωσις τὸ βάρος δηλοῖ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="43">
+         <p rend="indent"><label>43.</label> <label xml:lang="lat">[100 B., 119 S.]</label> <bibl xml:lang="lat">HARP.</bibl> ἄβιος: τὸν ἄβιον Ἀ. ἐπὶ τοῦ πολὺν βίον κεκτημένου ἔταξεν, ὡς Ὅμηρος <bibl>(Λ 155)</bibl> ἄξυλον ὕλην λέγει τὴν πολύξυλον. <bibl xml:lang="lat">HES.</bibl> ἄβιος: πλούσιος ὡς Ἀ. ἐν Ἀληθείαι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="44">
+         <p rend="indent"><label>44.</label> <label xml:lang="lat">[99 B., 118 S.]</label> <bibl>—</bibl> ἄγει: Ἀ. δ’ ἐν τῶι Περὶ Ἀληθείας φησί <q>τοὺς νόμους μεγάλους ἄγοι</q> ἀντὶ τοῦ <q>ἡγοῖτο</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="44a">
+         <head rend="center">ΠΕΡΙ ΟΜΟΝΟΙΑΣ.</head>
+     <p rend="indent"><label xml:lang="lat">44ᵃ.</label> <bibl xml:lang="lat">PHILOSTR. V. Soph. I 15, 4</bibl> λόγοι δ’ αὐτοῦ δικανικοὶ μὲν πλείους, ἐν οἷς ἡ δεινότης καὶ πᾶν τὸ ἐκ τέχνης ἔγκειται, σοφιστικοὶ δὲ καὶ ἕτεροι μέν, σοφιστικώτατος δὲ ὁ Ὑπὲρ τῆς ὁμονοίας, ἐν ὧι γνωμολογίαι τε λαμπραὶ καὶ φιλόσοφοι σεμνή τε ἀπαγγελία καὶ ἐπηνθισμένη ποιητικοῖς ὀνόμασι καὶ τὰ ἀποτάδην ἑρμηνευόμενα παραπλήσια τῶν πεδίων τοῖς λείοις. <bibl xml:lang="mul">Zum Titel vgl. IAMBL. ep. Περὶ ὁμονοίας [Stob. II 33, 15]</bibl> ἡ ὁμόνοια, καθάπερ αὐτὸ τὸ ὄνομα βούλεται ἐνδείκνυσθαι, συναγωγὴν ὁμοίου τοῦ νοῦ κοινωνίαν τε καὶ ἕνωσιν ἐν ἑαυτῆι συνείληφεν· ἀφορμηθεῖσα δὴ οὖν ἐντεῦθεν ἐπὶ πόλεις καὶ οἴκους κοινούς τε συλλόγους πάντας καὶ ἰδίους [οἴκους], φύσεις τε καὶ συγγενείας πάσας ἐπιπορεύεται κοινάς τε καὶ ἰδίας ὡσαύτως· ἔτι δὲ περιέχει καὶ τὴν ἑνὸς ἑκάστου πρὸς ἑαυτὸν ὁμογνωμοσύνην· ὑφ’ ἑνὸς μὲν γάρ τις νοήματος καὶ μιᾶς γνώμης κυβερνώμενος ὁμονοεῖ πρὸς ἑαυτόν, διχογνωμονῶν δὲ πρὸς ἑαυτὸν καὶ ἀνόμοια λογιζόμενος διαστασιάζει· καὶ ὁ μὲν ἐπὶ τῆς ἀεὶ αὐτῆς ἐπιμένων διανοήσεως ὁμοφροσύνης ἐστὶ πλήρης· ὁ δὲ ἄστατος τοῖς λογισμοῖς καὶ ἄλλοτε ὑπ’ ἄλλης δόξης φερόμενος ἀστάθμητός ἐστι καὶ πολέμιος πρὸς <pb facs="diefragmentederv02dieluoft_0345"/> ἑαυτόν. <bibl xml:lang="mul">S. Demokr. 55 B 250. 255 (II 110, 9. 112, 2).</bibl> <bibl xml:lang="lat">Isocr. 7, 31-35.</bibl> <bibl xml:lang="grc">Arist. Eth. N. Θ 1. 1155ᵃ 22.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="45">
+         <p rend="indent"><label>45.</label> <label xml:lang="lat">[117 B., 95 S.]</label> <bibl xml:lang="lat">HARPOCRAT.</bibl> Σκιάποδες: Ἀ. ἐν τῶι Περὶ ὁμονοίας. ἔθνος ἐστὶ Λιβυκόν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="46">
+         <p rend="indent"><label>46.</label> <label xml:lang="lat">[116 B., 94 S.]</label> <bibl>—</bibl> Μακροκέφαλοι: Ἀ. ἐν τῶι Περὶ ὁμονοίας. ἔθνος ἐστὶν οὕτω καλούμενον.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="47">
+         <p rend="indent"><label>47.</label> <label xml:lang="lat">[118 B., 96 S.]</label> <bibl>—</bibl> ὑπὸ γῆν οἰκοῦντες (λέγοι ἂν τοὺς ὑπὸ Σκύλακος ἐν τῶι Περίπλωι <bibl xml:lang="mul">[fr. 2 Issberner p. 5] </bibl>λεγομένους Τρωγλοδύτας καὶ τοὺς ὑπὸ Ἡσιόδου ἐν γ̄ Καταλόγου <bibl xml:lang="mul">[fr. 60 Rz.]</bibl> Κατουδαίους ὀνομαζομένους): Ἀ. ἐν τῶι Περὶ ὁμονοίας.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="48">
+         <p rend="indent"><label>48.</label> <label xml:lang="lat">[108 B., 86 S.]</label> <bibl xml:lang="lat">PHOT.</bibl> θεειδέστατον: θεοῦ ἰδέαν ἔχον. εἶπε δὲ Ἀ. ἐν τῶι Περὶ ὁμονοίας οὕτως· <q>ἄνθρωπος, ὅς φησι πάντων θηρίων θεειδέστατον γενέσθαι</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="49">
+         <p rend="indent"><label>49.</label> <label xml:lang="lat">[131 B., 130 S.]</label> <bibl xml:lang="lat">STOB. IV 22, II, 66 [vgl. III 6, 45]</bibl> H. Ἀντιφῶντος. φέρε δὴ προελθέτω ὁ βίος εἰς τὸ πρόσθεν καὶ γάμων καὶ γυναικὸς ἐπιθυμησάτω. αὕτη ἡ ἡμέρα, αὕτη ἡ νὺξ καινοῦ δαίμονος ἄρχει, καινοῦ· πότμου. μέγας γὰρ ἀγὼν γάμος ἀνθρώπωι. εἰ γὰρ τύχοι μὴ ἐπιτηδεία γενομένη, τί χρὴ τῆι συμφορᾶι χρῆσθαι; χαλεπαὶ μὲν ἐκπομπαί, τοὺς φίλους ἐχθροὺς ποιῆσαι, ἴσα φρονοῦντας ἴσα πνέοντας, ἀξιώσαντα καὶ ἀξιωθέντα· χαλεπὸν δὲ καὶ ἐκτῆσθαι κτῆμα τοιοῦτον, δοκοῦντα ἡδονὰς κτᾶσθαι λύπας ἄγεσθαι. φέρε δή, μὴ τὰ <pb facs="diefragmentederv02dieluoft_0346"/> παλίγκοτα λέγωμεν, λεγέσθω τὰ πάντων ἐπιτηδειότατα. τί γὰρ ἥδιον ἀνθρώπωι γυναικὸς καταθυμίας; τί δὲ γλυκύτερον ἄλλως τε καὶ νέωι; ἐν τῶι αὐτῶι δέ γε τούτωι, ἔνθα τὸ ἡδύ, ἔνεστι πλησίον που καὶ τὸ λυπηρόν· αἱ γὰρ ἡδοναὶ οὐκ ἐπὶ σφῶν αὐτῶν ἐμπορεύονται, ἀλλ’ ἀκολουθοῦσιν αὐταῖς λῦπαι καὶ πόνοι. ἐπεὶ καὶ ὀλυμπιονῖκαι καὶ πυθιονῖκαι καὶ οἱ τοιοῦτοι ἀγῶνες καὶ σοφίαι καὶ πᾶσαι ἡδοναὶ ἐκ μεγάλων λυπημάτων ἐθέλουσι παραγίνεσθαι· τιμαὶ γάρ, ἆθλα, δελέατα, ἃ ὁ θεὸς ἔδωκεν ἀνθρώποις, μεγάλων πόνων καὶ ἱδρώτων εἰς ἀνάγκας καθιστᾶσιν. ἐγὼ γάρ, εἴ μοι γένοιτο σῶμα ἕτερον τοιοῦτον 〈ἐπιμελὲς ὂν〉 οἷον ἐγὼ ἐμαυτῶι, οὐκ ἂν δυναίμην ζῆν, οὕτως ἐμαυτῶι πολλὰ πράγματα παρέχων ὑπέρ τε τῆς ὑγιείας τοῦ σώματος ὑπέρ τε τοῦ καθ’ ἡμέραν βίου ἐς τὴν ξυλλογὴν ὑπέρ τε δόξης καὶ σωφροσύνης καὶ εὐκλείας καὶ τοῦ εὖ ἀκούειν. τί οὖν, εἴ γυνὴ γένοιτο σῶμα ἕτερον τοιοῦτον, ὅ γέ μοι οὕτως ἐπιμελὲς εἴη; οὐκ οὖν δῆλον, ὅτι γυνὴ ἀνδρί, ἐὰν ἦι καταθυμία, οὐδὲν ἐλάττους τὰς φιλότητας παρέχεται καὶ τὰς ὀδύνας ἢ αὐτὸς αὑτῶι ὑπέρ τε τῆς ὑγιείας δισσῶν σωμάτων ὑπέρ τε τοῦ βίου τῆς συλλογῆς [καὶ] ὑπέρ τε τῆς σωφροσύνης καὶ τῆς εὐκλείας; φέρε δὴ καὶ παῖδες γενέσθωσαν· φροντίδων ἤδη πάντα πλέα καὶ ἐξοίχεται τὸ νεοτήσιον σκίρτημα ἐκ τῆς γνώμης καὶ 〈τὸ〉 πρόσωπον οὐκέτι τὸ αὐτό.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="50">
+         <p rend="indent"><label>50.</label> <label xml:lang="lat">[133 B., 132 S.]</label> <bibl xml:lang="lat">STOB. IV 34, 63</bibl> Ἀ—τος. τὸ ζῆν ἔοικε φρουρᾶι ἐφημέρωι τό τε μῆκος τοῦ βίου ἡμέραι μιᾶι, ὡς ἔπος <pb facs="diefragmentederv02dieluoft_0347"/> εἰπεῖν, ἧι ἀναβλέψαντες πρὸς τὸ φῶς παρεγγυῶμεν τοῖς ἐπιγιγνομένοις ἑτέροις.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="51">
+         <p rend="indent"><label>51.</label> <label xml:lang="lat">[132 B., 131 S.]</label> <bibl xml:lang="lat">STOB. IV 34, 56</bibl> Ἀ—τος. εὐκατηγόρητος πᾶς ὁ βίος θαυμαστῶς, ὦ μακάριε, καὶ οὐδὲν ἔχων περιττὸν οὐδὲ μέγα καὶ σεμνόν, ἀλλὰ πάντα σμικρὰ καὶ ἀσθενῆ καὶ ὀλιγοχρόνια καὶ ἀναμεμειγμένα λύπαις μεγάλαις.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="52">
+         <p rend="indent"><label>52.</label> <label xml:lang="lat">[106 B., 84 S.]</label> <bibl xml:lang="lat">HARP.</bibl> ἀναθέσθαι: Ἀ. Περὶ ὁμονοίας· <q>ἀναθέσθαι δὲ ὥσπερ πεττὸν τὸν βίον οὐκ ἔστιν</q> ἀντὶ τοῦ ἄνωθεν βιῶναι μετανοήσαντας ἐπὶ τῶι προτέρωι βίωι. εἴρηται δὲ ἐκ μεταφορᾶς τῶν πεττευομένων.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="53">
+         <p rend="indent"><label>53.</label> <label xml:lang="lat">[126 B., S.]</label> <bibl xml:lang="lat">STOB. III 10, 39</bibl> Ἀ—τος. οἱ δὲ ἐργαζόμενοι μὲν καὶ φειδόμενοι καὶ ταλαιπωροῦντες καὶ προστιθέντες ἥδονται οἷα δή τις ἂν εἰκάσειεν ἥδεσθαι. ἀφαιροῦντες δὲ καὶ χρώμενοι ἀλγοῦσιν ὥσπερ ἀπὸ τῶν σαρκῶν ἀφαιρούμενοι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="53a">
+         <p rend="indent"><label xml:lang="lat">53ᵃ.</label> <label xml:lang="lat">[127 B., S.]</label> <bibl> — —16, 20</bibl> Ἀ—τος. εἰσί τινες οἳ τὸν παρόντα μὲν βίον οὐ ζῶσιν, ἀλλὰ παρασκευάζονται πολλῆι σπουδῆι ὡς ἕτερόν τινα βίον βιωσόμενοι, οὐ τὸν παρόντα· καὶ ἐν τούτωι παραλειπόμενος ὁ χρόνος οἴχεται.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="54">
+         <p rend="indent"><label>54.</label> <label xml:lang="lat">[128 B., S.]</label> <bibl xml:lang="lat">— — 16, 30 [vgl. IV 40, 19]</bibl> Ἀ—τος. ἔστι δέ τις λόγος, ὡς ἄρα ἰδὼν ἀνὴρ ἄνδρα ἕτερον ἀργύριον ἀναιρούμενον πολὺ ἐδεῖτό οἱ δανεῖσαι ἐπὶ τόκωι· ὁ δ’ οὐκ ἠθέλησεν, ἀλλ’ ἦν οἷος ἀπιστεῖν τε καὶ μὴ ὠφελεῖν μηδένα, φέρων δ’ ἀπέθετο ὅποι δή· καί τις καταμαθὼν τοῦτο ποιοῦντα ὑφείλετο· ὑστέρωι δὲ χρόνωι ἐλθὼν οὐχ εὕρισκε τὰ χρήματα ὁ καταθέμενος. περιαλγῶν οὖν τῆι συμφορᾶι τά τε ἄλλα καὶ ὅτι οὐκ ἔχρησε τῶι δεομένωι, ὃ ἂν αὐτῶι καὶ σῶιον ἦν καὶ ἕτερον προσέφερεν, ἀπαντήσας δὲ τῶι ἀνδρὶ <pb facs="diefragmentederv02dieluoft_0348"/> τῶ: τότε δανειζομένωι ἀπωλοφύρετο τὴν συμφοράν, ὅτι ἐξήμαρτε καὶ ὅτι οἱ μεταμέλει οὐ χαρισαμένωι, ἀλλ’ ἀχαριστήσαντι, ὡς πάντως οἱ ἀπολόμενον τὸ ἀργύριον. ὁ δ’ αὐτὸν ἐκέλευε μὴ φροντίζειν, ἀλλὰ νομίζειν αὑτῶι εἶναι καὶ μὴ ἀπολωλέναι, καταθέμενον λίθον εἰς τὸ αὐτὸ χωρίον. <q>πάντως γὰρ οὐδ’ ὅτε ἦν σοι, ἐχρῶ αὐτῶι, ὅθεν μηδὲ νῦν νόμιζε στέρεσθαι μηδενός.</q> ὅτωι γάρ τις μὴ ἐχρήσατο μηδὲ χρήσεται, ὄντος ἢ μὴ ὄντος αὐτῶι οὐδὲν οὔτε πλέον οὔτε ἔλασσον βλάπτεται. ὅτωι γὰρ ὁ θεὸς μὴ παντελῶς βούλεται ἀγαθὰ διδόναι ἀνδρί, χρημάτων πλοῦτον παρασχών, τοῦ καλῶς φρονεῖν 〈δὲ〉 πένητα ποιήσας, τὸ ἕτερον ἀφελόμενος ἀμφοτέρων ἀπεστέρησεν. <bibl xml:lang="lat">Vgl. AESOP. Fab. 412. 412ᵇ H.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="55">
+         <p rend="indent"><label>55.</label> <label xml:lang="lat">[110 B., 88 S.]</label> <bibl xml:lang="lat">PHOT.</bibl> ἵνα: ὅπου. Ἀ. ἐν τῶι Περὶ τῆς ὁμονοίας· <q>ὀκνεῖν ἵνα οὐδὲν ἔργον ὀκνεῖν.</q></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="56">
+         <p rend="indent"><label>56.</label> <label xml:lang="lat">[139 B., 138 S.]</label> <bibl xml:lang="lat">SUID.</bibl> ὀκνῶ: ... καὶ οἱ ῥήτορες οὐκ ἐπὶ δειλίας καὶ ῥαιθυμίας ἐχρήσαντο τῶι ὀνόματι, ἀλλ’ ἐπὶ τοῦ φόβου καὶ τοῦ φοβεῖσθαι. Ἀ.· <q>κακὸς δ’ ἂν 〈εἴη〉, εἰ ἐπ’ ἀποῦσι μὲν καὶ μέλλουσι τοῖς κινδύνοις τῆι γλώττηι θρασύνεται καὶ τῶι θέλειν ἐπείγει, τὸ δ’ ἔργον ἂν παρῆι, ὀκνεῖ.</q> <foreign xml:lang="mul">Zuweisung zu Π. ὁ. zweifelhaft.</foreign></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="57">
+         <p rend="indent"><label>57.</label> <label xml:lang="lat">[125 B., S.]</label> <bibl xml:lang="lat">STOB. III 8, 18</bibl> Ἀντιφῶντος. <q>νόσος δειλοῖσιν ἑορτή</q>· οὐ γὰρ ἐκπορεύονται ἐπὶ πρᾶξιν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="58">
+         <p rend="indent"><label>58.</label> <label xml:lang="lat">[129 B., S.]</label> <bibl> — — 20, 66</bibl> Ἀ—τος. ὅστις δὲ ἰὼν ἐπὶ τὸν πλησίον κακῶς ποιήσων δειμαίνει, μὴ ἃ θέλει ποιῆσαι, ἁμαρτὼν τούτων ἃ μὴ θέλει ἀπενέγκηται, σωφρονέστερος. ἐν ὧι γὰρ δειμαίνει, μέλλει· ἐν ὧι δὲ μέλλει, πολλάκις ὁ διὰ μέσου χρόνος ἀπέστρεψε τὸν νοῦν τῶν θελημάτων· καὶ ἐν μὲν τῶι γεγενῆσθαι οὐκ ἔνεστιν, ἐν δὲ τῶι μέλλειν ἐνδέχεται 〈καὶ τὸ μὴ〉 γενέσθαι. ὅστις δὲ δράσειν μὲν <pb facs="diefragmentederv02dieluoft_0349"/> οἴεται τοὺς πέλας κακῶς, πείσεσθαι δ’ οὔ, οὐ σωφρονεῖ. ἐλπίδες δ’ οὐ πανταχοῦ ἀγαθόν· πολλοὺς γὰρ τοιαῦται ἐλπίδες κατέβαλον εἰς ἀνηκέστους συμφοράς, ἃ δ’ ἐδόκουν τοῖς πέλας ποιήσειν, παθόντες ταῦτα ἀνεφάνησαν αὐτοί. σωφροσύνην δὲ ἀνδρὸς οὐκ ἂν ἄλλου ὀρθότερόν τις κρίνειεν, ἢ ὅστις τοῦ θυμοῦ ταῖς παραχρῆμα ἡδοναῖς ἐμφράσσει αὐτὸς ἑαυτὸν κρατεῖν τε καὶ νικᾶν ἠδυνήθη αὐτὸς ἑαυτόν. ὃς δὲ θέλει χαρίσασθαι τῶι θυμῶι παραχρῆμα, θέλει τὰ κακίω ἀντὶ τῶν ἀμεινόνων.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="59">
+         <p rend="indent"><label>59.</label> <label xml:lang="lat">[130 B, 124 S.]</label> <bibl>— — 5, 57</bibl> Ἀ—τος. ὅστις δὲ τῶν αἰσχρῶν ἢ τῶν κακῶν μήτε ἐπεθύμησε μήτε ἥψατο, οὐκ ἔστι σώφρων· οὐ γὰρ ἔσθ’ ὅτου κρατήσας αὐτὸς ἑαυτὸν κόσμιον παρέχεται.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="60">
+         <p rend="indent"><label>60.</label> <label xml:lang="lat">[134 B., 133 S.]</label> <bibl xml:lang="lat">— II 31, 39 p. 208 13 W.</bibl> Ἀ—τος. πρῶτον, οἶμαι, τῶν ἐν ἀνθρώποις ἐστὶ παίδευσις· ὅταν γάρ τις πράγματος κἂν ὁτουοῦν τὴν ἀρχὴν ὀρθῶς ποιήσηται, εἰκὸς καὶ τὴν τελευτὴν ὀρθῶς γίγνεσθαι· καὶ γὰρ τῆι γῆι οἷον ἄν τις τὸ σπέρμα ἐναρόσηι, τοιαῦτα καὶ τὰ ἔκφορα δεῖ προσδοκᾶν· καὶ ἐν νέωι σώματι ὅταν τις τὴν παίδευσιν γενναίαν ἐναρόσηι, ζῆι τοῦτο καὶ θάλλει διὰ παντὸς τοῦ βίου, καὶ αὐτὸ οὔτε ὄμβρος οὔτε ἀνομβρία ἀφαιρεῖται.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="61">
+         <p rend="indent"><label>61.</label> <label xml:lang="lat">[135 B., 134 S.]</label> <bibl xml:lang="lat">—  — 31, 40 W.</bibl> τοῦ αὐτοῦ. ἀναρχίας δ’ οὐδὲν κάκιον ἀνθρώποις· ταῦτα γινώσκοντες οἱ πρόσθεν ἄνθρωποι ἀπὸ τῆς ἀρχῆς εἴθιζον τοὺς παῖδας ἄρχεσθαι καὶ τὸ κελευόμενον ποιεῖν, ἵνα μὴ ἐξανδρούμενοι εἰς μεγάλην μεταβολὴν ἰόντες ἐκπλήσσοιντο.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="62">
+         <p rend="indent"><label>62.</label> <label>[0]</label> <bibl xml:lang="lat">— — 31, 41 W.</bibl> οἵωι τις ἂν τὸ πλεῖστον τῆς ἡμέρας συνῆι, τοιοῦτον ἀνάγκη γενέσθαι καὶ αὐτὸν τοὺς τρόπους.
+     </p></div><pb facs="diefragmentederv02dieluoft_0350"/>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="63">
+         <p rend="indent"><label>63.</label> <label xml:lang="lat">[107 B., 85 S.]</label> <bibl xml:lang="lat">HARP.</bibl> διάθεσις: ... ἀντὶ τοῦ διοίκησις ὁ αὐτὸς <foreign xml:lang="deu">[der Redner Antiphon!]</foreign> ἐν τῶι Περὶ ὁμονοίας· <q>ἀλλὰ εἰδότες τὴν διάθεσιν ἀκούουσιν.</q></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="64">
+         <p rend="indent"><label>64.</label> <label xml:lang="lat">[135ᵃ B.]</label> <bibl xml:lang="lat">Exc. VINDOB. 44 [Stob. IV 293, 17 Meineke; vgl. H. Schenkl Floril. duo n. 62 (Wien 1888 S. 11)]</bibl> Ἀντιφῶν· αἱ νέαι φιλίαι ἀναγκαῖαι μέν, αἱ δὲ παλαιαὶ ἀναγκαιότεραι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="65">
+         <p rend="indent"><label>65.</label> <label xml:lang="lat">[109 B., 87 S.]</label> <bibl xml:lang="lat">SUID.</bibl> θωπεία. Ἀ. ἐν τῶι Περὶ ὁμονοίας· πολλοὶ δ’ ἔχοντες φίλους οὐ γινώσκουσιν, ἀλλ’ ἑταίρους ποιοῦνται θῶπας πλούτου καὶ τύχης κόλακας. 10</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="66">
+         <p rend="indent"><label>66.</label> <label xml:lang="lat">[136 B., 135 S.]</label> <bibl xml:lang="lat">CLEM. Strom. VI 19 II 438, 9 St.</bibl> Ἀ. ὁ ῥήτωρ λέγει· <q>γηροτροφία γὰρ προσέοικε παιδοτροφίαι</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="67">
+         <p rend="indent"><label>67.</label> <label xml:lang="lat">[111 B., 89 S.]</label> <bibl xml:lang="lat">HARP.</bibl> ἀθεώρητος: ἀντὶ τοῦ ἀθέατος παρ’ Α—τι ἐν τῶι Περὶ ὁμονοίας.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="67a">
+         <p rend="indent"><label xml:lang="lat">67ᵃ.</label> [112 B., 90 S.] <bibl>—</bibl> ἀνδρεία: ἡ τῶν ἀνδρῶν ἡλικία. Ἀ. ἐν τῶι Περὶ ὁμονοίας.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="68">
+         <p rend="indent"><label>68.</label> <label xml:lang="lat">[113 B., 91 S.]</label> <bibl>—</bibl> αὐλιζόμενοι: ἀντὶ τοῦ κοιμώμενοι Ἀ. Περὶ ὁμονοίας.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="69">
+         <p rend="indent"><label>69.</label> <label xml:lang="lat">[114 B., 92 S.]</label> <bibl>—</bibl> βαλβίς· Ἀ. Περὶ ὁμονοίας· ἡ ἀρχή. <bibl xml:lang="lat">ETYM. GEN.</bibl> βαλβίς: ... καὶ βαλβῖσιν ἀντὶ τοῦ ταῖς ἀρχαῖς.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="70">
+         <p rend="indent"><label>70.</label> <label xml:lang="lat">[115 B., 93 S.]</label> <bibl>—</bibl> εὐηνιώτατα· Ἀ. ἐν τῶι Περὶ ὁμονοίας. εὐήνιος ὁ πρᾶος καὶ μέτριος καὶ μὴ ταραχώδης. ἡ μεταφορὰ ἀπὸ τῶν ἵππων.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="71">
+         <p rend="indent"><label>71.</label> <label xml:lang="lat">[119 B., 97 S.]</label> <bibl>—</bibl> φηλώματα: Ἀ. ἐν τῶι Περὶ ὁμονοίας ἐξαπάτας· φηλοῦν γὰρ τὸ ἐξαπατᾶν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="72">
+         <head rend="center">ΠΟΛΙΤΙΚΟΣ.</head>
+         <p rend="indent"><label>72.</label> <label xml:lang="lat">[122 B., 81 S.]</label> <bibl xml:lang="mul">ANTIATT. Bekk. An. 78, 20</bibl> ἀπειθαρχία: Ἀ, Πολιτικῶι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="73">
+         <p rend="indent"><label>73.</label> <label xml:lang="lat">[120 B., 79 S.]</label> <bibl xml:lang="lat">ATHEN. X 423 A</bibl> καταριστᾶν δὲ εἴρηκεν ἐν τῶι Πολιτικῶι Ἀ. οὕτως· <q>ὅτε δή τις πράγματα τὰ ἑαυτοῦ ἢ τὰ 30 τῶν φίλων κατηρίστηκεν.</q></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="74">
+         <p rend="indent"><label>74.</label> <label xml:lang="lat">[123 B., 82 S.]</label> <bibl xml:lang="lat">HARP.</bibl> εὐσύμβολος: ἀντὶ τοῦ ῥαιδίως καὶ εὖ συμβάλλων, τουτέστιν ἀγαθὸς συμβάλλειν. Ἀ. Πολιτικῶι.
+     </p></div><pb facs="diefragmentederv02dieluoft_0351"/>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="75">
+         <p rend="indent"><label>75.</label> <label xml:lang="lat">[124 B., 83 S.]</label> <bibl>—</bibl> ἡμιολιασμός: Ἀ. Πολιτικῶι <q>διπλασιασμοῦ καὶ ἡμιολιασμοῦ</q> ἀντὶ τοῦ τὸ ἡμιόλιον 〈δοῦναι〉 ἐν τοῖς λογισμοῖς.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="76">
+         <p rend="indent"><label>76.</label> <label xml:lang="lat">[121 B., 80 S.]</label> <bibl xml:lang="mul">PRISC. 18, 230 illi [Griechen]</bibl> καταμελεῖν τούτων καὶ ταῦτα. Antiphon ἐν τῶι Πολιτικῶι: μήτε φιλοπότην κληθῆναι καὶ δοκεῖν τὰ πράγματα καταμελεῖν ὑπὸ οἴνου ἡσσώμενον.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="77">
+         <p rend="indent"><label>77.</label> <label xml:lang="lat">[137 B., 144 S.]</label> <bibl xml:lang="lat">PLUT. Anton. 28</bibl> ἀναλίσκειν καὶ καθηδυπαθεῖν τὸ πολυτελέστατον, ὡς Ἀ. εἶπεν, ἀνάλωμα, τὸν χρόνον.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="78">
+         <head rend="center">ΠΕΡΙ ΚΡΙΣΕΩΣ ΟΝΕΙΡΩΝ. Vgl. 80 A 1. 13 B 55. </head>
+         <p rend="indent"><label>78.</label> <label xml:lang="mul">[Sauppe de Antiph. Gott. 1867 p. 18]</label> <bibl xml:lang="lat">ARTEMID. I 14 p. 109, 10</bibl> H. σηπία. αὕτη δὲ μόνη καὶ τοὺς ἀποδρᾶναι πειρωμένους ὠφελεῖ διὰ τὸν θολόν, ὧι χρωμένη πολλάκις φεύγει. μέμνηται δὲ τούτου τοῦ ὀνείρου καὶ Ἀ. ὁ Ἀθηναῖος.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="79">
+         <p rend="indent"><label>79.</label> <label xml:lang="lat">[S. a. O. p. 17]</label> <bibl xml:lang="lat">CIC. de div. I 20, 39</bibl> <foreign xml:lang="lat">somnia, de quibus disputans Chrysippus multis et minutis somniis colligendis facit idem, quod Antipater, ea conquirens quae Antiphontis interpretatione explicata declarant illa quidem acumen interpretis, sed exemplis grandioribus decuit uti.</foreign> <bibl>51, 116</bibl> <foreign xml:lang="lat">hic magna quaedam exoritur neque ea naturalis, sed artificiosa somniorum Antiphonis interpretatio eodemque modo et oraclorum et vaticinationum. sunt enim explanatores, ut grammatici poetarum.</foreign></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="80">
+         <p rend="indent" xml:lang="lat"><label>80.</label> <label xml:lang="lat">[S. p. 17]</label> <bibl xml:lang="lat">— — II 70, 144</bibl> ipsorum interpretum coniecturae nonne magis ingenia declarant eorum quam vim consensumque naturae? cursor ad Olympia proficisci cogitans visus est in somnis curru quadrigarum vehi. mane ad coniectorem; at ille: <q>vinces, inquid; id enim celeritas significat et vis equorum.</q> post idem ad Antiphontem, is autem <q>vincare, inquit, necesse est: an non intellegis quattuor ante te cucurrisse?</q> ecce alius cursor (atque horum somniorum et talium 〈interpretationum〉 plenus est Chrysippi liber, plenus Antipatri), sed ad cursorem redeo: ad interpretem detulit aquilam se in somnis visum esse factum; at ille: <q>vicisti; ista enim avi volat nulla vehementius.</q> huic aeque idem Antipho: <q>baro, <pb facs="diefragmentederv02dieluoft_0352"/> inquit, victum te esse non vides? ista enim avis insectans alias avis et agitans semper ipsa postrema est</q>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="81">
+         <p rend="indent" xml:lang="lat"><label>81.</label> <label xml:lang="lat">[S. p. 18]</label> <bibl xml:lang="lat">SENEC. controv. II, 1, 33</bibl>  Otho Iunius ... edidit quidem quattuor libros Colorum, quos belle Gallio noster <q>Antiphontis libros</q> vocabat: tantum in illis somniorum est.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="81a">
+         <p rend="indent"><label xml:lang="lat">81ᵃ.</label> <bibl xml:lang="mul">MELAMPUS Περὶ παλμῶν 18. 19 [* Beitr. z. Zuckungsl. I, Abh. d. B. Ak. 1907]</bibl> <label>(18)</label> ὀφθαλμὸς δεξιὸς ἐὰν ἅλληται, κατὰ Φημονόην καὶ Αἰγυπτίους καὶ Ἀντιφῶντα ἐχθροὺς ὑποχειρίους ἕξει· ἄγει δὲ καὶ ἀποδήμους. <label>(19)</label> ὀφθαλμοῦ δεξιοῦ τὸ ἄνω βλέφαρον ἐὰν ἅλληται, ἐπίκτησιν πάντως δηλοῖ, κατὰ δὲ Ἀντιφῶντα πρᾶξιν καὶ ὑγείαν, δούλωι ἐπιβουλήν, χήραι ἀποδημίαν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="82">
+         <p rend="indent"><label>82.</label> <label xml:lang="lat">[180 B., 184 S.]</label> <bibl xml:lang="mul">ANECD. BEKK. Antiattic. 114, 28</bibl> τελεσθῆναι: τὸ ἀναλωθῆναι. Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="83">
+         <p rend="indent"><label>83.</label> <label xml:lang="lat">[143 B., 146 S.]</label> <bibl xml:lang="lat">— Lex. VI p. 345, 26</bibl> ἀδυναμία ἐρεῖς ὡς Δημοσθένης καὶ ἀδυνασία ὡς Ἀ. καὶ Θουκυδίδης [VII 8. 2. VIII 8, 4].</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="84">
+         <p rend="indent"><label>84.</label> <label xml:lang="lat">[147 B., 150 S.]</label> <bibl xml:lang="lat">— p. 367, 31</bibl> ἀκόλουθα Ἀ. τὰ ἑπόμενα καὶ σύμφωνα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="85">
+         <p rend="indent"><label>85.</label> <label xml:lang="lat">[150 B., 153 S.]</label> <bibl xml:lang="lat">— p. 418, 6</bibl> ἀπάλαμνον: ἀμήχανον. οὕτως Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="86">
+         <p rend="indent"><label>86.</label> <label xml:lang="lat">[152 B., 155 S.]</label> <bibl xml:lang="lat">— p. 419, 18</bibl> ἀπεγένετο: ἀντὶ τοῦ ἀπέθανεν. οὕτως Ἀ. καὶ Θουκυδίδης <bibl xml:lang="mul">[II 34, 2 u. ö.]</bibl>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="87">
+         <p rend="indent"><label>87.</label> <label xml:lang="lat">[146 B., 149 S.]</label> <bibl xml:lang="lat">HARP.</bibl> ἀκαρῆ: ἀντὶ τοῦ μικρὸν ἢ οὐδὲν παρ’ Ἀντιφῶντι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="88">
+         <p rend="indent"><label>88.</label> <label xml:lang="lat">[157 B., 161 S.]</label> <bibl>—</bibl> βάσανος: Ἀ., λίθος οὕτω καλεῖται, ἧι τὸ χρυσίον παρατριβόμενον δοκιμάζεται.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="89">
+         <p rend="indent"><label>89.</label> <label xml:lang="lat">[163 B., 166 S.]</label> <bibl>—</bibl> δυσάνιος: Ἀ. ὁ ἐπὶ παντὶ ἀνιώμενος, κἂν μικρὸν καὶ εὐκαταφρόνητον ἦι. Vgl. 81 B 42.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="90">
+         <p rend="indent"><label>90.</label> <label xml:lang="lat">[164 B., 167 S.]</label> <bibl>—</bibl> εἰσφρήσειν: εἰσάξειν, εἰσδέξεσθαι. Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="91">
+         <p rend="indent"><label>91.</label> <label xml:lang="lat">[165 B, 168 S.]</label> <bibl>—</bibl> ἐμ βραχεῖ ἀντὶ τοῦ ἁπλῶς καὶ ἐν κεφαλαίωι A.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="92">
+         <p rend="indent"><label>92.</label> <label xml:lang="lat">[170 B. 174 S.]</label> <bibl xml:lang="mul">MOERIS 203, 2 Bekk.</bibl> λιθουργοὺς Θουκυδίδης <bibl  xml:lang="mul">[IV 69, 2 u. ö.]</bibl>, λιθοκόπους Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="93">
+         <p rend="indent"><label>93.</label> <label>[0]</label> <bibl xml:lang="mul">PHILOD. de poëm. c. 187, 3 [V. H.² VI; Gomperz Wien. Sitz. Ber. 123. VI, 49]</bibl> ἐπειδήπερ ἐκ τῶν προαναλογισθέντων συνεθεωρεῖτο καὶ οὐκ ἐξητασμένον οὕτως 〈ἦν〉, ὥσπερ εἰ μηθὲν ἐτύχομεμ πρὸς ἑτέρους εὑρίσκοντες 〈περὶ τοῦ〉 ὑπὸ γραμμάτων ἁπλῶν καὶ συνθέτων οἰκειοῦσθαι τὴν ἀκοήν, εὔδηλος ἡ τῶν ἄλλων <pb facs="diefragmentederv02dieluoft_0353"/> φληναφία φαίνεται τῶν ἠ ταὐτὰ τέρπειν καὶ ὀχλεῖν ἢ διάφορα κατηξιωκότων ὡς καί τινος τῶν ἀρχαίων Ἀντιφώντος, εἴτ’ οὖν ῥητορικὸς εἴτε καὶ φιλόσοφος ἠβούλετ’ εἶναι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="93a">
+         <p rend="indent"><label xml:lang="lat">93ᵃ.</label> <label>[0]</label> <bibl xml:lang="mul">PHOT. A p. 66, 4 Reitz.</bibl> ἀκοινώνητος Πλάτων ἐν Νόμων ϛ̄ <bibl xml:lang="lat">[768 B]</bibl> καὶ ἀκοινώνητα. καὶ Ἀ. δὲ καὶ Εὐριπίδης <bibl xml:lang="lat">[Andr. 470]</bibl>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="93b">
+         <p rend="indent"><label xml:lang="lat">93ᵇ.</label> <label>[0]</label> <bibl xml:lang="lat">— p. 87, 25 R.</bibl> ἀμαρτυρήτως: ἀμαρτύρως· οὕτως Ἀ. <bibl xml:lang="lat">SUlD.</bibl> ἀμαρ τυρήτους: ἀντὶ τοῦ ἀμαρτύρους. οὕτως Ἀντιφάνης <foreign xml:lang="lat">(sic)</foreign>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="94">
+         <p rend="indent"><label>94.</label> <label xml:lang="lat">[181 B., 185 S.]</label> <bibl xml:lang="lat">PHOT.</bibl> τίμιον: ἀντὶ τοῦ ἔντιμον. οὕτως Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="95">
+         <p rend="indent"><label>95.</label> <label xml:lang="lat">[171 B., 175 S.]</label> <bibl xml:lang="lat">POLL. I 34</bibl> μεθέορτοι ἡμέραι κατὰ Ἀ—τα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="96">
+         <p rend="indent"><label>96.</label> <label xml:lang="lat">[176 B., 179 S.]</label> <bibl xml:lang="lat">— I 98</bibl> καλείσθω δὲ κυβερνήτης ... καὶ κατ’ Ἀ—τα ὁ ποδοχῶν ἢ μᾶλλον κατ’ ἐμὲ ὁ ποδηγῶν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="97">
+         <p rend="indent"><label>97.</label> <label xml:lang="lat">[141 B.]</label> <bibl xml:lang="lat">— II 109</bibl> ἀγλωττίαν δὲ Ἀ. εἴρηκεν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="98">
+         <p rend="indent"><label>98.</label> <label xml:lang="lat">[149 B., 152 S.]</label> <bibl xml:lang="lat">— II 120</bibl> Ἀ. δὲ ἀντιλογούμενοι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="99">
+         <p rend="indent"><label>99.</label> <label xml:lang="lat">[151 B, 154 S.]</label> <bibl>— —</bibl> Ἀ. δὲ ἀπαρτιλογία ὥσπερ καὶ Ἡρόδοτος [VII 29]. Dagegen HARP. ἀπαρτιλογία Λυσίας ἐν τῶι πρὸς Ἀρέσανδρον [fr. 23 O. A. II 177] καὶ Ἡρόδοτος ἀντὶ τοῦ ἀπηρτισμένος καὶ πλήρης ἀριθμός.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="100">
+         <p rend="indent"><label>100.</label> <label xml:lang="lat">[172 B., 176 S.]</label><bibl xml:lang="lat"> — II 123</bibl> κακολόγος, κακήγορος καὶ ὡς Ἀ. ἡδυλόγος καὶ μετριολόγος.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="101">
+         <p rend="indent"><label>101.</label> <label xml:lang="lat">[168 B., 171 S.]</label> <bibl xml:lang="lat">— II 228</bibl> Ἀ. ἐπινόημα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="102">
+         <p rend="indent"><label>102.</label> <label xml:lang="lat">[145 B., 148 S.]</label> <bibl xml:lang="lat">— II 230</bibl> ἀθυμοῦσιν ὡς Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="103">
+         <p rend="indent"><label>103.</label> <label xml:lang="lat">[182 B., 143 S.]</label> <bibl xml:lang="lat">— III 113</bibl> χρηματίζειν καὶ ὡς Ἀ. φιλοχρηματεῖν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="104">
+         <p rend="indent"><label>104.</label> <label xml:lang="lat">[142 B., 145 S.]</label> <bibl xml:lang="lat">POLL. IV 9</bibl> ἀνεπιστημοσύνη, ἄγνοια, ἀγνωσία. Ἀ. δ’ ἐπὶ τούτου καὶ ἀγνωμοσύνην λέγει.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="105">
+         <p rend="indent"><label>105.</label> <label xml:lang="lat">[162 B.]</label> <bibl>— —</bibl> δοκησίσοφος, ὡς Ἀ. ἔφη.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="106">
+         <p rend="indent"><label>106.</label> <label xml:lang="lat">[178 B., 182 S.]</label> <bibl xml:lang="lat">— IV 167</bibl> συμμετρίας Ἀ. ... καὶ δυσμέτρητον A.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="106a">
+         <p rend="indent"><label xml:lang="lat">106ᵃ.</label> <label xml:lang="lat">[142 B., 145 S.]</label> <bibl xml:lang="lat">— V 145</bibl> ἀγνοῶν. Ἀ. δὲ καὶ ἀγνώμων λέγει. Vgl. B 104.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="107">
+         <p rend="indent"><label>107.</label> <label xml:lang="lat">[155 B., 145 S.]</label> <bibl xml:lang="lat">— V 441</bibl> καὶ τὸ πρᾶγμα ἀναισθησία, ἀχαριστία, ἀδικία, ἀγνωμοσύνη καὶ ὡς Ἀ. ἀποστέρησις.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="108">
+         <p rend="indent"><label>108.</label> <label xml:lang="lat">[175 B., 141 S.]</label> <bibl xml:lang="lat">— VI 163</bibl> Ἀ. δὲ καὶ ἐξαλᾶσθαι πανοικεσίαι ἔφη.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="109">
+         <p rend="indent"><label>109.</label> <label xml:lang="lat">[169 B., 173 S.]</label> <bibl xml:lang="lat">— VI 169</bibl> κακόνους ὡς Ἀ</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="110">
+         <p rend="indent"><label>110.</label> <label xml:lang="lat">[167 B., 170 S.]</label> <bibl xml:lang="lat">— VI 183</bibl> Ἀ. δὲ ἐπιθύμημα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="111">
+         <p rend="indent"><label>111.</label> <label xml:lang="lat">[153 B., 156 S.]</label> <bibl xml:lang="lat">— VIII 68</bibl> ἐπὶ δὲ τοῦ ἀπολογουμένου ἀπελογήσατο, ἀπελύθη ὡς Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="112">
+         <p rend="indent"><label>112.</label> <label xml:lang="lat">[166 B., 169 S.]</label> <bibl xml:lang="lat">— VIII 103</bibl> καὶ ἐν ταῖς σιτοδοσίαις ἐγίνοντο σίτου ἐπιγραφεῖς, ὡς Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="113">
+         <p rend="indent"><label>113.</label> <label xml:lang="lat">[177 B., 180 S.]</label> <bibl xml:lang="lat">— IX 26</bibl> πολιτοκοπεῖν παρ’ Ἀ—τι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="114">
+         <p rend="indent"><label>114.</label> <label xml:lang="lat">[140 B., 140 S.]</label> <bibl xml:lang="mul">LESBON. p. 180 Valck.</bibl> Κλαζομένιον [nämlich σχὴμα] ὡς <pb facs="diefragmentederv02dieluoft_0354"/> τὸ πορεύομαι σὺν ἀγῶνι ἀντὶ τοῦ εἰς ἀγῶνα ... ὡς τὸ σὺν πατρίδι ἔβη ἀντὶ τοῦ εἰς τὴν πατρίδα· οὕτως Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="115">
+         <p rend="indent"><label>115.</label> <label xml:lang="lat">[154 B.]</label> <bibl xml:lang="lat">SUID.</bibl> ἀπόκριναι: . . . καὶ ἀπόκρισις ἡ ἀπολογία. οὕτω Λυσίας <bibl xml:lang="lat">[fr. 305 O. A. II 214ᵃ 23]</bibl> καὶ Ἀ. <bibl xml:lang="lat">S. HARPOCR.</bibl> ἀπόκρισις.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="116">
+         <p rend="indent"><label>116.</label> <label xml:lang="lat">[138 B., 136 S.]</label> <bibl>—</bibl> ἀπολαχεῖν: ... Ἀ.· ὁπότ’ ἄνθρωποι βούλοιντο χρήματα διαλαγχάνειν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="117">
+         <p rend="indent"><label>117.</label> <label xml:lang="lat">[183 B., 187 S.]</label> <bibl>—</bibl> χρημάτων: ... κεῖται δὲ ἡ λέξις καὶ ἐπὶ πράγματος ἢ προσώπου ἢ λόγου ὡς Ἀ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1147.tlg003.1st1K-grc1" n="118">
+         <p rend="indent"><label>118.</label> <bibl xml:lang="lat">ATHEN. XIV 650 E</bibl> Ἀντιφῶν <foreign xml:lang="eng">[?]</foreign> ἐν τῶι Περὶ γεωργικῶν.
+     </p></div></div>
+     
+     
+     </body></text></TEI>

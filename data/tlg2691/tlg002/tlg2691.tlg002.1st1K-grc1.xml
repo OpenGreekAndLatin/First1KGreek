@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Fragmenta</title>
+                <author xml:lang="lat">Eleusinius Musaeus</author>
+                <editor>Hermann Diels</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Sophia Elzie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alessandro Buccheri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Valia Chotou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Domi Couvet</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dimitra Fylaktopoulou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Arnie He</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Elsa Karafyllidi</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Anatasios Koletsis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Theodoros Pazarloglou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Celia Prescott-Decie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dora Profyri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Panagiotis Sotiroudis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zeyu Wen</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>  
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg2691.tlg002.1st1K-grc1.xml</idno>
+                <pubPlace />
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2021-08-25"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="deu">Die Fragmente der Vorsokratiker</title>
+                        <editor>Hermann Diels</editor>
+                        <imprint>
+                            <pubPlace>Berlin</pubPlace>
+                            <publisher>Weidmann</publisher>
+                            <date>1922</date>
+                        </imprint>
+                        <biblScope unit="volume">2</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/diefragmentederv02dieluoft/page/180/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment.</p></cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2022-05-05" who="Lisa Cerrato">File markup and header review.</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text>
+     <body>
+      <div type="edition" n="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" xml:lang="grc">
+          <pb facs="diefragmentederv02dieluoft_0226"/>
+          <head rend="center">ΜΟΥΣΑΙΟΥ ΘΕΟΓΟΝΙΑΣ ᾹΒ̄Γ̄ ... (ΕΥΜΟΛΠΙΑ). </head>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="1">
+     <p rend="indent"><label>1.</label> <label xml:lang="mul">[4 Kern (Rostock 1898)]</label> <bibl xml:lang="lat">SCHOL. APOLL. Rhod. III 1179</bibl> ἐν δὲ τῆι γ̄ Μουσαῖος Τιτανογραφίαι [?] λέγεται ὡς Κάδμος ἐκ τοῦ Δελφικοῦ ἐπορεύετο προκαθηγουμένης αὐτῶι τῆς βοός.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="2">
+     <p rend="indent"><label>2.</label> <label>[5]</label> <bibl xml:lang="lat">- IV 156</bibl> ἐν τούτοις καὶ τοῖς ἐφεξῆς φησι τὴν Μήδειαν ἐπιρραίνουσαν ἀρκεύθωι φάρμακον κομίσαι τὸν δράκοντα ἐπάιδουσαν . . . ἡ δὲ ἄρκευθος δένδρον τι ἀκανθῶδες Ἀπόλλωνος ἴδιον ὡς ἱστορεῖται ἐν τρίτωι τῶν εἰς Μουσαῖον ἀναφερομένων.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="3">
+     <p rend="indent"><label>3.</label> <label>[21]</label> <bibl xml:lang="lat">ARIST. hist. anim. Z 6. 563ᵃ 18</bibl> ὁ δ’ ἀετὸς ὠιὰ μὲν τίκτει τρία, ἐκλέπει δὲ τούτων τὰ δύο ὥσπερ ἔστι καὶ ἐν τοῖς Μουσαίου λεγομένοις ἔπεσιν· ὃς τρία μὲν τίκτει, δύο 〈δ’〉 ἐκλέπει, ἓν δ’ ἀλεγίζει.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="4">
+     <p rend="indent"><label>4.</label> <label>[24]</label><bibl xml:lang="lat">CLEM. Str. VI 5 (II 424, 26 St.)</bibl> γράψαντός τε Μουσαίου <pb facs="diefragmentederv02dieluoft_0227"/> ὡς αἰεὶ τέχνη μέγ’ ἀμείνων ἰσχύος ἐστίν Ὅμηρος λέγει· <q>μή τί τοι</q> κτλ. <bibl>[Ψ 315]</bibl>· πάλιν τοῦ Μουσαίου ποιήσαντος·
+     <lb/></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="5">
+     <p rend="indent"><label>5.</label> <label>[25]</label> 
+      <quote rend="blockquote">ὡς δ’ αὔτως καὶ φύλλα φύει ζείδωρος ἄρουρα·
+     <lb/>ἄλλα μὲν ἐν μελίηισιν ἀποφθίνει, ἄλλα δὲ φύει·
+     <lb/>ὣς δὲ καὶ ἀνθρώπων γενεὴ καὶ φῦλον ἑλίσσει,
+</quote>     Ὅμηρος μεταγράφει· <q>φύλλα τὰ μὲν</q> κτλ. <bibl>[Ζ 147. 148]</bibl>.
+     </p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="6">
+     <p rend="indent"><label>6.</label> <label xml:lang="lat">[p. 14]</label> <bibl xml:lang="lat">CLEM. Str. VI 25 (II 442, 3 St.)</bibl> αὐτοτελῶς γὰρ τὰ ἑτέρων ὑφελόμενοι ὡς ἴδια ἐξήνεγκαν καθάπερ Εὐγάμων ὁ Κυρηναῖος ἐκ Μουσαίου τὸ περὶ Θεσπρωτῶν βιβλίον ὁλόκληρον.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="7">
+     <p rend="indent"><label>7.</label> <label>[23]</label> <bibl xml:lang="lat">— — VI 26 (II 42, 15 St.)</bibl> Ἡσίοδός τε ἐπὶ τοῦ Μελάμποδος <bibl xml:lang="mul">[fr. 164 Rzach.²]</bibl> ποιεῖ·
+   <quote rend="blockquote">ἡδὺ δὲ καὶ τὸ πυθέσθαι, ὅσα θνητοῖσιν ἔδειμαν
+     <lb/>ἀθάνατοι δειλῶν τε καὶ ἐσθλῶν τέκμαρ ἐναργές,</quote>
+     καὶ τὰ ἑξῆς παρὰ Μουσαίου λαβὼν τοῦ ποιητοῦ κατὰ λέξιν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="8">
+     <p rend="indent"><label>8.</label> <label>[3]</label> <bibl xml:lang="lat">[ERATOSTH.] catast. 13</bibl> ἐσχημάτισται δ’ ἐν τούτωι ἡ Αἲξ καὶ οἱ Ἔριφοι. Μουσαῖος γάρ φησι Δία γεννώμενον ἐγχειρισθῆναι ὑπὸ Ῥέας Θέμιδι, Θέμιν δὲ Ἀμαλθείαι δοῦναι τὸ βρέφος, τὴν δὲ ἔχουσαν αἶγα ὑποθεῖναι, τὴν δ’ ἐκθρέψαι Δία· τὴν δὲ Αἶγα εἶναι Ἡλίου θυγατέρα φοβερὰν οὕτως, ὥστε τοὺς κατὰ Κρόνον θεούς, βδελυττομένους τὴν μορφὴν τῆς παιδός, ἀξιῶσαι Γῆν κρύψαι αὐτὴν ἔν τινι τῶν κατὰ Κρήτην ἄντρων· καὶ ἀποκρυψαμένην ἐπιμέλειαν αὐτῆς τῆι Ἀμαλθείαι ἐγχειρίσαι, τὴν δὲ τῶι ἐκείνης γάλακτι τὸν Δία ἐκθρέψαι· ἐλθόντος δὲ τοῦ παιδὸς εἰς ἡλικίαν καὶ μέλλοντος Τιτᾶσι πολεμεῖν, οὐκ ἔχοντος δὲ ὅπλα, θεσπισθῆναι αὐτῶι τῆς αἰγὸς τῆι δορᾶι ὅπλωι χρήσασθαι διά τε τὸ ἄτρωτον αὐτῆς καὶ φοβερὸν καὶ διὰ τὸ εἰς μέσην τὴν ῥάχιν Γοργόνος πρόσωπον ἔχειν· ποιήσαντος δὲ ταῦτα τοῦ Διὸς καὶ τῆι τέχνηι φανέντος διπλασίονος, τὰ ὀστᾶ δὲ τῆς αἰγὸς καλύψαντος ἄλληι δορᾶι καὶ ἔμψυχον αὐτὴν καὶ ἀθάνατον κατασκευάσαντος, αὐτὴν μέν φασιν ἄστρον οὐράνιον [κατασκευάσαι] 〈γενέσθαι, τὸν δὲ Δία αἰγίοχον κληθῆναι〉. <bibl xml:lang="lat">LACT. inst. div. I 21, 39</bibl> <foreign xml:lang="lat">huius capellae corio usum esse pro scuto Iovem contra Titanas dimicantem M. <pb facs="diefragmentederv02dieluoft_0228"/> auctor est, unde a poetis αἰγίοχος nominatur.</foreign> <bibl xml:lang="lat">Vgl. Epimenides 68 B 24 II 193, 23.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="9">
+     <p rend="indent"><label>9.</label> <label>[10]</label> <bibl xml:lang="lat">HARPOCR.</bibl> Μελίτη δῆμός ἐστι τῆς Κεκροπίδος. κεκλῆσθαι δέ φησι τὸν δῆμον Φιλόχορος ἐν γ̄ <bibl xml:lang="lat">[fr. 74 FHG I 396]</bibl> ἀπὸ Μελίτης θυγατρὸς κατὰ μὲν Ἡσίοδον <bibl xml:lang="mul">[fr. 106 Rz.²]</bibl> Μύρμηκος, κατὰ δὲ Μουσαῖον Δίου τοῦ Ἀπόλλωνος.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="10">
+     <p rend="indent"><label>10.</label> <label>[14]</label> <bibl xml:lang="lat">PAUS. I 14, 3</bibl> ἔπη δὲ ἄιδεται Μουσαίου μέν, εἰ δὴ Μουσαίου καὶ ταῦτα, Τριπτόλεμον παῖδα Ὠκεανοῦ καὶ Γῆς εἶναι. <bibl xml:lang="lat">Vgl. Pherekydes b. Apoll. bibl. I 32.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="11">
+     <p rend="indent"><label>11.</label> <label>[13]</label> <bibl xml:lang="lat">— X 5, 6</bibl> ἔστι δὲ ἐν Ἕλλησι ποίησις, ὄνομα μὲν τοῖς ἔπεσίν ἐστιν Εὐμολπία, Μουσαίωι δὲ τῶι Ἀντιοφήμου προσποιοῦσι τὰ ἔπη. πεποιημένον οὖν ἐστιν ἐν τούτοις Ποσειδῶνος ἐν κοινῶι καὶ Γῆς εἶναι τὸ μαντεῖον <foreign xml:lang="deu">[zu Delphi]</foreign> καὶ τὴν μὲν χρᾶν αὐτήν· Ποσειδῶνι δὲ ὑπηρέτην ἐς τὰ μαντεύματα εἶναι Πύρκωνα. καὶ οὕτως ἔχει τὰ ἔπη·
+     <quote rend="blockquote">αὐτίκα δὲ Χθονίης φωνὴ πινυτὸν φάτο μῦθον·
+     <lb/>σὺν δέ τε Πύρκων ἀμφίπολος κλυτοῦ Ἐννοσιγαίου.</quote>
+     </p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="12">
+     <p rend="indent"><label>12.</label> <label>[15]</label> <bibl xml:lang="lat">PHILOD. de piet. 59, 1 p. 31 G.</bibl> ἀλ〉λ’ ὁ Ζε〈ύς, ὥς φασι〉ν, τὴν κεφαλὴν ὑπὸ Ἡφαίστου διαιρεῖται, κατὰ δὲ τὸν 〈τὴν〉 Εὐμολπ〈ίαν συν〉θέντα [τα] πο〈ιητὴ〉ν ὑπὸ Παλαμάονος. <bibl xml:lang="lat">SCHOL. PIND. Ol. VII 66</bibl> ἐν τοῖς Μουσαίου Παλαμάων λέγεται πλῆξαι τοῦ Διὸς τὴν κεφαλήν, ὅτε τὴν Ἀθηνᾶν ἐγέννα.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="13">
+     <p rend="indent"><label>13.</label> <label>[8]</label> <bibl xml:lang="lat">PHILOD. de piet. 97, 18 p. 47 G. (Argos)</bibl> ἐστὶ τέτταρας ἔχων ὀφθαλμούς. Μουσαῖος δὲ τὸν 〈Ἄργον〉 φησὶ <q>τέτταρας Αἰθί〈οπ〉ας</q> καὶ <q>βασιλεῖς 〈μερ〉όπων</q> ἐκ Κελαινοῦς γεννῆσαι τῆς Ἄτλαντος.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="14">
+     <p rend="indent"><label>14.</label> <label>[1]</label> <bibl xml:lang="lat">— — 137, 5 p. 61 G.</bibl> ἐμ μέν τισιν ἐκ Νυκτὸς καὶ Ταρτάρου λέγεται τὰ πάντα, ἐν δέ τισιν ἐξ Ἅιδου καὶ Αἰθέρος· ὁ δὲ τὴν Τιτανομαχίαν γράψας ἐξ Αἰθέρος φησίν, Ἀκουσίλαος δ’ ἐκ Χάους πρώτου τἆλλα· ἐν δὲ τοῖς ἀναφερομένοις εἰς Μουσαῖον γέγραπται Τάρταρον πρῶτον 〈καὶ Ν〉ύκτα. <bibl xml:lang="lat">Vgl. 13, 16 p. 80 G.</bibl> ἐν δὲ τῶι δευτέρωι <bibl xml:lang="mul">[Chrysippos’ Περὶ φύσεως]</bibl> τά τε εἰς Ὀρφέα καὶ Μουσαῖον ἀναφερόμενα . . . πειρᾶται συνοικειοῦν ταῖς δόξαις αὑτῶν.  <pb facs="diefragmentederv02dieluoft_0229"/> <bibl xml:lang="lat">14, 18 p. 81</bibl> κἀν τῶι 〈δ〉ε〈υ〉τ〈έρ〉ωι <bibl xml:lang="mul">[nämlich Περὶ φύσεως]</bibl> τὴν Νύκτα θεάν φησιν εἶναι πρωτίστην.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="15">
+     <p rend="indent"><label>15.</label> <label>[2]</label> <bibl xml:lang="lat">SCHOL. APOLL. Rhod. III 1</bibl> ἐν δὲ τοῖς εἰς Μουσαῖον ἀναφερομένοις δύο ἱστοροῦνται γενέσεις Μουσῶν, πρεσβυτέρων μὲν μετὰ Κρόνου, νεωτέρων δὲ τῶν ἐκ Διὸς καὶ Μνημοσύνης.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="16">
+     <p rend="indent"><label>16.</label> <label>[6]</label> <bibl xml:lang="lat">— III 1035 M.</bibl> ἱστορεῖ Δία ἐρασθέντα Ἀστερίας μιγῆναι καὶ μιγέντα δοῦναι αὐτὴν τῶι Περσεῖ.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="17">
+     <p rend="indent"><label>17.</label> <label>[9]</label> <bibl xml:lang="lat">— III 1377</bibl> τὰς δὲ τοιαύτας φαντασίας (n. τῶν διατρεχόντων ἀστέρων) ὁ M. ἀναφερομένας φησὶν ἐκ τοῦ ὠκεανοῦ κατὰ τὸν αἰθέρα ἀποσβέννυσθαι. τοὺς δὲ ὑπὸ Μουσαίου ἀστέρας εἰρημένους Ἀπολλώνιος πιθανῶς μαρμαρυγὰς εἴρηκε.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="18">
+     <p rend="indent"><label>18.</label> <label>[7]</label> <bibl xml:lang="mul">SCHOL. ARAT. 172 p. 369, 24 Maass</bibl> Θαλῆς μὲν οὖν δύο αὐτὰς εἶπεν εἶναι [n. τὰς Ὑάδας] . . . Μουσαῖος ε̄. <bibl xml:lang="mul">SERV. in Georg. 138 <emph rend="italic">Hyadas</emph></bibl>] <foreign xml:lang="lat"> . . . nutrices Liberi patris, ut M. scripsit, ab Hya fratre, quem in venatione interemptum fleverunt, unde Hyades dictae.</foreign> <bibl xml:lang="mul">SCHOL. GERM. p. 75, 10 [Robert Eratosth. 110]</bibl> <foreign xml:lang="lat">M. ita refert: Aethra ex Oceano procreavit filias duodecim, ex quibus quinque stellis figuratas Hyadas, septem autem Pliadas. his unus fuit frater Hyas, quem omnes sorores dilexere. quem in venatu alii ab leone, alii ab apro interfectum dicunt. quae flentes eum obierunt Hyadas nuncupatas, alias Pliadas.</foreign> <bibl xml:lang="lat">Vgl. SCHOL. AR. 254 p. 386, 13 M. HYG. II 21.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="19">
+     <p rend="indent"><label>19.</label> <label>[19]</label> <bibl xml:lang="lat">THEOPHR. h. plant. IX 19, 2</bibl> καὶ ὡς δή φασι τὸ τριπόλιον καθ’ Ἡσίοδον <bibl xml:lang="lat">[fr. 229 Rz.²]</bibl> καὶ Μουσαῖον εἰς πᾶν πρᾶγμα σπουδαῖον χρήσιμον εἶναι, δι’ ὃ καὶ ὀρύττουσιν αὐτὸ νύκτωρ σκηνὴν πηξάμενοι.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="19a">
+         <head rend="center">ΥΜΝΟΣ ΕΙΣ ΔΙΟΝΥΣΟΝ.</head>
+     <p rend="indent"><label xml:lang="lat">19ᵃ.</label> <label xml:lang="lat">[p. 13]</label> <bibl xml:lang="mul">ARISTID. Or. 41 [II 330, 16 Keil]</bibl> τοὺς μὲν οὖν τελέους ὕμνους τε καὶ λόγους περὶ Διονύσου Ὀρφεῖ καὶ Μουσαίωι παρῶμεν καὶ τοῖς ἀρχαίοις τῶν νομοθετῶν.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="20">
+       <head rend="center">ΥΜΝΟΣ ΕΙΣ ΔΗΜΗΤΡΑ ΛΥΚΟΜΙΔΑΙΣ.</head>
+         <p rend="indent"><label>20.</label> <label>[20]</label> <bibl xml:lang="lat">PAUS. IV 1, 5</bibl> πρῶτοι δ’ οὖν βασιλεύουσιν ἐν τῆι χώραι ταύτηι Πολυκάων τε ὁ Λέλεγος καὶ Μεσσήνη γυνὴ τοῦ Πολυκάονος. <pb facs="diefragmentederv02dieluoft_0230"/> παρὰ ταύτην τὴν Μεσσήνην τὰ ὄργια κομίζων τῶν Μεγάλων θεῶν Καύκων ἦλθεν ἐξ Ἐλευσῖνος ὁ Κελαίνου τοῦ Φλύου. Φλῦον δὲ αὐτὸν Ἀθηναῖοι λέγουσι παῖδα εἶναι Γῆς. ὁμολογεῖ δέ σφισι καὶ ὕμνος Μουσαίου Λυκομίδαις ποιηθεὶς ἐς Δήμητρα. <bibl xml:lang="lat">Vgl. II 173, 28 Anm. 180, 5.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="20a">
+         <head rend="center">ΧΡΗΣΜΟΙ. <lb/>(Vgl. c. 15, 1 I 137, 6. 66 A 11. 67 A 6.)</head>
+     <p rend="indent"><label xml:lang="lat">20ᵃ.</label> <bibl xml:lang="mul">HEROD. VII 6 (die Peisistratiden)</bibl> ἔχοντες Ὀνομάκριτον ἄνδρα Ἀθηναῖον χρησμολόγον τε καὶ διαθέτην Χρησμῶν τῶν Μουσαίου ἀναβεβήκεσαν [näml. ἐς Σοῦσα] τὴν ἔχθρην προκαταλυσάμενοι· ἐξηλάσθη γὰρ ὑπὸ Ἱππάρχου τοῦ Πεισιστράτου ὁ Ὀνομάκριτος ἐξ Ἀθηνέων ἐπ’ αὐτοφώρωι ἁλοὺς ὑπὸ Λάσου τοῦ Ἑρμιονέος ἐμποιέων ἐς τὰ Μουσαίου χρησμόν, ὡς αἱ ἐπὶ Λήμνωι ἐπικείμεναι νῆσοι ἀφανιζοίατο κατὰ τῆς θαλάσσης. διὸ ἐξήλασέ μιν ὁ Ἵππαρχος πρότερον χρεώμενος τὰ μάλιστα. <bibl xml:lang="lat">Vgl. 66 A 1ᵇ.</bibl></p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="21">
+     <p rend="indent"><label>21.</label> <label>[17]</label> <bibl xml:lang="mul">— VIII 96 [Schlacht bei Salamis]</bibl> τῶν δὲ ναυηγίων πολλὰ ὑπολαβὼν ἄνεμος Ζέφυρος ἔφερε τῆς Ἀττικῆς ἐπὶ τὴν ἠιόνα τὴν καλεομένην Κωλιάδα. ὥστε ἀποπλῆσαι τὸν χρησμὸν τόν τε ἄλλον πάντα τὸν περὶ τῆς ναυμαχίας ταύτης εἰρημένον Βάκιδι καὶ Μουσαίωι καὶ κτλ. <foreign xml:lang="deu">(folgt der Spruch des Lysistratos)</foreign>.</p></div>
+     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2691.tlg002.1st1K-grc1" n="22">
+     <p rend="indent"><label>22.</label> <label>[18]</label> <bibl xml:lang="lat">PAUS. X 9, 11</bibl> τὴν δὲ πληγὴν Ἀθηναῖοι τὴν ἐν Αἰγὸς ποταμοῖς οὐ μετὰ τοῦ δικαίου συμβῆναί σφισιν ὁμολογοῦσι. προδοθῆναι γὰρ ἐπὶ χρήμασιν ὑπὸ τῶν στρατηγησάντων, Τυδέα δὲ εἶναι καὶ Ἀδείμαντον οἳ τὰ δῶρα ἐδέξαντο παρὰ Λυσάνδρου. καὶ ἐς ἀπόδειξιν τοῦ λόγου Σιβύλλης παρέχονται τῶν χρησμῶν . . . τὰ δὲ ἕτερα ἐκ Μουσαίου χρησμῶν μνημονεύουσι·
+     <quote rend="blockquote">καὶ γὰρ Ἀθηναίοισιν ἐπέρχεται ἄγριος ὄμβρος
+     <lb/>ἡγεμόνων κακότητι, παραιφασίη δέ τις ἔσται·
+     <lb/>ἦ τ(ε) ἅλις ἠμύσουσι πόλιν, τείσουσι δὲ ποινήν.</quote>
+     </p></div></div>
+     
+</body></text></TEI>
