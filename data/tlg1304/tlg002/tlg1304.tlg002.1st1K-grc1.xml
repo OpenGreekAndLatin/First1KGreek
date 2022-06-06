@@ -104,8 +104,8 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
             
             <refsDecl n="CTS">
-                <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-                    <p>This pointer pattern extracts section and fragment.</p></cRefPattern>
+                <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment.</p></cRefPattern>
             </refsDecl>
         </encodingDesc>
         
@@ -232,9 +232,8 @@
                         </div>
 
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="8">
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc18" n="1">
-                        <p rend="indent">καὶ ἔτι· <q rend="single">καίτοι δῆλον ἔσται, ὅτι ἐτεῇ οἷον ἕκαστον γιγνώσκειν ἐν ἀπόρῳ ἐστί</q>.</p>
-                        </div>
+                      <p rend="indent">καὶ ἔτι· <q rend="single">καίτοι δῆλον ἔσται, ὅτι ἐτεῇ οἷον ἕκαστον γιγνώσκειν ἐν ἀπόρῳ ἐστί</q>.</p></div>
+                        
 
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="8a">
                         <p rend="indent"><label xml:lang="lat">[v 4]</label> <title>ΠΕΡΙ AΜΕΙΨΙΡΥΣΜΙΩΝ.</title> <bibl xml:lang="lat">Vgl. B 139.</bibl></p>
@@ -372,8 +371,7 @@
                             <bibl xml:lang="lat">Vgl. B 29<hi rend="superscript">a</hi></bibl>.</p></div>
 <pb facs="diefragmentederv02dieluoft_0109"/>
 
-                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14">
-                         
+                    <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_1">
                         <p rend="indent" xml:lang="lat"><label>1.</label><bibl xml:lang="lat">VITRUV. IX 6, 3</bibl> de naturalibus autem rebus Thales Milesius,
                             Anaxagoras Clazomenius, Pythagoras Samius, Xenophanes Colophonius, D. Abderites rationes, quibus eae res 
                             natura rerum gubernarentur quemadmodumcumque effectus habeant, excogitatas reliquerunt. quorum inventa
@@ -383,12 +381,12 @@
                             designata, ut Democrito physico placuit, exposui, sed tantum ea quorum ortus et occasus possumus animadvertere
                             et oculis contueri.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="2">    
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_2">    
                         <p rend="indent"><label>2.</label> <bibl xml:lang="lat">EUDOX. ars astron. coll. 22, 21 [p. 25 Blass.]</bibl> 
                             Εὐδόξῳ Δημοκρίτῳ χειμεριναὶ τροπαὶ ἀθὺρ ὁτὲ μὲν κ̄ ὁτὲ δὲ ῑθ̄. <bibl>23,3</bibl> ἀπὸ ἰσημερίας μεθοπωρινῆς ἐπὶ χειμερινὰς 
                             τροπὰς Εὐδόξῳ ἡμέραι ϙ̄β̄, Δημοκρίτῳ  ἡμέραι ϙ̄ᾱ ... , ἀπὸ τροπῶν χειμερινῶν εἰς ἰσημερίαν ἐαρινὴν Εὐδόξῳ καὶ Δ-ῳ ἡμέραι 
                             ϙ̄ᾱ, Εὐκτήμονι ϙ̄β̄.</p></div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="3">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_3">
                         <p rend="indent"><label>3.</label> <bibl xml:lang="lat">[GEMIN.] isag. (Kalender etwa aus dem 2. J. v. Ch.) p. 218, 14 Manit.
                             [Skorpion]</bibl> ἐν δὲ τῇ δ̄ ἡμέρᾳ Δημοκρίτῳ Πλειάδες δύνουσιν ἅμα ἠοῖ· ἄνεμοι χειμέριοι ὡς τὰ πολλὰ καὶ ψύχη ἤδη καὶ πάχνη 
                             ἐπιπνεῖν φιλεῖ· φυλλορροεῖν ἄρχεται τὰ δένδρα μάλιστα.</p>
@@ -409,24 +407,25 @@
                             <pb facs="diefragmentederv02dieluoft_0110"/>
                         <p rend="indent"><bibl xml:lang="lat">p. 232, 21</bibl> ἐν δὲ τῇ κ̄θ̄ Δ—ῳ
                             ἄρχεται Ὠρίων ἐπιτέλλειν καὶ φιλεῖ ἐπισημαίνειν ἐπ’ αὐτῶι.</p></div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="4">
+                
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_4">
                             <p rend="indent" xml:lang="lat"><label>4.</label> <bibl xml:lang="lat">PLIN. n. h. XVIII 231.</bibl> D. talem futuram hiemen arbitratur
                                 qualis fuerit brumae dies et circa eum terni, item solstitio aestatem. (<bibl xml:lang="lat">Vgl. THEOPHR. q. f. de sign. 57.</bibl>)
                                 312 dein consentiunt, quod est rarum, Philippus . . . Democritus, Eudoxus IIII Kal. Oct. [28. Sept.] Capellam matutino exoriri 
                             et III Kal. [29. Sept.] Haedos.</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="5">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_5">
                             <p rend="indent"><label>5.</label> <bibl xml:lang="lat">SCHOL. APOLL. RHOD. B 1098</bibl> <q rend="single">Ζεὺς δ’
                                 ἀνέμου βορέαο μένος κίνησεν ἀῆναι, ὕδατι 
                             σημαίνων διερὴν ὁδὸν Ἀρκτούροιο</q>] τοῦτο δὲ ἔφη, ἐπεὶ κατὰ τὴν ἐπιτολὴν τοῦ Ἀρκτούρου σφοδροὶ καταχέονται ὄμβροι, ὥς
                             φησι Δ. ἐν τῷ Περὶ ἀστρονομίας καὶ Ἄρατος [<bibl xml:lang="lat">Phaen. 744</bibl>].</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="6">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_6">
                             <p rend="indent"><label>6.</label> <bibl xml:lang="lat">CLODII CALEND. in Lydus de ost. ed. Wachsm.² p. 157, 18</bibl>
                             καὶ ταῦτα μὲν ὁ Κλώδιος ἐκ τῶν παρὰ Θούσκοις ἱερῶν πρὸς λέξιν· καὶ οὐκ αὐτὸς μόνος, ἀλλὰ μὴν καὶ Εὔδοξός τε ὁ πολύς,
                             Δημόκριτος πρῶτος αὐτῶν, Βάρρων τε ὁ Ῥωμαῖος κτλ.</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="7">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_7">
                             <p rend="indent"><label>7.</label> <bibl xml:lang="lat">PTOLEM. apparit. epileg. ebenda p. 275,1</bibl> καὶ τούτων ἀνέγραψα 
                             τὰς ἐπισημασίας καὶ κατέταξα κατά τε Αἰγυπτίους καὶ Δοσίθεον . . . Δημόκριτον. τούτων δὲ Αἰγύπτιοι ἐτήρησαν παρ’ ἡμῖν . . .
                             Δ. ἐν Μακεδονίαι καὶ Θράικῃ. διὸ δὴ μάλιστα ἄν τις ἐφαρμόζοι τὰς μὲν τῶν Αἰγυπτίων ἐπισημασίας ταῖς περὶ τοῦτον τὸν 
@@ -487,7 +486,7 @@
                             <p rend="indent"><bibl xml:lang="lat">p. 271, 22.</bibl> <foreign xml:lang="lat">Mesori</foreign> κ̄Ϛ̄ 
                                 [<foreign xml:lang="lat">19. August</foreign>] Δ—ῳ ἐπισημαίνει ὕδασι καὶ ἀνέμοις.</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:14" n="8">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14_8">
                             <p rend="indent"><label>8.</label> <bibl xml:lang="lat">IOANN. LYD. de mens. IV 16ff. (Kalender).</bibl></p>
                             <p rend="indent"><bibl xml:lang="lat">p. 78, 15 </bibl> <foreign xml:lang="lat">Wünsch [Jan. 15]</foreign> Δ—ος
                                 δὲ τὸν λίβα μετὰ ὄμβρου φησὶ γίνεσθαι.</p>
@@ -502,7 +501,7 @@
 
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14a">
                         <p rend="indent"><label xml:lang="lat">[VIII 4]</label> <title>ΑΜΙΛΛΑ ΚΛΕΨΥΔΡΑΙ <foreign xml:lang="lat">[?]</foreign>.</title></p></div>
-                    </div>
+                    
 
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="14b">
                         <p rend="indent"><label xml:lang="lat">[IX 1]</label> <title>ΟΥΡΑΝΟΓΡΑΦΙΗ</title></p>
@@ -1095,7 +1094,7 @@
                         </div>
 
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="107a">
-                        <p rend="indent">107ᵃ. <label xml:lang="lat">[219 N.]</label> <bibl> — 74.</bibl> ἄξιον ἀνθρώπους ὄντας ἐπ’ ἀνθρώπων 
+                        <p rend="indent"><label xml:lang="lat">107ᵃ.</label> <label xml:lang="lat">[219 N.]</label> <bibl> — 74.</bibl> ἄξιον ἀνθρώπους ὄντας ἐπ’ ἀνθρώπων 
                             συμφοραῖς μὴ γελᾶν, ἀλλ’ ὀλοφύρεσθαι.</p>
                         </div>
 
@@ -1211,12 +1210,11 @@
                             </div>
                         
                         <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="124">
-                            <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:124" n="1">
                                 <p rend="indent"><bibl xml:lang="mul">[GALEN.] defin. med. 439 [XIX 449 K.]</bibl>
                                 ἐκκρίνεται τὸ σπέρμα <pb facs="diefragmentederv02dieluoft_0131"/> ὥσπερ Πλάτων φησὶ καὶ Διοκλῆς [fr. 170 S. 196] ἀπὸ
                                 ἐγκεφάλου καὶ νωτιαίου· Πραξαγόρας δὲ καὶ Δ. ἔτι τε Ἱπποκράτης ἐξ ὅλουτοῦ σώματος, ὁ μὲν Δ. λέγων <q rend="single">ἄνθρωποι 
-                                εἷς ἔσται καὶ ἄνθρωπος πάντες</q> [?].</p>
-                        </div>
+                                εἷς ἔσται καὶ ἄνθρωπος πάντες</q> [?].</p></div>
+                        
 
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="125">
                             <p rend="indent"><bibl xml:lang="mul">GALEN. de medic. empir. fr. ed. H. Schoene [Berl. Sitx. Ber. 1901] 1259, 8</bibl>
@@ -2231,8 +2229,6 @@
                             <p rend="indent"><bibl>*— — 80. 81</bibl> Δημοκρίτου = <bibl xml:lang="lat">Herod. III 134.</bibl></p>
                         </div>
 
-                        </div>
-
                     <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="297">
                         <p rend="indent"><label xml:lang="lat">[92 N.]</label> <bibl> — 52, 40 [IV 34, 62]</bibl> Δ—ου. ἔνιοι θνητῆς φύσεως διάλυσιν
                             οὐκ εἰδότες ἄνθρωποι, συνειδήσει δὲ τῆς ἐν τῷ βίῳ κακοπραγμοσύνης, τὸν τῆς βιοτῆς χρόνον ἐν ταραχαῖς καὶ φόβοις ταλαιπωρέουσι, 
@@ -2315,7 +2311,7 @@
                                 Περὶ σημείων τῶν ἐξ ἡλίου καὶ σελήνης καὶ ἄρκτου καὶ λύχνου καὶ ἴριδος. <foreign xml:lang="deu">Aus anderer Quelle</foreign>
                                 Βῶλος Δημοκρίτ(ει)ος φιλόσοφος Ἱστορίαν καὶ Τέχνην ἰατρικήν (ἔχει δὲ ἰάσεις φυσικὰς ἀπό τινων βοηθημάτων τῆς φύσεως).</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_2">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_2">
                             <p rend="indent" xml:lang="lat"><label>2.</label> <bibl xml:lang="lat">VITRUV. IX 1, 14</bibl> admiror etiam Democriti De rerum natura volumina et eius commentarium
                                 quod inscribitur <foreign xml:lang="grc">Χειροκμήτων</foreign>, in quo etiam utebatur anulo, 〈ut〉 signaret cera molli quae 
                                 esset expertus. <bibl xml:lang="lat">PLIN. XXIV 160</bibl> Democriti certe Chirocmeta esse constat; at in his ile post Pythagoram Magorum 
@@ -2324,7 +2320,7 @@
                                 marmoribus Arabiae nascentem Persico (?) latere, qua de causa et marmaritim vocari. hac Magos uti, eum velint deos evocare. 
                                 (<bibl>167</bibl>) adiecit his Apollodorus adsecator eius [<bibl xml:lang="mul">vgl. unten c. 61</bibl>] herbam aeschynomenen.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_3">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_3">
                             <p rend="indent" xml:lang="lat"><label>3.</label> <bibl xml:lang="lat">COLUM. VII 5, 17</bibl> sed Aegyptiae gentis auctor memorabilis Bolus Mendesius, 
                                 cuius commenta quae appellantur graece <foreign xml:lang="grc">Χειρόκμητα</foreign> sub nomine Democriti falso produntur,
                                 censet propter hanc [pusula, Rotlauf] saepius ac diligenter ovium terga perspicere, ut si forte sit in aliqua tale vitium 
@@ -2337,20 +2333,20 @@
                                 <foreign xml:lang="grc">Περὶ ἀντιπαθῶν</foreign> affirmat has ipsas bestiolas [Raupen] enecari, si mulier quae in menstruis
                                 est solutis crinibus et nudo pede unamquamque aream ter circumeat: post hoc enim decidere omnes vermiculos et ita emori.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_4">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_4">
                             <p rend="indent"><label>4.</label> <bibl xml:lang="lat">SCHOL. NICANDR. Ther. 764</bibl> βῶλος δὲ ὁ Δημοκρίτειος ἐν τῷ Περὶ συμπαθῶν καὶ ἀντιπαθῶν
                                 Πέρσας φησὶν ἔχοντας παρ’ ἑαυτοῖς θανάσιμον φυτὸν φυτεῦσαι ἐν Αἰγύπτῳ ὡς πολλῶν μελλόντων ἀναιρεθήσεσθαι, τὴν δὲ ἀγαθὴν οὖσαν
                                 εἰς τοὐναντίον μεταβαλεῖν ποιῆσαί τε τὸ φυτὸν καρπὸν γλυκύτατον.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:300" n="4a">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_4a">
                             <p rend="indent"><label>5.</label> <bibl xml:lang="lat">CRATEUAS ed. M. Wellmann 18,14 [Abh. d. G. G. d. V. N. F. II 1]</bibl> Ἀναγαλλίδες . . . 
                                 χρῶνται δ’ αὐτῇ καὶ εἰς τὰς Δημοκρίτου δυνάμεις.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_5">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_5">
                             <p rend="indent"><label>6.</label> <bibl xml:lang="lat">PLUT. quaest. conv. II 7, 1 p. 641 B</bibl> ἦσαν δὲ καὶ οἱ τὰς ἀντιπαθείας θρυλοῦντες καὶ 
                                 ἄλλα πολλὰ παθόντων (?) ἦν ἀκούειν· ὅτι μαινόμενον ἐλέφαντα καταπαύει κριὸς ὀφθείς κτλ.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_6">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_6">
                             <p rend="indent" xml:lang="lat"><bibl xml:lang="lat">PLIN. hist. nat. XXV 23</bibl> [nach Pythagoras, qui volumen De effectu herbarum composuit] 
                             composuit et Democritus, ambo peragratis Persidis, Arabiae, Aethiopiae, Aegypti magis; adeoque ad haec attonita antiquitas 
                             fuit, ut adfirmaverit etiam incredibilia dictu. <bibl xml:lang="lat">PETRON. 88, 2</bibl> priscis enim temporibus, cum adhuc nuda virtus placeret, 
@@ -2358,7 +2354,7 @@
                             omnium sucos<pb facs="diefragmentederv02dieluoft_0173"/>Democritus expressit, et ne lapidum virgultorumque vis lateret 
                             aetatem inter ex. perimenta consumpsit.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_7">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_7">
                             <p rend="indent"><label>7.</label> <bibl xml:lang="lat">GAL. de simpl. medic. XIII 250 sq. [vgl. unten n. 13<hi rend="superscript">a</hi>]</bibl> 
                                 παραπλήσια δὲ τῷ Ξενοκράτει καὶ ἄλλοι τινὲς ἔγραψαν περὶ ζώιων, ἐξ ὧν καὶ αὐτὸς ὁ Ξενοκράτης ἐξεγράψατο τὰ πλεῖστα. πόθεν γὰρ 
                                 ἂν ηὐπόρησε τοσούτων τε καὶ τοιούτων πραγμάτων αὐτὸς πειραθῆναι; ὁ γοῦν ἡμέτερος γενόμενός ποτε βασιλεὺς Ἄτταλος ἐλάττονα 
@@ -2373,7 +2369,7 @@
                                 <bibl xml:lang="lat">IV 13,2</bibl> viperarum morsibus tibicinium scite modulateque adhibitum mederi refert etiam Democriti liber qui 
                                 inscribitur * * * in quo docet plurimis hominum morbidis medicinae fuisse incentiones tibiarum.)</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:300" n="7a">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_7a">
                             <p rend="indent"><label>7.</label> <foreign xml:lang="deu">Als Probe</foreign>: <bibl xml:lang="lat">ANON. ROHDEI (Kl. Schr. I 397)</bibl> 
                                 Δ. δὲ ἱστορεῖ ὡς καὶ αὐτόπτης τοῦ ζωίου γεγονὼς ταῦτα· <q rend="single">ὁ βασιλίσκος ὁ κινάδης (οὕτω γὰρ αὐτὸν καλεῖ),
                                 ἔστι μὲν κατὰ τὸ σῶμα ὀλίγος, νωθὴς δὲ κατὰ τὴν κίνησιν, ὀξυκέφαλος, ἀστεροειδὲς βασίλειον ἔχων ἐπὶ τῆς κεφαλῆς,
@@ -2385,7 +2381,7 @@
                                 [Physici ed. Id. I 178]</bibl>, <foreign xml:lang="deu">der Demokrit neben Bolos als Quelle siliert</foreign> 
                                 <bibl xml:lang="lat">quaest. phys. p. 27 ed. Boiss.</bibl></p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_8">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_8">
                             <p rend="indent"><label>8.</label> <foreign xml:lang="deu">Naturgeschichtliche Mirabilien und Sympathiemittel aus Democritus häufig bei</foreign>
                                 <bibl xml:lang="lat">PLINIUS: VIII 61.</bibl> <bibl xml:lang="lat">XI 80.</bibl> <bibl xml:lang="lat">XIII 131.</bibl> <bibl xml:lang="lat">XIV 20.</bibl>
                                 <bibl xml:lang="lat">XV 138.</bibl> <bibl xml:lang="lat">XVII 23.</bibl> <bibl xml:lang="deu">62 [vgl. d. Georgikon B 26f].</bibl> <bibl xml:lang="lat">XVIII 47.</bibl>
@@ -2405,12 +2401,10 @@
                                 <bibl xml:lang="lat">SCHOL. BASIL. ed. Pasquali</bibl> <bibl xml:lang="deu">[Gött. Nachr. 1910, 200]</bibl> 
                                 ἔστιν Δημοκρίτου πραγματεία τὰ Φρεωρυχικά, καὶ ἄλλοι ἔγραψαν Ὑδροσκοπικά.</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_9">
-                            <p rend="indent" xml:lang="deu">9. Aus <bibl xml:lang="lat">Ael. N. H. I 35-38. VII 7. 8</bibl> und Anatolios [<bibl xml:lang="lat">Geopon. B. XIII und XV</bibl>]
-                                schöpft die byzantinische Fälschung <foreign xml:lang="grc">Δημοκρίτου Περὶ συμπαθειῶν καὶ ἀντιπαθειῶν</foreign>
-                                ed. W. Gemoll Striegau 1884.</p>
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_9">
+                            <p rend="indent" xml:lang="deu"><label>9.</label> <bibl xml:lang="lat">Aus Ael. N. H. I 35-38. VII 7. 8</bibl> und Anatolios [<bibl xml:lang="lat">Geopon. B. XIII und XV</bibl>] schöpft die byzantinische Fälschung <foreign xml:lang="grc">Δημοκρίτου Περὶ συμπαθειῶν καὶ ἀντιπαθειῶν</foreign> ed. W. Gemoll Striegau 1884.</p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_10">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_10">
                             <p rend="indent"><label>10.</label> <foreign xml:lang="deu">Umfangreich war in</foreign> <bibl xml:lang="mul">Bolos’ ΠΕΡΙ ΑΝΤΙΠΑΘΕΙΩΝ</bibl> 
                             <foreign xml:lang="deu">offenbar der die menschlichen Krankheiten umfasende Teil.</foreign> <bibl xml:lang="lat">CELSUS
                                 I prooem. p. 2, 11 Dar.</bibl> <foreign xml:lang="lat">ideoque multos et sapientiae 
@@ -2433,7 +2427,7 @@
                                 <bibl xml:lang="lat">THEODOR. PRISC. phys. IV 3 p. 251, 1 Rose.</bibl> <bibl xml:lang="lat">S. B 
                                     26<hi rend="superscript">b</hi> II 68, 28.</bibl></p>
                             </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_11">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_11">
                             <p rend="indent"><label>11.</label> <foreign xml:lang="deu">Excerpte im</foreign> <bibl xml:lang="lat">VATIC. gr. 299 f. 304 ff.</bibl>
                                 <foreign xml:lang="deu">[Rohde Kl. Schr. I 383, ediert von M. Wellmann Berl. Sitz. Ber. 1908 625 ff]</foreign>
                                 Δημοκράτους [so] κεφαλαλγία Δημοκρίτου περὶ ὀφθαλμῶν, Δημοκρίτου Ἀβδηρίτου περὶ ὀφθαλμῶν φλεγμονῆς, Δ—ου πρὸς
@@ -2444,7 +2438,7 @@
                                 <foreign xml:lang="deu">Folgt Rezept.</foreign></p></div>
 <pb facs="diefragmentederv02dieluoft_0175"/>
                 
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_12">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_12">
                             <p rend="indent"><label>12.</label> <foreign xml:lang="deu">Die graulichsten Sympathiemittel scheinen in Περὶ συμπαθειῶν mit dem Namen 
                                 des Magiers Ostanes [oder Osthanes] verknüpft gewesen zu sein.</foreign> <bibl xml:lang="lat">TATIAΝ. 17 p. 18, 15</bibl>
                                 [<foreign xml:lang="deu">nach</foreign> <bibl>ὁ ἀπὸ τῶν Ἀβδήρων ἄνθρωπος II 128, 24</bibl>] ὥσπερ δὲ ὁ τῇ πόλει 
@@ -2455,7 +2449,7 @@
                                 quae sciant fieri, ut olim fuere Epimenides et Orpheus et Pythagoras et 0stanes.</foreign> <bibl xml:lang="lat">Vgl.
                                 ZACHARIAS</bibl> Scholasticus Vie de Sevère ed. <bibl xml:lang="deu">Kugener S. 62.</bibl></p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_13">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_13">
                             <p rend="indent" xml:lang="lat"><label>13.</label> <bibl xml:lang="lat">PLIN. n. hist. XXX 8 ff.</bibl> primus quod extet, ut equidem invenio, commentatus 
                                 est de ea [<foreign xml:lang="deu">nämlich magia</foreign>] Osthanes Xerxen regem Persarum bello quod is Graeciae
                                 intulit comitatus ac velut semina artis portentosae sparsit obiter infecto quacumque commeaverat mundo. diligentiores
@@ -2471,8 +2465,8 @@
                                 Graeciae bellum, quod gestum est a : ccc. urbis nostrae anno ... (11) non levem et Alexandri Magni temporibus auctoritatem 
                                 addidit professioni secundus Osthanes comitatu eius exornatus planeque, quod nemo dubitet, orbem terrarum peragravit.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1:300" n="13a">
-                            <p rend="indent">13a. <bibl xml:lang="lat">GAL. de simpl. med. X 1 [XII 288 K.]</bibl> ἔνια μὲν γὰρ αὐτῶν 
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_13a">
+                            <p rend="indent"><label xml:lang="lat">13a.</label> <bibl xml:lang="lat">GAL. de simpl. med. X 1 [XII 288 K.]</bibl> ἔνια μὲν γὰρ αὐτῶν 
                                 [<foreign xml:lang="deu">Arzneimittel</foreign>] ἀσελγῆ τέ ἐστι καὶ βδελυρά, τινὰ δὲ καὶ πρὸς τῶν νόμων ἀπηγορευμένα,
                                 περὶ ὧν οὐκ οἶδα, πῶς ἔγραψεν ὁ Ξενοκράτης, ἄνθρωπος οὐ πάλαι γεγονώς, ἀλλὰ κατὰ τοὺς πάππους ἡμῶν, τῆς Ῥωμαϊκῆς 
                                 βασιλείας ἀπηγορευκυίας ἀνθρώπους ἐσθίειν, ἀλλ’ ἐκεῖνός γε ὡς αὐτὸς πεπειραμένος ἀξιοπίστως πάνυ γράφει, τίνα πάθη 
@@ -2491,15 +2485,15 @@
                                 <bibl xml:lang="lat">PEBECHIOS b. Berthelot Chim.</bibl> <foreign xml:lang="fre">au moyen âge</foreign> 
                                 <bibl xml:lang="lat">II 309f.</bibl></p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_14">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_14">
                             <p rend="indent" xml:lang="lat"><label>14.</label> <bibl xml:lang="lat">SENEC. ep. 90, 32</bibl> <q rend="single">Democritus</q> inquit [Poseidonios]
                                 <q rend="single">invenisse dicitur fornicem, ut lapidum curvatura paulatim inclinatorum medio saxo 
                             alligaretur</q>. hoc dicam falsum esse; necesse est enim ante Democritum et pontes et portas fuisse, quarum fere summa curvantur.
                             excidit porro vobis eundem Democritum invenisse, quemadmodum ebur molliretur, quemadmodum decoctus calculus in smaragdum 
                             converteretur, qua hodieque coctura inventi lapides 〈in〉 hoc utiles colorantur.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_15">
-                            <p rend="indent" xml:lang="deu">15. An den teilweise bereits alchemistischen Charakter der <foreign xml:lang="grc">Χειρόκμητα</foreign>
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_15">
+                            <p rend="indent" xml:lang="deu"><label>15.</label> An den teilweise bereits alchemistischen Charakter der <foreign xml:lang="grc">Χειρόκμητα</foreign>
                                 (<bibl xml:lang="lat">B 300, 14</bibl>) knüpft im Ausgang des Altertums die Schwindellitteratur der Goldmacherzunft an. In der 
                                 verlorenen Schriff Δημοκρίτου Φυσικὰ καὶ μυστικά erscheint D. als Adept des Magiers 0stanes, der ihn im Tempel zu Memphis in 
                                 die alten Schriften einweiht, aus denen dann D. Auszüge mitteilt. Fünf Hauptschriften werden genannt: 
@@ -2507,14 +2501,14 @@
                                 3. <foreign xml:lang="grc">Περὶ λίθων</foreign>, 4. <foreign xml:lang="grc">Περὶ πορφύρας</foreign>, 
                                 5. <foreign xml:lang="grc">Πρὸς Λεύκιππον</foreign>. Exzerpte daraus bei:</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_16">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_16">
                             <p rend="indent"><label>16.</label> <bibl xml:lang="lat">SYNCELL. I 471 Dind.</bibl> Δ. Ἀβδηρίτης
                             φυσικὸς φιλόσοφος ἤκμαζεν. ἐν Αἰγύπτῳ μυηθεὶς ὑπὸ Ὀστάνου τοῦ Μήδου σταλέντος ἐν Αἰγύπτῳ παρὰ τῶν τηνικαῦτα βασιλέων Περσῶν
                             ἄρχειν τῶν ἐν Αἰγύπτῳ ἱερῶν ἐν τῷ ἱερῷ τῆς Μέμφεως σὺν ἄλλοις ἱερεῦσι καὶ φιλοσόφοις, ἐν οἷς ἦν καὶ Μαρία τις Ἑβραία σοφὴ καὶ 
                             Παμμένης, συνέγραψε περὶ χρυσοῦ καὶ ἀργύρου καὶ λίθων καὶ πορφύρας λοξῶς, ὁμοίως δὲ καὶ Μαρία. ἀλλ’ οὗτοι μὲν Δ. καὶ Μαρία 
                             ἐπῃνέθησαν παρὰ Ὀστάνου ὡς πολλοῖς καὶ σοφοῖς αἰνίγμασι κρύψαντες τὴν τέχνην, Παμμένους δὲ κατέγνωσαν ἀφθόνως γράψαντος.</p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_17">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_17">
                             <p rend="indent"><label>17.</label> <bibl xml:lang="lat">[SYNES.] ad Dioscorum comment in Democr. [Berthelot Coll. d. Alchim. I 56, 7]</bibl>
                                 Δ. ἐλθὼν ἀπὸ Ἀβδήρων φυσικὸς ὢν καὶ πάντα 
                             τὰ φυσικὰ ἐρευνήσας καὶ συγγραψάμενος τὰ ὄντα κατὰ φύσιν. Ἄβδηρα δέ ἐστι πόλις Θράικης· ἐγένετο
@@ -2524,7 +2518,7 @@
                             γὰρ ἦν πρῶτος ὁ γράψας ὅτι <q rend="single">ἡ φύσις τῇ φύσει τέρπεται καὶ ἡ φύσις τὴν φύσιν κρατεῖ καὶ ἡ φύσις τὴν φύσιν νικᾶι</q> κτλ. 
                                 [= <bibl xml:lang="deu">"Nechepso fr. 28, 4 Riess Philolog. VI Suppl. 379. Kopp. a. O. S. 130</bibl>]. </p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_18">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_18">
                             <p rend="indent"><label>18.</label> <foreign xml:lang="deu">Auszüge aus dieser Tetrabiblos unter dem Titel</foreign> Δημοκρίτου φυσικὰ
                                 καὶ μυστικά <foreign xml:lang="deu">in</foreign> <bibl xml:lang="deu">Berthelots Coll. d. Alchim. I p. 41 ff.</bibl>
                                 <foreign xml:lang="deu">Probe: p. 43, 14</foreign> ὡς οὖν ἦμεν ἐν τῷ ναῷ ἐξ αὐτομάτου στήλη τις [ἢ κιόνιον] διαρρήγνυται,
@@ -2555,7 +2549,7 @@
                                 ποιήσεως [<foreign xml:lang="deu">abgedr. bei</foreign> <bibl xml:lang="deu">Berthelot I 49</bibl>] <foreign xml:lang="deu">unter 
                                 Demokrits Namen besonders aufgeführt.</foreign></p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_19">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_19">
                             <p rend="indent"><label>19.</label> <foreign xml:lang="deu">Die Anfänge der Goldmacherkunst zeigt bereits Nr. 1 der Rezeptsammlung des</foreign>
                                 <bibl xml:lang="mul">PAPYR. LONDIN. 121 [III. Jahrh. n. Chr.] c. 5ᵇ v. 168 [Kenyon Greek Pap. in the Br. Mus. 
                                     (I 1893) S. 89</bibl>: 
@@ -2573,7 +2567,7 @@
                                     <lb rend="indent"/><label>ῑᾱ.</label> πολλὰ βινεῖν δύνασθαι: στροβίλια πεντήκοντα μετὰ δύο κυάθων γλυκεῖς [<foreign xml:lang="lat">so</foreign>] καὶ κόκκους πεπέρεως τρίψας πίε.
                                     <lb rend="indent"/><label>ῑβ̄.</label> στύειν, ὅτε θέλεις: πέπερι. μετὰ μέλιτος τρίψας χρῖέ σου τὸ π[έλ]μα.</quote></p>
                         </div>
-                        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_20">
+                        <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1304.tlg002.1st1K-grc1" n="300_20">
                             <p rend="indent"><label>20.</label> <bibl xml:lang="lat">PAPYR. MAGIC. LUGD. 384 IV. Jahrh. n. Chr. [Dieterich Jahrb. f. d. Ph. Suppl. XVI 813]</bibl> Δημοκρίτου Σφαῖρα. Προγνωστικὸν ζωῆς καὶ θανάτου. γνῶθι πρὸς τίνα σελήνην ἀνέπεσε νοσῶν καὶ τὸ ὄνομα τὸ ἐκ γενετῆς· συμψήφισον τὴν σελήνην [<foreign xml:lang="lat">Monatsdatum</foreign>] καὶ βλέπε, πόσαι τριακάδες γίνονται καὶ τὰ περιλειπόμενα τοῦ ἀριθμοῦ κατανόησον εἰς τὴν σφαῖραν καὶ ἂν ἦι ἄνω ἡ ψῆφος, ζήσει, ἐὰν δὲ κάτω, τελευτήσει.</p></div>
 <pb facs="diefragmentederv02dieluoft_0179"/>
 
