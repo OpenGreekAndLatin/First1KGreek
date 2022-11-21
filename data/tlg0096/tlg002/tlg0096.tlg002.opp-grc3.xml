@@ -59,13 +59,12 @@
                <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
               
                <refsDecl n="CTS">
-     <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-     <p>This pointer pattern extracts fable and section.</p>
-     </cRefPattern>
-     <cRefPattern matchPattern="(\w+)" n="fable" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-      <p>This pointer pattern extracts fable.</p>
-    </cRefPattern>
+                    <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                         <p>This pointer pattern extracts fable and section.</p></cRefPattern>
+                    <cRefPattern matchPattern="(\w+)" n="fable" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                         <p>This pointer pattern extracts fable.</p></cRefPattern>
                </refsDecl>
+              
           </encodingDesc>
           <profileDesc>
                <langUsage>
@@ -78,8 +77,7 @@
           </revisionDesc>
      </teiHeader>
      <text>
-          <body>
-               
+          <body>         
 <div type="edition" n="urn:cts:greekLit:tlg0096.tlg002.opp-grc3" xml:lang="grc"> 
  <pb facs="894469813v1_0009"/> 
 
