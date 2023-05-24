@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="mul">Περὶ ψυχῆς (fragmentum)</title>
+        <author xml:lang="lat">Severus Philosophus</author>
+        <editor>Friedrich Wilhelm August Mullach</editor>
+        <funder>Center for Hellenic Studies</funder>
+      <respStmt>
+        <resp>Published original versions of the electronic texts</resp>
+        <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+        <persName role="principal">Gregory Crane</persName>
+        <persName role="principal">Leonard Muellner</persName>
+        <persName role="principal">Bruce Robertson</persName>
+      </respStmt>
+        <respStmt>
+          <persName>Jan Peternelj</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Houghton</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg2970.tlg001.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+       <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-07-22" />
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author xml:lang="lat">Severus Philosophus</author>
+          <title xml:lang="lat">Fragmenta Philosophorum Graecorum</title>
+          <editor>Friedrich Wilhelm August Mullach</editor>
+          <imprint>
+            <pubPlace>Paris</pubPlace>
+            <publisher>Firmin-Didot</publisher>
+            <date>1881</date>
+          </imprint>
+          <biblScope unit="volume">3</biblScope>
+        </monogr>
+        <ref target="https://archive.org/details/fragmentaphiloso03mulluoft/page/204/mode/1up">Internet Archive</ref>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+       <p>Lace v. 0.6.20 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+   <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+    <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>This pointer pattern extracts fragment.</p>
+    </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2022-06-10" who="Lisa Cerrato">Markup review.</change>
+    <change when="2022-01-21" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg2970.tlg001.1st1K-grc1" xml:lang="grc">
+      <pb facs="fragmentaphiloso03mulluoft_0220"/>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg2970.tlg001.1st1K-grc1" n="1">
+        <p rend="indent"> Περὶ δὲ τῆς κατὰ Πλάτωνα ψυχῆς, ἥν φησιν ἐξ ἀπαθοῦς καὶ παθητῆς οὐσίας συστῆναι ὑπὸ τοῦ θεοῦ, ὡς ἐκ λευκοῦ καὶ μέλανος τῶν μέσων τι χρωμάτων, ἐκεῖνα ἔχομεν εἰπεῖν· ὅτι ἀνάγκη, χρόνῳ διαστάσεως αὐτῶν γιγνομένης, ἀφανισθῆναι αὐτήν, ὡς τὴν τοῦ μέσου χρώματος σύστασιν, ἐπὶ τὰ οἰκεῖα ἑκάστου ἐξ ὧν συνέστη, ἐν χρόνῳ φύσει χωριζομένου. Εἰ δὲ τοῦτο, φθαρτὴν ἀποφανοῦμεν, ἀλλ’ οὐκ ἀθάνατον τὴν ψυχήν. Εἰ γὰρ τοῦτο ὁμολογεῖται, μηδὲν τῶν ἐν τῇ φύσει ὄντων ἄνευ τοῦ ἐναντίου εἶναι, τά τε ἐν τῷ κόσμῳ ἐκ τῆς τῶν ἐναντίων φύσεως ὑπὸ θεοῦ κεκοσμῆσθαι, φιλίαν αὐτοῖς καὶ κοινωνίαν ἐμποιήσαντος αὐτοῦ, οἷον τῷ ξηρῷ πρὸς τὸ ὑγρόν, καὶ τῷ θερμῷ πρὸς τὸ ψυχρόν, τῷ τε βαρεῖ πρὸς τὸ κοῦφον, λευκῷ τε πρὸς τὸ μέλαν, γλυκεῖ τε πρὸς τὸ πικρόν, σκληρῷ τε πρὸς τὸ μαλακόν, τῇ τε ἀπαθεῖ οὐσίᾳ πρὸς τὴν παθητήν, καὶ πᾶσι τοῖς τοιούτοις μίαν ἄλλην πάντων κοινωνίαν· τὰ δὲ κραθέντα καὶ μιχθέντα χωρισμὸν τὸν ἀπ’ ἀλλήλων ἐν χρόνῳ φύσει ἐπιδέχεται· ἡ δὲ ψυχὴ ἐξ ἀπαθοῦς καὶ παθητῆς οὐσίας γεγονέναι ὑποκείσεται, ἀνάγκη ὡς τὸ μέσον χρῶμα, οὕτω καὶ ταύτην ἐν χρόνῳ φύτει ἀφανισθῆναι, τῶν ἐν τῇ συστάσει αὐτῆς ἐναντίων ἐπὶ τὴν οἰκείαν φύσιν ἐπειγομένων. Ἦ γὰρ οὐχ ὁρῶμεν καὶ τὸ φύσει βαρύ, κᾂν ὑφ’ ἡμῶν, ἤ τινος ἔξωθεν φυσικῆς προσγενομένης αὐτῷ κουφότητος, ἄνω φέρηται, ὡς αὐτὸ ὁμοίως ἐπὶ τὴν οἰκείαν φύσιν κάτω βιάζεται; ὁμοίως δὲ καὶ τὸ φύσει κοῦφον, κατὰ τὰς ὁμοίας ἔξωθεν αἰτίας κάτω φερόμενον, ὡς αὐτὸ ὁμοίως ἐπὶ τὰ ἄνω βιάζεται; Τὰ γὰρ ἐκ δύο τινῶν ἀλλήλοις ἐναντίων εἰς ταὐτὸν συναχθέντα, ἀδύνατον ἐν τῷ αὐτῷ ἀεὶ εἶναι, μὴ τρίτου τινὸς τῆς τῶν ὄντων οὐσίας ἀεὶ ἐνόντος αὐτοῖς. Ἀλλὰ γὰρ οὐκ ἔστι ψυχὴ τρίτον τι πρᾶγμα ἐκ δύο ἐναντίων ἀλλήλοις σύνθετον, ἁπλοῦν δὲ καὶ τῇ αὐτοῦ φύσει ἀπαθὲς καὶ ἀσώματον. Ὅθεν Πλάτων καὶ οἱ μετ’ αὐτοῦ ἀθάνατον αὐτὴν ἔφασαν εἶναι. Ἐπειδὴ δὲ τὸν ἄνθρωπον ἐκ ψυχῆς καὶ σώματος κοινός ἐστι πάντων λόγος γεγονέναι, τὰ δ’ ἐν ἡμῖν ἄνευ σώματος ἑκουσίως <pb facs="fragmentaphiloso03mulluoft_0221"/> καὶ ἀκουσίως γιγνόμενα πάθη, τῆς ψυχῆς εἶναι λέγεται, οἱ μὲν πολλοὶ τούτῳ τεκμαιρόμενοι παθητὴν εἶναι τὴν οὐσίαν αὐτῆς, θνητὴν αὐτὴν εἶναι λέγουσι, καὶ σωματοειδῆ, ἀλλ’ οὐκ ἀσώματον. Ὁ δὲ Πλάτων, τῷ φύσει αὐτῆς ἀπαθεῖ προσηναγκάσθη τὴν παθητὴν οὐσίαν προσυφᾶναι. Ὅτι δὲ μὴ ἑτέρως ἔχει, ἐξ ὧν ἑκάτεροι εἰρήκασι, Πλάτων τε καὶ οἱ ἄλλοι, πειρασόμεθα τῷ λόγῳ, τὰς ἐν ἡμῖν ἐνεργούσας δυνάμεις παραθέντες, προσβιβάσαι. Ταῦτά μοι ἀπὸ τῶν Σεβήρου τοῦ Πλατωνικοῦ περὶ ψυχῆς προκείσθω.</p>
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>

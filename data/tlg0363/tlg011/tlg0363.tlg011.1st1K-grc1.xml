@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader xml:lang="eng">
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="lat">Musica</title>
+				<author xml:lang="lat">Claudius Ptolemaeus</author>
+				<editor>Karl von Jan</editor>
+				<funder>Harvard Library Arcadia Fund</funder>
+				<principal>Gregory Crane</principal>
+				<respStmt>
+					<persName xml:id="DDD">Digital Divide Data</persName>
+					<resp>Corrected and encoded the text</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Gregory Crane</persName>
+					<resp>Editor-in-Chief, Perseus Digital Library</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Matt Munson</persName>
+					<resp>Project Manager (University of Leipzig)</resp>
+				</respStmt>
+				<respStmt>
+					<persName xml:lang="deu">Annette Geßner</persName>
+					<resp>Project Assistant (University of Leipzig)</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Thibault Clérice</persName>
+					<resp>Lead Developer (University of Leipzig), 2015 - 2017</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Bruce Robertson</persName>
+					<resp>Technical Advisor</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<authority>Harvard College Library</authority>
+				<idno type="filename">tlg0363.tlg011.1st1K-grc1.xml</idno>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+						License</licence>
+				</availability>
+				<date>2017</date>
+				<publisher>Harvard College Library</publisher>
+				<pubPlace>United States</pubPlace>
+			</publicationStmt>
+			<sourceDesc>
+				<listBibl>
+					<biblStruct>
+						<monogr>
+							<title xml:lang="lat">Musici scriptores Graeci</title>
+							<editor>
+								<persName>
+									<name>Karl von Jan</name>
+								</persName>
+							</editor>
+							<author ref="urn:cts:greekLit:tlg0363" xml:lang="lat">Claudius Ptolemaeus</author>
+							<imprint>
+								<publisher>Teubner</publisher>
+								<pubPlace>Leipzig</pubPlace>
+								<date>1895</date>
+							</imprint>
+						</monogr>
+						<ref target="http://catalog.hathitrust.org/Record/001227462">Hathi Trust</ref>
+					</biblStruct>
+				</listBibl>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p>Text encoded in accordance with the latest EpiDoc standards</p>
+			<refsDecl n="CTS">
+				<cRefPattern matchPattern="(.+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+			</refsDecl>
+		</encodingDesc>
+		<profileDesc>
+			<langUsage>
+				<language ident="grc">Greek</language>
+				<language ident="lat">Latin</language>
+				<language ident="deu">German</language>
+			</langUsage>
+		</profileDesc>
+		<revisionDesc>
+			<change who="Charlotte Houghton" when="2018-06-14">formatted figures and layout of text</change>
+		</revisionDesc>
+	</teiHeader>
+<text>
+<body>
+	<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0363.tlg011.1st1K-grc1">
+<pb n="411"/>
+<head>ΠΤΟΛΕΜΑΙΟΥ ΜΟΥΣΙΚΑ.</head>
+<div type="textpart" subtype="paragraph" n="1"><p>Ἀρχὴ τῶν μουσικῶν λόγων ἐστὶν ὁ η ἀριθμὸς
+καί εἰσιν ὅροι τοῦ κοσμικοῦ συστήματος οὗτοι·
+α ἀριθμὸς ὁ η ἔχει ἐπόγδοον τὸν θ ἀριθμὸν, ὑπερέχει
+<lb n="5"/> μονάδι ὁ θ τοῦ η,
+β ὁ ιβ ἡμιόλιος τοῦ η, ἐπίτριτος τοῦ θ, ὑπερέχει
+γ τοῦ θ,
+γ ὁ ιϚ ἐπίτριτος τοῦ ιβ, ὑπεροχὴ δ,
+δ ὁ ιη ἡμιόλιος τοῦ ιβ, ὑπεροχὴ Ϛ,
+<lb n="10"/> ε ὁ κα τοῦ θ διπλασιεπίτριτος, ὑπεροχὴ ιβ,
+ϛ ὁ κδ ἐπίτριτος τοῦ ιη, ὑπεροχὴ Ϛ,
+ζ ὁ λβ ἐπίτριτος τοῦ κδ, ὑπεροχὴ η,
+η ὁ λϚ διπλάσιος τοῦ ιη, ἡμιόλιος τοῦ κδ, ὑπεροχὴ ιβ.</p>
+<note type="footnote">§ 1—3 ediderunt Ast, Theol. arithm. p. 56, et Vincent,
+Notices XVI 2 p. 252 (e Par. 449 suppl), qui lectiones non
+diligenter notavit. 1 Πτολ. μουσ. P et (rubro col.) N,
+om. XA. 3 κοσμικοῦ] μουσικοῦ X. οὖτοι Χ, ὄντως N,
+οὕτως PA. numeros in sinistro mg. om. XA. 4 ἔχει ἐπ. NP
+ἐπ. ἔχει A. ἔχων ἐπ X, ut fortasse scibendum sit: πρῶτος
+ἀριθμὸς ὁ η, ἔχων ἐπ. ὑπερέχων X. 6 καὶ ὁ ιβ X.
+ἡμιόλιον N. lin. 10. 11 om. X. 10 διπλασι om. N, est lacuna.
+ιβ A, η N. 11 Ϛ in ras. N. 12 η A, ιβ N, lac. X.</note>
+<note type="footnote">Ad hoc systema referuntur etiam § 24s., ubi pro κα verius
+positum κα γ΄.</note>
+
+<pb n="412"/>
+</div>
+<div type="textpart" subtype="paragraph" n="2"><p>Καὶ ἔστιν ὁ μὲν θ, ἐπόγδοος τοῦ η,	<hi rend="right align">σελήνης ☾,</hi>
+	ὁ ιβ, ἡμιόλιος τοῦ η,	<hi rend="right align">ἑρμοῦ ☿,</hi>
+	ὁ ιϚ, διπλάσιος τοῦ η, <hi rend="right align">ἀφροδίτης ♀,</hi>
+	ὁ ιη, διπλάσιος τοῦ θ, ἐπόγδοος τοῦ ιϚ,<hi rend="right align">ἡλίου ⊙,</hi>
+	ὁ κα, διπλασιεπίτριτος τοῦ θ,	<hi rend="right align">ἄρεος〈♂〉,</hi><lb n="5"/>
+	ὁ κδ, διπλάσιος τοῦ ιβ, <hi rend="right align">διός ♃,</hi>
+	ὁ λβ, τετραπλάσιος τοῦ η, <hi rend="right align">κρόνου ♄,</hi>
+	ὁ λϚ, τετραπλάσιος τοῦ θ, <hi rend="right align">ἀπλανῶν.</hi></p>
+</div>
+<div type="textpart" subtype="paragraph" n="3"><p>Αἱ δὲ ὑπεροχαὶ·
+<hi rend="indent">λϚ	ὑπερέχει</hi><hi rend="indent">δ,</hi><hi rend="indent">λβ η,</hi> <lb n="10"/>
+<hi rend="indent">κδ,</hi><hi rend="indent">γ,</hi><hi rend="indent">κα γ,</hi>	
+<hi rend="indent">ιη</hi><hi rend="indent">β,</hi><hi rend="indent">ιϚ δ,</hi>
+<hi rend="indent">ιβ</hi><hi rend="indent">γ,</hi><hi rend="indent">θ α,</hi>
+ἢ ὑπερέχει τοῦ η ὁ θ μονάδι,
+<l rend="indent">ὁ ιβ τοῦ θ γ, ὁ ιϚ τοῦ ιβ δ,</l><lb n="15"/>
+<l rend="indent">ὁ ιη τοῦ ιϚ β καὶ οἱ λοιποὶ ὁμοίως.</l></p>
+</div>
+<div type="textpart" subtype="paragraph" n="4"><p>Μουσική ἐστι ῥυθμοῦ καὶ μέλους καὶ πάσης
+ὀργανικῆς θεωρίας ἐπιστήμη. μουσικὸς δὲ ὁ ἔμπειρος
+τούτων. — </p></div><div type="textpart" subtype="paragraph" n="5"><p rend="merge">Μουσική ἐστιν ἐπιστήμη θεωρητική
+τε καὶ πρακτικὴ μέλους τελείου τε καὶ ὀργανικοῦ, <lb n="20"/>
+<note type="footnote">2 ἑρμεῖ N. 3 ὁ ιϛ ἡλίου ἀφροδίτης X. 4 ⨀ ἐπογδόῳ
+τοῦ ιϛ ita transp. N, τοῦ ἐνεπογδόου τοῦ ιϛ ⨀ X. 6 ad lovis
+signum addit N: ἐν ἡμιολίῳ τοῦ η (immo τοῦ ιϛ !) 8 τοῦ N,
+τῶν X. in fine add. N: ἐπογδόῳ λόγω (scil. τοῦ λβ).
+10. 11 λϚ ὑπεροχαὶ} ὑπερέχει et reliqua recte A, om.
+κδ{δ} N, § 3 et quae seq. X.
+{γ}
+<l rend="indent"> α γ δ β γ γ η δ</l>
+<l rend="intent">η θ ιβ ιϚ, ιη κα κδ λβ λϚ</l>
+haec habet X ante § 1, nisi quod in sup. linea tres γ habet
+pro duabus et in inf. λ. pro κδ. 20 τελείου] πλείου N.</note>
+<note type="footnote">§ 5. cf. Anon. II 29. I 12. ArQu. I 4 p. 6.</note>
+
+<pb n="413"/>
+πρεπόντων τε καὶ μὴ πρεπόντων, ἐν μέλεσι τε καὶ
+ῥυθμοῖς συντείνουσα πρὸς ἠθῶν κατασκευήν. — </p></div><div type="textpart" subtype="paragraph" n="6"><p rend="merge">Τί
+ἐστι μέλος; Διαστηματικῆς φωνῆς κεκλασμένης χρῆσις
+ἡδονὴν παρέχουσα τοῖς ἀκούουσιν. — </p></div><div type="textpart" subtype="paragraph" n="7"><p rend="merge">Ἁρμονική
+<lb n="5"/> ἐστιν ἐπιστήμη θεωρητικὴ τῆς τοῦ ἡρμοσμένου φύσεως.
+— </p></div><div type="textpart" subtype="paragraph" n="8"><p rend="merge">Τί ἐστι τὸ προσλαμβανόμενος; — Ὅτι ἀρχόμενοι
+ἐπιτείνειν <del>τὸ πνεῦμα</del> προσλαμβάνοντες τὸν
+ἀέρα μελῳδοῦμεν· τοὺς δὲ ἄλλους ἐκπέμποντες μᾶλλον
+ἢ λαμβάνοντες.
+<lb n="10"/> </p></div><div type="textpart" subtype="paragraph" n="9"><p rend="merge">Λεκτέον καὶ περὶ ποδὸς τί ποτέ ἐστι. καθόλου
+μὲν νοητέον πόδα ᾧ σημαινόμεθα τὸν ῥυθμὸν καὶ
+γνώριμον ποιοῦμεν τῇ αἰσθήσει. — </p></div><div type="textpart" subtype="paragraph" n="10"><p rend="merge">Ὡρισμένοι
+δέ εἰσι τῶν ποδῶν οἱ μὲν λόγῳ τινί, οἱ δὲ ἀλογίᾳ
+κειμένῃ μεταξὺ δύο λόγων γνωρίμων, ὥστε εἶναι
+<lb n="15"/> φανερὸν ἐκ τούτων, ὅτι ὁ ποὺς λόγος τίς ἐστιν ἐν
+χρόνοις κείμενος ἢ ἀλογία ἐν χρόνοις κειμένη εἰρημένον
+ἀφορισμὸν ἔχουσα. — </p></div><div type="textpart" subtype="paragraph" n="11"><p rend="merge">Τῶν δὲ χρόνων
+<note type="footnote">1 πρεπόντων] melius ἢ τέχνη πρεπόντων Anonymus
+II 29, p. 46. 15 ὁ om. N. 16 ἀλογία δὲ NP.</note>
+<note type="footnote">§ 6. Φωνὴν κεκλασμένην invenis apud Porphyrium in
+comm. ad Ptol. harm. p. 262: τὴν μέντοι διαστηματικὴν
+<del>sc. κίνησιν καλεῖν εἴωθεν ὁ Ἀριστόξενος</del> τὴν ὀρθότητα μὴ
+σώζουσαν, κεκλάσθαι . . . διὸ καὶ τὸ μέλος ἀποδιδόασι κλάσιν
+φωνῆς. ὥσπερ καὶ ἐπὶ τῶν ἔξωθεν οἷον ξύλων ἢ δένδρων, τὰ
+μὲν ἰθυτενῆ ὀρθὰ διαμένοντα συνεχῆ πως θεωρεῖται, τὰ δὲ ὑπʼ
+ἀνέμου ἢ τινος ἄλλης βίας παθόντα κλασθέντα πίπτει, οὕτω καὶ
+ἡ φωνὴ ἐν συνεχείᾳ μὲν διαμένουσα ὀρθή τις εἶναι καὶ ἄκλα-
+στος νομίζεται, λυγισθεῖσα δὲ καὶ πεσοῦσα μελῳδικὴ γίγνεται.
+§ 7. cf. Cleonidis initium et harmonices primam definitionem
+apud Porphyrium l. l. p. 191. Merquard ad Aristx. p. 194.</note>
+<note type="footnote">§ 9. Haec e Par. 3027 fol. 31 edidit Vincent p. 244. hunc
+secutus est Westphal <hi rend="italic">Fragmente u. Lehrsätze de Rhythmiker</hi>
+(1861) p. 78, idem <hi rend="italic">Metrik de Griechen</hi> I<hi rend="superscript">2</hi> in appendice p. 44.</note>
+
+<pb n="414"/>
+εἰσὶν οἱ μὲν εὔρυθμοι, οἱ δὲ ῥυθμοειδεῖς, οἱ δὲ
+ἄρρυθμοι. Εὔρυθμοι μὲν οἱ διαφυλάττοντες ἀκριβῶς
+τὴν πρὸς ἀλλήλοις εὔρυθμον τάξιν· ῥυθμοειδεῖς δὲ οἱ
+τὴν μὲν εἰρημένην ἀκρίβειαν μὴ σφόδρα ἔχοντες,
+φαίνοντες δὲ ὅμως ῥυθμοῦ τινος εἶδος· ἄρρυθμοι δὲ
+οἱ πάντη καὶ πάντως ἄγνωστον ἔχοντες πρὸς ἀλλήλοις
+σύνθεσιν. — </p></div><div type="textpart" subtype="paragraph" n="12"><p rend="merge">Γνώριμος δὲ γίνεται ποὺς ἄρσει
+καὶ θέσει, ἐστὶ γὰρ ἐξ ἄρσεως καὶ θέσεως συγκείμενον
+σύστημα. ἄρσις δέ ἐστι σημεῖον τὸ λοιπὸν τῆς ἰδίας
+θέσεως, θέσις δέ ἐστι σημεῖον οὕτως τῆς ἰδίας ἄρσεως.</p> <lb n="10"/>
+</div>
+<div type="textpart" subtype="paragraph" n="13"><p>Λόγοι δέ εἰσι ῥυθμικοί, καθʼ οὓς συνίστανται
+οἱ ῥυθμοὶ οἱ δυνάμενοι συνεχῆ ῥυθμοποιΐαν
+ἐπιδέξασθαι, τρεῖς· ἴσος, διπλασίων, ἡμιόλιος. Ἐν μὲν
+γὰρ τῷ ἴσῳ τὸ δακτυλικὸν γίνεται γένος, ἐν δὲ τῷ
+διπλασίῳ τὸ ἰαμβικόν, ἐν δὲ τῷ ἡμιολίῳ τὸ παιωνικόν. <lb n="15"/>
+— </p></div><div type="textpart" subtype="paragraph" n="14"><p rend="merge">Ἄρχεται δὲ τὸ δακτυλικὸν ἀπὸ τετρασήμου
+ἀγωγῆς, αὔξεται δὲ μέχρι ἑξκαιδεκασήμου, ὥστε γίνεσθαι
+τὸν μέγιστον πόδα τοῦ ἐλαχίστου τετραπλάσιον.
+ἔστι δὲ ὅτε καὶ ἐν δισήμῳ γίνεται δακτυλικὸς πούς.
+τὸ δὲ ἰαμβικὸν γένος ἄρχεται μὲν ἀπὸ τρισήμου <lb n="20"/>
+ἀγωγῆς, αὔξεται δὲ μέχρι ὀκτωκαιδεκασήμου, ὥστε
+γίνεσθαι τὸν μέγιστον πόδα τοῦ ἐλαχίστου ἑξαπλάσιον.
+τὸ δὲ παιωνικὸν ἄρχεται μὲν ἀπὸ πεντασήμου ἀγωγῆς,
+<note type="footnote">1 εἰσὶν om. P. 2 ἄρυθμοι N. 5 δὲ ὅμως — 6 ἔχοντες
+om. N. 7 ἄρσει — γὰρ ego, om. NP. 9 ὁ μείζων ὅλως P,
+μείζων (ει im ras.) ὅλως ποὺς N. 10 θέσεως] ἄρσεως P, qui
+om. quae sequuntur. ὁ μείζων (ει in ras.) ὅλως N. 11 ῥυθμητικοί 
+N, ῥυθμιτικοί P. 13 ἡμιολίου corr. in ἡμιόλιος N.
+14 γὰρ om. N. verba γένος — 16 ἄρχεται mg. 19 ἐνδεσήμῳ 
+N. 21 ὀκτωκ. ἀγωγῆς N.</note>
+<note type="footnote">§ 14. cf. Westphal <hi rend="italic">Metrik,</hi> 2. ed. I p. 542. 3. ed.
+	(<hi rend="italic">Rhythmik</hi> 1885) p. 148.</note>
+
+<pb n="415"/>
+αὔξεται δὲ μέχρι πεντεκαιεικοσασήμου, ὥστε γίνεσθαι
+τὸν μέγιστον πόδα τοῦ ἐλαχίστου πενταπλάσιον.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="15"><p>Διαφέρουσι δὲ οἱ μείζονες πόδες τῶν ἐλαττόνων
+ἐν τῷ αὐτῷ γένει ἀγωγῇ. ἔστι δὲ ἀγωγὴ ῥυθμοῦ
+<lb n="5"/> τῶν ἐν τῷ αὐτῷ λόγῳ ποδῶν κατὰ μέγεθος διαφορά,
+οἷον ὁ τρίσημος ἰαμβικός, ὁ σημεῖον συνέχων ἓν ἐν
+ἄρσει καὶ διπλάσιον ἐν θέσει, καὶ ὁ ἑξάσημος ἰαμβικός, ὁ
+σημεῖα δύο συνέχων ἐν ἄρσει καὶ διπλάσιον ἐν θέσει. τῶν
+γὰρ τριῶν ἡ διαίρεσις εἰς σημεῖον καὶ διπλάσιον
+<lb n="10"/> γίνεται τῶν τε ἓξ ὁμοίως. οὗτοι οὗν οἱ πόδες, μεγέ-
+θει ἀλλήλων διαφέροντες, γένει καὶ τῇ διαιρέσει τῶν
+ποδικῶν σημείων οἱ αὐτοί εἰσιν.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="16"><p>Πυρὸς ποιότητες θερμότης ξηρότης· ἰδία
+μὲν θερμότης, κοινὴ δὲ πρὸς τὴν γῆν ξηρότης, πρὸς
+<lb n="15"/> δὲ τὸν ἀέρα θερμότης. Ἀέρος ποιότητες ὑγρότης
+θερμότης· ἰδία μὲν ὑγρότης, κοινὴ πρὸς μὲν τὸ πῦρ
+θερμότης, πρὸς δὲ τὸ ὕδωρ ὑγρότης. Ὕδατος ποιότητες
+ψυχρότης ὑγρότης· ἰδία μὲν ψυχρότης, κοινὴ δὲ
+πρὸς τὸν ἀέρα ὑγρότης, πρὸς δὲ τὴν γῆν ψυχρότης.
+<lb n="20"/> Γῆς ποιότητες ξηρότης ψυχρότης· ἰδία μὲν ξηρότης, κοινὴ
+<note type="footnote">4 ἀγωγῆς NP. ῥυθμοῦ] ῥυθμός (et puto P). 5 τῶν]
+τῶ N. τῷ αὐτῷ NP (errat Westphal). διαφορᾶς NP
+6 ὁ] ὡς NP. ὁ σημεῖον σ. ἓν W. ὁ μὴ συνέχων ἐν NP.
+7 καὶ ὁ ἑξάσημος κτλ. add. Westphal. 9 εἰς ἓν σ Westphal.
+10 ἐξ ὁμοίως N, ἐξ ὁμοίων P. 14 πρὸς μὲν τὴν P.
+20 ξηρότης] ψυχρότης NP.</note>
+<note type="footnote">§ 14. 15. de agoge quae hic dicuntur longe aliena ab iis
+quae ait Aristoxenus apud Porphyrium p. 255 (cf. ArQu. I 19
+p. 42 et Aristox. <hi rend="italic">übersetzt υ. Westphal</hi> p. 122), ubi ἀγωγή est
+	quod nos dicimus <hi rend="italic">Tempo.</hi> removenda putavit <hi rend="italic">Westphal, System
+der Rhythmik</hi> (Breslau 1867) p. 17. § 16 Haec propria esse
+corporum docet Aristoteles de generat. et interitu II 2 p. 329<hi rend="superscript">b</hi>.
+commemorantur et in Theologumenis arithmet. p. 47 Ast et
+a Ptolemaeo in Tetrabiblo fol.5.</note>
+
+<pb n="416"/>
+δὲ πρὸς μὲν τὸ ὕδωρ ψυχρότης, πρὸς δὲ τὸ πῦρ
+ξηρότης. — </p></div><div type="textpart" subtype="paragraph" n="17"><p rend="merge">Δείκνυνται δὲ διʼ ἀριθμῶν αἱ
+χροαὶ τὸν τρόπον τοῦτον. ὑποτίθετει γὰρ τόνος ἐκ
+δώδεκά τινα ἐλάχιστα μόρια διαιρούμενος, ὧν ἕκαστον
+δωδεκατημόριον τόνου καλεῖται· ἀναλόγως δὲ τῷ τόνῳ <lb n="5"/>
+καὶ τὰ λοιπὰ διαστήματα, τὸ μὲν γὰρ ἡμιτόνιον εἰς ἓξ
+δωδεκατημόρια, ἡ δὲ δίεσις, ἡ μὲν τεταρτημόριος εἰς
+τρία, ἡ δὲ τριτημόριος εἰς τέσσαρα, ὅλον δὲ τὸ διὰ
+τεσσάρων εἰς τριάκοντα.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="18"><p>Quae sequuntur v. supra in (Cleonidis) isagoge <lb n="10"/>
+p. 192, 19—193, 2 ad ιβ καὶ ιβ.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="19"><p>Ἔστι δὲ ἡ εὕρεσις τῶν τόνων καὶ τῶν ἡμιτονίων καὶ τῶν διέσεων κατὰ τὸν Ἐρατοσθένην 
+	<figure place="inline">
+		<graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.32044040570293;view=1up;seq=514"/>
+		<figDesc> η τόνος θ καὶ ταῦτα δὶς</figDesc>
+	</figure><lb n="15"/>
+	<figure>
+		<graphic url="https://babel.hathitrust.org/cgi/pt?id=hvd.32044040570293;view=1up;seq=514"/>					
+		<figDesc> ιϚ ἡμιτ. ιζ ἡμιτ. ιη τόνος καὶ μεταξὺ εὑρίσκεται ἀριθμὸς ὁ ιζ.</figDesc>
+	</figure>
+	<note type="footnote">2 Exstentne haec in P nescio. 7 δωδεκαμόρια N. 6 — 9
+							haec repetuntur in mg.: ὁ τόνος εἰς ιβ διαιρεῖται μόρια, τὸ δὲ ἡμιτόνιον
+							κτλ. (— τριάκοντα). p. 192, 19 μελωθήσεται N. 22 τέσσαρα ἥμισυ κ. τέσσ.
+							ἡμ. 23 τονιαῖον] τέλειον N. καὶ ἕξ, N aberrat ad κατὰ ἕξ p. 193, 1.
+							12—13 haec non habet Vincent, incipit a l. 14 Par. fol. 33 (Vinc. 236).
+							14—417, 12 omnia in mg. N. 14 τόνος] <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">τ</hi> NP. haec figura in N post 192,
+		19. 15 ita P, om. N. 16 ἡμιτ.]<hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">τς</hi> N, sim. P. ιη] ξη N. 17 τόνος ut
+							supra.</note>
+	<note type="footnote">§ 17. Sumpta haec sunt ex (Cleonidis) Isagoge c. 7 p.
+		190 ss. Limmatis rationem <hi rend="superscript">18</hi>&#8260;<hi rend="subscript">17</hi> vel <hi rend="superscript">17</hi>&#8260;<hi rend="subscript">16</hi> ponunt Theo mus. 14 p.69,</note>
+<pb n="417"/>
+						<figure place="inline">
+							<graphic
+								url="https://babel.hathitrust.org/cgi/pt?id=hvd.32044040570293;view=1up;seq=515"/>
+							<figDesc> καὶ ταῦτα πάλιν δὶς δς. δς. δς. δς. λβ λγ. λδ λε λϚ ἡμιτ.
+								ἡμιτ. τόνος</figDesc>
+							<lb n="5"/>
+						</figure> εὑρίσκονται μεταξὺ ὡρισμένα λγ λε. — Καὶ πάλιν γίνεται δίτονον ὁ η
+						καὶ ὁ θ πολλαπλασιαζόμενοι· 
+						<figure place="inline">
+							<graphic
+								url="https://babel.hathitrust.org/cgi/pt?id=hvd.32044040570293;view=1up;seq=515"/>
+							<figDesc> ξδ οβ πα </figDesc>
+						</figure>
+						<lb n="10"/> ὁ γὰρ οβ εὑρίσκεται ἀνάλογον μεταξὺ καὶ ποεῖ αὐτὸ δίτονον.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="20"><p>Τρία εἰσὶ τὰ ῥυθμιζόμενα, λέξις, μέλος,
+κίνησις σωματική, ὥστε διαιρήσει τὸν χρόνον ἡ μὲν
+λέξις τοῖς αὐτῆς μέρεσιν, οἶον γράμμασι καὶ συλλαβαῖς
+<lb n="15"/> καὶ ῥήμασι καὶ πᾶσι τοῖς τοιούτοις· τὸ δὲ μέλος τοῖς
+ἑαυτοῦ φθόγγοις τε καὶ διαστήμασιν· ἡ δὲ κίνησις
+σημείοις τε καὶ σχήμασι καὶ εἴ τι τοιοῦτόν ἐστι κινήσεως
+μέρος. περὶ τούτοις ἐστὶν ὁ ῥυθμός.</p>
+<note type="footnote">2 pro δς (δίεσις) habet διείς quinquies supra ipsos
+	numeros scriptum. 4 ἡμιτ.] <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">τ</hi> ≀ bis N. deinde <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">τ</hi> (τόνος) ut
+supra. 2—5 ne haec quidem figura suo loco picta est, sed
+habet post lin. 6 et post alias figuras. 6 haec (ὁρισμένα) 
+alia manu (fortasse Vallae) addita, habet P. 9 οβ]
+ξβ N. haec N in mg. prope §  24 12 Haec e Vincent p. 242
+deprompsit Westphal <hi rend="italic">Fragmente u. Lehrsätze</hi> p. 78, <hi rend="italic">Metrik</hi> I<hi rend="superscript">2</hi>
+append. p. 44. concinunt cum Aristox. rhythm, § 9 (p. 278.
+13 διαιρέσει P. 14 τοῖς in ras. αὐτῆς N. αὐτοῖς P.</note>
+<note type="footnote">Proclus ad Timaeum p. 195. propius ad hunc locum accedit
+ArQu. III 1 p. 114, qui et inter 32 — 36 mediam rationem
+quaerit.</note>
+
+<pb n="418"/>
+</div>
+<div type="textpart" subtype="paragraph" n="21"><p>Ὁ δὲ αὐτὸς ῥυθμὸς οὔτε περὶ γραμμάτων
+οὔτε περὶ συλλαβῶν ποιεῖται τὸν λόγον, ἀλλὰ περὶ
+τῶν χρύνων, τὰ μὲν ἐκτείνειν κελεύων, τὰ δὲ συνάγειν,
+τοὺς δὲ ἴσους ποεῖν ἀλλήλοις. καὶ τοῦτο ποιεῖ
+μενόντων τῶν συλλαβῶν καὶ τῶν γραμμάτων.</p> <lb n="5"/>
+</div>
+<div type="textpart" subtype="paragraph" n="22"><p>Πᾶς ὁ κατὰ μετάβασιν γινόμενος χρόνος
+διορισμοῦ δύναμιν ἔχει. ἀλλὰ δεῖ, ὅτε τὴν μὲν προτέραν
+συλλαβὴν μηκέτι φθέγγει καὶ τὴν δευτέραν
+μηδέπω, τοῦτον τὸν χρόνον σιωπήσει ἀντέχεσθαι.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="23"><p>Τὴν λύραν τὴν ἐκ τῆς χελώνης φασὶ τὸν Ἑρμῆν <lb n="10"/>
+εὑρηκέναι καὶ κατασκευάσαντα ἑπτάχορδον παραδεδωκέναι
+τὴν μάθησιν τῷ Ὀρφεῖ Hnec sunt, qua ex
+Nicomacho rettulimus supra p. 266 — τηνικαῦτά φασιν.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="24"><p>Ὅροι συστήματος κοσμικοῦ.
+Φθόγγοι ἑστῶτες. <hi rend="indent">Ἀριθμοί.</hi><hi rend="indent">Σφαῖραι.</hi><lb n="15"/>
+νήτη ὑπερβολαίων <hi rend="indent">λϚ</hi><hi rend="indent">ἀπλανῶν,</hi>
+νήτη ὑπερβολαίων <hi rend="indent">λβ</hi><hi rend="indent">κρόνου,</hi>
+<note type="footnote">1 περὶ N. ἐπὶ P. 3 τὰ μὲν — τὰ δὲ N. τοὺς μὲν τοὺς
+δὲ P. τοὺς — ἴσους an τὰ — ἴσα? 4 ποιεῖ μὲν ὄντων N.
+ποιοῦμεν ὄντων P Westph. 5 τῶν post ὄντων om.
+6 μετάβασιν Weil in Fleckeisen Jahrbb 1862 p. 350, cf. Psellum
+proslamb. rhythm. § 6 (Westph. Frgm. p 75, Metrik I2 p. 3).
+Bacchium § 98. 7 δεῖ ego, καὶ NP, χρὴ Weil. 8 φθέγγει
+καὶ ego, φθέγγεται NP. ἔξεστι φθέγγεσθαι Westph. 1861.
+9 σιωπήσῃ NP. σιωπήσει δεῖ Westph. 1861, σιωπῆς μὴ Weil.
+11 παρέδωκε N. 266, βληθῆναι] ἐκριφῆναι N. ib 11 εὑρόντα N.
+ἐνεγκεῖν] κομίσαι N. 14 Haec habet Halma: Πτολεμαίου ὑπο-
+θέσεις, uem signo H. eadem ex Par. 3027. fol. 34 rettulit Vin
+cent p.250, quem scribo P. 15 σφαῖρα NP. σφαίρας H. 15 νήτη
+ego, μὲν NP, μετὰ Vinc. μέση H. 16 ὑπερβόλαιον N. ὑπερβολαῖον 
+P. ἀπλανῶν transfert in l. 17 H, et ita in sqq., ut hypate
+meson habeat Mercurium et Vemerem. 17 ὑπερβόλαιον NP.</note>
+<note type="footnote">§ 1—3. 24—25 cum Ptolemaei doctrina comparavi in
+Philologo LII p. 32 (cf. eius Harm. III 16 et de elementis cum</note>
+
+<pb n="419"/>
+νήτη διεζευγμένων <hi rend="indent">κδ</hi><hi rend="indent">διός,</hi>
+νήτη συνημμένων <hi rend="indent">κα γ΄</hi><hi rend="indent">ἄρεως,</hi>
+παράμεσος <hi rend="indent">ιη</hi><hi rend="indent">ἡλίου,</hi>
+μέση <hi rend="indent">ιϚ</hi><hi rend="indent">ἀφροδίτης,</hi>
+<lb n="5"/> ὑπάτη μέσων <hi rend="indent">ιβ</hi><hi rend="indent">ἑρμοῦ,</hi>
+ὑπάτη ὑπατῶν <hi rend="indent">θ</hi><hi rend="indent">σελήνης,</hi>
+προσλαμβανόμενος <hi rend="indent">η</hi><hi rend="indent">πυρὸς ἀέρος ὕδατος γῆς.</hi></p>
+</div>
+<div type="textpart" subtype="paragraph" n="25"><p>Περιέχουσιν οἱ ἀριθμοὶ μεσοτήτων
+<l rend="right align">ἀριθμητικὰς ε</l>
+<lb n="10"/> <l rend="right align">γιομετρικὰς<add cause="omitted">ζ</add></l>
+<l rend="right align">ἁρμονικὰς <add cause="omitted">γ</add></l>
+<note type="footnote">2 γ΄ om. P. 3 παραμέσης P, παράμεσις ἡλίου ιη
+inv. N. 5 μέσων] μέσην P, cor. η in ω N. 6 σελήνης
+πυρὸς ἀέρος προσλαμβανόμ. ὕδατος γῆς NP, verum ordinem
+habet H, 7 προσλαμβανομένη H. 9 ε NP, ϛ Vincent.
+10 ζ ego, ε NP. Vi. 11 γ Vi, ε NP.</note>
+<note type="footnote">stellis conunctis Tetrabibli init.). sed haud scio an ommia
+conficta sint a recentioribus Pythagoreis. sphaerarum enim
+seriem ex elementis et planetis compositam receptam vides a
+Pythagoreis apud Photium, biblth. 249 (p. 439<hi rend="superscript">b</hi> Bk). numerorum 
+autem series oriri potuit ex illa, quam Boetius proponit,
+mus. II 11. is multiplicationibus quibusdam adhibitis e proportione 
+harmonica 3 4 6 invenit numeros hos:
+9 12 16 18 24 36.
+ubi ter habes rationem diatessaron, semel rationem toni, bis
+dianente. pone 16 = mesen, 18 = paramesen: invenis 9 hypaten
+hypaton, 12 hyp. meson, 24 neten diez. et 36 sonum qui tono
+superat neten hyperbolaeon. adde meses (16) dimidium et
+duplum: habes 8 = proslambanomenon et 32 = neten hyperbolaeon.</note>
+	<note type="footnote">25. Μεσ. ἀριθμ. <hi rend="indent">Μεσ. γεωμ.</hi><hi rend="indent"> Μεσ. ἀρμ.</hi> | 3:4<hi rend="indent">2:3</hi><hi rend="indent">1:2</hi><hi rend="indent">1:4</hi>
+		8·12·16 <hi rend="indent">8:12:18</hi><hi rend="indent">8·12·24</hi> | 9:12<hi rend="indent">8:12</hi><hi rend="indent">8:16</hi><hi rend="indent">8:32</hi>
+		8·16·24 <hi rend="indent">8:16:32</hi><hi rend="indent">12·16·24</hi> | 12:16<hi rend="indent">12:18</hi><hi rend="indent">9:18</hi><hi rend="indent">9:36</hi>
+		12·18·24 <hi rend="indent">9:12:16</hi><hi rend="indent">12·18·36</hi> | 16:21⅓<hi rend="indent">16:24</hi><hi rend="indent">12:24</hi>
+		12·24·36<hi rend="indent">9:18:36</hi><hi rend="indent"></hi><hi rend="indent"></hi> | 18:24<hi rend="indent">24:32</hi><hi rend="indent">16:32</hi>
+		16·24·32<hi rend="indent">12:16:21⅓</hi><hi rend="indent"></hi><hi rend="indent"></hi> | 24:32<hi rend="indent"></hi><hi rend="indent"></hi><hi rend="indent">18:36</hi>
+		<hi rend="indent">16:24:36</hi>
+		<hi rend="indent">18:24:32</hi> τόνοι 8 : 9, 16 : 18, 21⅓ :24, 32:36.
+27*</note>
+
+<pb n="420"/>
+συμφωνιῶν δὲ ἐν λόγοις ἐπιμορίοις καὶ πολλαπλασίοις·
+	διὰ τεσσάρων ἐν ἐπιτρίτοις<hi rend="indent">ε</hi>
+	διὰ πέντε ἐν ἡμιολίοις<hi rend="indent">δ</hi>
+	διὰ πασῶν ἐν διπλασίοις<hi rend="indent"><add cause="omitted">ε</add></hi>
+	δὶς διὰ πασῶν ἐν τετραπλασίοις<hi rend="indent">β,</hi> <lb n="5"/>
+καὶ ἔτι τόνους ἐν ἐπογδόοις δ.</p>
+</div>
+<div type="textpart" subtype="paragraph" n="26"><p>Τέσσαρά εἰσι πολυθρύλλητα αἴτία· ὑλικὸν
+ποιητικὸν εἰδικὸν τελικόν. διότι τὸ εἶδος καὶ τὸν
+ὁρισμὸν καλεῖ, πᾶσα γὰρ ἀπόδειξις εἰς τὸ διότι ἀνάγεται.</p>
+</div>
+		<div type="textpart" subtype="paragraph" n="27"><p><hi rend="indent">Κατὰ κιθαρῳδίαν.</hi><hi rend="indent">δεξιᾶς χειρός</hi> <lb n="10"/>
+			<hi rend="indent">ἀριστερᾶς χειρός</hi><hi rend="indent">διάπεμπτος</hi>
+			<hi rend="indent">μέση</hi><hi rend="indent">ὑπάτη</hi>
+			<hi rend="indent">νήτη</hi><hi rend="indent">χρωματική</hi>
+			<hi rend="indent">συνημμέναι δύο</hi><hi rend="indent">διάτονος</hi>
+			<hi rend="indent">διάτονοι δύο</hi><hi rend="indent">μέση</hi> <lb n="15"/>
+			<hi rend="indent">παράμεσος</hi><hi rend="indent">παράμεσος</hi>
+			<hi rend="indent">τρίτη</hi><hi rend="indent">τρίτη</hi>
+			<hi rend="indent">διάπεμπτος</hi><hi rend="indent">συνημμέναι</hi>
+			<hi rend="indent">ὑπάτη</hi><hi rend="indent">ὀξεῖα χριωματική</hi>
+			<hi rend="indent">παρυπάτη</hi><hi rend="indent">ὀξεῖα διάτονος</hi> <lb n="20"/>
+			<hi rend="indent">χρωματικὴ</hi><hi rend="indent">ὀξεῖα μέση</hi>
+			<hi rend="indent">μέση</hi><hi rend="indent">ὀξεῖα παράμεσος.</hi></p>
+<p>Ante § 27 scripta est in N prima linea § 28: Εἰσὶν
+οἱ ἀριθμοὶ, quam invenis supra p. 267. et excerptorum
+Nicomacheorum continuatur texte ad § 27 in dextro <lb n="25"/>
+margine et post eam latioribus lineis usque ad verba
+τὰ τονιαῖα διαστήματα p. 271.</p>
+<note type="footnote">1 δὲ Vi., δ PN. 2 ε NP, γ Vi. 3 δ] τέτρασι NP.
+4 ε Vi., ιβ NP. 5 β] δύο NB. 6 κ. ἐ. τ.] καὶ ἐν ἐπὶ
+τόνοις N, κ. ἓν ἐπιτόνοις Ρ, κ. προσέτι τ. Vi δ] τέτρας NP.
+9 διότι NP. διὰ τί Vi. (p. 249) 18 διάπεπτος N.</note>
+<note type="footnote">§ 26. Quattuor causae statuuntur ab Aristotele phys. ausc.
+II 3 et metaph. V 2, τὸ ἐξ οὗ, — τὸ εἶδος ἢ ὁ λόγος τοῦ τί ἦν
+εἶναι, — ὅθεν ἡ ἀρχὴ τῆς μεταβολῆς (τὸ ποιητικόν), — ὡς τὸ τέλος.</note>
+
+<pb n="421"/>
+<p>§ 27 intellegi non potest, nisi arcessitur cod.
+Monacensis 104 (quem Vincent adhibuit p. 254):
+Ἡ κοινὴ ὁρμασία ἡ ἀπὸ τῆς μουσικῆς μεταβληθεῖσα.
+Ἀριστερᾶς χειρὸς. <hi rend="indent">Δεξιᾶς χειρός.</hi>
+<note type="marginal" place="left margin"><gap reason="lost"/>υδίου
+	<gap reason="lost"/>ατὰ τὸ
+	<gap reason="lost"/>άτονον</note>
+	1. προσλαμβανόμενος ο/Κ 7⊢<hi rend="indent">17. διάπεμπτος α/Μ Φ ϝ</hi>
+	2. μέση <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> | &lt;<hi rend="indent">18. ὑπάτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ϲ ϲ</hi>
+	3. νήτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ⦵ ϟ<hi rend="indent">19. χρωματική <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> Ο Κ</hi>
+	4. συνημμένη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ⨆ Ζ<hi rend="indent">20. διάτονος <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ϲ ϲ</hi>
+	5. συνημμένη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ⨆ Ζ<hi rend="indent">21. μέση <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> | &lt;</hi>
+	6. διάτονος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi>Κ Ξ ⊻<hi rend="indent">22. παράμεσος <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> Ζ ⊏</hi>
+	7. διάτονος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ξ ⊻<hi rend="indent">23. τρίτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> Ε ⨆</hi>
+	8. παράμεσος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ζ ⊏<hi rend="indent">24. συνημμένη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ⨆ Ζ</hi>
+	9. τρίτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> Ε ⨆<hi rend="indent">25. νήτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ⦵ ϟ</hi>
+	10. διάπεμπτος <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> Φ ϝ <hi rend="indent">26. ὀξεῖα χρωματική <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ο´Κ´</hi>
+	11. ὐπάτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ϲ ϲ<hi rend="indent">27. ὀξεῖα διάτονος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ξ´⊻´</hi>
+	12. παρυπάτη <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> Ρ ⋃<hi rend="indent">28. ὀξεῖα μέση <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> |´&lt;´</hi>
+	13. χρωματική <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ο Κ<hi rend="indent">29. ὀξεῖα παράμεσος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ζ´ ⊏´</hi>
+	14. μέση <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> | &lt;<hi rend="indent">30. ὀξεῖα παγάμεσος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ε´ ⨆´</hi>
+	15. παράμεσος <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> Ζ ⊏<hi rend="indent">31. ὀξεῖα συνημμένη <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> ⨆´ Ζ´</hi>
+	16. τρίτη (?) <hi rend="superscript">α</hi>&#8260;<hi rend="subscript">Μ</hi> ε ϟ<hi rend="indent">32. ὀξεῖα νήτη <hi rend="superscript">ο</hi>&#8260;<hi rend="subscript">Κ</hi> ⦵´ ϟ´</hi></p>
+<note type="footnote">Haec habet et Ruelle in Archives des missione scientif
+Serie III. tome II p. 605, additque lectiones codicis Scorialensis.
+3 κοινὴ κτλ. Mon. Par. Scor. ὁρμασία libb., ὁρμαθία Vi.
+n. 16 τρίτη et εϟ libb. (E ϟ S), nete et ⦵ ϟ Vi., trite et ⨀V
+(p. 534) aut E⨆ (p. 606) prop. Ru.</note>
+
+<pb n="422"/>
+<p>Post notas 17 διάπεμπτος, 18 ὑπάτη ss. legitur
+in Mon. mg.:
+<hi rend="indent">ὑπολυδίου κατὰ τὸ διάτονον</hi>
+<hi rend="indent">ὑπερλυδίου κατὰ τὸ διάτονον</hi>
+<hi rend="indent">ὑπεραιολίου κατὰ τὸ διάτονον γένος</hi>
+<hi rend="indent">ὑποιαστίου κατὰ τὸ χρωματικόν</hi>
+<hi rend="indent">ὑπεραιολίου κατὰ τὸ διάτονον</hi>
+<hi rend="indent">λυδίου κατὰ τῶν τριῶν γενῶν</hi>
+<hi rend="indent">ὑπερφρυγίου κατὰ τὸ ἐναρμόνιον</hi>
+<hi rend="indent">ὑπεριαστίου κατὰ τὸ διάτονον</hi>
+<hi rend="indent">ὑπεριαστίου κατὰ τὸ ἐναρμόνιον.</hi></p>
+<p>Ηanc tabulam, cui numeros et musica signa hodierni
+usus apposui, ubi cum § 2 exc. Neap. comparaveris,
+nullo modo dubitabis quin librarius temere et neglegenter
+transscripserit. hormasian vero noli putare
+carmen esse citharae, nedum carme duarum vocum;
+nihil enim est nisi moun parandae et temperandae
+citharae. parati senis principalibus (1. 2) fidicen
+quaerit a mesa sonum quintum et quartum (3. 4). ab
+hoc sono descendit diapente ad eum qui diatonus dici
+tur, scilicet a lichanon meson (6) et perges per symphonias 
+invenit acutos sonos (8. 9) et graves ( 10. 11.
+12.13). repetitis autem mesa et paramesa quid loco
+16 scriptum fuerit, incertum est. potuit sumi trite diezeugmenon
+EV(f), potuit et trite synemmenon ΘV (es),
+signa autem propius accedunt ad ⦵ ϟ, neten diezeugmenon
+(aʹ). tum fidicen sonos comparatos tentans per
+scalam universam (ἑξῆς) ascendit a lichano hypaton,
+quam ὑπερυπάτην vel gravissima graviorem dicebat
+Thrasyllus (Theo mus. 35, p. 88), ad neten diezeugmenon,
+quι erat finis chordarum. digito autem manus
+
+<pb n="423"/>
+sinistrae leniter a medium chordarum punctum apposito
+eliciebat septem chordarum diapason acutum
+(26—32), itaque omnia canere potuit instrumento undecim
+nervis instructo. illa Κο autem et Μα qui siguificent,
+dicere non liquet. Gevaert (Histoire et théorie
+II 639) suspicabatur esse Κροῦσις et Μέλος. Ἀριστερᾶς
+autem et δεξιᾶς χειρός additum esse mihi persuasi,
+ne librarii qui transscriberent mutarent rerum
+ordinem.</p>
+<p>Cod. Neap. III C. 3 continet fol. 4 ante muni
+systema (ante § 3 Excerpti, quae § in hoc cod. praecedit
+reliquis): Ἰστέον ὅτι τριῶν ὄντων τῶν ῥυθμῶν
+ὁ μὲν δώριος ἀνδρώδης ἐστὶ μᾶλλον καὶ ἄρρην. ὁ δὲ
+φρύγιος θρηνώδης καὶ πρὸς θρήνους πεποιημένος,
+μαλακός τε καὶ ἁπαλός.</p>
+<note type="footnote">1 Cf. Probl. XIX 12 fin. 2 Alio loco in codice Scorialensi 
+Ruelle (p. 544) invenit haec: ἡ ἐπʼ εὐθείας ἔκθεσις τοῦ
+παντὸς συστήματος τῶν ιη φθόγγων;
+	<l rend="indent2">ε ζ η θ ι κ <add cause="omitted">λ</add></l>
+	<l rend="indent">α <add cause="omitted">β</add> γ δ μ ν ξ ο π ρ σ.</l>
+haec quoque revocanda videntur ad citharam undecim chordarum,
+quarum acutiores septem binos edebant sonos.</note>
+</div>
+
+	</div>
+</body>
+</text>
+</TEI>

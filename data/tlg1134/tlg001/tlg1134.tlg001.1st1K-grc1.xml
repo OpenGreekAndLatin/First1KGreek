@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Fragmenta</title>
+                <author xml:lang="lat">Anonymous Iamblichi</author>
+                <editor>Hermann Diels</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Sophia Elzie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alessandro Buccheri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Valia Chotou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Domi Couvet</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dimitra Fylaktopoulou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Arnie He</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Elsa Karafyllidi</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Anatasios Koletsis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Theodoros Pazarloglou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Celia Prescott-Decie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dora Profyri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Panagiotis Sotiroudis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zeyu Wen</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>  
+
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1134.tlg001.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2021-08-25"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="deu">Die Fragmente der Vorsokratiker</title>
+                        <editor>Hermann Diels</editor>
+                        <imprint>
+                            <pubPlace>Berlin</pubPlace>
+                            <publisher>Weidmann</publisher>
+                            <date>1922</date>
+                        </imprint>
+                        <biblScope unit="volume">2</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/diefragmentederv02dieluoft/page/328/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl><p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+).(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts fragment.</p>
+                </cRefPattern>
+                <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts section.</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2022-05-31" who="Lisa Cerrato">File markup and header review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text>
+    <body>
+<div type="edition" n="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" xml:lang="grc">
+<pb facs="diefragmentederv02dieluoft_0375"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="1">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:1" n="0">
+<p rend="indent"><label>1.</label> <bibl xml:lang="mul">p. 95, 13 Pistelli.</bibl></p>
+</div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:1" n="1">
+<p><label>(1)</label> ὅ τι ἄν τις ἐθέληι ἐξεργάσασθαι εἰς τέλος τὸ βέλτιστον, ἐάν τε σοφίαν ἐάν τε ἀνδρείαν ἐάν τε εὐγλωσσίαν ἐάν τε ἀρετὴν ἢ τὴν <pb facs="diefragmentederv02dieluoft_0376"/> σύμπασαν ἢ μέρος τι αὐτῆς, ἐκ τῶνδε οἷόν τε εἶναι κατεργάσασθαι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:1" n="2">
+<p><label>(2)</label> φῦναι μὲν πρῶτον δεῖν, καὶ τοῦτο μὲν τῆι τύχηι ἀποδεδόσθαι, τὰ δὲ ἐπ’ αὐτῶι ἤδη τῶι ἀνθρώπωι τάδε εἶναι, ἐπιθυμητὴν γενέσθαι τῶν καλῶν καὶ ἀγαθῶν φιλόπονόν τε καὶ πρωιαίτατα μανθάνοντα καὶ πολὺν χρόνον αὐτοῖς συνδιατελοῦντα.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:1" n="3">
+<p><label>(3)</label> εἰ δέ τι ἀπέσται τούτων καὶ ἕν, οὐχ οἷόν τέ ἐστιν οὐδὲν ἐς τέλος τὸ ἄκρον ἐξεργάσασθαι, ἔχοντος δὲ ἅπαντα ταῦτα, ἀνυπέρβλητον γίγνεται τοῦτο, ὅ τι ἂν ἀσκῆι τις τῶν ἀνθρώπων.</p></div></div>
+            
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="2">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="0">
+<p rend="indent"><label>2.</label> <bibl xml:lang="lat">p. 96, 1.</bibl> </p>
+</div>
+ <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="1">
+<p><label>(1)</label> ἐξ οὗ ἄν τις βούληται δόξαν παρὰ τοῖς ἀνθρώποις λαβεῖν καὶ τοιοῦτος φαίνεσθαι, οἷος ἂν ἦι, αὐτίκα δεῖ νέον τε ἄρξασθαι καὶ ἐπιχρῆσθαι αὐτῶι ὁμαλῶς ἀεὶ καὶ μὴ ἄλλοτε ἄλλως.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="2">
+<p><label>(2)</label> συγχρονισθὲν μὲν γὰρ ἕκαστον τούτων καὶ αὐτίκα τε ἀρξάμενον καὶ συναυξηθὲν εἰς τέλος λαμβάνει βέβαιον τὴν δόξαν καὶ τὸ κλέος διὰ τάδε, ὅτι πιστεύεταί τε ἤδη ἀνενδοιάστως, καὶ ὁ φθόνος τῶν ἀνθρώπων οὐ προσγίγνεται, δι’ ὃν τὰ μὲν οὐκ αὔξουσιν οὐδ’ εὐλόγως μηνύουσι, τὰ δὲ καταψεύδονται μεμφόμενοι παρὰ τὸ δίκαιον.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="3">
+<p><label>(3)</label> οὐ γὰρ ἡδὺ τοῖς ἀνθρώποις ἄλλον τινὰ τιμᾶν (αὐτοὶ γὰρ στερίσκεσθαί τινος ἡγοῦνται), χειρωθέντες δὲ ὑπὸ τῆς ἀνάγκης αὐτῆς καὶ κατὰ σμικρὸν ἐκ πολλοῦ ἐπαχθέντες ἐπαινέται καὶ ἄκοντες ὅμως γίγνονται.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="4">
+<p><label>(4)</label> ἅμα δὲ καὶ οὐκ ἀμφιβάλλουσιν, εἰ [τε] ἄρα τοιοῦτος ἄνθρωπός ἐστιν, οἷος φαίνεται. ἢ ἐνεδρεύει καὶ θηρεύεται τὴν δόξαν ἐπὶ ἀπάτηι, καὶ ἃ ποιεῖ, ταῦτα καλλωπίζεται ὑπαγόμενος τοὺς ἀνθρώπους· ἐν ἐκείνωι δὲ τῶι τρόπωι, ᾧ ἐγὼ προεῖπον, ἀσκηθεῖσα ἡ ἀρετὴ πίστιν ἐμποιεῖ περὶ ἑαυτῆς καὶ εὔκλειαν.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="5">
+<p><label>(5)</label> ἑαλυωκότες γὰρ ἤδη κατὰ τὸ ἰσχυρὸν οἱ ἄνθρωποι οὔτε τῶι φθόνωι ἔτι δύνανται χρῆσθαι οὔτε ἀπατᾶσθαι ἔτι οἴονται.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="6">
+<p><label>(6)</label> ἔτι δὲ καὶ ὁ χρόνος συνὼν μὲν ἑκάστωι ἔργωι καὶ πράγματι πολὺς καὶ διὰ μακροῦ κρατύνει τὸ ἀσκούμενον, ὁ δὲ ὀλίγος χρόνος οὐ δύναται τοῦτο ἀπεργάζεσθαι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="7">
+<p><label>(7)</label> καὶ τέχνην μὲν ἄν τις τὴν κατὰ λόγους πυθόμενος καὶ μαθὼν οὐ χείρων τοῦ διδάσκοντος ἂν γένοιτο ἐν ὀλίγωι χρόνωι, ἀρετὴ δὲ ἥτις ἐξ ἔργων πολλῶν συνίσταται, ταύτην δὲ οὐχ οἷόν τε ὀψὲ ἀρξαμένωι οὐδὲ ὀλιγοχρονίως ἐπὶ τέλος ἀγαγεῖν, ἀλλὰ συντραφῆναί τε αὐτῆι δεῖ καὶ συναυξηθῆναι τῶν μὲν εἰργόμενον κακῶν καὶ λόγων καὶ ἠθῶν, τὰ δ’ ἐπιτηδεύοντα καὶ κατεργαζόμενον σὺν πολλῶι χρόνωι καὶ ἐπιμελείαι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:2" n="8">
+<p><label>(8)</label> ἅμα δέ τις καὶ τῆι ἐξ ὀλίγου χρόνου εὐδοξίαι προσγίγνεται βλάβη τοιάδε· τοὺς γὰρ ἐξαπιναίως καὶ ἐξ ὀλίγου χρόνου ἢ πλουσίους ἢ σοφοὺς ἢ ἀγαθοὺς ἢ ἀνδρείους γενομένους οὐκ ἀποδέχονται ἡδέως οἱ ἄνθρωποι.</p></div></div>
+<pb facs="diefragmentederv02dieluoft_0377"/>
+    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="3">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="0">
+    <p rend="indent"><label>3.</label> <bibl xml:lang="lat">p. 97, 16.</bibl></p>
+</div>  
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="1">
+<p><label>(1)</label> ὅταν τις ὀρεχθείς τινος τούτων κατεργασάμενος ἔχηι αὐτὸ εἰς τέλος, ἐάν τε εὐγλωσσίαν ἑάν τε σοφίαν ἐάν τε ἰσχύν, τούτωι εἰς ἀγαθὰ καὶ νόμιμα καταχρῆσθαι δεῖ· εἰ δὲ εἰς ἄδικά τε καὶ ἄνομα χρήσεταί τις τῶι ὑπάρχοντι ἀγαθῶι, πάντων κάκιστον εἶναι τὸ τοιοῦτον καὶ ἀπεῖναι κρεῖσσον αὐτὸ ἢ παρεῖναι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="2">
+<p><label>(2)</label> καὶ ὥσπερ ἀγαθὸς τελέως ὁ τούτων τι ἔχων γίγνετοι εἰς τὰ ἀγαθὰ αὐτοῖς καταχρώμενος, οὕτω πάλιν πάγκακος [τελέως] ὁ εἰς τὰ πονηρὰ χρώμενος.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="3">
+<p><label>(3)</label> τόν τε αὖ ἀρετῆς ὀρεγόμενον τῆς συμπάσης σκεπτέον εἶναι, ἐκ τίνος ἂν λόγου ἢ ἔργου ἄριστος εἴη· τοιοῦτος δ’ ἂν εἴη ὁ πλείστοις ὠφέλιμος ὤν.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="4">
+<p><label>(4)</label> εἰ μέν τις χρήματα διδοὺς εὐεργετήσει τοὺς πλησίον, ἀναγκασθήσεται κακὸς εἶναι πάλιν αὖ συλλέγων τὰ χρήματα· ἔπειτα οὐκ ἂν οὕτω ἄφθονα συναγάγοι, ὥστε μὴ ἐπιλείπειν διδόντα καὶ δωρούμενον· εἶτα αὕτη αὖθις δευτέρα κακία προσγίγνεται μετὰ τὴν συναγωγὴν τῶν χρημάτων, ἐὰν ἐκ πλουσίου πένης γένηται καὶ ἐκ κεκτημένου μηδὲν ἔχων.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="5">
+<p><label>(5)</label> πῶς ἂν οὖν δή τις μὴ χρήματα νέμων ἀλλὰ ἄλλωι δή τινι τρόπωι εὐποιητικὸς ἂν εἴη ἀνθρώπων, καὶ ταῦτα μὴ σὺν κακίαι ἀλλὰ σὺν ἀρετῆι; καὶ προσέτι δωρούμενος πῶς ἂν ἔχοι τὴν δόσιν ἀνέκλειπτον;</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:3" n="6">
+<p><label>(6)</label> ὧδε οὖν ἔσται τοῦτο, εἰ τοῖς νόμοις τε καὶ τῶι δικαίωι ἐπικουροίη· τοῦτο γὰρ τάς τε πόλεις καὶ τοὺς ἀνθρώπους τὸ συνοικίζον καὶ τὸ συνέχον εἶναι.</p></div></div>
+    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="4">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="0">
+<p rend="indent"><label>4.</label> <bibl xml:lang="lat">p. 98, 17.</bibl> </p>
+</div>  
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="1">
+<p><label>(1)</label> καὶ μὴν ἐγκρατέστατόν γε δεῖ εἶναι πάντα ἄνδρα διαφερόντως· τοιοῦτος δ’ ἂν μάλιστα εἴη, εἰ τῶν χρημάτων κρείσσων εἴη πρὸς ἃ πάντες διαφθείρονται, καὶ τὴς ψυχῆς ἀφειδὴς ἐπὶ τοῖς δικαίοις ἐσπουδακὼς καὶ τὴν ἀρετὴν μεταδιώκων· πρὸς ταῦτα γὰρ δύο οἱ πλεῖστοι ἀκρατεῖς εἰσι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="2">
+<p><label>(2)</label> διὰ τοιοῦτον δέ τι ταῦτα πάσχουσιν· φιλοψυχοῦσι μέν, ὅτι τοῦτο ἡ ζωή ἐστιν, ἡ ψυχή· ταύτης οὖν φείδοντα καὶ ποθοῦσιν αὐτὴν διὰ φιλίαν τῆς ζωῆς καὶ συνήθειαν ἢι συντρέφονται· φιλοχρηματοῦσι δὲ τῶνδε εἵνεκα, ἅπερ φοβεῖ αὐτούς.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="3">
+<p><label>(3)</label> τί δ’ ἐστὶ ταῦτα; αἱ νόσοι, τὸ γῆρας, αἱ ἐξαπιναῖοι ζημίαι, οὐ τὰς ἐκ τῶν νόμων λέγων ζημίας (ταύτας μὲν γὰρ καὶ εὐλαβηθῆναι ἔστι καὶ φυλάξασθαι), ἀλλὰ τὰς τοιαύτας, πυρκαϊάς, θανάτους οἰκετῶν, τετραπόδων, ἄλλας αὖ συμφοράς, αἳ ἐπίκεινται αἱ μὲν τοῖς σώμασιν, αἱ δὲ ταῖς ψυχαῖς, αἱ δὲ τοῖς χρήμασι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="4">
+<p><label>(4)</label> τούτων δὴ οὖν ἕνεκα πάντων, ὅπως ἐς ταῦτα ἔχωσι χρῆσθαι τοῖς χρήμασι, πᾶς ἀνὴρ τοῦ πλούτου ὀρέγεται.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="5">
+<p><label>(5)</label> καὶ ἄλλ’ ἅττα δέ ἐστιν ἅπερ οὐχ ἧσσον ἢ τὰ προειρημένα ἐξορμᾶι τοὺς ἀνθρώπους ἐπὶ τὸν χρηματισμόν, αἱ πρὸς ἀλλήλους φιλοτιμίαι καὶ οἱ ζῆλοι καὶ αἱ δυναστεῖαι, δι’ ἃς τὰ χρήματα περὶ πολλοῦ ποιοῦνται, ὅτι συμβάλλεται εἰς τὰ τοιαῦτα.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:4" n="6">
+<p><label>(6)</label> ὅστις δέ ἐστιν ἀνὴρ ἀληθῶς ἀγαθός, οὗτος οὐκ ἀλλοτρίωι κόσμωι περικειμένωι τὴν δόξαν θηρᾶται, ἀλλὰ τῆι αὑτοῦ ἀρετῆι.</p></div></div>
+    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="5">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:5" n="0">
+    <p rend="indent"><label>5.</label> <bibl xml:lang="lat">p. 99, 18.</bibl> </p>
+</div>  
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:5" n="1">
+<p><label>(1)</label> καὶ περὶ φιλοψυχίας δὲ ὧδε ἄν τις πεισθείη, ὅτι, εἰ μὲν ὑπῆρχε τῶι ἀνθρώπωι εἰ μὴ ὑπ’ ἄλλου ἀποθάνοι ἀγήρωι τε εἶναι καὶ ἀθανάτωι τὸν λοιπὸν χρόνον, συγγνώμη ἂν 〈ἦν〉 πολλὴ τῶι φειδομένωι τῆς ψυχῆς·</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:5" n="2">
+<p><label>(2)</label> ἐπεὶ <pb facs="diefragmentederv02dieluoft_0378"/> δὲ ὑπάρχει τῶι βίωι μηκυνομένωι τό τε γῆρας κάκιον ὂν ἀνθρώποις καὶ μὴ ἀθάνατον εἶναι, καὶ [ἡ] ἀμαθία ἤδη ἐστὶ μεγάλη καὶ συνήθεια πονηρῶν λόγων τε καὶ ἐπιθυμημάτων, ταύτην περιποιεῖν ἐπὶ δυσκλείαι, ἀλλὰ μὴ ἀθάνατον ἀντ’ αὐτῆς λιπέσθαι, ἀντὶ θνητῆς οὔσης εὐλογίαν ἀέναον καὶ ἀεὶ ζῶσαν.</p></div></div>
+    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="6">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:6" n="0">
+<p rend="indent"><label>6.</label> <bibl xml:lang="lat">p. 100, 5.</bibl> </p>
+</div>  
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:6" n="1">
+<p><label>(1)</label> ἔτι τοίνυν οὐκ ἐπὶ πλεονεξίαν ὁρμᾶν δεῖ, οὐδὲ τὸ κράτος τὸ ἐπὶ τῆι πλεονεξίαι· ἡγεῖσθαι ἀρετὴν εἶναι, τὸ δὲ τῶν νόμων ὑπακούειν δειλίαν· πονηροτάτη γὰρ αὕτη ἡ διάνοιά ἐστι, καὶ ἐξ αὐτῆς πάντα τἀναντία τοῖς ἀγαθοῖς γίγνεται, κακία τε καὶ βλάβη. εἰ γὰρ ἔφυσαν μὲν οἱ ἄνθρωποι ἀδύνατοι καθ’ ἕνα ζῆν, συνῆλθον δὲ πρὸς ἀλλήλους τῆι ἀνάγκηι εἴκοντες, πᾶσα δὲ ἡ ζωὴ αὐτοῖς εὕρηται καὶ τὰ τεχνήματα πρὸς ταύτην, σὺν ἀλλήλοις δὲ εἶναι αὐτοὺς κὰν ἀνομίαι διαιτᾶσθαι οὐχ οἶόν τε (μείζω γὰρ αὐτοῖς ζημίαν 〈ἂν〉 οὕτω γίγνεσθαι ἐκείνης τῆς κατὰ ἕνα διαίτης), διὰ ταύτας τοίνυν τὰς ἀνάγκας τόν τε νόμον καὶ τὸ δίκαιον ἐμβασιλεύειν τοῖς ἀνθρώποις καὶ οὐδαμῆι μεταστῆναι ἂν αὐτά· φύσει γὰρ ἰσχυρὰ ἐνδεδέσθαι ταῦτα.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:6" n="2">
+<p><label>(2)</label> εἰ μὲν δὴ γένοιτό τις ἐξ ἀρχῆς φύσιν τοιάνδε ἔχων, ἄτρωτος τὸν χρῶτα ἄνοσός τε καὶ ἀπαθὴς καὶ ὑπερφυὴς καὶ ἀδαμάντινος τό τε σῶμα καὶ τὴν ψυχήν, τῶι τοιούτωι ἴσως ἄν τις ἀρκεῖν ἐνόμισε τὸ ἐπὶ τῆι πλεονεξίαι κράτος (τὸν γὰρ τοιοῦτον τῶι νόμωι μὴ ὑποδύνοντα δύνασθαι ἀθῶιον εἶναι), οὐ μὴν ὀρθῶς οὗτος οἴεται·</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:6" n="3">
+<p><label>(3)</label> εἰ γὰρ καὶ τοιοῦτός τις εἴη, οἷος οὐκ ἂν γένοιτο, τοῖς μὲν νόμοις συμμαχῶν καὶ τῶι δικαίωι καὶ ταῦτα κρατύνων καὶ τῆι ἰσχύι χρώμενος ἐπὶ ταῦτά τε καὶ τὰ τούτοις ἐπικουροῦντα, οὗτω μὲν ἂν σώιζοιτο ὁ τοιοῦτος, ἄλλως δὲ οὐκ ἂν διαμένοι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:6" n="4">
+<p><label>(4)</label> ἀρκεῖν γὰρ ἂν τοὺς ἅπαντας ἀνθρώπους τῶι τοιούτωι φύντι πολεμίους κατασταθέντας διὰ τὴν ἑαυτῶν εὐνομίαν, καὶ τὸ πλῆθος ἢ τέχνηι ἢ δυνάμει ὑπερβαλέσθαι ἂν καὶ περιγενέσθαι τοῦ τοιούτου ἀνδρός.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:6" n="5">
+<p><label>(5)</label> οὕτω φαίνεται καὶ αὐτὸ τὸ κράτος, ὅπερ δὴ κράτος ἐστί, διά τε τοῦ νόμου καὶ διὰ τὴν δίκην σωιζόμενον.</p></div></div>
+    
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1" n="7">
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="0">
+<p rend="indent"><label>7.</label> <bibl xml:lang="lat">p. 101, 11</bibl> (μαθεῖν δὲ ἄξιον καὶ ταῦτα περὶ τῆς εὐνομίας τε καὶ ἀνομίας, ὅσον διαφέρετον ἀλλήλοιν, καὶ ὅτι 〈ἡ〉 μὲν εὐνομία ἄριστον εἴη καὶ κοινῆι καὶ ἰδίαι, ἡ ἀνομία δὲ κάκιστον· 〈μέγιστ〉αι γὰρ παραχρῆμα βλάβαι γίγνονται ἐκ τῆς ἀνομίας. ἀρξώμεθα δὲ τὰ τῆς εὐνομίας δηλοῦν, ἅπερ γίγνεται πρότερα 〈ἡμῖν〉).</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="1">
+<p rend="indent"><label>(1)</label> πίστις μὲν πρώτη ἐγγίγνεται ἐκ τῆς εὐνομίας μεγάλα ὠφελοῦσα τοὺς ἀνθρώπους τοὺς σύμπαντας, καὶ τῶν μεγάλων ἀγαθῶν τοῦτό ἐστι· κοινὰ γὰρ τὰ χρήματα γίγνεται ἐξ αὐτῆς, καὶ οὕτω μὲν ἐὰν καὶ ὀλίγα ἦι ἐξαρκεῖ ὅμως κυκλούμενα, ἄνευ δὲ ταύτης οὐδ’ ἂν πολλὰ ἦι ἐξαρκεῖ.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="2">
+<p><label>(2)</label> καὶ αἱ τύχαι δὲ αἱ εἰς τὰ χρήματα καὶ τὸν βίον, αἵ τε ἀγαθαὶ καὶ μή, ἐκ τῆς εὐνομίας τοῖς ἀνθρώποις προσφορώτατα <pb facs="diefragmentederv02dieluoft_0379"/>  κυβερνῶνται· τούς τε γὰρ εὐτύχοῦντας ἀσφαλεῖ αὐτῆι χρῆσθαι καὶ ἀνεπιβουλεύτωι, τούς τε αὖ δυστυχοῦντας ἐπικουρεῖσθαι ἐκ τῶν εὐτυχούντων διὰ τὴν ἐπιμειξίαν τε καὶ πίστιν, ἅπερ ἐκ τῆς εὐνομίας γίγνεται.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="3">
+<p><label>(3)</label> τόν τε αὖ χρόνον τοῖς ἀνθρώποις διὰ τὴν εὐνομίαν εἰς μὲν τὰ πράγματα ἀργὸν γίγνεσθαι, εἰς δὲ τὰ ἔργα τῆς ζωῆς ἐργάσιμον.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="4">
+<p><label>(4)</label> φροντίδος δὲ τῆς μὲν ἀηδεστάτης ἀπηλλάχθαι τοὺς ἀνθρώπους ἐν τῆι εὐνομίαι, τῆι δὲ ἡδίστηι συνεῖναι· πραγμάτων μὲν γὰρ φροντίδα ἀηδεστάτην εἶναι, ἔργων δὲ ἡδίστην.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="5">
+<p><label>(5)</label> εἴς τε αὖ τὸν ὕπνον ἰοῦσιν, ὅπερ ἀνάπαυμα κακῶν ἐστιν ἀνθρώποις, ἀφόβους μὲν καὶ ἄλυπα μεριμνῶντας ἔρχεσθαι εἰς αὐτόν, γιγνομένους δὲ ἀπ’ αὐτοῦ ἕτερα τοιαῦτα πάσχειν, καὶ μὴ ἐμφόβους ἐξάπινα καθίστασθαι οὐδ’ ἐκ μεταλλαγῆς ἡδίστης τοῦ γνωστὴν τὴν ἡμέραν εἶναι προσδέχεσθαι, ἀλλὰ ἀδεῶς, φροντίδας μὲν ἀλύπους περὶ τὰ ἔργα τῆς ζωῆς ποιουμένους, τοὺς πόνους δὲ τῆι ἀντιλήψει ἀγαθῶν ἐλπίσιν εὐπίστοις καὶ εὐπροσδοκήτοις ἀνακουφίζοντας, ὧν πάντων τὴν εὐνομίαν αἰτίαν εἶναι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="6">
+<p><label>(6)</label> καὶ τὸ κακὰ μέγιστα τοῖς ἀνθρώποις πορίζον, πόλεμον ἐπιφερόμενον εἰς καταστροφὴν καὶ δούλωσιν, καὶ τοῦτο ἀνομοῦσι μὲν μᾶλλον ἐπέρχεσθαι, εὐνομουμένοις δ’ ἦσσον.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="7">
+<p><label>(7)</label> καὶ ἄλλα δὲ πολλά ἐστιν ἐν τῆι εὐνομίαι ἀγαθά, ἅπερ ἐπικουρήματα τῆι ζωῆι καὶ παραψυχὴ τῶν χαλεπῶν ἐξ αὐτῆς γίγνεται· τὰ δ’ ἐκ τῆς ἀνομίας κακὰ ἀποβαίνοντα τάδε ἐστίν.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="8">
+<p><label>(8)</label> ἄσχολοι μὲν πρῶτον οἱ ἄνθρωποι πρὸς τὰ ἔργα γίγνονται καὶ ἐπιμελοῦνται τοῦ ἀηδεστάτου, πραγμάτων ἀλλ’ οὐκ ἔργων, τά τε χρήματα δι’ ἀπιστίαν καὶ ἀμειξίαν ἀποθησαυρίζουσιν ἀλλ’ οὐ κοινοῦνται, καὶ οὕτως σπάνια γίγνεται, ἐὰν καὶ πολλὰ ἦι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="9">
+<p><label>(9)</label> αἵ τε τύχαι αἱ φλαῦραι καὶ αἱ ἀγαθαὶ εἰς τἀναντία ὑπηρετοῦσιν· ἥ τε γὰρ εὐτυχία οὐκ ἀσφαλής ἐστιν ἐν τῆι ἀνομίαι ἀλλ’ ἐπιβουλεύεται, ἥ τε δυστυχία οὐκ ἀπωθεῖται ἀλλὰ κρατύνεται διὰ τὴν ἀπιστίαν καὶ ἀμειξίαν.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="10">
+<p><label>(10)</label> ὅ τε πόλεμος ἔξωθεν μᾶλλον ἐπάγεται καὶ ἡ οἰκεία στάσις ἀπὸ τῆς αὐτῆς αἰτίας, καὶ ἐὰν μὴ πρόσθεν γίγνηται, τότε συμβαίνει· ἔν τε πράγμασι συμβαίνει καθεστάναι ἀεὶ διὰ ἐπιβουλὰς τὰς ἐξ ἀλλήλων, δι’ ἅσπερ εὐλαβουμένους τε διατελεῖν καὶ ἀντεπιβουλεύοντας ἀλλήλοις.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="11">
+<p><label>(11)</label> καὶ οὔτε ἐγρηγορόσιν ἡδείας τὰς φροντίδας εἶναι οὔτε ἐς τὸν ὕπνον ἀπερχομένοις ἡδεῖαν τὴν ὑποδοχὴν ἀλλὰ ἐνδείματον, τήν τε ἀνέγερσιν ἔμφοβον καὶ πτοοῦσαν τὸν ἄνθρωπον ἐπὶ μνήμας κακῶν ἐξαπιναίους ἄγειν· ἅπερ ἐκ τῆς ἀνομίας ταῦτά τε καὶ τὰ ἄλλα κακὰ τὰ προειρημένα ἅπαντα ἀποβαίνει.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="12">
+<p><label>(12)</label> γίνεται δὲ καὶ ἡ τυραννίς, κακὸν τοσοῦτόν τε καὶ τοιοῦτον, οὐκ ἐξ ἄλλου τινὸς ἢ ἀνομίας. οἴονται δέ τινες τῶν ἀνθρώπων. ὅσοι μὴ ὀρθῶς συμβάλλονται, τύραννον ἐξ ἄλλου τινὸς καθίστασθαι καὶ τοὺς ἀνθρώπους στερίσκεσθαι τῆς ἐλευθερίας οὐκ αὐτοὺς αἰτίους ὄντας, ἀλλὰ βιασθέντας ὑπὸ τοῦ κατασταθέντος τυράννου, οὐκ ὀρθῶς ταῦτα λογιζόμενοι.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="13">
+<p><label>(13)</label> ὅστις γὰρ ἡγεῖται βασιλέα ἢ τύραννον ἐξ ἄλλου τινὸς γίγνεσθαι ἢ ἐξ ἀνομίας τε καὶ πλεονεξίας, μωρός ἐστιν· ἐπειδὰν γὰρ ἅπαντες ἐπὶ κακίαν τράπωνται, τότε τοῦτο <pb facs="diefragmentederv02dieluoft_0380"/> γίγνεται· οὐ γὰρ οἷόν τε ἀνθρώπους ἄνευ νόμων καὶ δίκης ζῆν.</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="14">
+<p><label>(14)</label> ὅταν οὖν ταῦτα τὰ δύο ἐκ τοῦ πλήθους ἐκλίπηι, ὅ τε νόμος καὶ ἡ δίκη, τότε ἤδη εἰς ἕνα ἀποχωρεῖν τὴν ἐπιτροπείαν τούτων καὶ φυλακήν· πῶς γὰρ ἂν ἄλλως εἰς ἕνα μοναρχία περισταίη, εἰ μὴ τοῦ νόμου ἐξωσθέντος τοῦ τῶι πλήθει συμφέροντος;</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="15">
+<p><label>(15)</label> δεῖ γὰρ τὸν ἄνδρα τοῦτον, ὃς τὴν δίκην καταλύσει καὶ τὸν νόμον τὸν πᾶσι κοινὸν καὶ συμφέροντα ἀφαιρήσεται, ἀδαμάντινον γενέσθαι, εἰ μέλλει συλήσειν ταῦτα παρὰ τοῦ πλήθους τῶν ἀνθρώπων εἷς ὢν παρὰ πολλῶν·</p></div>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1134.tlg001.1st1K-grc1:7" n="16">
+<p><label>(16)</label> σάρκινος δὲ καὶ ὅμοιος τοῖς λοιποῖς γενόμενος ταῦτα μὲν οὐκ ἂν δυνηθείη ποιῆσαι, τἀναντία δὲ ἐκλελοιπότα καθιστὰς μοναρχήσειεν ἄν· διὸ καὶ γιγνόμενον τοῦτο ἐνίους τῶν ἀνθρώπων λανθάνει.</p></div></div></div>
+</body></text></TEI>

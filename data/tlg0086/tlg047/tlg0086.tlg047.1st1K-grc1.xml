@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+    <fileDesc>
+        <titleStmt>
+            <title xml:lang="grc">Περὶ Ξενοφάνους, περὶ Ζήνωνος, περὶ Γοργίου</title>
+            <author>Aristotle</author>
+            <editor>Immanuel Bekker</editor>
+            <funder>Center for Hellenic Studies</funder>
+            <respStmt>
+                <resp>Published original versions of the electronic texts</resp>
+                <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                <persName role="principal">Gregory Crane</persName>
+                <persName role="principal">Leonard Muellner</persName>
+                <persName role="principal">Bruce Robertson</persName></respStmt>
+            <respStmt>
+                <persName>Lucy Parr</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Hillary Cheney</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Evie Edmundson</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Claudia Filos</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Carlos R. Gutiérrez-Rueda</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Catharine Haldeman</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Kelly Hamilton</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Matthew L Hokom</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Devin Lawson</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Zijun Liao</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Sean Mao</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Halle Richardson</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Adam Rosengarten</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Will Shao</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Stuti Shelat</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Mel Ashton Trump</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Landon Van Berkum</persName>
+                <orgName>Center for Hellenic Studies</orgName>
+                <resp>Digital conversion and editing</resp>
+            </respStmt>
+            <respStmt>
+                <persName>Lisa M. Cerrato</persName>
+                <orgName>Perseus Digital Library</orgName>
+                <resp>Digital editor</resp>
+            </respStmt></titleStmt>
+        
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0086.tlg047.1st1K-grc1.xml</idno>
+<pubPlace/>
+    
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+
+        <sourceDesc>
+            <biblStruct>
+                <monogr>
+                    <title xml:lang="lat">Aristotelis Opera</title>
+                    <author>Aristotle</author>
+                    <editor>Immanuel Bekker</editor>
+                    <imprint>
+                        <publisher>Oxford University Press</publisher>
+                        <pubPlace>Oxford</pubPlace>
+                        <biblScope unit="volume">6</biblScope>
+                        <date>1837</date>
+                    </imprint>
+                </monogr>
+                <ref target="https://archive.org/details/operaexrecension06arisuoft/page/188/mode/2up">Internet Archive</ref>
+            </biblStruct>
+        </sourceDesc> 
+    </fileDesc>
+    
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+<ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+    
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+<refsDecl n="CTS">
+<cRefPattern n="section" matchPattern="(\w+).(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+<p>This pointer pattern extracts part, chapter, and section.</p></cRefPattern>
+<cRefPattern n="chapter" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts part and chapter.</p></cRefPattern>
+<cRefPattern n="part" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts part.</p></cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+    <profileDesc>
+        <langUsage>
+            <language ident="grc">Greek</language>
+            <language ident="lat">Latin</language>
+        </langUsage>
+    </profileDesc>
+    
+    <revisionDesc>
+        <change when="2021-10-18" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+    </revisionDesc>
+</teiHeader>
+    
+<text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0086.tlg047.1st1K-grc1" xml:lang="grc">
+    <pb facs="operaexrecension06arisuoft_0199"/>
+    <head rend="center">ΠΕΡΙ ΞΕΝΟΦΑΝΟΥΣ, ΠΕΡΙ ΖΗΝΩΝΟΣ, ΠΕΡΙ ΓΟΡΓΙΟΥ.</head>
+<div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg0086.tlg047.1st1K-grc1" n="Xenoph">   
+    <head rend="center">ΠΕΡΙ ΞΕΝΟΦΑΝΟΥΣ</head>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="1">
+<p rend="indent"><milestone unit="page" resp="Bekker" n="974a"/>Ἀιδιον εἶναι φησιν εἴ τί ἐστιν, εἴπερ μὴ ἐνδέχεται γενέσθαι μηδὲν ἐκ μηδενός. Εἴτε γὰρ ἅπαντα γέγονεν εἴτε μὴ πάντα ἀΐδιʼ ἀμφοτέρως. Ἐξ οὐδενὸς γὰρ αὐτῶν ἂν γινόμενα. Ἀπάντων τε γὰρ γινομένων οὐδὲν προϋπάρχειν· εἴτ' ὄντων τινῶν ἀεὶ ἕτερα προσγίνοιτο, πλέον ἂν καὶ μεῖζον τὸ· ἓν γεγονέναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="2">
+<p>Ὦι δὴ πλέον καὶ μεῖζον, τοῦτο γενέσθαι ἂν ἐξ οὐδενός· τῷ γὰρ ἐλάττονι τὸ πλέον, ἢ δ’ ἐν τῷ μικροτέρῳ τὸ μεῖζον οὐχ ὑπάρχειν. Αΐδιον δὲ ὂν ἄπειρον εἶναι, ὅτι οὐκ ἔχει ἀρχὴν ὅθεν ἐγένετο, οὐδὲ τελευτὴν εἰς ὃ γινόμενον ἐτελεύτησέ ποτε· πᾶν δὲ καὶ ἄπειρον ὂν εἶναι. Εἰ γὰρ πλέον ἢ δύο εἴη, πέρατʼ ἂν εἶναι ταῦτα πρὸς ἄλληλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="3">
+<p>Ἔν δὲ ὅμοιον εἶναι πάντα· εἰ γὰρ ἀνόμοια πλείω ὄντα, οὐκ ἂν ἔτι ἓν θεῖναι ἀλλὰ πολλά. Ἀΐδιον δὲ ὂν μέτριόν τε καὶ ὅμοιον πάντῃ ἀκίνητον εἶναι τὸ ἕν. Οὐ γὰρ ἂν κινηθῆναι μὴ ἔς τι ὑποχωρῆσαν. Ὑποχωρῆσαι δὲ ἀνάγκην εἶναι ἤτοι εἰς πλῆρες ἰὸν ἢ κενόν. Τούτων δὲ τὸ μὲν οὐκ ἂν δέξασθαι <pb facs="operaexrecension06arisuoft_0200"/> τὸ πλῆρες, τὸ δὲ οὐκ εἶναι οὐδὲν [ἢ] τὸ κενόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="4">
+<p><hi xml:lang="lat" rend="superscript">r</hi>Τοιοῦτο δὲ ὂν τὸ ἓν ἀνώδυνόν τε καὶ ἀνάλγητον ὑγιές τε καὶ ἄνοσον εἶναι, οὔτε μετακοσμούμενον θέσει, οὔτε ἑτεροιούμενον εἴδει, οὔτε μιγνύμενον ἄλλῳ. Κατὰ πάντα γὰρ ταῦτα πολλά τε τὸ ἓν γίνεσθαι καὶ τὸ μὴ ὂν τεκνοῦσθαι καὶ τὸ ὂν φθείρεσθαι ἀναγκάζεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="5">
+    <p>Ταῦτα δὲ ἀδύνατα εἶναι. Καὶ γὰρ εἰ τὸ μεμῖχθαί τι ἓν ἐκ πλειόνων λέγοιτο, καὶ εἴη πολλὰ κινούμενα εἰς ἄλληλα τὰ πράγματα, καὶ ἡ μῖξις ἡ ὡς ἐν ἑνὶ σύνθεσις εἴη τῶν πλειόνων, ἢ τῇ ἀπαλλάξει οἶον ἐπιπρόσθησις γίνοιτο τῶν μιχθέντων, ἐκείνους μὲν ἂν δι' ἀλλήλων χωριζόντων εἶναι τὰ μιχθέντα, ἐπιπροσθήσεως δʼ οὔσης ἐν τῇ τρίψει γίνεσθαι ἂν ἕκαστον φανερόν, ἀφαιρουμένων <milestone unit="page" resp="Bekker" n="974b"/> τῶν πρώτων τὰ ὑπʼ ἄλληλα τεθέντα τῶν μιχθέντων· ὧν οὐδέτερον συμβαίνειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="6">
+<p>Διὰ τοῦτον δὲ τὸν τρόπον κἂν εἶναι πολλὰ κἂν ἡμῖν, ὡς τὸ φαίνεσθαι μόνως. Ὤστʼ ἐπειδὴ οὐχ οἶόν θʼ οὕτως, οὐδὲ πολλὰ δυνατὸν εἶναι τὰ ὄντα, ἀλλὰ ταῦτα δοκεῖν οὐκ ὀρθῶς. Πολλὰ γὰρ καὶ ἄλλα κατὰ τὴν αἴσθησιν φαντάζεσθαι ἅπασαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="7">
+<p>Λόγον δ' οὔτʼ ἀναιρεῖ τὰ αὐτὰ γίνεσθαι, οὔτε πολλὰ εἶναι τὸ ὄν, ἀλλʼ ἀΐδιόν τε καὶ ἅπειρον καὶ πάντῃ ὅμοιον αὐτὸ αὐτῷ. Ἆρʼ οὖν δεῖ πρῶτον μὲν μὴ πᾶσαν λαβόντα δόξαν ἄρχεσθαι, ἀλλ' ἀεὶ μάλιστα ὂν βέβαιον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="8">
+<p>Ὤστʼ εἰ μὲν ἅπαντα τὰ δοκοῦντα μὴ ὀρθῶς ὑπολαμβάνεται, οὐθὲν ἴσως προσήκει οὐδὲ τούτῳ προχρῆσθαι τῷ δόγματι, οὐκ ἄν ποτε οὐδὲν γένοιτο ἐκ μηδενός, Μία γάρ τίς ἐστι δόξα καὶ αὕτη τῶν οὐκ ὀρθῶν, ἢν ἐκ τοῦ αἰσθάνεσθαί πως ἐπὶ πολλῶν ὄντες ὑπειλήφαμεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="9">
+<p>Εἰ δὲ μὴ πάντα ἡμῖν ψευδῆ τὰ φαινόμενα, ἀλλὰ τινές εἰσι καὶ τούτων ὀρθαὶ ὑπολήψεις ἢ ἐπιδεῖξαι τὰς τοιαύτας ποιότητας μάλιστα δοκούσας
+<pb facs="operaexrecension06arisuoft_0201"/> ὀρθάς, ταύτας ληπτέον, ἂς ἀεὶ βεβαιοτέρας εἶναι δεῖ ἢ αἳ μέλλουσιν ἐξ ἐκείνων τῶν λόγων δειχθήσεσθαι. Εἰ γὰρ καὶ εἶεν δύο δόξαι ὑπεναντίαι ἀλλήλαις, ὥσπερ οἴεται, εἰ μὴ πολλὰ γενέσθαι φησίν, ἀνάγκη εἶναι ἐκ μὴ ὄντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="10">
+<p>Εἰ δὲ τοῦτο μὴ οἶόν τε, οὐκ εἶναι τὰ ὄντα πολλά. Γένοιτο γὰρ ἂν ὅν, ὅτι ἔστιν ἄπειρον εἶναι. Εἰ δ' οὕτως, καὶ ἔν. Ὁμοίως μὲν δὴ ἡμῖν ὁ ἀμφοτέρων π οὐδὲν μᾶλλόν τι ἕν, ἢ ὅτι πολλὰ δείκνυται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="11">
+<p>Εἰ δὲ βέβαιος μᾶλλον ἡ ἑτέρα, ἀπὸ ταύτης ξυμπερανθέντα μᾶλλον δέδεικται. Τυγχανόμενα δέ, ἔχοντος ἀμφοτέρας τὰς ὑπολήψεις ταύτας, καὶ κινούμενα μέν ἐστι τὰ ὄντα. Ἀμφοῖν δὲ πιστὴ μᾶλλον αὕτη, καὶ θᾶττον ἂν προεῖντο πάντες ταύτην ἐκείνης τὴν δόξαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="12">
+<p>Ὤσηʼ εἰ καὶ συμβαίνει ἐναντίας <milestone unit="page" resp="Bekker" n="975a"/> εἶναι τὰς φάσεις, καὶ ἀδύνατον γίνεσθαί τε ἐκ μὴ ὄντος καὶ μὴ πολλὰ εἶναι τὰ πράγματα, ἐλέγχοιτο μὲν ἂν ὑπʼ ἀλλήλων ταῦτα, ἀλλὰ τί μᾶλλον οὕτως ἂν ἔχοι ; Ἴσως τε κἂν φαίη τις τούτοις τἀναντία. Οὔτε γὰρ δείξας ὅτι ὀρθὴ δόξα ἀφʼ ἦς ἄρχεται, οὔτε μᾶλλον βέβαιον ἢ περὶ ἦς δείκνυσι λαβών, διελέχθη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="13">
+<p>Μᾶλλον γὰρ λαμβάνεται εἰκὸς εἶναι γίνεσθαι ἐκ μὴ ὄντος ἢ μὴ πολλὰ εἶναι. Λέγεταί τε καὶ σφόδρα ὑπὲρ αὐτῶν γίγνεσθαί τε τὰ μὴ ὄντα, καὶ μὴ γεγονέναι πολλὰ ἐκ μὴ ὄντων, καὶ οὐχ ὅτι οἱ τυγχάνοντες, ἀλλὰ καὶ τῶν δοξάντων εἶναι σοφῶν τινὲς εἰρήκασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="14">
+<p>Αὐτίκα δ' Ἡσίοδος
+<quote rend="blockquote">πρῶτον μὲν πάντων (φησὶ) χάος ἐγένετʼ, αὐτὰρ ἔπειτα
+<lb/>γαῖ εὐρύστερνος, πάντων ἕδος ἀσφαλὲς αἰεί,
+<lb/>ἠδʼ ἔρος, ὃς πάντεσσι μεταπρέπει ἀθανάτοισιν.</quote></p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.1" n="15">
+<p>Τὰ δʼ ἄλλα φησὶ γενέσθαι, ταῦτα δʼ ἐξ οὐδενός. Πολλοὶ δὲ καὶ ἕτεροι εἶναι μὲν οὐδέν φασι, γίγνεσθαι δὲ πάντα, λέγοντες ἐξ οὐκ ὄντων γίνεσθαι τὰ γινόμενα. Ὤστε τοῦτο μὲν δῆλον, ὅτι ἐνίοις γε δοκεῖ καὶ ἐξ οὐκ ὄντων ἂν γενέσθαι.</p></div></div><pb facs="operaexrecension06arisuoft_0202"/>
+        <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="1">
+<p rend="indent">Ἀλλ' ἄρα εἰ μὲν δυνατά ἐστιν ἢ ἀδύνατα ἃ λέγει, ἐατέον. Τὸ δὲ πότερον συμπεραίνεται αὐτὸ ἐξ ὦν λαμβάνει, ἢ οὐδὲν κωλύει καὶ ἄλλως ἔχειν, ἱκανῶς σκέψασθαι· ἕτερον γὰρ ἄν τι τοῦτʼ ἴσως ἐκείνου εἴη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="2">
+<p>Καὶ πρῶτον τεθέντος, ὃ πρῶτον λαμβάνει, μηδὲν γενέσθαι ἂν ἐκ μὴ ὄντος, ἆρα ἀνάγκη ἀγέννητα πάντα εἶναι, ἢ οὐδὲν κωλύει γεγονέναι ἕτερα ἐξ ἑτέρων, καὶ τοῦτο εἰς ἄπειρον ἕναι; Ἣ καὶ ἀνακάμπτει κύκλῳ, ὥστε τὸ ἕτερον ἐκ τοῦ ἑτέρου γεγονέναι, ἀεί τε οὕτως ὄντος τινός, καὶ ἀπειράκις ἑκάστου γεγενημένου ἐξ ἀλλήλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="3">
+<p>Ὤστε οὐδὲν ἂν κωλύοιτο ἅπαντα γεγονέναι, κειμένου τοῦ μηδὲν γενέσθαι ἂν ἐκ μὴ ὄντος, καὶ ἄπειρα ὄντα πρὸς ἐκεῖνον προσαγορεῦσαι οὐδὲν κωλύει τῶν τῷ ἑνὶ ἑπομένων ὀνομάτων. Ἄπαντα γὰρ εἶναι καὶ λέγεσθαι καὶ ἐκεῖνος τῷ ἀπείρῳ προσάπτει. Οὐδέν τε κωλύει, καὶ μὴ ἀπείρων ὄντων, κύκλῳ αὐτῶν εἶναι τὴν γένεσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="4">
+<p>Ἔτι εἰ ἅπαντα γίγνεσθαι, ἔστι δὲ οὐδέν, ὥς τινες λέγουσιν, πῶς ἓν ἀδΰα εἴη; Ἄλλὰ γὰρ τοῦ μὲν εἶναι ἕν τι ὡς ὄντος καὶ κειμένου διαλέγεται. Εἰ γάρ, φησί, μὴ ἐγένετο, ἔστω δὲ ἀΐδια, ὡς δέον ὑπάρχειν τὸ εἶναι τοῖς πράγμασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="5">
+<p>Ἔτι εἰ καὶ ὅτι μάλιστα μήτε τὸ μὴ ὅν ἐνδέχεται γενέσθαι μήτε ἀπολέσθαι τὸ μὴ ὄν, ὅμως τί κωλύει τὰ μὲν γενόμενα αὐτῶν εἶναι, τὰ δ' ἀΐδια, ὡς καὶ Ἐμπεδοκλῆς λέγει;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="6">
+    <p><milestone unit="page" resp="Bekker" n="975b"/> ῎Απαντα γὰρ κἀκεῖνος ταὐτὰ ὁμολογήσας, ὅτι
+<quote rend="blockquote">ἔκ τε μὴ ὄντος ἀμήχανόν ἐστι γενέσθαι,
+<lb/>τό τε ὄν ἐξόλλυσθαι ἀνήνυστον καὶ ἄπρηκτον,
+<lb/>ἀεὶ γὰρ θήσεσθαι ὅπῃ κέ τις αἰὲν ἐρείδῃ,</quote>
+ὅμως τῶν ὄντων τὰ μὲν ἀΐδια εἶναί φησι, πῦρ καὶ ὕδωρ καὶ γῆν καὶ ἀέρα, τὰ δ' ἄλλα γίνεσθαί τε καὶ γεγονέναι ἐκ τούτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="7">
+<p>Οὐδεμία γὰρ ἑτέρα, ὡς οἴεται, γένεσίς ἐστι τοῖς οὗσιν,
+<quote rend="blockquote">ἀλλὰ μόνον μῖξίς τε διάλλαξίς τε μιγέντων
+<lb/>yἐστί· φύσις δʼ ἐπὶ τοῖς ὀνομάζεται ἀνθρώποισιν.</quote>
+<pb facs="operaexrecension06arisuoft_0203"/> Τὴν δὲ γένεσιν προσιοῦσαν τοῖς ἀϊδίοις καὶ τῷ ὅτι γίνεσθαι λέγει, ἐπεὶ τοῦτό γε ἀδύνατον ᾤετο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="8">
+<p>Πῶς γάρ, φήσει, καὶ ἔπαρξις ἴετο, παντί τε καὶ ποθὲν ἐλθόν; Ἀλλὰ μισγομένων τε καὶ συντιθεμένων πυρὸς καὶ τῶν μετὰ πυρὸς γίγνεσθαι τὰ πολλά, διαλλαττομένων τε καὶ διακρινομμένων φθείρεσθαι πάλιν, καὶ εἶναι τῇ μὲν μίξει πολλά τε καὶ τῇ διακρίσει, τῇ δὲ φύσει τέτταρʼ ἄνευ τῶν αἰτίων, ἢ ἕν· ἢ εἰ καὶ ἄπειρα εὐθὺς εἴη ταῦτα, ἐξ ὧν συντιθεμένων γίγνεται, διακρινομένων δὲ φθείρεται, ὡς καὶ τὸν Ἀναξαγόραν φασί τινες λέγειν ἐξ ἀεὶ ὄντων καὶ ἀπείρων τὰ γινόμενα γίνεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="9">
+<p>Κἂν οὕτως, οὐκ ἂν εἴη ἀΐδια πάντα, ἀλλὰ καὶ γιγνόμενα ἄττα καὶ γενόμενά τʼ ἐξ ὄντων καὶ φθειρόμενα εἰς οὐσίας τινὰς ἄλλας. Ἔτι οὐδὲν κωλύει μίαν τινὰ οὐσίαν τὸ πᾶν μορφήν, ὡς καὶ ὁ Ἀναξίμανόρος καὶ ὁ Ἀναξιμένης λέγουσιν, ὁ μὲν ὕδωρ εἶναι φάμενος τὸ πᾶν, ὁ δέ, ὁ Ἀναξιμένης, ἀέρα, καὶ ὅσοι ἄλλοι οὕτως εἶναι τὸ πᾶν ἓν ἠξιώκασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="10">
+<p>Τοῦτο ἤδη σχήμασί τε καὶ πλήθεσι καὶ ὀλιγότητι, καὶ τῷ μανὸν ἢ πυκνὸν γίνεσθαι, πολλὰ καὶ ἄπειρα ὄντα τε καὶ γιγνόμενα ἀπεργάζεται τὸ ὅλον, Φησὶ δὲ καὶ ὁ Δημόκριτος τὸ ὕδωρ τε καὶ τὸν ἀέρα ἕκαστόν τε τῶν πολλῶν, τοῦτο ὅν, ῥυθμῷ διαφέρειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="11">
+<p>Τί δὴ κωλύει καὶ οὕτως τὰ πολλὰ γίγνεσθαί τε καὶ ἀπόλλυσθαι, ἐξ ὄντος ἀεὶ ἐς ὂν μεταβάλλοντος ταῖς εἰρημέναις διαφοραῖς τοῦ ἑνός, καὶ οὐδὲν οὔτε πλέονος οὕτε ἐλάττονος γιγνομένον τοῦ ὅλου; Ἔτι τί κωλύει ποτὲ μὲν ἐξ ἄλλων τὰ σώματα γίγνεσθαί τε καὶ ἀπόλλυσθαι πάλιν ;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="12">
+<p>Εἰ δὲ καὶ ταῦτά τις συγχωροίη, καὶ εἴη τι καὶ ἀγένητον, τί μᾶλλον ἄπειρον δείκνυται; Ἄπειρον γὰρ εἶναί φησιν, εἰ ἔστι μέν, μὴ γεγονέναι. Πέρατα γὰρ εἶναι τὴν τῆς γενέσεως ἀρχήν τε καὶ τελευτήν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="13">
+<p>Καίτοι τί κωλύει ἀγένητον ὂν ἔχειν πέρας ἐκ τῶν εἰρημένων; Εἰ γὰρ ἐγένετο, ἀρχὴν ἔχειν ἄξιοι ταύτην <milestone unit="page" resp="Bekker" n="976a"/> ὅθεν γίγνοιτο, εἰ γιγνόμενα. Τί δὴ κωλύει, καὶ εἰ μὴ <pb facs="operaexrecension06arisuoft_0204"/> ἐγένετο, ἔχειν ἀρχήν; Οὐ μέντοι γε ἐξ ἧς γε ἐγένετο, ἀλλὰ καὶ ἑτέραν, καὶ εἶναι περαίνοντα πρὸς ἄλληλα ἀΐδια ὄντα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="14">
+<p>Ἔτι τί κωλύει τὸ μὲν ὅλον ἀγέννητον ὂν ἄπειρον εἶναι, τὰ δʼ ἐν αὐτῷ γιγνόμενα πεπεράνθαι, ἔχοντʼ ἀρχὴν καὶ τελευτὴν γενέσεως; Ἔτι καὶ ὡς ὁ Παρμενίδης φησί, τί κωλύει καὶ τὸ πᾶν ἓν ὂν καὶ ἀγένητον ὅμως πεπεράνθαι, καὶ εἶναι
+<quote rend="blockquote">πάντοθεν ἐγκύκλου σφαίρας ἐναλίγκιον ὄγκῳ,
+<lb/>μέσσοθεν ἰσοπαλὲς πάντη·</quote>
+τὸ γὰρ οὔτε τι μεῖζον οὔτε τι βαιότερον εἶναι μέχρι ὅν ἐστι τῇ ἢ τῇ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="15">
+<p> Ἔχον δὲ μέσον καὶ ἔσχατα, πέρας ἔχει ἀγέννητον ὅν, ἐπεὶ εἰ καί, ὡς αὐτὸς λέγει, ἕν ἐστι, καὶ τοῦτο σῶμα, ἔχει ἄλλα ἑαυτοῦ μέρη, εἰ τάδε ὅμοια πάντα. Καὶ γὰρ ὅμοιον οὕτω λέγει τὸ πᾶν εἶναι οὐ . . . ἄλλῳ τινὶ ὃ περανθῆναι ὁρᾷς, ἐλέγχει εἴ τι ὅμοιον τὸ ἄπειρον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="16">
+<p>Τό γε ὅμοιον ἑτέρῳ ὅμοιον, ὥστε δύο ἢ πλείω ὄντα οὐκ ἂν ἓν οὐδʼ ἅπειρον εἶναι. Ἀλλ’ ἴσως τὸ ὅμοιον πρὸς αὐτὸ λέγει, καὶ φησὶν αὐτὸ ὅμοιον εἶναι πᾶν, ὅτι ὁμοιομερὲς ὕδωρ ὂν ἅπαν ἢ γῆ ἢ εἴ τι τοιοῦτον ἄλλο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="17">
+<p>Δῆλος γὰρ οὖτος ἀξιῶν εἶναι ἓν τῶν διμερῶν ἕκαστον σῶμα ὅν, οὐκ ἄπειρόν ἐστιν. Τὸ γὰρ ὅλον ἅπειρον, ὥστε ταῦτα περαίνει πρὸς ἄλληλα ἀγέννητα ὄντα. Ἔτι εἰ ἀΐδιόν τε καὶ ἅπειρόν ἐστι, πῶς ἂν εἴη ἓν σῶμα ὅν; Εἰ μὲν γὰρ ἀνομοίων ἀμερῶν εἴη, πολλά, καὶ αὐτὸς οὕτω γʼ εἶναι ἄξιοῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="18">
+<p>Εἰ δὲ ἅπαν ὕδωρ ἢ ἅπαν γῆ ἢ ὅ τι δὴ τὸ ὅν τοῦτʼ ἐστί, πολλὰ ἂν ἔχοι μέρη, ὡς καὶ Ζήνων ἐπιχειρεῖ ὂν δεικνύναι τὸ οὕτως ὂν ἔν. Εἴη οὖν ἂν καὶ πλείονα αὐτοῦ μέρη ἐλαττόνων τε καὶ μικροτέρων, ἀλλά τε πάντῃ ἂν ταύτῃ ἀλλοῖον εἴη οὐδενὸς προσγιγνομένου σώματος οὐδʼ ἀπογιγνομένου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="19">
+<p>Εἰ δὲ μήτε σῶμα μήτε πλάτος μήτε μῆκος ἔχον μηδέν, πῶς ἂν ἄπειρον ἂν εἴη; Τί <pb facs="operaexrecension06arisuoft_0205"/> κωλύει πολλὰ καὶ ἐνάριθμα τοιαῦτα εἶναι; Τί κωλύει καὶ πλείω ὄντα ἑνὸς μεγέθει ἄπειρα εἶναι; Ὡς καὶ Ξενοφάνης ἄπειρον τό τε βάθος τῆς γῆς καὶ τοῦ ἀέρος φησὶν εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="20">
+<p>Δηλοῖ δὲ καὶ ὁ Εμπεδοκλῆς· ἐπιτιμᾷ γὰρ ὡς λεγόντων τινῶν τοιαῦτα ἀδύνατα εἶναι, οὕτως ἐχόντων ξυμβαίνειν αὐτά,
+<quote rend="blockquote">εἴπερ ἀπείρονα γῆς τε βάθη καὶ δαψιλὸς αἰθήρ,
+<lb/>ὃς διὰ πολλῶν δὴ βροτέων ῥηθέντα ματαίως
+<lb/>ἐκκέχυται στομάτων, ὀλίγον τοῦ παντὸς ἰδόντων.</quote>
+Ἕτι ὂν ἓν οὐδὲν ἄτοπον εἰ μὴ πάντη ὅμοιόν ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="21">
+<p>Εἰ γάρ ἐστιν <milestone unit="page" resp="Bekker" n="976b"/> ὕδωρ ἅπαν ἢ πῦρ ἢ ὅ τι δὴ ἄλλο τοιοῦτον, οὐδὲν κωλύει πλείω εἰπεῖν τοῦ ὄντος ἑνός, εἰ δὴ δι' ἕκαστον ὅμοιον αὐτὸ ἑαυτῷ. Καὶ γὰρ μανόν, τὸ δὲ πυκνὸν εἶναι, μὴ ὄντος ἐν τῷ μανῷ κενοῦ,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="22">
+<p>Οὐδὲν κωλύειν γάρ, τῷ μανῷ οὐκ ἔστιν ἔν τισι μέρεσι χωρὶς ἀποκεκριμένον τὸ κενόν, ὡς τὸ τοῦ ὅλου, τὸ μὲν εἶναι πυκνόν, καὶ τουτὶ δέ ἐστι μανὸν τὸ πᾶν οὕτως ἔχον· ἀλλʼ ὁμοίως ἅπαν πλῆρες ὅν, ὁμοίως ἧττον πλῆρές ἐστι τοῦ πυκνοῦ,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="23">
+<p>Εἱ δὲ καὶ ἔστιν, ἀγέννητόν ἐστιν, καὶ διὰ τοῦτο δοθείη ἄπειρον εἶναι, καὶ μηδὲ ἐνδέχεσθαι ἄλλο καὶ ἄλλο ἄπειρον εἶναι. Διὰ τοῦτο καὶ ἐν τούτῳ ἤδη προσαγορευτέον καὶ ἀδύνατον· πῶς γὰρ ἂν τὸ ἄπειρον ὅσον ἧ τὸ κενὸν μὴ ὅλον ἂν οἶόν τε εἶναι; Ἀκίνητον δʼ εἶναι φησίν εἰ κενὸν μή ἐστιν· ἅπαντα γὰρ κινεῖσθαι τῷ ἀλλάττειν τόπον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="24">
+<p>Πρῶτον μὲν οὖν τοῦτο πολλοῖς οὐ συνδοκεῖ, ἀλλ’, εἶναί τι κενόν, οὐ μέντοι τοῦτό γέ τι σῶμα εἶναι, ἀλλʼ οἶον καὶ ὁ Ἡσίοδος ἐν τῇ γενέσει πρῶτον τὸ χάος φησὶ γενέσθαι, ὡς δὲ χώραν πρῶτον ὑπάρχειν τοῖς οὖσιν. Τοιοῦτον δέ τι καὶ τὸ κενὸν οἶον ἀγγεῖόν τι ἀνὰ μέσον εἶναι ζητοῦμεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="25">
+<p>Ἀλλὰ δὴ καὶ εἰ μή ἐστι κενόν, μηδέ τι ἦσσον ἂν κινοῖτο, ἐπεὶ καὶ Ἀναξαγόρας τὸ πρὸς αὐτὸ πραγματευθείς, καὶ οὐ <pb facs="operaexrecension06arisuoft_0206"/> μόνον ἀποχρῆσαν αὐτῷ ἀποφήνασθαι ὅτι οὐκ ἔστιν, ὅμως κινεῖσθαί φησι τὰ ὄντα, οὐκ ὄντος κενοῦ, Ὁμοίως δὲ καὶ ὁ Ἐμπεδοκλῆς κινεῖσθαι μὲν ἀεί φησι συγκινούμενα τὸν ἅπαντα ἐνδελεχῶς χρόνον, οὐδὲν εἶναι λέγων ὡς τοῦ παντός, οὐδὲ κενεόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="26">
+<p>Πόθεν οὖν τί κʼ ἐπέλθοι; Ὄταν δὲ εἰς μίαν μορφὴν συγκριθῇ, ὡς ἓν εἶναι, οὐδέν φησι τό γε κενεὸν πέλει οὐδὲ περισσόν. Τί γὰρ κωλύει εἰς ἄλληλα φέρεσθαι καὶ περιίστασθαι ἅμα ὁτουοῦν εἰς ἄλλο, καὶ τούτου εἰς ἕτερον, καὶ εἰς τὸ πρῶτον, ἄλλου μεταβάλλοντος ἀεί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="27">
+<p>Ἔτι καὶ τὴν ἐν τῷ αὐτῷ μένοντος τοῦ πράγματος τόπῳ τοῦ εἴδους μεταβολήν, ἣν ἀλλοίωσιν οἵ τʼ ἄλλοι κἀκεῖνος λέγει, [οὐδὲν] ἐκ τῶν εἰρημένων αὑτῷ κωλύει κινεῖσθαι τὰ πράγματα, ὅταν ἐκ λευκοῦ μέλαν ἢ ἐκ πικροῦ γένηται γλυκύ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="28">
+<p>Οὐδὲν γὰρ τὸ μὴ εἶναι κενὸν ἢ μὴ δέχεσθαι τὸ πλῆρες ἀλλοιοῦσθαι κωλύει. Ὤστε οὔτε ἅπαντα ἀΐδια οὔθʼ ἓν οὔτʼ ἄπειρον ἀνάγκη εἶναι, ἀλλʼ ἄπειρα πολλά. Οὔτε ἕν θʼ ὅμοιον, οὔτʼ ἀκίνητον, οὔτʼ εἰ ἓν οὔτʼ εἰ πόλλ' ἄττα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="29">
+<p>Τούτων δὲ κειμένων καὶ μετακοσμεῖσθαι καὶ ἑτεροιοῦσθαι τὰ ὄντα οὐδὲν κωλύει ἐκ τῶν ὑπʼ ἐκείνῳ εἰρημένων, <milestone unit="page" resp="Bekker" n="977a"/> καὶ ἑνὸς ὄντος τοῦ παντὸς κινήσεως οὔσης, καὶ πλήθει καὶ ὀλιγότητι διαφέροντας, καὶ ἀλλοιουμένου προσγιγνομένου. Εἴ δʼ ἅρα τινός, οὐ τοῦ σώματος, καὶ εἰ πολλὰ συμμισγομένων καὶ συνδιακρινομένων ἀλλήλοις. Τὴν γὰρ μῖξιν οὔτʼ ἐπιπρόσθεσιν τοιαύτην εἶναι οὔτε σύνθεσιν εἰκὸς οἵαν λέγειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Xenoph.2" n="30">
+<p>Ὥστε ἢ χωρὶς εὐθὺς εἶναι, ἢ καὶ ἀποστρεφθέντος ἐπίπροσθεν ἕτερα ἑτέρων φέρεσθαι χωρὶς ἀλλήλων ταῦτα, ἀλλʼ οὕτω συγκεῖσθαι ταχθέντα ὥστε ὁτιοῦν μιγνυμένου παρʼ ὁτιοῦν ᾧ μίγνυσθαι μέρος, οὕτως ὡς μὴ ἀναληφθῆναι συγκείμενα, ἀλλὰ μεμιγμένα, μηδʼ ὁποιαοῦν αὐτῷ μέρη. Ἐπεὶ γὰρ οὐκ ἔστι σῶμα τὸ ἐλάχιστον, ἅπαν ἅπαντι μέρος μέμικται ὁμοίως καὶ τὸ ὅλον.</p></div></div></div>
+<pb facs="operaexrecension06arisuoft_0207"/>
+        
+<div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg0086.tlg047.1st1K-grc1" n="Zenon">
+    <head rend="center">ΠΕΡΙ ΖΗΝΩΝΟΣ.</head>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="1">
+<p rend="indent">Ἄδύνατόν φησιν εἶναι, εἴ τι ἔστι, γενέσθαι, τοῦτο λέγων ἐπὶ τοῦ θεοῦ, Ἀνάγκη γὰρ ἤτοι ἐξ ὁμοίων ἢ ἐξ ἀνομοίων γενέσθαι τὸ γενόμενον. Δυνατὸν δὲ οὐδέτερον. Οὔτε γὰρ ὅμοιον ὑφʼ ὁμοίου προσήκειν τεκνωθῆναι μᾶλλον ἢ τεκνῶσαι (ταὐτὰ γὰρ ἅπαντα τοῖς γε ἴσοις ἢ ὁμοίοις ὑπάρχειν πρὸς ἄλληλα) οὔτʼ ἂν ἐξ ἀνομοίου τὸ ἀνόμοιον γενέσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="2">
+<p>Εἰ γὰρ γίγνοιτο ἐξ ἀσθενεστέρου τὸ ἰσχυρότερον ἢ ἐξ ἐλάττονος τὸ μεῖζον ἢ ἐκ χείρονος τὸ κρεῖττον, ἢ τοὐναντίον τὰ χείρω ἐκ τῶν κρειττόνων, τὸ οὐκ ὂν ἐξ ὄντος ἂν γενέσθαι· ὅπερ ἀδύνατον. Αΐδιον μὲν οὖν διὰ ταῦτʼ εἶναι τὸν θεόν. Εἰ δ' ἔστιν ὁ θεὸς ἁπάντων κράτιστον, ἕνα φησὶν αὐτὸν προσήκειν εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="3">
+<p>Εἰ γὰρ δύο ἢ ἔτι πλείους εἶεν, οὐκ ἂν ἔτι κράτιστον καὶ βέλτιστον αὐτὸν εἶναι πάντων. Ἔκαστος γὰρ ἂν θεὸς τῶν πολλῶν ὅμοιος ὢν τοιοῦτος εἴη. Τοῦτο γὰρ θεὸν καὶ θεοῦ δύναμιν εἶναι, κρατεῖν, ἀλλὰ μὴ κρατεῖσθαι, καὶ πάντα κρατεῖσθαι εἶναι, Ὤστε καθὸ μὴ κρείττων, κατὰ τοσοῦτον οὐκ εἶναι θεόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="4">
+<p>Πλειόνων οὖν ὄντων, εἰ μὲν εἶεν τὰ μὲν ἀλλήλων κρείττους τὰ δὲ ἥττους, οὐκ ἂν εἶναι θεούς· πεφυκέναι γὰρ θεὸν μὴ κρατεῖσθαι. Ἴσων δὲ ὄντων, οὐκ ἂν ἔχειν θεὸν φύσιν δεῖν εἶναι κράτιστον· τὸ δὲ ἴσον οὔτε βέλτιον οὔτε χεῖρον εἶναι τοῦ ἴσου. Ὤστʼ εἴπερ εἴη τε καὶ τοιοῦτον εἴη θεός, ἔνα μόνον εἶναι τὸν θεόν. Οὐδὲ γὰρ οὐδὲ πάντα δύνασθαι ἂν ἃ βούλοιτο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="5">
+<p>Οὐδὲ γὰρ ἂν δύνασθαι πλειόνων ὄντων ἕνα εἶναι μόνον. Ἔνα δ' ὄντα ὅμοιον εἶναι πάντῃ, ὁρᾶν τε καὶ ἀκούειν, τάς τε ἄλλας αἰσθήσεις ἔχοντα πάνῃ. Εἰ γὰρ μή, κρατεῖν ἂν καὶ κρατεῖσθαι ὑπʼ ἀλλήλων τὰ μέρη θεοῦ ὄντα· ὅπερ ἀδύνατον. <milestone unit="page" resp="Bekker" n="977b"/> Πάντῃ δʼ ὅμοιον ὄντα σφαιροειδῆ εἶναι· οὐ γὰρ τῇ μὲν τῇ <pb facs="operaexrecension06arisuoft_0208"/> δʼ οὐ τοιοῦτον εἶναι, ἀλλὰ πάντη. Αΐδιον δʼ ὄντα καὶ ἕνα καὶ σφαιροειδῆ οὔτʼ ἄπειρον οὔτε πεπεράσθαι. Ἄπειρον ὃ μὴ ὄν εἶναι· τοῦτο γὰρ οὔτε μέσον οὔτʼ ἀρχὴν καὶ τέλος οὔτʼ ἄλλο μέρος οὐδὲν ἔχειν, τοιοῦτον δʼ εἶναι τὸ ἄπειρον. Οἶον δὲ τὸ μὴ ὅν, οὐκ ἂν εἶναι τὸ ὄν, περαίνειν δὲ πρὸς ἄλληλα, εἰ πλείω εἶεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="7">
+<p>Τὸ δὲ ἓν οὔτε τῷ οὐκ ὄντι οὔτε τοῖς πολλοῖς ὁμοιοῦσθαι· ἓν γὰρ οὐκ ἔχει πρὸς ὅ τι περανεῖ. Τὸ δὲ τοιοῦτον ὂν ἕν, ὃν τὸν θεὸν εἶναι λέγει, οὔτε κινεῖσθαι οὔτε κινητὸν εἶναι. Ἀκίνητον μὲν γὰρ εἶναι τὸ μὴ ὄν. Οὔτε γὰρ ἂν εἰς αὐτὸ ἕτερον οὔτε ἐκεῖνο εἰς ἄλλο ἐλθεῖν,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="8">
+<p>Κινεῖσθαι δὲ τὰ πλείω ὄντα ἑνός. Ἔτερον γὰρ εἰς ἕτερον δεῖν κινεῖσθαι. Εἰς μὲν οὖν τὸ μὴ ὂν οὐδὲν ἂν κινηθῆναι· τὸ γὰρ μὴ ὂν οὐδαμῇ εἶναι. Εἰ δὲ εἰς ἄλληλα μεταβάλλοι, πλείω αὐτὸν εἶναι ἑνός. Διὰ ταῦτα δὴ κινεῖσθαι μὲν ἂν τὰ δύο ἢ πλείω ἑνός, ἠρεμεῖν δὲ καὶ ἀκίνητον εἶναι τὸ οὐδέν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.3" n="9">
+<p>Τὸ δὲ ἓν οὔτε ἀτρεμεῖν οὔτε κινεῖσθαι· οὔτε γὰρ τῷ μὴ ὄντι οὔτε τοῖς πολλοῖς ὅμοιον εἶναι. Κατὰ πάντα δὲ οὕτως ἔχειν τὸν θεόν, ἀΐδιόν τε καὶ ἕνα, ὅμοιόν τε καὶ σφαιροειδῆ ὄντα, οὔτε ἄπειρον οὔτε πεπερασμένον, οὔτε ἠρεμεῖν οὔτε ἀκίνητον εἶναι.</p></div></div>
+    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="1">
+<p rend="indent">Πρῶτον μὲν οὖν λαμβάνει καὶ ουτος τὸ γιγνόμενον γίγνεσθαι ἐξ ὄντος, ὥσπερ ὁ Μέλισσος. Καίτοι τί κωλύει μήτʼ ἐξ ὁμοίου τὸ γιγνόμενον γίγνεσθαι, ἀλλʼ ἐκ μὴ ὄντος; Ἔτι οὐδὲν μᾶλλον ὁ θεὸς ἀγέννητος ἢ καὶ τἄλλα πάντα, εἴπερ ἅπαντα ἐξ ὁμοίου ἢ ἀνομοίου γέγονεν· ὅπερ ἀδύνατον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="2">
+<p>Ὤστε ἢ οὐδέν ἐστι παρὰ τὸν θεόν, ἢ καὶ τἆλλα ἀΐδια πάντα, Ἔτι κράτιστον τὸν θεὸν λαμβάνει, τοῦτο δυνατώτατον καὶ βέλτιστον λέγων. Οὐ δοκεῖ δὲ τοῦτο κατὰ τὸν νόμον, ἀλλὰ πολλὰ κρείττους εἶναι ἀλλήλων οἱ θεοί, Οὐκ οὖν ἐκ τοῦ δοκοῦντος εἴληφε ταύτην κατὰ τοῦ θεοῦ τὴν ὁμολογίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="3">
+<p>Τό τε κράτιστον εἶναι τὸν θεὸν οὐχ <pb facs="operaexrecension06arisuoft_0209"/> οὕτως ὑπολαμβάνων λέγεται ὡς πρὸς ἄλλο τι τοιαύτη ἡ τοῦ θεοῦ φύσις, ἀλλὰ πρὸς τὴν αὐτοῦ διάθεσιν, ἐπεὶ τοί γε πρὸς ἕτερον οὐδὲν ἂν κωλύοι μὴ τῇ αὐτοῦ ἐπιεικείᾳ καὶ ῥώμῃ ὑπερέχειν, ἀλλὰ διὰ τὴν τῶν ἄλλων ἀσθένειαν. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="4">
+<p>Θέλοι δʼ ἂν οὐδεὶς οὔτω τὸν θεὸν φάναι κράτιστον εἶναι, ἀλλ' ὅτι αὐτὸς ἔχει ὡς οἶόν τε ἄριστα, καὶ οὐδὲν ἐκλείπει καὶ εὖ καὶ καλῶς ἔχειν αὐτῷ· ἅμα γὰρ ἴσως ἔχοντι κάκεῖνο ἂν συμβαίη. Οὕτω δὲ διακεῖσθαι καὶ πλείους αὐτοὺς ὄντας οὐδὲν κωλύει, ἅπαντας ὡς <milestone unit="page" resp="Bekker" n="978a"/> οἶόν τε ἄριστα διακειμένους, καὶ κρατίστους τῶν ἄλλων, οὐχ αὐτῶν ὄντας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="5">
+<p>Ἒστι δ', ὡς ἔοικε, καὶ ἄλλα. Κράτιστον γὰρ εἶναι τὸν θεόν φησι, τοῦτο δέ τινι εἶναι ἀνάγκη, ἕνα τὰ πάντα ὁρᾶν καὶ ἀκούειν οὐδὲν προσήκει· οὐ γὰρ εἰ μὴ καὶ τῇδ’ ὁρᾷ. χεῖρον ὁρᾷ ταύτῃ, ἀλλʼ οὐχ ὁρᾷ. Ἀλλ' ἴσως τοῦτο βούλεται τὸ πάντῃ αἰσθάνεσθαι, ὅτι οὕτως ἂν βέλτιστα ἔχοι, ὅμοιος ὢν πάντη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="6">
+<p>Ἔτι τοιοῦτος ὢν διὰ τί σφαιροειδὴς ἂν εἴη, ἀλλ' οὐχ ὅτι ἑτέραν τινὰ μᾶλλον ἔχων ἰδέαν, ὅτι πάντῃ ἀκούει καὶ πάντῃ κρατεῖ; Ὤσπερ γὰρ ὅταν λέγωμεν τὸ ψιμμύθιον ὅτι πάντα ἐστὶ λευκόν, οὐδὲν ἄλλο τι σημαίνομεν ἢ ὅτι ἐν ἅπασιν αὐτοῦ τοῖς μέρεσιν ἐγκέχρωσται ἡ λευκότης· τί δὴ κωλύει οὕτω κἀκεῖ τὸ πάντῃ ὁρᾶν καὶ ἀκούειν καὶ κρατεῖν λέγεσθαι, ὅτι ἅπαν ὃ ἄν τις αὐτοῦ λαμβάνῃ μέρος, τοῦτʼ ἔσται πεπονθός; Ὤσπερ δὲ οὐδὲ τὸ ψιμμύθιον, οὐδὲ τὸν θεὸν ἀνάγκη διὰ τοῦτο εἶναι σφαιροειδῆ,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="7">
+<p>Ἔτι μήτε ἄπειρον μήτε πεπεράνθαι σῶμά γε ὂν καὶ ἔχον μέγεθος πῶς οἶόν τε, εἴπερ τοῦτʼ ἐστὶν ἄπειρον ὃ ἂν μὴ ἔχῃ πέρας δεκτικὸν ὂν πέρατος. Πέρας δ' ἐν μεγέθει καὶ πλήθει ἐγγίνεται, καὶ ἐν ἅπαντι τῷ ποσῷ, ὥστε ἂν μὴ ἔχῃ πέρας μέγεθος ὄν, ἄπειρόν ἐστιν. Ἔτι δὲ σφαιροειδῆ ὄντα ἀνάγκη πέρας <pb facs="operaexrecension06arisuoft_0210"/> ἔχειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="8">
+<p>Ἔσχατα γὰρ ἔχει, εἴπερ μέσον ἔχει αὐτοῦ τοῦ πλεῖστον ἀπέχειν. Μέσον δʼ ἔχει, σφαιροειδὲς ὄν, τοῦτο γάρ ἐστι σφαιροειδὲς ὃ ἐκ τοῦ μέσου ὁμοίως πρὸς τὰ ἔσχατα. Σῶμα ἔσχατα ἢ πέρατα ἔχειν, οἶον διαφορεῖ. Εἰ γὰρ καὶ τὸ μὴ ὂν ἀπλοῦν, οὐκ ἂν καὶ τὸ ὂν ἄπειρον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="9">
+<p>Τί γὰρ κωλύει ἔνια ταὐτὰ λεχθῆναι κατὰ τοῦ ὄντος καὶ μὴ ὄντος; Τό τε γὰρ ὂν οὐκ ὂν οὐδεὶς νῦν αἰσθάνεται, καὶ ὂν δέ τις οὐκ ἂν αἰσθάνοιτο νῦν· ἄμφω δὲ λεκτά, ὅπως διανοητά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="10">
+<p>Οὐ λευκὸν δὲ τὸ μὴ ὄν· εἰ οὖν διὰ τοῦτο τὰ ὄντα πάντα λευκά, ὅπως μή τι ταὐτὸ κατὰ τοῦ ὄντος σημαίνωμεν καὶ μὴ ὄντος, ἢ οὐδὲν κωλύει καὶ τῶν ὄντων τι μὴ εἶναι λευκόν; Οὕτω δὲ καὶ ἄλλην ἄν ἀπόφασιν δέξαιτο τὸ ἄπειρον; εἰ μὴ τὸ πάλαι λεχθέντι μᾶλλον, παρὰ τὸ μὴ ἔχειν ἢ μὴ ἔχειν ἐστὶν ἅπαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="11">
+<p>Ὤστε καὶ τὸ ὃν ἢ ἄπειρον ἢ πέρας ἔχον ἐστίν. Ἴσως δὲ ἄτοπον καὶ τὸ προσάπτειν τῷ μὴ ὄντι ἀπειρίαν. Οὐ γὰρ πᾶν, εἰ μὴ ἔχει πέρας, ἄπειρον λέγομεν, ὥσπερ οὐδʼ ἄνισον οὐκ ἂν φαῖμεν εἶναι τὸ μὴ ὄν. Ἔτι οὐκ ἂν ἔχοι ὁ θεὸς πέρας εἶς ὤν, ἀλλʼ οὐ πρὸς θεόν. Εἰ δὲ ἓν μόνον ἐστίν, ὁ θεὸς ἂν εἴη <milestone unit="page" resp="Bekker" n="978b"/> μόνον καὶ τὰ τοῦ θεοῦ μέρη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="12">
+<p>Ἐπεὶ καὶ τοῦτʼ ἄτοπον, εἰ τοῖς πολλοῖς συμβέβηκε πεπεράνθαι πρὸς ἄλληλα, διὰ τοῦτο τὸ ἓν μὴ ἔχειν πέρας. Πολλὰ γὰρ τοῖς πολλοῖς καὶ τῷ ἑνὶ ὑπάρχει ταὐτά, ἐπεὶ καὶ τὸ εἶναι κοινὸν αὐτοῖς ἐστίν. Ἄτοπον οὖν ἴσως ἂν εἴη, εἰ διὰ τοῦτο μὴ φαῖμεν εἶναι τὸν θεόν, εἰ τὰ πολλά ἐστιν, ὅπως μὴ ὅμοιον ἔσται αὐτοῖς ταύτῃ,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="13">
+<p>Ἔτι τί κωλύει πεπεράνθαι καὶ ἔχειν πέρατα ἓν ὄντα τὸν θεόν; Ὡς καὶ ὁ Παρμενίδης λέγει ἓν ὄν εἶναι αὐτὸν
+<quote rend="blockquote">πάντοθεν εὐκύκλου σφαίρας ἐναλίγκιον ὄγκῳ,
+<lb/>μεσσόθεν ἰσοπαλές,</quote>
+<pb facs="operaexrecension06arisuoft_0211"/> Τὸ γὰρ πέρας τινὸς μὲν ἀνάγκη ἴσως εἶναι, οὐ μέντοι πρός τί γε, οὐδὲ ἀνάγκη τὸ ἔχον πέρας πρός τι ἔχειν πέρας, ὡς πεπερασμένον πρὸς τὸ μὴ ἐφεξῆς ἀπείρου, ἀλλʼ ἐστὶ τὸ πεπεράνθαι ἔσχατα ἔχειν, ἔσχατα δʼ ἔχον οὐκ ἀνάγκη πρός τι ἔχειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="14">
+<p>Ἐνίοις μὲν οὐ συμβαίνει πᾶν καὶ πεπεράνθαι. Πάλιν περὶ τοῦ ἀκίνητον εἶναι τὸ ἓν καὶ τὸ ὅν, ὅτι καὶ τὸ ὂν κινεῖται, ἴσως ὁμοίως τοῖς ἔμπροσθεν ἄτοπον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="15">
+<p>Καὶ ἔτι ἆρά γε οὐ ταὐτὸ ἄν τις ὑπολάβοι τὸ μὴ κινεῖσθαι καὶ τὸ ἀκίνητον εἶναι, ἀλλὰ τὸ μὲν ἀπόφασιν τοῦ κινεῖσθαι, ὥσπερ τὸ μὴ ἴσον, ὅπερ καὶ κατὰ τοῦ μὴ ὄντος, εἴπερ ἀληθές, τὸ δὲ ἀκίνητον τῷ ἔχειν πως ἤδη λέγεσθαι, ὥσπερ τὸ ἄνισον, καὶ ἐπὶ τῷ ἐναντίῳ τοῦ κινεῖσθαι τῷ ἠρεμεῖν, ὡς καὶ σχεδὸν οἱ ἀπὸ τοῦ α ἀποφάσεις ἐπὶ ἐναντίοις λέγονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="16">
+<p>Τὸ μὲν οὖν μὴ κινεῖσθαι ἀληθὲς ἐπὶ τοῦ μὴ ὄντος, τὸ δὲ ἠρεμεῖν οὐχ ὑπάρχει τῷ μὴ ὄντι. Ὁμοίως δὲ οὐδὲ ἀκίνητον εἶναι σημαίνει ταὐτόν. Ἀλλ' οὗτος ἐπὶ τῷ ἠρεμεῖν αὐτῷ χρῆται, καὶ φησὶ τὸ μὴ ὂν ρεμεῖν, ὅτι οὐκ ἔχει μετάβασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="17">
+<p>Ὄπερ τε καὶ ἐν τοῖς ἄνω εἴπομεν, ἄτοπον ἴσως, εἴ τι τῷ μὴ ὄντι προσάπτομεν, τοῦτο μὴ ἀληθὲς εἶναι κατὰ τοῦ ὄντος εἰπεῖν, ἄλλως τε κἂν ἀπόφασις ᾖ τὸ λεχθέν, τῶν καὶ τὸ μὴ κινεῖσθαι μηδὲ μεταλαμβάνειν ἐστίν. Πολλὰ γὰρ ἄν, καθάπερ καὶ ἐλέχθη, ἀφαιροῖτο τῶν ὄντων κατηγορεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="18">
+<p>Οὐδὲ γὰρ ἂν πολλὰ ἀληθὲς εἰπεῖν εἴη μὴ ἕν, εἴπερ καὶ τὸ μὴ ὂν ἐστὶ μὴ ἕν, εἴτε ἐπʼ ἐνίων τἀναντία ξυμβαίνειν δοκεῖ κατὰ τοσαύτας ἀποφάσεις· ὦν ἀνάγκη ἢ ἴσον ἢ ἄνισον, ἄν τι πλῆθος ᾖ, καὶ μὴ ὡς ἢ καὶ ἄρτιον ἢ περιττόν, ἂν ἀριθμὸς ᾖ. Ὁμοίως δὲ ὡς καὶ τὸ ἠρεμεῖν ἢ κινεῖσθαι ἀνάγκη, ἂν σῶμα ᾖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="19">
+    <p>Ἔτι εἰ καὶ διὰ τοῦτο μὴ κινεῖται ὁ θεός τε καὶ τὸ ἔν, ὅτι τὰ πολλὰ κινεῖται τῷ <milestone unit="page" resp="Bekker" n="979a"/> εἰς ἄλληλα <pb facs="operaexrecension06arisuoft_0212"/> ἰέναι, τί κωλύει καὶ τὸν θεὸν κινεῖσθαι εἰς ἄλλο; Οὐδα τι μόνον, ἀλλʼ ὅτι εἶς μόνος θεός. Εἰ δὲ καὶ αὐτός, τί κωλύει εἰς ἄλληλα κινουμένων τῶν μερῶν τοῦ...κύκλῳ φε...θεόν ; Οὐ γὰρ δὴ τὸ τοιοῦτον ἕν, ὥσπερ ὁ Ζήνων πολλὰ εἶναι φύσει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Zenon.4" n="20">
+<p>Αὐτὸς γὰρ σῶμα λέγει εἶναι τὸν θεόν, εἴτε τόδε τὸ πᾶν, εἴτε ὅ τι δήποτε αὐτὸ λέγων. Ἀσώματος γὰρ ὢν πῶς ἂν σφαιροειδὴς εἴη ἐπιμόνως, ὅταν οὕτως οὔτʼ ἂν κινοῖτο οὔτʼ ἂν ἠρεμοῖ μηδαμοῦ γε ὤν; Ἐπεὶ δὲ σῶμά ἐστι, τί ἂν αὐτὸ κωλύοι κινεῖσθαι ὡς ἐλέχθη;</p></div></div></div>
+        
+<div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg0086.tlg047.1st1K-grc1" n="Georg">
+    <head rend="center">ΠΕΡΙ ΓΟΡΓΙΟΥ.</head>
+    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.5" n="1">
+    <p rend="indent">Οὐκ εἶναί φησιν οὐδέν· εἰ δʼ ἔστιν, ἄγνωστον εἶναι· εἰ δὲ καὶ ἔστι καὶ γνωστόν, ἀλλʼ οὐ δηλωτὸν ἄλλοις. Καὶ ὅτι μὲν οὐκ ἔστι, συνθεὶς τὰ ἑτέροις εἰρημένα, ὅσοι περὶ τῶν ὄντων λέγοντες τἀναντία, ὡς δοκοῦσιν, ἀποφαίνονται αὐτοῖς, οἱ μὲν ὅτι ἓν καὶ οὐ πολλά, οἱ δὲ αὗ ὅτι πολλὰ καὶ οὐχ ἕν, καὶ οἱ μὲν ὅτι ἀγένητα, οἱ δʼ ὡς γενόμενα ἐπιδεικνύντες ταῦτα, συλλογίζεται κατʼ ἀμφοτέρων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.5" n="2">
+<p>Ἀνάγκη γάρ, φησίν, εἴ τί ἐστι, μήτε ἓν μήτε πολλὰ εἶναι, μήτε ἀγέννητα μήτε γενόμενα, οὐδὲν ἂν εἴη. Εἰ γὰρ μὴ εἴη τι, τούτων ἂν θάτερα εἴη. Ὅτι οὐκ ἔστιν οὔτε ἓν οὔτε πολλά, οὔτε ἀγέννητα οὔτε γενόμενα, τὰ μὲν ὡς Μέλισσος, τὰ δὲ ὡς Ζήνων ἐπιχειρεῖ δεικνύειν μετὰ τὴν πρώτην ἴδιον αὐτοῦ ἀπόδειξιν, ἐν ᾖ λέγει ὅτι οὐκ ἔστιν οὔτε εἶναι οὔτε μὴ εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.5" n="3">
+<p>Εἰ μὲν γὰρ τὸ μὴ εἶναι ἔστι μὴ εἶναι, οὐδὲν ἂν ἧττον, τὸ μὴ ὂν τοῦ ὄντος εἴη. Τό τε γὰρ μὴ ὄν ἐστι μὴ ὅν, καὶ τὸ ὂν ὄν, ὥστε οὐδὲν μᾶλλον ἢ εἶναι ἢ οὐκ εἶναι τὰ πράγματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.5" n="4">
+<p>Εἰ δʼ ὅμως τὸ μὴ εἶναί ἐστι, τὸ εἶναι, φησίν, οὐκ ἔστι τὸ ἀντικείμενον. Εἰ γὰρ τὸ μὴ εἶναί ἐστι, τὸ εἶναι [ἢ] μὴ <pb facs="operaexrecension06arisuoft_0213"/> εἶναι προσήκει. Ὥστε οὐκ ἂν οὕτως, φησίν, οὐδὲν ἂν εἴη, εἰ μὴ ταὐτόν έστιν εἶναί τε καὶ μὴ εἶναι, Εἰ δὲ ταὐτό, καὶ οὕτως οὐκ ἂν εἴη οὐδέν· τό τε γὰρ μὴ ὄν οὐκ ἔστι καὶ τὸ ὅν, ἐπείπερ ταὐτὸ τῷ μὴ ὄντι. Οὗτος μὲν οὖν ὁ αὐτὸς λόγος ἐκείνου.</p></div></div>
+    <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="1">
+<p rend="indent">Οὐδαμόθεν δὲ συμβαίνει ἐξ ὦν εἴρηκεν, μηδὲν εἶναι. Ἃ γὰρ καὶ ἀποδείκνυσιν, οὕτως διαλέγεται. Εἰ τὸ μὴ ὄν ἐστιν ἢ ἔστιν, ἀπλῶς εἰπεῖν εἴη, καὶ ἔστιν ὅμοιον μὴ ὄν. Τοῦτο δὲ οὔτε φαίνεται οὕτως οὔτε ἀνάγκη, ἀλλ' ὡσπερεὶ δυοῖν, ὄντος, τοῦ δʼ οὐκ ὄντος, τὸ μὲν ἔστι, τὸ δʼ οὐκ ἀληθές, ὅτι ἐστὶ <milestone unit="page" resp="Bekker" n="979b"/> τὸ μὲν μὴ ὄν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="2">
+<p>Διότι οὖν οὐκ ἔστιν, οὔτε εἶναι οὔτε μὴ εἶναι τὰ ἄμφω οὔθʼ ἕτερον οὐκ ἔστιν. Οὐδὲν γάρ, φησίν, εἴη ἂν τὸ μὴ εἶναι τοῦ εἶναι, εἴπερ εἴη τι καὶ τὸ μὴ εἶναι. Οὐδείς φησιν εἶναι τὸ μὴ εἶναι οὐδαμῶς. Εἰ δὲ καὶ ἔστι τὸ μὴ ὂν μὴ ὄν, οὐδʼ οὕτως ὁμοίως ἂν εἴη τὸ μὴ ὂν τῷ ὄντι· τὸ μὲν γάρ ἐστι μὴ ὅν, τὸ δὲ καὶ ἔστιν ἔτι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="3">
+<p>Εἰ δὲ καὶ ἁπλῶς εἰπεῖν ἀληθές, ὡς δὴ θαυμάσιόν τʼ ἂν εἴη τὸ μὴ ὄν ἐστιν. Ἀλλ' εἰ δὴ οὕτω, πότερον μᾶλλον ξυμβαίνει τὰ πάντα εἶναι ἢ μὴ εἶναι; Αὐτὸ γὰρ οὕτῳ γε τοὐναντίον ἔοικε γίνεσθαι. Εἰ γὰρ τό τε μὴ ὅν ἐστι καὶ τὸ ὂν ὅν ἐστιν, ἅπαντά ἐστιν. Καὶ γὰρ τὰ ὅντα καὶ τὰ μὴ ὄντα ἐστίν. Οὐκ ἀνάγκη γάρ, εἰ τὸ μὴ ὅν ἐστι, καὶ τὸ ὄν μὴ εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="4">
+<p>Εἰ δὴ καὶ οὕτω τις ξυγχωρεῖ, καὶ τὸ μὲν μὴ ὄν εἴη, τὸ δὲ ὂν μὴ εἴη, ὅμως οὐδὲν ἧττον εἴη ἄν· τὰ γὰρ μὴ ὄντα εἴη κατὰ τὸν ἐκίνου λόγον. Εἰ δὲ ταὐτόν ἐστι καὶ τὸ εἶναι καὶ τὸ μὴ εἶναι, οὐδʼ οὕτως μᾶλλον οὐκ [εἴη] ἄν τι εἴη. Ὡς γὰρ κἀκεῖνος λέγει, ὅτι εἰ ταὐτὸν μὴ ὂν καὶ ὅν, τό τε ὂν οὐκ ἔστι καὶ τὸ μὴ ὅν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="5">
+<p>Ὥστε οὐδέν ἐστιν, ἀντιστρέψαντι ἔστιν ὁμοίως φάναι ὅτι πάντα ἐστίν. Τό τε γὰρ μὴ ὅν ἐστι καὶ τὸ ὄν, <pb facs="operaexrecension06arisuoft_0214"/> ὥστε πάντα ἐστίν. Μετὰ δὲ τοῦτον τὸν λόγον φησίν· εἰ δὲ ἔστιν, ἤτοι ἀγέννητον ἢ γενόμενον εἶναι. Καὶ εἰ μὲν ἀγένητον, ἄπειρον αὐτὸ τοῖς τοῦ Μελίσσου ἀξιώμασι λαμβάνει· τὸ δʼ ἄπειρον οὐκ ἂν εἶναί ποτε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="6">
+<p>Οὔτε γὰρ ἐν αὐτῷ οὔτʼ ἂν ἐν ἄλλῳ εἶναι· δύο γὰρ ἄν οὕτως ἢ πλείω εἶναι, τό τε ἐνὸν καὶ τὸ ἐν ᾧ, μηδαμοῦ δὲ ὂν οὐδὲ εἶναι κατὰ τὸν Ζήνωνος λόγον περὶ τῆς χώρας. Ἀγέννητον μὲν οὖν διὰ ταῦτʼ οὐκ εἶναι, οὐ μὴν οὐδὲ γενόμενον. Γενέσθαι γοῦν οὐδὲν ἂν οὔτʼ ἐξ ὄντος οὔτʼ ἐκ μὴ ὄντος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="7">
+<p>Εἰ γὰρ τὸ ὂν μεταπέσοι, οὐκ ἂν ἔτʼ εἶναι τὸ ὄν, ὥσπερ γʼ εἰ καὶ τὸ μὴ ὂν γένοιτο, οὐκ ἂν ἔτι εἴη μὴ ὄν. Οὐδὲ μὴν οὐθʼ ἐξ ὄντος ἂν γενέσθαι. Εἰ μὲν γὰρ μή ἐστι τὸ μὴ ὄν, οὐδὲν ἂν ἐκ μηδενὸς ἂν γενέσθαι· εἰ δʼ ἔστι τὸ μὴ ὄν, διʼ ἅπερ οὐδʼ ἐκ τοῦ ὄντος, διὰ ταῦτα οὐδʼ ἐκ τοῦ μὴ ὄντος γενέσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="8">
+<p>Εἰ οὖν ἀνάγκη μέν, εἴπερ ἔστι τι, ἤτοι ἀγέννητον εἶναι ἢ γενόμενον, ταῦτα δὲ ἀδύνατόν τι καὶ εἶναι. Ἔτι εἴπερ ἔστιν, ἓν ἢ πλείω, φησίν, ἐστίν· εἴτε μήτε ἓν μήτε πολλά, οὐδὲν ἂν εἴη. Καὶ ἓν μὲν . . . καὶ ὅτι ἀσώματον ἂν εἴη τὸ ἕν η ἐνσχονμέν γε τῷ τοῦ Ζήνωνος λόγου. Ἑνος δὲ ὄντος οὐδʼ ἂν . . . εἶναι οὐδὲ μὴ . . . μήτε πολλά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="9">
+<p>Εἰ γὰρ μήτε ἓν μήτε <milestone unit="page" resp="Bekker" n="980a"/> πολλά ἐστιν, οὐδʼ ἂν κινηθῆναί φησιν. Οὐδενὶ γὰρ κινηθείη, ἢ οὐκ ἂν ἔτι, ἢ ὡσαύτως ἔχον, ἀλλὰ τὸ μὲν οὐκ ἂν εἴη, τὸ δʼ οὐκ ὂν γεγονὸς εἴη, Ἔτι δὲ ἢ κινεῖ ἢ κινεῖται, καὶ εἰ μεταφέρεται οὐ συνεχὲς ὄν, διῄρηται τὸ ὄν, οὔτε τι ταύτῃ· ὥστε πάντῃ κινεῖται, πάντῃ διῄρηται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="10">
+<p>Εἰ δ’ οὕτως, πάντα οὐκ ἔστιν. Ἐκλιπὲς γὰρ ταύτῃ, φησίν, ᾗ διῄρηται, τοῦ ὄντος, ἀντὶ τοῦ κενοῦ τὸ διῃρῆσθαι λέγων, καθάπερ ἐν τοῖς Λευκίππου καλουμένοις λόγοις γέγραπται. Εἰ μὲν οὖν οὐδέν, τὰς ἀποδείξεις λέγειν ἅπαντα. Δεῖ γὰρ τὰ φρονούμενα εἶναι, καὶ τὸ μὴ ὅν, εἴπερ μή ἐστι, μηδὲ φρονεῖσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="11">
+<p>Εἰ δʼ οὕτως, οὐδὲν ἂν εἶναι ψεῦδος οὐδείς <pb facs="operaexrecension06arisuoft_0215"/> φησιν, οὐδʼ εἰ ἐν τῷ πελάγει φαίη ἁμιλλάσθαι ἅρματα. Πάντα γὰρ ἂν ταῦτα εἴη. Καὶ γὰρ τὰ ὀρώμένα καὶ ἀκουόμενα διὰ τοῦτό ἐστιν, ὅτι φρονεῖται ἕκαστα αὐτῶν· εἰ δὲ μὴ διὰ τοῦτο, ἀλλʼ ὥσπερ οὐδὲν μᾶλλον ἃ ὁρῶμεν ἐστίν, οὕτω μᾶλλον ἃ ὁρῶμεν ἢ διανοούμεθα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="12">
+<p>Καὶ γὰρ ὥσπερ ἐκεῖ πολλοὶ ἂν ταῦτα ἴδοιεν, καὶ ἐνταῦθα πολλοὶ ἂν ταῦτα διανοηθείημεν. Τὸ οὖν μᾶλλον δὴ τοιάδʼ ἐστί, ποῖα δὲ τἀληθῆ, ἄδηλον. Ὥστε καὶ εἰ ἔστιν, ἡμῖν γε ἄγνωστα εἶναι τὰ πράγματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="13">
+<p>Εἰ δὲ καὶ γνωστά, πῶς ἄν τις, φησί, δηλώσειεν ἄλλῳ; Ὃ γὰρ εἶδε, πῶς ἄν τις, φησί, τοῦτο εἴποι λόγῳ; Ἢ πῶς ἂν ἐκείνῳ δῆλον ἀκούσαντι γίγνοιτο, μὴ ἰδόντι; <milestone unit="page" resp="Bekker" n="980b"/> Ὥσπερ γὰρ οὐδὲ ἡ ὄψις τοὺς φθόγγους γιγνώσκει, οὕτως οὐδὲ ἡ ἀκοὴ τὰ χρώματα ἀκούει, ἀλλὰ φθόγγους· καὶ λέγει ὁ λέγων, ἀλλʼ οὐ χρῶμα οὐδὲ πρᾶγμα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="14">
+<p>Ὃ οὖν τις μὴ ἐννοεῖ, πῶς αἰτεῖ παρʼ ἄλλου λόγῳ ἢ σημείῳ τινὶ ἑτέρου πράγματος ἐννοήσειεν, ἀλλʼ ἢ ἐἀν μὲν χρῶμα ἰδών, ἐὰν δὲ μος. Ἀρχὴν γὰρ οὐ λέγε γοει δὲ χρῶμα, ἀλλὰ λόγον, ὥστ' οὐδὲ διανοεῖσθαι χρῶμα ἔστιν, ἀλλʼ ὁρᾶν, οὐδὲ ψόφον, ἀλλʼ ἀκούειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="15">
+<p>Εἰ δὲ καὶ ἐνδέχεται, γινώσκει τε καὶ ἀναγινώσκει λέγων. Ἀλλὰ πῶς ὁ ἀκούων τὸ αὐτὸ ἐννοήσει; Οὐ γὰρ οἷόν τε τὸ αὐτὸ ἅμα ἐν πλείοσι καὶ χωρὶς οὖσιν εἶναι· δύο γὰρ ἂν εἴη τὸ ἕν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="16">
+<p>Εἰ δὲ καὶ εἴη, φησίν, ἐν πλείοσι καὶ ταὐτόν, οὐδὲν κωλύει μὴ ὅμοιον φαίνεσθαι αὐτοῖς, μὴ πάντη ὁμοίοις ἐκείνοις οὖσιν καὶ ἐν τῷ αὐτῷ, εἴ τι ἐν τοιούτου εἴησαν, ἀλλʼ οὐ δύο εἶεν. Φαίνεται δὲ οὐδʼ αὐτὸς αὑτῷ ὅμοια αἰσθανόμενος ἐν τῷ αύτῷ χρόνῳ, ἀλλ' ἕτερα τῇ ἀκοῇ καὶ τῇ ὄψει, καὶ νῦν τε καὶ πάλαι διαφόρως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg004.1st1K-grc1:Georg.6" n="17">
+<p>Ὥστε σχολῇ ἄλλῳ πᾶν ταὐτὸ αἴσθοιτό τις. Οὕτως οὐκ ἔστιν, ἕν ἐστι γνωστόν, οὐδεὶς ἂν αὐτὸ ἑτέρῳ δηλώσειεν, διά τε τὸ μὴ εἶναι τὰ <pb facs="operaexrecension06arisuoft_0216"/> πράγματα λεκτά, καὶ ὅτι οὐδεὶς ἕτερον ἑτέρῳ ταὐτὸν ἐννοεῖ. Ἅπαντες δὲ καὶ οὕτως ἑτέρων ἀρχαιοτέρων εἰσὶν ἀπορίαι, ὥστε ἐν τῇ περὶ ἐκείνων σκέψει καὶ ταῦτα ἐξεταστέον. </p></div></div></div></div>
+
+
+</body></text></TEI>

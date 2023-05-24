@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Fragmenta Chrysippi, quae ad explicationem carminum Homericorum pertinent.</title>
+        <author>Chrysippus</author>
+        <editor>Hans Friedrich August von Arnim</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName>Karina Cooper</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Derek Dimond</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Kyle Lee Holt</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Houghton</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digial editor</resp>
+        </respStmt>
+      </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg1264.tlg003.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+       <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-08-23"/>
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author>Chrysippus</author>
+          <title xml:lang="lat">Stoicorum veterum fragmenta</title>
+          <editor>Hans Friedrich August von Arnim</editor>
+          <imprint>
+            <pubPlace>Stuttgart</pubPlace>
+            <publisher>Teubner</publisher>
+            <date>1903</date>
+            <date type="printing">1964</date>
+          </imprint>
+          <biblScope unit="volume">3</biblScope>
+        </monogr>
+        <ref target="https://archive.org/details/stoicorumveterum03arniuoft/page/192/mode/2up">Internet Archive</ref>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+      <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>This pointer pattern extracts fragment</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+      <language ident="lat">Latin</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021-11-29" who="Lisa Cerrato">markup review</change>
+    <change when="2021-09-21" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+  
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" xml:lang="grc">
+      <pb facs="stoicorumveterum03arniuoft_0200"/>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="769">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Homeri Iliadem Α 129.</bibl> Ζώϊλος δὲ ὁ Ἀμφιπολίτης καὶ Χρύσιππος ὁ Στωϊκὸς σολοικίζειν οἴονται τὸν ποιητὴν ἀντὶ ἑνικοῦ πληθυντικῷ χρησάμενον ῥήματι· τὸ γὰρ δῶσι φασί πληθυντικόν· ἀγνοοῦσι δὲ <foreign xml:lang="lat">etc.</foreign></p>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="770">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Homeri Iliad. Α 405.</bibl> ὅς ῥα παρὰ Κρονίωνι· ὅτι ἐντ̣εῦθεν ἐπὶ τοῦ Ἄρεως λέγεται οὐκ ὀρθῶς (<bibl xml:lang="mul">l. Il. Ε 906</bibl>) Ὅμηρος δέ, ὡς Στωϊκός, Ποσειδῶνος αὐτὸν εἶναί φησι.</p>
+      </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="771">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Hom. Iliad. Θ 441.</bibl> ἀμβωμοῖσι· Χρύσιππος ὑφ’ ἓν προφέρεται, ὁ μέντοι Ἀρίσταρχος δύο μέρη λόγου <foreign xml:lang="lat">etc.</foreign></p>
+        <p rend="indent"><foreign xml:lang="lat">Etymol. Magn. s. v.</foreign> ἀμβωμοῖσιν· ἀντὶ τοῦ περὶ τοῖς βωμοῖς. Χρύσιππος ὑφ’ ἓν προφέρει, ὁ μέντοι Ἀρίσταρχος δύο μέρη λόγου.</p>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="772">
+        <p rend="indent"><bibl xml:lang="mul">Scholia ad Hom. Iliad. Κ 252.</bibl> Χρύσιππος δὲ ὥσπερ εἴ τις, φησί, περὶ τριῶν ἡμερῶν διαλεγόμενος ἐν τῇ τρίτῃ λέγει μίαν ἀπολείπεσθαι ἔτι ἡμέραν, κἂν μὴ περὶ ὄρθρον ποιῆται τοὺς λόγους, οὕτως καὶ τὸν Ὀδυσσέα εἰ καὶ πλέον ἦν παρῳχηκὸς τῶν δύο μοιρῶν τὴν τρίτην φάναι καταλείπεσθαι, ἐπειδὴ τριμεροῦς οὔσης τῆς νυκτὸς ἕκαστον μέρος ἕν τι λαμβάνεται, ὥστε κἂν ἐλλιπὲς ᾖ τοῦτο καὶ μὴ ὁλόκληρον, ἀλλ’ ἀριθμεῖσθαί γε τρίτην, τῷ τάξιν τῶν ἡμερῶν ἔχειν τὴν τρίτην. οὕτω γὰρ καὶ ἄνθρωπον παρὰ πόδα γενόμενον ἔτι τυγχάνειν τῆς ὅλης προσηγορίας.</p>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="773">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Hom. Iliad. Ν. v. 41.</bibl> Χρύσιππος δὲ ὁ Στωϊκὸς καὶ Διονύσιος ὁ Θρᾴξ δασύνουσι τὸ <q>αὐΐαχοι</q> ἵν’ ᾖ ξηρόφωνοι.</p>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="774">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Hom. Iliad. Ο. v. 241.</bibl> ἀμφὶ ἓ γιγνώσκων· － － Χρύσιππος δὲ ψιλοῦν τὸ ε̄ ὡς περισσεῦον, καί φησιν <q>ἀμφιγνοῶν ἀντὶ τοῦ ἀντιβάλλων.</q></p>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="775">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Hom. Iliad. Χ 212.</bibl> μέσσα· Χρύσιππος ῥῦμα γράφει· τὴν γὰρ ῥοπὴν τοῦ ζυγοῦ ῥύμην καλεῖσθαι. </p> <pb facs="stoicorumveterum03arniuoft_0201"/>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="776">
+        <p rend="indent"><bibl xml:lang="mul">Scholia in Hom. Odyss. Ε. 240.</bibl> περίκηλα· Ἀρίσταρχος ὥσπρ ξηρὰ ἐκδεχόμενος, τὰ περικεκαυμένα ὑπὸ ἡλίου. Χρύσιππος δὲ διῄρει, περὶ κῆλα, περισσῶς ξηρά.</p>
+        </div>
+      <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1264.tlg003.1st1K-grc1" n="777">
+        <p rend="indent"><bibl xml:lang="mul">Etymol. Magn. s. v. ἐπικυνεῖν (p. 361, 13 Gaisf.).</bibl> καὶ Χρύσιππος γράψει Κυλλήνιος Ἑρμῆς, ἐπειδὴ ἡ ῥάβδος αὐτοῦ ἀνδρῶν ὄμματα θέλγει － － Φαίακες δὲ θύουσιν αὐτῷ ἑσπέρας ὡς Ὅμηρος <q>ὅτε μνησαίατο κοίτου</q> οὐχ ὅτι ὀνειρόπομπος ἦν ἀλλ’ ὅτι ὕπνου ἡδέος αἴτιος. <foreign xml:lang="lat">Cf. Etymol. Gud. s. v.</foreign> ἐπικυνεῖν <foreign xml:lang="lat">et</foreign> ἐπισκύνειν.</p> <pb facs="stoicorumveterum03arniuoft_0202"/>
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>

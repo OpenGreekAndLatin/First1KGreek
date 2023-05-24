@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Plutarchi vita</title>
+        <author xml:lang="lat">Vitae Homeri</author>
+        <editor>Thomas W. Allen</editor>
+        <funder>Center for Hellenic Studies</funder>
+                                    
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+                                    
+        <respStmt>
+          <resp>Proofreading</resp>
+          <persName>
+            <forename>Heather</forename>
+            <surname>Snowden</surname>
+            <!--idno type=""></idno-->
+          </persName>
+          <orgName>University of Virginia</orgName>
+        </respStmt>
+               
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>University of Virginia</orgName>
+          <persName>Heather Snowden</persName>
+        </respStmt>
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <persName>Lisa M. Cerrato</persName>
+          <orgName>Tufts University</orgName>
+        </respStmt>
+      </titleStmt>
+             
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg1805.tlg002.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2020-09-23"/>
+      </publicationStmt>
+             
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="lat">Homeri Opera</title>
+            <editor>Thomas W. Allen</editor>
+            <imprint>
+              <pubPlace>Oxford</pubPlace>
+              <publisher>Clarendon Press</publisher>
+              <date>1912</date>
+            </imprint>
+            <biblScope unit="volume">5</biblScope>
+          </monogr>
+          <ref target="https://archive.org/details/homeriopera05home/page/238/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+           
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.14 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+
+      <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+          <p>This pointer pattern extracts part and section.</p>
+        </cRefPattern>
+        <cRefPattern n="part" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts part.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+           
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+           
+    <revisionDesc>
+      <change when="2020-10-15" who="Lisa Cerrato">reviewed CTS markup and made additional changes.</change>
+      <change when="2020-10-04" who="Heather Snowden">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+         
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1">
+               
+      <div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1" n="1">
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:1" n="1">
+       <p rend="indent"><pb facs="homeriopera05home_0255"/>1. Περιττὸν μὲν ἂν ἴσως δόξειέ τισι πολυπραγμονεῖν περὶ Ὁμήρου, ποίων τε ἦν γονέων καὶ πόθεν· ἐπεὶ μηδʼ αὐτὸς <pb facs="homeriopera05home_0256"/> ἠξίωσεν εἰπεῖν περὶ αὑτοῦ, ἀλλʼ οὕτως ἐγκρατῶς ἔσχεν ὡς μηδὲ τὴν ἀρχὴν τοῦ ὀνόματος ἐπιμνησθῆναι. ἐπεὶ δὲ ὡς πρὸς εἰσαγωγὴν τῶν ἀρχομένων παιδεύεσθαι χρήσιμος ἡ πολυπειρία, πειρασόμεθα εἰπεῖν ὅσα ἱστόρηται τοῖς παλαιοῖς περὶ αὐτοῦ. </p></div>
+
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:1" n="2">
+       <p rend="indent">Ἔφορος μὲν οὖν ὁ Κυμαῖος ἐν συντάγματι τῷ ἐπιγραφομένῳ Ἐπιχωρίῳ <foreign xml:lang="grc">(fr. 164)</foreign> Κυμαῖον αὐτὸν ἀποδεικνύναι πειρώμενος φησὶν ὅτι Ἀπελλῆς καὶ Μαίων καὶ Δῖος ἀδελφοὶ Κυμαῖοι τὸ γένος· ὧν Δῖος μὲν διὰ χρέα μετῴκησεν εἰς Ἄσκρην κώμην τῆς Βοιωτίας κἀκεῖ γήμας Πυκιμήδην ἐγέννησεν Ἡσίοδον· Ἀπελλῆς δὲ τελευτήσας ἐν τῇ πατρίδι Κύμῃ κατέλιπε θυγατέρα Κριθηίδα τοὔνομα, προστησάμενος αὐτῇ τὸν ἀδελφὸν Μαίονα· ὃς διακορεύσας τὴν προειρημένην καὶ τὴν ἀπὸ τῶν πολιτῶν ἐπὶ τῷ γεγονότι δείσας κατάγνωσιν, ἔδωκεν αὐτὴν πρὸς γάμον Φημίῳ τῷ Σμυρναίῳ, διδασκάλῳ γραμμάτων. φοιτῶσα δὲ αὐτὴ ἐπὶ τοὺς πλύνους οἳ ἦσαν παρὰ τῷ Μέλητι ἀπεκύησε τὸν Ὅμηρον ἐπὶ τῷ ποταμῷ, καὶ διὰ τοῦτο Μελησιγένης ἐκλήθη· μετωνομάσθη δ' Ὅμηρος ἐπειδὴ τὰς ὄψεις ἐπηρώθη· οὕτω δὲ ἐκάλουν οἵ τε Κυμαῖοι καὶ οἱ Ἴωνες τοὺς τὰς ὄψεις πεπηρωμένους παρὰ τὸ δεῖσθαι τῶν ὁμηρευόντων, ὅ ἐστι τῶν ἡγουμένων. καὶ ταῦτα μὲν Ἔφορος. </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:1" n="3">
+       <p rend="indent">Ἀριστοτέλης δὲ ἐν τῷ τρίτῳ περὶ ποιητικῆς <foreign xml:lang="grc">(fr. 66 Ros.)</foreign> ἐν Ἴῳ φησὶ τῇ νήσῳ, καθʼ ὃν καιρὸν Νηλεὺς ὁ Κόδρου τῆς Ἰωνικῆς ἀποικίας ἡγεῖτο, κόρην τινα τῶν ἐπιχωρίων γενομένην ὑπό τινος δαίμονος τῶν συγχορευτῶν ταῖς Μούσαις ἐγκύμονα, αἰδεσθεῖσαν τὸ συμβὰν διὰ τὸν ὄγκον τῆς γαστρός, <pb facs="homeriopera05home_0257"/> ἐλθεῖν εἴς τι χωρίον τὸ καλούμενον Αἴγιναν· εἰς ὃ καταδραμόντας λῃστὰς ἀνδραποδίσαι τὴν προειρημένην καὶ ἀγαγόντας εἰς Σμύρναν οὖσαν ὑπὸ Λυδοῖς τότε, τῷ βασιλεῖ τῶν Λυδῶν ὄντι φίλῳ τοὔνομα Μαίονι χαρίσασθαι· τὸν δὲ ἀγαπήσαντα τὴν κόρην διὰ τὸ κάλλος γῆμαι· ἣν διατρίβουσαν παρὰ τῷ Μέλητι καὶ συσχεθεῖσαν ὑπὸ τῆς ὠδῖνος ἔτυχεν ἀποκυῆσαι τὸν Ὅμηρον ἐπὶ τῷ ποταμῷ. ὃν ἀναλαβὼν ὁ Μαίων ὡς ἴδιον ἔτρεφε, τῆς Κριθηίδος μετὰ τὴν κύησιν εὐθέως τελευτησάσης. χρόνον δὲ οὐ πολλοῦ διελθόντος καὶ αὐτὸς ἐτελεύτησε. τῶν δὲ Λυδῶν καταπονουμένων ὑπὸ τῶν Αἰολέων καὶ κρινάντων καταλιπεῖν τὴν Σμύρναν, κηρυξάντων τῶν ἡγεμόνων τὸν βουλόμενον ἀκολουθεῖν ἐξιέναι τῆς πόλεως, ἔτι νήπιος ὢν Ὅμηρος ἔφη καὶ αὐτὸς βούλεσθαι ὁμηρεῖν· ὅθεν ἀντὶ Μελησιγένους Ὅμηρος προσηγορεύθη. </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:1" n="4">
+        <p rend="indent">γενόμενος δὲ ἐν ἡλικίᾳ καὶ δόξαν ἐπὶ ποιητικῇ κεκτημένος ἤδη ἐπηρώτα τὸν θεὸν τίνων τε εἴη γονέων καὶ πόθεν· ὁ δʼ ἀνεῖλεν οὕτως· 
+<quote rend="blockquote"><lb/>ἔστιν Ἴος νῆσος μητρὸς πατρίς, ἥ σε θανόντα 
+<lb/>δέξεται· ἀλλὰ νέων ἀνδρῶν αἴνιγμα φύλαξαι. </quote>
+φέρεται δὲ καὶ ἕτερος χρησμὸς τοιοῦτος· 
+<quote rend="blockquote"><lb/>ὄλβιε καὶ δύσδαιμον· ἔφυς γὰρ ἐπʼ ἀμφοτέροισι· 
+<lb/>πατρίδα δίζηαι, μητρὸς δέ τοι οὐ πατρός ἐστι 
+<lb/>μητρόπολις ἐν νήσῳ ὑπὸ Κρήτης εὐρείης, 
+<pb facs="homeriopera05home_0258"/>
+<lb/>Μίνωος γαίης οὔτε σχεδὸν οὔτʼ ἀποτηλοῦ. 
+<lb/>ἐν τῇ σὴ μοῖρʼ ἐστὶ τελευτῆσαι βιότοιο 
+<lb/>εὖτ’ ἂν ἀπὸ γλώσσης παίδων μὴ γνῷς ἐπακούσας 
+<lb/>δυσξύνετον σκολιοῖσι λόγοις εἰρημένον ὕμνον. 
+<lb/>δοιὰς γὰρ ζωῆς μοίρας λάχες, ἣν μὲν ἀμαυρὰν 
+<lb/>ἠελίων δισσῶν, ἣν δʼ ἀθανάτοις ἰσόμοιρον 
+<lb/>ζῶντί τε καὶ φθιμένῳ· φθίμενος δʼ ἔτι πολλὸν ἀγήρως. </quote>
+μετʼ οὐ πολὺν δὲ χρόνον πλέων ἐς Θήβας ἐπὶ τὰ Κρόνια· ἀγὼν δʼ οὗτος ἄγεται παρʼ αὐτοῖς μουσικός· ἦλθεν εἰς Ἴον· ἔνθα ἐπὶ πέτρας καθεζόμενος ἐθεάσατο ἁλιεῖς προσπλέοντας, ὧν ἐπύθετο εἴ τι ἔχοιεν. οἱ δὲ ἐπὶ τῷ θηρᾶσαι μὲν μηδὲν φθειρίζεσθαι δὲ διὰ τὴν ἀπορίαν τῆς θήρας οὕτως ἀπεκρίναντο· 
+<quote rend="blockquote">ὅσσʼ ἕλομεν λιπόμεσθʼ, ὅσσʼ οὐχ ἕλομεν φερόμεσθα, </quote>
+αἰνισσόμενοι ὡς ἄρα οὓς μὲν ἔλαβον τῶν φθειρῶν ἀποκτείναντες κατέλιπον· οὓς δʼ οὐκ ἔλαβον ἐν τῇ ἐσθῆτι φέροιεν. ὅπερ οὐ δυνηθεὶς συμβαλεῖν Ὅμηρος διὰ τὴν ἀθυμίαν ἐτελεύτησε. θάψαντες δʼ αὐτὸν οἱ Ἰῆται μεγαλοπρεπῶς τοιόνδε ἐπέγραψαν αὐτοῦ τῷ τάφῳ· 
+<quote rend="blockquote"><lb/>ἐνθάδε τὴν ἱερὴν κεφαλὴν κατὰ γαῖα καλύπτει 
+<lb/>ἀνδρῶν ἡρώων κοσμήτορα θεῖον Ὅμηρον.</quote> 
+εἰσὶ μέντοι οἳ καὶ Κολοφώνιον αὐτὸν ἀποδεικνύναι πειρῶνται, <pb facs="homeriopera05home_0259"/> μεγίστῳ τεκμηρίῳ χρώμενοι πρὸς ἀπόδειξιν τῷ ἐπὶ τοῦ ἀνδριάντος ἐπιγεγραμμένῳ ἐλεγείῳ· ἔχει δʼ οὕτως· 
+<quote rend="blockquote"><lb/>υἱὲ Μέλητος Ὅμηρε σὺ γὰρ κλέος Ἑλλάδι πάσῃ 
+<lb/>καὶ Κολοφῶνι πάτρῃ θῆκας ἐς ἀίδιον· 
+<lb/>καὶ τάσδʼ ἀντιθέῳ ψυχῇ γεννήσαο κούρας 
+<lb/>δισσὰς ἡμιθέων γραψάμενος σελίδας. 
+<lb/>ὑμνεῖ δʼ ἡ μὲν νόστον Ὀδυσσῆος πολύπλαγκτον 
+<lb/>ἡ δὲ τὸν Ἰλιακὸν Δαρδανιδῶν πόλεμον.</quote> 
+ἄξιον δὲ μηδὲ τὸ ὑπὸ Ἀντιπάτρου τοῦ ἐπιγραμματοποιοῦ γραφὲν ἐπίγραμμα παραλιπεῖν, ἔχον οὐκ ἀσέμνως· ἔχει δʼ οὕτως· 
+<quote rend="blockquote"><lb/>οἱ μέν σευ Κολοφῶνα τιθηνήτειραν Ὅμηρε, 
+<lb/>οἱ δὲ καλὰν Σμύρναν, οἱ δʼ ἐνέπουσι Χίον· 
+<lb/>οἱ δʼ Ἴον, οἱ δʼ ἐβόασαν ἐύκλαρον Σαλαμῖνα, 
+<lb/>οἱ δέ νυ τὰν Λαπιθᾶν ματέρα Θεσσαλίαν· 
+<lb/>ἄλλοι δʼ ἄλλο μέλαθρον ἀνίαχον· εἰ δέ με Φοίβου 
+<lb/>χρὴ λέξαι πινυτὰν ἀμφαδὰ μαντοσύναν, 
+<lb/>πάτρα τοι τελέθει μέγας οὐρανός, ἐκ δὲ γυναικὸς 
+<lb/>οὐ θνατᾶς ματρὸς δʼ ἔπλεο Καλλιόπας. </quote>
+</p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:1" n="5">
+        <p rend="indent">γενέσθαι δʼ αὐτὸν τοῖς χρόνοις οἱ μέν φασι κατὰ τὸν Τρωικὸν πόλεμον, οὗ καὶ αὐτόπτην γενέσθαι· οἱ δὲ μετὰ ἑκατὸν ἔτη τοῦ πολέμου· ἄλλοι δὲ μετὰ πεντήκοντα καὶ ἑκατόν. ἔγραψε δὲ ποιήματα δύο, Ἰλιάδα καὶ Ὀδύσσειαν· <pb facs="homeriopera05home_0260"/> ὡς δέ τινες, οὐκ ἀληθῶς λέγοντες, γυμνασίας καὶ παιδιᾶς ἕνεκα καὶ Βατραχομυομαχίαν προσθεὶς καὶ Μαργίτην. <note place="inline" xml:lang="lat">cc. 6 8 omisimus.</note></p></div> </div>
+               
+      <div type="textpart" subtype="part" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1" n="2">  
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:2" n="1">
+        <p rend="indent">Ὅμηρον τὸν ποιητὴν χρόνῳ μὲν τῶν πλείστων δυνάμει δὲ πάντων πρῶτον γενόμενον εἰκότως ἀναγινώσκομεν πρῶτον, ὠφελούμενοι τὰ μέγιστα εἴς τε τὴν φωνὴν καὶ τὴν διάνοιαν καὶ τὴν τῶν πραγμάτων πολυπειρίαν. λέγωμεν δὲ περὶ τῆς τούτου ποιήσεως, πρότερον μνησθέντες διὰ βραχέων τοῦ γένους αὐτοῦ. </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:2" n="2">
+       <p rend="indent">Ὅμηρον τοίνυν Πίνδαρος <foreign xml:lang="grc">(fr. 264)</foreign> μὲν ἔφη Χῖόν τε καὶ Σμυρναῖον γενέσθαι, Σιμωνίδης <foreign xml:lang="grc">(fr. 85)</foreign> δὲ Χῖον, Ἀντίμαχος δὲ καὶ Νίκανδρος <foreign xml:lang="grc">(fr. 14 Schn.)</foreign> Κολοφώνιον, Ἀριστοτέλης <foreign xml:lang="grc">(cf. i. 3)</foreign> δʼ ὁ φιλόσοφος Ἰήτην, Ἔφορος <foreign xml:lang="grc">(cf. i. 7)</foreign> δʼ ὁ ἱστορικὸς Κυμαῖον. οὐκ ὤκνησαν δέ τινες Σαλαμίνιον αὐτὸν εἰπεῖν ἀπὸ Κύπρου, τινὲς δʼ Ἀργεῖον, Ἀρίσταρχος δὲ καὶ Διονύσιος ὁ Θρᾷξ Ἀθηναῖον. υἱὸς δʼ ὑπʼ ἐνίων λέγεται Μαίονος καὶ Κριθηίδος, ὑπὸ δέ τινων Μέλητος τοῦ ποταμοῦ. </p></div>
+               
+      <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1805.tlg002.1st1K-grc1:2" n="3">
+        <p rend="indent">Ὥσπερ δὲ τὰ τοῦ γένους αὐτῷ διαπορεῖται, οὕτω καὶ περὶ τῶν χρόνων καθʼ οὓς ἐγένετο. καὶ οἱ μὲν περὶ Ἀρίσταρχόν φασιν αὐτὸν γενέσθαι κατὰ τὴν τῶν Ἰώνων ἀποικίαν, ἥτις ὑστερεῖ τῆς τῶν Ἡρακλειδῶν καθόδου ἔτεσιν ἑξήκοντα, τὰ δὲ περὶ τοὺς Ἡρακλείδας λείπεται τῶν Τρωικῶν ἔτεσιν ὀγδοήκοντα. οἱ δὲ περὶ Κράτητα καὶ πρὸ <pb facs="homeriopera05home_0261"/> τῆς Ἡρακλειδῶν καθόδου λέγουσιν αὐτὸν γενέσθαι, ὡς οὐδὲ ὅλα ἔτη ὀγδοήκοντα ἀπέχειν τῶν Τρωικῶν. ἀλλὰ παρὰ τοῖς πλείστοις πεπίστευται μετὰ ἔτη ἑκατὸν τῶν Τρωικῶν γεγονέναι, οὐ πολὺ πρὸ τῆς θέσεως τῶν Ὀλυμπίων, ἀφʼ ἧς ὁ κατὰ Ὀλυμπιάδα χρόνος ἀριθμεῖται. cetera omisimus. </p></div>
+      </div>
+               
+             
+     
+     
+               
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Anonymi Dissertatio De Terrae Motibus</title>
+        <author>Anonymi de Terrae Motibus</author>
+        <editor></editor>
+        <funder>Mount Allison University</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName></respStmt>
+        <respStmt>
+          <resp>proofreader</resp>
+          <persName>
+            <forename>Kirsten</forename>
+            <surname>Mason</surname>
+          </persName></respStmt>
+        <respStmt>
+          <resp>CTS conversion</resp>
+          <orgName>Mount Allison University</orgName>
+          <persName>Bruce Robertson</persName></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg2972.tlg001.1st1K-grc1.xml</idno>
+        <pubPlace/>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+        <date when="2020-07-31"/>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Anonymi de Terrae Motibu</author>
+            <title xml:lang="lat">Ioannis Lavrentii Lydi Liber de Ostentis et Calendaria Graeca Omnia</title>
+            <editor>Kurt Wachsmuth</editor>
+            <imprint>
+              <pubPlace>Leipzig </pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1897</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/joanneslaurenti00wachgoog/page/n248/mode/1up">
+          </ref></biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.10 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      <!-- sample top level refsDecl for lines -->
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="sentence" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+      <p>This pointer pattern extracts sentence.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2020-08-06" who="Bruce Robertson">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+  
+  <text>
+    <body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1">
+        <pb facs="joanneslaurenti00wachgoog_0250"/>
+        <head xml:lang="lat" rend="center">II Anonymi Dissertatio De Terrae Motibus</head>
+        <head xml:lang="lat" rend="center">In Codice Lavrentiano 28, 34 (Saec. XI) Fol. 110 Sq.</head>
+        <head>ΦΥΣΙΚΗ ΘΕΩΡΙΑ ΠΕΡΙ ΤΩΝ ΓΙΝΟΜΕΝΩΝ ΣΕΙΣΜΩΝ ΩΣ ΟΙ ΠΑΛΑΙΟΙ </head>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="1">
+        <p rend="indent">Καθόλου τοίνυν περὶ τῶν ἐν τῇ γῇ γινομένων σεισμῶν καὶ τῆς τούτων αἰτίας, καθὰ τοῖς παλαιοῖς διείληπται, ῥητέον δυσεπηβόλου<note target="#p.250.n.3"/> τε καὶ σχεδὸν ἀτεκμάρτου<note target="#p.250.n.4"/> αὐτοῖς τοῦ τοιούτου εἴδους καταληφθέντος· ἐπεὶ τοίνυν τοῖς περὶ τὴν γῆν πάθεσιν μίαν ἐκ πασῶν τὴν περὶ τοῦ καταγείου<note target="#p.250.n.5"/> πυρὸς αἰτίαν τέως ἀποδεχομένους ὁρῶμεν, ἐπεὶ καὶ τοὺς τόπους, ἐν οἷς συνεχῶς σάλοι συμβαίνουσιν, ἐπετήρησαν. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="2">
+         <p>καὶ γὰρ τὸ πῦρ διεργαζόμενον <foreign xml:lang="lat">cetera quae apud Lydum cap. 53 p. 107 v. 14 usque ad p. 109 v. 10 leguntur.</foreign></p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="3">
+          <p rend="indent">οἱ δέ γε τῶν φυσικῶν ἀκριβέστερον περὶ σεισμῶν ἀναλαβόντες τὴν αὐτῶν γένεσιν οὕτως πώς φασιν. ἔστι φανερὸν ὅτι ἀναγκαῖον καὶ ἀπὸ ὑγροῦ καὶ ἀπὸ <pb facs="joanneslaurenti00wachgoog_0251"/>ξηροῦ γίνεσθαι ἀναθυμίασιν cetera quae leguntur per totum caput octavum Aristotelis meteorologic. lib. II; et explicit: περὶ μὲν οὖν σεισμῶν καὶ ὅντινα τρόπον γίγνονται τὰ παρὰ τῶν παλαιῶν εὑρήματα τοσαῦτα. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="4">
+          <head rend="center">ΠΕΡΙ ΣΕΙΣΜΩΝ ΠΡΟΣΗΜΕΙΩΣΕΙΣ</head>
+          <p>Ἃ δὲ καὶ περὶ τοῦ προγνῶναι τὴν αὐτῶν γένεσιν, ὅσον κατὰ δύναμιν ἀνθρώποις ἐσημειώθη, συναγαγόντες εἰς ἓν σύνοπτον<note target="#p.251.n.1"/> παραθεῖναι διέγνωμεν. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="5">
+          <p>λέγεται τοίνυν σημαίνειν<note target="#p.251.n.2"/> σεισμὸς τῶν κακοποιῶν ἀστέρων ἐν τοῖς ἐπισήμοις τῷ πάθει ζωδίοις γιγνομένων. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="6">
+          <p rend="indent">Κρόνος <add>ἐν</add><note target="#p.251.n.3"/> ταύρῳ.<note target="#p.251.n.4"/></p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="7">
+          <p>Κρόνος μὲν γὰρ εἰς τὸν ταῦρον τὴν μετάβασιν ποιούμενος σεισμὸν ὡς ἐπὶ τὸ πλεῖστον ποιεῖ κατὰ τόπους καὶ μάλιστα ἐν ταῖς χώραις καὶ πόλεσιν, ἐν αἷς ὑπάρχει ἡ τοῦ ταύρου δεσποτία. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="8">
+          <p>ὁ δ᾽ αὐτὸς ἀστὴρ τοῦ Κρόνου καὶ φάσιν ποιούμενος ἐν τῷ πρώτῳ δεκανῷ τοῦ ταύρου σεισμοὺς κατὰ τόπους ποιεῖ.</p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="9">
+          <p>Κρόνος <add>ἐν</add> διδύμοις. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="10">
+         <p>ἐν δὲ τοῖς διδύμοις ὁ Κρόνος γενόμενος καὶ ἐν τοῖς βορείοις ἐλθὼν τούτου τοῦ ζωδίου μέρεσι σεισμοὺς κατὰ τόπους ποιεῖ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="11">
+          <p>Κρόνος <add>ἐν</add> καρκίνῳ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="12">
+          <p>ἔτι δ᾽ ἐν καρκίνῳ τὴν μετάβασιν ὁ Κρόνος ποιούμενος σεισμοὺς ποιεῖ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="13">
+          <p>Κρόνος <add>ἐν</add> σκορπίῳ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="14">
+          <p>ἐν δὲ τῷ τρίτῳ δεκανῷ τοῦ σκορπίου φάσιν ὁ Κρόνος ποιούμενος σεισμὸν γενέσθαι σημαίνει. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="15">
+          <p>Ἄρης <add>ἐν</add> ταύρῳ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="16">
+          <p>Ἄρης δ᾽ ἐν ταύρῳ διὰ μέσου τοῦ ζωδίου γινόμενος σεισμῶν ἐστι <pb facs="joanneslaurenti00wachgoog_0252"/>κινητικός. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="17">
+          <p>ἐν δὲ τοῖς διδύμοις ὁ αὐτὸς ἀστὴρ γινόμενος καὶ ἐν τοῖς βορείοις τοῦ ζωδίου μέρεσιν ἐλθὼν σεισμὸν ποιεῖ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="18">
+          <p>ἐν καρκίνῳ δὲ Ἄρης φάσιν ποιούμενος ἐν τῷ πρώτῳ δεκανῷ σεισμὸν σημαίνει. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="19">
+          <p>ἥλιος <add>ἐν</add> ὑδροχόῳ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="20">
+          <p>καὶ ἥλιος δὲ ἐκλείπων ἐν τῷ δευντέρῳ δεκανῷ τοῦ ὑδροχόου σεισμοὺς σημαίνει. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="21">
+          <p>ἥλιος <add>ἐν</add> ἰχθύσιν. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="22">
+          <p>ἔτι δὲ ἐκλείπων ὁ ἥλιος ἐν τῇ πρώτῃ δεκαμοιρίᾳ τῶν ἰχθύων σεισμὸν ἐν ταῖς παραλίαις σημαίνει. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="23">
+          <p>σελήνη <add>ἐν</add> σκορπίῳ. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="24">
+          <p>σελήνη δὲ ἐκλείπουσα ἐν τῇ πρώτῃ δεκαμοιρίᾳ τοῦ σκορπίου ἐνίοτε σεισμὸν σημαίνει. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="25">
+          <p rend="indent">Καθόλου δὲ αἱ ὑπὸ γῆν<note target="#p.252.n.1"/> ἐκλείψεις ἡλίου ἢ σελήνης σεισμοὺς ἀποτελοῦσιν ὡς ἐπὶ τὸ πλεῖστον. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="26">
+          <p>ἔτι τὰ προηγούμενα τοῦ δωδεκατημορίου τοῦ ταύρου καὶ μάλιστα τὰ κατὰ τὴν πλειάδα σεισμώδη γίγνεται, εἰ μή<note target="#p.252.n.2"/> τις τῶν ἀγαθοποιῶν ἀστέρων ἐπίδοι. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="27">
+          <p>καὶ τὰ βόρεια δὲ τοῦ δωδεκατημορίου τῶν διδύμων σεισμώδη καθίσταται καὶ τὰ τοῦ δωδεκατημορίου τοῦ σκορπίου ἑπόμενα σεισμώδη φασίν. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="28">
+          <p>ὁ δὲ τοῦ Ἑρμοῦ ἀστὴρ τὴν οἰκοδεσποτίαν λαβὼν σεισμῶν ἀποτελεστικὸς περὶ τὸ κατάστημα. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="29">
+          <p>περὶ δὲ τὰς τῆς σελήνης ἐκλείψεις ἐνίοτε προσδοκᾶν χρὴ εὐθὺς γενέσθαι σεισμόν<note target="#p.252.n.3"/>. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="30">
+          <p>ἐὰν δὲ μεθ᾽ ἡμέραν<note target="#p.252.n.4"/> ἢ μικρὸν μετὰ δυσμὰς αἰθρίας οὔσης νεφέλιον λεπτὸν φαίνηται διατεῖνον καὶ μακρὸν οἷον γραμμῆς μῆκος εὐθύτητι διηκριβωμένον, σεισμὸν σημαίνει παραυτίκα<note target="#p.252.n.5"/>.</p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="31">
+          <p>καὶ ψόφος δὲ γιγνόμενος ὑπὸ γῆν<note target="#p.252.n.6"/> σεισμὸν σημαίνει<note target="#p.252.n.7"/>.</p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="32">
+          <p>ὅταν δὲ σεισμὸς μέγας γένηται, <pb facs="joanneslaurenti00wachgoog_0253"/> πρότερον μὲν ἐπὶ τεσσαράκοντα ἡμέρας σείει· </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="33">
+          <p>ὕστερον δὲ καὶ ἐπ᾽ ἐνιαυτὸν καὶ δύο ἔτη πολλάκις σείει κατὰ τοὺς αὐτοὺς<note target="#p.253.n.1"/> τόπους. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="34">
+          <p rend="indent">Τοσαῦτα μὲν οὖν καὶ περὶ τῆς τῶν σεισμῶν προγνώσεως ἐσημειώθη παρὰ τοῖς παλαιοῖς· ἡμῖν δὲ νόμος καὶ ὅρος ἑκάστοτε καὶ ἐφ᾽ ἑκάστῳ τῶν συμβαινόντων ἄνωθεν τὸ θεῖον πρόσταγμα πιστεύεται, ἀρρήτῳ τινὶ προνοίας<note target="#p.253.n.2"/> λόγῳ τοῦ πάντα πεποιηκότος θεοῦ κυβερνῶντος καὶ διοικοῦντος τὰ σύμπαντα. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="35">
+          <p rend="indent">Σχόλιον ἀπὸ φωνῆς Συμεὼν μονάχου τοῦ χρυσογράφου εἰς τὰ προκείμενα δύο κανόνια περὶ σεισμῶν<note target="#p.253.n.3"/>. </p></div>
+        <div type="textpart" subtype="sentence" xml:base="urn:cts:greekLit:tlg2972.tlg001.1st1K-grc1" n="36">
+          <p>τὸν ἀστέρα τὸν κύριον τῆς προγενομένης συνόδου ἢ πανσελήνου ἐπισκόπει καὶ τὸ πλάτος αὐτοῦ εἴτε βόρειόν ἐστιν ἢ νότιον, καὶ ἐπὶ ποίου βαθμοῦ τοῦ πλάτους ἕστηκεν ὁ ἀστήρ, καὶ ταῦτα ἐφευρίσκων εἰσέρχου τὰ προκείμενα κανόνια καὶ ἀναψηλαφῶν τὸ ζώδιον, ἐν ᾧ ὁ κύριος τῆς συζυγίας ἔτυχεν, ἀποφαίνου. </p></div>
+    
+     
+          <pb facs="joanneslaurenti00wachgoog_0250"/>
+          <note xml:id="p.250.n.3" place="below" xml:lang="lat">sic G i. e. cod Laurent. 28, 14 (saec. XIIII) fol. 146, in quo extat brevior epitome huius tractatus; <foreign xml:lang="lat">δυσεπιβούλου</foreign> F (cod. Laur. 28, 34)</note> 
+        <note xml:id="p.250.n.4" place="below" xml:lang="lat">sic scripsi, <foreign xml:lang="lat">ατ᾽ ἐκμαρτυρίας</foreign> F <foreign xml:lang="lat">ἄνευ μαρτυρείας</foreign> G</note> 
+        <note xml:id="p.250.n.5" place="below" xml:lang="lat"><foreign xml:lang="lat">ὑπογείου</foreign> G</note> 
+          <pb facs="joanneslaurenti00wachgoog_0251"/>
+        <note xml:id="p.251.n.1" place="below" xml:lang="lat"><foreign xml:lang="lat">σύνοπτον] ἐνσύνοπτον</foreign> cod., num <foreign xml:lang="lat">εῦ σύνοπτον</foreign>?</note> 
+        <note xml:id="p.251.n.2" place="below" xml:lang="lat"><foreign xml:lang="lat">σημαίνεaθα</foreign>ι scripii pro <foreign xml:lang="lat">σημαίνειν</foreign></note> 
+        <note xml:id="p.251.n.3" place="below" xml:lang="lat"><foreign xml:lang="lat">ἐν</foreign> hic et infra aserpius addidi.</note> 
+        <note xml:id="p.251.n.4" place="below" xml:lang="lat"><foreign xml:lang="lat">Κρόνος ἐν ταύρῳ</foreign> et similia cetera rectius manglini adscribas, quae sacrum in sedentiarum census nuila ratio habita sit</note>
+           <pb facs="joanneslaurenti00wachgoog_0252"/>
+        <note xml:id="p.252.n.1" place="below" xml:lang="lat">cf eiusd. Laur. diss. <foreign xml:lang="lat">π. τῶν ἐν ταῖς ἐκλείψεσι σημείων</foreign> p. 124, 20 in Ludwichii edit. Maximi</note> 
+        <note xml:id="p.252.n.2" place="below" xml:lang="lat"><foreign xml:lang="lat">εἰ μὴ</foreign> scripsi pro <foreign xml:lang="lat">εἰμί</foreign></note>
+        <note xml:id="p.252.n.3" place="below" xml:lang="lat">Aristot. meteor. II 8, 31. Plin. II 195</note> 
+        <note xml:id="p.252.n.4" place="below" xml:lang="lat"><foreign xml:lang="lat">ἡμέρας</foreign> cod.</note> 
+        <note xml:id="p.252.n.5" place="below" xml:lang="lat">Aristot. meteor. II 8, 28; Plin. II 196</note> 
+        <note xml:id="p.252.n.6" place="below" xml:lang="lat"><foreign xml:lang="lat">γῆς</foreign> cod.</note> 
+        <note xml:id="p.252.n.7" place="below" xml:lang="lat">Aristot. meteor II 8, 37; Plin. II 193.</note>
+           <pb facs="joanneslaurenti00wachgoog_0253"/>
+        <note xml:id="p.253.n.1" place="below" xml:lang="lat"><foreign xml:lang="lat">κατὰ τοὺς αὐτοὺς</foreign> scripsi pro <foreign xml:lang="lat">κατ᾽ αὐτοὺς τοὺς</foreign></note>
+        <note xml:id="p.253.n.2" place="below" xml:lang="lat"><foreign xml:lang="lat">προνοίας</foreign> scripsi pro <foreign xml:lang="lat">προνοίᾳ</foreign></note> 
+        <note xml:id="p.253.n.3" place="below" xml:lang="lat">cf. Leo Allatius de Symeonibus. Paris. 1664 p. 194 Fabric. bibl. Graec. vol. XI p. 296 ed. Harles; idem enim scholion extat in codicibus Regiis 1991 et 2137.</note> 
+      
+    </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+
+<titleStmt>
+<title xml:lang="grc">Περί Λειποψυχίας</title>
+<author>Theophrastus</author>
+<editor>Friedrich Wimmer</editor>
+<funder>University of Virginia</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>University of Virginia</orgName>
+<persName>Rebecca Frank</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0093.tlg010x07.1st1K-grc1</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-08-12</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Theophrastus</author>
+<title xml:lang="lat">Theophrasti Eresii Opera, Quae Supersunt, Omnia.</title>
+<editor>
+<persName><name>Friedrich Wimmer</name></persName>
+</editor>
+<imprint>
+<pubPlace>Paris</pubPlace>
+<publisher>A.F. Didot</publisher>
+<date type="printing">1866</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+ <ref target="https://hdl.handle.net/2027/uiug.30112023840660?urlappend=%3Bseq=445">HathiTrust</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>    
+
+<refsDecl n="CTS">
+<!--<cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts chapter and section</p>
+</cRefPattern>-->
+<cRefPattern n="section"  matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts section.</p>
+</cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>
+<change when="2020-08-12" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+ <text>             
+ <body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0093.tlg010x07.1st1K-grc1">        
+
+<div type="textpart" subtype="section" n="1"><p rend="indent"><pb facs="uiug.30112023840660-1583374486redo_0436"/><milestone unit="page" n="409" type="print"/>Ὅτι ἡ λειποψυχία στέρησις ἢ κατάψυξις τοῦ θερμοῦ περὶ τὸν ἀναπνευστικὸν τόπον· τοῦτο δὲ συμβαίνει ἢ ὑπὸ τοῦ ψυχροῦ ἢ καὶ ὑπʼ αὐτοῦ τοῦ θερμοῦ τὸ γὰρ πλέον πῦρ ἀναιρεῖ τὸ ἔλαττον· μαρτυρεῖ δὲ καὶ ἡ πεῖρα· ὑπὸ γὰρ πνίγους ἢ ἄλλης θέρμης καὶ μάλιστα πολλῆς, ἀθρόον τούτων προσπεσόντων ἡμῖν ἐκλυόμεθα καὶ λειποθυμοῦμεν· καταμαραίνεται γὰρ τὸ ἐν ἡμῖν <add>θερμὸν</add> κατάψυξιν οὐ λαμβάνον. </p></div>
+<div type="textpart" subtype="section" n="2"><p>Τάχα δὲ καὶ τὴν ἀναπνοὴν ὅλως τὸ πνῖγος κωλύει, ὅθεν καὶ πνῖγος ὠνομάσθη· πνίγεται γὰρ ἢ καὶ πνιγομένῳ ὅμοιός ἐστιν ὁ μὴ δυνάμενος ἀναπνεῖν. Παρτυρεῖ δὲ καὶ ἡ διὰ τῶν λουτρῶν καὶ πυριάσεων ἔκλυσις· δῆλον γὰρ ὡς αἱ τοιαῦται ἐκλύσεις τῷ θερμῷ καὶ διὰ τὸ θερμὸν γίνονται μαραίνοντος τοῦ ἔξωθεν θερμοῦ τὸ ἐν ἡμῖν σύμφυτον. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Γίνεται δὲ λειποψυχία καὶ τῶν ἐν οἷς πέφυκεν ἡ θερμότης ἐκλιπόντων οἷον αἵματος ἢ τῆς φυσικῆς ἁπλῶς ὑγρότητος, ὥσπερ ἐν ταῖς αἱμορραγίαις καὶ ἐν ταῖς τῆς γαστρὸς φοραῖς ὁρῶμεν λειποψυχοῦντας. Καὶ διὰ πόνους δὲ γίνονται ἐκλύσεις. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Ὅτι τὸ πλέον θερμὸν λειποψυχίαν ποιεῖ καὶ ὡς μαραῖνον τὸ ἔλαττον καὶ ὡς κωλύον τὴν ἀναπνοὴν καὶ ἔτι ὡς μὴ παραχωροῦν τῇ καταψύξει εἴσοδον. Ὅτι διὰ τοῦτο ὡς ἐπὶ τὸ πολὺ λουόμενοι μὲν οὐ λειποψυχοῦσι παυσάμενοι δὲ μᾶλλον, διότι τὴν ὑγρότητα τὴν γινομένην ἀπὸ τῆς συντήξεως λουομένων μὲν θερμὴν εἶναι συμβαίνει, λουσαμένων δὲ ψύχεσθαι· ψυχρὰ δὲ οὖσα καὶ ἐμπίπτουσα κυρίοις τόποις ποιεῖ λειποψυχίαν. </p></div>
+<div type="textpart" subtype="section" n="5"><p>Εἰ μὴ ἄρα καὶ ἡ ἄνεσις αὐτὴ τοῦ πνεύματος προεκλύει· διότι καὶ κατέχειν κελεύουσιν ἐν ταῖς λειποψυχίαις τὸ πνεῦμα· κωλύει γὰρ ὁ κατέχων ἐξιέναι τὸ θερμὸν, ὁ δʼ ἀνιεὶς ἐνδίδωσιν. </p></div>
+<div type="textpart" subtype="section" n="6"><p>Ὅτι ὁ ῥαίνων ὕδατι τοὺς λειποψυχοῦντας συμφράττων καὶ πυκνῶν τοὺς πόρους καὶ συναθροίζων ἐντὸς τὸ θερμὸν, — ἀντιπερίσταται γὰρ, — ὠφελεῖ. </p></div>
+<div type="textpart" subtype="section" n="7"><p>Ὅτι ἡδοναὶ καὶ λύπαι ποιοῦσι λειποψυχίαν· καὶ γὰρ ἀμφότεραι πλῆθος ὑγρότητος ἐπάγουσιν, ἡ μὲν ἡδονὴ τῷ συντήκειν και διαχεῖν, η λύπη δε τῷ πηγνύειν· ὅταν οὖν η ὑγρόχεῖν. </p></div></div>
+ </body></text></TEI>

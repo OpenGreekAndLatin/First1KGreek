@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Enchridion de Metris</title>
+                <author>Hephestion</author>
+                <editor>Maximilian Corsbruch</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Taylor Cassidy</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew Nicholas Collura</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Karinne Finley</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Katia Krelits</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Katie Painter</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Giorgio Scalvini</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Staroslav</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Theo Tsilimparis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Barbara Witucki</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Charlotte Houghton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1402.tlg001.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2021-08-24"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author><persName>Hephaestion</persName></author>
+                        <title xml:lang="lat">Hephaestionis Enchiridion</title>
+                        <editor>Maximilian Consbruch</editor>
+                        <imprint>
+                            <pubPlace>Leipzig</pubPlace>
+                            <publisher>Teubner</publisher>
+                            <date>1906</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/hephaestionisenc00hephuoft/page/n33/mode/1up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                  <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+            
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+           <refsDecl n="CTS">
+               <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                   <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+               <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+               <p>This pointer pattern extracts chapter.</p></cRefPattern>
+           </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2022-05-04" who="Lisa Cerrato">Markup review.</change>
+            <change when="2022-03-17" who="Charlotte Houghton">initial markup of new file.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+    <text>
+        <body>
+            
+         <div type="edition" n="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" xml:lang="grc"> 
+             <pb facs="hephaestionisenc00hephuoft_0035"/> <head rend="center">ΗΦΑΙΣΤΙΩΝΟΣ <lb/>ΕΓΧΕΙΡΙΔΙΟΝ ΠΕΡΙ ΜΕΤΡΩΝ.</head> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="1"> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="1"> <head rend="center">〈Περὶ βραχείας.〉</head> <p><label>(1)</label> Βραχεῖά ἐστι συλλαβὴ ἡ ἔχουσα βραχὺ φωνῆεν ἢ βραχυνόμενον μὴ ἐπὶ τέλους λέξεως, οὕτως ὡς μὴ εἶναι μεταξὺ τούτου τοῦ φωνήεντος καὶ τοῦ ἐν τῇ ἑξῆς συλλαβῇ σύμφωνα πλείονα ἑνὸς ἁπλοῦ, ἀλλ’ ἤτοι ἓν ἢ μηδὲ ἕν.</p></div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="2"> <head rend="center">Περὶ μακρᾶς.</head> 
+         <p rend="indent"><label>(2)</label> Μακρά ἐστι συλλαβὴ ἡ ἔχουσα μακρὸν φωνῆεν ἢ μηκυνόμενον ἢ μίαν τῶν καλουμένων διφθόγγων, οὕτως ὡς ἑξῆς εἶναι σύμφωνον ἤτοι τελικὸν αὐτῆς τῆς συλλαβῆς ἢ τῆς ἑξῆς ἀρκτικόν [οἷον θ̅η̅ς θ̅ω̅ς ̅κ̅α̅ὶ ̅ν̅α̅ῦ̅ς]. <pb facs="hephaestionisenc00hephuoft_0036"/> εἰ δὲ μή, οὔκ εἰσιν ἄντικρυς μακραί, ἀλλὰ κοιναί, ὡς ἑξῆς ῥηθήσεται.</p></div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="3"> 
+         <p rend="indent"><label>(3)</label> Θέσει μακραὶ γίνονται, ὅταν βραχέος ὄντος ἢ βραχυνομένου φωνήεντος σύμφωνα πίπτῃ μεταξὺ αὐτοῦ καὶ τοῦ τῆς ἑξῆς συλλαβῆς φωνήεντος πλείονα ἑνὸς ἁπλοῦ. γίνεται δὲ τοῦτο κατὰ πέντε τρόπους.</p> 
+         <p rend="indent">ἤτοι γὰρ λήξει εἰς δύο σύμφωνα οἷον 
+         <quote type="blockquote">Τίρυνς οὐδέ τι τεῖχος ἐπήρκεσε (<foreign xml:lang="lat">adesp.</foreign>), <lb/>καὶ κεῖνος ἐν σάλεσσι 〈πολλοῖς〉 ἥμενος μάκαρς ἀνήρ <bibl xml:lang="lat">(Alcm. 10)</bibl>,</quote> καὶ Τιμοκρέοντος ἐκ τῶν ἐπιγραμμάτων (<bibl>9</bibl>) 
+         <quote type="blockquote">ᾧ ξυμβουλεύειν χὲρς ἄπο, νοῦς δὲ πάρα,</quote> καὶ Ἐμπεδοκλῆς (<bibl>56</bibl>) 
+         <quote type="blockquote">ἃλς ἐπάγη ῥιπῇσιν ἐωσμένος ἠελίοιο.</quote></p> 
+         <p rend="indent">ἢ ἐν τῇ ἑξῆς ἐστι ταῦτα συλλαβῇ οἷον Ἕ–κτωρ ἢ τῇ ἑξῆς ἐστι ταῦτα συλλαβῇ οἷον Ἕ–κτωρ [δ’ ἐν κλισίῃσιν]. ἔνθα καὶ δεῖ παρατηρεῖν, μὴ τὸ μὲν πρότερον ἄφωνον ᾖ, τὸ δὲ δεύτερον ὑγρόν· αἱ γὰρ τοιαῦται κοιναί, ὡς ἑξῆς εἰρήσεται.</p> 
+         <p rend="indent">ἢ λήγει μὲν εἷς ἕν, ἔχει δὲ καὶ τὴν ἑξῆς ἀρχομένην ἀπὸ ἑτέρου οἷον ἄλ-λος, <pb facs="hephaestionisenc00hephuoft_0037"/> ἢ εἰς διπλοῦν λήγει οἷον ἕξ, <lb/>ἢ τὴν ἑξῆς ἔχει ἀπὸ διπλοῦ ἀρχομένην οἷον ἔξω.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="4"> <head rend="center">Περὶ κοινῆς.</head> 
+         <p rend="indent"><label>(4)</label> Κοινὴ γίνεται συλλαβὴ κατὰ τρόπους τρεῖς· ἤτοι ὅταν μακρῷ φωνήεντι ἢ μηκυνομένῳ ἢ διφθόγγῳ ἐπιφέρηται φωνῆεν οἷον 
+         <quote type="blockquote">Ἄνδρα μοι ἔννεπε μοῦσα (<bibl>α 1</bibl>),</quote> 
+         <quote type="blockquote">πλάγχθη ἐπεὶ Τροίης ἱερὸν πτολίεθρον (<bibl>α 2</bibl>),</quote> 
+         <quote type="blockquote">τοῦ κέρα ἐκ κεφαλῆς ἑκκαιδεκάδωρα (<bibl>Δ 109</bibl>).</quote> ῥᾷον μὲν οὖν γίνεται ἡ τοιαύτη κοινή, εἴγε ἡ συλλαβὴ εἰς μέρος λόγου ᾖ πεπερατωμένη ὡς ἐν τοῖς προκειμένοις παραδείγμασι, σπανιώτερον δὲ ἐπὶ μέσης λέξεως· οὐ μὴν ἀλλ’ ὅμως εὑρίσκεται καὶ μάλιστα ἐν τοῖς ἄλλοις μέτροις· ἐν μὲν ἰαμβικῷ Αἰσχύλος ἐν Νιόβῃ (155) 
+         <quote type="blockquote">Ἴστρος τοιαύτας παρθένους [λοχεύεται].</quote> ἐν δὲ ἰωνικῷ τῷ ἀπὸ μείζονος Σωτάδου ἐξ Ἀδώνιδος τόδε 
+         <quote type="blockquote">τίνα τῶν παλαιῶν ἱστοριῶν θέλετ’ ἐσακοῦσαι·</quote> ἐν δὲ ἀντισπαστικῷ Ἀνακρέοντος (<bibl>1</bibl>) 
+         <quote type="blockquote">ἥ κου νῦν ἐπὶ Ληθαίου·</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="5"> 
+         <p rend="indent"><label>(5)</label> ἐν δὲ τοῖς ἔπεσι σπανιώτερον, οὕτως ὥστε τὸ τοῦ <pb facs="hephaestionisenc00hephuoft_0038"/> Ἀρχελάου ὄνομα Σοφοκλῆς ἐν ταῖς ἐλεγείαις οὐκ ᾤετο ἐγχωρεῖν οὔτε εἰς ἔπος οὔτε εἰς ἐλεγεῖον· φησὶ γοῦν (<bibl>1</bibl>) 
+         <quote type="blockquote">Ἀρχέλεως· ἦν γὰρ σύμμετρον ὧδε λέγειν·</quote> καὶ Παρθένιος δὲ ἐπικήδειον εἰς Ἀρχελαΐδα γράφων ἐλεγειακὸν τὸν τελευταῖον μόνον στίχον ἀντὶ ἐλεγείου ἰαμβικὸν ἐποίησεν, ἐν ᾧ τὸ ὄνομα ἐρεῖν ἔμελλεν (<bibl>2</bibl>) 
+         <quote type="blockquote">ἀμυσχρὸν οὔνομ’ ἔσσετ’ Ἀρχελαΐδος.</quote> διὰ τοῦτο καὶ παρ’ Ὁμήρῳ συστέλλομεν τὴν
+         <quote type="blockquote">Πηνελέοιο ἄνακτος (<bibl>Ξ 489</bibl>)</quote>. Ῥίνθων μὲν γὰρ καὶ ἐν ἰάμβῳ ἐπισημασίας ἠξίωσε τὸ τοιοῦτον· ἐν γὰρ Ὀρέστῃ δράματί φησιν (<bibl>10</bibl>) 
+         <quote type="blockquote">ὅ σε Διόνυσος αὐτὸς ἐξώλη θείη</quote> εἶτα 
+         <quote type="blockquote">Ἱππώνακτος τὸ μέτρον· οὐδέν μοι μέλει.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="6"> 
+         <p rend="indent"><label>(6)</label> ὅμως μέντοι καὶ ἐν ἔπεσιν εὑρίσκεται, ὡς παρὰ Θεοκρίτῳ (<bibl>11</bibl>, <bibl>18</bibl>). 
+         <quote type="blockquote">ὑψηλᾶς ἐς πόντον ὁρῶν ἄειδε τοιαῦτα,</quote> καὶ παρ’ Ὁμήρῳ (<bibl>Ν 275</bibl>) <pb facs="hephaestionisenc00hephuoft_0039"/> 
+         <quote type="blockquote">οἶδ’ ἀρετὴν οἷός ἐσσι· τί σε χρὴ ταῦτα λέγεσθαι;</quote> καὶ παρ’ Ἀνακρέοντι ἐν ἐλεγείαις (<bibl>95</bibl>) 
+         <quote type="blockquote">οὐδέ τί τοι πρὸς θυμόν, ὅμως γε μὲν ὡς ἀδοιάστως·</quote> ἐπὶ μὲν γὰρ τῶν τοιούτων (<bibl>Π 235</bibl>) 
+         <quote type="blockquote">σοὶ ναίουσ’ ὑποφῆται ἀνιπτόποδες χαμαιεῦναι</quote> καὶ (<bibl>κ 243</bibl>) 
+         <quote type="blockquote">ἔδμεναι, οἷα σύες χαμαιευνάδες αἰὲν ἔδουσιν</quote> ἴσως διὰ τὸ φαντασίαν τινὰ παρέχειν τοῦ ἀπηρτίσθαι τὴν λέξιν ἐν τῷ χαμαι, ὡς μία ἡ χαμαὶ ἀκούεται. ― Τῇ μέντοι γε υι διφθόγγῳ ἐὰν παρακολουθήσῃ τὸ τοιοῦτον, τελείως τραχὺς ὁ στίχος γίνεται οἷον 
+         <quote type="blockquote">Ἕκτορ υἱὲ Πριάμοιο (<bibl>Η 47</bibl>, <bibl>Λ 200</bibl>, <bibl>Ο 244</bibl>).</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="7"> 
+         <p rend="indent"><label>(7)</label> Δεύτερος δέ ἐστι τρόπος, ὅταν βραχεῖ ἢ βρα νομένῳ φωνήεντι ἐπιφέρηται ἐν τῇ ἑξῆς συλλαβῇ σύμφωνα δύο, ὧν τὸ μὲν πρῶτον ἄφωνόν ἐστι, τὸ δὲ δεύτερον ὑγρόν, οἷον ὅ‐πλον, ἄ‐κρον, 
+         <quote type="blockquote">Πάτροκλέ μοι δειλῇ (<bibl>Τ 287</bibl>).</quote> ὅταν δὲ τὸ προηγούμενον ἡμίφωνον ᾖ, οὐκέτι κοινή ἐστιν ἡ προκειμένη, ἀλλὰ τελείως μακρά. ― Προτάσσεται δὲ ἡμίφωνον ὑγροῦ τὸ μὲν ͞͞μ τοῦ ͞ν οἷον ἀμνός, τὸ δὲ ͞σ τοῦ ͞μ οἷον ἑσμὸς, καὶ τὸ ͞σ ὅ τοῦ ͞λ κατὰ πάθος ὡς ἐν τῷ μάσλης καὶ σπανίως τοῦ ͞ν ὡς ἐν τῷ Πάσνης <pb facs="hephaestionisenc00hephuoft_0040"/> καὶ Μάσνης, ἃ δὴ ὀνόματα παρὰ Ξάνθῳ εἰσὶν ἐν τοῖς Λυδιακοῖς. ―</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="8"> <p><label>(8)</label> Ἤδη μέντοι ἡ διὰ τοῦ μ͞ν σύνταξις ἐποίησέ που καὶ βραχεῖαν, ὡς παρὰ Κρατίνῳ ἐν Πανόπταις (<bibl>154</bibl>) 
+         <quote type="blockquote">ἀλλοτριογνώμοις ἐπιλήσμοσι μνημονικοῖσι</quote> καὶ παρ’ Ἐπιχάρμῳ ἐν Μεγαρίδι (<bibl>91</bibl>) 
+         <quote type="blockquote">εὔυμνος καὶ μουσικὰν ἔχουσα πᾶσαν φιλόλυρος</quote> †ἠχὴ καὶ παρὰ Καλλιμάχῳ (<bibl>27</bibl>) 
+         <quote type="blockquote">τὼς μὲν ὁ Μνησάρχειος ἔφη ξένος.</quote> Ἐὰν μέντοι ἐν τῇ προτέρα συλλαβῇ τελικὸν ᾖ τὸ ἄφωνον, τῆς δὲ δευτέρας ἀρκτικὸν τὸ ὑγρόν, οὐκέτι γίνεται κοινὴ συλλαβή, ἀλλὰ ἄντικρυς μακρά, ὡς παρὰ Ἀλκαίῳ (<bibl>95</bibl>) 
+         <quote type="blockquote">ἔκ μ’ ἐλάσας ἀλγέων. <lb/>[ἐκ ῥ’ ἀσαμίνθου βάντες]</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="9"> 
+         <p rend="indent"><label>(9)</label> φησὶ δὲ ὁ Ἡλιόδωρος τὸ ͞μ ἐπιφερόμενον ἀφώνῳ ἧττον τῶν ἄλλων ὑγρῶν κοινὰς ποιεῖν ἐν τοῖς ἔπεσι 〈τὰς〉 συλλαβάς· διὰ τοῦτο καὶ Κρατῖνος ἐν τοῖς Χείρωσι πεποίηκε (<bibl>235</bibl>) 
+         <quote type="blockquote">σκῆψιν μὲν Χείρωνες ἐλήλυμεν ὡς ὑποθήκας</quote> ἀντὶ τοῦ ἐλήλυθμεν’· ὅπερ ἐξηλέγξαμεν ψεῦδος ὄν. πρὸς γὰρ τῷ μυρίαν εἶναι τὴν χρῆσιν παρὰ τοῖς ἄλλοις <pb facs="hephaestionisenc00hephuoft_0041"/> ἐδείξαμεν ἔτι καὶ παρ’ αὐτῷ τῷ Κρατίνῳ πολλάκις οὖσαν, ὡς ἐν Κλεοβουλίναις (<bibl>87</bibl>) 
+         <quote type="blockquote">ἔστιν ἄκμων καὶ σφῦρα νεανίᾳ εὔτριχι πώλῳ</quote> καὶ ἐν Πανόπταις (<bibl>153</bibl>) 
+         <quote type="blockquote">κρανία δισσὰ φορεῖν, ὀφθαλμοὶ δ’ οὐκ ἀριθματοί</quote> καὶ ἐν Ὥραις (<bibl>260</bibl>) 
+         <quote type="blockquote">οὐδὲ πρὸς εἶδος ἄρ’ ἦν οὐδὲν προσιδόντι τεκμαρτόν·</quote> ἄλλως τε καὶ τὸ ἐλήλυμεν ἐδείξαμεν καὶ ἐν ἄλλοις μέτροις συνήθως αὐτοῖς λεγόμενον, ὡς παρὰ Ἀχαιῷ ἐν Κύκνῳ (<bibl>24</bibl>) 
+         <quote type="blockquote">Κύκνου δὲ πρῶτα πρὸς δόμους ἐλήλυμεν,</quote> παρ’ ᾧ καὶ τὸ δεύτερόν ἐστιν ἀκολούθως Κύκνου δὲ πρῶτα πρὸς δόμους ἐλήλυμεν, παρ’ ᾧ καὶ τὸ δεύτερόν ἐστιν ἀκολούθως πρόσωπον (<bibl>43</bibl>) 
+         <quote type="blockquote">τοιοῦδε φωτὸς πρὸς δόμους ἐλήλυτε.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:1" n="10"> 
+         <p rend="indent"><label>(10)</label> Τρίτος δέ ἐστι τρόπος, ὅταν βραχεῖα συλλαβὴ τελικὴ λέξεως ᾖ, μὴ ἐπιφερομένων τῶν τῆς μακρᾶς ποιητικῶν συμφώνων, ἀλλ’ ἤτοι ἑνὸς ἢ μηδενός, ὡς ἐν τῷ 
+         <quote type="blockquote">οἱ δὲ μέγα ἰάχοντες ἐπέδραμον (<bibl>Ξ 421</bibl>),</quote> ἢ 
+         <quote type="blockquote">αὐτὰρ ἐπεὶ Δαναῶν γένετο ἰαχή τε</quote> (<bibl xml:lang="mul">M 143 sq.</bibl> = <bibl xml:lang="mul">Ο 395 sq.</bibl>), <pb facs="hephaestionisenc00hephuoft_0042"/> 
+         <quote type="blockquote">Νέστορα δ’ οὐκ ἔλαθεν ἰαχὴ πίνοντά περ ἔμπης (<bibl>Ξ 1</bibl>),</quote> 
+         <quote type="blockquote>">ἀλλὰ τά γ’ ἄσπαρτα καὶ ἀνήροτα πάντα φύονται (<bibl>ι 109</bibl>),</quote> 
+         <quote type="blockquote">καὶ μέν οἱ Λύκιοι τέμενος τάμον (<bibl>Ζ 194</bibl>).</quote> ἐνταῦθα καὶ εἰς μέρος λόγου ἡ κοινὴ ἔληξεν καὶ τοῦ ποδὸς τελευταία ἐστίν· αἱ γὰρ ἄλλαι κοιναὶ ἃς εἶπον ἀρκτικαὶ ποδὸς ἦσαν, αὕτη δὲ καὶ τοῦ ποδὸς ληκτική [κ͞αι͞ μ͞ε͞ν]</p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="2"> <head rend="center">Περὶ συνεκφωνήσεως.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:2" n="1"> 
+         <p rend="indent"><label>(1)</label> Συνεκφώνησίς ἐστιν, ὁπόταν δύο συλλαβαὶ σύμφωνον μὴ ἔχουσαι μεταξὺ ἀλλήλων ἀντὶ μιᾶς παραληφθῶσι.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:2" n="2"> 
+         <p rend="indent"><label>(2)</label> Τρόποι δέ εἰσι τῆς συνεκφωνήσεως οἵδε· ἢ γὰρ δύο μακραὶ εἰς μίαν μακρὰν παραλαμβάνονται οἷον 
+         <quote type="blockquote">ἢ οὐχ ἅλις ὅττι γυναῖκας ἀνάλκιδας (<bibl>Ε 349</bibl>)</quote> καὶ 
+         <quote type="blockquote">βουκόλ’ ἐπεὶ οὔτε κακῷ (<bibl>υ 227</bibl>)·</quote> ἢ βραχεία καὶ μακρὰ εἰς μίαν μακρὰν <pb facs="hephaestionisenc00hephuoft_0043"/> 
+         <quote type="blockquote">πλέων ἐπὶ οἴνοπα πόντον (<bibl>α 183</bibl>)</quote> ἢ δύο βραχεῖαι εἰς μίαν μακρὰν (<bibl>ι 283</bibl>) 
+         <quote type="blockquote">νέα μέν μοι κατέαξε Ποσειδάων [ἐνὶ πόντῳ]·</quote> 〈ἡ μακρὰ καὶ βραχεῖα εἰς μίαν μακρὰν (<bibl>Β 544</bibl>) 
+         <quote type="blockquote">θώρηκας ῥήξειν δηίων ἀμφὶ στήθεσσιν·〉</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:2" n="3"> 
+         <p rend="indent"><label>(3)</label> ἢ δύο βραχεῖαι εἰς μίαν βραχεῖαν, ὅπερ ἐν τοῖς ἄλλοις εὑρίσκεται μέτροις, ὡς παρὰ Σωτάδῃ ἐν τῇ Ἰλιάδι 
+         <quote type="blockquote">σείων μελίην Πηλιάδα δεξιὸν κατ’ ὦμον,</quote> ἐν δὲ τοῖς ἔπεσι σπανίως· ὥστε Κριτίας ἐν τῇ εἰς Ἀλκιβιάδην ἐλεγείᾳ οὐκ ᾤετο ἐγχωρεῖν τοῦ Ἀλκιβιάδου τὸ ὄνομα· φησὶ γὰρ (<bibl>3</bibl>) 
+         <quote type="blockquote">καὶ νῦν Κλεινίου υἱὸν Ἀθηναῖον στεφανώσω <lb rend="indent"/>Ἀλκιβιάδην νέοισιν ὑμνήσας τρόποις· <lb/>οὐ γάρ πως ἦν τοὔνομ’ ἐφαρμόζειν ἐλεγείῳ· <lb rend="indent"/>νῦν δ’ ἐν ἰαμβείῳ κείσεται οὐκ ἀμέτρως.</quote> Ἔστι μέντοι καὶ ἐν ἔπει, ὡς παρὰ Κορίννῃ ἐν τῷ πέμπτῳ (<bibl>9</bibl>) 
+         <quote type="blockquote">ἢ διανεκῶς εὕδης; οὐ μὰν πάρος ἦσθα Κόριννα,</quote> καὶ παρὰ Πραξίλλῃ ἐν διθυράμβοις ἐν ᾠδῇ ἐπιγραφομένῃ Ἀχιλεὺς (<bibl>1</bibl>) ἀλλὰ τεὸν οὔ ποτε θυμὸν ἐνὶ στήθεσσιν ἔπειθον.</p> </div> <pb facs="hephaestionisenc00hephuoft_0044"/> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:2" n="4"> 
+         <p rend="indent"><label>(4)</label> Τὰ μὲν γὰρ τοιαῦτα 
+         <quote type="blockquote">ὦκα ἑκατόγχειρον καλέσασ’ (<bibl>Α 402</bibl>)</quote> καὶ 
+         <quote type="blockquote">θῖνα ἐφ’ ἁλὸς πολιῆς (<bibl>Α 350.</bibl> <bibl>Ν 682.</bibl> <bibl>Ξ 31.</bibl>)</quote> οὐ μᾶλλον συνεκφώνησιν ἔχει ἢ συναλοιφήν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:2" n="5"> 
+         <p rend="indent"><label>(5)</label> Ἔστι δὲ ὅπου καὶ βραχεῖα καὶ κοινὴ ἀντὶ βραχείας παραλαμβάνονται ὡς ἐν τῷ 
+         <quote type="blockquote">δενδρέῳ ἐφεζόμενοι ὄπα λειριόεσσαν ἱεῖσι (<bibl>Γ 152</bibl>)</quote> καὶ 
+         <quote type="blockquote">χρυσέῳ ἀνὰ σκήπτρῳ </quote> (<bibl>Α 15.</bibl> <bibl>374</bibl>).</p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="3"> <head rend="center">Περὶ ποδῶν.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:3" n="1"> 
+         <p rend="indent"><label>(1)</label> Ἐκ τῶν συλλαβῶν εἰσιν οἱ πόδες· ὧν δισύλλαβοι μὲν τέσσαρες· 
+         <quote type="blockquote">δίχρονος εἷς, ἐκ δύο βραχειῶν, [ὁ] πυρρίχιος. <lb/>τρίχρονοι δὲ δύο· <lb/>ἐκ μακρᾶς καὶ βραχείας, τροχαῖος· <lb/>ἐκ βραχείας καὶ μακρᾶς, ἴαμβος. <pb facs="hephaestionisenc00hephuoft_0045"/> <lb/>τετράχρονος δὲ εἷς, ἐκ δύο μακρῶν, σπονδεῖος.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:3" n="2"> 
+         <p rend="indent"><label>(2)</label>Τρισύλλαβοι δὲ οἱ τούτων διπλασίονες ὀκτώ· 
+         <quote type="blockquote">τρίχρονος εἷς, ἐκ τριῶν βραχειῶν, τρίβραχυς καὶ χορεῖος. τετράχρονοι δὲ τρεῖς· <lb/>ἐκ μακρᾶς καὶ δύο βραχειῶν, δάκτυλος· <lb/>ἐκ βραχείας καὶ μακρᾶς καὶ βραχείας, ἀμφίβραχυς· <lb/>ἐκ δύο βραχειῶν καὶ μακρᾶς, ἀνάπαιστος. <lb/>πεντάχρονοι δὲ οἱ ἴσοι τούτοις τρεῖς· <lb/>ἐκ βραχείας καὶ δύο μακρῶν, βακχεῖος· <lb/>ἐκ μακρᾶς καὶ βραχείας καὶ μακρᾶς, ἀμφίμακρος ἢ κρητικός· <lb/>ἐκ δύο μακρῶν καὶ βραχείας, παλιμβάκχειος. <lb/>ἑξάχρονος δὲ εἷς, ἐκ τριῶν μακρῶν, μολοττός.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:3" n="3"> 
+         <p rend="indent"><label>(3)</label>Τετρασύλλαβοι δὲ οἱ τούτων διπλασίονες ις′, ὧν τετράχρονος εἷς, ἐκ τεσσάρων βραχειῶν, προκελευματικός· 
+         <quote type="blockquote">πεντάχρονοι δὲ τέσσαρες· <lb/>ἐκ μακρᾶς καὶ τριῶν βραχειῶν, παιὼν πρῶτος· <lb/>ἐκ βραχείας καὶ μακρᾶς καὶ δύο βραχειῶν, παιὼν δεύτερος· <lb/>ἐκ δύο βραχειῶν καὶ μακρᾶς καὶ βραχείας, παιὼν τρίτος. <lb/>ἐκ τριῶν βραχειῶν καὶ μακρᾶς, παιὼν τέταρτος.</quote> ἑξάχρονοι δὲ ἕξ· 
+         <quote type="blockquote">ἐκ δύο βραχειῶν καὶ δύο μακρῶν, Ἰωνικὸς ἀπ’ ἐλάττονος· <pb facs="hephaestionisenc00hephuoft_0046"/> ἐκ βραχείας καὶ δύο μακρῶν καὶ βραχείας, ἀντίσπαστος· <lb/>ἐκ δύο μακρῶν καὶ δύο βραχειῶν, Ἰωνικὸς ἀπὸ μείζονος· <lb/>ἐκ μακρᾶς καὶ βραχείας καὶ μακρᾶς καὶ βραχείας, τροχαϊκὴ ταυτοποδία ἢ διτρόχαιος· <lb/>ἐκ βραχείας καὶ μακρᾶς καὶ βραχείας καὶ μακρᾶς, ἰαμβικὴ ταυτοποδία ἢ διΐαμβος· <lb/>ἐκ μακρᾶς καὶ δύο βραχειῶν καὶ μακρᾶς, χορίαμβος.</quote> ἑπτάχρονοι δὲ τέσσαρες· 
+         <quote type="blockquote">ἐκ βραχείας καὶ τριῶν μακρῶν, πρῶτος ἐπίτριτος· <lb/>ἐκ μακρᾶς καὶ βραχείας καὶ δύο μακρῶν, δεύτερος ἐπίτριτος ἢ καὶ τροχαϊκὴ ἑπτάσημος, ὁ καὶ Καρικός· <lb/>ἐκ δύο μακρῶν καὶ βραχείας καὶ μακρᾶς, τρίτος ἐπίτριτος ἢ ἰαμβικὴ ἑπτάσημος, ὁ καὶ Ῥόδιος· <lb/>ἐκ τριῶν μακρῶν καὶ βραχείας, τέταρτος ἐπίτριτος ἢ ἀντισπαστικὴ ἑπτάσημος, ὁ καὶ μονογενής. <lb/>ὀκτάχρονος δὲ 〈εἷς〉, ἐκ τεσσάρων μακρῶν, σπονδειακὴ ταυτοποδία ἢ δισπόνδειος.</quote> </p> </div> </div> <pb facs="hephaestionisenc00hephuoft_0047"/> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="4"> <head rend="center">Περὶ ἀποθέσεω; μέτρων.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:4" n="1"> 
+         <p rend="indent"><label>(1)</label> Ἀκατάληκτα καλεῖται μέτρα, ὅσα τὸν τελευταῖον πόδα ὁλόκληρον ἔχει, οἷον [ὡς] ἐπὶ δακτυλικοῦ (<bibl xml:lang="lat">Alcm.45</bibl>) 
+         <quote type="blockquote">Μῶσ’ ἄγε Καλλιόπα θύγατερ Διός,</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:4" n="2"> 
+         <p rend="indent"><label>(2)</label> καταληκτικὰ δέ, ὅσα μεμειωμένον ἔχει τὸν τελευταῖον πόδα, οἷον ἐπὶ ἰαμβικοῦ (<bibl xml:lang="lat">Sapph. 103</bibl>) 
+         <quote type="blockquote">χαίροισα νύμφα, χαιρέτω δ’ ὁ γαμβρός·</quote> ἐνταῦθα γὰρ ἡ ̅β̅ρ̅ο̅ς̅ τελευταία συλλαβὴ ἀντὶ ὅλου ποδὸς ἰαμβικοῦ κεῖται. Ἐὰν δὲ τρισύλλαβος ᾗ ὁ ποὺς ὁ τὸ μέτρον συνιστάς, δύναται καὶ παρὰ δύο συλλαβὰς εἶναι τὸ καταληκτικόν, οἷον ἐπὶ δακτυλικοῦ (<bibl xml:lang="lat">Archil. 104</bibl>) 
+         <quote type="blockquote">ἐν δὲ Βατουσιάδης·</quote> ἐνταῦθα γὰρ ἡ ̅δ̅η̅ς̅ συλλαβὴ ἐν δὲ Βατουσιάδης· ἐνταῦθα γὰρ ἡ ̅δ̅η̅ς̅ συλλαβὴ ἀντὶ τρισυλλάβου κεῖται [δακτυλικοῦ]. Ἐπὶ δὲ τῶν τοιούτων τὸ μὲν παρὰ συλλαβὴν καλεῖται καταληκτικὸν εἰς δισύλλαβον, τὸ δὲ παρὰ δύο συλλαβὰς καταληκτικὸν εἰς συλλαβήν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:4" n="3"> 
+         <p rend="indent"><label>(3)</label> Βραχυκατάληκτα δὲ καλεῖται, ὅσα ἀπὸ διποδίας ἐπὶ τέλους ὅλῳ ποδὶ μεμείωται, οἷον ἐπὶ ἰαμβικοῦ (<bibl xml:lang="lat">fr. lyr. adesp. 45</bibl>) <pb facs="hephaestionisenc00hephuoft_0048"/> 
+         <quote type="blockquote">ἄγ’ αὖτ’ ἐς οἶκον τὸν Κλεησίππω·</quote> ἐνταῦθα γὰρ ὁ ͞σ͞ι͞π͞π͞ω ποὺς ἀντὶ ὅλης ἰαμβικῆς κεῖται διποδίας.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:4" n="4"> 
+         <p rend="indent"><label>(4)</label> Ὑπερκατάληκτα δὲ ὅσα πρὸς τῷ τελείῳ προσέλαβε μέρος ποδός, οἷον ἐπὶ ἰαμβικοῦ (<bibl xml:lang="lat">fr. lyr. adesp. 46</bibl>) 
+         <quote type="blockquote">εἶμ’ ὧτε πυσσάκω λυθεῖσα·</quote> εἶμ’ ὧτε πυσσάκω λυθεῖσα· τοῦτο μὲν οὖν συλλαβῇ [πλείονι] περιττεύει· δύναται δὲ καὶ δισυλλάβῳ περιττεύειν, ὁπόταν ἑκάτερος τῶν ἐν τῇ συζυγίᾳ ποδῶν τρισύλλαβος ᾖ, οἷον ἐπ’ ἀναπαιστικοῦ (<bibl xml:lang="lat">Telesilla 1</bibl>) 
+         <quote type="blockquote">ἅδ’ Ἄρτεμις, ὦ κόραι·</quote> τοῦτο γὰρ πρὸς τῇ ὁλοκλήρῳ συζυγίᾳ δισύλλαβον ἔχει [τὸν τελευταῖον], ὅπερ ἀναπαίστου μιᾷ ἐνδεῖ συλλαβῇ. Καλοῦνται δὲ ταῦτα πάντα ἀποθέσεις. —</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:4" n="5"> 
+         <p rend="indent"><label>(5)</label> Παντὸς μέτρου ἀδιάφορός ἐστιν ἡ τελευταία συλλαβή, ὥστε δύνασθαι εἶναι αὐτὴν καὶ βραχεῖαν καὶ μακράν, οἷον (<bibl>Β 1</bibl>) 
+         <quote type="blockquote">ἄλλοι μέν ῥα θεοί τε καὶ ἀνέρες ἱπποκορυσταὶ <lb/>εὗδον παννύχιοι· Δία δ’ οὐκ ἔχε νήδυμος ὕπνος·</quote> ἐν μὲν γὰρ τῷ προτέρῳ μακρά ἐστιν ἡ τελευταία συλλαβή, ἐν δὲ τῷ δευτέρῳ βραχεῖα.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:4" n="6"> 
+         <p rend="indent"><label>(6)</label> Πᾶν μέτρον εἰς τελείαν περατοῦται λέξιν· ὅθεν <pb facs="hephaestionisenc00hephuoft_0049"/> ἐπίληπτά ἐστι τὰ τοιαῦτα Σιμωνίδου ἐκ τῶν ἐπιγραμ μάτων (<bibl>131</bibl>) 
+         <quote type="blockquote">ἡ μέγ’ Ἀθηναίοισι φόως γένετ’, ἠνίκ’ Ἀριστογείτων Ἵππαρχον κτεῖνε καὶ Ἁρμόδιος,</quote> καὶ πάλιν Νικομάχου τοῦ τὴν περὶ τῶν ζωγράφων ἐλεγείαν πεποιηκότος (<bibl xml:lang="lat">PLGII⁴ p. 316</bibl>) οὗτος δή σοι ὁ κλεινὸς ἂν Ἑλλάδα πᾶσαν Ἀπολλόδωρος· 
+         <quote type="blockquote">οὗτος δή σοι ὁ κλεινὸς ἂν Ἑλλάδα πᾶσαν Ἀπολλόδωρος· γινώσκεις τοὔνομα τοῦτο κλύων·</quote> ταῦτα μὲν οὖν ἐγένετο διὰ τὴν τῶν ὀνομάτων ἀνάγκην — οὐ γὰρ ἐνεχώρει —, ἔνια δὲ καὶ παίζουσιν οἱ κωμικοί, ὡς Εὔπολις Βάπταις (<bibl>73</bibl>) 
+         <quote type="blockquote">ἀλλ’ οὐχὶ δυνατόν ἐστιν· οὐ γὰρ ἀλλὰ προβούλευμα βαστάζουσι τῆς πόλεως μέγα.</quote></p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="5"> <head rend="center">Περὶ ἰαμβικοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:5" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ ἰαμβικὸν δέχεται κατὰ μὲν τὰς περισσὰς χώρας [τουτέστι πρώτην, τρίτην, πέμπτην] ἴαμβον, τρίβραχυν, καὶ σπονδεῖον, δάκτυλον, ἀνάπαιστον, κατὰ δὲ τὰς ἀρτίους [τουτέστι δευτέραν, τετάρτην, ἕκτην] ἴαμβον καὶ τρίβραχυν καὶ ἀνάπαιστον· τοῦτον δὲ παρὰ <pb facs="hephaestionisenc00hephuoft_0050"/> τοῖς κωμικοῖς συνεχῶς, παρὰ δὲ τοῖς ἰαμβοποιοῖς καὶ τραγικοῖς σπανιώτερον. Ὅτε μὲν οὖν ἀκατάληκτόν ἐστιν, ἐπὶ τῆς τελευταίας τὸν ἴαμβον δέχεται μόνον ἢ πυρρίχιον διὰ τὴν ἀδιάφορον, ὅταν δὲ καταληκτικόν, τὸν ἴαμβον παραλήγοντα ― ἢ σπανίως τρίβραχυν ―, ὥστε γίνεσθαι τὴν κατάκλειδα ἤτοι ἀμφίβραχυν ἢ βακχεῖον.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:5" n="2"> 
+         <p rend="indent"><label>(2)</label> Ἔστι δὲ ἐπίσημα ἐν αὐτῷ ἀκατάληκτα μὲν δίμετρα, οἷον τὰ Ἀνακρεόντεια ὅλα ἄσματα γέγραπται (<bibl>89</bibl>) 
+         <quote type="blockquote">ἐρῶ τε δηῦτε κοὐκ ἐρῶ <lb/>καὶ μαίνομαι κοὐ μαίνομαι·</quote> τρίμετρα δὲ (<bibl xml:lang="lat">Anacr. 84</bibl>) 
+         <quote type="blockquote">ἔστε ξένοισι μειλίχοις ἐοικότες</quote> τετράμετρον δὲ οἷον τὸ Ἀλκαίου (<bibl>56</bibl>) 
+         <quote type="blockquote">ἔστε ξένοισι μειλίχοις ἐοικότες</quote> τετράμετρον δὲ οἷον τὸ Ἀλκαίου (<bibl>56</bibl>) 
+         <quote type="blockquote">δέξαι με κωμάζοντα, δέξαι, λίσσομαί σε, λίσσομαι.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:5" n="3"> 
+         <p rend="indent"><label>(3)</label> Καταληκτικὸν δὲ δίμετρον τὸ καλούμενον Ἀνακρεόντειον οἷον (<bibl xml:lang="lat">Anacr. 92</bibl>) 
+         <quote type="blockquote">ὁ μὲν θέλων μάχεσθαι, <lb/>πάρεστι γάρ, μαχέσθω·</quote> τρίμετρον δὲ οἷον τὸ Ἀρχιλόχου (<bibl>116</bibl>) 
+         <quote type="blockquote">ὄγμος κακοῦ δὲ γήραος καθαιρεῖ·</quote> τετράμετρον δὲ οἷον τὸ Ἱππώνακτος (<bibl>90</bibl>) 
+         <quote type="blockquote">εἴ μοι γένοιτο παρθένος καλή τε καὶ τέρεινα.</quote></p> </div><pb facs="hephaestionisenc00hephuoft_0051"/> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:5" n="4"> 
+         <p rend="indent"><label>(4)</label> Ἔστιν ἐπίσημον ἐν τοῖς ἀκαταλήκτοις καὶ τὸ χωλὸν καλούμενον, ὅπερ τινὲς μὲν Ἱππώνακτος, τινὲς δὲ Ἀνανίου εὕρημά φασι, διαφέρει δὲ τοῦ ὀρθοῦ, ᾗ ἐκεῖνο μὲν τὸν τελευταῖον ἴαμβον ἔχει ἢ πυρρίχιον διὰ τὴν ἀδιάφορον, τοῦτο δὲ ἢ σπονδεῖον ἢ τροχαῖον. τὸ δὲ χωλὸν οὐ δέχεται τοὺς παραλήγοντας τρισυλλάβους πόδας, οὔτε δάκτυλον οὔτε τρίβραχυν οὔτε ἀνάπαιστον, ἀλλὰ μάλιστα μὲν ἴαμβον, ὅτε καὶ εὐπρεπές ἐστιν, (<bibl xml:lang="lat">Callim. 92</bibl>) 
+         <quote type="blockquote">ἀκούσαθ’ Ἱππώνακτος· οὐ γὰρ ἀλλ’ ἥκω,</quote> ἔσθ’ ὅτε δὲ καὶ σπονδεῖον, ὅτε καὶ τραχύτερον γίνεται, (<bibl xml:lang="lat">Hipp. 48</bibl>) 
+         <quote type="blockquote">εἰς ἄκρον ἕλκων, ὥσπερ ἀλλᾶντα ψύχων.</quote></p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="6"> <head rend="center">Περὶ τροχαῖκοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:6" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ τροχαϊκὸν κατὰ μὲν τὰς περιττὰς χώρας δέχεται τροχαῖον, τρίβραχυν καὶ δάκτυλον, κατὰ δὲ τὰς ἀρτίους <pb facs="hephaestionisenc00hephuoft_0052"/> τούτους τε καὶ σπονδεῖον καὶ ἀνάπαιστον. Καταληκτικὸν δὲ ὅτε ἐστί, τὸν παραλήγοντα μάλιστα μὲν τροχαῖον δέχεται, ἔστι δὲ ὅτε καὶ τρίβραχυν· [καὶ] ἐὰν δὲ ᾗ βραχυκατάληκτον, οὐ βούλεται τὸν παραλήγοντα τετράσημον ἔχειν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:6" n="2"> 
+         <p rend="indent"><label>(2)</label> Ἔστι δὲ ἐπίσημα ἐν αὐτῷ καταληκτικά· δίμετρον μὲν καταληκτικὸν τὸ καλούμενον Εὐριπίδειον ἢ Ληκύθιον, οἷόν ἐστι (<bibl xml:lang="lat">Eur. Phoen. 239 sq.</bibl>) 
+         <quote type="blockquote">νῦν δέ μοι πρὸ τειχέων <lb/>θούριος μολὼν Ἄρης·</quote> τρίμετρον δὲ καταληκτικόν, οἷόν ἐστι τὸ Ἀρχιλόχου (<bibl>99</bibl>), ὅ τινες ἀκέφαλον ἰαμβικὸν καλοῦσι, 
+         <quote type="blockquote">Ζεῦ πάτερ, γάμον μὲν οὐκ ἐδαισάμην.</quote> τετράμετρον δὲ καταληκτικὸν οἷον (<bibl xml:lang="lat">Archil. 60</bibl>) 
+         <quote type="blockquote">Ἐρξίη πῆ δηῦτ’ ἄνολβος ἀθροΐζεται στρατός.</quote> τοῦτο δὲ τὸ τετράμετρον γίνεται καὶ χωλὸν τοῦ παρατελεύτου ποδὸς σπονδείου γενομένου, οἷόν ἐστι καὶ τὸ (<bibl xml:lang="lat">Hipp. 78</bibl>) 
+         <quote type="blockquote">Μητροτίμῳ δηῦτέ με χρὴ τῷ σκότῳ δικάζεσθαι.</quote> καὶ τῷ πενταμέτρῳ δὲ καίπερ ὄντι ὑπερμέτρῳ πολλοὺς <pb facs="hephaestionisenc00hephuoft_0053"/> κεχρῆσθαι συμβέβηκεν, οἷόν ἐστι καὶ τὸ Καλλιμάχου (<bibl>115</bibl>) 
+         <quote type="blockquote">ἔρχεται πολὺς μὲν Αἰγαῖον διατμήξας ἀπ’ οἰνηρῆς Χίου</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:6" n="3"> 
+         <p rend="indent"><label>(3)</label> Ἔστι δὲ ἐν αὐτῷ ἐπίσημον καὶ τὸ δίμετρον βραχυκατάληκτον, τὸ καλούμενον Ἰθυφαλλικόν· ᾧ πρῶτος μὲν Ἀρχίλοχος κέχρηται, συζεύξας αὐτὸ δακτυλικῷ τετραμέτρῳ οὕτως (<bibl xml:lang="lat">Arch. 100</bibl>) 
+         <quote type="blockquote">οὐκέθ’ ὁμῶς θάλλεις ἁπαλὸν χρόα· κάρφεται γὰρ ἤδη.</quote> οἱ δὲ μετὰ ταῦτα καὶ ἐπήγαγον αὐτὸ ἰαμβείῳ, ὥσπερ ὁ Καλλίμαχος (<bibl>117</bibl>) 
+         <quote type="blockquote">Ἑρμᾶς ὅ περ Φεραῖος αἰνείων θεός <lb/>ἔμμι τῶ φυγαίχμα.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:6" n="4"> 
+         <p rend="indent"><label>(4)</label> ὁμοίως δὲ καὶ τὸ τετράμετρον βραχυκατάληκτόν ἐστιν ἐπίσημον, οἷον (<bibl xml:lang="lat">fr. com. an. 39</bibl>) 
+         <quote type="blockquote">οὐδ’ Ἀμειψίαν ὁρᾶτε πτωχὸν ὄντ’ ἐφ’ ὑμῖν·</quote> καὶ τῶν ἀκαταλήκτων δὲ τὸ τετράμετρόν ἐστιν ἔνδοξον, οἷον τουτὶ τὸ Ἀνακρέοντος (<bibl>76</bibl>) 
+         <quote type="blockquote">κλῦθί μευ γέροντος εὐέθειρα χρυσόπεπλε κούρα.</quote> Τὰ μὲν οὖν ἐπισημότατα ἐν αὐτῷ ταῦτά ἐστι.</p> </div><pb facs="hephaestionisenc00hephuoft_0054"/> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:6" n="5"> 
+         <p rend="indent"><label>(5)</label> Τῷ δὲ δακτύλῳ τῷ κατὰ τὰς περιττὰς ἐμπίπτοντι χώρας ἥκιστα οἱ ἰαμβοποιοὶ ἐχρήσαντο ποιηταί, σπανίως δὲ καὶ οἱ τραγικοί, οἱ δὲ κωμικοὶ συνεχῶς ὥσπερ καὶ ἐν τῷ ἰαμβικῷ τῷ ἐπὶ τῆς ἀρτίου ἀναπαίστῳ· ἑκάτερον γὰρ ἄλογον· οὔτε γὰρ ἐν τῷ ἰαμβικῷ ἐχρῆν ἀνάπαιστον ἐπὶ τῆς ἀρτίου χώρας, ἐφ’ ἧς οὐδὲ σπονδεῖος ἐγχωρεῖ, οὗ λύσις ἐστὶν ὁ ἀνάπαιστος, οὔτε ἐν τῷ τροχαϊκῷ ἐπὶ τῆς περιττῆς τὸν δάκτυλον, ἐφ’ ἧς οὐδὲ σπονδεῖος ἐγχωρεῖ, οὗ ὁμοίως λύσις ὁ δάκτυλος.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:6" n="6"> 
+         <p rend="indent"><label>(6)</label> Ἔτι μέντοι καὶ ἐν τοῖς καταληκτικοῖς καὶ ὁ τρίβραχυς ἐγχωρεῖ, καθάπερ προειρήκαμεν, οὐ μόνον ὁ τροχαῖος, ὥς τινες οἴονται· παράδειγμα τόδε (<bibl xml:lang="lat">fr. com. an. 38</bibl>) 
+         <quote type="blockquote">τῶν πολιτῶν ἄνδρας ὑμῖν δημιουργοὺς ἀποφανῶ·</quote> τῆς γὰρ κατάκλειδος οὔσης ͞͞͞ἀ͞π͞ο͞φ͞α͞ν͞ῶ δῆλον ὡς ὁ παρακείμενος πούς ἐστιν ͞α͞π͞ο͞φ͞α, τρίβραχυς ὡς προείρηται.</p> </div></div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="7"> <head rend="center">Περὶ δακτυλικοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ δακτυλικὸν δέχεται δακτύλους καὶ σπονδείους κατὰ πᾶσαν χώραν πλὴν τῆς τελευταίας· ἐπὶ ταύτης δέ, εἰ μὲν ἀκατάληκτον εἴη, δάκτυλον ἕξει ἢ διὰ τὴν <pb facs="hephaestionisenc00hephuoft_0055"/> ἀδιάφορον κρητικόν· εἰ δὲ καταληκτικόν, τὰ ἀπ’ αὐτοῦ μεμειωμένα ἤτοι συλλαβῇ ἢ δύο συλλαβαῖς· καὶ τὸ μὲν καλεῖται καταληκτικὸν εἰς συλλαβήν, τὸ δὲ καταληκτικὸν εἰς δισύλλαβον.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="2"> 
+         <p rend="indent"><label>(2)</label> Ἐπισημότατα δ’ ἐστὶν ἐν αὐτῷ τό τε ἑξάμετρον καταληκτικὸν εἰς δισύλλαβον, τὸ καλούμενον ἔπος, οἷον (<bibl>Α 1</bibl>) 
+         <quote type="blockquote">μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος,</quote> (ἐπὶ γὰρ τῆς ἐσχάτης λέξεως τῆς λ͞η͞ος λείπει ὁ δάκτυ λος μιᾷ συλλαβῇ) καὶ τὸ πεντάμετρον καταληκτικὸν εἰς δισύλλαβον, τὸ καλούμενον Σιμίειον, οἷον 
+         <quote type="blockquote">χαῖρε ἄναξ ἕταρε ζαθέας μάκαρ ἥβας,</quote> καὶ τὸ τετράμετρον εἰς δισύλλαβον καταληκτικόν, ᾧ πρῶτος μὲν ἐχρήσατο Ἀρχίλοχος ἐν ἐπῳδοῖς (<bibl>98</bibl>) 
+         <quote type="blockquote">φαινόμενον κακὸν οἴκαδ’ ἄγεσθαι·</quote> ὕστερον δὲ καὶ Ἀνακρέων τούτῳ τῷ μέτρῳ καὶ ὅλα ᾄσματα συνέθηκεν (<bibl>67</bibl>) 
+         <quote type="blockquote">ἁδύμελες χαρίεσσα χελιδοῖ</quote> καὶ (<bibl>68</bibl>) 
+         <quote type="blockquote">μνᾶται δηῦτε φαλακρὸς Ἄλεξις.</quote> Ταῦτα μὲν οὖν τῶν εἰς δισύλλαβον καταληκτικῶν παραδείγματα.</p> </div><pb facs="hephaestionisenc00hephuoft_0056"/> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="3"> 
+         <p rend="indent"><label>(3)</label> Τῶν δὲ εἰς συλλαβὴν τῷ μὲν πενθημιμερεῖ [πρὸς δύο ποσὶν οὐσῶν τῶν συλλαβῶν] Ἀρχίλοχος κέχρηται ἐν ἐπωδῷ (<bibl>104</bibl>) 
+         <quote type="blockquote">ἐν δὲ Βατουσιάδης,</quote> τῷ δὲ ἑφθημιμερεῖ Ἀλκμὰν (<bibl>49</bibl>) 
+         <quote type="blockquote">ταῦτα μὲν ὡς ἂν ὁ δῆμος ἅπας.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="4"> 
+         <p rend="indent"><label>(4)</label> Καὶ τῶν ἀκαταλήκτων δὲ τὸ τετράμετρον Ἀρχίλοχος ἔνδοξον ἐποίησε διὰ τὸ προτάξαι αὐτὸ τροχαϊκοῦ τοῦ καλουμένου ἰθυφαλλικοῦ, οὕτως (<bibl>100</bibl>) 
+         <quote type="blockquote">οὐκέθ’ ὁμῶς θάλλεις ἁπαλὸν χρόα· κάρφεται γὰρ ἤδη.</quote> Ἀλκμὰν δὲ καὶ ὅλας στροφὰς τούτῳ τῷ μέτρῳ κατεμέτρησε (<bibl>45</bibl>) 
+         <quote type="blockquote">Μῶσ’ ἄγε Καλλιόπα, θύγατερ Διός, <lb/>ἄρχ’ ἐρατῶν ἐπέων, ἐπὶ δ’ ἵμερον <lb/>ὕμνῳ καὶ χαρίεντα τίθει χορόν.</quote> Ταῦτα μὲν οὖν κοινὰ δακτυλικά.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="5"> 
+         <p rend="indent"><label>(5)</label> Τὰ δὲ Αἰολικὰ καλούμενα τὸν μὲν πρῶτον ἔχει πόδα πάντως ἕνα τῶν δισυλλάβων ἀδιάφορον, ἤτοι σπονδεῖον ἢ ἴαμβον ἢ τροχαῖον ἢ πυρρίχιον, τοὺς δὲ ἐν μέσῳ δακτύλους πάντας, τὸν δὲ τελευταῖον πρὸς τὴν ἀπόθεσιν δάκτυλον μὲν ἢ κρητικὸν διὰ τὸ τῆς τελευταίας ἀδιάφορον, ἐὰν ἀκατάληκτον ᾖ, ἐὰν δὲ κατα ληκτικόν, <pb facs="hephaestionisenc00hephuoft_0057"/> καὶ τὰ ἀπὸ τούτου μεμειωμένα εἰς δισύλλαβον καὶ συλλαβήν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="6"> 
+         <p rend="indent"><label>(6)</label> Τὸ μὲν οὖν Αἰολικὸν ἔπος τὸ καταληκτικὸν τοιοῦτόν ἐστι (<bibl xml:lang="lat">Alc. 46</bibl>) 
+         <quote type="blockquote">κέλομαί τινα τὸν χαρίεντα Μένωνα καλέσσαι <lb/>εἰ χρὴ συμποσίας ἐπ’ ὄνασιν ἐμοὶ γεγενῆσθαι.</quote> πεντάμετρα δὲ καταληκτικὰ εἰς δισύλλαβον (<bibl xml:lang="lat">Sapph. 104</bibl>) 
+         <quote type="blockquote">τίῳ σ’, ὦ φίλε γαμβρέ, καλῶς ἐϊκάσδω; <lb/>ὄρπακι βραδινῷ σε μάλιστ’ ἐϊκάσδω.</quote> τὸ δὲ τετράμετρον (<bibl xml:lang="lat">Sapph. 98</bibl>) 
+         <quote type="blockquote">θυρωρῷ πόδες ἑπτορόγυιοι <lb/>τὰ δὲ σάμβαλα πεντεβόηα <lb/>πίσυγγοι δὲ δέκ’ ἐξεπόνασαν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="7"> 
+         <p rend="indent"><label>(7)</label> Τῶν δὲ ἀκαταλήκτων τὸ μὲν πεντάμετρον καλεῖται Σαπφικὸν τεσσαρεσκαιδεκασύλλαβον, ᾧ τὸ δεύτερον ὅλον Σαπφοῦς γέγραπται (<bibl xml:lang="lat">Sapph. 33</bibl>) 
+         <quote type="blockquote">ἠράμαν μὲν ἐγὼ σέθεν, Ἄτθι, πάλαι πόκα.</quote> τὸ δὲ τετράμετρον ἀκατάληκτόν ἐστι τοιοῦτον· τοιοῦτον· 
+         <quote type="blockquote">ἔρος δαῦτέ μ’ ὁ λυσιμελὴς δόνει <lb/>γλυκύπικρον ἀμάχανον ὄρπετον</quote> (<bibl xml:lang="lat">Sapph. 40</bibl>). — 
+         <quote type="blockquote">Ἄτθι, σοὶ δ’ ἔμεθεν μὲν ἀπήχθετο <lb/>φροντίσδην, ἐπὶ δ’ Ἀνδρομέδαν πότη</quote> (Sapph.41).</p> </div><pb facs="hephaestionisenc00hephuoft_0058"/> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:7" n="8"> 
+         <p rend="indent"><label>(8)</label> Ἔστι δέ τινα καὶ λογαοιδικὰ καλούμενα δακτυλικά, ἅπερ ἐν μὲν ταῖς ἄλλαις χώραις δακτύλους ἔχει, τελευταίαν δὲ τροχαϊκὴν συζυγίαν. ἔστι δὲ αὐτῶν ἐπισημότατα τό τε πρὸς δύο δακτύλοις ἔχον τροχαϊκὴν συζυγίαν, καλούμενον δὲ Ἀλκαϊκὸν δεκασύλλαβον (<bibl xml:lang="lat">Alc. 69</bibl>) 
+         <quote type="blockquote">καί τις ἐπ’ ἐσχατιαῖσιν οἴκεις,</quote> καὶ τὸ πρὸς τρισί, καλούμενον Πραξίλλειον (<bibl xml:lang="lat">Prax. 5</bibl>) 
+         <quote type="blockquote">ὦ διὰ τῶν θυρίδων καλὸν ἐμβλέποισα <lb/>παρθένε τὰν κεφάλαν, τὰ δ’ ἔνερθε νύμφα.</quote></p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="8"> <head rend="center">Περὶ ἀναπαιστικοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ δὲ ἀναπαιστικὸν κατὰ πᾶσαν χώραν δέχεται σπονδεῖον, ἀνάπαιστον, σπανίως δὲ καὶ προκελευματικόν, παρὰ δὲ τοῖς δραματοποιοῖς καὶ δάκτυλον. Εἰσὶ δὲ αὐτοῦ ἀποθέσεις ἓξ κατὰ συζυγίαν διαιρουμένου· ὑπερκατάληκτος εἰς δισύλλαβον, ὑπερκατάληκτος εἰς συλλαβήν, ἀκατάληκτος, καταληκτικὴ εἰς δισύλλαβον, καταληκτικὴ εἰς συλλαβήν, βραχυκατάληκτος.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="2"> 
+         <p rend="indent"><label>(2)</label> Ἐπισημότατον δὲ ἐν αὐτῷ ἐστι τὸ τετράμετρον <pb facs="hephaestionisenc00hephuoft_0059"/> καταληκτικὸν εἰς συλλαβήν, τὸ καλούμενον Ἀριστοφάνειον (<bibl xml:lang="lat">Nub. 962</bibl>) 
+         <quote type="blockquote">ὅτ’ ἐγὼ τὰ δίκαια λέγων ἤνθουν καὶ σωφροσύνη νενόμιστο·</quote> κέκληται δὲ Ἀριστοφάνειον οὐκ Ἀριστοφάνους αὐτὸ εὑρόντος πρώτου, ἐπεὶ καὶ παρὰ Κρατίνῳ ἐστί (<bibl>220</bibl>) 
+         <quote type="blockquote">χαίρετε δαίμονες οἱ Λεβάδειαν Βοιώτιον οὖθαρ ἀρούρης,</quote> ἀλλὰ διὰ τὸ τὸν Ἀριστοφάνην πολλῷ αὐτῷ κεχρῆσθαι·</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="3"> 
+         <p rend="indent"><label>(3)</label> καὶ πρὸ Κρατίνου παρ’ Ἐπιχάρμῳ, ὃς καὶ ὅλα δύο δράματα τούτῳ τῷ μέτρῳ γέγραφε, τούς τε Χορεύοντας καὶ τὸν Ἐπίνικον. Ἀριστόξενος δὲ ὁ Σελινούντιος Ἐπιχάρμου πρεσβύτερος ἐγένετο ποιητής (οὗ καὶ αὐτὸς Ἐπίχαρμος (<bibl>88</bibl>) μνημονεύει ἐν Λόγῳ καὶ Λογίνᾳ. 
+         <quote type="blockquote">οἱ τοὺς ἰάμβους καὶ τὸν † ἄριστον τρόπον, ὃν πρᾶτος εἰσηγήσαθ’ Ὡριστόξενος) <lb/>καὶ τούτου τοίνυν τοῦ Ἀριστοξένου μνημονεύεταί τινα</quote> τούτῳ τῷ μέτρῳ γεγραμμένα (<bibl xml:lang="lat">CGF p. 87</bibl>) 
+         <quote type="blockquote">τίς ἀλαζονίαν πλείσταν παρέχει τῶν ἀνθρώπων; τοὶ μάντεις·</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="4"> 
+         <p rend="indent"><label>(4)</label> τὸ μέντοι τὸν σπονδεῖον ἔχον, ἀλλὰ μὴ τὸν ἀνάπαιστον παραλήγοντα εἰσὶν οἳ Λακωνικὸν καλοῦσι, προφερόμενοι παράδειγμα τὸ <pb facs="hephaestionisenc00hephuoft_0060"/> 
+         <quote type="blockquote">ἄγετ’ ὦ Σπάρτας ἔνοπλοι κοῦροι ποτὶ τὰν Ἄρεως κίνασιν·</quote> ὅτι μέντοι καὶ ἐν τῷ Ἀριστοφανείῳ καλουμένῳ ἀδιαφόρως εὑρίσκεται ὁ παραλήγων ἀνάπαιστος ἢ σπονδεῖος, δηλώσει Κρατῖνος· εἰς γὰρ τοὺς Ὀδυσσέας εἰσβάλλων (<bibl>138</bibl>) τούτῳ τῷ μέτρῳ ἐχρήσατο 
+         <quote type="blockquote">τίνες αὖ πόντον κατέχουσ’ αὖραι; νέφος οὐράνιον τόδ’ ὁρῶμαι,</quote> ἐποίησε δέ τινα στίχον καὶ σπονδείῳ τῷ παραλήγοντι κεχρημένον (<bibl>139</bibl>) 
+         <quote type="blockquote">ὡς ἂν μᾶλλον τοῖς πηδαλίοις ἡ ναῦς ἡμῶν πειθαρχῇ.</quote> Περὶ μὲν οὖν τοῦ τετραμέτρου ταῦτα.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="5"> 
+         <p rend="indent"><label>(5)</label> Τῷ δὲ τριμέτρῳ Σιμίας ὁ Ῥόδιος ὅλον ποιημάτιον ἔγραψεν 
+         <quote type="blockquote">Ἱστία ἁγνά, ἀπ’ ἐϋξείνων μέσα τοίχων.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="6"> 
+         <p rend="indent"><label>(6)</label> Τὸ δὲ δίμετρον καταληκτικὸν καλεῖται μὲν παροιμιακὸν διὰ τὸ παροιμίας τινὰς ἐν τούτῳ τῷ μέτρῳ εἶναι 
+         <quote type="blockquote">πότε δ’ Ἄρτεμις οὐκ ἐχόρευσεν</quote> (<bibl xml:lang="lat">paroem. Gr. ed. Leutsch II p. 229</bibl>) ― 
+         <quote type="blockquote">καὶ κόρκορος ἐν λαχάνοισιν</quote> (<bibl xml:lang="lat">paroem. Gr. I p. 100. 257</bibl>) ―, ἀλλὰ παροιμίαι εἰσὶ καὶ ἐπικαὶ καὶ ἰαμβικαὶ καὶ οὐ τούτου τοῦ μέτρου μόνου· ὥστ’ οὐκ εἰκότως αὐτὸ <pb facs="hephaestionisenc00hephuoft_0061"/> μόνον παροιμιακὸν καλοῦσι. Κρατῖνος δὲ ἐν Ὀδυσσεῦσι (<bibl>144</bibl>) συνεχεῖ αὐτῷ ἐχρήσατο· 
+         <quote type="blockquote">σιγάν νυν ἅπας ἔχε σιγάν <lb/>καὶ πάντα λόγον τάχα πεύσει· <lb/>ἡμῖν δ’ Ἰθάκη πατρίς ἐστι, <lb/>πλέομεν δ’ ἅμ’ Ὀδυσσέϊ θείῳ.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="7"> 
+         <p rend="indent"><label>(7)</label> Πρῶτος δὲ Ἀρχίλοχος ἐχρήσατο τῷ μεγέθει τούτῳ, ἐν τοῖς τετραμέτροις προτάξας αὐτὸ τοῦ ἰθυφαλλικοῦ· τὸ γὰρ (<bibl>79</bibl>) 
+         <quote type="blockquote">Ἐρασμονίδη Χαρίλαε</quote> ἑφθημιμερές ἐστιν ἀναπαιστικόν· ἐχρήσατο δὲ τῷ πρώτῳ ποδὶ καὶ ἰάμβῳ, ὡς καὶ ἐκ τοῦ παραδείγματός ἐστι δῆλον, καὶ σπονδείῳ (<bibl xml:lang="lat">Archil. 82</bibl>) 
+         <quote type="blockquote">Δήμητρί τε χεῖρας ἀνέξων,</quote> ἀναπαίστῳ δὲ τῷ πρώτῳ ἐπὶ δύο μόνων στίχων κεχρῆσθαι δοκεῖ (<bibl>79</bibl>, <bibl>2</bibl>) 
+         <quote type="blockquote">ἐρέω πολὺ φίλταθ’ ἑταίρων</quote> καὶ (80) 
+         <quote type="blockquote">φιλέειν στυγνόν περ ἐόντα·</quote> ταῦτα δὲ ἀμφότερα κατὰ συνεκφώνησιν ἴαμβον ἔχει τὸν πρῶτον πόδα.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="8"> 
+         <p rend="indent"><label>(8)</label> Τῷ δὲ ἀναπαιστικῷ ὑποστέλλοιτο ἂν καὶ τὸ προκελευματικὸν ὑπ’ ἐνίων καλούμενον, οἷον τὸ τετράμετρον τοῦτο τὸ Ἀριστοφάνειον (<bibl xml:lang="lat">Aristoph. fr. 698</bibl>) 
+         <quote type="blockquote">τίς ὄρεα βαθύκομα τάδ’ ἐπέσυτο βροτῶν·</quote> <pb facs="hephaestionisenc00hephuoft_0062"/> [γίνεται γὰρ, ἑκάστου τῶν πρώτων τριῶν ποδῶν ἀναπαίστων λελυμένων εἰς τὸν προκελευματικόν, δίμετρον ἀκατάληκτον ἀναπαιστικόν·] τινὲς δὲ αὐτὸ κατὰ πόδα διαιροῦντες πυρριχιακὸν καλοῦσι· τοῖς δὲ χαριεστέροις δοκεῖ ἀναπαιστικὸν εἶναι, ἀντὶ ἑκάστου ἀναπαίστου προκελευματικοῦ παραλαμβανομένου ἐπὶ τῶν ἄλλων χωρῶν, ἐπὶ δὲ τῆς τελευταίας φυλαττομένου αὐτοῦ καθαροῦ καὶ μὴ λελυμένου.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:8" n="9"> 
+         <p rend="indent"><label>(9)</label> Ὥσπερ δὲ ἐν τῷ δακτυλικῷ ἦν τι λογαοιδικόν, οὕτω κἀν τοῖς ἀναπαιστικοῖς τὸ εἰς βακχεῖον περαιούμενον, οὗ ἐστιν ἐπισημότατον τὸ μετὰ τέσσαρας πόδας αὐτὸν ἔχον τὸν βακχεῖον· ὧν ὁ πρῶτος γίνεται καὶ σπονδεῖος καὶ ἴαμβος. καλεῖται μὲν οὖν Ἀρχεβούλειον ἀπὸ Ἀρχεβούλου τοῦ Θηβαίου ποιητοῦ χρησαμένου αὐτῷ κατακόρως· γέγραπται δὲ καὶ Καλλιμάχῳ (<bibl>146</bibl>) 
+         <quote type="blockquote">ἀγέτω θεός, οὐ γὰρ ἐγὼ δίχα τῶνδ’ ἀείδειν·</quote> τοῦτο μὲν οὖν ἀπὸ ἀναπαίστου· ἀπὸ δὲ σπονδείου (<bibl>146ᵇ</bibl>) 
+         <quote type="blockquote">νύμφα, σὺ μὲν ἀστερίαν ὑπ’ ἄμαξαν ἤδη,</quote> ἀπὸ δὲ ἰάμβου (<bibl>146ᶜ</bibl>) 
+         <quote type="blockquote">φιλωτέρα ἄρτι γάρ οἱ Σικελὰ μὲν Ἔννα.</quote> τοὺς δὲ μετὰ τὸν πρῶτον πόδα τρεῖς οἱ μὲν ἐν συνεχείᾳ γράψαντες τὸ μέτρον πάντως ἀναπαίστους ἐφύλαξαν, Ἀλκμὰν δέ που καὶ σπονδείους παραλαμβάνει.</p> </div> </div><pb facs="hephaestionisenc00hephuoft_0063"/> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="9"> <head rend="center">Περὶ χοριαμβικοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:9" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ χοριαμβικὸν συντίθεται μὲν καὶ καθαρόν, συντίθεται δὲ καὶ ἐπίμικτον πρὸς τὰς ἰαμβικάς· ὡς ἐπίπαν δὲ ὅτε καταληκτικόν ἐστιν εἰς τὴν ἰαμβικὴν κατάκλειδα περαιοῦται, τουτέστιν εἰς ἀμφίβραχυν ἢ βακχεῖον διὰ τὴν ἀδιάφορον· — περαιοῦται μὲν γὰρ καὶ εἰς τὴν ἰδίαν, τὸν δάκτυλον ἢ κρητικόν, οἷον δίμετρον μὲν τὸ (<bibl xml:lang="lat">fr. lyr. adesp. 69</bibl>) 
+         <quote type="blockquote">ἱστοπόνοι μείρακες,</quote> τρίμετρα δὲ (<bibl xml:lang="lat">fr. lyr. adesp. 70</bibl>) 
+         <quote type="blockquote">οὐδὲ λεόντων σθένος οὐδὲ τροφαί,</quote> τετράμετρα δὲ (<bibl xml:lang="lat">fr. lyr. adesp. 71</bibl>) 
+         <quote type="blockquote">αἳ Κυθερήας ἐπιπνεῖτ’ ὄργια λευκωλένου.</quote> ἀλλὰ τῷ ταῦτα συνεχέστερα εἶναι, ἀπρεπέστερά ἐστι. —</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:9" n="2"> 
+         <p rend="indent"><label>(2)</label> Τὰ δὲ εἰς τὸν ἀμφίβραχυν ἢ βακχεῖον· οἷον δίμετρα μὲν τὰ ἐξ Αἰολοσίκωνος Ἀριστοφάνους (<bibl>10</bibl>) 
+         <quote type="blockquote">οὐκ ἐτός, ὦ γυναῖκες, <lb/>πᾶσι κακοῖσιν ἡμᾶς <lb/>φλῶσιν ἑκάστοτ’ ἄνδρες· <lb/>δεινὰ γὰρ ἔργα δρῶσαι <lb/>λαμβανόμεσθ’ ὑπ’ αὐτῶν.</quote> <pb facs="hephaestionisenc00hephuoft_0064"/> τρίμετρα δὲ οἷον τὸ Ἀνακρέοντος (<bibl>31</bibl>) 
+         <quote type="blockquote">δακρυόεσσάν τ’ ἐφίλησεν αἰχμάν·</quote> τετράμετρα δέ, ἃ καὶ συνεχέστερά ἐστιν, δακρυόεσσάν τ’ ἐφίλησεν αἰχμάν· τετράμετρα δέ, ἃ καὶ συνεχέστερά ἐστιν, οἷα ταυτὶ τὰ Σαπφοῦς (<bibl>60</bibl>) 
+         <quote type="blockquote">δεῦτέ νυν ἁβραὶ Χάριτες καλλίκομοί τε Μοῖσαι.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:9" n="3"> 
+         <p rend="indent"><label>(3)</label> Ἀνακρέων δὲ ἐπετήδευσε τὴν πρώτην συζυγίαν δι’ ὅλου ᾄσματος ἐκ τριβραχέος καὶ ἰάμβου ποιῆσαι, ὡς εἶναι κοινὴν λύσιν τῆς τε χοριαμβικῆς καὶ τῆς ἰαμβικῆς (<bibl xml:lang="lat">Anacr. 24</bibl>) 
+         <quote type="blockquote">ἀναπέτομαι δὴ πρὸς Ὄλυμπον πτερύγεσσι κούφαις.</quote> πολὺ δ’ ἐστὶ καὶ τὸ πρὸς τῇ κατάκλειδι τὴν δευτέραν συζυγίαν ἰαμβικὴν ἔχον, οἷόν ἐστι παρὰ μὲν Ἀνακρέοντι (<bibl>23</bibl>) 
+         <quote type="blockquote">ἐκ ποταμοῦ ᾽πανέρχομαι πάντα φέρουσα λαμπρά,</quote> παρὰ δὲ Ἀριστοφάνει ἐν Ἀμφιάρεῳ (<bibl>30</bibl>) 
+         <quote type="blockquote">οἶδα μὲν ἀρχαῖόν τι δρῶν, κοὐχὶ λέληθ’ ἐμαυτόν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:9" n="4"> 
+         <p rend="indent"><label>(4)</label> Καὶ τῷ πενταμέτρῳ δὲ Καλλίμαχος ὅλον ποίημα τὸν Βράγχον συνέθηκε (<bibl>36</bibl>) 
+         <quote type="blockquote">δαίμονες εὐυμνότατοι Φοῖβέ τε καὶ Ζεῦ Διδύμων γενάρχαι.</quote> Φίλικος δὲ ὁ Κερκυραῖος, εἷς ὢν τῆς Πλειάδος, ἑξαμέτρῳ συνέθηκεν ὅλον ποίημα 
+         <quote type="blockquote">τῇ χθονίῃ μυστικὰ Δήμητρί τε καὶ Φερσεφόνῃ καὶ Κλυμένῳ τὰ δῶρα.</quote> <pb facs="hephaestionisenc00hephuoft_0065"/> τοῦτο δὲ καὶ ἀλαζονεύεται εὑρηκέναι Φίλικος λέγων 
+         <quote type="blockquote">καινογράφου συνθέσεως τῆς Φιλίκου, γραμματικοί, δῶρα φέρω πρὸς ὑμᾶς·</quote> ψεύδεται δέ· πρὸ γὰρ αὐτοῦ Σιμμίας ὁ Ῥόδιος ἐχρήσατο ἔν τε τῷ Πελέκει 
+         <quote type="blockquote">Ἀνδροθέᾳ δῶρον ὁ Φωκεὺς κρατερᾶς μηδοσύνας ἦρα τίνων Ἀθάνᾳ,</quote> κἀν ταῖς Πτέρυξιν 
+         <quote type="blockquote">λεύσσετε τὸν γᾶς τε βαθυστέρνου ἄνακτ’ Ἀκμονίδαν τ’ ἄλλυδις ἑδράσαντα,</quote> πλὴν εἰ μὴ ἄρα ὁ Φίλικος οὐχ ὡς πρῶτος εὑρηκὼς τὸ μέτρον λέγει, ἀλλ’ ὡς πρῶτος τούτῳ τῷ μέτρῳ τὰ ὅλα ποιήματα γράψας.</p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="10"> <head rend="center">Περὶ ἀντισπαστικοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ ἀντισπαστικὸν τὴν μὲν πρώτην συζυγίαν ἔχει τρεπομένην κατὰ τὸν πρότερον πόδα εἰς τὰ τέσσαρα τοῦ δισυλλάβου σχήματα, τὰς δ’ ἐν μέσῳ καθαρὰς ἀντισπαστικάς, τὴν δὲ τελευταίαν, ὁπότε ἐστὶν ἀκατάληκτον, ἰαμβικήν. Ἐὰν δὲ ἀναμίσγηται ταῖς ἰαμβικαῖς, <pb facs="hephaestionisenc00hephuoft_0066"/> οὐ μόνον τὴν πρώτην συζυγίαν ἔχει τρεπομένην κατὰ τὸν πρότερον πόδα, ἀλλὰ καὶ τὴν ταῖς ἰαμβικαῖς ἑπομένην· ἔστι δὲ ὅτε καὶ λύεται ὁ πρότερος ποὺς εἰς τρίβραχυν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="2"> 
+         <p rend="indent"><label>(2)</label> Καὶ ἔστιν ἐπίσημα ἐν αὐτῷ τάδε· πενθημιμερὲς μὲν τὸ καλούμενον δοχμιακόν, οἷον 
+         <quote type="blockquote">κλύειν μαίεται <lb/>τὸν ἐγχώριον·</quote> ἑφθημιμερὲς δὲ τὸ καλούμενον Φερεκράτειον (<bibl>79</bibl>) 
+         <quote type="blockquote">ἄνδρες πρόσχετε τὸν νοῦν <lb/>ἐξευρήματι καινῷ <lb/>συμπτύκτοις ἀναπαίστοις.</quote> δίμετρον δὲ ἀκατάληκτον τὸ καλούμενον Γλυκώνειον, αὐτοῦ Γλύκωνος εὑρόντος αὐτό (<bibl xml:lang="lat">fr. lyr. adesp. 79ᵅ</bibl>) 
+         <quote type="blockquote">κάπρος ἡνίχ’ ὁ μαινόλης <lb/>ὀδόντι σκυλακοκτόνῳ <lb/>Κύπριδος θάλος ὤλεσεν·</quote> δίμετρον δὲ ὑπερκατάληκτον τὸ καλούμενον Σαπφικὸν ἐννεασύλλαβον ἢ Ἱππωνάκτειον, οἷον (<bibl xml:lang="lat">Hipp. 92</bibl>) 
+         <quote type="blockquote">καὶ κνίσῃ τινὰ θυμιήσας.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="3"> 
+         <p rend="indent"><label>(3)</label> Τῶν δὲ τριμέτρων τὸ μὲν καταληκτικὸν τὸ μόνην <pb facs="hephaestionisenc00hephuoft_0067"/> τὴν πρώτην ἀντισπαστικὴν ἔχον, τὰς δὲ ἑξῆς ἄλλας ἰαμβικὰς Φαλαίκειον καλεῖται, οἷον (<bibl xml:lang="lat">Kratin. 321</bibl>) 
+         <quote type="blockquote">χαῖρ’ ὦ χρυσόκερως βαβάκτα κήλων, <lb/>Πάν, Πελασγικὸν Ἄργος ἐμβατεύων·</quote> τὸ δὲ ἀκατάληκτον τὸ μόνην τὴν τελευταίαν ἔχον ἰαμ βικὴν καλεῖται Ἀσκληπιάδειον, οἷον τὸ Ἀλκαίου (<bibl>33</bibl>) 
+         <quote type="blockquote">ἦλθες ἐκ περάτων γᾶς, ἐλεφαντίναν <lb/>λαβὰν τῶ ξίφεος χρυσοδέταν ἔχων·</quote> τὸ δὲ μέσην μὲν ἔχον τὴν ἀντισπαστικήν, τρεπομένην κατὰ τὸν ἕτερον πόδα εἰς τὰ τέσσαρα τοῦ δισυλλά βου σχήματα, ἑκατέρωθεν δὲ τὰς ἰαμβικάς, ὧν ἡ πρώτη καὶ ἀπὸ σπονδείου ἄρχεται, Ἀλκαϊκὸν καλεῖται δωδεκασύλλαβον, οἷον (<bibl xml:lang="lat">Alc. 62</bibl>) 
+         <quote type="blockquote">κόλπῳ σ’ ἐδέξανθ’ ἁγναὶ Χάριτες Κρόνῳ.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="4"> 
+         <p rend="indent"><label>(4)</label> Τῶν δὲ τετραμέτρων τὸ μὲν καταληκτικὸν καθαρόν ἐστι τὸ τοιοῦτον (<bibl xml:lang="lat">Sapph. 62</bibl>) 
+         <quote type="blockquote">κατθνάσκει Κυθέρη’ ἁβρὸς Ἄδωνις· τί κε θεῖμεν; <lb/>καττύπτεσθε κόραι καὶ κατερείκεσθε χιτῶνας·</quote> τὸ δὲ τὴν δευτέραν ἰαμβικὴν ἔχον καλεῖται Πριάπειον, οἷον (<bibl xml:lang="lat">Anacr. 17</bibl>) <pb facs="hephaestionisenc00hephuoft_0068"/> 
+         <quote type="blockquote">ἠρίστησα μὲν ἰτρίου λεπτοῦ μικρὸν ἀποκλάς, <lb/>οἴνου δ’ ἐξέπιον κάδον· νῦν δ’ ἁβρῶς ἐρόεσσαν <lb/>ψάλλω πηκτίδα, τῇ φίλῃ κωμάζων † παιδὶ ἁβρη.</quote> πολυσχημάτιστον μὲν οὖν αὐτὸ ποιοῦσιν, ἀλλὰ τό ψάλλω πηκτίδα, τῇ φίλῃ κωμάζων † παιδὶ ἁβρη. πολυσχημάτιστον μὲν οὖν αὐτὸ ποιοῦσιν, ἀλλὰ τό γε καθαρῶς ἐσχηματισμένον ἐστὶ τοιοῦτον. ―</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="5"> <p><label>(5)</label> ἔστι δὲ πυκνὸν καὶ τὸ τὴν δευτέραν μόνην ἀντισπαστικὴν ἔχον, ᾧ μέτρῳ ἔγραψεν ᾄσματα καὶ Σαπφὼ ἐπὶ † τῆς τοῦ ἑβδόμου (<bibl>90</bibl>) 
+         <quote type="blockquote">γλυκῆα μᾶτερ, οὔ τοι δύναμαι κρέκην τὸν ἱστὸν <lb/>πόθῳ δαμεῖσα παιδὸς βραδίναν δι’ Ἀφροδίταν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="6"> 
+         <p rend="indent"><label>(6)</label> Τὸ δὲ ἀκατάληκτον καλεῖται Σαπφικὸν ἑκκαιδεκασύλλαβον, ᾧ τὸ τρίτον ὅλον Σαπφοῦς γέγραπται, πολλὰ δὲ καὶ Ἀλκαίου ᾄσματα (<bibl>85</bibl>) 
+         <quote type="blockquote">Νύμφαις ταὶς Διὸς ἐξ αἰγιόχω φαῖσι τετυγμέναις.</quote> Σιμίας δὲ καὶ τῷ ὑπερκαταλήκτῳ κέχρηται 
+         <quote type="blockquote">τὸν στυγνὸν Μελανίππου φόνον αἱ πατροφόνων ἔριθοι,</quote> ὅπερ καὶ καλεῖται Σιμιακόν. ―</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:10" n="7"> 
+         <p rend="indent"><label>(7)</label> Ὁ δὲ Ἀλκαῖος (<bibl>48ᵅ</bibl>) καὶ πενταμέτρῳ ἀκαταλήκτῳ ἐχρήσατο 
+         <quote type="blockquote">Κρονίδα βασιλῆος γένος Αἶαν, τὸν ἄριστον πέδ’ Ἀχιλλέα.</quote></p> </div></div><pb facs="hephaestionisenc00hephuoft_0069"/> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="11"> <head rend="center">Περὶ ἰωνικοῦ τοῦ ἀπὸ μείζονος.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:11" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ δὲ ἀπὸ μείζονος ἰωνικὸν συντίθεται μὲν καὶ καθαρόν, συντίθεται δὲ καὶ πρὸς τὰς τροχαϊκὰς ἐπί μικτὸν· ὅτε μέντοι ἀκατάληκτόν ἐστι, καθόλου σπανίως εἰς τὴν ἰωνικὴν περαιοῦται διὰ τὸ ἀπρεπῆ εἶναι τὴν ἰωνικὴν ἐπὶ τέλους οὖσαν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:11" n="2"> 
+         <p rend="indent"><label>(2)</label> Ἔστι τοίνυν ἐπίσημα ἐν τῷ ἰωνικῷ ἑφθημιμερῆ μὲν τὰ τοιαῦτα, οἷς ἡ Τελέσιλλα (1) ἐχρήσατο, 
+         <quote type="blockquote">ἅδ’ Ἄρτεμις, ὦ κόραι, <lb/>φεύγοισα τὸν Ἀλφεόν,</quote> καὶ δίμετρον ἀκατάληκτον τὸ καλούμενον Κλεομάχειον, ἐν ᾧ καὶ οἱ μολοσσοὶ ἐπὶ τῶν ἀρτίων χωρῶν ἐμπίπτουσι καὶ οἱ χορίαμβοι, οἷον (<bibl xml:lang="lat">anthol. lyr. p. 504</bibl>) 
+         <quote type="blockquote">τίς τὴν ὑδρίην ἡμῶν <lb/>ἐψόφησ’; ἐγὼ πίνων,</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:11" n="3"> 
+         <p rend="indent"><label>(3)</label> καὶ τρίμετρα βραχυκατάληκτα τὰ καλούμενα Πραξίλλεια, ἃ τὴν μὲν πρώτην ἔχει ἰωνικήν, τὴν δὲ δευτέραν τροχαϊκήν, οἷά ἐστι τὰ τοιαῦτα Σαπφοῦς (<bibl>53</bibl>) 
+         <quote type="blockquote">πλήρης μὲν ἐφαίνετ’ ἀ σελάνα· <lb/>αἱ δ’ ὡς περὶ βωμὸν ἐστάθησαν·</quote> τὰ δὲ τρίμετρα ἀκατάληκτα διχῶς συνέθεσαν οἱ Αἰολεῖς· τὰ μὲν γὰρ ἐκ δύο ἰωνικῶν καὶ τροχαϊκῆς ἐποίησαν, οἷον (<bibl xml:lang="lat">Sapph. 54</bibl>) <pb facs="hephaestionisenc00hephuoft_0070"/> 
+         <quote type="blockquote">Κρῆσσαι νύ ποθ’ ὧδ’ ἐμμελέως πόδεσσιν <lb/>ὠρχεῦντ’ ἀπαλοῖσ’ ἀμφ’ ἐρόεντα βωμόν·</quote> ἔνια δὲ ἐκ μιᾶς ἰωνικῆς καὶ δύο τροχαϊκῶν, οἷον (<bibl xml:lang="lat">Alc. 38</bibl>) 
+         <quote type="blockquote">Τριβώλετερ· οὐ γὰρ Ἀρκάδεσσι λώβα.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:11" n="4"> 
+         <p rend="indent"><label>(4)</label> Τῶν δὲ τετραμέτρων ἐπισημότατόν ἐστι βραχυκατάληκτον τὸ καλούμενον Σωτάδειον· τοῦτο δὲ κατὰ τὰς τρεῖς χώρας δέχεται ἰωνικὴν συζυγίαν, ἢ τροχαϊκήν, ἢ τὴν ἐξ ἀναπαίστου καὶ πυρριχίου, ἢ τὴν ἐκ τριβράχεος καὶ τροχαίου, ἢ τὴν ἐκ μακρᾶς καὶ τεσσάρων βραχειῶν, ἢ τὴν ἐξ ἕξ βραχειῶν, οἷον 
+         <quote type="blockquote">Ἥρην ποτέ φασιν Δία τὸν τερπικέραυνον·</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:11" n="5"> 
+         <p rend="indent"><label>(5)</label> καὶ τετράμετρα δὲ ἀκατάληκτα διαφόρως συνέθεσαν· ἢ γὰρ τρισὶν ἰωνικαῖς μίαν τροχαϊκὴν τὴν τελευταίαν ἐπήγαγον ― καλεῖται δὲ Αἰολικόν, ὅτι Σαπφὼ πολλῷ αὐτῷ ἐχρήσατο ― οἷον (<bibl xml:lang="lat">Sapph. 76</bibl>. <bibl>77</bibl>) 
+         <quote type="blockquote">εὐμορφοτέρα Μνασιδίκα τᾶς ἁπαλᾶς Γυρίννως· ― <lb/>ἀσαροτέρας οὐδαμά πὤρανα σέθεν τυχοῖσαν·</quote> (παρατηρεῖν δὲ χρή, ὅτι τὴν πρώτην συζυγίαν καὶ ἀπὸ βραχείας ἀρχομένην ποιοῦσιν, ὥσπερ καὶ ἐν τοῖς τριμέτροις (<bibl xml:lang="lat">Saph. 54</bibl>, <bibl>3</bibl>) 
+         <quote type="blockquote">πόας τέρεν ἄνθος μαλακὸν μάτεισαι·</quote>) ἐνίοτε δὲ ἐναλλὰξ τὰς ἰωνικὰς ταῖς τροχαϊκαῖς παραλαμβάνουσιν, <pb facs="hephaestionisenc00hephuoft_0071"/> ἀντὶ μὲν τῶν ἰωνικῶν ἔσθ’ ὅτε τὰς δευτέρας παιωνικὰς παραλαμβάνοντες, ἀντὶ δὲ τῶν ἑξασήμων τροχαϊκῶν ἔσθ’ ὅτε τὰς ἑπτασήμους τροχαϊκάς, οἷον (<bibl xml:lang="lat">Sapph. 52</bibl>) 
+         <quote type="blockquote">δέδυκε μὲν ἁ σελάννα καὶ πληιάδες· μέσαι δὲ <lb/>νύκτες, παρὰ δ’ ἔρχεθ’ ὥρα· ἐγὼ δὲ μόνα καθεύδω.</quote></p> </div></div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="12"> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:12" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ δὲ ἀπ’ ἐλάσσονος ἰωνικὸν συντίθεται μὲν καὶ καθαρόν, συντίθεται δὲ καὶ ἐπίμικτον πρὸς τὰς τροχαϊκὰς [διποδίας] οὕτως, ὥστε τὴν πρὸ τῆς τροχαϊκῆς ἀεὶ γίνεσθαι πεντάσημον, τουτέστι τρίτην παιωνικήν, καὶ τὴν τροχαϊκήν, ὁπόταν προτάττοιτο τῆς ἰωνικῆς, γίνεσθαι ἑπτάσημον [τροχαϊκήν], τὸν καλούμενον δεύτερον ἐπίτριτον· ἔσθ’ ὅτε δὲ ἡ μὲν τρίτη παιωνικὴ συναιρεῖται εἰς παλιμβάκχειον, τῆς δὲ ἐπιφερομένης τροχαϊκῆς ὁ πρότερος λύεται εἰς τρίβραχυν· ἐμπίπτουσι δὲ καὶ οἱ μολοττοὶ ἐπὶ τῶν περιττῶν χωρῶν ἐν τοῖς ἀπ’ ἐλάσσονος ἰωνικοῖς, ὥσπερ ἐν τοῖς ἀπὸ μείζονος ἐπὶ τῶν ἀρτίων.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:12" n="2"> 
+         <p rend="indent"><label>(2)</label> Καὶ ὅλα μὲν οὖν ἄσματα γέγραπται ἰωνικά, ὥσπερ Ἀλκμᾶνι (<bibl>85ᵃ</bibl>) <pb facs="hephaestionisenc00hephuoft_0072"/> 
+         <quote type="blockquote">Ἑκατὸν μὲν Διὸς υἱὸν τάδε Μῶσαι κροκόπεπλοι,</quote> Σαπφοῖ δὲ (<bibl>88</bibl>) 
+         <quote type="blockquote">τί με Πανδιονὶς ὤραννα χελιδών,</quote> Ἀλκαίῳ δὲ πολλά, ὥσπερ καὶ τόδε (<bibl>59</bibl>) 
+         <quote type="blockquote">ἔμε δείλαν, ἔμε πάσαν κακοτάτων πεδέχοισαν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:12" n="3"> 
+         <p rend="indent"><label>(3)</label> Τῶν δὲ ἐν τῷ μέτρῳ μεγεθῶν τὸ μὲν ἐπισημότατόν ἐστι τὸ τετράμετρον καταληκτικόν, οἷόν ἐστι τὸ Φρυνίχου τοῦ τραγικοῦ τουτί (<bibl>14</bibl>) 
+         <quote type="blockquote">τό γε μὴν ξείνια δούσαις, λόγος ὥσπερ λέγεται, <lb/>ὀλέσαι, κἀποτεμεῖν ὀξέϊ χαλκῷ κεφαλάν,</quote> καὶ παρὰ Φρυνίχῳ τῷ κωμικῷ (<bibl>70</bibl>) 
+         <quote type="blockquote">ἃ δ’ ἀνάγκα ’ σθ’ ἱερεῦσιν καθαρεύειν φράσομεν·</quote> τοῦτο μέντοι καὶ γαλλιαμβικὸν καὶ μῃτρῳακὸν [καὶ ἀνακλώμενον] καλεῖται ― ὕστερον δὲ 〈καὶ〉 ἀνακλώμενον ἐκλήθη ― διὰ τὸ πολλὰ τοὺς νεωτέρους εἰς τὴν μητέρα τῶν θεῶν γράψαι τούτῳ τῷ μέτρῳ (ἐν οἷς καὶ τὰ τοὺς τρίτους παιῶνας ἔχοντα καὶ παλιμβάκχειον καὶ τὰς τροχαϊκὰς ἀδιαφόρως παραλαμβάνουσι πρὸς τὰ καθαρά), ὡς καὶ τὰ πολυθρύλητα ταῦτα παραδείγματα δηλοῖ (<bibl xml:lang="lat">fr. lyr. ad. 121</bibl>) <pb facs="hephaestionisenc00hephuoft_0073"/> 
+         <quote type="blockquote">Γαλλαὶ μητρὸς ὀρείης φιλόθυρσοι δρομάδες, <lb/>αἷς ἔντεα παταγεῖται καὶ χάλκεα κρόταλα.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:12" n="4"> 
+         <p rend="indent"><label>(4)</label> Καὶ τῷ βραχυκαταλήκτῳ δὲ Ἀνακρέων ὅλα ᾄσματα συνέθηκεν (<bibl>47</bibl>) 
+         <quote type="blockquote">μεγάλῳ δηῦτέ μ’ ἔρως ἔκοψεν ὥστε χαλκεὺς <lb/>πελέκει, χειμερίῃ δ’ ἔλουσεν ἐν χαράδρῃ.</quote> Τῶν δὲ τριμέτρων τὸ μὲν ἀκατάληκτον (<bibl xml:lang="lat">Sapph. 87</bibl>) 
+         <quote type="blockquote">†ζαελεξάμαν ὄναρ Κυπρογενήᾳ</quote> παρὰ τῇ Σαπφοῖ, παρὰ δὲ Ἀνακρέοντι (<bibl>50</bibl>) ἑτέρως ἐσχημάτισται 
+         <quote type="blockquote">ἀπό μοι θανεῖν γένοιτ’· οὐ γὰρ ἂν ἄλλη <lb/>λύσις ἐκ πόνων γένοιτ’ οὐδαμὰ τῶνδε.</quote> τὸ δὲ καταληκτικόν (<bibl xml:lang="lat">Anacr. 55</bibl>) 
+         <quote type="blockquote">Διονύσου σαῦλαι βασσαρίδες.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:12" n="5"> 
+         <p rend="indent"><label>(5)</label> Τὸ δὲ 〈δίμετρον τὸ〉 ἀκατάληκτον κατὰ τὸν ἀνακλώμενον χαρακτῆρα πολὺ παρὰ τῷ Ἀνακρέοντί ἐστι (<bibl>61</bibl>) 
+         <quote type="blockquote">παρὰ δηῦτε Πυθόμανδρον <lb/>κατέδυν ἔρωτα φεύγων·</quote> τῷ δὲ καθαρῷ ἑφθημιμερεῖ ὅλον ᾆσμα Τιμοκρέων συνέθηκε (<bibl>6</bibl>) 
+         <quote type="blockquote">Σικελὸς κομψὸς ἀνὴρ <lb/>ποτὶ τὰν ματέρ’ ἔφα.</quote></p> </div> </div><pb facs="hephaestionisenc00hephuoft_0074"/> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="13"> <head rend="center">Περὶ παιωνικοῦ.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="1"> 
+         <p rend="indent"><label>(1)</label> Τὸ δὲ παιωνικὸν εἴδη μὲν ἔχει τρία, τό τε κρητικὸν καὶ τὸ βακχειακὸν καὶ τὸ παλιμβακχειακόν· ὃ καὶ ἀνεπιτήδειόν ἐστι πρὸς μελοποιίαν, τὸ δὲ κρητικὸν ἐπιτήδειον· δέχεται δὲ καὶ λύσεις τὰς εἰς τοὺς καλου μένους παιῶνας· καλεῖται δὲ καὶ ὑπ’ αὐτῶν τῶν ποιητῶν κρητικόν, ὥσπερ ὑπὸ Κρατίνου ἐν Τροφωνίῳ (<bibl>222</bibl>) 
+         <quote type="blockquote">ἔγειρε δὴ νῦν, μοῦσα, κρητικὸν μέλος,</quote> εἶτα ἐπιφέρει (<bibl>222</bibl>) 
+         <quote type="blockquote">χαῖρε δή, μοῦσα· χρονία μὲν ἥκεις, ὅμως δ’ <lb/>ἦλθες οὐ πρίν γε δεῖν, ἴσθι σαφές· ἀλλ’ ὅπως.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="2"> 
+         <p rend="indent"><label>(2)</label> Ἐπιτηδεύουσι δὲ ἔνιοι τῶν ποιητῶν τοὺς πρώτους καλουμένους παιῶνας παραλαμβάνειν πλὴν τῆς τελευταίας χώρας, εἰς ἣν τὸν κρητικὸν παραλαμβάνουσιν· οὕτω γοῦν τὸ πολυθρύλητον τετράμετρον συντιθέασιν, οὗ παραδείγματα ἐκ τῶν Ἀριστοφάνους Γεωργῶν (<bibl>110</bibl>) 
+         <quote type="blockquote">ὦ πόλι φίλη Κέκροπος, αὐτοφυὲς Ἀττική, <lb/>χαῖρε λιπαρὸν δάπεδον, οὖθαρ ἀγαθῆς χθονός.</quote> <pb facs="hephaestionisenc00hephuoft_0075"/> (κέχρηται δὲ αὐτῷ καὶ ἐν ἄλλοις δράμασιν ὁ Ἀριστοφάνης καὶ ἐν Σφηξίν (<bibl>1275</bibl>) 
+         <quote type="blockquote">ὦ μακάρι’ Αὐτόμενες ὥς σε μακαρίζομεν,</quote> καὶ Εὔπολις ἐν Κόλαξι (<bibl>160</bibl>) 
+         <quote type="blockquote">φημὶ δὲ βροτοῖσι πολὺ πλεῖστα παρέχειν ἐγὼ <lb/>καὶ πολὺ μέγιστ’ ἀγαθά· ταῦτα δ’ ἀποδείξομεν</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="3"> 
+         <p rend="indent"><label>(3)</label> ὅμως δ’ ἐν τοῖς Γεωργοῖς Ἀριστοφάνης ἐποίησέ 〈που〉 τὸν τέταρτον παιῶνα ἀντὶ τοῦ πρώτου, οὐ τηρήσας τὸ πρῶτον † παρατήρημα, (<bibl>111</bibl>) 
+         <quote type="blockquote">ἐν ἀγορᾷ δ’ αὗ πλάτανον εὖ διαφυτεύσομεν.</quote> ἐν δὲ ταῖς δευτέραις Θεσμοφοριαζούσαις (<bibl>334</bibl>) καὶ κρητικοὺς πολλάκις ἐν μέσοις τοῖς τετραμέτροις παρέλαβεν 
+         <quote type="blockquote">μήτε Μούσας ἀνακαλεῖν ἑλικοβοστρύχους <lb/>μήτε χάριτας βοᾶν εἰς χορὸν Ὀλυμπίας· <lb/>ἐνθάδε γάρ εἰσιν, ὥς φησιν ὁ διδάσκαλος.</quote> Σιμίας δὲ ἐπετήδευσεν ἔν τισι ποιήμασι τοὺς πλεῖστους κρητικοὺς παραλαμβάνειν, 
+         <quote type="blockquote">μᾶτερ ὦ ποντία κλῦθι νυμφᾶν ἁβρᾶν <lb/>Δῶρι, κυμοκτύπων ἤραν’ ἁλίων μυχῶν,</quote> καὶ πάλιν 
+         <quote type="blockquote">σοὶ μὲν εὔιππος εὔπωλος ἐγχέσπαλος <lb/>δῶκεν αἰχμὰν Ἐνυάλιος εὔσκοπον ἔχειν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="4"> 
+         <p rend="indent"><label>(4)</label> ἓν δὲ ποίημα ἐπετήδευσε συνθεῖναι, ὥστε ἀμφοτέρας τὰς ἑκατέρωθεν τοῦ κρητικοῦ μακρὰς λύσας τὸν ἐκ πέντε βραχειῶν παραλαμβάνειν πλὴν τῆς τελευταίας, <pb facs="hephaestionisenc00hephuoft_0076"/> ἐφ’ ἧς τὸν τέταρτον παραλαμβάνει παιῶνα· ― ἔσθ’ ὅτε δὲ καὶ ἐπὶ τῆς παρατελεύτου κέχρηται· ― 
+         <quote type="blockquote">σέ ποτε Διὸς ἀνὰ πύματα νεαρὲ κόρε νεβροχίτων.</quote> συντιθέασι δέ τινες καὶ ἑτέρῳ τρόπῳ τὸ τετράμετρον, ὥστε τρεῖς εἶναι τοὺς καλουμένους τετάρτους παιῶνας, εἶτα τελευταῖον τὸν κρητικόν (<bibl xml:lang="lat">fr. lyr. ad. 107</bibl>) 
+         <quote type="blockquote">θυμελικὰν ἰθι μάκαρ φιλοφρόνως εἰς ἔριν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="5"> 
+         <p rend="indent"><label>(5)</label> Ὧι δὴ ἔφαμεν (<bibl>40</bibl> <bibl>14</bibl>) τρόπῳ συνεχῶς κεχρῆσθαι αὐτοὺς ἐπὶ τοῦ τετραμέτρου, ὥστε τοῖς τρισὶ παιῶσι τοῖς πρώτοις ἐπάγειν κρητικόν, τούτῳ καὶ ἐπὶ τοῦ πενταμέτρου Θεόπομπος ὁ κωμικὸς ἐχρήσατο ἐν Παισίν (<bibl>38</bibl>), ἀφ’ οὗ καὶ Θεοπόμπειον καλεῖται, 
+         <quote type="blockquote">πάντ’ ἀγαθὰ δὴ γέγονεν ἀνδράσιν ἐμῆς ἀπὸ συνουσίας.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="6"> 
+         <p rend="indent"><label>(6)</label> Δύναται δὲ καὶ μέχρι τοῦ ἑξαμέτρου προκόπτειν τὸ μέτρον διὰ τὸ τὸ τριακοντάσημον μὴ ὑπερβάλλειν, καὶ εἴη ἂν ἑξάμετρον καταληκτικὸν τὸ καλούμενον . . . τὸ τοῦ Ἀλκμᾶνος ἐκ μόνων ἀμφιμάκρων (<bibl xml:lang="lat">Alcm. 38</bibl>) 
+         <quote type="blockquote">Ἀφροδίτα μὲν οὐκ ἔστι, μάργος δ’ Ἔρως οἷα 〈παῖς〉 παίσδει <lb/>ἄκρ’ ἐπ’ ἄνθη καβαίνων, ἃ μή μοι θίγῃς, τῶ κυπαιρίσκω.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="7"> 
+         <p rend="indent"><label>(7)</label> Δεδηλώσθω δὲ ὅτι καὶ ὅλα ἄσματα κρητικὰ συντίθεται, ὥσπερ καὶ παρὰ Βακχυλίδῃ (<bibl>31</bibl> ═ <bibl xml:lang="lat">16 Blass</bibl>) ὦ Περικλειτὲ δᾶλα ἀγνοήσειν μὲν οὔ σ’ ἔλπομαι·</p> </div><pb facs="hephaestionisenc00hephuoft_0077"/> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:13" n="8"> 
+         <p rend="indent"><label>(8)</label> Τὸ δὲ βακχειακὸν σπάνιόν ἐστιν, ὥστε, εἰ καί πού ποτε ἐμπέσοι, ἐπὶ βραχὺ εὑρίσκεσθαι, οἷον (<bibl xml:lang="lat">Aeschyl. 23</bibl>) 
+         <quote type="blockquote">ὁ ταῦρος δ’ ἔοικεν κυρίξειν † τιν’ ἀρχὰν <lb/>φθάσαντος δ’ ἐπ’ ἔργοις προπηδήσεταί νιν †</quote></p> 
+         <p rend="indent">Τοσαῦτα περὶ τῶν ἐννέα τῶν μονοειδῶν καὶ ὁμοιοειδῶν.</p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="14"> <head rend="center">Περὶ τῆς κατ᾽ ἀντιπάθειαν μίζεως.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="1"> 
+         <p rend="indent"><label>(1)</label> Τῆς δὲ κατ’ ἀντιπάθειαν μίξεως νῦν τὰ πυκνότατα παραθησόμεθα. Ἐπιχοριαμβικὸν μὲν οὖν τὸ Σαπφικὸν καλούμενον ἑνδεκασύλλαβον, οἷον (<bibl xml:lang="lat">Sapph. 1</bibl>) 
+         <quote type="blockquote">Ποικιλόθρον’ ἀθανάτ’ Ἀφρόδιτα·</quote> τοῦτο δὲ τὴν μὲν πρώτην συζυγίαν ἔχει τροχαϊκὴν ἑξάσημον ἢ ἑπτάσημον, τὴν δὲ δευτέραν χοριαμβικήν, τὴν δὲ κατάκλειδα ἐξ ἰάμβου καὶ τῆς ἀδιαφόρου· ὥστε εἶναι τὰ πάντα δύο σχήματα περὶ τὴν τετάρτην συλλαβήν, πῆ μὲν βραχεῖαν γινομένην, πῆ δὲ μακράν. θάτερον μὲν οὖν σχῆμα, τὸ 
+         <quote type="blockquote">Ποικιλόθρον, ἀθανάτ’ Ἀφρόδιτα</quote> πρόκειται· θάτερον δέ (<bibl xml:lang="lat">Sapph. 1</bibl>, <bibl>5</bibl>) 
+         <quote type="blockquote">ἀλλὰ τυίδ’ ἔλθ’ αἴ ποτα κἀτέρωτα·</quote> <pb facs="hephaestionisenc00hephuoft_0078"/> ὥστ’ εἶναι τὸν κανόνα τοιοῦτον, 
+         <quote type="blockquote">βαβα βααβ αββ <lb/>βαββ βααβ αβα</quote> ἔστι δὲ καὶ παρ’ Ἀλκαίῳ - καὶ ἄδηλον ὁποτέρου ἐστὶν εὕρημα, εἰ καὶ Σαπφικὸν καλεῖται - οἷον (<bibl xml:lang="lat">Alc. 5</bibl>, <bibl>1</bibl>) 
+         <quote type="blockquote">χαῖρε Κυλλάνας ὃ μέδεις, σὲ γάρ μοι.</quote> τοιούτοις χρῶνται τρισὶν εἰς ἑκάστην στροφήν· εἶτα ἐπιφέρουσι τὸ τέταρτον πεντασύλλαβον, χοριαμβικὸν πενθημιμερές, συνεμπίπτον δακτυλικῷ τῷ εἰς δεύτερον τροχαῖον, οἷόν ἐστι τὸ (<bibl xml:lang="lat">Sapph. 1</bibl>, <bibl>4</bibl>) 
+         <quote type="blockquote">πότνια θυμόν.</quote> Τοῦτο μὲν οὖν πότνια θυμόν.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="2"> 
+         <p rend="indent"><label>(2)</label> Τοῦτο μὲν οὖν ἀπὸ τροχαϊκῆς ἐστὶν ἐπιχοριαμβικόν, ἀπὸ δὲ ἀντισπαστικῆς τὸ καλούμενον Πινδαρικὸν ἑνδεκασύλλαβον, ὃ τὴν μὲν πρώτην ἀντισπαστικὴν ἔχει, τὰ δὲ λοιπὰ ὁμοίως τῷ Σαπφικῷ χοριαμβικὴν καὶ ἰαμβικὴν κατάκλειδα, οἷον 
+         <quote type="blockquote">Ὁ Μουσαγέτας με καλεῖ χορεῦσαι (<bibl xml:lang="lat">Pind. fr. 116</bibl>) - <lb/>ἄγοις ὦ κλυτὰ θεράποντα Λατοῖ (<bibl xml:lang="lat">Pind. fr. 117</bibl>).</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="3"> 
+         <p rend="indent"><label>(3)</label> Ἐπιωνικὸν δὲ ἀπὸ μείζονος τρίμετρον καταληκτικόν ἐστι, τὸ καλούμενον Ἀλκαϊκὸν ἑνδεκασύλλαβον, ὃ τὴν μὲν πρώτην συζυγίαν ἔχει ἰαμβικήν, ἤτοι ἑξάσημον ἢ ἑπτάσημον, τὴν δὲ δευτέραν ἰωνικὴν ἀπὸ μείζονος ἢ δευτέραν παιωνικήν, τὴν δὲ κατάκλειδα ἐκ τροχαίου καὶ τῆς ἀδιαφόρου, οἷον <pb facs="hephaestionisenc00hephuoft_0079"/> 
+         <quote type="blockquote">ὧ’ ναξ Ἄπολλον, παῖ μεγάλω Δίος</quote> (<bibl xml:lang="lat">Alc. 1</bibl>) - 
+         <quote type="blockquote">Μέλαγχρος αἰδῶς ἄξιος εἰς πόλιν (<bibl xml:lang="lat">Alc. 21</bibl>).</quote> ὥστε εἶναι σχήματα μὲν αὐτοῦ τέσσαρα, κανόνα δὲ τοιόνδε· 
+         <quote type="blockquote">αβαβ ββαα βααᵝ <lb/>ββας ββαα βααᵝ <lb/>αβαβ αβαα βααᵝ <lb/>ββαβ αβαα βααᵝ</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="4"> 
+         <p rend="indent"><label>(4)</label> Τρίμετρον δὲ ἀκατάληκτον τὸ τούτου περιττεῦον συλλαβῇ τῇ τελευταίᾳ, καλούμενον δὲ Ἀλκαϊκὸν δωδεκασύλλαβον, οἷον (<bibl xml:lang="lat">Alc. 55</bibl>) ἰόπλοκ’, ἁγνά, μελλιχόμειδε Σαπφοῖ, οὗ κανὼν οὗτος. 
+         <quote type="blockquote">αβαβ ββαα βαβαᵝ <lb/>ββαβ αβαα βαββᵅ</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="5"> 
+         <p rend="indent"><label>(5)</label> Τετράμετρον δὲ καταληκτικὸν ἐπιωνικόν, ὃ τὴν μὲν πρώτην ἔχει ἰαμβικήν, ἤτοι ἑξάσημον ἢ ἑπτάσημον, τὴν δὲ δευτέραν ἰωνικὴν ἢ δευτέραν παιωνικήν, τὴν δὲ τρίτην τροχαϊκὴν ἑξάσημον ἢ ἑπτάσημον, εἶτα τὴν ἐκ τροχαίου καὶ τῆς ἀδιαφόρου κατάκλειδα, οἷον 
+         <quote type="blockquote">τοοῦτος εἰς Θήβας πάϊς ἁρμάτεσσ’ ὀχήμενος</quote> (<bibl xml:lang="lat">fr. lyr. ad. 51</bibl>) - 
+         <quote type="blockquote">Μᾶλις μὲν ἔννη λεπτὸν ἔχοισ’ ἐπ’ ἀτράκτῳ λίνον (<bibl xml:lang="lat">fr. lyr. ad. 52</bibl>).</quote> <pb facs="hephaestionisenc00hephuoft_0080"/> κανὼν δὲ αὐτοῦ 
+         <quote type="blockquote">αβαβ ββαα βαβα βααᵝ <lb/>ββαβ αβαα βαββ βαβᵅ.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="6"> 
+         <p rend="indent"><label>(6)</label> Ἀπ’ ἐλάσσονος δὲ ἐπιωνικὸν τρίμετρον ἀκατάληκτόν ἐστι παρ’ Ἀλκμᾶνι, ὃ τὴν μὲν πρώτην ἔχει ἰαμβικὴν ἑξάσημον ἢ ἑπτάσημον, τὰς δὲ ἑξῆς δύο ἰωνικὰς ἑξασήμους καθαράς, οἷον 
+         <quote type="blockquote">περισσόν. αἳ γὰρ Ἀπόλλων ὁ Λύκηος</quote> (<bibl xml:lang="lat">Alcm. 83</bibl>) ― 
+         <quote type="blockquote">Ἰνὼ σαλασσομέδοισ’ ἅν ἀπὸ μάσδων (<bibl xml:lang="lat">Alcm. 84</bibl>).</quote> κανὼν δὲ αὐτοῦ 
+         <quote type="blockquote">αβαβ ααββ ααββᵅ <lb/>ββαβ ααββ ααββᵅ.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:14" n="7"> 
+         <p rend="indent"><label>(7)</label> Καθαροῦ μὲν ὄντος τοῦ ἰωνικοῦ τοῦτο· ἀνακλωμένου δὲ ὄντος αὐτοῦ, προταχθεῖσα ἰαμβικὴ ἑξάσημος ἢ ἑπτάσημος ποιεῖ τὸ τοιοῦτον, οἷον παρὰ Σαπφοῖ 
+         <quote type="blockquote">ἔχει μὲν Ἀνδρομέδα καλὰν ἀμοιβάν (<bibl>58</bibl>) ― <lb/>Ψάπφοι τί τὰν πολύολβον Ἀφροδίταν (<bibl>59</bibl>)·</quote> κανὼν δὲ αὐτοῦ 
+         <quote type="blockquote">αβαβ ααβα βαββᵅ <lb/>ββαβ ααβα βαββᵅ.</quote></p> </div> </div><pb facs="hephaestionisenc00hephuoft_0081"/> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="15"> <head rend="center">Περὶ ἀσυναπτήτων.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="1"> 
+         <p rend="indent"><label>(1)</label> Γίνεται δὲ καὶ ἀσυνάρτητα, ὁπόταν δύο κῶλα μὴ δυνάμενα ἀλλήλοις συναρτηθῆναι μηδὲ ἕνωσιν ἔχειν ἀντὶ ἑνὸς μόνου παραλαμβάνηται στίχου.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="2"> 
+         <p rend="indent"><label>(2)</label> Πρῶτος δὲ καὶ τούτοις Ἀρχίλοχος κέχρηται· πῆ μὲν γὰρ ἐποίησεν ἔκ τε ἀναπαιστικοῦ ἑφθημιμεροῦς καὶ τροχαϊκοῦ ἡμιολίου τοῦ καλουμένου ἰθυφαλλικοῦ (<bibl xml:lang="lat">Arch. 79</bibl>) 
+         <quote type="blockquote">Ἐρασμονίδη Χαρίλαε, χρῆμά τοι γελοῖον.</quote></p> 
+         <p rend="indent">Τοῦτο δὲ οἱ μετ’ αὐτὸν οὐχ ὁμοίως αὐτῷ ἔγραψαν. οὗτος μὲν γὰρ τῇ τε τομῇ δι’ ὅλου κέχρηται [τοῦ ἑφθημιμεροῦς] καὶ σπονδείους παρέλαβεν ἐν τῷ ἀναπαιστικῷ κώλῳ, οἷον (<bibl xml:lang="lat">Arch. 81</bibl>) 
+         <quote type="blockquote">ἀστῶν δ’ οἱ μὲν κατ’ ὄπισθεν ἦσαν· οἱ δὲ πολλοί·</quote> οἱ δὲ μετ’ αὐτὸν τῇ μὲν τομῇ ἀδιαφόρως ἐχρήσαντο, ὥσπερ Κρατῖνος (<bibl>323</bibl>) 
+         <quote type="blockquote">χαῖρ’, ὦ μέγ’ ἀχρειόγελως ὅμιλε ταῖς ἐπίβδαις, <lb/>τῆς ἡμετέρας σοφίας κριτὴς ἄριστε πάντων· <lb/>εὐδαίμον’ ἔτικτέ σε μήτηρ ἰκρίων ψόφησις·</quote> (ἐνταῦθα γὰρ ὁμοίως τὸ τρίτον τέτμηται τοῖς Ἀρχιλοχείοις, τὰ δὲ πρὸ αὐτοῦ δύο πρὸ συλλαβῆς.)</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="3"> <p><label>(3)</label> καὶ μέντοι καὶ τοὺς σπονδείους παρῃτήσαντο τοὺς ἐν <pb facs="hephaestionisenc00hephuoft_0082"/> τῷ μέσῳ οἱ μετὰ τὸν Ἀρχίλοχον, ὡς οὐκ ἀναπαιστικὸν ἡγούμενοι, ἀλλὰ προσοδιακόν, τὸ ἐξ ἰωνικῆς καὶ χοριαμβικῆς, τῆς ἰωνικῆς καὶ βραχεῖαν τὴν πρώτην δεχομένης. δύναται δὲ καὶ εἰς τρίτον ἀνάπαιστον διαιρεῖσθαι, εἰ ἀπὸ σπονδείου ἄρχοιτο, οἷον τὸ Σαπφοῦς (<bibl>82</bibl>) 
+         <quote type="blockquote">αὐτὰ δὲ σὺ Καλλιόπα,</quote> τοῦ προσοδιακοῦ ὂν καὶ τοῦτο εἶδος [τὸ ἐξ ἰωνικοῦ καὶ χοριαμβικοῦ συγκείμενον].</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="4"> <p><label>(4)</label> τὸ τοίνυν ἀναπαιστικὸν εἴ τις οὕτω διαιροῖτο, εὑρήσει τῷ προσοδιακῷ ἐφαρμόζον. ἐὰν μὲν γὰρ σπονδεῖον ἔχῃ τὸν πρῶτον, τοὺς δὲ ἑξῆς ἀναπαίστους, τὰς τοῦ δευτέρου ἀναπαίστου δύο βραχείας προσθεὶς τῷ σπονδείῳ ποιήσεις ἰωνικὸν ἀπὸ μείζονος, τὸν δ’ ἑξῆς χορίαμβον. δύναται δὲ κἂν ἀπὸ ἀναπαίστου κἂν ἀπὸ δακτύλου ἄρχηται τὸ ἀναπαιστικὸν ὡς ἰωνικὸν λελυμένον παραλαμβάνεσθαι, τῶν ἑξῆς χοριάμβου γινομένων. διὰ τοῦτο καὶ ἀπὸ ἰάμβου ἄρχονται ἐν τῷ ἀναπαιστικῷ, ὥσπερ Ἀρχίλοχος ἐν τῷ 
+         <quote type="blockquote">Ἐρασμονίδη Χαρίλαε,</quote> ὡς δυναμένου καὶ τοῦ παιῶνος δευτέρου ἀντὶ ἰωνικοῦ τοῦ ἀπὸ μείζονος παραλαμβάνεσθαι [ἵνα μὴ ἀπεοικὸς τῷ προσοδιακῷ γένηται τὸ ἀναπαιστικόν].</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="5"> 
+         <p rend="indent"><label>(5)</label> Παραιτοῦνται τοίνυν τοὺς ἐν μέσῳ σπονδείους, ἵνα <pb facs="hephaestionisenc00hephuoft_0083"/> μὴ ἀπεοικὸς τῷ προσοδιακῷ γένηται τὸ ἀναπαιστικὸν, ὅπερ ἐστὶν ἐξ ἰωνικοῦ καὶ χοριαμβικοῦ. δύναται δέ τις βιαζόμενος καὶ ἑξῆς ὄντων δύο σπονδείων, ὡς παρὰ Ἀρχιλόχῳ 
+         <quote type="blockquote">ἀστῶν δ’ οἱ μὲν κατ’ ὄπισθεν</quote> τὸν πρῶτον μολοσσὸν ποιήσας καὶ λαβὼν αὐτὸν ἀντὶ ἰωνικοῦ τοῦ ἀπὸ μείζονος, τὸν ἑξῆς χορίαμβον ποιῆσαι, εἰ μὴ ἄρα ἐν τῷ προσοδιακῷ ἡ συναίρεσις τοῦ ἰωνικοῦ, τουτέστιν ὁ μολοσσός, μὴ ἐμπίπτοι.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="6"> 
+         <p rend="indent"><label>(6)</label> Ὑπονοήσειε δ’ ἄν τις καὶ τρίτην διαφορὰν εἶναι τῷ Ἀρχιλόχῳ πρὸς τοὺς μετ’ αὐτόν, καθ’ ἣν ἄνα παίστῳ δοκεῖ τῷ πρώτῳ χρῆσθαι, 
+         <quote type="blockquote">ἐρέω πολὺ φίλταθ’ ἑταίρων, τέρψεαι δ’ ἀκούων (<bibl>80</bibl>)</quote> ― 
+         <quote type="blockquote">φιλέειν στυγνόν περ ἐόντα, μηδὲ διαλέγεσθαι (<bibl>81</bibl>)</quote>, ᾧ οὐκ ἐχρήσαντο ἐκεῖνοι. φαίνεται δὲ οὐδ’ αὐτὸς κεχρημένος· δύναται γὰρ ἀμφότερα κατὰ συνεκφώνησιν εἰς ἴαμβον περιίστασθαι, ἡ δὲ φαντασία τοῦ ἀναπαίστου γέγονε διὰ τὴν ἰωνικὴν ἐν ἑκατέρῳ διαίρεσιν· ὥστε τὰς προειρημένας μόνας δύο διαφορὰς εἶναι τοῖς νεωτέροις πρὸς τὸν ἰαμβοποιὸν Ἀρχίλοχον.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="7"> <p><label>(7)</label> Κρατῖνος δὲ ὅταν λέγῃ ἐν τοῖς Ἀρχιλόχοις (<bibl>10</bibl>) 
+         <quote type="blockquote">Ἐρασμονίδη Βάθιππε τῶν ἀωρολείων,</quote> τοῦτο τὸ μέτρον ἀγνοεῖ ὅτι οὐκ ἄντικρυς μιμεῖται τοῦ Ἀρχιλόχου τὸν Ἐρασμονίδην.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="8"> 
+         <p rend="indent"><label>(8)</label> Ἐν μὲν δὴ τοῦτο τῶν παρ’ Ἀρχιλόχῳ ἀσυναρτήτων· <pb facs="hephaestionisenc00hephuoft_0084"/> ἄλλο δὲ τὸ ἐκ δακτυλικῆς τετραποδίας καὶ τοῦ αὐτοῦ ἰθυφαλλικοῦ (<bibl xml:lang="lat">Archil. 100</bibl>) 
+         <quote type="blockquote">οὐκέθ’ ὁμῶς θάλλεις ἁπαλὸν χρόα· κάρφεται γὰρ ἤδη·</quote> γίνεται δὲ ὁ τελευταῖος τῆς τετραποδίας διὰ τὴν ἐπὶ ἀδιάφορον καὶ κρητικός (<bibl xml:lang="lat">Archil. 115</bibl>) 
+         <quote type="blockquote">καὶ βήσσας ὀρέων δυσπαιπάλους οἷος ἦν ἐπ’ ἤβης.</quote> τοῦτο παρὰ τοῖς νεωτέροις πολὺ τὸ μέτρον ἐστίν, ὥσπερ καὶ παρὰ Καλλιμάχῳ (<bibl>191</bibl>) 
+         <quote type="blockquote">τόν με παλαιστρίταν ὀμόσας θεὸν ἑπτάκις φιλήσειν,</quote> παρὰ δὲ Κρατίνῳ ἐν τοῖς Σεριφίοις (<bibl>211</bibl>) οὐκέτι ἀκατάληκτόν ἐστι τὸ δακτυλικὸν τὸ ἡγούμενον τοῦ ἰ θυφαλλικοῦ, ἀλλὰ καταληκτικὸν εἰς δισύλλαβον, 
+         <quote type="blockquote">χαίρετε πάντες ὅσοι πολύβωτον ποντίαν Σέριφον.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="9"> 
+         <p rend="indent"><label>(9)</label> Τρίτον δέ ἐστι παρὰ Ἀρχιλόχῳ ἀσυνάρτητον ἐκ δακτυλικοῦ πενθημιμεροῦς καὶ ἰαμβικοῦ διμέτρου ἀκαταλήκτου (<bibl>85</bibl>) 
+         <quote type="blockquote">ἀλλά μ’ ὁ λυσιμελής, ὠταῖρε, δάμναται πόθος.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="10"> 
+         <p rend="indent"><label>(1Ο)</label> Ἔνδοξόν ἐστι ἐπισύνθετον καὶ τὸ διπενθημιμερὲς τὸ ἐγκωμιολογικὸν καλούμενον, ὅπερ ἐστὶν ἐκ δακτυλικοῦ πενθημιμεροῦς καὶ ἰαμβικοῦ τοῦ ἴσου, ᾧ κέχρηται μὲν καὶ Ἀλκαῖος ἐν ἄσματι (94), οὗ ἡ ἀρχή 
+         <quote type="blockquote">Ἣ ῥ’ ἔτι Διννομένῃ τῶ Τυρρακῄω <lb/>τἄρμενα λαμπρὰ κέοντ’ ἐν Μυρσινῄω,</quote> <pb facs="hephaestionisenc00hephuoft_0085"/> κέχρηται δὲ καὶ Ἀνακρέων ἐν πλείοσιν ἄσμασιν (<bibl>70</bibl>) 
+         <quote type="blockquote">Ὀρσόλοπος μὲν Ἄρης φιλέει μεναιχμάν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="11"> 
+         <p rend="indent"><label>(11)</label> Τὸ δὲ ἀντεστραμμένον τούτῳ ἰαμβέλεγος καλεῖται· τούτῳ δὲ ἐν συνεχείᾳ οὐκ ἴσμεν τινὰ κεχρημένον, διεσπαρμένως δέ· 
+         <quote type="blockquote">πρῶτον μὲν εὔβουλον Θέμιν οὐρανίαν.</quote> (<bibl xml:lang="lat">Pind. 30</bibl>, <bibl>1</bibl>) ― 
+         <quote type="blockquote">κείνων λυθέντες σαῖς ὑπὸ χερσὶν ἄναξ</quote> (<bibl xml:lang="lat">Pind. 35</bibl>).</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="12"> 
+         <p rend="indent"><label>(12)</label> Γίνεται δὲ καὶ τριπενθημιμερὲς ἐκ τούτων τὸ καλούμενον Πλατωνικόν, ἐν ᾧ τὰ νὲν ἑκατέρωθεν δύο δακτυλικά εἰσι πενθημιμερῆ, τὸ δὲ μέσον ἰαμβικόν· κέχρηται δὲ αὐτῷ Πλάτων ἐν Χαντρίαις (<bibl>90</bibl>) 
+         <quote type="blockquote">χαῖρε παλαιογόνων ἀνδρῶν θεατῶν ξύλλογε παντοσόφων.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="13"> 
+         <p rend="indent"><label>(13)</label> Ἀντεστραμμένον δέ ἐστι τούτῳ τὸ Πινδαρικὸν καλούμενον, 
+         <quote type="blockquote">ὃς καὶ τυπεὶς ἁγνῷ πελέκει τέκετο ξανθὰν Ἀθάναν</quote> (<bibl xml:lang="lat">Pind. 34</bibl>) ― 
+         <quote type="blockquote">σοφοὶ δὲ καὶ τὸ μηδὲν ἄγαν ἔπος αἴνησαν περισσῶς</quote> (<bibl xml:lang="lat">Pind 216</bibl>).</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="14"> 
+         <p rend="indent"><label>(14)</label> Τοῦ δὲ δακτυλικοῦ πενθημιμεροῦς δὶς λαμβανομένου γίνεται τὸ ἐλεγεῖον· ἀλλὰ τὸ μὲν δεύτερον αὐτοῦ μέρος ἑπτασύλλαβον ἀεὶ μένει, ἐκ δύο δακτύλων καὶ συλλαβῆς, τὸ δὲ πρότερον κινουμένους ἔχει τοὺς δύο πόδας, ὥστε ἢ δακτύλους αὐτοὺς γίνεσθαι ἢ σπονδείους, ἢ τὸν μὲν πρότερον δάκτυλον, τὸν δὲ δεύτερον σπονδεῖον· ἢ ἀνάπαλιν τὸν μὲν πρότερον <pb facs="hephaestionisenc00hephuoft_0086"/> σπονδεῖον, τὸν δὲ δεύτερον δάκτυλον· παρ’ ἣν αἰτίαν τὸ μὲν δεύτερον ἀεὶ διπλασιαζόμενον τὸ ἐλεγεῖον ποιεῖ, τὸ δὲ πρότερον οὐκέτι, ἐὰν μὴ ἐκ δύο δακτύλων συνεστήκῃ· οἷον (<bibl xml:lang="lat">Callim. 488</bibl>) 
+         <quote type="blockquote">Νήϊδες οἳ Μούσης οὐκ ἐγένοντο φίλοι</quote> τὸ μὲν δεύτερον διπλασιασθὲν ποιεῖ ἐλεγεῖον, τὸ δὲ πρότερον οὔ· ὥστε αὐτὸ ποτὲ μὲν τεσσαρεσκαιδεκασύλλαβον γίνεσθαι, ποτὲ δὲ τρισκαιδεκασύλλαβον, ποτὲ δὲ δωδεκασύλλαβον.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="15"> 
+         <p rend="indent"><label>(15)</label> Καὶ τοῦ μὲν τεσσαρεσκαιδεκασυλλάβου ἓν σχῆμα (<bibl xml:lang="lat">Call. 489</bibl>) 
+         <quote type="blockquote">παίσατε, τῶν δ’ ἐτέων ἡ δεκὰς οὐκ ὀλίγη.</quote> ὁμοίως δὲ τοῦ δωδεκασυλλάβου ἕν (<bibl xml:lang="lat">Call. 490</bibl>) τίκτεσθαι· βροντᾶν δ’ οὐκ ἐμόν, ἀλλὰ Διός. τοῦ δὲ τρισκαιδεκασυλλάβου δύο σχήματα· ποτὲ μὲν πρῶτος ὁ δάκτυλος (<bibl xml:lang="lat">Call. 488</bibl>) 
+         <quote type="blockquote">Νήϊδες οἳ Μούσης οὐκ ἐγένοντο φίλοι.</quote> ποτὲ δὲ δεύτερος (<bibl xml:lang="lat">Call. 491</bibl>) 
+         <quote type="blockquote">ῥέζειν, καὶ στεφέων εὔαδε τῷ Παρίῳ.</quote></p> 
+         <p rend="indent">Δεῖ δὲ τὸ ἐλεγεῖον τέμνεσθαι πάντως καθ’ ἕτερον τῶν πενθημιμερῶν· εἰ δὲ μή, ἔσται πεπλημμελημένον, οἷον τὸ Καλλιμάχου (<bibl>192</bibl>) ἱερά, νῦν δὲ Διοσκουρίδεω γενεή.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="16"> 
+         <p rend="indent"><label>(16)</label> Ἄλλο ἀσυνάρτητον [ὁμοίως] κατὰ τὴν πρώτην ἀντιπάθειαν, ἐξ ἰαμβικοῦ διμέτρου ἀκαταλήκτου <pb facs="hephaestionisenc00hephuoft_0087"/> καὶ τροχαϊκοῦ ἑφθημιμεροῦς, τοῦ καλουμένου Εὐριπιδείου, οἷόν ἐστι τὸ ἐν τοῖς ἀναφερομένοις εἰς Ἀρχίλοχον Ἰοβάκχοις (<bibl>120</bibl>) 
+         <quote type="blockquote">Δήμητρος ἁγνῆς καὶ Κόρης τὴν πανήγυριν σέβων.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="17"> 
+         <p rend="indent"><label>(17)</label> Ἄλλο τούτου ἔλαττον παρὰ τὴν τελευταίαν συλλαβὴν τὸ καλούμενον Εὐριπίδειον τεσσαρεσκαιδεκασύλλαβον, οἷον παρὰ μὲν αὐτῷ Εὐριπίδῃ (<bibl xml:lang="lat">fr. 929</bibl>) Ἕῷος ἡνίχ’ ἱππότας ἐξέλαμψεν ἀστήρ· παρὰ δὲ Καλλιμάχῳ (<bibl>116</bibl>) 
+         <quote type="blockquote">ἔνεστ’ Ἀπόλλων τῷ χορῷ· τῆς λύρης ἀκούω· <lb/>καὶ τῶν Ἐρώτων ᾐσθόμην· ἔστι κἀφροδίτη.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="18"> 
+         <p rend="indent"><label>(18)</label> Ἄλλο ἀσυνάρτητον ὁμοίως κατὰ τὴν πρώτην ἀντιπάθειαν, ἐκ τροχαικοῦ διμέτρου ἀκαταλήκτου καὶ ἰαμβικοῦ ἑφθημιμεροῦς, ὅπερ ἐὰν παραλλάξῃ τὴν τομήν, γίνεται τροχαϊκὸν προκαταληκτικόν (<bibl xml:lang="lat">Sapph. 85</bibl>), 
+         <quote type="blockquote">ἔστι μοι καλὰ πάϊς χρυσέοισιν ἀνθέμοισιν <lb/>ἐμφερῆ ἔχοισα μορφάν, Κλεηὶς ἀγαπατά, <lb/>ἀντὶ τᾶς ἐγὼ οὐδὲ Λυδίαν πᾶσαν οὐδ’ ἐραννάν</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="19"> 
+         <p rend="indent"><label>(19)</label> τούτων δὲ τὸ μὲν δεύτερον δῆλόν ἐστιν ἀπὸ τῆς τομῆς ὅτι οὕτως σύγκειται ὡς προείρηται, ἐκ τοῦ τροχαϊκοῦ διμέτρου ἀκαταλήκτου καὶ τοῦ ἑφθημιμεροῦς ἰαμβικοῦ, τὸ δὲ πρῶτον, διὰ τὸ πρὸ συλλαβῆς ἔχειν τὴν τομήν, ἐγένετο προκαταληκτικόν, ἐκ τροχαϊκοῦ ἑφθημιμεροῦς, 
+         <quote type="blockquote">ἔστι μοι καλὰ πάϊς,</quote> <pb facs="hephaestionisenc00hephuoft_0088"/> καὶ διμέτρου ἀκαταλήκτου τοῦ 
+         <quote type="blockquote">χρυσέοισιν ἀνθέμοισιν·</quote> τὸ δὲ τρίτον ἐξ ὑπερκαταλήκτου, 
+         <quote type="blockquote">ἀντὶ τᾶς ἐγὼ οὐδὲ Λυδίαν</quote> καὶ βραχυκαταλήκτου, 
+         <quote type="blockquote">πᾶσαν οὐδ’ ἐραννάν.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="20"> 
+         <p rend="indent"><label>(20)</label> Ἀνακρέων δὲ οὐκ ἰαμβικῷ ἀλλὰ χοριαμβικῷ ἐπιμίκτῳ πρὸς τὰς ἰαμβικὰς ἐπήγαγε τὸ ἰθυφαλλικόν (<bibl>30</bibl>) 
+         <quote type="blockquote">τὸν λυροποιὸν ἠρόμην Στράττιν εἰ κομήσει.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="21"> 
+         <p rend="indent"><label>(21)</label> Τούτου δὲ μεῖζόν ἐστι συλλαβῇ τῇ τελευταίᾳ τὸ καλούμενον Κρατίνειον· ἔστι γὰρ ἐκ χοριαμβικοῦ ἐπιμίκτου, τοῦ τὴν δευτέραν ἰαμβικὴν ἔχοντος καὶ τροχαικοῦ ἑφθημιμεροῦς· 
+         <quote type="blockquote">Εὔιε κισσοχαῖτ’ ἄναξ, χαῖρ’, ἔφασκ’ Ἐκφαντίδης (<bibl xml:lang="lat">frg. 324ᵃ</bibl>) ― <lb/>πάντα φορητά, πάντα τολμητὰ τῷδε τῷ χορῷ (<bibl>324ᵇ</bibl>) ― <lb/>πλὴν Ξενίου ὁμονισι καὶ Σχοινίωνος ὡ Χάρον (<bibl>324ᶜ</bibl>). ―</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="22"> 
+         <p rend="indent"><label>(22)</label> Τὸ μὲν οὖν καθαρὸν Κρατίνειον τοιοῦτόν ἐστι· πολυσχημάτιστον δὲ αὐτὸ πεποιήκασιν οἱ κωμικοί. τοὺς γὰρ σπονδείους τοὺς ἐμπίπτοντας ἐν τοῖς ἰαμβικοῖς καὶ τοῖς τροχαϊκοῖς παρὰ τάξιν παραλαμβάνουσιν ἐν ταῖς μέσαις συζυγίαις, τῇ τροχαϊκῇ καὶ τῇ ἰαμβικῇ. Εὔπολις δὲ ἐν τοῖς Ἀστρατεύτοις καὶ ἀτακτοτάτως συνέθηκε τὸ εἶδος· πῆ μὲν γὰρ τοιαῦτα ποιεῖ (<bibl>37</bibl>) 
+         <quote type="blockquote">ἄνδρες ἑταῖροι, δεῦρ’ ἤδη τὴν γνώμην προσίσχετε, <lb/>εἰ δυνατόν, καὶ μή τι μεῖζον πράττουσα τυγχάνει,</quote> <pb facs="hephaestionisenc00hephuoft_0089"/> πῆ δὲ τοιαῦτα (<bibl xml:lang="lat">Eup. 38</bibl>) 
+         <quote type="blockquote">καὶ ξυνεγιγόμην ἀεὶ τοῖς ἀγαθοῖς φάγροισιν,</quote> ὥσθ’ ὅλον αὐτὸ χοριαμβικὸν ἐπίμικτον γενέσθαι, ὅμοιον Ἀνακρεοντείῳ τῷδε (<bibl xml:lang="lat">Anacr. 22</bibl>) 
+         <quote type="blockquote">Σίμαλον εἶδον ἐν χορῷ πηκτίδ’ ἔχοντα καλήν,</quote> πῆ δὲ καὶ ἄλλοις ἐχρήσατο λίαν ἀτάκτοις σχήμασι.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="23"> 
+         <p rend="indent"><label>(23)</label> Καὶ τὸ ἐκ τῶν ἀντισπαστικῶν δὲ καταληκτικῶν διμέτρων δικατάληκτον, ὃ Φερεκράτης ἑνώσας σύμπτυκτον ἀνάπαιστον καλεῖ ἐν τῇ Κοριαννοῖ (<bibl>79</bibl>) 
+         <quote type="blockquote">ἄνδρες πρόσχετε τὸν νοῦν ἐξευρήματι καινῷ <lb/>συμπτύκτοις ἀναπαίστοις.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="24"> 
+         <p rend="indent"><label>(24)</label> Καὶ τὸ ἐκ τῶν ἰαμβικῶν ἑφθημιμερῶν δικατάληκτον Καλλίμαχος (<bibl xml:lang="lat">epigr. 39</bibl>, <bibl>1</bibl>) 
+         <quote type="blockquote">Δήμητρι τῇ πυλαίῃ τῇ τοῦτον οὐκ Πελασγῶν,</quote> ὅπερ προέταξεν ἐπισυνθέτου, τοῦ ἐκ δακτυλικῆς τετραποδίας καὶ ἰθυφαλλικοῦ, τοῦδε (<bibl xml:lang="lat">ep. 39</bibl>, <bibl>2</bibl>) 
+         <quote type="blockquote">Ἀκρίσιος τὸν νηὸν ἐδείματο· ταῦθ’ ὁ Ναυκρατίτης.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="25"> 
+         <p rend="indent"><label>(25)</label> Καὶ τὸ ἐξ ἰθυφαλλικῶν δύο ἡ Σαπφὼ πεποίηκε (<bibl>84</bibl>) 
+         <quote type="blockquote">δεῦρο δηῦτε Μοῖσαι χρύσεον λιποῖσαι.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:15" n="26"> 
+         <p rend="indent"><label>(26)</label> Καὶ τὸ ἐκ χοριαμβικῶν ἑφθημιμερῶν τῶν εἰς τὴν ἰαμβικὴν κατάκλειδα, ἡ αὐτὴ ποιήτρια (<bibl xml:lang="lat">Sapph. 99</bibl>), 
+         <quote type="blockquote">ὄλβιε γαμβρέ, σοὶ μὲν δὴ γάμος, ὡς ἄραο. <lb/>ἐκτετέλεστ’, ἔχης δὲ παρθένον, ἂν ἄραο·</quote> <pb facs="hephaestionisenc00hephuoft_0090"/> κἄσθ’ ὅπου συνῆψε τὴν λέξιν (<bibl xml:lang="lat">Sapph. 100</bibl>) 
+         <quote type="blockquote">μελλίχροος δ’ ἐπ’ ἱμερτῷ κέχυται προσώπῳ.</quote> Τοσαῦτα καὶ περὶ τῶν ἀσυναρτήτων.</p> </div> </div> 
+         <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1" n="16"> <head rend="center">Περὶ πολυσχηματίστων.</head> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:16" n="1"> 
+         <p rend="indent"><label>(1)</label> Πολυσχημάτιστα δὲ καλεῖται ὅσα κατ’ ἐπιλογισμὸν μὲν οὐδένα πλῆθος ἐπιδέχεται σχημάτων, κατὰ προαίρεσιν δὲ ἄλλως τῶν χρησαμένων ποιητῶν· τούτων δ’ ἐπισημότατά ἐστι τάδε.</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:16" n="2"> 
+         <p rend="indent"><label>(2)</label> Τὸ Πριάπειον, οὐ μόνον ἰαμβικῇ τῇ δευτέρᾳ χρώμενον, ἀλλὰ καὶ χοριαμβικῇ· καὶ τὸν ἀντίσπαστον ἔσθ’ ὅτε, τὸν πρῶτον τοῦ παντὸς μέτρου, εἰς σπονδεῖον περαιοῦσιν, ἐάν τε ἀπὸ ἰάμβου ἄρχηται, ἐάν τε ἀπὸ τροχαίου, κατὰ τὸ δεδομένον, ἐάν τε ἀπὸ σπονδείου, οἷον παρ’ Εὐφορίωνι τῷ Χερρονησιώτῃ (<bibl xml:lang="lat">Meineke: Anal. Alex. p. 341</bibl>) 
+         <quote type="blockquote">οὐ βέβηλος, ὦ τελεταὶ τοῦ νέου Διονύσου, <lb/>κἀγὼ δ’ ἐξ εὐεργεσίης ὡργιασμένος ἥκω, <lb/>ὁδεύων Πηλουσιακὸν κνεφαῖος παρὰ τέλμα.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:16" n="3"> 
+         <p rend="indent"><label>(3)</label> Ὁμοίως δὲ καὶ ἐπὶ τῶν Γλυκωνείων τοιαῦτα σχήματα παραλαμβάνεται, οἷον ἐν τοῖς Κορίννης (<bibl>20</bibl>) 
+         <quote type="blockquote">καλὰ γέροι’ ἀεισομένα <lb/>Ταναγρίδεσσι λευκοπέπλοις. <pb facs="hephaestionisenc00hephuoft_0091"/> <lb/>μέγα δ’ ἐμὴ γέγαθε πόλις <lb/>λιγουροκωτίλαις ἐνοπαῖς.</quote> ὧδε καὶ τόδε 
+         <quote type="blockquote">καὶ πεντήκοντ’ οὑψιβίας</quote> (<bibl xml:lang="lat">Cor. 13</bibl>). ἔτι δὲ καὶ πλείοσιν αὕτη κέχρηται σχήμασιν (<bibl xml:lang="lat">Cor. 14―18</bibl>) 
+         <quote type="blockquote">δούρατος ὥστ’ ἐφ’ ἵππω. ― <lb/>κατὰ μὲν βριμούμενοι. ― <lb/>πόλιν δ’ ἐπράθομεν. ― <lb/>† προφανεὶς· γλούκου δέ τις ᾄδων. ― <lb/>πελέκεσσι δονεῖται. ―</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:16" n="4"> 
+         <p rend="indent"><label>(4)</label> Τάχα δὲ καὶ τὸ κωμικόν [τὸ] καλούμενον ἐπιωνικὸν πολυσχημάτιστον συνέθεσαν· μάλιστα δ’ ἐν αὐτῷ ἀταξία πολλή, ἡ τοὺς σπονδείους ἐπ’ ἀρτίου χώρας ἔχουσα τῶν ἰαμβικῶν συζυγιῶν, οἷον παρ’ Εὐπόλιδι ἐν Χρυσῷ Γένει (<bibl>290</bibl>) 
+         <quote type="blockquote">ὦ καλλίστη πόλι πασῶν ὅσας Κλέων ἐφορᾷ, <lb/>ὡς εὐδαίμων πρότερόν τ’ ἦσθα, νῦν δὲ μᾶλλον ἔσῃ.</quote></p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:16" n="5"> 
+         <p rend="indent"><label>(5)</label> Καὶ τὸ Εὐπολίδειον [τὸ] καλούμενον ἐπιχοριαμβικὸν πολυσχημάτιστόν ἐστιν, ἐν ᾧ τὰς τροχαϊκὰς παρὰ τάξιν ποιοῦσι δέχεσθαι τὸν σπονδεῖον· ― ἐνίοτε δὲ καὶ ἀντισπαστικὸν καθαρὸν ποιοῦσιν ― οἷον <pb facs="hephaestionisenc00hephuoft_0092"/> 
+         <quote type="blockquote">εὐφράνας ἡμᾶς ἀπέπεμπ’ οἴκαδ’ ἄλλον ἄλλοσε</quote> (<bibl xml:lang="lat">frg. com. ad. 53</bibl>). 
+         <quote rend="merge">ὁ σώφρων τε χὠ καταπύγων ἄριστ’ ἠκουσάτην</quote> (<bibl xml:lang="lat">Arist. Nub. 529</bibl>).</p> </div> 
+         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1402.tlg001.1st1K-grc1:16" n="6"> 
+         <p rend="indent"><label>(6)</label> Καὶ τὸ Κρατίνειον δὲ τὸ ἀσυνάρτητον ἐκ χοριαμβικοῦ καὶ τροχαικοῦ πολυσχημάτιστόν ἐστιν. ἀρκέσει τοῦτο δεῖξαι ἡ παράβασις ἡ ἐν τοῖς Ἀστρατεύτοις Εὐπόλιδος πᾶσα, ἵνα μὴ νῦν μηκύνωμεν παραδείγματα παρατιθέμενοι.</p> 
+         <p rend="indent">Τοσαῦτα περὶ τῶν μέτρων, περὶ δὲ ποιήματος ἑξῆς ῥητέον.</p> </div> </div> </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Fragmenta</title>
+                <author xml:lang="lat">Prodicus</author>
+                <editor>Hermann Diels</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Sophia Elzie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Alessandro Buccheri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Valia Chotou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Domi Couvet</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dimitra Fylaktopoulou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Arnie He</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Elsa Karafyllidi</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Anatasios Koletsis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Theodoros Pazarloglou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Celia Prescott-Decie</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dora Profyri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Panagiotis Sotiroudis</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zeyu Wen</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>  
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1634.tlg002.1st1K-grc1.xml</idno>
+                <pubPlace />
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2021-08-25"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="deu">Die Fragmente der Vorsokratiker</title>
+                        <editor>Hermann Diels</editor>
+                        <imprint>
+                            <pubPlace>Berlin</pubPlace>
+                            <publisher>Weidmann</publisher>
+                            <date>1922</date>
+                        </imprint>
+                        <biblScope unit="volume">2</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/diefragmentederv02dieluoft/page/270/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <correction>
+                    <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                </correction>
+            </editorialDecl>
+
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            <refsDecl n="CTS">
+                <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment.</p></cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+                <language ident="deu">German</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2022-05-13" who="Lisa Cerrato">File markup and header review.</change>
+        </revisionDesc>
+    </teiHeader>
+   
+    <text>
+       <body>
+        <div type="edition" n="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" xml:lang="grc">
+         <pb facs="diefragmentederv02dieluoft_0316"/>
+            <head rend="center">ΠΡΟΔΙΚΟΥ ΩΡΑΙ.</head>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="1">
+       <p rend="indent"><label>1.</label> <bibl xml:lang="lat">SCHOL. ARISTOPH. Wolk. 361</bibl> φέρεται δὲ καὶ Προδίκου βιβλίον ἐπιγραφόμενον Ὧραι, ἐν ὧι πεποίηκε τὸν Ἡρακλέα τῆι Ἀρετῆι καὶ τῆι Κακίαι συντυγχάνοντα καὶ καλούσης ἑκατέρας ἐπὶ τὰ ἤθη τὰ αὑτῆς, προσκλῖναι τῆι Ἀρετῆι τὸν Ἡρακλέα καὶ τοὺς ἐκείνης ἱδρῶτας προκρῖναι τῶν προσκαίρων τῆς κακίας ἡδονῶν. <bibl xml:lang="lat">PLAT. sympos. p. 177 B</bibl> <pb facs="diefragmentederv02dieluoft_0317"/> εἰ δὲ βούλει αὖ σκέψασθαι τοὺς χρηστοὺς σοφιστάς, Ἡρακλέους μὲν καὶ ἄλλων ἐπαίνους καταλογάδην συγγράφειν, ὥσπερ ὁ βέλτιστος Π.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="2">
+       <p rend="indent"><label>2.</label> <bibl xml:lang="lat">XENOPH. Mem. II 1, 21-34</bibl> καὶ Π. δὲ ὁ σοφὸς ἐν τῶι συγγράμματι τῶι περὶ Ἡρακλέους, ὅπερ δὴ καὶ πλείστοις ἐπιδείκνυται, ὡσαύτως περὶ τῆς ἀρετῆς ἀποφαίνεται, ὧδέ πως λέγων, ὅσα ἐγὼ μέμνημαι. φησὶ γὰρ Ἡρακλέα, ἐπεὶ ἐκ παίδων εἰς ἥβην ὡρμᾶτο, ἐν ἧι οἱ νέοι ἤδη αὐτοκράτορες γιγνόμενοι δηλοῦσιν εἴτε τὴν δι’ ἀρετῆς ὁδὸν τρέψονται ἐπὶ τὸν βίον εἴτε τὴν διὰ κακίας, ἐξελθόντα εἰς ἡσυχίαν καθῆσθαι ἀποροῦντα ποτέραν τῶν ὁδῶν τράπηται· (22) καὶ φανῆναι αὐτῶι δύο γυναῖκας προσιέναι μεγάλας, τὴν μὲν ἑτέραν εὐπρεπῆ τε ἰδεῖν καὶ ἐλευθέριον φύσει, κεκοσμημένην τὸ μὲν χρῶμα καθαρότητι, τὰ δὲ ὄμματα αἰδοῖ, τὸ δὲ σχῆμα σωφροσύνηι, ἐσθῆτι δὲ λευκῆι, τὴν δ’ ἑτέραν τεθραμμένην μὲν εἰς πολυσαρκίαν τε καὶ ἁπαλότητα, κεκαλλωπισμένην δὲ τὸ μὲν χρῶμα ὥστε λευκοτέραν τε καὶ ἐρυθροτέραν τοῦ ὄντος [δοκεῖν] φαίνεσθαι, τὸ δὲ σχῆμα ὥστε δοκεῖν ὀρθοτέραν τῆς φύσεως εἶναι, τὰ δὲ ὄμματα ἔχειν ἀναπεπταμένα, ἐσθῆτα δὲ ἐξ ἧς ἂν μάλιστα ἡ ὥρα διαλάμποι· κατασκοπεῖσθαι δὲ θαμὰ ἑαυτήν, ἐπισκοπεῖν δὲ καὶ εἴ τις ἄλλος αὐτὴν θεᾶται, πολλάκις δὲ καὶ εἰς τὴν ἑαυτῆς σκιὰν ἀποβλέπειν. (23) ὡς δ’ ἐγένοντο πλησιαίτερον τοῦ Ἡρακλέους, τὴν μὲν πρόσθεν ῥηθεῖσαν ἰέναι τὸν αὐτὸν τρόπον, τὴν δ’ ἑτέραν φθάσαι βουλομένην προσδραμεῖν τῶι Ἡρακλεῖ καὶ εἰπεῖν· Ὁρῶ σε, ὦ Ἡράκλεις, ἀποροῦντα ποίαν ὁδὸν ἐπὶ τὸν βίον τράπηι. ἐὰν οὖν ἐμὲ φίλην ποιησάμενος ἕπηι, τὴν ἡδίστην τε καὶ ῥάιστην ὁδὸν ἄξω σε, καὶ τῶν μὲν τερπνῶν οὐδενὸς ἄγευστος ἔσει, τῶν δὲ χαλεπῶν ἄπειρος διαβιώσει. (24) πρῶτον μὲν γὰρ οὐ πολέμων οὐδὲ πραγμάτων φροντιεῖς ἀλλὰ σκοπούμενος ἀεὶ ἔσηι, τί ἂν κεχαρισμένον ἢ σῖτον ἢ ποτὸν εὕροις, ἢ τί ἂν ἰδὼν ἢ ἀκούσας τερφθείης ἢ τίνων ὀσφραινόμενος ἢ ἁπτόμενος, τίσι δὲ παιδικοῖς ὁμιλῶν μάλιστ’ ἂν εὐφρανθείης, καὶ πῶς ἂν μαλακώτατα καθεύδοις, καὶ πῶς ἂν ἀπονώτατα τούτων πάντων τυγχάνοις. <pb facs="diefragmentederv02dieluoft_0318"/> (25) ἐὰν δέ ποτε γένηταί τις ὑποψία σπάνεως ἀφ’ ὧν ἔσται ταῦτα, οὐ φόβος μή σε ἀγάγω ἐπὶ τὸ πονοῦντα καὶ ταλαιπωροῦντα τῶι σώματι καὶ τῆι ψυχῆι ταῦτα πορίζεσθαι, ἀλλ’ οἷς ἂν οἱ ἄλλοι ἐργάζωνται, τούτοις σὺ χρήσει οὐδενὸς ἀπεχόμενος, ὅθεν ἂν δυνατὸν ἦι τι κερδᾶναι. πανταχόθεν γὰρ ὠφελεῖσθαι τοῖς ἐμοὶ συνοῦσιν ἐξουσίαν ἐγὼ παρέχω. (26) καὶ ὁ Ἡρακλῆς ἀκούσας ταῦτα· Ὦ γύναι, ἔφη, ὄνομα δέ σοι τί ἐστιν; ἡ δέ· Οἱ μὲν ἐμοὶ φίλοι, ἔφη, καλοῦσί με Εὐδαιμονίαν, οἱ δὲ μισοῦντές με ὑποκνιζόμενοι ὀνομάζουσι Κακίαν. (27) καὶ ἐν τούτωι ἡ ἑτέρα γυνὴ προσελθοῦσα εἶπε· Καὶ ἐγὼ ἥκω πρὸς σέ, ὦ Ἡράκλεις, εἰδυῖα τοὺς γεννήσαντάς σε καὶ τὴν φύσιν τὴν σὴν ἐν τῆι παιδείαι καταμαθοῦσα, ἐξ ὧν ἐλπίζω, εἰ τὴν πρὸς ἐμὲ ὁδὸν τράποιο, σφόδρ’ ἄν σε τῶν καλῶν καὶ σεμνῶν ἀγαθὸν ἐργάτην γενέσθαι καὶ ἐμὲ ἔτι πολὺ ἐντιμοτέραν καὶ ἐπ’ ἀγαθοῖς διαπρεπεστέραν φανῆναι. οὐκ ἐξαπατήσω δέ σε προοιμίοις ἡδονῆς, ἀλλ’ ἧιπερ οἱ θεοὶ διέθεσαν τὰ ὄντα διηγήσομαι μετ’ ἀληθείας. (28) τῶν γὰρ ὄντων ἀγαθῶν καὶ καλῶν οὐδὲν ἄνευ πόνου καὶ ἐπιμελείας οἱ θεοὶ διδόασιν ἀνθρώποις, ἀλλ’ εἴτε τοὺς θεοὺς ἵλεως εἶναί σοι βούλει, θεραπευτέον τοὺς θεούς, εἴτε ὑπὸ φίλων ἐθέλεις ἀγαπᾶσθαι, τοὺς φίλους εὐεργετητέον, εἴτε ὑπό τινος πόλεως ἐπιθυμεῖς τιμᾶσθαι, τὴν πόλιν ὠφελητέον, εἴτε ὑπὸ τῆς Ἑλλάδος πάσης ἀξιοῖς ἐπ’ ἀρετῆι θαυμάζεσθαι, τὴν Ἑλλάδα πειρατέον εὖ ποιεῖν, εἴτε γῆν βούλει σοι καρποὺς ἀφθόνους φέρειν, τὴν γῆν θεραπευτέον, εἴτε ἀπὸ βοσκημάτων οἴει δεῖν πλουτίζεσθαι, τῶν βοσκημάτων ἐπιμελητέον, εἴτε διὰ πολέμου ὁρμᾶις αὔξεσθαι καὶ βούλει δύνασθαι οὑς τε φίλους ἐλευθεροῦν καὶ τοὺς ἐχθροὺς χειροῦσθαι, τὰς πολεμικὰς τέχνας αὐτάς τε παρὰ τῶν ἐπισταμένων μαθητέον καὶ ὅπως αὐταῖς δεῖ χρῆσθαι ἀσκητέον· εἰ δὲ καὶ τῶι σώματι βούλει δυνατὸς εἶναι, τῆι γνώμηι ὑπηρετεῖν ἐθιστέον τὸ σῶμα καὶ γυμναστέον σὺν πόνοις καὶ ἱδρῶτι. (29) καὶ ἡ Κακία ὑπολαβοῦσα εἶπεν, ὥς φησι Πρόδικος· Ἐννοεῖς, ὦ Ἡράκλεις, ὡς χαλεπὴν καὶ μακρὰν ὁδὸν ἐπὶ τὰς εὐφροσύνας ἡ γυνή σοι αὕτη διηγεῖται; ἐγὼ δὲ ῥαιδίαν καὶ βραχεῖαν ὁδὸν ἐπὶ τὴν εὐδαιμονίαν ἄξω σε. (30) καὶ ἡ Ἀρετὴ εἶπεν· Ὦ τλῆμον, τί δὲ σὺ ἀγαθὸν ἔχεις; ἢ τί ἡδὺ οἶσθα μηδὲν τούτων ἕνεκα πράττειν ἐθέλουσα; ἥτις οὐδὲ τὴν τῶν ἡδέων ἐπιθυμίαν ἀναμένεις, ἀλλὰ πρὶν ἐπιθυμῆσαι πάντων ἐμπίπλασαι, πρὶν μὲν πεινῆν <pb facs="diefragmentederv02dieluoft_0319"/> ἐσθίουσα, πρὶν δὲ διψῆν πίνουσα, καὶ ἵνα μὲν ἡδέως φάγηις, ὀψοποιεῖς μηχανωμένη, ἵνα δὲ ἡδέως πίηις, οἴνους τε πολυτελεῖς παρασκευάζει καὶ τοῦ θέρους χιόνα περιθέουσα ζητεῖς, ἵνα δὲ καθυπνώσηις ἡδέως, οὐ μόνον τὰς στρωμνὰς μαλακάς, ἀλλὰ καὶ τὰς κλίνας καὶ τὰ ὑπόβαθρα ταῖς κλίναις παρασκευάζει· οὐ γὰρ διὰ τὸ πονεῖν ἀλλὰ διὰ τὸ μηδὲν ἔχειν ὅ τι ποιῆις ὕπνου ἐπιθυμεῖς· τὰ δ’ ἀφροδίσια πρὸ τοῦ δέεσθαι ἀναγκάζεις, πάντα μηχανωμένη καὶ γυναιξὶ τοῖς ἀνδράσι χρωμένη· οὕτω γὰρ παιδεύεις τοὺς ἑαυτῆς φίλους, τῆς μὲν νυκτὸς ὑβρίζουσα, τῆς δ’ ἡμέρας τὸ χρησιμώτατον κατακοιμίζουσα. (31) ἀθάνατος δὲ οὖσα ἐκ θεῶν μὲν ἀπέρριψαι, ὑπὸ δὲ ἀνθρώπων ἀγαθῶν ἀτιμάζει· τοῦ δὲ πάντων ἡδίστου ἀκούσματος, ἐπαίνου σεαυτῆς, ἀνήκοος εἶ, καὶ τοῦ πάντων ἡδίστου θεάματος ἀθέατος· οὐδὲν γὰρ πώποτε σεαυτῆς ἔργον καλὸν τεθέασαι. τίς δ’ ἄν σοι λεγούσηι τι πιστεύσειε; τίς δ’ ἂν δεομένηι τινὸς ἐπαρκέσειεν; ἢ τίς ἂν εὖ φρονῶν τοῦ σοῦ θιάσου τολμήσειεν εἶναι; οἳ νέοι μὲν ὄντες τοῖς σώμασιν ἀδύνατοί εἰσι, πρεσβύτεροι δὲ γενόμενοι ταῖς ψυχαῖς ἀνόητοι, ἀπόνως μὲν λιπαροὶ διὰ νεότητος τρεφόμενοι, ἐπιπόνως δὲ αὐχμηροὶ διὰ γήρως περῶντες, τοῖς μὲν πεπραγμένοις αἰσχυνόμενοι, τοῖς δὲ πραττομένοις βαρυνόμενοι, τὰ μὲν ἡδέα ἐν τῆι νεότητι διαδραμόντες, τὰ δὲ χαλεπὰ εἰς τὸ γῆρας ἀποθέμενοι. (32) ἐγὼ δὲ σύνειμι μὲν θεοῖς, σύνειμι δὲ ἀνθρώποις τοῖς ἀγαθοῖς· ἔργον δὲ καλὸν οὔτε θεῖον οὔτ’ ἀνθρώπειον χωρὶς ἐμοῦ γίγνεται. τιμῶμαι δὲ μάλιστα πάντων καὶ παρὰ θεοῖς καὶ παρὰ ἀνθρώποις οἷς προσήκει, ἀγαπητὴ μὲν συνεργὸς τεχνίταις, πιστὴ δὲ φύλαξ οἴκων δεσπόταις, εὐμενὴς δὲ παραστάτις οἰκέταις, ἀγαθὴ δὲ συλλήπτρια τῶν ἐν εἰρήνηι πόνων, βεβαία δὲ τῶν ἐν πολέμωι σύμμαχος ἔργων, ἀρίστη δὲ φιλίας κοινωνός. (33) ἔστι δὲ τοῖς μὲν ἐμοῖς φίλοις ἡδεῖα μὲν καὶ ἀπράγμων σίτων καὶ ποτῶν ἀπόλαυσις· ἀνέχονται γὰρ ἕως ἂν ἐπιθυμήσωσιν αὐτῶν. ὕπνος δ’ αὐτοῖς πάρεστιν ἡδίων ἢ τοῖς ἀμόχθοις, καὶ οὔτε ἀπολείποντες αὐτὸν ἄχθονται οὔτε διὰ τοῦτον μεθιᾶσι τὰ δέοντα πράττειν. καὶ οἱ μὲν νέοι τοῖς τῶν πρεσβυτέρων ἐπαίνοις χαίρουσιν, οἱ δὲ γεραίτεροι ταῖς τῶν νέων τιμαῖς ἀγάλλονται· καὶ ἡδέως μὲν τῶν παλαιῶν πράξεων μέμνηνται, εὖ δὲ τὰς παρούσας <pb facs="diefragmentederv02dieluoft_0320"/> ἥδονται πράττοντες, δι’ ἐμὲ φίλοι μὲν θεοῖς ὄντες, ἀγαπητοὶ δὲ φίλοις, τίμιοι δὲ πατρίσιν· ὅταν δ’ ἔλθηι τὸ πεπρωμένον τέλος, οὐ μετὰ λήθης ἄτιμοι κεῖνται, ἀλλὰ μετὰ μνήμης τὸν ἀεὶ χρόνον ὑμνούμενοι θάλλουσι. τοιαῦτά σοι, ὦ παῖ τοκέων ἀγαθῶν Ἡράκλεις, ἔξεστι διαπονησαμένωι τὴν μακαριστοτάτην εὐδαιμονίαν κεκτῆσθαι. (34) οὕτω πως διώικει Πρόδικος τὴν ὑπ’ Ἀρετῆς Ἡρακλέους παίδευσιν· ἐκόσμησε μέντοι τὰς γνώμας ἔτι μεγαλειοτέροις ῥήμασιν ἢ ἐγὼ νῦν.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="3">
+           <head rend="center">ΠΕΡΙ ΦΥΣΕΩΣ.</head>
+       <p rend="indent"><label>3.</label> <bibl xml:lang="mul">GALEN. de elem. I 9. (I 487 K.; 54, 21 Helmr.; vgl. 14 A 2).</bibl> <bibl xml:lang="lat">CIC. de orat. III 32, 128</bibl> <foreign xml:lang="lat">quid de Prodico Ceo, de Thrasymacho Chalcedonio, de Protagora Abderita loquar? quorum unusquisque plurimum temporibus illis etiam de natura rerum et disseruit et scripsit.</foreign> <bibl xml:lang="lat">Vgl. S. 268, 8. 28 m. Anm.</bibl></p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="4">
+       <p rend="indent"><label>4.</label> <bibl xml:lang="mul">GAL. de virt. physic. II 9 [III 195 Helmr.; vgl. XV 325 Kühn.]</bibl> Π. δ’ ἐν τῶι Περὶ φύσεως ἀνθρώπου γράμματι τὸ συγκεκαυμένον καὶ οἷον ὑπερωπτημένον ἐν τοῖς χυμοῖς ὀνομάζων φλέγμα παρὰ τὸ πεφλέχθαι τῆι λέξει μὲν ἑτέρως χρῆται, φυλάττει μέντοι τὸ πρᾶγμα κατὰ ταὐτὸ τοῖς ἄλλοις. τὴν δ’ ἐν τοῖς ὀνόμασι τἀνδρὸς τούτου καινοτομίαν ἱκανῶς ἐνδείκνυται καὶ Πλάτων <bibl xml:lang="lat">[A 13ff.]</bibl>. ἀλλὰ τοῦτό γε τὸ πρὸς ἁπάντων ἀνθρώπων ὀνομαζόμενον φλέγμα, τὸ λευκὸν τὴν χρόαν, ὃ βλένναν ὀνομάζει Π., ὁ ψυχρὸς καὶ ὑγρὸς χυμός ἐστιν οὗτος καὶ πλεῖστος τοῖς τε γέρουσι καὶ τοῖς ὁπωσδήποτε ψυγεῖσιν ἀθροίζεται, καὶ οὐδεὶς οὐδὲ μαινόμενος ἂν ἄλλο τι ἢ ψυχρὸν καὶ ὑγρὸν εἴποι ἂν αὐτόν. <bibl xml:lang="lat">Vgl. 32 A 27 [I 308, 26], 55 A 159.</bibl></p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="5">
+       <p rend="indent"><label>5.</label> <bibl xml:lang="lat">PHILODEM. de piet. c. 9, 7 p. 75 G.</bibl> Περσαῖος δὲ δῆλός ἐστιν . . . ἀφανίζων τὸ δαιμόνιον ἢ μηθὲν ὑπὲρ αὐτοῦ γινώσκων, ὅταν ἐν τῶι Περὶ Θεῶν μὴ ἀπίθανα λέγηι φαίνεσθαι τὰ περὶ 〈τοῦ〉 τὰ τρέφοντα καὶ ὠφελοῦντα θεοὺς νενομίσθαι καὶ τετειμῆσθαι πρῶτον ὑπὸ Προδίκου γεγραμμένα, μετὰ δὲ ταῦτα τοὺς εὑρόντας ἢ τροφὰς ἢ σκέπας ἢ τὰς ἄλλας τέχνας ὡς Δήμητρα καὶ Διόνυσον καὶ τοὺς ... <bibl xml:lang="lat">CIC. d. n. deor. 1 37, 118</bibl> <foreign xml:lang="lat">quid? P. Cius, qui ea quae prodessent hominum vitae deorum in numero habita esse dixit, quam tandem religionem reliquit?</foreign> <label>15, 38</label> <foreign xml:lang="lat">Persaeus . . . eos dicit esse habitos deos, a quibus magna utilitas ad vitae cultum <pb facs="diefragmentederv02dieluoft_0321"/> esset inventa, ipsasque res utiles et salutares deorum esse vocabulis nuncupatas.</foreign> <bibl xml:lang="mul">SEXT. adv. math. IX 18. [vgl. oben II 30, 16]</bibl> Π. δὲ ὁ Κεῖος <q>ἥλιον, φησί, καὶ σελήνην καὶ ποταμοὺς καὶ κρήνας καὶ καθόλου πάντα τὰ ὠφελοῦντα τὸν βίον ἡμῶν οἱ παλαιοὶ θεοὺς ἐνόμισαν διὰ τὴν ἀπ’ αὐτῶν ὠφέλειαν, καθάπερ Αἰγύπτιοι τὸν Νεῖλον</q>, καὶ διὰ τοῦτο τὸν μὲν ἄρτον Δήμητραν νομισθῆναι, τὸν δὲ οἶνον Διόνυσον, τὸ δὲ ὕδωρ Ποσειδῶνα, τὸ δὲ πῦρ Ἥφαιστον καὶ ἤδη τῶν εὐχρηστούντων ἕκαστον. <label>51</label> μή εἶναι δὲ [sc. θεόν] οἱ ἐπικληθέντες ἄθεοι, καθάπερ Εὐήμερος . . . καὶ Διαγόρας ὁ Μήλιος καὶ Π. ὁ Κεῖος καὶ Θεόδωρος . . . <label>52</label> Π. δὲ τὸ ὠφελοῦν τὸν βίον ὑπειλῆφθαι θεόν, ὡς ἥλιον καὶ σελήνην καὶ ποταμοὺς καὶ λίμνας καὶ λειμῶνας καὶ καρποὺς καὶ πᾶν τὸ τοιουτῶδες. <bibl xml:lang="lat">THEMIST. or. 30 p. 422 Dind.</bibl> πλησιάζομεν ἤδη ταῖς τελεταῖς καὶ τὴν Προδίκου σοφίαν τοῖς λόγοις ἐγκαταμίξομεν, ὃς ἱερουργίαν πᾶσαν ἀνθρώπου καὶ μυστήρια καὶ τελετὰς τῶν γεωργίας καλῶν ἐξάπτει, νομίζων καὶ θεῶν ἔννοιαν ἐντεῦθεν εἰς ἀνθρώπους ἐλθεῖν καὶ πᾶσαν εὐσέβειαν . . . ἐγγυώμενος.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="6">
+       <p rend="indent"><label>6.</label> <bibl xml:lang="lat">PLAT. Euthyd. 305 c</bibl> οὗτοι γάρ εἰσιν μὲν, ὦ Κρίτων, οὓς ἔφη Π. μεθόρια φιλοσόφου τε ἀνδρὸς καὶ πολιτικοῦ, οἴονται δ’ εἶναι πάντων σοφώτατοι ἀνθρώπων . . . <label xml:lang="lat">D</label> σοφοὶ δὲ ἡγοῦνται εἶναι πάνυ, εἰκότως· μετρίως μὲν γὰρ φιλοσοφίας ἔχειν, μετρίως δὲ πολιτικῶν.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="7">
+       <p rend="indent"><label>7.</label> <bibl xml:lang="lat">STOB. IV 20, 65</bibl> Προδίκου. ἐπιθυμίαν μὲν διπλασιασθεῖσαν ἔρωτα εἶναι, ἔρωτα δὲ διπλασιασθέντα μανίαν γίγνεσθαι.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="8">
+       <p rend="indent"><label>8.</label> <bibl xml:lang="lat">[PLAT.] Eryxias p. 397 D ff.</bibl> τουτονὶ μὲν τὸν λόγον, ἔφην ἐγώ, πρώιην ἐν Λυκείωι ἀνὴρ σοφὸς λέγων, Πρόδικος ὁ Κεῖος, ἐδόκει τοῖς παροῦσι φλυαρεῖν οὕτως, ὥστε μηδένα δύνασθαι πεῖσαι τῶν παρόντων, ὡς ἀληθῆ λέγει· ... ἠρώτα γὰρ αὐτὸν τὸ μειράκιον, πῶς οἴεται κακὸν εἶναι τὸ πλουτεῖν καὶ ὅπως ἀγαθόν· ὁ δ’ ὑπολαμβάνων, ὥσπερ καὶ σὺ νῦν δή, ἔφη, τοῖς μὲν καλοῖς κἀγαθοῖς τῶν ἀνθρώπων καὶ τοῖς ἐπισταμένοις, ὅπου δεῖ χρῆσθαι τοῖς χρήμασι, τούτοις μὲν ἀγαθόν, τοῖς δὲ μοχθηροῖς καὶ ἀνεπιστήμοσι κακόν. ἔχει δ’, ἔφη, καὶ τἆλλα πράγματα οὕτω πάντα· ὁποῖοι γὰρ ἄν τινες ὦσιν οἱ χρώμενοι, τοιαῦτα καὶ τὰ πράγματα αὐτοῖς ἀνάγκη εἶναι.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="9">
+       <p rend="indent"><label>9.</label> <bibl xml:lang="lat">[Plat.] Axiochos p. 366 B ff. [Sokr. spricht]</bibl> Ἀξίοχε, σύ γε οὐκ ἔτυμά μοι μαρτυρεῖς, οἴει δὲ καθάπερ Ἀθηναίων ἡ πληθύς, ἐπειδὴ ζητητικός εἰμι τῶν πραγμάτων, ἐπιστήμονά του εἶναί με. ἐγὼ δὲ εὐξαίμην ἂν τὰ κοινὰ ταῦτα εἰδέναι· τοσοῦτον ἀποδέω τῶν περιττῶν. <label xml:lang="lat">(c)</label> καὶ ταῦτα δέ, ἃ λέγω, Προδίκου ἐστὶ τοῦ <pb facs="diefragmentederv02dieluoft_0322"/> σοφοῦ ἀπηχήματα τα μὲν διμοίρου ἐωνημένα τὰ δὲ δυοῖν δραχμαῖν τὰ δὲ τετραδράχμου. προῖκα γὰρ ἁνὴρ οὗτος οὐδένα διδάσκει· διὰ παντὸς δὲ ἔθος ἐστὶν αὐτῶι φωνεῖν τὸ Ἐπιχάρμειον <bibl xml:lang="lat">[13 B 30]</bibl>· <q>ἁ δὲ χεὶρ τὰν χεῖρα νίζει, δός τι καὶ λάβοις τί κα</q>. πρώιην γοῦν παρὰ Καλλίαι τῶι Ἱππονίκου ποιούμενος ἐπίδειξιν τοσάδε τοῦ ζῆν κατεῖπεν, ὥστε ἔγωγε μὲν παρὰ ἀκαρῆ διέγραψα τὸν βίον καὶ ἐξ ἐκείνου θανατᾶι μου ἡ ψυχή, Ἀξίοχε.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="10">
+       <p rend="indent"><label>10.</label> <bibl xml:lang="lat">PLUT. de sanit. 8 p. 126 D</bibl> κομψῶς γὰρ ἔοικεν ὁ Πρόδικος εἰπεῖν, ὅτι τῶν ἡδυσμάτων ἄριστόν ἐστι τὸ πῦρ.</p></div>
+       <div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1634.tlg002.1st1K-grc1" n="11">
+       <p rend="indent"><label>11.</label> <bibl xml:lang="lat">GAL. de meth. med. X 474 Κ.</bibl> καὶ δὴ καὶ τὸ γάλα κάλλιστον μέν, εἰ ἐξ αὐτῶν τῶν θηλῶν ἐπισπῶιτό τις, ὥσπερ Εὐρυφῶν καὶ Ἡρόδοτος καὶ Πρόδικος ἀξιοῦσιν. </p></div></div></body></text></TEI>

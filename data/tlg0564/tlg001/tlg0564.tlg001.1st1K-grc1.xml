@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+  <fileDesc>
+    <titleStmt>
+      <title xml:lang="lat">De renum et vesicae affectionibus</title>
+      <author>Rufus of Ephesus</author>
+      <editor>Charles Daremburg</editor>
+      <editor>Émile Ruelle</editor>
+      <funder>Center for Hellenic Studies</funder>
+      <respStmt>
+        <resp>Published original versions of the electronic texts</resp>
+        <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+        <persName role="principal">Gregory Crane</persName>
+        <persName role="principal">Leonard Muellner</persName>
+        <persName role="principal">Bruce Robertson</persName>
+      </respStmt>
+      <respStmt>
+        <persName>Kelli Frangoulis</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Asher Courtemanche</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Marija Gardina</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Yiran Gao</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Dennis Hou</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>AnneMarie Michael</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Julia Pass</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Charlotte Pocard</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Thomas Wu</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Mari Yamazaki</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Kate Yuan</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital conversion and editing</resp>
+      </respStmt>
+      <respStmt>
+        <persName>Charlotte Houghton</persName>
+        <orgName>Center for Hellenic Studies</orgName>
+        <resp>Digital editor</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg0564.tlg001.1st1K-grc1.xml</idno>
+      <pubPlace />
+      <availability>
+       <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2021-08-23"/>
+    </publicationStmt>
+    <sourceDesc>
+      <biblStruct>
+        <monogr>
+          <author>
+            <persName>Rufus of Ephesus</persName>
+          </author>
+          <title xml:lang="fre">Oeuvres de Rufus d'Éphèse</title>
+          <editor>Charles Daremburg</editor>
+          <editor>Émile Ruelle</editor>
+          <imprint>
+            <pubPlace>Paris</pubPlace>
+            <publisher>Imprimerie Nationale</publisher>
+            <date>1879</date>
+          </imprint>
+        </monogr>
+        <ref target="https://archive.org/details/b21948902/page/n66/mode/1up?view=theater">Internet Archive</ref>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+        <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+    <refsDecl n="CTS">
+     <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+        <p>This pointer pattern extracts chapter and section.</p>
+      </cRefPattern>
+      <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+      <p>This pointer pattern extracts chapter.</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+    
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+      <language ident="lat">Latin</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021-12-10" who="Lisa Cerrato">markup review</change>
+    <change when="2021-11-22" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+<text>
+  <body>
+    
+    <div type="edition" n="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" xml:lang="grc"> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="0"> 
+<head rend="indent">[ΠΡΟΟΙΜΙΟΝ.]</head> 
+  <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:0" n="1"> 
+
+<p rend="indent"><milestone unit="page" resp="Ms." n="148r"/><milestone unit="page" resp="Matthaeus" n="61"/> Ὅσα περὶ τοὺς νεφροὺς καὶ τὴν κύστιν νοσήματα γίγνεται, κατὰ ἕκαστον γράψω, καὶ ὡς γιγνώσκειν ἀυτὰ χρὴ, καὶ ὡς θεραπεύειν.</p> </div> <pb facs="b21948902_0067"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:0" n="2"> 
+<p> Τὸ | <milestone unit="page" resp="Matthaeus" n="62"/> μὲν δὴ σύμπαν ἐν νεφροῖς οὐ πάνυ ὀξεῖαι νόσοι γίγνονται· Θανατώδεις γε μὴν οὐχ ἧσσον ἢ ἑτέρωθι· καὶ γὰρ ἕλκη καὶ ἐμπυήματα αὐτοῦ συστάντα πολλοὺς ἐν τῷ χρόνῳ ἀπέκτειναν· ἐπεὶ καὶ φλεγμήναντες οἱ νεφροὶ ὀδυνῶσι μέν τι καὶ μειζόνως, οὐ μὴν οὐδὲ αὐτὴ ἡ νόσος συνταχύνει· αἱ δὲ κατὰ κύστιν φλεγμοναὶ ὀξύτερον· <pb facs="b21948902_0068"/> καὶ γὰρ οὖρον ἀποληφθῆναι τούτοις ἑτοιμότερον, καὶ πυρέξαι, καὶ παραφρονῆσαι, καὶ ἐμέσαι πολλά τε καὶ ἄκρατα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:0" n="3"> 
+<p>Ὀξύτεραι δὲ καὶ αἱ ἄλλαι κατὰ κύστιν νόσοι· καὶ γὰρ ἐπικαιρότερον τὸ χωρίον, καὶ εὐθὺς ἀπὸ παίδων νοσεῖν εἰθισμένον, ἐν ᾧ δὴ μάλιστα αἱ ὀξεῖαι νόσοι γίγνονται· τὸ δὲ κατὰ νεφροὺς γέρουσι μᾶλλον ἢ νέοις συμβαίνει· διὰ τόδε καὶ μαλακώτερον ἐκείνων ἐστίν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:0" n="4"> 
+<p>Πάντα δὲ, καὶ τὰ τῶν νεφρῶν, καὶ τὰ τῆς | <milestone unit="page" resp="Matthaeus" n="63"/> κύστεως οὐκ εὐμεταχείριστα, καὶ μάλιστα ὅσα ἕλκη ἐν αὐτοῖς γίγνεται· ἐπιῤῥέον γὰρ συνεχῶς τὸ οὖρον δάκνει τε ἅμα, καὶ εἰς ὠτειλὰς ἰέναι κωλύει· ὡς δὴ τοιαῦτα ὄντα προαγορεύειν χρὴ καὶ ἰᾶσθαι.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="1"> 
+<head rend="indent">α′ (Ἀέτιος, ις′). Περὶ φλεγμονῆς νεφρῶν.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="1"> 
+<p rend="indent">Καὶ δὴ ἔνθεν σημεῖα νεφρῶν φλεγμονῆς· ὀδύνη ἔχει ὑπὸ τοὺς κενεῶνας, <pb facs="b21948902_0069"/> καὶ οὔτε ὀρθοῦσθαι δύνανται, οὔτε βαδίζειν· καὶ ἤν τε πταρμὸς, ἤν τε ἄλλος τις σεισμὸς συμπέσῃ, ἀ|νοιμώζουσι, <milestone unit="page" resp="Ms." n="148v"/> καὶ ἐπὶ γαστέρα μὲν κλινόμενοι οὐκ ἀνέχονται, ὕπτιοι δὲ ἀνέχονται μένειν·</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="2"> 
+<p>κεῖνται γὰρ πρὸς τοῖς κενεῶσιν οἱ νεφροί. Παντὶ δὲ τῷ οὕτως ἀλγοῦντι εὐφορώτερον κειμένῳ ἀτρεμίζειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="3"> 
+<p>Περὶ μὲν τὰς κλίσεις τοιαῦτα πάσχουσιν· τὰ δὲ ἄλλα διήκουσιν οἱ πόνοι, ἄνω μὲν, μέχρι | <milestone unit="page" resp="Matthaeus" n="64"/> ἥπατος· κατὰ γὰρ μεγάλην φλέβα κοινωνοῦσιν αὐτῷ, καὶ μᾶλλον εἰ ὁ δεξιὸς φλεγμαίνοι· καὶ γάρ τοι καὶ ἐγγυτέρω οὗτός ἐστι τοῦ ἥπατος, καὶ ψαύει τοῦ λοβοῦ· ὁ δὲ ἀριστερὸς προσωτέρω καὶ κάτω· ἄλλοι δὲ πόνοι μέχρι κύστεως καὶ αἰδοίου κατέρχονται, καὶ οὔ τοι συνεχεῖς, ἀλλὰ διεσπασμένοι μάλιστα εἰς ὀσφύν τε καὶ ἰσχία καὶ ἦτρον ἐνσείουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="4"> 
+<p>Ψύχεται δὲ αὐτοῖς τὰ ἄκρα, μᾶλλον δὲ κνῆμαι καὶ πόδες, καὶ οὐροῦσι συνεχῶς καὶ ἐπιπόνως, καὶ κατὰ ἀρχὰς <pb facs="b21948902_0070"/> μὲν λεπτὰ καὶ ὑδατώδη· προϊούσης δὲ τῆς φλεγμονῆς, ἐρυθρότερα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="5"> 
+<p>Ὅταν δέ γε εἰς τόδε ἀφίκωνται, λεπτύνονται μὲν ἰσχία καὶ γλουτοὶ, ἀκρατέστερα δὲ τὰ σκέλη γίγνεται· τοῖς δὲ καὶ ἐξεπύησαν οἱ νεφροί· καὶ τά γε πολλὰ τούτων οὕτω τελευτᾷ· ἀλλὰ περὶ μὲν τῶν ἐμπυημάτων αὐτίκα εἰρήσεται.—</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="6"> 
+<p>|<milestone unit="page" resp="Matthaeus" n="65"/> Τὰς δὲ φλεγμονὰς Θεραπεύειν ὧδε· κατακλίνειν μὲν ὡς μαλακώτατα, καὶ σίτου τὴν πρώτην ἀπέχειν· οὐ μὴν εἰς ἅπαν αἱ λιμαγχίαι τούτοις συμφέρουσιν, ᾗπερ ταῖς ἄλλαις φλεγμοναῖς, ἀλλά τι καὶ προσαρτέον, φυλάσσοντα τοὺς | <milestone unit="page" resp="Ms." n="149r"/> πυρετοὺς, ὅπῃ τε χαλῶσι, καὶ ὅπῃ ἐπιτείνουσιν· οὐδὲν γὰρ αὐτοῖς τοσοῦτον ἀγαθὸν αἱ ἀσιτίαι, ὅσον κακὸν αἱ ἀπὸ τῶν οὔρων ἀκράτων γενομένων δήξεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="7"> 
+<p>Διαιτᾷν δὲ κατὰ ἀρχὰς μὲν λεπτοῖς ῥοφήμασι, καὶ ποτῷ, ὕδατι· μελίκρατον δὲ μὴ προσφέρειν, ἐὰν μή σοι δοκῇ ἐπὶ οὔρησιν ἤδη προτρέπειν, ὃ ἐγὼ κατὰ ἀρχὰς οὐκ ἐπαινῶ, <pb facs="b21948902_0071"/> πρὶν σαφῶς τὰς ὀδύνας πέσσεσθαι· τότε δὲ καὶ πάνυ φημὶ δεῖν τοῖς οὐρητικοῖς καθαίρειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="8"> 
+<p>—Εἰ δὲ καὶ ἡ γαστὴρ κενωθῆναι δέοιτο, ἄλλην μὲν κένωσιν μηδεμίαν μηχανᾶσθαι, ὁποῖαι αἳ ἀπὸ φαρμάκων ἐξεύρηνται· κλυσμάτιον δὲ Θερ|μὸν <milestone unit="page" resp="Matthaeus" n="66"/> ἐνιέναι, ἢ μαλάχην ἐν ὕδατι ἑψήσας, ἢ λίνου σπέρμα, ἢ βούκερας· τούτων τινὶ ὑποκλύζειν μετὰ ἐλαίου, καὶ τούτου τὸ ἱκανὸν προσμίσγων· πλῆθος δὲ ἐνιέναι μὴ πολὺ, ὡς μὴ πιέζῃ τοὺς νεφροὺς τὰ πληρώματα τοῦ ἐντέρου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="9"> 
+<p>Ὑπελθούσης δὲ τῆς γαστρὸς, εἰ μὲν ἐνδιδοίη ὁ πόνος, ἔριον περιτιθεὶς ἐν κύκλῳ ἀναπαύειν ἐπιτέγγων ἐλαίῳ Θερμῷ· οὐκ ἄπο τρόπου δὲ συνηψῆσθαι τῷ ἐλαίῳ τοῦ τε πηγάνου, καὶ τῆς ἀλθαίας, καὶ τοῦ ἀνήθου, καὶ τῆς ἀρτεμισίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="10"> 
+<p>—Ὀξύτερον δὲ πονούντων φλέβα κατὰ ἀγκῶνα τέμνειν· εἰ δὲ καὶ ὣς τὶ ὑπολείποιτο τῆς φλεγμονῆς, καταπλάσσειν, <pb facs="b21948902_0072"/> τὰ μὲν πρῶτα ἀλεύρῳ ἐν μελικράτῳ ἑφθῷ, ἢ τῷ λίνου σπέρματι, ἔπειτα δὲ καὶ τῆς χαμαιπίτυος μίσγειν, καὶ τοῦ πολίου, καὶ ἀβροτόνου δὲ μίσγειν, καὶ τῆς βρυωνίας, καὶ τοῦ πηγάνου, καὶ | <milestone unit="page" resp="Matthaeus" n="67"/> ἀψινθίου, καὶ κενταυρίου, καὶ ἀρτεμισίας, καὶ τῆς χαμαίδρυος τῶν φύλλων, καὶ τοῦ ἀσάρου, καὶ τῆς σχοίνου τοῦ ἄνθους· καὶ τότε μηκέτι ἐν τῷ μελικράτῳ καταπλάσματα ἕψειν ἀλλὰ ἢ ἐν γλυκεῖ, ἢ οἴνῳ μελιχρῷ· μίσγειν δὲ καὶ τοῦ ἀλεύρου τοῦδε μὲν μέρη τέσσαρα, τῶν δέ τινος εἰρημένων | <milestone unit="page" resp="Ms." n="149v"/> φαρμάκων μέρη δύο· ἰσχυροτέρῳ δὲ βουλόμενος χρῆσθαι, καὶ πλέον τι, καὶ κηροῦ [ἢ ῥητίνης] ξηρᾶς προσμίσγειν κεκομμένης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="11"> 
+<p>Ἀγαθὸν δὲ καὶ τὸ τοῦ Χρυσίππου κατάπλασμα· ἔστι δὲ τόδε· χαλβάνης, καὶ ῥητίνης τερεβινθίνης, καὶ πολίου, καὶ ὀροβίνου ἀλεύρου ὁλκαὶ ἑκάστου πεντήκοντα, ἴριδος ξηρᾶς ὁλκαὶ τριάκοντα, κηρωτῆς εὐώδους κοτύλη μία, ἀλεύρου πυρίνου χοίνικος ἀπτικῆς τέταρτον· <pb facs="b21948902_0073"/> ταῦτα ἕψων ἐν γλυκεῖ καταπλάσσειν, τοὺς | <milestone unit="page" resp="Matthaeus" n="68"/> μὲν νεφριτικοὺς ἐξόπισθεν, τοὺς δὲ κατὰ κύστιν πονοῦντας ἔμπροσθεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="12"> 
+<p>Εἰ δὲ μὴ καταπλασσομένῳ πραΰνοιτο ἡ ὀδύνη, σικύας προσβάλλειν τῇ τε ἄλλῃ ὀσφύϊ, καὶ ὑπὸ τοὺς κενεῶνας, ἀποσχάζειν τε καὶ ἀφέλκειν τοῦ αἵματος· ἔπειτα σπόγγοις πυριᾷν, καὶ εἰς Θερμὸν ἐγκαθίζειν, συνηψημένων γε τῷ ὕδατι τῆς τε μήκωνος, καὶ τῆς ἀνθεμίδος, καὶ τοῦ καλάμου, καὶ τῆς σχοίνου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="13"> 
+<p>Πρότερον δὲ καὶ κύστιν πληροῦντα ἐλαίου καὶ ὕδατος παρακλίνειν, καὶ τἄλλα λιπαρῶς πυριᾷν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="14"> 
+<p>Ἐπὶ δὲ τούτοις κηρωτὰς καὶ μαλάγματα ἐπιτιθέναι, τὰς μὲν κηρωτὰς διὰ κυπρίνου ἐλαίου, [ἢ] ῥοδίνου καὶ ἰρίνου μύρου, τὰ δὲ μαλάγματα, οἷα τὰ εὐωδέστατα.—</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="15"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="69"/> Ἐν δὲ ταῖς ὀδύναις, πίνειν φάρμακα τοιάδε· μαράθρου σπέρματος ὀβολοὺς δύο, καὶ λιβανωτίδος ὀβολὸν, καὶ σικύου <pb facs="b21948902_0074"/> σπέρματος κόκκους εἴκοσι, καὶ ὀποῦ μήκωνος, ἢ πάνακος τῆς ἡρακλείας τριώβολον | <milestone unit="page" resp="Ms." n="150r"/> τῆς ῥίζης, καὶ μελιλώτου βραχὺ, κεδρίας τε καὶ κωδύας πεφωγμένης ἡμιώβολον· βέλτιον [δὲ] καὶ στύρακος ἡμιώβολον, καὶ σελίνου ὅσον τοῖς τρισὶ δακτύλοις, καὶ ὀποῦ μήκωνος ὅσον ὄροβον· τούτων ἑκαστα τρίβων ὡς λειότατα, καὶ κεραννύων ἐν γλυκεῖ [ἢ ἐν] ὕδατι, διδόναι πίνειν· αὐτίκα γὰρ ὠφελήσει, εἰ ὀξὺ εἴη, καὶ ὕπνος ἕξει τὸν ἄνθρωπον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="16"> 
+<p>Ὅταν δὲ καιρὸς φανῇ, τότε καὶ τοῖς οὐρητικοῖς καθαίρειν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="17"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="70"/> Τὰ δὲ οὐρητικὰ ἔστω τάδε· ἀκόρου τε ῥίζα καὶ χαμαίπιτυς, καὶ κασία, καὶ μῆον, καὶ κιννάμωμον, καὶ πόλιον, καὶ πετροσέλινον, καὶ ἄγρὼστις· ταῦτα μὲν ἕψειν ἐν ὕδατι, καὶ μετὰ οἴνου ἢ μελικράτου πίνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="18"> 
+<p>Ἐσθίειν δὲ τῶν τε Θαλασσίων ἐχίνων, καὶ λαχάνων τοῦ μαράθρου, καὶ τοῦ σελίνου, καὶ τοῦ δαύκου, <pb facs="b21948902_0075"/> καὶ τῆς ῥαφανίδος ὅτι κάλλιστα ἡψημένης, καὶ σικύου ἑφθοῦ, καὶ τὰ ἄγρια πάντα· ἐπὶ οὔρησιν γὰρ καλῶς προτρέπει, μάλιστα δὲ οἱ σταφυλῖνοι, καὶ τὰ κρῆθμα, καὶ οἱ σκάνδικες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:1" n="19"> 
+<p>Καὶ οὖρα δεῖ προσδέχεσθαι τοῖς τοιούτοις πολλά τε καὶ παχέα, καὶ ὑποστάσεις καλὰς ἔχοντα· καὶ μάλιστα τοῦτο κρίνει τὴν νόσον· αἱ δὲ ὑδατώδεις καὶ καθαραὶ καὶ διαφανεῖς οὐρήσεις δυσκριτώτεραι.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="2"> 
+<head rend="indent">β′ (Ἀέτιος, ιη′).| <milestone unit="page" resp="Matthaeus" n="71"/> Περὶ διαπυησάντων νεφρῶν.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="1"> 
+<p rend="indent">Τὰς μὲν οὖν φλεγμονὰς ὧδε ἄν τις θεραπεύοι κάλλιστα· ὅσοις δὲ ἔμπυοι οἱ νεφροὶ γίγνονται, ἤδη μέν τι καὶ ἐξογκεῖ περὶ τοὺς κενεῶνας, ἀτὰρ καὶ καῦμα ἰσχυρὸν ἔνεστιν ἐν τοῖς νεφροῖς, καὶ οὐροῦσι πυῤῥὰ καὶ ἄκρατα, καὶ αἱ ὀδύναι οὐκέτι μὲν ὀξεῖαί εἰσιν, ὡς πρόσθεν, <pb facs="b21948902_0076"/> βαρύτεραι δὲ καὶ σφύζουσαι, καὶ οἱ πυρετοὶ οὐ καθεστῶτες, ἀλλὰ πεπλανημένοι γίγνονται καὶ φρικώδεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="2"> 
+<p>Τούτοις ῥήγνυται τὰ μὲν πολλὰ ἐπὶ κύστιν· καὶ ἐστὶν |<milestone unit="page" resp="Ms." n="150v"/> αὕτη τῶν ῥήξεων ἡ κρατίστη· ποτὲ μὴν καὶ ἐπὶ ἔντερον ῥήγνυται, ταύτῃ κορυφώσαντος τοῦ ἐμπυήματος καὶ σαπέντος. </p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="3"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="72"/> Πραξαγόρας δὲ ἔφη, τινὶ καὶ τὸ οὖρον διὰ τῆς ἕδρας ἰδεῖν ἀποκρινόμενον, καὶ βιῶναι μὲν τοῦτον ἔτη δώδεκα, οὐ μέντοι εἰδέναι, εἰ καὶ μεταξὺ ἐβιῶ· προαπελθεῖν γὰρ, καὶ οὐδὲν ἔτι πυθέσθαι ὕστερον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="4"> 
+<p>Ἄλλοις δὲ ἐπὶ τὰ ἔξω ῥήγνυται παρεξιὸν τὸν κενεῶνα, ὃν πληροῦσθαι ἀνάγκη πύου τε καὶ οὔρου, καὶ αὐτοῦ μένειν, χρόνῳ δὲ βιασάμενα εἰς τὴν ἕδραν ἥκειν, καὶ ταύτῃ ἰέναι ἔξω.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="5"> 
+<p>Τοῖς δέ τισιν οὐδὲ ῥήγνυσθαι ἐθέλει ἐκ τῶν νεφρῶν, ἀλλὰ αὐτοῦ μένει χρόνον πολὺν, ἔστε ἂν ἢ διακαύσῃς, ἢ ἄλλον τρόπον ἀποστομώσῃς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="6"> 
+<p>Ῥαγέντα <pb facs="b21948902_0077"/> δὲ ἐπὶ κύστιν, τὰ μὲν πρῶτα μιξόπυά τε καὶ αἱματώδη οὐροῦσιν, ὥσπερ ἔκ τινος καὶ ἑτέρου τομῆς ἐμπυήματος, ἔπειτα κατὰ λόγον τῶν ἑλκῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="7"> 
+<p>Εἰ μὲν τὰ ἕλκη πονηρεύοιτο, οἷα καὶ ἐπὶ τοῖς ἄλλοις ἕλκεσι σηπομένοις, πολλά τε καὶ δύσοσμα, καὶ | <milestone unit="page" resp="Matthaeus" n="73"/> πελιὰ, καὶ μυξώδη, καί τινα καὶ σαρκία παραμήκη, ὁποῖα ἶνες ἀπέρχονται· εἰ δὲ χρηστὰ εἴη τὰ ἕλκη, καὶ τὸ πύον λευκὸν, καὶ ὁμαλὸν, καὶ ἄνοσμον, καὶ ὀλίγον ἀπέρχεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="8"> 
+<p>Ἢν δέ σοι δοκῇ ὁ νεφρὸς εἰς πύον τρέπεσθαι, δόξῃ δὲ τοῖς εἰρημένοις σημείοις, συμπεπαίνειν τε ὡς τάχιστα, καὶ ῥῆξίν τινα οὕτω μηχανᾶσθαι· τὰ γὰρ πολλὰ ἐπὶ κύστιν τρέπεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="9"> 
+<p>Πυριᾷν τε οὖν συνεχῶς τοῖς σπόγγοις, καὶ καταπλάσσειν ἀλεύρῳ κριθίνῳ μετὰ σύκων ἀφεψήματος· τὰ δὲ σῦκα ἐν μελικράτῳ ἢ οἴνῳ ἕψειν· ἀγαθὸν δὲ καὶ αὐτῶν τῶν σύκων μίσγειν λεαίνοντα, καὶ ἀψινθίου δὲ κόμην κόψαντα ἐμβάλλειν, καὶ χαμελαίας, <pb facs="b21948902_0078"/> καὶ ἶριν σεσησμένην, καὶ βρυωνίας τὴν ῥίζαν· ταῦτα δὲ ἅμα μὲν συμπέσσει, ἅμα δὲ ἐπὶ οὔρησιν ἄγει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="10"> 
+<p>Δεῖ δὲ καὶ τὴν οὔρησιν ἐρεθίζειν, ὥστε καὶ ἐπιπίνειν τῶν οὐρη|τι|κῶν <milestone unit="page" resp="Ms." n="151r"/> <milestone unit="page" resp="Matthaeus" n="74"/> κελεύειν συμφέρει· ἐπιτηδειότατον δὲ τὸ τῆς ἄγνου σπέρμα ἐν οἴνῳ ἢ μελικράτῳ πινόμενον, καὶ ἡ τοῦ νάρθηκος ῥίζα, καὶ ἄγχουσα, καὶ τὸ ἄρον, καὶ ἕν τι ἕκαστον, καὶ εἰ δύο καὶ τρία συμμίξαις. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="11"> 
+<p>Ἀγαθὸν δὲ καὶ τόδε· ὀριγάνου καὶ δαύκου ὅσον χοίνικα, καὶ ψευδοδικτάμνου ὅσον χοίνικα ἐμβάλλων εἰς οἶνον εὐώδη λευκὸν, ἀποτίθεσθαι· ὅταν δὲ χρῄζῃς, λαβὼν κυάθους τέσσαρας, καὶ κεράσας πρὸς ὕδατος δύο, καὶ ἔτι πηγάνου φύλλων ὡς λειοτάτων μίξας δραχμὴν μίαν, διδόναι πίνειν· τοῦτο ἄξει πύον καὶ οὖρα πολλά.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="12"> 
+<p>Εἰ δέ σοι τάδε ποιοῦντι μηδὲν μᾶλλον ῥηγνύοιτο τὸ ἐμπύημα, καὶ ὑποκλύζειν κλυσ|μοῖς <milestone unit="page" resp="Matthaeus" n="75"/> δριμέσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="13"> 
+<p>Οἱ δὲ κλυσμοί εἰσιν· ἑλλεβόρου τε ἀπόβρεγμα τοῦ μέλανος, <pb facs="b21948902_0079"/> καὶ ῥαφανίδος, καὶ σκορόδων, καὶ σικυωνίας· βρέχειν δὲ ἐν ἅλμῃ ἢ ἐν θαλάσσῃ, ἢ ἐν ὄξει, καὶ μικρὸν ἐλαίου μίξαντα τοῦ ὀλισθηρὸν εἶναι, τούτοις κλύζειν· κελεύειν δὲ ὅτι πλεῖστον χρόνον κατέχειν· πολλάκις γὰρ ῥηγνύει τὸ ἐμπύημα, καὶ δὴ ἔῤῥωται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="14"> 
+<p>Χρὴ μέντοι ἔτι καὶ τοῖς σπόγγοις πυριᾷν καὶ τοῖς καταπλάσμασιν, ἕως πᾶσά τε λωφήσῃ ἡ ὀδύνη, καὶ τὸ πύον εὔρουν γένηται. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="15"> 
+<p>Διδόναι δὲ καὶ τῶν οὐρητικῶν καθαρτηρίων λογιζόμενον πρὸς τὸ ἕλκος· εἰ μὲν εὔηθες εἴη, σημαίνουσί τε οἱ πυρετοὶ καὶ οἱ πόνοι ἐπικουφίζοντες, καὶ τὰ ἐν τοῖς οὔροις λεῖα καὶ λευκὰ | <milestone unit="page" resp="Matthaeus" n="76"/> καὶ ἄνοσμα ἰόντα, καὶ οὐρήσεις εὐπετῶς ἀπερχόμεναι· εἰ δὴ τοιαῦτα εἴη, τῶν πρᾳοτέρων προσφέρειν οἷον, τό τε τοῦ σικύου σπέρμα μετὰ μέλιτος, καὶ τῶν φοινίκων τὸ ἀφέψημα, καὶ ἶριν μετὰ μέλιτος, καὶ αὐτὸ [τὸ] μέλι· ἰσχυρότερον δὲ καθαίρειν βουλόμενος, ἀδιάντου τε ἀφέψημα μετὰ μελικράτου <pb facs="b21948902_0080"/> [ἢ] ὕδατος, | <milestone unit="page" resp="Ms." n="151v"/> καὶ χαλβάνην μετὰ καρύου ἡρακλεωτικοῦ, καὶ ῥητίνην τερμινθίνην διατήξας ἐν ὕδατι, εἶτα ὅταν καταστῇ τὸ ὕδωρ, ἠθήσας καὶ κεράσας μελικράτῳ, ἢ οἴνῳ, οὕτω δίδου· ταῦτα μὲν πρὸς τὰ εὐηθέστερα τῶν ἑλκῶν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="16"> 
+<p>Πρὸς δὲ τὰ πονηρότερα ἰσχυροτέρων δεῖ καὶ ἔνδοθεν, καὶ ἔξωθεν· ἔνδοθεν μὲν οὖν, ὅσα τε πρὸς τὰς ῥήξεις ἤδη εἴρηται συμφέρειν, καὶ κύ|μινον <milestone unit="page" resp="Matthaeus" n="77"/> τὸ αἰθιοπικὸν μετὰ οἴνου γλυκέος, καὶ πήγανον μετὰ μέλιτος καὶ οἴνου, καὶ κάχρυος μετὰ πράσου σπέρματος ἐν οἴνῳ ἁπαλῷ· ἔξωθεν δὲ ὀρόβων ἀλεύροις καταπλάσσειν ἑφθοῖς ἐν οἴνῳ καὶ μέλιτι, καὶ ῥόδοις ξηροῖς μετὰ φακῆς τρίψας καὶ μέλιτος, καὶ μύρτοις μετά τινος τούτων ἑφθοῖς· τὰς γὰρ σηπεδόνας τῶν ἑλκῶν ἀπέχει ταῦτά τε καὶ ὅσα τοιαῦτα ἄλλα, καταπλάσμασιν ὀσφύν τε καὶ κενεῶνας ὅλους περιλαμβάνοντας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="17"> 
+<p>Ἀγαθὸν δὲ καὶ ἐνιέναι τῶν δυσεντερικῶν τι φαρμάκων, εἰ ἐπὶ <pb facs="b21948902_0081"/> μεῖζον νέμοιτο.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="18"> 
+<p>Εἰ δὲ ἐπὶ πόνου καὶ φλεγμασίας τὸ πύον ἔξω διαδιδόναι μὴ δύναιτο, ὑποκλύζειν χυλοῖς πτισάνης λεπτοῖς, καὶ γάλακτι, καὶ τἄλλα χλιάσμασι πυριᾷν, καὶ εἰς ὕδωρ καθίζειν Θερμόν· οὕτω γὰρ μάλιστα ἂν ὑπέλθοι· εἰ δὲ ὑπὸ πάχους ἐνίσχοιτο, μαράθρου τὲ ἀ|φέψημα <milestone unit="page" resp="Matthaeus" n="78"/> πίνειν, καὶ σελίνου, καὶ χαμαιπίτυος, καὶ ἀψινθίου, καὶ ὀριγάνου· ταῦτα μὲν δεῖ ποιεῖν ὧδε. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="19"> 
+<p>Μετὰ δὲ, γάλα πίνειν σὺν μέλιτι, τὰ μὲν πρῶτα ὄνειον ἢ ἵππειον· πρὸς γὰρ τὴν κάθαρσιν τῶν ἑλκῶν συμφέρει· ὅταν δὲ μηκέτι καθαίρεσθαι δέωνται, ἀλλὰ τὸ μὲν πύον ὑπίῃ ὀλίγον, αἱ δὲ ἀπὸ τῶν οὔρων δήξεις ἀμβλύνωνται, χρῄζῃ δὲ ὁ ἄνθρωπος πιαίνεσθαι, τότε ἤδη τὸ βόειον γάλα προσφέρειν, καὶ μᾶλλον [τὸ] τῆς οἰός· παχύτερον γὰρ καὶ ἧσσον διαχωρητικόν· | <milestone unit="page" resp="Ms." n="152r"/> πλῆθος δὲ προσφέρειν καὶ δύο, καὶ τρεῖς, <pb facs="b21948902_0082"/> καὶ ἔτι πλείους κοτύλας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="20"> 
+<p>Καὶ σιτίον εὐθὺς μηδὲν ἄλλο λαμβάνειν, ἔστε ἂν τόδε καταπεφθῇ· τὸ δὲ ὑποχωρῆσαν τοῦ γάλακτος, τοῦτο καὶ τῶν ἄλλων ἑλκῶν τῶν εἴσω κάλλιστον | <milestone unit="page" resp="Matthaeus" n="79"/> φάρμακον, τοῖς τε χαλεποῖς ἰχῶρσιν εὐμενέστατον, καὶ ταχὺ ἀνατρέφον τὸ σῶμα, μάλιστα δὲ ἐν νοσήμασι συντηκτικοῖς ὅτε δεῖ τάχιστα εἰς εὐεξίαν καταστῆσαι τὸν ἄνθρωπον· ὥστε, εἰ καὶ τῇ ἄλλῃ διαίτῃ πιαίνοις τὸν νεφριτικὸν, οὐκ ἂν ἁμαρτάνοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="21"> 
+<p>Χρὴ οὖν κατακείμενον μαλακῶς ἀνατρίβειν τε ἐπὶ ἑκάστῃ ἡμέρᾳ, καὶ τρέφειν, κατὰ ἀρχὰς μὲν γάλακτι, ὡς εἴρηται, καὶ ῥοφήμασι πτισάνης, καὶ ἀμυλίοις, καὶ τῷ πλυτῷ ἀλεύρῳ ἐν γάλακτι ἑφθῷ, καὶ ἰτρίοις καταθρύπτων εἰς ζωμὸν ὄρνιθος λιπαρὸν, καὶ ἔτνει τῷ τε ἀπὸ τῶν ὤχρων, καὶ [τῷ] ἀπὸ τῶν δολίχων, καὶ τῷ ἀπὸ τῶν ὀρόβων, προαπογλυκαίνειν τούς τε ὀρόβους, καὶ αὐτοὺς κατὰ αὑτοὺς ἕψων, ἢ καὶ συμμίσγων τινὶ τῶν εἰρημένων ὀσπρίων. <pb facs="b21948902_0083"/> — </p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="22"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="80"/> Λάχανα δὲ ἐπιτήδεια τοῖς παροῦσι μαλάχη, καὶ λάπαθον, καὶ βλίτον, καὶ ἀνδράχνη, καὶ ἀσπάραγος, καὶ κολοκύνθη, καὶ ἑφθὸς σίκυος, καὶ θριδακίνη ἑφθή· ὠμὸν δὲ οὐδὲν συμφέρει ἐσθίειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="23"> 
+<p>Ταῦτα δὲ καὶ τὴν γαστέρα ἡσυχῆ ὑπάγει, καὶ τὰς τῶν οὔρων δήξεις ἀμβλύνει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="24"> 
+<p>Προϊόντος δὲ τοῦ χρόνου, καὶ πεπαυμένων εἰς τέλος τῶν πυρετῶν, ἀνατρεφομένου τε τοῦ ὄγκου, καὶ τοῖς κρέασι δεῖ σιτίζειν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="25"> 
+<p>Κρέα δὲ ἐπαινῶ ἐς τήνδε τὴν νόσον, ἐρίφων καὶ ἀρνῶν καὶ χοίρων, καὶ ἁπαλοὺς ὄρνιθας, καὶ ἰχθύων τὰ πετραῖα ἑφθὰ, καὶ ῥίνας, καὶ λειοβάτους, καὶ νάρκας, καὶ τὸ τοιοῦτον γένος τῶν σε λάχων. — </p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="26"> 
+<p>| <milestone unit="page" resp="Ms." n="152v"/> <milestone unit="page" resp="Matthaeus" n="81"/> Εἰ δέ τινος καὶ τραγήματος προσδέοιτο ἐν μακρᾷ νόσῳ, ἰσχάδων μὲν ἀπέχειν· πολέμιαι γὰρ τοῖς ἕλκεσιν· φοίνικας δὲ προσφέρειν, καὶ καρύων τῶν ποντικῶν, καὶ κώνων, καὶ ἀσταφίδος, καὶ ἀμύγδαλα φρύγων διδόναι μετὰ μέλιτος· οἶνον δὲ πίνειν μελιχρόν· <pb facs="b21948902_0084"/> ὄξους δὲ ἀπέχειν καὶ παντὸς ἁλμυροῦ καὶ πόματος καὶ σιτίου· τὰ μὲν οὖν προσάρματα τῶν νεφριτικῶν τοιάδε.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="27"> 
+<p>Ἡ δὲ ἄλλη δίαιτα, πρὸς τὰς κινήσεις [μήτε] ἐπιπολὺ, μήτε ταχέως ἄγειν· οὐδὲ γὰρ ἑτέρῳ ἕλκει οὐδενὶ κίνησις συμφέρει, πολύ γε μὴν μᾶλλον τοῖς κατὰ νεφρῶν ἕλκεσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="28"> 
+<p>Ἀλλὰ ἀτρεμοῦντα ἀνακομίζειν ἐν εὐπαθείᾳ πάσῃ, τρίψεσί τε ὡς λιπαρωτάταις, καὶ λουτροῖς, καὶ σκέπῃ. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="29"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="82"/> Τὰς δὲ ὑπογιγνομένας πλησμονὰς ἀρκέσει καὶ πυρία ξηρὰ κενῶσαι, καὶ ἔμετος· κάτω δὲ οὐ χρὴ μαλάσσειν, πλὴν ὅσα ἐπὶ ἡμέρᾳ τῶν τινι εἰρημένων βρωμάτων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="30"> 
+<p>Ὡς μὴ σφόδρα ταλαιπωροῖντο τοῖς ἐμέτοις, μήτε ἄγαν ἐμπλήσας κέλευε ἐξεμεῖν, καὶ τῶν ἐμετηρίων σιτίων προσάρας· ταῦτα δέ ἐστι τὰ πίονα καὶ γλυκέα, καὶ οἱ σπερματίαι σίκυοι· εἰ δὲ μὴ παρεῖεν, τὸ σπέρμα αὐτῶν τετριμμένον μετὰ μέλιτος, καὶ ἄλευρον ἑφθὸν, καὶ πόμα ἐπὶ τούτοις γλυκὺ καὶ <pb facs="b21948902_0085"/> δαψιλές.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="31"> 
+<p>Οὐ μόνον δὲ πρὸς τὰς | <milestone unit="page" resp="Matthaeus" n="83"/> πλησμονὰς ἐπαινῶ τοὺς ἐμέτους, ἀλλά μοι δοκεῖ τολμήσας τις θαμινὰ ἐξεμεῖν ταχὺ ἂν καὶ ἕλκος ἐν νεφροῖς, καὶ ἄλλην τινὰ ἐνθένδε λῦσαι βλάβην.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="32"> 
+<p>Ὅταν δὲ εἰς τόδε ἔλθῃ, ὥστε ῥαΐζειν δύνασθαι καὶ ἀνέχεσθαι κινούμενος, τὰ μὲν πρῶτα ἡσυχῆ τε καὶ ὀλίγα καὶ ἐν ἰσοπέδῳ περιπατεῖν· στάσεις δὲ καὶ δρόμους καὶ πηδήσεις καὶ ἐξαπιναίους ἐπικύψεις φυλάσσεσθαι· ἔπειτα δὲ κατὰ ὅσον ἐπιδίδωσι ῥώμῃ τε καὶ εὐεξίᾳ, κατὰ τοσοῦτο τοῖς τε περιπάτοις, καὶ τοῖς ἄλλοις πόνοις προστιθέναι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="33"> 
+<p>Τὰ εἴδη τῶν ἄλλων πόνων ἐστὶν, ἀναπάλαι τε χειρῶν, καὶ τρίψεις κατὰ πολλὴν ἡσυχίαν· δίαιτα μὲν ἥδε τῶν νεφριτικῶν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="34"> 
+<p>Εἰ δὲ πρὸς τὰ ἔξω τράποιτο τὸ ἐμπύημα, οἰδεῖ τε μᾶλλον ἐνταῦθα, καὶ τῇ χειρὶ κατα φανέστερον, [καὶ | <milestone unit="page" resp="Ms." n="153r"/> τῇ ὄψει γίγνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="35"> 
+<p>Τούτ]|ους <milestone unit="page" resp="Matthaeus" n="84"/> διέκαιον οἱ παλαιοὶ ᾗ <pb facs="b21948902_0086"/> ἀπεκορυφοῦτο μάλιστα, τὰ δὲ [ἕλκη ὡς τῶν κοινῶν] τὰ κοῖλα ἰῶντο· οὐ μὴν εἰς ἅπαν ἐξυγιάζετο, ἀλ[λά τι ἐσυριγγ]οῦτο τοῦ ἕλκους.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="36"> 
+<p>Εὐρυώδης δὲ ὁ σικελὸς, καὶ Ἱππο[κράτης ἠπί]σταντο καὶ τέμνειν τοὺς νεφριτικοὺς, ὥστε παρεκελεύον[το τὸν λιθ]ιῶντα νεφρὸν καὶ ἔμπυον ταύτῃ, τέμνοντα ἰᾶσθαι, ᾧ ἀπιστεῖν |<milestone unit="page" resp="Matthaeus" n="85"/> μὲν οὐκ ἔχω, τἄλλα γε ὄντι ἀγαθῷ τὴν τέχνην· αὐτὸς μέντοι οὔ φημί πω ἐπιτολμῆσαί τινι τοιούτῳ· ἐπεὶ καὶ τῷ τέμνοντι τὸν θώρακα ἐν τῇ φθινάδι νόσῳ παρὰ τὰς ἐσχάτας πλευρὰς καὶ διατιτράντι εἴσω καλῶς ποτε ἀπέβη, τοῦ πύου ταύτῃ ὑπεξελθόντος ὥστε τὸ ἄνω ἕλκος ἐπιξηρανθῆναι.</p></div> <pb facs="b21948902_0087"/> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:2" n="37"> 
+<p>Καὶ ἴσως ἐν τοῖς ἐσχάτοις ἀῤῥωστήμασι καὶ τοιοῦτόν τι τολμητέον· ὅπου γε μὴν καὶ ἄλλων ἰαμάτων ἔστιν εὐπορεῖν, οὐ χρὴ ἑκόντας ἐνταῦθα τὰ ἔσχατα ἐξευρίσκειν.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="3"> 
+<head rend="indent">γ′ (Ἀέτιος, δ′, ε′, ϛ′). Περὶ λιθιώντων νεφρῶν.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="1"> 
+<p rend="indent">Λίθοι ἐν τοῖς νεφροῖς γίνονται πωριδίοις μάλιστα ὅμοιοι· γίγνονται δὲ ἔπει|τα <milestone unit="page" resp="Matthaeus" n="86"/> ὀδύναι νεφρῶν, καὶ ἐπὶ οὔροις, τὰ μὲν πολλὰ λεπτοῖς καὶ ὑδατώδεσιν, ἔστι δὲ ὅτε καὶ ἐπὶ μέλασι, καὶ ἐρυθροῖς καὶ παχέσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="2"> 
+<p>Τοὐπίπαν γε μὴν μέλαιναι αἱ οὐρήσεις λύουσι τὴν νόσον· λύουσι δὲ καὶ ἄλλαι, αἳ καθάρσεις τέ εἰσι μᾶλλον ἢ δηλώσεις, πλὴν τῶν ὀξειῶν καὶ πυρετωδῶν νόσων· ἐν ἐκείναις δὲ ἀγρυπνίας, καὶ φλεγμονὰς σπλάγχνων, καὶ σπασμοὺς, καὶ παραφροσύνας, καὶ <pb facs="b21948902_0088"/> Θανάτους πέμπουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="3"> 
+<p>Ὥσπερ γὰρ τὰ ἄλλα μέγα διαφέρει, καὶ εἰς τὸ κακὸν, καὶ εἰς τὸ ἀγαθὸν, ὥρα τε καὶ ἡλικία, καὶ φύσις σώματος, καὶ δίαιτα, οὕτω δὴ χρὴ καὶ περὶ τῶν οὔρων προσδοκᾷν· τὰ γὰρ μέλανα, τῷ μὲν πρεσβύτῃ, καὶ φθινοπώρου, καὶ χειμῶνος, καὶ [ὅς τις] γέγονε μελάνων χυμῶν, ἧσσον δεινά | <milestone unit="page" resp="Matthaeus" n="87"/> ἐστιν· πρὸς δέ τι καὶ ὑπεκφέροι τῶν λυπησάντων ἂν, εἰ μὴ ἀπέρχοιτο· τῷ δὲ νέῳ, καὶ ἦρος, καὶ ὅς τις ὑγροτέρων ἐστὶ χυμῶν, τούτῳ χαλεπώτερα. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="4"> 
+<p>| <milestone unit="page" resp="Ms." n="153v"/> Τὴν μὲν οὖν ἐπὶ τοῖς οὔροις τέχνην, ἀξίαν γε οὖσαν τῷ ἰα[τρῷ παντὸς] μᾶλλον γιγνώσκεσθαι, γράψω ὕστερον. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="5"> 
+<p>Λιθιῶσι δὲ [καὶ ὀδύναι ἐκ δια]στημάτων· ὅταν [δὲ] πονήσῃ τὸ κῶλον· ἐστὶ δὲ τοῦτο κοιλία ἡ [κάτω· ἢ <pb facs="b21948902_0089"/> πνεύμασι, ἢ ἐ]πὶ σιτίοις ἀπέπτοις, καὶ ἄλλως ψυγὲν, τότε οὖν φῦ[σαί τε καὶ διαχωρήσεις], καὶ ἐρευγμοὶ ἀναδραμόντες ἔλυσαν τὸν πόνον, ἀτ[ὰρ καὶ λιθιῶσιν οὐ]ρήσεις πολλοῦ καὶ παχέος, πωρι δίων συναπελθόντων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="6"> 
+<p>Τὰ [μὲν οὖν πολλὰ] ἄνδρες κατὰ νεφροὺς |<milestone unit="page" resp="Matthaeus" n="88"/> λιθιῶσιν· γυναῖκες δὲ ἥκιστα· ὤφθη γε μὴν ἤδη καὶ γυνὴ ψαμμία οὐροῦσα, ἡ μὲν ἀπὸ νεφρῶν, ἡ δὲ ἀπὸ κύστεως· ἔστι δὲ ταύταις οὐ φαύλη πάνυ ἡ νόσος· οὔτε γὰρ στραγγουρία, οὔτε πόνοι ἰσχυροὶ ἔχουσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="7"> 
+<p>Αἴτιον δέ· οἱ γὰρ οὐρητῆρες εὐρύτεροι τῇ γυναικὶ, ὥσπερ καὶ τὰ ἄλλα ἔνδον· πρὸς δὲ καὶ κατὰ εὐθὺ πεφύκασι, μήκει τε μικρότεροί εἰσιν· αἱ δὲ ἄλλαι τῶν νεφρῶν νόσοι οὐδὲ γίγνονται τοῖς θήλεσι τοὐπίπαν, πλὴν ὅσα κοινωνίᾳ τῶν ὑστερῶν· τάχα μὲν δὴ <pb facs="b21948902_0090"/> καὶ αἱ καθάρσεις κωλύουσιν· τὸ δὲ δὴ μέγιστον· ἀταλαιπωρότερον γὰρ ἐν τοῖς ἀφροδισίοις τῶν ἀνδρῶν ἀπαλλάττουσιν· εἰ δέ τι καὶ ἕτερον ἐπικαλεῖται τὰ νεφριτικὰ, καὶ αἱ τῶν μίξεων συντάσεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="8"> 
+<p>Ὅσοις μὲν οὖν μείζους ἔνεισι | <milestone unit="page" resp="Matthaeus" n="89"/> λίθοι, ὀδύνας τε ὀξείας παρέχουσι καὶ στραγγουρίας· οὐ γάρ εἰσιν αἱ κοιλίαι τοῖς νεφροῖς εὐρεῖαι, ἀλλὰ αὐταί τε μικρότεραι, καὶ ὁ νεφρὸς ὑπὸ στερεότητος οὐκ ἂν διασταίη, ὥσπερ ἡ κύστις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="9"> 
+<p>Οὐροῦνταί γε μὴν οὗτοι μᾶλλον ἢ οἱ ἐν τῇ κύστει· καὶ γάρ τι καὶ ἥττους γίνονται καὶ μαλθακώτεροι· ἅτε οὖν πολυχρόνιοι ὄντες, ἀλγεινότατοι μέν εἰσι τοῖς νεφροῖς, καὶ διὰ τῶν οὐρητήρων ἰόντες, καὶ αὖθις ὅταν εἰς τὸ αἰδοῖον ἐρείσωσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="10"> 
+<p>Πολλοὶ δὲ καὶ αἷμα ἀπούρησαν ὑπὸ βίας τοῦ λίθου, καὶ ἐνάρκησαν μηρούς τε καὶ ἰσχία, καὶ τἄλλα πάθη, ὅσα ἐπὶ τοῖς ἕλκεσιν εἴρηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="11"> 
+<p>Οἱ δὲ οὐδέ τινα ὀδύνην ἔσχον, | <milestone unit="page" resp="Matthaeus" n="90"/> οὐδὲ αἷμα οὔρησαν, οἷς πῶροι μὲν οὐ συνίστανται, <pb facs="b21948902_0091"/> ψαμμία δὲ λεπτά· οὐδὲ μέγα πραγμα[|τεύονται <milestone unit="page" resp="Ms." n="154r"/> οὗ]τοι, οὐδὲ νοσεῖν οἴονται, ἅτε οὐκ ὀδυνώμενοι· χρὴ δὲ μηδενὸς [ἀμελεῖν· καὶ γὰρ τῷ] χρόνῳ ἀποδείκνυται πάντα δεινότερα. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="12"> 
+<p>Θεραπεύειν οὖν χρὴ τοὺς τάδε πά[σχοντας, καὶ] τὰς οὐρήσεις τῶν λίθων, καὶ τὰς ὀδύνας, τοῖς τε διὰ τοῦ πη[γάνου ἀποβρ]έγμασι, καὶ καταπλάσσοντας ἀλεύρῳ θερμίνῳ ἐ[νηψημένῳ] γλυκεῖ· μίσγειν δὲ τῷ ἀλεύρῳ πευκεδάνου τὰς ῥίζας [ὡς λειοτ]άτας καὶ μανδραγόρου φλοιὸν, καὶ μήκωνα, καὶ ὑοσκυάμου σπέρμα, καὶ ἀνθεμίδας τὰς εὐώδεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="13"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="91"/> Ἀγαθὸν <pb facs="b21948902_0092"/> δὲ καὶ ἄρτον ἕψοντα ἐν γλυκεῖ καταπλάσσειν, μᾶλλον μὲν ὀσφὺν καὶ κενεῶνας· οὐ μὴν οὐδὲ κύστιν καὶ ἦτρον κάκιον, πυκνὰ δὲ ἄλλο καὶ ἄλλο ἐπιφέρειν πρὶν [ἢ] ψυχρὸν εἶναι τὸ πρῶτον· εἰ δὲ μὴ, θερμάσματί γε ἔξωθεν ἑτέρῳ σκεπάζειν, ὡς μὴ καταψύχηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="14"> 
+<p>Πολλοῖς μὲν δὴ ἐς τὸ οὐρηθῆναι τὸν λίθον ἤρκεσε ταῦτα μόνα· σὺ δὲ ἀλλὰ καὶ τῶν οὐρητικῶν προπότιζε, τὸ μῆον, καὶ τὸ ἄκορον, καὶ τὴν ἄγρωστιν, καὶ τῆς νάρδου τὸ ἀφέψημα, καὶ τοῦ καλάμου, καὶ τοῦ ὀρεοσελίνου, καὶ ὑπερικοῦ σπέρμα, καὶ λιβανωτίδα, καὶ ἄσαρον, καὶ | <milestone unit="page" resp="Matthaeus" n="92"/> κόκκον, ᾧ βάπτουσι τὰ φοινικὰ μετὰ λευκοΐου σπέρματος, καὶ ἀσφοδέλου ῥίζης ἀφέψημα μετὰ σελίνου σπέρματος, καὶ πίτυος τῶν φύλλων. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="15"> 
+<p>Προσφέρειν δὲ καὶ ὅσα θρύπτειν τοὺς λίθους δύναται· ἔστι δὲ σίον τε καὶ ἀδίαντον, καὶ βδέλλιον, καὶ ἀλκυόνιον, <pb facs="b21948902_0093"/> καὶ ἄγνος, καὶ τῆς ὀξείας μυρσίνης ἡ ῥίζα, σμύρνα τε καὶ τῆς δάφνης ἡ ῥίζα, καὶ παλιούρου σπέρμα· πολλάκις γὰρ ὑπὸ μεγέθους ἐνισχόμενοι, εἰς τὸν ἔσχατον κίνδυνον ἄγουσι, τῇ τε τῶν πό νων ὀξύτητι, καὶ οὐκ ἐῶντες τὸ οὖρον ὑποχωρεῖν. </p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="16"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="93"/> Οἶδα δέ τινι τὰ μὲν ἄλλα διεξελθόντα τὸν λίθον, οὐ πολὺ δὲ ἐσωτέρω ἄκρου τοῦ αἰδοίου ἐμφραγέντα, καὶ ὀλίγου ἐδέησεν ἀπολέσθαι τὸν ἄνθρωπον ταῖς δυσουρίαις· ἀλλὰ τῇ στενῇ λαβίδι οἷοί τε ἐγενόμεθα ἐξελκύσαι αὐτόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="17"> 
+<p>Εἰ δὲ μὴ οὕτως ἐξελκύσαι οἷόν τε ἦν, τέμνειν διελογιζόμεθα τομὴν παραμήκη ἄνωθεν· τὸν γὰρ | <milestone unit="page" resp="Ms." n="154v"/> οὐρητῆρα, ὅπου μὴ μεγάλη ἀνάγκη, οὐ χρὴ τέμ[νειν· συριγγοῦται γὰρ ὡς ἐ]πίπαν, καὶ ὕστερον ταύτῃ ὕπεισιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="18"> 
+<p>— Ἐνθυμεῖσθαι δὲ [ἐπὶ τοῖς νεφροὺς λιθιῶ]σι καὶ τοῦτο· εἰ <pb facs="b21948902_0094"/> μὲν γὰρ γὰρ[συγ]κείμενοι εἶεν οἱ λίθοι καὶ [τὸ οὖρον ἐπέχοιεν, χρὴ ἀνα-] φέρειν κατα[κ]λύσαντά τε ὡς μάλιστα καὶ... τῶν [οὐ....] δὲ ἐρεῖ[.... ... ἐμπεφυλάχθαι τό τε πλεῖον π[οτὸν καὶ τὰ οὐρητι]κὰ, | <milestone unit="page" resp="Matthaeus" n="94"/> ἀλλὰ τοῖς χλιάσμασι ἀνιέναι, καὶ κενοῦν τὴν [γαστέρα κλύσ]ματι, ὡς μὴ πιέζωνται οἱ οὐρητῆρες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="19"> 
+<p>Καὶ ἐνθένδε ὅ[ταν ἐκπέσῃ] ὁ λίθος, γάλα ὄνειον διδόναι πίνειν· εἰ δὲ μὴ, ἵππειον, εἰ δὲ μὴ, αἴγ[ειον κε]ραννύων μέλιτι, καὶ τἄλλα χρηστότερον διαιτᾷν ὡς ἐν τοῖς ἕλκεσιν· αὗται μὲν περὶ τὰς οὐρήσεις τῶν λίθων αἱ θεραπεῖαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="20"> 
+<p>Τὸ δὲ μετὰ τοῦτο εἰρήσεται, ὅπως ἂν καὶ τὸ σύμπαν οἱ νεφροὶ μὴ λιθιῶσιν. —</p></div> <pb facs="b21948902_0095"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="21"> 
+<p>Μέγιστον δὲ τῆς Θεραπείας, μετριότης σίτου καὶ πέψις· αἱ δὲ πλησμοναὶ καὶ ἀπεψίαι οὐ μόνον παροξύνουσι τὴν νόσον, ἀλλὰ καὶ ἐπάγονται· πολλοὶ γοῦν ἐπὶ ταύταις οὔρησαν Θολεράς τε ὑποστάσεις καὶ ψαμμώδεις· διὸ δὴ παρακελεύομαι καὶ ἐμεῖν ἀπὸ δείπνου πολλάκις, καὶ τοῦ | <milestone unit="page" resp="Matthaeus" n="95"/> ἀψινθίου πίνειν Θαμινὰ, καί ποτε καὶ φαρμακευθῆναι κάτω, καὶ σιτία αἱρεῖσθαι ἀπὸ ὧν οὔτε πλησμοναὶ, οὔτε ἀπεψίαι ἔσονται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="22"> 
+<p>Παρακελεύομαι δὲ καὶ τοῖς οὐρητικοῖς καθαίρεσθαι, τὸ μὲν ἐπὶ ἡμέρᾳ ἐσθίοντα δαῦκόν τε ἑφθὸν, καὶ μάραθρον, καὶ ἱπποσέλινον, καὶ σόγχον καὶ σκόλυμον, καὶ γλήχωνα, καὶ καλαμίνθην, καὶ τῶν Θαλασσίων ἐχίνους τε καὶ στρόμβους, καὶ καρκίνους τε καὶ ἀστακοὺς, καὶ τὰ ὀστρακόδερμα· πάντα | <milestone unit="page" resp="Matthaeus" n="96"/> ταῦτα μὲν τὰ ἐπὶ ἡμέρᾳ· διὰ πλείονος δὲ ἠρυγγίου τε ἀφέψημα πίνειν καὶ χαμαιπίτυος, καὶ δικτάμνου, καὶ πολίου, καὶ τριβόλου ῥίζης, καὶ κυμίνου ἀγρίου, καὶ <pb facs="b21948902_0096"/> ἃ Θρύπτειν τοὺς λίθους εἴρηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="23"> 
+<p>Χρὴ δὲ καὶ τὸ ὕδωρ, τό τε εἰς τὴν ἄλλην δίαιταν, καὶ ἐν ᾦ τὰ φάρμακα | <milestone unit="page" resp="Ms." n="155r"/> [ἐνέψεται λεπτόν τε] εἶναι καὶ γλυκὺ καὶ καθαρὸν, τὰ δὲ ποτάμια καὶ λιμναῖα [ἀποδοκιμαστέον· κ]αὶ γὰρ οὐκ ἐνόντας λίθους ποιήσειεν ἄν· καὶ τὸν οἶνον λεπτόν τε [εἶναι, καὶ γλυκὺν] καὶ λευκόν· οὐρητικὸς γὰρ μᾶλλον τοῦ μέλανος καὶ στρυφνοῦ [τε καὶ παχέος].</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="24"> 
+<p>Τό τε σύμπαν εἰς εὐεξίαν ἄγειν τὸν ἄνθρωπον ταῖς ταλαιπωρίαις [συμμέτρω]ς χρώμενος, καὶ ἀνατρίβων τό τε ἄλλο σῶμα, καὶ τὴν ὀσφὺν, [τοτὲ μὲν] ξηρότερον, τοτὲ δὲ λιπαρώτερον, ποτὲ δὲ ἐν φαρμάκοις, τῇ τρυγὶ, καὶ τῷ νίτρῳ, καὶ τῇ κισσήρει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="25"> 
+<p>Συμφέρει δὲ καὶ τῷ ἀρσενικῷ χρῆσθαι, ὅνπερ τρόπον αἱ γυναῖκές εἰσιν εἰθισμέναι, καὶ τὰ ἄλλα οὕτω ποι|εῖν <milestone unit="page" resp="Matthaeus" n="97"/> ὡς ἐν τοῖς <pb facs="b21948902_0097"/> χρονίοις εἰθίσμεθα, καὶ ἑλλέβορον πίνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:3" n="26"> 
+<p>Εἰ δὲ μὴ ἐπὶ τούτοις παύσαιτο ἡ νόσος, συγγηράσκει.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="4"> 
+<head rend="indent">δ′ (Ἀέτιος, ιζ′). Περὶ σκληρίας νεφρῶν.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:4" n="1"> 
+<p rend="indent">Ὅσαι δὲ σκληρότητες κατὰ νεφροὺς γίγνονται, ὀδύνας μὲν οὐκέτι παρέχουσι, δοκεῖ δὲ αὐτοῖς, ὥσπερ ἐκ τῶν κενεώνων κρέμασθαί [τι], καὶ ναρκώδεις μέν εἰσι τὰ ἰσχία, ἀκρατεῖς δὲ σκελῶν, οὐροῦσί τε ὀλίγα, τήν τε ἄλλην ἕξιν τοῖς ὑδατουμένοις μάλιστα ἐοίκασιν· οἱ δέ τινες καὶ σαφῶς ὑδατοῦνται ἐν τῷ χρόνῳ, οἷα καὶ ἀπὸ τῶν ἄλλων σπλάγχνων σκληρυνομένων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:4" n="2"> 
+<p>Τούτους ἁπαλύνειν κηρωταῖς, καὶ μαλάγμασι, καὶ τρίψεσι, καὶ πυριάμασι, καὶ οὐρητικὰ προσφέρειν, καὶ τὴν γαστέρα ὑποκλύζειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:4" n="3"> 
+<p>Ἐλπίδες δὲ ἐντεῦθεν, καὶ τὰς κινήσεις τῶν σκελῶν ἐπανελθεῖν, καὶ μὴ ὑδατωθῆναι.</p></div></div> <pb facs="b21948902_0098"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="5"> 
+<head rend="indent">ε′ (Ἀέτιος, β′). | <milestone unit="page" resp="Matthaeus" n="98"/> Περὶ αἵματος οὐρήσεως.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:5" n="1"> 
+<p rend="indent">Ἔσθι δὲ καὶ ἥδε ἡ νόσος νεφρῶν· οὐ δύνανται τὰ οὗρα ἠθεῖν, ἀλλὰ εὐρύτεροι ὄντες, χαλῶσί τι καὶ τοῦ αἵματος ἐκ τῆς φλεβὸς, καὶ ἄλλας παχύτητας· ὥστε εἰ κατασταθείη ὑποστάσεις τε καὶ ἐπιπάγους ἄνωθεν ἴσχειν Θαλασσίῳ πνεύμονι μάλιστα ἐμφερεῖς· οὕτω δὲ καὶ εἴκαξε Κλεόφαντος ὁ Κλεομβρότου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:5" n="2"> 
+<p>Πεφθέντος δὲ τοῦ σιτίου τε καὶ παρελθόντος εἰς τὰς φλέβας, οὐρεῖται ὁποῖα εἴρηται· νεαροῦ δὲ ἔτι ὄντος, καθαρὰ καὶ ἀνυπόστατα καὶ λελυμένα καὶ ὑδατώδη· αἴτιον δέ· οὐ γάρ πω [οὔτε] δέδευται | <milestone unit="page" resp="Ms." n="155v"/> τὰ σιτία τῷ ποτῷ, οὔτε ἡμάτωται.</p></div> <pb facs="b21948902_0099"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:5" n="3"> 
+<p>Τὸ μὲν εἶδος |<milestone unit="page" resp="Matthaeus" n="99"/> τοῦ [πάθους τοιοῦτο· πο]νοῦσι δὲ οὐδὲν, ἢ βραχὺ παντελῶς· οἱ δὲ καὶ ῥᾴους ἐπὶ[ταῖς διουρήσεσιν]· λεπτύνονταί γε μὴν ἀνὰ χρόνον πάντες καὶ μᾶλλον ὅ[σοις αἶμα πλεῖον οὐρεῖται].</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:5" n="4"> 
+<p>--—Τούτοις κατὰ ἀρχὰς ἀτρεμεῖν τε συμφέρει καὶ σιτί[α στύφοντα, καὶ οἶ]νοι μέλανες, καὶ τῶν οὐρητικῶν ἀπέχεσθαι, καὶ λα[γνείας· πίνειν δὲ] τὰ τῶν αἱμοῤῥαγιῶν φάρμακα, μάλι[στα πολυγόνου] χυλὸν, καὶ τραγάκανθον ἐν οἴνῳ βεβρεγμένην, καὶ συμφύτου τῆς [ῥίζηε] τὸ ἀφέψημα· ἐπιτιθέναι δὲ καὶ τῇ ὀσφύϊ ἔξωθεν τὰ πρὸς τοὺς [ῥοῦς] καὶ τὰς πτύσεις τοῦ αἵματος, καὶ ὅσα ξηρότητι συντείνειν <pb facs="b21948902_0100"/> δύναται· μετὰ δὲ, ἀνατρέφειν τὴν ἕξιν γάλακτί τε μηλείῳ, καὶ σιταρίοις, καὶ κρέασι, ἕως ἂν καὶ τὰ γυμνάσια ἤδη προσδέχωνται, καὶ τὸ σύμπαν σῶμα [εἰς] ἰσχὺν ἄγειν· οὕτω | <milestone unit="page" resp="Matthaeus" n="100"/> γὰρ καὶ οἱ νεφροὶ τὸ οἰκεῖον ἔργον ἐπιτελέσουσιν· οἰκεῖον δέ που τοῖς νεφροῖς διηθεῖν τὰ οὖρα ἀπὸ τοῦ αἵματος, καὶ μήτε χροιὰν αἵματος, μήτε αἷμα αὐτὸ, μήτε παχύτητα ἄλλην μηδεμίαν παριέναι ἔξω. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:5" n="5"> 
+<p>Οἷς δὲ κατὰ περιόδους αἵματος οὔρησις γίγνεται, πρὶν μὲν κενωθῆναι τοῦ αἵματος, βαρεῖς κατὰ ὀσφὺν καὶ ἐπώδυνοί εἰσιν· κενωθέντες δὲ ἐπικουφίζονται, ὥσπερ ἐπὶ αἱμοῤῥοΐδι. Χρὴ οὖν φλέβα τέμνειν ἐν ἀγκῶνι, ὀλίγον τῆς περιόδου ἔμπροσθεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:5" n="6"> 
+<p>Τὸ μὲν κεφάλαιον τῆς Θεραπείας τόδε· διαιτᾷν δὲ, ὥσθε μὴ πληθώραν ὑπογίγνεσθαι, καὶ τὰ ἄνω γυμνάζειν. <pb facs="b21948902_0101"/></p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="6"> 
+<head rend="indent">ϛ′ (Ἀέτιος, α′) Περὶ διαῤῥοίας τοῦ οὔρου.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="1"> 
+<p rend="indent">Κοινὴ δὲ ἄλλη νόσος ἥπατος καὶ φλεβὸς τῆς | <milestone unit="page" resp="Matthaeus" n="101"/> ἐπὶ νεφροὺς τει νούσης, καὶ αὐτῶν [τῶν] νεφρῶν, καὶ προσέτι οὐρητήρων καὶ κύστεως, εἰ καῦμα ἔχοι τὸν ἄνθρωπον, καὶ δίψα ἄπαυστος, καὶ πίνων αὐτίκα οὐροίη, καὶ συντήκοιτο τὸ σῶμα ἐπὶ κύστιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="2"> 
+<p>Κοιλίαι δὲ τούτοις ξηραίνονται, καὶ ἀνίδρωτές εἰσι, καὶ ἀπόλλυνται ἐν χρόνῳ λεπτυνθέντες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="3"> 
+<p>Καὶ | <milestone unit="page" resp="Ms." n="156r"/> [ὅτι λειεντερίαν εὗρον] ἐγγυτάτω ταύτης, διάῤῥοιαν εἰς οὖρα ὠνόμα[σαν, οὐ λειουρίαν· ἀλλ]ὰ νῦν γεὀνομαδέσθω· καὶ γάρἐστιν οἷον ἡ λειεντερία [κατὰ ἔντερα, τοι]όνδε ἄλλο κατὰ κύστιν τὸ εἰρη|μένον <milestone unit="page" resp="Matthaeus" n="102"/> <pb facs="b21948902_0102"/> ἀῤῥώστημα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="4"> 
+<p>Καὶ [συμβαίνει ἐνθένδε] ὥσπερ καὶ ἐκ τῆς λειεν τερίας τελευτῆσαι [τὸν ἄῤῥωστον] ἀποληφθέντων ἀθρόως τῶν οὔρων, εἰ μή τις ἐμέ[τῳ ἀντι]σπᾷν ἐθέλοι· τοῦτο γὰρ τὸ μέγιστον ἴαμα τῇ νό[σῳ ταύτῃ πι]όντα αὐτίκα ἐξεμεῖν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="5"> 
+<p>Πίνειν δὲ ὡς ψυχρότατον καὶ τἄλλα τῇ διαίτῃ ψυχροτέρᾳ χρῆσθαι, τῶν τε ψυχόντων λαχάνων ἐσθίοντα, καὶ κυκεῶνα πίνοντα, καὶ πτισάνης χυλὸν ῥοφοῦντα· οὐρητικὸν δὲ μηδὲν προσφέρειν, ἀντισπᾷν δὲ καὶ εἰς ἱδρῶτας· εἰ γὰρ καλῶς δύναιτο ἐξιδροῦν, ἐπιξηραίνοιντο ἂν αἱ οὐρήσεις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="6"> 
+<p>Ἄριστον δὲ εἰ ἐν πίθῳ πυριῷτο, ὑπερέχων ἄνω τὴν κεφαλὴν, ὡς τὸ μὲν ἄλλο σῶμα Θερμαίνηται, ψυχρὸν δὲ ἕλκῃ ἀέρα· καὶ τὰ ἄλλα, ὥσπερ καῦσον Θεραπεύειν, ἵνα σοι ταχὺ ἄδιψος γένηται. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="7"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="103"/> Τήν τε <pb facs="b21948902_0103"/> οὖν πάλην τοῦ ἀλφίτου φυράσας ὀξυῤῥοδίνῳ, κατάπλασσε τὸ ὑποχόνδριον, καὶ φύλλα ἀμπέλου τρίψας ἁπαλὰ, καὶ κοτυληδόνα, καὶ ἑλξίνην, καὶ ἀνδράχνην, καὶ ὅσα ἄλλα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="8"> 
+<p>Προπότιζε δὲ καὶ πολυγόνου χυλὸν συνεχῶς, καὶ ἑλένιον ἐν οἴνῳ μέλανι, καὶ σύμφυτον, καὶ φοινίκων ἀπόβρεγμα, καὶ μύρτων, καὶ ἀπίων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="9"> 
+<p>Κατὰ ἀρχὰς δὲ ἐν ἀγκῶνι φλέβα τέμνειν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:6" n="10"> 
+<p>Τὰ μὲν οὖν νεφριτικὰ οὕτως ἄν τις κάλλιστα ἰῷτο.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="7"> 
+<head rend="indent"> ζ′ (Ἀέτιος, κς′). Περὶ κύστεως φλεγμονῆς.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="1"> 
+<p rend="indent">Τῶν δὲ περὶ κύστιν νοσημάτων χαλεπώτατον μὲν καὶ Θανατωδέστατόν ἐστι φλεγμονὴ κύστεως· | <milestone unit="page" resp="Matthaeus" n="104"/> ὥστε πυρέττουσί τε ὀξέως, καὶ ἀγρυπνοῦσι, καὶ παραπαίουσι, καὶ ἐμοῦσι χολώδη ἄκρατα, καὶ οὐρεῖν οὐ δύνανται, καὶ [ἦτρον] μὲν σκληρύνεται αὐτοῖς· ὀδύναι <pb facs="b21948902_0104"/> δὲ ἰσχυραὶ τὸ ἐπίσειον [τ]ύπτουσιν· χεῖρες δὲ καὶ πόδες οὐκέτι ἀναθερμαίνονται· μάλιστα |<milestone unit="page" resp="Ms." n="156v"/> δὲ περὶ ἥβην καὶ ὀλίγον ἔμπροσθεν καταλαμβ[άνουσιν οἱ πόνοι.] Ἀποκτείνει διὰ ταχέων, εἰ μὴ οὐρήσειαν πολλ[ὰ οὖρα καὶ παχέα καὶ] πυώδη, καί τι τῆς φλεγμονῆς πρὸς τὰ ἔξω τρ[απείη, ἢ ἀνείη ἡ ὀ]δύνη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="2"> 
+<p>Φλέβα τέμνε, μὴ εἰς μακρὰν δὲ τέμνε, [ἀλλὰ ἀρχο]μένης τῆς νόσου, καὶ τοῖς ἐπιβρέγμασι συνεχῶς [Θέρμαινε]. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="3"> 
+<p>Ἑψέσθω δὲ ἐν τῷ ἐλαίῳ πήγ[ανον, καὶ] ἄνηθον, καὶ ἡ ἀλθαίας ῥίζα, καὶ | <milestone unit="page" resp="Matthaeus" n="105"/> ἡ κοιλία ὑποκλυζ[έσθω μα]λακῷ κλύσματι, καὶ ἔπειτα <pb facs="b21948902_0105"/> ἐνιέσθω τοῦ ἐπιβρέγματος εἰς τὸ ἔντερον, ὡς καὶ ἐνθένδε παρηγορῆται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="4"> 
+<p>Ἄμεινον δὲ, εἰ καὶ μήκωνα συνέψοις τῷ ἐλαίῳ, καὶ εἰ χηνὸς στέαρ διατήκων, ἢ ὄρνιθος, ἐγχέοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="5"> 
+<p>Ἐγὼ δὲ καὶ ὀποῦ μήκωνος τρίτον ἡμιοβολίου μετὰ σμύρνης καὶ κρόκου ὀλίγου χρίσας εἰς ἔριον ὑπέθηκα, ὥσπερ τοὺς πεσσοὺς ταῖς γυναιξὶ, καὶ αὐτίκα μὲν αἱ ὀδύναι ἐπαύσαντο, αὐτίκα δὲ ἐκοιμήθη ὁ ἄνθρωπος· ὥστε μοι ἤδη τὸ φάρμακον καὶ εἰς ἄλλας ὀδύνας ἀρκεῖν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="6"> 
+<p>Πυριᾷν δὲ καὶ κύστεσι θερμοῦ ὕδατος, καὶ ἀλεύρῳ θερμῷ ἐν μαρσύποις καὶ ῥάκεσιν ἠλαιωμένοις, καὶ εἰς ὕδωρ θερμὸν καθίζειν, παρακαλοῦντα οὐρεῖν ἐν τῷ ὕδατι· ἔστω δὲ καὶ | <milestone unit="page" resp="Matthaeus" n="106"/> ἀφέψημα λίνου σπέρματος καὶ τήλεως ὕδωρ, καί τι καὶ σπερμάτιον ἐμβεβλήσθω τῶν εὐωδῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="7"> 
+<p>Πάνυ μὴν ἐμπείρου <pb facs="b21948902_0106"/> ἐστίν· οὐ γὰρ δύναται ἡ κύστις ὑπὸ φλεγμασίας καὶ σκληρότητος περιστελλομένη ἐκπέμπειν τὸ οὖρον· καὶ ἄλλον τινὰ παραστάντα πιέζειν τὸ ἦτρον, ἀλλὰ μὴ πλέον τοῦ καιροῦ, ὡς μὴ ἐκ περισσοῦ ὀδύνη γίγνηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="8"> 
+<p>Καὶ ἔστι Φιλομήλου τὸ νόημα πρώτου, ὡς ἐγὼ οἶδα, καὶ οὔρησεν ὁ ἄνθρωπος αὐτῷ ποιήσαντι οὕτως.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="9"> 
+<p>Χρὴ | <milestone unit="page" resp="Matthaeus" n="107"/> δὲ καὶ ταῖς ὠμαῖς λύσεσι τοῦ μήκωνος ἐμβαλεῖν, καὶ τοῦ ὑοσκυάμου, καὶ τοῦ μανδραγόρου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="10"> 
+<p>Μετὰ δὲ σικυωνίῳ ἐλαίῳ χρίειν, | <milestone unit="page" resp="Ms." n="157r"/> [καὶ κηρωτὰς ἐπιτι] θέναι διὰ οἰσύπου καὶ καστορίου πεποιημένας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="11"> 
+<p>[Τὴν δὲ τοῦ αὐλίσ]κου κάθεσιν ἀνδρὶ μὲν ἀποδοκιμάζω· διὰ γὰρ τὸ [ἐργωδῶς ἐγκα]θίεσθαι τὰς ὀδύνας προσπαροξύνει· γυναι[κὶ δὲ δοκῶ οὐκ ἄ]πο τρόπου <pb facs="b21948902_0107"/> εἶναι καθιέναι· βραχύς τε γὰρ ὁ [οὐρητὴρ καὶ κα]τὰ εὐθὺ πέφυκεν, ὥστε ἀνωδυνώτερον διαχει[ρίζεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:7" n="12"> 
+<p>—Τὰς μὲν] φλεγμονὰς θεραπεύειν οὕτως.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="8"> 
+<head rend="indent"> η′ (Ἀέτιος, κζ′). [Αἱμοῤῥ]αγία ἀπὸ κύστεως.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:8" n="1"> 
+<p rend="indent">Εστι δὲ καὶ ἄλλη νόσος ὀξεῖα ἐν κύστει· ῥή[γνυται] δὲ φλὲψ ἐν αὐτῇ, καὶ τὸ μέν τι | <milestone unit="page" resp="Matthaeus" n="108"/> ἔξω διαδίδωσι τοῦ αἵματος, τὸ δέ τι καὶ εἴσω πήγνυται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:8" n="2"> 
+<p>Πάντως δὲ τὰ τοιαῦτα ἀσώδη, καὶ ἐφιδροῦντα, καὶ ἄκρα ψύχεται, καὶ οὖρα ἐπιλαμβάνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:8" n="3"> 
+<p>Διὰ ταχέων οὖν, ὥσπερ ἐν ταῖς ἄλλαις αἱμοῤῥαγίαις, καὶ ἐπιδῆσαι βραχίονας, περιστρέψας ἔριον, ἢ ὑποδεσμίσι, καὶ σπόγγους προστιθέναι, βρέχων ὄξει καὶ ὕδατι, <pb facs="b21948902_0108"/> τῷ ἐπισείῳ καὶ τῷ περινέῳ, καὶ καταπλάσσειν πολύγονόν τε καὶ βάτον, καὶ ῥοιᾶς ἄνθη, καὶ σέλινον καὶ κορίαννον, καὶ σχίνου φύλλα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:8" n="4"> 
+<p>Τούτων ἕκαστον μετὰ πάλης ἀλφίτου καταπλάσσειν, καὶ πυκνὰ ἀφαιρεῖν, πρὶν εἶναι χλι|αρόν. <milestone unit="page" resp="Matthaeus" n="109"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:8" n="5"> 
+<p>Διδόναι δὲ καὶ πίνειν τὰ τῶν αἱμοῤῥαγιῶν φάρμακα, οἷον τῆς τε ποντικῆς ῥίζης κεκομμένης, καὶ λωτοῦ τορνεύματα, καὶ γλυκυσίδης τὸν ἐρυθρὸν κόκκον, καὶ ῥάμνου φύλλων, καὶ προμάλου ἀπόβρεγμα, καὶ μηδείου ῥίζαν, καὶ κλυμένου, καὶ ἵππουριν, καὶ κενταυρίου τοῦ μεγάλου τὴν ῥίζαν, καὶ λιβανωτοῦ φλοιόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:8" n="6"> 
+<p>Πολλὰ δὲ καὶ ἄλλα ἐν τῷ μακρῷ χρόνῳ ἐξεύρηται· καὶ τά γε πλεῖστα αὐτῶν, τὰ μὲν ἐν ταῖς τοῦ θώρακος πτύσεσιν ἤδη εἴρηται, τοῦτο δὲ καὶ ἐν τοῖς γυναικείοις εἰρήσεται ὕστερον.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="9"> 
+<head rend="indent">θ′ (Ἀέτιος, κζ′). | <milestone unit="page" resp="Matthaeus" n="110"/> Περὶ θρόμβου ἐν κύστει.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:9" n="1"> 
+<p rend="indent">Ὅσοις δὲ πήγνυται τὸ αἷμα ἐν τῇ κύστει, τὰ μὲν πρῶτα πειρᾶσθαι <pb facs="b21948902_0109"/> διαχεῖν αὐτὸ φαρμάκοις, τοῦ τε ἡμιονίου | <milestone unit="page" resp="Ms." n="157v"/> διδόντας πίνειν, καὶ τῆς ἀρτεμισίας, καὶ τοῦ ἑλιχρύσου, [καὶ τοῦ ὀποῦ τοῦ κυρη]ναϊκοῦ, καὶ τῆς κονύζης, [καὶ ἀψινθίου, καὶ ῥα]φανίδος τοῦ σπέρματος, καὶ βάτου χυλοῦ, καὶ [σεύτλου χυλοῦ, ἐν ὄ] ξει ἀρτύων ἕκαστον, [ἢ] λαγωοῦ πυτίας, ἢ νεβροῦ, ἢ [ἐρίφου, ἢ ἄλλου τινὸς ζῴου].</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:9" n="2"> 
+<p>Μετὰ δὲ, εἰ μὴ λύοιτο, τεμεῖν κάτωθεν τὸν περίνεον, ὥσ[περ ἐπὶ τῆς λιθιώσης] κύστεως, καὶ κομισάμενον τοὺς θρόμβους τὰ ἄλλ[α ὥσπερ τὰ αἱ]μοῤῥαγικὰ πειρᾶσθαι θεραπεύειν· ὅταν δὲ μηκέτι αἱμοῤῥαγῇ, [ὡς τὰ ἕλκη] τὰ ἔναιμα. <pb facs="b21948902_0110"/></p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="10"> 
+<head rend="indent">ι′ (Ἀέτιος, κζ′). [Αἱμοῤῥαγία ἀπὸ τοῦ καυλοῦ.]</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:10" n="1"> 
+<p rend="indent">Γὰς δὲ ἐκ τοῦ καυλοῦ αἱμοῤῥαγίας καὶ | <milestone unit="page" resp="Matthaeus" n="111"/> ἐπίθεμ[α ψυκτήριον], καὶ ἔγχυτόν τι τῶν εἰρημένων ἰᾶται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:10" n="2"> 
+<p>Εἰ [δέ τι τῶν ἰσχα]ίμων ἄλλο μὲν διὰ τοῦ αὐλίσκου ἐγχέοις, ἄλλο δὲ κλυστῆρι εἰς τὸ ἔντερον μέγα, καὶ τοῦτο ὀνίνησι τὰς αἱμοῤῥαγίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:10" n="3"> 
+<p>Χρὴ δὲ τὸν αὐλίσκον τὰ μὲν ἄλλα εἶναι ὁποῖός ἐστιν, ἐξ ἄκρου δὲ ἔχειν ἐξηρτημένον ἄσκωμα.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="11"> 
+<head rend="indent">ια′ (Ἀέτιος, κη′, κθ′). Περὶ φυμάτων ἐν κύστει.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="1"> 
+<p rend="indent">Ὅσα δὲ φύματα ἐν κύστει πεπαίνεσθαι χρῄζει, τὸ μὲν κράτιστον <pb facs="b21948902_0111"/> ἐπὶ ἀρχομένων πειρᾶσθαι διαλύειν, ἵνα μὴ εἰς ἔμπυον τράπηται· ἢν δὲ μὴ | <milestone unit="page" resp="Matthaeus" n="112"/> δύνηται, διὰ ταχέων πεπαίνειν, οἷς καὶ τοὺς νεφροὺς ἔφαμεν, καὶ προσέτι καρδάμῳ μετὰ ἀλεύρου, καὶ ὀρόβῳ μετὰ μέλιτος, καὶ περιστερῶν κόπρῳ μετὰ ἰσχάδων, καὶ τοῖς πυριάμασι, καὶ τοῖς ἄλλοις ἅπασιν ὡς ἐκεῖ εἴρηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="2"> 
+<p>Τὰ πολλὰ μὲν δὴ περὶ τὸν τράχηλον τῆς κύστεως ἐκπυεῖ, καὶ περὶ τὴν ἕδραν, καὶ ταύτῃ τὸν ἀπόπατον κωλύει· ἐκπυεῖ δὲ καὶ ἑτέρωσε, τὰ μὲν κατὰ τὸ ἦτρον, τὰ δὲ ἔνθεν ἢ ἔνθεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="3"> 
+<p>Οὐ χαλεπὸν δὲ τεκμαίρεσθαι σύμπαντα τῇ τε ὀδύνῃ, καὶ τῷ βάρει, καὶ τοῖς σφυγμοῖς, καὶ ψηλαφῶντα· ἅμα γὰρ σκληρόσαρκα, καὶ ἐξογκοῦντα, καὶ θερμότερα τὰ μέλλοντα ἐκπυεῖν γίνεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="4"> 
+<p>Ὃσα μὲν οὖν εἴσω ῥέπει τῶν ἐμπυημάτων, εἴσω καὶ ῥήγνυται· τὰ δὲ ἔξω τετραμμένα, ἔξω καὶ ῥήγ|νυται, <milestone unit="page" resp="Matthaeus" n="113"/> τὰ μὲν <pb facs="b21948902_0112"/> πρὸς τὴν ἕδραν, τὰ δὲ ὅπῃ καὶ ἔτυχε ῥέψαντα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="5"> 
+<p>Δεινὰ μὲν οὖν καὶ ταῦτα | <milestone unit="page" resp="Ms." n="158r"/> [καὶ θανατηφόρα] τοὐπίπαν· δεινότερά γε μὴν τὰ εἴσω ῥηγνύμενα· [αἵ τε γὰρ ὀδύναι] ὀξεῖαι, καὶ τὰ ἕλκη ἀΐδια διὰ τὸ μέν τι συνεχῶς [ἅπτεσθαι τὸ οὖρον αὐτ]ῶν, νιτρῶδες καὶ ἁλμυρὸν ὄν· οὐδὲ γὰρ, εἰ πλεῖστον ὑ[πίοι τὸ οὖρον, δύν]αται πᾶσα κενωθῆναι κύστις, ἀλλὰ ἀεὶ μέν τι ἐν [αὐτῇ μένει, καὶ] προσκλύζει τοῖς ἕλκεσιν, ἀεὶ δὲ πλήρης [ἐστὶ τοῦ οὔρου], ὅσον μόνον [διαστολὰς] καὶ συστολὰς ἔχουσα εἰς ὅσον ὑποπίμπλασθαί τε [καὶ κε]νοῦσθαι πέφυκεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="6"> 
+<p>Διά τε οὖν τοῦτο, καὶ ὅτι νευρώδης ἐστιν, οὐκ εἰς ἅπαξ γε <pb facs="b21948902_0113"/> ὑγιάζεται τὰ ἐν αὐτῇ ἕλκη· τὸ δὲ πύον οὐρεῖταί ποτε μὲν ὕφαιμον, ἄλλοτε δὲ μυξῶδες καὶ παχὺ, καὶ ὑποστάσεις ὥσπερ ἄλευρα ἔχον· ποτὲ δὲ καὶ ὑμένια λεπτὰ τῷ | <milestone unit="page" resp="Matthaeus" n="114"/> οὔρῳ συναπέρχεται· καὶ τότε δὴ ὂζει κάκιστον, ὁπότε ἐπὶ σηπομένοις ἕλκεσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="7"> 
+<p>Καὶ ὀδυνῶνται μὲν ἀεὶ, μάλιστα δὲ ἀρχόμενοί τε οὐρεῖν, καὶ ἀποπαυόμενοι, καὶ τῶν οὔρων ἀκράτων γιγνομένων· καὶ οὔτε ὀρθούμενοι ἀνέχονται, οὔτε ὁπῃοῦν κλιθέντες· οὔτε γὰρ αἱ ὕπτιαι κλίσεις τούτοις μέγα τι προσωφελοῦσιν, ἅτε ἠρτημένης τῆς κύστεως ἐκ τοῦ ἤτρου· καὶ αἱ πλαγίαι δὲ περιῤῥεπεῖς γίγνονται τῇ κύστει, καὶ αἱ πρηνεῖς πιέζουσι πλέον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="8"> 
+<p>Ὑπό τε οὖν τῆς ἀπαύστου ὀδύνης, καὶ ὑπὸ πυρετῶν, καὶ ἀγρυπνιῶν, καὶ συντήξεων ἀπόλλυνται, οἱ μὲν οὖν θᾶττον, οἱ δὲ σχολαιότερον, ὡς ἂν καὶ τὰ ἕλκη μεγέθους τε ἔχῃ, καὶ τῶν ἄλλων κακῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="9"> 
+<p>Τὰ μὲν πάθη τοιάδε τῆς νόσου· —θεραπεία δὲ ἡ αὐτὴ <pb facs="b21948902_0114"/> τοῖς κατὰ νεφροὺς | <milestone unit="page" resp="Matthaeus" n="115"/> ἕλκεσιν· μέγιστον δὲ κἀνταῦθα αἱ γαλακτοποσίαι, καὶ [ἡ] ὑπόλοιπος χρηστὴ δίαιτα, ὡς μὴ δριμὺ τὸ οὖρον γιγνόμενον δάκνῃ τε καὶ ἐρεθίζῃ τὰ ἕλκη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="10"> 
+<p>Παρηγορεῖσθαι δὲ καὶ φαρμάκοις, τοῦτο μὲν ἄνωθεν τῷ ἤτρῳ περιβάλλοντα κηρωτὰς διά τε οἰσύπου πλυτοῦ, καὶ βουτύρου, καὶ στύρακος, καὶ χηνείου στέατος, τοῦτο δὲ καὶ εἰς τὸν οὐρητῆρα ἐγχέοντα καὶ ὕδωρ, καὶ γάλα, καὶ ῥόδινον | <milestone unit="page" resp="Ms." n="158v"/> μύρον, θερμαίνοντα, τοῦτο δὲ καὶ εἰς τὸ ἔντερον ἐγ[χέοντα πτισάνης] χυλὸν, καὶ βούκεραν, καὶ σικύου σπέρμα μετὰ [γάλακτος πάνυ λεῖον], ἐπιστάζων ἑκάστῳ τοῦ ῥοδίνου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="11"> 
+<p>Κλύζειν δὲ οὐ [χρὴ ὕπτιον· οὐ γὰρ παρ]ιᾶσιν αἱ κύστεις ἔσω τὸ κλύσμα, ἅτε σ[κληραὶ καὶ βαρεῖαι οὖ]σαι καὶ ἐπικείμεναι τῷ ἐντέρῳ, ἀλλὰ ἐν γό[νασι <pb facs="b21948902_0115"/> κλίνειν τὸν ἄνθρωπον· καὶ] γὰρ ἀφίστανταί τε αἱ κύστεις καὶ χαλῶσι τὸ [ἔντερον ἐν σχήματι τοιῷδε, ὥστε] ἀναδέξασθαι τὸ κλύσμα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:11" n="12"> 
+<p>Πυκνὰ δὲ καὶ εἰς [θερμὸν ὕδωρ ἐγκαθίζειν]· καὶ γὰρ τοῦτο πραΰνει τὰς ὀδύνας· καὶ τοῖς χρίσμασιν, ὡς [ἐκεῖ εἴρηται], χρίειν, καὶ τἄλλα ὡσαύτως ποιεῖν.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="12"> 
+<head rend="indent">| <milestone unit="page" resp="Matthaeus" n="116"/> ιβ′ (Ἀέτιος, θ′). [Περὶ λιθιώσης κύστεως.]</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="1"> 
+<p rend="indent">Τοὺς δὲ λίθους τοὺς ἐν κύστει γενομένους κατὰ ἀρχὰς μὲν πειρᾶσθαι ὑπεξάγειν φαρμάκοις· τὰ δὲ φάρμακά ἐστι πρασίου τε σπέρμα, καὶ ἱππομαράθρου ῥίζα, καὶ ἀρτεμισία, καὶ ἀνθεμὶς ἡ εὐώδης, καὶ ἀμάρακος, καὶ ἄγρωστις, καὶ ὅσα πρότερον πρὸς τοὺς <pb facs="b21948902_0116"/> νεφροὺς εἴρηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="2"> 
+<p>Μὴ | <milestone unit="page" resp="Matthaeus" n="117"/> δυναμένων δὲ οὐρηθῆναι, τέμνειν κάτωθεν· καὶ γὰρ δὴ τοὐπίπαν μεγάλοι τε καὶ στερεοὶ ἐν τῇ κύστει λίθοι γίγνονται, ὑπὸ ὧν ἑλκοῦται ἡ κύστις, καὶ δυσουρίαι ἔχουσι, μάλιστα μὲν, εἰ ἐρείσειαν εἰς τὸν οὐρητῆρα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="3"> 
+<p>Ἐρείδοντας [οὖν] εἰ μὴ Θέλοις τέμνειν, ἀπῶσαι τῷ αὐλίσκῳ· τοῖς δὲ ἄλλοις ἀρκεῖ ἢ ἀνασεῖσαι ὕπτιον, ἢ ἐπιστρέψαι ἔνθα ἢ ἔνθα· οὕτω γὰρ ἀποσαλεύσεται ὁ λίθος, καὶ οὐρήσει ὁ ἄνθρωπος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="4"> 
+<p>Ὄρθιοι δὲ οὐ πάνυ δύνανται οὐρεῖν, ἐπιφράσσοντος τοῦ λίθου τὸν οὐρητῆρα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="5"> 
+<p>Διά τε οὖν τὴν ὀδύνην πιέ ζειν | <milestone unit="page" resp="Matthaeus" n="118"/> τὰ αἰδοῖα ἀναγκάζονται, καὶ ἅμα τι προσωφελούμενοι ὑπὸ τοῦ τοιούτου· οἱ γὰρ πόροι ἀποκλείονται τοῦ οὐρητῆρος, ἐντεινομένου τοῦ καυλοῦ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="6"> 
+<p>Ἐπεὶ δὲ ἑλκοῦνται πολλοῖς αἱ κύστεις ὑπὸ τραχύτητος <pb facs="b21948902_0117"/> καὶ μεγέθους τῶν λίθων, ὕφαιμά τε οὐροῦσι, καὶ πυώδη, καὶ ὑπόμυξα, καὶ ὀδυνῶνται οὗτοι πλέον τῶν ἄλλων, καὶ οὐροῦντες, καὶ μὴ οὐροῦντες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="7"> 
+<p>Ὅσοις δὲ τὰ μὲν ἕλκη οὔπω γέγονεν, οἱ δὲ λίθοι ἔνεισιν, διαφανῆ καὶ λεπτὰ καὶ ὑδατώδη οὐροῦσι, καὶ ψαμμία αὐτοῖς ὑφί σταται ἐν τῷ οὔρῳ, καὶ ὀδύναι οὐροῦντας κατ|[αλαμξάνουσιν. <milestone unit="page" resp="Ms." n="159r"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="8"> 
+<p>Παρόντων γε] οὖν τῶν σημείων τῶν εἰρημένων, διαγινώσκειν τὴν λιθιῶσαν — [κύστιν ἔξεστιν]. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="9"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="119"/> Τρόπος δὲ τῆς μηλώσεως τοιόσ[δε· σχηματίσας τὸν] ἄνθρωπον ὕπτιον, κάμπτειν μὲν τοὺς πόδας κελεύειν ὡς μάλιστα, [ἀλλήλων δὲ διαστή|σας ὅπως ἂν καὶ δοκῇ ἁρμόζειν, καθεῖναι τῆς ἀριστερᾶς [χειρὸς τοὺς δα]κτύλους προσωτάτω τοῦ ἀρχοῦ, <pb facs="b21948902_0118"/> ἔπειτα τοῖς [δακτύλοις ψη]λαφᾷν τὴν κύστιν, ἄλλον δέ τινα παρεστηκότα πιέζειν [τὸ ἦτρον, ἕως ἂν] ἐντύχῃς τῷ πώρῳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="10"> 
+<p>Ἀρκεῖ δὲ καὶ ἕνα καθιέναι δάκτυλον, εἰ ἰατρός τε ἔμπειρος εἴης τὰ τοιαῦτα διαχειρίζειν, καὶ δακτύλους προμήκεις ἔχοις, καὶ παιδίον μηλοῖο, καὶ ὁ λίθος μὴ πολύ τι μείζων τοῦ μετρίου εἴη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="11"> 
+<p>Ἀρκεῖ δὲ καὶ αὐτόν γε τῇ δεξιᾷ | <milestone unit="page" resp="Matthaeus" n="120"/> πιέσαι τὸ ἦτρον, καὶ δόξει ἀνοχλότερον τοῦτο, καὶ τῷ νοσοῦντι, καὶ τῷ μηλουμένῳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="12"> 
+<p>Λαβόμενον δὲ χρὴ τοῦ λίθου καθέλκειν εἰς τὸν οὐρητῆρα, καὶ ὅταν ἐνταῦθα ἥκῃ, τότε δὴ μᾶλλον ἐχόμενον, ὡς μὴ ἐκφυγὼν οἴχηται, τέμνειν τομὴν ἐπικάρσιον κατὰ τοῦ περινέου· καὶ, εἰ μὲν πρόχειρος εἴη, τῇ λαβῇ τοῦ μαχαιρίου ἐκβάλλειν, πεπιεσμένον δὲ τῇ λαβῇ τραχείᾳ τε καὶ καμπύλῃ ἐξ ἄκρου, ὡς ἂν μάλιστα συμφέροι τῷ ἔργῳ· εἰ δὲ μὴ, τῷ ὀργάνῳ τῷ πρὸς τὰ τοιαῦτα ἐξευρημένῳ χρώμενος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="13"> 
+<p>Τέμνων δὲ, μὴ ἐπὶ μεῖζον <pb facs="b21948902_0119"/> τέμνειν· κίνδυνος γὰρ, καὶ αὐτῆς τῆς κύστεως τρῶσαί τι, ὃ παντὸς μᾶλλον φυλακτέον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="14"> 
+<p>Τὴν δὲ τομὴν, ὡς τὰ ἔμμοτα, ἰᾶσθαι. </p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:12" n="15"> 
+<p>Αὕτη [μὲν] σαφεστάτη διάγνωσις καὶ Θεραπεία τῶν ἐν κύστει λίθων, καὶ οἵ γε πολλοὶ οὕτω ποιοῦντες ἐπιτυγχάνουσιν.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="13"> 
+<head rend="indent">ιγ′ (<foreign xml:lang="lat">cf.</foreign> Ἀέτιος, ιδ′ ιε′). | <milestone unit="page" resp="Matthaeus" n="121"/> Πῶροι κύστεως.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="1"> 
+<p rend="indent">Χρὴ δὲ οὐδενὸς ἧττον ἐγνωκέναι καὶ ὅπως οἱ πῶροι συνίστανται· καὶ γὰρ πρὸς τὴν ἑξῆς δίαιταν συμφέρει, καί τις μαθὼν τὴν πρόφασιν τῆς νόσου πολλὰ ἐξευρήσει κωλύματα ὡς μήποτε καὶ ὕστερον λιθιάσαι τὴν κύστιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="2"> 
+<p>Ἱκανὴ μὲν οὖν πρόφασις, καὶ εἰ τὸ ὕδωρ ἰλὺν ἔχοι· ἀνάγκη γὰρ ὑφισταμένην τὴν ἰλὺν ἐν τῇ κύστει πήγνυ σθαι· καὶ ἀρκεῖ τούτοις ἠθοῦντας τὸ ὕδωρ πίνειν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="3"> 
+<p>| <milestone unit="page" resp="Matthaeus" n="122"/> Γένοιντο δὲ ἂν πῶροι καὶ ἀπὸ ἄλλων ὑδάτων καθαρῶν | <milestone unit="page" resp="Ms." n="159v"/> μὲν καὶ ἀνυποστάτων, ψυ <pb facs="b21948902_0120"/> χροτέρων δὲ καὶ σκληροτέρ[ων τοῦ καιροῦ· ταῦτα οὖν γῆς ἀπή]θημα ἡγοῦμαι ψυχροτέρας εἶναι τὰ πο[λλὰ διὰ ἐμαυτοῦ πεπειρα]μένος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="4"> 
+<p>Τοῖς τε οὔροις λεπτοῖς καὶ ὑδαρέσιν οὖ[σιν ἐπὶ τοῖς παισὶ μᾶλλον] ἢ ἀνδράσιν ἡ νόσος γίγνεται· πολλαχῇ [δὲ εἰκότως πίνουσι] ψυχρότερον ἢ ὥστέ τι[νι] ἐπὶ μεῖζον ηὐξημ[ένῳ δύνασθαι ἁρμόζειν, τοῖς] γε μὴν ἀπέπτοις ὠμῶν ἀναδόσεις ἐπὶ κύστιν [γίγνονται, αἳ, εἰ μὴ δι]ουροῖντο ῥᾳδίως, πήγνυνται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="5"> 
+<p>Προσ[συνεργεῖ δὲ καὶ ὁ οὐρη]τὴρ στένος ὤν· οὐ γὰρ δέχεται πᾶσαν τὴν ὑπόστα[σιν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="6"> 
+<p>Τὰ μὲν τεκ]μή[ρι]α <pb facs="b21948902_0121"/> τοῦ τὴν ψυχροτέραν κύστιν λίθους τρέφειν το|αῦτά <milestone unit="page" resp="Matthaeus" n="123"/> ἐστιν· εἰκὸς μὴν καὶ ὑπὸ Θερμοῦ τινος ξηρανθῆναί ποτε ὑποστάθμην ἐν κύστει, ὥσπερ καὶ οἴνου τρύγα, καὶ ἄλλην τινὰ ἰλὺν ἔξω· ἄλλα [δὲ] ἐγὼ τεκμήρια οὐκ ἔχω εἰπεῖν τῆςδε τῆς νόσου, εἰ μὴ ἄρα τὴν χροιὰν τῶν πωριδίων· εἰκάσται γὰρ ὠπτημένοις ὀστράκοις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="7"> 
+<p>Ποτὲ οὖν συμφέρει τοῖς ψυχροτέροις οὐρητικοῖς χρῆσθαι, καθάπερ τῷ σελίνῳ, αἱ τῷ σικύῳ, καὶ τῷ ὑακίνθου σπέρματι, καὶ τῷ ἀσπαράγῳ, καὶ τῷ τοῦ λευκοίου, καὶ κρόκου ταῖς ῥίζαις, καὶ ἰωνιᾶς τοῖς φύλλοις, ἐμεῖν τε ἀπὸ δείπνου συνεχῶς, καὶ μηδὲν πυρῶδες προσ|Φέρεσθαι, <milestone unit="page" resp="Matthaeus" n="124"/> ὃ μέλλει τὴν κύστιν Θερμαίνειν· δίαιταν δὲ τὴν ἄλλην ἀπονωτέραν ἐξευρίσκειν. —</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="8"> 
+<p>Ὅπου δὲ τὸ ψυχρὸν κρατεῖ, οὐρητικοῖς μὲν τοῖς Θερμοτέροις χρῆσθαι, ὁποῖά ἐστιν ἥ τε ἶρις, καὶ τὸ αἰθιοπικὸν <pb facs="b21948902_0122"/> κύμινον, καὶ τῆς βαλσάμου ὁ καρπὸς, καὶ τὸ κιννάμωμον, καὶ ἡ κασσία, καὶ τὸ ἄκορον, καὶ τὸ μῆον· ἀπεψίας δὲ καὶ πλησμονὰς φεύγειν· ὕδατά τε πηγαῖα καὶ καθαρὰ ἐκλέγεσθαι, οἴνους δὲ κιῤῥοὺς καὶ εὐόδμους· ταλαιπωρεῖν δὲ τῷ σώ|ματι <milestone unit="page" resp="Matthaeus" n="125"/> προθυμότατα, καὶ λού|[εσθαι <milestone unit="page" resp="Ms." n="160r"/> μὲν σπανίως, χρίεσθαι δὲ π]υκνὰ, καί ποτε καὶ πρὸς πῦρ στάντα[τρίβεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="9"> 
+<p>ᾩσαύτως καὶ αἱ] ψυχρολουσίαι συμφέρουσι, Θερμαὶ [δὲ παντάπασι κάκισται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="10"> 
+<p>Τὴν] δὲ γαστέρα ἐν πᾶσι μὲν τοῖς κατὰ [κύστιν μὴ κινεῖν, μάλιστα δὲ] ἐν τοῖς παροῦσιν· εἰ γὰρ ταύτῃ ὑπ[ίοι ἐπὶ πολὺ, ἁλμυρώτεραί] τε ἂν αἱ οὐρήσεις καὶ μείους γίγνοιντο.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:13" n="11"> 
+<p>—[Τοιαῦτα μὲν οὖν ἐπὶ τὴν] λιτιῶσαν κύστιν πραγματευτέον, καί τινα [τῶν πρὸς λιθιῶντας νεφροὺς] εἰρημένων.</p></div></div>
+  <pb facs="b21948902_0123"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="14"> 
+<head rend="indent">ιδ′ (Ἀέτιος, κβ′). Περὶ ψωριώσης κύστεως.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="1"> 
+<p rend="indent">Τοιγαροῦν καὶ ψωριῶσαι κύστεις ὤφθησαν· [σημαίνει] μὲν τοῖς τε οὔροις τραχείας καὶ πιτυρώδεις ὑποστάσεις ἔχουσι, καὶ τοῖς κνησμοῖς τοῦ τε ἐπιγαστρίου, καὶ τοῦ ἤτρου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="2"> 
+<p>Προϊοῦσα δὲ ἡ νόσος καὶ ἑλκοῖ τὴν κύστιν, καὶ ὀδυνᾷ πλέον, ὥστε καὶ τὰ τῶν ἑλκῶν συνεδρεύσαι ἂν εἰκότως.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="3"> 
+<p>Τούτοις μὲν σημαίνει τὸ νόσημα·| <milestone unit="page" resp="Matthaeus" n="126"/> καθισταμένους δὲ εἰς θεραπείαν αὐτοῦ, γιγνώσκειν μὲν ὡς οὐκ ἔστι πάντῃ ἰάσιμον· πειρᾶσθαι δὲ ὅμως τὰ δυνατὰ παρηγορεῖσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="4"> 
+<p>Τῶν μὲν δακνόντων, καὶ τοὺς χυμοὺς δριμυτέρους καὶ ἁλμωδεστέρους ἀποδεικνύντων κελεύειν ἀπέχεσθαι· προσφέρειν δὲ οἴνους μὲν γλυκεῖς <pb facs="b21948902_0124"/> καὶ γάλα, καὶ ζωμὸν ὄρνιθος, ἢ ἐρίφου, ἢ ἀρνὸς, καὶ τὸ τῶν φοινίκων ἀπόβρεγμα, καὶ σεμίδαλιν, καὶ ἀμύλιον, καὶ ῥοφήματα, καὶ ἔτνη, καὶ ἰχθῦς ἁπαλοσάρκους, ἑφθοὺς σύμπαντας, καὶ λαχάνων ὅσα τὰς μὲν οὐρήσεις ὑπάγει, δάκνει δὲ ἥκιστα, οἷον σταφυλίνους τε ἑφθοὺς, καὶ κρῆθμα, καὶ μά|ραθρα, <milestone unit="page" resp="Matthaeus" n="127"/> καὶ ἱπποσέλινα, καὶ ἀσπαράγους, καὶ σικύους, καὶ ὅσα ἄλλα· δεῖ γὰρ τοῖς οὐρητικοῖς ἀποκαθαίρειν τὴν κύστιν, ἀλλὰ πρᾳότερον· κίνδυνος γὰρ ἑλκῶσαι τοῖς ἰσχυροτέροις, ὃ παντός ἐστι κάκιον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="5"> 
+<p>Ἀγαθὰ οὖν οὐρητικὰ καὶ οἱ καρκίνοι, καὶ αἱ πίνναι, καὶ αἱ λοπάδες, καὶ τοῦ ἐχίνου ἡ σὰρξ, καὶ τοῦ χερσαίου, καὶ τοῦ θαλασσίου, καὶ οἱ τέττιγες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="6"> 
+<p>| <milestone unit="page" resp="Ms." n="160v"/> Οὐκ ἀνάρ μοστον δὲ οὐδὲ βουκέρα ἑφθ[ὰ μετὰ μέλιτος ῥοφᾷν· καὶ γὰρ] | <milestone unit="page" resp="Matthaeus" n="128"/> τοῦτο δήξεις ἀμβλύνει, καὶ εἰ ἐπὶ κύ[στιν ἐκτράποιτο, πρᾳ]ότερον ταῖς ψώραις ἐστὶ, καὶ ἡ τραγάκανθα [ταὐτὸ ποιεῖ· χαίρουσι δὲ] καὶ μύρτων <pb facs="b21948902_0125"/> ἀπόβρεγμα πίνοντες μετὰ οἴν[ου, ἢ μήλων κυδωνίων ἀ]πόβρεγμα, καὶ ὄχνης, καὶ ἄλλης τινὸς ὀπώρας [στυφούσης· ὠφελεῖ γὰρ] κνησμούς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:14" n="7"> 
+<p>Ταῦτα μὲν οὖν [τῷ πάθει παρηγορικά· δεῖ δὲ] εὐχυμότατον ταῖς διαίταις ἀποφαίνειν, καὶ [γυμνάζοντας συμ]μέτρως καὶ πυριῶντας, καὶ ἐμεῖν ἀνὰ χρόνον κελεύ[οντας, καὶ] ὀῤῥοῖς κατακλύζοντας· εἰ μὴ γὰρ οὕτω παρηγορήσεται, ἄλλοις οὐκ ἔστιν.</p> </div> </div> 
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1" n="15"> 
+<head rend="indent">ιε′ (Ἀέτιος κδ′). Παράλυσις κύστεως.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="1"> 
+<p rend="indent">Ἐπεὶ δὲ καὶ παραλύεται ἡ κύστις, δοκεῖ μοι χρῆναι καὶ τῆσδε τῆς <pb facs="b21948902_0126"/> νόσου ἐξευρεῖν τινα ἴασιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="2"> 
+<p>Παραλύεται δὲ ἄλλοτε μὲν ἰσχίων ἀκρα|τῶν <milestone unit="page" resp="Matthaeus" n="129"/> ὄντων, ἄλλοτε [δὲ] ὀσφύος· γυναικὶ δὲ καὶ ὑστερῶν νεναρκωμένων· ἀτὰρ οὖν καὶ αὐτὴ μόνη παραλύεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="3"> 
+<p>Πάσχουσι δὲ τάδε· τὸ οὖρον τοῖς μὲν οὐ δύναται προχωρεῖν, εἰ μὴ καθετῆρα ἐνείης· τοῖς δὲ προχωρεῖ μὲν, ἀλλὰ ἀναίσθητον· καὶ τοῖς μὲν ἄθρουν ἐκκρίνεται προϊδομένοις οὐδέν· τοῖς δὲ ἀεὶ στάζει· καὶ αἰδοῖα μὲν οὐκ ἐντείνεται, ἀπόπατος δὲ οὐκ ἴσχεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="4"> 
+<p>Ἐν δὲ τῷ χρόνῳ καὶ λεπτύνονται ἐπιγάστριον, καὶ ὀσφὺν, καὶ ἰσχία, καὶ σκέλη· ὀδύνην μὲν κατὰ κύστιν οὐκ ἔχουσιν· ἦτρον δὲ, καὶ κενεῶνας, καὶ νεφροὺς ἀλγοῦσιν, οἷς γε δὴ τὰ οὖρα οὐκ ἐθέλει ὑποχωρεῖν, ἐπεὶ τοῖς ἄλ|λοις <milestone unit="page" resp="Matthaeus" n="130"/> πάντα [ταῦτα] ἀναίσθητά ἐστιν</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="5"> 
+<p>Τὰ μὲν παθήματα τοιάδε· θεραπεία δὲ πόνοι τῶν κάτω πλείους, καὶ τρέχοντι, καὶ πρὸς τὰ σιμὰ πορευομένῳ, καὶ <pb facs="b21948902_0127"/> ἀνατρίβοντι γλουτοὺς, καὶ ἦτρον, καὶ λαπάρας, καὶ διὰ αὑτοῦ, καὶ διὰ ἄλλων· ἄμεινον δὲ, εἰ καὶ τὸ χρίσμα εἴη σικυώνιόν τε ἔλαιον, καὶ ἴρινον, καὶ δάφνινον, καὶ καστορίου μιγέντος· προσωφελεῖ δὲ καὶ νίτρῳ μετὰ ὄξους ἀνατρίβειν· | <milestone unit="page" resp="Ms." n="164r"/> [ἐμβρεχέσθαι τε τοὺς τόπους διὰ γλευκίν]|ου <milestone unit="page" resp="Matthaeus" n="147"/> μύρου, καὶ κάχρυϊ μετὰ κηρωτῆς [οἰσυπηρᾶς πραΰνειν].</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="6"> 
+<p>Καστόριον εἴς τε τὰ ἄλλα νο[σήματα τῆς κύστεως εἰ προσφέροιτο] μείζω, καὶ ἐμφανε|στέραν <milestone unit="page" resp="Matthaeus" n="148"/> παρέ[χει ὠφέλειαν τῷ κάμνοντι, ὥσ]τε [καὶ] πίνειν τινὶ ἀρκεῖν, καὶ εἰ προκενώσας [τὴν γαστέρα, τὸ ἔντερον ἔπ]ειτα τούτῳ κλύζοις, καὶ εἰ διὰ τοῦ οὐρητῆ[ρος ἐνιείης.</p></div>
+  <pb facs="b21948902_0128"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="7"> 
+<p>Χρὴ δὲ τοῖς] ἄλλοις κλυσμοῖς τοῖς ἰσχυροτέροις χρῆ[σθαι· τοιαῦτα δὲ] κλύσματά ἐστι σικυωνίας τε ἀπόβρεγμα καὶ ἐλλε[βόρου μέλανος], καὶ μελανθίου, καὶ κενταυρίου· πρὸς γὰρ τὴν αἴσθησιν συμφέρει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="8"> 
+<p>Ταῦτα δὲ εἰς μὲν τὴν ἕδραν ἐνίεται, τοῦ δὲ οὐρητῆρος ἀπέχειν· ἑλκῶσαι γὰρ κίνδυνος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="9"> 
+<p>Δεῖ δὲ καὶ τῇ ἑφθῇ ῥητίνῃ πυκνὰ καταπλάττειν τό τε ἦτρον καὶ τὴν ὀσφὺν ἐν κύκλῳ, καὶ τῷ νάπυϊ συνεχῶς θερμαίνειν, καὶ ἐν θαλάσσῃ κελεύειν νήχεσθαι, καὶ ἐν θερμοῖς ὕδασι, καὶ τὸ σύμπαν ἐκπυριᾷν, καὶ πότιμα προσφέρειν, ἅμα μὲν θερμαίνοντα, ἅμα δὲ ἐπὶ κύστιν ῥέποντα, ὥσπερ τοῦ τε ἄγνου τὸν καρπὸν, καὶ πάνακος τῆς ἡρακλείας τὴν ῥίζαν, καὶ μήου | <milestone unit="page" resp="Matthaeus" n="149"/> ῥίζαν, καὶ κύμινον αἰθιοπικὸν, καὶ ἑρπύλλου σπέρμα, καὶ ἀψινθίου κόμην μετὰ νάρδου κελτικῆς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="10"> 
+<p>Ἀγαθοὶ δὲ καὶ ἔμετοι τὸ φλέγμα <pb facs="b21948902_0129"/> ὑπεξάγοντες, καὶ οἱ ἑλλεβορισμοί.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="11"> 
+<p>Ἐπὶ δὲ ταῖς τοιαύταις κενώσεσι, θαψίας [χυλὸν π]ρ[οσα]λείφειν τῷ ἤτρῳ, καὶ τῇ ὀσφύϊ, καὶ μάλιστα ἢν ἰσχναίνηται, καὶ μετὰ κηρωτῆς πραΰνειν τὰ ᾠδηκότα, καὶ μαλάγματα ἐπιτιθέναι εὐώδη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0564.tlg001.1st1K-grc1:15" n="12"> 
+<p>Τὰς δὲ ἀῤῥώστους κύστεις, καὶ μὴ δυναμένας τὸ οὖρον ἐπὶ πλέον κατέχειν, ἰᾶσθαι καὶ γυμνάζοντα, καὶ ἀνατρίβοντα, ὥσπερ ἐν τῇ παραλύσει εἴρηται· τὰ δὲ οὐρητικὰ μὴ προσ|φέρειν, <milestone unit="page" resp="Matthaeus" n="150"/> ἐπιθεμάτων δὲ τῶν αὐτῶν πειρᾶσθαι, καὶ διαίτης τῆς ἄλλης [θερ]μοτέρας· τῷ γὰρ θερμῷ πάντα ἐγκρατῆ γίνεται. τὸ δὲ ψυχρὸν [ἀκ]ρατέστατον τῇ κύστει.</p> </div> </div> </div>
+  </body>
+</text>
+</TEI>
