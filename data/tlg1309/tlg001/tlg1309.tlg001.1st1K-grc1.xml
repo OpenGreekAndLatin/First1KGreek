@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+     <teiHeader xml:lang="eng">
+         <fileDesc>
+             <titleStmt>
+                 <title xml:lang="lat">Fragmenta</title>
+                 <author xml:lang="lat">Dialexeis</author>
+                 <editor>Hermann Diels</editor>
+                 <funder>Center for Hellenic Studies</funder>
+                 <respStmt>
+                     <resp>Published original versions of the electronic texts</resp>
+                     <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                     <persName role="principal">Gregory Crane</persName>
+                     <persName role="principal">Leonard Muellner</persName>
+                     <persName role="principal">Bruce Robertson</persName>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Sophia Elzie</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Alessandro Buccheri</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Valia Chotou</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Domi Couvet</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Dimitra Fylaktopoulou</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Arnie He</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Elsa Karafyllidi</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Anatasios Koletsis</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Theodoros Pazarloglou</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Celia Prescott-Decie</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Dora Profyri</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Panagiotis Sotiroudis</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Zeyu Wen</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital conversion and editing</resp>
+                 </respStmt>
+                 <respStmt>
+                     <persName>Charlotte Houghton</persName>
+                     <orgName>Center for Hellenic Studies</orgName>
+                     <resp>Digital editor</resp>
+                 </respStmt>
+             </titleStmt>
+             <publicationStmt>
+                 <publisher>Open Greek and Latin</publisher>
+                 <idno type="filename">tlg1309.tlg001.1st1K-grc1.xml</idno>
+                 <pubPlace/>
+                 <availability>
+                     <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons 
+                         Attribution-ShareAlike 4.0 International License</licence>
+                 </availability>
+                 <date when="2021-08-25"/>
+             </publicationStmt>
+             <sourceDesc>
+                 <biblStruct>
+                     <monogr>
+                         <title xml:lang="deu">Die Fragmente der Vorsokratiker</title>
+                         <editor>Hermann Diels</editor>
+                         <imprint>
+                             <pubPlace>Berlin</pubPlace>
+                             <publisher>Weidmann</publisher>
+                             <date>1922</date>
+                         </imprint>
+                         <biblScope unit="volume">2</biblScope>
+                     </monogr>
+                     <ref target="https://archive.org/details/diefragmentederv02dieluoft/page/334/mode/2up">Internet Archive</ref>
+                 </biblStruct>
+             </sourceDesc>
+    </fileDesc>
+         <encodingDesc>
+             <editorialDecl>
+                 <correction>
+                     <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+                     <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                 </correction>
+             </editorialDecl>
+             <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+             <refsDecl n="CTS">
+                 <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                     <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+                 <cRefPattern matchPattern="(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                 <p>This pointer pattern extracts chapter.</p></cRefPattern>
+             </refsDecl>
+         </encodingDesc>
+         <profileDesc>
+             <langUsage>
+                 <language ident="grc">Greek</language>
+                 <language ident="lat">Latin</language>
+             </langUsage>
+         </profileDesc>
+         <revisionDesc>
+             <change when="2022-06-01" who="Lisa Cerrato">Markup review.</change>
+             <change when="2022-04-08" who="Charlotte Houghton">initial markup of new file.</change>
+         </revisionDesc>
+     </teiHeader>
+    <text>
+        <body>
+            <div type="edition" n="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" xml:lang="grc">
+                <pb facs="diefragmentederv02dieluoft_0380"/>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="1">
+                    <head rend="center">Περὶ ἀγαθῶ καὶ κακῶ.</head>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="1">
+                        <p rend="indent">(<label>(1)</label>) δισσοὶ λόγοι λέγονται ἐν τᾶι Ἑλλάδι ὑπὸ τῶν φιλοσοφούντων περὶ τῶ ἀγαθῶ καὶ τῶ κακῶ. τοὶ μὲν γὰρ λέγοντι, ὡς ἄλλο μέν εστι τὸ ἀγαθόν, ἄλλο δὲ τὸ κακόν· τοὶ δέ, ὡς τὸ αὐτό ἐστι, καὶ τοῖς μὲν ἀγαθὸν εἴη, τοῖς δὲ κακόν, καὶ τῶι αὐτῶι ἀνθρώπωι τοτὲ μὲν ἀγαθόν, τοτὲ δὲ κακόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="2">
+                        <p>(<label>(2)</label>) ἐγὼ δὲ καὶ αὐτὸς τοῖσδε ποτιτίθεμαι· σκέψομαι δὲ ἐκ τῶ ἀνθρωπίνω βίω, ὧι ἐπιμελὲς βρώσιός τε καὶ πόσιος καὶ ἀφροδισίων· ταῦτα γὰρ ἀσθενοῦντι μὲν κακόν, ὑγιαίνοντι δὲ καὶ <pb facs="diefragmentederv02dieluoft_0381"/> δεομένωι ἀγαθόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="3">
+                        <p>(<label>(3)</label>) καὶ ἀκρασία τοίνυν τούτων τοῖς μὲν ἀκρατέσι κακόν, τοῖς δὲ πωλεῦντι ταῦτα καὶ μισθαρνέοντι ἀγαθόν. νόσος τοίνυν τοῖς μὲν ἀσθενεῦντι κακόν, τοῖς δὲ ἰατροῖς ἀγαθόν. ὁ τοίνυν θάνατος τοῖς μὲν ἀποθανοῦσι κακόν, τοῖς δ’ ἐνταφιοπώλαις καὶ τυμβοποιοῖς ἀγαθόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="4">
+                        <p>(<label>(4)</label>) γεωργία τε καλῶς ἐξενείκασα τὼς καρπὼς τοῖς μὲν γεωργοῖς ἀγαθόν, τοῖς δὲ ἐμπόροις κακόν. τὰς τοίνυν ὁλκάδας συντρίβεσθαι καὶ παραθραύεσθαι τῶι μὲν ναυκλήρωι κακόν, τοῖς δὲ ναυπαγοῖς ἀγαθόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="5">
+                        <p>(<label>(5)</label>) ἔτι 〈δὲ〉 τὸν σίδαρον κατέσθεσθαι καὶ ἀμβλύνεσθαι καὶ συντρίβεσθαι τοῖς μὲν ἄλλοις κακόν, τῶι δὲ χαλκῆι ἀγαθόν. καὶ μὰν τὸν κέραμον παραθραύεσθαι τοῖς μὲν ἄλλοις κακόν, τοῖς δὲ κεραμεῦσιν ἀγαθόν. τὰ δὲ ὑποδήματα κατατρίβεσθαι καὶ διαρρήγνυσθαι τοῖς μὲν ἄλλοις κακόν, τῶι δὲ σκυτῆι ἀγαθόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="6">
+                        <p>(<label>(6)</label>) ἐν τοίνυν τοῖς ἀγῶσι τοῖς γυμνικοῖς καὶ τοῖς μωσικοῖς καὶ τοῖς πολεμικοῖς· αὐτίκα ἐν τῶι γυμνικῶι τῶι σταδιοδρόμωι ἁ νίκα τῶι μὲν νικῶντι ἀγαθόν, τοῖς δὲ ἡσσαμένοις κακόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="7">
+                        <p>(<label>(7)</label>) καττωὐτὸ δὲ καὶ τῶι παλαιστᾶι καὶ πύκται καὶ τοῖς ἄλλοις ἔν τε 〈τῶι〉 μωσικῶι ἁ νίκα ἁ κιθαρωιδίας τῶι μὲν νικῶντι ἀγαθόν, τοῖς δὲ ἡσσαμένοις κακόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="8">
+                        <p>(<label>(8)</label>) ἔν τε τῶι πολέμωι (καὶ τὰ νεώτατα πρῶτον ἐρῶ) ἁ τῶν Λακεδαιμονίων νίκα, ἃν ἐνίκων Ἀθηναίως καὶ τὼς συμμάχως, Λακεδαιμονίοις μὲν ἀγαθόν, Ἀθηναίοις δὲ καὶ τοῖς συμμάχοις κακόν· ἅ τε νίκα, ἃν τοὶ Ἕλλανες τὸν Πέρσαν ἐνίκασαν, τοῖς μὲν Ἕλλασιν ἀγαθόν, τοῖς δὲ βαρβάροις κακόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="9">
+                        <p>(<label>(9)</label>) ἁ τοίνυν τοῦ Ἰλίου αἵρεσις τοῖς μὲν Ἀχαιοῖς ἀγαθόν, τοῖς δὲ Τρωσὶ κακόν. καδδὲ ταὐτὸν καὶ τὰ τῶν Θηβαίων καὶ τὰ τῶν Ἀργείων πάθη.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="10">
+                        <p>(<label>(10)</label>) καὶ ἁ τῶν Κενταύρων καὶ Λαπιθᾶν μάχα τοῖς μὲν Λαπίθαις ἀγαθόν, τοῖς δὲ Κενταύροις κακόν. καὶ μὰν καὶ ἁ τῶν θεῶν καὶ Γιγάντων λεγομένα μάχα [καὶ νίκα] τοῖς μὲν θεοῖς ἀγαθόν, τοῖς δὲ Γίγασι κακόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="11">
+                        <p>(<label>(11)</label>) ἄλλος δὲ λόγος λέγεται, ὡς ἄλλο μὲν τἀγαθὸν εἴη, ἄλλο δὲ τὸ κακόν, διαφέρον ὥσπερ καὶ τὦνυμα, οὕτω καὶ τὸ πρᾶγμα. ἐγὼ δὲ καὶ αὐτὸς τοῦτον διαιρεῦμαι τὸν τρόπον· δοκῶ γὰρ οὐδὲ διάδαλόν 〈κ’〉 ἦμεν, ποῖον ἀγαθὸν καὶ ποῖον κακόν, αἰ τὸ αὐτὸ καὶ μὴ ἄλλο ἑκάτερον ἦς· καὶ γὰρ θαυμαστόν κ’ εἴη.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="12">
+                        <p>(<label>(12)</label>) οἶμαι δὲ οὐδέ κ’ αὐτὸν ἔχεν ἀποκρίνασθαι, αἴ τις [αὐτὸν] ἔροιτο τὸν ταῦτα λέγοντα: <q rend="single">εἶπον δή μοι, ἤδη τύ τι τοὶ γονέες ἀγαθὸν <pb facs="diefragmentederv02dieluoft_0382"/> ἐποίησαν;</q> φαίη κα· <q rend="single">καὶ πολλὰ καὶ μεγάλα.</q> <q>τὺ ἄρα κακὰ καὶ μεγάλα καὶ πολλὰ τούτοις ὀφείλεις, αἴπερ τωὐτόν ἐστι τὸ ἀγαθὸν τῶι κακῶι.</q></p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="13">
+                        <p>(<label>(13)</label>) <q rend="single">τί δέ, τὼς συγγενέας ἤδη τι ἀγαθὸν ἐποίησας;</q> 〈καὶ πολλὰ καὶ μεγάλα〉. <q rend="single">τὼς ἄρα συγγενέας κακὸν ἐποίεις</q>. <q rend="single">τί δέ, τὼς ἐχθρὼς ἤδη κακὸν ἐποίησας;</q> καὶ πολλὰ καὶ 〈μεγάλα〉. <q rend="single">μέγιστα ἄρα ἀγαθὰ ἐποίησας.</q></p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="14">
+                        <p>(<label>(14)</label>) <q rend="single">ἄγε δή μοι καὶ τόδε ἀπόκριναι. ἄλλο τι ἢ τὼς πτωχὼς οἰκτίρεις, ὅτι πολλὰ καὶ κακὰ ἔχοντι, 〈καὶ〉 πάλιν εὐδαιμονίζεις, ὅτι πολλὰ καὶ ἀγαθὰ πράσσοντι, αἴπερ τωὐτὸ κακὸν καὶ ἀγαθόν;</q></p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="15">
+                        <p>(<label>(15)</label>) τὸν δὲ βασιλῆ τὸν μέγαν οὐδὲν κωλύει ὁμοίως διακεῖσθαι τοῖς πτωχοῖς. τὰ γὰρ πολλὰ καὶ μεγάλα ἀγαθὰ αὐτῶι πολλὰ κακὰ καὶ μεγάλα ἐστίν, αἴ γα τωὐτόν ἐστιν ἀγαθὸν καὶ κακόν. καὶ τάδε μὲν περὶ τῶν πάντων εἰρήσθω.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="16">
+                        <p>(<label>(16)</label>) εἶμι δὲ καὶ καθ’ ἕκαστον ἀρξᾶμενος ἀπὸ τῶ ἐσθίεν καὶ πῖνεν καὶ ἀφροδισιάζεν. ταῦτα γὰρ τοῖς ἀσθενεῦντι 〈ποιὲν κακόν, καὶ πάλιν〉 ταῦτα ποιὲν ἀγαθόν ἐστιν αὐτοῖς, αἴπερ τωὐτόν ἐστιν ἀγαθὸν καὶ κακόν· καὶ τοῖς νοσέοντι κακόν ἐστι τὸ νοσεῖν καὶ ἀγαθόν, αἴπερ τωὐτόν ἐστι τὸ ἀγαθὸν τῶι κακῶι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:1" n="17">
+                        <p>(<label>(17)</label>) καδδὲ τόδε καὶ τἆλλα πάντα, τὰ ἐν τῶι ἔμπροσθεν λόγωι εἴρηται. καὶ οὐ λέγω, τί ἐστι τὸ ἀγαθόν, ἀλλὰ τοῦτο πειρῶμαι διδάσκειν, ὡς οὐ τωὐτὸν [εἴη] τὸ κακὸν καὶ τἀγαθόν, ἀλλ’ ἑκάτερον.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="2">
+                    <head rend="center">Περὶ καλοῦ καὶ αἰσχροῦ.</head>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="1">
+                        <p rend="indent">(<label>(1)</label>) λέγονται δὲ καὶ περὶ τῶ καλῶ καὶ 〈τῶ〉 αἰσχρῶ δισσοὶ λόγοι. τοὶ μὲν γάρ φαντι, ἄλλο μὲν ἦμεν τὸ καλόν, ἄλλο δὲ τὸ αἰσχρόν, διαφέρον, ὥσπερ καὶ τὤνυμα, οὕτω καὶ τὸ πρᾶγμα· τοὶ δὲ τωὐτὸ καλὸν καὶ αἰσχρόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="2">
+                        <p>(<label>(2)</label>) κἀγὼ πειρασεῦμαι, τόνδε τὸν τρόπον ἐξαγεύμενος. αὐτίκα γὰρ παιδὶ ὡραίωι ἐραστᾶι μὲν [χρηστῶι] χαρίζεσθαι καλόν, μὴ ἐραστᾶι δὲ [καλῶι] αἰσχρόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="3">
+                        <p>(<label>(3)</label>) καὶ τὰς γυναῖκας λοῦσθαι ἔνδοι καλόν, ἐν παλαίστραι δὲ αἰσχρόν (ἀλλὰ τοῖς ἀνδράσιν ἐν παλαίστραι καὶ ἐν γυμνασίωι καλόν).</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="4">
+                        <p>(<label>(4)</label>) καὶ συνίμεν τῶι ἀνδρὶ ἐν ἁσυχίαι μὲν καλόν, ὅπου τοίχοις κρυφθήσεται· ἔξω δὲ αἰσχρόν, ὅπου τις ὄψεται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="5">
+                        <p>(<label>(5)</label>) καὶ τῶι μὲν αὐτᾶς συνίμεν ἀνδρὶ καλόν, ἀλλοτρίωι δὲ αἴσχιστον· καὶ τῶι γ’ ἀνδρὶ τᾶι μὲν ἑαυτῶ γυναικὶ συνίμεν καλόν, ἀλλοτρίαι δὲ αἰσχρόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="6">
+                        <p>(<label>(6)</label>) καὶ κοσμεῖσθαι καὶ <pb facs="diefragmentederv02dieluoft_0383"/> ψιμυθίωι χρίεσθαι καὶ χρυσία περιάπτεσθαι, τῶι μὲν ἀνδρὶ αἰσχρόν, τᾶι δὲ γυναικὶ καλόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="7">
+                        <p>(<label>(7)</label>) καὶ τὼς μὲν φίλως εὖ ποιὲν καλόν, τὼς δὲ ἐχθρὼς αἰσχρόν. καὶ τὼς μὲν πολεμίως φεύγεν αἰσχρόν, τὼς δὲ ἐν σταδίωι ἀνταγωνιστὰς καλόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="8">
+                        <p>(<label>(8)</label>) καὶ τὼς μὲν φίλως καὶ τὼς πολίτας φονεύεν αἰσχρόν, τὼς δὲ πολεμίως καλόν. καὶ τάδε μὲν περὶ πάντων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="9">
+                        <p>(<label>(9)</label>) εἶμι δ’ 〈ἐφ’〉 ἃ ταὶ πόλιες· [τε] αἰσχρὰ ἅγηνται καὶ τὰ ἔθνεα. αὐτίκα Λακεδαιμονίοις τὰς κόρας γυμνάζεσθαι 〈καὶ〉 ἀχειριδώτως καὶ ἀχίτωνας παρέρπεν καλόν· Ἴωσι δὲ αἰσχρόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="10">
+                        <p>(<label>(10)</label>) καὶ 〈 τοῖς μὲν〉 τὼς παῖδας μὴ μανθάνειν μωσικὰ καὶ γράμματα καλόν· Ἴωσι δ’ αἰσχρὸν μὴ ἐπίστασθαι ταῦτα πάντα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="11">
+                        <p>(<label>(11)</label>) Θεσσαλοῖσι δὲ καλὸν τὼς ἵππως ἐκ τὰς ἀγέλας λαβόντι αὐτῶι δαμάσαι καὶ τὼς ὀρέας· βῶν τε λαβόντι αὐτῶι σφάξαι καὶ ἐκδεῖραι καὶ κατακόψαι, ἐν Σικελίαι δὲ αἰσχρὸν καὶ δώλων ἔργα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="12">
+                        <p>(<label>(12)</label>) Μακεδόσι δὲ καλὸν δοκεῖ ἦμεν τὰς κόρας, πρὶν [ἀνδρὶ] γάμασθαι, ἐρᾶσθαι καὶ ἀνδρὶ συγγίνεσθαι, ἐπεὶ δέ κα γάμηται, αἰσχρόν· Ἕλλασι δ’ ἄμφω αἰσχρόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="13">
+                        <p>(<label>(13)</label>) τοῖς δὲ Θραιξὶ κόσμος τὰς κόρας στίζεσθαι· τοῖς δ’ ἄλλοις τιμωρία τὰ στίγματα τοῖς ἀδικέοντι. τοὶ δὲ Σκύθαι καλὸν νομίζοντι, ὅς 〈κ’〉 ἄνδρα κατακανὼν ἐκδείρας τὰν κεφαλὰν τὸ μὲν κόμιον πρὸ τοῦ ἵππου φορῆι, τὸ δ’ ὀστέον χρυσώσας 〈ἢ〉 καὶ ἀργυρώσας πίνηι ἐξ αὐτοῦ καὶ σπένδηι τοῖς θεοῖς· ἐν δὲ τοῖς Ἕλλασιν οὐδέ κ’ ἐς τὰν αὐτὰν οἰκίαν συνεισελθεῖν βούλοιτό τις τῶι ταῦτα ποιήσαντι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="14">
+                        <p>(<label>(14)</label>) Μασσαγέται δὲ τὼς γονέας κατακόψαντες κατέσθοντι, καὶ τάφος κάλλιστος δοκεῖ ἦμεν ἐν τοῖς τέκνοις τεθάφθαι· ἐν δὲ τᾶι Ἑλλάδι αἴ τις ταῦτα ποιήσαι, ἐξελαθεὶς [ἐκ τῆς Ἑλλάδος] κακῶς κα ἀποθάνοι ὡς αἰσχρὰ καὶ δεινὰ ποιέων.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="15">
+                        <p>(<label>(15)</label>) τοὶ δὲ Πέρσαι κοσμεῖσθαι [τε] ὥσπερ τὰς γυναῖκας καὶ τὼς ἄνδρας καλὸν νομίζοντι, καὶ τᾶι θυγατρὶ καὶ τᾶι ματρὶ καὶ τᾶι ἀδελφᾶι συνίμεν· τοὶ δὲ Ἕλλανες καὶ αἰσχρὰ καὶ παράνομα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="16">
+                        <p>(<label>(16)</label>) Λυδοῖς τοίνυν τὰς κόρας πορνευθείσας καὶ ἀργύριον ἐνεργάσασθαι καὶ οὕτως γάμασθαι καλὸν δοκεῖ ἦμεν, ἐν δὲ τοῖς Ἕλλασιν οὐδείς κα θέλοι γᾶμαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="17">
+                        <p>(<label>(17)</label>) Αἰγύπτιοί τε οὐ ταὐτὰ νομίζοντι καλὰ τοῖς ἄλλοις· τῆιδε μὲν γὰρ γυναῖκας ὑφαίνειν καὶ 〈ἔρια〉 ἐργάζεσθαι καλόν, ἀλλὰ τηνεῖ τὼς ἄνδρας, τὰς δὲ γυναῖκας πράσσεν, ἅπερ τῆιδε τοὶ ἄνδρες. τὸν παλὸν δεύειν ταῖς χερσί, τὸν δὲ σῖτον τοῖς ποσί, τήνοις καλὸν, ἀλλ’ ἁμὶν τὸ ἐναντίον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="18">
+                        <p>(<label>(18)</label>) οἶμαι δ’, αἴ τις τὰ αἰσχρὰ ἐς ἓν κελεύοι συνενεῖκαι πάντας <pb facs="diefragmentederv02dieluoft_0384"/> ἀνθρώπως, ἃ ἕκαστοι νομίζοντι, καὶ πάλιν ἐξ ἀθρόων τούτων τὰ καλὰ λαβέν, ἃ ἕκαστοι ἅγηνται, οὐδὲ ἓν 〈κα〉 καλλειφθῆμεν, ἀλλὰ πάντας πάντα διαλαβέν. οὐ γὰρ πάντες ταὐτὰ νομίζοντι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="19">
+                        <p>(<label>(19)</label>) παρεξοῦμαι δὲ καὶ ποίημά τι [<bibl xml:lang="lat">TGF. (844) adesp. (26)</bibl>] 
+                            <quote type="blockquote">καὶ γὰρ τὸν ἄλλον ὦδε θνητοῖσιν νόμον
+                            <lb/>ὄψηι διαιρῶν· οὐδὲν ἦν πάντηι καλόν,
+                            <lb/>οὐδ’ αἰσχρόν, ἀλλὰ ταὔτ’ ἐποίησεν λαβών
+                            <lb/>ὁ καιρὸς αἰσχρὰ καὶ διαλλάξας καλά.</quote></p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="20">
+                        <p>(<label>(20)</label>) ὡς δὲ τὸ σύνολον εἶπαι, πάντα καιρῶι μὲν καλα ἐντι, [ἐν] ἀκαιρίαι δ’ αἰσχρά. τί ὦν διεπραξάμην; ἔφαν ἀποδείξειν ταὐτὰ αἰσχρὰ καὶ καλὰ ἐόντα, καὶ ἀπέδειξα ἐν τούτοις πᾶσι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="21">
+                        <p>(<label>(21)</label>) λέγεται δὲ καὶ περὶ τῶ αἰσχρῶ καὶ 〈τῶ〉 καλῶ, ὡς ἄλλο ἑκάτερον εἴη. ἐπεὶ αἴ τις ἐρωτάσαι τὼς λέγοντας, ὡς τὸ αὐτὸ πρᾶγμα αἰσχρὸν καὶ καλόν ἐστιν, αἴ ποκά τι αὐτοῖς καλὸν ἔργασται, 〈καὶ〉 αἰσχρὸν ὁμολογησοῦντι, αἴπερ τωὐτὸν καὶ τὸ αἰσχρὸν καὶ τὸ καλόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="22">
+                        <p>(<label>(22)</label>) καὶ αἴ τινά γα καλὸν οἴδαντι ἄνδρα, τοῦτον καὶ αἰσχρὸν τὸν αὐτόν· καὶ αἴ τινά γα λευκόν, καὶ μέλανα τοῦτον τὸν αὐτόν. καὶ καλόν γ’ ἐστὶ τὼς θεὼς σέβεσθαι, καὶ αἰσχρὸν αὖ τὼς θεὼς σέβεσθαι, αἴπερ τωὐτὸν αἰσχρὸν καὶ καλόν ἐστι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="23">
+                        <p>(<label>(23)</label>) καὶ τάδε μὲν περὶ ἁπάντων εἰρήσθω μοι· τρέψομαι δὲ ἐπὶ τὸν λόγον αὐτῶν, ὃν λέγοντι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="24">
+                        <p>(<label>(21)</label>) αἰ γὰρ τὰν γυναῖκα καλόν ἐστι κοσμεῖσθαι, τὰν γυναῖκα 〈καὶ〉 αἰσχρὸν κοσμεῖσθαι, αἴπερ τωὐτὸν αἰσχρὸν καὶ καλόν· καὶ τἆλλα κατὰ τωὐτόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="25">
+                        <p>(<label>(25)</label>) ἐν Λακεδαίμονί ἐστι καλὸν τὰς παῖδας γυμνάζεσθαι, ἐν Λακεδαίμονί ἐστιν αἰσχρὸν τὰς παῖδας γυμνάζεσθαι, καὶ τἆλλα οὕτως.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="26">
+                        <p>(<label>(26)</label>) λέγοντι δέ, ὡς αἴ τινες τὰ αἰσχρὰ ἐκ τῶν ἐθνέων πάντοθεν συνενείκαιεν, ἔπειτα συγκαλέσαντες κελεύοιεν, ἅ τις καλὰ νομίζοι, λαμβάνεν, πάντα κα ἐν καλῶι ἀπενειχθῆμεν· ἐγὼ θαυμάζω, αἰ τὰ αἰσχρὰ συνενεχθέντα καλὰ ἐσεῖται, καὶ οὐχ οἱάπερ ἦνθεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="27">
+                        <p>(<label>(27)</label>) αἰ γοῦν ἵππως ἢ βῶς ἢ ὄϊς ἢ ἀνθρώπως ἄγαγον, οὐκ ἄλλο τί κα ἀπᾶγον· ἐπεὶ οὐδ’ αἰ χρυσὸν ἤνεικαν, χαλκόν [ἀπήνεικαν], οὐδ’ αἰ ἄργυρον ἤνεικαν, μόλιβδόν κα ἀπέφερον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:2" n="28">
+                        <p>(<label>(28)</label>) ἀντὶ δ’ ἄρα τῶν αἰσχρῶν καλὰ ἀπάγοντι; φέρε δή, αἰ ἄρα τις αἰσχρὸν 〈ἄνδρα〉 ἄγαγε τοῦτον <pb facs="diefragmentederv02dieluoft_0385"/> δ’ αὖ κα καλὸν ἀπᾶγε; ποιητὰς δὲ μάρτυρας ἐπάγονται, 〈οἳ〉 ποτὶ ἁδονάν, οὐ ποτ’ ἀλάθειαν ποιεῦντι.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="3">
+                    <head rend="center">Περὶ δικαίου καὶ ἀδίκου.</head>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="1">
+                        <p rend="indent">(<label>(1)</label>) δισσοὶ δὲ λόγοι λέγονται καὶ περὶ τῶ δικαίω καὶ τῶ ἀδίκω. καὶ τοὶ μὲν ἄλλο ἦμεν τὸ δίκαιον, ἄλλο δὲ τὸ ἄδικον· τοὶ δὲ τωὐτὸ δίκαιον καὶ ἄδικον· καὶ ἐγὼ τούτωι πειρασοῦμαι τιμωρέν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="2">
+                        <p>(<label>(2)</label>) καὶ πρῶτον μὲν ψεύδεσθαι ὡς δίκαιόν ἐστι λεξῶ καὶ ἐξαπατᾶν. τὼς μὲν πολεμίως ταῦτα ποιὲν 〈καλὸν καὶ δίκαιον, τὼς δὲ φίλως〉 αἰσχρὸν καὶ πονηρὸν ἂν ἐξείποιεν· 〈πῶς δέ τὼς πολεμίως,〉 τὼς δὲ φιλτάτως οὔ; αὐτίκα τὼς γονέας· αἰ γὰρ δέοι τὸν πατέρα ἢ τὰν ματέρα φάρμακον πιὲν ἢ φαγέν, καὶ μὴ θέλοι, οὐ δίκαιόν ἐστι καὶ ἐν τῶι ῥοφήματι καὶ ἐν τῶι ποτῶι δόμεν καὶ μὴ φάμεν ἐνῆμεν;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="3">
+                        <p>(<label>(3)</label>) οὐκῶν 〈δίκαιον〉 ἤδη ψεύδεσθαι καὶ ἐξαπατᾶν τὼς γονέας. καὶ κλέπτεν μὰν τὰ τῶν φίλων καὶ βιῆσθαι τὼς φιλτάτως δίκαιον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="4">
+                        <p>(<label>(4)</label>) αὐτίκα αἴ τις λυπηθείς τι τῶν οἰκηΐων καὶ ἀχθεσθεὶς μέλλοι αὐτὸν διαφθείρεν ἢ ξίφει ἢ σχοινίωι ἢ ἄλλωι τινί, δίκαιόν ἐστι ταῦτα κλέψαι, αἰ δύναιτο, αἰ δὲ ὑστερίξαι καὶ ἔχοντα καταλάβοι, ἀφελέσθαι βίαι;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="5">
+                        <p>(<label>(5)</label>) ἀνδραποδίξασθαι δὲ πῶς οὐ δίκαιον τὼς πολεμίως 〈καὶ〉 αἴ τις δύναιτο ἑλὼν πόλιν ὅλαν ἀποδόσθαι; τοιχωρυχὲν δὲ τὰ τῶν πολιτῶν κοινὰ οἰκήματα δίκαιον φαίνεται. αἰ γὰρ ὁ πατὴρ ἐπὶ θανάτωι, κατεστασιασμένος ὑπὸ τῶν ἐχθρῶν, δεδεμένος εἴη, ἆρα οὐ δίκαιον διορύξαντα κλέψαι καὶ σῶσαι τὸν πατέρα;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="6">
+                        <p>(<label>(6)</label>) ἐπιορκὲν δέ· αἴ τις ὑπὸ τῶν πολεμίων λαφθεὶς ὑποδέξαιτο ὀμνύων ἧ μὰν ἀφεθεὶς τὰν πόλιν προδώσεν, ἆρα οὗτος δίκαιά 〈κα〉 ποιήσαι εὐορκήσας;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="7">
+                        <p>(<label>(7)</label>) ἐγὼ μὲν [γὰρ] οὐ δοκῶ· ἀλλὰ μᾶλλον τὰν πόλιν καὶ τὼς φίλως καὶ τὰ ἱερὰ σώσαι 〈κα τὰ〉 πατρώϊα ἐπιορκήσας. ἤδη ἄρα δίκαιον καὶ τὸ ἐπιορκεῖν. καὶ τὸ ἱεροσυλέν·</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="8">
+                        <p>(<label>(8)</label>) τὰ μὲν ἴδια τῶν πόλεων ἐῶ· τὰ δὲ κοινὰ τᾶς Ἑλλάδος, τὰ ἐκ Δελφῶν καὶ τὰ ἐξ Ὀλυμπίας, μέλλοντος τῶ βαρβάρω τὰν Ἑλλάδα λαβεῖν καὶ τᾶς σωτηρίας ἐν χρήμασιν ἐούσας, οὐ δίκαιον λαβὲν καὶ χρῆσθαι ἐς τὸν πόλεμον;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="9">
+                        <p>(<label>(9)</label>) φονεύεν δὲ τὼς φιλτάτως δίκαιον· ἐπεὶ καὶ Ὀρέστας καὶ Ἀλκμαίων· καὶ ὁ θεὸς ἔχρησε δίκαια αὐτὼς ποιῆσαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="10">
+                        <p>(<label>(10)</label>) ἐπὶ δὲ τὰς τέχνας τρέψομαι καὶ τὰ τῶν ποιητῶν. ἐν γὰρ τραγωιδοποιίαι καὶ ζωγραφίαι ὅστις 〈κα〉 πλεῖστα ἐξαπατῆι ὅμοια τοῖς ἀληθινοῖς ποιέων, οὗτος ἄριστος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="11">
+                        <p>(<label>(11)</label>) θέλω δὲ καὶ ποιημάτων παλαιοτέρων μαρτύριον ἐπαγαγέσθαι. Κλεοβουλίνης [<bibl xml:lang="lat">fr. (2) p. (47) Crus.</bibl>]
+                            <quote type="blockquote">ἄνδρ’ εἶδον κλέπτοντα καὶ ἐξαπατῶντα βιαίως, 
+                            <lb/>καὶ τὸ βίαι ῥέξαι τοῦτο δικαιότατον.</quote></p>
+                    </div><pb facs="diefragmentederv02dieluoft_0386"/>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="12">
+                        <p>(<label>(12)</label>) ἐν πάλαι ταῦτα· Αἰσχύλου δὲ ταῦτα [<bibl xml:lang="lat">fr. (301). (302)</bibl>]
+                            <quote type="blockquote">ἀπάτης δικαίας οὐκ ἀποστατεῖ θεός.</quote> 〈καί·〉 
+                            <quote type="blockquote">ψευδῶν δὲ καιρὸν ἔσθ’ ὅπου τιμᾶι θεός.</quote></p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="13">
+                        <p>(<label>(13)</label>) λέγεται δὲ καὶ τῶιδε ἀντίος λόγος, ὡς ἄλλο τὸ δίκαιον καὶ τὸ ἄδικόν ἐστιν, διαφέρον ὥσπερ καὶ τὤνυμα; οὕτω καὶ τὸ πρᾶγμα· ἐπεὶ αἴ τις ἐρωτάσαι τὼς λέγοντας, ὡς τὸ αὐτό ἐστιν ἄδικον καὶ δίκαιον, αἰ ἤδη τι δίκαιον περὶ τὼς γονέας ἔπραξαν, ὁμολογησοῦντι. καὶ ἄδικον ἄρα. τὸ γὰρ αὐτὸ ἄδικον καὶ δίκαιον ὁμολογέοντι ἦμεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="14">
+                        <p>(<label>(14)</label>) φέρε ἄλλο δή· αἴ τινα γινώσκεις δίκαιον ἄνδρα, καὶ ἄδικον ἄρα τὸν αὐτόν, καὶ μέγαν τοίνυν καὶ μικρὸν κατὰ τωὐτὸν. καί τοι 〈ὁ〉 πολλὰ ἀδικήσας ἀποθανέτω 〈καὶ πολλὰ καὶ δίκαια δια〉πραξάμενος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="15">
+                        <p>(<label>(15)</label>) καὶ περὶ μὲν τούτων ἅλις. εἶμι δὲ ἐφ’ ἃ λέγοντες ἀξιόοντι τὸ αὐτὸ καὶ δίκαιον καὶ ἄδικον ἀποδεικνύεν</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="16">
+                        <p>(<label>(16)</label>) τὸ γὰρ κλέπτεν τὰ τῶν πολεμίων δίκαιον, καὶ ἄδικόν 〈κ’〉 ἀπεδείκνυεν τοῦτο τωὐτό, αἱ κ’ ἀληθὴς 〈ἧς〉 ὁ τήνων λόγος, καὶ τἆλλα καττωὐτό.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:3" n="17">
+                        <p>(<label>(17)</label>) τέχνας δὲ ἐπάγονται, ἐν αἷς οὐκ ἔστι τὸ δίκαιον καὶ τὸ ἄδικον. καὶ τοὶ ποιηταὶ οὔ [το] ποτ’ ἀλάθειαν, ἀλλὰ ποτὶ τὰς ἁδονὰς τῶν ἀνθρώπων τὰ ποιήματα ποιέοντι.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="4">
+                    <head rend="center">Περὶ ἀλαθέος καὶ ψεύδεος.</head>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="1">
+                        <p rend="indent">(<label>(1)</label>) λέγονται δὲ καὶ περὶ τῶ ψεύδεος καὶ τῶ ἀλαθέος δισσοὶ λόγοι, ὧν ὁ μέν φατι, ἄλλον μὲν τὸν ψεύσταν ἦμεν λόγον, ἄλλον δὲ τὸν ἀλαθῆ· ὁ δὲ τὸν αὐτὸν αὖ.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="2">
+                        <p>(<label>(2)</label>) κἀγὼ τόνδε λέγω· πρῶτον μέν, ὅτι τοῖς αὐτοῖς ὀνόμασι λέγονται· ἔπειτα δέ, ὅταν λόγος ῥηθῆι, αἰ μὲν ὥς 〈κα〉 λέγηται ὁ λόγος, οὕτω γεγένηται, ἀλαθὴς ὁ λόγος, αἰ δὲ μὴ γεγένηται, ψευδὴς ὁ αὐτὸς λόγος.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="3">
+                        <p>(<label>(3)</label>) αὐτίκα κατηγορεῖ ἱεροσυλίαν τω· αἴ γ’ ἐγένετο τὦργον, ἀλαθὴς ὁ λόγος· αἰ δὲ μὴ ἐγένετο, ψεύστας. καὶ τῶ ἀπολογουμένω ὡυτὸς λόγος. καὶ τά γε δικαστήρια τὸν αὐτὸν λόγον καὶ ψεύσταν καὶ ἀλαθῆ κρίνοντι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="4">
+                        <p>(<label>(4)</label>) ἔπειτα τοὶ ἑξῆς καθήμενοι αἰ <pb facs="diefragmentederv02dieluoft_0387"/> λέγοιμεν <q rend="single">μύστας εἰμί</q>, τὸ αὐτὸ μὲν πάντες ἐροῦμεν, ἀλαθὲς δὲ μόνος ἐγώ, ἐπεὶ καὶ εἰμί.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="5">
+                        <p>(<label>(5)</label>) δᾶλον ὧν, ὅτι ὁ αὐτὸς λόγος, ὅταν μὲν αὐτῶι παρῆι τὸ ψεῦδος, ψεύστας ἐστίν, ὅταν δὲ τὸ ἀλαθές, ἀλαθής (ὥσπερ καὶ ἄνθρωπος τὸ αὐτό, καὶ παῖς καὶ νεανίσκος καὶ ἀνὴρ καὶ γέρων ἐστίν).</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="6">
+                        <p rend="indent">(<label>(6)</label>) λέγεται δὲ καὶ ὡς ἄλλος εἴη ὁ ψεύστας λόγος, ἄλλος δὲ ὁ ἀλαθής, διαφέρων τὤνυμα 〈ὥσπερ καὶ τὸ πρᾶγμα〉· αἰ γάρ τις ἐρωτάσαι τὼς λέγοντας, ὡς ὁ αὐτὸς λόγος εἴη ψεύστας καὶ ἀλαθής, ὃν αὐτοὶ λέγοντι, πότερός ἐστιν· αἰ μὲν ψεύστας, δᾶλον ὅτι δύο εἴη· αἰ δ’ ἀλαθής [ἀποκρίναιτο], καὶ ψεύστας ὁ αὐτὸς οὗτος. καὶ ἀλαθῆ τίς ποκα εἶπεν ἢ ἐξεμαρτύρησε, καὶ ψευδῆ ἄρα τὰ αὐτὰ ταῦτα. καὶ αἴ τινα ἄνδρα ἀλαθῆ οἶδε, καὶ ψεύσταν τὸν αὐτόν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="7">
+                        <p>(<label>(7)</label>) ἐκ δὲ τῶ λόγω λέγοντι ταῦτα, ὅτι γενομένω μὲν τῶ πράγματος ἀλαθῆ τὸν λόγον 〈λέγοντι〉, ἀγενήτω δὲ ψεύσταν. οὔκων διαφέρει 〈αὐτῶν τὤνυμα, ἀλλὰ τὸ πρᾶγμα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="8">
+                        <p>(<label>(8)</label>) ἐρωτάσαι δὲ κά τις〉 αὖθις τὼς δικαστάς, ὅτι κρίνοντι (οὐ γὰρ πάρεντι τοῖς πράγμασιν)</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:4" n="9">
+                        <p>(<label>(9)</label>) ὁμολογέοντι δὲ καὶ αὐτοί, ὧι μὲν τὸ ψεῦδος ἀναμέμεικται, ψεύσταν ἦμεν, ὦ δὲ τὸ ἀλαθές, ἀλαθῆ. τοῦτο δὲ ὅλον διαφέρει . . . .</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="5">
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="1">
+                        <p rend="indent">(<label>(1)</label>) <q rend="single">ταὐτὰ τοὶ μαινόμενοι καὶ τοὶ σωφρονοῦντες καὶ τοὶ σοφοὶ καὶ τοὶ ἀμαθεῖς καὶ λέγοντι καὶ πράσσοντι.</q></p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="2">
+                        <p>(<label>(2)</label>) καὶ πρᾶτον μὲν ὀνομάζοντι ταὐτά, γᾶν καὶ ἄνθρωπον καὶ ἵππον καὶ πῦρ καὶ τἆλλα πάντα. καὶ ποιέοντι ταὐτά, κάθηντα καὶ ἔσθοντι καὶ πίνοντι καὶ κατάκεινται, καὶ τἆλλα καττωὐτό.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="3">
+                        <p>(<label>(3)</label>) καὶ μὰν καὶ τὸ αὐτὸ πρᾶγμα καὶ μέζον καὶ μῆιόν ἐστι καὶ πλέον καὶ ἔλασσον καὶ βαρύτερον καὶ κουφότερον. οὕτω γάρ ἐντι ταὐτὰ πάντα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="4">
+                        <p>(<label>(4)</label>) τὸ τάλαντόν ἐστι βαρύτερον τῆς μνᾶς, καὶ κουφότερον τῶν δύο ταλάντων· τωὐτὸν ἄρα καὶ κουφότερον καὶ βαρύτερον. * * * [<bibl type="lat">s. S. (643), (16)f.</bibl>].</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="5">
+                        <p>(<label>(5)</label>) καὶ ζώει ὁ αὐτὸς ἄνθρωπος καὶ οὐ ζώει, καὶ ταὐτὰ ἔστι καὶ οὐκ ἔστι· τὰ γὰρ τῆιδ’ ἐόντα ἐν τᾶι Λιβύαι οὐκ ἔστιν, οὐδέ γε τὰ ἐν Λιβύαι ἐν Κύπρωι. καὶ τἆλλα κατὰ τὸν αὐτὸν λόγον. οὐκῶν καὶ ἐντὶ τὰ πράγματα καὶ οὐκ ἐντί.’</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="6">
+                        <p>(<label>(6)</label>) τοὶ τῆνα λέγοντες, τὼς μαινομένως καὶ 〈τὼς σωφρονοῦντας καὶ〉 τὼς σοφὼς καὶ τὼς ἀμαθεῖς τωὐτὰ διαπράσσεσθαι καὶ λέγεν, καὶ τἆλλα 〈τὰ〉 ἑπόμενα τῶι λόγωι, οὐκ ὀρθῶς λέγοντι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="7">
+                        <p>(<label>(7)</label>) αἰ γάρ τις αὐτὼς <pb facs="diefragmentederv02dieluoft_0388"/> ἐρωτάσαι, αἰ διαφέρει μανία σωφροσύνης καὶ σοφία ἀμαθίης, φαντί [ναί].</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="8">
+                        <p>(<label>(8)</label>) εὖ γὰρ καὶ ἐξ ὧν πράσσοντι ἑκάτεροι δᾶλοί ἐντι, ὡς ὁμολογησοῦντι. οὐκῶν αἰ ταὐτὰ πράσσοντι, καὶ τοὶ σοφοὶ μαίνονται, καὶ τοὶ μαινόμενοι σοφοί, καὶ πάντα συνταράσσονται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="9">
+                        <p>(<label>(9)</label>) καὶ ἐπακτέος ὁ λόγος, πότερον ὧν ἐν δέοντι τοὶ σωφρονοῦντες λέγοντι ἢ τοὶ μαινόμενοι. ἀλλὰ γάρ φαντι, ὡς ταὐτὰ μὲν λέγοντι, ὅταν τις αὐτὼς ἐρωτῆι. ἀλλὰ τοὶ μὲν σοφοὶ ἐν τῶι δέοντι, τοὶ δὲ μαινόμενοι ἇι οὐ δεῖ·</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="10">
+                        <p>(<label>(10)</label>) καὶ τοῦτο λέγοντες δοκοῦντι μικρὸν ποτιθῆναι 〈τὸ〉 ἇι δεῖ καὶ μὴ δεῖ, ὥστε μηκέτι τὸ αὐτὸ ἦμεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="11">
+                        <p>(<label>(11)</label>) ἐγὼ δὲ οὐ πράγματος τοσοῦτον ποτιτεθέντος ἀλλοιοῦσθαι δοκῶ τὰ πράγματα, ἀλλ’ ἁρμονίας διαλλαγείσας· ὥσπερ <q rend="single">Γλαῦκος</q> καὶ <q rend="single">γλαυκός</q> καὶ <q rend="single">Ξάνθος</q> καὶ <q rend="single">ξανθός</q> καὶ <q rend="single">Ξοῦθος</q> καὶ <q rend="single">ξουθός</q>.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="12">
+                        <p>(<label>(12)</label>) ταῦτα μὲν τὴν ἁρμονίαν ἀλλάξαντα διήνεικαν, τὰ δὲ μακρῶς καὶ βραχυτέρως ῥηθέντα, <q rend="single">Τύρος</q> καὶ <q rend="single">τυρός</q>, <q rend="single">σάκος</q> καὶ <q rend="single">σακός</q>, ἅτερα δὲ γράμματα διαλλάξαντα· <q rend="single">κάρτος</q> καὶ <q rend="single">κρατός</q> <q rend="single">ὄνος</q> καὶ <q rend="single">νόος</q>.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="13">
+                        <p>(<label>(13)</label>) ἐπεὶ ὧν οὐκ ἀφαιρεθέντος οὐδενὸς τοσοῦτον διαφέρει, τί δή, αἴ τίς τι ποτιτίθητι ἢ ἀφαιρεῖ; καὶ τοῦτο δείξω οἷόν ἐστιν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="14">
+                        <p>(<label>(14)</label>) αἴ τις ἀπὸ τῶν δέκα ἓν ἀφέλοι 〈ἢ τοῖς δέκα ἓν ποτθείη〉, οὔ κ’ ἔτι δέκα οὐδὲ ἓν εἴη, καὶ τἆλλα καττωὐτό.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:5" n="15">
+                        <p>(<label>(15)</label>) τὸ δὲ τὸν αὐτὸν ἄνθρωπον καὶ ἦμεν καὶ μὴ ἦμεν, ἐρωτῶ· <q rend="single">τὶ ἢ τὰ πάντα ἔστιν;</q> οὐκῶν αἴ τις μὴ φαίη ἦμεν, ψεύδεται, 〈τὸ τὶ καὶ〉 τὰ πάντα εἰπὼν ταὐτά. πάντα ὧν πήι ἐστι.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="6">
+                    <head rend="center">Περὶ τᾶς σοφίας καὶ τᾶς ἀρετᾶς, αἰ διδακτόν.</head>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="1">
+                        <p rend="indent">(<label>(1)</label>) λέγεται δέ τις λόγος οὔτ’ ἀλαθὴς οὔτε ἱκανός· ὅτι ἄρα σοφία καὶ ἀρετὰ οὔτε διδακτὸν εἴη οὔτε μαθητόν. τοὶ δὲ ταῦτα λέγοντες ταῖσδε ἀποδείξεσι χρῶνται·</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="2">
+                        <p>(<label>(2)</label>) ὡς οὐχ οἷόν τε εἴη, αἴ τι ἄλλωι παραδοίης, τοῦτο αὐτὸν ἔτι ἔχειν. μία μὲν δὴ αὕτα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="3">
+                        <p>(<label>(3)</label>) ἄλλα δέ, ὡς, αἱ διδακτὸν ἦν, διδάσκαλοί κα ἀποδεδεγμένοι ἦν, ὡς τᾶς μωσικᾶς.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="4">
+                        <p>(<label>(4)</label>) τρίτα δέ, ὡς τοὶ ἐν τᾶι Ἑλλάδι γενόμενοι σοφοὶ ἄνδρες <pb facs="diefragmentederv02dieluoft_0389"/> τὰν αὐτῶν τέχναν ἐδίδαξάν κα τὼς φίλως.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="5">
+                        <p>(<label>(5)</label>) τετάρτα δὲ, ὅτι ἤδη τινὲς παρὰ σοφιστὰς ἐλθόντες οὐδὲν ὠφέληθεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="6">
+                        <p>(<label>(6)</label>) πέμπτα δέ, ὅτι πολλοὶ οὐ συγγενόμενοι σοφισταῖς ἄξιοι λόγω γεγένηνται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="7">
+                        <p>(<label>(7)</label>) ἐγὼ δὲ κάρτα εὐήθη νομίζω τόνδε τὸν λόγον· γινώσκω γὰρ τὼς διδασκάλως γράμματα διδάσκεν, τά κα καὶ αὐτὸς ἐπιστάμενος τυγχάνηι, καὶ κιθαριστὰς κιθαρίζεν. πρὸς δὲ τὰν δευτέραν ἀπόδειξιν. ὡς ἄρα οὐκ ἐντὶ διδάσκαλοι ἀποδεδεγμένοι, τί μὰν τοὶ σοφισταὶ διδάσκοντι ἄλλ’ ἢ σοφίαν καὶ ἀρετάν;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="8">
+                        <p>(<label>(8)</label>) [ἢ] τί δὲ Ἀναξαγόρειοι καὶ Πυθαγόρειοι ἦεν; τὸ δὲ τρίτον, ἐδίδαξε Πολύκλειτος τὸν υἱὸν ἀνδριάντας ποιέν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="9">
+                        <p>(<label>(9)</label>) καὶ αἰ μέν τις μὴ ἐδίδαξε, οὐ σαμῆιον· αἰ δ’ εἶς τις ἐδίδαξε, τεκμάριον ὅτι δυνατόν ἐστι διδάξαι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="10">
+                        <p>(<label>(10)</label>) τέταρτον δέ, αἰ μή τοι παρὰ [σοφῶν] σοφιστῶν σοφοὶ γίνονται· καὶ γὰρ γράμματα πολλοὶ οὐκ ἔμαθον μαθόντες.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="11">
+                        <p>(<label>(11)</label>) ἔστι δέ τι καὶ φύσις, ἆι δή τις μὴ μαθὼν παρὰ σοφιστᾶν ἱκανὸς ἐγένετο, εὐφυής γα γενόμενος ῥαιδίως συναρπάξαι τὰ πολλά, ὀλίγα μαθὼν παρ’ ὧνπερ καὶ τὠνύματα μανθάνομεν· καὶ τούτων τι ἤτοι πλέον, ἤτοι ἔλασσον, ὁ μὲν παρὰ πατρός, ὁ δὲ παρὰ ματρός.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="12">
+                        <p>(<label>(12)</label>) αἰ δέ τωι μὴ πιστόν ἐστι τὰ ὀνύματα μανθάνειν ἁμέ, ἀλλ’ ἐπισταμένως ἅμα γίνεσθαι, γνώτω ἐκ τῶνδε· αἴ τις εὐθὺς γενόμενον παιδίον ἐς Πέρσας ἀποπέμψαι καὶ τηνεῖ τράφοι, κωφὸν Ἑλλάδος φωνᾶς, περσίζοι κα· καὶ αἴ τις τηνόθεν τῆιδε κομίξαι, ἑλλανίζοι κα. οὕτω μανθάνομεν τὰ ὀνύματα, καὶ τὼς διδασκάλως οὐκ ἴσαμες.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:6" n="13">
+                        <p>(<label>(13)</label>) οὕτω λέλεκταί μοι ὁ λόγος, καὶ ἔχεις ἀρχὴν καὶ τέλος καὶ μέσα· καὶ οὐ λέγω, ὡς διδακτόν ἐστιν, ἀλλ’ οὐκ ἀποχρῶντί μοι τῆναι αἱ ἀποδείξεις.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="7">
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:7" n="1">
+                        <p rend="indent">(<label>(1)</label>) λέγοντι δέ τινες τῶν δαμαγορούντων, ὡς χρὴ τὰς ἀρχὰς ἀπὸ κλάρω γίνεσθαι, οὐ βέλτιστα ταῦτα νομίζοντες.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:7" n="2">
+                        <p>(<label>(2)</label>) εἰ γάρ τις αὐτὸν ἐρωτώιη τὸν ταῦτα λέγοντα, τί δὴ σὺ τοῖς οἰκέταις οὐκ ἀπὸ κλήρω τὰ ἔργα προστάσσεις, ὅπως ὁ μὲν ζευγηλάτας, αἴ κ’ ὀψοποιὸς λάχηι, ὀψοποιῆι, ὁ δὲ ὀψοποιὸς ζευγηλατῆι, καὶ τἆλλα καττωὐτό;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:7" n="3">
+                        <p>(<label>(3)</label>) καὶ πῶς οὐ καὶ τὼς χαλκῆας καὶ τῶς σκυτῆας συναγαγόντες καὶ τέκτονας καὶ χρυσοχόας διεκλαρώσαμεν καὶ ἠναγκάσαμεν, ἅν χ’ ἕκαστος λάχηι τέχναν ἐργάζεσθαι, ἀλλὰ μὴ ἅν ἐπίσταται;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:7" n="4">
+                        <p>(<label>(4)</label>) τωὐτὸν δὲ καὶ ἐν ἀγῶσι τᾶς μωσικᾶς διακλαρῶσαι τὼς ἀγωνιστὰς καὶ ὅ τι χ’ ἕκαστος <pb facs="diefragmentederv02dieluoft_0390"/> [κα] λάχηι, ἀγωνίζεσθαι· αὐλητὰς κιθαρίξει τυχὸν καὶ κιθαρωιδὸς αὐλήσει· καὶ ἐν τῶι πολέμωι [τὼς] τοξότας καὶ [τὼς] ὁπλίτας ἱππασεῖται, ὁ δὲ ἱππεὺς τοξεύσει, ὥστε πάντες ἃ οὐκ ἐπίστανται οὐδὲ δύνανται, [οὐ δὲ] πραξοῦντι.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:7" n="5">
+                        <p>(<label>(5)</label>) λέγοντι δὲ καὶ ἀγαθὸν ἦμεν καὶ δαμοτικὸν κάρτα· ἐγὼ ἥκιστα νομίζω δαμοτικόν. ἐντὶ γὰρ ἐν ταῖς πόλεσι μισόδαμοι ἄνθρωποι, ὧν αἴ κα τύχηι ὁ κύαμος, ἀπολοῦντι τὸν δᾶμον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:7" n="6">
+                        <p>(<label>(6)</label>) ἀλλὰ χρὴ τὸν δᾶμον αὐτὸν ὁρῶντα αἱρεῖσθαι πάντας τὼς εὔνως αὐτῶι, καὶ τὼς ἐπιταδείως στραταγέν, ἁτέρως δὲ νομοφυλακὲν καὶ τἆλλα.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="8">
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="1">
+                        <p rend="indent">(<label>(1)</label>) 〈τῶ αὐτῶ〉 ἀνδρὸς καὶ τᾶς αὐτᾶς τέχνας νομίζω κατὰ βραχύ τε δύνασθαι διαλέγεσθαι, καὶ 〈τὰν〉 ἀλάθειαν τῶν πραγμάτων ἐπίστασθαι, καὶ δικάζεν ἐπίστασθαι ὀρθῶς, καὶ δαμαγορεῖν οἷόν τ’ ἦμεν, καὶ λόγων τέχνας ἐπίστασθαι, καὶ περὶ φύσιος τῶν ἁπάντων ὥς τε ἔχει καὶ ὡς ἐγένετο, διδάσκεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="2">
+                        <p>(<label>(2)</label>) καὶ πρῶτον μὲν ὁ περὶ φύσιος τῶν ἁπάντων εἰδώς, πῶς οὐ δυνασεῖται περὶ πάντων ὀρθῶς καὶ 〈τὰν πόλιν διδάσκεν〉 πράσσεν;</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="3">
+                        <p>(<label>(3)</label>) ἔτι δὲ ὁ τὰς τέχνας τῶν λόγων εἰδὼς ἐπιστασεῖται καὶ περὶ πάντων ὀρθῶς λέγεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="4">
+                        <p>(<label>(4)</label>) δεῖ γὰρ τὸν μέλλοντα ὀρθῶς λέγειν, περὶ ὧν ἐπίσταται, περὶ τούτων λέγεν. πάντ’ ὧν [γὰρ] ἐπιστασεῖται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="5">
+                        <p>(<label>(5)</label>) πάντων μὲν γὰρ τῶν λόγων τὰς τέχνας ἐπίσταται, τοὶ δὲ λόγοι πάντες περὶ πάντων τῶν ἐ〈όντων ἐντί〉.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="6">
+                        <p>(<label>(6)</label>) δεῖ δὲ ἐπίστασθαι τὸν μέλλοντα ὀρθῶς λέγεν, περὶ ὅτων κα λέγηι, 〈τὰ πράγματα〉, καὶ τὰ μὲν ἀγαθὰ ὀρθῶς διδάσκεν τὴν πόλιν πράσσεν, τὰ δὲ κακά τως κωλύειν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="7">
+                        <p>(<label>(7)</label>) εἰδὼς δὲ ταῦτα εἰδήσει καὶ τὰ ἅτερα τούτων· πάντα γὰρ ἐπιστασεῖται· ἔστι γὰρ ταὐτὰ τῶν πάντων τῆνα, 〈ὁ〉 δὲ ποτὶ τωὐτὸν τὰ δέοντα πράξει, αἰ χρή.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="8">
+                        <p>(<label>(8)</label>) καὶ μὲν ἐπίσταται αὐλέν, ἀὶ δυνασεῖται αὐλέν, αἴ κα δέηι τοῦτο πράσσεν.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="9">
+                        <p>(<label>(9)</label>) τὸν δὲ δικάζεσθαι ἐπιστάμενον δεῖ τὸ δίκαιον ἐπίστασθαι ὀρθῶς· περὶ γὰρ τοῦτο ταὶ δίκαι. εἰδὼς δὲ τοῦτο <pb facs="diefragmentederv02dieluoft_0391"/> εἰδήσει καὶ τὸ ὑπεναντίον αὐτῶι και τὰ 〈τούτων〉 ἅτερα.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="10">
+                        <p>(<label>(10)</label>) δεῖ δὲ αὐτὸν καὶ τὼς νόμως ἐπίστασθαι πάντας· αἰ τοίνυν τὰ πράγματα μὴ ἐπιστασεῖται, οὐδὲ τὼς νόμως.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="11">
+                        <p>(<label>(11)</label>) τὸν γὰρ ἐν μωσικᾶι νόμον ὡυτὸς ἐπίσταται, ὅσπερ καὶ μωσικάν, ὃς δὲ μὴ μωσικάν, οὐδὲ τὸν νόμον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="12">
+                        <p>(<label>(12)</label>) ὅς γα 〈μὰν〉 τὰν ἀλάθειαν τῶν πραγμάτων ἐπίσταται, εὐπετὴς ὁ λόγος, ὅτι πάντα ἐπίσταται·</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:8" n="13">
+                        <p>(<label>(13)</label>) ὣς δὲ 〈καὶ κατὰ〉 βραχὺ 〈διαλέγεσθαι δύναται, αἴ κα〉 δέηι νιν ἐρωτώμενον ἀποκρίνεσθαι, περὶ πάντων· οὐκῶν δεῖ νιν πάντ’ ἐπίστασθαι.</p>
+                    </div>
+                </div>
+                <div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1" n="9">
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:9" n="1">
+                        <p rend="indent">(<label>(1)</label>) μέγιστον δὲ καὶ κάλλιστον ἐξεύρημα εὕρηται μνάμα καὶ ἐς πάντα χρήσιμον, ἐς τὰν σοφίαν τε καὶ ἐς τὸν βίον.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:9" n="2">
+                        <p>(<label>(2)</label>) ἔστι δὲ τοῦτο 〈πρᾶτον〉· ἐὰν προσέχηις τὸν νοῦν, 〈τὰ〉 διὰ τούτω παρελθόντα ἁ γνώμα μᾶλλον αἰσθησεῖται.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:9" n="3">
+                        <p>(<label>(3)</label>) δεύτερον δὲ μελετᾶν, ἃ κα ἀκούσηις· τῶι γὰρ πολλάκις ταὐτὰ ἀκοῦσαι καὶ εἶπαι ἐς μνάμαν παρεγένετο σύνολον ὃ ἕμαθες.</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:9" n="4">
+                        <p>(<label>(4)</label>) τρίτον ἅ κα ἀκούσηις ἐπὶ τὰ οἶδας καταθέσθαι, οἷον τόδε· δεῖ μεμνᾶσθαι Χρύσιππον, κατθέμεν ἐπὶ τὸν χρυσὸν καὶ τὸν ἵππον,</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:9" n="5">
+                        <p>(<label>(5)</label>) ἄλλο· Πυριυλάμπη κατθέμεν ἐπὶ 〈τὸ〉 πῦρ καὶ τὸ λάμπειν. τάδε μὲν περὶ τῶν ὀνυμάτων·</p>
+                    </div>
+                    <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1309.tlg001.1st1K-grc1:9" n="6">
+                        <p>(<label>(6)</label>) τὰ δὲ πράγματα οὕτως· περὶ ἀνδρείας ἐπὶ τὸν Ἄρη καὶ τὸν Ἀχιλλῆα, περὶ χαλκείας δὲ ἐπὶ τὸν Ἥφαιστον, περὶ δειλίας ἐπὶ τὸν Ἐπειόν . . .</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

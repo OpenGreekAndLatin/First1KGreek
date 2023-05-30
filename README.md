@@ -12,3 +12,5 @@
 XML files for the works in the First Thousand Years of Greek Project.
 
 For a list of editions in this collection, organized by author and work, see http://opengreekandlatin.github.io/First1KGreek/
+
+For finding materials, submitting corrections, asking questions, or making contributions, please visit our [wiki](https://github.com/OpenGreekAndLatin/First1KGreek/wiki).
