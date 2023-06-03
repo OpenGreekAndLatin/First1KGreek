@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Gnomologium Vaticanum Epicureum</title>
+        <author>Epicurus</author>
+        <editor>Peter von der Mühll</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+          <resp>Published original versions of the electronic texts</resp>
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName>Daniel Whittle</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Aglaia Poulida</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Houghton</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digial editor</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0537.tlg014.1st1K-grc1.xml</idno>
+        <pubPlace />
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2021-05-31" />
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>
+              <persName>Epicurus</persName>
+            </author>
+            <editor>Peter von der Mühll</editor>
+            <title xml:lang="lat">Epicuri epistulae tres et ratae sententiae a Laertio Diogene Servatae</title>
+            <imprint>
+              <pubPlace>Leipzig</pubPlace>
+              <publisher>Teubner</publisher>
+              <date>1922</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/epicuriepistulae00epicuoft/page/60/mode/1up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <correction>
+          <p>Lace v. 0.6.18 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+        </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the
+        CTS/CITE Architecture</p>
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts section.</p>
+        </cRefPattern>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2022-12-19" who="Lisa Cerrato">Markup review.</change>
+      <change when="2021-08-20" who="Charlotte Houghton">initial markup of new file.</change>
+    </revisionDesc>
+  </teiHeader>
+<text>
+  <body>
+    
+<div type="edition" n="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" xml:lang="grc"> <pb facs="epicuriepistulae00epicuoft_0074"/> <head rend="center">Ἐπικούρου Προσφώνησις.</head> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="1"> 
+<p rend="indent"> Τὸ μακάριον καὶ ἄφθαρτον οὔτε αὐτὸ πράγματα ἔχει οὔτε ἄλλῳ παρέχει, οὔτε ὀργαῖς οὔτε χάρισι συνέχεται· ἐν ἀσθενείᾳ γὰρ πάντα τὰ τοιαῦτα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="2"> 
+<p rend="indent">Ὁ θάνατος οὐδὲν πρὸς ἡμᾶς· τὸ γὰρ διαλυθὲν ἀναισθητεῖ· τὸ δὲ ἀναισθητοῦν οὐδὲν πρὸς ἡμᾶς.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="3"> 
+<p rend="indent">Οὐ χρονίζει τὸ ἀλγοῦν ἐν τῇ σαρκί, ἀλλὰ τὸ μὲν ἄκρον τὸν ἐλάχιστον χρόνον πάρεστι, τὸ δὲ μέσον τὸ ὑπερτεῖνον τὸ ἡδόμενον κατὰ σάρκα 〈οὐ〉 πολλὰς ἡμέρας ὑπάρχει, αἱ δὲ πολυχρόνιοι τῶν ἀρρωστιῶν πλεονάζον ἔχουσιν ἐν τῇ σαρκὶ τὸ ἡδόμενον ἢ τὸ ἀλγοῦν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="4"> 
+<p rend="indent">Πᾶσα ἀλγηδὼν εὐκαταφρόνητος· ἡ γὰρ σύντονον ἔχουσα τὸ πονοῦν σύντομον ἔχει τὸν χρόνον, ἡ δὲ χρονίζουσα περὶ τὴν σάρκα ἀβληχρὸν ἔχει τὸν πόνον. <pb facs="epicuriepistulae00epicuoft_0075"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="5"> 
+<p rend="indent">Οὐκ ἔστιν ἡδέως ζῆν ἄνευ τοῦ φρονίμως καὶ καλῶς καὶ δικαίως· ὅπου δὲ τοῦτο μὴ ὑπάρχει, οὐκ ἔστιν ἡδέως ζῆν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="6"> 
+<p rend="indent">Οὐκ ἔστι τὸν λάθρα τι ποιοῦντα, ὧν συνέθεντο πρὸς ἀλλήλους εἰς τὸ μὴ βλάπτειν μηδὲ βλάπτεσθαι, πιστεύειν ὅτι λήσει, κἂν μυριάκις ἐπὶ τοῦ παρόντος λανθάνῃ· μέχρι γὰρ καταστροφῆς ἄδηλον εἰ λήσει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="7"> 
+<p rend="indent">Ἀδικοῦντα λαθεῖν μὲν δύσκολον, πίστιν δὲ λαβεῖν ὑπὲρ τοῦ λαθεῖν ἀδύνατον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="8"> 
+<p rend="indent">Ὁ τῆς φύσεως πλοῦτος ὥρισται καὶ εὐπόριστός ἐστιν. ὁ δὲ τῶν κενῶν δοξῶν εἰς ἄπειρον ἐκπίπτει καὶ ἔστι δυσπόριστος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="9"> 
+<p rend="indent">Κακὸν ἀνάγκη, ἀλλ’ οὐδεμία ἀνάγκη ζῆν μετὰ ἀνάγκης.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="10"> 
+<p rend="indent">Μέμνησο ὅτι θνητὸς ὢν τῇ φύσει καὶ λαβὼν χρόνον ὡρισμένον ἀνέβης τοῖς περὶ φύσεως διαλογισμοῖς ἐπὶ τὴν ἀπειρίαν καὶ τὸν αἰῶνα καὶ κατεῖδες <quote type="blockquote"><lb/>τά τ’ ἐόντα τά τ’ ἐσσόμενα πρό τ’ ἐόντα. <lb/></quote></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="11"> 
+<p rend="indent">Τῶν πλείστων ἀνθρώπων τὸ μὲν ἡσυχάζον ναρκᾷ, τὸ δὲ κινούμενον λυττᾷ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="12"> 
+<p rend="indent">Ὁ δίκαιος βίος ἀταρακτότατος, ὁ δὲ ἄδικος πλείστης ταραχῆς γέμων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="13"> 
+<p rend="indent">Ὧν ἡ σοφία παρασκευάζεται εἰς τὴν τοῦ ὅλου βίου μακαριότητα, πολὺ μέγιστόν ἐστιν ἡ τῆς φιλίας κτῆσις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="14"> 
+<p rend="indent">Γεγόναμεν ἅπαξ, δὶς δὲ οὐκ ἔστι γενέσθαι· δεῖ δὲ τὸν αἰῶνα μηκέτι εἶναι· σὺ δὲ οὐκ ὢν τῆς αὔριον 〈κύριος〉 ἀναβάλλῃ τὸν καιρόν· ὁ δὲ βίος μελλησμῷ παραπόλλυται καὶ εἷς ἕκαστος ἡμῶν ἀσχολούμενος ἀποθνῄσκει. <pb facs="epicuriepistulae00epicuoft_0076"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="15"> 
+<p rend="indent">Ἤθη ὥσπερ τὰ ἡμῶν αὐτῶν ἴδια τιμῶμεν, ἄν τε χρηστὰ ἔχωμεν καὶ ὑπὸ τῶν ἀνθρώπων ζηλούμενα, ἄν τε μή· οὕτω χρὴ καὶ 〈τὰ〉 τῶν πέλας, ἂν ἐπιεικεῖς ὦσιν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="16"> 
+<p rend="indent">Οὐδεὶς βλέπων τὸ κακὸν αἱρεῖται αὐτό, ἀλλὰ δελεασθεὶς ὡς ἀγαθῷ 〈ὄντι αὐτῷ καὶ οὐκ ἀποβλέψας〉 πρὸς τὸ μεῖζον αὐτοῦ κακὸν ἐθηρεύθη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="17"> 
+<p rend="indent">Οὐ νέος μακαριστός, ἀλλὰ γέρων βεβιωκὼς καλῶς· ὁ γὰρ νέος ἀκμὴν πολὺς ὑπὸ τῆς τύχης ἑτεροφρονῶν πλάζεται· ὁ δὲ γέρων καθάπερ ἐν λιμένι τῷ γήρᾳ καθώρμικεν τὰ πρότε- ρον δυσελπιστούμενα τῶν ἀγαθῶν ἀσφαλεῖ κατακλείσας χάριτι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="18"> 
+<p rend="indent">Ἀφαιρουμένης προσόψεως καὶ ὁμιλίας καὶ συναναστροφῆς ἐκλύεται τὸ ἐρωτικὸν πάθος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="19"> 
+<p rend="indent">Τοῦ γεγονότος ἀμνήμων ἀγαθοῦ γέρων τήμερον γεγένηται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="20"> 
+<p rend="indent">Τῶν ἐπιθυμιῶν αἱ μέν εἰσι φυσικαὶ καὶ ἀναγκαῖαι, αἳ δὲ φυσικαὶ μὲν οὐκ ἀναγκαῖαι δέ, αἱ δὲ οὔτε φυσικαὶ οὔτε ἀναγκαῖαι ἀλλὰ παρὰ κενὴν δόξαν γινόμεναι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="21"> 
+<p rend="indent">Οὐ βιαστέον τὴν φύσιν ἀλλὰ πειστέον· πείσομεν δὲ τὰς ἀναγκαίας ἐπιθυμίας ἐκπληροῦντες, τάς τε φυσικὰς ἂν μὴ βλάπτωσι, τὰς δὲ βλαβερὰς πικρῶς ἐλέγχοντες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="22"> 
+<p rend="indent">Ὁ ἄπειρος χρόνος καὶ ὁ πεπερασμένος ἴσην ἔχει τὴν ἡδονήν, ἐάν τις ὀρθῶς αὐτῆς τὰ πέρατα καταμετρήσῃ τῷ λογισμῷ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="23"> 
+<p rend="indent">Πᾶσα φιλία δι’ ἑαυτὴν αἱρετή· ἀρχὴν δὲ εἴληφεν ἀπὸ τῆς ὠφελείας. <pb facs="epicuriepistulae00epicuoft_0077"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="24"> 
+<p rend="indent">Ἐνύπνια οὐκ ἔλαχε φύσιν θείαν οὐδὲ μαντικὴν δύναμιν, ἀλλὰ γίνεται κατὰ ἔμπτωσιν εἰδώλων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="25"> 
+<p rend="indent">Ἡ πενία μετρουμένη τῷ τῆς φύσεως τέλει μέγας ἐστὶ πλοῦτος· πλοῦτος δὲ μὴ ὁριζόμενος μεγάλη ἐστὶ πενία.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="26"> 
+<p rend="indent">Δεῖ διαλαβεῖν ὅτι καὶ ὁ πολὺς λόγος καὶ ὁ βραχὺς εἰς τὸ αὐτὸ συντείνει.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="27"> 
+<p rend="indent">Ἐπὶ μὲν τῶν ἄλλων ἐπιτηδευμάτων μόλις τελειωθεῖσιν ὁ καρπὸς ἔρχεται, ἐπὶ δὲ φιλοσοφίας συντρέχει τῇ γνώσει τὸ τερπνόν· οὐ γὰρ μετὰ μάθησιν ἀπόλαυσις, ἀλλὰ ἅμα μάθησις καὶ ἀπόλαυσις.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="28"> 
+<p rend="indent">Οὔτε τοὺς προχείρους εἰς φιλίαν οὔτε τοὺς ὀκνηροὺς δοκιμαστέον· δεῖ δὲ καὶ παρακινδυνεῦσαι χάριν, χάριν φιλίας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="29"> 
+<p rend="indent">Παρρησίᾳ γὰρ ἔγωγε χρώμενος φυσιολόγῳ χρησμῳδεῖν τὰ συμφέροντα πᾶσιν ἀνθρώποις μᾶλλον ἂν βουλοίμην, κἂν μηδεὶς μέλλῃ συνήσειν, ἢ συγκατατιθέμενος ταῖς δόξαις καρποῦσθαι τὸν πυκνὸν παραπίπτοντα παρὰ τῶν πολλῶν ἔπαινον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="30"> 
+<p rend="indent">Ἑτοιμάζονταί τινες διὰ βίου τὰ πρὸς τὸν βίον, οὐ συνορῶντες ὡς πᾶσιν ἡμῖν θανάσιμον ἐγκέχυται τὸ τῆς γενέσεως φάρμακον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="31"> 
+<p rend="indent">Πρὸς μὲν τἆλλα δυνατὸν ἀσφάλειαν πορίσασθαι, χάριν δὲ θανάτου πάντες ἄνθρωποι πόλιν ἀτείχιστον οἰκοῦμεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="32"> 
+<p rend="indent">Ὁ τοῦ σοφοῦ σεβασμὸς ἀγαθὸν μέγα τῷ σεβομένῳ ἐστί.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="33"> 
+<p rend="indent">Σαρκὸς φωνὴ τὸ μὴ πεινῆν, τὸ μὴ διψῆν, τὸ μὴ ῥιγοῦν· <pb facs="epicuriepistulae00epicuoft_0078"/> ταῦτα γὰρ ἔχων τις καὶ ἐλπίζων ἕξειν κἂν 〈Διὶ〉 ὑπὲρ εὐδαιμονίας μαχέσαιτο.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="34"> 
+<p rend="indent">Οὐχ οὕτως χρείαν ἔχομεν τῆς χρείας παρὰ τῶν φίλων ὡς τῆς πίστεως τῆς περὶ τῆς χρείας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="35"> 
+<p rend="indent">Οὐ δεῖ λυμαίνεσθαι τὰ παρόντα τῶν ἀπόντων ἐπιθυ μίᾳ, ἀλλ’ ἐπιλογίζεσθαι ὅτι καὶ ταῦτα τῶν εὐκταίων ἦν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="36"> 
+<p rend="indent">Ὁ Ἐπικούρου βίος τοῖς τῶν ἄλλων συγκρινόμενος ἕνεκεν ἡμερότητος καὶ αὐταρκείας μῦθος ἂν νομισθείη.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="37"> 
+<p rend="indent"> Ἀσθενὴς ἡ φύσις ἐστὶ πρὸς τὸ κακόν, οὐ πρὸς τὸ ἀγαθόν· ἡδοναῖς μὲν γὰρ σῴζεται, ἀλγηδόσι δὲ διαλύεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="38"> 
+<p rend="indent">Μικρὸς παντάπασιν, ᾧ πολλαὶ αἰτίαι εὔλογοι εἰς ἐξαγωγὴν βίου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="39"> 
+<p rend="indent">Οὔθ’ ὁ τὴν χρείαν ἐπιζητῶν διὰ παντὸς φίλος οὔθ’ ὁ μηδέποτε συνάπτων· ὃ μὲν γὰρ καπηλεύει τῇ χάριτι τὴν ἀμοιβήν, ὃ δὲ ἀποκόπτει τὴν περὶ τοῦ μέλλοντος εὐελπιστίαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="40"> 
+<p rend="indent">Ὁ λέγων πάντα κατ’ ἀνάγκην γίνεσθαι οὐδὲν ἐγκαλεῖν ἔχει τῷ λέγοντι μὴ πάντα κατ’ ἀνάγκην γίνεσθαι· αὐτὸ γὰρ τοῦτό φησι κατ’ ἀνάγκην γίνεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="41"> 
+<p rend="indent">Γελᾶν ἅμα δεῖ καὶ φιλοσοφεῖν καὶ οἰκονομεῖν καὶ τοῖς λοιποῖς οἰκειώμασι χρῆσθαι καὶ μηδαμῇ λήγειν τὰς ἐκ τῆς ὀρθῆς φιλοσοφίας φωνὰς ἀφιέντας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="42"> 
+<p rend="indent">Ὁ αὐτὸς χρόνος καὶ γενέσεως τοῦ μεγίστου ἀγαθοῦ καὶ ἀπολαύσεως.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="43"> 
+<p rend="indent">Φιλαργυρεῖν ἄδικα μὲν ἀσεβές, δίκαια δὲ αἰσχρόν· ἀπρεπὲς γὰρ ῥυπαρῶς φείδεσθαι καὶ μετὰ τοῦ δικαίου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="44"> 
+<p rend="indent">Ὁ σοφὸς εἰς τὰ ἀναγκαῖα συγκλεισθεὶς μᾶλλον ἐπίστα <pb facs="epicuriepistulae00epicuoft_0079"/> ται μεταδιδόναι ἢ μεταλαμβάνειν· τηλικοῦτον αὐταρκείας εὗρε θησαυρόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="45"> 
+<p rend="indent">Οὐ κόμπου οὐδὲ φωνῆς ἐργαστικοὺς οὐδὲ τὴν περι μάχητον παρὰ τοῖς πολλοῖς παιδείαν ἐνδεικνυμένους φυσιο- λογία παρασκευάζει, ἀλλ’ ἀσοβάρους καὶ αὐτάρκεις καὶ ἐπὶ τοῖς ἰδίοις ἀγαθοῖς, οὐκ ἐπὶ τοῖς τῶν πραγμάτων μέγα φρονοῦντας.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="46"> 
+<p rend="indent">Τὰς φαύλας συνηθείας ὥσπερ ἄνδρας πονηροὺς πολὺν χρόνον μέγα βλάψαντας τελείως ἐκδιώκομεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="47"> 
+<p rend="indent">Προκατείλημμαί σε, ὦ Τύχη, καὶ πᾶσαν 〈τὴν〉 σὴν παρείσδυσιν ἐνέφραξα. καὶ οὔτε σοὶ οὔτε ἄλλῃ οὐδεμιᾷ περιστάσει δώσομεν ἑαυτοὺς ἐκδότους· ἀλλ’ ὅταν ἡμᾶς τὸ χρεὼν ἐξάγῃ, μέγα προσπτύσαντες τῷ ζῆν καὶ τοῖς αὐτῷ κενῶς περι πλαττομένοις ἄπιμεν ἐκ τοῦ ζῆν μετὰ καλοῦ παιῶνος ἐπιφωνοῦντες ὡς εὖ ἡμῖν βεβίωται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="48"> 
+<p rend="indent">Πειρᾶσθαι τὴν ὑστέραν τῆς προτέρας κρείττω ποιεῖν, ἕως ἂν ἐν ὁδῷ ὦμεν· ἐπειδὰν δὲ ἐπὶ πέρας ἔλθωμεν, ὁμαλῶς εὐφραίνεσθαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="49"> 
+<p rend="indent">Οὐκ ἦν τὸ φοβούμενον λύειν ὑπὲρ τῶν κυριωτάτων μὴ εἰδότας τίς ἡ τοῦ σύμπαντος φύσις, ἀλλ’ ὑποπτεύοντάς τι τῶν κατὰ τοὺς μύθους. ὥστε οὐκ ἦν ἄνευ φυσιολογίας ἀκεραίους τὰς ἡδονὰς ἀπολαμβάνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="50"> 
+<p rend="indent">Οὐδεμία ἡδονὴ καθ’ ἑαυτὴν κακόν· ἀλλὰ τὰ ποιητικὰ ἐνίων πολλαπλασίους ὀχλήσεις ἐπιφέρει τῶν ἡδονῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="51"> 
+<p rend="indent">Πυνθάνομαί σου τὴν κατὰ σάρκα κίνησιν ἀφθονώτερον διακεῖσθαι πρὸς τὴν ἀφροδισίων ἔντευξιν. σὺ δὲ ὅταν μήτε <pb facs="epicuriepistulae00epicuoft_0080"/> τοὺς νόμους καταλύῃς μήτε τὰ καλῶς ἔθει κείμενα κινῇς μήτε τῶν πλησίον τινὰ λυπῇς μήτε τὴν σάρκα καταξαίνῃς μήτε τὰ ἀναγκαῖα καταναλίσκῃς, χρῶ ὡς βούλει τῇ σεαυτοῦ προαιρέσει. ἀμήχανον μέντοι γε τὸ μὴ οὐχ ἑνί γέ τινι τούτων συνέχεσθαι· ἀφροδίσια γὰρ οὐδέποτε ὤνησεν, ἀγαπητὸν δὲ εἰ μὴ ἔβλαψεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="52"> 
+<p rend="indent">Ἡ φιλία περιχορεύει τὴν οἰκουμένην κηρύττουσα δὴ πᾶσιν ἡμῖν ἐγείρεσθαι ἐπὶ τὸν μακαρισμόν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="53"> 
+<p rend="indent">Οὐδενὶ φθονητέον· ἀγαθοὶ γὰρ οὐκ ἄξιοι φθόνου, πονηροὶ δὲ ὅσῳ ἂν μᾶλλον εὐτυχῶσι. τοσούτῳ μᾶλλον αὑτοῖς λυμαίνονται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="54"> 
+<p rend="indent">Οὐ προσποιεῖσθαι δεῖ φιλοσοφεῖν, ἀλλ’ ὄντως φιλοσοφεῖν· οὐ γὰρ προσδεόμεθα τοῦ δοκεῖν ὑγιαίνειν. ἀλλὰ τοῦ κατ’ ἀλήθειαν ὑγιαίνειν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="55"> 
+<p rend="indent">Θεραπευτέον τὰς συμφορὰς τῇ τῶν ἀπολλυμένων χάριτι καὶ τῷ γινώσκειν ὅτι οὐκ ἔστιν ἄπρακτον ποιῆσαι τὸ γεγονός.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="56"> 
+<p rend="indent">Ἀλγεῖ μὲν ὁ σοφὸς οὐ μᾶλλον στρεβλούμενος 〈ἢ στρεβλουμένου〉 τοῦ φίλου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="57"> 
+<p rend="indent">Ὁ βίος αὐτοῦ πᾶς δι’ ἀπιστίαν συγχυθήσεται καὶ ἀνακεχαιτισμένος ἔσται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="58"> 
+<p rend="indent">Ἐκλυτέον ἑαυτοὺς ἐκ τοῦ περὶ τὰ ἐγκύκλια καὶ πολιτικὰ δεσμωτηρίου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="59"> 
+<p rend="indent">Ἄπληστον οὐ γαστήρ. ὥσπερ οἱ πολλοί φασιν, ἀλλὰ δόξα ψευδὴς ὑπὲρ τοῦ 〈τῆς〉 γαστρὸς ἀορίστου πληρώματος. <pb facs="epicuriepistulae00epicuoft_0081"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="60"> 
+<p rend="indent">Πᾶς ὥσπερ ἄρτι γεγονὼς ἐκ τοῦ ζῆν ἀπέρχεται.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="61"> 
+<p rend="indent"> Καλλίστη καὶ ἡ τῶν πλησίον ὄψις, τῆς πρώτης συγγενείας ὁμονοούσης ἢ [εἰ] πολλὴν εἰς τοῦτο ποιουμένης σπουδήν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="62"> 
+<p rend="indent">Εἰ γὰρ κατὰ τὸ δέον ὀργαὶ γίνονται τοῖς γεννήσασι πρὸς τὰ ἔκγονα, μάταιον δήπουθέν ἐστι τὸ ἀντιτείνειν καὶ μὴ παραιτεῖσθει συγγνώμης τυχεῖν· εἰ δὲ μὴ κατὰ τὸ δέόν ἀλλὰ ἀλογώτερον, γελοῖον πάν〈τως〉 τὸ προσεκκαίειν τὴν ἀλογίαν θυμοκατοχοῦντα, καὶ μὴ ζητεῖν μεταθεῖναι κατ’ ἄλλους τρόπους εὐγνωμονοῦντα.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="63"> 
+<p rend="indent">Ἔστι καὶ ἐν λεπτότητι καθαριότης, ἧς ὁ ἀνεπιλόγιστος παραπλήσιόν τι πάσχει τῷ δι’ ἀοριστίαν ἐκπίπτοντι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="64"> 
+<p rend="indent">Ἀκολουθεῖν δεῖ τὸν παρὰ τῶν ἄλλων ἔπαινον αὐτόματον, ἡμᾶς δὲ γενέσθαι περὶ τὴν ἡμῶν ἰατρείαν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="65"> 
+<p rend="indent">Μάταιόν ἐστι παρὰ θεῶν αἰτεῖσθαι ἅ τις ἑαυτῷ χορηγῆσαι ἱκανός ἐστι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="66"> 
+<p rend="indent">Συμπαθῶμεν τοῖς φίλοις οὐ θρηνοῦντες ἀλλὰ φροντίζοντες.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="67"> 
+<p rend="indent">Ἐλεύθερος βίος οὐ δύναται κτήσασθαι χρήματα πολλὰ διὰ τὸ τὸ πρᾶγμα 〈μὴ〉 ῥᾴδιον εἶναι χωρὶς θητείας ὄχλων ἢ δυναστῶν, ἀλλὰ συνεχεῖ δαψιλείᾳ πάντα κέκτηται· ἂν δέ που καὶ τύχῃ χρημάτων πολλῶν, καὶ ταῦτα ῥᾳδίως ἂν εἰς τὴν τοῦ πλησίον εὔνοιαν διαμετρήσαι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="68"> 
+<p rend="indent">Οὐδὲν ἱκανὸν ᾧ ὀλίγον τὸ ἱκανόν. <pb facs="epicuriepistulae00epicuoft_0082"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="69"> 
+<p rend="indent">Τὸ τῆς ψυχῆς ἀχάριστον λίχνον ἐποίησε τὸ ζῷον εἰς ἄπειρον τῶν ἐν διαίτῃ ποικιλμάτων.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="70"> 
+<p rend="indent">Μηδέν σοι ἐν βίῳ πραχθείη ὃ φόβον παρέξει σοι, εἰ γνωσθήσεται τῷ πλησίον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="71"> 
+<p rend="indent">Πρὸς πάσας τὰς ἐπιθυμίας προσακτέον τὸ ἐπερώτημα τοῦτο· τί μοι γενήσεται ἂν τελεσθῇ τὸ κατὰ τὴν ἐπιθυμίαν ἐπιζητούμενον, καὶ τί ἐὰν μὴ τελεσθῇ;</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="72"> 
+<p rend="indent">Οὐδὲν ὄφελος ἦν τὴν κατ’ ἀνθρώπους ἀσφάλειαν παρασκευάζεσθαι τῶν ἄνωθεν ὑπό〈πτων ὄ〉ντων καὶ τῶν ὑποκάτω καὶ ἁπλῶς τῶν ἐν τῷ ἀπείρῳ.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="73"> 
+<p rend="indent">Καὶ τὸ γενέσθαι τινὰς ἀλγηδόνας περὶ σῶμα λυσιτελεῖ πρὸς φυλακὴν τῶν ὁμοειδῶν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="74"> 
+<p rend="indent">Ἐν φιλολόγῳ συζητήσει πλεῖον ἤνυσεν ὁ ἡττηθείς. καθ’ ὃ προσέμαθεν.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="75"> 
+<p rend="indent">Εἰς τὰ παρῳχηκότα ἀγαθὰ ἀχάριστος φωνὴ ἡ λέγουσα Τέλος ὅρα μακροῦ βίου.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="76"> 
+<p rend="indent">Τοιοῦτος εἶ γηράσκων ὁποῖον ἐγὼ παραινῶ, καὶ διέγνωκας ὁποῖόν ἐστι τὸ ἑαυτῷ φιλοσοφῆσαι καὶ οἷον τὸ τῇ Ἑλλάδι· συγχαίρω σοι.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="77"> 
+<p rend="indent">Τῆς αὐταρκείας καρπὸς μέγιστος ἐλευθερία.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="78"> 
+<p rend="indent">Ὁ γενναῖος περὶ σοφίαν καὶ φιλίαν μάλιστα γίγνεται ὧν τὸ μέν ἐστι θνητὸν ἀγαθόν, τὸ δὲ ἀθάνατον.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="79"> 
+<p rend="indent">Ὁ ἀτάραχος ἑαυτῷ καὶ ἑτέρῳ ἀόχλητος.</p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="80"> 
+<p rend="indent">Γενναίῳ σωτηρίας μοῖρα τῆς ἡλικίας τήρησις καὶ φυλακὴ τῶν πάντα μολυνόντων κατὰ τὰς ἐπιθυμίας τὰς οἰστρώδεις. <pb facs="epicuriepistulae00epicuoft_0083"/></p> </div> 
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0537.tlg014.1st1K-grc1" n="81"> 
+<p rend="indent">Οὐ λύει τὴν τῆς ψυχῆς ταραχὴν οὐδὲ τὴν ἀξιόλογον ἀπογεννᾷ χαρὰν οὔτε πλοῦτος ὑπάρχων ὁ μέγιστος οὔθ’ ἡ παρὰ τοῖς πολλοῖς τιμὴ καὶ περίβλεψις οὔτ’ ἄλλο τι τῶν παρὰ τὰς †ἀζυρισί(έ?)τους αἰτίας.</p> </div> </div>
+  </body>
+</text>
+</TEI>

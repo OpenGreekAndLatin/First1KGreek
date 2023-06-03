@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Παροιμίαι</title>
+                <author xml:lang="lat">Gregorius II</author>
+                <editor>Ernst von Leutsch</editor>
+                <editor>Friedrich Wilhelm Schneidewin</editor>
+                <funder>National Endowment for the Humanities</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Pearl Spear</persName>
+                    <orgName>Tufts University</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <resp>CTS conversion</resp>
+                    <orgName>Perseus Digital Library</orgName>
+                    <persName>Lisa M. Cerrato</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg9006.tlg001.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                </availability>
+                <date when="2022-04-29"/>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Corpus paroemiographorum Graecorum</title>
+                        <editor>Ernst von Leutsch</editor>
+                        <editor>Friedrich Wilhelm Schneidewin</editor>
+                        <imprint>
+                            <pubPlace>Göttingen</pubPlace>
+                            <publisher>Vandenhoeck and Ruprecht</publisher>
+                            <date type="range">1839</date>
+                        </imprint>
+                        <biblScope unit="volume">1</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/corpusparoemiogr01leutuoft/page/348">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <editorialDecl>
+                <correction><p>Lace v. 0.6.22 copyright 2013-2021, Bruce Robertson, Dept. of Classics, Mount Allison University.</p></correction>
+            </editorialDecl>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            
+            <refsDecl n="CTS">
+                <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts centuria and section.</p>
+                </cRefPattern>
+                <cRefPattern n="centuria" matchPattern="(\w+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts centuria.</p>
+                </cRefPattern>
+            </refsDecl>
+        
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="lat">Latin</language>
+                <language ident="grc">Greek</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2022-12-12" who="Lisa Cerrato">initial markup of new file</change>
+        </revisionDesc>
+    </teiHeader>
+
+<text>
+    <body>
+    <div n="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1" type="edition" xml:lang="grc">
+<pb facs="corpusparoemiogr01leutuoft_0399"/>
+<div type="textpart" subtype="centuria" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="1">
+<p rend="align(indent)">Αὕτη μὲν ἡ μήρινθος οὐδὲν ἔσπασεν: ἀπὸ τῶν ἁλιευτῶν τῶν μηδὲν ἑλκυσάντων εἴρηται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="2">
+<p rend="align(indent)">Ἀφροδίσιος ὅρκος. οὐκ ἐμποίνιμος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="3">
+<p rend="align(indent)">Ἀγορὰ Κερκώπων: ἐπὶ τῶν πονηρῶν καὶ κακοηθῶν. Κέρκωπες γάρ τινες ἀπατεῶνες ἐγίνοντο ἐν Ἐφέσῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="4">
+<p rend="align(indent)">Ἀετοῦ γῆρας, κορύδου νεότης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="5">
+<p rend="align(indent)">Ἀγαθὰ Κιλίκων: ἐπὶ τῶν οὐ καλῶς πλουτούντων· προδότης γὰρ Κίλιξ τις Μίλητον προδοὺς εὐπόρησεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="6">
+<p rend="align(indent)">Ἀγροίκου μὴ καταφρόνει ῥήτορος.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0400"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="7">
+<p rend="align(indent)">Ἀδώνιδος κῆπος: ἐπὶ τῶν ὀλιγοχρονίων καὶ ἀώρων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="8">
+<p rend="align(indent)">Ἄλλοτε δ’ ἀλλοῖον τελέθειν καὶ χώρᾳ ἕπεσθαι: ὅτι προςήκει ἐξομοιοῦν ἑαυτὸν τοῖς ἤθεσι τῶν πόλεων καὶ τόπων, ἐν οἷς ἂν γένοιτο· εἴρηται δὲ ἀπὸ τῶν πολυπόδων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="9">
+<p rend="align(indent)">Ἄλλην δρῦν βαλάνιζε: ἐπὶ τῶν ἀπαγορευόντων δώσειν ἔτι τὴν αἴτησιν εἰώθασι λαμβάνειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="10">
+<p rend="align(indent)">Ἄιδεις ὥσπερ εἰς Δῆλον πλέων: ἐπὶ τῶν ἀφροντίστως καὶ φιληδόνως βιούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="11">
+<p rend="align(indent)">Ἅλα καὶ κύαμον: ἐπὶ τῶν μὴ εἰδότων καὶ προςποιουμένων· οἱ γὰρ μάντεις ἅλα καὶ κύαμον τιθέασι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="12">
+<p rend="align(indent)">Αἴρειν μασχάλην: ἀντὶ τοῦ εὐωχεῖσθαι· εἴρηται ἀπὸ τῶν ἀγροικικῶς ὀρχουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="13">
+<p rend="align(indent)">Αἲξ τὴν μάχαιραν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="14">
+<p rend="align(indent)">Ἄδακρυς πόλεμος, καὶ Καθεύδοντος τροπαῖον: ἐπὶ τῶν ῥᾷστα καὶ παρ’ ἐλπίδα κατορθούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="15">
+<p rend="align(indent)">Ἀεὶ κολοιὸς πρὸς κολοιόν: καὶ· Ἀεὶ τὸν ὁμοῖον ἄγει θεὸς πρὸς ὁμοῖον.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0401"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="16">
+<p rend="align(indent)">Ἀμαλθείας κέρας: ὅτι τῇ τροφᾷ αὐτοῦ Ἀμαλθείᾳ ὁ Ζεὺς ἐξ αἰγὸς τρεφούσης αὐτὸν παρέσχε κέρας, δι’ οὗ ἐπέβλυζεν αὐτῇ πᾶν ὃ ἂν ἡτήσατο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="17">
+<p rend="align(indent)">Ἀετὸν ἵπτασθαι διδάσκεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="18">
+<p rend="align(indent)">Ἀεὶ γὰρ εὖ πίπτουσιν οἱ Διὸς κύβοι: ἐπὶ τῶν ἀξίως τιμωμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="19">
+<p rend="align(indent)">Ἀγὼν πρόφασιν οὐκ ἐπιδέχεται οὐδὲ φιλία.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="20">
+<p rend="align(indent)">Ἀετὸς ἐν νεφέλαις: ἐπὶ τῶν δυςαλώτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="21">
+<p rend="align(indent)">Ἀληλεσμένος βίος: ἐπὶ τοῦ ἑτοίμου καὶ ἀπόνου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="22">
+<p rend="align(indent)">Ἀνάγυρον κινεῖς: ἐπὶ τῶν προξενούντων ἑαυτοῖς κακά· Ἀνάγύρος γάρ τις ἥρως ἐκάκου τοὺς γείτονας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="23">
+<p rend="align(indent)">Ἀεί με τοιοῦτοι πολέμιοι διώκοιεν: ἐπὶ τῶν καταπεφρονημένων καὶ οὐδενὸς ἀξίων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="24">
+<p rend="align(indent)">Ἀετὸς θρίπας ὁρᾷ: ἐπὶ τῶν καταφρονούντων τινῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="25">
+<p rend="align(indent)">Ἅλμη οὐκ ἔστιν ἐν αὐτῷ: ἐπὶ τοῦ ἀηδοῦς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="26">
+<p rend="align(indent)">Ἀλώπηξ οὐ δωροδοκεῖται: ἐπὶ τῶν οὐ ῥᾳδίως ἁλισκομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="27">
+<p rend="align(indent)">Ἀεὶ φέρει τι Λιβύη κακόν: ἐπὶ τῶν ἀεὶ ἐξευρισκόντων τε νέον κακόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="28">
+<p rend="align(indent)">Ἄνω ποταμῶν χωροῦσι πηγαί: ἐπὶ τῶν ἐναντίως λεγομένων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0402"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="29">
+<p rend="align(indent)">Ἀεὶ ὁ πόρνος λέγει τὸν σώφρονα πόρνον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="30">
+<p rend="align(indent)">Ἀργύρου κρῆναι λαλοῦσιν: ἐπὶ τῶν διὰ πλοῦτον ἐμφανιζομένων ἢ εὐημερούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="31">
+<p rend="align(indent)">Ἄλευ’ ἀπὸ μείζονος ἀνδρός: ἤτοι φυλάττου, ἰωνικῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="32">
+<p rend="align(indent)">Ἀράβιος αὐλητής: ὃς ηὔλει μὲν δραχμῆς, ἐπαύετο δὲ τεττάρων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="33">
+<p rend="align(indent)">Ἄϊδος κυνῆ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="34">
+<p rend="align(indent)">Ἄκρῳ ἅψασθαι δακτύλῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="35">
+<p rend="align(indent)">Αἵματι κλαίειν: καθ’ ὑπερβολὴν ἐπὶ τῶν σφόδρα δακρυόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="36">
+<p rend="align(indent)">Αἱ χάριτες γυμναῖς ὅτι δεῖ [τὴν] δωρεὰν [ἀκενοδόξως] εὐεργετεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="37">
+<p rend="align(indent)">Ἀκόνην σιτίζεις: ἐπὶ τῶν τρεφομένων καὶ οὐκ ἐπιδιδόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="38">
+<p rend="align(indent)">Ἄλλοι κάμον, ἄλλοι ὤναντο: ἐπὶ τῶν παρ’ ἐλπίδα τὰ ἀλλότρια κληρονομούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="39">
+<p rend="align(indent)">Ἄλλο γλαὺξ ἄλλο κορώνη φθέγγεται: ἐπὶ τῶν μὴ συμφωνούντων ἀλλήλοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="40">
+<p rend="align(indent)">Ἀλωπεκίζειν πρὸς ἑτέραν ἀλώπεκα: ἐπὶ τῶν ἐξαπατᾶν βουλομένων τοὺς ὁμοίους.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0403"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="41">
+<p rend="align(indent)">Ἄλλοισι μὲν γλῶσσα, ἄλλοισι δὲ γόμφιοι: ἐπὶ τῶν λάλων καὶ φάγων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="42">
+<p rend="align(indent)">Ἀνδρὸς γέροντος σταφὶς τὸ κρανίον: ἐπὶ τῶν εἰς οὐδὲν χρησιμευόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="43">
+<p rend="align(indent)">Ἄλλα μὲν Λεύκων, ἄλλα δὲ Λεύκωνος ὄνος [φέρει]: ἐπὶ τῶν ἐχόντων τοῖς λόγοις ἀσύμφωνα τὰ ἔργα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="44">
+<p rend="align(indent)">Ἄλλην μὲν ἐξηντλοῦμεν, ἣ δ’ ἐπειςρέει: ἐπὶ τῶν μάτην πονούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="45">
+<p rend="align(indent)">Ἄμας ἀπῄτουν, οἱ δ’ ἀπηρνοῦντο σκάφας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="46">
+<p rend="align(indent)">Ἅμ’ ἠλέηται καὶ τέθνηκεν ἡ χάρις: ἐπὶ τῶν ἀχαρίστων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="47">
+<p rend="align(indent)">Ἂν μὴ παρῇ κρέας, ταρίχῳ στερκτέον: ὅτι δεῖ τοῖς παροῦσιν ἀρκεῖσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="48">
+<p rend="align(indent)">Ἄμμες ποτ’ ἦμεν· ἀεὶ τὰ πέρυσι βελτίω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg.0096.tlg005.1st1K-grc1:1" n="49a">
+<p rend="align(indent)">Ἀνὴρ ὁ φεύγων οὐ μένει κτύπον λύρας: ἐπὶ τῶν ταχέως ὀφειλόντων ἕκαστα πράττειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg.0096.tlg005.1st1K-grc1:1" n="49b">
+<p rend="align(indent)">Ἀνδρὶ Λυδῷ πράγματα οὐκ ἦν, ἀλλ’ αὐτὸς ἐλθὼν ἐπρίατο: ἐπὶ τῶν κακὰ ἑαυτοῖς ἐπισπωμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="50">
+<p rend="align(indent)">Ἄπληστος πίθος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="51">
+<p rend="align(indent)">Ἀνέμους γεωργεῖν: ἐπὶ τῶν πονούντων καὶ μηδενὸς μεταλαγχανόντων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0404"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="52">
+<p rend="align(indent)">Ἀνάγκῃ οὐδὲ θεοὶ μάχονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="53">
+<p rend="align(indent)">Ἀντὶ πέρκης σκορπίον: ἐπὶ τῶν τὰ χείρω αἱρουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="54">
+<p rend="align(indent)">Ἁλιεὺς πληγεὶς νοῦν οἴσει: Παθὼν δέ τε νήπιος ἔγνω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="55">
+<p rend="align(indent)">Ἄλλοι σπείρουσι, ἄλλοι δὲ ἀμήσονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="56">
+<p rend="align(indent)">Ἄρκτου παρούσης ἴχνη ζητεῖς: ἐπὶ τῶν προδήλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="57">
+<p rend="align(indent)">Ἀετὸν κάνθαρος μαιεύεται: ἐπὶ τῶν ὑπό τινων εὐτελῶν πασχόντων· ὁ γὰρ κάνθαρος τὰ τοῦ ἀετοῦ ὠὰ ἀφανίζει κυλίων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="58">
+<p rend="align(indent)">Ἀνδρὸς γέροντος αἱ γνάθοι βακτηρία.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="59">
+<p rend="align(indent)">Ἀνδρὸς καλῶς πράσσοντος ἔγγιστα φίλοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="60">
+<p rend="align(indent)">Ἀνδρὸς κακῶς πράσσοντος ἐκποδὼν φίλοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="61">
+<p rend="align(indent)">Ἀλώπηξ τὸν βοῦν ἐλαύνει: ἐπὶ τῶν δολερῶν καὶ μικρῶν, ὅμως δὲ μεγάλους καταγωνιζομένων ἄφρονας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="62">
+<p rend="align(indent)">Ἄλλοτε μητρυιὴ πέλει ἡμέρη, ἄλλοτε μήτηρ: ἐπὶ τῶν ποτὲ μὲν εὐημερούντων, ἄλλοτε δε δυςημερούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="63">
+<p rend="align(indent)">Ἅμα δίδου καὶ λάμβανε: ὅταν πρὸς ἄπιστον συναλλάσσωμεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="64">
+<p rend="align(indent)">Ἄνθρακες ὁ θησαυρὸς γέγονεν: ἐπὶ τῶν ἐφ’ οἷς ἤλπισαν διαψευσθέντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="65">
+<p rend="align(indent)">Ἀπὸ, τῶν βραδυσκελῶν ὄνων ἵππος ὤρουσεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="66">
+<p rend="align(indent)">Ἅπαντα τοῖς σοφοῖς εὔκολα: ἐπὶ τῶν διὰ φρόνησιν καὶ τῶν δυςκόλων περιγινομένων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0405"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="67">
+<p rend="align(indent)">Ἀργυρέαις λόγχαισι μάχου καὶ πάντα κρατήσεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="68">
+<p rend="align(indent)">Ἅπας ἐχῖνος τραχύς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="69">
+<p rend="align(indent)">Ἀσκὸν δέρεις: ἐπὶ τῶν ἀνοήτως τι πραττόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="70">
+<p rend="align(indent)">Αὐλητοῦ βίον ζῇς: ἐπὶ τῶν ἐξ ἀλλοτρίων βιούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="71">
+<p rend="align(indent)">Ἀποτίσεις χοῖρε γίγαρτα: ἤτοι ἃ ἔφαγες ἀποδώσεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="72">
+<p rend="align(indent)">Ἀπήντησε κακοῦ βουλὴ πρὸς ὑπερτάτην ἄτην: ἐπὶ τῶν πασχόντων ἄξια ὧν ἔδρασαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="73">
+<p rend="align(indent)">Ἄθως καλύπτει πλευρὰ Λημνίας βοός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="74">
+<p rend="align(indent)">Ἀπὸ κώπης ἐπὶ βῆμα: ἐπὶ τῶν ἀθρόως μεγίστοις ἐγχειρούντων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0406"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="75">
+<p rend="align(indent)">Αὑτὸν οὐ τρέφων κύνας τρέφεις: ἐπὶ τῶν ἀπορούντων μὲν ἑαυτοὺς τρέφειν, ἄλλους δὲ ἐπαγγελλομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="76">
+<p rend="align(indent)">Ἁλῶν μέδιμνον ἀποφαγών: ἐπὶ τῶν ἀχαρίστων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="77">
+<p rend="align(indent)">Ἅμαξα τὸν βοῦν ἕλκει: ἐπὶ τῶν ἀντιστρόφως τι ποιούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="78">
+<p rend="align(indent)">Ἁμαξιαῖα ῥήματα: ἐπὶ τῶν μεγάλων λόγων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="79">
+<p rend="align(indent)">Ἄνθρωπος εὔριπος καὶ ψυχὴ καὶ διάνοια καὶ τρόπος: ἐπὶ τῶν ῥᾷστα μεταβαλλομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="80">
+<p rend="align(indent)">Ἀπόλωλεν ἡ ὗς καὶ τὸ τάλαντον καὶ ἡ γνάθος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="81">
+<p rend="align(indent)">Ἀκλητὶ κωμάζουσιν ἐς φίλους φίλοι: ὅμοιον καὶ τό· Αὐτόματοι δ’ ἀγαθοὶ ἀγαθῶν ἐπὶ δαῖτα ἴασι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="82">
+<p rend="align(indent)">Ἀνεῳγμέναι Μουσῶν θύραι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="83">
+<p rend="align(indent)">Ἀρχὴ ἄνδρα δείκνυσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="84">
+<p rend="align(indent)">Ἀλῶν δὲ φόρτος ἔνθεν ἦλθεν, ἔνθ’ ἔβη: ἐπὶ τῶν κακῶς κτηθέντων καὶ ἀποκτηθέντων· ἔμπορος γὰρ ἅλας ἐπιφερόμενος ἐν νηῒ κλύδωνος ἐπιγενομένου τοὺς ἅλας ἐν τῇ θαλάττῃ ἀπέβαλεν.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0407"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="85">
+<p rend="align(indent)">[Ἀρίγνωτος σμάραγδος] ἐν μὲν τῷ φάει σκοτεινός, ἐν δὲ τῷ σκότει φωτεινός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="86">
+<p rend="align(indent)">Ἀργαλέον φρονέοντα παρ’ ἄφροσι πόλλ’ ἀγορεύειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="87">
+<p rend="align(indent)">Ἂν ἡ λεοντῇ μὴ ἐξίκηται, τὴν ἀλωπεκῆν πρόςαψον: ἐπὶ τῶν φανερῶς μὲν βλάπτειν μὴ δυναμένων, πανουργίᾳ δὲ χρωμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="88">
+<p rend="align(indent)">Ἀρότρῳ ἀκοντίζεις: ἐπὶ τῶν ἀσκέπτως τι ποιούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="89">
+<p rend="align(indent)">Αὐτὰρ ἡ πάγη ἔοικε λήψεσθαι πάγην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="90">
+<p rend="align(indent)">Αὐτοῦ Ῥόδος, αὐτοῦ πήδημα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="91">
+<p rend="align(indent)">Βοιώτιος νοῦς: ἐπὶ τῶν ἀπαιδεύτων· εἰς τοῦτο ἀεὶ ὠνειδίζοντο οἱ Βοιωτοί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="92">
+<p rend="align(indent)">Βοιώτιος νόμος: ἐπὶ τῶν κατ’ ἀρχὰς ἠρεμούνὕστερον δὲ ταρασσόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="93">
+<p rend="align(indent)">Βάσανος λίθος: ἐπὶ τῶν ἐξεταζομένων ἐν λόγοις, παρόσον ἡ Λυδία λίθος τὸν χρυσὸν δοκιμάζει.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0408"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="94">
+<p rend="align(indent)">Βοιώτια αἰνίγματα: ἐπὶ τῶν ἀσυνέτων· Βοιωτὴ γὰρ ἡ Σφίνξ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="95">
+<p rend="align(indent)">Βοῦς ἐπὶ γλώσσης: ἐπὶ τῶν δωροδοκουμένων· διὰ τὸ τῶν Ἀθηναίων νόμισμα βοῦν ἔχειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="96">
+<p rend="align(indent)">Γόνυ κνήμης ἔγγιον: ἐπὶ τῶν ἑαυτοὺς μᾶλλον ἑτέρων ἀγαπώντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="97">
+<p rend="align(indent)">Γέροντα δ’ ὀρθοῦν φλαῦρον, ὃς νέος πέσῃ Γλυκεῖ’</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="98">
+<p rend="align(indent)">ὀπώρα φύλακος ἐκλελοιπότος: ἐπὶ τῶν ἄνευ μόχθου τὰ ἀλλότρια καρπουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="99">
+<p rend="align(indent)">Γραῦς βακχεύει: ἐπὶ τῶν παρ’ ὥραν τι διαπραττομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:1" n="100">
+<p rend="align(indent)">Γραῶν ὕθλοι.</p></div></div>
+<div type="textpart" subtype="centuria" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="1">
+<p rend="align(indent)">Γαστέρα μοι προφέρεις κάλλιστον ὄνειδος ἁπάντων, Ἣ πλήρης μὲν ἐλαφροτέρα, κενεὰ δὲ βαρεῖα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="2">
+<p rend="align(indent)">Γῆς βάρος: ἐπὶ τῶν ἀχρήστων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="3">
+<p rend="align(indent)">Γλυκὺς ἀπείρῳ πόλεμος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="4">
+<p rend="align(indent)">Γραῦς ἀνακροτήσασα πολὺν κονιορτὸν ἐγείρει: ἐπὶ τῶν δι’ ἐμπειρίαν πολλὰ πράγματα κινούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="5">
+<p rend="align(indent)">Γύγου δακτύλιος: ἐπὶ τῶν πολυμηχάνων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="6">
+<p rend="align(indent)">Γυμνότερος παττάλου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="7">
+<p rend="align(indent)">Γυνὴ στρατηγεῖ, καὶ, Γυνὴ στρατοπεδεύεται: ἐπὶ τῶν παραδόξων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0409"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="8">
+<p rend="align(indent)">Γυναικὶ μὴ πίστευε, μηδ’ ὅταν θάνῃ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="9">
+<p rend="align(indent)">Γέλως Ἰωνικός: ἐπὶ τῶν ἐκλελυμένων· εἰς τοῦτο γὰρ Ἴωνες διεβάλλοντο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="10">
+<p rend="align(indent)">Γέρων ἀλώπηξ οὐχ ἁλίσκεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="11">
+<p rend="align(indent)">Γλαῦκα εἰς Ἀθήνας: ἐπὶ τῶν ἐπιδεικνυμένων πρὸς τοὺς εἰδότας, ἅπερ ἄμεινον αὐτοῦ ἴσασιν· ὅτι πολλαὶ εἰς Ἀθήνας γλαῦκες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="12">
+<p rend="align(indent)">Γέρων βοῦς ἀπένθητος ἐν δόμοισιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="13">
+<p rend="align(indent)">Δίκην ὑφέξει κἂν ὄνος δάκῃ κύνα: ἐπὶ τῶν ἐπὶ μικρῷ συκοφαντουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="14">
+<p rend="align(indent)">Δίκη δίκην ἔτικτε καὶ βλάβη βλάβην: ἐπὶ τῶν φιλοδίκων καὶ συνειρόντων δίκαις δίκας· καὶ ἐπὶ τῶν πυκναῖς προςπιπτόντων συμφοραῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="15">
+<p rend="align(indent)">Δὶς πρὸς τὸν αὐτὸν αἰσχρὸν προςκρούειν λίθον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="16">
+<p rend="align(indent)">Δωδωκαῖον χαλκεῖον: ἐπὶ λάλου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="17">
+<p rend="align(indent)">Διὰ δακτυλίου δεῖ σε ἑλκυσθῆναι: ἐπὶ τῶν διὰ νόσον ἢ λύπην ἰσχνῶν γενομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="18">
+<p rend="align(indent)">Δῶρα θεοὺς πείθει καὶ αἰδοίους βασιλῆας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="19">
+<p rend="align(indent)">Δεινοὶ πλέκειν μηχανὰς Αἰγύπτιαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="20">
+<p rend="align(indent)">Δέδοται καὶ κακοῖς ἄγρα,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="21">
+<p rend="align(indent)">Δεύτερος πλοῦς.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0410"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="22">
+<p rend="align(indent)">Δελφῖνα λεκάνη οὐ χωρεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="23">
+<p rend="align(indent)">Ἐπιμενίδου ὕπνος: ἐπὶ τῶν πολλὰ κοιμωμένων· πεντήκοντα γὰρ ἔτη ἐκάθευδεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="24">
+<p rend="align(indent)">Ἐς Τροφωνίου μεμάντευσαι: ἐπὶ τῶν σκυθρωπῶν καὶ ὠχρῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="25">
+<p rend="align(indent)">Ἐν ἅλῳ δρασκάζεις: ἤγουν κρύπτῃ· ἐπὶ τῶν μὴ δυναμένων λαθεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="26">
+<p rend="align(indent)">Ἔστω ταμίας, τἄλλα δ’ εἰ βούλει κύων: ἐπὶ τῶν παρ’ ἀξίαν εὐημερούντων καὶ μάλιστα εὐνούχων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="27">
+<p rend="align(indent)">Ἐκ παντὸς ξύλου κύφων ἂν γίνοιτο: λέγεται ἐπὶ τῶν τὸ εἶδος εὐτελῶν, εἰς χρείας δὲ ἀναγκαίων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="28">
+<p rend="align(indent)">Εἰς ἀρχαίας φάτνας: ἐπὶ τῶν ἐλθόντων εἰς ἅπερ πρότερον ὄντες ἐξέπεσον.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0411"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="29">
+<p rend="align(indent)">Ἐν δυοῖν τρία βλέπεις: ἐπὶ τῶν ἄλλα ἀντ’ ἄλλων ὁρώντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="30">
+<p rend="align(indent)">Ἐκπερδικίσαι: ἤτοι ἐκκλῖναι. ἐπὶ τῶν διαδιδρασκόντων τοὺς θηρευτάς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="31">
+<p rend="align(indent)">Ἐλέφαντα ἐκ μυίας ποιεῖς: ἐπὶ τῶν τὰ μικρὰ ἐπαιρόντων τῷ λόγῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="32">
+<p rend="align(indent)">Ἐμαυτῷ βαλανεύσω: ἐμαυτῷ διακονήσω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="33">
+<p rend="align(indent)">Εἰς ἀσθενοῦντας ἀσθενῶν ἐλήλυθας: ἐπὶ τῶν ὅμοια πασχόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="34">
+<p rend="align(indent)">Εὕδοντι κύρτος αἱρεῖ: ἐπὶ τῶν εὐτυχούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="35">
+<p rend="align(indent)">Ἔνεστι καὶ μύρμηκι χολή: ὅτι μηδὲ τοῦ μικροῦ δεῖ καταφρονεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="36">
+<p rend="align(indent)">Ἑρμῆς ἀμύητος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="37">
+<p rend="align(indent)">Ἐκ τετρημένης κύλικος πιεῖν: ἐπὶ τῶν ἐψευσμένων φίλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="38">
+<p rend="align(indent)">Ἐν μέλιτι σαυτὸν κατακρύπτεις: ἐπὶ τῶν συζώντων ἡδυπαθείαις.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0412"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="39">
+<p rend="align(indent)">Ἐνδύεται τὴν λεοντῆν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="40">
+<p rend="align(indent)">Ἐνδυμίωνος ὕπνον ὑπνώττει: ἐπὶ τῶν πολλὰ κοιμωμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="41">
+<p rend="align(indent)">Εἴληφεν ἡ παγὶς τὸν μῦν: ἐπὶ τῶν ἀξίως ἁλισκομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="42">
+<p rend="align(indent)">Ἐν τριόδῳ εἰμὶ λογισμῶν: ἐπὶ τῶν ἀπορούνταν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="43">
+<p rend="align(indent)">Ἐν φρέατι κυσὶ μάχεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="44">
+<p rend="align(indent)">Ἐκδεδαρμένον δέρεις: ἐπὶ τῶν μάτην πονούντων· βέλτιον δὲ ἐπὶ τῶν κακούντων τοὺς ἐν συμφοραῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="45">
+<p rend="align(indent)">Ἔπειτα πλουτῶν οὐκέθ’ ἥδεται φακῆ. Πρὸ τοῦ δ’ ὑπὸ τῆς πενίας ἅπαντ’ ἐπήσθιεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="46">
+<p rend="align(indent)">Ἐν θέρει τὴν χλαῖναν κατατρίβεις: ἐπὶ τῶν μὴ καθ’ ὥραν τοῖς ἀναγκαίοις χρωμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="47">
+<p rend="align(indent)">Ἔνθ’ οὔτε μίμνειν ἄνεμος οὔτ’ ἐκπλεῖν ἐᾷ: ἐπὶ τῶν δυςχρήστοις περιπεσόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="48">
+<p rend="align(indent)">Ἐλέφας μυὸς οὐκ ἀλεγίζει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="49">
+<p rend="align(indent)">Ἐκτὸς πηλοῦ πόδα ἔχεις: ἐπὶ τῶν ἔξω κινδύνων ὄντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="50">
+<p rend="align(indent)">Ἐκ τριχὸς κρέμαται: ἐπὶ τῶν κινδυνευόντων. ὅμοιον τῷ Ἐπὶ ξυροῦ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="51">
+<p rend="align(indent)">Εὐγενὴς ἐκ βαλαντίου: ἐπὶ τῶν διὰ πλούτου τιμωμένων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0413"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="52">
+<p rend="align(indent)">Ἔγχος ἐπὶ τῷ ἔγχει: γραῦν φασι τοῦτο εἰπεῖν καπήλῳ ἐνεχυράζουσαν ἔγχος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="53">
+<p rend="align(indent)">Ἐλεύθεραι αἶγες ἀρότρου: ἐπὶ τῶν βάρους ἀπηλλαγμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="54">
+<p rend="align(indent)">Εἰς κόλπον πτύεις: ἀντὶ τοῦ, οὐ μεγαλοῤῥημονεῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="55">
+<p rend="align(indent)">Ἐν πίθῳ τὴν κεραμείαν: ἐπὶ τῶν μὴ κατὰ τρόπον τοῖς μαθήμασι προβαινόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="56">
+<p rend="align(indent)">Ἐν σκότει ὀρχεῖσθαι: ἐπὶ τῶν ἀμαρτύρως μοχθούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="57">
+<p rend="align(indent)">Ζωὸς γενήσῃ κρομμύου μοῖραν λαβών: ἐπὶ τῶν ἐκ μικρᾶς αἰτίας μεγάλην δόξαν καρπουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="58">
+<p rend="align(indent)">Ζῶμεν γὰρ οὐχ ὡς θέλομεν, ἀλλ’ ὡς δυνάμεθα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="59">
+<p rend="align(indent)">Ζητῶν γὰρ ὄψον θοιμάτιον ἀπώλεσα: ἐπὶ τῶν ἀτυνεστάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="60">
+<p rend="align(indent)">Ἧλος τὸν ἧλον, πάτταλος τὸν πάτταλον ἐξέκρουεν: ἐπὶ ἰωμένων δι’ ἁμαρτημάτων ἁμαρτήματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="61">
+<p rend="align(indent)">Ἡ κύων ἐν τῇ φάτνῃ: πρὸς τοὺς μήτε ἑαυτοῖς χρωμένους, μήτε ἄλλους ἐῶντας· παρόσον ἡ κύων κριθὴν οὐκ ἐσθίει μένουσα ἐν φάτνῃ, καὶ τὸν ἵππον οὐκ ἐᾷ.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0414"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="62">
+<p rend="align(indent)">Ἦσαν ποτ’ ἦσαν ἄλκιμοι Μιλήσιοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="63">
+<p rend="align(indent)">Ἠλιθιώτερος Ἀδώνιδος τοῦ Πραξιτέλους: Ἄδωνις γάρ τις Πραξιτέλους ὑιὸς ἀποθανὼν καὶ ἐρωτηθεὶς πρὸς τῶν ἐν Αἵδου, τί κὰλλιστον ἄνω κατέλιπεν, ἀπεκρίνατο Ἥλιον, Σελήνην, σῦκα, μῆλα. ἔδοξε γοῦν ἠλίθιος ταῦτα ἐξισῶν Ἡλίῳ. Ἡρακλέους θυσία: ἐπί τῶν εἰκῆ ταῖς θυσίαις χρωμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="65">
+<p rend="align(indent)">Ἡ ἀφύη τὸ πῦρ: ἐπὶ τῶν ταχέως λαμβανόντων τέλος· παρόσον ἡ ἀφύη ταχέως ἑψεῖται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="66">
+<p rend="align(indent)">Θυμὸς ἔσχατον γηράσκει: λέγεται διὰ τοὺς πρεσβυτέρους· ὅσον γὰρ γηράσκουσι, τὸν θυμὸν ἐῤῥωμενέστερον ἔχουσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="67">
+<p rend="align(indent)">Θαλάττῃ ἐκ χαράδρας ὕδωρ: ἐπὶ τῶν τοῖς μεγάλοις τὰ μικρὰ προςφιλοτιμουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="68">
+<p rend="align(indent)">Θάσος ἀγαθῶν: ἐπὶ τῶν εὐδαίμονα καὶ λαμπρὸν ἀποδεῖξαί τινα ἐπαγγελλομένων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0415"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="69">
+<p rend="align(indent)">Ἱερὰ ἄγκυρα: ἡ μεγάλη βοήθεια.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="70">
+<p rend="align(indent)">Ἰσότης φιλότης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="71">
+<p rend="align(indent)">Ἴσος πόλεμον οὐ ποιεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="72">
+<p rend="align(indent)">Ἰλιὰς κακῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="73">
+<p rend="align(indent)">Ἱππόλυτον μιμήσομαι: ἐπὶ τῶν σωφρόνως βιούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="74">
+<p rend="align(indent)">Ἱππέας εἰς πεδίον προκαλεῖ: ὅπερ ἔστι τοὺς εὐδοκιμοῦντας εἰς ἅπερ εὐδοκιμοῦσιν ἔργα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="75">
+<p rend="align(indent)">Κακοῦ κόρακος κακὸν ὠόν. Κόσμει Σπάρταν ἣν ἔλαχες: ὅτι δεῖ στέργειν τῇ δεδομένῃ τύχῃ καὶ ἀνέχεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="77">
+<p rend="align(indent)">Καδμεία νίκη: ἡ ἐπὶ κακῷ τῶν νενικηκότων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="78">
+<p rend="align(indent)">Κύκνειον ᾆσμα: ἐπὶ τῶν ἐγγὺς θανάτῳ ὄντων· οἱ γὰρ κύκνοι θνήσκοντες ᾄδουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="79">
+<p rend="align(indent)">Κορώνη τὸν σκορπίον: ἐπὶ τῶν βλαβεροῖς ἐπιχειρούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="80">
+<p rend="align(indent)">Κιλίκιοι τράγοι: οἱ δασεῖς· ὅθεν καὶ τὰ ἐκ τριχῶν ἱμάτια κιλίκια λέγονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="81">
+<p rend="align(indent)">Κρητίζεεν: ἀντὶ τοῦ ψεύδεσθαι καὶ ἀπατᾶν. τοῖοῦτοι γὰρ οἱ Κρῆτες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="82">
+<p rend="align(indent)">Καθώσπερ αἱ τίτθαι σιτίζεις κακῶς.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0416"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="83">
+<p rend="align(indent)">Κύων ἐπὶ τὸν ἴδιον ἔμετον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="84">
+<p rend="align(indent)">Κἂν ἐπὶ τοῦ νεκροῦ κερδαίνειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="85">
+<p rend="align(indent)">Κατόπιν ἑορτῆς ἥκεις: ἐπὶ τῶν καλοῦ πράγματος ἀπολιμπανομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="86">
+<p rend="align(indent)">Κολοφῶνα ἐπέθήκας: ἤτοι τὸ τέλειον καὶ πλήρες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="87">
+<p rend="align(indent)">Κατὰ ῥοῦν φέρεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="88">
+<p rend="align(indent)">Καρκίνος λαγωὸν αἱρεῖ: ἐπὶ τῶν ἀδυνάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="89">
+<p rend="align(indent)">Κενοὶ κενὰ βουλεύονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="90">
+<p rend="align(indent)">Κεστρεὺς νηστεύει: ἐπὶ τῶν λαιμάργων· ἄπληστον δὲ τὸ ζῶον.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0417"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="91">
+<p rend="align(indent)">Κριὸς τὰ τροφεῖα ἀπέτισεν: ἐπὶ τῶν ἀχαρίστων· οἱ γὰρ κριοὶ καὶ τὰς φάτνας πλήττουσι καὶ τοὺς θρέψαντας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="92">
+<p rend="align(indent)">Κακὰ μὲν θρίπες, κακὰ δ’ ἴπες: ἄμφω γὰρ λυμαντικοὶ· καὶ οἱ μὲν τὰ ξύλα, οἱ δὲ κέρατα ἐσθίουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="93">
+<p rend="align(indent)">Λήμνια κακά: ἀπὸ τῶν ἐν Λήμνῳ γυναικῶν, αἳ τοὺς ἄνδρας αὐτῶν ἀπέκτειναν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="94">
+<p rend="align(indent)">Λαγωὸς περὶ κρεῶν: ἐπὶ τῶν κινδυνευόντων καὶ [πρὸς τοῦτο] ἀγωνιζομένων, ἐπειδὴ κἀκεῖνος περὶ τῶν ἑαυτοῦ κρεῶν τρέχει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="95">
+<p rend="align(indent)">Λύκος χανών· καὶ, ἡ λύκος περὶ φρέαρ χορεύει: ἐπὶ τῶν μάτην πονούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="96">
+<p rend="align(indent)">Λύκου πτερὸν ζητεῖς: ἐπὶ τῶν ἀδυνάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="97">
+<p rend="align(indent)">Λίνον λίνῳ κλώθεις: ἐπὶ τῶν τὰ αὐτὰ [διὰ τῶν αὐτῶν] πραττόντων ἢ λεγόντων, ἢ τῶν κατάλληλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="98">
+<p rend="align(indent)">Λύκος ἀετὸν φεύγει: ἐπὶ τῶν ἀφύκτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="99">
+<p rend="align(indent)">Λύδιον ἅρμα: ἐπὶ τῶν ταχυτάτων. Καὶ, παρὰ Λύδιον θέεις.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0418"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:2" n="100">
+<p rend="align(indent)">Λευκῷ λίθῳ λενκὴ στάθμη.</p></div></div>
+<div type="textpart" subtype="centuria" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="1">
+<p rend="align(indent)">Μία λόχμη δύο ἐριθάκους οὐ τρέφει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="2">
+<p rend="align(indent)">Μηδικὴ τράπεζα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="3">
+<p rend="align(indent)">Μέλιτος μύελον: ἐπὶ τοῦ ἄγαν ἡδέος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="4">
+<p rend="align(indent)">Μηδὲ μέλι μηδὲ μελίσσας: ἐπὶ τῶν παραιτοόυμένων ἀγαθόν τὶ παθεῖν διὰ τὸν κίνδυνον τὸν ἐν αὐτῷ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="5">
+<p rend="align(indent)">Μὴ πρὸς λέοντα δορκὰς ἅψωμαι μάχης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="6">
+<p rend="align(indent)">Μυσῶν λεία: οἱ γὰρ περίοικοι τοὺς Μυσοὺς ἐλήϊζον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="7">
+<p rend="align(indent)">Μὴ κίνει Καμάριναν: λίμνη, ἣν ἀπηγόρευεν ὁ χρησμὸς μετοχετεῦσαι· οἱ δὲ χρησάμενοι παρακούσαντες ἐβλάβησαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="8">
+<p rend="align(indent)">Μωμήσεται μᾶλλον ἢ μιμήσεται: ἐπὶ τῶν ἀπαιδεύτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="9">
+<p rend="align(indent)">Μὴ παιδὶ μάχαιραν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="10">
+<p rend="align(indent)">Μὴ τοῖς ἀπείροις ἐγχειρίζειν πράγματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="11">
+<p rend="align(indent)">Μία χελιδὼν ἔαρ οὐ ποιεῖ, οὐδὲ μέλισσα μέλι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="12">
+<p rend="align(indent)">Νεκρῷ μῦθον εἰς οὖς ἔλεγεν: ἐπὶ τοῦ μὴ ἐπαΐοντος· καὶ ἐπὶ τῶν ἀναισθήτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="13">
+<p rend="align(indent)">Νεφέλας ξαίνεις: ἐπὶ τῶν ἀδυνάτων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0419"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="14">
+<p rend="align(indent)">Ναῦς ἱκετεύει πέτραν: ἐπὶ τῶν σφόδρα ἀναισθήτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="15">
+<p rend="align(indent)">Ξυρὸς εἰς ἀκόνην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="16">
+<p rend="align(indent)">Ξύλον ἀγκύλυν οὐδέποτ’ ὀρθόν: ἐπὶ τῶν ἀδιορθώτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="17">
+<p rend="align(indent)">Οὐ παρὰ βωμὸν δεῖ τὰς ἐπινοίας: ὅτι πρὸ τῶν πραγμάτων δεῖ βουλεύεσθαι καὶ μὴ ἐν αὐτοῖς· ὥσπερ καὶ οἱ τὰ ἱερὰ προςάγοντες οὐ μετὰ τὸ θῦσαι βουλεύονται περὶ αὐτῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="18">
+<p rend="align(indent)">Οὐκ ἂν αὖθις ἀλώπηξ: λείπει τὸ ἁλώσεται· αὕτη γὰρ ἅπαξ διαφυγοῦσα τὰς πάγας, οὐ δεύτερον ἁλίσκεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="19">
+<p rend="align(indent)">Ὄνος ἄγει μυστήρια: ἐπὶ τῶν ἀναξίως τι ἐμπεπιστευμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="20">
+<p rend="align(indent)">Ὄνου γνάθοι: εἰς πολυφάγον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="21">
+<p rend="align(indent)">Ὅπου ἔλαφοι τὰ κέρατα ἀποβάλλουσι: τόποι δύςβατοι. Ἐπὶ τῶν ἐργώδεις εὑρεῖν τὰς διατριβὰς ποιουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg.0096.tlg005.1st1K-grc1:3" n="22a">
+<p rend="align(indent)">Οἱ μὲν γὰρ οὐκέτ’ εἰσὶν, οἱ δ’ ὄντες κακοί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg.0096.tlg005.1st1K-grc1:3" n="22b">
+<p rend="align(indent)">Οἴκοι τὰ Μιλήσια· μὴ γὰρ ἐνθάδε: ἐπὶ τῶν ὅπου μὴ προςήκει ἐπιδεικνυμένων τὰ ἤθη, ἢ ἐπιτηδεύματα διαβεβλημένα. Μιλήσιος γὰρ παρὰ Λακεδαιμονίοις δημηγορῶν καὶ τὴν οἴκοι τρυφὴν ἐπαινῶν ἤκουσε ταῦτα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="23">
+<p rend="align(indent)">Οἶνος, ὦ παῖδες, ἀλήθεια.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0420"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="24">
+<p rend="align(indent)">Ὄνος εἰς ἄχυρα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="25">
+<p rend="align(indent)">Οὔθ’ ὕεται οὔθ’ ἡλιοῦται: ἐπὶ τῶν ἀναισθήτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="26">
+<p rend="align(indent)">Οὐκ ἐπαινεθείης οὐδ’ ἐν περιδείπνῳ: ἐπὶ τῶν φαυλοτάτων καὶ οὐδενὸς ἀξίων· εἰώθασι γὰρ ἐν τοῖς ἀπὸ τῶν ἀποθανόντων δείπνοις αὐτοὺς ἐπαινεῖν, κἂν ἐτυχον ὄντες φαυλότατοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="27">
+<p rend="align(indent)">Οἴκοθεν ὁ μάρτυρ: ἐπὶ τῶν καθ’ ἑαυτῶν φερόντων μάρτυρας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="28">
+<p rend="align(indent)">Ὄνος ἐν μελίσσαις: ἐπὶ τῶν ἐν κακοῖς περιπεσόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="29">
+<p rend="align(indent)">Ὄνος λίρας ἀκούων: ἐπὶ τῶν ἀξυνέτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="30">
+<p rend="align(indent)">Ὄνῳ τις ἔλεγε μῦθον, ὁ δὲ τὰ ὦτα ἐπέσειεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="31">
+<p rend="align(indent)">Πολλῶν ἀχύρων ὀλίγον καρπὸν ἀνήγαγον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="32">
+<p rend="align(indent)">Παρὰ κωφῷ διαλέγῃΠρὸς</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="33">
+<p rend="align(indent)">σῆμα μητρυιᾶς κλαίει: ἐπὶ τῶν προςποιουμένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="34">
+<p rend="align(indent)">Πολλαῖσι πληγαῖς δρῦς δαμάζεται: ἐπὶ τῶν δυςαλώτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="35">
+<p rend="align(indent)">Πρὶν τοὺς ἰχθῦς λαβεῖν, τὴν ἅλμην κυκᾷς: ἐπὶ τῶν τοὺς καιροὺς προλαμβανόντων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0421"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="36">
+<p rend="align(indent)">Πολλαὶ κυνὸς ἄῤῥενος εὐναί: ἐπὶ τῶν κατωφερῶν εἰς τὰ τὴς Ἀφροδίτης ἔργα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="37">
+<p rend="align(indent)">Πολλάκι μωρὸς ἀνὴρ κατακαίριον εἶπε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="38">
+<p rend="align(indent)">Πολλὰ μεταξὺ κύλικος καὶ χείλερς ἄκρου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="39">
+<p rend="align(indent)">Πλίνθον πλύνεις: ἐπὶ τῶν ἀδυνάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="40">
+<p rend="align(indent)">Πτωχοῦ πήρα οὐ πίμπλαται: ἐπὶ τῶν ἀπλήστων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="41">
+<p rend="align(indent)">Ποικιλότης ὕδρας: ἐπὶ τῶν δολερῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="42">
+<p rend="align(indent)">Πολλοί σε μισήσουσιν, ἂν σαυτὸν φιλῇς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="43">
+<p rend="align(indent)">Πῦρ ἐπὶ δαλὸν ἐλθόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="44">
+<p rend="align(indent)">Πόλλ’ οἶδ’ ἀλώπηξ, ἀλλ’ ἐχῖνος ἓν μέγα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="45">
+<p rend="align(indent)">Πολλοί τοι ναρθηκοφόροι, παῦροι δέ τε βάκχοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="46">
+<p rend="align(indent)">Πρὸς κέντρα λακτίζειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="47">
+<p rend="align(indent)">Προφάσεως δεῖται μόνον ἡ πονηρία.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="48">
+<p rend="align(indent)">Πρὸ τῆς νίκης ᾄδεις ἐγκώμιον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="49">
+<p rend="align(indent)">Πολλὰ ψεύδονται ἀοιδοί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="50">
+<p rend="align(indent)">Ποταμὸς πρὸς θάλατταν ἐρίζει: ἐπὶ τῶν ἀδυνάτων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0422"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="51">
+<p rend="align(indent)">Πολλῶν ἐγὼ θρίων ἀκήκοα ψόφους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="52">
+<p rend="align(indent)">Πεινῶσαν ἀλώπεκα ὕπνος ἐπέρχεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="53">
+<p rend="align(indent)">Πενίη σοφίην ἔλαχεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="54">
+<p rend="align(indent)">Πάντα πέτρον κινήσω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="55">
+<p rend="align(indent)">Πάντα κάλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="56">
+<p rend="align(indent)">Πρὸς λέοντα δορκάδες συνάπτουσι μάχας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="57">
+<p rend="align(indent)">Ῥόδιοι τὴν θυσίαν: ἐπὶ τῶν ἐν ἱεροῖς βλαςφημούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="58">
+<p rend="align(indent)">Ῥαχίας λαλίστερος: ἐπὶ τῶν ἀδολέσχων· ψόφον γὰρ ἀποτελεῖ βαλλομένη τοῖς κύμασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="59">
+<p rend="align(indent)">Ῥαδαμάνθυος κρίσις: ἡ δικαιοτάτη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="60">
+<p rend="align(indent)">Ῥόδον παρελθὼν μηκέτι ζήτει πάλιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="61">
+<p rend="align(indent)">Ῥεχθὲν δέ τε νήπιος ἔγνω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="62">
+<p rend="align(indent)">Ῥηγίνων δειλότερος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="63">
+<p rend="align(indent)">Σὺν Ἀθηνᾷ καὶ χεῖρα κίνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="64">
+<p rend="align(indent)">Συνῆλθεν ἀτταγᾶς νουμηνίῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="65">
+<p rend="align(indent)">Σύμβουλός ἐστιν ὁ χρόνος τῶν πραγμάτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="66">
+<p rend="align(indent)">Συγγνώμη πρωτοπείρῳ: ἐπὶ τῶν ἐν πρώτοις ἁμαρτανόντων.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0423"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="67">
+<p rend="align(indent)">Σαρδώνιος γέλως: ὁ προςποιητὸς καὶ μὴ ἐκ χαιρούσης καρδίας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="68">
+<p rend="align(indent)">Σικελικὴ τράπεζα, καὶ, Συβαριτική.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="69">
+<p rend="align(indent)">Σοφία μωροῦ: ἐπὶ τῶν ἀσύνετα λαλούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="70">
+<p rend="align(indent)">Σὲ δ’ οἰωνίσαιτ’ ἄν τις ἰδών: καὶ τό, Τόν δὲ ἡ νεότης ἐμίσουν τε καὶ οἰωνίζοντο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="71">
+<p rend="align(indent)">Τοιοῦτον Θεμιστοκλῆς οὔποτ’ ἐνόησε: σοφίας γὰρ δόξαν οὗτος ἀπηνέγκατο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="72">
+<p rend="align(indent)">Τυφῶνος πολυπλοκώτερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="73">
+<p rend="align(indent)">Ταντάλου τάλαντα: ἐπὶ τῶν σφοδρα πλουσίων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="74">
+<p rend="align(indent)">Τὸν Κολοφῶνα ἐπέθηκας: ἐπὶ μεγάλων πραγμάτων· καὶ ἐπὶ βεβαίου ψήφου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="75">
+<p rend="align(indent)">Τὸ ἐν τῇ καρδίᾳ τοῦ νήφοντος ἐν τῇ γλώσσῃ τοῦ μεθύοντος.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0424"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="76">
+<p rend="align(indent)">Τὸν καπνὸν φεύγων εἰς τὸ πῦρ ἐνέπεσεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="77">
+<p rend="align(indent)">Τὸ κυνὸς κακὸν ὗς ἀπέτισεν: ἐπὶ τῶν ἄλλων ἁμαρτόντων, ἄλλων δὲ δόντων δίκην.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="78">
+<p rend="align(indent)">Τὸν ξύοντα ἀντιξύειν: ἀπὸ μεταφορᾶς τῶν ὄνων· ἀλλήλους γὰρ ἀντικνήθουσιν. Ἐπὶ ὠφελούντων ἢ ἀντιβλαπτόντων ἀλλήλους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="79">
+<p rend="align(indent)">Τοῦ Κροίσου παιδὸς σιγηλότερος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="80">
+<p rend="align(indent)">Τί οὐκ ἀπήγξω, ἵνα Θήβησιν ἥρως γίνῃ: οἱ γὰρ ἑαυτοὺς διαχειρίζοντες ἐν Θήβαις ἐτιμῶντο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="81">
+<p rend="align(indent)">Τὸ Ἱππάρχου τειχίον: Ἵππαρχος ὁ Πεισιστράτου παρὰ τὴν Πυθίαν τεῖχος ᾠκοδόμησε, πολλὰ τοὺς Ἀθηναίους εἰς τἀναλώματα ἀναγκάσας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="82">
+<p rend="align(indent)">Τὸν ἐγκέφαλον κατασεσεῖσθαί μοι δοκεῖς,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="83">
+<p rend="align(indent)">Τὸ μὲν νόημα τοῦ θεοῦ, τὸ δὲ κλέμμ’ ἐμόν: οὕτω γὰρ οἱ δημαγωγοὶ ἀστεϊζόμενοι ἔλεγον· ὁ μὲν θεὸς ὑπέβαλεν, ὁ ἐργασάμενος δὲ ἐγώ.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0425"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="84">
+<p rend="align(indent)">Τοῦ σελίνου δεῖται: ἐπὶ τῶν ἰσχυρῶς νοσούντων. εἰώθασι γὰρ στεφανοῦν σελίνοις τὰ μνήματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="85">
+<p rend="align(indent)">Τραγικὸς πίθηκος: ἐπὶ τῶν παρ’ ἀξίαν σεμνυνομένων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="86">
+<p rend="align(indent)">Ὕβρις ὕβριν ἔτικτε καὶ ψόγος ψόγον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="87">
+<p rend="align(indent)">Ὑπὲρ ὄνου σκιᾶς: ἐπὶ τῶν ὑπὲρ μηδὲν πονούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="88">
+<p rend="align(indent)">Ὑπὸ παντὸς λίθου σκορπίος εὕδει: ἐπὶ κακοηθῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="89">
+<p rend="align(indent)">Ὑπὲρ τὰ ἐσκαμμένα πηδᾶν: ὅμοιον τό, Ὑπερβάθμιον πόδα τείνεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="90">
+<p rend="align(indent)">Ὑπὲρ τῶν ὅλων ἀναῤῥιπτεῖς: οἷον ὑπὲρ τῶν ὅλων ἀγωνίξῃ καὶ κινδυνεύεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="91">
+<p rend="align(indent)">Ὑπηνέμια τίκτει: ψευδῆ καὶ ἀβέβαια.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0426"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="92">
+<p rend="align(indent)">Ὕδραν τέμνεις: ἐπὶ τῶν ἀμηχάνων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="93">
+<p rend="align(indent)">Ὗς λουσαμένη εἰς κύλισμα βορβόρου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="94">
+<p rend="align(indent)">Ὗς ὑπὸ ῥόπαλον: ἐπὶ τῶν ἑαυτοὺς εἷς ὄλεθρον ἐμβαλλόντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="95">
+<p rend="align(indent)">Φρὺξ ἀνὴρ πληγεὶς ἀμείνων καὶ διακονέστερος: νωθροὶ γὰρ δοκοῦσι οἱ Φρύγες οἰκέται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="96">
+<p rend="align(indent)">Φρυνώνδας ἄλλος: ἐπὶ τῶν πονηρῶν. Λέγεται δὲ καὶ ἐπὶ μάγων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="97">
+<p rend="align(indent)">Χαλεπὸν χορίου κύνα γεύειν.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0427"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="98">
+<p rend="align(indent)">Χρήματ’ ἀνὴρ· πενιχρὸς δ’ οὐδέποτ’ ἐσθλός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="99">
+<p rend="align(indent)">Χωρὶς τὰ Φρυγῶν καὶ Μυσῶν ὁρίσματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3" n="100">
+<p rend="align(indent)">Χροῒ δῆλα: φασὶ Φερεκύδην τὸν σοφὸν φθειριάσει τελευτῆσαι, εἰπεῖν δὲ πρὸς Πυθαγόραν περὶ τούτου πυνθανόμενον προβαλόντα τὸν δάκτυλον· Χροὶ δῆλα.</p></div></div>
+<div type="textpart" subtype="centuria" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1" n="3b">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3b" n="1">
+<p rend="align(indent)">Χυτραῖς λημᾶν καὶ κολοκύνταις: ἐπὶ τῶν ἀμβῤνωπούντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3b" n="2">
+<p rend="align(indent)">Χρυσῷ καταπάττων ἡμᾶς οὐ γενώσκεις: ἐπὶ τῶν εἰκῇ λοιδορουμένων· ἐπιφέρει γὰρ Νῦν δὲ κόσμος τοῦτ’ ἐστί μοι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3b" n="3">
+<p rend="align(indent)">Ὡς ἥρως ἐν ἀσπίδι ξενίσαι βούλομαι: λέγεται <pb facs="corpusparoemiogr01leutuoft_0428"/> ἐπὶ τῶν τοὺς φίλους τοῖς ἑαυτῶν ἔργοις εὐεργετούντων.,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3b" n="4">
+<p rend="align(indent)">Ὠσὶν ἑστῶσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg9006.tlg001.1st1K-grc1:3b" n="5">
+<p rend="align(indent)">Ὤδινεν ὄρος, εἶτα μῦν ἀπέτεκεν: παρατόξευσις ἡ ἔξω τοῦ σκοποῦ.</p></div>
+<pb facs="corpusparoemiogr01leutuoft_0429"/></div></div>
+
+
+</body></text></TEI>
