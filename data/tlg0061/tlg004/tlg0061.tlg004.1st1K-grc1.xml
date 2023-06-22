@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+<fileDesc>
+    <titleStmt>
+        <title xml:lang="grc">Ἀλκυών</title>
+        <author>Pseudo-Lucian</author>
+        <editor>Karl Jacobitz</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+            <resp>Prepared under the supervision of</resp>
+            <name>Alison Babeu</name>
+            <name>Lisa Cerrato</name>
+        </respStmt>
+        <funder n="org:Tufts">Tufts University</funder>
+    </titleStmt>
+    <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <date type="release">2023</date>
+        <idno type="filename">tlg0061.tlg004.perseus-grc1.xml</idno>
+        <availability>
+            <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+    </publicationStmt>
+    
+    <sourceDesc>
+        <biblStruct>
+            <monogr>
+                <title xml:lang="lat">Luciani Samosatensis Opera</title>
+                <author>Lucian</author>
+                <editor>Karl Jacobitz</editor>
+                <imprint>
+                    <publisher>Teubner</publisher>
+                    <pubPlace>Leipzig</pubPlace>
+                    <date>1909</date>
+                </imprint>
+                <biblScope unit="volume">1</biblScope>
+            </monogr>
+            <ref target="https://archive.org/details/operaexrecogniti01luciuoft/page/58/mode/2up">Internet Archive</ref>
+        </biblStruct>
+    </sourceDesc>
+</fileDesc>
+    
+     <encodingDesc>
+         <editorialDecl><p>Greek produced via Lace v. 0.6.22 copyright 2013-2021, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></editorialDecl>
+         
+         <refsDecl n="CTS">
+             <cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+                 <p>This pointer pattern extracts lines</p>
+             </cRefPattern>
+         </refsDecl>
+     </encodingDesc>
+    
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.22 copyright 2013-2021, Bruce Robertson, Dept. of Classics, Mount Allison University.</p></correction></editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p><!-- sample top level refsDecl for lines -->
+
+    <refsDecl n="CTS">
+       <!-- <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <p>This pointer pattern extracts book and section.</p>
+        </cRefPattern>-->
+        <cRefPattern n="section" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <p>This pointer pattern extracts section.</p>
+        </cRefPattern>
+    </refsDecl>
+</encodingDesc>
+     
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+</langUsage>
+</profileDesc>
+     
+     <revisionDesc>
+         <change who="Lisa Cerrato" when="2023-06-22">File creation, initial OCR editing, EpiDoc and CTS conversion.</change>
+</revisionDesc>
+ </teiHeader>
+    
+<text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" xml:lang="grc">
+<pb facs="operaexrecogniti01luciuoft_0077"/>
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="1">
+<sp><speaker>Χαιρεφῶν</speaker>  
+<p rend="align(indent)">Τίς ἡ φωνὴ προσέβαλεν ἡμῖν, ὦ Σώκρατες, πόρρωθεν ἀπὸ τῶν αἰγιαλῶν καὶ τῆς ἄκρας ἐκείνης; <pb facs="operaexrecogniti01luciuoft_0078"/> ὡς ἡδεῖα ταῖς ἀκοαῖς. τί ποτ’ ἄρ’ ἐστὶ τὸ φθεγγόμενον ζῷον; ἄφωνα γὰρ δὴ τά γε καθ’ ὕδατος διαιτώμενα.</p></sp> <milestone unit="Reitz_page" n="177"/>
+<sp><speaker>Σωκράτης</speaker>  
+    <p rend="align(indent)">Θαλαττία τις, ὦ Χαιρεφῶν, ὄρνις ἀλκυὼν ὀνομαζομένη, πολύθρηνος καὶ πολύδακρυς, περὶ ἧς δὴ παλαιὸς ἀνθρώποις μεμύθευται λόγος· φασὶ γυναῖκά ποτε οὖσαν Αἰόλου τοῦ Ἕλληνος θυγατέρα κουρίδιον ἄνδρα <milestone unit="Reitz_page" n="178"/> τὸν αὐτῆς τεθνεῶτα θρηνεῖν πόθῳ φιλίας, Κήϋκα τὸν Τραχίνιον τὸν Ἑωσφόρου τοῦ ἀστέρος, καλοῦ πατρὸς καλὸν υἱόν· εἶτα δὴ πτερωθεῖσαν διά τινα δαιμονίαν βούλησιν εἰς ὄρνιθος τρόπον περιπέτεσθαι τὰ πελάγη ζητοῦσαν ἐκεῖνον, ἐπειδὴ πλαζομένη γῆν περὶ πᾶσαν οὐχ οἵα τ’ ἦν εὑρεῖν.</p></sp></div>
+    
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="2">
+<sp><speaker>Χαιρεφῶν</speaker>  
+    <p rend="align(indent)">Ἀλκυὼν τοῦτ’ ἔστιν, ὃ σὺ φής; οὐ πώποτε πρόσθεν ἠκηκόειν τῆς φωνῆς, ἀλλά μοι ξένη τις τῷ ὄντι προσέπεσε· γοώδη γοῦν ὡς ἀληθῶς τὸν ἦχον ἀφίησι τὸ ζῷον. πηλίκον δέ τι καὶ ἔστιν, ὦ Σώκρατες;</p> </sp>
+<sp><speaker>Σωκράτης</speaker>  
+    <p rend="align(indent)">Οὐ μέγα· μεγάλην μέντοι διὰ τὴν φιλανδρίαν εἴληφε παρὰ θεῶν τιμήν· ἐπὶ γὰρ τῇ τούτων νεοττίᾳ καὶ τὰς ἀλκυονίδας προσαγορευομένας ἡμέρας ὁ κόσμος ἄγει κατὰ χειμῶνα μέσον διαφερούσας ταῖς εὐδίαις, ὧν ἐστι <milestone unit="Reitz_page" n="179"/> καὶ ἡ τήμερον παντὸς μᾶλλον. οὐχ ὁρᾷς ὡς αἴθρια μὲν τὰ ἄνωθεν, ἀκύμαντον δὲ καὶ γαλήνιον ἅπαν τὸ πέλαγος, ὅμοιον ὡς εἰπεῖν κατόπτρῳ; </p></sp>
+<sp><speaker>Χαιρεφῶν</speaker>  
+    <p rend="align(indent)">Λέγεις ὀρθῶς· φαίνεται γὰρ ἀλκυονὶς ἡ τήμερον ὑπάρχειν ἡμέρα, καὶ χθὲς δὲ τοιαύτη τις ἦν. ἀλλὰ πρὸς θεῶν, πῶς ποτε χρὴ πεισθῆναι τοῖς ἐξ ἀρχῆς, ὦ Σώκρατες, ὡς ἐξ ὀρνίθων γυναῖκές ποτε ἐγένοντο ἢ ὄρνιθες ἐκ γυναικῶν; παντὸς γὰρ μᾶλλον ἀδύνατον φαίνεται πᾶν τὸ τοιοῦτον.</p></sp></div>
+    
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="3">
+    <sp><speaker>Σωκράτης</speaker>     
+     <p rend="align(indent)">Ὦ φίλε Χαιρεφῶν, ἐοίκαμεν ἡμεῖς τῶν δυνατῶν τε καὶ ἀδυνάτων ἀμβλυωποί τινες εἶναι κριταὶ παντελῶς· δοκιμάζομεν γὰρ δὴ κατὰ δύναμιν ἀνθρωπί <pb facs="operaexrecogniti01luciuoft_0079"/> νην ἄγνωστον οὖσαν καὶ ἄπιστον καὶ ἀόρατον· πολλὰ <milestone unit="Reitz_page" n="180"/> οὖν φαίνεται ἡμῖν καὶ τῶν εὐπόρων ἄπορα καὶ τῶν ἐφικτῶν ἀνέφικτα, συχνὰ μὲν καὶ δι’ ἀπειρίαν, συχνὰ δὲ καὶ διὰ νηπιότητα φρενῶν· τῷ ὄντι γὰρ νήπιος ἔοικεν εἶναι πᾶς ἄνθρωπος, καὶ ὁ πάνυ γέρων, ἐπεί τοι μικρὸς πάνυ καὶ νεογιλὸς ὁ τοῦ βίου χρόνος πρὸς τὸν πάντα αἰῶνα. τί δ’ ἄν, ὦγαθέ, οἱ ἀγνοοῦντες τὰς τῶν θεῶν καὶ δαιμονίων δυνάμεις ἔχοιεν ἂν εἰπεῖν, πότερον δυνατὸν ἢ ἀδύνατόν τι τῶν τοιούτων; ἑώρακας, Χαιρεφῶν, τρίτην ἡμέραν ὅσος ἦν ὁ χειμών; καὶ ἐνθυμηθέντι γάρ τῳ δέος ἐπέλθοι καὶ τὰς ἀστραπὰς ἐκείνας καὶ βροντὰς ἀνέμων τε ἐξαίσια μεγέθη· ὑπέλαβεν ἄν τις τὴν οἰκουμένην ἅπασαν καὶ δὴ συμπεσεῖσθαι.</p></sp></div>
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="4">
+    <sp><speaker>Σωκράτης</speaker> 
+        <p rend="merge">μετὰ μικρὸν δὲ θαυμαστή τις κατάστασις εὐδίας ἐγένετο καὶ διέμεινεν αὕτη γε ἕως τοῦ νῦν. πότερον οὖν οἴει μεῖζόν τι καὶ ἐργωδέστερον εἶναι τοιαύτην αἰθρίαν ἐξ ἐκείνης τῆς ἀνυποστάτου λαίλαπος καὶ ταραχῆς μεταθεῖναι καὶ εἰς γαλήνην ἀναγαγεῖν τὸν ἅπαντα κόσμον, ἢ γυναικὸς εἶδος μεταπλασθὲν εἰς ὄρνιθός τινος ποιῆσαι; τὸ μὲν γὰρ τοιοῦτον καὶ τὰ <milestone unit="Reitz_page" n="181"/> παιδάρια τὰ παρ’ ἡμῖν τὰ πλάττειν ἐπιστάμενα, πηλὸν ἢ κηρὸν ὅταν λάβῃ, ῥᾳδίως ἐκ τοῦ αὐτοῦ πολλάκις ὄγκου μετασχηματίζει πολλὰς ἰδεῶν φύσεις. τῷ δαιμονίῳ δὴ μεγάλην καὶ οὐ συμβλητὴν ὑπεροχὴν ἔχοντι πρὸς τὰς ἡμετέρας δυνάμεις εὐχερῆ τυχὸν ἴσως ἅπαντα τὰ τοιαῦτα καὶ λεῖα· ἐπεὶ τὸν ὅλον οὐρανὸν πόσῳ τινὶ σαυτοῦ δοκεῖς εἶναι μείζω; φράσαις ἄν;</p></sp></div>
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="5">
+    <sp><speaker>Χαιρεφῶν</speaker>
+    <p rend="align(indent)">Τίς δ’ ἀνθρώπων, ὦ Σώκρατες, νοῆσαι δύναιτ’ ἂν ἢ ὀνομάσαι τι τῶν τοιούτων; οὐδὲ γὰρ εἰπεῖν ἐφικτόν.</p></sp>
+   <sp><speaker>Σωκράτης</speaker>
+        <p rend="align(indent)">Οὔκουν δὴ θεωροῦμεν καὶ ἀνθρώπων πρὸς ἀλλήλους συμβαλλομένων μεγάλας τινὰς ὑπεροχὰς ἐν ταῖς δυνάμεσι καὶ ἐν ταῖς ἀδυναμίαις ὑπαρχούσας; ἡ γὰρ τῶν  <pb facs="operaexrecogniti01luciuoft_0080"/>  ἀνδρῶν ἡλικία πρὸς τὰ νήπια παντελῶς βρέφη, τὰ πεμπταῖα ἐκ γενετῆς ἢ δεκαταῖα, θαυμαστὴν ὅσην ἔχει τὴν διαφορὰν δυνάμεώς τε καὶ ἀδυναμίας ἐν πάσαις σχεδὸν ταῖς κατὰ τὸν βίον πράξεσι, καὶ ὅσα διὰ τῶν τεχνῶν τούτων οὕτως πολυμηχάνων καὶ ὅσα διὰ τοῦ σώματος καὶ τῆς ψυχῆς ἐργάζονται· ταῦτα γὰρ τοῖς νέοις, ὥσπερ εἶπον, παιδίοις οὐδ’ εἰς νοῦν ἐλθεῖν δυνατὰ φαίνεται.</p></sp></div>
+    
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="6">
+    <sp><speaker>Σωκράτης</speaker>
+        <p rend="merge">καὶ τῆς ἰσχύος δὲ τῆς ἑνὸς ἀνδρὸς τελείου τὸ μέγεθος <milestone unit="Reitz_page" n="182"/> ἀμέτρητον ὅσην ἔχει τὴν ὑπεροχὴν πρὸς ἐκεῖνα· μυριάδας γὰρ τῶν τοιούτων εἷς ἀνὴρ πάνυ πολλὰς χειρώσαιτ’ ἂν ῥᾳδίως· ἡ γὰρ ἡλικία παντελῶς ἄπορος δήπου πάντων καὶ ἀμήχανος ἐξ ἀρχῆς παρακολουθεῖ τοῖς ἀνθρώποις κατὰ φύσιν. ὁπηνίκα οὖν ἄνθρωπος, ὡς ἔοικεν, ἀνθρώπου τοσούτῳ διαφέρει, τί νομίσωμεν τὸν σύμπαντα οὐρανὸν πρὸς τὰς ἡμετέρας δυνάμεις φανῆναι ἂν τοῖς τὰ τοιαῦτα θεωρεῖν ἐφικνουμένοις; πιθανὸν οὖν ἴσως δόξει πολλοῖς, ὅσην ἔχει τὸ μέγεθος τοῦ κόσμου τὴν ὑπεροχὴν πρὸς τὸ Σωκράτους ἢ Χαιρεφῶντος εἶδος, τηλικοῦτον καὶ τὴν δύναμιν αὐτοῦ καὶ τὴν 1st1K1st1Kφρόνησιν καὶ διάνοιαν ἀνάλογον διαφέρειν τῆς περὶ ἡμᾶς διαθέσεως.</p></sp></div>
+    
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="7">
+    <sp><speaker>Σωκράτης</speaker>
+        <p rend="merge">σοὶ μὲν οὖν καὶ ἐμοὶ καὶ ἄλλοις πολλοῖς τοιούτοις οὖσι πόλλ’ ἄττ’ ἀδύνατα τῶν ἑτέροις πάνυ ῥᾳδίων· ἐπεὶ καὶ αὐλῆσαι τοῖς ἀναύλοις καὶ ἀναγνῶναι ἢ γράψαι τοῖς ἀγραμμάτοις γραμματικὸν τρόπον ἀδυνατώτερόν ἐστι τέως, ἕως <milestone unit="Reitz_page" n="183"/> ἂν ὦσιν ἀνεπιστήμονες, τοῦ ποιῆσαι γυναῖκας ἐξ ὀρνίθων ἢ ὄρνιθας ἐκ γυναικῶν. ἡ δὲ φύσις ἐν κηρίῳ σχεδὸν παραβάλλουσα ζῷον ἄπουν καὶ ἄπτερον πόδας ὑποθεῖσα καὶ πτερώσασα ποικιλίᾳ τε φαιδρύνασα πολλῇ καὶ καλῇ καὶ παντοδαπῇ χρωμάτων μέλιτταν ἀπέδειξε σοφὴν θείου μέλιτος ἐργάτιν, ἔκ τε ᾠῶν ἀφώνων καὶ ἀψύχων πολλὰ γένη πλάττει πτηνῶν τε καὶ πεζῶν καὶ ἐνύδρων ζῴων, τέχναις, ὡς λόγος τινῶν, ἱεραῖς αἰθέρος μεγάλου προσχρωμένη. </p></sp></div>
+    
+<pb facs="operaexrecogniti01luciuoft_0081"/>
+<div type="textpart" subtype="textpart" xml:base="urn:cts:greekLit:tlg0061.tlg004.1st1K-grc1" n="8">
+    <sp><speaker>Σωκράτης</speaker>
+        <p rend="merge">τὰς οὖν ἀθανάτων δυνάμεις μεγάλας οὔσας θνητοὶ καὶ σμικροὶ παντελῶς ὄντες καὶ οὔτε τὰ μεγάλα δυνάμενοι καθορᾶν οὔτ’ αὖ τὰ σμικρά, τὰ πλείω δ’ ἀποροῦντες καὶ τῶν περὶ ἡμᾶς συμβαινόντων παθῶν, οὐκ ἂν ἔχοιμεν εἰπεῖν βεβαίως οὔτ’ ἀλκυόνων πέρι οὔτ’ <milestone unit="Reitz_page" n="184"/> ἀηδόνων· κλέος δὲ μύθων, οἷον παρέδοσαν πατέρες, τοιοῦτον καὶ παισὶν ἐμοῖς, ὦ ὄρνι θρήνων μελῳδέ, παραδώσω τῶν σῶν ὕμνων πέρι, καί σου τὸν εὐσεβῆ καὶ φίλανδρον ἔρωτα πολλάκις ὑμνήσω γυναιξὶ ταῖς ἐμαῖς Ξανθίππῃ τε καὶ Μυρτοῖ λέγων τά τε ἄλλα, πρὸς δὲ καὶ τιμῆς οἵας ἔτυχες παρὰ θεῶν. ἆρά γε καὶ σὺ ποιήσεις τι τοιοῦτον, ὦ Χαιρεφῶν;</p></sp>
+    
+    <sp><speaker>Χαιρεφῶν</speaker>
+    <p rend="align(indent)">Πρέπει γοῦν, ὦ Σώκρατες, καὶ τὰ ὑπὸ σοῦ ῥηθέντα διπλασίαν ἔχειν τὴν παράκλησιν πρὸς γυναικῶν τε καὶ ἀνδρῶν ὁμιλίαν.</p></sp>
+  
+    <sp><speaker>Σωκράτης</speaker>
+   <p rend="align(indent)">Οὐκοῦν ἀσπασαμένοις τὴν Ἀλκυόνα προάγειν ἤδη πρὸς ἄστυ καιρὸς ἐκ τοῦ Φαληρικοῦ. </p></sp>
+    
+    <sp><speaker>Χαιρεφῶν</speaker>
+        <p rend="align(indent)">Πάνυ μὲν οὖν· ποιῶμεν οὕτως.</p></sp>
+</div>
+</div>
+</body>
+</text></TEI>
