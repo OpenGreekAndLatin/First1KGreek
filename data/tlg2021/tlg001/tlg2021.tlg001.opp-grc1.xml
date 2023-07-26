@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xml:lang="eng">    
     <fileDesc>
@@ -79,26 +79,24 @@
      <title>Die griechischen christlichen Schriftsteller</title>
      <biblScope unit="volume">25</biblScope>
    </series>
-   <ref target="https://archive.org/details/diegriechischenc25kirc">Internet Archive</ref>
+   <ref target="Internet Archive">https://archive.org/details/diegriechischenc25kirc</ref>
  </biblStruct>
 </listBibl>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-  <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
-  
+<p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
     <refsDecl n="CTS">
-        <!--<cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>-->
-        <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="section" matchPattern="(.+).(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])"/>
+        <cRefPattern n="section|letter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
         <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
-    
 <profileDesc>
 <langUsage>
 <language ident="grc">Greek</language>
 <language ident="lat">Latin</language>
-  <language ident="deu">German</language>
+	<language ident="deu">German</language>
 </langUsage>
 </profileDesc>
 <revisionDesc>
@@ -106,12 +104,9 @@
 </revisionDesc>
 </teiHeader>
   <text>
-    <body>
-      <div type="edition" n="urn:cts:greekLit:tlg2021.tlg001.opp-grc1" xml:lang="grc">
+    <body><div type="edition" n="urn:cts:greekLit:tlg2021.tlg001.opp-grc1" xml:lang="grc">
 <pb n="1"/>
-<div type="textpart" subtype="chapter" n="pr_0">
-  <div type="textpart" subtype="section" n="0">
-    <p>Ὁ θεῖος οὗτος καὶ μέγας πατὴρ ἡμῶν Ἐπιφάνιος ἀπὸ Ἐλευθεροπόλεως μὲν <note type="marginal">P II 1 D 183</note>
+<p>Ὁ θεῖος οὗτος καὶ μέγας πατὴρ ἡμῶν Ἐπιφάνιος ἀπὸ Ἐλευθεροπόλεως μὲν <note type="marginal">P II 1 D 183</note>
 ὡρμᾶτο τῆς ἐν Παλαιστίνῃ, ἔνθα καὶ πατὴρ γέγονε μοναστῶν· τὴν δ[ε πρώτην
 ἄσκησιν * εἰς Αἴγυπτον ἀναχωρήσας, καὶ διατελέσας * ἕως έπανόδου ἐν τῷ εἰκοστῷ
 ἔτει τῆς ἡλικίας αὐτοῦ εἰς τὴν Ἐλευθεροπολιτῶν περιοικίδα αὖθις ἐπανῆλθεν, οἱκοδομήσας
@@ -137,19 +132,18 @@ Heft 2 S. 91 ff — 5 vgl. die Deutung des Titels bei Epiphanius selbst Panarion
 προειρημένον L | ὁ λόγος αὐτοῦ &lt; L 6 καὶ σωτηρίας hinter νοῦν L |
 ἄγχει L 7 περὶ] τῶν J 8 τοῦ 1 ] τῆς L | τῆς &lt; L | τοῦ 2 &lt; L 9 τοῦ
 10 τοῦ &lt; L 15 Οὐαλεντινιανοῦ καὶ &lt; J |δὲ δεκάτῳ &lt; L
-καὶ Γρανιανοῦ L | ἑκτῷ x003C; L</note></div></div>
+καὶ Γρανιανοῦ L | ἑκτῷ x003C; L</note>
 <pb n="2"/>
-<div type="textpart" subtype="chapter" n="pr_1">
- <div type="textpart" subtype="section" n="arg">
+<div type="textpart" subtype="chapter" n="letters">
+ <div type="textpart" subtype="letter" n="1">
 <p>Ἐπιστολὴ γραφεῖσα ἀπὸ Παμφυλίας ἐκ πόλεως Σουέσρων ὑπὸ <note type="marginal">Ρ 2</note>
 τῶν περὶ Ταρσῖνον καὶ Ματίδιον καὶ ἄλλους πρεσβυτέρους πρὸς
 Ἐ[οφἀνιον ἐπίσκοπον Κύπρου πόλεως κωνσταντίας περὶ πί-
 στεως αἰτησάντων πατρὸς καὶ υἱοῦ <milestone unit="altpage1" n="D 84"/> καὶ ἁγίου πνεύματος καὶ 
-<lb n="5"/> ἄλλων μερῶν τῆς αὐτῆς πίστεως.</p></div>
-  <div type="textpart" subtype="section" n="0">
-  <p>τῷ κυρίῳ θεοτιμήτῳ ἐπισκόκῳ Ἐπιφανῳ Ματίδιος καὶ Ταρσῖνος καὶ
+<lb n="5"/> ἄλλων μερῶν τῆς αὐτῆς πίστεως.</p>
+<p>τῷ κυρίῳ θεοτιμήτῳ ἐπισκόκῳ Ἐπιφανῳ Ματίδιος καὶ Ταρσῖνος καὶ
 Νέων καὶ Νουμεριανός, πρεσβύτεροι τῆς ἐν Σουέδροις καθολικῆς ἐκκλησίαιν,
-ἐν κυρίῳ θεῶ χαίρειν.</p></div>
+ἐν κυρίῳ θεῶ χαίρειν.</p>
 <div type="textpart" subtype="section" n="1">
 <p>Ποικίλως ὁ ἐχθρὸς τῷν ἀνθρώπων διάβολος εἰωθε ταράτειν καὶ τὰ 
 <lb n="10"/> ἴδια ἐπισπείρειν σπέρματα κατὰ τῶν ἁπλουστέρων καὶ μηδέπω εἰς τὴν
@@ -196,15 +190,13 @@ vgl. S. 8, 8 u. 5, 19 9 τὰ ἴδια hinter ἐπισπείρειν v 10 ἐ
 μεμνῆσθαι ἐν εὐχαῖς θεῷ εὐχόμεθα. <milestone unit="altpage1" n="P 3 D 85"/></p> 
 </div>
 </div>
-<div type="textpart" subtype="chapter" n="pr_2">
-  <div type="textpart" subtype="section" n="arg">
-  <p>Ἐπιστολὴ γραφεῖσα παρὰ Παλλαδίου τῆς αὐτῆς πόλεως Σουέσρων
+<div type="textpart" subtype="letter" n="2">
+<p>Ἐπιστολὴ γραφεῖσα παρὰ Παλλαδίου τῆς αὐτῆς πόλεως Σουέσρων
 πολιτευομένου καὶ ἀποσταλεῖσα πρὸς τὸν αὐτὸν Ἐπιφάνιον
 <lb n="5"/> ἐπίσκοπον Καλλαντίας τῆς Κυπρίων νήσου, αἰτήσαντος καὶ
-αὐτοῦ περὶ τῶν αὐτῶν.</p></div>
-  <div type="textpart" subtype="section" n="0">
-  <p>τῷ δεσπότῃ μου τῆς ψυχῆς θεοτιμήτῳ ἐπισκόπῳ Ἐπιφανίῳ Παλλάδιος
-πολιτευόμενος &lt;ἐν&lt; Σουέδροις ἐν κυρίῳ θεῷ χαίρειν.</p></div>
+αὐτοῦ περὶ τῶν αὐτῶν.</p>
+<p>τῷ δεσπότῃ μου τῆς ψυχῆς θεοτιμήτῳ ἐπισκόπῳ Ἐπιφανίῳ Παλλάδιος
+πολιτευόμενος &lt;ἐν&lt; Σουέδροις ἐν κυρίῳ θεῷ χαίρειν.</p>
 <div type="textpart" subtype="section" n="1">
 <p>Οἱ τὴν μεγάλην καὶ ευρύχωρον διαπλέοντες θάλασσαν, ἕως με)
 <lb n="10"/> γαληνὸν πνεῦμα τὴν ναῦν εὐθύνῃ, μικρὰ τῶν παρακειμένων ταῖς ὄχθαις
@@ -271,8 +263,9 @@ V 9 f καταξιῶσαι L J 12 πίστιν ἐκθέσθαι ν 13 ταῦ�
 14 εὖ βεβηκότας] εὐσεβηκότας L J</note>
 </div>
 </div>
-<div type="textpart" subtype="chapter" n="pr_3">
-<div type="textpart" subtype="section" n="arg">
+</div>
+<div type="textpart" subtype="chapter" n="praef">
+<div type="textpart" subtype="section" n="1">
 <pb n="5"/>
 <p>Ἐπιστολὴ γραφεῖσα εἰς Παμφυλίαν τοῖς περὶ τὸν πρεσβύτερον
 Ματίδιον καὶ Ταραντῖνον καὶ Νέωνα καὶ Νουμισιανὸν Σουέδρων
@@ -280,9 +273,8 @@ V 9 f καταξιῶσαι L J 12 πίστιν ἐκθέσθαι ν 13 ταῦ�
 ἁγίου πνεύματος καὶ ἄλλων μερῶν τῆς πίστεως, ἀυαστάσεώς τε
 <lb n="5"/> νεκρῶν φημι καὶ ἐνανθρωπήσεις Χριστοῦ, ἐν ἐνενηκοστῷ ἔττει
 Διοκλητιανοῦ ἐν μηνὶ Ἰουλίῳ, περὶ ὧν ἐν ταῖς ἑαυτῶν ἐπιστολαῖς
-ᾔτησαν, ὡς ἐν αὐταῖς ἐμφέρεται καὶ εἰσὶ προτεταγμένα.</p></div>
-  <div type="textpart" subtype="section" n="0">
-  <p>Τοῖς κυρίοις μου καὶ τιμιωτάτοις ἀδελφοῖς καὶ συμπρεσβυτέροις,
+ᾔτησαν, ὡς ἐν αὐταῖς ἐμφέρεται καὶ εἰσὶ προτεταγμένα.</p>
+<p>Τοῖς κυρίοις μου καὶ τιμιωτάτοις ἀδελφοῖς καὶ συμπρεσβυτέροις,
 Ματιόίῳ καὶ Ταρσίνῳ καὶ &gt; καὶ Νουμεριανῷ καὶ λοιποῖς
 <lb n="10"/> πᾶσι τοῖς σὺν ὑμῖν καὶ τοῖς ποθεινοτάτοις τέκνοις ἡμῶν,
 Παλλαδίῳ καὶ Σευηριανῷ, τοῖς τὸν ἀγαθὸν ζῆλον ἐζηλωκόσι καὶ
@@ -293,7 +285,8 @@ V 9 f καταξιῶσαι L J 12 πίστιν ἐκθέσθαι ν 13 ταῦ�
 αὐτῶν καὶ ἐτίθουν παρὰ τοὺς πόδας τῶν ἀποστόλων«, καὶ ὅσα εἰσὶ
 καίρια καὶ ἀμαχώτατα ἐν ἡμῖν προσπορίσασθαι ταῖς ἑαυτῶν ψυχαῖς
 προστιθεμέΙνοις, Ἐπιφάνιος <milestone unit="altpage1" n="P6 D87"/> ὁ ἐλάχιστος τῶν ἐπισκόπων καὶ οἱ σὺν 
-ἐμοὶ ἀδελφοὶ ἐν κυρίῳ θεῷ χαίρειν.</p></div></div>
+ἐμοὶ ἀδελφοὶ ἐν κυρίῳ θεῷ χαίρειν.</p>
+</div></div>
 <div type="textpart" subtype="chapter" n="1">
 <div type="textpart" subtype="section" n="1">
 <lb n="20"/> <p>Ἤδη μὲν μὲν μακαρίσαιμι ἂν ἑαυτόν, ποθεινότατοι, ὄντι γε μὴ 
