@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="lat">Fragmenta</title>
+                <author xml:lang="lat">Seniores Alexandrini</author>
+                <editor>Jean Baptiste Pitra</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                <respStmt>
+                    <persName>Charlotte Houghton</persName>
+                    <orgName/>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Domi Couvet</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Theodoros Pazarloglou</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Dora Profyri</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zeyu Wen</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt>
+            </titleStmt>
+            
+            <publicationStmt>
+                <publisher>Open Greek and Latin</publisher>
+                <idno type="filename">tlg1664.tlg001.1st1K-grc1.xml</idno>
+                <pubPlace/>
+                <availability><licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+                <date when="2023-06-20"/>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author xml:lang="lat">Seniores Alexandrini</author>
+                        <title xml:lang="lat">Analecta sacra spicilegio solesmensi parata</title>
+                        <editor><persName>Jean Baptiste Pitra</persName></editor>
+                        <imprint>
+                            <pubPlace>Paris</pubPlace>
+                            <publisher>A. Jouby et Roger</publisher>
+                            <date>1884</date>
+                        </imprint>
+                        <biblScope unit="volume">2</biblScope>
+                    </monogr>
+                    <ref target="https://archive.org/details/analectasacrasp01pitrgoog/page/335/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <editorialDecl>
+                <correction><p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction>
+            </editorialDecl>
+            <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+            
+            <refsDecl n="CTS">
+                <!--<cRefPattern matchPattern="(\w+).(\w+)" n="lines" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts lines.</p>
+                </cRefPattern>-->
+                <cRefPattern matchPattern="(\w+)" n="fragment" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts fragment.</p>
+                </cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2023-09-07" who="Lisa Cerrato">EpiDoc and CTS conversion cleanup.</change>
+        </revisionDesc>
+    </teiHeader>
+                
+<text>
+        <body>
+<div type="edition" n="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" xml:lang="grc">
+<pb facs="analectasacrasp01pitrgoog_0392"/>
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="1">
+<head xml:lang="lat" rend="align(center)">Psalmus XXXVII.
+    <lb/> <foreign xml:lang="grc">Ψαλμὸς τῷ Δαυἰδ εἰς ἀνάμνησιν περὶ Σαββάτου.</foreign> <bibl xml:lang="lat">Vat. 647, 1.</bibl></head>
+ <p rend="align(indent)">Ἐπειδή τισιν ἔδοξεν ὁ ψαλμὸς καὶ εἰς Χριστὸν ἀναφέρεσθαι, λεγέσθω καὶ τὰ ἐκείνων. </p>
+<p rend="align(indent)">Πρῶτον μὲν οὖν ἡ ἐπιγραφὴ εἰς ἀνάμνησιν ἡμᾶς ἄγει τοῦ Σαββάτου ἐκείνου τοῦ μεγάλου, ἐν ᾧ ὁ Χριστὸς ὑπὸ γῆν ἐκρύπτετο. </p>
+<p rend="align(indent)">Εἶτα, αὐτὸς τὸ τῆς ἀνθρωπότητος ἀναδεξάμενος πρόσωπον, ἐλεγχθῆναι τὴν φύσιν βούλεται, ἀλλ’ οὐκ ἐν ὀργῇ, πρὸς δὲ ἔλεγχον, τὸν ἐπὶ σωτηρίᾳ, καὶ παιδευθῆναι, ἀλλ’ οὐκ ἐν θυμῷ, ἀλλὰ τὴν ἐν εἴρήνῃ καὶ διὰ λό- γον παιδείαν. </p>
+<p rend="align(indent)">Ὁ Χριστὸς δὲ καὶ τὸν ἐφ’ ἡμᾶς ἔλεγχον καὶ τὴν παιδείαν ἔλαβεν, ὁ αὐτὸς ἐλέγχων μὲν ὡς Θεὸς, ὡς δὲ ἄνθρωπος ἐλεγχόμενος. </p>
+<p rend="align(indent)">Διό φησι πρὸς τὸν Πατέρα· Ὅτι τὰ σὰ βέλη καὶ αἱ πλῆγαι, ὅσας οἱ ἄνθρωποι ὤφειλον, ἐμοὶ ἐνεπάγησαν. Ἐπειδὴ γὰρ ἐγὼ τὰς <pb facs="analectasacrasp01pitrgoog_0393"/> τοῦ γένους ἁμαρτίας ἔλαβον, ἀναγκαίως καὶ τὰς ὑπὲρ αὐτῶν ὑφίσταμαι μάστιγας, καὶ τὴν χεῖρά σου τὴν παιδευτικὴν ἐπ’ ἐμὲ ἐπεστηριγμένην παραιτοῦμαι, καὶ τὴν σὴν, ὧ Πάτερ, ὀργήν. </p>
+<p rend="align(indent)">Ἐὰν γὰρ ἀνομίας παρατηρήσῃς, τίς ὑποστήσεται; τί δὲ τῆς σῆς ὀργῆς ἔσται φάρμακον; Διὰ δὲ τούτων ἀνθρώπων, ἁμαρτίας τὰς πολλἀς καὶ φορτίου παντὸς βαρυτέρας. ἐβάστασα· διὰ ταύτας καὶ τετάραγμαι, ὥστε εἰπεῖν· Νῦν ἡ ψυχή μου τετάρακται. </p>
+<p rend="align(indent)">Καὶ ἡ ἐπιθυμία δὲ πᾶσα ἡ ἁγία ἐνώπιόν σου ἐστι, καὶ σὺ ἐκτήσω τοὺς νεφρούς μου, ἤγουν τοὺς λογισμοὺς, οἷς τοῦ χρησίμου τὸ περιττὸν ἀποκρίνουσιν. </p>
+<p rend="align(indent)">Οἰκειοῦμαι δὲ καὶ τὸ τοῦ Ἰούδα πταῖσμα, ὡς διδάσκαλος μαθητοῦ· καὶ σαπῆναί φημι τοὺς μόλωπάς μου διὰ τὴν ἀγχόνην καὶ τὴν ἀπόγνωσιν. </p>
+<p rend="align(indent)">Καὶ μέντοι ἐταπεινώθην μέχρι θανάτου, θανάτου δὲ σταυροῦ· καὶ ἐστέναζον ἐπὶ τῇ τῶν Ἰουδαίων ἀπωλείᾳ, ὑφ’ ὧν ἐνεπαιζόμην καὶ ἐκολαφιζόμην, καὶ ἡ καρδία πάντως ἐταράχθη, ὅτι σάρξ μου ὄντες καὶ συγγενεῖς κατὰ σάρκα. </p>
+<p rend="align(indent)">Οἱ φίλοι μου καὶ οἱ πλησίον μου ἐξέναντί μου ἤγγισαν καὶ ἔστησαν· καὶ οἱ ἔγγιστά μου ἀπὸ μακρόθεν ἔστησαν. </p>
+<p rend="align(indent)">Οὕτω περὶ ἐμὲ διετέθησαν, ὅτε καὶ ἡ ἰσχύς μου, ὁ στεῤῥὸς Πέτρος ἐγκατέλιπεν ἀρνησάμενός με, καὶ οἱ ἄλλοι μαθηταὶ, πρὸς οὒς ἔλεγον· Ὑμεῖς ἐστὲ τὸ φῶς τοῦ κόσμου, οὐκ ἦσαν μετ’ ἐμοῦ. </p>
+<p rend="align(indent)">Ἀλλὰ καὶ οἱ φιλούμενοί μοι Ἰουδαῖοι, οἱ πλησίον μου, διὰ τὴν πίστιν ἀπόστολοι, ἀπὸ μακρόθεν ἔστησαν, τοὺς ἐπιβουλεύοντας εὐλαβούμενοι. </p>
+<p rend="align(indent)">Καὶ οἱ ζητοῦντες τὴν ψυχήν μου ἐξεβιάζοντο, τὴν περὶ ἐμοῦ δόξαν διὰ φθόνου ὑπορύττοντες. Ἐβούλοντο γὰρ δοκεῖν ὑπὲρ τοῦ νόμου ζηλοῦν. </p>
+<p rend="align(indent)">Διὸ καὶ δολιότητος ἐμελέτησαν, λέγοντες· Τοῦτον εὕρομεν διαστρέφοντα ἔθνος ἡμῶν καὶ κωλύοντα φόρους διδόναι Καίσαρι. Ἐγὼ <pb facs="analectasacrasp01pitrgoog_0394"/> δὲ καὶ συκοφαντούμενος ἐσιώπων, καὶ λόγους μὲν πολλοὺς εἶχον εἰς ἔλεγχον. </p>
+<p rend="align(indent)">Οὐκ ἐφρόντιζον δὲ τῶν ψευδομαρτυρούντων. Σοὶ, Πάτερ, θαῤῥῶ ὡς ἀληθινῷ καὶ ἀδεκάστῳ μάρτυρι, καί γε πρὸς σὲ βοῶ. </p>
+<p rend="align(indent)">Τήρησον τοὺς μαθητὰς ἐν τῷ ὀνόματί σου, μήποτε ἐπιχαρῶσιν οἱ ἐχθροί μου δαίμονες, τοῦ χοροῦ μὴ φυλαχθέντος τῶν ἀποστόλων· μηδὲ μεγαλοῤῥημονήσωσιν Ἰουδαῖοι, ὁρῶντες ἐμοῦ τοὺς πόδας, τοὺς μαθητάς, πρὸς μικρὸν διὰ τὸν σταυρὸν σαλευθέντας, καὶ ἀγνοοῦντας τὸ μυστήριον. </p>
+<p rend="align(indent)">Ὅτι ἐγὼ εἰς μάστιγας ἕτοιμος διὰ τὴν πρὸς ἀνθρώπους συμπάθειαν· ἧς ἕνεκα καὶ τοῦ οἰκείου πάθους ἔχω διὰ παντὸς τὴν ἀνάμνησιν, ἐξ ὧν πέπονθα καὶ τοῖς πειραζομένοις δυνάμενος βοηθεῖν. Ἐγὼ μὲν οὖν τὴν τοῦ γένους ἀνομίαν λογιζόμενος, μεριμνῶ τίνα τρόπον αὐτὴν καθαρῶ. </p>
+<p rend="align(indent)">Οἱ δὲ ἐχθροί μου Ἰουδαοι ζῶσιν, ἐν κακίᾳ δηλονότι καὶ ἀπιστίᾳ; καὶ κατὰ ταύτην κραταιοῦνται, καὶ πληθύνονται οἱ μισοῦντές με ἀδίκως, εἰ καὶ οὐδεμίαν τοῦ μίσους εὔλογον ἔχουσι πρόφασιν. </p>
+<p rend="align(indent)">Καὶ διαβάλλουσί με, διότι ἀγαθωσύνης εἰς αὐτοὺς ἐποίησα τὸ παράδοξον· αἰτιῶνται γὰρ ὅτι τοὺς αὐτῶν ἀῤῥώστους ἐν σαββάτῳ ἐθεράπευσα. </p>
+<p rend="align(indent)">Ἀλλ’, ὦ Πάτερ, μὴ ἐγκαταλίπῃς με· ἐμὲ δὲ λέγων, τὴν τῶν πιστῶν ἐκκλησίαν λέγω, ἧς καὶ τὴν σωτηρίαν οἰκειοῦμαι, ὥσπερ νὖν καὶ τὰ ἁμαρτήματα.</p></div>
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="3">
+    <head xml:lang="lat" rend="align(center)">Psalmus XXXVI</head>
+    <p rend="align(indent)"><label xml:lang="lat">v. 9.</label> Οἱ δὲ πραεῖς κληρονομήσουσιν γῆν. <bibl xml:lang="lat">Vat. 645, 2.</bibl></p>
+<p rend="align(indent)">Οἱ ἀπὸ Οὐαλεντίνου καί τινων ἑτέρων αἱρέσεων, οἰόμενοι τὸν Σωτῆρα λέγειν τὰ μὴ εἰρημένα ἐν τοῖς παλαιοῖς γράμμασιν, ἐντεῦθεν ἐλεγχέσθωσαν, . . . . . . . . ἀκούοντες, ὅτι μακάριοι πραεῖς, ὅτι αὐτοὶ κληρονομήσουσιν τὴν γῆν. Εἴρητο γὰρ τοῦτο καὶ πρότερον διὰ Δαυὶδ ὑπὸ τοῦ αὐτοῦ Πνεύματος.</p></div>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="4">
+    <head xml:lang="lat" rend="align(center)">Psalmus XLIX</head> 
+    <p rend="align(indent)"><label xml:lang="lat">v. 14, 15.</label> Θῦσον τῷ Θεῷ θυσίαν αἰνέσεως, καὶ ἀπόδος τῷ Ὑψίστῳ τάς εὐχάς σου, καὶ ἐπικάλεσαί με ἐν ἡμέρᾳ θλίψεως. <bibl xml:lang="lat">Vat. 654, 2.</bibl> </p>
+<p rend="align(indent)">Θῦσον τῷ Θεῷ τῷ Πατρί. </p>
+<p rend="align(indent)">Καὶ ἀπόδος Ὑψίστῳ τῷ Υἱῷ. </p>
+<p rend="align(indent)">Καὶ ἐπικάλεσαί με τὸ Πνεῦμα τὸ ἄγιον. </p>
+<p rend="align(indent)">Ἄσω καὶ ψαλῶ τῷ Κυρίῳ τῷ Πατρί.</p> <pb facs="analectasacrasp01pitrgoog_0396"/> 
+<p rend="align(indent)">Εἰσάκουσον τῆς φωνῆς μου, τῷ Υἱῷ. </p>
+<p rend="align(indent)">Τὸ πρόσωπόν σου, Κύριε, ἐκζητήσω, τῷ Πνεύματι τῷ ἁγίῳ. </p>
+<p rend="align(indent)">Ἕνεκεν τοῦ ὀνόματός σου, τῷ Πατρί. </p>
+<p rend="align(indent)">Ὑπέμεινεν ἡ ψυχή μου εἰς τὸν Λόγον σου, τῷ Υἱῷ. </p>
+<p rend="align(indent)">Ἤλπισεν ἡ ψυχή μου ἐπὶ τὸν Κύριον, τῷ Πνεύματι τῷ ἁγίῳ. </p>
+<p rend="align(indent)">Τῷ Λόγῳ, τῷ Υἱῷ. </p>
+<p rend="align(indent)">Κυρίου. τοῦ Πατρός. </p>
+<p rend="align(indent)">Καὶ τῷ Πνεύματι τοῦ στόματος αὐτοῦ, τῷ Πνεύματι τῷ ἁγίῳ.</p></div>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="5">
+    <head xml:lang="lat" rend="align(center)">Psalmus CII (<bibl xml:lang="lat">Vat. 689, 2. 690, I</bibl>). </head>
+    <p rend="align(indent)"><label xml:lang="lat">v. 3-5.</label> Τὸν ἰώμενον πάσας τὰς νόσους σου.</p>
+    <p rend="align(indent)">Ἰᾶται τὰς νόσους, ὡς ἰατρὸς τῶν ψυχῶν.</p>
+    <p rend="align(indent)">Τὸν λυτρούμενον ἐκ φθορᾶς τὴν ζωήν σου.</p>
+    <p rend="align(indent)">Λυτροῦται, ὡς βασιλεύς. </p>
+    <p rend="align(indent)">Τὸν στεφανοῦντά σε ἐν ἐλέει. </p>
+    <p rend="align(indent)">Σνεφανοῖ, ὡς ἀγωνοθέτης. </p>
+    <p rend="align(indent)">Τὸν ἐμπιπλῶντα ἐν ἀγαθοῖς. </p>
+    <p rend="align(indent)">Ἐμπίπλησιν ἡμᾶς ἀγαθῶν, ὡς πλούσιος</p></div>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="6">
+    <head xml:lang="lat" rend="align(center)">Psalmus CXV</head> 
+    <p rend="align(indent)"><label xml:lang="lat">v. 1.</label> Ἐπίστευσα, διὸ ἐλάλησα· ἐγὼ δὲ ἐταπεινώθην σφόδρα. </p>
+ <p rend="align(indent)">Ὅλου τοῦ ψαλμοῦ ἐν βραχεῖ ἡ διάνοια· πολλοὶ μὲν οἱ ἐν ἀνθρώποις λόγοι, καὶ πολλὰ <pb facs="analectasacrasp01pitrgoog_0397"/> πολλοῖς πεφιλοσόφηται, ἐξετάζουσι τὰ περὶ ἀληθείας· ἀλλ’ ἐπεὶ χρὴ προοίμιον εἶναι τῆς συνέσεως τῶν τοῦ Θεοῦ τὴν εἰς Θεὸν πίστιν, οἱ μὲν πολλοὶ οὐτ’ ἀληθῆ εἰρήκασιν, ἐγὼ δὲ διὰ τοῦτο ἐλάλησα, ἐπεὶ πρότερον ἐπίστευσα· εἶτα λαλήσας καὶ θεωρήσας καὶ τιμηθεὶς ὑπὸ τοῦ Θεοῦ, ᾧ πεπίστευκα τῷ λόγῳ αὐτοῦ, κατανοήσας τε τὴν ἀληθῆ σοφίαν, καὶ θαυμάσας εἰ ἡ βραχεῖα οὕτως ἀνθρώπου φύσις, τοσούτων ἀξιοῦται δογμάτων καὶ νοημάτων· καὶ συνεὶς ὅσων λογικῶν ἐστιν ζώων ταπεινώτερος ἄνθρωπος, καὶ τὴν αἰτίαν γεγονέναι με ἄνθρωπον, μετὰ τὸ πιστεῦσαι καὶ λαλῆσαι, ἐταπεινώθην· οὐχ ὡς ἔτυχον, ἀλλὰ σφόδρα, αὐτοῦ τοῦ ἀποκαλυφθέντος μοι λόγου πείσαντός με ἐπιπλέον ταπεινωθῆναι. Εἶτα εἰδὼς, μετά τὸν τοῦ Θεοῦ δοῦλον, τοὺς πολλοὺς τῶν ἀνθρώπων λόγους, ἐν οἷς πρότερον ἐδόκουν τι εἶναι σοφὸν καὶ ἀληθὲς, καταπλαγείς καὶ ἐκστὰς ἐπὶ τοῖς παθήμασιν, ἀπεφηνάμην περὶ τῶν ἀνθρωπίνων, αὐτῇ προσβαλὼν ἀληθείᾳ, ὅτι οὐ τινὲς μὲν ἀνθρώπων ἀληθεύουσιν, ἕτεροι δὲ ψεύδονται, ἀλλὰ πάντες ψεύδονται. </p>
+<p rend="align(indent)">Τί οὖν ἀντὶ τούτων δωρεῶν κἀγὼ τῷ Κυρίῳ, ὡς εὐχάριστος, κατὰ δύναμίν μου ἀποδώσω; καὶ ποίᾳ προαιρέσει καὶ τηλικαύτην εἰς ἐμὲ χάριν ἀμείψομαι; Ζητῶν δὴ, ὁδὸν μίαν εὗρὸν, ὡς χρή με ἀμείψασθαι τὸν Θεόν· ἑκὼν γὰρ λήψομαι, μὴ παραιτησάμενος διὰ τὸ ὀχληρὸν, τῶν ἐν τῷ μαρτυρίῳ πόνων τὸ ποτήριον, ὅπερ σωτήριον τυγχάνει· καὶ τοῦτο λαβὼν, καὶ ὁρῶν ὅτι δέομαι δυνάμεως πρὸς τὸ πιεῖν αὐτὸ, ἐπικαλέσομαι τὸ τοῦ Κυρίου ὄνομα, ἵνα δυναμωθῶ· πείθομαι γὰρ τὸν ὑπὲρ εὐσεβείας καὶ ὁσιότητος θάνατον τίμιον εἶναι ἐν ὀφθαλμοῖς Κυρίου.</p></div><pb facs="analectasacrasp01pitrgoog_0398"/>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="7">
+    <head xml:lang="lat" rend="align(center)">Psalmus CXVIII</head> 
+    <p rend="align(indent)"><label xml:lang="lat">v. 1.</label> Μακάριοι οἱ ἄμωμοι ἐν ὁδῷ, οἱ πορευόμενοι ἐν νόμῳ Κυρίου. </p>
+    <p rend="align(indent)">Οὕτω γε στίχος ἐστίν· οἱ γὰρ παρ’ Ἑβραίοις στίχοι, ὡς ἔλεγέ τις, ἔμμετροί εἰσιν· ἐν ἑξαμέτρῳ μὲν ἡ ἐν τῷ Δευτερονομίῳ ᾠδή· ἐν τριμέτρῳ δὲ καὶ τετραμέτρῳ οἱ ψαλμοί. Οἱ στίχοι οὖν, οἱ παρ’ Ἑβραίοις, ἕτεροί εἰσιν παρὰ τοὺς παρ’ ἡμῖν. Ἐὰν θέλωμεν ἐνθάδε τηρῆσαι, τοὺς στίχους ποιοῦμεν· Μακάριοι οἱ ἄμωμοι ἐν ὁδῷ, οἱ πορευόμενοι ἐν νόμῳ Κυρίου. Καὶ οὕτως ἀρχόμεθα δευτέρου τοῦ ἑξῆς. Ἰστέον τοίνυν ὅτι οἱ Ἕλληνες οἱ ἑρμηνεύσαντες πεποιήκασι τὸν παρ’ Ἑβραίοις στίχον ἐν τούτοις δύο (ὡς ὁ τοῦτο ἀντίγραφον γράψας οἱονεὶ πεποίηκε τὴν ἀρχὴν τοῦ στίχου μετ’ ἐκθέσεως)· τὸν δὲ δοκοῦντες δεύτερον, μὴ ὄντα δεύτερον, ἀλλὰ λεῖμμα τοῦ προτέρου μετ’ αἰσθήσεως· καὶ τοῦτο πεποίηκεν ἐπὶ ὅλου τοῦ ῥητοῦ.</p></div>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="8">
+    <head xml:lang="lat" rend="align(center)">Psalmus CXVIII, <label>v. 127.</label> <lb/><foreign xml:lang="grc">Ἔκφρασις τοῦ Τοπαζίου ἐν τῷ ἐπιγεγραμμένῳ· Ξενοκράτους Λιθογνώμων.</foreign></head>
+    <p rend="align(indent)">Περὶ δὲ τοῦ Τοπαζίου λίθου τοιαῦτα εὕρομεν ἱστορούμενα ἐν τῷ ἐπιγεγραμμένῳ Ξενοκράτους <pb facs="analectasacrasp01pitrgoog_0399"/> Λιθογνώμων· Ὅτι γίνεται τῆς Θηβαΐδος περὶ πόλιν Ἀλαβάστρων, καὶ προσαγορεύεται ἀπὸ τοῦ φέροντος αὐτὸν τόπου, Τόπαζον. Τὸ χρῶ[μα] δὲ τοῦ Τοπαζίου πρασοειδὲς καὶ χρυσόχρουν, χρυσοπράσῳ παραπλησίως· κατάμφω δὲ ἐπιτέταται τὰς χρόας κατακορέστερον. Ἔστι δὲ καὶ πυρίχρουν καὶ καθαρὸν ἄγαν καὶ χρυσόχρουν τῷ δὲ μεγέθει καὶ πάντας ὑπεραίρει τοὺς χρυσοπράσ\ους. Ἔστι δὲ καὶ τὸ εἶδος λιπαρὸς, ἑοικὼς καταφλεγομένῳ ὑπὸ ἡλίου. Ἔστι δὲ καὶ ὡραιότατος καθεστηκὼς, καὶ νῦν ἐστιν οὐ πάνυ περισπούδαστος, καὶ ἔλαττον θαυμαζόμενος διὰ τὸ πλῆθος· καίτοι κατὰ τὴν πρώτην εὕρεσιν ἀγαστός τε νενόμισται καὶ περισπούδαστος· φύσιν δὲ ἔχει λιαινόμενον τὸ Τοπάζιον τραχύνεσθαι, καὶ ἐν ταῖς χρείαις μειοῦσθαι· ἔστι δὲ καὶ τῶν λίθων εὔγλυφος.</p></div><pb facs="analectasacrasp01pitrgoog_0400"/>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="9">
+    <head xml:lang="lat" rend="align(center)">Psalmus CXXI.</head>
+    <p rend="align(indent)"><label xml:lang="lat">v. 3.</label> Ἱερουσαλὴμ ᾠκοδομήθη ὡς πόλις ἦς ἡ μετοχὴ ἐπὶ τὸ αὐτό. </p>
+    <p rend="align(indent)">Οὕτω φησίν· Ἦν πάλαι ἡ Ἱερουσαλὴμ, ὡς πόλις οὐ διεσπαρμένη ὧδε (καὶ ὧδε], ἀλλ’ οὕτως ἦν ἡρμοσμένη, ὡς δόξειεν ἄοικος εἶναι τῇ συναφείᾳ καὶ τῇ ἁρμονίᾳ τῶν οἰκοδομημάτων ἢ καὶ λέγει τὸ μέλλον ὡς παρεληλυθὸς, ὡς ἐν τῷ· Διεμερίσαντο τὰ ἱμάτιά μου ἑαυτοῖς, καὶ τό· Ἔδωκαν εἰς τὸ βρῶμά μου χολήν. </p>
+    <p rend="align(indent)">Ἕτεροί φασιν· ὡς ἤδη τῶν πραγμάτων ἀπολαύοντες, τρόπον τινὰ τὴν πόλιν καὶ τὸν ναὸν περιπλέκονται ἃ γὰρ ἔχοντες οὐκ ᾐσθάνοντο, νῦν ἀπολαύοντες εὐφραίνονται· δίκῃ μὲν ἀποβαλόντες, θείᾳ φιλανθρωπίᾳ δὲ κομισάμενοι.</p></div>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="10">
+    <head xml:lang="lat" rend="align(center)">Psalmus CXXV <lb/> <foreign xml:lang="grc">Ἔκφρασις περὶ τοῦ τῷ νότῳ χειμάῤῥου.</foreign></head> 
+    <p rend="align(indent)"><label xml:lang="lat">v. 4.</label> Ἐπίστρεψον, Κύριε, τὴν αἰχμαλωσίαν ἡμῶν, ὡς χειμάῤῥους εν τῷ νότῳ. </p>
+    <p rend="align(indent)">Ὁ χείμαῤῥος οὗτος, περὶ οὗ λέγει ὁ προφήτης, <pb facs="analectasacrasp01pitrgoog_0401"/> ἐν νότῳ ἐστίν ἐντὸς τῆς Ῥινοκορούρας, τις ἐστίν ἀρχὴ τῆς Αἰγύπτου. Τοῦτο οὖν μεμαθήκαμεν παρὰ πλειόνων, καὶ ἡμεῖς γενόμενοι ἐν ταύτῃ τῇ πόλει, αὐτόπται γεγόναμεν τοῦ χειμάῤῥου. Οἱ γὰρ Σαρακηνοὶ κατήρχοντο, ὡς καὶ μέχρι τοῦ νῦν κατέρχονται Ῥινοκόρουραν, καὶ πραιδεύουσιν ἅπερ εὑρίσκουσιν, καὶ ἀνέρχονται εἰς τοὺς τόπους ἑαυτῶν. Ὁ δὲ χείμαῤῥος οὗτος ἐκ τῶν Σαρακηνῶν κατέρχεται· κατὰ βούλησιν οὖν Θεοῦ, ἡνίκα γένηται ὑετὸς λάβρος, πληθύνει ὁ χείμαῤῥος, ὥστε κατέρχεσθαι αὐτὸν σφοδρῶς λαμβάνοντα τὰς σκηνὰς τῶν Σαρακηνῶν, καὶ αὐτοὺς μὲν ἀπόλλυσι, τὰ δὲ αὐτῶν πάντα καὶ ἅπερ διεπράτησαν λαβὼν, φέρει εἰς τὴν Ῥινοκόρουραν. </p>
+    <p rend="align(indent)">Λέγει δὲ ὁ προφήτης, ἐκ προσώπου τῶν πιστευσάντων, ὅτι, ὥσπερ ἐκεῖνος τοὺς μὲν αίχμαλωτίζοντας ἀπόλλυσι, τὰ δὲ σκύλα ἀποκαθίστησιν, ἐξ ὧν καὶ ἐλήφθησαν· οὕτως ποίησον καὶ αὐτὸς, καὶ τὰς ἐναντίας δυνάμεις τὰς ἡμᾶς αἰχμαλωτισάσας θανάτωσον τῷ ὕδατι τοῦ βαπτίσματος· δι’ αὐτοῦ δὲ πάλιν τοῦ ὕδατος ἀπόδος ἡμῖν τὴν δόξαν καὶ τὴν ἐλευθερίαν, ἣν ἀφείλαντο ἡμῖν αἱ τοῦ ἐχθροῦ δυνάμεις. Αὕτη οὖν ἡ διήγησις τῆς ἱστορίας τοῦ χειμάῤῥου, καὶ αὕτη ἡ αἰτία τοῦ εἰρηκέναι τὸν προφήτην.</p></div>
+    
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1664.tlg001.1st1K-grc1" n="11">
+    <head xml:lang="lat" rend="align(center)">De XII Apostolis</head> 
+    <p rend="align(indent)">Τῶν δὲ ἱερῶν τοῦ Σωτῆρος ἡμῶν ἀποστόλων τε καὶ μαθητῶν, ἐφ’ ἅπασαν διασπαρέντων τὴν οἰκουμένην, Θωμᾶς μὲν, ὡς ἡ παράδοσις περιέχει, τὴν Παρθίαν εἴληχεν· <pb facs="analectasacrasp01pitrgoog_0402"/> Ἀνδρέας δὲ τὴν Σκυθίαν· Ἰωάννης τὴν Ἀ- σίαν, πρὸς οὓς καὶ διατρίψας ἐν Ἐφέσῳ τελευτᾷ. Πέτρος δὲ ἐν Πόντῳ καὶ Γαλατίᾳ, καὶ Βιθυνίᾳ, Καππαδοκίᾳ τε καὶ Ἀσίᾳ κεκηρυκέναι τοῖς ἐκ διασπορᾶς Ἰουδαίοις ἔοικεν· ὃς καὶ ἐπὶ τέλει ἐν Ῥώμῃ γενόμενος, ἀνεσκολοπίσθη κατὰ κεφαλῆς, οὕτως αὐτὸς ἀξιώσας παθεῖν. Τί δεῖ περὶ Παύλου λέγειν, ἀπὸ Ἰερουσαλὴμ μέχρι τοῦ Ἰλλυρικοῦ πεπληρωκότος τὸ Εὐαγγέλιον τοῦ Χριστοῦ, καὶ ὕστερον ἐν τῇ Ῥώμῃ ἐπὶ Νέρωνος μεμαρτυρηκότος;</p></div></div></body></text></TEI>
