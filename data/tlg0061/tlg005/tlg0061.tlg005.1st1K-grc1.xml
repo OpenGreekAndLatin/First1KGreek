@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+<title xml:lang="grc">Ὠκύπους</title>
+    <author>Pseudo-Lucian</author>
+    <editor>Karl Jacobitz</editor>
+    <sponsor>Perseus Project, Tufts University</sponsor>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+        <resp>Prepared under the supervision of</resp>
+        <name>Alison Babeu</name>
+        <name>Lisa Cerrato</name>
+    </respStmt>
+    <funder n="org:Tufts">Tufts University</funder>
+</titleStmt>
+    <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <date type="release">2023</date>
+        <idno type="filename">tlg0061.tlg005.1st1K-grc1.xml</idno>
+        <availability>
+            <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+    </publicationStmt>
+    
+    <sourceDesc>
+        <biblStruct>
+            <monogr>
+                <title xml:lang="lat">Luciani Samosatensis Opera</title>
+                <author>Lucian</author>
+                <editor>Karl Jacobitz</editor>
+                <imprint>
+                    <publisher>Teubner</publisher>
+                    <pubPlace>Leipzig</pubPlace>
+                    <date>1913</date>
+                </imprint>
+                <biblScope unit="volume">3</biblScope>
+            </monogr>
+            <ref target=" https://archive.org/details/operaexrecogniti03luciuoft/page/454/mode/2up">Internet Archive</ref>
+        </biblStruct>
+    </sourceDesc>
+</fileDesc>
+     
+     <encodingDesc>
+         <editorialDecl>
+             <correction cert="medium">
+                 <p>Greek produced via Lace v. 0.6.22 copyright 2013-2021, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                 <p>Needs further proofreading refinement. Oddities in OCR capture include ζ/ξ confusion, χ/κ confusion, capitalization errors, missed hyphenization at line breaks and page breaks, word transposition after em dashes, punctuation confusion where comma is read as period and Greek semi-colon is misread.</p>
+             </correction>
+         </editorialDecl>
+         
+         <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+         
+         <refsDecl n="CTS">
+             <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+                 <p>This pointer pattern extracts line</p>
+             </cRefPattern>
+         </refsDecl>
+     </encodingDesc>
+     
+     <profileDesc>
+         <langUsage>
+             <language ident="grc">Greek</language>
+         </langUsage>
+     </profileDesc>
+     
+     <revisionDesc>
+         <change who="Lisa Cerrato" when="2023-07-17">File creation, initial OCR editing, EpiDoc and CTS conversion.</change>  </revisionDesc>
+ </teiHeader>
+   
+<text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1" xml:lang="grc">
+<pb facs="operaexrecogniti03luciuoft_0491"/>
+<l n="0" rend="align(indent)">Ὠκύπους Ποδαλειρίου καὶ Ἀστασίας υἱὸς ἐγένετο, κάλλει καὶ δυνάμει διαφέρων, γυμνασίων τε καὶ κυνηγεσίων μὴ ἀμελῶν. πολλάκις δὲ θεωρῶν τοὺς ἐχομένους ὑπὸ τῆς ἀτέγκτου Ποδάγρας κατεγέλα φάσκων μηδὲν ὅλως εἶναι τὸ πάθος. ἡ θεὸς τοίνυν ἀγανακτεῖ καὶ διὰ ποδῶν εἰστρέχει. τοῦ δ’ εὐτόνως φέροντος καὶ ἀρνουμένου, ὕπτιον ὅλως τίθησιν ἡ θεός. ἡ μὲν σκηνὴ τοῦ δράματος ὑπόκειται ἐν Θήβαις· ὁ δὲ χορὸς συνέστηκεν ἐξ ἐπιχωρίων ποδαγρῶν. συνελεγχόντων τὸν Ὠκύπουν. τὸ δὲ δρᾶμα τῶν πάνυ ἀστείων. τὰ τοῦ δράματος πρόσωπα Ποδάγρα. Ὠκύπους, Τροφεύς, Ἰατρός, Πόνος, Ἄγγελος. προλογίζει δὲ ἡ Ποδάγρα.</l>
+
+<sp><speaker>Ποδάγρα</speaker>
+    <l n="1" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1"> <milestone unit="Reitz_page" n="665"/> Δεινὴ μὲν ἐν βροτοῖσι καὶ δυσώνυμος</l>
+<l n="2">Ποδάγρα κέκλημαι, δεινὸν ἀνθρώποις πάθος,</l>
+<l n="3">δεσμῶ δὲ νευρίνοισι τοὺς πόδας βρόχοις,</l>
+<l n="4">ἄρθροισιν εἰσδραμοῦσα μὴ νοουμένη.</l>
+<l n="5" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">γελῶ δὲ τοὺς πληγέντας ὑπ’ ἐμοῦ * *</l>
+<l n="6">καὶ μὴ λέγοντας ἀτρεκῆ τῆς συμφορᾶς,</l>
+<l n="7">ἀλλ’ εἰς ματαίαν πρόφασιν ἐξησκημένους.</l>
+<l n="8">ἅπας γὰρ αὑτὸν βουκολεῖ ψευδοστομῶν,</l>
+<l n="9">ὡς ἐνσεσεικὼς ἢ προκόψας ποι βάσιν</l>
+<l n="10" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">λέγει φίλοισι, μὴ φράσας τὴν αἰτίαν·</l>
+<l n="11">ὃ μὴ λέγει γάρ, ὡς δοκῶν λαθεῖν τινας,</l>
+<l n="12">χρόνος δέ γ’ ἕρπων μηνύει, κἂν μὴ θέλῃ.</l>
+<l n="13">καὶ τότε δαμασθείς, ὀνομάσας μου τοὔνομα,
+<pb facs="operaexrecogniti03luciuoft_0492"/></l>
+<l n="14">πᾶσιν θρίαμβος ἐμβεβάστακται φίλοις.</l>
+<l n="15" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Πόνος δὲ μοι συνεργός ἐστι τῶν κακῶν· </l>
+<l n="16">ἐγὼ γὰρ οὐδέν εἰμι τούτου δίχα μόνη.</l>
+<l n="17">τοῦτ’ οὖν δάκνει μὲ καὶ φρενῶν καθάπτεται,</l>
+<l n="18">ὅτι τὸν ἅπασιν αἴτιον Πόνον κακῶν</l>
+<l n="19">οὐδεὶς κακούργοις λοιδορεῖ βλασφημίαις,</l>
+<l n="20" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ἀλλὰ κατ’ ἐμοῦ πέμπουσι δυσφήμους ἀρὰς </l>
+<l n="21">ὡς δεσμὸν ἐλπίζοντες ἐκφυγεῖν ἐμόν.</l>
+<l n="22">τί ταῦτα φλυαρῶ κοὺ λέγω τίνος χάριν</l>
+<l n="23">πάρειμι μὴ φέρουσα τὴν ἐμὴν χολήν;</l>
+<l n="24">ὁ γὰρ δόλον γενναῖος, ὁ θρασὺς Ὠκύπους</l>
+<l n="25" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">φρονεῖ καθ’ ἡμῶν μηδὲν εἶναί μέ τι λέγων. </l>
+<l n="26">ἐγὼ δ’ ὑπ’ ὀργῆς ὡς γυνὴ δεδηγμένη  <milestone unit="Reitz_page" n="666"/></l>
+<l n="27">ἀντέδακα τοῦτον ἀθεράπευτον εὐστόχως,</l>
+<l n="28">ὡς ἦν ἔθος μοι κονδύλου ποδὸς τυχεῖν.</l>
+<l n="29">ἤδη δ’ ὁ δεινὸς Πόνος ἔχει λεπτὸν τόπον</l>
+<l n="30" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">καὶ τὴν βάσιν νυγμοῖσι τρυπᾷ τὴν κάτω. </l>
+<l n="31">ὁ δ’ ὡς δρόμοισιν ἢ πάλῃ πλήξας ἴχνος</l>
+<l n="32">πλανᾷ γέροντα παιδαγωγὸν ἄθλιον.</l>
+<l n="33">καὶ κλεψίχωλον πόδα τιθεὶς ἰχνευμένον</l>
+<l n="34">δύστηνος αὐτὸς ἐκ δόμων προσέρχεται.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="35" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Πόθεν δ’ ὁ δεινὸς κατὰ ποδῶν οὗτος παρῆν </l>
+<l n="36">ἀτραυμάτιστος, ἄβατος, ἄστατος πόνος;</l>
+<l n="37">τείνει δὲ νεῦρον οἷα τοξότης ἀνὴρ</l>
+<l n="38">βέλος προπέμπων καὶ στένειν βιάζεται·</l>
+<l n="39">τὸ τῶν πονούντων ἔσχατον στοιχεῖ χρόνῳ.</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="40" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Ἔπαιρε σαυτόν, ὦ τέκνον, καὶ κούφισον. </l>
+<l n="41">μή πῶς με πίπτων καταβάλῃς σὺ χωλὸς ὦν.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="42">Ἰδού, κρατῶ σε δίχα βάρους καὶ πείθομαι  <milestone unit="Reitz_page" n="667"/></l>
+<l n="43">καὶ τὸν πονοῦντα πόδα τιθῶ καὶ καρτερῶ·</l>
+<l n="44">νεωτέρῳ γὰρ αἶσχος ἐν παισὶν ἀεὶ</l>
+<l n="45" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ὑπηρέτης ἀδύνατος γογγύζων γέρων. </l></sp>
+<pb facs="operaexrecogniti03luciuoft_0493"/>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="46">Μὴ μὴ σὺ ταῦτα, μωρέ, μή με κερτομει,</l>
+<l n="47">μή μ’ ὡς νέος κόμπαξε, τοῦτ’ εἰδὼς ὅτι</l>
+<l n="48">ἐν ταῖς ἀνάγκαις πᾶς γέρων ἐστὶν νέος.</l>
+<l n="49">πείθου λέγοντι· τὸ πέρας ἂν ὑποσπάσω,</l>
+<l n="50" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ἔστην ὁ πρέσβυς, σὺ δ’ ὁ νέος πίπτεις χαμαί.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="51">Σὺ δ’ ἂν σφαλῇς, πέπτωκας ἄπονος ὢν γέρων.</l>
+<l n="52">προθυμία γὰρ ἐν γέρουσι παρέπεται,</l>
+<l n="53">πρᾶξις δὲ τούτοις οὐκέτ’ ἐστὶν εὔτονος.</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="54">Τί μοι σοφίζῃ. κοὺ λέγεις οἵῳ τρόπῳ</l>
+<l n="55" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">πόνος προσῆλθε σοῦ ποδὸς κοίλην βασιν;</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="56">Δρόμοισιν ἀσκῶν, κοῦφον ὡς τιθῶ πόδα,</l>
+<l n="57">τρέχων ἔτεινα. καὶ συνεμμίχθην πόνῳ.</l></sp>
+
+<sp><speaker>Τροφεύς</speaker>
+<l n="58"> <milestone unit="Reitz_page" n="668"/> Πάλιν τρέχ᾿, ὡς τις εἶπεν, ὃς καθήμενος</l>
+<l n="59">πώγωνα τίλλει χουριῶν ὑπ’ ὠλέναις.</l></sp>
+   
+<sp><speaker>Ὠκύπους</speaker>
+<l n="60" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Οὐκοῦν παλαίων ὡς θέλων παρεμβολὴν</l>
+<l n="61">βαλεῖν ἐπλήγην. τοῦτο δὴ πίστευέ μοι.</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="62">Ποῖος στρατιώτης γέγονας, ἵνα παρεμβολὴν</l>
+<l n="63">βαλὼν σὺ πληγῇς; περικυκλεῖς ψευδῆ λόγον.</l>
+<l n="64">τὸν αὐτὸν ἡμεῖς εἴχομεν λόγον ποτὲ</l>
+<l n="65" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">μηδενὶ λέγοντες τὴν ἀλήθειαν φίλων.</l>
+<l n="66">νῦν δ’ εἰσορᾷς ἅπαντας ἐξ . . . . .</l>
+<l n="67">ὁ πόνος δ’ ἑλίξας ἐμμελῶς διαστρέφει.</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="68">Ποῖ ποῖ καθεύρω κλεινὸν Ὠκύπουν, φίλοι,</l>
+<l n="69">τὸν πόδα πονοῦντα καὶ βάσιν παρειμένον;</l>
+<l n="70" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ἰατρὸς ὢν γὰρ ἔκλυον ὑπὸ φίλου τινὸς</l>
+<l n="71">πάσχοντα δεινὰ τοῦτον ἀστάτῳ πάθει.</l>
+<l n="72">ἀλλ’ αὐτὸς οὗτος ἐγγὺς ὀμμάτων ἐμῶν</l>
+<l n="73">κεῖται κατ’ εὐνῆς ὕπτιος βεβλημένος.</l>
+<l n="74">ἀσπάζομαί σε πρὸς θεῶν, καὶ σὸν πάθος</l>
+<l n="75" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">τί τοῦτο; λέξον, Ὠκύπου, τάχ’, ὡς μάθω</l>
+<l n="76"> <milestone unit="Reitz_page" n="669"/> εἰ γὰρ μάθοιμι, τυχὸν ἴσως ἰάσομαι</l>
+<pb facs="operaexrecogniti03luciuoft_0494"/>
+<l n="77">τὸ δεινὸν ἄλγος, τοῦ πάθους τὴν συμφορᾶν.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="78">Ὁρᾷς με, Σωτὴρ καὶ πάλιν Σωτήριχε,</l>
+<l n="79">σάλπιγγος αὐτῆς ὄνομ’ ἔχων Σωτήριχε,</l>
+<l n="80" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">δεινὸς πόνος μὲ τοῦ ποδὸς δάκνει κακῶς, </l>
+<l n="81">δειλὸν δὲ βῆμα κοὐχ ἁπλοῦν τιθῶ ποδί.</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="82">Πόθεν; τί παθών; μήνυσον, ἢ ποίῳ τρόπῳ;</l>
+<l n="83">μαθὼν ἀλήθειαν γὰρ ἰατρὸς ἀσφαλῶς</l>
+<l n="84">κρεῖττον πρόσεισι, σφάλλεται δὲ μὴ μαθών.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="85" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Δρόμον τιν’ ἀσκῶν καὶ τέχνην γυμναστικὴν </l>
+<l n="86">δεινῶς ἐπλήγην ὑπὸ φίλων ὁμηλίκων.</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="87">Πῶς οὖν ἀηδὴς οὐ πάρεστι φλεγμονὴ</l>
+<l n="88">τόπου κατ’ αὐτοῦ κοὐκ ἔχεις τιν’ ἐμβροχήν;</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="89">Οὐ γὰρ στέγω τὰ δεσμὰ τῶν ἐριδίων,</l>
+<l n="90" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">εὐμορφίαν ἄχρηστον εἰς πολλοὺς καλήν. </l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="91">Τί οὖν δοκεῖ σοι; κατακνήσω σου τὸν πόδα;</l>
+<l n="92">ἂν γὰρ παράσχῃς μοί σε, γιγνώσκειν σε χρή,</l>
+<l n="93">ὡς ταῖς τομαῖσι πλεῖστον αἷμά σου κενῶ.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="94">Ποίησον εἴ τι καινὸν ἐξευρεῖν ἔχεις,</l>
+<l n="95" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ἵν᾿ εὐθὺ δεινὸν ἐκ ποδῶν παύσῃς πόνον. </l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="96">Ἰδού, σιδηρόχαλκον ἐπιφέρω τομήν.  <milestone unit="Reitz_page" n="670"/></l>
+<l n="97">ὀξεῖαν, αἱμόδιψον, ἡμιστρόγγυλον.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="98">Ἔα, ἔα.</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="99">Σῶτερ, τί ποιεῖς; μὴ τύχοις σωτηρίας.</l>
+<l n="100" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">τολμᾷς σιδηρόσπαρτον ἐπιβαλεῖν πόνον; </l>
+<l n="101">μηδὲν κατειδὼς προσφέρεις κακὸν ποσί.</l>
+<l n="102">ψευδεῖς γὰρ ἔκλυες ὧν ἀκήκοας λόγων.</l>
+<l n="103">οὐ γὰρ πάλαισιν ἢ δρόμοισιν, ὡς λέγει,</l>
+<l n="104">ἀσκῶν ἐπλήγη. τοῦτο γοῦν ἄκουέ μου.</l>
+<l n="105" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ἦλθεν μὲν οὖν τὸ πρῶτον ὑγιὴς ἐν δόμοις, </l>
+<l n="106">φαγὼν δὲ πολλὰ καὶ πιὼν ὁ δυστυχὴς</l>
+<l n="107">κλίνης ὕπερθε καταπεσὼν ὑπνοῖ μόνος·</l>
+<l n="108">ἔπειτα νυκτὸς διυπνίσας ἐχραύγασεν</l>
+<pb facs="operaexrecogniti03luciuoft_0495"/>
+<l n="109">ὡς δαίμονι πληγείς, καὶ φόβος πάντας λάβεν.</l>
+<l n="110" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ἔλεξε δ’, Οἴμοι, πόθεν ἔχω κακὴν τύχην;</l>
+<l n="111">δαίμων τάχα κρατῶν τις ἐξωθεῖ ποδός.</l>
+<l n="112">πρὸς ταῦτα νυκτὸς ἀνακαθήμενος μόνος</l>
+<l n="113">ὁποῖα κῆρυξ ἐξεθρήνει τὸν πόδα.</l>
+<l n="114">ἐπεὶ δ’ ἀλέκτωρ ἡμέραν ἐσάλπισεν,</l>
+<l n="115" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">οὗτος προσῆλθε χεῖρα θεὶς ἐμοὶ πικρὰν</l>
+<l n="116">θρηνῶν πυρέσσων ἐπ’ ἐμοὶ βάζων * * *</l>
+<l n="117">ἃ πρὶν δὲ σοὶ κατεῖπε, πάντ’ ἐψεύσατο.</l>
+<l n="118">τὰ δεινὰ κρύπτων τῆς νόσου μυστήρια.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="119">Γέρων μὲν αἰεὶ τοῖς λόγοις ὁπλίζεται</l>
+<l n="120" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">καυχώμενος τὰ πάντα, μηδὲ ἓν σθένων.</l>
+<l n="121">ὁ γὰρ πονῶν τι καὶ φίλοις ψευδὴ λέγων</l>
+<l n="122"> <milestone unit="Reitz_page" n="671"/> πεινῶντ’ ἔοικε μαστίχην μασωμένῳ.</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="123">Πλανᾷς ἅπαντας, ἄλλα δ’ ἐξ ἄλλων λέγεις,</l>
+<l n="124">λέγων πονεῖν μέν, ὃ δὲ πονεῖς οὔπω λέγεις.</l></sp>
+    
+    <sp><speaker>Ὠκύπους</speaker>
+ <l n="125">Πῶς οὖν φράσω σοι τοῦ πάθους τὴν συμφοράν;</l>
+<l n="126">πάσχων γὰρ οὐδὲν οἶδα, πλὴν πονῶ μόνον.</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="127">Ὅταν ἀφορμῆς δίχα πονῇ τις τὸν πόδα,</l>
+<l n="128">πλάσσει τὸ λοιπὸν οὓς θέλει κενοὺς λόγους</l>
+<l n="129">εἰδὼς τὸ δεινὸν ᾧ συνέζευκται κακῷ.</l>
+<l n="130" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">καὶ νῦν μὲν ἀκμὴν εἷς . . . . .</l>
+<l n="131">ἐπὰν δὲ καὶ τὸν ἕτερον ἀλγήσῃς πόδα,</l>
+<l n="132">στένων δακρύσεις. ἓν δέ σοι φράσαι θέλω·</l>
+<l n="133">τοῦτ’ ἔστ’ ἐχεῖνο, Κἂν θέλῃς, κἂν μὴ θέλῃς.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="134">Τί δ’ ἔστ’ ἐκεῖνο γ’, εἰπέ, καὶ τί κλῄζεται;</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+  <l n="135" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Ἔχει μὲν ὄνομα συμφορᾶς γέμον διπλῆς.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="136">Οἴμοι. τί τοῦτο; λέξον, ὦ, δέομαι, γέρον.</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="137">Ἐκ τοῦ τόπου μὲν οὗ πονεῖς ἀρχὴν ἔχει.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="138">Ποδὸς μὲν ἀρχὴν ὄνομ’ ἔχει, καθὼς λέγεις;</l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="139">Τούτῳ σὺ πρόσθες ἐπὶ τέλει δεινὴν ἄγραν.</l></sp>
+    
+<pb facs="operaexrecogniti03luciuoft_0496"/>
+<sp><speaker>Ὠκύπους</speaker>
+<l n="140" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Καὶ πῶς με τὸν δύστηνον ἔτι . . . . </l></sp>
+    
+<sp><speaker>Τροφεύς</speaker>
+<l n="141">Ζεινή περ οὖσα. φείδεται γὰρ οὐδενός.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="142">Σωτήρ, τί λέγεις; τί δέ με . . . . . ;  <milestone unit="Reitz_page" n="672"/></l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="143">Ἄφες με μικρόν ἠλόγημαι σοῦ χάριν.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="144">Τί δ’ ἔστι δεινὸν ἢ τί συμβέβηκέ μοι;</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="145" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Εἰς δεινὸν ἦλθες πόνον ἀχώριστον ποδός. </l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="146">Οὐκοῦν με δεῖ πρόχωλον ἐξαντλεῖν βίον;</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="147">Χωλὸς μὲν ἂν ᾖς, οὐδέν ἐστι, μὴ φοβοῦ.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="148">Τί δ’ ἔστι χεῖρον;</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="149">Ἀμφοῖν ποδοῖν σε συμποδισθῆναι μένει.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="150" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">Οἴμοι. πόθεν μοι καινὸς εἰσῆλθεν πόνος </l>
+<l n="151">ποδὸς δι᾿ ἄλλου. καί με συμπάσχει κακῶς;</l>
+<l n="152">ἢ πῶς ὅλος πέπηγα μεταβῆναι θέλων;</l>
+<l n="153">δειλαίνομαι δὲ πολλὰ μεταστῆσαι πόδα,</l>
+<l n="154" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">νήπιος, ὁποῖα βρέφος ἄφνω φοβούμενος. </l>
+<l n="155">ἀλλ’ ἄντομαί σε πρὸς θεῶν, Σωτήριχε,  <milestone unit="Reitz_page" n="673"/></l>
+<l n="156">εἴπερ τι τέχνη σὴ δύναται, μηδὲν φθονῶν</l>
+<l n="157">θεράπευσον ἡμᾶς, εἰ δὲ μή, διοίχομαι·</l>
+<l n="158">πάσχω γὰρ ἀφανῶς, κατὰ ποδὼν τοξεύομαι.</l></sp>
+    
+<sp><speaker>Ἰατρός</speaker>
+<l n="159">Τοὺς μὲν πλανήτας περιελὼν λόγους ἐγώ,</l>
+<l n="160" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">τοὺς τῶν ἰατρῶν τῶν ὁμιλούντων μόνον, </l>
+<l n="161">ἔργῳ δὲ μηδὲν εἰδότων σωτήριον.</l>
+<l n="162">τὰ πάντα σοι πάσχοντι συντόμως φράσω.</l>
+<l n="163">ἄφευκτον ἦλθες πρῶτον ἐς βάθος κακῶν·</l>
+<l n="164">οὐ γὰρ σιδηρόπλαστον ὑπεδύσω βάσιν,</l>
+<l n="165" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">ὃ τοῖς κακούργοις εὑρέθη τεκμήριον. </l>
+<l n="166">δεινὴν δὲ καὶ κρυφαῖον εἰς πάντας κάκην,</l>
+<l n="167">ἧς οὐκ ἂν ἂραιτ’ ἄχθος ἀνθρώπων φύσις.</l></sp>
+    
+<sp><speaker>Ὠκύπους</speaker>
+<l n="168">Αἰαῖ αἰαῖ, οἴμοι οἴμοι.</l>
+<l n="169">πόθεν μὲ τρυπᾷ τὸν πόδα κρυπτὸς πόνος;</l>
+<l n="170" xml:base="urn:cts:greekLit:tlg0061.tlg005.1st1K-grc1">δέξασθε χεῖρας τὰς ἐμὰς πρὸ τοῦ πεσεῖν, </l>
+<l n="171">ὁποῖα Σάτυροι Βακχίους ὑπ’ ὠλένας.</l></sp>
+    
+<pb facs="operaexrecogniti03luciuoft_0497"/>
+<sp><speaker>Τροφεύς</speaker>
+<l n="172">Γέρων μέν εἰμι, πλὴν ἰδού, σοὶ πείθομαι,</l>
+<l n="173">καὶ τὸν νέον σὲ χειραγωγῶ πρέσβυς ὤν.</l>
+</sp></div>
+
+
+</body></text></TEI>
