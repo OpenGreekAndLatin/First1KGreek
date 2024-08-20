@@ -5,22 +5,94 @@
     <teiHeader xml:lang="eng">
         <fileDesc>
             <titleStmt>
-                <title xml:lang="eng">Outlines of Pyrrhonism</title>
-                <author xml:lang="eng">Sextus Empiricus</author>
+                <title>Outlines of Pyrrhonism (Vol. 1)</title>
+                
+                <author xml:lang="lat">Sextus Empiricus</author>
                 <editor role="translator">Robert Gregg Bury</editor>
                 <funder>Tisch Library, Tufts University</funder>
+                
                 <respStmt>
-                <resp>Tisch Library, Tufts University</resp>
-                <orgName>Tufts University</orgName>  
-                <resp>William Roush</resp>
-                <resp>Gregory Crane</resp>
-                <resp>Micah Saxton</resp>
-                <resp>Allison Babeu</resp>
-                <resp>Lisa Cerrato</resp>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName>
+                </respStmt>
+                
+                <respStmt>
+                    <persName>William Roush</persName>
+                    <orgName>Tufts University</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
                 </respStmt>
             </titleStmt>
-        </fileDesc>
+                
+                <publicationStmt>
+                    <publisher>Trustees of Tufts University</publisher>
+                    <publisher>Open Greek and Latin</publisher>
+                    <pubPlace>Medford, MA</pubPlace>
+                    <authority>Perseus Digital Library</authority>
+                    <date when="2024-09-01"/>
+                    <idno type="filename">tlg0544.tlg001.1st1K-eng1.xml</idno>
+                    <availability>
+                  <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                  </availability>
+                </publicationStmt>
+                
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author xml:lang="lat">Sextus Empiricus</author>
+                        <title>Outlines of Pyrrhonism</title>
+                        <editor role="translator">Robert Gregg Bury</editor>                    
+                        <imprint>
+                            <pubPlace>London</pubPlace>
+                            <publisher>William Heinemann Ltd.</publisher>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>G. P. Putnam's Sons</publisher>
+                            <date type="printing">1933</date>
+                        </imprint>
+                        <biblScope unit="volume">1</biblScope>
+                    </monogr> 
+                    <series>
+                        <title>Loeb Classical Library</title>
+                    </series>
+                    <ref target="https://archive.org/details/in.ernet.dli.2015.183761/page/2/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc>
+</fileDesc>
+        
+        <encodingDesc>
+            <editorialDecl><p>Volume 1 only.</p></editorialDecl>
+            
+            <refsDecl n="CTS">
+            <cRefPattern matchPattern="(\w+).(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2']/tei:div[@n='$3'])">
+            <p>This pointer pattern extracts book, chapter, and section.</p></cRefPattern>
+                <cRefPattern matchPattern="(\w+).(\w+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                    <p>This pointer pattern extracts book and chapter.</p></cRefPattern>
+                <cRefPattern matchPattern="(\w+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts book.</p></cRefPattern>
+            </refsDecl>
+        </encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2024-08" who="Lisa Cerrato">Header review, markup review, CTS and EpiDoc review for compliance.</change>
+            <change when="2024-08" who="William Roush">???</change>
+        </revisionDesc>
+        
     </teiHeader>
+    
 <text>
 <div type="textpart" subtype="Book" n="1">
 
