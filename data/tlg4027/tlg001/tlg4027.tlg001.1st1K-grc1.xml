@@ -90,7 +90,7 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
               <refsDecl n="CTS">
-                <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+                <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
 
@@ -3312,10 +3312,7 @@
                             ἐπίκτητα) 0111. M 14 αὐτὰ Simpl.: αὐτὸς libri 15 τὰ (ante μέρη) om.
                             M</note>
                     </div>
-                
-            </div>
-            <div type="commentary" n="1">
-                <div type="commentary" subtype="index" n="1">
+                <div type="textpart" subtype="chapter" n="index_verb">
                     <pb n="73"/>
                     <head>INDICES</head>
                     <pb n="75"/>
@@ -4147,7 +4144,7 @@
                     <p>ὠχρίασις 50,28</p>
                 </div>
 
-                <div type="commentary" subtype="index" n="2">
+                <div type="textpart" subtype="chapter" n="index_names">
                     <pb n="86"/>
                     <head>II INDEX NOMINUM</head>
                     <p>Ἄγριος ὁ παρ᾿ Ὁμήρῳ 3,18.21</p>
@@ -4189,7 +4186,7 @@
                     <p>Ὑμηττός 26,11. 14</p>
                 </div>
 
-                <div type="commentary" subtype="addenda" n="3">
+                <div type="textpart" subtype="chapter" n="addenda">
                     <pb n="87"/>
                     <head>ADDENDA ET CORRIGENDA</head>
                     <p>p. 3,30 καὶ om. Simplicius</p>
@@ -4204,7 +4201,7 @@
                     <p>p. 57,17 μετὰ τὴν ἥβην Simplicius</p>
                 </div>
 
-                <div type="commentary" subtype="preface" n="4">
+                <div type="textpart" subtype="chapter" n="commentary">
                     <head>COMMENTARIA IN ARISTOTELEM GRAECA</head>
                     <head>EDITA CONSILIO ET AUCTORITATE</head>
                     <head>ACADEMIAE LITTERARUM REGIAE BORUSSICAE</head>
