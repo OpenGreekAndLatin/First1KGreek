@@ -89,7 +89,7 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
             <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
         
@@ -12292,10 +12292,10 @@ coUoc. Ma 26 ἢ] καὶ a τε om. a 27 καὶ om. F alt. δὲ om. a
 ἀληθεύειν M 32 τὰ ἐναντία om. a</note>
 </div>
 
-<div type="commentary" subtype="index">
+        <div type="textpart" subtype="book" n="indices">      
 <pb n="273"/>
 <head>INDICES</head>
-
+        <div type="textpart" subtype="section" n="index_verb">
 <pb n="275"/>
 <head>I INDEX VERBORUM</head>
 <p>Verba asterisco notata desiderantnr in lexicis.</p>
@@ -15974,10 +15974,10 @@ dist. αἱ φωναί 22,9.21 φωναὶ ἁπλαῖ
 198,25 ὡς εἰ λέγοιμεν 199,5 208,24</p>
 <p>ὡσαύτως expl. 85,20.21</p>
 <p>ὥσπερ quasi 18,29 244,16</p>
-<p>ὤψ. τοὺς ὦπας 38,13</p>
-</div>
+<p>ὤψ. τοὺς ὦπας 38,13</p></div>
 
-<div type="commentary" subtype="index.2">
+
+<div type="textpart" subtype="section" n="index_names">
 <pb n="312"/>
 <head>II INDEX NOMINUM</head>
 <p>Ἀγαμέμνων 270,3</p>
@@ -16443,7 +16443,7 @@ in οὐδείς) 96,6 πότε δὲ ἔστιν εἶναι τὰ
 <p>Φοῖνιξ. Φοίνικες 19,14</p>
 </div>
 
-<div type="commentary" subtype="loci">
+<div type="textpart" subtype="section" n="plato_cit">
 <pb n="317"/>
 <head>LOCI PLATONICI</head>
 <p>Phaedo.</p>
@@ -16572,7 +16572,7 @@ in οὐδείς) 96,6 πότε δὲ ἔστιν εἶναι τὰ
 <p>frg. 49 (p. 55 Rose) . . . 242,35</p>
 </div>
 
-<div type="commentary" subtype="addenda">
+<div type="textpart" subtype="section" n="addenda">
 <pb n="855"/>
 <head>CORRIGENDA ET ADDENDA</head>
 <p>p, 54,9 corrige εἰδικώτερον et adde notam: εἰδικώτερον scripsi: ἰδικώτερον libri
@@ -16581,7 +16581,7 @@ in οὐδείς) 96,6 πότε δὲ ἔστιν εἶναι τὰ
 p. 186,4).</p>
 <p>p. 267,1 not. corrigas: ἐνεργείας libri.</p>
 </div>
-</div>
+</div></div>
 
 </body>
   </text>

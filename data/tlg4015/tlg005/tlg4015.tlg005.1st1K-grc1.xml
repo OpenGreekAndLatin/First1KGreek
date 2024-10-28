@@ -89,8 +89,8 @@
    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE
     Architecture.</p>
      <refsDecl n="CTS">
-    <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+    <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+    <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
    </refsDecl>
   </encodingDesc>
 
@@ -4883,9 +4883,10 @@
      </div>
     </div>
 
-    <div type="commentary" subtype="index">
+    <div type="textpart" subtype="book" n="indices">
      <pb n="133"/>
      <head>INDICES</head>
+     <div type="textpart" subtype="section" n="index_verb">
      <pb n="135"/>
      <head>I INDEX VERBORUM</head>
      <p>Verba asterisco notata desiderantur in lexicis</p>
@@ -6172,7 +6173,7 @@
      <p>ὥρα ἔτους) 127,17 ἡμέρας) 128,16. 18</p>
     </div>
 
-    <div type="commentary" subtype="index.2">
+    <div type="textpart" subtype="section" n="index_names">
      <pb n="152"/>
      <head>II INDEX NOMINUM</head>
      <p>Ἅιδης ὁ ἐν οὐρανῷ 117,11. 32. 33</p>
@@ -6292,7 +6293,7 @@
       96,21.35</p>
     </div>
 
-    <div type="commentary" subtype="iii_loci">
+    <div type="textpart" subtype="section" n="plato_cit">
      <pb n="155"/>
      <head>III LOCI PLATONICI</head>
      <p>Cratylus p. 397 C . . . . 17,38 p. 404 C . . . 117,39 118,1 sqq. p. 410 B . . . . 17,37</p>
@@ -6301,7 +6302,7 @@
       . . 38,6</p>
     </div>
 
-    <div type="commentary" subtype="iv_loci">
+    <div type="textpart" subtype="section" n="aristotle_cit">
      <head>IV LOCI ARISTOTELICI</head>
      <p>Physica generaliter . . . . 2,18 3,28 A 4 . . . . . . 35,19</p>
      <p>De caelo</p>
@@ -6321,7 +6322,7 @@
       ἀναμνήσεως καὶ τῆς καθ’ ὕπνον μαντικῆς . . . . . . . . . 9,13 sqq.</p>
     </div>
 
-    <div type="commentary" subtype="addenda">
+   <div type="textpart" subtype="section" n="addenda">
      <pb n="156"/>
      <head>ADDENDA ET CORRIGENDA</head>
      <p>p. 4.19 non τοῖς sed τῆς legendum et in notis addendum τῆς V: τοῖς Ma</p>
@@ -6332,7 +6333,7 @@
      <p>p. 104,28 καὶ ταύτην recte coni. Ideler</p>
     </div>
 
-    <div type="commentary" subtype="preface">
+   <div type="textpart" subtype="section" n="preface">
      <pb n="v"/>
      <head>PRAEFATIO</head>
      <p>Philoponi commentaria in libros De generatione et corvuptione graece eclidit Aldus e codice
@@ -6356,7 +6357,7 @@
      <p>m. Martio a. MDCCCXCVII. Η. Vitelli</p>
     </div>
 
-    <div type="commentary" subtype="conspectus">
+    <div type="textpart" subtype="section" n="summary">
      <pb n="vi"/>
      <head>CONSPECTUS LIBRORUM</head>
      <note type="marginal">A</note>
@@ -6543,7 +6544,7 @@
      <note type="footnote">256,2) ἡ γένεσις καὶ ἡ φθορὰ κινήσεις οὐκ εἰσὶ κυρίως ἀλλὰ μεταβολαὶ
       μόνον· μεταβολὴ δέ ἐστι μετάβασις ἀπ’ ἄλλου εἰς ἄλλο — τῆς ἀπὸ γῆς τουτωνὶ τῶν στοιχείων
       τοπικῆς διαστάσεως· ceterum cf. Diels, praef. Simpl. Phys. vol. IX p. XVI.</note>
-    </div>
+    </div></div>
    </div>
 
   </body>
