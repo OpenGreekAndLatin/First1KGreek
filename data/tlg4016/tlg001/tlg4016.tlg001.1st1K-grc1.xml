@@ -90,8 +90,8 @@
             <p>The following text is encoded in accordance with EpiDoc standards and with the
                 CTS/CITE Architecture.</p>
               <refsDecl n="CTS">
-                <cRefPattern n="section" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-                <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
+                <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+                <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])"/>
             </refsDecl>
         </encodingDesc>
 
@@ -6523,9 +6523,10 @@
                     </div>
                 </div>
 
-                <div type="commentary" subtype="index">
+                <div type="textpart" subtype="book" n="indices">
                     <pb n="129"/>
                     <head>Indices</head>
+                    <div type="textpart" subtype="section" n="index_names">
                     <pb n="131"/>
                     <head>I INDEX NOMINUM1)</head>
                     <p>Ἁγαμέμνων 81,1,2</p>
@@ -6625,7 +6626,7 @@
                     <p>Χρυσαόριος 22,12 sq. 39,5</p>
                 </div>
 
-                <div type="commentary" subtype="ii_loci">
+                <div type="textpart" subtype="section" n="plato_cit">
                     <pb n="133"/>
                     <p>II LOCI PLATONICI</p>
                     <p>Phaed. c. VI p. 62 A. B . . . . 4,28</p>
@@ -6638,7 +6639,7 @@
                     <p>Tim. C.16 p. 47 B . . . . 16,18 c.20 p.53 C . . . . 72,18</p>
                 </div>
 
-                <div type="commentary" subtype="iii_loci">
+                <div type="textpart" subtype="section" n="aristotle_cit">
                     <p>III LOCI ARISTOTELICI</p>
                     <p>Categ. c. 5 p. 2a 11 . . . . . . 97,1 totus liber cit. 22,16.23 23,23 26,4.
                         12 sq. 30,10sq. 43,2 sq.</p>
@@ -6650,13 +6651,13 @@
                         11 p. 1067 b 23 . . . . . 49,11</p>
                 </div>
 
-                <div type="commentary" subtype="addenda">
+                <div type="textpart" subtype="section" n="addenda">
                     <pb n="134"/>
                     <p>ADDENDA ET CORRIGENDA</p>
                     <p>p. 9,11 adde notam: ἐσθλὴν EMVp: ἐσθλὸς D (recte): ἐσθλὸν Brand.</p>
                     <p>p. 52,18 not. lege: haec genera in Plat. Sophist, c. 40 p. 254 D. E
                         inveniuntur.</p>
-                </div>
+                </div></div>
             </div>
 
         </body>

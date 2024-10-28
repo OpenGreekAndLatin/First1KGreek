@@ -86,7 +86,7 @@
         <encodingDesc>
             <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
             <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
         
@@ -100,11 +100,9 @@
 </teiHeader>
 
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg4102.tlg002.1st1K-grc1" xml:lang="grc">
-<head>CΑTΕΝΑ
-IN
-EVANGELIUM S. MARCI
-Ε CODD. BODL. ET PARIS.</head>
+    <body>
+   <div type="edition" n="urn:cts:greekLit:tlg4102.tlg002.1st1K-grc1" xml:lang="grc">
+<head>CΑTΕΝΑ IN EVANGELIUM S. MARCI Ε CODD. BODL. ET PARIS.</head>
 
 <pb n="260"/>
 <pb n="261"/>
@@ -258,7 +256,7 @@ r φησιν P.L. s Κυρίου Poss. t εὐαγγέλιον L.</note>
 Cod. Barocc. 156. f. 131. vers.</p>
 </div>
 <pb n="266"/>
-<div type="textpart" subtype="chapter" n="praef">
+<div type="textpart" subtype="chapter" n="preface">
 <head>ΕΥΑΓΓΕΛΙΟΝ TO ΚΑTΑ ΜΑΡΚΟΝ.</head>
 <lb n="1"/> <p>Ἀρχὴ τοῦ Εὐαγγελίου Ἰησοῦ Χριστοῦ Υἱοῦ Θεοῦ.
 <lb n="2"/> ὡς γέγραπται ἐν τοῖς προφήταις, Ἴδου ἐγὼ ἀποστέλλω
@@ -6901,7 +6899,7 @@ Poss. d ἀγνοητέον C. 178. e bic Ρ. ἄλλους Poss. ἀλλὰ C.
 
 
 <pb n="497"/>
-<div type="commentary" subtype="auctores">
+<div type="textpart" subtype="chapter" n="authors">
 <head>AUCTORES
 E QUIBUS CONTEXTA EST CATENA IN
 EVANGELIUM S. MATTHӔI.</head>

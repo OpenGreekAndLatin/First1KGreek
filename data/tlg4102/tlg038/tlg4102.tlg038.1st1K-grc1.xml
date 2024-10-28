@@ -86,7 +86,7 @@
   <encodingDesc>
    <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture.</p>
       <refsDecl n="CTS">
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
       </refsDecl>
     </encodingDesc>
   
@@ -99,7 +99,8 @@
   
  </teiHeader>
   <text>
-    <body><div type="edition" n="urn:cts:greekLit:tlg4102.tlg038.1st1K-grc1" xml:lang="grc">
+    <body>
+  <div type="edition" n="urn:cts:greekLit:tlg4102.tlg038.1st1K-grc1" xml:lang="grc">
 <div type="textpart" subtype="chapter" n="hyp">
 <pb n="112"/>
 <head>ΤΩΝ ΕΙΣ THN ΠΡΟΣ ΕΒΡΑΙΟΥΣ ΕΠΙΣΤΟΛΗΝ
@@ -6039,7 +6040,7 @@ aliis ut opinor.</note>
 αὐτοὺς δὲ τοὺς ἱερέας διδάσκοντα — desunt reliqua.</p>
 </div>
 
-<div type="textpart" subtype="chapter" n="sup">
+<div type="textpart" subtype="chapter" n="supplement">
 <pb n="279"/>
 <head>SUPPLEMENTUM
 Ε COD. PARIS. 238.</head>
@@ -17704,7 +17705,7 @@ Conc. Nicien. t. i. p. 971. Vid. Fabr. B. Gr. t. ix. p. 408.</note>
 εὐχροίας ἐκφαίνεσθαι.</p>
 </div>
 
-<div type="commentary" subtype="auctorm">
+<div type="textpart" subtype="chapter" n="authors">
 <pb n="599"/>
 <head>AUCTORUM ΝΟΜΙΝΑ.</head>
 <p>Anonymus (Ἄλλος) 13, 16. 22, 1.
