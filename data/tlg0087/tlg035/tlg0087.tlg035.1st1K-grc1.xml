@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader xml:lang="eng">
  <fileDesc>
 <titleStmt>
- <title>xml:lang="lat" De Figuris</title>
- <author>xml:lang="lat" Aelius Herodianus</author>
- <editor>Leonardi Spengel</editor>
+ <title xml:lang="lat">De Figuris</title>
+ <author xml:lang="lat">Aelius Herodianus</author>
+ <editor>Leonhard von Spengel</editor>
  <funder>Harvard Library Arcadia Fund</funder>
  <principal>Gregory Crane</principal>
  <respStmt>
@@ -19,31 +19,34 @@
  </respStmt>
  <respStmt>
   <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+  <orgName>University of Leipzig</orgName>
+  <resp>Project Manager</resp>
  </respStmt>
  <respStmt>
   <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+  <orgName>University of Leipzig</orgName>
+  <resp>Project Assistant</resp>
  </respStmt>
  <respStmt>
   <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+  <orgName>University of Leipzig</orgName>
+  <resp>Lead Developer</resp>
  </respStmt>
  <respStmt>
   <persName>Bruce Robertson</persName>
-  <resp>Technical Advisor (Mount Allison University)</resp>
+  <orgName>Mount Allison University</orgName>
+  <resp>Technical Advisor</resp>
  </respStmt>
 </titleStmt>
 <publicationStmt>
 <authority>Harvard College Library</authority>
-<idno type="tlg0087.tlg035.1st1K-grc1.xml">TO BE ADDED BY LEIPZIG</idno>
+<idno type="filename">tlg0087.tlg035.1st1K-grc1.xml</idno>
 <availability>
- <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
- License</p>
+<p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
 </availability>
 <date>2017</date>
 <publisher>Harvard College Library</publisher>
-<pubPlace>United State</pubPlace>
+<pubPlace>United States</pubPlace>
 </publicationStmt>
 <sourceDesc>
  <listBibl>
@@ -52,7 +55,7 @@
     <title xml:lang="lat">Rhetores Graeci ex Recognitione</title>
     <editor>
      <persName>
-      <name>Leonardi Spengel</name>
+      <name>Leonhard von Spengel</name>
      </persName>
     </editor>
     <author ref="urn:cts:greekLit:tlg0087" xml:lang="lat">Aelius Herodianus</author>
@@ -71,7 +74,7 @@
 <encodingDesc>
 <p>Text encoded in accordance with the latest EpiDoc standards</p>
  <refsDecl n="CTS">
-  <cRefPattern n="paragraph" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+  <!--<cRefPattern n="paragraph" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>-->
   <cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
 </encodingDesc>
@@ -81,7 +84,11 @@
 <language ident="lat">Latin</language>
 </langUsage>
 </profileDesc>
+ <revisionDesc>
+  <change when="2024-12-18" who="Lisa Cerrato">Minor cleanup of legacy file that was left unfinished</change>
+ </revisionDesc>
 </teiHeader>
+ 
 <text>
 	<body>
 <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0087.tlg035.1st1K-grc1">
