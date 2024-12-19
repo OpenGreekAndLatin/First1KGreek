@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader xml:lang="eng">
-<fileDesc>
+ <teiHeader xml:lang="eng">
+  <fileDesc>
 <titleStmt>
- <title xml:lang="lat">Rhetores Graeci ex Recognitione</title>
-<author xml:lang="lat">Alexander Rhet., Soph. AD 2</author>
- <editor></editor>
+ <title xml:lang="lat">De Figuris</title>
+ <author xml:lang="lat">Alexander Numenius</author>
+ <editor>Leonhard von Spengel</editor>
 <sponsor>Harvard Library Arcadia Fund</sponsor>
 <funder></funder>
 <principal>Gregory Crane</principal>
@@ -21,21 +21,26 @@
 </respStmt>
  <respStmt>
   <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+  <orgName>University of Leipzig</orgName>
+  <resp>Project Manager</resp>
  </respStmt>
  <respStmt>
   <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+  <orgName>University of Leipzig</orgName>
+  <resp>Project Assistant</resp>
  </respStmt>
  <respStmt>
   <persName>Thibault Clérice</persName>
-  <resp>Lead Developer (University of Leipzig)</resp>
+  <orgName>University of Leipzig</orgName>
+  <resp>Lead Developer</resp>
  </respStmt>
  <respStmt>
   <persName>Bruce Robertson</persName>
+  <orgName>Mount Allison University</orgName>
   <resp>Technical Advisor</resp>
  </respStmt>
 </titleStmt>
+   
 <publicationStmt>
 <authority>Harvard College Library</authority>
 <idno type="filename">tlg.0594.tlg002.1st1K-grc1.xml</idno>
@@ -47,33 +52,40 @@
 <publisher>Harvard College Library</publisher>
 <pubPlace>United States</pubPlace>
 </publicationStmt>
-<sourceDesc>
-<listBibl >
- <biblStruct>
- <monogr>
-  <title>Rhetores Graeci ex recognitione</title>
-  <editor>
-	<persName>
-	 <name >Leonardi Spengel</name>
-	</persName>
-  </editor>
-  <imprint>
-	<publisher>Teubner</publisher>
-	<pubPlace>Leipzig</pubPlace>
-	<date>1889</date>
-  </imprint>
-  <biblScope unit="volume">3</biblScope>
- </monogr>
-  <ref target="https://babel.hathitrust.org/shcgi/pt?id=hvd.32044012975652">Hathi Trust</ref>
- </biblStruct>
-</listBibl>
-</sourceDesc>
+   
+   <sourceDesc>
+    <listBibl>
+     <biblStruct>
+      <monogr>
+       <title xml:lang="lat">Rhetores Graeci</title>
+       <editor>
+        <persName>
+         <name>Leonhard von Spengel</name>
+        </persName>
+       </editor>
+       <author xml:lang="lat">Alexander Numenius</author>
+       <imprint>
+        <publisher>Teubner</publisher>
+        <pubPlace>Leipzig</pubPlace>
+        <date>1856</date>
+       </imprint>
+       <biblScope unit="volume">3</biblScope>
+      </monogr>
+      <ref target="https://hdl.handle.net/2027/hvd.32044012975652?urlappend=%3Bseq=52%3Bownerid=27021597765165130-56">Hathi Trust</ref>
+     </biblStruct>
+    </listBibl>
+   </sourceDesc>
 </fileDesc>
+  
 <encodingDesc>
 <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
  <refsDecl n="CTS">
-  <cRefPattern n="book" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-  <cRefPattern n="section" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+  <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+  <p>This pointer pattern extracts part and section.</p>
+  </cRefPattern>
+  <cRefPattern n="part" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+  <p>This pointer pattern extracts part.</p>
+  </cRefPattern>
  </refsDecl>
 </encodingDesc>
 <profileDesc>
@@ -81,20 +93,17 @@
 <language ident="grc">Greek</language>
 </langUsage>
 </profileDesc>
-<revisionDesc>
-<change/>
-</revisionDesc>
+  <revisionDesc>
+   <change when="2024-12-19" who="Lisa Cerrato">Minor cleanup of legacy file that was left unfinished</change>
+  </revisionDesc>
 </teiHeader>
+ 
 <text>
 	<body>
-
-
-<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0594.tlg002.First1K-grc1">
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0594.tlg002.1st1K-grc1">
 <pb n="9"/>
-<head>ΑΛΕΞΑΝΔΡΟΥ
-ΠΕΡΙ ΤΩΝ ΤΗΣ ΔΙΑΝΟΙΑΣ ΚΑΙ ΤΗΣ <note type="marginal">Tom. VIII Walz. p. 421.</note>
-ΛΕΞΕΩΣ ΣΧΗΜΑΤΩΝ.</head>
- <div type="textpart" subtype="book" n="1">
+<head>ΑΛΕΞΑΝΔΡΟΥ ΠΕΡΙ ΤΩΝ ΤΗΣ ΔΙΑΝΟΙΑΣ ΚΑΙ ΤΗΣ <note type="marginal">Tom. VIII Walz. p. 421.</note> ΛΕΞΕΩΣ ΣΧΗΜΑΤΩΝ.</head>
+ <div type="textpart" subtype="part" n="1">
 <div type="textpart" subtype="section" n="1">
 <head>I.</head>
 <p>α΄. Ἔστι μὲν οὐχ ἡ τυχοῦσα δυσκολία περὶ τῶν τοῦ <lb n="5"/>
@@ -790,10 +799,8 @@
 μενόν με τῆς πόλεως ἠγανάκτησας; καὶ τὰ ἑξῆς.</p>
 </div>
  </div>
-<div type="textpart" subtype="chapter" n="3">
-<head>II. <lb n="5"/>
-ΤΟΥ ΑΥΤΟΥ ΠΕΡΙ ΤΩΝ ΤΗΣ ΛΕΞΕΩΣ
-ΣΧΗΜΑΤΩΝ.</head>
+<div type="textpart" subtype="part " n="2">
+<head>II. <lb n="5"/> ΤΟΥ ΑΥΤΟΥ ΠΕΡΙ ΤΩΝ ΤΗΣ ΛΕΞΕΩΣ ΣΧΗΜΑΤΩΝ.</head>
 <div type="textpart" subtype="section" n="1">
 <head>α΄.</head>
 <p>Τὰ μὲν τῆς διανοίας σχήματα προείρηται κατὰ λό-
