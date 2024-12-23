@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?oxygen RNGSchema="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" type="xml"?>
+<?oxygen RNGSchema="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" type="xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
  <teiHeader xml:lang="eng">
   <fileDesc>
    <titleStmt>
-    <title xml:lang="lat">Sancti patris nostri Cyrilli archiepiscopi Alexandrini in D. Joannis evangelium, vol. 1</title>
-    <author>Cyril, Saint Patriarch of Alexandria</author>
+    <title xml:lang="mul">εἰς τὸ κατὰ Ἰωάννην εὐαγγέλιον (Vol. 1)</title>
+    <title xml:lang="lat">Sancti patris nostri Cyrilli archiepiscopi Alexandrini in D. Joannis evangelium (Vol. 1)</title>
+    <author>Cyril of Alexandria</author>
     <editor>Philip Edward Pusey</editor>
+    
     <sponsor>University of Leipzig</sponsor>
     <funder>European Social Fund Saxony</funder>
     <respStmt>
@@ -15,38 +17,41 @@
     </respStmt>
     <respStmt>
      <persName>Gregory Crane</persName>
-     <resp>Editor-in-Chief, Perseus Digital Library</resp>
+     <orgName>Perseus Digital Library</orgName>
+     <resp>Editor-in-Chief</resp>
     </respStmt>
     <respStmt>
      <persName>Matt Munson</persName>
-     <resp>Project Manager (University of Leipzig), 2016 -
-      present</resp>
+     <orgName>University of Leipzig</orgName>
+     <resp>Project Manager</resp>
     </respStmt>
     <respStmt>
      <persName>Annette Gessner</persName>
-     <resp>Project Assistant (University of Leipzig) 2015 -
-      present</resp>
+     <orgName>University of Leipzig</orgName>
+     <resp>Project Assistant</resp>
     </respStmt>
     <respStmt>
      <persName>Thibault Clérice</persName>
-     <resp>Lead Developer (University of Leipzig) 2015 - 2017</resp>
+     <orgName>University of Leipzig</orgName>
+     <resp>Lead Developer</resp>
     </respStmt>
     <respStmt>
      <persName>Bruce Robertson</persName>
-     <resp>Technical Advisor  (Mount Allison University) </resp> 
+     <orgName>University of Leipzig</orgName>
+     <resp>Technical Advisor </resp> 
     </respStmt>
    </titleStmt>
    <publicationStmt>
     <authority>University of Leipzig</authority>
-    <idno type="filename">tlg4090.tlg002(volume 1).1st1K-grc.xml</idno>
+    <idno type="filename">tlg4090.tlg002.1st1K-grc1.xml</idno>
     <availability>
-     <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
-      License</p>
+    <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International License</p>
     </availability>
     <date>2017</date>
     <publisher>Harvard College Library</publisher>
     <pubPlace>United States</pubPlace>
    </publicationStmt>
+   
    <sourceDesc>
     <listBibl>
      <biblStruct>
@@ -63,9 +68,9 @@
         <pubPlace>Oxford, England</pubPlace>
         <date>1872</date>
        </imprint>
-       <biblScope unit="volume">1 of 3</biblScope>
+       <biblScope unit="volume">1</biblScope>
       </monogr>
-      <ref target="https://babel.hathitrust.org/cgi/pt?id=mdp.39015026286297;view=1up;seq=5">HathiTrust</ref>
+      <ref target="https://hdl.handle.net/2027/wu.89095724654?urlappend=%3Bseq=16%3Bownerid=13510798887672626-20">HathiTrust</ref>
      </biblStruct>
     </listBibl>
    </sourceDesc>
@@ -74,9 +79,12 @@
    <p>Text encoded in accordance with the latest EpiDoc standards</p>
    <refsDecl n="CTS">
     <cRefPattern n="chapter" matchPattern="(\w+).(\w+)" 
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-    <cRefPattern n="book" matchPattern="(\w+)"
-     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+     replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+     <p>This pointer pattern extracts book and chapter.</p>
+    </cRefPattern>
+  <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+   <p>This pointer pattern extracts book.</p>
+  </cRefPattern>
    </refsDecl>
   </encodingDesc>
   <profileDesc>
@@ -86,17 +94,13 @@
    </langUsage>
   </profileDesc>
   <revisionDesc>
-   <change/>
+   <change when="2024-12-23" who="Lisa Cerrato">Minor cleanup of legacy file that was left unfinished</change>
   </revisionDesc>
  </teiHeader>
  <text>
   <body>
-   <div type="bibliography">
-    <listBibl>
-     <bibl/>
-    </listBibl>
-</div>
-<div type="commentary" subtype="preface" xml:lang="mul">
+   
+<!--<div type="commentary" subtype="preface" xml:lang="mul">
 <pb n="vii"/>
 <head>PRAEFATIO.</head>
 <p>AEc Cyrillanorum volumina ea continent viri sancti opera
@@ -260,40 +264,14 @@ Heyse.
 30. κἂν ἀποθάνῃ ζήσεται om. a.c.</p>
 <p>„ 704, not. 1, ζωῆς B.a. ζῶντος c. Holst. Ed.</p>
 <p>,, 707, lin. 6, pro ἠρεμεῖν corrige οὐκ ἠρεμεῖν.</p>
-</div>
+</div>-->
 
-<div type="edition" subtype="book" n="vol.i" xml:lang="grc">
-<div type="textpart" subtype="chapter" n="1">
-<head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ</head>
-<head>ΚΥΡΙΛΛΟΥ</head>
-<head>ΑΡΧΙΕΠΙΣΚΟΠΟΥ ΑΛΕΞΑΝΔΡΕΙΑΣ,
-ΕΡΜΗΝΕΙΑ ΗΤΟΙ ΥΠΟΜΝΗΜΑ</head>
-<p>p. vii. lin. 7 a fine pro b=Catenae etc. corrigas</p>
-<p>b = Cat. in Evangelia in Bibl Mosquensi 41, olim 42, sec. eirc. x exarata, rarius citata, ex codem fonte ac Cord. hausta.</p>
-<p>c=Catenae Corderianae fragementum etc.</p>
-<p>“ἐστι καταβαῖνον ἄπο του Παιρσς των
-μὲν γὰρ σφαλερόν τε καὶ οὐκ ἀζήμιον τοῖς πολλοῖς, ὁ περὶ
-<lb n="15"/> τῆς ἀνωτάτω πασῶν οὐσίας καὶ τῶν κατ’ αὐτὴν μυστηρίων b
-ὁρᾶται λόγος· χρῆμα δέ τι κινδύνων ἀπηλλαγμένον ἡ ἐπὶ
-τούτοις σιγή. ἀλλ’ ἐξίστησι μὲν ἡμᾶς ταύτης, καίτοι λίαν
-ὅτι προσήκοι σιωπᾶν οἷο μένους, ὁ ἐπὶ πάντων Θεός “Λάλει,</p> <note type="marginal">Acta SS.
-App.
-xviii. 9.</note>
-<note type="footnote">Lib. 1. Codices B.D.E. Praefatio deest in Ε. tit. incip. τοῦ ἁγιωτάτου Κυρίλλου
-ἀρχιεπισκόπου D. 9. οἶμαι δὲ inverso ordine Β. 12. δὲ om. Β.
-13. ἀπὸ Β. παρὰ Ed. 14. σφαλερὸν γὰρ inverso ordine Β. 15. ὁρᾶται
-μυστηρίων inverso ordine Β. 17. ἡμᾶς ταύτης hoc ordine Β. 18. ὅτι
-προσήκοι σιωπᾶν Β. ἢ προσήκοι προσήκει Ed.] τιμᾶν D. Edd.</note>
-</div>
+<div type="edition" n="tlg4090.tlg002.1st1K-grc1" xml:lang="grc">
+<head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ <lb/> ΚΥΡΙΛΛΟΥ<lb/> ΑΡΧΙΕΠΙΣΚΟΠΟΥ ΑΛΕΞΑΝΔΡΕΙΑΣ, <lb/> ΕΡΜΗΝΕΙΑ ΗΤΟΙ ΥΠΟΜΝΗΜΑ<lb/> ΕΙΣ ΤΟ ΚΑΤΑ ΙΩΑΝΝΗΝ ΕΥΑΓΓΕΛΙΟΝ.</head>
+ <div type="textpart" subtype="book" n="pref">
+<div type="textpart" subtype="chapter" n="0">
+ <head xml:lang="lat">PRAEFATIO.</head>
 
-<div type="textpart" subtype="chapter" n="2">
-<pb n="1"/>
-<head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ
-ΚΥΡΙΛΛΟΥ
-ΑΡΧΙΕΠΙΣΚΟΠΟΥ ΑΛΕΞΑΝΔΡΕΙΑΣ,
-ΕΡΜΗΝΕΙΑ ΗΤΟΙ ΥΠΟΜΝΗΜΑ</head>
-<lb n="5"/> <head>ΕΙΣ ΤΟ ΚΑΤΑ ΙΩΑΝΝΗΝ ΕΥΑΓΓΕΛΙΟΝ.</head>
-<head>PRAEFATIO.</head>
 <p>“ΚΥΡΙΟΣ δώσει ῥῆμα τοῖς εὐαγγελιζομένοις δυνάμει <note type="marginal">a Ps. lxvii. 12.</note>
 “πολλῇ,’’ καλῶς γε σφόδρα ποιῶν ὁ μελῳδὸς ἀναφθέγγεται·
 χρῆναι δὲ οἶμαι πρὸς τοῦτο βαδίζειν, οὐ τοὺς τυχόντας
@@ -444,7 +422,7 @@ ex Β. 9. τούτοις τι προσειπεῖν Β. τι πρὸς τού�
 οτι προσήκοι τὰς του συναγορεύειν ὁρμὰς οὐκ επ
 ἀνατροπῇ μᾶλλον ποιεῖσθαι τῶν θείων λογίων, ἀλλ’ εἰς
 ἀναίρεσιν τῶν οὐκ ὀρθῶς λεγομένων παρὰ τῶν δι’ ἐναντίας· <note type="marginal">b</note>
-<lb n="15"/> “ Μῆ γὰρ, φησὶν, ἄνθρωπος τὸ ξύλον τὸ ἐν τῷ ἀγρῷ <note type="marginal">Deut. xx. 19.</note>
+<lb n="15"/> “Μῆ γὰρ, φησὶν, ἄνθρωπος τὸ ξύλον τὸ ἐν τῷ ἀγρῷ <note type="marginal">Deut. xx. 19.</note>
 “ εἰσελθεῖν ἀπὸ προσώπου σου εἰς τὸν χάρακα ” ἆρα γὰρ,
 φησὶν, οἰήσῃ ποτὲ, καθάπερ τινὰ τῶν αἱρεσιαρχῶν, αὐτόμολόν
 σοι πρὸς μάχην ἐξαναστήσεσθαι τὸ ἐκ τῶν συγγραμμάτων
@@ -529,9 +507,9 @@ Neutrum habet Migne. 15. δεῖ Β. 18. τοῦτο Β. τὸ Ed. 22. εὐτε
 + οὐκ Ed. invito Β. οὖν correxit Migne. 12. ἀσθένεια διανοίας inverso
 ordine Β. 14. ἐστὶν pro ἐνῆν Migne. ἀντετάξομεν D. 18. πᾶς
 pro πὼς Β.</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="3">
+</div></div>
+ <div type="textpart" subtype="book" n="1">
+<div type="textpart" subtype="chapter" n="chap_bk1">
 <pb n="9"/>
 <head>ΕΦΑΛΑΙΑ</head> <note type="marginal">6 A.</note>
 <head>ΕΝ ΤΩ ΠΡΩΤΩ ΒΙΒΛΙΩ.</head>
@@ -579,7 +557,7 @@ ex Β. 14. δὲ] + τὸ invitis B.D.E. 16. τοῦ assumptum ex B.
 assumptum ex Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="4">
+<div type="textpart" subtype="chapter" n="comm_bk1">
 <pb n="11"/>
 <head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ a 7 Α.
 ΚΥΡΙΛΛΟΥ
@@ -730,7 +708,7 @@ ordine Β. 14. ἀνάπτουσαν Β. 16. ἐπὶ τοῦ ὕδατος ass
 <note type="footnote">6. τὰ — νομικῆς τε] τε — νομικῆς (τα in τε mutato, τε hic omisso) Β. 7. Addit γεννήσεως Migne.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="5">
+<div type="textpart" subtype="chapter" n="1">
 <pb n="16"/>
 <note type="marginal">c</note> <head>ΕΦΑΛΗ Α.</head>
 <note type="marginal">Κεφ. α΄.</note> <p>Εν ἀρχῇ ἦν ἑΛόγος.</p>
@@ -957,7 +935,7 @@ pergit ἵν’ οὖν μὴ εἴη ἀνάγκη. 6. τε] τι Ε. ἐπα�
 Euth. Ed, Χριστοῦ Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="6">
+<div type="textpart" subtype="chapter" n="2">
 <pb n="23"/>
 <head>ΚΕΦΑΛΗ Β.</head>
 <p>ὅτι καὶ Θεὸς καὶ ὁμοούσιος τῷ Πατρὶ ὑπάρχων ὁ Υἱὸς ἐν ἰδίᾳ
@@ -1214,7 +1192,7 @@ Statim τὸν assumptum ex Β. Ε. Euth, 20. ἐξετάζωμεν Ε. ἐξε
 καὶ B.D.E. ὡς Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="7">
+<div type="textpart" subtype="chapter" n="3">
 <pb n="31"/>
 <head>ΚΕΦΑΛΗ Γ.</head>
 <p>ὅτι καὶ Θεὸς κατὰ φύσιν, καἰ κατ’ οὐδένα τρόπον ἢ ἐλάττων ἢ
@@ -1712,7 +1690,7 @@ assumptum ex Euth. 14. γάρ πὼς hoc ordine B. Euth. 15. καὶ
 inverso ordine Euth. 23. ὅλως Euth. 24. καὶ om. B. habet Euth.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="8">
+<div type="textpart" subtype="chapter" n="4">
 <pb n="45"/>
 <head>ΚΕΦΑΛΗ Δ.</head>
 <p>Πρὸς τοὺς τολμῶντας λέγειν, ὅτι ἕτερός ἐστιν ὁ ἐνδιάθετός τε καὶ
@@ -2406,7 +2384,7 @@ ex Β. 15. ἐπὶ τούτῳ assumptum ex Β. 22. ἐπιστρέψουσι
 ἐπιζητήσωμεν Ε. 17. γνώσεται, ἀλλ’ Β. γνώσεως ἀλλὰ Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="9">
+<div type="textpart" subtype="chapter" n="5">
 <pb n="65"/>
 <head>ΚΕΦΑΛΗ Ε.</head>
 <p>Ὅτι κατὰ φύσιν δημιουργὸς ὁ Υἱὸς μετὰ Πατρὸς, ὡς ἐκ τῆς οὐσίας
@@ -2697,7 +2675,7 @@ ad Theod. Siigd. lib. i. Const. Melit. Or. ii. 29. δηλοῦσθαι Β. invit
 <note type="footnote">4. ὀξυτάτου Β. 5. τὸν om. Ε.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="10">
+<div type="textpart" subtype="chapter" n="6">
 <pb n="74"/>
 <head>ΕΦΑΛΗ ς.</head>
 <p>ὅτι ζωὴ κατὰ φύσιν ἐστὶν ὁ Υἱὸς, καὶ διὰ τοῦτο οὐ γενητὸς, ἀλλ’
@@ -2909,7 +2887,7 @@ ordine Β. 18. ἕτερον pro ἐτῶν Β. 19. ἀνελκύσῃ D. 24. �
 Β. Χριστοῦ Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="11">
+<div type="textpart" subtype="chapter" n="7">
 <pb n="80"/>
 <head>ΕΦΑΑΗ Ζ.</head>
 <p>ὅτι φῶς κατὰ φύσιν ἐστὶν ὁ Υἱὸς, καὶ διὰ τοῦτο οὐ γενητὸς, ἀλλ’ ἐκ
@@ -3470,7 +3448,7 @@ om. Β. 12. καιόμενος et φαίνων inter se transp. Ε. 13. ἀγ�
 Β. ἐκεῖνο Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="12">
+<div type="textpart" subtype="chapter" n="8">
 <pb n="96"/>
 <head>ΚΕΦΑΛΗ Η.</head>
 <note type="marginal">e</note> <p>Ὅτι μόνος ὁ Υἱὸς τοῦ Θεοῦ φῶς ἐστιν ἀληθινὸν, ἡ δὲ κτίσις οὐκέτι,
@@ -3871,7 +3849,7 @@ ex Β. φησὶν om. Β.</note>
 <note type="footnote">3. αὐτοῦ assumptum ex Β. 7. τούτῳ συγγενές Ε. babet D.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="13">
+<div type="textpart" subtype="chapter" n="9">
 <pb n="108"/>
 <head>ΕΦΑΛΗ Θ.</head>
 <p>Ὅτι οὐ προυπάρχει τοῦ σώματος ἡ τοῦ ἀνθρώπου ψυχὴ, οὐδὲ ἐκ
@@ -5541,7 +5519,7 @@ Lacuna in Ε. 1 8. ὀπίσω—ἑαυτὸν] ὀπίσω μᾶλλον π�
 αὐτὸν Β. 22. λέγων om. Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="14">
+<div type="textpart" subtype="chapter" n="10">
 <pb n="154"/>
 <head>ΚΕΦΑΛΗ Ι.</head>
 <p>Ότι μόνος κατὰ φύσιν Υἱὸς ἐκ Πατρὸς ὁ Μονογενὴς, ὡς ἐξ
@@ -5946,9 +5924,10 @@ Ed. 4. δὲ prius Β. γὰρ Ed. 6. ταῦτα δέ φησιν ἐν Βηθ�
 D rubrice. Ε. Ταῦτα ἐν Βηθαωίᾳ ἐγένετο πέραν τοῦ Ἰορδάνου, ὅπου ἦν Ἰωάννης βαπτίζων,
 tanquam SS. Scripturae versum D mg. e quo, vel apographo quodam ut
 videtur, Ed. 11, 12. Sic B.D.</note>
-</div>
+</div></div>
 
-<div type="textpart" subtype="chapter" n="15">
+ <div type="textpart" subtype="book" n="2">
+<div type="textpart" subtype="chapter" n="chap_bk2">
 <pb n="167"/>
 <head>ΚΕΦΑΛΑΙΑ</head>
 <head>ΕΝ ΤΩ ΔΕΥΤΕΡΩ ΒΙΒΛΙΩ.</head>
@@ -6000,7 +5979,7 @@ ex Β. 7—11. Ἵνα"—ῥητοῦ assumpta ex Β. 9. θ.] Numerum hunc
 supplevi. οὐδὲν sic edidi. οὐδένα B.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="16">
+<div type="textpart" subtype="chapter" n="comm_bk2">
 <pb n="169"/>
 <head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ</head>
 <head>ΚΥΡΙΛΛΟΥ</head>
@@ -6138,7 +6117,7 @@ ex B. deest in Cord.</note>
 Cord.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="17">
+<div type="textpart" subtype="chapter" n="1">
 <pb n="174"/>
 <head>ΚΕΦΑΛΗ Α.</head>
 <p>ὅτι οὐ κατὰ μετοχὴν οὐδὲ ὡς ἐπακτὸν ἐν τῷ Υϊῷ τὸ Ἅγιον Πνεῦμά
@@ -8418,7 +8397,7 @@ et κοιτάζεις inter se transponit Ed. (106) invito B. [ποιμένε�
 <note type="footnote">5. τὸ μεῖσον Β. 6. λέγοιτο Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="18">
+<div type="textpart" subtype="chapter" n="2">
 <pb n="240"/>
 <head>ΚΕΦΑΛΗ Β.</head>
 <p>ὅτι οὐκ ἐν τοῖς γενητοῖς ἐστιν ὁ Υἱὸς, ἀλλ’ ἐπάνω πάντων, ὡς
@@ -8687,7 +8666,7 @@ ex B.D. 9. πάντα] + τὰ Β. 13. Χριστῷ Β.
 9. ἄλλων πάντων Β. ἀπάντων Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="19">
+<div type="textpart" subtype="chapter" n="3">
 <pb n="248"/>
 <head>ΚΕΦΑΛΗ Γ.</head>
 <p>Ὅτι Θεὸς καὶ ἐκ Θεοῦ κατὰ φύσιν ὁ χριστός.
@@ -8889,7 +8868,7 @@ om. B. 11. λαχόντας] λαβόντας B. 16. ἐπειδήπερ] ε�
 25. ἀφεῖλεν Β. ἀφελεῖν Ed. 27. προβάλλεσθαι Β. 29. ἐπ’ om. Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="20">
+<div type="textpart" subtype="chapter" n="4">
 <pb n="254"/>
 <head>ΚΕΦΑΛΗ Δ.</head>
 <note type="marginal">b</note>
@@ -9653,7 +9632,7 @@ secutus, quvim in capitutn tabula, caput illud versui sequenti tribuit et B.</no
 8, τῶν ἀγίων φησι inverso ordine Β. invitis Catt.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="21">
+<div type="textpart" subtype="chapter" n="5">
 <pb n="276"/>
 <head>ΚΕΦΑΛΗ Ε.</head>
 <note type="marginal">b</note>
@@ -11119,7 +11098,7 @@ B.D. λέγει Ed.</note>
 9. τοίνυν τοιγαροῦν Β. 10. οὐκ ἐπιγινώσκοντες] οὐκέτι γινώσκοντες Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="22">
+<div type="textpart" subtype="chapter" n="6">
 <pb n="317"/>
 <head>ΚΕΦΑΛΗ ς.</head>
 <p>Οτι οὐκ ἐλάττων κατὰ δύναμιν ἢ κατ’ ἐνέργειαν τὴν ἐπί τισιν ὁ
@@ -11622,7 +11601,7 @@ alt. assumptum ex B. Deest in Catenis. 19. Assumpta πόλιν alt. ex B.,
 (sic) Β. 22. τὰ πάντα δι’ Υἱοῦ hoc ordine a.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="23">
+<div type="textpart" subtype="chapter" n="7">
 <pb n="331"/>
 <head>ΚΕΦΑΛΗ Ζ.</head>
 <p>Οτι τῶν θεοπρεπῶν ἀξιωμάτων ἤτοι πλεονεκτημάτων οὐδὲν ὡς ἐκ
@@ -11725,7 +11704,7 @@ Cord. τι] μηδὲν τι a. 12. πῶς—νοητέον om. Β. 15. κρί
 assumptum ex Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="24">
+<div type="textpart" subtype="chapter" n="8">
 <pb n="334"/>
 <head>ΚΕΦΑΛΗ Η.</head>
 <p>Ὅτι Θεὸς καὶ ἐκ Θεοῦ κατὰ φύσιν ὑπάρχων ὁ Υἱὸς, καὶ εἰκὼν
@@ -12279,7 +12258,7 @@ B.D. et ita conjecit Aub. πάντας Ed. 15. διὰ τοῦτο Β. 16. ἢ 
 Ed. 7. τοῦ μὴ παθσῖν Cord. 10. τῇ περὶ om. B.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="25">
+<div type="textpart" subtype="chapter" n="9">
 <pb n="350"/>
 <note type="marginal">237 A. a</note> <head>ΚΕΦΑΛΗ Θ.</head>
 <p>Ὅτι κατ᾿ οὐδὲν ἐλάττων τοῦ Θεοῦ καὶ Πατρὸς ὁ Υἱὸς, ἀλλ᾿ ἰσοσθενὴς
@@ -12728,9 +12707,9 @@ assumptum ex Β. 28. πείθομαι] ποιήσομαι Β. κατανεύ�
 correxi ex Β. J. τὸ om. Β. 8, 9. Sic Β. Κυρίλλου ἀρχιεπισκόπου
 ἀλεξανδρείας, τοῦ σοφωτάτου καὶ ἁγιωτάτου καἰ θεωρητικωτάτου εἰς τὸ κατὰ Ἰωάννην
 εὐαγγέλιον β΄ βιβλίον D.</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="26">
+</div></div>
+ <div type="textpart" subtype="book" n="3">
+<div type="textpart" subtype="chapter" n="chap_bk3">
 <pb n="363"/>
 <head>ΕΦΑΛΑIΑ</head> <note type="marginal">d</note>
 <p>ΕΝ ΤΩι ΤΡΙΤΩι ΒΙΒΛΙΩι ΠΛΑΤΥΤΕΡΟΝ ΕΙΡΗΜΕΝΑ.</p>
@@ -12769,7 +12748,7 @@ ex Β. δύο Β. δώδεκα Ed. 19. ἣν ἣν—ἑξῆς] τοῦτον
 τοῦ οὐρανοῦ om. Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="27">
+<div type="textpart" subtype="chapter" n="comm_bk3">
 <pb n="365"/>
 <head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ <note type="marginal">a 247 Α.</note>
 ΚΥΡΙΛΛΟΥ
@@ -13103,7 +13082,7 @@ assumptum ex Β.</note>
 <note type="footnote">3. δι’ ἡμᾶς] + ὡς Β. 5. βασιλεὺς ὢν Β. βασιλεύων Ed. 9 ὅτι Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="28">
+<div type="textpart" subtype="chapter" n="2">
 <pb n="375"/>
 <head>ΚΕΦΑΑΗ Β.</head> <note type="marginal">a 254 Α.</note>
 <p>Ὅτι εἰκών ἐστι τοῦ Θεοῦ καὶ Πατρὸς ὁ Υἱὸς, ἐν ᾧ καὶ πρὸς Ἰουδαίους
@@ -13654,7 +13633,7 @@ om. Β. 22. πόρ’ αὐτῷ D. περὶ αὐτῶν D mg. et V. 1. in Ed
 <note type="footnote">4. προανατυποῦντος Β. προαναμέλποντες Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="29">
+<div type="textpart" subtype="chapter" n="3">
 <pb n="391"/>
 <head>ΚΕΦΑΛΗ Γ.</head> <note type="marginal">a 265 A.</note>
 <p>ὅτι τοῦ Σωτῆρος τὴν ἄφιξιν ἐσήμαινεν ὁ Μωυσῆς.</p>
@@ -13842,7 +13821,7 @@ ig. τε assumptum ex B.D. 23. τὸ σχῆμα τόδε] τόδε τὸ σ�
 τὸ assumptum ex B.D.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="30">
+<div type="textpart" subtype="chapter" n="4">
 <pb n="397"/>
 <head>ΕΦΑΑΗ Δ.</head>
 <p>Οτι πολλάκις αἱ χριστοῦ μεταβάσεις ἀπὸ τῆς ‘Iερουσαλὴμ τὸ μετατεθήσεσθαι
@@ -15419,7 +15398,7 @@ D. ἐφεδρῶνα Ed. 11. χριστὸς] σωτὴρ Β. 14. τῆς με�
 οἰκονομίας Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="31">
+<div type="textpart" subtype="chapter" n="5">
 <pb n="441"/>
 <note type="marginal">a 300 A.</note>
 <head>ΚΕΦΑΛΗ Ε.</head>
@@ -15957,8 +15936,10 @@ alt. et σὺ assumpta ex B. 13. καθώς ἐστι Β. κατὰ τὸ Ed. 1
 et ἡμῶν om. Β. 8. τι B.D. τις Ed. 10. καὶ assumptum ex Β. αὐτὸν
 Β. τὸν Ἰησοῦν Ed. 11. πεποίηκε] + ὁ Ed. invito Β. 12. τοῖς om. Β.
 15. φαίνονται Β. 16. τοῦτο Β. τοῦ Ed. 26. ὅτι pro ἐστι Β. 28. ἐθέλειν
-assumptum ex Β.</note>
+assumptum ex Β.</note></div>
 
+ <div type="textpart" subtype="chapter" n="6">
+<head>ΚΕΦΑΛΗ Ε.</head>
 <pb n="456"/>
 <p>Περὶ τοῦ μάννα, ὅτι τύπος ἦν τῆς χριστοῦ παρουσίας καὶ τῶν δι
 <note type="marginal">e</note> αὐτοῦ χαρισμάτων πνευματικῶν.</p>
@@ -16885,9 +16866,9 @@ B.D. ἔσται Ed. ἀπεβλήθη καὶ ἐξερρίφη Β. 15. ἀπ
 ΕΥΑΓΓΕΛΙΟΝ, ΒΙΒΛΙΟΝ ΤΡΙΤΟΝ.</p>
 <note type="footnote">1. τὸ prius Β. τὸν Ed. 5. παραδεξόμεθα D. 8. μεταποιεῖσθαι Β. μεταποιῆσαι
 Ed. 13, 14 Sic D.</note>
-</div>
-
-<div type="textpart" subtype="chapter" n="32">
+</div></div>
+ <div type="textpart" subtype="book" n="4">
+<div type="textpart" subtype="chapter" n="chap_bk4">
 <pb n="483"/>
 <note type="marginal">a 329 A.</note>
 <head>ΚΕΦΑΛΑΙΑ</head>
@@ -16930,7 +16911,7 @@ Ed. 13, 14 Sic D.</note>
 Migne.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="33">
+<div type="textpart" subtype="chapter" n="1">
 <pb n="485"/>
 <head>ΤΟΥ ΕΝ ΑΓΙΟΙΣ ΠΑΤΡΟΣ ΗΜΩΝ</head>
 <head>ΚΥΡΙΛΛΟΥ</head>
@@ -17947,7 +17928,7 @@ inverso ordine Β. 24. εἰ] ἐπὶ Β. 27, 28. τὸν Πατέρα διὰ 
 <note type="footnote">3. τοὺς] + εἰς Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="34">
+<div type="textpart" subtype="chapter" n="2">
 <pb n="513"/>
 <head>KΕΦΑΛΗ Β.</head>
 <p>Οτι ζωοποιὸν τὸ ἅγιον σῶμα χριστοῦ, ἐν οἷς ὡς περὶ ἄρτου φησὶ
@@ -18763,7 +18744,7 @@ ordine Β. 19. οὖν om. Β. 20. ὀλιγοστὴ Β. ὀλιγίστη Ed.
 Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="35">
+<div type="textpart" subtype="chapter" n="3">
 <pb n="537"/>
 <head>ΚΕΦΑΛΗ Γ.</head>
 <p>Ὅτι οὐ ζωῆς τῆς παρ’ ἑτέρου μέτοχός ἐστιν ὁ Υἱὸς, μᾶλλον δὲ κατὰ
@@ -19655,7 +19636,7 @@ Ed. 14. κατηγορεῖσθαι Β. 16. οὗτος ἡμὶν inverso ordin
 16. ἀκηράτου Β. Cord. ἀκατηγορήτου Ed.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="36">
+<div type="textpart" subtype="chapter" n="4">
 <pb n="562"/>
 <head>ΚΕΦΑΛΗ Δ.</head>
 <p>Ὅτι τύπος ἦν τοῦ χριστοῦ προηγουμένη τοῦ λαοῦ κατὰ τὴν ἔρημον
@@ -20276,7 +20257,7 @@ D. ἀοδιορίστως (sic) i. e. ἀορίστως inceptum in ἀδιο
 Ed. 16. καλεῖ Β. 18. τούτω Β.</note>
 </div>
 
-<div type="textpart" subtype="chapter" n="37">
+<div type="textpart" subtype="chapter" n="5">
 <pb n="579"/>
 <head>ΚΕΦΑΛΗ Ε.</head>
 <p>Περὶ τῆς ἑορτῆς τῆς σκηνοπηγίας, ὅτι τῆς ὀφειλομένης τοῖς ἁγίοις
@@ -21056,8 +21037,8 @@ inverso ordine Β. 21. ἕλ’ ἔτι] ἐν ἑνὶ τόπῳ Β. 23. εὖ
 13. πρὸς αὐτῆς] πρὸ ἑαυτῆς Β. νοοῖτο Β. νοῆται Ed. ἐν αὐτῇ B. 17. οἱ
 om. Β. οἶδεν γράμματα inverso ordine Β. 22. ὅτῳ] οὕτως Β. 23. γάρ
 om. Β. 24. σοφὸς] σοφῶς Β. 20. λόγοις] ἀλόγοις Β. 27. τῇ
-om. Β.</note>
-</div>
+om. Β.</note><!-- rest of volume not found -->
+</div></div>
 </div>
 </body>
 </text>
