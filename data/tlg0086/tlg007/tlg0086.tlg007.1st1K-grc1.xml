@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Περί χρωμάτων</title>
+                <author>Aristotle</author>
+                <editor>Immanuel Bekker</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                <respStmt>
+                    <persName>Lucy Parr</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Hillary Cheney</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Evie Edmundson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Claudia Filos</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carlos R. Gutiérrez-Rueda</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Catharine Haldeman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kelly Hamilton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew L Hokom</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Devin Lawson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zijun Liao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sean Mao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Halle Richardson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Adam Rosengarten</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Will Shao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuti Shelat</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Mel Ashton Trump</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Landon Van Berkum</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt></titleStmt>
+            
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0086.tlg007.1st1K-grc1.xml</idno>
+<pubPlace/>
+    
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+ 
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Aristotelis Opera</title>
+                        <author>Aristotle</author>
+                        <editor>Immanuel Bekker</editor>
+                        <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <pubPlace>Oxford</pubPlace>
+                            <biblScope unit="volume">6</biblScope>
+                            <date>1837</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/operaexrecension06arisuoft/page/n9/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc> 
+        </fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p></correction></editorialDecl>
+    
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+      <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+      <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"> 
+          <p>This pointer pattern extracts chapter.</p></cRefPattern>
+    </refsDecl>
+</encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-10-19" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" xml:lang="grc">
+    <pb facs="operaexrecension06arisuoft_0011"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="1">
+<p rend="indent"><milestone unit="page" resp="Bekker" n="791a"/> ΑΠΛΑ τῶν χρωμάτων ἐστὶν ὅσα τοῖς στοιχείοις συνακολουθεῖ, οἷον πυρὶ καὶ ἀέρι καὶ ὕδατι καὶ γῇ. Ἀὴρ μὲν γὰρ καὶ ὕδωρ καθ᾽ ἑαυτὰ τῇ φύσει λευκά, τὸ δὲ πῦρ καὶ ὁ ἥλιος ξανθά. Καὶ ἡ γῇ δ᾽ ἐστὶ φύσει λευκή, παρὰ δὲ τὴν βαφὴν πολύχρους φαίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="2">
+<p>Δῆλον δ᾽ ἐπὶ τῆς τέφρας τοῦτ᾽ ἐστίν· ἐκκαυθέντος γὰρ τοῦ τὴν βαφὴν πεποιηκότος ὑγροῦ λευκὴ γίνεται, οὐ παντελῶς δὲ δᾶ τὸ τῷ καπνῷ βεβάφθαι μέλανι ὄντι. Διὸ καὶ ἡ κονία ξανθὴ γίνεται, τοῦ φλογοειδοῦς καὶ μέλανος ἐπιχρώζοντος τὸ ὕδωρ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="3">
+<p>Τὸ δὲ μέλαν χρῶμα συνακολουθεῖ τοῖς στοιχείοις εἰς ἄλληλα μεταβαλλόντων. Τὰ δ᾽ ἄλλα ἐκ τούτων εὐσύνοπτα τῇ μίξει κεραννυμένων ἀλλήλοις γίνεται. Τὸ δὲ σκότος ἐκλείποντος τοῦ φωτὸς γίνεται. Τριχῶς γὰρ τὸ μέλαν ἡμῖν φαίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="4">
+<p>῍Η γὰρ ὅλως τὸ μὴ ὁρώμενόν ἐστι τῇ φύσει μέλαν (ἁπάντων γὰρ τῶν τοιούτων ἀνακλᾶταί τι φῶς μέλαν), ἢ ἀφ᾽ ὦν μηδὲν ὅλως φέρεται φῶς πρὸς τὰς ὄψεις· τὸ γὰρ μὴ ὁρώμενον, ὅταν ὁ περιέχων τόπος ὁρᾶται, φαντασίαν ποιεῖ μέλανος. Φαίνεται δὲ καὶ τὰ τοιαῦτα ἡμῖν ἅπαντα μέλανα, ἀφ᾽ ὅσων ἀραιὸν καὶ ὀλίγον ἰσχυρῶς ἀνακλᾶται τὸ φῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="5">
+    <p>Διὸ καὶ αἱ σκιαὶ φαίνονται μέλαιναι. Ὀμοίως δὲ καὶ τὸ ὕδωρ, ὅταν τραχυνθῇ, καθάπερ ἡ τῆς θαλάττης φρίκη· διὰ γὰρ τὴν τραχύτητα τῆς ἐπιφανείας ὀλίγων τῶν αὐγῶν προσπιπτουράμουσῶν <pb facs="operaexrecension06arisuoft_0012"/> καὶ διασπωμένου τοῦ φωτός, τὸ σκιερὸν μέλαν φαίνεται. Καὶ τὸ νέφος, ὅταν ᾖ πυκνὸν ἰσχυρῶς, διὰ τοῦτο.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="6">
+<p>Κατὰ τὰ αὐτὰ δὲ τούτοις καὶ τὸ ὕδωρ καὶ ὁ ἀήρ, ὅταν ᾖ μὴ παντελῶς διαδῦνον τὸ φῶς. Καὶ γὰρ ταῦτα εἶναι δοκεῖ μέλανα, βάθος ἔχοντα, διὰ τὸ παντελῶς ἀραιὰς ἀνακλᾶσθαι <milestone unit="page" resp="Bekker" n="791b"/> τὰς ἀκτῖνας· τὰ γὰρ μεταξὺ μόρια τοῦ φωτὸς αὐτῶν ἅπαντα εἶναι δοκεῖ μέλανα διὰ τὸ σκότος,</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="7">
+<p>Ὄτι δὲ τὸ σκότος οὐ χρῶμα ἀλλὰ στέρησίς ἐστι φωτός, οὐ χαλεπὸν ἐξ ἄλλων τε πολλῶν καταμαθεῖν, καὶ μάλστα ἐκ τοῦ μηδὲ αἰσθητὸν εἶναι τὸ πηλίκον καὶ ποῖόν τι τῷ σχήματι τετύχηκεν ὂν τὸ σκότος, καθάπερ ἐπὶ τῶν ἄλλων ὁρατῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="8">
+<p>Τὸ δὲ φῶς ὅτι πυρός ἐστι χρῶμα, δῆλον ἐκ τοῦ μηδεμίαν ἄλλην ἢ ταύτην ἔχον εὑρίσκεσθαι χρόαν, καὶ διὰ τὸ μόνον τοῦτο δι᾽ ἑαυτοῦ ὁρατὸν γίνεσθαι, τὰ δ᾽ ἄλλα διὰ τούτου. Ἐπισκεπτέον δὲ τοῦτο, Ἐνια γὰρ οὐκ ὄντα πῦρ οὐδὲ πυρὸς εἴδη τὴν φύσιν φῶς ποιεῖν φαίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="9">
+<p>Εἰ μὴ ἄρα τὸ μὲν τοῦ πυρὸς χρῶμα φῶς ἐστίν, οὐ μέντοι καὶ τὸ φῶς πυρός ἐστι χρῶμα μόνου, ἀλλ᾽ ἐνδέχεται μὴ μόνῳ μὲν ὑπάρχειν τῷ πυρὶ τὴν χρόαν ταύτην, εἶναι μέντοι χρῶμα τὸ φῶς αὐτοῦ. Οὐδενὶ γοῦν ἄλλῳ τὴν ὅρασιν αὐτοῦ συμβαίνει γίνεσθαι πλὴν τῷ φωτί, καθάπερ καὶ τὴν τῶν ἄλλων σωμάτων ἁπάντων τῇ τοῦ σώματος φαντασίᾳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="10">
+<p>Τὸ δὲ μέλαν χρῶμα συμβαίνει γίνεσθαι, ὅταν ὁ ἀὴρ καὶ τὸ ὕδωρ ὑπὸ τοῦ πυρὸς διακαυθῇ, διὸ καὶ πάντα τὰ καόμενα μελαίνεται, καθάπερ ξύλα καὶ ἄνθρακες σβεσθέντος τοῦ πυρός, καὶ ὁ ἐκ τοῦ κεράμου καπνὸς ἐκκρινομένου τοῦ ἐνυπάρχοντος ἐν τῷ κεράμῳ ὑγροῦ καὶ καομένου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="11">
+<p>Διὸ καὶ τοῦ καπνοῦ γίνεται μελάνπὸντατος <pb facs="operaexrecension06arisuoft_0013"/> ὁ ἀπὸ τῶν πιόνων καὶ λιπαρῶν, οἷον ἐλαίου καὶ πίττης καὶ δᾳδός, διὰ τὸ μάλιστα ταῦτα κάεσθαι καὶ συνέχειαν ποιεῖν. Μέλανα δὲ καὶ ταῦτα γίνεται, δι᾽ ὅσων ῥεῖ τὸ ὕδωρ, ὅταν βρυωθέντων πρῶτον ἀναξηρανθῇ τὸ ὑγρόν, καθάπερ καὶ τὰ ἐν τοῖς τοίχοις κονιάματα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:1" n="12">
+<p>Ὁμοίως δὲ καὶ οἱ <milestone unit="page" resp="Bekker" n="792a"/> καθ᾽ ὕδατος λίθοι· καὶ γὰρ οὗτοι βρυωθέντες, ὕστερον ἀποξηραινόμενοι τῷ χρώματι γίνονται μέλανες. Τὰ μὲν οὖν ἁπλᾶ τῶν χρωμάτων ταῦτα καὶ τοσαῦτά ἐστιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="1">
+<p rend="indent">Τὰ δ᾽ ἄλλα ἐκ τούτων τῇ κράσει καὶ τῷ μᾶλλον καὶ  ἧττον γιγνόμενα πολλὰς καὶ ποικίλας ποιεῖ χρωμάτων φαντασίας. Κατὰ μὲν τὸ μᾶλλον καὶ ἧττον, ὥσπερ τὸ φοινικοῦν καὶ τὸ ἁλουργές, κατὰ δὲ τὴν κρᾶσιν, ὥσπερ τὸ λευκὸν καὶ τὸ μέλαν, ὅταν μιχθέντα φαιοῦ ποιήσῃ φαντασίαν. Διὸ τὸ μέλαν καὶ σκιερὸν τῷ φωτὶ μιγνύμενον φοινικοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="2">
+<p>Τὸ γὰρ μέλαν μιγνύμενον τῷ τε τοῦ ἡλίου καὶ τῷ ἀπὸ τοῦ πυρὸς φωτὶ θεωροῦμεν ἀεὶ γιγνόμενον φοινικοῦν, καὶ τὰ μέλανα πυρωθέντα πάντα εἰς χρῶμα μεταβάλλοντα φοινικοῦν· αἵ τε γὰρ καπνώδεις φλόγες καὶ οἱ ἄνθρακες, ὅταν ὦσι διακεκαυμένοι, φαίνονται χρῶμα ἔχοντες φοινικοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="3">
+<p>Τὸ δ᾽ ἁλουργὲς εὐανθὲς μὲν γίνεται καὶ λαμπρόν, ὅταν τῷ μετρίῳ λευκῷ καὶ σκιερῷ κραθῶσιν ἀσθενεῖς αἱ τοῦ ἡλίου αὐγαί. Διὸ καὶ περὶ ἀνατολὰς καὶ δύσεις ὁ ἀὴρ πορφυροειδὴς ἔστιν ὅτε φαίνεται, περὶ ἀνατολὴν καὶ δύσιν ὄντος τοῦ ἡλίου· ἀσθενεῖς γὰρ οὖσαι τὸτε μάλιστα πρὸς σκιερὸν ὄντα τὸν ἀέρα προσβάλλουσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="4">
+<p>Φαίνεται δὲ καὶ ἡ θάλαττα πορφυροειδής, ὅταν τὰ κύματα μετεωριζόμενα κατὰ τὴν ἔγκλισιν σκιασθῇ· πρὸς γὰρ τὸν ταύτης κλισμὸν ἀσθενεῖς <pb facs="operaexrecension06arisuoft_0014"/> αἱ τοῦ ἡλίου αὐγαὶ προσβάλλουσαι ποιοῦσι φαίνεσθαι τὸ χρῶμα ἁλουργές. Ὃ καὶ ἐπὶ τῶν πτερωμάτων θεωρεῖται γιγνόμενον· ἐντεινόμενα γάρ πως πρὸς τὸ φῶς ἁλουργὲς ἔχει τὸ χρῶμα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="5">
+<p>Ἐλάττονος δὲ τοῦ φωτὸς προσβάλλοντος ζοφερόν, ὃ καλοῦσιν ὄρφνιον· πολὺ δὲ καὶ τῷ πρώτῳ μέλανι κραθὲν φοινικοῦν. Εὐανθὲς δ᾽ ὂν καὶ στίλβον εἰς τὸ φλογοειδὲς χρῶμα μεταβάλλει. Κατὰ γὰρ τὴν πρὸς ἄλληλα κρᾶσιν οὕτως ληπτέον, ἐξ ὑποκειμένου τεθεωρημένου χρώματος ποιοῦντας τὴν μίξιν, ἀλλὰ μὴ πάντων ὁμοίαν γένεσιν ποιοῦντας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="6">
+<p>Ἔστι γὰρ τῶν χρωμάτων οὐχ ἁπλᾶ μέν, λόγον δ᾽ ἔχει πρός τινα τὸν αὐτὸν τῶν συνθέτων ὅνπερ τὰ ἁπλᾶ πρὸς ἑαυτά, διὰ τὸ τὰ ἁπλᾶ πρὸς μίξιν ἑνὸς ἔχειν, <milestone unit="page" resp="Bekker" n="792b"/> καὶ μὴ εὔσημον ἐν τῷ παντί, καὶ προστεθεωρημένον κατασκευάζειν ὁμοίως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="7">
+<p>Τὴν γὰρ τοῦ ἁλουργοῦ ἢ φοινικιοῦ κρᾶσιν λέγοντας ἀνάγκη ὁμοίως τοῖς ἐκ τούτων μιγνυμένοις καὶ ποιοῦσιν ἄλλην χρόαν τὴν γένεσιν διηγεῖσθαι, καὶ μὴ ὁμοίαν ἔμφασιν ποιεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="8">
+<p>Διόπερ ἐκ τοῦ προκατεσκευασμένου ληπτέον καὶ θεωρητέον τὴν κρᾶσιν, οἷον ὅτι τὸ οἰνωπὸν χρῶμα γίνεται, ὅταν ἀκράτῳ τῷ μέλανι καὶ στίλβοντι κραθῶσιν αὐγαὶ ἠεροειδεῖς, ὥσπερ καὶ αἱ τῶν βοτρύων ῥᾶγες· καὶ γὰρ τούτων οἰνωπὸν φαίνεται τὸ χρῶμα ἐν τῷ πεπαίνεσθαι· μελαινομένων γὰρ τὸ φοινικοῦν εἰς τὸ ἁλουργὲς μεταβάλλει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="9">
+<p>Κατὰ δὲ τὸν ὑποδεδειγμένον τρόπον θεωρητέον πάσας τὰς τῶν χρωμάτων διαφοράς, ἐκ κινήσεως τὴν ὁμοιότητα λαμβάνοντας κατ᾽ αὐτὸ τὸ φαινόμενον, τὴν ἐν ἑκάστῳ μίξιν ὁμοιοῦντας καὶ ἐπὶ τῶν κατὰ μέρος ἐν γενέσει τινὶ καὶ κράσει ποιούντων φαντασίαν, καὶ πίστιν <pb facs="operaexrecension06arisuoft_0015"/> προσφερομένους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="10">
+<p>Δεῖ δὲ καὶ πάντων τούτων ποιεῖσθαι τὴν θεωρίαν μὴ καθάπερ οἱ ζωγράφοι τὰ χρώματα ταῦτα κεραννύντας, ἀλλ᾽ ἀπὸ τῶν εἰρημένων τὰς ἀνακλωμένας αὐγὰς πρὸς ἀλλήλας συμβάλλοντας· μάλιστα γὰρ δύναιτ᾽ ἄν τις κατὰ φύσιν θεωρῆσαι τὰς τῶν χρωμάτων κράσεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="11">
+<p>Τὰς δὲ πίστεις καὶ τὰ ὅμοια δεῖ ἐν οἷς ἡ γένεσις ἔσται φανερὰ τῶν χρωμάτων. Ταῦτα δὲ μάλιστά ἐστι τό τ᾽ ἀπὸ τοῦ ἡλίου φῶς καὶ τὸ ἀπὸ τοῦ πυρὸς καὶ ὁ ἀὴρ καὶ τὸ ὕδωρ· κεραννύμενα γὰρ τῷ μᾶλλον καὶ ἧττον ταῦτα μάλιστα πάσας ὡς εἰπεῖν τὰς χρόας ἀποτελεῖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:2" n="12">
+<p>Ἐπιληπτέον δὲ καὶ ἀπὸ τῶν ἄλλων χρωμάτων ταῖς αὐγαῖς κεραννυμένων τὴν ὁμοιότητα· οἱ γὰρ ἄνθρακες καὶ ὁ καπνὸς καὶ ὁ ἰὸς καὶ τὸ θεῖον καὶ τὰ πτερώματα κεραννύμενα τὰ μὲν ταῖς τοῦ ἡλίου αὐγαῖς, τὰ δὲ ταῖς τοῦ πυρός, πολλὰς καὶ ποικίλας ποιοῦσι μεταβολὰς χρωμάτων. Τὰ δὲ καὶ τῇ πέψει θεωρητέον, γινόμενα ἐν φυτοῖς καὶ καρποῖς καὶ τριχώμασι καὶ πτερώμασι καὶ τοῖς τοιούτοις πᾶσιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="1">
+<p rend="indent">Δεῖ δὲ μὴ λανθάνειν τὸ πολυειδὲς καὶ τὸ ἄπειρον τῶν χρωμάτων, διὰ πόσα συμβαίνει γίνεσθαι. Εὑρήσομμεν γὰρ <milestone unit="page" resp="Bekker" n="793a"/> ἤτοι διὰ τὸ τῷ φωτὶ καὶ ταῖς σκιαῖς ἀνίσως καὶ ἀνωμάλως λαμβάνεσθαι· καὶ γὰρ αἱ σκιαὶ καὶ τὸ φῶς κατὰ τὸ μᾶλλον καὶ ἧττον πολὺ διαφέρουσιν αὑτῶν, ὥστε καὶ καθ᾽ αὑτὰς καὶ μετὰ τῶν χρωμάτων μιγνύμεναι ποιοῦσι μεταβολὰς χρωμάτων, ἢ τῷ τὰ κεραννύμενα τῷ πλήθει καὶ ταῖς δυνάμεσι διαφέρειν, ἢ τῷ λόγους ἔχειν μὴ τοὺς αὐτούς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="2">
+<p>Πολλὰς γὰρ καὶ τὸ ἁλουργὲς ἔχει διαφορὰς καὶ τὸ φοινικιοῦν καὶ τὸ λευκὸν καὶ τῶν ἄλλων ἕκαστον καὶ κατὰ τὸ μᾶλλον καὶ ἧττον καὶ κατὰ τὴν πρὸς ἄλληλα μίξιν καὶ εἰλικρίνειαν αὐτῶν. Ποιεῖ δὲ διαφορὰν καὶ τὸ λαμπρὸν ἢ στίλβον εἶναι <pb facs="operaexrecension06arisuoft_0016"/> τὸ μιγνύμενον ἢ τοὐναντίον αὐχμηρὸν καὶ ἀλαμπές.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="3">
+<p>Ἔστι δὲ τὸ στίλβον οὐκ ἄλλο τι ἢ συνέχεια φωτὸς καὶ πυκνότης. Τὸ γὰρ χρυσοειδὲς γίνεται, ὅταν τὸ ξανθὸν καὶ τὸ ἡλιῶδες πυκνωθὲν ἰσχυρῶς στίλβῃ. Διὸ καὶ οἱ τῶν περιστερῶν τράχηλοι καὶ τῶν ὑδάτων οἱ σταλαγμοὶ φαίνονται χρυσοειδεῖς τοῦ φωτὸς ἀνακλωμένου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="4">
+<p>Ἔστι δὲ ἃ λειούμενα τρίψει καὶ δυνάμεσί τισιν ἀλλοίας ἴσχει καὶ ποικίλας χρόας, ὥσπερ καὶ ὁ ἄργυρος παρατριβόμενος καὶ χρυσὸς καὶ χαλκὸς καὶ σίδηρος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="5">
+<p>Καί τινα γένη λίθων διαφόρους ποιεῖ χρόας, καθάπερ καὶ . . . μέλαιναι γὰρ οὖσαι λευκὰς γράφουσι γραμμάς, διὰ τὸ πάντων τῶν τοιούτων τὰς μὲν ἐξ ἀρχῆς συστάσεις ἐκ μικρῶν εἶναι μορίων καὶ πυκνῶν καὶ μελάνων, ὑπὸ δὲ τῆς ἐν τῇ γενέσει βαφῆς ἁπάντων τῶν πόρων κεχρωσμένων δι᾽ ὧν διελήλυθεν αὐτῶν ἡ βαφή, ἄλλην ἐσχηκέναι τὴν τοῦ χρώματος φαντασίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="6">
+<p>Ὁ δ᾽ ἀποτριβόμενος ἀπ᾽ αὐτῶν οὐκέτι γίνεται χρυσοειδὴς οὐδὲ χαλκοειδὴς οὐδ᾽ ἄλλην οὐδεμίαν τοιαύτην ἔχων χροιάν, ἀλλὰ πάντως μέλας, διὰ τὸ τοὺς μὲν πόρους παρατριβομένων αὐτῶν ἀναρρήγνυσθαι, δι᾽ ὧν ἡ βαφὴ διελήλυθε, φύσει δὲ καὶ τῶν αὐτῶν εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="7">
+<p>Τοῦ γὰρ προτέρου χρώματος οὐκέτι ὄντος ἡμῖν φανεροῦ παρὰ τὸ διασπᾶσθαι τὴν βαφήν, τὸ κατὰ φύσιν ὑπάρχον αὐτοῖς χρῶμα ὁρῶμεν· διὸ καὶ πάντα φαίνεται μέλανα. Ἐν δὲ τῷ παρατρίβεσθαι πρὸς ὁμαλὲς καὶ λεῖον ἕκαστον τούτων, καθάπερ καὶ πρὸς τὰς <milestone unit="page" resp="Bekker" n="793b"/> βασάνους, ἀποβάλλοντα ἀπολαμβάνει πάλιν τὴν χρόαν ἐν τῇ συνάψει καὶ συνεχείᾳ, τὸ τῆς βαφῆς διαφαινόμενον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="8">
+<p>Ἐπὶ δὲ τῶν καυστῶν καὶ διαλυομένων καὶ τηκομένων ἐν τῷ πυρὶ ταῦτα πλείστας ἔχει <pb facs="operaexrecension06arisuoft_0017"/> χρόας, ὅσων ὁ καπνός ἐστι λεπτὸς καὶ ἀεροειδὴς καὶ τὰ χρώματα σκιώδη, ὥσπερ ὅ τε ἀπὸ τοῦ θείου καὶ τῶν ἰωμένων χαλκείων, καὶ ὅσα ἐστὶ πυκνὰ καὶ λεῖα, καθάπερ ὁ ἄργυρος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="9">
+<p>Ἐπὶ δὲ τῶν ἄλλων ὅσα σκιώδεις ἔχει τὰς χρόαςκαὶ λειότητος μετέχει, ὥσπερ τὸ ὕδωρ καὶ τὰ νέφη καὶ τὰπτερώματα τῶν ὀρνίθων· καὶ γὰρ ταῦτα διά τε τὴν λειότητα καὶ τὰς προσπιπτούσας αὐγάς, ἄλλοτε  ἄλλως κεραννυμένας, ποιεῖ διαφόρους τὰς χρόας, καθάπερ καὶ τὸ σκότος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="10">
+<p>Τῶν δὲ χρωμάτων οὐδὲν ὁρῶμεν εἰλικρινὲς οἷόν ἐστιν, ἀλλὰ πάντα κεκραμένα ἐν ἑτέροις· καὶ γὰρ ἄν μηδενὶ τῶν ἄλλων, ταῖς γε τοῦ φωτὸς αὐγαῖς καὶ ταῖς σκιαῖς κεραννύμενα ἀλλοῖα, καὶ οὐχ οἷά ἐστι, φαίνεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="11">
+<p>Διὸ καὶ τὰ ἐν σκιᾷ θεωρούμενα καὶ ἐν φωτὶ καὶ ἡλίῳ, καὶ σκληρᾷ αὐγῇ ἢ μαλακῇ, καὶ κατὰ τὰς ἐγκλίσεις οὕτως ἢ οὕτως ἕχοντι, καὶ κατὰ τὰς ἄλλας διαφοράς, ἀλλοῖα φαίνεται. Καὶ ταῖς πρὸς τῷ πυρὶ καὶ τῇ σελήνῃ, καὶ ταῖς τῶν λύχνων αὐγαῖς, διὸ καὶ τὸ φῶς ἑκάστου τούτων ἀλλοιοτέραν ἔχει χρόαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="12">
+<p>Καὶ τῇ πρὸς ἄλληλα δὲ μίξει τῶν χρωμάτων· δι᾽ ἀλλήλων γὰρ φερόμενα χρώζεται. Τὸ γὰρ φῶς ὅταν προσπεσὸν ὑπό τινων χρωσθῇ, καὶ γένηται φοινικιοῦν ἢ ποῶδες, καὶ τὸ ἀνακλασθὲν προσπέσῃ πρὸς ἕτερόν τι χρῶμα, πάλιν ὑπ᾽ ἐκείνου κεραννύμενον ἄλλην τινὰ λαμβάνει τοῦ χρώματος κρᾶσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="13">
+<p>Καὶ τοῦτο πάσχον συνεχῶς μὲν οὐκ αἰσθητῶς δὲ ἐνίοτε παραγίνεται πρὸς τὰς ὄψεις ἐκ πολλῶν μὲν κεκραμένον χρωμάτων, ἑνὸς δέ τινος τῶν μάλιστα ἐπικρατούντων ποιοῦν τὴν αἴσθησιν. Διὸ καὶ καθ᾽ ὕδατος ὑδατοειδῆ μᾶλλον φαίνεται, καὶ τὰ ἐν τοῖς κατόπτροις ὁμοίας ἔχοντα χρόας <pb facs="operaexrecension06arisuoft_0018"/> ταῖς τῶν κατόπτρων. Ὂ καὶ περὶ τὸν ἀέρα οἰητέον συμβαίνειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="14">
+<p>Ὤστε ἐκ τριῶν εἶναι τὰς χρόας ἁπάσας μεμιγμένας, τοῦ φωτός, καὶ δι᾽ ὦν φαίνεται τὸ φῶς, οἷον τοῦ τε ὕδατος <milestone unit="page" resp="Bekker" n="794a"/> καὶ τοῦ ἀέρος, καὶ τρίτου τῶν ὑποκειμένων χρωμάτων, ἀφ᾽ ὦν ἀνακλᾶσθαι συμβαίνει τὸ φῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="15">
+<p>Τὸ δὲ λευκὸν καὶ διαφανὲς ὅταν μὲν ἀραιὸν ᾖ σφόδρα, φαίνεται τῷ χρώματι ἀεροειδές· ἐπὶ δὲ τῶν πυκνῶν ἐπὶ πάντων ἐπιφαίνεταί τις ἀχλύς, καθάπερ ἐπὶ τοῦ ὕδατος καὶ ὑάλου καὶ τοῦ ἀέρος, ὅταν ᾖ παχύς. Τῶν γὰρ αὐγῶν διὰ τὴν πυκνότητα πανταχόθεν ἐκλειπουσῶν, οὐ δυνάμεθα τὰ ἐντὸς αὐτῶν ἀκριβῶς διορᾶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="16">
+<p>Ὀ δ᾽ ἀὴρ ἐγγύθεν μὲν θεωρούμενος οὐδὲν ἔχειν φαίνεται χρῶμα (διὰ γὰρ τὴν ἀραιότητα ὑπὸ τῶν αὐγῶν κρατεῖται, χωριζόμενος ὑπ᾽ αὐτῶν πυκνοτέρων οὐσῶν καὶ διαφαινομένων δι᾽ αὐτοῦ), ἐν βάθει δὲ θεωρουμένου, ἐγγυτάτω φαίνεται τῷ χρώματι κυανοειδὴς διὰ τὴν ἀραιότητα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:3" n="17">
+<p>῏Ηι γὰρ λείπει τὸ φῶς, ταύτῃ σκότῳ διειλημμένος φαίνεται κυανοειδής. Ἐπιπυκνωθεὶς δέ, καθάπερ καὶ τὸ ὕδωρ, πάντων λευκότατόν ἐστιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:4" n="1">
+<p rend="indent">Τὰ δὲ βαπτόμενα πάντα τὰς χρόας ἀπὸ τῶν βαπτόντων λαμβάνει. Πολλὰ μὲν γὰρ τοῖς ἄνθεσι βάπτεται τοῖς φυομένοις, πολλὰ δὲ ῥίζαις, πολλὰ δὲ φλοιοῖς ἢ ξύλοις ἢ φύλλοις ἢ καρποῖς. Ἔτι δὲ πολλὰ μὲν γῇ, πολλὰ δ᾽ ἀφρῷ, πολλὰ δὲ καὶ μελαντηρίᾳ. Τὰ δὲ καὶ τοῖς τῶν ζῴων χυλοῖς, καθάπερ καὶ τὸ ἁλουργὲς τῇ πορφύρᾳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:4" n="2">
+<p>Τὰ δὲ οἴνῳ, τὰ δὲ καπνῷ, τὰ δὲ κονίᾳ, τὰ δὲ θαλάττῃ, ὥσπερ τὰ τριχώματα τῶν θαλαττίων· καὶ γὰρ ταῦτα πάντα ὑπὸ τῆς θαλάττης γίγνονται πυρρά. Καὶ ὅλως ὅσα χρόας ἰδίας ἔχει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:4" n="3">
+<p>Ἀεὶ γὰρ ἀπὸ πάντων αὐτῶν, ἅμα τῷ τε ὑγρῷ καὶ θερμῷ <pb facs="operaexrecension06arisuoft_0019"/> τῶν χρωμάτων συνεισιόντων εἰς τοὺς τῶν βαπτομένων πόρους, ὅταν ἀποξηρανθῇ, τὰς ἀπ᾽ ἐκείνων  χρόας λαμβάνει. Διὸ καὶ πολλάκις αὐτῶν ἐκπλύνεται, τῶν ἀνθῶν ἐκ τῶν πόρων ἐκρυέντων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:4" n="4">
+<p>Πολλὰς δὲ καὶ αἱ στύψεις ἐν τῇ βαφῇ ποιοῦσι διαφορὰς καὶ μίξεις, καὶ τὰ πάθη τῶν βαπτομένων, ὥσπερ καὶ ἐπὶ τῆς κράσεως εἴρηται πρότερον. Βάπτεται δὲ καὶ τὰ μέλανα τῶν ἐρίων, οὐ μὴν ὁμοίως γε τῷ χρώματι γίγνεται λαμπρά, διὰ τὸ βάπτεσθαι τοὺς πόρους αὐτῶν εἰς τοὺς τῶν ἀνθῶν εἰσιόντας, τὰ δὲ μεταξὺ <milestone unit="page" resp="Bekker" n="794b"/> διαστήματα τῆς τριχὸς μηδεμίαν λαμβάνειν βαφήν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:4" n="5">
+<p>Ταῦτα λευκὰ μὲν ὄντα, καὶ παρ᾽ ἄλληλα κείμενα τοῖς χρῶμασι, ποιεῖ πάντα φαίνεσθαι τὰ ἄνθη λαμπρότερα· τὰ μέλανα δὲ τοὐναντίον σκιερὰ καὶ ζοφώδη. Διὸ καὶ τὸ καλούμενον ὄρφνιον εὐανθέστερον γίνεται τῶν μελάνων ἢ τῶν λευκῶν· οὕτω γὰρ ἀκρατέστερον αὐτῶν φαίνεται τὸ ἄνθος, κεραννύμενον ταῖς τοῦ μέλανος αὐγαῖς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:4" n="6">
+<p>Καθ᾽ αὑτὸ μὲν γὰρ τὸ μεταξὺ διάστημα τῶν πόρων οὐχ ὁρᾶται διὰ σμικρότητα, καθάπερ οὐδὲ καττίτερος τῷ χαλκῷ κραθείς, οὐδὲ τῶν ἄλλων οὐθὲν τῶν τοιούτων. Τῶν δὲ βαπτομένων τὰ χρώματα ἀλλοιοῦται διὰ τὰς εἰρημένας αἰτίας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="1">
+    <p rend="indent">Τὰ δὲ τριχώματα καὶ τὰ πτερώματα καὶ τὰ ἄνθη καὶ οἱ καρποὶ καὶ τὰ φυτὰ πάντα ὅτι μὲν ἅμα τῇ πέψει πάσας τὰς τῶν χρωμάτων λαμβάνει μεταβολάς, φανερὸν ἐκ πολλῶν· τίνες δέ εἰσιν ἑκάστοις τῶν φυομένων ἀρχαὶ τῶν χρωμάτων, καὶ ποίας τὰς μεταβολὰς ἐκ ποίων λαμβάνουσι, καὶ δι᾽ ἂς αἰτίας ταῦτα πάσχει, κἂν εἴ τινας ἄλλας ἀπορίας αὐτοῖς <pb facs="operaexrecension06arisuoft_0020"/> συμβαίνει παρακολουθεῖν, περὶ πάντων τούτων ἐπισκεπτέον ἐκ τῶν τοιούτων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="2">
+<p>Ἐν πᾶσι δὴ τοῖς φυτοῖς ἀρχὴ τὸ ποῶδές ἐστι τῶν χρωμάτων· καὶ γὰρ οἱ βλαστοὶ καὶ τὰ φύλλα καὶ οἱ καρποὶ γίνονται κατ᾽ ἀρχὰς ποώδεις. Ἴδοι δ᾽ ἄν τις τοῦτο καὶ ἐπὶ τῶν ὑομένων ὑδάτων· ὅπου ἂν πλείονα χρόνον συστῇ τὸ ὕδωρ, πάλιν ἀποξηραινόμενον γίνεται τῷ χρώματι ποῶδες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="3">
+<p>Κατὰ λόγον δὲ συμβαίνει καὶ τὸ πρῶτον ἐν πᾶσι τοῖς φυομένοις τοῦτο συνίστασθαι τῶν χρωμάτων. Τὰ γὰρ ὕδατα πάντα χρονιζόμενα κατ᾽ ἀρχὰς μὲν γίνεται χλωρά, κεραννύμενα ταῖς τοῦ ἡλίου αὐγαῖς, κατὰ μικρὸν δὲ μελαινόμενα, πάλιν μιγνύμενα τῷ χλωρῷ, γίνεται ποώδη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="4">
+<p>Τὸ γὰρ ὑγρόν, ὥσπερ εἴρηται, καθ᾽ ἑαυτὸ παλαιούμενον καὶ καταξηραινόμενον μελαίνεται, καθάπερ καὶ τὰ ἐν ταῖς δεξαμεναῖς κονιάματα· καὶ γὰρ τούτων ὅσα μέν ἐστιν ἀεὶ καθ᾽ ὕδατος, ταῦτα μὲν ἅπαντα γίγνεται μέλανα διὰ τὸ καθ᾽ αὑτὰ μὴ ξηραίνεσθαι διαψυχόμενον τὸ ὑγρόν, ὅσον δ᾽ <milestone unit="page" resp="Bekker" n="795a"/> ἀπαντλούμενον ἡλιοῦται, τὸ μὲν ποῶδες γίνεται διὰ τὸ τὸ ξανθὸν τῷ μέλανι κεράννυσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="5">
+<p>Μᾶλλον μὲν οὖν τοῦ ὑγροῦ μελαινομένου τὸ ποῶδες γίνεται κατακορὲς ἰσχυρῶς καὶ πρασοειδές. Διὸ καὶ πάντων οἱ παλαιοὶ βλαστοὶ πολὺ μᾶλλόν εἰσι τῶν νέων μέλανες· οἱ δὲ ξανθότεροι διὰ τὸ μήπω τὸ ὑγρὸν ἐν αὐτοῖς μελαίνεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="6">
+<p>Τῆς γὰρ αὐξήσεως αὐτῶν βραδυτέρας γιγνομένης, καὶ τῆς ὑγρασίας πολὺν χρόνον ἐμμενούσης, διὰ τὸ ψυχόμενον ἰσχυρῶς μελαίνεσθαι τὸ ὑγρόν, γίνεται πρασοειδὲς ἀκράτῳ τῷ μέλανι κεραννύμενον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="7">
+<p>Ἐν ὅσοις δὲ τὸ ὑγρὸν μὴ μίγνυται ταῖς τοῦ ἡλίου αὐγαῖς, τούτων διαμένει τὸ χρῶμα λευκόν, ἐὰν μὴ χρονιζόμενον καὶ καταξηραινόμενον μελανθῇ πρότερον. Διὸ καὶ τὰ μὲν ὑπὲρ <pb facs="operaexrecension06arisuoft_0021"/> γῆς χλωρὰ πάντων  τῶν φυομένων τὸ πρῶτόν ἐστι, τὰ δὲ κατὰ γῆς, καυλοὶ καὶ ῥίζαι λευκαί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="8">
+<p>Καὶ οἱ βλαστοὶ κατὰ γῆς μὲν ὄντες εἰσὶ λευκοί, περιαιρεθείσης δὲ τῆς γῆς τὸ μὲν ἐξ ἀρχῆς, ὡς προείρηται, πάντες γίγνονται ποιώδεις διὰ τὸ καὶ τὴν ὑγρασίαν τὴν διὰ τῶν βλαστῶν εἰς αὐτοὺς διηθουμένην τοιαύτην ἔχειν τὴν τοῦ χρώματος φύσιν, καὶ ταχέως αὐτὴν εἰς τὴν αὔξησιν καταναλίσκεσθαι τὴν τῶν καρπῶν· ὅταν δὲ μηκέτι αὐξάνωνται διὰ τὸ μὴ κρατεῖν ἤδη τὸ θερμὸν τῆς ἐπιρρεούσης τροφῆς, ἀλλὰ καὶ τοὐναντίον ἀναλύηται τὸ ὑγρὸν ὑπὸ τῆς θερμότητος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="9">
+<p>Ὄταν δὲ πεπαίνωνται οἱ καρποὶ πάντες, καὶ τῆς ὑπαρχούσης ἐν αὐτοῖς ὑγρασίας συνεψομένης ὑπό τε τοῦ ἡλίου καὶ τῆς τοῦ ἀέρος θερμότητος ἕκαστοι ἀπολαμβάνουσι τὰς ἀπὸ τῶν φυτῶν χρόας, καθάπερ καὶ τὰ βαπτόμενα τῶν ἀνθῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="10">
+<p>Διὸ κατὰ μικρὸν χρώζονται, καὶ μάλιστα αὐτῶν τὰ πρὸς τὸν ἥλιον ἐστραμμένα καὶ τὴν ἀλέαν. Ὤστε καὶ τὰς χρόας αὐτῶν ἅμα ταῖς ὥραις ἁπάντων μεταβάλλειν. Φανερὸν δὲ τοῦτο ἐστίν· οἱ γὰρ τοῦ ποώδους χρώματος ἅπαντες ἤδη πεπαινόμενοι μεταβάλλουσιν εἰς τὸ κατὰ φύσιν χρῶμα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="11">
+<p>Καὶ γὰρ λευκοὶ καὶ μέλανες καὶ φαιοὶ καὶ ξανθοὶ καὶ μελανοειδεῖς καὶ σκιοειδεῖς καὶ <milestone unit="page" resp="Bekker" n="795b"/> φοινικιοῖ καὶ οἰνωποὶ καὶ κροκοειδεῖς καὶ σχεδὸν ἁπάσας ἔχοντες γίγνονται τὰς τῶν χρωμάτων διαφοράς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="12">
+    <p>Ἐπεὶ δὲ τὰ πλεῖστα γίνεται τῶν χρωμάτων πλειόνων κεραννυμένων ἀλλήλοις, φανερὸν ὅτι καὶ τὰς ἐν τοῖς φυτοῖς χρόας ἀνάγκη τὰς αὐτὰς ἔχειν κράσεις· διὰ γὰρ τούτων τὸ ὑγρὸν διηθούμενον, καὶ μεθ᾽ ἑαυτοῦ συνεκκλύζον, <pb facs="operaexrecension06arisuoft_0022"/> ἁπάσας λαμβάνει τὰς τῶν χρωμάτων δυνάμεις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="13">
+<p>Καὶ τούτου συνεψομένου περὶ τὰς τῶν καρπῶν πέψεις ὑπό τε τοῦ ἡλίου καὶ τῆς τοῦ ἀέρος θερμότητος, ἕκαστα καθ᾽ ἑαυτὰ συνίσταται τῶν χρμάτων, τὰ μὲν θᾶττον τὰ δὲ βραδύτερον, καθάπερ συμβαίνει καὶ περὶ τὴν βαφὴν τὴν τῆς πορφύρας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="14">
+<p>Καὶ γὰρ ταύτην ὅταν κόψαντες ἅπασαν ἐξ αὐτῆς τὴν ὑγρασίαν ἐκκλύσωσι, καί ταύτην ἐγχέαντες ἕψωσιν ἐν ταῖς χύτραις, τὸ μὲν πρῶτον οὐδὲν ὅλως ἐν τῇ βαφῇ τῶν χρωμάτων φανερόν ἐστι διὰ τὸ κατὰ μικρὸν ἕκαστον αὐτῶν τοῦ ὑγροῦ συνεψομένου μᾶλλον καὶ τῶν ἔτι ὑπαρχόντων ἐν αὐτοῖς χρωμάτων μιγνυμένων ἀλλήλοις πολλὰς καὶ ποικίλας λαμβάνειν διαφοράς· καὶ γὰρ μέλαν καὶ λευκὸν καὶ ὄρφνιον καὶ ἀεροειδὲς καὶ τότε ἅπαν γίνεται συνεψηθέντων, ὥστε διὰ τὴν κρᾶσιν μηκέτι καθ᾽ αὑτὸ μηδὲν τῶν ἄλλων χρωμάτων φανερὸν εἶναι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="15">
+<p>Τὸ δ᾽ αὐτὸ τοῦτο συμβαίνει καὶ ἐπὶ τῶν καρπῶν. Ἐν πολλοῖς γὰρ διὰ τὸ μὴ πάσας ἅμα γίνεσθαι τὰς τῶν χρωμάτων πέψεις, ἀλλὰ τὰ μὲν αὐτῶν συνίστασθαι πρότερον τὰ δ᾽ ὕστερον, ἐξ ἑτέρων εἰς ἕτερα μεταβάλλουσιν, ὥσπερ καὶ οἱ βότρυες καὶ οἱ φοίνικες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="16">
+<p>Καὶ γὰρ τούτων ἔνιοι τὸ μὲν πρῶτον γίνονται φοινικοῖ, τοῦ δὲ μέλανος ἐν αὐτῷ συνισταμένου μεταβάλλουσι πάλιν εἰς τὸ οἰνωπόν· τὸ δὲ τελευταῖον γίνονται κυανοειδεῖς, ὅταν ἤδη καὶ τὸ φοινικιοῦν πολλῷ καὶ ἀκράτῳ τῷ μέλανι μιχθῇ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="17">
+<p>Τὰ γὰρ ὕστερον ἐπιγινόμενα τῶν χρωμάτων, ὅταν κρατήσῃ, τὰς προτέρας χρόας ἐξαλλάττει, Μάλιστα δὲ τοῦτο ἐπὶ τῶν μελάνων καρπῶν φανερόν ἐστιν· σχεδὸν γὰρ αὐτῶν οἱ πλεῖστοι, <pb facs="operaexrecension06arisuoft_0023"/> καθάπερ <milestone unit="page" resp="Bekker" n="796a"/> εἴρηται, κατ᾽ ἀρχὰς μὲν ἐκ τοῦ ποώδους μεταβάλλοντες μικρὸν ἐπιφοινικίζουσι καὶ γίνονται πυρροί, ταχὺ δὲ μεθίστανται πάλιν ἐκ τοῦ πυρροῦ καὶ ἀκράτου τοῦ μέλανος ἐν τοῖς τοιούτοις ἐνυπάρχοντος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="18">
+<p>Δηλοῖ δέ· καὶ γὰρ τὰ κλήματα καὶ τὰ ἔρια καὶ τὰ φύλλα πάντων ἐστὶ τῶν τοιούτων μέλανα διὰ τὸ πλείστην ἐν αὐτοῖς ὑπάρχειν τὴν τοιαύτην χρόαν, ἐπεὶ διότι γε τῶν καρπῶν οἱ μέλανες ἀμφοτέρων τῶν χρωμάτων μετέχουσι, φανερόν ἐστιν· πάντων γὰρ ὁ χυλὸς γίνεται τῶν τοιούτων οἰνωπός. Τὰ δὲ χρώματα ἐν τῇ γενέσει προτερεῖ τὰ φοινικιᾶ τῶν μελάνων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="19">
+<p>Δηλοῖ δέ· καὶ γὰρ τὰ ὑπὸ τοὺς σταλαγμοὐς ἐδάφη, καὶ ὅλως ὅπου συμβαίνει γίνεσθαι μετρία ὑδάτων ἔκρυσις ἐν τόποις σκιεροῖς, ἅπαντα μεταβάλλει πρῶτον ἐκ τοῦ ποώδους εἰς τὸ φοινικιοῦν χρῶμα, καὶ γίνεται τὸ ἔδαφος ὡς ἂν αἵματος ἀρτίως ἐπεσφαγμένου κατὰ τὸν τόπον τοῦτον, καθ᾽ ὃν ἂν λάβῃ τὸ ποῶδες τῶν χρωμάτων τὴν πέψιν· τὸ δὲ τελευταῖον καὶ τοῦτο μέλαν ἰσχυρῶς γίνεται καὶ κυανοειδές.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="20">
+<p>Ὅπερ συμβαίνει καὶ ἐπὶ τῶν καρπῶν. Ὅτι δὲ χρωμάτων ὕστερον ἐπιγινομένων, ὅταν κρατῆται τὰ πρότερον, τὸ χρῶμα τῶν καρπῶν μεταβάλλει, καὶ διὰ τῶν τοιούτων ῥᾴδιον συνιδεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="21">
+<p>Καὶ γὰρ τῆς ῥοιᾶς ὁ καρπὸς καὶ τὰ τῶν ῥόδων φύλλα κατ᾽ ἀρχὰς μὲν γίνεται λευκά, τὸ δὲ τελευταῖον ἤδη χρωζομένων ἐν αὐτοῖς τῶν χυλῶν ὑπὸ τῆς πέψεως ἀποχραίνεται, καὶ μεταβάλλει πάλιν εἰς τὸ τοῦ ἁλουργοῦ χρῶμα καὶ τὸ φοινικιοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="22">
+    <p>Τὰ δὲ καὶ πλείους ἐπ᾽ αὐτοῖς ἔχει χρόας, καθάπερ <pb facs="operaexrecension06arisuoft_0024"/> καὶ ἐπὶ τῆς μήκωνος ὁ ὀπὸς καὶ τῆς ἐλαίας ὁ ἀμόργης· καὶ γὰρ οὗτος τὸ μὲν πρῶτον γίνεται λευκός, καθάπερ καὶ ὁ τῆς ῥοιᾶς καρπός, λευκανθεὶς δὲ πάλιν εἰς τὸ φοινικιοῦν μεταβάλλει χρῶμα, τὸ δὲ τελευταῖον πολλῷ τῷ μέλανι κραθεὶς γίνεται κυανοειδής.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="23">
+<p>Διὸ καὶ τὰ τῆς μήκωνος φύλλα τὰ μὲν ἄνω ἔχει φοινικιοῦντα παρὰ τὸ γίνεσθαι ταχεῖαν αὐτῶν τὴν ἔκπεψιν, τὰ δὲ πρὸς ταῖς ἀρχαῖς μέλανα, ἤδη τούτου τοῦ <milestone unit="page" resp="Bekker" n="796b"/> χρώματος ἐν αὐτοῖς ἐπικρατοῦντος, ὥσπερ καὶ ἐπὶ τοῦ καρποῦ· καὶ γὰρ τὸ τελευταῖον γίνεται μέλας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="24">
+<p>Ἐν ὅσοις δ᾽ ὑπάρχει τῶν φυτῶν ἓν χρῶμα μόνον, οἷον τὸ λευκὸν ἢ τὸ μέλαν ἢ τὸ φοινικοῦν ἢ τὸ ἁλουργές, τούτων δὲ πάντων οἱ καρποὶ διαμένουσιν ἀεὶ τὴν αὐτὴν ἔχοντες τοῦ χρώματος φύσιν, ὅταν ἅπαξ ἐκ τοῦ ποώδους εἰς ἄλλην χρόαν μεταβάλλωσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="25">
+<p>Τὰ δ᾽ ἄνθη τοῖς καρποῖς ἐπ᾽ ἐνίων μὲν ὁμόχροα συμβαίνει γίνεσθαι, καθάπερ ἔχει καὶ ἐπὶ τῆς ῥοιᾶς· καὶ γὰρ ὁ καρπὸς αὐτῆς γίνεται φοινικιοῦς καὶ τὸ ἄνθος· ἐπ᾽ ἐνίων δὲ πολὺ τῷ χρώματι διαφέρει, οἷον ἐπί τε τῆς δάφνης καὶ τοῦ κιττοῦ· τὸ μὲν γὰρ ἄνθος ἐστὶν αὐτῶν ἁπάντων ξανθόν, ὁ δὲ καρπὸς τῶν μὲν μέλας τῶν δὲ φοινικιοῦς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="26">
+<p>Ὁμοίως δ᾽ ἔχει καὶ ἐπὶ τῆς μηλέας· καὶ γὰρ ταύτης τὸ μὲν ἄνθος ἐστὶ λευκὸν ἐπιπορφυρίζον, ὁ δὲ καρπὸς ξανθός. Τῆς δὲ μήκωνος τὸ μὲν ἄνθος φοινικιοῦν, ὁ δὲ καρπὸς ὁ μὲν μέλας ὁ δὲ λευκός, παρὰ τὸ καὶ τὰς πέψεις τῶν ἐνυπαρχόντων ἐν αὐτοῖς χυλῶν κατ᾽ ἄλλους γίνεσθαι χρόνους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="27">
+<p>Ῥᾴδιον δὲ τοῦτο ἐκ πολλῶν συνιδεῖν· καὶ γὰρ τῶν <pb facs="operaexrecension06arisuoft_0025"/> καρπῶν ἔνιοι, καθάπερ εἴρηται, πολλὰς διαφορὰς ἅμα τῇ πέψει λαμβάνουσιν. Διὸ καὶ τὰς ὀσμὰς καὶ τοὺς χυλοὺς πολὺ διαφόρους συμβαίνει τοῖς ἄνθεσι καὶ τοῖς καρποῖς συνακολουθεῖν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="28">
+<p>Ἔτι δὲ μᾶλλον τοῦτό ἐστιν ἐπ᾽ αὐτῶν τῶν ἀνθῶν φανερόν· τοῦ γὰρ αὐτοῦ φύλλου τὸ μέν ἐστι μέλαν τὸ δὲ φοινικιοῦν, ἐνίων δὲ τὸ μέν τι λευκὸν τὸ δὲ πορφυροειδές. Οὐχ ἥκιστα δὲ τοῦτο φανερόν ἐστιν ἐπὶ τῆς ἴριδος· πολλὰς γὰρ ἔχει καὶ τοῦτο τὸ ἄνθος ἐν αὑτῷ ποικιλίας παρὰ τὰς τῆς πέψεως διαφοράς, ὥσπερ καὶ τῶν βοτρύων, ὅταν ἤδη πεπαινόμενοι τυγχάνωσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="29">
+<p>Διὸ καὶ πάντων μάλιστα συμβαίνει πέττεσθαι τῶν ἀνθῶν τὰ ἄκρα, τὰ δὲ πρὸς ταῖς ἀρχαῖς ἀχρούστερα γίνεται πολλῷ. Σχεδὸν γὰρ ἐνίων ὥσπερ ἐκκάεται τὸ ὑγρὸν πρότερον ἢ λαβεῖν τὴν οἰκείαν πέψιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="30">
+<p>Διὸ καὶ τὰ μὲν ἄνθη τῷ χρώματι διαμένει, οἱ δὲ καρποὶ πεττόμενοι μεταβάλλουσιν· τὰ μὲν γὰρ διὰ <milestone unit="page" resp="Bekker" n="797a"/> μικρότητα τῆς τροφῆς ταχέως ἐκπέττεται, οἱ δὲ καρποὶ διὰ τὸ πλῆθος τῆς ὑγρασίας εἰς πάσας ἅμα τῇ πέψει τὰς κατὰ φύσιν χρόας μεταβάλλουσιν. Φανερὸν δὲ τοῦτο ἐστί, καθάπερ εἴρηται πρότερον, καὶ ἐπὶ τῶν βαπτομένων ἀνθῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="31">
+<p>Τὰ μὲν γὰρ ἐξ ἀρχῆς, ὅταν βάπτοντες τὴν πορφύραν καθιῶσι τὰς αἱματίδας, ὄρφνιαι γίνονται καὶ μέλαιναι καὶ ἀεροειδεῖς· τοῦ δ᾽ ἄνθους συνεψηθέντος ἱκανῶς ἁλουργὲς γίνεται εὐανθὲς καὶ λαμπρόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="32">
+<p>Ὥστ’ ἀνάγκη καὶ τῶν ἀνθῶν ὁμοίως πολλὰ τοῖς χρώμασι τῶν καρπῶν διαλλάττειν, καὶ τὰ μὲν ὑπερβαίνειν τὰ δὲ ἀπολείπειν τῶν κατὰ φύσιν χρωμάτων, διὰ τὸ τῶν μὲν ἀτελῆ τῶν δὲ τελείαν γινέσθαι τὴν πέψιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="33">
+    <p>Τὰ μὲν οὖν ἄνθη καὶ τοὺς καρποὺς διὰ ταύτας τὰς αἰτίας συμβαίνει τοῖς χρώμασιν ἀλλήλων διαφέρειν· τὰ δὲ <pb facs="operaexrecension06arisuoft_0026"/> φύλλα τῶν πλείστων δένδρων τὸ τελευταῖον γίνεται ξανθὰ διὰ τὸ τῆς τροφῆς ὑπολειπούσης φθάνειν αὐτὰ καταξηραινόμενα πρότερον ἢ μεταβάλλειν εἰς τὸ κατὰ φύσιν χρῶμα, ἐπεὶ καὶ τῶν ἀπορρεόντων καρπῶν ἔνιοι γίνονται τῷ χρώματι ξανθοὶ διὰ τὸ καὶ τούτων τῆς πέψεως πρότερον τὴν τροφὴν ὑπολείπειν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="34">
+<p>Ἔτι δὲ ὅ τε σῖτος καὶ τὰ φυόμενα πάντα· καὶ γὰρ ταῦτα τὸ τελευταῖον γίνεται ξανθά. Τὸ γὰρ ὑγρὸν ἐν αὐτοῖς οὐκέτι μελαινόμενον διὰ τὸ καταξηραίνεσθαι ταχέως ποιεῖ τὴν τοῦ χρώματος μεταβολήν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="35">
+<p>Μελαινόμενον γὰρ καὶ τῷ χλωρῷ κεραννύμενον γίνεται, καθάπερ εἴρηται, ποῶδες· ἀσθενεστέρου δὲ τοῦ μέλανος ἀεὶ γινομένου, πάλιν κατὰ μικρὸν εἰς τὸ χλωρὸν μεταβάλλει χρῶμα, καὶ τὸ τελευταῖον γίνεται ξανθόν, ἐπεὶ τά γε τῆς ἀπίου φύλλα καὶ τῆς ἀνδράχνης καί τινων ἄλλων πεττόμενα γίνεται φοινικιᾶ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:5" n="36">
+<p>Πλὴν ὅσα καὶ τούτων καταξηραίνεται ταχέως, ταῦτα γίνεται ξανθὰ διὰ τὸ τούτων πρὸ τῆς πέψεως τὴν τροφὴν ὑπολείπειν. Τὰς μὲν οὖν τῶν φυτῶν διαφορὰς μάλιστα εὔλογον συμβαίνειν διὰ τὰς εἰρημένας αἰτίας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="1">
+<p rend="indent">Γίνεται δὲ καὶ τὰ τριχώματα καὶ τὰ πτερώματα καὶ τὰ δέρματα καὶ ἵππων καὶ βοῶν καὶ προβάτων καὶ ἀνθρώπων καὶ τῶν ἄλλων ζῴων ἁπάντων καὶ λευκὰ καὶ <milestone unit="page" resp="Bekker" n="797b"/> φαιὰ καὶ πυρρὰ καὶ μέλανα διὰ τὴν αὐτὴν αἰτίαν, λευκὰ μὲν ὅταν ἔτι ὑπὸ τῆς πέψεως τὸ ὑγρὸν τὸ οἰκεῖον ἔχον χρῶμα καταξηρανθῇ, μέλανα δὲ τοὐναντίον ὅταν αὐτῶν ἐν τῇ γενέσει τὸ περὶ τὸν χρῶτα ὑγρόν, καθάπερ ἐν τοῖς ἄλλοις ἅπασι, παλαιούμενον καὶ χρονιζόμενον διὰ τὸ πλῆθος μελανθῇ· πάντων γὰρ τῶν τοιούτων ὅ τε χρὼς καὶ τὰ δέρματα γίνεται μέλανα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="2">
+<p>Φαιὰ δὲ καὶ πυρρὰ καὶ ξανθὰ καὶ τὰς ἄλλας ἔχοντα χρόας, ὅσα <pb facs="operaexrecension06arisuoft_0027"/> φθάνει καταξηραινόμενα πρότερον ἢ τελέως ἐν αὐτοῖς μεταβάλλειν εἰς τὸ μέλαν χρῶμα τὸ ὑγρόν. Οἷς δ᾽ ἂν ἀνωμάλως τοῦτο συμβῇ, καὶ τὰ χρώματα τοιαῦτα γίνεται ποικίλα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="3">
+<p>Διὸ καὶ πάντα τοῖς δέρμασι καὶ τῷ χρώματι συνακολουθεῖ, ἐπεὶ καὶ τῶν ἀνθρώπων τῶν ἐμπύρρων καὶ τὰ τριχώματα γίνεται λευκόπυρρα, τῶν δὲ μελάνων μέλανα· κἂν κατὰ μέρος τι τοῦ σώματος ἐξανθήσῃ λεύκη, καὶ τὰς τρίχας ἴσχουσιν ἅπαντες λευκὰς κατὰ τὸν τόπον τοῦτον, καθάπερ καὶ τὰ ποικίλα τῶν ζῴων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="4">
+<p>Οὕτως ἅπαντα τὰ τριχώματα καὶ τὰ πτερώματα τοῖς δέρμασι συνακολουθεῖ, καὶ τὰ κατὰ μέρος καὶ τὰ κατὰ σῶμα ὅλον. Ὀμοίως δὲ τούτοις ὁπλαὶ καὶ χηλαὶ καὶ ῥύγχη καὶ κέρατα· καὶ γὰρ ταῦτα τῶν μὲν μελάνων γίνεται μέλανα, τῶν δὲ λευκῶν λευκά, διὰ τὸ καὶ τούτοις ἅπασι διὰ τοῦ δέρματος τὴν τροφὴν εἰς τὴν ἐκτὸς περιοχὴν διηθεῖσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="5">
+<p>Ὅτι δὲ τοῦτό ἐστιν αἴτιον, οὐ χαλεπὸν ἐκ πολλῶν συνιδεῖν. Τῶν τε γὰρ παιδίων ἁπάντων αἱ κεφαλαὶ κατ᾽ ἀρχὰς μὲν γίνονται πυρραὶ διὰ τὴν ὀλιγότητα τῆς τροφῆς. Φανερὸν δὲ τοῦτό ἐστιν· καὶ γὰρ ἀσθενεῖς αἱ τρίχες καὶ ἀραιαὶ καὶ βραχεῖαι τὸ πρῶτον ἅπασιν ἐπιγίνονται τοῖς παιδίοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="6">
+<p>Προϊούσης δὲ τῆς ἡλικίας μελαίνονται πάλιν χρωζομένοις αὐτοῖς διὰ τὸ πλῆθος τῆς ἐπιρρεούσης τροφῆς. Ὁμοίως δὲ καὶ περὶ τὴν ἥβην καὶ τὸ γένειον, ὅταν ἄρχωνται τὸ πρῶτον ἡβᾶν καὶ γενειᾶν, καὶ αὗται γίνονται κατ᾽ ἀρχὰς μὲν πυρραὶ ταχέως διὰ τὴν ὀλιγότητα τῆς ὑγρασίας ἐν αὐταῖς καταξηραινομένης, τῆς τροφῆς δὲ πλέον ἐπὶ τὸν τόπον ἐπιφερομένης μελαίνονται πάλιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="7">
+<p>Αἱ δὲ ἐπὶ τοῦ σώματος πλεῖστον χρόνον πυρραὶ διαμένουσι <pb facs="operaexrecension06arisuoft_0028"/> διὰ τὴν ἔνδειαν <milestone unit="page" resp="Bekker" n="798a"/> τῆς τροφῆς, ἐπεὶ καθ᾽ ὃν ἂν χρόνον αὐξηθῶσι, καὶ ταύτας ὁμοίως συμβαίνει μελαίνεσθαι καθάπερ καὶ τὰς ἐπὶ τῆς ἥβης καὶ τῆς κεφαλῆς. Φανερὸν δ᾽ ἐστίν· καὶ γὰρ ὅσα μῆκος ἔχει τῶν τριχωμάτων, ὡς τὸ πολύ ἐστι τὰ μὲν πρὸς τῷ σώματι μελάντερα, τὰ δὲ πρὸς τοῖς ἄκροις ξανθότερα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="8">
+<p>Καὶ αἱ μὲν τῶν προβάτων καὶ ἵππων καὶ ἀνθρώπων, διὰ τὸ τὴν τροφὴν ἐλαχίστην αὐτοῖς ἐπὶ τούτους φέρεσθαι τοὺς τόπους, καὶ καταξηραίνεσθαι ταχέως. Γίνονται δὲ καὶ τὰ πτερώματα τῶν μελάνων ὀρνίθων τὰ μὲν πρὸς τῷ σώματι μελάντερα πάντων, τὰ δὲ πρὸς τοῖς ἄκροις ξανθότερα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="9">
+<p>Τὸν αὐτὸν δὲ τρόπον τοῦτον καὶ τὰ περὶ τὸν τράχηλον, καὶ ὅλως ὅσα βραχεῖαν τὴν τροφὴν λαμβάνει. Δῆλον δέ· καὶ γὰρ πρὸ τῆς πολιώσεως ἅπαντα τὰ τριχώματα μεταβάλλει καὶ γίνεται πυρρὰ διὰ τὸ πάλιν τὴν τροφὴν ὑπολείπουσαν καταξηραίνεσθαι ταχέως.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="10">
+<p>Τὸ δὲ τελευταῖον λευκά, πρότερον ἢ μελανθῆναι τὸ ὑγρόν, τῆς τροφῆς ἐν αὐτοῖς ἐκπεττομένης. Μάλιστα δὲ τοῦτο ἐπὶ τῶν ὑποζυγίων φανερόν ἐστιν· πάντων γὰρ τὰ τριχώματα γίνεται λευκά. Τῶν γὰρ τόπων οὐ δυναμένων ὁμοίως ἐπισπᾶσθαι τὴν τροφὴν διὰ τὴν ἀσθένειαν τὴν τοῦ θερμοῦ, ταχέως καταξηραινόμενον τὸ ὑγρὸν γίνεται λευκόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="11">
+<p>Καὶ τὰ περὶ τοὺς κροτάφους μάλιστα πάντων πολιοῦνται, καὶ ὅλως περὶ τοὺς ἀσθενεῖς καὶ πεπονηκότας τῶν τόπων. Παρὸ καὶ παρὰ πάντα μάλιστα εἰς τοῦτο τὸ χρῶμα μεταβάλλει, ὅταν τὴν φύσιν παραλλάξῃ τὴν οἰκείαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="12">
+<p>Καὶ γὰρ λαγὼς ἤδη γέγονε λευκός, καὶ μέλας δέ ποτε πέφηνε καὶ ἔλαφος καὶ ἄρκτος, ὁμοίως δὲ τούτοις καὶ ὄρτυξ καὶ <pb facs="operaexrecension06arisuoft_0029"/> πέρδιξ καὶ χελιδών. Ὅταν γὰρ ἀσθενήσωσι τῇ γενέσει, πάντα τὰ τοιαῦτα διὰ τὴν ὀλιγότητα τῆς τροφῆς πρὸ ὥρας ἐκπεττόμενα γίνεται λευκά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="13">
+<p>Οὕτως καὶ τὰ τῶν παίδων εὐθὺς καὶ τὰς κεφαλὰς ἴσχει λευκὰς καὶ τὰ βλέφαρα καὶ τὰς ὀφρῦς, ὥσπερ καὶ τῶν ἄλλων ἑκάστῳ πρὸς τὸ γῆρας φανερῶς ἅπασι δι᾽ ἀσθένειαν καὶ ὀλιγότητα [τῆς τροφῆς] συμβαίνει τὸ πάθος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="14">
+<p>Διὸ <milestone unit="page" resp="Bekker" n="798b"/> καὶ τὰ πλεῖστα τῶν ζῴων ἀσθενέστερα γίνεται τὰ λευκὰ τῶν μελάνων· πρότερον γὰρ ἢ τὴν αὔξησιν αὐτῶν τελειωθῆναι διὰ τὴν ὀλινγότητα τῆς τροφῆς ἐκπεττόμενα γίνεται λευκά, καθάπερ καὶ τῶν καρπῶν ὅσοι νενοσηκότες τυγχάνουσιν· καὶ γὰρ οὗτοι πολὺ μᾶλλον δι᾽ ἀσθένειαν ἐκπέττονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="15">
+<p>Ὅσα δὲ γίνεται λευκά, πολὺ διαφέροντα ἐκ τῶν ἄλλων, οἶον ἵπποι καὶ κύνες. δὲ τοιαῦτα μεταβάλλει πάντα ἐκ τοῦ κατὰ φύσιν χρώματος εἰς τὸ λευκὸν διὰ τὴν εὐτροφίαν. Τὸ γὰρ ὑγρὸν ἐν τοῖς τοιούτοις οὐ χρονιζόμενον, ἀλλ᾽ ἀναλισκόμενον διὰ τὴν αὔξησιν, οὐ γίνεται μέλαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="16">
+<p>Τὰ πλεῖστα γάρ ἐστι τῶν τοιούτων ὑγρὰ καὶ εὔσαρκα διὰ τὴν εὐτροφίαν. Διόπερ οὐδὲ μεταβάλλει τὰ λευκὰ τῶν τριχσωμάτων. Φανερὸν δὲ τοῦτο ἐστίν· καὶ γὰρ τὰ μέλανα πρότερον τῆς πολιώσεως γίνεται πυρρά, ἤδη τῆς τροφῆς ἐν αὐτοῖς ὑπολειπούσης καὶ μᾶλλον ἐκπεττομένης, τὸ δὲ τελευταῖον λευκά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="17">
+<p>Καίτοι τινὲς ὑπολαμβάνουσι μέλανα γίνεσθαι πάντα διὰ τὸ συγκάεσθαι τὴν τροφὴν αὐτῶν ὑπὸ τοῦ θερμοῦ καθάπερ καὶ τὸ αἶμα καὶ τῶν ἄλλων ἕκαστον, διαμαρτάνοντες. Ἔνια γὰρ καὶ τῶν ζῴων εὐθὺς ἐν ἀρχῇ γίνεται μέλανα, οἶον κύνες καὶ αἶγες καὶ βόες, καὶ ὅλως ὅσων τὰ δέρματα καὶ τὰ τριχώματα κατ᾽ ἀρχὰς ἔχει τροφήν, προϊούσης δὲ τῆς ἡλικίας ἧττον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="18">
+<p>Καίτοι <pb facs="operaexrecension06arisuoft_0030"/> γε οὐκ ἐχρῆν, ἀλλὰ πάντων ἔδει καὶ τὰ τριχώματα μελαίνεσθαι κατὰ τὴν ἀκμήν, καθ᾽ ὃν ἄν χρόνον μάλιστα αὐτῶν ἰσχύῃ καὶ τὸ θερμόν, καὶ μᾶλλον ἅπαντα πολιοῦσθαι κατ᾽ ἀρχάς. Πολὺ γὰρ ἁπάντων ἀπὸ πρώτης ἀσθενέστερόν τι γίνεται τὸ θερμὸν ἢ καθ᾽ ὃν χρόνον ἄρχεται τὰ τριχώματα αὐτῶν λευκαίνεσθαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="19">
+<p>Φανερὸν δὲ τοῦτο ἐστὶ καὶ ἐπὶ τῶν λευκῶν. Ἔνια μὲν γὰρ εὐθὺς ἴσχει τὸ χρῶμα λευκότατον, ὅσα καὶ τούτων πλείστην ἔχει κατ᾽ ἀρχὰς τροφήν, καὶ μὴ πρὸ ὥρας ἐν αὐτῇ καταξηραίνεται τὸ ὑγρόν· προϊούσης δὲ τῆς ἡλικίας ξανθά, τροφῆς αὐτοῖς ἐλάττονος ὕστερον ἐπιρρεούσης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="20">
+<p>Τὰ δὲ ἐν ἀρχῇ μὲν γίνεται ξανθά, κατὰ δὲ τὴν ἀκμὴν λευκότατα, <milestone unit="page" resp="Bekker" n="799a"/> καθάπερ καὶ τῶν ὀρνίθων μεταβάλλουσι τὰ χρώματα πάλιν τῆς τροφῆς ἐν αὐτοῖς ὑπολειπούσης. Δηλοῖ δέ· πάντα γὰρ αὐτὰ γίνεται ξανθὰ καὶ περὶ τὸν τράχηλον, καὶ ὅλως ὅσα σπανίζει τροφῆς τῆς ἐν αὐτοῖς ὑπολειπούσης. </p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="21">
+<p>Δῆλον δέ· ὥσπερ γὰρ καὶ τὸ πυρρὸν εἰς τὸ μέλαν μεταβάλλει καὶ τὸ μέλαν πάλιν εἰς τὸ πυρρόν, οὕτω καὶ τὸ λευκὸν εἰς τὸ ξανθόν. Συμβαίνει δὲ τοῦτο καὶ ἐπὶ τῶν φυτῶν· ἔνια γὰρ ἐκ τῆς ὑστέρας πέψεως ἀνατρέχει πάλιν ἐπὶ τὴν προτέραν. Μάλιστα δὲ τοῦτο καὶ ἐπὶ τῆς ῥοιᾶς φανερόν ἐστιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="22">
+<p>Τὸ μὲν γὰρ ἐξ ἀρχῆς οἱ κόκκοι γίνονται φοινικοῖ, καὶ τὰ φύλλα, δι᾽ ὀλιγότητα τῆς τροφῆς ἐκπεττομένης· ὕστερον δὲ πάλιν μεταβάλλουσιν εἰς τὸ ποῶδες χρῶμα, πολλῆς τροφῆς ἐπιρρεούσης καὶ τῆς πέψεως οὐχ ὁμοίως δυναμένης κρατεῖν· τὸ τελευταῖον δὲ πεττομένης ἤδη <pb facs="operaexrecension06arisuoft_0031"/> τῆς τροφῆς πάλιν γίνεται τὸ χρῶμα φοινικιοῦν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="23">
+<p>Καθόλου δὲ εἰπεῖν καὶ περὶ τῶν ἄλλων τριχωμάτων καὶ πτερωμάτων, ἅπαντα λαμβάνει τὰς μεταβολάς, οἶς μέν, καθάπερ εἴρηται, τῆς τροφῆς ἐν αὐτοῖς ὑπολειπούσης, οἶς δὲ τοὐναντίον πλεοναζούσης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="24">
+<p>Διόπερ ἄλλα κατ᾽ ἄλλους χρόνους τῆς ἡλικίας καὶ λευκότατα καὶ μελάντατα γίνεται τῶν τριχωμάτων, ἐπεὶ <milestone unit="page" resp="Bekker" n="799b"/> καὶ τῶν κοράκων τὰ πτερώματα τὸ τελευταῖον εἰς τὸ ξανθὸν χρῶμα μεταβάλλει, τῆς τροφῆς ἐν αὐτοῖς ὑπολειπούσης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="25">
+<p>Τῶν δὲ τριχωμάτων οὐδὲν οὔτε φοινικιοῦν οὔθ᾽ ἁλουργὲς οὔτε πράσινον οὔτε ἄλλην οὐδεμίαν ἔχον τοιαύτην γίνεται χρόαν, διὰ τὸ πάντα τὰ τοιαῦτα χρώματα γίνεσθαι μιγνυμένων αὐτοῖς τῶν τοῦ ἡλίου αὐγῶν, ἔτι δὲ τῶν τριχωμάτων ἁπάντων τῶν ὑγρῶν ἐντὸς τῆς σαρκὸς συμβαίνειν τὰς μεταβολάς, καὶ μηδεμίαν αὐτὰ λαμβάνειν μίξιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="26">
+<p>Δῆλον δ᾽ ἐστίν· καὶ γὰρ τῶν πτερωμάτων τὸ μὲν ἐξ ἀρχῆς οὐδὲν γίνεται τῷ χρώματι τοιοῦτον, ἀλλὰ καὶ τὰ ποικίλα τῶν ὀρνέων πάνθ᾽ ὡς εἰπεῖν μέλανα, οἶον ὅ τε ταὼς καὶ ἡ περιστερὰ καὶ ἡ χελιδών· ὕστερον δὲ λαμβάνει πάσας τὰς τοιαύτας ποικιλίας, ἤδη τῆς πέψεως αὐτῶν ἔξω τοῦ σώματος γιγνομένης, ἔν τε τοῖς πτερώμασι καὶ τοῖς καλαίοις· ὥστε συμβαίνει, καθάπερ καὶ ἐπὶ τῶν φυτῶν, καὶ τούτων ἔξω τοῦ σώματος γίγνεσθαι τὴν τῶν χρωμάτων πέψιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg007.1st1K-grc1:6" n="27">
+<p>Διὸ καὶ τὰ λοιπὰ τῶν ζῴων, τά τ᾽ ἔνυδρα καὶ τὰ ἑρπετὰ καὶ τὰ κογχύλια, παντοδαπὰς ἴσχει <pb facs="operaexrecension06arisuoft_0032"/> χρωμάτων μορφάς, πολλῆς καὶ τούτοις τῆς πέψεως γινομένης. Τὴν μὲν οὖν περὶ τὰ χρώματα θεωρίαν μάλιστ᾽ ἄν τις ἐκ τῶν εἰρημένων δύναιτο συνιδεῖν.</p></div></div></div>
+
+
+</body></text></TEI>

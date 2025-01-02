@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+     <teiHeader xml:lang="eng">
+          <fileDesc>
+               <titleStmt>
+                    <title xml:lang="lat">Ad Avircium Marcellum contra Cataphrygas</title>
+                    <author xml:lang="lat">Anonymus Ad Aviricium Marcellum Contra Cataphrygas</author>
+                    <editor>Martin Joseph Routh</editor>
+                    <funder>Center for Hellenic Studies</funder>
+                    <respStmt>
+                         <resp>Published original versions of the electronic texts</resp>
+                         <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                         <persName role="principal">Gregory Crane</persName>
+                         <persName role="principal">Leonard Muellner</persName>
+                         <persName role="principal">Bruce Robertson</persName>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Kelli Frangoulis</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Derek Diaco</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>AnneMarie Michael</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Charlotte Pocard</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Mari Yamazaki</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Charlotte Houghton</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital editor</resp>
+                    </respStmt>
+               </titleStmt>
+               <publicationStmt>
+                    <publisher>Open Greek and Latin</publisher>
+                    <idno type="filename">tlg1131.tlg001.1st1K-grc1.xml</idno>
+                    <pubPlace/>
+                    <availability>
+                         <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                    </availability>
+                    <date when="2021-08-24"/>
+               </publicationStmt>
+               <sourceDesc>
+                    <biblStruct>
+                         <monogr>
+                              <author xml:lang="lat">Anonymus Ad Aviricium Marcellum Contra Cataphrygas</author>
+                              <title xml:lang="lat">Reliquiae Sacrae</title>
+                              <editor>Martin Joseph Routh</editor>
+                              <imprint>
+                                   <pubPlace>Oxford</pubPlace>
+                                   <publisher>Oxford University Press</publisher>
+                                   <date>1846</date>
+                              </imprint>
+                              <biblScope unit="volume">2</biblScope>
+                         </monogr>
+                         <ref target="https://archive.org/details/reliquiaesacraes02rout/page/183/mode/1up?view=theater">Internet Archive</ref>
+                    </biblStruct>
+               </sourceDesc>
+          </fileDesc>
+          <encodingDesc>
+               <editorialDecl>
+                    <correction><p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                    </correction>
+               </editorialDecl>
+               <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+               
+               <refsDecl n="CTS">
+                    <cRefPattern matchPattern="(\w+).(\w+)" n="paragraph" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+                         <p>This pointer pattern extracts section and paragraph.</p></cRefPattern>
+                    <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                    <p>This pointer pattern extracts section.</p></cRefPattern>
+               </refsDecl>
+          </encodingDesc>
+          <profileDesc>
+               <langUsage>
+                    <language ident="grc">Greek</language>
+                    <language ident="lat">Latin</language>
+               </langUsage>
+          </profileDesc>
+          <revisionDesc>
+               <change when="2021-12-20" who="Lisa Cerrato">markup review</change>
+               <change when="2021-12-03" who="Charlotte Houghton">initial markup of new file.</change>
+          </revisionDesc>
+     </teiHeader>
+     <text>
+          <body>
+          <div type="edition" n="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1" xml:lang="grc">
+               <pb facs="reliquiaesacraes02rout_0193"/>
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1" n="1">
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:1" n="1">
+                         <head xml:lang="lat">Ex Operis Proxmio.</head>
+                         <p rend="indent">’Εκ πλείστου ὅσου καὶ ἱκανωτάτου χρόνου, ἀγαπητὲ Ἀουίρκιε Μάρκελλε, ἐπιταχθεὶς ὑπὸ σοῦ συγγράψαι τινὰ λόγον εἰς τὴν τῶν κατὰ Μιλτιάδην λεγομένων αἵρεσιν, ἐφεκτικώτερόν πως μέχρι νῦν διεκείμην· οὐκ ἀπορίᾳ τοῦ δύνασθαι ἐλέγχειν μὲν τὸ ψεῦδος, μαρτυρεῖν δὲ τῇ ἀληθείᾳ· δεδιὼς δὲ καὶ ἐξευλαβούμενος, μή πῃ δόξω τισὶν ἐπισυγγράφειν ἢ ἐπιδιατάσσεσθαι τῷ τῆς τοῦ εὐαγγελίου καινῆς διαθήκης λόγῳ· ᾧ μήτε προσθεῖναι μήτ’ ἀφελεῖν δυνατὸν, τῷ κατὰ τὸ εὐαγγέλιον αὐτὸ <pb facs="reliquiaesacraes02rout_0194"/> πολιτεύεσθαι προῃρημένῳ. προσφάτως δὲ γενόμενος ἐν Ἀγκύρᾳ τῆς Γαλατίας· καὶ καταλαβὼν τὴν κατὰ τόπον ἐκκλησίαν ὑπὸ τῆς νέας ταύτης οὐχ ὡς αὐτοὶ φασὶ προφητείας· πολὺ δὲ μᾶλλον ὡς δειχθήσεται ψευδοπροφητείας διατεθρυλλημένην, καθόσον δυνατὸν, τοῦ Κυρίου παρασχόντος, περὶ αὐτῶν τε τούτων καὶ τῶν προτεινομένων ὑπ’ αὐτῶν ἑκάστοτε διελέχθημεν ἡμέραις πλείοσιν ἐν τῇ ἐκκλησίᾳ· ὡς τὴν μὲν ἐκκλησίαν ἀγαλλιασθῆναι, καὶ πρὸς τὴν ἀλήθειαν ἐπιῤῥωσθῆναι· τοὺς δὲ ἐξεναντίας πρὸς τὸ παρὸν ἀποκρουσθῆναι· καὶ τοὺς ἀντιθέτους λυπηθῆναι. ἀξιούντων οὖν τῶν κατὰ τόπον πρεσβυτέρων, ὅπως τῶν λεχθέντων κατὰ τῶν ἀντιδιατιθεμένων τῷ τῆς ἀληθείας λόγῳ ὑπόμνημά τι καταλίπωμεν· παρόντος καὶ τοῦ συμπρεσβυτέρου ἡμῶν Ζωτικοῦ τοῦ Ὀτρηνοῦ, τοῦτο μὲν οὐκ ἐπράξαμεν· ἐπηγγειλάμεθα δὲ ἐνθάδε γράψαντες τοῦ Κυρίου διδόντος, διὰ σπουδῆς πέμψειν αὐτοῖς.</p>
+                    </div>
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:1" n="2">
+                         <pb facs="reliquiaesacraes02rout_0195"/>
+                         <head xml:lang="lat">Itidem ex libri primi initio.</head>
+                         <p rend="indent">Ἡ τοίνυν ἔνστασις αὐτῶν καὶ ἡ πρόσφατος τοῦ ἀποσχίσματος αἵρεσις πρὸς τὴν ἐκκλησίαν, τὴν αἰτίαν ἔσχε τοιαύτην· κώμη τις εἶναι λέγεται ἐν τῇ κατὰ τὴν Φρυγίαν Μυσίᾳ, καλουμένη Ἀρδαβαῦ τοὔνομα· ἔνθα φασὶ τινὰ τῶν νεοπίστων, πρώτως, Μοντανὸν τοὔνομα, κατὰ Γράτον Ἀσίας ἀνθύπατον, ἐν ἐπιθυμίᾳ ψυχῆς ἀμέτρῳ φιλοπρωτείας δόντα πάροδον εἰς ἑαυτὸν τῷ ἀντικειμένῳ, πνευματοφορηθῆναί τε καὶ αἰφνιδίως ἐν κατοχῇ τινὶ καὶ παρεκστάσει γενόμενον ἐνθουσιᾷν· ἄρξασθαί τε λαλεῖν καὶ ξενοφωνεῖν, παρὰ τὸ κατὰ παράδοσιν καὶ κατὰ διαδοχὴν ἄνωθεν τῆς ἐκκλησίας ἔθος δῆθεν προφητεύοντα· τῶν δὲ κατ’ ἐκεῖνο καιροῦ ἐν τῇ τῶν νόθων ἐκφωνημάτων ἀκροάσει γενομένων, οἱ μὲν ὡς ἐπὶ ἐνεργουμένῳ καὶ δαιμονῶντι καὶ ἐν πλάνης πνεύματι ὑπάρχοντι, καὶ τοὺς ὄχλους ταράττοντι ἀχθόμενοι ἐπετίμων, καὶ λαλεῖν ἐκώλυον· μεμνημένοι τῆς τοῦ Κυρίου διαστολῆς τε καὶ ἀπειλῆς, <pb facs="reliquiaesacraes02rout_0196"/> πρὸς τὸ φυλάττεσθαι τὴν τῶν ψευδοπροφητῶν ἐγρηγορότως παρουσίαν· οἱ δὲ ὡς ἁγίῳ πνεύματι καὶ προφητικῷ χαρίσματι ἐπαιρόμενοι· καὶ οὐχ ἥκιστα χαυνούμενοι· καὶ τῆς διαστολῆς τοῦ Κυρίου ἐπιλανθανόμενοι· τὸ βλαψίφρον καὶ ὑποκοριστικὸν καὶ λαοπλάνον πνεῦμα προὐκαλοῦντο· θελγόμενοι καὶ πλανώμενοι ὑπ’ αὐτοῦ, εἰς τὸ μηκέτι κωλύεσθαι (<foreign xml:lang="lat">for.</foreign> κωλύεσθαι λαλεῖν, καὶ) σιωπᾶν. τεχνῇ δέ τινι, μᾶλλον δὲ τοιαύτῃ μεθόδῳ κακοτεχνίας ὁ διάβολος τὴν κατὰ τῶν παρηκόων ἀπώλειαν μηχανησάμενος, καὶ παρ’ ἀξίαν ὑπ’ αὐτῶν τιμώμενος, ὑπεξήγειρέ τε καὶ προσεξέκαυσεν αὐτῶν τὴν ἀποκεκοιμημένην ἀπὸ τῆς κατ’ ἀλήθειαν πίστεως διάνοιαν· ὡς καὶ ἑτέρας τινὰς δύο γυναῖκας ἐπεγεῖραι, καὶ τοῦ νόθου πνεύματος πληρῶσαι· ὡς καὶ λαλεῖν ἐκφρόνως καὶ ἀκαίρως καὶ ἀλλοτριοτρόπως ὁμοίως τῷ προειρημένῳ. καὶ τοὺς μὲν χαίροντας καὶ καυχωμένους ἐπ’ αὐτῷ, μακαρίζοντος τοῦ πνεύματος, καὶ διὰ τοῦ μεγέθους τῶν ἐπαγγελμάτων ἐκφυσιοῦντος· ἔσθ’ ὅπῃ δὲ καὶ κατακρίνοντος <pb facs="reliquiaesacraes02rout_0197"/> στοχαστικῶς καὶ ἀξιοπίστως αὐτοὺς ἄντικρυς, ἵνα καὶ ἐλεγκτικὸν εἶναι δοκῇ· ὀλίγοι δ’ ἦσαν οὗτοι τῶν Φρυγῶν ἐξηπατημένοι· τὴν δὲ καθόλου καὶ πᾶσαν τὴν ὑπὸ τὸν οὐρανὸν ἐκκλησίαν βλασφημεῖν διδάσκοντος τοῦ ἀπηυθαδισμένου πνεύματος, ὅτι μήτε τιμὴν μήτε πάροδον εἰς αὐτὴν τὸ ψευδοπροφητικὸν ἐλάμβανε πνεῦμα. τῶν γὰρ κατὰ τὴν Ἀσίαν πιστῶν πολλάκις καὶ πολλαχῇ τῆς Ἀσίας εἰς τοῦτο συνελθόντων, καὶ τοὺς προσφάτους λόγους ἐξετασάντων καὶ βεβήλους ἀποφῃνάντων καὶ ἀποδοκιμασάντων τὴν αἵρεσιν, οὕτω δὴ τῆς τε ἐκκλησίας ἐξεώσθησαν, καὶ τῆς κοινωνίας εἴρχθησαν.</p>
+                    </div>
+               </div>
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1" n="2">
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:2" n="1">
+                         <head xml:lang="lat">Ex libro secundo huius Operis.</head>
+                         <p rend="indent">Ἐπειδὰν τοίνυν καὶ προφητοφόντας ἡμᾶς ἀπεκάλουν, ὅτι μὴ τοὺς ἀμετροφώνους αὐτῶν προφήτας ἐδεξάμεθα· τούτους γὰρ εἶναι φασὶν οὕς περ ἐπηγγείλατο τῷ λαῷ πέμψειν ὁ Κύριος· ἀποκρινάσθωσαν ἡμῖν πρὸς Θεοῦ ἔστι τὶς, ὦ βέλτιστοι, τούτων τῶν ἀπὸ Μοντανοῦ καὶ <pb facs="reliquiaesacraes02rout_0198"/> τῶν γυναικῶν λαλεῖν ἀρξαμένων, ὅς τις ὑπὸ Ἰουδαίων ἐδιώχθη, ἢ ὑπὸ παρανόμων ἀπεκτάνθη; οὐδείς. οὐδέ γε τὶς αὐτῶν κρατηθεὶς ὑπὲρ τοῦ ὀνόματος ἀνεσταυρώθη; οὐ γὰρ οὖν· οὐδὲ μὴν οὐδὲ ἐν συναγωγαῖς Ἰουδαίων τῶν γυναικῶν τὶς ἐμαστιγώθη ποτὲ, ἢ ἐλιθοβολήθη; οὐδαμόσε οὐδαμῶς. ἄλλῳ δὲ θανάτῳ τελευτῆσαι λέγονται Μοντανός τε καὶ Μαξιμίλλα. τούτους γὰρ ὑπὸ πνεύματος βλαψίφρονος ἑκατέρους ὑποκινήσαντος, λόγος ἀναρτῆσαι ἑαυτούς· οὐχ’ ὁμοῦ κατὰ δὲ τὸν τῆς ἑκάστου τελευτῆς καιρὸν φήμη πολλή· καὶ οὕτω δὲ τελευτῆσαι καὶ τὸν βίον καταστρέψαι, Ἰούδα προδότου δίκην. καθάπερ καὶ τὸν θαυμαστὸν ἐκεῖνον τὸν πρῶτον τῆς κατ’ αὐτοὺς λεγομένης προφητείας οἷον ἐπίτροπον τινὰ Θεόδοτον, πολὺς αἱρεῖ λόγος, ὡς αἰρόμενόν ποτε καὶ ἀναλαμβανόμενον εἰς οὐρανοὺς, παρεκστῆναί τε καὶ καταπιστεῦσαι ἑαυτὸν τῷ τῆς ἀπάτης πνεύματι· καὶ δισκευθέντα, κακῶς τελευτῆσαι. φασὶ γοῦν τοῦτο οὕτω γεγονέναι. ἀλλὰ μὴ ἄνευ τοῦ ἰδεῖν ἡμᾶς ἐπίστασθαί <pb facs="reliquiaesacraes02rout_0199"/> τῶν τοιούτων νομίζομεν ὦ μακάριε. ἴσως μὲν γὰρ οὕτως, ἴσως δὲ οὐχ’ οὕτως τετελευτήκασι Μοντανός τε καὶ Θεόδοτος καὶ ἡ προειρημένη γυνή.</p>
+                    </div>
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:2" n="2">
+                         <head xml:lang="lat">Ex eodem libro huius Operis.</head>
+                         <p rend="indent">Καὶ μὴ λεγέτω ἐν τῷ αὐτῷ λόγῳ τῷ κατὰ Ἀστέριον Οὐρβανὸν τὸ διὰ Μαξιμίλλης πνεῦμα, διώκομαι ὡς λύκος ἐκ προβάτων· οὐκ εἰμὶ λύκος· ῥῆμα εἰμὶ καὶ πνεῦμα καὶ δύναμις. ἀλλὰ τὴν ἐν τῷ πνεύματι δύναμιν ἐναργῶς δειξάτω καὶ ἐλεγξάτω· καὶ ἐξομολογεῖσθαι διὰ τοῦ πνεύματος καταναγκασάτω τοὺς τότε παρόντας· εἰς τὸ δοκιμάσαι καὶ διαλεχθῆναι τῷ πνεύματι λαλοῦντι, ἄνδρας δοκίμους καὶ ἐπισκόπους, Ζωτικὸν ἀπὸ Κομάνης κώμης, καὶ Ἰουλιανὸν ἀπὸ Ἀπαμείας. ὧν οἱ περὶ Θεμίσωνα τὰ στόματα φιμώσαντες, οὐκ εἴασαν τὸ ψευδὲς καὶ λαοπλάνον πνεῦμα ὑπ’ αὐτῶν ἐλεγχθῆναι. ἐν ταυτῷ δὲ πάλιν ἕτερα μεταξὺ πρὸς ἔλεγχον τῶν τῆς Μαξιμίλλης ψυδοπροφητειῶν εἰπὼν, ὁμοῦ τόν τε χρόνον καθ’ ὃν ταῦτ’ ἔγραφε σημαίνει, <pb facs="reliquiaesacraes02rout_0200"/> καὶ τῶν προῤῥήσεων αὐτῆς μέμνηται, δι’ ὧν πολέμους ἔσεσθαι καὶ ἀκαταστασίας προεμαντεύσατο· ὧν καὶ τὴν ψευδολογίαν εὐθύνει ὧδε λέγων.</p>
+                         <p rend="indent">Καὶ πῶς οὐ καταφανὲς ἤδη γέγονε καὶ τοῦτο τὸ ψεῦδος; πλείω γὰρ ἢ τρισκαίδεκα ἔτη εἰς ταύτην τὴν ἡμέραν, ἐξ οὗ τετελεύτηκεν ἡ γυνή· καὶ οὔτε μερικὸς, οὔτε καθολικὸς κόσμῳ γέγονε πόλεμος· ἀλλὰ καὶ Χριστιανοῖς μᾶλλον εἰρήνη διάμονος ἐξ ἐλέους Θεοῦ.</p>
+                    </div>
+               </div>
+               <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1" n="3">
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:3" n="1">
+                         <head xml:lang="lat">Ex libro tertio eiusdem Operis.</head>
+                         <p rend="indent">Ὅταν τοίνυν ἐν πᾶσι τοῖς εἰρημένοις ἐλεγχθέντες ἀπορήσωσιν, ἐπὶ τοὺς μάρτυρας καταφεύγειν πειρῶνται· λέγοντες πολλοὺς ἔχειν μάρτυρας, καὶ τοῦτο εἶναι τεκμηρίον πιστὸν τῆς δυνάμεως τοῦ παρ’ αὐτοῖς λεγομένου προφητικοῦ πνεύματος. τὸ δέ ἐστιν ἄρα ὡς ἔοικε παντὸς μᾶλλον οὐκ ἀληθές. καὶ γὰρ τῶν ἄλλων αἱρέσεων τινὲς, πλείστους ὅσους ἔχουσι μάρτυρας· καὶ οὐ παρὰ τοῦτο <pb facs="reliquiaesacraes02rout_0201"/> δήπου συγκαταθησόμεθα, οὐδὲ ἀλήθειαν ἔχειν αὐτοὺς ὁμολογήσομεν. καὶ πρῶτοί γε οἱ ἀπὸ τῆς Μαρκίωνος αἱρέσεως Μαρκιωνισταὶ καλούμενοι, πλείστους ὅσους ἔχειν Χριστοῦ μάρτυρας λέγουσιν· ἀλλὰ τόν γε Χριστὸν αὐτὸν κατὰ ἀλήθειαν οὐχ’ ὁμολογοῦσι. καὶ μετὰ βραχέα τούτοις ἐπιφέρει λέγων·</p>
+                         <p rend="indent">Ὅθεν τοι καὶ ἐπειδὰν οἱ ἐπὶ τὸ τῆς κατὰ ἀλήθειαν πίστεως μαρτύριον κληθέντες ἀπὸ τῆς ἐκκλησίας τύχωσι μετά τινων τῶν ἀπὸ τῆς τῶν Φρυγῶν αἱρέσεως λεγομένων μαρτύρων, διαφέρονταί τε πρὸς αὐτοὺς, καὶ μὴ κοινωνήσαντες αὐτοῖς τελειοῦνται, διὰ τὸ μὴ βούλεσθαι συγκαταθέσθαι τῷ διὰ Μοντανοῦ καὶ τῶν γυναικῶν πνεύματι. καὶ ὅτι τοῦτο ἀληθὲς, καὶ ἐπὶ τῶν ἡμετέρων χρόνων ἐν Ἀπαμείᾳ τῇ πρὸς Μαιάνδρῳ τυγχάνει γεγενημένον, ἐν τοῖς περὶ Γάϊον καὶ Ἀλέξανδρον ἀπὸ Εὐμενείας μαρτυρήσασι, πρόδηλον.</p>
+                    </div>
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:3" n="2">
+                         <pb facs="reliquiaesacraes02rout_0202"/>
+                         <head xml:lang="lat">Ex eodem libro hujus Operis.</head>
+                         <p rend="indent">Ταῦτα (λέξεις τινὰς) εὑρὼν ἔν τινι συγγράμματι αὐτῶν ἐνισταμένων τῷ Μιλτιάδου τοῦ ἀδελφοῦ συγγράμματι, ἐν ᾧ ἀποδείκνυσι περὶ τοῦ μὴ δεῖν προφήτην ἐν ἐκστάσει λαλεῖν, ἐπετεμόμην.</p>
+                    </div>
+                    <div type="textpart" subtype="paragraph" xml:base="urn:cts:greekLit:tlg1131.tlg001.1st1K-grc1:3" n="3">
+                         <head xml:lang="lat">Ex eodem libro hujus Operis.</head>
+                         <p rend="indent">Ἀλλ’ ὅγε ψευδοπροφήτης ἐν παρεκστάσει· ᾧ ἕπεται ἄδεια καὶ ἀφοβία· ἀρχόμενος μὲν ἐξ ἑκουσίου ἀμαθίας, καταστρέφων δὲ εἰς ἀκούσιον μανίαν ψυχῆς, ὡς προείρηται. τοῦτον δὲ τὸν τρόπον, οὔ τέ τινα τῶν κατὰ τὴν παλαιὰν, οὔτε τῶν κατὰ τὴν καινὴν πνευματοφορηθέντα προφήτην δεῖξαι δυνήσονται· ᵃοὔτε Ἄγαβον· οὔτε Ἰούδαν· οὔτε Σίλαν· οὔτε τὰς Φιλίππου θυγατέρας· οὔτε τὴν ἐν Φιλαδελφείᾳ Ἀμμίαν· οὔτε Κοδράτον· οὔτε γε δή τινας ἄλλους μηδὲν αὐτοῖς προσήκοντας καυχήσονται. αὖθις δὲ μετὰ βραχέα, ταῦτα φησίν·</p>
+                         <p rend="indent">Εἰ γὰρ μετὰ Κοδράτον καὶ τὴν ἐν Φιλαδελφείᾳ <pb facs="reliquiaesacraes02rout_0203"/> Ἀμμίαν, ὥς φασιν, αἱ περὶ Μοντανὸν διεδέξαντο γυναῖκες τὸ προφητικὸν χάρισμα, τοὺς ἀπὸ Μοντανοῦ καὶ τῶν γυναικῶν τίνες παρ’ αὐτοῖς διεδέξαντο, δειξάτωσαν· δεῖν γὰρ εἶναι τὸ προφητικὸν χάρισμα ἐν πάσῃ τῇ ἐκκλησίᾳ μέχρι τῆς τελείας παρουσίας ὁ ἀπόστολος ἀξιοῖ· ἀλλ’ οὐκ ἂν ἔχοιεν δεῖξαι τεσσαρεσκαιδέκατον ἤδη που τοῦτο ἔτος ἀπὸ τῆς Μαξιμίλλης τελευτῆς.</p>
+                    </div>
+               </div>
+          </div>
+     </body>
+     </text>
+</TEI>

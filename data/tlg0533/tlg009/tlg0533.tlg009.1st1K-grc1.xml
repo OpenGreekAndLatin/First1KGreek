@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">Hecala</title>
+        <author>Callimachus</author>
+        <editor>A. W. Mair</editor>
+        <editor>G. R. Mair</editor>
+        <funder>Center for Hellenic Studies</funder>
+        <respStmt>
+         <resp>Published original versions of the electronic texts</resp> 
+          <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+          <persName role="principal">Gregory Crane</persName>
+          <persName role="principal">Leonard Muellner</persName>
+          <persName role="principal">Bruce Robertson</persName>
+        </respStmt>
+        <respStmt>
+          <persName>Kelli Frangoulis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Derek Diaco</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Dennis Hou</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Michelle Lewis</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annemarie Michael</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Julia Pass</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Pocard</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Bethany Williams</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Thomas Wu</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Mari Yamazaki</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital conversion and editing</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Charlotte Houghton</persName>
+          <orgName>Center for Hellenic Studies</orgName>
+          <resp>Digital editor</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Open Greek and Latin</publisher>
+        <idno type="filename">tlg0533.tlg009.1st1K-grc1.xml</idno>
+        <pubPlace />
+        <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <date when="2021-08-23"/>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>
+              <persName>Callimachus</persName>
+            </author>
+            <title>Callimachus and Lycophron</title>
+            <editor>A. W. Mair</editor>
+            <editor>G. R. Mair</editor>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>William Heinemann</publisher>
+              <date>1921</date>
+            </imprint>
+          </monogr>
+          <ref target="http://www.archive.org/stream/callimachuslycop00calluoft#page/244/mode/2up">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    
+  <encodingDesc>
+    <editorialDecl>
+      <correction>
+       <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+      </correction>
+    </editorialDecl>
+    <p>The following text is encoded in accordance with EpiDoc standards and with the
+    CTS/CITE Architecture</p>
+    <refsDecl n="CTS">
+     <cRefPattern matchPattern="(\w+).(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+        <p>This pointer pattern extracts poem and section.</p>
+      </cRefPattern>
+      <cRefPattern matchPattern="(\w+)" n="poem" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+        <p>This pointer pattern extracts poem.</p>
+      </cRefPattern>
+    </refsDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+      <language ident="grc">Greek</language>
+      <language ident="lat">Latin</language>
+      <language ident="eng">English</language>
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+    <change when="2021-12-08" who="Lisa Cerrato">markup review</change>
+    <change when="2021-11-19" who="Charlotte Houghton">initial markup of new file.</change>
+  </revisionDesc>
+</teiHeader>
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" xml:lang="grc">
+      <pb facs="callimachuslycop00calluoft_0256"/>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="0">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="1">
+          <head xml:lang="lat">Testimonia</head>
+          <p rend="indent"><label>1.</label><bibl xml:lang="lat">Crinagoras, A. P. ix. 545:</bibl>
+          <lb n="1"/>Καλλιμάχου τὸ τορευτὸν ἔπος τόδε· δὴ γὰρ ἐπ’ αὐτῷ 
+          <lb rend="indent" n="2"/>ὡνὴρ τοὺς Μουσέων πάντας ἔσεισε κάλως. 
+          <lb n="3"/>ἀείδει δ’ Ἑκάλης τε φιλοξείνοιο καλιὴν 
+          <lb rend="indent" n="4"/>καὶ Θησεῖ Μαραθὼν οὓς ἐπέθηκε πόνους· 
+          <lb n="5"/>τοῦ σοὶ καὶ νεαρῶν χειρῶν σθένος εἴη ἀρέσθαι,
+          <lb rend="indent" n="6"/>Μάρκελλε, κλεινοῦ τ’ αἶνον ἴσον βιότου.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="2">
+          <p rend="indent"><label>2.</label> <bibl xml:lang="lat">Schol. Callim. Hymn. Apoll. 106</bibl> ἐγκαλεῖ διὰ τούτων τοὺς σκώπτοντας αὐτὸν μὴ δύνασθαι ποιῆσαι μέγα ποίημα, ὅθεν ἠναγκάσθη ποιῆσαι τὴν Ἑκάλην.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="3">
+          <p rend="indent"><label>3.</label> <bibl xml:lang="lat">E.M. s.v.</bibl> Ἐκάλη· ἡ ἡρωίς, εἰς ἣν καὶ ποίημα ἔγραψε Καλλίμαχος· ἡ πρὸς ἑαυτὴν πάντας καλοῦσα. ταύτην Ἑκάλην (<foreign xml:lang="lat">leg.</foreign> Ἑκαλίνην) ἔλεγον οἱ παλαιοὶ ὑποκοριζόμενοι. ἔθυον δὲ αὐτῇ διὰ τὸ ξενίσαι Θησέα. <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Suid. s.v.<foreign xml:lang="grc"> Ἑκάλη</foreign>.</bibl></p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="4">
+          <p rend="indent" xml:lang="lat"><label>4.</label> <bibl>Petronius 135:</bibl>
+          <lb/>Qualis in Actaea quondam fuit hospita terra
+          <pb facs="callimachuslycop00calluoft_0258"/>
+          <lb/>Digna sacris Hecale, quam Musa loquentibus annis 
+          <lb/>Battiadae veteris mirando tradidit aevo.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:0" n="5">
+          <p rend="indent"><label>5.</label> <bibl xml:lang="lat">Epigr. Anonym. Bern. 5 f.:</bibl>
+          <lb/>μέλπω δὲ γραὸς τῆς πολυξένου τρόπους 
+          <lb/>καὶ τὴν τελευτὴν Θησέως τε τὴν ἄγραν.</p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="1">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="1">
+          <head rend="center">1. 1.</head>
+          <p>
+           <lb n="1"/>[κουλεὸν εἰς] ἑτέρην περίαπτε καὶ εἰν ἄορ ἧκεν· 
+          <lb n="2"/>ὡς ἴδον, ο[ἳ δ’] ἅμα πάντες ὑπ[έτρ]εσ[α]ν ἠδ’ [ἐλίασ]θεν 
+          <lb n="3"/>ἄνδρα μέγαν καὶ θῆρα πελώριον ἄντ[α ἰ]δέσθαι, 
+          <lb n="4"/>μέσφ’ ὅτε δὴ Θησεύς φιν ἀπόπροθι μακρὸν ἄυσε· 
+          <lb n="5"/>μίμνετε θαρσήεντες, ἐμῷ δέ [τ]ις Αἰγέϊ πατρὶ 
+          <lb n="6"/>νεύμενος ὅς τ’ [ὤ]κιστος ἐς ἄστυρον ἀγγελιώτης 
+          <lb n="7"/>ὣς ἐνέποι—πολέων κεν ἀναψύξειε μεριμνέων— 
+          <lb n="8"/><q>Θησεὺς οὐχ ἑκὰς οὗτος, ἀπ’ εὐύδρου Μαραθώνος
+          <lb n="9"/>[ζ]ωὸν ἄγων τὸν ταῦρον.</q> ὁ μὲν φάτο, τοὶ δ’ ἀίοντες 
+          <lb n="10"/>[π]άντες <q>[ἰ]ὴ παιῆον</q> ἀνέκλαγον, αὖθι δὲ μίμνον. 
+          <lb n="11"/>οὐχὶ νότος τόσσην γε χύσιν κατεχεύατο φύλλων, 
+          <lb n="12"/>οὐ βορέης οὐδ’ αὐτὸς ὅτ’ ἔπλετο φυλλοχόος μ[ε]ίς, 
+          <lb n="13"/>[ὅ]σσα τότ’ [ἀ]γ[ρ]ῶσται περί [τ’] ἀμφί [τ]ε Θησέι βάλλον,
+          <pb facs="callimachuslycop00calluoft_0260"/>
+          <lb n="14"/>[οἵ μιν ἐκυκλώσα]ντο περιστα [δ]όν, αἱ δὲ γυναῖκες 
+          <lb n="15"/>...στόρνῃσιν ἀνέστεφον.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="2">
+          <head rend="center">1. 2.</head>
+          <p>
+           <lb n="1"/>καί ῥ’ ὅτ’ ἐποφ . . . ἐφ’ (?) ὃν ἄν τιν’ ἕκαστοι
+          <lb n="2"/>Οὐρανίδαι ἐπάγοιεν ἐμῷ πτ[ε]ρῷ, ἀλλά ἑ Παλλὰς 
+          <lb n="3"/>τῆς μὲν ἔσω δηναι(ὸ)ν (?) ἀφῆ δρ[ό]σον Ἡφαίστοιο, 
+          <lb n="4"/>μέσφ’ ὅτε Κεκροπίδῃσιν ἐπ’ Ἀκτῇ θήκατο λᾶαν, 
+          <lb n="5"/>λάθριον ἄρρητον, γενεῇ δ’ ὅθεν οὐδέ νιν ἔγνων 
+          <lb n="6"/>οὔτ’ ἐδάην, φήμῃ δὲ κατ’ ὠγυγίους (?) ἔφαν [α]ὐταὶ
+          <lb n="7"/>οἰωνούς, ὡς δῆθεν ὑφ’ Ἡφαίστῳ τέκεν Αἶα. 
+          <lb n="8"/>τ[ο]υτάκι δ’ δ’ ἡ μὲν ἑῆς ἔρυμα χθονὸς ὄφρα βάλοιτο, 
+          <lb n="9"/>τήν ῥα νέον ψήφῳ [τ]ε Διὸς δυ [ο] καίδεκα τ’ ἄλλων
+          <lb n="10"/>ἀθανάτων ὄφιός τε κατέλλαβε μαρτυρίῃσιν,
+          <pb facs="callimachuslycop00calluoft_0262"/>
+          <lb n="11"/>Πελλήνην ἐφίκανεν Ἀχαιΐδα· τόφρα δὲ κοῦραι 
+          <lb n="12"/>αἱ φυλακοὶ κακὸν ἔργον [ἐ]πεφράσσαντο τελέσσαι 
+          <lb n="13"/>κείστης . . . . . . δεσμά τ’ ἀνεῖσαι . .  .</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="3">
+          <head rend="center">1. 3.</head>
+          <p>
+          <lb rend="indent" n="1"/>Ἀθήνης 
+          <lb n="2"/>. . . μοῦναι δὲ παραπτυ[όμεσθα] κορῶναι. 
+          <lb n="3"/>[δαίμοσιν· οὐ γὰρ ἔγωγε] τεόν ποτε, πότνια, θυμόν,
+          <lb n="4"/>. . . [ὅσα] πολλὰ παραίσια μήποτ’ ἐλαφροὶ
+          <lb n="5"/>[ζή]σομεν οἰωνοί, τότε δ’ ὤφελον [εἶναι ἄναυδος]·
+          <lb n="6"/>οὕτως ἡμετέρην μὲν ἀπέπτυσεν, οὐδὲ γενέθλην
+          <lb n="7"/>ἡμετέρην ἑ καλεῖν [μάλ’ ἐπιτρέπει· ἀλλὰ πέσοις σὺ 
+          <lb n="8"/>μηδέποτ’ ἐκ θυ[μοῖ]ο· βαρὺς χόλος αἰὲν Ἀθήνης·
+          <lb n="9"/>αὐτὰρ ἐγὼ τυτθὸς πορέ[ην γ]όνος· [ὀ]γδ[ο]άτ[η] γὰρ
+          <lb n="10"/>ἤδη μοι γενεὴ πέλ[εται, δεκάτη δὲ τοκεῦσι.</p>
+        </div>
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:1" n="4">
+          <p>
+          <lb n="1"/>[δεί]ελος ἀλλ’ ἢ νύξ ἢ ἔνδιος ἢ ἔσετ’ ἠώς, 
+          <lb n="2"/>εὖτε κόραξ, [ὃ]ς νῦν γε καὶ ἂν κύκνοισιν ἐρίζοι
+          <pb facs="callimachuslycop00calluoft_0264"/>
+          <lb n="3"/>καὶ γάλακι χροιὴν καὶ κύματος ἄκρῳ ἀώτῳ,
+          <lb n="4"/>κυάνεον φὴ πίσσαν ἐπὶ πτερὸν οὐλοὸν ἕξει,
+          <lb n="5"/>ἀγγελίης ἐπίχε [ι]ρα τά οἵ ποτε Φοῖβος ὀπάσσει,
+          <lb n="6"/>ὁππότε [κ]εν Φλεγύαο Κορωνίδος ἀμφὶ θυγατρὸς 
+          <lb n="7"/>Ἴσχυι πληξίππῳ σπομένης μιερόν τ[ι] πύθηται.
+          <lb n="8"/>τὴν μὲν ἄρ’ ὣς φαμένην ὕπνος λάβε, τὴν δ’ ἀΐουσαν·
+          <lb n="9"/>καδδραθέτην δ’ οὐ πολλὸν ἐπὶ χρόν [ον], αἶψα γὰρ ἦλθεν 
+          <lb n="10"/>στιβήεις ἄγχουρος· ἴτ’, οὐκέτι χεῖρες ἔπαγροι 
+          <lb n="11"/>φιλητέων· ἤδη γὰρ ἑωθινὰ λύχνα φαείνει·
+          <lb n="12"/>[ἀ]είδει καί πού τις ἀνὴρ ὑδατηγὸς ἱμαῖον·
+          <lb n="13"/>ἔγρει καί τιν’ ἔχοντα παρ[ὰ] πλόον οἰκίον ἄξων
+          <lb n="14"/>τετριγὼς ὑπ’ ἄμαξαν, ἀνιάζουσι δὲ πυκνοὶ 
+          <lb n="15"/>[δμ]ῶοι χαλκῆες κωφώμενοι ἐν[τὸς] ἀκουήν.</p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="2">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:2" n="1">
+          <p>τῖον δέ ἑ πάντες ὁδῖται 
+          <lb/>ἦρα φιλοξενίης· ἔχε γὰρ τέγος ἀκλήιστον.</p>
+          <p rend="indent"><bibl xml:lang="lat">Schol. Aristoph. Acharn. 127</bibl> <quote xml:lang="grc">Καλλίμαχος ἐν Ἑκάλῃ.</quote> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">Ἐκάλη, . . . ἔχε κτλ.</foreign>,</bibl></p></div>
+          <pb facs="callimachuslycop00calluoft_0266"/>
+      
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="3">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:3" n="1">
+          <p rend="indent">αἴθ’ ὄφελες θανέειν ἢ ὕστατον ὀρχήσασθαι.</p>
+          <p rend="indent"><bibl xml:lang="lat">Suid. s. v. (Gaisf. i. 1096)</bibl> <quote>αἴθ’ κτλ.· ἐπειδὴ τὴν γλαῦκα ὅταν λάβωσι τὰ παιδία περιάγουσιν, ἡ δὲ μὴ βλέπουσα δι’ ἡμέρας ὥσπερ ὀρχεῖται· ἢ ὅταν πληγῇ, τελευτῶσα στρέφεται ὥσπερ ὀρχουμένη. Καλλίμαχος ἐν Ἑκάλῃ λέγει περὶ αὐτῆς.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="4">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:4" n="1">
+          <p rend="indent">ἁρμοῖ που κἀκείνῳ ἐπέτρεχεν ἁβρὸς ἴουλος.</p>
+          <p rend="indent"><bibl xml:lang="lat">Suid. s.v.</bibl> <quote>ἁρμοῖ που· . . . Καλλίμαχος ἐν Ἑκάλῃ.ἁρμοῖ κτλ.</quote> <foreign xml:lang="lat">Cf. E.M. s.v.</foreign> ἁρμῷ.</p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="5">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:5" n="1">
+          <p rend="indent">Νηπείης ᾗ τ’ ἄργος, ἀοίδιμος Ἀδρήστεια.</p>
+          <p rend="indent" xml:lang="lat"><bibl>Schol. Apoll. Rh. i. 1116.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="6">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:6" n="1">
+          <p>βουσσόον, ὅν τε μύωπα βοῶν καλέουσιν ἀμορβοί.</p>
+         <p rend="indent"><bibl xml:lang="lat">Suid. s.v.</bibl> <quote>μύωψ, . . . λέγεται παρὰ Καλλιμάχῳ ἐν Ἑκάλῃ· βοῦς σῶος (<foreign xml:lang="lat">sic</foreign>) μύωψ, ὁ τὰς βοῦς σοβῶν καὶ διώκων,</quote> <foreign xml:lang="eng">but the whole line is quoted more or less correctly</foreign> <bibl xml:lang="lat">schol. Odyss. xii. 299</bibl> <foreign xml:lang="eng">and elsewhere, where it is attributed to Callimachus.</foreign></p></div> <pb facs="callimachuslycop00calluoft_0268"/>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="7">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:7" n="1">
+          <p>ὁππότε λύχνου 
+          <lb/>δαιομένου πυρόεντες ἄδην ἐγένοντο μύκητες.</p>
+          <p rend="indent" xml:lang="lat"><bibl>Choerobosc. in Theodos.</bibl> (<bibl>Bekker, Anecd. p. 1399</bibl>); cf. <bibl>schol. Arat. 976,</bibl> <bibl>schol. Aristoph. Vesp. 262.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="8">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:8" n="1">
+          <p rend="indent">οἵ νυ καὶ Ἀπόλλωνα παναρκέος Ἠελίοιο
+          <lb rend="indent"/>χωρὶ διατμήγουσι καὶ εὔποδα Δηωίνην
+          <lb rend="indent"/>Ἀρτέμιδος.</p>
+          <p rend="indent"><bibl xml:lang="lat">Schol. Pind. N. i. 3</bibl> <quote>Καλλίμαχος ἐν Αἰκάλῃ (<foreign xml:lang="lat">sic</foreign>)· οἵ νυ κτλ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="9">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:9" n="1">
+          <p>ναὶ μὰ τὸ ῥικνὸν 
+          <lb/>σῦφαρ ἐμόν, ναὶ τοῦτο τὸ δένδρεον αὖον ἐόν περ.</p>
+          <p rend="indent"><bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">σῦφαρ</foreign>.</bibl> <bibl xml:lang="mul">So s.v. ναὶ μὰ τό.</bibl> <bibl xml:lang="lat">Schol. Apoll. Rh. i. 669.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="10">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:10" n="1">
+          <p>γεργέριμον πίτυρίν τε καὶ ἣν ἀπεθήκατο λευκὴν 
+          <lb/>εἰν ἁλὶ νήχεσθαι φθινοπωρίδα.</p>
+          <p rend="indent"><bibl xml:lang="lat">Athenaeus ii. 56</bibl> <quote>Καλλίμαχος δ’ ἐν τῇ Ἑκάλῃ γένη ἐλαῶν καταλέγει· γεργέριμον πίτυρίν τε.</quote> <pb facs="callimachuslycop00calluoft_0270"/> <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">γεργέριμον</foreign>,</bibl> <quote>τὴν ἐν τῷ δένδρῳ πεπανθεῖσαν ἐλαίαν, πίτυρίν τε καὶ ἣν ἀπεθήκατο λευκήν, τουτέστι τὴν συνθλασθεῖσαν καὶ οὕτως ἀποτεθεῖσαν ἐλαίαν, εἰν ἁλὶ δὲ νήχεσθαι φθινοπωρίδα, τὴν κολυμβάδα λέγει.</quote> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Nonnus xvii. 54 f.</bibl><quote> χύδην δ’ ἐπέβαλλε τραπέζῃ | εἰν ἁλὶ νηχομένης φθινοπωρίδος ἄνθος ἐλαίης Βρόγγος ἔχων μίμημα φιλοστόργοιο νομῆος</quote> [<foreign xml:lang="eng">i.e. Molorcus who entertained Heracles</foreign>].</p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="11">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:11" n="1">
+          <p rend="indent" xml:lang="lat"><bibl>Plin. N. H. xxii. 88</bibl> <quote>Estur et sonchos — ut quem Theseo apud Callimachum adponat Hecale — uterque, albus uterque, et niger.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="12">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:12" n="1">
+         <p rend="indent"><bibl xml:lang="lat">Schol. Nicandr. Ther. 909</bibl> <quote>κρῆθμον· ἤτοι λάχανόν ἐστι. καὶ γὰρ μέμνηται αὐτοῦ καὶ Καλλίμαχος ἐν τῇ Ἑκάλῃ.</quote></p>
+          <p rend="indent" xml:lang="lat"><bibl>Plin. N. H. xxvi. 82</bibl> <quote>eadem vis crethmo ab Hippocrate admodum laudato. est autem inter eas quae eduntur silvestrium herbarum. hanc certe apud Callimachum adponit rustica illa Hecale.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="13">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:13" n="1">
+          <p rend="indent">δινομένην ὑπὸ βουσὶν ἐμὴν ἐφύλασσον ἅλωα.</p>
+          <p rend="indent" xml:lang="lat"><bibl>Suid. s.v. <foreign xml:lang="grc">δεινουμένην</foreign>.</bibl> <bibl>E.M. s.v. <foreign xml:lang="grc">ἅλως</foreign>.</bibl> Cf. <bibl>Cramer, Anecd. Ox. ii. p. 376,</bibl> <bibl>Bekker, Anecd. p. 1440,</bibl> etc.</p></div>
+          <pb facs="callimachuslycop00calluoft_0272"/>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="14">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:14" n="1">
+          <p>ἡνίκα μὲν γὰρ ταὐτὰ φαείνεται ἀνθρώποισιν, 
+          <lb/>αὐτοὶ μὲν φιλέουσ’, αὐτοὶ δέ τε πεφρίκασιν· 
+          <lb/>ἑσπέριον φιλέουσιν, ἀτὰρ στυγέουσιν ἑῷον.</p>
+         <p rend="indent"><bibl xml:lang="lat">Olympiodorus in Meteor. Aristot. p. 12</bibl> <quote>ὅτι γὰρ ὁ αὐτός ἐστι καὶ ἑῷος καὶ ἑσπέριος, δηλοῖ καὶ Καλλίμαχος λέγων ἐν Αἰκάλῃ [<foreign xml:lang="lat">sic</foreign>]· ἡνίκα μὲν γὰρ φαίνεται τοῖς ἀνθρώποις ταὐτά [<foreign xml:lang="lat">corr. Hecker</foreign>] . . ἀποστυγέουσιν ἑῷον.</quote> <bibl xml:lang="lat">Eustath. Il. 1271. 35</bibl> <quote>ὡς καὶ Καλλιμάχῳ δοκεῖ ἔνθα φησὶν ὡς ἑσπέριον φιλέουσιν, ἀτὰρ στυγέουσιν ἑῷον.</quote> <foreign xml:lang="eng">So the last line is given</foreign> <bibl xml:lang="lat">Tzetz. Chil. viii. 837,</bibl> <bibl xml:lang="lat">Ep. xliii.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="15">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:15" n="1">
+          <p>ἡ δ’ ἐκόησεν 
+          <lb/>τοὔνεκεν Αἰγέος ἔσκε.</p>
+         <p rend="indent" xml:lang="lat"><bibl>Ammonius, De simil. et diff. voc. p. 139 Valck.,</bibl> <bibl>E.M. s.v. <foreign xml:lang="grc">κοάλεμον</foreign>.</bibl> Cf. <bibl>Hellad. Phot. Bibl. p. 531. 13,</bibl> <bibl>Suid. s.v. <foreign xml:lang="grc">ἐκόησεν</foreign>.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="16">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:16" n="1">
+          <p>πολυπτῶκές τε Μέλαιναι.</p>
+          <p rend="indent"><bibl xml:lang="lat">Etym. Gud. 300. 11</bibl> <quote>παρὰ Καλλιμάχῳ πολυ.</quote> κτλ. <bibl xml:lang="lat">Steph. Byz.</bibl> <quote>Μελαινεῖς, δῆμος τῆς Ἀντιοχίδος φυλῆς. Καλλίμαχος δὲ Μελαίνας φησὶ τὸν δῆμον ἐν Ἑκάλῃ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="17">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:17" n="1">
+          <p rend="indent"><bibl xml:lang="lat">Steph. Byz. s.v. <foreign xml:lang="grc">Τρινεμεῖς</foreign>,</bibl> <quote>δῆμος τῆς Κεκροπίδος φυλῆς. . . . Καλλίμαχος Ἑκάλῃ Τρινέμειαν.</quote></p></div>
+          <pb facs="callimachuslycop00calluoft_0274"/>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="18">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:18" n="1">
+          <p rend="indent"><bibl xml:lang="lat">Hesych. s.v. <foreign xml:lang="grc">γηφάγοι</foreign>·</bibl> <quote>πένητες, ἄποροι, ὡς τὰς ἐκ γῆς βοτάνας σιτιζόμενοι τροφῆς ἀμοιροῦντες. Καλλίμαχος ἐν Ἑκάλῃ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="19">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:19" n="1">
+          <p>στάδιον δ’ ὑφέεστο χιτῶνα.</p>
+          <p rend="indent"><bibl xml:lang="lat">Schol. Apoll. Rhod. iii. 1226</bibl> <quote>τινὲς δὲ στάδιον ὡς εὐπαγῆ, ὃν καὶ Καλλίμαχος λέγει·</quote> στάδιον κτλ. <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">στάδιον</foreign>·</bibl> <quote>. . . καὶ στάδιος χιτών, ὁ ποδήρης, ὁ τέλειος, παρὰ Καλλιμάχῳ ἐν Ἑκάλῃ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="20">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:20" n="1">
+          <p>ἐν μὲν γὰρ Τροιζῆνι κολουραίῃ ὑπὸ πέτρῃ 
+          <lb/>θῆκε σὺν ἁρπίδεσσι.</p>
+         <p rend="indent"><bibl xml:lang="lat">Tzetz. Lycophr. 494,</bibl> <foreign xml:lang="lat">cf.</foreign> <bibl xml:lang="lat">id. 1322.</bibl> <bibl xml:lang="lat">E.M. s.v. <foreign xml:lang="grc">ἁρπίς</foreign>.</bibl> <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">κολουραία πέτρα</foreign>.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="21">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:21" n="1">
+          <p>εὖτ’ ἂν ὁ παῖς ἀπὸ μὲν γυαλὸν λίθον ἀγκάσσασθαι 
+            <lb/>ἄρκιος ᾖ χείρεσσιν ἑλὼν Αἰδήψιον ἄορ.</p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="22">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:22" n="1">
+          <p>Λιμναίῳ δὲ χοροστάδας ἦγον ἑορτάς.</p>
+          <p rend="indent" xml:lang="lat"><bibl>Schol. Aristoph. Ran. 216.</bibl> Cf. 
+          <bibl xml:lang="lat">Steph. Byz. s.v. <foreign xml:lang="grc">Λίμναι</foreign>.</bibl></p></div>
+          <pb facs="callimachuslycop00calluoft_0276"/>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="23">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:23" n="1">
+          <p>τοῦτο γὰρ αὐτὴν
+          <lb/>κωμῆται κάλεον περιηγέες.1</p>
+          <p rend="indent"><bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">κωμῆται</foreign>·</bibl> <quote>καὶ οἱ γείτονες . . . Καλλίμαχος Ἑκάλῃ· τοῦτο κτλ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="24">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:24" n="1">
+          <p>παλαίθετα κᾶλα καθῄρει.</p>
+         <p rend="indent"><bibl xml:lang="lat">Etym. Paris. 2720</bibl> (<bibl xml:lang="lat">Cramer, Anec. Par. iv. 53</bibl>) <quote>Καλλίμαχος Ἑκάλῃ· παλαίθετα κτλ.</quote> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">κᾶλα παλαίθετα</foreign>.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="25">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:25" n="1">
+          <p>ναὶ μὰ τόν.</p>
+         <p rend="indent"><bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">ναὶ μὰ τό</foreign>·</bibl> . . . <quote>καὶ Ἑκάλη εἶπε <q>ναὶ μὰ τόν</q> καὶ οὐκέτι ἐπάγει τὸν θεόν, ῥυθμίζει δὲ ὁ λόγος πρὸς εὐσέβειαν.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="26">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:26" n="1">
+          <p>οὐ γάρ μοι πενίη πατρώϊος, οὐδ’ ἀπὸ πάππων 
+          <lb/>εἰμὶ λιπερνῆτις· βάλε μοι, βάλε τὸ τρίτον εἴη.</p>
+          <p rend="indent"><bibl xml:lang="lat">E.M. s.v. <foreign xml:lang="grc">λιπερνῆτις</foreign></bibl> (<foreign xml:lang="lat">cod. Vossianus Gaisford</foreign>). <bibl xml:lang="lat">Et. Flor. p. 207 Müller.</bibl> <bibl xml:lang="lat">Schol. Dion. Thrac. p. 946. 15</bibl> <quote>βάλε μοι . . . εἴη, Καλλίμαχος.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="27">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:27" n="1">
+          <p rend="indent"><bibl xml:lang="lat">Schol. Eurip. Hippol. 32</bibl> <quote>πέτραν δὲ Παλλάδος φησὶ τὸ ἐν τῇ Ἀττικῇ
+          Γλαυκώπιον, οὗ Καλλίμαχος ἐν Ἑκάλῃ μέμνηται.</quote></p></div>
+          <pb facs="callimachuslycop00calluoft_0278"/>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="28">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:28" n="1">
+        <p rend="indent"><bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">Κωλιάς</foreign>·</bibl> <quote>ναός ἐστι τῆς Ἀφροδίτης οὕτω καλούμενος. . . . μέμνηται καὶ Καλλίμαχος ἐν Ἑκάλῃ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="29">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:29" n="1">
+          <p rend="indent"><bibl xml:lang="lat">Schol. Euseb. Praep. Evang. iv. 16</bibl> <quote>οὐ τὴν πρὸς ταῖς Ἀθήναις Σαλαμῖνα λέγει. αὕτη γὰρ Κούλουρις πάλαι ἐλέγετο, ὡς καὶ Καλλίμαχος ἐν Ἑκάλῃ φησίν, ἀλλὰ τὴν κατὰ Κύπρον Σαλαμῖνα λέγει.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="30">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:30" n="1">
+          <p>ἴθι, πρηεῖα γυναικῶν,
+          <lb/>τὴν ὁδὸν ἣν ἀνίαι θυμαλγέες οὐ περόωσιν.
+          <lb/>πολλάκι σεῖο 〈δέ〉,1 μαῖα, φιλοξείνοιο καλιῆς 
+          <lb/>μνησόμεθα· ξυνὸν γὰρ ἐπαύλιον ἔσκεν ἅπασιν.</p>
+          <p rend="indent"><bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">ἐπαύλιον δὲ μονή</foreign>.</bibl> <quote>περὶ Ἑκάλης θανούσης·</quote> ἴθι κτλ. <foreign xml:lang="lat">Cf</foreign> <bibl xml:lang="lat">E.M. s.v. <foreign xml:lang="grc">θάνατος</foreign></bibl>. . . . <quote>ἴθι . . . περόωσι, Καλλίμαχος.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="31">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:31" n="1">
+          <p>τοὔνεκα καὶ νέκυες πορθμήϊον οὔ τι φέρονται 
+          <lb/>μούνῃ ἔνι πτολίων, ὅ τε τέθμιον οἰσέμεν ἄλλους 
+          <lb/>ἐν στομάτεσσι νεὼς Ἀχεροντείας2 ἐπίβαθρον
+          <lb/>(δανάκην).</p>
+          <p rend="indent"><bibl xml:lang="lat">E.M. s.v. <foreign xml:lang="grc">δανάκης</foreign></bibl> <quote>νομίσματός ἐστιν ὄνομα βαρβαρικόν, πλέον ὀβολοῦ, ὃ τοῖς νεκροῖς ἐν τοῖς στόμασιν ἐτίθεσαν· Καλλίμαχος· τοὔνεκα κτλ.</quote> <pb facs="callimachuslycop00calluoft_0280"/> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">πορθμήϊον</foreign>,</bibl> <quote>ὁ μισθὸς τοῦ ναύτου. Καλλίμαχος· τοὔνεκα . . . φέρονται. ἐν Αἰγιαλῷ γὰρ καταβάσιόν ἐστιν Ἅιδου, εἰς ὃ ἀπελθοῦσα ἡ Δημήτηρ ἔμαθε παρὰ τῶν περιοἰκων περὶ τῆς κόρης. καὶ ἐδωρήσατο αὐτοῖς, ὡς λέγει, ἄφεσιν τοῦ πορθμηΐου.</quote> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Suid. s.vv. <foreign xml:lang="grc">Ἀχερουσία and δανάκη</foreign>,</bibl> <bibl xml:lang="lat">Pollux ix. 6.</bibl></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="32">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:32" n="1">
+          <p>ἀλλὰ θεῆς, ἥτις με διάκτορον ἔλλαχε Παλλάς.</p>
+        <p rend="indent"><bibl xml:lang="lat">E.M. s.v. <foreign xml:lang="grc">διάκτορος</foreign>·</bibl> <quote>. . . τοῦ γὰρ Ἑρμοῦ ἐπίθετον· παρὰ δὲ τοῖς ἄλλοις ποιηταῖς ἁπλῶς ἐπὶ τοῦ διακόνου τίθεται. Καλλίμαχος ἐπὶ γλαυκὸς τὸ ἐπίθετον· ἀλλὰ θεῆς κτλ.</quote></p>
+        </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="33">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:33" n="1">
+          <p>ὁ μὲν εἷλκεν, ὁ δ’ εἵπετο νωθρὸς ὁδίτης.</p>
+          <p rend="indent"><bibl xml:lang="lat">Schol. Apoll. Rhod. i. 1162</bibl> <quote>καὶ Καλλίμαχος ἐπὶ τοῦ ταύρου ἡττηθέντος φησίν· ὁ μὲν κτλ.</quote></p> </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="34">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:34" n="1">
+          <p>πέδιλα, τὰ μὴ πύσε νήχυτος εὐρώς.</p>
+          <p rend="indent"><bibl xml:lang="lat">Suid. s.v. <foreign xml:lang="grc">εὐρώς</foreign>·</bibl> <quote>ὑγρότης σεσηπυῖα. Καλλίμαχος πέδιλα κτλ.</quote> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">id. s.v. <foreign xml:lang="grc">νήχυτος ἔρως</foreign> [sic].</bibl></p> </div>
+      </div>
+      <div type="textpart" subtype="poem" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1" n="35">
+        <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0533.tlg009.1st1K-grc1:35" n="1">
+          <p>ἐκ δ’ ἄρτους σιπύηθεν ἅλις κατέθηκεν ἑλοῦσα.</p>
+         <p rend="indent"><bibl xml:lang="lat">Zonaras, p. 1645</bibl> <quote>σιπύη· τὸ κανίσκιον ἢ ἡ ἀρτοθήκη. Καλλίμαχος· ἐκ δ’ ἄρτους κτλ.</quote> <foreign xml:lang="lat">Cf.</foreign> <bibl xml:lang="lat">Apoll. Dysc. De adverb. p. 605. 6.</bibl></p></div>
+          <pb facs="callimachuslycop00calluoft_0284"/>
+      </div>
+    </div>
+  </body>
+</text>
+</TEI>

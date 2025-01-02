@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader>
-    
+<teiHeader xml:lang="eng">     
 <fileDesc>
 <titleStmt>
- <title>Gynaeciorum Libri IV</title>
+ <title xml:lang="lat">Gynaeciorum Libri IV</title>
  <author>Soranus</author>
 <editor>Johannes Ilberg</editor>
  <funder>Harvard Library Arcadia Fund</funder>
@@ -20,11 +19,11 @@
  </respStmt>
  <respStmt>
   <persName>Matt Munson</persName>
-  <resp>Project Manager (University of Leipzig), 2016 - present</resp>
+  <resp>Project Manager (University of Leipzig)</resp>
  </respStmt>
  <respStmt>
   <persName>Annette Gessner</persName>
-  <resp>Project Assistant (University of Leipzig) 2015 - present</resp>
+  <resp>Project Assistant (University of Leipzig)</resp>
  </respStmt>
  <respStmt>
   <persName>Thibault Clérice</persName>
@@ -39,8 +38,8 @@
 <authority>Harvard College Library</authority>
  <idno type="filename">tlg0565.tlg001.1st1K-grc1.xml</idno>
 <availability>
- <p>Available under a Creative Commons Attribution-ShareAlike 4.0 International
- License</p>
+ <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+ License</licence>
 </availability>
 <date>2016</date>
 <publisher>Harvard College Library</publisher>
@@ -50,20 +49,20 @@
 <listBibl>
  <biblStruct>
  <monogr>
-  <title>Sorani Gynaeciorum Libri IV De signis Fracturarum De Fasciis Vita Hippocratis Secundum Soranum</title>
-  <editor>
-	<persName>
-	 <name>Johannes Ilberg</name>
-	</persName>
-  </editor>
+  <title xml:lang="lat">Sorani Gynaeciorum Libri IV</title>
+  <title type="sub" xml:lang="lat">De Signis Fracturarum De Fasciis Vita Hippocratis Secundum Soranum</title>
+  <editor>Johannes Ilberg</editor>
   <author ref="urn:cts:greekLit:tlg0565">Soranus</author>
   <imprint>
 	<publisher>Teubner</publisher>
 	<pubPlace>Leipzig</pubPlace>
 	<date>1927</date>
   </imprint>
-  <biblScope unit="volume">4</biblScope>
  </monogr>
+  <series>
+   <title>Corpus Medicorum Graecorum</title>
+   <biblScope unit="volume">4</biblScope>
+  </series>
   <ref target="http://cmg.bbaw.de/epubl/online/cmg_04.html">Corpus Medicorum Graecorum/Latinorum</ref>
  </biblStruct>
 </listBibl>
@@ -72,13 +71,14 @@
 <encodingDesc>
  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
    <refsDecl n="CTS">
-  <cRefPattern matchPattern="(.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
-  <cRefPattern matchPattern="(.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+  <cRefPattern matchPattern="(\.+).(\.+)" n="chapter" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+  <cRefPattern matchPattern="(\.+)" n="book" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
  </refsDecl>
 </encodingDesc>
 <profileDesc>
 <langUsage>
 <language ident="grc">Greek</language>
+ <language ident="lat">Latin</language>
 </langUsage>
 </profileDesc>
 <revisionDesc>
@@ -1462,7 +1462,7 @@ Ermerins 34 δυϲτοκυίαιϲ P, ut solet</note>
 <p>44. τούτων οὕτωϲ προδιακεκαθαρμένων ἰϲτέον ὡϲ τινὲϲ μὲν <lb n="1"/>
 ἀκατάληπτον ἔφαϲαν ϲυναντᾶν 〈αὐτήν〉. καθ᾿ ἡμᾶϲ οὑν ἐκ τῶν πλει-
 όνων ὑφ᾿ ἓν καὶ μετὰ διοριϲμοῦ ποιήϲαϲθαι δεῖ τὴν ϲημείωϲιν τῆϲ
-ϲυλλήψεωϲ, οἰoν ἐκ τοῦ κατὰ τὸ πέραϲ τοῦ πληϲιαϲμοῦ φρικώδουϲ
+ϲυλλήψεωϲ, οἰον ἐκ τοῦ κατὰ τὸ πέραϲ τοῦ πληϲιαϲμοῦ φρικώδουϲ
 <lb n="10"/> ϲυναιϲθήϲεωϲ ἀντίληψιν γεγονέναι τῇ γυναικὶ καὶ τὸ ϲτόμιον μεμυκέναι
 τῆϲ ὑϲτέραϲ [τὸ] μετ᾿ εὐαφείαϲ καὶ τρυφερίαϲ (ἐν γὰρ ταῖϲ ψύξεϲιν
 καὶ ταῖϲ φλεγμοναῖϲ ϲυμπίπτει μέν, ἀλλὰ μετ᾿ ἀπηνείαϲ καὶ ϲκληρίαϲ),
@@ -4393,7 +4393,7 @@ Sor. ap. Gal. XII 417 29 δήπου P: corr. Rose
 </div>
 
 <div type="textpart" subtype="chapter" n="28">
-<head>XXVI[XLVI]. Περὶ ῥωχμoῦ τε καὶ βηχόϲ.</head>
+<head>XXVI[XLVI]. Περὶ ῥωχμοῦ τε καὶ βηχόϲ.</head>
 <p>54 [123]. Ῥώχοντοϲ δὲ τοῦ νηπίου διὰ τὸ πολὺ φλέγμα ϲυλ- <lb n="1"/>
 λέγειν ἔνιοι μὲν τὰ διὰ καρδαμώμου καὶ κυμίνου καὶ κνίδηϲ ϲπέρ-
 <lb n="10"/> ματοϲ καὶ πεπέρεωϲ ἐκλείγματα παραλαμβάνουϲιν. ἡμεῖϲ δὲ ταῦτα
@@ -5960,7 +5960,7 @@ p. 123, 14</note>
 <note type="footnote">2 τοῖϲ ἐπὶ τῆϲ αἱμορραγούϲηϲ ὑϲτέραϲ εἰρημένοιϲ] supra p. 119, 16 sqq
 5 λωτοῦ πριϲμάτων ἀπόβρεγμα] cf. Diosc. Mat med. I 117 7 πυτία] cf..
 Diose. Mat. med . II 75 (πήϲϲει . . . τὰ διαλελυμένα) 18 μικρὸν ὕϲτερον] seil.
-in libri IV cavito VI deperdito 27 sq. κολύμβοιϲ, κατακρουνιϲμοῖϲ ἐν ὑδaϲιν
+in libri IV cavito VI deperdito 27 sq. κολύμβοιϲ, κατακρουνιϲμοῖϲ ἐν ὑδαϲιν
 αὐτοφυέϲιν] cf. Antull ap. Oril t. III 385 B.- D).</note>
 <note type="footnote">1 post καθαρἂϲ in P sequuntur Artiana p. 89, 13 (ἐνίαϲ) . . . p. 92, 19
 (τόπων) Z., tum lacmna 4 fere litt, pcrgtur εἰ δὲ καὶ ποτίμαϲί τιϲ ἐθέλοι. Qac
@@ -6359,7 +6359,7 @@ slituit Ermerimns 27 φύϲι P: φηϲι Ermerimns 29 ἢ καὶ τὸ ἀνά
 ϲώμαϲιν 〈τὰ〉 πλείω γίνεται.</p>
 <lb n="1"/><p> 3 [55]. καὶ παρὰ μὲν τὴν κύουϲαν τοϲαῦτα ἂν γένοιτο αἴτια
 <lb n="352"/> δυϲτοκίαϲ· παρὰ δὲ τὸ κυούμενον, ὅταν ἢ ὑπερμέγεθεϲ ὅλον |ἦ ἢ κατὰ <lb n="10"/>
-μέροϲ, οἷoν εἰ ἔχει μεγάλην κεφαλὴν ἤ θώρακα ἤ κοιλίαν ἐμπεπληϲμέ-
+μέροϲ, οἷον εἰ ἔχει μεγάλην κεφαλὴν ἤ θώρακα ἤ κοιλίαν ἐμπεπληϲμέ-
 νην, ὡϲ ἐπὶ ὑγροκεφάλων· οὐ γὰρ μόνον τὰ κατὰ φύϲιν μεγάλα γίνε-
 ται ὅλῳ τῷ ϲώματι ἢ μέρεϲιν, ἀλλὰ καὶ τὰ παρὰ φύϲιν. καὶ παρὰ
 πλῆθοϲ δὲ δυϲτοκία γίνεται (ὅταν ἤτοι δύο ἢ τὰ τικτόμενα καὶ ἀθρόωϲ
@@ -6862,7 +6862,7 @@ corr. Dietz χερίου ex Paulo Rose: τῆ χειρὶ P ὡϲ sustuli</note>
 περιοχὴ ϲυμπέϲη τῆϲ κεφαλῆϲ, εἰ δὲ φυϲικῶϲ ἁδροκέφαλον, τῇ χειρὶ
 ϲυνθλαϲτέον τὴν κεφαλήν, ϲυνείκει 〈γὰρ〉 εὐμαρῶϲ ἁπαλῶν ἔτι τῶν <lb n="15"/>
 <lb n="4"/> ϲωμάτων ὄντων. εἰ δὲ μή, τῷ ϲπαθίῳ καὶ τὸ κρανίον διαιρεῖν καλὸν
-ἡ κατὰ τὸν τοῦ βρέγματοϲ τόπον, εἰ δὲ μή, καθ’ οἱoνδήποτε τρόπον·
+ἡ κατὰ τὸν τοῦ βρέγματοϲ τόπον, εἰ δὲ μή, καθ’ οἱονδήποτε τρόπον·
 προεκκριθέντοϲ γὰρ τοῦ ἐγκεφάλου ϲυμπίπτει τὸ κεφάλιον. τὰ χείλη
 δὲ τῆϲ διαιρέϲεωϲ ἀποϲτρέφειν καὶ ϲυνθραύειν τὰ ὀϲτάρια δι’ ὸδον-
 <lb n="5"/> τάγραϲ ἢ ὀϲτάγραϲ. εἰ δὲ διὰ μέγεθοϲ τοῦ ὅλου ϲώματοϲ μηδὲ οὕτωϲ <lb n="20"/>
@@ -6930,7 +6930,7 @@ Rose διὰρινῶν P: corr. Dietz</note>
 τοῦ ϲτομίου ταὐτὰ ποιεῖν ἅπερ ἐπὶ τοῦ χορίου διδάϲκειν μέλλομεν.</p>
 <p>13 [65]. μετὰ 〈δὲ〉 τὴν ἐμβρυουλκίαν καὶ ἐμβρυοτομίαν, ὡϲ ἤδη <lb n="1"/>
 φλεγμαίνοντοϲ τοῦ τόπου διὰ τὸν ἐπιγινόμενον ϲκυλμόν, διὰ τῶν
-<note type="footnote">13 ἔμπροϲθεν ὑπεδείξaωεν] p. 140, 21 sqq. 20sq] cf. Aet. XVI 23
+<note type="footnote">13 ἔμπροϲθεν ὑπεδείξαωεν] p. 140, 21 sqq. 20sq] cf. Aet. XVI 23
 p. 33, 27— 30 Z. 28sq. ἔμπροϲθεν ὑπεδείξαμεν] supra p. 6, 20 sqq.
 32 ἄπερ . . διδἀϲκειν μέλλομεν] infra 146,14 14 sqq. (cf. Ggnak. d. Sor. p.100 sqq.</note>
 <note type="footnote">8 ἀποκεκρύφθαι Ermerins 10 ἀνακλαϲθέντα δ P. corr. Ermerins:
@@ -7168,7 +7168,7 @@ supra licaul P</note>
 ϲαι τὸ πᾶν ϲύγκριμα, ὥϲτε καὶ τὴν μήτραν ἐξολιϲθῆϲαι. ἐϲθ’ ὅτε δὲ
 <lb n="372"/> ἄνευ τινὸϲ αἰτίαϲ τοιαύτηϲ τῶν ϲωμάτων ἀϲθενηϲάντων |καὶ τῶν
 ἀντεχόντων αὐτὴν ὑμένων καὶ μυῶν ὁμοίωϲ παραλύϲει ἀτονηϲάντων
-<lb n="4"/> ϲυνέϲτη τὸ πάθοϲ, οἰoν γίνετm ἐπὶ τῶν παρηκμακυιῶν. κατ’ ἀρχὰϲ
+<lb n="4"/> ϲυνέϲτη τὸ πάθοϲ, οἰον γίνετm ἐπὶ τῶν παρηκμακυιῶν. κατ’ ἀρχὰϲ
 μὲν οὑν γίνεται πλείονοϲ αματοϲ φορά, ἔπειτα δὲ καὶ ὀδύνη λαγόνων <lb n="10"/>
 καὶ ὀϲφύοϲ καὶ ἐπιγαϲτρίου καὶ αἰδοίου, καὶ φόβοϲ ἐϲτὶ ψυγένταϲ
 〈τοὺϲ τόπουϲ〉 [τὸν] ϲπαϲμὸν ἐπενεγκεῖν· χρονιϲμοῦ δὲ γενομένου

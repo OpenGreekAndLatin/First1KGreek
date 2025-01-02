@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="grc">Μηχανικά</title>
+                <author>Aristotle</author>
+                <editor>Immanuel Bekker</editor>
+                <funder>Center for Hellenic Studies</funder>
+                <respStmt>
+                    <resp>Published original versions of the electronic texts</resp>
+                    <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                    <persName role="principal">Gregory Crane</persName>
+                    <persName role="principal">Leonard Muellner</persName>
+                    <persName role="principal">Bruce Robertson</persName></respStmt>
+                <respStmt>
+                    <persName>Lucy Parr</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Hillary Cheney</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Evie Edmundson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Claudia Filos</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Carlos R. Gutiérrez-Rueda</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Catharine Haldeman</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Kelly Hamilton</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Matthew L Hokom</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Devin Lawson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Zijun Liao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Sean Mao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Halle Richardson</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Adam Rosengarten</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Will Shao</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Stuti Shelat</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Mel Ashton Trump</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Landon Van Berkum</persName>
+                    <orgName>Center for Hellenic Studies</orgName>
+                    <resp>Digital conversion and editing</resp>
+                </respStmt>
+                <respStmt>
+                    <persName>Lisa M. Cerrato</persName>
+                    <orgName>Perseus Digital Library</orgName>
+                    <resp>Digital editor</resp>
+                </respStmt></titleStmt>
+            
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">urn.cts.greekLit.tlg0086.tlg023.1st1K-grc1.xml</idno>
+<pubPlace/>
+    
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence></availability>
+<date when="2021-08-23"/>
+</publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <title xml:lang="lat">Aristotelis Opera</title>
+                        <author>Aristotle</author>
+                        <editor>Immanuel Bekker</editor>
+                        <imprint>
+                            <publisher>Oxford University Press</publisher>
+                            <pubPlace>Oxford</pubPlace>
+                            <biblScope unit="volume">6</biblScope>
+                            <date>1837</date>
+                        </imprint>
+                    </monogr>
+                    <ref target="https://archive.org/details/operaexrecension06arisuoft/page/144/mode/2up">Internet Archive</ref>
+                </biblStruct>
+            </sourceDesc> 
+        </fileDesc>        
+        
+<encodingDesc>
+<editorialDecl>
+<correction>
+<p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the 
+<ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+    
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+    
+    <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <p>This pointer pattern extracts chapter and section.</p></cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"> 
+            <p>This pointer pattern extracts chapter.</p></cRefPattern>
+    </refsDecl>
+</encodingDesc>
+        
+        <profileDesc>
+            <langUsage>
+                <language ident="grc">Greek</language>
+                <language ident="lat">Latin</language>
+            </langUsage>
+        </profileDesc>
+        
+        <revisionDesc>
+            <change when="2021-10-20" who="Lisa Cerrato">EpiDoc and CTS review.</change>
+        </revisionDesc>
+    </teiHeader>
+    
+    <text>
+<body>
+<div type="edition" n="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" xml:lang="grc">
+    <pb facs="operaexrecension06arisuoft_0154"/>
+    <milestone unit="page" resp="Bekker" n="847a"/>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="0">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="1">
+    <p rend="indent">ΘΑΥΜΑΖΕΤΑΙ τῶν μὲν κατὰ φύσιν συμβαινόντων, ὅσων ἀγνοεῖται τὸ αἴτιον, τῶν δὲ παρὰ φύσιν, ὅσα γίνεται διὰ τέχνην πρὸς τὸ συμφέρον τοῖς ἀνθρώποις. Ἐν πολλοῖς γὰρ ἢ φύσις ὑπεναντίον πρὸς τὸ χρήσιμον ἡμῖν ποιεῖ· ἡ μὲν γὰρ φύσις ἀεὶ τὸν αὐτὸν ἔχει τρόπον καὶ ἀπλῶς, τὸ δὲ χρήσιμον μεταβάλλει πολλαχῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="2">
+    <p>Ὄταν οὖν δέῃ τι παρὰ φύσιν πράξαι, διὰ τὸ χαλεπὸν ἀπορίαν παρέχει καὶ δεῖται τέχνης. Διὸ καὶ καλοῦμεν τῆς τέχνης τὸ πρὸς τὰς τοιαύτας ἀπορίας βοηθοῦν μέρος μηχανήν. Καθάπερ γὰρ ἐποίησεν Ἀντιφῶν ὁ ποιητής, οὕτω καὶ ἔχει· τέχνῃ γὰρ κρατοῦμεν, ὧν φύσει νικώμεθα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="3">
+    <p>Τοιαῦτα δέ ἐστιν ἐν οἶς τά τε ἐλάττονα κρατεῖ τῶν μειζόνων, καὶ τὰ ῥοπὴν ἔχοντα μικρὰν κινεῖ βάρη μεγάλα, καὶ πάντα σχεδὸν ὅσα τῶν προβλημάτων μηχανικὰ προσαγορεύομεν. Ἕστι δὲ ταῦτα τοῖς φυσικοῖς προβλήμασιν οὔτε ταὐτὰ πάμπαν οὔτε κεχωρισμένα λίαν, ἀλλὰ κοινὰ τῶν τε μαθηματικῶν θεωρημάτων καὶ τῶν φυσικῶν· τὸ μὲν γὰρ ὥς διὰ τῶν μαθηματικῶν δῆλον, τὸ δὲ περὶ ὃ διὰ τῶν φυσικῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="4">
+    <p>Περιέχεται δὲτῶν ἀπορουμένων <milestone unit="page" resp="Bekker" n="847b"/> ἐν τῷ γένει τούτῳ τὰ περὶ τὸν μοχλόν. Ἅτοπον γὰρ εἶναι δοκεῖ τὸ κινεῖσθαι μέγα βάρος ὑπὸ μικρᾶς ἰσχύος, καὶ ταῦτα μετὰ βάρους πλείονος· ὃ γὰρ ἄνευ μοχλοῦ κινεῖν οὐ δύναταί τις,τοῦτο ταὐτὸ βάρος, προσλαβών ἔτι τὸ τοῦ μοχλοῦ βάρος, κινεῖ θᾶττον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="5">
+<p>Πάντων δὲ τῶν τοιούτων ἔχει τῆς αἰτίας τὴν ἀρχὴν ὁ κύκλος. Καὶ τοῦτο εὐλόγως συμβέβηκεν· <pb facs="operaexrecension06arisuoft_0155"/> ἐκ μὲν γὰρ θαυμασιωτέρου συμβαίνειν τι θαυμαστὸν οὐδὲν ἄτοπον, θαυμασιώτατον δὲ τὸ τἀναντία γίνεσθαι μετ’ ἀλλήλων. Ὁ δὲ κύκλος συνέστηκεν ἐκ τοιούτων· εὐθύς γὰρ ἐκ κινουμένου τε γεγένηται καὶ μένοντος, ὦν φύσις ἐστὶν ὑπεναντία ἀλλήλοις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="6">
+<p>Ὤστ’ ἐνταῦθα ἔστιν ἐπβλέψασιν ἦττον θαυμάζειν τὰς συμβαινούσας ὑπεναντιώσεις περὶ αὐτόν, Πρῶτον μὲν γὰρ τῇ περιεχούσῃ γραμμῇ τὸν κύκλον, πλάτος οὐθὲν ἐχούσῃ, τἀναντία πως προσεμφαίνεται, τὸ κοῖλον καὶ τὸ κυρτόν. Ταῦτα δὲ διέστηκεν ἀλλήλων ὃν τρόπον τὸ μέγα καὶ τὸ μικρόν· ἐκείνων τε γὰρ μέσον τὸ ἴσὸν καὶ τούτων τὸ εὐθύ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="7">
+    <p>Διὸ μεταβάλλοντα εἰς ἄλληλα τὰ μὲν ἀναγκαῖον ἴσα γενέσθαι πρότερον ἢ τῶν <milestone unit="page" resp="Bekker" n="848a"/> ἄκρων ὁποτερονοῦν, τὴν δὲ γραμμὴν εὐθεῖαν, ὅταν ἐκ κυρτῆς εἰςκοῖλον ἢ πάλιν ἐκ ταύτης γίνηται κυρτὴ καὶ περιφερής. Ἕν μὲν οὖν τοῦτο τῶν ἀτόπων ὑπάρχει περὶ τὸν κύκλον, δεύτερον δὲ ὅτι ἄμα κινεῖταιτὰς ἐναντίας κινήσεις· ἅμα γὰρ εἰς τὸν ἔμπροσθεν κινεῖται τόπονκαὶ τὸν ὄπισθεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="8">
+<p>Ἥ τε γράφουσα γραμμὴ τὸν κύκλον ὥσαύτως ἔχει· ἐξ οὗ γὰρ ἄρχεται τόπου τὸ πέρας αὑτῆς, ἐς τὸν αὐτὸν τοῦτον τόπον ἔρχεται πάλιν· συνεχῶς γὰρ κινουμένης αὐτῆς τὸ ἔσχατον πάλιν ἀπῆλθε πρῶτον, ὥστε καὶ φανερὸν ὅτι μετέβαλεν ἐντεῦθεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="9">
+<p>Διό, καθάπερ εἴρηται πρότερον, οὐδὲν ἄτοπον τὸ πάντων εἶναι τῶν θαυμάτων αὐτὸν ἀρχήν. Τὰ μὲν οὖν περὶ τὸν ζυγὸν γινόμενα εἰς τὸν κύκλον ἀνάγεται, τὰ δὲ περὶ τὸν μοχλὸν εἰς τὸν ζυγόν, τὰ δ’ ἄλλα πάντα σχεδὸν τὰ περὶ τὰς κινήσεις τὰς μηχανικὰς εἰς τὸν μοχλόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="10">
+<p>Ἔτι δὲ διὰ τὸ μιᾶς οὔσης τῆς ἐκ τοῦ κέντρου γραμμῆς μηθὲν ἕτερον ἑτέρῳ φέρεσθαι τῶν σημείων τῶν ἐν αὐτῇ ἰσοταχῶς, ἀλλ’ ἀεὶ <pb facs="operaexrecension06arisuoft_0156"/> τὸ τοῦ μένοντος πέρατος πορρώτερον ὂν θᾶττον, πολλὰ τῶν θαυμαζομένων συμβαίνει περὶ τὰς κινήσεις τῶν κύκλων· περὶ ὧν ἐν τοῖς ἑπομένοις προβλήμασιν ἔσται δῆλον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="11">
+<p rend="indent">Διὰ δὲ τὸ τὰς ἐναντίας κινήσεις ἄμα κινεῖσθαι τὸν κύκλον, καὶ τὸ μὲν ἕτερον τῆς διαμέτρου τῶν ἄκρων, ἐφ’ οὖ τὸ Α, εἰς τοὔμπροσθεν κινεῖσθαι, θάτερον δέ, ἐφ’ οὖ τὸ Β, εἰς τοὔπισθεν, κατασκευάζουσί τινες ὥστ’ ἀπὸ μιᾶς κινήσεως πολλοὺς ὑπεναντίους ἅμα κινεῖσθαι κύκλους, ὥσπερ οὓς ἀνατιθέασιν ἐν τοῖς ἱεροῖς ποιήσαντες τροχίσκους χαλκοῦςτε καὶ σιδηροῦς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="12">
+<p>Εἰ γὰρ εἴη τοῦ Α Β κύκλου ἁπτόμενος ἕτερος κύκλος ἐφ’ οὗ Γ Δ, τοῦ κύκλουτοῦ ἐφ’ οὗ Α Β κινουμένης τῆς διαμέτρου εἰς τοὔμπροσθεν, κινηθήσεται ἡ Γ Δ εἰς τοὔπισθεν τοῦ κύκλου τοῦ ἐφ’ οὗ Α, κινουμένης τῆς διαμέτρου περὶ τὸ αὐτό. Εἰς τοὐναντίον ἄρα κινηθήσεται ὁ ἐφ’ οὗ Γ Δ κύκλος τῷ ἐφ’οὗ τὸ Α Β καὶ πάλιν αὐτὸς τὸν ἐφεξῆς, ἐφ’οὖ Ε Ζ, εἰς τοὐναντίον αὑτῷ κινήσει διὰ τὴν αὐτὴν αἰτίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:0" n="13">
+<p>Τὸν αὐτὸν δὲ τρόπον κἂν πλείους ὦσι, τοῦτο ποιήσουσιν ἑνὸς μόνου κινηθέντος. Ταύτην οὖν λαβόντες ὑπάρχουσαν ἐν τῷ κύκλῳ τὴν φύσιν οἱ δημιουργοὶ κατασκνευάζουσιν ὅργανον κρύπτοντες τὴν ἀρχήν, ὅπως ᾖ τοῦ μηχανήματος φανερὸν μόνον τὸ θαυμαστόν, τὸ δ’ αἴτιον ἄδηλον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="1">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="1">
+    <p rend="indent"><milestone unit="page" resp="Bekker" n="848b"/>Πρῶτον μὲν οὖν τὰ συμβαίνοντα περὶ τὸν ζυγὸν ἀπορεῖται, διὰ τίνα αἰτίαν ἀκριβέστερά ἐστι τὰ ζυγὰ τὰ μείζω τῶν ἐλαττόνων. Τούτου δὲ ἀρχή, διὰ τί ποτε ἐν τῷ κύκλῳ ἡ πλεῖον ἀφεστηκυῖα γραμμὴ τοῦ κέντρου τῆς ἐγγὺς τῇ αὐτῇ σχύϊ κινουμένης θᾶττον φέρεται τῆς ἐλάττονος; Τὸ γὰρ θᾶττον λέγεται διχῶς· ἄν τε γὰρ ἐν ἐλάττονι χρόνῳ ἴσὸν τόπον διεξέλθῃ, θᾶττον εἶναι λέγομεν, καὶ ἐὰν ἐν ἴσῳ πλείω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="2">
+<p>Ἡδὲ μείζων ἐν ἲσῳ χρόνῳ γράφει μείζονα κύκλον· ὁ γὰρ ἐκτὸς μείζων τοῦ ἐντός. Αἴτιον δὲ τούτων ὅτι φέρεται <pb facs="operaexrecension06arisuoft_0157"/> δύο φορὰς ἡ γράφουσα τὸν κύκλον. Ὄταν μὲν οὖν ἐν λόγῳ τινὶ φέρηται, ἐπ’ εὐθείας ἀνάγκη φέρεσθαι τὸ φερόμενον, καὶ γίνεται διάμετρος αὐτὴ τοῦ σχήματος ὃ ποιοῦσιναἱ ἐν τούτῳ τῷ λόγῳ συντεθεῖσαι γραμμαί.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="3">
+<p>Ἔστω γὰρ ὁ λόγος ὃν φέρεται τὸ φερόμενον, ὃν ἔχει ἡ Α Β πρὸς τὴν ΑΓ· καὶ τὸ μὲν ΑΓ φερέσθω πρὸς τὸ Β, ἡ δὲ Α Β ὑποφερέσθω πρὸς τὴν Η Γ· ἐνηνέχθω δὲ τὸ μὲν Α πρὸς τὸ Δ, ἡ δὲ ἐφ’ ᾗ Α Β πρὸς τὸ Ε.Εἰ οὖν ἐπὶ τῆς φορᾶς ὁ λόγος ἦν ὅν ἡ Α Β ἔχει πρὸς τὴν Α Γ, ἀνάγκη καὶ τὴν Α Δ πρὸςτὴν Α Ε τοῦτον ἔχειν τὸ λόγον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="4">
+<p>Ὄμοιον ἄρα ἐστὶ τῷ λόγῳ τὸ μικρὸν τετράπλευρον τῷ μείζονι, ὥστεκαὶ ἡ αὐτὴ διάμετρος αὐτῶν, καὶ τὸΑ ἔσται πρὸς Ζ. Τὸν αὐτὸν δὴ τρόπον δειχθήσεται κἂν ὁπουοῦν διαληφθῇ ἡ φορά· αἰεὶ γὰρ ἔσται ἐπὶ τῆς διαμέτρου. Φανερὸν οὖν ὅτι τὸ κατὰ τὴν διάμετρον φερόμενον ἐν δύο φοραῖς ἀνάγκη τὸν τῶν πλευρῶν φέρεσθαι λόγον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="5">
+<p>Εἰ γὰρ ἄλλον τινά, οὐκοἰσθόσεται κατὰ τὴν διάμετρον. Ἐὰν δὲ ἐν μηδενὶ λόγῳ φέρηται δύο φορὰς κατὰ μηδένα χρόνον, ἀδύνατον εὐθεῖαν εἶναι τὴν φοράν. Ἕστω γὰρ εὐθεῖα. Τεθείσης οὗν ταύτης διαμέτρου, καὶ παραπληρωθεισῶν τῶν πλευρῶν, ἀνάγκη τὸν τῶν πλευρῶν λόγον φέρεσθαι τὸ φερόμενον· τοῦτο γὰρ δέδεικται πρότερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="6">
+<p>Οὐκ ἄρα ποιήσει εὐθεῖαν τὸ ἐν μηδενὶ λόγῳ φερόμενον μηδένα χρόνον. Ἐὰν γάρ τινα λόγον ἐνεχθῇ ἐνχρόνῳ τινί, τοῦτον ἀνάγκη τὸν χρόνον εὐθεῖαν εἶναι φορὰν διὰ τὰπροειρημένα. Ὤστε περιφερὲς γίνεται, δύο φερόμενον φορὰς ἐν μηθενὶ λόγῳ μηθένα χρόνον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="7">
+    <p>Ὄτι μὲν τοίνυν ἡ τὸν κύκλον γράφουσα φέρεται δύο φορὰς ἅμα, φανερὸν ἔκ τε τούτων, καὶ ὅτιτὸ φερόμενον κατ’ εὐθεῖαν ἐπὶ τὴν κάθετον ἀφικνεῖται, <milestone unit="page" resp="Bekker" n="849a"/> ὥστε εἶναι πάλιν αὐτὴν ἀπὸ τοῦ κέντρου κάθετον. <pb facs="operaexrecension06arisuoft_0158"/> Ἕστω κύκλος ὁ ΑΒΓ, τὸ δ’ ἄκρον τὸ ἐφ’ οὖ Β φερέσθω ἐπὶ τὸ Δ· ἀφικνεῖται δέποτε ἐπὶ τὸ Γ. Εἰ μὲν οὖν ἐν τῷ λόγῳ ἐφέρετο ὃν ἔχειἡ ΒΔ πρὸς τὴν ΔΓ, ἐφέρετο ἄν τὴν διάμετρον τὴν ἐφ’ ᾗ ΒΓ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="8">
+<p>Νῦν δέ,ἐπείπερ ἐν οὐδενὶ λόγῳ, ἐπὶ τὴν περιφέρειανφέρεται τὴν ἐφ’ ᾗ ΒΕΓ. Ἐὰν δὲ δυοῖν φερομένοιν ἀπὸ τῆς αὑτῆς ἰσχύος τὸ μὲν ἐκκρούοιτο πλεῖον τὸ δὲ ἔλαττον, εὔλογον βραδύτερον κινηθῆναι τὸ πλεῖον ἐκκρουόμενον τοῦ ἔλαττον ἐκκρουομένου· ὃ δοκεῖ συμβαίνειν ἐπὶ τῆς μείζονος καὶ ἐλάττονος τῶν ἐκ τοῦ κέντρου γραφουσῶν τοὺς κύκλους.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="9">
+<p>Διὰ γὰρ τὸ ἐγγύτερον εἶναι τοῦ μένοντος τῆς ἐλάττονος τὸ ἄκρον ἢ τὸ τῆς μείζονος, ὥσπερ ἀντισπώμενον εἰς τοὐναντίον, ἐπὶ τὸ μέσον βραδύτερον φέρεται τὸ τῆς ἐλάττονος ἄκρον. Πάσῃ μὲν οὖν κύκλον γραφούσῃ τοῦτο συμβαίνει, καὶ φέρεται τὴν μὲν κατὰ φύσιν κατὰ τὴν περιφέρειαν, τὴν δὲ παρὰ φύσιν εἰς τὸ πλάγιον καὶ τὸ κέντρον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="10">
+<p>Μείζω δ’ ἀεὶ τὴν παρὰ φύσιν ἡ ἐλάττων φέρεται· διὰ γὰρ τὸ ἐγγύτερον εἶναι τοῦ κέντρου τοῦ ἀντισπῶντος κρατεῖται μᾶλλον, Ὄτι δὲ μεῖζον τὸ παρὰ φύσιν κινεῖται ἡ ἐλάττων τῆς μείζονος τῶν ἐκ τοῦ κέντρον γραφουσῶν τοὺς κύκλους, ἐκ τῶνδε δῆλον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="11">
+<p rend="indent">Ἕστω κύκλος ἐφ’ οὗ ΒΓΔΕ, καὶ ἄλλος ἐν τούτῳ ἐλάττων, ἐφ’ οὗ Χ Ν Μ Ξ, περὶ τὸ αὐτὸ κέντροντὸ Α· καὶ ἐκβεβλήσθωσαν αἱ διάμετροι, ἐν μὲν τῷ μεγάλῳ, ἐφ’ ὦν ΓΔ καὶ ΒΕ, ἐν δὲ τῷ ἐλάττονι αἱ Χ ΝΞ· καὶ τὸ ἑτερόμηκες παραπεπληρώσθω, τὸ ΔΨΡΓ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="12">
+<p>Εἰ δὴ ἡ ΑΒ γράφουσα κύκλον ἥξει ἐπὶ τὸ αὐτὸ ὅθεν ὡρμώθη ἐπὶ τὴν Α Ε, δῆλον ὅτι φέρεται πρὸς αὑτήν. Ὁμοίως δὲ καὶ ἡ ΑΧ πρὸς τὴν ΑΧ ἥξει. Βραδύτερον δὲ φέρεται ἡ ΑΧ τῆς ΑΒ, ὥσπερ εἴρηται, διὰ τὸ γίνεσθαι μείζρνα τὴν ἔκκρουσιν καὶ ἀντισπᾶσθαι μᾶλλον τὴν ΑΧ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="13">
+<p>Ἤχθω δὲ ἡ ΑΘΗ, καὶ ἀπὸ τοῦ Θ κάθετος ἐπὶ τὴν ΑΒ ἡ ΘΖ ἐν τῷ <pb facs="operaexrecension06arisuoft_0159"/> κύκλῳ, καὶ πάλιν ἀπὸ τοῦ Θ ἤχθω παρὰ τὴν ΑΒ ἡ ΘΩ, καὶ ὁ ΩΥ ἐπὶ τὴν ΑΒ κάθετον, καὶἡ ΗΚ. Αἱ δὴ ἐφ’ ὧν ΩΥ καὶ ΘΖ ἴσαι. Ἡ ἄρα ΒΥ ἐλάττων τῆς ΧΖ· αἱ γὰρ ἴσαι εὐθεῖαι ἐπ’ ἀνίσουςκύκλους ἐμβληθεῖσαι πρὸςόρθὰς τῇ διαμέτρῳ ἔλαττον τμῆμα ἀποτέμνουσι τῆς διαμέτρου ἐν τοῖς μείζοσι κύκλοις, ἔστι δὲ ἡ ΩΥ ἴση τῇ ΘΖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="14">
+    <p>Ἐν ὅσῳ <milestone unit="page" resp="Bekker" n="849b"/> δἡ χρόνῳ ἡ ΑΘ τὴν ΧΘ ἐνηνέχθη, ἐν τοσούτῳ χρόνῳ ἐν τῷ κύκλῳτῷ μείζονι μείζονα τῆς ΒΩ ἐνήνεκται τὸ ἄκρον τῆς ΒΑ. μὲν γὰρ κατὰ φύσιν φορὰ ἴση, ἡ δὲ παρὰ φύσιν ἐλάττων· ἡ δὲ ΒΥ τῆς ΖΧ. Δεῖ δὲ ἀνάλογον εἶνας, ὡςτὸ κατὰ φύσιν πρὸς τὸ κατὰ φύσιν,τὸ παρὰ φύσιν πρὸς τὸ παρὰ φύσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="15">
+<p>Μείζονα ἄρα περιφέρειαν διελήλυθε τὴν ΗΒ τῆς ΩΒ. Ἀνάγκη δὲ τὴν Η Β ἐν τούτῳ τῷ χρόνῳ διεληλυθέναι· ἐνταῦθα γὰρ ἔσται, ὅταν ἀνάλογον ἀμφοτέρως συμβαίνῃ τὸ παρὰ φύσιν πρὸς τὸ κατὰ φύσιν. Εἰ δὴ μεῖζόν ἐστι τὸ κατὰ φύσιν ἐν τῇ μείζονι, καὶ τὸ παρὰ φύσιν μᾶλλον ἂν ἐνταῦθα συμπίπτοι μοναχῶς, ὥστε τὸ Β ἐνηνέχθαι ἄν τὴν ΒΗ ἐντῷ ἐφ’ οὗ Χ σημεῖον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="16">
+<p>Ἐνταῦθα γὰρ κατὰ φύσιν μὲν γίνεται τῷ Β σημείῳ τὸ κέντρον (ἔστι γὰρ αὐτὴ ἀπὸ τοῦ ΗΚ κάθετος), παρὰ φύσιν δὲ ἐς τὸ ΚΒ. Ἕστι δὲ ὡς τὸ ΗΚ πρὸς τὸ ΚΒ. τὸ ΘΖ πρὸς τὸ ΖΧ. Φανερὸν δὲ ἐὰν ἐπιζευχθῶσιν ἀπὸ τῶν ΒΧ ἐπὶ τὰ Η Θ. Εἰ δὲ ἐλάττων ἢ μείζων τῆς Η Β ἔσται, ἢν ἐνέχθη τὸ Β, οὐχ ὁμοίως ἔσται οὐδὲ ἀνάλογον ἐν ἀμφοῖντὸ κατὰ φύσιν πρὸς τὸ παρὰ φύσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="17">
+<p>Δι’ ἢν μὲν τοίνυν αἰτίαν ἀπὸ τῆς αὐτῆς ἰσχύος φέρεται θᾶττον τὸ πλέον ἀπέχον τοῦ κέντρουσημεῖον, δῆλον διὰ τῶν εἰρημένων· διότι δὲ τὰ μὲν μείζω ζυγὰ ἀκριβέστερά ἐστι τῶν ἐλαττόνων, φανερὸν ἐκ τούτων. Γίνεται γὰρ τὸ μὲν σπάρτον κέντρον (μένει γὰρ τοῦτο), τὸ <pb facs="operaexrecension06arisuoft_0160"/> δὲ ἐπὶ ἑκάτερον μέρος τῆς πλάστιγγος αἱ ἐκ τοῦ κέντρου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="18">
+ <p>Ἀπὸ οὖν τοῦ αὐτοῦ βάρους ἀνάγκη θᾶττον κινεῖσθαι τὸ ἄκρον τῆς πλάστιγγος, ὅσῳ ἂν πλεῖον ἀπέχῃ τοῦ σπάρτου, καὶ ἔνια μὲν μὴ δῆλα εἶναι ἐν τοῖς μικροῖς ζυγοῖς πρὸς τὴναἴσθησιν ἐπιτιθέμενα βάρη, ἐν δὲ τοῖς μεγάλοις δῆλα· οὐθὲν γὰρ κωλύει ἔλαττονκινηθῆναι μέγεθος ἢ ὥστε εἶναι τῇ ὄψει φανερόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="19">
+<p>Ἐπι δὲ τῆς μεγάλης πλάστιγγος ποιεῖ ὁρατὸν τὸ αὐτὸ βάρος μέγεθος. Ἔνια δὲ δῆλα μὲν ἐπ’ ἀμφοῖν ἐστίν, ἀλλὰ πολλῷ μᾶλλον ἐπὶ τῶν μειζόνων διὰ τὸ πολλῷ μεῖζον γίνεσθαι τὸ μέγεθος τῆς ῥοπῆς ὑπὸ τοῦ αὐτοῦ βάρους ἐν τοῖς μείζοσι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:1" n="20">
+    <p>Καὶ διὰ τοῦτο τεχνάζουσιν οἱ ἁλουργοπῶλαι πρὸς τὸ παρακρούεσθαι ἱστάντες, τό τε σπάρτον οὐκ ἐν μέσῳ τιθέντες, καὶ μόλυβδον τῆς φάλαγγος εἰς θάτερον μέροςἐγχέοντες, ἢ τοῦ ξύλου τὸ πρὸς τὴν ῥίζαν πρὸς ὃ βούλονται ῥέπειν ποιοῦντες, ἢ ἐἀν ἔχῃ ὄζον· βαρύτερον <milestone unit="page" resp="Bekker" n="850a"/> γὰρ ἐν ὦ μέρος ἢ ῥίζα τοῦ ξύλου ἐστίν, ὁ δὲ ὄζος ῥίζα τίς ἐστιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="2">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:2" n="1">
+<p rend="indent">Διὰ τί, ἐὰν μὲν ἄνωθεν ᾖ τὸ σπαρτίον, ὅταν κάτωθεν ῥέψαντος ἀφέλῃ τὸ βάρος, πάλιν ἀναφέρεται τὸ ζυγόν, ἐἀν δὲ κάτωθεν ὑποστῇ, οὐκ ἀναφέρεται ἀλλὰ μένει; Ἡ διότι ἄνωθεν μὲν τοῦ σπαρτίου ὄντος πλεῖον τοῦ ζυγοῦ γίνεται τὸ ἐπέκεινα τῆς καθέτου; Τὸ γὰρ σπαρτίον ἐστὶ κάθετος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:2" n="2">
+<p>Ὤστε ἀνάγκη ἐστὶ κάτω ῥέπεν τὸ πλέον, ἕως ἂν ἔλθῃ ἡ δίχα διαιροῦσα τὸ ζυγὸν ἐπὶ τὴν κάθετον αὐτήν, ἐπικειμένου τοῦ βάρους ἐν τῷ ἀνεσπασμένῳ μορίῳ τοῦ ζυγοῦ, Ἕστω ζυγὸν ὀρθὸν ἐφ’ οὖ ΒΓ, σπαρτίον δὲ τὸΑΔ. Ἐκβαλλόμενον δὴ τοῦτο κάτω κάθετος ἔσται ἐφ’ ἦς ἡ ΑΔΜ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:2" n="3">
+<p>Ἔὰν οὖν ἐπὶ τὸ Β ἡ ῥοπὴ ἐπιτεθῇ, ἔσται τὸ μὲν Β οὖ τὸ Ε, τὸ δὲ Γ οὖ τὸ Ζ ὥστε ἡ δίχα διαιροῦσα τὸ ζυγὸν πρῶτον μὲν ἦν ἡ ΔΜ τῆς καθέτου αὐτῆς, ἐπικειμένης δὲ τῆς ῥοπῆς ἔσται <pb facs="operaexrecension06arisuoft_0161"/> ἡ ΔΘ· ὥστε τοῦ ζυγοῦ ἐφ’ ᾦ ΕΖ τὸ ἔξω τῆς καθέτου τῆς ἐφ’ ἦς ΑΒ, τοῦ ἐν ὦ ΦΠ, μείζω τοῦ μίσεος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:2" n="4">
+    <p>Ἐὰν οὖν ἀφαιρεθῇ τὸ βάρος ἀπὸ τοῦ Ε, ἀνάγκη κάτω φέρεσθαι τὸ Ζ ἔλαττον γάρ ἐστι τὸΕ. Ἐὰν μὲν οὖν ἄνω τὸ σπαρτίον ἔχῃ, πάλιν διὰ τοῦτο ἀναφέρεται τὸ ζυγόν. Ἐὰν δὲ κάτωθεν ᾖ τὸ ὑποκείμενον, τοὐναντίον ποιεῖ· πλεῖον γὰρ γίνεται τοῦ ἡμίσεος τοῦ ζυγοῦ τὸ κάτω μέρος ἢ ὡς ἡ κάθετος διαιρεῖ ὥστε οὐκ ἀναφέρεται· κουφότερον γὰρ τὸ ἐπηρτημένον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:2" n="5">
+<p>Ἕστω ζυγὸν τὸ ἐφ’ οὖΝΞ, τὸ ὀρθόν, κάθετος δὲ ἡ Κ Λ Μ. Δίχαδὴ διαίρεῖται τὸΝΞ. Ἐπιτεθέντος δὲ βάρους ἐπὶ τὸ Ν, ἔσται τὸ μὲν Ν οὖ τὸ Ο, τὸ δὲ Ξ οὖ τὸ Ρ, ὁ δὲ Κ Λ οὖ τὸ ΑΘ, ὥστε μεῖζόν ἐστι τὸ ΚΟ τοῦ Λ Ρ τῷ ΘΚΛ. Καὶ ἀφαιρεθέντος οὖν τοῦ βάρους ἀνάγκη μένειν· ἐπίκενται γὰρ ὥσπερ βάρος ἡ ὑπεροχὴ ἡ τοῦ ἡμίσεος τοῦ ἐν ᾦτὸ Κ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="3">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:3" n="1">
+    <p rend="indent">Διὰ τί κινοῦσι μεγάλα βάρη μικραὶ δυνάμμεις τῷ μοχλῷ. ὥσπερ ἐλέχθη καὶ κατ’ἀρχήν, προσλαβόντι βάρος ἔτι τὸ τοῦ μοχλοῦ; Ῥᾷον δὲ τὸ ἔλαττόν ἐστι κινῆσαι βάρος, ἔλαττον δέ ἐστιν ἄνευ τοῦ μοχλοῦ, Ἥ ὅτι αἴτιόν ἐστιν ὁ μοχλός, ζυγὸν [ὢν] κάτωθεν ἔχον τὸ σπαρτίον καὶ εἰς ἄνισα διῃρημένον; Τὸ γὰρ ὑπομόχλιον ἀντὶ σπαρτίου γίνεται· μένει γὰρ ἄμφω ταῦτα, ὥσπερ τὸ κέντρον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:3" n="2">
+    <p>Ἐπεὶ δὲ θᾶττον ὑπὸ τοῦ ἴσου βάρους κινεῖται ἡ μείζων τῶν ἐκ τοῦ κέντρου, ἔστι δὲ τρία τὰ περὶ τὸν μοχλόν, τὸ μὲν ὑπομόχλιον, σπάρτον καὶ κέντρον, δύο δὲ βάρη, ὅ τε κινῶν καὶ τὸ κινούμενον· ὃ <milestone unit="page" resp="Bekker" n="850b"/> οὖν τὸ κινούμενον βάρος πρὸς τὸ κινοῦν, τὸ μῆκος πρὸς τὸ μῆκος ἀντιπέπονθεν. Αἰεὶ δὲ ὅσῳ ἂν μεῖζονἀφεστήκῃ τοῦ ὑπομοχλίου, ῥᾷον κινήσει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:3" n="3">
+<p>Αἰτία δέ ἐστιν ἡ προλεχθεῖσα, ὅτι ἡ πλεῖον ἀπέχουσα ἐκ τοῦ κέντρου μείζονα κύκλον γράφει. Ὤστε ἀπὸ τῆς αὐτῆς ἰσχύος πλέονμετανοῦσιν· <pb facs="operaexrecension06arisuoft_0162"/> στήσεται τὸ κινοῦν τὸ πλεῖον τοῦ ὑπομοχλίου ἀπέχον. Ἔστω μοχλὸς ἐφ’ οὗ ΑΒ. βάρος δὲ ἐφ’ ᾧ τὸ Γ, τὸ δὲ κινοῦν ἐφ’ ᾧ τὸ Δ, ὑπομόχλιον ἐφ’ ᾧ τὸ Ε, τὸ δὲ ἐφ’ ᾧ τὸ Δ κινῆσαν ἐφ’ ᾧ τὸ Η, κινούμενον δὲτὸ ἐφ’ οὖ Γ, βάρος ἐφ’ οὖ Κ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="4">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:4" n="1">
+<p rend="indent">Διὰ τί οἱ μεσόνεοι μάλιστα τὴν ναῦν κινοῦσιν; Ἢ διότι ἡ κώπη μοχλός ἐστιν; Ὑπομόχλιον μὲν γὰρ ὁ σκαλμὸς γίνεται (μένει γὰρ δἡ τοῦτο), τὸ δὲ βάρος ἡ θάλαττα, ἢν ἀπωθεῖ ἡ κώπη· ὁ δὲ κινῶν τὸν μοχλὸν ὁ ναύτης ἐστίν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:4" n="2">
+<p>Αεὶ δὲ πλέον βάρος κινεῖ, ὅσῳ ἄν πλέον ἀφεστήκῃ τοῦ ὑπομοχλίου ὁ κινῶν τὸ βάρος· μείζων γὰρ οὕτω γίνεται ἡ ἐκ τοῦ κέντρου, ὁ δὲ σκαλμὸς ὑπομόχλιον ὢν κέντρον ἐστίν. Ἐνμέση δὲ τῆ νηῒ πλεῖστον τῆς κώπης ἐντός ἐστιν· καὶ γὰρ ἡ ναῦς ταύτῃ εὐρυτάτη ἐστίν, ὥστε πλεῖον ἐπ’ἀμφότερα ἐνδέχεσθαι μέρος τῆς κώπης ἑκατέρου τοίχου ἐντὸς εἶναι τῆς νεώς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:4" n="3">
+<p>Κινεῖται μὲν οὖν ἡ ναῦς διὰ τὸ ἀπερειδομένης τῆς κώπης εἰς τὴν θάλασσαν τὸ ἄκρον τῆς κώπης τὸ ἐντὸς προϊέναι εἰς τὸ πρόσθεν, τὴν δὲ ναῦν προσδεδεμένην τῷ σκαλμῷ συμπροϊέναι, ᾖ τὸ ἄκρον τῆς κώπης.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:4" n="4">
+<p>Ἧι γὰρ πλείστην θάλασσαν διαιρεῖ ἡ κώπη, ταύτῃ ἀνάγκη μάλιστα προωθεῖσθαι· πλείστην δὲ διαιρεῖ ᾖ πλεῖστον μέρος ἀπὸ τοῦ σκαλμοῦ τῆς κώπης ἐστίν, Διὰ τοῦτο οἱ μεσόνεοι μάλιστα κινοῦσιν· μέγιστον γὰρ ἐν μέσῃ νηῒ τὸ ἀπὸ τοῦ σκαλμοῦ τῆς κώπης τὸ ἐντός ἐστιν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="5">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="1">
+    <p rend="indent">Διὰ τί τὸ πηδάλιον μικρὸν ὅν, καὶ ἐπ’ ἐσχάτῳ τῷ πλοίῳ, τοσαύτην δύναμιν ἔχει ὥστε ὑπὸ μικροῦ οἴακος καὶ ἑνὸς ἀνθρώπου δυνάμεως, καὶ ταύτης ἠρεμαίας,μεγάλακινεῖσθαιμεγέθη πλοίων; Ἢ διότι καὶ τὸ πηδάλιόν ἐστι μοχλός, καὶ μοχλεύει ὁ κυβερνήτης. Ἦι μὲν οὖν προσήρμοσται τῷ πλοίῳ, γίνεται ὑπομόχλιον, τὸ δὲ ὅλον πηδάλιον ὁ μοχλός, <pb facs="operaexrecension06arisuoft_0163"/> τὸ δὲ βάρος ἡ θάλασσα, ὁ δὲ κυβερνήτης ὁ κινῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="2">
+    <p>Οὐ κατὰ πλάτος δὲ λαμβάνει τὴν θάλασσαν, ὥσπερ ἡ κώπη, τὸ πηδάλιον. Οὐ γὰρ εἰς τὸ πρόσθεν κινεῖ τὸπλοῖον, ἀλλὰ κινούμενον κλίνει, πλαγίως τὴν θάλατταν δεχόμενον. Ἐπεὶ γὰρ τὸ βάρος ἧω ἡ θάλασσα, τοὐναντίον ἀπερειδόμενον κλίνει τὸ πλοῖον. Τὸ γὰρ ὑπομόχλιον εἰς τοὐναντίον στρέφεται, <milestone unit="page" resp="Bekker" n="851a"/> ἡ θάλασσα δὲ ἐντός· ἐκεῖνο δὲ εἰς τὸ ἐκτός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="3">
+<p>Τούτῳ δὲ ἀκολουθεῖ τὸπλοῖον διὰ τὸ συνδεδέσθαι. Ἡ μὲν οὖν κώπη κατὰ πλάτος τὸ βάρος ὠθοῦσα καὶ ὑπ’ ἐκείνουἀντωθουμένη εἰς τὸ εὐθύ προάγει· τὸ δὲ πηδάλιον, ὥσπερ κάθηται πλάγιον, τὴν εἰς τὸ πλάγιον, ἢ δεῦρο ἢ ἐκεῖ, ποιεῖ κίνησιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="4">
+<p>Ἐπ’ ἄκρου δὲ καὶ οὐκ ἐν μέσῳ κεῖται, ὅτι ῥᾷστον τὸ κινούμενον κινῆσαι ἀπ’ ἄκρου κινοῦν. Τάχιστα γὰρ φέρεται τὸ πρῶτον μέρος διὰ τὸ ὥσπερ ἐν τοῖς φερομένοις ἐπὶ τέλει λήγειν τὴν φοράν, οὕτω καὶ τοῦ συνεχοῦς ἐπὶ τέλους ἀσθενεστάτη ἐστὶν ἡ φορά.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="5">
+<p>Εἰ δὲ ἀσθενεστάτη, ῥᾳδία ἐκκρούειν. Διά τε δὴ ταῦτα ἐν τῇ πρύμνῃ τὸ πηδάλιόν ἐστι, καὶ ὅτι ἐνταῦθα μικρᾶς κινήσεως γενομένης πολλῷ μεῖζον τὸ διάστημα ἐπὶ τῷ ἐσχάτῳ γίνεται, διὰ τὸ τὴν ἴσην γωνίαν ἐπὶ μείζονα καθῆσθαι, καὶ ὅσῳ ἂν μείζους ὦσιν αἱ περιέχουσαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="6">
+<p>Δῆλον δὲ ἐκ τούτου καὶ δι’ ἣν αἰτίαν μᾶλλον προέρχεται εἰς τοὐναντίον τὸ πλοῖον ἢ ἡ τῆς κώπης πλάτη· τὸ αὐτὸ γὰρ μέγεθος τῇ αὐτῇ ἰσχύϊ κινούμενον ἐν ἀέρι πλέον ἢ ἐν τῷ ὕδατι πρόεισιν. Ἕστω γὰρ ἡ Α Β κώπη, τὸ δὲ Γ ὁ σκαλμός, τὸ δὲ Α τὸ ἐν. τῷ πλοίῳ, ἡ ἀρχὴ τῆς κώπης, τὸ δὲ Β τὸ ἐν τῇθαλάττῃ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="7">
+<p>Εἰ δἡ τὸ Α οὗ τὸ Δ μετακεκίνηται, τὸ Β οὐκ ἔσται οὗ τὸ Ε· ἴση γὰρ ἡ Β Ετῇ ΑΔ. Ἵσον οὖν μετακεχωρηκὸς ἔσται. Ἀλλ’ ἦν ἔλαττον. Ἕσται δὴ οὗ τὸΖ ἢ τὸ Θ. Ἅρα τοίνυν τὴν Α Β, καὶ οὐχ ἡ τὸ Γ, καὶ κάτωθεν. Ἐλάττων γὰρ ἡ ΒΖ τῆς Α Δ, ὥστε καὶ ἡ ΘΖ τῆς ΔΘ· ὅμοια γὰρ τὰ τρίγωνα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="8">
+<p>Καθεστηκὸς δὲ ἔσται καὶ τὸ μέσον, τὸ ἐφ’ οὗ Γ· <pb facs="operaexrecension06arisuoft_0164"/> εἰς τοὐναντίον γὰρ τῷ ἐν τῇ θαλάττῃ ἄκρῳ τῷ Β μεταχωρεῖ, ᾗπερ τὸ ἐν τῷ πλοίῳ ἄκρον τὸ Α μὴ ἐχώρει οὖ τὸ Δ. Ὤστε μετακινηθήσεται τὸ πλοῖον, καὶ ἐκεῖ οὗ ἡ ἀρχὴ τῆς κώπης μεταφέρεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="9">
+<p>Τὸ δ’ αὐτὸ καὶ τὸ πηδάλιον ποιεῖ, πλὴν ὅτι εἰς τὸ πρόσθεν οὐδὲν συμβάλλεται τῷ πλοίῳ, ὥσπερ ἐλέχθη ἐπὶ ἄνω, ἀλλὰ μόνον τὴν πρύμναν εἰς τὸ πλάγιον ἀπωθεῖ ἔνθα ἢ ἔνθα·εἰς τοὐναντίον γὰρ ἡ πρῷρα οὕτω νεύει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:5" n="10">
+<p>Ἦι μὲν δὴ τὸ πηδάλιον προσέζευκται, δεῖ οἶόν τι τοῦ κινουμένου μέσον νοεῖν, καὶ ὥσπερ ὁ σκαλμὸς τῇ κώπῃ· τὸ δὲ μέσον ὑποχωρεῖ, ᾖ ὁ οἴαξ μετακινεῖται. Ἐὰν μὲν εἴσω ἄγῃ, καὶ ἡ πρύμνα δεῦρο μεθέστηκεν· ἡ δὲ πρῷρα εἰς τοὐναντίον νεύει· ἐν γὰρ τῷ αὐτῷ οὔσης τῆς πρῷρας τὸ πλοῖον μεθέστηκεν ὅλον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="6">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:6" n="1">
+    <p rend="indent">Διὰ τί, ὅσῳ ἂν ἡ κεραία ἀνωτέρα ᾖ, θᾶττον πλεῖ τὰπλοῖα τῷ αὐτῷ ἱστίῳ καὶ τῷ αὐτῷ πνεύματι; Ἣ διότι γίνεται ὁ μὲν στὸς μοχλός, ὑπομόχλιον δὲ τὸ ἑδώλιον ἐν ᾧ <milestone unit="page" resp="Bekker" n="851b"/> ἐμπέπηγεν, ὃ δὲδεῖ κινεῖν βάρος, τὸ πλοῖον, τὸ δὲ κινοῦν τὸ ἐν τῷ ἱστίῳ πνεῦμα. Εἰ δ’ ὅσῳ αν πορρώτερον ᾗ τὸ ὑπομόχλιον, ῥᾷον κινεῖ καὶ θᾶττον ἡ αὐτὴ δύναμις τὸ αὐτὸ βάρος, ἡ οὖν κεραία ἀνώτερον ἀγομένη καὶ τὸ ἱστίον πορρώτερον ποιεῖ τοῦ ἑδωλίου ὑπομοχλίου ὄντος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="7">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:7" n="1">
+<p rend="indent">Διὰ τί, ὅταν ἐξ οὑρίας βούλωνται διαδραμεῖν μὴ οὐρίου τοῦ πνεύματος ὄντος, τὸ μὲν πρὸς τὸν κυβερνήτην τοῦ ἰστίου μέρος στέλλονται, τὸ δὲ πρὸς τὴν πρῷραν ποδιαῖον ποιησάμενοι ἐφιᾶσιν; Ἢ διότιἀντισπᾶν τὸ πηδάλιον πολλῷ μὲν ὄντι τῷ πνεύματι οὐ δύναται, ὀλίγῳ δέ, ὃ ὑποστέλλονται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:7" n="2">
+<p>Προάγει μὲν οὖν τὸ πνεῦμα, εἰς οὔριον δὲ καθίστησι τὸ πηδάλιον, ἀντισπῶν καὶ μοχλεῦον, τὴν θάλατταν. Ἄμα δὲ καὶ οἱ ναῦται μάχονται τῷ πνεύματι· ἀνακλίνουσι γὰρ ἐπὶ τὸ ἐναντίον ἑαυτούς. Διὰ τί τὰ στρογγύλα καὶ περιφερῆ τῶν σχημάτων εὐκινητότερα; Τριχῶς δὲ ἐνδέχεται τὸν κύκλον κυλισθῆναι· ἢ γὰρ κατὰ τὴν ἁψῖδα, συμμεταβάλλοντος τοῦ κέντρου, <pb facs="operaexrecension06arisuoft_0165"/> ὥσπερ ὁ τροχὸς ὁ τῆς ἁμάξης κυλίεται· ἢ περὶ τὸ κέντρον μόνον, ὥσπερ αἱ τροχιλέαι, τοῦ κέντρου μένοντος· ἢπαρὰ τὸ ἐπίπεδον, τοῦ κέντρου μένοντος, ὥσπερ ὁκεραμεικὸς τροχὸς κυλίνδεται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="8">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:8" n="2">
+<p>Εἰ μὲνδὴ τάχιστα τὰ τοιαῦτα, διά τε τὸ μικρῷ ἄπτεσθαι τοῦ ἐπιπέδου, ὥσπερ ὁ κύκλος κατὰ στιγμήν, καὶ διὰ τὸ μὴ προσκόπτειν· ἀφέστηκε γὰρ τῆς γῆς ἡ γωνία. Καὶ ἔτι ᾦ ἂν ἀπαντήσῃ σώματι, πάλιν τούτου κατὰ μικρὸν ἅπτεται. Εἰ δ’ εὐθύγραμμον ἦν, τῇ εὐθείᾳ ἐπὶ πολὺ ἥπτετο ἂν τοῦ ἐπιπέδου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:8" n="3">
+<p>Ἕτι ᾖ ῥέπει ἐπὶ τὸ βάρος, ταύτῃ κινεῖ ὁ κινῶν. Ὄταν μὲν γὰρ πρὸς ὄρθιον ἡ διάμετρος ᾖ τοῦ κύκλου τῷ ἐπιπέδῳ, ἁπτομένου τοῦ κύκλου κατὰ στιγμνὴν τοῦ ἐπιπέδου, ἴσὸν τὸ βάρος ἐπ’ ἀμφότερα διαλαμβάνει ἡ διάμετρος· ὅταν δὲ κινῆται, εὐθύς πλέον ἐφ’ ᾧ κινεῖται, ὥσπερ ῥέπον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:8" n="4">
+<p>Ἐντεῦθεν εὐκινητότερον τῷ ὠθοῦντι εἰς τοὔμπροσθεν· ἐφ’ ὃ γὰρ ῥέπει ἕκαστον, εὐκίνητόν ἐστιν, εἴπερ καὶτὸ ἐπὶ τὸ ἐναντίον τῆς ῥοπῆς δυσκίνητον. Ἔτι λέγουσί τινες ὅτι καὶ ἡ γραμμὴ ἡ τοῦ κύκλου ἐν φορᾷ ἐστὶν ἀεί, ὥσπερ τὰ μένοντα, διὰ τὸ ἀντερείδειν, οἷον καὶ τοῖς μείζοσι κύκλοις ὑπάρχει πρὸς τοὺς ἐλάττονας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:8" n="5">
+    <p>Θᾶττον γὰρ ὑπὸ τῆς ἴσης ἰσχύος κινοῦνται οἱ μείζους καὶ τὰ βάρη κινοῦσι, διὰ τὸ ῥοπήν τινα ἔχειν τὴν γωνίαν τὴν τοῦ μείζονος κύκλου πρὸς τὴν τοῦ ἐλάττονος, καὶ εἶναι ὅπερ ἡ διάμετρος πρὸς τὴν διάμετρον. Ἀλλὰ μὴν πᾶς κύκλος μείζων πρὸς <milestone unit="page" resp="Bekker" n="852a"/> ἐλάττονα· ἄπειροι γὰρ οἱ ἐλάττονες.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:8" n="6">
+<p>Εἰ δὲ καὶ πρὸς ἕτερον ἔχει ῥοπὴν ὁ κύκλος, ὁμοίως δὲ εὐκίνητος, καὶ ἄλλην ἂν ἔχοι ῥοπὴν ὁ κύκλος καὶ τὰ ὑπὸ κύκλου κινούμενα, κἂν μὴ τῇ ἁψῖδι ἅπτηται τοῦ ἐπιπέδου, ἀλλ’ ἢπαρὰ τὸ ἐπίπεδον, ἢ ὡςαἱ τροχιλέαι· καὶ γὰρ οὕτως ἔχοντα ῥᾷστα κινοῦνται καὶ κινοῦσι τὸ βάρος. Ἥ οὐ τῷ κατὰ μικρὸν ἅπτεσθαι καὶ προσκρούειν, ἀλλὰ δι’ ἄλλην αἰτίαν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:8" n="7">
+<p>Αὕτη δέ ἐστιν ἡ εἰρημένη πρότερον, ὅτι ἐκ δύο φορῶν γεγένηται ὁ κύκλος, ὥστε μίαν αὐτῶν αἰεὶ ἔχειν ῥοπήν, καὶ οἶον φερόμενον αὐτὸν <pb facs="operaexrecension06arisuoft_0166"/> αἰεὶ κινοῦσιν οἱ κινοῦντες, ὅταν κινῶσι κατὰ τὴν περιφέρειαν ὁπωσοῦν, Φερομένην γὰρ αὐτὴν κινοῦσιν· τὴν μὲν γὰρ εἰς τὸ πλάγιον αὐτοῦ κίνησιν ὠθεῖ τὸ κινοῦν, τὴν δὲ ἐπὶ τῆς διαμέτρου αύτὸς κινεῖται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="9">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:9" n="1">
+<p rend="indent">Διὰ τί τὰ διὰ τῶν μειζόνων κύκλων αἰρόμενα καὶ ἑλκόμενα ῥᾷον καὶ θᾶττον κινοῦμεν; οἷον καὶ αἱ τροχιλέαι αἱ μείζους τῶν ἐλαττόνων, καὶ αἱ σκυτάλαι ὁμοίως. Ἤ διότι ὅσῳ ἂν μείζων· ἡ ἐκ τοῦ κέντρουᾖ, ἐν τῷ ἴσῳχρόνῳ πλέον κινεῖται χωρίον, ὥστε καὶ τοῦ ἴσον βάρους ἐπόντος ποιήσει τὸ αὐτό, ὥσπερ εἴπομεν καὶ τὰ μείζω ζυγὰ τῶν ἐλαττόνωνἀκριβέστερα εἶναι. Τὸ μὲν γὰρ σπαρτίον ἐστὶ κέντρον, τοῦ δὲ ζυγοῦ αἱ ἐπὶ τάδε τοῦ σπαρτίου αἱ ἐκ τοῦ κέντρου.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="10">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:10" n="1">
+<p rend="indent">Διὰ τί ῥᾷον, ὅταν ἄνευ βάρους ᾖ, κινεῖται τὸ ζυγόν, ἢ ἔχον βάρος; ὁμοίως δὲ καὶτροχὸς ἢ ἄλλο τοιοῦτο τὸ βαρύτερον μὲν μεῖζον δὲ τοῦ ἐλάττονος καὶκουφοτέρουἭ ὅτι οὐ μόνον εἰς τοὐναντίον τὸ βαρύ, ἀλλὰ καὶ εἰς τὸ πλάγιον δυσκίνητόν ἐστιν. Ἐναντίον γὰρ τῇ ῥοπῇκινῆσαι χαλεπῶς, ἐφ’ ὃ δὲ ῥέπει, ῥᾳδίως· εἰς δὲ τὸ πλάγιον οὐ ῥέπει.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="11">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:11" n="1">
+<p rend="indent">Διὰ τί ἐπὶ τῶν σκυτάλων ῥᾷον τὰ φορτία κομίζεται ἢ ἐπὶ τῶν ἁμαξῶν, ἐχουσῶν τῶν μὲν μεγάλους τροχούς, τῶν δὲ μικρούς; Ἣ διότι ἐπὶ τῶν σκυτάλων οὐδεμίαν ἔχει πρόσκοψιν, τὸ δὲ ἐπὶ τῶν ἀμαξῶν τὸν ἄξονα, καὶ προσκόπτει αὐτῷ· ἔκ τε γὰρ τῶν ἄνωθεν πιέζει αὐτὸν καὶ ἐκ τῶν πλαγίων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:11" n="2">
+<p>Τὸ δὲ ἐπὶ τῶν σκυτάλων ἐπὶ δύο τούτων κινεῖται, τῇ τε κάτω χήρᾳ ὑποκειμένῃ καὶ τῷ βάρει τῷ ἐπικειμένῳ· ἐπ’ἀμφοτέρων γὰρ τούτων κυλίεται τῶν τόπων ὁ κύκλος καὶ φερόμενος ὠθεῖται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="12">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:12" n="1">
+    <p rend="indent">Διὰ τί πορρωτέρω τὰ βέλη φέρεται ἀπὸ τῆς σφενδόνης ἢ ἀπὸ τῆς χειρός; Καἰτοῖ κρατεῖ γε ὁ βάλλων τῇ χειρὶ <pb facs="operaexrecension06arisuoft_0167"/> <milestone unit="page" resp="Bekker" n="852b"/> μᾶλλον ἢ ἀπαρτήσας τὸ βάρος. Καὶ ἔτι οὕτω μὲν δύο βάρη κινεῖ, τό τε τῆς σφενδόνης καὶ τὸ βέλος, ἐκείνως δὲ τὸ βέλος μόνον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:12" n="2">
+<p>Πότερον ὅτι ἐν μὲν τῇ σφενδόνῃ κινούμενον τὸ βέλος ῥίπτει ὁ βάλλων (περιαγαγὼν γὰρ κύκλῳ πολλάκις ἀφίησιν), ἐκ δὲ τῆς χειρὸς ἀπὸ τῆς ἠρεμίας ἡ ἀρχή· πάντα δὲ εὐκινητότερα κινούμενα ἢ ἠρεμοῦντα.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:12" n="3">
+<p>Ἣ διά τε τοῦτο, καὶ διότι ἐν μὲν τῷ σφενδονᾶν ἡ μὲν χεὶρ γίνεται κέντρον, ἡ δὲ σφενδόνη ἡ ἐκ τοῦ κέντρου· ὅσῳ ἂν ᾖ μείζων ἡ ἀπὸ τοῦ κέντρου, κινεῖται θᾶττον. Ἡ δὲ ἀπὸ τῆς χειρὸς βολὴ πρὸς τὴν σφενδόνην βραχεῖα ἐστίν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="13">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:13" n="1">
+<p rend="indent">Διὰ τί ῥᾷον κινοῦνται περὶ τὸ αὐτὸ ζυγὸν οἱ μείζους τῶν ἐλαττόνων κόλλοπες, καὶ οἱ αὐτοὶ ὄνοι οἱ λεπτότεροι ὑπὸ τῆς αὐτῆς ἰσχύος τῶν παχυτέρων; Ἣ διότι ὁ μὲν ὅνος καὶ τὸ ζυγὸν κέντρον ἐστίν, τὰ δὲἀπέχοντα μεγέθη αἱ ἐκ τοῦ κέντρου;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:13" n="2">
+<p>Θᾶττον δὲ κινοῦνται καὶ πλέον ἀπὸ τῆςαὐτῆς ἰσχύος αἱ τῶν μειζόνων κύκλων ἢ αἱ τῶν ἐλαττόνων· ὑπὸ τῆς αὐτῆς γὰρ ἰσχύοςθᾶττον μεθίσταται τὸ ἄκρον τὸ πορρώτερον τοῦ κέντρου. Διὸ πρὸς μὲν τὸ ζυγὸν τοὺς κόλλοπας ὄργανα ποιοῦνται, οἶς ῥᾷον στρέφουσιν· ἐν δὲ τοῖς λεπτοῖς ὄνοις πλεῖον γίνεται τὸ ἔξω τοῦ ξύλου, αὕτη δὲ γίνεται ἡ ἐκ τοῦ κέντρου.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="14">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:14" n="1">
+<p rend="indent">Διὰ τί τὸ αὐτὸ μέγεθος ξύλον ῥᾷον κατεάσσεται περὶ τὸ γόνυ, ἐὰν ἴσὸνἀποστήσας τῶν ἄκρων ἐχόμενος καταγνύῃ, ἢπαρὰ τὸ γόνυ ἐγγὺς ὄντος· καὶ ἐὰν πρὸς τὴν γῆν ἐρείσας καὶ τῷ ποδὶ προσβὰς πόρρωθεν τῇ χειρὶ καταγνύῃ, ἢ ἐγγύθεν; Ἥ διότι ἔνθαμὲν τὸ γόνυ κέντρον, ἔνθα δὲ ὁ πούς. Ὄσῳ δ’ ἂν πορρώτερον ᾖ τοῦ κέντρου, ῥᾷον κινεῖται ἅπαν. Κινηθῆναι δὲ ἀνάγκη καταγνύμενον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="15">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:15" n="1">
+    <p rend="indent">Διὰ τί περὶ τοὺς αἰγιαλοὺς αἱ καλούμεναι κρόκαι στρογγύλαι εἰσίν, ἐκ μακρῶν τῶν λίθων καὶ ὁστράκων τὸ ἐξ ὑπαρχῆς ὄντων; Ἥ διότι τὰ πλεῖον ἀπέχοντα τοῦ μέσου ἐν ταῖς κινήσεσι θᾶττον φέρεται, Τὸ μὲν γὰρ μέσον γίνεται κένσθαιτρον, <pb facs="operaexrecension06arisuoft_0168"/> τὸ δὲ διάστημα ἡ ἐκ τοῦ κέντρον. Ἀεὶ δὲ ἡ μείζων ἀπὸ τῆς ἴσης κινήσεως μείζω γράφει κύκλον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:15" n="2">
+<p>Τὸ δ’ ἐν ἴσῳ χρόνῳ μείζω διεξιὸν θᾶττον φέρεται. Τὰ δὲ φερόμενα θᾶττον ἐκ τοῦ ἴσου ἀποστήματος σφοδρότερον τύπτει. Τὰ δὲ τύπτοντα μᾶλλον καὶ αὐτὰ τύπτεται μᾶλλον, Ὥστε ἀνάγκη θραύεσθαι αἰεὶ τὰ πλέον ἀπέχοντα τοῦ μέσου. Τοῦτο δὲ πάσχοντα ἀνάγκη γίνεσθαι περιφερῆ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:15" n="3">
+    <p>Ταῖς δὲ κρόκαις διὰ <milestone unit="page" resp="Bekker" n="853a"/> τὴν τῆς θαλάττης κίνησιν, διὰ τὸ μετὰ τῆς θαλάττης κινεῖσθαι, συμβαίνει ἀεὶ ἐν κινήσει εἶναι καὶ κυλιομέναις προσκόπτειν. Τοῦτο δὲ ἀνάγκη μάλιστα συμβαίνειν αὐτοῖς τοῖς ἄκροις.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="16">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:16" n="1">
+<p rend="indent">Διὰ τί,ὅσῳ ἂν ᾖ μακρότερα τὰ ξύλα, τοσούτῳ ἀσθενέστερα γίνεται, καὶ κάμπτεται αἰρομένα μᾶλλον,κἂν ᾖ τὸ μὲν βραχύ, ὅσον δίπηχυ, λεπτόν, τὸ δὲ ἑκατὸν πηχῶν παχύ; Ἢ διότι μοχλὸς γίνεται καὶ βάρος καὶ ὑπομόχλιον ἐν τῷ αἴρεσθαι τοῦ ξύλου τὸ μῆκος; Τὸ μὲν γὰρ πρῶτον μέρος αὐτοῦ,ὃ ἡ χεὶρ αἴρει, οἷον ὑπομόχλιον γίνεται,τὸ δ’ ἐπὶ τῷ ἄκρῳ βάρος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:16" n="2">
+<p>Ὥστε ὅσῳ ἄν ᾖ μακρότερον τὸ ἀπὸ τοῦ ὑπομοχλίου, τοσούτῳ ἀνάγκη κάμπτεσθαιμᾶλλον· ὅσῳ γὰρ ἂν πλέον ἀπέχῃ τοῦ ὑπομοχλίου, τοσούτῳ ἀνάγκη κάμπτεσθαι μεῖζον. Ἀνάγκη οὖν αἴρεσθαι τὰ ἄκρα τοῦ μοχλοῦ. Ἐὰν οὖν ᾖ καμπτόμενος ὁ μοχλός, ἀνάγκη αὐτὸν κάμπτεσθαι μᾶλλον αἰρόμενον. Ὅπερ συμβαίνει ἐπὶ τῶν ξύλων τῶν μακρῶν· ἐν δὲ τοῖς βραχέσιν ἐγγύς τὸ ἔσχατον τοῦ ὑπομοχλίου γίνεται τοῦ ἠρεμοῦντος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="17">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:17" n="1">
+<p rend="indent">Διὰ τί τῷ σφηνὶ ὄντι μικρῷ μεγάλα βάρη διίσταται καὶ μεγέθη σωμάτων, καὶ θλῖψις ἰσχυρὰ γίνεται; Ἢ διότι ὁ σφὴν δύο μοχλοί εἰσιν ἐναντίοι ἀλλήλοις, ἔχει δὲ ἑκάτερος τὸ μὲν βάρος τὸ δὲ ὑπομόχλιον, ὃ καὶ ἀνασπᾷ ἢ πιέζει. Ἕτι δὲ ἡ τῆς πληγῆς φορὰ τὸ βάρος, ὃ τύπτει καὶ κινεῖ,ποιεῖ μέγα· καὶ διὰ τὸ κινούμενον κινεῖν τῇ ταχυτῆτι ἰσχύει ἔτι <pb facs="operaexrecension06arisuoft_0169"/> πλέον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:17" n="2">
+<p>Μικρῷ δὲ ὄντι μεγάλαι δυνάμεις ἀκολουθοῦσι· διὸ λανθάνει κινῶνπαρὰ τὴν ἀξίαν τοῦ μεγέθους. Ἔστω σφὴν ἐφ’ ᾧ ΑΒΓ, τὸ δὲ σφηνούμενονΔΕΗΖ. Μοχλὸς δὴ γίνεται ἡ ΑΒ, βάρος δὲ τὸτοῦ Β κάτωθεν, ὑπομόχλιον δὲ τὸ ΖΔ. Ἐναντίος δὲ τούτῳ μοχλὸς τὸ ΒΓ, Ἡ δὲ ΑΓ κοπτομένη ἑκατέρᾳ τούτων χρῆται μοχλῷ· ἀνασπᾷ γὰρ τὸ Β.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="18">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:18" n="1">
+<p rend="indent">Διὰ τί, ἐάν τις δύο τροχιλέας ποιήσας ἐπὶ δυσὶ ξύλοις συμβάλλουσιν ἑαυτοῖς ἐναντίως αὐταῖς κύκλῳ περιβάλῃ καλώδιον, ἔχον τὸ ἄρτημαἐκ θατέρου τῶν ξύλων, θάτερον δὲᾖ προσερηρεισμένον ἢ προστεθειμένον κατὰ τὰς τροχαλίας, ἐὰν ἕλκῃ τις τῇ ἀρχῇ τοῦ καλωδίου,μεγάλα βάρη προσάγει, κἂν ᾖ μικρὰ ἡ ἕλκουσα ἰσχύς;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:18" n="2">
+    <p>Ἢ διότι τὸ αὐτὸ βάρος ἀπὸ ἐλάττονος ἰσχύος, εἰ μοχλεύεται, ἐγείρεται, ἢ ἀπὸ χειρός; Ἡ δὲ τροχιλέα τὸ αὐτὸ ποιεῖ τῷ μοχλῷ, <milestone unit="page" resp="Bekker" n="853b"/> ὥστε ἡ μία ῥᾷον ἕλξει, καὶ ἀπὸ μιᾶς ὁλκῆς τοῦ κατὰ χεῖρα πολὺ ἕλξει βαρύτερον. Τοῦτο δ’ αἱ δύο τροχαλίαι πλέον ἢ διπλασίῳ τάχει αἴρουσαι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:18" n="3">
+<p>Ἔλαττον γὰρ ἔτι ἡ ἑτέρα ἕλκει ἢ εἰ αὐτὴ καθ’ ἑαυτὴν εἷλκεν, ὅτανπαρὰ τῆς ἑτέρας ἐπιβληθῇ τὸ σχοινίον· ἐκείνη γὰρ ἔτι ἔλαττονἐποίησε τὸ βάρος. Καὶ οὕτως ἐὰν εἰς πλείους ἐπιβάλληται τὸ καλώδιον, ἐν ὀλίγαις τροχιλέαις πολλὴ γίνεται διαφορά, ἢ ὥστε ὑπὸ τῆς πρώτης τοῦ βάρους ἕλκοντος τέτταρας μνᾶς, ὑπὸ τῆς τελευταίας ἕλκεσθαι πολλῷ ἐλάττω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:18" n="4">
+<p>Καὶ ἐν τοῖς οἰκοδομικοῖς ἔργοις ῥᾳδίως κινοῦσι μεγάλα βάρη· μεταφέρουσι γὰρ ἀπὸ τῆς αὐτῆς τροχιλέας ἐφ’ ἑτέραν, καὶ πάλιν ἀπ’ ἐκείνης εἰς ὄνους καὶ μοχλούς· τοῦτο δὲ ταὐτόν ἐστι τῷ ποιεῖν πολλὰς τροχιλέας.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="19">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:19" n="1">
+    <p rend="indent">Διὰ τί, ἐὰν μέν τις ἐπιθῇ ἐπὶ τὸ ξύλον πέλεκυν μέγαν καὶ φορτίον μέγαἐπ’ αὐτῷ, οὐ διαιρεῖ τὸ ξύλον, ὅ τι καὶ λόγου <pb facs="operaexrecension06arisuoft_0170"/> ἄξιον· ἐὰν δὲ ἄρας τὸν πέλεκύν τις πατάξῃ αὐτῷ, διασχίζει, ἔλαττον βάρος ἔχοντος τοῦ τύπτοντος πολὺ μᾶλλον ἢ τοῦ ἐπικειμένου καὶ πιεζοῦντος; Ἢ διότι πάντα τῇ κινήσει ἐργάζεται, καὶ τὸ βαρύ τὴν τοῦ βάρους κίνησιν λαμβάνει μᾶλλον κινούμενον ἢ ἠρεμοῦν;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:19" n="2">
+<p>Ἐπικείμενον οὖν οὐ κινεῖται τὴν τοῦ βάρους κίνησιν, φερόμενον δὲ ταύτην τε καὶ τὴν τοῦ τύπτοντος, Ἔτι δὲ καὶ γίνεται σφὴν ὁ πέλεκυς· ὁ δὲ σφὴν μικρὸς ὤν μεγάλα διίστησι διὰ τὸ εἶναι ἐκ δύο μοχλῶν ἐναντίως συγκειμένων.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="20">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:20" n="1">
+<p rend="indent">Διὰ τί αἱ φάλαγγες τὰ κρέα ἔστάσιν ἀπὸ μικροῦ ἀρτήματος μεγάλα βάρη, τοῦ ὅλουἡμιζυγίου ὄντος; Οὗ μὲν γὰρ τὸ βάρος ἐντίθεται, κατήρτηται μόνον ἡ πλάστιγξ, ἐπὶ θάτερον δὲ ἡ φάλαγξ ἐστὶ μόνον. Ἢ ὅτι ἃμα συμβαίνει ζυγὸν καὶ μοχλὸν εἶναι τὴν φάλαγγα; Ζυγὸν μὲν γὰρ, ᾖ τῶν σπαρτίων ἕκαστον γίνεται τὸ κέντρον τῆς φάλαγγος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:20" n="2">
+<p>Τὸ μὲν οὖν ἐπὶ θάτερα ἔχει πλάστιγγα, τὸ δὲ ἐπὶ θάτερα ἀντὶ τῆς πλάστιγγος τὸ σφαίρωμα, ὃ τῷ ζυγῷ ἔγκεινται, ὥσπερ εἴ τις τὴν ἑτέραν πλάστιγγα καὶ τὸν σταθμὸν ἐπιθείη ἐπὶ τὸ ἄκρον τῆς πλάστιγγος· δῆλον γὰρ ὅτι ἕλκει τοσοῦτον βάρος ἐν τῆ ἑτέρᾳ κείμενον πλάστιγγι.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:20" n="3">
+    <p>Ὅπως δὲ τὸἓν ζυγὸν πολλὰ ᾖ ζυγά, τοιαῦτα τὰ σπαρτία πολλὰ ἔγκειται ἐν τῷ τοιούτῳ ζυγῷ, ὦν ἑκάστου τὸ ἐπὶ τάδε ἐπὶ τὸ σφαίρωμα τὸ ἣμισν τῆς φάλαγγός ἐστι, καὶ ὁ σταθμὸς δι’ ἴσου τῶν ἀπ’ ἀλλήλων τῶν σπαρτίων κινουμένων, ὥστε συμμετρεῖσθαι πόσον βάρος <milestone unit="page" resp="Bekker" n="854a"/> ἕλκει τὸ ἐν τῇ πλάστιγγι κείμενον· ὥστε γινώσκειν, ὅταν ὀρθὴ ἡ φάλαγξ ᾖ, ἀπὸ ποίου σπάρτου πόσον βάρος ἔχει ἢ πλάστιγξ, καθάπερ εἴρηται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:20" n="4">
+<p>Ὅλως μέν ἐστι τοῦτο ζυγόν, ἔχον μίαν μὲν πλάστιγγα, ἐν ᾗ σταται τὸ βάρος, τὴν δ’ ἑτέραν, ἐν ᾗτὸ σταθμὸν ἐν τῇ φάλαγγι. Διὸ σφαίρωμά ἐστιν ἡ φάλαγξ ἐπὶ θάτερον. Τοιοῦτον δὲ ὄν πολλὰζυγά ἐστι, καὶ τοσαῦτα ὅσαπέρ <pb facs="operaexrecension06arisuoft_0171"/> ἐστι τὰ σπαρτία.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:20" n="5">
+<p>Ἀεὶ δὲ τὸ ἐγγύτερον σπαρτίον τῆς πλάστιγγος καὶ τοῦ ἑσταμένου βάρους μεῖζον ἕλκει βάρος, διὰ τὸ γίνεσθαι τὴν μὲν φάλαγγα πάσαν μοχλὸν ἀνεστραμμένον ὑπομόχλιον μὲν γὰρ τὸ σπαρτίον ἕκαστον ἄνωθεν ὅν, τὸ δὲ βάρος τὸ ἐνὸν ἐν τῆ πλάστιγγι), ὅσῳ δ’ ἄν μακρότερον τὸ μῆκος τοῦ μοχλοῦτοῦ ἀπὸ τοῦ ὑπομοχλίου, τοσούτῳ ἐκεῖ μὲν ῥᾷον κινεῖ, ἐνταῦθα δὲ σήκωμα ποιεῖ, καὶ ἵστησι τὸ πρὸς τὸ σφαίρωμα βάρος τῆς φάλαγγος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="21">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:21" n="1">
+<p rend="indent">Διὰ τί οἱ ἰατροὶ ῥᾷον ἐξαιροῦσι τοὺς ὀδόντας προσλαμβάνοντες βάρος τὴν ὀδοντάγραν ἢ τῇ χειρὶ μόνῃ ψιλῇ; Πότερον διὰ τὸ μᾶλλον ἐξολισθαίνειν διὰ τῆς χειρὸς τὸν ὀδόντα ἢ ἐκ τῆς ὀδοντάγρας; Ἢ μᾶλλον ὀλισθαίνει τῆς χειρὸς ὁ σίδηρος, καὶ οὐ περιλαμβάνει αὐτὸν κύκλῳ· μαλθακὴ γὰρ οὖσα ἡ σὰρξ τῶν δακτύλων καὶ προσμένει μᾶλλον καὶ περιαρμόττει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:21" n="2">
+<p>Ἀλλ’ ὅτι ἡ ὀδοντάγρα δύο μοχλοί εἰσιν ἀντικείμενοι, ἒν τὸ ὑπομόχλιον ἔχοντες τὴν σύναψιν τῆς θερμαστρίδος· τοῦ ῥᾷον οὖν κινῆσαι χρῶνται τῷ ὀργάνῳ πρὸς τὴν ἐξαίρεσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:21" n="3">
+<p>Ἔστω γὰρ τῆς ὀδοντάγρας τὸ μὲν ἕτερον ἄκρον ἐφ’ ᾦτὸ Α, τὸ δὲ ἕτερον, τὸ Β, ὃ ἐξαιρεῖ· ὁ δὲ μοχλὸς ἐφ’ ᾦ ΑΔΖ, ὁ δὲ ἄλλος μοχλὸς ἐφ’ ᾦ ΒΓΕ ὑπομόχλιον δὲ τὸ ΓΘΔ· ὁ δὲ ὀδοὐς ἐφ’ οὖ σύναψις· ὁ δὲ τὸ βάρος. Ἑκατέρῳ οὖν τῶν ΒΖ καὶ ἅμα λαβῶν κινεῖ. Ὅταν δὲ κινήση, ἐξεῖλε ῥᾷον τῇ χειρὶ ἢ τῷ ὀργάνῳ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="22">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:22" n="1">
+<p rend="indent">Διὰ τί τὰ κάρυα ῥᾳδίως καταγνύουσιν ἄνευ πληγῆς ἐν τοῖς ὀργάνοις ἂ ποιοῦσι πρὸς τὸ καταγνύναι αὐτά; Πολλὴ γὰρ ἀφαιρεῖται ἰσχὺς ἡ τῆς φορᾶς καὶ βίας, Ἔτι δὲ σκληρῷ καὶ βαρεῖ συνθλίβων θᾶττον ἄν κατάξαι ἢ ξυλίνῳ καὶ κούφῳ τῷ ὀργάνῳ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:22" n="2">
+    <p>Ἣ διότι οὕτως ἐπ’ ἀμφότερα θλίβεται ὑπὸ δύο μοχλῶν τὸ κάρυον, τῷ δὲ μοχλῷ ῥᾳδίως διαιρεῖται τὰ βάρη; Τὸ γὰρ ὄργανον ἐκ δύο σύγκειται μοχλῶν, ὑπομόχλιον <pb facs="operaexrecension06arisuoft_0172"/> ἐχόντων τὸ αὐτό, τὴν συναφὴν ἐφ’ᾖς τὸ Α.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:22" n="3">
+    <p>Ὥσπερ <milestone unit="page" resp="Bekker" n="854b"/> οὖν εἰ ἦσαν ἐκβεβλημέναι, ὑφ’ ὦν κινουμένων εἰς τὰ τῶν ΓΔ ἄκρα αἱ ΕΖ συνήγοντο ῥᾳδίως ἀπὸ μικρᾶς ἰσχύος· ἢν οὖν ἐν τῇ πληγῇ τὸ βάρος ἐποίει, ταύτην ἡ κρείττων ταύτης, ἡ τὸ ΕΓ καὶ ΖΔ, μοχλοὶ ὄντες ποιοῦσι· τῇ ἄρσει γὰρ εἰς τοὐναντίοναἴρονται, καὶ θλίβοντες καταγνύουσι τὸ ἐφ’ ᾦ Κ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:22" n="4">
+<p>Δι’ αὐτὸ δὲ τοῦτο καὶ ὅσῳ ἂν ἐγγύτερον ᾖ τῆς Α τὸ Κ, συντρίβεται θᾶττον· ὅσῳ γὰρ ἄν πλέον ἀπέχῃ τοῦ ὑπομοχλίον ὁ μοχλός, ῥᾷον κινεῖ καὶ πλεῖον ἀπὸ τῆς ἰσχύος τῆς αὐτῆς. Ἔστιν οὖν τὸ μὲν Α ὑπομόχλιον, ἡ δὲ ΔΑΖ μοχλός, καὶ ἡ ΓΑΕ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:22" n="5">
+<p>Ὄσῳ ἂν οὖν τὸ Κ ἐγγντέρω ᾖ τῆς γωνίας τῶν Α, τοσούτῳ ἐγγύτερον γίνεται τῆς συναφῆς τῶν Α·τοῦτο δέ ἐστι τὸ ὑπομόχλιον. Ἀνάγκη τοίνυν ἀπὸ τῆς αὐτῆς ἰσχύος συναγούσης τὸ Ζ Ε αἴρεσθαι πλέον. Ὤστε ἐπεί ἐστιν ἐξ ἐναντίας ἡ ἄρσις, ἀνάγκη θλίβεσθαι μᾶλλον· τὸ δὲ μᾶλλον θλιβόμενον κατάγνυται θᾶττον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="23">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="1">
+<p rend="indent">Διὰ τί φερομένων δύο φορὰς ἐν τῷ ῥόμβῳ τῶν ἄκρων σημείων ἀμφοτέρων, οὐ τὴν ἴσην ἑκάτερον αὐτῶν εὐθεῖαν διέρχεται, ἀλλὰ πολλαπλασίαν θάτερον; Ὁ αὐτὸς δὲ λόγος καὶ διὰ τί τὸ ἐπὶ τῆς πλευρᾶς φερόμενον ἐλάττω διέρχεται τῆς πλευρᾶς. Τὸ μὲν γὰρ τὴν διάμετροντὴν ἐλάττω, ἡ δὲ τὴν πλευρὰν τὴν μείζω, καὶ ἡ μὲν μίαν, τὸ δὲ δύο φέρεται φοράς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="2">
+<p>Φερέσθω γὰρ ἐπὶ τῆς ΑΒ τὸ μὲν Α πρὸς τὸ Β, τὸ δὲ Β πρὸς τὸ Δ τῷ αὐτῷ τάχει· φερέσθω δὲ καὶ ἡ ΑΒ ἐπὶ τῆς ΑΓ παρὰ τὴν Γ Δ τῷ αὑτῷ τάχει τούτοις. Ἀνάγκη δὴ τὸ μὲν Α ἐπὶ τῆς ΑΔ διαμέτρου φέρεσθαι, τὸ δὲ Β ἐπὶ τῆς ΒΓ, καὶ ἅμα διεληλυθέναι ἑκατέραν, καὶ τὴν Α Β τὴνΓ πλευράν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="3">
+    <p>Ἐνηνέχθω γὰρ τὸ μὲν Α τὴν ΑΕ, ἡ δὲ ΑΒ τὴν ΑΖ, καὶ ἔστω ἐκβεβλημένη ἡ ΖΗ παρὰ τὴν ΑΒ, καὶ ἀπὸ τοῦ Ε πεπληρώσθω, Ὄμοιον οὖν γίνεται τὸ παραπληρωθὲν <pb facs="operaexrecension06arisuoft_0173"/> τῷ ὅλῳ. Ἴση ἄρα ἡ ΑΖ τῇ ΑΕ,ὥστε τὸ Α ἐπὶ τῆς πλευρᾶς ἐνήνεκται τῆς ΑΕ. Ἡ δὲ ΑΒ τὴν ΑΖ εἴη ἂν ἐνηνεγμένη, Ἔσται ἄρα ἐπὶ τῆς διαμέτρου κατὰ τὸ Θ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="4">
+<p>Καὶ αἰεὶ δὲ ἀνάγκη αὐτὸ φέρεσθαι κατὰ τὴν διάμετρον. Καὶ ἅμα ἡ πλευρὰ ἡ ΑΒ τὴν πλευρὰν τὴν ΑΓ δίεισι, καὶ τὸ Α τὴν διάμετρον δίεισι τὴν ΑΔ. Ὁμοίως δὲ δειχθήσεται καὶ τὸ Β ἐπὶ τῆς ΑΓ διαμέτρον φερόμενον.Ἴση γάρ ἐστιν ἡ ΒΕ τῇ ΒΗ. Παραπληρωθέντος οὖν ἀπὸ τοῦ Η, ὅμοιόν ἐστι τῷ ὅλῳ τὸ ἐντός.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="5">
+    <p>Καὶ τὸ Β ἐπὶ τῆς διαμέτρου ἔσται κατὰ τὴν σύναψιν τῶν πλευρῶν, καὶ ἅμα δίεσιν <milestone unit="page" resp="Bekker" n="855a"/> τε πλευρὰ τὴν πλευρὰν καὶ τὸ Β τὴν ΒΓ διάμετρον. Ἄμα ἄρα καὶ τὸ Β τὴν πολλαπλασίαν τῆς Α Β δίεισι καὶ ἡ πλευρὰ τὴν ἐλάττονα πλευράν, τῷ αὐτῷ τάχει φερόμενα, καὶ ἡ πλευρὰ μείζω τοῦ Α διελήλυθε μίαν φορὰν φερομένη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="6">
+<p>Ὅσῳ γὰρ ἂν ὀξύτερος γένηται ὁ ῥόμβος, ἡ μὲν διάμετρος ἡ ἐλάττων γίνεται, ἡ δὲ ΒΓ μείζων, ἡ δὲ πλευρὰ τῆς Β Γ ἐλάττων. Ἄτοπον γάρ, ὥσπερ ἐλέχθη,τὸ δύο φορὰς φερόμενον ἐνίοτε βραδύτερον φέρεσθαι τοῦ μίαν, καὶ ἀμφοτέρων ἰσοταχῶν σημείων δοθέντων μείζω διεξιέναι θάτερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="7">
+<p>Αἴτιον δὲ ὅτι τοῦ μὲν ἀπὸ τῆς ἀμβλείας φερομένου σχεδὸν ἐναντίαι ἀμφότεραι γίνονται, ἥν τε αὐτὴ φέρεται καὶ ἣν ὑπὸ τῆς πλευρᾶς ὑποφέρεται, τοῦ δὲ ἀπὸ τῆς ὀξείας συμβαίνει φέρεσθαι ἐπὶ τὸ αὐτό. Συνεπουρίζει γὰρ ἡ τῆς πλευράς τὴν ἐπὶ τῆς διαμέτρου· καὶ ὅσῳ ἂν τὴν μὲν ὀξυτέραν ποιήσῃ, τὴν δὲ ἀμβλυτέραν, ἡ μὲν βραδυτέρα ἔσται, ἡ θάττων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="8">
+<p>Αἱ μὲν γὰρ ἐναντιώτεραι γίνονται διὰ τὸ ἀμβλυτέραν γίνεσθαι τὴν γωνίαν, αἱ δὲ μᾶλλον ἐπὶ τὰ αὐτὰ διὰ τὸ συνάγεσθαι τὰς γραμμάς. Τὸ μὲν γὰρ Β σχεδὸν ἐπὶ τὸ αὐτὸ φέρεται κατ’ ἀμφοτέρας τὰς φοράς· συνεπουρίζεται οὖν ἡ ἑτέρα, καὶ ὅσῳ ἂν ὀξυτέρα γίνηται ἡ γωνία, τοσούτῳ μᾶλλον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:23" n="9">
+<p>Τὸ Α δὲ ἐπὶ τοὐναντίον· αὐτὸ μὲν γὰρ <pb facs="operaexrecension06arisuoft_0174"/> πρὸς τὸ Β φέρεται, ἡ δὲ πλευρὰ ὑποφέρει αὐτὸ πρὸς τὸ Δ. Καὶ ὅσῳ ἂν ἀμβλυτέρα ἡ γωνία ᾗ, ἐναντιώτεραι αἱ φοραὶ γίνονται·εὐθυτέρα γὰρ ἡ γραμμὴ γίνεται. Εἰ δ’ ὅλως εὐθεῖα γένοιτο, παντελῶς ἂν εἴησαν ἐναντίαι. Ἡ δὲ πλευρὰ ὑπ’ οὐθενὸς κωλύεται μίαν φερομένη φοράν. Εὐλόγως οὖν τὴν μείζω διέρχεται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="24">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="1">
+<p rend="indent">Ἀπορεῖται διὰ τί ποτε ὁ μείζων κύκλος τῷ ἐλάττονι κύκλῳ ἴσηνἐξελίττεται γραμμήν, ὅταν περὶ τὸ αὐτὸ κέντρον τεθῶσι; Χωρὶς δὲ ἐκκυλιόμενοι, ὥσπερ τὸ μέγεθος αὐτῶν πρὸς τὸ μέγεθος ἔχει, οὕτως καὶ αἱ γραμμαὶ αὐτῶν γίνονται πρὸς ἀλλήλας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="2">
+<p>Ἔτι δὲ ἑνὸς καὶ τοῦ αὐτοῦ κέντρου ὄντος ἀμφοῖν, ὁτὲ μὲν τηλικαύτη γίνεται ἡ γραμμὴ ἢν ἐκκυλίονται, ἡλίκην ὁ ἐλάττων κύκλος καθ’ αὐτὸν ἐκκυλίεται, ὁτὲ δὲ ὅσην ὁ μείζων. Ὅτι μὲν οὖν μείζω ἐκκυλίεται ὁ μείζων, φανερόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="3">
+    <p>Γωνία μὲν γὰρ δοκεῖ κατὰ τὴν αἴσθησιν εἶναι ἡ περιφέρεια ἑκάστου τῆς οἰκείας διαμέτρου, ἡ τοῦ μείζονος κύκλου μείζων, ἡ δὲ τοῦ ἐλάττονος ἐλάττων, ὥστε τὸν αὐτὸν τοῦτον ἕξουσι λόγον, καθ’ ἃς ἐξεκυλίσθησαν <milestone unit="page" resp="Bekker" n="855b"/> αἱ γραμμαὶ πρὸς ἀλλήλας κατὰ τὴν αἴσθησιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="4">
+<p>Ἀλλὰ μὴν καὶ ὅτι τὴν ἴσην ἐκκυλίονται, ὅταν περὶ τὸ αὐτὸ κέντρον κείμενοι ὦσι, δῆλον· καὶ οὕτως γίνεται ὁτὲ μὲν ἴση τῇ γραμμῇ ἣν ὁ μείζων κύκλος ἐκκυλίεται, ὁτὲ δὲ ἐλάττων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="5">
+<p>Ἔστω γὰρ κύκλος ὁ μείζων μὲν ἐφ’ οὗ τὰ ΔΖΓ, ὁ δὲ ἐλάττων ἐφ’ οὖ τὰ Ε Η Β, κέντρον δὲ ἀμφοῖν τὸ Α· καὶ ἣν μὲν ἐξελίττεται καθ’ αὐτὸν ὁ μέγας,ἡ ἐφ’ ἦς ΖΙ ἔστω, ἢνδὲ ὁ ἐλάττων καθ’ αὐτόν, ἡ ἐφ’ ἧς Η Κ, ἴση τῇ ΑΖ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="6">
+<p>Ἐὰν δὴ κινῶ τὸν ἐλάττονα, τὸ αὐτὸ κέντρονκινῶ, ἐφ’ οὖ τὸ Α· ὁ δὲ μέγας προσηρμόσθω. Ὅταν οὖν ἡ Α Β ὀρθὴ γένηται πρὸς τὴν Η Κ, ἅμα καὶἡ ΑΓ γίνεται ὀρθὴ πρὸς τὴν Ζ Λ, ὥστε ἔσται ἴσην ἀεὶ διεληλυθυῖα, τὴν μὲν Η Κ. ἐφ’ Η Β <pb facs="operaexrecension06arisuoft_0175"/> περιφέρεια, τὴν δὲ Ζ Λ ἡ ἐφ’ ἦς ΖΓ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="7">
+<p>Εἰ δὲ τὸ τέταρτον μέρος ἴσην ἐξελίττεται, δῆλον ὅτι καὶ ὁ ὅλος κύκλος τῷ ὅλῳ κύκλῳ ἴσηνἐξελιχθήσεται, ὥστε ὅταν ἡ ΒΗ γραμμὴ ἔλθῃ ἐπὶ τὸ Κ, καὶ ἡ ΖΓ ἔσται περιφέρεια ἐπὶ τῆςΖΑ καὶ ὁ κύκλος ὅλος ἐξειλιγμένος. Ὁμοίως δὲ καὶ ἐὰν τὸν μέγαν κινῶ, ἐναρμόσας τὸν μικρόν, τοῦ αὐτοῦ κέντρου ὄντος, ἅμα τῇ ΑΓ ἡ Α Β κάθετος καὶ ὀρθὴ ἔσται, ἡ μὲν πρὸς τὴν ΖΙ, ἡ δὲ πρὸς τὴν Η Θ.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="8">
+<p>Ὥστε ὅταν ἴσην ἡ μὲν τῇ Η Θ ἔσται διεληλυθυῖα, ἡ δὲ τῇ ΖΙ, καὶ γένηται ὀρθὴ πάλιν ἡ ΖΑ πρὸς τὴν ΖΛ, καὶ ἡ ΑΓ ὀρθὴ πάλιν, ὡς τὸ ἐξ ἀρχῆς ἔσονται ἐπὶ τῶν ΘΙ. Τὸ δὲ μήτε στάσεως γινομένης τὸ μεῖζον τῷ ἐλάττονι, ὥστε μένειν τινὰ χρόνον ἐπὶ τοῦ αὐτοῦ σημείου· κινοῦνται γὰρ συνεχῶς ἄμφω ἀμφοτεράκις.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="9">
+<p>Μὴ ὑπερπηδῶντος τοῦ ἐλάττονος μηθὲν σημεῖον, τὸν μὲν μείζω τῷ ἐλάττονι ἴσην διεξιέναι, τὸν δὲ τῷ μείζονι, ἄτοπον. Ἔτι δὲ μιᾶς κινήσεως οὔσης ἀεὶ τὸ κέντρον τὸ κινούμενον ὁτὲ μὲν τὴν μεγάλην ὁτὲ δὲ τὴν ἐλάττονα ἐκκυλίεσθαι θαυμαστόν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="10">
+<p>Τὸ γὰρ αὐτὸ τῷ αὐτῷ τάχει φερόμενον ἴσην πέφυκε διεξιέναι· τῷ αὐτῷ δὲ τάχει ἴσην ἐστὶ κινεῖν ἀμφοτεράκις. Ἀρχὴ δὲ ληπτέα ἥδὲ περὶ τῆς αἰτίας αὐτῶν,ὅτι ἡ αὐτὴ δύναμιςκαὶ ἴση τὸ μὲν βραδύτερον κινεῖ μέγεθος, τὸ δὲ ταχύτερον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="11">
+    <p rend="indent">Εἰ δή τι εἴη ὃ μὴ πέφυκεν ὑφ’ ἑαυτοῦ κινεῖσθαι, ἐὰντοῦτο ἅμα καὶ αὐτὸ κινῇ τὸ πεφυκὸς κινεῖσθαι, βραδύτερον κινηθήσεται ἢ εἰ αὐτὴ καθ’ αὐτὴν ἐκινεῖτο. Καὶ ἐὰν μὲν πεφυκὸς ᾖ κινεῖσθαι, μὴσυγκινῆται δὲ μηθέν, ὡσαύτως ἕξει. Καὶ ἀδύνατον δὴ κινεῖσθαι πλέον ἢ τὸ κινοῦν· οὐ γὰρ τὴν αὐτοῦ κινεῖται κίνησιν, ἀλλὰ <milestone unit="page" resp="Bekker" n="856a"/> τὴν τοῦ κινοῦντος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="12">
+<p>Εἴη δὴ κύκλος ὁ μὲν μείζων τὸ Α, ὁ δὲ ἐλάττων ἐφ’ ᾧ Β. Εἰ ὠθοίη δ’ ὁ ἐλάττων τὸν μείζω, <pb facs="operaexrecension06arisuoft_0176"/> μὴ κυλιομένου αὐτοῦ, φανερὸν ὅτι τοσοῦτον δίεισι τῆς εὐθείας ὁ μείζων, ὅσον ἐώσθη ὑπὸ τοῦ ἐλάττονος. Τοσοῦτον δέ γε ἐώσθη ὅσον ὁ μικρὸς ἐκινήθη, Ἴσην ἄρα τῆς εὐθείας διεληλύθασιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="13">
+<p>Ἀνάγκη τοίνυν καὶ εἰ κυλιόμενος ὁ ἐλάττων τὸν μείζω ὠθοίη, κυλισθῆναι μὲν ἄμα τῇ ὥσει, τοσοῦτον δ’ ὅσον ὁ ἐλάττων ἐκυλίσθη, εἰ μηθὲν αὐτὸς τῇ αὐτῇ κινήσει κινεῖται. Ὡς γὰρ καὶ ὅσον ἐκίνει, τοσοῦτον κεκινῆσθαι ἀνάγκη τὸ κινούμενον ὑπ’ ἐκείνου. Ἀλλὰ μὴν ὅ τε κύκλος τοσοῦτον ἐκίνησε τὸ αὐτό, κύκλῳ τε καὶ ποδιαίαν (ἔστω γὰρ τοσοῦτον ὃ ἐκινήθη),καὶ ὁ μέγας ἅρα τοσοῦτον ἐκινήθη.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="14">
+<p>Ὁμοίως δὲ κἂν ὁ μέγας τὸν μικρὸν κινήσῃ, ἔσται κεκινημένος ὁ μικρὸς ὡς καὶ ὁ μείζων. Καθ’ αὐτὸν μὲν δὴ κινηθεὶς ὁποτεροσοῦν, ἐάν τε ταχὺ ἐάν τε βραδέως· τῷ αὐτῷ δὲ τάχει εὐθὺς ὅσην ὁ μείζων πέφυκεν ἐξελιχθῆναι γραμμήν. Ὅπερ καὶ ποιεῖ τὴν ἀπορίαν, ὅτι οὐκέτι ὁμοίως ποιοῦσιν ὅταν συναρμοσθῶσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="15">
+<p>Τὸ δ’ ἔστιν, εἰ ὁ ἕτερος ὑπὸ τοῦ ἑτέρου κινεῖται οὺχ ἢν πέφυκεν, οὐδὲ τὴν αὐτοῦ κίνησιν. Οὐθὲν γὰρ διαφέρει περιθεῖναι καὶ ἐναρμόσαι ἢ προσθεῖναι ὁποτερονοῦν ὁποτέρῳ· ὁμοίως γάρ, ὅταν ὁ μὲν κινῇ ὁ δὲ κινῆται ὑπὸ τούτου, ὅσον ἄν κινῇ ἅτερος, τοσοῦτον κινηθήσεται ἅτερος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="16">
+<p>Ὅταν μὲν οὖν προσκείμενον κινῇ ἢ προσκρεμάμενον, οὐκ ἀεὶ κυλίει τις· ὅταν δὲ περὶ τὸ αὐτὸ κέντρον τεθῶσιν, ἀνάγκη κυλίεσθαι ἀεὶ τὸν ἕτερον ὑπὸ τοῦ ἑτέρου. Ἀλλ’ οὐθὲν ἧττον οὐ τὴν αὑτοῦ κίνησιν ἅτερος κινεῖται, ἀλλ’ ὥσπερ ἂν εἰ μηδεμίαν εἶχε κίνησιν. Κἂν ἔχῃ. μὴ χρῆται δ’ αὐτῇ, ταὐτὸ συμβαίνει.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="17">
+    <p>Ὅταν μὲν οὖν ὁ μέγας κινῇ ἐνδεδεμένον τὸν μικρόν, ὁμικρὸς κινεῖται ὅσηνπερ οὗτος· ὅταν δὲ ὁ μικρός, πάλιν ὁ μέγας ὅσην οὗτος. Χωριζόμενος δὲ ἑκάτερος αὐτὸν κινεῖ αὐτός, Ὅτι δὲ τοῦ αὐτοῦ κέντρου ὄντος καὶ κινοῦντος τῷ αὐτῷ τάχει συμβαίνει ἄνισον διεξιέναι <pb facs="operaexrecension06arisuoft_0177"/> αὑτοὺς γραμμήν, παραλογίζεται ὁ ἀπορῶν σοφιστκῶς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:24" n="18">
+<p>Τὸ αὐτὸ μὲν γάρ ἐστι κέντρον ἀμφοῖν, ἀλλὰ κατὰ συμβεβηκός,ὡς μουσικὸν καὶ λευκόν· τὸ γὰρ εἶναι ἑκατέρου κέντρου τῶν κύκλων οὐ τῷ αὐτῷ χρῆται. Ὅταν μὲν οὖν ὁ κινῶν ᾖ ὁ μικρός, ὡς ἐκείνου κέντρον καὶ ἀρχή, ὅταν δὲ ὁ μέγας, ὡς ἐκείνου. Οὔκουν τὸ αὐτὸ κινεῖ ἀπλῶς, ἀλλ’ ἔστιν ὥς.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="25">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="1">
+    <p rend="indent">Διὰ τί τὰς κλίνας ποιοῦσι διπλασιοπλεύρους, τὴν μὲν <milestone unit="page" resp="Bekker" n="856b"/> ἓξ ποδῶν καὶ μιαρῷ μείζω πλευράν, τὴν δὲ τριῶν; Καὶ διὰ τί ἐντείνουσιν οὐ κατὰ διάμετρον; Ἢ τὸ μὲν μέγεθος τηλικαύτας, ὅπως τοῖς σώμασιν ὦσι σύμμετροι; Γίνονται γὰρ οὕτω διπλασιόπλευροι, τετραπήχεις μὲν τὸ μῆκος, διπήχεις δὲ τὸ πλάτος.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="2">
+<p>Ἐντείνουσι δὲ οὐ κατὰ διάμετρον ἀλλ’ ἀπ’ ἐναντίας, ὅπως τά τε ξύλα ᾖττον διασπᾶται· τάχιστα γὰρ σχίζεται κατὰ φύσιν διαιρούμενα ταύτῃ, καὶ ἑλκόμενα πονεῖ μάλιστα. Ἔτι ἐπειδὴ δεῖ βάρος δύνασθαι τὰ σπαρτία φέρειν, οὕτως ἧττον πονέσει λοξοῖς τοῖς σπαρτίοις ἐπιτιθεμένου τοῦ βάρους ἢ πλαγίοις. Ἔτι δὲ ἔλαττον οὕτω σπαρτίον ἀναλίσκεται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="3">
+<p>Ἕστω γὰρ κλίνη ἡ ΑΖΗΙ, καὶ δίχα διῃρήσθω ἡ ΖΗ κατὰ τὸ Β. Ἴσα δὴ τρυπήματά ἐστιν ἐν τῇ ΖΒ καὶ ἐν τῇ ΖΑ. Καὶ γὰρ αἱ πλευραὶἴσαι εἰσίν· ἡ γὰρ ὅλη ΖΗ διπλασία ἐστίν. Ἐντείνουσι δ’ ὡς γέγραπται, ἀπὸ τοῦ Α ἐπὶ τὸ Β, εἶτα οὖ τὸ Γ, εἶτα οὗ τὸ Δ, εἶτα οὗ τὸ Θ, εἶτα οὖ τὸ Ε.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="4">
+<p>Καὶ οὕτως ἀεί, ἕως ἂν εἰς γωνίαν καταστρέψωσιν ἄλλην· δύο γὰρ ἔχουσι γωνίαι τὰς ἀρχὰς τοῦ σπαρτίου. Ἴσα δέ ἐστι τὰ σπαρτία κατὰ τὰς κάμψεις, τό τε ΑΒ καὶ ΒΓ τῷ ΓΔ καὶ ΔΘ. Καὶ τὰ ἄλλα δὲ τὰ τοιαῦτά ἐστιν, ὅτι οὕτωςἔχει ἡ αὐτὴ ἀπόδειξις, Ἡ μὲν γὰρ ΑΒ τῇ ΕΘ ἴση· ἴσαί γάρ εἰσιν αἱ πλευραὶ τοῦ ΒΗΚΑ χωρίου, καὶ τὰτρυπήματα ἴσα διέστηκεν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="5">
+<p>Ἡ δὲ <pb facs="operaexrecension06arisuoft_0178"/> Β Η ἴση τῇ ΚΑ· ἡ γὰρΒ γωνία ἴση τῇ Η. Ἐν ἴσοις γὰρ ἡ μὲν ἐκτός, ἡ δὲ ἐντός· καὶ ἡ μὲν Β ἐστὶν ἡμίσεια ὀρθῆς· ἡ γὰρ ΖΒ ἴση τῇ ΖΑ· καὶ γωνία δὲ ἡ κατὰ τὸ Ζ ὁρθή. Ἠ δὲ Β γωνία ἴση τῇ κατὰ τὸ Η· ἡ γὰρ κατὰ τὸ Ζ ὁρθή, ἐπειδὴ διπλασιόπλευρον τὸ ἑτερόμηκες καὶ πρὸς μέσον κέκλασται.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="6">
+<p>Ὠστε ἡ ΑΓ τῇ ΕΗ ἴση. Ταύτῃ δὲ ἡ Κ Θ· παράλληλος γάρ. Ὤστε ἡ ΒΓ ἴση τῇ ΚΘ. Ἡδὲ ΓΕ τῇ ΔΘ. Ὁμοίως δὲ καὶ αἰ ἄλλαι δείκνυνται ὅτι ἴσαί εἰσὶν αἱ κατὰ τὰς κάμψεις δύο ταῖς δυσίν. Ὤστε δῆλον ὅτι τὰ τηλικαῦτασπαρτία ὅσον τὸ Α Β, τέσσαρα τοσαῦτ’ ἔνεστιν ἐν τῇ κλίνῃ· ὅσον δ’ ἐστὶ τὸ πλῆθος τῶν ἐν τῇ ΖΗ πλευρᾷ τρυπημάτων, καὶ ἐν τῷ ἡμίσειτῷ Ζ Β τὰ ἡμίση.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:25" n="7">
+    <p>Ὤστε ἐν τῇ ἡμισείᾳ κλίνῃ τηλικαῦτα μεγέθη σπαρτίων ἐστὶν ὅσοντῷ ΒΑ ἔνεστι, τοσαῦτα δὲ τὸ πλῆθος ὅσαπερ ἐν τῷ ΒΗ τρυπήματα. Γαῦτα δὲ οὐδὲν διαφέρει λέγειν ἢ ὅσα ἐν τῇ ΑΖ καὶ ΒΖ τὰ συνάμφω. εἰ δὲ κατὰ διάμετρον ἐνταθῇ τὰ σπαρτία, ὡς ἐν τῇ Α Β Γ Δ κλίνῃ ἔχει, τὰ ἡμίσεά εἰσιν οὐ τοσαῦτα <milestone unit="page" resp="Bekker" n="857a"/> ὅσα αἱ πλευραὶ ἀμφοῖν, αἱ Α Ζ Ζ Η· τὰ ἴσα δέ, ὅσα ἐν τῷ ΖΒΖΑ τρυπήματα ἔνεστιν. Μείζονες δέ εἰσιν αἰ ΑΖ ΒΖ δύο οὖσαι τῆς ΑΒ. Ὤστε καὶ τὸ σπαρτίον μεῖζον τοσούτῳ ὅσον αἱ πλευραὶ ἄμφω μείζους εἰσὶ τῆς διαμέτρου.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="26">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:26" n="1">
+<p rend="indent">Διὰ τί χαλεπώτερον τὰ μακρὰ ξύλαἀπ’ ἄκρου φέρειν ἐπὶ τῷ ὥμῳ ἢ κατὰ τὸ μέσον, ἴσου τοῦ βάρους ὄντος; Πότερον ὅτι σαλευομένου τοῦ ξύλου τὸ ἄκρον κωλύει φέρειν, μᾶλλον ἀντισπῶν τῇ σαλεύσει τὴν φοράν; Ἣ κἂν μηθὲν κάμπτηται μηδ’ ἔχῃ πολὺ μῆκος, ὅμως χαλεπώτερον φέρειν ἀπ’ ἄκρου; ἀλλ’ ὅτι καὶ ῥᾷον αἴρεται ἀπ’ ἄκρου ἢ ἐκ μέσου, διὰ τὸ αὐτὸ καὶ φέρειν οὕτω ῥᾴδιον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:26" n="2">
+    <p>Αἴτιον δὲ ὅτι ἐκ μέσου μὲν αἰρόμενον ἀεὶ ἐπικουφίζει ἄλληλα τὰ ἄκρα, καὶ θάτερον μέρος τὸ ἐπὶθάτερον εὗ αἴρει. Ὤσπερ γὰρ κέντρον <pb facs="operaexrecension06arisuoft_0179"/> γίνεται τὸ μέσον, ᾖ ἔχει τὸ αἶρον ἢ φέρον. Εἰς τὸ ἄνω οὖν κουφίζεται ἑκάτερον τῶν ἄκρων εἰς τὸ κάτω ῥέπον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:26" n="3">
+<p>Ἀπὸ δὲ τοῦ ἄκρον αἰρόμενον ἢ φερόμενον οὐ ποιεῖ τοῦτο, ἀλλ’ ἅπαν τὸ βάρος ῥέπει ἐφ’ ἓν μέσον, εἰς ὅπερ αἴρεται ἢ φέρεται.Ἕστω μέσον ἐφ’ οὔ Α, ἄκρα Β Γ. Αἰρομένου οὖν ἢ φερομένου κατὰ τὸ Α, τὸ μὲν Β κάτω ῥέπον ἄνω αἴρει τὸ Γ, τὸ δὲ Γ κάτω ῥέπον τὸ Β ἄνω αἴρει· ἄμα δὲ αἰρομένα ἄνω ποιεῖ ταῦτα.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="27">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:27" n="1">
+<p rend="indent">Διὰ τί, ἐὰν λίαν μακρὸν τὸ αὐτὸ βάρος, χαλεπώτερον φέρειν ἐπὶ τοῦ ὤμου, κἂν μέσον φέρῃ τις, ἢ ἐὰν ἔλαττον ᾖ ; Πάλαι ἐλέχθη ὡς οὐκ ἔστιν αἴτιον ἢ σάλευσις· ἀλλ’ ἢ σάλευσις νῦν αἴτιόν ἐστιν. Ὄταν γὰρ ᾖ μακρότερον, τὰ ἄκρα σαλεύεται, ὥστε εἴη ἂν καὶ τὸν φέροντα χαλεπώτερον φέρειν μᾶλλον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:27" n="2">
+<p>Αἴτιον δὲ τοῦ σαλεύεσθαι μᾶλλον, ὅτι τῆς αὐτῆς κινήσεως οὔσης μεθίσταται τὰ ἄκρα, ὅσῳπερ ἂν μακρότερον τὸ ξύλον. Ὄ μὲν γὰρ ὦμος κέντρον, ἐφ’ οὖ τὸ Α (μένει γὰρ τοῦτο), αἱ δὲ Α Β καὶ Α Γ αἱ ἐκ τοῦ κέντρου. Ὄσῳ δ’ ἂν ᾖ μεῖζον τὸ ἐκ τοῦ κέντρου ἢ τὸ Α Β ἢ καὶ τὸ Α Γ, πλέον μεθίσταται μέγεθος. Δέδεικται δὲ τοῦτο πρότερον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="28">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:28" n="1">
+    <p rend="indent">Διὰ τί ἐπὶ τοῖς φρέασι τὰκηλώνεια ποιοῦσι τοῦτον τὸν τρόπον ; προστιθέασι γὰρ βάρος ἐν τῷ ξύλῳ τὸν μόλιβδον, ὄντος βάρους τοῦ κάδου αὐτοῦ, καὶ κενοῦ καὶ πλήρους ὄντος. Ἥ ὅτι ἐν δυσὶ χρόνοις διῃρημένου τοῦ ἔργου (βάψαι γὰρ δεῖ, καὶ τοῦτ’ ἄνω ἑλκύσαι) συμβαίνει καθιέναι μὲν κενὸν ῥᾳδίως, <milestone unit="page" resp="Bekker" n="857b"/> αἴρειν δὲ πλήρη χαλεπῶς;</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:28" n="2">
+<p>Λυσιτελεῖ οὖν μικρῷ βραδύτερον εἶναι τὸ καταγαγεῖν πρὸς τὸ πολὺ κουφίσαι τὸ βάρος ἀνάγοντι. Τοῦτο οὖν ποιεῖ ἐπ’ ἄκρῳτῷ κηλωνείῳ ὁ μόλιβδος προσκείμενος ἢὁ λίθος. Καθιμῶντι μὲν γὰρ <pb facs="operaexrecension06arisuoft_0180"/> γίνεται βάρος μεῖζονἢ εἰ μόνον κενὸν δεῖ κατάγειντὸν κάδον· ὅταν δὲ πλήρης ᾖ, ἀνάγει ὁ μόλβδος, ἢ ὅ τι ἄν ᾖ τὸ προσκείμενον βάρος. Ὤστ’ ἐστὶ ῥᾷον αὐτῷ τὰ ἄμφωἢ ἐκείνῳ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="29">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:29" n="1">
+<p rend="indent">Διὰ τί, ὅταν φέρωσιν ἐπὶ ξύλου ἤ τινος τοιούτου δύο ἄνθρωποι ἴσον βάρος, οὐχ ὁμοίως θλίβονται, ἐὰν μὴ ἐπὶ τῷ μέσῳ ᾖ τὸ βάρος, ἀλλὰ μᾶλλον ὅσῳ ἄν ἐγγύτερον ᾖ τῶν φερόντων; Ἥ διότι μοχλὸς μὲν γίνεταιοὕτως ἐχόντωντὸ ξύλον, τὸ δὲ βάρος ὑπομόχλιον, ὁ δὲ ἐγγύτερος τοῦ βάρους τῶν φερόντων τὸ βάρος τὸ κινούμενον, ἄτερος δὲ τῶν φερόντων τὸ βάρος ὁ κινῶν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:29" n="2">
+<p>Ὄσῳ γὰρ πλέον ἀπέχει τοῦ βάρους,τοσούτῳ ῥᾷον κινεῖ, καὶ θλίβει μᾶλλον τὸν ἕτερον εἰς τὸ κάτω, ὥσπερ ἀντερείδοντος τοῦ βάρους τοῦ ἐπικειμένου καὶ γινομένου ὑπομοχλίου. Ἐν μέσῳ δὲ ὑποκειμένου τοῦ βάρους, οὐδὲν μᾶλλον ἅτερος θατέρῳ γίνεται βάρος, οὐδὲ κινεῖ, ἀλλ’ ὁμοίως ἑκάτερος ἑκατέρῳ γίνεται βάρος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="30">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:30" n="1">
+<p rend="indent">Διὰ τί οἱ ἀνιστάμενοι πάντες πρὸς ὀξεῖαν γωνίαν τῷ μηρῷ ποιήσαντες τὴν κνήμην ἀνίστανται, καὶ τῷ θώρακι πρὸς τὸν μηρόν ; εἰ δὲ μή, οὐκ ἂν δύναιντο ἀναστῆναι. Πότερον ὅτι τὸ ἴσον ἠρεμίας πανταχοῦ αἴτιον, ἡ δὲ ὀρθὴ γωνία τοῦ ἴσου, καὶ ποιεῖ στάσιν· διὸ καὶ φέρεται πρὸς ὁμοίας γωνίας τῇ περιφερείᾳ τῆς γῆς.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:30" n="2">
+<p>Οὐ γὰρ ὅτι καὶ πρὸς ὀρθὴν ἔσται τῷ ἐπιπέδῳ. Ἣ ὅτι ἀνιστάμενος γίνεται ὀρθός, ἀνάγκη δὲ τὸν ἑστῶτακάθετον εἶναι πρὸς τὴν γῆν. Εἰ οὖν μέλλει ἔσεσθαι πρὸς ὁρθήν, τοῦτο δέ ἐστι τὸ τὴν κεφαλὴν ἔχειν κατὰ τοὺς πόδας, καὶ γίνεσθαι δὴ ὅτε ἀνίσταται. Ὄταν μὲν οὖν καθήμενος ᾖ, παράλληλον ἔχει τὴν κεφαλὴν καὶ τοὺς πόδας, καὶ οὐκ ἐπὶ μιᾶςεὐθείας.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:30" n="3">
+    <p>Ἡ κεφαλὴ Α ἔστω, θώραξ <pb facs="operaexrecension06arisuoft_0181"/> Α Β, μόρος Β Γ, κνήμη Γ Δ. Πρὸς ὀρθὴν δὲ γίνεται ὅ τε θώραξ [ἐφ’ ὦν Α Β] τῷ μηρῷ καὶ ὁ μηρὸς τῇ κνήνμη οὕτως καθημένῳ. Ὤστε οὕτως ἔχοντα ἀδύνατον ἀναστῆναι. Ἀνάγκη δὲ ἐγκλῖναι τὴν κνήμην καὶ ποιεῖν τοὺς πόδας ὑπὸ τὴν κεφαλήν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:30" n="4">
+    <p>Τοῦτο δὲ ἔσται, ἐὰν ὁ Γ Δ ἐφ’ ἦς τὰ Γ Ζ γένηται, καὶ ἅμα ἀναστῆναι συμβήσεται, καὶ ἔχειν ἐπὶ <milestone unit="page" resp="Bekker" n="858a"/> τῆς αὐτῆς ἴσης τὴν κεφαλήν τε καὶ τοὺς πόδας. Ἡ δὲ Γ Ζ ὀξεῖαν ποιεῖ γωνίαν πρὸς τὴν Β Γ.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="31">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:31" n="1">
+<p rend="indent">Διὰ τί ῥᾷον κινεῖται τὸ κινούμενον ἢ τὸ μένον, οἶον τὰς ἁμάξας θᾶττον κινουμένας ὑπάγουσιν ἢ ἀρχομένας; Ἣ ὅτι χαλεπώτατον μὲν τὸ εἰς τοὐναντίον κινούμενον κινῆσαι βάρος; ἀφαιρεῖται γάρ τι τῆς τοῦ κινοῦντος δυνάμεως, κἂν πολὺ θᾶττον ᾖ· ἀνάγκη γὰρ βραδυτέραν γίνεσθαι τὴν ὦσιν τοῦ ἀντωθουμένου.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:31" n="2">
+<p>Δεύτερον δέ, ἐὰν ἠρεμῇ· ἀντιτείνει γὰρ καὶ τὸ ἠρεμοῦν. Τὸ δὲ κινούμενον ἐπὶ τὸ αὐτὸ τῷ ὠθοῦντι ὅμοιον ποιεῖ ὥσπερ ἄν εἰ αὐξήσειέ τις τὴν τοῦ κινοῦντος δύναμιν καὶ ταχυτῆτα· ὃ γὰρ ὑπ’ ἐκείνου ἂν ἔπασχε, τοῦτο αὐτὸ ποιεῖ εἰς τὸ πρὸ ὁδοῦ κινούμενον.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="32">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:32" n="1">
+<p rend="indent">Διὰ τί παύεται φερόμενα τὰ ῥιφέντα; Πότερον ὅταν λήγῃ ἡ ἰσχὺς ἡ ἀφεῖσα, ἢ διὰ τὸ ἀντισπάσθαι, ἢ διὰ τὴν ῥοπήν, ἐὰνκρείττων ᾖ τῆς ἰσχύος τῆς ῥιψάσης; Ἤ ἄτοπον τὸ ταῦτ’ ἀπορεῖν, ἀφέντα τὴν ἀρχήν.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="33">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:33" n="1">
+<p rend="indent">Διὰ τί φέρεταί τι οὐ τὴν αὐτοῦ φοράν, μὴ ἀκολουθοῦντος καὶ ὠθοῦντος τοῦ ἀφέντος; Ἤ δῆλον ὅτι ἐποίησε τοιοῦτον τὸ πρῶτον ὡς θάτερον ὤθεῖν, καὶ τοῦθ’ ἕτερον· παύεται δέ, ὅταν μηκέτι δύνηται ποιεῖν τὸ προωθοῦν τὸ φερόμενον ὥστε ὠθεῖν, καὶ ὅταν τὸ τοῦ φερομένου βάρος ῥέπῃ μᾶλλον τῆς εἰς τὸ πρόσθεν δυνάμεως τοῦ ὠθοῦντος.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="34">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:34" n="1">
+    <p rend="indent">Διὰ τί οὔτε τὰ ἐλάττονα οὔτε τὰ μεγάλα πόρρω φέρεται ῥιπτούμενα, ἀλλὰ δεῖ συμμετρίαν τινὰ ἔχειν πρὸς τὸν ῥιπτοῦντα; Πότερον ὅτι ἀνάγκη τὸ ῥιπτούμενον καὶ ὠθούμενον <pb facs="operaexrecension06arisuoft_0182"/> ἀντερείδειν ὅθεν ὠθεῖται; Τὸ δὲ μηθὲν ὑπεῖκον διὰ μέγεθος ἢ μηδὲν ἀντερεῖσαν δι’ ἀσθένειαν οὐ ποιεῖ ῥῖψιν οὐδὲ ὦσιν.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:34" n="2">
+    <p>Τὸ μὲν οὖν πολὺ ὑπερβάλλον τῆς ἰσχύος τῆς ὠθούσης οὐθὲν ὑπείκει, τὸ δὲ πολὺ ἀσθενέστερον οὐδὲν ἀντερείδει, Ἣ ὅτι τοσοῦτον φέρεται τὸ φερόμενον, ὅσον ἂν ἀέρα κινήσῃ εἰς βάθος; Τὸ δὲ μηδὲν κινούμενον οὐδ’ ἂν κινήσειεν οὐδέν. Συμβαίνει δὴ ἀμφότερα τούτοις ἔχειν. <milestone unit="page" resp="Bekker" n="858b"/> Τό τε γὰρ σφόδρα μέγα καὶ τὸ σφόδρα μικρὸν ὥσπερ οὐθὲν κινούμενά ἐστι· τὸ μὲν γὰρ αὐτὸ καθ’ ἓν κινεῖ, τὸ δ’ οὐθὲν κινεῖται.</p></div></div>
+<div type="textpart" subtype="chapter" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1" n="35">
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:35" n="1">
+<p rend="indent">Διὰ τί τὰ φερόμενα ἐν τῷ δινουμένῳ ὕδατι εἰς τὸ μέσον τελευτῶντα φέρονται ἅπαντα; Πότερον ὅτι μέγεθος ἔχει τὸ φερόμενον, ὥστε ἐν δυσὶ κύκλοις εἶναι, τῷ μὲν ἐλάττονι τῷ δὲ μείζονι, ἑκάτερον αὐτοῦ τῶν ἄκρων. Ὤστε περισπᾷ ὁ μείζων διὰ τὸ φέρεσθαι θᾶττον, καὶ πλάγιον ἀπωθεῖαὐτὸ εἰς τὸν ἐλάττω.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:35" n="2">
+<p>Ἐπεὶ δὲ πλάτος ἔχει τὸ φερόμενον, καὶ οὗτος πάλιν τὸ αὐτὸ ποιεῖ, καὶ ἀπωθεῖ εἰς τὸν ἐντός, ἕως ἂν εἰς τὸ μέσον ἔλθῃ. Καὶτότε μένει διὰ τὸ ὁμοίως ἔχειν πρὸς ἄπαντας τοὺς κύκλους τὸ φερόμενον, διὰ τὸ μέσον· καὶ γὰρ τὸ μέσον ἴσον ἀπέχει ἐν ἑκάστῳ τῶν κύκλων.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:35" n="3">
+<p>Ἣ ὅτι ὅσων μὲν μὴ κρατεῖ ἡ φορὰ τοῦ δινουμένου ὕδατος διὰ τὸ μέγεθος, ἀλλ’ ὑπερέχει τῇ βαρύτητι τῆς τοῦ κύκλου ταχυτῆτος, ἀνάγκη ὑπολείπεσθαι καὶ βραδύτερον φέρεσθαι. βραδύτερον δὲ ὁ ἐλάττων κύκλος φέρεται· τὸ αὐτὸ γὰρ ἐν ἴσῳ χρόνῳ ὁ μέγας τῷ μικρῷ στρέφεται κύκλῳ, ὅταν ὦσι περὶ τὸ αὐτὸ μέσον.</p></div>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:35" n="4">
+<p>Ὤστε εἰς τὸν ἐλάττονα κύκλον ἀναγκαῖον ἀπολείπεσθαι, ἕως ἂν ἐπὶ τὸ μέσον ἔλθῃ.Ὄσων δἐπρότερον κρατεῖ ἡ φορά, λήγουσα ταὐτὸ ποιήσει. Δεῖ γὰρ τὸν μὲν εὐθύ, τὸν δὲ ἕτερον κρατεῖν τῇταχυτῆτι τοῦ βάρους, ὥστε εἰς τὸν ἐντὸς ἀεὶ κύκλον ὑπολείπεσθαι πᾶν. Ἀνάγκη γὰρ αὐτὸ ἐντὸς ἢ ἐκτὸς κινεῖσθαι τὸ μὴ κρατούμενον.</p></div>
+<pb facs="operaexrecension06arisuoft_0183"/>
+<div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg0086.tlg023.1st1K-grc1:35" n="5">
+<p>Ἐν αὐτῷδὴτοίνυν ἐν ᾦ ἐστίν, ἀδύνατον φέρεσθαι τὸ μὴ κρατούμενον. Ἕτι δὲ ἦττον ἐν τῷ ἐκτός· θάττων γὰρ ἡ φορὰ τοῦ ἐκτὸς κύκλου. Λείπεται δὲ εἰς τὸν ἐντὸς τὸ μὴ κρατούμενον μεθίστασθαι. Ἀεὶ δὲ ἕκαστον ἐπιδίδωσιν εἰς τὸ μὴ κρατεῖσθαι, Ἐπεὶδὲ πέρας τοῦ μὴ κινεῖσθαι ποιεῖ τὸεἰς μέσον ἐλθεῖν, μένει δὲ τὸ κέντρον μόνον, ἅπαντα ἀνάγκη εἰς τοῦτο δὴ ἀθροίζεσθαι.</p></div></div></div>
+
+
+</body></text></TEI>

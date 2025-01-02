@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+     <teiHeader xml:lang="eng">
+          <fileDesc>
+               <titleStmt>
+                    <title xml:lang="lat">Fragmenta Synodicae Epistulae</title>
+                    <author>Irenaeus, Saint, Bishop of Lyon</author>
+                    <editor>Martin Joseph Routh</editor>
+                    <funder>Center for Hellenic Studies</funder>
+                    <respStmt>
+                         <resp>Published original versions of the electronic texts</resp>
+                         <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+                         <persName role="principal">Gregory Crane</persName>
+                         <persName role="principal">Leonard Muellner</persName>
+                         <persName role="principal">Bruce Robertson</persName>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Kelli Frangoulis</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Derek Diaco</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>AnneMarie Michael</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Charlotte Pocard</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Mari Yamazaki</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital conversion and editing</resp>
+                    </respStmt>
+                    <respStmt>
+                         <persName>Charlotte Houghton</persName>
+                         <orgName>Center for Hellenic Studies</orgName>
+                         <resp>Digital editor</resp>
+                    </respStmt>
+                    </titleStmt>
+               <publicationStmt>
+                    <publisher>Open Greek and Latin</publisher>
+                    <idno type="filename">tlg1447.tlg009.1st1K-grc1.xml</idno>
+                    <pubPlace/>
+                    <availability>
+                         <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+                    </availability>
+                    <date when="2021-08-24"/>
+               </publicationStmt>
+               <sourceDesc>
+                    <biblStruct>
+                         <monogr>
+                             <title xml:lang="lat">Reliquiae Sacrae: Sive, Auctorum Fere Jam Perditorum Secundi Tertiique Saeculi Post Christum Natum Quae Supersunt.</title>
+                              <editor>Martin Joseph Routh</editor>
+                              <imprint>
+                                   <pubPlace>Oxford</pubPlace>
+                                   <publisher>Oxford University Press</publisher>
+                                   <date>1846</date>
+                              </imprint>
+                              <biblScope unit="volume">2</biblScope>
+                         </monogr>
+                         <ref target="https://archive.org/details/reliquiaesacraes02rout/page/39/mode/2up">Internet Archive</ref>
+                    </biblStruct>
+               </sourceDesc>
+          </fileDesc>
+          <encodingDesc>
+               <editorialDecl>
+                    <correction>
+                        <p>Lace v. 0.6.21 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+                    </correction>
+               </editorialDecl>
+               
+               <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+               <refsDecl n="CTS">
+                    <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+                         <p>This pointer pattern extracts section.</p></cRefPattern>
+               </refsDecl>
+          </encodingDesc>
+          <profileDesc>
+               <langUsage>
+                    <language ident="grc">Greek</language>
+                    <language ident="lat">Latin</language>
+               </langUsage>
+          </profileDesc>
+          <revisionDesc>
+               <change when="2022-05-02" who="Lisa Cerrato">Markup review and minor edits.</change>
+               <change when="2021-12-06" who="Charlotte Houghton">initial markup of new file.</change>
+          </revisionDesc>
+     </teiHeader>
+     
+     <text>
+          <body>
+               <div type="edition" n="urn:cts:greekLit:tlg1447.tlg009.1st1K-grc1" xml:lang="grc">
+                    <pb facs="reliquiaesacraes02rout_0047"/>
+                    <head rend="center" xml:lang="lat">Fragmenta Synodicae Epistolae. <lb/> 
+                         Quam Scripsit <lb/> 
+                         S. Irenaeus, Lugdunensis Episcopus, <lb/> 
+                         Ad Victorem Episcopum Romanum, <lb/> 
+                         Ferme Exeunte Saeculo Secundo.</head>
+                    
+   <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1447.tlg009.1st1K-grc1" n="1">
+               <p rend="indent">Οὐδὲ γὰρ μόνον περὶ τῆς ἡμέρας ἐστὶν ἡ ἀμφισβήτησις, ἀλλὰ καὶ περὶ τοῦ εἴδους αὐτοῦ τῆς νηστείας. οἱ μὲν γὰρ οἴονται μίαν ἡμέραν δεῖν αὐτοὺς νηστεύειν· οἱ δὲ δύο, οἱ δὲ καὶ πλείονας. οἱ δὲ τεσσαράκοντα ὥρας ἡμερινάς τε καὶ νυκτερινὰς συμμετροῦσι τὴν ἡμέραν αὐτῶν. (<foreign xml:lang="lat">for. ut Vet. Interp.</foreign> συμμετροῦντες, ὁρίζουσι τὴν ἡ. αὐ.) καὶ τοιαύτη μὲν ποικιλία τῶν ἐπιτηρούντων· οὐ νῦν ἐφ’ ἡμῶν γεγονυῖα, ἀλλὰ καὶ πολὺ πρότερον ἐπὶ τῶν πρὸ ἡμῶν· τῶν παρὰ τὸ ἀκριβὲς ὡς εἰκὸς κρατούντων, τὴν καθ’ ἁπλότητα καὶ ἰδιωτισμὸν συνήθειαν εἰς τὸ μετέπειτα πεποιηκότων· καὶ οὐδὲν ἔλαττον πάντες οὗτοι εἰρήνευσάν <pb facs="reliquiaesacraes02rout_0048"/> τε, καὶ εἰρηνεύομεν πρὸς ἀλλήλους· καὶ ἡ διαφωνία τῆς νηστείας, τὴν ὁμόνοιαν τῆς πίστεως συνίστησι. <foreign xml:lang="lat">Attulit hæc</foreign> <bibl xml:lang="lat">Eusebius lib. v. Hist. c. 24.</bibl> <foreign xml:lang="lat">et proxime post ait:</foreign> <quote type="blockquote">Τούτοις καὶ ἱστορίαν προστίθησιν (<foreign xml:lang="lat">Irenæus</foreign>) ἣν οἰκείως παραθήσομαι τοῦτον ἔχουσαν τὸν τρόπον.</quote></p>
+               <p rend="indent">Ἐν οἷς καὶ οἱ πρὸ Σωτῆρος πρεσβύτεροι οἱ προστάντες τῆς ἐκκλησίας ἧς σὺ νῦν ἀφηγῇ, Ἀνίκητον λέγομεν καὶ Πίον, Ὑγῖνόν τε καὶ Τελεσφόρον καὶ Ξύστον, οὔτε αὐτοὶ ἐτήρησαν, οὔτε τοῖς μετ’ αὐτῶν ἐπέτρεπον· καὶ οὐδὲν 10 ἔλαττον αὐτοὶ μὴ τηροῦντες, εἰρήνευον τοῖς ἀπὸ τῶν παροικιῶν ἐν αἷς ἐτηρεῖτο ἐρχομένοις πρὸς αὐτούς. καί τοι μᾶλλον ἐναντίον ἦν τὸ τηρεῖν, τοῖς μὴ τηροῦσι. καὶ οὐδέ ποτε διὰ τὸ εἶδος τοῦτο ἀπεβλήθησαν τινές· ἀλλ’ αὐτοὶ μὴ τηροῦντες οἱ πρὸ σοῦ πρεσβύτεροι, τοῖς ἀπὸ τῶν παροικιῶν τηροῦσιν ἔπεμπον εὐχαριστίαν. καὶ τοῦ μακαρίου Πολυκάρπου ἐπιδημήσαντος τῇ Ῥώμῃ ἐπὶ Ἀνικήτου· καὶ περὶ ἄλλων τινῶν μικρὰ σχόντες πρὸς <pb facs="reliquiaesacraes02rout_0049"/> ἀλλήλους, εὐθὺς εἰρήνευσαν· περὶ τούτου τοῦ κεφαλαίου μὴ φιλεριστήσαντες εἰς ἑαυτούς. οὔτε γὰρ ὁ Ἀνίκητος τὸν Πολύκαρπον πεῖσαι ἐδύνατο μὴ τηρεῖν, ἅτε μετὰ Ἰωάννου τοῦ μαθητοῦ τοῦ Κυρίου ἡμῶν, καὶ τῶν λοιπῶν ἀποστόλων οἷς συνδιέτριψεν, ἀεὶ τετηρηκότα· οὔτε μὴν ὁ Πολύκαρπος τὸν Ἀνίκητον ἔπεισε τηρεῖν, λέγοντα τὴν συνήθειαν τῶν πρὸ αὐτοῦ πρεσβυτέρων ὀφείλειν κατέχειν. καὶ τούτων οὕτως ἐχόντων, ἐκοινώνησαν ἑαυτοῖς· καὶ ἐν τῇ ἐκκλησίᾳ παρεχώρησεν ὁ Ἀνίκητος τὴν εὐχαριστίαν τῷ Πολυκάρπῳ κατ’ ἐντροπὴν δηλονότι, καὶ μετ’ εἰρήνης ἀπ’ ἀλλήλων ἀπηλλάγησαν, πάσης τῆς ἐκκλησίας εἰρήνην ἐχόντων καὶ τῶν τηρούντων καὶ τῶν μὴ τηρούντων. <foreign xml:lang="lat">Apud Eusebium ibidem.</foreign></p>
+                         </div>
+                    
+                         <div type="textpart" subtype="section" xml:base="urn:cts:greekLit:tlg1447.tlg009.1st1K-grc1" n="2">
+                              <head xml:lang="lat">Ex eadem Epistola.</head>
+                              <p rend="indent">Ἐν ᾧ ἄν τις δύναιτο εὖ ποιεῖν τοῖς πλησίον καὶ οὐ ποιεῖ· ἀλλότριος τῆς ἀγάπης τοῦ Κυρίου νομισθήσεται. <foreign xml:lang="lat">Hoc attulit</foreign> <bibl xml:lang="lat">Maximus Confessor Serm. 7. De Eleemosyna, tom. ii. Op. p. 554. ed. Combefis.</bibl></p>
+                         </div>
+                    </div></body></text></TEI>

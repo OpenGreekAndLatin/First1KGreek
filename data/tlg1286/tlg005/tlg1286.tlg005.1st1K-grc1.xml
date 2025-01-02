@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+       <titleStmt>                                                                                
+         <title xml:lang="grc">Ἑρμοῦ πρὸς Τὰτ υἱόν. ὅτι ἀφανὴς ⟨...⟩ θεὸς φανερώτατός ἐστι</title>
+                    <author>Anonymous</author>
+                    <editor>Walter Scott</editor>
+         <funder>Center for Hellenic Studies</funder>
+         <respStmt>
+           <resp>Published original versions of the electronic texts</resp>
+           <orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>
+               <persName role="principal">Gregory Crane</persName>
+               <persName role="principal">Leonard Muellner</persName>
+               <persName role="principal">Bruce Robertson</persName>
+         </respStmt>
+         <respStmt>
+             <resp>Proofreading</resp>
+             <persName>
+                    <forename>Lia</forename>
+                    <surname>Hanhardt</surname>
+             </persName>
+         </respStmt>
+         <respStmt>
+              <resp>CTS conversion</resp>
+                 <orgName>Center for Hellenic Studies</orgName>
+                 <persName>Charlotte Houghton</persName>
+         </respStmt>
+       </titleStmt>
+    <publicationStmt>
+      <publisher>Open Greek and Latin</publisher>
+      <idno type="filename">tlg1286.tlg005.1st1K-grc1.xml</idno>
+      <pubPlace/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+      </availability>
+      <date when="2020-08-19"/>
+    </publicationStmt>                                                    
+      <sourceDesc>
+         <biblStruct>
+           <monogr>
+             <title xml:lang="mul">Hermetica. The Ancient Greek and Latin Writings which Contain Religious or Philosophic Teachings Ascribed to Hermes Trismegistus.</title>
+             <editor>Walter Scott</editor>
+             <imprint>
+                <pubPlace>Oxford</pubPlace>
+                    <publisher>Oxford University Press</publisher>
+                    <date>1924</date>
+             </imprint>
+             <biblScope unit="volume">1</biblScope>
+           </monogr>
+           <ref target="https://archive.org/details/ScottHermeticaVolOne/page/n159/mode/2up">The Internet Archive</ref>
+         </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+         <correction>
+             <p>Lace v. 0.6.11 copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.
+             </p>
+         </correction>
+      </editorialDecl>
+      <p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>
+      
+      <refsDecl n="CTS">
+        <cRefPattern matchPattern="(\w+)" n="section" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts sections.</p>
+        </cRefPattern>
+      </refsDecl>
+      
+    </encodingDesc>
+    
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2020-11-06" who="Lisa Cerrato">Minor revisions to markup and formatting</change>
+      <change when="2020-10-02" who="Charlotte Houghton">CTS conversion.</change>
+    </revisionDesc>
+  </teiHeader>
+      
+<text>
+  <body>
+    <div type="edition" n="urn:cts:greekLit:tlg1286.tlg005.1st1K-grc1" xml:lang="grc">
+      <div type="textpart" subtype="section" n="1a"><p rend="indent"><pb facs="ScottHermeticaVolOne_0159"/> Καὶ τόνδε σοι τὸν λόγον, ὦ Τάτ, διεξελεύσομαι, ὅπως μὴ ἀμύητος ᾖς τοῦ κρείττονος θεοῦ ὀνόματος. σὺ δὲ νόει πῶς <l n="20"/> ⟨λέγω· νοοῦντι γὰρ⟩ τὸ δοκοῦν τοῖς πολλοῖς ἀφανὲς φανερώτατόν σοι γενήσεται. </p> </div>
+      <div type="textpart" subtype="section" n="1b"><p rend="indent"> ⟨... ⟩ ⎡οὐ γὰρ ἂν ἦν εἰ ἀφανὲς ἦν.⎤ πᾶν γὰρ τὸ φαινόμενον γεννητόν· ἐφάνη γάρ. τὸ δὲ ἀφανὲς ἀεὶ ἔστι· τοῦ γὰρ φανῆναι οὐ χρῄζει. ⟨...⟩ ἀεὶ γὰρ ἔστι· καὶ τὰ <l n="25"/> ἄλλα πάντα φανερὰ ποιεῖ, αὐτὸς ἀφανὴς ὤν, ὡς ἀεὶ ὤν. <pb facs="ScottHermeticaVolOne_0158"/> ⟨πάντα οὖν⟩ φανερῶν, αὐτὸς οὐ φανεροῦται, οὐκ αὐτὸς γεννώμενος ἐν φαντασίᾳ, [[δὲ]] πάντα ⟨⟨δὲ⟩⟩ φαντασιῶν. ἡ γὰρ φαντασία μόνων τῶν γεννητῶν ἐστίν· οὐδὲν γάρ ἐστιν ἢ φαντασία ἡ γένεσις. ὁ δῊ εἷς ἀγέννητος ⟨ὢν⟩ δῆλον ὅτι καὶ ἀφαντασίαστος· ⟨εἰ δὲ ἀφαντασίαστος,⟩ καὶ ἀφανής. <l n="5"/> </p> </div>
+      <div type="textpart" subtype="section" n="2"><p rend="indent">τὰ δὲ πάντα φαντασιῶν, διὰ πάντων φαίνεται, καὶ ἐν πᾶσι· καὶ μάλιστα οἷς ἂν αὐτὸς βουληθῇ φανῆναι. σὺ οὖν, ὦ Τὰτ τέκνον, εὖξαι πρῶτον τῷ κυρίῳ καὶ πατρί, [καὶ] ⟨τῷ⟩ μόνῳ καὶ [οὐχ] ἑνὶ ⟨ἀγαθῷ⟩ [ἀλλ᾽ ἀφ᾽ οὗ ὁ εἷς`, ἵλεω τυχεῖν [[ἵνα δυνηθῇς τὸν τηλικοῦτον θεὸν νοῆσαι,]] καὶ ἀκτῖνά σοι <l n="10"/> κἂν μίαν αὐτοῦ τῇ σῇ διανοίᾳ ἐλλάμψαι, ⟨⟨ἵνα δυνηθῇς τὸν τηλικοῦτον [θεὸν] νοῆσαι.⟩⟩ νόησις γὰρ μόνη ὁρᾷ τὸ ἀφανές, ὡς καὶ αὐτὴ ἀφανὴς οὖσα· ⟨⟨εἰ δὲ καὶ τὸ ἐν σοὶ ἀφανές ἐστί σοι, πῶς αὐτὸς ἐν ἑαυτῷ ⟨ὢν⟩ διὰ τῶν ὀφθαλμῶν σοι φανήσεται;⟩⟩ εἰ ⟨δὲ⟩ δύνασαι τοῖς τοῦ νοῦ ὀφθαλμοῖς ⟨⟨ἰδεῖν⟩⟩, <l n="15"/> φανήσεται, ὦ Τάτ· ἀφθόνως γὰρ ὁ κύριος φαίνεται διὰ παντὸς τοῦ κόσμου [νόησιν] [[ἰδεῖν]]· ⟨⟨καὶ τὴν εἰκόνα τοῦ θεοῦ θεάσασθαι⟩⟩ καὶ λαβέσθαι αὐτ῀Ης ταῖς χερσὶ δύνασαι [[καὶ τὴν εἰκόνα τοῦ θεοῦ θεάσασθαι]]. [[εἰ δὲ καὶ τὸ ἐν σοὶ ἀφανές ἐστί σοι, πῶς αὐτὸς ἐν σαυτῷ διὰ τῶν ὀφθαλμῶν σοι <l n="20"/> φανήσεται;]] </p> </div>
+      <div type="textpart" subtype="section" n="3"><p rend="indent">εἰ δὲ θέλεις αὐτὸν ἰδεῖν, νόησον τὸν ἥλιον, νόησον τὸν σελήνης δρόμον, νόησον τῶν ἀστέρων τὴν τάξιν. τίς ὁ τὴν τάξιν τηρῶν; [τάξις γὰρ πᾶσα] [[περιώρισται ἀριθμῷ καὶ τόπῳ.]] ὁ ἥλιος [[θεὸς]] μέγιστος τῶν κατ᾽ οὐρανὸν θεῶν, <l n="25"/> ᾧ πάντες εἴκουσιν οἱ οὐράνιοι θεοὶ ὡσανεὶ βασιλεῖ καὶ δυνάστῃ· καὶ οὗτος ὁ τηλικοῦτος ⟨⟨θεός⟩⟩, ὁ μείζων γῆς καὶ θαλάττης, ἀνέχεται ὑπὲρ ἑαυτὸν ἔχων ἑαυτοῦ μικροτέρους πολεύοντας ἀστέρας· τίνα αἰδούμενος, ἢ τίνα φοβούμενος, ὦ τέκνον; ἕκαστος τούτων τῶν ἀστέρων ⟨⟨περιώρισται ἀριθμῷ <l n="30"/> καὶ τόπῳ⟩⟩· ⟨διὰ τί⟩ οὐ⟨χ⟩ [[τὸν]] ὅμοιον ἢ ἴσον ⟨⟨τὸν⟩⟩ δρόμον ποιοῦνται ⟨πάντες οἱ⟩ ἐν οὐρανῷ ὄντες; τίς ὁ ἑκάστῳ τὸν τ[ρ]όπον καὶ τὸ μέγεθος τοῦ δρόμου ὁρίσας; </p> </div>
+      <div type="textpart" subtype="section" n="4"><p>⟨ἡ⟩ ἄρκτος, ⟨⟨ἡ⟩⟩ αὐτὴ [[ἡ]] περὶ αὑτὴν στρεφομένη, καὶ τὸν πάντα <pb facs="ScottHermeticaVolOne_0163"/> κόσμον συμπεριφέρουσα, ⟨...· τίς ὁ...; ὁ ἀὴρ...·⟩ τίς ὁ τοῦτο κεκτημένος τὸ ὄργανον; τίς ὁ τῇ θαλάσσῃ τοὺς ὅρους περιβαλών; τίς ὁ τὴν γῆν ἑδράσας; ἔστι γάρ τις, ὦ Τάτ, ὁ τούτων πάντων ποιητὴς καὶ δεσπότης· ἀδύνατον γὰρ ἢ τόπον ἢ ἀριθμὸν ἢ μέτρον φυλαχθῆναι χωρὶς τοῦ <l n="5"/> ποιήσαντος. πᾶσα γὰρ τάξις ⟨ποιητή, μόνη δὲ ἡ⟩ ἀτοπία καὶ ἀμετρία ἀποίητος. ἀλλ᾽ οὐκ ἀδέσποτος οὐδὲ αὕτη, ὦ τέκνον· καὶ γὰρ εἴ τι ἄτακτόν ἐστιν, ⎡ἐνδεὲς ὅτε κατέχει τοῦτό ἐστι τὸν τρόπον τῆς τάξεως·⎤ καὶ ⟨γὰρ ἡ ἀταξία⟩ ὑπὸ τὸν δεσπότην ἐστί, τὸν μηδέπω αὐτῇ τὴν τάξιν τάξαντα. <l n="10"/> </p> </div>
+      <div type="textpart" subtype="section" n="5"><p rend="indent">εἴθε δυνατόν σοι ἦν πτηνῷ γενομένῳ ἀναπτῆναι εἰς τὸν ἀέρα, καὶ μέσον ἀρθέντα [τῆς] γῆς καὶ οὐρανοῦ ἰδεῖν γῆς μὲν τὸ στερεόν, θαλάσσης δὲ τὸ κεχυμένον, ποταμῶν δὲ τὰ ῥεύματα, ἀέρος τὸ ἀνειμένον, πυρὸς τὴν ὀξύτητα, ἄστρων τὸν δρόμον, οὐρανοῦ τὴν ταχύτητα τῆc περὶ ταῦτα περιβάσεωϲ. <l n="15"/> ὦ θέας ἐκείνης, τέκνον, εὐτυχεστάτης, ὑπὸ μίαν ῥοπὴν πάντα ταῦτα ⟨φερόμενα ἰδόντα⟩ θεάσασθαι τὸν ἀκίνητον διὰ ⟨τῶν κινητῶν⟩ κινούμενον, καὶ τὸν ἀφανῆ φαινόμενον δι᾽ ὦν ποιεῖ. </p> </div>
+    <div type="textpart" subtype="section" n="6"><p rend="indent">αὕτη ἡ τάξις τοῦ κόσμου [καὶ οὗτος ὁ κόσμος τῆς τάξεως]. εἰ ⟨δὲ⟩ θέλεις καὶ διὰ τῶν θνητῶν ⟨αὐτὸν⟩ θεάσασθαι τῶν ἐπὶ <l n="20"/> γῆς καὶ τῶν ἐν βυθῷ, ⟨... ⟩. νόησον, ὦ τέκνον, δημιουργούμενον ἐν τῇ γαστρὶ τὸν ἄνθρωπον, καὶ τοῦ δημιουργήματος ἀκριβῶς τὴν τέχνην ἐξέτασον, καὶ μάθε τίς ὁ δημιουργῶν τὴν καλὴν ταύτην καὶ θείαν [τοῦ ἀνθρώπου] εἰκόνα. τίς ὁ τοὺς ὀφθαλμοὺς περιγράψας; τίς ὁ τὰς ῥῖνας καὶ τὰ ὦτα <l n="25"/> τρυπήσας; τίς ὁ τὸ στόμα διανοίξας; τίς ὁ τὰ νεῦρα ἐκτείνας καὶ δεσμεύσας; τίς ὁ ὀχετεύσας τὰς φλέβας; τίς ὁ τὰ ὀστέα στερροποιήσας; τίς ὁ ⟨τὸ⟩ δέρμα τῇ σαρκὶ περιβαλών; τίς ὁ τοὺς δακτύλους διελών; τίς ὁ τοῖς ποσὶ ⟨τὴν⟩ βάσιν πλατύνας; τίς ὁ διορύξας τοὺς πόρους; [[τίς ὁ τὸν σπλῆνα <l n="30"/> ἐκτείνας;]] τίς ὁ τὴν καρδίαν πυραμοειδῆ ποιήσας, ⟨καὶ⟩ [τίς ὁ] τὰ νεῦρα ⟨αὑτῇ⟩ συνθείς; τίς ὁ τὸ ἦπαρ πλατύνας; <pb facs="ScottHermeticaVolOne_0165"/> ⟨⟨τίς ὁ τὸν σπλῆνα ἐκτείνας;⟩⟩ τίς ὁ τὸνπνεύμονα σΗραγγώσας; τίς ὁ τὴν κοιλίαν εὐρύχωρον ποιήσας; τίς ὁ τὰ τιμιώτατα εἰς τὸ φανερὸν ἐκτυπώσας, καὶ τὰ αἰσχρὰ κρύψας; </p> </div>
+     <div type="textpart" subtype="section" n="7"><p>ἴδε πόσαι τέχναι μίας ὕλης, καὶ πόσα ἔργα ⟨ἐν⟩ μιᾷ περιγραφῇ· καὶ πάντα περικαλλῆ, καὶ πάντα μεμετρημένα, πάντα δὲ ἐν <l n="5"/> διαφορᾷ. τίς πάντα ταῦτα ἐποίησε; ποία μήτηρ, ποῖος πατήρ, εἰ μὴ ὁ ἀφανὴς θεός, ⟨ὁ⟩ τῷ ἑαυτοῦ θελήματι πάντα δημιουργήσας; </p> </div>
+     <div type="textpart" subtype="section" n="8"><p>καὶ ἀνδριάντα μὲν ἢ εἰκόνα χωρὶς ἀνδριαντοποιοῦ ἢ ζωγράφου οὐδείς φησι γεγονέναι· τοῦτο δὲ τὸ δημιούργημα χωρὶς δημιουργοῦ γέγονεν; ὦ τῆς πολλῆς <l n="10"/> τυφλότητος, ὦ τῆς πολλῆς ἀσεβείας, ὦ τῆς πολλῆς ἀγνωμοσύνης. μηδέποτε, ὦ τέκνον Τάτ, ἀποστερήσῃς τοῦ δημιουργοῦ τὰ δημιουργήματα· μᾶλλον δὲ ⟨...⟩. </p> </div>
+     <div type="textpart" subtype="section" n="9"><p rend="indent">[⎡κρείττων ἐστὶν ὅσος κατὰ θεὸν ὀνόματος τοσοῦτος.⎤] ⟨τίς γὰρ ἄλλος⟩ ἐστὶν ὁ πάντων πατήρ; ἦ γὰρ ⟨οὐ⟩ μόνος <l n="15"/> οὗτος; καὶ τοῦτο αὐτῷ τὸ ἔργον ἐστί, ⟨τὸ⟩ πατέρα εἶναι. εἰ δέ τί με καὶ τολμηρότερον ἀνάγκΗ[ζεις] εἰπεῖν, τούτου ἐστὶν ⟨ἡ⟩ οὐσία τὸ κιΝεῖν πάντα καὶ ποιεῖν· καὶ ὥσπερ χωρὶς τοῦ ποιοῦντος ἀδύνατόν ἐστι γενέσθαι τι, οὕτω καὶ τοῦτον Δεῖ μὴ εἶναι, εἰ μὴ πάντα ἀεὶ ποιοῦντα, ἐν οὐρανῷ, ἐν ἀέρι, <l n="20"/> ἐν γῇ, ἐν βυθῷ, ἐν παντὶ τοῦ κόσμου ⟨μέρει⟩, ἐν παντὶ [τοῦ παντὸς] τῷ ὄντι καὶ τῷ μὴ ὄντι. οὐδὲν γάρ ἐστιν ἐν παντὶ ἐκείνῳ ὃ οὐκ ἔστιν αὐτός. ἔστιν αὐτὸς καὶ τὰ ὄντα καὶ τὰ μὴ ὄντα· τὰ μὲν γὰρ ὄντα ἐφανέρωσε, τὰ δὲ μὴ ὄντα ἔχει ἐν ἑαυτῷ. </p> </div>
+     <div type="textpart" subtype="section" n="10a"><p rend="indent">οὗτος ὁ θεοῦ ὀνόματος κρείττων. οὗτος ὁ ἀφανής, οὗτος ὁ φανερώτατος. οὗτος ὁ τῷ νοΐ θεωρητός, οὗτος ὁ τοῖς ὀφθαλμοῖς ὁρατός. οὗτος ὁ ἀσώματος, ⟨οὗτος⟩ ὁ πολυσώματος, μᾶλλον δὲ παντο[ς]σώματος. οὐδέν ἐστιν [[οὗτος]] ὃ οὐκ ἔστι⟨ν⟩ ⟨⟨οὗτος⟩⟩· πάντα γὰρ ⟨ἃ⟩ ἔστι καὶ οὗτός ἐστι. καὶ <l n="30"/> διὰ τοῦτο αὐτὸς ὀνόματα ἔχει ἅπαντα, ὅτι ἑνὸς ⟨αὐτοῦ πάντα⟩ ἐστὶ πατρός· καὶ διὰ τοῦτο αὐτὸς ὄνομα οὐκ ἔχει, ὅτι πάντων ἐστὶ πατήρ. <pb facs="ScottHermeticaVolOne_0167"/> </p> </div>
+     <div type="textpart" subtype="section" n="10b"><p rend="indent">τίς οὖν σε εὐλογῆσαι ὑπέρ σου ἢ πρός σε δύναιτο; </p> <p rend="indent"> ποῦ δὲ καὶ βλέπων εὐλογήσω σε, ἄνω, κάτω, ἔσω, ἔξω; cὺ γὰρ ⟨ὁ⟩ τ[ρ]όπος ⟨⟨τῶν ὄντων⟩⟩· οὐ τόπος ἐστὶ⟨ν⟩ ⟨⟨ἄλλο⟨ς⟩ οὐδεὶc⟩⟩ παρὰ σέ [οὐδὲ] [[ἄλλο οὐδὲν]] [[τῶν ὄντων]], πάντα δὲ ἐν σοί. <l n="5"/></p> <p rend="indent"> ⟨...⟩ πάντα ἀπὸ σοῦ· πάντα δίδως, καὶ οὐδὲν λαμβάνεις· πάντα γὰρ ἔχεις, καὶ οὐδὲν ὃ οὐκ ἔχεις. </p> </div>
+     <div type="textpart" subtype="section" n="11"><p rend="indent">πότε δέ σε ὑμνήσω; οὔτε γὰρ ὥραν ⟨χωρίς⟩ σου οὔτε χρόνον καταλαβεῖν δυνατόν. </p> <p rend="indent">ὑπὲρ τίνος δὲ καὶ ὑμνήσω ⟨σε⟩; ὑπὲρ ὧν ἐποίησας, ἢ ὑπὲρ <l n="10"/> ὧν οὐκ ἐποίησας; ὑπὲρ ὧν ἐφανέρωσας, ἢ ὑπὲρ ὧν ἔκρυψας; </p> <p rend="indent"> διὰ τί⟨νος⟩ δὲ καὶ ὑμνήσω σε; ὡς ἐμαυτοῦ ὤν; ὡς ἔχων τι ἴδιον; ὡς ἄλλος ὤν: σὺ γὰρ εἶ ὃ [ε]ἂν ὦ, σὺ εἶ ὃ ἂν ποιῶ, σὺ εἶ ὃ ἂν λέγω. σὺ γὰρ πάντα εἶ, καὶ ἄλλο οὐδὲν ἔστιν ὃ μὴ ο`Υ εἶ. σὺ εἶ πᾶν τὸ γενόμενον, σὺ τὸ μὴ γενόμενον. <l n="15"/> νοῦς μὲν ⟨εἶ⟩, νοούμενος· πατὴρ δέ, δημιουργῶν· θεὸς δέ, ἐνεργῶν· ἀγαθὸς δέ, [καὶ] πάντα ποιῶν. </p> <p rend="indent"> [ὕλης μὲν γὰρ τὸ λεπτομερέστερον ἀήρ, ἀέρος δὲ ψυχή, ψυχῆς δὲ νοῦς, νοῦ δὲ θεός.] </p> </div>
+   </div>
+  </body>
+</text>
+</TEI>

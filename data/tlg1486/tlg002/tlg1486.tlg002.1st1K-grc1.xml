@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+<titleStmt>
+<title xml:lang="grc">Δει̑πνον Ἀττικόν</title>
+<author>Matron of Pitana</author>
+<editor>Paul Brandt</editor>
+<funder>University of Virginia</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>University of Virginia</orgName>
+<persName>Rebecca Frank</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg1486.tlg002.1st1K-grc1.xml</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-08-07</date>
+</publicationStmt> 
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Matron of Pitana</author>
+<title xml:lang="lat">Fragmenta</title>
+<editor>
+<persName><name>Paul Brandt</name></persName>
+</editor>
+<imprint>
+<pubPlace>Leipzig</pubPlace>
+<publisher>Teubner</publisher>
+<date type="printing">1888</date>
+</imprint>
+<biblScope unit="volume">1</biblScope>
+</monogr>
+<ref target="https://archive.org/stream/corpusculumpoesi01lipsuoft#page/90/mode/2up">The Internet Archive</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>    
+
+<!--<refsDecl n="CTS">
+<cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body//tei:l[@n='$1'])">
+<p>This pointer pattern extracts line</p>
+</cRefPattern>
+</refsDecl>-->
+
+<refsDecl n="CTS">
+<cRefPattern n="line" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1']//tei:l[@n='$2'])">
+<p>This pointer pattern extracts fragment and line</p>
+</cRefPattern>
+<cRefPattern n="poem" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])">
+<p>This pointer pattern extracts fragment</p>
+</cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+  <profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+<language ident="lat">Latin</language>
+
+</langUsage>
+</profileDesc>
+
+<revisionDesc>
+<change when="2020-08-06" who="Lisa Cerrato">app crit and commentary were shoved into end notes; Homeri detorti versus seem to be missing from this volume</change>
+<change when="2020-08-06" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1">  
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1" n="1"> 
+    <l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:1" n="1"><pb facs="corpusculumpoesi01lipsuoft_0105"/>ὄστρεά τʼ ἤνεικεν, Θέτιδος Νηρηίδος ὕδνα </l></div>
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1" n="2">
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2" n="1">σόγκους δʼ οὐκ ἂν ἐγὼ μυθήσομαι οὐδʼ ὀνομήνω, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2" n="2">μυελόεν βλάστημα, καρηκομόωντας ἀκάνθαις, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2" n="3">βολβίνας θʼ, αἳ Ζηνὸς Ὀυλυμπίου εἰσὶν ἀοιδοί, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2" n="4">ἃς ἐν χέρσῳ θρέψε Διὸς παῖς ἄσπετος ὄμβρος, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2" n="5">λευκοτέρας χιόνος, ἔσθειν <add>δʼ</add> ἀμύλοισιν ὁμοίας· </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2" n="6">τάων θυομένων ἠράσσατο πότνια γαστήρ. </l>
+<pb facs="corpusculumpoesi01lipsuoft_0106"/></div>
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1" n="3">
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:3" n="1">καὶ σικυὸν εἶδον, γαίης ἐρικυδέος υἱόν,</l> 
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:3" n="2">κείμενον ἐν λαχάνοις· ὁ δʼ ἐπʼ ἐννέα κεῖτο τραπέζας. </l>
+</div>
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1" n="4">
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:4" n="1">ὣς ἔφαθʼ, οἱ δʼ ἐγέλασσαν, ἐπήνεικάν τʼ ἐπὶ τούτῳ </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:4" n="2">σιτευτὰς ὄρνιθας ἐπʼ ἀργυρέοισι πίναξιν, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:4" n="3">ἄτριχας, οἰέτεας, λαγάνοις κατὰ νῶτον ἐίσας. </l>
+</div>
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1" n="5">
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:5" n="1">οὐδʼ ἀπὸ πασσαλόφιν κρέμασαν, ὅθι περ τετάνυστο </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:5" n="2">σκινδαψὸς τετράχορδος ἀνηλακάτοιο γυναικός. </l>
+<pb facs="corpusculumpoesi01lipsuoft_0107"/>
+</div>
+
+<div type="textpart" subtype="fragment" xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1" n="6">
+  <l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6" n="1">οἱ μὲν γὰρ δὴ πάντες, ὅσοι πάρος ἦσαν ἄριστοι, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6" n="2">Εὔβοιός τε καὶ Ἑρμογένης δῖοί τε Φίλιπποι, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6" n="3">οἱ μὲν δὴ τεθνᾶσι καὶ εἰν Ἀίδαο δόμοισιν. </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6" n="4">ἔστι δέ τις Κλεόνικος, ὃν ἀθάνατος λάχε γῆρυς, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6" n="5">οὔτε πονητάων ἀδαήμων οὔτε θεάτρων, </l>
+<l xml:base="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6" n="6">ᾧ καὶ τεθνειῶτι λαλεῖν πόρε Φερσεφόνεια. </l>
+<pb facs="corpusculumpoesi01lipsuoft_0110"/>
+
+<!--<div type="app_crit">-->
+<note resp="ogl" place="end" type="app_crit" n="1" xml:lang="lat">
+<pb facs="corpusculumpoesi01lipsuoft_0105"/>
+<ab rend="center">Varietas Lectionis</ab>
+<ab n="1.1"><foreign xml:lang="grc">ἤνεγκε</foreign> E</ab>
+<ab n="2.3">pro <foreign xml:lang="grc">ἀοιδοί</foreign> requirit <foreign xml:lang="grc">γενέθλη</foreign> vel <foreign xml:lang="grc">νεοσσοί</foreign> Kaibel, <foreign xml:lang="grc">ἐδωδή</foreign> Wilamowitz</ab> 
+<ab n="2.5"><foreign xml:lang="grc">ἔσθειν</foreign> (cf. etiam Conv. Att. v. 5) Osann et Wachsmuth: <foreign xml:lang="grc">ἰδεῖν</foreign> C E, <foreign xml:lang="grc">ἰδέειν</foreign> Brunck, <foreign xml:lang="grc">δʼ</foreign> add. Osann, <foreign xml:lang="grc">ἀμύλοισι δʼ</foreign> Eustathius 1053, 11 </ab>
+<ab n="2.6"><foreign xml:lang="grc">θυομένων</foreign> Meineke: <foreign xml:lang="grc">φυομένων</foreign> A </ab>
+<pb facs="corpusculumpoesi01lipsuoft_0106"/>
+<ab n="4.1"><foreign xml:lang="grc">ἐπηνεινκαν</foreign> A </ab>
+<ab n="5.1"><foreign xml:lang="grc">οὐδʼ ὑπὸ</foreign> A, <foreign xml:lang="grc">οἳ δʼ ἀπὸ</foreign> Meineke </ab> 
+<pb facs="corpusculumpoesi01lipsuoft_0107"/>
+<ab n="6.2"><foreign xml:lang="grc">δῖός τε Φίλιππος</foreign> (cf. M 21) vel <foreign xml:lang="grc">Εὔβοιοί τε καὶ Κρμμογέναι</foreign> (cf. K 429) Meineke <foreign xml:lang="grc">δοιὼ</foreign> vel <foreign xml:lang="grc">δοιοὶ</foreign> Stadtmueller </ab>
+<ab n="6.3"><foreign xml:lang="grc">τεθνᾶσιν</foreign> A </ab>
+<ab n="6.4"><foreign xml:lang="grc">ἐστὶν</foreign> A <foreign xml:lang="grc">ὃν ἀθάνατος — γῆρυς</foreign> Stadtmueller (sive <foreign xml:lang="grc">ὃς ἀθάνατον — γῆρυν</foreign>): <foreign xml:lang="grc">ἀθάνατον — γῆρας</foreign> A</ab> 
+<ab n="6.6"><foreign xml:lang="grc">Περσεφόνεια</foreign> Eustathius </ab>
+<pb facs="corpusculumpoesi01lipsuoft_0113"/></note>
+
+<!--<div type="commentary">-->
+<note resp="ogl" place="end" type="testimonia" n="2" xml:lang="lat">
+<pb facs="corpusculumpoesi01lipsuoft_0105"/>
+<ab rend="center">Testimonia</ab> 
+
+<ab n="1"><bibl>Ath. II 62 c</bibl>: <foreign xml:lang="grc">καὶ Μάτρων ὁ παρῳδὸς ἐν τῷ Δείπνῳ</foreign> <q xml:lang="grc">ὄστρεα — ὕδνα</q>. </ab>
+<ab n="2"><bibl>Ath. II 64 c</bibl>: <foreign xml:lang="grc">μνημονεύει δὲ βολβίνης Μάτρων ἐν παρῳδίαις</foreign> <q xml:lang="grc">σόγκους — γαστήρ</q>. Affert <bibl>Eustathius v. 2 p. 1094, 47</bibl>, <bibl>v. 4-6 p. 1053, 11</bibl>. </ab>
+<pb facs="corpusculumpoesi01lipsuoft_0106"/>
+<ab n="3"><bibl>Ath. III 73 e</bibl>: <foreign xml:lang="grc">Μάτρων ἐν παρῳδίαις</foreign> <q xml:lang="grc">καὶ — τραπέζας</q>.</ab>
+<ab n="4"><bibl>Ath. XIV 656 c</bibl>: <foreign xml:lang="grc">σιτιστῶν δὲ ὀρνίθων μὲν μνημονεύει Μάτρων ἐν ταῖς παρῳδίαις οὕτως</foreign> <q xml:lang="grc">ὣς — ἐίσας</q>.</ab> 
+<ab n="5"><bibl>Ath. IV 183 a</bibl>: <foreign xml:lang="grc">ἐστὶν δʼ ὁ σκινδαψὸς τετράχορδον ὄργανον, ὡς ὁ παρῳδός φησι Μάτρων ἐν τούτοις·</foreign> <q xml:lang="grc">οὐδʼ — γυναικός</q>.</ab> 
+<ab n="6"><bibl>Ath. XV 697 e:</bibl> <foreign xml:lang="grc">καὶ κατὰ τὸν παρῳδὸν Μάτρωνα</foreign> <q xml:lang="grc">οἱ μὲν — Φερσεφόνεια</q>. Affert versus <bibl>Eustathius 1665, 34</bibl>. </ab></note>
+
+<note resp="ogl" place="end" type="commentary" n="3" xml:lang="lat">
+<pb facs="corpusculumpoesi01lipsuoft_0107"/><ab rend="center">Commentarius</ab> 
+                    <ab n="1"><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:1.1" rend="center">Fragmentum I</ref> 
+                    <lb/>De universo fragmento vide p. 54. Ostrea per comparationem Thetidis tubera vocat ut in Cenae v. 36 congrum <foreign xml:lang="grc">Τιτυὸν λίμνης</foreign>; praeter locum homericum quem subscripsi, meminerat parodus phocas <foreign xml:lang="grc">δ</foreign> 404 appellari <foreign xml:lang="grc">νέποδας καλῆς ἁλοσύδνης</foreign>. Accedit denique vocis <foreign xml:lang="grc">ὕδνη</foreign> derivatio: <pb facs="corpusculumpoesi01lipsuoft_0108"/> Hesychius <foreign xml:lang="grc">ὕδναι· ἔγγονοι, σύντροφοι</foreign>; idem <foreign xml:lang="grc">ὑδνεῖν· τρέφειν, κρύβειν. αὔξειν</foreign>; E. M. p. 776, 11 <foreign xml:lang="grc">ὑδνῶ τὸ τρέφω καὶ ὑδνεῖν τὸ τρέφειν</foreign>. </ab>            
+                    <ab n="2"><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2.1" rend="center">Fragmentum II</ref>
+                    <lb/>De universo fragmento vide supra p. 55 sq. 
+                    <lb/><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2.1">V. 1.</ref> De soncho Plin. N. H. XXII 88 <quote>Estur et sonchus — ut quem Theseo apud Callimachum adponat Hecale — uterque, albus et niger. Lactucae similes ambo, nisi spinosi essent, caulo cubitali, anguloso, intus cavo, sed qui fractus copioso lacte manat</quote>. Non admodum magni illos aestimatos esse disci potest ex lepida narratiuncula quam Hegesandrus ap. Ath. VI 250 e profert de Euclide, cui cum complures sonchi essent appositi <foreign xml:lang="grc">ὁ Καπανεύς</foreign>, inquit, <foreign xml:lang="grc">ὁ ὑπὸ τοῦ Εὐριπίδου εἰσαγόμενος ἐν ταῖς Ἱκέτισιν</foreign> (v. 864, ubi <foreign xml:lang="grc">φεύγων</foreign>) <foreign xml:lang="grc">ὑπεραστεῖος ἦν</foreign> <quote xml:lang="grc">μισῶν τραπέζας ὅστις ἐξογκοῖτʼ ἄγαν</quote>. 
+                      <lb/><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2.3">V. 3</ref> balbinae Iovis vocantur cantrices quia ventris flatus gignunt, nisi eo referri debent illa verba, quod in patina dum torrentur stridorem edunt, cui rei non obstare puto quod v. 5 nive candidiores appellantur: illic enim bulbinae dicuntur cum friguntur, hic crudae putaminibus detractis. Ceterum cf. Cenae v. 63. 
+                      <lb/><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:2.4">V. 4</ref> <foreign xml:lang="grc">ἐν χόρτῳ</foreign> Stadtmuellerus, at loci nomen proprium requiro sicut B 766 <foreign xml:lang="grc">ἐν Πιερίῃ</foreign>. Suo more homericus ille <foreign xml:lang="grc">Διὸς ὄμβρος</foreign> Matroni existit Iovis filius sicut Cenae v. 117 <foreign xml:lang="grc">πλακοῦς</foreign>, Cereris donum, <foreign xml:lang="grc">Δήμητρος παῖς</foreign>. Suspectavit <foreign xml:lang="grc">φυομένων</foreign> Meinekius cui aut <foreign xml:lang="grc">ὑομένων</foreign> videbatur scribendum collato versu 3 (cf. <foreign xml:lang="grc">ζ</foreign> 131 <foreign xml:lang="grc">ὑόμενος</foreign> eadem sede versus) aut <foreign xml:lang="grc">θυομένων</foreign> <q>quando mactantur</q> ut Horatius dixerit <q>porrum seu caepe trucidas</q>. Alterum hoc praetuli, sed ita ut <foreign xml:lang="grc">θυομένων</foreign> referri velim ad odoris suavitatem, qui e bulbinis recens frictis adflatur. Nusquam enim apud Homerum <foreign xml:lang="grc">θῦσαι</foreign> de immolanda hostia (<foreign xml:lang="grc">σφάξαι</foreign>) usurpatur, sed de offerendis <foreign xml:lang="grc">ἀπαρχαῖς</foreign> idemque valet quod <foreign xml:lang="grc">θυμιᾶσαι</foreign>, cf. Ariston. ad I 219, Lehrsii Aristarch. p. 82. </ab>
+                    <pb facs="corpusculumpoesi01lipsuoft_0109"/>
+                    <ab n="3"><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:3.1" rend="center">Fragmentum III</ref>
+                    <lb/>Vide supra p. 55. </ab>
+                    
+                    <ab n="4"><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:4.1" rend="center">Fragmentum IV</ref>
+                    <lb/>Num hoc fragmentum Cenae Atticae fuerit, supra p. 56 disserui. </ab>
+                    
+                    <ab n="5"><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:5.1" rend="center">Fragmentum V</ref>
+                    <lb/>Videtur de meretricula esse sermo. 
+                     <lb/><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:5.1" rend="center">V. 1</ref> Meinekius <foreign xml:lang="grc">οἱ δʼ ἀπὸ</foreign>, illud minus recte, nihil enim offensae in negatione <foreign xml:lang="grc">οὐδέ</foreign>: illam quam nescimus rem non suspenderunt <foreign xml:lang="grc">ἀπὸ πασσαλόφιν</foreign>, quippe unde suspensus esset <foreign xml:lang="grc">σκινδαψός</foreign>, ita ut novae rei locus non iam superesset. Ceterum operae pretium est animadvertere, qua arte parodus Homeri verba concinnaverit. Matro fortasse <foreign xml:lang="grc">θ</foreign> 67 legit <foreign xml:lang="grc">κὰδ δʼ ἀπό</foreign>. </ab>
+
+                    <ab><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6.1" rend="center">Fragmentum VI</ref>
+                    <lb/>Vide supra p. 56. 
+                    <lb/><ref cRef="urn:cts:greekLit:tlg1486.tlg002.1st1K-grc1:6.2" rend="center">V. 2</ref> retinui pluralem numerum <foreign xml:lang="grc">δῖοί τε Φίλιπποι</foreign>, nam quidni duos Philippos laudare potuerit parodus? Hic ipse numerus, <foreign xml:lang="grc">δοιὼ</foreign> sive <foreign xml:lang="grc">δοιοὺς</foreign>, Stadtmuelleri coniectura infertur, equidem <foreign xml:lang="grc">δῖοι</foreign> retinuerim cum hac maxime voce parodia versus homerici agnoscatur. Idem vero versum 4 egregie emendavit scribens <foreign xml:lang="grc">ὃν ἀθάνατος λάχε γῆρυς</foreign>, <quote>cui vox, i. e. loquacitas non interitura (<foreign xml:lang="grc">καὶ τεθνειῶτι λαλεῖν</foreign> <q>etiam cum mortuus erit</q>) contigit</quote>. Nequaquam enim iam ad inferos abiisse sed vixisse etiamtunc Cleonicum satis demonstrant verba <foreign xml:lang="grc">ἔστι δέ τις Κλεόνικος</foreign> versui antecedenti (<foreign xml:lang="grc">οἱ μὲν δὴ τεθνᾶσι κτέ.</foreign>) opposita. De Cleonico Eustathius 1665, 33: <quote xml:lang="grc">ἰστέον δὲ ὅτι ὁ παρῳδὸς Μάτρων κέντρωνος λόγῳ συμφορήσας ἐν μεταποιήσει καὶ ἐκ τῶν κατὰ Τειρεσίαν εἴς τινα Κλεόνικον σοφὸν ἄνδρα ἔγραψεν οὕτως;  <q>οἱ μὲν δὴ πάντες Περσεφόνεια</q>, διὰ τῶν αὐτοῦ δηλαδὴ βιβλίων καὶ τῶν ἐν αὐτοῖς λόγων. τοῦτο δὲ καὶ σκῶμμα ἔσται ποτὲ λάλου ἀνδρός.</quote> Quae cuius farinae sint apparet. </ab></note>
+                    
+                    
+</div></div></body></text></TEI>

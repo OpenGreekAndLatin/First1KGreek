@@ -1,0 +1,2510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+
+    <fileDesc>
+  <titleStmt><title xml:lang="lat">De fuga et inventione</title>
+    <author xml:lang="lat">Philo Judaeus</author>
+  <editor>Paul Wendland</editor>
+    <funder>European Social Fund Saxony</funder>
+    <principal>Gregory Crane</principal>
+    <respStmt>
+      <persName xml:id="DDD">Digital Divide Data</persName>
+      <resp>Corrected and encoded the text</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Gregory Crane</persName>
+      <resp>Editor-in-Chief, Perseus Digital Library</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Matt Munson</persName>
+      <resp>Project Manager (University of Leipzig)</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Annette Geßner</persName>
+      <resp>Project Assistant (University of Leipzig)</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Thibault Clérice</persName>
+      <resp>Lead Developer (University of Leipzig)</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Bruce Robertson</persName>
+      <resp>Technical Advisor</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Greta Franzini</persName>
+      <resp>Project Manager (University of Leipzig), 2013-2014</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Frederik Baumgardt</persName>
+      <resp>Technical Manager (University of Leipzig), 2013-2015</resp>
+    </respStmt>
+    <respStmt>
+      <persName>Simona Stoyanova</persName>
+      <resp>Project Manager (University of Leipzig), 2015</resp>
+      <resp>Project Assistant (University of Leipzig), 2013-2014</resp>
+    </respStmt>
+      </titleStmt>
+      <publicationStmt>
+  <authority>University of Leipzig</authority>
+  <idno type="filename">tlg0018.tlg017.1st1K-grc1.xml</idno>
+  <availability>
+   <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International
+   License</licence>
+  </availability>
+  <date>2014</date>
+  <publisher>University of Leipzig</publisher>
+  <pubPlace>Germany</pubPlace>
+  </publicationStmt>
+  <sourceDesc>
+  <listBibl>
+   <biblStruct>
+   <monogr>
+    <title xml:lang="lat">Philonis Alexandrini Opera Quae Supersunt</title>
+    <editor>
+    <persName>
+      <name>Paul Wendland</name>
+    </persName>
+    </editor>
+    <author xml:lang="lat">Philo Judaeus</author>
+    <imprint>
+    <publisher>Reimer</publisher>
+    <pubPlace>Berlin</pubPlace>
+    <date>1898</date>
+    </imprint>
+    <biblScope unit="volume">3</biblScope>
+   </monogr>
+     <ref target="https://babel.hathitrust.org/cgi/pt?id=hvd.32044054757612;view=2up;seq=146">Hathi Trust</ref>
+   </biblStruct>
+  </listBibl>
+  </sourceDesc>
+ </fileDesc>
+ <encodingDesc>
+  <p>Text encoded in accordance with the latest EpiDoc standards (January 2014)</p>
+     <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+      </refsDecl>
+    </encodingDesc>
+ <profileDesc>
+  <langUsage>
+  <language ident="grc">Greek</language>
+  <language ident="lat">Latin</language>
+  </langUsage>
+ </profileDesc>
+ <revisionDesc>
+  <change who="Gregory Crane" when="2023-08-01">Original text was generated with OCR in 2013 and many errors had crept in. GRC, through manual and automated methods, made more than 325 corrections. Markup was also refined and changed throughout.</change>
+  <change who="Lia H" when="2018-01-16">updated teiHeader</change>
+ </revisionDesc>
+ </teiHeader>
+  <text>
+    <body><div type="edition" n="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" xml:lang="grc">
+
+
+<pb n="v.3.p.110"/>
+<head>ΦIΛΩNΟΣ</head>
+<head>ΠΕΡΙ ΦΥΓΗΣ ΚΑΙ ΕΥΡΕΣΕΩΣ</head>
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="1">
+<p><milestone unit="altref" n="1"/> | „Καὶ ἐκάκωσεν αὐτὴν Σάρα, καὶ ἀπέδρα ἀπὸ προσώπου  <note xml:lang="lat" type="marginal">p.546 M.</note>
+αὐτῆς. εὗρε δὲ αὐτὴν ἄγγελος κυρίου ἐπὶ τῆς πηγῆς τοῦ ὕδατος ἐν
+τῇ ἐρήμῳ, ἐπὶ τῆς πηγῆς ἐν τῇ ὁδῷ Σούρ. καὶ εἶπεν αὐτῇ ὁ ἄγγελος
+κυρίου· παιδίσκη Σάρας, πόθεν ἔρχῃ, καὶ ποῦ πορεύῃ; καὶ εἶπεν·
+ἀπὸ προσώπου Σάρας τῆς κυρίας μου ἐγὼ ἀποδιδράσκω. εἶπε δὲ αὐτῇ <lb n="5"/>
+ὁ ἄγγελος κυρίου· ἀποστράφηθι πρὸς τὴν κυρίαν σου καὶ ταπεινώθητι
+ὑπὸ τὰς χεῖρας αὐτῆς. καὶ εἶπεν αὐτῇ ὁ ἄγγελος κυρίου· <add>ἰδοὺ</add> σὺ ἐν
+γαστρὶ ἔχεις, καὶ τέξῃ υἱόν, καὶ καλέσεις τὸ ὄνομα αὐτοῦ Ἰσμαήλ, ὅτι
+ἐπήκουσε κύριος τῇ ταπεινώσει σου. οὗτος ἔσται ἀγροῖκος ἄνθρωπος·
+αἱ χεῖρες αὐτοῦ ἐπὶ πάντας καὶ αἱ χεῖρες πάντων ἐπ’ αὐτόν (Gen. 16, <lb n="10"/>
+ 6—12, ομ. 10).”</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="2">
+<p>εἰρηκότες ἐν τῷ προτέρῳ τὰ πρέποντα περὶ τῶν
+προπαιδευμάτων καὶ περὶ κακώσεως, ἑξῆς τὸν περὶ φυγάδων ἀναγράψομεν
+τόπον. μέμνηται γὰρ πολλαχοῦ τῶν ἀποδιδρασκόντων, καθάπερ
+καὶ νῦν φάσκων ἐπὶ τῆς Ἄγαρ, ὅτι κακωθεῖσα „ἀπέδρα ἀπὸ προσώπου
+ τῆς κυρίας“.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="3">
+<p>αἰτίας οὖν ἔγωγε τρεῖς εἶναι νομίζω φυγῆς, μῖσος, φόβον, <lb n="15"/>
+αἰδῶ. μίσει μὲν οὖν καὶ γυναῖκες ἄνδρας καὶ ἄνδρες γυναῖκας ἀπολείπουσι, φόβῳ δὲ τοὺς γονεῖς παῖδες καὶ δεσπότας οἰκέται, αἰδοῖ δὲ τοὺς
+ἑταίρους, ὁπότε μὴ καθ’ ἡδονήν τι πράξειαν αὐτοῖς, οἱ φίλοι· ἤδη δὲ
+<note xml:lang="mul" type="footnote">Φίλωνος . . . . . εὑρέσεως G, περὶ φυγάδων H
+<lb/>1 Σάρα H : Σάρρα G τοῦ προσώπου V
+<lb/>3 ἐν] τῆς ἐν v ὁδῶ om. G
+<lb/>4 #x003E; παιδίσκη ex LXX et quaest. in Gen. III §
+<lb/>28 conicio Σάρας H: Σάρρας G
+<lb/>5 Σάρας H: Σάρρας G
+<lb/>7 ἰδοὺ ex ἑ 204 et LXX addidi
+<lb/>8 τέξεις v 8.
+<lb/>9 ὅτι — σου om. H
+<lb/>11 προτέρῳ <add>βιβλίῳ</add> conicio 12.
+<lb/>13 ἀναγράψωμεν 
+<lb/>13 ὁ ἱερὸς λόγος addi vult Mang.
+<lb/>18 οἱ φίλοι αὐτοῖς H, sed β', α᾿ s. s.</note>  
+
+<pb n="v.3.p.111"/>
+καὶ πατέρας οἶδα διὰ τὸ ἁβροδίαιτον αὐστηρὸν καὶ φιλόσοφον βίον
+παίδων ἐκτραπομένους καὶ δι’ αἰδῶ τὸν ἀγρὸν πρὸ τῆς πόλεως οἰκεῖν
+ἑλομένους.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="4">
+<p>τῶν τριῶν τούτων αἰτιῶν ἔστιν εὑρεῖν ἐν ταῖς ἱεραῖς γραφαῖς ὑπομνήματα. ὁ γοῦν ἀσκητὴς Ἰακὼβ μίσει μὲν τὸν πενθερὸν Λάβαν,
+ φόβῳ δὲ τὸν ἀδελφὸν Ἠσαῦ  <milestone unit="altpage2" n="p. 547 M."/> ἀποδιδράσκει, ὡς αὐτίκα παραστήσομεν.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="5">
+<p><lb n="6"/> ἡ δ’ Ἄγαρ ἀπαλλάττεται δι’ αἰδῶ· σημεῖον δὲ τὸ ὑπαντᾶν αὐτῇ ἄγγελον, θεῖον λόγον, ἃ χρὴ παραινέσοντα καὶ ὑφηγησόμενον ἐπανόδου
+τῆς εἰς τὸν δεσποίνης οἶκον, ὃς καὶ θαρσύνων φησίν· „ἐπήκουσε κύριος
+τῇ ταπεινώσει σου“ (Gen. 16,11), ἣν οὔτε διὰ φόβον ἔσχες οὔτε διὰ
+<lb n="10"/> μῖσος — τὸ μὲν γὰρ ἀγεννοῦς, τὸ δὲ φιλαπεχθήμονος πάθος ψυχῆς —,
+ἀλλ’ ἕνεκα τοῦ σωφροσύνης ἀπεικονίσματος, αἰδοῦς.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="6">
+<p>εἰκὸς γὰρ ἦν, εἰ διὰ φόβον ἀπεδίδρασκε, τῇ τὸν φόβον ἐπανατειναμένῃ παρηγορῆσαι
+πρᾳοπαθεῖν· τηνικαῦτα γὰρ ἀσφαλὲς ἦν ἐπανέρχεσθαι τῇ φυγούσῃ,
+πρότερον δ’ οὔ. ἀλλὰ τῇ μὲν οὐδεὶς προεντυγχάνει ἅτε ἐξευμενισθείσῃ
+<lb n="15"/> δι’ ἑαυτῆς, τὴν δὲ ὁ δι’ εὔνοιαν φίλος ὁμοῦ καὶ σύμβουλος ἔλεγχος
+διδάσκει μὴ αἰδεῖσθαι μόνον, ἀλλὰ καὶ εὐτολμίᾳ χρῆσθαι· ἥμισυ γὰρ
+ἀρετῆς εἶναι τὴν δίχα τοῦ θαρρεῖν αἰδῶ.</p>
+</div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="7">
+<p><milestone unit="altref" n="2"/> Τοὺς μὲν οὖν ἀκριβεστέρους χαρακτῆρας ὁ ἑξῆς μηνύσει λόγος. ἐπανιτέον δ’ ἐπὶ τὰ προταθέντα κεφάλαια καὶ ἀρκτέον ἀπὸ τῶν
+<lb n="20"/> μίσους χάριν ἀποδιδρασκόντων. „ἔκρυψε“ γάρ φησιν „Ἰακὼβ Λάβαν
+τὸν Σύρον, τοῦ μὴ ἀπαγγεῖλαι αὐτῷ ὅτι ἀποδιδράσκει, καὶ ἀπέδρα
+αὐτὸς καὶ τὰ αὐτοῦ πάντα“ (Gen. 31,20. 21).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="8">
+<p>τίς οὖν αἰτία τοῦ μίσους; ποθεῖς γὰρ ἴσως δὴ τοῦτο μαθεῖν. εἰσί τινες οἱ τὴν ἄποιον
+καὶ ἀνείδεον καὶ ἀσχημάτιστον οὐσίαν θεοπλαστοῦντες, τὸ κινοῦν αἴτιον
+<lb n="25"/> οὔτε εἰδότες οὔτε παρὰ τῶν εἰδότων μαθεῖν σπουδάσαντες, ἀγνοίᾳ δὲ
+καὶ ἀμαθίᾳ κεχρημένοι τοῦ καλλίστου μαθήματος, οὗ πρώτου καὶ μόνου
+τὴν ἐπιστήμην ἐκπονεῖν ἦν ἀναγκαῖον.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="9">
+<p>ὁ Λάβαν τοῦ γένους ἐστὶ τούτου·
+<note xml:lang="mul" type="footnote">
+<lb/>5 Ἡσαῦ GH παραστήσομεν scripsi: παραστήσομαι codd.
+<lb/>7 θε λόγον ex θείων λόγων corr. Η ἃ χρὴ] ἄχρι G
+<lb/>8 δεσπότην Η 11.
+<lb/>12 ἦν εἰ — φόβον add. in mg. H2
+<lb/>12 ἐπανατειναμένην Turn.
+<lb/>13 πραϋπαθεῖν coni. Mang.
+<lb/>15 6 δι’ εὔνοιαν] διάνοιαν G φίλος ὁμοῦ G: ὁμοῦ φάος H
+<lb/>16 μόνον] μέν coni. Mang. εὐτολμίας G
+<lb/>19 81 H προταθέντα Mang.: προτεθέντα codd.
+<lb/>21 τοῦ] τὸ G
+<lb/>23 τοῦτο Turn.: τι τοῦ codd., τι <add>περὶ τού</add>του conicio, τι<add>να</add> τού<add>του</add> coni. Cohn
+<lb/>24 οὐσίαν] ὕλην coni. Mang. κινοῦν] τῶν γινομένων coni. Mang.
+<lb/>25 ἰδόντες G ἰδόντων G</note> <note xml:lang="lat" type="footnote">
+<lb/>27 sqq. cf. Orig. Contra Celsum IV
+<lb/>43 p. 536.</note>  
+
+<pb n="v.3.p.112"/>
+τὴν γὰρ ἄσημον αὐτῷ ποίμνην οἱ χρησμοὶ προσνέμουσιν (Gen. 30,42)·
+ἄσημος δὲ ἐν μὲν τοῖς ὅλοις ἡ ἄποιος ὕλη, ἐν ἀνθρώποις δὲ ἡ ἀμαθὴς
+ ψυχὴ καὶ ἀπαιδαγώγητος.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="10">
+<p>ἕτεροι δ’ εἰσὶ τῆς ἀμείνονος μοίρας, οἳ νοῦν
+ἔφασαν ἐλθόντα πάντα διακοσμῆσαι, τὴν ἐξ ὀχλοκρατίας ἐν τοῖς οὖσιν
+ἀταξίαν εἰς ἀρχῆς νομίμου, βασιλείας, τάξιν ἀγαγόντα. τοῦ θιάσου <lb n="5"/>
+τούτου χορευτὴς Ἰακώβ ἐστιν, ὃς ἐπιστατεῖ τῆς ἐπισήμου ποικίλης
+ἀγέλης· ἐπίσημον δὲ πάλιν καὶ ποικίλον ἐν μὲν τοῖς ὅλοις τὸ εἶδος, ἐν
+ δὲ ἀνθρώποις ἡ εὐπαίδευτος καὶ φιλομαθὴς διάνοια.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="11">
+<p>πολλοῦ δὴ τοῦ
+φύσει κοινωνικοῦ σπάσας ὁ ἐπίσημος καὶ μοναρχίας ἀληθοῦς ἑταῖρος
+ἔρχεται πρὸς τὸν ἄσημον, ὑλικὰς μέν, ὡς εἶπον ἤδη, θεοπλαστοῦντα <lb n="10"/>
+ἡγεμονίας, ἔξω δὲ τούτων δραστήριον μηδεμίαν νομίζοντα, διδάξων ὅτι
+ οὐκ ὀρθογνωμονεῖ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="12">
+<p>γέγονέ τε γὰρ ὁ κόσμος καὶ πάντως ὑπ’ αἰτίου τινὸς
+γέγονεν· ὁ δὲ τοῦ ποιοῦντος λόγος αὐτός ἐστιν ἡ σφραγίς, ᾗ τῶν ὄντων
+ἕκαστον μεμόρφωται· παρὸ καὶ τέλειον <milestone unit="altpage1" n="p. 548 M."/>  τοῖς γινομένοις ἐξ ἀρχῆς παρακολουθεῖ
+ τὸ εἶδος, ἅτε ἐκμαγεῖον καὶ εἰκὼν τελείου λόγου.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="13">
+<p>τὸ γὰρ γενόμενον <lb n="15"/>
+ζῷον ἀτελὲς μέν ἐστι τῷ ποσῷ — μάρτυρες δὲ αἱ καθ’ ἡλικίαν
+ἑκάστην παραυξήσεις —, τέλειον δὲ τῷ ποιῷ· μένει γὰρ ἡ αὐτὴ
+ποιότης ἅτε ἀπὸ μένοντος ἐκμαγεῖσα καὶ μηδαμῇ τρεπομένου θείου λόγου.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="14">
+<p> <milestone unit="altref" n="3"/> ὁρῶν δ’ ὅτι πρὸς μάθησιν καὶ νόμιμον ἐπιστασίαν κεκώφωται,
+δρασμὸν εἰκότως βουλεύεται· δέδιε γάρ, μὴ πρὸς τῷ μηδὲν ἰσχῦσαι <lb n="20"/>
+ὀνῆσαι ἔτι καὶ ζημιωθῇ. βλαβεραὶ γὰρ αἱ μετὰ ἀνοήτων συνουσίαι, καὶ
+ἄκουσα πολλάκις ἡ ψυχὴ τῆς ἐκείνων φρενοβλαβείας ἀπομάττεται τὰ
+εἴδωλα· καὶ ὄντως ἐστὶν ἐχθρὸν φύσει παιδεία ἀπαιδευσίᾳ καὶ φιλοπονία
+ ἀμελετησίᾳ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="15">
+<p>παρὸ καὶ φωνὴν αἱ ἀσκητικαὶ δυνάμεις ἀφεῖσαι
+<note xml:lang="mul" type="footnote">
+<lb/>1 οἱ Mang.: οὐ codd.
+<lb/>3 ἀπαίδευτος conicio
+<lb/>4 ὀχλοκρατίας scripsi: ὀχλοκρασίας codd. 
+<lb/>6 <add>καὶ</add> ποικίλης conicio
+<lb/>7 ὅλοις] ὑλικοῖς coni. Mang.
+<lb/>8 δὲ Mang. per 
+<lb/>11 ἡγεμονίας] οὐσίας conicio μηδαμῇ coni. Cohn
+<lb/>12 ὀρθογνωμεῖ v γέγονέ τε G: γεγένηται H
+<lb/>14 πὰρ ὃν Mang.
+<lb/>18 ἐκμαχθεῖσα H
+<lb/>19 νόμιμον Mang.: μόνιμον codd.
+<lb/>20 τῷ] τὸ Turn.
+<lb/>22 τῆς GH: ταῖς L1 Turn. φρενοβλαβίας G, φρενοβλαβείαις Turn.
+<lb/>23 post καὶ ras. H
+<lb/>24 ἀφιεῖσαι conicio</note> <note xml:lang="lat" type="footnote">
+<lb/>3 Anaxagoras: v. Laert. Diog. II 6; Zeller, Philos. gr. I p. 992 3. 21-23 fol. 331 DR fol. 261r Dv p. 692 Antonius Melissa II
+<lb/>36 col. 1095 Georgides p. 17,11 Boiss. (Laur. VII
+<lb/>15 fol. 37v) Φίλωνος: βλαβεραὶ τῶν ἀνοήτων αἰ συνουσίαι—εἴδωλα αἱ τῶν ἀνοήτων DP DV). 21—24 Ambros. epist. 27,8: noxiae sunt enim conversationes cum insipientibus et inficiunt sobriam mentem ac decolorant . . . frequenter enim accidit, ut quis contra propositum suum . . . fuco insipientiae coloretur, meritoque contrariae sibi sunt et repugnantes disciplina atque insolentia. 24—113,13 ibid. 7: Lia et Rachel, una laboriosa, altera adspiratio fortis, refugientes non generis necessitudinem, sed morum discrepantiam, cum viri exerciti lacob sermone edoctae essent, quod vellet discedere, ut Laban et filiorum eius invidiam declinaret atque igiiaviam, respondenmt: numquid est nobis portio aut hereditas in domo patris nostri? nonne sicut alienae aestimamur ei? vendidit enim nos et devoravit pretium nostrum. ecce primum quia ignavus et invidus laboriosam et disciplinae teuacem alienat a se . . .
+<lb/>5 nunc audiamus, quomodo quae habet virtus, non habeat iguavia. aiunt enim: omnes divitiae et gloria. quam tulit deus patri nostro, nobis erit et filiis nostris. merito deo arbitro dicunt esse sublata, quia ipse est auctor bonorum, cuius gratia ignavi exuuntur; quia decorem hereditatis divinae capere improbi atque infirmi uon queunt, succedit autem intentus et spiritum in se fortis habens. 6—8 ibid. 7: denique divites et liberae non eum divitem, sed egentem arbitrabantur. omnis enim bonarum et liberalium consors disciplinarura neminem insipientium divitem putat, sed inopem atque egenum, abiectum quoque, etsi regalibus divitiis affluat et superbus auro suam iactet potentiara (cf. etiam 9). epist. 38,8: alter despiciens animo βασιλέων τὰς πολυχρύσους τύχας imperialesque gazas . . . cf. Nauck tragic. graec. fr2. p. 900 (adespota 322).</note>  
+
+<pb n="v.3.p.113"/>
+κεκράγασι τὰς αἰτίας τοῦ μίσους παραδιηγούμεναι· „μὴ ἔστιν ἡμῖν ἔτι μερὶς
+ἢ κληρονομία ἐν τῷ οἴκῳ τοῦ πατρὸς ἡμῶν; οὐχ ὡς ἀλλότριαι λελογίσμεθα
+αὐτῷ; πέπρακε γὰρ ἡμᾶς καὶ κατέφαγε καταβρώσει τὸ ἀργύριον
+ἡμῶν. πᾶς ὁ πλοῦτος καὶ ἡ δόξα, ἣν ἀφείλετο ὁ θεὸς τοῦ
+<lb n="5"/> πατρὸς ἡμῶν, ἡμῖν ἔσται καὶ τοῖς τέκνοις ἡμῶν“ (Gen. 31,14—16).
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="16">
+<p>ἐλεύθεραι γὰρ καὶ τοῖς ὀνόμασι καὶ τοῖς ἐνθυμήμασιν οὐδένα τῶν ἀφρόνων νομίζουσι πλούσιον ἢ ἔνδοξον εἶναι, πάντας δ’, ὡς ἔπος εἰπεῖν, ἀδόξους
+καὶ πένητας, κἂν βασιλέων πολυχρύσων τύχας ὑπερβάλλωσιν. οὐ γάρ
+φασι τὸν πλοῦτον τοῦ πατρός, ἀλλὰ τὸν ἀφαιρεθέντα πλοῦτον, οὐδὲ τὴν
+<lb n="10"/> ἐκείνου δόξαν, ἀλλὰ τὴν ἀφαιρεθεῖσαν αὐτοῦ δόξαν σχήσειν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="17">
+<p>ἐστέρηται δ’ ὁ φαῦλος τοῦ ἀληθινοῦ πλούτου καὶ τῆς ἀψευδοῦς εὐδοξίας· τὰ γὰρ
+ἀγαθὰ ταῦτα φρόνησις καὶ σωφροσύνη καὶ αἱ συγγενεῖς περιποιοῦσι διαθέσεις, ὧν αἱ φιλάρετοι ψυχαὶ κληρονομοῦσιν. οὐοῦν οὐ</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="18">
+<p>τὰ προσόντα τῷ μοχθηρῷ, τὰ δ’ ὧν ἐκεῖνος ἐστέρηται περιουσία καὶ εὔκλεια τοῖς
+<lb n="15"/> ἀστείοις ἐστίν· ἐστέρηται δὲ ἀρετῶν, αἳ δὴ κτήματα τῶνδε γεγόνασιν,
+<note xml:lang="mul" type="footnote">
+<lb/>2 ἢ scripsi (sic LXX et. qnh ler. div. ber. § 44) καὶ codd. ἀλλότριαι scripsi: ἀλλότριοι codd.; genuina scriptura αἱ ἀλλότριαι esse videtur: cf. ad lin.
+<lb/>2 2.3 λελόγισθε corr. ex λελογίσθαι H, λελόγιστε L
+<lb/>4 πάντα τὸν πλοῦτον καὶ τὴν δόξαν ex LXX et §
+<lb/>16 conicio
+<lb/>6 ἐλεύθεροι v γὰρ <add>καὶ πλούσιαι</add> ex Ambros. conicio ὀνόμασι] γένεσι coni. Mang.
+<lb/>9 ἀφαιρεθέντα #x003E; conicio 
+<lb/>13 ὧν] ἁ vel κληρονόμοι εἰσίν coni. Mang.
+<lb/>15 δ’ ἢ G τῶνδε G: αὐτῶν H</note>  
+
+<pb n="v.3.p.114"/>
+ἵνα καὶ τὸ ἑτέρωθι λεχθὲν συνᾴδῃ· „τὰ βδελύγματα Αἰγύπτου θύσομεν
+κυρίῳ τῷ θεῷ“ (Exod. 8,26)· τέλεια γὰρ καὶ ἄμωμα ἱερεῖα αἱ ἀρεταὶ
+καὶ αἱ κατὰ ἀρετὰς πράξεις, ἃς τὸ φιλοπαθὲς Αἰγύπτιον βδελύττεται
+ σῶμα.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="19">
+<p>καθάπερ γὰρ ἐνταῦθα φυσικῶς τὰ βέβηλα παρ’ Αἰγυπτίοις ἱερὰ
+παρὰ τοῖς ὀξὺ καθορῶσι λέγεται καὶ πάντα θύεται, τὸν αὐτὸν τρόπον <lb n="5"/>
+καὶ ὧν ἐστέρηται καὶ ἀφῄρηται πᾶς ἄφρων, τούτων κληρονόμος ἔσται
+ὁ καλοκἀγαθίας ἑταῖρος· ταῦτα <milestone unit="altpage1" n="p. 549 M."/>  δέ ἐστι δόξα ἀληθὴς ἐπιστήμης ἀδιαφοροῦσα
+καὶ πλοῦτος οὐχ ὁ τυφλός, ἀλλ’ ὁ τῶν ὄντων ὀξυδερκέστατος,
+ὃς οὐδὲν παραδέχεται νόμισμα κίβδηλον, ἀλλ’ οὐδ’ ἄψυχον τὸ παράπαν,
+ εἰ καὶ δόκιμον εἴη.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="20">
+<p>προσηκόντως οὖν ἀποδράσεται τὸν τῶν θείων ἀγαθῶν <lb n="10"/>
+ἀμέτοχον, ὃς καὶ ἐν οἷς ἕτερον αἰτιᾶται διαβάλλων ἑαυτὸν λέληθεν,
+ἐπειδὰν φῇ· „εἰ ἀνήγγειλάς μοι, ἐξαπέστειλα ἄν σε“ (Gen. 31,27).
+αὐτὸ γὰρ τοῦτο φυγῆς ἦν ἄξιον, εἰ μυρίων δεσποτῶν δοῦλος ὤν, ἐπιμορφάζων
+ ἀρχὴν καὶ ἡγεμονίαν, ἐλευθερίαν ἄλλοις ἐκήρυττες.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="21">
+<p>ἐγὼ δέ,
+φησί, τῆς ἐπ’ ἀρετὴν ἀγούσης ὁδοῦ συνεργὸν ἄνθρωπον οὐκ ἔλαβον, <lb n="15"/>
+<note xml:lang="mul" type="footnote">
+<lb/>1 σὺν αἰδοῖ G (fort. συνᾴδοι scrib.) θύσομεν G: θύσωμεν H
+<lb/>4 βέβηλα G: εἴδωλα Η, βδελύγματα coni. Mang. G καὶ lov G (Mang.): κακιῶν ὧν H ὧν add. H2) ἀφήρητο G
+<lb/>7 ἐστιν Η
+<lb/>8 ἀλλ’
+<lb/>6 H-: ἀλλὰ GH1
+<lb/>9 ἄψυχον] ἄσημον coni. Mang., sed v. §
+<lb/>10 10 τὸν] ὁ H s. lin. τῶν] τὸν H2
+<lb/>11 ἀμέτοχον in ἀμέτοχος corr. H ἑταῖρον ’
+<lb/>12 ἐπειδὴ ex ἐπειδὰν corr. Η ἔφη GH</note> <note xml:lang="lat" type="footnote">2.
+<lb/>3 Ambros. de fuga saecult 8,51: bonum eniin sapientiae sacrificium, bona est hostia fides et omnis virtus. 2—7 Ambros. epist. 27,2.3: oderant ergo immaculata (vulg. immoiata) sacrificia, id est perfecta studia virtutum et pleua disciplinae. quod ergo vitiosi oderunt, hoc apud bonos sincerum ac pium est. opus virtutis detestatur luxuriosus, helluo refugit. Aegyptium itaque corpus quod iilecebras diiigit, aversatur animae virtutes, abominatur imperium, refugit virtutum disciplinas et omnia opera, quae huiusmodi sunt. quae ergo Aegyptius refugit . . ., haec tu amplectere . . . illa autem declina, quae illi sequuntur atque eligunt, quoniam duo sibi ista congruere non possunt, prudentia et insipientia. itaque sicut iis quae in quodam censu imprudentiae atque intemperantiae sunt abdicat se prudentia, abdicat continentia, ita eorum exsors omnis insipiens est atque incontinens, quae in bonis atque in hereditate sapientis viri sunt et continentis. 8—10 ibid. 6: neque enim caecus thesaurus hereditas est.
+<lb/>7 pecunia adultera.
+<lb/>10 bona moneta. 12—115,2 Ambros. epist. 27,11: si an nunti asses, inquit, mihi, emisissem t e. in quo prodidit, quid iustus fugerit: ne eum prosequeretur, ne deduceret, ne tali comitatu stipatus procederet. primum quod niultorum dominorum mancipio se subicere non debuit, ut ab eo tamquam servulus dimitteretur. deintle quia vir exercitio intentus et quaerens veram viam ad virtutem persequi non hominem deductorem, sed oracula quaesivit caelestia; quae me, inquit, hinc praeceperuut abire et nunc comitantur viantem.</note>  
+
+<pb n="v.3.p.115"/>
+ἀλλ’ ὑπήκουσα χρησμῶν θείων κελευόντων ἐνθένδε ἀπαίρειν, οἳ καὶ
+μέχρι νῦν με ποδηγετοῦσι. πῶς δ’ ἄν με ἐξαπέστειλας;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="22">
+<p>ἤ, ὡς σεμνολογούμενος διεξῄεις, μετ’ εὐφροσύνης τῆς ἐμοὶ λυπηρᾶς καὶ μουσικῶν
+ἀμούσων καὶ τυμπάνων καὶ κτύπων ἀνάρθρων καὶ ἀλόγων πληγὰς ἐμφορούντων
+<lb n="5"/> ψυχῇ δι’ ὤτων καὶ μετὰ κιθάρας (ibid.), ἀλύρων καὶ ἀναρμόστων
+οὐκ ὀργάνων μᾶλλον ἢ τῶν κατὰ τὸν βίον πράξεων; ἀλλὰ γὰρ
+ταῦτ’ ἐστὶν ὧν ἕνεκα φυγὴν ἐβούλευσα, σὺ δ’, ὡς ἔοικεν, ἀντισπάσματά
+μου τῆς φυγῆς ἐπενόεις, ἵνα παλινδρομήσω διὰ τὸ ἀπατηλὸν καὶ εὐπαράγωγον
+φύσει τῶν αἰσθήσεων, αἷς μόλις ἴσχυσα ἐπιβῆναι.</p>
+<lb n="10"/> </div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="23">
+<p><milestone unit="altref" n="4"/> Μῖσος μὲν δὴ τοῦ λεχθέντος δρασμοῦ γέγονεν αἴτιον, φόβος δὲ τοῦ λεχθησομένου. „εἶπε“ γάρ φησι „Ῥεβέκκα πρὸς Ἰακώβ· ἰδού,
+Ἠσαῦ ὁ ἀδελφός σου ἀπειλεῖ <add>σοι</add> ἀποκτεῖναί σε. νῦν οὖν, τέκνον,
+ἄκουσόν μου τῆς φωνῆς καὶ ἀναστὰς ἀπόδραθι πρὸς Λάβαν τὸν ἀδελφόν
+μου εἰς Χαρρὰν καὶ οἴκησον μετ’ αὐτοῦ ἡμέρας τινάς, ἕως τοῦ
+<lb n="15"/> ἀποστρέψαι τὸν θυμὸν καὶ τὴν ὀργὴν τοῦ ἀδελφοῦ σου, καὶ ἐπιλάθηται
+ἃ πεποίηκας αὐτῷ· καὶ ἀποστείλασα μεταπέμψομαί σε ἐκεῖθεν“ (Gen.
+27,42—45).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="24">
+<p>ἄξιον γὰρ δεδιέναι, μὴ τὸ χεῖρον τῆς ψυχῆς μέρος ἐξ ἐνέδρας λοχῆσαν ἢ καὶ ἐκ τοῦ φανεροῦ κονισάμενον ἀνατρέψῃ καὶ καταβάλῃ
+τὸ κρεῖττον. συμβουλὴ δ’ ἀρίστη τῆς ὀρθογνώμονος ἐπιμονῆς,
+<lb n="20"/> Ῥεβέκκας ἥδε·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="25">
+<p>ἐπειδὰν ἴδῃς, φησί, τὸν φαῦλον πολὺν ῥέοντα κατὰ ἀρετῆς καὶ ὧν ἀλογεῖν προσῆκε πολὺν λόγον ἔχοντα, πλούτου, δόξης,
+ἡδονῆς, καὶ τἀδικεῖν ἐπαινοῦντα ὡς αἴτιον ἑκάστου τῶν εἰρημένων —
+πολυαργύρους γὰρ καὶ πολυχρύσους καὶ ἐνδόξους τοὺς ἀδικοῦντας μάλιστα
+γίνεσθαι —, μὴ τὴν ἐναντίαν ὁδὸν τραπόμενος εὐθὺς ἀχρηματίαν καὶ
+<lb n="25"/> ἀτυφίαν αὐστηρόν τε καὶ μονωτικὸν βίον ἐπιτηδεύσῃς· ἀνερεθίσεις γὰρ
+<note xml:lang="mul" type="footnote">
+<lb/>4 alterum καὶ om. G
+<lb/>11 Ῥεβέκα Η
+<lb/>12 Ἡσαῦ GH hic et infra semper σοι ex LXX et §
+<lb/>39 additli
+<lb/>14 post μου add. καὶ G τοῦ om. Η
+<lb/>15 τὸν θυμὸν καὶ G: om. H σου <add>ἀπὸ σοῦ</add> conicio; cf. LXX et vol, II p. 309, 24 
+<lb/>18 λοχεῖσαν G κινησάμενον per errorem Mang. 18.
+<lb/>19 καταβάλλῃ G 
+<lb/>19 ἐπιγνώμονος G
+<lb/>20 Ῥεβέκας Η ἥδε scripsi: ἡ δ’ eodd. πολύν scripsi: πολὺ codd.
+<lb/>22 καὶ τὸ ἀδικεῖν G2H: κατ’ ἀδικεῖν G1
+<lb/>23 τοὺς] ἐστὶν Turn.
+<lb/>25 ἐπιτηδεύσεις H ἀναιρεθίσεις G1, ἀναιρεῖσθαι G1, ut vid., ἀνερεθιεῖς Cohn</note> <note xml:lang="lat" type="footnote">2—7 ibid. 12: sed quomodo me dimisisses? an cum laetitia tua, quae plena est maestitudinis, cnm tympanis scilicet atque organis immoderata modulantibus et sonis tibiarum suavibus insuavia resultantibus, sonis dissonis, crepitibus discrepantibus, vocibus mutis, cymbalis animam ferientibus? . . haec sunt quae ego fugi.</note>  
+
+<pb n="v.3.p.116"/>
+τὸν ἀντίπαλον καὶ βαρύτερον ἐχθρὸν ἀλείψεις κατὰ σεαυτοῦ. τί ἂν οὖν
+ ἐργασάμενος ἐκφύγῃς τὰ παλαίσματ’ αὐτοῦ, σκόπει.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="26">
+<p>συνενέχθητι τοῖς
+αὐτοῖς, οὐκ ἐπιτηδεύμασι λέγω, τοῖς δὲ τῶν εἰρημένων ποιητικοῖς, τιμαῖς,
+ἀρχαῖς, ἀργύρῳ, χρυσῷ, <milestone unit="altpage1" n="p. 550 Μ."/>  κτήμασι, χρώμασι, σχήμασι διαφόροις, κάλλεσι,
+καὶ ὅταν ἐντύχῃς, οἷα δημιουργὸς ἀγαθὸς εἶδος ἄριστον ταῖς ὑλικαῖς <lb n="5"/>
+ οὐσίαις ἐγχάραξον καὶ ἐπαινετὸν ἀποτέλεσον ἔργον.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="27">
+<p>ἢ οὐκ οἶδας, ὅτι
+ναῦν ἰδιώτης μὲν παραλαβὼν σῴζεσθαι δυναμένην ἀνατρέπει, κυβερνητικὸς
+δὲ ἀνὴρ καὶ τὴν ἀπολλυμένην πολλάκις ἔσωσε, καὶ τῶν καμνόντων
+οἱ μὲν ἀπειρίᾳ τῶν θεραπευόντων χρησάμενοι σφαλερῶς τὰ σώματα
+ἔσχον, οἱ δὲ ἐμπειρίᾳ καὶ τὰς σφαλερὰς νόσους ἀπέφυγον; καὶ τί δεῖ <lb n="10"/>
+μηκύνειν; ἀεὶ γὰρ τὰ μετὰ τέχνης ἔλεγχός ἐστι τῶν σὺν ἀτεχνίᾳ γινομένων,
+καὶ ὁ τούτων ἀληθὴς ἔπαινος ἀψευδὴς ἐκείνων ἐστὶ κατηγορία.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="28">
+<p> <milestone unit="altref" n="5"/> ἐὰν οὖν θέλῃς διελέγξαι τὸν πολυχρήματον φαῦλον, μὴ ἀποστραφῇς τὴν ἐν χρήμασι περιουσίαν. ὁ μὲν γὰρ ἢ ἀνελεύθερος καὶ δουλοπρεπὴς
+ὀβολοστάτης καὶ τοκογλύφος, βαρυδαίμων ἀνήρ, ἀναφανεῖται ἢ <lb n="15"/>
+ἔμπαλιν ἄσωτος πεφορημένος, λαφύττειν καὶ σπαθᾶν ἑτοιμότατος, ἑταιρῶν
+καὶ πορνοτρόφων καὶ μαστροπῶν καὶ παντὸς ἀκολάστου θιάσου
+ χορηγὸς φιλοτιμότατος.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="29">
+<p>σὺ δὲ ἔρανον παρέξεις πένησι φίλων, χαριεῖ
+δωρεὰς τῇ πατρίδι, συνεκδώσεις θυγατέρας ἀπόροις γονεῦσιν αὐταρκεστάτην
+προῖκα ἐπιδούς, μονονοὺκ εἰς μέσον προθεὶς τὰ ἴδια καλέσεις ἐπὶ <lb n="20"/>
+ μετουσίαν ἅπαντας τοὺς ἀξίους χάριτος.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="30">
+<p>τὸν αὐτὸν μέντοι τρόπον καὶ
+δοξομανοῦντα καὶ ἐπικομπάζοντα βουληθεὶς ὀνειδίσαι μοχθηρόν, δυνηθεὶς
+ἔντιμος εἶναι μὴ ἀποστραφῇς τὸν παρὰ τοῖς πολλοῖς ἔπαινον· οὕτως
+γὰρ τὸν μακρὰ βαίνοντα καὶ φρυαττόμενον ἄθλιον ὑποσκελιεῖς. ὁ μέν
+γε τῷ ἐπιφανεῖ καταχρήσεται πρὸς ὕβριν καὶ ἀτιμίαν ἀμεινόνων ἑτέρων, <lb n="25"/>
+αὔξων τοὺς χείρους ἐπ’ αὐτοῖς· σὺ δὲ ἔμπαλιν τοῖς ἀξίοις ἅπασι μεταδώσεις
+τῆς εὐκλείας, ἀσφάλειαν μὲν περιποιῶν τοῖς ἀγαθοῖς, βελτιῶν δὲ
+<note xml:lang="mul" type="footnote">
+<lb/>2 ἐκφύγοις conicio παλαίσματα Η συνμενέγχθητι H2
+<lb/>4 σχήμασι om. G 
+<lb/>5 ἐντύχῃς] ἐν in ras. H2
+<lb/>6 ἡ G
+<lb/>8 ἔσωσεν H
+<lb/>11 ἐστιν M 11.
+<lb/>12 γενομένων H
+<lb/>13 ἐθέλῃς conicio θέλοις ἐλέγξαι G
+<lb/>14 ἢ] εἰ ’
+<lb/>16 ἀσωτίαις ἐμφορούμενος coni. Mang. φυλάττειν L 
+<lb/>17 πορνοτρόφων codd. v
+<lb/>18 χαριεῖ scripsi: χάριτος G, χάριτας Η, χάριτας καὶ v 19.
+<lb/>20 αὐταρκέστατον L
+<lb/>20 ἐπιδιδοὺς v προσθεὶς Turn.
+<lb/>23 post μὴ habet οὑν Η1 ἀποστραφεὶς GH1
+<lb/>24 μακρὰν G
+<lb/>25 ἑταίρων H 
+<lb/>26 αὐξῶν G αὐτούς conicio</note> <note xml:lang="lat" type="footnote">
+<lb/>18 sqq. cf. „Philo und die kynisch-stoische“ p.
+<lb/>30 1.</note>  
+
+<pb n="v.3.p.117"/>
+τοὺς χείρους νουθεσίᾳ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="31">
+<p>κἂν ἐπ’ ἄκρατον μέντοι καὶ πολυτελεῖς τραπέζας ἴῃς, θαρρῶν ἴθι· τὸν γὰρ ἀκράτορα αἰσχυνεῖς διὰ τῆς σεαυτοῦ δεξιότητος.
+ὁ μὲν γὰρ πεσὼν ἐπὶ γαστέρα καὶ πρὸ τοῦ στόματος τὰς ἀπλήστους διοίξας ἐπιθυμίας ἀκόσμως ἐμφορήσεται καὶ τὰ τοῦ πλησίον ἐπισπάσεται
+<lb n="5"/> καὶ πάντ’ ἐπιλιχμώμενος οὐκ ἐρυθριάσει· καὶ διακορὴς ἐδωδῆς
+ἐπειδὰν γένηται, χανδόν, ὡς οἱ ποιηταὶ λέγουσι, πίνων γέλωτα καὶ
+χλεύην παρέξει τοῖς ὁρῶσι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="32">
+<p>σὺ δ’ ἄνευ μὲν ἀνάγκης χρήσῃ τοῖς μετρίοις, ἐὰν δέ που βιασθῇς εἰς πλειόνων ἀπόλαυσιν ἐλθεῖν, λογισμὸν
+τῆς ἀνάγκης ἐπιστήσας ἡγεμόνα τὴν ἡδονὴν εἰς ἀηδίαν οὐδέποτε ἐκτρέψεις,
+<lb n="10"/> ἀλλ’, εἰ χρὴ τὸν τρόπον εἰπεῖν τοῦτον, νηφάλια μεθυσθήσῃ.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="33">
+<p><milestone unit="altref" n="6"/> μέμψαιτ’ ἂν οὖν δεόντως ἡ ἀλήθεια τοῖς ἀνεξετάστως ἀπολείπουσι  τὰς ἐν τῷ  <milestone unit="altpage2" n="p. 551 M."/> πολιτικῷ βίῳ πραγματείας καὶ πορισμοὺς καὶ δόξης καὶ
+ἡδονῆς καταπεφρονηκέναι λέγουσιν. ἀλαζονεύονται γάρ, οὐ καταφρονοῦσι,
+τὸ ῥυπᾶν καὶ σκυθρωπάζειν αὐστηρῶς τε καὶ αὐχμηρῶς ἀποζῆν δελέατα
+<lb n="15"/> προτιθέντες, ὡς δὴ κοσμιότητος καὶ σωφροσύνης καὶ καρτερίας ἐρασταί.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="34">
+<p>τοὺς δ’ ἀκριβεστέρους ἀπατᾶν οὐ δύνανται διακύπτοντας εἴσω καὶ μὴ τοῖς ἐν ἐμφανεῖ παραγομένους. ταῦτα γὰρ προκαλύμματα ὄντα ἑτέρων
+ἀναστείλαντες, τὰ ἐναποκείμενα ἔνδον, ὁποῖα ἄττα τὴν φύσιν ἐστίν, ἐθεάσαντο
+καί, εἰ μὲν εἴη καλά, ἐθαύμασαν, εἰ δὲ αἰσχρά, ἐχλεύασαν καὶ
+<lb n="20"/> τῆς ὑποκρίσεως ἐμίσησαν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="35">
+<p>λέγωμεν οὖν τοῖς τοιούτοις· τὸν ἄμικτον καὶ ἀκοινώνητον μονότροπόν τε καὶ μονωτικὸν βίον ζηλοῦτε; τί γὰρ τῶν
+ἐν κοινωνίᾳ καλῶν προεπεδείξασθε; ἀργυρισμὸν ἀποστρέφεσθε; γενόμενοι
+γὰρ χρηματισταὶ δικαιοπραγεῖν ἠθελήσατε; τῶν γαστρὸς καὶ μετὰ γαστέρα
+ἡδονῶν ἐπιμορφάζοντες ἀλογεῖν, ἡνίκα τὰς εἰς ταῦτα ἀφθόνους ὕλας
+<lb n="25"/> εἴχετε, ἐμετριάσατε; δόξης καταφρονεῖτε; γενόμενοι γὰρ ἐν τιμαῖς ἀτυφίαν
+ἠσκήσατε; πολιτείαν ἐγελάσατε ὑμεῖς, ἴσως ὡς χρήσιμόν ἐστι τὸ
+πρᾶγμα οὐ κατανοήσαντες.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="36">
+<p>πρότερον οὖν ἐγγυμνάσασθε καὶ
+<note xml:lang="mul" type="footnote">
+<lb/>2 κληθῇς conicio αἰσχύνεις G σεαυτοῦ Mang.: ἑαυτοῦ codd. 
+<lb/>4 ἐμφορηθήσεται G 4.
+<lb/>5 καὶ τὰ—ἐπισπάσεται oin. G
+<lb/>5 ἐπιλιγχμώμενος H 
+<lb/>6 χάνδονος οἱ G λέγωσι G πίνων Turn.: πεινῶν codd.
+<lb/>7 χρήσει G 
+<lb/>10 μεθυσθήσει ’
+<lb/>11 μέμψαι H μέμψαιτ’ ἄν δὲ ὄντως G δεόντως G2) ante ἂν add. δὲ H οὗν Η: om. G
+<lb/>12 πορίμου „Mss.“ (Mang., qui ἀργυρισμοῦ coniecit) 
+<lb/>17 τοῖς ἐν ἐμφανεῖ GH2: τοὺς ἐμφανεῖ H1, τῷ ἐμφανεῖ v, τοῖς ἐμφανέσι conicio 
+<lb/>18 ὁποῖ᾿ Η ἅττα v
+<lb/>20 λέγομεν H (Mang.) οὑν H: μὲν οὖν G 
+<lb/>22 ἐν Η: ἐκ G προεπιδείξασθε Η1
+<lb/>27 ἐγγυμνάσασθε H2: ἐνγυμνάσασθε G, ἐγυμνάσασθε H1v 27. 118,1 προεμμελετήσατε H2: προεμελετήσατε GH1v</note> <note xml:lang="mul" type="footnote">
+<lb/>6 Hom. Od. φ 294.</note>  
+
+<pb n="v.3.p.118"/>
+προεμμελετήσατε τοῖς τοῦ βίου πράγμασιν ἰδίοις τε καὶ κοινοῖς καὶ γενόμενοι πολιτικοί
+τε καὶ οἰκονομικοὶ δι’ ἀδελφῶν ἀρετῶν, οἰκονομικῆς τε καὶ πολιτικῆς,
+κατὰ πολλὴν περιουσίαν τὴν εἰς ἕτερον καὶ ἀμείνω βίον ἀποικίαν
+στείλασθε· τὸν γὰρ πρακτικὸν τοῦ θεωρητικοῦ βίου, προάγωνά τινα ἀγῶνος
+τελειοτέρου, καλὸν πρότερον διαθλῆσαι. οὕτως τὴν ὄκνου καὶ ἀργίας <lb n="5"/>
+ κατηγορίαν ἀποδράσεσθε.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="37">
+<p>οὕτως καὶ τοῖς Λευίταις τὰ μὲν ἔργα ἐπιτελεῖν
+ἄχρι πεντηκονταετίας διείρηται (Num. 4,30 ss.), ἀπαλλαγεῖσι δὲ τῆς
+πρακτικῆς ὑπηρεσίας σκοπεῖν ἕκαστα καὶ θεωρεῖν, τῆς ἐν τῷ πρακτικῷ
+βίῳ κατορθώσεως γέρας λαβόντας ἕτερον βίον, ὃς ἐπιστήμῃ καὶ θεωρίᾳ
+ μόνῃ χαίρει.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="38">
+<p>καὶ ἄλλως ἀναγκαῖον, τοὺς τῶν θείων ἀξιοῦντας μεταποιεῖσθαι <lb n="10"/>
+δικαίων τὰ ἀνθρώπεια πρότερον ἐκπληρῶσαι· πολλὴ γὰρ εὐήθεια
+τῶν μειζόνων ὑπολαμβάνειν ἐφίξεσθαι ἀδυνατοῦντας τῶν ἐλαττόνων περιγίνεσθαι.
+γνωρίσθητε οὖν πρότερον τῇ κατ’ ἀνθρώπους ἀρετῇ, ἵνα καὶ
+τῇ πρὸς θεὸν συσταθῆτε. τοιαῦτα ὑφηγεῖται τῷ ἀσκητικῷ ἡ ὑπομονή,
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="39">
+<p> τὰς δὲ λέξεις ἀκριβωτέον. <milestone unit="altref" n="7"/> „ἰδοὺ“ φησίν „Ἠσαῦ ὁ ἀδελφός σου ἀπειλεῖ <lb n="15"/>
+σοι“ — ἀλλ’ οὐχ ὁ δρύινος καὶ ὑπ’ ἀμαθίας ἀπειθὴς τρόπος, ὄνομα
+Ἠσαῦ, ἐγκότως ἔχει καὶ τὰ τῆς θνητῆς ζωῆς προτείνων ἐπ’ ὀλέθρῳ
+δελέατα, χρήματα, δόξαν, ἡδονάς, τὰ συγγενῆ τούτοις, κατὰ σοῦ φονᾷ;
+— σὺ δέ, ὦ τέκνον, ἀπόδραθι τὸν ἐν τῷ παρόντι ἀγῶνα· οὔπω γὰρ
+εἰς τὸ παντελὲς <milestone unit="altpage1" n="p. 552 M."/>  ἐπιδέδωκέ σοι τὰ τῆς ῥώμης, ἀλλ’ ἔτι οἷα παιδὸς οἱ
+ ψυχικοὶ τόνοι μαλθακώτεροι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="40">
+<p>διὸ καὶ τέκνον αὐτὸν προσεῖπε, τὸ δ’ <lb n="21"/>
+ἐστὶν εὐνοίας καὶ ἡλικίας ὄνομα ἐν ταὐτῷ· τὸν γὰρ ἀσκητικὸν τρόπον
+καὶ νέον παρὰ τὸν τέλειον καὶ φιλίας ἄξιον εἶναι τίθεμεν. ὁ δὲ τοιοῦτος
+ἱκανὸς μέν ἐστι τὰ προτιθέμενα παισὶν ἆθλα ἄρασθαι, τὰ δὲ ἀνδράσιν
+οὐδέπω δυνατός· ἀνδρῶν δὲ ἄριστον ἆθλον ἡ θεοῦ μόνου θεραπεία. <lb n="25"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="41">
+<p>τοιγαροῦν ἐπειδὰν μήπω τελείως καθαρθέντες, δόξαντες δὲ αὐτὸ μόνον
+ἐκνίψασθαι τὰ καταρρυπαίνοντα ἡμῶν τὸν βίον, ἐπ’ αὐλὰς τῆς θεραπείας
+ἀφικώμεθα, θᾶττον ἢ προσελθεῖν ἀπεπηδήσαμεν, τὴν αὐστηρὰν δίαιταν
+αὐτῆς καὶ τὴν ἄυπνον θρησκείαν καὶ τὸν συνεχῆ καὶ ἀκάματον πόνον
+<note xml:lang="mul" type="footnote">
+<lb/>4 στείλασθε GH1: ἐστείλασθε H2 βίον H
+<lb/>5 τὴν G: ἐστὶ τὴν H2, ἐστὶν H1
+<lb/>6 ἀποδράσεσθε G: ἀποδράσασθαι Η
+<lb/>7 τῆς] τ’ G 
+<lb/>11 ἡ εὐήθεια H
+<lb/>12 ἐφίζεσθαι G
+<lb/>13 γνωρίσθητι L 
+<lb/>14 συσταθῇς Turn. τοιαῦθ’ G2
+<lb/>16 ἀλλ’ οὐχ G1H: ἀλλά καὶ G2 
+<lb/>17 Ἡσαῦς G ἐνκότως (sic) G: ἐἰκότον Η, εἰκότως Richter
+<lb/>18 φονᾶ GHL2: φοριᾶ L1
+<lb/>22 ὄνομα G (Mang.): om. H
+<lb/>23 εἶναι secl. Cohn 
+<lb/>24 παισὶν Turn.: φησὶν codd.
+<lb/>25 μόνον H ut vid.
+<lb/>26 αὐτὸ Mang.: τοῦτο codd.
+<lb/>28 ἀφικόμεθα G
+<lb/>29 θρησκείαν Mang.: ἀρέσκειαν codd.</note>  
+
+<pb n="v.3.p.119"/>
+οὐκ ἐνεγκόντες.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="42">
+<p>ἀποφεύγετε οὖν ἐν τῷ παρόντι καὶ τὸ κάκιστον καὶ τὸ ἄριστον, κάκιστον μὲν τὸ μυθικὸν πλάσμα, τὸ ἄμετρον καὶ ἐκμελὲς
+ποίημα, τὸ ὑπ’ ἀμαθίας σκληρὸν καὶ δρύινον ὄντως νόημα καὶ πεῖσμα,
+ὧν Ἠσαῦ ἐπώνυμος, ἄριστον δὲ τὸ ἀνάθημα· τὸ γὰρ θεραπευτικὸν
+<lb n="5"/> γένος ἀνάθημά ἐστι θεοῦ, ἱερώμενον τὴν μεγάλην ἀρχιερωσύνην αὐτῷ
+μόνῳ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="43">
+<p>τὸ μὲν γὰρ συνδιατρίβειν κακῷ βλαβερώτατον, τὸ δὲ ἀγαθῷ τελείῳ σφαλερώτατον. ὁ γοῦν Ἰακὼβ καὶ τὸν Ἠσαῦ ἀποδιδράσκει καὶ
+τῶν γονέων διοικίζεται· ἀσκητικὸς γὰρ ὢν καὶ ἔτι διαθλῶν φεύγει μὲν
+κακίαν, ἀρετῇ δὲ τελείᾳ καὶ αὐτομαθεῖ συζῆν ἀδυνατεῖ. </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="44">
+<p><milestone unit="altref" n="8"/> διόπερ <lb n="10"/> ἀποδημήσει πρὸς Λάβαν, οὐ τὸν Σύρον, ἀλλὰ τὸν ἀδελφὸν τῆς μητρός,
+τὸ δ’ ἐστὶν εἰς τὰς τοῦ βίου λαμπρότητας ἀφίξεται· λευκὸς γὰρ ἑρμηνεύεται Λάβαν. ἀφικόμενος δὲ οὐχ ὑψαυχενήσει, φυσώμενος ταῖς τυχηραῖς εὐπραγίαις· μεταληφθεὶς γὰρ ὁ Σύρος ἐστὶ μετέωρος. νυνὶ δὲ τοῦ
+Σύρου Λάβαν οὐχὶ μέμνηται, τοῦ δὲ Ῥεβέκκας ἀδελφοῦ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="45">
+<p>αἱ γὰρ κατὰ <lb n="15"/> τὸν βίον ὗλαι φαύλῳ μὲν παραδοθεῖσαι μετέωρον ἐξαίρουσι τὸν κενὸν
+φρονήσεως νοῦν, ὅστις ὠνόμασται Σύρος, ἐραστῇ δὲ παιδείας ἐπιμένοντι
+τοῖς καλοκἀγαθίας σταθερῶς καὶ παγίως δόγμασιν * * * οὗτός ἐστιν ὁ
+Ῥεβέκκας ἀδελφός, τῆς ἐπιμονῆς· οἰκεῖ δὲ τὴν Χαρράν, ἣ μεταληφθεῖσά
+εἰσι τρῶγλαι, σύμβολον τῶν αἰσθήσεων· ὁ γὰρ ἔτι χορεύων ἐν τῷ θνητῷ
+<note xml:lang="mul" type="footnote">
+<lb/>2 ante κάκιστον add. καὶ Turn.
+<lb/>3 πεῖσμα suspectum
+<lb/>4 Ἡσαῦς G 
+<lb/>6 κακῶν G τὸ] τῶ G
+<lb/>8 ἀσκητικὸς γὰρ ὢν om. G
+<lb/>9 αὐτομαθεῖ Mang.: αὐτομαθεία Η, αὐτομαθία G συνζῆν G
+<lb/>13 μεταληθεὶς G, β s. s. G2 
+<lb/>14 οὐχὶ μέμνηται λαβὰν Η Ῥεβέκας Η1
+<lb/>15 φαύλω G1H2: φαύλοις G2, φαῦλος H1 (?)
+<lb/>16 ἐπιμένοντι ’-H’: ἐπιμένοντα Η2 (G1?)
+<lb/>17 σταθεροῖς καὶ παγίοις conicio lacunam significavit Mang., qui προτρέπουσι e. gr. supplet., sed plura desunt
+<lb/>18 Ῥεβέκας H1, tum υἱὸς add. H ὑπομονῆς „nonnulli“ (Mang.)
+<lb/>19 ἐστὶ coni. Mang. σύμβολα Η τῶν <add>ὀπῶν τῶν</add> coni. Mang. 18—120,1 αἰσθήσεων — τῶν add. in mg. Η2 ι
+<lb/>19 ἔτι ἐγχορεύων τῷ conicio</note> <note xml:lang="lat" type="footnote">2—4 cf. Hieronym. Comment. in Amos cap. 2,
+<lb/>9 p. 246. 9—12 Ambros. de fuga saeculi 5,26: sed forte dicas: cur igitur lacob ad Laban missus est, si Laban reprehensibilis? si nomen consideremus, candidus dicitur latine. ergo ad splendidiora lacob iubetur egredi. sed quia carnalis erat, melius intellegimus splendidiora vitae huius. epist. 27,10: splendida magis saeculi elegit quam vera et utilia vitae suae. 18—120,5 de fuga saeculi 4,20.21: suasit Rebecca: fuge, inquit, in Mesopotamiam . . . accipere admonetur uxorem a filiabus Laban, qui habitabat in Charris, quod significat cavernas, in quibus species est sensuum, qui sunt tamquam in cavernis corporis . . . qui enim delectatur hoc mundo et tripudiat in voluptatibus corporis obnoxius est sensuum passionibus atque in his habitat et deversatur. unde et dicit Rebecca habitantlum paucos dies cum illo, non multo tempore . . . persuadet autem habitare, ut discat studiosus disciplinae virtutes sensuum et velut situs quosdam carnis atque regiones, ut se cognoscat et noverit vehementiam caruis, (juid et qua causa creatum sit, quemadmodum unusquisque seusus operetur. 14—121,5. 120,9—13 ibid. 4,20. 21: et Isaac dicit: surgens vade in Mesopotamiam in domum Bathuel. in hymuis vel oraculis a plerisque, ut ante nos scriptum est, Bathuel sapientia dicitur, interpretatione autera latina filia dei significatur. in domum ergo sapientiae mittitur lacob ...
+<lb/>21 statimque revocatur, ne diutius titubet in lubrico et dividua quadam inundatione corporis huius et saeculi mersentur aniini interiora vcstigia. cum autem vel expertus fuerit vcl steterit in instabili et inccrto atque umido solo, revocatur a matre patientia vel perseverantia, quae dicit: mittam ad te et accersam te inde, ut et illic in lubrico tutum portum invenias sapientiae, quae te non sinat tamquam in naufragio fluctuare, et reversus perseverare circa dei noveris cultum . . .</note>  
+
+<pb n="v.3.p.120"/>
+ βίῳ χρεῖος τῶν αἰσθήσεων ὀργάνων ἐστίν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="46">
+<p>„οἴκησον οὖν“ φησίν „ὦ
+τέκνον, μετ’ αὐτοῦ“ μὴ τὸν ἅπαντα αἰῶνα, ἀλλ’ „ἡμέρας τινάς“ (Gen.
+27,44), τοῦτο δ’ ἐστὶ τὴν τῶν αἰσθήσεων <milestone unit="altpage1" n="p. 553 Μ."/>  χώραν κατάμαθε, γνῶθι
+σαυτὸν καὶ τὰ σαυτοῦ μέρη, τί τε ἕκαστον καὶ πρὸς τί γέγονε καὶ πῶς
+ἐνεργεῖν πέφυκε καὶ τίς ὁ τὰ θαύματα κινῶν καὶ νευροσπαστῶν ἀόρατος <lb n="5"/>
+ ἀοράτως εἴτε ὁ<sic>ὁ</sic> ἐν σοὶ νοῦς εἴτε ὁ<sic>ὁ</sic> τῶν συμπάντων.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="47">
+<p>ἐπειδὰν δὲ σαυτὸν
+ἐξετάσῃς, καὶ τὰ ἴδια τοῦ Λάβαν ἀκρίβωσον, τὰς τῆς κενῆς δόξης λαμπρὰς
+νομιζομένας εὐπραγίας, ὑφ’ ὧν μηδεμιᾶς ἁλῷς, πάσας δ’ οἷα ἀγαθὸς
+δημιουργὸς τεχνικῶς ταῖς οἰκείαις ἐφάρμοσον χρείαις. ἐὰν γὰρ ἐπιδείξῃ
+γενόμενος ἐν τῷ πολιτικῷ καὶ πεφυρμένῳ τούτῳ βίῳ σταθερὸν καὶ <lb n="10"/>
+εὐπαίδευτον ἦθος, μεταπέμψομαί σε ἐκεῖθεν (Gen. 27,45), ἵνα τύχῃς
+οὗπερ καὶ οἱ σοὶ γονεῖς ἄθλου. τὸ δ’ ἆθλόν ἐστιν ἡ ἀκλινὴς καὶ ἀνένδοτος
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="48">
+<p> τοῦ μόνου θεραπεία σοφοῦ. <milestone unit="altref" n="9"/> τὰ δ’ ὅμοια καὶ ὁ πατὴρ ὑφηγεῖται,
+μικρὰ προσθείς· λέγει γάρ· „ἀναστὰς ἀπόδραθι εἰς τὴν Μεσοποταμίαν
+εἰς τὸν οἶκον Βαθουήλ, τοῦ πατρὸς τῆς μητρός σου, καὶ λάβε <lb n="15"/>
+ἐκεῖθεν σαυτῷ γυναῖκα ἐκ τῶν θυγατέρων Λάβαν τοῦ ἀδελφοῦ τῆς μητρός
+ σου“ (Gen. 28,2).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="49">
+<p>πάλιν καὶ οὗτος οὐ Σύρον εἶπε τὸν Λάβαν, ἀλλὰ
+Ῥεβέκκας ἀδελφόν, μέλλοντα κατ’ ἐπιγαμίαν τῷ ἀσκητῇ κῆδος συνάπτειν.
+„ἀπόδραθι οὖν εἰς τὴν Μεσοποταμίαν,“ τουτέστιν εἰς μέσον τὸν χειμάρρουν
+ποταμὸν τοῦ βίου, καὶ μὴ ἐπικλυσθεὶς ἐγκαταποθῇς, στηριχθεὶς δὲ <lb n="20"/>
+<note xml:lang="mul" type="footnote">
+<lb/>1 αἰσθήσεως conicio
+<lb/>4 γέγονεν H
+<lb/>5 νευροσπαθῶν H1
+<lb/>6 ἀοράτων L δὲ ss. H2
+<lb/>7 ἀκριβῶς ὄντως τὰς G δόξας H1 
+<lb/>9 ἐφαρμόσων G
+<lb/>10 τούτῳ om. Turn.
+<lb/>11 ἀσάλευτον conicio 12.
+<lb/>13 ἀνένδοτος Mang.: ἀνενδοίαστος G, ἀνενδύαστος H
+<lb/>15 Βαιθουὴλ codil. τοὐ om. G
+<lb/>16 σεαυτῷ ἐκεῖθεν conicio; v. LXX et de post. Caini §
+<lb/>76 18 Ῥεβέκας Η1
+<lb/>20 ἐπικλυσθεὶς H1: ἐπικλυσθῆς GH2 ἐνκαταποθῆς (sic) G: ἐγκαταποθείς Η</note>  
+
+<pb n="v.3.p.121"/>
+βιαιοτάτην ἄνωθεν καὶ ἑκατέρωθεν καὶ πανταχόθεν ἐπικυματίζουσαν
+φορὰν τῶν πραγμάτων σθεναρῶς ἀπώθει.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="50">
+<p>τὸν γὰρ σοφίας οἶκον εὔδιον καὶ γαληνὸν λιμένα εὑρήσεις, ὃς ἐνορμιζόμενόν σε ῥᾳδίως ὑποδέξεται·
+σοφίας δὲ ὄνομα Βαθουὴλ ἐν χρησμοῖς ᾄδεται, τοῦτο δὲ μεταληφθὲν
+<lb n="5"/> θυγάτηρ θεοῦ προσαγορεύεται, καὶ γνησία γε θυγάτηρ καὶ ἀειπάρθενος,
+ἀψαύστου καὶ ἀμιάντου φύσεως ἐπιλαχοῦσα διά τε τὴν ἑαυτῆς κοσμιότητα
+καὶ διὰ τὸ ἀξίωμα τοῦ γεννήσαντος.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="51">
+<p>πατέρα δὲ τῆς Ῥεβέκκας Βαθουὴλ εἶπε. καὶ πῶς ἥ γε θυγάτηρ τοῦ θεοῦ, σοφία, λέγοιτ’
+ἂν ἐνδίκως εἶναι πατήρ; ἢ διότι ὄνομα μὲν θῆλυ σοφίας ἐστίν,
+<lb n="10"/> ἄρρεν δὲ ἡ φύσις; καὶ γὰρ αἱ ἀρεταὶ πᾶσαι προσρήσεις μὲν ἔχουσι
+γυναικῶν, δυνάμεις δὲ καὶ πράξεις ἀνδρῶν τελειοτάτων· ἐπειδὴ τὸ μετὰ
+τὸν θεόν, κἂν εἰ τῶν ἄλλων ἁπάντων πρεσβύτατον εἴη, δευτέραν ἔχον
+χώραν θῆλυ ὡς ἂν παρὰ ἄρρεν τὸ τὰ ὅλα ποιοῦν ἐλέχθη κατὰ τὴν πρὸς
+τἄλλα ὁμοιότητα· ἀεὶ γὰρ προνομίαν τοῦ ἄρρενος ἔχοντος ἐνδεῖ καὶ
+<lb n="15"/> ὑστερίζει τὸ θῆλυ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="52">
+<p>λέγωμεν οὖν μηδὲν τῆς ἐν τοῖς ὀνόμασι διαφορᾶς φροντίσαντες τὴν θυγατέρα τοῦ θεοῦ σοφίαν ἄρρενά τε καὶ πατέρα εἶναι,
+σπείροντα καὶ γεννῶντα ἐν ψυχαῖς μάθησιν, παιδείαν, ἐπιστήμην, φρόνησιν,
+καλὰς καὶ ἐπαινετὰς πράξεις. ἐνθένδε ὁ ἀσκητὴς Ἰακὼβ μνᾶται γάμον
+ ἑαυτῷ· πόθεν γὰρ  <milestone unit="altpage2" n="p. 554 M."/> ἄλλοθεν ἢ ἐκ τοῦ σοφίας οἴκου κοινωνὸν εὑρήσει
+<lb n="20"/> γνώμην ἀνεπίληπτον, ᾗ πάντα συνδιατρίψει τὸν αἰῶνα;</p>
+</div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="53">
+<p><milestone unit="altref" n="10"/> Λελάληκε δ’ ἀκριβέστερον περὶ φυγῆς, ἡνίκα τὸν ἐπὶ τοῖς ἀνδροφόνοις ἐτίθει νόμον, ἐν ᾧ πάντ’ ἐπεξῆλθε τὰ εἴδη, τὸ ἑκουσίου φόνου,
+τὸ ἀκουσίου, τὸ ἐπιθέσεως, τὸ βουλεύσεως. λέγε τὸν νόμον· „ἐὰν πατάξῃ τίς τινα καὶ ἀποθάνῃ, θανάτῳ θανατούσθω· ὁ δὲ οὐχ ἑκών, ἀλλ’
+<lb n="25"/> ὁ θεὸς παρέδωκεν αὐτὸν εἰς τὰς χεῖρας αὐτοῦ, δώσω σοι τόπον, οὗ
+<note xml:lang="mul" type="footnote">
+<lb/>1 βιαιοτάτην Mang.: βεβαιοτάτην codd. ἑκατέρωθεν] κάτωθεν coni. Mang. 
+<lb/>2 ἀνώθει coni. Cobn
+<lb/>3 ἐνορμιζόμενος G
+<lb/>4 Βαιθουὴλ codd.
+<lb/>7 Ῥεβέκας H 
+<lb/>8 Βαιθουὴλ H2 εἷπεν H ἥ γε H2: εἴ γε H1 (probat Cohn), ἡ Gv
+<lb/>10 ἄρρην G δ’ H
+<lb/>11 ἐπειδὴ Η2: ἐπεὶ δὲ GH1
+<lb/>12 τὸν om. Η εἰ] ἦ G ἔχον Turn.: ἔχεις G2 ἔχειν G2 ut vid., ἔχει Η
+<lb/>13 θηλυῶσαν G
+<lb/>14 τὰ ἄλλα G 
+<lb/>15 λέγωμεν scripsi: λέγω, ras.
+<lb/>1 litterae, μὲν G, λέγομεν H τῆς add. mg. H2
+<lb/>16 τὴν om. G
+<lb/>20 lacunam eis supplendam, quae sequuntur apud Ambros., statuit Mang., sed ea partim ex § 143. 144 partim ex libro de somniis I bausit Ambros.
+<lb/>21 λελάληκε δὲ Mang.: λελάληκεν codd.
+<lb/>22 ἐπιεξῆλθεν H, ἐξῆλθε G
+<lb/>23 tertium τὸ] τε καὶ conicio, cf: §
+<lb/>77 24 ὁ] εἰ Turn. 
+<lb/>25 τὰς G: om. H</note> <note xml:lang="lat" type="footnote">18—20 ibid.4,22: lacob copulam sibi adquisivit de sapientia consorte propositi opimam dote prudentiae, cum qua vitae tempora sine ulla offensione transcurreret.</note>  
+
+<pb n="v.3.p.122"/>
+φεύξεται ὁ φονεύσας. ἐὰν δέ τις ἐπιθῆται τῷ πλησίον ἀποκτεῖναι αὐτὸν
+δόλῳ καὶ καταφύγῃ, ἀπὸ τοῦ θυσιαστηρίου λήψῃ αὐτὸν θανατῶσαι“
+ (Exod. 21,12—14).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="54">
+<p>σαφῶς εἰδώς, ὅτι περιττὸν ὄνομα οὐδὲν τίθησιν,
+ὑπὸ τῆς τοῦ πραγματολογεῖν ἀμυθήτου φορᾶς ἠπόρουν κατ’ ἐμαυτόν, διὰ
+τί τὸν ἑκουσίως κτείναντα οὐκ εἶπε θανατοῦσθαι μόνον, ἀλλὰ θανάτῳ <lb n="5"/>
+ θανατοῦσθαι· τίνι γὰρ ἄλλῳ ὁ ἀποθνῄσκων ἢ θανάτῳ τελευτᾷ;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="55">
+<p>φοιτήσας
+οὖν παρὰ γυναῖκα σοφήν, ᾗ σκέψις ὄνομα, τοῦ ζητεῖν ἀπηλλάγην·
+ἐδίδαξε γάρ με, ὅτι καὶ ζῶντες ἔνιοι τεθνήκασι καὶ τεθνηκότες ζῶσι.
+τοὺς μέν γε φαύλους ἄχρι γήρως ὑστάτου παρατείνοντας νεκροὺς ἔλεγεν
+εἶναι τὸν μετ’ ἀρετῆς βίον ἀφῃρημένους, τοὺς δὲ ἀστείους, κἂν τῆς πρὸς <lb n="10"/>
+σῶμα κοινωνίας διαζευχθῶσι, ζῆν εἰσαεί, ἀθανάτου μοίρας ἐπιλαχόντας.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="56">
+<p> <milestone unit="altref" n="11"/> ἐπιστοῦτο μέντοι καὶ χρησμοῖς τὸν ἑαυτῆς λόγον, ἑνὶ μὲν τοιῷδε·
+„οἱ προσκείμενοι κυρίῳ τῷ θεῷ, ζῆτε πάντες ἐν τῇ σήμερον“ (Deut.
+4,4) — τοὺς γὰρ πρόσφυγας καὶ ἱκέτας τοῦ θεοῦ μόνους ζῶντας οἶδε,
+νεκροὺς δὲ τοὺς ἄλλους· ἐκείνοις δ’, ὡς ἔοικε, καὶ ἀφθαρσίαν μαρτυρεῖ <lb n="15"/>
+ διὰ τοῦ προσθεῖναι „ζῆτε ἐν τῇ σήμερον“.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="57">
+<p>σήμερον δ’ ἐστὶν ὁ ἀπέρατος
+καὶ ἀδιεξίτητος αἰών· μηνῶν γὰρ καὶ ἐνιαυτῶν καὶ συνόλως χρόνων
+περίοδοι δόγματα ἀνθρώπων εἰσὶν ἀριθμὸν ἐκτετιμηκότων· τὸ δ’ ἀψευδὲς
+ὄνομα αἰῶνος ἡ σήμερον. ἥλιος γὰρ οὐκ ἀλλαττόμενος ὁ αὐτός ἐστιν
+ἀεί, ποτὲ μὲν ὑπὲρ γῆς ποτὲ δὲ ὑπὸ γῆν ἰών, παρ’ ὃν ἡμέρα καὶ νύξ, <lb n="20"/>
+ τὰ αἰῶνος μέτρα, διεκρίθησαν —,</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="58">
+<p>ἑτέρῳ δ’ ἐπιστοῦτο τοιῷδε χρησμῷ·
+„ἰδοὺ δέδωκα πρὸ προσώπου σου τὴν ζωὴν καὶ τὸν θάνατον, τὸ ἀγαθὸν
+καὶ τὸ κακόν“ (Deut. 30,15.) — οὐκοῦν, ὦ πάνσοφε, τὸ μὲν ἀγαθὸν
+καὶ ἡ ἀρετή ἐστιν ἡ ζωή, τὸ δὲ κακὸν καὶ ἡ κακία ὁ θάνατος —· καὶ
+ἐν ἑτέροις· „αὕτη ἡ ζωή σου καὶ ἡ μακρότης τῶν ἡμερῶν, ἀγαπᾶν <lb n="25"/>
+κύριον τὸν θεόν σου.“ (Deut. 30,20). ὅρος ἀθανάτου βίου κάλλιστος
+ οὗτος, ἔρωτι καὶ φιλίᾳ θεοῦ ἀσάρκῳ καὶ ἀσωμάτῳ κατεσχῆσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="59">
+<p>οὕτως
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἐπιθῆτε τὸ (τὸν G2) πλησίον G
+<lb/>4 φθορᾶς G, φορᾶς G2 ut vid.
+<lb/>6 ὁ om. H
+<lb/>7 ἀπηλλάγην Turn.: ἀπηλλάγειν codd.
+<lb/>11 εἰσαεὶ ἀθανάτου H, sed εἰ ἁ iu ras. Η2: εἰς ἀποθανάτου G1, ὡς ἀθανάτου G2
+<lb/>12 ἐπιστοῦτο G2H2: εἰπιστοῦτο G1, εἶτα ἐπιστοῦτο ’ ἑνὶ μέντοι ὧδε G
+<lb/>13 ante κυρίω add. τῶ H1, del. H2
+<lb/>14 οἶδε G: εἶδεν H
+<lb/>16 σήμερον om. L ἀπέραντος coni. Mang.
+<lb/>18 δείγματα coni. Mang.
+<lb/>20 τότε G ὑπέρ GH: ὑπὸ v τότε G ὑπὸ G: ὑπὲρ H
+<lb/>21 ἐπὶ τούτω G2
+<lb/>27 ἀσάρκῳ καὶ ἀσωμάτῳ secl. Cohn κατασχῆσαι Η1 ut vid.</note> <note xml:lang="lat" type="footnote">
+<lb/>8 cf. Heracliti fragm.
+<lb/>67 Byw.
+<lb/>16 17 cf. vol. I ad p. 118,31. 23.
+<lb/>24 Origenes in Psalin.
+<lb/>88 p. 776: κακία δὲ καὶ ἀγνῶσί θάνατος ψυχῆς λογικῆς, ζωὴ δὲ ἀρετὴ καὶ ὦσις.</note>  
+
+<pb n="v.3.p.123"/>
+  <milestone unit="altpage2" n="p. 555 M."/> οἱ μὲν ἱερεῖς Ναδὰβ καὶ Ἀβιούδ, ἵνα ζήσωσιν, ἀποθνῄσκουσιν θνητῆς
+ζωῆς ἄφθαρτον ἀντικαταλλαττόμενοι βίον καὶ ἀπὸ τοῦ γενομένου πρὸς τὸ
+ἀγένητον μετανιστάμενοι· ἐφ’ ὧν τὰ σύμβολα τῆς ἀφθαρσίας ᾄδεται, ὅτι
+ἐτελεύτησαν ἐνώπιον κυρίου (Lev. 10,2), τουτέστιν ἔζησαν· νεκρὸν γὰρ
+<lb n="5"/> οὐ θέμις εἰς ὄψιν ἐλθεῖν τοῦ θεοῦ. καὶ πάλιν τοῦτό ἐστιν ὃ εἶπε κύριος·
+„ἐν τοῖς ἐγγίζουσί μοι ἁγιασθήσομαι“ (Lev. 10,3), „νεκροὶ δ’,“ ὡς καὶ
+ἐν ὕμνοις λέγεται, „οὐκ αἰνέσουσι κύριον“ (Psalm 113,25)·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="60">
+<p>ζώντων γὰρ τὸ ἔργον. Κάιν δ’ ὁ ἐναγὴς καὶ ἀδελφοκτόνος οὐδαμοῦ τῆς νομοθεσίας ἀποθνῄσκων εὑρίσκεται, ἀλλὰ καὶ λόγιόν ἐστιν ἐπ’ αὐτῷ χρησθὲν
+<lb n="10"/> τοιοῦτον· „ἔθετο κύριος ὁ θεὸς τῷ Κάιν σημεῖον, τοῦ μὴ ἀνελεῖν αὐτὸν
+πάντα τὸν εὑρίσκοντα“ (Gen. 4, 15). διὰ τί;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="61">
+<p>ὅτι, οἶμαι, ἡ ἀσέβεια κακόν ἐστιν ἀτελεύτητον, ἐξαπτόμενον καὶ μηδέποτε σβεσθῆναι δυνάμενον, ὡς
+τὸ ποιητικὸν ἁρμόττειν ἐπὶ κακίας εἰπεῖν·
+<lg>
+<l>ἡ δέ τοι οὐ θνητή, ἀλλ’ ἀθάνατον κακόν ἐστιν,</l>
+</lg>
+<lb n="15"/> ἀθάνατον δ’ ἐν τῷ παρ’ ἡμῖν βίῳ, ἐπεὶ πρός γε τὴν ἐν θεῷ ζωὴν
+ἄψυχον καὶ νεκρὸν καὶ „κοπρίων“, ὡς ἔφη τις, „ἐκβλητότερον.“ </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="62">
+<p><milestone unit="altref" n="12"/> ἀλλ’ ἔδει γε πάντως χώρας ἀπονεμηθῆναι διαφερούσας πράγμασι διαφέρουσιν,
+οὐρανὸν μὲν ἀγαθῷ, τὰ δὲ περίγεια κακῷ. τὸ μὲν οὖν ἀγαθὸν ἀνώφοιτόν
+ἐστι, κἂν εἴ ποτε ἔλθοι πρὸς ἡμᾶς — φιλόδωρος γὰρ ὁ πατὴρ αὐτοῦ —,
+<lb n="20"/> σπουδάζει παλινδρομῆσαι δικαίως· τὸ δὲ κακὸν ἐνταυθοῖ καταμένει, πορρωτάτω
+θείου χοροῦ διῳκισμένον, περιπολοῦν τὸν θνητὸν βίον καὶ μὴ
+δυνάμενον ἐκ τοῦ ἀνθρωπίνου γένους ἀποθανεῖν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="63">
+<p>τοῦτό τις καὶ τῶν ἐπὶ σοφίᾳ θαυμασθέντων ἀνὴρ δόκιμος ἐφώνησε μεγαλειότερον ἐν Θεαιτήτῳ
+φάσκων· „ἀλλ’ οὔτ’ ἀπολέσθαι τὰ κακὰ δυνατόν — ὑπεναντίον γάρ τι
+<lb n="25"/> τῷ ἀγαθῷ αἰεὶ εἶναι ἀνάγκη — οὔτε ἐν θείοις αὐτὰ ἱδρῦσθαι, τὴν δὲ
+θνητὴν φύσιν καὶ τόνδε τὸν τόπον περιπολεῖν· διὸ καὶ πειρᾶσθαι χρὴ
+<note xml:lang="mul" type="footnote">
+<lb/>1 Ναδὰμ H, Δὰβ L Ἀβίου G
+<lb/>2 ἀντικαταλλόμενοι Η τἀγένητον Η, τὰ γενητὰ G
+<lb/>3 ὧν Mang. : ὧ codd. ὅτι scripsi: ὅτε G2, τότε G1H 
+<lb/>8 ἐναγὴς G: ἀναιδὴς Β
+<lb/>9 αὐτοῦ coni. Mang.
+<lb/>10 σημεῖον τῷ Κάιν conicio; v. LXX et vol. I p. 297,
+<lb/>22 12 μηδέποτε scripsi: μηδέπω codd.
+<lb/>19 ἔλθῃ v 
+<lb/>20 post σπουδάζει add. δὲ, sed rursus del. Η
+<lb/>21 περιπολλῦν L1, περὶ πολλὺν Turn.
+<lb/>22 ἀποδραμεῖν conicio 22.
+<lb/>23 τῶν—ἐφώνησε s. s. H2 24.
+<lb/>25 γάρ τι τῷ ἀγαθῷ e Platone scripsi: γὰρ τῴ θεῶ codd.
+<lb/>25 θεοῖς Platonis textus αὐτὰ G (Plato): ταῦτα H
+<lb/>26 περιπολεῖ Platonis textus</note> <note xml:lang="mul" type="footnote">
+<lb/>14 Od. μ 118.
+<lb/>16 Heracliti fragra.
+<lb/>85 Byw. 20.
+<lb/>21 cf. Platonis Phaedr. p. 247 Α
+<lb/>24 Platouis Theaet. p. 176 AB.</note>  
+
+<pb n="v.3.p.124"/>
+ἐνθένθε ἐκεῖσε φεύγειν ὅτι τάχιστα. φυγὴ δὲ ὁμοίωσις θεῷ κατὰ τὸ
+δυνατόν· ὁμοίωσις δὲ δίκαιον καὶ ὅσιον μετὰ φρονήσεως γενέσθαι.“
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="64">
+<p>εἰκότως οὖν ὁ Κάϊν οὐκ ἀποθανεῖται, τὸ κακίας σύμβολον, ἣν ἀεὶ δεῖ
+ζῆν ἐν τῷ θνητῷ γένει παρ’ ἀνθρώποις· ὥστ’ οὐκ ἀπὸ σκοποῦ τὸ „θανάτῳ
+θανατοῦσθαι“ λέλεκται τὸν ἀνδροφόνον διὰ τὰς δεδηλωμένας αἰτίας. <lb n="5"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="65">
+<p> <milestone unit="altref" n="13"/> τὸ δὲ „οὐχ ἑκών, ἀλλ’ ὁ θεὸς παρέδωκεν“ ἐπὶ τῶν τὸν ἀκούσιον
+φόνον δρώντων πάνυ καλῶς εἴρηται. δοκεῖ γὰρ αὐτῷ τὰ μὲν ἑκούσια
+γνώμης τῆς ἡμετέρας ἔργα εἶναι, τὰ δὲ ἀκούσια θεοῦ· λέγω δὲ οὐ τὰ
+ ἁμαρτήματα, ἀλλὰ τοὐναντίον ὅσα ἁμαρτημάτων ἐστὶ κόλασις.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="66">
+<p><milestone unit="altpage1" n="p. 556 M."/>  ἀπρεπὲς
+γὰρ θεῷ τὸ κολάζειν ἅτε πρώτῳ καὶ ἀρίστῳ νομοθέτῃ, κολάζει δὲ <add>δῐ</add> <lb n="10"/>
+ὑπηρετούντων ἑτέρων, οὐ δι’ ἑαυτοῦ. τὰς μὲν γὰρ χάριτας καὶ δωρεὰς
+καὶ εὐεργεσίας αὐτὸν ἁρμόττει προτείνειν ἅτε ἀγαθὸν καὶ φιλόδωρον ὄντα
+φύσει, τὰς δὲ τιμωρίας οὐκ ἄνευ μὲν ἐπικελεύσεως τῆς ἑαυτοῦ βασιλέως
+ἅτε ὑπάρχοντος, δι’ ἄλλων δέ, οἳ πρὸς τοιαύτας χρείας εὐτρεπεῖς
+ εἰσι. μαρτυρεῖ δέ μου τῷ λόγῳ ὁ ἀσκητὴς ἐν οἷς φησιν·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="67">
+<p>„ὁ θεὸς ὁ <lb n="15"/>
+τρέφων με ἐκ νεότητος, ὁ<sic>ὁ</sic> ἄγγελος ὁ<sic>ὁ</sic> ῥυόμενός με ἐκ πάντων τῶν κακῶν“
+(Gen. 48, 15. 16). τὰ μὲν γὰρ πρεσβύτερα ἀγαθά, οἷς ἡ ψυχὴ
+τρέφεται, ἀνέθηκε θεῷ, τὰ δὲ νεώτερα, ὅσα ἐκ φυγῆς ἁμαρτημάτων
+ περιγίνεται, θεράποντι θεοῦ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="68">
+<p>διὰ τοῦτ’, οἶμαι, καὶ ἡνίκα τὰ τῆς κοσμοποιΐας
+ἐφιλοσόφει, πάντα τἄλλα εἰπὼν ὑπὸ θεοῦ γενέσθαι μόνον τὸν <lb n="20"/>
+ἄνθρωπον ὡς ἂν μετὰ συνεργῶν ἑτέρων ἐδήλωσε διαπλασθέντα. „εἶπε“
+γάρ φησιν „ὁ θεός· ποιήσωμεν ἄνθρωπον κατ’ εἰκόνα ἡμετέραν“ (Gen.
+ 1,26), πλήθους διὰ τοῦ „ποιήσωμεν“ ἐμφαινομένου.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="69">
+<p>διαλέγεται μὲν
+οὖν ὁ τῶν ὅλων πατὴρ ταῖς ἑαυτοῦ δυνάμεσιν, αἷς τὸ θνητὸν ἡμῶν τῆς
+ψυχῆς μέρος ἔδωκε διαπλάττειν μιμουμέναις τὴν αὐτοῦ τέχνην, ἡνίκα <lb n="25"/>
+τὸ λογικὸν ἐν ἡμῖν ἐμόρφου, δικαιῶν ὑπὸ μὲν ἡγεμόνος τὸ ἡγεμονεῦον
+ ἐν ψυχῇ, τὸ δ’ ὑπήκοον πρὸς ὑπηκόων δημιουργεῖσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="70">
+<p>κατεχρήσατο
+<add>δὲ</add> καὶ ταῖς μεθ’ ἑαυτοῦ δυνάμεσιν οὐ διὰ τὸ λεχθὲν μόνον, ἀλλ’ ὅτι
+ἔμελλεν ἡ ἀνθρώπου ψυχὴ μόνη κακῶν καὶ ἀγαθῶν ἐννοίας λαμβάνειν
+καὶ χρῆσθαι ταῖς ἑτέραις, εἰ μὴ δυνατὸν ἀμφοτέραις. ἀναγκαῖον οὖν <lb n="30"/>
+ἡγήσατο τὴν κακῶν γένεσιν ἑτέροις ἀπονεῖμαι δημιουργοῖς, τὴν δὲ τῶν
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="71">
+<p> ἀγαθῶν ἑαυτῷ μόνῳ. <milestone unit="altref" n="14"/> διὸ καὶ λεχθέντος πρότερον „ποιήσωμεν
+<note xml:lang="mul" type="footnote">
+<lb/>1 τὸ om. H
+<lb/>2 ὁμοίωσις — γενέσθαι om. H
+<lb/>4 τὸ] τῶ G
+<lb/>9 εὐπρεπὲς H
+<lb/>10 κολάζει Turn.: κολάζειν codd. δι’ add. Cohn
+<lb/>12 ἁρμόττειν H 
+<lb/>14 εὐπρεπεῖς v
+<lb/>15 ἐν οἷς om. G
+<lb/>16 prius ὁ] καὶ ὁ G2
+<lb/>16 τῶν om. G 
+<lb/>23 μὲν om. L
+<lb/>28 δὲ add. Tnrn. αὑτοῦ II. ἑαυτὸν coni. Mang.
+<lb/>29 ἐννοίας] ἐν e corr. H2
+<lb/>30 ἑταίραις G εἰ GH2: ἦ H1 ut vid. 
+<lb/>32 δι’ ὃ H2: δι’ οὗ GH1 ποιήσομεν H</note>  
+
+<pb n="v.3.p.125"/>
+ἄνθρωπον“ ὡς ἂν ἐπὶ πλήθους, ἐπιφέρεται τὸ ὡς ἂν ἐφ’ ἑνός· „ἐποίησεν
+ὁ θεὸς τὸν ἄνθρωπον“ (Gen. 1,27). τοῦ μὲν γὰρ πρὸς ἀλήθειαν
+ἀνθρώπου, ὃς δὴ νοῦς ἐστι καθαρώτατος, εἷς ὁ μόνος θεὸς δημιουργός,
+τοῦ δὲ λεγομένου καὶ κεκραμένου μετ’ αἰσθήσεως τὸ πλῆθος.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="72">
+<p>οὗ χάριν ὁ <lb n="5"/> μὲν κατ’ ἐξοχὴν ἄνθρωπος σὺν τῷ ἄρθρῳ μεμήνυται — λέγεται γάρ·
+„ἐποίησεν ὁ θεὸς τὸν ἄνθρωπον,“ τὸν ἀειδῆ καὶ ἄκρατον ἐκεῖνον λογισμόν
+—, ὁ δὲ ἄνευ τῆς τοῦδε προσθήκης· τὸ γὰρ· „ποιήσωμεν ἄνθρωπον“
+ἐμφαίνει τὸν ἐξ ἀλόγου καὶ λογικῆς συνυφανθέντα φύσεως.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="73">
+<p>ἑπόμενος τούτοις τό τε εὐλογεῖν τοὺς ἀγαθοὺς καὶ τὸ καταρᾶσθαι τοῖς
+<lb n="10"/> ὑπαιτίοις ἀνέθηκεν οὐχὶ τοῖς αὐτοῖς, καίτοι γε ἀμφοτέρων ἐχόντων
+ἔπαινον, ἀλλ’ ἐπειδὴ τὸ μὲν εὐλογεῖν τοὺς ἀξίους ἡγεμονίαν ἔχει τὴν
+ἐν ἐγκωμίοις, τὸ δ’ ἀρὰς τοῖς φαύλοις τίθεσθαι δευτέραν τάξιν, τῶν ἐπὶ
+ ταῦτα χειροτονηθέντων —  <milestone unit="altpage2" n="p. 557 M."/> εἰσὶ δὲ οἱ τοῦ γένους ἀρχηγέται δώδεκα
+ἀριθμῷ, φυλάρχας αὐτοὺς ὀνομάζειν ἔθος — ἓξ μὲν τοὺς ἀμείνους
+<lb n="15"/> ἔταξεν ἐπὶ τῆς εὐλογίας, Συμεών, Λευί, Ἰούδαν, Ἰσσάχαρ, Ἰωσὴφ καὶ
+Βενιαμίν, τοὺς δ’ ἑτέρους ἐπὶ τῆς κατάρας, τόν τε πρῶτον καὶ τὸν
+ὕστατον τῶν Λείας, Ῥουβὴν καὶ Ζαβουλών, καὶ τοὺς ἐκ τῶν θεραπαινίδων
+νόθους τέτταρας (Deut. 27, 12. 13).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="74">
+<p>τῆς γὰρ βασιλείου καὶ ἱερωμένης φυλῆς οἱ ἡγεμόνες ἐν τῇ προτέρᾳ τάξει χορεύουσιν, Ἰούδας τε καὶ
+<lb n="20"/> Λευί. εἰκότως οὖν καὶ τοὺς ἄξια θανάτου δρῶντας ἑτέρων χερσὶν ἐκδίδωσιν ἐπὶ τιμωρίᾳ, βουλόμενος ἡμᾶς ἀναδιδάσκειν, ὅτι ἡ κακοῦ φύσις
+μακρὰν ἀπελήλαται χοροῦ θείου, ὁπότε καὶ τὸ μιμηλάζον ἀγαθὸν κακῷ,
+ἡ τιμωρία, δι’ ἑτέρων βεβαιοῦται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="75">
+<p>τὸ δὲ „δώσω σοι τόπον, οὗ φεύξεται ὁ φονεύσας“ (Exod. 21,13) ἀκουσίως, πάνυ καλῶς εἰρῆσθαί μοι δοκεῖ·
+<lb n="25"/> τόπον γὰρ καλεῖ νῦν οὐ χώραν ἐκπεπληρωμένην ὑπὸ σώματος, ἀλλὰ
+δι’ ὑπονοιῶν αὐτὸν τὸν θεόν, ἐπειδὴ περιέχων οὐ περιέχεται καὶ ὅτι
+καταφυγὴ τῶν ὅλων ἐστί.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="76">
+<p>θέμις οὖν τῷ δόξαντι τροπῇ χρήσασθαι ἀκουσίῳ φάναι κατὰ θεὸν συμβῆναι τὴν τροπήν, ὅπερ οὐ θέμις τῷ ἑκουσίως
+ἁμαρτόντι. „δώσειν“ δέ φησιν οὐ τῷ κτείναντι, ἀλλ’ ᾧ διαλέγεται,
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἐπιφέρηται G
+<lb/>4 κεκραμμένου H <add>τοῦ</add> μετ’ conicio
+<lb/>5 ἄρθρῳ] G1
+<lb/>7 ὁ δὲ] ὧδε δὲ ἄνθρωπον coni. Mang. δέ G: δ’ ἄνθρωπον Η, δ’ ἄνθρωπος V
+<lb/>10 ὑπεναντίοις Turn. ἀνέθηκεν G: ἔθηκεν Η
+<lb/>14 ἀριθμόν v
+<lb/>15 Λευίν GH Ἰσάχαρ codd.
+<lb/>17 τῶν G: τῆς H Ῥουβὴν G: Ῥουβὶμ H
+<lb/>20 Λευίς GH
+<lb/>21 τιμωρία G: τιμωρίαν H
+<lb/>22 πλησιάζον conicio κακῷ] ὢ ex corr. H2
+<lb/>23 ἡ τιμωρίᾳ Turn. 
+<lb/>27 ἐστὶν H
+<lb/>28 ὅπερ Mang. : ὥσπερ codd.
+<lb/>29 ἁμαρτῶντι G</note> <note xml:lang="lat" type="footnote">21.
+<lb/>22 cf. ad p. 123,20.
+<lb/>25 cf. Doxographi p. 317, 12. Zeller III
+<lb/>1 p. 181.</note>  
+
+<pb n="v.3.p.126"/>
+ὥσθ’ ἕτερον μὲν εἶναι τὸν οἰκήτορα, ἕτερον δὲ τὸν φεύγοντα. τῷ μὲν
+γὰρ ἑαυτοῦ λόγῳ ὁ θεὸς πατρίδα οἰκεῖν τὴν ἐπιστήμην ἑαυτοῦ, ὡς ἂν
+αὐτόχθονι, δεδώρηται, τῷ δ’ ἐν ἀκουσίοις γενομένῳ σφάλμασι καταφυγήν,
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="77">
+<p> ὡς ὀθνείῳ ξένην, οὐχ ὡς πατρίδα ἀστῷ. <milestone unit="altref" n="15"/> ταῦτα καὶ περὶ
+τῶν ἀκουσίων φιλοσοφήσας περὶ τῆς ἐπαναστάσεως καὶ βουλεύσεως ἑξῆς <lb n="5"/>
+νομοθετεῖ φάσκων· „ἐὰν δέ τις ἐπιθῆται τῷ πλησίον ἀποκτεῖναι αὐτὸν
+δόλῳ καὶ καταφύγῃ“ (Exod. 21, 14) ἐπὶ τὸν θεόν, τὸν προειρημένον
+συμβολικῶς τόπον, παρ’ ὃν ζῆν συμβέβηκε τοῖς πᾶσι· καὶ γὰρ ἑτέρωθί
+ φησιν· „ὃς ἂν φύγῃ ἐκεῖ, καὶ ζήσεται“ (Deut. 19,5).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="78">
+<p>ἀλλ’ οὐ
+ζωὴ μέν ἐστιν αἰώνιος ἡ πρὸς τὸ ὂν καταφυγή, θάνατος δ’ ὁ ἀπὸ τούτου <lb n="10"/>
+δρασμός; εἰ δέ τις ἐπιτίθεται, πάντως ἐκ προνοίας ἀδικεῖ, καὶ τὸ
+σὺν δόλῳ πραττόμενον ἑκουσίως ἔνοχον, ὡς τὸ ἀδόλως ἔμπαλιν οὐδ’
+ ὑπαίτιον.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="79">
+<p>οὐδὲν οὖν τῶν ὑπούλως καὶ δολερῶς καὶ ἐκ προνοίας πραττομένων
+ἀδικημάτων ἄξιον λέγειν γίνεσθαι κατὰ θεόν, ἀλλὰ καθ’ ἡμᾶς
+αὐτούς. ἐν ἡμῖν γὰρ αὐτοῖς, ὡς ἔφην, οἱ τῶν κακῶν εἰσι θησαυροί, <lb n="15"/>
+ παρὰ θεῷ δὲ οἱ μόνων ἀγαθῶν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="80">
+<p>ὃς ἂν οὖν καταφύγῃ, τὸ δ’ ἐστὶν ὃς
+ἂν τῶν ἁμαρτημάτων μὴ ἑαυτὸν ἀλλὰ θεὸν αἰτιᾶται, κολαζέσθω, τῆς
+μόνοις ἱκέταις πρὸς σωτηρίαν καὶ ἀσφάλειαν καταφυγῆς, τοῦ βωμοῦ,
+στερούμενος, καὶ μήποτ’ εἰκότως· ἀμώμων γὰρ ἱερείων, λέγω δὲ ψυχῶν
+ἀσινῶν καὶ κεκαθαρμένων, τὸ <milestone unit="altpage1" n="p. 558 M."/>  θυσιαστήριον ἀνάπλεών ἐστι· δυσίατος
+δὲ ἢ παντελῶς ἀνίατος μῶμος τὸ φάσκειν καὶ κακῶν αἴτιον εἶναι τὸ <lb n="21"/>
+ θεῖον.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="81">
+<p>φίλαυτοι δὴ μᾶλλον ἢ φιλόθεοι σπουδάσαντες οἱ τοιοῦτοι τρόποι
+πάντες εἶναι βαινέτωσαν ἔξω περιρραντηρίων, ἵν’ ὡς μιαροὶ καὶ ἀκάθαρτοι
+μηδ’ ἐξ ἀπόπτου τὴν ἱερὰν φλόγα τῆς ἀνακαιομένης ἀσβέστου
+ψυχῆς καὶ θεῷ καθαγνιζομένης ὁλοκλήρῳ καὶ παντελεῖ δυνάμει θεάσωνται. <lb n="25"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="82">
+<p>παγκάλως τις τῶν πάλαι σοφῶν εἰς ταὐτὸ τοῦτο συνδραμὼν
+ἐθάρρησεν εἰπεῖν, ὅτι „θεὸς οὐδαμῇ οὐδαμῶς ἄδικος, ἀλλ’ ὡς οἷόν
+<note xml:lang="mul" type="footnote">
+<lb/>7 καὶ καταφύγῃ Mang.: καὶ καταφύγῃ ποιεῖ ποῖ; coni. Cohn) GH, καταφύγῃ ποιεῖ L, καταφυγὴν ποεῖ Turn.
+<lb/>9 ἀλλ’ οὐ] ἀλλὰ G2
+<lb/>11 δὴ scrib. et lin. 8—10 καὶ γὰρ—δρασμός parenthesis ponenda τὸ] τῶ G1
+<lb/>12 ἑκουσίως G2 (Mang.): ἐκουσίοις G1H
+<lb/>15 κακῶν Mang. : κακιῶν codd.
+<lb/>16 οἱ scripsi: ras.
+<lb/>2 litt. in G, οὐ H οὖν s. s. H2 τὸν θεὸν ν μόνης H2 πρὸς G: εἰς Η δεδομένης vid. add.
+<lb/>19 στερόμενος coni. Cohn μήτ᾿ G1
+<lb/>21 καὶ secl. llung.
+<lb/>22 τοιοῦτον τρόπον H1 v, τοιουτότροποι Mang. 
+<lb/>23 βαινέτωσαν G: μενέτωσαν H
+<lb/>25 καθαγιζομένης coni. Mang.</note> <note xml:lang="lat" type="footnote">
+<lb/>27 Platonis Theaet. p. 176 C.</note>  
+
+<pb n="v.3.p.127"/>
+τε δικαιότατος, καὶ οὐκ ἔστιν αὐτῷ ὁμοιότερον οὐδὲν ἢ ὃς ἂν ἡμῶν αὖ
+γένηται ὅτι δικαιότατος. περὶ τοῦτον καὶ ἡ ὡς ἀληθῶς δεινότης ἀνδρὸς
+καὶ οὐδενία τε καὶ ἀνανδρία. ἡ μὲν γὰρ τούτου γνῶσις σοφία καὶ ἀρετὴ
+ἀληθινή, ἡ δὲ ἄγνοια ἀμαθία τε καὶ κακία ἐναργής. αἱ δὲ ἄλλαι δεινότητες
+<lb n="5"/> δοκοῦσαι καὶ σοφίαι ἐν μὲν πολιτικαῖς δυναστείαις γιγνόμεναι φορτικαί, ἐν δὲ τέχναις βάναυσοι.“ </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="83">
+<p><milestone unit="altref" n="16"/> προστάξας οὖν ἀπάγεσθαι τὸν ἀνίερον καὶ κακήγορον τῶν θείων ἀπὸ τῶν ἱερωτάτων καὶ ἐκδίδοσθαι
+ἐπὶ τιμωρίᾳ φησὶν ἑξῆς· „ὃς τύπτει πατέρα ἢ μητέρα, τελευτάτω“ καὶ
+ὁμοίως „ὁ κακηγορῶν πατέρα καὶ μητέρα τελευτάτω“ (Exod. 21, 15. 16).
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="84">
+<p><lb n="10"/> μονονοὺ γὰρ βοᾷ καὶ κέκραγεν, ὅτι τῶν εἰς τὸ θεῖον βλασφημούντων οὐδενὶ συγγνώμης μεταδοτέον. εἰ γὰρ οἱ τοὺς θνητοὺς κακηγορήσαντες
+γονεῖς ἀπάγονται τὴν ἐπὶ θανάτῳ, τίνος ἀξίους χρὴ νομίζειν τιμωρίας
+τοὺς τὸν τῶν ὅλων πατέρα καὶ ποιητὴν βλασφημεῖν ὑπομένοντας; τίς
+δ’ ἂν γένοιτο αἰσχίων κακηγορία ἢ τὸ φάσκειν μὴ παρ’ ἡμᾶς, ἀλλὰ
+<lb n="15"/> παρὰ θεὸν γένεσιν εἶναι τῶν κακῶν;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="85">
+<p>ἐλαύνετε οὖν, ἐλαύνετε, ὦ μύσται καὶ ἱεροφάνται θείων ὀργίων, τὰς μιγάδας καὶ σύγκλυδας καὶ πεφυρμένας,
+δυσκαθάρτους καὶ δυσεκπλύτους ψυχάς, αἳ ἄκλειστα μὲν ὦτα, ἄθυρον δὲ
+γλῶτταν, ὄργανα τῆς ἑαυτῶν βαρυδαιμονίας εὐτρεπῆ, περιφέρουσιν, ἵνα
+καὶ πάντων καὶ ὧν μὴ θέμις ἀκούωσι καὶ πάντα καὶ ὅσα μὴ χρεὼν
+<lb n="20"/> ἐκλαλῶσιν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="86">
+<p>ὅσοι δὲ διαφορὰν ἑκουσίων καὶ ἀκουσίων ἐπαιδεύθησαν καὶ εὔφημον στόμα ἀντὶ κακηγόρου γλώττης ἔλαχον, κατορθοῦντες μὲν ἐπαινετοί,
+σφαλλόμενοι δὲ μὴ κατὰ γνώμην οὐ πάνυ ψεκτοί· διὸ καὶ πόλεις
+ αὐτοῖς εἰς καταφυγὴν ἀπεκρίθησαν (Num. 35). </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="87">
+<p><milestone unit="altref" n="17"/>  <milestone unit="altpage2" n="p. 559 M."/> ἄξιον δὲ τῶν περὶ τὸν τόπον αὐτὰ τὰ ἀναγκαῖα μάλιστα ἀκριβῶσαι. ἔστι δ’ ἀριθμῷ
+<note xml:lang="mul" type="footnote">
+<lb/>1 καὶ om. H ἡ ὃς ἂν in mg Η2 ἡμῶν orn. Turn. αὖ Plato: εὖ codd., οὐ Tiini.
+<lb/>2 ὅτι δικαιότατος om. H περὶ] παρὰ coni. Mang. τοῦτον] ῥώμη δὲ s. s. Η2, ῥώμη τε v
+<lb/>3 οὐδενία τε scripsi; οὐδέν ἰᾶται G(H1?), οὐδένειά τε ex corr. H2 ἀρετὴ s. s. Η2
+<lb/>4 ἄγνοια G: ἄνοια H, ἀνθρωπεία Mang. ex codice Oxon. Coll. Novi 143
+<lb/>5 δοκοῦσαι] τε δοκοῦσαι Plato 5.
+<lb/>6 φροντισταὶ Η, ante quod add. καὶ, sed rursus del.
+<lb/>8 μητέρα
+<lb/>75 πατέρα H 8.
+<lb/>9 καὶ ὁμοίως — τελευτάτω om. Η
+<lb/>9 καὶ] ἡ conicio
+<lb/>10 μόνον γὰρ οὐ G, μονονοὺκ ἄρα conicio ἐκβοᾷ coni. Mang.
+<lb/>11 κατηγορήσαντες Η 
+<lb/>12 ἀξίου Η
+<lb/>13 τὸν om. v
+<lb/>14 παρ᾿ G (Mang.): περὶ H
+<lb/>15 παρὰ G (Mang.): περὶ H
+<lb/>17 δυσεκπλύντους v ἄκλυστα H
+<lb/>19 primum καὶ fort. secl. ἀκούωσιν G 19.
+<lb/>20 καὶ πάντων (sic G, πάντα scripsi)—ἐκλαλῶσιν G: om. H 
+<lb/>21 κατηγόρου Η
+<lb/>24 ἀκριβῶσαι] ἀκριβ H2 in ras., ante β ras. in Η δὲ Η</note> <note xml:lang="lat" type="footnote">23—128,7 Ambros. de fuga satculi 2,5: sed consideremus altius. (juattuor sunt quae admonent, profuudius esse spectanda lectionis arcana istius. unum, qua ratione ex his civitatihiis, quae Levitis in portionem sorte obvenerunt, sex civitates ad refugium datae sunt homicidii crimine laborantibus, cur non etiam aliarum tribuum civitates ad hoc munus deputatae. secundum, qua ratione sex numero; non enim otiose numerus hic praescriptus videtur, neque plurium neque pauciorum civitatium. tertium, cur tres ultra lordanen civitates et tres in regione Chananaea dispositae sint, quae refugio peccantibus forent. quartum, cur deniimeratio et definitio tempoiis comprehensa, iutra quod habitet homicida in civitate refugii, quoad nioriatur sacerdos magnus et post mortem sacerdotis magni revertatur homicida in civitatem habitationis suae. de singulis ergo oportet dicerc atque eo ordinc quo proposuimus quaesita absolvere. 7—10. 12.
+<lb/>13 ibid. 2,6: competenter itaque Levitarum civitates datas ad refugium primo explicandum est. congrue autem provisum liquet, quia Levitae fugitantes sunt nnindi huius, (qui add. Schenkl) ut placeant deo, relinquant (relinquunt conicio) patriain parentes filios omnem cognationem, ut adhaereant uni deo. — 2,7: fugitans igitur est suorum sacri altaris eius minister. 10—12 cf. ibid. 2,7 p. 167, 23 Sch., ubi pro loco Deut. locos N.T. laudat Ambrosius. 12—15 ibid. 27 cui deus portio est (Deut. 18,2) nihil debet curare nisi deum, ne alterius impediatur necessitatis munere . . . haec enim vera est sacerdotis fuga, abdicatio domesticorum et quaedam alienatio carissimorum, iit suis se abneget, qui servire deo gestit. recte ergo fugaces fugacibus commendavit aeternae legis sanctio, ut qui hunc mundum obliti sunt eos recipiant qui peccata sua condemnantes atque opera oblivionem vitae superioris expetant.</note>  
+
+<pb n="v.3.p.128"/>
+τέτταρα· ἓν μέν, διὰ τί οὐκ ἐξ ὧν αἱ ἄλλαι φυλαὶ πόλεων ἔλαχον, ἀλλ’
+ἐξ ὧν ἡ Λευιτικὴ μόνη, φυγάσι πόλεις ἀπεκρίθησαν· δεύτερον δέ, διὰ τί
+ἓξ ἀριθμῷ καὶ οὔτε πλείους οὔτε ἐλάττους· τρίτον, τί δήποτε τρεῖς μὲν
+πέραν τοῦ Ἰορδάνου, αἱ δ’ ἕτεραι ἐν τῇ Χαναναίων γῇ· τέταρτον, διὰ
+τί προθεσμία τοῖς φυγάσιν ὥρισται τοῦ κατελθεῖν ὁ τοῦ ἀρχιερέως θάνατος. <lb n="5"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="88">
+<p>λεκτέον οὖν περὶ ἑκάστου τὰ ἁρμόττοντα, ἀρχὴν ἀπὸ τοῦ πρώτου
+λαβόντας. εἰς τὰς ἀπονεμηθείσας Λευίταις μόνοις πόλεις φεύγειν διείρηται
+πάνυ προσηκόντως· καὶ γὰρ οἱ Λευῖται τρόπον τινὰ φυγάδες εἰσίν, ἕνεκα
+ἀρεσκείας θεοῦ γονεῖς καὶ τέκνα καὶ ἀδελφοὺς καὶ πᾶσαν τὴν θνητὴν
+ συγγένειαν ἀπολελοιπότες.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="89">
+<p>ὁ γοῦν ἀρχηγέτης τοῦ θιάσου τούτου λέγων <lb n="10"/>
+εἰσάγεται τῷ πατρὶ καὶ τῇ μητρί· „οὐχ ἑώρακα ὑμᾶς, καὶ τοὺς ἀδελφοὺς
+οὐ γινώσκω, καὶ τοὺς υἱοὺς ἀπογινώσκω“ (Deut. 33,9) ὑπὲρ τοῦ
+δίχα μεθολκῆς θεραπεύειν τὸ ὄν. ἡ δ’ ἀψευδὴς φυγὴ στέρησις τῶν
+οἰκειοτάτων καὶ φιλτάτων ἐστίν. φυγάδας οὖν φυγάσι παρακατατίθεται
+ πρὸς τὴν ὧν εἰργάσαντο ἀμνηστίαν, δι’ ὁμοιότητα ἔργων.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="90">
+<p>ἆρ’ οὖν διὰ <lb n="15"/>
+<note xml:lang="mul" type="footnote">
+<lb/>4 αἱ δ’ ἕτεραι Turn.: τἀς δ’ ἑτέρας codd., quod seniari potest verbo addito 
+<lb/>7 λαβόντι coni. Mang-. διείρηται H-: διαιρεῖται G (H1?)
+<lb/>8 οἱ om. H 
+<lb/>14 εἰκαιοτάτων G ἐστὶ G ἐστὶ καὶ φυγάδας φυγάσι v
+<lb/>15 ἀμνηστείαν codd.</note>  
+
+<pb n="v.3.p.129"/>
+τοῦτο μόνον ἢ καὶ δι’ ἐκεῖνο, <add>ὅτι</add> ἡ τῶν νεωκόρων Λευιτικὴ φυλὴ τοὺς
+θεοπλαστήσαντας τὸν χρυσοῦν μόσχον, τὸν Αἰγυπτιακὸν τῦφον, ἡβηδὸν
+ἐξ ἐπιδρομῆς κατέκτειναν, ὀργῇ δικαίᾳ σὺν ἐνθουσιασμῷ καί τινι κατοκωχῇ
+θεοφορήτῳ χρησάμενοι; „καὶ κτείνει ἕκαστος ἀδελφὸν καὶ πλησίον
+<lb n="5"/> καὶ τὸν ἔγγιστα“ (Exod. 32,27), ἀδελφὸν μὲν ψυχῆς τὸ σῶμα, τὸ
+δὲ λογικοῦ πλησίον τὸ ἄλογον, τὸν δὲ ἔγγιστα νοῦ τὸν προφορικὸν λόγον.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="91">
+<p>οὕτως γὰρ ἂν μόνως θεραπευτικὸν γένοιτο τοῦ τῶν ὄντων ἀρίστου τὸ ἐν ἡμῖν αὐτοῖς ἄριστον, πρῶτον μὲν εἰ ἀναλυθείη ὁ ἄνθρωπος εἰς ψυχήν,
+διαζευχθέντος καὶ διακοπέντος αὐτῷ τοῦ ἀδελφοῦ σώματος καὶ τῶν
+<lb n="10"/> ἀνηνύτων ἐπιθυμιῶν· εἶτα τῆς ψυχῆς ἀποβαλούσης, ὡς ἔφην, τὸ πλησίον
+τοῦ λογικοῦ, τὸ ἄλογον — καὶ γὰρ αὐτὸ χειμάρρου τρόπον πενταχῇ
+σχιζόμενον διὰ πασῶν τῶν αἰσθήσεων οἷα δεξαμενῶν τὴν τῶν
+παθῶν ἀνεγείρει φοράν —·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="92">
+<p>εἶθ’ ἑξῆς τοῦ λογισμοῦ διοικίσαντος καὶ διαζεύξαντος τὸν ἐγγυτάτω δοκοῦντα εἶναι, τὸν προφορικὸν λόγον, ἵν’ ὁ
+<lb n="15"/> κατὰ διάνοιαν ἀπολειφθῇ μόνος, ἔρημος σώματος, ἔρημος αἰσθήσεως,
+ἔρημος γεγωνοῦ λόγου προφορᾶς· ἀπολειφθεὶς γάρ, τῇ κατὰ τὴν μόνωσιν διαίτῃ χρώμενος, τὸ μόνον <add>ὂν</add> καθαρῶς καὶ ἀμεθέλκτως ἀσπάσεται.
+  <milestone unit="altpage2" n="p. 560 M."/> πρός γε μὴν τοῖς εἰρημένοις κἀκεῖνο ὑπομνηστέον,</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="93">
+<p>ὅτι ἡ Λευιτικὴ φυλὴ νεωκόρων καὶ ἱερέων ἐστίν, οἷς ἡ τῶν ἁγίων ἀνάκειται λειτουργία·
+<lb n="20"/> λειτουργοῦσι δὲ καὶ οἱ τὸν ἀκούσιον φόνον δρῶντες, εἴ γε
+κατὰ Μωυσῆν "ὁ θεὸς παραδίδωσιν εἰς τὰς χεῖρας αὐτῶν“ (Exod.
+21, 13) τοὺς θανάτου ἄξια εἰργασμένους πρὸς ἀναίρεσιν. ἀλλ’ οἱ μὲν
+ἐτάχθησαν ἐπὶ τῷ τοὺς ἀγαθοὺς σεμνύνειν, οἱ δ’ ἐπὶ τῷ τοὺς ὑπαιτίους
+<note xml:lang="mul" type="footnote">
+<lb/>1 ὅτι addidi
+<lb/>2 ante μόσχον las. in Η
+<lb/>3 κατέκτεινον Η, κατέκτεινεν conicio et lin.
+<lb/>11 χρησαμένη 3.
+<lb/>4 κατοκωχὴ. G: κατακωχῆ H
+<lb/>4 θεοφορήτῳ — κτείνει om. G
+<lb/>5 τὸ G: τοῦ H
+<lb/>7 ἄν G: om. Η
+<lb/>8 ἀκολουθείη G ὁ G: om. H
+<lb/>9 διακοπέντος] διοικισθέντος coni. Mang. αὐτοῦ conicio
+<lb/>10 ἀποβαλούσης Turn.: ἀποβαλλούσης GH
+<lb/>11 χειμάρρουν G
+<lb/>13 διοικίσαντος Turn.: διοικήσαντος GH
+<lb/>15 ἀπολειφθῇ Turn.: ἀποληφθῇ GH
+<lb/>10 γεγωνοῦ λόγου scripsi: γεγωνοῦ G1 (?). γεγονὼς G2, γε τε Mang.) λόγου II
+<lb/>17 ὂν add. Mang.
+<lb/>21 Μωσῆν codd.
+<lb/>23 τῶ τὸ H τῶ G: τὸ H</note> <note xml:lang="lat" type="footnote">1—18 ilnd. 2,7.
+<lb/>8 p. 108,7. 8. 19. 20: et ideo exul est mundi: fugitans corporis, fugitans passionum abdicat se omnibus, ut solus remaneat . . . percussus igitur Levitiijo gladio moriatur sensus carnis in nobis, ut vivat anima nostra. 18—22 iliid. 2,8 p. 168,12—15: est etiam ilia causa, quia Levitae ministri sunt dei. et ideo ipsorum civitates fugientibus homicidis per legem deputantur, quia ipsis ius est divina mandata exsequi circa eos qui crimeu mortale admiserint.</note>  
+
+<pb n="v.3.p.130"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="94">
+<p> κολάζειν. <milestone unit="altref" n="18"/> αὗται μέν εἰσιν αἱ αἰτίαι, ὧν ἕνεκα οἱ τὸν ἀκούσιον
+φόνον δράσαντες εἰς μόνας τὰς τῶν νεωκόρων φεύγουσι πόλεις. τίνες
+δέ εἰσι καὶ διὰ τί ἀριθμῷ ἕξ, ἑπομένως λεκτέον. μήποτ’ οὖν ἡ μὲν
+πρεσβυτάτη καὶ ἐχυρωτάτη καὶ ἀρίστη μητρόπολις, οὐκ αὐτὸ μόνον
+πόλις, ὁ θεῖός ἐστι λόγος, ἐφ’ ὃν πρῶτον καταφεύγειν ὠφελιμώτατον. <lb n="5"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="95">
+<p>αἱ δ’ ἄλλαι πέντε, ὡς ἂν ἀποικίαι, δυνάμεις εἰσὶ τοῦ λέγοντος, ὧν
+ἄρχει ἡ ποιητική, καθ’ ἣν ὁ ποιῶν λόγῳ τὸν κόσμον ἐδημιούργησε·
+δευτέρα δ’ ἡ βασιλική, καθ’ ἣν ὁ πεποιηκὼς ἄρχει τοῦ γενομένου· τρίτη
+δ’ ἡ ἵλεως, δι’ ἧς ὁ τεχνίτης οἰκτείρει καὶ ἐλεεῖ τὸ ἴδιον ἔργον· τετάρτη
+δ’ ἡ * * * νομοθετικῆς μοῖρα, δι’ ἧς ἃ μὴ χρὴ γίνεσθαι ἀπαγορεύει. <lb n="10"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="96">
+<p>πάγκαλοι δὲ καὶ εὐερκέσταται πόλεις, ἀξίων σῴζεσθαι ψυχῶν τὸν αἰῶνα
+ἄρισταί γε καταφυγαί· χρηστὴ δὲ καὶ φιλάνθρωπος ἡ διάταξις, ἀλεῖψαι καὶ
+ῥῶσαι πρὸς εὐελπιστίαν <add>ἱκανή. ἧς</add>  τίς ἂν ἐδυνήθη μᾶλλον τοσαύτην τῶν
+δυναμένων εὐεργετεῖν ἀναδεῖξαι ἀφθονίαν διὰ τὰς διαφορὰς τῶν ἐν τροπαῖς
+ ἀκουσίοις γενομένων, οἷς οὔτε ἰσχὺς οὔτε [ἡ] ἀσθένεια ἡ αὐτή;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="97">
+<p>προτρέπει <lb n="15"/>
+δὴ τὸν μὲν ὠκυδρομεῖν ἱκανὸν συντείνειν ἀπνευστὶ πρὸς τὸν ἀνωτάτω
+<note xml:lang="mul" type="footnote">
+<lb/>4 ὀχυρωτάτη H
+<lb/>5 πόλις s. s. H2 ἐστὶν H
+<lb/>6 ὄντος coni. Mang., λεχθέντος vir doctus apud Mang., ἡγεμόνος conicio
+<lb/>7 ἡ G2: om. G1H, μὲν ἡ conicio δ’ ἠ H: δὴ G1, δὲ ἡ G2 δ’ ἡ H: δὴ G νομοθετικὴ H lacunam ex Ambrosio supplendaui (e. gr. νομοθετική, δι’ ἧς προστάττει
+<lb/>3 δεῖ, πέμπτη δ’ ἡ. cf. § 98. 100. 104) hic statuo, Mang. post ἀπαγορεύει 1.3 ῥῶσαι] συγκροτῆσαι coni. Mang. ἱκανή add. Mang., ἧς Diels
+<lb/>14 ἀναδεῖξαι G2H2: ἀνέδειξε G1H1 διαφθοράς G
+<lb/>15 <add>ἡ</add> ἰσχὺς coni. Cohn ἡ seclusi 16 δὲ οὖν ex codice Oxon. Coll. Novi 143 Mang.</note> <note xml:lang="lat" type="footnote">
+<lb/>2 —
+<lb/>15 ibid. 2,9: sex autem civitatum refugia sunt ita, ut prima civitas sit cognitio verbi et ad imaginem eius forma vivendi . . . haec igitur civitas velut metropolis, cui adiacent aliae quinque civitates Levitanim. secunda est civitas consideratio divinae operationis, qua creatus est mundus. tertia civitas est contemplatio potestatis regiae et maiestatis aeternae. quarta civitas propitiationis divinae contuitus. quinta civitas legis divinae contemplatio, quae praecipit quid faciendum sit. sexta quoque civitas portio legis, quae praescribit quid non faciendum sit. quanta abundantia divinae misericordiae, quantae divitiae pietatis eius, ut singulorum studia fragilitatesque humanae condicionis considerans, quibus et inviti ac reluctantes ad culpam ducimur et non voluntaria delicta victi inlecebris frequenter committimus, diversa nobis refugia proponeret. cf. etiam 2,12 p. 172,4.5 cum lin. M. 15.—131,6 ibid. 2, 10: primum igitur remedium, ut . . . sine ulla conperendinatione . . . ad ipsam rerum arcem omnium properet, ubi verbum est dei ... ubi est fons sapientiae, unde pro morte vitae aeternae hauriat potum inmortalem. secuudum est remedium, ut qui non potest cognitionem boni illius praelibare et tardior vel ingenio est vel fidei conprehensione . . . saltem opera domini consideret atque ex his quae facfa sunt tanti contempletur operis auctorem, quoniam ex his bonis, quae sunt in constitutione istius creaturae . . . ., bonum illud summum atque aeternura conprehenditur .... nonne his quamvis tardum ingenium diligere auclorem suum provocatur? . . . ergo operatoria virtus dei, etsi non videtur, tamen ex suis operibus aestimatur . . . . . —9 ibid.: tertius ordo est regalis potestatis contemplatio, ut subiciamur regi, si non deferimus tamquam parenti. metu enim praesideritis plerumque fit oboediens potestati qui est salutis iugratus, ut necessitatem sobrietatis agnoscat qui noluit ac nequivit gratiam pietatis aguoscere. corrigit enira necessitas quem pietas provocare debuerat. cf. etiam 2,11. 9—17 ibid.2,12: qui descenderint ergo ex illis superioribus virtutibus ad haec inferiora . . ., habent propiora hominis refugia quae petant ut . . . sperent dominum sibi reconciliari posse, si veniam petant, sperent posse corrigi, si praecepta sequantur caelestium testamentorum, quibus aut informamur ad innocentiam aut revocaraur a culpa. haec igitur intra lordanen civitates sequentes sunt, ut propitiemus nobis deum, sequamur quae iubet, vitemus quae prohibet. sit ergo propitiandae divinitatis ambitio, sequendae praeceptionis oboeditio, interdictae praevaricationis cautio, quibus propitiatoriam dei misericordiam et nomotheticen eius providentiam vel institutorum obsequio vel interdictorum declinatione veneremur.</note>  
+
+<pb n="v.3.p.131"/>
+λόγον θεῖον, ὃς σοφίας ἐστὶ πηγή, ἵνα ἀρυσάμενος τοῦ νάματος ἀντὶ
+θανάτου ζωὴν ἀίδιον ἆθλον εὕρηται· τὸν δὲ μὴ οὕτως ταχὺν ἐπὶ τὴν
+ποιητικὴν καταφεύγειν δύναμιν, ἣν Μωυσῆς ὀνομάζει θεόν, ἐπειδὴ δι’
+αὐτῆς ἐτέθη καὶ διεκοσμήθη τὰ σύμπαντα — τῷ γὰρ ὅτι γέγονε τὸ
+<lb n="5"/> πᾶν καταλαβόντι μεγάλου κτῆσις ἀγαθοῦ περιγίνεται, ἡ τοῦ πεποιηκότος
+ἐπιστήμη, ἡ δ’ εὐθὺς ἀναπείθει τὸ γενόμενον ἐρᾶν τοῦ φυτεύσαντος —·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="98">
+<p>τὸν δὲ μὴ οὕτως ἕτοιμον ἐπὶ τὴν βασιλικήν — φόβῳ γὰρ ἄρχοντος τὸ ὑπήκοον, εἰ καὶ μὴ εὐνοίᾳ πατρὸς τὸ ἔκγονον, ἀνάγκῃ σωφρονιζούσῃ
+νουθετεῖται —· τῷ δὲ μὴ φθάνοντι πρὸς τοὺς λεχθέντας ὅρους ὡς
+<lb n="10"/> μακρὰν διεστῶτας ἀφικνεῖσθαι καμπτῆρες εἴσω πεπήγασιν ἕτεροι δυνάμεων
+ἀναγκαίων, τῆς ἵλεω, τῆς προσταττούσης ἃ δεῖ, τῆς ἀπαγορευούσης
+ ἃ μὴ δεῖ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="99">
+<p>ὅ τε γὰρ προλαβών,  <milestone unit="altpage2" n="p. 561 M."/> ὡς οὐκ ἀπαραίτητον ἀλλ’ εὐμενὲς δι’ ἡμερότητα φύσεώς ἐστι τὸ θεῖον, κἂν ἁμάρτῃ πρότερον, αὖθις μετενόησεν
+ἀμνηστίας ἐλπίδι, ὅ τε ἔννοιαν λαβών, ὅτι νομοθέτης ὁ θεός ἐστιν,
+<lb n="15"/> πειθαρχῶν οἷς ἂν προστάττῃ πᾶσιν εὐδαιμονήσει· ὁ δ’ ὕστατος ὑστάτην
+εὑρήσεται καταφυγήν, ἀποτροπὴν κακῶν, εἰ καὶ μὴ μετουσίαν προηγουμένων ἀγαθῶν. </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="100">
+<p><milestone unit="altref" n="19"/> αἵδ’ εἰσὶν <add>αἱ</add> ἓξ πόλεις, ἃς καλεῖ φυγαδευτήρια
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἀρρυσάμενος H2
+<lb/>3 Μωσῆς codd.
+<lb/>4 ἐκοσμήθη H ὄντι G1 ut vid. γέγονεν
+<lb/>11 5 μεγάλου Mang.: μεγάλη codd.
+<lb/>7 οὕτως G (Turn.): οὔτε Η
+<lb/>8 ἀνάγκης σωφρονιζούσης conicio
+<lb/>9 φθάνοντι G (Turn.): φθονοῦντι H
+<lb/>12 τε] e corr. H2
+<lb/>14 ἀμνηστείας GH1
+<lb/>15 προστάττει Η εὐδαιμονήση G
+<lb/>17 αἱ addidi φυγαδευτηρίων Η1</note>  
+
+<pb n="v.3.p.132"/>
+(Num. 35, 12), ὧν αἱ μὲν πέντε ἀπεικονίσθησαν καὶ ἔστιν αὐτῶν ἐν
+τοῖς ἁγίοις τὰ μιμήματα, προστάξεως μὲν καὶ ἀπαγορεύσεως οἱ ἐν τῇ
+κιβωτῷ νόμοι, τῆς δ’ ἵλεω δυνάμεως τὸ ἐπίθημα τῆς κιβωτοῦ —
+καλεῖ δὲ αὐτὸ ἱλαστήριον —, ποιητικῆς δὲ καὶ βασιλικῆς τὰ ὑπόπτερα
+ καὶ ἐφιδρυμένα Χερουβίμ·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="101">
+<p>ὁ δ’ ὑπεράνω τούτων λόγος θεῖος εἰς ὁρατὴν <lb n="5"/>
+οὐκ ἦλθεν ἰδέαν, ἅτε μηδενὶ τῶν κατ’ αἴσθησιν ἐμφερὴς ὤν, ἀλλ’
+αὐτὸς εἰκὼν ὑπάρχων θεοῦ, τῶν νοητῶν ἅπαξ ἁπάντων ὁ πρεσβύτατος,
+ὁ ἐγγυτάτω, μηδενὸς ὄντος μεθορίου διαστήματος, τοῦ μόνου, ὅ ἔστιν
+ἀψευδῶς, ἐφιδρυμένος. λέγεται γάρ· „λαλήσω σοι ἄνωθεν τοῦ ἱλαστηρίου,
+ἀνὰ μέσον τῶν δυεῖν Χερουβίμ“ (Exod. 25, 21), ὥσθ’ ἡνίοχον <lb n="10"/>
+μὲν εἶναι τῶν δυνάμεων τὸν λόγον, ἔποχον δὲ τὸν λαλοῦντα, ἐπικελευόμενον
+ τῷ ἡνιόχῳ τὰ πρὸς ὀρθὴν τοῦ παντὸς ἡνιόχησιν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="102">
+<p>ὁ μὲν οὖν
+ἄνευ τροπῆς, ἑκουσίου μὲν ἄπαγε, ἀλλὰ καὶ τῆς ἀκουσίου γεγονώς,
+αὐτὸν τὸν θεὸν κλῆρον ἔχων (Deut. 10,9), ἐν αὐτῷ μόνῳ κατοικήσει·
+οἱ δ’ οὐκ ἐκ προνοίας ἀλλ’ ἀβουλήτοις χρησάμενοι σφάλμασι καταφυγὰς <lb n="15"/>
+ἕξουσι τὰς εἰρημένας ἀφθόνους καὶ πλουσίας οὕτως.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="103">
+<p>τῶν δὲ πρὸς
+καταφυγὴν πόλεων τρεῖς μέν εἰσι πέραν, αἳ μακρὰν ἡμῶν τοῦ γένους
+ἀφεστᾶσι. τίνες αὗται; ὁ τοῦ ἡγεμόνος λόγος καὶ ἡ ποιητικὴ καὶ βασιλικὴ
+δύναμις αὐτοῦ· τούτων γὰρ ὅ τε οὐρανὸς καὶ σύμπας ὁ κόσμος
+ ἐπικοινωνεῖ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="104">
+<p>αἱ δὲ προσεχεῖς ἡμῖν καὶ ἐφαπτόμεναι τοῦ τῶν ἀνθρώπων <lb n="20"/>
+ἐπικήρου γένους, ᾧ μόνῳ συμβέβηκε διαμαρτάνειν, αἱ ἐντός εἰσι τρεῖς,
+ἡ ἵλεως, ἡ προστακτικὴ τῶν ποιητέων, ἡ ἀπαγορευτικὴ τῶν μὴ ποιητέων·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="105">
+<p>αὗται γὰρ ἤδη ἡμῶν ἐφάπτονται. τίς γὰρ ἀπαγορεύσεως χρεία
+τοῖς μὴ μέλλουσιν ἀδικήσειν, τίς δὲ προστάξεως τοῖς μὴ πεφυκόσι σφάλλεσθαι,
+τίς δὲ τῆς ἵλεω τοῖς μηδ’ ὅλως ἁμαρτησομένοις; ἀλλὰ τό γε <lb n="25"/>
+ἡμέτερον γένος χρεῖον γέγονε τούτων διὰ τὸ πεφυκέναι καὶ ἐπικλινῶς
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="106">
+<p> ἔχειν πρός τε τὰ ἑκούσια καὶ ἀκούσια ἁμαρτήματα. <milestone unit="altref" n="20"/> τέταρτον
+καὶ λοιπὸν ἦν τῶν προταθέντων ἡ προθεσμία τῆς τῶν πεφευγότων
+<note xml:lang="mul" type="footnote">
+<lb/>3 ἐπίθημα G(H1?): ἐπίθεμα H2
+<lb/>5 ὑφιδρυμένα L
+<lb/>7 εἰκὼν om. G 
+<lb/>8 τοῦ μόνου Turn.: τῶ μόνον G, τὸ μόνον H
+<lb/>9 ἐφιδρυμένος scripsi: ἀφιδρυμένος codd.
+<lb/>10 δυοῖν Η χερουβεὶμ G
+<lb/>15 ἀλλὰ βουλῆ τοῖς G χρησάμενοι H2: : χρησαμένοις ’ 1(5 post εἰρημένας vid. add. πόλεις οὕτως] οὔσας conicio οὕτω δέ τῶν v
+<lb/>18 ἀφεστᾶσιν
+<lb/>11 jtrius καὶ ’’: om. GH1
+<lb/>20 ἐπικοινωνεῖ scripsi: ἐπικοινωναὶ H, ἐπικοινωνίαι G, ἐστί. κοινωναὶ V αἱ δέ προσεχεῖς Cohn (cf. modo adnotata): δέ προσεχεῖς codd., δέ καὶ προσεχεῖς v
+<lb/>23 δὴ coni. Mang.
+<lb/>25 τῆς] τοῖς G
+<lb/>28 προτεθέντων L</note> <note xml:lang="lat" type="footnote">27—133,13 ibid. 2, 13: quartum superests quod de morte summi sacerdotis ait: quia usque ad illud tempus erit in civitate refugii liomicida ille, donec moriatur sacerdos magnus, in quo secundum litteram haeret interpretatio. primum ipsa fuga sorte magis quam aequitate alicuius examinis definita, dein in causis paribus inpar eventus; poterat enim fieri, ut post homicidae illius refugium sequenti die obiret magnus sacerdos. quae autem sub incerto sententia? ergo quia haeret littera, quaeramus spiritalia. quis est iste magnus sacerdos nisi dei filius, verbum dei . . . qui exors omnium est voluntariorum et accidentium delictorum . . .? 26—134,2 ibid.: vincuio enim verbi constricta omnia sunt et eius continentur . . . et ideo omnia manent, (juia dissolvi illa nou sinit quae ipse constrinxit . . . omnia enim quoad vuit suo imperio cohercet ct regit et naturali concordia ligat. cf. ad p. 7,8.</note>  
+
+<pb n="v.3.p.133"/>
+καθόδου, τοῦ ἀρχιερέως ὁ θάνατος, πολλὴν ἐν τῷ ῥητῷ μοι παρέχουσα
+δυσκολίαν. ἄνισος γὰρ ἡ τιμωρία κατὰ τῶν τὰ αὐτὰ δρασάντων νομοθετεῖται,
+ εἴ γε οἱ μὲν  <milestone unit="altpage2" n="p. 562 M."/> πλείω χρόνον ἀποδράσονται, οἱ δὲ ἐλάττω·
+μακροβιώτατοι γὰρ <add>οἱ μέν</add>, οἱ δὲ ὀλιγοχρονιώτατοι τῶν ἀρχιερέων
+<lb n="5"/> εἰσί· καὶ οἱ μὲν νέοι, οἱ δὲ πρεσβῦται καθίστανται·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="107">
+<p>καὶ τῶν ἑαλωκότων ἐπ’ ἀκουσίῳ φόνῳ οἱ μὲν ἐν ἀρχῇ τῆς ἱερωσύνης ἐφυγαδεύθησαν, οἱ
+δ’ ἤδη μέλλοντος τελευτᾶν τοῦ ἱερωμένου, ὡς τοὺς μὲν αἰῶνα μακρόν
+τινα τῆς πατρίδος ἐστερῆσθαι, τοὺς δ’ αὐτὸ μόνον ἡμέραν, εἰ τύχοι,
+μεθ’ ἣν τὸν αὐχένα ἐπαίροντες καὶ φρυαττόμενοι καὶ γελῶντες τοὺς
+<lb n="10"/> ἄγχιστα γένους τῶν ἀνῃρημένων ἀφίξονται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="108">
+<p>τὸ ἄπορον οὖν καὶ δυσαπολόγητον ἀποδρασόμεθα τῆς δι’ ὑπονοιῶν φυσικῆς ἀποδόσεως ἐφιέμενοι.
+λέγομεν γὰρ τὸν ἀρχιερέα οὐκ ἄνθρωπον ἀλλὰ λόγον θεῖον εἶναι
+πάντων οὐχ ἑκουσίων μόνον ἀλλὰ καὶ ἀκουσίων ἀδικημάτων ἀμέτοχον.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="109">
+<p>οὔτε γὰρ ἐπὶ πατρί, τῷ νῷ, οὔτε ἐπὶ μητρί, τῇ αἰσθήσει, φησὶν αὐτὸν <lb n="15"/> Μωυσῆς (Lev. 21,11) δύνασθαι μιαίνεσθαι, διότι, οἶμαι, γονέων ἀφθάρτων
+καὶ καθαρωτάτων ἔλαχεν, πατρὸς μὲν θεοῦ, ὃς καὶ τῶν συμπάντων
+ἐστὶ πατήρ, μητρὸς δὲ σοφίας, δι’ ἧς τὰ ὅλα ἦλθεν εἰς γένεσιν·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="110">
+<p>καὶ διότι τὴν κεφαλὴν κέχρισται ἐλαίῳ, λέγω δὲ τὸ ἡγεμονικὸν φωτὶ αὐγοειδεῖ περιλάμπεται, ὡς ἀξιόχρεως "ἐνδύσασθαι τὰ ἱμάτια“ νομισθῆναι
+<lb n="20"/>  — ἐνδύεται δ’ ὁ μὲν πρεσβύτατος τοῦ ὄντος λόγος ὡς ἐσθῆτα τὸν
+κόσμον (γῆν γὰρ καὶ ὕδωρ καὶ ἀέρα καὶ πῦρ καὶ τὰ ἐκ τούτων ἐπαμπίσχεται),
+ἡ δ’ ἐπὶ μέρους ψυχὴ τὸ σῶμα, ἡ δὲ τοῦ σοφοῦ διάνοια
+τὰς ἀρετάς —·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="111">
+<p>καὶ ὅτι τὴν κεφαλὴν „οὐδέποτε ἀπομιτρώσει“, τὸ βασίλειον οὐκ ἀποθήσεται διάδημα, τὸ σύμβολον τῆς οὐκ αὐτοκράτορος
+<lb n="25"/> μέν, ὑπάρχου δὲ καὶ θαυμαστῆς ἡγεμονίας, "οὐδ’ αὖ τὰ ἱμάτια διαρρήξει“
+(Lev. 21, 10)·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="112">
+<p>ὅ τε γὰρ τοῦ ὄντος λόγος δεσμὸς ὢν τῶν
+<note xml:lang="mul" type="footnote">
+<lb/>1 παρέχουσαν H1
+<lb/>4 οἱ μέν addidi, οἱ μὲν γὰρ μακροβιώτατοι coni. Alang. 
+<lb/>4 οἱ δὲ ὀλιγοχρονιώτατοι s. s. H2
+<lb/>10 ἔγγιστα v ἀνηρημένων G2: ἀνημέρων ’H II.
+<lb/>12 ἐφαπτόμενοι coni. Mang.
+<lb/>13 μόνων H
+<lb/>15 Μωσῆς codd.
+<lb/>16 ἔλαχε G
+<lb/>18 κέχριται G
+<lb/>23 ἀπομητρώσει G</note>  
+
+<pb n="v.3.p.134"/>
+ἁπάντων, ὡς εἴρηται, καὶ συνέχει τὰ μέρη πάντα καὶ σφίγγει κωλύων αὐτὰ
+διαλύεσθαι καὶ διαρτᾶσθαι· ἥ τ’ ἐπὶ μέρους ψυχή, καθόσον δυνάμεως
+μεμοίραται, τῶν τοῦ σώματος οὐδὲν ἀποσχίζεσθαι καὶ ἀποτέμνεσθαι
+μερῶν παρὰ φύσιν ἐᾷ, τὸ δ’ ἐπ’ αὐτῇ πάντα ὁλόκληρα ὄντα ἁρμονίαν
+καὶ ἕνωσιν ἀδιάλυτον ἄγει τὴν πρὸς ἄλληλα· ὅ τε κεκαθαρμένος τοῦ <lb n="5"/>
+σοφοῦ νοῦς ἀρρήκτους καὶ ἀπήμονας διαφυλάττει τὰς ἀρετάς, τὴν φυσικὴν αὐτῶν συγγένειάν τε καὶ κοινωνίαν ἁρμοσάμενος εὐνοίᾳ παγιωτέρᾳ.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="113">
+<p> <milestone unit="altref" n="21"/> οὗτος „ἐπὶ πᾶσαν ψυχὴν τετελευτηκυῖαν“, ᾗ φησι Μωυσῆς,
+„οὐκ εἰσελεύσεται“ (Lev. 21, 11)· θάνατος δὲ ψυχῆς ὁ μετὰ κακίας
+| ἐστὶ βίος, ὥστε οὐδέ τινος ἄγους, ὧν προσβάλλειν ἀφροσύνη φιλεῖ, ποτὲ <note xml:lang="lat" type="marginal">p. 563 M.</note>
+ προσάψεται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="114">
+<p>τούτῳ καὶ παρθένος ἐκ τοῦ ἱεροῦ γένους ἁρμόζεται, καθαρὰ <lb n="11"/>
+καὶ ἀμίαντος καὶ ἀδιάφθορος εἰς ἀεὶ γνώμη· χήρας γὰρ καὶ ἐκβεβλημένης
+καὶ βεβήλου καὶ πόρνης ἀνὴρ οὐδέποτε γίνεται (ibid. 13.14),
+πόλεμον ἄσπονδον καὶ ἀκήρυκτον πρὸς αὐτὰς ἀεὶ συγκροτῶν. ἐχθρὸν
+γὰρ αὐτῷ τὸ χηρεύειν ἀρετῆς καὶ ἐκβεβλῆσθαι καὶ πεφυγαδεῦσθαι πρὸς <lb n="15"/>
+αὐτῆς καὶ πᾶν ὅ τι ἂν ᾖ βέβηλον πεῖσμα καὶ ἀνίερον· τὸ δὲ πολυμιγὲς
+καὶ πολύανδρον καὶ πολύθεον, ἄθεον μὲν οὖν κακόν, πόρνην, οὐδὲ
+προσιδεῖν ἀξιοῖ, τὴν ἕνα ἄνδρα καὶ πατέρα τὸν ἡγεμόνα θεὸν ἐπιγεγραμμένην
+ ἠγαπηκώς.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="115">
+<p>ὑπερβολή τις περὶ τὸν τρόπον τοῦτον τελειότητος
+ἐνορᾶται. τὸν μέν γε τὴν μεγάλην εὐξάμενον εὐχὴν οἶδέ που καὶ ἀκουσίως <lb n="20"/>
+σφαλλόμενον, εἰ καὶ μὴ ἑκουσίῳ γνώμῃ· λέγει γάρ· „ἐὰν δέ τις
+ἀποθάνῃ ἐπ’ αὐτῷ ἐξάπινα, παραχρῆμα μιανθήσεται“ (Num. 6, 9)·
+τὰ γὰρ ἀβούλητα ἔξωθεν αἰφνίδιον κατασκήπτοντα παραχρῆμα τὴν ψυχὴν
+οὐ πρὸς αἰῶνα μήκιστον μιαίνει, ἅτε ὄντα ἀκούσια. τούτων δ’ ὁ <lb n="25"/>
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἀπάντων ἄρρηκτος καὶ coni. Mang. ὡς om. GH1 εἴργεται G2 κωλύων G: κωλύει Η, καὶ κωλύει H2
+<lb/>2 ἥ τ’ G2: ἥ τε H2, εἴτε G1 (H1) καθ’ ὅσον codd.
+<lb/>7 παγειοτέρα G, παγιωτάτῃ coni. Mang.
+<lb/>8 οὗτος H2: οὕτως G(H1) τετελευτηκυῖαν H2: τετελευτηκῶσαν G(H1) Μωσῆς codd.
+<lb/>10 προσβάλλει G1 ut vid.
+<lb/>11 ἱερατικοῦ coni. Mang.
+<lb/>14 αὐτοὺς G
+<lb/>17 <add>καὶ</add> ἄθεον ὁμοῦ κακόν conicio ἄθεον secl. Mang., ἄθεον μὲν οὖν secl. Cohn 
+<lb/>18 τὴν e corr. Η2
+<lb/>19 τελειότατος G
+<lb/>20 οὐδέπου coni. Mang.
+<lb/>21 μὴ καὶ V
+<lb/>24 τὰ G: τῶν Η ἀβούλητα scripsi: ἀβουλήτων H2, ἀβουλούντων G(H1) fort. τῶν γάρ ἀβουλήτων τινὰ scrib.
+<lb/>25 ἅτε H: ἄν τε G post ἀκούσια add. τύχοι G2</note>  
+
+<pb n="v.3.p.135"/>
+ἀρχιερεὺς καθάπερ καὶ τῶν ἑκουσίων ὑπεράνω στὰς ἀλογεῖ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="116">
+<p>ταῦτα δ’ οὐκ ἀπὸ σκοποῦ μοι λέλεκται, ἀλλ’ ὑπὲρ τοῦ διδάξαι, ὅτι φυσικωτάτη
+προθεσμία καθόδου φυγάδων ὁ τοῦ ἀρχιερέως ἐστὶ θάνατος (Num.
+35,25).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="117">
+<p>ἕως μὲν γὰρ ὁ ἱερώτατος οὗτος λόγος ζῇ καὶ περίεστιν ἐν <lb n="5"/> ψυχῇ, ἀμήχανον τροπὴν ἀκούσιον εἰς αὐτὴν κατελθεῖν· ἀμέτοχος γὰρ
+καὶ ἀπαράδεκτος παντὸς εἶναι πέφυκεν ἁμαρτήματος. ἐὰν δὲ ἀποθάνῃ,
+οὐκ αὐτὸς διαφθαρείς, ἀλλ’ ἐκ τῆς ἡμετέρας ψυχῆς διαζευχθείς, κάθοδος
+εὐθὺς δίδοται τοῖς ἑκουσίοις σφάλμασιν· εἰ γὰρ μένοντος καὶ
+ὑγιαίνοντος ἐν ἡμῖν ἐξῳκίζετο, μετανισταμένου πάντως εἰσοικισθήσεται.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="118">
+<p><lb n="10"/> γέρας γὰρ ἐξαίρετον ὁ ἀμίαντος ἀρχιερεύς, ἔλεγχος, ἐκ φύσεως κεκάρπωται τὸ μηδέποτ’ εἰς αὑτὸν παραδέξασθαι τόπον γνώμης ὄλισθον.
+διόπερ ἄξιον εὔχεσθαι ζῆν ἐν ψυχῇ τὸν ἀρχιερέα ὁμοῦ καὶ βασιλέα,
+δικαστὴν ἔλεγχον, ὃς ὅλον ἡμῶν τὸ διανοίας ἀποκεκληρωμένος δικαστήριον
+ὑπ’ οὐδενὸς τῶν ἀγομένων εἰς κρίσιν δυσωπεῖται.</p>
+<lb n="15"/> </div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="119">
+<p><milestone unit="altref" n="22"/> Λελαληκότες οὖν τὰ ἁρμόττοντα περὶ φυγάδων τὴν κατὰ τὸν εἱρμὸν ἀκολουθίαν συνυφανοῦμεν. λέγεται γὰρ ἑξῆς· "εὗρεν αὐτὴν
+ἄγγελος κυρίου“ (Gen. 16,7), κάθοδον ψηφισάμενος ὑπ’ αἰδοῦς κινδυνευσούσῃ
+ ψυχῇ πλανᾶσθαι καὶ μονονοὺ  <milestone unit="altpage2" n="p. 564 M."/> προπομπὸς γινόμενος τῆς εἰς
+τὴν ἀπλανῆ γνώμην ἐπανόδου.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="120">
+<p>χρήσιμον δὲ καὶ τὰ περὶ εὑρέσεως καὶ <lb n="20"/> ζητήσεως φιλοσοφηθέντα τῷ νομοθέτῃ μὴ ἡσυχασθῆναι. τοὺς μὲν γὰρ
+εἰσάγει μηδὲν μήτε ζητοῦντας μήτε εὑρίσκοντας, τοὺς δὲ ἐν ἑκατέρῳ
+κατορθοῦντας, ἐνίους δὲ θάτερον περιπεποιημένους, ὧν οἱ μὲν ζητοῦντες
+οὐχ εὑρίσκουσιν, οἱ δ’ εὑρίσκουσιν οὐ ζητήσαντες.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="121">
+<p>οἱ μὲν οὖν μήτε εὑρέσεως μήτε ζητήσεως ἐφιέμενοι τὸν λογισμὸν ἀπαιδευσίᾳ καὶ ἀμελετησίᾳ
+<lb n="25"/> χαλεπῶς ᾐκίσαντο καὶ δυνάμενοι ὀξὺ καθορᾶν ἐπηρώθησαν.
+<note xml:lang="mul" type="footnote">
+<lb/>7 ὠά τῆς conicio
+<lb/>8 ἑκουσίοις ilaurini Ambrosii editores (Mang.): ἀκουσίοις codd. 
+<lb/>10 post φύσεως add. καὶ GH1
+<lb/>11 μηδέποτε G αὑτὸν H2: αὐτὸν GH1 τόπον corruptum, τὸ παράπαν Mang., τὸν πονηρὸν Cohn 12.
+<lb/>13 ἄρχοντα ὁμοῦ καὶ βασιλέα δικαστὴν τε καὶ ἔλεγχον conicio: v. quod det. pot. ins. §
+<lb/>23 12 βασιλέα secl. Turn. 
+<lb/>13 ὃς H2: ὡς GH1
+<lb/>14 ἀπαγομένων Mang. per errorem, ut vid.
+<lb/>16 ἑξῆς Mang.: ἐξ ἀρχῆς codd.
+<lb/>17 κάθοδον G2: καθ’ ὁδὸν G1H
+<lb/>18 οὐ G: ἐκ Η 
+<lb/>19 td om. L οἱ δ’ H: οὐδ’ G οὐ H(G1): οἱ G2 ἐπήρωσαν G2</note> <note xml:lang="lat" type="footnote">4—8 ibid.: vivit igitur dei verbum et maxime in animis vivit piorum nec moritur plenitudo divinitatis. numquam enim moritur sempiterna divinitas et aeterna dei virtus. sane moritur nobis, si a nostra anima separetur, non (luo morte corrumpatur, sed quo dissolvatur atque exuatur mens nostra ab eius coniunctione; mors enim vera est verbi et animae separatio. denique statim incipit anitna peccatis patere voluntariis.
+<lb/>1 scjq. cf. Oriff. aοnἕ;α (/ets. IV
+<lb/>45 p. 538: τὰ μὲν οὑν τῆς κατὰ τὸν τόπον τροπολογίας οὐκ ἀναγκαῖον νῦν λέγειν . . . . τίς τε ἡ γυνὴ αὐτοῦ γενοdτη στήλη ἁλὸς διὰ τὸ ἐστράφθαι εἰς τοὐπίσω . . . Ifoiiiil. in Gen. V
+<lb/>2 p. 74.</note>  
+
+<pb n="v.3.p.136"/>
+οὕτως φησὶ „τὴν γυναῖκα Λὼτ στραφεῖσαν εἰς τοὐπίσω γενέσθαι στήλην“
+ (Gen. 19,26), οὐ μυθοπλαστῶν, ἀλλὰ πράγματος ἰδιότητα μηνύων.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="122">
+<p>ὃς
+γὰρ ἂν ὀλιγωρήσας τοῦ διδάσκοντος ὑπὸ ῥᾳθυμίας ἐμφύτου τε ὁμοῦ καὶ
+συνήθους τὰ μὲν πρόσω καταλίπῃ, δι’ ὧν ὁρᾶν καὶ ἀκούειν καὶ ταῖς
+ἄλλαις δυνάμεσιν ἔστι χρῆσθαι πρὸς τὴν τῶν φύσεως πραγμάτων ἐπίκρισιν, <lb n="5"/>
+ἐκτραχηλίσας δ’ αὑτὸν εἰς τοὐπίσω περιαγάγῃ, τὰ τυφλὰ τῶν
+ἐν τῷ βίῳ πραγμάτων μᾶλλον ἢ τῶν τοῦ σώματος μερῶν ἐζηλωκώς,
+ ἀψύχου καὶ κωφῆς λίθου τρόπον στηλιτεύεται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="123">
+<p>οὐ γὰρ ἔσχον, ᾗ φησι
+Μωυσῆς, οἱ τοιοῦτοι τρόποι „καρδίαν συνιέναι καὶ ὀφθαλμοὺς βλέπειν
+καὶ ὦτα ἀκούειν“ (Deut. 29, 4), ἀλλὰ τυφλὸν καὶ κωφὸν καὶ ἀνόητον <lb n="10"/>
+καὶ πάντῃ πηρὸν βίον ἀβίωτον ἑαυτοῖς ἐξειργάσαντο, οὐδενὶ τῶν δεόντων
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="124">
+<p> ἐφιστάντες. <milestone unit="altref" n="23"/> ἡγεμὼν δ’ ἐστὶ τοῦ χοροῦ τούτου ὁ τῆς σωματικῆς
+χώρας βασιλεύς· „ἐπιστραφεὶς“ γάρ φησι „Φαραὼ εἰσῆλθεν
+εἰς τὸν οἶκον αὐτοῦ, καὶ οὐκ ἐπέστησε τὸν νοῦν οὐδ’ ἐπὶ τούτῳ“ (Exod. 7,23),
+ἴσον τῷ ἐπ’ οὐδενὶ τὸ παράπαν, ἀλλ’ εἴασεν αὐτὸν οἷα φυτὸν <lb n="15"/>
+ ἀγεώργητον ἀφαυαίνεσθαι καὶ στειρούμενον ἀγονίᾳ χρῆσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="125">
+<p>οἱ μέν
+γε βουλευόμενοι καὶ σκοπούμενοι καὶ πάντ’ ἐπιμελῶς ἐξετάζοντες ἀκονῶσι
+καὶ παραθήγουσιν αὐτόν· ὁ δὲ γυμναζόμενος τοὺς οἰκείους φέρει
+καρπούς, ἀγχίνοιάν τε καὶ σύνεσιν, δι’ ὧν τὸ ἀφενάκιστον περιγίνεται·
+ὁ δ’ ἀπερίσκεπτος ἀμβλύνει καὶ περιθραύει τὰς φρονήσεως ἀκμάς. <lb n="20"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="126">
+<p>Τὸν μὲν οὖν ἄλογον καὶ ἄψυχον ὡς ἀληθῶς τῶν τοιούτων θίασον ἐατέον,
+τὸν δὲ τῶν σκέψει καὶ εὑρέσει χρωμένων ἐπικριτέον. αὐτίκα τοίνυν ὁ
+πολιτικὸς μὲν ἥκιστα δὲ δοξομανὴς τρόπος, ἐφιέμενος τῆς ἀμείνονος
+γενεᾶς, ἣν ἀρεταὶ κεκλήρωνται, ζητῶν τε καὶ ἀνευρίσκων αὐτὴν εἰσάγεται.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="127">
+<p>„εὗρε“ γάρ φησιν „ἄνθρωπος τὸν Ἰωσὴφ πλανώμενον ἐν τῷ πεδίῳ, <lb n="25"/>
+<note xml:lang="mul" type="footnote">
+<lb/>6 αὐτὸν codd. περιαγάγῃ Η2: περιαγάγει GH1
+<lb/>9 Μωσῆς Η τοιουτότροποι couicio (cf. p. 12G, 22), τρόποι om. G (Mang.)
+<lb/>11 πάντη H2 (Mang.): πάντα G(H1) πηρὸν secl. Mang. ἐφιστάντες #x003C;νοῦν#x003Ε; coui. Mang.
+<lb/>12 δέ ἐστι Η 
+<lb/>13 ἐπιγραφεὶς Turu.
+<lb/>14 τούτω Η2: τοῦτο GH1
+<lb/>16 ἀγονία Η2: ἀγωνία GH1
+<lb/>19 ἀφαινάκιστον G2(H1)
+<lb/>22 τὸν Turn.: τῶν codd.
+<lb/>25 πλανώμενόν om. H τῷ om. Turn.</note> <note xml:lang="mul" type="footnote">24ι137,12 Ambros l. c. S,47 : fratres suos retiiiirebat et ad eum festiuabat lociim, in quo pascebant oves, et cum cognovisset quia in Dolliaim sunt, perrexit eo. significatur autem illo verbo Dothaim defectus idoneus, id est vanarum opiniorum defectus non mediocris, sed perfectus et plenus, in quo ptofectus est animae. sapiens enim quando minuit addit; deficiunt enim saeculares opiniones, quae muliebribus infirmis comparantur. unde pulchre, quo ostenderetur Sarra ad profectum venisse, ut generaret risum et laetitiam, defecerunt inquit Sarrae fieri muliebria. bona ergo defectio cupiditatum, defectio vanitatis, quia veritatis adiectio est.</note>  
+
+<pb n="v.3.p.137"/>
+καὶ ἠρώτησεν αὐτόν· τί ζητεῖς; ὁ δὲ εἶπεν· τοὺς ἀδελφούς μου ἐγὼ
+ζητῶ, ἀνάγγειλόν μοι, ποῦ βόσκουσιν. εἶπε δὲ αὐτῷ ὁ ἄνθρωπος·
+ἀπήρκασιν ἐντεῦθεν· ἤκουσα γὰρ αὐτῶν λεγόντων· πορευθῶμεν εἰς
+ Δωθαΐν. καὶ ἐπορεύθη Ἰωσὴφ κατόπιν τῶν ἀδελφῶν αὐτοῦ, καὶ  <milestone unit="altpage2" n="p. 565 M."/> εὗρεν
+<lb n="5"/> αὐτοὺς ἐν Δωθαΐν“ (Gen. 37, 15—17).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="128">
+<p>ἑρμηνεύεται Δωθαῒν ἔκλειψις ἱκανή, σύμβολον ψυχῆς οὐ μέσως ἀλλὰ τελείως ἀποδεδρακυίας τὰς
+κενὰς δόξας, αἳ γυναικῶν μᾶλλον ἢ ἀνδρῶν ἐπιτηδεύμασιν ἐοίκασι.
+διὸ πάνυ καλῶς ἡ ἀρετὴ Σάρρα „τὰ γυναικεῖα ἐκλείπει“ (Gen. 18,11),
+περὶ ἃ πονούμεθα οἱ τὸν ἄνανδρον καὶ θῆλυν ὄντως βίον μεταδιώκοντες.
+<lb n="10"/> ὁ δὲ σοφὸς καὶ „ἐκλείπων προστίθεται“ (Gen. 25, 17) κατὰ Μωυσῆν,
+φυσικώτατα· τὴν γὰρ τῆς κενῆς δόξης ἀφαίρεσιν πρόσθεσιν ἀληθείας εἶναι
+συμβέβηκεν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="129">
+<p>εἰ δή τις ἔτ’ ἐν θνητῷ καὶ πολυμιγεῖ καὶ πολυμόρφῳ βίῳ διατρίβων καὶ κεχρημένος ἀφθόνοις ταῖς πρὸς περιουσίαν ὕλαις σκέπτεται
+καὶ ζητεῖ περὶ τῆς ἀμείνονος καὶ πρὸς τὸ καλὸν μόνον ἀφορώσης γενεᾶς,
+<lb n="15"/> ἄξιος ἀποδοχῆς ἐστιν, ἂν μὴ πάλιν τὰ ὀνείρατα καὶ φαντάσματα τῶν
+νομιζομένων καὶ φαινομένων ἀγαθῶν ὑπαναπλεύσαντα παρευημερήσῃ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="130">
+<p>μένων γὰρ ἐν ἀκιβδηλεύτῳ τῇ ψυχικῇ σκέψει, κατ’ ἴχνος τῶν ζητουμένων
+βαίνων καὶ ἐπακολουθῶν οὐκ ἀνήσει πρότερον ἢ τοῖς ποθουμένοις
+ἐντυχεῖν. ἀλλ’ οὐδὲν αὐτῶν παρὰ μοχθηροῖς ἀνευρήσει· διὰ τί;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="131">
+<p><lb n="20"/> „ἀπήρκασι γὰρ ἐντεῦθεν“, τὰς μὲν ἡμετέρας σπουδὰς ἐκλιπόντες,
+μετοικισάμενοι δ’ εἰς τὸν ἔρημον κακῶν εὐσεβῶν χῶρον. λέγει δὲ
+ταῦτα ὁ<sic>ὁ</sic> ἀληθινὸς ἄνθρωπος, ὁ<sic>ὁ</sic> ἐπὶ ψυχῆς ἔλεγχος, ὃς ἀποροῦσαν καὶ
+σκεπτομένην καὶ ζητοῦσαν αὐτὴν ἰδὼν εὐλαβεῖται, μὴ πλανηθεῖσα
+<note xml:lang="mul" type="footnote">
+<lb/>1 δ’ G ἐγὼ fort. secl.
+<lb/>4 et
+<lb/>5 ter Δωθαεὶμ conicio
+<lb/>8 ἡ] τῆ G2 τῇ ἀρετῇ Σάρρᾳ coni. Mang.
+<lb/>9 θηλύνοντα G2
+<lb/>10 Μωσῆν GH
+<lb/>11 πρὸς θέαν G
+<lb/>12 δή G: δ’ εἴ H, δέ Mang. πολυτρόπῳ coni. Mang.
+<lb/>15 post ἂν spatium in G
+<lb/>16 ἐπαναπλεύσαντα coni. Mang.
+<lb/>19 οὐδέν’ (οὐδὲν Mang.) αὐτῶν Turn.: οὐδενὶ τῶν παρὰ om. G μοχθηρῶν G2
+<lb/>20 ἡμετέρων v
+<lb/>21 μετοικισάμενοι H: μετοικησάμενοι G(?)v
+<lb/>22 6 ἐπὶ] ὅς ἐστι coni. Cohn ἐπὶ secl. Mang.</note>  
+
+<pb n="v.3.p.138"/>
+ διαμάρτῃ τῆς ὀρθῆς ὁδοῦ. </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="132"><milestone unit="altref" n="24"/>
+<p>πάνυ τεθαύμακα κἀκείνους, τὸν μὲν
+φιλοπευστοῦντα περὶ τοῦ μέσου τῶν ἄκρων καὶ λέγοντα· „ἰδοὺ τὸ πῦρ
+καὶ τὰ ξύλα, ποῦ τὸ πρόβατον τὸ εἰς ὁλοκάρπωσιν“, τὸν δ’ ἀποκρινόμενον·
+„ὁ θεὸς ὄψεται ἑαυτῷ πρόβατον εἰς ὁλοκάρπωσιν, τέκνον“ καὶ
+ὕστερον τὸ ἀντιδοθὲν εὑρίσκοντα· „ἰδοὺ γὰρ κριὸς εἷς κατεχόμενος τῶν <lb n="5"/>
+ κεράτων ἐν φυτῷ Σαβέκ“ (Gen. 22,7. 8. 13).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="133">
+<p>ἴδωμεν οὖν, τί ὁ μὲν
+ζητῶν ἀπορεῖ, ὁ δ’ ἀποκρινόμενος ἀποφαίνεται, καὶ τρίτον τί τὸ εὑρισκόμενον
+ἦν. ὃ μὲν οὖν πυνθάνεται τοιοῦτόν ἐστιν· ἰδοὺ τὸ δρῶν αἴτιον,
+τὸ πῦρ· ἰδοὺ καὶ τὸ πάσχον, ἡ ὕλη, τὰ ξύλα· ποῦ τὸ τρίτον, τὸ ἀποτέλεσμα;
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="134">
+<p>οἷον ἰδοὺ ὁ νοῦς, ἔνθερμον καὶ πεπυρωμένον πνεῦμα· ἰδοὺ <lb n="10"/>
+καὶ τὰ νοητά, ὡσανεὶ ὗλαι· ποῦ τὸ τρίτον, τὸ νοεῖν; πάλιν ἰδοὺ ἡ
+ὅρασις, ἰδοὺ τὸ χρῶμα, ποῦ τὸ ὁρᾶν; καὶ συνόλως ἰδοὺ ἡ αἴσθησις, τὸ
+κριτήριον, ἀλλὰ καὶ τὰ αἰσθητά, αἱ ὗλαι· τὸ οὖν αἰσθάνεσθαι ποῦ;
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="135">
+<p>ταῦτα πυνθανομένῳ δεόντως ἀποκρίνεται· „ὁ θεὸς ὄψεται ἑαυτῷ“· θεοῦ
+γὰρ ἔργον ἴδιον τὸ τρίτον. ἐπιφροσύνῃ γὰρ αὐτοῦ ὁ μὲν νοῦς καταλαμβάνει, <lb n="15"/>
+ἡ δ’ ὅρασις ὁρᾷ καὶ πᾶσα αἴσθησις αἰσθάνεται. „κριὸς δ’
+ εὑρίσκεται κατεχόμενος“, τουτέστι λόγος ἡσυχάζων καὶ ἐπέχων.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="136">
+<p>ἄριστον
+γὰρ ἱερεῖον ἡσυχία καὶ <milestone unit="altpage1" n="p. 566 M."/>  ἐποχὴ περὶ ὧν πάντως οὔκ εἰσι πίστεις.
+ῥητὸν γὰρ μόνον τοῦτο „ὁ θεὸς ὄψεται“, ᾧ γνώριμα τὰ πάντα, ὃς
+λαμπροτάτῳ φωτί, ἑαυτῷ, τὰ ὅλα αὐγάζει· τὰ δ’ ἄλλα οὐ ῥητὰ γενέσει, <lb n="20"/>
+<note xml:lang="mul" type="footnote">
+<lb/>4 εἰς Η: εἰςτὴν G
+<lb/>5 γὰρ s. s. H2 5.
+<lb/>6 τῶν κεράων om. G
+<lb/>11 ὕλη conicio (cf. Ambros.)
+<lb/>13 ἀλλὰ] ἰδοὺ conicio ἡ ὕλη conicio
+<lb/>14 δεόντως G1(Η1): δὲ οὕτως G2H2 ἀποκρίνεται Β2: ἀποκρίναιτο G(H1)
+<lb/>18 ὧν εἰσ ουκόσι πίστεις (sic) H, ὧν οὐκ εἰσὶ πίστεις L παντὶ G2
+<lb/>19 ῥητέον coni. Mang.
+<lb/>20 οὐ ῥητέα vel οὐχ ὁρατά coni. Mang.</note> <note xml:lang="mul" type="footnote">
+<lb/>1 —
+<lb/>10 Ambros. epist. 8,2: denique in arte requiruntur praecipue, ut sit αἴτιον, ὕλη, ἀποτέλεσμα. cum igitur legamus sanctuni Isaac patri dicere: ecce ignis et ligna, ubi hostia? quid horum deest? nam qui quaerit, dubitat; qui respondet quaerenti, pronuntiat et dubitationem absolvit. ecce ignis, id est αἴτιον, et lgna, id est ὕλη, quae latine materia. dicitur: tertium quid superest nisi ἀποτέλεσμα? quod filius quaesivit, pater rettulit dicenti: ubi hostia? deus inquit providebit sibi sacrificium, fili. 10—16 ibid. 4: ecce ergo mens calida et fervens ut ignis quae operatur, ecce et intellegibilia, id est materia, ubi est tertiuro, intellegere? ecce color, ubi est videre? ecce sensibilia, ubi est sentire? materia enim non ab omnibus videtur, ideoque deus dat munus intellegendi et sentiendi et videndi. cf. § 10.</note> <note xml:lang="lat" type="footnote">16—18 ibid. 3: ostendit deus arietem pendentem cornibus. aries autem est verbum plenum tranquillitatis et moderationis atque patientiae. quo osteuditur bonum sacrificium esse sapientiam et prudenter emerendi ac propitiandi rationem cognoscere. 2—140,2 ibid. 6: quaeramus subicientis (subicientes Maurini) materiam, quid sit quod nutriat animam; tamquam in tenebris requiramus eam. neque enim vel patres sciebant, quid esset manna, invenerunt inquit (autem pro inquit conicio) manna discentes (sic Maurini pro dicentes) ipsum esse sermonem et verbum dei, unde omnes disciplinae fonte iugi ac perpetuo fluunt atque derivant.
+<lb/>7 haec est esca caelestis, significatur autem ex persona dicentis: ecce ego pluam vobis panes de caelo. αἴτιον ergo eo quod operatur deus, qui irrigat mentes rore sapientiae, ὕλη (ὕλῃ?), quia videntes animae et gustantes delectantur et unde sit illud splendidius luce, dulcius melle. respondetur eis scripturae serie: hic est panis, quem dedit vobis manducare dominus et hoc est verbum dei quod disposuit deus vel ordinavit, quo pascitur anima prudentium et delectatur, quod est candidum et suave, veritatis splendore illuminans et virtutum suavitate demulcens audientium animas. epist. 64,2: sed est spiritale manna. hoc est pluvia spiritalis sapientiae, quae ingeniosis et quaerentibus de caelo infunditur et irrorat mentes piorum et obdulcat fauces eorum. qui igitur intellexerit infusionem divinae sapientiae, delectatur nec alium cibum requirit nec in solo pane vivit, sed in omni verbo dei. qui curiosior fuerit quaerit quid sit istud quod melle dulcius sit. respondet illi minister dei: hic est panis quem dedit tibi deus manducare. quid sit. iste panis audi: sermo inquit quem ordinavit deus. haec ergo ordinatio dei, haec alimonia alit animam sapientis et illuminat atque obdulcat, resplendens veritatis corusco et mulcens taraquam favo quodam ita diversarum virtutum suavitate et sermone sapientiae.</note>  
+
+<pb n="v.3.p.139"/>
+ἧς πολὺ κατακέχυται τὸ σκότος· ἠρεμία δ’ ἀσφαλὲς ἐν σκότῳ.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="137">
+<p><milestone unit="altref" n="25"/>ζητήσαντες καὶ τί τὸ τρέφον ἐστὶ τὴν ψυχήν — „οὐ γὰρ“ ᾗ φησι Μωυσῆς „ᾔδεισαν τί ἦν“ (Exod. 16, 15) — εὗρον μαθόντες ῥῆμα
+θεοῦ καὶ λόγον θεῖον, ἀφ’ οὗ πᾶσαι παιδεῖαι καὶ σοφίαι ῥέουσιν ἀένναοι.
+<lb n="5"/> ἥδ’ ἐστὶν ἡ οὐράνιος τροφή, μηνύεται δ’ ἐν ταῖς ἱεραῖς ἀναγραφαῖς ἐκ
+προσώπου τοῦ αἰτίου λέγοντος· „ἰδοὺ ἐγὼ ὕω ὑμῖν ἄρτους ἐκ τοῦ οὐρανοῦ“
+(ibid. 4)· τῷ γὰρ ὄντι τὴν αἰθέριον σοφίαν ὁ θεὸς ταῖς εὐφυέσι
+καὶ φιλοθεάμοσιν ἄνωθεν ἐπιψεκάζει διανοίαις·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="138">
+<p>αἱ δὲ ἰδοῦσαι καὶ γευσάμεναι καὶ σφόδρ’ ἡσθεῖσαι ἔμαθον μὲν ὃ ἔπαθον, τὸ δὲ διαθὲν ἀγνοοῦσι.
+<lb n="10"/> διὸ πυνθάνονται· „τί ἐστι τοῦτο“ (ibid. 15), ὃ μέλιτος γλυκύτερον,
+χιόνος δὲ λευκότερον εἶναι πέφυκε;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="139">
+<p>διδαχθήσονται δὲ ὑπὸ τοῦ θεοπρόπου, ὅτι „οὗτός ἐστιν ὁ ἄρτος, ὃν ἔδωκε κύριος αὐτοῖς φαγεῖν“
+(ibid. 15). τίς οὖν ὁ ἄρτος, εἰπέ. „τοῦτο“ φησί „τὸ ῥῆμα ὃ συνέταξε
+κύριος“ (ibid. 16). ἡ θεία σύνταξις αὕτη τὴν ὁρατικὴν ψυχὴν φωτίζει
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἧς Turn.: ἦ G2H, ἦ G1
+<lb/>3 Μωσῆς codd. ἤδεσαν Η
+<lb/>9 καὶ σφόδρ’ G: σφόδρα Η δοθὲν Markland 9.
+<lb/>10 ἀγνοοῦσιν Η
+<lb/>10 μέλιτος <add>μὲν</add> conicio
+<lb/>11 χιῶνος GH1
+<lb/>14 αὐτὴ G</note>  
+
+<pb n="v.3.p.140"/>
+τε ὁμοῦ καὶ γλυκαίνει, φέγγος μὲν τὸ ἀληθείας ἀπαστράπτουσα, πειθοῖ
+δέ, ἀρετῇ γλυκείᾳ, τοὺς διψῶντας καὶ πεινῶντας καλοκἀγαθίας ἐφηδύνουσα.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="140">
+<p>ζητήσας καὶ ὁ προφήτης αὐτός, τί τὸ τοῦ κατορθοῦν αἴτιον, ἀνεῦρεν
+ὅτι ἡ θεοῦ μόνου σύνοδος. ἐπειδὴ γὰρ ἠπόρει, τίς εἰμι καὶ τίς ὢν τὸ
+ὁρατικὸν γένος ἀπὸ τοῦ βασιλεύειν δοκοῦντος ἀντιθέου τρόπου ῥύσομαι, <lb n="5"/>
+ διδάσκεται χρησμῷ, ὅτι „ἔσομαι μετὰ σοῦ“ (Exod. 3,11. 12).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="141">
+<p>ζητήσεις
+δ’ αἱ τῶν κατὰ μέρος ἔχουσι μὲν γλαφυρὰν θεωρίαν καὶ φιλόσοφον —
+πῶς γὰρ οὔ; —, ἡ δὲ τοῦ τῶν ὄντων ἀρίστου καὶ ἀσυγκρίτου καὶ
+πάντων αἰτίου θεοῦ ζήτησις εὐφραίνει μὲν εὐθὺς ἰόντας ἐπὶ τὴν σκέψιν,
+ἀτελὴς δ’ οὐ γίνεται, προϋπαντῶντος διὰ τὴν ἵλεω φύσιν ἑαυτοῦ ταῖς <lb n="10"/>
+παρθένοις χάρισι καὶ ἐπιδεικνυμένου ἑαυτὸν τοῖς γλιχομένοις ἰδεῖν, οὐχ
+οἷός ἐστιν — ἀμήχανον γάρ, ἐπεὶ καὶ Μωυσῆς „ἀπέστρεψε τὸ πρόσωπον·
+εὐλαβεῖτο γὰρ κατεμβλέψαι ἐνώπιον τοῦ θεοῦ“ (Exod. 3,6) —,
+ἀλλ’ ὡς ἐνεχώρει γενητὴν φύσιν τῇ ἀπερινοήτῳ δυνάμει προσβαλεῖν.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="142">
+<p>ἀναγέγραπται καὶ τοῦτο ἐν τοῖς προτρεπτικοῖς· „ἐπιστραφήσεσθε“ γάρ <lb n="15"/>
+φησι „πρὸς κύριον τὸν θεὸν ὑμῶν, καὶ εὑρήσετε αὐτόν, ὅταν <milestone unit="altpage1" n="p. 567 M."/>  ἐκζητήσητε
+αὐτὸν ἐξ ὅλης τῆς καρδίας καὶ ἐξ ὅλης τῆς ψυχῆς ὑμῶν“
+(Deut. 4, 29. 30).</p>
+</div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="143">
+ <p><milestone unit="altref" n="26"/> Ἀποχρώντως λελαληκότες καὶ περὶ τούτων ἐπὶ τὸ τρίτον
+ἑξῆς τρεψώμεθα κεφάλαιον, ἐν ᾧ τὸ μὲν ζητεῖν ἦν, τὸ δ’ εὑρίσκειν <lb n="20"/>
+οὐχ εἵπετο. Λάβαν γοῦν ἀναζητήσας ὅλον τοῦ ἀσκητοῦ τὸν ψυχικὸν
+<note xml:lang="mul" type="footnote">
+<lb/>2 ἀρετῆς conicio (cf. Ambros.) ἀφηδύνουσα G
+<lb/>3 τό τοῦ Mang.: τοῦτσ H1, τοῦ GH2
+<lb/>11 τοῖς om. H
+<lb/>12 Μωσῆς codd.
+<lb/>14 γεννητὴν V τῇ H2: τὴν G(H1) ἀπερινοήτῳ scripsi: περὶ νοητῷ GH1, περὶ νοητὰ Η2 προσβαλεῖν Gv: προσβάλλειν H
+<lb/>16 ὑμῶν G: ἡμῶν Η 
+<lb/>17 ὑμῶν G: ἡμῶν H
+<lb/>19 ἀποχρῶντος G 19.
+<lb/>20 ἐπὶ et τρεψώμεθα codd.: ἔτι et σκεψώμεθα v
+<lb/>21 ἀσκητοῦ G: ἀσκητικοῦ H</note> <note xml:lang="mul" type="footnote">3—6 epist. 8,8: in se enim didicerat propheta, quid esset consummandae rei αἴτιον. nam cum mitteretur ad populum dei liberandum ad regem Aegypti, ait: quis sum ego, ut vadam et educam populum a regis potestate? respondit dominus: ego ero tecum. 6—8 ibid. 9: interrogationes ergo illae in medio et responsiones sponsiones habent sapientiae semina et θεωρίαν. gratum tamen ἀποτέλεσμα est, quia ait: ego ero tecum. —141,7 Ambros. de fuga saeculi 4,22. 23: itaque Laban perscrutatus est domum eius spiritalem et non invenit effigies; plena enim erat non figurarurn, sed negotiorum . . . denique ea inprobitatis caecitate suffusi mentem Sodomitae ostium nequaquam sancti Lot invenire potuerunt. cf. etiam 5,27. epist. 8,11: Laban denique, qui per dominum non quaesivit, quia quaerebat idola, non invenit.</note>  
+
+<pb n="v.3.p.141"/>
+οἶκον „οὐχ εὗρεν“ ᾗ φησι Μωυσῆς „τὰ εἴδωλα“ (Gen. 31, 33)·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="144">
+<p>πλήρης γὰρ πραγμάτων, οὐκ ὀνειράτων καὶ κενῶν φαντασμάτων ἦν. οὐδ’ οἱ τυφλοὶ διάνοιαν Σοδομῖται σπουδάσαντες ἐκθύμως αἰσχῦναι τοὺς ἱεροὺς
+καὶ ἀμιάντους λόγους εὗρον τὴν εἰς τοῦτ’ ἄγουσαν ὁδόν, ἀλλ’, ὥς φησι
+<lb n="5"/> τὸ λόγιον, „παρελύθησαν ζητοῦντες τὴν θύραν“ (Gen. 19, 11), καίτοι
+γε ἐν κύκλῳ πᾶσαν τὴν οἰκίαν περιθέοντες καὶ πάντα κινήσαντες λίθον
+πρὸς ἐκπλήρωσιν τῆς ἐκφύλου καὶ ἀσεβοῦς ἐπιθυμίας.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="145">
+<p>ἤδη τινὲς καὶ ἀντὶ πυλωρῶν βασιλεῖς ἐθελήσαντες γενέσθαι καὶ τὸ κάλλιστον ἐν βίῳ,
+τάξιν, καταλῦσαι οὐ μόνον τῆς ἀδίκως ἐλπισθείσης εὐπραγίας ἐσφάλησαν,
+<lb n="10"/> ἀλλὰ καὶ ἣν ἐν χερσὶν εἶχον ἐκβαλεῖν ἠναγκάσθησαν. ἱερωσύνης γὰρ
+τοὺς Κορὲ θιασώτας ὀρεχθέντας * * * ὁ νόμος διαμαρτεῖν φησιν
+ἀμφοῖν (Num. 16).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="146">
+<p>ὥσπερ γὰρ οὐ τὰ αὐτὰ παῖδες καὶ ἄνδρες μανθάνουσιν, ἀλλ’ ἑκατέρᾳ τῶν ἡλικιῶν εἰσιν ἁρμόττουσαι διδασκαλίαι, οὕτως
+πεφύκασιν εἶναί τινες αἰεὶ παιδικαὶ ψυχαὶ καὶ ἐν σώμασι γεγηρακόσι
+<lb n="15"/> καὶ ἔμπαλιν τελειόταται ἐν ἄρτι ἀκμάζουσι καὶ ἡβῶσιν. ὄφλοιεν ἂν
+οὖν εὐήθειαν, ὅσοι μειζόνων ἢ κατὰ τὴν ἑαυτῶν φύσιν ἐρῶσιν, ἐπειδὴ
+πᾶν τὸ ὑπὲρ δύναμιν ἐπιτάσει σφοδρότητος ἀπορρήττεται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="147">
+<p>καὶ Φαραὼ „ζητῶν ἀνελεῖν Μωυσῆν“ (Exod. 2,15), τὸ προφητικὸν γένος, οὐδέποτε
+εὑρήσει, καίτοι χαλεπὸν ἀκηκοὼς κατ’ αὐτοῦ λόγον ὡς ἐπικεχειρηκότος
+<lb n="20"/> καθελεῖν τὴν σώματος ἅπασαν ἡγεμονίαν δυσὶ προσβολαῖς·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="148">
+<p>ὧν τὴν μὲν προτέραν ἐποιήσατο πρὸς τὸν Αἰγύπτιον τρόπον, ὃς ἐπετείχιζεν
+ἡδονὴν ψυχῇ — „πατάξας γὰρ αὐτὸν“ οὐσίᾳ σποράδι „κατέχωσεν,
+ἄμμῳ“ (Exod. 2,12), τοῦ αὐτοῦ νομίσας ἀμφότερα εἶναι τὰ δόγματα,
+καὶ ἡδονὴν ὡς πρῶτον καὶ μέγιστον ἀγαθὸν καὶ ἀτόμους ὡς τῶν ὅλων
+<lb n="25"/> ἀρχάς —, τὴν δ’ ἑτέραν (ibid. 13) πρὸς τὸν κατακερματίζοντα τὴν
+φύσιν τοῦ ἀγαθοῦ καὶ τὸ μὲν ψυχῇ, τὸ δὲ σώματι, τὸ δὲ τοῖς ἐκτὸς
+<note xml:lang="mul" type="footnote">
+<lb/>1 Μωσῆς codd.
+<lb/>5 παρεληλύθεισαν L
+<lb/>9 τῆς] τοῖς H1 ut vid. ἀπεσφάλησαν coni. Mang.
+<lb/>11 θιασσότας G lacunam statuo et μὴ ἀρκουμένους τῇ νεωκόρων τάξει suppleo, Mang. post ἱερωσύνης add. καὶ ἀρχῆς 
+<lb/>15 ἡβῶσιν ex corr. Η2
+<lb/>16 post ὅσοι add. κατὰ Η1
+<lb/>17 ἀπορήττεται (sic) G: ἀπορρήσσεται H (sed alterum ρ s. s. Η2, σσε ex corr.), D v. infra διαρρήγνυται conicio), ἀπορρυήσεται coni. Mang.
+<lb/>18 Μωσῆν codd. 19.
+<lb/>20 ἐπιχειρηκότος H 
+<lb/>22 post σποράδι ras. in H κατέχωσαν H1
+<lb/>24 ἀτόμους Η2 (post ἁ ras.): συντόμους G εἰσηγουμένου vid. add.</note> <note xml:lang="mul" type="footnote">16—18 DK fol. 244v τοῦ αὐτοῦ ἐκ τοῦ περὶ φυγῆς καὶ εὑρέσεως· πᾶν τὸ ὑπὲρ δύναμιν                       ι   ρ    ν ἐπιτάσει σφοδρότητος λαπ . . ρυειται (etiam supra ει evanidae litterae exstant).</note>  
+
+<pb n="v.3.p.142"/>
+ἀπονέμοντα. ὁλόκληρον γὰρ αὐτὸ βούλεται εἶναι, τῷ ἀρίστῳ τῶν ἐν
+ἡμῖν, διανοίᾳ μόνῃ, προσκεκληρωμένον καὶ μηδενὶ τῶν ἀψύχων ἐφαρμόττον.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="149">
+<p> <milestone unit="altref" n="27"/> οὐδὲ τὴν ἀνίκητον ἀρετὴν καὶ πικραινομένην ἐπὶ ταῖς
+καταγελάστοις τῶν ἀνθρώπων σπουδαῖς, ὄνομα Θάμαρ, ὁ διαπεμφθεὶς
+ἐπὶ τὴν ζήτησιν αὐτῆς ἀνευρίσκει. <milestone unit="altpage1" n="p. 568 M."/>  φυσικώτατα· λέγεται γάρ· „ἀπέστειλε
+δὲ Ἰούδας τὸν ἔριφον ἐν χειρὶ τοῦ ποιμένος τοῦ Ὁδολλαμίτου κομίσασθαι <lb n="6"/>
+τὸν ἀρραβῶνα παρὰ τῆς γυναικός· καὶ οὐχ εὗρεν αὐτήν. ἐπηρώτησε
+δὲ τοὺς ἄνδρας τοὺς ἐκ τοῦ τόπου· ποῦ ἐστιν ἡ πόρνη ἡ γενομένη ἐν
+Αἰνὰν ἐπὶ τῆς ὁδοῦ; καὶ εἶπον· οὐκ ἦν ἐνταῦθα πόρνη. καὶ ἀπεστράφη
+πρὸς Ἰούδαν καὶ εἶπεν· οὐχ εὗρον, καὶ οἱ ἄνθρωποι οἱ ἐκ τοῦ τόπου <lb n="10"/>
+λέγουσι μὴ εἶναι ὧδε πόρνην. εἶπε δὲ Ἰούδας· ἐχέτω αὐτά, ἀλλὰ μή
+ποτε καταγελασθῶμεν· ἐγὼ μὲν ἀπέσταλκα τὸν ἔριφον τοῦτον, σὺ δὲ
+οὐχ εὕρηκας“ (Gen. 38,20—23). ὢ  θαυμαστῆς δοκιμασίας, ὢ ἱεροπρεποῦς
+ πείρας.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="150">
+<p>ἀρραβῶνά τις ἔδωκεν ὠνητικῶς ἔχουσα διάνοια τοῦ
+καλλίστου κτήματος, θεοσεβείας, διὰ τριῶν ἐνεχύρων ἢ συμβόλων, <lb n="15"/>
+δακτυλίου, ὁρμίσκου, ῥάβδου (ibid. 18), βεβαιότητα καὶ πίστιν, εἱρμὸν
+καὶ ἀκολουθίαν λόγου πρὸς βίον καὶ βίου πρὸς λόγον, ὀρθὴν καὶ ἀκλινῆ
+ παιδείαν, ᾗ λυσιτελὲς ἐπερείδεσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="151">
+<p>τὸν ἀρραβῶνα τοῦτον εἰ καλῶς
+ἔδωκε, βασανίζει. τίς οὖν ἡ βάσανος; καθεῖναί τι δέλεαρ ὁλκῷ
+κεχρημένον δυνάμει, δόξαν ἢ πλοῦτον ἢ ὑγείαν σώματος ἤ τι τῶν <lb n="20"/>
+ὁμοιοτρόπων, καὶ γνῶναι πρὸς πότερα καθάπερ ἐπὶ πλάστιγγος ταλαντεύσει·
+ῥοπὴ γὰρ εἰ γένοιτο πρός τι τούτων, ὁ ἀρραβὼν οὐ βέβαιος.
+ἀπέστειλεν οὖν τὸν ἔριφον κομίσασθαι τὸν ἀρραβῶνα παρὰ τῆς γυναικός,
+οὐ τοῦτο προῃρημένος πάντως ἀπολαβεῖν, ἀλλ’ εἴ ποτε ἀναξία τοῦ
+ κατέχειν ἐκείνη γένοιτο. γενήσεται δὲ πότε;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="152">
+<p>ἡνίκα ἂν τὰ διαφέροντα <lb n="25"/>
+ἀδιαφόρων ἀντικαταλλάξηται, τῶν γνησίων ἀγαθῶν τὰ νόθα προτιμήσασα·
+γνήσια μὲν οὖν ἀγαθὰ πίστις, εἱρμὸς καὶ ἀκολουθία λόγων πρὸς ἔργα,
+παιδείας κανὼν ὀρθῆς, ὡς ἔμπαλιν κακὰ ἀπιστία, τὸ ἀνακόλουθον,
+ἀπαιδευσία, τὰ δὲ νόθα, ὅσα τῆς ἀλόγου φορᾶς ἀπῃώρηται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="153">
+<p>ζητῶν οὖν
+<note xml:lang="mul" type="footnote">
+<lb/>1 αὐτῶ H1 βούλετ’ H τῶν Mang.: τῶ G, τὸ H
+<lb/>4 σπουδαῖς G: σκηναῖς H 5.
+<lb/>6 ἀπέστειλεν Ἰούδας L
+<lb/>6 alt. τοῦ codd.: αὐτοῦ v, αὐτοῦ τοῦ ex LXX conicio Ὀδολαμίτου Η
+<lb/>8 γε μόνη G1
+<lb/>15 <add>δηλοῦσα</add> διὰ conicio, lin.
+<lb/>16 post ῥάβδου add. μηνύουσα Mang., δοῦσα Cohn
+<lb/>24 προηρημένος G(H1 Mang.): προηρημένου H2 τοῦτον conicio ἀλλ’ coni. Cohn μαθεῖν vid. add.
+<lb/>26 ἀδιαφόρων G(Mang.): διαφόρων H 
+<lb/>27 ἔργα <add>καὶ ἔργων πρὸς λόγους</add> coni. Mang.
+<lb/>28 ἀνακόλουθον GH1
+<lb/>29 τά] ἀγαθὰ conicio</note>  
+
+<pb n="v.3.p.143"/>
+„οὐκ ἀνεῦρεν αὐτήν“· δυσεύρετον γὰρ ἢ καὶ παντελῶς ἀνεύρετον ἐν
+πεφυρμένῳ βίῳ τὸ καλόν. κἂν διαπύθηται, εἰ ἔστι περὶ πάντα τὸν
+τόπον τοῦ καλοῦ πεπορνευμένη ψυχή, ῥητῶς ἀκούσεται, ὅτι οὔτε ἔστιν
+οὔτε ἦν πρότερον· ἀκόλαστος γὰρ ἢ μαχλὰς ἢ τριοδῖτις σοβὰς ἢ τὸ
+<lb n="5"/> τῆς ὥρας ἄνθος ἐπευωνίζουσα ἢ καθαρσίοις καὶ λουτροῖς τὰ ἐκτὸς
+φαιδρυνομένη, τὰ δὲ ἐντὸς ῥυπῶσα, ἢ καθάπερ τὰ πινάκια χρώμασι
+τὴν ὄψιν ὑπογραφομένη χήτει φυσικῆς εὐμορφίας ἢ τὸ λεγόμενον
+πολύανδρον κακὸν ὡς ἀγαθὸν μεταδιώκουσα ἢ πολυγαμίας ἐρῶσα ἢ
+πρὸς μυρία σπειρομένη ἢ ὑπὸ μυρίων σωμάτων ὁμοῦ καὶ πραγμάτων
+<lb n="10"/> ἐμπαιζομένη καὶ περιυβριζομένη κεῖθι οὐκ ἔστι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="154">
+<p>ταῦτα ὁ διαπεμψάμενος ἀκούσας, φθόνον ἠλλοτριωκὼς ἀφ’ αὑτοῦ καὶ τὴν φύσιν ἵλεως
+ γέγηθεν οὐ μετρίως  <milestone unit="altpage2" n="p. 569 M."/> καί φησι· μὴ γὰρ οὐ δι’ εὐχῆς ἐστί μοι τὴν
+διάνοιαν ἀστείαν τε καὶ ἀστὴν ὡς ἀληθῶς εἶναι, κοσμιότητι καὶ σωφροσύνῃ
+καὶ ταῖς ἄλλαις διαπρέπουσαν ἀρεταῖς, ἑνὶ προσέχουσαν ἀνδρὶ καὶ
+<lb n="15"/> τὴν ἑνὸς οἰκουρίαν ἀγαπῶσαν καὶ μοναρχίᾳ χαίρουσαν. εἰ δὴ τοιαύτη
+τίς ἐστιν, ἐχέτω τὰ δεδομένα, καὶ τὴν παιδείαν καὶ τὸν εἱρμὸν λόγου
+πρὸς βίον καὶ βίου πρὸς λόγον καὶ τὸ ἀναγκαιότατον, βεβαιότητα καὶ
+πίστιν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="155">
+<p>ἀλλὰ μή ποτε γελασθῶμεν ἀνάξια κεχαρίσθαι δόξαντες, καίτοι γ’ ὑπολαβόντες ἐπιτηδειότατα τῇ ψυχῇ δεδωρῆσθαι. ἀλλὰ γὰρ ἐγὼ
+<lb n="20"/> μέν, ὅπερ εἰκὸς ἦν ἐργάσασθαι τὸν βουλόμενον τρόπου βάσανον καὶ
+δοκιμασίαν λαβεῖν, πεποίηκα, δέλεαρ καθεὶς καὶ διαπεμψάμενος, ὁ δὲ
+ἐπεδείξατο τὴν ἑαυτοῦ φύσιν οὐκ εὐάλωτον.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="156">
+<p>δῆλον δὲ ἐμοὶ τὸ διὰ τί οὐκ εὐάλωτος· μυρίους γὰρ εἶδον τῶν ἄγαν φαύλων τὰ αὐτὰ δρῶντας
+ἔσθ’ ὅτε τοῖς λίαν ἀγαθοῖς, ἀλλ’ οὐκ ἀπὸ διανοίας τῆς αὐτῆς, ἐπειδὴ
+<lb n="25"/> τοῖς μὲν ἀλήθεια, τοῖς δὲ ὑπόκρισις ἀσκεῖται· χαλεπὴ δ’ ἡ διάγνωσις
+ἀμφοῖν· πολλάκις γὰρ ὑπὸ τοῦ δοκεῖν παρευημερήθη τὸ εἶναι.
+<note xml:lang="mul" type="footnote">
+<lb/>1 post γάρ add. αὐτὴν H1 ἢ] εἰ G
+<lb/>4 τριοδίτης H tertium ἢ] ἡ conicio
+<lb/>7 χήτη H2
+<lb/>8 πολύανδρον scripsi: πολυάνδρειον G, πολυάνδριον Η 
+<lb/>9 μυρίας G, ἢ πρὸς μυρία σπειρομένη del. Mang.
+<lb/>10 ἔστιν Η 
+<lb/>19 ἐπιτηδειότητα GL
+<lb/>20 τρόπου (vel τρόπων) Mang. (G?): τρόπον Η τρόπου G ut vid.)
+<lb/>22 δῆλον (vel οὐκ ἄδηλον) scripsi: ἄδηλον codd.
+<lb/>23 ἄγαν om. D fol. 265
+<lb/>24 ἔσθ’ ὅτε D: om. codd. ἀλλ’ D fol. 135: om. codd., D fol. .265
+<lb/>25 ἀσκεῖται D (Markland): κεῖται GHL2, γίνεται L1 δὲ D</note> <note xml:lang="lat" type="footnote">1.
+<lb/>2 Antonius Mel. II
+<lb/>77 col. 1193 Flor. Paris. No.
+<lb/>17 Georgides p. 26,23 Boiss. Φίλωνος: δυσεύρετον—καλόν. 23—26 DK fol. 135r Φίλωνος ἐκ τοῦ φυγῆς καὶ εὑρέσεως, fol. 265v Φίλωνος ἐκ τοῦ περὶ φυγῆς. μυρίους ἐστὶν ἰδεῖν τῶν— εἶναι.</note>  
+
+<pb n="v.3.p.144"/>
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="157">
+<p> <milestone unit="altref" n="28"/> καὶ τὸν χίμαρον τὸν περὶ τῆς ἁμαρτίας ὁ φιλάρετος ζητεῖ μέν,
+οὐχ εὑρίσκει δέ· ἤδη γὰρ, ὡς δηλοῖ τὸ λόγιον, ἐνεπέπρηστο (Lev. 10, 16). τί δ’ αἰνίττεται, σκεπτέον· τὸ μὲν μηδὲν ἁμαρτεῖν ἴδιον θεοῦ,
+τὸ δὲ μετανοεῖν σοφοῦ· παγχάλεπον δὲ καὶ δυσεύρετον τοῦτό γε.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="158">
+<p>φησὶν οὖν ὁ χρησμός, ὅτι „ζητῶν ἐξεζήτησε Μωυσῆς“ ἐν τῷ θνητῷ <lb n="5"/>
+βίῳ τὸν περὶ ἁμαρτημάτων μετανοίας λόγον. ἐσπούδαζε γὰρ ἀνευρεῖν
+ἀπαμπισχομένην τὸ ἀδικεῖν ψυχὴν καὶ ἄνευ αἰσχύνης γυμνὴν προϊοῦσαν
+ἁμαρτημάτων. ἀλλ’ ὅμως οὐχ εὗρε, τῆς φλογός, λέγω δὲ τῆς ὀξυκινητοτάτης
+ὁρμῆς ἀλόγου, καταδραμούσης καὶ ὅλην ψυχὴν ἐπινεμηθείσης.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="159">
+<p>νικᾶται γὰρ τὰ μὲν ἐλάττω πρὸς τῶν πλειόνων, τὰ δὲ βραδύτερα πρὸς <lb n="10"/>
+τῶν ὠκυδρομωτέρων, τὰ δὲ μέλλοντα πρὸς τῶν παρόντων· ἐσταλμένον
+δὲ καὶ βραδὺ καὶ μέλλον ἡ μετάνοια, πολὺ δὲ καὶ ταχὺ καὶ συνεχὲς
+ἐν τῷ θνητῷ βίῳ τὸ ἀδικεῖν. εἰκότως οὖν ἐν τροπῇ τις γενόμενός
+<note xml:lang="mul" type="footnote">
+<lb/>1 χείμαρρον G
+<lb/>2 ἤδη et ἐνεπέπρηστο] ὅδε et ἐνεπεπύριστο ex LXX coni. Mang. .
+<lb/>5 Μωσῆς GH
+<lb/>6 περὶ ἀναμαρτησίας λόγον coni. Maug., sed V, Clem.
+<lb/>7 τό] τῶ H1 ἀδικεῖν G: ἁμαρτεῖν H
+<lb/>9 ὅλην G: τὴν ὅλην H, ὅλην τὴν conicio
+<lb/>10 βαρύτερα L
+<lb/>12 δὴ G</note> <note xml:lang="lat" type="footnote">1—6 Ambros. epist. 67, 3: immolatus erat hircus pro peccato et oblatus in quaesivit eum postea Moyses, et coinbustus fuerat . . . quid ista significent, consideremus.
+<lb/>4 nihil peccare solius est dei, emendare sapientis est et corrigere erratum et paenitentiam gerere peccati. id tamen est difficile in hac vita hominum. quid enim tam rarum, quam ut invenias virum, qui se ipsum coarguat et factum condemnet suum? 1.
+<lb/>2 cf. ibid.
+<lb/>6 quaerit eam (inquit add.?) lex et non invenit. ambusta est enim . . . 3—6 Clem. Alex. Paed. III §
+<lb/>93 p. 307 P.: . . . τὴν ἑπομένην ταῖς ἁμαρτίαις μετάνοιαν ἀγαπῶν. μόνος γὰρ ἀναμάρτητος αὐτὸς ὁ λόγος· τὸ μὲν γὰρ ἐξαμαρτάνειν πᾶσιν ἔμφυτον καὶ κοινόν, ἀναδραμεῖν δέ τὴν ἁμαρτίαν οὐ τοῦ τυχόντος ἀνδρός, ἀλλ’ ἀξιολόγου. 6—13 Ambros. l. c.
+<lb/>5 studebat Moyses peccati vacuam reperire animam, ut exuvias erroris deponeret et nuda culpae sine ulio sui pudore discederet. sed non invenit, quia cito impetus irrationabilis praevenit et flamma quaedara celerrimi motus animam depascitur atque exurit eius innocentiam; praeponderant enim futuris praesentia et violenta moderatis et plura paucioribus (sic Ihm pro potioribus) et iucunda seriis et asperis mollia et tristibus laeta et illecebrosa rigidioribus et praepropera tardioribus. velox enim est iniquitas, quae ad nocendum occasiones suggerit . . . lenta autem virtus omnis et diuturna cunctatrix ante iudicat et adorienda inspicit . . . pigra igitur et verecunda est paenitentia. 13—145,8 ibid. 6: respondit Aaron providum debere esse iudicium sacerdotale nec facile male sanae conscientiae committendum id muneris . . .
+<lb/>7 quomodo autem poterat ubi ignis alienus erat, peccatum exuri, et hoc sub conspectu dei, cui et occulta sunt cognita? numquid potest placere domino, si quis, cum adhuc versetur in iniquitatibus . . ., dicat se agere paenitentiam? simile est ac si quis aeger se sanum simulet. magis aegrotabit, quia nihil ei prodesse potest simulatio sanitatis, cum verbo adumbretur, non ullo fulciatur virtutis subsidio.</note>  
+
+<pb n="v.3.p.145"/>
+φησι μὴ δύνασθαι „τοῦ περὶ ἁμαρτίας ἐμφαγεῖν“· μὴ γὰρ ἐπιτρέπειν
+τὸ συνειδὸς αὐτῷ μετανοίᾳ τραφῆναι· διὸ λέγεται· „ἤκουσε Μωυσῆς,
+καὶ ἤρεσεν αὐτῷ“ (Lev. 10, 19. 20).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="160">
+<p>τὰ γὰρ πρὸς γένεσιν τῶν πρὸς θεὸν μακρὰν ἀπέζευκται· τῇ μὲν γὰρ τὰ φανερὰ μόνα, τῷ δὲ καὶ τὰ
+<lb n="5"/> ἀφανῆ γνώριμα. παραπαίει δ’, ὃς ἂν τοῦ ἀληθοῦς καταψευδόμενος ἔτ’
+ ἀδικῶν μετανενοηκέναι φάσκῃ· ὅμοιον ὡς εἰ καὶ ὁ νοσῶν τὸν  <milestone unit="altpage2" n="p. 570 M."/> ὑγιαίνοντα
+καθυποκρίνοιτο· μᾶλλον γάρ, ὡς ἔοικε, νοσήσει μηδὲν τῶν εἰς
+ὑγίειαν προσφόρων ἐπιτηδεύειν ἀξιῶν. </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="161">
+<p><milestone unit="altref" n="29"/> ἐζήτει ποτὲ προαχθεὶς ὑπὸ τοῦ φιλομαθοῦς καὶ τὰς αἰτίας, αἷς τἀναγκαιότατα τῶν ἐν τῷ
+<lb n="10"/> κόσμῳ πραγμάτων ἐπιτελεῖται· θεώμενος γὰρ ὅσα ἐν γενέσει φθειρόμενα
+καὶ γεννώμενα, ἀπολλύμενά τε αὖ καὶ διαμένοντα, τέθηπε καὶ
+καταπέπληκται καὶ ἐκβοᾷ φάσκων·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="162">
+<p>„τί, ὅτι ὁ βάτος καίεται καὶ οὐ κατακαίεται“ (Exod. 3,2. 3)· τὸν γὰρ ἄβατον οὐ πολυπραγμονεῖ χῶρον,
+θείων ἐνδιαίτημα φύσεων, ἀλλ’ ἤδη μέλλων ἀνήνυτον καὶ ἀτελῆ πόνον
+<lb n="15"/> διαθλεῖν ἐπικουφίζεται ἐλέῳ καὶ προμηθείᾳ τοῦ πάντων σωτῆρος θεοῦ,
+ὃς ἔχρησεν ἐκ τῶν ἀδύτων· „μὴ ἐγγίσῃς ὧδε“ (ibid. 5), ἴσον τῷ μὴ
+πρόσιθι τοιαύτῃ διασκέψει· περιεργίας γὰρ καὶ φιλοπραγμοσύνης μείζονος
+ἢ κατὰ ἀνθρωπίνην δύναμιν τὸ ἔργον· ἀλλὰ τὰ μὲν γεγονότα θαύμαζε,
+τὰς δὲ αἰτίας, δι’ ἃς ἢ γέγονεν ἢ φθείρεται, μὴ πολυπραγμόνει.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="163">
+<p>„ὁ <lb n="20"/> γὰρ τόπος ἐν ᾧ σὺ ἕστηκας“ φησί „γῆ ἁγία ἐστί“ (ibid. 5). ποῖος
+τόπος; ἢ δῆλον ὅτι ὁ αἰτιολογικός, ὃν μόνον ταῖς θείαις ἀνῆψε φύσεσιν,
+ἀνθρώπων οὐδένα νομίσας ἱκανὸν εἶναι αἰτιολογίας ἐφάψασθαι;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="164">
+<p>ὁ δ’ ἄρα διὰ πόθον ἐπιστήμης ὑπερκύψας ἅπαντα τὸν κόσμον ζητεῖ περὶ
+τοῦ κοσμοποιοῦ, τίς ἐστιν ὁ δυσόρατος οὗτος καὶ δυστόπαστος, σῶμα
+<lb n="25"/> ἢ ἀσώματος ἢ ὑπεράνω τι τούτων ἢ φύσις ἁπλῆ, οἵα μονάς, ἢ σύγκριμα
+ἢ τί τῶν ὄντων. καὶ τοῦθ’ ὁρῶν ὡς ἔστι δυσθήρατον καὶ δυσπερινόητον,
+<note xml:lang="mul" type="footnote">
+<lb/>2 συνειδὼς Η Μωσῆς GH
+<lb/>4 μόνον H1
+<lb/>5 ἀληθοῦς G2H2: ἀληθῶς G1H1, tum καὶ add., sed rursus del. Η
+<lb/>6 φάσκῃ sciipsi: φάσκει codd. ὁ G: om. H
+<lb/>7 τῶν] τὸν G1 εἰς s. s. G2
+<lb/>8 ποτὲ om. G, ποτὲ ὁ προφήτης φήτης conicio
+<lb/>12 τί G: om. Η οὐ secl. Mang.
+<lb/>13 χῶρον H1: χορὸν G, χῶρον ὡς H2, χῶρον, ὃς Mang.
+<lb/>15 διελθεῖν L1 πάντα G 
+<lb/>17 περιεργείας Η
+<lb/>19 τὰς G: στάς, τὰς Η
+<lb/>20 φησὶ γῆ ἁγία G: φησὶν ἅγιος H
+<lb/>21 δηλονότι G ὃν H: ὃ, tum ras. G
+<lb/>22 ἀνθρώπων G: ἄνθρωπον H οὐδὲν ἀνομίσας G1
+<lb/>24 δυσθήρατος coni. Mang. 
+<lb/>25 ἀσώματον conicio ἢ φύσις G1H: καὶ φύσις G2
+<lb/>26 ἤ τι v</note>  
+
+<pb n="v.3.p.146"/>
+εὔχεται παρ’ αὐτοῦ μαθεῖν τοῦ θεοῦ, τίς ἐστιν ὁ θεός· οὐ γὰρ ἤλπισε
+ δυνήσεσθαι γνῶναι παρ’ ἑτέρου τινὸς τῶν μετ’ αὐτόν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="165">
+<p>ἀλλ’ ὅμως
+ἴσχυσε μηδὲν περὶ τῆς τοῦ ὄντος ἐρευνᾶν οὐσίας· „τὰ γὰρ ὀπίσω μου“
+φησίν „ὄψει, τὸ δὲ πρόσωπον οὐ μὴ ἴδῃς“ (Exod. 33, 23). αὔταρκες
+γάρ ἐστι σοφῷ τὰ ἀκόλουθα καὶ ἑπόμενα καὶ ὅσα μετὰ τὸν θεὸν <lb n="5"/>
+γνῶναι, τὴν δ’ ἡγεμονικὴν οὐσίαν ὁ βουλόμενος καταθεάσασθαι τῷ
+περιαυγεῖ τῶν ἀκτίνων πρὶν ἰδεῖν πηρὸς ἔσται.</p>
+</div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="166">
+ <p><milestone unit="altref" n="30"/> Τοσαῦτα καὶ περὶ τοῦ τρίτου διειλεγμένοι κεφαλαίου
+μέτιμεν ἐπὶ τὸ τέταρτον καὶ τελευταῖον <milestone unit="altpage1" n="p. 571 M."/>  τῶν προταθέντων, καθ’ ὃ μὴ
+γενομένης ζητήσεως φιλεῖ προαπαντᾶν εὕρεσις. ἐν τούτῳ τάττεται πᾶς <lb n="10"/>
+αὐτομαθὴς καὶ αὐτοδίδακτος σοφός· οὐ γὰρ σκέψεσι καὶ μελέταις καὶ
+πόνοις ἐβελτιώθη, γενόμενος δ’ εὐθὺς εὐτρεπισμένην εὗρε σοφίαν ἄνωθεν
+ὀμβρηθεῖσαν ἀπ’ οὐρανοῦ, ἧς ἀκράτου σπάσας εἱστιάθη καὶ διετέλεσε
+ μεθύων τὴν μετ’ ὀρθότητος λόγου νήφουσαν μέθην.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="167">
+<p>οὗτός ἐστιν ὃν
+Ἰσαὰκ ὠνόμασαν οἱ χρησμοί, ὃν οὐχ ἑτέρῳ μὲν χρόνῳ συνέλαβεν, <lb n="15"/>
+ἑτέρῳ δὲ ἔτεκεν ἡ ψυχή· „συλλαβοῦσα“ γάρ φησιν „ἔτεκεν“ (Gen. 21, 2)
+ὡς ἂν ἀχρόνως. οὐ γὰρ ἄνθρωπος ἦν ὁ γεννώμενος, ἀλλὰ νόημα
+καθαρώτατον, φύσει μᾶλλον ἢ ἐπιτηδεύσει καλόν· οὗ χάριν καὶ ἡ
+τίκτουσα αὐτὸ λέγεται „τὰ γυναικεῖα ἐκλιπεῖν“ (Gen. 18, 11), τὰ συνήθη
+ καὶ εὔλογα καὶ ἀνθρώπινα.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="168">
+<p>καινὸν γὰρ καὶ κρεῖττον λόγου καὶ θεῖον <lb n="20"/>
+ὄντως τὸ αὐτομαθὲς γένος, οὐκ ἀνθρωπίναις ἐπινοίαις, ἀλλ’ ἐνθέῳ
+μανίᾳ συνιστάμενον. ἢ ἀγνοεῖς ὅτι οὐ δέονται πρὸς τὸν τόκον μαιῶν
+<note xml:lang="mul" type="footnote">
+<lb/>3 ἴσχυσε Mang.: ἤκουσε codd. ὄντως G, ὄντως ὄντος conicio ἐρευνᾶν codd. (Mang.): ἐρευνῶν Turn.
+<lb/>4 οὐ GH2: om. H1
+<lb/>5 ἑπόμενα καὶ GD: om. H
+<lb/>6 δ’] δέ γε D τῴ om. D
+<lb/>9 προτεθέντων L 
+<lb/>10 προαπαντᾶν ᾶν e corr. H2
+<lb/>11 σκέψει G
+<lb/>13 ἧς in ras. G et 2 ἀκράτου H (sed του H2 in ras.): ἀκρατοῦς G διετέλεσε G (Mang.): διετελέσθη H
+<lb/>16 δ’ H
+<lb/>17 γενόμενος H1 18.
+<lb/>19 ἐπιτηδεύσει— λέγεται τὰ in mg. Η2
+<lb/>19 αὐτῶ G ἐκλείπειν H
+<lb/>20 κενὸν L 21.
+<lb/>22 ἐνθεομανία H</note> <note xml:lang="mul" type="footnote">
+<lb/>4 —
+<lb/>7 DC fol. 44r: ἐκ τοῦ περὶ φυγῆς καὶ εὑρέσεως: αὔταρκες ἐστὶν—ἔσται. 
+<lb/>10 sqq. Ambros. de fuga saeculi 8,47: paritura laetitiam et sobriam illam iocunditatis ebrietatem, paritura ante expectatum ingenii celeritate partus, feta sapientiae. 22—147,3 ibid.: denique et de aliis Hebraeis mulieribus habes quia Hebraeae prius pariunt quam veniant obstetrices, eo quod animae iustorum non expectent artes et disciplinas propter inventionum genera nec requirant adiumenta generandi, sed sponte partus suos fundant expectationemque praeveniant.</note>  
+
+<pb n="v.3.p.147"/>
+Ἑβραῖαι, „τίκτουσι“ δ’, ὥς φησι Μωυσῆς, „πρὶν εἰσελθεῖν τὰς μαίας“
+(Exod. 1, 19), λέγω δὲ μεθόδους, τέχνας, ἐπιστήμας, φύσει μόνῃ
+χρώμεναι συνεργῷ; παγκάλους δὲ καὶ προσφυεστάτους ὅρους ἀποδίδωσι
+τοῦ αὐτομαθοῦς, ἕνα μὲν τοιοῦτον, τὸ ταχὺ εὑρισκόμενον, ἕτερον δὲ
+<lb n="5"/> „ὃ παρέδωκεν ὁ θεός“.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="169">
+<p>τὸ μὲν οὖν διδασκόμενον μακροῦ χρόνου δεῖται, τὸ δὲ φύσει ταχύ τε καὶ τρόπον τινὰ ἄχρονόν ἐστι· κἀκεῖνο μὲν
+ἄνθρωπον, τοῦτο δὲ θεὸν ὑφηγητὴν ἔχει. τὸν μὲν δὴ πρότερον ὅρον
+κατέταξεν ἐν πεύσει· „τί τοῦτο ὃ ταχὺ εὗρες, ὦ τέκνον“, τὸν δὲ ἕτερον
+ἐν ἀποκρίσει φάσκων· „ὃ παρέδωκε κύριος ὁ θεός“ (Gen. 27, 20).
+<lb n="10"/> </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="170">
+<p><milestone unit="altref" n="31"/> ἔστι δὲ καὶ τρίτος ὅρος τοῦ αὐτομαθοῦς, τὸ ἀναβαῖνον αὐτόματον. λέγεται γὰρ ἐν τοῖς προτρεπτικοῖς· „οὐ σπερεῖτε, οὐδὲ μὴ ἀμήσητε τὰ
+αὐτόματα ἀναβαίνοντα αὐτῆς“ (Lev. 25, 11)· τέχνης γὰρ οὐδεμιᾶς
+χρεῖα τὰ φύσει, τοῦ θεοῦ σπείροντος αὐτὰ καὶ τῇ γεωργικῇ τέχνῃ
+τελεσφοροῦντος ὡς ἂν αὐτόματα τὰ οὐκ αὐτόματα, πλὴν παρόσον ἐπινοίας
+<lb n="15"/> ἀνθρωπίνης οὐκ ἐδεήθη τὸ παράπαν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="171">
+<p>οὐ προτρέπει δὲ μᾶλλον ἢ γνώμην ἀποφαίνεται· παραινῶν μὲν γὰρ εἶπεν ἄν· μὴ σπείρητε, μὴ
+ἀμήσητε, ἀποφαινόμενος δέ· „οὐ σπερεῖτε, οὐδὲ μὴ ἀμήσητε τὰ αὐτόματα“.
+οἷς γὰρ ἀπαυτοματίζουσιν ἐκ φύσεως ἐπιτυγχάνομεν, τούτων
+<note xml:lang="mul" type="footnote">
+<lb/>3 χρώμεναι Η2: χρωμένας G(H1) παγκάλως Η
+<lb/>4 ἕτερος Turn.
+<lb/>7 τουτὶ G2
+<lb/>8 πεύσει] post π ras. in G
+<lb/>11 ἀμήσετε coni. Mang.
+<lb/>13 χρεία v τὰ G(H1): τῆ Η2
+<lb/>16 γνώμη G σπείρητε] οὐδ’ οὐ s. s. Η2
+<lb/>17 ἀμήσετε H
+<lb/>18 ἀπαυτοματιζομένοις conicio</note> <note xml:lang="lat" type="footnote">
+<lb/>3 —
+<lb/>9 ibid. 8,48: nec minus inpiger ad inveniendum quam ad exsequendum lacob, cui cum mater dixisset ut inferret patri escas, detinitionum genera suppetisse cernimus. nam et cito invenit et inventorum suorum auctorem testificatus est deum . . . prima ergo definitio in inventione. quod invenitur quaeritur et quod quaeeritur temporis est et quod temporis est utique diligentiae est. quod autem praevenit usum temporis deus infundit, deus dat, quod deus dat naturae, non diligentiae, est. ingenium igitur divini est mnneris, quod autem divini muneris hoc naturae. ingenium ergo naturae est, inventio diligentiae: illud sine tempore, hoc indiget tempore. ideoque illud tempore praesto est, hoc in spatio temporis investigatur . . . 3—15 epist. 8,
+<lb/>12 (cf. § 11): pulcre autem quos dicunt ὅρους servavit . . . secundus ὅρος: quid est quod tam cito invenisti? hic in interrogatione est, tertius ὅρος in responsione: quod tradidit dominus deus tuus in manus meas meas . . .
+<lb/>13 est et ille ὅρος de spontaneis: si non seminaveritis, non metetis. nam etsi cultura provocet semina, tamen natura spontaneo quodam, ut surgant, in eis operatur ingenio. 7—9 de fuga saeculi 8,49: unde miratus pater ait: quid est hoc, quod tam cito invenisti, fili? respondit lacob: quod tradidit dominus deus tuus in manus meas. prima definitio in interrogatione est, secunda in responso.</note>  
+
+<pb n="v.3.p.148"/>
+οὔτε τὰς ἀρχὰς οὔτε τὰ τέλη παρ’ ἑαυτοὺς <milestone unit="altpage1" n="p. 572 M."/>  ὡς ἂν αἰτίους εὑρίσκομεν·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="172">
+<p>ἀρχὴ μὲν οὖν ὁ σπόρος, τελευτὴ δὲ ὁ ἄμητος. ἄμεινον δ’ ἐκεῖνο
+ἐκδέξασθαι· πᾶσα ἀρχὴ καὶ πᾶν τέλος αὐτόματόν ἐστιν, ἴσον τῷ φύσεως,
+οὐχ ἡμέτερον ἔργον· οἷον ἀρχὴ τίς τοῦ μανθάνειν; ἢ δῆλον ὅτι ἡ ἐν
+τῷ διδασκομένῳ φύσις εὐπαράδεκτος οὖσα πρὸς τὰ κατὰ μέρος θεωρήματα; <lb n="5"/>
+τίς δὲ τοῦ τελειοῦσθαι; πάλιν, εἰ δεῖ μηδὲν ὑποστειλάμενον εἰπεῖν,
+ἡ φύσις. προκοπὰς μὲν γὰρ ἐμποιῆσαι καὶ ὁ διδάσκων ἱκανός, τὴν δ’
+ ἐπ’ ἄκρον τελειότητα ὁ θεὸς μόνος, ἡ ἀρίστη φύσις.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="173">
+<p>ὁ τούτοις
+ἐντρεφόμενος τοῖς δόγμασι τὴν ἀίδιον εἰρήνην ἄγει, πόνων ἀφειμένος
+ἀτρύτων. ἀδιαφορεῖ δ’ ἑβδομάδος εἰρήνη κατὰ τὸν νομοθέτην· ἐν γὰρ <lb n="10"/>
+ αὐτῇ τὸ δοκεῖν ἐνεργεῖν ἀποτιθεμένη γένεσις ἀναπαύεται.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="174">
+<p>προσηκόντως
+οὖν λέγεται· „καὶ ἔσται τὰ σάββατα τῆς γῆς ὑμῖν βρώματα“ (Lev. 25, 6),
+δι’ ὑπονοιῶν· τρόφιμον γὰρ καὶ ἀπολαυστὸν μόνον ἡ ἐν θεῷ ἀνάπαυσις,
+τὸ μέγιστον ἀγαθὸν περιποιοῦσα, τὴν ἀπόλεμον εἰρήνην. ἡ μὲν
+γὰρ κατὰ πόλεις ἀνακέκραται ἐμφυλίῳ πολέμῳ, ἡ δὲ ψυχῆς ἀμιγὴς <lb n="15"/>
+ διαφορᾶς ἁπάσης ἐστίν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="175">
+<p>ἐναργέστατα δέ μοι δοκεῖ τὴν ἄνευ ζητήσεως
+εὕρεσιν παριστάνειν διὰ τούτων· „ὅταν εἰσαγάγῃ σε κύριος ὁ θεός σου
+εἰς τὴν γῆν ἣν ὤμοσε τοῖς πατράσι σου δοῦναί σοι πόλεις μεγάλας καὶ
+καλάς, ἃς οὐκ ᾠκοδόμησας, οἰκίας πλήρεις πάντων ἀγαθῶν, ἃς οὐκ
+ἐνέπλησας, λάκκους λελατομημένους, οὓς οὐκ ἐξελατόμησας, ἀμπελῶνας <lb n="20"/>
+ καὶ ἐλαιῶνας, οὓς οὐ κατεφύτευσας“ (Deut. 6, 10. 11).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="176">
+<p>ὁρᾷς τὴν
+ἀφθονίαν τῶν κεχυμένων μεγάλων καὶ ἑτοίμων πρὸς κτῆσιν καὶ ἀπόλαυσιν
+ἀγαθῶν; εἰκάζονται δὲ πόλεσι μὲν αἱ γενικαὶ ἀρεταί, διότι ἐπὶ
+πλεῖστον εὐρύνονται, οἰκίαις δ’ αἱ ἐν εἴδει — στέλλονται γὰρ εἰς
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἑαυτοὺς G: ἑαυτοῖς H ἂν αἰτίους scripsi: ἀναιτίους codd., ἀναιτίοις Turn., ἀναιτίων coni. Mang.
+<lb/>2 ἐκείνως conicio
+<lb/>3 παντελοῦς G2
+<lb/>4 ἀρχὴ τις v ἢ] ἡ Turn., om. Mang. δηλονότι G ἡ om. Turn. 5.
+<lb/>6 θεωρητά coni. Mang. 
+<lb/>7 γὰρ G: οὖν H δ’ G: δὲ Η2, om. H1
+<lb/>16 ἐναργέστατα G(H1): ἐναργεστάτην Η2
+<lb/>18 σοι om. Turn.
+<lb/>21 οὐ κατεφύτευσας G: οὐκ ἐφύτευσας Η 
+<lb/>22 μεγάλων om. G, fort. recte
+<lb/>24 πλείστων] Η1 ut vid. δὲ Η αἱ om. H1</note> <note xml:lang="lat" type="footnote">
+<lb/>2 —
+<lb/>8 episl. 8,14: incrementa per naturam, quae divini habet gratiam muneris, consummationem et perfectionem deus dat . . . 8—14 Ambros. de fuga 8,45: illo fugiendum est, ubi pax, ubi retiuies ab operibus, ubi epulemur sabbatum magnum, sicut dixit Moyses: et erunt sabbata terrae vobis escae. epulatorium enim et plenum iocunditatis et tranquillitatis est requiescere in deo et eius delectationem videre.</note>  
+
+<pb n="v.3.p.149"/>
+βραχύτερον αὗται κύκλον —, λάκκοις δὲ αἱ εὐφυεῖς ψυχαί, αἱ εὐπαράδεκτοι σοφίας ὡς ἐκεῖνοι ὕδατος, ἀμπελῶσι δὲ καὶ ἐλαιῶσιν αἱ προκοπαὶ
+καὶ αὐξήσεις καὶ καρπῶν γενέσεις· καρπὸς δ’ ἐπιστήμης ὁ θεωρητικὸς
+βίος, ἄκρατον εὐφροσύνην περιποιῶν ὡς ἀπ’ οἴνου καὶ νοητὸν φέγγος
+<lb n="5"/> ὡς ἀπὸ φλογός, ἧς ἔλαιον τροφή.</p>
+</div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="177">
+<p><milestone unit="altref" n="32"/> Ταῦτα καὶ περὶ εὑρέσεως εἰπόντες μέτιμεν ἑξῆς ἐπὶ τὰ ἀκόλουθα τῆς ἐφόδου. „εὗρεν“ οὖν φησιν „αὐτὴν ἄγγελος κυρίου ἐπὶ
+τῆς πηγῆς τοῦ ὕδατος„ (Gen. 16, 7). λέγεται δὲ πολλαχῶς πηγή, ἕνα
+μὲν τρόπον ὁ ἡμέτερος νοῦς, ἕτερον δὲ ἡ λογικὴ ἕξις καὶ παιδεία,
+<lb n="10"/> τρίτον δ’ ἡ φαύλη διάθεσις, τέταρτον ἡ σπουδαία καὶ ἐναντία ταύτης,
+ πέμπτον αὐτὸς ὁ τῶν ὅλων  <milestone unit="altpage2" n="p. 573 M."/> ποιητὴς καὶ πατήρ.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="178">
+<p>τὰς δὲ τούτων πίστεις οἱ ἀναγραφέντες δηλοῦσι χρησμοί· τίνες οὖν εἰσιν, ἐπισκεπτέον.
+ᾄδεταί τις ἐν ἀρχῇ τῆς νομοθεσίας μετὰ τὴν κοσμοποιίαν εὐθὺς τοιόσδε·
+„πηγὴ δὲ ἀνέβαινεν ἐκ τῆς γῆς καὶ ἐπότιζε πᾶν τὸ πρόσωπον τῆς γῆς“
+<lb n="15"/> (Gen. 2, 6).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="179">
+<p>οἱ μὲν οὖν ἀλληγορίας καὶ φύσεως τῆς κρύπτεσθαι φιλούσης ἀμύητοι τὴν εἰρημένην εἰκάζουσι πηγὴν τῷ Αἰγυπτίῳ ποταμῷ,
+ὃς κατὰ πᾶν ἔτος ἀναχεόμενος λιμνάζει τὴν πεδιάδα, μονονοὺκ ἀντίμιμον οὐρανοῦ δύναμιν ἐπιδείκνυσθαι δοκῶν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="180">
+<p>ὃ γὰρ χειμῶνος ταῖς ἄλλαις χώραις οὐρανός, τοῦτ’ Αἰγύπτῳ θέρους ἀκμάζοντος ὁ Νεῖλός
+<lb n="20"/> ἐστιν· ὁ μὲν γὰρ ἄνωθεν ἐπὶ γῆν τὸν ὑετὸν ἀποστέλλει, ὁ δὲ κάτωθεν
+ἄνω, τὸ παραδοξότατον, ὕων ἄρδει τὰς ἀρούρας. ὅθεν ὁρμηθεὶς καὶ
+Μωυσῆς ἄθεον ἀνέγραψε τὸν Αἰγύπτιον τρόπον γῆν οὐρανοῦ προκρίνοντα καὶ τῶν ὀλυμπίων τὰ χερσαῖα καὶ ψυχῆς τὸ σῶμα.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="181">
+<p>ἀλλὰ μὴν περὶ τούτων καὶ αὖθίς ποτε ἐνέσται λέγειν, ὅταν ἐπιτρέπωσιν οἱ
+<lb n="25"/> καιροί· νυνὶ δὲ — στοχαστέον γὰρ τοῦ μὴ μακρηγορεῖν  — ἐπανιτέον
+ἐπὶ τὴν δι’ ὑπονοιῶν ἀπόδοσιν καὶ λεκτέον τὸ „πηγὴν ἀναβαίνειν καὶ
+ποτίζειν πᾶν τὸ πρόσωπον τῆς γῆς“ τοιοῦτον εἶναι·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="182">
+<p>τὸ ἡγεμονικὸν ἡμῶν ἐοικὸς πηγῇ δυνάμεις πολλὰς οἷα διὰ γῆς φλεβῶν ἀνομβροῦν, τὰς δυνάμεις ταύτας ἄχρι τῶν αἰσθήσεων [ὀργάνων], ὀφθαλμῶν, ὤτων, ῥινῶν,
+<lb n="30"/> τῶν ἄλλων, ἀποστέλλει· αἱ δ’ εἰσὶ παντὸς ζῴου περὶ κεφαλὴν καὶ
+πρόσωπον. ποτίζεται οὖν ὥσπερ ἀπὸ πηγῆς τοῦ κατὰ ψυχὴν
+<note xml:lang="mul" type="footnote">
+<lb/>1 alteriim αἱ om. H1
+<lb/>3 alt. καὶ in ras. Η2
+<lb/>4 ἀπὸ νοῦ G
+<lb/>5 ἧς H2: εἰς G(H1)
+<lb/>10 ταύτῃ coni. Mang.
+<lb/>13 ᾄδεται ia ras. Η2
+<lb/>24 μὴν Mρὶ scripsi: μ̀ν περὶ GH1, περὶ ἡ H2, περὶ μὲν v καὶ G: om. Η 
+<lb/>28 ἀνομβροῦν Η2: ἀνομβρεῖ G(H1)
+<lb/>29 ἄχρι-ὀργάνων lin.
+<lb/>28 post φλεβῶν transpos. H αἰστηθησεων Turn.: αἰσθήσεως codd. (sed v. lin.
+<lb/>30 αἱ) ὀργάνων secl. Cohn
+<lb/>31 ποτίζεται G2: ποτίζετ’ G1H</note>  
+
+<pb n="v.3.p.150"/>
+ἡγεμονικοῦ τὸ σώματος ἡγεμονικὸν πρόσωπον, τὸ μὲν ὁρατικὸν πνεῦμα τείνοντος
+εἰς ὄμματα, τὸ δὲ ἀκουστικὸν εἰς οὖς, εἰς δὲ μυκτῆρας τὸ ὀσφρήσεως,
+τὸ δ’ αὖ γεύσεως εἰς στόμα καὶ τὸ ἁφῆς εἰς σύμπασαν τὴν ἐπιφάνειαν.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="183">
+<p> <milestone unit="altref" n="33"/> εἰσὶ δὲ καὶ τῆς παιδείας πολύτροποι πηγαί, αἷς ὀρθοὶ καὶ τροφιμώτατοι
+λόγοι, καθάπερ στελέχη φοινίκων, παρανέβλαστον. „ἦλθον“ <lb n="5"/>
+γάρ φησιν „εἰς Αἰλίμ, καὶ ἐν Αἰλὶμ ἦσαν δώδεκα πηγαὶ ὑδάτων καὶ
+ἑβδομήκοντα στελέχη φοινίκων· παρενέβαλον δὲ ἐκεῖ παρὰ τὰ ὕδατα“
+(Exod. 15, 27). Αἰλὶμ πυλῶνες ἑρμηνεύονται, εἰσόδου τῆς πρὸς ἀρετὴν
+σύμβολον· ὥσπερ γὰρ οἰκίας ἀρχαὶ πυλῶνες, καὶ ἀρετῆς τὰ ἐγκύκλια
+ προπαιδεύματα.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="184">
+<p>τέλειος δ’ ἀριθμὸς ὁ δώδεκα, μάρτυς δ’ ὁ ζῳδιακὸς <lb n="10"/>
+ἐν οὐρανῷ κύκλος, τοσούτοις κατηστερισμένος φωσφόροις ἄστροις· μάρτυς
+καὶ ἡ ἡλίου περίοδος· μησὶ γὰρ δώδεκα τὸν ἑαυτοῦ περατοῖ κύκλον,
+ἰσαρίθμους τε τοῖς ἐνιαυτοῦ μησὶ τὰς ἡμέρας καὶ νυκτὸς ὥρας ἄγουσιν
+ ἄνθρωποι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="185">
+<p>Μωυσῆς δ’ οὐκ ἐν ὀλίγοις ὑμνεῖ τὸν ἀριθμόν, δώδεκα
+φυλὰς τοῦ ἔθνους ἀναγράφων, ἄρτους δώδεκα τῆς προθέσεως νομοθετῶν, <lb n="15"/>
+λίθους, ἐν οἷς αἱ γλυφαί, δώδεκα τῇ ἱερᾷ ἐσθῆτι τοῦ ποδήρους ἐνδύματος
+ ἐπὶ τῷ λογίῳ συνυφαίνειν <milestone unit="altpage1" n="p. 574 M."/>  κελεύων (Exod. 28, 17 sqq.).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="186">
+<p>ὑμνεῖ
+μέντοι καὶ τὴν δεκάδι πολυπλασιαζομένην ἑβδομάδα, νυνὶ μὲν ἑβδομήκοντα
+φοίνικας παρὰ ταῖς πηγαῖς εἶναι λέγων, ἐν ἑτέροις δὲ πρεσβυτέρους
+μόνους ἑβδομήκοντα, οἷς τὸ θεῖον ἐπενεμήθη καὶ προφητικὸν <lb n="20"/>
+πνεῦμα (Num. 11,16), καὶ πάλιν ἱερεῖα μόσχων ἑβδομήκοντα ἐν διαιρέσεσι
+καὶ τάξεσιν ἐναρμονίοις ἑορτῇ τῶν σκηνῶν προσαγομένων· βουθυτοῦνται
+γὰρ οὐκ ἀθρόοι, ἀλλ’ ἐν ἡμέραις ἑπτά, τῆς ἀρχῆς ἀπὸ τρισκαίδεκα
+ταύρων γενομένης (Num. 29, 13 sqq.)· οὕτως γὰρ κατὰ τὴν
+ἑνὸς ὑφαίρεσιν ἀεὶ μέχρι τῆς ἑβδόμης ἔμελλεν ὁ τῶν ἑβδομήκοντα συντεθεὶς <lb n="25"/>
+ ἀριθμὸς ἐκπληροῦσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="187">
+<p>παραγενόμενοι δὲ εἰς τοὺς θυρῶνας
+ἀρετῆς, τὰ προπαιδεύματα, καὶ θεασάμενοι πηγὰς καὶ παρ’ αὐταῖς ἔρνη
+φοινίκων στρατοπεδεύειν οὐ παρὰ τοῖς φυτοῖς ἀλλὰ παρὰ τοῖς ὕδασι
+λέγονται. διὰ τί; ὅτι φοίνικι μὲν καὶ ταινίαις οἱ παντελοῦς ἀρετῆς
+ἐπιφερόμενοι τὰ ἆθλα κοσμοῦνται, οἱ δὲ ἔτι <add>ἐγ</add>χορεύοντες τοῖς προπαιδεύμασιν <lb n="30"/>
+<note xml:lang="mul" type="footnote">
+<lb/>3 ἅπασαν Η
+<lb/>5 παρανέβλαστον G: παρενέβλαστον Η
+<lb/>6 Αἰλὶμ G: Αἰλεὶμ H, sed αι ex corr. H2 Ἐλὶμ G Ἑλεὶμ Η1): Αἰλεὶμ Η2 ἤσαν G2: om. G1H 
+<lb/>8 Ἐλἰμ G Ἐλεὶμ H1): Αἰλεὶμ H2
+<lb/>9 οἰκίας G2: οἰκίαι G1 ut vid., οἰκιῶν H 
+<lb/>13 καὶ codd.: καὶ τἀς v
+<lb/>14 Μωσῆς codd.
+<lb/>18 μὲν in ras. H2: δὲ G(H1?)
+<lb/>21 μόσχων G: μόσχους H 21.
+<lb/>22 διαιρέσει H
+<lb/>22 προσαγομένων] post ο spatium
+<lb/>4 litt. in H
+<lb/>23 ἀλλὰ G 27.
+<lb/>28 ἔρνη — alt. τοῖς om. G 
+<lb/>30 περιφερόμενοι coni. Mang., ἀποφερόμενοι Cohn, φερόμενοι conicio 30—151,6 κοσμοῦνται —ἀμφότεροι in mg. H2 ἐγχορεύοντες Mang.: χορεύοντες codd.</note>  
+
+<pb n="v.3.p.151"/>
+ ἅτε μαθήσεως διψῶντες παρὰ ταῖς δυναμέναις ἄρδειν καὶ
+ποτίζειν τὰς ψυχὰς αὐτῶν ἐπιστήμαις ἱδρύονται. </p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="188">
+<p><milestone unit="altref" n="34"/> τοιαῦται μέν εἰσιν αἱ παιδείας τῆς μέσης πηγαί, τὴν δ’ ἀφροσύνης ἐπισκεψώμεθα,
+περὶ ἧς λελάληκεν ὁ νομοθέτης ὧδε· „ὃς ἂν κοιμηθῇ μετὰ γυναικὸς
+<lb n="5"/> ἀποκαθημένης, τὴν πηγὴν αὐτῆς ἀπεκάλυψε, καὶ αὕτη ἀπεκάλυψε τὴν
+ῥύσιν τοῦ αἵματος αὐτῆς· ἐξολοθρευθήτωσαν ἀμφότεροι“ (Lev. 20,18)·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="189">
+<p>γυναῖκα τὴν αἴσθησιν καλεῖ, νοῦν ἄνδρα αὐτῆς ὑποτιθέμενος. ἀποκάθηται δὲ αἴσθησις, ὅπερ ἐστὶν ἀπωτάτω καθέζεται, ὅταν νοῦν ἀπολιποῦσα,
+τὸν γνήσιον ἄνδρα, ἐφιδρύηται τοῖς δελεάζουσι καὶ φθείρουσιν
+<lb n="10"/> αἰσθητοῖς καὶ ἐρωτικῶς ἑκάστοις ἐμπλέκηται· τότ’ οὖν εἰ πρὸς ὕπνον
+τράποιτο ὁ νοῦς, ἐγρηγορέναι δέον, „τὴν πηγὴν“ τῆς αἰσθήσεως „ἀπεκάλυψεν“
+αὑτὸν — αὐτὸς γὰρ ἦν, ὥσπερ ἔφην, ἡ αἰσθήσεως πηγή —,
+τοῦτο δέ ἐστιν ἄστεγον καὶ ἀτείχιστον καὶ εὐεπιβούλευτον κατεσκεύασεν
+ἑαυτόν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="190">
+<p>οὐ μὴν ἀλλὰ κἀκείνη „ἀπεκάλυψε τὴν ῥύσιν τοῦ αἵματος <lb n="15"/> αὐτῆς“· ῥέουσα γὰρ πᾶσα αἴσθησις πρὸς τὸ ἐκτὸς αἰσθητὸν ἐπικαλύπτεται
+μὲν καὶ στέλλεται διακρατουμένη λογισμῷ, καταλείπεται δὲ ἔρημος
+χηρεύσασα ἡγεμόνος ὀρθοῦ· κακὸν δὲ βαρύτατον ὡς πόλει τὸ ἀτείχιστον,
+καὶ ψυχῇ τὸ ἀφύλακτον. πότ’ οὖν ἀφύλακτος γίνεται;</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="191">
+<p>ἢ ὅταν ἄστεγος μὲν ὅρασις κεχυμένη πρὸς τὰ ὁρατά, ἄστεγος δὲ ἀκοὴ φωναῖς
+<lb n="20"/> ἁπάσαις ἐπαντλουμένη, ἄστεγοι δὲ ὀσμαὶ καὶ αἱ συγγενεῖς δυνάμεις
+καταλειφθῶσι, πρὸς ὅ τι ἂν οἱ κατατρέχοντες βούλωνται διαθεῖναι
+παθεῖν ἑτοιμόταται, ἄστεγος δὲ καὶ ὁ προφορικὸς λόγος, ὃς μυρία τῶν
+ ἀπορρήτων, ἅτε μηδενὸς τὴν  <milestone unit="altpage2" n="p. 575 M."/> φορὰν ἀνωθοῦντος, ἀκαίρως ἐξελάλησε;
+ῥυεὶς γοῦν ἀκωλύτως μεγάλας βίων ὑποθέσεις ὀρθὰς οἷα ἐν γαλήνῃ
+<lb n="25"/> πλεούσας περιέτρεψεν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="192">
+<p>οὗτός ἐστιν ὁ μέγας κατακλυσμός, ἐν ᾧ „ἀνεῴχθησαν μὲν οἱ καταρράκται τοῦ οὐρανοῦ,“ λέγω δὲ τοῦ νοῦ, „ἀπεκαλύφθησαν
+δὲ αἱ πηγαὶ τῆς ἀβύσσου“ (Gen. 7,11), τουτέστι τῆς αἰσθήσεως.
+μόνως γὰρ οὕτως ἡ ψυχὴ κατακλύζεται, ἄνωθεν μὲν ὥσπερ ἀπ’
+οὐρανοῦ τοῦ νοῦ καταρραγέντων ἀδικημάτων, κάτωθεν δὲ ὥσπερ ἀπὸ
+<note xml:lang="mul" type="footnote">
+<lb/>6 αὑτῆς V
+<lb/>8 δὲ] δὲ ἡ V νοῦν Mang.: οὑν codd.
+<lb/>11 τῆ πηγῆ Η1, ut vid.
+<lb/>12 αὐτὸν Η2: αὐτόν GH1, fort. secl. ὅπερ G ἔφη Η1 ἡ G: τῆ Η1, τῆς Η2
+<lb/>15 αὑτῆς v ῥέπουσα coni. Mang. 15.
+<lb/>16 ἀποκαλύπτεται H, ἐπέχεται coni. Mang.
+<lb/>16 καταλίπεται G
+<lb/>17 δὲ] γὰρ Turn.
+<lb/>18 καὶ om. Η ἦ V
+<lb/>20 ἐναντλουμένη H
+<lb/>21 καταλειφθῶσι scripsi: καταλείφωσι G, καταλείφουσι Η1, καταλείφουσαι H2L, καταλείπουσαι Turn., καταλειφθεῖσαι Markland 
+<lb/>21 βούλωνται Maug.: βούλονται codd.
+<lb/>22 παθεῖν Markland: ἀπαθεῖν G, ἃ παθεῖν H 
+<lb/>23 ἀντωθοῦντος coni. Mang.
+<lb/>26 καταράκται G 29. 152,1 καταρραγέντων et ἀνομβρησάντων alterum in alterius locum transpon. Mang.</note>  
+
+<pb n="v.3.p.152"/>
+ γῆς τῆς αἰσθήσεως ἀνομβρησάντων παθῶν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="193">
+<p>οὗ χάριν ἀπαγορεύει
+Μωυσῆς „ἀσχημοσύνην πατρὸς καὶ μητρὸς ἀποκαλύπτειν“ (Lev. 18,7),
+εἰδὼς σαφῶς, ἡλίκον ἐστὶ κακὸν τὰ ἁμαρτήματα τοῦ νοῦ καὶ τῆς
+αἰσθήσεως μὴ ἐπέχειν καὶ ἐπικρύπτειν, ἀλλ’ ὥσπερ κατορθώματα προφέρειν
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="194">
+<p> εἰς μέσον. <milestone unit="altref" n="35"/> αἵδ’ εἰσὶν αἱ τῶν ἁμαρτημάτων πηγαί, τὴν <lb n="5"/>
+δὲ φρονήσεως ἐρευνητέον. εἰς ταύτην ἡ ὑπομονὴ κάτεισι, Ῥεβέκκα,
+καὶ τὸ ψυχῆς ὅλον πληρώσασα ἀγγεῖον ἀναβαίνει, τὴν κάθοδον ἄνοδον
+εἰπόντος τοῦ νομοθέτου φυσικώτατα· πρὸς γὰρ ὕψος ἐξαίρεται τὸ ἀρετῆς,
+ ἥτις ἂν ἀπ’ ἀλαζονείας τῆς ὑπεραύχου διανοῆται κατέρχεσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="195">
+<p>λέγει
+γάρ· „καταβᾶσα δὲ ἐπὶ τὴν πηγὴν ἔπλησε τὴν ὑδρίαν, καὶ ἀνέβη“ (Gen. <lb n="10"/>
+24,16). ἥδ’ ἐστὶν ἡ θεία σοφία, ἐξ ἧς αἵ τε κατὰ μέρος ἐπιστῆμαι
+ποτίζονται καὶ ὅσαι ψυχαὶ φιλοθεάμονες ἔρωτι τοῦ ἀρίστου κατέσχηνται.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="196">
+<p>ταύτῃ ὁ ἱερὸς λόγος τῇ πηγῇ προσφυέστατα ὀνόματα τίθεται, „κρίσιν“
+αὐτὴν καὶ „ἁγίαν“ προσαγορεύων. „ἀναστρέψαντες“ γάρ φησιν "ἦλθον
+ἐπὶ τὴν πηγὴν τῆς κρίσεως, αὕτη ἐστὶ Κάδης“ (Gen. 14,7)· καλεῖται <lb n="15"/>
+δὲ Κάδης ἁγία. μονονοὺ βοᾷ καὶ κέκραγεν, ὅτι ἡ τοῦ θεοῦ σοφία
+ἁγία τέ ἐστιν οὐδὲν ἐπιφερομένη γήινον καὶ κρίσις τῶν ὅλων, ᾗ πᾶσαι
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="197">
+<p> αἱ ἐναντιότητες διαζεύγνυνται. <milestone unit="altref" n="36"/> λεκτέον δ’ ἤδη περὶ τῆς ἀνωτάτω
+καὶ ἀρίστης πηγῆς, ἣν ὁ πατὴρ τῶν ὅλων διὰ προφητικῶν ἐθέσπισε
+στομάτων. εἶπε γάρ που· „ἐμὲ ἐγκατέλιπον πηγὴν ζωῆς, καὶ <lb n="20"/>
+ὤρυξαν ἑαυτοῖς λάκκους συντετριμμένους, οἳ οὐ δυνήσονται συσχεῖν
+ ὕδωρ“ (Ier. 2,13).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="198">
+<p>οὐκοῦν ὁ θεός ἐστιν ἡ πρεσβυτάτη <add>πηγή</add>, καὶ
+μήποτ’ εἰκότως· τὸν γὰρ σύμπαντα τοῦτον κόσμον ὤμβρησε. καταπέπληγμαι
+δ’ ἀκούων, ὅτι ζωῆς ἐστιν ἥδε ἡ πηγή· μόνος γὰρ ὁ θεὸς
+ψυχῆς καὶ ζωῆς καὶ διαφερόντως λογικῆς ψυχῆς καὶ τῆς μετὰ φρονήσεως <lb n="25"/>
+ζωῆς αἴτιος. ἡ μὲν γὰρ ὕλη νεκρόν, ὁ δὲ θεὸς πλέον τι ἢ ζωή,
+ πηγὴ τοῦ ζῆν, ὡς αὐτὸς εἶπεν, ἀένναος.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="199">
+<p>οἱ δ’ ἀσεβεῖς ἀποδράντες,
+ἄγευστοι τοῦ τῆς ἀθανασίας ποτοῦ διατελέσαντες, ὤρυξαν, οἱ
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἀνομβρησάντων G1: ἀνομβρῆσαν τῶν G2, ἀνομβρησάντων τῶν Η
+<lb/>2 Μωσῆς codd.
+<lb/>7 τὸ codd.: τὸ τῆς v
+<lb/>9 ἥτις G: εἰ τις H διανοεῖται H 
+<lb/>13 ὁ] δ’ ὁ conieio
+<lb/>15 Κάδδης Η
+<lb/>16 Κάδδης H ἅγιος H, ἁγία <add>ὥστε</add> conicio μόνον οὐ GH ἐκβοᾷ Η τοῦ θεοῦ GH: τοῦ τοῦ om. v 
+<lb/>18 αἱ om. H post ἤδη add. καὶ H
+<lb/>20 σωμάτων L
+<lb/>21 ἑαυτοὺς H1 
+<lb/>22 πηγή addidi 23.
+<lb/>24 #x003E; καταπέπληγμαι coni. Mang.
+<lb/>25 λογικῶς H1 ut vid.
+<lb/>26 νεκρῶν H1</note> <note xml:lang="lat" type="footnote">
+<lb/>6 sqq. cf. Orig. Homil. in Num. XII p. 311 sqq.</note>  
+
+<pb n="v.3.p.153"/>
+ φρενοβλαβεῖς, ἑαυτοῖς ἀλλ’ οὐ θεῷ τὸ πρῶτον, τὰς ἰδίας πράξεις τῶν  <milestone unit="altpage2" n="p. 576 M."/> οὐρανίων
+καὶ ὀλυμπίων προκρίναντες καὶ τὰ ἐκ φροντίδος τῶν αὐτομάτων
+καὶ ἑτοίμων.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="200">
+<p>ἔπειτα ὀρύττουσιν οὐχ ὡς Ἀβραὰμ καὶ Ἰσαάκ, οἱ σοφοί, φρέατα (Gen. 21,30. 26,18), βαθείας ἐπιστήμας ποτίμους λόγους ἀναδιδούσας,
+<lb n="5"/> ἀλλὰ λάκκους, ἴδιον οὐδὲν ἐξ ἑαυτῶν ἔχοντας τρόφιμον καλόν,
+τῆς δ’ ἔξωθεν χρῄζοντας ἐπιρροῆς, ἣ γένοιτ’ ἂν ἐκ διδασκαλίας ἐπαντλούντων
+ἀεὶ τῶν ὑφηγητῶν ἀκοαῖς τῶν μανθανόντων ἀθρόα τὰ ἐπιστήμης
+δόγματα καὶ θεωρήματα, καὶ φρενὶ κατασχεῖν καὶ μνήμῃ τὰ
+παραδοθέντα ταμιεύεσθαι.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="201">
+<p>νυνὶ δ’ εἰσὶν „οἱ λάκκοι συντετριμμένοι“, <lb n="10"/> τουτέστι πᾶσαι τῆς ἀναγώγου ψυχῆς αἱ δεξαμεναὶ τεθραυσμέναι καὶ
+διαρρέουσαι, μὴ δυνάμεναι συσχεῖν καὶ φυλάξαι τὴν τῶν οἵων τε ὠφελεῖν
+ἐπιρροήν.</p>
+</div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="202">
+<p><milestone unit="altref" n="37"/> Ἃ μὲν οὖν περὶ πηγῶν καιρὸς ἦν εἰπεῖν λέλεκται. πάνυ δ’ ἐξητασμένως τὴν Ἄγαρ εἰσάγουσιν οἱ χρησμοὶ εὑρισκομένην μὲν ἐπὶ
+<lb n="15"/> τῆς πηγῆς (Gen. 16,7), οὐκ ἀρυτομένην δ’ ἀπ’ αὐτῆς. οὔπω γάρ
+ἐστιν ἱκανὴ ψυχὴ προκόπτουσα τῷ σοφίας ἀκράτῳ ποτῷ χρῆσθαι, πλησίον
+δ’ οὐ κεκώλυται ποιεῖσθαι τὰς διατριβάς.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="203">
+<p>ἔστι δὲ καὶ λεωφόρος πᾶσα ἡ κατὰ παιδείαν ὁδὸς ἐχυρωτάτη καὶ εὐερκεστάτη. διό φησιν
+"ἐν τῇ ὁδῷ Σοὺρ“ αὐτὴν εὑρεθῆναι (ibid.), τεῖχος δὲ ἢ εὐθυσμὸς
+<lb n="20"/> ἑρμηνεύεται Σούρ. ἐνλαλῶν οὖν ὁ ἔλεγχος τῇ ψυχῇ φησιν αὐτῇ·
+„πόθεν ἔρχῃ, καὶ ποῦ πορεύῃ“ (ibid. 8). τοῦτο δ’ οὐκ ἐνδοιάζων
+καὶ οὐ πυνθανόμενος μᾶλλον ἢ δυσωπῶν καὶ ὀνειδίζων προφέρεται·
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="204">
+<p>θέμις γὰρ οὐδὲν ἀγνοεῖν τῶν καθ’ ἡμᾶς ἀγγέλῳ. σημεῖον δέ· καὶ τὰ κατὰ γαστρός, ἅπερ ἄδηλα γενέσει, σαφῶς οἶδεν ἐν οἷς φησιν· "ἰδοὺ σὺ
+<lb n="25"/> ἐν γαστρὶ ἔχεις, καὶ τέξῃ παιδίον, καὶ καλέσεις τὸ ὄνομα αὐτοῦ Ἰσμαήλ“
+<note xml:lang="mul" type="footnote">
+<lb/>1 ἰδίους Η1, fort. recte
+<lb/>3 οἱ σοφοί om. L
+<lb/>4 ἐπιστήμης conicio 4.
+<lb/>5 ἀναδιδόντα conicio
+<lb/>5 ἑαυτῶν G: αὐτῶν H1, αὑτῶν Η2
+<lb/>8 alt. καὶ] ὡς Gohn, nisi potius deest part. κελευόντων Mang., παραινούντων couicio) φρενὶ G2 in ras.: φέρει Η, φρεσὶ conicio
+<lb/>9 δέ εἰσιν Η
+<lb/>10 ἐναγώγου H αἱ om. V
+<lb/>11 συσχεῖν G(Mang.): τυχεῖν Η
+<lb/>12 ἐπιρροεῖν Η1 
+<lb/>13 ἦν om. Turn.
+<lb/>14 ante τὴν ras.
+<lb/>2 litt. G ἄγουσιν Η 
+<lb/>15 ἀρυτομένην G: ἀρρυομένην Η, ἀρυομένην v
+<lb/>16 ψυχὴ GH: πηγὴ L
+<lb/>18 ἡ om. V
+<lb/>19 εὐθυσμός suspectum
+<lb/>20 ἐνλαλῶν GHL2: καὶ λαλῶν L1, ἐκλαλῶν V, ἐντυχὼν coni. Mang., συλλαλῶν coni. Cohn, ἐνομιλῶν vel ἐνδιατρίβων conicio 
+<lb/>23 ἀγγέλων G, ἐλέγχῳ coni. Mang.
+<lb/>24 κατὰ om. L
+<lb/>25 τέξεις Η</note> <note xml:lang="mul" type="footnote">3—5 Origenes contra Cels. IV
+<lb/>44 p. 537: οἱ δίκαιοι λάκκους μέν κατασκευάζουσι, φρέατα δὲ ὀρύσσουσι, τὴν ἐνυπάρχουσαν γῆν (leg. πηγὴν) καὶ ἀρχὴν τῶν ποτίμων ἀγαθῶν ἐξευρεῖν ζητοῦντες.</note>  
+
+<pb n="v.3.p.154"/>
+(ibid. 11). τὸ γὰρ γνῶναι, ὅτι τὸ κυοφορούμενον ἄρρεν ἐστίν, οὐκ
+ἀνθρωπίνης δυνάμεως, ἀλλ’ οὐδὲ τὸ τὴν προαίρεσιν ᾗ χρήσεται τοῦ
+βίου ὁ μήπω γεγενημένος, ὅτι ἀγροῖκος, ἀλλ’ οὐ πολιτικὴ καὶ ἥμερος.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="205">
+<p>τὸ "πόθεν οὖν ἔρχῃ“ πρὸς ἐπίπληξιν λέγεται τῆς ἀποδιδρασκούσης
+ψυχῆς τὴν ἀμείνω καὶ κυρίαν γνώμην, ἧς θεραπαινὶς οὐ λεγομένη μᾶλλον <lb n="5"/>
+ἢ ἔργοις ὑπάρχουσα μέγα κλέος ἔμελλεν [ἐξ]οἴσεσθαι. „ποῖ δὲ καὶ
+ πορεύῃ“; τὰ ἄδηλα μετατρέχεις, τὰ ὁμολογούμενα ἀπορρίψασα.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="206">
+<p>καλὸν
+οὖν αὐτὴν ἐπαινέσαι χαίρουσαν ἐπὶ νουθεσίᾳ· δείγματα δὲ τοῦ χαίρειν
+ἐξενήνοχε τό τε μὴ κατηγορῆσαι τῆς δεσποίνης καὶ τὸ τὴν αἰτίαν ἀναθεῖναι
+ἑαυτῇ τοῦ δρασμοῦ καὶ τὸ μὴ ἀποκρίνασθαι πρὸς τὸ δεύτερον <lb n="10"/>
+πύσμα τὸ „ποῦ πορεύῃ;“ ἄδηλον γάρ, περὶ δὲ τῶν ἀδήλων ἐπέχειν <milestone unit="altpage1" n="p. 577 M."/>  ἀσφαλές
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="207">
+<p> τε καὶ ἀναγκαῖον. <milestone unit="altref" n="38"/> ἀποδεξάμενος οὖν τῆς πειθαρχίας αὐτὴν
+ὁ ἔλεγχος „ἀποστάφηθι πρὸς τὴν κυρίαν σου“ φησί· λυσιτελὲς γὰρ τῇ
+μανθανούσῃ ἡ τῆς διδασκούσης ἐπιστασία καὶ τῇ ἀτελεῖ ἡ παρὰ φρονήσει
+δουλεία. ὅταν δ’ ὑποστρέψῃς, „ταπεινώθητι ὑπὸ τὰς χεῖρας <lb n="15"/>
+αὐτῆς“ (ibid. 9) καλὴν ταπείνωσιν φρονήματος ἀλόγου καθαίρεσιν
+ περιέχουσαν.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="208">
+<p>οὕτως γὰρ πραϋτόκοις ὠδῖσιν ἄρρενα γενεὰν ἀποκυήσεις,
+ὄνομα Ἰσμαήλ (ibid. 11), ἀκοαῖς θείαις σωφρονισθεῖσα· ἑρμηνεύεται
+γὰρ Ἰσμαὴλ ἀκοὴ θεοῦ. ἀκοὴ δ’ ὁράσεως τὰ δευτερεῖα φέρεται, ὅρασιν
+δὲ ὁ γνήσιος υἱὸς καὶ πρωτόγονος Ἰσραὴλ κεκλήρωται· μεταληφθεὶς <lb n="20"/>
+γάρ ἐστιν ὁρῶν θεόν. ἀκούειν μὲν γὰρ καὶ ψευδῶν ὡς ἀληθῶν ἔνεστιν,
+ὅτι ἀπατηλὸν ἀκοή, ἀψευδὲς δ’ ὅρασις, ᾗ τὰ ὄντα ὄντως κατανοεῖται.
+</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="209">
+<p>τὸν δὲ γεννηθέντα τρόπον χαρακτηρίζει διά τε τοῦ λέγειν ἀγροῖκον
+ἔσεσθαι, ὡς ἂν ἀγροικόσοφον, μήπω τῆς τιθασοῦ καὶ πολιτικῆς ὄντως
+μοίρας ἠξιωμένον — αὕτη δέ ἐστιν ἀρετή, δι’ ἧς πέφυκεν ἡμεροῦσθαι <lb n="25"/>
+τὸ ἦθος —, καὶ διὰ τοῦ φάσκειν· „αἱ χεῖρες αὐτοῦ ἐπὶ πάντας καὶ αἱ
+χεῖρες πάντων ἐπ’ αὐτόν“ (ibid. 12)· σοφιστοῦ γὰρ βούλημα τοῦτο
+ τὸ λίαν σκεπτικὸν ἐπιμορφάζοντος καὶ λόγοις χαίροντος ἐριστικοῖς.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="210">
+<p>οὗτος
+καὶ πάντας βάλλει τοὺς ἀπὸ τῶν μαθημάτων, ἰδίᾳ τε ἑκάστῳ καὶ κοινῇ
+<note xml:lang="mul" type="footnote">
+<lb/>2 τὸ e corr. G2, τὸ ex τὰ corr. H2
+<lb/>3 γεγεννημένος Η2 ἀγροῖκος . . . πολιτικὴ καὶ ἥμερος scripsi: ἄγροικον . . . πολιτικὴν καὶ ἥμερον codd.
+<lb/>4 ἐπίπληξιν Turn.: ἐπιπλήξεως codd.
+<lb/>6 ἐξ seclusi post ποῖ ras. in G, ποῦ conicio
+<lb/>8 νουθεσία Turn.: νουθεσίαν codd. τοῦ om. G
+<lb/>11 ποῖ G 
+<lb/>12 πειθαρχείας H
+<lb/>17 πρωτοτόκοις Mang.
+<lb/>18 σωφρονισθεῖσαν Mang. 
+<lb/>21 ἐστιν om. G, sed post θεὸν s. s. ἑρμηνεύεται G2 ἀληθῶς G2 Turn. 21.
+<lb/>22 ἔνεστι τί ἀπατηλὸν G
+<lb/>22 δ’ G2: om. G1H πάντως L
+<lb/>23 τοῦ] τὸ Turn. ἄγροικον H
+<lb/>24 τιθασοῦ scripsi: θιάσσου G, θείας H
+<lb/>25 δ’ ἐστὶν Η 
+<lb/>26 τοῦ G(H2): τοῦ τὸ H1, τὸ Turn.
+<lb/>28 οὕτως H</note>  
+
+<pb n="v.3.p.155"/>
+πᾶσιν ἐναντιούμενος, καὶ βάλλεται πρὸς ἁπάντων, εἰκότως ἀμυνομένων
+ὡς ὑπὲρ οἰκείων ἐκγόνων ὧν ἔτεκεν αὐτῶν ἡ ψυχὴ δογμάτων.</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="211">
+<p>ἀλλὰ καὶ τρίτον προσυπογράφει χαρακτῆρα φάσκων· "κατὰ πρόσωπον πάντων
+τῶν ἀδελφῶν κατοικήσει“ (ibid.), μονονοὺκ ἄντικρυς ἐπιδεικνύμενος
+<lb n="5"/> τὴν ἀντιπρόσωπον διαμάχην καὶ ἀντίστασιν αἰώνιον. ἡ κυοφοροῦσα
+οὖν τὸν σοφιστὴν λόγον ψυχή φησι τῷ λαλοῦντι πρὸς αὐτὴν ἐλέγχῳ·
+„σὺ θεὸς ὁ ἐπιδών με“ (ibid. 13), ἴσον τῷ σὺ ποιητὴς εἶ τῶν ἐμῶν
+βουλημάτων καὶ ἐκγόνων, καὶ μήποτ’ εἰκότως·</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="212">
+<p>ἐλευθέρων μὲν γὰρ καὶ ἀστῶν ὡς ἀληθῶς ψυχῶν ὁ ἐλεύθερος καὶ ἐλευθεροποιὸς δημιουργός,
+<lb n="10"/> δούλων δὲ δοῦλοι· ἄγγελοι δ’ οἰκέται θεοῦ, νομιζόμενοι πρὸς τῶν ἔτ’
+ἐν πόνοις καὶ δουλείαις ὑπαρχόντων θεοί. „διὰ τοῦτο“ φησίν "ἐκάλεσε
+τὸ φρέαρ φρέαρ οὗ ἐνώπιον εἶδον“ (ibid. 14).</p></div>
+
+<div type="textpart" xml:base="urn:cts:greekLit:tlg0018.tlg017.1st1K-grc1" subtype="section" n="213">
+<p>ἀλλ’ οὐκ ἔμελλες, ὦ ψυχὴ προκόπτουσα καὶ τῇ τῶν ἐγκυκλίων ἐπιστήμῃ προπαιδευμάτων
+ἐμβαθύνουσα, καθάπερ διὰ κατόπτρου τῆς παιδείας τὸν αἴτιον τῆς
+<lb n="15"/> ἐπιστήμης ἰδεῖν; οἰκειότατος δὲ καὶ ὁ τοῦ τοιούτου φρέατος τόπος „ἐν
+μέσῳ Κάδης καὶ Βαράδ“ (ibid. 14)· ἑρμηνεύεται δὲ Βαρὰδ μὲν ἐν
+κακοῖς, Κάδης δὲ ἁγία· μεθόριος γὰρ ἁγίων καὶ βεβήλων ὁ ἐν προκοπαῖς,
+ἀποδιδράσκων μὲν τὰ φαῦλα, μήπω δ’ ἱκανὸς ὢν τελείοις συμβιοῦν
+ἀγαθοῖς.</p>
+<note xml:lang="mul" type="footnote">
+<lb/>2 ὡς om. Η
+<lb/>4 οὐκ s. s. G2, tum ras.
+<lb/>2 litt.
+<lb/>5 τὴν in ras. Η αἰώνιον] ἐναντίων coni. vel τῶν δογμάτων add. Mang.
+<lb/>8 ἐκγόνων] ἔργων coni. Mang. ἔτ᾿ om. Η
+<lb/>13 τῆ H2: om. GH1
+<lb/>15 τοῦ om. H
+<lb/>16 Κάδδης H 
+<lb/>17 κακοῖς GH: κοινοῖς Turn. Κάδδης Η
+<lb/>19 φίλωνος περὶ φυγῆς καὶ εὐρέσεως subscribit G</note> </div></div>  </body>   </text> </TEI>   

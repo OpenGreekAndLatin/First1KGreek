@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+
+<titleStmt>
+<title xml:lang="grc">Περί Ἰλίγγων</title>
+<author>Theophrastus</author>
+<editor>Friedrich Wimmer</editor>
+<funder>University of Virginia</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>University of Virginia</orgName>
+<persName>Rebecca Frank</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0093.tlg010x05.1st1K-grc1</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-08-12</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Theophrastus</author>
+<title xml:lang="lat">Theophrasti Eresii Opera, Quae Supersunt, Omnia.</title>
+<editor>
+<persName><name>Friedrich Wimmer</name></persName>
+</editor>
+<imprint>
+<pubPlace>Paris</pubPlace>
+<publisher>A.F. Didot</publisher>
+<date type="printing">1866</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+                    <ref target="https://hdl.handle.net/2027/uiug.30112023840660?urlappend=%3Bseq=437">HathiTrust</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>    
+
+<refsDecl n="CTS">
+<!--<cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts chapter and section</p>
+</cRefPattern>-->
+<cRefPattern n="section"  matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts section.</p>
+</cRefPattern>
+</refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>
+<change when="2020-08-12" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+                    <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0093.tlg010x05.1st1K-grc1">
+                    
+<div type="textpart" subtype="section" n="1"><p rend="indent"><pb facs="uiug.30112023840660-1583374486redo_0428"/><milestone unit="page" n="401" type="print"/>Οἱ ἴλιγγοι γίνονται ὅταν ᾖ πνεῦμα ἀλλότριον περὶ τὴν κεφαλὴν, ἢ ὑγρότης περιττωματικὴ ἀπὸ τροφῆς ἐνίας, οἷον ἢ τοῦ οἴνου ἢ καὶ ἄλλου τινὸς χυλοῦ, ἢ τρίτον ὅταν κινῇ τις κύκλῳ τὴν κεφαλήν· ὁ γὰρ τόπος ὁ περὶ τὸν ἐγκέφαλον φύσει μὲν ὑγρός ἐστιν, ὅταν δʼ ἔλθῃ τι πνεῦμα ἀλλότριον βιάζεται διαδυόμενον πρὸς τὰς φλέβας καὶ ὠθεῖ κύκλῳ τὸ προυπάρχον ὑγρὸν, ὥστε τρόπον τινὰ τὸ αὐτὸ συμβαίνει καὶ ἐάν τις προαιρέσει κύκλῳ κινῇ τὴν κεφαλήν. Οὐδὲν γὰρ διαφέρει ἔξωθεν ἢ ἔσωθεν εἶναι τὸ κινοῦν. Οὔσης δὲ οἷον δίνης τινὸς τῆς φορᾶς καὶ τοῦ ὑγροῦ μὴ συνεχοῦς ὁμοίως ἀλλʼ ἐν τῇ κινήσει τοῦ μὲν ὑστεροῦντος τοῦ δὲ προτεροῦντος τὸ ὑφιστάμενον ἀντικροῦον ἵστησι, τὸ δʼ ἱστάμενον διὰ τὸ μὴ ἰσορροπεῖν ὁμοίως αὐτῇ ᾗ ἂν ῥέπῃ ταύτῃ φέρεται καὶ τὸν ἴλιγγον ποιεῖ καὶ καταβάλλει πολλάκις. </p></div>
+<div type="textpart" subtype="section" n="2"><p>Αἴτιον δὲ τοῦ μὴ δύνασθαι τὰ ὑγρὰ ῥᾳδίως στρέφεσθαι καὶ δινεῖσθαι διὰ τὴν λεχθεῖσαν * αἰτίαν, ὅτι οὐ συνεχῆ· παραπλήσιον γὰρ τὸ συμβαῖνον ὥσπερ ἐν τοῖς ὠοῖς τοῖς ὠμοῖς· οὐδὲ γὰρ ταῦτα δύναται δινεῖσθαι διὰ τὴν ὑγρότητα, τὰ δʼ ἑφθὰ δύναται. <add>Διότι τὰ μὲν ὑπὸ ὑγρότητος ἀνωμάλου καὶ οὐκ ἰσορρόπου οὔσης σφάλλεται τὰ δʼ οὔ</add>; διὰ τὸ μὴ ἔχειν τὸ σφάλλον ὑφιστάδο μενον ἑνὸς ὄντος καὶ συνεχοῦς <add>τοῦ ἐντός</add>. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Αἱ μὲν οὖν αἰτίαι σχεδὸν αὗται καὶ τοιαῦται τοῦ πάθους. Ἀφʼ ὧν δὲ συμβαίνει γίνεσθαι τὰ καθʼ ἕκαστα περὶ ὧν ἀποροῦσι πρὸς ταῦτα ἀνάγειν πειρατέον. Οἷον διότι κύκλῳ περιπατοῦντες ἰλιγγιῶσι καὶ ἔτι μᾶλλον <del>καὶ</del> <pb facs="uiug.30112023840660-1583374486redo_0429"/> ὅσῳ ἂν ἐλάττω κύκλον, κἂν θᾶττον θέωσι σφοδρότερον· κἂν μετὰ πολλῶν ἢ μόνοι, καὶ ἐπʼ ἀρίστερα θέοντες μᾶλλον <add>ἢ ἐπὶ δεξιά</add>, καὶ οἱ μακρότατοι δὲ μάλιστα. Πάντων γὰρ τούτων καὶ εἴ τι ἄλλο τοιοῦτον ἐν τοῖς πρότερον εἰρημένοις αἱ αἰτίαι. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Εἴπερ γὰρ ὁ ἴλιγγος γίνεται εἴ τις ἐν τῷ αὐτῷ στρέφοιτο τάχιστʼ ἂν καὶ μάλιστα τῶν λοιπῶν ἰλιγγιῴη ὁ ἐγγυτάτω ἢ ὁ ἐν ἐλάττονι κύκλῳ στρέφων, καὶ ὅσῳ ἂν θᾶττον μᾶλλον. Διόπερ <add>καὶ</add> οἱ θέοντες τῶν περιπατούντων καὶ οἱ ταχέως τῶν βραδέως· θέουσι γὰρ <add>ἐγκεκλικότες</add> πρὸς τὸ κέντρον· ὡς ὅταν κατʼ εὐθὺ τὰ μήκη αὐτῶν ἐκπίπτῃ πρὸς μίαν κορυφὴν συνάπτειν καὶ γίνεσθαι κῶνον βάσιν δʼ εἶναι τὸν κύκλον. </p></div>
+<div type="textpart" subtype="section" n="5"><p>Διόπερ συμβαίνει καθάπερ ἐν τῷ αὐτῷ στρέφειν τὴν κεφαλὴν καὶ ὅσῳ ἂν ἐλάττω κύκλον μᾶλλον, ὀξύτερος γὰρ ὁ κῶνος, καὶ ἐὰν θᾶττον πλεονάκις ἐν τῷ αὐτῷ γίνεσθαι κατὰ τὸν ἴσον χρόνον· καὶ τοῖς μακροτέροις δὲ μᾶλλον ὅσῳ ἐγκλίνουσιν· ἐγγυτέρω γὰρ ἔχει τὴν κεφαλὴν ὁ μείζων τῆς τοῦ κώνου κορυφῆς. Διὸ σχεδὸν ὥσπερ ἐν τῷ αὐτῷ συμβαίνει <del>ἴσην</del> ἔχοντα τὴν κεφαλήν· οὕτω δὲ μάλιστα ὁ ἴλιγγος. </p></div>
+<div type="textpart" subtype="section" n="6"><p>Καὶ οἱ εἰς τὰ ἀρίστερα θέοντες ἔτι μᾶλλον ἔσω νεύουσι καὶ ὀξυτέραν ποιοῦσι γωνίαν πρὸς τὸν κύκλον· ἐμβριθέστερα γὰρ ὄντα τὰ δεξιὰ προσβιάζεται μᾶλλον ἐντὸς διὰ τὴν ἀσθένειαν τῶν ἀριστερῶν. Καὶ ἐὰν μετὰ πολλῶν θέωσι μᾶλλον καὶ θᾶττον ἢ μόνοι· πρὸς γὰρ τῇ κύκλῳ περιφορᾷ καὶ ἡ ὄψις αὐτὴ προσβάλλουσα τοῖς θέουσι καὶ συνεχὴς οὖσα ἐν τῷ ἐγκεφάλῳ ποιεῖ τινὰ κίνησιν ἑτέραν καὶ ταραχήν· ἀπὸ γὰρ τῶν ἔξω διαδίδοται καὶ πρὸς τὰ ἐντός· ὥστʼ ἐπεὶ καὶ ἑκάτερον ποιεῖ τὸν ἴλιγγον, οἷον ἥ τε κύκλῳ κίνησις τῆς κεφαλῆς καὶ ἡ ὄψις συνεχῶς βλέπουσα τὸ κύκλῳ κινούμενον ἐξ ἀμφοτέρων εὔλογον θᾶττον καὶ μᾶλλον γίνεσθαι τὸ πάθος. </p></div>
+<div type="textpart" subtype="section" n="7"><p>Ὅτι δὲ διὰ τὴν τῆς ὄψεως κίνησιν ἰλιγγιᾶν συμβαίνει φανερὸν ἐκ πολλῶν. Οἵ τε γὰρ πλέοντες θᾶττον καὶ μᾶλλον ἰλιγγιῶσιν ὅταν ἐμβλέπωσι τοῖς κύμασι καὶ τῇ τῶν * ὅλων ἄστρων κινήσει, διὸ καὶ ἐγκαλύπτονται τοῦτʼ εὐλαβούμενοι· καὶ οἱ τὰς αἰώρας καὶ τοὺς τροχοὺς θεωροῦντες ἢ καὶ συμπεριφέροντες τὴν ὄψιν ταχὺ σκοτοῦνται· συμβαίνει γὰρ κινουμένην κύκλῳ τὴν ὄψιν κινεῖν τὰ ἐντὸς ἀνωμάλως καὶ ταράττειν. </p></div>
+<div type="textpart" subtype="section" n="8"><p>Ἰλιγγιῶσι δὲ καὶ οἱ τὰ ὑψηλὰ καὶ τὰ μεγάλα καὶ ἀπότομα ἀποβλέποντες διὰ τὸ συμβαίνειν μακρὰν ἀποτεινομένην σείεσθαι καὶ κραδαίνεσθαι τὴν ὄψιν· σειομένη δὲ οὕτως καὶ κινουμένη ταράττει καὶ κινεῖ τὰ ἐντός. Ἀναβλέπουσι δʼ οὐ συμβαίνει τοῦτο διὰ τὸ μὴ <del>ὡς</del> ἀποτείνειν μακρὰν ἀλλʼ ἀποτέμνεσθαι ἐν τῷ φωτί. </p></div>
+<div type="textpart" subtype="section" n="9"><p>Γίνεται δʼ ἴλιγγος καὶ ὅταν εἰς τὸ αὐτὸ βλέπωσι καὶ ἐπατενίζωσιν. Ὃ καὶ ἐπαπορεῖται διὰ τί ποτε κινουμένης κύκλῳ τῆς ὄψεως καὶ ἠρεμούσης συμβαίνει τὸ αὐτὸ πάθος· ἄτοπον γὰρ τὸ ὑπʼ ἐναντίων. Αἴτιον δὲ τοῦ μὲν ἐν τῇ κυκλοφορίᾳ τὸ εἰρημένον, τοῦ δʼ ἐν τῇ ἐπιστάσει καὶ τῷ ἀτενισμῷ, διότι τὰ ἐν τῷ κινεῖσθαι σωζόμενα διίστησι καὶ ἡ στάσις· τῆς ὄψεως δὲ στάσης, ἑνὸς μοοίου, καὶ τἆλλα τὰ συνεχῆ ἐν τῷ <pb facs="uiug.30112023840660-1583374486redo_0430"/> ἐγκεφάλῳ ἵσταται· διιστάμενα δὲ καὶ χωριζόμενα τὰ βαρέα καταβαρύνει καὶ ποιεῖ τὸν ἴλιγγον. Τὰ γὰρ πεφυκότα κινεῖσθαι τήνδε τὴν κίνησιν σώζεται καὶ συμμένει διὰ ταύτην· εἰ δὲ μὴ, καθάπερ Ἡράκλειτός φησι, καὶ ὁ κυκεὼν διίσταται μὴ κινούμενος. </p></div>
+<div type="textpart" subtype="section" n="10"><p>Εἴη δʼ ἂν καὶ τῇ κυκλοφορίᾳ αὐτὸ τοῦτʼ ἀποδιδόναι· διίστησι γὰρ ἡ δίνη τά τε βαρέα καὶ κοῦφα δέον ἅμα εἶναι τὰ μὲν εἰς τὸ μέσον ἄγουσα τὰ δʼ εἰς τὸ ἔσχατον. Ποιεῖ δὲ καὶ τὸ κύπτειν ἰλίγγους διὰ τοῦτο· χωρίζεται γὰρ τὰ βαρέα καὶ ἐλαφρὰ, τὰ μὲν ἄνω τὰ δὲ κάτω· δεῖ δὲ ἅμα εἶναι καθάπερ ἐλέχθη. </p></div>
+<div type="textpart" subtype="section" n="11"><p>Ποιεῖ δὲ καὶ ἄλλη τις ἐναντίωσις ὡς δοκεῖ, οἷον ἡ τῆς ἐνδείας καὶ σμονὴ περίττωσιν ἐποίησεν ὥστε πλήρεις γίνεσθαι τοὺς πόρους· ἀμφότερα γὰρ ταῦτα καταβαρύνει καὶ ἐφίστησι τὰς περιόδους, ὅπερ ἐστὶν ὁ ἴλιγγος· ἐπεὶ καὶ αἱ μέθαι καὶ αἱ φαρμακεῖαι καὶ ὅσα ἄλλα τούτοις παραπλήσια διὰ τοῦτο ποιεῖ τοὺς ἰλίγγους. </p></div>
+<div type="textpart" subtype="section" n="12"><p>Ὅθεν καὶ τὸ σημεῖόν τινες ἐπʼ ἀμφοῖν κοινὸν λαμβάνουσιν· ὅταν γὰρ μὴ δύνηταί τις τοὺς στρωτῆρας ἢ <add>τὰς</add> δοκοὺς ἀριθμεῖν, τὸν μὲν οὔπω κεκαθάρθαι τὸν δὲ μεθύειν φασίν. Ἡ ὑγρότης γὰρ ἡ ἀλλοτρία ἐμπεπτωκυῖα ποιεῖ τὴν ταραχήν· διὸ καὶ ἐφʼ ὅσων ἄλλων συμβαίνει πνεύματος ἢ ὑγρότητος γίνεσθαι πλῆθος ἢ καὶ τῶν ὑπαρχόντων διάστασιν ἀπὸ πάντων συμβαίνει τοῦτο τὸ πάθος. </p></div>
+<div type="textpart" subtype="section" n="13"><p>Ἀνιστάμενοι δὲ μᾶλλον ἢ καθίζοντες ἰλιγγιῶσιν ὅτι ἠρεμούντων συνίσταται τὸ ὑγρὸν ἐν τῇ κεφαλῇ πλέον, ὅταν δὲ κινῶνται σφαλερὸν γίνεται καὶ εἰς ἓν μόριον ἀθρόον ἀποκλῖνον ποιεῖ τὸν ἴλιγγον. </p></div></div></body></text></TEI>

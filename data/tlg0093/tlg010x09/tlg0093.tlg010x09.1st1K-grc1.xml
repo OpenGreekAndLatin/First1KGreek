@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader xml:lang="eng">
+<fileDesc>
+
+<titleStmt>
+<title xml:lang="lat">Fragmenta varia (13-190)</title>
+<author>Theophrastus</author>
+<editor>Friedrich Wimmer</editor>
+<funder>University of Virginia</funder>
+<respStmt>
+<resp>Published original versions of the electronic texts</resp>
+<orgName ref="https://www.opengreekandlatin.org">Open Greek and Latin</orgName>  
+<persName role="principal">Gregory Crane</persName>
+<persName role="principal">Leonard Muellner</persName>
+<persName role="principal">Bruce Robertson</persName>
+</respStmt>
+
+<respStmt>
+<resp>Proofreading</resp>
+<orgName>University of Virginia</orgName>
+<persName>Rebecca Frank</persName>
+</respStmt>
+
+<respStmt>
+<resp>CTS conversion</resp>
+<orgName>Perseus Digital Library</orgName>
+<persName>Lisa M. Cerrato</persName>
+</respStmt>
+</titleStmt>
+
+<publicationStmt>
+<publisher>Open Greek and Latin</publisher>
+<idno type="filename">tlg0093.tlg010x09.1st1K-grc1</idno>
+<availability>
+<licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+</availability>
+<date>2020-08-12</date>
+</publicationStmt> 
+
+<sourceDesc>
+<biblStruct>
+<monogr>
+<author>Theophrastus</author>
+<title xml:lang="lat">Theophrasti Eresii Opera, Quae Supersunt, Omnia.</title>
+<editor>
+<persName><name>Friedrich Wimmer</name></persName>
+</editor>
+<imprint>
+<pubPlace>Paris</pubPlace>
+<publisher>A.F. Didot</publisher>
+<date type="printing">1866</date>
+</imprint>
+<biblScope unit="volume"/>
+</monogr>
+<ref target="https://hdl.handle.net/2027/uiug.30112023840660?urlappend=%3Bseq=453">HathiTrust</ref>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+
+<encodingDesc>
+<editorialDecl>
+<quotation marks="none"/>
+<normalization>
+<p></p>
+</normalization>
+<correction>
+<p>Lace 0.6.0. Lace copyright 2013-2020, Bruce Robertson, Dept. of Classics, Mount Allison University. Developed through the support of the <ref target="https://nbif.ca/en">NBIF</ref>.</p>
+</correction>
+</editorialDecl>
+<p>The following text is encoded in accordance with EpiDoc standards and with the CTS/CITE Architecture</p>    
+
+ <refsDecl n="CTS">
+<cRefPattern n="section" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+<p>This pointer pattern extracts fragment and section</p>
+</cRefPattern>
+<cRefPattern n="fragment"  matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+<p>This pointer pattern extracts fragment.</p>
+</cRefPattern>
+                    </refsDecl>
+</encodingDesc>
+
+<profileDesc>
+<langUsage>
+<language ident="grc">Greek</language>
+<language ident="lat">Latin</language>
+<language ident="eng">English</language>
+</langUsage>
+</profileDesc>
+
+<revisionDesc>
+<change when="2020-08-12" who="Lisa Cerrato">initial markup of new file</change>
+</revisionDesc>
+</teiHeader>
+
+<text>
+<body>
+<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0093.tlg010x09.1st1K-grc1">
+<div type="textpart" subtype="fragment" n="13">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 13</label><p rend="indent"><pb facs="uiug.30112023840660-1583374486redo_0444"/>Θεόφραστος δὲ τὴν αἴσθησιν ἀρχὴν εἶναι πίστεώς φησιν· ἀπὸ γὰρ ταύτης αἱ ἀρχαὶ πρὸς τὸ λόγον τὸν ἐν ἡμῖν καὶ τὴν διάνοιαν ἐκτείνονται. <bibl xml:lang="eng">(Clem. Alex. Strom. I, p. 301 ed. Sylb.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="14">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 14</label><p rend="indent">Ὁ δὲ Ἐρέσιος ἐκεῖνος Θεόφραστος ὁ Ἀριστοτέλους γνώριμος πὴ μὲν οὐρανὸν πὴ δὲ πνεῦμα τὸν θεὸν ὑπονοεῖ. <bibl xml:lang="eng">(Clem. Alex. Protrept. p. 44.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="15">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 15</label><p rend="indent">Θ. ἐν τοῖς ἑαυτοῦ Τοπικοῖς τάδε γέγραφεν <gap reason="lost" rend=" .... "/> Ἐπεὶ δὲ ἐναντίαι τῶν ἐναντίων αἱ ἀρχαὶ, δῆλον ὅτι οὐδὲ ἐν ἑνὶ γένει ταῦτα, καθάπερ οὐδὲ τὸ ἀγαθὸν καὶ κακὸν καὶ κίνησις καὶ στάσις. Εἴη δʼ ἂν καὶ ὑπεροχὴ καὶ ἔλλειψις ἐναντία γε καὶ ἀρχαὶ, καὶ εἶδος καὶ στέρησις. <bibl xml:lang="eng">(Simpl. in Arist. Categ. f. 105.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="16">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 16</label><p rend="indent">Θ. ἐν τρίτῳ τῶν Φυσικῶν ἢ περὶ οὐρανοῦ τὰ γινόμενα διαιρεῖ οὕτως· ἢ γὰρ ὑπὸ ὁμοίου γίνεται ὡς ἄνθρωπος ὑπὸ ἀνθρώπου καὶ θερμὸν ὑπὸ θερμοῦ, ἢ ὑπὸ ἐναντίου ὡς ὁρῶμεν τοὺς κεραυνοὺς καὶ τὰς ἀστραπάς· ὑπὸ γὰρ ψυχρότητος ἡ τούτου τοῦ πυρὸς ἐν τῷ ἀέρι γένεσις ἀθροίζοντος εἰς ἐν τὸ ἐν αὐτοῖς θερμὸν ἐκπυροῦντος· ἢ τρίτον ὑπὸ ἐντελεχείᾳ ὅλως ὄντος ὡς καὶ ὁ μώλωψ· ὑπὸ γὰρ ἐντελεχείᾳ οὔσης τῆς μάστιγος γίνεται, οὔτε δὲ ὁμοίας ἔτι οὔτε ἐναντίας τῷ γινομένῳ· καὶ τὰ ὑπὸ τοῦ ἡλίου δέ φησι γινόμενα ὑπὸ ἐντελεχείας γίνεται· καὶ γὰρ αὐτὸς οὔτε ὅμοιος οὔτε <pb facs="uiug.30112023840660-1583374486redo_0445"/> ἐναντίος τοῖς γινομένοις. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 187.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="17">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 17</label><p rend="indent">Θ. ἐν ἀρχῇ τῶν αὐτοῦ Φυσικῶν καὶ ταύτην <add>τὴν πρότασιν</add> ἀπέδειξε λέγων· τὸ μέντοι τῶν φυσικῶν ὁ ἀρχὰς εἶναι δῆλον ἐκ τοῦ τὰ μὲν φυσικὰ σώματα σύνθετα εἶναι, πᾶν δὲ σύνθετον ἀρχὰς ἔχειν τὰ ἐξ ὧν σύγκειται· ἅπαν γὰρ τὸ φύσει ἢ σῶμά ἐστιν ἢ ἔχει γε σῶμα· ἄμφω δὲ σύνθετα. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 1b.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="18">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 18</label><p rend="indent">Ὅλως δὲ ὡς κοινῶς εἰπεῖν ἀπὸ τῶν αἰσθήσεων καὶ τῶν αἰσθητῶν τῶν περὶ τῶν φυσικῶν ἀρχῶν ἀλήθειαν ἀνιχνευτέον καὶ Θεοφράστῳ πειθομένοις ὃς περὶ τούτου ζητῶν ἐν πρώτῳ τῶν Φυσικῶν τάδε γέγραφε· Ἐπεὶ δὲ οὐκ ἄνευ μὲν κινήσεως οὐδὲ περὶ ἑνὸς λεκτέον· πάντα γὰρ ἐν <del>τῇ</del> κινήσει τὰ τῆς φύσεως· ἄνευ δὲ ἀλλοιωτικῆς καὶ παθητικῆς οὐχ ὑπὲρ τῶν περὶ τὸ μέσον, εἰς ταῦτά τε καὶ περὶ τούτων λέγοντας οὐχ οἷόν τε καταλιπεῖν τὴν αἴσθησιν ἀλλʼ ἀπὸ ταύτης ἀρχομένους πειρᾶσθαι χρὴ θεωρεῖν ἢ τὰ φαινόμενα λαμβάνοντας καθʼ ἑαυτὰ ἢ ἀπὸ τούτων εἴ τινες ἄρα κυριώτεραι καὶ πρότεραι τούτων ἀρχαί· καὶ κάλλιον οἶμαι τοιοῦτόν τινα τρόπον τὴν ἀπὸ τῶν ἡμῖν γνωριμωτέρων ἐπὶ τὰς ἀρχὰς ἐπίβασιν γίνεσθαι. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 5b.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="19">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 19</label><p rend="indent">Θ. ἐν τῷ πρώτῳ τῶν ἑαυτοῦ Φυσικῶν καὶ καθʼ ἕκαστον γένος τῶν κατηγοριῶν τὴν κίνησιν θεωρεῖσθαί φησι γράφων οὕτως· περὶ δὲ κινήσεως τὸν μὲν καθόλου καὶ κοινὸν λόγον οὐ χαλεπὸν ἀποδοῦναι καὶ εἰπεῖν, ὡς ἐνέργειά τίς ἐστιν ἀτελὴς τοῦ δυνάμει ὄντος ᾗ τοιοῦτον καθʼ ἕκαστον γένος τῶν κατηγοριῶν <gap reason="lost" rend=" .... "/> διὸ καὶ προελθὼν ὀλίγον ὁ Θ. ζητεῖν δεῖν φησὶ περὶ τῶν κνήσεων, εἰ αἱ μὲν κινήσεις εἰσὶν αἱ δὲ ὥσπερ ἐνέργειαί τινες. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 201.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="20">
+                    <div type="textpart" subtype="section" n="20"><label rend="center" xml:lang="lat">Fr. 20</label><p rend="indent">Ἐν τῷ δευτέρῳ τῶν περὶ Κινήσεως· οἰκειότερον δὲ ὅπερ καὶ λέγομεν καὶ ἔστιν, ἐνέργειαν τοῦ δυνάμει κινητοῦ ᾗ κινητὸν κατὰ γένος ἕκαστον τῶν κατηγοριῶν, οἷον οὐσίας, ποσοῦ, ποιοῦ, φορητοῦ, τῶν ἄλλων· οὕτω γὰρ ἀλλοίωσις, αὔξησις, φορὰ, γένεσις καὶ αἱ ἐναντίαι ταύταις. Ἐν τῷ τρίτῳ δὲ, οἶμαι, σαφέστερον ταῦτα γέγραφεν· ἐν μὲν τῷ ἀφορισμῷ τῆς κινήσεως τοσαῦτα φαμὲν αὐτῆς εἴδη ὅσαι κατηγορίαι· τὴν γὰρ τοῦ δυνάμει ὄντος ᾗ τοιοῦτον ἐντελέχειαν κίνησιν. Καὶ τοῦτο δὲ ἐν τῷ αὐτῷ βιβλίῳ <pb facs="uiug.30112023840660-1583374486redo_0446"/> φησί· Τοῦ δὲ πρός τι κίνησις τοῦ μὲν κατὰ λόγον οὐκ ἔστι, τοῦ δὲ κατὰ δύναμιν ἔστιν· ἡ γὰρ ἐνέργεια κίνησίς τε καὶ καθʼ αὑτό. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 94.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="21">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 21</label><p rend="indent">Θ. ἐν τοῖς Φυσικοῖς ἀπορεῖ πρὸς τὸν ἀποδοθέντα τοῦ τόπου λόγον ὑπὸ τοῦ Ἀριστοτέλους τοιαῦτα, ὅτι τὸ σῶμα ἔσται ἐν ἐπιφανείᾳ, ὅτι κινούμενος ἔσται ὁ τόπος, ὅτι οὐ πᾶν σῶμα ἐν τόπῳ, οὐδὲ γὰρ ἡ ἀπλανὴς, ὅτι ἐὰν συναχθῶσιν αἱ σφαῖραι, καὶ ὅλος ὁ οὐραο νὸς οὐκ ἔσται ἐν τόπῳ, ὅτι τὰ ἐν τόπῳ ὄντα μηδὲν αὐτὰ μετακινηθέντα, ἐὰν ἀφαιρεθῇ τὰ περιέχοντα αὐτὰ, οὐκέτι ἔσται ἐν τόπῳ. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 141.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="22">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 22</label><p rend="indent">Καὶ Θ. ἐν τοῖς Φυσικοῖς φαίνεται τὴν ἐννοίαν ταύε την ἐσχηκὼς περὶ τοῦ τόπου ἐν οἷς φησὶν ὡς ἐν ἀπορίᾳ προάγων τὸν λόγον μήποτε οὐκ ἔστι καθʼ αὑτὴν οὐσία τις ὁ τόπος ἀλλὰ τῇ τάξει καὶ θέσει τῶν σωμάτων λέγεται κατὰ τὰς φύσεις καὶ δυνάμεις· ὁμοίως δ' ἐπὶ ζώων καὶ φυτῶν καὶ ὅλως τῶν ἀνομοιομερῶν, εἴτε ἐμψύχων εἴτε ἀψύχων, ἔμμορφον δὲ τὴν φύσιν ἐχόντων· καὶ γὰρ τούτων τάξις τις καὶ θέσις τῶν μερῶν ἐστὶ πρὸς τὴν ὅλην οὐσίαν. Διὸ καὶ ἕκαστον ἐν αὑτοῦ χώρᾳ λέγεται τῷ ἔχειν τὴν οἰκείαν τάξιν· ἐπεὶ καὶ τῶν τοῦ σώματος μερῶν ἕκαστον ἐπιποθήσειεν ἂν καὶ ἀπαιτήσειε τὴν ἑαυτοῦ χώραν καὶ θέσιν. <bibl xml:lang="eng">(Simpl. in Arist. f. 149b.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="22b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 22b</label><p rend="indent">Ἰστέον δὲ ὅτι καὶ Θ. καὶ Εὔδημος ἐν τοῖς περὶ τόπου ἀξιώμασι καὶ τὸ ἀκίνητον εἶναι τὸν τόπον προλαμβάνουσι. <bibl xml:lang="eng">(Simpl. in Arist. Phys. p. 374b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="23">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 23</label><p rend="indent">Ἐν τῷ τεσσαρεσκαιδεκάτῳ τῶν Φυσικῶν οὕτως περὶ τῆς κινήσεως· Τὸν μὲν κοινὸν καὶ καθόλου λόγον οὐ χαλεπὸν ἀποδοῦναι καὶ εἰπεῖν ὡς ἐνέργειά τίς ἐστιν ἀτελὴς τοῦ δυνάμει ὄντος, ᾗ τοιοῦτον καθʼ ἕκαστον γένος τῶν κατηγοριῶν, ὃ καὶ διὰ τῆς αἰσθήσεως σχεδὸν φαίνεται. <bibl xml:lang="eng">(Simpl. in Arist. Categ. 110.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="24">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 24</label><p rend="indent">Ἔτι δὲ δεῖ πείθεσθαι Θεοφράστῳ· τούτῳ μὲν γὰρ δοκεῖ μὴ χωρίζεσθαι τὴν κίνησιν τῆς ἐνεργείας, εἶναι δὲ τὴν μὲν κίνησιν καὶ ἐνέργειαν ὡς ἂν ἐν αὐτῇ περιεχένην, οὐκέτι μέντοι καὶ τὴν ἐνέργειαν κίνησιν· τὴν γὰρ ἑκάστου οὐσίαν καὶ τὸ οἰκεῖον εἶδος ἐνέργειαν <pb facs="uiug.30112023840660-1583374486redo_0447"/> εἶναι ἑκάστου, μὴ οὖσαν ταύτην κίνησιν. Καὶ γὰρ ἡ τελειότης καὶ ἐν τοῖς νοητοῖς καὶ φύσει ἀκινήτοις εἶναι οὐ κεκώλυται. Εἰσὶ δὲ καὶ ἐν τοῖς αἰσθητοῖς πολλαὶ τοιαῦται, οἷον οἱ κατὰ τὸ σχῆμα τοῦ ἀνδριάντος· ἕστηκε δὲ τὸ σχῆμα κατὰ τὴν αὐτὴν τελειότητα. <bibl xml:lang="eng">(Simpl. in Arist. Categ. 77b.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="25">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 25</label><p rend="indent">Καὶ γὰρ ὁ Θ. ἐν τῷ πρώτῳ τῶν περὶ Κινήσεως θαυμαστὰ, φησὶ, φαίνεται κατʼ αὐτὴν ὄντα τὴν φύσιν τῆς κινήσεως, οἷον εἰ μὴ ἔστιν αὐτῆς ἀρχὴ, πέρας δὲ ἔστι. Πῶς δὲ τὸ μὲν πέρας ἀδιαίρετον ἐλαμβάνομεν, τὴν δὲ ἀρχὴν ἐπʼ ἄπειρον διαιρετήν. Δυνατὸν γὰρ τοῖς αὐτοῖς χρώμενον λόγοις καὶ τὸ πέρας τοῦ συνεχοῦς ἐπʼ ἄπειρον διαιρετὸν λαβεῖν καὶ τὴν ἀρχὴν ἀδιαίρετον· ἔοικεν οὖν καὶ τὸ πέρας διττὸν εἶναι καὶ ἡ ἀρχὴ διττὴ τῆς τε κινήσεως καὶ τοῦ χρόνου καὶ παντὸς συνεχοῦς, τὸ μὲν ὡς τὸ πρῶτον ἢ τὸ ἔσχατον μέρος τοῦ συνεχοῦς, τὸ δὲ ὡς ἀρχὴ καὶ πέρας, τὰ μηκέτι μέρη μηδὲ ὅμοια τῷ ὅλῳ. <bibl xml:lang="eng">(Simpl. in Arist. Phys. 230.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="26">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 26</label><p rend="indent">Θαυμαστὸν τοίνυν, καθάπερ φησὶν ὁ Θ., καὶ λίαν παρὰ τὰς ἐννοίας, εἰ μὴ ἔστιν ἀρχὴ τῆς κινήσεως, πέρας δὲ ἔστιν, καὶ ὅλως εἰ μὴ ἄμφω πεπερασμένα, ἀλλὰ τέλος μέν ἐστι τοῦ βαδίζειν, ἀρχὴ δὲ οὐ, καὶ τέλος μὲν τοῦ πλεῖν, ἀρχὴ δὲ οὐκ ἔστιν, καὶ ἡνίκα μὲν ἐπαύσατο τοῦ τρέχειν ὁ ἵππος ἔστιν εἰπεῖν, ἡνίκα δὲ ἤρξατο οὐκ ἔστιν. Ἢ οὐ τοῦτό φησιν ὡς οὐκ ἔστιν ἀρχὴ τῆς κινήσεως, ἀλλʼ ὡς οὐκ ἔστιν αὐτὴν λαβεῖν; <bibl xml:lang="eng">(Themist. in Arist. Phys. p. 411 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="26b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 26b</label><p rend="indent">Καὶ ὁ Θ. δὲ ἐν τῷ α´ περὶ Κινήσεως τὰ αὐτὰ ταῦτα περὶ τούτων δοξάζων φαίνεται. Λέγει δὲ οὕτως· <q>Ὑπὲρ δὲ τοῦ κινεῖσθαι τὸ κινούμενον καὶ κεκινῆσθαι τὸ κεκινημένον δεῖν ἄρα γε ἐνδέχεται λέγειν ὃ καὶ ἐπὶ τῶν σωμάτων κατὰ τὴν ἀλλοίωσιν, ὡς οὐκ ἀεὶ τὸ ἥμισυ πρῶτον, ἀλλʼ ἐνίοτε ἀθρόον γε.</q> <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 23.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="27">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 27</label><p rend="indent">Οἱ περὶ τὸν Ἀριστοτέλη καὶ Θεόφραστον καὶ ὅλως οἱ Περιπατητικοὶ διττῆς οὔσης κατὰ τὸ ἀνωτάτω τῆς τῶν πραγμάτων φύσεως, ἐπεὶ τὰ μὲν καθῶς προεῖπον αἰσθητά ἐστι, τὰ δὲ νοητὰ, διττὸν καὶ αὐτοὶ τὸ κριτήριον ἀπολείπουσιν, αἴσθησιν μὲν τῶν αἰσθητῶν, νόησιν δὲ τῶν νοητῶν, κοινὸν δὲ ἀμφοτέρων, ὡς ἔλεγεν ὁ Θ. τὸ ἐναργές. <bibl xml:lang="eng">(Sext. Emp. a. M. 7, 217, p. 414 ed. Fabr. 1718.)</bibl> </p></div>
+</div>
+ <div type="textpart" subtype="fragment" n="28">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 28</label><p rend="indent">Καὶ Θ. μέντοι ἐν τῷ περὶ τῶν φυσικῶν δοξῶν κατὰ Πλάτωνά φησι γεννητὸν τὸν κόσμον καὶ οὕτω ποιεῖται τὰς ἐνστάσεις, παρεμφαίνει δὲ ὅτι ἴσως σαφηνείας χάριν γεννητὸν αὐτὸν ὑποτίθεται. <bibl xml:lang="eng">(Taurus ap. Joannem adv. Proclum VI, 8 et 27.)</bibl> </p></div>
+ </div>
+<div type="textpart" subtype="fragment" n="29">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 29</label><p rend="indent">Ὁ δὲ Θ. εἰπὼν ὅτι τάχʼ ἂν γεννητὸν λέγοι σαφηνείας χάριν ὡς καὶ τοῖς διαγράμμασι παρακολουθοῦμεν γινομένοις, φησὶ, πλὴν ἴσως ἡ γένεσις οὐχ ὁμοίως ἔχει καὶ ἐπὶ τῶν διαγραμμάτων. <bibl xml:lang="eng">(Taurus l. l. VI, 21 et  27.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="30">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 30</label><p rend="indent">Θ. μέντοι φησὶ τοὺς γένεσιν καὶ φθορὰν τοῦ κόσμου κατηγοροῦντας ὑπὸ τεττάρων ἀπατηθῆναι τῶν μεγίστων, γῆς ἀνωμαλίας, θαλάττης ἀναχωρήσεως, ἑκάστου τῶν τοῦ ὅλου μερῶν διαλύσεως χερσαίων φθορᾶς κατὰ γένη ζώων. Κατασκευάζειν δὲ τὸ μὲν πρῶτον οὕτως· εἰ μὴ γενέσεως ἀρχὴν ἔλαβεν ἡ γῆ, μέρος ὑπανεστὼς οὐδὲν ἂν ἐπʼ αὐτῆς ἑωρᾶτο· χθαμαλὰ δʼ ἤδη τὰ ὄρη πάντα ἐγεγένητο καὶ οἱ γεωλόφοι πάντες ἰσόπεδοι τῇ πεδιάδι· </p></div>
+<div type="textpart" subtype="section" n="2"><p>τοσούτων γὰρ καθʼ ἕκαστον ἐνιαυτὸν ὄμβρων ἐξ ἀϊδίου φερομένων εἰκὸς ἦν τῶν διῃρμένων πρὸς ὕψος τὰ μὲν χειμάρροις ἀπερρῆχθαι τὰ δʼ ὑπονοστήσαντα κεχαλάσθαι, πάντα δὲ διὰ πάντων ἤδη λελειάνθαι· νυνὶ δὲ συνεχεῖς ἀνωμαλίαι καὶ παμπόλλων ὀρῶν αἱ πρὸς αἰθέριον ὕψος ὑπερβολαὶ μηνύματʼ ἐστὶ τοῦ τὴν γῆν μὴ ἀΐδιον εἶναι· πάλαι γὰρ ὡς ἔφην ἐν ἀπείρῳ χρόνῳ ταῖς ἐπομβρίαις ἀπὸ περάτων ἐπὶ πέρατα πᾶσα λεωφόρος ἐγεγένητο. Πέφυκε γὰρ ἡ ὕδατος φύσις καὶ μάλιστα ἀπὸ ὑψηλοτάτων καταράττουσα τὰ μὲν ἐξωθεῖν τῆ βίᾳ τὰ δὲ τῷ συνεχεῖ τῶν ψεκάδων κολάπτουσα κοιλαίνειν ὑπεργάζεσθαί τε τὴν σκληρόγεων καὶ λιθωδεστάτην ὀρυκτήρων οὐκ ἔλαττον. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Καὶ μὴν ἥ γε θάλασσα, φασὶν, ἤδη μεμείωται, μάρτυρες δὲ αἱ νήσων εὐδοκιμώταται Ῥόδος τε καὶ Δῆλος· αὗται γὰρ τὸ μὲν παλαιὸν ἠφαο νισμέναι κατὰ τῆς θαλάσσης ἐδεδύκεσαν ἐπικλυζόμεναί χρόνῳ δʼ ὕστερον ἐλαττουμένης ἠρέμα κατʼ ὀλίγον ἀνίσχουσαι διεφάνησαν ὡς αἱ περὶ αὐτῶν ἀναγραφεῖσαι μηνύουσιν ἱστορίαι· τὴν δὲ Δῆλον καὶ Ἀνάφην ὠνόμασαν διʼ ἀμφοτέρων ὀνομάτων πιστούο μενοι τὸ λεγόμενον, ἐπειδὴ ἀναφανεῖσα δήλη ἐγένετο ἀδηλουμένη καὶ ἀφανὴς οὖσα τὸ πάλαι. Πρὸς δὲ τούτοις μεγάλων πελαγῶν μεγάλους κόλπους καὶ βαθεῖς ἀναξηρανθέντας ἠπειρῶσθαι καὶ γεγενῆσθαι τῆς παρακειμένης χώρας μοῖραν οὐ λυπρὰν σπειρομένους καὶ φυτευομένους· οἷς σημεῖα τῆς παλαιᾶς ἐναπολελεῖφθαι θαλαττώσεως ψηφῖδας τε καὶ κόγχας καὶ  ὅσα  ὁμοιότροπα πρὸς αἰγιαλοὺς εἴωθεν  ἀποθράττεσθαι <gap reason="lost" rend=" .... "/> </p></div>
+<div type="textpart" subtype="section" n="4"><p>Εἰ δὲ μειοῦται ἡ θάλαττα, μειωθήσεται μὲν ἡ γῆ, μακραῖς δʼ ἐνιαυτῶν περιόδοις καὶ εἰσάπαν ἑκάτερον στοιχεῖον ἀναλωθήσεται, δαπανηθήσεται δὲ καὶ ὁ σύμπας ἀὴρ ἐκ τοῦ κατʼ ὀλίγον ἐλαττούμενος, ἀποκριθήσεται δὲ τὰ πάντα εἰς μίαν οὐσίαν τὴν τοῦ πυρός. </p></div>
+<div type="textpart" subtype="section" n="5"><p>Πρὸς δὲ τὴν τοῦ τρίτου κεφαλαίου κατασκευήν χρήσονται λόγῳ τοιῷδε· φθείρεται πάντως ἐκεῖνο οὗ πάντα τὰ μέρη φθαρτά ἐστι· τοῦ δὲ κόσμου πάντα τὰ μέρη φθαρτά ἐστι· φθαρτὸς ἄρα ὁ κόσμος ἐστίν <gap reason="lost" rend=" .... "/> </p></div>
+<div type="textpart" subtype="section" n="6"><p>Τὸν δὲ τέταρτον καὶ λοιπὸν λόγον ἀκριβωτέον ὧδέ φασιν. Εἰ ὁ κόσμος ἀΐδιος ἦν, ἦν ἂν καὶ τὰ ζῶα ἀΐδια καὶ πολύ γε μᾶλλον τὸ τῶν ἀνθρώπων γένος, ὅσῳ καὶ τῶν ἄλλων ἄμεινον. Ἀλλὰ καὶ ὀψίγονον φανῆναι τοῖς βουλομένοις ἐρευνᾶν τὰ φύσεως· εἰκὸς γὰρ μᾶλλον δὲ ἀναγκαῖον ἀνθρώποις συνυπάρξαι τὰς τέχνας ὡς ἂν ἰσήλικας οὐ μόνον ὅτι λογικῇ φύσει τὸ ἐμμέθοδον οἰκεῖον ἀλλὰ καὶ ὅτι ζῆν ἄνευ τούτων οὐκ ἔνεστιν· ἴδωμεν οὖν τοὺς ἑκάστων χρόνους ἀλογήσαντες τῶν ἐπιτραγῳδουμένων θεοῖς μύθων * * εἰ μὴ ἀΐδιος ἄνρωπος, οὐδʼ ἄλλο τι ζῶον, ὥστʼ οὐδʼ αἱ δεδεγμέʼ ναι ταῦτα χῶραι, γῆ καὶ ὕδωρ καὶ ἀήρ. Ἐξ ὧν τὸ φθαρτὸν εἶναι τὸν κόσμον δῆλόν ἐστιν. <bibl xml:lang="eng">(Philo de Aetern. mundi II, p. 501 ed. Mang.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="31">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 31</label><p rend="indent"><add>Αριστοτέλης</add> λέγει οὖν ὅτι ἡ σφαῖρα ἡ τὸ ἐν ἄστρον ἔχουσα τὸ πλανᾶσθαι λεγόμενον ἐν πολλαῖς σφαίραις ταῖς ἀνελιττούσαις καλουμέναις, ἢ ὥς ὁ Θ. αὐτὰς καλεῖ, ταῖς ἀνάστροις, ἐνδεδεμένη φέρεται. <bibl xml:lang="eng">(Simpl. ad Arist. de Caelo f. 120.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="32">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 32</label><p rend="indent">Διὰ τοῦτο οὖν ἐν τρισὶν αὐτὸν <add>τὸν ἥλιον</add> ἔλεγον φέρεσθαι σφαίραις, ἂς Θ. ἀνάστρους ἐκάλει ὡς μηδὲν ἐχούσας ἄστρον. <bibl xml:lang="eng">(Simpl. ad Arist. de Caelo f. 120.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="33">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 33</label><p rend="indent">Ξενοφάνης ἐκ νεφῶν πεπυρωμένων εἶναι τὸν ἥλιον <gap reason="lost" rend=" .... "/> ἢ ὡς Θ. ἐν τοῖς Φυσικοῖς γέγραφεν, ἐκ πυριδίων τῶν συναθροιζομένων μὲν ἐκ τῆς ὑγρᾶς ἀναθυμιάσεως, συναθροιζόντων δὲ τὸν ἥλιον. <bibl xml:lang="eng">(Jo. Stobae. Ecl. I, 25, 1.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="34">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 34</label><p rend="indent">Ἢ γὰρ μόνος ἢ μάλιστα Πλάτων τῇ ἀπὸ τοῦ προνοοῦντος αἰτίᾳ (<foreign xml:lang="lat">ut</foreign> ἕνα εἶναι τὸν κόσμον <foreign xml:lang="lat">probaret</foreign>) κατεχρήσατο; φησὶν ὁ Θ. τοῦτό γε καλῶς αὐτῷ μαρτυρῶν. <bibl xml:lang="eng">(Proclus in Timae. p. 138 ed. Bas.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="35">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 35</label><p rend="indent">Ὁ δημιουργὸς ἤρχετο τῆς συστάσεως τοῦ κόσμου ἐκ πυρὸς καὶ γῆς· δεῖ δὲ τὸ γενησόμενον σωματοειδὲς ἀντιτυπικὸν εἶναι καὶ ὁρατὸν <gap reason="lost" rend=" .... "/> Θ. φησιν· εἰ τὸ ὁρατὸν καὶ τὸ ἁπτὸν ἐκ γῆς καὶ πυρός ἐστι, τὰ ἄστρα καὶ ὁ οὐρανὸς ἔσται ἐκ τούτων· οὐκ ἔστι δέ. Ταῦτα λέγει εἰσάγων τὸ πέμπτον σῶμα τὸ κυκλοφορητικόν. <bibl xml:lang="eng">(Taurus l. l. XIII, 15.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="36">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 36</label><p rend="indent" xml:lang="lat">Hicetas Syracusius, ut ait Theophrastus, coelum, lunam, stellas, supera denique omnia stare censet, neque praeter terram rem ullam in mundo moveri: quae cum circum axem se summa celeritate convertat et torqueat, eadem effici omnia, quae si stante terra coelum moveretur. <bibl xml:lang="eng">(Cicero Luculli 59, 123.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="37">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 37</label><p rend="indent">Οἱ μὲν τὴν τοῦ ὅλου κίνησιν καὶ περιφορὰν τὸν χρόνον φασὶν ὡς τὸν Πλάτωνα νομίζουσιν ὅ τε ὔδημος καὶ ὁ Θεόφραστος καὶ ὁ Ἀλέξανδρος. <bibl xml:lang="eng">(Simpl. in Arist. Phys. 165.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="38">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 38</label><p rend="indent">Πλάτων μὲν γὰρ τὸ ποσὸν τῆς κινήσεως εἰπὼν τὸν χρόνον ἀχώριστόν τι αὐτὸν ὑπέθετο τῆς κινήσεως, Θ. δὲ συμβεβηκός τι. <bibl xml:lang="eng">(Simpl. in Arist. Categ. p. 79b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="39">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 39</label><p rend="indent">Οἱ μὲν γὰρ αὐτῶν <add>φυσιολόγων</add> ὑπόλειμμα λέγουσιν εἶναι τὴν θάλασσαν τῆς πρώτης ὑγρότητος· ὑγροῦ γὰρ ὄντος τοῦ περὶ τὴν γῆν τόπου τὰ πρῶτα τῆς ὑγρότητος ὑπὸ τοῦ ἡλίου ἐξατμίζεσθαι καὶ γίνεσθαι τὰ πνεύματά τε ἐξ αὐτῆς καὶ τροπὰς ἡλίου τε καὶ σελήνης <gap reason="lost" rend=" .... "/> τὸ δέ τι αὐτῆς ὑπολειφθὲν ἐν τοῖς κοίλοις τόποις θάλατταν εἶναι· διὸ καὶ ἐλάττω γίνεοσθαι ξηραινομένην ἑκάστοτε ὑπὸ τοῦ ἡλίου καὶ τέλος ἔσεσθαί ποτε ξηράν. Ταύτης τῆς δόξης ἐγένοντο, ὡς ἱστορεῖ ὁ Θ., Ἀναξίμανδρός τε καὶ Διογένης. Διογένης δὲ καὶ τῆς ἁλμυρότητος ταύτην αἰτίαν λέγει, ὅτι ἀνάγοντος τοῦ ἡλίου τὸ γλυκὺ τὸ καταλειπόμενον καὶ ὑπομένον ἁλμυρὸν εἶναι συμβαίνει. <bibl xml:lang="eng">(Alex. in Arist. Meteor. f. 91.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="40">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 40</label><p rend="indent">Θαλῆς δὲ πρῶτος παραδέδοται τὴν περὶ φύσεως <pb facs="uiug.30112023840660-1583374486redo_0451"/> ἱστορίαν τοῖς Ἕλλησιν ἐκφῆναι, πολλῶν μὲν καὶ ἄλλων προγεγονότων, ὡς καὶ Θεοφράστῳ δοκεῖ, αὐτὸς δὲ πολὺ διενεγκὼν ἐκείνων ὡς ἀποκρύψαι πάντας τοὺς πρὸ αὐτοῦ. <bibl xml:lang="eng">(Simpl. in Arist. Phys. 6.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="41">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 41</label><p rend="indent">Καὶ Διογένης δὲ ὁ Ἀπολλωνιάτης σχεδὸν νεώτατος γεγονὼς τῶν περὶ ταῦτα σχολασάντων τὰ μὲν πλεῖστα συμπφορημένως γέγραφε, τὰ μὲν κατὰ Ἀναξαγόραν, τὰ δὲ κατὰ Λεύκιππον λέγων· τὴν δὲ τοῦ παντὸς φύσιν ἀέρα καὶ οὗτός φησιν ἄπειρον εἶναι καὶ ἀΐδιον, ἐξ οὗ πυκνουμένου καὶ μανουμένου καὶ μεταβάλλοντος τοῖς πάθεσι τὴν τῶν ἄλλων γίνεσθαι μορφήν. Καὶ ταῦτα μὲν Θ. ἱστορεῖ περὶ τοῦ Διογένους. <bibl xml:lang="eng">(Simpl. in Arist. Phys. 6.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="42">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 42</label><p rend="indent">Πρῶτος δʼ οὗτος <add>Παρμενίδης</add> τὴν γῆν ἀπέφηνε σφαιροειδῆ καὶ ἐν μέσῳ κεῖσθαι· δύο τʼ εἶναι στοχεῖα, πῦρ καὶ γῆν, καὶ τὸ μὲν δημιουργοῦ τάξιν ἔχειν, τὴν δὲ ὕλης, - γένεσιν τʼ ἀνθρώπων ἐξ ἰλύος πρῶτον γενέσθαι, - ταὐτὸν δʼ ὑπάρχειν τὸ θερμὸν καὶ τὸ ψυχρὸν ἐξ ὧν τὰ πάντα συνεστάναι· καὶ τὸν νοῦν καὶ τὴν ψυχὴν ταὐτὸν εἶναι, καθὰ μέμνηται καὶ Θ. ἐν τοῖς Φυσικοῖς πάντων σχεδὸν ἐκτιθέμενος τὰ δόγματα. <bibl xml:lang="eng">(Diogen. Laert. 9, 22.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="43">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 43</label><p rend="indent">Ὡς ὁ Ἀλέξανδρος ἱστορεῖ ὁ μὲν Θ. οὕτως ἐκτίεθεται <add>Παρμενίδου δόξαν</add> ἐν τῷ πρώτῳ τῆς φυσικῆς ἱστορίας· τὸ παρὰ τὸ ὂν οὐκ ὂν, τὸ οὐκ ὂν οὐδὲν, ἓν ἄρα τὸ ὄν. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 25.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="44">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 44</label><p rend="indent">Περὶ Παρμενίδου καὶ τῆς δόξης αὐτοῦ καὶ Θ. ἐν τῷ πρώτῳ τῶν Φυσικῶν οὕτως λέγει· Τούτῳ δʼ ἐπιο γενόμενος Παρμενίδης Πύρητος ὁ Ἐλεάτης, δὲ λέγει καὶ Ξενοφάνην. - ἐπʼ ἀμφοτέρας ἦλθε τὰς ὁδούς, Καὶ γὰρ ὡς ἀΐδιόν ἐστι τὸ πᾶν ἀποφαίνεται καὶ γένεσιν ἀποδιδόναι πειρᾶται τῶν ὄντων οὐχ ὁμοίως περὶ ἀμφοτέρων δοξάζων, ἀλλὰ κατʼ ἀλήθειαν μὲν ἓν τὸ πᾶν καὶ ἀγέννητον καὶ σφαιροειδὲς ὑπολαμβάνων, κατὰ δόξαν δὲ τῶν πολλῶν εἰς τὸ γένεσιν ἀποδοῦναι τῶν φαινομένων δύο ποιῶν τὰς ἀρχὰς, πῦρ καὶ γῆν, τὸ μὲν ὡς ὕλην, τὸ δʼ ὡς αἴτιον καὶ ποιοῦν. <bibl xml:lang="eng">(Alex. in Arist. Metaph. p. 536 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="45">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 45</label><p rend="indent">Μίαν δὲ τὴν ἀρχὴν ἤτοι ἓν τὸ ὂν καὶ πᾶν καὶ οὔτε πεπερασμένον οὔτε ἄπειρον οὔτε κινούμενον οὔτε <pb facs="uiug.30112023840660-1583374486redo_0452"/> ἠρεμοῦν Ξενοφάνη τὸν Κολοφώνιον τὸν Παρμενίδου διδάσκαλον ὑποτίθεσθαί φησιν ὁ Θεόφραστος. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 5.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="46">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 46</label><p rend="indent">Καὶ ταῦτά φησιν ὁ Θ. παραπλησίως τῷ Ἀναξιμάνδρῳ λέγειν τὸν Ἀναξαγόραν· ἐκεῖνος γάρ φησιν ἐν τῇ διακρίσει τοῦ ἀπειρου τὰ συγγενῆ φέρεσθαι πρὸς ἄλληλα καὶ ὅτι μὲν ἐν τῷ παντὶ χρυσὸς ἐνῆν γίνεσθαι χρυσὸν, ὅτι δὲ γῆ γῆν, ὁμοίως δὲ καὶ τῶν ἄλλων ἕκαστον ὡς οὐ γινομένων ἀλλ᾽ ὑπαρχόντων πρότερον· τῆς δὲ κινήσεως καὶ τῆς γενέσεως αἴτιον ἐπεστησε τὸν νοῦν ὁ Ἀναξαγόρας ὑφ᾽ οὗ διακρινόμενα τούς τε κόσμους καὶ τὴν τῶν ἄλλων φύσιν ἐγέννησε. Καὶ οὕτω μὲν οὖν, φησὶ, λαμθανόντων δόξειεν ἂν ποιεῖν τὰς μὲν ὑλικὰς ἀρχὰς ἀπείρους, ὥσπερ εἴρηται, τὴν δὲ τῆς κινήσεως καὶ τῆς γενέσεως αἰτίαν μίαν. Εἰ δέ τις τὴν μίξιν τῶν ἁπάντων ὑπολάθοι μίαν εἶναι φύσιν ἀόριστον καὶ κατ᾽ εἶδος καὶ κατὰ μέγεθος ὃπερ ἂν δόξειε βούλεσθαι λέγειν, συμθαίνει δύο τὰς ἀρχὰς αὐτὸν λέγειν τήν τε τοῦ ἀπείρου φύσιν καὶ τὸν νοῦν, ὥστε πάντως φαίνεται τὰ σωματικὰ στοιχεῖα παραπλησίες ποιῶν Ἀναξιμάνδρῳ. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 6, et f. 33.)</bibl></p></div>
+</div>                                        
+<div type="textpart" subtype="fragment" n="47">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 47</label><p rend="indent">Εἰπόντος τοῦ Ἀναξαγόρου ὅτι οὔτε τοῦ σμικροῦ ἐστὶ τοὐλάχιστον ἀλλὰ τὸ ἔλασσον ἀεὶ, οὔτε τὸ μέγιαε στον, ὡς καὶ αὐτὴ ἡ λέξις τοῦ Ἀναξαγόρου δηλοῖ, καὶ μέντοι Θ. ἐν τῷ περὶ Ἀναξαγόρου δευτέρῳ τάδε γράφων· "ἔπειτα τὸ διὰ τοῦτο λέγειν πάντα ἐν παντὶ, διότι καὶ ἐν μεγέθει καὶ ἐν σμικρότητι ἄπειρα, καὶ οὔτε τὸ ἐλάχιστον οὔτε τὸ μέγιστον ἔστι λαβεῖν, οὐχ ἱκανὸν πρὸς πίστιν," ἅμα μὲν ἀναιρεῖ τοῦτο ὁ Ἀριστοτέλης κ. τ. λ. <bibl xml:lang="eng">(Simpl. in Arist. Phys. fr. 35.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="48">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 48</label><p rend="indent">Ὁ μέντοι Θ. τοὺς ἄλλους προϊστορήσας "Τούτοις" φησὶν "ἐπιγενόμενος Πλάτων τῇ μὲν δόξῃ καὶ τῇ δυνάμει πρότερος τοῖς δὲ χρόνοις ὕστερος καὶ τὴν πλείο στην πραγματείαν περὶ τῆς πρώτης φιλοσοφίας ποιησάμενος ἐπέδωκεν ἑαυτὸν καὶ τοῖς φαινομένοις ἁψάμενος τῆς περὶ φύσεως ἱστορίας, ἐν ᾗ δύο τὰς ἀρχὰς βούλεται ποιεῖν, τὸ μὲν ὑποκείμενον ὡς ὕλην ὃ προσαγορεύει πανδεχὲς, τὸ δʼ ὡς αἴτιον καὶ κινοῦν ὁ πεο ριάπτει τῇ τοῦ θεοῦ καὶ τῇ τἀγαθοῦ δυνάμει. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 6.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="49">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 49</label><p rend="indent">Καὶ τῶν παλαιῶν τινὲς ἐπέπληξαν τῷ Πλάτωνι λέγοντες <pb facs="uiug.30112023840660-1583374486redo_0453"/> ὡς οὐκ ὀρθῶς ἀρχὴν ἀρχῆς ἐπιζητεῖ καὶ γένεσιν ἀγεννήτου πράγματος· εἰ γὰρ καὶ τῶν πρώτων τὰ αἴτια ζητήσομεν καὶ τῶν αὐθυποστάτων γενέσεις ἐπινοήσομεν, εἰς ἄπειρον προιόντες λησόμεθα καὶ τέλος οὐδὲν ἔχον τῆς θεωρίας· ὥσπερ γὰρ ὁ πάντα ἀποδεικτὰ νενομικὼς αὐτὴν μάλιστα τὴν ἀπόδειξιν ἀναιρεῖ, τοῦτον τὸν τρόπον καὶ ὁ πάντων αἰτίας ἐπιζητῶν ἄρδην ἀνατρέπει τὰ ὄντα πάντα καὶ τὴν τάξιν αὐτῶν τὴν ἀπό τινος ὡρισμένης ἀρχῆς προϊοῦσαν. Τοιαῦτα μὲν ὁ Θ. ἐπιτιμᾷ τῷ Πλάτωνι περὶ τῆσδε τῆς ψυχογονίας οὐδὲ ἐπὶ τῶν φυσικῶν πάντων λέγων δεῖν ἡμᾶς ἐπιζητεῖν τὸ διὰ τί· γελοῖον γάρ φησιν ἀπορεῖν διὰ τί καίει τὸ πῦρ καὶ διὰ τί πῦρ καὶ διὰ τί ψύχει ἡ χιών. <bibl xml:lang="eng">(Procl. in Timae. p. 416 ed. Schneid.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="50">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 50</label><p rend="indent">Θ. τὸν Προμηθέα φησὶ σοφὸν γενόμενον μεταδοῦναι πρῶτον τοῖς ἀνθρώποις φιλοσοφίας, ὅθεν καὶ διαδοθῆναι τὸν μῦθον ὡς ἄρα πυρὸς μεταδοίη. <bibl xml:lang="eng">(Schol. Apoll. Rhod. 2, 1248.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="51">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 51</label><p rend="indent">Καλῶς ὁ Πλάτων τὴν φυσιολογίαν εἰκοτολογίαν ἔλεγεν εἶναι, ᾧ καὶ Ἀριστοτέλης συμμαρτυρεῖ, τὴν κυρίως ἀπόδειξιν ἐξ ἀμέσων καὶ ἀξιοπίστων ἀρχῶν καὶ ἐκ τῶν κυρίως αἰτίων καὶ τῇ φύσει προτέρων εἶναι βουλόμενος. Ἀλλʼ οὐκ ἀτιμαστέον διὰ τοῦτο φυσιολογίαν, ἀλλʼ ἀρκεῖσθαι χρὴ τῷ κατὰ τὴν ἡμετέραν χρῆσιν καὶ δύναμιν ὡς καὶ Θεοφράστῳ δοκεῖ. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 5.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="52">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 52</label><p rend="indent">Δημόκριτος δὲ, ὡς Θ. ἐν τοῖς φυσικοῖς ἱστορεῖ, ὡς ἰδιωτικῶς ἀποδιδόντων τῶν κατὰ τὸ θερμὸν καὶ τὸ ψυχρὸν καὶ τὰ τοιαῦτα αἰτιολογούντων, ἐπὶ τὰς ἀτόυν μους ἀνέβη. <bibl xml:lang="eng">(Simpl. in Arist. de Caelo p. 510. Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="53">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 53</label><p rend="indent">Ταῦτα δὲ καὶ τῷ κορυφαίῳ ἀρέσκει τῶν Ἀριστοτέλους ἑταίρων Θλεοφράστῳ ἐν τῷ πρώτῳ τῶν περὶ κινήσεως αὐτοῦ λέγοντι ὅτι αἱ μὲν ὀρέξεις καὶ αἱ ἐπιθυμίαι καὶ ὀργαὶ σωματικαὶ κινήσεις εἰσὶ καὶ ἀπὸ τούτων ἀρχὴν ἔχουσιν, ὅσαι δὲ κρίσεις καὶ θεωρίαι, ταύτας οὐκ ἔστιν εἰς ἕτερον ἀγαγεῖν ἀλλʼ ἐν αὐτῇ τῇ ψυχῆ καὶ ἡ ἀρχὴ καὶ ἡ ἐνέργεια καὶ τὸ τέλος ἔτι δὲ δὴ καὶ ὁ νοῦς, κρεῖττόν τι μέρος καὶ θειότερον ἅτε δὴ ἔξωθεν ἐπεισιὼν, καὶ παντελῶς. Καὶ τούτοις ἐπάιγει· ὑπὲρ μὲν οὖν τούτων σκεπτέον εἴ τινα χωρισμὸν ἔχει πρὸς τὸν ὅρον· ἐπεὶ τό γε κινήσεις εἶναι καὶ ταύτας ὁμολογούμενον. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 225.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="53b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 53b</label><p rend="indent">Ἄμεινον δὲ τὰ Θεοφράστου παραθέσθαι περί τε τοῦ δυνάμει νοῦ καὶ τοῦ ἐνεργείᾳ. Περὶ μὲν οὖν τοῦ δυνάμει τάδε φησίν· "Ὁ δὲ νοῦς πῶς ποτὲ ἔξωθεν ὢν καὶ ὥσπερ ἐπίθετος ὅμως συμφυὴς, καὶ τίς ἡ φύσις αὐτοῦ; τὸ μὲν γὰρ μηδὲν εἶναι κατʼ ἐνέργειαν δυνάμει δὲ πάντα, καλῶς, ὥσπερ καὶ ἡ αἴσθησις. Οὐ γὰρ οὕτως ληπτέον ὡς οὐδὲ αὐτός· ἐριστικὸν γάρ· ἀλλʼ ὡς ὑποκειμένην τινὰ δύναμιν καθάπερ καὶ ἐπὶ τῶν ὑλικῶν. Ἀλλὰ τὸ ἔξωθεν ἄρα οὐχ ὡς ἐπίθετον ἀλλʼ ὡς ἐν τῇ πρώτῃ γενέσει συμπεριλαμβανόμενον θετέον. Πῶς δέ ποτε γίνεται τὰ νοητὰ καὶ τί τὸ πάσχειν αὐτόν; δεῖ γὰρ, εἴπερ εἰς ἐνέργειαν ἥξει, καθάπερ ἡ αἴσθησις· ἀσωμάτῳ δὲ ὑπὸ σώματος τί τὸ πάθος, ἢ ποία μεταβολή, καὶ πρότερον ἀπʼ ἐκείνου ἡ ἀρχὴ ἢ ἀπʼ αὐετοῦ; τὸ μὲν χὰρ πάσχειν ἀπʼ ἐκείνου δόξειεν ἂν, οὐδὲν γὰρ ἀφʼ ἑαυτοῦ τῶν ἐν πάθει, τὸ δὲ ἀρχὴ πάντων εἶναι καὶ ἐπʼ αὐτῷ τὸ νοεῖν καὶ μὴ ὥσπερ ταῖς αἰσθήσεσιν ἀπʼ αὐτοῦ. Τάχα δʼ ἂν φανείη καὶ τοῦτο ἄτοπον, εἰ ὁ νοῦς ὕλης ἔχει φύσιν μηδὲν ὣν ἅπαντα δὲ δυνατός" <gap reason="lost" rend=" .... "/> ἔστι δὲ ἐν τῷ πέμπτῳ τῶν Φυσικῶν, δευτέρῳ δὲ τῶν περὶ Ψυχῆς <gap reason="lost" rend=" .... "/> ἀπαθὴς γὰρ, φησὶν, ὁ νοῦς, εἰ μὴ ἄρα ἄλλως παθητικὸς, καὶ ὅτι τὸ παθητικὸν ὑπʼ αὐτοῦ οὐχ ὡς τὸ κινητικὸν ληπτέον, ἀτελὴς γὰρ ἡ κίνησις, ἀλλʼ ὡς ἐνέργειαν. Καὶ προϊών φησι τὰς μὲν αἰσθήσεις οὐκ ἄνευ σώματος, τὸν δὲ νοῦν χωριστόν. Ἁψάμενος δὲ καὶ τῶν περὶ τοῦ ποιητικοῦ νοῦ διωρισμένων Ἀριστοτέλει, ἐκεῖνο, φησὶν, ἐπισκεπτέον, ὁ δή φαμεν ἐν πάσῃ φύσει τὸ μὲν ὡς ὕλην καὶ δυνάμει τὸ δὲ αἴτιον καὶ ποιητικὸν, καὶ, ὅτι ἀεὶ τιμιώτερον τὸ ποιοῦν τοῦ πάσχοντος καὶ ἡ ἀρχὴ τῆς ὕλης· ταῦτα μὲν ἀποδέχεται, διαπορεῖ δέ· τίνες οὖν αὗται αἱ δύο φύσεις, καὶ τί πάλιν τὸ ὑποκείμενον ἢ συνηρτημένον τῷ ποιητικῷ, μικτὸν γάρ πως ὁ νοῦς ἔκ τε τοῦ ποιητικοῦ καὶ τοῦ δυνάμει· εἰ μὲν οὖν σύμφυτος ὁ κινῶν, καὶ εὐθὺς ἐχρῆν καὶ ἀεί· εἰ δὲ ὕστερον, μετὰ τίνος, καὶ πῶς ἡ γένεσις; ἔοικεν οὖν καὶ ἀγέννητος εἴπερ καὶ ἄφθαρτος. Ἐνυπάρχων δʼ οὖν διὰ τί οὐκ ἀεί; ἢ διὰ τί λήθη καὶ ἀπάτη καὶ ψεῦδος, ἢ διὰ τὴν μίξιν; ἐξ ὧν ἁπάντων δῆλόν ἐστιν ὅτι οὐ φαύλως ὑπονοοῦμεν ἄλλον μέν τινα παρʼ αὐτοῖς εἶναι τὸν παθητικὸν νοῦν καὶ φθαρτὸν, ὃν καὶ κοινὸν ὀνομάζουσι, καὶ ἀχώριστον τοῦ σώματος, καὶ διὰ τὴν πρὸς τοῦτο μίξιν τὴν λήθην καὶ τὴν ἀπάτην γίνεσθαι, φησὶν ὁ Θ., ἄλλον δὲ τὸν ὥσπερ συγκείμενον ἐκ τοῦ δυε͂ νάμει καὶ ἐνεργείᾳ, ὃν καὶ χωριστὸν εἶναι τοῦ σώματος τιθέασι καὶ ἄφθαρτον καὶ ἀγέννητον, καὶ πὼς μὲν δύο φύσεις τούτους τοὺς νοῦς, πὼς δὲ μίαν. Ἓν γὰρ τὸ ἐξ ὕλης καὶ εἴδους. <bibl xml:lang="eng">(Themist. de An. 91.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="54">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 54</label><p rend="indent">Δοκεῖ δὲ ὁ Θ. ἀπορεῖν εἰ πᾶσα μεταβολὴ ἐν χρόνῳ <pb facs="uiug.30112023840660-1583374486redo_0455"/>ὑφορώμενος ἴσως τὰς ἀπὸ σκότους εἰς φῶς μεταβολὰς, ὅταν εἰσκομισθέντος εἰς τὸ δωμάτιον λύχνου πᾶς ἀθρόως ὁ οἶκος ἀναπλησθῇ τοῦ φωτὸς ἄνευ χρόνου. <bibl xml:lang="eng">(Simpl. in Arist. Phys. f. 233.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="55">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 55</label><p rend="indent">Ἀλέξανδρος μὲν οὖν οἴεται πᾶσαν μεταβολὴν εἶναι ἐν χρόνῳ, Θ. δὲ ἔοικε διαποροῦντι καὶ ἴσως ὑφεωρᾶτο τὰς ἀπὸ σκότους εἰς φῶς μεταβολὰς ὅταν εἰσκομισθέντος εἰς τὸ δωμάτιον λύχνου πᾶς ἀθρόως ὁ οἶκος ἀναπλησθῇ τῆς αὐγῆς καὶ τοῦ φωτὸς ἄνευ χρόνου. <bibl xml:lang="eng">(Themist. in Arist. Phys. f. 55b.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="56">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 56</label><p rend="indent">Ὡς δὲ πολλαχῶς λεγομένης τῆς προτάσεως ἔοικε καὶ Θ. ἐν τῷ περὶ Καταφάσεως φρονεῖν. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. f. 55b.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="57">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 57</label><p rend="indent">Ἔστι γάρ τινα ἃ καθʼ ἑαυτὰ μὲν λεγόμενα πλείω σημαίνει, συντεθέντα δὲ οὐκέτι, ὡς ἐν τῷ περὶ τοῦ Πολλαχῶς Θ. φησίν. <bibl xml:lang="eng">(Alex. in Arist. Top. p. 284 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="57b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 57b</label><p rend="indent">Οὗ καὶ αὐτοῦ Θ. ἐν τῷ περὶ τῶν Ποσαχῶς μέμνηται, οἷον ἐπίστασθαι πᾶν τρίγωνον ὅτι δυσὶν ὀρθαῖς ἴσας ἔχει τὰς τρεῖς γωνίας· ἢ γὰρ ὡς καθόλου ἢ ὡς καθʼ ἕκαστα πάντα. <bibl xml:lang="eng">(Alex. in Arist. Top. p. 266b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="57c">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 57c</label><p rend="indent">Διόπερ ὀρθῶς ὁ Θ. τὴν μὲν καθʼ ἕκαστα ὡρισμένην καλεῖ, τὴν δὲ μερικὴν ἀδιόριστον· καὶ ἀντιδιαιρεῖται πρὸς μὲν τὴν ἁπλῶς καθόλου ἡ καθʼ ἕκαστα, πρὸς δὲ τὴν καθόλου ὡς καθόλου ἡ μερική. <bibl xml:lang="eng">(Ammon. in Arist. de interpr. p. 113 b Bk. Conf. Boeth. in Arist. de int. l. 340.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="57d">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 57d</label><p rend="indent">Ἐμνημόνευσε τοῦ οὕτως ἀδιορίστου καὶ Θ. ἐν τῷ περὶ Καταφάσεως· τὸ γὰρ εἶναί τι τούτων καὶ τὸ ἕτερον εἶναι ἀδιόριστα λέγει, τὸ μὲν εἶναί τι τούτων, ὅτι καὶ πάντων ὄντων ἀληθὲς καὶ τῶν μὲν ὄντων τῶν δὲ μή· τὸ δὲ τὸ ἕτερον εἶναι, ὅτι καὶ τοῦτο ἀληθὲς καὶ ἀμφοτέρων ὄντων καὶ τοῦ ἑτέρου μόνου. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. p. 152 b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="57e">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 57e</label><p rend="indent">Φησὶν ὁ Θ. ὅτι ἐπί τινων, ἐὰν μὴ ὁ προδιορισμὸς ᾖ καὶ ἐπὶ τοῦ κατηγορουμένου, ἡ ἀντίφασις συναληθεύσει, οἷον, φησὶν, ἐὰν λέγωμεν, Φαινίας ἔχει ἐπιστήμην, Φαινίας οὐκ ἔχει ἐπιστήμην, δύναται ἀμφόετερα εἶναι ἀληθῆ. <bibl xml:lang="eng">(Schol. ap. Waitz. Organ. I. 40.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="58">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 58</label><p rend="indent">Ὁ γοῦν Θ. ἐν τῷ πρώτῳ τῶν Προτέρων Ἀναλυτικῶν λέγων περὶ τῶν ὑπὸ τοῦ ἀναγκαίου σημαινομένων οὕτως γράφει· " Τρίτον τὸ ὑπάρχον· ὅτε γὰρ ὑπάρχει τότε οὐχ οἷόν τε μὴ ὑπάρχειν. Ἴδιον δὲ τοῦ ἐνδεχομένου τὸ τὸ μὴ ὂν ὑποτίθεσθαι εἶναι, ἐπεὶ καὶ τὸ ἀναγκαῖον καὶ τὸ ὑπάρχον ἂν λάβῃ τις εἶναι, οὐκ ἀδύνατόν τι ἀκολουθήσει. Καὶ ἔσται ἐφαρμόζων ὁ λόγος καὶ τῷ ἀναγκαίῳ καὶ τῷ ὑπάρχοντι· διὸ ἴδιον τοῦ ἐνδεχομένου τὸ μὴ ὑπάρχον αὐτὸ ὡς ὑπάρχον ὑποτεθὲν μηδὲν ἀδύνατον ἔχειν ἑπόμενον." <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. f. 51.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="59">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 59</label><p rend="indent">Ἀνάγονται μέντοι καὶ οἱ διʼ ὅλων ὑποθετικοὶ εἰς τὰ τρία τὰ προειρημένα σχήματα ἄλλῳ τρόπῳ, ὡς καὶ Θ. δέδειχεν ἐν τῷ πρώτῳ τῶν Προτέρων Ἀναλυτικῶν... Θ. μέντοι ἐν τῷ πρώτῳ τῶν Ἀναλυτικῶν δεύτερον σχῆμα λέγει ἐν τοῖς διʼ ὅλων εἶναι ὑποθετικοῖς, ἐν ᾧ ἀρχόμεναι ἀπὸ τοῦ αὐτοῦ αἱ προτάσεις λήγουσιν, εἰς ἕτερα, τρίτον δὲ ἐν ᾧ ἀπὸ διαφόρων ἀρχόα μεναι λήγουσιν εἰς ταὐτόν. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. f. 109b.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="60">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 60</label><p rend="indent">Ἀπορεῖ δὲ ἐν τούτοις ὁ Ἀλέξανδρος περὶ τῶν λεγομένων παρὰ τῷ Θεοφράστῳ διʼ ὅλου ὑποθετικῶν <gap reason="lost" rend=" .... "/> διʼ ὅλου δὲ ὑποθετικοὺς ἐκάλει ὁ Θ. τοὺς καὶ τὰς προο τάσεις καὶ τὸ συμπέρασμα ἐξ ὑποθέσεως λαμβάνοντας... ἔλεγε δὲ ὁ Θ. ὅτι δύνανται καὶ οὗτοι ὑπὸ τὰ τρία σχήματα ἀνάγεσθαι. <bibl xml:lang="eng">(Jo. Philop. ad Arist. Anal. pr. f. 75.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="61">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 61</label><p rend="indent">Οὐ ταὐτὸν δέ ἐστιν ἀνάγειν τε λόγους εἰς τὰ σχήματα, ὡς ἔχει τὰ Θεοφράστου δύο τὰ ἐπιγραφόμενα Ἀνηγμένων λόγων εἰς τὰ σχήματα, καὶ μέθοδον ὑπογράψαι διʼ ἧς πάντα τὰ προβλήματα ἀναλύειν καὶ ἀνάγειν δυνησόμεθα <gap reason="lost" rend=" .... "/> ὑπογράφει δὲ τὴν αὐτὴν ταύτην μέθοδον καὶ Θ. ἐν τῷ ἐπιγραφομένῳ περὶ Ἀναλύο σεως Συλλογισμῶν. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. f. 115.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="62">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 62</label><p rend="indent">Καὶ Θ. δὲ ἐν τῷ πρώτῳ τῶν Προτέρων Ἀναλυτιαῶν λέγει τὸ προσλαμβανόμενον ἢ διʼ ἐπαγωγῆς τίθεσθαι ἢ καὶ αὐτὸ ἐξ ὑποθέσεως ἢ διʼ ἐνεργείας ἢ διὰ συλλογισμῶν. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. f. 131.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="63">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 63</label><p rend="indent">Θ. μὲν καὶ Εὔδημος ἁπλούστερον ἔδειξαν τὴν καθόλου ἀποφατικὴν ἀντιστρέφουσαν ἑαυτῇ· τὴν γὰρ καθόλου ἀποφατικὴν ὠνόμασαν καθόλου στερητικὴν, τὴν δὲ δεῖξιν οὕτως ποιοῦνται. Κείσθω τὸ Α κατὰ μηδενὸς τοῦ Β· εἰ δὲ κατὰ μηδενὸς ἀπέζευκται· καὶ τὸ Β ἄρα παντὸς ἀπέζευκται τοῦ Α, εἰ δὲ τοῦτο κατʼ οὐδενὸς αὐτοῦ. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. f. 11.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="63b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 63b</label><p rend="indent">Θ. δὲ καὶ ταύτην <add>τὴν ἀποφατικὴν ἐνδεχομένην</add> ὁμοίως ταῖς ἄλλαις ἀποφατικαῖς φησὶν ἀντιστρέφειν. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. p. 150 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="63c">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 63c</label><p rend="indent">Θ. μέντοι καὶ Εὔδημος <gap reason="lost" rend=" .... "/> ἀντιστρέφειν φασὶ καὶ τὴν καθόλου ἀποφατικὴν αὑτῇ, ὥσπερ ἀντέστρεφε καὶ ἡ ὑπάρχουσα καθόλου ἀποφατικὴ καὶ ἡ ἀναγκαία. <bibl xml:lang="eng">(Alex. ibid. p. 166b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="63d">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 63d</label><p rend="indent">Λέγει <add>Ἀριστοτέλης</add> ὅτι ἐν ταῖς τοιαύταις προτάοσεσιν αἱ δυνάμει τοὺς τρεῖς ὅρους ἐν ἑαυταῖς ἔχουσιν, ὁποῖαί εἰσιν οὓς ἐξέθετο νῦν, <add>ὁποῖαί εἰσιν αἱ κατὰ πρόσληψιν ὑπὸ Θεοφράστου λεγόμεναι· αὗται γὰρ τοὺς τρεῖς ὅρους ἔχουσί πως· ἐν γὰρ τῇ καθʼ οὖ τὸ Β παντὸς κατʼ ἐκείνου καὶ τὸ Α παντὸς, ἐν τοῖς δύο ὅροις, τῷ τε Β καὶ τῷ Α, τοῖς ὡρισμένοις ἤδη πως περιείληπται καὶ ὁ τρίτος, καθʼ οὗ τὸ Β κατηγορεῖται, πλὴν οὐχ ὁμοίως ἐκείνοις ὡρισμένος φανερός.</add> Ἐν δὴ ταῖς τοιαύταις προτάσεσι αἱ τῇ λέξει μόνον τῶν κατηγορικῶν διαφέρειν δοκοῦσιν, ὡς ἔδειξεν ἐν τῷ περὶ Καταφάσεως Θ <gap reason="lost" rend=" .... "/> ὁ μέντοι Θ. ἐν τῷ περὶ Καταφάσεως τὴν καθʼ οὗ τὸ Β, τὸ Α, ὡς ἴσον δυναμένην λαμβάνει τῇ καθʼ οὖ παντὸς τὸ Β, κατʼ ἐκείνου παντὸς τὸ Α. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. p. 184 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="63e">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 63e</label><p rend="indent">Δόξουσι γὰρ οἱ διʼ ὅλων ὑποθετικοὶ, οὓς Θ. κατὰ ἀναλογίαν λέγει, οἷοί εἰσιν οἱ διὰ τριῶν λεγόμενοι, μηκέτι ὑποπίπτειν τῇ διὰ τῆς ἐκλογῆς δείξει. Λέγει δὲ αὐτοὺς ὁ Θ. κατὰ ἀναλογίαν, ἐπειδὴ αἵ τε προτάσεις ἀνάλογοι καὶ τὸ συμπέρασμα ταῖς προτάσεσιν· ἐν <pb facs="uiug.30112023840660-1583374486redo_0458"/> γὰρ αὐτοῖς ὁμοιότης ἐστίν. Ἢ οὐδὲ συλλογισμοὶ κυρίως καὶ ἁπλῶς ἐκεῖνοι, ἀλλὰ τὸ ὅλον τοῦτο, ἐξ ὑποθέσεως συλλογισμοί· οὐδὲν γὰρ εἶναι ἢ μὴ εἶναι δεικνύουσι. <bibl xml:lang="eng">(Alex. in Arist. Anal. pr. p. 178b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="64">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 64</label><p rend="indent">Φησὶν ὁ Θ. "τοῦ λόγου σχέσεις ἔχοντος τὴν μὲν πρὸς τοὺς ἀκροατὰς τὴν δὲ πρὸς τὰ πράγματα, τὴν μὲν πρὸς τοὺς ἀκροατὰς ποιηταὶ καὶ ῥήτορες διώκουσι, τὴν δὲ πρὸς τὰ πράγματα φιλόσοφοι." <bibl xml:lang="eng">(Anonym. in Arist. de interpr. p. 94, 16 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="65">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 65</label><p rend="indent">Διττῆς γὰρ οὔσης τῆς τοῦ λόγου σχέσεως, καθὰ διώρισεν ὁ φιλόσοφος Θ. τῆς τε πρὸς τοὺς ἀκροωμέα νους οἷς καὶ σημαίνει τι, καὶ τῆς πρὸς τὰ πράγματα ὑπὲρ ὧν ὁ λέγων πεῖσας προτίθεται τοὺς ἀκροωμένους, περὶ μὲν τὴν σχέσιν αὐτοῦ τὴν πρὸς τοὺς ἀκροατὰς καταγίνονται ποιητικὴ καὶ ῥητορική κ. τ. λ. <bibl xml:lang="eng">Ammon. Herm. in Arist. de interpr. fr. 35.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="66">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 66</label><p rend="indent" xml:lang="lat">Th. de Affirmatione et negatione sic docuit, definitionem unam semper orationem eamque oportere continuatim proferri: illa enim una oratio esse dicitur, quae unius substantiae ̓εεὶξιω est. Definitio autem, ut v. gr. hominis, animal gressibile bipes, una est oratio per hoc, quoniam unum subjectum i. e. hominem ὁε. Sin vero quis dividat et orationem unam rem significantem proferendi intermissione distribuat, multiplex fit oratio. <bibl xml:lang="eng">(Boeth. II. p. 318.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="67">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 67</label><p rend="indent">Ὁ μὲν Ἀριστοτέλης .. τὸ αὐτό φησιν εἶναι τὸ καθʼ αὑτὸ καὶ τὸ ᾗ αὐτό· εἴ τι μὲν γὰρ ᾗ αὐτὸ, τοῦτο καὶ καθʼ αὑτό· οἱ δὲ περὶ τὸν Θεόφραστον διαφέρειν ταῦτα λέγουσι· καθολικώτερον γὰρ εἶναι τὸ καθʼ αὑτὸ τοῦ ᾗ αὐτό. Εἴ τι μὲν γὰρ ἧ αὐτὸ, τοῦτο καὶ καθʼ αὑτὸ, οὐκ εἴ τι δὲ καθʼ αὑτὸ, πάντως καὶ ἧ αὐτό. Τῷ γὰρ τριγώνῳ ᾗ τρίγωνόν ἐστιν ὑπάρχει τὸ τὰς τρεῖς γωνίας δυσὶν ὀρθαῖς ἴσας ἔχειν, ἀλλὰ καὶ καθʼ αὑτό· τῷ δὲ ἰσοσκελεῖ καθʼ αὑτὸ μὲν ὑπάρχει, οὐκέτι δὲ ἡ αὐτό. Οὐ γὰρ ᾗ ἰσοσκελὲς ὑπάρχει αὐτῷ τὸ τὰς τρεῖς γωνίας δυσὶν ὀρθαῖς ἴσας ἔχειν. Εἰ γὰρ τοῦτο οὐκ ἂν τῷ ἰσοπλεύρῳ ἢ σκαληνῷ ὑπῆρχεν, ἐπεὶ μὴ ἰσοσκελῆ, ἀλλʼ ᾗ ἁπλῶς τρίγωνά ἐστιν. Ταῦτα μὲν οἱ περὶ Θεόφραστον. <bibl xml:lang="eng">(Jo. Philop. in Arist. Anal. post. fol. 17.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="68">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 68</label><p rend="indent">Ἔστιν ὁ τόπος, ὡς λέγει Θ., ἀρχή τις ἢ στοχεῖον ἀφʼ οὗ λαμβάνομεν τὰς περὶ ἕκαστον ἀρχὰς, ἐπιστήσαντες τὴν διάνοιαν, τῇ περιγραφῇ μὲν ὡρισμένως, ἢ γὰρ περιλαμβάνει τὰ κοινά τε καὶ καθόλου ἅ ἐστι τὰ κύρια τῶν συλλογισμῶν, ἢ δύναταί γε ἐξ αὐτῶν τὰ τοιαῦτα δείκνυσθαί τε καὶ λαμβάνεσθαι, - τοῖς δὲ καθʼ ἕκαστα ἀορίστως· ἀπὸ τούτων γὰρ ὁρμώμενον ἔστιν εὐπορεῖν προτάσεως ἐνδόξου πρὸς τὸ προκείμενον· τοῦτο γὰρ ἡ ἀρχή. <bibl xml:lang="eng">(Alex. in Arist. Top. 5.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="69">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 69</label><p rend="indent">Διὸ καὶ ὁρίζεται ὁ Θ. τὸν τόπον, ὡς ἤδη ἡμῖν ἐν τοῖς πρώτοις εἴρηται, οὕτως· "τόπος ἐστὶν ἀρχή τις ἢ στοιχεῖον, ἀφʼ οὗ λαμβάνομεν τὰς περὶ ἕκαστον ἀρχὰς, τῇ περιγραφῇ μὲν ὡρισμένος, τοῖς δὲ καθʼ ἕκαστα ἀόριστος." <bibl xml:lang="eng">(Alex. in Arist. Top. 67.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="70">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 70</label><p rend="indent">Δεῖ μὴ ἀγνοεῖν ὅτι Θ. διαφέρειν λέγει παράγγελμα καὶ τόπον· παράγγελμα μὲν γάρ ἐστι τὸ κοινότερον καὶ καθολικώτερον ἁπλούστερον λεγόμενον, ἀφʼ οὗ ὁ τόπος εὑρίσκεται· ἀρχὴ γὰρ τόπου τὸ παράγγελμα, ὥσπερ ὁ τόπος ἐπιχειρήματος. <bibl xml:lang="eng">(Alex. in Arist. Top. 72.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="70b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 70b</label><p rend="indent">Δεῖ δὲ μὴ ἀγνοεῖν ὅτι Θ. τὰ περὶ ταὐτοῦ προβλήματα ὑποτάσσει τοῖς γενικοῖς, ὥσπερ καὶ τὰ ἀπὸ τῶν διαφορῶν· λέγει γὰρ "καὶ τὴν διαφορὰν καὶ τὴν ταὐτότητα γεικὰ θῶμεν." <bibl xml:lang="eng">(Alex. in Arist. Top. p. 257 Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="70c">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 70c</label><p rend="indent">Ὅτι δὲ λέγεται <add>τὰ πρός τι</add> πρὸς ταῦτα ἐν οἶς ἔστιν, ὑπὸ μὲν Θεοφράστου ἐν τῷ β´ τῶν Τοπικῶν οὕτως εἴρηται· "ὧν μὲν γὰρ ἕκαστα λέγεται, καὶ ὑπάρχει τούτοις, ὥσπερ ἡ συμμετρία καὶ ἡ ἕξις καὶ ἡ σύνθεσις· μνήμη δὲ καὶ ὕπνος καὶ ὑπόληψις οὐδενὶ τῶν ἀψύχων, οὐδὲ ἡ ἑτέρου κίνησις ἄλλῳ· διὸ δὴ καθʼ ἕκαστον διοριστέον." <bibl xml:lang="eng">(Alex. in Arist. Metaph. p. 719b Bk.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="70d">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 70d</label><p rend="indent">Κατὰ γὰρ τὸν Θ. γνώμη ἐστὶ καθόλου ἀπόφανσις ἐν τοῖς πρακτέοις· εἰσὶ δὲ τούτων αἱ μὲν παράδοξοι αἱ δὲ ἔνδοξοι αἱ δὲ ἀμφισβητούμεναι. <bibl xml:lang="eng">(Gregor. Οοἰη. ad Hermog. VII, 1154 Walz.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="71">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 71</label><p rend="indent">Ὁ Θ. οὕτως ὁρίζεται τὸ ἀξίωμα "ἀξίωμά ἐστι δόξα τις, ἡ μὲν ἐν τοῖς ὁμογενέσιν ἐὰν ἴσα ἀπὸ ἴσων, ἡ δὲ ἁπλῶς ἐν ἅπασιν." <bibl xml:lang="eng">(Themist. in Arist. Anal. post. f. 2.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="72">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 72</label><p rend="indent">Τὴν μέμψιν καὶ τὴν ὀργὴν καὶ τὸν θυμὸν ἅπερ φησὶν ὁ Θ. ἐν τῷ περὶ παθῶν κατὰ τὸ μᾶλλον καὶ ἧττον ἔχειν τὴν διαφορὰν καὶ μὴ εἶναι ὁμοειδῆ <gap reason="lost" rend=" .... "/> <bibl xml:lang="eng">(Simpl. in Arist. Categ. f. 7.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="73">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 73</label><p rend="indent">Ἄσκοπος ἡ τύχη, φησὶν ὁ Θ., καὶ δεινὴ παρελέοσθαι τὰ προπεπονημένα καὶ μεταρρίψαι τὴν δοκοῦσαν εὐημερίαν, οὐθένα καιρὸν ἔχουσα τακτόν. <bibl xml:lang="eng">(Plutarch. Cons. ad Apoll. 104d.)</bibl> </p></div>
+</div>
+<div type="textpart" subtype="fragment" n="74">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 74</label><p rend="indent">Τοὺς ἀλλοτρίους, ὡς ἔλεγε Θ., οὐ φιλοῦντα δεῖ κρίνειν ἀλλὰ κρίναντα φιλεῖν. <bibl xml:lang="eng">(Plut. Am. frat. 482c.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="75">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 75</label><p rend="indent">Εὖ εἶπε Θ. ὡς, εἰ κοινὰ τὰ φίλων ἐστὶ, μάλιστα δεῖ κοινοὺς τῶν φίλων εἶναι τοὺς φίλους. <bibl xml:lang="eng">(Plut. am. frat. 490d.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="76">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 76</label><p rend="indent">Διὸ καὶ Θ. ἄοινα συμπόσια παίζων ἐκάλει τὰ κουρεῖα διὰ τὴν λαλιὰν τῶν προσκαθιζόντων. <bibl xml:lang="eng">(Plut. Symp. 678 et 716.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="77">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 77</label><p rend="indent">Φιλόσοφος ὁ Θ. ἐν τῇ συγκρίσει τῶν ἁμαρτημάτων ὡς ἄν τις κοινότερον τὰ τοιαῦτα συγκρίνειέ φησι βαρυτέρα εἶναι τὰ κατʼ ἐπιθυμίαν πλημμελούμενα τῶν κατὰ θυμόν· ὁ γὰρ θυμούμενος μετά τινος λύπης καὶ λεληθυίας συστολῆς φαίνεται τὸν λόγον ἀποστρεφόμενος, ὁ δὲ κατʼ ἐπιθυμίαν ἁμαρτάνων ὑφʼ ἡδονῆς ἡττώμενος ἀκολαστότερός πως φαίνεται καὶ θηλύτερος ἐν ταῖς ἁμαρτίαις. <bibl xml:lang="eng">(M. Antonin. 2, p. 168 ed. Bas.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="78">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 78</label><p rend="indent">Οὐδὲν πλέον ἔχουσιν οἱ πλούσιοι τῶν μέτρια κεο κτημένων, ἀλλὰ τυφλὸς ὁ πλοῦτός ἐστιν, ὥς φησι Θ., <pb facs="uiug.30112023840660-1583374486redo_0461"/> καὶ ἄζηλος ἀληθῶς, εἰ Καλλίας πλουσιώτατος Ἀθηναίων καὶ Ἰσμηνίας εὐπορώτατος Θηβαίων ἐχρῶντο τούτοις οἷς Σωκράτης καὶ Ἐπαμινώνδας. <bibl xml:lang="eng">(Plut. Ορί. divit. p. 527.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="79">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 79</label><p rend="indent">Ἀλλʼ οὐδὲ τὰ κατὰ τέχνην ἀηδῶς ἐποιεῖτο <add>ὁ Παρράσιος</add> ἀλλὰ ῥᾳδίως ὡς καὶ ᾄδειν γράφοντα, ὡς ἱστορεῖ Θ. ἐν τῷ περὶ Εὐδαιμονίας. <bibl xml:lang="eng">(Athenae. 12 p. 543.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="80">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 80</label><p rend="indent">Θεόμανδρον τὸν Κυρηναῖόν φησι Θ. ἐν τῷ περὶ Εὐδαιμονίας περιιόντα ἐπαγγέλλεσθαι διδάσκειν εὐτυχίαν. <bibl xml:lang="eng">(Athenae. 13, p. 567.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="81">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 81</label><p rend="indent">Οὐκ, εἰ δή που τοῦ<add>το</add> τῷ γένει τιμώτερον, ἤδη καὶ, ὁτιοῦν ἂν ᾖ μέρος τούτου, πρὸς τὸ τηλίκον θατέρου συγκρινόμενον, αἱρετὸν ἔσται. Λέγω δὲ οἷον, οὐ καὶ χρυσίον τιμιώτερον χαλκοῦ καὶ τηλίκον τοῦ χρυσίου πρὸς τὸ τηλίκον χαλκοῦ μέγεθος ἀντιπαραβαλλόμενον πλέον δόξει; ἀλλὰ ποιήσει τινὰ ῥοπὴν καὶ τὸ πλῆθος καὶ τὸ μέγεθος. <bibl xml:lang="eng">(A. Gell. N. A. 1, 3.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="82">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 82</label><p rend="indent">Κινδυνεύει τὸ λίαν φιλεῖν, ὥς φησι Θ., αἴτιον τοῦ μισεῖν γίνεσθαι. <bibl xml:lang="eng">(Plut. Cato min. p. 777.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="83">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 83</label><p rend="indent">Θ. ἐν τῷ περὶ κολακείας φησὶν ὡς Μύρτις μύστης ὁ Ἀργεῖος Κλεώνυμον τὸν χορευτὴν ἅμα καὶ κόλακα προσκαθίζοντα πολλάκις αὐτῷ καὶ τοῖς συνδικάζουσι, βουλόμενον δὲ καὶ μετὰ τῶν κατὰ τὴν πόλιν ἐνδόξων ὁρᾶσθαι, λαβόμενος, τοῦ ὠτὸς καὶ ἕλκων αὐτὸν ἐκ τοῦ <pb facs="uiug.30112023840660-1583374486redo_0462"/> συνεδρίου πολλῶν παρόντων εἶπεν, Οὐ χορεύσει ἐνθάδε οὐδʼ ἁμῶν ἀκούσει. <bibl xml:lang="eng">(Athenae. 6, p. 254.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="84">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 84</label><p rend="indent">Οὐδεὶς δὲ λέγει τὸν Ἀριστείδου βίον ἡδὺν ἀλλὰ τὸν Σμινδυρίδου τοῦ Συβαρίτου καὶ τὸν Σαρδαναπάλου, καίτοι κατά γε τὴν δόξαν, φησὶν ἐν τῷ περὶ Ἡδονῆς Θ., οὐχ ὁμοίως λαμπρός ἐστιν, ἀλλʼ οὐκ ἐτρύφησεν ὥσπερ ἐκεῖνοι. Οὐδὲ τὸν Ἀγησιλάου τοῦ Λακεδαιμονίων βασιλέως, ἀλλὰ μᾶλλον εἰ ἔτυχεν τὸν Ἀνάνιος οὕτως ἀοράτου κατὰ δόξαν ὄντος. Οὐδὲ τὸν τῶν ἡμιθέων τῶν ἐπὶ Τροίας, ἀλλὰ πολὺ μᾶλλον τῶν νῦν· καὶ τοῦτʼ εἰκότως. Ὁ μὲν γὰρ ἀκατάσκευος καὶ ὥσπερ ἀνάρτυτος ἦν οὔτʼ ἐπιμιξίας οὔσης οὔτε τῶν τεχνῶν διηκριβωμένων· ὁ δὲ πᾶσιν ἐξηρτυμένος πρὸς ῥᾳστώνην καὶ πρὸς ἀπόλαυσιν καὶ πρὸς τὰς ἄλλας διαγωγάς. <bibl xml:lang="eng">(Athenae. 12, p. 511.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="85">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 85</label><p rend="indent">Ὁ Θ. ἀντιλέγει τῷ Πλάτωνι περὶ τοῦ μὴ εἶναι ἀληθῆ καὶ ψευδῆ ἡδονὴν ἀλλὰ πάσας ἀληθεῖς. Εἰ γάρ ἐστί τις, φησὶν, ἡδονὴ ψευδὴς, ἔσται τις ἡδονή οὐχ ἡδονή· ἢ μάλιστα μὲν οὐδὲν συμβήσεται τοιοῦτον· καὶ γὰρ ἡ ψευδὴς δόξα οὐδὲν ἧττον δόξα· εἰ δὲ καὶ συμβαίη τι ἄτοπον τὴν ἐσχάτην ἡδονὴν δοκοῦσαν εἶναι μὴ εἶναι ἡδονήν· ἐπεὶ καὶ ὄντι ἄλλως οὐκ ὂν ἁπλῶς <del>ἐπεὶ καὶ ὄν τι, ἀλλʼ ὡς οὐκ ὂν ἁπλῶς <foreign xml:lang="eng">conj. Schneider.</foreign></del> οἷον τὸ γεννητὸν οὐχ ὅπερ ὄν. Καὶ γὰρ Ἀριστοτέλης τινὰς ἡδονὰς πρός τι εἶναι ἡδονὰς ἀξιοῖ καὶ οὐχ ἁπλῶς, οἷον τὰς τῶν νοσούντων καὶ τῷ πικρῷ χρωμένων ὡς γλυκεῖ. Ἔτι φησὶν ὁ Θ. τριχῶς τὸ ψεῦδος· ἢ γὰρ ὡς ἔθος ἐπίπλαστον ἢ ὡς λόγος ἢ ὡς πρᾶγμά τι ὄν. Κατὰ τί οὖν, φησὶν, ἡ ἡδονὴ ψευδής; οὔτε γὰρ ἦθος ἡδονὴ οὔτε λόγος οὔτε ὂν, οὐκ ὄν· τοιοῦτον γὰρ τὸ πρᾶγμα τὸ ψευδὲς ἐν τῷ μὴ εἶναι χαρακτηρζόμεν. Ἢ ῥητέον ὅτι κατὰ τοὺς τρεῖς διοριο. σμούς ἐστι ψευδὴς ἡ ἡδονή· καὶ γὰρ ἐπίπλαστος ἡ τοῦ ἐπιπλάστου ἤθους, καὶ ἄλογος ἡ ἀντὶ τοῦ ἀληθοῦς εἰς τὸ ψεῦδος ἀποπλανηθεῖσα δόξα καὶ τούτῳ ἐφηδομένη· καὶ μὴ οὖσα ἡ κατὰ ἀπουσίαν τοῦ λυπηροῦ φανταζομένη <del>ἡ</del> ἡδονὴ καὶ ταῦτα μὴ παρόντος ἡδέος; <bibl xml:lang="eng">(Olympiod. in Plat. Phileb. p. 269.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="86">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 86</label><p rend="indent">Θ. ἐν τῷ περὶ Ἡδονῆς καὶ δὴ καὶ τοὺς Ἴωνας, φησὶ, διὰ τὴν ὑπερβολὴν τῆς τρυφῆς έτι *** καὶ νῦν ἡ χρυσῆ παροιμία διαμεμένηκε. <bibl xml:lang="eng">(Athenae. 12, p. 526.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="86b">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 86b</label><p rend="indent">Οὐ γὰρ, εἴ τις, ὡς Θ. λέγει, γευσάμενος τῆς ἀμροαεα <pb facs="uiug.30112023840660-1583374486redo_0463"/> βροσίας ἐπιθυμεῖ αὐτῆς, μέμφεσθαι ἄξιον, ἀλλʼ εἴ τις σφοδρῶς ἡττᾶται τῶν ἡδονῶν ὡς οἱ πολλοί. <bibl xml:lang="eng">(Aspasii Schol. in Ar. Eth. Classical Journal XXIX, 45.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="86c">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 86c</label><p rend="indent">Καὶ τὸν Ἀναξαγόραν αἰτιᾶται ὁ Θ. ἐν Ἠθικοῖς λέγων ὅτι ἐξελαύνει ἡδονὴ λύπην ἐναντίαν οἷον ἀπὸ τοῦ διψᾶν. <bibl xml:lang="eng">(Olymp. in Plat. Phileb. 269 Stallb.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="86d">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 86d</label><p rend="indent">Φυόμεναι γὰρ ἐν τοῖς τηλικούτοις αἱ ἀρεταὶ καὶ βλαστάνουσαι τό τε κατορθούμενον, ὥς φησι Θ., ἐπιβεβαιοῦνται τοῖς ἐπαίνοις καὶ τὸ λοιπὸν αὔξονται μετὰ φρονήματος ἐπαιρόμεναι. Τὸ δὲ ἄγαν πανταχοῦ μὲν ἐπισφαλές. <bibl xml:lang="eng">(Plut. Agis. c. 2.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="86e">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 86e</label><p rend="indent">Θ. ἐρωτηθεὶς ὑπό τινος, τί συνέχει τὸν ἀνθρώπων βίον, ἔφη, εὐεργεσία καὶ τιμὴ καὶ τιμωρία. <bibl xml:lang="eng">(Stob. Eclog. 48, 72.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="86f">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 86f</label><p rend="indent">Μεῖζον δὲ τὸ τὸν πλοῦτον ἄζηλον, ὥς φησι Θ., καὶ ἄπλουτον ἀπεργάσασθαι τῇ κοινότητι τῶν δείπνων καὶ τῇ περὶ τὴν δίαιταν εὐτελείᾳ. <bibl xml:lang="eng">(Plut. Lycurg. c. 10. Cf. Plut. de Cupidit. divit. p. 527.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="87">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 87</label><p rend="indent">Ὅτι δὲ καὶ νόσους ἰᾶται μουσικὴ Θ. ἱστόρησεν ἐν τῷ περὶ ἐνθουσιασμοῦ, ἰσχιακοὺς φάσκων ἀνόσους διατελεῖν εἰ καταυλήσοι τις τοῦ τόπου τῇ φρυγιστὶ ἁρμονίͅ. <bibl xml:lang="eng">(Athenae. 14 p. 624; cf. Eustath. p. 1078, 41.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="88">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 88</label><p rend="indent">Θ. ἐν τῷ περὶ ἐνθουσιασμῶν .. φησὶ .. τὴν μουσικὴν πολλὰ τῶν περὶ τὴν ψυχὴν καὶ τὸ σῶμα γιγνομένων παθῶν ἰατρεύειν καθάπερ λιποθυμίαν φόβους καὶ τὰς ἐπὶ μακρὸν γιγνομένας τῆς διανοίας ἐκστάσεις. Ἰᾶται γὰρ, φησὶν, ἡ καταύλησις καὶ ἰσχιάδα καὶ ἐπιληψίαν, καθάπερ <gap reason="lost" rend=" .... "/> λέγεται τὸν μουσικὸν καταστῆσαι τὸν ἐξιστάμενον ἐν Θήβαις ὑπὸ τὴν τῆς σάλπιγγος φωνήν· ἐπὶ τοσοῦτον γὰρ ἐβόησεν ἀκούων ὥστε ἀσχημονεῖν. Εἰ δέ ποτε καὶ πολεμικὸν σαλπίσειέ τις, πολὺ χεῖρον πάσχειν μαχόμενον. Τοῦτον οὖν κατὰ μικρὸν τῷ αὐλῷ προσάγειν καὶ ὡς ἄν τις εἴποι ἐκ προσαγωγῆς ἐποίησε καὶ τὴν τῆς σάλπιγγος φωνὴν ὑπομένειν. <bibl xml:lang="eng">(Apollon. Hist. Mirab. c. 49.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="89">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 89</label><p rend="indent">Ἔστι γὰρ τὸ γινόμενον κίνημα μελωδητικὸν περὶ τὴν ψυχὴν σφόδρα ἀκριβὲς ὁπόταν φωνῇ ἐθελήσῃ ἑρμηνεύειν αὐτὸ, τρέπει μὲν τήνδε, τρέπει δὲ ἐφʼ ὅσον οἵα τέ ἐστι τὴν ἄλογον τρέψαι καθὸ ἐθέλει. Ἧς τὴν ἀκρίβειάν τινες ἐπεβάλοντο εἰς τοὺς ἀριθμοὺς ἀναπέμπειν κατὰ τοὺς ἐν τούτοις λόγους τὴν ἀκρίβειαν τῶν διαστημάτων γίνεσθαι φήσαντες. Ἕνα γὰρ λόγον εἶναι τοῦ διὰ πασῶν ἔφασαν ὡς καὶ τὸν τοῦ διπλασίονος καὶ τὸν τοῦ διὰ πέντε. Ὡς τὸν τοῦ ἡμιολίου καὶ τὸν τοῦ διὰ τεσσάρων ὡς τὸν τοῦ ἐπιτρίτου, καὶ τῶν ἄλλων διαστημάτων ἁπάντων ὁμοίους, ὥσπερ καὶ τῶν ἄλλων ἀριθμῶν ἑκάστου ἴδιον. Οὕτω τε ἐν ποσότητι τὴν μουσικὴν εἶναι, ἐπειδὴ παρὰ τήνδε αἱ διαφοραί. </p></div>
+<div type="textpart" subtype="section" n="2"><p>Ἃ δὴ λέγοντες συνετώτεροί τισιν ἐφαίνοντο τῶν ἁρμονικῶν καὶ αἰσθήσει κρινόντων, τοῖς τῶν νοητῶν ἀριθμῶν λόγοις ἐπικρίνοντες. Οἳ οὐκ ᾔδεισαν ὅτι, εἰ μέν τι ποσότης ἐστὶν, ἡ διαφορὰ γίγνεται αὕτη παρὰ τὸ ποσότητι διάφορον κἂν μέλος ἢ μέλους μέρος εἴη· ὥστε καὶ ἡ χρόα χρόας ποσότητι διαφέροι, ὅπερ ἀνάγκη κἂν μέλος ἢ μέλους <add>μέρος</add> εἴη, εἴ γε τὸ μέλος καὶ τὸ διάστημα ἀριθμὸς καὶ διὰ τὸν ἀριθμὸν τὸ μέλος καὶ ἡ τοῦδε διαφορά. Καὶ γὰρ εἰ πᾶν διάστημα πλῆθός τι, τὸ δὲ μέλος ἐκ διαφόρων φθόγγων, τὸ μέλος ὅτι ἀριθμὸς τοιόνδε ἂν εἴη. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Ἀλλʼ εἰ μηδὲν ἀλλʼ ἢ ἀριθμὸς, πᾶν ἀριθμητὸν μετέχοι ἂν καὶ μέλους ὅσον καὶ ἀριθμοῦ. Εἰ δ' ὡς τῷ χρώματι συμβέβηκε τὸ πλῆθος ἄλλῳ ὄντι, καὶ τοῖς φθόγγοις, ἔστι τι ἄλλο φθόγγος καὶ ἄλλο τὸ περὶ αὐτὸν πλῆθος. Ἀλλʼ εἰ ἄλλο τι φθόγγος ὁ ἀκουστὸς καὶ ὁ βαρύτερος καὶ ὁ ὀξύτερος, διαφέρουσιν ἀλλήλων ἢ ὡς φθόγγοι ἢ ὡς τὸ πλήθει. Εἰ μὲν <add>ὡς</add> τὸ πλήθει, καί ἐστιν ὁ ὀξύτερος τοιοῦτος τῷ πλείονας ἀριθμοὺς κεκινῆσθαι καὶ ὁ βαρύτερος τῷ ἐλάττους, τί ἄλλο τὸ ἴδιον τῆς φωνῆς ἂν εἴη; πᾶσα γὰρ ἀντιληπτικὴ ἢ κατὰ τὸ ὀξὺ ἢ κατὰ τὸ βαρύ ἐστι· πᾶσα γὰρ φωνή ἐστιν ἧς μὲν ὀξυτέρα ἧς δὲ βαρυτέρα, ὥστε ἧς μὲν ἔλαττον τὸ πλῆθος ἧς δὲ πλεῖον, ὥστε ἀριθμός· οὗ αἰρομένου τί τὸ ἀπολειπόμενον εἴη ἄλλο τι καθὸ φωνή; ἡ φωνὴ δὲ ὀξυτέρα τινὸς ἢ βαρυτέρα ἐστίν· ἔχει τὸ ποσὸν ἡ φωνή· εἰ δὲ ἄλλο τι οὐκ ἔτι ἔσται φωνή τις. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Εἰ δὲ ᾗ φθόγγοι διοίσουσιν οἱ ὀξεῖς καὶ βαρεῖς, οὐκέτι τοῦ πλήθους δεησόμεθα· ἡ γὰρ αὐτῶν φύσει διαφορὰ αὐτάρκης ἔσται εἰς τὴν τῶν μελῶν γένεσιν. Καὶ εἴδησις ἔσται τῶν διαφορῶν. Οὐκέτι γὰρ ἔσονται διαφοραὶ παρὰ τὰ πλήθη ἀλλὰ παρὰ τὴν ἰδιότητα τῶν φωνῶν ὥσπερ ἐν τοῖς χρώμασιν. Οὐδὲ γὰρ χρῶμα ἁπλοῦν ἁπλοῦ χρώματος ποσότητι διαφέρει· ἴσαι γὰρ ἂν εἶεν αἱ ποσότητες· ὥσπερ εἰ συμμιγείη ἢ μέλαν λευκῷ ἴσον ἴσῳ, οὐκ ἂν οἱ τοῦ λευκοῦ ἀριθμοὶ τῶν τοῦ μέλανος πλείους λέγοιντο οὐδʼ ἂν οἱ τοῦ μέλανος τῶν τοῦ λευκοῦ. Οὕτως οὐδὲ τὸ γλυκύπικρον· ἕκαστον γὰρ καθὸ ἐπιτέτακται ἴσον· ἀλλʼ ἔστι τὸ πλῆθος ἐπʼ ἴσον ἐπιτεταγμένον κατὰ τὸ ἴδιον. <pb facs="uiug.30112023840660-1583374486redo_0465"/></p></div>
+<div type="textpart" subtype="section" n="5"><p>Οὕτως οὐδὲ ἡ ὀξεῖα φωνὴ ἐκ πλειόνων συνέστηκεν ἢ πλείους ἀριθμοὺς κινεῖται οὐδὲ ἡ βαρεῖα· οἷόν τε γὰρ ἢ ταύτην λέγειν ἢ κἀκείνην, ἐπειδὴ ἴδιόν τι μέγεθος βαρείας ἐστὶ φωνῆς. Δῆλον δὲ ἐκ τῆς βίας τῆς γεονομένης περὶ τοὺς μελῳδοῦντας· ὡς γάρ τινος δέονται δυνάμεως εἰς τὸ τὴν ὀξεῖαν ἐκφωνῆσαι οὕτω εἰς τὸ τὴν βαρεῖαν φλέγξασθαι. Ἔνθα μὲν γὰρ συνάγουσι τὰ πλεῦρα καὶ τὴν ἀρτηρίαν ἐκτείνουσι <del>διὸ βραχύτερον</del> βίᾳ ἀποστενοῦντες. Ἔνθα δὲ διευρύνουσι τὴν ἀρτηο ρίαν, διὸ βραχύτερον τὸν τράχηλον ποιοῦσι τὸ μῆκος τῆς εὐρύτητος συναγούσης. </p></div>
+<div type="textpart" subtype="section" n="6"><p>Τοιαύτης ἔοικεν ἔν τε τοῖς αὐλοῖς εἰς τὸ ἐμπνεῦσαι βίᾳ τῷ στενωτέρῳ δυνάμεως δεῖν καὶ εἰς τὸ τῷ εὐρυτέρῳ ἵνα πληρωθῇ· καὶ γὰρ δὴ καὶ μᾶλλον ἐν τοῖς αὐλοῖς· ἀπονώτερον γὰρ τὸ ὀξὺ τῷ διὰ τῶν ἄνω γίγνεσθαι τρημάτων· βίας δὲ δεόμενον τὸ βαρὺ καὶ μείζονος εἰ διʼ ὅλου τὸ πνεῦμα πέμποιτο, ὥστε ὅσον μήκους προστίθεται τοσόνδε καὶ πνεύματος ἰσχύος προστίθεται. </p></div>
+<div type="textpart" subtype="section" n="7"><p>Ἐν δὲ ταῖς χορδαῖς τὸ ἴσον κατὰ θάτερον δῆλον· ὅσῳ γὰρ εὐτονωτέρα ἡ τῆς λεπτοτέρας τάσις τοσῷδε ἡ ἀνεῖσθαι δοκοῦσα παχυτέρα, οὕτω τε ὅσῳ ἰσχυρότερος ὁ ἦχος ἐκ τῆς λεπτοτέρας τοσῷδε βαρύτερος ὁ ἕτερος· ἐκ γὰρ μείζονος ὁ πλείων καὶ τοῦ πέριξ ἦχος. Πῶς γὰρ ἂν σύμφωνοι ἐγίγνοντό τινες φθόγγοι εἰ μὴ ἰσότης ἦν; ἀσύγκριτον γὰρ τὸ πλεονάζον, τὸ γὰρ ὑπέρμετρον ὑπὲρ τὴν μῖξιν διάδηλον γίγνεται. Διὸ τοῖς κατὰ τὴν κρᾶσιν ἰσχυροτέροις τὸ ἀνειμένον πλεῖον ἐπιμίγνυται εἰς τὸ ἰσοδυναμῆσαι· </p></div>
+<div type="textpart" subtype="section" n="8"><p>ὥστε ἐστί τις συμφωνία καὶ ἰσότης τῶν ἐξ ὧν γίνεται. Εἰ γὰρ ὁ ὀξὺς πλείους κινοῖτο ἀριθμοὺς, πῶς ἂν συνήχησις γένοιτο; καὶ γὰρ, ὥς φασι, καὶ πορρωτέρω ἀκούεται ὁ ὀξύτερος φθόγγος τῷ πορρωτέρω διὰ τὴν τῆς κινήσεως ὀξύτητα διικνεῖσθαι. Εἰ διὰ τὸ πλῆθος γίγνεται, οὐκ ἄν ποτε γένοιτο σύμφωνος οὗτος πρὸς τὸν βαρὺν, οὔθʼ ὅτε ἀκούεται, εἴ γε ἐν ἀμφοτέροις ἡ συμφωνία, οὔθʼ ὅτε ἐκλείπει ὁ βαρύτερος, ἀνάγκη γὰρ κατὰ τὴν λεληθυῖαν ἔκλειψιν μηκέτʼ ἀκούεσθαι· οὔτε μάλιστα ἄμφω ἀκούονται· καὶ τότε γὰρ ὁ ὀξὺς σφοδρότερός ἐστιν ἅτε οἷός τε ὢν καὶ πόρρω διικνεῖσθαι· φθάνει τε οὖν τὸν βαρὺν καὶ κατισχύει ὥστε σφετερίζεσθαι τὴν αἴσθησιν ἀεὶ <del>μὴ</del> μειονεκτοῦντος τοῦ βαρυτέρου. </p></div>
+<div type="textpart" subtype="section" n="9"><p>Ἀλλʼ ἐπεί ἐστί τι σύμφωνον ἰσότητα δηλοῦν ἀμφοῖν τοῖν φθόγγοιν, ἰσότης ἐστὶ τῶν δυνάμεων διαφέρουσα τῇ ἰδιότητι ἑκατέρα. Τὸ γὰρ ὀξύτερον φύσει ὂν ἐκδηλότερον οὐκ ἰσχυρότερον πορὁ ρωτέρω ἀντιληπτόν ἐστι τοῦ βαρυτέρου, ὥσπερ τὸ λευκὸν ἄλλου του χρώματος, ἤ τι ἕτερον ὃ οὐχὶ τῷ θάτερον ἧττον εἶναι ὁ πέφυκε μᾶλλον ἀντιληπτόν ἐστιν, ἢ τῷ μὴ διὰ τοὺς ἴσους ἀριθμοὺς κινεῖσθαι, ἀλλὰ τῷ μᾶλλον τῷδε ἢ τῶδε ἐπιβάλλειν τὴν αἴσθησιν διὰ τὴν πρὸς τὰ πέριξ ἀνομοιότητα. Οὕτως διικνεῖται μὲν καὶ ὁ βαρύς, ἡ δʼ ἀκοὴ θᾶττον ἀντιλαμβάνεται διὰ τὴν ἰδιότητα τοῦ ὀξέος, οὐ διὰ τὸ ἐν αὐτῷ πλῆθος. </p></div>
+<div type="textpart" subtype="section" n="10"><p>Καὶ γὰρ δή γε εἰ καὶ πορρωτέρω ἐκινεῖτο οὐ διὰ τὸ πλείους κινεῖσθαι ἀριθμοὺς ὁ ὀξύτερος ἀλλὰ διὰ τὸ <pb facs="uiug.30112023840660-1583374486redo_0466"/> σχῆμα· ἐπειδὴ ὁ μὲν ὀξὺς ἦχος πρόσω μᾶλλον φέρεται καὶ ἄνω ὁ δὲ βαρὺς πέριξ κατʼ ἴσον μᾶλλον. Δῆλον δὲ καὶ ἐκ τῶν ὀργάνων· τὸ μὲν γὰρ ὑπόκερας καὶ τὸ σὺν τῷ χαλκώματι περιηχητικώτερα ἅτε τοῦ ἤχου ἴσου περὶ πᾶν γιγνομένου. Καὶ γὰρ εἴ τις ὀξὺν φθεγγόμενος φθόγγον ἅπτοιτο τῆς αὑτοῦ πλευρᾶς, ἔπειτα πάλιν βαρὺν, αἰσθάνοιτο ἂν μᾶλλον ἐπὶ τοῦ βαρέος φθόγγου τῇ χειρὶ τῆς περὶ τὴν πλευρὰν κινήσεως. Κἂν τοῦ ὀργάνου ἅπτηται τῆς χέλυος ἢ τοῦ κέρατος ἢ ἀγκῶνος ὁπότε τὴν λεπτὴν τύπτοι καὶ τὴν τοῦ βαρέος προετικὴν, πάλιν ἐπαίσθοιτο ἂν μᾶλλον τῆς περὶ τὸ κύτος κινήσεως ὁπότε τὴν τοῦ βαρυτέρου τύπτοι ἤχου προετικήν. Εἰς πᾶν γὰρ ὁ βαρὺς φθόγγος διικνεῖται πέριξ, ὁ δὲ ὀξὺς πρόσω ἢ εἰς ὁ βιάζεται ὁ φθεγγόμενος. </p></div>
+<div type="textpart" subtype="section" n="11"><p>Εἰ οὖν ὅσῳ πρόσω κινεῖται ὁ ὀξὺς τοσόνδε περὶ πᾶν κινοῖτο ὁ βαρὺς οὐκ ἂν ἐλάττους κινοῖτο ἀριθμούς· ὅπερ κἀκ τῶν αὐλητικῶν δῆλον· ὁ γὰρ μακρότερος αὐλὸς βαρύτερος ἐν ᾧ πλεῖον τὸ πνεῦμα περὶ ὃ πᾶν ἡ κίνησις. Ἀλλʼ οὐδὲ τάχει ἂν διαφέροι ὁ ὀξύς· προκαυ τελαμβάνετο γὰρ ἂν τὴν ἀκοὴν ὥστε μὴ γίγνεσθαι σύμφωνον· εἰ δὲ γίγνεται ἰστοταχοῦσιν ἄμφω· οὐχὶ οὖν ἀριθμοί τινες ἄνισοι τὸν τῶν διαφορῶν λόγον ποιοῦσιν. Αἱ δὲ φύσει τοιαίδε φωναὶ φύσει συνηρμοσμέναι οὖσαι· οὐδὲ γὰρ τὰ διαστήματα, ὥς τινές φᾶ σιν, αἴτια τῶν διαφορῶν, διὸ καὶ ἀρχαί· </p></div>
+<div type="textpart" subtype="section" n="12"><p>ἐπειδὴ καὶ τούτων παραλειπομένων γίγνεται τάδε αἴτια τοῦ εἶναι οὐχ ὡς ποιοῦντα ἀλλὰ ὡς μὴ κωλύοντα. Οὐδὲ γὰρ ἡ ἐκμέλεια τῆς ἐμμελείας αἰτία· ἐπειδὴ οὐκ ἂν γένοιτο ἐμμέλεια εἰ μὴ ἡ ἐκμέλεια παραπέμποιτο. Οὐδʼ ἄν τι ἄλλο ἐπιστημονικὸν γένοιτο εἰ μὴ τοὐναντίον ἀνεπίστημον τοῦ ἐπιστήμονος, ἀλλὰ παραπεμπόμενον, τοῦ μὴ κωλύειν. </p></div>
+<div type="textpart" subtype="section" n="13"><p>Ὥστʼ οὐδὲ τὰ ὁιαστήματα τοῦ μέλους αἴτια ὡς ποιοῦντα ἀλλʼ ὡς μὴ κωλύοντα. Εἰ γάρ τις ἅμα φθέγγοιτο κατὰ τὸ συνεχὲς καὶ τοὺς μεταξὺ τόπους, ἆρʼ οὖν ἐκμελῆ ποιοῖτο φωνήν; ὧν οὖν μὴ παραπεμπομένων ἐκμέλεια γίγνοιτο ἂν οὐχὶ λειφθεῖεν κωλυσόντων. Μέγα οὖν ὄφελος τὸ περιίστασθαι ταύταις τὴν μελῳδίαν, ὥστε ἀνευρίσκειν τοὺς συνηρμοσμένους πρὸς ἀλλήλους φθόγγους· ἀλλʼ οὗτοι μὲν αἴτιοι τοῦ μέλους ὄντες, τὰ δὲ διαστήματα παραπεμπόμενα ἐπιδηλούμενα ἐκμελείας αἴτιά ἐστιν· ἧς καὶ ἀρχαὶ λέγοιντʼ ἂν οὐχὶ τῆς ἐμμελοῦς φωνῆς. </p></div>
+<div type="textpart" subtype="section" n="14"><p>Οὔτʼ οὖν τὰ διαστήματα αἴτια τῆς ἐμμελείας ἀλλὰ βλαπτικὰ αὐτῆς φαινόμενά γε· οὔτε οἱ ἀριθμοὶ αἴτιοι τῇ ποσότητι διαφέρειν ἀλλήλων τοὺς φθόγγους· κατʼ ἄλλο γὰρ ἴσοι εὑρίσκονται οἱ βαρεῖς τοῖς ὀξέσι καθὸ καὶ ὁ πόνος ἴσος κατὰ τοὐναντίον· οὐ γὰρ ἧττον τῶν τοὺς ὀξεῖς φθόγγους φθεγγομένων οἱ τοὺς βαρεῖς πονοῦσι βιαζόμενοι εἰς τοὐναντίον πάλιν. Μία δὲ φύσις τῆς μουσικῆς, κίνησις τῆς ψυχῆς ἡ κατὰ ἀπόλυσιν γιγνομένη τῶν διὰ τὰ πάθη κακῶν. <bibl xml:lang="eng">(Porphyr. ad Ptolemaei Harmonica ed. Wallis p. 241-244.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="90">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 90</label><p rend="indent"><pb facs="bub_gb_6dXhmh761sYC_0477"/>Θ. περὶ μουσικῆς ἀρχὰς μουσικῆς τρεῖς εἶναι λέγει, λύπην ἡδονὴν ἐνθουσιασμὸν, ὡς ἑκάστου τούτων παρατρέποντος ἐκ τοῦ συνήθους καὶ ἐγκλίνοντος τὴν φωνήν. <bibl xml:lang="eng">(Plut. Qu. Sympos. P. 623.)</bibl></p></div></div>
+<div type="textpart" subtype="fragment" n="91">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 91</label><p rend="indent">Τὴν ἀκουστικὴν αἴσθησιν Θ. παθητικωτάτην εἶναι φησι πασῶν. <bibl xml:lang="eng">(Plut. de audit. p. 37.)</bibl></p></div></div>
+<div type="textpart" subtype="fragment" n="92">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 92</label><p rend="indent">Θ. πρῶτόν φησιν Ἄνδρωνα τὸν Καταναῖον αὐλητὴν κινήσεις καὶ ῥυθμοὺς ποιῆσαι τῷ σώματι αὐλοῦντα, ὅθεν σιλελίζειν τὸ ὀρχεῖσθαι παρὰ τοῖς παλαιοῖς μεθʼ ὃν Κλεόφαντον Θηβαῖον. <bibl xml:lang="eng">(Athenae. I, p. 22.)</bibl></p></div>
+<div type="textpart" subtype="fragment" n="93">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 93</label><p rend="indent">Διόπερ Θ. παράδειγμα ἐκτέθειται μεγαλοπρεπείας τὸ τοιοῦτον κῶλον· τῶν μὲν περὶ τὰ μηδενὸς ἄξια φιλοσοφούντων· οὐ γὰρ ἐκ παιώνων ἀκριβῶς ἀλλὰ παιωνικόν τί ἐστι. <bibl xml:lang="eng">(Demetr. Phaler. de elocut. sect. 41.)</bibl></p></div></div>
+<div type="textpart" subtype="fragment" n="94">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 94</label><p rend="indent">Ὀργίζεται τὸ ψυχρὸν Θ. οὕτω· ψυχρόν ἐστι τὸ ὑπερβάλλον τὴν οἰκείαν ἀπαγγελίαν, οἷον ἀπυνδάκωτος οὐ τραπεζοῦται κύλιξ, ἀντὶ τοῦ ἀπύθμενος ἐπὶ τραπέζης οὐ τίθεται· τὸ γὰρ πρᾶγμα σμικρὸν ὂν οὐ δέχεται ὄγκον τοσοῦτον λέξεως. <bibl xml:lang="eng">(Demetr. l. l. 114.)</bibl></p></div></div>
+<div type="textpart" subtype="fragment" n="95">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 95</label><p rend="indent">Ὡρίσατο τὸ κάλλος Θ. οὕτω· κάλλος ὀνόματός ἐστι τὸ πρὸς τὴν ἀκοὴν ἢ πρὸς τὴν ὄψιν ἡδὺ ἢ τὸ τῇ ἔντιμον. <bibl xml:lang="eng">(Demetr. l. l. 173.)</bibl></p></div></div>
+ <div type="textpart" subtype="section" n="96"><label rend="center" xml:lang="lat">Fr. 96</label><p rend="indent">Ἐν τούτοις τε οὖν τὸ πιθανὸν καὶ ἐν ᾧ Θ. φησιν ὅτι οὐ πάντα ἐπʼ ἀκριβείας δεῖ μακρηγρεῖν, ἀλλʼ ἔνια καταλείπειν καὶ τῷ ἀκροατῇ συνιέναι καὶ λογίζεσθαι ἐξ αὑτοῦ· συνιεὶς γὰρ τὸ ἐλλειφθὲν ὑπὸ σοῦ οὐκ ἀκροατὴς μόνον ἀλλὰ καὶ μάρτυς σου γένεται καὶ ἅμα εὐμστερος· συνετὸς γὰρ ἑαυτῷ δοκεῖ διὰ σὲ, τὴν ἀφορμὴν αὐτῷ παρεσχηκότα τοῦ συνιέναι· τὸ δὲ πάντα ὡς ἀνοήτῳ λέγειν καταγινώσκοντι ἔοικε τοῦ ἀκροατοῦ. <bibl xml:lang="eng">(Demetr. l. l. 222.)</bibl></p></div></div>              
+<div type="textpart" subtype="fragment" n="97">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 97</label><p rend="indent">μὲν οὖν ὑπὸ κήρυκος κελεύουσι πωλεῖν καὶ προκηρύττειν ἐκ πλειόνων ἡμερῶν· οἱ δὲ παρʼ ἀρχῇ τινὶ καθάπερ καὶ Πιττακὸς παρὰ βασιλεῦσι καὶ πρυτάνει· ἔνιοι δὲ προγράφειν παρὰ τῇ ἀρχῇ πρὸ ἡμερῶν μὴ ἐλαττόνων ἢ ἑξήκοντα καθάπερ Ἀθήνῃσι, καὶ τὸν πριάμενον ἑκατοστὴν τιθέναι τῆς τιμῆς ὅπως διαμφισβητῆσαί τε ἐξῇ καὶ διαμαρτύρεσθαι τῷ βουλομένῳ καὶ ὁ δικαίως ἐωνημένος φανερὸς ᾖ τῷ τέλει· παρὰ δέ τισι προκηρύττειν κελεύουι πρὸ τοῦ κατακυρωθῆναι πένθʼ ἡμέρας συνεχῶς, εἴ τις ἐνίσταται ἢ ἀντιποιῆται τοῦ κτήματος ἢ τῆς οἰκίας· ὡσαύτως δὲ καὶ ἐπὶ τῶν ὑποθέσεων ὥσπερ καὶ ἐν τοῖς Κυζικηνῶν. </p></div>
+<div type="textpart" subtype="section" n="2"><p>Οἱ δὲ Θουριακοὶ τὰ μὲν τοιαῦτα πάντα ἀφαιροῦσιν οὐδʼ ἐν ἀγορᾷ πράττουσι <add>προστάττουσι <foreign xml:lang="lat">libri</foreign></add> ὥσπερ τἆλλα, διδόναι δὲ κελεύουσι κοινῇ τῶν γειτόνων τῶν ἐγγυτάτω τρισὶ νόμισμά τι βραχὺ μνήμης ἕνεκα καὶ μαρτυρίας. Ἀναγκαῖον δῆλον ὅτι τοῖς μὲν τὰς ἀρχὰς ὑπευθύνους ποιεῖν τοῖς δὲ τοὺς γείτονας ἐὰν μὴ λάβωσι, ἢ δὶς παρὰ τοῦ αὐτοῦ λάβωσιν, ἢ ἔχοντες μὴ λέγωσι τῶν ἐωνηυ μένων. Οὐ χρὴ δʼ ἀγνοεῖν ὅτι αἱ προγραφαὶ καὶ αἱ προκηρύξεις καὶ ὅλως ὅσα πρὸς τὰς ἀμφισβητήσεις ἐστὶ πάντη τὰ πλεῖστα διʼ ἔλλειψιν ἑτέρου νόμου τίθεται. Παρʼ οἷς γὰρ ἀναγραφὴ τῶν κτημάτων ἐστὶ καὶ τῶν συμβολαίων, ἐξ ἐκείνων ἐστὶ μαθεῖν, εἰ ἐλεύθερα καὶ ἀνέπαφα καὶ τὰ αὐτοῦ πωλεῖ δικαίως· εὐθὺς γὰρ καὶ μετεγγράφει ἡ ἀρχὴ τὸν ἐωνημένον. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Ἐπεῖ δὲ καὶ προστασίας τινὲς ὠνοῦνται καὶ πωλοῦσιν ἀπαλλοτριοῦν ἐθέλοντες ὀρθῶς ἔχει καὶ πρὸς ταῦτα νομοθετεῖν, ὅπερ καὶ ποιοῦσιν, ἅμα ταῦτά τε βούλου μένοι κωλύειν καὶ τὴν ἐμφανῆ ποιεῖν ὥσπερ ἐν τοῖς ἐνίων· κελεύουσι γὰρ ἐάν τις οἰκίαν πρίηται θύειν ἐπὶ τοῦ Ἀπόλλωνος τοῦ ἐπικωμαίου· ἐὰν δὲ χωρίον ἐπὶ τῆς κώμης ᾗ αὐτὸς οἰκεῖ καὶ ὀμνύειν ἐναντίον τῆς ἀρχῆς ἐγγραφούσης καὶ κωμητῶν τριῶν ᾖ μὴν ὠνεῖεσθαι δικαίως ὡς μηδὲν συγκακουργοῦντα μήτε τέχνῃ μήτε μηχανῇ μηδεμιᾷ, τὸν αὐτὸν δὲ τρόπον καὶ τὸν πωλοῦντα πωλεῖν ἀδόλως. Τὸν δὲ μὴ οἰκοῦντα ἐν ἄστει θύειν τὸν ὅρκον ἐπὶ τοῦ Διὸς τοῦ ἀγοραίου, τὴν δὲ θυσίαν τῶν ἐλαττόνων εἶναι θυλήμασιν, ἄνευ δὲ τούτων μὴ ἐγγράφειν τὴν ἀρχήν· ἅμα καὶ ἐν τῷ ὅρκῳ προσορμίζειν αὐτὴν ἐὰν μὴ ὀμνύωσι μηδὲ ἐγγράψειν τὴν ὠνήν. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Οὗτοι μέντοι πρὸς ἀμφότερα μᾶλλον δὲ πρὸς πάντα βούλονται πεφυλάχθαι καθάπερ ἴσως καὶ δεῖ· κυρία δὲ ἡ ὠνὴ καὶ ἡ πρᾶσις εἴς μὲν κτῆσιν ὅταν ἡ τιμὴ δοθῇ καὶ τὰ ἐκ τῶν νόμων ποιήσωσιν, οἷον ἀναγραφὴν ἢ ὅρκον ἢ τοῖς γείτοσι τὸ γιγνόμενον, εἰς δὲ τὴν παράδοσιν καὶ εἰς αὐτὸ τὸ πωλεῖν ὅταν ἀραβῶνα λάβῃ. Σχεδὸν γὰρ οὕτως οἱ πολλοὶ νομοθετοῦσιν· ἀλλὰ τοῦτο προσδιοριστέον ἐὰν μὴ παρὰ μεθύοντος μηδʼ ἐξ ὀργῆς μηδὲ φιλονεικίας μηδὲ παρανομοῦντος ἀλλὰ φρονοῦντος καὶ τὸ ὅλον δικαίως, ὅπερ κἀκεῖ προσθετέον ὅταν ἀφορίζῃ παρʼ ὧν δεῖ ὠνεῖσθαι. Τάττουσι δέ τινες <pb facs="uiug.30112023840660-1583374486redo_0468"/> καὶ τὸν ἀραβῶνα πόσον δεῖ διδόναι πρὸς τὸ πλῆθος τῆς τιμῆς μερίζοντες· ἄτοπον γὰρ ἐὰν δακτύλιον δῷ τῶν δέκα ταλάντων. Ἔοικε γὰρ ἐκ καιροῦ τὰ τοιαῦτα καὶ πάθους γίγνεσθαι· δεῖ δʼ ἐκ προαιρέσεως· οὕτω γὰρ ἔσται τὸ δίκαιον. </p></div>
+<div type="textpart" subtype="section" n="5"><p>Ἐὰν δὲ λαβὼν ἀραβῶνα μὴ δέχηται τὴν τιμὴν ἢ δοὺς μὴ καταβάλῃ ἐν τῷ ὡρισμένῳ χρόνῳ - δεῖ γὰρ ὡρίσθαι καθάπερ ἐν τοῖς Θουρίων τὸν μὲν ἀραβῶνα παραχρῆμα τὴν δὲ τιμὴν αὐθήμερον· οἱ δὲ καὶ πλείους ἡμέρας τίθενται τῆς τιὸ μῆς, οἱ δὲ ἁπλῶς ὅσας ἂν ὁμολογήσωσι - τὸ δὲ ἐπιτίμιον ἑκατέρῳ, πότερον τῷ μὲν στέρησις τοῦ ἀραβῶνος· οὕτω γὰρ σχεδὸν οἵ τε ἄλλοι κελεύουσι καὶ οἱ Θουριακοί· τῷ δὲ μὴ δεχομένῳ ἔκτισις ὅσου ἂν ἀποδῶται· καὶ γὰρ τοῦτο ἐν τοῖς Θουρίων ἡ ἄνισος ζημία· πολλαπλασία γὰρ ἡ τιμὴ τοῦ ἀραβῶνος· ἔτι δὲ καὶ βλάπτοιτʼ ἂν ὁ ἀποδόμενος ἀφεὶς ἑκατέρους ἐπειδή τις ἐφ' ἡμέραν μίαν ὁρίσειεν· οὕτω γὰρ μάλιστ' ἐνδέχεται. τιμήν· πότερον δὲ ἕως ἂν κομίσηται κύριον εἶναι τοῦ κτήματος; οὕτω γὰρ οἱ πολλοὶ νομοθετοῦσιν· ἢ ὥσπερ Χαρώνδας καὶ Πλάτων; οὗτοι γὰρ παραχρῆμα κελεύουσι διδόναι καὶ λαμβάνειν· ἐὰν δέ τις πιστεύσῃ, μὴ εἶναι δίκην· αὐτὸν γὰρ αἴτιον εἶναι τῆς ἀδικίας. <bibl xml:lang="eng">(Stobae. Serm. 42, p. 280, 281.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="98">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 98</label><p rend="indent">Θ. ἐν τοῖς περὶ νόμων φησὶ δυοῖν τούτων ἐπιμελεἶσθαι δεῖν τοὺς ἀγορανόμους τῆς τε ἐν τῇ ἀγορᾶ εὐκοσμίας καὶ τοῦ ἀψευδεῖν μὴ μόνον τοὺς πιπράσκοντας ἀλλὰ καὶ τοὺς ὠνουμένους. <bibl xml:lang="eng">(Suid. et Harpocrat. sub vv. <foreign xml:lang="grc">κατὰ τὴν ἀγοράν</foreign>.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="99">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 99</label><p rend="indent">Ὡς Θ. ἱστόρηκε καὶ τῆς ἀργίας νόμον οὐ Σόλων ἔθηκε ἀλλὰ Πεισίστρατος, ᾧ τήν τε χώραν ἐνεργεστέραν καὶ τὴν πόλιν ἠρεμαιοτέραν ἐποίησεν. <bibl xml:lang="eng">(Plutarch. Solo extr.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="100">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 100</label><p rend="indent">Θ. ἐν τῷ περὶ νόμων ὕβρεως καὶ ἀναιδείας παρὰ τοῖς Ἀθηναίοις εἶναι βωμούς φησι. <bibl xml:lang="eng">(Zenob. Proverb. 4, 36.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="101">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 101</label><p rend="indent">Ἐγίγνοντο δὲ καὶ εἰσαγγελίαι κατὰ τῶν καταλυόντων τὸν δῆμον ῥητόρων ἢ μὴ τὰ ἄριστα τῷ δήμῳ λεγόντων ἢ πρὸς τοὺς πολεμίους ἄνευ τοῦ πεμφθῆναι ἄπει θόντων ἢ προδόντων φρούριον ἢ στρατιὰν ἢ ναῦς, ὡς ἐν τῷ περὶ νόμων. Ὅτι δὲ ὁ εἰσαγγείλας καὶ οὐχ ἑλὼν ἀζήμιος ἦν Ὑπερείδης ἐν τῷ ὑπὲρ Λυκόφρονός <pb facs="uiug.30112023840660-1583374486redo_0469"/> φησι· καίτοι γε ὁ Θ. τοὺς μὲν ἄλλας γραφὰς γραψαμένους χιλίας τʼ ὀφλισκάνειν εἰ τοῦ πέμπτου τῶν υψήφων μὴ καταλάβοιεν καὶ προσατιμοῦσθαι, τοὺς δὲ εἰσαγγέλλοντας μὴ ἀτιμοῦσθαι μὲν, ὀφλεῖν δὲ τὰς χιλίας. <bibl xml:lang="eng">(Pollux Onomast. 8, 52. 53.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="102">
+                    <div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 102</label><p rend="indent">Ὅτι δὲ καὶ τῶν ἄλλων ὧν ἔπραττον οἱ μέτοικοι ἄφεσιν εἶχον οἱ ἰσοτελεῖς Θ. εἴρηκεν ἐν ἑνδεκάτῃ τῶν νόμων· οὗτος δέ φησιν ὡς ἐνιαχοῦ καὶ πόλεσιν ὅλαις ἐψηφίζοντο τὴν ἀτέλειαν Ἀθηναῖοι ὥσπερ Ὀλυνθίοις τε καὶ Θηβαίοις. <bibl xml:lang="eng">(Harpocrat. sub. <foreign xml:lang="grc">σκαφηόρος</foreign>.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="103">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 103</label><p rend="indent">Συστομώτερον σκάφης τάσσεται ἐπὶ τῶν διὰ τὸ ἀγενὲς σιωπώντων. Θ. γὰρ ἐν τῷ περὶ νόμων εἰρῆσθαι ἀπὸ τοῦ τοὺς μετοίκους Ἀθήνῃσιν ἐν ταῖς δημοτελέσι πομπαῖς σκάφας φέροντας πομπεύειν καὶ ὁπότε δὲ ἐβούλοντο μέτοικον δηλῶσαι ἢ σκάφην ἔλεγον ἢ σκαφηφόρον· διὰ δὲ τὸ ἀπαρρησίαστον εἶναι συστομώτερον ποιήσειν ἀπειλεῖν σκάφης. <bibl xml:lang="eng">(Photii Lexic. p. 558.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="104">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 104</label><p rend="indent">Ὅτι οἱ ἁλόντες ἐπʼ ἀκουσίῳ φόνῳ ἐξουσίαν εἶχον εἰς διοίκησιν τῶν ἰδίων <gap reason="lost" rend=" .... "/> καὶ Θ. ἐν τῷ τρισκαιδεκάτῳ τῶν νόμων δηλοῖ. <bibl xml:lang="eng">(Harpocr. s. v. ἰσοτελεῖς. Phot. Lex. p. 355.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="105">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 105</label><p rend="indent">Φαρμακῶν δʼ ἐστὶν ὁ ὑπὸ φαρμάκων βεβλαμμένος, ὡς καὶ Θ. ἐν πέμπτῳ καὶ δεκάτῳ νόμων ὑποσημαίνει. <bibl xml:lang="eng">(Harpocrat. s. υ. φαρμακῶν. Phot. Lex. p. 640.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="106">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 106</label><p rend="indent">Ὀλίγων οἱ ἀγαθοὶ νόμων δέονται· οὐ γὰρ τὰ πράγματα πρὸς τοὺς νόμους ἀλλʼ οἱ νόμοι πρὸς τὰ πράγματα τίθενται. <bibl xml:lang="eng">(Stob. Serm. 27, p. 218.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="107">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 107</label><p rend="indent">Θ. ἐν τῷ Ἐρωτικῷ Χαιρήμονά φησι τὸν τραγικὸν λέγειν ὡς τὸν οἶνον τῶν χρωμένων <add>τοῖς τρόποις</add> κεράννυσθαι, οὕτως καὶ τὸν ἔρωτα, ὃς μετριάζων μέν ἐστιν εὔχαρις, ἐπιτεινόμενος δὲ καὶ διαταράττων χαλεπώτατος. <bibl xml:lang="eng">(Athenae. 13, p. 562.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="108">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 108</label><p rend="indent">Ἄμασιν τὸν Ἠλεῖον Θ. ἐν τῷ Ἐρωτικῷ περὶ τοὺς ἔρωτας δεινὸν γεγονέναι λέγει. <bibl xml:lang="eng">(Athenae. 13, p. 567.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="109">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 109</label><p rend="indent">Ἐν Αἰγίῳ παιδὸς ἠράσθη χήν· τὸν δὲ παῖδα τοῦτον Θ. ἐν τῷ Ἐρωτικῷ Ἀμφίλοχον καλεῖσθαί φησι καὶ τὸ γένος Ὠλένιον εἶναι <bibl xml:lang="eng">(Athenae. 13, p. 606.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="110">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 110</label><p rend="indent">Ἡσίοδος ἐν τρίτῳ Μελαμποδίας τὴν ἐν Εὐβοίᾳ Χαλκίδα καλλιγύναικα εἶπεν. Εὐπρεπεῖς γὰρ αὐτόθι γυναῖκες, ὡς καὶ Θ. εἴρηκε. <bibl xml:lang="eng">(Athenae. 13 p. 609.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="111">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 111</label><p rend="indent">Θ. ἀγῶνα κάλλους φησὶ γενέσθαι παρὰ Ἠλείοις καὶ τὴν κρίσιν ἐπιτελεῖσθαι μετὰ σπουδῆς, λαμβάνειν τε τοὺς νικήσαντας ἆθλα ὅπλα ἅπερ ἀνατίθεσθαί φησι Διονύσιος ὁ Λευκτρικὸς τῇ Ἀθηνᾷ. <bibl xml:lang="eng">(Athenae. 13, p. 609.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="112">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 112</label><p rend="indent">Ἐνιαχοῦ φησὶν ὁ αὐτὸς Θ. καὶ κρίσεις γυναικῶν περὶ σωφροσύνης γίνεσθαι καὶ οἰκονομίας ὥσπερ ἐν τοῖς βαρβάροις· ἑτέρωθι δὲ κάλλους ὡς δέον καὶ τοῦτο τιμᾶσθαι, καθάπερ καὶ παρὰ Τενεδίοις καὶ Λεσβίοις. <bibl xml:lang="eng">(Athenae. 13, p. 610.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="113">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 113</label><p rend="indent">Ἐκ Λεβῆνος ἦν Λευκοκόμας τε καὶ ὁ ἐραστὴς αὐτοῦ Εὐξύνθετος <del>Εὐξίθεος corr. Coraius</del>, οὓς ἱστορεῖ Θ. ἐν τῷ περὶ ἔρωτος λόγῳ· εἶναι <add>δὲ τῶν</add> ἄθλων ὧν ὁ Λευκοκόμας τῷ Εὐξυνθέτῳ προσέταξεν ἕνα, φησὶ, τοῦτον, τὸν ἐν Πραίσῳ κύνα ἀναγαγεῖν αὐτῶ. Ὅμοροι δʼ εἰσὶν αὐτοῖς οἱ Πραίσιοι. <bibl xml:lang="eng">(Strabo 10, pag. 478. Cas.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="114">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 114</label><p rend="indent">Θ. ἐρωτηθεὶς τί ἐστιν ἔρως, πάθος, ἔφη, ψυχῆς σχολαζούσης. <bibl xml:lang="eng">(Stob. Serm. 62, p. 400.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="115">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 115</label><p rend="indent">Ἔρως δέ ἐστιν ἀλογίστου τινὸς ἐπιθυμίας ὑπερβολὴ ταχεῖαν μὲν ἔχουσα τὴν πρόσοδον βραδεῖαν δὲ τὴν ἀπόλυσιν. <bibl xml:lang="eng">(Stob. Serm. 62, p. 400.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="116">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 116</label><p rend="indent">Θ. ἐν τῷ περὶ μέθης ζωρότερον φησὶν εἶναι τὸ κεκραμένον παρατιθέμενος Ἐμπεδοκλέους τάδε· "αἶψα δὲ θνητὰ φύοντο τὰ πρὶν μάθον ἀθάνατʼ εἶναι, ζωρά <pb facs="uiug.30112023840660-1583374486redo_0471"/> τε τὰ πρὶν ἄκρητα διαλλάσσοντα κελεύθους." <bibl xml:lang="eng">(Athenae. 10, p. 423.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="117">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 117</label><p rend="indent">Παρὰ Λοκροῖς τοῖς Ἐπιζεφυρίοις εἴ τις ἄκρατον ἔπιε μὴ προστάξαντος ἰατροῦ θεραπείας ἕνεκα θάναετος ἦν ἡ ζημία Ζαλεύκου τὸν νόμον θέντος. Παρὰ δὲ Μασσαλιώταις ἄλλος νόμος τὰς γυναῖκας ὑδροποτεῖν· ἐν δὲ Μιλήτῳ ἔτι καὶ νῦν φησὶ Θ. τοῦτʼ εἶναι τὸ νόμιμον. <bibl xml:lang="eng">(Athenae. 10, p. 429.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="118">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 118</label><p rend="indent">Ἦσαν δὲ αἱ τῶν ἀκροποτῶν ἐπιχύσεις, ὥς φησι Θ. ἐν τῷ περὶ μέθης, οὖ παλαιαὶ, ἀλλʼ ἦν ἀπʼ ἀρχῆς τὸ μὲν σπένδειν ἀποδεδομένον τοῖς θεοῖς, ὁ δὲ κότταβος τοῖς ἐρωμένοις· ἐχρῶντο γὰρ ἐπιμελῶς τῷ κοτταβίζειν ὄντος τοῦ παιγνίου σικελικοῦ. <bibl xml:lang="eng">(Athenae. 10, p. 427.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="119">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 119</label><p rend="indent">Θ. γοῦν ἐν τῷ περὶ μέθης φησί· "πυνθάνομαι δʼ ἔγωγε καὶ Εὐριπίδην τὸν ποιητὴν οἰνοχοεῖν Ἀθήνῃσι τοῖς ὀρχησταῖς καλουμένοις· ὠρχοῦντο δʼ οὗτοι περὶ τὸν τοῦ Ἀπόλλωνος νεὼν τοῦ Δηλίου τῶν πρωτ...τες Ἀθηναίων καὶ κατεδύοντο ἱμάτια τῶν Θηραϊκῶν. Ὁ δὲ Ἀπόλλων οὗτός ἐστιν ᾧ τὰ θαργήλια ἄγουσιν. Καὶ διασώζεται Φυλῇσιν ἐν τῷ Δαφνηφορείῳ γραφὴ περὶ τούτων." <bibl xml:lang="eng">(Athenae. 10, p. 424.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="120">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 120</label><p rend="indent">Ἐποιοῦντο δὲ καὶ οἱ ἑπτὰ καλούμενοι σοφοὶ συμποτικὰς ὁμιλίας· "παραμαυθεῖται γὰρ ὁ οἶνος καὶ τὴν τοῦ γήρως δυσθυμίαν" φησὶν ὁ Θ. ἐν τῷ περὶ μέθης. <bibl xml:lang="eng">(Athenae. 11, p. 463.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="121">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 121</label><p rend="indent">Θ. δʼ ἐν τῷ περὶ μέθης φησὶν ὅτι τοῦ Διονύσου τροφοὶ αἱ νύμφαι κατʼ ἀλήθειαν· αἱ γὰρ ἄμπελοι πλεῖστον ὑγρὸν χέουσι τεμνόμεναι καὶ κατὰ φύσιν δακρύουσιν. <bibl xml:lang="eng">(Athenae. 11, p. 465.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="122">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 122</label><p rend="indent">Θ. τὸ ῥυτὸν φησὶν ὀνομαζόμενον ποτήριον τοῖς ἥρωσι μόνοις ἀποδίδοσθαι. <bibl xml:lang="eng">(Athenae. 11, p. 497.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="123">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 123</label><p rend="indent">Θ. ἐν τῷ περὶ μέθης τὸν ἄκρατον φησὶν οἶνον <pb facs="uiug.30112023840660-1583374486redo_0472"/> τὸν ἐπὶ τῷ δείπνῳ διδόμενον, ὃν δὴ λέγουσιν ἀγαθοῦ δαίμονος εἶναι πρόποσιν, ὀλίγον τε προσφέρουσιν ὥσπερ ἀναμιμνήσκοντες μόνον τῇ γεύσει τὴν ἰσχὺν αὐτῦ καὶ τὴν τοῦ θεοῦ δωρεάν· καὶ μετὰ τὴν πλήρωσιν διδόασιν ὅπως ἐλάχιστον ᾖ τὸ πινόμενον· καὶ τρίτον προσκυνήσαντες λαμβάνουσιν ἀπὸ τῆς τραπέζης καὶ ὥσπερ ἱκετείαν τινὰ ποιούμενοι τοῦ θεοῦ μηδὲν ἀσχημονεῖν μηδὲ ἔχειν ἰσχυρὰν ἐπιθυμίαν τοῦ πότου... καὶ λαμβάνειν ἐξ αὐτοῦ τὰ καλὰ καὶ χρήσιμα. <bibl xml:lang="eng">(Athenae. 15, p. 693.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="124">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 124</label><p rend="indent">Τιρυνθίους φησὶ Θ. ἐν τῷ περὶ κωμῳδίας φιλογέλως ὄντας ἀχρείους δὲ πρὸς τὰ σπουδαιότερα τῶν πραγμάτων καταφυγεῖν ἐπὶ τὸ ἐν Δελφοῖς μαντεῖον ἀπαλλαγῆναι βουλομένους τοῦ πάθους καὶ τὸν θεὸν ἀνελεῖν αὐτοῖς, ἢν θύοντες τῷ Ποσειδῶνι ταῦρον ἀγελαστὶ τοῦτον ἐμβάλωσιν εἰς τὴν θάλατταν παύσεσθαι. δὲ δεδιότες μὴ διαμάρτωσι τοῦ λογίου τοὺς παῖδας ἐκώλυσαν παρεῖναι τῇ θυσίᾳ· μαθὼν οὖν εἷς καὶ συγκαταμιχθεὶς ἐπείπερ ἐβόων ἀπελαύνοντες αὐτόν, τί δῆτʼ, ἔφη, δεδοίκατε μὴ τὸ σφάγιον ὑμῶν ἀνατρέψω; γελασάντων δὲ ἔμαθον ἔργῳ τὸν θεὸν δείξαντα ὡς ἄρα τὸ πολυχρόνιον ἔθος ἀμήχανόν ἐστι θεραπευθῆναι. <bibl xml:lang="eng">(Athenae. 6, p. 261.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="125">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 125</label><p rend="indent">Θ. ἐν τῷ πρὸς Κάσανδρον περὶ βασιλείας γνήσιον εἰ τὸ σύγγραμμα· πολλοὶ γὰρ αὐτό φασιν εἶναι Σωσιβίου - τοὺς Περσῶν φησὶ βασιλεῖς ὑπὸ τρυφῆς προκηρύττειν τοῖς ἐφευρίσκουσί τινα καινὴν ἡδονὴν ἀργυρίου πλῆθος. <bibl xml:lang="eng">(Athenae. 4, p. 144.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="126">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 126</label><p rend="indent">Θ. ἐν τοῖς περὶ βασιλείας ἱστορεῖ τὸν Θεμιστοκλέα πέμψαντος εἰς Ὀλυμπίαν Ἱέρωνος ἵππους ἀγωνιστὰς καὶ σκηνήν τινα κατεσκευασμένην πολυτελῶς στήσαντος εἰπεῖν ἐν τοῖς Ἕλλησι λόγον, ὡς χρὴ τὴν σκηνὴν διαρπάσαι τοῦ τυράννου καὶ κωλῦσαι τοὺς ἵππους ἀγωνίσασθαι. <bibl xml:lang="eng">(Plut. Themist. c. 25.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="127">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 127</label><p rend="indent">Οἱ γὰρ αἰσυμνῆται καλούμενοι παρʼ Ἕλλησι τὸ ἀρχαῖον, ὡς ἐν τοῖς περὶ βασιλείας ἱστορεῖ Θ., αἱρετοί τινες ἦσαν τύραννοι. <bibl xml:lang="eng">(Dionys. H. antiq. Rom. p. 1022 ed Reiske.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="128">
+                    <div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 128</label><p rend="indent">Θ. ἐν τῷ περὶ καιρῶν βʼ λέγει οὕτως· "Ἑτεροι δʼ εἰς ἀνδρδέστερα καταδαπανῶντες οἷον στρατείας <pb facs="uiug.30112023840660-1583374486redo_0473"/> ἐξάγοντες καὶ πολέμους ἐπαναιρούμενοι καθάπερ καὶ Διονύσιος ὁ τύραννος· ἐκεῖνος γὰρ οὐ μόνον ᾤετο δεῖν τὰ τῶν ἄλλων καταναλίσκειν ἀλλὰ καὶ τὰ αὐτοῦ πρὸς τὸ μὴ ὑπάρχειν ἐφόδιον <add>ἐφόδια <foreign xml:lang="eng">Phot.</foreign></add> τοῖς ἐπιβουλεύουσιν· ἐοίκασι δὲ καὶ αἱ πυραμίδες ἐν Αἰγύπτῳ καὶ ὁ τῶν Κυψελιδῶν κολοσσὸς καὶ πάντα τὰ τοιαῦτα τὴν αὐτὴν καὶ παραπλησίαν ἔχειν διάνοιαν." <bibl xml:lang="eng">(Suidas et Phot. Lex. sub v. <foreign xml:lang="grc">Κυψελιδῶν ἀνάθημα</foreign>.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="129">
+                    <div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 129</label><p rend="indent">Θ. ἐν πρώτῳ τῶν πολιτικῶν τῶν πρὸς καιροὺς φηοσὶν οὕτως· <q>πολλῷ γὰρ κάλλιον κατά γε τὴν τοῦ ὀνόματος θέσιν ὡς οἱ Λάκωνες ἁρμοστὰς φάσκοντες εἰς τὰς πόλεις πέμπειν, οὐκ ἐπισκόπους οὐδὲ φύλακας ὡς Ἀθηναῖοι.</q> <bibl xml:lang="eng">(Harpocr. in <foreign xml:lang="grc">ἐπίσκοπος</foreign>.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="130">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 130</label><p rend="indent">Θ. ἐν τῷ περὶ γελοίου λεχθῆναι μέν φησι τὴν παροιμίαν ὑπὸ τοῦ Στρατονίκου ἀλλʼ εἰς Σιμμύκαν τὸν ὑποκριτὴν, διελόντος τὴν παροιμίαν, μέγας οὐδεὶς σαπρὸς ἰχθύς. <bibl xml:lang="eng">(Athenae. 8, p. 348.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="131">
+                    <div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 131</label><p rend="indent">Ὀστρακισθῆναι πρῶτον Ἀθήνῃσι Θησέα ἱστορεῖ Θ. ἐν τοῖς πρώτοις καιροῖς. <bibl xml:lang="eng">(Suid. s. <foreign xml:lang="grc">ἀρχὴ σκυρία</foreign>.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="132">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 132</label><p rend="indent">Γλώσσῃ ματαίᾳ ζημία προστρίβεται· Αἰσχύλου· τὸ μὲν ἀπόφθεγμα Βίαντος, ὡς παροιμία δὲ λαμβάνεται ὡς μαρτυρεῖ Θ. ἐν τῷ περὶ παροιμιῶν. <bibl xml:lang="eng">(Apostol. Adag. 6,36.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="133">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 133</label><p rend="indent">Δίνων ὁ Ταραντῖνος στρατηγῶν, ἀνὴρ δʼ ὢν ἀγαθὸς ἐν τοῖς πολεμικοῖς, ἀποχειροτονησάντων αὐτοῦ τινὰ γνώμην τῶν πολιτῶν, ὡς ὁ κῆρυξ ἀνεῖπε τὴν νικῶσαν, αὐτὸς ἀνατείνας τὴν δεξιὰν, ἅδε, εἶπε, κρείσσων. <bibl xml:lang="eng">(Plutarch. Quaest. gr. p. 301c.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="134">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 134</label><p rend="indent">Εἰ θεοφράστῳ πιστεύομεν, ἀνδρὶ φιληκόῳ καὶ ἱστοο ρικῷ παρʼ ὁντινοῦν τῶν φιλοσόφων, εὑρεῖν μὲν ἦν τὰ δέοντα καὶ νοῆσαι πάντων ἱκανώτατος ὁ Ἀλκιβιάδης, ζητῶν δὲ μὴ μόνον ἃ δεῖ λέγειν ἀλλὰ καὶ ὡς δεῖ τοῖς ὀνόμασι καὶ τοῖς ῥήμασιν, οὐκ εὐπορῶν δὲ πολλάκις ἐσφάλλετο καὶ μεταξὺ λέγων ἀπεσιώπα καὶ διέλειπε, λέξεως διαφυγούσης αὐτὸν ἀναλαμβάνων καὶ διασκοπούμενος. <bibl xml:lang="eng">(Plutarch Alcib. c. 10.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="135">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 135</label><p rend="indent">Εὐδοκίμησεν Ἐτεοκλῆς ὁ Λακεδαιμόνιος εἰπὼν ὡς οὐκ ἂν Ἑλλὰς δύο Λυσάνδρους ἤνεγκε. Τὸ δʼ αὐτὸ τοῦτο καὶ περὶ Ἀλκιβιάδου φησὶ Θ. εἰπεῖν Ἀρχέστρατον. <bibl xml:lang="eng">(Plut. Lysand. c. 19.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="136">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 136</label><p rend="indent">Θ. φησιν Ἀριστείδην περὶ τὰ οἰκεῖα καὶ τοὺς πολίτας ἄκρως ὄντα δίκαιον ἐν τοῖς κοινοῖς πολλὰ πρᾶξαι πρὸς τὴν ὑπόθεσιν τῆς πατρίδος ὡς συχνῆς ἀδικίας δεομένην. Καὶ γὰρ τὰ χρήματά φησιν ἐκ Δήλου βουλευομένῳ Ἀθήναζε κομίσαι παρὰ τὰς συνθήκας καὶ Σαμίων εἰσηγουμένων εἰπεῖν ἐκεῖνον ὡς οὐ δίκαιον μὲν συμφέρον δὲ τοῦτʼ ἐστί. Καὶ τέλος εἰς τὸ ἄρχειν ἀνθρώπων πάντων καταστήσας τὴν πόλιν αὐτὸς ἐνέμεινε τῇ πενίᾳ καὶ τὴν ἀπὸ τοῦ πένης εἶναι δόξαν οὐδὲν ἧττον ἀγαπῶν τῆς ἀπὸ τῶν τροπαίων διετέλεσε. <bibl xml:lang="eng">(Plut. Arist. c. 25.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="137">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 137</label><p rend="indent">Λύσανδρος καλέσας Φιλοκλέα τὸν στρατηγὸν ἠρώτησεν αὐτὸν τίνα τιμᾶται ἑαυτῷ δίκην τοιοῦτα περὶ Ἑλλήνων συμβεβουλευκὼς τοῖς πολίταις· ὁ δὲ οὐδέν τι πρὸς τὴν συμφορὰν ἐνδοὺς ἐκέλευσε μὴ κατηγορεῖν ὧν οὐδείς ἐστι δικαστὴς ἀλλὰ νικῶντα πράττειν ἅπερ ἂν νικηθεὶς ἔπασχεν· εἶτα λουσάμενος καὶ λαβὼν χλαμύδα λαμπρὰν πρῶτος ἐπὶ τὴν σφαγὴν ἡγεῖτο τοῖς πολίταις, ὡς ἱστορεῖ Θεόφραστος. <bibl xml:lang="eng">(Plut. Lysand. c. 13.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="138">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 138</label><p rend="indent">Γενομένων δὲ συνθηκῶν ὅπως τὰ χωρία καὶ τὰς πόλεις ἃς εἶχον ἀλλήλων καὶ τοὺς αἰχμαλώτους ἀποδιδῶσι πρότερον ἀποδιδόντων τῶν κλήρῳ λαχόντων ὠνήσατο τὸν κλῆρον ὁ Νικίας κρύφα χρήμασιν ὥστε προτέρους ἀποδιδόναι τοὺς Λακεδαιμονίους. Καὶ τοῦτο ἱστορεῖ Θεόφραστος. <bibl xml:lang="eng">(Plut. Nicia c. 10.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="139">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 139</label><p rend="indent">Οὐκ ἀγνοῶ ὅτι Θ. ἐξοστρακισθῆναί φησι τὸν Ἡπέρβολον Φαίακος, οὐ Νικίου, πρὸς Ἀλκιβιάδην ἐρίσαντος, ἀλλʼ οἱ πλείους οὕτω γεγράφασιν. <bibl xml:lang="eng">(Plut. Nic. c. 11.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="140">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 140</label><p rend="indent">Στρατηγοῦ, ὡς ἔφη Θ., δεῖ θάνατον ἀποθνήκειν τὸν στρατηγὸν, οὐ πελταστοῦ τοῦ τυχόντος. <bibl xml:lang="eng">(Plut. Sertor. c. 13.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="141">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 141</label><p rend="indent">Ὡς Θ. ἱστορεῖ, τὸν Ἀρχίδαμον ἐζημίωσαν οἱ ἔφοροι γήμαντα γυναῖκα μικράν· οὐ γὰρ βασιλεῖς, ἔφασαν, ἄμμιν ἀλλὰ βασιλείδια γεννάσει. <bibl xml:lang="eng">(Plut. Agesil. c. 2.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="142">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 142</label><p rend="indent">Ξενίων προσκομισθέντων καὶ προσαχθέντων ἄλευρα μὲν καὶ μόσχους καὶ χῆνας ἔλαβε, τραγήματα δὲ καὶ πέμματα καὶ μύρα διωθεῖτο <bibl xml:lang="eng">(Agesilaus)</bibl>. Καὶ βιαζομένων λαβεῖν καὶ λιπαρούντων ἐκέλευσε τοῖς εἵλωσι διδόναι κομίζοντας· τῇ μέντοι στεφανωτρίδι βίβλῳ φησὶν αὐτὸν ἡσθέντα Θ. διὰ τὴν λιτότητα τῶν στεφάνων αἰτήσασθαι καὶ λαβεῖν ὅτε ἀπέπλει παρὰ τοῦ βασιλέως (<foreign xml:lang="lat">Aegypti</foreign>). <bibl xml:lang="eng">(Plut. Agesil. c. 36.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="143">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 143</label><p rend="indent">Νέῳ ἔτι ὄντι καὶ φιλοτίμῳ δοτέον ἀπὸ τῶν καλῶν ἔργων καὶ δόξῃ τι καλλωπίζεσθαι καὶ κομπάσαι· φυόμεναι γὰρ ἐν τοῖς τηλικούτοις αἱ ἀρεταὶ καὶ βλαστάνουσαι τό τε κατορθούμενον, ὥς φησι Θ., ἐπιβεβαιοῦνται τοῖς ἐπαίνοις καὶ τὸ λοιπὸν αὔξονται μετὰ φρονήματος ἐπαιρόμεναι. <bibl xml:lang="eng">(Plut. Agid. c. 2.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="144">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 144</label><p rend="indent">Ἀρίστων ὁ Χῖος καὶ Θεοφράστου τινὰ δόξαν ἱστοῦ ρηκε περὶ τῶν ῥητόρων· ἐρωτηθέντα γὰρ ὁποῖός τις αὐτῷ φαίνεται ῥήτωρ ὁ Δημοσθένης, εἰπεῖν, ἄξιος τῆς πόλεως· ὁποῖος δὲ Δημάδης, ὑπὲρ τὴν πόλιν. <bibl xml:lang="eng">(Plut. Demosth. c. 10.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="145">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 145</label><p rend="indent">Ὅτε καί φησι Θ., ἀξιούντων τῶν συμμάχων ὁρι- σθῆναι τὰς εἰσφορὰς, εἰπεῖν Κρωβύλον τὸν δημαγωγὸν ὡς οὐ τεταγμένα σιτεῖται πόλεμος. <bibl xml:lang="eng">(Plut. Demosth. 18.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="146">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 146</label><p rend="indent">Ὁ Θ. ἐν τοῖς ἠθικοῖς διαπορήσας, εἰ πρὸς τὰς τύχας τρέπεται τὰ ἤθη καὶ κινούμενα τοῖς παθέσι τῶν σωμάτων ἐξίσταται τῆς ἀρετῆς, ἱστόρηκεν ὅτι νοσῶν ὁ Περικλῆς ἐπισκοπουμένῳ τινὶ τῶν φίλων δείξειε περίαπτον ὑπὸ τῶν γυναικῶν τῷ τραχήλῳ περιηρτημένον, ὡς σφόδρα κακῶς ἔχων ὁπότε καὶ ταύτην ὑπομένοι τὴν ἀβελτηρίαν. <bibl xml:lang="eng">(Plut. Pericl. c. 38.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="147">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 147</label><p rend="indent">Εὐλαβοῦντο γὰρ μὴ γύνις εἴη <bibl xml:lang="eng">(Alexander)</bibl>, ἐπεὶ <pb facs="uiug.30112023840660-1583374486redo_0476"/> οὐκ εὖ διέκειτο πρὸς τὰ ἀφροδίσια, ὡς ἱστορεῖ <bibl xml:lang="eng">(Eustath. p. 1680, 48. cf. Athenae. 10, p. 435.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="148">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 148</label><p rend="indent">Ἀλλὰ καὶ τῶν καθʼ ἡμᾶς γεγονὼς αὐτὸς ἐκεῖνος ὁ ταῖς καθʼ ἡμῶν λαμπρυνόμενος δυσφημίαις ἐν οἷς ἐπέγραψε περὶ τῆς τῶν ἐμψύχων ἀποχῆς καὶ τῶν παλαιῶν ἀρχαιότητος, τὴν μνήμην ὧδέ πως αὐτολεξεὶ Θεοφράστῳ μάρτυρι χρώμενος παρατίθεται· ἀνάριθμος μέν τις ἔοικε χρόνος ἀφʼ οὗ τό γε πάντων λογιώτατον γένος, ὥς φησι Θεόφραστος, καὶ τὴν ἱερωο τάτην ὑπὸ τοῦ Νείλου κτισθεῖσαν χώραν κατοικοῦν, ἤρξαντο οἱ πρῶτοι ἐφʼ ἑστίαις τοῖς οὐρανίοις θεοῖς θύειν οὐ σμύρνης οὐδὲ κασίας καὶ λιβανωτοῦ κρόκῳ μιχθέντων ἀπαρχάς." <bibl xml:lang="eng">(Euseb. Praepar. Evang. ed Colon. 1688. p. 28.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="149">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 149</label><p rend="indent">Ὁ δὲ τὴν Θεόφραστον μαρτυρόμενος θεοῖς μὲν οὔ φησιν ἁρμόζειν τὴν διὰ ζώων θυσίαν, δαίμοσι δὲ μόνοις· ὥστε κατὰ τὸν αὐτοῦ καὶ Θεοφράστου λόγον δαίμονα εἶναι ἀλλʼ οὐ θεὸν τὸν Ἀπόλλωνα. <bibl xml:lang="eng">(Euseb. l. l. p. 148.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="150">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 150</label><p rend="indent">Ὧν δὴ τοῦτον ἐχόντων τὸν τρόπον εἰκότως ὁ Θ. ἀπαγορεύει μὴ θύειν τὰ ἔμψυχα τοὺς τῷ ὄντι εὐσεβεῖν ἐθέλοντας <bibl xml:lang="eng">(<foreign xml:lang="lat">verba</foreign> Apollonii Tyan.)</bibl> <bibl xml:lang="eng">(Euseb. l. l. p. 151.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="151">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 151</label><p rend="indent">Καὶ δὴ λαβων ἀνάγνωθι τὰ Θεοφράστου ἐν τοῖς Πορφυρίῳ γραφεῖσι περὶ τῆς τῶν ἐμψύχων ἀποχῆς κείμενα τοῦτον τὸν τρόπον· καίτοι διότι Σύρων μὲν Ἰουδαῖοι διὰ τὴν ἐξ ἀρχῆς θυσίαν ἔτι καὶ νῦν, φησὶν ὁ Θ., ζωοθυτοῦσιν, εἰ τὸν αὐτὸν ἡμᾶς τρόπον τις κελεύοι θύειν, ἀποσταίημεν ἂν τῆς πράξεως. <bibl xml:lang="eng">(Euseb. l. l. p. 403.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="152">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 152</label><p rend="indent">Χρὴ τοίνυν τὸν μέλλοντα θαυμασθήσεσθαι περὶ τὸ θεῖον φιλοθύτην εἶναι, μὴ τῷ πολλὰ θύειν ἀλλὰ τῷ πυκνὰ τιμᾶν τὸ θεῖον· τὸ μὲν γὰρ εὐπορίας τὸ δʼ ὁσιότητος σημεῖον. Ἔπειτα γονεῖς γηροτροφεῖν καλῶς, ταῖς τʼ ἐκείνων βουλήσεσι τὸν αὐτῶν βίον εὐπειθῆ κατασκευάζειν. Ὁ γὰρ μὴ τοιοῦτος ἀλλὰ τῶν τε τῆς φύσεως τῶν τε τῆς πόλεως νόμων ὀλιγωρῶν ἀμφοτέρους τοὺς τῆς δικαιοσύνης τρόπους παραβέβηκεν. Καὶ μὴν καὶ γυναικὸς καὶ παίδων ἐπιμελητέον καλῶς καὶ φιλανθρώπως. Οἱ μὲν γὰρ εἰς τὸ γῆρας <pb facs="uiug.30112023840660-1583374486redo_0477"/> ταῖς θεραπείαις, ἡ δʼ ἐν ταῖς νόσοις καὶ ταῖς καθʼ ἡμέραν οἰκονομίαις ἀποδώσει τὴν εὐεργεσίαν. Ἐὰν δέ τινι συμβάλλειν ἀνάγκη ἦ, μετὰ τοῦ βεβαίου πειρῶ τοῦτο πράττειν. Φρονιμωτάτου γὰρ ἀνδρὸς δανείσαντα φρονίμως ἀπολαβεῖν φιλικῶς, οὐ συναλλάξαντα φιλανθρώπως κομίσασθαι φιλαπεχθημόνως. <bibl xml:lang="eng">(Stobaei Serm. 3, p. 40 ed. Basil. 1549.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="153">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 153</label><p rend="indent">Ἐκ διαβολῆς καὶ φθόνου ψεῦδος ἐπʼ ὀλίγον ἰσχύσαν ἀπεμαράνθη. <bibl xml:lang="eng">(Stob. Serm. 12, p. 138.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="154">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 154</label><p rend="indent">Οὐ μὴν οὐδὲ μετʼ ὀργῆς πρακτέον τοῖς φρονίμοις οὐδέν· ἀλόγιστος γὰρ θυμὸς καὶ μετὰ προνοίας οὐδὲν ἄν ποτε ποιήσειεν ἀλλὰ μεθύων ταῖς φιλονεικίαις ὡς ἔτυχε χρῆται ταῖς ὁρμαῖς· ὥστε δεῖ μήτε ἐξ ὑπογυίου τῶν ἁμαρτημάτων τὰς τιμωρίας μήτε παρὰ τῶν οἰκετῶν μήτε παρὰ τῶν ἄλλων λαμβάνειν ἵνα τὸ τῷ λογισμῷ κράτιστον μὴ τὸ τῷ θυμῷ φίλον ἀεὶ πράτης· καὶ δίκην παρὰ τῶν ἐχθρῶν <add>μὴ</add> λαμβάνῃς ἐξ ἧς μέλλεις σαυτὸν μὴ αὐτοὺς ἐκείνους βλάψειν. Τὸ γὰρ τιμωρεῖσθαί τινα κακῶς ἑαυτὸν ποιοῦντα δίκην διδόναι οὐχ ἧττον ἢ λαμβάνειν ἐστίν. Ὥστε δεῖ σχολῇ μᾶλλον ἀμύνεσθαι ζητεῖν ἢ ταχέως <add>καὶ</add> ἀλυσιτελῶς ἑαυτῷ κολάσαι τὸν ἐχθρόν. <bibl xml:lang="eng">(Stob. Serm. 19, p. 166.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="155">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 155</label><p rend="indent">Αἰδοῦ σαυτὸν καὶ ἄλλον οὐκ αἰσχυνθήσῃ. <bibl xml:lang="eng">(Stob. Serm. 31, p. 210.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="156">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 156</label><p rend="indent">Τοσοῦτον δέ εἰσιν οἱ φθονεροὶ δυστυχέστεροι τῶν ἄλλων ὅσον οἱ μὲν ἐπὶ ταῖς αὑτῶν συμφοραῖς ἀλγοῦσιν οἱ δὲ φθονοῦντες πρὸς τοῖς ἑαυτῶν κακοῖς καὶ ἐπὶ τοῖς τῶν ἄλλων ἀγαθοῖς λυπούμενοι διατελοῦσιν. <bibl xml:lang="eng">(Stob. Serm. 38, p. 222.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="157">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 157</label><p rend="indent">Οὔτε ὁρᾶν οὔτε ὁρᾶσθαι γυναῖκα καὶ ταῦτα ἐξησκημένην πρὸς κάλλος· ἐπίσταται γὰρ ἀμφότερα πρὸς ἃ μὴ δεῖ. <bibl xml:lang="eng">(Stob. Serm. 72, p. 439.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="158">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 158</label><p rend="indent">Οὐ χρὴ δὲ τὴν γυναῖκα δεινὴν ἐν τοῖς πολιτικοῖς ἀλλʼ ἐν τοῖς οἰκονομικοῖς εἶναι. <bibl xml:lang="eng">(Stob. Serm. 83, p. 481.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="159">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 159</label><p rend="indent">Θ. δέ φησιν ἐν τῷ περὶ ὑδάτων· τὸ Νείλου ὕδωρ πολυγονώτατον καὶ γλυκύτατον· διὸ καὶ λύειν τὰς κοιλίας τῶν πινόντων μίξιν ἔχον λιτρώδη <gap reason="lost" rend=" .... "/> καὶ τῶν γλυκέων δὲ, φησὶν, ὑδάτων ἔνια ἄγονα ἢ οὐ πολύγονα, ὡς τὸ ἐν Φέτᾳ καὶ τὸ ἐν Πύρρᾳ. Αὐχμῶν δέ ποτε γενομένων περὶ τὸν Νεῖλον ἐρρύη τὸ ὕδωρ ἰῶδες καὶ πολλοὶ τῶν Αἰγυπτίων ἀπώλοντο. Μεταβάλλειν τέ φησιν οὐ μόνον τὰ πικρὰ τῶν ὑδάτων ἀλλὰ καὶ τὸ ἁλυκόν καὶ ὅλους ποταμοὺς καθὰ τὸν ἐν Κιθαιρῶνι, παρʼ ᾧ Ζηνὸς, καὶ τὸν ἐν Καρίᾳ, παρʼ ᾧ Ποσειδῶνος ἱερόν ἐστιν· αἴτιον δὲ τὸ πολλοὺς κεραυνοὺς πίπτειν περὶ τὸν τόπον. Ἄλλα δὲ τῶν ὑδάτων καὶ σωματώδη εἰσὶ καὶ ἔχει ὥσπερ τι βάρος ἐν ἑαυτοῖς, ὡς τὸ ἐν Τροιζῆνι· τοῦτο γὰρ καὶ τῶν γευομένων εὐθὺς ποιεῖ πλῆρες τὸ στόμα. Τὰ δὲ πρὸς τοῖς περὶ Πάγγαιον μετάλλοις τοῦ μὲν χειμῶνος τὴν κοτύλην ἄγουσαν ἔχει ἐννενήκοντα ἓξ, θέρους δὲ τεσσαράκοντα ἕξ. Συστέλλει δὲ αὐτὸ καὶ πυκνοῖ μᾶλλον τὸ ψῦχος, διὸ καὶ ἐν τοῖς γνώμοσι ῥέον οὐκ ἀναδίδωσι τὰς ὥρας ἐν τῷ χειμῶνι ἀλλὰ περιττεύει βραδυτέρας οὔσης τῆς ἐκροῆς διὰ τὸ πάχος. Καὶ ταὐτὰ περὶ Αἴγυπτόν φησιν ὅταν μαλακώτερος ὁ ἀήρ. Τὸ δὲ ἁλυκὸν ὕδωρ γεωδέστερόν ἐστι καὶ πλείονος δεῖται κατεργασίας, ὡς καὶ τὸ θαλάσσιον θερμοτέραν ἔχον τὴν φύσιν καὶ μὴ ὅμοιον πάσχον. Μόνον δʼ ἀτέραμνον τῶν ἁλυκῶν τὸ τῆς Ἀρεθούσης. Χείρω δʼ ἐστὶ τὰ βαρυσταθμότερα καὶ τὰ σκληρότερα καὶ τὰ ψυχρότερα διὰ τὰς αὐτὰς αἰτίας· δυσκατεργαστότερα γάρ ἐστι, τὰ μὲν τῷ πολὺ τὸ γεῶδες ἔχειν τὰ δὲ ψυχρότητος ὑπερβολῇ. Τὰ δὲ ταχὺ θερμαινόμενα κοῦφα καὶ ὑγιεινά. Ἐν Κρανῶνι δʼ ἐστὶν ὕδωρ ἡσυχῆ θερμὸν ὁ θερμαῖνον διατηρεῖ κραθέντα τὸν οἶνον ἐπὶ δύο καὶ τρεῖς ἡμέρας. Τὰ δʼ ἐπίρρυτα καὶ ἐξ ὀχετοῦ ὡς ἐπίπαν βελτίω τῶν στασίμων, κοπτόμενά τε μαλακώτερα γίνονται. Διὰ τοῦτο καὶ τὰ ἀπὸ τῆς χιόνος δοκεῖ χρηστὰ εἶναι. Καὶ γὰρ ἀνάγεται τὸ ποτιμώτερον. Καὶ τοῦτο κεκομμένον ἐστὶ τῷ ἀέρι. Διὸ καὶ τῶν ὀμβρίων βελτίω, καὶ τὰ ἐκ κρυστάλλου δὲ διὰ τὸ κουφότερα εἶναι· σημεῖον δὲ ὅτι καὶ ὁ κρύσταλλος αὐτὸς κουφότερος τοῦ ἄλλο ὕδατος. Τὰ δὲ ψυχρὰ σκληρὰ διότι γεωδέστερα. Τὸ δὲ σωματῶδες καὶ θερμανθὲν θερμότερον καὶ ψυχθὲν ψυχρότερόν ἐστιν. Κατὰ τὴν αὐτὴν δʼ αἰτίαν καὶ τὰ ἐν τοῖς ὄρεσι ποτιμώτερα τῶν ἐν τοῖς πεδίοις· ἧττον γὰρ μέμικται τῷ γεώδει. Ποιεῖ δὲ τὸ γεῶδες καὶ τὰς ἐπιχροὰς τῶν ὑδάτων. Τὸ γοῦν τῆς ἐν Βαβυλῶνι λίμνης ἐρυθρὸν γίνεται ἐπί τινας ἡμέρας. Τὸ δὲ τοῦ Βορυσθένους κατά τινας χρόνους ἰοβαφὲς, καίπερ ὄντος διʼ ὑπερβολὴν λεπτοῦ· σημεῖον δέ· τοῦ Ὕπάνιος ἐπάνω γίνεται διὰ κουφότητα τοῖς βορείοις. Πολλαχοῦ δ' εἰσὶ κρῆναι αἱ μὲν ποτιμώτεραι καὶ οἰνωδέστεραι, ὡς ἡ περὶ Παφλαγονίαν πρὸς ἥν φησι τοὺς ἐγχωρίους ὑποπίνειν προσιόντας. Ἁλμώδεις δʼ ἅμα τῷ ὄξει ἐν <pb facs="uiug.30112023840660-1583374486redo_0479"/> τῆς Σικελίας· ἐν τῇ Καρχηδονίων δὲ ἐπικρατείᾳ κρήνη ἐστὶν ᾗ τὸ ἐφιστάμενον ἐλαίῳ ἐστὶν ὅμοιον, μελάντερον τὴν χρόαν, ὃ ἀποσφαιροῦντες χρῶνται πρὸς τὰ πρόβατα καὶ τὰ κτήνη. Καὶ παρʼ ἄλλοις δ' εἰσὶ λίπος ἔχουσαι τοιοῦτον, ὡς ἡ ἐν Ἀσίᾳ ὑπὲρ ἧς Ἀλέξανδρος ἐπέστειλεν ὡς ἐλαίου κρήνην εὑρηκώς. Καὶ τῶν θερμῶν δʼ ἐκ φύσεως ὑδάτων ἔνια γλυκέα ἐστὶν, ὡς τὰ ἐν Αἰγαῖς τῆς Κιλικίας καὶ περὶ Παγασὰς, τά τʼ ἐν τῇ Τρωικῇ Λαρίσσῃ καὶ περὶ Παγνηυ σίον καὶ ἐν Μήλῳ καὶ ἐν Λιπάρᾳ. Ἐν δὲ Προύσῃ τῇ πρὸς τὸν Μύσων Ὄλυμπον τὰ βασιλικὰ καλούμενα. Τὰ δʼ ἐν Ἀσίᾳ περὶ Τράλλεις καὶ τὸν Χαρακωμήτην ποταμὸν, ἔτι δὲ Νύσσαν πόλιν οὕτως ἐστὶ λιπαρὰ ὡς μὴ δεῖσθαι τοὺς ἐναπολουομένους ἐλαίου. Τοιαῦτα καὶ τὰ Δασκύλου κώμῃ· τὰ δʼ ἐν Καρούροις κατάξηρα καὶ σφόδρα θερμά· τὰ δὲ περὶ Μηνὸς κώμην, ἥ ἐστι Φρυγίας, τραχύτερά ἐστι καὶ λιτρωδέστερα, ὡς καὶ τὸ ἐν τῇ καλουμένῃ Λέοντος κώμῃ τῆς Φρυγίας· τὰ δὲ περὶ Δορύλαιον καὶ πινόμενά ἐστι ἥδιστα· τὰ γὰρ περὶ Βαΐας ἢ Βαΐου λιμένα τῆς Ἰταλίας παντελῶς ἄποτα. <bibl xml:lang="eng">(Athenae. 2, p. 41.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="160">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 160</label><p rend="indent">Περὶ δὲ τῶν ὑδάτων Θεόφραστόν φησι τὸ καλούμενον Στυγὸς ὕδωρ λέγειν, ὅτι ἐστὶν ἐν Φενεῷ, στάζει δ' ἔκ τινος πετριδίου, τοὺς δὲ βουλομένους αὐτοῦ ὑδρεύεσθαι σπόγγοις πρὸς ξύλοις δεδεμένοις λαμβάνειν· διακόπτειν δὲ πάντα τὰ ἀγγεῖα πλὴν τῶν κερατίνων· τὸν δʼ ἀπογευσάμενον τελευτᾶν. <bibl xml:lang="eng">(Antigon. Caryst. sect. 174.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="161">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 161</label><p rend="indent">Ἐν δὲ Θράκῃ περὶ τὸ Πάγγαιον ἱστορεῖ Θ. εἶναι κρήνην ἐφʼ ἧς ταὐτὸ γέμον ὕδατος σταθμώμενον χειμῶνος ἕλκειν διπλάσιον σταθμὸν ἢ θέρους. <bibl xml:lang="eng">(Plut. Qu. nat. p. 914.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="162">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 162</label><p rend="indent">Τὸ ὕδωρ ὁ Κρᾶθις λευκῆς χρόας ποιητικὸν μεθἵησι ποταμὸς ὤν· τὰ γοῦν πρόβατα πιόντα αὐτοῦ καὶ οἱ βόες καὶ πᾶσα ἡ τετράπους ἀγέλη, καθά φησι Θ., λευκὰ ἐκ μελάνων ἐγένετο ἢ πυρρῶν. <bibl xml:lang="eng">(Aelian. Hist. anim. 12, c. 36.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="163">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 163</label><p rend="indent">Διὰ τί χειμῶνος μᾶλλον ἢ θέρους τὰ τῶν ἁλιέων σήπεται δίκτυα; καίτοι τά γε ἄλλα μᾶλλον τῷ θέρει τοῦτο πάσχει. Πότερον, ὡς Θ. οἴεται, τῷ ψυχρῷ τὸ θερμὸν ὑποχωροῦν ἀντπεριίσταται καὶ θερμότερα ποιεῖ τὰ ἐν βάθει τῆς θαλάσσης ὥσπερ τῆς γῆς· διὸ <pb facs="uiug.30112023840660-1583374486redo_0480"/>καὶ τὰ πηγαῖα τῶν ὑδάτων χλιαρώτερα τοῦ χειμῶνός εἰσι καὶ μᾶλλον ἀτμίζουσι αἱ λίμναι καὶ οἱ ποταμοί· κατακλείεται γὰρ εἰς βάθος ἡ θερμότης ὑπὸ τοῦ ψυχροῦ κρατήσαντος. <bibl xml:lang="eng">(Plut. Quaest. nat. p. 915.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="164">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 164</label><p rend="indent">Θ. τὴν περὶ τὰς Αἰόλου νήσους ἀναζεῖν οὕτως ἐπὶ δύο πλέθρων τὸ μῆκος ὥστε μὴ δυνατὸν εἶναι διὰ τὴν θερμασίαν ἐμβαίνειν εἰς αὐτήν. <bibl xml:lang="eng">(Antig. Caryst. sect. 145.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="165">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 165</label><p rend="indent">Θ. ἐν τοῖς Ἱστορικοῖς ὑπομνήμασι τὸν ἀπὸ τῶν Αἰόλου νήσων φησὶ βρόμον τοῦ πυρὸς καίεσθαι μέχρις ἑνὸς σταδίου καὶ περὶ τὸ Ταυρομένιον ἀκούεσθαι ψόφον βροντῇ παραπλήσιον. <bibl xml:lang="eng">(Schol. ad Apoll. Rhod. Arg. 4. 834.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="166">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 166</label><p rend="indent">Ἐν δὲ τῷ περὶ πνιγμοῦ γράφει· ἡ δὲ τούτων ἀνάο κτήσις ὄξους ἐγχύσει καὶ πεπερίδος ἢ κνίδης καρπῷ τριφθείσης. <bibl xml:lang="eng">(Athenae. 2, p. 66.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="167">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 167</label><p rend="indent">Λέγει δὲ περὶ αὐτῶν Θ. τὸ ὕδνον καὶ ὃ καλοῦσί τινες γεράνειον καὶ εἴ τι ἄλλο ὑπόγειον· καὶ πάλιν· ἡ τῶν ἐγγεοτόκων τούτων γένεσις οἷον τοῦ τε ὕδνου καὶ τοῦ φυομένου περὶ Κυρήνην ὃ καλοῦσι μίσυ· δοκεῖ δὲ ἡδὺ σφόδρα τοῦτʼ εἶναι καὶ τὴν ὀσμὴν ἔχειν κρεώδη. Καὶ τὸ ἐν τῇ Θρᾴκῃ δὲ γενόμενον ἴτον. Περὶ δὲ τούτων διόν τι λέγεται· φασὶ γὰρ ὅταν ὕδατα μετοπωρινὰ καί βρονταὶ γίνωνται σκληραὶ τότε γίνεσθαι· καὶ μᾶλλον ὅταν αἱ βρονταὶ, ὡς ταύτης αἰτιωτέρας οὔσης. Οὐ διετίζειν δὲ ἀλλʼ ἐπέτειον εἶναι· τὴν δὲ χρείαν καὶ τὴν ἀκμὴν ἔχει τοῦ ἦρος. Οὐ μὴν ἀλλʼ ἔνιοί γʼ ὡς σπερματικῆς οὔσης τῆς ἀρχῆς ὑπολαμβάνουσιν· ἐν γοῦν τῷ αἰγιαλῷ τῶν Μιτυληναίων οὔ φασι πρότερον εἶναι πρὶν ἢ γενομένης ἐπομβρίας τὸ σπέρμα κατενεχθῇ ἀπὸ Τιαρῶν· τοῦτο δʼ ἐστὶ χωρίον ἐν ᾧ πολλὰ γίνεται. Γίνεται δὲ ἔν τε τοῖς αἰγιαλοῖς μάλιστα καὶ ὅπου χώρα ὕπαμμος· καὶ γὰρ αἱ Τιάραι τοιαῦται· φύεται δὲ καὶ περὶ Λάμψακον ἐν τῇ Ἀβαρνίδι, καὶ ἐν Ἀλωπεκοννήσῳ κἀν τῇ Ἠλείων. <bibl xml:lang="eng">(Athenae. 2. p. 62.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="168">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 168</label><p rend="indent">Θ. δὲ ἐν τῷ περὶ φυτῶν ἱστορίας γράφει· ὑπόγεια δὲ τὰ τοιαῦτά ἐστι καὶ ἐπίγεια, καθάπερ οὓς καλοῦσί τινες πέζιας ἅμα τοῖς μύκησι γινομένους· ἄρριζοι γὰρ καὶ αὐτοὶ τυγχάνουσιν· ὁ δὲ μύκης ἔχει προσφύσεως  ἀρχὴν τὸν καυλὸν εἰς μῆκος καὶ ἀποτείνουσιν ἀπʼ αὐτοῦ ῥιψί. Φησὶ δὲ καὶ ὅτι ἐν τῇ περὶ τὰς Ἡρακλέους στήλας θαλάσσῃ ὅταν πλείω ὕδατα γένηται, μύκητες φύονται πρὸς τῇ θαλάσσῃ οὓς καὶ ἀπολιθοῦσθαι ὑπὸ τοῦ ἡλίου φησί. <bibl xml:lang="eng">(Athenae. 2, p. 61.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="169">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 169</label><p rend="indent">Φυτοῦ ἑτέρου κλάδος ἐπιφύεται πρέμνῳ πρυνσήκων οἱ μηδὲ ἒν πολλάκις· τὸ δὲ αἴτιον Θ. λέγει φυσικώτατα ἀνιχνεύσας, ὅτι τὰ ὀρνύφια τὴν ἄνθην τῶν δένδρων σιτούμενα εἶτα ἐπὶ τοῖς φυτοῖς καθήμενα τὰ περιττὰ ἀποκρίνει· οὐκοῦν τὸ σπέρμα ἐν ταῖς κοιλάσι καὶ ταῖς ὀπαῖς αὐτῶν καὶ ταῖς σαραγγώδεσιν ἐμπῖπτον καὶ ἐπαρδόμενον τοῖς ὄμβροις τοῖς ἐξ οὐρανοῦ εἶτα ἀναφύει ἐκεῖνο ἐξ ὧν ἐβλάστησεν, ἀναπείθει· οὕτω τοι καὶ ἐν ἐλαίᾳ συκῆν κατανοήσεις καὶ ἐν ἄλλῳ ἄλλο. <bibl xml:lang="eng">(Aelian. Hist. anim. 9, c. 27.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="170">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 170</label><p rend="indent">Θ. δὲ ἐν τῇ περὶ τῶν φυτῶν πραγματείᾳ τὴν θαψίαν ῥίζαν ᾗ οἱ ἰατροὶ χρῶνται, ἐάν τις σὺν κρέασιν ἑψήσῃ, τὰ πολλὰ ἓν γίγνεσθαι ὥστε ἐκ τοῦ ἀγγείου μηκέτι δύνασθαι ἐξαιρεθῆναι. <bibl xml:lang="eng">(Apollon. Hist. mirab. sect. 16.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="171">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 171</label><p rend="indent">Τῆς τῶν ἰχθύων ἐν τῶ ξηρῷ διαμονῆς <gap reason="lost" rend=" .... "/> δοκεῖ γὰρ οἷον παρὰ φύσιν τῷ ἀέρι καταψύχεσθαι τὰ μὴ δεχόμενα τὸν ἀέρα <add>καὶ</add> μᾶλλον ὅσα δέχεται τὸ ὑγρὸν καὶ διὰ τοῦτο σώζεται. Θαυμασιώτατον δὲ, εἴπερ ἀληθὲς, τὸ τοῦ ἐξωκοίτου καλουμένου· τοῦτον γάρ φασιν ὁσημέραι ποιεῖσθαι τὴν κοίτην ἐν τῇ γῇ, διὸ καὶ τοὔνομα εἰληφέναι. Φαίνεται δʼ οὖν, εἴπερ δύναται δρᾶν, ἐπαμφοτερίζειν, οὐ τῇ τροφῇ καὶ τῇ διαγωγῇ καθάπερ ἡ φώκη καὶ ἐμὺς καὶ ἕτερʼ ἄττα, καὶ τῶν ὀρνίθων δὲ πολλοὶ, ἀλλὰ καὶ τῷ δέχεσθαι καὶ τὸν ἀέρα καὶ τὴν θάλατταν, οὐχ οὕτως ὥσπερ ὁ δελφὶς καὶ ἕτερʼ ἅττα, φύσει μὲν <del>οὖν</del> ὄντα ἀναπνευστικὰ καὶ τὴν θάλατταν δεχόμενα καὶ ἀναφυσῶντα πρὸς τὴν χρείαν ἀλλʼ ἀμφότερα πρὸς τὴν τοῦ ζῆν διαμονήν. Ἄτοπος δʼ ἂν αὐτοῖς ἡ φύσις καὶ ἡ δύναμις εἴη. </p></div>
+ <div type="textpart" subtype="section" n="2"><p>Τὰ δʼ ἐν Ἐνδοῖς ἰχθύδια τὰ ἐκ τῶν ποταμῶν εἰς τὴν γῆν ἐξιόντα καὶ πηδῶντα καὶ πάλιν εἰς τὸ ὕδωρ ἀπιόντα, καθάπερ οἱ βάτραχοι, θαυμαστὰ μὲν οὖν, οὐχ ὁμοίως δὲ τούτοις, ὅσῳ τὸ ὀλίγον χρόνον ἢ πολὺν καὶ τελευταῖον ἧττον θαυμαστόν· ἡ δʼ ὄψις ὁμοία τούτων τοῖς μαζίναις καλουμένοις. Εἰσὶ δὲ καὶ περὶ Βαβυλῶνά τινες, οὕς φασι διαμένειν ἐν ταῖς τρώγλαις ταῖς ἐχούσαις ὑγρότητα ξηραινομένου τοῦ ποταμοῦ· τούτους δʼ ἐξιόντας <add>ἐπὶ τὰς ἅλως</add> νέμεσθαι καὶ βαδίζειν ἐπὶ τῶν πτερυγίων <pb facs="uiug.30112023840660-1583374486redo_0482"/>  καὶ ἄμα κινεῖν τὴν οὐρὰν, καὶ ὅταν διώκωνται φευγεῖν καὶ εἰσδύντας ἀντιπροσώπους ἵστασθαι· πολλάκις γὰρ προσιέναι τινὰς καὶ ἐρεθίζειν. Ἔχουσι δὲ τὴν μὲν κεφαλὴν ὁμοίαν βατράχῳ θαλαττίῳ τὸ δʼ ἄλλο σῶμα κωβιῷ βράγχια δὲ ὥσπερ καὶ οἱ ἄλλοι ἰχθύες. Ὅτι δʼ οὐ πόδας ἔχουσιν ἀλλʼ ἐπὶ τῶν πτερυγίων βαδίζουσι τεθεώρηται. Ἐλάμβανον γὰρ πολλοὺς οἱ διώκοντες· τὰ δὲ πτερύγια εὐμεγέθη· </p></div>             
+<div type="textpart" subtype="section" n="3"><p>τὸ δʼ ἐκ τῆς γῆς τὴν τροφὴν λαμβάνειν οὐκ ἄλογον· ἔνιοι γὰρ καὶ ἐν τῷ ὑγρῷ ὄντες πηλὸν ἐσθίουσι καὶ φῦκος καὶ τὰ τοιαῦτα. Καὶ ὅλως δὲ εἴπερ ἐν τῷ ἀέρι διαγίνονται καὶ τὸ τῆς τροφῆς οὐκ ἄλογον· ἐπεὶ καὶ ὁ πολύπος ἐξιὼν λαμβάνει καὶ ἡ μύραινα καὶ ἄλλοι δὲ ὥς φασι. Καὶ τὸ ὅλον οὐκ ἄλογον, ὥσπερ τῶν πεζῶν καὶ πτηνῶν ἔνια ταῖς ἐνύδροις χρῆται, καὶ τὰ ἔνυδρα ταῖς ἐν τῇ γῇ καὶ τὴν φύσιν ὁμοίως ἀνταποδιδόναι τὸ ἀνάλογον. Φαίνεται δὲ καὶ ὁ ἵππος ὁ ποτάμιος τοιοῦτον. Ἀλλʼ ἐκεῖνο θαυμαστὸν, ὥσπερ εἴπομεν, εἴ τι δύναται τοῖς αὐτοῖς μορίοις <del>ὡς</del> ὀργανικοῖς ὁτὲ μὲν ἐπισπᾶσθαι τὸν ἀέρα καὶ ἕλκειν ὁτὲ δὲ τὸ ὑγρὸν δέχεσθαι. Τάχα δὲ τούτου μᾶλλον, εἰ ὁτὲ μὲν ὁ ἀὴρ σύμμετρος πρὸς τὴν κατάψυξιν ἢ ὁτιδήποτέ ἐστιν ἐκ τῆς ἀναπνοῆς γινόμενον, ὁτὲ δὲ τὸ ὑγρόν· οὐ γὰρ ἅμα γʼ ἄμφω. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Τὸ δὲ τῶν πολυπόδων ἧττον θαυμαστόν· οὐ γὰρ δέα χονται τὴν θάλατταν· καὶ οἱ κάραβοι καὶ οἱ ἀστακοὶ καὶ οἱ καρκίνοι καὶ τἆλλα τὰ τοιαῦτα, ὥστε μὴ μεγάλης ἄγαν τῆς μεταβολῆς οὔσης ῥᾷον ὑπομένειν. Ὃ καὶ περὶ τὰς ἐγχέλυς φαίνεται συμβαίνειν· πολὺν γὰρ χρόνον δύνανται ζῆν ἔξω τοῦ ὑγροῦ διὰ τὸ μικρὰ τὰ βραγχία ἔχειν καὶ ὀλίγον δέχεσθαι τὸ ὑγρόν· καὶ τὴν μύραιναν καὶ εἴ τι ἄλλο τοιοῦτον, ἢ καὶ τὸ ὅλον ὀφιῶδες, ἥκιστα ἄτοπον. </p></div>
+<div type="textpart" subtype="section" n="5"><p>Εὔλογον δὲ καὶ ἐν τῷ ὕδατι μὴ δύνασθαι διαμένειν ὅσῳ λεπτότερον ὂν τῆς θαλάσσης ἐγγυτέρω τοῦ ἀέρος ἐστὶ, καὶ ὅτι φύσει γε ψυχρόε τερόν ἐστι, διὸ καὶ πολύπους φεύγει. Καὶ διὰ τοῦτο περὶ Ἑλλήσποντον καὶ τὸν Πόντον οὐκ ἔστιν. Οἱ δὲ ἰχθύες τίκτουσιν ἀναπλέοντες εἰς τοὺς ποταμοὺς καὶ τὰς λίμνας ὅτι εὐδία μᾶλλον κυμάτων καὶ πνευμάτων· καὶ τὰ θηρία ἐλάττω καὶ οἱ κατεσθίοντες ὅλως καὶ διαφθείροντες ἰχθῦς. </p></div>
+<div type="textpart" subtype="section" n="6"><p>Ἡ δὲ τῆς θαλάττης θερμότης ἐξ ἐκείνου φανερὰ τῷ μὴ διαμένειν δύνασθαι ἐν ταύτῃ τὰ ἐκ τῶν ποταμῶν ἀλλὰ μᾶλλον τὰ ἐκ τῆς θαλάττης ἐν τοῖς ποταμοῖς καὶ ταῖς λίμναις. Ἴσως δʼ αὐτὸ τοῦτο πρότερον σκεπτέον πότερον θερμότερον ὁ ἀὴρ ἢ τὸ ὑγρόν· εἰ γὰρ ὁ ἀὴρ ὥσπερ ἂν δόξειεν, ἐγγυτέρω γ' ὢν τοῦ πυρὸς, ἧττον ἀεὶ θερμὰ τὰ τούτῳ κατεχόμενα. Τοῦτο δὲ εἰ μὴ καὶ πρὸς τὰ νῦν ὑπεναντίον ἀλλὰ πρὸς ἐκείνην τὴν δόξαν τὴν λεγομένην ὅτι θερμότατα πάντων τὰ ἔναιμα καὶ ζωοτόκα. Περὶ μὲν οὖν τούτων ἐπισκεπτέον. </p></div>
+<div type="textpart" subtype="section" n="7"><p>Οἱ δʼ ὀρυκτοὶ τῶν ἰχθύων - εἰσὶ γὰρ ἐνιαχοῦ καὶ τοιοῦτοι καθάπερ καὶ περὶ Ἡράκλειαν καὶ ἄλλοθι τῶν ἐν τῷ Πόντῳ - γίνονται μὲν καὶ παρὰ τοὺς ποταμοὺς καὶ τὰ ἔνυδρα χωράφια. Συμβαίνει δʼ ἀναξηραινομένων τούτων ἐγκαταλειπομένους <pb facs="uiug.30112023840660-1583374486redo_0483"/> κατὰ μικρὸν συστέλλεσθαι καὶ διώκοντας τὴν ὑγρότητα δύεσθαι κατὰ τῆς γῆς, εἶτα καταξηραινομένης διαμένειν, ἐν τῇ ἰκμάδι καθαπερανεὶ ταριχευομένους, ἐν τῇ γῇ, ὥσπερ τοὺς ἐν ταῖς φωλείαις διαρκοῦντας· ὅταν δʼ ἀνασκάπτωνται τότε κινεῖσθαι. </p></div>
+<div type="textpart" subtype="section" n="8"><p>Παραπλήσιον δ' ἐστὶ τούτῳ καὶ <add>τὸ</add> ἐπὶ τῶν ἐκπηγνυμένων ἐν τῷ Πόντῳ ὅταν περιλαμβάνωνται τῷ κρυστάλλῳ· οἱ οὐ πρότερον αἰσθάνονται καὶ κινοῦνται πρὶν εἰς τὰς λοπάδας ἐμβληθῆναι καὶ ἕψεσθαι· πάντων δὲ μάλιστα δοκεῖ πάσχειν τοῦθʼ ὁ κωβιός. Ὅλως δʼ οἱ ὀρυκτοὶ γίνονται ἰχθύες διὰ τὸ ὑπερβάλλοντας τοὺς ποταμοὺς ὅταν πάλιν εἰς τὸ ἀρχαῖον καθιστῶνται ῥεῖθρον ἐγκαταλείπειν ἐν τοῖς ἀναξηραινομένοις ἔνθα μὲν ὠὰ ἔνθα δὲ τοιαύτας ἀρχὰς ἐξ ὧν ἡ γένεσις. </p></div>
+<div type="textpart" subtype="section" n="9"><p>Ἔνια γὰρ οὐκ ἐκ ζώων ὥσπερ ἡ ἔγχελυς· δοκεῖ δʼ αὕτη γίνεσθαι καὶ ὁ καλούμενος κεντρίσκος ὥσπερ καὶ ἐν Ἡρακλείᾳ περὶ τὸν Λύκον ποταμόν· ἐγκαταλειφθέντα δʼ ἀπομορφοῦται καὶ διαμένει. Τὴν διαμονὴν δὲ οὐκ ἄτοπον εἶναι· τροφῆς γὰρ ὀλίγης δεῖται πολλὰ τῶν τοιούτων ὥσπερ καὶ οἱ ὄφεις καὶ τὰ φωλεύοντα. Συμβαίνει δὲ καὶ ταύτην ἱκανὴν ἔχειν ὠῶν τὴν πρώτην καὶ μετὰ ταῦτα τὴν ἐκ τῆς γῆς ἰκμάδα διαδιδομένην· οὐ μὴν μέγεθός γε τοιαῦτα λαμβάνειν οὔτʼ εἰκὸς οὔτε φασὶ διὰ τὸ μήτε χώραν ἔχειν μήτε τροφὴν δαψιλῆ· δεῖ δὲ ἄμφω ταῦτα πρὸς τὴν αὔξησιν· </p></div>
+<div type="textpart" subtype="section" n="10"><p>τὸ δʼ ἐν τῷ ἀέρι δύνασθαι διαμένειν τούτοις μὲν οὐ παντελῶς ὑπάρχει, τοῖς δʼ ἐξιοῦσιν ἐκ τῶν τόπων καὶ νεμομένοις· αὐτοὶ δὲ μικρᾶς εἰώθασι δέεσθαι καταψύξεως ὥστε σύμμετρον αὐτοῖς εἶναι τὴν ἀπὸ τοῦ ἀέρος. Δηλοῖ δὲ καὶ ἡ τῶν βραγχίων στενότης ὡς οὐ πολλῆς δεομένων· διὸ καὶ ἡ ἔγχελυς ἔν τε τῷ ἀέρι πολὺν χρόνον ζῇ καὶ ἐν τοῖς θολεροῖς ὕδασι τάχιστα ἀποπνίγεται. Καὶ ἅμα ἐν τοῖς γε ὀρυκτοῖς καὶ ἡ ἀπὸ τῆς γῆς ἀπόψυξις ἐκ τῆς περιοχῆς ἱκανὴν ποιεῖ τὴν βοήθειαν. </p></div>
+<div type="textpart" subtype="section" n="11"><p>Ἴδιον δέ τι παρὰ ταῦτα καὶ λόγου δεόμενον τὸ περὶ τοὺς ἐν Παφλαγονίᾳ ὀρυκτοὺς ἰχθῦς· ὀρύττεσθαι γάρ φασιν ἐκεῖ κατὰ βάθους πλείονος ἀγαθοὺς καὶ πολλούς· τὸν δὲ τόπον οὔτʼ ἐπίκλυσιν ποταμοῦ λαμβάνειν οὔθʼ ὕδατος σύστασιν, ἀφʼ ὧν δήφαμεν ἐγκαταλείπεσθαι τὰ ὠὰ καὶ τὰς ἀρχὰς τῆς γεωνέσεως. Λοιπὸν γὰρ δὴ αὐτομάτους φύεσθαι, καὶ τοῦτο συνεχῶς - ἀδύνατος γὰρ ἡ πρὸς ἀλλήλους μίξις -, εἴτε δὴ τοῦτο θετέον ὥσπερ ἐνύγρου τινὸς χώρας οὔσης καὶ τὸ ὅλον γονίμου τῶν τοιούτων διὰ τὸ συμμετρίαν τινὰ ἔχειν τοῦ θερμοῦ καὶ τοῦ ὑγροῦ - συμβαίνει γὰρ δὴ γίγνεσθαι καὶ ἑτέρους τινὰς αὐτομάτους ἰχθῦς -, εἴτε διανάειν ἔκ τινων τόπων ὑγρότητας αἱ συνεπιφέρουσι τὰς γεννώσας ἀρχάς· ὁ δὲ τόπος εὐφυὴς διὸ καὶ δέχεται καὶ ἐκτρέφει· σχεδὸν γὰρ οὐκ ἂν ἔτι πορρωτέρω τούτων. </p></div>
+<div type="textpart" subtype="section" n="12"><p>Ἐκεῖνο δʼ ἄν τις σκέψαιτο περὶ ἀμφοτέρων τῶν γενῶν τῶν τε ἐν τῷ ξηρῷ καὶ τῶν ὀρυκτῶν ἆρά γε εἰς ὕδωρ ἀφιέμενα ζῴη ἂν, ἢ τὴν οἰκείαν ζητοίη χώραν καὶ τοῦτο αὐτοῖς ὥσπερ φύσις, καθάπερ καὶ τοῖς ἐν θαλάττῃ καὶ τοῖς ἐν ποταμοῖς· οὐδὲ γὰρ ταῦτα δέχεται τὰς μεταβολὰς πλὴν ὀλίγων. Ἐπεὶ ὅσοι γέν <pb facs="uiug.30112023840660-1583374486redo_0484"/> διὰ τὴν ἀναξηρασίαν καταδύονται καὶ ὅσοι περιλαμβάνονται τοῖς πάγοις, φανερὸν ὡς τούτοις γε οἰκεῖον τὸ ὑγρόν. Εἰκὸς δὲ μᾶλλον καὶ τοῖς ὀρυκτοῖς καὶ τοῖς ἑτέροις, τοῖς μὲν ἁπλῶς, τοῖς δʼ ὡς ἀμφιβίοις κατὰ ὁ Δημόκριτον. Ὃ καὶ ἐπʼ ἄλλων συμβαίνει· χρῆται γὰρ ἔνια τῷ ἀέρι καθάπερ ἐρρέθη πρότερον.</p></div>
+</div>
+<div type="textpart" subtype="fragment" n="172">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 172</label><p rend="indent">Ὅτι τὰς χρόας μεταβαλλόμενοι καὶ ἐξομοιούμενοι φυτοῖς καὶ τόποις καὶ λίθοις οἷς ἂν πλησιάσωσι πολύπους ἐστὶ καὶ χαμαιλέων καὶ τὸ θηρίον ὁ τάρανδος ὃ ἐν Σκύθαις φασὶν ἢ Σαρμάταις γίνεσθαι. Μεταβάλλει δʼ ὁ χαμαιλέων εἰς πάντα τὰ χρώματα, πλὴν τὴν εἰς τὸ λευκὸν καὶ τὸ ἐρυθρὸν οὐ δέχεται μεταβολήν· καὶ οὐ πρὸς τὰ παρακείμενα μόνον χρώματα μεταβάλλει ἀλλὰ καὶ αὐτὸς καθʼ ἑαυτὸν ἐάν τις μόνον ἅψηται αὐτοῦ τὸ χρῶμα μεταβάλλει. </p></div>
+<div type="textpart" subtype="section" n="2"><p>Ὁ δὲ τάρανδος τὸ μὲν μέγεθός ἐστι κατὰ βοῦν τὸ πρόσωπον δὲ ὅμοιος ἐλάφῳ πλὴν πλατύτερος ὡσανεὶ ἐκ δύο συγκείμενος ἐλαφείων προσώπων. Δίχηλον δʼ ἐστὶ καὶ κερασφόρον· ἔχει δὲ τὸ κέρας ἀποφυάδας ὥσπερ τὸ ἐλάφου, καὶ τριυ χωτόν ἐστι διʼ ὅλου· περὶ γὰρ τὸ ὀστοῦν δέρματός ἐστιν ἐπίτασις ὅθεν ἡ ἔκφυσις. Τὸ δὲ δέρμα τῷ πάχει δακτυλιαῖόν ἐστιν ἰσχυρὸν δὲ σφόδρα, διὸ καὶ τοὺς θώρακας ἐξαυάζοντες αὐτὸ ποιοῦνται. Σπάνιον δὲ τὸ ζῶον καὶ ὀλιγάκις φαινόμενον. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Θαυμαστὴ δʼ ἡ μεταβολὴ καὶ ἐγγὺς ἀπιστίας· τοῖς μὲν γὰρ ἄλλοις ἐν μεταβολὴ καὶ ἐγγὺς ἀπιστίας· τοῖς μὲν γὰρ ἄλλοις ἐν τῷ δέρματι γίνεται ἡ μεταβολὴ ἀλλοιουμένης τῆς ἐντὸς ὑγρότητος εἴτε αἱματώδους ἢ καί τινος ἄλλης τοιαύτης οὔσης, ὥστε φανερὰν εἶναι τὴν συμπάθειαν. Ἡ δὲ τῶν τριχῶν μεταβολὴ ξηρῶν τε ὄντων καὶ ἀπηρτημέυ νων καὶ ἀθρόον οὐ πεφυκότων ἀλλοιοῦσθαι παράδοξος ἀληθῶς καὶ ἀπίθανος, μάλιστα πρὸς πολλὰ ποικιλλομένη. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Ὁ δὲ χαμαιλέων δοκεῖ τῷ πνεύματι ποιεῖν τὰς μεταβολὰς, πνευματικὸν γὰρ φύσει. Σημεῖον δὲ τὸ τοῦ πνεύμονος μέγεθος· σχεδὸν γὰρ διʼ ὅλου τοῦ σώματος τέταται· ἅμα δὲ καὶ αὐτὸς ἐξαιρόμενος καὶ φυσώμενος. <bibl xml:lang="eng">(Photii Biblioth. 278.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="173">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 173</label><p rend="indent">Θ. ἐν τῷ περὶ τῶν μεταβαλλόντων τὰς χρόας τὸν πολύποδα φησὶ τοῖς πετρώδεσι μάλιστα τόποις συνεξομοιοῦσθαι· τοῦτο ποιοῦνται φόβῳ καὶ φυλακῆς χάἐυ ριν. Ἐν δὲ τῷ περὶ τῶν ἐν τῷ ξηρῷ διαμενόντων ζώων οὐ δέχεσθαί φησι τοὺς πολύποδας τὴν θάλατταν· ἐν δὲ τῷ περὶ κατὰ τόπον διαφορῶν ὁ Θ. πολύποδας οὐ γίνεσθαί φησι περὶ Ἑλλήσποντον· ψυχρὰ γὰρ ἡ θάλασσα αὕτη καὶ ἧττον ἁλμυρά· ταῦτα δʼ ἀμφότερα πολέμια πολύποδι. <bibl xml:lang="eng">(Athenae. 7, p. 317.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="174">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 174</label><p rend="indent">Ὅτι τῶν ἀθρόων φαινομένων ζώων οὐχ ἡ αὐτὴ <pb facs="uiug.30112023840660-1583374486redo_0485"/> πάντων αἰτία ἀλλὰ τῶν μὲν καὶ ἡ γένεσις εὐθὺς φανερὰ ὥσπερ τῶν μυιῶν, αἳ ἐν τοῖς στρατοπέδοις καὶ ἐν ταῖς πανηγύρεσι καὶ μετὰ τὸ παρελθεῖν αὐτὰ ἔτι μᾶλλον γίνονται. Τούτων γὰρ ἥ τε κόπρος αἰτία καὶ ἡ τῶν ἄλλων σῆψις. Ἄλλα δὲ προϋπάρχει μὲν ἐκφαίνεται δὲ διὰ τοὺς ὑετοὺς ὥσπερ οἵ τε κοχλίαι καὶ οἱ μικροὶ βάτραχοι· οὐ γὰρ ὕονται ὥς τινες οἴονται, ἀλλὰ προφαίνονται μόνον κατὰ γῆς ὄντα πρότερον, διὰ τὸ εἰσρεῖν τὸ ὕδωρ εἰς τὰς θαλάμας αὐτῶν. Ἄλλο δὲ γένος ἐστι τοῦτο βατράχων παρὰ τὸ ἐν ταῖς λίμναις καὶ τοῖς τέλμασι. Τὸ δὲ πλῆθος καὶ τούτων καὶ τῶν ἄλλων ὅταν εὐθηνήσωσιν. </p></div>
+<div type="textpart" subtype="section" n="2"><p>Ὅτι μᾶλλον μετὰ τὰς διαλύσεις καὶ τῶν πανηγύρεων καὶ τῶν στρατοπέδων ἢ ἔτι συνισταμένων αἱ μυῖαι γίνονται· συμβαίνει γὰρ παρόντων μὲν διὰ τὰς καθημερινὰς χρείας καὶ κινήσεις φθείρεσθαι τὰς γενέσεις αὐτῶν κινήσεως ἀεὶ καὶ μεταβολῆς γινομένης ὡς ἐν τοῖς ἄλλοις καὶ ἐν αὐτοῖς τοῖς καθάρμασιν ἐκβαλλομένοις αὐτῶν· ὅταν δὲ διαλυθῶσιν ἡσυχίας γενομένης ταχὺ συντελεῖται διὰ τὸ μὴ ὑπʼ οὐοδένος κωλύεσθαι μέχρι οὗ ἂν ξηρανθῇ τὸ ἐν τοῖς αθάρμασιν ὑγρόν. Ἡ μὲν οὖν τῶν μυιῶν γένεσις ταχεῖαν καὶ πολλὴν ὡς εἴρηται τὴν γένεσιν λαμβάνει. </p></div>
+<div type="textpart" subtype="section" n="3"><p>Οἱ δʼ ἀττέλεβοι καὶ αἱ ἀκρίδες πανταχοῦ μέν εἰσιν ὡς εἰπεῖν, πλήθεται δὲ ταῦτα τῷ τε τόπους οἰκείους λαμβάνειν καὶ τῷ μὴ διαφθείρεσθαι αὐτῶν τὰ ὠὰ, ὃ συμβαίνει διὰ τὴν ἀργίαν τῆς χώρας· ἐν γὰρ τῇ γεωργουμένη ἀπόλλυνται, διὸ καὶ ἐκ τῆς ἐρήμου καὶ ἀργούσης καταφέρονται πρὸς τὴν οἰκουμένην καὶ ἐργάσιμον. Ἐγχρονίζουσι δὲ ἢ διὰ τὸ περιέχεσθαι τὸ χωρίον ὄρεσιν ὑψηλοῖς καὶ ὑπερᾶραι ταῦτα μὴ δύνα- σθαι· ἢ διὰ τὸ ἐπιτήδειον τῆς χώρας. Τοιαύτη δὲ ἣ τε μαλακὴ καὶ νοτίδα ἔχουσα καὶ δροσοβόλος. </p></div>
+<div type="textpart" subtype="section" n="4"><p>Χαλεπαὶ μὲν οὖν καὶ αἱ ἀκρίδες, χαλεπώτεροι δὲ οἱ ἀττέλεβοι καὶ τούτων μάλιστα οὓς καλοῦσι βρούη κους. Ἡ δὲ γένεσις αὐτῶν ἐξ ἀλλήλων. Τινὲς δὲ οἴονται οὐκ ἀκριβεῖ σημείῳ τῷ <add>τὸ</add> χρῶμα παραπλησίως τινὰς αὐτῶν ἔχειν τοῖς ἐν τῇ χώρᾳ ὅτι καὶ αὐτόματος. Δῆλον γὰρ ὅτι τὸ τοιοῦτον ἀπὸ τῆς τροφῆς ἀλλʼ οὐκ ἀπὸ τῆς γενέσεως προσλαμβάνουσιν. </p></div>
+<div type="textpart" subtype="section" n="5"><p>Ἡ δὲ φθορὰ τούτων ἡ μέν ἐστιν οἷον φυσική τις καὶ λοιμώδης. Ὑπὸ κύνα γὰρ οἰστρᾷ καὶ ἐγγίνεταί τι σκωλήκιον ἐν τῇ κεφαλῇ καὶ φθείρεται· ἡ δὲ ἐν τῇ μετακινήσει καὶ τῇ πτήσει· ὅταν γὰρ ἀρθῶσιν ὑπὸ τῶν ἀνέμων καταφέρονται εἰς τὴν θάλασσαν καὶ φθείρονται. Φθείρονται δὲ καὶ διὰ χειμῶνα καὶ ψῦχος καὶ αὐτὰ καὶ τὰ ὠὰ αὐτῶν. Φθείρονται δὲ καὶ ἐκ μηχανῆς ἀνθρώπων· τάφρους γὰρ ποιοῦντες συνελαύνουσιν αὐτὰ εἰς αὑτοὺς καὶ καταχωννύντες διαφθείρουσι. </p></div>
+<div type="textpart" subtype="section" n="6"><p>Ὅτι τῶν ὄφεων δύο τινὰ τῆς γενέσεως αἴτιά ἐστιν. Ἢ γὰρ ἀὴρ ἔπομβρος ἢ πόλεμοι καὶ χύσεις αἱμάτων. Ὃ σχεδὸν καὶ τῶν ἄλλων θηρίων τῆς γενέσεως αἴτιον. Ἐξ οὗ ποτὲ καὶ περὶ Θετταλίαν πλῆθος ὄφεων ἱστοροῦσι γενέσθαι. </p></div>
+<div type="textpart" subtype="section" n="7"><p>Ὅτι καὶ αἱ μύες ἐν ταῖς ἀρούραις ἀθρόον γίνονται, καὶ ἐν τοῖς αὐχμοῖς μᾶλλον ἢ ἐν ταῖς <pb facs="uiug.30112023840660-1583374486redo_0486"/> ἐπομβρίαις· πολέμιον γὰρ αὐταῖς τὰ ὕδατα· πολύγονον δὲ τὸ ζῶον· ἀπόλλυται δὲ τῇ μὲν ἐμφανεῖ καὶ ἔξωθεν φθορᾷ διὰ πλῆθος ὑδάτων· τοῦτο γὰρ καὶ ἔξω χειμάζει καὶ εἰς τὰς μυωπίας παρεισρεῖ. Φθείρουσι δʼ αὐτοὺς καὶ αἱ ἄγριαι γαλαῖ. Ἔστι δέ τις αὐτῶν καὶ ἀφανὴς καὶ ἀθρόα φθορὰ καθάπερ τις ἐπισυμβαίνουσα λοιμώδης· τίκτεται γὰρ καὶ τούτων ἐν τῇ κεφαλῇ σκώληξ καὶ φθείρονται· ὃ καὶ οἱ ἔμπειροι ἐπισκοποῦντες, ἐπὰν ἴδωσι, τὴν φθορὰν αὐτῶν προνοοῦσι καὶ προαγγέλλουοσιν. </p></div>
+<div type="textpart" subtype="section" n="8"><p>Ὅτι οἱ μύες ἱστοροῦνται καὶ σίδηρον κατεσθίειν καὶ χρυσίον· διὸ καὶ ἀνατέμνοντες αὐτοὺς οἱ ἐν τοῖς χρυσείοις τὸν χρυσὸν ἀνιμῶνται. Ὅτι ἐν Αἰγύπτῳ δίποδάς φασιν μύας γίνεσθαι καὶ μεγάλους· ἔχουσι δὲ οὗτοι καὶ τοὺς ἐμπροσθίους πόδας ἀλλʼ οὐ βαδίζουσιν ἐπʼ αὐτοῖς, χρῶνται δʼ αὐτοῖς οἷα χερσίν· ὅταν δὲ φεύγωσι πηδῶσι. <bibl xml:lang="eng">(Photii Bibl. 278, 7.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="175">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 175</label><p rend="indent">Ὅτι ὁ γαλεώτης, φασὶ, φθονῶν τῆς ὠφελείας τοῖς ἀνθρώποις καταπίνει τὸ δέρμα ὅταν ἐκδύσηται· ἐστὶ γὰρ βοήθημα ἐπιλήπτῳ. Καὶ ὁ ἔλαφος τὸ δεξιὸν κατορύττει κέρας, πρός τε τὰ τῆς φρύνης φάρμακα καὶ πρὸς ἄλλα πολλὰ χρήσιμον. Καὶ ἡ ἵππος ἀπεσθίει τῶν πώλων τὸ ἱππομανές· καὶ γὰρ τοῦτο πρὸς ἔνια χρήσιμον. Καὶ ἡ φώκη ὅταν μέλλῃ ἁλίσκεσθαι ἐξεμεῖ τὴν πιτύαν, χρησιμεύουσαν καὶ ταύτην τοῖς ἐπιλήπτοις. Καὶ ὁ χερσαῖος ἐχῖνος ἐνουρεῖ τῷ δέρματι καὶ διαφθείρει. Καὶ ἡ λὺγξ κατακρύπτει τὸ οὖρον ὅτι πρὸς τὰς σφραγῖδας καὶ πρὸς ἄλλας χρείας ἐπιτήδειον· ἀλλʼ ὅτι μὲν οὐ διὰ φθόνον ταῦτα ποιεῖ τὰ ζῶα ἀλλʼ οἱ ἄνθρωποι ἐκ τῆς ἰδίας ὑπολήψεως ταύτην αὐτοῖς περιῆψαν τὴν αἰτίαν παντὶ δῆλον. Πόθεν γὰρ τοῖς ἀλόγοις ἡ τοσαύτη σοφία ἣν καὶ οἱ λογικοὶ μετὰ συχνῆς μελέτης μανθάνουσιν; ἀλλʼ ἡ μὲν φώκη διὰ τὸν φόβον ἴσως ταραττομένη ἐμεῖ τὴν πιτύαν· καὶ ὁ γαλεώτης καταπίνει τὸ δέρμα φυσικόν τι ποιῶν πάθος, καθάπερ αἱ κύνες καὶ αἱ ὕες καὶ σχεδὸν τὰ τετράποδα πάντα· κατεσθίει γὰρ τὰ χόρια μετὰ τοὺς τόκους· καὶ ὁ ἐχῖνος δὲ διὰ φόβον ἢ διʼ ἄλλο τι πάθος φυσικὸν ἐνουρεῖ ἀλλ' οὐχ ἴνα φθείρῃ τὸ δέρμα. Πολλὰ δὲ καὶ ἄλλα πράττεται τοῖς ἀλόγοις ὧν οὐκ ἔχομεν λόγον ἀποδοῦναι· οἷον διὰ τί ἡ ὄρνις ὅταν τέκῃ περιρρίπτει τὰ κάρφη· διὰ τί οἱ κύνες ἐπαίροντες τὰ σκέλη προσουροῦσι διὰ τί ἡ αἲξ ὅταν λάβῃ τὸ ἠρύγγιον εἰς τὸ στόμα μένει καὶ τὰς ἄλλας ἵστασθαι ποιεῖ. Καὶ τὸ τῆς λυγγὸς οὖν καὶ τὸ τῆς ἐλάφου ὁ αὐτὸς κατάλογος περιέξει. <bibl xml:lang="eng">(Photii Bibl. 278, 8.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="176">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 176</label><p rend="indent">Θ. ἐν τῷ περὶ φωλευόντων οἱ κοχλίαι, φησὶ, φωλεύουσι μὲν καὶ τοῦ χειμῶνος μᾶλλον δὲ τοῦ θέρους· διὸ καὶ πλεῖστοι φαίνονται τοῖς μετοπωρινοῖς ὕδασιν· ἡ δὲ <pb facs="uiug.30112023840660-1583374486redo_0487"/> τοῦ θέρους καὶ ἐπὶ τῆς γῆς καὶ ἐπὶ τῶν δένδρων. <bibl xml:lang="eng">(Athenae. 2, p. 63.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="177">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 177</label><p rend="indent">Θ. ἐν τῷ περὶ τῶν φωλευόντων τοὺς ἀστακοὺς καὶ καράβους καὶ καρίδας ἐκδύεσθαί φησι τὸ γῆρας. <bibl xml:lang="eng">(Athenae. 3, p. 105.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="178">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 178</label><p rend="indent">Θ. ἐν τῷ περὶ τῶν φωλευόντων διὰ τὸ ψῦχος φησὶ τὴν νάρκην κατὰ γῆς δύεσθαι. Ἐν δὲ τῷ περὶ τῶν δακέτων καὶ βλητικῶν διαπέμπεσθαί φησι τὴν νάρκην ἀπʼ αὐτῆς δύναμιν καὶ διὰ τῶν ξύλων καὶ διὰ τῶν τριοδόντων, ποιοῦσαν ναρκᾶν τοὺς ἐν χεροῖν ἔχοντας. <bibl xml:lang="eng">(Athenae. 7, p. 314.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="179">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 179</label><p rend="indent">Ἀριστοτέλης δʼ ἢ Θεόφραστος ἐν τοῖς ὑπομνήμασι τῶν φασιανῶν φησὶν οὐ κατὰ λόγον ἡ ὑπερυχὴ τῶν ἀρρένων ἀλλὰ πολλῷ μείζων. <bibl xml:lang="eng">(Athenae. 14, p. 654.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="180">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 180</label><p rend="indent">Θ. δὲ ὁ Ἐρέσιος Ἀριστοτέλους μαθητὴς ἐν τρίτῃ περὶ ζώων μνημονεύων αὐτῶν οὑτωσί πως λέγει· ἔστι καὶ τοῖς ὄρνισι τοιαύτη διαφορά· τὰ μὲν γὰρ βραχέα καὶ μὴ πτητικὰ καθάπερ ἀτταγὴν πέρδιξ, ἀλεκτρυὼν, φασιανὸς εὐθὺς βαδιστικὰ καὶ δασέα. <bibl xml:lang="eng">(Athenae. 9, p. 387.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="181">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 181</label><p rend="indent">Θ. γοῦν ἐν τῷ περὶ ἑτεροφωνίας τῶν ὁμογενῶν οἱ Ἀθήνησι φησὶν πέρδικες ἐπὶ τάδε τοῦ Κορυδαλλοῦ πρὸς τὸ ἄστυ κακαβίζουσιν οἱ δʼ ἐπέκεινα τιττυβίζουνσιν. <bibl xml:lang="eng">(Athenae. 9, p. 390.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="182">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 182</label><p rend="indent">Τοὺς δὲ περὶ Παφλαγονίαν πέρδικάς φησι Θ. δύο ἔχειν καρδίας. <bibl xml:lang="eng">(Athenae. 9, p. 390.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="183">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 183</label><p rend="indent">Ὁ δὲ Θ. τοὺς ἀγρίους <add>ἀλεκτρυόνας</add> φησὶν ὀχευτικωτέρους εἶναι τῶν ἡμέρων. Λέγει δὲ καὶ τοὺς ἄρρενας εὐθὺς ἐξ εὐνῆς ἐθέλειν πλησιάζειν, τὰς δὲ θηλείας προβαινούσης μᾶλλον τῆς ἡμέρας. <bibl xml:lang="eng">(Athenae. 9, p. 391.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="184">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 184</label><p rend="indent">Ἰχθῦς ἱστορεῖ Θ. ὑπὸ ῥίγους πεπηγότας, ἂν ἀφειευ <pb facs="uiug.30112023840660-1583374486redo_0488"/> θῶσιν ἐπὶ τὴν γῆν, κατάγνυσθαι καὶ συντρίβεσθαι δίκην ὑέλων ἢ κεραμεῶν σωμάτων. <bibl xml:lang="eng">(Plut. de primo frig. p. 952.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="185">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 185</label><p rend="indent">Θ. ἐν τῇ πρὸς Φανίαν ἐπιστολῇ καὶ ὄνον φησὶν <foreign xml:lang="lat">(iulum)</foreign> καλεῖσθαι. <bibl xml:lang="eng">(Schol. ad Apollon. Rhod. Argon. I, v. 972.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="186">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 186</label><p rend="indent">Λέγει δὲ Θ. ἐκβὰλῶν τὸν μῦθον καὶ Σεριφίους τῆς ἀλαζονείας παραλύων τὴν τοῦ ὕδατος ψυχρότητα αἰτίαν εἶναι τῆς ἀφωνίας τῶν προειρημένων <foreign xml:lang="lat">(ranarum in Seripho)</foreign>. <bibl xml:lang="eng">(Aelian. Hist. anim. 3, 37.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="187">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 187</label><p rend="indent">Ἐν τοῖς ὑγροῖς χωρίοις καὶ ἔνθα νοτιώτερος ὁ ἀὴρ ̓ο οἱ ἀλεκτρυόνες οὐκ ᾄδουσι, φησὶ Θ. <bibl xml:lang="eng">(Aelian. Hist. anim. 3, 38.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="188">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 188</label><p rend="indent">Δίοτι τὴν χροιὰν ὁ πολύπους ἐξαλλάττει; πότερον, ὡν Θ. ᾤετο, δειλόν ἐστι φύσει ζῶον; ὅταν οὖν ταραχθῇ τρεπόμενον τῷ πνεύματι συμμεταβάλλει τὸ χρῶμα εἷ καθάπερ ἄνθρωπος. <bibl xml:lang="eng">(Plut. Quaest. nat. p. 916.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="189">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 189</label><p rend="indent">Μεταβάλλει γὰρ ὁ μὲν χαμαιλέων οὐδέν τι μηχα- νώμενος οὐδὲ κατακρύπτων ἑαυτὸν ἀλλʼ ὑπὸ δέους ἄλλως τρέπεται φύσει ψοφοδεὴς ὢν καὶ δειλός· συνέπεται δὲ καὶ πνεύματος πλῆθος ὡς Θεόφραστος. Ὄλίγον γὰρ ἀποδεῖ πᾶν τὸ σῶμα τοῦ ζώου πλῆρες εἶναι πνεύροε μονος, ᾧ τεκμαίρεται τὸ πνευματικὸν αὐτοῦ καὶ διὰ τοῦτο πρὸς τὰς μεταβολὰς εὔτρεπτον. <bibl xml:lang="eng">(Plut. de sollert. anim. p. 978.)</bibl></p></div>
+</div>
+<div type="textpart" subtype="fragment" n="190">
+<div type="textpart" subtype="section" n="1"><label rend="center" xml:lang="lat">Fr. 190</label><p rend="indent">Ὅτι αἱ τοῦ μέλιτος γενέσεις τριτταί· ἢ ἀπὸ τῶν ἀνθῶν καὶ ἐν οἷς ἄλλοις ἐστὶν ἡ γλυκύτης· ἄλλη δʼ ἐκ τοῦ ἀέρος ὅταν ἀναχυθὲν ὑγρὸν ὑπὸ τοῦ ἡλίου συνεψηθὲν πέσῃ· γίνεται δὲ τοῦτο μάλιστα ὑπὸ πυραμητόν· ἄλλη δʼ ἐν τοῖς καλάμοις. Πίπτει δὲ τὸ ἐκ τοῦ ἀέρος μέλι καὶ ἐπὶ τὴν γῆν καὶ ἐπὶ τὰ προστυχόντα τῶν φυτῶν. Εὑρίσκεται δὲ μάλιστα ἐπὶ τοῖς φύλλοις τῆς δρυὸς καὶ ἐπὶ τῆς φιλύρας διότι πυκνότητα ἔχει ταῦτα καὶ ἔνικμά ἐστι. Δεῖ δὲ μήτε τελείως εἶναι ξηρὰ ἴνα μὴ εἰς αὑτὰ ἕλκῃ, μήτε μανὰ ἵνα μὴ διίῃ· ταῦτα δὲ καὶ ἔνικμα καὶ πυκνότητα ἔχει, τὰ δὲ τῆς φιλύρας καὶ γλυκύτητα. Ἔχει δέ πως ἡ μέλιττα οἰκείωσίν τινα πρὸς τὴν δρῦν. <bibl xml:lang="eng">(Photii Bibl. 278, 10.)</bibl></p></div>
+</div>
+</div>
+</body></text></TEI>

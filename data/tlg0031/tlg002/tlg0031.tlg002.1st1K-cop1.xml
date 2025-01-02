@@ -54,8 +54,8 @@
 	<p>This file encoded to comply with EpiDoc Guidelines and
 	Schema.<ref>http://sourceforge.net/p/epidoc/</ref></p>
     <refsDecl n="CTS">
-        <cRefPattern n="verse" matchPattern="(.+)(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']//tei:div[@n='$2'])"/>
-        <cRefPattern n="chapter" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
+          <cRefPattern n="verse" matchPattern="(\.+).(\.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])"/>
+        <cRefPattern n="chapter" matchPattern="(\.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])"/>
     </refsDecl>
 </encodingDesc>
 <profileDesc>
