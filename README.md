@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/56595003.svg)](https://zenodo.org/badge/latestdoi/56595003)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596723.svg)](https://doi.org/10.5281/zenodo.596723)
 [![Hook Coverage](https://ci.perseids.org/api/hook/v2.0/badges/OpenGreekAndLatin/First1KGreek/coverage.svg)](https://ci.perseids.org/repo/OpenGreekAndLatin/First1KGreek)
 [![Hook Texts](https://ci.perseids.org/api/hook/v2.0/badges/OpenGreekAndLatin/First1KGreek/texts.svg)](https://ci.perseids.org/repo/OpenGreekAndLatin/First1KGreek)
 [![Hook Metadata](https://ci.perseids.org/api/hook/v2.0/badges/OpenGreekAndLatin/First1KGreek/metadata.svg)](https://ci.perseids.org/repo/OpenGreekAndLatin/First1KGreek)
